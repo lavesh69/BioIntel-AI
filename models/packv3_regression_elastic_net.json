@@ -1,0 +1,133 @@
+{
+  "activity_type": "SYNTHETIC_AFFINITY_SCORE",
+  "artifact_version": "7.0.0",
+  "calibration_method": "none",
+  "confidence_intervals": {
+    "mae": {
+      "bootstrap_samples": 40,
+      "lower_95": 0.33637261335289587,
+      "upper_95": 0.36654863735129656
+    },
+    "r2": {
+      "bootstrap_samples": 40,
+      "lower_95": -1.540960528376686,
+      "upper_95": -1.0685837776077272
+    },
+    "rmse": {
+      "bootstrap_samples": 40,
+      "lower_95": 0.4179417742965749,
+      "upper_95": 0.4509866998025948
+    }
+  },
+  "data_quality_summary": {
+    "class_distribution": null,
+    "conflicting_pair_groups": 0,
+    "exact_duplicate_rows": 0,
+    "feature_cache": {
+      "drug_cache_hits": 5520,
+      "protein_cache_hits": 5736,
+      "rows_processed": 5760,
+      "unique_drugs": 240,
+      "unique_targets": 24
+    },
+    "invalid_rows": 0,
+    "original_rows": 5760,
+    "p_activity_max": 7.8404,
+    "p_activity_min": 5.3421,
+    "split_summary": {
+      "group_overlap": false,
+      "strategy": "target_group",
+      "test_groups": 5,
+      "test_rows": 1200,
+      "train_groups": 15,
+      "train_rows": 3600,
+      "validation_groups": 4,
+      "validation_rows": 960
+    },
+    "task": "regression",
+    "valid_after_cleaning": 5760
+  },
+  "dataset_name": "biointel_synthetic_extended_dti_v3",
+  "dataset_sha256": "2a2b6d781714a62c33bf9695eae38973b2f4111257a52e9a65c946ae10ff3d08",
+  "dataset_version": "3.0",
+  "decision_threshold": null,
+  "experiment_id": "exp-20260704T064722+0000-61b38cb9",
+  "feature_schema": {
+    "drug_feature_count": 141,
+    "feature_count": 167,
+    "feature_hash": "ad1a1adefaf32ad217e60b3df843aa2ef3acde7a28c4854c8a78397f6580bf14",
+    "fingerprint_bits": 128,
+    "fingerprint_radius": 2,
+    "include_dipeptides": false,
+    "protein_feature_count": 26,
+    "schema_version": "2.0.0",
+    "use_chirality": true
+  },
+  "metrics": {
+    "average_interval_width": 2.200418153800847,
+    "conformal_coverage": 0.995,
+    "mae": 0.34871629902360934,
+    "mse": 0.18678206353844445,
+    "pearson": 0.33645838968701003,
+    "r2": -1.2684224348071877,
+    "rmse": 0.43218290518997216,
+    "spearman": 0.36293046503337417
+  },
+  "model_name": "elastic_net",
+  "model_version": "3.0.0-ml-suite",
+  "positive_class_name": null,
+  "software_versions": {
+    "biopython": "1.86",
+    "joblib": "1.5.3",
+    "python": "3.13.5",
+    "rdkit": "2025.09.4",
+    "scikit_learn": "1.8.0"
+  },
+  "split_strategy": "target_group",
+  "synthetic_demo": true,
+  "task_type": "regression",
+  "test_rows": 1200,
+  "threshold_strategy": "fixed",
+  "train_rows": 3600,
+  "trained_at_utc": "2026-07-04T06:47:22+00:00",
+  "training_config": {
+    "activity_type": "SYNTHETIC_AFFINITY_SCORE",
+    "bootstrap_iterations": 40,
+    "calibration_method": "none",
+    "conformal_alpha": 0.1,
+    "dataset_name": "biointel_synthetic_extended_dti_v3",
+    "dataset_version": "3.0",
+    "decision_threshold": 0.5,
+    "fingerprint_bits": 128,
+    "fingerprint_radius": 2,
+    "include_dipeptides": false,
+    "model_name": "elastic_net",
+    "model_version": "3.0.0-ml-suite",
+    "n_estimators": 1,
+    "random_seed": 20260716,
+    "source_description": "BioIntel deterministic synthetic extended DTI benchmark",
+    "split_strategy": "target_group",
+    "synthetic_demo": true,
+    "task_type": "regression",
+    "test_fraction": 0.2,
+    "threshold_strategy": "fixed",
+    "use_chirality": true,
+    "validation_fraction": 0.15
+  },
+  "uncertainty_calibration": {
+    "absolute_residual_quantile": 1.1002090769004234,
+    "alpha": 0.1,
+    "calibration_rows": 960,
+    "coverage_target": 0.9,
+    "method": "split_conformal_regression"
+  },
+  "validation_metrics": {
+    "mae": 0.553307930744127,
+    "mse": 0.4532210238998406,
+    "pearson": 0.7013783176329434,
+    "r2": -1.949111150962651,
+    "rmse": 0.6732169218757358,
+    "spearman": 0.4079977431613561
+  },
+  "validation_rows": 960
+}
