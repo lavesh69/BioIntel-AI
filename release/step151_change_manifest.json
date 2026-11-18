@@ -1,0 +1,29 @@
+{
+  "areas": {
+    "flow_cytometry": [
+      "src/biointel/biotech/flow_cytometry.py",
+      "pages/64_Wet_Lab_Biotechnology.py"
+    ],
+    "scientific_readiness": [
+      "src/biointel/scientific_depth/evidence_readiness.py",
+      "src/biointel/scientific_depth/capability.py",
+      "src/biointel/scientific_depth/portfolio.py",
+      "src/biointel/scientific_depth/renderer.py",
+      "pages/227_Scientific_Readiness_Command_Center.py"
+    ],
+    "stability_and_release": [
+      "INSTALL_WINDOWS.bat",
+      "src/biointel/observability/analytics_store.py",
+      "src/biointel/ui/navigation.py",
+      "src/biointel/ui/preferences.py",
+      "src/biointel/ui/style_catalog.py",
+      "src/biointel/ui/theme.py",
+      "visual/semantic_baselines/manifest.json"
+    ]
+  },
+  "schema": "biointel.step151.change-manifest.v1",
+  "step": 151,
+  "verification": {
+    "pytest": "1240 passed, 27 skipped, 0 failed"
+  }
+}

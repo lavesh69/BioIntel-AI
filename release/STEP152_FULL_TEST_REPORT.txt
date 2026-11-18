@@ -1,0 +1,18 @@
+BioIntel AI Step 152 full regression verification
+==================================================
+Collected tests: 1,279
+Passed: 1,252
+Skipped: 27
+Failed: 0
+Warnings: 1 non-blocking third-party PendingDeprecationWarning (python_multipart import path)
+
+The suite was executed in deterministic node-id chunks because the execution environment enforces a per-command runtime ceiling. Every collected node was included exactly once. Slow browser/page-render and scientific graph tests were isolated and rerun directly when a chunk reached the command ceiling.
+
+Additional verification:
+- Step 152 native scientific core: 12/12 tests passed before final refactor validation.
+- Native core plus engineering size gate: 13/13 tests passed after domain-module refactor.
+- All 80 native demonstration workflows executed without an unhandled crash.
+- Python compileall scan passed for src, pages, scripts, and tests.
+- Windows path-safe verifier regression passed.
+
+Skipped tests require optional live browser, external service, or live semantic-visual infrastructure and remain explicitly marked rather than converted into artificial passes.

@@ -1,0 +1,29 @@
+{
+  "schema": "biointel.step154.change-manifest.v1",
+  "base_step": 153,
+  "step": 154,
+  "changes": [
+    "Added safe scientific boolean parsing for imported text fields",
+    "Replaced sampled provenance hashes with full-frame chunked SHA-256",
+    "Added ranked numeric feature selection and selection audit tables",
+    "Added complete non-truncated CSV result bundles with per-table hashes",
+    "Eliminated filename-only reference asset matches",
+    "Expanded 80 profiles from 36 to 49 native workflow families",
+    "Added dedicated operational/governance native workflows",
+    "Added flow-cytometry control and compensation audit support",
+    "Added metabolomics pooled-QC drift correction artifacts",
+    "Added GWAS sample QC, PCA and relatedness screening",
+    "Added 12 specialist tool adapters and execution plans",
+    "Added runtime release hygiene for SQLite sidecars and bytecode caches",
+    "Enforced managed SQLite connection policy",
+    "Added Step 154 failure-edge and packaging tests"
+  ],
+  "external_boundaries_preserved": [
+    "Clinical and regulatory approval",
+    "GxP qualification and successful authority inspection",
+    "Licensed full-size reference databases",
+    "Physical instrument qualification",
+    "Independent prospective wet-lab validation",
+    "Long-term real production operating history"
+  ]
+}

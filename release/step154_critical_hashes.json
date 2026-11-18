@@ -1,0 +1,27 @@
+{
+  "files": {
+    "STEP154_RELEASE.json": "262bf50fb42ffea4936b65ce3066b90cec17bd24fd55279f6c81992516fa6423",
+    "VERIFY_STEP154_WINDOWS.bat": "831fdd7392f0696eab380c343d509cc14b00244d331a34f03ca1763c3ce7fe29",
+    "config/step154_maximum_internal_readiness.json": "dddae1dcf212b8ab8a15dc234c508f48a8e042f42ceb960f4fa3cec4b9d257f2",
+    "pages/227_Scientific_Readiness_Command_Center.py": "27d13d871abb36396ef7f09e26af7fba4eebf176db8be6031cb4c34ca50139f4",
+    "release/STEP154_DATABASE_INTEGRITY.json": "7d4e347b139b89894fc5e545cb0752cdafedc1f7eadcebf15754cd9146c766f6",
+    "release/STEP154_FULL_TEST_REPORT.txt": "7d7ad9567ed69b9617a60238a5f7d087229a016d0d8e48dd25aef0328e54507f",
+    "release/STEP154_INSTALLATION_VALIDATION.json": "de743ce5af10b3ebef62ea1da8bb36305fcdec221c7589efbfa8b74992dee2c0",
+    "release/STEP154_MAXIMUM_INTERNAL_READINESS_REPORT.md": "5c726162c2bf7ee909d8b5707d16c038a0f4deb707db1eada2884b186f18b12a",
+    "release/step154_change_manifest.json": "381c0682c6d9307a3894d2fb7f3685dc23f5af0a4b5fedbd2f7c8b84abddaa8c",
+    "scripts/step154_validate_installation.py": "c49174e577c05bebd4759bb6788fca70b8a05638d2e34501f9a0c15b01ec4c0b",
+    "src/biointel/native/engines.py": "3f901c4a3ea94dcf2e45bc69619bccc4cfe43354a55d9b21e18b1114b318ddfd",
+    "src/biointel/release_hygiene.py": "350cf3f701a15ea4901e6af5fb5a4befca374ea1e3a3ec75e46a1c1063e6beb0",
+    "src/biointel/scientific_depth/native_integrity.py": "9866c04894c41427477a9902dd10af185d4c060e748ef31790a2af2ef217ef6d",
+    "src/biointel/scientific_depth/native_omics_workflows.py": "b2b4d4404c74e2f8dea5a54a31d16bb94cda37d23d57758a111cea4935f3ade7",
+    "src/biointel/scientific_depth/native_platform_workflows.py": "07186ec0aa33fb449edd4d236bab1c2bc53b238620d906cd7c2009555079f30e",
+    "src/biointel/scientific_depth/native_specialist_workflows.py": "3a56606c63247cb77de177cb5b0036d914d3c8452769d0a012d71cbebd79ce9b",
+    "src/biointel/scientific_depth/native_workflows.py": "6e0d903656c6720f31ad9573e3c931c313b483414224befd0bc2c90303be6f7f",
+    "src/biointel/scientific_depth/portfolio.py": "7b71310ba684ceebb2eaa8b8359fb7ce2075d0a4751f1a374ade392df5a57ec1",
+    "src/biointel/scientific_depth/renderer.py": "fd5751aa6d71ad229c70b4974d2ec55c9f194367de2bdcdb1af44c10fbab07ca",
+    "src/biointel/scientific_depth/toolchain_readiness.py": "ea2fc527e4fa4622d4fac68c896dfeebef24b173451f345681979c3da36c54f2",
+    "tests/test_step154_maximum_internal_readiness.py": "277fb1501e45e2accf60f0b1a3f0e9d26de356d9593486762636e2aabdf2e0cb"
+  },
+  "schema": "biointel.step154.critical-hashes.v1",
+  "step": 154
+}

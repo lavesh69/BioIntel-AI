@@ -1,0 +1,23 @@
+BioIntel AI Step 159 — Runtime Resilience Test Report
+
+Repository tests collected: 1,352
+Passed: 1,325
+Environment-gated skipped: 27
+Failed: 0
+Full regression runtime: 897.20 seconds (14 minutes 57 seconds)
+
+Targeted Step 159 resilience tests: 7/7 passed
+Legacy scientific compatibility: passed
+Engineering quality and module-size gates: passed
+Scientific demonstration workflows: 80/80 executed without unhandled failure
+Page source qualification: 230/230 present and syntax-valid
+
+Source-tree installation validator: 8/8 checks passed; 80/80 scientific demos executed
+Source-tree release doctor: 9/9 checks passed
+SQLite databases: 39/39 healthy; 0 foreign-key violations
+Python compile scan: passed
+Static linter: unavailable in the build environment; compile, engineering and maintainability tests passed
+
+The validator and release doctor are rerun again on the freshly extracted four-part package.
+
+Boundary: these tests qualify internal software behavior. They do not manufacture licensed databases, physical instrument qualification, prospective wet-lab results, clinical certification or regulatory approval.

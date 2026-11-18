@@ -1,0 +1,24 @@
+BioIntel AI Step 156 Full Regression Report
+===========================================
+Collected: 1333
+Passed:    1306
+Skipped:   27
+Failed:    0
+
+Verification method:
+  The complete repository was executed in deterministic file batches because the
+  build environment terminates long monolithic commands. Every one of the 180 test
+  files was covered. Slow single-cell and browser-render cases were isolated and
+  executed separately. No test was removed, weakened or counted from a timeout.
+
+Skipped scope:
+  5 environment-gated E2E/external-runtime scenarios and 22 live semantic visual
+  scenarios unavailable in the build environment.
+
+Additional evidence:
+  Step 156 focused qualification/translational tests: 17 passed
+  Step 152-156 compatibility suite: 66 passed
+  Read-only runtime regression tests: 31 passed
+  Python source compile scan: 1131/1131 passed
+  Engine adapters: 64
+  Protected execution plans: 66

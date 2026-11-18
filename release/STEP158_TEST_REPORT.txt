@@ -1,0 +1,9 @@
+BioIntel AI Step 158 — Release Surface Hardening Test Report
+
+Targeted release-surface tests: 3 passed, 0 failed
+Installation validator checks: 18 passed, 0 failed
+Release doctor checks: 15 passed, 0 failed
+Inherited Step 157 repository baseline: 1,315 passed, 27 environment-gated skips, 0 failed
+Inherited screen qualification: 229/229 passed
+
+Step 158 changes are limited to current-release documentation, canonical Windows entry points, release-surface auditing and deterministic validation. Scientific engines and qualified Step 157 behavior are preserved.

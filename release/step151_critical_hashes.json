@@ -1,0 +1,26 @@
+{
+  "files": {
+    "INSTALL_WINDOWS.bat": "987d0c05284ad4d4b6402b71024a0292226eab43ceb439050fc7f022b42bb66c",
+    "STEP151_RELEASE.json": "167ed15e56c3682eedb5e04b5cadee0132acc563c5a4094618b52772cf2621d1",
+    "VERIFY_STEP151_WINDOWS.bat": "67a8fabb461ec0db1b1a1a896664623d0e1cf2047c3098ccf4e1ceb4f29f2fb6",
+    "deploy/terraform/variables.tf": "7a0b69dd5fc1e7b186a4a5147ccfb818af438ab3b15a28b7d966c87260e2961e",
+    "pages/227_Scientific_Readiness_Command_Center.py": "5b3b0336279dd1c346eff8ecea41010906c4cf72ff1fd70440bf20b898af26f8",
+    "pages/64_Wet_Lab_Biotechnology.py": "1c074ec35360825560305f683bb8a8accd9800f9aa7aedf8d7efb50d22b05771",
+    "platform/desktop/src/main.cjs": "9c60d2d738076618620e87ea74e46a3f45a6b8f34176ca1b3bde3b55e3ef04e1",
+    "platform/mobile/android/app/build.gradle": "47ad273f42080eae948bffbb6aeb0ab6affc02dceb37f2badad211afc1f5fbde",
+    "scripts/step151_validate_installation.py": "ab0bcb4afbc63549120d97bcbb424998c73f1e38c306ddc84050bc6b94fc4421",
+    "src/biointel/biotech/flow_cytometry.py": "fa67dbde5ae1216d6d531eaa339f9b9efcaea7a409e76225894052c4ed38eace",
+    "src/biointel/observability/analytics_store.py": "e46fe6d925fcff55dbe7ce4b00dad9272db5dfd538eee3380e65f715353be20c",
+    "src/biointel/scientific_depth/capability.py": "1e22f8179c9ef3006bf402a260d8756e1857dbe64620f75d25baab399f739648",
+    "src/biointel/scientific_depth/evidence_readiness.py": "9c7c3ac72395047463bdecf42dcec4becf84f41151142398b4e0d59793f5a31c",
+    "src/biointel/scientific_depth/portfolio.py": "aea70267c1f12c271400fd5106aef9b0c4df4f2afef6933845a83926b23faeff",
+    "src/biointel/scientific_depth/renderer.py": "234fbe0d2d7c44860cddeb826db16c0ccb5fbf3688e20121f98e630bbdadb7fb",
+    "src/biointel/ui/navigation.py": "a5c3507f166c09ac1861aec1398df63d9f00f1a8b613afda2c9b20fc2e5e1f0e",
+    "src/biointel/ui/preferences.py": "63e4088f942689c40864208c66f158c03a4cac124e418f3caf1203f0f59d99d8",
+    "src/biointel/ui/style_catalog.py": "88f7eda97c4e3e1dc7322215bc19d442fde95166b32966c3350e03abe49cf6c9",
+    "src/biointel/ui/theme.py": "b2cbd44431b9300dc201cd1f397866a8216763da582b424cb40fa5d0a11681e2",
+    "visual/semantic_baselines/manifest.json": "99618608fe55806774da6d9bbf3e3ed0ba31ec7175b33de6cc7d9cb193e672c4"
+  },
+  "release": "Step 151",
+  "schema": "biointel.step151.critical-hashes.v1"
+}

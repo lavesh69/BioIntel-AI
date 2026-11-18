@@ -1,0 +1,35 @@
+{
+  "areas": {
+    "domain_scientific_core": [
+      "src/biointel/scientific_depth/native_workflows.py",
+      "src/biointel/scientific_depth/native_specialist_workflows.py",
+      "src/biointel/scientific_depth/native_biodesign_workflows.py",
+      "src/biointel/scientific_depth/native_omics_workflows.py",
+      "src/biointel/scientific_depth/native_advanced_workflows.py"
+    ],
+    "metadata_and_readiness": [
+      "src/biointel/scientific_depth/profiles.py",
+      "src/biointel/scientific_depth/toolchain_readiness.py",
+      "src/biointel/scientific_depth/portfolio.py",
+      "src/biointel/scientific_depth/renderer.py",
+      "pages/227_Scientific_Readiness_Command_Center.py"
+    ],
+    "verification": [
+      "tests/test_step153_domain_scientific_core.py",
+      "release/STEP153_FULL_TEST_REPORT.txt"
+    ],
+    "windows_and_release": [
+      "VERIFY_STEP153_WINDOWS.bat",
+      "scripts/step153_validate_installation.py",
+      "STEP153_RELEASE.json"
+    ]
+  },
+  "schema": "biointel.step153.change-manifest.v1",
+  "step": 153,
+  "verification": {
+    "compileall": "passed",
+    "families": "36",
+    "native_demo_workflows": "80/80 executed without unhandled crash",
+    "pytest": "1263 passed, 27 skipped, 0 failed"
+  }
+}

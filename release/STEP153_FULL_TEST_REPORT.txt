@@ -1,0 +1,26 @@
+BioIntel AI Step 153 Full Test Report
+======================================
+Date: 2026-07-13
+Product version: 13.2.0
+Release step: 153
+
+Collected: 1290
+Passed: 1263
+Skipped: 27
+Failed: 0
+
+Top-level test files: 1202 passed
+Nested E2E/integration: 4 passed, 5 skipped
+Operations: 31 passed
+Scientific golden/validation: 25 passed
+Visual regression: 1 passed, 22 skipped
+
+Skip boundary:
+The skipped scenarios require live browser/visual infrastructure or external runtime services that are unavailable in this execution environment. They are not reported as passed.
+
+Additional checks:
+- 80/80 native workflow demos: passed
+- 36 domain-specific workflow families: registered
+- Python compile scan: passed
+- Engineering module-size budget: passed
+- Step 151/152/153 targeted compatibility: 31 passed

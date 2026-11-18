@@ -1,0 +1,248 @@
+{
+  "databases": 40,
+  "failed": [],
+  "healthy": 40,
+  "results": [
+    {
+      "foreign_key_violations": 0,
+      "integrity": "ok",
+      "ok": true,
+      "path": "UserData/workspace/live_experience.sqlite3"
+    },
+    {
+      "foreign_key_violations": 0,
+      "integrity": "ok",
+      "ok": true,
+      "path": "UserData/workspace/step132_visual_intelligence.sqlite"
+    },
+    {
+      "foreign_key_violations": 0,
+      "integrity": "ok",
+      "ok": true,
+      "path": "data/clinical_pharma/clinical_validation.sqlite3"
+    },
+    {
+      "foreign_key_violations": 0,
+      "integrity": "ok",
+      "ok": true,
+      "path": "data/discovery_projects.sqlite3"
+    },
+    {
+      "foreign_key_violations": 0,
+      "integrity": "ok",
+      "ok": true,
+      "path": "data/lab_analytics.sqlite3"
+    },
+    {
+      "foreign_key_violations": 0,
+      "integrity": "ok",
+      "ok": true,
+      "path": "data/reference_assets/reference_assets.sqlite3"
+    },
+    {
+      "foreign_key_violations": 0,
+      "integrity": "ok",
+      "ok": true,
+      "path": "reports/analytics.sqlite3"
+    },
+    {
+      "foreign_key_violations": 0,
+      "integrity": "ok",
+      "ok": true,
+      "path": "reports/api_security.sqlite3"
+    },
+    {
+      "foreign_key_violations": 0,
+      "integrity": "ok",
+      "ok": true,
+      "path": "reports/assets.sqlite3"
+    },
+    {
+      "foreign_key_violations": 0,
+      "integrity": "ok",
+      "ok": true,
+      "path": "reports/batch_jobs/batch_prediction_sample_250.sqlite3"
+    },
+    {
+      "foreign_key_violations": 0,
+      "integrity": "ok",
+      "ok": true,
+      "path": "reports/biotechnology_project_runs.sqlite3"
+    },
+    {
+      "foreign_key_violations": 0,
+      "integrity": "ok",
+      "ok": true,
+      "path": "reports/connected_sources.sqlite3"
+    },
+    {
+      "foreign_key_violations": 0,
+      "integrity": "ok",
+      "ok": true,
+      "path": "reports/datasets.sqlite3"
+    },
+    {
+      "foreign_key_violations": 0,
+      "integrity": "ok",
+      "ok": true,
+      "path": "reports/document_history.sqlite3"
+    },
+    {
+      "foreign_key_violations": 0,
+      "integrity": "ok",
+      "ok": true,
+      "path": "reports/evidence.sqlite3"
+    },
+    {
+      "foreign_key_violations": 0,
+      "integrity": "ok",
+      "ok": true,
+      "path": "reports/experiments.sqlite3"
+    },
+    {
+      "foreign_key_violations": 0,
+      "integrity": "ok",
+      "ok": true,
+      "path": "reports/feature_cache.sqlite3"
+    },
+    {
+      "foreign_key_violations": 0,
+      "integrity": "ok",
+      "ok": true,
+      "path": "reports/internet_downloads.sqlite3"
+    },
+    {
+      "foreign_key_violations": 0,
+      "integrity": "ok",
+      "ok": true,
+      "path": "reports/jobs.sqlite3"
+    },
+    {
+      "foreign_key_violations": 0,
+      "integrity": "ok",
+      "ok": true,
+      "path": "reports/knowledge.sqlite3"
+    },
+    {
+      "foreign_key_violations": 0,
+      "integrity": "ok",
+      "ok": true,
+      "path": "reports/performance.sqlite3"
+    },
+    {
+      "foreign_key_violations": 0,
+      "integrity": "ok",
+      "ok": true,
+      "path": "reports/projects.sqlite3"
+    },
+    {
+      "foreign_key_violations": 0,
+      "integrity": "ok",
+      "ok": true,
+      "path": "reports/prospective_validation.sqlite3"
+    },
+    {
+      "foreign_key_violations": 0,
+      "integrity": "ok",
+      "ok": true,
+      "path": "reports/realworld_evidence.sqlite3"
+    },
+    {
+      "foreign_key_violations": 0,
+      "integrity": "ok",
+      "ok": true,
+      "path": "reports/relationships.sqlite3"
+    },
+    {
+      "foreign_key_violations": 0,
+      "integrity": "ok",
+      "ok": true,
+      "path": "reports/scientific_evidence.sqlite3"
+    },
+    {
+      "foreign_key_violations": 0,
+      "integrity": "ok",
+      "ok": true,
+      "path": "reports/step103_lims.sqlite3"
+    },
+    {
+      "foreign_key_violations": 0,
+      "integrity": "ok",
+      "ok": true,
+      "path": "reports/step127_scientific_runs.sqlite3"
+    },
+    {
+      "foreign_key_violations": 0,
+      "integrity": "ok",
+      "ok": true,
+      "path": "reports/step95_quality10_self_test/self_test_registry.sqlite3"
+    },
+    {
+      "foreign_key_violations": 0,
+      "integrity": "ok",
+      "ok": true,
+      "path": "reports/tenants.sqlite3"
+    },
+    {
+      "foreign_key_violations": 0,
+      "integrity": "ok",
+      "ok": true,
+      "path": "reports/validation_evidence.sqlite3"
+    },
+    {
+      "foreign_key_violations": 0,
+      "integrity": "ok",
+      "ok": true,
+      "path": "reports/viewer_sync.sqlite3"
+    },
+    {
+      "foreign_key_violations": 0,
+      "integrity": "ok",
+      "ok": true,
+      "path": "reports/workflow_automation.sqlite3"
+    },
+    {
+      "foreign_key_violations": 0,
+      "integrity": "ok",
+      "ok": true,
+      "path": "workspace/quality10/workflow_runs.sqlite3"
+    },
+    {
+      "foreign_key_violations": 0,
+      "integrity": "ok",
+      "ok": true,
+      "path": "workspace/reference_lifecycle/reference_lifecycle.sqlite3"
+    },
+    {
+      "foreign_key_violations": 0,
+      "integrity": "ok",
+      "ok": true,
+      "path": "workspace/step104/jobs.sqlite3"
+    },
+    {
+      "foreign_key_violations": 0,
+      "integrity": "ok",
+      "ok": true,
+      "path": "workspace/step104/platform.sqlite3"
+    },
+    {
+      "foreign_key_violations": 0,
+      "integrity": "ok",
+      "ok": true,
+      "path": "workspace/step130_scientific_intelligence.sqlite3"
+    },
+    {
+      "foreign_key_violations": 0,
+      "integrity": "ok",
+      "ok": true,
+      "path": "workspace/visual_workspace.sqlite3"
+    },
+    {
+      "foreign_key_violations": 0,
+      "integrity": "ok",
+      "ok": true,
+      "path": "workspace/workflow_runs/workflow_runs.sqlite3"
+    }
+  ],
+  "schema": "biointel.step155.database-integrity.v1"
+}

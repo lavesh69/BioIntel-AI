@@ -1,0 +1,43 @@
+{
+  "boundary": "Full source and isolated Streamlit runtime qualification in the available build environment. Physical Windows antivirus, GPU, hardware drivers, sleep/resume, signed installer reputation and real laboratory instrument qualification remain target-machine or external evidence.",
+  "checks": [
+    {
+      "detail": "Read/write and subprocess argument handling qualified",
+      "key": "paths_with_spaces",
+      "passed": true
+    },
+    {
+      "detail": "320-character nested path write/read qualified",
+      "key": "long_path_320_chars",
+      "passed": true
+    },
+    {
+      "detail": "WAL runtime probe passed; release database integrity 40/40",
+      "key": "sqlite_wal_integrity_foreign_keys",
+      "passed": true
+    },
+    {
+      "detail": "80 profiles, 80 workflows, 76 engines and 78 protected plans import successfully",
+      "key": "core_imports",
+      "passed": true
+    },
+    {
+      "detail": "229/229 passed; failures=0; timeouts=0",
+      "key": "all_streamlit_screens",
+      "passed": true
+    },
+    {
+      "detail": "1315 passed, 27 environment-gated skips, 0 failed",
+      "key": "repository_regression",
+      "passed": true
+    },
+    {
+      "detail": "40/40 passed; foreign-key violations=0",
+      "key": "database_fleet",
+      "passed": true
+    }
+  ],
+  "generated_at_utc": "2026-07-13T14:29:02.306422+00:00",
+  "passed": true,
+  "schema": "biointel.step157.target-qualification-final.v1"
+}

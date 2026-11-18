@@ -1,0 +1,21 @@
+BioIntel AI Step 155 Full Regression Report
+===========================================
+Collected: 1316
+Passed:    1289
+Skipped:   27
+Failed:    0
+
+Verification method:
+  Complete top-level suite executed in deterministic file batches because the build
+  environment terminates long monolithic commands. Nested E2E, integration, operations,
+  scientific-golden and visual suites were executed separately. No test was removed or
+  weakened.
+
+Skipped scope:
+  Live browser visual-regression and external-runtime scenarios unavailable in the build environment.
+
+Additional evidence:
+  Step 155 focused tests: 14 passed
+  Step 149-154 compatibility batch: 45 passed
+  Engineering quality gates: 4/4 passed
+  Python source compile scan: passed

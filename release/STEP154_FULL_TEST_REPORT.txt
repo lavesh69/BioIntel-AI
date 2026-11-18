@@ -1,0 +1,19 @@
+BioIntel AI Step 154 Full Regression Report
+===========================================
+Collected: 1302
+Passed:    1275
+Skipped:   27
+Failed:    0
+Duration:  340.63 seconds
+
+Command:
+  PYTHONPATH=src pytest -q
+
+Skipped scope:
+  Live browser visual-regression and external-runtime scenarios unavailable in the build environment.
+
+Additional focused evidence:
+  Step 154 + Step 153 scientific tests: 23 passed
+  Compatibility/installer/quality/navigation batch: 82 passed
+  Managed SQLite regression repair: 3 passed
+  Python compileall: passed

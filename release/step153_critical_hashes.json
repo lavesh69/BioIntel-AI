@@ -1,0 +1,27 @@
+{
+  "files": {
+    "INSTALL_WINDOWS.bat": "987d0c05284ad4d4b6402b71024a0292226eab43ceb439050fc7f022b42bb66c",
+    "RUN_BOTH_WINDOWS.bat": "e9583323d1e10d644f075bd542b2d4f3a4bcd5c457c231bdf7c62f66db106cb4",
+    "STEP153_RELEASE.json": "87c316ec4dc4e073da65997321e36d941d0ee63bac700f544207ea1d35e58ab9",
+    "VERIFY_STEP153_WINDOWS.bat": "87793ad54541a65f1c79e8bb2d87a766c835005f09c0cc5d4faf35a5138629f2",
+    "pages/227_Scientific_Readiness_Command_Center.py": "5ce26c748058888846bcb399d6843f8306cbb763bbf210ab03e2821f8d998aad",
+    "release/STEP153_DOMAIN_SCIENTIFIC_CORE_REPORT.md": "8bb6c74167f93d887280f4a39c2ed2dfa8b765efb384fb77991a2593c4303e88",
+    "release/STEP153_FULL_TEST_REPORT.txt": "df666964017131e513eeeb7aba4765aaefd4076e32f3d8c0cfbfd3f43449534d",
+    "release/step153_change_manifest.json": "aa04075bae73c08c67187351e6c0c42650ab80d2d41b3a00f44dc9fa0f03c1bd",
+    "scripts/step150_validate_installation.py": "e4f3827e4c7bf03bea9e6712b3f0ada1a8e7218ad177d817ffdb5627466b0d8b",
+    "scripts/step153_validate_installation.py": "e6d4ca82c6993bbfc0454c9a9f680685c2dc9e09f458fae946c201fff491091e",
+    "src/biointel/scientific_depth/__init__.py": "038d2e189c97316d8dcf6e0604e9e569f4d51524cd7a31ba30fde77b3e71c749",
+    "src/biointel/scientific_depth/native_advanced_workflows.py": "8bd50722a89f593f533fd0cc99d9cd007255d9b021dd2e8f9efc2fac733b585e",
+    "src/biointel/scientific_depth/native_biodesign_workflows.py": "903fc370f06c46bf16c02813a749029d609851a3096f54c7f48cbb0ab6ce115d",
+    "src/biointel/scientific_depth/native_omics_workflows.py": "7436341b637bfa6d99278d43a03921d5e56b7cbc7fdea7ba61d23140a5a30eb5",
+    "src/biointel/scientific_depth/native_specialist_workflows.py": "7dba887fb402a98dd5dc7282101900a202fc4da74449703636fed44bf19eb1e0",
+    "src/biointel/scientific_depth/native_workflows.py": "677a286cd94c83ba1dfbd798e7928e0219200b0610e1417a819c440892e16275",
+    "src/biointel/scientific_depth/portfolio.py": "7555238a062297fc9e8416254b802b7ce1d8af8838c8d2db7d8ef674713aa430",
+    "src/biointel/scientific_depth/profiles.py": "4b88ccde13b2e706bf8c2946a55dbc5820d2a998bfea58c4be8dd58402d38dc7",
+    "src/biointel/scientific_depth/renderer.py": "f7d6d14e89bce76fbe4004970444bca14a5b2b099eea87ba4570673885c36b38",
+    "src/biointel/scientific_depth/toolchain_readiness.py": "012be877e55dfa8679825697cbc986f9d6de5718f4b487fe5f46c51c7e291dcb",
+    "tests/test_step153_domain_scientific_core.py": "a028dec8e899e7762dc8df65f660728517c67dafe184e5106799c5dba6884c4f"
+  },
+  "release": "Step 153",
+  "schema": "biointel.step153.critical-hashes.v1"
+}

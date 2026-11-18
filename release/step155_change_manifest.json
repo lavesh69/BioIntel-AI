@@ -1,0 +1,28 @@
+{
+  "base_step": 154,
+  "changes": [
+    "Adaptive interactive, extended and full native analysis budgets",
+    "Deterministic even-coverage bounded analysis instead of first-N sampling",
+    "Advanced GWAS association and genomic-inflation screening",
+    "Single-cell QC, highly-variable features, embedding, clustering and donor pseudobulk",
+    "Multivariable Cox proportional-hazards screening",
+    "Patient-level pathology split-leakage detection",
+    "Flow compensation, FMO thresholds and gate hierarchy evidence",
+    "Metabolomics blank correction, internal-standard normalisation and feature clustering",
+    "RDKit canonicalisation, descriptors and Murcko scaffold audit when available",
+    "AMR genotype-phenotype performance metrics",
+    "Federated weighted aggregation, outlier screening and privacy-budget composition",
+    "Trial covariate-balance diagnostics",
+    "Fourteen additional protected specialist execution plans"
+  ],
+  "external_boundaries_preserved": [
+    "Clinical and regulatory approval",
+    "GxP qualification and authority inspection",
+    "Licensed full-size reference databases",
+    "Physical instrument qualification",
+    "Independent prospective wet-lab validation",
+    "Long-term real production operating history"
+  ],
+  "schema": "biointel.step155.change-manifest.v1",
+  "step": 155
+}
