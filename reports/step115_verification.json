@@ -1,0 +1,55 @@
+{
+  "schema": "biointel.step115.verification.v1",
+  "version": "11.6.0",
+  "generated_at_utc": "2026-07-11T05:02:18+00:00",
+  "status": "PASS",
+  "passed": 9,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "Version",
+      "status": "PASS",
+      "detail": "VERSION=11.6.0"
+    },
+    {
+      "name": "Advanced non-chart catalogue",
+      "status": "PASS",
+      "detail": "15/15"
+    },
+    {
+      "name": "Module-specific workspaces",
+      "status": "PASS",
+      "detail": "13/13"
+    },
+    {
+      "name": "Excluded modules unchanged",
+      "status": "PASS",
+      "detail": "5/5 source hashes preserved"
+    },
+    {
+      "name": "Critical compilation",
+      "status": "PASS",
+      "detail": "3 files compiled"
+    },
+    {
+      "name": "Runtime pages and renderer states",
+      "status": "PASS",
+      "detail": "failed=0"
+    },
+    {
+      "name": "Static page and Python audit",
+      "status": "PASS",
+      "detail": "failed=0"
+    },
+    {
+      "name": "SQLite integrity",
+      "status": "PASS",
+      "detail": "36/36 databases healthy"
+    },
+    {
+      "name": "Application self-test",
+      "status": "PASS",
+      "detail": "failed=0"
+    }
+  ]
+}

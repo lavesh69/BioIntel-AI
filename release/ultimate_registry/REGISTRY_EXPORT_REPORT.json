@@ -1,0 +1,40 @@
+{
+  "schema": "biointel.ultimate-registry-export.v1",
+  "generated_at_utc": "2026-07-23T10:57:31+00:00",
+  "output": "C:\\Users\\lavesh dobriyal\\Documents\\Codex\\2026-07-22\\bh-2\\work\\biointel_extracted\\BioIntel-AI-15.6.0-Step206-WINDOWS-V19.6\\release\\ultimate_registry",
+  "module_integrity": {
+    "schema": "biointel.product-registry-integrity.v1",
+    "healthy": true,
+    "module_count": 272,
+    "navigation_page_count": 272,
+    "duplicate_ids": [],
+    "duplicate_paths": [],
+    "disabled_or_missing": [],
+    "auto_discovered": [
+      "pages/168_Synthetic_Demo_Data_Workspace.py"
+    ],
+    "navigation": {
+      "page_files": 271,
+      "catalogue_pages": 271,
+      "missing_from_catalogue": [],
+      "missing_on_disk": [],
+      "auto_discovered": [
+        "pages/168_Synthetic_Demo_Data_Workspace.py"
+      ],
+      "duplicate_keys": [],
+      "duplicate_paths": [],
+      "healthy": true
+    },
+    "functional": 271,
+    "external_asset_required": 67,
+    "with_sample_data": 47,
+    "with_input_templates": 47
+  },
+  "counts": {
+    "modules": 272,
+    "engines": 76,
+    "models": 25,
+    "references": 18
+  },
+  "status": "passed"
+}

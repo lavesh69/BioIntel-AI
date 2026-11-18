@@ -1,0 +1,249 @@
+{
+  "schema": "biointel.step108.decision-visual-audit.v1",
+  "version": "11.0.0",
+  "release": "Step 108 Decision Visual Intelligence",
+  "generated_at_utc": "2026-07-10T16:30:20+00:00",
+  "summary": {
+    "phase_1_modules": 8,
+    "phase_2_modules": 6,
+    "modules_upgraded": 14,
+    "visuals_per_module": 5,
+    "visual_views": 70,
+    "runtime_pages_passed": 14,
+    "runtime_pages_total": 14,
+    "builder_views_passed": 70,
+    "builder_views_total": 70,
+    "targeted_regression_tests_passed": 23,
+    "self_tests_passed": 7,
+    "self_tests_failed": 0
+  },
+  "architecture": {
+    "render_policy": "lazy-selected",
+    "maximum_simultaneous_visuals_per_module": 1,
+    "sqlite_cache_ttl_seconds": 60,
+    "empty_state_safe": true,
+    "underlying_data_preview": true,
+    "csv_export": true,
+    "plotly_interactivity": true,
+    "scientific_boundary": "Visuals summarise registered evidence and analysis outputs; they do not create clinical validity, regulatory approval, or independent experimental evidence."
+  },
+  "modules": [
+    {
+      "key": "clinical_validation",
+      "phase": 1,
+      "page": "pages/90_Clinical_Pharma_Validation_Center.py",
+      "visual_count": 5,
+      "visuals": [
+        "Clinical evidence pyramid",
+        "Validation cohort flow",
+        "Endpoint forest plot",
+        "Quality-risk matrix",
+        "Validation record coverage"
+      ],
+      "runtime_passed": true,
+      "selector_options_verified": 5
+    },
+    {
+      "key": "external_validation",
+      "phase": 1,
+      "page": "pages/14_External_Validation_Drift.py",
+      "visual_count": 5,
+      "visuals": [
+        "External performance summary",
+        "Feature-drift ranking",
+        "Calibration or agreement",
+        "Error and confidence distribution",
+        "Validation data-quality funnel"
+      ],
+      "runtime_passed": true,
+      "selector_options_verified": 5
+    },
+    {
+      "key": "benchmark_leakage",
+      "phase": 1,
+      "page": "pages/47_Benchmark_Leakage_Lab.py",
+      "visual_count": 5,
+      "visuals": [
+        "Leakage overlap profile",
+        "Leakage-risk matrix",
+        "Unique-entity retention",
+        "Release decision gauge",
+        "Train and test composition"
+      ],
+      "runtime_passed": true,
+      "selector_options_verified": 5
+    },
+    {
+      "key": "dti_validation",
+      "phase": 1,
+      "page": "pages/74_DTI_Validation_Evidence_Center.py",
+      "visual_count": 5,
+      "visuals": [
+        "Implementation versus evidence",
+        "Evidence-gap heatmap",
+        "Qualification status composition",
+        "Capability gap ranking",
+        "Validation milestone funnel"
+      ],
+      "runtime_passed": true,
+      "selector_options_verified": 5
+    },
+    {
+      "key": "data_readiness",
+      "phase": 1,
+      "page": "pages/69_Scientific_Data_Readiness.py",
+      "visual_count": 5,
+      "visuals": [
+        "Metadata versus scientific readiness",
+        "Dataset readiness matrix",
+        "Readiness blocker profile",
+        "Dataset lineage coverage",
+        "Provider data coverage"
+      ],
+      "runtime_passed": true,
+      "selector_options_verified": 5
+    },
+    {
+      "key": "model_evaluation",
+      "phase": 1,
+      "page": "pages/7_Model_Evaluation.py",
+      "visual_count": 5,
+      "visuals": [
+        "Model metric comparison",
+        "Validation-to-test agreement",
+        "Generalisation delta heatmap",
+        "Data support versus performance",
+        "Model provenance composition"
+      ],
+      "runtime_passed": true,
+      "selector_options_verified": 5
+    },
+    {
+      "key": "experiment_registry",
+      "phase": 1,
+      "page": "pages/11_Experiment_Registry.py",
+      "visual_count": 5,
+      "visuals": [
+        "Experiment performance leaderboard",
+        "Cross-validation stability",
+        "Hyperparameter search landscape",
+        "Runtime versus performance",
+        "Validation requirement status"
+      ],
+      "runtime_passed": true,
+      "selector_options_verified": 5
+    },
+    {
+      "key": "dataset_registry",
+      "phase": 1,
+      "page": "pages/21_Dataset_Registry_Lineage.py",
+      "visual_count": 5,
+      "visuals": [
+        "Logical versus physical datasets",
+        "Dataset lineage network",
+        "Schema and QC coverage",
+        "Storage and format composition",
+        "Readiness issue matrix"
+      ],
+      "runtime_passed": true,
+      "selector_options_verified": 5
+    },
+    {
+      "key": "knowledge_graph",
+      "phase": 2,
+      "page": "pages/101_Biomedical_Knowledge_Graph_Copilot.py",
+      "visual_count": 5,
+      "visuals": [
+        "Evidence-confidence distribution",
+        "Relationship type composition",
+        "Citation coverage by relation",
+        "Conflict and research-gap profile",
+        "Entity-type connectivity"
+      ],
+      "runtime_passed": true,
+      "selector_options_verified": 5
+    },
+    {
+      "key": "evidence_package",
+      "phase": 2,
+      "page": "pages/31_Evidence_Package_Studio.py",
+      "visual_count": 5,
+      "visuals": [
+        "Package readiness profile",
+        "Evidence file composition",
+        "Claim-to-artifact coverage",
+        "Integrity and completeness matrix",
+        "Package blocker ranking"
+      ],
+      "runtime_passed": true,
+      "selector_options_verified": 5
+    },
+    {
+      "key": "governance",
+      "phase": 2,
+      "page": "pages/30_Governance_Hub.py",
+      "visual_count": 5,
+      "visuals": [
+        "Governance control matrix",
+        "Project risk heatmap",
+        "Open findings trend",
+        "Approval and review timeline",
+        "Compliance coverage profile"
+      ],
+      "runtime_passed": true,
+      "selector_options_verified": 5
+    },
+    {
+      "key": "release_gate",
+      "phase": 2,
+      "page": "pages/45_Scientific_Release_Gate.py",
+      "visual_count": 5,
+      "visuals": [
+        "Release gate waterfall",
+        "Blocker severity profile",
+        "Validation evidence matrix",
+        "Readiness scorecard",
+        "Required versus available evidence"
+      ],
+      "runtime_passed": true,
+      "selector_options_verified": 5
+    },
+    {
+      "key": "provider_integration",
+      "phase": 2,
+      "page": "pages/85_Provider_Integration_Center.py",
+      "visual_count": 5,
+      "visuals": [
+        "Provider connection health",
+        "Provider latency and availability",
+        "Query and record activity",
+        "Failure-type distribution",
+        "Provider coverage matrix"
+      ],
+      "runtime_passed": true,
+      "selector_options_verified": 5
+    },
+    {
+      "key": "reference_manager",
+      "phase": 2,
+      "page": "pages/106_Reference_Database_Manager.py",
+      "visual_count": 5,
+      "visuals": [
+        "Reference storage profile",
+        "Release and version timeline",
+        "Reference integrity matrix",
+        "Asset lifecycle events",
+        "Compatibility and activation status"
+      ],
+      "runtime_passed": true,
+      "selector_options_verified": 5
+    }
+  ],
+  "verification": {
+    "pytest_stdout": ".......................                                                  [100%]\n23 passed in 9.54s",
+    "runtime_report": "reports/step108_page_runtime.json",
+    "verification_report": "reports/step108_verification.json",
+    "self_test_report": "reports/step108_self_test.json",
+    "ruff": "Unavailable in build environment; no lint-pass claim made."
+  }
+}

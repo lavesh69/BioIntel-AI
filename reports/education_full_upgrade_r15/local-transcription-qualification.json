@@ -1,0 +1,38 @@
+{
+  "schema": "biointel.education.transcription-qualification.v1",
+  "generated_at": "2026-08-01T16:25:45.505328+00:00",
+  "readiness": {
+    "provider": "local_faster_whisper",
+    "state": "ready",
+    "ready": true,
+    "credential_required": false,
+    "network_required_at_runtime": false,
+    "ffmpeg_path": "C:\\Users\\lavesh dobriyal\\Documents\\Codex\\2026-08-01\\files-mentioned-by-the-user-biointel\\work\\streamlit_skill_py311\\Lib\\site-packages\\imageio_ffmpeg\\binaries\\ffmpeg-win-x86_64-v7.1.exe",
+    "package_version": "1.2.1",
+    "model_path": "C:\\Users\\lavesh dobriyal\\Documents\\Codex\\2026-08-01\\files-mentioned-by-the-user-biointel\\work\\education_r9_assembly_20260801\\BioIntel-Step220\\models\\education\\faster-whisper-tiny",
+    "model_manifest_sha256": "2507446bda93db691ec9afda4afbdd90c193ec9e55a4c6358894117b147b9b5c",
+    "model_revision": "d90ca5fe260221311c53c58e660288d3deb8d356",
+    "model_license": "MIT",
+    "supported_language_modes": [
+      "auto",
+      "english",
+      "hindi",
+      "hinglish"
+    ],
+    "reason": ""
+  },
+  "functional_test": {
+    "executed": true,
+    "passed": true,
+    "source_path": "C:\\Users\\lavesh dobriyal\\Documents\\Codex\\2026-08-01\\files-mentioned-by-the-user-biointel\\work\\jfk-whisper-qualification.flac",
+    "source_size_bytes": 1152693,
+    "source_sha256": "63a4b1e4c1dc655ac70961ffbf518acd249df237e5a0152faae9a4a836949715",
+    "detected_language": "en",
+    "language_probability": 0.980023,
+    "duration_seconds": 11.0,
+    "segment_count": 1,
+    "transcript_excerpt": "And so, my fellow Americans, ask not what your country can do for you, ask what you can do for your country.",
+    "model_manifest_sha256": "2507446bda93db691ec9afda4afbdd90c193ec9e55a4c6358894117b147b9b5c",
+    "network_used": false
+  }
+}

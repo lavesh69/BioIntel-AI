@@ -1,0 +1,21 @@
+{
+  "schema": "biointel.step121.final-validation.v1",
+  "version": "12.1.0",
+  "date": "2026-07-11",
+  "selected_modules": 7,
+  "capability_stages": 42,
+  "step121_verifier": {"passed": 12, "total": 12},
+  "selected_regression_suite": {"passed": 121, "total": 121},
+  "streamlit_initial_runtime": {"passed": 7, "total": 7},
+  "python_syntax": {"passed": 863, "total": 863},
+  "sqlite_integrity": {"healthy": 36, "total": 36, "rows_checked": 108413},
+  "engineering_gates": {"passed": 4, "total": 4},
+  "locked_excluded_modules": {"byte_identical": 5, "total": 5},
+  "starter_templates": 13,
+  "full_non_visual_suite": {
+    "status": "execution_window_timeout",
+    "counted_as_pass": false,
+    "note": "The complete non-visual suite was attempted but did not finish inside the execution window. Completed targeted and compatibility suites are reported separately above."
+  },
+  "scientific_boundary": "The release adds research-workflow algorithms and auditable gates. It does not fabricate provider verification, external engines, independent cohorts, wet-lab confirmation, diagnostic validation or clinical release."
+}

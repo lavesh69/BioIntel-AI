@@ -1,0 +1,105 @@
+{
+  "schema": "biointel.step111.source-verification.v1",
+  "version": "11.2.0",
+  "generated_at_utc": "2026-07-10T18:23:39.876049+00:00",
+  "status": "PASS",
+  "native_formats": {
+    "catalog": 23,
+    "fixtures_passed": 23,
+    "fixtures_total": 23
+  },
+  "external_engines": {
+    "registry": 24,
+    "safe_plans": 12,
+    "plan_shell_free": true
+  },
+  "statistics": {
+    "test": "Welch t-test",
+    "effect_size_recorded": true,
+    "confidence_interval_recorded": true,
+    "multiple_testing": "Benjamini-Hochberg"
+  },
+  "viewer_sync": {
+    "events": 1,
+    "states": 1
+  },
+  "pytest": {
+    "passed": 68,
+    "failed": 0,
+    "summary": "....................................................................     [100%]\n68 passed in 10.04s"
+  },
+  "self_test": {
+    "passed": 7,
+    "failed": 0,
+    "status": "PASS"
+  },
+  "runtime_pages": {
+    "version": "11.2.0",
+    "results": [
+      {
+        "page": "pages/166_Real_Engine_Native_Format_Integration.py",
+        "exceptions": 0,
+        "errors": 0,
+        "warnings": 1,
+        "plotly": 0,
+        "passed": true
+      },
+      {
+        "page": "pages/165_Advanced_Scientific_Viewers.py",
+        "exceptions": 0,
+        "errors": 0,
+        "warnings": 1,
+        "plotly": 0,
+        "passed": true
+      },
+      {
+        "page": "pages/57_Variant_Annotation_Workbench.py",
+        "exceptions": 0,
+        "errors": 0,
+        "warnings": 1,
+        "plotly": 4,
+        "passed": true
+      },
+      {
+        "page": "pages/61_Structural_Bioinformatics.py",
+        "exceptions": 0,
+        "errors": 0,
+        "warnings": 1,
+        "plotly": 5,
+        "passed": true
+      }
+    ],
+    "passed": 4,
+    "total": 4
+  },
+  "native_upload_runtime": {
+    "page": "pages/165_Advanced_Scientific_Viewers.py",
+    "native_upload": "variants.vcf",
+    "exceptions": 0,
+    "errors": 0,
+    "success": [
+      "Native VCF evidence decoded \u00b7 1 preview records"
+    ],
+    "plotly": 1,
+    "passed": true
+  },
+  "python_compilation": {
+    "version": "11.2.0",
+    "compiled": 810,
+    "total": 810,
+    "failed": []
+  },
+  "database_health": {
+    "healthy": 26,
+    "total": 26,
+    "rows": 108063
+  },
+  "global_upload_limit_bytes": 1073741824,
+  "interactive_native_limit_bytes": 104857600,
+  "ruff": "Unavailable in build environment; no lint-pass claim made",
+  "boundaries": [
+    "BAM/CRAM full indexed decoding requires SAMtools/pysam and matching references where applicable",
+    "Vendor RAW and proprietary WSI need external/vendor adapters",
+    "Clinical or regulated interpretation requires independent validation and specialist review"
+  ]
+}

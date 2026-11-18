@@ -1,0 +1,2964 @@
+{
+  "schema": "biointel.step115.static-audit.v1",
+  "version": "11.6.0",
+  "generated_at_utc": "2026-07-11T04:51:24+00:00",
+  "pages_checked": 170,
+  "pages_passed": 170,
+  "python_files_checked": 525,
+  "python_files_passed": 525,
+  "failed": 0,
+  "pages": [
+    {
+      "page": "pages/0_Quick_Start.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/100_Rare_Disease_Genome_Interpretation.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/101_Biomedical_Knowledge_Graph_Copilot.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/102_Multi_Omics_Biomarker_Discovery.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/103_Visual_Workflow_Builder.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/104_Innovation_Modules_Hub.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/105_Scientific_Execution_Quality_Center.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/106_Reference_Database_Manager.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/107_Installation_Data_Recovery_Center.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/108_External_Model_Qualification.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/109_Lab_Instrument_Import_Center.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/10_External_Databases.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/110_Reliability_Optimization_Center.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/111_Windows_UI_Regression_Performance_Center.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/112_Epigenomics_and_Chromatin_Regulation_Studio.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/113_Metabolomics_and_Lipidomics_Workbench.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/114_Immunoinformatics_and_Vaccine_Design_Lab.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/115_Antibody_and_Biologics_Engineering_Studio.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/116_Molecular_Docking_and_Dynamics_Lab.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/117_Pharmacogenomics_and_Precision_Medicine_Board.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/118_Spatial_Omics_and_Digital_Pathology_Studio.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/119_Single_Cell_Trajectory_and_Communication_Lab.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/11_Experiment_Registry.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/120_Bioimage_and_Microscopy_AI_Lab.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/121_Biostatistics_Power_and_Experimental_Design_Studio.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/122_Clinical_Trial_Biomarker_and_Patient_Stratification_Studio.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/123_Genome_Editing_Safety_and_Off_Target_Validation_Lab.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/124_Proteogenomics_and_Neoantigen_Discovery_Studio.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/125_Bioprocess_and_Fermentation_Optimization_Studio.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/126_LIMS_ELN_and_Sample_Chain_of_Custody_Hub.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/127_Causal_Biology_and_Perturbation_Modelling.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/128_Explainable_AI_and_Model_Assurance_Center.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/129_Multi_Omics_Harmonization_and_Batch_Correction_Studio.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/12_API_Deployment.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/130_Glycomics_and_Glycoproteomics_Workbench.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/131_One_Health_and_Environmental_Genomics_Center.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/132_Synthetic_Data_and_Privacy_Engineering_Lab.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/133_Scientific_Expansion_Hub.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/134_Population_Genetics_GWAS_Studio.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/135_Structural_Variant_Repeat_Expansion_Lab.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/136_Longitudinal_Multi_Omics_Time_Series_Studio.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/137_RNA_Isoform_Alternative_Splicing_Studio.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/138_RNA_Modification_Epitranscriptomics_Lab.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/139_Strain_Resolved_Microbiome_Functional_Profiling_Studio.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/13_ChEMBL_Dataset_Builder.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/140_Cell_Atlas_Mapping_Reference_Annotation_Studio.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/141_Phenotypic_Screening_High_Content_Analysis_Lab.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/142_Organoid_3D_Cell_Model_Analytics.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/143_Protein_Language_Model_Generative_Design_Lab.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/144_Enzyme_Engineering_Metabolic_Pathway_Design_Studio.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/145_Host_Pathogen_Interaction_Studio.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/146_Virology_Viral_Evolution_Workbench.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/147_Rare_Variant_Burden_Family_Genetics_Lab.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/148_Universal_Scientific_File_Inspector.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/149_Cross_Module_Project_Workspace.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/14_External_Validation_Drift.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/150_Visual_Scientific_Workflow_Builder_2.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/151_Real_Background_Job_Queue_Engine.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/152_Unified_Scientific_Report_Builder.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/153_Reference_Database_Lifecycle_Manager_2.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/154_Data_Provenance_Reproducibility_Ledger_2.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/155_Scientific_Evidence_Citation_Engine.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/156_Model_Registry_ML_Lifecycle_Center_2.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/157_Instrument_Integration_Hub_2.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/158_Collaboration_Scientific_Review_System_2.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/159_Offline_AI_Scientific_Copilot_2.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/15_Audit_Release.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/160_Data_Lakehouse_Sample_Search_Engine_2.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/161_Benchmark_Validation_Center_2.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/162_Plugin_Module_Marketplace_2.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/163_Step104_Scientific_and_Platform_Expansion_Hub.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/164_Visual_Interaction_Accessibility_Workspace.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/165_Advanced_Scientific_Viewers.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/166_Real_Engine_Native_Format_Integration.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/167_Bioinformatics_Feature_Upgrade_Center.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/168_Scientific_Depth_Optimization_Center.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/169_Non_Chart_Scientific_Visuals.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/16_Batch_Sequence_Analysis.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/17_Local_Data_Manager.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/18_Workspace_Backup_Restore.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/19_System_Diagnostics.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/1_Sequence_Analyzer.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/20_Workflow_Dashboard.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/21_Dataset_Registry_Lineage.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/22_Model_Lifecycle.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/23_Batch_Prediction_Jobs.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/24_Appearance_Studio.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/25_Command_Center.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/26_Research_Report_Studio.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/27_Executive_Overview.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/28_Project_Portfolio.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/29_Activity_Risk_Center.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/2_Sequence_Comparison.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/30_Governance_Hub.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/31_Evidence_Package_Studio.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/32_Release_Readiness_Lineage.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/33_Data_Model_Library.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/34_ML_AutoLab.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/35_Double_Data_ML.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/36_Data_Coverage_Center.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/37_5X_Data_ML.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/38_Data_Intelligence_Hub.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/39_Knowledge_Warehouse.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/3_Drug_SMILES_Analyzer.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/40_Analytics_Observability.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/41_Research_Assets.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/42_Internet_Research_Hub.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/43_Scientific_Data_Curation.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/44_Performance_Job_Center.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/45_Scientific_Release_Gate.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/46_Real_Evidence_Studio.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/47_Benchmark_Leakage_Lab.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/48_Evidence_Review_Queue.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/49_Document_Intelligence_Center.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/4_DTI_Feature_Builder.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/50_Document_Extraction_History.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/51_OCR_Layout_Review.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/52_Batch_Document_Processor.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/53_Document_Knowledge_Search.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/54_Document_Evidence_Bridge.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/55_Demo_Data_Hub.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/56_FASTQ_Genomics_QC.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/57_Variant_Annotation_Workbench.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/58_Primer_CRISPR_Codon_Studio.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/59_Transcriptomics_Expression_Lab.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/5_Model_Training.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/60_Protein_Annotation_Proteomics.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/61_Structural_Bioinformatics.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/62_ADMET_Drug_Discovery.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/63_Pathway_Network_Analysis.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/64_Wet_Lab_Biotechnology.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/65_Microbiology_Metagenomics.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/66_Omics_Integration_Hub.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/67_Bioinformatics_Capability_Center.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/68_Alignment_Phylogeny.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/69_Scientific_Data_Readiness.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/6_DTI_Predictor.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/70_BioIntel_Studio.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/71_Platform_Quality_Center.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/72_Compliance_Research_Readiness.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/73_Scientific_Evidence_Excellence.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/74_DTI_Validation_Evidence_Center.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/75_Real_World_Operations_Evidence.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/76_Final_Assurance_Center.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/77_Biotechnology_Project_Center.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/78_Protein_Interaction_ML.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/79_Comparative_Pathogen_Genomics.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/7_Model_Evaluation.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/80_Single_Cell_Heterogeneity.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/81_Cancer_Genomics.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/82_Metagenomics_Pipeline.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/83_BioIntel_Copilot.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/84_Connected_Data_Explorer.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/85_Provider_Integration_Center.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/86_Privacy_Security_Center.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/87_Store_Readiness_Center.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/88_Discovery_Command_Center.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/89_Lab_Analytics_Command_Center.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/8_Data_Quality_Activity.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/90_Clinical_Pharma_Validation_Center.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/91_Real_External_Validation_Center.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/92_Independent_Validation_Accelerator.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/93_Advanced_Bioinformatics_Tools.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/94_Pangenome_Variation_Graph_Studio.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/95_Long_Read_Assembly_T2T_Studio.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/96_AI_Protein_Design_Lab.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/97_CRISPR_Screen_PerturbSeq_Analytics.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/98_Pathogen_Outbreak_Command_Center.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/99_Synthetic_Biology_Circuit_Designer.py",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "page": "pages/9_Project_Status.py",
+      "status": "PASS",
+      "errors": []
+    }
+  ],
+  "python_files": [
+    {
+      "file": "scripts/apply_step33_integrity_guards.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/audit_scientific_credibility.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/background_job_worker.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/bootstrap.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/build_clinical_pharma_validation_pack.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/build_module_starter_kits.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/build_public_evidence_bundle.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/build_reproducible_release.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/build_step32_foundation.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/build_step33_platform.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/build_weighted_ensemble.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/check_architecture.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/check_technical_debt.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/create_ui_user.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/curate_real_dataset.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/data_pack_smoke_test.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/dev_doctor.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/diagnose.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/engineering_quality_gate.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/extract_document.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/generate_brand_assets.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/generate_common_compound_directory.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/generate_complete_coverage.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/generate_data_packs.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/generate_demo_dataset.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/generate_sbom.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/governance_smoke_test.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/import_real_evidence.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/install_windows_step97.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/migrate_user_data.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/optimization_benchmark.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/parse_step41_load_evidence.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/performance_qualification.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/qualify_scientific_release.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/qualify_step37.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/qualify_step38.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/qualify_step40_validation.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/qualify_step41_realworld.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/qualify_step42_maximum_evidence.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/qualify_step43_final.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/qualify_step82_7_quality_targets.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/qualify_step83_clinical_pharma.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/qualify_step84_real_external_validation.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/qualify_step85_user_experience.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/qualify_step89_independent_validation_accelerator.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/qualify_step91_branding.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/register_prospective_study.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/register_step40_validation_study.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/register_step41_realworld_evidence.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/run_biointel_step97.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/run_isolated_test_matrix.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/run_local_worker.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/run_performance_gate.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/run_real_scientific_benchmark.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/run_step41_dr_drill.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/run_step42_verifiable_evidence.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/run_test_shard.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/run_windows_ui_regression.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/seed_demo_workspace.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/seed_professional_databases.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/seed_step29_bioinformatics.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/seed_step30_scientific_foundation.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/seed_step31_data_ui_foundation.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/seed_step38_scientific_evidence.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/seed_step39_evidence_depth.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/seed_step40_validation_readiness.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/semantic_visual_worker.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/smoke_test.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/step68_streamlit_page_worker.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/step82_theme_matrix_worker.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/step97_runtime_preflight.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/step97_self_test.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/sync_scientific_evidence.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/test_connected_services.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/train_data_pack_models.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/train_demo_models.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/train_step16_ml_suite.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/train_step17_double_data_suite.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/train_step19_5x_suite.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/update_semantic_visual_baselines.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/update_visual_baselines.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/upgrade_step35.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/verify_clinical_pharma_readiness.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/verify_dependency_lock.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/verify_release.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/verify_step104_expansion.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/verify_step105_reliability.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/verify_step106_ui_workbench.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/verify_step107_scientific_visuals.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/verify_step108_decision_visuals.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/verify_step108_pages.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/verify_step109_visual_interaction.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/verify_step110_advanced_viewers.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/verify_step111_native_integration.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/verify_step114_scientific_depth.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/verify_step25.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/verify_step26.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/verify_step27.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/verify_step28.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/verify_step29.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/verify_step30.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/verify_step31.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/verify_step32.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/verify_step33.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/verify_step35.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/verify_step54.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/verify_step55.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/verify_step57.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/verify_step58.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/verify_step59.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/verify_step60.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/verify_step61_discovery.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/verify_step62_lab_analytics.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/verify_step63_discovery.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/verify_step64_final.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/verify_step67_theme_browser.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/verify_step67_theme_font.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/verify_step68_runtime_repairs.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/verify_step82_merged_build.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/verify_store_release.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/verify_windows_wheelhouse.py",
+      "status": "PASS"
+    },
+    {
+      "file": "scripts/watch_document_folder.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/__init__.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/__main__.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/api/__init__.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/api/main.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/api/middleware.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/api/schemas.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/api/security_store.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/assets/__init__.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/assets/research_assets.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/assurance/__init__.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/assurance/cache.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/assurance/final.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/automation/__init__.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/automation/workflow_automation.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/bioinformatics/__init__.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/bioinformatics/upgrades.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/bioinformatics_capabilities.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/biotech/__init__.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/biotech/assays.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/biotech/assays_advanced.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/biotech/assays_quality.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/biotech/experimental_design.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/biotech/lab_import.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/biotech/lab_registry.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/biotech/lab_reporting.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/biotech/lab_schema.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/chemistry/__init__.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/chemistry/admet.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/chemistry/chemical_space.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/chemistry/common_compounds.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/chemistry/descriptors.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/chemistry/fingerprints.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/chemistry/medicinal_chemistry.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/chemistry/molecule_visualization.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/chemistry/similarity_search.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/chemistry/smiles_validator.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/chemistry/standardization.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/cli.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/clinical/__init__.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/clinical/dossier.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/clinical/external_evidence.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/clinical/external_readiness.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/clinical/quality.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/clinical/readiness.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/clinical/registry.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/clinical/schema.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/clinical/templates.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/clinical/validation_accelerator.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/compliance/__init__.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/compliance/control_catalog.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/compliance/ledger.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/connected/__init__.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/connected/config.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/connected/copilot.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/connected/diagnostics.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/connected/http.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/connected/models.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/connected/providers.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/connected/registry.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/connected/secrets.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/connected/tools.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/data/__init__.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/data/assay_ontology.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/data/coverage_packs.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/data/curation.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/data/data_packs.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/data/dataset_registry.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/data/evidence_registry.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/data/profiling.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/data/public_reference.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/data/readiness.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/data/readiness_repair.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/data/real_evidence.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/data/relationship_integrity.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/data/scientific_registry.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/data/streaming.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/database/__init__.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/database/core.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/database/integrity_guards.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/database/migrations.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/demo_workspace.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/discovery/__init__.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/discovery/admet_plugins.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/discovery/docking.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/discovery/lead_optimization.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/discovery/preparation.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/discovery/registry.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/discovery/target_intelligence.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/discovery/workflow.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/documents/__init__.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/documents/bridge.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/documents/exporters.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/documents/extractor.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/documents/history.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/documents/intelligence.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/documents/knowledge.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/documents/models.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/documents/ocr.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/documents/security.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/documents/service.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/dti/__init__.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/dti/activity.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/dti/batch_pipeline.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/dti/checkpoints.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/dti/dataset_validation.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/dti/drug_features.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/dti/feature_cache.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/dti/feature_combiner.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/dti/inference_matrix.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/dti/predictor.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/dti/protein_features.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/dti/validation_suite.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/engineering/__init__.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/engineering/isolated_tests.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/engineering/quality_gates.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/engineering/readiness.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/engineering/release.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/engineering/repository_audit.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/engineering/runtime_optimizer.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/enterprise/__init__.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/enterprise/saas.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/expansion/__init__.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/expansion/advanced_analysis.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/expansion/catalog.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/expansion/io_formats.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/expansion/renderer.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/expansion/tool_adapters.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/expansion/utilities.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/fair/__init__.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/fair/digital_object.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/fair/evaluator.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/genomics/__init__.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/genomics/annotations.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/genomics/assembly.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/genomics/codon.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/genomics/codon_advanced.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/genomics/design.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/genomics/design_advanced.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/genomics/external_tools.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/genomics/fastq.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/genomics/phylogeny.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/genomics/phylogeny_advanced.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/genomics/variant_advanced.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/genomics/variants.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/governance/__init__.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/governance/governance_registry.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/governance/reproducibility.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/innovation/__init__.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/innovation/advanced_engines.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/innovation/engines.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/innovation/excellence_engines.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/innovation/excellence_ui.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/innovation/professional/__init__.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/innovation/professional/common.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/innovation/professional/design.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/innovation/professional/genomics.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/innovation/professional/knowledge.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/innovation/professional/workflow.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/innovation/professional_engines.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/innovation/professional_ui.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/integrations/__init__.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/integrations/bindingdb.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/integrations/cache.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/integrations/chembl.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/integrations/chembl_dataset.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/integrations/chembl_evidence.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/integrations/http_client.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/integrations/pubchem_bioassay.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/integrations/public_sync.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/integrations/uniprot.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/intelligence/__init__.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/intelligence/data_intelligence.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/intelligence/knowledge_warehouse.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/internet/__init__.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/internet/connectivity.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/internet/download_registry.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/internet/downloader.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/internet/network_policy.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/internet/pubchem.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/internet/rcsb.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/io/__init__.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/io/uploads.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/jobs/__init__.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/jobs/local_queue.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/jobs/worker.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/maturity/__init__.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/maturity/framework.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/microbiology/__init__.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/microbiology/metagenomics.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/model_qualification/__init__.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/model_qualification/package.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/multitenancy/__init__.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/multitenancy/context.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/multitenancy/middleware.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/multitenancy/storage.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/multitenancy/store.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/native/__init__.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/native/engines.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/native/formats.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/native/viewers.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/nextgen/__init__.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/nextgen/assistant_reporting.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/nextgen/catalog.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/nextgen/renderer.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/nextgen/scientific.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/nextgen/services.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/observability/__init__.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/observability/analytics_store.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/observability/metrics.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/observability/performance.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/observability/structured_logging.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/omics/__init__.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/omics/integration.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/operations/__init__.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/operations/activity_center.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/operations/executive_summary.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/portfolio/__init__.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/portfolio/project_exchange.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/portfolio/project_registry.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/privacy/__init__.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/privacy/controls.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/production/__init__.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/production/config.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/production/readiness.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/production/scaling.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/production/service_health.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/production/user_data.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/projects/__init__.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/projects/cancer_advanced.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/projects/cancer_genomics.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/projects/catalog.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/projects/comparative_genomics.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/projects/metagenomics_advanced.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/projects/metagenomics_pipeline.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/projects/metagenomics_raw_reads.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/projects/pathogen_advanced.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/projects/portfolio.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/projects/ppi.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/projects/professional.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/projects/reporting.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/projects/run_registry.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/projects/single_cell.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/projects/single_cell_advanced.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/proteomics/__init__.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/proteomics/advanced.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/proteomics/annotation.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/provenance.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/quality/__init__.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/quality/capability_readiness.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/quality/model_audit.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/quality/scorecard.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/quality/target_assurance.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/quality/ux_assurance.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/quality10/__init__.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/quality10/builtins.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/quality10/executor.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/quality10/models.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/quality10/provenance.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/quality10/registry.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/quality10/scientific_quality.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/quality10/verification.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/realworld/__init__.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/realworld/evidence.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/realworld/verified_evidence.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/reference_assets/__init__.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/reference_assets/manager.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/reference_lifecycle/__init__.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/reference_lifecycle/manager.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/release/__init__.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/release/store_readiness.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/reports/__init__.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/reports/model_card.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/reports/pdf_report.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/reports/release_bundle.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/reports/workspace_report.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/reproducibility/__init__.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/reproducibility/bundle.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/research/__init__.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/research/readiness.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/scientific/__init__.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/scientific/assay_quality.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/scientific/benchmark.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/scientific/credibility.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/scientific/evidence_lake.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/scientific/excellence.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/scientific/prospective.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/scientific/provider_hub.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/scientific/public_evidence.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/scientific/reproducibility_depth.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/scientific/validation_depth.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/scientific/validation_readiness.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/scientific_depth/__init__.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/scientific_depth/assessment.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/scientific_depth/profiles.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/scientific_depth/renderer.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/security/__init__.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/security/passwords.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/security/ui_users.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/sequence/__init__.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/sequence/additional_analysis.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/sequence/advanced.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/sequence/alignment.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/sequence/batch_analysis.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/sequence/dna_analysis.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/sequence/motif_analysis.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/sequence/orf_analysis.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/sequence/parser.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/sequence/protein_analysis.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/sequence/restriction_analysis.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/sequence/validators.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/statistics/__init__.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/statistics/rigor.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/step101/__init__.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/step101/background.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/step101/performance.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/step101/reference_lifecycle.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/step101/reports.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/step101/ui_regression.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/structural/__init__.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/structural/advanced.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/structural/pdb_analysis.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/structural/pockets.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/structural/visualization.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/study_design/__init__.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/study_design/engine.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/systems/__init__.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/systems/pathways.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/tools/__init__.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/tools/runtime.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/training/__init__.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/training/active_learning.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/training/benchmark_suite.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/training/capabilities.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/training/champion_challenger.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/training/dataset_bias.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/training/drift.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/training/ensemble.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/training/evaluation.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/training/experiment_registry.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/training/explainability.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/training/external_validation.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/training/feature_matrix.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/training/group_calibration.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/training/label_noise.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/training/leakage_audit.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/training/model_artifact.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/training/model_catalog.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/training/onnx_export.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/training/prospective_validation.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/training/release_gate.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/training/scaffold.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/training/scientific_splits.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/training/subgroup_evaluation.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/training/trainers.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/training/uncertainty.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/transcriptomics/__init__.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/transcriptomics/advanced.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/transcriptomics/expression.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/ui/__init__.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/ui/access_control.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/ui/advanced_scientific_viewers.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/ui/aesthetic.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/ui/appearance_engine.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/ui/bioinformatics_upgrades.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/ui/brand.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/ui/components.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/ui/experience_themes.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/ui/i18n.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/ui/motion.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/ui/navigation.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/ui/non_chart_scientific_visuals.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/ui/onboarding.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/ui/performance.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/ui/phase108_visuals.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/ui/preferences.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/ui/report_appearance.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/ui/runtime_guard.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/ui/scientific_visuals.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/ui/search_quality.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/ui/starter_kits.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/ui/style_catalog.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/ui/theme.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/ui/viewer_sync.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/ui/visual_scenarios.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/ui/visual_snapshot.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/ui/visual_workspace.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/ui/workbench.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/ui/workflow.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/utils/__init__.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/utils/atomic_io.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/utils/audit_log.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/utils/constants.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/utils/diagnostics.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/utils/exceptions.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/utils/integrity_cache.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/utils/large_files.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/utils/local_data.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/utils/runtime_cache.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/utils/structured_integrity.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/utils/workflow_status.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/utils/workspace_backup.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/validation/__init__.py",
+      "status": "PASS"
+    },
+    {
+      "file": "src/biointel/validation/rigorous.py",
+      "status": "PASS"
+    }
+  ]
+}

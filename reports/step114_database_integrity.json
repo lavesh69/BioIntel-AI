@@ -1,0 +1,297 @@
+{
+  "schema": "biointel.step114.database-integrity.v1",
+  "generated_at_utc": "2026-07-10T21:13:56.790619+00:00",
+  "database_count": 36,
+  "healthy": 36,
+  "total_rows": 108077,
+  "results": [
+    {
+      "path": "data/clinical_pharma/clinical_validation.sqlite3",
+      "size_bytes": 188416,
+      "integrity": "ok",
+      "tables": 13,
+      "rows": 0,
+      "foreign_key_violations": 0
+    },
+    {
+      "path": "data/discovery_projects.sqlite3",
+      "size_bytes": 102400,
+      "integrity": "ok",
+      "tables": 7,
+      "rows": 0,
+      "foreign_key_violations": 0
+    },
+    {
+      "path": "data/lab_analytics.sqlite3",
+      "size_bytes": 36864,
+      "integrity": "ok",
+      "tables": 3,
+      "rows": 0,
+      "foreign_key_violations": 0
+    },
+    {
+      "path": "data/reference_assets/reference_assets.sqlite3",
+      "size_bytes": 24576,
+      "integrity": "ok",
+      "tables": 2,
+      "rows": 0,
+      "foreign_key_violations": 0
+    },
+    {
+      "path": "reports/analytics.sqlite3",
+      "size_bytes": 6451200,
+      "integrity": "ok",
+      "tables": 5,
+      "rows": 17690,
+      "foreign_key_violations": 0
+    },
+    {
+      "path": "reports/api_security.sqlite3",
+      "size_bytes": 458752,
+      "integrity": "ok",
+      "tables": 5,
+      "rows": 1298,
+      "foreign_key_violations": 0
+    },
+    {
+      "path": "reports/assets.sqlite3",
+      "size_bytes": 5410816,
+      "integrity": "ok",
+      "tables": 11,
+      "rows": 20547,
+      "foreign_key_violations": 0
+    },
+    {
+      "path": "reports/batch_jobs/batch_prediction_sample_250.sqlite3",
+      "size_bytes": 16384,
+      "integrity": "ok",
+      "tables": 1,
+      "rows": 0,
+      "foreign_key_violations": 0
+    },
+    {
+      "path": "reports/biotechnology_project_runs.sqlite3",
+      "size_bytes": 28672,
+      "integrity": "ok",
+      "tables": 2,
+      "rows": 0,
+      "foreign_key_violations": 0
+    },
+    {
+      "path": "reports/connected_sources.sqlite3",
+      "size_bytes": 45056,
+      "integrity": "ok",
+      "tables": 4,
+      "rows": 0,
+      "foreign_key_violations": 0
+    },
+    {
+      "path": "reports/datasets.sqlite3",
+      "size_bytes": 2150400,
+      "integrity": "ok",
+      "tables": 13,
+      "rows": 5188,
+      "foreign_key_violations": 0
+    },
+    {
+      "path": "reports/document_history.sqlite3",
+      "size_bytes": 1085440,
+      "integrity": "ok",
+      "tables": 14,
+      "rows": 1973,
+      "foreign_key_violations": 0
+    },
+    {
+      "path": "reports/evidence.sqlite3",
+      "size_bytes": 2678784,
+      "integrity": "ok",
+      "tables": 10,
+      "rows": 3891,
+      "foreign_key_violations": 0
+    },
+    {
+      "path": "reports/experiments.sqlite3",
+      "size_bytes": 626688,
+      "integrity": "ok",
+      "tables": 9,
+      "rows": 783,
+      "foreign_key_violations": 0
+    },
+    {
+      "path": "reports/feature_cache.sqlite3",
+      "size_bytes": 2777088,
+      "integrity": "ok",
+      "tables": 2,
+      "rows": 1293,
+      "foreign_key_violations": 0
+    },
+    {
+      "path": "reports/internet_downloads.sqlite3",
+      "size_bytes": 208896,
+      "integrity": "ok",
+      "tables": 5,
+      "rows": 105,
+      "foreign_key_violations": 0
+    },
+    {
+      "path": "reports/jobs.sqlite3",
+      "size_bytes": 376832,
+      "integrity": "ok",
+      "tables": 6,
+      "rows": 951,
+      "foreign_key_violations": 0
+    },
+    {
+      "path": "reports/knowledge.sqlite3",
+      "size_bytes": 17215488,
+      "integrity": "ok",
+      "tables": 10,
+      "rows": 38427,
+      "foreign_key_violations": 0
+    },
+    {
+      "path": "reports/performance.sqlite3",
+      "size_bytes": 16384,
+      "integrity": "ok",
+      "tables": 1,
+      "rows": 0,
+      "foreign_key_violations": 0
+    },
+    {
+      "path": "reports/projects.sqlite3",
+      "size_bytes": 524288,
+      "integrity": "ok",
+      "tables": 7,
+      "rows": 688,
+      "foreign_key_violations": 0
+    },
+    {
+      "path": "reports/prospective_validation.sqlite3",
+      "size_bytes": 36864,
+      "integrity": "ok",
+      "tables": 4,
+      "rows": 0,
+      "foreign_key_violations": 0
+    },
+    {
+      "path": "reports/realworld_evidence.sqlite3",
+      "size_bytes": 65536,
+      "integrity": "ok",
+      "tables": 6,
+      "rows": 16,
+      "foreign_key_violations": 0
+    },
+    {
+      "path": "reports/relationships.sqlite3",
+      "size_bytes": 1159168,
+      "integrity": "ok",
+      "tables": 4,
+      "rows": 2291,
+      "foreign_key_violations": 0
+    },
+    {
+      "path": "reports/scientific_evidence.sqlite3",
+      "size_bytes": 16773120,
+      "integrity": "ok",
+      "tables": 5,
+      "rows": 12903,
+      "foreign_key_violations": 0
+    },
+    {
+      "path": "reports/step103_lims.sqlite3",
+      "size_bytes": 20480,
+      "integrity": "ok",
+      "tables": 2,
+      "rows": 0,
+      "foreign_key_violations": 0
+    },
+    {
+      "path": "reports/step95_quality10_self_test/self_test_registry.sqlite3",
+      "size_bytes": 49152,
+      "integrity": "ok",
+      "tables": 4,
+      "rows": 14,
+      "foreign_key_violations": 0
+    },
+    {
+      "path": "reports/tenants.sqlite3",
+      "size_bytes": 53248,
+      "integrity": "ok",
+      "tables": 4,
+      "rows": 3,
+      "foreign_key_violations": 0
+    },
+    {
+      "path": "reports/validation_evidence.sqlite3",
+      "size_bytes": 102400,
+      "integrity": "ok",
+      "tables": 8,
+      "rows": 12,
+      "foreign_key_violations": 0
+    },
+    {
+      "path": "reports/viewer_sync.sqlite3",
+      "size_bytes": 28672,
+      "integrity": "ok",
+      "tables": 2,
+      "rows": 0,
+      "foreign_key_violations": 0
+    },
+    {
+      "path": "reports/workflow_automation.sqlite3",
+      "size_bytes": 49152,
+      "integrity": "ok",
+      "tables": 4,
+      "rows": 4,
+      "foreign_key_violations": 0
+    },
+    {
+      "path": "workspace/quality10/workflow_runs.sqlite3",
+      "size_bytes": 49152,
+      "integrity": "ok",
+      "tables": 4,
+      "rows": 0,
+      "foreign_key_violations": 0
+    },
+    {
+      "path": "workspace/reference_lifecycle/reference_lifecycle.sqlite3",
+      "size_bytes": 40960,
+      "integrity": "ok",
+      "tables": 3,
+      "rows": 0,
+      "foreign_key_violations": 0
+    },
+    {
+      "path": "workspace/step104/jobs.sqlite3",
+      "size_bytes": 90112,
+      "integrity": "ok",
+      "tables": 6,
+      "rows": 0,
+      "foreign_key_violations": 0
+    },
+    {
+      "path": "workspace/step104/platform.sqlite3",
+      "size_bytes": 212992,
+      "integrity": "ok",
+      "tables": 17,
+      "rows": 0,
+      "foreign_key_violations": 0
+    },
+    {
+      "path": "workspace/visual_workspace.sqlite3",
+      "size_bytes": 36864,
+      "integrity": "ok",
+      "tables": 3,
+      "rows": 0,
+      "foreign_key_violations": 0
+    },
+    {
+      "path": "workspace/workflow_runs/workflow_runs.sqlite3",
+      "size_bytes": 49152,
+      "integrity": "ok",
+      "tables": 4,
+      "rows": 0,
+      "foreign_key_violations": 0
+    }
+  ]
+}

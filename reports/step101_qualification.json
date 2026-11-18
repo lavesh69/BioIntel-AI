@@ -1,0 +1,73 @@
+{
+  "schema_version": "1.0",
+  "release": "BioIntel AI 10.1.0",
+  "generated_at_utc": "2026-07-10T10:27:36+00:00",
+  "requested_systems": {
+    "persistent_background_job_engine": "implemented",
+    "full_windows_ui_regression_harness": "implemented",
+    "ui_performance_optimization": "implemented",
+    "full_reference_database_lifecycle": "implemented",
+    "unified_scientific_report_builder": "implemented"
+  },
+  "verification": {
+    "selected_release_regression_tests": {
+      "passed": 74,
+      "failed": 0
+    },
+    "step101_tests": {
+      "passed": 8,
+      "failed": 0
+    },
+    "engineering_gates": {
+      "passed": 4,
+      "failed": 0
+    },
+    "self_test": {
+      "passed": 7,
+      "failed": 0
+    },
+    "all_page_static_ui": {
+      "pages": 113,
+      "checks": 113,
+      "passed": 113,
+      "failed": 0,
+      "warnings": 15
+    },
+    "focused_streamlit_apptest": {
+      "pages": 4,
+      "checks": 8,
+      "passed": 8,
+      "failed": 0,
+      "warnings": 1
+    },
+    "offline_windows_wheels": {
+      "verified": 102,
+      "failed": 0
+    },
+    "sqlite": {
+      "databases": 30,
+      "quick_check_failures": 0,
+      "foreign_key_issues": 0,
+      "rows_checked": 107539
+    },
+    "unified_report_smoke": {
+      "formats": [
+        "HTML",
+        "JSON",
+        "PDF",
+        "DOCX",
+        "XLSX",
+        "CSV",
+        "ZIP"
+      ],
+      "status": "passed"
+    },
+    "background_worker_smoke": "passed",
+    "reference_lifecycle_smoke": "passed"
+  },
+  "limitations": [
+    "The complete all-page Windows runtime suite must be executed on a clean physical Windows 10/11 machine for machine certification.",
+    "Focused Streamlit runtime checks passed in the build environment; the all-page static suite passed.",
+    "External tools, large reference databases, model weights and independent scientific evidence are separately qualified."
+  ]
+}

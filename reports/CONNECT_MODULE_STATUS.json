@@ -1,0 +1,78 @@
+{
+  "Authentication and identity": {
+    "status": "partially_working",
+    "evidence": "Connect identity/profile/session tables exist; complete registration/login/password reset/Argon2 workflow is not implemented in Connect."
+  },
+  "Authorization and tenant isolation": {
+    "status": "partially_working",
+    "evidence": "Core services enforce ownership/membership in several workflows; advanced phase services use inconsistent/in-memory checks."
+  },
+  "Profiles and network": {
+    "status": "fully_working_in_local_scope",
+    "evidence": "Persistent profiles, privacy, follow, connection, block and negative tests exist."
+  },
+  "Research feed": {
+    "status": "fully_working_in_local_scope",
+    "evidence": "Persistent posts, comments, reactions, bookmarks, reposts, moderation and tests exist."
+  },
+  "Messaging": {
+    "status": "partially_working",
+    "evidence": "Persistent conversations/messages/receipts/realtime replay exist; complete forward/edit/delete/retention/project-event chat coverage is incomplete."
+  },
+  "Calls and meetings": {
+    "status": "partially_working",
+    "evidence": "Real browser WebRTC client and authenticated signaling implemented; independent-browser/TURN/SFU qualification outstanding."
+  },
+  "Projects, tasks and milestones": {
+    "status": "partially_working",
+    "evidence": "Project/resource services exist; task/milestone/calculated-progress implementation is incomplete."
+  },
+  "Documents, ELN and data rooms": {
+    "status": "not_acceptance_ready",
+    "evidence": "Phase B uses fake export URLs, in-memory notebook/data-room state and caller-provided signature strings."
+  },
+  "Grants, consortia and DAC": {
+    "status": "not_acceptance_ready",
+    "evidence": "Service methods and tests exist but primary state is process-memory only."
+  },
+  "Peer review, preprints and trust": {
+    "status": "not_acceptance_ready",
+    "evidence": "Service methods and tests exist but primary state is process-memory only."
+  },
+  "Knowledge graph and expert matching": {
+    "status": "not_acceptance_ready",
+    "evidence": "Service methods exist but graph and consultation state are process-memory only; matching coverage is limited."
+  },
+  "Marketplace, equipment, events and mentorship": {
+    "status": "not_acceptance_ready",
+    "evidence": "Service methods exist but state is process-memory only and advanced UI pages are placeholders."
+  },
+  "Developer API and webhooks": {
+    "status": "unsafe_false_success",
+    "evidence": "Webhook trigger returns delivered without HTTP; secrets stored plaintext in memory."
+  },
+  "Analytics and trends": {
+    "status": "unsafe_fake_metrics",
+    "evidence": "Hardcoded analytics and trend rows violate the specification."
+  },
+  "Preservation": {
+    "status": "unsafe_false_success",
+    "evidence": "Returns archived_permanently and random checksum without creating an archive."
+  },
+  "Advanced UI pages": {
+    "status": "placeholder",
+    "evidence": "Pages 326-338 contain only title plus Active & Qualified info."
+  },
+  "Windows installation": {
+    "status": "partially_working",
+    "evidence": "Multiple scripts exist, but conflicting installer versions and stale packaging references require canonicalization."
+  },
+  "Automated testing": {
+    "status": "partially_working",
+    "evidence": "45/46 Connect tests pass baseline; many advanced tests assert returned dictionaries rather than persistence/artifacts/delivery."
+  },
+  "Final packaging": {
+    "status": "not_started_for_completion_spec",
+    "evidence": "Prior single preview ZIP exists; required strict allowlist four-part CONNECT-COMPLETE release not built."
+  }
+}

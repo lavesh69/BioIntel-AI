@@ -1,0 +1,5 @@
+{
+  "api_security": "DatabaseHealth(name='api_security', path='<PROJECT_ROOT>/reports/api_security.sqlite3', exists=True, size_bytes=81920, integrity='ok', journal_mode='wal', table_count=5, index_count=6, row_count=9, last_modified_utc='2026-07-04T20:42:48.473483+00:00')",
+  "jobs": "DatabaseHealth(name='jobs', path='<PROJECT_ROOT>/reports/jobs.sqlite3', exists=True, size_bytes=315392, integrity='ok', journal_mode='wal', table_count=6, index_count=7, row_count=844, last_modified_utc='2026-07-04T20:42:21.054923+00:00')",
+  "relationships": "DatabaseHealth(name='relationships', path='<PROJECT_ROOT>/reports/relationships.sqlite3', exists=True, size_bytes=1155072, integrity='ok', journal_mode='wal', table_count=4, index_count=5, row_count=2291, last_modified_utc='2026-07-04T20:42:21.107472+00:00')"
+}

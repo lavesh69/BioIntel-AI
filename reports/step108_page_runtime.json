@@ -1,0 +1,93 @@
+{
+  "schema": "biointel.step108.page-runtime.v1",
+  "version": "11.0.0",
+  "pages": [
+    {
+      "page": "pages/90_Clinical_Pharma_Validation_Center.py",
+      "passed": true,
+      "exceptions": [],
+      "selector_options": 5
+    },
+    {
+      "page": "pages/14_External_Validation_Drift.py",
+      "passed": true,
+      "exceptions": [],
+      "selector_options": 5
+    },
+    {
+      "page": "pages/47_Benchmark_Leakage_Lab.py",
+      "passed": true,
+      "exceptions": [],
+      "selector_options": 5
+    },
+    {
+      "page": "pages/74_DTI_Validation_Evidence_Center.py",
+      "passed": true,
+      "exceptions": [],
+      "selector_options": 5
+    },
+    {
+      "page": "pages/69_Scientific_Data_Readiness.py",
+      "passed": true,
+      "exceptions": [],
+      "selector_options": 5
+    },
+    {
+      "page": "pages/7_Model_Evaluation.py",
+      "passed": true,
+      "exceptions": [],
+      "selector_options": 5
+    },
+    {
+      "page": "pages/11_Experiment_Registry.py",
+      "passed": true,
+      "exceptions": [],
+      "selector_options": 5
+    },
+    {
+      "page": "pages/21_Dataset_Registry_Lineage.py",
+      "passed": true,
+      "exceptions": [],
+      "selector_options": 5
+    },
+    {
+      "page": "pages/101_Biomedical_Knowledge_Graph_Copilot.py",
+      "passed": true,
+      "exceptions": [],
+      "selector_options": 5
+    },
+    {
+      "page": "pages/31_Evidence_Package_Studio.py",
+      "passed": true,
+      "exceptions": [],
+      "selector_options": 5
+    },
+    {
+      "page": "pages/30_Governance_Hub.py",
+      "passed": true,
+      "exceptions": [],
+      "selector_options": 5
+    },
+    {
+      "page": "pages/45_Scientific_Release_Gate.py",
+      "passed": true,
+      "exceptions": [],
+      "selector_options": 5
+    },
+    {
+      "page": "pages/85_Provider_Integration_Center.py",
+      "passed": true,
+      "exceptions": [],
+      "selector_options": 5
+    },
+    {
+      "page": "pages/106_Reference_Database_Manager.py",
+      "passed": true,
+      "exceptions": [],
+      "selector_options": 5
+    }
+  ],
+  "pages_total": 14,
+  "pages_passed": 14,
+  "visual_options_verified": 70
+}

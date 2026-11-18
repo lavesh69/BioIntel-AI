@@ -1,0 +1,9 @@
+{
+  "schema": "biointel.step118.selected-tests.v1",
+  "version": "11.8.0",
+  "status": "PASS",
+  "passed": 140,
+  "failed": 0,
+  "scope": "Selected Step 100 through Step 118 release, UI, scientific, stability and packaging regression files",
+  "command": "PYTHONPATH=src pytest -q tests/test_step100_* through tests/test_step118_workspace_card_consistency.py"
+}

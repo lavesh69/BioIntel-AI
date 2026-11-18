@@ -1,0 +1,291 @@
+{
+  "schema": "biointel.step116.renderer-states.v1",
+  "version": "11.6.0",
+  "modules": 8,
+  "sections_per_module": 5,
+  "states": 40,
+  "passed": 40,
+  "failed": 0,
+  "results": [
+    {
+      "module": "sequence_analyzer",
+      "section": "Workspace",
+      "status": "PASS",
+      "exceptions": [],
+      "errors": []
+    },
+    {
+      "module": "sequence_analyzer",
+      "section": "Entity Passport",
+      "status": "PASS",
+      "exceptions": [],
+      "errors": []
+    },
+    {
+      "module": "sequence_analyzer",
+      "section": "Decision Replay",
+      "status": "PASS",
+      "exceptions": [],
+      "errors": []
+    },
+    {
+      "module": "sequence_analyzer",
+      "section": "Handoff",
+      "status": "PASS",
+      "exceptions": [],
+      "errors": []
+    },
+    {
+      "module": "sequence_analyzer",
+      "section": "Notebook & Export",
+      "status": "PASS",
+      "exceptions": [],
+      "errors": []
+    },
+    {
+      "module": "pangenome",
+      "section": "Workspace",
+      "status": "PASS",
+      "exceptions": [],
+      "errors": []
+    },
+    {
+      "module": "pangenome",
+      "section": "Entity Passport",
+      "status": "PASS",
+      "exceptions": [],
+      "errors": []
+    },
+    {
+      "module": "pangenome",
+      "section": "Decision Replay",
+      "status": "PASS",
+      "exceptions": [],
+      "errors": []
+    },
+    {
+      "module": "pangenome",
+      "section": "Handoff",
+      "status": "PASS",
+      "exceptions": [],
+      "errors": []
+    },
+    {
+      "module": "pangenome",
+      "section": "Notebook & Export",
+      "status": "PASS",
+      "exceptions": [],
+      "errors": []
+    },
+    {
+      "module": "transcriptomics",
+      "section": "Workspace",
+      "status": "PASS",
+      "exceptions": [],
+      "errors": []
+    },
+    {
+      "module": "transcriptomics",
+      "section": "Entity Passport",
+      "status": "PASS",
+      "exceptions": [],
+      "errors": []
+    },
+    {
+      "module": "transcriptomics",
+      "section": "Decision Replay",
+      "status": "PASS",
+      "exceptions": [],
+      "errors": []
+    },
+    {
+      "module": "transcriptomics",
+      "section": "Handoff",
+      "status": "PASS",
+      "exceptions": [],
+      "errors": []
+    },
+    {
+      "module": "transcriptomics",
+      "section": "Notebook & Export",
+      "status": "PASS",
+      "exceptions": [],
+      "errors": []
+    },
+    {
+      "module": "structural_bioinformatics",
+      "section": "Workspace",
+      "status": "PASS",
+      "exceptions": [],
+      "errors": []
+    },
+    {
+      "module": "structural_bioinformatics",
+      "section": "Entity Passport",
+      "status": "PASS",
+      "exceptions": [],
+      "errors": []
+    },
+    {
+      "module": "structural_bioinformatics",
+      "section": "Decision Replay",
+      "status": "PASS",
+      "exceptions": [],
+      "errors": []
+    },
+    {
+      "module": "structural_bioinformatics",
+      "section": "Handoff",
+      "status": "PASS",
+      "exceptions": [],
+      "errors": []
+    },
+    {
+      "module": "structural_bioinformatics",
+      "section": "Notebook & Export",
+      "status": "PASS",
+      "exceptions": [],
+      "errors": []
+    },
+    {
+      "module": "metabolomics",
+      "section": "Workspace",
+      "status": "PASS",
+      "exceptions": [],
+      "errors": []
+    },
+    {
+      "module": "metabolomics",
+      "section": "Entity Passport",
+      "status": "PASS",
+      "exceptions": [],
+      "errors": []
+    },
+    {
+      "module": "metabolomics",
+      "section": "Decision Replay",
+      "status": "PASS",
+      "exceptions": [],
+      "errors": []
+    },
+    {
+      "module": "metabolomics",
+      "section": "Handoff",
+      "status": "PASS",
+      "exceptions": [],
+      "errors": []
+    },
+    {
+      "module": "metabolomics",
+      "section": "Notebook & Export",
+      "status": "PASS",
+      "exceptions": [],
+      "errors": []
+    },
+    {
+      "module": "wetlab",
+      "section": "Workspace",
+      "status": "PASS",
+      "exceptions": [],
+      "errors": []
+    },
+    {
+      "module": "wetlab",
+      "section": "Entity Passport",
+      "status": "PASS",
+      "exceptions": [],
+      "errors": []
+    },
+    {
+      "module": "wetlab",
+      "section": "Decision Replay",
+      "status": "PASS",
+      "exceptions": [],
+      "errors": []
+    },
+    {
+      "module": "wetlab",
+      "section": "Handoff",
+      "status": "PASS",
+      "exceptions": [],
+      "errors": []
+    },
+    {
+      "module": "wetlab",
+      "section": "Notebook & Export",
+      "status": "PASS",
+      "exceptions": [],
+      "errors": []
+    },
+    {
+      "module": "model_training",
+      "section": "Workspace",
+      "status": "PASS",
+      "exceptions": [],
+      "errors": []
+    },
+    {
+      "module": "model_training",
+      "section": "Entity Passport",
+      "status": "PASS",
+      "exceptions": [],
+      "errors": []
+    },
+    {
+      "module": "model_training",
+      "section": "Decision Replay",
+      "status": "PASS",
+      "exceptions": [],
+      "errors": []
+    },
+    {
+      "module": "model_training",
+      "section": "Handoff",
+      "status": "PASS",
+      "exceptions": [],
+      "errors": []
+    },
+    {
+      "module": "model_training",
+      "section": "Notebook & Export",
+      "status": "PASS",
+      "exceptions": [],
+      "errors": []
+    },
+    {
+      "module": "dataset_registry",
+      "section": "Workspace",
+      "status": "PASS",
+      "exceptions": [],
+      "errors": []
+    },
+    {
+      "module": "dataset_registry",
+      "section": "Entity Passport",
+      "status": "PASS",
+      "exceptions": [],
+      "errors": []
+    },
+    {
+      "module": "dataset_registry",
+      "section": "Decision Replay",
+      "status": "PASS",
+      "exceptions": [],
+      "errors": []
+    },
+    {
+      "module": "dataset_registry",
+      "section": "Handoff",
+      "status": "PASS",
+      "exceptions": [],
+      "errors": []
+    },
+    {
+      "module": "dataset_registry",
+      "section": "Notebook & Export",
+      "status": "PASS",
+      "exceptions": [],
+      "errors": []
+    }
+  ]
+}

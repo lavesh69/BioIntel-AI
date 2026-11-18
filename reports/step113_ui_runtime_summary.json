@@ -1,0 +1,129 @@
+{
+  "schema_version": "1.0",
+  "generated_at_utc": "2026-07-10T19:41:40+00:00",
+  "platform": "Linux-4.4.0-x86_64-with-glibc2.41",
+  "python": "3.13.5 (main, May  5 2026, 21:05:52) [GCC 14.2.0]",
+  "mode": "apptest",
+  "page_count": 6,
+  "checks": 12,
+  "passed": 12,
+  "failed": 0,
+  "warnings": 1,
+  "results": [
+    {
+      "page": "app.py",
+      "mode": "static",
+      "status": "passed",
+      "duration_ms": 3.279241998825455,
+      "exceptions": 0,
+      "warnings": [],
+      "detail": ""
+    },
+    {
+      "page": "app.py",
+      "mode": "apptest",
+      "status": "passed",
+      "duration_ms": 1552.9973299999256,
+      "exceptions": 0,
+      "warnings": [],
+      "detail": ""
+    },
+    {
+      "page": "110_Reliability_Optimization_Center.py",
+      "mode": "static",
+      "status": "passed",
+      "duration_ms": 2.703864000068279,
+      "exceptions": 0,
+      "warnings": [],
+      "detail": ""
+    },
+    {
+      "page": "110_Reliability_Optimization_Center.py",
+      "mode": "apptest",
+      "status": "passed",
+      "duration_ms": 47.937141000147676,
+      "exceptions": 0,
+      "warnings": [],
+      "detail": ""
+    },
+    {
+      "page": "121_Biostatistics_Power_and_Experimental_Design_Studio.py",
+      "mode": "static",
+      "status": "passed",
+      "duration_ms": 5.296743998769671,
+      "exceptions": 0,
+      "warnings": [],
+      "detail": ""
+    },
+    {
+      "page": "121_Biostatistics_Power_and_Experimental_Design_Studio.py",
+      "mode": "apptest",
+      "status": "passed",
+      "duration_ms": 303.523321999819,
+      "exceptions": 0,
+      "warnings": [],
+      "detail": ""
+    },
+    {
+      "page": "153_Reference_Database_Lifecycle_Manager_2.py",
+      "mode": "static",
+      "status": "passed",
+      "duration_ms": 2.6196289982181042,
+      "exceptions": 0,
+      "warnings": [],
+      "detail": ""
+    },
+    {
+      "page": "153_Reference_Database_Lifecycle_Manager_2.py",
+      "mode": "apptest",
+      "status": "passed",
+      "duration_ms": 65.539107999939,
+      "exceptions": 0,
+      "warnings": [],
+      "detail": ""
+    },
+    {
+      "page": "166_Real_Engine_Native_Format_Integration.py",
+      "mode": "static",
+      "status": "passed",
+      "duration_ms": 3.1029130004753824,
+      "exceptions": 0,
+      "warnings": [],
+      "detail": ""
+    },
+    {
+      "page": "166_Real_Engine_Native_Format_Integration.py",
+      "mode": "apptest",
+      "status": "passed",
+      "duration_ms": 1546.5144390000205,
+      "exceptions": 0,
+      "warnings": [
+        "BioIntel executes only explicitly configured local engines and never treats a heuristic fallback as a native engine result. Clinical, diagnostic, regulated and vendor-certified interpretation still requires validated procedures and specialist review."
+      ],
+      "detail": ""
+    },
+    {
+      "page": "167_Bioinformatics_Feature_Upgrade_Center.py",
+      "mode": "static",
+      "status": "passed",
+      "duration_ms": 0.7647380007256288,
+      "exceptions": 0,
+      "warnings": [],
+      "detail": ""
+    },
+    {
+      "page": "167_Bioinformatics_Feature_Upgrade_Center.py",
+      "mode": "apptest",
+      "status": "passed",
+      "duration_ms": 27.99003600011929,
+      "exceptions": 0,
+      "warnings": [],
+      "detail": ""
+    }
+  ],
+  "artifacts": {
+    "json": "/tmp/biointel_step113_ui/ui-regression-20260710-194140.json",
+    "csv": "/tmp/biointel_step113_ui/ui-regression-20260710-194140.csv",
+    "html": "/tmp/biointel_step113_ui/ui-regression-20260710-194140.html"
+  }
+}

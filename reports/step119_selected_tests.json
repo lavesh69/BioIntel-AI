@@ -1,0 +1,19 @@
+{
+  "schema": "biointel.step119.selected-tests.v1",
+  "version": "11.9.0",
+  "status": "PASS",
+  "runs": [
+    {
+      "scope": "Step 118 + Step 119 focused workspace tests",
+      "passed": 13,
+      "failed": 0
+    },
+    {
+      "scope": "Selected Step 100, 108, 109, 114, 115, 116, 118 and 119 regression tests",
+      "passed": 52,
+      "failed": 0
+    }
+  ],
+  "total_passed": 65,
+  "total_failed": 0
+}

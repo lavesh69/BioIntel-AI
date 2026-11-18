@@ -1,0 +1,28 @@
+{
+  "schema": "biointel.education-universe.implementation-matrix.v1",
+  "release": "BioIntel AI 15.6.0 Education Universe bounded integration",
+  "qualification_definition": "integrated_workflow_core means durable tenant-safe CRUD, validation, review state, audit and API/UI access; it does not mean every bespoke capability in the master PDF is complete.",
+  "modules": [
+    {"id":1,"key":"adaptive_learning","status":"integrated_workflow_core","verified":["explainable evidence fields","student ownership","teacher review"],"remaining":["automatic recommendations from real activity","spaced-repetition scheduler"]},
+    {"id":2,"key":"virtual_science_lab","status":"integrated_workflow_core","verified":["simulation-only gate","safety briefing required","unsafe phrase block"],"remaining":["interactive simulation engines","domain practical library"]},
+    {"id":3,"key":"bioinformatics_sandbox","status":"integrated_workflow_core","verified":["resource-limit validation","shell fields rejected","provenance fields"],"remaining":["isolated execution worker","notebook runtime","demo datasets"]},
+    {"id":4,"key":"shiro_tutor","status":"integrated_workflow_core","verified":["AI label required","review status","protected action boundary"],"remaining":["grounded model/provider integration","teacher material retrieval"]},
+    {"id":5,"key":"academic_erp","status":"partial_plus_existing_classroom","verified":["institution/member/enrollment/attendance persistence","admin-only universe records"],"remaining":["transfer/graduation/alumni workflows","optional finance adapters"]},
+    {"id":6,"key":"digital_library","status":"integrated_workflow_core","verified":["legitimate source URL required","licence/access metadata","copyright boundary"],"remaining":["BibTeX/RIS export","availability adapters"]},
+    {"id":7,"key":"research_hub","status":"integrated_workflow_core","verified":["research question","ethics consideration","milestone record types"],"remaining":["mentor matching","review panel UX"]},
+    {"id":8,"key":"competition_hub","status":"integrated_workflow_core","verified":["rules and deadline required","submission/scorecard types","audit"],"remaining":["judge assignment","ranking calculator","certificate workflow"]},
+    {"id":9,"key":"career_hub","status":"integrated_workflow_core","verified":["HTTP(S) source required","reviewer verification before publish","deadline/eligibility"],"remaining":["configured opportunity feeds","calendar reminders"]},
+    {"id":10,"key":"academic_portfolio","status":"integrated_workflow_core","verified":["real evidence required","student-owned private records","review state"],"remaining":["public verification links/QR","revocation ledger"]},
+    {"id":11,"key":"laboratory_management","status":"integrated_workflow_core","verified":["staff responsibility required","restricted visibility","incident record type"],"remaining":["inventory stock/expiry calculations","booking conflict engine"]},
+    {"id":12,"key":"question_bank","status":"integrated_workflow_core","verified":["teacher creation","restricted visibility","student list/get denial"],"remaining":["paper blueprint generator","duplicate detection","answer-key release schedule"]},
+    {"id":13,"key":"lecture_intelligence","status":"integrated_workflow_core","verified":["processing status required","completion blocked without output URI and timestamp","review gate"],"remaining":["real ASR/translation/caption worker","synthetic voice consent workflow"]},
+    {"id":14,"key":"learning_analytics","status":"integrated_workflow_core","verified":["metric definition/date range/source events required","risk definition and human review","no diagnosis labels"],"remaining":["event aggregation jobs","role-specific dashboards"]},
+    {"id":15,"key":"collaboration_network","status":"integrated_workflow_core","verified":["distinct active partner required","both approvers verified as tenant admins","restricted by default"],"remaining":["joint-course data-sharing adapters","shared certificate issuance"]},
+    {"id":16,"key":"open_science","status":"integrated_workflow_core","verified":["method/provenance/licence required","private-data publish block","versioned records"],"remaining":["research packaging export formats","results comparison engine"]},
+    {"id":17,"key":"offline_learning","status":"operational_core","verified":["idempotent client operation IDs","optimistic versions","conflict preserved","explicit keep-server/apply-client"],"remaining":["encrypted cache implementation","campus LAN server qualification"]},
+    {"id":18,"key":"safety_moderation","status":"integrated_workflow_core","verified":["private restricted report","open/review/resolve state","actor audit"],"remaining":["block/restrict enforcement adapters","guardian linkage policy UI","emergency policy configuration"]},
+    {"id":19,"key":"quality_support","status":"integrated_workflow_core","verified":["admin-only records","evidence required","no accreditation claim"],"remaining":["outcome mapping visualizer","review calendar"]},
+    {"id":20,"key":"gamified_learning","status":"integrated_workflow_core","verified":["evidence required","private-by-default","no fabricated achievement boundary"],"remaining":["institution/parent controls","streak calculation from real events"]}
+  ],
+  "complete_against_all_pdf_acceptance_criteria": false
+}

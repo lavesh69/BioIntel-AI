@@ -1,0 +1,31 @@
+{
+  "failed": 0,
+  "generated_at_utc": "2026-07-13T13:49:47.312714+00:00",
+  "limit": 2,
+  "pages_collected": 2,
+  "passed": 2,
+  "results": [
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 13:49:39.004 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 3.386,
+      "page": "pages/108_External_Model_Qualification.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 13:49:42.998 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 6.641,
+      "page": "pages/109_Lab_Instrument_Import_Center.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    }
+  ],
+  "root": "/mnt/data/biointel157_work/BioIntel-AI",
+  "schema": "biointel.step157.all-pages-app-test.v1",
+  "start_index": 10,
+  "timeout_seconds_per_page": 35,
+  "timeouts": 0,
+  "workers": 1
+}

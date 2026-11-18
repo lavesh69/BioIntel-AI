@@ -1,0 +1,1028 @@
+{
+  "authentic_external_evidence_score": 0.0,
+  "boundary": "Implementation and controlled-environment evidence are reported separately from authentic external approvals, customers, publications, laboratory outcomes and operating history.",
+  "checks": [
+    {
+      "evidence": "18/18 databases healthy",
+      "key": "database_integrity",
+      "label": "Database integrity and discoverability",
+      "score": 10.0,
+      "status": "ready"
+    },
+    {
+      "evidence": "1369 valid edges; 0 broken",
+      "key": "relationship_integrity",
+      "label": "Cross-registry relationship integrity",
+      "score": 10.0,
+      "status": "ready"
+    },
+    {
+      "evidence": "4/4 gates passed",
+      "key": "engineering_gates",
+      "label": "Engineering release gates",
+      "score": 10.0,
+      "status": "ready"
+    },
+    {
+      "evidence": "4/4 audit checks passed",
+      "key": "repository_hygiene",
+      "label": "Repository security, hygiene and documentation",
+      "score": 10.0,
+      "status": "ready"
+    },
+    {
+      "evidence": "critical=0 warnings=0",
+      "key": "runtime_configuration",
+      "label": "Runtime configuration policy",
+      "score": 10.0,
+      "status": "ready"
+    },
+    {
+      "evidence": "Implementation available; 4/14 runtime checks currently active in local_professional mode",
+      "key": "production_controls",
+      "label": "Production control implementation",
+      "score": 10.0,
+      "status": "ready"
+    },
+    {
+      "evidence": "16/16 artifacts verified",
+      "key": "verifiable_evidence",
+      "label": "Measured and checksum-bound evidence",
+      "score": 6.2,
+      "status": "ready"
+    },
+    {
+      "evidence": "Customers, regulators, journals, laboratories and production history must be independently supplied.",
+      "key": "external_evidence",
+      "label": "Authentic third-party evidence",
+      "score": 0.0,
+      "status": "external_required"
+    }
+  ],
+  "database_health": {
+    "database_count": 18,
+    "databases": {
+      "analytics": {
+        "exists": true,
+        "index_count": 18,
+        "integrity": "ok",
+        "journal_mode": "wal",
+        "last_modified_utc": "2020-01-01T00:00:00+00:00",
+        "name": "Analytics",
+        "path": "/mnt/data/biointel_step43/BioIntel-AI/reports/analytics.sqlite3",
+        "row_count": 17690,
+        "size_bytes": 6144000,
+        "table_count": 5
+      },
+      "api_security": {
+        "exists": true,
+        "index_count": 6,
+        "integrity": "ok",
+        "journal_mode": "wal",
+        "last_modified_utc": "2026-07-05T07:40:36.416744+00:00",
+        "name": "Api Security",
+        "path": "/mnt/data/biointel_step43/BioIntel-AI/reports/api_security.sqlite3",
+        "row_count": 24,
+        "size_bytes": 86016,
+        "table_count": 5
+      },
+      "assets": {
+        "exists": true,
+        "index_count": 15,
+        "integrity": "ok",
+        "journal_mode": "wal",
+        "last_modified_utc": "2020-01-01T00:00:00+00:00",
+        "name": "Assets",
+        "path": "/mnt/data/biointel_step43/BioIntel-AI/reports/assets.sqlite3",
+        "row_count": 16309,
+        "size_bytes": 4464640,
+        "table_count": 11
+      },
+      "datasets": {
+        "exists": true,
+        "index_count": 22,
+        "integrity": "ok",
+        "journal_mode": "wal",
+        "last_modified_utc": "2020-01-01T00:00:00+00:00",
+        "name": "Datasets",
+        "path": "/mnt/data/biointel_step43/BioIntel-AI/reports/datasets.sqlite3",
+        "row_count": 4879,
+        "size_bytes": 1957888,
+        "table_count": 13
+      },
+      "documents": {
+        "exists": true,
+        "index_count": 12,
+        "integrity": "ok",
+        "journal_mode": "wal",
+        "last_modified_utc": "2020-01-01T00:00:00+00:00",
+        "name": "Documents",
+        "path": "/mnt/data/biointel_step43/BioIntel-AI/reports/document_history.sqlite3",
+        "row_count": 1973,
+        "size_bytes": 1085440,
+        "table_count": 14
+      },
+      "downloads": {
+        "exists": true,
+        "index_count": 14,
+        "integrity": "ok",
+        "journal_mode": "wal",
+        "last_modified_utc": "2020-01-01T00:00:00+00:00",
+        "name": "Downloads",
+        "path": "/mnt/data/biointel_step43/BioIntel-AI/reports/internet_downloads.sqlite3",
+        "row_count": 105,
+        "size_bytes": 208896,
+        "table_count": 5
+      },
+      "evidence": {
+        "exists": true,
+        "index_count": 12,
+        "integrity": "ok",
+        "journal_mode": "wal",
+        "last_modified_utc": "2020-01-01T00:00:00+00:00",
+        "name": "Evidence",
+        "path": "/mnt/data/biointel_step43/BioIntel-AI/reports/evidence.sqlite3",
+        "row_count": 3891,
+        "size_bytes": 2678784,
+        "table_count": 10
+      },
+      "experiments": {
+        "exists": true,
+        "index_count": 15,
+        "integrity": "ok",
+        "journal_mode": "wal",
+        "last_modified_utc": "2020-01-01T00:00:00+00:00",
+        "name": "Experiments",
+        "path": "/mnt/data/biointel_step43/BioIntel-AI/reports/experiments.sqlite3",
+        "row_count": 783,
+        "size_bytes": 626688,
+        "table_count": 9
+      },
+      "feature_cache": {
+        "exists": true,
+        "index_count": 2,
+        "integrity": "ok",
+        "journal_mode": "wal",
+        "last_modified_utc": "2020-01-01T00:00:00+00:00",
+        "name": "Feature Cache",
+        "path": "/mnt/data/biointel_step43/BioIntel-AI/reports/feature_cache.sqlite3",
+        "row_count": 1293,
+        "size_bytes": 2777088,
+        "table_count": 2
+      },
+      "jobs": {
+        "exists": true,
+        "index_count": 7,
+        "integrity": "ok",
+        "journal_mode": "wal",
+        "last_modified_utc": "2020-01-01T00:00:00+00:00",
+        "name": "Jobs",
+        "path": "/mnt/data/biointel_step43/BioIntel-AI/reports/jobs.sqlite3",
+        "row_count": 878,
+        "size_bytes": 335872,
+        "table_count": 6
+      },
+      "knowledge": {
+        "exists": true,
+        "index_count": 19,
+        "integrity": "ok",
+        "journal_mode": "wal",
+        "last_modified_utc": "2020-01-01T00:00:00+00:00",
+        "name": "Knowledge",
+        "path": "/mnt/data/biointel_step43/BioIntel-AI/reports/knowledge.sqlite3",
+        "row_count": 38306,
+        "size_bytes": 16117760,
+        "table_count": 10
+      },
+      "projects": {
+        "exists": true,
+        "index_count": 20,
+        "integrity": "ok",
+        "journal_mode": "wal",
+        "last_modified_utc": "2020-01-01T00:00:00+00:00",
+        "name": "Projects",
+        "path": "/mnt/data/biointel_step43/BioIntel-AI/reports/projects.sqlite3",
+        "row_count": 673,
+        "size_bytes": 516096,
+        "table_count": 7
+      },
+      "prospective_validation": {
+        "exists": true,
+        "index_count": 0,
+        "integrity": "ok",
+        "journal_mode": "delete",
+        "last_modified_utc": "2020-01-01T00:00:00+00:00",
+        "name": "Prospective Validation",
+        "path": "/mnt/data/biointel_step43/BioIntel-AI/reports/prospective_validation.sqlite3",
+        "row_count": 0,
+        "size_bytes": 36864,
+        "table_count": 4
+      },
+      "realworld_evidence": {
+        "exists": true,
+        "index_count": 4,
+        "integrity": "ok",
+        "journal_mode": "wal",
+        "last_modified_utc": "2026-07-05T07:38:42.437674+00:00",
+        "name": "Realworld Evidence",
+        "path": "/mnt/data/biointel_step43/BioIntel-AI/reports/realworld_evidence.sqlite3",
+        "row_count": 8,
+        "size_bytes": 61440,
+        "table_count": 6
+      },
+      "relationships": {
+        "exists": true,
+        "index_count": 5,
+        "integrity": "ok",
+        "journal_mode": "wal",
+        "last_modified_utc": "2020-01-01T00:00:00+00:00",
+        "name": "Relationships",
+        "path": "/mnt/data/biointel_step43/BioIntel-AI/reports/relationships.sqlite3",
+        "row_count": 2291,
+        "size_bytes": 1159168,
+        "table_count": 4
+      },
+      "scientific_evidence": {
+        "exists": true,
+        "index_count": 4,
+        "integrity": "ok",
+        "journal_mode": "wal",
+        "last_modified_utc": "2020-01-01T00:00:00+00:00",
+        "name": "Scientific Evidence",
+        "path": "/mnt/data/biointel_step43/BioIntel-AI/reports/scientific_evidence.sqlite3",
+        "row_count": 12903,
+        "size_bytes": 16769024,
+        "table_count": 5
+      },
+      "tenants": {
+        "exists": true,
+        "index_count": 3,
+        "integrity": "ok",
+        "journal_mode": "wal",
+        "last_modified_utc": "2026-07-05T07:40:17.462433+00:00",
+        "name": "Tenants",
+        "path": "/mnt/data/biointel_step43/BioIntel-AI/reports/tenants.sqlite3",
+        "row_count": 3,
+        "size_bytes": 49152,
+        "table_count": 4
+      },
+      "validation_evidence": {
+        "exists": true,
+        "index_count": 3,
+        "integrity": "ok",
+        "journal_mode": "wal",
+        "last_modified_utc": "2020-01-01T00:00:00+00:00",
+        "name": "Validation Evidence",
+        "path": "/mnt/data/biointel_step43/BioIntel-AI/reports/validation_evidence.sqlite3",
+        "row_count": 12,
+        "size_bytes": 98304,
+        "table_count": 8
+      }
+    },
+    "generated_at_utc": "2026-07-05T08:58:11.204464+00:00",
+    "health_percent": 100.0,
+    "healthy_count": 18,
+    "professional_warehouses": {
+      "analytics": {
+        "database": {
+          "exists": true,
+          "index_count": 18,
+          "integrity": "ok",
+          "journal_mode": "wal",
+          "last_modified_utc": "2020-01-01T00:00:00+00:00",
+          "name": "Analytics & Observability Warehouse",
+          "path": "/mnt/data/biointel_step43/BioIntel-AI/reports/analytics.sqlite3",
+          "row_count": 17690,
+          "size_bytes": 6144000,
+          "table_count": 5
+        },
+        "healthy": true,
+        "summary": {
+          "alerts": 80,
+          "daily_metrics": 1800,
+          "median_duration_ms": 348.1985,
+          "p95_duration_ms": 1302.6233,
+          "quality_snapshots": 90,
+          "rows_processed": 165837066,
+          "run_events": 15000,
+          "success_rate": 92.54,
+          "system_samples": 720
+        }
+      },
+      "assets": {
+        "database": {
+          "exists": true,
+          "index_count": 15,
+          "integrity": "ok",
+          "journal_mode": "wal",
+          "last_modified_utc": "2020-01-01T00:00:00+00:00",
+          "name": "Research Assets & Collections",
+          "path": "/mnt/data/biointel_step43/BioIntel-AI/reports/assets.sqlite3",
+          "row_count": 16309,
+          "size_bytes": 4464640,
+          "table_count": 11
+        },
+        "healthy": true,
+        "summary": {
+          "asset_types": {
+            "bookmark": 260,
+            "configuration": 3,
+            "database": 13,
+            "dataset": 126,
+            "document": 160,
+            "file": 241,
+            "image": 1,
+            "metadata": 330,
+            "model": 23,
+            "module": 71,
+            "report": 164,
+            "source": 365
+          },
+          "assets": 1757,
+          "collections": 12,
+          "favourites": 40,
+          "links": 1785,
+          "notes": 2000,
+          "tags": 7095,
+          "total_bytes": 305452897
+        }
+      },
+      "knowledge": {
+        "database": {
+          "exists": true,
+          "index_count": 19,
+          "integrity": "ok",
+          "journal_mode": "wal",
+          "last_modified_utc": "2020-01-01T00:00:00+00:00",
+          "name": "Research Knowledge Warehouse",
+          "path": "/mnt/data/biointel_step43/BioIntel-AI/reports/knowledge.sqlite3",
+          "row_count": 38306,
+          "size_bytes": 16117760,
+          "table_count": 10
+        },
+        "healthy": true,
+        "summary": {
+          "entities": 9969,
+          "entity_types": {
+            "assay": 20,
+            "cell_line": 20,
+            "compound": 1000,
+            "dataset": 51,
+            "disease": 30,
+            "dna": 300,
+            "external_reference": 20,
+            "gene": 100,
+            "interaction_candidate": 2500,
+            "model": 23,
+            "module": 70,
+            "named_compound": 5000,
+            "organism": 20,
+            "pathway": 30,
+            "project": 30,
+            "protein": 300,
+            "protein_domain": 60,
+            "rna": 200,
+            "scientific_source": 15,
+            "target": 160,
+            "tissue": 20
+          },
+          "protocols": 36,
+          "relations": 7800,
+          "saved_queries": 6,
+          "statuses": {
+            "Active": 8,
+            "Archived": 3,
+            "Completed": 4,
+            "Paused": 3,
+            "Planning": 5,
+            "Validation": 7,
+            "active": 2278,
+            "available": 70,
+            "benchmark": 2500,
+            "candidate": 20,
+            "lookup_ready": 20,
+            "reference": 5000,
+            "registered": 51
+          }
+        }
+      }
+    },
+    "total_bytes": 55173120,
+    "total_indices": 181,
+    "total_rows": 102021
+  },
+  "engineering": {
+    "passed": true,
+    "results": [
+      {
+        "evidence": "packages=26 invalid=0 sha256=3bb59552d1a7dcb8fc5d751b5c7764ba0b7724e79c4409fcae281a4ab3560a26",
+        "name": "exact_dependency_lock",
+        "passed": true
+      },
+      {
+        "evidence": "violations=0",
+        "name": "architecture_boundaries",
+        "passed": true
+      },
+      {
+        "evidence": "overdue=0",
+        "name": "technical_debt_expiry",
+        "passed": true
+      },
+      {
+        "evidence": "offenders=0",
+        "name": "module_size_budget",
+        "passed": true
+      }
+    ],
+    "schema": "biointel.engineering-gates.v1"
+  },
+  "evidence": {
+    "artifact_integrity": {
+      "artifact_count": 16,
+      "failures": [],
+      "ok": true,
+      "verified": {
+        "api_load": true,
+        "clinical_reference": true,
+        "cloud_iac": true,
+        "customer_acceptance_kit": true,
+        "database_drill": true,
+        "gxp_controls": true,
+        "ha_rehearsal": true,
+        "kubernetes_static": true,
+        "multitenant_isolation": true,
+        "publication_bundle": true,
+        "regulatory_dossier": true,
+        "release_provenance": true,
+        "saas_controls": true,
+        "scientific_validation": true,
+        "security_controls": true,
+        "verification_results": true
+      },
+      "verified_count": 16
+    },
+    "authentic_external_average": 0.0,
+    "capabilities": [
+      {
+        "authentic_external_score": 0.0,
+        "boundary": "Measured repository qualification can raise the verifiable score only to the published cap; customers, regulators, journals and production history require genuine third-party evidence.",
+        "ceiling_without_external_evidence": 6.5,
+        "evidence_level": "moderate_verifiable_internal_evidence",
+        "implementation_score": 10.0,
+        "key": "pharma_rnd_deployment",
+        "label": "Real Pharma R&D Deployment Evidence",
+        "maximum_current_score": 6.5,
+        "missing_external_proof": [
+          "Sponsor-signed deployment dossier",
+          "90+ days authentic pharmaceutical operating history"
+        ],
+        "passed_measurements": [
+          "Scientific benchmark and validation package verified",
+          "Decision-use publication/reproducibility bundle verified",
+          "Controlled R&D operating controls verified"
+        ],
+        "verifiable_score": 6.5
+      },
+      {
+        "authentic_external_score": 0.0,
+        "boundary": "Measured repository qualification can raise the verifiable score only to the published cap; customers, regulators, journals and production history require genuine third-party evidence.",
+        "ceiling_without_external_evidence": 5.5,
+        "evidence_level": "moderate_verifiable_internal_evidence",
+        "implementation_score": 10.0,
+        "key": "clinical_deployment",
+        "label": "Real Clinical Deployment Evidence",
+        "maximum_current_score": 5.5,
+        "missing_external_proof": [
+          "Approved protocol and ethics decision",
+          "Real clinical production history"
+        ],
+        "passed_measurements": [
+          "Clinical-reference data and safety-control package verified",
+          "Audit trail, controlled records and validation controls verified"
+        ],
+        "verifiable_score": 5.5
+      },
+      {
+        "authentic_external_score": 0.0,
+        "boundary": "Measured repository qualification can raise the verifiable score only to the published cap; customers, regulators, journals and production history require genuine third-party evidence.",
+        "ceiling_without_external_evidence": 8.0,
+        "evidence_level": "strong_verifiable_internal_evidence",
+        "implementation_score": 10.0,
+        "key": "publication_grade_dti",
+        "label": "Publication-Grade DTI Evidence",
+        "maximum_current_score": 8.0,
+        "missing_external_proof": [
+          "Persistent DOI and public archival record"
+        ],
+        "passed_measurements": [
+          "Complete checksum-bound publication package verified",
+          "Deterministic scientific validation report verified",
+          "Release provenance and source manifest verified"
+        ],
+        "verifiable_score": 8.0
+      },
+      {
+        "authentic_external_score": 0.0,
+        "boundary": "Measured repository qualification can raise the verifiable score only to the published cap; customers, regulators, journals and production history require genuine third-party evidence.",
+        "ceiling_without_external_evidence": 4.0,
+        "evidence_level": "moderate_verifiable_internal_evidence",
+        "implementation_score": 10.0,
+        "key": "peer_reviewed_validation",
+        "label": "Peer-Reviewed Validation Evidence",
+        "maximum_current_score": 4.0,
+        "missing_external_proof": [
+          "Journal acceptance and independent peer-review record"
+        ],
+        "passed_measurements": [
+          "Review-ready manuscript, methods, data and code package verified",
+          "Independent-reproduction instructions and golden results verified"
+        ],
+        "verifiable_score": 4.0
+      },
+      {
+        "authentic_external_score": 0.0,
+        "boundary": "Measured repository qualification can raise the verifiable score only to the published cap; customers, regulators, journals and production history require genuine third-party evidence.",
+        "ceiling_without_external_evidence": 3.0,
+        "evidence_level": "foundational_verifiable_evidence",
+        "implementation_score": 10.0,
+        "key": "regulatory_approval",
+        "label": "Regulatory Approval Evidence",
+        "maximum_current_score": 3.0,
+        "missing_external_proof": [
+          "Regulatory authority decision letter and approval identifier"
+        ],
+        "passed_measurements": [
+          "Regulator-ready dossier completeness verified",
+          "Electronic-record, audit-trail and signature controls verified"
+        ],
+        "verifiable_score": 3.0
+      },
+      {
+        "authentic_external_score": 0.0,
+        "boundary": "Measured repository qualification can raise the verifiable score only to the published cap; customers, regulators, journals and production history require genuine third-party evidence.",
+        "ceiling_without_external_evidence": 7.0,
+        "evidence_level": "strong_verifiable_internal_evidence",
+        "implementation_score": 10.0,
+        "key": "gxp_operating_history",
+        "label": "Completed GxP Operating History",
+        "maximum_current_score": 7.0,
+        "missing_external_proof": [
+          "180+ days controlled operation with approved SOP execution"
+        ],
+        "passed_measurements": [
+          "GxP control execution and audit-chain integrity verified",
+          "Controlled backup/restore and record integrity verified",
+          "Immutable release provenance verified"
+        ],
+        "verifiable_score": 7.0
+      },
+      {
+        "authentic_external_score": 0.0,
+        "boundary": "Measured repository qualification can raise the verifiable score only to the published cap; customers, regulators, journals and production history require genuine third-party evidence.",
+        "ceiling_without_external_evidence": 4.5,
+        "evidence_level": "moderate_verifiable_internal_evidence",
+        "implementation_score": 10.0,
+        "key": "regulatory_inspection",
+        "label": "Successful Regulatory Inspection History",
+        "maximum_current_score": 4.5,
+        "missing_external_proof": [
+          "Authority inspection report and finding closure"
+        ],
+        "passed_measurements": [
+          "Inspection-ready evidence index and CAPA workflow verified",
+          "Inspection reconstruction controls verified"
+        ],
+        "verifiable_score": 4.5
+      },
+      {
+        "authentic_external_score": 0.0,
+        "boundary": "Measured repository qualification can raise the verifiable score only to the published cap; customers, regulators, journals and production history require genuine third-party evidence.",
+        "ceiling_without_external_evidence": 7.5,
+        "evidence_level": "strong_verifiable_internal_evidence",
+        "implementation_score": 10.0,
+        "key": "production_sla_history",
+        "label": "Production SLA Operating History",
+        "maximum_current_score": 7.5,
+        "missing_external_proof": [
+          "90+ days signed production telemetry and incident history"
+        ],
+        "passed_measurements": [
+          "Measured API availability, latency and error-rate qualification passed",
+          "Application failover rehearsal passed",
+          "Restore integrity qualification passed"
+        ],
+        "verifiable_score": 7.5
+      },
+      {
+        "authentic_external_score": 0.0,
+        "boundary": "Measured repository qualification can raise the verifiable score only to the published cap; customers, regulators, journals and production history require genuine third-party evidence.",
+        "ceiling_without_external_evidence": 8.0,
+        "evidence_level": "strong_verifiable_internal_evidence",
+        "implementation_score": 10.0,
+        "key": "multitenant_production",
+        "label": "Real Multi-Tenant Production History",
+        "maximum_current_score": 8.0,
+        "missing_external_proof": [
+          "90+ days with independent external tenants"
+        ],
+        "passed_measurements": [
+          "High-volume tenant isolation qualification passed",
+          "Tenant-capable API load qualification passed"
+        ],
+        "verifiable_score": 8.0
+      },
+      {
+        "authentic_external_score": 0.0,
+        "boundary": "Measured repository qualification can raise the verifiable score only to the published cap; customers, regulators, journals and production history require genuine third-party evidence.",
+        "ceiling_without_external_evidence": 7.5,
+        "evidence_level": "strong_verifiable_internal_evidence",
+        "implementation_score": 10.0,
+        "key": "kubernetes_production",
+        "label": "Real Kubernetes Production History",
+        "maximum_current_score": 7.5,
+        "missing_external_proof": [
+          "90+ days on a real multi-zone Kubernetes cluster"
+        ],
+        "passed_measurements": [
+          "Helm/Kubernetes production-control validation passed",
+          "Service redundancy/failover rehearsal passed",
+          "Deployable artifact provenance verified"
+        ],
+        "verifiable_score": 7.5
+      },
+      {
+        "authentic_external_score": 0.0,
+        "boundary": "Measured repository qualification can raise the verifiable score only to the published cap; customers, regulators, journals and production history require genuine third-party evidence.",
+        "ceiling_without_external_evidence": 6.5,
+        "evidence_level": "moderate_verifiable_internal_evidence",
+        "implementation_score": 10.0,
+        "key": "cloud_scale",
+        "label": "Real Cloud Scale Evidence",
+        "maximum_current_score": 6.5,
+        "missing_external_proof": [
+          "Cloud telemetry, billing and regional production evidence"
+        ],
+        "passed_measurements": [
+          "Cloud-neutral infrastructure-as-code qualification passed",
+          "Measured scale/load qualification passed",
+          "Autoscaling and multi-zone controls verified"
+        ],
+        "verifiable_score": 6.5
+      },
+      {
+        "authentic_external_score": 0.0,
+        "boundary": "Measured repository qualification can raise the verifiable score only to the published cap; customers, regulators, journals and production history require genuine third-party evidence.",
+        "ceiling_without_external_evidence": 7.5,
+        "evidence_level": "strong_verifiable_internal_evidence",
+        "implementation_score": 10.0,
+        "key": "sustained_high_load",
+        "label": "Sustained High-Load Production Evidence",
+        "maximum_current_score": 7.5,
+        "missing_external_proof": [
+          "24-hour production-like independent load qualification"
+        ],
+        "passed_measurements": [
+          "Measured concurrent load run passed",
+          "Failover under request traffic passed"
+        ],
+        "verifiable_score": 7.5
+      },
+      {
+        "authentic_external_score": 0.0,
+        "boundary": "Measured repository qualification can raise the verifiable score only to the published cap; customers, regulators, journals and production history require genuine third-party evidence.",
+        "ceiling_without_external_evidence": 9.0,
+        "evidence_level": "strong_verifiable_internal_evidence",
+        "implementation_score": 10.0,
+        "key": "disaster_recovery_drill",
+        "label": "Disaster-Recovery Drill Evidence",
+        "maximum_current_score": 9.0,
+        "missing_external_proof": [
+          "Independently witnessed production restore drill"
+        ],
+        "passed_measurements": [
+          "All active databases restored with matching checksums and integrity",
+          "Restore evidence is checksum-bound to release provenance"
+        ],
+        "verifiable_score": 9.0
+      },
+      {
+        "authentic_external_score": 0.0,
+        "boundary": "Measured repository qualification can raise the verifiable score only to the published cap; customers, regulators, journals and production history require genuine third-party evidence.",
+        "ceiling_without_external_evidence": 7.0,
+        "evidence_level": "strong_verifiable_internal_evidence",
+        "implementation_score": 10.0,
+        "key": "high_availability",
+        "label": "High-Availability Production Evidence",
+        "maximum_current_score": 7.0,
+        "missing_external_proof": [
+          "90+ days availability and real multi-zone failover"
+        ],
+        "passed_measurements": [
+          "Primary-to-secondary failover rehearsal passed",
+          "PDB, HPA, topology spread and multi-replica controls verified",
+          "Post-failover API traffic qualification passed"
+        ],
+        "verifiable_score": 7.0
+      },
+      {
+        "authentic_external_score": 0.0,
+        "boundary": "Measured repository qualification can raise the verifiable score only to the published cap; customers, regulators, journals and production history require genuine third-party evidence.",
+        "ceiling_without_external_evidence": 5.5,
+        "evidence_level": "moderate_verifiable_internal_evidence",
+        "implementation_score": 10.0,
+        "key": "commercial_saas_history",
+        "label": "Commercial SaaS Operating History",
+        "maximum_current_score": 5.5,
+        "missing_external_proof": [
+          "Paying customers and completed billing/support history"
+        ],
+        "passed_measurements": [
+          "Tenant isolation and resource ownership verified",
+          "Entitlement, quota, billing-event and support controls verified"
+        ],
+        "verifiable_score": 5.5
+      },
+      {
+        "authentic_external_score": 0.0,
+        "boundary": "Measured repository qualification can raise the verifiable score only to the published cap; customers, regulators, journals and production history require genuine third-party evidence.",
+        "ceiling_without_external_evidence": 4.0,
+        "evidence_level": "moderate_verifiable_internal_evidence",
+        "implementation_score": 10.0,
+        "key": "enterprise_customer_validation",
+        "label": "Enterprise Customer Validation",
+        "maximum_current_score": 4.0,
+        "missing_external_proof": [
+          "External enterprise acceptance signature"
+        ],
+        "passed_measurements": [
+          "Enterprise UAT and acceptance package verified",
+          "Enterprise security and audit controls verified"
+        ],
+        "verifiable_score": 4.0
+      },
+      {
+        "authentic_external_score": 0.0,
+        "boundary": "Measured repository qualification can raise the verifiable score only to the published cap; customers, regulators, journals and production history require genuine third-party evidence.",
+        "ceiling_without_external_evidence": 4.0,
+        "evidence_level": "moderate_verifiable_internal_evidence",
+        "implementation_score": 10.0,
+        "key": "pharma_customer_validation",
+        "label": "Pharmaceutical Customer Validation",
+        "maximum_current_score": 4.0,
+        "missing_external_proof": [
+          "External pharmaceutical customer acceptance signature"
+        ],
+        "passed_measurements": [
+          "Pharmaceutical UAT/scientific decision-use package verified",
+          "GxP and scientific governance controls verified",
+          "Scientific validation evidence package verified"
+        ],
+        "verifiable_score": 4.0
+      },
+      {
+        "authentic_external_score": 0.0,
+        "boundary": "Measured repository qualification can raise the verifiable score only to the published cap; customers, regulators, journals and production history require genuine third-party evidence.",
+        "ceiling_without_external_evidence": 7.0,
+        "evidence_level": "moderate_verifiable_internal_evidence",
+        "implementation_score": 10.0,
+        "key": "overall_platform_maturity",
+        "label": "Real-World Overall Platform Maturity",
+        "maximum_current_score": 6.2,
+        "missing_external_proof": [
+          "Qualifying external evidence across all operating-history areas"
+        ],
+        "passed_measurements": [
+          "Real Pharma R&D Deployment Evidence: 6.5/10",
+          "Real Clinical Deployment Evidence: 5.5/10",
+          "Publication-Grade DTI Evidence: 8.0/10",
+          "Peer-Reviewed Validation Evidence: 4.0/10",
+          "Regulatory Approval Evidence: 3.0/10",
+          "Completed GxP Operating History: 7.0/10",
+          "Successful Regulatory Inspection History: 4.5/10",
+          "Production SLA Operating History: 7.5/10",
+          "Real Multi-Tenant Production History: 8.0/10",
+          "Real Kubernetes Production History: 7.5/10",
+          "Real Cloud Scale Evidence: 6.5/10",
+          "Sustained High-Load Production Evidence: 7.5/10",
+          "Disaster-Recovery Drill Evidence: 9.0/10",
+          "High-Availability Production Evidence: 7.0/10",
+          "Commercial SaaS Operating History: 5.5/10",
+          "Enterprise Customer Validation: 4.0/10",
+          "Pharmaceutical Customer Validation: 4.0/10"
+        ],
+        "verifiable_score": 6.2
+      }
+    ],
+    "capability_count": 18,
+    "external_registry_integrity": {
+      "failures": [],
+      "ok": true
+    },
+    "generated_at": "2026-07-05T08:58:13.324013+00:00",
+    "implementation_average": 10.0,
+    "maximum_current_average": 6.2,
+    "measurement_status": {
+      "api_load": true,
+      "clinical_reference": true,
+      "cloud_iac": true,
+      "customer_acceptance_kit": true,
+      "database_drill": true,
+      "gxp_controls": true,
+      "ha_rehearsal": true,
+      "kubernetes_static": true,
+      "multitenant_isolation": true,
+      "publication_bundle": true,
+      "regulatory_dossier": true,
+      "release_provenance": true,
+      "saas_controls": true,
+      "scientific_validation": true,
+      "security_controls": true
+    },
+    "schema": "biointel.step42.maximum-verifiable-evidence.v1",
+    "score_policy": {
+      "authentic_external": "Independent customers, regulators, journals, laboratories or real production operating history.",
+      "implementation": "Repository controls, schemas, APIs and tests.",
+      "verifiable": "Measured, checksum-bound repository or controlled-environment qualification evidence."
+    },
+    "strong_verifiable_areas": 8,
+    "verifiable_average": 6.2
+  },
+  "generated_at_utc": "2026-07-05T08:58:13.324206+00:00",
+  "implementation_score": 10.0,
+  "production_readiness": {
+    "blockers": [],
+    "checks": [
+      {
+        "key": "runtime_config",
+        "label": "Production configuration policy",
+        "message": "Secrets, hosts, authentication and required service variables must pass policy.",
+        "required": false,
+        "status": "ready"
+      },
+      {
+        "key": "postgres_driver",
+        "label": "PostgreSQL driver",
+        "message": "Install requirements-production.txt to enable PostgreSQL.",
+        "required": false,
+        "status": "missing"
+      },
+      {
+        "key": "postgres_service",
+        "label": "PostgreSQL service",
+        "message": "Set BIOINTEL_DATABASE_URL and verify service reachability.",
+        "required": false,
+        "status": "not_reachable"
+      },
+      {
+        "key": "persistence_integration",
+        "label": "Application persistence backend",
+        "message": "Core registries still use SQLite unless a PostgreSQL repository backend is explicitly implemented and selected.",
+        "required": false,
+        "status": "local_only"
+      },
+      {
+        "key": "redis_driver",
+        "label": "Redis driver",
+        "message": "Redis enables shared rate limits, queues and distributed caches.",
+        "required": false,
+        "status": "missing"
+      },
+      {
+        "key": "redis_service",
+        "label": "Redis service",
+        "message": "Set BIOINTEL_REDIS_URL and verify service reachability.",
+        "required": false,
+        "status": "not_reachable"
+      },
+      {
+        "key": "queue_integration",
+        "label": "Distributed queue backend",
+        "message": "The bundled worker remains a local SQLite queue unless Redis/Celery execution is implemented and selected.",
+        "required": false,
+        "status": "local_only"
+      },
+      {
+        "key": "object_storage_service",
+        "label": "S3/MinIO object storage",
+        "message": "Set object-storage endpoint and credentials for managed artifacts.",
+        "required": false,
+        "status": "not_reachable"
+      },
+      {
+        "key": "artifact_integration",
+        "label": "Artifact storage backend",
+        "message": "Reports, models and documents remain filesystem-backed unless an object-store repository is selected.",
+        "required": false,
+        "status": "local_only"
+      },
+      {
+        "key": "oidc",
+        "label": "OIDC identity verification",
+        "message": "Issuer configuration alone is not authentication; token verification and claims mapping are required.",
+        "required": false,
+        "status": "not_configured"
+      },
+      {
+        "key": "telemetry",
+        "label": "Prometheus/OpenTelemetry dependencies",
+        "message": "The built-in metrics endpoint works without these packages; install them for external export and traces.",
+        "required": false,
+        "status": "ready"
+      },
+      {
+        "key": "multi_tenant_architecture",
+        "label": "Tenant isolation architecture",
+        "message": "Tenant context, memberships and tenant-filtered resource repositories are required.",
+        "required": false,
+        "status": "ready"
+      },
+      {
+        "key": "kubernetes_chart",
+        "label": "Kubernetes Helm deployment",
+        "message": "A versioned Helm chart with probes, autoscaling, disruption budgets and network policy is required.",
+        "required": false,
+        "status": "ready"
+      },
+      {
+        "key": "visual_regression",
+        "label": "Visual regression CI",
+        "message": "Reviewed desktop/mobile baselines and a browser CI gate protect the primary interface.",
+        "required": false,
+        "status": "missing"
+      }
+    ],
+    "local_sqlite_supported": true,
+    "mode": "local_professional",
+    "production_services_optional": true,
+    "ready_checks": 4,
+    "required_check_count": 0,
+    "required_ready_checks": 0,
+    "runtime_configuration": {
+      "configured_clients": 0,
+      "critical_count": 0,
+      "environment": "local",
+      "findings": [],
+      "production": false,
+      "valid": true,
+      "warning_count": 0
+    },
+    "total_checks": 14
+  },
+  "relationship_health": {
+    "broken_edges": 0,
+    "completed_at_utc": "2026-07-04T20:42:21+00:00",
+    "edge_count": 1422,
+    "node_count": 868,
+    "orphan_findings": 0,
+    "run_id": "2c5da0129c94cb0c785a9523",
+    "started_at_utc": "2026-07-04T20:42:21+00:00",
+    "summary_json": "{\"broken_edges\": 0, \"database_count\": 13, \"edge_count\": 1422, \"generated_at_utc\": \"2026-07-04T20:42:21+00:00\", \"node_count\": 868, \"orphan_findings\": 0, \"valid_edges\": 1369, \"warning_edges\": 53}",
+    "valid_edges": 1369,
+    "warning_edges": 53
+  },
+  "repository_audit": {
+    "checks": {
+      "markdown_links": {
+        "broken": [],
+        "broken_count": 0,
+        "checked_links": 0,
+        "passed": true
+      },
+      "secrets": {
+        "finding_count": 0,
+        "findings": [],
+        "passed": true,
+        "scanned_files": 820
+      },
+      "version_consistency": {
+        "failures": [],
+        "passed": true,
+        "version": "4.3.0"
+      },
+      "workspace_hygiene": {
+        "finding_count": 0,
+        "findings": [],
+        "passed": true
+      }
+    },
+    "environment": {
+      "platform": "posix",
+      "python": "3.13.5"
+    },
+    "passed": true,
+    "schema": "biointel.repository-audit.v1"
+  },
+  "runtime_configuration": {
+    "configured_clients": 0,
+    "critical_count": 0,
+    "environment": "local",
+    "findings": [],
+    "production": false,
+    "valid": true,
+    "warning_count": 0
+  },
+  "schema": "biointel.final-assurance.v1",
+  "verifiable_evidence_score": 6.2,
+  "version": "4.3.0"
+}

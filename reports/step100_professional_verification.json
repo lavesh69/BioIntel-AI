@@ -1,0 +1,46 @@
+{
+  "schema": "biointel.step100.professional-verification.v1",
+  "version": "10.0.0",
+  "generated_at_utc": "2026-07-10T09:20:11.629698+00:00",
+  "scope_modules": 11,
+  "targeted_tests": {
+    "passed": 84,
+    "failed": 0
+  },
+  "python_compilation": "passed",
+  "engineering_gates": {
+    "passed": true,
+    "count": 4,
+    "readiness_average": 10.0
+  },
+  "dependency_lock": {
+    "valid": true,
+    "packages": 32,
+    "sha256": "b609c6dd48d814c6c9f5f1afa46892060d1d0ae1587034b826b8272328a385a0"
+  },
+  "wheelhouse": {
+    "valid": true,
+    "wheel_count": 102,
+    "total_size_bytes": 248266900
+  },
+  "databases": {
+    "healthy": 28,
+    "total": 28,
+    "foreign_key_issues": 0,
+    "rows_checked": 107491
+  },
+  "pages": 111,
+  "python_source_files": 698,
+  "advanced_tools_registered": 56,
+  "reference_asset_templates": 18,
+  "installer_files": [
+    "INSTALL_WINDOWS.bat",
+    "RUN_BOTH_WINDOWS.bat",
+    "AUTO_INSTALL_AND_RUN_WINDOWS.bat"
+  ],
+  "boundaries": [
+    "External executables are detected and managed but are not falsely marked as bundled.",
+    "Large/licensed databases and model weights are separately managed assets.",
+    "Clinical, wet-lab, regulatory and transmission conclusions require external validation."
+  ]
+}

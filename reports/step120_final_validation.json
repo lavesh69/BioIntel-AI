@@ -1,0 +1,57 @@
+{
+  "schema": "biointel.step120.final-validation.v1",
+  "version": "12.0.0",
+  "generated_date": "2026-07-11",
+  "checks": {
+    "python_compile": {
+      "passed": true,
+      "python_files": 852
+    },
+    "engineering_gates": {
+      "passed": true,
+      "passed_checks": 4,
+      "total_checks": 4
+    },
+    "step120_verifier": {
+      "passed": true,
+      "passed_checks": 8,
+      "total_checks": 8
+    },
+    "release_core_tests": {
+      "passed": 35,
+      "failed": 0
+    },
+    "quality_target_tests": {
+      "passed": 15,
+      "failed": 0
+    },
+    "user_experience_tests": {
+      "passed": 3,
+      "failed": 0
+    },
+    "step46_ui_tests": {
+      "passed": 5,
+      "failed": 0
+    },
+    "equal_depth_project_tests": {
+      "passed": 7,
+      "failed": 0
+    },
+    "semantic_visual_integrity": {
+      "passed": 1,
+      "failed": 0,
+      "environment_skipped_live_scenarios": 17
+    },
+    "sqlite_integrity": {
+      "passed_databases": 36,
+      "total_databases": 36
+    },
+    "excluded_modules_preserved": {
+      "passed": 5,
+      "total": 5,
+      "byte_identical": true
+    }
+  },
+  "known_test_environment_note": "Two legacy suites (Step 43 and Step 59) complete their visible assertions but the combined pytest process can remain alive during environment teardown; they are not counted in the completed release-core total. Large combined regression batches were therefore executed as smaller deterministic groups.",
+  "scientific_boundary": "External binaries, licensed reference databases, model weights, wet-lab replication, prospective cohorts, pathology review and clinical qualification are not fabricated or claimed as bundled. Capability tiers and release gates block unsupported claims."
+}

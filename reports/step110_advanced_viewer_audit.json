@@ -1,0 +1,663 @@
+{
+  "schema": "biointel.step110.advanced-viewer-audit.v1",
+  "version": "11.0.0",
+  "viewer_count": 19,
+  "specialized_view_count": 57,
+  "embedded_pages": 40,
+  "runtime_hub_passed": true,
+  "viewers": [
+    {
+      "key": "genome_browser",
+      "title": "Interactive Genome Browser",
+      "description": "Explore reference coordinates, gene models, coverage, variants, peaks and splice junctions in synchronized genomic tracks.",
+      "modules": [
+        "Variant Workbench",
+        "GWAS",
+        "Epigenomics",
+        "RNA Splicing",
+        "CRISPR",
+        "Cancer Genomics",
+        "Structural Variants"
+      ],
+      "input_types": [
+        "VCF",
+        "BED",
+        "GFF/GTF",
+        "BAM-derived coverage CSV"
+      ],
+      "visuals": [
+        {
+          "title": "Genome track browser",
+          "records": 176,
+          "method": "Multi-track coordinate canvas",
+          "units": "Genomic coordinate / read depth"
+        },
+        {
+          "title": "Variant interval explorer",
+          "records": 55,
+          "method": "Variant scatter with impact encoding",
+          "units": "Allele frequency"
+        },
+        {
+          "title": "Peak and regulatory signal",
+          "records": 15,
+          "method": "Interval-signal bar view",
+          "units": "Relative signal"
+        }
+      ]
+    },
+    {
+      "key": "molecular_3d",
+      "title": "3D Molecular Structure Viewer",
+      "description": "Inspect chains, ligands, pockets, contacts, mutations and confidence in an interactive three-dimensional scene.",
+      "modules": [
+        "Structural Bioinformatics",
+        "Docking",
+        "Antibody Engineering",
+        "Protein Design",
+        "Enzyme Engineering"
+      ],
+      "input_types": [
+        "PDB",
+        "mmCIF"
+      ],
+      "visuals": [
+        {
+          "title": "3D molecular structure",
+          "records": 186,
+          "method": "PDB/mmCIF atom-coordinate rendering",
+          "units": "\u00c5"
+        },
+        {
+          "title": "Pocket contact ranking",
+          "records": 25,
+          "method": "Euclidean atom-to-centroid distance",
+          "units": "\u00c5"
+        },
+        {
+          "title": "Residue geometry profile",
+          "records": 180,
+          "method": "Mean residue coordinate radial distance",
+          "units": "\u00c5"
+        }
+      ]
+    },
+    {
+      "key": "pathology",
+      "title": "Whole-Slide Pathology & Spatial Overlay",
+      "description": "Navigate tissue imagery with adjustable expression, segmentation and region-of-interest overlays.",
+      "modules": [
+        "Spatial Omics",
+        "Digital Pathology",
+        "Cancer Genomics"
+      ],
+      "input_types": [
+        "PNG/JPEG/TIFF preview",
+        "Spatial coordinates CSV"
+      ],
+      "visuals": [
+        {
+          "title": "Whole-slide spatial overlay",
+          "records": 1200,
+          "method": "Raster overlay with synchronized coordinates",
+          "units": "Image pixels / relative expression"
+        },
+        {
+          "title": "Spatial spot explorer",
+          "records": 1200,
+          "method": "Coordinate scatter with expression encoding",
+          "units": "Relative expression"
+        },
+        {
+          "title": "Region comparison",
+          "records": 2,
+          "method": "Region aggregation",
+          "units": "Mean relative expression"
+        }
+      ]
+    },
+    {
+      "key": "microscopy",
+      "title": "Microscopy Segmentation Overlay Editor",
+      "description": "Review raw images, thresholded masks, labelled objects, morphology and correction-ready segmentation overlays.",
+      "modules": [
+        "Bioimage & Microscopy",
+        "Organoid Analytics",
+        "High-Content Screening"
+      ],
+      "input_types": [
+        "PNG",
+        "JPEG",
+        "TIFF"
+      ],
+      "visuals": [
+        {
+          "title": "Segmentation overlay editor",
+          "records": 38,
+          "method": "Intensity thresholding, connected components and minimum-area filtering",
+          "units": "Pixels / normalized intensity"
+        },
+        {
+          "title": "Object-size distribution",
+          "records": 38,
+          "method": "Connected-component area distribution",
+          "units": "Pixels"
+        },
+        {
+          "title": "Morphology phenotype space",
+          "records": 38,
+          "method": "Object-level scatter",
+          "units": "Pixels / normalized intensity"
+        }
+      ]
+    },
+    {
+      "key": "flow_gating",
+      "title": "Flow-Cytometry Gating Canvas",
+      "description": "Explore FSC/SSC or marker channels, apply rectangular/quadrant gates and inspect population statistics.",
+      "modules": [
+        "Flow Cytometry",
+        "Wet-Lab Biotechnology",
+        "Immunology"
+      ],
+      "input_types": [
+        "FCS-derived CSV",
+        "CSV/TSV"
+      ],
+      "visuals": [
+        {
+          "title": "Flow-cytometry gating canvas",
+          "records": 4400,
+          "method": "FSC/SSC scatter with configurable gates",
+          "units": "Instrument intensity"
+        },
+        {
+          "title": "Population composition",
+          "records": 4,
+          "method": "Gate aggregation",
+          "units": "% events"
+        },
+        {
+          "title": "Gate identity matrix",
+          "records": 16,
+          "method": "Row-normalized cross-tabulation",
+          "units": "% of source population"
+        }
+      ]
+    },
+    {
+      "key": "mass_spectrometry",
+      "title": "Mass-Spectrometry & Chromatogram Viewer",
+      "description": "Inspect TIC/BPC chromatograms, MS1/MS2 spectra, isotope patterns, peak integration and library comparisons.",
+      "modules": [
+        "Metabolomics",
+        "Proteomics",
+        "Glycomics"
+      ],
+      "input_types": [
+        "mzML-derived CSV",
+        "MGF-derived CSV",
+        "Peak tables"
+      ],
+      "visuals": [
+        {
+          "title": "Chromatogram viewer",
+          "records": 1800,
+          "method": "Synthetic TIC preview",
+          "units": "Minutes / intensity units"
+        },
+        {
+          "title": "MS1 spectrum",
+          "records": 420,
+          "method": "Centroid peak spectrum",
+          "units": "m/z / intensity"
+        },
+        {
+          "title": "MS/MS fragment annotation",
+          "records": 90,
+          "method": "Fragment-ion stick spectrum",
+          "units": "m/z / intensity"
+        }
+      ]
+    },
+    {
+      "key": "phylogenetic_tree",
+      "title": "Interactive Phylogenetic Tree",
+      "description": "Explore branch lengths, bootstrap support, clades and sample metadata in a zoomable tree.",
+      "modules": [
+        "Alignment & Phylogeny",
+        "Pathogen Genomics",
+        "Virology"
+      ],
+      "input_types": [
+        "Newick",
+        "Nexus"
+      ],
+      "visuals": [
+        {
+          "title": "Interactive phylogenetic tree",
+          "records": 12,
+          "method": "Newick branch-coordinate rendering",
+          "units": "Substitutions/site"
+        },
+        {
+          "title": "Branch-length distribution",
+          "records": 11,
+          "method": "Tree edge-length distribution",
+          "units": "Branch length"
+        },
+        {
+          "title": "Root-to-tip distance",
+          "records": 7,
+          "method": "Root depth by terminal",
+          "units": "Substitutions/site"
+        }
+      ]
+    },
+    {
+      "key": "plate_map",
+      "title": "Interactive Plate Map & QC Overlay",
+      "description": "Design and review 96/384-well layouts, standards, controls, replicate placement and spatial quality patterns.",
+      "modules": [
+        "ELISA",
+        "qPCR",
+        "High-Content Screening",
+        "Wet-Lab Biotechnology"
+      ],
+      "input_types": [
+        "Plate CSV",
+        "Instrument export"
+      ],
+      "visuals": [
+        {
+          "title": "Plate map and QC overlay",
+          "records": 96,
+          "method": "Interactive heatmap over plate coordinates",
+          "units": "Relative signal"
+        },
+        {
+          "title": "Standards, controls and samples",
+          "records": 4,
+          "method": "Role-level aggregation",
+          "units": "Relative signal / CV%"
+        },
+        {
+          "title": "Edge-effect assessment",
+          "records": 2,
+          "method": "Spatial plate-region comparison",
+          "units": "Relative signal"
+        }
+      ]
+    },
+    {
+      "key": "pedigree",
+      "title": "Pedigree & Variant Segregation Viewer",
+      "description": "Visualize family relationships, affected status, genotypes, carriers and segregation consistency.",
+      "modules": [
+        "Rare Disease",
+        "Family Genetics",
+        "Pharmacogenomics"
+      ],
+      "input_types": [
+        "PED",
+        "Family CSV",
+        "Variant table"
+      ],
+      "visuals": [
+        {
+          "title": "Pedigree and segregation",
+          "records": 6,
+          "method": "Pedigree node-edge rendering",
+          "units": "Family generation"
+        },
+        {
+          "title": "Genotype/phenotype composition",
+          "records": 3,
+          "method": "Family genotype aggregation",
+          "units": "People"
+        },
+        {
+          "title": "Segregation checks",
+          "records": 4,
+          "method": "Rule-based segregation review",
+          "units": "Quality score"
+        }
+      ]
+    },
+    {
+      "key": "outbreak_map",
+      "title": "Geographic Outbreak Map with Timeline",
+      "description": "Review locations, dates, genomic clusters, hosts, AMR signals and transmission links over time.",
+      "modules": [
+        "One Health",
+        "Pathogen Outbreak",
+        "Comparative Pathogen Genomics"
+      ],
+      "input_types": [
+        "Sample metadata CSV",
+        "GeoJSON-compatible coordinates"
+      ],
+      "visuals": [
+        {
+          "title": "Geographic outbreak playback",
+          "records": 160,
+          "method": "Animated geospatial point map",
+          "units": "Latitude/longitude"
+        },
+        {
+          "title": "Outbreak cluster timeline",
+          "records": 20,
+          "method": "Monthly cluster aggregation",
+          "units": "Samples/month"
+        },
+        {
+          "title": "Host and environmental source",
+          "records": 15,
+          "method": "Host-by-cluster aggregation",
+          "units": "Samples"
+        }
+      ]
+    },
+    {
+      "key": "pangenome_graph",
+      "title": "Pangenome Variation-Graph Explorer",
+      "description": "Inspect sequence-segment nodes, reference/sample paths, bubbles, coverage and core/accessory regions.",
+      "modules": [
+        "Pangenome Studio"
+      ],
+      "input_types": [
+        "GFA-derived node/edge tables",
+        "CSV"
+      ],
+      "visuals": [
+        {
+          "title": "Pangenome variation graph",
+          "records": 34,
+          "method": "GFA-style node-edge rendering",
+          "units": "Graph coordinates / coverage"
+        },
+        {
+          "title": "Core and accessory composition",
+          "records": 3,
+          "method": "Segment-class aggregation",
+          "units": "Segments"
+        },
+        {
+          "title": "Connectivity and coverage",
+          "records": 34,
+          "method": "Node degree versus coverage",
+          "units": "Graph degree / coverage"
+        }
+      ]
+    },
+    {
+      "key": "single_cell",
+      "title": "Single-Cell Embedding Explorer",
+      "description": "Explore UMAP-like embeddings by cluster, condition, batch, expression, pseudotime and selected cells.",
+      "modules": [
+        "Single-Cell",
+        "Cell Atlas",
+        "Perturb-seq"
+      ],
+      "input_types": [
+        "H5AD-derived table",
+        "CSV/TSV"
+      ],
+      "visuals": [
+        {
+          "title": "Single-cell embedding explorer",
+          "records": 4100,
+          "method": "UMAP-like two-dimensional embedding",
+          "units": "Embedding coordinates"
+        },
+        {
+          "title": "Gene-expression overlay",
+          "records": 4100,
+          "method": "Per-cell expression colour overlay",
+          "units": "Normalized expression"
+        },
+        {
+          "title": "Pseudotime overlay",
+          "records": 4100,
+          "method": "Per-cell pseudotime colour overlay",
+          "units": "Pseudotime 0\u20131"
+        }
+      ]
+    },
+    {
+      "key": "sequence_track",
+      "title": "Sequence & Protein Feature Track",
+      "description": "Inspect domains, exons, motifs, PTMs, transmembrane regions, disorder, mutations and active sites along a sequence.",
+      "modules": [
+        "Protein Annotation",
+        "CRISPR",
+        "RNA Isoforms",
+        "Protein Design"
+      ],
+      "input_types": [
+        "FASTA",
+        "GFF/GTF",
+        "Feature CSV"
+      ],
+      "visuals": [
+        {
+          "title": "Sequence feature track",
+          "records": 8,
+          "method": "Coordinate-aligned feature intervals",
+          "units": "Sequence position"
+        },
+        {
+          "title": "Conservation/confidence profile",
+          "records": 950,
+          "method": "Sliding simulated conservation score",
+          "units": "Score 0\u20131"
+        },
+        {
+          "title": "Feature composition",
+          "records": 7,
+          "method": "Feature category count",
+          "units": "Features"
+        }
+      ]
+    },
+    {
+      "key": "multiomics",
+      "title": "Multi-Omics Relationship Explorer",
+      "description": "Trace gene-to-protein-to-metabolite-to-pathway relationships using Sankey, overlap and concordance views.",
+      "modules": [
+        "Omics Integration",
+        "Biomarker Discovery",
+        "Batch Correction"
+      ],
+      "input_types": [
+        "Cross-omics mapping CSV"
+      ],
+      "visuals": [
+        {
+          "title": "Multi-omics relationship Sankey",
+          "records": 19,
+          "method": "Weighted alluvial/Sankey flow",
+          "units": "Evidence weight"
+        },
+        {
+          "title": "Cross-omics overlap",
+          "records": 8,
+          "method": "UpSet-style membership aggregation",
+          "units": "Features"
+        },
+        {
+          "title": "Cross-omics concordance",
+          "records": 144,
+          "method": "Pearson correlation matrix",
+          "units": "Correlation \u22121 to 1"
+        }
+      ]
+    },
+    {
+      "key": "bioprocess_live",
+      "title": "Live Bioprocess & Instrument Dashboard",
+      "description": "Monitor process trajectories, control limits, feed events, alarms, golden batches and endpoint forecasts.",
+      "modules": [
+        "Bioprocess",
+        "Fermentation",
+        "Instrument Integration"
+      ],
+      "input_types": [
+        "Historian CSV",
+        "Sensor stream export"
+      ],
+      "visuals": [
+        {
+          "title": "Live bioprocess dashboard",
+          "records": 867,
+          "method": "Time-series process monitoring",
+          "units": "Hours / process units"
+        },
+        {
+          "title": "Critical process controls",
+          "records": 578,
+          "method": "Sensor trend and control-band review",
+          "units": "pH / % saturation"
+        },
+        {
+          "title": "Productivity soft sensor",
+          "records": 289,
+          "method": "Finite-difference product rate normalized by biomass",
+          "units": "Product/(biomass\u00b7hour)"
+        }
+      ]
+    },
+    {
+      "key": "workflow_dag",
+      "title": "Workflow DAG Execution Monitor",
+      "description": "Inspect dependencies, critical path, node status, runtime, resource use and failure propagation.",
+      "modules": [
+        "Visual Workflow Builder",
+        "Workflow Dashboard"
+      ],
+      "input_types": [
+        "Workflow JSON",
+        "Execution event CSV"
+      ],
+      "visuals": [
+        {
+          "title": "Workflow DAG monitor",
+          "records": 7,
+          "method": "Directed acyclic graph rendering",
+          "units": "Workflow coordinates / seconds"
+        },
+        {
+          "title": "Node runtime bottlenecks",
+          "records": 7,
+          "method": "Per-node runtime comparison",
+          "units": "Seconds"
+        },
+        {
+          "title": "Execution state summary",
+          "records": 4,
+          "method": "Workflow state aggregation",
+          "units": "Nodes"
+        }
+      ]
+    },
+    {
+      "key": "freezer_map",
+      "title": "Freezer, Rack & Sample Map",
+      "description": "Navigate storage hierarchy, occupied positions, sample risk, expiry and aliquot lineage.",
+      "modules": [
+        "LIMS/ELN",
+        "Sample Registry",
+        "Data Lakehouse"
+      ],
+      "input_types": [
+        "Inventory CSV"
+      ],
+      "visuals": [
+        {
+          "title": "Freezer and sample map",
+          "records": 81,
+          "method": "Rack/box coordinate heatmap",
+          "units": "Storage positions"
+        },
+        {
+          "title": "Freeze\u2013thaw exposure",
+          "records": 58,
+          "method": "Sample exposure distribution",
+          "units": "Cycles"
+        },
+        {
+          "title": "Expiry and risk profile",
+          "records": 3,
+          "method": "Risk-level aggregation",
+          "units": "Samples / days"
+        }
+      ]
+    },
+    {
+      "key": "static_reporting",
+      "title": "Offline Static Visual Report Renderer",
+      "description": "Generate deterministic SVG/HTML/JSON/data bundles and readiness checks for PDF, DOCX and presentation reporting.",
+      "modules": [
+        "Visual Workspace",
+        "Report Studio"
+      ],
+      "input_types": [
+        "Plotly JSON",
+        "CSV"
+      ],
+      "visuals": [
+        {
+          "title": "Offline export readiness",
+          "records": 7,
+          "method": "Renderer capability matrix",
+          "units": "Score 0\u20131"
+        },
+        {
+          "title": "Rendering pipeline",
+          "records": 6,
+          "method": "Static report pipeline state",
+          "units": "Pass state"
+        },
+        {
+          "title": "Report bundle contents",
+          "records": 7,
+          "method": "Bundle composition",
+          "units": "Artifacts"
+        }
+      ]
+    },
+    {
+      "key": "visual_regression",
+      "title": "Visual Regression & State Coverage",
+      "description": "Track page/theme/state baselines, semantic fingerprints, changed regions and review status.",
+      "modules": [
+        "Platform Quality",
+        "Visual Workspace"
+      ],
+      "input_types": [
+        "Baseline manifest JSON",
+        "PNG screenshots"
+      ],
+      "visuals": [
+        {
+          "title": "Visual-regression heatmap",
+          "records": 70,
+          "method": "Baseline pixel-difference matrix",
+          "units": "% pixels changed"
+        },
+        {
+          "title": "Baseline review status",
+          "records": 2,
+          "method": "Scenario status aggregation",
+          "units": "Scenarios"
+        },
+        {
+          "title": "Semantic and pixel change",
+          "records": 14,
+          "method": "Semantic fingerprint versus pixel delta",
+          "units": "Change metrics"
+        }
+      ]
+    }
+  ]
+}

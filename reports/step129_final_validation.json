@@ -1,0 +1,45 @@
+{
+  "product": "BioIntel AI",
+  "release": "Step 129 \u2014 Next-Generation Feature Depth, Specialist Visuals & Stability",
+  "version": "13.0.0",
+  "generated_at_utc": "2026-07-11T18:33:02.011744+00:00",
+  "scope": {
+    "next_generation_modules": 15,
+    "specialist_canvases": 15,
+    "dedicated_visuals": 75,
+    "visuals_per_module": 5,
+    "new_module_runtime_pages": 16,
+    "advanced_tables_minimum_per_module": 2
+  },
+  "completed_checks": {
+    "step129_verifier": "9/9 passed",
+    "core_step114_to_step129_regressions": "117 passed",
+    "scientific_ui_step102_to_step109_regressions": "50 passed",
+    "release_compatibility_step97_99_100_101": "17 passed",
+    "selected_regressions_total": 184,
+    "streamlit_runtime_pages": "16/16 passed",
+    "streamlit_runtime_exceptions": 0,
+    "python_syntax": "921/921 passed",
+    "sqlite_databases": "36/36 healthy",
+    "sqlite_rows": 108425,
+    "foreign_key_issues": 0,
+    "locked_pages": "5/5 byte-identical",
+    "full_test_collection": "1020 tests collected"
+  },
+  "incomplete_check": {
+    "full_monolithic_test_execution": "not completed within execution window; no full-suite pass claim"
+  },
+  "preservation": {
+    "missing_baseline_files": 0,
+    "locked_pages_preserved": 5,
+    "baseline_databases_changed": 0,
+    "baseline_databases_missing": 0
+  },
+  "release_tree": {
+    "files_before_package_manifest": 3868,
+    "bytes_before_package_manifest": 627741562,
+    "cache_or_bytecode_files": 0,
+    "sqlite_sidecars": 0
+  },
+  "scientific_boundary": "Specialist adapters and deterministic screening workflows are included. Proprietary model weights, licensed databases, independent clinical/wet-lab validation and regulatory approvals are not fabricated or bundled."
+}

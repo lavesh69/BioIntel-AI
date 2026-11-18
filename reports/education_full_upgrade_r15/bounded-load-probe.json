@@ -1,0 +1,138 @@
+{
+  "schema": "biointel.education.phase23-30.local-load-probe.v1",
+  "generated_at": "2026-08-01T16:33:26.897683+00:00",
+  "profile": {
+    "name": "1000-users",
+    "users": 1000,
+    "classification": "not_verified",
+    "recommended_concurrency": 48,
+    "scenarios": [
+      "classroom_activity",
+      "connect_messaging",
+      "shiro_queries",
+      "examination_start_spike",
+      "examination_submission_spike",
+      "report_generation",
+      "bulk_imports",
+      "lecture_uploads"
+    ]
+  },
+  "requested_virtual_users": 1000,
+  "executed_operations": 1200,
+  "worker_concurrency": 48,
+  "elapsed_seconds": 8.484,
+  "throughput_operations_per_second": 141.445,
+  "error_count": 0,
+  "classification": {
+    "operation_metrics": "measured",
+    "profile_user_count": "simulated",
+    "production_capacity": "not_verified"
+  },
+  "warning": "This bounded local component probe is not a 500/1,000/5,000-user production capacity result. Representative infrastructure, datasets, network paths, external services and user behavior were not present.",
+  "scenarios": [
+    {
+      "scenario": "classroom_activity",
+      "classification": "measured_local_component",
+      "operations": 150,
+      "errors": 0,
+      "sample_errors": [],
+      "latency_ms": {
+        "mean": 288.075,
+        "p50": 279.359,
+        "p95": 523.478,
+        "p99": 778.737
+      }
+    },
+    {
+      "scenario": "connect_messaging",
+      "classification": "measured_local_component",
+      "operations": 150,
+      "errors": 0,
+      "sample_errors": [],
+      "latency_ms": {
+        "mean": 300.286,
+        "p50": 290.637,
+        "p95": 559.233,
+        "p99": 692.74
+      }
+    },
+    {
+      "scenario": "shiro_queries",
+      "classification": "measured_local_component",
+      "operations": 150,
+      "errors": 0,
+      "sample_errors": [],
+      "latency_ms": {
+        "mean": 1150.802,
+        "p50": 1128.344,
+        "p95": 1719.653,
+        "p99": 2263.843
+      }
+    },
+    {
+      "scenario": "examination_start_spike",
+      "classification": "measured_local_component",
+      "operations": 150,
+      "errors": 0,
+      "sample_errors": [],
+      "latency_ms": {
+        "mean": 289.257,
+        "p50": 295.071,
+        "p95": 485.528,
+        "p99": 597.925
+      }
+    },
+    {
+      "scenario": "examination_submission_spike",
+      "classification": "measured_local_component",
+      "operations": 150,
+      "errors": 0,
+      "sample_errors": [],
+      "latency_ms": {
+        "mean": 287.524,
+        "p50": 288.615,
+        "p95": 482.53,
+        "p99": 591.147
+      }
+    },
+    {
+      "scenario": "report_generation",
+      "classification": "measured_local_component",
+      "operations": 150,
+      "errors": 0,
+      "sample_errors": [],
+      "latency_ms": {
+        "mean": 294.333,
+        "p50": 287.659,
+        "p95": 521.707,
+        "p99": 620.776
+      }
+    },
+    {
+      "scenario": "bulk_imports",
+      "classification": "measured_local_component",
+      "operations": 150,
+      "errors": 0,
+      "sample_errors": [],
+      "latency_ms": {
+        "mean": 0.021,
+        "p50": 0.015,
+        "p95": 0.02,
+        "p99": 0.138
+      }
+    },
+    {
+      "scenario": "lecture_uploads",
+      "classification": "measured_local_component",
+      "operations": 150,
+      "errors": 0,
+      "sample_errors": [],
+      "latency_ms": {
+        "mean": 0.025,
+        "p50": 0.018,
+        "p95": 0.051,
+        "p99": 0.081
+      }
+    }
+  ]
+}

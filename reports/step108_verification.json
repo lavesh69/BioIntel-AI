@@ -1,0 +1,20 @@
+{
+  "schema": "biointel.step108.verification.v1",
+  "version": "11.0.0",
+  "generated_at_utc": "2026-07-10T16:24:49+00:00",
+  "command": [
+    "/opt/pyvenv/bin/python",
+    "-m",
+    "pytest",
+    "-q",
+    "tests/test_step108_decision_visuals.py",
+    "tests/test_step107_scientific_visual_excellence.py",
+    "tests/test_step106_scientific_workbench_ui.py",
+    "tests/test_step105_reliability_optimization.py"
+  ],
+  "returncode": 0,
+  "stdout": ".......................                                                  [100%]\n23 passed in 9.54s\n",
+  "stderr": "",
+  "modules": 14,
+  "visual_views": 70
+}

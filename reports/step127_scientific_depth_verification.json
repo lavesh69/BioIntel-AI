@@ -1,0 +1,118 @@
+{
+  "checks": [
+    {
+      "detail": "VERSION=12.8.0",
+      "name": "version",
+      "passed": true
+    },
+    {
+      "detail": "33 modules \u00b7 {'Bioinformatics': 17, 'Discovery': 9, 'Lab Analytics': 7}",
+      "name": "module catalogue",
+      "passed": true
+    },
+    {
+      "detail": "unique keys and page paths",
+      "name": "unique module mappings",
+      "passed": true
+    },
+    {
+      "detail": "missing=[]",
+      "name": "module pages",
+      "passed": true
+    },
+    {
+      "detail": "31 full panels + 2 protected-source sidebar integrations",
+      "name": "module integration",
+      "passed": true
+    },
+    {
+      "detail": "5/5 byte-identical",
+      "name": "source-locked modules",
+      "passed": true
+    },
+    {
+      "detail": "Step 127 module policy loaded",
+      "name": "configuration",
+      "passed": true
+    },
+    {
+      "detail": "86 registered tools",
+      "name": "advanced tool catalogue",
+      "passed": true
+    },
+    {
+      "detail": "33/33 assessments generated",
+      "name": "capability assessments",
+      "passed": true
+    },
+    {
+      "detail": "fastp, Flye and VEP bounded plans generated",
+      "name": "protected execution plans",
+      "passed": true
+    },
+    {
+      "detail": "FASTQ pairing and variant normalization safeguards",
+      "name": "domain safeguards",
+      "passed": true
+    },
+    {
+      "detail": "command center + protected-page sidebar",
+      "name": "command center and global sidebar",
+      "passed": true
+    },
+    {
+      "detail": "src and pages syntax compilation",
+      "name": "python compilation",
+      "passed": true
+    },
+    {
+      "detail": "36/36 healthy \u00b7 108425 rows \u00b7 errors=[]",
+      "name": "database integrity",
+      "passed": true
+    }
+  ],
+  "created_at_utc": "2026-07-11T17:19:43+00:00",
+  "database_count": 36,
+  "database_rows": 108425,
+  "locked_modules": [
+    {
+      "actual": "84b3ecec1356b7239a057459210af4cd130c57c08dd9449b7239d1fe5954e0cc",
+      "byte_identical": true,
+      "expected": "84b3ecec1356b7239a057459210af4cd130c57c08dd9449b7239d1fe5954e0cc",
+      "path": "pages/6_DTI_Predictor.py"
+    },
+    {
+      "actual": "a700a8a21649b49cf0e3a1521d2afad45039b83b767c2fe730b93fee7d4f7f11",
+      "byte_identical": true,
+      "expected": "a700a8a21649b49cf0e3a1521d2afad45039b83b767c2fe730b93fee7d4f7f11",
+      "path": "pages/74_DTI_Validation_Evidence_Center.py"
+    },
+    {
+      "actual": "22b5aba5bfea37bb1ef330ed7cca3773467463f883189602d96a0151311c8f70",
+      "byte_identical": true,
+      "expected": "22b5aba5bfea37bb1ef330ed7cca3773467463f883189602d96a0151311c8f70",
+      "path": "pages/109_Lab_Instrument_Import_Center.py"
+    },
+    {
+      "actual": "eadaef1a283a5fa11ce6b243aa561508ba9ceba9f6fdcc207f4853ccf7d86905",
+      "byte_identical": true,
+      "expected": "eadaef1a283a5fa11ce6b243aa561508ba9ceba9f6fdcc207f4853ccf7d86905",
+      "path": "pages/126_LIMS_ELN_and_Sample_Chain_of_Custody_Hub.py"
+    },
+    {
+      "actual": "cf3a5f94756def0007dbff31184ec276d90b03fc6d6e1ca792c87189e5ab7d6d",
+      "byte_identical": true,
+      "expected": "cf3a5f94756def0007dbff31184ec276d90b03fc6d6e1ca792c87189e5ab7d6d",
+      "path": "pages/157_Instrument_Integration_Hub_2.py"
+    }
+  ],
+  "module_counts": {
+    "Bioinformatics": 17,
+    "Discovery": 9,
+    "Lab Analytics": 7
+  },
+  "passed": true,
+  "registered_tools": 86,
+  "schema": "biointel.step127.verification.v1",
+  "version": "12.8.0"
+}

@@ -1,0 +1,52 @@
+{
+  "schema": "biointel.step101.self-test.v1",
+  "generated_at_utc": "2026-07-11T09:33:10.588568+00:00",
+  "root": "/mnt/data/step119_build/BioIntel-AI",
+  "status": "PASS",
+  "passed": 7,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "Version and runtime",
+      "status": "PASS",
+      "detail": "BioIntel AI 11.9.0; Python 3.13.5 x64",
+      "seconds": 0.023
+    },
+    {
+      "name": "Core dependencies",
+      "status": "PASS",
+      "detail": "Core scientific imports available; Streamlit 1.58.0",
+      "seconds": 4.971
+    },
+    {
+      "name": "Robust upload pipeline",
+      "status": "PASS",
+      "detail": "CSV, gzip and safe single-table ZIP parsing passed",
+      "seconds": 0.009
+    },
+    {
+      "name": "SQLite database fabric",
+      "status": "PASS",
+      "detail": "26 databases healthy; 108,063 indexed rows",
+      "seconds": 1.242
+    },
+    {
+      "name": "Trusted model artifacts",
+      "status": "PASS",
+      "detail": "23 compatible models discovered; 2 non-BioIntel/unsupported artifacts isolated",
+      "seconds": 6.156
+    },
+    {
+      "name": "Critical code compilation",
+      "status": "PASS",
+      "detail": "32 critical Python entry points compiled",
+      "seconds": 0.132
+    },
+    {
+      "name": "Persistent storage",
+      "status": "PASS",
+      "detail": "Persistent UserData writable at /mnt/data/step119_build/BioIntel-AI/BioIntelAI/UserData",
+      "seconds": 0.001
+    }
+  ]
+}

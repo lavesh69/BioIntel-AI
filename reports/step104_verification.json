@@ -1,0 +1,31 @@
+{
+  "catalog": {
+    "missing_pages": [],
+    "passed": true,
+    "platform_modules": 15,
+    "scientific_modules": 14,
+    "total_features": 29
+  },
+  "key_file_hashes": {
+    "STEP104_OPTIMIZED_EXPANSION_REPORT.md": "453e5b1964bcbcdd3dea9135e02f3806ff295bf66543624c4c62d5f0206672a8",
+    "STEP104_RELEASE.json": "4f2289cb6df2c84680476900ea0ff6bc8823581bb53f2e8769f0effa6dacbfb9",
+    "src/biointel/nextgen/renderer.py": "b682072b14e74678f93df649b9fc0734792f751933b7db129b131880fecd5ab6",
+    "src/biointel/nextgen/scientific.py": "9ae6826e5e011708e5fe9f167fda44d5c7af602a153925aaf6d8397f1d616c6e",
+    "src/biointel/nextgen/services.py": "91038fdcc95aee4dcac48165221008937f906fa31a4b7902bdebf4537040b462"
+  },
+  "passed": true,
+  "schema": "biointel.step104.verification.v1",
+  "scientific_engines": {
+    "failures": [],
+    "passed": true,
+    "passed_count": 14,
+    "total": 14
+  },
+  "streamlit_pages": {
+    "failures": [],
+    "passed": true,
+    "passed_count": 30,
+    "total": 30
+  },
+  "version": "10.4.0"
+}

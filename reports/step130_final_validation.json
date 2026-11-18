@@ -1,0 +1,46 @@
+{
+  "product": "BioIntel AI",
+  "release": "Step 130 \u2014 Cross-Module Scientific Intelligence, Visual Review & Stability",
+  "version": "13.0.0",
+  "generated_at_utc": "2026-07-11T19:09:26+00:00",
+  "scope": {
+    "next_generation_modules": 15,
+    "central_workspaces": 6,
+    "shared_intelligence_capabilities": 10,
+    "specialist_canvases_preserved": 15,
+    "dedicated_visuals_preserved": 75
+  },
+  "completed_checks": {
+    "step130_verifier": "14/14 passed",
+    "step130_core_tests": 5,
+    "nextgen_ui_regressions": 68,
+    "release_compatibility_regressions": 144,
+    "native_stability_regressions": 36,
+    "selected_regressions_total": 253,
+    "streamlit_runtime_pages": "22/22 passed",
+    "streamlit_runtime_exceptions": 0,
+    "python_syntax": "931/931 passed",
+    "sqlite_databases": "36/36 healthy",
+    "sqlite_rows": 108425,
+    "foreign_key_issues": 0,
+    "locked_pages": "5/5 byte-identical",
+    "full_test_collection": "1030 tests collected"
+  },
+  "incomplete_checks": {
+    "combined_selected_test_command": "crossed execution window after partial progress; not counted",
+    "full_monolithic_test_execution": "not completed; no full-suite pass claim"
+  },
+  "preservation": {
+    "missing_baseline_files": 0,
+    "baseline_databases_changed": 0,
+    "functional_removals": 0,
+    "locked_pages_changed": 0
+  },
+  "release_tree_before_package": {
+    "files": 3888,
+    "bytes_before_manifest": 628600525,
+    "cache_or_bytecode_files": 0,
+    "sqlite_sidecars": 0
+  },
+  "scientific_boundary": "Research intelligence and publication workflows are included. External scientific evidence and regulatory outcomes are not fabricated."
+}

@@ -1,0 +1,1377 @@
+{
+  "schema": "biointel.step107.visual-audit.v1",
+  "generated_at_utc": "2026-07-10T15:58:42.085291+00:00",
+  "version": "10.7.0",
+  "scientific_modules": 35,
+  "visuals_per_module": 5,
+  "module_specific_visuals": 175,
+  "legacy_pages_upgraded": 13,
+  "platform_visual_explorers": 7,
+  "render_policy": "Only the selected visual is rendered; all five remain available in the module visual selector.",
+  "export_policy": [
+    "SVG from Plotly modebar",
+    "underlying chart CSV",
+    "filtered result CSV",
+    "complete analysis bundle"
+  ],
+  "modules": [
+    {
+      "page": 112,
+      "key": "epigenomics_chromatin",
+      "title": "Epigenomics & Chromatin Regulation Studio",
+      "category": "Bioinformatics",
+      "visuals": [
+        {
+          "title": "Regulatory signal versus methylation",
+          "interpretation": "Highlights regions where chromatin signal and methylation move together or diverge.",
+          "method": "Signal\u2013methylation scatter",
+          "rows": 288
+        },
+        {
+          "title": "Differential accessibility volcano",
+          "interpretation": "Prioritises regions by effect size and statistical evidence.",
+          "method": "Welch-style differential screen with FDR",
+          "rows": 24
+        },
+        {
+          "title": "Condition-by-region signal heatmap",
+          "interpretation": "Compares mean regulatory signal across regions and conditions.",
+          "method": "Mean aggregation heatmap",
+          "rows": 48
+        },
+        {
+          "title": "Methylation-shift distribution",
+          "interpretation": "Shows the range and direction of condition-associated methylation changes.",
+          "method": "Distribution with marginal box plot",
+          "rows": 24
+        },
+        {
+          "title": "Top regulatory-region priorities",
+          "interpretation": "Ranks regions combining statistical effect, methylation shift and replicate balance.",
+          "method": "Composite transparent priority score",
+          "rows": 24
+        }
+      ]
+    },
+    {
+      "page": 113,
+      "key": "metabolomics_lipidomics",
+      "title": "Metabolomics & Lipidomics Workbench",
+      "category": "Bioinformatics",
+      "visuals": [
+        {
+          "title": "Signal versus blank contamination",
+          "interpretation": "Separates high-abundance biological features from blank-associated signals.",
+          "method": "Log-scaled abundance scatter",
+          "rows": 512
+        },
+        {
+          "title": "Differential metabolite volcano",
+          "interpretation": "Combines fold change, FDR and annotation confidence for candidate review.",
+          "method": "Feature-wise differential statistics",
+          "rows": 32
+        },
+        {
+          "title": "Feature abundance heatmap",
+          "interpretation": "Displays the dominant abundance patterns across samples.",
+          "method": "Mean intensity heatmap",
+          "rows": 512
+        },
+        {
+          "title": "Analytical QC landscape",
+          "interpretation": "Identifies features with high variation or excessive blank contribution.",
+          "method": "CV and blank-ratio QC",
+          "rows": 32
+        },
+        {
+          "title": "Top metabolite priorities",
+          "interpretation": "Ranks reproducible, low-contamination and statistically supported features.",
+          "method": "Composite feature score",
+          "rows": 30
+        }
+      ]
+    },
+    {
+      "page": 114,
+      "key": "immunoinformatics_vaccine",
+      "title": "Immunoinformatics & Vaccine Design Lab",
+      "category": "Discovery",
+      "visuals": [
+        {
+          "title": "Epitope evidence landscape",
+          "interpretation": "Shows binding, immunogenicity, conservancy and safety simultaneously.",
+          "method": "Multi-criterion epitope screen",
+          "rows": 72
+        },
+        {
+          "title": "Top epitope profiles",
+          "interpretation": "Compares normalised evidence dimensions for the highest-ranked peptides.",
+          "method": "Min\u2013max normalised radar",
+          "rows": 20
+        },
+        {
+          "title": "Allele coverage and candidate quality",
+          "interpretation": "Compares average candidate strength and safety across HLA alleles.",
+          "method": "Allele-level mean priority",
+          "rows": 8
+        },
+        {
+          "title": "Peptide manufacturability space",
+          "interpretation": "Flags extreme composition and cysteine burden that may complicate synthesis.",
+          "method": "Sequence-composition screen",
+          "rows": 72
+        },
+        {
+          "title": "Promiscuous epitope ranking",
+          "interpretation": "Prioritises peptides supported across multiple alleles.",
+          "method": "Cross-allele consensus score",
+          "rows": 30
+        }
+      ]
+    },
+    {
+      "page": 115,
+      "key": "antibody_biologics",
+      "title": "Antibody & Biologics Engineering Studio",
+      "category": "Discovery",
+      "visuals": [
+        {
+          "title": "Affinity\u2013stability landscape",
+          "interpretation": "Identifies candidates balancing binding and physical stability.",
+          "method": "Multi-attribute candidate scatter",
+          "rows": 72
+        },
+        {
+          "title": "Top antibody developability profiles",
+          "interpretation": "Compares normalised developability dimensions across leading variants.",
+          "method": "Normalised candidate radar",
+          "rows": 20
+        },
+        {
+          "title": "Liability and aggregation burden",
+          "interpretation": "Highlights candidates with fewer liabilities and lower aggregation risk.",
+          "method": "Developability risk screen",
+          "rows": 72
+        },
+        {
+          "title": "Candidate priority ranking",
+          "interpretation": "Ranks antibody variants and highlights Pareto-optimal candidates.",
+          "method": "Composite priority score",
+          "rows": 30
+        },
+        {
+          "title": "Antibody property correlation",
+          "interpretation": "Shows trade-offs and redundant metrics across the candidate panel.",
+          "method": "Pearson correlation",
+          "rows": 36
+        }
+      ]
+    },
+    {
+      "page": 116,
+      "key": "docking_dynamics",
+      "title": "Molecular Docking & Dynamics Lab",
+      "category": "Discovery",
+      "visuals": [
+        {
+          "title": "Pose score versus structural deviation",
+          "interpretation": "Surfaces poses combining favourable scores, low RMSD and stable hydrogen bonding.",
+          "method": "Docking-pose quality review",
+          "rows": 72
+        },
+        {
+          "title": "Docking-score distribution by ligand",
+          "interpretation": "Compares pose variability and best-score consistency across ligands.",
+          "method": "Pose-level box plot",
+          "rows": 72
+        },
+        {
+          "title": "Strain versus interaction persistence",
+          "interpretation": "Flags poses with high conformational strain or weak hydrogen-bond occupancy.",
+          "method": "Pose stability screen",
+          "rows": 72
+        },
+        {
+          "title": "Ligand consensus ranking",
+          "interpretation": "Aggregates best score, RMSD, occupancy and flagged-pose burden.",
+          "method": "Ligand-level consensus score",
+          "rows": 24
+        },
+        {
+          "title": "Docking metric correlation",
+          "interpretation": "Reveals score\u2013stability trade-offs across all poses.",
+          "method": "Pearson correlation",
+          "rows": 25
+        }
+      ]
+    },
+    {
+      "page": 117,
+      "key": "pharmacogenomics",
+      "title": "Pharmacogenomics & Precision Medicine Board",
+      "category": "Clinical Research",
+      "visuals": [
+        {
+          "title": "Gene\u2013drug review matrix",
+          "interpretation": "Shows combinations with the strongest evidence and phenotype risk.",
+          "method": "Mean review-priority heatmap",
+          "rows": 36
+        },
+        {
+          "title": "Pharmacogene evidence profile",
+          "interpretation": "Compares review burden by gene and metaboliser phenotype.",
+          "method": "Gene-level mean priority",
+          "rows": 25
+        },
+        {
+          "title": "Evidence-level review burden",
+          "interpretation": "Counts records requiring review within each evidence tier.",
+          "method": "Evidence-tier aggregation",
+          "rows": 4
+        },
+        {
+          "title": "Top variant\u2013drug records",
+          "interpretation": "Ranks research records while keeping curation status visible.",
+          "method": "Research-only priority score",
+          "rows": 30
+        },
+        {
+          "title": "Phenotype-risk distribution",
+          "interpretation": "Shows how phenotype risk varies across medicines.",
+          "method": "Phenotype-level mean risk",
+          "rows": 25
+        }
+      ]
+    },
+    {
+      "page": 118,
+      "key": "spatial_omics_pathology",
+      "title": "Spatial Omics & Digital Pathology Studio",
+      "category": "Bioinformatics",
+      "visuals": [
+        {
+          "title": "Spatial expression map",
+          "interpretation": "Maps expression and priority across tissue coordinates.",
+          "method": "Coordinate-linked spot visualisation",
+          "rows": 64
+        },
+        {
+          "title": "Regional expression heatmap",
+          "interpretation": "Compares gene expression across annotated tissue regions.",
+          "method": "Region-level mean expression",
+          "rows": 8
+        },
+        {
+          "title": "Spatial autocorrelation ranking",
+          "interpretation": "Highlights genes with clustered rather than random spatial patterns.",
+          "method": "Moran-style spatial autocorrelation",
+          "rows": 4
+        },
+        {
+          "title": "Expression distribution by region",
+          "interpretation": "Shows within-region variability and potential tissue heterogeneity.",
+          "method": "Region-wise expression box plot",
+          "rows": 64
+        },
+        {
+          "title": "Top spatial priority spots",
+          "interpretation": "Ranks spots with strong regional enrichment and expression.",
+          "method": "Spot-level composite priority",
+          "rows": 30
+        }
+      ]
+    },
+    {
+      "page": 119,
+      "key": "single_cell_trajectory",
+      "title": "Single-Cell Trajectory & Communication Lab",
+      "category": "Bioinformatics",
+      "visuals": [
+        {
+          "title": "Expression along pseudotime",
+          "interpretation": "Shows state-dependent expression changes across the inferred trajectory.",
+          "method": "Pseudotime trend scatter",
+          "rows": 72
+        },
+        {
+          "title": "Communication signal by cell state",
+          "interpretation": "Compares average ligand\u2013receptor activity across inferred states.",
+          "method": "State-level communication summary",
+          "rows": 3
+        },
+        {
+          "title": "Ligand\u2013receptor network",
+          "interpretation": "Displays the dominant communication edges identified across clusters.",
+          "method": "Circular interaction network",
+          "rows": 16
+        },
+        {
+          "title": "Cluster trajectory slopes",
+          "interpretation": "Compares expression trends and statistical support across clusters.",
+          "method": "Cluster-level linear trend",
+          "rows": 3
+        },
+        {
+          "title": "Communication heatmap",
+          "interpretation": "Summarises ligand\u2013receptor scores across the analysed cells.",
+          "method": "Mean interaction score",
+          "rows": 16
+        }
+      ]
+    },
+    {
+      "page": 120,
+      "key": "bioimage_microscopy",
+      "title": "Bioimage & Microscopy AI Lab",
+      "category": "Lab Analytics",
+      "visuals": [
+        {
+          "title": "Image-derived phenotype space",
+          "interpretation": "Separates phenotypes by size, intensity, circularity and condition.",
+          "method": "Object-level morphology scatter",
+          "rows": 72
+        },
+        {
+          "title": "Object-size distribution",
+          "interpretation": "Shows size heterogeneity and condition-specific shifts.",
+          "method": "Area distribution",
+          "rows": 72
+        },
+        {
+          "title": "Intensity by condition",
+          "interpretation": "Compares signal distributions while preserving QC flags.",
+          "method": "Condition-level box plot",
+          "rows": 72
+        },
+        {
+          "title": "Image QC ranking",
+          "interpretation": "Identifies images with excessive object-level anomalies.",
+          "method": "Image-level QC aggregation",
+          "rows": 12
+        },
+        {
+          "title": "Condition effect sizes",
+          "interpretation": "Compares morphology and intensity shifts across conditions.",
+          "method": "Cohen's d effect summary",
+          "rows": 3
+        }
+      ]
+    },
+    {
+      "page": 121,
+      "key": "biostatistics_design",
+      "title": "Biostatistics, Power & Experimental Design Studio",
+      "category": "Research Planning",
+      "visuals": [
+        {
+          "title": "Sample size sensitivity",
+          "interpretation": "Shows how total recruitment changes with the assumed effect size.",
+          "method": "Power-based sample-size approximation",
+          "rows": 12
+        },
+        {
+          "title": "Power versus recruitment burden",
+          "interpretation": "Compares statistical power against the required sample size.",
+          "method": "Design scenario comparison",
+          "rows": 12
+        },
+        {
+          "title": "Allocation plan",
+          "interpretation": "Displays the planned participants per study arm.",
+          "method": "Balanced allocation summary",
+          "rows": 30
+        },
+        {
+          "title": "Dropout inflation",
+          "interpretation": "Shows the recruitment penalty introduced by anticipated attrition.",
+          "method": "Attrition-adjusted sample size",
+          "rows": 12
+        },
+        {
+          "title": "Design efficiency ranking",
+          "interpretation": "Ranks scenarios by efficiency and practical feasibility.",
+          "method": "Composite design score",
+          "rows": 12
+        }
+      ]
+    },
+    {
+      "page": 122,
+      "key": "clinical_trial_biomarker",
+      "title": "Clinical Trial Biomarker & Patient Stratification Studio",
+      "category": "Clinical Research",
+      "visuals": [
+        {
+          "title": "Biomarker ROC curve",
+          "interpretation": "Shows sensitivity\u2013specificity trade-offs across candidate cut-offs.",
+          "method": "Threshold-based ROC screen",
+          "rows": 45
+        },
+        {
+          "title": "Kaplan\u2013Meier screening curves",
+          "interpretation": "Compares survival trajectories across arm and biomarker strata.",
+          "method": "Non-parametric survival estimate",
+          "rows": 72
+        },
+        {
+          "title": "Biomarker distribution by response",
+          "interpretation": "Shows whether biomarker levels differ between responders and non-responders.",
+          "method": "Response-stratified distribution",
+          "rows": 72
+        },
+        {
+          "title": "Biomarker and time-to-event landscape",
+          "interpretation": "Combines biomarker magnitude, follow-up time and outcome status.",
+          "method": "Patient-level outcome scatter",
+          "rows": 72
+        },
+        {
+          "title": "Response rate by biomarker group",
+          "interpretation": "Compares response proportions across treatment and biomarker strata.",
+          "method": "Stratified response summary",
+          "rows": 4
+        }
+      ]
+    },
+    {
+      "page": 123,
+      "key": "genome_editing_safety",
+      "title": "Genome Editing Safety & Off-Target Validation Lab",
+      "category": "Bioinformatics",
+      "visuals": [
+        {
+          "title": "Efficiency versus off-target burden",
+          "interpretation": "Highlights guides balancing on-target activity and genome-wide specificity.",
+          "method": "Guide safety landscape",
+          "rows": 72
+        },
+        {
+          "title": "Guide sequence-quality space",
+          "interpretation": "Identifies extreme GC, low-complexity and homopolymer liabilities.",
+          "method": "Sequence-composition QC",
+          "rows": 72
+        },
+        {
+          "title": "Guide safety ranking",
+          "interpretation": "Ranks candidates using on-target evidence and multiple off-target liabilities.",
+          "method": "Composite safety score",
+          "rows": 30
+        },
+        {
+          "title": "Off-target burden by mismatch class",
+          "interpretation": "Shows how predicted off-target counts vary with tolerated mismatches and SNP overlap.",
+          "method": "Mismatch-level aggregation",
+          "rows": 9
+        },
+        {
+          "title": "Guide metric correlation",
+          "interpretation": "Reveals trade-offs among activity, sequence quality and specificity.",
+          "method": "Pearson correlation",
+          "rows": 36
+        }
+      ]
+    },
+    {
+      "page": 124,
+      "key": "proteogenomics_neoantigen",
+      "title": "Proteogenomics & Neoantigen Discovery Studio",
+      "category": "Discovery",
+      "visuals": [
+        {
+          "title": "Neoantigen evidence landscape",
+          "interpretation": "Integrates spectral support, HLA binding, expression and clonality.",
+          "method": "Multi-layer candidate scatter",
+          "rows": 72
+        },
+        {
+          "title": "Top neoantigen evidence profiles",
+          "interpretation": "Compares normalised evidence dimensions for leading peptides.",
+          "method": "Normalised evidence radar",
+          "rows": 25
+        },
+        {
+          "title": "Spectral confidence versus candidate priority",
+          "interpretation": "Flags high-priority candidates with weak spectral-confidence proxies.",
+          "method": "Spectral review screen",
+          "rows": 72
+        },
+        {
+          "title": "Peptide-length distribution",
+          "interpretation": "Shows candidate size distribution and multi-layer support.",
+          "method": "Peptide-length QC",
+          "rows": 72
+        },
+        {
+          "title": "Neoantigen priority ranking",
+          "interpretation": "Ranks candidates supported across variant, expression, spectral and HLA evidence.",
+          "method": "Composite neoantigen score",
+          "rows": 30
+        }
+      ]
+    },
+    {
+      "page": 125,
+      "key": "bioprocess_fermentation",
+      "title": "Bioprocess & Fermentation Optimization Studio",
+      "category": "Lab Analytics",
+      "visuals": [
+        {
+          "title": "Product trajectory by batch",
+          "interpretation": "Compares product accumulation across process runs.",
+          "method": "Batch time-series overlay",
+          "rows": 100
+        },
+        {
+          "title": "Biomass growth trajectory",
+          "interpretation": "Shows growth dynamics and between-batch consistency.",
+          "method": "Batch time-series overlay",
+          "rows": 100
+        },
+        {
+          "title": "Dissolved-oxygen profile",
+          "interpretation": "Highlights oxygen demand shifts and potential process deviations.",
+          "method": "Sensor time-series review",
+          "rows": 100
+        },
+        {
+          "title": "Biomass\u2013product relationship",
+          "interpretation": "Shows productivity trade-offs and deviation states.",
+          "method": "Process-state scatter",
+          "rows": 100
+        },
+        {
+          "title": "Batch performance ranking",
+          "interpretation": "Combines growth, productivity, yield and deviation burden.",
+          "method": "Batch-level composite score",
+          "rows": 4
+        }
+      ]
+    },
+    {
+      "page": 126,
+      "key": "lims_eln_chain",
+      "title": "LIMS, ELN & Sample Chain-of-Custody Hub",
+      "category": "Lab Analytics",
+      "visuals": [
+        {
+          "title": "Sample status and custody risk",
+          "interpretation": "Shows which operational states carry the greatest review burden.",
+          "method": "Status-level risk aggregation",
+          "rows": 6
+        },
+        {
+          "title": "Storage-location occupancy",
+          "interpretation": "Summarises sample counts and expiry states across storage locations.",
+          "method": "Inventory count aggregation",
+          "rows": 14
+        },
+        {
+          "title": "Expiry horizon distribution",
+          "interpretation": "Shows the timing of upcoming sample and reagent expiries.",
+          "method": "Expiry-window distribution",
+          "rows": 72
+        },
+        {
+          "title": "Freeze\u2013thaw burden and custody risk",
+          "interpretation": "Identifies samples with repeated handling and elevated operational risk.",
+          "method": "Sample-risk scatter",
+          "rows": 72
+        },
+        {
+          "title": "Lineage-integrity findings",
+          "interpretation": "Counts orphan and self-referential parent relationships requiring correction.",
+          "method": "Lineage-rule audit",
+          "rows": 1
+        }
+      ]
+    },
+    {
+      "page": 127,
+      "key": "causal_perturbation",
+      "title": "Causal Biology & Perturbation Modelling",
+      "category": "AI Lab",
+      "visuals": [
+        {
+          "title": "Effect\u2013uncertainty landscape",
+          "interpretation": "Highlights precise effects supported by stronger instruments.",
+          "method": "Instrument-level causal screen",
+          "rows": 72
+        },
+        {
+          "title": "Instrument strength versus priority",
+          "interpretation": "Shows how weak instruments reduce confidence in causal hypotheses.",
+          "method": "Instrument-quality screen",
+          "rows": 72
+        },
+        {
+          "title": "IVW meta-analysis effects",
+          "interpretation": "Summarises pooled causal estimates and heterogeneity across instruments.",
+          "method": "Inverse-variance weighted aggregation",
+          "rows": 16
+        },
+        {
+          "title": "Causal effect waterfall",
+          "interpretation": "Orders effect estimates to reveal positive and negative hypotheses.",
+          "method": "Ordered effect display",
+          "rows": 25
+        },
+        {
+          "title": "Causal metric correlation",
+          "interpretation": "Shows relationships among effect magnitude, uncertainty and instrument strength.",
+          "method": "Pearson correlation",
+          "rows": 25
+        }
+      ]
+    },
+    {
+      "page": 128,
+      "key": "explainable_ai_assurance",
+      "title": "Explainable AI & Model Assurance Center",
+      "category": "AI Lab",
+      "visuals": [
+        {
+          "title": "Prediction calibration by subgroup",
+          "interpretation": "Compares predicted scores with observed outcomes and uncertainty.",
+          "method": "Sample-level calibration scatter",
+          "rows": 72
+        },
+        {
+          "title": "ROC curve",
+          "interpretation": "Shows sensitivity\u2013specificity performance over thresholds.",
+          "method": "Threshold sweep",
+          "rows": 21
+        },
+        {
+          "title": "Precision\u2013recall curve",
+          "interpretation": "Focuses on performance under class imbalance.",
+          "method": "Threshold sweep",
+          "rows": 59
+        },
+        {
+          "title": "Subgroup accuracy audit",
+          "interpretation": "Compares subgroup performance and highlights gaps from the best-performing group.",
+          "method": "Subgroup assurance summary",
+          "rows": 3
+        },
+        {
+          "title": "Uncertainty versus error",
+          "interpretation": "Checks whether uncertainty rises when predictions are wrong or inaccurate.",
+          "method": "Uncertainty calibration screen",
+          "rows": 72
+        }
+      ]
+    },
+    {
+      "page": 129,
+      "key": "multiomics_harmonization",
+      "title": "Multi-Omics Harmonization & Batch-Correction Studio",
+      "category": "Bioinformatics",
+      "visuals": [
+        {
+          "title": "PCA before and after harmonisation",
+          "interpretation": "Shows whether batch structure is reduced while samples remain distinguishable.",
+          "method": "Principal-component diagnostic",
+          "rows": 36
+        },
+        {
+          "title": "Batch distributions before and after correction",
+          "interpretation": "Compares batch location shifts while retaining raw values.",
+          "method": "Transparent location correction review",
+          "rows": 432
+        },
+        {
+          "title": "Raw versus harmonised values",
+          "interpretation": "Highlights features receiving large corrections.",
+          "method": "Before\u2013after value scatter",
+          "rows": 216
+        },
+        {
+          "title": "Batch-effect reduction by feature",
+          "interpretation": "Ranks features by the reduction in between-batch variability.",
+          "method": "Between-batch SD diagnostic",
+          "rows": 12
+        },
+        {
+          "title": "Harmonised feature heatmap",
+          "interpretation": "Shows remaining batch-level structure after correction.",
+          "method": "Mean harmonised value",
+          "rows": 24
+        }
+      ]
+    },
+    {
+      "page": 130,
+      "key": "glycomics_glycoproteomics",
+      "title": "Glycomics & Glycoproteomics Workbench",
+      "category": "Bioinformatics",
+      "visuals": [
+        {
+          "title": "Glycoform abundance and confidence",
+          "interpretation": "Balances abundance, annotation confidence and condition context.",
+          "method": "Glycoform evidence scatter",
+          "rows": 72
+        },
+        {
+          "title": "Glycan abundance heatmap",
+          "interpretation": "Compares glycan abundance across biological conditions.",
+          "method": "Condition-level mean abundance",
+          "rows": 10
+        },
+        {
+          "title": "Site-resolved glycosylation shifts",
+          "interpretation": "Ranks sites by condition-associated abundance change and confidence.",
+          "method": "Site-level differential screen",
+          "rows": 16
+        },
+        {
+          "title": "Annotation confidence by condition",
+          "interpretation": "Shows confidence distributions and potential condition-specific annotation bias.",
+          "method": "Confidence distribution",
+          "rows": 72
+        },
+        {
+          "title": "Top glycopeptide priorities",
+          "interpretation": "Ranks site-specific candidates for expert spectral review.",
+          "method": "Composite glycopeptide score",
+          "rows": 30
+        }
+      ]
+    },
+    {
+      "page": 131,
+      "key": "one_health_environmental",
+      "title": "One Health & Environmental Genomics Center",
+      "category": "Bioinformatics",
+      "visuals": [
+        {
+          "title": "Surveillance signal over time",
+          "interpretation": "Tracks pathogen abundance across locations and reporting periods.",
+          "method": "Weekly aggregated surveillance",
+          "rows": 66
+        },
+        {
+          "title": "Host\u2013pathogen surveillance matrix",
+          "interpretation": "Shows pathogen signals shared across human, animal and environmental hosts.",
+          "method": "Mean read-count heatmap",
+          "rows": 25
+        },
+        {
+          "title": "Outbreak signal screen",
+          "interpretation": "Flags unusually strong signals relative to recent local history.",
+          "method": "Rolling z-score surveillance",
+          "rows": 47
+        },
+        {
+          "title": "Cross-host pathogen diversity",
+          "interpretation": "Highlights pathogens detected across multiple host categories.",
+          "method": "Cross-host diversity summary",
+          "rows": 19
+        },
+        {
+          "title": "AMR burden by location",
+          "interpretation": "Compares antimicrobial-resistance signals across sites and host sources.",
+          "method": "Location-level AMR aggregation",
+          "rows": 19
+        }
+      ]
+    },
+    {
+      "page": 132,
+      "key": "synthetic_data_privacy",
+      "title": "Synthetic Data & Privacy Engineering Lab",
+      "category": "Governance",
+      "visuals": [
+        {
+          "title": "Privacy class size versus measurement",
+          "interpretation": "Shows records with small equivalence classes and potential disclosure risk.",
+          "method": "k-anonymity screening",
+          "rows": 72
+        },
+        {
+          "title": "Equivalence-class distribution",
+          "interpretation": "Displays the distribution of anonymity-set sizes.",
+          "method": "k-anonymity distribution",
+          "rows": 72
+        },
+        {
+          "title": "Privacy-risk trade-off",
+          "interpretation": "Compares diversity and distributional distance across equivalence classes.",
+          "method": "l-diversity and t-closeness screen",
+          "rows": 66
+        },
+        {
+          "title": "Synthetic-data utility by column",
+          "interpretation": "Highlights features with the largest source-versus-synthetic distribution shift.",
+          "method": "Kolmogorov\u2013Smirnov comparison",
+          "rows": 2
+        },
+        {
+          "title": "Synthetic feature correlation",
+          "interpretation": "Checks whether major numerical relationships remain visible after synthesis.",
+          "method": "Pearson correlation",
+          "rows": 9
+        }
+      ]
+    },
+    {
+      "page": 134,
+      "key": "population_gwas",
+      "title": "Population Genetics & GWAS Studio",
+      "category": "Bioinformatics",
+      "visuals": [
+        {
+          "title": "Genome-wide association overview",
+          "interpretation": "Shows association evidence across chromosomes with the conventional genome-wide threshold.",
+          "method": "Variant-level association screen",
+          "rows": 40
+        },
+        {
+          "title": "Association effect volcano",
+          "interpretation": "Combines effect magnitude, statistical evidence and variant QC.",
+          "method": "Association effect screen",
+          "rows": 40
+        },
+        {
+          "title": "Sample call rate and phenotype",
+          "interpretation": "Identifies low-call-rate samples and phenotype outliers.",
+          "method": "Sample-level QC",
+          "rows": 40
+        },
+        {
+          "title": "Minor-allele frequency distribution",
+          "interpretation": "Shows the frequency spectrum and variants failing QC.",
+          "method": "MAF distribution",
+          "rows": 40
+        },
+        {
+          "title": "Top association candidates",
+          "interpretation": "Ranks variants using effect, p-value and QC evidence.",
+          "method": "Composite association score",
+          "rows": 30
+        }
+      ]
+    },
+    {
+      "page": 135,
+      "key": "structural_variant_repeat",
+      "title": "Structural Variant & Repeat Expansion Lab",
+      "category": "Bioinformatics",
+      "visuals": [
+        {
+          "title": "Structural-variant landscape",
+          "interpretation": "Maps event size, genomic position, type and support.",
+          "method": "SV event scatter",
+          "rows": 90
+        },
+        {
+          "title": "SV burden by type",
+          "interpretation": "Compares event size and confidence across structural-variant classes.",
+          "method": "Type-level mean size",
+          "rows": 10
+        },
+        {
+          "title": "Gene-impact heatmap",
+          "interpretation": "Highlights genes repeatedly affected by high-priority SV classes.",
+          "method": "Mean priority heatmap",
+          "rows": 20
+        },
+        {
+          "title": "Caller evidence and quality",
+          "interpretation": "Identifies poorly supported or low-quality calls requiring review.",
+          "method": "Normalised evidence QC",
+          "rows": 90
+        },
+        {
+          "title": "Top structural-variant candidates",
+          "interpretation": "Ranks variants by support, quality, size and gene impact.",
+          "method": "Composite SV priority",
+          "rows": 30
+        }
+      ]
+    },
+    {
+      "page": 136,
+      "key": "longitudinal_multiomics",
+      "title": "Longitudinal Multi-Omics & Time-Series Studio",
+      "category": "Bioinformatics",
+      "visuals": [
+        {
+          "title": "Mean multi-omics trajectories",
+          "interpretation": "Shows average temporal patterns across omics layers and groups.",
+          "method": "Time-point mean trajectory",
+          "rows": 30
+        },
+        {
+          "title": "Subject-level trajectory slopes",
+          "interpretation": "Compares individual baseline values and longitudinal change.",
+          "method": "Per-subject linear slope",
+          "rows": 480
+        },
+        {
+          "title": "Temporal effect landscape",
+          "interpretation": "Highlights features with strong between-group slope differences.",
+          "method": "Group trajectory comparison",
+          "rows": 20
+        },
+        {
+          "title": "Subject-by-feature slope heatmap",
+          "interpretation": "Displays heterogeneous temporal responses across subjects.",
+          "method": "Slope heatmap",
+          "rows": 480
+        },
+        {
+          "title": "Top longitudinal features",
+          "interpretation": "Ranks features using effect size, slope difference and statistical evidence.",
+          "method": "Composite temporal priority",
+          "rows": 20
+        }
+      ]
+    },
+    {
+      "page": 137,
+      "key": "rna_isoform_splicing",
+      "title": "RNA Isoform & Alternative Splicing Studio",
+      "category": "Bioinformatics",
+      "visuals": [
+        {
+          "title": "Differential isoform-usage volcano",
+          "interpretation": "Combines usage shift, FDR and junction support.",
+          "method": "Transcript-usage differential screen",
+          "rows": 36
+        },
+        {
+          "title": "Isoform abundance and junction support",
+          "interpretation": "Separates well-supported abundant isoforms from weak candidates.",
+          "method": "Isoform evidence scatter",
+          "rows": 36
+        },
+        {
+          "title": "Transcript abundance heatmap",
+          "interpretation": "Compares transcript usage across biological groups.",
+          "method": "Group-level mean abundance",
+          "rows": 70
+        },
+        {
+          "title": "Isoform complexity by gene",
+          "interpretation": "Shows genes with the largest number of represented transcripts.",
+          "method": "Transcript-count aggregation",
+          "rows": 12
+        },
+        {
+          "title": "Top isoform-switch candidates",
+          "interpretation": "Ranks transcripts by differential usage and junction evidence.",
+          "method": "Composite isoform priority",
+          "rows": 30
+        }
+      ]
+    },
+    {
+      "page": 138,
+      "key": "epitranscriptomics",
+      "title": "RNA Modification & Epitranscriptomics Lab",
+      "category": "Bioinformatics",
+      "visuals": [
+        {
+          "title": "Differential modification volcano",
+          "interpretation": "Combines modification change, FDR and coverage QC.",
+          "method": "Site-level differential screen",
+          "rows": 30
+        },
+        {
+          "title": "Coverage and replicate consistency",
+          "interpretation": "Highlights sites with adequate depth and low replicate variability.",
+          "method": "Site QC scatter",
+          "rows": 30
+        },
+        {
+          "title": "Modification-fraction heatmap",
+          "interpretation": "Compares site-level modification fractions across conditions.",
+          "method": "Condition-level mean fraction",
+          "rows": 60
+        },
+        {
+          "title": "Modification burden by transcript",
+          "interpretation": "Shows transcripts carrying many or highly modified sites.",
+          "method": "Transcript-level aggregation",
+          "rows": 25
+        },
+        {
+          "title": "Top modification-site priorities",
+          "interpretation": "Ranks sites using change, statistical support, depth and consistency.",
+          "method": "Composite site priority",
+          "rows": 30
+        }
+      ]
+    },
+    {
+      "page": 139,
+      "key": "strain_microbiome",
+      "title": "Strain-Resolved Microbiome & Functional Profiling Studio",
+      "category": "Bioinformatics",
+      "visuals": [
+        {
+          "title": "Strain abundance heatmap",
+          "interpretation": "Shows strain-level abundance patterns across samples.",
+          "method": "Sample-by-strain abundance",
+          "rows": 480
+        },
+        {
+          "title": "Alpha diversity by group",
+          "interpretation": "Compares within-sample strain diversity across groups.",
+          "method": "Shannon diversity distribution",
+          "rows": 24
+        },
+        {
+          "title": "Differential microbial features",
+          "interpretation": "Highlights group-associated strains, pathways and resistance features.",
+          "method": "Feature-level differential screen",
+          "rows": 4
+        },
+        {
+          "title": "Taxa and strain richness",
+          "interpretation": "Shows sample-level richness and diversity patterns.",
+          "method": "Sample diversity scatter",
+          "rows": 24
+        },
+        {
+          "title": "Top microbiome features",
+          "interpretation": "Ranks prevalent, differential and statistically supported features.",
+          "method": "Composite microbiome priority",
+          "rows": 4
+        }
+      ]
+    },
+    {
+      "page": 140,
+      "key": "cell_atlas_mapping",
+      "title": "Cell Atlas Mapping & Reference Annotation Studio",
+      "category": "Bioinformatics",
+      "visuals": [
+        {
+          "title": "Reference mapping confidence",
+          "interpretation": "Shows agreement between similarity and marker evidence for each cell.",
+          "method": "Cell-level annotation confidence",
+          "rows": 90
+        },
+        {
+          "title": "Confidence by transferred label",
+          "interpretation": "Compares annotation confidence and novelty flags across labels.",
+          "method": "Label-level confidence distribution",
+          "rows": 90
+        },
+        {
+          "title": "Cluster-to-reference mapping matrix",
+          "interpretation": "Shows the dominant reference labels assigned to query clusters.",
+          "method": "Mean mapping confidence",
+          "rows": 40
+        },
+        {
+          "title": "Novel-state burden by label",
+          "interpretation": "Highlights labels associated with many low-confidence or novel cells.",
+          "method": "Label-level novelty summary",
+          "rows": 5
+        },
+        {
+          "title": "Batch-shift diagnostic",
+          "interpretation": "Shows whether mapping confidence differs systematically across batches.",
+          "method": "Batch-level shift aggregation",
+          "rows": 6
+        }
+      ]
+    },
+    {
+      "page": 141,
+      "key": "phenotypic_screening",
+      "title": "Phenotypic Screening & High-Content Analysis Lab",
+      "category": "Lab Analytics",
+      "visuals": [
+        {
+          "title": "Dose\u2013response profiles",
+          "interpretation": "Shows normalised response across dose for each compound.",
+          "method": "Plate-normalised dose response",
+          "rows": 288
+        },
+        {
+          "title": "Hit priority ranking",
+          "interpretation": "Ranks compounds by potency, reproducibility and dose-response consistency.",
+          "method": "Composite hit score",
+          "rows": 14
+        },
+        {
+          "title": "Reproducibility versus response area",
+          "interpretation": "Separates strong reproducible hits from noisy responses.",
+          "method": "Compound-level QC scatter",
+          "rows": 14
+        },
+        {
+          "title": "Plate Z-prime quality",
+          "interpretation": "Compares assay separation and identifies weak plates.",
+          "method": "Control-based Z-prime",
+          "rows": 3
+        },
+        {
+          "title": "Plate-response heatmap",
+          "interpretation": "Shows spatial response patterns and potential edge effects.",
+          "method": "Well-level normalised response",
+          "rows": 90
+        }
+      ]
+    },
+    {
+      "page": 142,
+      "key": "organoid_3d",
+      "title": "Organoid & 3D Cell Model Analytics",
+      "category": "Lab Analytics",
+      "visuals": [
+        {
+          "title": "Organoid growth trajectories",
+          "interpretation": "Compares mean organoid area over time across conditions.",
+          "method": "Condition-level growth curve",
+          "rows": 8
+        },
+        {
+          "title": "Growth and viability landscape",
+          "interpretation": "Balances expansion rate, viability and final size.",
+          "method": "Organoid-level phenotype scatter",
+          "rows": 96
+        },
+        {
+          "title": "Morphology by condition",
+          "interpretation": "Shows shape consistency and QC flags across treatment conditions.",
+          "method": "Circularity distribution",
+          "rows": 96
+        },
+        {
+          "title": "Condition-level organoid performance",
+          "interpretation": "Compares growth and viability across experimental conditions.",
+          "method": "Condition summary",
+          "rows": 2
+        },
+        {
+          "title": "Top organoid responses",
+          "interpretation": "Ranks organoids by growth, viability and morphology quality.",
+          "method": "Composite organoid priority",
+          "rows": 30
+        }
+      ]
+    },
+    {
+      "page": 143,
+      "key": "protein_language_design",
+      "title": "Protein Language Model & Generative Design Lab",
+      "category": "Discovery",
+      "visuals": [
+        {
+          "title": "Protein design candidate space",
+          "interpretation": "Shows activity, stability, sequence quality and design constraints.",
+          "method": "Sequence-level design scatter",
+          "rows": 22
+        },
+        {
+          "title": "Top sequence profiles",
+          "interpretation": "Compares normalised design dimensions for leading sequences.",
+          "method": "Normalised sequence radar",
+          "rows": 30
+        },
+        {
+          "title": "Sequence complexity and liabilities",
+          "interpretation": "Flags low-complexity or motif-heavy candidates.",
+          "method": "Sequence-quality screen",
+          "rows": 22
+        },
+        {
+          "title": "Protein candidate ranking",
+          "interpretation": "Ranks sequences by activity, stability and quality proxies.",
+          "method": "Composite sequence priority",
+          "rows": 22
+        },
+        {
+          "title": "Mutation proposal mix",
+          "interpretation": "Shows the types and parent coverage of generated mutation proposals.",
+          "method": "Proposal-type aggregation",
+          "rows": 20
+        }
+      ]
+    },
+    {
+      "page": 144,
+      "key": "enzyme_pathway_design",
+      "title": "Enzyme Engineering & Metabolic Pathway Design Studio",
+      "category": "Discovery",
+      "visuals": [
+        {
+          "title": "Enzyme activity\u2013stability landscape",
+          "interpretation": "Shows enzyme performance and pathway flux across hosts.",
+          "method": "Variant-level enzyme scatter",
+          "rows": 90
+        },
+        {
+          "title": "Top enzyme variant profiles",
+          "interpretation": "Compares normalised catalytic and pathway dimensions.",
+          "method": "Normalised variant radar",
+          "rows": 20
+        },
+        {
+          "title": "Pathway bottleneck ranking",
+          "interpretation": "Highlights reactions with low flux or weak activity support.",
+          "method": "Reaction bottleneck score",
+          "rows": 18
+        },
+        {
+          "title": "Reaction flux by host",
+          "interpretation": "Compares pathway throughput across host organisms.",
+          "method": "Mean flux heatmap",
+          "rows": 54
+        },
+        {
+          "title": "Cofactor and host performance",
+          "interpretation": "Shows how cofactor usage and host context influence candidate quality.",
+          "method": "Cofactor-level mean priority",
+          "rows": 12
+        }
+      ]
+    },
+    {
+      "page": 145,
+      "key": "host_pathogen_interaction",
+      "title": "Host\u2013Pathogen Interaction Studio",
+      "category": "Discovery",
+      "visuals": [
+        {
+          "title": "Host\u2013pathogen target landscape",
+          "interpretation": "Prioritises essential, druggable and well-supported interactions.",
+          "method": "Interaction-level evidence scatter",
+          "rows": 90
+        },
+        {
+          "title": "Host\u2013pathogen interaction network",
+          "interpretation": "Displays the dominant cross-species protein interactions.",
+          "method": "Circular bipartite network",
+          "rows": 80
+        },
+        {
+          "title": "Pathogen target ranking",
+          "interpretation": "Ranks pathogen proteins by host-partner support and essentiality.",
+          "method": "Target-level aggregation",
+          "rows": 30
+        },
+        {
+          "title": "Interaction-priority heatmap",
+          "interpretation": "Shows concentrated interaction evidence across host and pathogen proteins.",
+          "method": "Mean priority matrix",
+          "rows": 1050
+        },
+        {
+          "title": "Host effect versus pathogen essentiality",
+          "interpretation": "Highlights interactions combining strong host phenotype and pathogen dependence.",
+          "method": "Biological relevance screen",
+          "rows": 90
+        }
+      ]
+    },
+    {
+      "page": 146,
+      "key": "virology_evolution",
+      "title": "Virology & Viral Evolution Workbench",
+      "category": "Bioinformatics",
+      "visuals": [
+        {
+          "title": "Viral variant-frequency landscape",
+          "interpretation": "Maps within-sample variant frequencies across the genome.",
+          "method": "Position-frequency scatter",
+          "rows": 800
+        },
+        {
+          "title": "Sample-by-gene variant heatmap",
+          "interpretation": "Shows gene-level variant burden across samples.",
+          "method": "Mean frequency heatmap",
+          "rows": 96
+        },
+        {
+          "title": "Within-sample diversity",
+          "interpretation": "Highlights samples with heterogeneous viral populations.",
+          "method": "Frequency entropy summary",
+          "rows": 16
+        },
+        {
+          "title": "Minor variants by gene",
+          "interpretation": "Counts low-frequency variation and lineage-marker status across genes.",
+          "method": "Gene-level variant count",
+          "rows": 11
+        },
+        {
+          "title": "Top viral variants",
+          "interpretation": "Ranks variants by frequency, minor/consensus status and lineage relevance.",
+          "method": "Composite variant priority",
+          "rows": 30
+        }
+      ]
+    },
+    {
+      "page": 147,
+      "key": "rare_variant_family",
+      "title": "Rare Variant Burden & Family Genetics Lab",
+      "category": "Clinical Research",
+      "visuals": [
+        {
+          "title": "Rarity\u2013phenotype prioritisation",
+          "interpretation": "Shows how rarity, impact, phenotype match and inheritance combine.",
+          "method": "Family variant prioritisation",
+          "rows": 300
+        },
+        {
+          "title": "Candidate priority waterfall",
+          "interpretation": "Orders genes from lower to higher family-specific priority.",
+          "method": "Ordered priority display",
+          "rows": 25
+        },
+        {
+          "title": "Gene-by-inheritance evidence",
+          "interpretation": "Shows which genes are supported under different inheritance models.",
+          "method": "Mean priority heatmap",
+          "rows": 20
+        },
+        {
+          "title": "Family gene-burden ranking",
+          "interpretation": "Ranks genes by maximum priority and inheritance consistency across families.",
+          "method": "Gene-level aggregation",
+          "rows": 5
+        },
+        {
+          "title": "Manual review burden",
+          "interpretation": "Counts review-required variants by predicted impact and inheritance consistency.",
+          "method": "Review-queue summary",
+          "rows": 6
+        }
+      ]
+    }
+  ],
+  "legacy_pages": {
+    "2_Sequence_Comparison.py": "Alignment identity, gap and event visual suite",
+    "4_DTI_Feature_Builder.py": "Feature-distribution and quality explorer",
+    "6_DTI_Predictor.py": "Prediction confidence, applicability and molecular-property visuals",
+    "7_Model_Evaluation.py": "Metric, error and subgroup explorer",
+    "16_Batch_Sequence_Analysis.py": "Batch length, composition and outlier explorer",
+    "58_Primer_CRISPR_Codon_Studio.py": "Candidate, score and sequence-design explorer",
+    "60_Protein_Annotation_Proteomics.py": "Protein annotation and feature explorer",
+    "63_Pathway_Network_Analysis.py": "Pathway and network result explorer",
+    "66_Omics_Integration_Hub.py": "Cross-omics integration explorer",
+    "68_Alignment_Phylogeny.py": "Alignment and phylogenetic result explorer",
+    "94_Pangenome_Variation_Graph_Studio.py": "Pangenome variation explorer",
+    "99_Synthetic_Biology_Circuit_Designer.py": "Circuit design and simulation explorer",
+    "100_Rare_Disease_Genome_Interpretation.py": "Variant and evidence explorer"
+  },
+  "runtime": {
+    "scientific_passed": 35,
+    "scientific_total": 35,
+    "legacy_passed": 13,
+    "legacy_total": 13
+  },
+  "selected_regression": "........................................................................ [ 96%]\n...                                                                      [100%]\n75 passed in 10.74s",
+  "self_test": {
+    "status": "PASS",
+    "passed": 7,
+    "failed": 0
+  },
+  "scientific_boundary": "Visuals are exploratory scientific aids and do not replace validated specialist pipelines, clinical review or regulated evidence."
+}

@@ -1,0 +1,46 @@
+{
+  "schema": "biointel.education-universe.database-entity-registry.v1",
+  "migration": "education_universe_v1",
+  "database": "UserData/education/education.sqlite3",
+  "shared_entities_reused": [
+    "institutions", "memberships", "academic_units", "subjects", "enrollments",
+    "teacher_assignments", "guardian_links", "courses", "lectures", "certificates",
+    "education_audit_events"
+  ],
+  "new_entities": [
+    {
+      "table": "education_universe_records",
+      "purpose": "Tenant-scoped records for all twenty workflows",
+      "tenant_key": "institution_id",
+      "owner_key": "owner_id",
+      "optimistic_version": "version",
+      "soft_delete": "deleted_at",
+      "foreign_keys": ["institution_id -> institutions.id"],
+      "indexes": ["institution_id,module_key,state,updated_at", "institution_id,owner_id,module_key"]
+    },
+    {
+      "table": "education_universe_events",
+      "purpose": "Immutable workflow change history",
+      "tenant_key": "institution_id",
+      "actor_key": "actor_id",
+      "foreign_keys": ["institution_id -> institutions.id", "record_id -> education_universe_records.id"],
+      "indexes": ["record_id,created_at"]
+    },
+    {
+      "table": "education_universe_sync_operations",
+      "purpose": "Idempotent offline queue and explicit conflict resolution",
+      "tenant_key": "institution_id",
+      "actor_key": "actor_id",
+      "foreign_keys": ["institution_id -> institutions.id", "record_id -> education_universe_records.id"],
+      "unique_constraints": ["institution_id,actor_id,client_operation_id"],
+      "indexes": ["institution_id,actor_id,state,created_at"]
+    }
+  ],
+  "rollback": {
+    "method": "EducationUniverse.rollback()",
+    "order": ["education_universe_sync_operations", "education_universe_events", "education_universe_records"],
+    "automatic": false,
+    "warning": "Rollback deletes Education Universe records and is never invoked by install or startup."
+  },
+  "backup_compatibility": "All new entities live in the existing SQLite database and are included by the existing database backup boundary."
+}

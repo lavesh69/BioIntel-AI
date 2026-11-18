@@ -1,0 +1,16 @@
+{
+  "release": "12.4.0",
+  "hotfix": "canvas-rerun-consistency",
+  "checks": {
+    "version_preserved": true,
+    "rerun_css_guard_removed": true,
+    "stable_style_id": true,
+    "shell_display_hardened": true,
+    "grid_display_hardened": true,
+    "lane_display_hardened": true,
+    "segment_display_hardened": true,
+    "all_15_canvases_preserved": true
+  },
+  "passed": 8,
+  "total": 8
+}

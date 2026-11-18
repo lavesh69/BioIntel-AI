@@ -1,0 +1,46 @@
+{
+  "schema": "biointel.step127-final-validation.v1",
+  "version": "12.8.0",
+  "module_coverage": {
+    "total": 33,
+    "bioinformatics": 17,
+    "discovery": 9,
+    "lab_analytics": 7,
+    "full_page_panels": 31,
+    "protected_sidebar_integrations": 2
+  },
+  "advanced_tools_registered": 86,
+  "step127_verifier": {
+    "passed": 14,
+    "failed": 0
+  },
+  "completed_non_overlapping_pytest": {
+    "passed": 375,
+    "failed": 0
+  },
+  "representative_streamlit_runtime": {
+    "passed": 7,
+    "failed": 0,
+    "runtime_exceptions": 0
+  },
+  "python_compilation": {
+    "passed": 899,
+    "failed": 0
+  },
+  "engineering_gates": {
+    "passed": 4,
+    "failed": 0
+  },
+  "sqlite_integrity": {
+    "healthy": 36,
+    "failed": 0,
+    "rows_checked": 108425,
+    "foreign_key_issues": 0
+  },
+  "locked_modules": {
+    "byte_identical": 5,
+    "total": 5
+  },
+  "functional_files_removed": 0,
+  "full_suite_boundary": "The monolithic repository-wide test run exceeded the execution window and is not claimed as complete. Focused failures discovered during the partial run were fixed and rerun in completed suites."
+}

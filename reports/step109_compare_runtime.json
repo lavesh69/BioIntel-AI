@@ -1,0 +1,22 @@
+{
+  "schema": "biointel.step109.compare-runtime.v1",
+  "version": "11.0.0",
+  "generated_at_utc": "2026-07-10T17:08:37+00:00",
+  "checks": [
+    {
+      "page": "pages/90_Clinical_Pharma_Validation_Center.py",
+      "mode": "decision comparison",
+      "exceptions": [],
+      "plotly_charts": 2,
+      "passed": true
+    },
+    {
+      "page": "pages/112_Epigenomics_and_Chromatin_Regulation_Studio.py",
+      "mode": "scientific comparison",
+      "exceptions": [],
+      "plotly_charts": 2,
+      "passed": true
+    }
+  ],
+  "passed": true
+}

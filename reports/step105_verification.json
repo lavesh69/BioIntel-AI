@@ -1,0 +1,19 @@
+{
+  "schema": "biointel.step105.verification.v1",
+  "generated_at_utc": "2026-07-10T13:35:01.957629+00:00",
+  "version": "10.5.0",
+  "command": [
+    "/opt/pyvenv/bin/python",
+    "-m",
+    "pytest",
+    "-q",
+    "tests/test_step105_reliability_optimization.py",
+    "tests/test_step104_optimized_expansion.py",
+    "tests/test_step103_advanced_scientific_depth.py",
+    "tests/test_step102_scientific_expansion.py"
+  ],
+  "return_code": 0,
+  "passed": true,
+  "stdout": "........................                                                 [100%]\n24 passed in 4.82s\n",
+  "stderr": ""
+}

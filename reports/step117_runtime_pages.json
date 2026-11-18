@@ -1,0 +1,1722 @@
+{
+  "schema": "biointel.step117.runtime-pages.v1",
+  "version": "11.7.0",
+  "generated_at_utc": "2026-07-11T06:48:31+00:00",
+  "total": 173,
+  "passed": 173,
+  "failed": 0,
+  "ui_warnings": 211,
+  "captured_exceptions": 0,
+  "captured_ui_errors": 0,
+  "pages": [
+    {
+      "path": "app.py",
+      "status": "PASS",
+      "seconds": 1.392,
+      "exceptions": [],
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "path": "pages/0_Quick_Start.py",
+      "status": "PASS",
+      "seconds": 0.039,
+      "exceptions": [],
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "path": "pages/1_Sequence_Analyzer.py",
+      "status": "PASS",
+      "seconds": 0.706,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "Real public/reference data improve authenticity and reproducibility, but do not by themselves constitute clinical validation, regulatory approval or independent wet-lab confirmation."
+      ]
+    },
+    {
+      "path": "pages/2_Sequence_Comparison.py",
+      "status": "PASS",
+      "seconds": 0.073,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "Real public/reference data improve authenticity and reproducibility, but do not by themselves constitute clinical validation, regulatory approval or independent wet-lab confirmation."
+      ]
+    },
+    {
+      "path": "pages/3_Drug_SMILES_Analyzer.py",
+      "status": "PASS",
+      "seconds": 0.363,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "Property rules and catalog filters do not establish safety, efficacy, approval or actual bioactivity.",
+        "Real public/reference data improve authenticity and reproducibility, but do not by themselves constitute clinical validation, regulatory approval or independent wet-lab confirmation."
+      ]
+    },
+    {
+      "path": "pages/4_DTI_Feature_Builder.py",
+      "status": "PASS",
+      "seconds": 1.56,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "Real public/reference data improve authenticity and reproducibility, but do not by themselves constitute clinical validation, regulatory approval or independent wet-lab confirmation."
+      ]
+    },
+    {
+      "path": "pages/5_Model_Training.py",
+      "status": "PASS",
+      "seconds": 0.313,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "Bundled packs are deterministic synthetic benchmarks for software testing and training practice. They are not experimental evidence.",
+        "Configure the run and press **Train and evaluate model**. Synthetic metrics are demonstrations only.",
+        "Real public/reference data improve authenticity and reproducibility, but do not by themselves constitute clinical validation, regulatory approval or independent wet-lab confirmation."
+      ]
+    },
+    {
+      "path": "pages/6_DTI_Predictor.py",
+      "status": "PASS",
+      "seconds": 0.244,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "Real public/reference data improve authenticity and reproducibility, but do not by themselves constitute clinical validation, regulatory approval or independent wet-lab confirmation."
+      ]
+    },
+    {
+      "path": "pages/7_Model_Evaluation.py",
+      "status": "PASS",
+      "seconds": 3.474,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "Real public/reference data improve authenticity and reproducibility, but do not by themselves constitute clinical validation, regulatory approval or independent wet-lab confirmation."
+      ]
+    },
+    {
+      "path": "pages/8_Data_Quality_Activity.py",
+      "status": "PASS",
+      "seconds": 0.093,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "Bundled packs are synthetic software benchmarks, not experimental evidence."
+      ]
+    },
+    {
+      "path": "pages/9_Project_Status.py",
+      "status": "PASS",
+      "seconds": 0.759,
+      "exceptions": [],
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "path": "pages/10_External_Databases.py",
+      "status": "PASS",
+      "seconds": 0.081,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "Real public/reference data improve authenticity and reproducibility, but do not by themselves constitute clinical validation, regulatory approval or independent wet-lab confirmation."
+      ]
+    },
+    {
+      "path": "pages/11_Experiment_Registry.py",
+      "status": "PASS",
+      "seconds": 0.099,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "This experiment uses synthetic/reference training data. Registry completeness does not make it scientifically validated.",
+        "This removes only the registry row. It does not delete the model file."
+      ]
+    },
+    {
+      "path": "pages/12_API_Deployment.py",
+      "status": "PASS",
+      "seconds": 0.044,
+      "exceptions": [],
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "path": "pages/13_ChEMBL_Dataset_Builder.py",
+      "status": "PASS",
+      "seconds": 0.04,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "Real public/reference data improve authenticity and reproducibility, but do not by themselves constitute clinical validation, regulatory approval or independent wet-lab confirmation."
+      ]
+    },
+    {
+      "path": "pages/14_External_Validation_Drift.py",
+      "status": "PASS",
+      "seconds": 0.083,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "Real public/reference data improve authenticity and reproducibility, but do not by themselves constitute clinical validation, regulatory approval or independent wet-lab confirmation.",
+        "Readiness controls are complete, but a 10/10 completed prospective-validation score requires genuine signed outcomes from independent laboratories."
+      ]
+    },
+    {
+      "path": "pages/15_Audit_Release.py",
+      "status": "PASS",
+      "seconds": 0.037,
+      "exceptions": [],
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "path": "pages/16_Batch_Sequence_Analysis.py",
+      "status": "PASS",
+      "seconds": 0.339,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "Real public/reference data improve authenticity and reproducibility, but do not by themselves constitute clinical validation, regulatory approval or independent wet-lab confirmation."
+      ]
+    },
+    {
+      "path": "pages/17_Local_Data_Manager.py",
+      "status": "PASS",
+      "seconds": 0.071,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "Deletion cannot be undone. Bundled demo model files remain protected."
+      ]
+    },
+    {
+      "path": "pages/18_Workspace_Backup_Restore.py",
+      "status": "PASS",
+      "seconds": 0.16,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "Workspace backups can contain model files and local reports. Keep them private and restore only backups you created or trust."
+      ]
+    },
+    {
+      "path": "pages/19_System_Diagnostics.py",
+      "status": "PASS",
+      "seconds": 0.797,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "One or more Windows-targeted checks are unavailable in this source/build environment. Review the diagnostic table; installed Windows runs can use REPAIR_BIOINTEL_WINDOWS.bat."
+      ]
+    },
+    {
+      "path": "pages/20_Workflow_Dashboard.py",
+      "status": "PASS",
+      "seconds": 2.232,
+      "exceptions": [],
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "path": "pages/21_Dataset_Registry_Lineage.py",
+      "status": "PASS",
+      "seconds": 0.14,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "This removes metadata only. It does not delete any CSV.",
+        "Real public/reference data improve authenticity and reproducibility, but do not by themselves constitute clinical validation, regulatory approval or independent wet-lab confirmation."
+      ]
+    },
+    {
+      "path": "pages/22_Model_Lifecycle.py",
+      "status": "PASS",
+      "seconds": 2.118,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "These records describe synthetic/reference benchmark models; they are not real experimental validation runs."
+      ]
+    },
+    {
+      "path": "pages/23_Batch_Prediction_Jobs.py",
+      "status": "PASS",
+      "seconds": 0.066,
+      "exceptions": [],
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "path": "pages/24_Appearance_Studio.py",
+      "status": "PASS",
+      "seconds": 0.077,
+      "exceptions": [],
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "path": "pages/25_Command_Center.py",
+      "status": "PASS",
+      "seconds": 1.04,
+      "exceptions": [],
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "path": "pages/26_Research_Report_Studio.py",
+      "status": "PASS",
+      "seconds": 0.052,
+      "exceptions": [],
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "path": "pages/27_Executive_Overview.py",
+      "status": "PASS",
+      "seconds": 0.093,
+      "exceptions": [],
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "path": "pages/28_Project_Portfolio.py",
+      "status": "PASS",
+      "seconds": 0.087,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "This removes local project metadata and project events. Datasets and model files are not deleted."
+      ]
+    },
+    {
+      "path": "pages/29_Activity_Risk_Center.py",
+      "status": "PASS",
+      "seconds": 0.174,
+      "exceptions": [],
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "path": "pages/30_Governance_Hub.py",
+      "status": "PASS",
+      "seconds": 0.096,
+      "exceptions": [],
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "path": "pages/31_Evidence_Package_Studio.py",
+      "status": "PASS",
+      "seconds": 0.14,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "Serialized model files should be shared only with trusted recipients. Recipients must load them in a trusted local environment.",
+        "Real public/reference data improve authenticity and reproducibility, but do not by themselves constitute clinical validation, regulatory approval or independent wet-lab confirmation."
+      ]
+    },
+    {
+      "path": "pages/32_Release_Readiness_Lineage.py",
+      "status": "PASS",
+      "seconds": 0.066,
+      "exceptions": [],
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "path": "pages/33_Data_Model_Library.py",
+      "status": "PASS",
+      "seconds": 2.089,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "Pack-v2 models are trained on deterministic synthetic data. Their strong software-benchmark metrics must not be interpreted as biological or clinical performance."
+      ]
+    },
+    {
+      "path": "pages/34_ML_AutoLab.py",
+      "status": "PASS",
+      "seconds": 2.092,
+      "exceptions": [],
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "path": "pages/35_Double_Data_ML.py",
+      "status": "PASS",
+      "seconds": 0.081,
+      "exceptions": [],
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "path": "pages/36_Data_Coverage_Center.py",
+      "status": "PASS",
+      "seconds": 0.077,
+      "exceptions": [],
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "path": "pages/37_5X_Data_ML.py",
+      "status": "PASS",
+      "seconds": 0.104,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "5X data and pack-v5 models are deterministic synthetic software benchmarks. Strong held-out metrics do not establish biological or clinical validity."
+      ]
+    },
+    {
+      "path": "pages/38_Data_Intelligence_Hub.py",
+      "status": "PASS",
+      "seconds": 0.892,
+      "exceptions": [],
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "path": "pages/39_Knowledge_Warehouse.py",
+      "status": "PASS",
+      "seconds": 0.216,
+      "exceptions": [],
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "path": "pages/40_Analytics_Observability.py",
+      "status": "PASS",
+      "seconds": 0.167,
+      "exceptions": [],
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "path": "pages/41_Research_Assets.py",
+      "status": "PASS",
+      "seconds": 0.088,
+      "exceptions": [],
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "path": "pages/42_Internet_Research_Hub.py",
+      "status": "PASS",
+      "seconds": 0.067,
+      "exceptions": [],
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "path": "pages/43_Scientific_Data_Curation.py",
+      "status": "PASS",
+      "seconds": 0.04,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "Loaded prepopulated demonstration/reference rows. These values are for learning the curation workflow and are not experimental evidence.",
+        "Real public/reference data improve authenticity and reproducibility, but do not by themselves constitute clinical validation, regulatory approval or independent wet-lab confirmation."
+      ]
+    },
+    {
+      "path": "pages/44_Performance_Job_Center.py",
+      "status": "PASS",
+      "seconds": 1.746,
+      "exceptions": [],
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "path": "pages/45_Scientific_Release_Gate.py",
+      "status": "PASS",
+      "seconds": 4.58,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "Real public/reference data improve authenticity and reproducibility, but do not by themselves constitute clinical validation, regulatory approval or independent wet-lab confirmation.",
+        "Readiness controls are complete, but a 10/10 completed prospective-validation score requires genuine signed outcomes from independent laboratories."
+      ]
+    },
+    {
+      "path": "pages/46_Real_Evidence_Studio.py",
+      "status": "PASS",
+      "seconds": 0.104,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "Live intake requires internet and respects official ChEMBL/UniProt service availability. Imported rows remain review-pending.",
+        "Showing the preloaded demonstration manifest. It is not real experimental evidence.",
+        "Real public/reference data improve authenticity and reproducibility, but do not by themselves constitute clinical validation, regulatory approval or independent wet-lab confirmation.",
+        "Readiness controls are complete, but a 10/10 completed prospective-validation score requires genuine signed outcomes from independent laboratories."
+      ]
+    },
+    {
+      "path": "pages/47_Benchmark_Leakage_Lab.py",
+      "status": "PASS",
+      "seconds": 0.113,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "Preloaded data demonstrate the audit only; they are not a scientific benchmark.",
+        "Real public/reference data improve authenticity and reproducibility, but do not by themselves constitute clinical validation, regulatory approval or independent wet-lab confirmation."
+      ]
+    },
+    {
+      "path": "pages/48_Evidence_Review_Queue.py",
+      "status": "PASS",
+      "seconds": 0.108,
+      "exceptions": [],
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "path": "pages/49_Document_Intelligence_Center.py",
+      "status": "PASS",
+      "seconds": 0.075,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "Extracted text and tables require source-page review before scientific use."
+      ]
+    },
+    {
+      "path": "pages/50_Document_Extraction_History.py",
+      "status": "PASS",
+      "seconds": 0.112,
+      "exceptions": [],
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "path": "pages/51_OCR_Layout_Review.py",
+      "status": "PASS",
+      "seconds": 0.046,
+      "exceptions": [],
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "path": "pages/52_Batch_Document_Processor.py",
+      "status": "PASS",
+      "seconds": 0.039,
+      "exceptions": [],
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "path": "pages/53_Document_Knowledge_Search.py",
+      "status": "PASS",
+      "seconds": 0.043,
+      "exceptions": [],
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "path": "pages/54_Document_Evidence_Bridge.py",
+      "status": "PASS",
+      "seconds": 0.047,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "Evidence import requires scientific columns and all imported rows remain review-pending."
+      ]
+    },
+    {
+      "path": "pages/55_Demo_Data_Hub.py",
+      "status": "PASS",
+      "seconds": 0.184,
+      "exceptions": [],
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "path": "pages/56_FASTQ_Genomics_QC.py",
+      "status": "PASS",
+      "seconds": 2.378,
+      "exceptions": [],
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "path": "pages/57_Variant_Annotation_Workbench.py",
+      "status": "PASS",
+      "seconds": 1.173,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "Real public/reference data improve authenticity and reproducibility, but do not by themselves constitute clinical validation, regulatory approval or independent wet-lab confirmation."
+      ]
+    },
+    {
+      "path": "pages/58_Primer_CRISPR_Codon_Studio.py",
+      "status": "PASS",
+      "seconds": 0.056,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "Real public/reference data improve authenticity and reproducibility, but do not by themselves constitute clinical validation, regulatory approval or independent wet-lab confirmation."
+      ]
+    },
+    {
+      "path": "pages/59_Transcriptomics_Expression_Lab.py",
+      "status": "PASS",
+      "seconds": 0.07,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "Real public/reference data improve authenticity and reproducibility, but do not by themselves constitute clinical validation, regulatory approval or independent wet-lab confirmation."
+      ]
+    },
+    {
+      "path": "pages/60_Protein_Annotation_Proteomics.py",
+      "status": "PASS",
+      "seconds": 0.326,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "Real public/reference data improve authenticity and reproducibility, but do not by themselves constitute clinical validation, regulatory approval or independent wet-lab confirmation."
+      ]
+    },
+    {
+      "path": "pages/61_Structural_Bioinformatics.py",
+      "status": "PASS",
+      "seconds": 0.566,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "Structural scores and visual contacts are hypotheses until experimentally validated.",
+        "Real public/reference data improve authenticity and reproducibility, but do not by themselves constitute clinical validation, regulatory approval or independent wet-lab confirmation."
+      ]
+    },
+    {
+      "path": "pages/62_ADMET_Drug_Discovery.py",
+      "status": "PASS",
+      "seconds": 0.133,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "Real public/reference data improve authenticity and reproducibility, but do not by themselves constitute clinical validation, regulatory approval or independent wet-lab confirmation."
+      ]
+    },
+    {
+      "path": "pages/63_Pathway_Network_Analysis.py",
+      "status": "PASS",
+      "seconds": 0.036,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "Real public/reference data improve authenticity and reproducibility, but do not by themselves constitute clinical validation, regulatory approval or independent wet-lab confirmation."
+      ]
+    },
+    {
+      "path": "pages/64_Wet_Lab_Biotechnology.py",
+      "status": "PASS",
+      "seconds": 0.135,
+      "exceptions": [],
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "path": "pages/65_Microbiology_Metagenomics.py",
+      "status": "PASS",
+      "seconds": 0.239,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "Real public/reference data improve authenticity and reproducibility, but do not by themselves constitute clinical validation, regulatory approval or independent wet-lab confirmation."
+      ]
+    },
+    {
+      "path": "pages/66_Omics_Integration_Hub.py",
+      "status": "PASS",
+      "seconds": 0.091,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "Real public/reference data improve authenticity and reproducibility, but do not by themselves constitute clinical validation, regulatory approval or independent wet-lab confirmation."
+      ]
+    },
+    {
+      "path": "pages/67_Bioinformatics_Capability_Center.py",
+      "status": "PASS",
+      "seconds": 0.075,
+      "exceptions": [],
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "path": "pages/68_Alignment_Phylogeny.py",
+      "status": "PASS",
+      "seconds": 0.062,
+      "exceptions": [],
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "path": "pages/69_Scientific_Data_Readiness.py",
+      "status": "PASS",
+      "seconds": 0.256,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "The bundled models remain software benchmarks. Registry integrity, artifacts and dataset bindings do not substitute for real experimental training, independent external validation or prospective wet-lab confirmation."
+      ]
+    },
+    {
+      "path": "pages/70_BioIntel_Studio.py",
+      "status": "PASS",
+      "seconds": 2.54,
+      "exceptions": [],
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "path": "pages/71_Platform_Quality_Center.py",
+      "status": "PASS",
+      "seconds": 1.833,
+      "exceptions": [],
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "path": "pages/72_Compliance_Research_Readiness.py",
+      "status": "PASS",
+      "seconds": 0.085,
+      "exceptions": [],
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "path": "pages/73_Scientific_Evidence_Excellence.py",
+      "status": "PASS",
+      "seconds": 0.319,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "Blocked claims: Independent external DTI validation \u2022 Blinded prospective DTI validation \u2022 Independent wet-lab replication \u2022 Multi-site reproducibility",
+        "12 study record(s) are excluded from strict evidence scoring because they do not meet hash, chronology, independence, blinding or review requirements."
+      ]
+    },
+    {
+      "path": "pages/74_DTI_Validation_Evidence_Center.py",
+      "status": "PASS",
+      "seconds": 0.113,
+      "exceptions": [],
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "path": "pages/75_Real_World_Operations_Evidence.py",
+      "status": "PASS",
+      "seconds": 0.147,
+      "exceptions": [],
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "path": "pages/76_Final_Assurance_Center.py",
+      "status": "PASS",
+      "seconds": 4.685,
+      "exceptions": [],
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "path": "pages/77_Biotechnology_Project_Center.py",
+      "status": "PASS",
+      "seconds": 0.044,
+      "exceptions": [],
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "path": "pages/78_Protein_Interaction_ML.py",
+      "status": "PASS",
+      "seconds": 0.324,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "Real public/reference data improve authenticity and reproducibility, but do not by themselves constitute clinical validation, regulatory approval or independent wet-lab confirmation."
+      ]
+    },
+    {
+      "path": "pages/79_Comparative_Pathogen_Genomics.py",
+      "status": "PASS",
+      "seconds": 0.064,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "Real public/reference data improve authenticity and reproducibility, but do not by themselves constitute clinical validation, regulatory approval or independent wet-lab confirmation."
+      ]
+    },
+    {
+      "path": "pages/80_Single_Cell_Heterogeneity.py",
+      "status": "PASS",
+      "seconds": 0.124,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "Cells are not biological replicates; confirm findings using replicate-aware analyses.",
+        "Real public/reference data improve authenticity and reproducibility, but do not by themselves constitute clinical validation, regulatory approval or independent wet-lab confirmation."
+      ]
+    },
+    {
+      "path": "pages/81_Cancer_Genomics.py",
+      "status": "PASS",
+      "seconds": 0.129,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "Cancer-genomics findings are research evidence and not autonomous clinical interpretation.",
+        "Real public/reference data improve authenticity and reproducibility, but do not by themselves constitute clinical validation, regulatory approval or independent wet-lab confirmation."
+      ]
+    },
+    {
+      "path": "pages/82_Metagenomics_Pipeline.py",
+      "status": "PASS",
+      "seconds": 0.052,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "Real public/reference data improve authenticity and reproducibility, but do not by themselves constitute clinical validation, regulatory approval or independent wet-lab confirmation."
+      ]
+    },
+    {
+      "path": "pages/83_BioIntel_Copilot.py",
+      "status": "PASS",
+      "seconds": 0.114,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "The copilot must not replace expert scientific or clinical judgment."
+      ]
+    },
+    {
+      "path": "pages/84_Connected_Data_Explorer.py",
+      "status": "PASS",
+      "seconds": 0.034,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "Real public/reference data improve authenticity and reproducibility, but do not by themselves constitute clinical validation, regulatory approval or independent wet-lab confirmation."
+      ]
+    },
+    {
+      "path": "pages/85_Provider_Integration_Center.py",
+      "status": "PASS",
+      "seconds": 0.096,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "Real public/reference data improve authenticity and reproducibility, but do not by themselves constitute clinical validation, regulatory approval or independent wet-lab confirmation."
+      ]
+    },
+    {
+      "path": "pages/86_Privacy_Security_Center.py",
+      "status": "PASS",
+      "seconds": 0.039,
+      "exceptions": [],
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "path": "pages/87_Store_Readiness_Center.py",
+      "status": "PASS",
+      "seconds": 0.036,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "Store acceptance, certificate trust and SmartScreen reputation are external outcomes."
+      ]
+    },
+    {
+      "path": "pages/88_Discovery_Command_Center.py",
+      "status": "PASS",
+      "seconds": 0.058,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "Real public/reference data improve authenticity and reproducibility, but do not by themselves constitute clinical validation, regulatory approval or independent wet-lab confirmation."
+      ]
+    },
+    {
+      "path": "pages/89_Lab_Analytics_Command_Center.py",
+      "status": "PASS",
+      "seconds": 1.404,
+      "exceptions": [],
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "path": "pages/90_Clinical_Pharma_Validation_Center.py",
+      "status": "PASS",
+      "seconds": 1.717,
+      "exceptions": [],
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "path": "pages/91_Real_External_Validation_Center.py",
+      "status": "PASS",
+      "seconds": 0.035,
+      "exceptions": [],
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "path": "pages/92_Independent_Validation_Accelerator.py",
+      "status": "PASS",
+      "seconds": 0.032,
+      "exceptions": [],
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "path": "pages/93_Advanced_Bioinformatics_Tools.py",
+      "status": "PASS",
+      "seconds": 0.228,
+      "exceptions": [],
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "path": "pages/94_Pangenome_Variation_Graph_Studio.py",
+      "status": "PASS",
+      "seconds": 0.987,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "odgi is not installed. Use Advanced Bioinformatics Tools first.",
+        "Pangenome paths and bubbles require assembly, annotation and graph-quality validation."
+      ]
+    },
+    {
+      "path": "pages/95_Long_Read_Assembly_T2T_Studio.py",
+      "status": "PASS",
+      "seconds": 1.204,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "fastqc is not installed. Use Advanced Bioinformatics Tools before execution.",
+        "Assemblies require platform-aware polishing and independent completeness/contamination assessment."
+      ]
+    },
+    {
+      "path": "pages/96_AI_Protein_Design_Lab.py",
+      "status": "PASS",
+      "seconds": 0.179,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "proteinmpnn is not configured. Install/register the model environment before execution.",
+        "Generated sequences are hypotheses and require structural and experimental validation."
+      ]
+    },
+    {
+      "path": "pages/97_CRISPR_Screen_PerturbSeq_Analytics.py",
+      "status": "PASS",
+      "seconds": 0.265,
+      "exceptions": [],
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "path": "pages/98_Pathogen_Outbreak_Command_Center.py",
+      "status": "PASS",
+      "seconds": 0.269,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "Genomic clusters do not by themselves prove direct transmission."
+      ]
+    },
+    {
+      "path": "pages/99_Synthetic_Biology_Circuit_Designer.py",
+      "status": "PASS",
+      "seconds": 0.368,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "Circuit behaviour and biosafety require organism-specific experimental validation."
+      ]
+    },
+    {
+      "path": "pages/100_Rare_Disease_Genome_Interpretation.py",
+      "status": "PASS",
+      "seconds": 0.225,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "Variant prioritisation is research support and not a diagnostic conclusion."
+      ]
+    },
+    {
+      "path": "pages/101_Biomedical_Knowledge_Graph_Copilot.py",
+      "status": "PASS",
+      "seconds": 0.129,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "Graph paths do not establish causality and must preserve exact supporting evidence."
+      ]
+    },
+    {
+      "path": "pages/102_Multi_Omics_Biomarker_Discovery.py",
+      "status": "PASS",
+      "seconds": 0.043,
+      "exceptions": [],
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "path": "pages/103_Visual_Workflow_Builder.py",
+      "status": "PASS",
+      "seconds": 0.119,
+      "exceptions": [],
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "path": "pages/104_Innovation_Modules_Hub.py",
+      "status": "PASS",
+      "seconds": 0.058,
+      "exceptions": [],
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "path": "pages/105_Scientific_Execution_Quality_Center.py",
+      "status": "PASS",
+      "seconds": 0.092,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "Independent external validation is below the release threshold.",
+        "Prospective validation is below the release threshold.",
+        "Peer-reviewed evidence is below the release threshold.",
+        "Clinical/regulatory evidence is below the release threshold."
+      ]
+    },
+    {
+      "path": "pages/106_Reference_Database_Manager.py",
+      "status": "PASS",
+      "seconds": 0.1,
+      "exceptions": [],
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "path": "pages/107_Installation_Data_Recovery_Center.py",
+      "status": "PASS",
+      "seconds": 1.369,
+      "exceptions": [],
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "path": "pages/108_External_Model_Qualification.py",
+      "status": "PASS",
+      "seconds": 0.033,
+      "exceptions": [],
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "path": "pages/109_Lab_Instrument_Import_Center.py",
+      "status": "PASS",
+      "seconds": 0.027,
+      "exceptions": [],
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "path": "pages/110_Reliability_Optimization_Center.py",
+      "status": "PASS",
+      "seconds": 0.051,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "Safe-stop reports are available. No project data is removed by the crash boundary."
+      ]
+    },
+    {
+      "path": "pages/111_Windows_UI_Regression_Performance_Center.py",
+      "status": "PASS",
+      "seconds": 0.08,
+      "exceptions": [],
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "path": "pages/112_Epigenomics_and_Chromatin_Regulation_Studio.py",
+      "status": "PASS",
+      "seconds": 0.078,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "Exploratory ranking is not a substitute for a validated peak caller, genome-build harmonisation, replicate-aware statistics or orthogonal assay confirmation.",
+        "Peak calls and motif findings require specialist tools, matched controls and orthogonal validation."
+      ]
+    },
+    {
+      "path": "pages/113_Metabolomics_and_Lipidomics_Workbench.py",
+      "status": "PASS",
+      "seconds": 0.049,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "Feature-level matches and mass accuracy alone do not establish metabolite identity. Confirm candidates with authentic standards, retention time and MS/MS evidence.",
+        "Feature matches are hypotheses until confirmed by retention time, MS/MS evidence and authentic standards."
+      ]
+    },
+    {
+      "path": "pages/114_Immunoinformatics_and_Vaccine_Design_Lab.py",
+      "status": "PASS",
+      "seconds": 0.044,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "In-silico epitope scores are hypotheses. Experimental immunogenicity, safety, population relevance and manufacturing validation remain mandatory.",
+        "Predicted epitopes are research candidates and require experimental immunogenicity and safety validation."
+      ]
+    },
+    {
+      "path": "pages/115_Antibody_and_Biologics_Engineering_Studio.py",
+      "status": "PASS",
+      "seconds": 0.045,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "Computational developability scores do not establish biological activity, manufacturability or clinical safety. Confirm with validated assays.",
+        "Computational developability does not establish manufacturability, efficacy or clinical safety."
+      ]
+    },
+    {
+      "path": "pages/116_Molecular_Docking_and_Dynamics_Lab.py",
+      "status": "PASS",
+      "seconds": 0.045,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "Docking and simulation scores are model-dependent and must not be interpreted as measured binding affinity without experimental confirmation.",
+        "Docking and simulation scores are model-dependent and are not measured affinity."
+      ]
+    },
+    {
+      "path": "pages/117_Pharmacogenomics_and_Precision_Medicine_Board.py",
+      "status": "PASS",
+      "seconds": 0.041,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "This module is research decision support only. It is not a diagnostic system and must not issue treatment or dose instructions without validated clinical governance.",
+        "This is a research evidence workspace, not autonomous prescribing or clinical decision support."
+      ]
+    },
+    {
+      "path": "pages/118_Spatial_Omics_and_Digital_Pathology_Studio.py",
+      "status": "PASS",
+      "seconds": 0.049,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "Spatial patterns require validated tissue registration, segmentation, batch correction and pathology review before biological or clinical interpretation.",
+        "Spatial findings require image registration checks, biological replication and pathology review."
+      ]
+    },
+    {
+      "path": "pages/119_Single_Cell_Trajectory_and_Communication_Lab.py",
+      "status": "PASS",
+      "seconds": 0.047,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "Trajectory direction and cell\u2013cell communication are inferential. Confirm with experimental design, replicate-aware analysis and orthogonal evidence.",
+        "Trajectory and communication results are model-dependent and require replicate-aware biological validation."
+      ]
+    },
+    {
+      "path": "pages/120_Bioimage_and_Microscopy_AI_Lab.py",
+      "status": "PASS",
+      "seconds": 0.043,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "Automated segmentation and classification require image-specific validation, representative annotations and human quality review.",
+        "Automated image segmentation must be reviewed against representative ground truth."
+      ]
+    },
+    {
+      "path": "pages/121_Biostatistics_Power_and_Experimental_Design_Studio.py",
+      "status": "PASS",
+      "seconds": 0.076,
+      "exceptions": [],
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "path": "pages/122_Clinical_Trial_Biomarker_and_Patient_Stratification_Studio.py",
+      "status": "PASS",
+      "seconds": 0.037,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "Exploratory cut-offs and subgroup findings can be unstable and must be prospectively specified and independently validated before clinical use.",
+        "Exploratory subgroups and cut-offs require prespecification and independent validation."
+      ]
+    },
+    {
+      "path": "pages/123_Genome_Editing_Safety_and_Off_Target_Validation_Lab.py",
+      "status": "PASS",
+      "seconds": 0.053,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "Predicted specificity is not proof of editing safety. Use validated genome-wide assays and organism-specific experimental controls.",
+        "In-silico specificity is not proof of editing safety."
+      ]
+    },
+    {
+      "path": "pages/124_Proteogenomics_and_Neoantigen_Discovery_Studio.py",
+      "status": "PASS",
+      "seconds": 0.048,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "Neoantigen predictions require orthogonal peptide identification, tumour specificity, HLA confirmation and functional immune validation.",
+        "Neoantigen candidates require orthogonal peptide, tumour-specificity and immune-function validation."
+      ]
+    },
+    {
+      "path": "pages/125_Bioprocess_and_Fermentation_Optimization_Studio.py",
+      "status": "PASS",
+      "seconds": 0.041,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "Process recommendations must be verified under controlled conditions and approved quality systems before manufacturing use.",
+        "Process recommendations require controlled experiments and approved quality systems."
+      ]
+    },
+    {
+      "path": "pages/126_LIMS_ELN_and_Sample_Chain_of_Custody_Hub.py",
+      "status": "PASS",
+      "seconds": 0.039,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "This local registry is not a validated regulated LIMS. Electronic signatures, access controls and retention policies require formal qualification."
+      ]
+    },
+    {
+      "path": "pages/127_Causal_Biology_and_Perturbation_Modelling.py",
+      "status": "PASS",
+      "seconds": 0.04,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "Causal inference depends on untestable assumptions and study design. Results must be reviewed by domain and statistical experts.",
+        "Causal claims depend on design assumptions and cannot be established by association alone."
+      ]
+    },
+    {
+      "path": "pages/128_Explainable_AI_and_Model_Assurance_Center.py",
+      "status": "PASS",
+      "seconds": 0.038,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "Explanations describe model behaviour, not biological causality. Assurance findings require independent validation and intended-use review.",
+        "Explanations describe model behaviour and do not establish biological causality."
+      ]
+    },
+    {
+      "path": "pages/129_Multi_Omics_Harmonization_and_Batch_Correction_Studio.py",
+      "status": "PASS",
+      "seconds": 0.044,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "Batch correction can remove biological signal or create artefacts. Preserve raw data and validate correction choices with study design and controls.",
+        "Batch correction can remove biological signal and must preserve raw values and design context."
+      ]
+    },
+    {
+      "path": "pages/130_Glycomics_and_Glycoproteomics_Workbench.py",
+      "status": "PASS",
+      "seconds": 0.045,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "Glycan assignments are often ambiguous. Confirm structures with appropriate fragmentation, standards and expert spectral review.",
+        "Glycan/glycopeptide assignments require spectrum-level review and validated identification control."
+      ]
+    },
+    {
+      "path": "pages/131_One_Health_and_Environmental_Genomics_Center.py",
+      "status": "PASS",
+      "seconds": 0.06,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "Surveillance signals do not establish transmission. Sampling bias, environmental persistence and laboratory contamination must be considered.",
+        "Surveillance signals require epidemiological context, confirmatory testing and public-health review."
+      ]
+    },
+    {
+      "path": "pages/132_Synthetic_Data_and_Privacy_Engineering_Lab.py",
+      "status": "PASS",
+      "seconds": 0.039,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "Synthetic data is not automatically anonymous. Formal privacy review, attack testing and legal governance are required before release.",
+        "Synthetic data reduces but does not eliminate disclosure risk."
+      ]
+    },
+    {
+      "path": "pages/133_Scientific_Expansion_Hub.py",
+      "status": "PASS",
+      "seconds": 0.032,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "These workbenches provide transparent exploratory analysis. Publication, clinical, manufacturing or regulated use requires validated methods, genuine evidence and independent review."
+      ]
+    },
+    {
+      "path": "pages/134_Population_Genetics_GWAS_Studio.py",
+      "status": "PASS",
+      "seconds": 3.446,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "Built-in tests are transparent screening methods, not a replacement for validated PLINK/SAIGE/REGENIE mixed-model pipelines, imputation or clinical interpretation.",
+        "Association findings require ancestry-aware QC, replication and careful interpretation.",
+        "Built-in tests are transparent screening methods, not a replacement for validated PLINK/SAIGE/REGENIE mixed-model pipelines, imputation or clinical interpretation."
+      ]
+    },
+    {
+      "path": "pages/135_Structural_Variant_Repeat_Expansion_Lab.py",
+      "status": "PASS",
+      "seconds": 0.049,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "This workspace does not infer true breakpoints from raw BAM/CRAM reads. Confirm candidates with validated callers, visual review and orthogonal assays.",
+        "Structural-variant calls require caller-specific QC and orthogonal confirmation.",
+        "This workspace does not infer true breakpoints from raw BAM/CRAM reads. Confirm candidates with validated callers, visual review and orthogonal assays."
+      ]
+    },
+    {
+      "path": "pages/136_Longitudinal_Multi_Omics_Time_Series_Studio.py",
+      "status": "PASS",
+      "seconds": 0.04,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "Trajectory screening is exploratory. Confirm conclusions with a prespecified longitudinal model, missing-data strategy and independent validation.",
+        "Longitudinal inference must account for repeated measures and informative missingness.",
+        "Trajectory screening is exploratory. Confirm conclusions with a prespecified longitudinal model, missing-data strategy and independent validation."
+      ]
+    },
+    {
+      "path": "pages/137_RNA_Isoform_Alternative_Splicing_Studio.py",
+      "status": "PASS",
+      "seconds": 0.044,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "Built-in calculations do not replace splice-aware alignment, transcript assembly or validated DEXSeq/DRIMSeq/MAJIQ workflows.",
+        "Isoform and splicing calls depend on alignment, annotation and replicate-aware statistics.",
+        "Built-in calculations do not replace splice-aware alignment, transcript assembly or validated DEXSeq/DRIMSeq/MAJIQ workflows."
+      ]
+    },
+    {
+      "path": "pages/138_RNA_Modification_Epitranscriptomics_Lab.py",
+      "status": "PASS",
+      "seconds": 0.038,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "Modification assays are technology-specific. Built-in signals cannot distinguish every biological event from mapping or sequencing artefacts.",
+        "RNA modification/editing signals require technology-specific controls and orthogonal validation.",
+        "Modification assays are technology-specific. Built-in signals cannot distinguish every biological event from mapping or sequencing artefacts."
+      ]
+    },
+    {
+      "path": "pages/139_Strain_Resolved_Microbiome_Functional_Profiling_Studio.py",
+      "status": "PASS",
+      "seconds": 0.045,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "This workspace does not assemble strains from raw reads. Confirm with validated metagenomic pipelines, controls and reference databases.",
+        "Strain-level assignments are database- and coverage-dependent.",
+        "This workspace does not assemble strains from raw reads. Confirm with validated metagenomic pipelines, controls and reference databases."
+      ]
+    },
+    {
+      "path": "pages/140_Cell_Atlas_Mapping_Reference_Annotation_Studio.py",
+      "status": "PASS",
+      "seconds": 0.042,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "Transferred labels are hypotheses. Novel or disease-specific states may be incorrectly forced into the nearest reference category.",
+        "Transferred labels require marker review and independent biological validation.",
+        "Transferred labels are hypotheses. Novel or disease-specific states may be incorrectly forced into the nearest reference category."
+      ]
+    },
+    {
+      "path": "pages/141_Phenotypic_Screening_High_Content_Analysis_Lab.py",
+      "status": "PASS",
+      "seconds": 0.044,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "Screening hits require confirmatory assays, orthogonal readouts and concentration verification before biological conclusions.",
+        "Screening hits require orthogonal confirmation and assay-specific acceptance criteria.",
+        "Screening hits require confirmatory assays, orthogonal readouts and concentration verification before biological conclusions."
+      ]
+    },
+    {
+      "path": "pages/142_Organoid_3D_Cell_Model_Analytics.py",
+      "status": "PASS",
+      "seconds": 0.044,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "Built-in image segmentation is a lightweight local method and must be validated against expert annotations for each assay.",
+        "Automated organoid phenotypes require manual QC and biological replication.",
+        "Built-in image segmentation is a lightweight local method and must be validated against expert annotations for each assay."
+      ]
+    },
+    {
+      "path": "pages/143_Protein_Language_Model_Generative_Design_Lab.py",
+      "status": "PASS",
+      "seconds": 0.047,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "The built-in engine is a transparent lightweight sequence model, not a pretrained foundation model. Scores do not establish function or safety.",
+        "Generated sequences are hypotheses and require structural and experimental validation.",
+        "The built-in engine is a transparent lightweight sequence model, not a pretrained foundation model. Scores do not establish function or safety."
+      ]
+    },
+    {
+      "path": "pages/144_Enzyme_Engineering_Metabolic_Pathway_Design_Studio.py",
+      "status": "PASS",
+      "seconds": 0.054,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "Proxy flux and activity calculations do not replace curated genome-scale metabolic models, kinetic measurements or bioreactor validation.",
+        "Predicted pathway or enzyme improvements require organism-specific experimental validation.",
+        "Proxy flux and activity calculations do not replace curated genome-scale metabolic models, kinetic measurements or bioreactor validation."
+      ]
+    },
+    {
+      "path": "pages/145_Host_Pathogen_Interaction_Studio.py",
+      "status": "PASS",
+      "seconds": 0.038,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "Predicted interactions can contain many false positives. Confirm with organism-specific evidence and experimental validation.",
+        "Predicted interactions require independent experimental support.",
+        "Predicted interactions can contain many false positives. Confirm with organism-specific evidence and experimental validation."
+      ]
+    },
+    {
+      "path": "pages/146_Virology_Viral_Evolution_Workbench.py",
+      "status": "PASS",
+      "seconds": 0.043,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "Lineage assignment, recombination and transmission inference require current curated databases and validated phylogenetic workflows.",
+        "Evolutionary and outbreak interpretations require sampling context and confirmatory epidemiology.",
+        "Lineage assignment, recombination and transmission inference require current curated databases and validated phylogenetic workflows."
+      ]
+    },
+    {
+      "path": "pages/147_Rare_Variant_Burden_Family_Genetics_Lab.py",
+      "status": "PASS",
+      "seconds": 0.043,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "This module is not diagnostic. Clinical classification requires validated pipelines, qualified professionals, current guidelines and confirmatory testing.",
+        "Variant prioritisation is research support and not a diagnostic conclusion.",
+        "This module is not diagnostic. Clinical classification requires validated pipelines, qualified professionals, current guidelines and confirmatory testing."
+      ]
+    },
+    {
+      "path": "pages/148_Universal_Scientific_File_Inspector.py",
+      "status": "PASS",
+      "seconds": 0.048,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "Automatic format and genome-build detection can be uncertain. Confidence and evidence are shown; ambiguous files require manual review.",
+        "Automatic format and genome-build detection can be uncertain. Confidence and evidence are shown; ambiguous files require manual review.",
+        "Format detection and previews do not establish biological validity."
+      ]
+    },
+    {
+      "path": "pages/149_Cross_Module_Project_Workspace.py",
+      "status": "PASS",
+      "seconds": 0.046,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "Local project records improve traceability but do not replace organisational access controls or validated electronic records systems.",
+        "Local project records improve traceability but do not replace organisational access controls or validated electronic records systems.",
+        "A project snapshot is reproducible only when external tools and databases are pinned."
+      ]
+    },
+    {
+      "path": "pages/150_Visual_Scientific_Workflow_Builder_2.py",
+      "status": "PASS",
+      "seconds": 0.146,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "Workflow validation cannot guarantee scientific appropriateness. Every pipeline still requires domain review and validated parameters.",
+        "Workflow validation cannot guarantee scientific appropriateness. Every pipeline still requires domain review and validated parameters.",
+        "A visually valid workflow is not scientifically valid until inputs, tools and parameters are qualified."
+      ]
+    },
+    {
+      "path": "pages/151_Real_Background_Job_Queue_Engine.py",
+      "status": "PASS",
+      "seconds": 0.056,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "The local queue does not provide distributed-cluster isolation. Resource limits and external-tool safety still depend on the host operating system.",
+        "The local queue does not provide distributed-cluster isolation. Resource limits and external-tool safety still depend on the host operating system.",
+        "Heavy jobs should not execute inside a Streamlit rerun process."
+      ]
+    },
+    {
+      "path": "pages/152_Unified_Scientific_Report_Builder.py",
+      "status": "PASS",
+      "seconds": 0.097,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "Generated narrative is a draft. Scientific claims, methods and citations require human verification before publication or regulated use.",
+        "Generated narrative is a draft. Scientific claims, methods and citations require human verification before publication or regulated use.",
+        "Reports are only as reliable as their underlying data, methods and review."
+      ]
+    },
+    {
+      "path": "pages/153_Reference_Database_Lifecycle_Manager_2.py",
+      "status": "PASS",
+      "seconds": 0.062,
+      "exceptions": [],
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "path": "pages/154_Data_Provenance_Reproducibility_Ledger_2.py",
+      "status": "PASS",
+      "seconds": 0.042,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "A local hash chain is tamper-evident, not an independent trusted timestamp or validated regulated audit system.",
+        "A local hash chain is tamper-evident, not an independent trusted timestamp or validated regulated audit system.",
+        "Local provenance is not equivalent to an independently timestamped or regulated audit trail."
+      ]
+    },
+    {
+      "path": "pages/155_Scientific_Evidence_Citation_Engine.py",
+      "status": "PASS",
+      "seconds": 0.043,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "Offline metadata may be incomplete or outdated. Retraction and publication status must be verified against current authoritative sources when internet access is available.",
+        "Offline metadata may be incomplete or outdated. Retraction and publication status must be verified against current authoritative sources when internet access is available.",
+        "Citations must support the exact claim and may still represent weak or conflicting evidence."
+      ]
+    },
+    {
+      "path": "pages/156_Model_Registry_ML_Lifecycle_Center_2.py",
+      "status": "PASS",
+      "seconds": 0.043,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "Registry status does not establish scientific validity, safety or regulatory approval. Independent evaluation remains mandatory.",
+        "Registry status does not establish scientific validity, safety or regulatory approval. Independent evaluation remains mandatory.",
+        "A registered model is not validated or approved merely because an artifact exists."
+      ]
+    },
+    {
+      "path": "pages/157_Instrument_Integration_Hub_2.py",
+      "status": "PASS",
+      "seconds": 0.035,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "Vendor APIs and proprietary formats require licensed adapters. The built-in hub performs safe local file ingestion only.",
+        "Vendor APIs and proprietary formats require licensed adapters. The built-in hub performs safe local file ingestion only."
+      ]
+    },
+    {
+      "path": "pages/158_Collaboration_Scientific_Review_System_2.py",
+      "status": "PASS",
+      "seconds": 0.045,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "Local review identities are application records and may not satisfy regulated electronic-signature requirements without organisational controls.",
+        "Local review identities are application records and may not satisfy regulated electronic-signature requirements without organisational controls.",
+        "Formal electronic signatures and regulated review require organization-specific validation."
+      ]
+    },
+    {
+      "path": "pages/159_Offline_AI_Scientific_Copilot_2.py",
+      "status": "PASS",
+      "seconds": 0.044,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "The local copilot is retrieval-based and can still misunderstand evidence. It blocks diagnosis, treatment and unsupported clinical instructions.",
+        "The local copilot is retrieval-based and can still misunderstand evidence. It blocks diagnosis, treatment and unsupported clinical instructions.",
+        "The copilot must not replace expert scientific or clinical judgment."
+      ]
+    },
+    {
+      "path": "pages/160_Data_Lakehouse_Sample_Search_Engine_2.py",
+      "status": "PASS",
+      "seconds": 0.044,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "The local index stores metadata and paths; users must maintain filesystem permissions and backups for sensitive data.",
+        "The local index stores metadata and paths; users must maintain filesystem permissions and backups for sensitive data.",
+        "Indexed assets still require scientific QC and appropriate access controls."
+      ]
+    },
+    {
+      "path": "pages/161_Benchmark_Validation_Center_2.py",
+      "status": "PASS",
+      "seconds": 0.062,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "Passing a benchmark only supports the tested scope. It does not prove broad clinical, biological or production validity.",
+        "Passing a benchmark only supports the tested scope. It does not prove broad clinical, biological or production validity.",
+        "Passing software benchmarks does not by itself establish clinical or biological validity."
+      ]
+    },
+    {
+      "path": "pages/162_Plugin_Module_Marketplace_2.py",
+      "status": "PASS",
+      "seconds": 0.049,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "The built-in manager does not guarantee third-party scientific validity. Only trusted, reviewed plugins should be enabled.",
+        "The built-in manager does not guarantee third-party scientific validity. Only trusted, reviewed plugins should be enabled.",
+        "Untrusted plugin code must never execute merely because an archive was uploaded."
+      ]
+    },
+    {
+      "path": "pages/163_Step104_Scientific_and_Platform_Expansion_Hub.py",
+      "status": "PASS",
+      "seconds": 0.053,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "Local implementation readiness does not replace independent scientific validation, specialist external software, current reference databases or regulated operating evidence."
+      ]
+    },
+    {
+      "path": "pages/164_Visual_Interaction_Accessibility_Workspace.py",
+      "status": "PASS",
+      "seconds": 0.032,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "Saved visual configurations preserve presentation and review context. They do not replace the underlying analysis output, source data or independent scientific validation."
+      ]
+    },
+    {
+      "path": "pages/165_Advanced_Scientific_Viewers.py",
+      "status": "PASS",
+      "seconds": 0.098,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "Built-in viewers support local exploration and evidence review. Clinical, diagnostic, regulated or vendor-certified interpretation still requires validated methods, current reference data and specialist review."
+      ]
+    },
+    {
+      "path": "pages/166_Real_Engine_Native_Format_Integration.py",
+      "status": "PASS",
+      "seconds": 0.046,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "BioIntel executes only explicitly configured local engines and never treats a heuristic fallback as a native engine result. Clinical, diagnostic, regulated and vendor-certified interpretation still requires validated procedures and specialist review."
+      ]
+    },
+    {
+      "path": "pages/167_Bioinformatics_Feature_Upgrade_Center.py",
+      "status": "PASS",
+      "seconds": 0.032,
+      "exceptions": [],
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "path": "pages/168_Scientific_Depth_Optimization_Center.py",
+      "status": "PASS",
+      "seconds": 0.073,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "Computational developability does not establish manufacturability, efficacy or clinical safety."
+      ]
+    },
+    {
+      "path": "pages/169_Non_Chart_Scientific_Visuals.py",
+      "status": "PASS",
+      "seconds": 0.026,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "These workspaces improve inspection and decision support. They do not replace validated specialist software, current reference data, independent scientific review or regulated operating procedures."
+      ]
+    },
+    {
+      "path": "pages/170_Module_Experience_Canvases_2_to_9.py",
+      "status": "PASS",
+      "seconds": 0.025,
+      "exceptions": [],
+      "errors": [],
+      "warnings": [
+        "The workspaces organize inspection, review and reproducibility. They do not replace specialist scientific engines, independent validation, provider licences or regulated clinical interpretation."
+      ]
+    },
+    {
+      "path": "pages/171_Module_Catalogue_Search.py",
+      "status": "PASS",
+      "seconds": 0.066,
+      "exceptions": [],
+      "errors": [],
+      "warnings": []
+    }
+  ]
+}

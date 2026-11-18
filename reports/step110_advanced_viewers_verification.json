@@ -1,0 +1,627 @@
+{
+  "schema": "biointel.step110.advanced-viewers-verification.v1",
+  "version": "11.0.0",
+  "generated_at_utc": "2026-07-10T17:34:21+00:00",
+  "viewer_count": 19,
+  "data_checks_passed": 19,
+  "data_checks": [
+    {
+      "viewer": "genome_browser",
+      "passed": true,
+      "visuals": 3,
+      "records": [
+        176,
+        55,
+        15
+      ]
+    },
+    {
+      "viewer": "molecular_3d",
+      "passed": true,
+      "visuals": 3,
+      "records": [
+        186,
+        25,
+        180
+      ]
+    },
+    {
+      "viewer": "pathology",
+      "passed": true,
+      "visuals": 3,
+      "records": [
+        1200,
+        1200,
+        2
+      ]
+    },
+    {
+      "viewer": "microscopy",
+      "passed": true,
+      "visuals": 3,
+      "records": [
+        38,
+        38,
+        38
+      ]
+    },
+    {
+      "viewer": "flow_gating",
+      "passed": true,
+      "visuals": 3,
+      "records": [
+        4400,
+        4,
+        16
+      ]
+    },
+    {
+      "viewer": "mass_spectrometry",
+      "passed": true,
+      "visuals": 3,
+      "records": [
+        1800,
+        420,
+        90
+      ]
+    },
+    {
+      "viewer": "phylogenetic_tree",
+      "passed": true,
+      "visuals": 3,
+      "records": [
+        12,
+        11,
+        7
+      ]
+    },
+    {
+      "viewer": "plate_map",
+      "passed": true,
+      "visuals": 3,
+      "records": [
+        96,
+        4,
+        2
+      ]
+    },
+    {
+      "viewer": "pedigree",
+      "passed": true,
+      "visuals": 3,
+      "records": [
+        6,
+        3,
+        4
+      ]
+    },
+    {
+      "viewer": "outbreak_map",
+      "passed": true,
+      "visuals": 3,
+      "records": [
+        160,
+        20,
+        15
+      ]
+    },
+    {
+      "viewer": "pangenome_graph",
+      "passed": true,
+      "visuals": 3,
+      "records": [
+        34,
+        3,
+        34
+      ]
+    },
+    {
+      "viewer": "single_cell",
+      "passed": true,
+      "visuals": 3,
+      "records": [
+        4100,
+        4100,
+        4100
+      ]
+    },
+    {
+      "viewer": "sequence_track",
+      "passed": true,
+      "visuals": 3,
+      "records": [
+        8,
+        950,
+        7
+      ]
+    },
+    {
+      "viewer": "multiomics",
+      "passed": true,
+      "visuals": 3,
+      "records": [
+        19,
+        8,
+        144
+      ]
+    },
+    {
+      "viewer": "bioprocess_live",
+      "passed": true,
+      "visuals": 3,
+      "records": [
+        867,
+        578,
+        289
+      ]
+    },
+    {
+      "viewer": "workflow_dag",
+      "passed": true,
+      "visuals": 3,
+      "records": [
+        7,
+        7,
+        4
+      ]
+    },
+    {
+      "viewer": "freezer_map",
+      "passed": true,
+      "visuals": 3,
+      "records": [
+        81,
+        58,
+        3
+      ]
+    },
+    {
+      "viewer": "static_reporting",
+      "passed": true,
+      "visuals": 3,
+      "records": [
+        7,
+        6,
+        7
+      ]
+    },
+    {
+      "viewer": "visual_regression",
+      "passed": true,
+      "visuals": 3,
+      "records": [
+        70,
+        2,
+        14
+      ]
+    }
+  ],
+  "runtime_hub": {
+    "passed": true,
+    "viewers": [
+      {
+        "viewer": "genome_browser",
+        "single_view": true,
+        "compare_view": true,
+        "exceptions": [],
+        "errors": []
+      },
+      {
+        "viewer": "molecular_3d",
+        "single_view": true,
+        "compare_view": true,
+        "exceptions": [],
+        "errors": []
+      },
+      {
+        "viewer": "pathology",
+        "single_view": true,
+        "compare_view": true,
+        "exceptions": [],
+        "errors": []
+      },
+      {
+        "viewer": "microscopy",
+        "single_view": true,
+        "compare_view": true,
+        "exceptions": [],
+        "errors": []
+      },
+      {
+        "viewer": "flow_gating",
+        "single_view": true,
+        "compare_view": true,
+        "exceptions": [],
+        "errors": []
+      },
+      {
+        "viewer": "mass_spectrometry",
+        "single_view": true,
+        "compare_view": true,
+        "exceptions": [],
+        "errors": []
+      },
+      {
+        "viewer": "phylogenetic_tree",
+        "single_view": true,
+        "compare_view": true,
+        "exceptions": [],
+        "errors": []
+      },
+      {
+        "viewer": "plate_map",
+        "single_view": true,
+        "compare_view": true,
+        "exceptions": [],
+        "errors": []
+      },
+      {
+        "viewer": "pedigree",
+        "single_view": true,
+        "compare_view": true,
+        "exceptions": [],
+        "errors": []
+      },
+      {
+        "viewer": "outbreak_map",
+        "single_view": true,
+        "compare_view": true,
+        "exceptions": [],
+        "errors": []
+      },
+      {
+        "viewer": "pangenome_graph",
+        "single_view": true,
+        "compare_view": true,
+        "exceptions": [],
+        "errors": []
+      },
+      {
+        "viewer": "single_cell",
+        "single_view": true,
+        "compare_view": true,
+        "exceptions": [],
+        "errors": []
+      },
+      {
+        "viewer": "sequence_track",
+        "single_view": true,
+        "compare_view": true,
+        "exceptions": [],
+        "errors": []
+      },
+      {
+        "viewer": "multiomics",
+        "single_view": true,
+        "compare_view": true,
+        "exceptions": [],
+        "errors": []
+      },
+      {
+        "viewer": "bioprocess_live",
+        "single_view": true,
+        "compare_view": true,
+        "exceptions": [],
+        "errors": []
+      },
+      {
+        "viewer": "workflow_dag",
+        "single_view": true,
+        "compare_view": true,
+        "exceptions": [],
+        "errors": []
+      },
+      {
+        "viewer": "freezer_map",
+        "single_view": true,
+        "compare_view": true,
+        "exceptions": [],
+        "errors": []
+      },
+      {
+        "viewer": "static_reporting",
+        "single_view": true,
+        "compare_view": true,
+        "exceptions": [],
+        "errors": []
+      },
+      {
+        "viewer": "visual_regression",
+        "single_view": true,
+        "compare_view": true,
+        "exceptions": [],
+        "errors": []
+      }
+    ]
+  },
+  "embedded_pages": {
+    "version": "11.0.0",
+    "pages": [
+      {
+        "page": "100_Rare_Disease_Genome_Interpretation.py",
+        "seconds": 3.531,
+        "exceptions": [],
+        "errors": [],
+        "passed": true
+      },
+      {
+        "page": "102_Multi_Omics_Biomarker_Discovery.py",
+        "seconds": 0.045,
+        "exceptions": [],
+        "errors": [],
+        "passed": true
+      },
+      {
+        "page": "103_Visual_Workflow_Builder.py",
+        "seconds": 0.119,
+        "exceptions": [],
+        "errors": [],
+        "passed": true
+      },
+      {
+        "page": "109_Lab_Instrument_Import_Center.py",
+        "seconds": 0.026,
+        "exceptions": [],
+        "errors": [],
+        "passed": true
+      },
+      {
+        "page": "112_Epigenomics_and_Chromatin_Regulation_Studio.py",
+        "seconds": 0.069,
+        "exceptions": [],
+        "errors": [],
+        "passed": true
+      },
+      {
+        "page": "113_Metabolomics_and_Lipidomics_Workbench.py",
+        "seconds": 0.044,
+        "exceptions": [],
+        "errors": [],
+        "passed": true
+      },
+      {
+        "page": "115_Antibody_and_Biologics_Engineering_Studio.py",
+        "seconds": 0.041,
+        "exceptions": [],
+        "errors": [],
+        "passed": true
+      },
+      {
+        "page": "116_Molecular_Docking_and_Dynamics_Lab.py",
+        "seconds": 0.045,
+        "exceptions": [],
+        "errors": [],
+        "passed": true
+      },
+      {
+        "page": "118_Spatial_Omics_and_Digital_Pathology_Studio.py",
+        "seconds": 0.035,
+        "exceptions": [],
+        "errors": [],
+        "passed": true
+      },
+      {
+        "page": "119_Single_Cell_Trajectory_and_Communication_Lab.py",
+        "seconds": 0.032,
+        "exceptions": [],
+        "errors": [],
+        "passed": true
+      },
+      {
+        "page": "120_Bioimage_and_Microscopy_AI_Lab.py",
+        "seconds": 0.03,
+        "exceptions": [],
+        "errors": [],
+        "passed": true
+      },
+      {
+        "page": "123_Genome_Editing_Safety_and_Off_Target_Validation_Lab.py",
+        "seconds": 0.033,
+        "exceptions": [],
+        "errors": [],
+        "passed": true
+      },
+      {
+        "page": "125_Bioprocess_and_Fermentation_Optimization_Studio.py",
+        "seconds": 0.03,
+        "exceptions": [],
+        "errors": [],
+        "passed": true
+      },
+      {
+        "page": "126_LIMS_ELN_and_Sample_Chain_of_Custody_Hub.py",
+        "seconds": 0.04,
+        "exceptions": [],
+        "errors": [],
+        "passed": true
+      },
+      {
+        "page": "129_Multi_Omics_Harmonization_and_Batch_Correction_Studio.py",
+        "seconds": 0.034,
+        "exceptions": [],
+        "errors": [],
+        "passed": true
+      },
+      {
+        "page": "130_Glycomics_and_Glycoproteomics_Workbench.py",
+        "seconds": 0.037,
+        "exceptions": [],
+        "errors": [],
+        "passed": true
+      },
+      {
+        "page": "131_One_Health_and_Environmental_Genomics_Center.py",
+        "seconds": 0.038,
+        "exceptions": [],
+        "errors": [],
+        "passed": true
+      },
+      {
+        "page": "134_Population_Genetics_GWAS_Studio.py",
+        "seconds": 0.254,
+        "exceptions": [],
+        "errors": [],
+        "passed": true
+      },
+      {
+        "page": "135_Structural_Variant_Repeat_Expansion_Lab.py",
+        "seconds": 0.039,
+        "exceptions": [],
+        "errors": [],
+        "passed": true
+      },
+      {
+        "page": "137_RNA_Isoform_Alternative_Splicing_Studio.py",
+        "seconds": 0.034,
+        "exceptions": [],
+        "errors": [],
+        "passed": true
+      },
+      {
+        "page": "144_Enzyme_Engineering_Metabolic_Pathway_Design_Studio.py",
+        "seconds": 0.029,
+        "exceptions": [],
+        "errors": [],
+        "passed": true
+      },
+      {
+        "page": "147_Rare_Variant_Burden_Family_Genetics_Lab.py",
+        "seconds": 0.034,
+        "exceptions": [],
+        "errors": [],
+        "passed": true
+      },
+      {
+        "page": "150_Visual_Scientific_Workflow_Builder_2.py",
+        "seconds": 0.083,
+        "exceptions": [],
+        "errors": [],
+        "passed": true
+      },
+      {
+        "page": "157_Instrument_Integration_Hub_2.py",
+        "seconds": 0.032,
+        "exceptions": [],
+        "errors": [],
+        "passed": true
+      },
+      {
+        "page": "160_Data_Lakehouse_Sample_Search_Engine_2.py",
+        "seconds": 0.035,
+        "exceptions": [],
+        "errors": [],
+        "passed": true
+      },
+      {
+        "page": "164_Visual_Interaction_Accessibility_Workspace.py",
+        "seconds": 0.035,
+        "exceptions": [],
+        "errors": [],
+        "passed": true
+      },
+      {
+        "page": "20_Workflow_Dashboard.py",
+        "seconds": 2.535,
+        "exceptions": [],
+        "errors": [],
+        "passed": true
+      },
+      {
+        "page": "57_Variant_Annotation_Workbench.py",
+        "seconds": 1.258,
+        "exceptions": [],
+        "errors": [],
+        "passed": true
+      },
+      {
+        "page": "60_Protein_Annotation_Proteomics.py",
+        "seconds": 0.351,
+        "exceptions": [],
+        "errors": [],
+        "passed": true
+      },
+      {
+        "page": "61_Structural_Bioinformatics.py",
+        "seconds": 0.778,
+        "exceptions": [],
+        "errors": [],
+        "passed": true
+      },
+      {
+        "page": "64_Wet_Lab_Biotechnology.py",
+        "seconds": 0.124,
+        "exceptions": [],
+        "errors": [],
+        "passed": true
+      },
+      {
+        "page": "66_Omics_Integration_Hub.py",
+        "seconds": 0.078,
+        "exceptions": [],
+        "errors": [],
+        "passed": true
+      },
+      {
+        "page": "68_Alignment_Phylogeny.py",
+        "seconds": 0.067,
+        "exceptions": [],
+        "errors": [],
+        "passed": true
+      },
+      {
+        "page": "79_Comparative_Pathogen_Genomics.py",
+        "seconds": 0.052,
+        "exceptions": [],
+        "errors": [],
+        "passed": true
+      },
+      {
+        "page": "80_Single_Cell_Heterogeneity.py",
+        "seconds": 0.097,
+        "exceptions": [],
+        "errors": [],
+        "passed": true
+      },
+      {
+        "page": "81_Cancer_Genomics.py",
+        "seconds": 0.103,
+        "exceptions": [],
+        "errors": [],
+        "passed": true
+      },
+      {
+        "page": "94_Pangenome_Variation_Graph_Studio.py",
+        "seconds": 0.366,
+        "exceptions": [],
+        "errors": [],
+        "passed": true
+      },
+      {
+        "page": "96_AI_Protein_Design_Lab.py",
+        "seconds": 0.165,
+        "exceptions": [],
+        "errors": [],
+        "passed": true
+      },
+      {
+        "page": "97_CRISPR_Screen_PerturbSeq_Analytics.py",
+        "seconds": 0.261,
+        "exceptions": [],
+        "errors": [],
+        "passed": true
+      },
+      {
+        "page": "98_Pathogen_Outbreak_Command_Center.py",
+        "seconds": 0.235,
+        "exceptions": [],
+        "errors": [],
+        "passed": true
+      }
+    ],
+    "passed": 40,
+    "total": 40
+  },
+  "pytest_returncode": 0,
+  "pytest_stdout": ".........................                                                [100%]\n25 passed in 12.05s\n",
+  "pytest_stderr": ""
+}

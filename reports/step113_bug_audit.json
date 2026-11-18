@@ -1,0 +1,30 @@
+{
+  "schema": "biointel.step113.bug-audit.v1",
+  "version": "11.3.0",
+  "fixed_categories": {
+    "reference_lifecycle": 10,
+    "study_design": 10,
+    "bioinformatics_parsers": 10,
+    "upload_and_ui_runtime": 6,
+    "windows_process_lifecycle": 2
+  },
+  "key_fixed_defects": [
+    "HTTP Range ignored during resume could corrupt reference downloads",
+    "Checksum mismatch could leave an invalid final reference asset",
+    "Reference lifecycle SQLite handles were not deterministically closed",
+    "Managed version paths were not fully sanitized",
+    "Short protein feature tracks could fail during smoothing",
+    "Missing transcriptomics batch/covariate columns could raise KeyError",
+    "FASTQ k-mer analysis could grow memory without a distinct-kmer cap",
+    "Malformed VCF positions could abort an import",
+    "Windows stale PID probing could raise WinError 87",
+    "Direct launch of the native integration page could fail to import biointel",
+    "Study-design sensitivity and simulation results could become stale after parameter changes",
+    "Large upload validation could create an unnecessary full-memory copy"
+  ],
+  "selected_tests_passed": 162,
+  "static_pages_passed": 169,
+  "runtime_pages_passed": 6,
+  "compile_files_passed": 687,
+  "self_tests_passed": 7
+}

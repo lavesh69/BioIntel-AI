@@ -1,0 +1,69 @@
+{
+  "schema": "biointel.step121.verification.v1",
+  "version": "12.1.0",
+  "checked_at": "2026-07-11T11:47:52.212650+00:00",
+  "passed": 12,
+  "total": 12,
+  "checks": [
+    {
+      "check": "Version",
+      "passed": true,
+      "detail": "VERSION=12.1.0"
+    },
+    {
+      "check": "Selected capability contracts",
+      "passed": true,
+      "detail": "7 modules, 42 stages; missing=[]"
+    },
+    {
+      "check": "Family genetics",
+      "passed": true,
+      "detail": "de_novo=1"
+    },
+    {
+      "check": "Model assurance",
+      "passed": true,
+      "detail": "metrics=['split', 'roc_auc', 'accuracy', 'balanced_accuracy', 'f1', 'brier']"
+    },
+    {
+      "check": "Microbiology isolate",
+      "passed": true,
+      "detail": "mlst=2; gene_hits=1"
+    },
+    {
+      "check": "Bounded AutoML",
+      "passed": true,
+      "detail": "champion=logistic_l2"
+    },
+    {
+      "check": "Citation engine",
+      "passed": true,
+      "detail": "claims=1"
+    },
+    {
+      "check": "Organoid analytics",
+      "passed": true,
+      "detail": "objects=48"
+    },
+    {
+      "check": "Cross-domain evidence",
+      "passed": true,
+      "detail": "domains=1"
+    },
+    {
+      "check": "Page integration",
+      "passed": true,
+      "detail": "7/7 pages integrated; missing=[]"
+    },
+    {
+      "check": "Starter templates",
+      "passed": true,
+      "detail": "13 templates"
+    },
+    {
+      "check": "Requested exclusions preserved",
+      "passed": true,
+      "detail": "5/5 byte-identical; changed=[]"
+    }
+  ]
+}

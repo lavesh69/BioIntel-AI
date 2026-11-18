@@ -1,0 +1,97 @@
+{
+  "schema": "biointel.step122.final_validation.v1",
+  "release": "12.2.0",
+  "generated_at_utc": "2026-07-11T12:33:16.025125+00:00",
+  "scope": "AI Protein Design real-model execution and resumable workflow upgrade",
+  "step122_verifier": {
+    "passed": 9,
+    "total": 9
+  },
+  "step122_unit_tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "completed_regression_tests": {
+    "passed": 528,
+    "failed": 0,
+    "scope": "Sorted top-level test files 1-80 completed in deterministic shards; uncompleted files are not counted."
+  },
+  "streamlit_runtime": {
+    "page": "pages/96_AI_Protein_Design_Lab.py",
+    "exceptions": 0
+  },
+  "python_syntax": {
+    "files": 870,
+    "errors": [],
+    "passed": true
+  },
+  "databases": {
+    "total": 36,
+    "healthy": 36,
+    "rows_checked": 108425,
+    "failures": []
+  },
+  "engineering_gate": {
+    "passed": true,
+    "gates": [
+      {
+        "evidence": "packages=32 invalid=0 sha256=b609c6dd48d814c6c9f5f1afa46892060d1d0ae1587034b826b8272328a385a0",
+        "name": "exact_dependency_lock",
+        "passed": true
+      },
+      {
+        "evidence": "violations=0",
+        "name": "architecture_boundaries",
+        "passed": true
+      },
+      {
+        "evidence": "overdue=0",
+        "name": "technical_debt_expiry",
+        "passed": true
+      },
+      {
+        "evidence": "offenders=0",
+        "name": "module_size_budget",
+        "passed": true
+      }
+    ]
+  },
+  "locked_excluded_modules": {
+    "byte_identical": 5,
+    "total": 5,
+    "results": [
+      {
+        "path": "pages/6_DTI_Predictor.py",
+        "expected_sha256": "84b3ecec1356b7239a057459210af4cd130c57c08dd9449b7239d1fe5954e0cc",
+        "actual_sha256": "84b3ecec1356b7239a057459210af4cd130c57c08dd9449b7239d1fe5954e0cc",
+        "byte_identical": true
+      },
+      {
+        "path": "pages/74_DTI_Validation_Evidence_Center.py",
+        "expected_sha256": "a700a8a21649b49cf0e3a1521d2afad45039b83b767c2fe730b93fee7d4f7f11",
+        "actual_sha256": "a700a8a21649b49cf0e3a1521d2afad45039b83b767c2fe730b93fee7d4f7f11",
+        "byte_identical": true
+      },
+      {
+        "path": "pages/109_Lab_Instrument_Import_Center.py",
+        "expected_sha256": "22b5aba5bfea37bb1ef330ed7cca3773467463f883189602d96a0151311c8f70",
+        "actual_sha256": "22b5aba5bfea37bb1ef330ed7cca3773467463f883189602d96a0151311c8f70",
+        "byte_identical": true
+      },
+      {
+        "path": "pages/126_LIMS_ELN_and_Sample_Chain_of_Custody_Hub.py",
+        "expected_sha256": "eadaef1a283a5fa11ce6b243aa561508ba9ceba9f6fdcc207f4853ccf7d86905",
+        "actual_sha256": "eadaef1a283a5fa11ce6b243aa561508ba9ceba9f6fdcc207f4853ccf7d86905",
+        "byte_identical": true
+      },
+      {
+        "path": "pages/157_Instrument_Integration_Hub_2.py",
+        "expected_sha256": "cf3a5f94756def0007dbff31184ec276d90b03fc6d6e1ca792c87189e5ab7d6d",
+        "actual_sha256": "cf3a5f94756def0007dbff31184ec276d90b03fc6d6e1ca792c87189e5ab7d6d",
+        "byte_identical": true
+      }
+    ]
+  },
+  "external_boundary": "Model weights, licences, GPU compatibility, structure quality and experimental confirmation remain external project evidence. No fake weights or wet-lab results are bundled.",
+  "incomplete_test_boundary": "The all-at-once non-visual collection reached the execution timeout around 15% without reported failures. Only completed deterministic shards are counted."
+}

@@ -1,0 +1,22 @@
+{
+  "schema": "biointel.step106.verification.v1",
+  "generated_at_utc": "2026-07-10T15:32:17.594361+00:00",
+  "version": "10.6.0",
+  "command": [
+    "/opt/pyvenv/bin/python",
+    "-m",
+    "pytest",
+    "-q",
+    "tests/test_step101_release.py",
+    "tests/test_step102_scientific_expansion.py",
+    "tests/test_step103_advanced_scientific_depth.py",
+    "tests/test_step104_optimized_expansion.py",
+    "tests/test_step105_reliability_optimization.py",
+    "tests/test_step105_windows_upload_hotfix.py",
+    "tests/test_step106_scientific_workbench_ui.py"
+  ],
+  "return_code": 0,
+  "passed": true,
+  "stdout": "..........................................                               [100%]\n42 passed in 6.07s\n",
+  "stderr": ""
+}

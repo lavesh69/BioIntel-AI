@@ -1,0 +1,223 @@
+{
+  "schema": "biointel.step123.final-validation.v1",
+  "version": "12.3.0",
+  "generated_at_utc": "2026-07-11T13:42:55+00:00",
+  "scope": "Full optimization, stability, error handling and smooth-runtime qualification without functional module removal.",
+  "tests": {
+    "collected": 977,
+    "passed": 955,
+    "skipped": 22,
+    "failed": 0,
+    "top_level_passed": 894,
+    "integration_passed": 3,
+    "operations_passed": 31,
+    "scientific_passed": 25,
+    "e2e_passed": 1,
+    "e2e_skipped": 5,
+    "visual_passed": 1,
+    "visual_skipped": 17,
+    "skip_boundary": [
+      "5 E2E tests require BIOINTEL_RUN_E2E=1 and an enabled browser/server environment.",
+      "17 visual tests are isolated to visual CI or require BIOINTEL_RUN_VISUAL_TESTS=1."
+    ]
+  },
+  "streamlit_runtime": {
+    "representative_surfaces_passed": 9,
+    "runtime_exceptions": 0,
+    "includes_scientific_data_readiness_after_optimization": true
+  },
+  "python_syntax": {
+    "files": 875,
+    "passed": true,
+    "failures": []
+  },
+  "database_integrity": {
+    "count": 36,
+    "healthy": 36,
+    "total_rows": 108425,
+    "foreign_key_issues": 0,
+    "baseline_database_hashes_unchanged": true,
+    "changed_baseline_databases": []
+  },
+  "optimization": {
+    "database_health_cold_ms": 656.886,
+    "database_health_warm_ms": 6.337,
+    "warm_speedup": 103.7,
+    "managed_sqlite_direct_call_sites_remaining": 0,
+    "managed_sqlite_violations": [],
+    "windows_runtime_controls": true,
+    "wal_aware_cache_invalidation": true,
+    "atomic_runtime_error_reports": true
+  },
+  "engineering_gate": {
+    "passed": true,
+    "results": [
+      {
+        "evidence": "packages=32 invalid=0 sha256=b609c6dd48d814c6c9f5f1afa46892060d1d0ae1587034b826b8272328a385a0",
+        "name": "exact_dependency_lock",
+        "passed": true
+      },
+      {
+        "evidence": "violations=0",
+        "name": "architecture_boundaries",
+        "passed": true
+      },
+      {
+        "evidence": "overdue=0",
+        "name": "technical_debt_expiry",
+        "passed": true
+      },
+      {
+        "evidence": "offenders=0",
+        "name": "module_size_budget",
+        "passed": true
+      }
+    ]
+  },
+  "step123_verifier": {
+    "passed": true,
+    "passed_checks": 8,
+    "total_checks": 8
+  },
+  "preservation": {
+    "baseline_files": 3828,
+    "release_files_before_manifest": 3808,
+    "added_files": 68,
+    "changed_files": 115,
+    "removed_files": 88,
+    "removed_runtime_residue": [
+      "data/discovery_projects.sqlite3-shm",
+      "data/discovery_projects.sqlite3-wal",
+      "data/lab_analytics.sqlite3-shm",
+      "data/lab_analytics.sqlite3-wal",
+      "reports/analytics.sqlite3-shm",
+      "reports/analytics.sqlite3-wal",
+      "reports/api_security.sqlite3-shm",
+      "reports/api_security.sqlite3-wal",
+      "reports/assets.sqlite3-shm",
+      "reports/assets.sqlite3-wal",
+      "reports/biotechnology_project_runs.sqlite3-shm",
+      "reports/biotechnology_project_runs.sqlite3-wal",
+      "reports/connected_sources.sqlite3-shm",
+      "reports/connected_sources.sqlite3-wal",
+      "reports/datasets.sqlite3-shm",
+      "reports/datasets.sqlite3-wal",
+      "reports/document_history.sqlite3-shm",
+      "reports/document_history.sqlite3-wal",
+      "reports/evidence.sqlite3-shm",
+      "reports/evidence.sqlite3-wal",
+      "reports/experiments.sqlite3-shm",
+      "reports/experiments.sqlite3-wal",
+      "reports/feature_cache.sqlite3-shm",
+      "reports/feature_cache.sqlite3-wal",
+      "reports/internet_downloads.sqlite3-shm",
+      "reports/internet_downloads.sqlite3-wal",
+      "reports/jobs.sqlite3-shm",
+      "reports/jobs.sqlite3-wal",
+      "reports/knowledge.sqlite3-shm",
+      "reports/knowledge.sqlite3-wal",
+      "reports/projects.sqlite3-shm",
+      "reports/projects.sqlite3-wal",
+      "reports/prospective_validation.sqlite3-shm",
+      "reports/prospective_validation.sqlite3-wal",
+      "reports/realworld_evidence.sqlite3-shm",
+      "reports/realworld_evidence.sqlite3-wal",
+      "reports/relationships.sqlite3-shm",
+      "reports/relationships.sqlite3-wal",
+      "reports/scientific_evidence.sqlite3-shm",
+      "reports/scientific_evidence.sqlite3-wal",
+      "reports/tenants.sqlite3-shm",
+      "reports/tenants.sqlite3-wal",
+      "reports/validation_evidence.sqlite3-shm",
+      "reports/validation_evidence.sqlite3-wal",
+      "reports/viewer_sync.sqlite3-shm",
+      "reports/viewer_sync.sqlite3-wal",
+      "src/biointel/__pycache__/__init__.cpython-313.pyc",
+      "src/biointel/__pycache__/provenance.cpython-313.pyc",
+      "src/biointel/assets/__pycache__/__init__.cpython-313.pyc",
+      "src/biointel/assets/__pycache__/research_assets.cpython-313.pyc",
+      "src/biointel/chemistry/__pycache__/__init__.cpython-313.pyc",
+      "src/biointel/chemistry/__pycache__/descriptors.cpython-313.pyc",
+      "src/biointel/chemistry/__pycache__/fingerprints.cpython-313.pyc",
+      "src/biointel/chemistry/__pycache__/smiles_validator.cpython-313.pyc",
+      "src/biointel/data/__pycache__/__init__.cpython-313.pyc",
+      "src/biointel/data/__pycache__/dataset_registry.cpython-313.pyc",
+      "src/biointel/database/__pycache__/__init__.cpython-313.pyc",
+      "src/biointel/database/__pycache__/core.cpython-313.pyc",
+      "src/biointel/documents/__pycache__/__init__.cpython-313.pyc",
+      "src/biointel/documents/__pycache__/exporters.cpython-313.pyc",
+      "src/biointel/documents/__pycache__/extractor.cpython-313.pyc",
+      "src/biointel/documents/__pycache__/history.cpython-313.pyc",
+      "src/biointel/documents/__pycache__/intelligence.cpython-313.pyc",
+      "src/biointel/documents/__pycache__/models.cpython-313.pyc",
+      "src/biointel/documents/__pycache__/ocr.cpython-313.pyc",
+      "src/biointel/documents/__pycache__/security.cpython-313.pyc",
+      "src/biointel/documents/__pycache__/service.cpython-313.pyc",
+      "src/biointel/dti/__pycache__/__init__.cpython-313.pyc",
+      "src/biointel/dti/__pycache__/drug_features.cpython-313.pyc",
+      "src/biointel/dti/__pycache__/feature_combiner.cpython-313.pyc",
+      "src/biointel/dti/__pycache__/protein_features.cpython-313.pyc",
+      "src/biointel/intelligence/__pycache__/__init__.cpython-313.pyc",
+      "src/biointel/intelligence/__pycache__/data_intelligence.cpython-313.pyc",
+      "src/biointel/intelligence/__pycache__/knowledge_warehouse.cpython-313.pyc",
+      "src/biointel/observability/__pycache__/__init__.cpython-313.pyc",
+      "src/biointel/observability/__pycache__/analytics_store.cpython-313.pyc",
+      "src/biointel/portfolio/__pycache__/__init__.cpython-313.pyc",
+      "src/biointel/portfolio/__pycache__/project_registry.cpython-313.pyc",
+      "src/biointel/training/__pycache__/__init__.cpython-313.pyc",
+      "src/biointel/training/__pycache__/model_artifact.cpython-313.pyc",
+      "src/biointel/training/__pycache__/model_catalog.cpython-313.pyc",
+      "src/biointel/ui/__pycache__/__init__.cpython-313.pyc",
+      "src/biointel/ui/__pycache__/navigation.cpython-313.pyc",
+      "src/biointel/utils/__pycache__/__init__.cpython-313.pyc",
+      "src/biointel/utils/__pycache__/atomic_io.cpython-313.pyc",
+      "src/biointel/utils/__pycache__/audit_log.cpython-313.pyc",
+      "src/biointel/utils/__pycache__/constants.cpython-313.pyc",
+      "src/biointel/utils/__pycache__/exceptions.cpython-313.pyc"
+    ],
+    "functional_files_removed": [],
+    "feature_or_module_removed": false,
+    "locked_modules_byte_identical": 5,
+    "locked_modules_total": 5,
+    "locked_modules": [
+      {
+        "path": "pages/6_DTI_Predictor.py",
+        "expected_sha256": "84b3ecec1356b7239a057459210af4cd130c57c08dd9449b7239d1fe5954e0cc",
+        "actual_sha256": "84b3ecec1356b7239a057459210af4cd130c57c08dd9449b7239d1fe5954e0cc",
+        "byte_identical": true
+      },
+      {
+        "path": "pages/74_DTI_Validation_Evidence_Center.py",
+        "expected_sha256": "a700a8a21649b49cf0e3a1521d2afad45039b83b767c2fe730b93fee7d4f7f11",
+        "actual_sha256": "a700a8a21649b49cf0e3a1521d2afad45039b83b767c2fe730b93fee7d4f7f11",
+        "byte_identical": true
+      },
+      {
+        "path": "pages/109_Lab_Instrument_Import_Center.py",
+        "expected_sha256": "22b5aba5bfea37bb1ef330ed7cca3773467463f883189602d96a0151311c8f70",
+        "actual_sha256": "22b5aba5bfea37bb1ef330ed7cca3773467463f883189602d96a0151311c8f70",
+        "byte_identical": true
+      },
+      {
+        "path": "pages/126_LIMS_ELN_and_Sample_Chain_of_Custody_Hub.py",
+        "expected_sha256": "eadaef1a283a5fa11ce6b243aa561508ba9ceba9f6fdcc207f4853ccf7d86905",
+        "actual_sha256": "eadaef1a283a5fa11ce6b243aa561508ba9ceba9f6fdcc207f4853ccf7d86905",
+        "byte_identical": true
+      },
+      {
+        "path": "pages/157_Instrument_Integration_Hub_2.py",
+        "expected_sha256": "cf3a5f94756def0007dbff31184ec276d90b03fc6d6e1ca792c87189e5ab7d6d",
+        "actual_sha256": "cf3a5f94756def0007dbff31184ec276d90b03fc6d6e1ca792c87189e5ab7d6d",
+        "byte_identical": true
+      }
+    ]
+  },
+  "release_hygiene": {
+    "runtime_residue_files": [],
+    "cache_directories": [],
+    "clean": true
+  },
+  "tooling_boundary": "Ruff was not installed in the build environment; syntax compilation, engineering gates and the complete collected pytest inventory were used instead.",
+  "external_boundary": "Optimization does not provide licensed model weights, external scientific databases, wet-lab confirmation, clinical validation or regulatory authorization.",
+  "passed": true
+}

@@ -1,0 +1,443 @@
+{
+  "checks": [
+    {
+      "category": "Runtime",
+      "message": "Python 3.13.5",
+      "name": "Python version",
+      "status": "PASS"
+    },
+    {
+      "category": "Dependencies",
+      "message": "streamlit 1.58.0",
+      "name": "Import streamlit",
+      "status": "PASS"
+    },
+    {
+      "category": "Dependencies",
+      "message": "fastapi 0.128.2",
+      "name": "Import fastapi",
+      "status": "PASS"
+    },
+    {
+      "category": "Dependencies",
+      "message": "Bio 1.86",
+      "name": "Import Bio",
+      "status": "PASS"
+    },
+    {
+      "category": "Dependencies",
+      "message": "rdkit 2025.09.4",
+      "name": "Import rdkit",
+      "status": "PASS"
+    },
+    {
+      "category": "Dependencies",
+      "message": "sklearn 1.8.0",
+      "name": "Import sklearn",
+      "status": "PASS"
+    },
+    {
+      "category": "Dependencies",
+      "message": "pandas 2.2.3",
+      "name": "Import pandas",
+      "status": "PASS"
+    },
+    {
+      "category": "Dependencies",
+      "message": "numpy 2.3.5",
+      "name": "Import numpy",
+      "status": "PASS"
+    },
+    {
+      "category": "Dependencies",
+      "message": "plotly 6.5.2",
+      "name": "Import plotly",
+      "status": "PASS"
+    },
+    {
+      "category": "Dependencies",
+      "message": "reportlab 4.4.9",
+      "name": "Import reportlab",
+      "status": "PASS"
+    },
+    {
+      "category": "Dependencies",
+      "message": "joblib 1.5.3",
+      "name": "Import joblib",
+      "status": "PASS"
+    },
+    {
+      "category": "Dependencies",
+      "message": "pypdf 5.9.0",
+      "name": "Import pypdf",
+      "status": "PASS"
+    },
+    {
+      "category": "Dependencies",
+      "message": "pdfplumber 0.11.9",
+      "name": "Import pdfplumber",
+      "status": "PASS"
+    },
+    {
+      "category": "Dependencies",
+      "message": "docx 1.2.0",
+      "name": "Import docx",
+      "status": "PASS"
+    },
+    {
+      "category": "Dependencies",
+      "message": "openpyxl 3.1.5",
+      "name": "Import openpyxl",
+      "status": "PASS"
+    },
+    {
+      "category": "Dependencies",
+      "message": "xlrd 2.0.2",
+      "name": "Import xlrd",
+      "status": "PASS"
+    },
+    {
+      "category": "Dependencies",
+      "message": "multipart 0.0.29",
+      "name": "Import multipart",
+      "status": "PASS"
+    },
+    {
+      "category": "Dependencies",
+      "message": "pytesseract 0.3.13",
+      "name": "Import pytesseract",
+      "status": "PASS"
+    },
+    {
+      "category": "Dependencies",
+      "message": "pypdfium2 installed",
+      "name": "Import pypdfium2",
+      "status": "PASS"
+    },
+    {
+      "category": "Dependencies",
+      "message": "pptx 1.0.2",
+      "name": "Import pptx",
+      "status": "PASS"
+    },
+    {
+      "category": "Dependencies",
+      "message": "bs4 4.14.3",
+      "name": "Import bs4",
+      "status": "PASS"
+    },
+    {
+      "category": "Dependencies",
+      "message": "yaml 6.0.3",
+      "name": "Import yaml",
+      "status": "PASS"
+    },
+    {
+      "category": "Dependencies",
+      "message": "odf installed",
+      "name": "Import odf",
+      "status": "PASS"
+    },
+    {
+      "category": "Storage",
+      "message": "models is writable",
+      "name": "Writable models",
+      "status": "PASS"
+    },
+    {
+      "category": "Storage",
+      "message": "reports is writable",
+      "name": "Writable reports",
+      "status": "PASS"
+    },
+    {
+      "category": "Storage",
+      "message": "cache/external is writable",
+      "name": "Writable cache/external",
+      "status": "PASS"
+    },
+    {
+      "category": "Storage",
+      "message": "data/internet_downloads is writable",
+      "name": "Writable data/internet_downloads",
+      "status": "PASS"
+    },
+    {
+      "category": "Storage",
+      "message": "data/document_extractions is writable",
+      "name": "Writable data/document_extractions",
+      "status": "PASS"
+    },
+    {
+      "category": "Models",
+      "message": "classification, artifact 7.0.0",
+      "name": "Load demo_classification_model.joblib",
+      "status": "PASS"
+    },
+    {
+      "category": "Models",
+      "message": "regression, artifact 7.0.0",
+      "name": "Load demo_regression_model.joblib",
+      "status": "PASS"
+    },
+    {
+      "category": "Models",
+      "message": "classification, artifact 7.0.0",
+      "name": "Load packv2_classification_logistic_regression.joblib",
+      "status": "PASS"
+    },
+    {
+      "category": "Models",
+      "message": "classification, artifact 7.0.0",
+      "name": "Load packv2_classification_random_forest.joblib",
+      "status": "PASS"
+    },
+    {
+      "category": "Models",
+      "message": "regression, artifact 7.0.0",
+      "name": "Load packv2_regression_random_forest_foundation.joblib",
+      "status": "PASS"
+    },
+    {
+      "category": "Models",
+      "message": "regression, artifact 7.0.0",
+      "name": "Load packv2_regression_ridge.joblib",
+      "status": "PASS"
+    },
+    {
+      "category": "Models",
+      "message": "classification, artifact 7.0.0",
+      "name": "Load packv3_classification_extra_trees.joblib",
+      "status": "PASS"
+    },
+    {
+      "category": "Models",
+      "message": "classification, artifact 7.0.0",
+      "name": "Load packv3_classification_sgd_logistic.joblib",
+      "status": "PASS"
+    },
+    {
+      "category": "Models",
+      "message": "regression, artifact 7.0.0",
+      "name": "Load packv3_regression_elastic_net.joblib",
+      "status": "PASS"
+    },
+    {
+      "category": "Models",
+      "message": "regression, artifact 7.0.0",
+      "name": "Load packv3_regression_extra_trees_foundation.joblib",
+      "status": "PASS"
+    },
+    {
+      "category": "Models",
+      "message": "regression, artifact 7.0.0",
+      "name": "Load packv3_regression_sgd.joblib",
+      "status": "PASS"
+    },
+    {
+      "category": "Models",
+      "message": "classification, artifact 7.0.0",
+      "name": "Load packv4_double_classification_extra_trees.joblib",
+      "status": "PASS"
+    },
+    {
+      "category": "Models",
+      "message": "classification, artifact 7.0.0",
+      "name": "Load packv4_double_classification_random_forest.joblib",
+      "status": "PASS"
+    },
+    {
+      "category": "Models",
+      "message": "classification, artifact 7.0.0",
+      "name": "Load packv4_double_classification_sgd_logistic.joblib",
+      "status": "PASS"
+    },
+    {
+      "category": "Models",
+      "message": "regression, artifact 7.0.0",
+      "name": "Load packv4_double_regression_extra_trees.joblib",
+      "status": "PASS"
+    },
+    {
+      "category": "Models",
+      "message": "regression, artifact 7.0.0",
+      "name": "Load packv4_double_regression_ridge.joblib",
+      "status": "PASS"
+    },
+    {
+      "category": "Models",
+      "message": "regression, artifact 7.0.0",
+      "name": "Load packv4_double_regression_sgd.joblib",
+      "status": "PASS"
+    },
+    {
+      "category": "Models",
+      "message": "classification, artifact 7.0.0",
+      "name": "Load packv5_5x_classification_extra_trees.joblib",
+      "status": "PASS"
+    },
+    {
+      "category": "Models",
+      "message": "classification, artifact 7.0.0",
+      "name": "Load packv5_5x_classification_random_forest.joblib",
+      "status": "PASS"
+    },
+    {
+      "category": "Models",
+      "message": "classification, artifact 7.0.0",
+      "name": "Load packv5_5x_classification_sgd_logistic.joblib",
+      "status": "PASS"
+    },
+    {
+      "category": "Models",
+      "message": "regression, artifact 7.0.0",
+      "name": "Load packv5_5x_regression_extra_trees.joblib",
+      "status": "PASS"
+    },
+    {
+      "category": "Models",
+      "message": "regression, artifact 7.0.0",
+      "name": "Load packv5_5x_regression_ridge.joblib",
+      "status": "PASS"
+    },
+    {
+      "category": "Models",
+      "message": "regression, artifact 7.0.0",
+      "name": "Load packv5_5x_regression_sgd.joblib",
+      "status": "PASS"
+    },
+    {
+      "category": "Data",
+      "message": "31 file(s), 223930 bundled row(s)",
+      "name": "Bundled data-pack integrity",
+      "status": "PASS"
+    },
+    {
+      "category": "Data",
+      "message": "9 file(s), 800 sequences, 1000 molecules",
+      "name": "Complete coverage-pack integrity",
+      "status": "PASS"
+    },
+    {
+      "category": "Databases",
+      "message": "13 databases, 89051 rows, 167 indices",
+      "name": "Professional database fabric",
+      "status": "PASS"
+    },
+    {
+      "category": "Databases",
+      "message": "38306 rows, 19 indices, wal journal",
+      "name": "Knowledge warehouse",
+      "status": "PASS"
+    },
+    {
+      "category": "Databases",
+      "message": "17690 rows, 18 indices, wal journal",
+      "name": "Analytics warehouse",
+      "status": "PASS"
+    },
+    {
+      "category": "Databases",
+      "message": "16309 rows, 15 indices, wal journal",
+      "name": "Assets warehouse",
+      "status": "PASS"
+    },
+    {
+      "category": "Evidence",
+      "message": "5 licence profiles, 660 evidence links",
+      "name": "Step 25 evidence registry",
+      "status": "PASS"
+    },
+    {
+      "category": "Documents",
+      "message": "68 runs, 408 outputs, 137 indexed content records, 579 entities",
+      "name": "Step 27 document knowledge history",
+      "status": "PASS"
+    },
+    {
+      "category": "Chemistry",
+      "message": "5,000 names, 5,000 structures, 59 curated common names",
+      "name": "Compound-name directory",
+      "status": "PASS"
+    },
+    {
+      "category": "Internet",
+      "message": "HTTPS only, 250 MB limit, 2 retries",
+      "name": "Outbound internet security policy",
+      "status": "PASS"
+    },
+    {
+      "category": "Internet",
+      "message": "73 downloads, 14 indices, wal journal",
+      "name": "Internet download registry",
+      "status": "PASS"
+    },
+    {
+      "category": "Governance",
+      "message": "276 chained event(s), 0 legacy event(s)",
+      "name": "Audit chain integrity",
+      "status": "PASS"
+    },
+    {
+      "category": "Project files",
+      "message": "Present",
+      "name": "Required file: app.py",
+      "status": "PASS"
+    },
+    {
+      "category": "Project files",
+      "message": "Present",
+      "name": "Required file: requirements.txt",
+      "status": "PASS"
+    },
+    {
+      "category": "Project files",
+      "message": "Present",
+      "name": "Required file: RUN_APP_WINDOWS.bat",
+      "status": "PASS"
+    },
+    {
+      "category": "Project files",
+      "message": "Present",
+      "name": "Required file: RUN_API_WINDOWS.bat",
+      "status": "PASS"
+    },
+    {
+      "category": "Project files",
+      "message": "Present",
+      "name": "Required file: START_BIOINTEL_NO_LOGIN_WINDOWS.bat",
+      "status": "PASS"
+    },
+    {
+      "category": "Project files",
+      "message": "Present",
+      "name": "Required file: IMPORT_REAL_EVIDENCE_WINDOWS.bat",
+      "status": "PASS"
+    },
+    {
+      "category": "Project files",
+      "message": "Present",
+      "name": "Required file: VERIFY_STEP25_WINDOWS.bat",
+      "status": "PASS"
+    },
+    {
+      "category": "Project files",
+      "message": "Present",
+      "name": "Required file: EXTRACT_DOCUMENT_WINDOWS.bat",
+      "status": "PASS"
+    },
+    {
+      "category": "Project files",
+      "message": "Present",
+      "name": "Required file: VERIFY_STEP26_WINDOWS.bat",
+      "status": "PASS"
+    }
+  ],
+  "summary": {
+    "FAIL": 0,
+    "PASS": 72,
+    "WARN": 0,
+    "overall": "PASS",
+    "total": 72
+  }
+}

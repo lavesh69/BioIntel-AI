@@ -1,0 +1,648 @@
+{
+  "all_embedded_workspaces_linked": true,
+  "catalogue_counts": {
+    "auto_discovered_pages": 0,
+    "embedded_workspaces": 78,
+    "enhanced_pages": 77,
+    "linked_workspaces": 78,
+    "module_pages": 173,
+    "total_searchable_items": 251
+  },
+  "catalogue_integrity": {
+    "auto_discovered": [],
+    "catalogue_pages": 172,
+    "duplicate_keys": [],
+    "duplicate_paths": [],
+    "healthy": true,
+    "missing_from_catalogue": [],
+    "missing_on_disk": [],
+    "page_files": 172
+  },
+  "empty_search_count": 173,
+  "excluded_hashes": {
+    "pages/109_Lab_Instrument_Import_Center.py": {
+      "actual": "22b5aba5bfea37bb1ef330ed7cca3773467463f883189602d96a0151311c8f70",
+      "expected": "22b5aba5bfea37bb1ef330ed7cca3773467463f883189602d96a0151311c8f70"
+    },
+    "pages/126_LIMS_ELN_and_Sample_Chain_of_Custody_Hub.py": {
+      "actual": "eadaef1a283a5fa11ce6b243aa561508ba9ceba9f6fdcc207f4853ccf7d86905",
+      "expected": "eadaef1a283a5fa11ce6b243aa561508ba9ceba9f6fdcc207f4853ccf7d86905"
+    },
+    "pages/157_Instrument_Integration_Hub_2.py": {
+      "actual": "cf3a5f94756def0007dbff31184ec276d90b03fc6d6e1ca792c87189e5ab7d6d",
+      "expected": "cf3a5f94756def0007dbff31184ec276d90b03fc6d6e1ca792c87189e5ab7d6d"
+    },
+    "pages/6_DTI_Predictor.py": {
+      "actual": "84b3ecec1356b7239a057459210af4cd130c57c08dd9449b7239d1fe5954e0cc",
+      "expected": "84b3ecec1356b7239a057459210af4cd130c57c08dd9449b7239d1fe5954e0cc"
+    },
+    "pages/74_DTI_Validation_Evidence_Center.py": {
+      "actual": "a700a8a21649b49cf0e3a1521d2afad45039b83b767c2fe730b93fee7d4f7f11",
+      "expected": "a700a8a21649b49cf0e3a1521d2afad45039b83b767c2fe730b93fee7d4f7f11"
+    }
+  },
+  "minimum_body_contrast": 11.17,
+  "passed": true,
+  "theme_health": [
+    {
+      "accessibility": 100,
+      "appearance": "Dark",
+      "body_contrast": 19.09,
+      "issues": [],
+      "muted_contrast": 7.79,
+      "overall": 96,
+      "theme": "Executive"
+    },
+    {
+      "accessibility": 100,
+      "appearance": "Dark",
+      "body_contrast": 19.09,
+      "issues": [],
+      "muted_contrast": 7.79,
+      "overall": 98,
+      "theme": "Clinical"
+    },
+    {
+      "accessibility": 100,
+      "appearance": "Dark",
+      "body_contrast": 19.09,
+      "issues": [],
+      "muted_contrast": 7.79,
+      "overall": 98,
+      "theme": "Regulatory"
+    },
+    {
+      "accessibility": 96,
+      "appearance": "Dark",
+      "body_contrast": 19.09,
+      "issues": [],
+      "muted_contrast": 7.79,
+      "overall": 91,
+      "theme": "Aurora"
+    },
+    {
+      "accessibility": 100,
+      "appearance": "Dark",
+      "body_contrast": 19.09,
+      "issues": [],
+      "muted_contrast": 7.79,
+      "overall": 96,
+      "theme": "Ocean"
+    },
+    {
+      "accessibility": 100,
+      "appearance": "Dark",
+      "body_contrast": 19.09,
+      "issues": [],
+      "muted_contrast": 7.79,
+      "overall": 95,
+      "theme": "Emerald"
+    },
+    {
+      "accessibility": 96,
+      "appearance": "Dark",
+      "body_contrast": 19.09,
+      "issues": [],
+      "muted_contrast": 7.79,
+      "overall": 91,
+      "theme": "Rose"
+    },
+    {
+      "accessibility": 100,
+      "appearance": "Dark",
+      "body_contrast": 19.24,
+      "issues": [],
+      "muted_contrast": 7.85,
+      "overall": 98,
+      "theme": "Midnight Graphite"
+    },
+    {
+      "accessibility": 100,
+      "appearance": "Dark",
+      "body_contrast": 17.63,
+      "issues": [],
+      "muted_contrast": 7.2,
+      "overall": 95,
+      "theme": "Nordic Frost"
+    },
+    {
+      "accessibility": 100,
+      "appearance": "Dark",
+      "body_contrast": 17.8,
+      "issues": [],
+      "muted_contrast": 7.26,
+      "overall": 96,
+      "theme": "Solarized Lab"
+    },
+    {
+      "accessibility": 100,
+      "appearance": "Dark",
+      "body_contrast": 19.67,
+      "issues": [],
+      "muted_contrast": 8.03,
+      "overall": 93,
+      "theme": "Deep Space"
+    },
+    {
+      "accessibility": 100,
+      "appearance": "Dark",
+      "body_contrast": 18.33,
+      "issues": [],
+      "muted_contrast": 7.48,
+      "overall": 93,
+      "theme": "BioMatrix"
+    },
+    {
+      "accessibility": 96,
+      "appearance": "Dark",
+      "body_contrast": 18.88,
+      "issues": [],
+      "muted_contrast": 7.7,
+      "overall": 87,
+      "theme": "Royal Amethyst"
+    },
+    {
+      "accessibility": 100,
+      "appearance": "Dark",
+      "body_contrast": 18.63,
+      "issues": [],
+      "muted_contrast": 7.6,
+      "overall": 95,
+      "theme": "Ember Forge"
+    },
+    {
+      "accessibility": 96,
+      "appearance": "Dark",
+      "body_contrast": 18.03,
+      "issues": [],
+      "muted_contrast": 7.36,
+      "overall": 87,
+      "theme": "Arctic Glass"
+    },
+    {
+      "accessibility": 96,
+      "appearance": "Dark",
+      "body_contrast": 18.66,
+      "issues": [],
+      "muted_contrast": 7.61,
+      "overall": 91,
+      "theme": "Sakura Research"
+    },
+    {
+      "accessibility": 100,
+      "appearance": "Dark",
+      "body_contrast": 19.48,
+      "issues": [],
+      "muted_contrast": 7.95,
+      "overall": 98,
+      "theme": "Monochrome Pro"
+    },
+    {
+      "accessibility": 100,
+      "appearance": "Dark",
+      "body_contrast": 19.1,
+      "issues": [],
+      "muted_contrast": 7.79,
+      "overall": 96,
+      "theme": "Genomic Noir"
+    },
+    {
+      "accessibility": 100,
+      "appearance": "Dark",
+      "body_contrast": 19.48,
+      "issues": [],
+      "muted_contrast": 7.95,
+      "overall": 93,
+      "theme": "Helix Quantum"
+    },
+    {
+      "accessibility": 100,
+      "appearance": "Dark",
+      "body_contrast": 18.45,
+      "issues": [],
+      "muted_contrast": 7.53,
+      "overall": 96,
+      "theme": "CRISPR Cyan"
+    },
+    {
+      "accessibility": 100,
+      "appearance": "Dark",
+      "body_contrast": 18.83,
+      "issues": [],
+      "muted_contrast": 7.69,
+      "overall": 98,
+      "theme": "Proteome Platinum"
+    },
+    {
+      "accessibility": 100,
+      "appearance": "Dark",
+      "body_contrast": 18.41,
+      "issues": [],
+      "muted_contrast": 7.51,
+      "overall": 96,
+      "theme": "Cell Atlas"
+    },
+    {
+      "accessibility": 100,
+      "appearance": "Dark",
+      "body_contrast": 19.02,
+      "issues": [],
+      "muted_contrast": 7.76,
+      "overall": 93,
+      "theme": "Neural Biotech"
+    },
+    {
+      "accessibility": 100,
+      "appearance": "Dark",
+      "body_contrast": 18.65,
+      "issues": [],
+      "muted_contrast": 7.61,
+      "overall": 96,
+      "theme": "Quantum Enzyme"
+    },
+    {
+      "accessibility": 100,
+      "appearance": "Dark",
+      "body_contrast": 18.56,
+      "issues": [],
+      "muted_contrast": 7.57,
+      "overall": 96,
+      "theme": "Botanical Circuit"
+    },
+    {
+      "accessibility": 100,
+      "appearance": "Dark",
+      "body_contrast": 18.72,
+      "issues": [],
+      "muted_contrast": 7.64,
+      "overall": 98,
+      "theme": "Clinical Sapphire"
+    },
+    {
+      "accessibility": 100,
+      "appearance": "Dark",
+      "body_contrast": 19.83,
+      "issues": [],
+      "muted_contrast": 8.09,
+      "overall": 98,
+      "theme": "Molecular Carbon"
+    },
+    {
+      "accessibility": 100,
+      "appearance": "Dark",
+      "body_contrast": 19.22,
+      "issues": [],
+      "muted_contrast": 7.84,
+      "overall": 95,
+      "theme": "Spatial Omics"
+    },
+    {
+      "accessibility": 100,
+      "appearance": "Dark",
+      "body_contrast": 18.87,
+      "issues": [],
+      "muted_contrast": 7.7,
+      "overall": 93,
+      "theme": "BioLuminescence"
+    },
+    {
+      "accessibility": 100,
+      "appearance": "Dark",
+      "body_contrast": 18.54,
+      "issues": [],
+      "muted_contrast": 7.56,
+      "overall": 96,
+      "theme": "Pathway Gold"
+    },
+    {
+      "accessibility": 96,
+      "appearance": "Dark",
+      "body_contrast": 18.33,
+      "issues": [],
+      "muted_contrast": 7.48,
+      "overall": 91,
+      "theme": "Cryo-EM Frost"
+    },
+    {
+      "accessibility": 96,
+      "appearance": "Dark",
+      "body_contrast": 18.94,
+      "issues": [],
+      "muted_contrast": 7.73,
+      "overall": 91,
+      "theme": "Synthetic Biology"
+    },
+    {
+      "accessibility": 100,
+      "appearance": "Light",
+      "body_contrast": 14.63,
+      "issues": [],
+      "muted_contrast": 5.55,
+      "overall": 97,
+      "theme": "Executive"
+    },
+    {
+      "accessibility": 100,
+      "appearance": "Light",
+      "body_contrast": 11.59,
+      "issues": [],
+      "muted_contrast": 5.04,
+      "overall": 98,
+      "theme": "Clinical"
+    },
+    {
+      "accessibility": 100,
+      "appearance": "Light",
+      "body_contrast": 13.72,
+      "issues": [],
+      "muted_contrast": 5.1,
+      "overall": 98,
+      "theme": "Regulatory"
+    },
+    {
+      "accessibility": 96,
+      "appearance": "Light",
+      "body_contrast": 13.84,
+      "issues": [],
+      "muted_contrast": 5.48,
+      "overall": 91,
+      "theme": "Aurora"
+    },
+    {
+      "accessibility": 100,
+      "appearance": "Light",
+      "body_contrast": 11.48,
+      "issues": [],
+      "muted_contrast": 4.83,
+      "overall": 97,
+      "theme": "Ocean"
+    },
+    {
+      "accessibility": 100,
+      "appearance": "Light",
+      "body_contrast": 11.51,
+      "issues": [],
+      "muted_contrast": 4.88,
+      "overall": 95,
+      "theme": "Emerald"
+    },
+    {
+      "accessibility": 96,
+      "appearance": "Light",
+      "body_contrast": 12.86,
+      "issues": [],
+      "muted_contrast": 5.03,
+      "overall": 91,
+      "theme": "Rose"
+    },
+    {
+      "accessibility": 84,
+      "appearance": "Light",
+      "body_contrast": 13.05,
+      "issues": [
+        "Muted text needs stronger contrast."
+      ],
+      "muted_contrast": 4.47,
+      "overall": 93,
+      "theme": "Midnight Graphite"
+    },
+    {
+      "accessibility": 84,
+      "appearance": "Light",
+      "body_contrast": 12.15,
+      "issues": [
+        "Muted text needs stronger contrast."
+      ],
+      "muted_contrast": 4.46,
+      "overall": 90,
+      "theme": "Nordic Frost"
+    },
+    {
+      "accessibility": 100,
+      "appearance": "Light",
+      "body_contrast": 11.54,
+      "issues": [],
+      "muted_contrast": 4.88,
+      "overall": 97,
+      "theme": "Solarized Lab"
+    },
+    {
+      "accessibility": 100,
+      "appearance": "Light",
+      "body_contrast": 13.32,
+      "issues": [],
+      "muted_contrast": 5.28,
+      "overall": 94,
+      "theme": "Deep Space"
+    },
+    {
+      "accessibility": 100,
+      "appearance": "Light",
+      "body_contrast": 11.82,
+      "issues": [],
+      "muted_contrast": 4.64,
+      "overall": 94,
+      "theme": "BioMatrix"
+    },
+    {
+      "accessibility": 96,
+      "appearance": "Light",
+      "body_contrast": 12.37,
+      "issues": [],
+      "muted_contrast": 4.97,
+      "overall": 88,
+      "theme": "Royal Amethyst"
+    },
+    {
+      "accessibility": 100,
+      "appearance": "Light",
+      "body_contrast": 12.12,
+      "issues": [],
+      "muted_contrast": 4.86,
+      "overall": 95,
+      "theme": "Ember Forge"
+    },
+    {
+      "accessibility": 80,
+      "appearance": "Light",
+      "body_contrast": 11.74,
+      "issues": [
+        "Muted text needs stronger contrast."
+      ],
+      "muted_contrast": 4.49,
+      "overall": 83,
+      "theme": "Arctic Glass"
+    },
+    {
+      "accessibility": 96,
+      "appearance": "Light",
+      "body_contrast": 12.47,
+      "issues": [],
+      "muted_contrast": 4.82,
+      "overall": 91,
+      "theme": "Sakura Research"
+    },
+    {
+      "accessibility": 100,
+      "appearance": "Light",
+      "body_contrast": 17.47,
+      "issues": [],
+      "muted_contrast": 6.28,
+      "overall": 98,
+      "theme": "Monochrome Pro"
+    },
+    {
+      "accessibility": 100,
+      "appearance": "Light",
+      "body_contrast": 11.53,
+      "issues": [],
+      "muted_contrast": 4.71,
+      "overall": 97,
+      "theme": "Genomic Noir"
+    },
+    {
+      "accessibility": 100,
+      "appearance": "Light",
+      "body_contrast": 12.73,
+      "issues": [],
+      "muted_contrast": 4.93,
+      "overall": 94,
+      "theme": "Helix Quantum"
+    },
+    {
+      "accessibility": 100,
+      "appearance": "Light",
+      "body_contrast": 11.22,
+      "issues": [],
+      "muted_contrast": 4.62,
+      "overall": 97,
+      "theme": "CRISPR Cyan"
+    },
+    {
+      "accessibility": 100,
+      "appearance": "Light",
+      "body_contrast": 13.24,
+      "issues": [],
+      "muted_contrast": 4.59,
+      "overall": 98,
+      "theme": "Proteome Platinum"
+    },
+    {
+      "accessibility": 84,
+      "appearance": "Light",
+      "body_contrast": 11.21,
+      "issues": [
+        "Muted text needs stronger contrast."
+      ],
+      "muted_contrast": 4.47,
+      "overall": 92,
+      "theme": "Cell Atlas"
+    },
+    {
+      "accessibility": 100,
+      "appearance": "Light",
+      "body_contrast": 11.84,
+      "issues": [],
+      "muted_contrast": 4.61,
+      "overall": 94,
+      "theme": "Neural Biotech"
+    },
+    {
+      "accessibility": 100,
+      "appearance": "Light",
+      "body_contrast": 11.3,
+      "issues": [],
+      "muted_contrast": 4.82,
+      "overall": 97,
+      "theme": "Quantum Enzyme"
+    },
+    {
+      "accessibility": 100,
+      "appearance": "Light",
+      "body_contrast": 11.84,
+      "issues": [],
+      "muted_contrast": 4.61,
+      "overall": 97,
+      "theme": "Botanical Circuit"
+    },
+    {
+      "accessibility": 84,
+      "appearance": "Light",
+      "body_contrast": 11.57,
+      "issues": [
+        "Muted text needs stronger contrast."
+      ],
+      "muted_contrast": 4.48,
+      "overall": 93,
+      "theme": "Clinical Sapphire"
+    },
+    {
+      "accessibility": 100,
+      "appearance": "Light",
+      "body_contrast": 16.95,
+      "issues": [],
+      "muted_contrast": 5.65,
+      "overall": 98,
+      "theme": "Molecular Carbon"
+    },
+    {
+      "accessibility": 100,
+      "appearance": "Light",
+      "body_contrast": 12.11,
+      "issues": [],
+      "muted_contrast": 4.76,
+      "overall": 95,
+      "theme": "Spatial Omics"
+    },
+    {
+      "accessibility": 100,
+      "appearance": "Light",
+      "body_contrast": 11.71,
+      "issues": [],
+      "muted_contrast": 4.58,
+      "overall": 94,
+      "theme": "BioLuminescence"
+    },
+    {
+      "accessibility": 100,
+      "appearance": "Light",
+      "body_contrast": 11.17,
+      "issues": [],
+      "muted_contrast": 4.95,
+      "overall": 97,
+      "theme": "Pathway Gold"
+    },
+    {
+      "accessibility": 80,
+      "appearance": "Light",
+      "body_contrast": 11.96,
+      "issues": [
+        "Muted text needs stronger contrast."
+      ],
+      "muted_contrast": 4.34,
+      "overall": 87,
+      "theme": "Cryo-EM Frost"
+    },
+    {
+      "accessibility": 96,
+      "appearance": "Light",
+      "body_contrast": 12.51,
+      "issues": [],
+      "muted_contrast": 4.73,
+      "overall": 91,
+      "theme": "Synthetic Biology"
+    }
+  ],
+  "theme_health_rows": 64,
+  "ui_results": {
+    "app.py": {
+      "exceptions": []
+    },
+    "pages/171_Module_Catalogue_Search.py": {
+      "exceptions": []
+    },
+    "pages/24_Appearance_Studio.py": {
+      "exceptions": []
+    }
+  }
+}

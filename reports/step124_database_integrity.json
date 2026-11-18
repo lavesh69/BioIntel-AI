@@ -1,0 +1,296 @@
+{
+  "database_count": 36,
+  "healthy_count": 36,
+  "total_rows": 108425,
+  "failures": [],
+  "details": [
+    {
+      "path": "data/clinical_pharma/clinical_validation.sqlite3",
+      "tables": 13,
+      "rows": 0,
+      "integrity": "ok",
+      "fk_issues": 0,
+      "healthy": true
+    },
+    {
+      "path": "data/discovery_projects.sqlite3",
+      "tables": 7,
+      "rows": 0,
+      "integrity": "ok",
+      "fk_issues": 0,
+      "healthy": true
+    },
+    {
+      "path": "data/lab_analytics.sqlite3",
+      "tables": 3,
+      "rows": 0,
+      "integrity": "ok",
+      "fk_issues": 0,
+      "healthy": true
+    },
+    {
+      "path": "data/reference_assets/reference_assets.sqlite3",
+      "tables": 2,
+      "rows": 0,
+      "integrity": "ok",
+      "fk_issues": 0,
+      "healthy": true
+    },
+    {
+      "path": "reports/analytics.sqlite3",
+      "tables": 5,
+      "rows": 17690,
+      "integrity": "ok",
+      "fk_issues": 0,
+      "healthy": true
+    },
+    {
+      "path": "reports/api_security.sqlite3",
+      "tables": 5,
+      "rows": 1611,
+      "integrity": "ok",
+      "fk_issues": 0,
+      "healthy": true
+    },
+    {
+      "path": "reports/assets.sqlite3",
+      "tables": 11,
+      "rows": 20547,
+      "integrity": "ok",
+      "fk_issues": 0,
+      "healthy": true
+    },
+    {
+      "path": "reports/batch_jobs/batch_prediction_sample_250.sqlite3",
+      "tables": 1,
+      "rows": 0,
+      "integrity": "ok",
+      "fk_issues": 0,
+      "healthy": true
+    },
+    {
+      "path": "reports/biotechnology_project_runs.sqlite3",
+      "tables": 2,
+      "rows": 0,
+      "integrity": "ok",
+      "fk_issues": 0,
+      "healthy": true
+    },
+    {
+      "path": "reports/connected_sources.sqlite3",
+      "tables": 4,
+      "rows": 0,
+      "integrity": "ok",
+      "fk_issues": 0,
+      "healthy": true
+    },
+    {
+      "path": "reports/datasets.sqlite3",
+      "tables": 13,
+      "rows": 5188,
+      "integrity": "ok",
+      "fk_issues": 0,
+      "healthy": true
+    },
+    {
+      "path": "reports/document_history.sqlite3",
+      "tables": 14,
+      "rows": 1973,
+      "integrity": "ok",
+      "fk_issues": 0,
+      "healthy": true
+    },
+    {
+      "path": "reports/evidence.sqlite3",
+      "tables": 10,
+      "rows": 3891,
+      "integrity": "ok",
+      "fk_issues": 0,
+      "healthy": true
+    },
+    {
+      "path": "reports/experiments.sqlite3",
+      "tables": 9,
+      "rows": 783,
+      "integrity": "ok",
+      "fk_issues": 0,
+      "healthy": true
+    },
+    {
+      "path": "reports/feature_cache.sqlite3",
+      "tables": 2,
+      "rows": 1293,
+      "integrity": "ok",
+      "fk_issues": 0,
+      "healthy": true
+    },
+    {
+      "path": "reports/internet_downloads.sqlite3",
+      "tables": 5,
+      "rows": 105,
+      "integrity": "ok",
+      "fk_issues": 0,
+      "healthy": true
+    },
+    {
+      "path": "reports/jobs.sqlite3",
+      "tables": 6,
+      "rows": 981,
+      "integrity": "ok",
+      "fk_issues": 0,
+      "healthy": true
+    },
+    {
+      "path": "reports/knowledge.sqlite3",
+      "tables": 10,
+      "rows": 38427,
+      "integrity": "ok",
+      "fk_issues": 0,
+      "healthy": true
+    },
+    {
+      "path": "reports/performance.sqlite3",
+      "tables": 1,
+      "rows": 0,
+      "integrity": "ok",
+      "fk_issues": 0,
+      "healthy": true
+    },
+    {
+      "path": "reports/projects.sqlite3",
+      "tables": 7,
+      "rows": 688,
+      "integrity": "ok",
+      "fk_issues": 0,
+      "healthy": true
+    },
+    {
+      "path": "reports/prospective_validation.sqlite3",
+      "tables": 4,
+      "rows": 0,
+      "integrity": "ok",
+      "fk_issues": 0,
+      "healthy": true
+    },
+    {
+      "path": "reports/realworld_evidence.sqlite3",
+      "tables": 6,
+      "rows": 21,
+      "integrity": "ok",
+      "fk_issues": 0,
+      "healthy": true
+    },
+    {
+      "path": "reports/relationships.sqlite3",
+      "tables": 4,
+      "rows": 2291,
+      "integrity": "ok",
+      "fk_issues": 0,
+      "healthy": true
+    },
+    {
+      "path": "reports/scientific_evidence.sqlite3",
+      "tables": 5,
+      "rows": 12903,
+      "integrity": "ok",
+      "fk_issues": 0,
+      "healthy": true
+    },
+    {
+      "path": "reports/step103_lims.sqlite3",
+      "tables": 2,
+      "rows": 0,
+      "integrity": "ok",
+      "fk_issues": 0,
+      "healthy": true
+    },
+    {
+      "path": "reports/step95_quality10_self_test/self_test_registry.sqlite3",
+      "tables": 4,
+      "rows": 14,
+      "integrity": "ok",
+      "fk_issues": 0,
+      "healthy": true
+    },
+    {
+      "path": "reports/tenants.sqlite3",
+      "tables": 4,
+      "rows": 3,
+      "integrity": "ok",
+      "fk_issues": 0,
+      "healthy": true
+    },
+    {
+      "path": "reports/validation_evidence.sqlite3",
+      "tables": 8,
+      "rows": 12,
+      "integrity": "ok",
+      "fk_issues": 0,
+      "healthy": true
+    },
+    {
+      "path": "reports/viewer_sync.sqlite3",
+      "tables": 2,
+      "rows": 0,
+      "integrity": "ok",
+      "fk_issues": 0,
+      "healthy": true
+    },
+    {
+      "path": "reports/workflow_automation.sqlite3",
+      "tables": 4,
+      "rows": 4,
+      "integrity": "ok",
+      "fk_issues": 0,
+      "healthy": true
+    },
+    {
+      "path": "workspace/quality10/workflow_runs.sqlite3",
+      "tables": 4,
+      "rows": 0,
+      "integrity": "ok",
+      "fk_issues": 0,
+      "healthy": true
+    },
+    {
+      "path": "workspace/reference_lifecycle/reference_lifecycle.sqlite3",
+      "tables": 3,
+      "rows": 0,
+      "integrity": "ok",
+      "fk_issues": 0,
+      "healthy": true
+    },
+    {
+      "path": "workspace/step104/jobs.sqlite3",
+      "tables": 6,
+      "rows": 0,
+      "integrity": "ok",
+      "fk_issues": 0,
+      "healthy": true
+    },
+    {
+      "path": "workspace/step104/platform.sqlite3",
+      "tables": 17,
+      "rows": 0,
+      "integrity": "ok",
+      "fk_issues": 0,
+      "healthy": true
+    },
+    {
+      "path": "workspace/visual_workspace.sqlite3",
+      "tables": 3,
+      "rows": 0,
+      "integrity": "ok",
+      "fk_issues": 0,
+      "healthy": true
+    },
+    {
+      "path": "workspace/workflow_runs/workflow_runs.sqlite3",
+      "tables": 4,
+      "rows": 0,
+      "integrity": "ok",
+      "fk_issues": 0,
+      "healthy": true
+    }
+  ]
+}

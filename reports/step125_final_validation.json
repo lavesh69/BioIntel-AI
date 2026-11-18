@@ -1,0 +1,16 @@
+{
+  "schema": "biointel.step125.final-validation.v1",
+  "version": "12.6.0",
+  "step125_verifier": {"passed": 11, "total": 11, "failures": 0},
+  "selected_tests": {"passed": 128, "skipped": 5, "failures": 0},
+  "streamlit_runtime": {"surfaces": 5, "passed": 5, "runtime_exceptions": 0},
+  "python_compilation": {"files": 883, "errors": 0},
+  "databases": {"total": 36, "healthy": 36, "rows_checked": 108497, "foreign_key_issues": 0},
+  "locked_modules": {"total": 5, "byte_identical": 5},
+  "functional_files_removed": 0,
+  "full_collection": {
+    "collected": 993,
+    "completed": false,
+    "reason": "The monolithic run exceeded the execution window and is not reported as a pass."
+  }
+}

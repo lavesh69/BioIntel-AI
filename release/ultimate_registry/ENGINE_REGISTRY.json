@@ -1,0 +1,3536 @@
+{
+  "schema": "biointel.engine-registry.v3",
+  "release_version": "15.6.0",
+  "release_step": 206,
+  "generated_at_utc": "2026-07-23T10:57:31+00:00",
+  "summary": {
+    "engines": 76,
+    "bundled": 0
+  },
+  "records": [
+    {
+      "id": "abricate",
+      "name": "ABRicate",
+      "label": "ABRicate",
+      "category": "Microbiology",
+      "scientific_purpose": "AMR/virulence screening",
+      "provider": "External scientific software provider; see licence URL and acquisition plan",
+      "capabilities": [
+        "AMR/virulence screening"
+      ],
+      "candidate_executables": [
+        "abricate"
+      ],
+      "executable_path": "Resolved and validated at runtime; never hardcoded",
+      "version_probe": [
+        "--version"
+      ],
+      "required_databases": [
+        "ABRicate database"
+      ],
+      "gpu_optional": false,
+      "installation_note": "",
+      "pinned_version": "",
+      "licence_url": "https://github.com/tseemann/abricate",
+      "artifact_sha256": "",
+      "licence_sha256": "",
+      "qualification_status": "unqualified",
+      "windows_native_evidence": "not-run",
+      "wsl2_evidence": "not-run",
+      "installation_type": "External Windows-native or WSL2/micromamba acquisition; not bundled",
+      "cpu_requirements": "Engine-specific; qualify on target machine",
+      "gpu_requirements": "No bundled GPU claim; verify provider requirements",
+      "memory_requirement": "Engine- and dataset-specific; qualify on representative workloads",
+      "configuration": "Engine Control Center managed metadata and environment configuration",
+      "test_command": [
+        "--version"
+      ],
+      "expected_test_output": "Successful version probe matching the pinned release plus positive/negative smoke evidence",
+      "last_test_date": "",
+      "health_status": "Unavailable until runtime detection and target qualification pass",
+      "failure_reason": "External artifact, licence, version or target-machine evidence incomplete",
+      "fallback": "Disable engine-backed action and preserve bounded built-in/offline workflow where scientifically valid",
+      "update_policy": "Explicit operator-approved update with checksum, licence and requalification",
+      "bundled": false,
+      "availability": "Detected at runtime; external engines are not claimed as bundled"
+    },
+    {
+      "id": "amrfinderplus",
+      "name": "NCBI AMRFinderPlus",
+      "label": "NCBI AMRFinderPlus",
+      "category": "AMR",
+      "scientific_purpose": "AMR gene and mutation detection",
+      "provider": "External scientific software provider; see licence URL and acquisition plan",
+      "capabilities": [
+        "AMR gene and mutation detection"
+      ],
+      "candidate_executables": [
+        "amrfinder"
+      ],
+      "executable_path": "Resolved and validated at runtime; never hardcoded",
+      "version_probe": [
+        "--version"
+      ],
+      "required_databases": [
+        "AMRFinderPlus database"
+      ],
+      "gpu_optional": false,
+      "installation_note": "",
+      "pinned_version": "",
+      "licence_url": "https://bioconda.github.io/recipes/amrfinderplus/README.html",
+      "artifact_sha256": "",
+      "licence_sha256": "",
+      "qualification_status": "unqualified",
+      "windows_native_evidence": "not-run",
+      "wsl2_evidence": "not-run",
+      "installation_type": "External Windows-native or WSL2/micromamba acquisition; not bundled",
+      "cpu_requirements": "Engine-specific; qualify on target machine",
+      "gpu_requirements": "No bundled GPU claim; verify provider requirements",
+      "memory_requirement": "Engine- and dataset-specific; qualify on representative workloads",
+      "configuration": "Engine Control Center managed metadata and environment configuration",
+      "test_command": [
+        "--version"
+      ],
+      "expected_test_output": "Successful version probe matching the pinned release plus positive/negative smoke evidence",
+      "last_test_date": "",
+      "health_status": "Unavailable until runtime detection and target qualification pass",
+      "failure_reason": "External artifact, licence, version or target-machine evidence incomplete",
+      "fallback": "Disable engine-backed action and preserve bounded built-in/offline workflow where scientifically valid",
+      "update_policy": "Explicit operator-approved update with checksum, licence and requalification",
+      "bundled": false,
+      "availability": "Detected at runtime; external engines are not claimed as bundled"
+    },
+    {
+      "id": "anarci",
+      "name": "ANARCI",
+      "label": "ANARCI",
+      "category": "Antibody engineering",
+      "scientific_purpose": "Antibody numbering | CDR annotation",
+      "provider": "External scientific software provider; see licence URL and acquisition plan",
+      "capabilities": [
+        "Antibody numbering",
+        "CDR annotation"
+      ],
+      "candidate_executables": [
+        "ANARCI",
+        "anarci"
+      ],
+      "executable_path": "Resolved and validated at runtime; never hardcoded",
+      "version_probe": [
+        "--version"
+      ],
+      "required_databases": [],
+      "gpu_optional": false,
+      "installation_note": "",
+      "pinned_version": "",
+      "licence_url": "https://bioconda.github.io/recipes/anarci/README.html",
+      "artifact_sha256": "",
+      "licence_sha256": "",
+      "qualification_status": "unqualified",
+      "windows_native_evidence": "not-run",
+      "wsl2_evidence": "not-run",
+      "installation_type": "External Windows-native or WSL2/micromamba acquisition; not bundled",
+      "cpu_requirements": "Engine-specific; qualify on target machine",
+      "gpu_requirements": "No bundled GPU claim; verify provider requirements",
+      "memory_requirement": "Engine- and dataset-specific; qualify on representative workloads",
+      "configuration": "Engine Control Center managed metadata and environment configuration",
+      "test_command": [
+        "--version"
+      ],
+      "expected_test_output": "Successful version probe matching the pinned release plus positive/negative smoke evidence",
+      "last_test_date": "",
+      "health_status": "Unavailable until runtime detection and target qualification pass",
+      "failure_reason": "External artifact, licence, version or target-machine evidence incomplete",
+      "fallback": "Disable engine-backed action and preserve bounded built-in/offline workflow where scientifically valid",
+      "update_policy": "Explicit operator-approved update with checksum, licence and requalification",
+      "bundled": false,
+      "availability": "Detected at runtime; external engines are not claimed as bundled"
+    },
+    {
+      "id": "bcftools",
+      "name": "BCFtools",
+      "label": "BCFtools",
+      "category": "Genomics",
+      "scientific_purpose": "VCF normalization | Filtering | Statistics | Index-aware querying",
+      "provider": "External scientific software provider; see licence URL and acquisition plan",
+      "capabilities": [
+        "VCF normalization",
+        "Filtering",
+        "Statistics",
+        "Index-aware querying"
+      ],
+      "candidate_executables": [
+        "bcftools"
+      ],
+      "executable_path": "Resolved and validated at runtime; never hardcoded",
+      "version_probe": [
+        "--version"
+      ],
+      "required_databases": [
+        "Reference FASTA"
+      ],
+      "gpu_optional": false,
+      "installation_note": "",
+      "pinned_version": "",
+      "licence_url": "https://bioconda.github.io/recipes/bcftools/README.html",
+      "artifact_sha256": "",
+      "licence_sha256": "",
+      "qualification_status": "unqualified",
+      "windows_native_evidence": "not-run",
+      "wsl2_evidence": "not-run",
+      "installation_type": "External Windows-native or WSL2/micromamba acquisition; not bundled",
+      "cpu_requirements": "Engine-specific; qualify on target machine",
+      "gpu_requirements": "No bundled GPU claim; verify provider requirements",
+      "memory_requirement": "Engine- and dataset-specific; qualify on representative workloads",
+      "configuration": "Engine Control Center managed metadata and environment configuration",
+      "test_command": [
+        "--version"
+      ],
+      "expected_test_output": "Successful version probe matching the pinned release plus positive/negative smoke evidence",
+      "last_test_date": "",
+      "health_status": "Unavailable until runtime detection and target qualification pass",
+      "failure_reason": "External artifact, licence, version or target-machine evidence incomplete",
+      "fallback": "Disable engine-backed action and preserve bounded built-in/offline workflow where scientifically valid",
+      "update_policy": "Explicit operator-approved update with checksum, licence and requalification",
+      "bundled": false,
+      "availability": "Detected at runtime; external engines are not claimed as bundled"
+    },
+    {
+      "id": "bedtools",
+      "name": "BEDTools",
+      "label": "BEDTools",
+      "category": "Genomics",
+      "scientific_purpose": "Interval arithmetic | Genome coverage",
+      "provider": "External scientific software provider; see licence URL and acquisition plan",
+      "capabilities": [
+        "Interval arithmetic",
+        "Genome coverage"
+      ],
+      "candidate_executables": [
+        "bedtools"
+      ],
+      "executable_path": "Resolved and validated at runtime; never hardcoded",
+      "version_probe": [
+        "--version"
+      ],
+      "required_databases": [],
+      "gpu_optional": false,
+      "installation_note": "",
+      "pinned_version": "",
+      "licence_url": "https://github.com/arq5x/bedtools2",
+      "artifact_sha256": "",
+      "licence_sha256": "",
+      "qualification_status": "unqualified",
+      "windows_native_evidence": "not-run",
+      "wsl2_evidence": "not-run",
+      "installation_type": "External Windows-native or WSL2/micromamba acquisition; not bundled",
+      "cpu_requirements": "Engine-specific; qualify on target machine",
+      "gpu_requirements": "No bundled GPU claim; verify provider requirements",
+      "memory_requirement": "Engine- and dataset-specific; qualify on representative workloads",
+      "configuration": "Engine Control Center managed metadata and environment configuration",
+      "test_command": [
+        "--version"
+      ],
+      "expected_test_output": "Successful version probe matching the pinned release plus positive/negative smoke evidence",
+      "last_test_date": "",
+      "health_status": "Unavailable until runtime detection and target qualification pass",
+      "failure_reason": "External artifact, licence, version or target-machine evidence incomplete",
+      "fallback": "Disable engine-backed action and preserve bounded built-in/offline workflow where scientifically valid",
+      "update_policy": "Explicit operator-approved update with checksum, licence and requalification",
+      "bundled": false,
+      "availability": "Detected at runtime; external engines are not claimed as bundled"
+    },
+    {
+      "id": "bgzip",
+      "name": "BGZF compressor",
+      "label": "BGZF compressor",
+      "category": "Genomics",
+      "scientific_purpose": "Block-gzip compression",
+      "provider": "External scientific software provider; see licence URL and acquisition plan",
+      "capabilities": [
+        "Block-gzip compression"
+      ],
+      "candidate_executables": [
+        "bgzip"
+      ],
+      "executable_path": "Resolved and validated at runtime; never hardcoded",
+      "version_probe": [
+        "--version"
+      ],
+      "required_databases": [],
+      "gpu_optional": false,
+      "installation_note": "Usually distributed with HTSlib.",
+      "pinned_version": "",
+      "licence_url": "https://www.htslib.org/",
+      "artifact_sha256": "",
+      "licence_sha256": "",
+      "qualification_status": "unqualified",
+      "windows_native_evidence": "not-run",
+      "wsl2_evidence": "not-run",
+      "installation_type": "External Windows-native or WSL2/micromamba acquisition; not bundled",
+      "cpu_requirements": "Engine-specific; qualify on target machine",
+      "gpu_requirements": "No bundled GPU claim; verify provider requirements",
+      "memory_requirement": "Engine- and dataset-specific; qualify on representative workloads",
+      "configuration": "Engine Control Center managed metadata and environment configuration",
+      "test_command": [
+        "--version"
+      ],
+      "expected_test_output": "Successful version probe matching the pinned release plus positive/negative smoke evidence",
+      "last_test_date": "",
+      "health_status": "Unavailable until runtime detection and target qualification pass",
+      "failure_reason": "External artifact, licence, version or target-machine evidence incomplete",
+      "fallback": "Disable engine-backed action and preserve bounded built-in/offline workflow where scientifically valid",
+      "update_policy": "Explicit operator-approved update with checksum, licence and requalification",
+      "bundled": false,
+      "availability": "Detected at runtime; external engines are not claimed as bundled"
+    },
+    {
+      "id": "blastn",
+      "name": "BLASTN",
+      "label": "BLASTN",
+      "category": "Genomics",
+      "scientific_purpose": "Nucleotide similarity search",
+      "provider": "External scientific software provider; see licence URL and acquisition plan",
+      "capabilities": [
+        "Nucleotide similarity search"
+      ],
+      "candidate_executables": [
+        "blastn"
+      ],
+      "executable_path": "Resolved and validated at runtime; never hardcoded",
+      "version_probe": [
+        "--version"
+      ],
+      "required_databases": [
+        "BLAST database"
+      ],
+      "gpu_optional": false,
+      "installation_note": "",
+      "pinned_version": "",
+      "licence_url": "https://bioconda.github.io/recipes/blastn/README.html",
+      "artifact_sha256": "",
+      "licence_sha256": "",
+      "qualification_status": "unqualified",
+      "windows_native_evidence": "not-run",
+      "wsl2_evidence": "not-run",
+      "installation_type": "External Windows-native or WSL2/micromamba acquisition; not bundled",
+      "cpu_requirements": "Engine-specific; qualify on target machine",
+      "gpu_requirements": "No bundled GPU claim; verify provider requirements",
+      "memory_requirement": "Engine- and dataset-specific; qualify on representative workloads",
+      "configuration": "Engine Control Center managed metadata and environment configuration",
+      "test_command": [
+        "--version"
+      ],
+      "expected_test_output": "Successful version probe matching the pinned release plus positive/negative smoke evidence",
+      "last_test_date": "",
+      "health_status": "Unavailable until runtime detection and target qualification pass",
+      "failure_reason": "External artifact, licence, version or target-machine evidence incomplete",
+      "fallback": "Disable engine-backed action and preserve bounded built-in/offline workflow where scientifically valid",
+      "update_policy": "Explicit operator-approved update with checksum, licence and requalification",
+      "bundled": false,
+      "availability": "Detected at runtime; external engines are not claimed as bundled"
+    },
+    {
+      "id": "blastp",
+      "name": "BLASTP",
+      "label": "BLASTP",
+      "category": "Protein annotation",
+      "scientific_purpose": "Protein similarity search",
+      "provider": "External scientific software provider; see licence URL and acquisition plan",
+      "capabilities": [
+        "Protein similarity search"
+      ],
+      "candidate_executables": [
+        "blastp",
+        "blastp.exe"
+      ],
+      "executable_path": "Resolved and validated at runtime; never hardcoded",
+      "version_probe": [
+        "--version"
+      ],
+      "required_databases": [
+        "BLAST protein database"
+      ],
+      "gpu_optional": false,
+      "installation_note": "",
+      "pinned_version": "",
+      "licence_url": "https://blast.ncbi.nlm.nih.gov/doc/blast-help/downloadblastdata.html",
+      "artifact_sha256": "",
+      "licence_sha256": "",
+      "qualification_status": "unqualified",
+      "windows_native_evidence": "not-run",
+      "wsl2_evidence": "not-run",
+      "installation_type": "External Windows-native or WSL2/micromamba acquisition; not bundled",
+      "cpu_requirements": "Engine-specific; qualify on target machine",
+      "gpu_requirements": "No bundled GPU claim; verify provider requirements",
+      "memory_requirement": "Engine- and dataset-specific; qualify on representative workloads",
+      "configuration": "Engine Control Center managed metadata and environment configuration",
+      "test_command": [
+        "--version"
+      ],
+      "expected_test_output": "Successful version probe matching the pinned release plus positive/negative smoke evidence",
+      "last_test_date": "",
+      "health_status": "Unavailable until runtime detection and target qualification pass",
+      "failure_reason": "External artifact, licence, version or target-machine evidence incomplete",
+      "fallback": "Disable engine-backed action and preserve bounded built-in/offline workflow where scientifically valid",
+      "update_policy": "Explicit operator-approved update with checksum, licence and requalification",
+      "bundled": false,
+      "availability": "Detected at runtime; external engines are not claimed as bundled"
+    },
+    {
+      "id": "bowtie",
+      "name": "Bowtie 2",
+      "label": "Bowtie 2",
+      "category": "Genomics",
+      "scientific_purpose": "Short-read alignment | CRISPR off-target candidate mapping",
+      "provider": "External scientific software provider; see licence URL and acquisition plan",
+      "capabilities": [
+        "Short-read alignment",
+        "CRISPR off-target candidate mapping"
+      ],
+      "candidate_executables": [
+        "bowtie2",
+        "bowtie2.exe"
+      ],
+      "executable_path": "Resolved and validated at runtime; never hardcoded",
+      "version_probe": [
+        "--version"
+      ],
+      "required_databases": [
+        "Bowtie 2 genome index"
+      ],
+      "gpu_optional": false,
+      "installation_note": "",
+      "pinned_version": "",
+      "licence_url": "https://bioconda.github.io/recipes/bowtie2/README.html",
+      "artifact_sha256": "",
+      "licence_sha256": "",
+      "qualification_status": "unqualified",
+      "windows_native_evidence": "not-run",
+      "wsl2_evidence": "not-run",
+      "installation_type": "External Windows-native or WSL2/micromamba acquisition; not bundled",
+      "cpu_requirements": "Engine-specific; qualify on target machine",
+      "gpu_requirements": "No bundled GPU claim; verify provider requirements",
+      "memory_requirement": "Engine- and dataset-specific; qualify on representative workloads",
+      "configuration": "Engine Control Center managed metadata and environment configuration",
+      "test_command": [
+        "--version"
+      ],
+      "expected_test_output": "Successful version probe matching the pinned release plus positive/negative smoke evidence",
+      "last_test_date": "",
+      "health_status": "Unavailable until runtime detection and target qualification pass",
+      "failure_reason": "External artifact, licence, version or target-machine evidence incomplete",
+      "fallback": "Disable engine-backed action and preserve bounded built-in/offline workflow where scientifically valid",
+      "update_policy": "Explicit operator-approved update with checksum, licence and requalification",
+      "bundled": false,
+      "availability": "Detected at runtime; external engines are not claimed as bundled"
+    },
+    {
+      "id": "bowtie2",
+      "name": "Bowtie 2",
+      "label": "Bowtie 2",
+      "category": "Genomics",
+      "scientific_purpose": "Short-read alignment",
+      "provider": "External scientific software provider; see licence URL and acquisition plan",
+      "capabilities": [
+        "Short-read alignment"
+      ],
+      "candidate_executables": [
+        "bowtie2"
+      ],
+      "executable_path": "Resolved and validated at runtime; never hardcoded",
+      "version_probe": [
+        "--version"
+      ],
+      "required_databases": [
+        "Bowtie2 index"
+      ],
+      "gpu_optional": false,
+      "installation_note": "",
+      "pinned_version": "",
+      "licence_url": "https://github.com/BenLangmead/bowtie2",
+      "artifact_sha256": "",
+      "licence_sha256": "",
+      "qualification_status": "unqualified",
+      "windows_native_evidence": "not-run",
+      "wsl2_evidence": "not-run",
+      "installation_type": "External Windows-native or WSL2/micromamba acquisition; not bundled",
+      "cpu_requirements": "Engine-specific; qualify on target machine",
+      "gpu_requirements": "No bundled GPU claim; verify provider requirements",
+      "memory_requirement": "Engine- and dataset-specific; qualify on representative workloads",
+      "configuration": "Engine Control Center managed metadata and environment configuration",
+      "test_command": [
+        "--version"
+      ],
+      "expected_test_output": "Successful version probe matching the pinned release plus positive/negative smoke evidence",
+      "last_test_date": "",
+      "health_status": "Unavailable until runtime detection and target qualification pass",
+      "failure_reason": "External artifact, licence, version or target-machine evidence incomplete",
+      "fallback": "Disable engine-backed action and preserve bounded built-in/offline workflow where scientifically valid",
+      "update_policy": "Explicit operator-approved update with checksum, licence and requalification",
+      "bundled": false,
+      "availability": "Detected at runtime; external engines are not claimed as bundled"
+    },
+    {
+      "id": "bracken",
+      "name": "Bracken",
+      "label": "Bracken",
+      "category": "Metagenomics",
+      "scientific_purpose": "Abundance re-estimation",
+      "provider": "External scientific software provider; see licence URL and acquisition plan",
+      "capabilities": [
+        "Abundance re-estimation"
+      ],
+      "candidate_executables": [
+        "bracken"
+      ],
+      "executable_path": "Resolved and validated at runtime; never hardcoded",
+      "version_probe": [
+        "--version"
+      ],
+      "required_databases": [
+        "Bracken database"
+      ],
+      "gpu_optional": false,
+      "installation_note": "",
+      "pinned_version": "",
+      "licence_url": "https://bioconda.github.io/recipes/bracken/README.html",
+      "artifact_sha256": "",
+      "licence_sha256": "",
+      "qualification_status": "unqualified",
+      "windows_native_evidence": "not-run",
+      "wsl2_evidence": "not-run",
+      "installation_type": "External Windows-native or WSL2/micromamba acquisition; not bundled",
+      "cpu_requirements": "Engine-specific; qualify on target machine",
+      "gpu_requirements": "No bundled GPU claim; verify provider requirements",
+      "memory_requirement": "Engine- and dataset-specific; qualify on representative workloads",
+      "configuration": "Engine Control Center managed metadata and environment configuration",
+      "test_command": [
+        "--version"
+      ],
+      "expected_test_output": "Successful version probe matching the pinned release plus positive/negative smoke evidence",
+      "last_test_date": "",
+      "health_status": "Unavailable until runtime detection and target qualification pass",
+      "failure_reason": "External artifact, licence, version or target-machine evidence incomplete",
+      "fallback": "Disable engine-backed action and preserve bounded built-in/offline workflow where scientifically valid",
+      "update_policy": "Explicit operator-approved update with checksum, licence and requalification",
+      "bundled": false,
+      "availability": "Detected at runtime; external engines are not claimed as bundled"
+    },
+    {
+      "id": "busco",
+      "name": "BUSCO",
+      "label": "BUSCO",
+      "category": "Genome assembly",
+      "scientific_purpose": "Assembly completeness",
+      "provider": "External scientific software provider; see licence URL and acquisition plan",
+      "capabilities": [
+        "Assembly completeness"
+      ],
+      "candidate_executables": [
+        "busco"
+      ],
+      "executable_path": "Resolved and validated at runtime; never hardcoded",
+      "version_probe": [
+        "--version"
+      ],
+      "required_databases": [
+        "BUSCO lineage"
+      ],
+      "gpu_optional": false,
+      "installation_note": "",
+      "pinned_version": "",
+      "licence_url": "https://bioconda.github.io/recipes/busco/README.html",
+      "artifact_sha256": "",
+      "licence_sha256": "",
+      "qualification_status": "unqualified",
+      "windows_native_evidence": "not-run",
+      "wsl2_evidence": "not-run",
+      "installation_type": "External Windows-native or WSL2/micromamba acquisition; not bundled",
+      "cpu_requirements": "Engine-specific; qualify on target machine",
+      "gpu_requirements": "No bundled GPU claim; verify provider requirements",
+      "memory_requirement": "Engine- and dataset-specific; qualify on representative workloads",
+      "configuration": "Engine Control Center managed metadata and environment configuration",
+      "test_command": [
+        "--version"
+      ],
+      "expected_test_output": "Successful version probe matching the pinned release plus positive/negative smoke evidence",
+      "last_test_date": "",
+      "health_status": "Unavailable until runtime detection and target qualification pass",
+      "failure_reason": "External artifact, licence, version or target-machine evidence incomplete",
+      "fallback": "Disable engine-backed action and preserve bounded built-in/offline workflow where scientifically valid",
+      "update_policy": "Explicit operator-approved update with checksum, licence and requalification",
+      "bundled": false,
+      "availability": "Detected at runtime; external engines are not claimed as bundled"
+    },
+    {
+      "id": "bwa",
+      "name": "BWA",
+      "label": "BWA",
+      "category": "Genomics",
+      "scientific_purpose": "Short-read mapping",
+      "provider": "External scientific software provider; see licence URL and acquisition plan",
+      "capabilities": [
+        "Short-read mapping"
+      ],
+      "candidate_executables": [
+        "bwa-mem2",
+        "bwa"
+      ],
+      "executable_path": "Resolved and validated at runtime; never hardcoded",
+      "version_probe": [
+        "--version"
+      ],
+      "required_databases": [],
+      "gpu_optional": false,
+      "installation_note": "",
+      "pinned_version": "",
+      "licence_url": "https://bioconda.github.io/recipes/bwa/README.html",
+      "artifact_sha256": "",
+      "licence_sha256": "",
+      "qualification_status": "unqualified",
+      "windows_native_evidence": "not-run",
+      "wsl2_evidence": "not-run",
+      "installation_type": "External Windows-native or WSL2/micromamba acquisition; not bundled",
+      "cpu_requirements": "Engine-specific; qualify on target machine",
+      "gpu_requirements": "No bundled GPU claim; verify provider requirements",
+      "memory_requirement": "Engine- and dataset-specific; qualify on representative workloads",
+      "configuration": "Engine Control Center managed metadata and environment configuration",
+      "test_command": [
+        "--version"
+      ],
+      "expected_test_output": "Successful version probe matching the pinned release plus positive/negative smoke evidence",
+      "last_test_date": "",
+      "health_status": "Unavailable until runtime detection and target qualification pass",
+      "failure_reason": "External artifact, licence, version or target-machine evidence incomplete",
+      "fallback": "Disable engine-backed action and preserve bounded built-in/offline workflow where scientifically valid",
+      "update_policy": "Explicit operator-approved update with checksum, licence and requalification",
+      "bundled": false,
+      "availability": "Detected at runtime; external engines are not claimed as bundled"
+    },
+    {
+      "id": "cellpose",
+      "name": "Cellpose",
+      "label": "Cellpose",
+      "category": "Bioimaging",
+      "scientific_purpose": "Cell/nucleus segmentation",
+      "provider": "External scientific software provider; see licence URL and acquisition plan",
+      "capabilities": [
+        "Cell/nucleus segmentation"
+      ],
+      "candidate_executables": [
+        "cellpose"
+      ],
+      "executable_path": "Resolved and validated at runtime; never hardcoded",
+      "version_probe": [
+        "--version"
+      ],
+      "required_databases": [],
+      "gpu_optional": true,
+      "installation_note": "",
+      "pinned_version": "",
+      "licence_url": "https://bioconda.github.io/recipes/cellpose/README.html",
+      "artifact_sha256": "",
+      "licence_sha256": "",
+      "qualification_status": "unqualified",
+      "windows_native_evidence": "not-run",
+      "wsl2_evidence": "not-run",
+      "installation_type": "External Windows-native or WSL2/micromamba acquisition; not bundled",
+      "cpu_requirements": "Engine-specific; qualify on target machine",
+      "gpu_requirements": "Optional where declared",
+      "memory_requirement": "Engine- and dataset-specific; qualify on representative workloads",
+      "configuration": "Engine Control Center managed metadata and environment configuration",
+      "test_command": [
+        "--version"
+      ],
+      "expected_test_output": "Successful version probe matching the pinned release plus positive/negative smoke evidence",
+      "last_test_date": "",
+      "health_status": "Unavailable until runtime detection and target qualification pass",
+      "failure_reason": "External artifact, licence, version or target-machine evidence incomplete",
+      "fallback": "Disable engine-backed action and preserve bounded built-in/offline workflow where scientifically valid",
+      "update_policy": "Explicit operator-approved update with checksum, licence and requalification",
+      "bundled": false,
+      "availability": "Detected at runtime; external engines are not claimed as bundled"
+    },
+    {
+      "id": "cellrank",
+      "name": "CellRank Python",
+      "label": "CellRank Python",
+      "category": "Single-cell",
+      "scientific_purpose": "Fate probabilities | Terminal-state analysis",
+      "provider": "External scientific software provider; see licence URL and acquisition plan",
+      "capabilities": [
+        "Fate probabilities",
+        "Terminal-state analysis"
+      ],
+      "candidate_executables": [
+        "python"
+      ],
+      "executable_path": "Resolved and validated at runtime; never hardcoded",
+      "version_probe": [
+        "-c",
+        "import cellrank; print(cellrank.__version__)"
+      ],
+      "required_databases": [],
+      "gpu_optional": false,
+      "installation_note": "",
+      "pinned_version": "",
+      "licence_url": "https://bioconda.github.io/recipes/cellrank/README.html",
+      "artifact_sha256": "",
+      "licence_sha256": "",
+      "qualification_status": "unqualified",
+      "windows_native_evidence": "not-run",
+      "wsl2_evidence": "not-run",
+      "installation_type": "External Windows-native or WSL2/micromamba acquisition; not bundled",
+      "cpu_requirements": "Engine-specific; qualify on target machine",
+      "gpu_requirements": "No bundled GPU claim; verify provider requirements",
+      "memory_requirement": "Engine- and dataset-specific; qualify on representative workloads",
+      "configuration": "Engine Control Center managed metadata and environment configuration",
+      "test_command": [
+        "-c",
+        "import cellrank; print(cellrank.__version__)"
+      ],
+      "expected_test_output": "Successful version probe matching the pinned release plus positive/negative smoke evidence",
+      "last_test_date": "",
+      "health_status": "Unavailable until runtime detection and target qualification pass",
+      "failure_reason": "External artifact, licence, version or target-machine evidence incomplete",
+      "fallback": "Disable engine-backed action and preserve bounded built-in/offline workflow where scientifically valid",
+      "update_policy": "Explicit operator-approved update with checksum, licence and requalification",
+      "bundled": false,
+      "availability": "Detected at runtime; external engines are not claimed as bundled"
+    },
+    {
+      "id": "colabfold",
+      "name": "ColabFold",
+      "label": "ColabFold",
+      "category": "Protein structure",
+      "scientific_purpose": "Structure prediction | MSA-assisted confidence estimation",
+      "provider": "External scientific software provider; see licence URL and acquisition plan",
+      "capabilities": [
+        "Structure prediction",
+        "MSA-assisted confidence estimation"
+      ],
+      "candidate_executables": [
+        "colabfold_batch",
+        "colabfold_batch.exe"
+      ],
+      "executable_path": "Resolved and validated at runtime; never hardcoded",
+      "version_probe": [
+        "--version"
+      ],
+      "required_databases": [
+        "ColabFold/AlphaFold databases or remote MSA policy"
+      ],
+      "gpu_optional": true,
+      "installation_note": "",
+      "pinned_version": "",
+      "licence_url": "https://bioconda.github.io/recipes/colabfold/README.html",
+      "artifact_sha256": "",
+      "licence_sha256": "",
+      "qualification_status": "unqualified",
+      "windows_native_evidence": "not-run",
+      "wsl2_evidence": "not-run",
+      "installation_type": "External Windows-native or WSL2/micromamba acquisition; not bundled",
+      "cpu_requirements": "Engine-specific; qualify on target machine",
+      "gpu_requirements": "Optional where declared",
+      "memory_requirement": "Engine- and dataset-specific; qualify on representative workloads",
+      "configuration": "Engine Control Center managed metadata and environment configuration",
+      "test_command": [
+        "--version"
+      ],
+      "expected_test_output": "Successful version probe matching the pinned release plus positive/negative smoke evidence",
+      "last_test_date": "",
+      "health_status": "Unavailable until runtime detection and target qualification pass",
+      "failure_reason": "External artifact, licence, version or target-machine evidence incomplete",
+      "fallback": "Disable engine-backed action and preserve bounded built-in/offline workflow where scientifically valid",
+      "update_policy": "Explicit operator-approved update with checksum, licence and requalification",
+      "bundled": false,
+      "availability": "Detected at runtime; external engines are not claimed as bundled"
+    },
+    {
+      "id": "comet",
+      "name": "Comet",
+      "label": "Comet",
+      "category": "Proteomics",
+      "scientific_purpose": "Peptide-spectrum matching",
+      "provider": "External scientific software provider; see licence URL and acquisition plan",
+      "capabilities": [
+        "Peptide-spectrum matching"
+      ],
+      "candidate_executables": [
+        "comet",
+        "comet.exe"
+      ],
+      "executable_path": "Resolved and validated at runtime; never hardcoded",
+      "version_probe": [
+        "--version"
+      ],
+      "required_databases": [],
+      "gpu_optional": false,
+      "installation_note": "",
+      "pinned_version": "",
+      "licence_url": "https://bioconda.github.io/recipes/comet/README.html",
+      "artifact_sha256": "",
+      "licence_sha256": "",
+      "qualification_status": "unqualified",
+      "windows_native_evidence": "not-run",
+      "wsl2_evidence": "not-run",
+      "installation_type": "External Windows-native or WSL2/micromamba acquisition; not bundled",
+      "cpu_requirements": "Engine-specific; qualify on target machine",
+      "gpu_requirements": "No bundled GPU claim; verify provider requirements",
+      "memory_requirement": "Engine- and dataset-specific; qualify on representative workloads",
+      "configuration": "Engine Control Center managed metadata and environment configuration",
+      "test_command": [
+        "--version"
+      ],
+      "expected_test_output": "Successful version probe matching the pinned release plus positive/negative smoke evidence",
+      "last_test_date": "",
+      "health_status": "Unavailable until runtime detection and target qualification pass",
+      "failure_reason": "External artifact, licence, version or target-machine evidence incomplete",
+      "fallback": "Disable engine-backed action and preserve bounded built-in/offline workflow where scientifically valid",
+      "update_policy": "Explicit operator-approved update with checksum, licence and requalification",
+      "bundled": false,
+      "availability": "Detected at runtime; external engines are not claimed as bundled"
+    },
+    {
+      "id": "cutadapt",
+      "name": "Cutadapt",
+      "label": "Cutadapt",
+      "category": "Sequencing QC",
+      "scientific_purpose": "Adapter trimming | Linked-adapter handling",
+      "provider": "External scientific software provider; see licence URL and acquisition plan",
+      "capabilities": [
+        "Adapter trimming",
+        "Linked-adapter handling"
+      ],
+      "candidate_executables": [
+        "cutadapt",
+        "cutadapt.exe"
+      ],
+      "executable_path": "Resolved and validated at runtime; never hardcoded",
+      "version_probe": [
+        "--version"
+      ],
+      "required_databases": [],
+      "gpu_optional": false,
+      "installation_note": "",
+      "pinned_version": "",
+      "licence_url": "https://cutadapt.readthedocs.io/",
+      "artifact_sha256": "",
+      "licence_sha256": "",
+      "qualification_status": "unqualified",
+      "windows_native_evidence": "not-run",
+      "wsl2_evidence": "not-run",
+      "installation_type": "External Windows-native or WSL2/micromamba acquisition; not bundled",
+      "cpu_requirements": "Engine-specific; qualify on target machine",
+      "gpu_requirements": "No bundled GPU claim; verify provider requirements",
+      "memory_requirement": "Engine- and dataset-specific; qualify on representative workloads",
+      "configuration": "Engine Control Center managed metadata and environment configuration",
+      "test_command": [
+        "--version"
+      ],
+      "expected_test_output": "Successful version probe matching the pinned release plus positive/negative smoke evidence",
+      "last_test_date": "",
+      "health_status": "Unavailable until runtime detection and target qualification pass",
+      "failure_reason": "External artifact, licence, version or target-machine evidence incomplete",
+      "fallback": "Disable engine-backed action and preserve bounded built-in/offline workflow where scientifically valid",
+      "update_policy": "Explicit operator-approved update with checksum, licence and requalification",
+      "bundled": false,
+      "availability": "Detected at runtime; external engines are not claimed as bundled"
+    },
+    {
+      "id": "deeptools",
+      "name": "deepTools",
+      "label": "deepTools",
+      "category": "Epigenomics",
+      "scientific_purpose": "bigWig generation | Signal profiles",
+      "provider": "External scientific software provider; see licence URL and acquisition plan",
+      "capabilities": [
+        "bigWig generation",
+        "Signal profiles"
+      ],
+      "candidate_executables": [
+        "bamCoverage"
+      ],
+      "executable_path": "Resolved and validated at runtime; never hardcoded",
+      "version_probe": [
+        "--version"
+      ],
+      "required_databases": [],
+      "gpu_optional": false,
+      "installation_note": "",
+      "pinned_version": "",
+      "licence_url": "https://bioconda.github.io/recipes/deeptools/README.html",
+      "artifact_sha256": "",
+      "licence_sha256": "",
+      "qualification_status": "unqualified",
+      "windows_native_evidence": "not-run",
+      "wsl2_evidence": "not-run",
+      "installation_type": "External Windows-native or WSL2/micromamba acquisition; not bundled",
+      "cpu_requirements": "Engine-specific; qualify on target machine",
+      "gpu_requirements": "No bundled GPU claim; verify provider requirements",
+      "memory_requirement": "Engine- and dataset-specific; qualify on representative workloads",
+      "configuration": "Engine Control Center managed metadata and environment configuration",
+      "test_command": [
+        "--version"
+      ],
+      "expected_test_output": "Successful version probe matching the pinned release plus positive/negative smoke evidence",
+      "last_test_date": "",
+      "health_status": "Unavailable until runtime detection and target qualification pass",
+      "failure_reason": "External artifact, licence, version or target-machine evidence incomplete",
+      "fallback": "Disable engine-backed action and preserve bounded built-in/offline workflow where scientifically valid",
+      "update_policy": "Explicit operator-approved update with checksum, licence and requalification",
+      "bundled": false,
+      "availability": "Detected at runtime; external engines are not claimed as bundled"
+    },
+    {
+      "id": "dorado",
+      "name": "Oxford Nanopore Dorado",
+      "label": "Oxford Nanopore Dorado",
+      "category": "Long-read sequencing",
+      "scientific_purpose": "Basecalling | Modified-base calling | Duplex processing",
+      "provider": "External scientific software provider; see licence URL and acquisition plan",
+      "capabilities": [
+        "Basecalling",
+        "Modified-base calling",
+        "Duplex processing"
+      ],
+      "candidate_executables": [
+        "dorado",
+        "dorado.exe"
+      ],
+      "executable_path": "Resolved and validated at runtime; never hardcoded",
+      "version_probe": [
+        "--version"
+      ],
+      "required_databases": [
+        "Dorado model weights"
+      ],
+      "gpu_optional": true,
+      "installation_note": "",
+      "pinned_version": "",
+      "licence_url": "https://github.com/nanoporetech/dorado",
+      "artifact_sha256": "",
+      "licence_sha256": "",
+      "qualification_status": "unqualified",
+      "windows_native_evidence": "not-run",
+      "wsl2_evidence": "not-run",
+      "installation_type": "External Windows-native or WSL2/micromamba acquisition; not bundled",
+      "cpu_requirements": "Engine-specific; qualify on target machine",
+      "gpu_requirements": "Optional where declared",
+      "memory_requirement": "Engine- and dataset-specific; qualify on representative workloads",
+      "configuration": "Engine Control Center managed metadata and environment configuration",
+      "test_command": [
+        "--version"
+      ],
+      "expected_test_output": "Successful version probe matching the pinned release plus positive/negative smoke evidence",
+      "last_test_date": "",
+      "health_status": "Unavailable until runtime detection and target qualification pass",
+      "failure_reason": "External artifact, licence, version or target-machine evidence incomplete",
+      "fallback": "Disable engine-backed action and preserve bounded built-in/offline workflow where scientifically valid",
+      "update_policy": "Explicit operator-approved update with checksum, licence and requalification",
+      "bundled": false,
+      "availability": "Detected at runtime; external engines are not claimed as bundled"
+    },
+    {
+      "id": "expansionhunter",
+      "name": "ExpansionHunter",
+      "label": "ExpansionHunter",
+      "category": "Structural variation",
+      "scientific_purpose": "Repeat-expansion genotyping",
+      "provider": "External scientific software provider; see licence URL and acquisition plan",
+      "capabilities": [
+        "Repeat-expansion genotyping"
+      ],
+      "candidate_executables": [
+        "ExpansionHunter",
+        "expansionhunter"
+      ],
+      "executable_path": "Resolved and validated at runtime; never hardcoded",
+      "version_probe": [
+        "--version"
+      ],
+      "required_databases": [
+        "Repeat catalogue",
+        "Reference FASTA"
+      ],
+      "gpu_optional": false,
+      "installation_note": "",
+      "pinned_version": "",
+      "licence_url": "https://bioconda.github.io/recipes/expansionhunter/README.html",
+      "artifact_sha256": "",
+      "licence_sha256": "",
+      "qualification_status": "unqualified",
+      "windows_native_evidence": "not-run",
+      "wsl2_evidence": "not-run",
+      "installation_type": "External Windows-native or WSL2/micromamba acquisition; not bundled",
+      "cpu_requirements": "Engine-specific; qualify on target machine",
+      "gpu_requirements": "No bundled GPU claim; verify provider requirements",
+      "memory_requirement": "Engine- and dataset-specific; qualify on representative workloads",
+      "configuration": "Engine Control Center managed metadata and environment configuration",
+      "test_command": [
+        "--version"
+      ],
+      "expected_test_output": "Successful version probe matching the pinned release plus positive/negative smoke evidence",
+      "last_test_date": "",
+      "health_status": "Unavailable until runtime detection and target qualification pass",
+      "failure_reason": "External artifact, licence, version or target-machine evidence incomplete",
+      "fallback": "Disable engine-backed action and preserve bounded built-in/offline workflow where scientifically valid",
+      "update_policy": "Explicit operator-approved update with checksum, licence and requalification",
+      "bundled": false,
+      "availability": "Detected at runtime; external engines are not claimed as bundled"
+    },
+    {
+      "id": "fastp",
+      "name": "fastp",
+      "label": "fastp",
+      "category": "Sequencing QC",
+      "scientific_purpose": "Read trimming | Adapter detection | Quality filtering",
+      "provider": "External scientific software provider; see licence URL and acquisition plan",
+      "capabilities": [
+        "Read trimming",
+        "Adapter detection",
+        "Quality filtering"
+      ],
+      "candidate_executables": [
+        "fastp",
+        "fastp.exe"
+      ],
+      "executable_path": "Resolved and validated at runtime; never hardcoded",
+      "version_probe": [
+        "--version"
+      ],
+      "required_databases": [],
+      "gpu_optional": false,
+      "installation_note": "",
+      "pinned_version": "",
+      "licence_url": "https://github.com/OpenGene/fastp",
+      "artifact_sha256": "",
+      "licence_sha256": "",
+      "qualification_status": "unqualified",
+      "windows_native_evidence": "not-run",
+      "wsl2_evidence": "not-run",
+      "installation_type": "External Windows-native or WSL2/micromamba acquisition; not bundled",
+      "cpu_requirements": "Engine-specific; qualify on target machine",
+      "gpu_requirements": "No bundled GPU claim; verify provider requirements",
+      "memory_requirement": "Engine- and dataset-specific; qualify on representative workloads",
+      "configuration": "Engine Control Center managed metadata and environment configuration",
+      "test_command": [
+        "--version"
+      ],
+      "expected_test_output": "Successful version probe matching the pinned release plus positive/negative smoke evidence",
+      "last_test_date": "",
+      "health_status": "Unavailable until runtime detection and target qualification pass",
+      "failure_reason": "External artifact, licence, version or target-machine evidence incomplete",
+      "fallback": "Disable engine-backed action and preserve bounded built-in/offline workflow where scientifically valid",
+      "update_policy": "Explicit operator-approved update with checksum, licence and requalification",
+      "bundled": false,
+      "availability": "Detected at runtime; external engines are not claimed as bundled"
+    },
+    {
+      "id": "fastqc",
+      "name": "FastQC",
+      "label": "FastQC",
+      "category": "Sequencing QC",
+      "scientific_purpose": "Read-quality reports | Adapter/duplication diagnostics",
+      "provider": "External scientific software provider; see licence URL and acquisition plan",
+      "capabilities": [
+        "Read-quality reports",
+        "Adapter/duplication diagnostics"
+      ],
+      "candidate_executables": [
+        "fastqc",
+        "fastqc.exe"
+      ],
+      "executable_path": "Resolved and validated at runtime; never hardcoded",
+      "version_probe": [
+        "--version"
+      ],
+      "required_databases": [],
+      "gpu_optional": false,
+      "installation_note": "",
+      "pinned_version": "",
+      "licence_url": "https://www.bioinformatics.babraham.ac.uk/projects/fastqc/",
+      "artifact_sha256": "",
+      "licence_sha256": "",
+      "qualification_status": "unqualified",
+      "windows_native_evidence": "not-run",
+      "wsl2_evidence": "not-run",
+      "installation_type": "External Windows-native or WSL2/micromamba acquisition; not bundled",
+      "cpu_requirements": "Engine-specific; qualify on target machine",
+      "gpu_requirements": "No bundled GPU claim; verify provider requirements",
+      "memory_requirement": "Engine- and dataset-specific; qualify on representative workloads",
+      "configuration": "Engine Control Center managed metadata and environment configuration",
+      "test_command": [
+        "--version"
+      ],
+      "expected_test_output": "Successful version probe matching the pinned release plus positive/negative smoke evidence",
+      "last_test_date": "",
+      "health_status": "Unavailable until runtime detection and target qualification pass",
+      "failure_reason": "External artifact, licence, version or target-machine evidence incomplete",
+      "fallback": "Disable engine-backed action and preserve bounded built-in/offline workflow where scientifically valid",
+      "update_policy": "Explicit operator-approved update with checksum, licence and requalification",
+      "bundled": false,
+      "availability": "Detected at runtime; external engines are not claimed as bundled"
+    },
+    {
+      "id": "flye",
+      "name": "Flye",
+      "label": "Flye",
+      "category": "Genome assembly",
+      "scientific_purpose": "Long-read assembly | Metagenome assembly",
+      "provider": "External scientific software provider; see licence URL and acquisition plan",
+      "capabilities": [
+        "Long-read assembly",
+        "Metagenome assembly"
+      ],
+      "candidate_executables": [
+        "flye"
+      ],
+      "executable_path": "Resolved and validated at runtime; never hardcoded",
+      "version_probe": [
+        "--version"
+      ],
+      "required_databases": [],
+      "gpu_optional": false,
+      "installation_note": "",
+      "pinned_version": "",
+      "licence_url": "https://bioconda.github.io/recipes/flye/README.html",
+      "artifact_sha256": "",
+      "licence_sha256": "",
+      "qualification_status": "unqualified",
+      "windows_native_evidence": "not-run",
+      "wsl2_evidence": "not-run",
+      "installation_type": "External Windows-native or WSL2/micromamba acquisition; not bundled",
+      "cpu_requirements": "Engine-specific; qualify on target machine",
+      "gpu_requirements": "No bundled GPU claim; verify provider requirements",
+      "memory_requirement": "Engine- and dataset-specific; qualify on representative workloads",
+      "configuration": "Engine Control Center managed metadata and environment configuration",
+      "test_command": [
+        "--version"
+      ],
+      "expected_test_output": "Successful version probe matching the pinned release plus positive/negative smoke evidence",
+      "last_test_date": "",
+      "health_status": "Unavailable until runtime detection and target qualification pass",
+      "failure_reason": "External artifact, licence, version or target-machine evidence incomplete",
+      "fallback": "Disable engine-backed action and preserve bounded built-in/offline workflow where scientifically valid",
+      "update_policy": "Explicit operator-approved update with checksum, licence and requalification",
+      "bundled": false,
+      "availability": "Detected at runtime; external engines are not claimed as bundled"
+    },
+    {
+      "id": "graphaligner",
+      "name": "GraphAligner",
+      "label": "GraphAligner",
+      "category": "Pangenomics",
+      "scientific_purpose": "Sequence-to-graph alignment",
+      "provider": "External scientific software provider; see licence URL and acquisition plan",
+      "capabilities": [
+        "Sequence-to-graph alignment"
+      ],
+      "candidate_executables": [
+        "GraphAligner",
+        "graphaligner"
+      ],
+      "executable_path": "Resolved and validated at runtime; never hardcoded",
+      "version_probe": [
+        "--version"
+      ],
+      "required_databases": [],
+      "gpu_optional": false,
+      "installation_note": "",
+      "pinned_version": "",
+      "licence_url": "https://bioconda.github.io/recipes/graphaligner/README.html",
+      "artifact_sha256": "",
+      "licence_sha256": "",
+      "qualification_status": "unqualified",
+      "windows_native_evidence": "not-run",
+      "wsl2_evidence": "not-run",
+      "installation_type": "External Windows-native or WSL2/micromamba acquisition; not bundled",
+      "cpu_requirements": "Engine-specific; qualify on target machine",
+      "gpu_requirements": "No bundled GPU claim; verify provider requirements",
+      "memory_requirement": "Engine- and dataset-specific; qualify on representative workloads",
+      "configuration": "Engine Control Center managed metadata and environment configuration",
+      "test_command": [
+        "--version"
+      ],
+      "expected_test_output": "Successful version probe matching the pinned release plus positive/negative smoke evidence",
+      "last_test_date": "",
+      "health_status": "Unavailable until runtime detection and target qualification pass",
+      "failure_reason": "External artifact, licence, version or target-machine evidence incomplete",
+      "fallback": "Disable engine-backed action and preserve bounded built-in/offline workflow where scientifically valid",
+      "update_policy": "Explicit operator-approved update with checksum, licence and requalification",
+      "bundled": false,
+      "availability": "Detected at runtime; external engines are not claimed as bundled"
+    },
+    {
+      "id": "gromacs",
+      "name": "GROMACS",
+      "label": "GROMACS",
+      "category": "Structural biology",
+      "scientific_purpose": "Molecular dynamics | Trajectory analysis",
+      "provider": "External scientific software provider; see licence URL and acquisition plan",
+      "capabilities": [
+        "Molecular dynamics",
+        "Trajectory analysis"
+      ],
+      "candidate_executables": [
+        "gmx",
+        "gmx_mpi"
+      ],
+      "executable_path": "Resolved and validated at runtime; never hardcoded",
+      "version_probe": [
+        "--version"
+      ],
+      "required_databases": [],
+      "gpu_optional": true,
+      "installation_note": "",
+      "pinned_version": "",
+      "licence_url": "https://bioconda.github.io/recipes/gromacs/README.html",
+      "artifact_sha256": "",
+      "licence_sha256": "",
+      "qualification_status": "unqualified",
+      "windows_native_evidence": "not-run",
+      "wsl2_evidence": "not-run",
+      "installation_type": "External Windows-native or WSL2/micromamba acquisition; not bundled",
+      "cpu_requirements": "Engine-specific; qualify on target machine",
+      "gpu_requirements": "Optional where declared",
+      "memory_requirement": "Engine- and dataset-specific; qualify on representative workloads",
+      "configuration": "Engine Control Center managed metadata and environment configuration",
+      "test_command": [
+        "--version"
+      ],
+      "expected_test_output": "Successful version probe matching the pinned release plus positive/negative smoke evidence",
+      "last_test_date": "",
+      "health_status": "Unavailable until runtime detection and target qualification pass",
+      "failure_reason": "External artifact, licence, version or target-machine evidence incomplete",
+      "fallback": "Disable engine-backed action and preserve bounded built-in/offline workflow where scientifically valid",
+      "update_policy": "Explicit operator-approved update with checksum, licence and requalification",
+      "bundled": false,
+      "availability": "Detected at runtime; external engines are not claimed as bundled"
+    },
+    {
+      "id": "hifiasm",
+      "name": "hifiasm",
+      "label": "hifiasm",
+      "category": "Genome assembly",
+      "scientific_purpose": "HiFi assembly | Phased assembly",
+      "provider": "External scientific software provider; see licence URL and acquisition plan",
+      "capabilities": [
+        "HiFi assembly",
+        "Phased assembly"
+      ],
+      "candidate_executables": [
+        "hifiasm"
+      ],
+      "executable_path": "Resolved and validated at runtime; never hardcoded",
+      "version_probe": [
+        "--version"
+      ],
+      "required_databases": [],
+      "gpu_optional": false,
+      "installation_note": "",
+      "pinned_version": "",
+      "licence_url": "https://bioconda.github.io/recipes/hifiasm/README.html",
+      "artifact_sha256": "",
+      "licence_sha256": "",
+      "qualification_status": "unqualified",
+      "windows_native_evidence": "not-run",
+      "wsl2_evidence": "not-run",
+      "installation_type": "External Windows-native or WSL2/micromamba acquisition; not bundled",
+      "cpu_requirements": "Engine-specific; qualify on target machine",
+      "gpu_requirements": "No bundled GPU claim; verify provider requirements",
+      "memory_requirement": "Engine- and dataset-specific; qualify on representative workloads",
+      "configuration": "Engine Control Center managed metadata and environment configuration",
+      "test_command": [
+        "--version"
+      ],
+      "expected_test_output": "Successful version probe matching the pinned release plus positive/negative smoke evidence",
+      "last_test_date": "",
+      "health_status": "Unavailable until runtime detection and target qualification pass",
+      "failure_reason": "External artifact, licence, version or target-machine evidence incomplete",
+      "fallback": "Disable engine-backed action and preserve bounded built-in/offline workflow where scientifically valid",
+      "update_policy": "Explicit operator-approved update with checksum, licence and requalification",
+      "bundled": false,
+      "availability": "Detected at runtime; external engines are not claimed as bundled"
+    },
+    {
+      "id": "hmmer",
+      "name": "HMMER hmmsearch",
+      "label": "HMMER hmmsearch",
+      "category": "Protein annotation",
+      "scientific_purpose": "Profile-HMM sequence search",
+      "provider": "External scientific software provider; see licence URL and acquisition plan",
+      "capabilities": [
+        "Profile-HMM sequence search"
+      ],
+      "candidate_executables": [
+        "hmmsearch",
+        "hmmsearch.exe"
+      ],
+      "executable_path": "Resolved and validated at runtime; never hardcoded",
+      "version_probe": [
+        "--version"
+      ],
+      "required_databases": [
+        "Pinned HMM profile database"
+      ],
+      "gpu_optional": false,
+      "installation_note": "",
+      "pinned_version": "",
+      "licence_url": "https://hmmer.org/",
+      "artifact_sha256": "",
+      "licence_sha256": "",
+      "qualification_status": "unqualified",
+      "windows_native_evidence": "not-run",
+      "wsl2_evidence": "not-run",
+      "installation_type": "External Windows-native or WSL2/micromamba acquisition; not bundled",
+      "cpu_requirements": "Engine-specific; qualify on target machine",
+      "gpu_requirements": "No bundled GPU claim; verify provider requirements",
+      "memory_requirement": "Engine- and dataset-specific; qualify on representative workloads",
+      "configuration": "Engine Control Center managed metadata and environment configuration",
+      "test_command": [
+        "--version"
+      ],
+      "expected_test_output": "Successful version probe matching the pinned release plus positive/negative smoke evidence",
+      "last_test_date": "",
+      "health_status": "Unavailable until runtime detection and target qualification pass",
+      "failure_reason": "External artifact, licence, version or target-machine evidence incomplete",
+      "fallback": "Disable engine-backed action and preserve bounded built-in/offline workflow where scientifically valid",
+      "update_policy": "Explicit operator-approved update with checksum, licence and requalification",
+      "bundled": false,
+      "availability": "Detected at runtime; external engines are not claimed as bundled"
+    },
+    {
+      "id": "humann",
+      "name": "HUMAnN",
+      "label": "HUMAnN",
+      "category": "Metagenomics",
+      "scientific_purpose": "Functional profiling",
+      "provider": "External scientific software provider; see licence URL and acquisition plan",
+      "capabilities": [
+        "Functional profiling"
+      ],
+      "candidate_executables": [
+        "humann"
+      ],
+      "executable_path": "Resolved and validated at runtime; never hardcoded",
+      "version_probe": [
+        "--version"
+      ],
+      "required_databases": [
+        "ChocoPhlAn",
+        "UniRef"
+      ],
+      "gpu_optional": false,
+      "installation_note": "",
+      "pinned_version": "",
+      "licence_url": "https://bioconda.github.io/recipes/humann/README.html",
+      "artifact_sha256": "",
+      "licence_sha256": "",
+      "qualification_status": "unqualified",
+      "windows_native_evidence": "not-run",
+      "wsl2_evidence": "not-run",
+      "installation_type": "External Windows-native or WSL2/micromamba acquisition; not bundled",
+      "cpu_requirements": "Engine-specific; qualify on target machine",
+      "gpu_requirements": "No bundled GPU claim; verify provider requirements",
+      "memory_requirement": "Engine- and dataset-specific; qualify on representative workloads",
+      "configuration": "Engine Control Center managed metadata and environment configuration",
+      "test_command": [
+        "--version"
+      ],
+      "expected_test_output": "Successful version probe matching the pinned release plus positive/negative smoke evidence",
+      "last_test_date": "",
+      "health_status": "Unavailable until runtime detection and target qualification pass",
+      "failure_reason": "External artifact, licence, version or target-machine evidence incomplete",
+      "fallback": "Disable engine-backed action and preserve bounded built-in/offline workflow where scientifically valid",
+      "update_policy": "Explicit operator-approved update with checksum, licence and requalification",
+      "bundled": false,
+      "availability": "Detected at runtime; external engines are not claimed as bundled"
+    },
+    {
+      "id": "igblast",
+      "name": "IgBLAST",
+      "label": "IgBLAST",
+      "category": "Antibody engineering",
+      "scientific_purpose": "Immunoglobulin germline alignment",
+      "provider": "External scientific software provider; see licence URL and acquisition plan",
+      "capabilities": [
+        "Immunoglobulin germline alignment"
+      ],
+      "candidate_executables": [
+        "igblastn",
+        "igblastp"
+      ],
+      "executable_path": "Resolved and validated at runtime; never hardcoded",
+      "version_probe": [
+        "--version"
+      ],
+      "required_databases": [
+        "IgBLAST germline database"
+      ],
+      "gpu_optional": false,
+      "installation_note": "",
+      "pinned_version": "",
+      "licence_url": "https://bioconda.github.io/recipes/igblast/README.html",
+      "artifact_sha256": "",
+      "licence_sha256": "",
+      "qualification_status": "unqualified",
+      "windows_native_evidence": "not-run",
+      "wsl2_evidence": "not-run",
+      "installation_type": "External Windows-native or WSL2/micromamba acquisition; not bundled",
+      "cpu_requirements": "Engine-specific; qualify on target machine",
+      "gpu_requirements": "No bundled GPU claim; verify provider requirements",
+      "memory_requirement": "Engine- and dataset-specific; qualify on representative workloads",
+      "configuration": "Engine Control Center managed metadata and environment configuration",
+      "test_command": [
+        "--version"
+      ],
+      "expected_test_output": "Successful version probe matching the pinned release plus positive/negative smoke evidence",
+      "last_test_date": "",
+      "health_status": "Unavailable until runtime detection and target qualification pass",
+      "failure_reason": "External artifact, licence, version or target-machine evidence incomplete",
+      "fallback": "Disable engine-backed action and preserve bounded built-in/offline workflow where scientifically valid",
+      "update_policy": "Explicit operator-approved update with checksum, licence and requalification",
+      "bundled": false,
+      "availability": "Detected at runtime; external engines are not claimed as bundled"
+    },
+    {
+      "id": "interproscan",
+      "name": "InterProScan",
+      "label": "InterProScan",
+      "category": "Protein annotation",
+      "scientific_purpose": "Domain annotation | GO/pathway mapping",
+      "provider": "External scientific software provider; see licence URL and acquisition plan",
+      "capabilities": [
+        "Domain annotation",
+        "GO/pathway mapping"
+      ],
+      "candidate_executables": [
+        "interproscan.sh",
+        "interproscan",
+        "interproscan.bat"
+      ],
+      "executable_path": "Resolved and validated at runtime; never hardcoded",
+      "version_probe": [
+        "--version"
+      ],
+      "required_databases": [
+        "InterPro member databases"
+      ],
+      "gpu_optional": false,
+      "installation_note": "",
+      "pinned_version": "",
+      "licence_url": "https://www.ebi.ac.uk/interpro/download/InterProScan/",
+      "artifact_sha256": "",
+      "licence_sha256": "",
+      "qualification_status": "unqualified",
+      "windows_native_evidence": "not-run",
+      "wsl2_evidence": "not-run",
+      "installation_type": "External Windows-native or WSL2/micromamba acquisition; not bundled",
+      "cpu_requirements": "Engine-specific; qualify on target machine",
+      "gpu_requirements": "No bundled GPU claim; verify provider requirements",
+      "memory_requirement": "Engine- and dataset-specific; qualify on representative workloads",
+      "configuration": "Engine Control Center managed metadata and environment configuration",
+      "test_command": [
+        "--version"
+      ],
+      "expected_test_output": "Successful version probe matching the pinned release plus positive/negative smoke evidence",
+      "last_test_date": "",
+      "health_status": "Unavailable until runtime detection and target qualification pass",
+      "failure_reason": "External artifact, licence, version or target-machine evidence incomplete",
+      "fallback": "Disable engine-backed action and preserve bounded built-in/offline workflow where scientifically valid",
+      "update_policy": "Explicit operator-approved update with checksum, licence and requalification",
+      "bundled": false,
+      "availability": "Detected at runtime; external engines are not claimed as bundled"
+    },
+    {
+      "id": "iqtree",
+      "name": "IQ-TREE",
+      "label": "IQ-TREE",
+      "category": "Phylogenetics",
+      "scientific_purpose": "Maximum-likelihood phylogeny | Model selection | Bootstrap",
+      "provider": "External scientific software provider; see licence URL and acquisition plan",
+      "capabilities": [
+        "Maximum-likelihood phylogeny",
+        "Model selection",
+        "Bootstrap"
+      ],
+      "candidate_executables": [
+        "iqtree2",
+        "iqtree"
+      ],
+      "executable_path": "Resolved and validated at runtime; never hardcoded",
+      "version_probe": [
+        "--version"
+      ],
+      "required_databases": [],
+      "gpu_optional": false,
+      "installation_note": "",
+      "pinned_version": "",
+      "licence_url": "https://bioconda.github.io/recipes/iqtree/README.html",
+      "artifact_sha256": "",
+      "licence_sha256": "",
+      "qualification_status": "unqualified",
+      "windows_native_evidence": "not-run",
+      "wsl2_evidence": "not-run",
+      "installation_type": "External Windows-native or WSL2/micromamba acquisition; not bundled",
+      "cpu_requirements": "Engine-specific; qualify on target machine",
+      "gpu_requirements": "No bundled GPU claim; verify provider requirements",
+      "memory_requirement": "Engine- and dataset-specific; qualify on representative workloads",
+      "configuration": "Engine Control Center managed metadata and environment configuration",
+      "test_command": [
+        "--version"
+      ],
+      "expected_test_output": "Successful version probe matching the pinned release plus positive/negative smoke evidence",
+      "last_test_date": "",
+      "health_status": "Unavailable until runtime detection and target qualification pass",
+      "failure_reason": "External artifact, licence, version or target-machine evidence incomplete",
+      "fallback": "Disable engine-backed action and preserve bounded built-in/offline workflow where scientifically valid",
+      "update_policy": "Explicit operator-approved update with checksum, licence and requalification",
+      "bundled": false,
+      "availability": "Detected at runtime; external engines are not claimed as bundled"
+    },
+    {
+      "id": "kallisto",
+      "name": "Kallisto",
+      "label": "Kallisto",
+      "category": "Transcriptomics",
+      "scientific_purpose": "Pseudoalignment | Transcript quantification",
+      "provider": "External scientific software provider; see licence URL and acquisition plan",
+      "capabilities": [
+        "Pseudoalignment",
+        "Transcript quantification"
+      ],
+      "candidate_executables": [
+        "kallisto",
+        "kallisto.exe"
+      ],
+      "executable_path": "Resolved and validated at runtime; never hardcoded",
+      "version_probe": [
+        "--version"
+      ],
+      "required_databases": [
+        "Kallisto transcriptome index"
+      ],
+      "gpu_optional": false,
+      "installation_note": "",
+      "pinned_version": "",
+      "licence_url": "https://pachterlab.github.io/kallisto/download",
+      "artifact_sha256": "",
+      "licence_sha256": "",
+      "qualification_status": "unqualified",
+      "windows_native_evidence": "not-run",
+      "wsl2_evidence": "not-run",
+      "installation_type": "External Windows-native or WSL2/micromamba acquisition; not bundled",
+      "cpu_requirements": "Engine-specific; qualify on target machine",
+      "gpu_requirements": "No bundled GPU claim; verify provider requirements",
+      "memory_requirement": "Engine- and dataset-specific; qualify on representative workloads",
+      "configuration": "Engine Control Center managed metadata and environment configuration",
+      "test_command": [
+        "--version"
+      ],
+      "expected_test_output": "Successful version probe matching the pinned release plus positive/negative smoke evidence",
+      "last_test_date": "",
+      "health_status": "Unavailable until runtime detection and target qualification pass",
+      "failure_reason": "External artifact, licence, version or target-machine evidence incomplete",
+      "fallback": "Disable engine-backed action and preserve bounded built-in/offline workflow where scientifically valid",
+      "update_policy": "Explicit operator-approved update with checksum, licence and requalification",
+      "bundled": false,
+      "availability": "Detected at runtime; external engines are not claimed as bundled"
+    },
+    {
+      "id": "kraken2",
+      "name": "Kraken 2",
+      "label": "Kraken 2",
+      "category": "Metagenomics",
+      "scientific_purpose": "Taxonomic classification",
+      "provider": "External scientific software provider; see licence URL and acquisition plan",
+      "capabilities": [
+        "Taxonomic classification"
+      ],
+      "candidate_executables": [
+        "kraken2"
+      ],
+      "executable_path": "Resolved and validated at runtime; never hardcoded",
+      "version_probe": [
+        "--version"
+      ],
+      "required_databases": [
+        "Kraken 2 database"
+      ],
+      "gpu_optional": false,
+      "installation_note": "",
+      "pinned_version": "",
+      "licence_url": "https://bioconda.github.io/recipes/kraken2/README.html",
+      "artifact_sha256": "",
+      "licence_sha256": "",
+      "qualification_status": "unqualified",
+      "windows_native_evidence": "not-run",
+      "wsl2_evidence": "not-run",
+      "installation_type": "External Windows-native or WSL2/micromamba acquisition; not bundled",
+      "cpu_requirements": "Engine-specific; qualify on target machine",
+      "gpu_requirements": "No bundled GPU claim; verify provider requirements",
+      "memory_requirement": "Engine- and dataset-specific; qualify on representative workloads",
+      "configuration": "Engine Control Center managed metadata and environment configuration",
+      "test_command": [
+        "--version"
+      ],
+      "expected_test_output": "Successful version probe matching the pinned release plus positive/negative smoke evidence",
+      "last_test_date": "",
+      "health_status": "Unavailable until runtime detection and target qualification pass",
+      "failure_reason": "External artifact, licence, version or target-machine evidence incomplete",
+      "fallback": "Disable engine-backed action and preserve bounded built-in/offline workflow where scientifically valid",
+      "update_policy": "Explicit operator-approved update with checksum, licence and requalification",
+      "bundled": false,
+      "availability": "Detected at runtime; external engines are not claimed as bundled"
+    },
+    {
+      "id": "llama_cpp",
+      "name": "llama.cpp",
+      "label": "llama.cpp",
+      "category": "Local AI",
+      "scientific_purpose": "Local language-model inference",
+      "provider": "External scientific software provider; see licence URL and acquisition plan",
+      "capabilities": [
+        "Local language-model inference"
+      ],
+      "candidate_executables": [
+        "llama-cli",
+        "main",
+        "llama-server"
+      ],
+      "executable_path": "Resolved and validated at runtime; never hardcoded",
+      "version_probe": [
+        "--version"
+      ],
+      "required_databases": [
+        "Approved model weights"
+      ],
+      "gpu_optional": true,
+      "installation_note": "",
+      "pinned_version": "",
+      "licence_url": "https://pypi.org/project/llama-cpp-python/",
+      "artifact_sha256": "",
+      "licence_sha256": "",
+      "qualification_status": "unqualified",
+      "windows_native_evidence": "not-run",
+      "wsl2_evidence": "not-run",
+      "installation_type": "External Windows-native or WSL2/micromamba acquisition; not bundled",
+      "cpu_requirements": "Engine-specific; qualify on target machine",
+      "gpu_requirements": "Optional where declared",
+      "memory_requirement": "Engine- and dataset-specific; qualify on representative workloads",
+      "configuration": "Engine Control Center managed metadata and environment configuration",
+      "test_command": [
+        "--version"
+      ],
+      "expected_test_output": "Successful version probe matching the pinned release plus positive/negative smoke evidence",
+      "last_test_date": "",
+      "health_status": "Unavailable until runtime detection and target qualification pass",
+      "failure_reason": "External artifact, licence, version or target-machine evidence incomplete",
+      "fallback": "Disable engine-backed action and preserve bounded built-in/offline workflow where scientifically valid",
+      "update_policy": "Explicit operator-approved update with checksum, licence and requalification",
+      "bundled": false,
+      "availability": "Detected at runtime; external engines are not claimed as bundled"
+    },
+    {
+      "id": "macs2",
+      "name": "MACS2",
+      "label": "MACS2",
+      "category": "Epigenomics",
+      "scientific_purpose": "ChIP-seq/ATAC-seq peak calling",
+      "provider": "External scientific software provider; see licence URL and acquisition plan",
+      "capabilities": [
+        "ChIP-seq/ATAC-seq peak calling"
+      ],
+      "candidate_executables": [
+        "macs2"
+      ],
+      "executable_path": "Resolved and validated at runtime; never hardcoded",
+      "version_probe": [
+        "--version"
+      ],
+      "required_databases": [],
+      "gpu_optional": false,
+      "installation_note": "",
+      "pinned_version": "",
+      "licence_url": "https://bioconda.github.io/recipes/macs2/README.html",
+      "artifact_sha256": "",
+      "licence_sha256": "",
+      "qualification_status": "unqualified",
+      "windows_native_evidence": "not-run",
+      "wsl2_evidence": "not-run",
+      "installation_type": "External Windows-native or WSL2/micromamba acquisition; not bundled",
+      "cpu_requirements": "Engine-specific; qualify on target machine",
+      "gpu_requirements": "No bundled GPU claim; verify provider requirements",
+      "memory_requirement": "Engine- and dataset-specific; qualify on representative workloads",
+      "configuration": "Engine Control Center managed metadata and environment configuration",
+      "test_command": [
+        "--version"
+      ],
+      "expected_test_output": "Successful version probe matching the pinned release plus positive/negative smoke evidence",
+      "last_test_date": "",
+      "health_status": "Unavailable until runtime detection and target qualification pass",
+      "failure_reason": "External artifact, licence, version or target-machine evidence incomplete",
+      "fallback": "Disable engine-backed action and preserve bounded built-in/offline workflow where scientifically valid",
+      "update_policy": "Explicit operator-approved update with checksum, licence and requalification",
+      "bundled": false,
+      "availability": "Detected at runtime; external engines are not claimed as bundled"
+    },
+    {
+      "id": "mafft",
+      "name": "MAFFT",
+      "label": "MAFFT",
+      "category": "Phylogenetics",
+      "scientific_purpose": "Multiple sequence alignment",
+      "provider": "External scientific software provider; see licence URL and acquisition plan",
+      "capabilities": [
+        "Multiple sequence alignment"
+      ],
+      "candidate_executables": [
+        "mafft",
+        "mafft.bat"
+      ],
+      "executable_path": "Resolved and validated at runtime; never hardcoded",
+      "version_probe": [
+        "--version"
+      ],
+      "required_databases": [],
+      "gpu_optional": false,
+      "installation_note": "",
+      "pinned_version": "",
+      "licence_url": "https://bioconda.github.io/recipes/mafft/README.html",
+      "artifact_sha256": "",
+      "licence_sha256": "",
+      "qualification_status": "unqualified",
+      "windows_native_evidence": "not-run",
+      "wsl2_evidence": "not-run",
+      "installation_type": "External Windows-native or WSL2/micromamba acquisition; not bundled",
+      "cpu_requirements": "Engine-specific; qualify on target machine",
+      "gpu_requirements": "No bundled GPU claim; verify provider requirements",
+      "memory_requirement": "Engine- and dataset-specific; qualify on representative workloads",
+      "configuration": "Engine Control Center managed metadata and environment configuration",
+      "test_command": [
+        "--version"
+      ],
+      "expected_test_output": "Successful version probe matching the pinned release plus positive/negative smoke evidence",
+      "last_test_date": "",
+      "health_status": "Unavailable until runtime detection and target qualification pass",
+      "failure_reason": "External artifact, licence, version or target-machine evidence incomplete",
+      "fallback": "Disable engine-backed action and preserve bounded built-in/offline workflow where scientifically valid",
+      "update_policy": "Explicit operator-approved update with checksum, licence and requalification",
+      "bundled": false,
+      "availability": "Detected at runtime; external engines are not claimed as bundled"
+    },
+    {
+      "id": "majiq",
+      "name": "MAJIQ",
+      "label": "MAJIQ",
+      "category": "Transcriptomics",
+      "scientific_purpose": "Local splicing variation",
+      "provider": "External scientific software provider; see licence URL and acquisition plan",
+      "capabilities": [
+        "Local splicing variation"
+      ],
+      "candidate_executables": [
+        "majiq"
+      ],
+      "executable_path": "Resolved and validated at runtime; never hardcoded",
+      "version_probe": [
+        "--version"
+      ],
+      "required_databases": [
+        "Genome annotation GFF3"
+      ],
+      "gpu_optional": false,
+      "installation_note": "",
+      "pinned_version": "",
+      "licence_url": "https://majiq.biociphers.org/",
+      "artifact_sha256": "",
+      "licence_sha256": "",
+      "qualification_status": "unqualified",
+      "windows_native_evidence": "not-run",
+      "wsl2_evidence": "not-run",
+      "installation_type": "External Windows-native or WSL2/micromamba acquisition; not bundled",
+      "cpu_requirements": "Engine-specific; qualify on target machine",
+      "gpu_requirements": "No bundled GPU claim; verify provider requirements",
+      "memory_requirement": "Engine- and dataset-specific; qualify on representative workloads",
+      "configuration": "Engine Control Center managed metadata and environment configuration",
+      "test_command": [
+        "--version"
+      ],
+      "expected_test_output": "Successful version probe matching the pinned release plus positive/negative smoke evidence",
+      "last_test_date": "",
+      "health_status": "Unavailable until runtime detection and target qualification pass",
+      "failure_reason": "External artifact, licence, version or target-machine evidence incomplete",
+      "fallback": "Disable engine-backed action and preserve bounded built-in/offline workflow where scientifically valid",
+      "update_policy": "Explicit operator-approved update with checksum, licence and requalification",
+      "bundled": false,
+      "availability": "Detected at runtime; external engines are not claimed as bundled"
+    },
+    {
+      "id": "merqury",
+      "name": "Merqury",
+      "label": "Merqury",
+      "category": "Genome assembly",
+      "scientific_purpose": "K-mer completeness | Consensus quality",
+      "provider": "External scientific software provider; see licence URL and acquisition plan",
+      "capabilities": [
+        "K-mer completeness",
+        "Consensus quality"
+      ],
+      "candidate_executables": [
+        "merqury.sh",
+        "merqury"
+      ],
+      "executable_path": "Resolved and validated at runtime; never hardcoded",
+      "version_probe": [
+        "--version"
+      ],
+      "required_databases": [],
+      "gpu_optional": false,
+      "installation_note": "",
+      "pinned_version": "",
+      "licence_url": "https://bioconda.github.io/recipes/merqury/README.html",
+      "artifact_sha256": "",
+      "licence_sha256": "",
+      "qualification_status": "unqualified",
+      "windows_native_evidence": "not-run",
+      "wsl2_evidence": "not-run",
+      "installation_type": "External Windows-native or WSL2/micromamba acquisition; not bundled",
+      "cpu_requirements": "Engine-specific; qualify on target machine",
+      "gpu_requirements": "No bundled GPU claim; verify provider requirements",
+      "memory_requirement": "Engine- and dataset-specific; qualify on representative workloads",
+      "configuration": "Engine Control Center managed metadata and environment configuration",
+      "test_command": [
+        "--version"
+      ],
+      "expected_test_output": "Successful version probe matching the pinned release plus positive/negative smoke evidence",
+      "last_test_date": "",
+      "health_status": "Unavailable until runtime detection and target qualification pass",
+      "failure_reason": "External artifact, licence, version or target-machine evidence incomplete",
+      "fallback": "Disable engine-backed action and preserve bounded built-in/offline workflow where scientifically valid",
+      "update_policy": "Explicit operator-approved update with checksum, licence and requalification",
+      "bundled": false,
+      "availability": "Detected at runtime; external engines are not claimed as bundled"
+    },
+    {
+      "id": "minigraph",
+      "name": "minigraph",
+      "label": "minigraph",
+      "category": "Pangenomics",
+      "scientific_purpose": "Pangenome graph construction | Assembly alignment",
+      "provider": "External scientific software provider; see licence URL and acquisition plan",
+      "capabilities": [
+        "Pangenome graph construction",
+        "Assembly alignment"
+      ],
+      "candidate_executables": [
+        "minigraph"
+      ],
+      "executable_path": "Resolved and validated at runtime; never hardcoded",
+      "version_probe": [
+        "--version"
+      ],
+      "required_databases": [],
+      "gpu_optional": false,
+      "installation_note": "",
+      "pinned_version": "",
+      "licence_url": "https://bioconda.github.io/recipes/minigraph/README.html",
+      "artifact_sha256": "",
+      "licence_sha256": "",
+      "qualification_status": "unqualified",
+      "windows_native_evidence": "not-run",
+      "wsl2_evidence": "not-run",
+      "installation_type": "External Windows-native or WSL2/micromamba acquisition; not bundled",
+      "cpu_requirements": "Engine-specific; qualify on target machine",
+      "gpu_requirements": "No bundled GPU claim; verify provider requirements",
+      "memory_requirement": "Engine- and dataset-specific; qualify on representative workloads",
+      "configuration": "Engine Control Center managed metadata and environment configuration",
+      "test_command": [
+        "--version"
+      ],
+      "expected_test_output": "Successful version probe matching the pinned release plus positive/negative smoke evidence",
+      "last_test_date": "",
+      "health_status": "Unavailable until runtime detection and target qualification pass",
+      "failure_reason": "External artifact, licence, version or target-machine evidence incomplete",
+      "fallback": "Disable engine-backed action and preserve bounded built-in/offline workflow where scientifically valid",
+      "update_policy": "Explicit operator-approved update with checksum, licence and requalification",
+      "bundled": false,
+      "availability": "Detected at runtime; external engines are not claimed as bundled"
+    },
+    {
+      "id": "minimap2",
+      "name": "minimap2",
+      "label": "minimap2",
+      "category": "Genomics",
+      "scientific_purpose": "Long-read mapping | Assembly alignment",
+      "provider": "External scientific software provider; see licence URL and acquisition plan",
+      "capabilities": [
+        "Long-read mapping",
+        "Assembly alignment"
+      ],
+      "candidate_executables": [
+        "minimap2"
+      ],
+      "executable_path": "Resolved and validated at runtime; never hardcoded",
+      "version_probe": [
+        "--version"
+      ],
+      "required_databases": [],
+      "gpu_optional": false,
+      "installation_note": "",
+      "pinned_version": "",
+      "licence_url": "https://bioconda.github.io/recipes/minimap2/README.html",
+      "artifact_sha256": "",
+      "licence_sha256": "",
+      "qualification_status": "unqualified",
+      "windows_native_evidence": "not-run",
+      "wsl2_evidence": "not-run",
+      "installation_type": "External Windows-native or WSL2/micromamba acquisition; not bundled",
+      "cpu_requirements": "Engine-specific; qualify on target machine",
+      "gpu_requirements": "No bundled GPU claim; verify provider requirements",
+      "memory_requirement": "Engine- and dataset-specific; qualify on representative workloads",
+      "configuration": "Engine Control Center managed metadata and environment configuration",
+      "test_command": [
+        "--version"
+      ],
+      "expected_test_output": "Successful version probe matching the pinned release plus positive/negative smoke evidence",
+      "last_test_date": "",
+      "health_status": "Unavailable until runtime detection and target qualification pass",
+      "failure_reason": "External artifact, licence, version or target-machine evidence incomplete",
+      "fallback": "Disable engine-backed action and preserve bounded built-in/offline workflow where scientifically valid",
+      "update_policy": "Explicit operator-approved update with checksum, licence and requalification",
+      "bundled": false,
+      "availability": "Detected at runtime; external engines are not claimed as bundled"
+    },
+    {
+      "id": "modkit",
+      "name": "Oxford Nanopore Modkit",
+      "label": "Oxford Nanopore Modkit",
+      "category": "Long-read epigenomics",
+      "scientific_purpose": "Modified-base pileup | Modification summary",
+      "provider": "External scientific software provider; see licence URL and acquisition plan",
+      "capabilities": [
+        "Modified-base pileup",
+        "Modification summary"
+      ],
+      "candidate_executables": [
+        "modkit"
+      ],
+      "executable_path": "Resolved and validated at runtime; never hardcoded",
+      "version_probe": [
+        "--version"
+      ],
+      "required_databases": [
+        "Reference FASTA"
+      ],
+      "gpu_optional": false,
+      "installation_note": "",
+      "pinned_version": "",
+      "licence_url": "https://bioconda.github.io/recipes/modkit/README.html",
+      "artifact_sha256": "",
+      "licence_sha256": "",
+      "qualification_status": "unqualified",
+      "windows_native_evidence": "not-run",
+      "wsl2_evidence": "not-run",
+      "installation_type": "External Windows-native or WSL2/micromamba acquisition; not bundled",
+      "cpu_requirements": "Engine-specific; qualify on target machine",
+      "gpu_requirements": "No bundled GPU claim; verify provider requirements",
+      "memory_requirement": "Engine- and dataset-specific; qualify on representative workloads",
+      "configuration": "Engine Control Center managed metadata and environment configuration",
+      "test_command": [
+        "--version"
+      ],
+      "expected_test_output": "Successful version probe matching the pinned release plus positive/negative smoke evidence",
+      "last_test_date": "",
+      "health_status": "Unavailable until runtime detection and target qualification pass",
+      "failure_reason": "External artifact, licence, version or target-machine evidence incomplete",
+      "fallback": "Disable engine-backed action and preserve bounded built-in/offline workflow where scientifically valid",
+      "update_policy": "Explicit operator-approved update with checksum, licence and requalification",
+      "bundled": false,
+      "availability": "Detected at runtime; external engines are not claimed as bundled"
+    },
+    {
+      "id": "mosdepth",
+      "name": "mosdepth",
+      "label": "mosdepth",
+      "category": "Genomics",
+      "scientific_purpose": "Genome coverage | Region coverage summaries",
+      "provider": "External scientific software provider; see licence URL and acquisition plan",
+      "capabilities": [
+        "Genome coverage",
+        "Region coverage summaries"
+      ],
+      "candidate_executables": [
+        "mosdepth",
+        "mosdepth.exe"
+      ],
+      "executable_path": "Resolved and validated at runtime; never hardcoded",
+      "version_probe": [
+        "--version"
+      ],
+      "required_databases": [],
+      "gpu_optional": false,
+      "installation_note": "",
+      "pinned_version": "",
+      "licence_url": "https://github.com/brentp/mosdepth",
+      "artifact_sha256": "",
+      "licence_sha256": "",
+      "qualification_status": "unqualified",
+      "windows_native_evidence": "not-run",
+      "wsl2_evidence": "not-run",
+      "installation_type": "External Windows-native or WSL2/micromamba acquisition; not bundled",
+      "cpu_requirements": "Engine-specific; qualify on target machine",
+      "gpu_requirements": "No bundled GPU claim; verify provider requirements",
+      "memory_requirement": "Engine- and dataset-specific; qualify on representative workloads",
+      "configuration": "Engine Control Center managed metadata and environment configuration",
+      "test_command": [
+        "--version"
+      ],
+      "expected_test_output": "Successful version probe matching the pinned release plus positive/negative smoke evidence",
+      "last_test_date": "",
+      "health_status": "Unavailable until runtime detection and target qualification pass",
+      "failure_reason": "External artifact, licence, version or target-machine evidence incomplete",
+      "fallback": "Disable engine-backed action and preserve bounded built-in/offline workflow where scientifically valid",
+      "update_policy": "Explicit operator-approved update with checksum, licence and requalification",
+      "bundled": false,
+      "availability": "Detected at runtime; external engines are not claimed as bundled"
+    },
+    {
+      "id": "msconvert",
+      "name": "ProteoWizard msconvert",
+      "label": "ProteoWizard msconvert",
+      "category": "Mass spectrometry",
+      "scientific_purpose": "Vendor RAW conversion | mzML export",
+      "provider": "External scientific software provider; see licence URL and acquisition plan",
+      "capabilities": [
+        "Vendor RAW conversion",
+        "mzML export"
+      ],
+      "candidate_executables": [
+        "msconvert",
+        "msconvert.exe"
+      ],
+      "executable_path": "Resolved and validated at runtime; never hardcoded",
+      "version_probe": [
+        "--version"
+      ],
+      "required_databases": [],
+      "gpu_optional": false,
+      "installation_note": "",
+      "pinned_version": "",
+      "licence_url": "https://proteowizard.sourceforge.io/",
+      "artifact_sha256": "",
+      "licence_sha256": "",
+      "qualification_status": "unqualified",
+      "windows_native_evidence": "not-run",
+      "wsl2_evidence": "not-run",
+      "installation_type": "External Windows-native or WSL2/micromamba acquisition; not bundled",
+      "cpu_requirements": "Engine-specific; qualify on target machine",
+      "gpu_requirements": "No bundled GPU claim; verify provider requirements",
+      "memory_requirement": "Engine- and dataset-specific; qualify on representative workloads",
+      "configuration": "Engine Control Center managed metadata and environment configuration",
+      "test_command": [
+        "--version"
+      ],
+      "expected_test_output": "Successful version probe matching the pinned release plus positive/negative smoke evidence",
+      "last_test_date": "",
+      "health_status": "Unavailable until runtime detection and target qualification pass",
+      "failure_reason": "External artifact, licence, version or target-machine evidence incomplete",
+      "fallback": "Disable engine-backed action and preserve bounded built-in/offline workflow where scientifically valid",
+      "update_policy": "Explicit operator-approved update with checksum, licence and requalification",
+      "bundled": false,
+      "availability": "Detected at runtime; external engines are not claimed as bundled"
+    },
+    {
+      "id": "msgfplus",
+      "name": "MS-GF+",
+      "label": "MS-GF+",
+      "category": "Proteomics",
+      "scientific_purpose": "Peptide-spectrum matching",
+      "provider": "External scientific software provider; see licence URL and acquisition plan",
+      "capabilities": [
+        "Peptide-spectrum matching"
+      ],
+      "candidate_executables": [
+        "MSGFPlus",
+        "msgfplus"
+      ],
+      "executable_path": "Resolved and validated at runtime; never hardcoded",
+      "version_probe": [
+        "--version"
+      ],
+      "required_databases": [],
+      "gpu_optional": false,
+      "installation_note": "",
+      "pinned_version": "",
+      "licence_url": "https://bioconda.github.io/recipes/msgfplus/README.html",
+      "artifact_sha256": "",
+      "licence_sha256": "",
+      "qualification_status": "unqualified",
+      "windows_native_evidence": "not-run",
+      "wsl2_evidence": "not-run",
+      "installation_type": "External Windows-native or WSL2/micromamba acquisition; not bundled",
+      "cpu_requirements": "Engine-specific; qualify on target machine",
+      "gpu_requirements": "No bundled GPU claim; verify provider requirements",
+      "memory_requirement": "Engine- and dataset-specific; qualify on representative workloads",
+      "configuration": "Engine Control Center managed metadata and environment configuration",
+      "test_command": [
+        "--version"
+      ],
+      "expected_test_output": "Successful version probe matching the pinned release plus positive/negative smoke evidence",
+      "last_test_date": "",
+      "health_status": "Unavailable until runtime detection and target qualification pass",
+      "failure_reason": "External artifact, licence, version or target-machine evidence incomplete",
+      "fallback": "Disable engine-backed action and preserve bounded built-in/offline workflow where scientifically valid",
+      "update_policy": "Explicit operator-approved update with checksum, licence and requalification",
+      "bundled": false,
+      "availability": "Detected at runtime; external engines are not claimed as bundled"
+    },
+    {
+      "id": "multiqc",
+      "name": "MultiQC",
+      "label": "MultiQC",
+      "category": "Sequencing QC",
+      "scientific_purpose": "Cross-sample QC aggregation | Run-level quality reporting",
+      "provider": "External scientific software provider; see licence URL and acquisition plan",
+      "capabilities": [
+        "Cross-sample QC aggregation",
+        "Run-level quality reporting"
+      ],
+      "candidate_executables": [
+        "multiqc",
+        "multiqc.exe"
+      ],
+      "executable_path": "Resolved and validated at runtime; never hardcoded",
+      "version_probe": [
+        "--version"
+      ],
+      "required_databases": [],
+      "gpu_optional": false,
+      "installation_note": "",
+      "pinned_version": "",
+      "licence_url": "https://docs.seqera.io/multiqc/getting_started/installation",
+      "artifact_sha256": "",
+      "licence_sha256": "",
+      "qualification_status": "unqualified",
+      "windows_native_evidence": "not-run",
+      "wsl2_evidence": "not-run",
+      "installation_type": "External Windows-native or WSL2/micromamba acquisition; not bundled",
+      "cpu_requirements": "Engine-specific; qualify on target machine",
+      "gpu_requirements": "No bundled GPU claim; verify provider requirements",
+      "memory_requirement": "Engine- and dataset-specific; qualify on representative workloads",
+      "configuration": "Engine Control Center managed metadata and environment configuration",
+      "test_command": [
+        "--version"
+      ],
+      "expected_test_output": "Successful version probe matching the pinned release plus positive/negative smoke evidence",
+      "last_test_date": "",
+      "health_status": "Unavailable until runtime detection and target qualification pass",
+      "failure_reason": "External artifact, licence, version or target-machine evidence incomplete",
+      "fallback": "Disable engine-backed action and preserve bounded built-in/offline workflow where scientifically valid",
+      "update_policy": "Explicit operator-approved update with checksum, licence and requalification",
+      "bundled": false,
+      "availability": "Detected at runtime; external engines are not claimed as bundled"
+    },
+    {
+      "id": "netmhciipan",
+      "name": "NetMHCIIpan",
+      "label": "NetMHCIIpan",
+      "category": "Immunoinformatics",
+      "scientific_purpose": "MHC-II binding prediction",
+      "provider": "External scientific software provider; see licence URL and acquisition plan",
+      "capabilities": [
+        "MHC-II binding prediction"
+      ],
+      "candidate_executables": [
+        "netMHCIIpan",
+        "netMHCIIpan.exe"
+      ],
+      "executable_path": "Resolved and validated at runtime; never hardcoded",
+      "version_probe": [
+        "--version"
+      ],
+      "required_databases": [
+        "NetMHCIIpan data files"
+      ],
+      "gpu_optional": false,
+      "installation_note": "",
+      "pinned_version": "",
+      "licence_url": "https://services.healthtech.dtu.dk/services/NetMHCIIpan-4.0/",
+      "artifact_sha256": "",
+      "licence_sha256": "",
+      "qualification_status": "unqualified",
+      "windows_native_evidence": "not-run",
+      "wsl2_evidence": "not-run",
+      "installation_type": "External Windows-native or WSL2/micromamba acquisition; not bundled",
+      "cpu_requirements": "Engine-specific; qualify on target machine",
+      "gpu_requirements": "No bundled GPU claim; verify provider requirements",
+      "memory_requirement": "Engine- and dataset-specific; qualify on representative workloads",
+      "configuration": "Engine Control Center managed metadata and environment configuration",
+      "test_command": [
+        "--version"
+      ],
+      "expected_test_output": "Successful version probe matching the pinned release plus positive/negative smoke evidence",
+      "last_test_date": "",
+      "health_status": "Unavailable until runtime detection and target qualification pass",
+      "failure_reason": "External artifact, licence, version or target-machine evidence incomplete",
+      "fallback": "Disable engine-backed action and preserve bounded built-in/offline workflow where scientifically valid",
+      "update_policy": "Explicit operator-approved update with checksum, licence and requalification",
+      "bundled": false,
+      "availability": "Detected at runtime; external engines are not claimed as bundled"
+    },
+    {
+      "id": "netmhcpan",
+      "name": "NetMHCpan",
+      "label": "NetMHCpan",
+      "category": "Immunoinformatics",
+      "scientific_purpose": "MHC-I binding prediction",
+      "provider": "External scientific software provider; see licence URL and acquisition plan",
+      "capabilities": [
+        "MHC-I binding prediction"
+      ],
+      "candidate_executables": [
+        "netMHCpan",
+        "netMHCpan.exe"
+      ],
+      "executable_path": "Resolved and validated at runtime; never hardcoded",
+      "version_probe": [
+        "--version"
+      ],
+      "required_databases": [
+        "NetMHCpan data files"
+      ],
+      "gpu_optional": false,
+      "installation_note": "",
+      "pinned_version": "",
+      "licence_url": "https://services.healthtech.dtu.dk/services/NetMHCpan-4.1/",
+      "artifact_sha256": "",
+      "licence_sha256": "",
+      "qualification_status": "unqualified",
+      "windows_native_evidence": "not-run",
+      "wsl2_evidence": "not-run",
+      "installation_type": "External Windows-native or WSL2/micromamba acquisition; not bundled",
+      "cpu_requirements": "Engine-specific; qualify on target machine",
+      "gpu_requirements": "No bundled GPU claim; verify provider requirements",
+      "memory_requirement": "Engine- and dataset-specific; qualify on representative workloads",
+      "configuration": "Engine Control Center managed metadata and environment configuration",
+      "test_command": [
+        "--version"
+      ],
+      "expected_test_output": "Successful version probe matching the pinned release plus positive/negative smoke evidence",
+      "last_test_date": "",
+      "health_status": "Unavailable until runtime detection and target qualification pass",
+      "failure_reason": "External artifact, licence, version or target-machine evidence incomplete",
+      "fallback": "Disable engine-backed action and preserve bounded built-in/offline workflow where scientifically valid",
+      "update_policy": "Explicit operator-approved update with checksum, licence and requalification",
+      "bundled": false,
+      "availability": "Detected at runtime; external engines are not claimed as bundled"
+    },
+    {
+      "id": "obabel",
+      "name": "Open Babel",
+      "label": "Open Babel",
+      "category": "Cheminformatics",
+      "scientific_purpose": "Ligand format conversion | Hydrogen/protonation preparation",
+      "provider": "External scientific software provider; see licence URL and acquisition plan",
+      "capabilities": [
+        "Ligand format conversion",
+        "Hydrogen/protonation preparation"
+      ],
+      "candidate_executables": [
+        "obabel",
+        "obabel.exe"
+      ],
+      "executable_path": "Resolved and validated at runtime; never hardcoded",
+      "version_probe": [
+        "--version"
+      ],
+      "required_databases": [],
+      "gpu_optional": false,
+      "installation_note": "",
+      "pinned_version": "",
+      "licence_url": "https://openbabel.org/",
+      "artifact_sha256": "",
+      "licence_sha256": "",
+      "qualification_status": "unqualified",
+      "windows_native_evidence": "not-run",
+      "wsl2_evidence": "not-run",
+      "installation_type": "External Windows-native or WSL2/micromamba acquisition; not bundled",
+      "cpu_requirements": "Engine-specific; qualify on target machine",
+      "gpu_requirements": "No bundled GPU claim; verify provider requirements",
+      "memory_requirement": "Engine- and dataset-specific; qualify on representative workloads",
+      "configuration": "Engine Control Center managed metadata and environment configuration",
+      "test_command": [
+        "--version"
+      ],
+      "expected_test_output": "Successful version probe matching the pinned release plus positive/negative smoke evidence",
+      "last_test_date": "",
+      "health_status": "Unavailable until runtime detection and target qualification pass",
+      "failure_reason": "External artifact, licence, version or target-machine evidence incomplete",
+      "fallback": "Disable engine-backed action and preserve bounded built-in/offline workflow where scientifically valid",
+      "update_policy": "Explicit operator-approved update with checksum, licence and requalification",
+      "bundled": false,
+      "availability": "Detected at runtime; external engines are not claimed as bundled"
+    },
+    {
+      "id": "odgi",
+      "name": "odgi",
+      "label": "odgi",
+      "category": "Pangenomics",
+      "scientific_purpose": "Graph sorting | Path statistics | Visualization preparation",
+      "provider": "External scientific software provider; see licence URL and acquisition plan",
+      "capabilities": [
+        "Graph sorting",
+        "Path statistics",
+        "Visualization preparation"
+      ],
+      "candidate_executables": [
+        "odgi"
+      ],
+      "executable_path": "Resolved and validated at runtime; never hardcoded",
+      "version_probe": [
+        "--version"
+      ],
+      "required_databases": [],
+      "gpu_optional": false,
+      "installation_note": "",
+      "pinned_version": "",
+      "licence_url": "https://bioconda.github.io/recipes/odgi/README.html",
+      "artifact_sha256": "",
+      "licence_sha256": "",
+      "qualification_status": "unqualified",
+      "windows_native_evidence": "not-run",
+      "wsl2_evidence": "not-run",
+      "installation_type": "External Windows-native or WSL2/micromamba acquisition; not bundled",
+      "cpu_requirements": "Engine-specific; qualify on target machine",
+      "gpu_requirements": "No bundled GPU claim; verify provider requirements",
+      "memory_requirement": "Engine- and dataset-specific; qualify on representative workloads",
+      "configuration": "Engine Control Center managed metadata and environment configuration",
+      "test_command": [
+        "--version"
+      ],
+      "expected_test_output": "Successful version probe matching the pinned release plus positive/negative smoke evidence",
+      "last_test_date": "",
+      "health_status": "Unavailable until runtime detection and target qualification pass",
+      "failure_reason": "External artifact, licence, version or target-machine evidence incomplete",
+      "fallback": "Disable engine-backed action and preserve bounded built-in/offline workflow where scientifically valid",
+      "update_policy": "Explicit operator-approved update with checksum, licence and requalification",
+      "bundled": false,
+      "availability": "Detected at runtime; external engines are not claimed as bundled"
+    },
+    {
+      "id": "openmm",
+      "name": "OpenMM Python",
+      "label": "OpenMM Python",
+      "category": "Structural biology",
+      "scientific_purpose": "Molecular dynamics",
+      "provider": "External scientific software provider; see licence URL and acquisition plan",
+      "capabilities": [
+        "Molecular dynamics"
+      ],
+      "candidate_executables": [
+        "python"
+      ],
+      "executable_path": "Resolved and validated at runtime; never hardcoded",
+      "version_probe": [
+        "-c",
+        "import openmm; print(openmm.__version__)"
+      ],
+      "required_databases": [],
+      "gpu_optional": true,
+      "installation_note": "",
+      "pinned_version": "",
+      "licence_url": "https://bioconda.github.io/recipes/openmm/README.html",
+      "artifact_sha256": "",
+      "licence_sha256": "",
+      "qualification_status": "unqualified",
+      "windows_native_evidence": "not-run",
+      "wsl2_evidence": "not-run",
+      "installation_type": "External Windows-native or WSL2/micromamba acquisition; not bundled",
+      "cpu_requirements": "Engine-specific; qualify on target machine",
+      "gpu_requirements": "Optional where declared",
+      "memory_requirement": "Engine- and dataset-specific; qualify on representative workloads",
+      "configuration": "Engine Control Center managed metadata and environment configuration",
+      "test_command": [
+        "-c",
+        "import openmm; print(openmm.__version__)"
+      ],
+      "expected_test_output": "Successful version probe matching the pinned release plus positive/negative smoke evidence",
+      "last_test_date": "",
+      "health_status": "Unavailable until runtime detection and target qualification pass",
+      "failure_reason": "External artifact, licence, version or target-machine evidence incomplete",
+      "fallback": "Disable engine-backed action and preserve bounded built-in/offline workflow where scientifically valid",
+      "update_policy": "Explicit operator-approved update with checksum, licence and requalification",
+      "bundled": false,
+      "availability": "Detected at runtime; external engines are not claimed as bundled"
+    },
+    {
+      "id": "openms",
+      "name": "OpenMS",
+      "label": "OpenMS",
+      "category": "Mass spectrometry",
+      "scientific_purpose": "mzML validation | Peak processing | Identification workflows",
+      "provider": "External scientific software provider; see licence URL and acquisition plan",
+      "capabilities": [
+        "mzML validation",
+        "Peak processing",
+        "Identification workflows"
+      ],
+      "candidate_executables": [
+        "FileInfo",
+        "FileInfo.exe"
+      ],
+      "executable_path": "Resolved and validated at runtime; never hardcoded",
+      "version_probe": [
+        "--version"
+      ],
+      "required_databases": [],
+      "gpu_optional": false,
+      "installation_note": "",
+      "pinned_version": "",
+      "licence_url": "https://bioconda.github.io/recipes/openms/README.html",
+      "artifact_sha256": "",
+      "licence_sha256": "",
+      "qualification_status": "unqualified",
+      "windows_native_evidence": "not-run",
+      "wsl2_evidence": "not-run",
+      "installation_type": "External Windows-native or WSL2/micromamba acquisition; not bundled",
+      "cpu_requirements": "Engine-specific; qualify on target machine",
+      "gpu_requirements": "No bundled GPU claim; verify provider requirements",
+      "memory_requirement": "Engine- and dataset-specific; qualify on representative workloads",
+      "configuration": "Engine Control Center managed metadata and environment configuration",
+      "test_command": [
+        "--version"
+      ],
+      "expected_test_output": "Successful version probe matching the pinned release plus positive/negative smoke evidence",
+      "last_test_date": "",
+      "health_status": "Unavailable until runtime detection and target qualification pass",
+      "failure_reason": "External artifact, licence, version or target-machine evidence incomplete",
+      "fallback": "Disable engine-backed action and preserve bounded built-in/offline workflow where scientifically valid",
+      "update_policy": "Explicit operator-approved update with checksum, licence and requalification",
+      "bundled": false,
+      "availability": "Detected at runtime; external engines are not claimed as bundled"
+    },
+    {
+      "id": "openms_featurefinder",
+      "name": "OpenMS FeatureFinderMetabo",
+      "label": "OpenMS FeatureFinderMetabo",
+      "category": "Mass spectrometry",
+      "scientific_purpose": "LC-MS feature detection | Chromatographic peak picking",
+      "provider": "External scientific software provider; see licence URL and acquisition plan",
+      "capabilities": [
+        "LC-MS feature detection",
+        "Chromatographic peak picking"
+      ],
+      "candidate_executables": [
+        "FeatureFinderMetabo",
+        "FeatureFinderMetabo.exe"
+      ],
+      "executable_path": "Resolved and validated at runtime; never hardcoded",
+      "version_probe": [
+        "--version"
+      ],
+      "required_databases": [],
+      "gpu_optional": false,
+      "installation_note": "",
+      "pinned_version": "",
+      "licence_url": "https://www.openms.de/",
+      "artifact_sha256": "",
+      "licence_sha256": "",
+      "qualification_status": "unqualified",
+      "windows_native_evidence": "not-run",
+      "wsl2_evidence": "not-run",
+      "installation_type": "External Windows-native or WSL2/micromamba acquisition; not bundled",
+      "cpu_requirements": "Engine-specific; qualify on target machine",
+      "gpu_requirements": "No bundled GPU claim; verify provider requirements",
+      "memory_requirement": "Engine- and dataset-specific; qualify on representative workloads",
+      "configuration": "Engine Control Center managed metadata and environment configuration",
+      "test_command": [
+        "--version"
+      ],
+      "expected_test_output": "Successful version probe matching the pinned release plus positive/negative smoke evidence",
+      "last_test_date": "",
+      "health_status": "Unavailable until runtime detection and target qualification pass",
+      "failure_reason": "External artifact, licence, version or target-machine evidence incomplete",
+      "fallback": "Disable engine-backed action and preserve bounded built-in/offline workflow where scientifically valid",
+      "update_policy": "Explicit operator-approved update with checksum, licence and requalification",
+      "bundled": false,
+      "availability": "Detected at runtime; external engines are not claimed as bundled"
+    },
+    {
+      "id": "openslide",
+      "name": "OpenSlide Python",
+      "label": "OpenSlide Python",
+      "category": "Digital pathology",
+      "scientific_purpose": "Tiled whole-slide access",
+      "provider": "External scientific software provider; see licence URL and acquisition plan",
+      "capabilities": [
+        "Tiled whole-slide access"
+      ],
+      "candidate_executables": [
+        "python"
+      ],
+      "executable_path": "Resolved and validated at runtime; never hardcoded",
+      "version_probe": [
+        "-c",
+        "import openslide; print(openslide.__version__)"
+      ],
+      "required_databases": [],
+      "gpu_optional": false,
+      "installation_note": "",
+      "pinned_version": "",
+      "licence_url": "https://bioconda.github.io/recipes/openslide/README.html",
+      "artifact_sha256": "",
+      "licence_sha256": "",
+      "qualification_status": "unqualified",
+      "windows_native_evidence": "not-run",
+      "wsl2_evidence": "not-run",
+      "installation_type": "External Windows-native or WSL2/micromamba acquisition; not bundled",
+      "cpu_requirements": "Engine-specific; qualify on target machine",
+      "gpu_requirements": "No bundled GPU claim; verify provider requirements",
+      "memory_requirement": "Engine- and dataset-specific; qualify on representative workloads",
+      "configuration": "Engine Control Center managed metadata and environment configuration",
+      "test_command": [
+        "-c",
+        "import openslide; print(openslide.__version__)"
+      ],
+      "expected_test_output": "Successful version probe matching the pinned release plus positive/negative smoke evidence",
+      "last_test_date": "",
+      "health_status": "Unavailable until runtime detection and target qualification pass",
+      "failure_reason": "External artifact, licence, version or target-machine evidence incomplete",
+      "fallback": "Disable engine-backed action and preserve bounded built-in/offline workflow where scientifically valid",
+      "update_policy": "Explicit operator-approved update with checksum, licence and requalification",
+      "bundled": false,
+      "availability": "Detected at runtime; external engines are not claimed as bundled"
+    },
+    {
+      "id": "picard",
+      "name": "Picard",
+      "label": "Picard",
+      "category": "Genomics",
+      "scientific_purpose": "Alignment metrics | Duplicate/insert-size metrics",
+      "provider": "External scientific software provider; see licence URL and acquisition plan",
+      "capabilities": [
+        "Alignment metrics",
+        "Duplicate/insert-size metrics"
+      ],
+      "candidate_executables": [
+        "picard",
+        "picard.exe"
+      ],
+      "executable_path": "Resolved and validated at runtime; never hardcoded",
+      "version_probe": [
+        "--version"
+      ],
+      "required_databases": [
+        "Reference FASTA"
+      ],
+      "gpu_optional": false,
+      "installation_note": "",
+      "pinned_version": "",
+      "licence_url": "https://github.com/broadinstitute/picard",
+      "artifact_sha256": "",
+      "licence_sha256": "",
+      "qualification_status": "unqualified",
+      "windows_native_evidence": "not-run",
+      "wsl2_evidence": "not-run",
+      "installation_type": "External Windows-native or WSL2/micromamba acquisition; not bundled",
+      "cpu_requirements": "Engine-specific; qualify on target machine",
+      "gpu_requirements": "No bundled GPU claim; verify provider requirements",
+      "memory_requirement": "Engine- and dataset-specific; qualify on representative workloads",
+      "configuration": "Engine Control Center managed metadata and environment configuration",
+      "test_command": [
+        "--version"
+      ],
+      "expected_test_output": "Successful version probe matching the pinned release plus positive/negative smoke evidence",
+      "last_test_date": "",
+      "health_status": "Unavailable until runtime detection and target qualification pass",
+      "failure_reason": "External artifact, licence, version or target-machine evidence incomplete",
+      "fallback": "Disable engine-backed action and preserve bounded built-in/offline workflow where scientifically valid",
+      "update_policy": "Explicit operator-approved update with checksum, licence and requalification",
+      "bundled": false,
+      "availability": "Detected at runtime; external engines are not claimed as bundled"
+    },
+    {
+      "id": "plink2",
+      "name": "PLINK 2",
+      "label": "PLINK 2",
+      "category": "Population genetics",
+      "scientific_purpose": "Cohort QC | Association tests | PCA | Kinship",
+      "provider": "External scientific software provider; see licence URL and acquisition plan",
+      "capabilities": [
+        "Cohort QC",
+        "Association tests",
+        "PCA",
+        "Kinship"
+      ],
+      "candidate_executables": [
+        "plink2"
+      ],
+      "executable_path": "Resolved and validated at runtime; never hardcoded",
+      "version_probe": [
+        "--version"
+      ],
+      "required_databases": [],
+      "gpu_optional": false,
+      "installation_note": "",
+      "pinned_version": "",
+      "licence_url": "https://bioconda.github.io/recipes/plink2/README.html",
+      "artifact_sha256": "",
+      "licence_sha256": "",
+      "qualification_status": "unqualified",
+      "windows_native_evidence": "not-run",
+      "wsl2_evidence": "not-run",
+      "installation_type": "External Windows-native or WSL2/micromamba acquisition; not bundled",
+      "cpu_requirements": "Engine-specific; qualify on target machine",
+      "gpu_requirements": "No bundled GPU claim; verify provider requirements",
+      "memory_requirement": "Engine- and dataset-specific; qualify on representative workloads",
+      "configuration": "Engine Control Center managed metadata and environment configuration",
+      "test_command": [
+        "--version"
+      ],
+      "expected_test_output": "Successful version probe matching the pinned release plus positive/negative smoke evidence",
+      "last_test_date": "",
+      "health_status": "Unavailable until runtime detection and target qualification pass",
+      "failure_reason": "External artifact, licence, version or target-machine evidence incomplete",
+      "fallback": "Disable engine-backed action and preserve bounded built-in/offline workflow where scientifically valid",
+      "update_policy": "Explicit operator-approved update with checksum, licence and requalification",
+      "bundled": false,
+      "availability": "Detected at runtime; external engines are not claimed as bundled"
+    },
+    {
+      "id": "proteinmpnn",
+      "name": "ProteinMPNN",
+      "label": "ProteinMPNN",
+      "category": "Protein design",
+      "scientific_purpose": "Sequence design from structure",
+      "provider": "External scientific software provider; see licence URL and acquisition plan",
+      "capabilities": [
+        "Sequence design from structure"
+      ],
+      "candidate_executables": [
+        "protein_mpnn_run.py",
+        "proteinmpnn"
+      ],
+      "executable_path": "Resolved and validated at runtime; never hardcoded",
+      "version_probe": [
+        "--version"
+      ],
+      "required_databases": [],
+      "gpu_optional": true,
+      "installation_note": "",
+      "pinned_version": "",
+      "licence_url": "https://github.com/dauparas/ProteinMPNN",
+      "artifact_sha256": "",
+      "licence_sha256": "",
+      "qualification_status": "unqualified",
+      "windows_native_evidence": "not-run",
+      "wsl2_evidence": "not-run",
+      "installation_type": "External Windows-native or WSL2/micromamba acquisition; not bundled",
+      "cpu_requirements": "Engine-specific; qualify on target machine",
+      "gpu_requirements": "Optional where declared",
+      "memory_requirement": "Engine- and dataset-specific; qualify on representative workloads",
+      "configuration": "Engine Control Center managed metadata and environment configuration",
+      "test_command": [
+        "--version"
+      ],
+      "expected_test_output": "Successful version probe matching the pinned release plus positive/negative smoke evidence",
+      "last_test_date": "",
+      "health_status": "Unavailable until runtime detection and target qualification pass",
+      "failure_reason": "External artifact, licence, version or target-machine evidence incomplete",
+      "fallback": "Disable engine-backed action and preserve bounded built-in/offline workflow where scientifically valid",
+      "update_policy": "Explicit operator-approved update with checksum, licence and requalification",
+      "bundled": false,
+      "availability": "Detected at runtime; external engines are not claimed as bundled"
+    },
+    {
+      "id": "regenie",
+      "name": "REGENIE",
+      "label": "REGENIE",
+      "category": "Population genetics",
+      "scientific_purpose": "Whole-genome regression | Association testing",
+      "provider": "External scientific software provider; see licence URL and acquisition plan",
+      "capabilities": [
+        "Whole-genome regression",
+        "Association testing"
+      ],
+      "candidate_executables": [
+        "regenie"
+      ],
+      "executable_path": "Resolved and validated at runtime; never hardcoded",
+      "version_probe": [
+        "--version"
+      ],
+      "required_databases": [],
+      "gpu_optional": false,
+      "installation_note": "",
+      "pinned_version": "",
+      "licence_url": "https://bioconda.github.io/recipes/regenie/README.html",
+      "artifact_sha256": "",
+      "licence_sha256": "",
+      "qualification_status": "unqualified",
+      "windows_native_evidence": "not-run",
+      "wsl2_evidence": "not-run",
+      "installation_type": "External Windows-native or WSL2/micromamba acquisition; not bundled",
+      "cpu_requirements": "Engine-specific; qualify on target machine",
+      "gpu_requirements": "No bundled GPU claim; verify provider requirements",
+      "memory_requirement": "Engine- and dataset-specific; qualify on representative workloads",
+      "configuration": "Engine Control Center managed metadata and environment configuration",
+      "test_command": [
+        "--version"
+      ],
+      "expected_test_output": "Successful version probe matching the pinned release plus positive/negative smoke evidence",
+      "last_test_date": "",
+      "health_status": "Unavailable until runtime detection and target qualification pass",
+      "failure_reason": "External artifact, licence, version or target-machine evidence incomplete",
+      "fallback": "Disable engine-backed action and preserve bounded built-in/offline workflow where scientifically valid",
+      "update_policy": "Explicit operator-approved update with checksum, licence and requalification",
+      "bundled": false,
+      "availability": "Detected at runtime; external engines are not claimed as bundled"
+    },
+    {
+      "id": "resfinder",
+      "name": "ResFinder",
+      "label": "ResFinder",
+      "category": "AMR",
+      "scientific_purpose": "Acquired resistance and point-mutation detection",
+      "provider": "External scientific software provider; see licence URL and acquisition plan",
+      "capabilities": [
+        "Acquired resistance and point-mutation detection"
+      ],
+      "candidate_executables": [
+        "run_resfinder.py",
+        "resfinder"
+      ],
+      "executable_path": "Resolved and validated at runtime; never hardcoded",
+      "version_probe": [
+        "--version"
+      ],
+      "required_databases": [
+        "ResFinder database",
+        "PointFinder database"
+      ],
+      "gpu_optional": false,
+      "installation_note": "",
+      "pinned_version": "",
+      "licence_url": "https://bioconda.github.io/recipes/resfinder/README.html",
+      "artifact_sha256": "",
+      "licence_sha256": "",
+      "qualification_status": "unqualified",
+      "windows_native_evidence": "not-run",
+      "wsl2_evidence": "not-run",
+      "installation_type": "External Windows-native or WSL2/micromamba acquisition; not bundled",
+      "cpu_requirements": "Engine-specific; qualify on target machine",
+      "gpu_requirements": "No bundled GPU claim; verify provider requirements",
+      "memory_requirement": "Engine- and dataset-specific; qualify on representative workloads",
+      "configuration": "Engine Control Center managed metadata and environment configuration",
+      "test_command": [
+        "--version"
+      ],
+      "expected_test_output": "Successful version probe matching the pinned release plus positive/negative smoke evidence",
+      "last_test_date": "",
+      "health_status": "Unavailable until runtime detection and target qualification pass",
+      "failure_reason": "External artifact, licence, version or target-machine evidence incomplete",
+      "fallback": "Disable engine-backed action and preserve bounded built-in/offline workflow where scientifically valid",
+      "update_policy": "Explicit operator-approved update with checksum, licence and requalification",
+      "bundled": false,
+      "availability": "Detected at runtime; external engines are not claimed as bundled"
+    },
+    {
+      "id": "rfdiffusion",
+      "name": "RFdiffusion",
+      "label": "RFdiffusion",
+      "category": "Protein design",
+      "scientific_purpose": "Generative backbone design",
+      "provider": "External scientific software provider; see licence URL and acquisition plan",
+      "capabilities": [
+        "Generative backbone design"
+      ],
+      "candidate_executables": [
+        "run_inference.py",
+        "rfdiffusion"
+      ],
+      "executable_path": "Resolved and validated at runtime; never hardcoded",
+      "version_probe": [
+        "--version"
+      ],
+      "required_databases": [
+        "Model weights"
+      ],
+      "gpu_optional": true,
+      "installation_note": "",
+      "pinned_version": "",
+      "licence_url": "https://github.com/RosettaCommons/RFdiffusion",
+      "artifact_sha256": "",
+      "licence_sha256": "",
+      "qualification_status": "unqualified",
+      "windows_native_evidence": "not-run",
+      "wsl2_evidence": "not-run",
+      "installation_type": "External Windows-native or WSL2/micromamba acquisition; not bundled",
+      "cpu_requirements": "Engine-specific; qualify on target machine",
+      "gpu_requirements": "Optional where declared",
+      "memory_requirement": "Engine- and dataset-specific; qualify on representative workloads",
+      "configuration": "Engine Control Center managed metadata and environment configuration",
+      "test_command": [
+        "--version"
+      ],
+      "expected_test_output": "Successful version probe matching the pinned release plus positive/negative smoke evidence",
+      "last_test_date": "",
+      "health_status": "Unavailable until runtime detection and target qualification pass",
+      "failure_reason": "External artifact, licence, version or target-machine evidence incomplete",
+      "fallback": "Disable engine-backed action and preserve bounded built-in/offline workflow where scientifically valid",
+      "update_policy": "Explicit operator-approved update with checksum, licence and requalification",
+      "bundled": false,
+      "availability": "Detected at runtime; external engines are not claimed as bundled"
+    },
+    {
+      "id": "rmats",
+      "name": "rMATS",
+      "label": "rMATS",
+      "category": "Transcriptomics",
+      "scientific_purpose": "Replicate-aware alternative splicing",
+      "provider": "External scientific software provider; see licence URL and acquisition plan",
+      "capabilities": [
+        "Replicate-aware alternative splicing"
+      ],
+      "candidate_executables": [
+        "rmats.py",
+        "rmats"
+      ],
+      "executable_path": "Resolved and validated at runtime; never hardcoded",
+      "version_probe": [
+        "--version"
+      ],
+      "required_databases": [
+        "Genome annotation GTF"
+      ],
+      "gpu_optional": false,
+      "installation_note": "",
+      "pinned_version": "",
+      "licence_url": "https://github.com/Xinglab/rmats-turbo",
+      "artifact_sha256": "",
+      "licence_sha256": "",
+      "qualification_status": "unqualified",
+      "windows_native_evidence": "not-run",
+      "wsl2_evidence": "not-run",
+      "installation_type": "External Windows-native or WSL2/micromamba acquisition; not bundled",
+      "cpu_requirements": "Engine-specific; qualify on target machine",
+      "gpu_requirements": "No bundled GPU claim; verify provider requirements",
+      "memory_requirement": "Engine- and dataset-specific; qualify on representative workloads",
+      "configuration": "Engine Control Center managed metadata and environment configuration",
+      "test_command": [
+        "--version"
+      ],
+      "expected_test_output": "Successful version probe matching the pinned release plus positive/negative smoke evidence",
+      "last_test_date": "",
+      "health_status": "Unavailable until runtime detection and target qualification pass",
+      "failure_reason": "External artifact, licence, version or target-machine evidence incomplete",
+      "fallback": "Disable engine-backed action and preserve bounded built-in/offline workflow where scientifically valid",
+      "update_policy": "Explicit operator-approved update with checksum, licence and requalification",
+      "bundled": false,
+      "availability": "Detected at runtime; external engines are not claimed as bundled"
+    },
+    {
+      "id": "saige",
+      "name": "SAIGE",
+      "label": "SAIGE",
+      "category": "Population genetics",
+      "scientific_purpose": "Mixed-model association | Case-control imbalance",
+      "provider": "External scientific software provider; see licence URL and acquisition plan",
+      "capabilities": [
+        "Mixed-model association",
+        "Case-control imbalance"
+      ],
+      "candidate_executables": [
+        "step1_fitNULLGLMM.R",
+        "SAIGE"
+      ],
+      "executable_path": "Resolved and validated at runtime; never hardcoded",
+      "version_probe": [
+        "--version"
+      ],
+      "required_databases": [],
+      "gpu_optional": false,
+      "installation_note": "",
+      "pinned_version": "",
+      "licence_url": "https://bioconda.github.io/recipes/r-saige/README.html",
+      "artifact_sha256": "",
+      "licence_sha256": "",
+      "qualification_status": "unqualified",
+      "windows_native_evidence": "not-run",
+      "wsl2_evidence": "not-run",
+      "installation_type": "External Windows-native or WSL2/micromamba acquisition; not bundled",
+      "cpu_requirements": "Engine-specific; qualify on target machine",
+      "gpu_requirements": "No bundled GPU claim; verify provider requirements",
+      "memory_requirement": "Engine- and dataset-specific; qualify on representative workloads",
+      "configuration": "Engine Control Center managed metadata and environment configuration",
+      "test_command": [
+        "--version"
+      ],
+      "expected_test_output": "Successful version probe matching the pinned release plus positive/negative smoke evidence",
+      "last_test_date": "",
+      "health_status": "Unavailable until runtime detection and target qualification pass",
+      "failure_reason": "External artifact, licence, version or target-machine evidence incomplete",
+      "fallback": "Disable engine-backed action and preserve bounded built-in/offline workflow where scientifically valid",
+      "update_policy": "Explicit operator-approved update with checksum, licence and requalification",
+      "bundled": false,
+      "availability": "Detected at runtime; external engines are not claimed as bundled"
+    },
+    {
+      "id": "salmon",
+      "name": "Salmon",
+      "label": "Salmon",
+      "category": "Transcriptomics",
+      "scientific_purpose": "Transcript quantification | Mapping validation",
+      "provider": "External scientific software provider; see licence URL and acquisition plan",
+      "capabilities": [
+        "Transcript quantification",
+        "Mapping validation"
+      ],
+      "candidate_executables": [
+        "salmon",
+        "salmon.exe"
+      ],
+      "executable_path": "Resolved and validated at runtime; never hardcoded",
+      "version_probe": [
+        "--version"
+      ],
+      "required_databases": [
+        "Salmon transcriptome index"
+      ],
+      "gpu_optional": false,
+      "installation_note": "",
+      "pinned_version": "",
+      "licence_url": "https://github.com/COMBINE-lab/salmon",
+      "artifact_sha256": "",
+      "licence_sha256": "",
+      "qualification_status": "unqualified",
+      "windows_native_evidence": "not-run",
+      "wsl2_evidence": "not-run",
+      "installation_type": "External Windows-native or WSL2/micromamba acquisition; not bundled",
+      "cpu_requirements": "Engine-specific; qualify on target machine",
+      "gpu_requirements": "No bundled GPU claim; verify provider requirements",
+      "memory_requirement": "Engine- and dataset-specific; qualify on representative workloads",
+      "configuration": "Engine Control Center managed metadata and environment configuration",
+      "test_command": [
+        "--version"
+      ],
+      "expected_test_output": "Successful version probe matching the pinned release plus positive/negative smoke evidence",
+      "last_test_date": "",
+      "health_status": "Unavailable until runtime detection and target qualification pass",
+      "failure_reason": "External artifact, licence, version or target-machine evidence incomplete",
+      "fallback": "Disable engine-backed action and preserve bounded built-in/offline workflow where scientifically valid",
+      "update_policy": "Explicit operator-approved update with checksum, licence and requalification",
+      "bundled": false,
+      "availability": "Detected at runtime; external engines are not claimed as bundled"
+    },
+    {
+      "id": "samtools",
+      "name": "SAMtools",
+      "label": "SAMtools",
+      "category": "Genomics",
+      "scientific_purpose": "BAM/CRAM validation | Indexing | Coverage | Region extraction",
+      "provider": "External scientific software provider; see licence URL and acquisition plan",
+      "capabilities": [
+        "BAM/CRAM validation",
+        "Indexing",
+        "Coverage",
+        "Region extraction"
+      ],
+      "candidate_executables": [
+        "samtools"
+      ],
+      "executable_path": "Resolved and validated at runtime; never hardcoded",
+      "version_probe": [
+        "--version"
+      ],
+      "required_databases": [],
+      "gpu_optional": false,
+      "installation_note": "Install a current SAMtools release and keep the matching reference FASTA available for CRAM.",
+      "pinned_version": "",
+      "licence_url": "https://bioconda.github.io/recipes/samtools/README.html",
+      "artifact_sha256": "",
+      "licence_sha256": "",
+      "qualification_status": "unqualified",
+      "windows_native_evidence": "not-run",
+      "wsl2_evidence": "not-run",
+      "installation_type": "External Windows-native or WSL2/micromamba acquisition; not bundled",
+      "cpu_requirements": "Engine-specific; qualify on target machine",
+      "gpu_requirements": "No bundled GPU claim; verify provider requirements",
+      "memory_requirement": "Engine- and dataset-specific; qualify on representative workloads",
+      "configuration": "Engine Control Center managed metadata and environment configuration",
+      "test_command": [
+        "--version"
+      ],
+      "expected_test_output": "Successful version probe matching the pinned release plus positive/negative smoke evidence",
+      "last_test_date": "",
+      "health_status": "Unavailable until runtime detection and target qualification pass",
+      "failure_reason": "External artifact, licence, version or target-machine evidence incomplete",
+      "fallback": "Disable engine-backed action and preserve bounded built-in/offline workflow where scientifically valid",
+      "update_policy": "Explicit operator-approved update with checksum, licence and requalification",
+      "bundled": false,
+      "availability": "Detected at runtime; external engines are not claimed as bundled"
+    },
+    {
+      "id": "scanpy",
+      "name": "Scanpy Python",
+      "label": "Scanpy Python",
+      "category": "Single-cell",
+      "scientific_purpose": "Single-cell QC | Embedding | Clustering",
+      "provider": "External scientific software provider; see licence URL and acquisition plan",
+      "capabilities": [
+        "Single-cell QC",
+        "Embedding",
+        "Clustering"
+      ],
+      "candidate_executables": [
+        "python"
+      ],
+      "executable_path": "Resolved and validated at runtime; never hardcoded",
+      "version_probe": [
+        "-c",
+        "import scanpy; print(scanpy.__version__)"
+      ],
+      "required_databases": [],
+      "gpu_optional": false,
+      "installation_note": "",
+      "pinned_version": "",
+      "licence_url": "https://bioconda.github.io/recipes/scanpy/README.html",
+      "artifact_sha256": "",
+      "licence_sha256": "",
+      "qualification_status": "unqualified",
+      "windows_native_evidence": "not-run",
+      "wsl2_evidence": "not-run",
+      "installation_type": "External Windows-native or WSL2/micromamba acquisition; not bundled",
+      "cpu_requirements": "Engine-specific; qualify on target machine",
+      "gpu_requirements": "No bundled GPU claim; verify provider requirements",
+      "memory_requirement": "Engine- and dataset-specific; qualify on representative workloads",
+      "configuration": "Engine Control Center managed metadata and environment configuration",
+      "test_command": [
+        "-c",
+        "import scanpy; print(scanpy.__version__)"
+      ],
+      "expected_test_output": "Successful version probe matching the pinned release plus positive/negative smoke evidence",
+      "last_test_date": "",
+      "health_status": "Unavailable until runtime detection and target qualification pass",
+      "failure_reason": "External artifact, licence, version or target-machine evidence incomplete",
+      "fallback": "Disable engine-backed action and preserve bounded built-in/offline workflow where scientifically valid",
+      "update_policy": "Explicit operator-approved update with checksum, licence and requalification",
+      "bundled": false,
+      "availability": "Detected at runtime; external engines are not claimed as bundled"
+    },
+    {
+      "id": "scvelo",
+      "name": "scVelo Python",
+      "label": "scVelo Python",
+      "category": "Single-cell",
+      "scientific_purpose": "RNA velocity",
+      "provider": "External scientific software provider; see licence URL and acquisition plan",
+      "capabilities": [
+        "RNA velocity"
+      ],
+      "candidate_executables": [
+        "python"
+      ],
+      "executable_path": "Resolved and validated at runtime; never hardcoded",
+      "version_probe": [
+        "-c",
+        "import scvelo; print(scvelo.__version__)"
+      ],
+      "required_databases": [],
+      "gpu_optional": false,
+      "installation_note": "",
+      "pinned_version": "",
+      "licence_url": "https://bioconda.github.io/recipes/scvelo/README.html",
+      "artifact_sha256": "",
+      "licence_sha256": "",
+      "qualification_status": "unqualified",
+      "windows_native_evidence": "not-run",
+      "wsl2_evidence": "not-run",
+      "installation_type": "External Windows-native or WSL2/micromamba acquisition; not bundled",
+      "cpu_requirements": "Engine-specific; qualify on target machine",
+      "gpu_requirements": "No bundled GPU claim; verify provider requirements",
+      "memory_requirement": "Engine- and dataset-specific; qualify on representative workloads",
+      "configuration": "Engine Control Center managed metadata and environment configuration",
+      "test_command": [
+        "-c",
+        "import scvelo; print(scvelo.__version__)"
+      ],
+      "expected_test_output": "Successful version probe matching the pinned release plus positive/negative smoke evidence",
+      "last_test_date": "",
+      "health_status": "Unavailable until runtime detection and target qualification pass",
+      "failure_reason": "External artifact, licence, version or target-machine evidence incomplete",
+      "fallback": "Disable engine-backed action and preserve bounded built-in/offline workflow where scientifically valid",
+      "update_policy": "Explicit operator-approved update with checksum, licence and requalification",
+      "bundled": false,
+      "availability": "Detected at runtime; external engines are not claimed as bundled"
+    },
+    {
+      "id": "sniffles",
+      "name": "Sniffles2",
+      "label": "Sniffles2",
+      "category": "Structural variation",
+      "scientific_purpose": "Long-read SV calling | Population SV merging",
+      "provider": "External scientific software provider; see licence URL and acquisition plan",
+      "capabilities": [
+        "Long-read SV calling",
+        "Population SV merging"
+      ],
+      "candidate_executables": [
+        "sniffles",
+        "sniffles2"
+      ],
+      "executable_path": "Resolved and validated at runtime; never hardcoded",
+      "version_probe": [
+        "--version"
+      ],
+      "required_databases": [],
+      "gpu_optional": false,
+      "installation_note": "",
+      "pinned_version": "",
+      "licence_url": "https://bioconda.github.io/recipes/sniffles/README.html",
+      "artifact_sha256": "",
+      "licence_sha256": "",
+      "qualification_status": "unqualified",
+      "windows_native_evidence": "not-run",
+      "wsl2_evidence": "not-run",
+      "installation_type": "External Windows-native or WSL2/micromamba acquisition; not bundled",
+      "cpu_requirements": "Engine-specific; qualify on target machine",
+      "gpu_requirements": "No bundled GPU claim; verify provider requirements",
+      "memory_requirement": "Engine- and dataset-specific; qualify on representative workloads",
+      "configuration": "Engine Control Center managed metadata and environment configuration",
+      "test_command": [
+        "--version"
+      ],
+      "expected_test_output": "Successful version probe matching the pinned release plus positive/negative smoke evidence",
+      "last_test_date": "",
+      "health_status": "Unavailable until runtime detection and target qualification pass",
+      "failure_reason": "External artifact, licence, version or target-machine evidence incomplete",
+      "fallback": "Disable engine-backed action and preserve bounded built-in/offline workflow where scientifically valid",
+      "update_policy": "Explicit operator-approved update with checksum, licence and requalification",
+      "bundled": false,
+      "availability": "Detected at runtime; external engines are not claimed as bundled"
+    },
+    {
+      "id": "snpeff",
+      "name": "SnpEff",
+      "label": "SnpEff",
+      "category": "Variant interpretation",
+      "scientific_purpose": "Variant consequence annotation",
+      "provider": "External scientific software provider; see licence URL and acquisition plan",
+      "capabilities": [
+        "Variant consequence annotation"
+      ],
+      "candidate_executables": [
+        "snpEff",
+        "snpEff.exe",
+        "snpeff"
+      ],
+      "executable_path": "Resolved and validated at runtime; never hardcoded",
+      "version_probe": [
+        "--version"
+      ],
+      "required_databases": [
+        "SnpEff genome database"
+      ],
+      "gpu_optional": false,
+      "installation_note": "",
+      "pinned_version": "",
+      "licence_url": "https://pcingola.github.io/SnpEff/",
+      "artifact_sha256": "",
+      "licence_sha256": "",
+      "qualification_status": "unqualified",
+      "windows_native_evidence": "not-run",
+      "wsl2_evidence": "not-run",
+      "installation_type": "External Windows-native or WSL2/micromamba acquisition; not bundled",
+      "cpu_requirements": "Engine-specific; qualify on target machine",
+      "gpu_requirements": "No bundled GPU claim; verify provider requirements",
+      "memory_requirement": "Engine- and dataset-specific; qualify on representative workloads",
+      "configuration": "Engine Control Center managed metadata and environment configuration",
+      "test_command": [
+        "--version"
+      ],
+      "expected_test_output": "Successful version probe matching the pinned release plus positive/negative smoke evidence",
+      "last_test_date": "",
+      "health_status": "Unavailable until runtime detection and target qualification pass",
+      "failure_reason": "External artifact, licence, version or target-machine evidence incomplete",
+      "fallback": "Disable engine-backed action and preserve bounded built-in/offline workflow where scientifically valid",
+      "update_policy": "Explicit operator-approved update with checksum, licence and requalification",
+      "bundled": false,
+      "availability": "Detected at runtime; external engines are not claimed as bundled"
+    },
+    {
+      "id": "star",
+      "name": "STAR",
+      "label": "STAR",
+      "category": "Transcriptomics",
+      "scientific_purpose": "Splice-aware RNA alignment",
+      "provider": "External scientific software provider; see licence URL and acquisition plan",
+      "capabilities": [
+        "Splice-aware RNA alignment"
+      ],
+      "candidate_executables": [
+        "STAR",
+        "star"
+      ],
+      "executable_path": "Resolved and validated at runtime; never hardcoded",
+      "version_probe": [
+        "--version"
+      ],
+      "required_databases": [
+        "STAR genome index"
+      ],
+      "gpu_optional": false,
+      "installation_note": "",
+      "pinned_version": "",
+      "licence_url": "https://bioconda.github.io/recipes/star/README.html",
+      "artifact_sha256": "",
+      "licence_sha256": "",
+      "qualification_status": "unqualified",
+      "windows_native_evidence": "not-run",
+      "wsl2_evidence": "not-run",
+      "installation_type": "External Windows-native or WSL2/micromamba acquisition; not bundled",
+      "cpu_requirements": "Engine-specific; qualify on target machine",
+      "gpu_requirements": "No bundled GPU claim; verify provider requirements",
+      "memory_requirement": "Engine- and dataset-specific; qualify on representative workloads",
+      "configuration": "Engine Control Center managed metadata and environment configuration",
+      "test_command": [
+        "--version"
+      ],
+      "expected_test_output": "Successful version probe matching the pinned release plus positive/negative smoke evidence",
+      "last_test_date": "",
+      "health_status": "Unavailable until runtime detection and target qualification pass",
+      "failure_reason": "External artifact, licence, version or target-machine evidence incomplete",
+      "fallback": "Disable engine-backed action and preserve bounded built-in/offline workflow where scientifically valid",
+      "update_policy": "Explicit operator-approved update with checksum, licence and requalification",
+      "bundled": false,
+      "availability": "Detected at runtime; external engines are not claimed as bundled"
+    },
+    {
+      "id": "stardist",
+      "name": "StarDist Python",
+      "label": "StarDist Python",
+      "category": "Bioimaging",
+      "scientific_purpose": "Star-convex object segmentation",
+      "provider": "External scientific software provider; see licence URL and acquisition plan",
+      "capabilities": [
+        "Star-convex object segmentation"
+      ],
+      "candidate_executables": [
+        "python"
+      ],
+      "executable_path": "Resolved and validated at runtime; never hardcoded",
+      "version_probe": [
+        "-c",
+        "import stardist; print(stardist.__version__)"
+      ],
+      "required_databases": [],
+      "gpu_optional": true,
+      "installation_note": "",
+      "pinned_version": "",
+      "licence_url": "https://bioconda.github.io/recipes/stardist/README.html",
+      "artifact_sha256": "",
+      "licence_sha256": "",
+      "qualification_status": "unqualified",
+      "windows_native_evidence": "not-run",
+      "wsl2_evidence": "not-run",
+      "installation_type": "External Windows-native or WSL2/micromamba acquisition; not bundled",
+      "cpu_requirements": "Engine-specific; qualify on target machine",
+      "gpu_requirements": "Optional where declared",
+      "memory_requirement": "Engine- and dataset-specific; qualify on representative workloads",
+      "configuration": "Engine Control Center managed metadata and environment configuration",
+      "test_command": [
+        "-c",
+        "import stardist; print(stardist.__version__)"
+      ],
+      "expected_test_output": "Successful version probe matching the pinned release plus positive/negative smoke evidence",
+      "last_test_date": "",
+      "health_status": "Unavailable until runtime detection and target qualification pass",
+      "failure_reason": "External artifact, licence, version or target-machine evidence incomplete",
+      "fallback": "Disable engine-backed action and preserve bounded built-in/offline workflow where scientifically valid",
+      "update_policy": "Explicit operator-approved update with checksum, licence and requalification",
+      "bundled": false,
+      "availability": "Detected at runtime; external engines are not claimed as bundled"
+    },
+    {
+      "id": "suppa2",
+      "name": "SUPPA2",
+      "label": "SUPPA2",
+      "category": "Transcriptomics",
+      "scientific_purpose": "Alternative-splicing event quantification",
+      "provider": "External scientific software provider; see licence URL and acquisition plan",
+      "capabilities": [
+        "Alternative-splicing event quantification"
+      ],
+      "candidate_executables": [
+        "suppa.py",
+        "suppa2"
+      ],
+      "executable_path": "Resolved and validated at runtime; never hardcoded",
+      "version_probe": [
+        "--version"
+      ],
+      "required_databases": [
+        "Transcript annotation GTF"
+      ],
+      "gpu_optional": false,
+      "installation_note": "",
+      "pinned_version": "",
+      "licence_url": "https://github.com/comprna/SUPPA",
+      "artifact_sha256": "",
+      "licence_sha256": "",
+      "qualification_status": "unqualified",
+      "windows_native_evidence": "not-run",
+      "wsl2_evidence": "not-run",
+      "installation_type": "External Windows-native or WSL2/micromamba acquisition; not bundled",
+      "cpu_requirements": "Engine-specific; qualify on target machine",
+      "gpu_requirements": "No bundled GPU claim; verify provider requirements",
+      "memory_requirement": "Engine- and dataset-specific; qualify on representative workloads",
+      "configuration": "Engine Control Center managed metadata and environment configuration",
+      "test_command": [
+        "--version"
+      ],
+      "expected_test_output": "Successful version probe matching the pinned release plus positive/negative smoke evidence",
+      "last_test_date": "",
+      "health_status": "Unavailable until runtime detection and target qualification pass",
+      "failure_reason": "External artifact, licence, version or target-machine evidence incomplete",
+      "fallback": "Disable engine-backed action and preserve bounded built-in/offline workflow where scientifically valid",
+      "update_policy": "Explicit operator-approved update with checksum, licence and requalification",
+      "bundled": false,
+      "availability": "Detected at runtime; external engines are not claimed as bundled"
+    },
+    {
+      "id": "tabix",
+      "name": "Tabix",
+      "label": "Tabix",
+      "category": "Genomics",
+      "scientific_purpose": "Indexed VCF/BED querying",
+      "provider": "External scientific software provider; see licence URL and acquisition plan",
+      "capabilities": [
+        "Indexed VCF/BED querying"
+      ],
+      "candidate_executables": [
+        "tabix"
+      ],
+      "executable_path": "Resolved and validated at runtime; never hardcoded",
+      "version_probe": [
+        "--version"
+      ],
+      "required_databases": [],
+      "gpu_optional": false,
+      "installation_note": "Usually distributed with HTSlib.",
+      "pinned_version": "",
+      "licence_url": "https://www.htslib.org/doc/tabix.html",
+      "artifact_sha256": "",
+      "licence_sha256": "",
+      "qualification_status": "unqualified",
+      "windows_native_evidence": "not-run",
+      "wsl2_evidence": "not-run",
+      "installation_type": "External Windows-native or WSL2/micromamba acquisition; not bundled",
+      "cpu_requirements": "Engine-specific; qualify on target machine",
+      "gpu_requirements": "No bundled GPU claim; verify provider requirements",
+      "memory_requirement": "Engine- and dataset-specific; qualify on representative workloads",
+      "configuration": "Engine Control Center managed metadata and environment configuration",
+      "test_command": [
+        "--version"
+      ],
+      "expected_test_output": "Successful version probe matching the pinned release plus positive/negative smoke evidence",
+      "last_test_date": "",
+      "health_status": "Unavailable until runtime detection and target qualification pass",
+      "failure_reason": "External artifact, licence, version or target-machine evidence incomplete",
+      "fallback": "Disable engine-backed action and preserve bounded built-in/offline workflow where scientifically valid",
+      "update_policy": "Explicit operator-approved update with checksum, licence and requalification",
+      "bundled": false,
+      "availability": "Detected at runtime; external engines are not claimed as bundled"
+    },
+    {
+      "id": "vep",
+      "name": "Ensembl VEP",
+      "label": "Ensembl VEP",
+      "category": "Variant interpretation",
+      "scientific_purpose": "Variant consequence annotation | Transcript consequences",
+      "provider": "External scientific software provider; see licence URL and acquisition plan",
+      "capabilities": [
+        "Variant consequence annotation",
+        "Transcript consequences"
+      ],
+      "candidate_executables": [
+        "vep",
+        "vep.exe"
+      ],
+      "executable_path": "Resolved and validated at runtime; never hardcoded",
+      "version_probe": [
+        "--version"
+      ],
+      "required_databases": [
+        "VEP cache",
+        "Reference FASTA"
+      ],
+      "gpu_optional": false,
+      "installation_note": "",
+      "pinned_version": "",
+      "licence_url": "https://bioconda.github.io/recipes/ensembl-vep/README.html",
+      "artifact_sha256": "",
+      "licence_sha256": "",
+      "qualification_status": "unqualified",
+      "windows_native_evidence": "not-run",
+      "wsl2_evidence": "not-run",
+      "installation_type": "External Windows-native or WSL2/micromamba acquisition; not bundled",
+      "cpu_requirements": "Engine-specific; qualify on target machine",
+      "gpu_requirements": "No bundled GPU claim; verify provider requirements",
+      "memory_requirement": "Engine- and dataset-specific; qualify on representative workloads",
+      "configuration": "Engine Control Center managed metadata and environment configuration",
+      "test_command": [
+        "--version"
+      ],
+      "expected_test_output": "Successful version probe matching the pinned release plus positive/negative smoke evidence",
+      "last_test_date": "",
+      "health_status": "Unavailable until runtime detection and target qualification pass",
+      "failure_reason": "External artifact, licence, version or target-machine evidence incomplete",
+      "fallback": "Disable engine-backed action and preserve bounded built-in/offline workflow where scientifically valid",
+      "update_policy": "Explicit operator-approved update with checksum, licence and requalification",
+      "bundled": false,
+      "availability": "Detected at runtime; external engines are not claimed as bundled"
+    },
+    {
+      "id": "vg",
+      "name": "vg toolkit",
+      "label": "vg toolkit",
+      "category": "Pangenomics",
+      "scientific_purpose": "Graph indexing | Graph mapping | Variant projection",
+      "provider": "External scientific software provider; see licence URL and acquisition plan",
+      "capabilities": [
+        "Graph indexing",
+        "Graph mapping",
+        "Variant projection"
+      ],
+      "candidate_executables": [
+        "vg"
+      ],
+      "executable_path": "Resolved and validated at runtime; never hardcoded",
+      "version_probe": [
+        "--version"
+      ],
+      "required_databases": [],
+      "gpu_optional": false,
+      "installation_note": "",
+      "pinned_version": "",
+      "licence_url": "https://bioconda.github.io/recipes/vg/README.html",
+      "artifact_sha256": "",
+      "licence_sha256": "",
+      "qualification_status": "unqualified",
+      "windows_native_evidence": "not-run",
+      "wsl2_evidence": "not-run",
+      "installation_type": "External Windows-native or WSL2/micromamba acquisition; not bundled",
+      "cpu_requirements": "Engine-specific; qualify on target machine",
+      "gpu_requirements": "No bundled GPU claim; verify provider requirements",
+      "memory_requirement": "Engine- and dataset-specific; qualify on representative workloads",
+      "configuration": "Engine Control Center managed metadata and environment configuration",
+      "test_command": [
+        "--version"
+      ],
+      "expected_test_output": "Successful version probe matching the pinned release plus positive/negative smoke evidence",
+      "last_test_date": "",
+      "health_status": "Unavailable until runtime detection and target qualification pass",
+      "failure_reason": "External artifact, licence, version or target-machine evidence incomplete",
+      "fallback": "Disable engine-backed action and preserve bounded built-in/offline workflow where scientifically valid",
+      "update_policy": "Explicit operator-approved update with checksum, licence and requalification",
+      "bundled": false,
+      "availability": "Detected at runtime; external engines are not claimed as bundled"
+    },
+    {
+      "id": "vina",
+      "name": "AutoDock Vina",
+      "label": "AutoDock Vina",
+      "category": "Structural biology",
+      "scientific_purpose": "Molecular docking | Pose scoring",
+      "provider": "External scientific software provider; see licence URL and acquisition plan",
+      "capabilities": [
+        "Molecular docking",
+        "Pose scoring"
+      ],
+      "candidate_executables": [
+        "vina"
+      ],
+      "executable_path": "Resolved and validated at runtime; never hardcoded",
+      "version_probe": [
+        "--version"
+      ],
+      "required_databases": [],
+      "gpu_optional": false,
+      "installation_note": "",
+      "pinned_version": "",
+      "licence_url": "https://bioconda.github.io/recipes/vina/README.html",
+      "artifact_sha256": "",
+      "licence_sha256": "",
+      "qualification_status": "unqualified",
+      "windows_native_evidence": "not-run",
+      "wsl2_evidence": "not-run",
+      "installation_type": "External Windows-native or WSL2/micromamba acquisition; not bundled",
+      "cpu_requirements": "Engine-specific; qualify on target machine",
+      "gpu_requirements": "No bundled GPU claim; verify provider requirements",
+      "memory_requirement": "Engine- and dataset-specific; qualify on representative workloads",
+      "configuration": "Engine Control Center managed metadata and environment configuration",
+      "test_command": [
+        "--version"
+      ],
+      "expected_test_output": "Successful version probe matching the pinned release plus positive/negative smoke evidence",
+      "last_test_date": "",
+      "health_status": "Unavailable until runtime detection and target qualification pass",
+      "failure_reason": "External artifact, licence, version or target-machine evidence incomplete",
+      "fallback": "Disable engine-backed action and preserve bounded built-in/offline workflow where scientifically valid",
+      "update_policy": "Explicit operator-approved update with checksum, licence and requalification",
+      "bundled": false,
+      "availability": "Detected at runtime; external engines are not claimed as bundled"
+    },
+    {
+      "id": "whatshap",
+      "name": "WhatsHap",
+      "label": "WhatsHap",
+      "category": "Variant interpretation",
+      "scientific_purpose": "Read-backed phasing | Pedigree phasing",
+      "provider": "External scientific software provider; see licence URL and acquisition plan",
+      "capabilities": [
+        "Read-backed phasing",
+        "Pedigree phasing"
+      ],
+      "candidate_executables": [
+        "whatshap"
+      ],
+      "executable_path": "Resolved and validated at runtime; never hardcoded",
+      "version_probe": [
+        "--version"
+      ],
+      "required_databases": [
+        "Reference FASTA"
+      ],
+      "gpu_optional": false,
+      "installation_note": "",
+      "pinned_version": "",
+      "licence_url": "https://bioconda.github.io/recipes/whatshap/README.html",
+      "artifact_sha256": "",
+      "licence_sha256": "",
+      "qualification_status": "unqualified",
+      "windows_native_evidence": "not-run",
+      "wsl2_evidence": "not-run",
+      "installation_type": "External Windows-native or WSL2/micromamba acquisition; not bundled",
+      "cpu_requirements": "Engine-specific; qualify on target machine",
+      "gpu_requirements": "No bundled GPU claim; verify provider requirements",
+      "memory_requirement": "Engine- and dataset-specific; qualify on representative workloads",
+      "configuration": "Engine Control Center managed metadata and environment configuration",
+      "test_command": [
+        "--version"
+      ],
+      "expected_test_output": "Successful version probe matching the pinned release plus positive/negative smoke evidence",
+      "last_test_date": "",
+      "health_status": "Unavailable until runtime detection and target qualification pass",
+      "failure_reason": "External artifact, licence, version or target-machine evidence incomplete",
+      "fallback": "Disable engine-backed action and preserve bounded built-in/offline workflow where scientifically valid",
+      "update_policy": "Explicit operator-approved update with checksum, licence and requalification",
+      "bundled": false,
+      "availability": "Detected at runtime; external engines are not claimed as bundled"
+    }
+  ]
+}

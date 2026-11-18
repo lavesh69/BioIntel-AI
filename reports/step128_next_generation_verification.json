@@ -1,0 +1,61 @@
+{
+  "checks": [
+    {
+      "detail": "VERSION=12.8.0",
+      "name": "version",
+      "passed": true
+    },
+    {
+      "detail": "15 modules",
+      "name": "module catalogue",
+      "passed": true
+    },
+    {
+      "detail": "missing_pages=[]; missing_navigation=[]",
+      "name": "pages and navigation",
+      "passed": true
+    },
+    {
+      "detail": "missing=[]",
+      "name": "scientific depth profiles",
+      "passed": true
+    },
+    {
+      "detail": "failures=[]",
+      "name": "deterministic analysis",
+      "passed": true
+    },
+    {
+      "detail": "Step 128 hub registered",
+      "name": "module hub",
+      "passed": true
+    },
+    {
+      "detail": "15 kits; missing=[]",
+      "name": "starter kits",
+      "passed": true
+    },
+    {
+      "detail": "release and config aligned",
+      "name": "release configuration",
+      "passed": true
+    },
+    {
+      "detail": "src and pages syntax compilation",
+      "name": "python compilation",
+      "passed": true
+    },
+    {
+      "detail": "36/36 healthy \u00b7 108425 rows \u00b7 errors=[]",
+      "name": "database integrity",
+      "passed": true
+    }
+  ],
+  "created_at_utc": "2026-07-11T17:17:52+00:00",
+  "database_count": 36,
+  "database_rows": 108425,
+  "new_module_count": 15,
+  "passed": true,
+  "schema": "biointel.step128.verification.v1",
+  "version": "12.8.0"
+}

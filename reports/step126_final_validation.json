@@ -1,0 +1,15 @@
+{
+  "schema": "biointel.step126-final-validation.v1",
+  "version": "12.6.0",
+  "themes_total": 48,
+  "themes_added": 6,
+  "fonts_preserved": 11,
+  "step126_verifier": {"passed": 9, "failed": 0},
+  "selected_pytest_regressions": {"passed": 82, "failed": 0},
+  "runtime_theme_checks": {"passed": 6, "failed": 0, "exceptions": 0},
+  "python_compilation": {"passed": 885, "failed": 0},
+  "sqlite_integrity": {"healthy": 36, "failed": 0, "rows_checked": 108456, "foreign_key_issues": 0},
+  "locked_modules": {"byte_identical": 5, "total": 5},
+  "functional_files_removed": 0,
+  "full_suite_boundary": "998 tests were collected, but the monolithic run exceeded the execution window and is not claimed as complete."
+}

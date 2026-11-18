@@ -1,0 +1,93 @@
+{
+  "schema": "biointel.step105.bug-audit.v1",
+  "version": "10.5.0",
+  "status": "passed",
+  "confirmed_defects_fixed": [
+    {
+      "area": "Expansion page runtime",
+      "defect": "Theme initialization occurred both in page files and shared renderers, causing Streamlit session-state mutation errors.",
+      "fix": "Theme initialization is now page-owned and shared renderers no longer initialize it a second time.",
+      "verification": "52/52 expansion pages passed isolated runtime checks; zero captured exceptions and zero new runtime error logs."
+    },
+    {
+      "area": "Theme and font consistency",
+      "defect": "Several expansion pages bypassed the common theme bootstrap.",
+      "fix": "All pages 112-163 now initialize the common theme exactly at page level.",
+      "verification": "Step 105 theme regression test passed."
+    },
+    {
+      "area": "Scientific file inspection",
+      "defect": "Nested JSON lists/dictionaries could fail duplicate profiling; Reactome pathway files could lose the first record as a header.",
+      "fix": "Nested values are normalized only for duplicate checks and headerless Reactome files receive explicit pathway columns.",
+      "verification": "Nested JSON and Reactome regression tests passed."
+    },
+    {
+      "area": "Laboratory imports",
+      "defect": "Generic CSV/Excel files received an unexpected instrument_format column.",
+      "fix": "Generic schemas remain unchanged; only recognized vendor/RDML workflows attach instrument-specific columns.",
+      "verification": "Generic schema preservation regression test passed."
+    },
+    {
+      "area": "Diagnostics and reporting performance",
+      "defect": "Quick diagnostics could fall through to deep scientific scans and reports recomputed the same diagnostics three times.",
+      "fix": "Quick mode always returns after bounded checks and report generation reuses one diagnostics snapshot.",
+      "verification": "Measured governance path improved from approximately 29 seconds to approximately 4.7 seconds in the development environment."
+    },
+    {
+      "area": "Analytics coverage",
+      "defect": "The packaged analytics warehouse contained fewer events than the dashboard/benchmark contract expected.",
+      "fix": "Idempotent backfill restores complete warehouse coverage.",
+      "verification": {
+        "run_events": 15000,
+        "daily_metrics": 1800,
+        "quality_snapshots": 90,
+        "system_samples": 720,
+        "alerts": 80
+      }
+    },
+    {
+      "area": "Dataset readiness",
+      "defect": "Fourteen Step 104 reference datasets lacked complete readiness, schema and QC rows.",
+      "fix": "Automatic idempotent backfill profiles real bundled files and creates schema/QC/readiness records.",
+      "verification": "66/66 datasets have files, columns, QC, provenance and readiness records."
+    },
+    {
+      "area": "Navigation and discovery",
+      "defect": "Featured content was overcrowded, new category labels were not normalized, and a structural typo could rank the wrong module first.",
+      "fix": "Featured entries reduced to 25, aliases map into the shared taxonomy and curated structural intent ranking was repaired.",
+      "verification": "Navigation, search credibility and UI quality suites passed."
+    },
+    {
+      "area": "High-risk uploads",
+      "defect": "Eight pages read upload bytes without consistent size, extension and empty-file preflight.",
+      "fix": "Shared upload profiling and usability validation now gate all eight paths.",
+      "verification": "8/8 high-risk upload pages passed runtime checks; 165/165 pages passed static upload-safety audit."
+    },
+    {
+      "area": "Plugin compatibility",
+      "defect": "Minimum BioIntel versions were compared lexicographically, which misorders versions such as 10.10 and 10.5.",
+      "fix": "Numeric semantic version tuples are compared against the current package version.",
+      "verification": "10.5-compatible and 10.10-incompatible plugin regression cases passed."
+    },
+    {
+      "area": "Windows installation and release surfaces",
+      "defect": "Release versions were inconsistent across desktop, mobile, iOS, Android, store, Docker, Helm, Terraform and policies; offline wheel verification was not enforced early.",
+      "fix": "All application release surfaces are synchronized to 10.5.0 and the Windows installer runs wheelhouse preflight before offline installation.",
+      "verification": "Release, Windows hardening and production-upgrade suites passed."
+    }
+  ],
+  "verification": {
+    "step105_and_scientific_suites": "24/24 passed",
+    "release_search_windows_quality_suites": "78/78 passed",
+    "self_test": "7/7 passed",
+    "critical_python_compilation": "passed",
+    "static_ui": "165/165 passed, zero warnings",
+    "expansion_runtime": "52/52 passed",
+    "high_risk_upload_runtime": "8/8 passed",
+    "runtime_error_logs_after_final_sweeps": 0
+  },
+  "limitations": [
+    "The complete 165-page AppTest sweep was not claimed because running all heavy pages in one process accumulated test-runner resources; all pages received static validation and new/high-risk pages received isolated runtime validation.",
+    "Specialist external algorithms, current reference databases, wet-lab confirmation and independent clinical/regulatory validation remain external requirements."
+  ]
+}

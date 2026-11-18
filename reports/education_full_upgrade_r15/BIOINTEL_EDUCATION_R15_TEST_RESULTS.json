@@ -1,0 +1,62 @@
+{
+  "schema": "biointel.education.full-upgrade-r15.test-results.v1",
+  "generated_at": "2026-08-01T20:02:03.211666+00:00",
+  "status": "passed",
+  "education_shiro_phase16": {
+    "tests": 254,
+    "passed": 254,
+    "failed": 0,
+    "duration_seconds": 79.5
+  },
+  "streamlit": {
+    "routes": 10,
+    "passed": 10,
+    "exceptions": 0
+  },
+  "local_transcription": {
+    "executed": true,
+    "passed": true,
+    "source_path": "C:\\Users\\lavesh dobriyal\\Documents\\Codex\\2026-08-01\\files-mentioned-by-the-user-biointel\\work\\jfk-whisper-qualification.flac",
+    "source_size_bytes": 1152693,
+    "source_sha256": "63a4b1e4c1dc655ac70961ffbf518acd249df237e5a0152faae9a4a836949715",
+    "detected_language": "en",
+    "language_probability": 0.980023,
+    "duration_seconds": 11.0,
+    "segment_count": 1,
+    "transcript_excerpt": "And so, my fellow Americans, ask not what your country can do for you, ask what you can do for your country.",
+    "model_manifest_sha256": "2507446bda93db691ec9afda4afbdd90c193ec9e55a4c6358894117b147b9b5c",
+    "network_used": false
+  },
+  "wheelhouse": {
+    "valid": true,
+    "wheel_count": 141
+  },
+  "bounded_load_probe": {
+    "operations": 1200,
+    "errors": 0,
+    "classification": {
+      "operation_metrics": "measured",
+      "profile_user_count": "simulated",
+      "production_capacity": "not_verified"
+    }
+  },
+  "preservation": {
+    "generated_at_utc": "2026-08-01T16:45:49.488356+00:00",
+    "baseline_modules": 2299,
+    "baseline_functions": 16003,
+    "baseline_routes": 845,
+    "baseline_navigation": 89,
+    "baseline_features": 3083,
+    "removed_counts": {
+      "removed_modules": 0,
+      "removed_features": 0,
+      "removed_functions": 0,
+      "removed_routes": 0,
+      "removed_tables": 0,
+      "removed_navigation_items": 0
+    },
+    "missing_columns": [],
+    "unexpected_unrelated_modifications": [],
+    "passed": true
+  }
+}

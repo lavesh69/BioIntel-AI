@@ -1,0 +1,90 @@
+{
+  "checks": [
+    {
+      "detail": "VERSION=12.3.0",
+      "name": "Version",
+      "passed": true
+    },
+    {
+      "detail": "missing=[]",
+      "name": "Required optimization files",
+      "passed": true
+    },
+    {
+      "detail": "direct_connections=0",
+      "name": "Managed SQLite lifecycle",
+      "passed": true
+    },
+    {
+      "detail": "managed connection closed",
+      "name": "SQLite handles close after context",
+      "passed": true
+    },
+    {
+      "detail": "files=599 failures=0",
+      "name": "Python compilation",
+      "passed": true
+    },
+    {
+      "detail": "healthy=26/26 rows=108406",
+      "name": "Database fleet",
+      "passed": true
+    },
+    {
+      "detail": "health_ms=5.853 cache_dirs=0",
+      "name": "Runtime audit",
+      "passed": true
+    },
+    {
+      "detail": "{\n  \"script\": \"/mnt/data/step123_work/scripts/run_biointel_step97.py\",\n  \"root\": \"/mnt/data/step123_work\",\n  \"root_exists\": true,\n  \"free_port_probe\": 58600,\n  \"python_syntax\": true,\n  \"timestamp\": \"2026-07-11T13:40:43.286627+00:00\"\n}",
+      "name": "Windows launcher self-check",
+      "passed": true
+    }
+  ],
+  "database_health": {
+    "count": 26,
+    "healthy": 26,
+    "rows": 108406
+  },
+  "generated_at_utc": "2026-07-11T13:40:43+00:00",
+  "passed": true,
+  "passed_checks": 8,
+  "release": "12.3.0",
+  "runtime_audit": {
+    "cache_bytes": 0,
+    "cache_directories": 0,
+    "cache_info": {
+      "csv": {
+        "currsize": 0,
+        "hits": 0,
+        "maxsize": 32,
+        "misses": 0
+      },
+      "json": {
+        "currsize": 0,
+        "hits": 0,
+        "maxsize": 64,
+        "misses": 0
+      },
+      "text": {
+        "currsize": 0,
+        "hits": 0,
+        "maxsize": 32,
+        "misses": 0
+      }
+    },
+    "database_bytes": 58585088,
+    "database_count": 26,
+    "database_health_ms": 5.853,
+    "database_rows": 108406,
+    "healthy_databases": 26,
+    "process_threads_hint": 4,
+    "python_files": 875,
+    "root": "/mnt/data/step123_work",
+    "runtime_log_bytes": 0,
+    "runtime_log_files": 0,
+    "wal_bytes": 0
+  },
+  "schema": "biointel.step123.verification.v1",
+  "total_checks": 8
+}

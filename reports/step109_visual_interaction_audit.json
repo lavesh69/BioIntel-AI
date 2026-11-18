@@ -1,0 +1,40 @@
+{
+  "schema": "biointel.step109.visual-interaction-audit.v1",
+  "version": "11.0.0",
+  "release": "Step 109 Visual Interaction, Accessibility & Comparison",
+  "implemented": {
+    "scientific_suite_comparison": true,
+    "decision_suite_comparison": true,
+    "comparison_limit": 2,
+    "linked_plot_selection": ["points", "box", "lasso"],
+    "linked_table_filtering": true,
+    "accessibility_presets": ["Standard", "High contrast", "Colour-blind safe", "Print / grayscale"],
+    "evidence_badges": true,
+    "statistical_context": true,
+    "downsampling_disclosure": true,
+    "saved_visual_views": true,
+    "persistent_annotations": true,
+    "visual_error_ids": true,
+    "visual_workspace_page": "pages/164_Visual_Interaction_Accessibility_Workspace.py",
+    "report_bundle_formats": ["PDF", "DOCX", "PPTX", "HTML", "CSV", "JSON"],
+    "legacy_plotly_safety_adapter": true,
+    "semantic_visual_scenarios": 14
+  },
+  "verification": {
+    "selected_pytest_passed": 59,
+    "representative_runtime_pages_passed": 6,
+    "representative_runtime_pages_total": 6,
+    "comparison_runtime_checks_passed": 2,
+    "comparison_runtime_checks_total": 2,
+    "build_self_tests_passed": 7,
+    "build_self_tests_total": 7,
+    "manifest_entries_expected": 3498
+  },
+  "limitations": [
+    "Visual evidence labels describe declared source state and do not certify clinical or regulatory validity.",
+    "Comparison mode is intentionally capped at two charts to protect desktop responsiveness.",
+    "Plotly selection-to-row mapping depends on the visual's displayed data order; aggregated marks link to displayed aggregate rows.",
+    "Static chart images inside PDF/DOCX/PPTX require an optional image renderer; the bundle always includes interactive HTML, figure JSON and data.",
+    "A complete all-page browser screenshot sweep was not claimed because the build runner exceeded its time window."
+  ]
+}

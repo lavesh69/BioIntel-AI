@@ -1,0 +1,368 @@
+{
+  "gates": {
+    "passed": true,
+    "results": [
+      {
+        "evidence": "packages=32 invalid=0 sha256=b609c6dd48d814c6c9f5f1afa46892060d1d0ae1587034b826b8272328a385a0",
+        "name": "exact_dependency_lock",
+        "passed": true
+      },
+      {
+        "evidence": "violations=0",
+        "name": "architecture_boundaries",
+        "passed": true
+      },
+      {
+        "evidence": "overdue=0",
+        "name": "technical_debt_expiry",
+        "passed": true
+      },
+      {
+        "evidence": "offenders=0",
+        "name": "module_size_budget",
+        "passed": true
+      }
+    ],
+    "schema": "biointel.engineering-gates.v1"
+  },
+  "passed": true,
+  "readiness": {
+    "all_targets_complete": true,
+    "areas": [
+      {
+        "evidence_boundary": "Repository automation is complete; production approvals, credentials and organization-specific release governance remain operational responsibilities.",
+        "failed_controls": [],
+        "implementation_score": 10.0,
+        "key": "ci_cd_maturity",
+        "label": "CI/CD Maturity",
+        "passed_controls": [
+          "Matrix CI",
+          "Release provenance",
+          "Security pipeline",
+          "Quality gates",
+          "Branch/release policy"
+        ],
+        "status": "complete"
+      },
+      {
+        "evidence_boundary": "Locks and audits reduce supply-chain risk; controlled updates still require review and compatibility testing.",
+        "failed_controls": [],
+        "implementation_score": 10.0,
+        "key": "dependency_management",
+        "label": "Dependency Management",
+        "passed_controls": [
+          "Exact runtime lock",
+          "Exact CI tool lock",
+          "Dependency policy",
+          "Lock verifier",
+          "Automated dependency review"
+        ],
+        "status": "complete"
+      },
+      {
+        "evidence_boundary": "Deterministic packaging is implemented; byte identity also depends on the qualified builder image and source inputs.",
+        "failed_controls": [],
+        "implementation_score": 10.0,
+        "key": "reproducible_builds",
+        "label": "Reproducible Builds",
+        "passed_controls": [
+          "Deterministic release builder",
+          "Build policy",
+          "SBOM generation",
+          "Provenance manifest",
+          "Reproducibility tests"
+        ],
+        "status": "complete"
+      },
+      {
+        "evidence_boundary": "The image is hardened and reproducible; registry signing, runtime policies and host security remain deployment concerns.",
+        "failed_controls": [],
+        "implementation_score": 10.0,
+        "key": "containerization",
+        "label": "Containerization",
+        "passed_controls": [
+          "Multi-stage non-root image",
+          "Container smoke test",
+          "Image scanning",
+          "OCI labels and health",
+          "Production compose"
+        ],
+        "status": "complete"
+      },
+      {
+        "evidence_boundary": "Manifests are production-oriented; a target-cluster failure, upgrade and restore exercise remains required.",
+        "failed_controls": [],
+        "implementation_score": 10.0,
+        "key": "kubernetes_readiness",
+        "label": "Kubernetes Readiness",
+        "passed_controls": [
+          "Helm schema",
+          "Autoscaling and disruption",
+          "Topology and rollout",
+          "Policy resources",
+          "Cluster validation CI"
+        ],
+        "status": "complete"
+      },
+      {
+        "evidence_boundary": "Portable IaC and service contracts exist; account landing zones, costs and regulated-cloud controls are organization-specific.",
+        "failed_controls": [],
+        "implementation_score": 10.0,
+        "key": "cloud_readiness",
+        "label": "Cloud Readiness",
+        "passed_controls": [
+          "Cloud-neutral deployment contract",
+          "Terraform root",
+          "AWS example",
+          "Azure example",
+          "GCP example"
+        ],
+        "status": "complete"
+      },
+      {
+        "evidence_boundary": "Stateless services and scaling contracts are implemented; real throughput depends on target infrastructure and workload data.",
+        "failed_controls": [],
+        "implementation_score": 10.0,
+        "key": "horizontal_scalability",
+        "label": "Horizontal Scalability",
+        "passed_controls": [
+          "Scaling contract",
+          "External state services",
+          "HPA policies",
+          "Worker scaling",
+          "Scalability tests"
+        ],
+        "status": "complete"
+      },
+      {
+        "evidence_boundary": "Repeatable thresholds and scenarios exist; certified capacity requires execution on production-equivalent infrastructure.",
+        "failed_controls": [],
+        "implementation_score": 10.0,
+        "key": "load_testing",
+        "label": "Load Testing",
+        "passed_controls": [
+          "Locust scenarios",
+          "k6 scenarios",
+          "Performance thresholds",
+          "Performance gate",
+          "Scheduled performance CI"
+        ],
+        "status": "complete"
+      },
+      {
+        "evidence_boundary": "Stress, spike and soak profiles are codified; environment-specific breaking points must be measured during qualification.",
+        "failed_controls": [],
+        "implementation_score": 10.0,
+        "key": "stress_testing",
+        "label": "Stress Testing",
+        "passed_controls": [
+          "Stress profile",
+          "Spike profile",
+          "Soak profile",
+          "Resource guardrails",
+          "Stress runbook"
+        ],
+        "status": "complete"
+      },
+      {
+        "evidence_boundary": "Service contracts are tested in isolation and compose; remote providers still require approved sandbox credentials.",
+        "failed_controls": [],
+        "implementation_score": 10.0,
+        "key": "integration_testing",
+        "label": "Integration Testing",
+        "passed_controls": [
+          "API integration contracts",
+          "Storage integration contracts",
+          "Integration compose",
+          "Integration CI",
+          "Contract fixtures"
+        ],
+        "status": "complete"
+      },
+      {
+        "evidence_boundary": "Coverage and mutation targets are enforced on critical modules; coverage percentage is not proof of scientific correctness.",
+        "failed_controls": [],
+        "implementation_score": 10.0,
+        "key": "unit_testing",
+        "label": "Unit Testing",
+        "passed_controls": [
+          "Coverage policy",
+          "Unit test marker",
+          "Coverage CI",
+          "Mutation policy",
+          "Unit test inventory"
+        ],
+        "status": "complete"
+      },
+      {
+        "evidence_boundary": "Primary journeys are automated; external scientific systems remain mocked unless a sandbox is explicitly enabled.",
+        "failed_controls": [],
+        "implementation_score": 10.0,
+        "key": "end_to_end_testing",
+        "label": "End-to-End Testing",
+        "passed_controls": [
+          "Primary journey suite",
+          "API-to-worker journey",
+          "E2E CI",
+          "Deterministic E2E data",
+          "E2E runbook"
+        ],
+        "status": "complete"
+      },
+      {
+        "evidence_boundary": "Automated browser journeys cover primary workspaces; browser/device coverage must expand with supported-client policy.",
+        "failed_controls": [],
+        "implementation_score": 10.0,
+        "key": "browser_ui_testing",
+        "label": "Browser UI Testing",
+        "passed_controls": [
+          "Playwright journeys",
+          "Accessibility browser assertions",
+          "Cross-browser CI",
+          "Browser artifacts",
+          "UI health assertions"
+        ],
+        "status": "complete"
+      },
+      {
+        "evidence_boundary": "Approved semantic and browser baselines protect primary interfaces; new interfaces require deliberate baseline review.",
+        "failed_controls": [],
+        "implementation_score": 10.0,
+        "key": "visual_regression_testing",
+        "label": "Visual Regression Testing",
+        "passed_controls": [
+          "Semantic baselines",
+          "Browser baselines policy",
+          "Semantic visual tests",
+          "Browser visual tests",
+          "Strict visual CI"
+        ],
+        "status": "complete"
+      },
+      {
+        "evidence_boundary": "Golden scientific outputs and statistical tolerances protect software behavior; they do not replace independent biological validation.",
+        "failed_controls": [],
+        "implementation_score": 10.0,
+        "key": "scientific_regression_testing",
+        "label": "Scientific Regression Testing",
+        "passed_controls": [
+          "Scientific golden cases",
+          "Scientific regression suite",
+          "Scientific thresholds",
+          "Scientific CI gate",
+          "Model release regression gate"
+        ],
+        "status": "complete"
+      },
+      {
+        "evidence_boundary": "Architecture boundaries are enforced statically; ongoing feature work must preserve module ownership and dependency direction.",
+        "failed_controls": [],
+        "implementation_score": 10.0,
+        "key": "code_modularity",
+        "label": "Code Modularity",
+        "passed_controls": [
+          "Architecture rules",
+          "AST architecture checker",
+          "Architecture CI",
+          "Architecture documentation",
+          "Architecture tests"
+        ],
+        "status": "complete"
+      },
+      {
+        "evidence_boundary": "Automated quality budgets reduce deterioration; human design review remains necessary for complex scientific workflows.",
+        "failed_controls": [],
+        "implementation_score": 10.0,
+        "key": "code_maintainability",
+        "label": "Code Maintainability",
+        "passed_controls": [
+          "Lint/format/type gates",
+          "Complexity budget",
+          "Maintainability gate",
+          "Pre-commit hooks",
+          "Code ownership"
+        ],
+        "status": "complete"
+      },
+      {
+        "evidence_boundary": "Debt is explicit, owned and expiry-controlled; the register must be actively maintained by the delivery team.",
+        "failed_controls": [],
+        "implementation_score": 10.0,
+        "key": "technical_debt",
+        "label": "Technical Debt Management",
+        "passed_controls": [
+          "Debt register",
+          "Debt policy",
+          "Overdue debt gate",
+          "Debt CI",
+          "ADR register"
+        ],
+        "status": "complete"
+      },
+      {
+        "evidence_boundary": "Documentation is structured, versioned and tested; operational truth still depends on keeping it synchronized with releases.",
+        "failed_controls": [],
+        "implementation_score": 10.0,
+        "key": "documentation_quality",
+        "label": "Documentation Quality",
+        "passed_controls": [
+          "MkDocs site",
+          "Architecture docs",
+          "Testing docs",
+          "Runbooks",
+          "Docs CI"
+        ],
+        "status": "complete"
+      },
+      {
+        "evidence_boundary": "One-command workflows and a dev container are supplied; local performance depends on the developer workstation.",
+        "failed_controls": [],
+        "implementation_score": 10.0,
+        "key": "developer_experience",
+        "label": "Developer Experience",
+        "passed_controls": [
+          "Make targets",
+          "Task runner",
+          "Dev container",
+          "Environment doctor",
+          "Contributor guide"
+        ],
+        "status": "complete"
+      },
+      {
+        "evidence_boundary": "Installers validate supported environments; optional native scientific tools may still require platform-specific packages.",
+        "failed_controls": [],
+        "implementation_score": 10.0,
+        "key": "installation_experience",
+        "label": "Installation Experience",
+        "passed_controls": [
+          "Cross-platform bootstrap",
+          "Windows installer",
+          "Linux installer",
+          "macOS installer",
+          "Installation smoke CI"
+        ],
+        "status": "complete"
+      },
+      {
+        "evidence_boundary": "Seeds, environments, inputs and outputs are captured; external service availability and licensed datasets remain outside the bundle.",
+        "failed_controls": [],
+        "implementation_score": 10.0,
+        "key": "reproducibility",
+        "label": "Reproducibility",
+        "passed_controls": [
+          "Research bundles",
+          "Build bundles",
+          "Locked environment",
+          "Reproducibility policy",
+          "Qualification script"
+        ],
+        "status": "complete"
+      }
+    ],
+    "control_count": 110,
+    "dual_score_policy": "10/10 is repository implementation readiness, not proof of production capacity or scientific validity.",
+    "implementation_average": 10.0,
+    "schema": "biointel.engineering-readiness.v1"
+  }
+}

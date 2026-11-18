@@ -1,0 +1,302 @@
+{
+  "blocked_claims": [
+    "Independent external DTI validation",
+    "Blinded prospective DTI validation",
+    "Independent wet-lab replication",
+    "Multi-site reproducibility"
+  ],
+  "boundary": "Scientific credibility controls are implementation-complete. A real 10/10 evidence score requires independently verifiable DTI validation, blinded prospective outcomes, independent wet-lab replication and multi-site evidence.",
+  "claim_matrix": [
+    {
+      "claim": "Scientific evidence-control implementation",
+      "eligible": true,
+      "evidence": "Implementation 10.0/10; evidence chain=True; validation chain=True",
+      "required": "All controls present; both immutable evidence chains valid"
+    },
+    {
+      "claim": "Provider-authenticated reference evidence",
+      "eligible": true,
+      "evidence": "25/25 official HTTPS snapshots; 12779 approved records",
+      "required": "Official HTTPS source, immutable SHA-256, approved reviewed records"
+    },
+    {
+      "claim": "Reproducible analytical benchmark",
+      "eligible": true,
+      "evidence": "1 strictly qualified benchmark(s)",
+      "required": "Real dataset/model/protocol hashes, chronology and reproducible metrics"
+    },
+    {
+      "claim": "Independent external DTI validation",
+      "eligible": false,
+      "evidence": "0 strictly qualified study/studies",
+      "required": "At least two independently reviewed external DTI studies with real artifacts"
+    },
+    {
+      "claim": "Blinded prospective DTI validation",
+      "eligible": false,
+      "evidence": "0 strictly qualified study/studies",
+      "required": "At least two preregistered, prediction-locked, blinded independent studies"
+    },
+    {
+      "claim": "Independent wet-lab replication",
+      "eligible": false,
+      "evidence": "0 release-eligible study/studies",
+      "required": "At least two release-eligible independent laboratory studies"
+    },
+    {
+      "claim": "Multi-site reproducibility",
+      "eligible": false,
+      "evidence": "0 release-eligible study/studies",
+      "required": "Release-eligible multi-site study across independent organizations"
+    }
+  ],
+  "combined_credibility_score": 6.8,
+  "components": [
+    {
+      "blocker": "",
+      "evidence": "13 provider profiles",
+      "key": "provider_authenticity",
+      "label": "Official provider authenticity",
+      "score": 10.0,
+      "status": "qualified"
+    },
+    {
+      "blocker": "",
+      "evidence": "25/25 valid snapshot hashes; 25/25 official HTTPS sources; hash chain verified",
+      "key": "provenance_integrity",
+      "label": "Immutable provenance and HTTPS source integrity",
+      "score": 10.0,
+      "status": "qualified"
+    },
+    {
+      "blocker": "",
+      "evidence": "12779 approved records",
+      "key": "evidence_volume",
+      "label": "Reviewed evidence volume",
+      "score": 10.0,
+      "status": "qualified"
+    },
+    {
+      "blocker": "",
+      "evidence": "15 organisms; 14 assay types",
+      "key": "biological_diversity",
+      "label": "Biological and assay diversity",
+      "score": 10.0,
+      "status": "qualified"
+    },
+    {
+      "blocker": "",
+      "evidence": "1 strict benchmark(s); 1 strictly qualified study record(s)",
+      "key": "reproducible_benchmarks",
+      "label": "Reproducible real-data benchmarks",
+      "score": 6.0,
+      "status": "partial"
+    },
+    {
+      "blocker": "Import independent provider/laboratory DTI validation with real dataset/model hashes and independent review.",
+      "evidence": "0 strictly qualified external DTI study/studies",
+      "key": "external_dti",
+      "label": "Independent external DTI validation",
+      "score": 0.0,
+      "status": "evidence pending"
+    },
+    {
+      "blocker": "Complete preregistered, prediction-locked and blinded prospective validation.",
+      "evidence": "0 strictly qualified prospective DTI study/studies",
+      "key": "prospective_dti",
+      "label": "Blinded prospective DTI validation",
+      "score": 0.0,
+      "status": "evidence pending"
+    },
+    {
+      "blocker": "Requires genuine independent laboratory outcomes and signed attestations.",
+      "evidence": "0 release-eligible independent wet-lab study/studies",
+      "key": "independent_wetlab",
+      "label": "Independent wet-lab replication",
+      "score": 0.0,
+      "status": "external evidence required"
+    },
+    {
+      "blocker": "Requires genuine multi-site replication; software cannot manufacture it.",
+      "evidence": "0 release-eligible multi-site study/studies",
+      "key": "multisite",
+      "label": "Multi-site reproducibility",
+      "score": 0.0,
+      "status": "external evidence required"
+    }
+  ],
+  "credibility_controls_score": 10.0,
+  "eligible_claims": [
+    "Scientific evidence-control implementation",
+    "Provider-authenticated reference evidence",
+    "Reproducible analytical benchmark"
+  ],
+  "findings": [
+    "12 validation-study record(s) are excluded from strict evidence scoring because hashes, chronology, independence, blinding or review evidence are incomplete."
+  ],
+  "implementation_score": 10.0,
+  "qualified_studies": [
+    {
+      "qualified": true,
+      "reasons": [],
+      "status": "reviewed",
+      "study_id": "GEN-UCI-WDBC-REPEATED-CV-2026",
+      "study_type": "benchmark",
+      "tier": "reproducible benchmark"
+    },
+    {
+      "qualified": false,
+      "reasons": [
+        "dataset SHA-256 is invalid or placeholder",
+        "model SHA-256 is invalid or placeholder"
+      ],
+      "status": "reviewed",
+      "study_id": "GEN-UCI-WDBC-EXTERNAL-REVIEW-2026-A",
+      "study_type": "external",
+      "tier": "independent external analytical"
+    },
+    {
+      "qualified": false,
+      "reasons": [
+        "dataset SHA-256 is invalid or placeholder",
+        "model SHA-256 is invalid or placeholder"
+      ],
+      "status": "reviewed",
+      "study_id": "GEN-UCI-WDBC-EXTERNAL-REVIEW-2026-B",
+      "study_type": "external",
+      "tier": "independent external analytical"
+    },
+    {
+      "qualified": false,
+      "reasons": [
+        "dataset SHA-256 is invalid or placeholder",
+        "model SHA-256 is invalid or placeholder"
+      ],
+      "status": "reviewed",
+      "study_id": "GEN-UCI-WDBC-EXTERNAL-REVIEW-2026-C",
+      "study_type": "external",
+      "tier": "independent external analytical"
+    },
+    {
+      "qualified": false,
+      "reasons": [
+        "dataset SHA-256 is invalid or placeholder",
+        "model SHA-256 is invalid or placeholder"
+      ],
+      "status": "reviewed",
+      "study_id": "GEN-MULTI-ASSAY-BENCHMARK-2026-A",
+      "study_type": "benchmark",
+      "tier": "reproducible benchmark"
+    },
+    {
+      "qualified": false,
+      "reasons": [
+        "dataset SHA-256 is invalid or placeholder",
+        "model SHA-256 is invalid or placeholder"
+      ],
+      "status": "reviewed",
+      "study_id": "GEN-MULTI-ORGANISM-BENCHMARK-2026-B",
+      "study_type": "benchmark",
+      "tier": "reproducible benchmark"
+    },
+    {
+      "qualified": false,
+      "reasons": [
+        "dataset SHA-256 is invalid or placeholder",
+        "model SHA-256 is invalid or placeholder"
+      ],
+      "status": "reviewed",
+      "study_id": "GEN-PROSPECTIVE-REFERENCE-LOCK-2026-A",
+      "study_type": "prospective",
+      "tier": "prospective analytical"
+    },
+    {
+      "qualified": false,
+      "reasons": [
+        "dataset SHA-256 is invalid or placeholder",
+        "model SHA-256 is invalid or placeholder"
+      ],
+      "status": "reviewed",
+      "study_id": "GEN-PROSPECTIVE-REFERENCE-LOCK-2026-B",
+      "study_type": "prospective",
+      "tier": "prospective analytical"
+    },
+    {
+      "qualified": false,
+      "reasons": [
+        "dataset SHA-256 is invalid or placeholder",
+        "model SHA-256 is invalid or placeholder"
+      ],
+      "status": "reviewed",
+      "study_id": "DTI-EXTERNAL-REFERENCE-REVIEW-2026-1",
+      "study_type": "external",
+      "tier": "DTI independent external analytical"
+    },
+    {
+      "qualified": false,
+      "reasons": [
+        "dataset SHA-256 is invalid or placeholder",
+        "model SHA-256 is invalid or placeholder"
+      ],
+      "status": "reviewed",
+      "study_id": "DTI-EXTERNAL-REFERENCE-REVIEW-2026-2",
+      "study_type": "external",
+      "tier": "DTI independent external analytical"
+    },
+    {
+      "qualified": false,
+      "reasons": [
+        "dataset SHA-256 is invalid or placeholder",
+        "model SHA-256 is invalid or placeholder"
+      ],
+      "status": "reviewed",
+      "study_id": "DTI-EXTERNAL-REFERENCE-REVIEW-2026-3",
+      "study_type": "external",
+      "tier": "DTI independent external analytical"
+    },
+    {
+      "qualified": false,
+      "reasons": [
+        "dataset SHA-256 is invalid or placeholder",
+        "model SHA-256 is invalid or placeholder"
+      ],
+      "status": "reviewed",
+      "study_id": "DTI-PROSPECTIVE-REFERENCE-LOCK-2026-1",
+      "study_type": "prospective",
+      "tier": "DTI prospective analytical"
+    },
+    {
+      "qualified": false,
+      "reasons": [
+        "dataset SHA-256 is invalid or placeholder",
+        "model SHA-256 is invalid or placeholder"
+      ],
+      "status": "reviewed",
+      "study_id": "DTI-PROSPECTIVE-REFERENCE-LOCK-2026-2",
+      "study_type": "prospective",
+      "tier": "DTI prospective analytical"
+    }
+  ],
+  "release_claim": "research-grade evidence controls; external validation pending",
+  "summary": {
+    "approved_records": 12779,
+    "assay_types": 14,
+    "evidence_chain_ok": true,
+    "multisite": 0,
+    "official_https_snapshots": 25,
+    "organisms": 15,
+    "providers": 13,
+    "qualified_external_dti": 0,
+    "qualified_prospective_dti": 0,
+    "qualified_real_benchmarks": 1,
+    "qualified_studies": 1,
+    "records": 12814,
+    "release_eligible_records": 12210,
+    "snapshots": 25,
+    "strictly_rejected_studies": 12,
+    "valid_snapshot_hashes": 25,
+    "validation_chain_ok": true,
+    "wetlab_independent": 0
+  },
+  "verifiable_evidence_score": 5.1
+}

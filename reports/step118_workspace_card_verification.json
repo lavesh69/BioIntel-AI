@@ -1,0 +1,50 @@
+{
+  "schema": "biointel.step118.workspace-card-verification.v1",
+  "version": "11.8.0",
+  "generated_at_utc": "2026-07-11T08:18:41.009869+00:00",
+  "status": "PASS",
+  "passed": 8,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "Version",
+      "status": "PASS",
+      "detail": "VERSION=11.8.0"
+    },
+    {
+      "name": "Per-page stylesheet",
+      "status": "PASS",
+      "detail": "Session-scoped CSS guard removed; v2 stylesheet present"
+    },
+    {
+      "name": "Card layout rules",
+      "status": "PASS",
+      "detail": "Grid and card display rules are resilient"
+    },
+    {
+      "name": "Summary marker",
+      "status": "PASS",
+      "detail": "Collapsed summary has a stable diagnostic marker"
+    },
+    {
+      "name": "Responsive rules",
+      "status": "PASS",
+      "detail": "Tablet and narrow-window fallbacks present"
+    },
+    {
+      "name": "Forced colours",
+      "status": "PASS",
+      "detail": "Windows forced-colour support present"
+    },
+    {
+      "name": "Affected page coverage",
+      "status": "PASS",
+      "detail": "77/77 module pages use the shared renderer"
+    },
+    {
+      "name": "Excluded page preservation",
+      "status": "PASS",
+      "detail": "5/5 locked pages byte-identical"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "schema": "biointel.step119.representative-runtime.v1",
+  "version": "11.9.0",
+  "status": "PASS",
+  "passed": 3,
+  "failed": 0,
+  "total": 3,
+  "pages": [
+    {
+      "page": "pages/1_Sequence_Analyzer.py",
+      "status": "PASS",
+      "seconds": 2.83,
+      "exceptions": [],
+      "errors": [],
+      "summary_marker": true,
+      "card_marker": true
+    },
+    {
+      "page": "pages/16_Batch_Sequence_Analysis.py",
+      "status": "PASS",
+      "seconds": 1.888,
+      "exceptions": [],
+      "errors": [],
+      "summary_marker": true,
+      "card_marker": true
+    },
+    {
+      "page": "pages/120_Bioimage_and_Microscopy_AI_Lab.py",
+      "status": "PASS",
+      "seconds": 0.381,
+      "exceptions": [],
+      "errors": [],
+      "summary_marker": true,
+      "card_marker": true
+    }
+  ]
+}

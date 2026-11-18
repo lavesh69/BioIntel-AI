@@ -1,0 +1,55 @@
+{
+  "schema": "biointel.step114.verification.v1",
+  "version": "11.4.0",
+  "generated_at_utc": "2026-07-10T21:17:29+00:00",
+  "status": "PASS",
+  "passed": 9,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "Version",
+      "status": "PASS",
+      "detail": "VERSION=11.4.0"
+    },
+    {
+      "name": "Excluded modules unchanged",
+      "status": "PASS",
+      "detail": "5/5 Step 113 source hashes preserved"
+    },
+    {
+      "name": "Excluded profiles absent",
+      "status": "PASS",
+      "detail": "64 eligible depth profiles; excluded profile keys present=[]"
+    },
+    {
+      "name": "External-engine registry",
+      "status": "PASS",
+      "detail": "53 engine adapters"
+    },
+    {
+      "name": "Protected execution plans",
+      "status": "PASS",
+      "detail": "21 shell-free plan templates"
+    },
+    {
+      "name": "Critical compilation",
+      "status": "PASS",
+      "detail": "7 files compiled"
+    },
+    {
+      "name": "Targeted Streamlit runtime",
+      "status": "PASS",
+      "detail": "20/20 targeted pages passed"
+    },
+    {
+      "name": "SQLite integrity",
+      "status": "PASS",
+      "detail": "36/36 databases healthy; 108,077 rows"
+    },
+    {
+      "name": "Static UI audit",
+      "status": "PASS",
+      "detail": "170/170 static checks; 0 warnings"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "schema": "biointel.step120.verification.v1",
+  "version": "12.0.0",
+  "checked_at": "2026-07-11T11:17:31.498113+00:00",
+  "passed": 8,
+  "total": 8,
+  "checks": [
+    {
+      "check": "Version",
+      "passed": true,
+      "detail": "VERSION=12.0.0"
+    },
+    {
+      "check": "Weak-module capability coverage",
+      "passed": true,
+      "detail": "17 modules, 102 stages; missing=[]"
+    },
+    {
+      "check": "Capability engine registry",
+      "passed": true,
+      "detail": "34 engine keys; missing=[]"
+    },
+    {
+      "check": "Protected engine plans",
+      "passed": true,
+      "detail": "8/8 Step 120 plans present"
+    },
+    {
+      "check": "Flow compensation",
+      "passed": true,
+      "detail": "Known spillover inversion recovered source signal"
+    },
+    {
+      "check": "Flow QC and gating",
+      "passed": true,
+      "detail": "events=1500; singlets=1500"
+    },
+    {
+      "check": "Expansion module runtime",
+      "passed": true,
+      "detail": "21/21 demos passed; failures=[]"
+    },
+    {
+      "check": "Requested exclusions preserved",
+      "passed": true,
+      "detail": "5/5 byte-identical; changed=[]"
+    }
+  ]
+}

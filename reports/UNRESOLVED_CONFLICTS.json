@@ -1,0 +1,791 @@
+{
+  "unresolved": [],
+  "observed_source_overlay_conflicts": [
+    {
+      "path": "data/bioinformatics_demo/demo_reads_R2.fastq",
+      "previous_part": 1,
+      "part": 1
+    },
+    {
+      "path": "src/biointel/scientific_execution_v190/generator.py",
+      "previous_part": 1,
+      "part": 1
+    },
+    {
+      "path": "src/biointel/operations/runtime_control.py",
+      "previous_part": 1,
+      "part": 1
+    },
+    {
+      "path": "pages/134_Population_Genetics_GWAS_Studio.py",
+      "previous_part": 1,
+      "part": 1
+    },
+    {
+      "path": "release/ultimate/FINAL_RELEASE_READINESS_REPORT.md",
+      "previous_part": 1,
+      "part": 1
+    },
+    {
+      "path": "ULTIMATE_PROFESSIONAL_TRANSFORMATION_REPORT.md",
+      "previous_part": 1,
+      "part": 1
+    },
+    {
+      "path": "CHANGELOG_STEP200_NEURO_CNS.md",
+      "previous_part": 1,
+      "part": 1
+    },
+    {
+      "path": "CHANGELOG_STEP216_RELEASE_READINESS.md",
+      "previous_part": 1,
+      "part": 1
+    },
+    {
+      "path": "reports/logs/api.jsonl",
+      "previous_part": 1,
+      "part": 1
+    },
+    {
+      "path": "data/bioinformatics_demo/demo_assembly.fasta",
+      "previous_part": 2,
+      "part": 2
+    },
+    {
+      "path": "data/bioinformatics_demo/demo_protein.fasta",
+      "previous_part": 1,
+      "part": 2
+    },
+    {
+      "path": "src/biointel/ui/navigation.py",
+      "previous_part": 1,
+      "part": 2
+    },
+    {
+      "path": "scripts/install_windows_step206.py",
+      "previous_part": 1,
+      "part": 2
+    },
+    {
+      "path": "data/bioinformatics_demo/demo_bioprocess.csv",
+      "previous_part": 1,
+      "part": 2
+    },
+    {
+      "path": "data/bioinformatics_demo/structures/reference_complex_02.pdb",
+      "previous_part": 1,
+      "part": 2
+    },
+    {
+      "path": "data/bioinformatics_demo/structures/reference_complex_06.pdb",
+      "previous_part": 1,
+      "part": 2
+    },
+    {
+      "path": "data/bioinformatics_demo/structures/reference_complex_10.pdb",
+      "previous_part": 1,
+      "part": 2
+    },
+    {
+      "path": "src/biointel/mandatory_completion_v193/engine.py",
+      "previous_part": 1,
+      "part": 2
+    },
+    {
+      "path": "scripts/step97_runtime_preflight.py",
+      "previous_part": 1,
+      "part": 2
+    },
+    {
+      "path": "src/biointel/page_excellence_v187/generator.py",
+      "previous_part": 1,
+      "part": 2
+    },
+    {
+      "path": "data/bioinformatics_demo/demo_alignment.fasta",
+      "previous_part": 1,
+      "part": 2
+    },
+    {
+      "path": "CHANGELOG_STEP206_WINDOWS_INSTALL_RUN.md",
+      "previous_part": 1,
+      "part": 2
+    },
+    {
+      "path": "src/biointel/portfolio_demo_v183/ui.py",
+      "previous_part": 2,
+      "part": 2
+    },
+    {
+      "path": "docs/DEVELOPER_GUIDE.md",
+      "previous_part": 1,
+      "part": 2
+    },
+    {
+      "path": "RELEASE_TEST_REPORT_STEP206.md",
+      "previous_part": 1,
+      "part": 2
+    },
+    {
+      "path": ".env.example",
+      "previous_part": 1,
+      "part": 2
+    },
+    {
+      "path": "release/ultimate/FIXED_BUGS.md",
+      "previous_part": 1,
+      "part": 2
+    },
+    {
+      "path": "CURRENT_RELEASE.md",
+      "previous_part": 1,
+      "part": 2
+    },
+    {
+      "path": "NEURO_CNS_STEP200_MAX_POTENTIAL_REPORT.md",
+      "previous_part": 1,
+      "part": 2
+    },
+    {
+      "path": "CURRENT_RELEASE_STEP216.md",
+      "previous_part": 2,
+      "part": 2
+    },
+    {
+      "path": "reports/ui_profiles/default/preferences.json",
+      "previous_part": 1,
+      "part": 2
+    },
+    {
+      "path": "data/bioinformatics_demo/demo_microbiome_metadata.csv",
+      "previous_part": 1,
+      "part": 2
+    },
+    {
+      "path": "RESTART_BIOINTEL_WINDOWS.bat",
+      "previous_part": 2,
+      "part": 2
+    },
+    {
+      "path": "CURRENT_RELEASE_STEP217.md",
+      "previous_part": 1,
+      "part": 2
+    },
+    {
+      "path": ".release_parts/step220_part4.ok",
+      "previous_part": 1,
+      "part": 2
+    },
+    {
+      "path": ".release_parts/step220_part3.ok",
+      "previous_part": 1,
+      "part": 2
+    },
+    {
+      "path": ".release_padding_bin",
+      "previous_part": 1,
+      "part": 2
+    },
+    {
+      "path": "data/bioinformatics_demo/demo_reads_R1.fastq",
+      "previous_part": 2,
+      "part": 3
+    },
+    {
+      "path": "STEP220_PACKAGE_PART_ASSIGNMENT.json",
+      "previous_part": 1,
+      "part": 3
+    },
+    {
+      "path": "reports/api_security.sqlite3",
+      "previous_part": 1,
+      "part": 3
+    },
+    {
+      "path": "data/bioinformatics_demo/demo_expression_counts.csv",
+      "previous_part": 2,
+      "part": 3
+    },
+    {
+      "path": "data/bioinformatics_demo/demo_variants.vcf",
+      "previous_part": 2,
+      "part": 3
+    },
+    {
+      "path": "release/PART_MANIFEST-Part4.json",
+      "previous_part": 1,
+      "part": 3
+    },
+    {
+      "path": "release/PART_MANIFEST-Part3.json",
+      "previous_part": 3,
+      "part": 3
+    },
+    {
+      "path": "data/bioinformatics_demo/demo_gene_annotation.csv",
+      "previous_part": 1,
+      "part": 3
+    },
+    {
+      "path": "data/bioinformatics_demo/demo_taxonomy.csv",
+      "previous_part": 2,
+      "part": 3
+    },
+    {
+      "path": "src/biointel/neuro_cns/max_potential.py",
+      "previous_part": 2,
+      "part": 3
+    },
+    {
+      "path": "src/biointel/ui/aesthetic.py",
+      "previous_part": 2,
+      "part": 3
+    },
+    {
+      "path": "src/biointel/neuro_cns/production.py",
+      "previous_part": 1,
+      "part": 3
+    },
+    {
+      "path": "src/biointel/neuro_cns/imaging.py",
+      "previous_part": 2,
+      "part": 3
+    },
+    {
+      "path": "data/bioinformatics_demo/structures/reference_complex_03.pdb",
+      "previous_part": 2,
+      "part": 3
+    },
+    {
+      "path": "data/bioinformatics_demo/structures/reference_complex_07.pdb",
+      "previous_part": 2,
+      "part": 3
+    },
+    {
+      "path": "data/bioinformatics_demo/structures/reference_complex_11.pdb",
+      "previous_part": 2,
+      "part": 3
+    },
+    {
+      "path": "data/bioinformatics_demo/demo_structure.pdb",
+      "previous_part": 2,
+      "part": 3
+    },
+    {
+      "path": "src/biointel/universal_platform_v189/generator.py",
+      "previous_part": 1,
+      "part": 3
+    },
+    {
+      "path": "src/biointel/neuro_cns/reporting.py",
+      "previous_part": 1,
+      "part": 3
+    },
+    {
+      "path": "scripts/run_biointel_step206.py",
+      "previous_part": 3,
+      "part": 3
+    },
+    {
+      "path": "README.md",
+      "previous_part": 2,
+      "part": 3
+    },
+    {
+      "path": "reports/.data_pack_integrity_cache.json",
+      "previous_part": 1,
+      "part": 3
+    },
+    {
+      "path": "RELEASE_TEST_REPORT_STEP209.md",
+      "previous_part": 1,
+      "part": 3
+    },
+    {
+      "path": "PROFESSIONAL_HARDENING_REPORT_V19.6.md",
+      "previous_part": 1,
+      "part": 3
+    },
+    {
+      "path": "docs/architecture/OVERVIEW.md",
+      "previous_part": 2,
+      "part": 3
+    },
+    {
+      "path": "data/bioinformatics_demo/demo_qpcr.csv",
+      "previous_part": 1,
+      "part": 3
+    },
+    {
+      "path": "TEST_REPORT_STEP196_V7.md",
+      "previous_part": 1,
+      "part": 3
+    },
+    {
+      "path": "reports/datasets.sqlite3",
+      "previous_part": 3,
+      "part": 3
+    },
+    {
+      "path": "src/biointel/page_excellence_v187/validators.py",
+      "previous_part": 2,
+      "part": 3
+    },
+    {
+      "path": "src/biointel/demo_assurance_v184/validators.py",
+      "previous_part": 3,
+      "part": 3
+    },
+    {
+      "path": "docs/BACKUP_AND_ROLLBACK.md",
+      "previous_part": 1,
+      "part": 3
+    },
+    {
+      "path": "EXTRACT_AND_INSTALL_STEP220_WINDOWS.bat",
+      "previous_part": 1,
+      "part": 3
+    },
+    {
+      "path": "release/ultimate/SECURITY_AUDIT_SUMMARY.md",
+      "previous_part": 1,
+      "part": 3
+    },
+    {
+      "path": "STEP196_V5_INSTALLER_FIX_REPORT.md",
+      "previous_part": 1,
+      "part": 3
+    },
+    {
+      "path": "CHANGELOG_STEP217_PRODUCTION_ENABLEMENT.md",
+      "previous_part": 1,
+      "part": 3
+    },
+    {
+      "path": "RELEASE_TEST_REPORT_STEP216.md",
+      "previous_part": 1,
+      "part": 3
+    },
+    {
+      "path": "data/bioinformatics_demo/demo_enzyme_kinetics.csv",
+      "previous_part": 1,
+      "part": 3
+    },
+    {
+      "path": "STEP220_RELEASE.json",
+      "previous_part": 2,
+      "part": 3
+    },
+    {
+      "path": "CHANGELOG_STEP206_RUN_BOTH_HOTFIX_V19_1.md",
+      "previous_part": 2,
+      "part": 3
+    },
+    {
+      "path": "release/RECONSTRUCT_5PART.md",
+      "previous_part": 3,
+      "part": 3
+    },
+    {
+      "path": "reports/feature_cache.sqlite3",
+      "previous_part": 1,
+      "part": 3
+    },
+    {
+      "path": "CURRENT_RELEASE_STEP203.md",
+      "previous_part": 2,
+      "part": 3
+    },
+    {
+      "path": ".release_parts/step220_part1.ok",
+      "previous_part": 1,
+      "part": 3
+    },
+    {
+      "path": ".release_padding_bin",
+      "previous_part": 2,
+      "part": 3
+    },
+    {
+      "path": "data/bioinformatics_demo/demo_reads.fastq",
+      "previous_part": 2,
+      "part": 4
+    },
+    {
+      "path": "reports/knowledge.sqlite3",
+      "previous_part": 1,
+      "part": 4
+    },
+    {
+      "path": "reports/assets.sqlite3",
+      "previous_part": 3,
+      "part": 4
+    },
+    {
+      "path": "STEP220_SOURCE_MANIFEST_SHA256.json",
+      "previous_part": 1,
+      "part": 4
+    },
+    {
+      "path": "release/SOURCE_MANIFEST_SHA256.json",
+      "previous_part": 3,
+      "part": 4
+    },
+    {
+      "path": "data/bioinformatics_demo/demo_transcriptomics.csv",
+      "previous_part": 1,
+      "part": 4
+    },
+    {
+      "path": "reports/relationships.sqlite3",
+      "previous_part": 3,
+      "part": 4
+    },
+    {
+      "path": "reports/document_history.sqlite3",
+      "previous_part": 3,
+      "part": 4
+    },
+    {
+      "path": "data/bioinformatics_demo/demo_proteomics.csv",
+      "previous_part": 2,
+      "part": 4
+    },
+    {
+      "path": "data/bioinformatics_demo/demo_annotations.gff3",
+      "previous_part": 1,
+      "part": 4
+    },
+    {
+      "path": "release/PART_MANIFEST-Part1.json",
+      "previous_part": 4,
+      "part": 4
+    },
+    {
+      "path": "release/PART_MANIFEST-Part2.json",
+      "previous_part": 2,
+      "part": 4
+    },
+    {
+      "path": "reports/experiments.sqlite3",
+      "previous_part": 2,
+      "part": 4
+    },
+    {
+      "path": "cache/free_web_ai/directory/0c68beb06f1694ecc24c1f8b9f888229bcf0ce32580e8ac072593d0600cceec7.bin",
+      "previous_part": 1,
+      "part": 4
+    },
+    {
+      "path": "data/bioinformatics_demo/demo_protein_panel.fasta",
+      "previous_part": 3,
+      "part": 4
+    },
+    {
+      "path": "reports/jobs.sqlite3",
+      "previous_part": 3,
+      "part": 4
+    },
+    {
+      "path": "workspace/step130_scientific_intelligence.sqlite3",
+      "previous_part": 1,
+      "part": 4
+    },
+    {
+      "path": "src/biointel/api/main.py",
+      "previous_part": 3,
+      "part": 4
+    },
+    {
+      "path": "data/bioinformatics_demo/demo_protein_annotation.csv",
+      "previous_part": 2,
+      "part": 4
+    },
+    {
+      "path": "src/biointel/universal_platform_v189/platform.py",
+      "previous_part": 2,
+      "part": 4
+    },
+    {
+      "path": "src/biointel/ui/style_catalog.py",
+      "previous_part": 3,
+      "part": 4
+    },
+    {
+      "path": "src/biointel/neuro_cns/completion.py",
+      "previous_part": 2,
+      "part": 4
+    },
+    {
+      "path": "scripts/runtime_supervisor_step206.py",
+      "previous_part": 3,
+      "part": 4
+    },
+    {
+      "path": "src/biointel/major_module_standard_v188/engine.py",
+      "previous_part": 1,
+      "part": 4
+    },
+    {
+      "path": "data/bioinformatics_demo/structures/reference_complex_04.pdb",
+      "previous_part": 3,
+      "part": 4
+    },
+    {
+      "path": "data/bioinformatics_demo/structures/reference_complex_08.pdb",
+      "previous_part": 3,
+      "part": 4
+    },
+    {
+      "path": "data/bioinformatics_demo/structures/reference_complex_12.pdb",
+      "previous_part": 3,
+      "part": 4
+    },
+    {
+      "path": "data/bioinformatics_demo/structures/reference_complex_01.pdb",
+      "previous_part": 1,
+      "part": 4
+    },
+    {
+      "path": "data/bioinformatics_demo/structures/reference_complex_05.pdb",
+      "previous_part": 1,
+      "part": 4
+    },
+    {
+      "path": "data/bioinformatics_demo/structures/reference_complex_09.pdb",
+      "previous_part": 1,
+      "part": 4
+    },
+    {
+      "path": "reports/projects.sqlite3",
+      "previous_part": 1,
+      "part": 4
+    },
+    {
+      "path": "scripts/step206_release_gate.py",
+      "previous_part": 3,
+      "part": 4
+    },
+    {
+      "path": "src/biointel/data/relationship_integrity.py",
+      "previous_part": 4,
+      "part": 4
+    },
+    {
+      "path": "scripts/verify_step206_windows_install_run.py",
+      "previous_part": 3,
+      "part": 4
+    },
+    {
+      "path": "src/biointel/portfolio_demo_v183/generator.py",
+      "previous_part": 1,
+      "part": 4
+    },
+    {
+      "path": "src/biointel/neuro_cns/consistency.py",
+      "previous_part": 2,
+      "part": 4
+    },
+    {
+      "path": "pages/17_Local_Data_Manager.py",
+      "previous_part": 2,
+      "part": 4
+    },
+    {
+      "path": "src/biointel/demo_assurance_v184/generator.py",
+      "previous_part": 2,
+      "part": 4
+    },
+    {
+      "path": "src/biointel/operational_assurance_v185/generator.py",
+      "previous_part": 2,
+      "part": 4
+    },
+    {
+      "path": "src/biointel/platform_completion_v186/generator.py",
+      "previous_part": 1,
+      "part": 4
+    },
+    {
+      "path": "src/biointel/neuro_cns/hardening.py",
+      "previous_part": 1,
+      "part": 4
+    },
+    {
+      "path": "reports/analytics.sqlite3",
+      "previous_part": 1,
+      "part": 4
+    },
+    {
+      "path": "src/biointel/neuro_cns/provenance.py",
+      "previous_part": 4,
+      "part": 4
+    },
+    {
+      "path": "tests/test_step206_windows_install_run.py",
+      "previous_part": 1,
+      "part": 4
+    },
+    {
+      "path": "CHANGELOG_STEP196_V7.md",
+      "previous_part": 1,
+      "part": 4
+    },
+    {
+      "path": "INSTALL_INSTRUCTIONS.txt",
+      "previous_part": 2,
+      "part": 4
+    },
+    {
+      "path": "INSTALL_WINDOWS.bat",
+      "previous_part": 4,
+      "part": 4
+    },
+    {
+      "path": "pages/268_Engine_Control_Center.py",
+      "previous_part": 1,
+      "part": 4
+    },
+    {
+      "path": "src/biointel/portfolio_demo_v183/validators.py",
+      "previous_part": 1,
+      "part": 4
+    },
+    {
+      "path": "RUN_BOTH_WINDOWS.bat",
+      "previous_part": 2,
+      "part": 4
+    },
+    {
+      "path": "docs/STEP218_RECOMMENDATION_UPGRADE.md",
+      "previous_part": 2,
+      "part": 4
+    },
+    {
+      "path": "src/biointel/page_excellence_v187/ui.py",
+      "previous_part": 3,
+      "part": 4
+    },
+    {
+      "path": "scripts/step206_contract.py",
+      "previous_part": 1,
+      "part": 4
+    },
+    {
+      "path": "CHANGELOG_STEP201_NEURO_CNS.md",
+      "previous_part": 1,
+      "part": 4
+    },
+    {
+      "path": "pages/140_Cell_Atlas_Mapping_Reference_Annotation_Studio.py",
+      "previous_part": 2,
+      "part": 4
+    },
+    {
+      "path": "src/biointel/operational_assurance_v185/validators.py",
+      "previous_part": 2,
+      "part": 4
+    },
+    {
+      "path": "reports/tenants.sqlite3",
+      "previous_part": 1,
+      "part": 4
+    },
+    {
+      "path": "src/biointel/platform_completion_v186/validators.py",
+      "previous_part": 1,
+      "part": 4
+    },
+    {
+      "path": "MIGRATION_NOTES.md",
+      "previous_part": 1,
+      "part": 4
+    },
+    {
+      "path": "data/bioinformatics_demo/demo_elisa.csv",
+      "previous_part": 1,
+      "part": 4
+    },
+    {
+      "path": "release/ultimate/ADDED_FEATURES.md",
+      "previous_part": 4,
+      "part": 4
+    },
+    {
+      "path": "reports/.coverage_integrity_cache.json",
+      "previous_part": 3,
+      "part": 4
+    },
+    {
+      "path": "CHANGELOG_STEP196_V13.md",
+      "previous_part": 3,
+      "part": 4
+    },
+    {
+      "path": "CHANGELOG_STEP196_V14.md",
+      "previous_part": 2,
+      "part": 4
+    },
+    {
+      "path": "docs/step220/INSTALLATION_AND_WINDOWS_GUIDE.md",
+      "previous_part": 2,
+      "part": 4
+    },
+    {
+      "path": "reports/audit.jsonl",
+      "previous_part": 1,
+      "part": 4
+    },
+    {
+      "path": "release/ultimate/RELEASE_NOTES.md",
+      "previous_part": 3,
+      "part": 4
+    },
+    {
+      "path": "reports/internet_downloads.sqlite3",
+      "previous_part": 4,
+      "part": 4
+    },
+    {
+      "path": "STOP_BIOINTEL_WINDOWS.bat",
+      "previous_part": 1,
+      "part": 4
+    },
+    {
+      "path": ".env",
+      "previous_part": 1,
+      "part": 4
+    },
+    {
+      "path": "data/bioinformatics_demo/demo_sample_metadata.csv",
+      "previous_part": 1,
+      "part": 4
+    },
+    {
+      "path": "cache/free_web_ai/directory/0c68beb06f1694ecc24c1f8b9f888229bcf0ce32580e8ac072593d0600cceec7.json",
+      "previous_part": 1,
+      "part": 4
+    },
+    {
+      "path": "data/bioinformatics_demo/demo_structure_catalog.csv",
+      "previous_part": 2,
+      "part": 4
+    },
+    {
+      "path": "reports/ui_profiles/default/onboarding.json",
+      "previous_part": 1,
+      "part": 4
+    },
+    {
+      "path": ".release_parts/step220_part2.ok",
+      "previous_part": 1,
+      "part": 4
+    },
+    {
+      "path": ".release_padding_bin",
+      "previous_part": 3,
+      "part": 4
+    }
+  ],
+  "resolution": "Canonical target assembled with deterministic overlay order; 117 changed paths are separately regression-tested/audited."
+}

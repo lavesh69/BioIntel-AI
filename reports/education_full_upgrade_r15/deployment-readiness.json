@@ -1,0 +1,84 @@
+{
+  "schema": "biointel.education.deployment-readiness.v1",
+  "generated_at": "2026-08-01T16:45:20.081427+00:00",
+  "local_core_ready": true,
+  "deployment_profile": "local_desktop",
+  "core_gates": [
+    {
+      "name": "project source",
+      "required_for_local_core": true,
+      "state": "passed",
+      "evidence": "C:\\Users\\lavesh dobriyal\\Documents\\Codex\\2026-08-01\\files-mentioned-by-the-user-biointel\\work\\education_r9_assembly_20260801\\BioIntel-Step220\\src\\biointel"
+    },
+    {
+      "name": "offline Windows wheelhouse",
+      "required_for_local_core": true,
+      "state": "passed",
+      "evidence": {
+        "wheel_count": 141,
+        "errors": []
+      }
+    },
+    {
+      "name": "bundled FFmpeg and local transcription",
+      "required_for_local_core": true,
+      "state": "passed",
+      "evidence": {
+        "provider": "local_faster_whisper",
+        "state": "ready",
+        "ready": true,
+        "credential_required": false,
+        "network_required_at_runtime": false,
+        "ffmpeg_path": "C:\\Users\\lavesh dobriyal\\Documents\\Codex\\2026-08-01\\files-mentioned-by-the-user-biointel\\work\\streamlit_skill_py311\\Lib\\site-packages\\imageio_ffmpeg\\binaries\\ffmpeg-win-x86_64-v7.1.exe",
+        "package_version": "1.2.1",
+        "model_path": "C:\\Users\\lavesh dobriyal\\Documents\\Codex\\2026-08-01\\files-mentioned-by-the-user-biointel\\work\\education_r9_assembly_20260801\\BioIntel-Step220\\models\\education\\faster-whisper-tiny",
+        "model_manifest_sha256": "2507446bda93db691ec9afda4afbdd90c193ec9e55a4c6358894117b147b9b5c",
+        "model_revision": "d90ca5fe260221311c53c58e660288d3deb8d356",
+        "model_license": "MIT",
+        "supported_language_modes": [
+          "auto",
+          "english",
+          "hindi",
+          "hinglish"
+        ],
+        "reason": ""
+      }
+    },
+    {
+      "name": "Education data location",
+      "required_for_local_core": true,
+      "state": "passed",
+      "evidence": {
+        "database": "C:\\Users\\lavesh dobriyal\\Documents\\Codex\\2026-08-01\\files-mentioned-by-the-user-biointel\\r15-readiness-final-user-data\\education\\education.sqlite3",
+        "media": "C:\\Users\\lavesh dobriyal\\Documents\\Codex\\2026-08-01\\files-mentioned-by-the-user-biointel\\r15-readiness-final-user-data\\education\\media"
+      }
+    }
+  ],
+  "external_integration_gates": [
+    {
+      "name": "TURN relay",
+      "required_for_local_core": false,
+      "state": "configuration_required",
+      "evidence": "real relay URL and credentials must pass deployment diagnostics"
+    },
+    {
+      "name": "OIDC identity",
+      "required_for_local_core": false,
+      "state": "configuration_required",
+      "evidence": "issuer and registered client required"
+    },
+    {
+      "name": "SMTP delivery",
+      "required_for_local_core": false,
+      "state": "configuration_required",
+      "evidence": "host and sender required"
+    },
+    {
+      "name": "cluster persistence",
+      "required_for_local_core": false,
+      "state": "configuration_required",
+      "evidence": "Postgres, Redis and object storage required for multi-node deployment"
+    }
+  ],
+  "truth_contract": "External gates never become passed without explicit deployment configuration."
+}

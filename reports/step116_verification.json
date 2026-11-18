@@ -1,0 +1,70 @@
+{
+  "schema": "biointel.step116.verification.v1",
+  "version": "11.6.0",
+  "generated_at_utc": "2026-07-11T05:42:10+00:00",
+  "status": "PASS",
+  "passed": 12,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "Version",
+      "status": "PASS",
+      "detail": "VERSION=11.6.0"
+    },
+    {
+      "name": "Module workspace catalogue",
+      "status": "PASS",
+      "detail": "78/78"
+    },
+    {
+      "name": "Scientific groups",
+      "status": "PASS",
+      "detail": "8/8: {'sequence_genomics': 14, 'pathogen_longread': 9, 'omics_spatial': 8, 'protein_discovery': 12, 'analytical_imaging': 7, 'wetlab_design': 5, 'ai_models': 11, 'data_evidence': 12}"
+    },
+    {
+      "name": "Embedded pages",
+      "status": "PASS",
+      "detail": "77/77"
+    },
+    {
+      "name": "Hub page",
+      "status": "PASS",
+      "detail": "page 170 present"
+    },
+    {
+      "name": "Excluded modules unchanged",
+      "status": "PASS",
+      "detail": "5/5 source hashes preserved"
+    },
+    {
+      "name": "Critical compilation",
+      "status": "PASS",
+      "detail": "4 files compiled"
+    },
+    {
+      "name": "77/77 affected pages",
+      "status": "PASS",
+      "detail": "step116_runtime_pages.json"
+    },
+    {
+      "name": "40/40 renderer states",
+      "status": "PASS",
+      "detail": "step116_renderer_states.json"
+    },
+    {
+      "name": "static compilation audit",
+      "status": "PASS",
+      "detail": "step116_static_audit.json"
+    },
+    {
+      "name": "all SQLite databases",
+      "status": "PASS",
+      "detail": "step116_database_integrity.json"
+    },
+    {
+      "name": "7/7 self-tests",
+      "status": "PASS",
+      "detail": "step116_self_test.json"
+    }
+  ]
+}

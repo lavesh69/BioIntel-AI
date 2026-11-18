@@ -1,0 +1,462 @@
+{
+  "schema": "biointel.step115.runtime.v1",
+  "version": "11.6.0",
+  "generated_at_utc": "2026-07-11T04:49:51+00:00",
+  "pages_tested": 56,
+  "pages_passed": 56,
+  "renderer_states_tested": 28,
+  "renderer_states_passed": 28,
+  "failed": 0,
+  "page_results": [
+    {
+      "page": "pages/100_Rare_Disease_Genome_Interpretation.py",
+      "status": "PASS",
+      "exceptions": []
+    },
+    {
+      "page": "pages/102_Multi_Omics_Biomarker_Discovery.py",
+      "status": "PASS",
+      "exceptions": []
+    },
+    {
+      "page": "pages/103_Visual_Workflow_Builder.py",
+      "status": "PASS",
+      "exceptions": []
+    },
+    {
+      "page": "pages/106_Reference_Database_Manager.py",
+      "status": "PASS",
+      "exceptions": []
+    },
+    {
+      "page": "pages/112_Epigenomics_and_Chromatin_Regulation_Studio.py",
+      "status": "PASS",
+      "exceptions": []
+    },
+    {
+      "page": "pages/113_Metabolomics_and_Lipidomics_Workbench.py",
+      "status": "PASS",
+      "exceptions": []
+    },
+    {
+      "page": "pages/114_Immunoinformatics_and_Vaccine_Design_Lab.py",
+      "status": "PASS",
+      "exceptions": []
+    },
+    {
+      "page": "pages/115_Antibody_and_Biologics_Engineering_Studio.py",
+      "status": "PASS",
+      "exceptions": []
+    },
+    {
+      "page": "pages/116_Molecular_Docking_and_Dynamics_Lab.py",
+      "status": "PASS",
+      "exceptions": []
+    },
+    {
+      "page": "pages/117_Pharmacogenomics_and_Precision_Medicine_Board.py",
+      "status": "PASS",
+      "exceptions": []
+    },
+    {
+      "page": "pages/118_Spatial_Omics_and_Digital_Pathology_Studio.py",
+      "status": "PASS",
+      "exceptions": []
+    },
+    {
+      "page": "pages/119_Single_Cell_Trajectory_and_Communication_Lab.py",
+      "status": "PASS",
+      "exceptions": []
+    },
+    {
+      "page": "pages/120_Bioimage_and_Microscopy_AI_Lab.py",
+      "status": "PASS",
+      "exceptions": []
+    },
+    {
+      "page": "pages/121_Biostatistics_Power_and_Experimental_Design_Studio.py",
+      "status": "PASS",
+      "exceptions": []
+    },
+    {
+      "page": "pages/122_Clinical_Trial_Biomarker_and_Patient_Stratification_Studio.py",
+      "status": "PASS",
+      "exceptions": []
+    },
+    {
+      "page": "pages/123_Genome_Editing_Safety_and_Off_Target_Validation_Lab.py",
+      "status": "PASS",
+      "exceptions": []
+    },
+    {
+      "page": "pages/124_Proteogenomics_and_Neoantigen_Discovery_Studio.py",
+      "status": "PASS",
+      "exceptions": []
+    },
+    {
+      "page": "pages/125_Bioprocess_and_Fermentation_Optimization_Studio.py",
+      "status": "PASS",
+      "exceptions": []
+    },
+    {
+      "page": "pages/129_Multi_Omics_Harmonization_and_Batch_Correction_Studio.py",
+      "status": "PASS",
+      "exceptions": []
+    },
+    {
+      "page": "pages/130_Glycomics_and_Glycoproteomics_Workbench.py",
+      "status": "PASS",
+      "exceptions": []
+    },
+    {
+      "page": "pages/131_One_Health_and_Environmental_Genomics_Center.py",
+      "status": "PASS",
+      "exceptions": []
+    },
+    {
+      "page": "pages/134_Population_Genetics_GWAS_Studio.py",
+      "status": "PASS",
+      "exceptions": []
+    },
+    {
+      "page": "pages/135_Structural_Variant_Repeat_Expansion_Lab.py",
+      "status": "PASS",
+      "exceptions": []
+    },
+    {
+      "page": "pages/137_RNA_Isoform_Alternative_Splicing_Studio.py",
+      "status": "PASS",
+      "exceptions": []
+    },
+    {
+      "page": "pages/140_Cell_Atlas_Mapping_Reference_Annotation_Studio.py",
+      "status": "PASS",
+      "exceptions": []
+    },
+    {
+      "page": "pages/141_Phenotypic_Screening_High_Content_Analysis_Lab.py",
+      "status": "PASS",
+      "exceptions": []
+    },
+    {
+      "page": "pages/142_Organoid_3D_Cell_Model_Analytics.py",
+      "status": "PASS",
+      "exceptions": []
+    },
+    {
+      "page": "pages/144_Enzyme_Engineering_Metabolic_Pathway_Design_Studio.py",
+      "status": "PASS",
+      "exceptions": []
+    },
+    {
+      "page": "pages/146_Virology_Viral_Evolution_Workbench.py",
+      "status": "PASS",
+      "exceptions": []
+    },
+    {
+      "page": "pages/147_Rare_Variant_Burden_Family_Genetics_Lab.py",
+      "status": "PASS",
+      "exceptions": []
+    },
+    {
+      "page": "pages/150_Visual_Scientific_Workflow_Builder_2.py",
+      "status": "PASS",
+      "exceptions": []
+    },
+    {
+      "page": "pages/151_Real_Background_Job_Queue_Engine.py",
+      "status": "PASS",
+      "exceptions": []
+    },
+    {
+      "page": "pages/153_Reference_Database_Lifecycle_Manager_2.py",
+      "status": "PASS",
+      "exceptions": []
+    },
+    {
+      "page": "pages/156_Model_Registry_ML_Lifecycle_Center_2.py",
+      "status": "PASS",
+      "exceptions": []
+    },
+    {
+      "page": "pages/169_Non_Chart_Scientific_Visuals.py",
+      "status": "PASS",
+      "exceptions": []
+    },
+    {
+      "page": "pages/1_Sequence_Analyzer.py",
+      "status": "PASS",
+      "exceptions": []
+    },
+    {
+      "page": "pages/21_Dataset_Registry_Lineage.py",
+      "status": "PASS",
+      "exceptions": []
+    },
+    {
+      "page": "pages/22_Model_Lifecycle.py",
+      "status": "PASS",
+      "exceptions": []
+    },
+    {
+      "page": "pages/56_FASTQ_Genomics_QC.py",
+      "status": "PASS",
+      "exceptions": []
+    },
+    {
+      "page": "pages/57_Variant_Annotation_Workbench.py",
+      "status": "PASS",
+      "exceptions": []
+    },
+    {
+      "page": "pages/58_Primer_CRISPR_Codon_Studio.py",
+      "status": "PASS",
+      "exceptions": []
+    },
+    {
+      "page": "pages/59_Transcriptomics_Expression_Lab.py",
+      "status": "PASS",
+      "exceptions": []
+    },
+    {
+      "page": "pages/60_Protein_Annotation_Proteomics.py",
+      "status": "PASS",
+      "exceptions": []
+    },
+    {
+      "page": "pages/61_Structural_Bioinformatics.py",
+      "status": "PASS",
+      "exceptions": []
+    },
+    {
+      "page": "pages/62_ADMET_Drug_Discovery.py",
+      "status": "PASS",
+      "exceptions": []
+    },
+    {
+      "page": "pages/64_Wet_Lab_Biotechnology.py",
+      "status": "PASS",
+      "exceptions": []
+    },
+    {
+      "page": "pages/66_Omics_Integration_Hub.py",
+      "status": "PASS",
+      "exceptions": []
+    },
+    {
+      "page": "pages/68_Alignment_Phylogeny.py",
+      "status": "PASS",
+      "exceptions": []
+    },
+    {
+      "page": "pages/79_Comparative_Pathogen_Genomics.py",
+      "status": "PASS",
+      "exceptions": []
+    },
+    {
+      "page": "pages/80_Single_Cell_Heterogeneity.py",
+      "status": "PASS",
+      "exceptions": []
+    },
+    {
+      "page": "pages/81_Cancer_Genomics.py",
+      "status": "PASS",
+      "exceptions": []
+    },
+    {
+      "page": "pages/82_Metagenomics_Pipeline.py",
+      "status": "PASS",
+      "exceptions": []
+    },
+    {
+      "page": "pages/94_Pangenome_Variation_Graph_Studio.py",
+      "status": "PASS",
+      "exceptions": []
+    },
+    {
+      "page": "pages/96_AI_Protein_Design_Lab.py",
+      "status": "PASS",
+      "exceptions": []
+    },
+    {
+      "page": "pages/97_CRISPR_Screen_PerturbSeq_Analytics.py",
+      "status": "PASS",
+      "exceptions": []
+    },
+    {
+      "page": "pages/98_Pathogen_Outbreak_Command_Center.py",
+      "status": "PASS",
+      "exceptions": []
+    }
+  ],
+  "renderer_results": [
+    {
+      "type": "visual",
+      "key": "genome_track",
+      "status": "PASS",
+      "exceptions": []
+    },
+    {
+      "type": "visual",
+      "key": "molecular_scene",
+      "status": "PASS",
+      "exceptions": []
+    },
+    {
+      "type": "visual",
+      "key": "microscopy_editor",
+      "status": "PASS",
+      "exceptions": []
+    },
+    {
+      "type": "visual",
+      "key": "pathology_canvas",
+      "status": "PASS",
+      "exceptions": []
+    },
+    {
+      "type": "visual",
+      "key": "flow_gating_canvas",
+      "status": "PASS",
+      "exceptions": []
+    },
+    {
+      "type": "visual",
+      "key": "plate_map_editor",
+      "status": "PASS",
+      "exceptions": []
+    },
+    {
+      "type": "visual",
+      "key": "mass_spectrum_inspector",
+      "status": "PASS",
+      "exceptions": []
+    },
+    {
+      "type": "visual",
+      "key": "sequence_feature_track",
+      "status": "PASS",
+      "exceptions": []
+    },
+    {
+      "type": "visual",
+      "key": "pedigree_canvas",
+      "status": "PASS",
+      "exceptions": []
+    },
+    {
+      "type": "visual",
+      "key": "phylogeny_canvas",
+      "status": "PASS",
+      "exceptions": []
+    },
+    {
+      "type": "visual",
+      "key": "outbreak_map_canvas",
+      "status": "PASS",
+      "exceptions": []
+    },
+    {
+      "type": "visual",
+      "key": "pangenome_canvas",
+      "status": "PASS",
+      "exceptions": []
+    },
+    {
+      "type": "visual",
+      "key": "single_cell_canvas",
+      "status": "PASS",
+      "exceptions": []
+    },
+    {
+      "type": "visual",
+      "key": "multiomics_canvas",
+      "status": "PASS",
+      "exceptions": []
+    },
+    {
+      "type": "visual",
+      "key": "bioprocess_board",
+      "status": "PASS",
+      "exceptions": []
+    },
+    {
+      "type": "module_workspace",
+      "key": "fastq",
+      "status": "PASS",
+      "exceptions": []
+    },
+    {
+      "type": "module_workspace",
+      "key": "variant",
+      "status": "PASS",
+      "exceptions": []
+    },
+    {
+      "type": "module_workspace",
+      "key": "transcriptomics",
+      "status": "PASS",
+      "exceptions": []
+    },
+    {
+      "type": "module_workspace",
+      "key": "crispr",
+      "status": "PASS",
+      "exceptions": []
+    },
+    {
+      "type": "module_workspace",
+      "key": "admet",
+      "status": "PASS",
+      "exceptions": []
+    },
+    {
+      "type": "module_workspace",
+      "key": "antibody",
+      "status": "PASS",
+      "exceptions": []
+    },
+    {
+      "type": "module_workspace",
+      "key": "rare_disease",
+      "status": "PASS",
+      "exceptions": []
+    },
+    {
+      "type": "module_workspace",
+      "key": "clinical_biomarker",
+      "status": "PASS",
+      "exceptions": []
+    },
+    {
+      "type": "module_workspace",
+      "key": "reference_db",
+      "status": "PASS",
+      "exceptions": []
+    },
+    {
+      "type": "module_workspace",
+      "key": "background_jobs",
+      "status": "PASS",
+      "exceptions": []
+    },
+    {
+      "type": "module_workspace",
+      "key": "workflow",
+      "status": "PASS",
+      "exceptions": []
+    },
+    {
+      "type": "module_workspace",
+      "key": "dataset_registry",
+      "status": "PASS",
+      "exceptions": []
+    },
+    {
+      "type": "module_workspace",
+      "key": "model_registry",
+      "status": "PASS",
+      "exceptions": []
+    }
+  ]
+}

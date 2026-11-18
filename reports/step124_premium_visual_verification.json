@@ -1,0 +1,85 @@
+{
+  "schema": "biointel.step124-verification.v1",
+  "version": "15.6.0",
+  "generated_at_utc": "2026-07-23T10:15:12+00:00",
+  "checks": [
+    {
+      "name": "version",
+      "passed": false,
+      "detail": "15.6.0"
+    },
+    {
+      "name": "theme catalogue",
+      "passed": false,
+      "detail": "themes=55 fonts=11"
+    },
+    {
+      "name": "premium themes",
+      "passed": false,
+      "detail": "22/10"
+    },
+    {
+      "name": "premium files",
+      "passed": true,
+      "detail": "all present"
+    },
+    {
+      "name": "visual CSS",
+      "passed": true,
+      "detail": "animations, glass and accessibility present"
+    },
+    {
+      "name": "global integration",
+      "passed": true,
+      "detail": "hero/icon/CSS integration"
+    },
+    {
+      "name": "before-after integration",
+      "passed": true,
+      "detail": "interactive workspace comparison"
+    },
+    {
+      "name": "Python compilation",
+      "passed": true,
+      "detail": "7/7"
+    },
+    {
+      "name": "locked modules",
+      "passed": false,
+      "detail": "0/5 byte-identical"
+    }
+  ],
+  "locked_modules": [
+    {
+      "path": "pages/6_DTI_Predictor.py",
+      "expected": "84b3ecec1356b7239a057459210af4cd130c57c08dd9449b7239d1fe5954e0cc",
+      "actual": "8cf9bd3808f960fd94cf8139f5c2958e409771f310f8de8ec2f0c47d79c0abfc",
+      "byte_identical": false
+    },
+    {
+      "path": "pages/74_DTI_Validation_Evidence_Center.py",
+      "expected": "a700a8a21649b49cf0e3a1521d2afad45039b83b767c2fe730b93fee7d4f7f11",
+      "actual": "83413a0e72a15c823b92ee5b184805634973cd1870150c51488b5530ebcd6138",
+      "byte_identical": false
+    },
+    {
+      "path": "pages/109_Lab_Instrument_Import_Center.py",
+      "expected": "22b5aba5bfea37bb1ef330ed7cca3773467463f883189602d96a0151311c8f70",
+      "actual": "3fc56e1544915062196c36511986f0e04242c08cdb0cc6ce5d7c1fe59ebc49be",
+      "byte_identical": false
+    },
+    {
+      "path": "pages/126_LIMS_ELN_and_Sample_Chain_of_Custody_Hub.py",
+      "expected": "eadaef1a283a5fa11ce6b243aa561508ba9ceba9f6fdcc207f4853ccf7d86905",
+      "actual": "a9414d90f056a2b008cf470c339ee178d52053722021285baf054080c08d9a96",
+      "byte_identical": false
+    },
+    {
+      "path": "pages/157_Instrument_Integration_Hub_2.py",
+      "expected": "cf3a5f94756def0007dbff31184ec276d90b03fc6d6e1ca792c87189e5ab7d6d",
+      "actual": "1b4a5f9473e028571ce8464ee8beed3663be5dc8d8a0162a87bd85fae380e23c",
+      "byte_identical": false
+    }
+  ],
+  "passed": false
+}

@@ -1,0 +1,53 @@
+{
+  "schema": "biointel.step122.verification.v1",
+  "release": "12.2.0",
+  "passed": 9,
+  "total": 9,
+  "checks": [
+    {
+      "name": "Version",
+      "passed": true,
+      "detail": "VERSION=12.2.0"
+    },
+    {
+      "name": "Protected backends",
+      "passed": true,
+      "detail": "proteinmpnn, rfdiffusion, colabfold_batch, foldx, rosetta_scripts"
+    },
+    {
+      "name": "Page integration",
+      "passed": true,
+      "detail": "Step 122 panel connected"
+    },
+    {
+      "name": "No shell execution",
+      "passed": true,
+      "detail": "argument-vector execution only"
+    },
+    {
+      "name": "Immutable staging",
+      "passed": true,
+      "detail": "verification-20260711T123107-99aa77"
+    },
+    {
+      "name": "Runtime preflight",
+      "passed": true,
+      "detail": "5/5 backend rows"
+    },
+    {
+      "name": "Evidence boundary",
+      "passed": true,
+      "detail": "Readiness verifies local execution prerequisites; it does not validate scientific performance or grant licences."
+    },
+    {
+      "name": "Request templates",
+      "passed": true,
+      "detail": "3/3 present"
+    },
+    {
+      "name": "Windows launchers",
+      "passed": true,
+      "detail": "verification and headless launchers"
+    }
+  ]
+}

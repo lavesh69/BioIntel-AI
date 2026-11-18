@@ -1,0 +1,17 @@
+{
+  "schema": "biointel.step102.qualification.v1",
+  "release": "10.2.0",
+  "status": "passed",
+  "checks": {
+    "module_catalog_count": 21,
+    "demo_analysis_passed": 21,
+    "demo_analysis_failed": 0,
+    "streamlit_pages_tested": 22,
+    "streamlit_pages_failed": 0,
+    "targeted_release_tests_passed": 21,
+    "targeted_release_tests_failed": 0,
+    "navigation_registration": true,
+    "python_compilation": true
+  },
+  "boundary": "Software qualification does not establish external scientific, clinical, regulatory, manufacturing or privacy validation."
+}

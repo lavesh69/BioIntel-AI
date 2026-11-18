@@ -1,0 +1,298 @@
+{
+  "checks": [
+    {
+      "detail": "VERSION=13.0.0",
+      "name": "version",
+      "passed": true
+    },
+    {
+      "detail": "Step 129 release/config aligned",
+      "name": "release configuration",
+      "passed": true
+    },
+    {
+      "detail": "modules=15",
+      "name": "module count",
+      "passed": true
+    },
+    {
+      "detail": "canvases=15",
+      "name": "specialist canvases",
+      "passed": true
+    },
+    {
+      "detail": "15/15 deterministic module analyses produced results",
+      "name": "module analyses",
+      "passed": true
+    },
+    {
+      "detail": "75/75 module-specific visuals available",
+      "name": "specialist visuals",
+      "passed": true
+    },
+    {
+      "detail": "Every module produced at least two advanced tables",
+      "name": "advanced tables",
+      "passed": true
+    },
+    {
+      "detail": "5/5 protected pages remain byte-identical to Step 128",
+      "name": "locked modules",
+      "passed": true
+    },
+    {
+      "detail": "files=4",
+      "name": "release files",
+      "passed": true
+    }
+  ],
+  "locked_hashes": {
+    "pages/109_Lab_Instrument_Import_Center.py": "22b5aba5bfea37bb1ef330ed7cca3773467463f883189602d96a0151311c8f70",
+    "pages/126_LIMS_ELN_and_Sample_Chain_of_Custody_Hub.py": "eadaef1a283a5fa11ce6b243aa561508ba9ceba9f6fdcc207f4853ccf7d86905",
+    "pages/157_Instrument_Integration_Hub_2.py": "cf3a5f94756def0007dbff31184ec276d90b03fc6d6e1ca792c87189e5ab7d6d",
+    "pages/6_DTI_Predictor.py": "84b3ecec1356b7239a057459210af4cd130c57c08dd9449b7239d1fe5954e0cc",
+    "pages/74_DTI_Validation_Evidence_Center.py": "a700a8a21649b49cf0e3a1521d2afad45039b83b767c2fe730b93fee7d4f7f11"
+  },
+  "module_results": {
+    "amr_surveillance": {
+      "extra_tables": [
+        "gene_species_matrix",
+        "phenotype_genotype_concordance",
+        "temporal_resistance_trends"
+      ],
+      "input_rows": 120,
+      "result_rows": 120,
+      "visuals": [
+        "Genotype\u2013phenotype concordance",
+        "Species\u2013AMR gene resistance map",
+        "Regional resistance burden",
+        "Emerging lineage signals",
+        "Resistance trend timeline"
+      ]
+    },
+    "autonomous_lab_planner": {
+      "extra_tables": [
+        "design_matrix",
+        "resource_schedule",
+        "risk_register"
+      ],
+      "input_rows": 60,
+      "result_rows": 60,
+      "visuals": [
+        "Experiment cost and design completeness",
+        "Factor\u2013level cost matrix",
+        "Hypothesis-level resource plan",
+        "Experiment execution priority",
+        "Estimated laboratory schedule"
+      ]
+    },
+    "biomedical_foundation_model_hub": {
+      "extra_tables": [
+        "hardware_compatibility",
+        "licence_review_matrix",
+        "modality_task_coverage"
+      ],
+      "input_rows": 60,
+      "result_rows": 60,
+      "visuals": [
+        "Performance versus model scale",
+        "Modality\u2013task benchmark coverage",
+        "Licence and modality portfolio",
+        "Benchmark and operational readiness",
+        "Deployment-ready model ranking"
+      ]
+    },
+    "cell_therapy_cart": {
+      "extra_tables": [
+        "antigen_domain_matrix",
+        "construct_score_components"
+      ],
+      "input_rows": 60,
+      "result_rows": 60,
+      "visuals": [
+        "CAR safety and exhaustion landscape",
+        "Top CAR construct profiles",
+        "Antigen\u2013costimulatory domain matrix",
+        "Affinity\u2013manufacturability trade-off",
+        "CAR construct ranking"
+      ]
+    },
+    "clinical_biomarker_survival": {
+      "extra_tables": [
+        "event_rate_summary",
+        "kaplan_meier_curves",
+        "patient_risk_waterfall"
+      ],
+      "input_rows": 120,
+      "result_rows": 4,
+      "visuals": [
+        "Biomarker-stratified survival",
+        "Patient biomarker and follow-up",
+        "Response by biomarker stratum",
+        "Site heterogeneity",
+        "Patient biomarker waterfall"
+      ]
+    },
+    "digital_pathology_foundation": {
+      "extra_tables": [
+        "scanner_site_drift",
+        "slide_tumour_heatmap",
+        "tile_level_qc"
+      ],
+      "input_rows": 120,
+      "result_rows": 10,
+      "visuals": [
+        "Slide tissue\u2013tumour landscape",
+        "Embedding stability by scanner",
+        "Tile-level tumour probability heatmap",
+        "Scanner and site drift review",
+        "Slide review priority"
+      ]
+    },
+    "federated_biomedical_ai": {
+      "extra_tables": [
+        "privacy_utility_frontier",
+        "site_outlier_review",
+        "site_round_metrics"
+      ],
+      "input_rows": 48,
+      "result_rows": 12,
+      "visuals": [
+        "Global federated performance",
+        "Privacy\u2013utility frontier",
+        "Site performance by round",
+        "Site performance and outliers",
+        "Federation drift trajectory"
+      ]
+    },
+    "gene_therapy_vector": {
+      "extra_tables": [
+        "construct_capacity",
+        "promoter_vector_matrix",
+        "safety_risk_register"
+      ],
+      "input_rows": 60,
+      "result_rows": 60,
+      "visuals": [
+        "Cargo-capacity landscape",
+        "Top vector construct profiles",
+        "Vector\u2013promoter safety matrix",
+        "Vector safety-risk map",
+        "Vector construct ranking"
+      ]
+    },
+    "long_read_epigenome": {
+      "extra_tables": [
+        "dmr_candidates",
+        "haplotype_imbalance",
+        "region_condition_matrix"
+      ],
+      "input_rows": 576,
+      "result_rows": 48,
+      "visuals": [
+        "Differential methylation volcano",
+        "Condition-by-region methylation map",
+        "Haplotype methylation distributions",
+        "Coverage versus methylation effect",
+        "Allelic methylation imbalance"
+      ]
+    },
+    "pangenome_population_medicine": {
+      "extra_tables": [
+        "population_allele_matrix",
+        "reference_bias_audit"
+      ],
+      "input_rows": 120,
+      "result_rows": 120,
+      "visuals": [
+        "Population allele-frequency matrix",
+        "Reference bias versus population specificity",
+        "Population reference-bias burden",
+        "Population path-bias map",
+        "Population-specific variant ranking"
+      ]
+    },
+    "pharmacovigilance_intelligence": {
+      "extra_tables": [
+        "drug_event_matrix",
+        "serious_outcome_summary"
+      ],
+      "input_rows": 240,
+      "result_rows": 30,
+      "visuals": [
+        "Disproportionality signal landscape",
+        "Drug\u2013event information component",
+        "Signal strength and seriousness",
+        "Safety outcomes by drug",
+        "Safety-signal review queue"
+      ]
+    },
+    "protein_ligand_codesign": {
+      "extra_tables": [
+        "pareto_candidates",
+        "score_components",
+        "variant_ligand_matrix"
+      ],
+      "input_rows": 120,
+      "result_rows": 120,
+      "visuals": [
+        "Protein\u2013ligand objective space",
+        "Interface quality and selectivity risk",
+        "Protein variant\u2013ligand score matrix",
+        "Top co-design candidate profiles",
+        "Co-design candidate ranking"
+      ]
+    },
+    "single_cell_long_read_isoforms": {
+      "extra_tables": [
+        "dominant_isoforms",
+        "isoform_usage_matrix",
+        "junction_support_qc"
+      ],
+      "input_rows": 1920,
+      "result_rows": 128,
+      "visuals": [
+        "Isoform usage and support",
+        "Cluster-specific isoform usage",
+        "Full-length transcript support",
+        "Dominant isoform-switch candidates",
+        "Junction and UMI evidence"
+      ]
+    },
+    "spatial_medicine_tme": {
+      "extra_tables": [
+        "compartment_composition",
+        "gene_region_expression",
+        "spatial_points"
+      ],
+      "input_rows": 120,
+      "result_rows": 15,
+      "visuals": [
+        "Spatial tumour microenvironment map",
+        "Immune\u2013tumour compartment balance",
+        "Regional expression programme",
+        "Immune-exclusion priorities",
+        "Cell-type expression context"
+      ]
+    },
+    "synthetic_cohort_trial": {
+      "extra_tables": [
+        "covariate_balance",
+        "kaplan_meier_curves",
+        "patient_level_simulation"
+      ],
+      "input_rows": 180,
+      "result_rows": 2,
+      "visuals": [
+        "Simulated arm survival",
+        "Baseline risk and simulated outcomes",
+        "Covariate balance Love plot",
+        "Site-by-arm outcome map",
+        "Arm balance and outcome summary"
+      ]
+    }
+  },
+  "passed": true,
+  "schema": "biointel.step129.verification.v1",
+  "version": "13.0.0"
+}

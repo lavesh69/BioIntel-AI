@@ -1,0 +1,51 @@
+{
+  "schema": "biointel.step106.ui-workbench-audit.v1",
+  "version": "10.6.0",
+  "scope": {
+    "application_screens": 165,
+    "multipage_modules": 164,
+    "scientific_workbenches_refactored": 35,
+    "platform_pages_refined": 15,
+    "heavy_legacy_workspaces_restructured": 3
+  },
+  "upload": {
+    "transport_limit_mb": 1024,
+    "interactive_threshold_mb": 100,
+    "large_file_mode": "disk-backed staging plus persistent background job",
+    "staging_handler_test": "passed"
+  },
+  "runtime": {
+    "expansion_pages_default_load": "52/52",
+    "scientific_demo_run": "35/35",
+    "home_and_legacy_targeted_default_load": "4/4",
+    "captured_runtime_exceptions": 0,
+    "captured_ui_errors": 0
+  },
+  "tests": {
+    "focused_and_release_tests": 69,
+    "step106_specific_tests": 7,
+    "self_test": "7/7 passed with source/build runtime allowance",
+    "python_compileall": "passed",
+    "ruff": "not available in the build environment; no pass claim made"
+  },
+  "implemented": [
+    "compact scientific module header and expandable evidence boundary",
+    "single authoritative uploader component with readable contrast and wrapped format support",
+    "conditional upload/demo controls with upload mode default in the 35 shared-renderer modules",
+    "module-specific required-schema mapping and data-readiness checks",
+    "explicit run analysis action and session-cached result state",
+    "outdated-result detection after input or parameter changes",
+    "domain-specific scientific charts for the 35 workbenches",
+    "filterable/selectable result tables and consolidated ZIP exports",
+    "large-file staging with streamed hash and bounded sample inspection",
+    "focus-area navigation grouping and disambiguated platform service names",
+    "five-stage grouped results in Metagenomics and Discovery Command Center",
+    "selector-based dataset detail inspection in Dataset Registry",
+    "Windows stale PID liveness repair retained"
+  ],
+  "boundaries": [
+    "Files above 100 MB are accepted by the 1 GB transport boundary but are not parsed fully in the interactive Streamlit process.",
+    "External engines and clinical databases remain separately installed and independently validated requirements.",
+    "Runtime coverage targets the 52 expansion pages, all 35 demonstration analyses, Home, and three highest-risk legacy workspaces; it is not a claim that every possible control path on all 165 screens was browser-automated."
+  ]
+}

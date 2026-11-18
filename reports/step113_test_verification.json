@@ -1,0 +1,15 @@
+{
+  "schema": "biointel.step113.test-verification.v1",
+  "version": "11.3.0",
+  "selected_regression_tests_passed": 104,
+  "historical_stability_windows_tests_passed": 58,
+  "total_non_overlapping_selected_tests_passed": 162,
+  "focused_step113_tests": 6,
+  "static_streamlit_pages_passed": 169,
+  "runtime_streamlit_pages_passed": 6,
+  "runtime_exceptions": 0,
+  "notes": [
+    "The monolithic historical suite was not claimed because it exceeds the available runner window.",
+    "Selected groups were non-overlapping and completed successfully."
+  ]
+}

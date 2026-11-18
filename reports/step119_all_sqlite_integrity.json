@@ -1,0 +1,262 @@
+{
+  "schema": "biointel.step119.sqlite-integrity.v1",
+  "version": "11.9.0",
+  "status": "PASS",
+  "healthy": 36,
+  "total": 36,
+  "rows_checked": 108077,
+  "databases": [
+    {
+      "path": "data/clinical_pharma/clinical_validation.sqlite3",
+      "status": "PASS",
+      "integrity": "ok",
+      "tables": 13,
+      "rows": 0
+    },
+    {
+      "path": "data/discovery_projects.sqlite3",
+      "status": "PASS",
+      "integrity": "ok",
+      "tables": 7,
+      "rows": 0
+    },
+    {
+      "path": "data/lab_analytics.sqlite3",
+      "status": "PASS",
+      "integrity": "ok",
+      "tables": 3,
+      "rows": 0
+    },
+    {
+      "path": "data/reference_assets/reference_assets.sqlite3",
+      "status": "PASS",
+      "integrity": "ok",
+      "tables": 2,
+      "rows": 0
+    },
+    {
+      "path": "reports/analytics.sqlite3",
+      "status": "PASS",
+      "integrity": "ok",
+      "tables": 5,
+      "rows": 17690
+    },
+    {
+      "path": "reports/api_security.sqlite3",
+      "status": "PASS",
+      "integrity": "ok",
+      "tables": 5,
+      "rows": 1298
+    },
+    {
+      "path": "reports/assets.sqlite3",
+      "status": "PASS",
+      "integrity": "ok",
+      "tables": 11,
+      "rows": 20547
+    },
+    {
+      "path": "reports/batch_jobs/batch_prediction_sample_250.sqlite3",
+      "status": "PASS",
+      "integrity": "ok",
+      "tables": 1,
+      "rows": 0
+    },
+    {
+      "path": "reports/biotechnology_project_runs.sqlite3",
+      "status": "PASS",
+      "integrity": "ok",
+      "tables": 2,
+      "rows": 0
+    },
+    {
+      "path": "reports/connected_sources.sqlite3",
+      "status": "PASS",
+      "integrity": "ok",
+      "tables": 4,
+      "rows": 0
+    },
+    {
+      "path": "reports/datasets.sqlite3",
+      "status": "PASS",
+      "integrity": "ok",
+      "tables": 13,
+      "rows": 5188
+    },
+    {
+      "path": "reports/document_history.sqlite3",
+      "status": "PASS",
+      "integrity": "ok",
+      "tables": 14,
+      "rows": 1973
+    },
+    {
+      "path": "reports/evidence.sqlite3",
+      "status": "PASS",
+      "integrity": "ok",
+      "tables": 10,
+      "rows": 3891
+    },
+    {
+      "path": "reports/experiments.sqlite3",
+      "status": "PASS",
+      "integrity": "ok",
+      "tables": 9,
+      "rows": 783
+    },
+    {
+      "path": "reports/feature_cache.sqlite3",
+      "status": "PASS",
+      "integrity": "ok",
+      "tables": 2,
+      "rows": 1293
+    },
+    {
+      "path": "reports/internet_downloads.sqlite3",
+      "status": "PASS",
+      "integrity": "ok",
+      "tables": 5,
+      "rows": 105
+    },
+    {
+      "path": "reports/jobs.sqlite3",
+      "status": "PASS",
+      "integrity": "ok",
+      "tables": 6,
+      "rows": 951
+    },
+    {
+      "path": "reports/knowledge.sqlite3",
+      "status": "PASS",
+      "integrity": "ok",
+      "tables": 10,
+      "rows": 38427
+    },
+    {
+      "path": "reports/performance.sqlite3",
+      "status": "PASS",
+      "integrity": "ok",
+      "tables": 1,
+      "rows": 0
+    },
+    {
+      "path": "reports/projects.sqlite3",
+      "status": "PASS",
+      "integrity": "ok",
+      "tables": 7,
+      "rows": 688
+    },
+    {
+      "path": "reports/prospective_validation.sqlite3",
+      "status": "PASS",
+      "integrity": "ok",
+      "tables": 4,
+      "rows": 0
+    },
+    {
+      "path": "reports/realworld_evidence.sqlite3",
+      "status": "PASS",
+      "integrity": "ok",
+      "tables": 6,
+      "rows": 16
+    },
+    {
+      "path": "reports/relationships.sqlite3",
+      "status": "PASS",
+      "integrity": "ok",
+      "tables": 4,
+      "rows": 2291
+    },
+    {
+      "path": "reports/scientific_evidence.sqlite3",
+      "status": "PASS",
+      "integrity": "ok",
+      "tables": 5,
+      "rows": 12903
+    },
+    {
+      "path": "reports/step103_lims.sqlite3",
+      "status": "PASS",
+      "integrity": "ok",
+      "tables": 2,
+      "rows": 0
+    },
+    {
+      "path": "reports/step95_quality10_self_test/self_test_registry.sqlite3",
+      "status": "PASS",
+      "integrity": "ok",
+      "tables": 4,
+      "rows": 14
+    },
+    {
+      "path": "reports/tenants.sqlite3",
+      "status": "PASS",
+      "integrity": "ok",
+      "tables": 4,
+      "rows": 3
+    },
+    {
+      "path": "reports/validation_evidence.sqlite3",
+      "status": "PASS",
+      "integrity": "ok",
+      "tables": 8,
+      "rows": 12
+    },
+    {
+      "path": "reports/viewer_sync.sqlite3",
+      "status": "PASS",
+      "integrity": "ok",
+      "tables": 2,
+      "rows": 0
+    },
+    {
+      "path": "reports/workflow_automation.sqlite3",
+      "status": "PASS",
+      "integrity": "ok",
+      "tables": 4,
+      "rows": 4
+    },
+    {
+      "path": "workspace/quality10/workflow_runs.sqlite3",
+      "status": "PASS",
+      "integrity": "ok",
+      "tables": 4,
+      "rows": 0
+    },
+    {
+      "path": "workspace/reference_lifecycle/reference_lifecycle.sqlite3",
+      "status": "PASS",
+      "integrity": "ok",
+      "tables": 3,
+      "rows": 0
+    },
+    {
+      "path": "workspace/step104/jobs.sqlite3",
+      "status": "PASS",
+      "integrity": "ok",
+      "tables": 6,
+      "rows": 0
+    },
+    {
+      "path": "workspace/step104/platform.sqlite3",
+      "status": "PASS",
+      "integrity": "ok",
+      "tables": 17,
+      "rows": 0
+    },
+    {
+      "path": "workspace/visual_workspace.sqlite3",
+      "status": "PASS",
+      "integrity": "ok",
+      "tables": 3,
+      "rows": 0
+    },
+    {
+      "path": "workspace/workflow_runs/workflow_runs.sqlite3",
+      "status": "PASS",
+      "integrity": "ok",
+      "tables": 4,
+      "rows": 0
+    }
+  ]
+}

@@ -1,0 +1,329 @@
+{
+  "database_count": 36,
+  "healthy": 36,
+  "total_rows": 108425,
+  "databases": [
+    {
+      "path": "data/clinical_pharma/clinical_validation.sqlite3",
+      "integrity": "ok",
+      "foreign_key_issues": 0,
+      "tables": 13,
+      "rows": 0,
+      "size_bytes": 188416
+    },
+    {
+      "path": "data/discovery_projects.sqlite3",
+      "integrity": "ok",
+      "foreign_key_issues": 0,
+      "tables": 7,
+      "rows": 0,
+      "size_bytes": 102400
+    },
+    {
+      "path": "data/lab_analytics.sqlite3",
+      "integrity": "ok",
+      "foreign_key_issues": 0,
+      "tables": 3,
+      "rows": 0,
+      "size_bytes": 36864
+    },
+    {
+      "path": "data/reference_assets/reference_assets.sqlite3",
+      "integrity": "ok",
+      "foreign_key_issues": 0,
+      "tables": 2,
+      "rows": 0,
+      "size_bytes": 24576
+    },
+    {
+      "path": "reports/analytics.sqlite3",
+      "integrity": "ok",
+      "foreign_key_issues": 0,
+      "tables": 5,
+      "rows": 17690,
+      "size_bytes": 6451200
+    },
+    {
+      "path": "reports/api_security.sqlite3",
+      "integrity": "ok",
+      "foreign_key_issues": 0,
+      "tables": 5,
+      "rows": 1611,
+      "size_bytes": 557056
+    },
+    {
+      "path": "reports/assets.sqlite3",
+      "integrity": "ok",
+      "foreign_key_issues": 0,
+      "tables": 11,
+      "rows": 20547,
+      "size_bytes": 5410816
+    },
+    {
+      "path": "reports/batch_jobs/batch_prediction_sample_250.sqlite3",
+      "integrity": "ok",
+      "foreign_key_issues": 0,
+      "tables": 1,
+      "rows": 0,
+      "size_bytes": 16384
+    },
+    {
+      "path": "reports/biotechnology_project_runs.sqlite3",
+      "integrity": "ok",
+      "foreign_key_issues": 0,
+      "tables": 2,
+      "rows": 0,
+      "size_bytes": 28672
+    },
+    {
+      "path": "reports/connected_sources.sqlite3",
+      "integrity": "ok",
+      "foreign_key_issues": 0,
+      "tables": 4,
+      "rows": 0,
+      "size_bytes": 45056
+    },
+    {
+      "path": "reports/datasets.sqlite3",
+      "integrity": "ok",
+      "foreign_key_issues": 0,
+      "tables": 13,
+      "rows": 5188,
+      "size_bytes": 2150400
+    },
+    {
+      "path": "reports/document_history.sqlite3",
+      "integrity": "ok",
+      "foreign_key_issues": 0,
+      "tables": 14,
+      "rows": 1973,
+      "size_bytes": 1085440
+    },
+    {
+      "path": "reports/evidence.sqlite3",
+      "integrity": "ok",
+      "foreign_key_issues": 0,
+      "tables": 10,
+      "rows": 3891,
+      "size_bytes": 2678784
+    },
+    {
+      "path": "reports/experiments.sqlite3",
+      "integrity": "ok",
+      "foreign_key_issues": 0,
+      "tables": 9,
+      "rows": 783,
+      "size_bytes": 626688
+    },
+    {
+      "path": "reports/feature_cache.sqlite3",
+      "integrity": "ok",
+      "foreign_key_issues": 0,
+      "tables": 2,
+      "rows": 1293,
+      "size_bytes": 2777088
+    },
+    {
+      "path": "reports/internet_downloads.sqlite3",
+      "integrity": "ok",
+      "foreign_key_issues": 0,
+      "tables": 5,
+      "rows": 105,
+      "size_bytes": 208896
+    },
+    {
+      "path": "reports/jobs.sqlite3",
+      "integrity": "ok",
+      "foreign_key_issues": 0,
+      "tables": 6,
+      "rows": 981,
+      "size_bytes": 380928
+    },
+    {
+      "path": "reports/knowledge.sqlite3",
+      "integrity": "ok",
+      "foreign_key_issues": 0,
+      "tables": 10,
+      "rows": 38427,
+      "size_bytes": 17215488
+    },
+    {
+      "path": "reports/performance.sqlite3",
+      "integrity": "ok",
+      "foreign_key_issues": 0,
+      "tables": 1,
+      "rows": 0,
+      "size_bytes": 16384
+    },
+    {
+      "path": "reports/projects.sqlite3",
+      "integrity": "ok",
+      "foreign_key_issues": 0,
+      "tables": 7,
+      "rows": 688,
+      "size_bytes": 524288
+    },
+    {
+      "path": "reports/prospective_validation.sqlite3",
+      "integrity": "ok",
+      "foreign_key_issues": 0,
+      "tables": 4,
+      "rows": 0,
+      "size_bytes": 36864
+    },
+    {
+      "path": "reports/realworld_evidence.sqlite3",
+      "integrity": "ok",
+      "foreign_key_issues": 0,
+      "tables": 6,
+      "rows": 21,
+      "size_bytes": 65536
+    },
+    {
+      "path": "reports/relationships.sqlite3",
+      "integrity": "ok",
+      "foreign_key_issues": 0,
+      "tables": 4,
+      "rows": 2291,
+      "size_bytes": 1159168
+    },
+    {
+      "path": "reports/scientific_evidence.sqlite3",
+      "integrity": "ok",
+      "foreign_key_issues": 0,
+      "tables": 5,
+      "rows": 12903,
+      "size_bytes": 16773120
+    },
+    {
+      "path": "reports/step103_lims.sqlite3",
+      "integrity": "ok",
+      "foreign_key_issues": 0,
+      "tables": 2,
+      "rows": 0,
+      "size_bytes": 20480
+    },
+    {
+      "path": "reports/step95_quality10_self_test/self_test_registry.sqlite3",
+      "integrity": "ok",
+      "foreign_key_issues": 0,
+      "tables": 4,
+      "rows": 14,
+      "size_bytes": 49152
+    },
+    {
+      "path": "reports/tenants.sqlite3",
+      "integrity": "ok",
+      "foreign_key_issues": 0,
+      "tables": 4,
+      "rows": 3,
+      "size_bytes": 53248
+    },
+    {
+      "path": "reports/validation_evidence.sqlite3",
+      "integrity": "ok",
+      "foreign_key_issues": 0,
+      "tables": 8,
+      "rows": 12,
+      "size_bytes": 102400
+    },
+    {
+      "path": "reports/viewer_sync.sqlite3",
+      "integrity": "ok",
+      "foreign_key_issues": 0,
+      "tables": 2,
+      "rows": 0,
+      "size_bytes": 28672
+    },
+    {
+      "path": "reports/workflow_automation.sqlite3",
+      "integrity": "ok",
+      "foreign_key_issues": 0,
+      "tables": 4,
+      "rows": 4,
+      "size_bytes": 49152
+    },
+    {
+      "path": "workspace/quality10/workflow_runs.sqlite3",
+      "integrity": "ok",
+      "foreign_key_issues": 0,
+      "tables": 4,
+      "rows": 0,
+      "size_bytes": 49152
+    },
+    {
+      "path": "workspace/reference_lifecycle/reference_lifecycle.sqlite3",
+      "integrity": "ok",
+      "foreign_key_issues": 0,
+      "tables": 3,
+      "rows": 0,
+      "size_bytes": 40960
+    },
+    {
+      "path": "workspace/step104/jobs.sqlite3",
+      "integrity": "ok",
+      "foreign_key_issues": 0,
+      "tables": 6,
+      "rows": 0,
+      "size_bytes": 90112
+    },
+    {
+      "path": "workspace/step104/platform.sqlite3",
+      "integrity": "ok",
+      "foreign_key_issues": 0,
+      "tables": 17,
+      "rows": 0,
+      "size_bytes": 212992
+    },
+    {
+      "path": "workspace/visual_workspace.sqlite3",
+      "integrity": "ok",
+      "foreign_key_issues": 0,
+      "tables": 3,
+      "rows": 0,
+      "size_bytes": 36864
+    },
+    {
+      "path": "workspace/workflow_runs/workflow_runs.sqlite3",
+      "integrity": "ok",
+      "foreign_key_issues": 0,
+      "tables": 4,
+      "rows": 0,
+      "size_bytes": 49152
+    }
+  ],
+  "baseline_database_hashes_unchanged": true,
+  "changed_databases": [],
+  "locked_modules": [
+    {
+      "path": "pages/6_DTI_Predictor.py",
+      "expected_sha256": "84b3ecec1356b7239a057459210af4cd130c57c08dd9449b7239d1fe5954e0cc",
+      "actual_sha256": "84b3ecec1356b7239a057459210af4cd130c57c08dd9449b7239d1fe5954e0cc",
+      "byte_identical": true
+    },
+    {
+      "path": "pages/74_DTI_Validation_Evidence_Center.py",
+      "expected_sha256": "a700a8a21649b49cf0e3a1521d2afad45039b83b767c2fe730b93fee7d4f7f11",
+      "actual_sha256": "a700a8a21649b49cf0e3a1521d2afad45039b83b767c2fe730b93fee7d4f7f11",
+      "byte_identical": true
+    },
+    {
+      "path": "pages/109_Lab_Instrument_Import_Center.py",
+      "expected_sha256": "22b5aba5bfea37bb1ef330ed7cca3773467463f883189602d96a0151311c8f70",
+      "actual_sha256": "22b5aba5bfea37bb1ef330ed7cca3773467463f883189602d96a0151311c8f70",
+      "byte_identical": true
+    },
+    {
+      "path": "pages/126_LIMS_ELN_and_Sample_Chain_of_Custody_Hub.py",
+      "expected_sha256": "eadaef1a283a5fa11ce6b243aa561508ba9ceba9f6fdcc207f4853ccf7d86905",
+      "actual_sha256": "eadaef1a283a5fa11ce6b243aa561508ba9ceba9f6fdcc207f4853ccf7d86905",
+      "byte_identical": true
+    },
+    {
+      "path": "pages/157_Instrument_Integration_Hub_2.py",
+      "expected_sha256": "cf3a5f94756def0007dbff31184ec276d90b03fc6d6e1ca792c87189e5ab7d6d",
+      "actual_sha256": "cf3a5f94756def0007dbff31184ec276d90b03fc6d6e1ca792c87189e5ab7d6d",
+      "byte_identical": true
+    }
+  ]
+}
