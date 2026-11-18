@@ -1,0 +1,37 @@
+{
+  "schema": "biointel.step177.21-module-contract.v1",
+  "module_key": "cell_atlas_mapping",
+  "module_title": "Cell Atlas Mapping",
+  "workflow": [
+    "Query dataset QC and feature harmonisation",
+    "Reference atlas identity and ontology alignment",
+    "Label transfer with uncertainty estimation",
+    "Novel/out-of-distribution state detection",
+    "Biological review and atlas-versioned export"
+  ],
+  "quality_gates": [
+    "Reference atlas release pinned",
+    "Cell ontology mapping validated",
+    "Batch/confounder assessment complete",
+    "Uncertainty and OOD thresholds locked",
+    "Known marker concordance reviewed",
+    "Independent tissue/site cohort passed"
+  ],
+  "required_outputs": [
+    "Mapping QC",
+    "Cell label probability table",
+    "OOD/novel-state report",
+    "Marker concordance views",
+    "Atlas release gate"
+  ],
+  "boundary": "Transferred cell labels are hypotheses and require marker, tissue-context and expert confirmation.",
+  "model_assets": [
+    "reference-label-transfer-model",
+    "ood-detector",
+    "marker-classifier"
+  ],
+  "cohort_assets": [
+    "cell_atlas_mapping-development-cohort",
+    "cell_atlas_mapping-independent-external-cohort"
+  ]
+}

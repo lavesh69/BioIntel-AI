@@ -1,0 +1,150 @@
+{
+  "schema": "biointel.step174.phase-catalog.v1",
+  "phases": [
+    {
+      "phase_number": 1,
+      "phase_key": "physical_scientific_environment",
+      "title": "Physical scientific environment qualification",
+      "objective": "Qualify the actual Windows workstation, WSL2 runtime, GPU, storage, recovery behaviour, antivirus compatibility and instrument-connected site where applicable.",
+      "software_automation": "System probe, disk/RAM/GPU inventory, large-file integrity, recovery probe, immutable report and target-machine boundary checks.",
+      "external_evidence_required": [
+        "Target Windows machine report",
+        "GPU/driver report where applicable",
+        "Antivirus, sleep/resume and network-loss results",
+        "Instrument/site IQ-OQ-PQ and calibration records where applicable"
+      ],
+      "completion_rule": "Every required physical-machine, GPU, site and instrument control must pass on the actual target environment.",
+      "default_command": "RUN_STEP174_LOCAL_ENVIRONMENT_QUALIFICATION_WINDOWS.bat"
+    },
+    {
+      "phase_number": 2,
+      "phase_key": "specialist_engine_qualification",
+      "title": "Specialist engine installation and qualification",
+      "objective": "Install and qualify every module-required scientific engine with pinned version, licence, executable hash and golden-fixture smoke test.",
+      "software_automation": "Step 170 WSL2/micromamba provisioning, manual-provider intake, version capture, executable SHA-256, smoke tests and registry updates.",
+      "external_evidence_required": [
+        "Installed executable or provider package",
+        "Licence acceptance",
+        "Version and executable SHA-256",
+        "Golden fixture and integration result"
+      ],
+      "completion_rule": "All engines required by the module must be qualified in the Step 170 registry.",
+      "default_command": "PROVISION_STEP170_SCIENTIFIC_RUNTIME_WINDOWS.bat --execute"
+    },
+    {
+      "phase_number": 3,
+      "phase_key": "production_reference_qualification",
+      "title": "Production reference database qualification",
+      "objective": "Acquire official production reference releases and verify release identity, licence, provider checksum, local SHA-256, schema, indexes and scientific review.",
+      "software_automation": "Resumable download/import, checksum verification, licence gates, schema/index validation, rollback and release lifecycle registry.",
+      "external_evidence_required": [
+        "Official provider release",
+        "Provider checksum and local SHA-256",
+        "Licence/permitted-use record",
+        "Schema, record-count and index validation",
+        "Scientific reviewer approval"
+      ],
+      "completion_rule": "All references required by the module must be qualified in the Step 170 registry.",
+      "default_command": "DOWNLOAD_STEP170_REFERENCE_DATABASES_WINDOWS.bat"
+    },
+    {
+      "phase_number": 4,
+      "phase_key": "authentic_models_and_real_cohorts",
+      "title": "Authentic task-specific models and real cohorts",
+      "objective": "Qualify task-matched model weights and real public, institutional or assay cohorts without synthetic or wrong-domain substitution.",
+      "software_automation": "Step 171 model-card, cohort, feature-schema, environment-lock, licence and cryptographic artifact verification.",
+      "external_evidence_required": [
+        "Authentic task-specific model artifact",
+        "Real cohort and metadata",
+        "Model card, training logs and environment lock",
+        "Model/cohort/feature SHA-256 records",
+        "Human-data authorization where applicable"
+      ],
+      "completion_rule": "Applicable modules require both a full task-specific domain model and a real public/official cohort; non-model modules are not applicable.",
+      "default_command": "python scripts\\step174_realworld_manager.py prepare-model-cohort --module MODULE_KEY"
+    },
+    {
+      "phase_number": 5,
+      "phase_key": "independent_benchmark_validation",
+      "title": "Independent locked benchmark validation",
+      "objective": "Run a pre-specified, checksum-locked and leakage-controlled evaluation on an untouched external site, temporal or study holdout.",
+      "software_automation": "Locked split manifests, per-sample prediction export, calibration, uncertainty, subgroup, applicability-domain and baseline comparison checks.",
+      "external_evidence_required": [
+        "Untouched independent holdout",
+        "Per-sample ground truth and predictions",
+        "Leakage and duplicate audit",
+        "Calibration and confidence intervals",
+        "Subgroup/applicability-domain analysis",
+        "Independent-site result"
+      ],
+      "completion_rule": "Applicable model modules must pass every Step 171 benchmark control and independent external-site validation.",
+      "default_command": "python scripts\\step174_realworld_manager.py prepare-benchmark --module MODULE_KEY"
+    },
+    {
+      "phase_number": 6,
+      "phase_key": "wetlab_prospective_orthogonal_confirmation",
+      "title": "Wet-lab, prospective and orthogonal confirmation",
+      "objective": "Confirm applicable module outputs using frozen protocols, blinded prospective execution, independent sites and orthogonal assays.",
+      "software_automation": "Step 172 evidence workspaces, hash-bound manifests, batch/control checks, protocol freeze, blinded outcome reconciliation and fail-closed evaluation.",
+      "external_evidence_required": [
+        "Locked protocol and acceptance thresholds",
+        "Raw evidence/data manifests",
+        "Wet-lab confirmation where required",
+        "Prospective confirmation where required",
+        "Orthogonal confirmation where required",
+        "Independent-site qualification"
+      ],
+      "completion_rule": "Every confirmation axis required by the module profile must be complete with verified artifacts.",
+      "default_command": "python scripts\\step172_evidence_manager.py prepare MODULE_KEY"
+    },
+    {
+      "phase_number": 7,
+      "phase_key": "cryptographic_expert_signoff",
+      "title": "Independent expert sign-off",
+      "objective": "Obtain qualified independent domain and QA review with conflict disclosure and cryptographically verifiable signatures.",
+      "software_automation": "Credential, conflict, review, public-key and detached-signature verification using SHA-256/OpenSSL.",
+      "external_evidence_required": [
+        "Expert credential artifact",
+        "Conflict-of-interest disclosure",
+        "Signed review report",
+        "Detached signature and public key",
+        "Explicit independent approval decision"
+      ],
+      "completion_rule": "The Step 172 expert-signoff gate must meet the module minimum with cryptographically verified independent approvals.",
+      "default_command": "python scripts\\step174_realworld_manager.py prepare-expert-kit --module MODULE_KEY"
+    },
+    {
+      "phase_number": 8,
+      "phase_key": "qualified_operating_history",
+      "title": "Qualified real-world operating history",
+      "objective": "Record enough genuine module runs, incidents, downtime, drift, recovery and corrective actions to demonstrate sustained operation.",
+      "software_automation": "Append-only run ledger, incident/CAPA templates, drift review and immutable history report verification.",
+      "external_evidence_required": [
+        "Minimum required qualified runs",
+        "Failure and downtime history",
+        "Incident and CAPA records",
+        "Drift review",
+        "Zero unresolved critical incidents"
+      ],
+      "completion_rule": "The module-specific minimum operating-run count, drift review and critical-incident controls must pass.",
+      "default_command": "python scripts\\step174_realworld_manager.py prepare-history --module MODULE_KEY"
+    },
+    {
+      "phase_number": 9,
+      "phase_key": "formal_release_committee_review",
+      "title": "Formal controlled-release review",
+      "objective": "Approve the exact evidence snapshot through an independent QA, domain-expert and product-owner release committee.",
+      "software_automation": "Quorum, intended-use, prohibited-use, residual-risk, signed decision, rollback and monitoring-plan verification.",
+      "external_evidence_required": [
+        "Release committee quorum",
+        "Independent QA approval",
+        "Domain-expert approval",
+        "Product-owner approval",
+        "Intended/prohibited use and residual-risk acceptance",
+        "Signed release decision and SHA-256"
+      ],
+      "completion_rule": "Formal release review and every upstream required gate must pass; averaging cannot override a failed gate.",
+      "default_command": "python scripts\\step174_realworld_manager.py prepare-release --module MODULE_KEY"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "schema": "biointel.step177.21-module-contract.v1",
+  "module_key": "pangenome_population_medicine",
+  "module_title": "Pangenome Population Medicine",
+  "workflow": [
+    "Cohort identity, ancestry and consent QC",
+    "Population graph construction/selection",
+    "Graph-based genotyping and annotation",
+    "Subgroup performance and equity analysis",
+    "Independent population replication"
+  ],
+  "quality_gates": [
+    "Consent/use restrictions recorded",
+    "Population representation documented",
+    "Graph/reference release pinned",
+    "Subgroup error rates reviewed",
+    "Clinical interpretation boundary enforced",
+    "Independent population cohort passed"
+  ],
+  "required_outputs": [
+    "Cohort/ancestry QC",
+    "Graph genotyping table",
+    "Subgroup performance report",
+    "Equity and limitation ledger",
+    "Release gate"
+  ],
+  "boundary": "Population graph results are cohort-dependent and are not clinical evidence without representative external validation.",
+  "model_assets": [
+    "population-graph-profile",
+    "graph-genotyping-model",
+    "subgroup-calibration-model"
+  ],
+  "cohort_assets": [
+    "pangenome_population_medicine-development-cohort",
+    "pangenome_population_medicine-independent-external-cohort"
+  ]
+}

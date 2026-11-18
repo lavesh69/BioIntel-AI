@@ -1,0 +1,37 @@
+{
+  "schema": "biointel.step177.21-module-contract.v1",
+  "module_key": "spatial_medicine_tme",
+  "module_title": "Spatial Medicine & Tumour Microenvironment",
+  "workflow": [
+    "Image/spot/cell QC and registration",
+    "Cell typing/deconvolution",
+    "Spatial neighbourhood and niche analysis",
+    "Clinical/omics integration with leakage control",
+    "Independent slide/site and pathology review"
+  ],
+  "quality_gates": [
+    "Tissue registration reviewed",
+    "Segmentation/deconvolution benchmark passed",
+    "Spatial autocorrelation model justified",
+    "Patient-level split enforced",
+    "Scanner/site drift assessed",
+    "Pathologist and external-site validation passed"
+  ],
+  "required_outputs": [
+    "Spatial QC",
+    "Cell/niche map",
+    "Neighbourhood statistics",
+    "Clinical integration report",
+    "Release gate"
+  ],
+  "boundary": "Spatial biomarkers require patient-level validation, pathology review and independent-site confirmation.",
+  "model_assets": [
+    "segmentation-deconvolution-model",
+    "spatial-niche-model",
+    "clinical-integration-model"
+  ],
+  "cohort_assets": [
+    "spatial_medicine_tme-development-cohort",
+    "spatial_medicine_tme-independent-external-cohort"
+  ]
+}

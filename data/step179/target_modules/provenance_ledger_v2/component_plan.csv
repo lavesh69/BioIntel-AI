@@ -1,0 +1,4 @@
+component,label,install_route,platform_target,smoke_test
+python:hashlib,SHA-256 hash chain,standard-library,Windows/Python,
+python:sqlite3,Immutable event registry,standard-library,Windows/Python,
+python:jsonschema,Ledger payload validation,pinned-python-venv,Windows/Python,

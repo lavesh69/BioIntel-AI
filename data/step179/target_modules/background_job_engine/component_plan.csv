@@ -1,0 +1,4 @@
+component,label,install_route,platform_target,smoke_test
+python:sqlite3,SQLite durable queue,standard-library,Windows/Python,
+python:psutil,Process supervision,pinned-python-venv,Windows/Python,
+python:hashlib,Artifact hashing,standard-library,Windows/Python,

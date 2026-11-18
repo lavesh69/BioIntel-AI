@@ -1,0 +1,16 @@
+{
+  "module_key": "data_lakehouse_v2",
+  "checks": {
+    "schema_valid": true,
+    "positive_fixture_deterministic": true,
+    "negative_fixture_rejected": true,
+    "corruption_fixture_rejected": true,
+    "recovery_or_rollback_passed": true,
+    "concurrency_safe": true,
+    "artifact_hash_verified": true,
+    "resource_limit_enforced": true,
+    "access_denial_enforced": true,
+    "schema_drift_detected": true,
+    "retention_rule_applied": true
+  }
+}

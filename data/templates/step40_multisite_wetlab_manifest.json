@@ -1,0 +1,37 @@
+{
+  "study": {
+    "study_id": "WETLAB-MULTISITE-REPLACE-ME",
+    "title": "Independent multi-site wet-lab replication",
+    "domain": "dti",
+    "study_type": "prospective_wetlab_validation",
+    "evidence_class": "wet_lab_multisite",
+    "status": "completed",
+    "sponsor_organization": "SPONSOR-ORG",
+    "coordinator_organization": "COORDINATOR-ORG",
+    "source_provider": "LAB-CONSORTIUM",
+    "training_provider": "TRAINING-DATA-PROVIDER",
+    "dataset_sha256": "REPLACE_WITH_64_HEX_SHA256",
+    "model_sha256": "REPLACE_WITH_64_HEX_SHA256",
+    "protocol_sha256": "REPLACE_WITH_64_HEX_SHA256",
+    "manifest_sha256": "REPLACE_WITH_64_HEX_SHA256",
+    "preregistered_at": "2026-01-01T00:00:00+00:00",
+    "locked_at": "2026-01-02T00:00:00+00:00",
+    "completed_at": "2026-06-01T00:00:00+00:00",
+    "blinded": true,
+    "analytical_only": false
+  },
+  "sites": [],
+  "outcomes": [],
+  "metrics": [
+    {"split_name": "multisite", "metric_name": "roc_auc", "metric_value": 0.0, "ci_lower": 0.0, "ci_upper": 0.0, "threshold": 0.75, "passed": false},
+    {"split_name": "multisite", "metric_name": "balanced_accuracy", "metric_value": 0.0, "ci_lower": 0.0, "ci_upper": 0.0, "threshold": 0.65, "passed": false},
+    {"split_name": "multisite", "metric_name": "ece", "metric_value": 1.0, "ci_lower": 0.0, "ci_upper": 1.0, "threshold": 0.10, "passed": false},
+    {"split_name": "multisite", "metric_name": "interval_coverage", "metric_value": 0.0, "ci_lower": 0.0, "ci_upper": 1.0, "threshold": 0.85, "passed": false},
+    {"split_name": "multisite", "metric_name": "site_effect", "metric_value": 1.0, "ci_lower": 0.0, "ci_upper": 1.0, "threshold": 0.10, "passed": false},
+    {"split_name": "multisite", "metric_name": "heterogeneity_i2", "metric_value": 1.0, "ci_lower": 0.0, "ci_upper": 1.0, "threshold": 0.50, "passed": false}
+  ],
+  "reviews": [],
+  "metadata": {
+    "instructions": "Add at least three sponsor-independent organizations across two countries, 100+ blinded outcomes, immutable raw artifacts and an independent signed approved review."
+  }
+}

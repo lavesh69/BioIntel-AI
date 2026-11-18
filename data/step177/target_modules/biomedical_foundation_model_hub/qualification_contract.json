@@ -1,0 +1,37 @@
+{
+  "schema": "biointel.step177.21-module-contract.v1",
+  "module_key": "biomedical_foundation_model_hub",
+  "module_title": "Biomedical Foundation Model Hub",
+  "workflow": [
+    "Model package and tokenizer identity validation",
+    "Embedding/inference compatibility assessment",
+    "Task-specific benchmark execution",
+    "Calibration, subgroup and robustness analysis",
+    "Governed registry promotion and rollback"
+  ],
+  "quality_gates": [
+    "Weights and tokenizer hashes verified",
+    "Training/source provenance recorded",
+    "Licence and intended-use constraints accepted",
+    "Leakage and memorisation audit complete",
+    "Calibration and subgroup analysis complete",
+    "Independent-site benchmark reviewed"
+  ],
+  "required_outputs": [
+    "Model identity card",
+    "Compatibility matrix",
+    "Benchmark scorecard",
+    "Bias and calibration report",
+    "Promotion/rollback decision"
+  ],
+  "boundary": "Foundation-model outputs remain research support until task-specific external validation, expert review and controlled release are complete.",
+  "model_assets": [
+    "primary-foundation-model",
+    "task-embedding-model",
+    "tokenizer-and-preprocessor"
+  ],
+  "cohort_assets": [
+    "biomedical_foundation_model_hub-development-cohort",
+    "biomedical_foundation_model_hub-independent-external-cohort"
+  ]
+}

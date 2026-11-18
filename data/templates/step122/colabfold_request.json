@@ -1,0 +1,17 @@
+{
+  "schema": "biointel.step122.protein_design_request.v1",
+  "backend": "colabfold_batch",
+  "workspace": "workspace/protein_design_runs",
+  "run_name": "colabfold-validation",
+  "input_path": "C:/BioIntelInput/candidates.fasta",
+  "parameters": {
+    "num_models": 3,
+    "num_recycles": 3,
+    "amber_relax": false,
+    "use_templates": false,
+    "seed": 42,
+    "threads": 8
+  },
+  "timeout_hours": 48,
+  "dry_run": true
+}

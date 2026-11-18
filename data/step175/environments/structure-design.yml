@@ -1,0 +1,13 @@
+name: biointel175-structure-design
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python=3.11
+  - pip
+  - colabfold
+  - gromacs
+  - openmm
+  - vina
+  - pip:
+      - openmm

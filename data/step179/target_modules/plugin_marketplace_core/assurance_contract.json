@@ -1,0 +1,74 @@
+{
+  "schema": "biointel.step179.18-platform-core-assurance.v1",
+  "module_key": "plugin_marketplace_core",
+  "module_title": "Plugin Marketplace Core",
+  "baseline_rating": 7.5,
+  "internal_after_rating": 10.0,
+  "focus": "disabled-by-default signed plugin intake with permission isolation and rollback",
+  "workflow": [
+    "Lock the intended platform use and acceptance criteria for disabled-by-default signed plugin intake with permission isolation and rollback",
+    "Validate input identity, permissions, schema, versions and SHA-256 lineage before execution",
+    "Execute deterministic positive, negative, corruption, recovery and scale fixtures in an isolated workspace",
+    "Verify security boundaries, least privilege, fail-closed behaviour and rollback paths",
+    "Run reliability, performance, concurrency and reproducibility checks with pinned dependencies",
+    "Export a signed qualification bundle and activate monitoring only after formal review"
+  ],
+  "reliability_gates": [
+    "All mandatory contracts and schemas validate",
+    "Positive golden fixture produces deterministic expected output",
+    "Negative and corruption fixtures are rejected safely",
+    "Retry, recovery or rollback path is exercised",
+    "Concurrent execution does not corrupt shared state",
+    "Output artifacts are complete and SHA-256 verified",
+    "A second run is reproducible or explains approved nondeterminism",
+    "Resource limits and timeout behaviour are enforced"
+  ],
+  "security_gates": [
+    "Least-privilege permissions are enforced",
+    "Unsafe paths, commands and payloads are blocked",
+    "Secrets and sensitive content are excluded from logs and exports",
+    "Tampering or signature mismatch produces a fail-closed decision",
+    "Audit events contain actor, timestamp, version and decision provenance",
+    "Rollback cannot silently discard evidence"
+  ],
+  "acceptance_criteria": [
+    "No critical integrity, security or provenance failure",
+    "All required runtime components and policy references are qualified",
+    "All deterministic golden and adverse fixtures pass",
+    "Recovery, rollback and concurrency tests pass",
+    "Monitoring thresholds and ownership are approved",
+    "Independent Windows qualification and formal release review are complete for controlled release"
+  ],
+  "required_outputs": [
+    "Locked platform assurance contract",
+    "Runtime and dependency bill of materials",
+    "Policy/reference qualification matrix",
+    "Golden and adverse fixture results",
+    "Security and rollback evidence",
+    "Monitoring and release decision bundle"
+  ],
+  "risk_controls": [
+    "unsigned publisher",
+    "archive path traversal",
+    "excessive permission",
+    "dependency confusion",
+    "uncontrolled plugin execution"
+  ],
+  "monitoring_metrics": [
+    "signature rejection rate",
+    "permission escalation attempts",
+    "sandbox violations",
+    "rollback success"
+  ],
+  "boundary": "Plugin Marketplace Core is internally qualified as a software/platform capability only. Controlled production release remains fail-closed until independent Windows execution, security/accessibility review, operating history and formal approval are attached.",
+  "validation_fixtures": [
+    "valid-signed-plugin-fixture",
+    "path-traversal-plugin-fixture",
+    "overprivileged-plugin-fixture"
+  ],
+  "governance_assets": [
+    "plugin-marketplace-core-risk-register",
+    "plugin-marketplace-core-acceptance-plan",
+    "plugin-marketplace-core-monitoring-rollback-plan"
+  ]
+}

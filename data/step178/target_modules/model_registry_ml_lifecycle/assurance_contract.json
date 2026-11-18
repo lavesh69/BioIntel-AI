@@ -1,0 +1,70 @@
+{
+  "schema": "biointel.step178.19-module-assurance-contract.v1",
+  "module_key": "model_registry_ml_lifecycle",
+  "module_title": "Model Registry & ML Lifecycle",
+  "baseline_rating": 6.07,
+  "internal_after_rating": 10.0,
+  "evidence_class": "ml-lifecycle",
+  "workflow": [
+    "Lock the intended use, approved model version for a bounded environment and analysis population",
+    "Validate source identity, permissions, schema, units, lineage and missingness",
+    "Execute reproducible model registry, promotion, monitoring and rollback governance with pinned code, models, references and deterministic parameters",
+    "Run leakage, calibration, subgroup, robustness and sensitivity analyses",
+    "Validate on an independent temporal, site, instrument, process or prospective evidence set",
+    "Complete expert review, signed release decision, rollback rehearsal and monitoring activation"
+  ],
+  "quality_gates": [
+    "Intended use, endpoint and acceptance criteria approved before analysis",
+    "Input permissions, provenance, schema, units and checksums verified",
+    "Code, environment, engine, reference and model versions pinned",
+    "Code, data, environment and model hashes are immutable",
+    "Promotion requires independent validation and signed approval",
+    "Shadow/canary checks and rollback drills are recorded",
+    "Performance, calibration, fairness and data drift monitoring are active",
+    "Independent evidence, expert sign-off and formal release review complete"
+  ],
+  "acceptance_criteria": [
+    "No critical data-integrity or provenance failure",
+    "All mandatory runtime/reference/model/cohort assets qualified",
+    "Prespecified primary performance and uncertainty criteria passed",
+    "Calibration, subgroup and robustness thresholds passed",
+    "Independent evidence meets the locked acceptance plan",
+    "Rollback and post-release monitoring are tested and approved"
+  ],
+  "required_outputs": [
+    "Versioned model and dataset cards",
+    "Reproducible build manifest",
+    "Promotion evidence package",
+    "Shadow/canary validation",
+    "Monitoring and incident plan",
+    "Lifecycle release decision"
+  ],
+  "risk_controls": [
+    "untracked model change",
+    "training-serving skew",
+    "silent degradation",
+    "rollback failure",
+    "approval bypass"
+  ],
+  "monitoring_metrics": [
+    "model/data hash mismatch",
+    "prediction drift",
+    "calibration/fairness drift",
+    "rollback readiness"
+  ],
+  "boundary": "Model Registry & ML Lifecycle outputs remain research or operational decision support until the module-specific independent evidence, domain-expert review, applicable privacy/safety/clinical controls and formal controlled-release approval are complete.",
+  "model_assets": [
+    "registry-candidate-model",
+    "shadow-deployment-model",
+    "rollback-validation-model"
+  ],
+  "cohort_assets": [
+    "locked-validation-cohort",
+    "post-deployment-monitoring-cohort"
+  ],
+  "governance_assets": [
+    "model_registry_ml_lifecycle-intended-use-and-risk-file",
+    "model_registry_ml_lifecycle-validation-and-acceptance-plan",
+    "model_registry_ml_lifecycle-monitoring-and-rollback-plan"
+  ]
+}

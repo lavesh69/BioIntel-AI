@@ -1,0 +1,4 @@
+engine,label,category,conda_packages,pip_packages,manual_distribution,licence_acceptance_required,model_weights_required,reference_data_required,supported_backends,version_constraint,smoke_test,modules,software_recipe_complete,module_count,upstream_url,licence_id,licence_acceptance_mode,install_route,platform_target,package_provenance_required,package_sha256_required,license_text_sha256_required,smoke_test_required,golden_fixture_required,negative_control_required
+python:sklearn,scikit-learn,,,,,,,,,,,,,,,,,pinned-python-venv,Windows/Python,,,,,,
+python:statsmodels,statsmodels,,,,,,,,,,,,,,,,,pinned-python-venv,Windows/Python,,,,,,
+python:anndata,AnnData,,,,,,,,,,,,,,,,,pinned-python-venv,Windows/Python,,,,,,

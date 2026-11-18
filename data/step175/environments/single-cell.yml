@@ -1,0 +1,14 @@
+name: biointel175-single-cell
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python=3.11
+  - pip
+  - cellrank
+  - scanpy
+  - scvelo
+  - pip:
+      - cellrank
+      - scanpy
+      - scvelo

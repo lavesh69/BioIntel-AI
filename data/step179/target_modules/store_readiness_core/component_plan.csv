@@ -1,0 +1,4 @@
+component,label,install_route,platform_target,smoke_test
+python:hashlib,Release hash verification,standard-library,Windows/Python,
+python:jsonschema,Manifest validation,pinned-python-venv,Windows/Python,
+signtool,Windows signing verification,windows-sdk,Windows/Python,

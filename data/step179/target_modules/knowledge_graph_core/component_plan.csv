@@ -1,0 +1,4 @@
+component,label,install_route,platform_target,smoke_test
+python:networkx,Graph integrity checks,pinned-python-venv,Windows/Python,
+python:pandas,Edge/node validation,pinned-python-venv,Windows/Python,
+python:rapidfuzz,Entity normalisation,pinned-python-venv,Windows/Python,

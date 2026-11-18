@@ -1,0 +1,12 @@
+name: biointel175-longread-assembly
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python=3.11
+  - pip
+  - busco
+  - flye
+  - hifiasm
+  - merqury
+  - modkit

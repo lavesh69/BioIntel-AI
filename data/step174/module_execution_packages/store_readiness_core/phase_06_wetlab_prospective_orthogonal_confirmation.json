@@ -1,0 +1,28 @@
+{
+  "schema": "biointel.step174.module-phase-work-package.v1",
+  "module_key": "store_readiness_core",
+  "module_title": "Windows product readiness",
+  "phase_number": 6,
+  "phase_key": "wetlab_prospective_orthogonal_confirmation",
+  "phase_title": "Wet-lab, prospective and orthogonal confirmation",
+  "applicable": true,
+  "complete": false,
+  "software_automation_ready": true,
+  "objective": "Confirm applicable module outputs using frozen protocols, blinded prospective execution, independent sites and orthogonal assays.",
+  "software_automation": "Step 172 evidence workspaces, hash-bound manifests, batch/control checks, protocol freeze, blinded outcome reconciliation and fail-closed evaluation.",
+  "external_evidence_required": [
+    "Locked protocol and acceptance thresholds",
+    "Raw evidence/data manifests",
+    "Wet-lab confirmation where required",
+    "Prospective confirmation where required",
+    "Orthogonal confirmation where required",
+    "Independent-site qualification"
+  ],
+  "completion_rule": "Every confirmation axis required by the module profile must be complete with verified artifacts.",
+  "command": "python scripts\\step172_evidence_manager.py prepare store_readiness_core",
+  "claim_policy": {
+    "external_evidence_must_be_genuine": true,
+    "metadata_flags_without_files_are_ineligible": true,
+    "missing_evidence_decision": "research-only-fail-closed"
+  }
+}

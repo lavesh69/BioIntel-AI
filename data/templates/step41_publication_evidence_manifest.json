@@ -1,0 +1,29 @@
+{
+  "study": {
+    "evidence_id": "PUBLICATION-DTI-ID",
+    "area_key": "publication_grade_dti",
+    "title": "Published DTI validation",
+    "status": "published",
+    "evidence_class": "peer_reviewed_publication",
+    "issuer_organization": "publisher-or-independent-institution",
+    "subject_organization": "research-organization",
+    "environment": "research",
+    "country": "ISO-3166-country-code",
+    "started_at": "2026-01-01T00:00:00+00:00",
+    "ended_at": "2026-01-02T00:00:00+00:00",
+    "manifest_sha256": "REPLACE-WITH-64-CHARACTER-SHA256",
+    "metadata": {"doi": "10.xxxx/replace", "dti_domain": true, "peer_reviewed": true}
+  },
+  "artifacts": [
+    {"artifact_type": "manuscript", "uri": "doi://10.xxxx/replace", "sha256": "REPLACE-WITH-64-CHARACTER-SHA256", "observed_at": "2026-01-02T00:00:00+00:00", "metadata": {}},
+    {"artifact_type": "dataset", "uri": "repository://dataset", "sha256": "REPLACE-WITH-64-CHARACTER-SHA256", "observed_at": "2026-01-02T00:00:00+00:00", "metadata": {}},
+    {"artifact_type": "source_code", "uri": "repository://source", "sha256": "REPLACE-WITH-64-CHARACTER-SHA256", "observed_at": "2026-01-02T00:00:00+00:00", "metadata": {}},
+    {"artifact_type": "reproducibility_bundle", "uri": "repository://bundle", "sha256": "REPLACE-WITH-64-CHARACTER-SHA256", "observed_at": "2026-01-02T00:00:00+00:00", "metadata": {}}
+  ],
+  "metrics": [],
+  "attestations": [
+    {"signer_organization": "independent-reviewer-one", "signer_identity": "reviewer-one", "signer_role": "peer reviewer", "independent": true, "decision": "accepted", "signature_sha256": "REPLACE-WITH-64-CHARACTER-SHA256", "signed_at": "2026-01-02T00:00:00+00:00", "notes": "Independent review."},
+    {"signer_organization": "independent-reviewer-two", "signer_identity": "reviewer-two", "signer_role": "peer reviewer", "independent": true, "decision": "accepted", "signature_sha256": "REPLACE-WITH-64-CHARACTER-SHA256", "signed_at": "2026-01-02T00:00:00+00:00", "notes": "Independent review."}
+  ],
+  "entities": []
+}

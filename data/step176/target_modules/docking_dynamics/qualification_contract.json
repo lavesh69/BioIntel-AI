@@ -1,0 +1,38 @@
+{
+  "schema": "biointel.step176.module-contract.v1",
+  "module_key": "docking_dynamics",
+  "module_title": "Molecular Docking & Dynamics",
+  "evidence_class": "discovery-chemistry",
+  "workflow": [
+    "Structure and ligand preparation",
+    "Docking pose generation",
+    "Pose QC and interaction review",
+    "Dynamics/stability analysis",
+    "Measured-affinity reconciliation"
+  ],
+  "quality_gates": [
+    "Receptor preparation qualified",
+    "Protocol and search space locked",
+    "Positive/decoy controls",
+    "Pose reproducibility",
+    "Measured affinity attached"
+  ],
+  "required_outputs": [
+    "Preparation audit",
+    "Pose ensemble",
+    "Interaction fingerprint",
+    "Dynamics QC",
+    "Research release gate"
+  ],
+  "required_engines": [
+    "gromacs",
+    "openmm",
+    "vina"
+  ],
+  "required_references": [
+    "bindingdb",
+    "chembl"
+  ],
+  "scientific_boundary": "Docking and dynamics scores are hypotheses and require measured binding and experimental structural confirmation.",
+  "release_policy": "fail-closed"
+}

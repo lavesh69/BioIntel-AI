@@ -1,0 +1,6 @@
+component,label,install_route,platform_target,smoke_test
+python:torch,PyTorch inference runtime,pinned-python-venv,Windows/Python/WSL as qualified,import/version/help probe only
+python:transformers,Transformers model runtime,pinned-python-venv,Windows/Python/WSL as qualified,import/version/help probe only
+python:esm,ESM protein language-model runtime,pinned-python-venv,Windows/Python/WSL as qualified,import/version/help probe only
+proteinmpnn,ProteinMPNN executable or wrapper,operator-qualified,Windows/Python/WSL as qualified,import/version/help probe only
+colabfold_batch,ColabFold structure-prediction runtime,operator-qualified,Windows/Python/WSL as qualified,import/version/help probe only

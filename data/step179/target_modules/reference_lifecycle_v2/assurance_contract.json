@@ -1,0 +1,74 @@
+{
+  "schema": "biointel.step179.18-platform-core-assurance.v1",
+  "module_key": "reference_lifecycle_v2",
+  "module_title": "Reference Database Lifecycle Manager",
+  "baseline_rating": 7.5,
+  "internal_after_rating": 10.0,
+  "focus": "release-pinned reference intake, qualification, rollback and update monitoring",
+  "workflow": [
+    "Lock the intended platform use and acceptance criteria for release-pinned reference intake, qualification, rollback and update monitoring",
+    "Validate input identity, permissions, schema, versions and SHA-256 lineage before execution",
+    "Execute deterministic positive, negative, corruption, recovery and scale fixtures in an isolated workspace",
+    "Verify security boundaries, least privilege, fail-closed behaviour and rollback paths",
+    "Run reliability, performance, concurrency and reproducibility checks with pinned dependencies",
+    "Export a signed qualification bundle and activate monitoring only after formal review"
+  ],
+  "reliability_gates": [
+    "All mandatory contracts and schemas validate",
+    "Positive golden fixture produces deterministic expected output",
+    "Negative and corruption fixtures are rejected safely",
+    "Retry, recovery or rollback path is exercised",
+    "Concurrent execution does not corrupt shared state",
+    "Output artifacts are complete and SHA-256 verified",
+    "A second run is reproducible or explains approved nondeterminism",
+    "Resource limits and timeout behaviour are enforced"
+  ],
+  "security_gates": [
+    "Least-privilege permissions are enforced",
+    "Unsafe paths, commands and payloads are blocked",
+    "Secrets and sensitive content are excluded from logs and exports",
+    "Tampering or signature mismatch produces a fail-closed decision",
+    "Audit events contain actor, timestamp, version and decision provenance",
+    "Rollback cannot silently discard evidence"
+  ],
+  "acceptance_criteria": [
+    "No critical integrity, security or provenance failure",
+    "All required runtime components and policy references are qualified",
+    "All deterministic golden and adverse fixtures pass",
+    "Recovery, rollback and concurrency tests pass",
+    "Monitoring thresholds and ownership are approved",
+    "Independent Windows qualification and formal release review are complete for controlled release"
+  ],
+  "required_outputs": [
+    "Locked platform assurance contract",
+    "Runtime and dependency bill of materials",
+    "Policy/reference qualification matrix",
+    "Golden and adverse fixture results",
+    "Security and rollback evidence",
+    "Monitoring and release decision bundle"
+  ],
+  "risk_controls": [
+    "silent reference update",
+    "checksum mismatch",
+    "licence violation",
+    "schema incompatibility",
+    "failed rollback"
+  ],
+  "monitoring_metrics": [
+    "provider update alerts",
+    "checksum failures",
+    "licence review expiry",
+    "rollback rehearsal age"
+  ],
+  "boundary": "Reference Database Lifecycle Manager is internally qualified as a software/platform capability only. Controlled production release remains fail-closed until independent Windows execution, security/accessibility review, operating history and formal approval are attached.",
+  "validation_fixtures": [
+    "checksum-mismatch-fixture",
+    "licence-block-fixture",
+    "rollback-fixture"
+  ],
+  "governance_assets": [
+    "reference-database-lifecycle-manager-risk-register",
+    "reference-database-lifecycle-manager-acceptance-plan",
+    "reference-database-lifecycle-manager-monitoring-rollback-plan"
+  ]
+}

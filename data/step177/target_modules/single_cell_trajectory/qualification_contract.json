@@ -1,0 +1,37 @@
+{
+  "schema": "biointel.step177.21-module-contract.v1",
+  "module_key": "single_cell_trajectory",
+  "module_title": "Single-Cell Trajectory & Communication",
+  "workflow": [
+    "Cell-state QC and covariate review",
+    "Trajectory/root-state inference",
+    "Velocity/directionality assessment",
+    "Ligand-receptor communication analysis",
+    "Perturbation or longitudinal validation"
+  ],
+  "quality_gates": [
+    "Root-state rationale documented",
+    "Topology stability across methods passed",
+    "Velocity assumptions checked",
+    "Database release pinned",
+    "Permutation/null controls passed",
+    "Independent perturbation/time-course validation passed"
+  ],
+  "required_outputs": [
+    "Trajectory graph",
+    "Pseudotime uncertainty",
+    "Velocity diagnostics",
+    "Communication network",
+    "Release gate"
+  ],
+  "boundary": "Trajectories and communication networks are model-dependent hypotheses requiring temporal or perturbational evidence.",
+  "model_assets": [
+    "trajectory-model",
+    "velocity-model",
+    "communication-model"
+  ],
+  "cohort_assets": [
+    "single_cell_trajectory-development-cohort",
+    "single_cell_trajectory-independent-external-cohort"
+  ]
+}

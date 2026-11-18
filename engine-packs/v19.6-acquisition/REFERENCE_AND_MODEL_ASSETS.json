@@ -1,0 +1,276 @@
+[
+  {
+    "engine": "abricate",
+    "licence_acceptance_required": false,
+    "model_weights_required": false,
+    "references": [
+      "ABRicate database"
+    ]
+  },
+  {
+    "engine": "amrfinderplus",
+    "licence_acceptance_required": false,
+    "model_weights_required": false,
+    "references": [
+      "AMRFinderPlus database"
+    ]
+  },
+  {
+    "engine": "bcftools",
+    "licence_acceptance_required": false,
+    "model_weights_required": false,
+    "references": [
+      "Reference FASTA"
+    ]
+  },
+  {
+    "engine": "blastn",
+    "licence_acceptance_required": false,
+    "model_weights_required": false,
+    "references": [
+      "BLAST database"
+    ]
+  },
+  {
+    "engine": "blastp",
+    "licence_acceptance_required": false,
+    "model_weights_required": false,
+    "references": [
+      "BLAST protein database"
+    ]
+  },
+  {
+    "engine": "bowtie",
+    "licence_acceptance_required": false,
+    "model_weights_required": false,
+    "references": [
+      "Bowtie 2 genome index"
+    ]
+  },
+  {
+    "engine": "bowtie2",
+    "licence_acceptance_required": false,
+    "model_weights_required": false,
+    "references": [
+      "Bowtie2 index"
+    ]
+  },
+  {
+    "engine": "bracken",
+    "licence_acceptance_required": false,
+    "model_weights_required": false,
+    "references": [
+      "Bracken database"
+    ]
+  },
+  {
+    "engine": "busco",
+    "licence_acceptance_required": false,
+    "model_weights_required": false,
+    "references": [
+      "BUSCO lineage"
+    ]
+  },
+  {
+    "engine": "colabfold",
+    "licence_acceptance_required": false,
+    "model_weights_required": true,
+    "references": [
+      "ColabFold/AlphaFold databases or remote MSA policy"
+    ]
+  },
+  {
+    "engine": "dorado",
+    "licence_acceptance_required": false,
+    "model_weights_required": true,
+    "references": [
+      "Dorado model weights"
+    ]
+  },
+  {
+    "engine": "expansionhunter",
+    "licence_acceptance_required": false,
+    "model_weights_required": false,
+    "references": [
+      "Repeat catalogue",
+      "Reference FASTA"
+    ]
+  },
+  {
+    "engine": "hmmer",
+    "licence_acceptance_required": false,
+    "model_weights_required": false,
+    "references": [
+      "Pinned HMM profile database"
+    ]
+  },
+  {
+    "engine": "humann",
+    "licence_acceptance_required": false,
+    "model_weights_required": false,
+    "references": [
+      "ChocoPhlAn",
+      "UniRef"
+    ]
+  },
+  {
+    "engine": "igblast",
+    "licence_acceptance_required": false,
+    "model_weights_required": false,
+    "references": [
+      "IgBLAST germline database"
+    ]
+  },
+  {
+    "engine": "interproscan",
+    "licence_acceptance_required": false,
+    "model_weights_required": false,
+    "references": [
+      "InterPro member databases"
+    ]
+  },
+  {
+    "engine": "kallisto",
+    "licence_acceptance_required": false,
+    "model_weights_required": false,
+    "references": [
+      "Kallisto transcriptome index"
+    ]
+  },
+  {
+    "engine": "kraken2",
+    "licence_acceptance_required": false,
+    "model_weights_required": false,
+    "references": [
+      "Kraken 2 database"
+    ]
+  },
+  {
+    "engine": "llama_cpp",
+    "licence_acceptance_required": false,
+    "model_weights_required": false,
+    "references": [
+      "Approved model weights"
+    ]
+  },
+  {
+    "engine": "majiq",
+    "licence_acceptance_required": false,
+    "model_weights_required": false,
+    "references": [
+      "Genome annotation GFF3"
+    ]
+  },
+  {
+    "engine": "modkit",
+    "licence_acceptance_required": false,
+    "model_weights_required": false,
+    "references": [
+      "Reference FASTA"
+    ]
+  },
+  {
+    "engine": "netmhciipan",
+    "licence_acceptance_required": true,
+    "model_weights_required": false,
+    "references": [
+      "NetMHCIIpan data files"
+    ]
+  },
+  {
+    "engine": "netmhcpan",
+    "licence_acceptance_required": true,
+    "model_weights_required": false,
+    "references": [
+      "NetMHCpan data files"
+    ]
+  },
+  {
+    "engine": "picard",
+    "licence_acceptance_required": false,
+    "model_weights_required": false,
+    "references": [
+      "Reference FASTA"
+    ]
+  },
+  {
+    "engine": "proteinmpnn",
+    "licence_acceptance_required": false,
+    "model_weights_required": true,
+    "references": []
+  },
+  {
+    "engine": "resfinder",
+    "licence_acceptance_required": false,
+    "model_weights_required": false,
+    "references": [
+      "ResFinder database",
+      "PointFinder database"
+    ]
+  },
+  {
+    "engine": "rfdiffusion",
+    "licence_acceptance_required": false,
+    "model_weights_required": true,
+    "references": [
+      "Model weights"
+    ]
+  },
+  {
+    "engine": "rmats",
+    "licence_acceptance_required": false,
+    "model_weights_required": false,
+    "references": [
+      "Genome annotation GTF"
+    ]
+  },
+  {
+    "engine": "salmon",
+    "licence_acceptance_required": false,
+    "model_weights_required": false,
+    "references": [
+      "Salmon transcriptome index"
+    ]
+  },
+  {
+    "engine": "snpeff",
+    "licence_acceptance_required": false,
+    "model_weights_required": false,
+    "references": [
+      "SnpEff genome database"
+    ]
+  },
+  {
+    "engine": "star",
+    "licence_acceptance_required": false,
+    "model_weights_required": false,
+    "references": [
+      "STAR genome index"
+    ]
+  },
+  {
+    "engine": "suppa2",
+    "licence_acceptance_required": false,
+    "model_weights_required": false,
+    "references": [
+      "Transcript annotation GTF"
+    ]
+  },
+  {
+    "engine": "vep",
+    "licence_acceptance_required": false,
+    "model_weights_required": false,
+    "references": [
+      "VEP cache",
+      "Reference FASTA"
+    ]
+  },
+  {
+    "engine": "whatshap",
+    "licence_acceptance_required": false,
+    "model_weights_required": false,
+    "references": [
+      "Reference FASTA"
+    ]
+  }
+]

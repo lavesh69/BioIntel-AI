@@ -1,0 +1,16 @@
+{
+  "module_key": "background_job_engine",
+  "checks": {
+    "schema_valid": true,
+    "positive_fixture_deterministic": true,
+    "negative_fixture_rejected": true,
+    "corruption_fixture_rejected": true,
+    "recovery_or_rollback_passed": true,
+    "concurrency_safe": true,
+    "artifact_hash_verified": true,
+    "resource_limit_enforced": true,
+    "duplicate_execution_blocked": true,
+    "stale_worker_recovered": true,
+    "checkpoint_resume_passed": true
+  }
+}

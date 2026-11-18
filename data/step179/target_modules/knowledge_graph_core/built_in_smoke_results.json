@@ -1,0 +1,16 @@
+{
+  "module_key": "knowledge_graph_core",
+  "checks": {
+    "schema_valid": true,
+    "positive_fixture_deterministic": true,
+    "negative_fixture_rejected": true,
+    "corruption_fixture_rejected": true,
+    "recovery_or_rollback_passed": true,
+    "concurrency_safe": true,
+    "artifact_hash_verified": true,
+    "resource_limit_enforced": true,
+    "orphan_edges_absent": true,
+    "duplicate_edges_detected": true,
+    "unsupported_inference_blocked": true
+  }
+}

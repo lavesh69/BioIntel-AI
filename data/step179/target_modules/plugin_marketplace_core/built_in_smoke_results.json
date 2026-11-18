@@ -1,0 +1,17 @@
+{
+  "module_key": "plugin_marketplace_core",
+  "checks": {
+    "schema_valid": true,
+    "positive_fixture_deterministic": true,
+    "negative_fixture_rejected": true,
+    "corruption_fixture_rejected": true,
+    "recovery_or_rollback_passed": true,
+    "concurrency_safe": true,
+    "artifact_hash_verified": true,
+    "resource_limit_enforced": true,
+    "signature_required": true,
+    "path_traversal_blocked": true,
+    "permission_escalation_blocked": true,
+    "disabled_by_default": true
+  }
+}

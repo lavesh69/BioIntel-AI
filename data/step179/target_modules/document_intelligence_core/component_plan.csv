@@ -1,0 +1,4 @@
+component,label,install_route,platform_target,smoke_test
+python:pypdf,PDF parsing,pinned-python-venv,Windows/Python,
+python:openpyxl,Spreadsheet parsing,pinned-python-venv,Windows/Python,
+python:python-docx,DOCX parsing,pinned-python-venv,Windows/Python,

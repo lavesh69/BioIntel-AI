@@ -1,0 +1,4 @@
+component,label,install_route,platform_target,smoke_test
+python:sqlite3,Review registry,standard-library,Windows/Python,
+python:hashlib,Version lock integrity,standard-library,Windows/Python,
+python:cryptography,Decision signatures,pinned-python-venv,Windows/Python,

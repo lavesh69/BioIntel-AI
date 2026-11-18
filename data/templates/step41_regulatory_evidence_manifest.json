@@ -1,0 +1,24 @@
+{
+  "study": {
+    "evidence_id": "REGULATORY-DECISION-ID",
+    "area_key": "regulatory_approval",
+    "title": "Regulatory authority decision",
+    "status": "approved",
+    "evidence_class": "regulatory_decision",
+    "issuer_organization": "regulatory-authority",
+    "subject_organization": "sponsor-organization",
+    "environment": "regulated-production",
+    "country": "ISO-3166-country-code",
+    "started_at": "2026-01-01T00:00:00+00:00",
+    "ended_at": "2026-01-02T00:00:00+00:00",
+    "manifest_sha256": "REPLACE-WITH-64-CHARACTER-SHA256",
+    "metadata": {"regulatory_authority": "authority-name", "approval_id": "approval-identifier", "intended_use": "approved intended use"}
+  },
+  "artifacts": [
+    {"artifact_type": "regulatory_decision_letter", "uri": "evidence://regulator/decision", "sha256": "REPLACE-WITH-64-CHARACTER-SHA256", "observed_at": "2026-01-02T00:00:00+00:00", "metadata": {}},
+    {"artifact_type": "approved_label_or_scope", "uri": "evidence://regulator/scope", "sha256": "REPLACE-WITH-64-CHARACTER-SHA256", "observed_at": "2026-01-02T00:00:00+00:00", "metadata": {}}
+  ],
+  "metrics": [],
+  "attestations": [{"signer_organization": "regulatory-authority", "signer_identity": "authorized-official", "signer_role": "regulatory official", "independent": true, "decision": "approved", "signature_sha256": "REPLACE-WITH-64-CHARACTER-SHA256", "signed_at": "2026-01-02T00:00:00+00:00", "notes": "Authentic authority evidence required."}],
+  "entities": []
+}

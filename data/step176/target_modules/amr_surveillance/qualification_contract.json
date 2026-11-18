@@ -1,0 +1,41 @@
+{
+  "schema": "biointel.step176.module-contract.v1",
+  "module_key": "amr_surveillance",
+  "module_title": "AMR Genomic Surveillance & Resistance Intelligence",
+  "evidence_class": "public-health-high-impact",
+  "workflow": [
+    "Read/isolate QC and species confirmation",
+    "AMR determinant calling",
+    "Drug-level evidence reconciliation",
+    "Cluster and transmission screening",
+    "Phenotype discordance review"
+  ],
+  "quality_gates": [
+    "Negative and positive controls",
+    "Pinned breakpoint standard",
+    "Phenotypic AST attached",
+    "Database release and checksum locked",
+    "Public-health expert review"
+  ],
+  "required_outputs": [
+    "Isolate QC table",
+    "Drug-level concordance table",
+    "Resistance evidence ledger",
+    "Cluster review",
+    "Release gate"
+  ],
+  "required_engines": [
+    "amrfinderplus",
+    "bcftools",
+    "kraken2",
+    "minimap2",
+    "resfinder"
+  ],
+  "required_references": [
+    "amrfinder-db",
+    "card",
+    "resfinder-db"
+  ],
+  "scientific_boundary": "Genomic AMR predictions are research support and do not replace phenotypic susceptibility testing or public-health interpretation.",
+  "release_policy": "fail-closed"
+}

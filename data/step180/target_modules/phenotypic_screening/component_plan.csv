@@ -1,0 +1,6 @@
+component,label,install_route,platform_target,smoke_test
+python:cellpose,Cellpose segmentation runtime,pinned-python-venv,Windows/Python/WSL as qualified,import/version/help probe only
+python:stardist,StarDist segmentation runtime,pinned-python-venv,Windows/Python/WSL as qualified,import/version/help probe only
+python:skimage,scikit-image morphology and image QC,pinned-python-venv,Windows/Python/WSL as qualified,import/version/help probe only
+python:scipy,SciPy statistics,pinned-python-venv,Windows/Python/WSL as qualified,import/version/help probe only
+python:sklearn,scikit-learn validation,pinned-python-venv,Windows/Python/WSL as qualified,import/version/help probe only

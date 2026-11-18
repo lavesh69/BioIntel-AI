@@ -1,0 +1,4 @@
+asset_id,label,kind,release_mode,expected_format,qualification_strategy
+licensed-protein-language-model-weights,Licensed Protein Language Model Weights,model,operator-pinned-and-reviewed,manifest + checksummed assets,manual evidence intake plus automated manifest verification
+qualified-protein-sequence-design-weights,Qualified Protein Sequence Design Weights,model,operator-pinned-and-reviewed,manifest + checksummed assets,manual evidence intake plus automated manifest verification
+qualified-structure-prediction-weights,Qualified Structure Prediction Weights,model,operator-pinned-and-reviewed,manifest + checksummed assets,manual evidence intake plus automated manifest verification

@@ -1,0 +1,37 @@
+{
+  "schema": "biointel.step177.21-module-contract.v1",
+  "module_key": "rna_isoform_splicing",
+  "module_title": "RNA Isoform & Alternative Splicing",
+  "workflow": [
+    "Read/library and strandedness QC",
+    "Alignment and transcript assembly",
+    "Isoform/splice-event quantification",
+    "Differential splicing with confounder control",
+    "Orthogonal transcript validation"
+  ],
+  "quality_gates": [
+    "Genome/annotation release pinned",
+    "Library protocol declared",
+    "Junction support thresholds passed",
+    "Replicates and covariates adequate",
+    "Novel isoform artefacts reviewed",
+    "RT-PCR/long-read or external cohort passed"
+  ],
+  "required_outputs": [
+    "Library QC",
+    "Isoform catalogue",
+    "Splice-event matrix",
+    "Differential results",
+    "Release gate"
+  ],
+  "boundary": "Novel isoforms and differential splicing require junction-level review and orthogonal validation.",
+  "model_assets": [
+    "isoform-collapse-model",
+    "splice-event-model",
+    "differential-splicing-model"
+  ],
+  "cohort_assets": [
+    "rna_isoform_splicing-development-cohort",
+    "rna_isoform_splicing-independent-external-cohort"
+  ]
+}

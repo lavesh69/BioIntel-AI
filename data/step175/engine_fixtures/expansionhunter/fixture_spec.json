@@ -1,0 +1,13 @@
+{
+  "schema": "biointel.step175.engine-fixture.v1",
+  "engine": "expansionhunter",
+  "environment_group": "genomics-core",
+  "probe_executable": "ExpansionHunter",
+  "version_probe": "ExpansionHunter, --version",
+  "golden_fixture_level": "L2-synthetic-known-answer",
+  "negative_control_required": true,
+  "module_integration_level": "L3-native-workflow",
+  "expected_exit_code": 0,
+  "output_sha256_required": true,
+  "actual_result": "pending-target-execution"
+}

@@ -1,0 +1,10 @@
+name: biointel175-population
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python=3.11
+  - pip
+  - plink2
+  - r-saige
+  - regenie

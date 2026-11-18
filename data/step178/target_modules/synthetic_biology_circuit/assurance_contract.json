@@ -1,0 +1,70 @@
+{
+  "schema": "biointel.step178.19-module-assurance-contract.v1",
+  "module_key": "synthetic_biology_circuit",
+  "module_title": "Synthetic Biology & Circuit Design",
+  "baseline_rating": 6.5,
+  "internal_after_rating": 10.0,
+  "evidence_class": "synthetic-biology",
+  "workflow": [
+    "Lock the intended use, bounded circuit function and safety claim and analysis population",
+    "Validate source identity, permissions, schema, units, lineage and missingness",
+    "Execute traceable genetic circuit design with biosafety and manufacturability controls with pinned code, models, references and deterministic parameters",
+    "Run leakage, calibration, subgroup, robustness and sensitivity analyses",
+    "Validate on an independent temporal, site, instrument, process or prospective evidence set",
+    "Complete expert review, signed release decision, rollback rehearsal and monitoring activation"
+  ],
+  "quality_gates": [
+    "Intended use, endpoint and acceptance criteria approved before analysis",
+    "Input permissions, provenance, schema, units and checksums verified",
+    "Code, environment, engine, reference and model versions pinned",
+    "Part identity, sequence and licence provenance are locked",
+    "Host context, burden and failure modes are modelled",
+    "Biosafety and homology screens are hard gates",
+    "Physical construction and characterisation require qualified laboratory review",
+    "Independent evidence, expert sign-off and formal release review complete"
+  ],
+  "acceptance_criteria": [
+    "No critical data-integrity or provenance failure",
+    "All mandatory runtime/reference/model/cohort assets qualified",
+    "Prespecified primary performance and uncertainty criteria passed",
+    "Calibration, subgroup and robustness thresholds passed",
+    "Independent evidence meets the locked acceptance plan",
+    "Rollback and post-release monitoring are tested and approved"
+  ],
+  "required_outputs": [
+    "Circuit specification and truth table",
+    "Part/sequence provenance",
+    "Host burden and failure-mode analysis",
+    "Biosafety screening report",
+    "Wet-lab characterisation package",
+    "Design release decision"
+  ],
+  "risk_controls": [
+    "unintended expression",
+    "genetic instability",
+    "host burden",
+    "hazardous function",
+    "horizontal transfer"
+  ],
+  "monitoring_metrics": [
+    "sequence drift",
+    "predicted burden",
+    "failure-mode frequency",
+    "wet-lab model discrepancy"
+  ],
+  "boundary": "Synthetic Biology & Circuit Design outputs remain research or operational decision support until the module-specific independent evidence, domain-expert review, applicable privacy/safety/clinical controls and formal controlled-release approval are complete.",
+  "model_assets": [
+    "circuit-behaviour-model",
+    "sequence-risk-screen",
+    "host-burden-model"
+  ],
+  "cohort_assets": [
+    "circuit-development-design-set",
+    "independent-wet-lab-characterisation-set"
+  ],
+  "governance_assets": [
+    "synthetic_biology_circuit-intended-use-and-risk-file",
+    "synthetic_biology_circuit-validation-and-acceptance-plan",
+    "synthetic_biology_circuit-monitoring-and-rollback-plan"
+  ]
+}

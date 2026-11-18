@@ -1,0 +1,74 @@
+{
+  "schema": "biointel.step180.final-five-scientific-assurance.v1",
+  "module_key": "protein_language_design",
+  "module_title": "Protein Language Model & Generative Design",
+  "baseline_rating": 3.5,
+  "internal_after_rating": 10.0,
+  "focus": "licence-aware protein sequence generation with novelty, constraint, structure-confidence, uncertainty and wet-lab confirmation gates",
+  "workflow": [
+    "Lock intended use, supported inputs, decision boundary, endpoints and quantitative acceptance thresholds before execution",
+    "Verify permissions, sample identity, schema, units, coordinate/build conventions, checksums and complete input lineage",
+    "Qualify pinned specialist runtimes, reference releases, model weights, preprocessing and hardware execution profile",
+    "Execute deterministic golden, negative, corruption, leakage, sensitivity and reproducibility fixtures in an isolated workspace",
+    "Run module-specific uncertainty, subgroup/site/instrument, contamination or selectivity checks and preserve all exclusions",
+    "Export a signed evidence bundle and remain fail-closed until independent confirmation, expert review and formal release approval"
+  ],
+  "data_gates": [
+    "Input identity, permissions, schema, units and SHA-256 lineage are complete",
+    "Sample, plate, patient, site, scanner or sequence identifiers are unique and leakage-audited",
+    "Required controls, replicates, metadata and exclusion reasons are present",
+    "Reference coordinate systems, genome builds, ontologies and database releases are pinned",
+    "Missingness, corruption, duplication and implausible-range checks pass",
+    "Train, validation, benchmark and external-confirmation assets are isolated"
+  ],
+  "model_gates": [
+    "Model provider, architecture, release, weight checksum and licence are recorded",
+    "Preprocessing, tokenisation, feature extraction and postprocessing are version locked",
+    "Intended use, unsupported use, calibration and applicability domain are documented",
+    "Training-data overlap and benchmark leakage are assessed and bounded",
+    "Uncertainty, out-of-distribution and abstention behaviour are tested",
+    "Subgroup, site, instrument or domain-shift performance is reported"
+  ],
+  "scientific_gates": [
+    "Generated sequences use the allowed alphabet and satisfy locked length and motif constraints",
+    "Exact duplicates and near-neighbours of training/reference sequences are detected",
+    "Composition, charge proxy, hydrophobic runs and aggregation-risk proxies are bounded",
+    "Generation seeds, decoding parameters and model versions reproduce candidate sets",
+    "Multiple objectives are ranked by a transparent Pareto procedure",
+    "Structure confidence and model disagreement are reported without implying activity",
+    "Expression, stability, binding or activity claims require independent wet-lab confirmation"
+  ],
+  "acceptance_criteria": [
+    "All mandatory contracts, data gates and scientific checks pass without a critical exception",
+    "All required components, references, model assets, cohorts and benchmark fixtures are qualified",
+    "Golden results are deterministic and negative/corruption/leakage cases fail safely",
+    "Uncertainty and applicability-domain limits are exposed in every export",
+    "No unsupported biological, clinical or experimental claim is emitted",
+    "Independent confirmation, expert sign-off and formal release review are complete for controlled release"
+  ],
+  "required_outputs": [
+    "Locked intended-use and scientific acceptance contract",
+    "Runtime, model-weight, reference and dataset bill of materials",
+    "Input lineage, exclusion, leakage and contamination audit",
+    "Golden/adverse fixture results with expected-output hashes",
+    "Uncertainty, subgroup/site/instrument and applicability-domain report",
+    "Signed qualification bundle and fail-closed release decision"
+  ],
+  "risk_controls": [
+    "training-data memorisation",
+    "invalid or unexpressible sequences",
+    "restricted or hazardous motif generation",
+    "overconfidence from a single model",
+    "structure-confidence misuse",
+    "activity claim without wet-lab evidence"
+  ],
+  "monitoring_metrics": [
+    "invalid-sequence and constraint-failure rate",
+    "training-neighbour similarity and novelty distribution",
+    "model disagreement and uncertainty",
+    "structure-confidence and aggregation-risk drift",
+    "experimental confirmation success rate"
+  ],
+  "boundary": "Generated proteins are computational hypotheses. Sequence validity, model confidence or predicted structure does not establish expression, folding, binding, activity or safety.",
+  "decision_policy": "internal-10of10-external-fail-closed"
+}

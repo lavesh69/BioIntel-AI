@@ -1,0 +1,301 @@
+[
+  {
+    "automatic_bundle_policy": "eligible-after-release-hash-and-smoke-test",
+    "blockers": [
+      "Reference/database release, checksum, licence and disk estimate are required."
+    ],
+    "engine": "blastp",
+    "exact_release_qualified": false,
+    "install_route": "official-windows-binary",
+    "label": "BLASTP",
+    "licence_acceptance_required": false,
+    "licence_spdx": "LicenseRef-Public-Domain-US-Gov",
+    "mode": "official-provider",
+    "model_weights_required": false,
+    "official_url": "https://blast.ncbi.nlm.nih.gov/doc/blast-help/downloadblastdata.html",
+    "package_specs": [],
+    "priority": "P1-compulsory",
+    "redistribution_policy": "public-domain-binary-provenance-required",
+    "references": [
+      "BLAST protein database"
+    ],
+    "windows_mode": "Native Windows"
+  },
+  {
+    "automatic_bundle_policy": "do-not-bundle-until-legal-review",
+    "blockers": [
+      "Reference/database release, checksum, licence and disk estimate are required."
+    ],
+    "engine": "bowtie2",
+    "exact_release_qualified": false,
+    "install_route": "official-windows-binary-or-wsl2",
+    "label": "Bowtie 2",
+    "licence_acceptance_required": false,
+    "licence_spdx": "GPL-3.0-or-later",
+    "mode": "official-provider",
+    "model_weights_required": false,
+    "official_url": "https://github.com/BenLangmead/bowtie2",
+    "package_specs": [],
+    "priority": "P1-compulsory",
+    "redistribution_policy": "copyleft-review-required",
+    "references": [
+      "Bowtie2 index"
+    ],
+    "windows_mode": "Native Windows"
+  },
+  {
+    "automatic_bundle_policy": "separate-optional-model-pack",
+    "blockers": [
+      "Model-weight licence, checksum and hardware qualification are required.",
+      "Reference/database release, checksum, licence and disk estimate are required.",
+      "WSL2 availability and Linux runtime qualification are required on Windows."
+    ],
+    "engine": "dorado",
+    "exact_release_qualified": false,
+    "install_route": "provider-release",
+    "label": "Oxford Nanopore Dorado",
+    "licence_acceptance_required": false,
+    "licence_spdx": "LicenseRef-ONT-Public-License",
+    "mode": "manual-authorized",
+    "model_weights_required": true,
+    "official_url": "https://github.com/nanoporetech/dorado",
+    "package_specs": [],
+    "priority": "P2-high-value",
+    "redistribution_policy": "provider-policy-review",
+    "references": [
+      "Dorado model weights"
+    ],
+    "windows_mode": "WSL2"
+  },
+  {
+    "automatic_bundle_policy": "do-not-bundle-until-legal-review",
+    "blockers": [],
+    "engine": "fastqc",
+    "exact_release_qualified": false,
+    "install_route": "official-windows-zip-java",
+    "label": "FastQC",
+    "licence_acceptance_required": false,
+    "licence_spdx": "GPL-3.0-or-later",
+    "mode": "official-provider",
+    "model_weights_required": false,
+    "official_url": "https://www.bioinformatics.babraham.ac.uk/projects/fastqc/",
+    "package_specs": [],
+    "priority": "P1-compulsory",
+    "redistribution_policy": "copyleft-review-required",
+    "references": [],
+    "windows_mode": "Native Windows"
+  },
+  {
+    "automatic_bundle_policy": "eligible-after-release-hash-and-smoke-test",
+    "blockers": [
+      "Reference/database release, checksum, licence and disk estimate are required."
+    ],
+    "engine": "kallisto",
+    "exact_release_qualified": false,
+    "install_route": "official-windows-binary-or-wsl2",
+    "label": "Kallisto",
+    "licence_acceptance_required": false,
+    "licence_spdx": "BSD-2-Clause",
+    "mode": "official-provider",
+    "model_weights_required": false,
+    "official_url": "https://pachterlab.github.io/kallisto/download",
+    "package_specs": [],
+    "priority": "P1-compulsory",
+    "redistribution_policy": "permissive-with-notice",
+    "references": [
+      "Kallisto transcriptome index"
+    ],
+    "windows_mode": "Native Windows"
+  },
+  {
+    "automatic_bundle_policy": "do-not-bundle-until-legal-review",
+    "blockers": [],
+    "engine": "msconvert",
+    "exact_release_qualified": false,
+    "install_route": "official-windows-installer",
+    "label": "ProteoWizard msconvert",
+    "licence_acceptance_required": false,
+    "licence_spdx": "Apache-2.0",
+    "mode": "official-provider",
+    "model_weights_required": false,
+    "official_url": "https://proteowizard.sourceforge.io/",
+    "package_specs": [],
+    "priority": "P2-high-value",
+    "redistribution_policy": "component-and-vendor-library-review-required",
+    "references": [],
+    "windows_mode": "Native Windows"
+  },
+  {
+    "automatic_bundle_policy": "never-auto-bundle",
+    "blockers": [
+      "User-specific provider authorisation is required; automatic redistribution is blocked.",
+      "Reference/database release, checksum, licence and disk estimate are required.",
+      "WSL2 availability and Linux runtime qualification are required on Windows."
+    ],
+    "engine": "netmhciipan",
+    "exact_release_qualified": false,
+    "install_route": "manual-authorized-download",
+    "label": "NetMHCIIpan",
+    "licence_acceptance_required": true,
+    "licence_spdx": "LicenseRef-DTU-Academic",
+    "mode": "manual-authorized",
+    "model_weights_required": false,
+    "official_url": "https://services.healthtech.dtu.dk/services/NetMHCIIpan-4.0/",
+    "package_specs": [],
+    "priority": "P4-manual-or-heavy",
+    "redistribution_policy": "restricted-do-not-bundle",
+    "references": [
+      "NetMHCIIpan data files"
+    ],
+    "windows_mode": "WSL2"
+  },
+  {
+    "automatic_bundle_policy": "never-auto-bundle",
+    "blockers": [
+      "User-specific provider authorisation is required; automatic redistribution is blocked.",
+      "Reference/database release, checksum, licence and disk estimate are required.",
+      "WSL2 availability and Linux runtime qualification are required on Windows."
+    ],
+    "engine": "netmhcpan",
+    "exact_release_qualified": false,
+    "install_route": "manual-authorized-download",
+    "label": "NetMHCpan",
+    "licence_acceptance_required": true,
+    "licence_spdx": "LicenseRef-DTU-Academic",
+    "mode": "manual-authorized",
+    "model_weights_required": false,
+    "official_url": "https://services.healthtech.dtu.dk/services/NetMHCpan-4.1/",
+    "package_specs": [],
+    "priority": "P4-manual-or-heavy",
+    "redistribution_policy": "restricted-do-not-bundle",
+    "references": [
+      "NetMHCpan data files"
+    ],
+    "windows_mode": "WSL2"
+  },
+  {
+    "automatic_bundle_policy": "do-not-bundle-until-legal-review",
+    "blockers": [],
+    "engine": "obabel",
+    "exact_release_qualified": false,
+    "install_route": "official-windows-binary-or-wsl2",
+    "label": "Open Babel",
+    "licence_acceptance_required": false,
+    "licence_spdx": "GPL-2.0-only",
+    "mode": "official-provider",
+    "model_weights_required": false,
+    "official_url": "https://openbabel.org/",
+    "package_specs": [],
+    "priority": "P1-compulsory",
+    "redistribution_policy": "copyleft-review-required",
+    "references": [],
+    "windows_mode": "Native Windows"
+  },
+  {
+    "automatic_bundle_policy": "eligible-after-release-hash-and-smoke-test",
+    "blockers": [],
+    "engine": "openms_featurefinder",
+    "exact_release_qualified": false,
+    "install_route": "openms-windows-pack",
+    "label": "OpenMS FeatureFinderMetabo",
+    "licence_acceptance_required": false,
+    "licence_spdx": "BSD-3-Clause",
+    "mode": "official-provider",
+    "model_weights_required": false,
+    "official_url": "https://www.openms.de/",
+    "package_specs": [],
+    "priority": "P2-high-value",
+    "redistribution_policy": "permissive-with-notice",
+    "references": [],
+    "windows_mode": "Native Windows"
+  },
+  {
+    "automatic_bundle_policy": "eligible-after-release-hash-and-smoke-test",
+    "blockers": [
+      "Reference/database release, checksum, licence and disk estimate are required."
+    ],
+    "engine": "picard",
+    "exact_release_qualified": false,
+    "install_route": "official-jar-java17",
+    "label": "Picard",
+    "licence_acceptance_required": false,
+    "licence_spdx": "MIT",
+    "mode": "official-provider",
+    "model_weights_required": false,
+    "official_url": "https://github.com/broadinstitute/picard",
+    "package_specs": [],
+    "priority": "P2-high-value",
+    "redistribution_policy": "permissive-with-notice",
+    "references": [
+      "Reference FASTA"
+    ],
+    "windows_mode": "Native Windows"
+  },
+  {
+    "automatic_bundle_policy": "separate-optional-model-pack",
+    "blockers": [
+      "Model-weight licence, checksum and hardware qualification are required.",
+      "WSL2 availability and Linux runtime qualification are required on Windows."
+    ],
+    "engine": "proteinmpnn",
+    "exact_release_qualified": false,
+    "install_route": "git-and-weight-verification",
+    "label": "ProteinMPNN",
+    "licence_acceptance_required": false,
+    "licence_spdx": "MIT",
+    "mode": "manual-authorized",
+    "model_weights_required": true,
+    "official_url": "https://github.com/dauparas/ProteinMPNN",
+    "package_specs": [],
+    "priority": "P4-manual-or-heavy",
+    "redistribution_policy": "permissive-with-notice",
+    "references": [],
+    "windows_mode": "WSL2"
+  },
+  {
+    "automatic_bundle_policy": "separate-optional-model-pack",
+    "blockers": [
+      "Model-weight licence, checksum and hardware qualification are required.",
+      "Reference/database release, checksum, licence and disk estimate are required.",
+      "WSL2 availability and Linux runtime qualification are required on Windows."
+    ],
+    "engine": "rfdiffusion",
+    "exact_release_qualified": false,
+    "install_route": "container-or-git-and-weight-verification",
+    "label": "RFdiffusion",
+    "licence_acceptance_required": false,
+    "licence_spdx": "BSD-3-Clause",
+    "mode": "manual-authorized",
+    "model_weights_required": true,
+    "official_url": "https://github.com/RosettaCommons/RFdiffusion",
+    "package_specs": [],
+    "priority": "P4-manual-or-heavy",
+    "redistribution_policy": "conditional-code-and-weight-review",
+    "references": [
+      "Model weights"
+    ],
+    "windows_mode": "WSL2"
+  },
+  {
+    "automatic_bundle_policy": "do-not-bundle-until-legal-review",
+    "blockers": [
+      "Reference/database release, checksum, licence and disk estimate are required."
+    ],
+    "engine": "snpeff",
+    "exact_release_qualified": false,
+    "install_route": "official-jar-java",
+    "label": "SnpEff",
+    "licence_acceptance_required": false,
+    "licence_spdx": "LGPL-3.0-or-later",
+    "mode": "official-provider",
+    "model_weights_required": false,
+    "official_url": "https://pcingola.github.io/SnpEff/",
+    "package_specs": [],
+    "priority": "P1-compulsory",
+    "redistribution_policy": "weak-copyleft-review-required",
+    "references": [
+      "SnpEff genome database"
+    ],
+    "windows_mode": "Native Windows"
+  }
+]

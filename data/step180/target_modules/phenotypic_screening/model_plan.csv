@@ -1,0 +1,4 @@
+asset_id,label,kind,release_mode,expected_format,qualification_strategy
+qualified-cell-segmentation-model,Qualified Cell Segmentation Model,model,operator-pinned-and-reviewed,manifest + checksummed assets,manual evidence intake plus automated manifest verification
+qualified-phenotype-classification-model,Qualified Phenotype Classification Model,model,operator-pinned-and-reviewed,manifest + checksummed assets,manual evidence intake plus automated manifest verification
+qualified-hit-prioritisation-model,Qualified Hit Prioritisation Model,model,operator-pinned-and-reviewed,manifest + checksummed assets,manual evidence intake plus automated manifest verification

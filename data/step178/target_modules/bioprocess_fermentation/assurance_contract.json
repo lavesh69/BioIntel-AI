@@ -1,0 +1,70 @@
+{
+  "schema": "biointel.step178.19-module-assurance-contract.v1",
+  "module_key": "bioprocess_fermentation",
+  "module_title": "Bioprocess & Fermentation Optimization",
+  "baseline_rating": 6.5,
+  "internal_after_rating": 10.0,
+  "evidence_class": "bioprocess-validation",
+  "workflow": [
+    "Lock the intended use, critical quality attribute and process endpoint and analysis population",
+    "Validate source identity, permissions, schema, units, lineage and missingness",
+    "Execute scale-aware fermentation and bioprocess optimisation with pinned code, models, references and deterministic parameters",
+    "Run leakage, calibration, subgroup, robustness and sensitivity analyses",
+    "Validate on an independent temporal, site, instrument, process or prospective evidence set",
+    "Complete expert review, signed release decision, rollback rehearsal and monitoring activation"
+  ],
+  "quality_gates": [
+    "Intended use, endpoint and acceptance criteria approved before analysis",
+    "Input permissions, provenance, schema, units and checksums verified",
+    "Code, environment, engine, reference and model versions pinned",
+    "Mass balance and units are validated",
+    "Sensor calibration and sampling timestamps are traceable",
+    "Batch, vessel and scale effects are modelled",
+    "Optimisation respects hard process and safety constraints",
+    "Independent evidence, expert sign-off and formal release review complete"
+  ],
+  "acceptance_criteria": [
+    "No critical data-integrity or provenance failure",
+    "All mandatory runtime/reference/model/cohort assets qualified",
+    "Prespecified primary performance and uncertainty criteria passed",
+    "Calibration, subgroup and robustness thresholds passed",
+    "Independent evidence meets the locked acceptance plan",
+    "Rollback and post-release monitoring are tested and approved"
+  ],
+  "required_outputs": [
+    "Process data lineage report",
+    "Mass-balance and QC report",
+    "Kinetic model card",
+    "Constrained optimisation recommendation",
+    "Scale-transfer validation",
+    "Process release decision"
+  ],
+  "risk_controls": [
+    "sensor drift",
+    "scale-up failure",
+    "batch confounding",
+    "unsafe optimisation",
+    "unmodelled feed changes"
+  ],
+  "monitoring_metrics": [
+    "yield residual drift",
+    "sensor health",
+    "critical parameter excursions",
+    "scale-transfer error"
+  ],
+  "boundary": "Bioprocess & Fermentation Optimization outputs remain research or operational decision support until the module-specific independent evidence, domain-expert review, applicable privacy/safety/clinical controls and formal controlled-release approval are complete.",
+  "model_assets": [
+    "yield-kinetics-model",
+    "process-soft-sensor",
+    "scale-transfer-model"
+  ],
+  "cohort_assets": [
+    "development-fermentation-batches",
+    "independent-scale-or-site-batches"
+  ],
+  "governance_assets": [
+    "bioprocess_fermentation-intended-use-and-risk-file",
+    "bioprocess_fermentation-validation-and-acceptance-plan",
+    "bioprocess_fermentation-monitoring-and-rollback-plan"
+  ]
+}

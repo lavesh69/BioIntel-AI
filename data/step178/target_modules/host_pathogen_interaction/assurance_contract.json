@@ -1,0 +1,70 @@
+{
+  "schema": "biointel.step178.19-module-assurance-contract.v1",
+  "module_key": "host_pathogen_interaction",
+  "module_title": "Host\u2013Pathogen Interaction",
+  "baseline_rating": 6.5,
+  "internal_after_rating": 10.0,
+  "evidence_class": "host-pathogen",
+  "workflow": [
+    "Lock the intended use, host\u2013pathogen interaction hypothesis and analysis population",
+    "Validate source identity, permissions, schema, units, lineage and missingness",
+    "Execute multi-omic host\u2013pathogen interaction and mechanism prioritisation with pinned code, models, references and deterministic parameters",
+    "Run leakage, calibration, subgroup, robustness and sensitivity analyses",
+    "Validate on an independent temporal, site, instrument, process or prospective evidence set",
+    "Complete expert review, signed release decision, rollback rehearsal and monitoring activation"
+  ],
+  "quality_gates": [
+    "Intended use, endpoint and acceptance criteria approved before analysis",
+    "Input permissions, provenance, schema, units and checksums verified",
+    "Code, environment, engine, reference and model versions pinned",
+    "Host and pathogen identifiers/releases are pinned",
+    "Cell composition and pathogen load are modelled",
+    "Directionality and causal language are bounded",
+    "Mechanisms require orthogonal infection-model confirmation",
+    "Independent evidence, expert sign-off and formal release review complete"
+  ],
+  "acceptance_criteria": [
+    "No critical data-integrity or provenance failure",
+    "All mandatory runtime/reference/model/cohort assets qualified",
+    "Prespecified primary performance and uncertainty criteria passed",
+    "Calibration, subgroup and robustness thresholds passed",
+    "Independent evidence meets the locked acceptance plan",
+    "Rollback and post-release monitoring are tested and approved"
+  ],
+  "required_outputs": [
+    "Dual-species QC report",
+    "Interaction evidence matrix",
+    "Network/mechanism ranking",
+    "Confounding sensitivity analysis",
+    "Orthogonal validation package",
+    "Research release decision"
+  ],
+  "risk_controls": [
+    "cell-composition confounding",
+    "pathogen-load confounding",
+    "database circularity",
+    "species mismatch",
+    "causal overstatement"
+  ],
+  "monitoring_metrics": [
+    "pathogen-load distribution",
+    "network evidence freshness",
+    "cohort composition drift",
+    "mechanism replication rate"
+  ],
+  "boundary": "Host\u2013Pathogen Interaction outputs remain research or operational decision support until the module-specific independent evidence, domain-expert review, applicable privacy/safety/clinical controls and formal controlled-release approval are complete.",
+  "model_assets": [
+    "interaction-prioritisation-model",
+    "network-propagation-model",
+    "mechanism-ranking-model"
+  ],
+  "cohort_assets": [
+    "host-pathogen-development-cohort",
+    "independent-infection-model-or-clinical-cohort"
+  ],
+  "governance_assets": [
+    "host_pathogen_interaction-intended-use-and-risk-file",
+    "host_pathogen_interaction-validation-and-acceptance-plan",
+    "host_pathogen_interaction-monitoring-and-rollback-plan"
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": "biointel.step180.final-five-scientific-assurance.v1",
+  "module_key": "strain_microbiome",
+  "module_title": "Strain-Resolved Microbiome",
+  "baseline_rating": 3.5,
+  "internal_after_rating": 10.0,
+  "focus": "strain-level taxonomic and functional profiling with compositional statistics, contamination controls, database pinning, mock communities and orthogonal confirmation",
+  "workflow": [
+    "Lock intended use, supported inputs, decision boundary, endpoints and quantitative acceptance thresholds before execution",
+    "Verify permissions, sample identity, schema, units, coordinate/build conventions, checksums and complete input lineage",
+    "Qualify pinned specialist runtimes, reference releases, model weights, preprocessing and hardware execution profile",
+    "Execute deterministic golden, negative, corruption, leakage, sensitivity and reproducibility fixtures in an isolated workspace",
+    "Run module-specific uncertainty, subgroup/site/instrument, contamination or selectivity checks and preserve all exclusions",
+    "Export a signed evidence bundle and remain fail-closed until independent confirmation, expert review and formal release approval"
+  ],
+  "data_gates": [
+    "Input identity, permissions, schema, units and SHA-256 lineage are complete",
+    "Sample, plate, patient, site, scanner or sequence identifiers are unique and leakage-audited",
+    "Required controls, replicates, metadata and exclusion reasons are present",
+    "Reference coordinate systems, genome builds, ontologies and database releases are pinned",
+    "Missingness, corruption, duplication and implausible-range checks pass",
+    "Train, validation, benchmark and external-confirmation assets are isolated"
+  ],
+  "model_gates": [
+    "Model provider, architecture, release, weight checksum and licence are recorded",
+    "Preprocessing, tokenisation, feature extraction and postprocessing are version locked",
+    "Intended use, unsupported use, calibration and applicability domain are documented",
+    "Training-data overlap and benchmark leakage are assessed and bounded",
+    "Uncertainty, out-of-distribution and abstention behaviour are tested",
+    "Subgroup, site, instrument or domain-shift performance is reported"
+  ],
+  "scientific_gates": [
+    "Abundance tables are non-negative, finite and compositional closure is verified",
+    "CLR or other compositional transformations use an explicit zero-handling policy",
+    "Negative controls and prevalence/frequency contamination checks are included",
+    "Strain assignments meet locked breadth, depth, uniqueness and ambiguity thresholds",
+    "Mock-community precision, recall and abundance error pass acceptance limits",
+    "Differential results account for batch, repeated measures and multiple testing",
+    "Taxonomic and functional claims remain database-dependent and require orthogonal confirmation"
+  ],
+  "acceptance_criteria": [
+    "All mandatory contracts, data gates and scientific checks pass without a critical exception",
+    "All required components, references, model assets, cohorts and benchmark fixtures are qualified",
+    "Golden results are deterministic and negative/corruption/leakage cases fail safely",
+    "Uncertainty and applicability-domain limits are exposed in every export",
+    "No unsupported biological, clinical or experimental claim is emitted",
+    "Independent confirmation, expert sign-off and formal release review are complete for controlled release"
+  ],
+  "required_outputs": [
+    "Locked intended-use and scientific acceptance contract",
+    "Runtime, model-weight, reference and dataset bill of materials",
+    "Input lineage, exclusion, leakage and contamination audit",
+    "Golden/adverse fixture results with expected-output hashes",
+    "Uncertainty, subgroup/site/instrument and applicability-domain report",
+    "Signed qualification bundle and fail-closed release decision"
+  ],
+  "risk_controls": [
+    "database-dependent false assignment",
+    "low-coverage strain overcalling",
+    "reagent or environmental contamination",
+    "compositional-analysis misuse",
+    "batch and extraction-kit confounding",
+    "function inferred without direct evidence"
+  ],
+  "monitoring_metrics": [
+    "classified-read and ambiguous-assignment fraction",
+    "negative-control contamination burden",
+    "strain coverage and confidence distribution",
+    "mock-community precision and recall",
+    "database and batch drift"
+  ],
+  "boundary": "Strain and function calls depend on database content, coverage and ambiguity. They do not establish viable organisms, transmission, resistance phenotype or causal function without orthogonal confirmation.",
+  "decision_policy": "internal-10of10-external-fail-closed"
+}

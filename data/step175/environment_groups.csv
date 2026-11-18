@@ -1,0 +1,13 @@
+group_id,label,python_version,engine_categories,gpu_optional,gpu_required_for_full_qualification,approximate_environment_gb,notes
+genomics-core,"Genomics, variants and transcriptomics",3.11,"('Genomics', 'Variant interpretation', 'Structural variation', 'Transcriptomics', 'Phylogenetics')",False,False,8.0,
+longread-assembly,Long-read sequencing and assembly,3.11,"('Genome assembly', 'Long-read sequencing', 'Long-read epigenomics')",True,False,12.0,
+pangenome,Pangenome graph toolchain,3.11,"('Pangenomics',)",False,False,6.0,
+microbiome-amr,Metagenomics and AMR,3.11,"('Metagenomics', 'AMR')",False,False,12.0,
+single-cell,Single-cell analysis,3.11,"('Single-cell',)",True,False,8.0,
+structure-design,Structural biology and protein design,3.11,"('Structural biology', 'Protein structure', 'Protein design')",True,True,18.0,
+proteomics,Proteomics and mass spectrometry,3.11,"('Proteomics', 'Mass spectrometry')",False,False,8.0,
+imaging,Bioimaging and pathology,3.11,"('Bioimaging', 'Digital pathology')",True,True,10.0,
+population,Population genetics,3.11,"('Population genetics',)",False,False,8.0,
+immunology,Antibody and immunoinformatics,3.11,"('Antibody engineering', 'Immunoinformatics')",False,False,5.0,
+epigenomics,Epigenomics,3.11,"('Epigenomics',)",False,False,6.0,
+local-ai,Local scientific AI,3.11,"('Local AI',)",True,False,8.0,

@@ -1,0 +1,37 @@
+{
+  "schema": "biointel.step177.21-module-contract.v1",
+  "module_key": "glycomics_glycoproteomics",
+  "module_title": "Glycomics & Glycoproteomics",
+  "workflow": [
+    "Raw spectra and sample metadata QC",
+    "Glycan/glycopeptide identification",
+    "FDR and site-localisation control",
+    "Quantification and batch correction",
+    "Reference-material and expert review"
+  ],
+  "quality_gates": [
+    "Instrument method and calibration recorded",
+    "Search library release pinned",
+    "Target-decoy FDR passed",
+    "Site-localisation confidence passed",
+    "Batch and missingness sensitivity reviewed",
+    "Reference material or orthogonal assay passed"
+  ],
+  "required_outputs": [
+    "Spectral QC",
+    "Identification/FDR table",
+    "Site-localisation report",
+    "Quantification matrix",
+    "Release gate"
+  ],
+  "boundary": "Glycan and glycosite assignments require spectrum-level review and orthogonal confirmation for high-impact claims.",
+  "model_assets": [
+    "glycopeptide-scoring-model",
+    "site-localisation-model",
+    "fdr-calibration-model"
+  ],
+  "cohort_assets": [
+    "glycomics_glycoproteomics-development-cohort",
+    "glycomics_glycoproteomics-independent-external-cohort"
+  ]
+}

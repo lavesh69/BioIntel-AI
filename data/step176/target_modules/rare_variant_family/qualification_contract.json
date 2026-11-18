@@ -1,0 +1,42 @@
+{
+  "schema": "biointel.step176.module-contract.v1",
+  "module_key": "rare_variant_family",
+  "module_title": "Rare Variant & Family Genetics",
+  "evidence_class": "clinical-high-impact",
+  "workflow": [
+    "Pedigree/sample identity QC",
+    "Variant normalisation and annotation",
+    "Inheritance/segregation analysis",
+    "Phenotype-driven prioritisation",
+    "Family review package"
+  ],
+  "quality_gates": [
+    "Pedigree relationships confirmed",
+    "Genome build and references pinned",
+    "Population frequencies qualified",
+    "Segregation/orthogonal confirmation",
+    "Clinical genetics sign-off"
+  ],
+  "required_outputs": [
+    "Sample/pedigree QC",
+    "Inheritance table",
+    "Phenotype match evidence",
+    "Candidate variant ledger",
+    "Clinical boundary gate"
+  ],
+  "required_engines": [
+    "bcftools",
+    "vep",
+    "whatshap"
+  ],
+  "required_references": [
+    "clinvar-grch38-tbi",
+    "clinvar-grch38-vcf",
+    "gnomad-genomes",
+    "grch38-fasta",
+    "hpo-ontology",
+    "vep-cache-grch38"
+  ],
+  "scientific_boundary": "Rare-variant findings require accredited confirmation, segregation review and qualified clinical-genetics interpretation.",
+  "release_policy": "fail-closed"
+}

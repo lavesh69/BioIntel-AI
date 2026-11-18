@@ -1,0 +1,35 @@
+{
+  "study": {
+    "study_id": "EXT-DTI-REPLACE-ME",
+    "title": "Independent external DTI validation",
+    "domain": "dti",
+    "study_type": "external_validation",
+    "evidence_class": "independent_external_analytical",
+    "status": "completed",
+    "sponsor_organization": "SPONSOR-ORG",
+    "coordinator_organization": "COORDINATOR-ORG",
+    "source_provider": "BINDINGDB-OR-OTHER-INDEPENDENT-SOURCE",
+    "training_provider": "CHEMBL-OR-TRAINING-SOURCE",
+    "dataset_sha256": "REPLACE_WITH_64_HEX_SHA256",
+    "model_sha256": "REPLACE_WITH_64_HEX_SHA256",
+    "protocol_sha256": "REPLACE_WITH_64_HEX_SHA256",
+    "manifest_sha256": "REPLACE_WITH_64_HEX_SHA256",
+    "preregistered_at": "2026-01-01T00:00:00+00:00",
+    "locked_at": "2026-01-02T00:00:00+00:00",
+    "completed_at": "2026-02-01T00:00:00+00:00",
+    "blinded": true,
+    "analytical_only": true
+  },
+  "sites": [],
+  "outcomes": [],
+  "metrics": [
+    {"split_name": "independent_external", "metric_name": "roc_auc", "metric_value": 0.0, "ci_lower": 0.0, "ci_upper": 0.0, "threshold": 0.75, "passed": false},
+    {"split_name": "independent_external", "metric_name": "balanced_accuracy", "metric_value": 0.0, "ci_lower": 0.0, "ci_upper": 0.0, "threshold": 0.65, "passed": false},
+    {"split_name": "independent_external", "metric_name": "ece", "metric_value": 1.0, "ci_lower": 0.0, "ci_upper": 1.0, "threshold": 0.10, "passed": false},
+    {"split_name": "independent_external", "metric_name": "interval_coverage", "metric_value": 0.0, "ci_lower": 0.0, "ci_upper": 1.0, "threshold": 0.85, "passed": false}
+  ],
+  "reviews": [],
+  "metadata": {
+    "instructions": "Add at least 100 immutable outcomes, a sponsor-independent site attestation and an independent signed approved review."
+  }
+}

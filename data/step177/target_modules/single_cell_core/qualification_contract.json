@@ -1,0 +1,37 @@
+{
+  "schema": "biointel.step177.21-module-contract.v1",
+  "module_key": "single_cell_core",
+  "module_title": "Single-Cell Analysis",
+  "workflow": [
+    "Cell/gene QC and ambient RNA review",
+    "Normalisation, dimensionality and batch assessment",
+    "Clustering and marker evidence",
+    "Cell-type annotation with uncertainty",
+    "Independent cohort and expert review"
+  ],
+  "quality_gates": [
+    "Sample and chemistry metadata locked",
+    "Doublet/ambient RNA controls complete",
+    "Batch correction sensitivity reviewed",
+    "Cluster stability assessed",
+    "Marker and ontology concordance passed",
+    "Independent cohort/site validation passed"
+  ],
+  "required_outputs": [
+    "Cell QC",
+    "Embedding/cluster package",
+    "Marker table",
+    "Annotation confidence report",
+    "Release gate"
+  ],
+  "boundary": "Cell states and labels are analysis-dependent and require marker, tissue-context and independent validation.",
+  "model_assets": [
+    "cell-qc-model",
+    "annotation-model",
+    "batch-integration-model"
+  ],
+  "cohort_assets": [
+    "single_cell_core-development-cohort",
+    "single_cell_core-independent-external-cohort"
+  ]
+}

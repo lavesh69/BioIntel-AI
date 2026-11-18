@@ -1,0 +1,13 @@
+{
+  "schema": "biointel.step175.engine-fixture.v1",
+  "engine": "proteinmpnn",
+  "environment_group": "structure-design",
+  "probe_executable": "protein_mpnn_run.py",
+  "version_probe": "protein_mpnn_run.py, --version",
+  "golden_fixture_level": "L2-synthetic-known-answer",
+  "negative_control_required": true,
+  "module_integration_level": "L3-native-workflow",
+  "expected_exit_code": 0,
+  "output_sha256_required": true,
+  "actual_result": "pending-target-execution"
+}

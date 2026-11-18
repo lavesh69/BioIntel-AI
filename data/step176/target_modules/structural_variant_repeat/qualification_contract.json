@@ -1,0 +1,40 @@
+{
+  "schema": "biointel.step176.module-contract.v1",
+  "module_key": "structural_variant_repeat",
+  "module_title": "Structural Variant & Repeat Expansion",
+  "evidence_class": "clinical-high-impact",
+  "workflow": [
+    "Read/sample QC",
+    "SV/repeat calling",
+    "Breakpoint and read-support review",
+    "Annotation/segregation analysis",
+    "Orthogonal confirmation package"
+  ],
+  "quality_gates": [
+    "Genome build locked",
+    "Caller versions and parameters pinned",
+    "Read-level evidence",
+    "Repeat catalogue qualified",
+    "Orthogonal confirmation and expert sign-off"
+  ],
+  "required_outputs": [
+    "QC report",
+    "SV/repeat candidate table",
+    "Breakpoint/read evidence",
+    "Segregation/annotation ledger",
+    "Clinical boundary gate"
+  ],
+  "required_engines": [
+    "bcftools",
+    "expansionhunter",
+    "samtools",
+    "sniffles"
+  ],
+  "required_references": [
+    "grch38-fasta",
+    "repeat-expansion-catalog",
+    "vep-cache-grch38"
+  ],
+  "scientific_boundary": "SV and repeat-expansion candidates require read-level review, orthogonal confirmation and qualified clinical interpretation.",
+  "release_policy": "fail-closed"
+}

@@ -1,0 +1,70 @@
+{
+  "schema": "biointel.step178.19-module-assurance-contract.v1",
+  "module_key": "flow_cytometry",
+  "module_title": "Flow Cytometry",
+  "baseline_rating": 6.5,
+  "internal_after_rating": 10.0,
+  "evidence_class": "flow-cytometry",
+  "workflow": [
+    "Lock the intended use, locked phenotype and gating hierarchy and analysis population",
+    "Validate source identity, permissions, schema, units, lineage and missingness",
+    "Execute compensation, gating and population quantification with instrument-aware controls with pinned code, models, references and deterministic parameters",
+    "Run leakage, calibration, subgroup, robustness and sensitivity analyses",
+    "Validate on an independent temporal, site, instrument, process or prospective evidence set",
+    "Complete expert review, signed release decision, rollback rehearsal and monitoring activation"
+  ],
+  "quality_gates": [
+    "Intended use, endpoint and acceptance criteria approved before analysis",
+    "Input permissions, provenance, schema, units and checksums verified",
+    "Code, environment, engine, reference and model versions pinned",
+    "FCS metadata and detector configuration are captured",
+    "Compensation uses qualified single-stain controls",
+    "Gate hierarchy and FMO controls are auditable",
+    "Instrument, operator and batch drift are quantified",
+    "Independent evidence, expert sign-off and formal release review complete"
+  ],
+  "acceptance_criteria": [
+    "No critical data-integrity or provenance failure",
+    "All mandatory runtime/reference/model/cohort assets qualified",
+    "Prespecified primary performance and uncertainty criteria passed",
+    "Calibration, subgroup and robustness thresholds passed",
+    "Independent evidence meets the locked acceptance plan",
+    "Rollback and post-release monitoring are tested and approved"
+  ],
+  "required_outputs": [
+    "FCS provenance report",
+    "Compensation matrix and residuals",
+    "Gate hierarchy audit",
+    "Population summary with uncertainty",
+    "Instrument/site drift report",
+    "Flow release decision"
+  ],
+  "risk_controls": [
+    "compensation spillover error",
+    "subjective gating",
+    "instrument drift",
+    "doublet/debris contamination",
+    "panel mismatch"
+  ],
+  "monitoring_metrics": [
+    "control median drift",
+    "compensation residuals",
+    "population-frequency drift",
+    "event-yield QC"
+  ],
+  "boundary": "Flow Cytometry outputs remain research or operational decision support until the module-specific independent evidence, domain-expert review, applicable privacy/safety/clinical controls and formal controlled-release approval are complete.",
+  "model_assets": [
+    "compensation-model",
+    "gating-classifier",
+    "population-drift-model"
+  ],
+  "cohort_assets": [
+    "flow-development-runs",
+    "independent-instrument-or-site-runs"
+  ],
+  "governance_assets": [
+    "flow_cytometry-intended-use-and-risk-file",
+    "flow_cytometry-validation-and-acceptance-plan",
+    "flow_cytometry-monitoring-and-rollback-plan"
+  ]
+}

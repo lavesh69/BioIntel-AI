@@ -1,0 +1,4 @@
+component,label,install_route,platform_target,smoke_test
+python:sqlite3,SQLite job registry,standard-library,Windows/Python,
+python:psutil,Process tree control,pinned-python-venv,Windows/Python,
+python:concurrent.futures,Bounded worker execution,standard-library,Windows/Python,

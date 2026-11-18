@@ -1,0 +1,19 @@
+{
+  "schema": "biointel.step122.protein_design_request.v1",
+  "backend": "proteinmpnn",
+  "workspace": "workspace/protein_design_runs",
+  "run_name": "proteinmpnn-design",
+  "input_path": "C:/BioIntelInput/target.pdb",
+  "parameters": {
+    "chains": ["A"],
+    "fixed_positions": "1,2,3",
+    "design_positions": "",
+    "num_sequences": 16,
+    "sampling_temperature": 0.1,
+    "batch_size": 1,
+    "seed": 42,
+    "threads": 8
+  },
+  "timeout_hours": 48,
+  "dry_run": true
+}

@@ -1,0 +1,22 @@
+name: biointel175-genomics-core
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python=3.11
+  - pip
+  - bcftools
+  - blast
+  - bowtie2
+  - bwa-mem2
+  - ensembl-vep
+  - expansionhunter
+  - iqtree
+  - mafft
+  - minimap2
+  - samtools
+  - sniffles
+  - star
+  - whatshap
+  - pip:
+      - whatshap

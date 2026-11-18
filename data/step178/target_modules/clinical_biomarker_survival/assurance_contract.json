@@ -1,0 +1,70 @@
+{
+  "schema": "biointel.step178.19-module-assurance-contract.v1",
+  "module_key": "clinical_biomarker_survival",
+  "module_title": "Clinical Biomarker & Survival Analysis",
+  "baseline_rating": 6.5,
+  "internal_after_rating": 10.0,
+  "evidence_class": "clinical-survival",
+  "workflow": [
+    "Lock the intended use, locked survival endpoint and censoring definition and analysis population",
+    "Validate source identity, permissions, schema, units, lineage and missingness",
+    "Execute clinically governed biomarker, survival and patient-stratification analysis with pinned code, models, references and deterministic parameters",
+    "Run leakage, calibration, subgroup, robustness and sensitivity analyses",
+    "Validate on an independent temporal, site, instrument, process or prospective evidence set",
+    "Complete expert review, signed release decision, rollback rehearsal and monitoring activation"
+  ],
+  "quality_gates": [
+    "Intended use, endpoint and acceptance criteria approved before analysis",
+    "Input permissions, provenance, schema, units and checksums verified",
+    "Code, environment, engine, reference and model versions pinned",
+    "Time origin, endpoint and censoring are locked",
+    "Competing risks and time-varying effects are assessed",
+    "Optimism correction and calibration are reported",
+    "Clinical utility and subgroup transportability are evaluated",
+    "Independent evidence, expert sign-off and formal release review complete"
+  ],
+  "acceptance_criteria": [
+    "No critical data-integrity or provenance failure",
+    "All mandatory runtime/reference/model/cohort assets qualified",
+    "Prespecified primary performance and uncertainty criteria passed",
+    "Calibration, subgroup and robustness thresholds passed",
+    "Independent evidence meets the locked acceptance plan",
+    "Rollback and post-release monitoring are tested and approved"
+  ],
+  "required_outputs": [
+    "Endpoint specification",
+    "Cohort flow and missingness report",
+    "Survival model card",
+    "Time-dependent discrimination/calibration",
+    "Subgroup and clinical-utility report",
+    "Clinical research release decision"
+  ],
+  "risk_controls": [
+    "informative censoring",
+    "immortal-time bias",
+    "endpoint misclassification",
+    "small-event overfitting",
+    "subgroup harm"
+  ],
+  "monitoring_metrics": [
+    "time-dependent calibration",
+    "censoring pattern drift",
+    "event-rate drift",
+    "subgroup performance"
+  ],
+  "boundary": "Clinical Biomarker & Survival Analysis outputs remain research or operational decision support until the module-specific independent evidence, domain-expert review, applicable privacy/safety/clinical controls and formal controlled-release approval are complete.",
+  "model_assets": [
+    "survival-risk-model",
+    "calibration-model",
+    "patient-stratification-model"
+  ],
+  "cohort_assets": [
+    "retrospective-development-cohort",
+    "independent-prospective-or-external-cohort"
+  ],
+  "governance_assets": [
+    "clinical_biomarker_survival-intended-use-and-risk-file",
+    "clinical_biomarker_survival-validation-and-acceptance-plan",
+    "clinical_biomarker_survival-monitoring-and-rollback-plan"
+  ]
+}

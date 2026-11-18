@@ -1,0 +1,110 @@
+{
+  "schema": "biointel.step177.asset-index.v1",
+  "modules": [
+    {
+      "module_key": "biomedical_foundation_model_hub",
+      "module_title": "Biomedical Foundation Model Hub",
+      "folder": "data/step177/target_modules/biomedical_foundation_model_hub"
+    },
+    {
+      "module_key": "bioimage_microscopy",
+      "module_title": "Bioimage & Microscopy AI",
+      "folder": "data/step177/target_modules/bioimage_microscopy"
+    },
+    {
+      "module_key": "cell_atlas_mapping",
+      "module_title": "Cell Atlas Mapping",
+      "folder": "data/step177/target_modules/cell_atlas_mapping"
+    },
+    {
+      "module_key": "epigenomics_chromatin",
+      "module_title": "Epigenomics & Chromatin Regulation",
+      "folder": "data/step177/target_modules/epigenomics_chromatin"
+    },
+    {
+      "module_key": "glycomics_glycoproteomics",
+      "module_title": "Glycomics & Glycoproteomics",
+      "folder": "data/step177/target_modules/glycomics_glycoproteomics"
+    },
+    {
+      "module_key": "metabolomics_lipidomics",
+      "module_title": "Metabolomics & Lipidomics",
+      "folder": "data/step177/target_modules/metabolomics_lipidomics"
+    },
+    {
+      "module_key": "multiomics_harmonization",
+      "module_title": "Multi-Omics Harmonization",
+      "folder": "data/step177/target_modules/multiomics_harmonization"
+    },
+    {
+      "module_key": "organoid_3d",
+      "module_title": "Organoid & 3D Cell Analytics",
+      "folder": "data/step177/target_modules/organoid_3d"
+    },
+    {
+      "module_key": "pathogen_outbreak_core",
+      "module_title": "Pathogen Outbreak Genomics",
+      "folder": "data/step177/target_modules/pathogen_outbreak_core"
+    },
+    {
+      "module_key": "pangenome_core",
+      "module_title": "Pangenome & Variation Graph",
+      "folder": "data/step177/target_modules/pangenome_core"
+    },
+    {
+      "module_key": "pangenome_population_medicine",
+      "module_title": "Pangenome Population Medicine",
+      "folder": "data/step177/target_modules/pangenome_population_medicine"
+    },
+    {
+      "module_key": "rna_isoform_splicing",
+      "module_title": "RNA Isoform & Alternative Splicing",
+      "folder": "data/step177/target_modules/rna_isoform_splicing"
+    },
+    {
+      "module_key": "single_cell_core",
+      "module_title": "Single-Cell Analysis",
+      "folder": "data/step177/target_modules/single_cell_core"
+    },
+    {
+      "module_key": "single_cell_long_read_isoforms",
+      "module_title": "Single-Cell Long-Read Isoforms",
+      "folder": "data/step177/target_modules/single_cell_long_read_isoforms"
+    },
+    {
+      "module_key": "single_cell_trajectory",
+      "module_title": "Single-Cell Trajectory & Communication",
+      "folder": "data/step177/target_modules/single_cell_trajectory"
+    },
+    {
+      "module_key": "spatial_medicine_tme",
+      "module_title": "Spatial Medicine & Tumour Microenvironment",
+      "folder": "data/step177/target_modules/spatial_medicine_tme"
+    },
+    {
+      "module_key": "structural_bioinformatics_core",
+      "module_title": "Structural Bioinformatics",
+      "folder": "data/step177/target_modules/structural_bioinformatics_core"
+    },
+    {
+      "module_key": "virology_evolution",
+      "module_title": "Virology & Viral Evolution",
+      "folder": "data/step177/target_modules/virology_evolution"
+    },
+    {
+      "module_key": "offline_copilot_core",
+      "module_title": "Offline Scientific Copilot Core",
+      "folder": "data/step177/target_modules/offline_copilot_core"
+    },
+    {
+      "module_key": "offline_scientific_copilot_v2",
+      "module_title": "Offline Scientific Copilot V2",
+      "folder": "data/step177/target_modules/offline_scientific_copilot_v2"
+    },
+    {
+      "module_key": "digital_pathology_foundation",
+      "module_title": "Digital Pathology Foundation Model",
+      "folder": "data/step177/target_modules/digital_pathology_foundation"
+    }
+  ]
+}

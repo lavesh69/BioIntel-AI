@@ -1,0 +1,39 @@
+{
+  "schema": "biointel.step176.module-contract.v1",
+  "module_key": "metagenomics_core",
+  "module_title": "Metagenomics Pipeline",
+  "evidence_class": "microbiome-research",
+  "workflow": [
+    "Read/sample QC and controls",
+    "Taxonomic profiling",
+    "Functional profiling",
+    "Compositional and diversity analysis",
+    "Contamination-aware interpretation"
+  ],
+  "quality_gates": [
+    "Negative controls",
+    "Mock community",
+    "Database releases pinned",
+    "Batch/extraction effects reviewed",
+    "Microbiome expert sign-off"
+  ],
+  "required_outputs": [
+    "QC and contamination report",
+    "Taxonomy table",
+    "Functional table",
+    "Diversity/differential analysis",
+    "Release gate"
+  ],
+  "required_engines": [
+    "bracken",
+    "humann",
+    "kraken2"
+  ],
+  "required_references": [
+    "humann-chocophlan",
+    "humann-uniref90",
+    "kraken2-standard"
+  ],
+  "scientific_boundary": "Metagenomic associations are research findings and require contamination controls, qualified databases and independent confirmation.",
+  "release_policy": "fail-closed"
+}

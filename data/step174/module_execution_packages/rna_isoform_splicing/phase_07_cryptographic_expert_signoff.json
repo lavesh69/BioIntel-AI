@@ -1,0 +1,27 @@
+{
+  "schema": "biointel.step174.module-phase-work-package.v1",
+  "module_key": "rna_isoform_splicing",
+  "module_title": "RNA splicing depth",
+  "phase_number": 7,
+  "phase_key": "cryptographic_expert_signoff",
+  "phase_title": "Independent expert sign-off",
+  "applicable": true,
+  "complete": false,
+  "software_automation_ready": true,
+  "objective": "Obtain qualified independent domain and QA review with conflict disclosure and cryptographically verifiable signatures.",
+  "software_automation": "Credential, conflict, review, public-key and detached-signature verification using SHA-256/OpenSSL.",
+  "external_evidence_required": [
+    "Expert credential artifact",
+    "Conflict-of-interest disclosure",
+    "Signed review report",
+    "Detached signature and public key",
+    "Explicit independent approval decision"
+  ],
+  "completion_rule": "The Step 172 expert-signoff gate must meet the module minimum with cryptographically verified independent approvals.",
+  "command": "python scripts\\step174_realworld_manager.py prepare-expert-kit --module rna_isoform_splicing",
+  "claim_policy": {
+    "external_evidence_must_be_genuine": true,
+    "metadata_flags_without_files_are_ineligible": true,
+    "missing_evidence_decision": "research-only-fail-closed"
+  }
+}

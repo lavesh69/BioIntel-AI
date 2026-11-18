@@ -1,0 +1,22 @@
+{
+  "module_key": "phenotypic_screening",
+  "checks": {
+    "contract_schema_valid": true,
+    "positive_fixture_deterministic": true,
+    "negative_fixture_rejected": true,
+    "corruption_fixture_rejected": true,
+    "leakage_fixture_rejected": true,
+    "clean_split_accepted": true,
+    "artifact_hash_verified": true,
+    "uncertainty_and_abstention_required": true,
+    "unsupported_claims_blocked": true,
+    "second_run_reproducible": true,
+    "z_prime_threshold_passed": true,
+    "replicate_concordance_passed": true,
+    "multiple_testing_control_valid": true,
+    "edge_effect_detected_in_adverse_fixture": true,
+    "segmentation_quality_passed": true,
+    "dose_response_monotonic": true,
+    "low_confidence_hit_abstains": true
+  }
+}

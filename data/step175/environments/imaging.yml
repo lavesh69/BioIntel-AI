@@ -1,0 +1,15 @@
+name: biointel175-imaging
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python=3.11
+  - pip
+  - cellpose
+  - openslide
+  - openslide-python
+  - stardist
+  - pip:
+      - cellpose
+      - openslide-python
+      - stardist

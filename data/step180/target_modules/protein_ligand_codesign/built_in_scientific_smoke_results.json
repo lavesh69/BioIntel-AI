@@ -1,0 +1,23 @@
+{
+  "module_key": "protein_ligand_codesign",
+  "checks": {
+    "contract_schema_valid": true,
+    "positive_fixture_deterministic": true,
+    "negative_fixture_rejected": true,
+    "corruption_fixture_rejected": true,
+    "leakage_fixture_rejected": true,
+    "clean_split_accepted": true,
+    "artifact_hash_verified": true,
+    "uncertainty_and_abstention_required": true,
+    "unsupported_claims_blocked": true,
+    "second_run_reproducible": true,
+    "pose_reproducibility_passed": true,
+    "steric_clash_check_passed": true,
+    "invalid_clash_detected": true,
+    "design_constraints_enforced": true,
+    "decoy_ranking_separates_actives": true,
+    "ensemble_consensus_present": true,
+    "selectivity_margin_passed": true,
+    "experimental_claim_gate_enforced": true
+  }
+}

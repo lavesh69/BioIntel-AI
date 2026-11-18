@@ -1,0 +1,70 @@
+{
+  "schema": "biointel.step178.19-module-assurance-contract.v1",
+  "module_key": "explainable_ai_assurance",
+  "module_title": "Explainable AI & Model Assurance",
+  "baseline_rating": 6.07,
+  "internal_after_rating": 10.0,
+  "evidence_class": "model-assurance",
+  "workflow": [
+    "Lock the intended use, model assurance claim for a bounded intended use and analysis population",
+    "Validate source identity, permissions, schema, units, lineage and missingness",
+    "Execute multi-method explanation, fairness, robustness and model assurance with pinned code, models, references and deterministic parameters",
+    "Run leakage, calibration, subgroup, robustness and sensitivity analyses",
+    "Validate on an independent temporal, site, instrument, process or prospective evidence set",
+    "Complete expert review, signed release decision, rollback rehearsal and monitoring activation"
+  ],
+  "quality_gates": [
+    "Intended use, endpoint and acceptance criteria approved before analysis",
+    "Input permissions, provenance, schema, units and checksums verified",
+    "Code, environment, engine, reference and model versions pinned",
+    "Explanations are checked for fidelity, stability and sensitivity",
+    "Fairness metrics are selected with domain justification",
+    "Robustness, calibration and out-of-distribution behaviour are tested",
+    "Human-factors evaluation verifies that explanations are not misleading",
+    "Independent evidence, expert sign-off and formal release review complete"
+  ],
+  "acceptance_criteria": [
+    "No critical data-integrity or provenance failure",
+    "All mandatory runtime/reference/model/cohort assets qualified",
+    "Prespecified primary performance and uncertainty criteria passed",
+    "Calibration, subgroup and robustness thresholds passed",
+    "Independent evidence meets the locked acceptance plan",
+    "Rollback and post-release monitoring are tested and approved"
+  ],
+  "required_outputs": [
+    "Intended-use and risk specification",
+    "Explanation fidelity/stability report",
+    "Fairness and subgroup assessment",
+    "Robustness/OOD stress report",
+    "Human-factors review",
+    "Assurance release decision"
+  ],
+  "risk_controls": [
+    "explanation instability",
+    "proxy discrimination",
+    "metric gaming",
+    "automation bias",
+    "distribution shift"
+  ],
+  "monitoring_metrics": [
+    "explanation drift",
+    "fairness gap",
+    "calibration error",
+    "OOD rate"
+  ],
+  "boundary": "Explainable AI & Model Assurance outputs remain research or operational decision support until the module-specific independent evidence, domain-expert review, applicable privacy/safety/clinical controls and formal controlled-release approval are complete.",
+  "model_assets": [
+    "explanation-stability-auditor",
+    "fairness-auditor",
+    "robustness-stress-model"
+  ],
+  "cohort_assets": [
+    "assurance-development-evaluation-set",
+    "independent-shifted-or-external-evaluation-set"
+  ],
+  "governance_assets": [
+    "explainable_ai_assurance-intended-use-and-risk-file",
+    "explainable_ai_assurance-validation-and-acceptance-plan",
+    "explainable_ai_assurance-monitoring-and-rollback-plan"
+  ]
+}

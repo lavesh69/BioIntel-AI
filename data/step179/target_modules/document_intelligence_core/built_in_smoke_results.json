@@ -1,0 +1,16 @@
+{
+  "module_key": "document_intelligence_core",
+  "checks": {
+    "schema_valid": true,
+    "positive_fixture_deterministic": true,
+    "negative_fixture_rejected": true,
+    "corruption_fixture_rejected": true,
+    "recovery_or_rollback_passed": true,
+    "concurrency_safe": true,
+    "artifact_hash_verified": true,
+    "resource_limit_enforced": true,
+    "page_coordinates_retained": true,
+    "low_confidence_requires_review": true,
+    "duplicate_page_detected": true
+  }
+}

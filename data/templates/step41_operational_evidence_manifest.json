@@ -1,0 +1,54 @@
+{
+  "study": {
+    "evidence_id": "REPLACE-WITH-EXTERNAL-EVIDENCE-ID",
+    "area_key": "production_sla_history",
+    "title": "Replace with authentic evidence title",
+    "status": "completed",
+    "evidence_class": "external_operating_history",
+    "issuer_organization": "independent-monitoring-or-customer-organization",
+    "subject_organization": "deployed-organization",
+    "environment": "production",
+    "country": "ISO-3166-country-code",
+    "started_at": "2026-01-01T00:00:00+00:00",
+    "ended_at": "2026-04-01T00:00:00+00:00",
+    "manifest_sha256": "REPLACE-WITH-64-CHARACTER-SHA256",
+    "metadata": {
+      "evidence_mode": "external",
+      "intended_use": "replace with verified intended use"
+    }
+  },
+  "artifacts": [
+    {
+      "artifact_type": "signed_sla_report",
+      "uri": "evidence://replace/signed-sla-report",
+      "sha256": "REPLACE-WITH-64-CHARACTER-SHA256",
+      "observed_at": "2026-04-02T00:00:00+00:00",
+      "metadata": {"source": "external"}
+    },
+    {
+      "artifact_type": "incident_postmortems",
+      "uri": "evidence://replace/incident-postmortems",
+      "sha256": "REPLACE-WITH-64-CHARACTER-SHA256",
+      "observed_at": "2026-04-02T00:00:00+00:00",
+      "metadata": {"source": "external"}
+    }
+  ],
+  "metrics": [
+    {"metric_name": "availability_percent", "metric_value": 99.95, "unit": "%", "threshold": 99.9, "comparator": ">=", "passed": true},
+    {"metric_name": "error_rate_percent", "metric_value": 0.2, "unit": "%", "threshold": 1.0, "comparator": "<=", "passed": true},
+    {"metric_name": "p95_latency_ms", "metric_value": 450, "unit": "ms", "threshold": 1000, "comparator": "<=", "passed": true}
+  ],
+  "attestations": [
+    {
+      "signer_organization": "independent-monitoring-or-customer-organization",
+      "signer_identity": "replace-with-verifiable-identity",
+      "signer_role": "independent reviewer",
+      "independent": true,
+      "decision": "approved",
+      "signature_sha256": "REPLACE-WITH-64-CHARACTER-SHA256",
+      "signed_at": "2026-04-03T00:00:00+00:00",
+      "notes": "Evidence reviewed against Step 41 policy."
+    }
+  ],
+  "entities": []
+}

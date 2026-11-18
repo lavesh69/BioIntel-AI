@@ -1,0 +1,22 @@
+{
+  "module_key": "spatial_omics_pathology",
+  "checks": {
+    "contract_schema_valid": true,
+    "positive_fixture_deterministic": true,
+    "negative_fixture_rejected": true,
+    "corruption_fixture_rejected": true,
+    "leakage_fixture_rejected": true,
+    "clean_split_accepted": true,
+    "artifact_hash_verified": true,
+    "uncertainty_and_abstention_required": true,
+    "unsupported_claims_blocked": true,
+    "second_run_reproducible": true,
+    "coordinates_valid_and_unique": true,
+    "spatial_graph_symmetric": true,
+    "morans_i_finite": true,
+    "patient_level_split_clean": true,
+    "scanner_drift_bounded": true,
+    "region_fdr_valid": true,
+    "ood_tile_abstains": true
+  }
+}

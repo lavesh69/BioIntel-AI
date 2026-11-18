@@ -1,0 +1,5 @@
+evidence_id,domain,subject_id,claim,direction,study_design,source,version,organism,assay,sample_size,effect_size,p_value,confidence,independent,reviewer_id,review_decision,license
+E1,genomics,VAR-001,Variant associates with phenotype,support,cohort,doi:10.1000/a,v1,human,WGS,500,1.8,0.001,high,True,R1,accepted,CC-BY-4.0
+E1,genomics,VAR-001,Variant associates with phenotype,support,cohort,doi:10.1000/a,v1,human,WGS,500,1.8,0.001,high,True,R2,accepted,CC-BY-4.0
+E2,imaging,IMG-SIG-2,Image signature predicts response,support,imaging study,local:study2,2026.1,human,microscopy,80,0.7,0.02,medium,False,R1,pending,internal-review
+E3,wet_lab,ASSAY-9,Compound inhibits target,oppose,wet-lab validation,local:assay9,run-3,cell line,binding assay,12,-0.4,0.08,low,False,R1,rejected,internal-review

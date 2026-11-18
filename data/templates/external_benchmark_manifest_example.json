@@ -1,0 +1,12 @@
+{
+  "name": "Independent external benchmark",
+  "task": "classification",
+  "rows": 250,
+  "dataset_sha256": "replace_with_canonical_dataset_hash",
+  "metrics": {
+    "roc_auc": 0.8,
+    "balanced_accuracy": 0.72
+  },
+  "source": "Independent release/version",
+  "leakage_audit_required": true
+}

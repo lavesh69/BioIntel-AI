@@ -1,0 +1,37 @@
+{
+  "schema": "biointel.step177.21-module-contract.v1",
+  "module_key": "organoid_3d",
+  "module_title": "Organoid & 3D Cell Analytics",
+  "workflow": [
+    "Volume/image metadata and QC",
+    "3D segmentation and tracking",
+    "Morphology/viability phenotype extraction",
+    "Plate, batch and temporal modelling",
+    "Annotated holdout and biological review"
+  ],
+  "quality_gates": [
+    "Voxel size and channels locked",
+    "3D ground truth annotations present",
+    "Segmentation topology errors reviewed",
+    "Plate/batch drift controlled",
+    "Temporal tracking accuracy passed",
+    "Independent organoid experiment passed"
+  ],
+  "required_outputs": [
+    "3D QC",
+    "Segmentation meshes/labels",
+    "Phenotype table",
+    "Tracking and drift report",
+    "Release gate"
+  ],
+  "boundary": "3D image-derived phenotypes require assay-specific annotation, biological controls and independent experiments.",
+  "model_assets": [
+    "3d-segmentation-model",
+    "tracking-model",
+    "phenotype-classifier"
+  ],
+  "cohort_assets": [
+    "organoid_3d-development-cohort",
+    "organoid_3d-independent-external-cohort"
+  ]
+}

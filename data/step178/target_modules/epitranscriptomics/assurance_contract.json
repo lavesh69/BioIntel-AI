@@ -1,0 +1,70 @@
+{
+  "schema": "biointel.step178.19-module-assurance-contract.v1",
+  "module_key": "epitranscriptomics",
+  "module_title": "Epitranscriptomics",
+  "baseline_rating": 6.5,
+  "internal_after_rating": 10.0,
+  "evidence_class": "epitranscriptomics",
+  "workflow": [
+    "Lock the intended use, assay-specific RNA modification call and analysis population",
+    "Validate source identity, permissions, schema, units, lineage and missingness",
+    "Execute RNA-modification detection and differential epitranscriptomics with pinned code, models, references and deterministic parameters",
+    "Run leakage, calibration, subgroup, robustness and sensitivity analyses",
+    "Validate on an independent temporal, site, instrument, process or prospective evidence set",
+    "Complete expert review, signed release decision, rollback rehearsal and monitoring activation"
+  ],
+  "quality_gates": [
+    "Intended use, endpoint and acceptance criteria approved before analysis",
+    "Input permissions, provenance, schema, units and checksums verified",
+    "Code, environment, engine, reference and model versions pinned",
+    "Basecalling and alignment versions are pinned",
+    "Sequence-context and coverage artefacts are controlled",
+    "Replicate-aware differential testing is used",
+    "Orthogonal validation is required for high-impact sites",
+    "Independent evidence, expert sign-off and formal release review complete"
+  ],
+  "acceptance_criteria": [
+    "No critical data-integrity or provenance failure",
+    "All mandatory runtime/reference/model/cohort assets qualified",
+    "Prespecified primary performance and uncertainty criteria passed",
+    "Calibration, subgroup and robustness thresholds passed",
+    "Independent evidence meets the locked acceptance plan",
+    "Rollback and post-release monitoring are tested and approved"
+  ],
+  "required_outputs": [
+    "Read and alignment QC",
+    "Modification call matrix",
+    "Site-level confidence/FDR report",
+    "Differential modification results",
+    "Orthogonal confirmation package",
+    "Research release decision"
+  ],
+  "risk_controls": [
+    "coverage bias",
+    "basecalling drift",
+    "sequence-context confounding",
+    "batch effects",
+    "false site localisation"
+  ],
+  "monitoring_metrics": [
+    "coverage distribution",
+    "control-site concordance",
+    "basecaller version drift",
+    "site-level FDR"
+  ],
+  "boundary": "Epitranscriptomics outputs remain research or operational decision support until the module-specific independent evidence, domain-expert review, applicable privacy/safety/clinical controls and formal controlled-release approval are complete.",
+  "model_assets": [
+    "modification-calling-model",
+    "sequence-context-model",
+    "differential-modification-model"
+  ],
+  "cohort_assets": [
+    "epitranscriptomic-development-cohort",
+    "independent-orthogonal-validation-cohort"
+  ],
+  "governance_assets": [
+    "epitranscriptomics-intended-use-and-risk-file",
+    "epitranscriptomics-validation-and-acceptance-plan",
+    "epitranscriptomics-monitoring-and-rollback-plan"
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "schema": "biointel.step177.21-module-contract.v1",
+  "module_key": "virology_evolution",
+  "module_title": "Virology & Viral Evolution",
+  "workflow": [
+    "Read/sample and contamination QC",
+    "Consensus/minor-variant calling",
+    "Alignment and recombination screening",
+    "Phylogeny, selection and temporal analysis",
+    "Independent surveillance and expert review"
+  ],
+  "quality_gates": [
+    "Reference/lineage release pinned",
+    "Coverage and minor-variant thresholds locked",
+    "Recombination assessed",
+    "Temporal signal tested",
+    "Sampling bias sensitivity reviewed",
+    "Independent surveillance cohort passed"
+  ],
+  "required_outputs": [
+    "Sample QC",
+    "Consensus/variant table",
+    "Phylogeny/recombination report",
+    "Selection/temporal results",
+    "Release gate"
+  ],
+  "boundary": "Evolutionary and transmission inferences require sampling-aware analysis and independent surveillance context.",
+  "model_assets": [
+    "minor-variant-model",
+    "recombination-model",
+    "temporal-phylogeny-model"
+  ],
+  "cohort_assets": [
+    "virology_evolution-development-cohort",
+    "virology_evolution-independent-external-cohort"
+  ]
+}

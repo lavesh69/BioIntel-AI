@@ -1,0 +1,15 @@
+{
+  "schema": "biointel.step176.golden-fixture-template.v1",
+  "module_key": "docking_dynamics",
+  "fixture_status": "template-not-engine-qualified",
+  "positive_control_required": true,
+  "negative_control_required": true,
+  "expected_outputs": [
+    "Preparation audit",
+    "Pose ensemble",
+    "Interaction fingerprint",
+    "Dynamics QC",
+    "Research release gate"
+  ],
+  "operator_note": "Replace this template with real engine-produced, checksum-locked golden and negative-control fixtures."
+}

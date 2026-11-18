@@ -1,0 +1,23 @@
+{
+  "module_key": "protein_language_design",
+  "checks": {
+    "contract_schema_valid": true,
+    "positive_fixture_deterministic": true,
+    "negative_fixture_rejected": true,
+    "corruption_fixture_rejected": true,
+    "leakage_fixture_rejected": true,
+    "clean_split_accepted": true,
+    "artifact_hash_verified": true,
+    "uncertainty_and_abstention_required": true,
+    "unsupported_claims_blocked": true,
+    "second_run_reproducible": true,
+    "protein_alphabet_and_length_valid": true,
+    "invalid_sequence_rejected": true,
+    "training_neighbour_similarity_bounded": true,
+    "exact_duplicate_blocked": true,
+    "hydrophobic_run_bounded": true,
+    "restricted_motif_screen_passed": true,
+    "pareto_ranking_deterministic": true,
+    "structure_confidence_requires_threshold": true
+  }
+}

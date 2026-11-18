@@ -1,0 +1,70 @@
+{
+  "schema": "biointel.step178.19-module-assurance-contract.v1",
+  "module_key": "federated_biomedical_ai",
+  "module_title": "Federated Biomedical AI",
+  "baseline_rating": 6.07,
+  "internal_after_rating": 10.0,
+  "evidence_class": "federated-ai",
+  "workflow": [
+    "Lock the intended use, federated intended-use performance claim and analysis population",
+    "Validate source identity, permissions, schema, units, lineage and missingness",
+    "Execute secure, site-aware federated biomedical model development with pinned code, models, references and deterministic parameters",
+    "Run leakage, calibration, subgroup, robustness and sensitivity analyses",
+    "Validate on an independent temporal, site, instrument, process or prospective evidence set",
+    "Complete expert review, signed release decision, rollback rehearsal and monitoring activation"
+  ],
+  "quality_gates": [
+    "Intended use, endpoint and acceptance criteria approved before analysis",
+    "Input permissions, provenance, schema, units and checksums verified",
+    "Code, environment, engine, reference and model versions pinned",
+    "Site eligibility, schema and governance contracts are enforced",
+    "Secure aggregation and update validation are tested",
+    "Site heterogeneity and worst-site performance are reported",
+    "Privacy attacks, poisoning and rollback exercises are executed",
+    "Independent evidence, expert sign-off and formal release review complete"
+  ],
+  "acceptance_criteria": [
+    "No critical data-integrity or provenance failure",
+    "All mandatory runtime/reference/model/cohort assets qualified",
+    "Prespecified primary performance and uncertainty criteria passed",
+    "Calibration, subgroup and robustness thresholds passed",
+    "Independent evidence meets the locked acceptance plan",
+    "Rollback and post-release monitoring are tested and approved"
+  ],
+  "required_outputs": [
+    "Federation governance contract",
+    "Site/schema readiness report",
+    "Secure aggregation and threat test",
+    "Global and site performance scorecard",
+    "Held-out-site validation",
+    "Federated release decision"
+  ],
+  "risk_controls": [
+    "model-update poisoning",
+    "gradient leakage",
+    "site domination",
+    "schema mismatch",
+    "worst-site harm"
+  ],
+  "monitoring_metrics": [
+    "site participation",
+    "update anomaly rate",
+    "worst-site performance",
+    "privacy budget"
+  ],
+  "boundary": "Federated Biomedical AI outputs remain research or operational decision support until the module-specific independent evidence, domain-expert review, applicable privacy/safety/clinical controls and formal controlled-release approval are complete.",
+  "model_assets": [
+    "federated-global-model",
+    "site-adaptation-model",
+    "privacy-attack-auditor"
+  ],
+  "cohort_assets": [
+    "multi-site-federated-development-cohort",
+    "independent-held-out-site-cohort"
+  ],
+  "governance_assets": [
+    "federated_biomedical_ai-intended-use-and-risk-file",
+    "federated_biomedical_ai-validation-and-acceptance-plan",
+    "federated_biomedical_ai-monitoring-and-rollback-plan"
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "schema": "biointel.step176.module-contract.v1",
+  "module_key": "genome_editing_safety",
+  "module_title": "Genome Editing & Off-Target Safety",
+  "evidence_class": "translational-gene-editing",
+  "workflow": [
+    "Guide/target validation",
+    "Genome-wide candidate search",
+    "Specificity ranking",
+    "On-target consequence review",
+    "Orthogonal assay package"
+  ],
+  "quality_gates": [
+    "Genome build locked",
+    "Whole-genome search engine qualified",
+    "Relevant cell context declared",
+    "Orthogonal off-target assay attached",
+    "Genome-editing expert sign-off"
+  ],
+  "required_outputs": [
+    "Guide QC",
+    "Off-target candidate table",
+    "Specificity scorecard",
+    "Consequence review",
+    "Release gate"
+  ],
+  "required_engines": [
+    "bcftools",
+    "blastn",
+    "bowtie"
+  ],
+  "required_references": [
+    "grch38-fasta"
+  ],
+  "scientific_boundary": "Off-target predictions require cell-context-specific, orthogonal experimental confirmation before translational use.",
+  "release_policy": "fail-closed"
+}

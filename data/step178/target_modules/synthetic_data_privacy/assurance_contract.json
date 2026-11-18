@@ -1,0 +1,70 @@
+{
+  "schema": "biointel.step178.19-module-assurance-contract.v1",
+  "module_key": "synthetic_data_privacy",
+  "module_title": "Synthetic Data & Privacy Engineering",
+  "baseline_rating": 6.5,
+  "internal_after_rating": 10.0,
+  "evidence_class": "privacy-engineering",
+  "workflow": [
+    "Lock the intended use, approved data-sharing purpose and privacy budget and analysis population",
+    "Validate source identity, permissions, schema, units, lineage and missingness",
+    "Execute utility-preserving synthetic biomedical data with measurable privacy guarantees with pinned code, models, references and deterministic parameters",
+    "Run leakage, calibration, subgroup, robustness and sensitivity analyses",
+    "Validate on an independent temporal, site, instrument, process or prospective evidence set",
+    "Complete expert review, signed release decision, rollback rehearsal and monitoring activation"
+  ],
+  "quality_gates": [
+    "Intended use, endpoint and acceptance criteria approved before analysis",
+    "Input permissions, provenance, schema, units and checksums verified",
+    "Code, environment, engine, reference and model versions pinned",
+    "Purpose, threat model and privacy budget are approved",
+    "Membership, attribute and linkage attacks are tested",
+    "Rare subgroups and tails are included in utility evaluation",
+    "Release requires privacy, legal and domain-owner review",
+    "Independent evidence, expert sign-off and formal release review complete"
+  ],
+  "acceptance_criteria": [
+    "No critical data-integrity or provenance failure",
+    "All mandatory runtime/reference/model/cohort assets qualified",
+    "Prespecified primary performance and uncertainty criteria passed",
+    "Calibration, subgroup and robustness thresholds passed",
+    "Independent evidence meets the locked acceptance plan",
+    "Rollback and post-release monitoring are tested and approved"
+  ],
+  "required_outputs": [
+    "Purpose and threat model",
+    "Generator model card",
+    "Fidelity/utility scorecard",
+    "Privacy attack report",
+    "Legal/domain review record",
+    "Synthetic-data release decision"
+  ],
+  "risk_controls": [
+    "membership inference",
+    "attribute inference",
+    "record linkage",
+    "rare-case memorisation",
+    "utility masking bias"
+  ],
+  "monitoring_metrics": [
+    "privacy budget consumption",
+    "attack success rate",
+    "subgroup utility",
+    "distribution drift"
+  ],
+  "boundary": "Synthetic Data & Privacy Engineering outputs remain research or operational decision support until the module-specific independent evidence, domain-expert review, applicable privacy/safety/clinical controls and formal controlled-release approval are complete.",
+  "model_assets": [
+    "synthetic-data-generator",
+    "membership-inference-auditor",
+    "attribute-inference-auditor"
+  ],
+  "cohort_assets": [
+    "restricted-source-development-cohort",
+    "independent-privacy-and-utility-audit-cohort"
+  ],
+  "governance_assets": [
+    "synthetic_data_privacy-intended-use-and-risk-file",
+    "synthetic_data_privacy-validation-and-acceptance-plan",
+    "synthetic_data_privacy-monitoring-and-rollback-plan"
+  ]
+}

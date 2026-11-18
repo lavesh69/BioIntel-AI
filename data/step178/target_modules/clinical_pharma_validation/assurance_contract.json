@@ -1,0 +1,70 @@
+{
+  "schema": "biointel.step178.19-module-assurance-contract.v1",
+  "module_key": "clinical_pharma_validation",
+  "module_title": "Clinical/Pharma Validation",
+  "baseline_rating": 6.5,
+  "internal_after_rating": 10.0,
+  "evidence_class": "clinical-pharma-validation",
+  "workflow": [
+    "Lock the intended use, intended-use validation claim and analysis population",
+    "Validate source identity, permissions, schema, units, lineage and missingness",
+    "Execute traceable clinical and pharmaceutical validation governance with pinned code, models, references and deterministic parameters",
+    "Run leakage, calibration, subgroup, robustness and sensitivity analyses",
+    "Validate on an independent temporal, site, instrument, process or prospective evidence set",
+    "Complete expert review, signed release decision, rollback rehearsal and monitoring activation"
+  ],
+  "quality_gates": [
+    "Intended use, endpoint and acceptance criteria approved before analysis",
+    "Input permissions, provenance, schema, units and checksums verified",
+    "Code, environment, engine, reference and model versions pinned",
+    "Intended use and claim are bounded",
+    "Acceptance criteria are approved before execution",
+    "Traceability links requirements, tests, deviations and evidence",
+    "Change control, audit trail and independent review are enforced",
+    "Independent evidence, expert sign-off and formal release review complete"
+  ],
+  "acceptance_criteria": [
+    "No critical data-integrity or provenance failure",
+    "All mandatory runtime/reference/model/cohort assets qualified",
+    "Prespecified primary performance and uncertainty criteria passed",
+    "Calibration, subgroup and robustness thresholds passed",
+    "Independent evidence meets the locked acceptance plan",
+    "Rollback and post-release monitoring are tested and approved"
+  ],
+  "required_outputs": [
+    "Validation plan",
+    "Requirements traceability matrix",
+    "Executed test evidence index",
+    "Deviation/CAPA report",
+    "Independent review record",
+    "Validation release decision"
+  ],
+  "risk_controls": [
+    "scope creep",
+    "unapproved acceptance changes",
+    "evidence cherry-picking",
+    "traceability gaps",
+    "deviation concealment"
+  ],
+  "monitoring_metrics": [
+    "open deviations",
+    "requirement coverage",
+    "evidence expiry",
+    "change-control backlog"
+  ],
+  "boundary": "Clinical/Pharma Validation outputs remain research or operational decision support until the module-specific independent evidence, domain-expert review, applicable privacy/safety/clinical controls and formal controlled-release approval are complete.",
+  "model_assets": [
+    "validation-statistical-plan",
+    "acceptance-criteria-engine",
+    "traceability-risk-model"
+  ],
+  "cohort_assets": [
+    "validation-development-evidence-set",
+    "independent-confirmation-evidence-set"
+  ],
+  "governance_assets": [
+    "clinical_pharma_validation-intended-use-and-risk-file",
+    "clinical_pharma_validation-validation-and-acceptance-plan",
+    "clinical_pharma_validation-monitoring-and-rollback-plan"
+  ]
+}

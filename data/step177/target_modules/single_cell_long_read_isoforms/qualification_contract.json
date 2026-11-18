@@ -1,0 +1,37 @@
+{
+  "schema": "biointel.step177.21-module-contract.v1",
+  "module_key": "single_cell_long_read_isoforms",
+  "module_title": "Single-Cell Long-Read Isoforms",
+  "workflow": [
+    "Long-read/cell barcode QC",
+    "Barcode correction and read assignment",
+    "Isoform discovery and collapse",
+    "Cell-type-specific isoform quantification",
+    "Short-read/RT-PCR and external validation"
+  ],
+  "quality_gates": [
+    "Basecaller and chemistry pinned",
+    "Barcode assignment accuracy passed",
+    "Isoform collapse parameters locked",
+    "Chimeric/truncation artefacts reviewed",
+    "Cell-type coverage thresholds passed",
+    "Orthogonal isoform validation passed"
+  ],
+  "required_outputs": [
+    "Read/barcode QC",
+    "Isoform catalogue",
+    "Cell-by-isoform matrix",
+    "Artefact review",
+    "Release gate"
+  ],
+  "boundary": "Single-cell long-read isoforms require barcode, truncation and orthogonal transcript confirmation.",
+  "model_assets": [
+    "barcode-assignment-model",
+    "isoform-collapse-model",
+    "cell-isoform-model"
+  ],
+  "cohort_assets": [
+    "single_cell_long_read_isoforms-development-cohort",
+    "single_cell_long_read_isoforms-independent-external-cohort"
+  ]
+}

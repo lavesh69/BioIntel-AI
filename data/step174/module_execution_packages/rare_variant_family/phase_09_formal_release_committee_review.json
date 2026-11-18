@@ -1,0 +1,28 @@
+{
+  "schema": "biointel.step174.module-phase-work-package.v1",
+  "module_key": "rare_variant_family",
+  "module_title": "Family genetics depth",
+  "phase_number": 9,
+  "phase_key": "formal_release_committee_review",
+  "phase_title": "Formal controlled-release review",
+  "applicable": true,
+  "complete": false,
+  "software_automation_ready": true,
+  "objective": "Approve the exact evidence snapshot through an independent QA, domain-expert and product-owner release committee.",
+  "software_automation": "Quorum, intended-use, prohibited-use, residual-risk, signed decision, rollback and monitoring-plan verification.",
+  "external_evidence_required": [
+    "Release committee quorum",
+    "Independent QA approval",
+    "Domain-expert approval",
+    "Product-owner approval",
+    "Intended/prohibited use and residual-risk acceptance",
+    "Signed release decision and SHA-256"
+  ],
+  "completion_rule": "Formal release review and every upstream required gate must pass; averaging cannot override a failed gate.",
+  "command": "python scripts\\step174_realworld_manager.py prepare-release --module rare_variant_family",
+  "claim_policy": {
+    "external_evidence_must_be_genuine": true,
+    "metadata_flags_without_files_are_ineligible": true,
+    "missing_evidence_decision": "research-only-fail-closed"
+  }
+}

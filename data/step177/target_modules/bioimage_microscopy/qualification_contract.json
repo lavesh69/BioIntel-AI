@@ -1,0 +1,37 @@
+{
+  "schema": "biointel.step177.21-module-contract.v1",
+  "module_key": "bioimage_microscopy",
+  "module_title": "Bioimage & Microscopy AI",
+  "workflow": [
+    "Image/metadata integrity and illumination QC",
+    "Segmentation/detection model qualification",
+    "Morphology and phenotype feature extraction",
+    "Batch, plate and instrument drift analysis",
+    "Independent image-set review and release"
+  ],
+  "quality_gates": [
+    "Pixel scale and channel metadata locked",
+    "Positive/negative imaging controls present",
+    "Model weights and preprocessing pinned",
+    "Object-level error review complete",
+    "Instrument/site drift assessed",
+    "Independent annotated image set passed"
+  ],
+  "required_outputs": [
+    "Image QC report",
+    "Segmentation overlay package",
+    "Object feature table",
+    "Error and drift dashboard",
+    "Research release gate"
+  ],
+  "boundary": "Automated microscopy measurements require assay-specific annotation, instrument controls and independent image review.",
+  "model_assets": [
+    "cellpose-weights",
+    "stardist-weights",
+    "assay-specific-segmentation-model"
+  ],
+  "cohort_assets": [
+    "bioimage_microscopy-development-cohort",
+    "bioimage_microscopy-independent-external-cohort"
+  ]
+}

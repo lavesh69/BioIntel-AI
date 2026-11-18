@@ -1,0 +1,4 @@
+component,label,install_route,platform_target,smoke_test
+python:cryptography,Signature verification,pinned-python-venv,Windows/Python,
+python:packaging,Dependency/version checks,pinned-python-venv,Windows/Python,
+python:zipfile,Safe archive inspection,standard-library,Windows/Python,

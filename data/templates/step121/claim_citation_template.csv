@@ -1,0 +1,4 @@
+claim_id,claim_text,doi,pmid,title,year,study_design,evidence_direction,confidence,retracted,corrected,version
+C1,Treatment X improves endpoint Y,10.1000/demo.1,,Prospective cohort of X,2024,prospective cohort,support,high,False,False,v1
+C1,Treatment X improves endpoint Y,10.1000/demo.2,,Independent null study,2025,cohort,null,medium,False,False,v2
+C2,Biomarker A predicts outcome B,,12345678,Retrospective validation,2023,case-control,support,medium,False,True,corrected-2025

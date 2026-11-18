@@ -1,0 +1,5 @@
+family_id,individual_id,father_id,mother_id,sex,phenotype
+F1,FATHER,0,0,1,1
+F1,MOTHER,0,0,2,1
+F1,CHILD,FATHER,MOTHER,1,2
+F1,SIBLING,FATHER,MOTHER,2,1

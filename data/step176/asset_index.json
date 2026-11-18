@@ -1,0 +1,125 @@
+{
+  "schema": "biointel.step176.asset-index.v1",
+  "module_count": 17,
+  "modules": [
+    {
+      "module_key": "amr_surveillance",
+      "module_title": "AMR Genomic Surveillance & Resistance Intelligence",
+      "contract": "data/step176/target_modules/amr_surveillance/qualification_contract.json",
+      "contract_sha256": "99223a6606cea4ae1108431c21486dd15c9122f6ff8ea242cfc212c131411b9a",
+      "golden_fixture_template": "data/step176/target_modules/amr_surveillance/golden_fixture_template.json"
+    },
+    {
+      "module_key": "antibody_biologics",
+      "module_title": "Antibody & Biologics Engineering",
+      "contract": "data/step176/target_modules/antibody_biologics/qualification_contract.json",
+      "contract_sha256": "2f5dfd141113e4ebf44e305e18de4454326f31986557dd05c89b5cf9ba92ca4d",
+      "golden_fixture_template": "data/step176/target_modules/antibody_biologics/golden_fixture_template.json"
+    },
+    {
+      "module_key": "cancer_genomics_core",
+      "module_title": "Cancer Genomics",
+      "contract": "data/step176/target_modules/cancer_genomics_core/qualification_contract.json",
+      "contract_sha256": "56ca5f5b979d6f8be63f61d7638cc3643e68738e5ec42609397d93b47bedd4e3",
+      "golden_fixture_template": "data/step176/target_modules/cancer_genomics_core/golden_fixture_template.json"
+    },
+    {
+      "module_key": "cell_therapy_cart",
+      "module_title": "Cell Therapy & CAR-T Engineering",
+      "contract": "data/step176/target_modules/cell_therapy_cart/qualification_contract.json",
+      "contract_sha256": "e9fdc8df23c92f7e1e70b935bf748bae3cc3b36b706ecc76657d1b33d404b78d",
+      "golden_fixture_template": "data/step176/target_modules/cell_therapy_cart/golden_fixture_template.json"
+    },
+    {
+      "module_key": "docking_dynamics",
+      "module_title": "Molecular Docking & Dynamics",
+      "contract": "data/step176/target_modules/docking_dynamics/qualification_contract.json",
+      "contract_sha256": "3beb59a8fa4a0caa54cf8a42641f8c1eb8ec37a00e71b5e9b2373e26e6219bfb",
+      "golden_fixture_template": "data/step176/target_modules/docking_dynamics/golden_fixture_template.json"
+    },
+    {
+      "module_key": "enzyme_pathway_design",
+      "module_title": "Enzyme & Metabolic Pathway Design",
+      "contract": "data/step176/target_modules/enzyme_pathway_design/qualification_contract.json",
+      "contract_sha256": "e0573dfef11b3ec117439608304a3ed67f5c0e5b61e3a43f16e18f5a5a301107",
+      "golden_fixture_template": "data/step176/target_modules/enzyme_pathway_design/golden_fixture_template.json"
+    },
+    {
+      "module_key": "rare_variant_family",
+      "module_title": "Rare Variant & Family Genetics",
+      "contract": "data/step176/target_modules/rare_variant_family/qualification_contract.json",
+      "contract_sha256": "1349f1e165d79df30d0f8f57d95d957ae221eb8072044cb653b9f0847dd05c76",
+      "golden_fixture_template": "data/step176/target_modules/rare_variant_family/golden_fixture_template.json"
+    },
+    {
+      "module_key": "population_gwas",
+      "module_title": "Population Genetics, GWAS & PRS",
+      "contract": "data/step176/target_modules/population_gwas/qualification_contract.json",
+      "contract_sha256": "0f9a6ed70cdd6423c5e4b1c36175b08bff648dad6a046be94494d7f033995f17",
+      "golden_fixture_template": "data/step176/target_modules/population_gwas/golden_fixture_template.json"
+    },
+    {
+      "module_key": "genome_editing_safety",
+      "module_title": "Genome Editing & Off-Target Safety",
+      "contract": "data/step176/target_modules/genome_editing_safety/qualification_contract.json",
+      "contract_sha256": "1c21d1a84d56c96d1a0a38c1ef24dfb2e66d8f2daed0a54b9d73f3469273a525",
+      "golden_fixture_template": "data/step176/target_modules/genome_editing_safety/golden_fixture_template.json"
+    },
+    {
+      "module_key": "immunoinformatics_vaccine",
+      "module_title": "Immunoinformatics & Vaccine Design",
+      "contract": "data/step176/target_modules/immunoinformatics_vaccine/qualification_contract.json",
+      "contract_sha256": "a7abde1bec71115af954dd615428b3de9b769db72dd4ba1124a2c874c1420791",
+      "golden_fixture_template": "data/step176/target_modules/immunoinformatics_vaccine/golden_fixture_template.json"
+    },
+    {
+      "module_key": "long_read_core",
+      "module_title": "Long-Read Assembly & T2T",
+      "contract": "data/step176/target_modules/long_read_core/qualification_contract.json",
+      "contract_sha256": "f4a29c60955534e84fbfb605fdbd59bf2fd578b18b0e50091266f74121e6785a",
+      "golden_fixture_template": "data/step176/target_modules/long_read_core/golden_fixture_template.json"
+    },
+    {
+      "module_key": "long_read_epigenome",
+      "module_title": "Long-Read Epigenome",
+      "contract": "data/step176/target_modules/long_read_epigenome/qualification_contract.json",
+      "contract_sha256": "ffcd02361c1da0d5a656060d5d66c14df9163d96f58d50cba3effa1f13c26ff9",
+      "golden_fixture_template": "data/step176/target_modules/long_read_epigenome/golden_fixture_template.json"
+    },
+    {
+      "module_key": "metagenomics_core",
+      "module_title": "Metagenomics Pipeline",
+      "contract": "data/step176/target_modules/metagenomics_core/qualification_contract.json",
+      "contract_sha256": "65baa404188ee40fdee713a5c44e4267ca6e0dbefa8b46007aba6c44a28be2fa",
+      "golden_fixture_template": "data/step176/target_modules/metagenomics_core/golden_fixture_template.json"
+    },
+    {
+      "module_key": "one_health_environmental",
+      "module_title": "One Health & Environmental Genomics",
+      "contract": "data/step176/target_modules/one_health_environmental/qualification_contract.json",
+      "contract_sha256": "9fd8b2ecdd8a42fe27bd9a34a50c50f496763020f71d0876b32c0704353a2e69",
+      "golden_fixture_template": "data/step176/target_modules/one_health_environmental/golden_fixture_template.json"
+    },
+    {
+      "module_key": "pharmacogenomics",
+      "module_title": "Pharmacogenomics",
+      "contract": "data/step176/target_modules/pharmacogenomics/qualification_contract.json",
+      "contract_sha256": "1760414001ca140957785675652e68ce7d6ff8ae44e67dcbaecd00ef99f6c065",
+      "golden_fixture_template": "data/step176/target_modules/pharmacogenomics/golden_fixture_template.json"
+    },
+    {
+      "module_key": "proteogenomics_neoantigen",
+      "module_title": "Proteogenomics & Neoantigen Discovery",
+      "contract": "data/step176/target_modules/proteogenomics_neoantigen/qualification_contract.json",
+      "contract_sha256": "0bcbd13d9e6927702724ea945ccbbb465a3addb7739e2a78720a2bde0b84246c",
+      "golden_fixture_template": "data/step176/target_modules/proteogenomics_neoantigen/golden_fixture_template.json"
+    },
+    {
+      "module_key": "structural_variant_repeat",
+      "module_title": "Structural Variant & Repeat Expansion",
+      "contract": "data/step176/target_modules/structural_variant_repeat/qualification_contract.json",
+      "contract_sha256": "22d7f26625774fd18038ade068c546af295aee4dd1a948a977cea5d998ab4a14",
+      "golden_fixture_template": "data/step176/target_modules/structural_variant_repeat/golden_fixture_template.json"
+    }
+  ]
+}

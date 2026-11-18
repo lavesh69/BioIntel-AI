@@ -1,0 +1,6 @@
+component,label,install_route,platform_target,smoke_test
+python:openslide,OpenSlide whole-slide runtime,system-or-pinned-environment,Windows/Python/WSL as qualified,import/version/help probe only
+python:scanpy,Scanpy single-cell/spatial matrix runtime,pinned-python-venv,Windows/Python/WSL as qualified,import/version/help probe only
+python:squidpy,Squidpy spatial graph runtime,pinned-python-venv,Windows/Python/WSL as qualified,import/version/help probe only
+python:anndata,AnnData schema runtime,pinned-python-venv,Windows/Python/WSL as qualified,import/version/help probe only
+python:cellpose,Cellpose tissue segmentation runtime,pinned-python-venv,Windows/Python/WSL as qualified,import/version/help probe only

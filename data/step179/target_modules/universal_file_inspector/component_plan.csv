@@ -1,0 +1,4 @@
+component,label,install_route,platform_target,smoke_test
+python:magic,File magic detection,optional-system-package,Windows/Python,
+python:zipfile,Archive safety checks,standard-library,Windows/Python,
+python:pandas,Tabular schema inspection,pinned-python-venv,Windows/Python,

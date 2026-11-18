@@ -1,0 +1,70 @@
+{
+  "schema": "biointel.step178.19-module-assurance-contract.v1",
+  "module_key": "gene_therapy_vector",
+  "module_title": "Gene Therapy Vector Engineering",
+  "baseline_rating": 6.5,
+  "internal_after_rating": 10.0,
+  "evidence_class": "gene-therapy-vector",
+  "workflow": [
+    "Lock the intended use, vector identity, potency and safety claim and analysis population",
+    "Validate source identity, permissions, schema, units, lineage and missingness",
+    "Execute vector design, manufacturability and genomic safety assessment with pinned code, models, references and deterministic parameters",
+    "Run leakage, calibration, subgroup, robustness and sensitivity analyses",
+    "Validate on an independent temporal, site, instrument, process or prospective evidence set",
+    "Complete expert review, signed release decision, rollback rehearsal and monitoring activation"
+  ],
+  "quality_gates": [
+    "Intended use, endpoint and acceptance criteria approved before analysis",
+    "Input permissions, provenance, schema, units and checksums verified",
+    "Code, environment, engine, reference and model versions pinned",
+    "Vector sequence and regulatory elements are fully traceable",
+    "Off-target homology and integration risk are assessed",
+    "Packaging, potency and manufacturability constraints are explicit",
+    "Wet-lab identity, potency and safety confirmation is required",
+    "Independent evidence, expert sign-off and formal release review complete"
+  ],
+  "acceptance_criteria": [
+    "No critical data-integrity or provenance failure",
+    "All mandatory runtime/reference/model/cohort assets qualified",
+    "Prespecified primary performance and uncertainty criteria passed",
+    "Calibration, subgroup and robustness thresholds passed",
+    "Independent evidence meets the locked acceptance plan",
+    "Rollback and post-release monitoring are tested and approved"
+  ],
+  "required_outputs": [
+    "Vector design dossier",
+    "Sequence and element provenance",
+    "Genomic safety analysis",
+    "Manufacturability scorecard",
+    "Wet-lab verification plan/results",
+    "Gene-therapy release decision"
+  ],
+  "risk_controls": [
+    "replication-competent vector",
+    "insertional mutagenesis",
+    "immunogenicity",
+    "packaging failure",
+    "sequence instability"
+  ],
+  "monitoring_metrics": [
+    "sequence identity drift",
+    "integration-risk flags",
+    "potency trend",
+    "manufacturing deviation rate"
+  ],
+  "boundary": "Gene Therapy Vector Engineering outputs remain research or operational decision support until the module-specific independent evidence, domain-expert review, applicable privacy/safety/clinical controls and formal controlled-release approval are complete.",
+  "model_assets": [
+    "vector-design-scoring-model",
+    "integration-risk-model",
+    "manufacturability-model"
+  ],
+  "cohort_assets": [
+    "vector-development-panel",
+    "independent-wet-lab-safety-panel"
+  ],
+  "governance_assets": [
+    "gene_therapy_vector-intended-use-and-risk-file",
+    "gene_therapy_vector-validation-and-acceptance-plan",
+    "gene_therapy_vector-monitoring-and-rollback-plan"
+  ]
+}

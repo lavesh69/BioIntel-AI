@@ -1,0 +1,9 @@
+name: biointel175-local-ai
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python=3.11
+  - pip
+  - pip:
+      - llama-cpp-python

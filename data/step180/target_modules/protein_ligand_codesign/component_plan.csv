@@ -1,0 +1,7 @@
+component,label,install_route,platform_target,smoke_test
+vina,AutoDock Vina docking runtime,operator-qualified,Windows/Python/WSL as qualified,import/version/help probe only
+colabfold_batch,ColabFold structure-prediction runtime,operator-qualified,Windows/Python/WSL as qualified,import/version/help probe only
+proteinmpnn,ProteinMPNN sequence-design runtime,operator-qualified,Windows/Python/WSL as qualified,import/version/help probe only
+rfdiffusion,RFdiffusion generative-structure runtime,operator-qualified,Windows/Python/WSL as qualified,import/version/help probe only
+python:rdkit,RDKit ligand chemistry runtime,pinned-python-venv,Windows/Python/WSL as qualified,import/version/help probe only
+python:openmm,OpenMM relaxation/runtime,pinned-python-venv,Windows/Python/WSL as qualified,import/version/help probe only

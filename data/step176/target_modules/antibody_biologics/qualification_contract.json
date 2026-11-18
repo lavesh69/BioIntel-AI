@@ -1,0 +1,36 @@
+{
+  "schema": "biointel.step176.module-contract.v1",
+  "module_key": "antibody_biologics",
+  "module_title": "Antibody & Biologics Engineering",
+  "evidence_class": "translational-biologics",
+  "workflow": [
+    "Sequence and numbering validation",
+    "Germline/humanness assessment",
+    "Developability liability scan",
+    "Structure/epitope evidence",
+    "Candidate ranking and review"
+  ],
+  "quality_gates": [
+    "Sequence identity and chain pairing",
+    "Germline database pinned",
+    "Assay-backed affinity",
+    "Aggregation/stability evidence",
+    "Biologics expert sign-off"
+  ],
+  "required_outputs": [
+    "Numbered sequence",
+    "Liability matrix",
+    "Developability scorecard",
+    "Evidence trace",
+    "Candidate release gate"
+  ],
+  "required_engines": [
+    "anarci",
+    "igblast"
+  ],
+  "required_references": [
+    "igblast-germline"
+  ],
+  "scientific_boundary": "In-silico antibody prioritisation requires experimental binding, specificity, stability and developability confirmation.",
+  "release_policy": "fail-closed"
+}

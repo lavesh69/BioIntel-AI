@@ -1,0 +1,70 @@
+{
+  "schema": "biointel.step178.19-module-assurance-contract.v1",
+  "module_key": "pharmacovigilance",
+  "module_title": "Pharmacovigilance Intelligence",
+  "baseline_rating": 6.5,
+  "internal_after_rating": 10.0,
+  "evidence_class": "pharmacovigilance",
+  "workflow": [
+    "Lock the intended use, reviewable safety signal, not causal determination and analysis population",
+    "Validate source identity, permissions, schema, units, lineage and missingness",
+    "Execute auditable adverse-event signal detection and case prioritisation with pinned code, models, references and deterministic parameters",
+    "Run leakage, calibration, subgroup, robustness and sensitivity analyses",
+    "Validate on an independent temporal, site, instrument, process or prospective evidence set",
+    "Complete expert review, signed release decision, rollback rehearsal and monitoring activation"
+  ],
+  "quality_gates": [
+    "Intended use, endpoint and acceptance criteria approved before analysis",
+    "Input permissions, provenance, schema, units and checksums verified",
+    "Code, environment, engine, reference and model versions pinned",
+    "Coding dictionaries and versions are pinned",
+    "Duplicate cases and stimulated reporting are assessed",
+    "Disproportionality is presented with uncertainty and exposure caveats",
+    "Signals require qualified safety-professional review",
+    "Independent evidence, expert sign-off and formal release review complete"
+  ],
+  "acceptance_criteria": [
+    "No critical data-integrity or provenance failure",
+    "All mandatory runtime/reference/model/cohort assets qualified",
+    "Prespecified primary performance and uncertainty criteria passed",
+    "Calibration, subgroup and robustness thresholds passed",
+    "Independent evidence meets the locked acceptance plan",
+    "Rollback and post-release monitoring are tested and approved"
+  ],
+  "required_outputs": [
+    "Case ingestion and coding audit",
+    "Duplicate-detection report",
+    "Disproportionality scorecard",
+    "NLP extraction error analysis",
+    "Expert signal assessment record",
+    "PV release decision"
+  ],
+  "risk_controls": [
+    "duplicate reporting",
+    "confounding by indication",
+    "notoriety bias",
+    "coding drift",
+    "causal overstatement"
+  ],
+  "monitoring_metrics": [
+    "case-source mix",
+    "dictionary version drift",
+    "signal stability",
+    "review turnaround"
+  ],
+  "boundary": "Pharmacovigilance Intelligence outputs remain research or operational decision support until the module-specific independent evidence, domain-expert review, applicable privacy/safety/clinical controls and formal controlled-release approval are complete.",
+  "model_assets": [
+    "case-nlp-model",
+    "disproportionality-model",
+    "signal-prioritisation-model"
+  ],
+  "cohort_assets": [
+    "historical-safety-case-cohort",
+    "independent-temporal-or-source-validation-cohort"
+  ],
+  "governance_assets": [
+    "pharmacovigilance-intended-use-and-risk-file",
+    "pharmacovigilance-validation-and-acceptance-plan",
+    "pharmacovigilance-monitoring-and-rollback-plan"
+  ]
+}

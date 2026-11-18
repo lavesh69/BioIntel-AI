@@ -1,0 +1,37 @@
+{
+  "schema": "biointel.step177.21-module-contract.v1",
+  "module_key": "metabolomics_lipidomics",
+  "module_title": "Metabolomics & Lipidomics",
+  "workflow": [
+    "Raw signal and injection QC",
+    "Feature detection and alignment",
+    "Annotation with confidence levels",
+    "Normalisation, batch and differential analysis",
+    "Reference-standard and expert review"
+  ],
+  "quality_gates": [
+    "Pooled QC and blanks present",
+    "Instrument drift thresholds passed",
+    "Library/database release pinned",
+    "Annotation confidence explicitly reported",
+    "Batch/missingness sensitivity reviewed",
+    "Authentic standard or independent cohort passed"
+  ],
+  "required_outputs": [
+    "Run QC",
+    "Feature matrix",
+    "Annotation evidence table",
+    "Differential/pathway report",
+    "Release gate"
+  ],
+  "boundary": "Putative metabolite or lipid annotations are not confirmed identities without authentic standards and orthogonal evidence.",
+  "model_assets": [
+    "feature-annotation-model",
+    "retention-time-model",
+    "batch-drift-model"
+  ],
+  "cohort_assets": [
+    "metabolomics_lipidomics-development-cohort",
+    "metabolomics_lipidomics-independent-external-cohort"
+  ]
+}

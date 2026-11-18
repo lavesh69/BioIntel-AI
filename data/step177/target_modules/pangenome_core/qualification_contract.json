@@ -1,0 +1,37 @@
+{
+  "schema": "biointel.step177.21-module-contract.v1",
+  "module_key": "pangenome_core",
+  "module_title": "Pangenome & Variation Graph",
+  "workflow": [
+    "Assembly/input identity and QC",
+    "Graph construction with versioned parameters",
+    "Graph topology and path validation",
+    "Read/variant projection benchmarking",
+    "Independent cohort and expert release"
+  ],
+  "quality_gates": [
+    "Input assemblies and builds pinned",
+    "Graph tool versions locked",
+    "Disconnected/cyclic artefacts reviewed",
+    "Known truth-set projection passed",
+    "Population diversity assessed",
+    "Independent dataset benchmark passed"
+  ],
+  "required_outputs": [
+    "Input QC",
+    "Graph statistics",
+    "Path/topology review",
+    "Projection benchmark",
+    "Release gate"
+  ],
+  "boundary": "Graph-derived variants and paths require truth-set benchmarking and population-appropriate validation.",
+  "model_assets": [
+    "graph-construction-profile",
+    "projection-model",
+    "truthset-benchmark-profile"
+  ],
+  "cohort_assets": [
+    "pangenome_core-development-cohort",
+    "pangenome_core-independent-external-cohort"
+  ]
+}

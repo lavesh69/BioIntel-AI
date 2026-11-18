@@ -1,0 +1,70 @@
+{
+  "schema": "biointel.step178.19-module-assurance-contract.v1",
+  "module_key": "synthetic_cohort_trial",
+  "module_title": "Synthetic Cohort & Trial Simulation",
+  "baseline_rating": 6.5,
+  "internal_after_rating": 10.0,
+  "evidence_class": "synthetic-trial",
+  "workflow": [
+    "Lock the intended use, simulation estimand and decision objective and analysis population",
+    "Validate source identity, permissions, schema, units, lineage and missingness",
+    "Execute transparent synthetic cohort generation and trial simulation with pinned code, models, references and deterministic parameters",
+    "Run leakage, calibration, subgroup, robustness and sensitivity analyses",
+    "Validate on an independent temporal, site, instrument, process or prospective evidence set",
+    "Complete expert review, signed release decision, rollback rehearsal and monitoring activation"
+  ],
+  "quality_gates": [
+    "Intended use, endpoint and acceptance criteria approved before analysis",
+    "Input permissions, provenance, schema, units and checksums verified",
+    "Code, environment, engine, reference and model versions pinned",
+    "Data-generating assumptions and causal structure are explicit",
+    "Synthetic fidelity, utility and disclosure risk are jointly evaluated",
+    "Simulation parameters are calibrated to independent evidence",
+    "Results are labelled scenario-dependent and not clinical predictions",
+    "Independent evidence, expert sign-off and formal release review complete"
+  ],
+  "acceptance_criteria": [
+    "No critical data-integrity or provenance failure",
+    "All mandatory runtime/reference/model/cohort assets qualified",
+    "Prespecified primary performance and uncertainty criteria passed",
+    "Calibration, subgroup and robustness thresholds passed",
+    "Independent evidence meets the locked acceptance plan",
+    "Rollback and post-release monitoring are tested and approved"
+  ],
+  "required_outputs": [
+    "Data-generating-process specification",
+    "Fidelity and utility report",
+    "Privacy-risk assessment",
+    "Trial operating-characteristics report",
+    "Sensitivity/scenario analysis",
+    "Simulation release decision"
+  ],
+  "risk_controls": [
+    "assumption opacity",
+    "privacy leakage",
+    "mode collapse",
+    "poor tail fidelity",
+    "decision overconfidence"
+  ],
+  "monitoring_metrics": [
+    "fidelity drift",
+    "privacy attack success",
+    "tail coverage",
+    "simulation calibration"
+  ],
+  "boundary": "Synthetic Cohort & Trial Simulation outputs remain research or operational decision support until the module-specific independent evidence, domain-expert review, applicable privacy/safety/clinical controls and formal controlled-release approval are complete.",
+  "model_assets": [
+    "synthetic-cohort-generator",
+    "trial-outcome-simulator",
+    "simulation-calibration-model"
+  ],
+  "cohort_assets": [
+    "source-population-development-cohort",
+    "independent-aggregate-or-patient-level-validation-cohort"
+  ],
+  "governance_assets": [
+    "synthetic_cohort_trial-intended-use-and-risk-file",
+    "synthetic_cohort_trial-validation-and-acceptance-plan",
+    "synthetic_cohort_trial-monitoring-and-rollback-plan"
+  ]
+}

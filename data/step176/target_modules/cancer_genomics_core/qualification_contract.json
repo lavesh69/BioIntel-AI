@@ -1,0 +1,39 @@
+{
+  "schema": "biointel.step176.module-contract.v1",
+  "module_key": "cancer_genomics_core",
+  "module_title": "Cancer Genomics",
+  "evidence_class": "clinical-high-impact",
+  "workflow": [
+    "Variant normalisation and assay QC",
+    "Matched-normal/population filtering",
+    "CNV/SV/fusion integration",
+    "Clonality and signature screening",
+    "Molecular review board package"
+  ],
+  "quality_gates": [
+    "Genome build locked",
+    "Assay validation and callable territory",
+    "Matched normal or validated substitute",
+    "Curated evidence release pinned",
+    "Molecular pathology sign-off"
+  ],
+  "required_outputs": [
+    "Variant QC report",
+    "Prioritisation table",
+    "TMB/signature audit",
+    "Oncoprint and clonality views",
+    "Clinical boundary gate"
+  ],
+  "required_engines": [
+    "bcftools",
+    "vep"
+  ],
+  "required_references": [
+    "clinvar-grch38-tbi",
+    "clinvar-grch38-vcf",
+    "grch38-fasta",
+    "vep-cache-grch38"
+  ],
+  "scientific_boundary": "This module is not diagnostic software; clinical use requires accredited pipelines and qualified molecular-pathology review.",
+  "release_policy": "fail-closed"
+}

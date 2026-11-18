@@ -1,0 +1,70 @@
+{
+  "schema": "biointel.step178.19-module-assurance-contract.v1",
+  "module_key": "multiomics_biomarker_discovery",
+  "module_title": "Multi-Omics Biomarker Discovery",
+  "baseline_rating": 6.5,
+  "internal_after_rating": 10.0,
+  "evidence_class": "translational-biomarker",
+  "workflow": [
+    "Lock the intended use, prespecified clinical or biological endpoint and analysis population",
+    "Validate source identity, permissions, schema, units, lineage and missingness",
+    "Execute leakage-controlled multi-omics biomarker development with pinned code, models, references and deterministic parameters",
+    "Run leakage, calibration, subgroup, robustness and sensitivity analyses",
+    "Validate on an independent temporal, site, instrument, process or prospective evidence set",
+    "Complete expert review, signed release decision, rollback rehearsal and monitoring activation"
+  ],
+  "quality_gates": [
+    "Intended use, endpoint and acceptance criteria approved before analysis",
+    "Input permissions, provenance, schema, units and checksums verified",
+    "Code, environment, engine, reference and model versions pinned",
+    "Nested or repeated cross-validation is fully in-fold",
+    "Feature selection and imputation are leakage-safe",
+    "External cohort preprocessing is frozen",
+    "Clinical utility and decision-curve analysis are reported",
+    "Independent evidence, expert sign-off and formal release review complete"
+  ],
+  "acceptance_criteria": [
+    "No critical data-integrity or provenance failure",
+    "All mandatory runtime/reference/model/cohort assets qualified",
+    "Prespecified primary performance and uncertainty criteria passed",
+    "Calibration, subgroup and robustness thresholds passed",
+    "Independent evidence meets the locked acceptance plan",
+    "Rollback and post-release monitoring are tested and approved"
+  ],
+  "required_outputs": [
+    "Locked analysis plan",
+    "Feature provenance matrix",
+    "Leakage-controlled validation report",
+    "Calibration and subgroup scorecard",
+    "External-cohort replication package",
+    "Research release decision"
+  ],
+  "risk_controls": [
+    "endpoint drift",
+    "feature leakage",
+    "batch/site confounding",
+    "class imbalance",
+    "optimistic model selection"
+  ],
+  "monitoring_metrics": [
+    "calibration drift",
+    "site-specific performance",
+    "feature-distribution shift",
+    "missingness drift"
+  ],
+  "boundary": "Multi-Omics Biomarker Discovery outputs remain research or operational decision support until the module-specific independent evidence, domain-expert review, applicable privacy/safety/clinical controls and formal controlled-release approval are complete.",
+  "model_assets": [
+    "locked-biomarker-pipeline",
+    "calibration-model",
+    "subgroup-robustness-model"
+  ],
+  "cohort_assets": [
+    "multiomics-development-cohort",
+    "independent-multi-site-validation-cohort"
+  ],
+  "governance_assets": [
+    "multiomics_biomarker_discovery-intended-use-and-risk-file",
+    "multiomics_biomarker_discovery-validation-and-acceptance-plan",
+    "multiomics_biomarker_discovery-monitoring-and-rollback-plan"
+  ]
+}

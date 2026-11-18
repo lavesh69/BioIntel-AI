@@ -1,0 +1,70 @@
+{
+  "schema": "biointel.step178.19-module-assurance-contract.v1",
+  "module_key": "autonomous_laboratory_planner",
+  "module_title": "Autonomous Laboratory Planner",
+  "baseline_rating": 6.5,
+  "internal_after_rating": 10.0,
+  "evidence_class": "autonomous-lab",
+  "workflow": [
+    "Lock the intended use, approved executable experiment plan and analysis population",
+    "Validate source identity, permissions, schema, units, lineage and missingness",
+    "Execute constraint-safe and human-approved experimental planning with pinned code, models, references and deterministic parameters",
+    "Run leakage, calibration, subgroup, robustness and sensitivity analyses",
+    "Validate on an independent temporal, site, instrument, process or prospective evidence set",
+    "Complete expert review, signed release decision, rollback rehearsal and monitoring activation"
+  ],
+  "quality_gates": [
+    "Intended use, endpoint and acceptance criteria approved before analysis",
+    "Input permissions, provenance, schema, units and checksums verified",
+    "Code, environment, engine, reference and model versions pinned",
+    "SOP, hazard, resource and instrument constraints are hard gates",
+    "No physical execution occurs without named human approval",
+    "Plans are simulated or shadow-tested before activation",
+    "Every recommendation is versioned, explainable and reversible",
+    "Independent evidence, expert sign-off and formal release review complete"
+  ],
+  "acceptance_criteria": [
+    "No critical data-integrity or provenance failure",
+    "All mandatory runtime/reference/model/cohort assets qualified",
+    "Prespecified primary performance and uncertainty criteria passed",
+    "Calibration, subgroup and robustness thresholds passed",
+    "Independent evidence meets the locked acceptance plan",
+    "Rollback and post-release monitoring are tested and approved"
+  ],
+  "required_outputs": [
+    "Experiment objective specification",
+    "Constraint and hazard audit",
+    "Candidate plan comparison",
+    "Human approval record",
+    "Shadow-mode performance report",
+    "Execution/release decision"
+  ],
+  "risk_controls": [
+    "unsafe protocol suggestion",
+    "resource collision",
+    "automation overreach",
+    "hidden objective bias",
+    "unapproved execution"
+  ],
+  "monitoring_metrics": [
+    "constraint violation rate",
+    "human override rate",
+    "schedule slippage",
+    "failed-experiment rate"
+  ],
+  "boundary": "Autonomous Laboratory Planner outputs remain research or operational decision support until the module-specific independent evidence, domain-expert review, applicable privacy/safety/clinical controls and formal controlled-release approval are complete.",
+  "model_assets": [
+    "experiment-prioritisation-model",
+    "resource-scheduling-model",
+    "risk-screening-model"
+  ],
+  "cohort_assets": [
+    "historical-lab-execution-log",
+    "independent-simulated-or-shadow-mode-evaluation"
+  ],
+  "governance_assets": [
+    "autonomous_laboratory_planner-intended-use-and-risk-file",
+    "autonomous_laboratory_planner-validation-and-acceptance-plan",
+    "autonomous_laboratory_planner-monitoring-and-rollback-plan"
+  ]
+}

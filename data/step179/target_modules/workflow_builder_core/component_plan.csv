@@ -1,0 +1,4 @@
+component,label,install_route,platform_target,smoke_test
+python:networkx,DAG validation,pinned-python-venv,Windows/Python,
+python:jsonschema,Typed node schema,pinned-python-venv,Windows/Python,
+python:sqlite3,Run/checkpoint registry,standard-library,Windows/Python,

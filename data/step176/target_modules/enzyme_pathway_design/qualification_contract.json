@@ -1,0 +1,37 @@
+{
+  "schema": "biointel.step176.module-contract.v1",
+  "module_key": "enzyme_pathway_design",
+  "module_title": "Enzyme & Metabolic Pathway Design",
+  "evidence_class": "synthetic-biology",
+  "workflow": [
+    "Sequence/function validation",
+    "Active-site and mutation design",
+    "Pathway stoichiometry assessment",
+    "Burden/toxicity review",
+    "Experimental design package"
+  ],
+  "quality_gates": [
+    "Reference sequence locked",
+    "Activity assay defined",
+    "Host context declared",
+    "Flux assumptions sensitivity-tested",
+    "Synthetic-biology expert review"
+  ],
+  "required_outputs": [
+    "Mutation candidate table",
+    "Pathway balance report",
+    "Host-risk register",
+    "Assay plan",
+    "Release gate"
+  ],
+  "required_engines": [
+    "proteinmpnn"
+  ],
+  "required_references": [
+    "go-basic",
+    "reactome-uniprot",
+    "uniprot-swissprot"
+  ],
+  "scientific_boundary": "Predicted enzyme and pathway designs require biochemical activity, host-fitness and product-quality confirmation.",
+  "release_policy": "fail-closed"
+}

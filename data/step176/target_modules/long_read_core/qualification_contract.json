@@ -1,0 +1,38 @@
+{
+  "schema": "biointel.step176.module-contract.v1",
+  "module_key": "long_read_core",
+  "module_title": "Long-Read Assembly & T2T",
+  "evidence_class": "genome-assembly",
+  "workflow": [
+    "Read QC and contamination review",
+    "Assembly graph generation",
+    "Polishing and phasing",
+    "Completeness/consensus validation",
+    "T2T evidence package"
+  ],
+  "quality_gates": [
+    "Platform/basecaller release locked",
+    "Coverage and read-length thresholds",
+    "Contamination controls",
+    "BUSCO/Merqury qualified",
+    "Assembly expert review"
+  ],
+  "required_outputs": [
+    "Read QC",
+    "Assembly statistics",
+    "Graph/contig review",
+    "Completeness/QV report",
+    "Release gate"
+  ],
+  "required_engines": [
+    "busco",
+    "flye",
+    "hifiasm",
+    "merqury"
+  ],
+  "required_references": [
+    "busco-lineages"
+  ],
+  "scientific_boundary": "Assembly completeness and T2T claims require orthogonal evidence, contamination review and expert curation.",
+  "release_policy": "fail-closed"
+}

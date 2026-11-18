@@ -1,0 +1,4 @@
+asset_id,label,kind,release_mode,expected_format,qualification_strategy
+independent-patient-spatial-cohort,Independent Patient Spatial Cohort,cohort,operator-pinned-and-reviewed,manifest + checksummed assets,manual evidence intake plus automated manifest verification
+cross-scanner-cross-site-pathology-cohort,Cross Scanner Cross Site Pathology Cohort,cohort,operator-pinned-and-reviewed,manifest + checksummed assets,manual evidence intake plus automated manifest verification
+orthogonal-histology-and-molecular-review-set,Orthogonal Histology And Molecular Review Set,cohort,operator-pinned-and-reviewed,manifest + checksummed assets,manual evidence intake plus automated manifest verification

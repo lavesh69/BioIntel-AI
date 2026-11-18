@@ -1,0 +1,37 @@
+{
+  "schema": "biointel.step177.21-module-contract.v1",
+  "module_key": "epigenomics_chromatin",
+  "module_title": "Epigenomics & Chromatin Regulation",
+  "workflow": [
+    "Read and assay QC",
+    "Alignment, duplicate and library-complexity review",
+    "Peak/accessibility or methylation calling",
+    "Differential and regulatory integration",
+    "Orthogonal confirmation and release review"
+  ],
+  "quality_gates": [
+    "Genome build and blacklist pinned",
+    "Replicates and controls present",
+    "FRiP/complexity thresholds passed",
+    "Batch and covariate model reviewed",
+    "Peak/DMR reproducibility assessed",
+    "Orthogonal assay or independent cohort passed"
+  ],
+  "required_outputs": [
+    "Assay QC report",
+    "Peak/DMR matrix",
+    "Differential results",
+    "Regulatory linkage evidence",
+    "Release gate"
+  ],
+  "boundary": "Regulatory associations require replicate-aware analysis and orthogonal biological confirmation.",
+  "model_assets": [
+    "peak-calling-parameter-set",
+    "chromatin-state-model",
+    "differential-model"
+  ],
+  "cohort_assets": [
+    "epigenomics_chromatin-development-cohort",
+    "epigenomics_chromatin-independent-external-cohort"
+  ]
+}

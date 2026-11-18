@@ -1,0 +1,70 @@
+{
+  "schema": "biointel.step178.19-module-assurance-contract.v1",
+  "module_key": "causal_inference_perturbation",
+  "module_title": "Causal Inference & Perturbation Analysis",
+  "baseline_rating": 6.5,
+  "internal_after_rating": 10.0,
+  "evidence_class": "causal-biology",
+  "workflow": [
+    "Lock the intended use, prespecified causal estimand and analysis population",
+    "Validate source identity, permissions, schema, units, lineage and missingness",
+    "Execute assumption-explicit causal and perturbation analysis with pinned code, models, references and deterministic parameters",
+    "Run leakage, calibration, subgroup, robustness and sensitivity analyses",
+    "Validate on an independent temporal, site, instrument, process or prospective evidence set",
+    "Complete expert review, signed release decision, rollback rehearsal and monitoring activation"
+  ],
+  "quality_gates": [
+    "Intended use, endpoint and acceptance criteria approved before analysis",
+    "Input permissions, provenance, schema, units and checksums verified",
+    "Code, environment, engine, reference and model versions pinned",
+    "Estimand and causal graph are prespecified",
+    "Positivity, exchangeability and consistency are assessed",
+    "Negative controls and falsification tests are run",
+    "Sensitivity to hidden confounding is quantified",
+    "Independent evidence, expert sign-off and formal release review complete"
+  ],
+  "acceptance_criteria": [
+    "No critical data-integrity or provenance failure",
+    "All mandatory runtime/reference/model/cohort assets qualified",
+    "Prespecified primary performance and uncertainty criteria passed",
+    "Calibration, subgroup and robustness thresholds passed",
+    "Independent evidence meets the locked acceptance plan",
+    "Rollback and post-release monitoring are tested and approved"
+  ],
+  "required_outputs": [
+    "Causal question and DAG",
+    "Identification assumptions report",
+    "Balance and overlap diagnostics",
+    "Effect estimate with sensitivity bounds",
+    "Negative-control/falsification results",
+    "Causal release decision"
+  ],
+  "risk_controls": [
+    "unmeasured confounding",
+    "collider bias",
+    "positivity violation",
+    "post-treatment adjustment",
+    "estimand switching"
+  ],
+  "monitoring_metrics": [
+    "covariate-overlap drift",
+    "effect heterogeneity",
+    "negative-control failures",
+    "graph-assumption changes"
+  ],
+  "boundary": "Causal Inference & Perturbation Analysis outputs remain research or operational decision support until the module-specific independent evidence, domain-expert review, applicable privacy/safety/clinical controls and formal controlled-release approval are complete.",
+  "model_assets": [
+    "causal-graph-specification",
+    "treatment-effect-model",
+    "negative-control-model"
+  ],
+  "cohort_assets": [
+    "causal-development-cohort",
+    "independent-perturbation-validation-cohort"
+  ],
+  "governance_assets": [
+    "causal_inference_perturbation-intended-use-and-risk-file",
+    "causal_inference_perturbation-validation-and-acceptance-plan",
+    "causal_inference_perturbation-monitoring-and-rollback-plan"
+  ]
+}

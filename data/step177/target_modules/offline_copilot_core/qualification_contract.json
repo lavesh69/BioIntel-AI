@@ -1,0 +1,37 @@
+{
+  "schema": "biointel.step177.21-module-contract.v1",
+  "module_key": "offline_copilot_core",
+  "module_title": "Offline Scientific Copilot Core",
+  "workflow": [
+    "Model/tokenizer and runtime verification",
+    "Retrieval corpus provenance/index QC",
+    "Task benchmark and citation fidelity testing",
+    "Safety, hallucination and refusal evaluation",
+    "Human review, deployment and rollback"
+  ],
+  "quality_gates": [
+    "Weights/tokenizer hashes verified",
+    "Model and corpus licences accepted",
+    "Retrieval citations traceable",
+    "Hallucination benchmark passed",
+    "Sensitive/clinical boundary tests passed",
+    "Independent domain-expert evaluation passed"
+  ],
+  "required_outputs": [
+    "Model/runtime card",
+    "Corpus provenance ledger",
+    "Task benchmark report",
+    "Safety/citation audit",
+    "Deployment gate"
+  ],
+  "boundary": "Copilot responses are assistive research text and must not replace qualified scientific, clinical or regulatory judgment.",
+  "model_assets": [
+    "offline-llm-weights",
+    "embedding-model",
+    "retrieval-reranker"
+  ],
+  "cohort_assets": [
+    "offline_copilot_core-development-cohort",
+    "offline_copilot_core-independent-external-cohort"
+  ]
+}

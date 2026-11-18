@@ -1,0 +1,37 @@
+{
+  "schema": "biointel.step177.21-module-contract.v1",
+  "module_key": "pathogen_outbreak_core",
+  "module_title": "Pathogen Outbreak Genomics",
+  "workflow": [
+    "Read/sample and species QC",
+    "Consensus/variant generation",
+    "Phylogeny and distance sensitivity analysis",
+    "Epidemiological metadata reconciliation",
+    "Public-health review and controlled release"
+  ],
+  "quality_gates": [
+    "Reference and lineage database pinned",
+    "Contamination and mixed infection assessed",
+    "Coverage/missingness thresholds passed",
+    "Clock/recombination sensitivity reviewed",
+    "Epidemiological links independently checked",
+    "Public-health expert sign-off complete"
+  ],
+  "required_outputs": [
+    "Sample QC",
+    "Variant/consensus package",
+    "Phylogeny and cluster table",
+    "Epidemiology reconciliation",
+    "Release gate"
+  ],
+  "boundary": "Genomic clusters do not prove transmission and require epidemiological and public-health interpretation.",
+  "model_assets": [
+    "variant-consensus-model",
+    "cluster-threshold-model",
+    "phylogenetic-model"
+  ],
+  "cohort_assets": [
+    "pathogen_outbreak_core-development-cohort",
+    "pathogen_outbreak_core-independent-external-cohort"
+  ]
+}

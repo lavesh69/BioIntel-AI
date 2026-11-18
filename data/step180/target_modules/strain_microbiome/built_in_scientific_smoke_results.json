@@ -1,0 +1,24 @@
+{
+  "module_key": "strain_microbiome",
+  "checks": {
+    "contract_schema_valid": true,
+    "positive_fixture_deterministic": true,
+    "negative_fixture_rejected": true,
+    "corruption_fixture_rejected": true,
+    "leakage_fixture_rejected": true,
+    "clean_split_accepted": true,
+    "artifact_hash_verified": true,
+    "uncertainty_and_abstention_required": true,
+    "unsupported_claims_blocked": true,
+    "second_run_reproducible": true,
+    "compositional_closure_passed": true,
+    "clr_values_finite_and_centred": true,
+    "negative_control_contamination_detected": true,
+    "clean_negative_control_accepted": true,
+    "strain_coverage_threshold_passed": true,
+    "ambiguous_assignment_abstains": true,
+    "mock_community_precision_passed": true,
+    "mock_community_recall_passed": true,
+    "functional_profile_reproducible": true
+  }
+}

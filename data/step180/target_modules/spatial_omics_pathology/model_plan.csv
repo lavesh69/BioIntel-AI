@@ -1,0 +1,4 @@
+asset_id,label,kind,release_mode,expected_format,qualification_strategy
+qualified-tissue-segmentation-model,Qualified Tissue Segmentation Model,model,operator-pinned-and-reviewed,manifest + checksummed assets,manual evidence intake plus automated manifest verification
+qualified-pathology-embedding-model,Qualified Pathology Embedding Model,model,operator-pinned-and-reviewed,manifest + checksummed assets,manual evidence intake plus automated manifest verification
+qualified-cell-type-deconvolution-model,Qualified Cell Type Deconvolution Model,model,operator-pinned-and-reviewed,manifest + checksummed assets,manual evidence intake plus automated manifest verification

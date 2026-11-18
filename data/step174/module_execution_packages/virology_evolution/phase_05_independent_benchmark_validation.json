@@ -1,0 +1,28 @@
+{
+  "schema": "biointel.step174.module-phase-work-package.v1",
+  "module_key": "virology_evolution",
+  "module_title": "Virology depth",
+  "phase_number": 5,
+  "phase_key": "independent_benchmark_validation",
+  "phase_title": "Independent locked benchmark validation",
+  "applicable": false,
+  "complete": true,
+  "software_automation_ready": true,
+  "objective": "Run a pre-specified, checksum-locked and leakage-controlled evaluation on an untouched external site, temporal or study holdout.",
+  "software_automation": "Locked split manifests, per-sample prediction export, calibration, uncertainty, subgroup, applicability-domain and baseline comparison checks.",
+  "external_evidence_required": [
+    "Untouched independent holdout",
+    "Per-sample ground truth and predictions",
+    "Leakage and duplicate audit",
+    "Calibration and confidence intervals",
+    "Subgroup/applicability-domain analysis",
+    "Independent-site result"
+  ],
+  "completion_rule": "Applicable model modules must pass every Step 171 benchmark control and independent external-site validation.",
+  "command": "python scripts\\step174_realworld_manager.py prepare-benchmark --module virology_evolution",
+  "claim_policy": {
+    "external_evidence_must_be_genuine": true,
+    "metadata_flags_without_files_are_ineligible": true,
+    "missing_evidence_decision": "research-only-fail-closed"
+  }
+}

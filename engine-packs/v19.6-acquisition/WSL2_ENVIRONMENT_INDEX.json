@@ -1,0 +1,694 @@
+{
+  "count": 58,
+  "environments": [
+    {
+      "claim_boundary": "Environment creation is installation only; target-machine and scientific qualification remain required.",
+      "engine": "abricate",
+      "environment": "biointel-v196-abricate",
+      "environment_file": "wsl2-environments/abricate.yml",
+      "package_specs": [
+        "abricate"
+      ],
+      "priority": "P3-specialist",
+      "references": [
+        "ABRicate database"
+      ]
+    },
+    {
+      "claim_boundary": "Environment creation is installation only; target-machine and scientific qualification remain required.",
+      "engine": "amrfinderplus",
+      "environment": "biointel-v196-amrfinderplus",
+      "environment_file": "wsl2-environments/amrfinderplus.yml",
+      "package_specs": [
+        "amrfinderplus"
+      ],
+      "priority": "P3-specialist",
+      "references": [
+        "AMRFinderPlus database"
+      ]
+    },
+    {
+      "claim_boundary": "Environment creation is installation only; target-machine and scientific qualification remain required.",
+      "engine": "anarci",
+      "environment": "biointel-v196-anarci",
+      "environment_file": "wsl2-environments/anarci.yml",
+      "package_specs": [
+        "anarci"
+      ],
+      "priority": "P3-specialist",
+      "references": []
+    },
+    {
+      "claim_boundary": "Environment creation is installation only; target-machine and scientific qualification remain required.",
+      "engine": "bcftools",
+      "environment": "biointel-v196-bcftools",
+      "environment_file": "wsl2-environments/bcftools.yml",
+      "package_specs": [
+        "bcftools"
+      ],
+      "priority": "P1-compulsory",
+      "references": [
+        "Reference FASTA"
+      ]
+    },
+    {
+      "claim_boundary": "Environment creation is installation only; target-machine and scientific qualification remain required.",
+      "engine": "bedtools",
+      "environment": "biointel-v196-bedtools",
+      "environment_file": "wsl2-environments/bedtools.yml",
+      "package_specs": [
+        "bedtools"
+      ],
+      "priority": "P2-high-value",
+      "references": []
+    },
+    {
+      "claim_boundary": "Environment creation is installation only; target-machine and scientific qualification remain required.",
+      "engine": "bgzip",
+      "environment": "biointel-v196-bgzip",
+      "environment_file": "wsl2-environments/bgzip.yml",
+      "package_specs": [
+        "htslib"
+      ],
+      "priority": "P2-high-value",
+      "references": []
+    },
+    {
+      "claim_boundary": "Environment creation is installation only; target-machine and scientific qualification remain required.",
+      "engine": "blastn",
+      "environment": "biointel-v196-blastn",
+      "environment_file": "wsl2-environments/blastn.yml",
+      "package_specs": [
+        "blastn"
+      ],
+      "priority": "P2-high-value",
+      "references": [
+        "BLAST database"
+      ]
+    },
+    {
+      "claim_boundary": "Environment creation is installation only; target-machine and scientific qualification remain required.",
+      "engine": "bowtie",
+      "environment": "biointel-v196-bowtie",
+      "environment_file": "wsl2-environments/bowtie.yml",
+      "package_specs": [
+        "bowtie2"
+      ],
+      "priority": "P3-specialist",
+      "references": [
+        "Bowtie 2 genome index"
+      ]
+    },
+    {
+      "claim_boundary": "Environment creation is installation only; target-machine and scientific qualification remain required.",
+      "engine": "bracken",
+      "environment": "biointel-v196-bracken",
+      "environment_file": "wsl2-environments/bracken.yml",
+      "package_specs": [
+        "bracken"
+      ],
+      "priority": "P3-specialist",
+      "references": [
+        "Bracken database"
+      ]
+    },
+    {
+      "claim_boundary": "Environment creation is installation only; target-machine and scientific qualification remain required.",
+      "engine": "busco",
+      "environment": "biointel-v196-busco",
+      "environment_file": "wsl2-environments/busco.yml",
+      "package_specs": [
+        "busco"
+      ],
+      "priority": "P3-specialist",
+      "references": [
+        "BUSCO lineage"
+      ]
+    },
+    {
+      "claim_boundary": "Environment creation is installation only; target-machine and scientific qualification remain required.",
+      "engine": "bwa",
+      "environment": "biointel-v196-bwa",
+      "environment_file": "wsl2-environments/bwa.yml",
+      "package_specs": [
+        "bwa"
+      ],
+      "priority": "P2-high-value",
+      "references": []
+    },
+    {
+      "claim_boundary": "Environment creation is installation only; target-machine and scientific qualification remain required.",
+      "engine": "cellpose",
+      "environment": "biointel-v196-cellpose",
+      "environment_file": "wsl2-environments/cellpose.yml",
+      "package_specs": [
+        "cellpose"
+      ],
+      "priority": "P1-compulsory",
+      "references": []
+    },
+    {
+      "claim_boundary": "Environment creation is installation only; target-machine and scientific qualification remain required.",
+      "engine": "cellrank",
+      "environment": "biointel-v196-cellrank",
+      "environment_file": "wsl2-environments/cellrank.yml",
+      "package_specs": [
+        "cellrank"
+      ],
+      "priority": "P2-high-value",
+      "references": []
+    },
+    {
+      "claim_boundary": "Environment creation is installation only; target-machine and scientific qualification remain required.",
+      "engine": "comet",
+      "environment": "biointel-v196-comet",
+      "environment_file": "wsl2-environments/comet.yml",
+      "package_specs": [
+        "comet"
+      ],
+      "priority": "P3-specialist",
+      "references": []
+    },
+    {
+      "claim_boundary": "Environment creation is installation only; target-machine and scientific qualification remain required.",
+      "engine": "deeptools",
+      "environment": "biointel-v196-deeptools",
+      "environment_file": "wsl2-environments/deeptools.yml",
+      "package_specs": [
+        "deeptools"
+      ],
+      "priority": "P3-specialist",
+      "references": []
+    },
+    {
+      "claim_boundary": "Environment creation is installation only; target-machine and scientific qualification remain required.",
+      "engine": "expansionhunter",
+      "environment": "biointel-v196-expansionhunter",
+      "environment_file": "wsl2-environments/expansionhunter.yml",
+      "package_specs": [
+        "expansionhunter"
+      ],
+      "priority": "P2-high-value",
+      "references": [
+        "Repeat catalogue",
+        "Reference FASTA"
+      ]
+    },
+    {
+      "claim_boundary": "Environment creation is installation only; target-machine and scientific qualification remain required.",
+      "engine": "fastp",
+      "environment": "biointel-v196-fastp",
+      "environment_file": "wsl2-environments/fastp.yml",
+      "package_specs": [
+        "fastp"
+      ],
+      "priority": "P1-compulsory",
+      "references": []
+    },
+    {
+      "claim_boundary": "Environment creation is installation only; target-machine and scientific qualification remain required.",
+      "engine": "flye",
+      "environment": "biointel-v196-flye",
+      "environment_file": "wsl2-environments/flye.yml",
+      "package_specs": [
+        "flye"
+      ],
+      "priority": "P3-specialist",
+      "references": []
+    },
+    {
+      "claim_boundary": "Environment creation is installation only; target-machine and scientific qualification remain required.",
+      "engine": "graphaligner",
+      "environment": "biointel-v196-graphaligner",
+      "environment_file": "wsl2-environments/graphaligner.yml",
+      "package_specs": [
+        "graphaligner"
+      ],
+      "priority": "P3-specialist",
+      "references": []
+    },
+    {
+      "claim_boundary": "Environment creation is installation only; target-machine and scientific qualification remain required.",
+      "engine": "gromacs",
+      "environment": "biointel-v196-gromacs",
+      "environment_file": "wsl2-environments/gromacs.yml",
+      "package_specs": [
+        "gromacs"
+      ],
+      "priority": "P2-high-value",
+      "references": []
+    },
+    {
+      "claim_boundary": "Environment creation is installation only; target-machine and scientific qualification remain required.",
+      "engine": "hifiasm",
+      "environment": "biointel-v196-hifiasm",
+      "environment_file": "wsl2-environments/hifiasm.yml",
+      "package_specs": [
+        "hifiasm"
+      ],
+      "priority": "P3-specialist",
+      "references": []
+    },
+    {
+      "claim_boundary": "Environment creation is installation only; target-machine and scientific qualification remain required.",
+      "engine": "hmmer",
+      "environment": "biointel-v196-hmmer",
+      "environment_file": "wsl2-environments/hmmer.yml",
+      "package_specs": [
+        "hmmer"
+      ],
+      "priority": "P2-high-value",
+      "references": [
+        "Pinned HMM profile database"
+      ]
+    },
+    {
+      "claim_boundary": "Environment creation is installation only; target-machine and scientific qualification remain required.",
+      "engine": "humann",
+      "environment": "biointel-v196-humann",
+      "environment_file": "wsl2-environments/humann.yml",
+      "package_specs": [
+        "humann"
+      ],
+      "priority": "P3-specialist",
+      "references": [
+        "ChocoPhlAn",
+        "UniRef"
+      ]
+    },
+    {
+      "claim_boundary": "Environment creation is installation only; target-machine and scientific qualification remain required.",
+      "engine": "igblast",
+      "environment": "biointel-v196-igblast",
+      "environment_file": "wsl2-environments/igblast.yml",
+      "package_specs": [
+        "igblast"
+      ],
+      "priority": "P3-specialist",
+      "references": [
+        "IgBLAST germline database"
+      ]
+    },
+    {
+      "claim_boundary": "Environment creation is installation only; target-machine and scientific qualification remain required.",
+      "engine": "interproscan",
+      "environment": "biointel-v196-interproscan",
+      "environment_file": "wsl2-environments/interproscan.yml",
+      "package_specs": [
+        "interproscan"
+      ],
+      "priority": "P2-high-value",
+      "references": [
+        "InterPro member databases"
+      ]
+    },
+    {
+      "claim_boundary": "Environment creation is installation only; target-machine and scientific qualification remain required.",
+      "engine": "iqtree",
+      "environment": "biointel-v196-iqtree",
+      "environment_file": "wsl2-environments/iqtree.yml",
+      "package_specs": [
+        "iqtree"
+      ],
+      "priority": "P1-compulsory",
+      "references": []
+    },
+    {
+      "claim_boundary": "Environment creation is installation only; target-machine and scientific qualification remain required.",
+      "engine": "kraken2",
+      "environment": "biointel-v196-kraken2",
+      "environment_file": "wsl2-environments/kraken2.yml",
+      "package_specs": [
+        "kraken2"
+      ],
+      "priority": "P1-compulsory",
+      "references": [
+        "Kraken 2 database"
+      ]
+    },
+    {
+      "claim_boundary": "Environment creation is installation only; target-machine and scientific qualification remain required.",
+      "engine": "macs2",
+      "environment": "biointel-v196-macs2",
+      "environment_file": "wsl2-environments/macs2.yml",
+      "package_specs": [
+        "macs2"
+      ],
+      "priority": "P3-specialist",
+      "references": []
+    },
+    {
+      "claim_boundary": "Environment creation is installation only; target-machine and scientific qualification remain required.",
+      "engine": "mafft",
+      "environment": "biointel-v196-mafft",
+      "environment_file": "wsl2-environments/mafft.yml",
+      "package_specs": [
+        "mafft"
+      ],
+      "priority": "P1-compulsory",
+      "references": []
+    },
+    {
+      "claim_boundary": "Environment creation is installation only; target-machine and scientific qualification remain required.",
+      "engine": "majiq",
+      "environment": "biointel-v196-majiq",
+      "environment_file": "wsl2-environments/majiq.yml",
+      "package_specs": [
+        "majiq"
+      ],
+      "priority": "P3-specialist",
+      "references": [
+        "Genome annotation GFF3"
+      ]
+    },
+    {
+      "claim_boundary": "Environment creation is installation only; target-machine and scientific qualification remain required.",
+      "engine": "merqury",
+      "environment": "biointel-v196-merqury",
+      "environment_file": "wsl2-environments/merqury.yml",
+      "package_specs": [
+        "merqury"
+      ],
+      "priority": "P3-specialist",
+      "references": []
+    },
+    {
+      "claim_boundary": "Environment creation is installation only; target-machine and scientific qualification remain required.",
+      "engine": "minigraph",
+      "environment": "biointel-v196-minigraph",
+      "environment_file": "wsl2-environments/minigraph.yml",
+      "package_specs": [
+        "minigraph"
+      ],
+      "priority": "P3-specialist",
+      "references": []
+    },
+    {
+      "claim_boundary": "Environment creation is installation only; target-machine and scientific qualification remain required.",
+      "engine": "minimap2",
+      "environment": "biointel-v196-minimap2",
+      "environment_file": "wsl2-environments/minimap2.yml",
+      "package_specs": [
+        "minimap2"
+      ],
+      "priority": "P2-high-value",
+      "references": []
+    },
+    {
+      "claim_boundary": "Environment creation is installation only; target-machine and scientific qualification remain required.",
+      "engine": "modkit",
+      "environment": "biointel-v196-modkit",
+      "environment_file": "wsl2-environments/modkit.yml",
+      "package_specs": [
+        "modkit"
+      ],
+      "priority": "P3-specialist",
+      "references": [
+        "Reference FASTA"
+      ]
+    },
+    {
+      "claim_boundary": "Environment creation is installation only; target-machine and scientific qualification remain required.",
+      "engine": "mosdepth",
+      "environment": "biointel-v196-mosdepth",
+      "environment_file": "wsl2-environments/mosdepth.yml",
+      "package_specs": [
+        "mosdepth"
+      ],
+      "priority": "P2-high-value",
+      "references": []
+    },
+    {
+      "claim_boundary": "Environment creation is installation only; target-machine and scientific qualification remain required.",
+      "engine": "msgfplus",
+      "environment": "biointel-v196-msgfplus",
+      "environment_file": "wsl2-environments/msgfplus.yml",
+      "package_specs": [
+        "msgfplus"
+      ],
+      "priority": "P3-specialist",
+      "references": []
+    },
+    {
+      "claim_boundary": "Environment creation is installation only; target-machine and scientific qualification remain required.",
+      "engine": "odgi",
+      "environment": "biointel-v196-odgi",
+      "environment_file": "wsl2-environments/odgi.yml",
+      "package_specs": [
+        "odgi"
+      ],
+      "priority": "P3-specialist",
+      "references": []
+    },
+    {
+      "claim_boundary": "Environment creation is installation only; target-machine and scientific qualification remain required.",
+      "engine": "openmm",
+      "environment": "biointel-v196-openmm",
+      "environment_file": "wsl2-environments/openmm.yml",
+      "package_specs": [
+        "openmm"
+      ],
+      "priority": "P2-high-value",
+      "references": []
+    },
+    {
+      "claim_boundary": "Environment creation is installation only; target-machine and scientific qualification remain required.",
+      "engine": "openms",
+      "environment": "biointel-v196-openms",
+      "environment_file": "wsl2-environments/openms.yml",
+      "package_specs": [
+        "openms"
+      ],
+      "priority": "P2-high-value",
+      "references": []
+    },
+    {
+      "claim_boundary": "Environment creation is installation only; target-machine and scientific qualification remain required.",
+      "engine": "openslide",
+      "environment": "biointel-v196-openslide",
+      "environment_file": "wsl2-environments/openslide.yml",
+      "package_specs": [
+        "openslide",
+        "openslide-python"
+      ],
+      "priority": "P3-specialist",
+      "references": []
+    },
+    {
+      "claim_boundary": "Environment creation is installation only; target-machine and scientific qualification remain required.",
+      "engine": "plink2",
+      "environment": "biointel-v196-plink2",
+      "environment_file": "wsl2-environments/plink2.yml",
+      "package_specs": [
+        "plink2"
+      ],
+      "priority": "P1-compulsory",
+      "references": []
+    },
+    {
+      "claim_boundary": "Environment creation is installation only; target-machine and scientific qualification remain required.",
+      "engine": "regenie",
+      "environment": "biointel-v196-regenie",
+      "environment_file": "wsl2-environments/regenie.yml",
+      "package_specs": [
+        "regenie"
+      ],
+      "priority": "P3-specialist",
+      "references": []
+    },
+    {
+      "claim_boundary": "Environment creation is installation only; target-machine and scientific qualification remain required.",
+      "engine": "resfinder",
+      "environment": "biointel-v196-resfinder",
+      "environment_file": "wsl2-environments/resfinder.yml",
+      "package_specs": [
+        "resfinder"
+      ],
+      "priority": "P3-specialist",
+      "references": [
+        "ResFinder database",
+        "PointFinder database"
+      ]
+    },
+    {
+      "claim_boundary": "Environment creation is installation only; target-machine and scientific qualification remain required.",
+      "engine": "rmats",
+      "environment": "biointel-v196-rmats",
+      "environment_file": "wsl2-environments/rmats.yml",
+      "package_specs": [
+        "rmats"
+      ],
+      "priority": "P3-specialist",
+      "references": [
+        "Genome annotation GTF"
+      ]
+    },
+    {
+      "claim_boundary": "Environment creation is installation only; target-machine and scientific qualification remain required.",
+      "engine": "saige",
+      "environment": "biointel-v196-saige",
+      "environment_file": "wsl2-environments/saige.yml",
+      "package_specs": [
+        "r-saige"
+      ],
+      "priority": "P3-specialist",
+      "references": []
+    },
+    {
+      "claim_boundary": "Environment creation is installation only; target-machine and scientific qualification remain required.",
+      "engine": "salmon",
+      "environment": "biointel-v196-salmon",
+      "environment_file": "wsl2-environments/salmon.yml",
+      "package_specs": [
+        "salmon"
+      ],
+      "priority": "P1-compulsory",
+      "references": [
+        "Salmon transcriptome index"
+      ]
+    },
+    {
+      "claim_boundary": "Environment creation is installation only; target-machine and scientific qualification remain required.",
+      "engine": "samtools",
+      "environment": "biointel-v196-samtools",
+      "environment_file": "wsl2-environments/samtools.yml",
+      "package_specs": [
+        "samtools"
+      ],
+      "priority": "P1-compulsory",
+      "references": []
+    },
+    {
+      "claim_boundary": "Environment creation is installation only; target-machine and scientific qualification remain required.",
+      "engine": "scanpy",
+      "environment": "biointel-v196-scanpy",
+      "environment_file": "wsl2-environments/scanpy.yml",
+      "package_specs": [
+        "scanpy"
+      ],
+      "priority": "P2-high-value",
+      "references": []
+    },
+    {
+      "claim_boundary": "Environment creation is installation only; target-machine and scientific qualification remain required.",
+      "engine": "scvelo",
+      "environment": "biointel-v196-scvelo",
+      "environment_file": "wsl2-environments/scvelo.yml",
+      "package_specs": [
+        "scvelo"
+      ],
+      "priority": "P2-high-value",
+      "references": []
+    },
+    {
+      "claim_boundary": "Environment creation is installation only; target-machine and scientific qualification remain required.",
+      "engine": "sniffles",
+      "environment": "biointel-v196-sniffles",
+      "environment_file": "wsl2-environments/sniffles.yml",
+      "package_specs": [
+        "sniffles"
+      ],
+      "priority": "P3-specialist",
+      "references": []
+    },
+    {
+      "claim_boundary": "Environment creation is installation only; target-machine and scientific qualification remain required.",
+      "engine": "star",
+      "environment": "biointel-v196-star",
+      "environment_file": "wsl2-environments/star.yml",
+      "package_specs": [
+        "star"
+      ],
+      "priority": "P1-compulsory",
+      "references": [
+        "STAR genome index"
+      ]
+    },
+    {
+      "claim_boundary": "Environment creation is installation only; target-machine and scientific qualification remain required.",
+      "engine": "stardist",
+      "environment": "biointel-v196-stardist",
+      "environment_file": "wsl2-environments/stardist.yml",
+      "package_specs": [
+        "stardist"
+      ],
+      "priority": "P3-specialist",
+      "references": []
+    },
+    {
+      "claim_boundary": "Environment creation is installation only; target-machine and scientific qualification remain required.",
+      "engine": "suppa2",
+      "environment": "biointel-v196-suppa2",
+      "environment_file": "wsl2-environments/suppa2.yml",
+      "package_specs": [
+        "suppa2"
+      ],
+      "priority": "P3-specialist",
+      "references": [
+        "Transcript annotation GTF"
+      ]
+    },
+    {
+      "claim_boundary": "Environment creation is installation only; target-machine and scientific qualification remain required.",
+      "engine": "tabix",
+      "environment": "biointel-v196-tabix",
+      "environment_file": "wsl2-environments/tabix.yml",
+      "package_specs": [
+        "htslib"
+      ],
+      "priority": "P2-high-value",
+      "references": []
+    },
+    {
+      "claim_boundary": "Environment creation is installation only; target-machine and scientific qualification remain required.",
+      "engine": "vep",
+      "environment": "biointel-v196-vep",
+      "environment_file": "wsl2-environments/vep.yml",
+      "package_specs": [
+        "ensembl-vep"
+      ],
+      "priority": "P1-compulsory",
+      "references": [
+        "VEP cache",
+        "Reference FASTA"
+      ]
+    },
+    {
+      "claim_boundary": "Environment creation is installation only; target-machine and scientific qualification remain required.",
+      "engine": "vg",
+      "environment": "biointel-v196-vg",
+      "environment_file": "wsl2-environments/vg.yml",
+      "package_specs": [
+        "vg"
+      ],
+      "priority": "P3-specialist",
+      "references": []
+    },
+    {
+      "claim_boundary": "Environment creation is installation only; target-machine and scientific qualification remain required.",
+      "engine": "vina",
+      "environment": "biointel-v196-vina",
+      "environment_file": "wsl2-environments/vina.yml",
+      "package_specs": [
+        "vina"
+      ],
+      "priority": "P1-compulsory",
+      "references": []
+    },
+    {
+      "claim_boundary": "Environment creation is installation only; target-machine and scientific qualification remain required.",
+      "engine": "whatshap",
+      "environment": "biointel-v196-whatshap",
+      "environment_file": "wsl2-environments/whatshap.yml",
+      "package_specs": [
+        "whatshap"
+      ],
+      "priority": "P2-high-value",
+      "references": [
+        "Reference FASTA"
+      ]
+    }
+  ],
+  "schema": "biointel.wsl2-isolated-environments.v1",
+  "strategy": "one-engine-per-environment"
+}

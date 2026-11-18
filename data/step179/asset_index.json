@@ -1,0 +1,95 @@
+{
+  "schema": "biointel.step179.asset-index.v1",
+  "modules": [
+    {
+      "module_key": "background_job_engine",
+      "module_title": "Background Job Engine",
+      "folder": "data/step179/target_modules/background_job_engine"
+    },
+    {
+      "module_key": "background_jobs_core",
+      "module_title": "Background Jobs Core",
+      "folder": "data/step179/target_modules/background_jobs_core"
+    },
+    {
+      "module_key": "benchmark_validation_v2",
+      "module_title": "Benchmark Validation Center",
+      "folder": "data/step179/target_modules/benchmark_validation_v2"
+    },
+    {
+      "module_key": "cross_module_workspace",
+      "module_title": "Cross-Module Project Workspace",
+      "folder": "data/step179/target_modules/cross_module_workspace"
+    },
+    {
+      "module_key": "data_lakehouse_v2",
+      "module_title": "Data Lakehouse & Sample Search",
+      "folder": "data/step179/target_modules/data_lakehouse_v2"
+    },
+    {
+      "module_key": "document_intelligence_core",
+      "module_title": "Document Intelligence",
+      "folder": "data/step179/target_modules/document_intelligence_core"
+    },
+    {
+      "module_key": "evidence_citation_engine",
+      "module_title": "Evidence & Citation Engine",
+      "folder": "data/step179/target_modules/evidence_citation_engine"
+    },
+    {
+      "module_key": "knowledge_graph_core",
+      "module_title": "Biomedical Knowledge Graph",
+      "folder": "data/step179/target_modules/knowledge_graph_core"
+    },
+    {
+      "module_key": "plugin_marketplace_core",
+      "module_title": "Plugin Marketplace Core",
+      "folder": "data/step179/target_modules/plugin_marketplace_core"
+    },
+    {
+      "module_key": "plugin_marketplace_v2",
+      "module_title": "Plugin Marketplace V2",
+      "folder": "data/step179/target_modules/plugin_marketplace_v2"
+    },
+    {
+      "module_key": "provenance_ledger_v2",
+      "module_title": "Provenance & Reproducibility Ledger",
+      "folder": "data/step179/target_modules/provenance_ledger_v2"
+    },
+    {
+      "module_key": "reference_lifecycle_v2",
+      "module_title": "Reference Database Lifecycle Manager",
+      "folder": "data/step179/target_modules/reference_lifecycle_v2"
+    },
+    {
+      "module_key": "unified_report_builder",
+      "module_title": "Unified Scientific Report Builder",
+      "folder": "data/step179/target_modules/unified_report_builder"
+    },
+    {
+      "module_key": "collaboration_review_v2",
+      "module_title": "Collaboration & Scientific Review",
+      "folder": "data/step179/target_modules/collaboration_review_v2"
+    },
+    {
+      "module_key": "universal_file_inspector",
+      "module_title": "Universal Scientific File Inspector",
+      "folder": "data/step179/target_modules/universal_file_inspector"
+    },
+    {
+      "module_key": "store_readiness_core",
+      "module_title": "Windows Store/Product Readiness",
+      "folder": "data/step179/target_modules/store_readiness_core"
+    },
+    {
+      "module_key": "workflow_builder_core",
+      "module_title": "Visual Workflow Builder Core",
+      "folder": "data/step179/target_modules/workflow_builder_core"
+    },
+    {
+      "module_key": "workflow_builder_v2",
+      "module_title": "Visual Workflow Builder V2",
+      "folder": "data/step179/target_modules/workflow_builder_v2"
+    }
+  ]
+}

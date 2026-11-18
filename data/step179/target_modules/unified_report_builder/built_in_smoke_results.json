@@ -1,0 +1,16 @@
+{
+  "module_key": "unified_report_builder",
+  "checks": {
+    "schema_valid": true,
+    "positive_fixture_deterministic": true,
+    "negative_fixture_rejected": true,
+    "corruption_fixture_rejected": true,
+    "recovery_or_rollback_passed": true,
+    "concurrency_safe": true,
+    "artifact_hash_verified": true,
+    "resource_limit_enforced": true,
+    "mandatory_sections_present": true,
+    "source_trace_complete": true,
+    "export_reproducible": true
+  }
+}

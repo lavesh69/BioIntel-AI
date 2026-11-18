@@ -1,0 +1,38 @@
+{
+  "schema": "biointel.step176.module-contract.v1",
+  "module_key": "population_gwas",
+  "module_title": "Population Genetics, GWAS & PRS",
+  "evidence_class": "population-research",
+  "workflow": [
+    "Sample/variant QC",
+    "Relatedness and ancestry assessment",
+    "Association modelling",
+    "Calibration and sensitivity analysis",
+    "Independent replication"
+  ],
+  "quality_gates": [
+    "Phenotype definition locked",
+    "Population structure controlled",
+    "Relatedness handled",
+    "Multiple-testing correction",
+    "Independent cohort replication"
+  ],
+  "required_outputs": [
+    "QC exclusions",
+    "Ancestry/relatedness report",
+    "Association results",
+    "Calibration diagnostics",
+    "Replication gate"
+  ],
+  "required_engines": [
+    "plink2",
+    "regenie",
+    "saige"
+  ],
+  "required_references": [
+    "gnomad-genomes",
+    "grch38-fasta"
+  ],
+  "scientific_boundary": "GWAS and PRS outputs are population-dependent research results and must not be used for individual clinical decisions without validation.",
+  "release_policy": "fail-closed"
+}

@@ -1,0 +1,41 @@
+{
+  "schema": "biointel.step176.module-contract.v1",
+  "module_key": "one_health_environmental",
+  "module_title": "One Health & Environmental Genomics",
+  "evidence_class": "public-health-high-impact",
+  "workflow": [
+    "Host/site/sample harmonisation",
+    "Taxonomy and AMR profiling",
+    "Temporal/geospatial cluster screening",
+    "Source linkage assessment",
+    "Epidemiology review"
+  ],
+  "quality_gates": [
+    "Sampling design documented",
+    "Environmental controls",
+    "Databases pinned",
+    "Confirmatory testing",
+    "Epidemiology/public-health sign-off"
+  ],
+  "required_outputs": [
+    "Sampling QC",
+    "Taxonomy/AMR matrix",
+    "Cluster timeline/map",
+    "Source linkage evidence",
+    "Release gate"
+  ],
+  "required_engines": [
+    "bracken",
+    "humann",
+    "kraken2",
+    "minimap2"
+  ],
+  "required_references": [
+    "card",
+    "humann-chocophlan",
+    "humann-uniref90",
+    "kraken2-standard"
+  ],
+  "scientific_boundary": "One Health genomic signals require confirmatory testing and epidemiological interpretation before public-health action.",
+  "release_policy": "fail-closed"
+}

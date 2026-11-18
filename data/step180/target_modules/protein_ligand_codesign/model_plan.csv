@@ -1,0 +1,4 @@
+asset_id,label,kind,release_mode,expected_format,qualification_strategy
+qualified-protein-design-weights,Qualified Protein Design Weights,model,operator-pinned-and-reviewed,manifest + checksummed assets,manual evidence intake plus automated manifest verification
+qualified-generative-structure-weights,Qualified Generative Structure Weights,model,operator-pinned-and-reviewed,manifest + checksummed assets,manual evidence intake plus automated manifest verification
+qualified-affinity-or-pose-model,Qualified Affinity Or Pose Model,model,operator-pinned-and-reviewed,manifest + checksummed assets,manual evidence intake plus automated manifest verification

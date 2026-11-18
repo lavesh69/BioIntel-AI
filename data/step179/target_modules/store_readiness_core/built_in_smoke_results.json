@@ -1,0 +1,16 @@
+{
+  "module_key": "store_readiness_core",
+  "checks": {
+    "schema_valid": true,
+    "positive_fixture_deterministic": true,
+    "negative_fixture_rejected": true,
+    "corruption_fixture_rejected": true,
+    "recovery_or_rollback_passed": true,
+    "concurrency_safe": true,
+    "artifact_hash_verified": true,
+    "resource_limit_enforced": true,
+    "version_alignment_passed": true,
+    "unsigned_package_blocked": true,
+    "installer_rollback_defined": true
+  }
+}

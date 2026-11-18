@@ -1,0 +1,39 @@
+{
+  "schema": "biointel.step176.module-contract.v1",
+  "module_key": "proteogenomics_neoantigen",
+  "module_title": "Proteogenomics & Neoantigen Discovery",
+  "evidence_class": "translational-oncology",
+  "workflow": [
+    "Variant/transcript/protein harmonisation",
+    "Custom proteome construction",
+    "Spectrum search and FDR control",
+    "HLA presentation prediction",
+    "Orthogonal validation plan"
+  ],
+  "quality_gates": [
+    "Sample identity maintained",
+    "Search database version locked",
+    "Target-decoy/FDR qualified",
+    "HLA typing confirmed",
+    "Immunopeptidomics/assay confirmation"
+  ],
+  "required_outputs": [
+    "Custom proteome manifest",
+    "PSM/peptide FDR table",
+    "Neoantigen ranking",
+    "Evidence trace",
+    "Release gate"
+  ],
+  "required_engines": [
+    "bcftools",
+    "comet",
+    "msgfplus"
+  ],
+  "required_references": [
+    "netmhciipan-data",
+    "netmhcpan-data",
+    "uniprot-swissprot"
+  ],
+  "scientific_boundary": "Neoantigen candidates require orthogonal peptide/presentation and immunological validation before translational use.",
+  "release_policy": "fail-closed"
+}

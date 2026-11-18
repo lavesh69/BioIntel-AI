@@ -1,0 +1,37 @@
+{
+  "schema": "biointel.step177.21-module-contract.v1",
+  "module_key": "digital_pathology_foundation",
+  "module_title": "Digital Pathology Foundation Model",
+  "workflow": [
+    "Slide/scanner metadata and tissue QC",
+    "Tiling, stain and artefact normalisation",
+    "Foundation embedding/model qualification",
+    "Patient-level task validation and calibration",
+    "External-site pathology review and release"
+  ],
+  "quality_gates": [
+    "Scanner/stain metadata locked",
+    "Tissue/artefact QC passed",
+    "Weights and preprocessing hashes verified",
+    "Patient-level leakage audit passed",
+    "Calibration/subgroup performance passed",
+    "External-site pathologist review passed"
+  ],
+  "required_outputs": [
+    "Slide QC",
+    "Embedding/model card",
+    "Patient-level benchmark",
+    "Calibration/subgroup report",
+    "Clinical-boundary gate"
+  ],
+  "boundary": "Digital pathology model outputs are research support and require patient-level external validation and qualified pathology review.",
+  "model_assets": [
+    "histology-foundation-weights",
+    "tile-preprocessor",
+    "task-head-model"
+  ],
+  "cohort_assets": [
+    "digital_pathology_foundation-development-cohort",
+    "digital_pathology_foundation-independent-external-cohort"
+  ]
+}

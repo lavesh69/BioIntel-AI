@@ -1,0 +1,37 @@
+{
+  "schema": "biointel.step177.21-module-contract.v1",
+  "module_key": "structural_bioinformatics_core",
+  "module_title": "Structural Bioinformatics",
+  "workflow": [
+    "Structure identity and preparation QC",
+    "Geometry/quality assessment",
+    "Alignment, pocket and interaction analysis",
+    "Simulation/docking sensitivity review",
+    "Experimental structure/function reconciliation"
+  ],
+  "quality_gates": [
+    "Structure source/version pinned",
+    "Missing residues/ligands reviewed",
+    "Force field/protonation recorded",
+    "Positive/negative controls passed",
+    "Protocol reproducibility demonstrated",
+    "Experimental evidence attached"
+  ],
+  "required_outputs": [
+    "Structure QC",
+    "Alignment/pocket report",
+    "Interaction evidence",
+    "Protocol sensitivity analysis",
+    "Release gate"
+  ],
+  "boundary": "Computational structural results are hypotheses and require experimental structure or functional validation.",
+  "model_assets": [
+    "structure-quality-model",
+    "pocket-interaction-model",
+    "simulation-protocol"
+  ],
+  "cohort_assets": [
+    "structural_bioinformatics_core-development-cohort",
+    "structural_bioinformatics_core-independent-external-cohort"
+  ]
+}

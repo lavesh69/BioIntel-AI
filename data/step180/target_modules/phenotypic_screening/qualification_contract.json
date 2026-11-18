@@ -1,0 +1,74 @@
+{
+  "schema": "biointel.step180.final-five-scientific-assurance.v1",
+  "module_key": "phenotypic_screening",
+  "module_title": "Phenotypic Screening & High-Content Analysis",
+  "baseline_rating": 4.36,
+  "internal_after_rating": 10.0,
+  "focus": "control-aware high-content image and feature screening with plate, replicate, leakage, uncertainty and orthogonal-assay safeguards",
+  "workflow": [
+    "Lock intended use, supported inputs, decision boundary, endpoints and quantitative acceptance thresholds before execution",
+    "Verify permissions, sample identity, schema, units, coordinate/build conventions, checksums and complete input lineage",
+    "Qualify pinned specialist runtimes, reference releases, model weights, preprocessing and hardware execution profile",
+    "Execute deterministic golden, negative, corruption, leakage, sensitivity and reproducibility fixtures in an isolated workspace",
+    "Run module-specific uncertainty, subgroup/site/instrument, contamination or selectivity checks and preserve all exclusions",
+    "Export a signed evidence bundle and remain fail-closed until independent confirmation, expert review and formal release approval"
+  ],
+  "data_gates": [
+    "Input identity, permissions, schema, units and SHA-256 lineage are complete",
+    "Sample, plate, patient, site, scanner or sequence identifiers are unique and leakage-audited",
+    "Required controls, replicates, metadata and exclusion reasons are present",
+    "Reference coordinate systems, genome builds, ontologies and database releases are pinned",
+    "Missingness, corruption, duplication and implausible-range checks pass",
+    "Train, validation, benchmark and external-confirmation assets are isolated"
+  ],
+  "model_gates": [
+    "Model provider, architecture, release, weight checksum and licence are recorded",
+    "Preprocessing, tokenisation, feature extraction and postprocessing are version locked",
+    "Intended use, unsupported use, calibration and applicability domain are documented",
+    "Training-data overlap and benchmark leakage are assessed and bounded",
+    "Uncertainty, out-of-distribution and abstention behaviour are tested",
+    "Subgroup, site, instrument or domain-shift performance is reported"
+  ],
+  "scientific_gates": [
+    "Positive and negative controls achieve the locked Z-prime threshold",
+    "Edge, row, column, batch and plate-position effects are measured and bounded",
+    "Replicate concordance, robust effect size and multiple-testing correction pass",
+    "Patient, plate, well and image-object leakage are absent across evaluation splits",
+    "Segmentation masks pass size, count, border-touch and confidence checks",
+    "Dose-response direction, potency uncertainty and orthogonal confirmation are reported",
+    "Low-confidence or out-of-domain phenotypes abstain instead of becoming hits"
+  ],
+  "acceptance_criteria": [
+    "All mandatory contracts, data gates and scientific checks pass without a critical exception",
+    "All required components, references, model assets, cohorts and benchmark fixtures are qualified",
+    "Golden results are deterministic and negative/corruption/leakage cases fail safely",
+    "Uncertainty and applicability-domain limits are exposed in every export",
+    "No unsupported biological, clinical or experimental claim is emitted",
+    "Independent confirmation, expert sign-off and formal release review are complete for controlled release"
+  ],
+  "required_outputs": [
+    "Locked intended-use and scientific acceptance contract",
+    "Runtime, model-weight, reference and dataset bill of materials",
+    "Input lineage, exclusion, leakage and contamination audit",
+    "Golden/adverse fixture results with expected-output hashes",
+    "Uncertainty, subgroup/site/instrument and applicability-domain report",
+    "Signed qualification bundle and fail-closed release decision"
+  ],
+  "risk_controls": [
+    "plate edge and dispensing artefacts",
+    "patient, well or replicate leakage",
+    "segmentation domain shift",
+    "compound identity or dose mismatch",
+    "hit inflation from multiple testing",
+    "unsupported translation from phenotype to mechanism"
+  ],
+  "monitoring_metrics": [
+    "Z-prime and control separation",
+    "replicate concordance and plate drift",
+    "segmentation failure and abstention rate",
+    "hit confirmation and false-discovery rate",
+    "instrument/site performance drift"
+  ],
+  "boundary": "Screening outputs are research prioritisation only. Hits require assay-specific orthogonal confirmation, independent plates/sites and qualified biological review.",
+  "decision_policy": "internal-10of10-external-fail-closed"
+}

@@ -1,0 +1,37 @@
+{
+  "schema": "biointel.step177.21-module-contract.v1",
+  "module_key": "offline_scientific_copilot_v2",
+  "module_title": "Offline Scientific Copilot V2",
+  "workflow": [
+    "Model/runtime and tool-permission verification",
+    "Document ingestion and retrieval qualification",
+    "Tool-use and multi-step task benchmarking",
+    "Safety, citation and adversarial evaluation",
+    "Human approval, monitoring and rollback"
+  ],
+  "quality_gates": [
+    "Weights and runtime hashes verified",
+    "Tool permissions least-privilege reviewed",
+    "Citation grounding benchmark passed",
+    "Prompt-injection tests passed",
+    "High-impact action confirmation enforced",
+    "Independent expert benchmark passed"
+  ],
+  "required_outputs": [
+    "Agent configuration card",
+    "Retrieval/tool trace",
+    "Task benchmark",
+    "Safety/adversarial report",
+    "Deployment gate"
+  ],
+  "boundary": "Agentic outputs and tool actions remain human-controlled and require explicit confirmation for high-impact use.",
+  "model_assets": [
+    "offline-agent-llm",
+    "embedding-model",
+    "tool-routing-model"
+  ],
+  "cohort_assets": [
+    "offline_scientific_copilot_v2-development-cohort",
+    "offline_scientific_copilot_v2-independent-external-cohort"
+  ]
+}

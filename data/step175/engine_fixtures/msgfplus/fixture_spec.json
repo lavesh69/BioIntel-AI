@@ -1,0 +1,13 @@
+{
+  "schema": "biointel.step175.engine-fixture.v1",
+  "engine": "msgfplus",
+  "environment_group": "proteomics",
+  "probe_executable": "MSGFPlus",
+  "version_probe": "MSGFPlus, --version",
+  "golden_fixture_level": "L2-synthetic-known-answer",
+  "negative_control_required": true,
+  "module_integration_level": "L3-native-workflow",
+  "expected_exit_code": 0,
+  "output_sha256_required": true,
+  "actual_result": "pending-target-execution"
+}

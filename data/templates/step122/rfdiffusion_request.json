@@ -1,0 +1,16 @@
+{
+  "schema": "biointel.step122.protein_design_request.v1",
+  "backend": "rfdiffusion",
+  "workspace": "workspace/protein_design_runs",
+  "run_name": "rfdiffusion-backbone",
+  "input_path": "C:/BioIntelInput/scaffold.pdb",
+  "parameters": {
+    "contigs": "A1-120/30-60",
+    "hotspot_residues": ["A42", "A77"],
+    "num_designs": 8,
+    "seed": 42,
+    "threads": 8
+  },
+  "timeout_hours": 72,
+  "dry_run": true
+}

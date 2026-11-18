@@ -1,0 +1,16 @@
+{
+  "module_key": "collaboration_review_v2",
+  "checks": {
+    "schema_valid": true,
+    "positive_fixture_deterministic": true,
+    "negative_fixture_rejected": true,
+    "corruption_fixture_rejected": true,
+    "recovery_or_rollback_passed": true,
+    "concurrency_safe": true,
+    "artifact_hash_verified": true,
+    "resource_limit_enforced": true,
+    "stale_version_blocked": true,
+    "critical_conflict_blocks_release": true,
+    "decision_signature_verified": true
+  }
+}

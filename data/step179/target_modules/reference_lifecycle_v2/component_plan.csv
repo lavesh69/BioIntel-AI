@@ -1,0 +1,4 @@
+component,label,install_route,platform_target,smoke_test
+python:requests,Provider metadata retrieval,pinned-python-venv,Windows/Python,
+python:hashlib,Checksum verification,standard-library,Windows/Python,
+python:sqlite3,Reference release registry,standard-library,Windows/Python,

@@ -1,0 +1,11 @@
+name: biointel175-immunology
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python=3.11
+  - pip
+  - anarci
+  - igblast
+  - pip:
+      - anarci

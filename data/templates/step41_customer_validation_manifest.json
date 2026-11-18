@@ -1,0 +1,24 @@
+{
+  "study": {
+    "evidence_id": "CUSTOMER-VALIDATION-ID",
+    "area_key": "enterprise_customer_validation",
+    "title": "External customer acceptance",
+    "status": "accepted",
+    "evidence_class": "external_customer_validation",
+    "issuer_organization": "customer-legal-entity",
+    "subject_organization": "platform-operator",
+    "environment": "production",
+    "country": "ISO-3166-country-code",
+    "started_at": "2026-01-01T00:00:00+00:00",
+    "ended_at": "2026-02-01T00:00:00+00:00",
+    "manifest_sha256": "REPLACE-WITH-64-CHARACTER-SHA256",
+    "metadata": {"customer_sector": "enterprise"}
+  },
+  "artifacts": [
+    {"artifact_type": "customer_acceptance", "uri": "evidence://customer/acceptance", "sha256": "REPLACE-WITH-64-CHARACTER-SHA256", "observed_at": "2026-02-02T00:00:00+00:00", "metadata": {}},
+    {"artifact_type": "success_criteria_report", "uri": "evidence://customer/success", "sha256": "REPLACE-WITH-64-CHARACTER-SHA256", "observed_at": "2026-02-02T00:00:00+00:00", "metadata": {}}
+  ],
+  "metrics": [{"metric_name": "success_criteria_passed", "metric_value": 1, "unit": "count", "passed": true}],
+  "attestations": [{"signer_organization": "customer-legal-entity", "signer_identity": "customer-authorized-signatory", "signer_role": "customer sponsor", "independent": true, "decision": "accepted", "signature_sha256": "REPLACE-WITH-64-CHARACTER-SHA256", "signed_at": "2026-02-03T00:00:00+00:00", "notes": "Signed customer acceptance."}],
+  "entities": [{"entity_type": "customer", "entity_key": "customer-id", "organization": "customer-legal-entity", "country": "ISO-3166-country-code", "external": true, "metadata": {}}]
+}

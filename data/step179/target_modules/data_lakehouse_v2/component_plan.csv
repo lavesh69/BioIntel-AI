@@ -1,0 +1,4 @@
+component,label,install_route,platform_target,smoke_test
+python:sqlite3,Metadata index,standard-library,Windows/Python,
+python:pyarrow,Columnar data validation,pinned-python-venv,Windows/Python,
+python:pandas,Schema profiling,pinned-python-venv,Windows/Python,

@@ -1,0 +1,4 @@
+component,label,install_route,platform_target,smoke_test
+python:cryptography,Signature verification,pinned-python-venv,Windows/Python,
+python:packaging,Dependency resolution,pinned-python-venv,Windows/Python,
+python:jsonschema,Manifest schema validation,pinned-python-venv,Windows/Python,

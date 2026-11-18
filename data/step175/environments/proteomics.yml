@@ -1,0 +1,10 @@
+name: biointel175-proteomics
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python=3.11
+  - pip
+  - comet
+  - msgfplus
+  - openms

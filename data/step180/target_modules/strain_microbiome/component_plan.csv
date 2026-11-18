@@ -1,0 +1,7 @@
+component,label,install_route,platform_target,smoke_test
+kraken2,Kraken2 taxonomic classifier,operator-qualified,Windows/Python/WSL as qualified,import/version/help probe only
+bracken,Bracken abundance estimator,operator-qualified,Windows/Python/WSL as qualified,import/version/help probe only
+humann,HUMAnN functional profiler,operator-qualified,Windows/Python/WSL as qualified,import/version/help probe only
+metaphlan,MetaPhlAn marker profiler,operator-qualified,Windows/Python/WSL as qualified,import/version/help probe only
+python:biom,BIOM table runtime,pinned-python-venv,Windows/Python/WSL as qualified,import/version/help probe only
+python:skbio,scikit-bio compositional statistics,pinned-python-venv,Windows/Python/WSL as qualified,import/version/help probe only

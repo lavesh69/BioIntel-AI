@@ -1,0 +1,42 @@
+{
+  "schema": "biointel.step180.asset-index.v1",
+  "module_count": 5,
+  "portfolio_internal_status": "80/80 modules at internal 10/10",
+  "modules": [
+    {
+      "module_key": "phenotypic_screening",
+      "module_title": "Phenotypic Screening & High-Content Analysis",
+      "baseline_rating": 4.36,
+      "internal_after_rating": 10.0,
+      "folder": "data/step180/target_modules/phenotypic_screening"
+    },
+    {
+      "module_key": "spatial_omics_pathology",
+      "module_title": "Spatial Omics & Digital Pathology",
+      "baseline_rating": 4.25,
+      "internal_after_rating": 10.0,
+      "folder": "data/step180/target_modules/spatial_omics_pathology"
+    },
+    {
+      "module_key": "protein_language_design",
+      "module_title": "Protein Language Model & Generative Design",
+      "baseline_rating": 3.5,
+      "internal_after_rating": 10.0,
+      "folder": "data/step180/target_modules/protein_language_design"
+    },
+    {
+      "module_key": "protein_ligand_codesign",
+      "module_title": "Protein\u2013Ligand Co-Design",
+      "baseline_rating": 3.5,
+      "internal_after_rating": 10.0,
+      "folder": "data/step180/target_modules/protein_ligand_codesign"
+    },
+    {
+      "module_key": "strain_microbiome",
+      "module_title": "Strain-Resolved Microbiome",
+      "baseline_rating": 3.5,
+      "internal_after_rating": 10.0,
+      "folder": "data/step180/target_modules/strain_microbiome"
+    }
+  ]
+}

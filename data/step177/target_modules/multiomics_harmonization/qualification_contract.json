@@ -1,0 +1,37 @@
+{
+  "schema": "biointel.step177.21-module-contract.v1",
+  "module_key": "multiomics_harmonization",
+  "module_title": "Multi-Omics Harmonization",
+  "workflow": [
+    "Sample/feature identity reconciliation",
+    "Scale, missingness and batch diagnostics",
+    "Method-comparison harmonisation",
+    "Biological signal preservation testing",
+    "External cohort replication and export"
+  ],
+  "quality_gates": [
+    "Sample linkage verified",
+    "Feature identifiers and releases pinned",
+    "Batch covariates declared",
+    "Biological signal preservation benchmark passed",
+    "Leakage-free train/test split verified",
+    "Independent cohort replication passed"
+  ],
+  "required_outputs": [
+    "Identity reconciliation report",
+    "Pre/post harmonisation diagnostics",
+    "Method comparison",
+    "Signal preservation scorecard",
+    "Release gate"
+  ],
+  "boundary": "Harmonisation can remove biological signal; conclusions require sensitivity analysis and external replication.",
+  "model_assets": [
+    "harmonisation-model",
+    "signal-preservation-model",
+    "integration-latent-model"
+  ],
+  "cohort_assets": [
+    "multiomics_harmonization-development-cohort",
+    "multiomics_harmonization-independent-external-cohort"
+  ]
+}

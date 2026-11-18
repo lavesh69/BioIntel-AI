@@ -1,0 +1,70 @@
+{
+  "schema": "biointel.step178.19-module-assurance-contract.v1",
+  "module_key": "clinical_trial_biomarker",
+  "module_title": "Clinical Trial Biomarker Studio",
+  "baseline_rating": 6.5,
+  "internal_after_rating": 10.0,
+  "evidence_class": "clinical-trial-biomarker",
+  "workflow": [
+    "Lock the intended use, protocol-defined trial endpoint and analysis population",
+    "Validate source identity, permissions, schema, units, lineage and missingness",
+    "Execute prespecified clinical-trial biomarker and stratification analysis with pinned code, models, references and deterministic parameters",
+    "Run leakage, calibration, subgroup, robustness and sensitivity analyses",
+    "Validate on an independent temporal, site, instrument, process or prospective evidence set",
+    "Complete expert review, signed release decision, rollback rehearsal and monitoring activation"
+  ],
+  "quality_gates": [
+    "Intended use, endpoint and acceptance criteria approved before analysis",
+    "Input permissions, provenance, schema, units and checksums verified",
+    "Code, environment, engine, reference and model versions pinned",
+    "Analysis populations and estimands match protocol",
+    "Cutpoints are prespecified or independently locked",
+    "Multiplicity and treatment interaction are controlled",
+    "Missing data and intercurrent events follow the estimand strategy",
+    "Independent evidence, expert sign-off and formal release review complete"
+  ],
+  "acceptance_criteria": [
+    "No critical data-integrity or provenance failure",
+    "All mandatory runtime/reference/model/cohort assets qualified",
+    "Prespecified primary performance and uncertainty criteria passed",
+    "Calibration, subgroup and robustness thresholds passed",
+    "Independent evidence meets the locked acceptance plan",
+    "Rollback and post-release monitoring are tested and approved"
+  ],
+  "required_outputs": [
+    "Protocol-to-analysis mapping",
+    "Biomarker assay QC",
+    "Locked statistical analysis package",
+    "Multiplicity and interaction report",
+    "Independent confirmation package",
+    "Trial research release decision"
+  ],
+  "risk_controls": [
+    "post-hoc subgrouping",
+    "cutpoint optimisation bias",
+    "multiplicity inflation",
+    "site imbalance",
+    "protocol deviation"
+  ],
+  "monitoring_metrics": [
+    "site recruitment mix",
+    "endpoint completeness",
+    "assay drift",
+    "interaction-estimate stability"
+  ],
+  "boundary": "Clinical Trial Biomarker Studio outputs remain research or operational decision support until the module-specific independent evidence, domain-expert review, applicable privacy/safety/clinical controls and formal controlled-release approval are complete.",
+  "model_assets": [
+    "biomarker-cutpoint-model",
+    "treatment-interaction-model",
+    "trial-stratification-model"
+  ],
+  "cohort_assets": [
+    "trial-development-analysis-set",
+    "independent-confirmatory-trial-or-site-cohort"
+  ],
+  "governance_assets": [
+    "clinical_trial_biomarker-intended-use-and-risk-file",
+    "clinical_trial_biomarker-validation-and-acceptance-plan",
+    "clinical_trial_biomarker-monitoring-and-rollback-plan"
+  ]
+}

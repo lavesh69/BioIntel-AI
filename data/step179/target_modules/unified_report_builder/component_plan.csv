@@ -1,0 +1,4 @@
+component,label,install_route,platform_target,smoke_test
+python:jinja2,Report templating,pinned-python-venv,Windows/Python,
+python:weasyprint,PDF rendering,pinned-python-venv,Windows/Python,
+python:hashlib,Export integrity,standard-library,Windows/Python,

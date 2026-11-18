@@ -1,0 +1,17 @@
+{
+  "module_key": "workflow_builder_core",
+  "checks": {
+    "schema_valid": true,
+    "positive_fixture_deterministic": true,
+    "negative_fixture_rejected": true,
+    "corruption_fixture_rejected": true,
+    "recovery_or_rollback_passed": true,
+    "concurrency_safe": true,
+    "artifact_hash_verified": true,
+    "resource_limit_enforced": true,
+    "valid_dag_accepted": true,
+    "cycle_rejected": true,
+    "type_mismatch_blocked": true,
+    "checkpoint_resume_passed": true
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "schema": "biointel.step180.final-five-scientific-assurance.v1",
+  "module_key": "protein_ligand_codesign",
+  "module_title": "Protein\u2013Ligand Co-Design",
+  "baseline_rating": 3.5,
+  "internal_after_rating": 10.0,
+  "focus": "joint protein and ligand candidate design with structure preparation, constraint, pose, selectivity, ensemble and experimental-binding gates",
+  "workflow": [
+    "Lock intended use, supported inputs, decision boundary, endpoints and quantitative acceptance thresholds before execution",
+    "Verify permissions, sample identity, schema, units, coordinate/build conventions, checksums and complete input lineage",
+    "Qualify pinned specialist runtimes, reference releases, model weights, preprocessing and hardware execution profile",
+    "Execute deterministic golden, negative, corruption, leakage, sensitivity and reproducibility fixtures in an isolated workspace",
+    "Run module-specific uncertainty, subgroup/site/instrument, contamination or selectivity checks and preserve all exclusions",
+    "Export a signed evidence bundle and remain fail-closed until independent confirmation, expert review and formal release approval"
+  ],
+  "data_gates": [
+    "Input identity, permissions, schema, units and SHA-256 lineage are complete",
+    "Sample, plate, patient, site, scanner or sequence identifiers are unique and leakage-audited",
+    "Required controls, replicates, metadata and exclusion reasons are present",
+    "Reference coordinate systems, genome builds, ontologies and database releases are pinned",
+    "Missingness, corruption, duplication and implausible-range checks pass",
+    "Train, validation, benchmark and external-confirmation assets are isolated"
+  ],
+  "model_gates": [
+    "Model provider, architecture, release, weight checksum and licence are recorded",
+    "Preprocessing, tokenisation, feature extraction and postprocessing are version locked",
+    "Intended use, unsupported use, calibration and applicability domain are documented",
+    "Training-data overlap and benchmark leakage are assessed and bounded",
+    "Uncertainty, out-of-distribution and abstention behaviour are tested",
+    "Subgroup, site, instrument or domain-shift performance is reported"
+  ],
+  "scientific_gates": [
+    "Protein structures, binding sites and ligand states are complete and versioned",
+    "Generated candidates satisfy residue, geometry, chemistry and interaction constraints",
+    "Steric clashes, ligand strain and pose instability are detected",
+    "Pose or affinity conclusions require consensus or calibrated evidence, not one score",
+    "Selectivity is assessed against a locked off-target panel",
+    "Candidate novelty and training/benchmark overlap are reported",
+    "Affinity, selectivity and activity claims require measured experimental confirmation"
+  ],
+  "acceptance_criteria": [
+    "All mandatory contracts, data gates and scientific checks pass without a critical exception",
+    "All required components, references, model assets, cohorts and benchmark fixtures are qualified",
+    "Golden results are deterministic and negative/corruption/leakage cases fail safely",
+    "Uncertainty and applicability-domain limits are exposed in every export",
+    "No unsupported biological, clinical or experimental claim is emitted",
+    "Independent confirmation, expert sign-off and formal release review are complete for controlled release"
+  ],
+  "required_outputs": [
+    "Locked intended-use and scientific acceptance contract",
+    "Runtime, model-weight, reference and dataset bill of materials",
+    "Input lineage, exclusion, leakage and contamination audit",
+    "Golden/adverse fixture results with expected-output hashes",
+    "Uncertainty, subgroup/site/instrument and applicability-domain report",
+    "Signed qualification bundle and fail-closed release decision"
+  ],
+  "risk_controls": [
+    "incorrect receptor or ligand state",
+    "steric clash or violated design constraint",
+    "docking-score overinterpretation",
+    "selectivity blind spot",
+    "training or benchmark leakage",
+    "binding or activity claim without experiment"
+  ],
+  "monitoring_metrics": [
+    "preparation and chemistry validation failures",
+    "pose RMSD and ensemble agreement",
+    "score calibration and decoy enrichment",
+    "off-target selectivity margin",
+    "experimental affinity and activity confirmation rate"
+  ],
+  "boundary": "Co-design scores rank hypotheses only. They do not establish a valid pose, affinity, selectivity, biological activity, developability or safety without experimental confirmation.",
+  "decision_policy": "internal-10of10-external-fail-closed"
+}

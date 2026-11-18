@@ -1,0 +1,38 @@
+{
+  "schema": "biointel.step176.module-contract.v1",
+  "module_key": "immunoinformatics_vaccine",
+  "module_title": "Immunoinformatics & Vaccine Design",
+  "evidence_class": "translational-immunology",
+  "workflow": [
+    "Antigen sequence QC",
+    "Epitope and HLA-binding prediction",
+    "Conservancy/population coverage",
+    "Safety and cross-reactivity review",
+    "Experimental validation plan"
+  ],
+  "quality_gates": [
+    "Predictor licence and release qualified",
+    "HLA panel justified",
+    "Pathogen diversity represented",
+    "Safety screens complete",
+    "Immunology expert sign-off"
+  ],
+  "required_outputs": [
+    "Epitope table",
+    "Population coverage",
+    "Conservancy report",
+    "Safety ledger",
+    "Release gate"
+  ],
+  "required_engines": [
+    "netmhciipan",
+    "netmhcpan"
+  ],
+  "required_references": [
+    "netmhciipan-data",
+    "netmhcpan-data",
+    "uniprot-swissprot"
+  ],
+  "scientific_boundary": "Predicted epitopes require immunological assay confirmation and do not establish vaccine efficacy or safety.",
+  "release_policy": "fail-closed"
+}

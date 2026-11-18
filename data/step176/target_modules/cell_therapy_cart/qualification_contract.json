@@ -1,0 +1,36 @@
+{
+  "schema": "biointel.step176.module-contract.v1",
+  "module_key": "cell_therapy_cart",
+  "module_title": "Cell Therapy & CAR-T Engineering",
+  "evidence_class": "translational-cell-therapy",
+  "workflow": [
+    "Construct sequence and domain validation",
+    "Specificity and cross-reactivity review",
+    "Manufacturability assessment",
+    "Potency/safety evidence integration",
+    "Candidate governance"
+  ],
+  "quality_gates": [
+    "Construct identity confirmed",
+    "Off-target panel tested",
+    "Potency assay qualified",
+    "Manufacturing comparability attached",
+    "Cell-therapy expert sign-off"
+  ],
+  "required_outputs": [
+    "Construct map",
+    "Liability and specificity matrix",
+    "Potency evidence table",
+    "Manufacturing risk register",
+    "Release gate"
+  ],
+  "required_engines": [
+    "anarci",
+    "igblast"
+  ],
+  "required_references": [
+    "igblast-germline"
+  ],
+  "scientific_boundary": "CAR-T and cell-therapy designs require validated wet-lab potency, specificity, safety and manufacturing evidence.",
+  "release_policy": "fail-closed"
+}

@@ -1,0 +1,41 @@
+{
+  "schema": "biointel.step176.module-contract.v1",
+  "module_key": "pharmacogenomics",
+  "module_title": "Pharmacogenomics",
+  "evidence_class": "clinical-high-impact",
+  "workflow": [
+    "Variant and sample QC",
+    "Phasing/CNV-aware allele calling",
+    "Diplotype inference",
+    "Guideline evidence mapping",
+    "Clinical review package"
+  ],
+  "quality_gates": [
+    "Genome build/reference locked",
+    "Phasing and CNV evidence",
+    "Allele definitions pinned",
+    "Guideline release qualified",
+    "Pharmacogenomics expert sign-off"
+  ],
+  "required_outputs": [
+    "Variant QC",
+    "Allele/diplotype evidence",
+    "Guideline trace",
+    "Uncertainty and exceptions",
+    "Clinical boundary gate"
+  ],
+  "required_engines": [
+    "bcftools",
+    "vep",
+    "whatshap"
+  ],
+  "required_references": [
+    "clinvar-grch38-tbi",
+    "clinvar-grch38-vcf",
+    "gnomad-genomes",
+    "grch38-fasta",
+    "vep-cache-grch38"
+  ],
+  "scientific_boundary": "Pharmacogenomic output is research support and requires validated genotyping plus qualified clinical interpretation.",
+  "release_policy": "fail-closed"
+}

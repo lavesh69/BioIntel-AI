@@ -1,0 +1,38 @@
+{
+  "schema": "biointel.step176.module-contract.v1",
+  "module_key": "long_read_epigenome",
+  "module_title": "Long-Read Epigenome",
+  "evidence_class": "epigenomics-high-impact",
+  "workflow": [
+    "Read/basecall/modification QC",
+    "Alignment and modification calling",
+    "Haplotype phasing",
+    "DMR/imprinting analysis",
+    "Orthogonal methylation review"
+  ],
+  "quality_gates": [
+    "Basecaller/model release locked",
+    "Coverage-aware thresholds",
+    "Biological replicates",
+    "Phasing evidence",
+    "Orthogonal methylation assay"
+  ],
+  "required_outputs": [
+    "Read/modification QC",
+    "Methylation intervals",
+    "Haplotype imbalance",
+    "DMR/imprinting table",
+    "Release gate"
+  ],
+  "required_engines": [
+    "dorado",
+    "modkit",
+    "samtools",
+    "whatshap"
+  ],
+  "required_references": [
+    "dorado-models"
+  ],
+  "scientific_boundary": "Modification and imprinting findings require model, coverage, replication, phasing and orthogonal assay confirmation.",
+  "release_policy": "fail-closed"
+}

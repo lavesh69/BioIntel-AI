@@ -1,0 +1,16 @@
+{
+  "module_key": "universal_file_inspector",
+  "checks": {
+    "schema_valid": true,
+    "positive_fixture_deterministic": true,
+    "negative_fixture_rejected": true,
+    "corruption_fixture_rejected": true,
+    "recovery_or_rollback_passed": true,
+    "concurrency_safe": true,
+    "artifact_hash_verified": true,
+    "resource_limit_enforced": true,
+    "extension_magic_mismatch_detected": true,
+    "archive_traversal_blocked": true,
+    "corrupt_input_rejected": true
+  }
+}
