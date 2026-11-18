@@ -1,0 +1,157 @@
+{
+  "activity_type": "SYNTHETIC_AFFINITY_SCORE",
+  "artifact_version": "7.0.0",
+  "calibration_method": "none",
+  "confidence_intervals": {
+    "accuracy": {
+      "bootstrap_samples": 30,
+      "lower_95": 0.785296875,
+      "upper_95": 0.80224609375
+    },
+    "balanced_accuracy": {
+      "bootstrap_samples": 30,
+      "lower_95": 0.7852325968055888,
+      "upper_95": 0.8022881919424951
+    },
+    "f1": {
+      "bootstrap_samples": 30,
+      "lower_95": 0.7814387283710058,
+      "upper_95": 0.8003492913588689
+    },
+    "pr_auc": {
+      "bootstrap_samples": 30,
+      "lower_95": 0.8775984851186103,
+      "upper_95": 0.8936986517167645
+    },
+    "roc_auc": {
+      "bootstrap_samples": 30,
+      "lower_95": 0.8741996441517379,
+      "upper_95": 0.8869055621749117
+    }
+  },
+  "data_quality_summary": {
+    "class_distribution": {
+      "0": 16001,
+      "1": 15999
+    },
+    "conflicting_pair_groups": 0,
+    "exact_duplicate_rows": 0,
+    "feature_cache": {
+      "drug_cache_hits": 31360,
+      "protein_cache_hits": 31950,
+      "rows_processed": 32000,
+      "unique_drugs": 640,
+      "unique_targets": 50
+    },
+    "invalid_rows": 0,
+    "original_rows": 32000,
+    "p_activity_max": null,
+    "p_activity_min": null,
+    "split_summary": {
+      "group_overlap": false,
+      "strategy": "drug_group",
+      "test_groups": 128,
+      "test_rows": 6400,
+      "train_groups": 416,
+      "train_rows": 20800,
+      "validation_groups": 96,
+      "validation_rows": 4800
+    },
+    "task": "classification",
+    "valid_after_cleaning": 32000
+  },
+  "dataset_name": "biointel_synthetic_double_ultra_dti_v4",
+  "dataset_sha256": "cbdc6fd2bea79184cb0e1577865125b8bf815b654da74f7834f4a95166d051cd",
+  "dataset_version": "4.0",
+  "decision_threshold": 0.49499999999999994,
+  "experiment_id": "exp-20260704T080443+0000-de0e9e4b",
+  "feature_schema": {
+    "drug_feature_count": 141,
+    "feature_count": 167,
+    "feature_hash": "ad1a1adefaf32ad217e60b3df843aa2ef3acde7a28c4854c8a78397f6580bf14",
+    "fingerprint_bits": 128,
+    "fingerprint_radius": 2,
+    "include_dipeptides": false,
+    "protein_feature_count": 26,
+    "schema_version": "2.0.0",
+    "use_chirality": true
+  },
+  "metrics": {
+    "accuracy": 0.7915625,
+    "average_prediction_set_size": 1.2378125,
+    "balanced_accuracy": 0.7916765751337533,
+    "brier_score": 0.14054944805097921,
+    "conformal_coverage": 0.89328125,
+    "empty_prediction_set_fraction": 0.0,
+    "f1": 0.7889908256880734,
+    "log_loss": 0.4364423815432847,
+    "mcc": 0.5836199552985933,
+    "pr_auc": 0.8861606551157859,
+    "precision": 0.8042566913898742,
+    "recall": 0.7742936976094381,
+    "roc_auc": 0.8805499338399241,
+    "specificity": 0.8090594526580686
+  },
+  "model_name": "random_forest",
+  "model_version": "4.0.0-double-data",
+  "positive_class_name": "interaction_positive",
+  "software_versions": {
+    "biopython": "1.86",
+    "joblib": "1.5.3",
+    "python": "3.13.5",
+    "rdkit": "2025.09.4",
+    "scikit_learn": "1.8.0"
+  },
+  "split_strategy": "drug_group",
+  "synthetic_demo": true,
+  "task_type": "classification",
+  "test_rows": 6400,
+  "threshold_strategy": "optimize_balanced",
+  "train_rows": 20800,
+  "trained_at_utc": "2026-07-04T08:04:43+00:00",
+  "training_config": {
+    "activity_type": "SYNTHETIC_AFFINITY_SCORE",
+    "bootstrap_iterations": 30,
+    "calibration_method": "none",
+    "conformal_alpha": 0.1,
+    "dataset_name": "biointel_synthetic_double_ultra_dti_v4",
+    "dataset_version": "4.0",
+    "decision_threshold": 0.5,
+    "fingerprint_bits": 128,
+    "fingerprint_radius": 2,
+    "include_dipeptides": false,
+    "model_name": "random_forest",
+    "model_version": "4.0.0-double-data",
+    "n_estimators": 120,
+    "random_seed": 20260717,
+    "source_description": "BioIntel deterministic synthetic Double Ultra 32,000-pair DTI benchmark",
+    "split_strategy": "drug_group",
+    "synthetic_demo": true,
+    "task_type": "classification",
+    "test_fraction": 0.2,
+    "threshold_strategy": "optimize_balanced",
+    "use_chirality": true,
+    "validation_fraction": 0.15
+  },
+  "uncertainty_calibration": {
+    "alpha": 0.1,
+    "calibration_rows": 4800,
+    "coverage_target": 0.9,
+    "method": "split_conformal_classification",
+    "score_quantile": 0.6470309438614733
+  },
+  "validation_metrics": {
+    "accuracy": 0.8020833333333334,
+    "balanced_accuracy": 0.801841793338804,
+    "brier_score": 0.1375114445217271,
+    "f1": 0.7963994856408059,
+    "log_loss": 0.432889142410416,
+    "mcc": 0.6039929015184203,
+    "pr_auc": 0.8818762702874464,
+    "precision": 0.8039809606231069,
+    "recall": 0.78895966029724,
+    "roc_auc": 0.8856042271805626,
+    "specificity": 0.8147239263803681
+  },
+  "validation_rows": 4800
+}
