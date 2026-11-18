@@ -1,0 +1,166 @@
+{
+  "activity_type": "SYNTHETIC_AFFINITY_SCORE",
+  "artifact_version": "7.0.0",
+  "calibration_method": "none",
+  "confidence_intervals": {
+    "accuracy": {
+      "bootstrap_samples": 25,
+      "lower_95": 0.8164375,
+      "upper_95": 0.826575
+    },
+    "balanced_accuracy": {
+      "bootstrap_samples": 25,
+      "lower_95": 0.8164930842571105,
+      "upper_95": 0.8267731076196327
+    },
+    "f1": {
+      "bootstrap_samples": 25,
+      "lower_95": 0.8193324900387359,
+      "upper_95": 0.8288860645525366
+    },
+    "pr_auc": {
+      "bootstrap_samples": 25,
+      "lower_95": 0.9028562448283435,
+      "upper_95": 0.9091206933968221
+    },
+    "roc_auc": {
+      "bootstrap_samples": 25,
+      "lower_95": 0.9040097126900128,
+      "upper_95": 0.9106767935488811
+    }
+  },
+  "data_quality_summary": {
+    "class_distribution": {
+      "0": 80003,
+      "1": 79997
+    },
+    "conflicting_pair_groups": 0,
+    "exact_duplicate_rows": 0,
+    "feature_cache": {
+      "drug_cache_hits": 159000,
+      "feature_count": 103,
+      "matrix_bytes": 65920000,
+      "matrix_dtype": "float32",
+      "protein_cache_hits": 159840,
+      "rows_processed": 160000,
+      "unique_drugs": 1000,
+      "unique_targets": 160
+    },
+    "invalid_rows": 0,
+    "original_rows": 160000,
+    "p_activity_max": null,
+    "p_activity_min": null,
+    "split_summary": {
+      "group_overlap": false,
+      "strategy": "drug_group",
+      "test_groups": 200,
+      "test_rows": 32000,
+      "train_groups": 650,
+      "train_rows": 104000,
+      "validation_groups": 150,
+      "validation_rows": 24000
+    },
+    "task": "classification",
+    "unique_proteins_validated": 160,
+    "unique_smiles_validated": 1000,
+    "valid_after_cleaning": 160000
+  },
+  "dataset_name": "biointel_synthetic_5x_ultra_dti_v5",
+  "dataset_sha256": "5ecf426209af9814a282f1c60b16b74efac270af08a5c6aba746a9a2f74dbcd8",
+  "dataset_version": "5.0",
+  "decision_threshold": 0.4799999999999999,
+  "experiment_id": "exp-20260704T090904+0000-aa17b1a9",
+  "feature_schema": {
+    "drug_feature_count": 77,
+    "feature_count": 103,
+    "feature_hash": "fdeb2fb3f138cbbe517a6e6bc3bfdcedd3d6009c73f0f5784890d6334a11f4ff",
+    "fingerprint_bits": 64,
+    "fingerprint_radius": 2,
+    "include_dipeptides": false,
+    "protein_feature_count": 26,
+    "schema_version": "2.0.0",
+    "use_chirality": true
+  },
+  "metrics": {
+    "accuracy": 0.82128125,
+    "average_prediction_set_size": 1.20015625,
+    "balanced_accuracy": 0.8213492321683691,
+    "brier_score": 0.12332365737657662,
+    "conformal_coverage": 0.9050625,
+    "empty_prediction_set_fraction": 0.0,
+    "f1": 0.8237541988967303,
+    "log_loss": 0.38732581401873334,
+    "mcc": 0.6430227941451242,
+    "pr_auc": 0.9054101136090648,
+    "precision": 0.8094113372093024,
+    "recall": 0.838614544770032,
+    "roc_auc": 0.9072957424093815,
+    "specificity": 0.8040839195667061
+  },
+  "model_name": "random_forest",
+  "model_version": "5.0.0-full-data",
+  "positive_class_name": "interaction_positive",
+  "software_versions": {
+    "biopython": "1.86",
+    "joblib": "1.5.3",
+    "python": "3.13.5",
+    "rdkit": "2025.09.4",
+    "scikit_learn": "1.8.0"
+  },
+  "split_strategy": "drug_group",
+  "synthetic_demo": true,
+  "task_type": "classification",
+  "test_rows": 32000,
+  "threshold_strategy": "optimize_balanced",
+  "train_rows": 104000,
+  "trained_at_utc": "2026-07-04T09:09:04+00:00",
+  "training_config": {
+    "activity_type": "SYNTHETIC_AFFINITY_SCORE",
+    "bootstrap_iterations": 25,
+    "calibration_method": "none",
+    "conformal_alpha": 0.1,
+    "dataset_name": "biointel_synthetic_5x_ultra_dti_v5",
+    "dataset_version": "5.0",
+    "decision_threshold": 0.5,
+    "fingerprint_bits": 64,
+    "fingerprint_radius": 2,
+    "include_dipeptides": false,
+    "model_name": "random_forest",
+    "model_version": "5.0.0-full-data",
+    "n_estimators": 20,
+    "random_seed": 20260719,
+    "source_description": "BioIntel deterministic synthetic 5X Ultra 160,000-pair DTI benchmark",
+    "split_strategy": "drug_group",
+    "synthetic_demo": true,
+    "task_type": "classification",
+    "test_fraction": 0.2,
+    "threshold_strategy": "optimize_balanced",
+    "tree_max_depth": 18,
+    "tree_max_features": "sqrt",
+    "tree_max_samples": 0.6,
+    "tree_min_samples_leaf": 12,
+    "use_chirality": true,
+    "validation_fraction": 0.15
+  },
+  "uncertainty_calibration": {
+    "alpha": 0.1,
+    "calibration_rows": 24000,
+    "coverage_target": 0.9,
+    "method": "split_conformal_classification",
+    "score_quantile": 0.6387963245358738
+  },
+  "validation_metrics": {
+    "accuracy": 0.818,
+    "balanced_accuracy": 0.8181823011974954,
+    "brier_score": 0.12556054625886665,
+    "f1": 0.8192651439920556,
+    "log_loss": 0.39473870776427666,
+    "mcc": 0.6365272764868439,
+    "pr_auc": 0.9010845016179899,
+    "precision": 0.8046817849305048,
+    "recall": 0.8343868520859671,
+    "roc_auc": 0.9040548916694493,
+    "specificity": 0.8019777503090235
+  },
+  "validation_rows": 24000
+}

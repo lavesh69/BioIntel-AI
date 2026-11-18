@@ -1,0 +1,33 @@
+{
+  "name": "biointel-ai-mobile",
+  "private": true,
+  "version": "15.6.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "sync": "npm run build && cap sync",
+    "android": "npm run sync && cap open android",
+    "ios": "npm run sync && cap open ios"
+  },
+  "dependencies": {
+    "@capacitor/android": "8.4.1",
+    "@capacitor/app": "8.1.0",
+    "@capacitor/browser": "8.0.3",
+    "@capacitor/core": "8.4.1",
+    "@capacitor/haptics": "8.0.2",
+    "@capacitor/ios": "8.4.1",
+    "@capacitor/network": "8.0.1",
+    "@capacitor/preferences": "8.0.1",
+    "@capacitor/share": "8.0.1",
+    "@capacitor/splash-screen": "8.0.1",
+    "@capacitor/status-bar": "8.0.2"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "8.4.1",
+    "typescript": "6.0.3",
+    "vite": "8.1.3"
+  },
+  "description": "BioIntel AI Scientific Intelligence for Life Sciences mobile workspace connector"
+}

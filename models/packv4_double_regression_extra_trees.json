@@ -1,0 +1,133 @@
+{
+  "activity_type": "SYNTHETIC_AFFINITY_SCORE",
+  "artifact_version": "7.0.0",
+  "calibration_method": "none",
+  "confidence_intervals": {
+    "mae": {
+      "bootstrap_samples": 30,
+      "lower_95": 0.3643555300069187,
+      "upper_95": 0.3746561768045637
+    },
+    "r2": {
+      "bootstrap_samples": 30,
+      "lower_95": -0.20262228475336483,
+      "upper_95": -0.15327956452496572
+    },
+    "rmse": {
+      "bootstrap_samples": 30,
+      "lower_95": 0.4293346503862683,
+      "upper_95": 0.4402799450434424
+    }
+  },
+  "data_quality_summary": {
+    "class_distribution": null,
+    "conflicting_pair_groups": 0,
+    "exact_duplicate_rows": 0,
+    "feature_cache": {
+      "drug_cache_hits": 31360,
+      "protein_cache_hits": 31950,
+      "rows_processed": 32000,
+      "unique_drugs": 640,
+      "unique_targets": 50
+    },
+    "invalid_rows": 0,
+    "original_rows": 32000,
+    "p_activity_max": 7.656,
+    "p_activity_min": 4.8659,
+    "split_summary": {
+      "group_overlap": false,
+      "strategy": "target_group",
+      "test_groups": 10,
+      "test_rows": 6400,
+      "train_groups": 32,
+      "train_rows": 20480,
+      "validation_groups": 8,
+      "validation_rows": 5120
+    },
+    "task": "regression",
+    "valid_after_cleaning": 32000
+  },
+  "dataset_name": "biointel_synthetic_double_ultra_dti_v4",
+  "dataset_sha256": "cbdc6fd2bea79184cb0e1577865125b8bf815b654da74f7834f4a95166d051cd",
+  "dataset_version": "4.0",
+  "decision_threshold": null,
+  "experiment_id": "exp-20260704T080543+0000-54267cf2",
+  "feature_schema": {
+    "drug_feature_count": 141,
+    "feature_count": 167,
+    "feature_hash": "ad1a1adefaf32ad217e60b3df843aa2ef3acde7a28c4854c8a78397f6580bf14",
+    "fingerprint_bits": 128,
+    "fingerprint_radius": 2,
+    "include_dipeptides": false,
+    "protein_feature_count": 26,
+    "schema_version": "2.0.0",
+    "use_chirality": true
+  },
+  "metrics": {
+    "average_interval_width": 0.8647228948412663,
+    "conformal_coverage": 0.63046875,
+    "mae": 0.36957253779427846,
+    "mse": 0.1899025077313979,
+    "pearson": 0.08235338552488203,
+    "r2": -0.17855676162627154,
+    "rmse": 0.43577804870300424,
+    "spearman": 0.08398723990563484
+  },
+  "model_name": "extra_trees",
+  "model_version": "4.0.0-double-data",
+  "positive_class_name": null,
+  "software_versions": {
+    "biopython": "1.86",
+    "joblib": "1.5.3",
+    "python": "3.13.5",
+    "rdkit": "2025.09.4",
+    "scikit_learn": "1.8.0"
+  },
+  "split_strategy": "target_group",
+  "synthetic_demo": true,
+  "task_type": "regression",
+  "test_rows": 6400,
+  "threshold_strategy": "fixed",
+  "train_rows": 20480,
+  "trained_at_utc": "2026-07-04T08:05:43+00:00",
+  "training_config": {
+    "activity_type": "SYNTHETIC_AFFINITY_SCORE",
+    "bootstrap_iterations": 30,
+    "calibration_method": "none",
+    "conformal_alpha": 0.1,
+    "dataset_name": "biointel_synthetic_double_ultra_dti_v4",
+    "dataset_version": "4.0",
+    "decision_threshold": 0.5,
+    "fingerprint_bits": 128,
+    "fingerprint_radius": 2,
+    "include_dipeptides": false,
+    "model_name": "extra_trees",
+    "model_version": "4.0.0-double-data",
+    "n_estimators": 80,
+    "random_seed": 20260717,
+    "source_description": "BioIntel deterministic synthetic Double Ultra 32,000-pair DTI benchmark",
+    "split_strategy": "target_group",
+    "synthetic_demo": true,
+    "task_type": "regression",
+    "test_fraction": 0.2,
+    "threshold_strategy": "fixed",
+    "use_chirality": true,
+    "validation_fraction": 0.15
+  },
+  "uncertainty_calibration": {
+    "absolute_residual_quantile": 0.4323614474206332,
+    "alpha": 0.1,
+    "calibration_rows": 5120,
+    "coverage_target": 0.9,
+    "method": "split_conformal_regression"
+  },
+  "validation_metrics": {
+    "mae": 0.20412700779060627,
+    "mse": 0.06742125680198742,
+    "pearson": 0.44276627074923836,
+    "r2": 0.1931279453524859,
+    "rmse": 0.25965603555855854,
+    "spearman": 0.44655850704671635
+  },
+  "validation_rows": 5120
+}

@@ -1,0 +1,872 @@
+{
+  "schema": "biointel.education.phase17-22.release-manifest.v1",
+  "release": "BioIntel-AI-15.6.0-EDUCATION-PHASE17-TO-22-MEGA-FIXED-R1",
+  "version": "15.6.0",
+  "archive_root": "BioIntel-Step220",
+  "part_count": 4,
+  "generated_at_utc": "2026-07-30T06:25:44Z",
+  "canonical_source_archives": [
+    {
+      "part": 1,
+      "name": "BioIntel-AI-15.6.0-EDUCATION-PHASE16-MEGA-FIXED-R2.1-INSTALL-HOTFIX-Part1.zip",
+      "sha256": "5ad7e489918159f12cd1b436849aabd888705fd8a7c7db309d246a39547f9cb6",
+      "size_bytes": 71100232,
+      "files": 3375
+    },
+    {
+      "part": 2,
+      "name": "BioIntel-AI-15.6.0-EDUCATION-PHASE16-MEGA-FIXED-R2.1-INSTALL-HOTFIX-Part2.zip",
+      "sha256": "0af1b31e3d710a10a28ea5e29c4b4fc2fc3eb2f967ec7230700505db54fa8f21",
+      "size_bytes": 39217521,
+      "files": 3375
+    },
+    {
+      "part": 3,
+      "name": "BioIntel-AI-15.6.0-EDUCATION-PHASE16-MEGA-FIXED-R2.1-INSTALL-HOTFIX-Part3.zip",
+      "sha256": "bfa9076fcbe65b1820ae2cff54b24620ddb32335fdab16fe97d2e2c89c9eedb1",
+      "size_bytes": 104095356,
+      "files": 3375
+    },
+    {
+      "part": 4,
+      "name": "BioIntel-AI-15.6.0-EDUCATION-PHASE16-MEGA-FIXED-R2.1-INSTALL-HOTFIX-Part4.zip",
+      "sha256": "e0e2fbebb9a2a2cecb2da852374c5be6b3b2cd8c17107fc6224b2a179afef97e",
+      "size_bytes": 333024525,
+      "files": 3372
+    }
+  ],
+  "changed_files": [
+    {
+      "path": ".env.example",
+      "state": "changed",
+      "size_bytes": 3411,
+      "sha256": "f87a0c96c0a75cd85670b84dcc44a125a66d2047136a4e6bf60c60ea4ed9e10a"
+    },
+    {
+      "path": "CHANGELOG_EDUCATION_PHASE17_TO_22.md",
+      "state": "new",
+      "size_bytes": 2057,
+      "sha256": "3ee2f46e8e76e97d165c3e6ddf0648379a1f896428984b008236974f2af8739d"
+    },
+    {
+      "path": "DIAGNOSE_EDUCATION_PHASE17_TO_22_WINDOWS.bat",
+      "state": "new",
+      "size_bytes": 887,
+      "sha256": "ef6db8e2732fb4c4bf1d3606b7d0446272bb6d863a9526f25cd96531cc8bb296"
+    },
+    {
+      "path": "EDUCATION_API_SPEC.md",
+      "state": "new",
+      "size_bytes": 2271,
+      "sha256": "46d53704919d3062bc3fc7f18eb6360602fcb7ede13c003a449d269a620d8853"
+    },
+    {
+      "path": "EDUCATION_BACKUP_RESTORE_GUIDE.md",
+      "state": "new",
+      "size_bytes": 1284,
+      "sha256": "23f6ecd88f4fb479bd18ad1e71800bd36a345467e1b90827a6bd2b205c880c61"
+    },
+    {
+      "path": "EDUCATION_DATABASE_SCHEMA.md",
+      "state": "new",
+      "size_bytes": 2481,
+      "sha256": "410bed22c8553306954a88795206986e9ee66e3084e9a5ef604eab12d0336ea6"
+    },
+    {
+      "path": "EDUCATION_KNOWN_LIMITATIONS.md",
+      "state": "new",
+      "size_bytes": 1711,
+      "sha256": "7f925ffb60c85fff4e67b6381483b19471ccee99ac3addcb5c333a141d2c114a"
+    },
+    {
+      "path": "EDUCATION_MIGRATION_AND_ROLLBACK_GUIDE.md",
+      "state": "new",
+      "size_bytes": 1343,
+      "sha256": "5984a3598479a3f6553d5b61f5016c7510f98db4b0e97d526e48f1e32690da1d"
+    },
+    {
+      "path": "EDUCATION_OS_ARCHITECTURE.md",
+      "state": "new",
+      "size_bytes": 2783,
+      "sha256": "23486835e11b5c5feb2b6dfdefac2422e09de79669e286222a36590bcd2814c7"
+    },
+    {
+      "path": "EDUCATION_SECURITY_AND_PRIVACY_REPORT.md",
+      "state": "new",
+      "size_bytes": 2155,
+      "sha256": "c06194da32d3ff18e291a4bedd2298e272a4a23c010d8b2bda55483a3c981c6a"
+    },
+    {
+      "path": "EDUCATION_TEST_REPORT.md",
+      "state": "new",
+      "size_bytes": 2615,
+      "sha256": "beb4e35d330ddf439a57a692aa431e5d901a57b918a65a3cd532d695a0f74ff0"
+    },
+    {
+      "path": "EDUCATION_WINDOWS_QUALIFICATION.md",
+      "state": "new",
+      "size_bytes": 1748,
+      "sha256": "602b88f7f705723762cff9e4046043fd0058684c30a35e27cd29495fa7d4d693"
+    },
+    {
+      "path": "EXTRACT_INSTALL_RUN_EDUCATION_PHASE17_TO_22_4PART_WINDOWS.bat",
+      "state": "new",
+      "size_bytes": 1857,
+      "sha256": "c7b34a45e869b188d86b9ecb11a0418eac2b12f72cb1ad26e7089d30b076cfea"
+    },
+    {
+      "path": "INSTALL_EDUCATION_PHASE17_TO_22_WINDOWS.bat",
+      "state": "new",
+      "size_bytes": 700,
+      "sha256": "32d27636d09e6a3e33f6a21af961c2ff623b85964c0dee202bd9400b26aee8b8"
+    },
+    {
+      "path": "INSTALL_WINDOWS.bat",
+      "state": "changed",
+      "size_bytes": 10062,
+      "sha256": "f5c480e38d5da8f81988a39a5e0422e22457474b1c5ff8032fc5235d8e01e3be"
+    },
+    {
+      "path": "pages/140_BioIntel_Connect.py",
+      "state": "changed",
+      "size_bytes": 415,
+      "sha256": "17166b9407a7f0da575fe7b24087fa1bb2427b708da0f049621a1b88c3f4c131"
+    },
+    {
+      "path": "pages/150_BioIntel_Education_Home.py",
+      "state": "changed",
+      "size_bytes": 416,
+      "sha256": "4fcec1349770ae9d308b8d23d14bb4efe4e229ee76c3ebf540e296055a134c73"
+    },
+    {
+      "path": "pages/151_BioIntel_Classroom.py",
+      "state": "changed",
+      "size_bytes": 398,
+      "sha256": "dbd058d9e255d72f99151d82860f9d22aea2905ddef48ce3d6f83818cec19953"
+    },
+    {
+      "path": "pages/152_BioIntel_Science_Pulse.py",
+      "state": "changed",
+      "size_bytes": 395,
+      "sha256": "76716d5f6e5e8c8cdfa0a77d3801608ee8212df3c7c9fa18fe1b87e84f53c9d4"
+    },
+    {
+      "path": "pages/70_BioIntel_Studio.py",
+      "state": "changed",
+      "size_bytes": 9296,
+      "sha256": "c4f543afca07a747297011127535180be6d842023bc8ea9caa322809a30c9c67"
+    },
+    {
+      "path": "PHASE17_TO_PHASE22_IMPLEMENTATION_REPORT.md",
+      "state": "new",
+      "size_bytes": 5421,
+      "sha256": "dbd4a32df4224f9dd6ade0b9bc701f8d243e43944397c9d645aa5d1856267b8e"
+    },
+    {
+      "path": "pyproject.toml",
+      "state": "changed",
+      "size_bytes": 2427,
+      "sha256": "29ebec675006dfbce3a36071301be785925976827bb766d86845bbf76e9c6c6f"
+    },
+    {
+      "path": "pytest-of-lavesh dobriyal/pytest-3/test_api_schema_and_safe_error0/Unicode path शिक्षा BioIntel/connect data/connect.sqlite3",
+      "state": "new",
+      "size_bytes": 1171456,
+      "sha256": "67607234abb2a396d38bdaa34ba826d1bfd38e7a7c5fe0a4627cb161755864e5"
+    },
+    {
+      "path": "pytest-of-lavesh dobriyal/pytest-3/test_api_schema_and_safe_error0/Unicode path शिक्षा BioIntel/connect media/keys/eln_signing.key",
+      "state": "new",
+      "size_bytes": 32,
+      "sha256": "4028857e976afcdabc09973719dbf4b2c7a803b320fa084bf495c655613600c7"
+    },
+    {
+      "path": "pytest-of-lavesh dobriyal/pytest-3/test_api_schema_and_safe_error0/Unicode path शिक्षा BioIntel/connect media/keys/webhooks.fernet",
+      "state": "new",
+      "size_bytes": 44,
+      "sha256": "3169c7b34653fbcbea504ff0eac8d03357a63013d0ac6eb152a1987cc2085e89"
+    },
+    {
+      "path": "pytest-of-lavesh dobriyal/pytest-3/test_api_schema_and_safe_error0/Unicode path शिक्षा BioIntel/data/education.sqlite3",
+      "state": "new",
+      "size_bytes": 2531328,
+      "sha256": "56eb142f191eb5a92fc278ce7056798a457ae59366f4c7310d18b2d0a12358dc"
+    },
+    {
+      "path": "pytest-of-lavesh dobriyal/pytest-3/test_api_schema_and_safe_error0/Unicode path शिक्षा BioIntel/education/secrets/phase11-fernet.key",
+      "state": "new",
+      "size_bytes": 44,
+      "sha256": "67d5187792e76b2b3f468739cb0c1d5da025c4cd2bbd8eff68d3c67775566ccd"
+    },
+    {
+      "path": "pytest-of-lavesh dobriyal/pytest-3/test_api_schema_and_safe_error0/Unicode path शिक्षा BioIntel/shiro data/shiro.sqlite3",
+      "state": "new",
+      "size_bytes": 86016,
+      "sha256": "6dfa746254dacac29771785f5a8ab9e242c5ca922f69af73f837e2e7c3c3f717"
+    },
+    {
+      "path": "pytest-of-lavesh dobriyal/pytest-3/test_api_schema_and_safe_error0/Unicode path शिक्षा BioIntel/tenant media/.education-signing-key",
+      "state": "new",
+      "size_bytes": 64,
+      "sha256": "f87e0892b86d23e4967ac4eacfd3f08195a08b923dab9a6cdf4b27903b2fb6f9"
+    },
+    {
+      "path": "pytest-of-lavesh dobriyal/pytest-3/test_intervention_requires_dat0/Unicode path शिक्षा BioIntel/connect data/connect.sqlite3",
+      "state": "new",
+      "size_bytes": 1171456,
+      "sha256": "97301f173b8005e9620c1da01fef9a55082dbd34bf0d8b9b3bebf7f4397984ee"
+    },
+    {
+      "path": "pytest-of-lavesh dobriyal/pytest-3/test_intervention_requires_dat0/Unicode path शिक्षा BioIntel/connect media/keys/eln_signing.key",
+      "state": "new",
+      "size_bytes": 32,
+      "sha256": "8126d64b5f2cb1d91170d5d0536a7f78c02f4fe37d1a07233ed8945a8a5ede9a"
+    },
+    {
+      "path": "pytest-of-lavesh dobriyal/pytest-3/test_intervention_requires_dat0/Unicode path शिक्षा BioIntel/connect media/keys/webhooks.fernet",
+      "state": "new",
+      "size_bytes": 44,
+      "sha256": "eb56381379fae009dc9d769fb9b1cc4074e2c1ce9f31dbce599ae591ad64c713"
+    },
+    {
+      "path": "pytest-of-lavesh dobriyal/pytest-3/test_intervention_requires_dat0/Unicode path शिक्षा BioIntel/data/education.sqlite3",
+      "state": "new",
+      "size_bytes": 2531328,
+      "sha256": "c0db083a68a96ce43f8edafc33c815a9bbcc798f0d2265d1be15b897cfbdd380"
+    },
+    {
+      "path": "pytest-of-lavesh dobriyal/pytest-3/test_intervention_requires_dat0/Unicode path शिक्षा BioIntel/education/secrets/phase11-fernet.key",
+      "state": "new",
+      "size_bytes": 44,
+      "sha256": "d2ba2198872571df1d557a6044d18eed929d8fc788e45e7aa90a0e7a05582aff"
+    },
+    {
+      "path": "pytest-of-lavesh dobriyal/pytest-3/test_intervention_requires_dat0/Unicode path शिक्षा BioIntel/shiro data/shiro.sqlite3",
+      "state": "new",
+      "size_bytes": 86016,
+      "sha256": "6dfa746254dacac29771785f5a8ab9e242c5ca922f69af73f837e2e7c3c3f717"
+    },
+    {
+      "path": "pytest-of-lavesh dobriyal/pytest-3/test_intervention_requires_dat0/Unicode path शिक्षा BioIntel/tenant media/.education-signing-key",
+      "state": "new",
+      "size_bytes": 64,
+      "sha256": "a14b5f0dc403a9793909964e7885536c5996dce9146d578fcdc3a971d7b3a463"
+    },
+    {
+      "path": "pytest-of-lavesh dobriyal/pytest-3/test_learning_shiro_connect_an0/Unicode path शिक्षा BioIntel/connect data/connect.sqlite3",
+      "state": "new",
+      "size_bytes": 1171456,
+      "sha256": "3d84caae13ddfba703996d99bf300312b5906fa9b86bb4970126b58849e5621b"
+    },
+    {
+      "path": "pytest-of-lavesh dobriyal/pytest-3/test_learning_shiro_connect_an0/Unicode path शिक्षा BioIntel/connect media/keys/eln_signing.key",
+      "state": "new",
+      "size_bytes": 32,
+      "sha256": "6d1abee58042a7348eb07912ff0fd0702bb9b756f717715801546d3b8211cbfa"
+    },
+    {
+      "path": "pytest-of-lavesh dobriyal/pytest-3/test_learning_shiro_connect_an0/Unicode path शिक्षा BioIntel/connect media/keys/webhooks.fernet",
+      "state": "new",
+      "size_bytes": 44,
+      "sha256": "3a59fb03243b56993982a3bd0a37b159fc37ae99e923d27ee7ac94958686f2fe"
+    },
+    {
+      "path": "pytest-of-lavesh dobriyal/pytest-3/test_learning_shiro_connect_an0/Unicode path शिक्षा BioIntel/course material.md",
+      "state": "new",
+      "size_bytes": 90,
+      "sha256": "5b2ea453202c24eda6fce4cb8a6f54235b51e4c845685d2a74cb2f054a5eac24"
+    },
+    {
+      "path": "pytest-of-lavesh dobriyal/pytest-3/test_learning_shiro_connect_an0/Unicode path शिक्षा BioIntel/data/education.sqlite3",
+      "state": "new",
+      "size_bytes": 2531328,
+      "sha256": "1605ef1186ebe93099958c0331b9a2f9b5a04f81926424f1991d6916213a8ea2"
+    },
+    {
+      "path": "pytest-of-lavesh dobriyal/pytest-3/test_learning_shiro_connect_an0/Unicode path शिक्षा BioIntel/education/secrets/phase11-fernet.key",
+      "state": "new",
+      "size_bytes": 44,
+      "sha256": "8c74de0987698fde2c44d08a67708e25d434547b5e5e19d1d002b6a5cc129f3f"
+    },
+    {
+      "path": "pytest-of-lavesh dobriyal/pytest-3/test_learning_shiro_connect_an0/Unicode path शिक्षा BioIntel/shiro data/evidence/5fd661c4f405196d08cce27b/src-de650ea7d7ba491b95e0d77c777ec59a.md",
+      "state": "new",
+      "size_bytes": 90,
+      "sha256": "5b2ea453202c24eda6fce4cb8a6f54235b51e4c845685d2a74cb2f054a5eac24"
+    },
+    {
+      "path": "pytest-of-lavesh dobriyal/pytest-3/test_learning_shiro_connect_an0/Unicode path शिक्षा BioIntel/shiro data/shiro.sqlite3",
+      "state": "new",
+      "size_bytes": 86016,
+      "sha256": "00e009269c7c01b2f5a86bcd82931b1341af2100d2762d97459f0dc4b60de451"
+    },
+    {
+      "path": "pytest-of-lavesh dobriyal/pytest-3/test_learning_shiro_connect_an0/Unicode path शिक्षा BioIntel/tenant media/.education-signing-key",
+      "state": "new",
+      "size_bytes": 64,
+      "sha256": "6c1c50b33810b74a96ef73eac7ec0ea9da62e4b3e444b77433a2493fb50e6565"
+    },
+    {
+      "path": "pytest-of-lavesh dobriyal/pytest-3/test_learning_shiro_connect_an0/Unicode path शिक्षा BioIntel/tenant media/inst_05e4d21c07304ed18277c8bd04b733b5/materials/mat_18d958e890a943eab29e2e491865c9a8.md",
+      "state": "new",
+      "size_bytes": 90,
+      "sha256": "5b2ea453202c24eda6fce4cb8a6f54235b51e4c845685d2a74cb2f054a5eac24"
+    },
+    {
+      "path": "pytest-of-lavesh dobriyal/pytest-3/test_migration_is_repeatable_a0/Unicode path शिक्षा BioIntel/connect data/connect.sqlite3",
+      "state": "new",
+      "size_bytes": 1171456,
+      "sha256": "129bdc5a1ca0e188703150900a8e00f7d7c43bdf5bca32c18b6abbfefccd0ed5"
+    },
+    {
+      "path": "pytest-of-lavesh dobriyal/pytest-3/test_migration_is_repeatable_a0/Unicode path शिक्षा BioIntel/connect media/keys/eln_signing.key",
+      "state": "new",
+      "size_bytes": 32,
+      "sha256": "e986ade5b035d16496a417033af6d9bdff08c1a7ec73ab3ca9213a91e75e45c5"
+    },
+    {
+      "path": "pytest-of-lavesh dobriyal/pytest-3/test_migration_is_repeatable_a0/Unicode path शिक्षा BioIntel/connect media/keys/webhooks.fernet",
+      "state": "new",
+      "size_bytes": 44,
+      "sha256": "042133a612df187e979f6dbbf9584c9574e6b16d91fc85dad3a15bb7c68769e9"
+    },
+    {
+      "path": "pytest-of-lavesh dobriyal/pytest-3/test_migration_is_repeatable_a0/Unicode path शिक्षा BioIntel/data/education.sqlite3",
+      "state": "new",
+      "size_bytes": 2531328,
+      "sha256": "c034be09f89f8feb8d66df50fda3b11a187d9111c20a271e9b53deac9849c9bc"
+    },
+    {
+      "path": "pytest-of-lavesh dobriyal/pytest-3/test_migration_is_repeatable_a0/Unicode path शिक्षा BioIntel/education/secrets/phase11-fernet.key",
+      "state": "new",
+      "size_bytes": 44,
+      "sha256": "1e816a95f977c528e23dc5d7e1c868e514fd5003224279502da5bb90ff7ac7cb"
+    },
+    {
+      "path": "pytest-of-lavesh dobriyal/pytest-3/test_migration_is_repeatable_a0/Unicode path शिक्षा BioIntel/shiro data/shiro.sqlite3",
+      "state": "new",
+      "size_bytes": 86016,
+      "sha256": "6dfa746254dacac29771785f5a8ab9e242c5ca922f69af73f837e2e7c3c3f717"
+    },
+    {
+      "path": "pytest-of-lavesh dobriyal/pytest-3/test_migration_is_repeatable_a0/Unicode path शिक्षा BioIntel/tenant media/.education-signing-key",
+      "state": "new",
+      "size_bytes": 64,
+      "sha256": "78648a4090574d7e21df77bc986a2f25b128ed89820a94d0148368c367ca946a"
+    },
+    {
+      "path": "pytest-of-lavesh dobriyal/pytest-3/test_science_pulse_dedup_healt0/Unicode path शिक्षा BioIntel/connect data/connect.sqlite3",
+      "state": "new",
+      "size_bytes": 1171456,
+      "sha256": "f8f60ef72b569c60128371b43a4da3a0da2c301a21d260338745d0ec422610d0"
+    },
+    {
+      "path": "pytest-of-lavesh dobriyal/pytest-3/test_science_pulse_dedup_healt0/Unicode path शिक्षा BioIntel/connect media/keys/eln_signing.key",
+      "state": "new",
+      "size_bytes": 32,
+      "sha256": "b99e157cf456d762b75f5555ba7879fc23d4ff4c95e37b822680957eef851e61"
+    },
+    {
+      "path": "pytest-of-lavesh dobriyal/pytest-3/test_science_pulse_dedup_healt0/Unicode path शिक्षा BioIntel/connect media/keys/webhooks.fernet",
+      "state": "new",
+      "size_bytes": 44,
+      "sha256": "228a58e97732c1d192f3085e4bf8325ad201d1a59f67b7c2df8ff98f7e8bfe24"
+    },
+    {
+      "path": "pytest-of-lavesh dobriyal/pytest-3/test_science_pulse_dedup_healt0/Unicode path शिक्षा BioIntel/data/education.sqlite3",
+      "state": "new",
+      "size_bytes": 2539520,
+      "sha256": "2562d02b8afd295770156e4490731574a6b3574b4fa2dcbbe369db8482d80a62"
+    },
+    {
+      "path": "pytest-of-lavesh dobriyal/pytest-3/test_science_pulse_dedup_healt0/Unicode path शिक्षा BioIntel/education/secrets/phase11-fernet.key",
+      "state": "new",
+      "size_bytes": 44,
+      "sha256": "1527fce4c96923836423bdf4e46f65cc096cc49c73fa1ee2a8041df449b8aa57"
+    },
+    {
+      "path": "pytest-of-lavesh dobriyal/pytest-3/test_science_pulse_dedup_healt0/Unicode path शिक्षा BioIntel/shiro data/shiro.sqlite3",
+      "state": "new",
+      "size_bytes": 86016,
+      "sha256": "6dfa746254dacac29771785f5a8ab9e242c5ca922f69af73f837e2e7c3c3f717"
+    },
+    {
+      "path": "pytest-of-lavesh dobriyal/pytest-3/test_science_pulse_dedup_healt0/Unicode path शिक्षा BioIntel/tenant media/.education-signing-key",
+      "state": "new",
+      "size_bytes": 64,
+      "sha256": "a5f724495cbf109d93477bb141198cfa6b05860beabb88b4f3aed337c6c3ee95"
+    },
+    {
+      "path": "pytest-of-lavesh dobriyal/pytest-3/test_studio_version_review_pub0/Unicode path शिक्षा BioIntel/connect data/connect.sqlite3",
+      "state": "new",
+      "size_bytes": 1171456,
+      "sha256": "daf384d1c36b11fa29cdd1aaa904878a90c4318255927822a2266211857f235d"
+    },
+    {
+      "path": "pytest-of-lavesh dobriyal/pytest-3/test_studio_version_review_pub0/Unicode path शिक्षा BioIntel/connect media/keys/eln_signing.key",
+      "state": "new",
+      "size_bytes": 32,
+      "sha256": "def2298e91045fcc2ff878b4e2ec677b3c7570e3fcd02cb10b08e45d69fe23d5"
+    },
+    {
+      "path": "pytest-of-lavesh dobriyal/pytest-3/test_studio_version_review_pub0/Unicode path शिक्षा BioIntel/connect media/keys/webhooks.fernet",
+      "state": "new",
+      "size_bytes": 44,
+      "sha256": "39355d1d2b0c89ffb1c25736645f0b6afab7d09aaf83330410ab62eac21c702a"
+    },
+    {
+      "path": "pytest-of-lavesh dobriyal/pytest-3/test_studio_version_review_pub0/Unicode path शिक्षा BioIntel/data/education.sqlite3",
+      "state": "new",
+      "size_bytes": 2531328,
+      "sha256": "90fe188703e51847082c88ecf93b885fd924f8988d07b4959565036edabd2004"
+    },
+    {
+      "path": "pytest-of-lavesh dobriyal/pytest-3/test_studio_version_review_pub0/Unicode path शिक्षा BioIntel/education/secrets/phase11-fernet.key",
+      "state": "new",
+      "size_bytes": 44,
+      "sha256": "0c78ccd860c78560eee73e22cedef42f01cf9f7418dc11a11948b4f0b9de008e"
+    },
+    {
+      "path": "pytest-of-lavesh dobriyal/pytest-3/test_studio_version_review_pub0/Unicode path शिक्षा BioIntel/shiro data/shiro.sqlite3",
+      "state": "new",
+      "size_bytes": 86016,
+      "sha256": "6dfa746254dacac29771785f5a8ab9e242c5ca922f69af73f837e2e7c3c3f717"
+    },
+    {
+      "path": "pytest-of-lavesh dobriyal/pytest-3/test_studio_version_review_pub0/Unicode path शिक्षा BioIntel/tenant media/.education-signing-key",
+      "state": "new",
+      "size_bytes": 64,
+      "sha256": "9dc57c273d2263a98237f62a84b79541e40d83ac478bd03e89a270b69971a013"
+    },
+    {
+      "path": "pytest-of-lavesh dobriyal/pytest-3/test_studio_version_review_pub0/Unicode path शिक्षा BioIntel/tenant media/inst_afc3e8acc90f41619b36fd60ea7b7895/studio/studio_dca7c470560e4565995800bfa918a77f/exports/studio_dca7c470560e4565995800bfa918a77f-v1.biointel-studio.zip",
+      "state": "new",
+      "size_bytes": 629,
+      "sha256": "7f800bd42377e08e09ae3c264da4649f933dad77e15a6f21ab9db20e5a00b63c"
+    },
+    {
+      "path": "pytest-of-lavesh dobriyal/pytest-3/test_tenant_and_resource_isola0/Unicode path शिक्षा BioIntel/connect data/connect.sqlite3",
+      "state": "new",
+      "size_bytes": 1171456,
+      "sha256": "39bd0a13832c6c79e69c26cae7b26397c23fb01de99bab0a4e151120809d0f01"
+    },
+    {
+      "path": "pytest-of-lavesh dobriyal/pytest-3/test_tenant_and_resource_isola0/Unicode path शिक्षा BioIntel/connect media/keys/eln_signing.key",
+      "state": "new",
+      "size_bytes": 32,
+      "sha256": "2d2c8076b86a4403999d950e1566e9885e1d7f00593318d11be5d0c79a642f69"
+    },
+    {
+      "path": "pytest-of-lavesh dobriyal/pytest-3/test_tenant_and_resource_isola0/Unicode path शिक्षा BioIntel/connect media/keys/webhooks.fernet",
+      "state": "new",
+      "size_bytes": 44,
+      "sha256": "9bfa5d4f13c7e11e03c22b567e49413b1d819968cb6e14b79ce47d5a628cda42"
+    },
+    {
+      "path": "pytest-of-lavesh dobriyal/pytest-3/test_tenant_and_resource_isola0/Unicode path शिक्षा BioIntel/data/education.sqlite3",
+      "state": "new",
+      "size_bytes": 2531328,
+      "sha256": "b93bbeae58a05ae48e399f8de11504eaac413b8bd05b65571907b57baa1d8187"
+    },
+    {
+      "path": "pytest-of-lavesh dobriyal/pytest-3/test_tenant_and_resource_isola0/Unicode path शिक्षा BioIntel/education/secrets/phase11-fernet.key",
+      "state": "new",
+      "size_bytes": 44,
+      "sha256": "a23f59d7f3bfae3e651eb7d882c318fe44cf851f5d464baa2015b6b4190226d5"
+    },
+    {
+      "path": "pytest-of-lavesh dobriyal/pytest-3/test_tenant_and_resource_isola0/Unicode path शिक्षा BioIntel/shiro data/shiro.sqlite3",
+      "state": "new",
+      "size_bytes": 86016,
+      "sha256": "6dfa746254dacac29771785f5a8ab9e242c5ca922f69af73f837e2e7c3c3f717"
+    },
+    {
+      "path": "pytest-of-lavesh dobriyal/pytest-3/test_tenant_and_resource_isola0/Unicode path शिक्षा BioIntel/tenant media/.education-signing-key",
+      "state": "new",
+      "size_bytes": 64,
+      "sha256": "5a9643165b4e398fb79a80cf6e4fc9961696e0543c2bb0c530b4fb42f74e8a43"
+    },
+    {
+      "path": "requirements-windows-cp311-offline.lock",
+      "state": "changed",
+      "size_bytes": 11975,
+      "sha256": "05a1f851ac3c5d3af0a3b467f9338ed831fdaa7235b4cf40ee3b5e9082fa3f73"
+    },
+    {
+      "path": "requirements-windows-cp311-offline.lock.sha256",
+      "state": "changed",
+      "size_bytes": 107,
+      "sha256": "9ec53f3bc842977bab01aa29fa483bc80369c32ec2687d0e5657111f89dd6d5c"
+    },
+    {
+      "path": "requirements.lock",
+      "state": "changed",
+      "size_bytes": 698,
+      "sha256": "4dd189d666ec5468e95461d4cf748a4154a451a764baddaf53f6b9ae30070136"
+    },
+    {
+      "path": "requirements.lock.sha256",
+      "state": "changed",
+      "size_bytes": 85,
+      "sha256": "36b6a28aa00e34bc2dcf0423617c375e60ed79c4457e8cb5c925d43e97aab542"
+    },
+    {
+      "path": "requirements.txt",
+      "state": "changed",
+      "size_bytes": 774,
+      "sha256": "217876114cb80bb5f7332a79af3631dab021e8ee8f469ec09340e67a600f5e1b"
+    },
+    {
+      "path": "RUN_EDUCATION_PHASE17_TO_22_WORKER_WINDOWS.bat",
+      "state": "new",
+      "size_bytes": 1018,
+      "sha256": "b90f0d4ac2c51b5f1f9869144f728e9583a201ccf98c67d0b04d502650b4c6c5"
+    },
+    {
+      "path": "scripts/diagnose_education_phase17_22.py",
+      "state": "new",
+      "size_bytes": 3981,
+      "sha256": "80ca423b19186e32498b33eb89c35af4a5d2ec3a3b6c74c9ae2aa30a8c059689"
+    },
+    {
+      "path": "scripts/package_education_phase17_22_4part_release.py",
+      "state": "new",
+      "size_bytes": 21412,
+      "sha256": "8540a10daec5af8071473e009c7125d3a94268b236e56ec5338e9b55d906df41"
+    },
+    {
+      "path": "scripts/run_education_phase17_22_worker.py",
+      "state": "new",
+      "size_bytes": 5782,
+      "sha256": "0f4589ee68964f8a44a97e0b89920d8e9c4566388ae4c19ab2ec00b11b175e42"
+    },
+    {
+      "path": "scripts/update_phase17_22_wheelhouse.py",
+      "state": "new",
+      "size_bytes": 2117,
+      "sha256": "8c6df3362f71998e304206caf632063e03833039cd5d7a85e9fc01ccdb219854"
+    },
+    {
+      "path": "SOURCE_INVENTORY_PHASE17_TO_22.json",
+      "state": "new",
+      "size_bytes": 49611,
+      "sha256": "5274a4ae2afa90d9e983a7f5acb364c9cbbc2fe0c2d00849db735731779b5fe5"
+    },
+    {
+      "path": "SOURCE_INVENTORY_PHASE17_TO_22.md",
+      "state": "new",
+      "size_bytes": 1646,
+      "sha256": "e98cee3ba0c6cff3f96c180cb7d5864e4002c83b4f1919139deb35f8682cb021"
+    },
+    {
+      "path": "src/biointel/connect/advanced_ui.py",
+      "state": "changed",
+      "size_bytes": 21789,
+      "sha256": "898c88b869a66d4ef306819847ce46829c5248c9815d30bd229959e4392fead2"
+    },
+    {
+      "path": "src/biointel/connect/complete_ui.py",
+      "state": "changed",
+      "size_bytes": 24874,
+      "sha256": "8be9728bf7f2f2422514731c2958b799a11eb43b4c91592bee420564bbddb077"
+    },
+    {
+      "path": "src/biointel/education/__init__.py",
+      "state": "changed",
+      "size_bytes": 976,
+      "sha256": "64725ef6512192a45e01fbbfe16d84fe4080ee4fe05921e9303beb905bb025b0"
+    },
+    {
+      "path": "src/biointel/education/api.py",
+      "state": "changed",
+      "size_bytes": 110650,
+      "sha256": "6164e9eb10eafbae9f0e59937dd0878bc0bba8c981acdfaf86d04a1b0f392079"
+    },
+    {
+      "path": "src/biointel/education/examination_ui.py",
+      "state": "changed",
+      "size_bytes": 22641,
+      "sha256": "9513c52fbf1e13145e5dbd9a0307631fa159de9db1f1a9b4d5b5ff0aff979130"
+    },
+    {
+      "path": "src/biointel/education/experience.py",
+      "state": "changed",
+      "size_bytes": 21960,
+      "sha256": "205fec86f9ec10ad5323c0776aee86201636ec999988479ca3b6a6f29036d3f0"
+    },
+    {
+      "path": "src/biointel/education/home_ui.py",
+      "state": "changed",
+      "size_bytes": 10560,
+      "sha256": "e46091adc848cfc618324ea4c885b71ca194d377d727eae664dbaffe8822b922"
+    },
+    {
+      "path": "src/biointel/education/institution_ui.py",
+      "state": "changed",
+      "size_bytes": 21631,
+      "sha256": "1974589575660a44df218332dd863cda633b3cb04a6410d37dc9afb0afee0600"
+    },
+    {
+      "path": "src/biointel/education/intelligence_ui.py",
+      "state": "changed",
+      "size_bytes": 24710,
+      "sha256": "b9319178282433b60ba63ec8fe38214a3fac555b06628a832e63d2b33122ec8a"
+    },
+    {
+      "path": "src/biointel/education/phase11_ui.py",
+      "state": "changed",
+      "size_bytes": 35268,
+      "sha256": "7500f55f9d828215eb38b10fe9782bbbf3726335423512842699957d93ffbda2"
+    },
+    {
+      "path": "src/biointel/education/phase12_ui.py",
+      "state": "changed",
+      "size_bytes": 20467,
+      "sha256": "9143285a5ac6108d0a74a9926f283154c4b7321aeaaee3b0ed1406c3af10675a"
+    },
+    {
+      "path": "src/biointel/education/phase13_ui.py",
+      "state": "changed",
+      "size_bytes": 22321,
+      "sha256": "37a47aa489004231171268a6fc687b67cb58091c7942610d0cb754a818cdee23"
+    },
+    {
+      "path": "src/biointel/education/phase14_ui.py",
+      "state": "changed",
+      "size_bytes": 23372,
+      "sha256": "1e9b56353444f1e167a4534c124c1ca7c2771c981642cba4cab0a70a8d20601c"
+    },
+    {
+      "path": "src/biointel/education/phase15_runtime/providers.py",
+      "state": "changed",
+      "size_bytes": 9560,
+      "sha256": "4b47f3827b7ab47c8ceb29d406674cec29a06861e1deffe0677cb5a172a48766"
+    },
+    {
+      "path": "src/biointel/education/phase15_runtime/service.py",
+      "state": "changed",
+      "size_bytes": 40034,
+      "sha256": "a382f00060d1d8f024a61e49c99cb5cef431f9af3f89e10baeeb87640e3e010f"
+    },
+    {
+      "path": "src/biointel/education/phase15_ui.py",
+      "state": "changed",
+      "size_bytes": 15567,
+      "sha256": "3154379172460c2bb650c34a016e82837d24c21e8cd5099be3c04cf51a21c56d"
+    },
+    {
+      "path": "src/biointel/education/phase16_runtime/service.py",
+      "state": "changed",
+      "size_bytes": 27335,
+      "sha256": "5f3a0ca48ba5e3fa9dad0cf1af553347e59db6eef9a84a9f6062c9a68c1618c8"
+    },
+    {
+      "path": "src/biointel/education/phase16_ui.py",
+      "state": "changed",
+      "size_bytes": 15505,
+      "sha256": "8a8efb811cf395fb2dd10c995e1f72b5be42fbd94c0b22e4870ebfa267a7ae68"
+    },
+    {
+      "path": "src/biointel/education/phase17_22/__init__.py",
+      "state": "new",
+      "size_bytes": 197,
+      "sha256": "1ae67f54f0a95053a608cd2fc8cacb87ec2e5d6cc98fd49a193ac0c92f154401"
+    },
+    {
+      "path": "src/biointel/education/phase17_22/api.py",
+      "state": "new",
+      "size_bytes": 6780,
+      "sha256": "5f553c899d30e748522c0d21c92f33eff266423353b6eb4ce0bdd0e1b3b13fc9"
+    },
+    {
+      "path": "src/biointel/education/phase17_22/schema.py",
+      "state": "new",
+      "size_bytes": 12557,
+      "sha256": "6fa39e22b387205e550c259d172ddfb1acda439984a0ce0ebd325ce50ccfff8d"
+    },
+    {
+      "path": "src/biointel/education/phase17_22/service.py",
+      "state": "new",
+      "size_bytes": 76806,
+      "sha256": "5980f75cefaed512447867694b113976df26b466ce7bb40bb15f9bfb441786ac"
+    },
+    {
+      "path": "src/biointel/education/phase17_22/ui.py",
+      "state": "new",
+      "size_bytes": 8005,
+      "sha256": "60cfbbda27c6323ab460b15073b92b918fc061dcc519112608b0998fa4e10cf3"
+    },
+    {
+      "path": "src/biointel/education/phase7_ui.py",
+      "state": "changed",
+      "size_bytes": 77703,
+      "sha256": "7855bc6a0ab3a01730d92b573cc00251abbab980d665eeb2781f2221fd974004"
+    },
+    {
+      "path": "src/biointel/education/platform.py",
+      "state": "changed",
+      "size_bytes": 58027,
+      "sha256": "3a943028e34f95203634f0f8af875e6801ffa46b2cd2d72163d22cdba92d7987"
+    },
+    {
+      "path": "src/biointel/education/visual_command_ui.py",
+      "state": "changed",
+      "size_bytes": 32546,
+      "sha256": "3a1521507bfc12ff8bdfc86f46a396e78cb934c9b322519327cc2157da4ed29f"
+    },
+    {
+      "path": "src/biointel/media_tools.py",
+      "state": "new",
+      "size_bytes": 2474,
+      "sha256": "83c7fcaecf81f66fa54618b8a742b98be3af097e1960de71d4a3ef0216ce5502"
+    },
+    {
+      "path": "STEP220_RELEASE.json",
+      "state": "changed",
+      "size_bytes": 2876,
+      "sha256": "2bd458023780f6c471941370d845ca299c5e15e35a19333b9230fbe84a20ac77"
+    },
+    {
+      "path": "STEP220_SOURCE_MANIFEST_SHA256.json",
+      "state": "changed",
+      "size_bytes": 2727160,
+      "sha256": "ed425dfef73dcc2a38e09cc1b2833f543bbe90e624901da84124b7f773ee0522"
+    },
+    {
+      "path": "tests/test_education_ecosystem.py",
+      "state": "changed",
+      "size_bytes": 1513,
+      "sha256": "d5a7f11de5ca4b4132bb6474691c4d59471e31799a17b89cc7b06fdadef28dc0"
+    },
+    {
+      "path": "tests/test_education_ecosystems.py",
+      "state": "changed",
+      "size_bytes": 13343,
+      "sha256": "38e1c7f0209f5eae61f97f7b575c4aede75482a89c31557b5bcf9200fb05c5e2"
+    },
+    {
+      "path": "tests/test_education_integrity_v2.py",
+      "state": "changed",
+      "size_bytes": 5941,
+      "sha256": "f0dc792fe2e402d54ffc497b961f2849a4f05f88d10bcf188ef07584644bb474"
+    },
+    {
+      "path": "tests/test_education_phase15_edges.py",
+      "state": "changed",
+      "size_bytes": 9679,
+      "sha256": "166df3e0f09cfc2819abe59440d9e1141f4a078858e3d257912a027683b99a18"
+    },
+    {
+      "path": "tests/test_education_phase15_providers.py",
+      "state": "changed",
+      "size_bytes": 4141,
+      "sha256": "5f85e1e1c87683c1b094211c41b2307342c773e498141c33573b9b6fc618649c"
+    },
+    {
+      "path": "tests/test_education_phase16.py",
+      "state": "changed",
+      "size_bytes": 5890,
+      "sha256": "e305ff5c6612e4f289649202fee20da1125e6846aa95806a9300eb66dd7af412"
+    },
+    {
+      "path": "tests/test_education_phase17_22.py",
+      "state": "new",
+      "size_bytes": 11408,
+      "sha256": "b8ac28871c0150248978214657a0698f505322e267c083598cc9739f428c0a3e"
+    },
+    {
+      "path": "wheelhouse/windows-cp311-x64/imageio_ffmpeg-0.6.0-py3-none-win_amd64.whl",
+      "state": "new",
+      "size_bytes": 31246824,
+      "sha256": "02fa47c83703c37df6bfe4896aab339013f62bf02c5ebf2dce6da56af04ffc0a"
+    },
+    {
+      "path": "wheelhouse/windows-cp311-x64/MANIFEST_SHA256.txt",
+      "state": "changed",
+      "size_bytes": 12570,
+      "sha256": "57342357d1f793d813f84843f924c6da247a608d2cc83c1e5f67d33fa74848c6"
+    },
+    {
+      "path": "wheelhouse/windows-cp311-x64/WHEELHOUSE_METADATA.json",
+      "state": "changed",
+      "size_bytes": 35611,
+      "sha256": "8f1ae67aff7f1bbb3c6f476362b0f38a9260b3a6603b45ac7bc08b172bca3e8b"
+    }
+  ],
+  "generated_release_files": [
+    "release/SOURCE_MANIFEST_SHA256.json",
+    "release/EDUCATION_PHASE17_TO_22_RELEASE_MANIFEST.json",
+    "release/PART_MANIFEST-Part1.json",
+    "release/PART_MANIFEST-Part2.json",
+    "release/PART_MANIFEST-Part3.json",
+    "release/PART_MANIFEST-Part4.json"
+  ],
+  "database_versions": [
+    "education_science_academy_v2_integrity",
+    "education_phase3_granular_rbac_v1",
+    "education_phase4_intelligence_operations_v1",
+    "education_phase3_secure_examination_v1",
+    "education_phase5_institution_platform_v1",
+    "education_phase6_visual_operations_v1",
+    "education_phase7_desktop_workflows_v1",
+    "education_phase11_mega_core_v1",
+    "education_phase12_final_completion_v1",
+    "education_phase13_local_autonomy_v1",
+    "education_phase14_academic_intelligence_v1",
+    "education_phase15_runtime_intelligence_v1",
+    "education_phase16_completion_v1",
+    "education_phase17_to_22_unified_os_v1"
+  ],
+  "tests": {
+    "target_education_shiro_connect": {
+      "passed": 206,
+      "failed": 0
+    },
+    "phase11_to_16_verifier_controls": {
+      "passed": 189,
+      "failed": 0
+    },
+    "phase17_to_22_module": {
+      "passed": 8,
+      "failed": 0
+    },
+    "broad_historical_diagnostic": {
+      "passed": 1913,
+      "failed": 279,
+      "skipped": 28,
+      "errors": 3,
+      "status": "not_green"
+    }
+  },
+  "dependency_changes": [
+    {
+      "name": "imageio-ffmpeg",
+      "version": "0.6.0",
+      "purpose": "Bundled Windows local FFmpeg for lecture probing and media jobs.",
+      "wheel_sha256": "02fa47c83703c37df6bfe4896aab339013f62bf02c5ebf2dce6da56af04ffc0a"
+    }
+  ],
+  "completion_matrix": {
+    "biointel_connect": "implemented_verified",
+    "shiro_ai": "implemented_verified",
+    "education_home": "implemented_verified",
+    "classroom": "implemented_verified",
+    "science_pulse": "implemented_verified",
+    "academy_lecture_studio": "implemented_verified",
+    "education_universe": "implemented_verified",
+    "examination_command_center": "implemented_verified",
+    "education_intelligence_hub": "implemented_verified",
+    "biointel_studio": "implemented_verified",
+    "public_turn_calling": "implemented_external_verification_required",
+    "live_external_science_providers": "implemented_external_verification_required",
+    "formal_security_accessibility": "implemented_external_verification_required",
+    "studio_rendered_formats": "blocked_no_qualified_renderer"
+  },
+  "known_limitations": [
+    "Public calling requires deployed TURN credentials and real relay tests.",
+    "Live external providers require network/rate-limit qualification.",
+    "Studio PDF/PPTX/image/video rendering is unavailable without a qualified renderer.",
+    "Interventions are rule-based indicators, not trained ML.",
+    "The broad historical repository test suite is not green; see EDUCATION_TEST_REPORT.md."
+  ]
+}

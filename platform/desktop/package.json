@@ -1,0 +1,130 @@
+{
+  "name": "biointel-ai-desktop",
+  "productName": "BioIntel AI",
+  "version": "15.6.0",
+  "description": "BioIntel AI Scientific Intelligence for Life Sciences for local-first biological research",
+  "main": "src/main.cjs",
+  "private": true,
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist:windows": "electron-builder --win appx nsis",
+    "dist:msix": "electron-builder --win appx",
+    "dist:nsis": "electron-builder --win nsis"
+  },
+  "devDependencies": {
+    "electron": "43.0.0",
+    "electron-builder": "26.15.3"
+  },
+  "build": {
+    "appId": "com.biointel.workspace.desktop",
+    "artifactName": "BioIntel-AI-${version}-${arch}.${ext}",
+    "directories": {
+      "output": "dist-release"
+    },
+    "files": [
+      "src/**/*",
+      "assets/**/*",
+      "package.json"
+    ],
+    "extraResources": [
+      {
+        "from": "release-resources/backend",
+        "to": "backend"
+      },
+      {
+        "from": "release-resources/workspace",
+        "to": "workspace"
+      }
+    ],
+    "asar": true,
+    "win": {
+      "icon": "assets/BioIntelAI.ico",
+      "target": [
+        "appx",
+        "nsis"
+      ],
+      "publisherName": "${env.BIOINTEL_WINDOWS_PUBLISHER_NAME}",
+      "verifyUpdateCodeSignature": true
+    },
+    "appx": {
+      "applicationId": "BioIntelAI",
+      "identityName": "${env.BIOINTEL_WINDOWS_IDENTITY_NAME}",
+      "publisher": "${env.BIOINTEL_WINDOWS_PUBLISHER}",
+      "publisherDisplayName": "${env.BIOINTEL_WINDOWS_PUBLISHER_DISPLAY_NAME}",
+      "displayName": "BioIntel AI",
+      "backgroundColor": "#06111f",
+      "languages": [
+        "en-US"
+      ],
+      "showNameOnTiles": true,
+      "setBuildNumber": true
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "BioIntel AI",
+      "deleteAppDataOnUninstall": false
+    },
+    "protocols": [
+      {
+        "name": "BioIntel AI deep link",
+        "schemes": [
+          "biointel"
+        ]
+      }
+    ],
+    "fileAssociations": [
+      {
+        "ext": [
+          "fasta",
+          "fa",
+          "fna",
+          "faa"
+        ],
+        "name": "FASTA sequence",
+        "description": "Biological sequence file",
+        "role": "Viewer"
+      },
+      {
+        "ext": [
+          "fastq",
+          "fq"
+        ],
+        "name": "FASTQ reads",
+        "description": "Sequencing reads",
+        "role": "Viewer"
+      },
+      {
+        "ext": [
+          "vcf"
+        ],
+        "name": "Variant call file",
+        "description": "Genomic variants",
+        "role": "Viewer"
+      },
+      {
+        "ext": [
+          "pdb",
+          "cif",
+          "mmcif"
+        ],
+        "name": "Molecular structure",
+        "description": "Molecular structure file",
+        "role": "Viewer"
+      },
+      {
+        "ext": [
+          "csv",
+          "tsv"
+        ],
+        "name": "Scientific table",
+        "description": "Scientific tabular data",
+        "role": "Viewer"
+      }
+    ]
+  }
+}

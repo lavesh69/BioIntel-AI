@@ -1,0 +1,142 @@
+{
+  "activity_type": "SYNTHETIC_AFFINITY_SCORE",
+  "artifact_version": "7.0.0",
+  "calibration_method": "none",
+  "confidence_intervals": {
+    "mae": {
+      "bootstrap_samples": 25,
+      "lower_95": 0.29469057301184876,
+      "upper_95": 0.2991258254187557
+    },
+    "r2": {
+      "bootstrap_samples": 25,
+      "lower_95": -0.36448246054455147,
+      "upper_95": -0.3435504725688291
+    },
+    "rmse": {
+      "bootstrap_samples": 25,
+      "lower_95": 0.3584138179293823,
+      "upper_95": 0.3623833389240776
+    }
+  },
+  "data_quality_summary": {
+    "class_distribution": null,
+    "conflicting_pair_groups": 0,
+    "exact_duplicate_rows": 0,
+    "feature_cache": {
+      "drug_cache_hits": 159000,
+      "feature_count": 103,
+      "matrix_bytes": 65920000,
+      "matrix_dtype": "float32",
+      "protein_cache_hits": 159840,
+      "rows_processed": 160000,
+      "unique_drugs": 1000,
+      "unique_targets": 160
+    },
+    "invalid_rows": 0,
+    "original_rows": 160000,
+    "p_activity_max": 7.7669,
+    "p_activity_min": 4.8337,
+    "split_summary": {
+      "group_overlap": false,
+      "strategy": "target_group",
+      "test_groups": 32,
+      "test_rows": 32000,
+      "train_groups": 104,
+      "train_rows": 104000,
+      "validation_groups": 24,
+      "validation_rows": 24000
+    },
+    "task": "regression",
+    "unique_proteins_validated": 160,
+    "unique_smiles_validated": 1000,
+    "valid_after_cleaning": 160000
+  },
+  "dataset_name": "biointel_synthetic_5x_ultra_dti_v5",
+  "dataset_sha256": "5ecf426209af9814a282f1c60b16b74efac270af08a5c6aba746a9a2f74dbcd8",
+  "dataset_version": "5.0",
+  "decision_threshold": null,
+  "experiment_id": "exp-20260704T090810+0000-ecc9cf22",
+  "feature_schema": {
+    "drug_feature_count": 77,
+    "feature_count": 103,
+    "feature_hash": "fdeb2fb3f138cbbe517a6e6bc3bfdcedd3d6009c73f0f5784890d6334a11f4ff",
+    "fingerprint_bits": 64,
+    "fingerprint_radius": 2,
+    "include_dipeptides": false,
+    "protein_feature_count": 26,
+    "schema_version": "2.0.0",
+    "use_chirality": true
+  },
+  "metrics": {
+    "average_interval_width": 1.0904064350708536,
+    "conformal_coverage": 0.8695,
+    "mae": 0.29678761678823856,
+    "mse": 0.1298838095495895,
+    "pearson": 0.06034676835986292,
+    "r2": -0.35082769088944254,
+    "rmse": 0.36039396436343035,
+    "spearman": 0.034838357370681666
+  },
+  "model_name": "sgd_regression",
+  "model_version": "5.0.0-full-data",
+  "positive_class_name": null,
+  "software_versions": {
+    "biopython": "1.86",
+    "joblib": "1.5.3",
+    "python": "3.13.5",
+    "rdkit": "2025.09.4",
+    "scikit_learn": "1.8.0"
+  },
+  "split_strategy": "target_group",
+  "synthetic_demo": true,
+  "task_type": "regression",
+  "test_rows": 32000,
+  "threshold_strategy": "fixed",
+  "train_rows": 104000,
+  "trained_at_utc": "2026-07-04T09:08:10+00:00",
+  "training_config": {
+    "activity_type": "SYNTHETIC_AFFINITY_SCORE",
+    "bootstrap_iterations": 25,
+    "calibration_method": "none",
+    "conformal_alpha": 0.1,
+    "dataset_name": "biointel_synthetic_5x_ultra_dti_v5",
+    "dataset_version": "5.0",
+    "decision_threshold": 0.5,
+    "fingerprint_bits": 64,
+    "fingerprint_radius": 2,
+    "include_dipeptides": false,
+    "model_name": "sgd_regression",
+    "model_version": "5.0.0-full-data",
+    "n_estimators": 1,
+    "random_seed": 20260719,
+    "source_description": "BioIntel deterministic synthetic 5X Ultra 160,000-pair DTI benchmark",
+    "split_strategy": "target_group",
+    "synthetic_demo": true,
+    "task_type": "regression",
+    "test_fraction": 0.2,
+    "threshold_strategy": "fixed",
+    "tree_max_depth": 18,
+    "tree_max_features": "sqrt",
+    "tree_max_samples": null,
+    "tree_min_samples_leaf": 12,
+    "use_chirality": true,
+    "validation_fraction": 0.15
+  },
+  "uncertainty_calibration": {
+    "absolute_residual_quantile": 0.5452032175354269,
+    "alpha": 0.1,
+    "calibration_rows": 24000,
+    "coverage_target": 0.9,
+    "method": "split_conformal_regression"
+  },
+  "validation_metrics": {
+    "mae": 0.26981333398334006,
+    "mse": 0.11094253741590236,
+    "pearson": 0.4883387145717316,
+    "r2": 0.16947829436279416,
+    "rmse": 0.3330803768100162,
+    "spearman": 0.4507823335413545
+  },
+  "validation_rows": 24000
+}
