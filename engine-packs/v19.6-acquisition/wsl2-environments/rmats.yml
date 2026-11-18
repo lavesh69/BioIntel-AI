@@ -1,0 +1,8 @@
+name: biointel-v196-rmats
+channels:
+  - conda-forge
+  - bioconda
+  - nodefaults
+dependencies:
+  - python=3.11
+  - rmats

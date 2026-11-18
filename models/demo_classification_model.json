@@ -1,0 +1,146 @@
+{
+  "activity_type": null,
+  "artifact_version": "7.0.0",
+  "calibration_method": "none",
+  "confidence_intervals": {
+    "accuracy": {
+      "bootstrap_samples": 200,
+      "lower_95": 0.665625,
+      "upper_95": 0.9166666666666666
+    },
+    "balanced_accuracy": {
+      "bootstrap_samples": 200,
+      "lower_95": 0.6572979797979798,
+      "upper_95": 0.9333333333333333
+    },
+    "f1": {
+      "bootstrap_samples": 200,
+      "lower_95": 0.6,
+      "upper_95": 0.9166666666666666
+    },
+    "pr_auc": {
+      "bootstrap_samples": 200,
+      "lower_95": 0.3382176157176157,
+      "upper_95": 0.7951127891468801
+    },
+    "roc_auc": {
+      "bootstrap_samples": 200,
+      "lower_95": 0.44055944055944063,
+      "upper_95": 0.8751620370370371
+    }
+  },
+  "data_quality_summary": {
+    "class_distribution": {
+      "0": 57,
+      "1": 39
+    },
+    "conflicting_pair_groups": 0,
+    "exact_duplicate_rows": 0,
+    "invalid_rows": 0,
+    "original_rows": 96,
+    "p_activity_max": null,
+    "p_activity_min": null,
+    "split_summary": {
+      "strategy": "random_pair",
+      "test_rows": 24,
+      "train_rows": 57,
+      "validation_rows": 15
+    },
+    "task": "classification",
+    "valid_after_cleaning": 96
+  },
+  "dataset_name": "synthetic_dti_demo",
+  "dataset_sha256": "a3112f390dc5bacb62092db9a0f66a5cd2084543638b93e6d4df2234fbcb4d64",
+  "dataset_version": "1.0",
+  "decision_threshold": 0.5,
+  "experiment_id": "exp-20260704T040150+0000-0dd6b084",
+  "feature_schema": {
+    "drug_feature_count": 269,
+    "feature_count": 295,
+    "feature_hash": "b989f240b3066eaf54f14201f2e41204d6a83686e606057facc2d97488c377f6",
+    "fingerprint_bits": 256,
+    "fingerprint_radius": 2,
+    "include_dipeptides": false,
+    "protein_feature_count": 26,
+    "schema_version": "2.0.0",
+    "use_chirality": true
+  },
+  "metrics": {
+    "accuracy": 0.7916666666666666,
+    "average_prediction_set_size": 1.9583333333333333,
+    "balanced_accuracy": 0.8071428571428572,
+    "brier_score": 0.23046890722756377,
+    "conformal_coverage": 1.0,
+    "empty_prediction_set_fraction": 0.0,
+    "f1": 0.782608695652174,
+    "log_loss": 0.6602246802550198,
+    "mcc": 0.6078080037565888,
+    "pr_auc": 0.5117343767343767,
+    "precision": 0.6923076923076923,
+    "recall": 0.9,
+    "roc_auc": 0.6642857142857143,
+    "specificity": 0.7142857142857143
+  },
+  "model_name": "random_forest",
+  "model_version": "1.0.0-demo",
+  "positive_class_name": "interaction_positive",
+  "software_versions": {
+    "biopython": "1.86",
+    "joblib": "1.5.3",
+    "python": "3.13.5",
+    "rdkit": "2025.09.4",
+    "scikit_learn": "1.8.0"
+  },
+  "split_strategy": "random_pair",
+  "synthetic_demo": true,
+  "task_type": "classification",
+  "test_rows": 24,
+  "threshold_strategy": "fixed",
+  "train_rows": 57,
+  "trained_at_utc": "2026-07-04T04:01:50+00:00",
+  "training_config": {
+    "activity_type": null,
+    "bootstrap_iterations": 200,
+    "calibration_method": "none",
+    "conformal_alpha": 0.1,
+    "dataset_name": "synthetic_dti_demo",
+    "dataset_version": "1.0",
+    "decision_threshold": 0.5,
+    "fingerprint_bits": 256,
+    "fingerprint_radius": 2,
+    "include_dipeptides": false,
+    "model_name": "random_forest",
+    "model_version": "1.0.0-demo",
+    "n_estimators": 80,
+    "random_seed": 42,
+    "source_description": "User-provided or local dataset",
+    "split_strategy": "random_pair",
+    "synthetic_demo": true,
+    "task_type": "classification",
+    "test_fraction": 0.25,
+    "threshold_strategy": "fixed",
+    "use_chirality": true,
+    "validation_fraction": 0.15
+  },
+  "uncertainty_calibration": {
+    "alpha": 0.1,
+    "calibration_rows": 15,
+    "coverage_target": 0.9,
+    "method": "split_conformal_classification",
+    "score_quantile": 0.8763575245701319
+  },
+  "validation_metrics": {
+    "accuracy": 0.4,
+    "balanced_accuracy": 0.41666666666666663,
+    "brier_score": 0.2858746888490872,
+    "f1": 0.4,
+    "log_loss": 0.7679912593788711,
+    "mcc": -0.16666666666666666,
+    "pr_auc": 0.42490287490287487,
+    "precision": 0.3333333333333333,
+    "recall": 0.5,
+    "roc_auc": 0.462962962962963,
+    "specificity": 0.3333333333333333
+  },
+  "validation_rows": 15
+}

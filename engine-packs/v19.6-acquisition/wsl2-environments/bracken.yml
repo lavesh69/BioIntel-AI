@@ -1,0 +1,8 @@
+name: biointel-v196-bracken
+channels:
+  - conda-forge
+  - bioconda
+  - nodefaults
+dependencies:
+  - python=3.11
+  - bracken

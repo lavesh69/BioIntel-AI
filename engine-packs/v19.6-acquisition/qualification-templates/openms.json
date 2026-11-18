@@ -1,0 +1,32 @@
+{
+  "claim_boundary": "This generic template verifies executable integrity, version output and failure handling. Method-specific scientific fixtures remain required before scientific qualification.",
+  "engine": "openms",
+  "executable": "REPLACE_WITH_TARGET_EXECUTABLE_PATH",
+  "executable_sha256": "REPLACE_WITH_TARGET_EXECUTABLE_SHA256",
+  "expected_outputs": [],
+  "negative_command": [
+    "{executable}",
+    "--biointel-invalid-option"
+  ],
+  "negative_expected_codes": [
+    1,
+    2,
+    64,
+    127,
+    255
+  ],
+  "positive_command": [
+    "{executable}",
+    "--version"
+  ],
+  "positive_expected_codes": [
+    0
+  ],
+  "qualification_scope": "installation-and-version-smoke-only",
+  "schema": "biointel.engine-target-qualification.v1",
+  "timeout_seconds": 60,
+  "version_args": [
+    "--version"
+  ],
+  "version_regex": "(?i)(?:version\\s*)?v?\\d+(?:\\.\\d+)+(?:[-+._a-z0-9]*)?"
+}
