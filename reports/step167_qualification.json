@@ -1,0 +1,19 @@
+{
+  "schema": "biointel.step167.qualification.v1",
+  "status": "passed",
+  "step": 167,
+  "product_version": "13.9.0",
+  "priority_modules": 21,
+  "software_10of10": 21,
+  "native_research_depth_10of10": 21,
+  "full_native_portfolio_passed": 80,
+  "completed_targeted_tests": 46,
+  "python_files_compiled": 1233,
+  "application_pages_compiled": 237,
+  "sqlite_databases_healthy": 40,
+  "foreign_key_violations": 0,
+  "step167_assets": 63,
+  "external_evidence_not_inferred": true,
+  "real_world_release_eligible_modules": 0,
+  "test_scope_note": "46 tests completed with clean process exits across Step 159, 160, selected Step 161, Step 162, 164, 165, 166 and 167 suites; page compilation and the full native portfolio were verified separately."
+}

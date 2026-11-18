@@ -1,0 +1,36 @@
+{
+  "template_status": "publisher_must_confirm_against_final_hosted_deployment",
+  "tracking": false,
+  "advertising": false,
+  "encrypted_in_transit": true,
+  "account_deletion": "Provided by the publishing organisation or deployment administrator when user accounts are enabled",
+  "data_types": [
+    {
+      "type": "User IDs",
+      "collected": "optional",
+      "shared": false,
+      "purpose": ["Account management", "Security"],
+      "notes": "Only when the hosted deployment requires authenticated user accounts."
+    },
+    {
+      "type": "Files and documents",
+      "collected": "optional",
+      "shared": "only on explicit connected-provider action",
+      "purpose": ["App functionality"],
+      "notes": "Scientific inputs are processed on the operator-selected BioIntel server."
+    },
+    {
+      "type": "App interactions",
+      "collected": "optional",
+      "shared": false,
+      "purpose": ["Analytics", "App functionality"],
+      "notes": "Module execution and diagnostic events may be retained by the deployment administrator."
+    },
+    {
+      "type": "Crash logs and diagnostics",
+      "collected": "optional",
+      "shared": false,
+      "purpose": ["App functionality", "Security and compliance"]
+    }
+  ]
+}

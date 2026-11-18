@@ -1,0 +1,230 @@
+{
+  "schema": "biointel.step149.historical-path-audit.v1",
+  "generated_at_utc": "2026-07-13T04:35:30.000686+00:00",
+  "scope": "Step 136 through Step 148 ZIP parts available in build workspace",
+  "root_cause": "Quoted %~dp0 was passed as a standalone Python argument. Because %~dp0 ends with a backslash, Windows command-line parsing can preserve an unmatched trailing quote and create BioIntel-AI\"\\reports.",
+  "step_summary": {
+    "136": {
+      "zip_parts_scanned": 32,
+      "text_launchers_scanned": 8868,
+      "dangerous_root_quote_findings": 0,
+      "packages": [
+        "BioIntel-AI-Step136-BRAND-PEAK-Part1.zip",
+        "BioIntel-AI-Step136-BRAND-PEAK-Part2.zip",
+        "BioIntel-AI-Step136-BRAND-PEAK-Part3.zip",
+        "BioIntel-AI-Step136-BRAND-PEAK-Part4.zip",
+        "BioIntel-AI-Step136-HOME-NAME-BRANDED-ICONS-FIXED-Part1.zip",
+        "BioIntel-AI-Step136-HOME-NAME-BRANDED-ICONS-FIXED-Part2.zip",
+        "BioIntel-AI-Step136-HOME-NAME-BRANDED-ICONS-FIXED-Part3.zip",
+        "BioIntel-AI-Step136-HOME-NAME-BRANDED-ICONS-FIXED-Part4.zip",
+        "BioIntel-AI-Step136-NATIVE-RAW-DATA-REAL-ENGINE-STABILITY-Part1.zip",
+        "BioIntel-AI-Step136-NATIVE-RAW-DATA-REAL-ENGINE-STABILITY-Part2.zip",
+        "BioIntel-AI-Step136-NATIVE-RAW-DATA-REAL-ENGINE-STABILITY-Part3.zip",
+        "BioIntel-AI-Step136-NATIVE-RAW-DATA-REAL-ENGINE-STABILITY-Part4.zip",
+        "BioIntel-AI-Step136-NON-AI-VISUAL-PEAK-Part1.zip",
+        "BioIntel-AI-Step136-NON-AI-VISUAL-PEAK-Part2.zip",
+        "BioIntel-AI-Step136-NON-AI-VISUAL-PEAK-Part3.zip",
+        "BioIntel-AI-Step136-NON-AI-VISUAL-PEAK-Part4.zip",
+        "BioIntel-AI-Step136-PEAK-PHASE2-Part1.zip",
+        "BioIntel-AI-Step136-PEAK-PHASE2-Part2.zip",
+        "BioIntel-AI-Step136-PEAK-PHASE2-Part3.zip",
+        "BioIntel-AI-Step136-PEAK-PHASE2-Part4.zip",
+        "BioIntel-AI-Step136-SELECTED-DOMAINS-PEAK-Part1.zip",
+        "BioIntel-AI-Step136-SELECTED-DOMAINS-PEAK-Part2.zip",
+        "BioIntel-AI-Step136-SELECTED-DOMAINS-PEAK-Part3.zip",
+        "BioIntel-AI-Step136-SELECTED-DOMAINS-PEAK-Part4.zip",
+        "BioIntel-AI-Step136-UI-OVERFLOW-FIXED-Part1.zip",
+        "BioIntel-AI-Step136-UI-OVERFLOW-FIXED-Part2.zip",
+        "BioIntel-AI-Step136-UI-OVERFLOW-FIXED-Part3.zip",
+        "BioIntel-AI-Step136-UI-OVERFLOW-FIXED-Part4.zip",
+        "BioIntel-AI-Step136-VISUAL-DATA-VERIFIED-Part1.zip",
+        "BioIntel-AI-Step136-VISUAL-DATA-VERIFIED-Part2.zip",
+        "BioIntel-AI-Step136-VISUAL-DATA-VERIFIED-Part3.zip",
+        "BioIntel-AI-Step136-VISUAL-DATA-VERIFIED-Part4.zip"
+      ]
+    },
+    "137": {
+      "zip_parts_scanned": 4,
+      "text_launchers_scanned": 1135,
+      "dangerous_root_quote_findings": 0,
+      "packages": [
+        "BioIntel-AI-Step137-BIOINFORMATICS-PEAK-Part1.zip",
+        "BioIntel-AI-Step137-BIOINFORMATICS-PEAK-Part2.zip",
+        "BioIntel-AI-Step137-BIOINFORMATICS-PEAK-Part3.zip",
+        "BioIntel-AI-Step137-BIOINFORMATICS-PEAK-Part4.zip"
+      ]
+    },
+    "138": {
+      "zip_parts_scanned": 4,
+      "text_launchers_scanned": 1146,
+      "dangerous_root_quote_findings": 0,
+      "packages": [
+        "BioIntel-AI-Step138-BIOINFORMATICS-DEEP-EXCELLENCE-Part1.zip",
+        "BioIntel-AI-Step138-BIOINFORMATICS-DEEP-EXCELLENCE-Part2.zip",
+        "BioIntel-AI-Step138-BIOINFORMATICS-DEEP-EXCELLENCE-Part3.zip",
+        "BioIntel-AI-Step138-BIOINFORMATICS-DEEP-EXCELLENCE-Part4.zip"
+      ]
+    },
+    "139": {
+      "zip_parts_scanned": 4,
+      "text_launchers_scanned": 1154,
+      "dangerous_root_quote_findings": 0,
+      "packages": [
+        "BioIntel-AI-Step139-BIOINFORMATICS-NATIVE-ENGINE-PEAK-Part1.zip",
+        "BioIntel-AI-Step139-BIOINFORMATICS-NATIVE-ENGINE-PEAK-Part2.zip",
+        "BioIntel-AI-Step139-BIOINFORMATICS-NATIVE-ENGINE-PEAK-Part3.zip",
+        "BioIntel-AI-Step139-BIOINFORMATICS-NATIVE-ENGINE-PEAK-Part4.zip"
+      ]
+    },
+    "140": {
+      "zip_parts_scanned": 4,
+      "text_launchers_scanned": 1170,
+      "dangerous_root_quote_findings": 0,
+      "packages": [
+        "BioIntel-AI-Step140-BIOINFORMATICS-INTEROPERABILITY-PORTABILITY-PEAK-Part1.zip",
+        "BioIntel-AI-Step140-BIOINFORMATICS-INTEROPERABILITY-PORTABILITY-PEAK-Part2.zip",
+        "BioIntel-AI-Step140-BIOINFORMATICS-INTEROPERABILITY-PORTABILITY-PEAK-Part3.zip",
+        "BioIntel-AI-Step140-BIOINFORMATICS-INTEROPERABILITY-PORTABILITY-PEAK-Part4.zip"
+      ]
+    },
+    "141": {
+      "zip_parts_scanned": 4,
+      "text_launchers_scanned": 1195,
+      "dangerous_root_quote_findings": 0,
+      "packages": [
+        "BioIntel-AI-Step141-RESEARCH-PLANNING-PEAK-Part1.zip",
+        "BioIntel-AI-Step141-RESEARCH-PLANNING-PEAK-Part2.zip",
+        "BioIntel-AI-Step141-RESEARCH-PLANNING-PEAK-Part3.zip",
+        "BioIntel-AI-Step141-RESEARCH-PLANNING-PEAK-Part4.zip"
+      ]
+    },
+    "142": {
+      "zip_parts_scanned": 4,
+      "text_launchers_scanned": 1214,
+      "dangerous_root_quote_findings": 0,
+      "packages": [
+        "BioIntel-AI-Step142-RESEARCH-PLANNING-CONNECTED-OS-Part1.zip",
+        "BioIntel-AI-Step142-RESEARCH-PLANNING-CONNECTED-OS-Part2.zip",
+        "BioIntel-AI-Step142-RESEARCH-PLANNING-CONNECTED-OS-Part3.zip",
+        "BioIntel-AI-Step142-RESEARCH-PLANNING-CONNECTED-OS-Part4.zip"
+      ]
+    },
+    "143": {
+      "zip_parts_scanned": 4,
+      "text_launchers_scanned": 1219,
+      "dangerous_root_quote_findings": 0,
+      "packages": [
+        "BioIntel-AI-Step143-RESEARCH-PLANNING-FEATURE-PEAK-Part1.zip",
+        "BioIntel-AI-Step143-RESEARCH-PLANNING-FEATURE-PEAK-Part2.zip",
+        "BioIntel-AI-Step143-RESEARCH-PLANNING-FEATURE-PEAK-Part3.zip",
+        "BioIntel-AI-Step143-RESEARCH-PLANNING-FEATURE-PEAK-Part4.zip"
+      ]
+    },
+    "144": {
+      "zip_parts_scanned": 4,
+      "text_launchers_scanned": 1224,
+      "dangerous_root_quote_findings": 0,
+      "packages": [
+        "BioIntel-AI-Step144-RESEARCH-PLANNING-SPECIALIST-ENGINES-Part1.zip",
+        "BioIntel-AI-Step144-RESEARCH-PLANNING-SPECIALIST-ENGINES-Part2.zip",
+        "BioIntel-AI-Step144-RESEARCH-PLANNING-SPECIALIST-ENGINES-Part3.zip",
+        "BioIntel-AI-Step144-RESEARCH-PLANNING-SPECIALIST-ENGINES-Part4.zip"
+      ]
+    },
+    "145": {
+      "zip_parts_scanned": 4,
+      "text_launchers_scanned": 1236,
+      "dangerous_root_quote_findings": 1,
+      "packages": [
+        "BioIntel-AI-Step145-OVERALL-APP-STABILITY-OPTIMIZED-Part1.zip",
+        "BioIntel-AI-Step145-OVERALL-APP-STABILITY-OPTIMIZED-Part2.zip",
+        "BioIntel-AI-Step145-OVERALL-APP-STABILITY-OPTIMIZED-Part3.zip",
+        "BioIntel-AI-Step145-OVERALL-APP-STABILITY-OPTIMIZED-Part4.zip"
+      ]
+    },
+    "146": {
+      "zip_parts_scanned": 4,
+      "text_launchers_scanned": 1246,
+      "dangerous_root_quote_findings": 1,
+      "packages": [
+        "BioIntel-AI-Step146-RESEARCH-LIFECYCLE-PEAK-Part1.zip",
+        "BioIntel-AI-Step146-RESEARCH-LIFECYCLE-PEAK-Part2.zip",
+        "BioIntel-AI-Step146-RESEARCH-LIFECYCLE-PEAK-Part3.zip",
+        "BioIntel-AI-Step146-RESEARCH-LIFECYCLE-PEAK-Part4.zip"
+      ]
+    },
+    "147": {
+      "zip_parts_scanned": 4,
+      "text_launchers_scanned": 1250,
+      "dangerous_root_quote_findings": 1,
+      "packages": [
+        "BioIntel-AI-Step147-RESEARCH-LIFECYCLE-OPERATIONAL-PEAK-Part1.zip",
+        "BioIntel-AI-Step147-RESEARCH-LIFECYCLE-OPERATIONAL-PEAK-Part2.zip",
+        "BioIntel-AI-Step147-RESEARCH-LIFECYCLE-OPERATIONAL-PEAK-Part3.zip",
+        "BioIntel-AI-Step147-RESEARCH-LIFECYCLE-OPERATIONAL-PEAK-Part4.zip"
+      ]
+    },
+    "148": {
+      "zip_parts_scanned": 4,
+      "text_launchers_scanned": 1251,
+      "dangerous_root_quote_findings": 1,
+      "packages": [
+        "BioIntel-AI-Step148-CREATIVE-PREMIUM-THEMES-Part1.zip",
+        "BioIntel-AI-Step148-CREATIVE-PREMIUM-THEMES-Part2.zip",
+        "BioIntel-AI-Step148-CREATIVE-PREMIUM-THEMES-Part3.zip",
+        "BioIntel-AI-Step148-CREATIVE-PREMIUM-THEMES-Part4.zip"
+      ]
+    }
+  },
+  "findings": [
+    {
+      "step": 145,
+      "zip": "BioIntel-AI-Step145-OVERALL-APP-STABILITY-OPTIMIZED-Part2.zip",
+      "file": "BioIntel-AI/RUN_BOTH_WINDOWS.bat",
+      "line": 36,
+      "text": "\"%~dp0.venv\\Scripts\\python.exe\" \"%~dp0scripts\\step145_runtime_preflight.py\" --root \"%~dp0\""
+    },
+    {
+      "step": 146,
+      "zip": "BioIntel-AI-Step146-RESEARCH-LIFECYCLE-PEAK-Part1.zip",
+      "file": "BioIntel-AI/RUN_BOTH_WINDOWS.bat",
+      "line": 36,
+      "text": "\"%~dp0.venv\\Scripts\\python.exe\" \"%~dp0scripts\\step145_runtime_preflight.py\" --root \"%~dp0\""
+    },
+    {
+      "step": 147,
+      "zip": "BioIntel-AI-Step147-RESEARCH-LIFECYCLE-OPERATIONAL-PEAK-Part1.zip",
+      "file": "BioIntel-AI/RUN_BOTH_WINDOWS.bat",
+      "line": 36,
+      "text": "\"%~dp0.venv\\Scripts\\python.exe\" \"%~dp0scripts\\step145_runtime_preflight.py\" --root \"%~dp0\""
+    },
+    {
+      "step": 148,
+      "zip": "BioIntel-AI-Step148-CREATIVE-PREMIUM-THEMES-Part2.zip",
+      "file": "BioIntel-AI/RUN_BOTH_WINDOWS.bat",
+      "line": 36,
+      "text": "\"%~dp0.venv\\Scripts\\python.exe\" \"%~dp0scripts\\step145_runtime_preflight.py\" --root \"%~dp0\""
+    }
+  ],
+  "conclusion": {
+    "introduced_in_step": 145,
+    "affected_steps": [
+      145,
+      146,
+      147,
+      148
+    ],
+    "steps_without_this_pattern": [
+      136,
+      137,
+      138,
+      139,
+      140,
+      141,
+      142,
+      143,
+      144
+    ],
+    "fixed_in_step": 149
+  }
+}

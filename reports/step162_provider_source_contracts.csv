@@ -1,0 +1,15 @@
+provider_key,provider,domain,official_url,source_descriptor_verified,local_asset_files,local_snapshot_present,local_snapshot_checksum_verified,production_reference_qualified,contract_sha256
+uci,UCI Machine Learning Repository,Public benchmark datasets,https://archive.ics.uci.edu/,True,2,True,True,False,bc4fdcabc58a91a10299195532e0a24997fc3451136481df5fc663e125e606e2
+sklearn,scikit-learn bundled datasets,Reproducible ML benchmarks,https://scikit-learn.org/stable/datasets.html,True,45,True,True,False,0642abe54fc133147a5bf7a65fcf9021121b6aea0881f56d3ce639671fd0a6e2
+chembl,ChEMBL,Bioactivity,https://www.ebi.ac.uk/chembl/,True,1,True,True,False,d7d9752d0fa99301765cf7b22986e4af1f611e7eb6ace1f7e6ad8064b3e50c73
+clinicaltrials,ClinicalTrials.gov,Clinical studies,https://clinicaltrials.gov/,True,1,True,True,False,5095c33d803968cdea8d6ee0b567bca12bfaa7de0f17520b698458802007727a
+pride,PRIDE Archive,Proteomics,https://www.ebi.ac.uk/pride/,True,1,True,True,False,18a3f1a7cbe74214b0ef3e6d62b6247eca4304fd5f015c39dd980848b3d00ba0
+cptac,CPTAC,Proteogenomics,https://proteomics.cancer.gov/programs/cptac,True,1,True,True,False,0ae8970d53d6db3e8f04eff4e9b4dba16d040d8e741abd74e6d8aea1bc6e6275
+geo,NCBI GEO,Functional genomics,https://www.ncbi.nlm.nih.gov/geo/,True,1,True,True,False,8449c637072654596f10284df643277613186553ef99d22818137ee17c94fc73
+uniprot,UniProt,Protein sequence and annotation,https://www.uniprot.org/,True,0,False,False,False,d70d128072ebda4d7c4b4d8e699794950fcd9130f69da088573f32fbbc05db70
+rcsb,RCSB Protein Data Bank,Macromolecular structures,https://www.rcsb.org/,True,0,False,False,False,951ab367d4c4ebdb90acb146d586a403963b4822d15487a1a15757340486ca87
+pubchem,PubChem,Chemical structures and assays,https://pubchem.ncbi.nlm.nih.gov/,True,0,False,False,False,8f3125d9ce79a7168f27a959442bb58f1a41ae413eea4819ac5a962a23e23f99
+clinvar,ClinVar,Clinical variants,https://www.ncbi.nlm.nih.gov/clinvar/,True,0,False,False,False,a0ebd7aef4fd35a845a4b30dcf0bef39f91ffe98c2c94a1831a2a43c5d5f21c4
+gnomad,gnomAD,Population variation,https://gnomad.broadinstitute.org/,True,0,False,False,False,4d3e31b11605ab1fd91d724f24f48b23ddec7765333d13c86c9c7a67a2285ecf
+reactome,Reactome,Pathways,https://reactome.org/,True,0,False,False,False,d3868dddd6c6f81b1e88449030e13c2f37b8039e5add4173fe93f72ea5690e13
+go,Gene Ontology,Functional ontology,https://geneontology.org/,True,0,False,False,False,d1174912ea14dd2f55c7255b8bc34547cdb886fa72901fc33b6f3f11a544790a

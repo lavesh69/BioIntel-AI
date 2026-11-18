@@ -1,0 +1,102 @@
+[
+  {
+    "module_key": "phenotypic_screening",
+    "module_title": "Phenotypic Screening & High-Content Analysis",
+    "weakness_remediation_workflow_rating": 10.0,
+    "evidence_packs_required": 5,
+    "evidence_packs_qualified": 0,
+    "evidence_completion_fraction": 0.0,
+    "manifest_completion_fraction": 0.0,
+    "data_validation_fraction": 0.0,
+    "controlled_release_eligible": false,
+    "decision": "operational-workflow-complete-real-evidence-pending",
+    "remaining_evidence": [
+      "Physical imaging instrument qualification",
+      "Real multi-plate validation",
+      "Segmentation ground-truth validation",
+      "Biological replicate and external-site validation",
+      "Orthogonal assay confirmation"
+    ],
+    "release_boundary": "Research-prioritisation only until every real-world evidence pack is qualified and formal expert release review is approved."
+  },
+  {
+    "module_key": "spatial_omics_pathology",
+    "module_title": "Spatial Omics & Digital Pathology",
+    "weakness_remediation_workflow_rating": 10.0,
+    "evidence_packs_required": 5,
+    "evidence_packs_qualified": 0,
+    "evidence_completion_fraction": 0.0,
+    "manifest_completion_fraction": 0.0,
+    "data_validation_fraction": 0.0,
+    "controlled_release_eligible": false,
+    "decision": "operational-workflow-complete-real-evidence-pending",
+    "remaining_evidence": [
+      "Real scanner qualification",
+      "Stain, scanner and site drift validation",
+      "Patient-level external cohort",
+      "Pathologist agreement study",
+      "Prospective clinical validation"
+    ],
+    "release_boundary": "No diagnostic claim until scanner/site qualification, patient-level external validation, pathologist agreement and prospective review are complete."
+  },
+  {
+    "module_key": "protein_language_design",
+    "module_title": "Protein Language Model & Generative Design",
+    "weakness_remediation_workflow_rating": 10.0,
+    "evidence_packs_required": 5,
+    "evidence_packs_qualified": 0,
+    "evidence_completion_fraction": 0.0,
+    "manifest_completion_fraction": 0.0,
+    "data_validation_fraction": 0.0,
+    "controlled_release_eligible": false,
+    "decision": "operational-workflow-complete-real-evidence-pending",
+    "remaining_evidence": [
+      "Authentic trained model weights",
+      "Independent sequence benchmark",
+      "Novelty and memorisation verification",
+      "Independent structure confirmation",
+      "Wet-lab expression and activity evidence"
+    ],
+    "release_boundary": "Generated proteins remain computational hypotheses until authentic weights, novelty, independent structure and wet-lab expression/activity evidence qualify."
+  },
+  {
+    "module_key": "protein_ligand_codesign",
+    "module_title": "Protein\u2013Ligand Co-Design",
+    "weakness_remediation_workflow_rating": 10.0,
+    "evidence_packs_required": 5,
+    "evidence_packs_qualified": 0,
+    "evidence_completion_fraction": 0.0,
+    "manifest_completion_fraction": 0.0,
+    "data_validation_fraction": 0.0,
+    "controlled_release_eligible": false,
+    "decision": "operational-workflow-complete-real-evidence-pending",
+    "remaining_evidence": [
+      "Docking and structure-engine qualification",
+      "Experimental binding-affinity validation",
+      "Experimental selectivity panel",
+      "Experimental ADMET confirmation",
+      "Prospective assay validation"
+    ],
+    "release_boundary": "No binding, selectivity, safety or developability claim until experimental and prospective assay evidence passes."
+  },
+  {
+    "module_key": "strain_microbiome",
+    "module_title": "Strain-Resolved Microbiome",
+    "weakness_remediation_workflow_rating": 10.0,
+    "evidence_packs_required": 5,
+    "evidence_packs_qualified": 0,
+    "evidence_completion_fraction": 0.0,
+    "manifest_completion_fraction": 0.0,
+    "data_validation_fraction": 0.0,
+    "controlled_release_eligible": false,
+    "decision": "operational-workflow-complete-real-evidence-pending",
+    "remaining_evidence": [
+      "Licensed strain/reference database",
+      "Real mock-community benchmark",
+      "Contamination-control validation",
+      "Strain-level ground-truth validation",
+      "Independent sequencing-site validation"
+    ],
+    "release_boundary": "Strain and functional calls remain research outputs until licensed references, mock-community truth, controls and independent-site validation qualify."
+  }
+]

@@ -1,0 +1,46 @@
+{
+  "schema": "biointel.step59.verification.v1",
+  "release": "BioIntel AI Step 59 Bioinformatics Excellence",
+  "generated_at": "2026-07-06T06:35:56.003631+00:00",
+  "tests": {
+    "collected": 505,
+    "passed": 489,
+    "skipped": 16,
+    "failed": 0,
+    "focused_step59_passed": 27
+  },
+  "bioinformatics": {
+    "modules_upgraded": 14,
+    "advanced_backend_modules": 9,
+    "reference_pack_files": 8,
+    "capability_catalog": 27,
+    "capabilities_detected_in_qualification_runner": 7
+  },
+  "quality": {
+    "ruff": "passed",
+    "python_compilation": "passed",
+    "engineering_gates_passed": true,
+    "secret_scan_passed": true
+  },
+  "data_and_models": {
+    "databases": 20,
+    "healthy_databases": 20,
+    "database_rows": 106465,
+    "foreign_key_violations": 0,
+    "model_artifacts": 24,
+    "model_mismatches": 0,
+    "reference_pack_passed": true
+  },
+  "store_release": {
+    "internal_failures": 0,
+    "external_actions": 3,
+    "source_size_bytes": 339591036
+  },
+  "external_boundaries": [
+    "official/licensed database redistribution",
+    "independent wet-lab or clinical validation",
+    "regulatory approval and journal acceptance",
+    "third-party specialist binaries and databases",
+    "real long-term production/customer evidence"
+  ]
+}

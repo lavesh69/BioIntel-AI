@@ -1,0 +1,243 @@
+{
+  "schema": "biointel.step95.maximum-quality.verification.v1",
+  "generated_at_utc": "2026-07-09T14:53:53.148852+00:00",
+  "version": "9.5.0",
+  "status": "qualified",
+  "implementation_readiness": 10.0,
+  "external_scientific_evidence_boundary": {
+    "score_not_artificially_upgraded": true,
+    "release_eligible_without_external_evidence": false,
+    "required_external_outcomes": [
+      "independent validation",
+      "prospective/wet-lab validation",
+      "peer review",
+      "clinical/regulatory evidence"
+    ]
+  },
+  "verification": {
+    "step92_to_step95_targeted_tests": 29,
+    "step95_specific_tests": 11,
+    "innovation_page_smoke_tests": 13,
+    "python_compilation": "passed",
+    "engineering_gates": "4/4 passed",
+    "offline_wheels": 102,
+    "offline_wheel_verification": "passed",
+    "databases": 28,
+    "healthy_databases": 28,
+    "foreign_key_issues": 0,
+    "database_rows_checked": 107472,
+    "advanced_tools_registered": 44,
+    "new_or_upgraded_pages": 13
+  },
+  "major_controls": [
+    "dependency-aware real workflow execution",
+    "retries, resume and cancellation markers",
+    "SHA-256 input/output artifact provenance",
+    "SQLite run/step/artifact/audit registry",
+    "audited external-tool execution with command, binary hash, stdout, stderr and exit status",
+    "leakage-controlled biomarker batch correction inside cross-validation",
+    "full pipeline-refit permutation testing",
+    "replicate-aware negative-binomial CRISPR screening",
+    "distance-derived phylogeny and audited pathogen tools",
+    "trio segregation assessment and audited variant annotation",
+    "scientific evidence and implementation readiness shown as separate scores"
+  ],
+  "database_details": [
+    {
+      "path": "data/clinical_pharma/clinical_validation.sqlite3",
+      "healthy": true,
+      "foreign_key_issues": 0,
+      "tables": 13,
+      "rows": 0
+    },
+    {
+      "path": "data/discovery_projects.sqlite3",
+      "healthy": true,
+      "foreign_key_issues": 0,
+      "tables": 7,
+      "rows": 0
+    },
+    {
+      "path": "data/lab_analytics.sqlite3",
+      "healthy": true,
+      "foreign_key_issues": 0,
+      "tables": 3,
+      "rows": 0
+    },
+    {
+      "path": "reports/analytics.sqlite3",
+      "healthy": true,
+      "foreign_key_issues": 0,
+      "tables": 5,
+      "rows": 17690
+    },
+    {
+      "path": "reports/api_security.sqlite3",
+      "healthy": true,
+      "foreign_key_issues": 0,
+      "tables": 5,
+      "rows": 1013
+    },
+    {
+      "path": "reports/assets.sqlite3",
+      "healthy": true,
+      "foreign_key_issues": 0,
+      "tables": 11,
+      "rows": 20547
+    },
+    {
+      "path": "reports/batch_jobs/batch_prediction_sample_250.sqlite3",
+      "healthy": true,
+      "foreign_key_issues": 0,
+      "tables": 0,
+      "rows": 0
+    },
+    {
+      "path": "reports/biotechnology_project_runs.sqlite3",
+      "healthy": true,
+      "foreign_key_issues": 0,
+      "tables": 2,
+      "rows": 0
+    },
+    {
+      "path": "reports/connected_sources.sqlite3",
+      "healthy": true,
+      "foreign_key_issues": 0,
+      "tables": 4,
+      "rows": 0
+    },
+    {
+      "path": "reports/datasets.sqlite3",
+      "healthy": true,
+      "foreign_key_issues": 0,
+      "tables": 13,
+      "rows": 4935
+    },
+    {
+      "path": "reports/document_history.sqlite3",
+      "healthy": true,
+      "foreign_key_issues": 0,
+      "tables": 14,
+      "rows": 1973
+    },
+    {
+      "path": "reports/evidence.sqlite3",
+      "healthy": true,
+      "foreign_key_issues": 0,
+      "tables": 10,
+      "rows": 3891
+    },
+    {
+      "path": "reports/experiments.sqlite3",
+      "healthy": true,
+      "foreign_key_issues": 0,
+      "tables": 9,
+      "rows": 783
+    },
+    {
+      "path": "reports/feature_cache.sqlite3",
+      "healthy": true,
+      "foreign_key_issues": 0,
+      "tables": 2,
+      "rows": 1293
+    },
+    {
+      "path": "reports/internet_downloads.sqlite3",
+      "healthy": true,
+      "foreign_key_issues": 0,
+      "tables": 5,
+      "rows": 105
+    },
+    {
+      "path": "reports/jobs.sqlite3",
+      "healthy": true,
+      "foreign_key_issues": 0,
+      "tables": 6,
+      "rows": 890
+    },
+    {
+      "path": "reports/knowledge.sqlite3",
+      "healthy": true,
+      "foreign_key_issues": 0,
+      "tables": 10,
+      "rows": 38427
+    },
+    {
+      "path": "reports/projects.sqlite3",
+      "healthy": true,
+      "foreign_key_issues": 0,
+      "tables": 7,
+      "rows": 688
+    },
+    {
+      "path": "reports/prospective_validation.sqlite3",
+      "healthy": true,
+      "foreign_key_issues": 0,
+      "tables": 4,
+      "rows": 0
+    },
+    {
+      "path": "reports/realworld_evidence.sqlite3",
+      "healthy": true,
+      "foreign_key_issues": 0,
+      "tables": 6,
+      "rows": 10
+    },
+    {
+      "path": "reports/relationships.sqlite3",
+      "healthy": true,
+      "foreign_key_issues": 0,
+      "tables": 4,
+      "rows": 2291
+    },
+    {
+      "path": "reports/scientific_evidence.sqlite3",
+      "healthy": true,
+      "foreign_key_issues": 0,
+      "tables": 5,
+      "rows": 12903
+    },
+    {
+      "path": "reports/step95_quality10_self_test/self_test_registry.sqlite3",
+      "healthy": true,
+      "foreign_key_issues": 0,
+      "tables": 4,
+      "rows": 14
+    },
+    {
+      "path": "reports/tenants.sqlite3",
+      "healthy": true,
+      "foreign_key_issues": 0,
+      "tables": 4,
+      "rows": 3
+    },
+    {
+      "path": "reports/validation_evidence.sqlite3",
+      "healthy": true,
+      "foreign_key_issues": 0,
+      "tables": 8,
+      "rows": 12
+    },
+    {
+      "path": "reports/workflow_automation.sqlite3",
+      "healthy": true,
+      "foreign_key_issues": 0,
+      "tables": 4,
+      "rows": 4
+    },
+    {
+      "path": "workspace/quality10/workflow_runs.sqlite3",
+      "healthy": true,
+      "foreign_key_issues": 0,
+      "tables": 4,
+      "rows": 0
+    },
+    {
+      "path": "workspace/workflow_runs/workflow_runs.sqlite3",
+      "healthy": true,
+      "foreign_key_issues": 0,
+      "tables": 4,
+      "rows": 0
+    }
+  ]
+}

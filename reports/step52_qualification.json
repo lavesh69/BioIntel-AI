@@ -1,0 +1,33 @@
+{
+  "application_routes": {
+    "failed": 0,
+    "passed": 87,
+    "total": 87
+  },
+  "connected_api_endpoints": 7,
+  "databases": {
+    "foreign_key_violations": 0,
+    "healthy": 19,
+    "total": 19
+  },
+  "external_boundary": "Build-container DNS unavailable; run Windows live connection test with operator credentials.",
+  "name": "Proper Live Connections",
+  "providers": 11,
+  "python_files_compiled": 484,
+  "security": {
+    "bounded_redirects": true,
+    "bounded_response_size": true,
+    "bundled_real_credentials": 0,
+    "official_host_allowlist": true,
+    "openai_cache_disabled": true,
+    "openai_custom_gateway_requires_opt_in": true,
+    "public_ip_validation": true,
+    "secret_redaction": true
+  },
+  "selected_tests": {
+    "failed": 0,
+    "passed": 60
+  },
+  "status": "passed_with_external_live_check_required",
+  "step": 52
+}

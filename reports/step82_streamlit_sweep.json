@@ -1,0 +1,922 @@
+{
+  "total": 91,
+  "passed": 91,
+  "failed": 0,
+  "missing_indices": [],
+  "results": [
+    {
+      "page": "app.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "index": 0,
+      "returncode": 0,
+      "seconds": 10.49,
+      "stderr_tail": "2026-07-08 07:08:32.944 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode."
+    },
+    {
+      "page": "pages/0_Quick_Start.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "index": 1,
+      "returncode": 0,
+      "seconds": 10.58,
+      "stderr_tail": "2026-07-08 07:08:32.947 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode."
+    },
+    {
+      "page": "pages/10_External_Databases.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "index": 2,
+      "returncode": 0,
+      "seconds": 10.58,
+      "stderr_tail": "2026-07-08 07:08:32.887 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode."
+    },
+    {
+      "page": "pages/11_Experiment_Registry.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "index": 3,
+      "returncode": 0,
+      "seconds": 10.57,
+      "stderr_tail": "2026-07-08 07:08:32.945 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode."
+    },
+    {
+      "page": "pages/12_API_Deployment.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "index": 4,
+      "returncode": 0,
+      "seconds": 10.57,
+      "stderr_tail": "2026-07-08 07:08:32.886 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode."
+    },
+    {
+      "page": "pages/13_ChEMBL_Dataset_Builder.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "index": 5,
+      "returncode": 0,
+      "seconds": 10.57,
+      "stderr_tail": "2026-07-08 07:08:32.945 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode."
+    },
+    {
+      "page": "pages/14_External_Validation_Drift.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "index": 6,
+      "returncode": 0,
+      "seconds": 9.22,
+      "stderr_tail": "2026-07-08 07:14:59.108 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode."
+    },
+    {
+      "page": "pages/15_Audit_Release.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "index": 7,
+      "returncode": 0,
+      "seconds": 9.34,
+      "stderr_tail": "2026-07-08 07:15:15.252 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode."
+    },
+    {
+      "page": "pages/16_Batch_Sequence_Analysis.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "index": 8,
+      "returncode": 0,
+      "seconds": 24.11,
+      "stderr_tail": "2026-07-08 07:08:53.173 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode."
+    },
+    {
+      "page": "pages/17_Local_Data_Manager.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "index": 9,
+      "returncode": 0,
+      "seconds": 24.11,
+      "stderr_tail": "2026-07-08 07:08:53.174 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode."
+    },
+    {
+      "page": "pages/18_Workspace_Backup_Restore.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [
+        "Backup could not be prepared: Backup exceeds the 5000-file limit."
+      ],
+      "index": 10,
+      "returncode": 0,
+      "seconds": 4.44,
+      "stderr_tail": "2026-07-08 07:15:31.955 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode."
+    },
+    {
+      "page": "pages/19_System_Diagnostics.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [
+        "One or more checks failed. Run REPAIR_BIOINTEL_WINDOWS.bat from the extracted project folder."
+      ],
+      "index": 11,
+      "returncode": 0,
+      "seconds": 12.22,
+      "stderr_tail": "2026-07-08 07:15:37.676 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode."
+    },
+    {
+      "page": "pages/1_Sequence_Analyzer.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "index": 12,
+      "returncode": 0,
+      "seconds": 24.1,
+      "stderr_tail": "2026-07-08 07:08:53.175 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode."
+    },
+    {
+      "page": "pages/20_Workflow_Dashboard.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "index": 13,
+      "returncode": 0,
+      "seconds": 11.71,
+      "stderr_tail": "2026-07-08 07:15:56.659 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode."
+    },
+    {
+      "page": "pages/21_Dataset_Registry_Lineage.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "index": 14,
+      "returncode": 0,
+      "seconds": 7.1,
+      "stderr_tail": "2026-07-08 07:09:21.775 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode."
+    },
+    {
+      "page": "pages/22_Model_Lifecycle.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "index": 15,
+      "returncode": 0,
+      "seconds": 12.02,
+      "stderr_tail": "2026-07-08 07:09:21.776 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode."
+    },
+    {
+      "page": "pages/23_Batch_Prediction_Jobs.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "index": 16,
+      "returncode": 0,
+      "seconds": 12.02,
+      "stderr_tail": "2026-07-08 07:09:21.776 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode."
+    },
+    {
+      "page": "pages/24_Appearance_Studio.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "index": 17,
+      "returncode": 0,
+      "seconds": 12.02,
+      "stderr_tail": "2026-07-08 07:09:21.775 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode."
+    },
+    {
+      "page": "pages/25_Command_Center.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "index": 18,
+      "returncode": 0,
+      "seconds": 14.59,
+      "stderr_tail": "2026-07-08 07:09:41.073 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode."
+    },
+    {
+      "page": "pages/26_Research_Report_Studio.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "index": 19,
+      "returncode": 0,
+      "seconds": 14.59,
+      "stderr_tail": "2026-07-08 07:09:41.075 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode."
+    },
+    {
+      "page": "pages/27_Executive_Overview.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "index": 20,
+      "returncode": 0,
+      "seconds": 14.59,
+      "stderr_tail": "2026-07-08 07:09:41.073 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode."
+    },
+    {
+      "page": "pages/28_Project_Portfolio.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "index": 21,
+      "returncode": 0,
+      "seconds": 14.58,
+      "stderr_tail": "2026-07-08 07:09:41.073 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode."
+    },
+    {
+      "page": "pages/29_Activity_Risk_Center.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "index": 22,
+      "returncode": 0,
+      "seconds": 14.39,
+      "stderr_tail": "2026-07-08 07:10:01.002 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode."
+    },
+    {
+      "page": "pages/2_Sequence_Comparison.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "index": 23,
+      "returncode": 0,
+      "seconds": 14.39,
+      "stderr_tail": "2026-07-08 07:10:00.996 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode."
+    },
+    {
+      "page": "pages/30_Governance_Hub.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "index": 24,
+      "returncode": 0,
+      "seconds": 14.39,
+      "stderr_tail": "2026-07-08 07:10:00.999 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode."
+    },
+    {
+      "page": "pages/31_Evidence_Package_Studio.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "index": 25,
+      "returncode": 0,
+      "seconds": 20.53,
+      "stderr_tail": "2026-07-08 07:10:01.002 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode."
+    },
+    {
+      "page": "pages/32_Release_Readiness_Lineage.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "index": 26,
+      "returncode": 0,
+      "seconds": 18.61,
+      "stderr_tail": "2026-07-08 07:10:27.523 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode."
+    },
+    {
+      "page": "pages/33_Data_Model_Library.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "index": 27,
+      "returncode": 0,
+      "seconds": 18.61,
+      "stderr_tail": "2026-07-08 07:10:27.539 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode."
+    },
+    {
+      "page": "pages/34_ML_AutoLab.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "index": 28,
+      "returncode": 0,
+      "seconds": 18.61,
+      "stderr_tail": "2026-07-08 07:10:27.545 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode."
+    },
+    {
+      "page": "pages/35_Double_Data_ML.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "index": 29,
+      "returncode": 0,
+      "seconds": 18.61,
+      "stderr_tail": "2026-07-08 07:10:27.524 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode."
+    },
+    {
+      "page": "pages/36_Data_Coverage_Center.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "index": 30,
+      "returncode": 0,
+      "seconds": 6.35,
+      "stderr_tail": "2026-07-08 07:10:53.100 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode."
+    },
+    {
+      "page": "pages/37_5X_Data_ML.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "index": 31,
+      "returncode": 0,
+      "seconds": 11.14,
+      "stderr_tail": "2026-07-08 07:10:53.100 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode."
+    },
+    {
+      "page": "pages/38_Data_Intelligence_Hub.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "index": 32,
+      "returncode": 0,
+      "seconds": 11.14,
+      "stderr_tail": "2026-07-08 07:10:53.105 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode."
+    },
+    {
+      "page": "pages/39_Knowledge_Warehouse.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "index": 33,
+      "returncode": 0,
+      "seconds": 11.14,
+      "stderr_tail": "2026-07-08 07:10:53.098 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode."
+    },
+    {
+      "page": "pages/3_Drug_SMILES_Analyzer.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "index": 34,
+      "returncode": 0,
+      "seconds": 7.07,
+      "stderr_tail": "2026-07-08 07:11:10.278 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode."
+    },
+    {
+      "page": "pages/40_Analytics_Observability.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "index": 35,
+      "returncode": 0,
+      "seconds": 7.87,
+      "stderr_tail": "2026-07-08 07:11:10.278 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode."
+    },
+    {
+      "page": "pages/41_Research_Assets.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "index": 36,
+      "returncode": 0,
+      "seconds": 7.87,
+      "stderr_tail": "2026-07-08 07:11:10.277 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode."
+    },
+    {
+      "page": "pages/42_Internet_Research_Hub.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "index": 37,
+      "returncode": 0,
+      "seconds": 7.86,
+      "stderr_tail": "2026-07-08 07:11:10.285 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode."
+    },
+    {
+      "page": "pages/43_Scientific_Data_Curation.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "index": 38,
+      "returncode": 0,
+      "seconds": 6.94,
+      "stderr_tail": "2026-07-08 07:11:25.819 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode."
+    },
+    {
+      "page": "pages/44_Performance_Job_Center.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "index": 39,
+      "returncode": 0,
+      "seconds": 7.08,
+      "stderr_tail": "2026-07-08 07:11:25.821 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode."
+    },
+    {
+      "page": "pages/45_Scientific_Release_Gate.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "index": 40,
+      "returncode": 0,
+      "seconds": 12.46,
+      "stderr_tail": "2026-07-08 07:11:25.821 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode."
+    },
+    {
+      "page": "pages/46_Real_Evidence_Studio.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "index": 41,
+      "returncode": 0,
+      "seconds": 12.46,
+      "stderr_tail": "2026-07-08 07:11:25.823 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode."
+    },
+    {
+      "page": "pages/47_Benchmark_Leakage_Lab.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "index": 42,
+      "returncode": 0,
+      "seconds": 6.66,
+      "stderr_tail": "2026-07-08 07:11:45.350 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode."
+    },
+    {
+      "page": "pages/48_Evidence_Review_Queue.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "index": 43,
+      "returncode": 0,
+      "seconds": 6.73,
+      "stderr_tail": "2026-07-08 07:11:45.356 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode."
+    },
+    {
+      "page": "pages/49_Document_Intelligence_Center.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "index": 44,
+      "returncode": 0,
+      "seconds": 6.73,
+      "stderr_tail": "2026-07-08 07:11:45.353 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode."
+    },
+    {
+      "page": "pages/4_DTI_Feature_Builder.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "index": 45,
+      "returncode": 0,
+      "seconds": 6.73,
+      "stderr_tail": "2026-07-08 07:11:45.355 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode."
+    },
+    {
+      "page": "pages/50_Document_Extraction_History.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "index": 46,
+      "returncode": 0,
+      "seconds": 6.31,
+      "stderr_tail": "2026-07-08 07:11:58.748 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode."
+    },
+    {
+      "page": "pages/51_OCR_Layout_Review.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "index": 47,
+      "returncode": 0,
+      "seconds": 6.3,
+      "stderr_tail": "2026-07-08 07:11:58.744 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode."
+    },
+    {
+      "page": "pages/52_Batch_Document_Processor.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "index": 48,
+      "returncode": 0,
+      "seconds": 6.3,
+      "stderr_tail": "2026-07-08 07:11:58.746 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode."
+    },
+    {
+      "page": "pages/53_Document_Knowledge_Search.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "index": 49,
+      "returncode": 0,
+      "seconds": 6.3,
+      "stderr_tail": "2026-07-08 07:11:58.746 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode."
+    },
+    {
+      "page": "pages/54_Document_Evidence_Bridge.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "index": 50,
+      "returncode": 0,
+      "seconds": 6.44,
+      "stderr_tail": "2026-07-08 07:12:11.274 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode."
+    },
+    {
+      "page": "pages/55_Demo_Data_Hub.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "index": 51,
+      "returncode": 0,
+      "seconds": 6.91,
+      "stderr_tail": "2026-07-08 07:12:11.273 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode."
+    },
+    {
+      "page": "pages/56_FASTQ_Genomics_QC.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "index": 52,
+      "returncode": 0,
+      "seconds": 9.01,
+      "stderr_tail": "2026-07-08 07:12:11.278 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode."
+    },
+    {
+      "page": "pages/57_Variant_Annotation_Workbench.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "index": 53,
+      "returncode": 0,
+      "seconds": 9.01,
+      "stderr_tail": "2026-07-08 07:12:11.274 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode."
+    },
+    {
+      "page": "pages/58_Primer_CRISPR_Codon_Studio.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "index": 54,
+      "returncode": 0,
+      "seconds": 7.1,
+      "stderr_tail": "2026-07-08 07:12:26.898 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode."
+    },
+    {
+      "page": "pages/59_Transcriptomics_Expression_Lab.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "index": 55,
+      "returncode": 0,
+      "seconds": 8.84,
+      "stderr_tail": "2026-07-08 07:12:26.900 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode."
+    },
+    {
+      "page": "pages/5_Model_Training.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "index": 56,
+      "returncode": 0,
+      "seconds": 9.29,
+      "stderr_tail": "2026-07-08 07:12:26.898 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode."
+    },
+    {
+      "page": "pages/60_Protein_Annotation_Proteomics.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "index": 57,
+      "returncode": 0,
+      "seconds": 9.29,
+      "stderr_tail": "2026-07-08 07:12:26.898 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode."
+    },
+    {
+      "page": "pages/61_Structural_Bioinformatics.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "index": 58,
+      "returncode": 0,
+      "seconds": 7.67,
+      "stderr_tail": "2026-07-08 07:12:42.178 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode."
+    },
+    {
+      "page": "pages/62_ADMET_Drug_Discovery.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "index": 59,
+      "returncode": 0,
+      "seconds": 7.67,
+      "stderr_tail": "2026-07-08 07:12:42.177 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode."
+    },
+    {
+      "page": "pages/63_Pathway_Network_Analysis.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "index": 60,
+      "returncode": 0,
+      "seconds": 7.67,
+      "stderr_tail": "2026-07-08 07:12:42.179 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode."
+    },
+    {
+      "page": "pages/64_Wet_Lab_Biotechnology.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "index": 61,
+      "returncode": 0,
+      "seconds": 8.05,
+      "stderr_tail": "2026-07-08 07:12:42.177 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode."
+    },
+    {
+      "page": "pages/65_Microbiology_Metagenomics.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "index": 62,
+      "returncode": 0,
+      "seconds": 8.75,
+      "stderr_tail": "2026-07-08 07:12:57.363 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode."
+    },
+    {
+      "page": "pages/66_Omics_Integration_Hub.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "index": 63,
+      "returncode": 0,
+      "seconds": 9.79,
+      "stderr_tail": "2026-07-08 07:12:57.374 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode."
+    },
+    {
+      "page": "pages/67_Bioinformatics_Capability_Center.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "index": 64,
+      "returncode": 0,
+      "seconds": 9.79,
+      "stderr_tail": "2026-07-08 07:12:57.354 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode."
+    },
+    {
+      "page": "pages/68_Alignment_Phylogeny.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "index": 65,
+      "returncode": 0,
+      "seconds": 9.79,
+      "stderr_tail": "2026-07-08 07:12:57.357 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode."
+    },
+    {
+      "page": "pages/69_Scientific_Data_Readiness.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "index": 66,
+      "returncode": 0,
+      "seconds": 7.19,
+      "stderr_tail": "2026-07-08 07:13:12.792 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode."
+    },
+    {
+      "page": "pages/6_DTI_Predictor.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "index": 67,
+      "returncode": 0,
+      "seconds": 9.92,
+      "stderr_tail": "2026-07-08 07:13:12.792 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode."
+    },
+    {
+      "page": "pages/70_BioIntel_Studio.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "index": 68,
+      "returncode": 0,
+      "seconds": 13.36,
+      "stderr_tail": "2026-07-08 07:13:12.793 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode."
+    },
+    {
+      "page": "pages/71_Platform_Quality_Center.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "index": 69,
+      "returncode": 0,
+      "seconds": 13.35,
+      "stderr_tail": "2026-07-08 07:13:12.792 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode."
+    },
+    {
+      "page": "pages/72_Compliance_Research_Readiness.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "index": 70,
+      "returncode": 0,
+      "seconds": 6.49,
+      "stderr_tail": "2026-07-08 07:13:33.277 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode."
+    },
+    {
+      "page": "pages/73_Scientific_Evidence_Excellence.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "index": 71,
+      "returncode": 0,
+      "seconds": 6.63,
+      "stderr_tail": "2026-07-08 07:13:33.273 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode."
+    },
+    {
+      "page": "pages/74_DTI_Validation_Evidence_Center.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "index": 72,
+      "returncode": 0,
+      "seconds": 6.63,
+      "stderr_tail": "2026-07-08 07:13:33.274 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode."
+    },
+    {
+      "page": "pages/75_Real_World_Operations_Evidence.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "index": 73,
+      "returncode": 0,
+      "seconds": 6.63,
+      "stderr_tail": "2026-07-08 07:13:33.279 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode."
+    },
+    {
+      "page": "pages/76_Final_Assurance_Center.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "index": 74,
+      "returncode": 0,
+      "seconds": 11.17,
+      "stderr_tail": "2026-07-08 07:13:47.161 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode."
+    },
+    {
+      "page": "pages/77_Biotechnology_Project_Center.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "index": 75,
+      "returncode": 0,
+      "seconds": 11.17,
+      "stderr_tail": "2026-07-08 07:13:47.160 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode."
+    },
+    {
+      "page": "pages/78_Protein_Interaction_ML.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "index": 76,
+      "returncode": 0,
+      "seconds": 11.17,
+      "stderr_tail": "2026-07-08 07:13:47.165 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode."
+    },
+    {
+      "page": "pages/79_Comparative_Pathogen_Genomics.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "index": 77,
+      "returncode": 0,
+      "seconds": 11.17,
+      "stderr_tail": "2026-07-08 07:13:47.160 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode."
+    },
+    {
+      "page": "pages/7_Model_Evaluation.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "index": 78,
+      "returncode": 0,
+      "seconds": 13.74,
+      "stderr_tail": "2026-07-08 07:14:06.848 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode."
+    },
+    {
+      "page": "pages/80_Single_Cell_Heterogeneity.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "index": 79,
+      "returncode": 0,
+      "seconds": 13.73,
+      "stderr_tail": "2026-07-08 07:14:06.844 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode."
+    },
+    {
+      "page": "pages/81_Cancer_Genomics.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "index": 80,
+      "returncode": 0,
+      "seconds": 13.73,
+      "stderr_tail": "2026-07-08 07:14:06.849 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode."
+    },
+    {
+      "page": "pages/82_Metagenomics_Pipeline.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "index": 81,
+      "returncode": 0,
+      "seconds": 13.73,
+      "stderr_tail": "2026-07-08 07:14:06.848 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode."
+    },
+    {
+      "page": "pages/83_BioIntel_Copilot.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "index": 82,
+      "returncode": 0,
+      "seconds": 6.24,
+      "stderr_tail": "2026-07-08 07:14:26.346 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode."
+    },
+    {
+      "page": "pages/84_Connected_Data_Explorer.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "index": 83,
+      "returncode": 0,
+      "seconds": 6.25,
+      "stderr_tail": "2026-07-08 07:14:26.344 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode."
+    },
+    {
+      "page": "pages/85_Provider_Integration_Center.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "index": 84,
+      "returncode": 0,
+      "seconds": 6.26,
+      "stderr_tail": "2026-07-08 07:14:26.348 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode."
+    },
+    {
+      "page": "pages/86_Privacy_Security_Center.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "index": 85,
+      "returncode": 0,
+      "seconds": 6.26,
+      "stderr_tail": "2026-07-08 07:14:26.347 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode."
+    },
+    {
+      "page": "pages/87_Store_Readiness_Center.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "index": 86,
+      "returncode": 0,
+      "seconds": 8.56,
+      "stderr_tail": "2026-07-08 07:14:40.494 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode."
+    },
+    {
+      "page": "pages/88_Discovery_Command_Center.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "index": 87,
+      "returncode": 0,
+      "seconds": 10.93,
+      "stderr_tail": "2026-07-08 07:14:40.496 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode."
+    },
+    {
+      "page": "pages/89_Lab_Analytics_Command_Center.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "index": 88,
+      "returncode": 0,
+      "seconds": 10.93,
+      "stderr_tail": "2026-07-08 07:14:40.497 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode."
+    },
+    {
+      "page": "pages/8_Data_Quality_Activity.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "index": 89,
+      "returncode": 0,
+      "seconds": 10.93,
+      "stderr_tail": "2026-07-08 07:14:40.501 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode."
+    },
+    {
+      "page": "pages/9_Project_Status.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "index": 90,
+      "returncode": 0,
+      "seconds": 11.68,
+      "stderr_tail": "2026-07-08 07:14:40.499 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode."
+    }
+  ]
+}

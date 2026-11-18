@@ -1,0 +1,13 @@
+{
+  "classification": "application_instance_failover_rehearsal",
+  "external_boundary": "This validates application-instance continuity, not a multi-zone cloud failover or 90-day HA record.",
+  "failed_requests": 0,
+  "failover_duration_seconds": 0.727732545001345,
+  "observed_at": "2026-07-05T07:33:16.058321+00:00",
+  "passed": true,
+  "requests_after_failover": 50,
+  "requests_before_failover": 50,
+  "schema": "biointel.step42.ha-rehearsal.v1",
+  "successful_failovers": 1,
+  "total_duration_seconds": 16.33030304699969
+}

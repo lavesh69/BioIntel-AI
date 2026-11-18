@@ -1,0 +1,80 @@
+{
+  "checks": [
+    {
+      "key": "required_files",
+      "message": "[]",
+      "passed": true
+    },
+    {
+      "key": "release_markers",
+      "message": "[]",
+      "passed": true
+    },
+    {
+      "key": "per_module_contracts",
+      "message": "80/80",
+      "passed": true
+    },
+    {
+      "key": "page_sources",
+      "message": "269/269",
+      "passed": true
+    },
+    {
+      "key": "quality_command_center",
+      "message": "PageDefinition(key='module_quality_10of10_command_center', path='pages/229_Module_Quality_10of10_Command_Center.py', title='Module Quality 10/10 Command Center', icon='Q10', category='Governance', description='Verify ten software-owned quality controls across all scientific modules while keeping specialist and external evidence readiness separate.', keywords=('module quality', '10/10', 'step 160', 'integrity audit', 'reproducibility', 'quality contract'), featured=False)",
+      "passed": true
+    },
+    {
+      "key": "scientific_modules",
+      "message": "profiles=80; matrix=80",
+      "passed": true
+    },
+    {
+      "key": "internal_quality_10of10",
+      "message": "{\"schema\": \"biointel.step160.portfolio-quality-summary.v1\", \"modules\": 80, \"internal_10_of_10\": 80, \"specialist_runtime_complete\": 39, \"reference_complete\": 0, \"external_evidence_complete\": 0, \"external_release_eligible\": 0, \"score_scope\": \"10/10 is an internal engineering/module quality score. It never implies independent scientific, clinical or regulatory validation.\"}",
+      "passed": true
+    },
+    {
+      "key": "quality_dimensions",
+      "message": "Every module must pass 10/10 software-owned dimensions",
+      "passed": true
+    },
+    {
+      "key": "step160_native_controls",
+      "message": "{\"step160_internal_quality_contracts\": true, \"step160_full_input_integrity_audit\": true, \"step160_output_table_integrity_audit\": true, \"step160_reproducibility_signature\": true}",
+      "passed": true
+    },
+    {
+      "key": "native_demo_execution",
+      "message": "{\"amr_surveillance\": \"review\", \"antibody_biologics\": \"review\", \"autonomous_lab_planner\": \"review\", \"background_job_engine\": \"review\"}",
+      "passed": true
+    },
+    {
+      "key": "native_assurance_outputs",
+      "message": "{\"amr_surveillance\": [\"step160_input_integrity_audit\", \"step160_output_integrity_audit\", \"step160_reproducibility_manifest\"], \"antibody_biologics\": [\"step160_input_integrity_audit\", \"step160_output_integrity_audit\", \"step160_reproducibility_manifest\"], \"autonomous_lab_planner\": [\"step160_input_integrity_audit\", \"step160_output_integrity_audit\", \"step160_reproducibility_manifest\"], \"background_job_engine\": [\"step160_input_integrity_audit\", \"step160_output_integrity_audit\", \"step160_reproducibility_manifest\"]}",
+      "passed": true
+    }
+  ],
+  "failed": 0,
+  "module_statuses": {
+    "amr_surveillance": "review",
+    "antibody_biologics": "review",
+    "autonomous_lab_planner": "review",
+    "background_job_engine": "review"
+  },
+  "modules_executed": 4,
+  "passed": true,
+  "quality_summary": {
+    "external_evidence_complete": 0,
+    "external_release_eligible": 0,
+    "internal_10_of_10": 80,
+    "modules": 80,
+    "reference_complete": 0,
+    "schema": "biointel.step160.portfolio-quality-summary.v1",
+    "score_scope": "10/10 is an internal engineering/module quality score. It never implies independent scientific, clinical or regulatory validation.",
+    "specialist_runtime_complete": 39
+  },
+  "schema": "biointel.step160.installation-validation.v1",
+  "step": 160
+}

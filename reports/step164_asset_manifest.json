@@ -1,0 +1,2758 @@
+{
+  "engines": 53,
+  "files": [
+    {
+      "path": "data/step164/engine_provisioning/amrfinderplus.json",
+      "sha256": "6fe0000c0f5d7ec4d83a165248f8d4923b6369c82a53235b4b77187ad824211d",
+      "size": 1251
+    },
+    {
+      "path": "data/step164/engine_provisioning/anarci.json",
+      "sha256": "0466edac68cb0fadaabdd5751a4d280c3d7c2c8265c42590f72664c088b76ff5",
+      "size": 1287
+    },
+    {
+      "path": "data/step164/engine_provisioning/bcftools.json",
+      "sha256": "b82d405a8367ed1bd1df80df93a7a951b32d530685dfc879498c1ba8f6af821f",
+      "size": 1465
+    },
+    {
+      "path": "data/step164/engine_provisioning/blastn.json",
+      "sha256": "a0dfcf2906e626d66ca92976450cd656ba1f003eb8307eb310ac7906148a88a7",
+      "size": 1232
+    },
+    {
+      "path": "data/step164/engine_provisioning/bowtie.json",
+      "sha256": "961fbb5c0510c70936125092472ba8396d71b9a4a1e278f7d292ae1596674894",
+      "size": 1236
+    },
+    {
+      "path": "data/step164/engine_provisioning/bracken.json",
+      "sha256": "1e27784e503f15a5955c6189a15798f590a842cb199d3e153ef2e5c85b9382b9",
+      "size": 1293
+    },
+    {
+      "path": "data/step164/engine_provisioning/busco.json",
+      "sha256": "e15a5bf3527a54db17a729390ca72b1baa530807cb6c45dac52cfdccfe7a36dd",
+      "size": 1228
+    },
+    {
+      "path": "data/step164/engine_provisioning/bwa.json",
+      "sha256": "3b0b254bcf46012c859626e85b52108f8d2021a356287f06d06fb8d04ae15096",
+      "size": 1226
+    },
+    {
+      "path": "data/step164/engine_provisioning/cellpose.json",
+      "sha256": "e5dfdb4b7c17a87ef8838c9b82fdc461d92f19b12f18df53cf7be8d527662ecc",
+      "size": 1405
+    },
+    {
+      "path": "data/step164/engine_provisioning/cellrank.json",
+      "sha256": "910f3d797bd2e0b5c558e3d8085cbec49673a68a59665db9069b0f264e5f12b8",
+      "size": 1359
+    },
+    {
+      "path": "data/step164/engine_provisioning/colabfold.json",
+      "sha256": "8d4a510c77d42517f6b305d5d084c92b2140fc1d224f4f131be84a863d2d7208",
+      "size": 1260
+    },
+    {
+      "path": "data/step164/engine_provisioning/comet.json",
+      "sha256": "75299f5374fde44ad7c5fff5f65445cc214e7587e050c791490a7c6d7e5b9d9a",
+      "size": 1235
+    },
+    {
+      "path": "data/step164/engine_provisioning/deeptools.json",
+      "sha256": "d3ec10ee3449d229adf09255b512471278a8a98ffdcd3964ec7884f6b4859c5f",
+      "size": 1250
+    },
+    {
+      "path": "data/step164/engine_provisioning/dorado.json",
+      "sha256": "ffd63e5f739b98e9c6762275f3b2201a296b5a40a0b7f36e22b17f7fd2ea6cfb",
+      "size": 1224
+    },
+    {
+      "path": "data/step164/engine_provisioning/expansionhunter.json",
+      "sha256": "54db05c48f884bc2d8909fb737b2935e21ea0bafa453c27a859e8d750f832344",
+      "size": 1284
+    },
+    {
+      "path": "data/step164/engine_provisioning/flye.json",
+      "sha256": "e9199e206f3cab734497445daef3e8ba03d6d07e3769e0e9c1b216c8e9c0b5f1",
+      "size": 1225
+    },
+    {
+      "path": "data/step164/engine_provisioning/graphaligner.json",
+      "sha256": "6b2de3ae2152e4063198a2321da7306494c5b71a33e1ea5cb095c9afeb113052",
+      "size": 1253
+    },
+    {
+      "path": "data/step164/engine_provisioning/gromacs.json",
+      "sha256": "b83ce0d95312334567c050d89f37d67614c7db718f063d923b80a3be3d19dfce",
+      "size": 1276
+    },
+    {
+      "path": "data/step164/engine_provisioning/hifiasm.json",
+      "sha256": "9a065c09dd88e2645d3e183e2d2610fdcb366f9e9e8f33e32047b1f00683b82f",
+      "size": 1237
+    },
+    {
+      "path": "data/step164/engine_provisioning/humann.json",
+      "sha256": "9672762d32fb7e783cae5d5a902865fbbea861be7bebcf6cde2a83fba32779fb",
+      "size": 1289
+    },
+    {
+      "path": "data/step164/engine_provisioning/igblast.json",
+      "sha256": "97e9ee8b8b50ce2fbbbd9578bcc1a177a1233e30f92fbfb638eb8486a5e54142",
+      "size": 1271
+    },
+    {
+      "path": "data/step164/engine_provisioning/iqtree.json",
+      "sha256": "fd87be0eeefaa647ad5a197044083546b8c89943e2f32bbbb96ab1a8028ff570",
+      "size": 1267
+    },
+    {
+      "path": "data/step164/engine_provisioning/kraken2.json",
+      "sha256": "241f57904d5c7b58d7cb5fdde82ef04334d20b626c69bbf7d858608639cc7f64",
+      "size": 1318
+    },
+    {
+      "path": "data/step164/engine_provisioning/llama-cpp.json",
+      "sha256": "44536ec706ae7bcfdbaacf03c0d2fb2fd32030b5d5ab2c4eb0f09dc803311c24",
+      "size": 1244
+    },
+    {
+      "path": "data/step164/engine_provisioning/macs2.json",
+      "sha256": "72877b13610b5923c0403a795568c4d4c00687db0e5fe2dcbcb50e71ba8e25f4",
+      "size": 1232
+    },
+    {
+      "path": "data/step164/engine_provisioning/mafft.json",
+      "sha256": "d6569b8197bfbd358a91f6d73e2b56f73bd8b77c67b3db82d7c27fa5f7c2e81d",
+      "size": 1289
+    },
+    {
+      "path": "data/step164/engine_provisioning/merqury.json",
+      "sha256": "59977c60a877bd6afd1bb2ce360409b40251c8f1fb3c6122d71b8a76ee205be9",
+      "size": 1240
+    },
+    {
+      "path": "data/step164/engine_provisioning/minigraph.json",
+      "sha256": "4df73eb243a94b55a368a6fb3778057f59d15d61f3e5248e951d6348646bffe7",
+      "size": 1278
+    },
+    {
+      "path": "data/step164/engine_provisioning/minimap2.json",
+      "sha256": "b484c35dade979b755da5fdf93964af9e90e4e4900ccb5b07f4b86c52565d9c2",
+      "size": 1306
+    },
+    {
+      "path": "data/step164/engine_provisioning/modkit.json",
+      "sha256": "307e292341460031c324e80351a536ceab5d3d3a50cd88525bbbf402f0c1fede",
+      "size": 1259
+    },
+    {
+      "path": "data/step164/engine_provisioning/msgfplus.json",
+      "sha256": "3eecb9514b74a151cbb01b5968cc516e923d161beb913597cb7fd3e34b911e22",
+      "size": 1245
+    },
+    {
+      "path": "data/step164/engine_provisioning/netmhciipan.json",
+      "sha256": "fa3fe1129be16566afa8be218286be340651029145803125325381b2306d7e7b",
+      "size": 1226
+    },
+    {
+      "path": "data/step164/engine_provisioning/netmhcpan.json",
+      "sha256": "ab15f669f8e6cb107a093eeddb8a114bb44a6273446abbc20215129e15c73386",
+      "size": 1220
+    },
+    {
+      "path": "data/step164/engine_provisioning/odgi.json",
+      "sha256": "776138fc881abc3283a57035f055c04a30669e47367dae27d6d41f77e8847a86",
+      "size": 1258
+    },
+    {
+      "path": "data/step164/engine_provisioning/openmm.json",
+      "sha256": "2a7468a4efad060f092e952f4e21921644de62dcf8e4552f04619fd6cb70af3c",
+      "size": 1362
+    },
+    {
+      "path": "data/step164/engine_provisioning/openms.json",
+      "sha256": "bf362360783e33f097aa1ab81c67e3b462777d6e73bf1f463db3ca335e828f19",
+      "size": 1279
+    },
+    {
+      "path": "data/step164/engine_provisioning/openslide.json",
+      "sha256": "8cfbbf9b33374f7a17d4786f51c90e0877ba514a88a750c2bf2c6e5d0ef1d1c7",
+      "size": 1445
+    },
+    {
+      "path": "data/step164/engine_provisioning/plink2.json",
+      "sha256": "403ff6977e7588e044d557306f455119b1bb525c237fb8c5b33f633d8c1c6341",
+      "size": 1239
+    },
+    {
+      "path": "data/step164/engine_provisioning/proteinmpnn.json",
+      "sha256": "ae3609e6b47490cddec2acc7f5254d6caec4ef9ecbda577f374a68158e1c3e09",
+      "size": 1290
+    },
+    {
+      "path": "data/step164/engine_provisioning/regenie.json",
+      "sha256": "2c735ff053f797f06a013fed37cfc7dc8aad8afbc7f265272ac2eb6b9b521d21",
+      "size": 1242
+    },
+    {
+      "path": "data/step164/engine_provisioning/resfinder.json",
+      "sha256": "8ca2d20406d2f9ab0b03651969382efd3ba0ea86849378a6665a2d928946014a",
+      "size": 1241
+    },
+    {
+      "path": "data/step164/engine_provisioning/rfdiffusion.json",
+      "sha256": "5bc9e71a7c0520021681c093147c853d0a72c7d5b6c9e2b632f5ef91dcc5c1c5",
+      "size": 1257
+    },
+    {
+      "path": "data/step164/engine_provisioning/saige.json",
+      "sha256": "87fd0fa48bb1505405d4543b7b6b12c9f315b47aec6a8d16b07ac06f52e66558",
+      "size": 1250
+    },
+    {
+      "path": "data/step164/engine_provisioning/samtools.json",
+      "sha256": "a8c8f433128fba444ba7852f0ed61a4e36f9618e047b47f7b0ba43e06925c478",
+      "size": 1339
+    },
+    {
+      "path": "data/step164/engine_provisioning/scanpy.json",
+      "sha256": "3c48ee5eeb68669543e224992d466067ba8c4f0eb53be1e2d31e5e3eda60bb2e",
+      "size": 1401
+    },
+    {
+      "path": "data/step164/engine_provisioning/scvelo.json",
+      "sha256": "3fffb4383d5d1248ff620074d69327fcc72526ded4b199a5bfc7cce7be29c484",
+      "size": 1347
+    },
+    {
+      "path": "data/step164/engine_provisioning/sniffles.json",
+      "sha256": "a5bbc92a90da49285a1efeca1eb2953ff2e3eef8330c667f9a44ab47caaa2bc0",
+      "size": 1258
+    },
+    {
+      "path": "data/step164/engine_provisioning/star.json",
+      "sha256": "81b71ed755846f4cfb3ecc639b19a242bd33513cae541cd7aa2a74292592cbfe",
+      "size": 1230
+    },
+    {
+      "path": "data/step164/engine_provisioning/stardist.json",
+      "sha256": "45b2b148ea91f88c68fc7e6cdd8acb1b0c85e783722a1c88bf58f5cdb794135c",
+      "size": 1378
+    },
+    {
+      "path": "data/step164/engine_provisioning/vep.json",
+      "sha256": "7cdb9dd8edef58f4c6d6b4647e4d5fd2df1fe4d1b27c086566a4da691d399200",
+      "size": 1300
+    },
+    {
+      "path": "data/step164/engine_provisioning/vg.json",
+      "sha256": "d26352294dc750a08e3ce7b198100f518f21130e7c08dc80f8b0971e0bdc05a5",
+      "size": 1258
+    },
+    {
+      "path": "data/step164/engine_provisioning/vina.json",
+      "sha256": "4cf47bca0592599ffa56428407ee2cf07e3cc422effcd46949888563a1fdf50f",
+      "size": 1308
+    },
+    {
+      "path": "data/step164/engine_provisioning/whatshap.json",
+      "sha256": "0b71eb033aec3f671da1d9c95e0b64187df674af82c86c904ada3de404a443af",
+      "size": 1325
+    },
+    {
+      "path": "data/step164/external_evidence_templates/amr_surveillance.json",
+      "sha256": "8665c06706587dd64796096819f0a66cd489372389f9894eacdc6fda9d4b1f14",
+      "size": 613
+    },
+    {
+      "path": "data/step164/external_evidence_templates/antibody_biologics.json",
+      "sha256": "98dca616bcea733955f60f6cfa9d50cc8ce370816d7941a6074f3a8663876cfd",
+      "size": 615
+    },
+    {
+      "path": "data/step164/external_evidence_templates/autonomous_lab_planner.json",
+      "sha256": "65a8a1ced9ed059f2902d46e797edcca72033ff2de8ea91650d10d51a8bdb31b",
+      "size": 619
+    },
+    {
+      "path": "data/step164/external_evidence_templates/background_job_engine.json",
+      "sha256": "2b12779b9a10f35a51a4e841de7215f9f86c4e928757b8a9a1eb6230ed70d093",
+      "size": 618
+    },
+    {
+      "path": "data/step164/external_evidence_templates/background_jobs_core.json",
+      "sha256": "58f59c1f1ec3ad163c6661f3cfaacdd77c59bb59213a650a4fb75bad41a69e90",
+      "size": 617
+    },
+    {
+      "path": "data/step164/external_evidence_templates/benchmark_validation_v2.json",
+      "sha256": "3882fd6868e4ae92f9398d590494bbd60020629b8d490bd8f9a115b65f5c7ad6",
+      "size": 620
+    },
+    {
+      "path": "data/step164/external_evidence_templates/bioimage_microscopy.json",
+      "sha256": "e5252111bbfd2439981ba95e73609083413634379876a77ab777a9c82863b538",
+      "size": 616
+    },
+    {
+      "path": "data/step164/external_evidence_templates/biomedical_foundation_model_hub.json",
+      "sha256": "b2e107988829af50c6921854941a418e8888fa9b97890175f5eef584bf1c44b6",
+      "size": 628
+    },
+    {
+      "path": "data/step164/external_evidence_templates/bioprocess_fermentation.json",
+      "sha256": "943a14840c36b337978e3bd844cd1d495a05fbd39c8ec27d68a7fce09419fa1d",
+      "size": 620
+    },
+    {
+      "path": "data/step164/external_evidence_templates/cancer_genomics_core.json",
+      "sha256": "cfadc8f46a82ce5df3461fb6615cbd6a9e5a015202dc43e1ae99727ac4a2e283",
+      "size": 617
+    },
+    {
+      "path": "data/step164/external_evidence_templates/causal_perturbation.json",
+      "sha256": "618abbc16756cd5e38b7e6d2f178fe20574ac4911ca657f2796f73ea1a26e371",
+      "size": 616
+    },
+    {
+      "path": "data/step164/external_evidence_templates/cell_atlas_mapping.json",
+      "sha256": "674f1dec44e4d1cba1e516ce6b6bc58929710f11488d0dc68fcbca6420761cf5",
+      "size": 615
+    },
+    {
+      "path": "data/step164/external_evidence_templates/cell_therapy_cart.json",
+      "sha256": "09fef03d58430543e94e460afad6b00dd987234e2a99f88502e5767d6e4caaa9",
+      "size": 614
+    },
+    {
+      "path": "data/step164/external_evidence_templates/clinical_biomarker_survival.json",
+      "sha256": "fb3b31ff3ff7527b921a73773be3ee958d7ad108bac335bac42cfd6fb0399776",
+      "size": 624
+    },
+    {
+      "path": "data/step164/external_evidence_templates/clinical_pharma_core.json",
+      "sha256": "2e3fd8d7a24a667913ac13af3eb33e104d7aa60dc83cf6fdaf23b9befb30f3ed",
+      "size": 617
+    },
+    {
+      "path": "data/step164/external_evidence_templates/clinical_trial_biomarker.json",
+      "sha256": "5733472dd1f1672c92ddcd86a6aa50be9b3f45b52cb885f5cfb2c19847d3471b",
+      "size": 621
+    },
+    {
+      "path": "data/step164/external_evidence_templates/collaboration_review_v2.json",
+      "sha256": "0a752b09cf78798031fab9165f0586c327bbe633f3f6a1c66fe4f13702b0b8be",
+      "size": 620
+    },
+    {
+      "path": "data/step164/external_evidence_templates/cross_module_workspace.json",
+      "sha256": "f96b18c9d80372751f3961be8925dd10f77750af60fd8628eefbe542ee496959",
+      "size": 619
+    },
+    {
+      "path": "data/step164/external_evidence_templates/data_lakehouse_v2.json",
+      "sha256": "3f06b6bb038e28a81b9334691d061fead95eedfde8a94810161197a2092e13a9",
+      "size": 614
+    },
+    {
+      "path": "data/step164/external_evidence_templates/digital_pathology_foundation.json",
+      "sha256": "f27f9912df6c8699f956cd7baac7f154d88d49560abc9d4999ad923674d231ac",
+      "size": 625
+    },
+    {
+      "path": "data/step164/external_evidence_templates/docking_dynamics.json",
+      "sha256": "c30ce7ced7f4acb8d34570111fb55a33b5e443ac584a530939b52995658433c4",
+      "size": 613
+    },
+    {
+      "path": "data/step164/external_evidence_templates/document_intelligence_core.json",
+      "sha256": "da48e6068bff01497dc1a50a04bf604d61b1e1e27f07b093b4fe2c401babc69e",
+      "size": 623
+    },
+    {
+      "path": "data/step164/external_evidence_templates/enzyme_pathway_design.json",
+      "sha256": "5b3bcb7bfe28b20feff6ecbcfb2d3e0a6b878d54391f958d86bada144de773f8",
+      "size": 618
+    },
+    {
+      "path": "data/step164/external_evidence_templates/epigenomics_chromatin.json",
+      "sha256": "da4a5978abd636df165dfa1dfca79c315c1110fa27663daea1fffa6bc07b284b",
+      "size": 618
+    },
+    {
+      "path": "data/step164/external_evidence_templates/epitranscriptomics.json",
+      "sha256": "d2bfee82b289012d4a16c069545f6d63fec597981c67761c03b00002087f668b",
+      "size": 615
+    },
+    {
+      "path": "data/step164/external_evidence_templates/evidence_citation_engine.json",
+      "sha256": "cd8ff8d97ab80809a4541f8b1ea00ac61e7fa2b022e69e79bb3585e67b117302",
+      "size": 621
+    },
+    {
+      "path": "data/step164/external_evidence_templates/explainable_ai_assurance.json",
+      "sha256": "c33e0fd300c5c550267c42f2dacda12d331247057793765047501db554ebb619",
+      "size": 621
+    },
+    {
+      "path": "data/step164/external_evidence_templates/federated_biomedical_ai.json",
+      "sha256": "36a4b1a0b51392cbf2381c989e4133a04dc509bd1ad34a4ff5c4069a1a2664cf",
+      "size": 620
+    },
+    {
+      "path": "data/step164/external_evidence_templates/flow_cytometry.json",
+      "sha256": "7c38c430ef1f798dd24cc535022bf3012a7e22914d1bf3466d549392e09117c4",
+      "size": 611
+    },
+    {
+      "path": "data/step164/external_evidence_templates/gene_therapy_vector.json",
+      "sha256": "013702aae6bdf051fdbb076105bc32916403fb28cd16d5e8a34209f04bf82de7",
+      "size": 616
+    },
+    {
+      "path": "data/step164/external_evidence_templates/genome_editing_safety.json",
+      "sha256": "c0f3003ede86a016da194061cc62580fb64690c5ca0de1ba9c781a44da6aae4f",
+      "size": 618
+    },
+    {
+      "path": "data/step164/external_evidence_templates/glycomics_glycoproteomics.json",
+      "sha256": "ab7ca2faf6068b9f35dc6e47ad8ba88b942e3eda2fe1a593d9054a958c705eff",
+      "size": 622
+    },
+    {
+      "path": "data/step164/external_evidence_templates/host_pathogen_interaction.json",
+      "sha256": "7712e96058db8f5a2c20bd25fc4b45ba5b904d068b5a329d8a74bcdf00e4310d",
+      "size": 622
+    },
+    {
+      "path": "data/step164/external_evidence_templates/immunoinformatics_vaccine.json",
+      "sha256": "ed8a5fd058cc0a59c4314148e31afb4959171a072bf93b9a9a66e1d9ff194066",
+      "size": 622
+    },
+    {
+      "path": "data/step164/external_evidence_templates/knowledge_graph_core.json",
+      "sha256": "5d021737639cb37052dbdd1b8ade35f969917d615839bc35bed2a068347dbf09",
+      "size": 617
+    },
+    {
+      "path": "data/step164/external_evidence_templates/long_read_core.json",
+      "sha256": "96d3251269e0dcb2bab65706faae45871939f6c4b920091802e61d7e7d999014",
+      "size": 611
+    },
+    {
+      "path": "data/step164/external_evidence_templates/long_read_epigenome.json",
+      "sha256": "ff2cf358001d7f03c620324e63a444416207a3f824c2322db29767a46ffff4d0",
+      "size": 616
+    },
+    {
+      "path": "data/step164/external_evidence_templates/longitudinal_multiomics.json",
+      "sha256": "9d5475b8e34f3ff73455757785dae9fcf41399689299f16eb21d12a911b36da2",
+      "size": 620
+    },
+    {
+      "path": "data/step164/external_evidence_templates/metabolomics_lipidomics.json",
+      "sha256": "16c563751b63d13289954831d0fa66d3b919dbb071f29edc44aad662f333dd52",
+      "size": 620
+    },
+    {
+      "path": "data/step164/external_evidence_templates/metagenomics_core.json",
+      "sha256": "53c64d4bb443b1abddd2c35eb05921126eff67bc8ae1895e9c4e5f36687d5d7a",
+      "size": 614
+    },
+    {
+      "path": "data/step164/external_evidence_templates/model_registry_v2.json",
+      "sha256": "fb273dc3d9d8bbceb7b7cd5e0a4f6b28da275a2e0be39494ddd63a70336f9401",
+      "size": 614
+    },
+    {
+      "path": "data/step164/external_evidence_templates/multiomics_biomarker_core.json",
+      "sha256": "d3b784796000a2346792684eea583e2f6524426817fb110c806759ab043f3118",
+      "size": 622
+    },
+    {
+      "path": "data/step164/external_evidence_templates/multiomics_harmonization.json",
+      "sha256": "27925836dc2796fdbe21772c7e79bcc293a9a2f0ae4aeefd5eea0f440f0b9fbe",
+      "size": 621
+    },
+    {
+      "path": "data/step164/external_evidence_templates/offline_copilot_core.json",
+      "sha256": "7075ab8459e1a91cf661aab3c3dc9fd5126ed38ef7b5092129f0a133367e4c0a",
+      "size": 617
+    },
+    {
+      "path": "data/step164/external_evidence_templates/offline_scientific_copilot_v2.json",
+      "sha256": "64ac4482e03aad753c90bc0c5d48274e8f74aefa86bb1407837f5d1482378f22",
+      "size": 626
+    },
+    {
+      "path": "data/step164/external_evidence_templates/one_health_environmental.json",
+      "sha256": "cee052a8e0cc4f54f3cddbd60b20001307fd9a5a081cd973ad697b4860bd9f7a",
+      "size": 621
+    },
+    {
+      "path": "data/step164/external_evidence_templates/organoid_3d.json",
+      "sha256": "9c8c69a88f474444def38037b4386e4fc7ccdaf8aa5beedccbf9086ee94cb0be",
+      "size": 608
+    },
+    {
+      "path": "data/step164/external_evidence_templates/pangenome_core.json",
+      "sha256": "ce1a8e1157790e838c04b8137352fa70fdb9700bf758ea5797f25b89f029a4fe",
+      "size": 611
+    },
+    {
+      "path": "data/step164/external_evidence_templates/pangenome_population_medicine.json",
+      "sha256": "9325cf79d892b027cd34024f07530198902a0606aa3488d4733c0930b1cbf0eb",
+      "size": 626
+    },
+    {
+      "path": "data/step164/external_evidence_templates/pathogen_outbreak_core.json",
+      "sha256": "b18abe7090c51c7d5cf18371d3cf3f27acb4c86b1d366ab44566fa56135fa861",
+      "size": 619
+    },
+    {
+      "path": "data/step164/external_evidence_templates/pharmacogenomics.json",
+      "sha256": "a313d4ae71c5e8d68159e88be769a5048aa0c17148e61ea90a2b3308eb227587",
+      "size": 613
+    },
+    {
+      "path": "data/step164/external_evidence_templates/pharmacovigilance_intelligence.json",
+      "sha256": "58c0179d3e531e2be10b022960f9f6e4020180c904af6dccd4042d9edea4e02e",
+      "size": 627
+    },
+    {
+      "path": "data/step164/external_evidence_templates/phenotypic_screening.json",
+      "sha256": "673c5c7f9704a8e9cdf19b49604cb41e8b70a47ca529d66d91f8e7226a60ce1d",
+      "size": 617
+    },
+    {
+      "path": "data/step164/external_evidence_templates/plugin_marketplace_core.json",
+      "sha256": "138c1c536a81eb646cfd90bab03873832cff4524762df5155b76743aa32c12ab",
+      "size": 620
+    },
+    {
+      "path": "data/step164/external_evidence_templates/plugin_marketplace_v2.json",
+      "sha256": "de07d02ae6d70b50343c000f05fe145e8106289d5d15b63cc140d602e994206d",
+      "size": 618
+    },
+    {
+      "path": "data/step164/external_evidence_templates/population_gwas.json",
+      "sha256": "f68f4c494fc67b530bac49c544a2796b978b89598cb14a4e0115aad426a940e8",
+      "size": 612
+    },
+    {
+      "path": "data/step164/external_evidence_templates/protein_language_design.json",
+      "sha256": "79e6e06f552a190508f2edca36e41b0bfac2c51a277d7ba684faaa0c32f8c2ee",
+      "size": 620
+    },
+    {
+      "path": "data/step164/external_evidence_templates/protein_ligand_codesign.json",
+      "sha256": "907972e34e43e4071114323ff793634f947ce02181bc06db08b0f09f57fac822",
+      "size": 620
+    },
+    {
+      "path": "data/step164/external_evidence_templates/proteogenomics_neoantigen.json",
+      "sha256": "019a5ca4139dc31893f1a09dc5ffed8e43f8c55ffaa1b4f75d877895803a6908",
+      "size": 622
+    },
+    {
+      "path": "data/step164/external_evidence_templates/provenance_ledger_v2.json",
+      "sha256": "358d0890c26101277a68760f619cfe3175ef7ec53d1f6ba222ad046fd6c4e57d",
+      "size": 617
+    },
+    {
+      "path": "data/step164/external_evidence_templates/rare_variant_family.json",
+      "sha256": "c40ae09da25d5c67e85b7bbd7cd6f01c4b49261ee72726067f304c0730e6faf2",
+      "size": 616
+    },
+    {
+      "path": "data/step164/external_evidence_templates/reference_lifecycle_v2.json",
+      "sha256": "f5f686566c808b325ae4186eec431dd6b522f0acb9d55521bdf4f51c5cb3c9b8",
+      "size": 619
+    },
+    {
+      "path": "data/step164/external_evidence_templates/rna_isoform_splicing.json",
+      "sha256": "25e4493d0519b7aa4da19dc37f860d24704bedb9b2b72012383a44180540226d",
+      "size": 617
+    },
+    {
+      "path": "data/step164/external_evidence_templates/single_cell_core.json",
+      "sha256": "6a9efc217eb2a3bf826a29a3810590a29d77b97ea0f97061797e27cedb814b1e",
+      "size": 613
+    },
+    {
+      "path": "data/step164/external_evidence_templates/single_cell_long_read_isoforms.json",
+      "sha256": "adf6db86ec5d54a8fb4c063f331f64e15f0f6781a1555e532d0e605992235b70",
+      "size": 627
+    },
+    {
+      "path": "data/step164/external_evidence_templates/single_cell_trajectory.json",
+      "sha256": "22a47e02cb2961ac0c9a0116285ff2bbcff922754b9c6cc36efd05fc75971cc7",
+      "size": 619
+    },
+    {
+      "path": "data/step164/external_evidence_templates/spatial_medicine_tme.json",
+      "sha256": "3e5dbb0d560dc550b3fbe2a74c7e22bf2cea544361f68defa76ffd31f034914d",
+      "size": 617
+    },
+    {
+      "path": "data/step164/external_evidence_templates/spatial_omics_pathology.json",
+      "sha256": "3db54ef4f75c866eefc76640bb9d494a85274d2cfdab9323bd790a16e7b4ff2b",
+      "size": 620
+    },
+    {
+      "path": "data/step164/external_evidence_templates/store_readiness_core.json",
+      "sha256": "ebd11e6591af1093836b2b614a18d2910ce9490ba41819f38500786989970ab4",
+      "size": 617
+    },
+    {
+      "path": "data/step164/external_evidence_templates/strain_microbiome.json",
+      "sha256": "8922c2e7eaf23e12877d804b5e7df73037214144de86a315e7f5b74f2b068271",
+      "size": 614
+    },
+    {
+      "path": "data/step164/external_evidence_templates/structural_bioinformatics_core.json",
+      "sha256": "59ab907d31405a9a662cafe6f8b962ffe47d232381842f144fa25b0b0e42a56e",
+      "size": 627
+    },
+    {
+      "path": "data/step164/external_evidence_templates/structural_variant_repeat.json",
+      "sha256": "9d1d7972e59cdaf9f2040a711ecd26ec058f30f3fbea3e1e4a47a42042191640",
+      "size": 622
+    },
+    {
+      "path": "data/step164/external_evidence_templates/synthetic_biology_core.json",
+      "sha256": "396f99c06334a8e69515760bc4a7f01c6a31f0d8ed0b64dea63a176b6fa51181",
+      "size": 619
+    },
+    {
+      "path": "data/step164/external_evidence_templates/synthetic_cohort_trial.json",
+      "sha256": "14f5e90b8818e2abeb7d37d3d330c057f4b9eb1ee774e7b12ef4db7289f7ac7b",
+      "size": 619
+    },
+    {
+      "path": "data/step164/external_evidence_templates/synthetic_data_privacy.json",
+      "sha256": "eab8dfbd01d62987472cacd7aee0cf7c7c3106d8ca2392f47089b9c4ba5c8a48",
+      "size": 619
+    },
+    {
+      "path": "data/step164/external_evidence_templates/unified_report_builder.json",
+      "sha256": "d6b44c33561d7ea08e03d9782ee59140541ab2e2ca2d77fe94f12a358f54c1c6",
+      "size": 619
+    },
+    {
+      "path": "data/step164/external_evidence_templates/universal_file_inspector.json",
+      "sha256": "dec9f983a6a4084ae35568cd570a8f81e835ce87e504f73072630eaee2e15a0c",
+      "size": 621
+    },
+    {
+      "path": "data/step164/external_evidence_templates/virology_evolution.json",
+      "sha256": "17f5def8861a24188f2dfcd35c0ee1974b4e79cbbd3b410a84c4885d7519d7a8",
+      "size": 615
+    },
+    {
+      "path": "data/step164/external_evidence_templates/workflow_builder_core.json",
+      "sha256": "acfad3f543dc6554cc6493eff5a358a9ccdab4e24799a7e60c54530b4d21af3d",
+      "size": 618
+    },
+    {
+      "path": "data/step164/external_evidence_templates/workflow_builder_v2.json",
+      "sha256": "7ece078f8353bff1ee9dd91e77648f4e1aa8cead9f98a82c83155273aabd7bd1",
+      "size": 616
+    },
+    {
+      "path": "data/step164/model_intake_templates/amr_surveillance.json",
+      "sha256": "9d42be77f9891b72c466a6f5a1292bacfe72a494a147e762cf2482e9a50dc220",
+      "size": 639
+    },
+    {
+      "path": "data/step164/model_intake_templates/antibody_biologics.json",
+      "sha256": "e5f6132b6518dcccb52715dc8026ec8c0235fb6e69a3d8b2a3135a77ccdbf7f0",
+      "size": 641
+    },
+    {
+      "path": "data/step164/model_intake_templates/autonomous_lab_planner.json",
+      "sha256": "800b4e5078d9234dff86182f7c8345624bce8591c34bf45c02964c76002ac339",
+      "size": 645
+    },
+    {
+      "path": "data/step164/model_intake_templates/background_job_engine.json",
+      "sha256": "0422a33d3d8b68aafb272c99529874a6b9fde330544a1b2bbb3375631845dfe4",
+      "size": 644
+    },
+    {
+      "path": "data/step164/model_intake_templates/background_jobs_core.json",
+      "sha256": "2b0d34a7438e911a6db0b8dd651d46dc2bd4388a9b25e69469b3e25210ae64cd",
+      "size": 643
+    },
+    {
+      "path": "data/step164/model_intake_templates/benchmark_validation_v2.json",
+      "sha256": "fd4feba22ed6def76f401e3a0bff3138677fee8b099d95de75e5dc51b794c1dd",
+      "size": 646
+    },
+    {
+      "path": "data/step164/model_intake_templates/bioimage_microscopy.json",
+      "sha256": "300452a154e5ab5b2c53a89de36b9a029d4bcf457db3c095292bd9fe4866d17d",
+      "size": 642
+    },
+    {
+      "path": "data/step164/model_intake_templates/biomedical_foundation_model_hub.json",
+      "sha256": "1cc73a70b762438c68e0b9af811dea1aee413c02d3864de470b3c9f47cc405ee",
+      "size": 654
+    },
+    {
+      "path": "data/step164/model_intake_templates/bioprocess_fermentation.json",
+      "sha256": "3bc0a2eecf2eab2a41e23a0cbefc800fe383989770550424f3ce59076662c50c",
+      "size": 646
+    },
+    {
+      "path": "data/step164/model_intake_templates/cancer_genomics_core.json",
+      "sha256": "39bcf72700cf9ac455423a0a0a0d651bd970733bdd40b248fd0e97dc2eef21dd",
+      "size": 643
+    },
+    {
+      "path": "data/step164/model_intake_templates/causal_perturbation.json",
+      "sha256": "41e3f79b69a98e83d0aa64c96ffd43dfcc05e3242647e176c4b27be734aa4aff",
+      "size": 642
+    },
+    {
+      "path": "data/step164/model_intake_templates/cell_atlas_mapping.json",
+      "sha256": "44e54a73912125f5ba9e31d0c9488dc1709c4281a893472d67ea2792a06b5a37",
+      "size": 641
+    },
+    {
+      "path": "data/step164/model_intake_templates/cell_therapy_cart.json",
+      "sha256": "5a28ecc90e5320ad344b0ff201f8e2dd0393aa9a0fdabf250fd2d52fd80ae219",
+      "size": 640
+    },
+    {
+      "path": "data/step164/model_intake_templates/clinical_biomarker_survival.json",
+      "sha256": "f63b7b40896d6633cd21b958a91d0e1e7e53ac83391ece0d5e5c1a208e910f59",
+      "size": 650
+    },
+    {
+      "path": "data/step164/model_intake_templates/clinical_pharma_core.json",
+      "sha256": "a9096a79e1efa2c977d234bdd0cfc51bc447b10be15652f39fac064eb10dbcbb",
+      "size": 643
+    },
+    {
+      "path": "data/step164/model_intake_templates/clinical_trial_biomarker.json",
+      "sha256": "50a3746c9bc4b410897b789dfff7bbcb9f4033027190107025cec88665033865",
+      "size": 647
+    },
+    {
+      "path": "data/step164/model_intake_templates/collaboration_review_v2.json",
+      "sha256": "9781c0f9b0f760d970c7d81ecc24b107c0f8e68d926e9a988ee14c7ad518d1e9",
+      "size": 646
+    },
+    {
+      "path": "data/step164/model_intake_templates/cross_module_workspace.json",
+      "sha256": "dc12ccfefd243a13106c03ec4897b033d917f1edf9d1b00bb56f4321903f2168",
+      "size": 645
+    },
+    {
+      "path": "data/step164/model_intake_templates/data_lakehouse_v2.json",
+      "sha256": "4d3226ad884d40bb4542c7c4c52e2f260706af79e65bdd9f4e6b95ca1dc35bb6",
+      "size": 640
+    },
+    {
+      "path": "data/step164/model_intake_templates/digital_pathology_foundation.json",
+      "sha256": "c67828347cfc7d985aeb8f2f11aab9cf19230c9fd70d0f6c016f42266c525754",
+      "size": 651
+    },
+    {
+      "path": "data/step164/model_intake_templates/docking_dynamics.json",
+      "sha256": "ccd27e13bc140af59cdf0537773c2eed455fc06fd2d36a1bc885321c255644c1",
+      "size": 639
+    },
+    {
+      "path": "data/step164/model_intake_templates/document_intelligence_core.json",
+      "sha256": "f0f8a69adc45ddb3b34645f219cbfc8de6fac8b7e927b09f06983125fb109ddf",
+      "size": 649
+    },
+    {
+      "path": "data/step164/model_intake_templates/enzyme_pathway_design.json",
+      "sha256": "39c1c14090a3e3d91a2ec7179811e12bb73f5f50861d62c2634a389ac638b148",
+      "size": 644
+    },
+    {
+      "path": "data/step164/model_intake_templates/epigenomics_chromatin.json",
+      "sha256": "f8894aee656009c737fbcc0be9084945b8383d459694db6f2e54baad943035ea",
+      "size": 644
+    },
+    {
+      "path": "data/step164/model_intake_templates/epitranscriptomics.json",
+      "sha256": "6cd387a1b66c4bdf21263a47939cffd7db4a685e7766ddf65b360094160e2128",
+      "size": 641
+    },
+    {
+      "path": "data/step164/model_intake_templates/evidence_citation_engine.json",
+      "sha256": "6cbb26c0f9e1ec25d2b1774c47837dae7001c51de9e1a2afdd6faf3306a81a77",
+      "size": 647
+    },
+    {
+      "path": "data/step164/model_intake_templates/explainable_ai_assurance.json",
+      "sha256": "2f889cce91739220796abf6193569a244c39fd5b2b66deaa485fa959a14eb5bb",
+      "size": 647
+    },
+    {
+      "path": "data/step164/model_intake_templates/federated_biomedical_ai.json",
+      "sha256": "3ab960cb2a4adde47e29b4ebbd92fb41ac79b5017f6ab3179c9d62a889210d02",
+      "size": 646
+    },
+    {
+      "path": "data/step164/model_intake_templates/flow_cytometry.json",
+      "sha256": "0f21fb4a60c644be83449d04377fc57108708b4d7a1cc6450619e26f0c8a7fd9",
+      "size": 637
+    },
+    {
+      "path": "data/step164/model_intake_templates/gene_therapy_vector.json",
+      "sha256": "bc3074e6ce07878625e4dafa254bf138241e4268eb17ec0acf1ef6321afc28d2",
+      "size": 642
+    },
+    {
+      "path": "data/step164/model_intake_templates/genome_editing_safety.json",
+      "sha256": "39f141ee29ac2faa9760de57edbbd6499249d3db04e311b235a58b5c9c01c1b0",
+      "size": 644
+    },
+    {
+      "path": "data/step164/model_intake_templates/glycomics_glycoproteomics.json",
+      "sha256": "735b1d7f4993c24bbabbf2f98febb2e132c1dc04932eb23ba6a8c1652a8e13b3",
+      "size": 648
+    },
+    {
+      "path": "data/step164/model_intake_templates/host_pathogen_interaction.json",
+      "sha256": "ba626a608525e01c22fd3054b150404e4c90091e4499029d5ae60ebfabcd3ec9",
+      "size": 648
+    },
+    {
+      "path": "data/step164/model_intake_templates/immunoinformatics_vaccine.json",
+      "sha256": "2153f723b8004a93c8652acda636a3b7d0d6e0091db7fec96522b0f1f96901a2",
+      "size": 648
+    },
+    {
+      "path": "data/step164/model_intake_templates/knowledge_graph_core.json",
+      "sha256": "7c28793b32d1271de66fb3e52b5c5c0bcadf0ad4536212fe963e68818b6c3c8e",
+      "size": 643
+    },
+    {
+      "path": "data/step164/model_intake_templates/long_read_core.json",
+      "sha256": "dd7f7d800a3a79217f1a411891d482b918851517cdf320af6f7170189c15e428",
+      "size": 637
+    },
+    {
+      "path": "data/step164/model_intake_templates/long_read_epigenome.json",
+      "sha256": "a250b6110a1a18594bd4ef75b14af959bdca17a15894c58b623d5cca0bd159ea",
+      "size": 642
+    },
+    {
+      "path": "data/step164/model_intake_templates/longitudinal_multiomics.json",
+      "sha256": "b1f2fcfe71a16c58b06454ff695b9cf59127abf268ea1c6e48dae2c137d13434",
+      "size": 646
+    },
+    {
+      "path": "data/step164/model_intake_templates/metabolomics_lipidomics.json",
+      "sha256": "f0e3ca450f2bf8d6560dc7c24a2f843828b927881ca0f224e591dc2d0f0e742c",
+      "size": 646
+    },
+    {
+      "path": "data/step164/model_intake_templates/metagenomics_core.json",
+      "sha256": "fa0a9b172a32bd70db72b96d85a9acf2159064fe9b6c45743255d34cd0b73c40",
+      "size": 640
+    },
+    {
+      "path": "data/step164/model_intake_templates/model_registry_v2.json",
+      "sha256": "c8ae525cfbdbf1c18c5d1901059524ab32e9d7cce750d8cb9292255ea1d724bd",
+      "size": 640
+    },
+    {
+      "path": "data/step164/model_intake_templates/multiomics_biomarker_core.json",
+      "sha256": "7dee59d45b49c9216198f694f459cc721e354c8943e3634921aa93de405d8405",
+      "size": 648
+    },
+    {
+      "path": "data/step164/model_intake_templates/multiomics_harmonization.json",
+      "sha256": "2b5916a14c84782a0f918c05edbe76e54d11b1589eae3beb81e090cb33eb637f",
+      "size": 647
+    },
+    {
+      "path": "data/step164/model_intake_templates/offline_copilot_core.json",
+      "sha256": "676cdaca5cc97f5b705d7327b0ce95f4c253b61bc490a2f36fcb972b48ffcd59",
+      "size": 643
+    },
+    {
+      "path": "data/step164/model_intake_templates/offline_scientific_copilot_v2.json",
+      "sha256": "d5d969bb2d223d5c5984ed3d891a8e6241a3d82f726af771d51bba732d12a459",
+      "size": 652
+    },
+    {
+      "path": "data/step164/model_intake_templates/one_health_environmental.json",
+      "sha256": "e2489846fedb750e6b2e3409595eaacb075ad4893813074284f78d38798b1f84",
+      "size": 647
+    },
+    {
+      "path": "data/step164/model_intake_templates/organoid_3d.json",
+      "sha256": "07b9f52ca7d2164c320a1ed56ae798f9ef3ceef962b75ec2a93e38aee1c12cc1",
+      "size": 634
+    },
+    {
+      "path": "data/step164/model_intake_templates/pangenome_core.json",
+      "sha256": "9b5b53ee9b7bec7c6dd8d6226b78754a7e22c940ffd0fe0ffcd4edb21f3bbc0a",
+      "size": 637
+    },
+    {
+      "path": "data/step164/model_intake_templates/pangenome_population_medicine.json",
+      "sha256": "87afaacc736e59d5b73e9740bafffba92998b8663763028a68551c18cd1266d4",
+      "size": 652
+    },
+    {
+      "path": "data/step164/model_intake_templates/pathogen_outbreak_core.json",
+      "sha256": "aa15c9eb49bad5da33ac4b7e3fd33bb1c105dccee1b9bd1da741f10a4eb088ec",
+      "size": 645
+    },
+    {
+      "path": "data/step164/model_intake_templates/pharmacogenomics.json",
+      "sha256": "a11b32596430e8a65b1bfcff015c28b5f50f0e196e4db147b84c327b51c84e43",
+      "size": 639
+    },
+    {
+      "path": "data/step164/model_intake_templates/pharmacovigilance_intelligence.json",
+      "sha256": "8423e52b6571259c3524aaf4b6aba28599535d694e597d9c0103b477a03bf6d9",
+      "size": 653
+    },
+    {
+      "path": "data/step164/model_intake_templates/phenotypic_screening.json",
+      "sha256": "cbbe26e3acbe304567900bc78d4dd0679a805afb35a629a9b827afbb17bf0974",
+      "size": 643
+    },
+    {
+      "path": "data/step164/model_intake_templates/plugin_marketplace_core.json",
+      "sha256": "48d2b10af13c4ad547dbfb2c22f4d8883469dd5fbaec0d0eca73f1a29f93207f",
+      "size": 646
+    },
+    {
+      "path": "data/step164/model_intake_templates/plugin_marketplace_v2.json",
+      "sha256": "372266d84dbecf370be6781c268ab4f0f6af57af40478580a93171ecb0895f2a",
+      "size": 644
+    },
+    {
+      "path": "data/step164/model_intake_templates/population_gwas.json",
+      "sha256": "e8eb4fda7ad68018ddebd4fe37d86bc4a3be239a874a0c4d6057883e6a8df971",
+      "size": 638
+    },
+    {
+      "path": "data/step164/model_intake_templates/protein_language_design.json",
+      "sha256": "c6cbfd45c28f329e3d26efa8293e3e17b4b7b193b84d46748b64b92c539da508",
+      "size": 646
+    },
+    {
+      "path": "data/step164/model_intake_templates/protein_ligand_codesign.json",
+      "sha256": "f8246248cc7e81f205e6a7dc317703b32e6725e7cbc7530651384e4ff93d5386",
+      "size": 646
+    },
+    {
+      "path": "data/step164/model_intake_templates/proteogenomics_neoantigen.json",
+      "sha256": "06573aae64ee57a9200006b7ad3f67e24255f32b97978178042356c9f2bcc098",
+      "size": 648
+    },
+    {
+      "path": "data/step164/model_intake_templates/provenance_ledger_v2.json",
+      "sha256": "93e32182a7676dfd2a3e89d7e42d746bc18c748f924f5772a0b9847b915dbc9c",
+      "size": 643
+    },
+    {
+      "path": "data/step164/model_intake_templates/rare_variant_family.json",
+      "sha256": "8a434888325b64e2fc7a43a3b4d534f5ab7967643fc58e0476c508567c94abd8",
+      "size": 642
+    },
+    {
+      "path": "data/step164/model_intake_templates/reference_lifecycle_v2.json",
+      "sha256": "c71731d32207bdee4eddd90b971f23d74acf7a0f351dd978d2dbf19f21281e52",
+      "size": 645
+    },
+    {
+      "path": "data/step164/model_intake_templates/rna_isoform_splicing.json",
+      "sha256": "5f121bacb7624be217102bc337140cd239a1906aec462d33f2318d9f31a8a6fe",
+      "size": 643
+    },
+    {
+      "path": "data/step164/model_intake_templates/single_cell_core.json",
+      "sha256": "82ea0c692291d2f9a0e6d5de961c6c96f7bf8b88a1442a06bb1f58559f7fff3c",
+      "size": 639
+    },
+    {
+      "path": "data/step164/model_intake_templates/single_cell_long_read_isoforms.json",
+      "sha256": "cb268e66ce716c785d4f79721401de6ba6933ff06fc61ab0f25d19b5d6deca9f",
+      "size": 653
+    },
+    {
+      "path": "data/step164/model_intake_templates/single_cell_trajectory.json",
+      "sha256": "17d555718734e37e9d4a143f8e69754cd31aa2d128d1ad6522e2e5f86efa8bb3",
+      "size": 645
+    },
+    {
+      "path": "data/step164/model_intake_templates/spatial_medicine_tme.json",
+      "sha256": "dfd899bbfd84276eb646dfba173c342d3a5fd983d1ee1b3ea96345ffe7020a52",
+      "size": 643
+    },
+    {
+      "path": "data/step164/model_intake_templates/spatial_omics_pathology.json",
+      "sha256": "60e0df8af727126055859ffe0da6120aa0b8715827261f4d3b227369136600c7",
+      "size": 646
+    },
+    {
+      "path": "data/step164/model_intake_templates/store_readiness_core.json",
+      "sha256": "c3f4266395e56780a0343de580085160cebe714198e5a03e87427373eb1f894f",
+      "size": 643
+    },
+    {
+      "path": "data/step164/model_intake_templates/strain_microbiome.json",
+      "sha256": "958c9c09561ebd5e02dd14bb41133da0e39869bb49476f4a73950208e119cebe",
+      "size": 640
+    },
+    {
+      "path": "data/step164/model_intake_templates/structural_bioinformatics_core.json",
+      "sha256": "bcf257399722ac23020af575e580e932d73f8864ca00a097b0d57da23675180f",
+      "size": 653
+    },
+    {
+      "path": "data/step164/model_intake_templates/structural_variant_repeat.json",
+      "sha256": "c1f77d40ec7b7b22c3470a5fcd8c0e7964567da17a3446cf146e815d91ad5f92",
+      "size": 648
+    },
+    {
+      "path": "data/step164/model_intake_templates/synthetic_biology_core.json",
+      "sha256": "a37a112c01657d7847d852478bf97673cc28234eac81eeb1436edd3e27302144",
+      "size": 645
+    },
+    {
+      "path": "data/step164/model_intake_templates/synthetic_cohort_trial.json",
+      "sha256": "d3ae03713b5a8e67d4604ed91597021130529dba4cfe3859310dc636f1b59534",
+      "size": 645
+    },
+    {
+      "path": "data/step164/model_intake_templates/synthetic_data_privacy.json",
+      "sha256": "f298bb8480a4d1365e964f0d0859a6a607079c5c0bfc5d4147ce294b37097517",
+      "size": 645
+    },
+    {
+      "path": "data/step164/model_intake_templates/unified_report_builder.json",
+      "sha256": "d9d2eed850cdc689a16e52a3e7138e425678cc77e19a88539968e7a5546b4b66",
+      "size": 645
+    },
+    {
+      "path": "data/step164/model_intake_templates/universal_file_inspector.json",
+      "sha256": "444556aafd5d41fec515aabb2983566c84dc82655d483b61e4b6319b79f2297b",
+      "size": 647
+    },
+    {
+      "path": "data/step164/model_intake_templates/virology_evolution.json",
+      "sha256": "aa1aa7dcc5332f930d3edaf05eff1d881d91aad841ded67fe21505ca64cf0149",
+      "size": 641
+    },
+    {
+      "path": "data/step164/model_intake_templates/workflow_builder_core.json",
+      "sha256": "44acc7165b2df8ade439c1c516db22ca83ea53df658d8307d10b5c3b88372400",
+      "size": 644
+    },
+    {
+      "path": "data/step164/model_intake_templates/workflow_builder_v2.json",
+      "sha256": "ad608c6025d717ad3e4585fe524912d13ac7891230cafc2c5f9e1872fa8716c1",
+      "size": 642
+    },
+    {
+      "path": "data/step164/module_operational_contracts/amr_surveillance.json",
+      "sha256": "5b1da440c8ec5c2dd2f087af55a8786f3e85dfc64019ed3202d07463bbba90c5",
+      "size": 1138
+    },
+    {
+      "path": "data/step164/module_operational_contracts/antibody_biologics.json",
+      "sha256": "ec70b20d6ea335306a53b5363086dbe6da4493618013e6b0c3b89688cef1547f",
+      "size": 1034
+    },
+    {
+      "path": "data/step164/module_operational_contracts/autonomous_lab_planner.json",
+      "sha256": "024cc655f3438a35daada3d15763cfe259eee566a8804c94e9e51740142b01f8",
+      "size": 1065
+    },
+    {
+      "path": "data/step164/module_operational_contracts/background_job_engine.json",
+      "sha256": "93e35310f7c8ecc075326dd3a8d49e5a4ac51891f4712c41f9d9d7bc3df545b5",
+      "size": 921
+    },
+    {
+      "path": "data/step164/module_operational_contracts/background_jobs_core.json",
+      "sha256": "1cb8d2cff99fca0e648ad950540577643e1bd53fb79ef8d7605073f40710041b",
+      "size": 917
+    },
+    {
+      "path": "data/step164/module_operational_contracts/benchmark_validation_v2.json",
+      "sha256": "875342bfbd5287814ed90f41fd7f7dbcace6409cfb859dcb7cd0a37afbec171f",
+      "size": 978
+    },
+    {
+      "path": "data/step164/module_operational_contracts/bioimage_microscopy.json",
+      "sha256": "befd59c77d355558e03af8cb5764aaba661d4ada40920e892d372fcfdf71e6d9",
+      "size": 1019
+    },
+    {
+      "path": "data/step164/module_operational_contracts/biomedical_foundation_model_hub.json",
+      "sha256": "f5d054fa992e1865c42cf79def05a346b1e9daa5a67e96901ae1a49ca4aa03df",
+      "size": 1204
+    },
+    {
+      "path": "data/step164/module_operational_contracts/bioprocess_fermentation.json",
+      "sha256": "cdb4352c9b00a1e89659d426835a807829afdfe2c26e7dde2768f702652761e5",
+      "size": 975
+    },
+    {
+      "path": "data/step164/module_operational_contracts/cancer_genomics_core.json",
+      "sha256": "da2e34d5be6b0c8d19f6041788a74c74c483f81437097285108210b06754ced8",
+      "size": 1109
+    },
+    {
+      "path": "data/step164/module_operational_contracts/causal_perturbation.json",
+      "sha256": "e8c3681a12425b62500e2037ebe49ac1fa1c02e1bbc1215e9ad86e349c8de3b1",
+      "size": 974
+    },
+    {
+      "path": "data/step164/module_operational_contracts/cell_atlas_mapping.json",
+      "sha256": "eef3be14975b057a8f003e655e9fe44b103573eb158ab7cf6963e5cd4e6d53de",
+      "size": 935
+    },
+    {
+      "path": "data/step164/module_operational_contracts/cell_therapy_cart.json",
+      "sha256": "d54f7618998dc2ea4d099ea7465e23abbce06ebf90b47e2841438d5d65d89d1c",
+      "size": 1083
+    },
+    {
+      "path": "data/step164/module_operational_contracts/clinical_biomarker_survival.json",
+      "sha256": "100bf52921d841e28519973202c72c79274bef53ddad3a30beca4884e340b970",
+      "size": 1094
+    },
+    {
+      "path": "data/step164/module_operational_contracts/clinical_pharma_core.json",
+      "sha256": "aea149eb828715b1450fd6b917e656d88fa1ca6e255b0e389aa30e19af56179d",
+      "size": 1022
+    },
+    {
+      "path": "data/step164/module_operational_contracts/clinical_trial_biomarker.json",
+      "sha256": "cfdad4713bed6f249a09e0c6ee51f162754bd77fad8bbe9bad927efdd88e28c2",
+      "size": 973
+    },
+    {
+      "path": "data/step164/module_operational_contracts/collaboration_review_v2.json",
+      "sha256": "8f42a391a6fc67719818861e5e08ebc035a009688cdfd0b3b914ffd9d4329434",
+      "size": 974
+    },
+    {
+      "path": "data/step164/module_operational_contracts/cross_module_workspace.json",
+      "sha256": "b940d1d2f0a6197693915bd227b8c2d709891adbe5c735fa7a7555113d7c59b6",
+      "size": 962
+    },
+    {
+      "path": "data/step164/module_operational_contracts/data_lakehouse_v2.json",
+      "sha256": "a4cf21f8d3c213dccd0c5267d8e1ae7b569c37bb07b6cedf505914a5674cff69",
+      "size": 902
+    },
+    {
+      "path": "data/step164/module_operational_contracts/digital_pathology_foundation.json",
+      "sha256": "261e6415d5e1171b61db10250c000c3abe83df6d9f18817885b9733b93cd1d97",
+      "size": 1189
+    },
+    {
+      "path": "data/step164/module_operational_contracts/docking_dynamics.json",
+      "sha256": "cab2901f66f1029f70a2f8dcb60bf5d5e358654e37d4454bf172bda461dfacf9",
+      "size": 1044
+    },
+    {
+      "path": "data/step164/module_operational_contracts/document_intelligence_core.json",
+      "sha256": "cf11648e55ba15859aa879a652730839ab0f2bbc72b5083d8bdeff125745052c",
+      "size": 977
+    },
+    {
+      "path": "data/step164/module_operational_contracts/enzyme_pathway_design.json",
+      "sha256": "e5ac202f1e8e1c6e628b1a8e758f3c56315e6861f18fc24549badd9138820e9d",
+      "size": 1021
+    },
+    {
+      "path": "data/step164/module_operational_contracts/epigenomics_chromatin.json",
+      "sha256": "1704c61db111b6593c426589bd1d1f23ae4eb92125ff0260b81ced2df101c4ed",
+      "size": 1076
+    },
+    {
+      "path": "data/step164/module_operational_contracts/epitranscriptomics.json",
+      "sha256": "53e62cc934a9d21c20d05e201aca40d644059165ccf63c9eaad56d4b72568efc",
+      "size": 970
+    },
+    {
+      "path": "data/step164/module_operational_contracts/evidence_citation_engine.json",
+      "sha256": "7f005ba202898e7678c3830d1326a81f33440362f13f6ac85e23838658745ade",
+      "size": 992
+    },
+    {
+      "path": "data/step164/module_operational_contracts/explainable_ai_assurance.json",
+      "sha256": "07b4498a64550ec23ef7fbc58a1a71fec4c489a79bd8f0f5c1337cf315e64cee",
+      "size": 978
+    },
+    {
+      "path": "data/step164/module_operational_contracts/federated_biomedical_ai.json",
+      "sha256": "0871dac24d8a845c5d4533fe398dfecd01b102bc1d80111fce399ddabb81e545",
+      "size": 1088
+    },
+    {
+      "path": "data/step164/module_operational_contracts/flow_cytometry.json",
+      "sha256": "0292a2f9adc1956c83fc45ffa04a60e40a4a4c0b61ebf546226845404251b999",
+      "size": 1165
+    },
+    {
+      "path": "data/step164/module_operational_contracts/gene_therapy_vector.json",
+      "sha256": "c69e4b47e5bf2326180c86f4e001d2213498b960d449e6f388a1f00003a6fb96",
+      "size": 1126
+    },
+    {
+      "path": "data/step164/module_operational_contracts/genome_editing_safety.json",
+      "sha256": "808cd3cfae56a255c566a4498426c645a8207228d1ff028a19c39a7ce8d05990",
+      "size": 1017
+    },
+    {
+      "path": "data/step164/module_operational_contracts/glycomics_glycoproteomics.json",
+      "sha256": "2a4595e67da452d64121a0278beef26cd9b1013e7f0fa4e0c3163c9513207a42",
+      "size": 1010
+    },
+    {
+      "path": "data/step164/module_operational_contracts/host_pathogen_interaction.json",
+      "sha256": "6408e9c28ee973f24ec3e2a1046bff81c8b2e9506d95b73841cb886d1e962a6d",
+      "size": 983
+    },
+    {
+      "path": "data/step164/module_operational_contracts/immunoinformatics_vaccine.json",
+      "sha256": "8adbce3df3c50537e658aeb1076a81c6a70b08bbc557be274601f3a48e291c9d",
+      "size": 1071
+    },
+    {
+      "path": "data/step164/module_operational_contracts/knowledge_graph_core.json",
+      "sha256": "d79365152b2ab22dde64c3d5669a61d75821221dbab7fa85afcd42a32aa0891a",
+      "size": 960
+    },
+    {
+      "path": "data/step164/module_operational_contracts/long_read_core.json",
+      "sha256": "f7b4e6b4b999ee3701b2105a35748a3420de3165b0d4c38522d04ef4cea50e8c",
+      "size": 1002
+    },
+    {
+      "path": "data/step164/module_operational_contracts/long_read_epigenome.json",
+      "sha256": "9ee35ec7058bf43bd7c6f74ff3cba7216119c934920bf2aa411f0a5453bf56cb",
+      "size": 1139
+    },
+    {
+      "path": "data/step164/module_operational_contracts/longitudinal_multiomics.json",
+      "sha256": "547a1f1c5da42b6232202ed7f8f6566ae3448fdc85f113bd1bde9ae6c9fb91df",
+      "size": 959
+    },
+    {
+      "path": "data/step164/module_operational_contracts/metabolomics_lipidomics.json",
+      "sha256": "1ea687d148c8c946e4b71a7e50f7bca36d2bd44e5252425246c9671a29fcc1e3",
+      "size": 1012
+    },
+    {
+      "path": "data/step164/module_operational_contracts/metagenomics_core.json",
+      "sha256": "755f0af87b19afcb14c52e41348cda76ed101043a7be5c8ac95c86cec0fe540f",
+      "size": 1034
+    },
+    {
+      "path": "data/step164/module_operational_contracts/model_registry_v2.json",
+      "sha256": "ba540f713c9cd8048773c9edb1ac6c97b3d65959a2a92afc6b190981d1712b83",
+      "size": 917
+    },
+    {
+      "path": "data/step164/module_operational_contracts/multiomics_biomarker_core.json",
+      "sha256": "398f62562598d471b39000ca04769b9a959538ec4f2043d650f4239cdd9ca205",
+      "size": 960
+    },
+    {
+      "path": "data/step164/module_operational_contracts/multiomics_harmonization.json",
+      "sha256": "2d30ddcf3f600b8a3f88449283f3a7103c13fba9535a9bcf420d05161b733dcf",
+      "size": 1021
+    },
+    {
+      "path": "data/step164/module_operational_contracts/offline_copilot_core.json",
+      "sha256": "4f7035fef5b9e4d43f55af5cb5c3ae47a94ec8b4f08839d5a5871c19bda645c8",
+      "size": 960
+    },
+    {
+      "path": "data/step164/module_operational_contracts/offline_scientific_copilot_v2.json",
+      "sha256": "d817768485ed9db3e1d354f73432efe1090e3fb1e98da9f16e29c584f3b3dc79",
+      "size": 996
+    },
+    {
+      "path": "data/step164/module_operational_contracts/one_health_environmental.json",
+      "sha256": "dd566c6480a283eb41bfa7a1cb42a6ddb72a1635760258016b653f713c4dee48",
+      "size": 1067
+    },
+    {
+      "path": "data/step164/module_operational_contracts/organoid_3d.json",
+      "sha256": "e2035bb73facd6c9435074610cb006f06f49e7ea90f66d2e093d745787c07a0c",
+      "size": 913
+    },
+    {
+      "path": "data/step164/module_operational_contracts/pangenome_core.json",
+      "sha256": "f6346314a5f7421206e79b16f404dcc49a67dbe16a2ea36d411e8dbd5caf217c",
+      "size": 989
+    },
+    {
+      "path": "data/step164/module_operational_contracts/pangenome_population_medicine.json",
+      "sha256": "e2aa1d4b6e57973dfbcefab6818db85c3ebf109e56cd16ddeaa38b9804ed6ad5",
+      "size": 1171
+    },
+    {
+      "path": "data/step164/module_operational_contracts/pathogen_outbreak_core.json",
+      "sha256": "866bb2b7b355e2a8b747f7e52226e7b8cc99742e548c3bf4cd6502acd7b0335f",
+      "size": 992
+    },
+    {
+      "path": "data/step164/module_operational_contracts/pharmacogenomics.json",
+      "sha256": "f8b34db587769e82bbfdfa39b845faed15baec9775e5ea262295fbdf2722f7ae",
+      "size": 1035
+    },
+    {
+      "path": "data/step164/module_operational_contracts/pharmacovigilance_intelligence.json",
+      "sha256": "1979cedf182878802d466d966bdaec5e6a6ffb328211a8ab92c1f3963a526570",
+      "size": 1074
+    },
+    {
+      "path": "data/step164/module_operational_contracts/phenotypic_screening.json",
+      "sha256": "69a2207d1976c183c73ef1eb09199253c5dbacfa37b7642deab5e96fdad34ca2",
+      "size": 963
+    },
+    {
+      "path": "data/step164/module_operational_contracts/plugin_marketplace_core.json",
+      "sha256": "9a247c4488915f29921e232b19bf7f26f8bd17bf24157184a42c84f31700ac23",
+      "size": 985
+    },
+    {
+      "path": "data/step164/module_operational_contracts/plugin_marketplace_v2.json",
+      "sha256": "1d59b624a0a8267f6bd879a9487dd34d5e24b449690cf0c60603aaab6951ba26",
+      "size": 977
+    },
+    {
+      "path": "data/step164/module_operational_contracts/population_gwas.json",
+      "sha256": "a12c87aee4f3ad3877b0b54bb96a21e74bf833b9f034246f2b4be510f5a23c45",
+      "size": 1003
+    },
+    {
+      "path": "data/step164/module_operational_contracts/protein_language_design.json",
+      "sha256": "bfcd5ffc66968c367d1b2777212500fc63fe15098cad6f2d33c7877f043c84e2",
+      "size": 1026
+    },
+    {
+      "path": "data/step164/module_operational_contracts/protein_ligand_codesign.json",
+      "sha256": "29d6a2e3be8a29dbcd1ba242867b7a2a902e93637c443de8b82258ba2cc2006f",
+      "size": 1150
+    },
+    {
+      "path": "data/step164/module_operational_contracts/proteogenomics_neoantigen.json",
+      "sha256": "4cf6e0a2d25e2a3cf547298813ffc0472b4608609e3ced513ce529b444c78178",
+      "size": 1090
+    },
+    {
+      "path": "data/step164/module_operational_contracts/provenance_ledger_v2.json",
+      "sha256": "a85c3eea4bed124d3150dbcf01a7ecd15649e0f36b5f7a84ae751250d32ab225",
+      "size": 946
+    },
+    {
+      "path": "data/step164/module_operational_contracts/rare_variant_family.json",
+      "sha256": "4ba93abd5c02540771e16c079ebbafee55d56d0cbd9116d3b9d22879b22b07c4",
+      "size": 1044
+    },
+    {
+      "path": "data/step164/module_operational_contracts/reference_lifecycle_v2.json",
+      "sha256": "8141f24b6786d4bee2dc0b75954081334283bf80b3ee096442c18d8c4fa9b043",
+      "size": 944
+    },
+    {
+      "path": "data/step164/module_operational_contracts/rna_isoform_splicing.json",
+      "sha256": "4bee7e20e060b54f731c088377d591104b995823d57c5d6ca82aa52284d10b00",
+      "size": 950
+    },
+    {
+      "path": "data/step164/module_operational_contracts/single_cell_core.json",
+      "sha256": "7f7bc14b9962444264eff6b4c3fd33ced443c3770cc710ac5f3dcbdc458a8d3f",
+      "size": 996
+    },
+    {
+      "path": "data/step164/module_operational_contracts/single_cell_long_read_isoforms.json",
+      "sha256": "11cab794e252d95a002eb78a21fb61db54ba73493c5bfd32319276dff4dec3cd",
+      "size": 1178
+    },
+    {
+      "path": "data/step164/module_operational_contracts/single_cell_trajectory.json",
+      "sha256": "18c92e8616d0112526c3abc6ab2aeccf669456f8b8c7e7d22277c986d02f3465",
+      "size": 1053
+    },
+    {
+      "path": "data/step164/module_operational_contracts/spatial_medicine_tme.json",
+      "sha256": "5f7371530960bb360b1c8c1b37c76fba7662e9cbb9bb648c924df7c5018886c5",
+      "size": 1116
+    },
+    {
+      "path": "data/step164/module_operational_contracts/spatial_omics_pathology.json",
+      "sha256": "52fb1663cc643a6776054b0e7c1303b36f00f9165f4dde816ebadbfda9ab6557",
+      "size": 1066
+    },
+    {
+      "path": "data/step164/module_operational_contracts/store_readiness_core.json",
+      "sha256": "f3add94873e786988069710ac9f64af2c0c7e0ed56e82c4f2e2bb982599119e3",
+      "size": 938
+    },
+    {
+      "path": "data/step164/module_operational_contracts/strain_microbiome.json",
+      "sha256": "ed83e2c4a072216b1c7a10808a52bd0f3c36fe272c638c48690c408ca2c19394",
+      "size": 1006
+    },
+    {
+      "path": "data/step164/module_operational_contracts/structural_bioinformatics_core.json",
+      "sha256": "88d57b169eb20f9ce97a3f88df0d306e6dea1c1e17bcff7a0d440375c95e5bfc",
+      "size": 1089
+    },
+    {
+      "path": "data/step164/module_operational_contracts/structural_variant_repeat.json",
+      "sha256": "697333ea1bc9e62080092792efaf9a0a555a1827c42c7f8ff1851c64f6e06837",
+      "size": 1068
+    },
+    {
+      "path": "data/step164/module_operational_contracts/synthetic_biology_core.json",
+      "sha256": "c7f6f43e9e6106dfd40d8f419d7063834380d9d9ace2aed3607bb600dc79d47e",
+      "size": 1017
+    },
+    {
+      "path": "data/step164/module_operational_contracts/synthetic_cohort_trial.json",
+      "sha256": "83c63d247cb244c741ee75a1d2a3bd6b4eb7be9f039ade37cef5ec18bced197c",
+      "size": 1065
+    },
+    {
+      "path": "data/step164/module_operational_contracts/synthetic_data_privacy.json",
+      "sha256": "c7d80259f101a5e3ed9867fe3163cfb60b78422a6b0105e644b7883540cffe7b",
+      "size": 933
+    },
+    {
+      "path": "data/step164/module_operational_contracts/unified_report_builder.json",
+      "sha256": "c711878655050519e49859dc717763e3d3808fb923955e704e573b040a4179dd",
+      "size": 949
+    },
+    {
+      "path": "data/step164/module_operational_contracts/universal_file_inspector.json",
+      "sha256": "23f706cd5e4b435e66a79723adf5d261d303a2193b8dd60ef2ce0d8cbacb4861",
+      "size": 958
+    },
+    {
+      "path": "data/step164/module_operational_contracts/virology_evolution.json",
+      "sha256": "fe43ca287a4c4f0ad43883c84b60eb43332e5c83c6e4de9e187d4175b3d81c04",
+      "size": 1002
+    },
+    {
+      "path": "data/step164/module_operational_contracts/workflow_builder_core.json",
+      "sha256": "89f650c718bb18000bff8a3a4a81861f67ff5d4d9e1875b9e5e05b84b5d4ff90",
+      "size": 968
+    },
+    {
+      "path": "data/step164/module_operational_contracts/workflow_builder_v2.json",
+      "sha256": "eb99a433f84775021c63f27c937257b3569a16532d288c265c623bf16cdf9923",
+      "size": 960
+    },
+    {
+      "path": "data/step164/reference_intake_templates/amr_surveillance/01-pinned-amr-database.json",
+      "sha256": "20a7bb54f30ea7e170df6785e342a5ebc710bca32f372b67d919ad318de1a6ce",
+      "size": 622
+    },
+    {
+      "path": "data/step164/reference_intake_templates/amr_surveillance/02-taxonomy-release.json",
+      "sha256": "df216a2ef9210870bd177825a350fbd11a2de1e92b8239274b6a2fa169f17add",
+      "size": 616
+    },
+    {
+      "path": "data/step164/reference_intake_templates/amr_surveillance/03-typing-scheme.json",
+      "sha256": "11637ccfdcbae66a969dad7d7f171c719dc9aea1d9eb424c52237f2ac9afbef9",
+      "size": 610
+    },
+    {
+      "path": "data/step164/reference_intake_templates/amr_surveillance/04-phenotype-standards.json",
+      "sha256": "cd7a9dc9bd4b82c2f323a3e94b95be1733130ee7546ffe4d8ba4e8fe2ba28952",
+      "size": 622
+    },
+    {
+      "path": "data/step164/reference_intake_templates/antibody_biologics/01-imgt-germlines.json",
+      "sha256": "fcb290d5d9cfb73f822283165c5ec569e8292c7b434c7720ab04fd4a2c732675",
+      "size": 616
+    },
+    {
+      "path": "data/step164/reference_intake_templates/antibody_biologics/02-liability-motif-catalogue.json",
+      "sha256": "7d0c5462a7e7d52793f9d0c2cb8583a2cff5cddb6e8c5901fc08e24571e3e9db",
+      "size": 638
+    },
+    {
+      "path": "data/step164/reference_intake_templates/antibody_biologics/03-structure-templates.json",
+      "sha256": "78c5d96a885197dab029e30554437fd49038b77b9bc7e91637a352903f201dd1",
+      "size": 626
+    },
+    {
+      "path": "data/step164/reference_intake_templates/autonomous_lab_planner/01-biosafety-policy.json",
+      "sha256": "93a1ad4bfb5f2fc7a38eaf76f6874023ec2364d2c037f8e4fcaad5ffabc0ad43",
+      "size": 628
+    },
+    {
+      "path": "data/step164/reference_intake_templates/autonomous_lab_planner/02-approved-protocols.json",
+      "sha256": "a7fb6ba461855a578507ed7be1d52bf9858328e13eb11a97934196a3e4151fff",
+      "size": 632
+    },
+    {
+      "path": "data/step164/reference_intake_templates/autonomous_lab_planner/03-cost-catalogue.json",
+      "sha256": "85a28475f5e49efe71143c1c790145ff92d090bfee147c83cfe747be89bf5295",
+      "size": 624
+    },
+    {
+      "path": "data/step164/reference_intake_templates/autonomous_lab_planner/04-instrument-availability.json",
+      "sha256": "e67e4d9d5ca9e08fbf6f2e166e9220ceadb2b8f7caee6ec1a042817b1e241db4",
+      "size": 642
+    },
+    {
+      "path": "data/step164/reference_intake_templates/background_job_engine/01-resource-policy.json",
+      "sha256": "9adca85b41ccf16cb400687b7830c7458e3da4fdd4ec40881861c3cad66e6f0a",
+      "size": 624
+    },
+    {
+      "path": "data/step164/reference_intake_templates/background_job_engine/02-worker-state-database.json",
+      "sha256": "fff14aa1c2714ea285cf4c3f592fdfad6526872e554e32ce679a225ea836d5c1",
+      "size": 636
+    },
+    {
+      "path": "data/step164/reference_intake_templates/background_job_engine/03-artifact-registry.json",
+      "sha256": "d376721de66ca869002b5133f5750eebf049a2ceb16d5ad80550cef18cfb96fa",
+      "size": 628
+    },
+    {
+      "path": "data/step164/reference_intake_templates/background_jobs_core/01-resource-policy.json",
+      "sha256": "13378badab434be6183f909bbd42f9373d83624922f7581578b372f3fb89b127",
+      "size": 622
+    },
+    {
+      "path": "data/step164/reference_intake_templates/background_jobs_core/02-worker-state-database.json",
+      "sha256": "fb9004922376b25441b4e1ca947527a4b5c3d4b84e29a58c339b26ff121aaff7",
+      "size": 634
+    },
+    {
+      "path": "data/step164/reference_intake_templates/background_jobs_core/03-artifact-registry.json",
+      "sha256": "4ab9fc8891b8f66a8b669cb5739d30204c6db7a53cc0c1bbdcf16b6be083f59d",
+      "size": 626
+    },
+    {
+      "path": "data/step164/reference_intake_templates/benchmark_validation_v2/01-locked-benchmark-datasets.json",
+      "sha256": "6c5d5360bb7d4f64ac2ccfcf20c7a4e59804e1e424b3dfb96554b5e9e14331b8",
+      "size": 648
+    },
+    {
+      "path": "data/step164/reference_intake_templates/benchmark_validation_v2/02-expected-outputs.json",
+      "sha256": "1a871ebf805cf009c0c12ea5675e1a7d283015449dbc5d968eb95df58b2d9eaf",
+      "size": 630
+    },
+    {
+      "path": "data/step164/reference_intake_templates/benchmark_validation_v2/03-hardware-metadata.json",
+      "sha256": "69e72a95bc2b2b8de1f647e5b1c4e377dde530a5d0d2e47b7ef0822d06575337",
+      "size": 632
+    },
+    {
+      "path": "data/step164/reference_intake_templates/bioimage_microscopy/01-pixel-calibration.json",
+      "sha256": "d3786bdb6d18fcd21534a979e5c1670f598f1aa482432f1dbb33d887b9063b9e",
+      "size": 624
+    },
+    {
+      "path": "data/step164/reference_intake_templates/bioimage_microscopy/02-segmentation-model.json",
+      "sha256": "eefd970a499eac9b7c4f3bb64ce5d4a55ddce2d94023cefa820f7a6bbd7fe9fe",
+      "size": 626
+    },
+    {
+      "path": "data/step164/reference_intake_templates/bioimage_microscopy/03-ground-truth-annotations.json",
+      "sha256": "a64b5ca38c8fd2fe47f6792a1f6d478ff8a0f6f5bea440ee78ef82507762837c",
+      "size": 638
+    },
+    {
+      "path": "data/step164/reference_intake_templates/biomedical_foundation_model_hub/01-model-cards.json",
+      "sha256": "8aa2bdffc2c5cda4d0350dadc1f1e7ac79a82679cc64697da61d3378c0c82cab",
+      "size": 636
+    },
+    {
+      "path": "data/step164/reference_intake_templates/biomedical_foundation_model_hub/02-weight-checksums.json",
+      "sha256": "ece61da3a176a3500a0832f9abebcba5e9b7e078d435676c124e7c975a9361c8",
+      "size": 646
+    },
+    {
+      "path": "data/step164/reference_intake_templates/biomedical_foundation_model_hub/03-licences.json",
+      "sha256": "ed54372c0b3b09de8eceb084d919a106bd03738a1afb6eef41d12ce5d1b94ef1",
+      "size": 630
+    },
+    {
+      "path": "data/step164/reference_intake_templates/biomedical_foundation_model_hub/04-benchmark-protocols.json",
+      "sha256": "7523d9ae2893ae00b87e924afd0dff10f260ebd4634fd816a3f1e927990ce4a8",
+      "size": 652
+    },
+    {
+      "path": "data/step164/reference_intake_templates/biomedical_foundation_model_hub/05-hardware-manifest.json",
+      "sha256": "83c6a695b33ee165f3908c18c799ffd040142cbdefa5673146bba90c96e81b88",
+      "size": 648
+    },
+    {
+      "path": "data/step164/reference_intake_templates/bioprocess_fermentation/01-process-units.json",
+      "sha256": "418969d3b7ee87666647c662f3033ea2b068d2a20576a7914176f999b117b1de",
+      "size": 624
+    },
+    {
+      "path": "data/step164/reference_intake_templates/bioprocess_fermentation/02-batch-phase-definitions.json",
+      "sha256": "2f8fff482ade289f2e52127c4db7e1e7491631d3b67ff7b146e7cefb00afa913",
+      "size": 644
+    },
+    {
+      "path": "data/step164/reference_intake_templates/bioprocess_fermentation/03-golden-batch.json",
+      "sha256": "494b1d8d6806c58356396e2293fc1876d2f47c9149b7bdb65e8f5de11162438d",
+      "size": 622
+    },
+    {
+      "path": "data/step164/reference_intake_templates/cancer_genomics_core/01-reference-genome.json",
+      "sha256": "088f42b8830d42f64c88d086a0553835b331d4c42f9a5b2b9bd9df4cd2226f17",
+      "size": 624
+    },
+    {
+      "path": "data/step164/reference_intake_templates/cancer_genomics_core/02-cancer-gene-census.json",
+      "sha256": "5cb0b25332b718583e1ddd4c84fdbc6d816a32bf4c3205e07127db84eac8e027",
+      "size": 628
+    },
+    {
+      "path": "data/step164/reference_intake_templates/cancer_genomics_core/03-population-frequencies.json",
+      "sha256": "be9a68fb9fe2d4488ca9ebd1e8e6c537ea50e6ca87a8406cdbbb06730a56ec9f",
+      "size": 636
+    },
+    {
+      "path": "data/step164/reference_intake_templates/cancer_genomics_core/04-clinical-annotation-release.json",
+      "sha256": "7c8ce404794ecde8c839d8b8b9821e263db9438d805d6be8b5769909a18e0ece",
+      "size": 646
+    },
+    {
+      "path": "data/step164/reference_intake_templates/causal_perturbation/01-covariate-register.json",
+      "sha256": "6ec521b19345e91e01cbc720c4df58f5179fafddbae0f97ed65c3f51ce6f2a2e",
+      "size": 626
+    },
+    {
+      "path": "data/step164/reference_intake_templates/causal_perturbation/02-instrument-definitions.json",
+      "sha256": "9b95ce64c298d4ef0924dda5d5efc91291ac692bf555991bc88e379937993bdd",
+      "size": 634
+    },
+    {
+      "path": "data/step164/reference_intake_templates/causal_perturbation/03-dag-assumptions.json",
+      "sha256": "7023b61c79295c667c0f209f37045a5d7d97d7ead32c9a6bb7ff6d85b31e0e07",
+      "size": 620
+    },
+    {
+      "path": "data/step164/reference_intake_templates/cell_atlas_mapping/01-reference-atlas.json",
+      "sha256": "99791db216942d663f61ca7b126bace848a8d9c59b711bba61a489cf68371425",
+      "size": 618
+    },
+    {
+      "path": "data/step164/reference_intake_templates/cell_atlas_mapping/02-gene-identifier-map.json",
+      "sha256": "337d96d4468e39dd8c07a6599092e2bf2be1161180742f5461066869de562797",
+      "size": 626
+    },
+    {
+      "path": "data/step164/reference_intake_templates/cell_therapy_cart/01-antigen-expression-atlas.json",
+      "sha256": "6a47353bbb5f0c64459d42bf8c872ba85842703dff2917b9f55a8d7bfd01d758",
+      "size": 634
+    },
+    {
+      "path": "data/step164/reference_intake_templates/cell_therapy_cart/02-germline-references.json",
+      "sha256": "000735ed648f3b0856cbc881f4ed22d1c114101efc182305cfbc7f342161df6b",
+      "size": 624
+    },
+    {
+      "path": "data/step164/reference_intake_templates/cell_therapy_cart/03-cell-product-qc.json",
+      "sha256": "be4e19ef2091915d79f18d84cd298b35d159133eb6dd9834884e5e9ee54bfbd9",
+      "size": 616
+    },
+    {
+      "path": "data/step164/reference_intake_templates/cell_therapy_cart/04-safety-evidence.json",
+      "sha256": "a0f9e6ee33b5c840c3ce142c43709a68b1866e5f91226706a24f85b6cc6e77b1",
+      "size": 616
+    },
+    {
+      "path": "data/step164/reference_intake_templates/clinical_biomarker_survival/01-protocol.json",
+      "sha256": "20ff3f54faca4761772fa73abfe89c7200a0736dfb39eab983a26a1328a141fa",
+      "size": 622
+    },
+    {
+      "path": "data/step164/reference_intake_templates/clinical_biomarker_survival/02-endpoint-definitions.json",
+      "sha256": "31c588462e3b2172aec70804a5e33945e2f722b8f31eed387419f61a00a3849b",
+      "size": 646
+    },
+    {
+      "path": "data/step164/reference_intake_templates/clinical_biomarker_survival/03-prespecified-cut-off.json",
+      "sha256": "bebb0c7d9a5f006b030ab31917f24562f9081169a3e20e6b09ebd93a1d0d4c2e",
+      "size": 646
+    },
+    {
+      "path": "data/step164/reference_intake_templates/clinical_biomarker_survival/04-external-validation-cohort.json",
+      "sha256": "6d806a5a7c824e5011f61fb4180438bf81d709b06a8c2f39cea7c7b0594575c5",
+      "size": 658
+    },
+    {
+      "path": "data/step164/reference_intake_templates/clinical_pharma_core/01-protocol-and-endpoint-definitions.json",
+      "sha256": "d5d5f966a05628f3e548aadd3a41022c3d48b65d4195b57a0ff71b170f1af189",
+      "size": 658
+    },
+    {
+      "path": "data/step164/reference_intake_templates/clinical_pharma_core/02-independent-validation-cohort.json",
+      "sha256": "691ed0b115a80a522a1a793d830e5ce0c12f882af195c7d7bc2bfce4d8f4f131",
+      "size": 650
+    },
+    {
+      "path": "data/step164/reference_intake_templates/clinical_pharma_core/03-bias-eligibility-register.json",
+      "sha256": "c152fb767a10af1d8dcfeee9a7748f08eb0b87b98431b21bde705c8d93517fd0",
+      "size": 642
+    },
+    {
+      "path": "data/step164/reference_intake_templates/clinical_trial_biomarker/01-protocol.json",
+      "sha256": "d2cf5e1ee0d083e3c0117c27daf76f9f863eeabed2e9ba12e666acc6d011e7cf",
+      "size": 616
+    },
+    {
+      "path": "data/step164/reference_intake_templates/clinical_trial_biomarker/02-data-dictionary.json",
+      "sha256": "cb23658b9bda73d01a04e10cbf3f55d141064eab3abd86afc1d348496faf7e1d",
+      "size": 630
+    },
+    {
+      "path": "data/step164/reference_intake_templates/clinical_trial_biomarker/03-endpoint-definitions.json",
+      "sha256": "88eed242e2918ee3636787773257c62c2b990626e93f9a89868d9738db609c4b",
+      "size": 640
+    },
+    {
+      "path": "data/step164/reference_intake_templates/collaboration_review_v2/01-reviewer-roles.json",
+      "sha256": "018bd5fa343b827e887854e4c2d84e10797234b1b4e1bdb8afc5fe02b143e276",
+      "size": 626
+    },
+    {
+      "path": "data/step164/reference_intake_templates/collaboration_review_v2/02-decision-policy.json",
+      "sha256": "12f469d6a8e9f575f9c4314986a8e009890f3c20e1121efb9feb6a58ec366b86",
+      "size": 628
+    },
+    {
+      "path": "data/step164/reference_intake_templates/collaboration_review_v2/03-retention-policy.json",
+      "sha256": "368052820273ef5564fb40e7ac88773ad3257e19b0fbea3dc4df9b5d9b93ca85",
+      "size": 630
+    },
+    {
+      "path": "data/step164/reference_intake_templates/cross_module_workspace/01-project-schema.json",
+      "sha256": "c05e6661fa2f5a2276c8dc24de6116764f92b915e3d7cc554942765ce5b7eed5",
+      "size": 624
+    },
+    {
+      "path": "data/step164/reference_intake_templates/cross_module_workspace/02-dataset-run-identifiers.json",
+      "sha256": "8cdc33a23cf6aa2a1c5f8610b217c4c3d2bfa717814553a403c529ad1bd58803",
+      "size": 642
+    },
+    {
+      "path": "data/step164/reference_intake_templates/cross_module_workspace/03-storage-policy.json",
+      "sha256": "bbb01dbf87ac6bbba9bd887c2cc21d56cb7715cd4d6df7042506be772624dc37",
+      "size": 624
+    },
+    {
+      "path": "data/step164/reference_intake_templates/data_lakehouse_v2/01-metadata-schema.json",
+      "sha256": "26a07c5d812b2f0bcd773e00924bb1d81db735f076e366e07c7836c7462222b3",
+      "size": 616
+    },
+    {
+      "path": "data/step164/reference_intake_templates/data_lakehouse_v2/02-access-policy.json",
+      "sha256": "60d0bd0777fa720bd46ef798ce662af2174a2d9874400edd5750652218388235",
+      "size": 612
+    },
+    {
+      "path": "data/step164/reference_intake_templates/data_lakehouse_v2/03-retention-rules.json",
+      "sha256": "e408d5718d989cffc23c6ca6f2466a03a7c085910edb4f570ecdc0d6da1d8c2b",
+      "size": 616
+    },
+    {
+      "path": "data/step164/reference_intake_templates/digital_pathology_foundation/01-scanner-site-qualification.json",
+      "sha256": "822844fed2f20f6e222340b88a2d56d272d331c54721e18bc118924e711bc855",
+      "size": 660
+    },
+    {
+      "path": "data/step164/reference_intake_templates/digital_pathology_foundation/02-pathology-model-card.json",
+      "sha256": "65a1bf38d88720d78aeea302c49b913e7245411f29d3e898ed2c6965413bb889",
+      "size": 648
+    },
+    {
+      "path": "data/step164/reference_intake_templates/digital_pathology_foundation/03-ground-truth-annotations.json",
+      "sha256": "713ad3ed43f97ae5b090e4d2277783436b23b53a90e43147aba5f1b379c1fb95",
+      "size": 656
+    },
+    {
+      "path": "data/step164/reference_intake_templates/digital_pathology_foundation/04-tissue-ontology.json",
+      "sha256": "1fd1a8452d3a7b3f51cca1798f6198feb2ce7a378f33aaeefaf91c4f122bbe1e",
+      "size": 638
+    },
+    {
+      "path": "data/step164/reference_intake_templates/docking_dynamics/01-prepared-receptor.json",
+      "sha256": "e1658c733c806ff937cbb464fd6b5f1973118123083daae1ffa9e0291b6211a5",
+      "size": 618
+    },
+    {
+      "path": "data/step164/reference_intake_templates/docking_dynamics/02-ligand-protonation-states.json",
+      "sha256": "30adbdec8a2ce86eea28cd97a2db0f3b5f37d8adc24e04baa446c47a05f5a802",
+      "size": 634
+    },
+    {
+      "path": "data/step164/reference_intake_templates/docking_dynamics/03-force-field-assets.json",
+      "sha256": "9b3912eb333caab023ba804fa4c7df9dda5fa16ec20bec97ecafd001e542b99b",
+      "size": 620
+    },
+    {
+      "path": "data/step164/reference_intake_templates/document_intelligence_core/01-ocr-language-assets.json",
+      "sha256": "268538d0474ab0f97c2543b5c724348ac0152aaf0f94f6b1940356f5d24c165d",
+      "size": 642
+    },
+    {
+      "path": "data/step164/reference_intake_templates/document_intelligence_core/02-citation-policy.json",
+      "sha256": "8a7fb995800619933cf2d694a5af222beb7c69cdd7723fd0ed13bbffab5857b5",
+      "size": 634
+    },
+    {
+      "path": "data/step164/reference_intake_templates/document_intelligence_core/03-approved-extraction-schema.json",
+      "sha256": "95be96121c9a2de1b4ea999d6a5520b929ac1277d963ca2395fcb0d1f3694b49",
+      "size": 656
+    },
+    {
+      "path": "data/step164/reference_intake_templates/enzyme_pathway_design/01-metabolic-model.json",
+      "sha256": "f4bd08388f31a59f5472989d610c879fc7488372211c2c58a9ced81f5917b3f1",
+      "size": 624
+    },
+    {
+      "path": "data/step164/reference_intake_templates/enzyme_pathway_design/02-ec-reaction-database.json",
+      "sha256": "454c494a3a21df640cf7489ff23e919014a4fcdace2108e0b07adb205c7b59e8",
+      "size": 634
+    },
+    {
+      "path": "data/step164/reference_intake_templates/enzyme_pathway_design/03-structure-templates.json",
+      "sha256": "70b65c3190ba82366494e1535dbc7c69add1f710e30bbdbba61a9397ce4aed0a",
+      "size": 632
+    },
+    {
+      "path": "data/step164/reference_intake_templates/epigenomics_chromatin/01-reference-fasta.json",
+      "sha256": "1065e5519942cfd8abd10a56bcf04d6b1bf3634c30097cd9033ee3a9f148a21d",
+      "size": 624
+    },
+    {
+      "path": "data/step164/reference_intake_templates/epigenomics_chromatin/02-gene-annotation.json",
+      "sha256": "0dfac5bb42769b7912f8ebae48c4810d167b1a2787e2fad859882396fb44071b",
+      "size": 624
+    },
+    {
+      "path": "data/step164/reference_intake_templates/epigenomics_chromatin/03-motif-database.json",
+      "sha256": "b07d64bf63540dff560ebaf63dd490bb4c4e4faa8348f197ef7e81ca3ce67cbf",
+      "size": 622
+    },
+    {
+      "path": "data/step164/reference_intake_templates/epitranscriptomics/01-transcript-annotation.json",
+      "sha256": "b84aba189836dc2f9760e6fc95b04e518339060a31addded909f5fd810c6d1b1",
+      "size": 630
+    },
+    {
+      "path": "data/step164/reference_intake_templates/epitranscriptomics/02-modification-motifs.json",
+      "sha256": "125ac88dcc7c89859444a90b247a0b71b7117c739b880d68f0d515957f03c38d",
+      "size": 626
+    },
+    {
+      "path": "data/step164/reference_intake_templates/epitranscriptomics/03-editing-database.json",
+      "sha256": "52f9d65e2d3ba111270069c131e5abc9671edeb8725ace754d2c27a655015fba",
+      "size": 620
+    },
+    {
+      "path": "data/step164/reference_intake_templates/evidence_citation_engine/01-provider-snapshots.json",
+      "sha256": "f5b862ef810a82e688dc4bd3253a73dc730f144d36e7dcd6a85e47c45d8832c6",
+      "size": 636
+    },
+    {
+      "path": "data/step164/reference_intake_templates/evidence_citation_engine/02-retraction-metadata.json",
+      "sha256": "44f6d0ce70ad89824458cb2586e8cb0e827cac17fe873956696f987ad47864bf",
+      "size": 638
+    },
+    {
+      "path": "data/step164/reference_intake_templates/evidence_citation_engine/03-entity-normalization.json",
+      "sha256": "685fa2da65d28e40e8108f85ca533a2b126bbb26ce5585e22398b2d00b9c98a5",
+      "size": 640
+    },
+    {
+      "path": "data/step164/reference_intake_templates/explainable_ai_assurance/01-model-card.json",
+      "sha256": "6719cef9eaac4f3455d520aa846fdfe4e2fd0adca96a7a9af27e28ef3b167438",
+      "size": 620
+    },
+    {
+      "path": "data/step164/reference_intake_templates/explainable_ai_assurance/02-external-validation-cohort.json",
+      "sha256": "28b284506d91b464911559545cf7898d732a683c2e5b76e820052161b83a3a56",
+      "size": 652
+    },
+    {
+      "path": "data/step164/reference_intake_templates/explainable_ai_assurance/03-subgroup-definitions.json",
+      "sha256": "087c8ecd7848e7f008bc3347a4b04d11e3bb59283132e5ebe3a008995a09bd81",
+      "size": 640
+    },
+    {
+      "path": "data/step164/reference_intake_templates/federated_biomedical_ai/01-site-governance-agreements.json",
+      "sha256": "f9b9f6b677433d81f0c5b4641eb84d780d2dd05d494cdfdb775c51b70ace3c06",
+      "size": 650
+    },
+    {
+      "path": "data/step164/reference_intake_templates/federated_biomedical_ai/02-privacy-policy.json",
+      "sha256": "d0ff242292dccaac65e3b6e3b9a4225b0d4e0e581eb895fd51a14cfef39f2068",
+      "size": 626
+    },
+    {
+      "path": "data/step164/reference_intake_templates/federated_biomedical_ai/03-locked-evaluation-protocol.json",
+      "sha256": "d5470bf3a047ae32976baac07efa9a496543415013216f00583f3434841d47aa",
+      "size": 650
+    },
+    {
+      "path": "data/step164/reference_intake_templates/federated_biomedical_ai/04-threat-model.json",
+      "sha256": "bd62d64896fa673ca1289b21f511be2127c7041abf0a63daadd67447fd560ae7",
+      "size": 622
+    },
+    {
+      "path": "data/step164/reference_intake_templates/flow_cytometry/01-single-stained-controls.json",
+      "sha256": "1d550c314d87564df2f5ef6d02a5c3e3d4044cc867f33d04fe7725d834fed03c",
+      "size": 626
+    },
+    {
+      "path": "data/step164/reference_intake_templates/flow_cytometry/02-fmo-unstained-controls.json",
+      "sha256": "e97b055727e68a8ca9a064b20ceaf7aff881dde26fbf1f01d6870380f9e59d7f",
+      "size": 624
+    },
+    {
+      "path": "data/step164/reference_intake_templates/flow_cytometry/03-panel-and-instrument-metadata.json",
+      "sha256": "67c5dd0c918514a98aa8423cfa56411fe90b02edf5347208785e53283fa7ec48",
+      "size": 638
+    },
+    {
+      "path": "data/step164/reference_intake_templates/flow_cytometry/04-ground-truth-manual-gating-review.json",
+      "sha256": "d4880c1e496a08c8bb482cc4d60e2dae8f4b70be9bd8b1fb7658be29ae37f125",
+      "size": 646
+    },
+    {
+      "path": "data/step164/reference_intake_templates/gene_therapy_vector/01-vector-specific-packaging-limits.json",
+      "sha256": "d9094e2316330993c2d00b58eb7364df93f11643efeda43e966c0a159e82eb97",
+      "size": 654
+    },
+    {
+      "path": "data/step164/reference_intake_templates/gene_therapy_vector/02-promoter-tropism-evidence.json",
+      "sha256": "d0bec5172fc5908b4b18d4f449687eef3cf97ddf0c8c09362218889cabfa59cb",
+      "size": 640
+    },
+    {
+      "path": "data/step164/reference_intake_templates/gene_therapy_vector/03-immunogenicity-evidence.json",
+      "sha256": "b8fab103d80e8b915b51893d9dc11db762ee6e61992c477bd7ebdaf72246a935",
+      "size": 636
+    },
+    {
+      "path": "data/step164/reference_intake_templates/gene_therapy_vector/04-biosafety-policy.json",
+      "sha256": "73a2860b1bc7006c9e1970f89fa02a287659f6fccaeab343b74635f20170b95d",
+      "size": 622
+    },
+    {
+      "path": "data/step164/reference_intake_templates/genome_editing_safety/01-reference-genome.json",
+      "sha256": "7d5c1e49e922725eda43744bc4951b7f880acd9b28d4322ab63c13bc81433f13",
+      "size": 626
+    },
+    {
+      "path": "data/step164/reference_intake_templates/genome_editing_safety/02-population-vcf.json",
+      "sha256": "c05599c4fc3a1c9d02de4eae398c5d2f2723ab59cb0fb550ddc044a492cc42f8",
+      "size": 622
+    },
+    {
+      "path": "data/step164/reference_intake_templates/genome_editing_safety/03-annotation-gtf-gff.json",
+      "sha256": "3a7bc96b28683f0660a473e882e2745bb2f850be18f3ad904dc3ed7c2751091f",
+      "size": 630
+    },
+    {
+      "path": "data/step164/reference_intake_templates/glycomics_glycoproteomics/01-glycan-database.json",
+      "sha256": "d6bb5812cb10b7ea5d567609564dd94a4fbdc93789f4436ab43b239f9a9787ca",
+      "size": 632
+    },
+    {
+      "path": "data/step164/reference_intake_templates/glycomics_glycoproteomics/02-fragment-rules.json",
+      "sha256": "9e83b0419da4feac71a429096eefdaec9a3f0dc205793cdf44e2ff61ba37cde6",
+      "size": 630
+    },
+    {
+      "path": "data/step164/reference_intake_templates/glycomics_glycoproteomics/03-protein-annotation.json",
+      "sha256": "ac20423e41b06475a2479ef84b0d24738fe49fd3211fdab53675568589869dc9",
+      "size": 638
+    },
+    {
+      "path": "data/step164/reference_intake_templates/host_pathogen_interaction/01-host-pathogen-proteomes.json",
+      "sha256": "dbfaeff78c5dcb46cbc714529ef4573d31042d5b7270dcfbce01e788f41fce9d",
+      "size": 648
+    },
+    {
+      "path": "data/step164/reference_intake_templates/host_pathogen_interaction/02-interaction-evidence.json",
+      "sha256": "30dd575025529832bb86a97190b9e8bc4c7fa83e5a55ba6fd6d3be0e89034688",
+      "size": 642
+    },
+    {
+      "path": "data/step164/reference_intake_templates/host_pathogen_interaction/03-virulence-database.json",
+      "sha256": "cf2d25d64d7722b866414b58d1cfcae44e19ea7440094041046178a9e5518204",
+      "size": 638
+    },
+    {
+      "path": "data/step164/reference_intake_templates/immunoinformatics_vaccine/01-hla-allele-frequencies.json",
+      "sha256": "df8eca146aa8eb9b8279e357e06b6b332e5bc773cbe17d5441d148481e2490be",
+      "size": 646
+    },
+    {
+      "path": "data/step164/reference_intake_templates/immunoinformatics_vaccine/02-pathogen-proteome.json",
+      "sha256": "cc9bd80f0d4c0791ad92591eb0d5ce0f1bb6c0f7e1bd273846cef986ceb5bd87",
+      "size": 636
+    },
+    {
+      "path": "data/step164/reference_intake_templates/immunoinformatics_vaccine/03-allergen-toxin-references.json",
+      "sha256": "4cd8fec50c1638b90df8f88a4216b8dc6ed46d7ea7a5cde091aca7f471fcef1f",
+      "size": 652
+    },
+    {
+      "path": "data/step164/reference_intake_templates/knowledge_graph_core/01-ontology-releases.json",
+      "sha256": "5b53a5cf2ba2835885fafd96244cb115f41a4c55cdd2c240b6341bc19092d0de",
+      "size": 626
+    },
+    {
+      "path": "data/step164/reference_intake_templates/knowledge_graph_core/02-provider-snapshots.json",
+      "sha256": "1fe73f3918a714e9eae8fd42dfe5c1dd20f6ecb1808387b0235db40301098d78",
+      "size": 628
+    },
+    {
+      "path": "data/step164/reference_intake_templates/knowledge_graph_core/03-retraction-metadata.json",
+      "sha256": "9e98e68ab21aab504dbd2cb879f89d13ee12f4ff85a5f5c8c9937f2e88d1a6ab",
+      "size": 630
+    },
+    {
+      "path": "data/step164/reference_intake_templates/long_read_core/01-reference-related-genome.json",
+      "sha256": "1b99cd6517b21a4bbee3f29ea44b33ea984c1397658ec76851a579c0709801ac",
+      "size": 628
+    },
+    {
+      "path": "data/step164/reference_intake_templates/long_read_core/02-busco-lineage.json",
+      "sha256": "54bd1517068c472fc6aee0cafa6a95f84d26ff7a539ae6e2dd06189e3a1fabd4",
+      "size": 606
+    },
+    {
+      "path": "data/step164/reference_intake_templates/long_read_core/03-k-mer-database.json",
+      "sha256": "839fc4ca3437e71f61e96a09c511335477580cefa297041641a04270f27217a6",
+      "size": 608
+    },
+    {
+      "path": "data/step164/reference_intake_templates/long_read_epigenome/01-reference-genome.json",
+      "sha256": "5e678260845e3b15083e9ed3b09dd292db61e1767e5dd669a55075076270c79e",
+      "size": 622
+    },
+    {
+      "path": "data/step164/reference_intake_templates/long_read_epigenome/02-modification-model-release.json",
+      "sha256": "33b74746e8eab461ee0a31ca119c96e0e8f8264ccf43baedf38251ff24ea69df",
+      "size": 642
+    },
+    {
+      "path": "data/step164/reference_intake_templates/long_read_epigenome/03-imprinting-dmr-catalogue.json",
+      "sha256": "abf73569de6950ccc37b2de771357236b3190307447c30c6dc7534a0483fe186",
+      "size": 638
+    },
+    {
+      "path": "data/step164/reference_intake_templates/long_read_epigenome/04-genome-build.json",
+      "sha256": "5f685ec22c83207f674c50cdcd25316065003df38c6693f31ecc08acfa1dcc0d",
+      "size": 614
+    },
+    {
+      "path": "data/step164/reference_intake_templates/longitudinal_multiomics/01-visit-schedule.json",
+      "sha256": "369c48cf1921963ee9b197daf1b8c6057f6344d8932fa5af2af6acb0deb28e8a",
+      "size": 626
+    },
+    {
+      "path": "data/step164/reference_intake_templates/longitudinal_multiomics/02-subject-metadata.json",
+      "sha256": "9d96806eed4a757e2e57810d511f636e7068d65a26d93ee49b3a8727f28b2f4f",
+      "size": 630
+    },
+    {
+      "path": "data/step164/reference_intake_templates/longitudinal_multiomics/03-feature-maps.json",
+      "sha256": "b521b23fd373fe350783e8613b11c0115f71981b4f06b99aa4563a9ecbdfb15b",
+      "size": 622
+    },
+    {
+      "path": "data/step164/reference_intake_templates/metabolomics_lipidomics/01-spectral-library.json",
+      "sha256": "13c9185cf773ee544aa38fe506b7686ca353e3ea66a0b81c2fbcf921f2013105",
+      "size": 630
+    },
+    {
+      "path": "data/step164/reference_intake_templates/metabolomics_lipidomics/02-retention-time-standards.json",
+      "sha256": "ffadef74e5323a43aab4349cb8ca2a3a6cb397db9a5cebf890e88983ea813e56",
+      "size": 646
+    },
+    {
+      "path": "data/step164/reference_intake_templates/metabolomics_lipidomics/03-adduct-table.json",
+      "sha256": "0c80b8bf4c6b29632f1ed404972634bdf3a7249835c9a3afc67d02e8a5ac25de",
+      "size": 622
+    },
+    {
+      "path": "data/step164/reference_intake_templates/metagenomics_core/01-pinned-taxonomy-database.json",
+      "sha256": "9ca91cd6e79bd519358dcad7d81a715369c3eb2842b973bd67573dda56ef1525",
+      "size": 634
+    },
+    {
+      "path": "data/step164/reference_intake_templates/metagenomics_core/02-functional-database.json",
+      "sha256": "c63cfe9794a65fa677c8cab7bc417e6928ef604aba9e8b3b6fbe1a8282d50881",
+      "size": 624
+    },
+    {
+      "path": "data/step164/reference_intake_templates/metagenomics_core/03-amr-virulence-database.json",
+      "sha256": "ce58919de02602fe3ee1c27a2bd5ab3c0d5baf78d2fc01dbd4dfd2fb6aa12f4b",
+      "size": 630
+    },
+    {
+      "path": "data/step164/reference_intake_templates/model_registry_v2/01-dataset-snapshots.json",
+      "sha256": "b4f7734df55ed9db0ba75c82c6c35c51a5b7b572e8566a1c2087d9253c664981",
+      "size": 620
+    },
+    {
+      "path": "data/step164/reference_intake_templates/model_registry_v2/02-evaluation-protocol.json",
+      "sha256": "8bfada49158abea25d4104d6aa05e2ad7d0a22e3f0983706f3c8cc1d21c7c64a",
+      "size": 624
+    },
+    {
+      "path": "data/step164/reference_intake_templates/model_registry_v2/03-approval-policy.json",
+      "sha256": "b84afcd90f12edcae99fa9d30e0b2404c0c3095530e0bafb371b8a72f9649e9e",
+      "size": 616
+    },
+    {
+      "path": "data/step164/reference_intake_templates/multiomics_biomarker_core/01-feature-maps.json",
+      "sha256": "30c822b6541e4a34f6d4cec566c358b7bfe2c595f40c280ae989cb8ba3fecd47",
+      "size": 626
+    },
+    {
+      "path": "data/step164/reference_intake_templates/multiomics_biomarker_core/02-external-validation-cohort.json",
+      "sha256": "79af7173bbec72baa819762f87700813d57ee62dd6e7488777059b40da91eef9",
+      "size": 654
+    },
+    {
+      "path": "data/step164/reference_intake_templates/multiomics_biomarker_core/03-analysis-protocol.json",
+      "sha256": "f452a85efb29c7ee0550c4c25b3b22cedd8d8040f5214a25c44f7ee2f75370e3",
+      "size": 636
+    },
+    {
+      "path": "data/step164/reference_intake_templates/multiomics_harmonization/01-feature-identifier-maps.json",
+      "sha256": "1c55e92ab7fc827e85098523bcce9df8df14f23ec89ef3ecf955ec8f765606ef",
+      "size": 646
+    },
+    {
+      "path": "data/step164/reference_intake_templates/multiomics_harmonization/02-batch-metadata.json",
+      "sha256": "e482f95b9844dca8a6110e8eb2d8e6332028977f7a06c6c0c3209f8f3626f5cb",
+      "size": 628
+    },
+    {
+      "path": "data/step164/reference_intake_templates/multiomics_harmonization/03-platform-metadata.json",
+      "sha256": "c740583204379f51f59de2cca5f6977a3f794367e3e7cd6be269743cf0195027",
+      "size": 634
+    },
+    {
+      "path": "data/step164/reference_intake_templates/offline_copilot_core/01-approved-local-corpus.json",
+      "sha256": "b896d76a9b29c0b7889ab52b7e44034d02126aa0d49eed39e555e6baf766697f",
+      "size": 634
+    },
+    {
+      "path": "data/step164/reference_intake_templates/offline_copilot_core/02-biomedical-ontology.json",
+      "sha256": "fe8d0915b27c11089a125e02964bbb11b04cdbf687f8eb96aecb165f161ac47d",
+      "size": 630
+    },
+    {
+      "path": "data/step164/reference_intake_templates/offline_copilot_core/03-citation-index.json",
+      "sha256": "e3a6c87b59783c6dd3f6830cb3b2d086a8a87b4f35a2c97713b844ba313e2920",
+      "size": 620
+    },
+    {
+      "path": "data/step164/reference_intake_templates/offline_scientific_copilot_v2/01-approved-local-corpus.json",
+      "sha256": "29478432146cab8d0c440501d6f5b1af5c39593e5bcdb78102dc8eb54ceaaea3",
+      "size": 652
+    },
+    {
+      "path": "data/step164/reference_intake_templates/offline_scientific_copilot_v2/02-biomedical-ontology.json",
+      "sha256": "addffb3bd97b834dd4ae7941ea14d5f367cce4d4436d9cdfc7a44ea1d61eaa9a",
+      "size": 648
+    },
+    {
+      "path": "data/step164/reference_intake_templates/offline_scientific_copilot_v2/03-citation-index.json",
+      "sha256": "e14e281ae1b5b5bbdc30ed85650c6b24db335e17fecf735887b2cf153724ccba",
+      "size": 638
+    },
+    {
+      "path": "data/step164/reference_intake_templates/one_health_environmental/01-taxonomy-database.json",
+      "sha256": "37b2bba66786aa712f0c579c9da01458fa36ee8cd2c7edd8a192962d5eb101b9",
+      "size": 634
+    },
+    {
+      "path": "data/step164/reference_intake_templates/one_health_environmental/02-amr-database.json",
+      "sha256": "dea1782d3fe4e0810c1fa010ae3daa46324108754e787d928dd65dbcc7371252",
+      "size": 624
+    },
+    {
+      "path": "data/step164/reference_intake_templates/one_health_environmental/03-geographic-metadata.json",
+      "sha256": "e47001582b8f0dd055960ad4463141df676d504d30a430eb59493ae590fe1450",
+      "size": 638
+    },
+    {
+      "path": "data/step164/reference_intake_templates/organoid_3d/01-voxel-calibration.json",
+      "sha256": "13fcb43a614c3a47d8413405cf37a872043fc0d7f8d1935174217fb4009d93df",
+      "size": 608
+    },
+    {
+      "path": "data/step164/reference_intake_templates/organoid_3d/02-plate-map.json",
+      "sha256": "08c481121b9bc3725e011411401c8af345a2cf5f7a929afca4dc44e8ec669435",
+      "size": 592
+    },
+    {
+      "path": "data/step164/reference_intake_templates/organoid_3d/03-ground-truth-masks.json",
+      "sha256": "75627e9097c403c670c5687c3a7380a55a1711b926a62ff687b0052e33089b9a",
+      "size": 610
+    },
+    {
+      "path": "data/step164/reference_intake_templates/pangenome_core/01-assembly-set.json",
+      "sha256": "50f22c592d8eeda253a307578aef42c5e75d1c164ec1d8b418617ed071dabd50",
+      "size": 604
+    },
+    {
+      "path": "data/step164/reference_intake_templates/pangenome_core/02-gff-gtf-annotations.json",
+      "sha256": "7f6b09a5a15a805a3ea7ca734f4fb4932f93864357f3bbee247cf064f0c23a6a",
+      "size": 618
+    },
+    {
+      "path": "data/step164/reference_intake_templates/pangenome_core/03-reference-path.json",
+      "sha256": "a25f74cb03e26f07ec37758ff1469b5bc145cef48b54d6b11ac22a0b20e1080e",
+      "size": 608
+    },
+    {
+      "path": "data/step164/reference_intake_templates/pangenome_population_medicine/01-population-assemblies.json",
+      "sha256": "24931ef007ef8e12ec9941ad360e856fa4474eebdd40b660f0a50b6d3a2b05ff",
+      "size": 652
+    },
+    {
+      "path": "data/step164/reference_intake_templates/pangenome_population_medicine/02-reference-paths.json",
+      "sha256": "67baffba3721e7f4eba9fdcb376f5f1cb4266cb8c65d6a5b3c207ba967cae8bd",
+      "size": 640
+    },
+    {
+      "path": "data/step164/reference_intake_templates/pangenome_population_medicine/03-clinical-evidence-release.json",
+      "sha256": "594fbc7b5a8e40769f9df256704640173789263a3a483089064570861f122f8e",
+      "size": 660
+    },
+    {
+      "path": "data/step164/reference_intake_templates/pangenome_population_medicine/04-ancestry-metadata.json",
+      "sha256": "a777993e3c7cccd151e3a1db50bd182215b60d9daa4fee076329cb2dde9d8852",
+      "size": 644
+    },
+    {
+      "path": "data/step164/reference_intake_templates/pathogen_outbreak_core/01-reference-genome.json",
+      "sha256": "9d32d12195ed65b8e60cf2d8ec0f71116576770309474cd8509b8fea4bb41951",
+      "size": 628
+    },
+    {
+      "path": "data/step164/reference_intake_templates/pathogen_outbreak_core/02-lineage-definitions.json",
+      "sha256": "0695c85b9888924a9e015eab365eb44ca912c2dd0279155aa8914c7108277d11",
+      "size": 634
+    },
+    {
+      "path": "data/step164/reference_intake_templates/pathogen_outbreak_core/03-amr-database.json",
+      "sha256": "b04c5d00d5261410a24cebb58c7b00d22a59ddb9def875f35dea36e84dd648c1",
+      "size": 620
+    },
+    {
+      "path": "data/step164/reference_intake_templates/pharmacogenomics/01-allele-definition-release.json",
+      "sha256": "b8983e7df7b7cc01bf11f0b0269459b2e8bc299858d2bf5b4226944608d2e756",
+      "size": 634
+    },
+    {
+      "path": "data/step164/reference_intake_templates/pharmacogenomics/02-guideline-release.json",
+      "sha256": "7fd311868411704b3142f3fbc150e96d248e7f139ba13f5f264d1756b6557cff",
+      "size": 618
+    },
+    {
+      "path": "data/step164/reference_intake_templates/pharmacogenomics/03-population-frequencies.json",
+      "sha256": "efbccb5e20257f31120ac037691d4e392e7209cf159ffd903e9b2fbdbf73266b",
+      "size": 628
+    },
+    {
+      "path": "data/step164/reference_intake_templates/pharmacovigilance_intelligence/01-drug-event-dictionaries.json",
+      "sha256": "af21e7a3c1fd91cfd677b301a1ca332c4858dbd605fd2ce868e14bec710c729c",
+      "size": 658
+    },
+    {
+      "path": "data/step164/reference_intake_templates/pharmacovigilance_intelligence/02-deduplication-rules.json",
+      "sha256": "e2865ecad007c17c61c4416bb4b590ebbc18e2caaf322468840994041fab7514",
+      "size": 650
+    },
+    {
+      "path": "data/step164/reference_intake_templates/pharmacovigilance_intelligence/03-exposure-context.json",
+      "sha256": "e3aed396c567e632a6b5c7a3e2d57ef568758209138e904a19baf37a44067f39",
+      "size": 644
+    },
+    {
+      "path": "data/step164/reference_intake_templates/pharmacovigilance_intelligence/04-review-policy.json",
+      "sha256": "320f4f7219bb2bd2a1f09426cea7498278b55859dbabcc55a89d6a1e947ba7d5",
+      "size": 638
+    },
+    {
+      "path": "data/step164/reference_intake_templates/phenotypic_screening/01-plate-map.json",
+      "sha256": "f7f9a7f73c3776264d7520419dc9ed249cfac60b7a5eaf1a8e635da88d4ee311",
+      "size": 610
+    },
+    {
+      "path": "data/step164/reference_intake_templates/phenotypic_screening/02-control-wells.json",
+      "sha256": "18d67d9a12c852cb0bdeb5bd48423880106ccd81eae22ea3bd90829ead4d724f",
+      "size": 618
+    },
+    {
+      "path": "data/step164/reference_intake_templates/phenotypic_screening/03-image-calibration.json",
+      "sha256": "7cfdda770b6569c5a8e36239e985a6786499de2add6deef11704fea36654d564",
+      "size": 626
+    },
+    {
+      "path": "data/step164/reference_intake_templates/plugin_marketplace_core/01-trusted-publisher-list.json",
+      "sha256": "768976ce538e6ce0449fbee6c204874ba8a04eed1f18f8788fc6740db0468628",
+      "size": 642
+    },
+    {
+      "path": "data/step164/reference_intake_templates/plugin_marketplace_core/02-permission-policy.json",
+      "sha256": "20ffcd993e6301ccf6e3840319544b6a3cea4a658504c3ccaf038bbedc8a86fa",
+      "size": 632
+    },
+    {
+      "path": "data/step164/reference_intake_templates/plugin_marketplace_core/03-compatibility-matrix.json",
+      "sha256": "ef952d7f3f8a684b1f294c7cc0f6140c662826fb0dbc54945b2ebdd8637df389",
+      "size": 638
+    },
+    {
+      "path": "data/step164/reference_intake_templates/plugin_marketplace_v2/01-trusted-publisher-list.json",
+      "sha256": "64dec70523016060dee2a27ba363f89b45ab85efc745c2f953ad6ad405d8bb4f",
+      "size": 638
+    },
+    {
+      "path": "data/step164/reference_intake_templates/plugin_marketplace_v2/02-permission-policy.json",
+      "sha256": "4a2ffe6d99a2284af41c9f9f07a3960a37814f07ffa8fbda3f320cd973998eef",
+      "size": 628
+    },
+    {
+      "path": "data/step164/reference_intake_templates/plugin_marketplace_v2/03-compatibility-matrix.json",
+      "sha256": "dee218334f913a1b584c9414d694f4ce7cabd01301dd7883fa7fffcaf45b862c",
+      "size": 634
+    },
+    {
+      "path": "data/step164/reference_intake_templates/population_gwas/01-reference-panel.json",
+      "sha256": "3a18843a5f966e5dbbd15ec10c5e890551ab7a420385ee43ad3285d7cbe610c1",
+      "size": 612
+    },
+    {
+      "path": "data/step164/reference_intake_templates/population_gwas/02-genome-build.json",
+      "sha256": "5407b06859d77c9f16b2c102ef9328f36d6984d702a272876c456d5c78a0ce86",
+      "size": 606
+    },
+    {
+      "path": "data/step164/reference_intake_templates/population_gwas/03-phenotype-covariate-dictionary.json",
+      "sha256": "0e2e01c39cbe5d9f38ac44e7823bb1d620bc9f9e6faec711acd12def73a6ab74",
+      "size": 642
+    },
+    {
+      "path": "data/step164/reference_intake_templates/protein_language_design/01-model-weights.json",
+      "sha256": "236993d57758ac735571afec783c9b9ab9e506ffaf0a278c804ff86d156f0d87",
+      "size": 624
+    },
+    {
+      "path": "data/step164/reference_intake_templates/protein_language_design/02-structure-templates.json",
+      "sha256": "f6e54a2789515423dcabc51975df82ffe7a0c946190a1c4d89eb6a9e8f0d3ee5",
+      "size": 636
+    },
+    {
+      "path": "data/step164/reference_intake_templates/protein_language_design/03-conservation-constraints.json",
+      "sha256": "30d5ef92a0d599fe7a46424ef220bcb11b3b51dd739956e2aa833c9bcf67459a",
+      "size": 646
+    },
+    {
+      "path": "data/step164/reference_intake_templates/protein_ligand_codesign/01-prepared-structures.json",
+      "sha256": "4eaf296bcac58cb6ee6d7607cb4631af65b1c9f9126e845e7d1736afcfa81bab",
+      "size": 636
+    },
+    {
+      "path": "data/step164/reference_intake_templates/protein_ligand_codesign/02-ligand-states.json",
+      "sha256": "39c0e742f5f14793eb2873491a11ab711e5e2cb4d080e497be28debbcfff6e5d",
+      "size": 624
+    },
+    {
+      "path": "data/step164/reference_intake_templates/protein_ligand_codesign/03-model-weights.json",
+      "sha256": "fe052e03eaa4cff037c91f6553f5846609c31ab190a57f612aedfe48b5a7ecf0",
+      "size": 624
+    },
+    {
+      "path": "data/step164/reference_intake_templates/protein_ligand_codesign/04-selectivity-panel.json",
+      "sha256": "73fa766f806e9de67992bdf3752a1e3ce53e0d289d8d59683a6f1366b004d166",
+      "size": 632
+    },
+    {
+      "path": "data/step164/reference_intake_templates/proteogenomics_neoantigen/01-reference-proteome.json",
+      "sha256": "635df246edc0c352685c4cfb3621dca8381584dceb7692f3e2f617254c90adb1",
+      "size": 638
+    },
+    {
+      "path": "data/step164/reference_intake_templates/proteogenomics_neoantigen/02-hla-alleles.json",
+      "sha256": "2e2b25a8b4f2736b871de1c29fae1c42296330c128dcbbb0694f94dfe8fb6134",
+      "size": 624
+    },
+    {
+      "path": "data/step164/reference_intake_templates/proteogenomics_neoantigen/03-spectral-libraries.json",
+      "sha256": "2654f7bf43a26d311d88e95b350b9eaa6fae992a2b69bf23b248b83ad0f3c0a5",
+      "size": 638
+    },
+    {
+      "path": "data/step164/reference_intake_templates/provenance_ledger_v2/01-identity-policy.json",
+      "sha256": "cd64b12b2bc5053535f428475b603ca4bc2959151f1dd95c2a33351fc9f0740d",
+      "size": 622
+    },
+    {
+      "path": "data/step164/reference_intake_templates/provenance_ledger_v2/02-clock-policy.json",
+      "sha256": "dfc94e73ce75502a5bdd5f2c29b1b58a8b8673e981f391f0b6fcf6a94e8ea6c8",
+      "size": 616
+    },
+    {
+      "path": "data/step164/reference_intake_templates/provenance_ledger_v2/03-retention-policy.json",
+      "sha256": "5879a4f7c3ccb36e122e21c355febc0a8b306a466cca76c1afdf39fd1cf1a49a",
+      "size": 624
+    },
+    {
+      "path": "data/step164/reference_intake_templates/rare_variant_family/01-reference-genome.json",
+      "sha256": "a4eafe421eb915aef6699a83f25fced8e64662ecd85969a43c46ce02a32312cb",
+      "size": 622
+    },
+    {
+      "path": "data/step164/reference_intake_templates/rare_variant_family/02-hpo.json",
+      "sha256": "e24c705dc6d3195f94778f013f43280e563fce891fad49bd91a283863ebfa349",
+      "size": 596
+    },
+    {
+      "path": "data/step164/reference_intake_templates/rare_variant_family/03-population-frequencies.json",
+      "sha256": "2eda617a22c906400fd242f2525a48dbe2adac761ee5ff96ba131c7484413cd3",
+      "size": 634
+    },
+    {
+      "path": "data/step164/reference_intake_templates/rare_variant_family/04-gene-disease-evidence.json",
+      "sha256": "164c77d7ace79d28fdd12aec24addc479dd9addd97fa9ba253b4007afa27e9c9",
+      "size": 632
+    },
+    {
+      "path": "data/step164/reference_intake_templates/reference_lifecycle_v2/01-provider-release-metadata.json",
+      "sha256": "1884dc0c11e6aca73838b6b028a01ac6207d8d2e983a7d5e98c09a7ca7b56f44",
+      "size": 646
+    },
+    {
+      "path": "data/step164/reference_intake_templates/reference_lifecycle_v2/02-licence-terms.json",
+      "sha256": "c95286bc0883140d51c4ca6f1fa4c17e0b0c564a97e218295f42e9812e23c375",
+      "size": 622
+    },
+    {
+      "path": "data/step164/reference_intake_templates/reference_lifecycle_v2/03-checksums.json",
+      "sha256": "93353c2f7e3b308687434106479236fd1cc303164ceee6b7ee591344f4e96590",
+      "size": 614
+    },
+    {
+      "path": "data/step164/reference_intake_templates/rna_isoform_splicing/01-transcript-annotation.json",
+      "sha256": "f5e565da4e1c7bf3debcdc3458a0dcf0a5c07958ae16c19a6112b450e607120e",
+      "size": 634
+    },
+    {
+      "path": "data/step164/reference_intake_templates/rna_isoform_splicing/02-reference-genome.json",
+      "sha256": "3c7fb28986469a5d791469cd038270b9a562200018e55817cf3b6ae855c1a858",
+      "size": 624
+    },
+    {
+      "path": "data/step164/reference_intake_templates/single_cell_core/01-reference-atlas.json",
+      "sha256": "e78b630289695c1fe50cf8229cb4cc4f215e05f2e96dc2827bd541dd4ac084ac",
+      "size": 614
+    },
+    {
+      "path": "data/step164/reference_intake_templates/single_cell_core/02-gene-annotation.json",
+      "sha256": "6f1ec9832c54dbf8c5f67b3a2f85a74882ba3306d2038bbefa753472fca8ff9a",
+      "size": 614
+    },
+    {
+      "path": "data/step164/reference_intake_templates/single_cell_core/03-ligand-receptor-database.json",
+      "sha256": "6ae45e44fad8ec3fa77e2c7a42dbb37a7d318712ddde75751cc46dae8b1133ce",
+      "size": 632
+    },
+    {
+      "path": "data/step164/reference_intake_templates/single_cell_long_read_isoforms/01-transcript-annotation.json",
+      "sha256": "6f1097db4964d0896c3c2c58b5c430e948c362be07110862edf8d6e9c8ad762f",
+      "size": 654
+    },
+    {
+      "path": "data/step164/reference_intake_templates/single_cell_long_read_isoforms/02-cell-barcode-whitelist.json",
+      "sha256": "863991e566d1486cba64a01d291240d5d5a72d1b5cb9ffd979363e3398a16cd4",
+      "size": 656
+    },
+    {
+      "path": "data/step164/reference_intake_templates/single_cell_long_read_isoforms/03-reference-genome.json",
+      "sha256": "31797a9bec88b9e61523faaf28e1497656590c60f3cdeaad5b749cbbe029b83c",
+      "size": 644
+    },
+    {
+      "path": "data/step164/reference_intake_templates/single_cell_long_read_isoforms/04-replicate-metadata.json",
+      "sha256": "155c8357ecf0fba00483120eae8e32547ea55d1ed343227ad2f769971eb46530",
+      "size": 648
+    },
+    {
+      "path": "data/step164/reference_intake_templates/single_cell_trajectory/01-cell-atlas.json",
+      "sha256": "413a0a92526613001a2d0d08271e071979f8260370d57b19314ca0292bb193c4",
+      "size": 616
+    },
+    {
+      "path": "data/step164/reference_intake_templates/single_cell_trajectory/02-ligand-receptor-database.json",
+      "sha256": "5957e9608a28607a07cce6960fc7b6a488c7c8859213ee290c0e3a81fbb36718",
+      "size": 644
+    },
+    {
+      "path": "data/step164/reference_intake_templates/single_cell_trajectory/03-genome-annotation.json",
+      "sha256": "cb7405dcc5ccd9f6860ee5c857f2834c1ce323b0b4559842ebebf0d2f6a0d2f5",
+      "size": 630
+    },
+    {
+      "path": "data/step164/reference_intake_templates/spatial_medicine_tme/01-tissue-image.json",
+      "sha256": "36b10f2a6d6de854165a201b0d9a90fb87a29c44bb3e36de64ee08fb65e39359",
+      "size": 616
+    },
+    {
+      "path": "data/step164/reference_intake_templates/spatial_medicine_tme/02-spatial-assay-manifest.json",
+      "sha256": "44755077558b1dcf32d8b1e34bf471db3c61fd629227593f7b6d9eda6d39a9bc",
+      "size": 636
+    },
+    {
+      "path": "data/step164/reference_intake_templates/spatial_medicine_tme/03-cell-type-reference.json",
+      "sha256": "f64d778e034b245260dc38235513deaed9e8fcd3a6c5a99176a3ab80e319f31c",
+      "size": 630
+    },
+    {
+      "path": "data/step164/reference_intake_templates/spatial_medicine_tme/04-pathology-annotations.json",
+      "sha256": "f8f36b09acd33779352f237d8545ea2ef98bd2896658cfe71e26b56940f359f8",
+      "size": 634
+    },
+    {
+      "path": "data/step164/reference_intake_templates/spatial_omics_pathology/01-tissue-image.json",
+      "sha256": "791a7a5f5e5b975c3a05004d82c9289c34865400c8b7859ab7ea3097ac7747d7",
+      "size": 622
+    },
+    {
+      "path": "data/step164/reference_intake_templates/spatial_omics_pathology/02-spatial-assay-manifest.json",
+      "sha256": "94a7a38f84758a6e8e63f19e294f1a0e284a87dadbe35f66c9b971fde4c97266",
+      "size": 642
+    },
+    {
+      "path": "data/step164/reference_intake_templates/spatial_omics_pathology/03-reference-atlas.json",
+      "sha256": "aedb2351617b975c076caf005cd382adec549125a1fb000e0aeb247d41ba64b9",
+      "size": 628
+    },
+    {
+      "path": "data/step164/reference_intake_templates/store_readiness_core/01-publisher-certificate.json",
+      "sha256": "34afa7c108e41d6e31d280da9bb6f437958d7c7079180e2fcae6377975036b3b",
+      "size": 634
+    },
+    {
+      "path": "data/step164/reference_intake_templates/store_readiness_core/02-legal-urls.json",
+      "sha256": "74896950f69bb1e4b991a13f1eee7b4c096d3c286018da71e602009c8bc9086d",
+      "size": 612
+    },
+    {
+      "path": "data/step164/reference_intake_templates/store_readiness_core/03-store-metadata.json",
+      "sha256": "a99b8601c3530488f8eea824224d7613ec3b3e6b1ad3a1924c934f1fe24bc2b7",
+      "size": 620
+    },
+    {
+      "path": "data/step164/reference_intake_templates/strain_microbiome/01-taxonomy-database.json",
+      "sha256": "d838cea08eede8ed671422e35089e2b2acb5f2c5665318b4acc002f7957477c6",
+      "size": 620
+    },
+    {
+      "path": "data/step164/reference_intake_templates/strain_microbiome/02-marker-database.json",
+      "sha256": "6fc07f0f1dc6950bc29b6657bd7896f2d0e59a8fac82a27b9005c906d9888e9f",
+      "size": 616
+    },
+    {
+      "path": "data/step164/reference_intake_templates/strain_microbiome/03-amr-virulence-database.json",
+      "sha256": "345667fabd482787309315becb0419385f1ad096144cae042ae17f08e9b0a1c6",
+      "size": 630
+    },
+    {
+      "path": "data/step164/reference_intake_templates/structural_bioinformatics_core/01-reference-structure.json",
+      "sha256": "6c6ce03c01ac2445ac77810f3cccca287e1fe2e8bc28f8de4dc0b75d1a9cda16",
+      "size": 650
+    },
+    {
+      "path": "data/step164/reference_intake_templates/structural_bioinformatics_core/02-ligand-definitions.json",
+      "sha256": "cd60d7d7ce69932edc174f4fa40c49301861f8d69f54e2a1cd5ecffecbf1012e",
+      "size": 648
+    },
+    {
+      "path": "data/step164/reference_intake_templates/structural_bioinformatics_core/03-density-pae-assets.json",
+      "sha256": "6495e19de5c2ea8ea3fc156565f98f353ca21a7423468c87402290b68828f8b1",
+      "size": 648
+    },
+    {
+      "path": "data/step164/reference_intake_templates/structural_variant_repeat/01-reference-genome.json",
+      "sha256": "3859c00c1656a68aeec8c6fd08c6620c9d4559c2d8fb009f150997e9386096f7",
+      "size": 634
+    },
+    {
+      "path": "data/step164/reference_intake_templates/structural_variant_repeat/02-gene-annotation.json",
+      "sha256": "f5d6f63af6428604229b98cbc09cafbcdce16e36b31b5cbe6c34b4a5a6409594",
+      "size": 632
+    },
+    {
+      "path": "data/step164/reference_intake_templates/structural_variant_repeat/03-population-sv-resource.json",
+      "sha256": "1e12c21031958658d4beca2056bdc2afe7a9ce8b6c3243419de93486f7fb3052",
+      "size": 646
+    },
+    {
+      "path": "data/step164/reference_intake_templates/synthetic_biology_core/01-host-codon-table.json",
+      "sha256": "669fd0c9b48f8dd08a426f37fd85c3763dda33d539bdf6a204130aa98d6e0972",
+      "size": 628
+    },
+    {
+      "path": "data/step164/reference_intake_templates/synthetic_biology_core/02-part-registry.json",
+      "sha256": "9b9cc80fb518f1f8c992bf671c9e544a6af1738b4d9c5837ba70fc1c4a7e6407",
+      "size": 622
+    },
+    {
+      "path": "data/step164/reference_intake_templates/synthetic_biology_core/03-biosafety-constraints.json",
+      "sha256": "fd49e64a7909a0973f58f4f7764ab9de5f4091e6693ed85748fa27af326d7f77",
+      "size": 638
+    },
+    {
+      "path": "data/step164/reference_intake_templates/synthetic_cohort_trial/01-scenario-assumptions.json",
+      "sha256": "712eb6011e0cb9ab82d6d7e9df26e2d3cd25fddb5e5f3def5249416087f75898",
+      "size": 636
+    },
+    {
+      "path": "data/step164/reference_intake_templates/synthetic_cohort_trial/02-outcome-model.json",
+      "sha256": "29156758d5bcbd8df31901b3f811b7e1fe5f2065acaa43b2aa5f2d0c8c2a6aa7",
+      "size": 622
+    },
+    {
+      "path": "data/step164/reference_intake_templates/synthetic_cohort_trial/03-site-arm-definitions.json",
+      "sha256": "d8900c9b21cb11772962cf139621d0769f64054577b792936ff9e18943d1cf20",
+      "size": 636
+    },
+    {
+      "path": "data/step164/reference_intake_templates/synthetic_cohort_trial/04-random-seeds.json",
+      "sha256": "e99cfa18fc6d1a88b0fcbabcb6ff2be342202c3ef8184c38c98dd64f5ad02eab",
+      "size": 620
+    },
+    {
+      "path": "data/step164/reference_intake_templates/synthetic_data_privacy/01-privacy-policy.json",
+      "sha256": "10a159fd12205aa5a9f48663de7a4567f7df7387fb48a9a148f2b155dd500650",
+      "size": 624
+    },
+    {
+      "path": "data/step164/reference_intake_templates/synthetic_data_privacy/02-quasi-identifier-definitions.json",
+      "sha256": "13d488c6545cf16970024e4d70eab16b6251090224c9a2a695bd46a70906beca",
+      "size": 652
+    },
+    {
+      "path": "data/step164/reference_intake_templates/synthetic_data_privacy/03-utility-benchmark.json",
+      "sha256": "99342934baabbd54f23f801cd801d4619717838b6ca1c0ec0f5b8e7c96ebf3e2",
+      "size": 630
+    },
+    {
+      "path": "data/step164/reference_intake_templates/unified_report_builder/01-report-templates.json",
+      "sha256": "0bcc666a4c77d7e9495ad3812f013c25298d6143b9109c3f2ef661f1fe518f4e",
+      "size": 628
+    },
+    {
+      "path": "data/step164/reference_intake_templates/unified_report_builder/02-citation-policy.json",
+      "sha256": "7f0830d1d7dd1b55c717a46f2f8cc07c4dae2a56dee9b7d83f0605d37284a770",
+      "size": 626
+    },
+    {
+      "path": "data/step164/reference_intake_templates/unified_report_builder/03-approval-roles.json",
+      "sha256": "7dcda72eb7346ba0d57274af62ef0aa5c871ce83548c3d85b523a1b25c22d1a3",
+      "size": 624
+    },
+    {
+      "path": "data/step164/reference_intake_templates/universal_file_inspector/01-format-signatures.json",
+      "sha256": "b5e7637d5ce4f3f517dd27d8248f7a3fd5e2e1f794896ff49942d4b32eb2231d",
+      "size": 634
+    },
+    {
+      "path": "data/step164/reference_intake_templates/universal_file_inspector/02-schema-rules.json",
+      "sha256": "eacc59f5cd3f41b58ebd285e8347bee7b385514dabeeeaef330e09dd5edce6dc",
+      "size": 624
+    },
+    {
+      "path": "data/step164/reference_intake_templates/universal_file_inspector/03-privacy-policy.json",
+      "sha256": "794c3ccf12dec1cdc6aa31ae063bdc636ea542bb99d6771451ddb9337de0fbc2",
+      "size": 628
+    },
+    {
+      "path": "data/step164/reference_intake_templates/virology_evolution/01-reference-genome.json",
+      "sha256": "f5eab420ce2b6db928e9fbdffb9ed285ba5d592fdf0407810b470efbb2bf512b",
+      "size": 620
+    },
+    {
+      "path": "data/step164/reference_intake_templates/virology_evolution/02-lineage-definitions.json",
+      "sha256": "a4dfdec7d8497b6473d960088245c4c70de78c0bbe037dc382166c6779784c23",
+      "size": 626
+    },
+    {
+      "path": "data/step164/reference_intake_templates/virology_evolution/03-sampling-metadata.json",
+      "sha256": "aa5e0acddc992789184ae12d898625becbf3757139139b5ba0d456e5d6cd657e",
+      "size": 622
+    },
+    {
+      "path": "data/step164/reference_intake_templates/workflow_builder_core/01-typed-node-schema.json",
+      "sha256": "ad9503b2dea0946b2487e2cd332e57f7a66c6e9f9ad41637eb619e98395bf895",
+      "size": 628
+    },
+    {
+      "path": "data/step164/reference_intake_templates/workflow_builder_core/02-container-tool-versions.json",
+      "sha256": "bf9578c1cc038a2411ab2b6df6d4747ec7f07943b8ad25676d5a548ad768e9b9",
+      "size": 640
+    },
+    {
+      "path": "data/step164/reference_intake_templates/workflow_builder_core/03-resource-policy.json",
+      "sha256": "71f3fe42d516c908b9dccf8924009a452d3669723f010da435e9cac7d568fd79",
+      "size": 624
+    },
+    {
+      "path": "data/step164/reference_intake_templates/workflow_builder_v2/01-typed-node-schema.json",
+      "sha256": "8331b39be5c58fe2bcc4895716e607415e289a11a44d5a2e4e9869156324b7a4",
+      "size": 624
+    },
+    {
+      "path": "data/step164/reference_intake_templates/workflow_builder_v2/02-container-tool-versions.json",
+      "sha256": "92298bcc57451aff69d753ea993dda0e5b3c1a8d1bcdc9d38cf8b10e1312017e",
+      "size": 636
+    },
+    {
+      "path": "data/step164/reference_intake_templates/workflow_builder_v2/03-resource-policy.json",
+      "sha256": "63bcb605f980ce12f94aea6327def2d2d63e39130cab760049e582ad13749b95",
+      "size": 620
+    }
+  ],
+  "generated_assets": 550,
+  "modules": 80,
+  "schema": "biointel.step164.asset-manifest.v1"
+}

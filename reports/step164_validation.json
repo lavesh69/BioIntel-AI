@@ -1,0 +1,39 @@
+{
+  "checks": [
+    {
+      "check": "required_files",
+      "detail": "[]",
+      "passed": true
+    },
+    {
+      "check": "all_module_contracts",
+      "detail": "80/80",
+      "passed": true
+    },
+    {
+      "check": "engine_provisioning_recipes",
+      "detail": "53/53",
+      "passed": true
+    },
+    {
+      "check": "generated_operational_assets",
+      "detail": "550 assets",
+      "passed": true
+    },
+    {
+      "check": "native_module_integration",
+      "detail": "5/5 module executions",
+      "passed": true
+    },
+    {
+      "check": "compile_scan",
+      "detail": "8 Step 164 files",
+      "passed": true
+    }
+  ],
+  "external_evidence_not_inferred": true,
+  "schema": "biointel.step164.validation.v1",
+  "software_owned_operational_target": "10/10",
+  "status": "passed",
+  "third_party_installations_not_falsely_marked_complete": true
+}

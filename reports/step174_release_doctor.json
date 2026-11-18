@@ -1,0 +1,60 @@
+{
+  "schema": "biointel.step174.release-doctor.v1",
+  "status": "passed",
+  "version": "14.6.0",
+  "checks": [
+    {
+      "name": "step170_validation",
+      "passed": true,
+      "detail": "reports/step170_validation.json"
+    },
+    {
+      "name": "step171_validation",
+      "passed": true,
+      "detail": "reports/step171_validation.json"
+    },
+    {
+      "name": "step172_validation",
+      "passed": true,
+      "detail": "reports/step172_validation.json"
+    },
+    {
+      "name": "step173_validation",
+      "passed": true,
+      "detail": "reports/step173_validation.json"
+    },
+    {
+      "name": "step174_validation",
+      "passed": true,
+      "detail": "reports/step174_validation.json"
+    },
+    {
+      "name": "step174_static_qualification",
+      "passed": true,
+      "detail": "reports/step174_static_qualification.json"
+    },
+    {
+      "name": "step173_registry_integrity",
+      "passed": true,
+      "detail": "{\"schema\": \"biointel.step173.registry-status.v1\", \"database_integrity\": \"ok\", \"foreign_key_violations\": 0, \"audit_chain_valid\": true, \"qualification_runs\": 10, \"latest_run\": {\"run_id\": 10, \"created_at_utc\": \"2026-07-14T11:27:34+00:00\", \"product_version\": \"14.5.0\", \"module_count\": 80, \"release_eligible_count\": 0, \"average_practical_rating\": 6.0085, \"matrix_sha256\": \"80ee22400fd0debb2f31155bf65828529ede65770a30f46e29ba1c4cb3cbcb67\", \"status\": \"research-only-fail-closed\"}}"
+    },
+    {
+      "name": "step174_registry_integrity",
+      "passed": true,
+      "detail": "{\"schema\": \"biointel.step174.registry-status.v1\", \"database_integrity\": \"ok\", \"foreign_key_violations\": 0, \"audit_chain_valid\": true, \"execution_runs\": 2, \"latest_run\": {\"run_id\": 2, \"created_at_utc\": \"2026-07-14T11:43:27+00:00\", \"version\": \"14.6.0\", \"module_count\": 80, \"phase_automation_ready_count\": 80, \"controlled_release_count\": 0, \"matrix_sha256\": \"0a0d029dea57926ac92996ba1f2aef1d90a5a3433396e24c1790c24e717850a5\", \"status\": \"external-execution-pending\"}}"
+    },
+    {
+      "name": "version_consistency",
+      "passed": true,
+      "detail": "14.6.0"
+    },
+    {
+      "name": "phase1_to_9_runner",
+      "passed": true,
+      "detail": "RUN_STEP174_PHASE1_TO_9_WINDOWS.bat"
+    }
+  ],
+  "phase1_to_9_software_automation": "10/10",
+  "external_execution_policy": "genuine artifacts and target-machine/laboratory/site/expert execution required; no fabrication",
+  "fake_external_evidence_created": false
+}

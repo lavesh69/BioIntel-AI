@@ -1,0 +1,20 @@
+{
+  "classification": "documented_control_qualification",
+  "existing": [
+    "docs/REGULATORY_GXP_READINESS.md",
+    "docs/operations/STEP41_REALWORLD_EVIDENCE.md",
+    "STEP40_IMPLEMENTATION_REPORT.md",
+    "STEP41_IMPLEMENTATION_REPORT.md"
+  ],
+  "external_boundary": "Dossier completeness is not regulatory approval.",
+  "missing": [],
+  "observed_at": "2026-07-05T07:33:16.092682+00:00",
+  "passed": true,
+  "required": [
+    "docs/REGULATORY_GXP_READINESS.md",
+    "docs/operations/STEP41_REALWORLD_EVIDENCE.md",
+    "STEP40_IMPLEMENTATION_REPORT.md",
+    "STEP41_IMPLEMENTATION_REPORT.md"
+  ],
+  "schema": "biointel.step42.regulatory_dossier.v1"
+}

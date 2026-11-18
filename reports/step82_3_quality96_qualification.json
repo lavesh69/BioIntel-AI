@@ -1,0 +1,117 @@
+{
+  "product": "BioIntel AI",
+  "version": "8.2.3",
+  "release_label": "Step 82.3 Quality 9.6 Hardened Starter Kits",
+  "scope": "Quality-only hardening; no user-facing modules, themes, fonts, databases or starter kits added or removed.",
+  "ratings": {
+    "overall_internal_software_quality": 9.6,
+    "build_quality": 9.8,
+    "ui_ux_quality": 9.4,
+    "branding_quality": 9.2,
+    "theme_quality": 9.3,
+    "navigation_usability": 9.2,
+    "runtime_stability": 9.8,
+    "warm_performance": 9.8,
+    "cold_start_performance": 9.3,
+    "code_quality": 9.4,
+    "maintainability": 8.8,
+    "starter_kit_quality": 9.5,
+    "scientific_workflow_implementation": 9.4,
+    "real_scientific_validation_evidence": 6.7
+  },
+  "module_ratings": {
+    "sequence_analysis_alignment": 9.6,
+    "fastq_variants_genomics_qc": 9.5,
+    "transcriptomics_proteomics": 9.5,
+    "structural_bioinformatics": 9.4,
+    "drug_discovery_admet": 9.3,
+    "dti_software_quality": 9.0,
+    "dti_real_validation_evidence": 6.5,
+    "lab_analytics": 9.6,
+    "microbiology_metagenomics": 9.5,
+    "single_cell_cancer_genomics": 9.4
+  },
+  "verification": {
+    "streamlit_entry_points_passed": 91,
+    "streamlit_entry_points_total": 91,
+    "uncaught_exceptions": 0,
+    "timeouts": 0,
+    "selected_tests_passed": 134,
+    "python_files_compiled": 588,
+    "ruff_findings": 0,
+    "databases_healthy": 22,
+    "databases_total": 22,
+    "database_rows_checked": 107189,
+    "foreign_key_violations": 0,
+    "starter_kits_preserved": 47,
+    "themes_preserved": 32,
+    "fonts_preserved": 11
+  },
+  "performance": {
+    "import_benchmarks": [
+      {
+        "module": "biointel.transcriptomics.advanced",
+        "8.2.2": 2.8915,
+        "8.2.2_rc": 0,
+        "8.2.3": 1.2091,
+        "8.2.3_rc": 0,
+        "improvement_percent": 58.2
+      },
+      {
+        "module": "biointel.omics.integration",
+        "8.2.2": 2.9758,
+        "8.2.2_rc": 0,
+        "8.2.3": 1.3232,
+        "8.2.3_rc": 0,
+        "improvement_percent": 55.5
+      },
+      {
+        "module": "biointel.projects.single_cell",
+        "8.2.2": 3.2303,
+        "8.2.2_rc": 0,
+        "8.2.3": 1.3428,
+        "8.2.3_rc": 0,
+        "improvement_percent": 58.4
+      },
+      {
+        "module": "biointel.projects.single_cell_advanced",
+        "8.2.2": 3.1615,
+        "8.2.2_rc": 0,
+        "8.2.3": 1.7383,
+        "8.2.3_rc": 0,
+        "improvement_percent": 45.0
+      },
+      {
+        "module": "biointel.biotech.assays_advanced",
+        "8.2.2": 2.6915,
+        "8.2.2_rc": 0,
+        "8.2.3": 1.3253,
+        "8.2.3_rc": 0,
+        "improvement_percent": 50.8
+      },
+      {
+        "module": "biointel.biotech.experimental_design",
+        "8.2.2": 2.6715,
+        "8.2.2_rc": 0,
+        "8.2.3": 1.5979,
+        "8.2.3_rc": 0,
+        "improvement_percent": 40.2
+      }
+    ],
+    "project_status": [
+      {
+        "version": "8.2.2",
+        "wall_seconds": 7.522,
+        "app_seconds": 5.46,
+        "exceptions": []
+      },
+      {
+        "version": "8.2.3",
+        "wall_seconds": 4.6,
+        "app_seconds": 2.885,
+        "exceptions": []
+      }
+    ]
+  },
+  "external_boundary": "Independent wet-lab validation, regulatory approval, paying customers, clinical use and long-term production history are external evidence and are not fabricated."
+}

@@ -1,0 +1,610 @@
+{
+  "file_count": 67,
+  "passed_files": 65,
+  "failed_files": 2,
+  "results": [
+    {
+      "file": "tests/test_alignment.py",
+      "returncode": 0,
+      "passed": true,
+      "timed_out": false,
+      "elapsed": 5.272,
+      "stdout_tail": "..                                                                       [100%]\n2 passed in 0.26s\n",
+      "stderr_tail": ""
+    },
+    {
+      "file": "tests/test_dna_analysis.py",
+      "returncode": 0,
+      "passed": true,
+      "timed_out": false,
+      "elapsed": 5.235,
+      "stdout_tail": "...                                                                      [100%]\n3 passed in 0.25s\n",
+      "stderr_tail": ""
+    },
+    {
+      "file": "tests/test_dti_dataset_validation.py",
+      "returncode": 0,
+      "passed": true,
+      "timed_out": false,
+      "elapsed": 5.437,
+      "stdout_tail": ".                                                                        [100%]\n1 passed in 0.45s\n",
+      "stderr_tail": ""
+    },
+    {
+      "file": "tests/test_dti_features.py",
+      "returncode": 0,
+      "passed": true,
+      "timed_out": false,
+      "elapsed": 5.475,
+      "stdout_tail": "....                                                                     [100%]\n4 passed in 0.45s\n",
+      "stderr_tail": ""
+    },
+    {
+      "file": "tests/test_dti_prediction.py",
+      "returncode": 0,
+      "passed": true,
+      "timed_out": false,
+      "elapsed": 12.795,
+      "stdout_tail": "...                                                                      [100%]\n3 passed in 7.50s\n",
+      "stderr_tail": ""
+    },
+    {
+      "file": "tests/test_fingerprints.py",
+      "returncode": 0,
+      "passed": true,
+      "timed_out": false,
+      "elapsed": 5.748,
+      "stdout_tail": "..                                                                       [100%]\n2 passed in 0.53s\n",
+      "stderr_tail": ""
+    },
+    {
+      "file": "tests/test_model_errors.py",
+      "returncode": 0,
+      "passed": true,
+      "timed_out": false,
+      "elapsed": 6.172,
+      "stdout_tail": ".                                                                        [100%]\n1 passed in 1.04s\n",
+      "stderr_tail": ""
+    },
+    {
+      "file": "tests/test_orf_analysis.py",
+      "returncode": 0,
+      "passed": true,
+      "timed_out": false,
+      "elapsed": 5.44,
+      "stdout_tail": ".                                                                        [100%]\n1 passed in 0.42s\n",
+      "stderr_tail": ""
+    },
+    {
+      "file": "tests/test_parser_validators.py",
+      "returncode": 0,
+      "passed": true,
+      "timed_out": false,
+      "elapsed": 5.659,
+      "stdout_tail": "....                                                                     [100%]\n4 passed in 0.27s\n",
+      "stderr_tail": ""
+    },
+    {
+      "file": "tests/test_protein_analysis.py",
+      "returncode": 0,
+      "passed": true,
+      "timed_out": false,
+      "elapsed": 5.566,
+      "stdout_tail": "...                                                                      [100%]\n3 passed in 0.27s\n",
+      "stderr_tail": ""
+    },
+    {
+      "file": "tests/test_smiles_and_descriptors.py",
+      "returncode": 0,
+      "passed": true,
+      "timed_out": false,
+      "elapsed": 5.666,
+      "stdout_tail": "...                                                                      [100%]\n3 passed in 0.39s\n",
+      "stderr_tail": ""
+    },
+    {
+      "file": "tests/test_step10_lifecycle.py",
+      "returncode": 0,
+      "passed": true,
+      "timed_out": false,
+      "elapsed": 23.247,
+      "stdout_tail": "..........                                                               [100%]\n=============================== warnings summary ===============================\ntests/test_step10_lifecycle.py::test_api_catalog_and_workflow_endpoints\n  /opt/pyvenv/lib/python3.13/site-packages/ddtrace/internal/module.py:313: PendingDeprecationWarning: Please use `import python_multipart` instead.\n    self.loader.exec_module(module)\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n10 passed, 1 warning in 17.04s\n",
+      "stderr_tail": ""
+    },
+    {
+      "file": "tests/test_step11_ui.py",
+      "returncode": 0,
+      "passed": true,
+      "timed_out": false,
+      "elapsed": 11.01,
+      "stdout_tail": "..........                                                               [100%]\n10 passed in 5.11s\n",
+      "stderr_tail": ""
+    },
+    {
+      "file": "tests/test_step12_experience.py",
+      "returncode": 0,
+      "passed": true,
+      "timed_out": false,
+      "elapsed": 31.822,
+      "stdout_tail": ".............                                                            [100%]\n=============================== warnings summary ===============================\ntests/test_step12_experience.py::test_workflow_report_data_api_endpoint\n  /opt/pyvenv/lib/python3.13/site-packages/ddtrace/internal/module.py:313: PendingDeprecationWarning: Please use `import python_multipart` instead.\n    self.loader.exec_module(module)\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n13 passed, 1 warning in 25.44s\n",
+      "stderr_tail": ""
+    },
+    {
+      "file": "tests/test_step13_professional.py",
+      "returncode": 0,
+      "passed": true,
+      "timed_out": false,
+      "elapsed": 28.949,
+      "stdout_tail": "............                                                             [100%]\n=============================== warnings summary ===============================\ntests/test_step13_professional.py::test_activity_alerts_include_project_risks\n  /opt/pyvenv/lib/python3.13/site-packages/ddtrace/internal/module.py:313: PendingDeprecationWarning: Please use `import python_multipart` instead.\n    self.loader.exec_module(module)\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n12 passed, 1 warning in 22.84s\n",
+      "stderr_tail": ""
+    },
+    {
+      "file": "tests/test_step14_governance.py",
+      "returncode": 0,
+      "passed": true,
+      "timed_out": false,
+      "elapsed": 37.346,
+      "stdout_tail": "................                                                         [100%]\n=============================== warnings summary ===============================\ntests/test_step14_governance.py::test_readiness_and_lineage_for_governed_project\n  /opt/pyvenv/lib/python3.13/site-packages/ddtrace/internal/module.py:313: PendingDeprecationWarning: Please use `import python_multipart` instead.\n    self.loader.exec_module(module)\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n16 passed, 1 warning in 32.06s\n",
+      "stderr_tail": ""
+    },
+    {
+      "file": "tests/test_step15_data_library.py",
+      "returncode": 0,
+      "passed": true,
+      "timed_out": false,
+      "elapsed": 21.575,
+      "stdout_tail": "............                                                             [100%]\n12 passed in 17.01s\n",
+      "stderr_tail": ""
+    },
+    {
+      "file": "tests/test_step16_ml_suite.py",
+      "returncode": 0,
+      "passed": true,
+      "timed_out": false,
+      "elapsed": 8.405,
+      "stdout_tail": ".....                                                                    [100%]\n5 passed in 3.68s\n",
+      "stderr_tail": ""
+    },
+    {
+      "file": "tests/test_step17_double_data.py",
+      "returncode": 0,
+      "passed": true,
+      "timed_out": false,
+      "elapsed": 15.44,
+      "stdout_tail": ".........                                                                [100%]\n9 passed in 10.42s\n",
+      "stderr_tail": ""
+    },
+    {
+      "file": "tests/test_step18_coverage.py",
+      "returncode": 0,
+      "passed": true,
+      "timed_out": false,
+      "elapsed": 15.689,
+      "stdout_tail": "........                                                                 [100%]\n8 passed in 11.70s\n",
+      "stderr_tail": ""
+    },
+    {
+      "file": "tests/test_step19_5x.py",
+      "returncode": 0,
+      "passed": true,
+      "timed_out": false,
+      "elapsed": 19.776,
+      "stdout_tail": "........                                                                 [100%]\n8 passed in 14.57s\n",
+      "stderr_tail": ""
+    },
+    {
+      "file": "tests/test_step20_optimization.py",
+      "returncode": 0,
+      "passed": true,
+      "timed_out": false,
+      "elapsed": 12.51,
+      "stdout_tail": "........                                                                 [100%]\n8 passed in 7.04s\n",
+      "stderr_tail": ""
+    },
+    {
+      "file": "tests/test_step21_professional_databases.py",
+      "returncode": 0,
+      "passed": true,
+      "timed_out": false,
+      "elapsed": 22.065,
+      "stdout_tail": "..........                                                               [100%]\n10 passed in 16.30s\n",
+      "stderr_tail": ""
+    },
+    {
+      "file": "tests/test_step22_internet_common_names.py",
+      "returncode": 0,
+      "passed": true,
+      "timed_out": false,
+      "elapsed": 13.838,
+      "stdout_tail": ".........                                                                [100%]\n9 passed in 8.55s\n",
+      "stderr_tail": ""
+    },
+    {
+      "file": "tests/test_step23_optimization.py",
+      "returncode": 0,
+      "passed": true,
+      "timed_out": false,
+      "elapsed": 4.553,
+      "stdout_tail": "..                                                                       [100%]\n2 passed in 0.30s\n",
+      "stderr_tail": ""
+    },
+    {
+      "file": "tests/test_step24_advanced_science.py",
+      "returncode": 0,
+      "passed": true,
+      "timed_out": false,
+      "elapsed": 9.359,
+      "stdout_tail": "....                                                                     [100%]\n4 passed in 3.45s\n",
+      "stderr_tail": ""
+    },
+    {
+      "file": "tests/test_step24_comprehensive_upgrade.py",
+      "returncode": 0,
+      "passed": true,
+      "timed_out": false,
+      "elapsed": 12.536,
+      "stdout_tail": "........                                                                 [100%]\n8 passed in 7.04s\n",
+      "stderr_tail": ""
+    },
+    {
+      "file": "tests/test_step25_real_evidence.py",
+      "returncode": 0,
+      "passed": true,
+      "timed_out": false,
+      "elapsed": 6.868,
+      "stdout_tail": "......                                                                   [100%]\n6 passed in 1.08s\n",
+      "stderr_tail": ""
+    },
+    {
+      "file": "tests/test_step26_document_intelligence.py",
+      "returncode": 0,
+      "passed": true,
+      "timed_out": false,
+      "elapsed": 16.102,
+      "stdout_tail": ".......                                                                  [100%]\n7 passed in 10.07s\n",
+      "stderr_tail": ""
+    },
+    {
+      "file": "tests/test_step27_ai_document_knowledge.py",
+      "returncode": 0,
+      "passed": true,
+      "timed_out": false,
+      "elapsed": 16.986,
+      "stdout_tail": "........                                                                 [100%]\n8 passed in 10.99s\n",
+      "stderr_tail": ""
+    },
+    {
+      "file": "tests/test_step28_populated_workspace.py",
+      "returncode": 0,
+      "passed": true,
+      "timed_out": false,
+      "elapsed": 6.421,
+      "stdout_tail": "....                                                                     [100%]\n4 passed in 0.99s\n",
+      "stderr_tail": ""
+    },
+    {
+      "file": "tests/test_step29_biotech_bioinformatics.py",
+      "returncode": 0,
+      "passed": true,
+      "timed_out": false,
+      "elapsed": 24.779,
+      "stdout_tail": "..........                                                               [100%]\n10 passed in 19.10s\n",
+      "stderr_tail": ""
+    },
+    {
+      "file": "tests/test_step30_scientific_data_foundation.py",
+      "returncode": 0,
+      "passed": true,
+      "timed_out": false,
+      "elapsed": 15.107,
+      "stdout_tail": ".....                                                                    [100%]\n5 passed in 9.82s\n",
+      "stderr_tail": ""
+    },
+    {
+      "file": "tests/test_step31_scientific_data_ui.py",
+      "returncode": 0,
+      "passed": true,
+      "timed_out": false,
+      "elapsed": 12.712,
+      "stdout_tail": "......                                                                   [100%]\n6 passed in 7.33s\n",
+      "stderr_tail": ""
+    },
+    {
+      "file": "tests/test_step32_scientific_ux.py",
+      "returncode": 0,
+      "passed": true,
+      "timed_out": false,
+      "elapsed": 14.781,
+      "stdout_tail": "...                                                                      [100%]\n3 passed in 9.43s\n",
+      "stderr_tail": ""
+    },
+    {
+      "file": "tests/test_step33_production_platform.py",
+      "returncode": 0,
+      "passed": true,
+      "timed_out": false,
+      "elapsed": 5.57,
+      "stdout_tail": ".......                                                                  [100%]\n7 passed in 0.58s\n",
+      "stderr_tail": ""
+    },
+    {
+      "file": "tests/test_step35_quality_hardening.py",
+      "returncode": 0,
+      "passed": true,
+      "timed_out": false,
+      "elapsed": 16.008,
+      "stdout_tail": ".......                                                                  [100%]\n7 passed in 10.93s\n",
+      "stderr_tail": ""
+    },
+    {
+      "file": "tests/test_step36_maturity_frameworks.py",
+      "returncode": 0,
+      "passed": true,
+      "timed_out": false,
+      "elapsed": 15.797,
+      "stdout_tail": "..........                                                               [100%]\n10 passed in 9.89s\n",
+      "stderr_tail": ""
+    },
+    {
+      "file": "tests/test_step36_target_quality.py",
+      "returncode": 0,
+      "passed": true,
+      "timed_out": false,
+      "elapsed": 10.419,
+      "stdout_tail": ".........                                                                [100%]\n9 passed in 5.34s\n",
+      "stderr_tail": ""
+    },
+    {
+      "file": "tests/test_step37_engineering_excellence.py",
+      "returncode": 1,
+      "passed": false,
+      "timed_out": false,
+      "elapsed": 10.195,
+      "stdout_tail": "...                                                                    [100%]\n=================================== FAILURES ===================================\n_____________________ test_engineering_quality_gates_pass ______________________\n\n    def test_engineering_quality_gates_pass() -> None:\n        report = run_engineering_gates(ROOT)\n>       assert report[\"passed\"], report\nE       AssertionError: {'passed': False, 'results': [{'evidence': 'packages=32 invalid=0 sha256=b609c6dd48d814c6c9f5f1afa46892060d1d0ae158703...h/assays_advanced.py:1499', 'name': 'module_size_budget', 'passed': False}], 'schema': 'biointel.engineering-gates.v1'}\nE       assert False\n\ntests/test_step37_engineering_excellence.py:23: AssertionError\n=========================== short test summary info ============================\nFAILED tests/test_step37_engineering_excellence.py::test_engineering_quality_gates_pass - AssertionError: {'passed': False, 'results': [{'evidence': 'packages=32 invalid=0 sha256=b609c6dd48d814c6c9f5f1afa46892060d1d0ae158703...h/assays_advanced.py:1499', 'name': 'module_size_budget', 'passed': False}], 'schema': 'biointel.engineering-gates.v1'}\nassert False\n1 failed, 4 passed in 4.43s\n",
+      "stderr_tail": ""
+    },
+    {
+      "file": "tests/test_step43_final_assurance.py",
+      "returncode": 0,
+      "passed": true,
+      "timed_out": false,
+      "elapsed": 54.335,
+      "stdout_tail": ".......                                                                  [100%]\n7 passed in 47.10s\n",
+      "stderr_tail": ""
+    },
+    {
+      "file": "tests/test_step45_distributed_ui.py",
+      "returncode": 1,
+      "passed": false,
+      "timed_out": false,
+      "elapsed": 7.269,
+      "stdout_tail": "node in tree.body\n            if isinstance(node, ast.Assign)\n            and any(isinstance(target, ast.Name) and target.id == \"workspace_hubs\" for target in node.targets)\n        )\n        hubs = ast.literal_eval(assignment.value)\n        assert tuple(hubs) == (\n            \"Analyze\",\n            \"Data & knowledge\",\n            \"AI & discovery\",\n            \"Validate & release\",\n            \"Operate\",\n        )\n        keys = [item[0] for entries in hubs.values() for item in entries]\n>       assert len(keys) == 30\nE       AssertionError: assert 31 == 30\nE        +  where 31 = len(['sequence_analyzer', 'fastq_genomics_qc', 'variant_annotation', 'transcriptomics_expression', 'wetlab_biotechnology', 'document_intelligence', ...])\n\ntests/test_step45_distributed_ui.py:63: AssertionError\n=========================== short test summary info ============================\nFAILED tests/test_step45_distributed_ui.py::test_step45_home_hubs_only_reference_valid_pages - AssertionError: assert 31 == 30\n +  where 31 = len(['sequence_analyzer', 'fastq_genomics_qc', 'variant_annotation', 'transcriptomics_expression', 'wetlab_biotechnology', 'document_intelligence', ...])\n1 failed, 3 passed in 0.64s\n",
+      "stderr_tail": ""
+    },
+    {
+      "file": "tests/test_step46_ui_excellence.py",
+      "returncode": 0,
+      "passed": true,
+      "timed_out": false,
+      "elapsed": 51.112,
+      "stdout_tail": ".....                                                                    [100%]\n=============================== warnings summary ===============================\ntests/test_step46_ui_excellence.py::test_step46_representative_pages_render_without_streamlit_exceptions\n  /opt/pyvenv/lib/python3.13/site-packages/ddtrace/internal/module.py:313: PendingDeprecationWarning:\n  \n  Please use `import python_multipart` instead.\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n5 passed, 1 warning in 43.82s\n",
+      "stderr_tail": ""
+    },
+    {
+      "file": "tests/test_step47_biotechnology_projects.py",
+      "returncode": 0,
+      "passed": true,
+      "timed_out": false,
+      "elapsed": 41.896,
+      "stdout_tail": "........                                                                 [100%]\n8 passed in 36.27s\n",
+      "stderr_tail": ""
+    },
+    {
+      "file": "tests/test_step48_equal_depth_projects.py",
+      "returncode": 0,
+      "passed": true,
+      "timed_out": false,
+      "elapsed": 32.078,
+      "stdout_tail": ".......                                                                  [100%]\n7 passed in 26.89s\n",
+      "stderr_tail": ""
+    },
+    {
+      "file": "tests/test_step49_deep_professional_projects.py",
+      "returncode": 0,
+      "passed": true,
+      "timed_out": false,
+      "elapsed": 28.412,
+      "stdout_tail": ".........                                                                [100%]\n9 passed in 21.91s\n",
+      "stderr_tail": ""
+    },
+    {
+      "file": "tests/test_step4_improvements.py",
+      "returncode": 0,
+      "passed": true,
+      "timed_out": false,
+      "elapsed": 8.716,
+      "stdout_tail": "...........                                                              [100%]\n11 passed in 3.89s\n",
+      "stderr_tail": ""
+    },
+    {
+      "file": "tests/test_step50_runtime_repair.py",
+      "returncode": 0,
+      "passed": true,
+      "timed_out": false,
+      "elapsed": 41.503,
+      "stdout_tail": "...                                                                      [100%]\n=============================== warnings summary ===============================\ntests/test_step50_runtime_repair.py::test_reported_pages_render_without_global_theme_error\n  /opt/pyvenv/lib/python3.13/site-packages/ddtrace/internal/module.py:313: PendingDeprecationWarning: Please use `import python_multipart` instead.\n    self.loader.exec_module(module)\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n3 passed, 1 warning in 33.92s\n",
+      "stderr_tail": ""
+    },
+    {
+      "file": "tests/test_step51_connected_platform.py",
+      "returncode": 0,
+      "passed": true,
+      "timed_out": false,
+      "elapsed": 32.228,
+      "stdout_tail": "........                                                                 [100%]\n8 passed in 24.40s\n",
+      "stderr_tail": ""
+    },
+    {
+      "file": "tests/test_step52_critical_fixes.py",
+      "returncode": 0,
+      "passed": true,
+      "timed_out": false,
+      "elapsed": 23.111,
+      "stdout_tail": "......                                                                   [100%]\n6 passed in 15.95s\n",
+      "stderr_tail": ""
+    },
+    {
+      "file": "tests/test_step52_live_integrations.py",
+      "returncode": 0,
+      "passed": true,
+      "timed_out": false,
+      "elapsed": 26.255,
+      "stdout_tail": ".........                                                                [100%]\n9 passed in 14.08s\n",
+      "stderr_tail": ""
+    },
+    {
+      "file": "tests/test_step54_remaining_fixes.py",
+      "returncode": 0,
+      "passed": true,
+      "timed_out": false,
+      "elapsed": 16.112,
+      "stdout_tail": "........                                                                 [100%]\n8 passed in 10.21s\n",
+      "stderr_tail": ""
+    },
+    {
+      "file": "tests/test_step55_comprehensive_app_improvements.py",
+      "returncode": 0,
+      "passed": true,
+      "timed_out": false,
+      "elapsed": 12.135,
+      "stdout_tail": "...........                                                              [100%]\n11 passed in 5.59s\n",
+      "stderr_tail": ""
+    },
+    {
+      "file": "tests/test_step56_store_release.py",
+      "returncode": 0,
+      "passed": true,
+      "timed_out": false,
+      "elapsed": 31.157,
+      "stdout_tail": ".....                                                                    [100%]\n5 passed in 16.90s\n",
+      "stderr_tail": ""
+    },
+    {
+      "file": "tests/test_step58_aesthetic_ui.py",
+      "returncode": 0,
+      "passed": true,
+      "timed_out": false,
+      "elapsed": 7.317,
+      "stdout_tail": ".....                                                                    [100%]\n5 passed in 1.80s\n",
+      "stderr_tail": ""
+    },
+    {
+      "file": "tests/test_step59_bioinformatics_excellence.py",
+      "returncode": 0,
+      "passed": true,
+      "timed_out": false,
+      "elapsed": 79.742,
+      "stdout_tail": "...........................                                              [100%]\n27 passed in 73.53s (0:01:13)\n",
+      "stderr_tail": ""
+    },
+    {
+      "file": "tests/test_step5_additional_analysis.py",
+      "returncode": 0,
+      "passed": true,
+      "timed_out": false,
+      "elapsed": 6.636,
+      "stdout_tail": "....                                                                     [100%]\n4 passed in 1.52s\n",
+      "stderr_tail": ""
+    },
+    {
+      "file": "tests/test_step5_features.py",
+      "returncode": 0,
+      "passed": true,
+      "timed_out": false,
+      "elapsed": 43.514,
+      "stdout_tail": "........                                                                 [100%]\n8 passed in 28.70s\n",
+      "stderr_tail": ""
+    },
+    {
+      "file": "tests/test_step60_lab_analytics_excellence.py",
+      "returncode": 0,
+      "passed": true,
+      "timed_out": false,
+      "elapsed": 52.251,
+      "stdout_tail": "......................                                                   [100%]\n22 passed in 19.81s\n",
+      "stderr_tail": ""
+    },
+    {
+      "file": "tests/test_step61_discovery_excellence.py",
+      "returncode": 0,
+      "passed": true,
+      "timed_out": false,
+      "elapsed": 17.114,
+      "stdout_tail": "..........                                                               [100%]\n10 passed in 1.15s\n",
+      "stderr_tail": ""
+    },
+    {
+      "file": "tests/test_step62_lab_analytics_coverage.py",
+      "returncode": 0,
+      "passed": true,
+      "timed_out": false,
+      "elapsed": 10.452,
+      "stdout_tail": "..........                                                               [100%]\n10 passed in 6.19s\n",
+      "stderr_tail": ""
+    },
+    {
+      "file": "tests/test_step62_lab_analytics_excellence.py",
+      "returncode": 0,
+      "passed": true,
+      "timed_out": false,
+      "elapsed": 17.171,
+      "stdout_tail": "...................                                                      [100%]\n19 passed in 12.03s\n",
+      "stderr_tail": ""
+    },
+    {
+      "file": "tests/test_step63_discovery_excellence.py",
+      "returncode": 0,
+      "passed": true,
+      "timed_out": false,
+      "elapsed": 33.978,
+      "stdout_tail": "........................                                                 [100%]\n24 passed in 29.63s\n",
+      "stderr_tail": ""
+    },
+    {
+      "file": "tests/test_step7_research_workflow.py",
+      "returncode": 0,
+      "passed": true,
+      "timed_out": false,
+      "elapsed": 11.654,
+      "stdout_tail": ".........                                                                [100%]\n9 passed in 6.41s\n",
+      "stderr_tail": ""
+    },
+    {
+      "file": "tests/test_step8_no_login.py",
+      "returncode": 0,
+      "passed": true,
+      "timed_out": false,
+      "elapsed": 22.085,
+      "stdout_tail": "....                                                                     [100%]\n4 passed in 15.82s\n",
+      "stderr_tail": ""
+    },
+    {
+      "file": "tests/test_step9_stability.py",
+      "returncode": 0,
+      "passed": true,
+      "timed_out": false,
+      "elapsed": 23.456,
+      "stdout_tail": "..........                                                               [100%]\n=============================== warnings summary ===============================\ntests/test_step9_stability.py::test_api_diagnostics_endpoint\n  /opt/pyvenv/lib/python3.13/site-packages/ddtrace/internal/module.py:313: PendingDeprecationWarning: Please use `import python_multipart` instead.\n    self.loader.exec_module(module)\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n10 passed, 1 warning in 16.35s\n",
+      "stderr_tail": ""
+    },
+    {
+      "file": "tests/test_training_pipeline.py",
+      "returncode": 0,
+      "passed": true,
+      "timed_out": false,
+      "elapsed": 11.889,
+      "stdout_tail": "..                                                                       [100%]\n2 passed in 5.41s\n",
+      "stderr_tail": ""
+    }
+  ]
+}

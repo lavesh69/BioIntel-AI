@@ -1,0 +1,185 @@
+{
+  "version": "8.2.3",
+  "database_count": 22,
+  "healthy": 22,
+  "foreign_key_violations": 0,
+  "total_rows": 107189,
+  "items": [
+    {
+      "path": "data/discovery_projects.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "tables": 7,
+      "rows": 0,
+      "size_bytes": 102400
+    },
+    {
+      "path": "data/lab_analytics.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "tables": 3,
+      "rows": 0,
+      "size_bytes": 36864
+    },
+    {
+      "path": "reports/analytics.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "tables": 5,
+      "rows": 17690,
+      "size_bytes": 6144000
+    },
+    {
+      "path": "reports/api_security.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "tables": 5,
+      "rows": 811,
+      "size_bytes": 319488
+    },
+    {
+      "path": "reports/assets.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "tables": 11,
+      "rows": 20547,
+      "size_bytes": 5410816
+    },
+    {
+      "path": "reports/biotechnology_project_runs.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "tables": 2,
+      "rows": 0,
+      "size_bytes": 28672
+    },
+    {
+      "path": "reports/connected_sources.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "tables": 4,
+      "rows": 0,
+      "size_bytes": 45056
+    },
+    {
+      "path": "reports/datasets.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "tables": 13,
+      "rows": 4879,
+      "size_bytes": 1957888
+    },
+    {
+      "path": "reports/document_history.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "tables": 14,
+      "rows": 1973,
+      "size_bytes": 1085440
+    },
+    {
+      "path": "reports/evidence.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "tables": 10,
+      "rows": 3891,
+      "size_bytes": 2678784
+    },
+    {
+      "path": "reports/experiments.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "tables": 9,
+      "rows": 783,
+      "size_bytes": 626688
+    },
+    {
+      "path": "reports/feature_cache.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "tables": 2,
+      "rows": 1293,
+      "size_bytes": 2777088
+    },
+    {
+      "path": "reports/internet_downloads.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "tables": 5,
+      "rows": 105,
+      "size_bytes": 208896
+    },
+    {
+      "path": "reports/jobs.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "tables": 6,
+      "rows": 884,
+      "size_bytes": 335872
+    },
+    {
+      "path": "reports/knowledge.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "tables": 10,
+      "rows": 38427,
+      "size_bytes": 17215488
+    },
+    {
+      "path": "reports/projects.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "tables": 7,
+      "rows": 688,
+      "size_bytes": 524288
+    },
+    {
+      "path": "reports/prospective_validation.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "tables": 4,
+      "rows": 0,
+      "size_bytes": 36864
+    },
+    {
+      "path": "reports/realworld_evidence.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "tables": 6,
+      "rows": 9,
+      "size_bytes": 65536
+    },
+    {
+      "path": "reports/relationships.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "tables": 4,
+      "rows": 2291,
+      "size_bytes": 1159168
+    },
+    {
+      "path": "reports/scientific_evidence.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "tables": 5,
+      "rows": 12903,
+      "size_bytes": 16773120
+    },
+    {
+      "path": "reports/tenants.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "tables": 4,
+      "rows": 3,
+      "size_bytes": 53248
+    },
+    {
+      "path": "reports/validation_evidence.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "tables": 8,
+      "rows": 12,
+      "size_bytes": 102400
+    }
+  ]
+}

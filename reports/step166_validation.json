@@ -1,0 +1,49 @@
+{
+  "schema": "biointel.step166.validation.v1",
+  "status": "passed",
+  "priority_modules": 6,
+  "software_10of10": 6,
+  "native_depth_10of10": 6,
+  "module_runs": [
+    {
+      "module_key": "epigenomics_chromatin",
+      "status": "review",
+      "passed": true,
+      "tables": 24
+    },
+    {
+      "module_key": "long_read_core",
+      "status": "review",
+      "passed": true,
+      "tables": 22
+    },
+    {
+      "module_key": "one_health_environmental",
+      "status": "review",
+      "passed": true,
+      "tables": 22
+    },
+    {
+      "module_key": "pangenome_core",
+      "status": "review",
+      "passed": true,
+      "tables": 21
+    },
+    {
+      "module_key": "strain_microbiome",
+      "status": "review",
+      "passed": true,
+      "tables": 21
+    },
+    {
+      "module_key": "structural_variant_repeat",
+      "status": "review",
+      "passed": true,
+      "tables": 26
+    }
+  ],
+  "python_files_compiled": 830,
+  "module_failures": [],
+  "compile_failures": [],
+  "external_evidence_not_inferred": true
+}

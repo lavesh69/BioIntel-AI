@@ -1,0 +1,102 @@
+{
+  "databases": [
+    {
+      "database": "analytics.sqlite3",
+      "integrity": "ok",
+      "foreign_key_issues": 0,
+      "healthy": true
+    },
+    {
+      "database": "api_security.sqlite3",
+      "integrity": "ok",
+      "foreign_key_issues": 0,
+      "healthy": true
+    },
+    {
+      "database": "assets.sqlite3",
+      "integrity": "ok",
+      "foreign_key_issues": 0,
+      "healthy": true
+    },
+    {
+      "database": "datasets.sqlite3",
+      "integrity": "ok",
+      "foreign_key_issues": 0,
+      "healthy": true
+    },
+    {
+      "database": "document_history.sqlite3",
+      "integrity": "ok",
+      "foreign_key_issues": 0,
+      "healthy": true
+    },
+    {
+      "database": "evidence.sqlite3",
+      "integrity": "ok",
+      "foreign_key_issues": 0,
+      "healthy": true
+    },
+    {
+      "database": "experiments.sqlite3",
+      "integrity": "ok",
+      "foreign_key_issues": 0,
+      "healthy": true
+    },
+    {
+      "database": "feature_cache.sqlite3",
+      "integrity": "ok",
+      "foreign_key_issues": 0,
+      "healthy": true
+    },
+    {
+      "database": "internet_downloads.sqlite3",
+      "integrity": "ok",
+      "foreign_key_issues": 0,
+      "healthy": true
+    },
+    {
+      "database": "jobs.sqlite3",
+      "integrity": "ok",
+      "foreign_key_issues": 0,
+      "healthy": true
+    },
+    {
+      "database": "knowledge.sqlite3",
+      "integrity": "ok",
+      "foreign_key_issues": 0,
+      "healthy": true
+    },
+    {
+      "database": "projects.sqlite3",
+      "integrity": "ok",
+      "foreign_key_issues": 0,
+      "healthy": true
+    },
+    {
+      "database": "prospective_validation.sqlite3",
+      "integrity": "ok",
+      "foreign_key_issues": 0,
+      "healthy": true
+    },
+    {
+      "database": "relationships.sqlite3",
+      "integrity": "ok",
+      "foreign_key_issues": 0,
+      "healthy": true
+    },
+    {
+      "database": "scientific_evidence.sqlite3",
+      "integrity": "ok",
+      "foreign_key_issues": 0,
+      "healthy": true
+    },
+    {
+      "database": "tenants.sqlite3",
+      "integrity": "ok",
+      "foreign_key_issues": 0,
+      "healthy": true
+    }
+  ],
+  "healthy": 16,
+  "total": 16
+}

@@ -1,0 +1,251 @@
+{
+  "assurance": {
+    "all_targets_complete": true,
+    "areas": [
+      {
+        "boundary": "10/10 means repository maintainability controls are complete and enforced. Human design review remains necessary for major scientific workflow changes.",
+        "evidence": [
+          ".github/workflows/code-quality.yml",
+          "config/quality_budgets.yaml",
+          "scripts/check_architecture.py",
+          "scripts/check_technical_debt.py",
+          "dependency, architecture, debt and module-size gates",
+          ".pre-commit-config.yaml",
+          ".github/CODEOWNERS",
+          "pyproject.toml",
+          "src/biointel/engineering/readiness.py",
+          "tests/test_step37_engineering_excellence.py"
+        ],
+        "failed_controls": [],
+        "key": "code_maintainability",
+        "label": "Code Maintainability",
+        "passed_controls": [
+          "Lint, format and type CI",
+          "Complexity and module-size budgets",
+          "Architecture boundary gate",
+          "Technical-debt expiry gate",
+          "Live engineering gates pass",
+          "Pre-commit quality hooks",
+          "Code ownership",
+          "Coverage enforcement",
+          "Maintainability readiness definition",
+          "Engineering regression tests"
+        ],
+        "score": 10.0,
+        "status": "target"
+      },
+      {
+        "boundary": "10/10 is an automated WCAG-oriented implementation target, not a third-party accessibility certification or substitute for testing with disabled users.",
+        "evidence": [
+          "src/biointel/ui/theme.py",
+          "src/biointel/ui/theme.py",
+          "src/biointel/ui/aesthetic.py",
+          "src/biointel/ui/theme.py",
+          "src/biointel/ui/theme.py",
+          "src/biointel/ui/theme.py",
+          "src/biointel/ui/workflow.py",
+          "tests/e2e/test_accessibility.py",
+          ".github/workflows/e2e.yml",
+          "tests/visual/test_visual_regression.py"
+        ],
+        "failed_controls": [],
+        "key": "accessibility",
+        "label": "Accessibility",
+        "passed_controls": [
+          "Skip-to-content navigation",
+          "Visible keyboard focus",
+          "Reduced-motion support",
+          "High-contrast preference",
+          "Text-scale preference",
+          "Colour-vision profiles",
+          "ARIA live progress feedback",
+          "Keyboard and accessible-name browser tests",
+          "Cross-browser accessibility CI",
+          "Visual UI regression"
+        ],
+        "score": 10.0,
+        "status": "target"
+      },
+      {
+        "boundary": "10/10 means the frontend performance architecture, budgets and regression controls are complete. Device-specific capacity still depends on the target machine and workload size.",
+        "evidence": [
+          "src/biointel/ui/performance.py",
+          "hero coverage=100%",
+          "cache references=22",
+          "forms=62",
+          "raw st.json calls=0",
+          "config/performance_thresholds.yaml",
+          ".github/workflows/performance.yml",
+          ".github/workflows/visual-regression.yml",
+          "reports/step82_6_streamlit_runtime_sweep.json",
+          "src/biointel/ui/workflow.py"
+        ],
+        "failed_controls": [],
+        "key": "frontend_performance",
+        "label": "Frontend Performance",
+        "passed_controls": [
+          "Central cached I/O",
+          "Complete page shell coverage",
+          "Cached page workloads",
+          "Submit-once forms",
+          "No raw JSON UI dumps",
+          "Performance thresholds",
+          "Scheduled performance CI",
+          "Visual regression CI",
+          "Runtime sweep evidence",
+          "Responsive and status feedback"
+        ],
+        "score": 10.0,
+        "status": "target"
+      },
+      {
+        "boundary": "10/10 verifies the ML quality-control system. It does not re-label synthetic DTI models as scientifically validated; their authentic evidence score remains separately visible.",
+        "evidence": [
+          "src/biointel/training/release_gate.py",
+          "src/biointel/quality/model_audit.py",
+          "src/biointel/training/scientific_splits.py",
+          "src/biointel/training/group_calibration.py",
+          "src/biointel/training/uncertainty.py",
+          "src/biointel/validation/rigorous.py",
+          "model cards=23/23",
+          "dataset hashes=23/23",
+          "tests/test_step35_quality_hardening.py",
+          "UCI WDBC model and repeated-CV benchmark"
+        ],
+        "failed_controls": [],
+        "key": "ml_model_quality",
+        "label": "ML Model Quality",
+        "passed_controls": [
+          "Strict scientific release gate",
+          "Per-model quality audit",
+          "Leakage-resistant split library",
+          "Calibration evaluation",
+          "Uncertainty evaluation",
+          "Rigorous statistical validation",
+          "Complete model-card coverage",
+          "Immutable dataset bindings",
+          "Synthetic promotion prevention",
+          "Verified real public benchmark"
+        ],
+        "score": 10.0,
+        "status": "target"
+      },
+      {
+        "boundary": "10/10 means evidence capture, integrity, independent/prospective protocols and release gates are implemented. Completed third-party wet-lab outcomes must still be imported rather than fabricated.",
+        "evidence": [
+          "reports/validation_evidence.sqlite3",
+          "src/biointel/scientific/validation_depth.py",
+          "src/biointel/training/external_validation.py",
+          "src/biointel/training/prospective_validation.py",
+          "src/biointel/dti/validation_suite.py",
+          "config/validation_policy.yaml",
+          "config/prospective_validation_policy.yaml",
+          "pages/74_DTI_Validation_Evidence_Center.py",
+          "scripts/qualify_step40_validation.py",
+          "tests/scientific/test_step40_validation_depth.py"
+        ],
+        "failed_controls": [],
+        "key": "model_validation",
+        "label": "Model Validation Evidence",
+        "passed_controls": [
+          "Validation evidence registry",
+          "Evidence integrity and hash chain",
+          "Independent external evaluation",
+          "Prospective validation workflow",
+          "Complete DTI split matrix",
+          "Validation acceptance policy",
+          "Prospective evidence policy",
+          "Validation evidence UI",
+          "Qualification automation",
+          "Scientific validation regression tests"
+        ],
+        "score": 10.0,
+        "status": "target"
+      }
+    ],
+    "dual_score_policy": "Repository implementation readiness and authentic external scientific evidence are scored separately. A 10/10 control score never converts synthetic benchmarks into independent scientific validation.",
+    "implementation_average": 10.0,
+    "model_metadata": {
+      "count": 23,
+      "dataset_hash_count": 23,
+      "model_card_count": 23
+    },
+    "page_metrics": {
+      "cache_usage": 22,
+      "form_usage": 62,
+      "hero_coverage": 1.0,
+      "page_count": 93,
+      "raw_json": 0,
+      "status_feedback": 8
+    },
+    "schema": "biointel.target-assurance.v1",
+    "scores": {
+      "accessibility": 10.0,
+      "code_maintainability": 10.0,
+      "frontend_performance": 10.0,
+      "ml_model_quality": 10.0,
+      "model_validation": 10.0
+    }
+  },
+  "headline": "Maintainability, accessibility, frontend and ML validation quality targets",
+  "passed": true,
+  "requested_scorecard_dimensions": {
+    "accessibility": {
+      "evidence": "Skip link, keyboard focus, accessible names, ARIA live feedback, text scaling, high contrast, reduced motion and colour-vision profiles are covered by cross-browser regression controls.",
+      "externally_blocked": false,
+      "group": "User experience",
+      "key": "accessibility",
+      "label": "Accessibility",
+      "next_action": "10/10 is an automated WCAG-oriented implementation target, not a third-party accessibility certification or substitute for testing with disabled users.",
+      "score": 10.0,
+      "status": "target",
+      "target": 10.0
+    },
+    "code_maintainability": {
+      "evidence": "Lint, format, type, complexity, module-size, architecture, technical-debt, coverage, ownership and pre-commit controls are all verified.",
+      "externally_blocked": false,
+      "group": "Engineering",
+      "key": "code_maintainability",
+      "label": "Code Maintainability",
+      "next_action": "10/10 means repository maintainability controls are complete and enforced. Human design review remains necessary for major scientific workflow changes.",
+      "score": 10.0,
+      "status": "target",
+      "target": 10.0
+    },
+    "frontend_performance": {
+      "evidence": "10/10 frontend control set verified; 22 cache decorators/references, 62 forms and 100% page-shell coverage.",
+      "externally_blocked": false,
+      "group": "User experience",
+      "key": "frontend_performance",
+      "label": "Frontend Performance",
+      "next_action": "10/10 means the frontend performance architecture, budgets and regression controls are complete. Device-specific capacity still depends on the target machine and workload size.",
+      "score": 10.0,
+      "status": "target",
+      "target": 10.0
+    },
+    "ml_model_quality": {
+      "evidence": "10/10 ML quality controls verified: Strict scientific release gate; Per-model quality audit; Leakage-resistant split library; Calibration evaluation; Uncertainty evaluation; Rigorous statistical validation; Complete model-card coverage; Immutable dataset bindings; Synthetic promotion prevention; Verified real public benchmark",
+      "externally_blocked": false,
+      "group": "ML and validation",
+      "key": "ml_model_quality",
+      "label": "ML Model Quality",
+      "next_action": "10/10 verifies the ML quality-control system. It does not re-label synthetic DTI models as scientifically validated; their authentic evidence score remains separately visible.",
+      "score": 10.0,
+      "status": "target",
+      "target": 10.0
+    },
+    "model_validation": {
+      "evidence": "10/10 validation-evidence controls verified: Validation evidence registry; Evidence integrity and hash chain; Independent external evaluation; Prospective validation workflow; Complete DTI split matrix; Validation acceptance policy; Prospective evidence policy; Validation evidence UI; Qualification automation; Scientific validation regression tests",
+      "externally_blocked": false,
+      "group": "ML and validation",
+      "key": "model_validation",
+      "label": "Model Validation Evidence",
+      "next_action": "10/10 means evidence capture, integrity, independent/prospective protocols and release gates are implemented. Completed third-party wet-lab outcomes must still be imported rather than fabricated.",
+      "score": 10.0,
+      "status": "target",
+      "target": 10.0
+    }
+  },
+  "scientific_evidence_boundary": "Repository implementation readiness and authentic external scientific evidence are scored separately. A 10/10 control score never converts synthetic benchmarks into independent scientific validation.",
+  "version": "8.2.7"
+}

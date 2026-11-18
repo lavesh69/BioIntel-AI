@@ -1,0 +1,523 @@
+{
+  "api": {
+    "case_count": 9,
+    "cases": [
+      {
+        "name": "project",
+        "passed": true,
+        "status_code": 200
+      },
+      {
+        "name": "compound",
+        "passed": true,
+        "status_code": 200
+      },
+      {
+        "name": "ranking",
+        "passed": true,
+        "status_code": 200
+      },
+      {
+        "name": "bundle",
+        "passed": true,
+        "status_code": 200
+      },
+      {
+        "name": "standardize",
+        "passed": true,
+        "status_code": 200
+      },
+      {
+        "name": "similarity",
+        "passed": true,
+        "status_code": 200
+      },
+      {
+        "name": "endpoint model",
+        "passed": true,
+        "status_code": 200
+      },
+      {
+        "name": "docking gate",
+        "passed": true,
+        "status_code": 200
+      },
+      {
+        "name": "capabilities",
+        "passed": true,
+        "status_code": 200
+      }
+    ],
+    "passed_cases": 9,
+    "subprocess": {
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-c",
+        "\nimport json, os, tempfile\nfrom pathlib import Path\nfrom fastapi.testclient import TestClient\nfrom biointel.api import main as api_main\nwith tempfile.TemporaryDirectory() as temp:\n    api_main.DISCOVERY_DATABASE = Path(temp) / \"discovery.sqlite3\"\n    client = TestClient(api_main.app)\n    results = []\n    created = client.post(\"/discovery/projects\", json={\"project_name\": \"Qualification\", \"indication\": \"test\"})\n    project_id = created.json().get(\"project\", {}).get(\"project_id\", \"\")\n    results.append({\"name\": \"project\", \"status_code\": created.status_code, \"passed\": created.status_code == 200 and bool(project_id)})\n    compound = client.post(f\"/discovery/projects/{project_id}/compounds\", json={\"compound_id\": \"ethanol\", \"smiles\": \"CCO\"})\n    results.append({\"name\": \"compound\", \"status_code\": compound.status_code, \"passed\": compound.status_code == 200})\n    ranking = client.post(f\"/discovery/projects/{project_id}/rankings\", json={\"benefit_columns\": {\"developability_score\": 0.7, \"qed\": 0.3}, \"cost_columns\": {}})\n    results.append({\"name\": \"ranking\", \"status_code\": ranking.status_code, \"passed\": ranking.status_code == 200})\n    bundle = client.get(f\"/discovery/projects/{project_id}/bundle\")\n    results.append({\"name\": \"bundle\", \"status_code\": bundle.status_code, \"passed\": bundle.status_code == 200 and bundle.headers.get(\"content-type\") == \"application/zip\"})\n    standardize = client.post(\"/discovery/standardize-batch\", json={\"rows\": [{\"compound_id\": \"a\", \"smiles\": \"CC(=O)[O-].[Na+]\"}, {\"compound_id\": \"bad\", \"smiles\": \"not-smiles\"}], \"preparation_mode\": \"physiological_context\", \"ph\": 7.4})\n    results.append({\"name\": \"standardize\", \"status_code\": standardize.status_code, \"passed\": standardize.status_code == 200 and len(standardize.json().get(\"failures\", [])) == 1})\n    similarity = client.post(\"/discovery/similarity\", json={\"query_smiles\": \"CCO\", \"rows\": [{\"name\": \"ethanol\", \"smiles\": \"CCO\"}, {\"name\": \"benzene\", \"smiles\": \"c1ccccc1\"}], \"smiles_column\": \"smiles\", \"name_column\": \"name\", \"top_n\": 2})\n    results.append({\"name\": \"similarity\", \"status_code\": similarity.status_code, \"passed\": similarity.status_code == 200 and len(similarity.json().get(\"hits\", [])) == 2})\n    card = {\n        \"model_id\": \"herg-qualified\", \"endpoint\": \"hERG\", \"version\": \"1.0\",\n        \"artifact_sha256\": \"a\" * 64, \"training_dataset_sha256\": \"b\" * 64,\n        \"licence\": \"documented\", \"endpoint_definition\": \"locked binary endpoint\", \"units\": \"probability\",\n        \"split_strategies\": [\"scaffold\", \"external\"], \"metrics\": {\"roc_auc\": 0.8},\n        \"calibration\": {\"ece\": 0.04}, \"applicability_domain\": {\"method\": \"distance\"},\n        \"independent_validation\": {\"dataset\": \"external\"}, \"intended_use\": \"screening\", \"limitations\": [\"not clinical\"]\n    }\n    qualify = client.post(\"/discovery/admet-models/qualify\", json=card)\n    listed = client.get(\"/discovery/admet-models\")\n    results.append({\"name\": \"endpoint model\", \"status_code\": qualify.status_code, \"passed\": qualify.status_code == 200 and qualify.json().get(\"eligible\") is True and listed.json().get(\"count\") == 1})\n    docking = client.post(\"/discovery/docking/qualify\", json={\"receptor_prepared\": True, \"ligand_prepared\": True, \"grid_defined\": True, \"reference_ligand_available\": True, \"redocking_rmsd_angstrom\": 1.5, \"enrichment_factor_1_percent\": 5, \"pose_review_completed\": True, \"protocol\": {\"engine\": \"qualified external engine\"}})\n    results.append({\"name\": \"docking gate\", \"status_code\": docking.status_code, \"passed\": docking.status_code == 200 and docking.json().get(\"qualified\") is True})\n    capabilities = client.get(\"/discovery/capabilities\")\n    results.append({\"name\": \"capabilities\", \"status_code\": capabilities.status_code, \"passed\": capabilities.status_code == 200 and capabilities.json().get(\"persistent_projects\") is True})\nreport = {\"case_count\": len(results), \"passed_cases\": sum(bool(x[\"passed\"]) for x in results), \"cases\": results}\nprint(\"__STEP63_API_JSON__\" + json.dumps(report), flush=True)\nos._exit(0)\n"
+      ],
+      "elapsed_seconds": 3.882,
+      "passed": true,
+      "returncode": 0,
+      "stderr_tail": "[14:12:33] SMILES Parse Error: syntax error while parsing: not-smiles\n[14:12:33] SMILES Parse Error: check for mistakes around position 3:\n[14:12:33] not-smiles\n[14:12:33] ~~^\n[14:12:33] SMILES Parse Error: Failed parsing SMILES 'not-smiles' for input: 'not-smiles'\n",
+      "stdout_tail": "__STEP63_API_JSON__{\"case_count\": 9, \"passed_cases\": 9, \"cases\": [{\"name\": \"project\", \"status_code\": 200, \"passed\": true}, {\"name\": \"compound\", \"status_code\": 200, \"passed\": true}, {\"name\": \"ranking\", \"status_code\": 200, \"passed\": true}, {\"name\": \"bundle\", \"status_code\": 200, \"passed\": true}, {\"name\": \"standardize\", \"status_code\": 200, \"passed\": true}, {\"name\": \"similarity\", \"status_code\": 200, \"passed\": true}, {\"name\": \"endpoint model\", \"status_code\": 200, \"passed\": true}, {\"name\": \"docking gate\", \"status_code\": 200, \"passed\": true}, {\"name\": \"capabilities\", \"status_code\": 200, \"passed\": true}]}\n",
+      "timed_out": false
+    }
+  },
+  "core_coverage_tests": {
+    "command": [
+      "/opt/pyvenv/bin/python",
+      "-c",
+      "import os, pytest, sys; code=pytest.main(['-q', 'tests/test_step63_discovery_excellence.py', '--cov=biointel.discovery.workflow', '--cov=biointel.discovery.registry', '--cov=biointel.discovery.target_intelligence', '--cov=biointel.discovery.preparation', '--cov=biointel.discovery.admet_plugins', '--cov=biointel.discovery.docking', '--cov=biointel.chemistry.chemical_space', '--cov=biointel.structural.pockets', '--cov-report=json:reports/step63_discovery_core_coverage.json', '--cov-report=term', '--cov-fail-under=85']); sys.stdout.flush(); sys.stderr.flush(); os._exit(int(code))"
+    ],
+    "elapsed_seconds": 16.558,
+    "passed": true,
+    "returncode": 0,
+    "stderr_tail": "",
+    "stdout_tail": "located.\n  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.\n\ntests/test_step63_discovery_excellence.py::test_dti_page_requires_exploratory_acknowledgement\n  /usr/lib/python3.13/ast.py:50: ResourceWarning:\n  \n  unclosed database in <sqlite3.Connection object at 0x7fd931b1e200>\n  \n  Enable tracemalloc to get traceback where the object was allocated.\n  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.\n\ntests/test_step63_discovery_excellence.py::test_dti_page_requires_exploratory_acknowledgement\n  /usr/lib/python3.13/ast.py:50: ResourceWarning:\n  \n  unclosed database in <sqlite3.Connection object at 0x7fd931b1e110>\n  \n  Enable tracemalloc to get traceback where the object was allocated.\n  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.\n\ntests/test_step63_discovery_excellence.py::test_dti_page_requires_exploratory_acknowledgement\n  /usr/lib/python3.13/ast.py:50: ResourceWarning:\n  \n  unclosed database in <sqlite3.Connection object at 0x7fd931b1e020>\n  \n  Enable tracemalloc to get traceback where the object was allocated.\n  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.\n\ntests/test_step63_discovery_excellence.py::test_dti_page_requires_exploratory_acknowledgement\n  /usr/lib/python3.13/ast.py:50: ResourceWarning:\n  \n  unclosed database in <sqlite3.Connection object at 0x7fd931b1da80>\n  \n  Enable tracemalloc to get traceback where the object was allocated.\n  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.\n\ntests/test_step63_discovery_excellence.py::test_dti_page_requires_exploratory_acknowledgement\n  /usr/lib/python3.13/ast.py:50: ResourceWarning:\n  \n  unclosed database in <sqlite3.Connection object at 0x7fd9301a4c70>\n  \n  Enable tracemalloc to get traceback where the object was allocated.\n  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.\n\ntests/test_step63_discovery_excellence.py::test_dti_page_requires_exploratory_acknowledgement\n  /usr/lib/python3.13/ast.py:50: ResourceWarning:\n  \n  unclosed database in <sqlite3.Connection object at 0x7fd9301a4b80>\n  \n  Enable tracemalloc to get traceback where the object was allocated.\n  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.\n\ntests/test_step63_discovery_excellence.py::test_dti_page_requires_exploratory_acknowledgement\n  /usr/lib/python3.13/ast.py:50: ResourceWarning:\n  \n  unclosed database in <sqlite3.Connection object at 0x7fd9301a48b0>\n  \n  Enable tracemalloc to get traceback where the object was allocated.\n  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.\n\ntests/test_step63_discovery_excellence.py::test_dti_page_requires_exploratory_acknowledgement\n  /usr/lib/python3.13/ast.py:50: ResourceWarning:\n  \n  unclosed database in <sqlite3.Connection object at 0x7fd9301a65c0>\n  \n  Enable tracemalloc to get traceback where the object was allocated.\n  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.\n\ntests/test_step63_discovery_excellence.py::test_dti_page_requires_exploratory_acknowledgement\n  /usr/lib/python3.13/ast.py:50: ResourceWarning:\n  \n  unclosed database in <sqlite3.Connection object at 0x7fd9301a6980>\n  \n  Enable tracemalloc to get traceback where the object was allocated.\n  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.\n\ntests/test_step63_discovery_excellence.py::test_dti_page_requires_exploratory_acknowledgement\n  /usr/lib/python3.13/ast.py:50: ResourceWarning:\n  \n  unclosed database in <sqlite3.Connection object at 0x7fd9301a6890>\n  \n  Enable tracemalloc to get traceback where the object was allocated.\n  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.\n\ntests/test_step63_discovery_excellence.py::test_dti_page_requires_exploratory_acknowledgement\n  /usr/lib/python3.13/ast.py:50: ResourceWarning:\n  \n  unclosed database in <sqlite3.Connection object at 0x7fd9301a6c50>\n  \n  Enable tracemalloc to get traceback where the object was allocated.\n  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n================================ tests coverage ================================\n_______________ coverage: platform linux, python 3.13.5-final-0 ________________\n\nName                                            Stmts   Miss Branch BrPart  Cover   Missing\n-------------------------------------------------------------------------------------------\nsrc/biointel/chemistry/chemical_space.py           91      5     38      4    93%   27, 80, 127, 131-132\nsrc/biointel/discovery/admet_plugins.py            75      1     24      1    98%   43\nsrc/biointel/discovery/docking.py                  48      2     16      4    91%   32->34, 34->36, 69, 75\nsrc/biointel/discovery/preparation.py              71      5     20      4    90%   65, 67, 88-89, 115\nsrc/biointel/discovery/registry.py                187      0     46      3    99%   286->297, 336->339, 488->491\nsrc/biointel/discovery/target_intelligence.py      99      2     26      1    98%   200, 215\nsrc/biointel/discovery/workflow.py                171      6     64      3    96%   180, 202-204, 221, 241\nsrc/biointel/structural/pockets.py                 36      4     16      4    85%   20, 77, 87, 94\n-------------------------------------------------------------------------------------------\nTOTAL                                             778     25    250     24    95%\nCoverage JSON written to file reports/step63_discovery_core_coverage.json\nRequired test coverage of 85% reached. Total coverage: 95.23%\n24 passed, 68 warnings in 13.55s\n",
+    "timed_out": false
+  },
+  "coverage": {
+    "covered_branches": 226,
+    "covered_lines": 753,
+    "excluded_lines": 0,
+    "missing_branches": 24,
+    "missing_lines": 25,
+    "num_branches": 250,
+    "num_partial_branches": 24,
+    "num_statements": 778,
+    "percent_branches_covered": 90.4,
+    "percent_branches_covered_display": "90",
+    "percent_covered": 95.23346303501945,
+    "percent_covered_display": "95",
+    "percent_statements_covered": 96.7866323907455,
+    "percent_statements_covered_display": "97"
+  },
+  "database_health": {
+    "database_count": 22,
+    "databases": [
+      {
+        "foreign_key_violations": 0,
+        "integrity": "ok",
+        "path": "data/discovery_projects.sqlite3",
+        "row_count": 0,
+        "table_count": 7
+      },
+      {
+        "foreign_key_violations": 0,
+        "integrity": "ok",
+        "path": "data/lab_analytics.sqlite3",
+        "row_count": 0,
+        "table_count": 3
+      },
+      {
+        "foreign_key_violations": 0,
+        "integrity": "ok",
+        "path": "reports/analytics.sqlite3",
+        "row_count": 17690,
+        "table_count": 5
+      },
+      {
+        "foreign_key_violations": 0,
+        "integrity": "ok",
+        "path": "reports/api_security.sqlite3",
+        "row_count": 404,
+        "table_count": 5
+      },
+      {
+        "foreign_key_violations": 0,
+        "integrity": "ok",
+        "path": "reports/assets.sqlite3",
+        "row_count": 20547,
+        "table_count": 11
+      },
+      {
+        "foreign_key_violations": 0,
+        "integrity": "ok",
+        "path": "reports/biotechnology_project_runs.sqlite3",
+        "row_count": 0,
+        "table_count": 2
+      },
+      {
+        "foreign_key_violations": 0,
+        "integrity": "ok",
+        "path": "reports/connected_sources.sqlite3",
+        "row_count": 0,
+        "table_count": 4
+      },
+      {
+        "foreign_key_violations": 0,
+        "integrity": "ok",
+        "path": "reports/datasets.sqlite3",
+        "row_count": 4879,
+        "table_count": 13
+      },
+      {
+        "foreign_key_violations": 0,
+        "integrity": "ok",
+        "path": "reports/document_history.sqlite3",
+        "row_count": 1973,
+        "table_count": 14
+      },
+      {
+        "foreign_key_violations": 0,
+        "integrity": "ok",
+        "path": "reports/evidence.sqlite3",
+        "row_count": 3891,
+        "table_count": 10
+      },
+      {
+        "foreign_key_violations": 0,
+        "integrity": "ok",
+        "path": "reports/experiments.sqlite3",
+        "row_count": 783,
+        "table_count": 9
+      },
+      {
+        "foreign_key_violations": 0,
+        "integrity": "ok",
+        "path": "reports/feature_cache.sqlite3",
+        "row_count": 1293,
+        "table_count": 2
+      },
+      {
+        "foreign_key_violations": 0,
+        "integrity": "ok",
+        "path": "reports/internet_downloads.sqlite3",
+        "row_count": 105,
+        "table_count": 5
+      },
+      {
+        "foreign_key_violations": 0,
+        "integrity": "ok",
+        "path": "reports/jobs.sqlite3",
+        "row_count": 884,
+        "table_count": 6
+      },
+      {
+        "foreign_key_violations": 0,
+        "integrity": "ok",
+        "path": "reports/knowledge.sqlite3",
+        "row_count": 38427,
+        "table_count": 10
+      },
+      {
+        "foreign_key_violations": 0,
+        "integrity": "ok",
+        "path": "reports/projects.sqlite3",
+        "row_count": 688,
+        "table_count": 7
+      },
+      {
+        "foreign_key_violations": 0,
+        "integrity": "ok",
+        "path": "reports/prospective_validation.sqlite3",
+        "row_count": 0,
+        "table_count": 4
+      },
+      {
+        "foreign_key_violations": 0,
+        "integrity": "ok",
+        "path": "reports/realworld_evidence.sqlite3",
+        "row_count": 9,
+        "table_count": 6
+      },
+      {
+        "foreign_key_violations": 0,
+        "integrity": "ok",
+        "path": "reports/relationships.sqlite3",
+        "row_count": 2291,
+        "table_count": 4
+      },
+      {
+        "foreign_key_violations": 0,
+        "integrity": "ok",
+        "path": "reports/scientific_evidence.sqlite3",
+        "row_count": 12903,
+        "table_count": 5
+      },
+      {
+        "foreign_key_violations": 0,
+        "integrity": "ok",
+        "path": "reports/tenants.sqlite3",
+        "row_count": 3,
+        "table_count": 4
+      },
+      {
+        "foreign_key_violations": 0,
+        "integrity": "ok",
+        "path": "reports/validation_evidence.sqlite3",
+        "row_count": 12,
+        "table_count": 8
+      }
+    ],
+    "foreign_key_violations": 0,
+    "healthy_databases": 22,
+    "row_count": 106782
+  },
+  "external_boundaries": [
+    "Independent wet-lab potency, selectivity, ADME and toxicity results",
+    "Qualified endpoint model artifacts and independent validation datasets",
+    "Validated docking engine/protocol execution and expert pose review",
+    "Patent freedom-to-operate legal opinion",
+    "Regulatory approval and prospective clinical or laboratory validation"
+  ],
+  "files": {
+    "pages/13_ChEMBL_Dataset_Builder.py": {
+      "exists": true,
+      "sha256": "ee162893aaa136b8d89697d652efdf7b555fd2207cb02089e182f9278eed8993"
+    },
+    "pages/61_Structural_Bioinformatics.py": {
+      "exists": true,
+      "sha256": "ccb3fc7c4e02d0ffe667559fee44e7ec1c0a39abbdffcac97d244369f8bad978"
+    },
+    "pages/62_ADMET_Drug_Discovery.py": {
+      "exists": true,
+      "sha256": "2586c1fbb601933896575e7f121051b09416b13972e2de21d7ddf19a023a3838"
+    },
+    "pages/6_DTI_Predictor.py": {
+      "exists": true,
+      "sha256": "94f744a59b1cb2397abfb45e041bf9aa923e15e328090fe1034d471a9b19a831"
+    },
+    "pages/88_Discovery_Command_Center.py": {
+      "exists": true,
+      "sha256": "a644087fe4e622906a9d2821821a8c991089f68a8e68c76c7ed28f9b96cf3cb9"
+    },
+    "src/biointel/api/main.py": {
+      "exists": true,
+      "sha256": "254efa4d285e413f0a2d510e7a6102069ed46372e012583ff43839ff1feec5f9"
+    },
+    "src/biointel/api/schemas.py": {
+      "exists": true,
+      "sha256": "f943beab8ef78f6b14d54997f6af25a4215fcbce61530d3ae9e93911b6872e8f"
+    },
+    "src/biointel/chemistry/admet.py": {
+      "exists": true,
+      "sha256": "4359c15fa1123facbcfc840f5e31ec5c3d0326d362c2ec93f4d08d7373a88ebd"
+    },
+    "src/biointel/chemistry/chemical_space.py": {
+      "exists": true,
+      "sha256": "c505c5fd7316ecc2386e22ea5c8b52cf18128fcac3f6f08e470a061dbb1249f1"
+    },
+    "src/biointel/chemistry/standardization.py": {
+      "exists": true,
+      "sha256": "73e0432dbd15b3953e0f0225e01eb0d47b7664f303f1d334407954028313c2af"
+    },
+    "src/biointel/discovery/admet_plugins.py": {
+      "exists": true,
+      "sha256": "66e263d162ad1c5c88414e37b040123b77f60df573a1457ff4fe57decc82c628"
+    },
+    "src/biointel/discovery/docking.py": {
+      "exists": true,
+      "sha256": "7b208cc487d35661d89f89f1c11ecf23d7483246c09fa697f57fc587755a905f"
+    },
+    "src/biointel/discovery/lead_optimization.py": {
+      "exists": true,
+      "sha256": "a8be04dc9bb7a2f8a5fe0a7ec2d76b6f4543bd54e2db03b10882864c433efa9b"
+    },
+    "src/biointel/discovery/preparation.py": {
+      "exists": true,
+      "sha256": "264dafe5f6f37f148e61efa42cf535f0ebd984a3ac882001c8ecfb7cadba9eb9"
+    },
+    "src/biointel/discovery/registry.py": {
+      "exists": true,
+      "sha256": "64a4173397f4340f8b854601c6da43a5144daa32ca28c293d4ded5b706604c31"
+    },
+    "src/biointel/discovery/target_intelligence.py": {
+      "exists": true,
+      "sha256": "55158d66d85674e7db14658b38f6c7efa34363fe2a8d765a76fc6d12e2c065c5"
+    },
+    "src/biointel/discovery/workflow.py": {
+      "exists": true,
+      "sha256": "5b0c1d016c279978177baa46ae0dba397654558e1970ae9f0d3931eab12f6ccd"
+    },
+    "src/biointel/integrations/chembl_dataset.py": {
+      "exists": true,
+      "sha256": "cb1415dc289cae58b179bb485ba604a9a9471814a1bc98e83ef03ec150f24224"
+    },
+    "src/biointel/jobs/worker.py": {
+      "exists": true,
+      "sha256": "48fbc70f35bfcdfd029772754a845229e64a4cc283386a7f16da8581cd77a90b"
+    },
+    "src/biointel/structural/pockets.py": {
+      "exists": true,
+      "sha256": "e19d4a70fbe164f6915e8b6b745f98bdde5f38c012c96d75f55d076c7b256dae"
+    },
+    "tests/test_step63_discovery_excellence.py": {
+      "exists": true,
+      "sha256": "f140602583913ab8b25576ce2a63a16f711d1560d8f24806fd5bdf96662cce57"
+    }
+  },
+  "generated_at_utc": "2026-07-06T14:12:38+00:00",
+  "legacy_regression_tests": {
+    "command": [
+      "/opt/pyvenv/bin/python",
+      "-c",
+      "import os, pytest, sys; code=pytest.main(['-q', 'tests/test_step61_discovery_excellence.py', 'tests/test_smiles_and_descriptors.py', 'tests/test_step22_internet_common_names.py', 'tests/test_step29_biotech_bioinformatics.py']); sys.stdout.flush(); sys.stderr.flush(); os._exit(int(code))"
+    ],
+    "elapsed_seconds": 14.003,
+    "passed": true,
+    "returncode": 0,
+    "stderr_tail": "",
+    "stdout_tail": "................................                                         [100%]\n32 passed in 11.57s\n",
+    "timed_out": false
+  },
+  "model_evidence_boundary": {
+    "model_count": 23,
+    "release_eligible_models": 0,
+    "statement": "Synthetic or release-blocked models remain exploratory and cannot be promoted by this qualification.",
+    "synthetic_models": 23
+  },
+  "navigation": {
+    "admet_discovery": {
+      "category": "Discovery",
+      "file_exists": true,
+      "path": "pages/62_ADMET_Drug_Discovery.py"
+    },
+    "chembl_builder": {
+      "category": "Discovery",
+      "file_exists": true,
+      "path": "pages/13_ChEMBL_Dataset_Builder.py"
+    },
+    "discovery_command_center": {
+      "category": "Discovery",
+      "file_exists": true,
+      "path": "pages/88_Discovery_Command_Center.py"
+    },
+    "drug_analyzer": {
+      "category": "Discovery",
+      "file_exists": true,
+      "path": "pages/3_Drug_SMILES_Analyzer.py"
+    },
+    "dti_features": {
+      "category": "Discovery",
+      "file_exists": true,
+      "path": "pages/4_DTI_Feature_Builder.py"
+    },
+    "dti_predictor": {
+      "category": "Discovery",
+      "file_exists": true,
+      "path": "pages/6_DTI_Predictor.py"
+    },
+    "pathway_network": {
+      "category": "Discovery",
+      "file_exists": true,
+      "path": "pages/63_Pathway_Network_Analysis.py"
+    },
+    "structural_bioinformatics": {
+      "category": "Discovery",
+      "file_exists": true,
+      "path": "pages/61_Structural_Bioinformatics.py"
+    }
+  },
+  "passed": true,
+  "performance": {
+    "elapsed_seconds": 2.083,
+    "failures": [],
+    "molecule_count": 200,
+    "molecules_per_second": 96.02,
+    "subprocess": {
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-c",
+        "\nimport json, os, time\nimport pandas as pd\nfrom pathlib import Path\nfrom biointel.chemistry.admet import profile_admet\nfrom biointel.discovery.preparation import prepare_molecular_states\nroot = Path.cwd()\nframe = pd.read_csv(root / \"data/coverage/molecule_analysis_library_1000.csv\").head(200)\nfailures = []\nstarted = time.perf_counter()\nfor index, smiles in enumerate(frame[\"canonical_smiles\"], start=1):\n    try:\n        state = prepare_molecular_states(str(smiles), mode=\"neutral_parent\")\n        profile_admet(state.standardized_parent_smiles)\n    except Exception as exc:\n        failures.append({\"row\": index, \"error\": str(exc)})\nelapsed = time.perf_counter() - started\nreport = {\"molecule_count\": len(frame), \"successes\": len(frame) - len(failures), \"failures\": failures, \"elapsed_seconds\": round(elapsed, 3), \"molecules_per_second\": round(len(frame) / elapsed, 2) if elapsed else None}\nprint(\"__STEP63_BENCH_JSON__\" + json.dumps(report), flush=True)\nos._exit(0)\n"
+      ],
+      "elapsed_seconds": 3.562,
+      "passed": true,
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "__STEP63_BENCH_JSON__{\"molecule_count\": 200, \"successes\": 200, \"failures\": [], \"elapsed_seconds\": 2.083, \"molecules_per_second\": 96.02}\n",
+      "timed_out": false
+    },
+    "successes": 200
+  },
+  "python_compilation": {
+    "command": [
+      "/opt/pyvenv/bin/python",
+      "-m",
+      "compileall",
+      "-q",
+      "app.py",
+      "pages",
+      "src",
+      "scripts",
+      "platform"
+    ],
+    "elapsed_seconds": 1.55,
+    "passed": true,
+    "returncode": 0,
+    "stderr_tail": "",
+    "stdout_tail": "",
+    "timed_out": false
+  },
+  "release": "BioIntel AI Step 63 Discovery Platform Excellence",
+  "ruff": {
+    "command": [
+      "/opt/pyvenv/bin/python",
+      "-m",
+      "ruff",
+      "check",
+      "."
+    ],
+    "elapsed_seconds": 1.475,
+    "passed": true,
+    "returncode": 0,
+    "stderr_tail": "",
+    "stdout_tail": "All checks passed!\n",
+    "timed_out": false
+  },
+  "schema": "biointel.step63.discovery-qualification.v1",
+  "secret_scan": {
+    "finding_count": 0,
+    "findings": [],
+    "passed": true,
+    "scanned_files": 1128
+  },
+  "streamlit": {
+    "passed_scenarios": 5,
+    "scenario_count": 5,
+    "scenarios": [
+      {
+        "exceptions": [],
+        "page": "pages/88_Discovery_Command_Center.py",
+        "passed": true
+      },
+      {
+        "exceptions": [],
+        "page": "pages/13_ChEMBL_Dataset_Builder.py",
+        "passed": true
+      },
+      {
+        "exceptions": [],
+        "page": "pages/61_Structural_Bioinformatics.py",
+        "passed": true
+      },
+      {
+        "exceptions": [],
+        "page": "pages/62_ADMET_Drug_Discovery.py",
+        "passed": true
+      },
+      {
+        "exceptions": [],
+        "exploratory_gate_present": true,
+        "page": "pages/6_DTI_Predictor.py",
+        "passed": true,
+        "prediction_disabled_without_acknowledgement": true
+      }
+    ],
+    "subprocess": {
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-c",
+        "\nimport json, os\nfrom pathlib import Path\nfrom streamlit.testing.v1 import AppTest\nroot = Path.cwd()\npages = [\n    \"pages/88_Discovery_Command_Center.py\",\n    \"pages/13_ChEMBL_Dataset_Builder.py\",\n    \"pages/61_Structural_Bioinformatics.py\",\n    \"pages/62_ADMET_Drug_Discovery.py\",\n    \"pages/6_DTI_Predictor.py\",\n]\nresults = []\nfor page in pages:\n    app = AppTest.from_file(str(root / page), default_timeout=90).run(timeout=90)\n    item = {\"page\": page, \"passed\": not app.exception, \"exceptions\": [x.message for x in app.exception]}\n    if page.endswith(\"6_DTI_Predictor.py\") and not app.exception:\n        acknowledgements = [x for x in app.checkbox if \"exploratory/demo-only\" in x.label]\n        buttons = [x for x in app.button if x.label == \"Predict interaction\"]\n        item[\"exploratory_gate_present\"] = bool(acknowledgements)\n        item[\"prediction_disabled_without_acknowledgement\"] = bool(buttons and buttons[0].disabled)\n        item[\"passed\"] = item[\"passed\"] and item[\"exploratory_gate_present\"] and item[\"prediction_disabled_without_acknowledgement\"]\n    results.append(item)\nreport = {\"scenario_count\": len(results), \"passed_scenarios\": sum(bool(x[\"passed\"]) for x in results), \"scenarios\": results}\nprint(\"__STEP63_UI_JSON__\" + json.dumps(report), flush=True)\nos._exit(0)\n"
+      ],
+      "elapsed_seconds": 6.458,
+      "passed": true,
+      "returncode": 0,
+      "stderr_tail": "2026-07-06 14:12:24.678 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n2026-07-06 14:12:28.198 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n2026-07-06 14:12:28.236 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n2026-07-06 14:12:28.691 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n2026-07-06 14:12:29.036 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "stdout_tail": "__STEP63_UI_JSON__{\"scenario_count\": 5, \"passed_scenarios\": 5, \"scenarios\": [{\"page\": \"pages/88_Discovery_Command_Center.py\", \"passed\": true, \"exceptions\": []}, {\"page\": \"pages/13_ChEMBL_Dataset_Builder.py\", \"passed\": true, \"exceptions\": []}, {\"page\": \"pages/61_Structural_Bioinformatics.py\", \"passed\": true, \"exceptions\": []}, {\"page\": \"pages/62_ADMET_Drug_Discovery.py\", \"passed\": true, \"exceptions\": []}, {\"page\": \"pages/6_DTI_Predictor.py\", \"passed\": true, \"exceptions\": [], \"exploratory_gate_present\": true, \"prediction_disabled_without_acknowledgement\": true}]}\n",
+      "timed_out": false
+    }
+  },
+  "version": "6.3.0",
+  "version_consistent": true
+}

@@ -1,0 +1,12 @@
+{
+  "benchmark": "reports/step38/uci_wdbc_real_benchmark.json",
+  "boundary": "Review-ready package without DOI or journal acceptance.",
+  "commands": [
+    "python scripts/run_step42_verifiable_evidence.py --skip-load",
+    "python scripts/qualify_step40_validation.py",
+    "pytest -q tests/scientific tests/operations"
+  ],
+  "generated_at": "2026-07-05T07:33:16.084757+00:00",
+  "schema": "biointel.step42.reproducibility.v1",
+  "scientific_qualification": "reports/step40_validation_qualification.json"
+}

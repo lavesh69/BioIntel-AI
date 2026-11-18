@@ -1,0 +1,123 @@
+{
+  "release": "BioIntel AI Step 57 Theme & Typography Expansion",
+  "theme_count": 17,
+  "new_theme_count": 10,
+  "font_count": 11,
+  "new_font_count": 10,
+  "remote_font_dependencies": 0,
+  "contrast_failures": [],
+  "ruff": "passed",
+  "python_compilation": "passed",
+  "focused_regression": "passed",
+  "database_count": 20,
+  "healthy_databases": 20,
+  "foreign_key_violations": 0,
+  "secret_scan": {
+    "passed": true,
+    "scanned_files": 1046,
+    "finding_count": 0,
+    "findings": []
+  },
+  "databases": [
+    {
+      "path": "reports/analytics.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0
+    },
+    {
+      "path": "reports/api_security.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0
+    },
+    {
+      "path": "reports/assets.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0
+    },
+    {
+      "path": "reports/biotechnology_project_runs.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0
+    },
+    {
+      "path": "reports/connected_sources.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0
+    },
+    {
+      "path": "reports/datasets.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0
+    },
+    {
+      "path": "reports/document_history.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0
+    },
+    {
+      "path": "reports/evidence.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0
+    },
+    {
+      "path": "reports/experiments.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0
+    },
+    {
+      "path": "reports/feature_cache.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0
+    },
+    {
+      "path": "reports/internet_downloads.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0
+    },
+    {
+      "path": "reports/jobs.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0
+    },
+    {
+      "path": "reports/knowledge.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0
+    },
+    {
+      "path": "reports/projects.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0
+    },
+    {
+      "path": "reports/prospective_validation.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0
+    },
+    {
+      "path": "reports/realworld_evidence.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0
+    },
+    {
+      "path": "reports/relationships.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0
+    },
+    {
+      "path": "reports/scientific_evidence.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0
+    },
+    {
+      "path": "reports/tenants.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0
+    },
+    {
+      "path": "reports/validation_evidence.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0
+    }
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "blockers": [],
+  "checks": [
+    {
+      "detail": {
+        "CITATION.cff": "15.6.0",
+        "VERSION": "15.6.0",
+        "codemeta.json": "15.6.0",
+        "platform/desktop/package.json": "15.6.0",
+        "pyproject.toml": "15.6.0",
+        "src/biointel/__init__.py": "15.6.0"
+      },
+      "name": "product version surface",
+      "passed": true,
+      "severity": "blocker"
+    },
+    {
+      "detail": {
+        "PACKAGE_GENERATION": "V19.6",
+        "PART_COUNT": "5",
+        "PRODUCT_VERSION": "15.6.0",
+        "RELEASE_STEP": "206",
+        "REQUIRED_PYTHON_TEXT": "CPython 3.11.9 x64"
+      },
+      "name": "physical installer contract preserved",
+      "passed": true,
+      "severity": "blocker"
+    },
+    {
+      "detail": [
+        ".release_parts/step206_part1.ok",
+        ".release_parts/step206_part2.ok",
+        ".release_parts/step206_part3.ok",
+        ".release_parts/step206_part4.ok",
+        ".release_parts/step206_part5.ok"
+      ],
+      "name": "five-part extraction markers",
+      "passed": true,
+      "severity": "blocker"
+    },
+    {
+      "detail": {
+        "bad_count": 0,
+        "bad_files": [],
+        "checked_hashes": 24263,
+        "deep_hashes": true,
+        "schema": "biointel.step206.windows-install-run-fix.source-manifest.v1",
+        "tracked_files": 24263
+      },
+      "name": "Step206 source manifest compatible",
+      "passed": true,
+      "severity": "blocker"
+    },
+    {
+      "detail": {
+        "bad_hashes": [],
+        "checked_hashes": 121,
+        "deep_hashes": true,
+        "manifest_present": true,
+        "missing_required_prefixes": [],
+        "path": "C:\\Users\\lavesh dobriyal\\Documents\\Codex\\2026-07-22\\bha\\work\\biointel_extract\\BioIntel-AI-15.6.0-Step206-WINDOWS-V19.6\\wheelhouse\\windows-cp311-x64",
+        "wheel_count": 121
+      },
+      "name": "offline Windows cp311 wheelhouse",
+      "passed": true,
+      "severity": "blocker"
+    },
+    {
+      "detail": {
+        "current_release_step216": true,
+        "engine_platform_retained": true,
+        "five_part_workflow_retained": true,
+        "readme_step216": true,
+        "step216_changelog": true
+      },
+      "name": "Step216 documentation",
+      "passed": true,
+      "severity": "blocker"
+    },
+    {
+      "detail": {
+        "page": "pages/9_Project_Status.py"
+      },
+      "name": "Project Status readiness panel",
+      "passed": true,
+      "severity": "blocker"
+    },
+    {
+      "detail": [
+        "VERIFY_STEP216_RELEASE_READINESS_WINDOWS.bat",
+        "scripts/step216_release_readiness.py",
+        "REPAIR_WINDOWS.bat",
+        "DIAGNOSE_WINDOWS.bat",
+        "SAFE_MODE_WINDOWS.bat",
+        "UNINSTALL_BIOINTEL_WINDOWS.bat",
+        "RUN_ULTIMATE_ACCEPTANCE_WINDOWS.bat"
+      ],
+      "name": "upgrade and recovery controls",
+      "passed": true,
+      "severity": "blocker"
+    },
+    {
+      "detail": {
+        "release": "Step216 Release Readiness and Metadata Assurance",
+        "release_step": 216,
+        "schema": "biointel.build-provenance.v216",
+        "version": "15.6.0"
+      },
+      "name": "build provenance upgraded",
+      "passed": true,
+      "severity": "blocker"
+    },
+    {
+      "detail": {
+        "external_engines_unqualified": true,
+        "not_clinical": true,
+        "target_machine_evidence": true
+      },
+      "name": "qualification boundary explicit",
+      "passed": true,
+      "severity": "blocker"
+    }
+  ],
+  "checks_passed": 10,
+  "checks_total": 10,
+  "claim_boundary": "Step216 is a software release-readiness upgrade. It does not claim clinical, regulatory, wet-lab, external-engine, model-weight or public-internet qualification.",
+  "generated_at_utc": "2026-07-22T15:48:30+00:00",
+  "package_generation": "V19.6.1",
+  "passed": true,
+  "physical_package_generation": "V19.6",
+  "physical_release_step": 206,
+  "product": "BioIntel AI",
+  "release_step": 216,
+  "root": "C:\\Users\\lavesh dobriyal\\Documents\\Codex\\2026-07-22\\bha\\work\\biointel_extract\\BioIntel-AI-15.6.0-Step206-WINDOWS-V19.6",
+  "schema": "biointel.step216.release-readiness.v1",
+  "score_percent": 100.0,
+  "version": "15.6.0",
+  "warnings": []
+}

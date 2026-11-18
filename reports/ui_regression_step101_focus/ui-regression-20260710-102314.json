@@ -1,0 +1,88 @@
+{
+  "checks": 8,
+  "failed": 0,
+  "generated_at_utc": "2026-07-10T10:23:14+00:00",
+  "mode": "full",
+  "page_count": 4,
+  "passed": 8,
+  "platform": "Linux-4.4.0-x86_64-with-glibc2.41",
+  "python": "3.13.5 (main, May  5 2026, 21:05:52) [GCC 14.2.0]",
+  "results": [
+    {
+      "detail": "",
+      "duration_ms": 5.110056999910739,
+      "exceptions": 0,
+      "mode": "static",
+      "page": "106_Reference_Database_Manager.py",
+      "status": "passed",
+      "warnings": [
+        "uploader may not use universal validation"
+      ]
+    },
+    {
+      "detail": "",
+      "duration_ms": 1541.5004839996982,
+      "exceptions": 0,
+      "mode": "apptest",
+      "page": "106_Reference_Database_Manager.py",
+      "status": "passed",
+      "warnings": []
+    },
+    {
+      "detail": "",
+      "duration_ms": 4.66814500032342,
+      "exceptions": 0,
+      "mode": "static",
+      "page": "111_Windows_UI_Regression_Performance_Center.py",
+      "status": "passed",
+      "warnings": []
+    },
+    {
+      "detail": "",
+      "duration_ms": 441.38097200084303,
+      "exceptions": 0,
+      "mode": "apptest",
+      "page": "111_Windows_UI_Regression_Performance_Center.py",
+      "status": "passed",
+      "warnings": []
+    },
+    {
+      "detail": "",
+      "duration_ms": 1.544789000035962,
+      "exceptions": 0,
+      "mode": "static",
+      "page": "26_Research_Report_Studio.py",
+      "status": "passed",
+      "warnings": []
+    },
+    {
+      "detail": "",
+      "duration_ms": 35.34831500110158,
+      "exceptions": 0,
+      "mode": "apptest",
+      "page": "26_Research_Report_Studio.py",
+      "status": "passed",
+      "warnings": []
+    },
+    {
+      "detail": "",
+      "duration_ms": 7.914035000794684,
+      "exceptions": 0,
+      "mode": "static",
+      "page": "44_Performance_Job_Center.py",
+      "status": "passed",
+      "warnings": []
+    },
+    {
+      "detail": "",
+      "duration_ms": 189.74014300147246,
+      "exceptions": 0,
+      "mode": "apptest",
+      "page": "44_Performance_Job_Center.py",
+      "status": "passed",
+      "warnings": []
+    }
+  ],
+  "schema_version": "1.0",
+  "warnings": 1
+}

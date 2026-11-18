@@ -1,0 +1,174 @@
+{
+  "schema": "biointel.step56-verification.v1",
+  "version": "6.0.0",
+  "tests": {
+    "collected": 468,
+    "passed": 452,
+    "skipped": 16,
+    "failed": 0,
+    "step56": {
+      "passed": 5,
+      "failed": 0
+    }
+  },
+  "quality": {
+    "ruff_findings": 0,
+    "python_compilation": "passed",
+    "secret_findings": 0,
+    "markdown_links": "passed"
+  },
+  "native": {
+    "mobile_web_build": "passed",
+    "mobile_npm_vulnerabilities": 0,
+    "desktop_npm_vulnerabilities": 0,
+    "android_target_sdk": 36,
+    "ios_privacy_manifest_embedded": true,
+    "windows_targets": [
+      "appx",
+      "nsis"
+    ]
+  },
+  "store": {
+    "internal_failures": 0,
+    "external_actions": 3,
+    "screenshots": {
+      "google_play": 3,
+      "apple": 3,
+      "microsoft": 3
+    },
+    "feature_graphic": true
+  },
+  "models": {
+    "manifest_count": 24,
+    "checksum_failures": 0
+  },
+  "databases": {
+    "count": 20,
+    "healthy": 20,
+    "foreign_key_violations": 0,
+    "total_rows": 106465,
+    "details": [
+      {
+        "path": "reports/analytics.sqlite3",
+        "integrity": "ok",
+        "foreign_key_violations": 0,
+        "rows": 17690
+      },
+      {
+        "path": "reports/api_security.sqlite3",
+        "integrity": "ok",
+        "foreign_key_violations": 0,
+        "rows": 94
+      },
+      {
+        "path": "reports/assets.sqlite3",
+        "integrity": "ok",
+        "foreign_key_violations": 0,
+        "rows": 20547
+      },
+      {
+        "path": "reports/biotechnology_project_runs.sqlite3",
+        "integrity": "ok",
+        "foreign_key_violations": 0,
+        "rows": 0
+      },
+      {
+        "path": "reports/connected_sources.sqlite3",
+        "integrity": "ok",
+        "foreign_key_violations": 0,
+        "rows": 0
+      },
+      {
+        "path": "reports/datasets.sqlite3",
+        "integrity": "ok",
+        "foreign_key_violations": 0,
+        "rows": 4879
+      },
+      {
+        "path": "reports/document_history.sqlite3",
+        "integrity": "ok",
+        "foreign_key_violations": 0,
+        "rows": 1973
+      },
+      {
+        "path": "reports/evidence.sqlite3",
+        "integrity": "ok",
+        "foreign_key_violations": 0,
+        "rows": 3891
+      },
+      {
+        "path": "reports/experiments.sqlite3",
+        "integrity": "ok",
+        "foreign_key_violations": 0,
+        "rows": 783
+      },
+      {
+        "path": "reports/feature_cache.sqlite3",
+        "integrity": "ok",
+        "foreign_key_violations": 0,
+        "rows": 1293
+      },
+      {
+        "path": "reports/internet_downloads.sqlite3",
+        "integrity": "ok",
+        "foreign_key_violations": 0,
+        "rows": 105
+      },
+      {
+        "path": "reports/jobs.sqlite3",
+        "integrity": "ok",
+        "foreign_key_violations": 0,
+        "rows": 878
+      },
+      {
+        "path": "reports/knowledge.sqlite3",
+        "integrity": "ok",
+        "foreign_key_violations": 0,
+        "rows": 38427
+      },
+      {
+        "path": "reports/projects.sqlite3",
+        "integrity": "ok",
+        "foreign_key_violations": 0,
+        "rows": 688
+      },
+      {
+        "path": "reports/prospective_validation.sqlite3",
+        "integrity": "ok",
+        "foreign_key_violations": 0,
+        "rows": 0
+      },
+      {
+        "path": "reports/realworld_evidence.sqlite3",
+        "integrity": "ok",
+        "foreign_key_violations": 0,
+        "rows": 8
+      },
+      {
+        "path": "reports/relationships.sqlite3",
+        "integrity": "ok",
+        "foreign_key_violations": 0,
+        "rows": 2291
+      },
+      {
+        "path": "reports/scientific_evidence.sqlite3",
+        "integrity": "ok",
+        "foreign_key_violations": 0,
+        "rows": 12903
+      },
+      {
+        "path": "reports/tenants.sqlite3",
+        "integrity": "ok",
+        "foreign_key_violations": 0,
+        "rows": 3
+      },
+      {
+        "path": "reports/validation_evidence.sqlite3",
+        "integrity": "ok",
+        "foreign_key_violations": 0,
+        "rows": 12
+      }
+    ]
+  },
+  "scientific_boundary": "Research and education only; not medical diagnosis or treatment advice."
+}

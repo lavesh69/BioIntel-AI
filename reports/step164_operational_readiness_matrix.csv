@@ -1,0 +1,81 @@
+schema,module_key,module_title,software_owned_score,native_research_workflow_ready,specialist_engines_required,specialist_engines_installed,specialist_runtime_ready,production_references_required,production_references_qualified,production_references_ready,task_specific_model_required,eligible_task_specific_models,task_specific_model_ready,independent_validation_complete,prospective_or_orthogonal_validation_complete,domain_expert_signoff_complete,release_review_complete,real_world_release_eligible,release_decision
+biointel.step164.module-operational-assessment.v1,amr_surveillance,AMR surveillance depth,10.0,True,5,0,False,4,0,False,False,0,True,False,False,False,False,False,research-only-fail-closed
+biointel.step164.module-operational-assessment.v1,antibody_biologics,Antibody engineering depth,10.0,True,2,0,False,3,0,False,False,0,True,False,False,False,False,False,research-only-fail-closed
+biointel.step164.module-operational-assessment.v1,autonomous_lab_planner,Laboratory experiment-planning depth,10.0,True,0,0,True,4,0,False,False,0,True,False,False,False,False,False,research-only-fail-closed
+biointel.step164.module-operational-assessment.v1,background_job_engine,Background execution depth,10.0,True,0,0,True,3,0,False,False,0,True,False,False,False,False,False,research-only-fail-closed
+biointel.step164.module-operational-assessment.v1,background_jobs_core,Background execution depth,10.0,True,0,0,True,3,0,False,False,0,True,False,False,False,False,False,research-only-fail-closed
+biointel.step164.module-operational-assessment.v1,benchmark_validation_v2,Benchmarking depth,10.0,True,0,0,True,3,0,False,False,0,True,False,False,False,False,False,research-only-fail-closed
+biointel.step164.module-operational-assessment.v1,bioimage_microscopy,Bioimage depth,10.0,True,2,0,False,3,0,False,False,0,True,False,False,False,False,False,research-only-fail-closed
+biointel.step164.module-operational-assessment.v1,biomedical_foundation_model_hub,Foundation-model hub depth,10.0,True,0,0,True,5,0,False,True,0,False,False,False,False,False,False,research-only-fail-closed
+biointel.step164.module-operational-assessment.v1,bioprocess_fermentation,Bioprocess depth,10.0,True,0,0,True,3,0,False,False,0,True,False,False,False,False,False,research-only-fail-closed
+biointel.step164.module-operational-assessment.v1,cancer_genomics_core,Cancer genomics depth,10.0,True,2,0,False,4,0,False,False,0,True,False,False,False,False,False,research-only-fail-closed
+biointel.step164.module-operational-assessment.v1,causal_perturbation,Causal inference depth,10.0,True,0,0,True,3,0,False,False,0,True,False,False,False,False,False,research-only-fail-closed
+biointel.step164.module-operational-assessment.v1,cell_atlas_mapping,Cell-atlas mapping depth,10.0,True,1,0,False,2,0,False,False,0,True,False,False,False,False,False,research-only-fail-closed
+biointel.step164.module-operational-assessment.v1,cell_therapy_cart,Cell-therapy and CAR-T depth,10.0,True,2,0,False,4,0,False,False,0,True,False,False,False,False,False,research-only-fail-closed
+biointel.step164.module-operational-assessment.v1,clinical_biomarker_survival,Clinical biomarker and survival depth,10.0,True,0,0,True,4,0,False,False,0,True,False,False,False,False,False,research-only-fail-closed
+biointel.step164.module-operational-assessment.v1,clinical_pharma_core,Clinical validation depth,10.0,True,0,0,True,3,0,False,False,0,True,False,False,False,False,False,research-only-fail-closed
+biointel.step164.module-operational-assessment.v1,clinical_trial_biomarker,Clinical biomarker depth,10.0,True,0,0,True,3,0,False,False,0,True,False,False,False,False,False,research-only-fail-closed
+biointel.step164.module-operational-assessment.v1,collaboration_review_v2,Scientific review depth,10.0,True,0,0,True,3,0,False,False,0,True,False,False,False,False,False,research-only-fail-closed
+biointel.step164.module-operational-assessment.v1,cross_module_workspace,Cross-module project depth,10.0,True,0,0,True,3,0,False,False,0,True,False,False,False,False,False,research-only-fail-closed
+biointel.step164.module-operational-assessment.v1,data_lakehouse_v2,Data lakehouse depth,10.0,True,0,0,True,3,0,False,False,0,True,False,False,False,False,False,research-only-fail-closed
+biointel.step164.module-operational-assessment.v1,digital_pathology_foundation,Digital pathology foundation-model depth,10.0,True,2,0,False,4,0,False,True,0,False,False,False,False,False,False,research-only-fail-closed
+biointel.step164.module-operational-assessment.v1,docking_dynamics,Docking and dynamics depth,10.0,True,3,0,False,3,0,False,False,0,True,False,False,False,False,False,research-only-fail-closed
+biointel.step164.module-operational-assessment.v1,document_intelligence_core,Document intelligence depth,10.0,True,0,0,True,3,0,False,False,0,True,False,False,False,False,False,research-only-fail-closed
+biointel.step164.module-operational-assessment.v1,enzyme_pathway_design,Enzyme/pathway design depth,10.0,True,1,0,False,3,0,False,False,0,True,False,False,False,False,False,research-only-fail-closed
+biointel.step164.module-operational-assessment.v1,epigenomics_chromatin,Epigenomics depth,10.0,True,4,0,False,3,0,False,False,0,True,False,False,False,False,False,research-only-fail-closed
+biointel.step164.module-operational-assessment.v1,epitranscriptomics,Epitranscriptomics depth,10.0,True,0,0,True,3,0,False,False,0,True,False,False,False,False,False,research-only-fail-closed
+biointel.step164.module-operational-assessment.v1,evidence_citation_engine,Evidence and citation depth,10.0,True,0,0,True,3,0,False,False,0,True,False,False,False,False,False,research-only-fail-closed
+biointel.step164.module-operational-assessment.v1,explainable_ai_assurance,Model assurance depth,10.0,True,0,0,True,3,0,False,True,0,False,False,False,False,False,False,research-only-fail-closed
+biointel.step164.module-operational-assessment.v1,federated_biomedical_ai,Federated biomedical AI depth,10.0,True,0,0,True,4,0,False,True,0,False,False,False,False,False,False,research-only-fail-closed
+biointel.step164.module-operational-assessment.v1,flow_cytometry,Flow-cytometry depth,10.0,True,0,0,True,4,0,False,False,0,True,False,False,False,False,False,research-only-fail-closed
+biointel.step164.module-operational-assessment.v1,gene_therapy_vector,Gene-therapy vector depth,10.0,True,0,0,True,4,0,False,False,0,True,False,False,False,False,False,research-only-fail-closed
+biointel.step164.module-operational-assessment.v1,genome_editing_safety,Genome-editing safety depth,10.0,True,3,0,False,3,0,False,False,0,True,False,False,False,False,False,research-only-fail-closed
+biointel.step164.module-operational-assessment.v1,glycomics_glycoproteomics,Glycomics depth,10.0,True,1,0,False,3,0,False,False,0,True,False,False,False,False,False,research-only-fail-closed
+biointel.step164.module-operational-assessment.v1,host_pathogen_interaction,Host-pathogen interaction depth,10.0,True,0,0,True,3,0,False,False,0,True,False,False,False,False,False,research-only-fail-closed
+biointel.step164.module-operational-assessment.v1,immunoinformatics_vaccine,Immunoinformatics depth,10.0,True,2,0,False,3,0,False,False,0,True,False,False,False,False,False,research-only-fail-closed
+biointel.step164.module-operational-assessment.v1,knowledge_graph_core,Knowledge-graph depth,10.0,True,0,0,True,3,0,False,False,0,True,False,False,False,False,False,research-only-fail-closed
+biointel.step164.module-operational-assessment.v1,long_read_core,Long-read assembly depth,10.0,True,4,0,False,3,0,False,False,0,True,False,False,False,False,False,research-only-fail-closed
+biointel.step164.module-operational-assessment.v1,long_read_epigenome,Long-read epigenome depth,10.0,True,4,0,False,4,0,False,False,0,True,False,False,False,False,False,research-only-fail-closed
+biointel.step164.module-operational-assessment.v1,longitudinal_multiomics,Longitudinal multi-omics depth,10.0,True,0,0,True,3,0,False,False,0,True,False,False,False,False,False,research-only-fail-closed
+biointel.step164.module-operational-assessment.v1,metabolomics_lipidomics,Metabolomics depth,10.0,True,1,0,False,3,0,False,False,0,True,False,False,False,False,False,research-only-fail-closed
+biointel.step164.module-operational-assessment.v1,metagenomics_core,Metagenomics execution depth,10.0,True,3,0,False,3,0,False,False,0,True,False,False,False,False,False,research-only-fail-closed
+biointel.step164.module-operational-assessment.v1,model_registry_v2,Model lifecycle depth,10.0,True,0,0,True,3,0,False,True,0,False,False,False,False,False,False,research-only-fail-closed
+biointel.step164.module-operational-assessment.v1,multiomics_biomarker_core,Biomarker-discovery depth,10.0,True,0,0,True,3,0,False,False,0,True,False,False,False,False,False,research-only-fail-closed
+biointel.step164.module-operational-assessment.v1,multiomics_harmonization,Multi-omics harmonization depth,10.0,True,0,0,True,3,0,False,False,0,True,False,False,False,False,False,research-only-fail-closed
+biointel.step164.module-operational-assessment.v1,offline_copilot_core,Offline copilot depth,10.0,True,1,0,False,3,0,False,True,0,False,False,False,False,False,False,research-only-fail-closed
+biointel.step164.module-operational-assessment.v1,offline_scientific_copilot_v2,Offline copilot depth,10.0,True,1,0,False,3,0,False,True,0,False,False,False,False,False,False,research-only-fail-closed
+biointel.step164.module-operational-assessment.v1,one_health_environmental,One Health depth,10.0,True,4,0,False,3,0,False,False,0,True,False,False,False,False,False,research-only-fail-closed
+biointel.step164.module-operational-assessment.v1,organoid_3d,Organoid analytics depth,10.0,True,2,0,False,3,0,False,False,0,True,False,False,False,False,False,research-only-fail-closed
+biointel.step164.module-operational-assessment.v1,pangenome_core,Pangenome execution depth,10.0,True,4,0,False,3,0,False,False,0,True,False,False,False,False,False,research-only-fail-closed
+biointel.step164.module-operational-assessment.v1,pangenome_population_medicine,Pangenome population-medicine depth,10.0,True,3,0,False,4,0,False,False,0,True,False,False,False,False,False,research-only-fail-closed
+biointel.step164.module-operational-assessment.v1,pathogen_outbreak_core,Outbreak genomics depth,10.0,True,3,0,False,3,0,False,False,0,True,False,False,False,False,False,research-only-fail-closed
+biointel.step164.module-operational-assessment.v1,pharmacogenomics,Pharmacogenomics depth,10.0,True,3,0,False,3,0,False,False,0,True,False,False,False,False,False,research-only-fail-closed
+biointel.step164.module-operational-assessment.v1,pharmacovigilance_intelligence,Pharmacovigilance depth,10.0,True,0,0,True,4,0,False,False,0,True,False,False,False,False,False,research-only-fail-closed
+biointel.step164.module-operational-assessment.v1,phenotypic_screening,Phenotypic screening depth,10.0,True,2,0,False,3,0,False,True,0,False,False,False,False,False,False,research-only-fail-closed
+biointel.step164.module-operational-assessment.v1,plugin_marketplace_core,Plugin security depth,10.0,True,0,0,True,3,0,False,False,0,True,False,False,False,False,False,research-only-fail-closed
+biointel.step164.module-operational-assessment.v1,plugin_marketplace_v2,Plugin security depth,10.0,True,0,0,True,3,0,False,False,0,True,False,False,False,False,False,research-only-fail-closed
+biointel.step164.module-operational-assessment.v1,population_gwas,GWAS depth,10.0,True,3,0,False,3,0,False,False,0,True,False,False,False,False,False,research-only-fail-closed
+biointel.step164.module-operational-assessment.v1,protein_language_design,Protein design depth,10.0,True,2,0,False,3,0,False,True,0,False,False,False,False,False,False,research-only-fail-closed
+biointel.step164.module-operational-assessment.v1,protein_ligand_codesign,Protein-ligand co-design depth,10.0,True,4,0,False,4,0,False,True,0,False,False,False,False,False,False,research-only-fail-closed
+biointel.step164.module-operational-assessment.v1,proteogenomics_neoantigen,Proteogenomics depth,10.0,True,3,0,False,3,0,False,False,0,True,False,False,False,False,False,research-only-fail-closed
+biointel.step164.module-operational-assessment.v1,provenance_ledger_v2,Provenance depth,10.0,True,0,0,True,3,0,False,False,0,True,False,False,False,False,False,research-only-fail-closed
+biointel.step164.module-operational-assessment.v1,rare_variant_family,Family genetics depth,10.0,True,3,0,False,4,0,False,False,0,True,False,False,False,False,False,research-only-fail-closed
+biointel.step164.module-operational-assessment.v1,reference_lifecycle_v2,Reference lifecycle depth,10.0,True,0,0,True,3,0,False,False,0,True,False,False,False,False,False,research-only-fail-closed
+biointel.step164.module-operational-assessment.v1,rna_isoform_splicing,RNA splicing depth,10.0,True,2,0,False,2,0,False,False,0,True,False,False,False,False,False,research-only-fail-closed
+biointel.step164.module-operational-assessment.v1,single_cell_core,Single-cell analysis depth,10.0,True,3,0,False,3,0,False,False,0,True,False,False,False,False,False,research-only-fail-closed
+biointel.step164.module-operational-assessment.v1,single_cell_long_read_isoforms,Single-cell long-read isoform depth,10.0,True,2,0,False,4,0,False,False,0,True,False,False,False,False,False,research-only-fail-closed
+biointel.step164.module-operational-assessment.v1,single_cell_trajectory,Single-cell trajectory depth,10.0,True,3,0,False,3,0,False,False,0,True,False,False,False,False,False,research-only-fail-closed
+biointel.step164.module-operational-assessment.v1,spatial_medicine_tme,Spatial medicine and TME depth,10.0,True,3,0,False,4,0,False,False,0,True,False,False,False,False,False,research-only-fail-closed
+biointel.step164.module-operational-assessment.v1,spatial_omics_pathology,Spatial pathology depth,10.0,True,2,0,False,3,0,False,True,0,False,False,False,False,False,False,research-only-fail-closed
+biointel.step164.module-operational-assessment.v1,store_readiness_core,Windows product readiness,10.0,True,0,0,True,3,0,False,False,0,True,False,False,False,False,False,research-only-fail-closed
+biointel.step164.module-operational-assessment.v1,strain_microbiome,Strain-resolved microbiome depth,10.0,True,3,0,False,3,0,False,True,0,False,False,False,False,False,False,research-only-fail-closed
+biointel.step164.module-operational-assessment.v1,structural_bioinformatics_core,Structural bioinformatics depth,10.0,True,3,0,False,3,0,False,False,0,True,False,False,False,False,False,research-only-fail-closed
+biointel.step164.module-operational-assessment.v1,structural_variant_repeat,Structural-variant depth,10.0,True,4,0,False,3,0,False,False,0,True,False,False,False,False,False,research-only-fail-closed
+biointel.step164.module-operational-assessment.v1,synthetic_biology_core,Synthetic-biology depth,10.0,True,0,0,True,3,0,False,False,0,True,False,False,False,False,False,research-only-fail-closed
+biointel.step164.module-operational-assessment.v1,synthetic_cohort_trial,Synthetic cohort and trial-simulation depth,10.0,True,0,0,True,4,0,False,False,0,True,False,False,False,False,False,research-only-fail-closed
+biointel.step164.module-operational-assessment.v1,synthetic_data_privacy,Synthetic-data privacy depth,10.0,True,0,0,True,3,0,False,False,0,True,False,False,False,False,False,research-only-fail-closed
+biointel.step164.module-operational-assessment.v1,unified_report_builder,Scientific reporting depth,10.0,True,0,0,True,3,0,False,False,0,True,False,False,False,False,False,research-only-fail-closed
+biointel.step164.module-operational-assessment.v1,universal_file_inspector,Universal file-inspection depth,10.0,True,0,0,True,3,0,False,False,0,True,False,False,False,False,False,research-only-fail-closed
+biointel.step164.module-operational-assessment.v1,virology_evolution,Virology depth,10.0,True,3,0,False,3,0,False,False,0,True,False,False,False,False,False,research-only-fail-closed
+biointel.step164.module-operational-assessment.v1,workflow_builder_core,Workflow execution depth,10.0,True,0,0,True,3,0,False,False,0,True,False,False,False,False,False,research-only-fail-closed
+biointel.step164.module-operational-assessment.v1,workflow_builder_v2,Workflow execution depth,10.0,True,0,0,True,3,0,False,False,0,True,False,False,False,False,False,research-only-fail-closed

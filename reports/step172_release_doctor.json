@@ -1,0 +1,30 @@
+{
+  "schema": "biointel.step172.release-doctor.v1",
+  "status": "passed",
+  "version": "14.4.0",
+  "checks": [
+    {
+      "name": "step172_validation",
+      "passed": true,
+      "return_code": 0,
+      "stdout": "{\n  \"schema\": \"biointel.step172.validation.v1\",\n  \"status\": \"passed\",\n  \"version\": \"14.4.0\",\n  \"checks\": {\n    \"module_profiles_80\": true,\n    \"profile_framework_10of10\": true,\n    \"assets_at_least_800\": true,\n    \"matrix_80\": true,\n    \"fail_closed_without_external_evidence\": true,\n    \"no_external_outcomes_inferred\": true,\n    \"registry_integrity\": true,\n    \"registry_fk_clean\": true\n  },\n  \"modules\": 80,\n  \"assets\": 801,\n  \"software_framework_score\": 10.0,\n  \"actual_release_eligible_modules\": 0,\n  \"external_evidence_fabricated\": false\n}\n",
+      "stderr": ""
+    },
+    {
+      "name": "step171_validation",
+      "passed": true,
+      "return_code": 0,
+      "stdout": "{\n  \"schema\": \"biointel.step171.validation.v2\",\n  \"version\": \"14.3.0\",\n  \"status\": \"passed\",\n  \"checks\": [\n    {\n      \"check\": \"12 applicable module contracts\",\n      \"passed\": true,\n      \"detail\": \"12\"\n    },\n    {\n      \"check\": \"8 authentic research packages\",\n      \"passed\": true,\n      \"detail\": \"8\"\n    },\n    {\n      \"check\": \"4 external acquisition plans\",\n      \"passed\": true,\n      \"detail\": \"4\"\n    },\n    {\n      \"check\": \"package file manifests\",\n      \"passed\": true,\n      \"detail\": \"all package hashes match\"\n    },\n    {\n      \"check\": \"model artifacts load and hash\",\n      \"passed\": true,\n      \"detail\": \"all joblib artifacts load\"\n    },\n    {\n      \"check\": \"registry integrity\",\n      \"passed\": true,\n      \"detail\": \"{'database_integrity': 'ok', 'foreign_key_violations': 0, 'applicable_modules': 12, 'authentic_research_packages': 8, 'real_cohorts': 8, 'locked_benchmarks': 8, 'independent_external_sites': 0, 'release_eligible_models': 0, 'acquisition_pending': 4}\"\n    },\n    {\n      \"check\": \"matrix module coverage\",\n      \"passed\": true,\n      \"detail\": \"12\"\n    },\n    {\n      \"check\": \"authentic research benchmarks\",\n      \"passed\": true,\n      \"detail\": \"8\"\n    },\n    {\n      \"check\": \"real public or official cohorts\",\n      \"passed\": true,\n      \"detail\": \"8\"\n    },\n    {\n      \"check\": \"locked benchmark evaluations\",\n      \"passed\": true,\n      \"detail\": \"8\"\n    },\n    {\n      \"check\": \"synthetic and wrong-domain fail closed\",\n      \"passed\": true,\n      \"detail\": \"0 production releases; 4 task cohorts pending\"\n    }\n  ],\n  \"applicable_modules\": 12,\n  \"authentic_research_packages\": 8,\n  \"full_task_specific_research_packages\": 5,\n  \"external_acquisition_required\": 4,\n  \"independent_external_site_complete\": 0,\n  \"release_eligible\": 0,\n  \"boundary\": \"Untouched checksum-locked public benchmarks are qualified for research; independent external-site validation and expert approval remain required for controlled release.\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "name": "step170_validation",
+      "passed": true,
+      "return_code": 0,
+      "stdout": "{\n  \"schema\": \"biointel.step170.validation.v1\",\n  \"status\": \"passed\",\n  \"checks\": [\n    {\n      \"check\": \"53 unique specialist engines\",\n      \"passed\": true,\n      \"detail\": \"53/53\"\n    },\n    {\n      \"check\": \"Engine manifests\",\n      \"passed\": true,\n      \"detail\": \"data/step170/engine_manifests\"\n    },\n    {\n      \"check\": \"Reference catalog\",\n      \"passed\": true,\n      \"detail\": \"26 production reference groups\"\n    },\n    {\n      \"check\": \"Licence policy coverage\",\n      \"passed\": true,\n      \"detail\": \"17 licence policies\"\n    },\n    {\n      \"check\": \"Provider/manual installs fail closed\",\n      \"passed\": true,\n      \"detail\": \"manual=5\"\n    },\n    {\n      \"check\": \"Every engine has checksum and smoke-test policy\",\n      \"passed\": true,\n      \"detail\": \"all 53\"\n    },\n    {\n      \"check\": \"Every reference has release/hash/licence/schema gates\",\n      \"passed\": true,\n      \"detail\": \"all 26\"\n    },\n    {\n      \"check\": \"WSL/micromamba environment plan\",\n      \"passed\": true,\n      \"detail\": \"step170-linux-64.yml\"\n    },\n    {\n      \"check\": \"Registry integrity\",\n      \"passed\": true,\n      \"detail\": \"{\\\"schema\\\": \\\"biointel.step170.registry-status.v1\\\", \\\"database_integrity\\\": \\\"ok\\\", \\\"foreign_key_violations\\\": 0, \\\"engines_registered\\\": 0, \\\"engines_qualified\\\": 0, \\\"references_registered\\\": 0, \\\"references_qualified\\\": 0, \\\"licences_registered\\\": 17, \\\"licences_accepted\\\": 0}\"\n    },\n    {\n      \"check\": \"Step 170 UI page\",\n      \"passed\": true,\n      \"detail\": \"pages/239_Specialist_Runtime_Reference_Qualification.py\"\n    },\n    {\n      \"check\": \"Windows provisioning launchers\",\n      \"passed\": true,\n      \"detail\": \"4 launchers\"\n    }\n  ],\n  \"software_qualification_complete\": true,\n  \"external_runtime_installation_complete\": false,\n  \"production_reference_downloads_complete\": false,\n  \"licences_not_auto_accepted\": true\n}\n",
+      "stderr": ""
+    }
+  ],
+  "fake_wetlab_clinical_expert_or_site_evidence_created": false,
+  "boundary": "Software qualification can be 10/10; genuine external outcomes remain blocked until checksum-valid evidence is imported."
+}

@@ -1,0 +1,28 @@
+{
+  "chart_files": 16,
+  "checks": {
+    "horizontal_autoscaling": true,
+    "ingress": true,
+    "liveness_probe": true,
+    "migration_job": true,
+    "network_policy": true,
+    "persistent_storage": true,
+    "pod_disruption_budget": true,
+    "readiness_probe": true,
+    "replicas": true,
+    "resources": true,
+    "security_context": true,
+    "service_monitor": true,
+    "startup_probe": true,
+    "topology_spread": true
+  },
+  "classification": "static_deployment_qualification",
+  "controls_passed": 14,
+  "controls_total": 14,
+  "external_boundary": "Static Helm/IaC qualification is not Kubernetes conformance certification or production cluster history.",
+  "observed_at": "2026-07-05T07:33:16.081435+00:00",
+  "parse_failures": [],
+  "passed": true,
+  "schema": "biointel.step42.kubernetes-static.v1",
+  "yaml_files_parsed_without_template_errors": 3
+}

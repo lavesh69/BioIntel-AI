@@ -1,0 +1,1802 @@
+{
+  "asset_dependent_engines": 34,
+  "claim_boundary": "This bundle prepares deterministic acquisition routes. It does not claim that external binaries, databases or model weights ran on a Windows/WSL2/GPU target until target-machine evidence passes.",
+  "exact_release_qualified": 0,
+  "files": 140,
+  "generated_at_utc": "2026-07-18T13:57:13+00:00",
+  "manual_or_provider_engines": 14,
+  "output": "/mnt/data/BioIntel-AI-15.6.0-Step206-WINDOWS-V19.6-ENGINE-QUALIFICATION-WORK/engine-packs/v19.6-acquisition",
+  "recipes": [
+    {
+      "automatic_bundle_policy": "do-not-bundle-until-legal-review",
+      "blockers": [
+        "Reference/database release, checksum, licence and disk estimate are required.",
+        "WSL2 availability and Linux runtime qualification are required on Windows."
+      ],
+      "engine": "abricate",
+      "exact_release_qualified": false,
+      "install_route": "micromamba-wsl2",
+      "label": "ABRicate",
+      "licence_acceptance_required": false,
+      "licence_spdx": "GPL-2.0-or-later",
+      "mode": "wsl2-micromamba",
+      "model_weights_required": false,
+      "official_url": "https://github.com/tseemann/abricate",
+      "package_specs": [
+        "abricate"
+      ],
+      "priority": "P3-specialist",
+      "redistribution_policy": "conditional-source-and-licence-notice",
+      "references": [
+        "ABRicate database"
+      ],
+      "windows_mode": "WSL2"
+    },
+    {
+      "automatic_bundle_policy": "do-not-bundle-until-legal-review",
+      "blockers": [
+        "Capture and hash the exact upstream licence for the selected release.",
+        "Reference/database release, checksum, licence and disk estimate are required.",
+        "WSL2 availability and Linux runtime qualification are required on Windows."
+      ],
+      "engine": "amrfinderplus",
+      "exact_release_qualified": false,
+      "install_route": "micromamba",
+      "label": "NCBI AMRFinderPlus",
+      "licence_acceptance_required": false,
+      "licence_spdx": "LicenseRef-Upstream-Package-License",
+      "mode": "wsl2-micromamba",
+      "model_weights_required": false,
+      "official_url": "https://bioconda.github.io/recipes/amrfinderplus/README.html",
+      "package_specs": [
+        "amrfinderplus"
+      ],
+      "priority": "P3-specialist",
+      "redistribution_policy": "review-before-bundling",
+      "references": [
+        "AMRFinderPlus database"
+      ],
+      "windows_mode": "WSL2"
+    },
+    {
+      "automatic_bundle_policy": "do-not-bundle-until-legal-review",
+      "blockers": [
+        "Capture and hash the exact upstream licence for the selected release.",
+        "WSL2 availability and Linux runtime qualification are required on Windows."
+      ],
+      "engine": "anarci",
+      "exact_release_qualified": false,
+      "install_route": "micromamba",
+      "label": "ANARCI",
+      "licence_acceptance_required": false,
+      "licence_spdx": "LicenseRef-Upstream-Package-License",
+      "mode": "wsl2-micromamba",
+      "model_weights_required": false,
+      "official_url": "https://bioconda.github.io/recipes/anarci/README.html",
+      "package_specs": [
+        "anarci"
+      ],
+      "priority": "P3-specialist",
+      "redistribution_policy": "review-before-bundling",
+      "references": [],
+      "windows_mode": "WSL2"
+    },
+    {
+      "automatic_bundle_policy": "do-not-bundle-until-legal-review",
+      "blockers": [
+        "Capture and hash the exact upstream licence for the selected release.",
+        "Reference/database release, checksum, licence and disk estimate are required.",
+        "WSL2 availability and Linux runtime qualification are required on Windows."
+      ],
+      "engine": "bcftools",
+      "exact_release_qualified": false,
+      "install_route": "micromamba",
+      "label": "BCFtools",
+      "licence_acceptance_required": false,
+      "licence_spdx": "LicenseRef-Upstream-Package-License",
+      "mode": "wsl2-micromamba",
+      "model_weights_required": false,
+      "official_url": "https://bioconda.github.io/recipes/bcftools/README.html",
+      "package_specs": [
+        "bcftools"
+      ],
+      "priority": "P1-compulsory",
+      "redistribution_policy": "review-before-bundling",
+      "references": [
+        "Reference FASTA"
+      ],
+      "windows_mode": "WSL2"
+    },
+    {
+      "automatic_bundle_policy": "eligible-after-release-hash-and-smoke-test",
+      "blockers": [
+        "WSL2 availability and Linux runtime qualification are required on Windows."
+      ],
+      "engine": "bedtools",
+      "exact_release_qualified": false,
+      "install_route": "micromamba-wsl2",
+      "label": "BEDTools",
+      "licence_acceptance_required": false,
+      "licence_spdx": "MIT",
+      "mode": "wsl2-micromamba",
+      "model_weights_required": false,
+      "official_url": "https://github.com/arq5x/bedtools2",
+      "package_specs": [
+        "bedtools"
+      ],
+      "priority": "P2-high-value",
+      "redistribution_policy": "permissive-with-notice",
+      "references": [],
+      "windows_mode": "WSL2"
+    },
+    {
+      "automatic_bundle_policy": "eligible-after-release-hash-and-smoke-test",
+      "blockers": [
+        "WSL2 availability and Linux runtime qualification are required on Windows."
+      ],
+      "engine": "bgzip",
+      "exact_release_qualified": false,
+      "install_route": "htslib-pack-wsl2",
+      "label": "BGZF compressor",
+      "licence_acceptance_required": false,
+      "licence_spdx": "MIT",
+      "mode": "wsl2-micromamba",
+      "model_weights_required": false,
+      "official_url": "https://www.htslib.org/",
+      "package_specs": [
+        "htslib"
+      ],
+      "priority": "P2-high-value",
+      "redistribution_policy": "permissive-with-notice",
+      "references": [],
+      "windows_mode": "WSL2-preferred"
+    },
+    {
+      "automatic_bundle_policy": "do-not-bundle-until-legal-review",
+      "blockers": [
+        "Capture and hash the exact upstream licence for the selected release.",
+        "Reference/database release, checksum, licence and disk estimate are required.",
+        "WSL2 availability and Linux runtime qualification are required on Windows."
+      ],
+      "engine": "blastn",
+      "exact_release_qualified": false,
+      "install_route": "micromamba",
+      "label": "BLASTN",
+      "licence_acceptance_required": false,
+      "licence_spdx": "LicenseRef-Upstream-Package-License",
+      "mode": "wsl2-micromamba",
+      "model_weights_required": false,
+      "official_url": "https://bioconda.github.io/recipes/blastn/README.html",
+      "package_specs": [
+        "blastn"
+      ],
+      "priority": "P2-high-value",
+      "redistribution_policy": "review-before-bundling",
+      "references": [
+        "BLAST database"
+      ],
+      "windows_mode": "WSL2"
+    },
+    {
+      "automatic_bundle_policy": "eligible-after-release-hash-and-smoke-test",
+      "blockers": [
+        "Reference/database release, checksum, licence and disk estimate are required."
+      ],
+      "engine": "blastp",
+      "exact_release_qualified": false,
+      "install_route": "official-windows-binary",
+      "label": "BLASTP",
+      "licence_acceptance_required": false,
+      "licence_spdx": "LicenseRef-Public-Domain-US-Gov",
+      "mode": "official-provider",
+      "model_weights_required": false,
+      "official_url": "https://blast.ncbi.nlm.nih.gov/doc/blast-help/downloadblastdata.html",
+      "package_specs": [],
+      "priority": "P1-compulsory",
+      "redistribution_policy": "public-domain-binary-provenance-required",
+      "references": [
+        "BLAST protein database"
+      ],
+      "windows_mode": "Native Windows"
+    },
+    {
+      "automatic_bundle_policy": "do-not-bundle-until-legal-review",
+      "blockers": [
+        "Capture and hash the exact upstream licence for the selected release.",
+        "Reference/database release, checksum, licence and disk estimate are required.",
+        "WSL2 availability and Linux runtime qualification are required on Windows."
+      ],
+      "engine": "bowtie",
+      "exact_release_qualified": false,
+      "install_route": "micromamba",
+      "label": "Bowtie 2",
+      "licence_acceptance_required": false,
+      "licence_spdx": "LicenseRef-Upstream-Package-License",
+      "mode": "wsl2-micromamba",
+      "model_weights_required": false,
+      "official_url": "https://bioconda.github.io/recipes/bowtie2/README.html",
+      "package_specs": [
+        "bowtie2"
+      ],
+      "priority": "P3-specialist",
+      "redistribution_policy": "review-before-bundling",
+      "references": [
+        "Bowtie 2 genome index"
+      ],
+      "windows_mode": "WSL2"
+    },
+    {
+      "automatic_bundle_policy": "do-not-bundle-until-legal-review",
+      "blockers": [
+        "Reference/database release, checksum, licence and disk estimate are required."
+      ],
+      "engine": "bowtie2",
+      "exact_release_qualified": false,
+      "install_route": "official-windows-binary-or-wsl2",
+      "label": "Bowtie 2",
+      "licence_acceptance_required": false,
+      "licence_spdx": "GPL-3.0-or-later",
+      "mode": "official-provider",
+      "model_weights_required": false,
+      "official_url": "https://github.com/BenLangmead/bowtie2",
+      "package_specs": [],
+      "priority": "P1-compulsory",
+      "redistribution_policy": "copyleft-review-required",
+      "references": [
+        "Bowtie2 index"
+      ],
+      "windows_mode": "Native Windows"
+    },
+    {
+      "automatic_bundle_policy": "do-not-bundle-until-legal-review",
+      "blockers": [
+        "Capture and hash the exact upstream licence for the selected release.",
+        "Reference/database release, checksum, licence and disk estimate are required.",
+        "WSL2 availability and Linux runtime qualification are required on Windows."
+      ],
+      "engine": "bracken",
+      "exact_release_qualified": false,
+      "install_route": "micromamba",
+      "label": "Bracken",
+      "licence_acceptance_required": false,
+      "licence_spdx": "LicenseRef-Upstream-Package-License",
+      "mode": "wsl2-micromamba",
+      "model_weights_required": false,
+      "official_url": "https://bioconda.github.io/recipes/bracken/README.html",
+      "package_specs": [
+        "bracken"
+      ],
+      "priority": "P3-specialist",
+      "redistribution_policy": "review-before-bundling",
+      "references": [
+        "Bracken database"
+      ],
+      "windows_mode": "WSL2"
+    },
+    {
+      "automatic_bundle_policy": "do-not-bundle-until-legal-review",
+      "blockers": [
+        "Capture and hash the exact upstream licence for the selected release.",
+        "Reference/database release, checksum, licence and disk estimate are required.",
+        "WSL2 availability and Linux runtime qualification are required on Windows."
+      ],
+      "engine": "busco",
+      "exact_release_qualified": false,
+      "install_route": "micromamba",
+      "label": "BUSCO",
+      "licence_acceptance_required": false,
+      "licence_spdx": "LicenseRef-Upstream-Package-License",
+      "mode": "wsl2-micromamba",
+      "model_weights_required": false,
+      "official_url": "https://bioconda.github.io/recipes/busco/README.html",
+      "package_specs": [
+        "busco"
+      ],
+      "priority": "P3-specialist",
+      "redistribution_policy": "review-before-bundling",
+      "references": [
+        "BUSCO lineage"
+      ],
+      "windows_mode": "WSL2"
+    },
+    {
+      "automatic_bundle_policy": "do-not-bundle-until-legal-review",
+      "blockers": [
+        "Capture and hash the exact upstream licence for the selected release.",
+        "WSL2 availability and Linux runtime qualification are required on Windows."
+      ],
+      "engine": "bwa",
+      "exact_release_qualified": false,
+      "install_route": "micromamba",
+      "label": "BWA",
+      "licence_acceptance_required": false,
+      "licence_spdx": "LicenseRef-Upstream-Package-License",
+      "mode": "wsl2-micromamba",
+      "model_weights_required": false,
+      "official_url": "https://bioconda.github.io/recipes/bwa/README.html",
+      "package_specs": [
+        "bwa"
+      ],
+      "priority": "P2-high-value",
+      "redistribution_policy": "review-before-bundling",
+      "references": [],
+      "windows_mode": "WSL2"
+    },
+    {
+      "automatic_bundle_policy": "do-not-bundle-until-legal-review",
+      "blockers": [
+        "Capture and hash the exact upstream licence for the selected release.",
+        "WSL2 availability and Linux runtime qualification are required on Windows."
+      ],
+      "engine": "cellpose",
+      "exact_release_qualified": false,
+      "install_route": "micromamba",
+      "label": "Cellpose",
+      "licence_acceptance_required": false,
+      "licence_spdx": "LicenseRef-Upstream-Package-License",
+      "mode": "wsl2-micromamba",
+      "model_weights_required": false,
+      "official_url": "https://bioconda.github.io/recipes/cellpose/README.html",
+      "package_specs": [
+        "cellpose"
+      ],
+      "priority": "P1-compulsory",
+      "redistribution_policy": "review-before-bundling",
+      "references": [],
+      "windows_mode": "WSL2"
+    },
+    {
+      "automatic_bundle_policy": "do-not-bundle-until-legal-review",
+      "blockers": [
+        "Capture and hash the exact upstream licence for the selected release.",
+        "WSL2 availability and Linux runtime qualification are required on Windows."
+      ],
+      "engine": "cellrank",
+      "exact_release_qualified": false,
+      "install_route": "micromamba",
+      "label": "CellRank Python",
+      "licence_acceptance_required": false,
+      "licence_spdx": "LicenseRef-Upstream-Package-License",
+      "mode": "wsl2-micromamba",
+      "model_weights_required": false,
+      "official_url": "https://bioconda.github.io/recipes/cellrank/README.html",
+      "package_specs": [
+        "cellrank"
+      ],
+      "priority": "P2-high-value",
+      "redistribution_policy": "review-before-bundling",
+      "references": [],
+      "windows_mode": "WSL2"
+    },
+    {
+      "automatic_bundle_policy": "separate-optional-model-pack",
+      "blockers": [
+        "Capture and hash the exact upstream licence for the selected release.",
+        "Model-weight licence, checksum and hardware qualification are required.",
+        "Reference/database release, checksum, licence and disk estimate are required.",
+        "WSL2 availability and Linux runtime qualification are required on Windows."
+      ],
+      "engine": "colabfold",
+      "exact_release_qualified": false,
+      "install_route": "micromamba",
+      "label": "ColabFold",
+      "licence_acceptance_required": false,
+      "licence_spdx": "LicenseRef-Upstream-Package-License",
+      "mode": "model-pack",
+      "model_weights_required": true,
+      "official_url": "https://bioconda.github.io/recipes/colabfold/README.html",
+      "package_specs": [
+        "colabfold"
+      ],
+      "priority": "P4-manual-or-heavy",
+      "redistribution_policy": "review-before-bundling",
+      "references": [
+        "ColabFold/AlphaFold databases or remote MSA policy"
+      ],
+      "windows_mode": "WSL2"
+    },
+    {
+      "automatic_bundle_policy": "do-not-bundle-until-legal-review",
+      "blockers": [
+        "Capture and hash the exact upstream licence for the selected release.",
+        "WSL2 availability and Linux runtime qualification are required on Windows."
+      ],
+      "engine": "comet",
+      "exact_release_qualified": false,
+      "install_route": "micromamba",
+      "label": "Comet",
+      "licence_acceptance_required": false,
+      "licence_spdx": "LicenseRef-Upstream-Package-License",
+      "mode": "wsl2-micromamba",
+      "model_weights_required": false,
+      "official_url": "https://bioconda.github.io/recipes/comet/README.html",
+      "package_specs": [
+        "comet"
+      ],
+      "priority": "P3-specialist",
+      "redistribution_policy": "review-before-bundling",
+      "references": [],
+      "windows_mode": "WSL2"
+    },
+    {
+      "automatic_bundle_policy": "eligible-after-release-hash-and-smoke-test",
+      "blockers": [],
+      "engine": "cutadapt",
+      "exact_release_qualified": false,
+      "install_route": "official-windows-exe-or-pinned-python",
+      "label": "Cutadapt",
+      "licence_acceptance_required": false,
+      "licence_spdx": "MIT",
+      "mode": "windows-python",
+      "model_weights_required": false,
+      "official_url": "https://cutadapt.readthedocs.io/",
+      "package_specs": [
+        "cutadapt"
+      ],
+      "priority": "P1-compulsory",
+      "redistribution_policy": "permissive-with-notice",
+      "references": [],
+      "windows_mode": "Native Windows"
+    },
+    {
+      "automatic_bundle_policy": "do-not-bundle-until-legal-review",
+      "blockers": [
+        "Capture and hash the exact upstream licence for the selected release.",
+        "WSL2 availability and Linux runtime qualification are required on Windows."
+      ],
+      "engine": "deeptools",
+      "exact_release_qualified": false,
+      "install_route": "micromamba",
+      "label": "deepTools",
+      "licence_acceptance_required": false,
+      "licence_spdx": "LicenseRef-Upstream-Package-License",
+      "mode": "wsl2-micromamba",
+      "model_weights_required": false,
+      "official_url": "https://bioconda.github.io/recipes/deeptools/README.html",
+      "package_specs": [
+        "deeptools"
+      ],
+      "priority": "P3-specialist",
+      "redistribution_policy": "review-before-bundling",
+      "references": [],
+      "windows_mode": "WSL2"
+    },
+    {
+      "automatic_bundle_policy": "separate-optional-model-pack",
+      "blockers": [
+        "Model-weight licence, checksum and hardware qualification are required.",
+        "Reference/database release, checksum, licence and disk estimate are required.",
+        "WSL2 availability and Linux runtime qualification are required on Windows."
+      ],
+      "engine": "dorado",
+      "exact_release_qualified": false,
+      "install_route": "provider-release",
+      "label": "Oxford Nanopore Dorado",
+      "licence_acceptance_required": false,
+      "licence_spdx": "LicenseRef-ONT-Public-License",
+      "mode": "manual-authorized",
+      "model_weights_required": true,
+      "official_url": "https://github.com/nanoporetech/dorado",
+      "package_specs": [],
+      "priority": "P2-high-value",
+      "redistribution_policy": "provider-policy-review",
+      "references": [
+        "Dorado model weights"
+      ],
+      "windows_mode": "WSL2"
+    },
+    {
+      "automatic_bundle_policy": "do-not-bundle-until-legal-review",
+      "blockers": [
+        "Capture and hash the exact upstream licence for the selected release.",
+        "Reference/database release, checksum, licence and disk estimate are required.",
+        "WSL2 availability and Linux runtime qualification are required on Windows."
+      ],
+      "engine": "expansionhunter",
+      "exact_release_qualified": false,
+      "install_route": "micromamba",
+      "label": "ExpansionHunter",
+      "licence_acceptance_required": false,
+      "licence_spdx": "LicenseRef-Upstream-Package-License",
+      "mode": "wsl2-micromamba",
+      "model_weights_required": false,
+      "official_url": "https://bioconda.github.io/recipes/expansionhunter/README.html",
+      "package_specs": [
+        "expansionhunter"
+      ],
+      "priority": "P2-high-value",
+      "redistribution_policy": "review-before-bundling",
+      "references": [
+        "Repeat catalogue",
+        "Reference FASTA"
+      ],
+      "windows_mode": "WSL2"
+    },
+    {
+      "automatic_bundle_policy": "eligible-after-release-hash-and-smoke-test",
+      "blockers": [
+        "WSL2 availability and Linux runtime qualification are required on Windows."
+      ],
+      "engine": "fastp",
+      "exact_release_qualified": false,
+      "install_route": "micromamba-wsl2-or-source-build",
+      "label": "fastp",
+      "licence_acceptance_required": false,
+      "licence_spdx": "MIT",
+      "mode": "wsl2-micromamba",
+      "model_weights_required": false,
+      "official_url": "https://github.com/OpenGene/fastp",
+      "package_specs": [
+        "fastp"
+      ],
+      "priority": "P1-compulsory",
+      "redistribution_policy": "permissive-with-notice",
+      "references": [],
+      "windows_mode": "WSL2"
+    },
+    {
+      "automatic_bundle_policy": "do-not-bundle-until-legal-review",
+      "blockers": [],
+      "engine": "fastqc",
+      "exact_release_qualified": false,
+      "install_route": "official-windows-zip-java",
+      "label": "FastQC",
+      "licence_acceptance_required": false,
+      "licence_spdx": "GPL-3.0-or-later",
+      "mode": "official-provider",
+      "model_weights_required": false,
+      "official_url": "https://www.bioinformatics.babraham.ac.uk/projects/fastqc/",
+      "package_specs": [],
+      "priority": "P1-compulsory",
+      "redistribution_policy": "copyleft-review-required",
+      "references": [],
+      "windows_mode": "Native Windows"
+    },
+    {
+      "automatic_bundle_policy": "do-not-bundle-until-legal-review",
+      "blockers": [
+        "Capture and hash the exact upstream licence for the selected release.",
+        "WSL2 availability and Linux runtime qualification are required on Windows."
+      ],
+      "engine": "flye",
+      "exact_release_qualified": false,
+      "install_route": "micromamba",
+      "label": "Flye",
+      "licence_acceptance_required": false,
+      "licence_spdx": "LicenseRef-Upstream-Package-License",
+      "mode": "wsl2-micromamba",
+      "model_weights_required": false,
+      "official_url": "https://bioconda.github.io/recipes/flye/README.html",
+      "package_specs": [
+        "flye"
+      ],
+      "priority": "P3-specialist",
+      "redistribution_policy": "review-before-bundling",
+      "references": [],
+      "windows_mode": "WSL2"
+    },
+    {
+      "automatic_bundle_policy": "do-not-bundle-until-legal-review",
+      "blockers": [
+        "Capture and hash the exact upstream licence for the selected release.",
+        "WSL2 availability and Linux runtime qualification are required on Windows."
+      ],
+      "engine": "graphaligner",
+      "exact_release_qualified": false,
+      "install_route": "micromamba",
+      "label": "GraphAligner",
+      "licence_acceptance_required": false,
+      "licence_spdx": "LicenseRef-Upstream-Package-License",
+      "mode": "wsl2-micromamba",
+      "model_weights_required": false,
+      "official_url": "https://bioconda.github.io/recipes/graphaligner/README.html",
+      "package_specs": [
+        "graphaligner"
+      ],
+      "priority": "P3-specialist",
+      "redistribution_policy": "review-before-bundling",
+      "references": [],
+      "windows_mode": "WSL2"
+    },
+    {
+      "automatic_bundle_policy": "do-not-bundle-until-legal-review",
+      "blockers": [
+        "Capture and hash the exact upstream licence for the selected release.",
+        "WSL2 availability and Linux runtime qualification are required on Windows."
+      ],
+      "engine": "gromacs",
+      "exact_release_qualified": false,
+      "install_route": "micromamba",
+      "label": "GROMACS",
+      "licence_acceptance_required": false,
+      "licence_spdx": "LicenseRef-Upstream-Package-License",
+      "mode": "wsl2-micromamba",
+      "model_weights_required": false,
+      "official_url": "https://bioconda.github.io/recipes/gromacs/README.html",
+      "package_specs": [
+        "gromacs"
+      ],
+      "priority": "P2-high-value",
+      "redistribution_policy": "review-before-bundling",
+      "references": [],
+      "windows_mode": "WSL2"
+    },
+    {
+      "automatic_bundle_policy": "do-not-bundle-until-legal-review",
+      "blockers": [
+        "Capture and hash the exact upstream licence for the selected release.",
+        "WSL2 availability and Linux runtime qualification are required on Windows."
+      ],
+      "engine": "hifiasm",
+      "exact_release_qualified": false,
+      "install_route": "micromamba",
+      "label": "hifiasm",
+      "licence_acceptance_required": false,
+      "licence_spdx": "LicenseRef-Upstream-Package-License",
+      "mode": "wsl2-micromamba",
+      "model_weights_required": false,
+      "official_url": "https://bioconda.github.io/recipes/hifiasm/README.html",
+      "package_specs": [
+        "hifiasm"
+      ],
+      "priority": "P3-specialist",
+      "redistribution_policy": "review-before-bundling",
+      "references": [],
+      "windows_mode": "WSL2"
+    },
+    {
+      "automatic_bundle_policy": "eligible-after-release-hash-and-smoke-test",
+      "blockers": [
+        "Reference/database release, checksum, licence and disk estimate are required.",
+        "WSL2 availability and Linux runtime qualification are required on Windows."
+      ],
+      "engine": "hmmer",
+      "exact_release_qualified": false,
+      "install_route": "micromamba-wsl2",
+      "label": "HMMER hmmsearch",
+      "licence_acceptance_required": false,
+      "licence_spdx": "BSD-3-Clause",
+      "mode": "wsl2-micromamba",
+      "model_weights_required": false,
+      "official_url": "https://hmmer.org/",
+      "package_specs": [
+        "hmmer"
+      ],
+      "priority": "P2-high-value",
+      "redistribution_policy": "permissive-with-notice",
+      "references": [
+        "Pinned HMM profile database"
+      ],
+      "windows_mode": "WSL2"
+    },
+    {
+      "automatic_bundle_policy": "do-not-bundle-until-legal-review",
+      "blockers": [
+        "Capture and hash the exact upstream licence for the selected release.",
+        "Reference/database release, checksum, licence and disk estimate are required.",
+        "WSL2 availability and Linux runtime qualification are required on Windows."
+      ],
+      "engine": "humann",
+      "exact_release_qualified": false,
+      "install_route": "micromamba",
+      "label": "HUMAnN",
+      "licence_acceptance_required": false,
+      "licence_spdx": "LicenseRef-Upstream-Package-License",
+      "mode": "wsl2-micromamba",
+      "model_weights_required": false,
+      "official_url": "https://bioconda.github.io/recipes/humann/README.html",
+      "package_specs": [
+        "humann"
+      ],
+      "priority": "P3-specialist",
+      "redistribution_policy": "review-before-bundling",
+      "references": [
+        "ChocoPhlAn",
+        "UniRef"
+      ],
+      "windows_mode": "WSL2"
+    },
+    {
+      "automatic_bundle_policy": "do-not-bundle-until-legal-review",
+      "blockers": [
+        "Capture and hash the exact upstream licence for the selected release.",
+        "Reference/database release, checksum, licence and disk estimate are required.",
+        "WSL2 availability and Linux runtime qualification are required on Windows."
+      ],
+      "engine": "igblast",
+      "exact_release_qualified": false,
+      "install_route": "micromamba",
+      "label": "IgBLAST",
+      "licence_acceptance_required": false,
+      "licence_spdx": "LicenseRef-Upstream-Package-License",
+      "mode": "wsl2-micromamba",
+      "model_weights_required": false,
+      "official_url": "https://bioconda.github.io/recipes/igblast/README.html",
+      "package_specs": [
+        "igblast"
+      ],
+      "priority": "P3-specialist",
+      "redistribution_policy": "review-before-bundling",
+      "references": [
+        "IgBLAST germline database"
+      ],
+      "windows_mode": "WSL2"
+    },
+    {
+      "automatic_bundle_policy": "do-not-bundle-until-legal-review",
+      "blockers": [
+        "Reference/database release, checksum, licence and disk estimate are required.",
+        "WSL2 availability and Linux runtime qualification are required on Windows."
+      ],
+      "engine": "interproscan",
+      "exact_release_qualified": false,
+      "install_route": "official-linux-distribution-wsl2",
+      "label": "InterProScan",
+      "licence_acceptance_required": false,
+      "licence_spdx": "Apache-2.0",
+      "mode": "wsl2-micromamba",
+      "model_weights_required": false,
+      "official_url": "https://www.ebi.ac.uk/interpro/download/InterProScan/",
+      "package_specs": [
+        "interproscan"
+      ],
+      "priority": "P2-high-value",
+      "redistribution_policy": "mixed-components-separate-licence-review",
+      "references": [
+        "InterPro member databases"
+      ],
+      "windows_mode": "WSL2"
+    },
+    {
+      "automatic_bundle_policy": "do-not-bundle-until-legal-review",
+      "blockers": [
+        "Capture and hash the exact upstream licence for the selected release.",
+        "WSL2 availability and Linux runtime qualification are required on Windows."
+      ],
+      "engine": "iqtree",
+      "exact_release_qualified": false,
+      "install_route": "micromamba",
+      "label": "IQ-TREE",
+      "licence_acceptance_required": false,
+      "licence_spdx": "LicenseRef-Upstream-Package-License",
+      "mode": "wsl2-micromamba",
+      "model_weights_required": false,
+      "official_url": "https://bioconda.github.io/recipes/iqtree/README.html",
+      "package_specs": [
+        "iqtree"
+      ],
+      "priority": "P1-compulsory",
+      "redistribution_policy": "review-before-bundling",
+      "references": [],
+      "windows_mode": "WSL2"
+    },
+    {
+      "automatic_bundle_policy": "eligible-after-release-hash-and-smoke-test",
+      "blockers": [
+        "Reference/database release, checksum, licence and disk estimate are required."
+      ],
+      "engine": "kallisto",
+      "exact_release_qualified": false,
+      "install_route": "official-windows-binary-or-wsl2",
+      "label": "Kallisto",
+      "licence_acceptance_required": false,
+      "licence_spdx": "BSD-2-Clause",
+      "mode": "official-provider",
+      "model_weights_required": false,
+      "official_url": "https://pachterlab.github.io/kallisto/download",
+      "package_specs": [],
+      "priority": "P1-compulsory",
+      "redistribution_policy": "permissive-with-notice",
+      "references": [
+        "Kallisto transcriptome index"
+      ],
+      "windows_mode": "Native Windows"
+    },
+    {
+      "automatic_bundle_policy": "do-not-bundle-until-legal-review",
+      "blockers": [
+        "Capture and hash the exact upstream licence for the selected release.",
+        "Reference/database release, checksum, licence and disk estimate are required.",
+        "WSL2 availability and Linux runtime qualification are required on Windows."
+      ],
+      "engine": "kraken2",
+      "exact_release_qualified": false,
+      "install_route": "micromamba",
+      "label": "Kraken 2",
+      "licence_acceptance_required": false,
+      "licence_spdx": "LicenseRef-Upstream-Package-License",
+      "mode": "wsl2-micromamba",
+      "model_weights_required": false,
+      "official_url": "https://bioconda.github.io/recipes/kraken2/README.html",
+      "package_specs": [
+        "kraken2"
+      ],
+      "priority": "P1-compulsory",
+      "redistribution_policy": "review-before-bundling",
+      "references": [
+        "Kraken 2 database"
+      ],
+      "windows_mode": "WSL2"
+    },
+    {
+      "automatic_bundle_policy": "separate-optional-model-pack",
+      "blockers": [
+        "Capture and hash the exact upstream licence for the selected release.",
+        "Model-weight licence, checksum and hardware qualification are required.",
+        "Reference/database release, checksum, licence and disk estimate are required.",
+        "WSL2 availability and Linux runtime qualification are required on Windows."
+      ],
+      "engine": "llama_cpp",
+      "exact_release_qualified": false,
+      "install_route": "pinned-python-venv",
+      "label": "llama.cpp",
+      "licence_acceptance_required": false,
+      "licence_spdx": "LicenseRef-Upstream-Package-License",
+      "mode": "wsl2-python",
+      "model_weights_required": false,
+      "official_url": "https://pypi.org/project/llama-cpp-python/",
+      "package_specs": [
+        "llama-cpp-python"
+      ],
+      "priority": "P4-manual-or-heavy",
+      "redistribution_policy": "review-before-bundling",
+      "references": [
+        "Approved model weights"
+      ],
+      "windows_mode": "WSL2"
+    },
+    {
+      "automatic_bundle_policy": "do-not-bundle-until-legal-review",
+      "blockers": [
+        "Capture and hash the exact upstream licence for the selected release.",
+        "WSL2 availability and Linux runtime qualification are required on Windows."
+      ],
+      "engine": "macs2",
+      "exact_release_qualified": false,
+      "install_route": "micromamba",
+      "label": "MACS2",
+      "licence_acceptance_required": false,
+      "licence_spdx": "LicenseRef-Upstream-Package-License",
+      "mode": "wsl2-micromamba",
+      "model_weights_required": false,
+      "official_url": "https://bioconda.github.io/recipes/macs2/README.html",
+      "package_specs": [
+        "macs2"
+      ],
+      "priority": "P3-specialist",
+      "redistribution_policy": "review-before-bundling",
+      "references": [],
+      "windows_mode": "WSL2"
+    },
+    {
+      "automatic_bundle_policy": "do-not-bundle-until-legal-review",
+      "blockers": [
+        "Capture and hash the exact upstream licence for the selected release.",
+        "WSL2 availability and Linux runtime qualification are required on Windows."
+      ],
+      "engine": "mafft",
+      "exact_release_qualified": false,
+      "install_route": "micromamba",
+      "label": "MAFFT",
+      "licence_acceptance_required": false,
+      "licence_spdx": "LicenseRef-Upstream-Package-License",
+      "mode": "wsl2-micromamba",
+      "model_weights_required": false,
+      "official_url": "https://bioconda.github.io/recipes/mafft/README.html",
+      "package_specs": [
+        "mafft"
+      ],
+      "priority": "P1-compulsory",
+      "redistribution_policy": "review-before-bundling",
+      "references": [],
+      "windows_mode": "WSL2"
+    },
+    {
+      "automatic_bundle_policy": "do-not-bundle-until-legal-review",
+      "blockers": [
+        "Capture and hash the exact upstream licence for the selected release.",
+        "Reference/database release, checksum, licence and disk estimate are required.",
+        "WSL2 availability and Linux runtime qualification are required on Windows."
+      ],
+      "engine": "majiq",
+      "exact_release_qualified": false,
+      "install_route": "pinned-python-wsl2",
+      "label": "MAJIQ",
+      "licence_acceptance_required": false,
+      "licence_spdx": "LicenseRef-Upstream-Review-Required",
+      "mode": "wsl2-micromamba",
+      "model_weights_required": false,
+      "official_url": "https://majiq.biociphers.org/",
+      "package_specs": [
+        "majiq"
+      ],
+      "priority": "P3-specialist",
+      "redistribution_policy": "do-not-bundle-until-licence-reviewed",
+      "references": [
+        "Genome annotation GFF3"
+      ],
+      "windows_mode": "WSL2"
+    },
+    {
+      "automatic_bundle_policy": "do-not-bundle-until-legal-review",
+      "blockers": [
+        "Capture and hash the exact upstream licence for the selected release.",
+        "WSL2 availability and Linux runtime qualification are required on Windows."
+      ],
+      "engine": "merqury",
+      "exact_release_qualified": false,
+      "install_route": "micromamba",
+      "label": "Merqury",
+      "licence_acceptance_required": false,
+      "licence_spdx": "LicenseRef-Upstream-Package-License",
+      "mode": "wsl2-micromamba",
+      "model_weights_required": false,
+      "official_url": "https://bioconda.github.io/recipes/merqury/README.html",
+      "package_specs": [
+        "merqury"
+      ],
+      "priority": "P3-specialist",
+      "redistribution_policy": "review-before-bundling",
+      "references": [],
+      "windows_mode": "WSL2"
+    },
+    {
+      "automatic_bundle_policy": "do-not-bundle-until-legal-review",
+      "blockers": [
+        "Capture and hash the exact upstream licence for the selected release.",
+        "WSL2 availability and Linux runtime qualification are required on Windows."
+      ],
+      "engine": "minigraph",
+      "exact_release_qualified": false,
+      "install_route": "micromamba",
+      "label": "minigraph",
+      "licence_acceptance_required": false,
+      "licence_spdx": "LicenseRef-Upstream-Package-License",
+      "mode": "wsl2-micromamba",
+      "model_weights_required": false,
+      "official_url": "https://bioconda.github.io/recipes/minigraph/README.html",
+      "package_specs": [
+        "minigraph"
+      ],
+      "priority": "P3-specialist",
+      "redistribution_policy": "review-before-bundling",
+      "references": [],
+      "windows_mode": "WSL2"
+    },
+    {
+      "automatic_bundle_policy": "do-not-bundle-until-legal-review",
+      "blockers": [
+        "Capture and hash the exact upstream licence for the selected release.",
+        "WSL2 availability and Linux runtime qualification are required on Windows."
+      ],
+      "engine": "minimap2",
+      "exact_release_qualified": false,
+      "install_route": "micromamba",
+      "label": "minimap2",
+      "licence_acceptance_required": false,
+      "licence_spdx": "LicenseRef-Upstream-Package-License",
+      "mode": "wsl2-micromamba",
+      "model_weights_required": false,
+      "official_url": "https://bioconda.github.io/recipes/minimap2/README.html",
+      "package_specs": [
+        "minimap2"
+      ],
+      "priority": "P2-high-value",
+      "redistribution_policy": "review-before-bundling",
+      "references": [],
+      "windows_mode": "WSL2"
+    },
+    {
+      "automatic_bundle_policy": "do-not-bundle-until-legal-review",
+      "blockers": [
+        "Capture and hash the exact upstream licence for the selected release.",
+        "Reference/database release, checksum, licence and disk estimate are required.",
+        "WSL2 availability and Linux runtime qualification are required on Windows."
+      ],
+      "engine": "modkit",
+      "exact_release_qualified": false,
+      "install_route": "micromamba",
+      "label": "Oxford Nanopore Modkit",
+      "licence_acceptance_required": false,
+      "licence_spdx": "LicenseRef-Upstream-Package-License",
+      "mode": "wsl2-micromamba",
+      "model_weights_required": false,
+      "official_url": "https://bioconda.github.io/recipes/modkit/README.html",
+      "package_specs": [
+        "modkit"
+      ],
+      "priority": "P3-specialist",
+      "redistribution_policy": "review-before-bundling",
+      "references": [
+        "Reference FASTA"
+      ],
+      "windows_mode": "WSL2"
+    },
+    {
+      "automatic_bundle_policy": "eligible-after-release-hash-and-smoke-test",
+      "blockers": [
+        "WSL2 availability and Linux runtime qualification are required on Windows."
+      ],
+      "engine": "mosdepth",
+      "exact_release_qualified": false,
+      "install_route": "micromamba-wsl2",
+      "label": "mosdepth",
+      "licence_acceptance_required": false,
+      "licence_spdx": "MIT",
+      "mode": "wsl2-micromamba",
+      "model_weights_required": false,
+      "official_url": "https://github.com/brentp/mosdepth",
+      "package_specs": [
+        "mosdepth"
+      ],
+      "priority": "P2-high-value",
+      "redistribution_policy": "permissive-with-notice",
+      "references": [],
+      "windows_mode": "WSL2"
+    },
+    {
+      "automatic_bundle_policy": "do-not-bundle-until-legal-review",
+      "blockers": [],
+      "engine": "msconvert",
+      "exact_release_qualified": false,
+      "install_route": "official-windows-installer",
+      "label": "ProteoWizard msconvert",
+      "licence_acceptance_required": false,
+      "licence_spdx": "Apache-2.0",
+      "mode": "official-provider",
+      "model_weights_required": false,
+      "official_url": "https://proteowizard.sourceforge.io/",
+      "package_specs": [],
+      "priority": "P2-high-value",
+      "redistribution_policy": "component-and-vendor-library-review-required",
+      "references": [],
+      "windows_mode": "Native Windows"
+    },
+    {
+      "automatic_bundle_policy": "do-not-bundle-until-legal-review",
+      "blockers": [
+        "Capture and hash the exact upstream licence for the selected release.",
+        "WSL2 availability and Linux runtime qualification are required on Windows."
+      ],
+      "engine": "msgfplus",
+      "exact_release_qualified": false,
+      "install_route": "micromamba",
+      "label": "MS-GF+",
+      "licence_acceptance_required": false,
+      "licence_spdx": "LicenseRef-Upstream-Package-License",
+      "mode": "wsl2-micromamba",
+      "model_weights_required": false,
+      "official_url": "https://bioconda.github.io/recipes/msgfplus/README.html",
+      "package_specs": [
+        "msgfplus"
+      ],
+      "priority": "P3-specialist",
+      "redistribution_policy": "review-before-bundling",
+      "references": [],
+      "windows_mode": "WSL2"
+    },
+    {
+      "automatic_bundle_policy": "do-not-bundle-until-legal-review",
+      "blockers": [],
+      "engine": "multiqc",
+      "exact_release_qualified": false,
+      "install_route": "pinned-python-windows",
+      "label": "MultiQC",
+      "licence_acceptance_required": false,
+      "licence_spdx": "GPL-3.0-or-later",
+      "mode": "windows-python",
+      "model_weights_required": false,
+      "official_url": "https://docs.seqera.io/multiqc/getting_started/installation",
+      "package_specs": [
+        "multiqc"
+      ],
+      "priority": "P1-compulsory",
+      "redistribution_policy": "copyleft-review-required",
+      "references": [],
+      "windows_mode": "Native Windows"
+    },
+    {
+      "automatic_bundle_policy": "never-auto-bundle",
+      "blockers": [
+        "User-specific provider authorisation is required; automatic redistribution is blocked.",
+        "Reference/database release, checksum, licence and disk estimate are required.",
+        "WSL2 availability and Linux runtime qualification are required on Windows."
+      ],
+      "engine": "netmhciipan",
+      "exact_release_qualified": false,
+      "install_route": "manual-authorized-download",
+      "label": "NetMHCIIpan",
+      "licence_acceptance_required": true,
+      "licence_spdx": "LicenseRef-DTU-Academic",
+      "mode": "manual-authorized",
+      "model_weights_required": false,
+      "official_url": "https://services.healthtech.dtu.dk/services/NetMHCIIpan-4.0/",
+      "package_specs": [],
+      "priority": "P4-manual-or-heavy",
+      "redistribution_policy": "restricted-do-not-bundle",
+      "references": [
+        "NetMHCIIpan data files"
+      ],
+      "windows_mode": "WSL2"
+    },
+    {
+      "automatic_bundle_policy": "never-auto-bundle",
+      "blockers": [
+        "User-specific provider authorisation is required; automatic redistribution is blocked.",
+        "Reference/database release, checksum, licence and disk estimate are required.",
+        "WSL2 availability and Linux runtime qualification are required on Windows."
+      ],
+      "engine": "netmhcpan",
+      "exact_release_qualified": false,
+      "install_route": "manual-authorized-download",
+      "label": "NetMHCpan",
+      "licence_acceptance_required": true,
+      "licence_spdx": "LicenseRef-DTU-Academic",
+      "mode": "manual-authorized",
+      "model_weights_required": false,
+      "official_url": "https://services.healthtech.dtu.dk/services/NetMHCpan-4.1/",
+      "package_specs": [],
+      "priority": "P4-manual-or-heavy",
+      "redistribution_policy": "restricted-do-not-bundle",
+      "references": [
+        "NetMHCpan data files"
+      ],
+      "windows_mode": "WSL2"
+    },
+    {
+      "automatic_bundle_policy": "do-not-bundle-until-legal-review",
+      "blockers": [],
+      "engine": "obabel",
+      "exact_release_qualified": false,
+      "install_route": "official-windows-binary-or-wsl2",
+      "label": "Open Babel",
+      "licence_acceptance_required": false,
+      "licence_spdx": "GPL-2.0-only",
+      "mode": "official-provider",
+      "model_weights_required": false,
+      "official_url": "https://openbabel.org/",
+      "package_specs": [],
+      "priority": "P1-compulsory",
+      "redistribution_policy": "copyleft-review-required",
+      "references": [],
+      "windows_mode": "Native Windows"
+    },
+    {
+      "automatic_bundle_policy": "do-not-bundle-until-legal-review",
+      "blockers": [
+        "Capture and hash the exact upstream licence for the selected release.",
+        "WSL2 availability and Linux runtime qualification are required on Windows."
+      ],
+      "engine": "odgi",
+      "exact_release_qualified": false,
+      "install_route": "micromamba",
+      "label": "odgi",
+      "licence_acceptance_required": false,
+      "licence_spdx": "LicenseRef-Upstream-Package-License",
+      "mode": "wsl2-micromamba",
+      "model_weights_required": false,
+      "official_url": "https://bioconda.github.io/recipes/odgi/README.html",
+      "package_specs": [
+        "odgi"
+      ],
+      "priority": "P3-specialist",
+      "redistribution_policy": "review-before-bundling",
+      "references": [],
+      "windows_mode": "WSL2"
+    },
+    {
+      "automatic_bundle_policy": "do-not-bundle-until-legal-review",
+      "blockers": [
+        "Capture and hash the exact upstream licence for the selected release.",
+        "WSL2 availability and Linux runtime qualification are required on Windows."
+      ],
+      "engine": "openmm",
+      "exact_release_qualified": false,
+      "install_route": "micromamba",
+      "label": "OpenMM Python",
+      "licence_acceptance_required": false,
+      "licence_spdx": "LicenseRef-Upstream-Package-License",
+      "mode": "wsl2-micromamba",
+      "model_weights_required": false,
+      "official_url": "https://bioconda.github.io/recipes/openmm/README.html",
+      "package_specs": [
+        "openmm"
+      ],
+      "priority": "P2-high-value",
+      "redistribution_policy": "review-before-bundling",
+      "references": [],
+      "windows_mode": "WSL2"
+    },
+    {
+      "automatic_bundle_policy": "do-not-bundle-until-legal-review",
+      "blockers": [
+        "Capture and hash the exact upstream licence for the selected release.",
+        "WSL2 availability and Linux runtime qualification are required on Windows."
+      ],
+      "engine": "openms",
+      "exact_release_qualified": false,
+      "install_route": "micromamba",
+      "label": "OpenMS",
+      "licence_acceptance_required": false,
+      "licence_spdx": "LicenseRef-Upstream-Package-License",
+      "mode": "wsl2-micromamba",
+      "model_weights_required": false,
+      "official_url": "https://bioconda.github.io/recipes/openms/README.html",
+      "package_specs": [
+        "openms"
+      ],
+      "priority": "P2-high-value",
+      "redistribution_policy": "review-before-bundling",
+      "references": [],
+      "windows_mode": "WSL2"
+    },
+    {
+      "automatic_bundle_policy": "eligible-after-release-hash-and-smoke-test",
+      "blockers": [],
+      "engine": "openms_featurefinder",
+      "exact_release_qualified": false,
+      "install_route": "openms-windows-pack",
+      "label": "OpenMS FeatureFinderMetabo",
+      "licence_acceptance_required": false,
+      "licence_spdx": "BSD-3-Clause",
+      "mode": "official-provider",
+      "model_weights_required": false,
+      "official_url": "https://www.openms.de/",
+      "package_specs": [],
+      "priority": "P2-high-value",
+      "redistribution_policy": "permissive-with-notice",
+      "references": [],
+      "windows_mode": "Native Windows"
+    },
+    {
+      "automatic_bundle_policy": "do-not-bundle-until-legal-review",
+      "blockers": [
+        "Capture and hash the exact upstream licence for the selected release.",
+        "WSL2 availability and Linux runtime qualification are required on Windows."
+      ],
+      "engine": "openslide",
+      "exact_release_qualified": false,
+      "install_route": "micromamba",
+      "label": "OpenSlide Python",
+      "licence_acceptance_required": false,
+      "licence_spdx": "LicenseRef-Upstream-Package-License",
+      "mode": "wsl2-micromamba",
+      "model_weights_required": false,
+      "official_url": "https://bioconda.github.io/recipes/openslide/README.html",
+      "package_specs": [
+        "openslide",
+        "openslide-python"
+      ],
+      "priority": "P3-specialist",
+      "redistribution_policy": "review-before-bundling",
+      "references": [],
+      "windows_mode": "WSL2"
+    },
+    {
+      "automatic_bundle_policy": "eligible-after-release-hash-and-smoke-test",
+      "blockers": [
+        "Reference/database release, checksum, licence and disk estimate are required."
+      ],
+      "engine": "picard",
+      "exact_release_qualified": false,
+      "install_route": "official-jar-java17",
+      "label": "Picard",
+      "licence_acceptance_required": false,
+      "licence_spdx": "MIT",
+      "mode": "official-provider",
+      "model_weights_required": false,
+      "official_url": "https://github.com/broadinstitute/picard",
+      "package_specs": [],
+      "priority": "P2-high-value",
+      "redistribution_policy": "permissive-with-notice",
+      "references": [
+        "Reference FASTA"
+      ],
+      "windows_mode": "Native Windows"
+    },
+    {
+      "automatic_bundle_policy": "do-not-bundle-until-legal-review",
+      "blockers": [
+        "Capture and hash the exact upstream licence for the selected release.",
+        "WSL2 availability and Linux runtime qualification are required on Windows."
+      ],
+      "engine": "plink2",
+      "exact_release_qualified": false,
+      "install_route": "micromamba",
+      "label": "PLINK 2",
+      "licence_acceptance_required": false,
+      "licence_spdx": "LicenseRef-Upstream-Package-License",
+      "mode": "wsl2-micromamba",
+      "model_weights_required": false,
+      "official_url": "https://bioconda.github.io/recipes/plink2/README.html",
+      "package_specs": [
+        "plink2"
+      ],
+      "priority": "P1-compulsory",
+      "redistribution_policy": "review-before-bundling",
+      "references": [],
+      "windows_mode": "WSL2"
+    },
+    {
+      "automatic_bundle_policy": "separate-optional-model-pack",
+      "blockers": [
+        "Model-weight licence, checksum and hardware qualification are required.",
+        "WSL2 availability and Linux runtime qualification are required on Windows."
+      ],
+      "engine": "proteinmpnn",
+      "exact_release_qualified": false,
+      "install_route": "git-and-weight-verification",
+      "label": "ProteinMPNN",
+      "licence_acceptance_required": false,
+      "licence_spdx": "MIT",
+      "mode": "manual-authorized",
+      "model_weights_required": true,
+      "official_url": "https://github.com/dauparas/ProteinMPNN",
+      "package_specs": [],
+      "priority": "P4-manual-or-heavy",
+      "redistribution_policy": "permissive-with-notice",
+      "references": [],
+      "windows_mode": "WSL2"
+    },
+    {
+      "automatic_bundle_policy": "do-not-bundle-until-legal-review",
+      "blockers": [
+        "Capture and hash the exact upstream licence for the selected release.",
+        "WSL2 availability and Linux runtime qualification are required on Windows."
+      ],
+      "engine": "regenie",
+      "exact_release_qualified": false,
+      "install_route": "micromamba",
+      "label": "REGENIE",
+      "licence_acceptance_required": false,
+      "licence_spdx": "LicenseRef-Upstream-Package-License",
+      "mode": "wsl2-micromamba",
+      "model_weights_required": false,
+      "official_url": "https://bioconda.github.io/recipes/regenie/README.html",
+      "package_specs": [
+        "regenie"
+      ],
+      "priority": "P3-specialist",
+      "redistribution_policy": "review-before-bundling",
+      "references": [],
+      "windows_mode": "WSL2"
+    },
+    {
+      "automatic_bundle_policy": "do-not-bundle-until-legal-review",
+      "blockers": [
+        "Capture and hash the exact upstream licence for the selected release.",
+        "Reference/database release, checksum, licence and disk estimate are required.",
+        "WSL2 availability and Linux runtime qualification are required on Windows."
+      ],
+      "engine": "resfinder",
+      "exact_release_qualified": false,
+      "install_route": "micromamba",
+      "label": "ResFinder",
+      "licence_acceptance_required": false,
+      "licence_spdx": "LicenseRef-Upstream-Package-License",
+      "mode": "wsl2-micromamba",
+      "model_weights_required": false,
+      "official_url": "https://bioconda.github.io/recipes/resfinder/README.html",
+      "package_specs": [
+        "resfinder"
+      ],
+      "priority": "P3-specialist",
+      "redistribution_policy": "review-before-bundling",
+      "references": [
+        "ResFinder database",
+        "PointFinder database"
+      ],
+      "windows_mode": "WSL2"
+    },
+    {
+      "automatic_bundle_policy": "separate-optional-model-pack",
+      "blockers": [
+        "Model-weight licence, checksum and hardware qualification are required.",
+        "Reference/database release, checksum, licence and disk estimate are required.",
+        "WSL2 availability and Linux runtime qualification are required on Windows."
+      ],
+      "engine": "rfdiffusion",
+      "exact_release_qualified": false,
+      "install_route": "container-or-git-and-weight-verification",
+      "label": "RFdiffusion",
+      "licence_acceptance_required": false,
+      "licence_spdx": "BSD-3-Clause",
+      "mode": "manual-authorized",
+      "model_weights_required": true,
+      "official_url": "https://github.com/RosettaCommons/RFdiffusion",
+      "package_specs": [],
+      "priority": "P4-manual-or-heavy",
+      "redistribution_policy": "conditional-code-and-weight-review",
+      "references": [
+        "Model weights"
+      ],
+      "windows_mode": "WSL2"
+    },
+    {
+      "automatic_bundle_policy": "do-not-bundle-until-legal-review",
+      "blockers": [
+        "Capture and hash the exact upstream licence for the selected release.",
+        "Reference/database release, checksum, licence and disk estimate are required.",
+        "WSL2 availability and Linux runtime qualification are required on Windows."
+      ],
+      "engine": "rmats",
+      "exact_release_qualified": false,
+      "install_route": "micromamba-wsl2",
+      "label": "rMATS",
+      "licence_acceptance_required": false,
+      "licence_spdx": "LicenseRef-Upstream-Review-Required",
+      "mode": "wsl2-micromamba",
+      "model_weights_required": false,
+      "official_url": "https://github.com/Xinglab/rmats-turbo",
+      "package_specs": [
+        "rmats"
+      ],
+      "priority": "P3-specialist",
+      "redistribution_policy": "do-not-bundle-until-licence-reviewed",
+      "references": [
+        "Genome annotation GTF"
+      ],
+      "windows_mode": "WSL2"
+    },
+    {
+      "automatic_bundle_policy": "do-not-bundle-until-legal-review",
+      "blockers": [
+        "Capture and hash the exact upstream licence for the selected release.",
+        "WSL2 availability and Linux runtime qualification are required on Windows."
+      ],
+      "engine": "saige",
+      "exact_release_qualified": false,
+      "install_route": "micromamba",
+      "label": "SAIGE",
+      "licence_acceptance_required": false,
+      "licence_spdx": "LicenseRef-Upstream-Package-License",
+      "mode": "wsl2-micromamba",
+      "model_weights_required": false,
+      "official_url": "https://bioconda.github.io/recipes/r-saige/README.html",
+      "package_specs": [
+        "r-saige"
+      ],
+      "priority": "P3-specialist",
+      "redistribution_policy": "review-before-bundling",
+      "references": [],
+      "windows_mode": "WSL2"
+    },
+    {
+      "automatic_bundle_policy": "eligible-after-release-hash-and-smoke-test",
+      "blockers": [
+        "Reference/database release, checksum, licence and disk estimate are required.",
+        "WSL2 availability and Linux runtime qualification are required on Windows."
+      ],
+      "engine": "salmon",
+      "exact_release_qualified": false,
+      "install_route": "micromamba-wsl2",
+      "label": "Salmon",
+      "licence_acceptance_required": false,
+      "licence_spdx": "BSD-3-Clause",
+      "mode": "wsl2-micromamba",
+      "model_weights_required": false,
+      "official_url": "https://github.com/COMBINE-lab/salmon",
+      "package_specs": [
+        "salmon"
+      ],
+      "priority": "P1-compulsory",
+      "redistribution_policy": "permissive-with-notice",
+      "references": [
+        "Salmon transcriptome index"
+      ],
+      "windows_mode": "WSL2"
+    },
+    {
+      "automatic_bundle_policy": "do-not-bundle-until-legal-review",
+      "blockers": [
+        "Capture and hash the exact upstream licence for the selected release.",
+        "WSL2 availability and Linux runtime qualification are required on Windows."
+      ],
+      "engine": "samtools",
+      "exact_release_qualified": false,
+      "install_route": "micromamba",
+      "label": "SAMtools",
+      "licence_acceptance_required": false,
+      "licence_spdx": "LicenseRef-Upstream-Package-License",
+      "mode": "wsl2-micromamba",
+      "model_weights_required": false,
+      "official_url": "https://bioconda.github.io/recipes/samtools/README.html",
+      "package_specs": [
+        "samtools"
+      ],
+      "priority": "P1-compulsory",
+      "redistribution_policy": "review-before-bundling",
+      "references": [],
+      "windows_mode": "WSL2"
+    },
+    {
+      "automatic_bundle_policy": "do-not-bundle-until-legal-review",
+      "blockers": [
+        "Capture and hash the exact upstream licence for the selected release.",
+        "WSL2 availability and Linux runtime qualification are required on Windows."
+      ],
+      "engine": "scanpy",
+      "exact_release_qualified": false,
+      "install_route": "micromamba",
+      "label": "Scanpy Python",
+      "licence_acceptance_required": false,
+      "licence_spdx": "LicenseRef-Upstream-Package-License",
+      "mode": "wsl2-micromamba",
+      "model_weights_required": false,
+      "official_url": "https://bioconda.github.io/recipes/scanpy/README.html",
+      "package_specs": [
+        "scanpy"
+      ],
+      "priority": "P2-high-value",
+      "redistribution_policy": "review-before-bundling",
+      "references": [],
+      "windows_mode": "WSL2"
+    },
+    {
+      "automatic_bundle_policy": "do-not-bundle-until-legal-review",
+      "blockers": [
+        "Capture and hash the exact upstream licence for the selected release.",
+        "WSL2 availability and Linux runtime qualification are required on Windows."
+      ],
+      "engine": "scvelo",
+      "exact_release_qualified": false,
+      "install_route": "micromamba",
+      "label": "scVelo Python",
+      "licence_acceptance_required": false,
+      "licence_spdx": "LicenseRef-Upstream-Package-License",
+      "mode": "wsl2-micromamba",
+      "model_weights_required": false,
+      "official_url": "https://bioconda.github.io/recipes/scvelo/README.html",
+      "package_specs": [
+        "scvelo"
+      ],
+      "priority": "P2-high-value",
+      "redistribution_policy": "review-before-bundling",
+      "references": [],
+      "windows_mode": "WSL2"
+    },
+    {
+      "automatic_bundle_policy": "do-not-bundle-until-legal-review",
+      "blockers": [
+        "Capture and hash the exact upstream licence for the selected release.",
+        "WSL2 availability and Linux runtime qualification are required on Windows."
+      ],
+      "engine": "sniffles",
+      "exact_release_qualified": false,
+      "install_route": "micromamba",
+      "label": "Sniffles2",
+      "licence_acceptance_required": false,
+      "licence_spdx": "LicenseRef-Upstream-Package-License",
+      "mode": "wsl2-micromamba",
+      "model_weights_required": false,
+      "official_url": "https://bioconda.github.io/recipes/sniffles/README.html",
+      "package_specs": [
+        "sniffles"
+      ],
+      "priority": "P3-specialist",
+      "redistribution_policy": "review-before-bundling",
+      "references": [],
+      "windows_mode": "WSL2"
+    },
+    {
+      "automatic_bundle_policy": "do-not-bundle-until-legal-review",
+      "blockers": [
+        "Reference/database release, checksum, licence and disk estimate are required."
+      ],
+      "engine": "snpeff",
+      "exact_release_qualified": false,
+      "install_route": "official-jar-java",
+      "label": "SnpEff",
+      "licence_acceptance_required": false,
+      "licence_spdx": "LGPL-3.0-or-later",
+      "mode": "official-provider",
+      "model_weights_required": false,
+      "official_url": "https://pcingola.github.io/SnpEff/",
+      "package_specs": [],
+      "priority": "P1-compulsory",
+      "redistribution_policy": "weak-copyleft-review-required",
+      "references": [
+        "SnpEff genome database"
+      ],
+      "windows_mode": "Native Windows"
+    },
+    {
+      "automatic_bundle_policy": "do-not-bundle-until-legal-review",
+      "blockers": [
+        "Capture and hash the exact upstream licence for the selected release.",
+        "Reference/database release, checksum, licence and disk estimate are required.",
+        "WSL2 availability and Linux runtime qualification are required on Windows."
+      ],
+      "engine": "star",
+      "exact_release_qualified": false,
+      "install_route": "micromamba",
+      "label": "STAR",
+      "licence_acceptance_required": false,
+      "licence_spdx": "LicenseRef-Upstream-Package-License",
+      "mode": "wsl2-micromamba",
+      "model_weights_required": false,
+      "official_url": "https://bioconda.github.io/recipes/star/README.html",
+      "package_specs": [
+        "star"
+      ],
+      "priority": "P1-compulsory",
+      "redistribution_policy": "review-before-bundling",
+      "references": [
+        "STAR genome index"
+      ],
+      "windows_mode": "WSL2"
+    },
+    {
+      "automatic_bundle_policy": "do-not-bundle-until-legal-review",
+      "blockers": [
+        "Capture and hash the exact upstream licence for the selected release.",
+        "WSL2 availability and Linux runtime qualification are required on Windows."
+      ],
+      "engine": "stardist",
+      "exact_release_qualified": false,
+      "install_route": "micromamba",
+      "label": "StarDist Python",
+      "licence_acceptance_required": false,
+      "licence_spdx": "LicenseRef-Upstream-Package-License",
+      "mode": "wsl2-micromamba",
+      "model_weights_required": false,
+      "official_url": "https://bioconda.github.io/recipes/stardist/README.html",
+      "package_specs": [
+        "stardist"
+      ],
+      "priority": "P3-specialist",
+      "redistribution_policy": "review-before-bundling",
+      "references": [],
+      "windows_mode": "WSL2"
+    },
+    {
+      "automatic_bundle_policy": "eligible-after-release-hash-and-smoke-test",
+      "blockers": [
+        "Reference/database release, checksum, licence and disk estimate are required."
+      ],
+      "engine": "suppa2",
+      "exact_release_qualified": false,
+      "install_route": "pinned-python-windows-or-wsl2",
+      "label": "SUPPA2",
+      "licence_acceptance_required": false,
+      "licence_spdx": "MIT",
+      "mode": "wsl2-micromamba",
+      "model_weights_required": false,
+      "official_url": "https://github.com/comprna/SUPPA",
+      "package_specs": [
+        "suppa2"
+      ],
+      "priority": "P3-specialist",
+      "redistribution_policy": "permissive-with-notice",
+      "references": [
+        "Transcript annotation GTF"
+      ],
+      "windows_mode": "Native Windows"
+    },
+    {
+      "automatic_bundle_policy": "eligible-after-release-hash-and-smoke-test",
+      "blockers": [
+        "WSL2 availability and Linux runtime qualification are required on Windows."
+      ],
+      "engine": "tabix",
+      "exact_release_qualified": false,
+      "install_route": "htslib-pack-wsl2",
+      "label": "Tabix",
+      "licence_acceptance_required": false,
+      "licence_spdx": "MIT",
+      "mode": "wsl2-micromamba",
+      "model_weights_required": false,
+      "official_url": "https://www.htslib.org/doc/tabix.html",
+      "package_specs": [
+        "htslib"
+      ],
+      "priority": "P2-high-value",
+      "redistribution_policy": "permissive-with-notice",
+      "references": [],
+      "windows_mode": "WSL2-preferred"
+    },
+    {
+      "automatic_bundle_policy": "do-not-bundle-until-legal-review",
+      "blockers": [
+        "Capture and hash the exact upstream licence for the selected release.",
+        "Reference/database release, checksum, licence and disk estimate are required.",
+        "WSL2 availability and Linux runtime qualification are required on Windows."
+      ],
+      "engine": "vep",
+      "exact_release_qualified": false,
+      "install_route": "micromamba",
+      "label": "Ensembl VEP",
+      "licence_acceptance_required": false,
+      "licence_spdx": "LicenseRef-Upstream-Package-License",
+      "mode": "wsl2-micromamba",
+      "model_weights_required": false,
+      "official_url": "https://bioconda.github.io/recipes/ensembl-vep/README.html",
+      "package_specs": [
+        "ensembl-vep"
+      ],
+      "priority": "P1-compulsory",
+      "redistribution_policy": "review-before-bundling",
+      "references": [
+        "VEP cache",
+        "Reference FASTA"
+      ],
+      "windows_mode": "WSL2"
+    },
+    {
+      "automatic_bundle_policy": "do-not-bundle-until-legal-review",
+      "blockers": [
+        "Capture and hash the exact upstream licence for the selected release.",
+        "WSL2 availability and Linux runtime qualification are required on Windows."
+      ],
+      "engine": "vg",
+      "exact_release_qualified": false,
+      "install_route": "micromamba",
+      "label": "vg toolkit",
+      "licence_acceptance_required": false,
+      "licence_spdx": "LicenseRef-Upstream-Package-License",
+      "mode": "wsl2-micromamba",
+      "model_weights_required": false,
+      "official_url": "https://bioconda.github.io/recipes/vg/README.html",
+      "package_specs": [
+        "vg"
+      ],
+      "priority": "P3-specialist",
+      "redistribution_policy": "review-before-bundling",
+      "references": [],
+      "windows_mode": "WSL2"
+    },
+    {
+      "automatic_bundle_policy": "do-not-bundle-until-legal-review",
+      "blockers": [
+        "Capture and hash the exact upstream licence for the selected release.",
+        "WSL2 availability and Linux runtime qualification are required on Windows."
+      ],
+      "engine": "vina",
+      "exact_release_qualified": false,
+      "install_route": "micromamba",
+      "label": "AutoDock Vina",
+      "licence_acceptance_required": false,
+      "licence_spdx": "LicenseRef-Upstream-Package-License",
+      "mode": "wsl2-micromamba",
+      "model_weights_required": false,
+      "official_url": "https://bioconda.github.io/recipes/vina/README.html",
+      "package_specs": [
+        "vina"
+      ],
+      "priority": "P1-compulsory",
+      "redistribution_policy": "review-before-bundling",
+      "references": [],
+      "windows_mode": "WSL2"
+    },
+    {
+      "automatic_bundle_policy": "do-not-bundle-until-legal-review",
+      "blockers": [
+        "Capture and hash the exact upstream licence for the selected release.",
+        "Reference/database release, checksum, licence and disk estimate are required.",
+        "WSL2 availability and Linux runtime qualification are required on Windows."
+      ],
+      "engine": "whatshap",
+      "exact_release_qualified": false,
+      "install_route": "micromamba",
+      "label": "WhatsHap",
+      "licence_acceptance_required": false,
+      "licence_spdx": "LicenseRef-Upstream-Package-License",
+      "mode": "wsl2-micromamba",
+      "model_weights_required": false,
+      "official_url": "https://bioconda.github.io/recipes/whatshap/README.html",
+      "package_specs": [
+        "whatshap"
+      ],
+      "priority": "P2-high-value",
+      "redistribution_policy": "review-before-bundling",
+      "references": [
+        "Reference FASTA"
+      ],
+      "windows_mode": "WSL2"
+    }
+  ],
+  "registered_engines": 76,
+  "schema": "biointel.engine-acquisition-bundle.v1",
+  "windows_python_engines": 2,
+  "wsl2_micromamba_engines": 58
+}

@@ -1,0 +1,89 @@
+{
+  "assurance": {
+    "all_targets_complete": true,
+    "areas": [
+      {
+        "boundary": "10/10 verifies a consistent, tested interaction system across the repository. Real task-completion studies with representative users remain the strongest external usability evidence.",
+        "evidence": [
+          "hero coverage=100%",
+          "src/biointel/ui/theme.py",
+          "src/biointel/ui/theme.py",
+          "src/biointel/ui/theme.py",
+          "src/biointel/ui/components.py",
+          "src/biointel/ui/components.py",
+          "src/biointel/ui/components.py",
+          "src/biointel/ui/workflow.py",
+          "raw st.json calls=0",
+          "src/biointel/ui/theme.py"
+        ],
+        "failed_controls": [],
+        "key": "ui_consistency",
+        "label": "UI Consistency and Interaction Quality",
+        "passed_controls": [
+          "Complete professional page shell coverage",
+          "Global hierarchy and breadcrumbs",
+          "Contextual page help",
+          "Actionable empty states",
+          "Reusable recovery actions",
+          "Standard scientific tables and exports",
+          "Standard chart interpretation cards",
+          "Consistent progress and cancellation feedback",
+          "No raw developer JSON in user pages",
+          "Responsive desktop and narrow-screen layout"
+        ],
+        "score": 10.0,
+        "status": "target"
+      },
+      {
+        "boundary": "10/10 verifies complete navigation controls, continuity and automated discoverability. It does not claim that every future user will prefer the same information architecture.",
+        "evidence": [
+          "unique keys, paths, descriptions and keywords",
+          "src/biointel/ui/theme.py",
+          "src/biointel/ui/theme.py",
+          "src/biointel/ui/theme.py",
+          "src/biointel/ui/theme.py",
+          "src/biointel/ui/preferences.py",
+          "src/biointel/ui/runtime_guard.py",
+          "category-safe adjacent navigation for every catalogue page",
+          "src/biointel/ui/theme.py",
+          "pages/25_Command_Center.py"
+        ],
+        "failed_controls": [],
+        "key": "navigation",
+        "label": "Navigation and Workflow Discoverability",
+        "passed_controls": [
+          "Unique and complete module catalogue",
+          "Persistent workflow-first sidebar",
+          "Global module finder",
+          "Typo-tolerant scientific search",
+          "Pinned and recent continuity",
+          "Durable preference persistence",
+          "Safe route failure boundary",
+          "Previous and next module navigation",
+          "Active scientific context continuity",
+          "Dedicated command and resume center"
+        ],
+        "score": 10.0,
+        "status": "target"
+      }
+    ],
+    "boundary": "The 10/10 score is a repository implementation target backed by observable controls and tests. Independent moderated usability testing remains separate evidence.",
+    "implementation_average": 10.0,
+    "page_metrics": {
+      "forms": 62,
+      "hero_coverage": 1.0,
+      "page_count": 93,
+      "raw_json": 0,
+      "smart_tables": 327
+    },
+    "schema": "biointel.user-experience-assurance.v1",
+    "scores": {
+      "navigation": 10.0,
+      "ui_consistency": 10.0
+    }
+  },
+  "passed": true,
+  "schema": "biointel.step85-user-experience-qualification.v1",
+  "user_experience_group_score": 10.0,
+  "version": "8.5.0"
+}

@@ -1,0 +1,45 @@
+{
+  "schema": "biointel.step171.test-results.v1",
+  "completed_targeted_tests": 41,
+  "completed_failures": 0,
+  "groups": [
+    {
+      "suite": "Step 171 focused",
+      "passed": 5
+    },
+    {
+      "suite": "Step 170 compatibility",
+      "passed": 8
+    },
+    {
+      "suite": "Step 167 compatibility",
+      "passed": 6
+    },
+    {
+      "suite": "Step 166 compatibility",
+      "passed": 5
+    },
+    {
+      "suite": "Step 165 compatibility",
+      "passed": 4
+    },
+    {
+      "suite": "Step 164 compatibility",
+      "passed": 5
+    },
+    {
+      "suite": "Step 163 compatibility",
+      "passed": 2
+    },
+    {
+      "suite": "Step 162 compatibility",
+      "passed": 6
+    }
+  ],
+  "full_native_module_sweep": {
+    "modules": 80,
+    "passed": 80,
+    "failures": 0
+  },
+  "note": "A broader combined historical command crossed the execution cap; only completed isolated suites are counted."
+}

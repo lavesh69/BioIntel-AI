@@ -1,0 +1,29 @@
+{
+  "completed_at": "2026-07-05T05:49:36.659581+00:00",
+  "dataset": "UCI Breast Cancer Wisconsin Diagnostic",
+  "dataset_doi": "10.24432/C5DW2B",
+  "dataset_sha256": "111000dc8b565e16d91880afd585fed4a2715955ace30c43addf1795459470ea",
+  "features": 30,
+  "licence": "CC BY 4.0",
+  "limitations": [
+    "Single public dataset",
+    "Not an external DTI benchmark",
+    "No prospective outcomes"
+  ],
+  "metrics": {
+    "cv_balanced_accuracy_mean": 0.9700364330686964,
+    "cv_f1_mean": 0.9781105573942129,
+    "cv_roc_auc_mean": 0.9943359337766479,
+    "cv_roc_auc_std": 0.004939962318966729,
+    "holdout_balanced_accuracy": 0.9811507936507937,
+    "holdout_brier": 0.020597679739436534,
+    "holdout_ece": 0.028066718847215184,
+    "holdout_f1": 0.9861111111111112,
+    "holdout_log_loss": 0.08047898585854318,
+    "holdout_roc_auc": 0.9943783068783069
+  },
+  "model_sha256": "f1ff2b4664cfdc3e89af624372028914e587b810d96022a921e118168404e8d6",
+  "protocol": "Repeated stratified 5-fold CV x3 plus untouched stratified 20% holdout",
+  "rows": 569,
+  "study_id": "GEN-UCI-WDBC-REPEATED-CV-2026"
+}

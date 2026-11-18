@@ -1,0 +1,63 @@
+{
+  "file_count": 6,
+  "passed_files": 6,
+  "failed_files": 0,
+  "timed_out_files": 0,
+  "elapsed_seconds_total": 31.732,
+  "results": [
+    {
+      "file": "tests/test_step11_ui.py",
+      "passed": true,
+      "returncode": 0,
+      "timed_out": false,
+      "elapsed_seconds": 4.702,
+      "stdout_tail": "..........                                                               [100%]\n10 passed in 2.37s\n",
+      "stderr_tail": ""
+    },
+    {
+      "file": "tests/test_step50_runtime_repair.py",
+      "passed": true,
+      "returncode": 0,
+      "timed_out": false,
+      "elapsed_seconds": 11.947,
+      "stdout_tail": "...                                                                      [100%]\n=============================== warnings summary ===============================\ntests/test_step50_runtime_repair.py::test_reported_pages_render_without_global_theme_error\n  /opt/pyvenv/lib/python3.13/site-packages/ddtrace/internal/module.py:313: PendingDeprecationWarning: Please use `import python_multipart` instead.\n    self.loader.exec_module(module)\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n3 passed, 1 warning in 9.42s\n",
+      "stderr_tail": ""
+    },
+    {
+      "file": "tests/test_step58_aesthetic_ui.py",
+      "passed": true,
+      "returncode": 0,
+      "timed_out": false,
+      "elapsed_seconds": 3.196,
+      "stdout_tail": ".....                                                                    [100%]\n5 passed in 0.76s\n",
+      "stderr_tail": ""
+    },
+    {
+      "file": "tests/test_step65_desktop_ui_excellence.py",
+      "passed": true,
+      "returncode": 0,
+      "timed_out": false,
+      "elapsed_seconds": 2.256,
+      "stdout_tail": "....                                                                     [100%]\n4 passed in 0.13s\n",
+      "stderr_tail": ""
+    },
+    {
+      "file": "tests/test_step66_full_experience_themes.py",
+      "passed": true,
+      "returncode": 0,
+      "timed_out": false,
+      "elapsed_seconds": 4.912,
+      "stdout_tail": "..........                                                               [100%]\n10 passed in 2.55s\n",
+      "stderr_tail": ""
+    },
+    {
+      "file": "tests/test_step67_theme_font_excellence.py",
+      "passed": true,
+      "returncode": 0,
+      "timed_out": false,
+      "elapsed_seconds": 4.719,
+      "stdout_tail": "...........                                                              [100%]\n11 passed in 2.28s\n",
+      "stderr_tail": ""
+    }
+  ]
+}

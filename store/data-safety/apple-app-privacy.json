@@ -1,0 +1,15 @@
+{
+  "template_status": "publisher_must_confirm_against_final_hosted_deployment",
+  "data_used_to_track_you": [],
+  "data_linked_to_you": [
+    {"category": "User Content", "types": ["Files and documents", "Other user content"], "purposes": ["App Functionality"], "optional": true},
+    {"category": "Identifiers", "types": ["User ID"], "purposes": ["App Functionality", "Account Management"], "optional": true}
+  ],
+  "data_not_linked_to_you": [
+    {"category": "Diagnostics", "types": ["Crash Data", "Performance Data", "Other Diagnostic Data"], "purposes": ["App Functionality"]},
+    {"category": "Usage Data", "types": ["Product Interaction"], "purposes": ["Analytics", "App Functionality"], "optional": true}
+  ],
+  "mobile_shell_local_storage": ["Configured BioIntel server URL"],
+  "advertising": false,
+  "tracking": false
+}

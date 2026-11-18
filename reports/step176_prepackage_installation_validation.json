@@ -1,0 +1,205 @@
+{
+  "schema": "biointel.step175.installation-validation.v1",
+  "generated_at_utc": "2026-07-14T16:30:57.797964+00:00",
+  "root": "/mnt/data/biointel175_upgrade/src/BioIntel-AI",
+  "release_step": 175,
+  "release_version": "14.7.0",
+  "checks": [
+    {
+      "key": "part_marker:.release_parts/step175_part1.ok",
+      "passed": true
+    },
+    {
+      "key": "part_marker:.release_parts/step175_part2.ok",
+      "passed": true
+    },
+    {
+      "key": "part_marker:.release_parts/step175_part3.ok",
+      "passed": true
+    },
+    {
+      "key": "part_marker:.release_parts/step175_part4.ok",
+      "passed": true
+    },
+    {
+      "key": "release_identity",
+      "passed": true
+    },
+    {
+      "key": "source_manifest",
+      "passed": true
+    },
+    {
+      "key": "package_assignment",
+      "passed": true
+    },
+    {
+      "key": "all_assigned_files_present",
+      "passed": true,
+      "checked": 10842
+    },
+    {
+      "key": "critical_present:INSTALL_WINDOWS.bat",
+      "passed": true
+    },
+    {
+      "key": "critical_hash:INSTALL_WINDOWS.bat",
+      "passed": true,
+      "expected_size_bytes": 3934,
+      "actual_size_bytes": 3934,
+      "expected_sha256": "61af14de17610fd57b47b1fdabd104c4dbf0cca5149cbc79583be011566725ed",
+      "actual_sha256": "61af14de17610fd57b47b1fdabd104c4dbf0cca5149cbc79583be011566725ed"
+    },
+    {
+      "key": "critical_present:RUN_BOTH_WINDOWS.bat",
+      "passed": true
+    },
+    {
+      "key": "critical_hash:RUN_BOTH_WINDOWS.bat",
+      "passed": true,
+      "expected_size_bytes": 2848,
+      "actual_size_bytes": 2848,
+      "expected_sha256": "e854a249d92b6d5f6c1e1cf20cef1476c6b67829edf962fa1dc5877448534af9",
+      "actual_sha256": "e854a249d92b6d5f6c1e1cf20cef1476c6b67829edf962fa1dc5877448534af9"
+    },
+    {
+      "key": "critical_present:RUN_BIOINTEL_PATH_SAFE_WINDOWS.bat",
+      "passed": true
+    },
+    {
+      "key": "critical_hash:RUN_BIOINTEL_PATH_SAFE_WINDOWS.bat",
+      "passed": true,
+      "expected_size_bytes": 2711,
+      "actual_size_bytes": 2711,
+      "expected_sha256": "3d3ba4a81afc902790682218458067c59dc25de4815616e17e7c0cca44640547",
+      "actual_sha256": "3d3ba4a81afc902790682218458067c59dc25de4815616e17e7c0cca44640547"
+    },
+    {
+      "key": "critical_present:AUTO_INSTALL_AND_RUN_WINDOWS.bat",
+      "passed": true
+    },
+    {
+      "key": "critical_hash:AUTO_INSTALL_AND_RUN_WINDOWS.bat",
+      "passed": true,
+      "expected_size_bytes": 509,
+      "actual_size_bytes": 509,
+      "expected_sha256": "613709c3f3ac98630423cb89e520d2f84ef2f04dc9ece66d275012410a7dabc6",
+      "actual_sha256": "613709c3f3ac98630423cb89e520d2f84ef2f04dc9ece66d275012410a7dabc6"
+    },
+    {
+      "key": "critical_present:scripts/install_windows_step97.py",
+      "passed": true
+    },
+    {
+      "key": "critical_hash:scripts/install_windows_step97.py",
+      "passed": true,
+      "expected_size_bytes": 12375,
+      "actual_size_bytes": 12375,
+      "expected_sha256": "7d2a895c3233c3c91f0b3767895c6ef6418622f6984125b301ae37eca970e631",
+      "actual_sha256": "7d2a895c3233c3c91f0b3767895c6ef6418622f6984125b301ae37eca970e631"
+    },
+    {
+      "key": "critical_present:scripts/run_biointel_step97.py",
+      "passed": true
+    },
+    {
+      "key": "critical_hash:scripts/run_biointel_step97.py",
+      "passed": true,
+      "expected_size_bytes": 12701,
+      "actual_size_bytes": 12701,
+      "expected_sha256": "80baab80512f239166801f254a1fb04e159250c1e05655e57cca3d41bbafa806",
+      "actual_sha256": "80baab80512f239166801f254a1fb04e159250c1e05655e57cca3d41bbafa806"
+    },
+    {
+      "key": "critical_present:scripts/step145_runtime_preflight.py",
+      "passed": true
+    },
+    {
+      "key": "critical_hash:scripts/step145_runtime_preflight.py",
+      "passed": true,
+      "expected_size_bytes": 4731,
+      "actual_size_bytes": 4731,
+      "expected_sha256": "b8dcb2350381ee4d6ab3d28d6cd5ed2a73025bc597d8fdd5e4d0cd5af2c92385",
+      "actual_sha256": "b8dcb2350381ee4d6ab3d28d6cd5ed2a73025bc597d8fdd5e4d0cd5af2c92385"
+    },
+    {
+      "key": "critical_present:scripts/step150_validate_installation.py",
+      "passed": true
+    },
+    {
+      "key": "critical_hash:scripts/step150_validate_installation.py",
+      "passed": true,
+      "expected_size_bytes": 10637,
+      "actual_size_bytes": 10637,
+      "expected_sha256": "06bd57aa97dd121a6c141fa06474d7532d399d91013bd86d64e253d8d416c70a",
+      "actual_sha256": "06bd57aa97dd121a6c141fa06474d7532d399d91013bd86d64e253d8d416c70a"
+    },
+    {
+      "key": "critical_present:scripts/verify_windows_wheelhouse.py",
+      "passed": true
+    },
+    {
+      "key": "critical_hash:scripts/verify_windows_wheelhouse.py",
+      "passed": true,
+      "expected_size_bytes": 4163,
+      "actual_size_bytes": 4163,
+      "expected_sha256": "ca0d50748252ffdba575904eebaa2d82ea9420dc43b35a8ac3ae17089d2170aa",
+      "actual_sha256": "ca0d50748252ffdba575904eebaa2d82ea9420dc43b35a8ac3ae17089d2170aa"
+    },
+    {
+      "key": "critical_present:scripts/step175_release_doctor.py",
+      "passed": true
+    },
+    {
+      "key": "critical_hash:scripts/step175_release_doctor.py",
+      "passed": true,
+      "expected_size_bytes": 2048,
+      "actual_size_bytes": 2048,
+      "expected_sha256": "7a9f74c753f85b9c9ecc735833c32167abe9044483689deec937deb36ae3a182",
+      "actual_sha256": "7a9f74c753f85b9c9ecc735833c32167abe9044483689deec937deb36ae3a182"
+    },
+    {
+      "key": "critical_present:RUN_STEP175_TARGET_ENVIRONMENT_WINDOWS.bat",
+      "passed": true
+    },
+    {
+      "key": "critical_hash:RUN_STEP175_TARGET_ENVIRONMENT_WINDOWS.bat",
+      "passed": true,
+      "expected_size_bytes": 654,
+      "actual_size_bytes": 654,
+      "expected_sha256": "338794827594a11e43b71231fb664e4b338204e6ef7e56ddd11e825e8019f2b7",
+      "actual_sha256": "338794827594a11e43b71231fb664e4b338204e6ef7e56ddd11e825e8019f2b7"
+    },
+    {
+      "key": "critical_present:STEP175_RELEASE.json",
+      "passed": true
+    },
+    {
+      "key": "critical_hash:STEP175_RELEASE.json",
+      "passed": true,
+      "expected_size_bytes": 637,
+      "actual_size_bytes": 637,
+      "expected_sha256": "2ca27c549d8dcf902c19883deab1cd47a718e3b99f248ceae373cdeff704a558",
+      "actual_sha256": "2ca27c549d8dcf902c19883deab1cd47a718e3b99f248ceae373cdeff704a558"
+    },
+    {
+      "key": "critical_present:STEP175_SOURCE_MANIFEST_SHA256.json",
+      "passed": true
+    },
+    {
+      "key": "critical_present:STEP175_PACKAGE_PART_ASSIGNMENT.json",
+      "passed": true
+    },
+    {
+      "key": "step175_launcher_contract",
+      "passed": true
+    },
+    {
+      "key": "protected_runtime_preflight",
+      "passed": true
+    }
+  ],
+  "failures": [],
+  "passed": true,
+  "report_path": "/mnt/data/biointel175_upgrade/src/BioIntel-AI/reports/step176_prepackage_installation_validation.json"
+}

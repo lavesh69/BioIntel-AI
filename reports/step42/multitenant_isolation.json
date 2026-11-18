@@ -1,0 +1,15 @@
+{
+  "classification": "measured_controlled_environment_qualification",
+  "confirmed_isolation_breaches": 0,
+  "duration_seconds": 3.5236056610010564,
+  "expected_cross_tenant_denials": 1000,
+  "external_boundary": "This is controlled-environment isolation evidence, not 90-day history with independent customer tenants.",
+  "isolation_tests": 1000,
+  "observed_at": "2026-07-05T07:31:25.426225+00:00",
+  "operations_per_second": 851.4006073959196,
+  "passed": true,
+  "resources_created": 1000,
+  "schema": "biointel.step42.multitenant-isolation.v1",
+  "storage_traversal_attempts_blocked": 1000,
+  "tenant_count": 5
+}

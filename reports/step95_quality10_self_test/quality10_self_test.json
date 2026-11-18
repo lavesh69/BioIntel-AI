@@ -1,0 +1,144 @@
+{
+  "checks": [
+    {
+      "check": "quality_model",
+      "detail": "Implementation and scientific evidence are scored separately.",
+      "metrics": {
+        "blockers": [
+          "Independent external validation is below the release threshold.",
+          "Prospective validation is below the release threshold.",
+          "Peer-reviewed evidence is below the release threshold.",
+          "Clinical/regulatory evidence is below the release threshold."
+        ],
+        "dimensions": [
+          {
+            "blocker": false,
+            "evidence": "Checksums, schema and parse validation",
+            "key": "input_integrity",
+            "label": "Input integrity",
+            "score": 10.0,
+            "weight": 0.18
+          },
+          {
+            "blocker": false,
+            "evidence": "Versioned workflow and environment manifest",
+            "key": "reproducibility",
+            "label": "Reproducibility",
+            "score": 10.0,
+            "weight": 0.19
+          },
+          {
+            "blocker": false,
+            "evidence": "Dependency-aware step completion",
+            "key": "execution_completion",
+            "label": "Execution completion",
+            "score": 10.0,
+            "weight": 0.2
+          },
+          {
+            "blocker": false,
+            "evidence": "Retries, timeout, logs and recovery",
+            "key": "error_handling",
+            "label": "Error handling",
+            "score": 10.0,
+            "weight": 0.15
+          },
+          {
+            "blocker": false,
+            "evidence": "Unit, integration and package verification",
+            "key": "test_coverage",
+            "label": "Automated verification",
+            "score": 10.0,
+            "weight": 0.13
+          },
+          {
+            "blocker": false,
+            "evidence": "Input/output hashes and immutable audit records",
+            "key": "provenance",
+            "label": "Provenance",
+            "score": 10.0,
+            "weight": 0.15
+          },
+          {
+            "blocker": true,
+            "evidence": "Independent dataset/laboratory result",
+            "key": "external_validation",
+            "label": "Independent external validation",
+            "score": 0.0,
+            "weight": 0.35
+          },
+          {
+            "blocker": true,
+            "evidence": "Pre-registered blinded or prospective outcome",
+            "key": "prospective_validation",
+            "label": "Prospective validation",
+            "score": 0.0,
+            "weight": 0.3
+          },
+          {
+            "blocker": true,
+            "evidence": "External scientific review",
+            "key": "peer_review",
+            "label": "Peer-reviewed evidence",
+            "score": 0.0,
+            "weight": 0.2
+          },
+          {
+            "blocker": true,
+            "evidence": "Authority, accredited laboratory or clinical operating evidence",
+            "key": "clinical_or_regulatory",
+            "label": "Clinical/regulatory evidence",
+            "score": 0.0,
+            "weight": 0.15
+          }
+        ],
+        "implementation_readiness": 10.0,
+        "release_eligible": false,
+        "scientific_evidence_score": 0.0,
+        "warnings": []
+      },
+      "passed": true
+    },
+    {
+      "check": "registry_integrity",
+      "detail": "SQLite registry quick check and foreign keys.",
+      "metrics": {
+        "counts": {
+          "workflow_artifacts": 0,
+          "workflow_audit_events": 0,
+          "workflow_runs": 0,
+          "workflow_steps": 0
+        },
+        "foreign_key_issues": [],
+        "healthy": true,
+        "quick_check": "ok"
+      },
+      "passed": true
+    },
+    {
+      "check": "workflow_execution",
+      "detail": "Dependency-aware built-in workflow executed with persisted provenance.",
+      "metrics": {
+        "run_id": "quality10_self_test-507195924059",
+        "status": "completed",
+        "steps": 3,
+        "summary_sha256": "8f8f75b6490c9150b5ff5a29cd9836d76b2addbac479a3667f45e40c49d47f9f"
+      },
+      "passed": true
+    },
+    {
+      "check": "provenance_persistence",
+      "detail": "Run, step and artifact records persisted.",
+      "metrics": {
+        "artifacts": 5,
+        "runs": 1,
+        "steps": 3
+      },
+      "passed": true
+    }
+  ],
+  "generated_at": "2026-07-09T14:52:44.709794+00:00",
+  "report_sha256": "450fc24839e7ec34f16a1002b0250a7c5da32d50a8bf1b57ffa5e33363607400",
+  "schema": "biointel.step95.quality10.self-test.v1",
+  "status": "passed"
+}

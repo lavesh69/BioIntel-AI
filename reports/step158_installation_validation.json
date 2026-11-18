@@ -1,0 +1,97 @@
+{
+  "checks": [
+    {
+      "key": "root_exists",
+      "message": "/mnt/data/biointel158_work/extract/BioIntel-AI",
+      "passed": true
+    },
+    {
+      "key": "step158_part_1",
+      "message": "/mnt/data/biointel158_work/extract/BioIntel-AI/.release_parts/step158_part1.ok",
+      "passed": true
+    },
+    {
+      "key": "step158_part_2",
+      "message": "/mnt/data/biointel158_work/extract/BioIntel-AI/.release_parts/step158_part2.ok",
+      "passed": true
+    },
+    {
+      "key": "step158_part_3",
+      "message": "/mnt/data/biointel158_work/extract/BioIntel-AI/.release_parts/step158_part3.ok",
+      "passed": true
+    },
+    {
+      "key": "step158_part_4",
+      "message": "/mnt/data/biointel158_work/extract/BioIntel-AI/.release_parts/step158_part4.ok",
+      "passed": true
+    },
+    {
+      "key": "current_file_STEP158_RELEASE.json",
+      "message": "STEP158_RELEASE.json",
+      "passed": true
+    },
+    {
+      "key": "current_file_README.md",
+      "message": "README.md",
+      "passed": true
+    },
+    {
+      "key": "current_file_CURRENT_RELEASE.md",
+      "message": "CURRENT_RELEASE.md",
+      "passed": true
+    },
+    {
+      "key": "current_file_VERIFY_LATEST_WINDOWS.bat",
+      "message": "VERIFY_LATEST_WINDOWS.bat",
+      "passed": true
+    },
+    {
+      "key": "current_file_VERIFY_STEP158_WINDOWS.bat",
+      "message": "VERIFY_STEP158_WINDOWS.bat",
+      "passed": true
+    },
+    {
+      "key": "current_file_RUN_RELEASE_DOCTOR_WINDOWS.bat",
+      "message": "RUN_RELEASE_DOCTOR_WINDOWS.bat",
+      "passed": true
+    },
+    {
+      "key": "current_file_INSTALL_WINDOWS.bat",
+      "message": "INSTALL_WINDOWS.bat",
+      "passed": true
+    },
+    {
+      "key": "current_file_RUN_BOTH_WINDOWS.bat",
+      "message": "RUN_BOTH_WINDOWS.bat",
+      "passed": true
+    },
+    {
+      "key": "step157_release_metadata_present",
+      "message": "157",
+      "passed": true
+    },
+    {
+      "key": "step157_zero_failures",
+      "message": "{'collected': 1342, 'passed': 1315, 'skipped': 27, 'failed': 0}",
+      "passed": true
+    },
+    {
+      "key": "step157_all_screens",
+      "message": "{'expected': 229, 'passed': 229, 'failed': 0, 'timeouts': 0}",
+      "passed": true
+    },
+    {
+      "key": "release_doctor_present",
+      "message": "/mnt/data/biointel158_work/extract/BioIntel-AI/scripts/step158_release_doctor.py",
+      "passed": true
+    },
+    {
+      "key": "release_doctor_passed",
+      "message": "{\n  \"passed\": true,\n  \"checks\": 15,\n  \"blocking\": 0,\n  \"report\": \"/mnt/data/biointel158_work/extract/BioIntel-AI/reports/step158_release_doctor.json\"\n}\n",
+      "passed": true
+    }
+  ],
+  "failures": [],
+  "passed": true,
+  "schema": "biointel.step158.installation-validation.v1"
+}

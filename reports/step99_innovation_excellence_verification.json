@@ -1,0 +1,347 @@
+{
+  "schema": "biointel.step99.innovation-excellence-verification.v1",
+  "generated_at": "2026-07-10T08:59:20.527177+00:00",
+  "version": "9.9.0",
+  "release": "Innovation Module Excellence",
+  "base": "Step 97 Windows Python Fixed V2",
+  "upgraded_modules": [
+    "Pangenome & Variation Graph Studio",
+    "Long-Read Genome Assembly & T2T Studio",
+    "AI Protein Design & Mutation Engineering Lab",
+    "CRISPR Screen & Perturb-seq Analytics",
+    "Pathogen Outbreak Genomics Command Center",
+    "Synthetic Biology & Genetic Circuit Designer",
+    "Rare Disease Genome Interpretation Board",
+    "Biomedical Knowledge Graph & Evidence Copilot",
+    "Multi-Omics Biomarker Discovery Studio",
+    "Visual Workflow Builder & Pipeline Marketplace",
+    "Innovation Modules Hub"
+  ],
+  "module_count": 11,
+  "streamlit_pages": 111,
+  "python_source_files": 688,
+  "tests": {
+    "selected_release_and_regression_passed": 63,
+    "step99_specific_passed": 15,
+    "failures": 0,
+    "note": "Relevant Step 93\u201399 release, installer, reliability and innovation tests completed."
+  },
+  "compilation": {
+    "status": "passed",
+    "scope": "entire repository before cache cleanup"
+  },
+  "dependency_lock": {
+    "valid": true,
+    "root": "/mnt/data/step99_build/BioIntel-AI",
+    "sha256": "b609c6dd48d814c6c9f5f1afa46892060d1d0ae1587034b826b8272328a385a0",
+    "expected_sha256": "b609c6dd48d814c6c9f5f1afa46892060d1d0ae1587034b826b8272328a385a0",
+    "packages": 32,
+    "invalid": []
+  },
+  "offline_windows_wheelhouse": {
+    "valid": true,
+    "wheel_count": 102,
+    "metadata_wheel_count": 102,
+    "lock_rows": 102,
+    "total_size_bytes": 248266900,
+    "missing_required": [],
+    "malformed_manifest": [],
+    "missing_wheels": [],
+    "unexpected_wheels": [],
+    "hash_mismatches": [],
+    "corrupt_wheels": [],
+    "unhashed_lock_rows": []
+  },
+  "installer_helper_self_check": {
+    "script": "/mnt/data/step99_build/BioIntel-AI/scripts/install_windows_step97.py",
+    "root": "/mnt/data/step99_build/BioIntel-AI",
+    "root_exists": true,
+    "python_syntax": true,
+    "path_roundtrip": true,
+    "timestamp": "2026-07-10T08:58:46.019212+00:00"
+  },
+  "runtime_helper_self_check": {
+    "script": "/mnt/data/step99_build/BioIntel-AI/scripts/run_biointel_step97.py",
+    "root": "/mnt/data/step99_build/BioIntel-AI",
+    "root_exists": true,
+    "free_port_probe": 58600,
+    "python_syntax": true,
+    "timestamp": "2026-07-10T08:58:47.162296+00:00"
+  },
+  "databases": {
+    "database_count": 28,
+    "healthy_count": 28,
+    "foreign_key_issues": 0,
+    "rows_checked": 107491,
+    "details": [
+      {
+        "path": "data/clinical_pharma/clinical_validation.sqlite3",
+        "size_bytes": 188416,
+        "integrity": "ok",
+        "foreign_key_issues": 0,
+        "tables": 13,
+        "rows": 0,
+        "healthy": true
+      },
+      {
+        "path": "data/discovery_projects.sqlite3",
+        "size_bytes": 102400,
+        "integrity": "ok",
+        "foreign_key_issues": 0,
+        "tables": 7,
+        "rows": 0,
+        "healthy": true
+      },
+      {
+        "path": "data/lab_analytics.sqlite3",
+        "size_bytes": 36864,
+        "integrity": "ok",
+        "foreign_key_issues": 0,
+        "tables": 3,
+        "rows": 0,
+        "healthy": true
+      },
+      {
+        "path": "reports/analytics.sqlite3",
+        "size_bytes": 6144000,
+        "integrity": "ok",
+        "foreign_key_issues": 0,
+        "tables": 5,
+        "rows": 17690,
+        "healthy": true
+      },
+      {
+        "path": "reports/api_security.sqlite3",
+        "size_bytes": 385024,
+        "integrity": "ok",
+        "foreign_key_issues": 0,
+        "tables": 5,
+        "rows": 1025,
+        "healthy": true
+      },
+      {
+        "path": "reports/assets.sqlite3",
+        "size_bytes": 5410816,
+        "integrity": "ok",
+        "foreign_key_issues": 0,
+        "tables": 11,
+        "rows": 20547,
+        "healthy": true
+      },
+      {
+        "path": "reports/batch_jobs/batch_prediction_sample_250.sqlite3",
+        "size_bytes": 16384,
+        "integrity": "ok",
+        "foreign_key_issues": 0,
+        "tables": 1,
+        "rows": 0,
+        "healthy": true
+      },
+      {
+        "path": "reports/biotechnology_project_runs.sqlite3",
+        "size_bytes": 28672,
+        "integrity": "ok",
+        "foreign_key_issues": 0,
+        "tables": 2,
+        "rows": 0,
+        "healthy": true
+      },
+      {
+        "path": "reports/connected_sources.sqlite3",
+        "size_bytes": 45056,
+        "integrity": "ok",
+        "foreign_key_issues": 0,
+        "tables": 4,
+        "rows": 0,
+        "healthy": true
+      },
+      {
+        "path": "reports/datasets.sqlite3",
+        "size_bytes": 2019328,
+        "integrity": "ok",
+        "foreign_key_issues": 0,
+        "tables": 13,
+        "rows": 4935,
+        "healthy": true
+      },
+      {
+        "path": "reports/document_history.sqlite3",
+        "size_bytes": 1085440,
+        "integrity": "ok",
+        "foreign_key_issues": 0,
+        "tables": 14,
+        "rows": 1973,
+        "healthy": true
+      },
+      {
+        "path": "reports/evidence.sqlite3",
+        "size_bytes": 2678784,
+        "integrity": "ok",
+        "foreign_key_issues": 0,
+        "tables": 10,
+        "rows": 3891,
+        "healthy": true
+      },
+      {
+        "path": "reports/experiments.sqlite3",
+        "size_bytes": 626688,
+        "integrity": "ok",
+        "foreign_key_issues": 0,
+        "tables": 9,
+        "rows": 783,
+        "healthy": true
+      },
+      {
+        "path": "reports/feature_cache.sqlite3",
+        "size_bytes": 2777088,
+        "integrity": "ok",
+        "foreign_key_issues": 0,
+        "tables": 2,
+        "rows": 1293,
+        "healthy": true
+      },
+      {
+        "path": "reports/internet_downloads.sqlite3",
+        "size_bytes": 208896,
+        "integrity": "ok",
+        "foreign_key_issues": 0,
+        "tables": 5,
+        "rows": 105,
+        "healthy": true
+      },
+      {
+        "path": "reports/jobs.sqlite3",
+        "size_bytes": 339968,
+        "integrity": "ok",
+        "foreign_key_issues": 0,
+        "tables": 6,
+        "rows": 896,
+        "healthy": true
+      },
+      {
+        "path": "reports/knowledge.sqlite3",
+        "size_bytes": 17215488,
+        "integrity": "ok",
+        "foreign_key_issues": 0,
+        "tables": 10,
+        "rows": 38427,
+        "healthy": true
+      },
+      {
+        "path": "reports/projects.sqlite3",
+        "size_bytes": 524288,
+        "integrity": "ok",
+        "foreign_key_issues": 0,
+        "tables": 7,
+        "rows": 688,
+        "healthy": true
+      },
+      {
+        "path": "reports/prospective_validation.sqlite3",
+        "size_bytes": 36864,
+        "integrity": "ok",
+        "foreign_key_issues": 0,
+        "tables": 4,
+        "rows": 0,
+        "healthy": true
+      },
+      {
+        "path": "reports/realworld_evidence.sqlite3",
+        "size_bytes": 65536,
+        "integrity": "ok",
+        "foreign_key_issues": 0,
+        "tables": 6,
+        "rows": 11,
+        "healthy": true
+      },
+      {
+        "path": "reports/relationships.sqlite3",
+        "size_bytes": 1159168,
+        "integrity": "ok",
+        "foreign_key_issues": 0,
+        "tables": 4,
+        "rows": 2291,
+        "healthy": true
+      },
+      {
+        "path": "reports/scientific_evidence.sqlite3",
+        "size_bytes": 16773120,
+        "integrity": "ok",
+        "foreign_key_issues": 0,
+        "tables": 5,
+        "rows": 12903,
+        "healthy": true
+      },
+      {
+        "path": "reports/step95_quality10_self_test/self_test_registry.sqlite3",
+        "size_bytes": 49152,
+        "integrity": "ok",
+        "foreign_key_issues": 0,
+        "tables": 4,
+        "rows": 14,
+        "healthy": true
+      },
+      {
+        "path": "reports/tenants.sqlite3",
+        "size_bytes": 53248,
+        "integrity": "ok",
+        "foreign_key_issues": 0,
+        "tables": 4,
+        "rows": 3,
+        "healthy": true
+      },
+      {
+        "path": "reports/validation_evidence.sqlite3",
+        "size_bytes": 102400,
+        "integrity": "ok",
+        "foreign_key_issues": 0,
+        "tables": 8,
+        "rows": 12,
+        "healthy": true
+      },
+      {
+        "path": "reports/workflow_automation.sqlite3",
+        "size_bytes": 49152,
+        "integrity": "ok",
+        "foreign_key_issues": 0,
+        "tables": 4,
+        "rows": 4,
+        "healthy": true
+      },
+      {
+        "path": "workspace/quality10/workflow_runs.sqlite3",
+        "size_bytes": 49152,
+        "integrity": "ok",
+        "foreign_key_issues": 0,
+        "tables": 4,
+        "rows": 0,
+        "healthy": true
+      },
+      {
+        "path": "workspace/workflow_runs/workflow_runs.sqlite3",
+        "size_bytes": 49152,
+        "integrity": "ok",
+        "foreign_key_issues": 0,
+        "tables": 4,
+        "rows": 0,
+        "healthy": true
+      }
+    ]
+  },
+  "advanced_tools_registered": 44,
+  "install_files": {
+    "INSTALL_WINDOWS.bat": "db377fb4de1fd05b80820f71ca2b86041793ec66aab7f477aef396a21c452c62",
+    "RUN_BOTH_WINDOWS.bat": "f0b5aa9d745a6e807110d20b3f573e9b29c595de5dc0f429d300c6228fc4e56a",
+    "RUN_APP_WINDOWS.bat": "e90f0943c658fabed0f507781ba413afb3e9b3d26f210acb898635301659f7fd",
+    "scripts/install_windows_step97.py": "c62d96ff2ff766d590d21a2f6bb75ceb0a1a4ea9cc56ac902f2795dbbd7f5c53",
+    "scripts/run_biointel_step97.py": "b999fb51fee63304ca94d0b77353a67318ba8fb19718916d5f0f519ac5c124c4"
+  },
+  "external_boundary": "External executables, licensed/GPU model weights, current clinical databases, wet-lab outcomes, clinical acceptance and regulatory approval are not fabricated.",
+  "file_manifest": {
+    "path": "reports/step99_file_manifest.json",
+    "sha256": "d4de08e48fccb7714fd2c57f3403e9b964456cfbbf2e4c6d513b1818cb6b795e",
+    "protected_files": 3354,
+    "protected_size_bytes": 619293246,
+    "total_release_files_including_reports": 3356
+  }
+}

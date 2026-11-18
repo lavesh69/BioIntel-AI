@@ -1,0 +1,42 @@
+{
+  "development_references": {
+    "all_development_references_ready": true,
+    "confirmatory_use_requires_replacement": true,
+    "development_qualified": 257,
+    "production_references_not_inferred": true,
+    "required_assets": 257,
+    "schema": "biointel.step161.development-reference-summary.v1"
+  },
+  "external_release_not_inferred": true,
+  "module_upgrades": {
+    "development_references_10_of_10": 80,
+    "execution_paths_10_of_10": 80,
+    "modules": 80,
+    "real_world_release_eligible": 0,
+    "schema": "biointel.step161.portfolio-upgrade-summary.v1",
+    "software_upgrade_and_external_validation_are_separate": true,
+    "step161_10_of_10": 80,
+    "validation_protocols_10_of_10": 80
+  },
+  "modules": 80,
+  "reference_files_written": 514,
+  "runtime_recipes": {
+    "all_engines_have_managed_paths": true,
+    "complete_recipes": 53,
+    "external_engines": 53,
+    "installed_tools_are_detected_separately": true,
+    "licences_models_and_databases_are_not_inferred": true,
+    "protected_execution_plans": 53,
+    "schema": "biointel.step161.runtime-recipe-summary.v1"
+  },
+  "schema": "biointel.step161.upgrade-assets.v1",
+  "validation_protocols": {
+    "all_protocols_ready": true,
+    "external_evidence_attached": 0,
+    "external_release_not_inferred": true,
+    "modules": 80,
+    "protocol_ready": 80,
+    "schema": "biointel.step161.validation-protocol-summary.v1"
+  },
+  "validation_protocols_written": 80
+}

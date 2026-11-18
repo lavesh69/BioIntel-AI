@@ -1,0 +1,48 @@
+{
+  "schema": "biointel.step172.physical-qualification.v1",
+  "generated_at_utc": "2026-07-14T10:16:16+00:00",
+  "host": "629663b32cc8",
+  "platform": "Linux-4.4.0-x86_64-with-glibc2.41",
+  "checks": {
+    "windows_tested": {
+      "passed": false,
+      "detail": "Linux-4.4.0-x86_64-with-glibc2.41"
+    },
+    "python_process": {
+      "passed": true,
+      "return_code": 0,
+      "stdout": "172\n",
+      "stderr": ""
+    },
+    "large_file_tested": {
+      "passed": true,
+      "bytes": 8388608
+    },
+    "recovery_tested": {
+      "passed": true
+    },
+    "gpu_tested": {
+      "passed": false,
+      "required_by_module": false
+    },
+    "instrument_tested": {
+      "passed": false,
+      "manual_evidence_required": true
+    },
+    "sleep_resume_tested": {
+      "passed": false,
+      "manual_evidence_required": true
+    },
+    "antivirus_tested": {
+      "passed": false,
+      "manual_evidence_required": true
+    },
+    "network_loss_tested": {
+      "passed": false,
+      "manual_evidence_required": true
+    }
+  },
+  "all_automatic_checks_passed": false,
+  "all_checks_passed": false,
+  "boundary": "This report records tests on the machine that executed it. It does not certify another Windows, GPU, laboratory instrument or site."
+}

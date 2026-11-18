@@ -1,0 +1,299 @@
+{
+  "schema": "biointel.step131.database-validation.v1",
+  "baseline_databases": 36,
+  "healthy_databases": 36,
+  "total_rows": 108425,
+  "changed": [],
+  "missing": [],
+  "extra_runtime_databases": [],
+  "databases": [
+    {
+      "path": "data/clinical_pharma/clinical_validation.sqlite3",
+      "integrity": "ok",
+      "foreign_key_issues": 0,
+      "tables": 13,
+      "rows": 0,
+      "sha256": "056723f60927cb0815d9c59f6c63185a69d34b5c7cc47f3767b55c517fe14c06"
+    },
+    {
+      "path": "data/discovery_projects.sqlite3",
+      "integrity": "ok",
+      "foreign_key_issues": 0,
+      "tables": 7,
+      "rows": 0,
+      "sha256": "f83de4eb1fc9a2aa036dbf3f1810b9d7ed9d425959cb23a8ce4831d09113257b"
+    },
+    {
+      "path": "data/lab_analytics.sqlite3",
+      "integrity": "ok",
+      "foreign_key_issues": 0,
+      "tables": 3,
+      "rows": 0,
+      "sha256": "ee19efda0b744f22d52540c99a10a3cff60e2e4569ba7712a1dd7189174bdf22"
+    },
+    {
+      "path": "data/reference_assets/reference_assets.sqlite3",
+      "integrity": "ok",
+      "foreign_key_issues": 0,
+      "tables": 2,
+      "rows": 0,
+      "sha256": "8af68b3ae23309a714e460c44c962f845c6301221b0a79af88170b17ead3c836"
+    },
+    {
+      "path": "reports/analytics.sqlite3",
+      "integrity": "ok",
+      "foreign_key_issues": 0,
+      "tables": 5,
+      "rows": 17690,
+      "sha256": "6c83b063ae8b10f84e37c7b2180793bb2764762c4e43649665df66f255d860a4"
+    },
+    {
+      "path": "reports/api_security.sqlite3",
+      "integrity": "ok",
+      "foreign_key_issues": 0,
+      "tables": 5,
+      "rows": 1611,
+      "sha256": "53ee408189cbea6c14b162b9876f8f2fa332e723926a3c30aa6708079ca812f1"
+    },
+    {
+      "path": "reports/assets.sqlite3",
+      "integrity": "ok",
+      "foreign_key_issues": 0,
+      "tables": 11,
+      "rows": 20547,
+      "sha256": "4154be8b84bb362632372209a5055e871aebd767f7b88ce128618b938ed4b14b"
+    },
+    {
+      "path": "reports/batch_jobs/batch_prediction_sample_250.sqlite3",
+      "integrity": "ok",
+      "foreign_key_issues": 0,
+      "tables": 1,
+      "rows": 0,
+      "sha256": "62f4210e958b08adf4c1056b12aa2646515f524da49f039544184ce8efe7567c"
+    },
+    {
+      "path": "reports/biotechnology_project_runs.sqlite3",
+      "integrity": "ok",
+      "foreign_key_issues": 0,
+      "tables": 2,
+      "rows": 0,
+      "sha256": "3205cca43144dc4c3aedf2668f4857b92d206d3d2ea64adc0cfdca3ed9f965d5"
+    },
+    {
+      "path": "reports/connected_sources.sqlite3",
+      "integrity": "ok",
+      "foreign_key_issues": 0,
+      "tables": 4,
+      "rows": 0,
+      "sha256": "ef80a6e823e4eeecd110a38897cc78b218bccb6d6b994273f1ce87aa29ba2ed9"
+    },
+    {
+      "path": "reports/datasets.sqlite3",
+      "integrity": "ok",
+      "foreign_key_issues": 0,
+      "tables": 13,
+      "rows": 5188,
+      "sha256": "e2b7921b2a4d76aaaa382e90b550194e229bd7d4ebc3ada863d0791b22ed4b68"
+    },
+    {
+      "path": "reports/document_history.sqlite3",
+      "integrity": "ok",
+      "foreign_key_issues": 0,
+      "tables": 14,
+      "rows": 1973,
+      "sha256": "c49403bf9fab087987949dbf08e1b2c34137be4695be225917c01ab51cbfb6ec"
+    },
+    {
+      "path": "reports/evidence.sqlite3",
+      "integrity": "ok",
+      "foreign_key_issues": 0,
+      "tables": 10,
+      "rows": 3891,
+      "sha256": "bcd5905efca3afbd9b5b85a859c7125c7be80713826886bc9c7535509f6cc341"
+    },
+    {
+      "path": "reports/experiments.sqlite3",
+      "integrity": "ok",
+      "foreign_key_issues": 0,
+      "tables": 9,
+      "rows": 783,
+      "sha256": "31a77479d14392a3633c026f528f767ce6c5f6ff75338452dff74979ef9fb54e"
+    },
+    {
+      "path": "reports/feature_cache.sqlite3",
+      "integrity": "ok",
+      "foreign_key_issues": 0,
+      "tables": 2,
+      "rows": 1293,
+      "sha256": "7c6ccf087fd4d9e979d3a05292d709e748794713c733b4779ac9b4bcbcb8f28f"
+    },
+    {
+      "path": "reports/internet_downloads.sqlite3",
+      "integrity": "ok",
+      "foreign_key_issues": 0,
+      "tables": 5,
+      "rows": 105,
+      "sha256": "0c41ad34141872881faa8695df4031755bd0d5ca00b94ec44b9763ade960cd9a"
+    },
+    {
+      "path": "reports/jobs.sqlite3",
+      "integrity": "ok",
+      "foreign_key_issues": 0,
+      "tables": 6,
+      "rows": 981,
+      "sha256": "aef89ec5604cba3db3eadaedcad88e2bd3395ad58c918f15c2f5f7a8cfd40600"
+    },
+    {
+      "path": "reports/knowledge.sqlite3",
+      "integrity": "ok",
+      "foreign_key_issues": 0,
+      "tables": 10,
+      "rows": 38427,
+      "sha256": "39d129ce4f1286f8ce7387b3e330db70bb36d577840b20afb6c9d03b9cb7c8fc"
+    },
+    {
+      "path": "reports/performance.sqlite3",
+      "integrity": "ok",
+      "foreign_key_issues": 0,
+      "tables": 1,
+      "rows": 0,
+      "sha256": "5a80fffca127eadb7b8a20e67e7bb01cafb0faf1faf7776670d0176e4ede7105"
+    },
+    {
+      "path": "reports/projects.sqlite3",
+      "integrity": "ok",
+      "foreign_key_issues": 0,
+      "tables": 7,
+      "rows": 688,
+      "sha256": "9e0108054a3e4d89930a324780ab99279ad83ca1b19ee1ef9a9b166f18f9a92d"
+    },
+    {
+      "path": "reports/prospective_validation.sqlite3",
+      "integrity": "ok",
+      "foreign_key_issues": 0,
+      "tables": 4,
+      "rows": 0,
+      "sha256": "4da9a939c4db7eb36c6a40ca4d831cfad168852310db63a30dcd7b03e09306ac"
+    },
+    {
+      "path": "reports/realworld_evidence.sqlite3",
+      "integrity": "ok",
+      "foreign_key_issues": 0,
+      "tables": 6,
+      "rows": 21,
+      "sha256": "32a107b37fb6c773da455cfbfd02a908d192c59e2ba115321f0e521cf585f686"
+    },
+    {
+      "path": "reports/relationships.sqlite3",
+      "integrity": "ok",
+      "foreign_key_issues": 0,
+      "tables": 4,
+      "rows": 2291,
+      "sha256": "89bbc585445a9680c4db69d79f0ac9ff64c902ee1b848521430755b36d344fe1"
+    },
+    {
+      "path": "reports/scientific_evidence.sqlite3",
+      "integrity": "ok",
+      "foreign_key_issues": 0,
+      "tables": 5,
+      "rows": 12903,
+      "sha256": "dfcde4aa86a45ce4d779c12b22158c524995dbbaf1050b783ed9a5be302871d1"
+    },
+    {
+      "path": "reports/step103_lims.sqlite3",
+      "integrity": "ok",
+      "foreign_key_issues": 0,
+      "tables": 2,
+      "rows": 0,
+      "sha256": "e847563d938acf616ffc26a6e814511f8adbf7ac6f15b21a71c4713cfed31d5e"
+    },
+    {
+      "path": "reports/step95_quality10_self_test/self_test_registry.sqlite3",
+      "integrity": "ok",
+      "foreign_key_issues": 0,
+      "tables": 4,
+      "rows": 14,
+      "sha256": "90175a0b12cf672fbe80d4c5ef2c9dc8f2f5eaeebddf24cdc16f51aa9c6a928c"
+    },
+    {
+      "path": "reports/tenants.sqlite3",
+      "integrity": "ok",
+      "foreign_key_issues": 0,
+      "tables": 4,
+      "rows": 3,
+      "sha256": "2f70b0a3d50f0afbb7ec0b008abca065260cddaaf3767090062cdf124b5f247f"
+    },
+    {
+      "path": "reports/validation_evidence.sqlite3",
+      "integrity": "ok",
+      "foreign_key_issues": 0,
+      "tables": 8,
+      "rows": 12,
+      "sha256": "156f5096767fdc524de6eead9adf78a26bda2d5bb5622fe5ec20d37332d88a6d"
+    },
+    {
+      "path": "reports/viewer_sync.sqlite3",
+      "integrity": "ok",
+      "foreign_key_issues": 0,
+      "tables": 2,
+      "rows": 0,
+      "sha256": "b52b783d47902bbb67002d370d683fe9018f2fd6ffbf43eaf5a241d9b6c4d0f7"
+    },
+    {
+      "path": "reports/workflow_automation.sqlite3",
+      "integrity": "ok",
+      "foreign_key_issues": 0,
+      "tables": 4,
+      "rows": 4,
+      "sha256": "37014e6a663d5ca7bf93851fbf4a6882085ac48a688cd6916201df2fa038ae9e"
+    },
+    {
+      "path": "workspace/quality10/workflow_runs.sqlite3",
+      "integrity": "ok",
+      "foreign_key_issues": 0,
+      "tables": 4,
+      "rows": 0,
+      "sha256": "e40fa65d7927f65b08045e4d2b77d4287493dccfa9737f864fb4dc2b7799029f"
+    },
+    {
+      "path": "workspace/reference_lifecycle/reference_lifecycle.sqlite3",
+      "integrity": "ok",
+      "foreign_key_issues": 0,
+      "tables": 3,
+      "rows": 0,
+      "sha256": "6297d47813c0a064a285d6aadf3f5beabb5d81f5c8996a0832c24a2b84b55670"
+    },
+    {
+      "path": "workspace/step104/jobs.sqlite3",
+      "integrity": "ok",
+      "foreign_key_issues": 0,
+      "tables": 6,
+      "rows": 0,
+      "sha256": "a09dafc7f0e4f33c6820ed8f1a5b9253bdaa1e2176d901cbe169d7809b09169a"
+    },
+    {
+      "path": "workspace/step104/platform.sqlite3",
+      "integrity": "ok",
+      "foreign_key_issues": 0,
+      "tables": 17,
+      "rows": 0,
+      "sha256": "daa5363accbda2cabed32ffc24177fb098db04db9b7d7970fce17380752c63cd"
+    },
+    {
+      "path": "workspace/visual_workspace.sqlite3",
+      "integrity": "ok",
+      "foreign_key_issues": 0,
+      "tables": 3,
+      "rows": 0,
+      "sha256": "d5638ca5f45390d95e8316544a93faa09537ee7b8279c985141f2d4ebf292e3c"
+    },
+    {
+      "path": "workspace/workflow_runs/workflow_runs.sqlite3",
+      "integrity": "ok",
+      "foreign_key_issues": 0,
+      "tables": 4,
+      "rows": 0,
+      "sha256": "e40fa65d7927f65b08045e4d2b77d4287493dccfa9737f864fb4dc2b7799029f"
+    }
+  ]
+}

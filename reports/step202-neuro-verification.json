@@ -1,0 +1,55 @@
+{
+  "schema": "biointel.step202.neuro-verification.v1",
+  "generated_at_utc": "2026-07-18T18:57:20+00:00",
+  "passed": false,
+  "pytest_available": false,
+  "checks": [
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "scripts/step202_preflight.py",
+        "--root",
+        ".",
+        "--allow-non-cp311"
+      ],
+      "passed": true,
+      "returncode": 0,
+      "output_tail": "{\n  \"schema\": \"biointel.step203.preflight.v1\",\n  \"generated_at_utc\": \"2026-07-18T18:57:17+00:00\",\n  \"root\": \"/workspace/scratch/ed5a090533b4/work/merged-source/BioIntel-AI-15.6.0-Step206-WINDOWS-V19.6\",\n  \"passed\": true,\n  \"checks\": [\n    {\n      \"name\": \"critical files\",\n      \"passed\": true,\n      \"detail\": \"complete\"\n    },\n    {\n      \"name\": \"four-part Step205 extraction markers\",\n      \"passed\": true,\n      \"detail\": \"4/4 present\"\n    },\n    {\n      \"name\": \"Python runtime\",\n      \"passed\": true,\n      \"detail\": {\n        \"version\": \"3.12.13\",\n        \"bits\": 64,\n        \"required\": \"CPython 3.11.9 x64\"\n      }\n    },\n    {\n      \"name\": \"path length\",\n      \"passed\": true,\n      \"detail\": {\n        \"length\": 91,\n        \"maximum\": 180,\n        \"recommended\": \"C:\\\\BioIntelAI\"\n      }\n    },\n    {\n      \"name\": \"free disk\",\n      \"passed\": true,\n      \"detail\": {\n        \"available_gb\": 43.21,\n        \"minimum_gb\": 5.0\n      }\n    },\n    {\n      \"name\": \"installation folder writable\",\n      \"passed\": true,\n      \"detail\": \"writable\"\n    },\n    {\n      \"name\": \"Step202 demo pack integrity\",\n      \"passed\": true,\n      \"detail\": {\n        \"files\": 21,\n        \"errors\": []\n      }\n    },\n    {\n      \"name\": \"offline wheelhouse\",\n      \"passed\": true,\n      \"detail\": {\n        \"wheel_count\": 121,\n        \"missing_core_prefixes\": []\n      }\n    }\n  ],\n  \"recovery\": [\n    \"Extract all four matching Step205 ZIP files into one new empty folder.\",\n    \"Use a short writable path such as C:\\\\BioIntelAI.\",\n    \"Run INSTALL_WINDOWS.bat. It detects an exact Python 3.11.9 installation or uses a safe current-user installer outside %TEMP%.\",\n    \"Run INSTALL_WINDOWS.bat again if the environment exists but imports fail.\"\n  ],\n  \"report_path\": \"/workspace/scratch/ed5a090533b4/work/merged-source/BioIntel-AI-15.6.0-Step206-WINDOWS-V19.6/reports/step203-preflight-runtime.json\"\n}\n"
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-m",
+        "compileall",
+        "-q",
+        "src/biointel/neuro_cns",
+        "pages/263_Neuro_CNS_Intelligence_Studio.py",
+        "scripts/run_step202_neuro_demo.py",
+        "scripts/step202_runtime_self_test.py"
+      ],
+      "passed": true,
+      "returncode": 0,
+      "output_tail": ""
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "scripts/step202_runtime_self_test.py"
+      ],
+      "passed": false,
+      "returncode": 1,
+      "output_tail": "Traceback (most recent call last):\n  File \"/workspace/scratch/ed5a090533b4/work/merged-source/BioIntel-AI-15.6.0-Step206-WINDOWS-V19.6/scripts/step202_runtime_self_test.py\", line 17, in <module>\n    from biointel.neuro_cns.demo_showcase import run_complete_demo_showcase\n  File \"/workspace/scratch/ed5a090533b4/work/merged-source/BioIntel-AI-15.6.0-Step206-WINDOWS-V19.6/src/biointel/neuro_cns/demo_showcase.py\", line 7, in <module>\n    from biointel.neuro_cns.chemistry import (\n  File \"/workspace/scratch/ed5a090533b4/work/merged-source/BioIntel-AI-15.6.0-Step206-WINDOWS-V19.6/src/biointel/neuro_cns/chemistry.py\", line 8, in <module>\n    from rdkit import Chem, DataStructs\nModuleNotFoundError: No module named 'rdkit'\n"
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "scripts/run_step202_neuro_demo.py",
+        "--output-dir",
+        "/workspace/scratch/ed5a090533b4/work/merged-source/BioIntel-AI-15.6.0-Step206-WINDOWS-V19.6/reports/generated/step202-demo-verification"
+      ],
+      "passed": false,
+      "returncode": 1,
+      "output_tail": "Traceback (most recent call last):\n  File \"/workspace/scratch/ed5a090533b4/work/merged-source/BioIntel-AI-15.6.0-Step206-WINDOWS-V19.6/scripts/run_step202_neuro_demo.py\", line 15, in <module>\n    from biointel.neuro_cns.demo_showcase import run_complete_demo_showcase\n  File \"/workspace/scratch/ed5a090533b4/work/merged-source/BioIntel-AI-15.6.0-Step206-WINDOWS-V19.6/src/biointel/neuro_cns/demo_showcase.py\", line 7, in <module>\n    from biointel.neuro_cns.chemistry import (\n  File \"/workspace/scratch/ed5a090533b4/work/merged-source/BioIntel-AI-15.6.0-Step206-WINDOWS-V19.6/src/biointel/neuro_cns/chemistry.py\", line 8, in <module>\n    from rdkit import Chem, DataStructs\nModuleNotFoundError: No module named 'rdkit'\n"
+    }
+  ]
+}

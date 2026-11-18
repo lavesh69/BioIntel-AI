@@ -1,0 +1,75 @@
+{
+  "blocking": 0,
+  "boundary": "80/80 internal module quality contracts can be verified locally. Specialist binaries, qualified reference data and independent scientific/clinical/regulatory evidence remain external outcomes.",
+  "checks": [
+    {
+      "advisory": false,
+      "key": "release_metadata",
+      "message": "STEP160_RELEASE.json",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "product_version",
+      "message": "13.2.0",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "current_entry_points",
+      "message": "[]",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "four_part_markers",
+      "message": "[]",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "registered_screens",
+      "message": "231/231",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "internal_module_quality",
+      "message": "{\"schema\": \"biointel.step160.portfolio-quality-summary.v1\", \"modules\": 80, \"internal_10_of_10\": 80, \"specialist_runtime_complete\": 39, \"reference_complete\": 0, \"external_evidence_complete\": 0, \"external_release_eligible\": 0, \"score_scope\": \"10/10 is an internal engineering/module quality score. It never implies independent scientific, clinical or regulatory validation.\"}",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "quality_contract_files",
+      "message": "80 per-module contracts required",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "resource_guard",
+      "message": "{\"total_memory_bytes\": 4294967296, \"available_memory_bytes\": 3280957440, \"process_rss_bytes\": 577941504, \"cpu_count\": 56, \"disk_free_bytes\": 9223372035074252800, \"source\": \"psutil\", \"memory_pressure\": 0.23609256744384766}",
+      "passed": true
+    },
+    {
+      "advisory": true,
+      "key": "sqlite_integrity",
+      "message": "Skipped in quick mode",
+      "passed": true
+    }
+  ],
+  "database_results": [],
+  "passed": true,
+  "product_version": "13.2.0",
+  "quality_summary": {
+    "external_evidence_complete": 0,
+    "external_release_eligible": 0,
+    "internal_10_of_10": 80,
+    "modules": 80,
+    "reference_complete": 0,
+    "schema": "biointel.step160.portfolio-quality-summary.v1",
+    "score_scope": "10/10 is an internal engineering/module quality score. It never implies independent scientific, clinical or regulatory validation.",
+    "specialist_runtime_complete": 39
+  },
+  "schema": "biointel.step160.release-doctor.v1",
+  "step": 160
+}

@@ -1,0 +1,24 @@
+{
+  "schema": "biointel.step172.asset-build.v1",
+  "status": "passed",
+  "version": "14.4.0",
+  "modules": 80,
+  "assets_written": 801,
+  "software_framework_score": 10.0,
+  "evidence_classes": {
+    "biological-research": 33,
+    "software-operational": 18,
+    "clinical-high-impact": 12,
+    "predictive-model": 10,
+    "instrument-assisted-biological": 7
+  },
+  "registry": {
+    "schema": "biointel.step172.registry-status.v1",
+    "database_integrity": "ok",
+    "foreign_key_violations": 0,
+    "modules_registered": 80,
+    "release_eligible_modules": 0,
+    "audit_events": 240
+  },
+  "external_outcomes_created": false
+}

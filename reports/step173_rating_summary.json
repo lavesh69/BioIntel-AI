@@ -1,0 +1,195 @@
+{
+  "schema": "biointel.step173.rating-summary.v1",
+  "version": "14.5.0",
+  "modules": 80,
+  "internal_software_10of10": 80,
+  "native_depth_10of10": 80,
+  "framework_10of10": 80,
+  "controlled_release_eligible": 0,
+  "average_actual_practical_readiness": 6.01,
+  "weakest_modules": [
+    {
+      "module_key": "protein_language_design",
+      "module_title": "Protein design depth",
+      "actual_practical_readiness_rating": 3.5,
+      "remaining_blockers": "engine:proteinmpnn | engine:rfdiffusion | reference:bindingdb | reference:proteinmpnn-weights | reference:rfdiffusion-weights | reference:uniprot-swissprot | model:full task specific domain model | model:real public or official cohort present | model:checksum locked holdout complete | model:leakage audit pass | model:calibration audit pass | model:independent external site complete | model:expert review complete | confirmation:protocol complete | confirmation:independent site complete | confirmation:wet lab complete | confirmation:prospective complete | confirmation:orthogonal complete | governance:physical qualification complete | governance:operating history complete | governance:expert signoff complete | governance:formal release review complete | governance:upstream runtime reference model complete | step172:confirmation manifest missing"
+    },
+    {
+      "module_key": "protein_ligand_codesign",
+      "module_title": "Protein-ligand co-design depth",
+      "actual_practical_readiness_rating": 3.5,
+      "remaining_blockers": "engine:colabfold | engine:proteinmpnn | engine:rfdiffusion | engine:vina | reference:bindingdb | reference:chembl | reference:colabfold-databases | reference:proteinmpnn-weights | reference:rfdiffusion-weights | model:full task specific domain model | model:real public or official cohort present | model:checksum locked holdout complete | model:leakage audit pass | model:calibration audit pass | model:independent external site complete | model:expert review complete | confirmation:protocol complete | confirmation:independent site complete | confirmation:wet lab complete | confirmation:prospective complete | confirmation:orthogonal complete | governance:physical qualification complete | governance:operating history complete | governance:expert signoff complete | governance:formal release review complete | governance:upstream runtime reference model complete | step172:confirmation manifest missing"
+    },
+    {
+      "module_key": "strain_microbiome",
+      "module_title": "Strain-resolved microbiome depth",
+      "actual_practical_readiness_rating": 3.5,
+      "remaining_blockers": "engine:bracken | engine:humann | engine:kraken2 | reference:humann-chocophlan | reference:humann-uniref90 | reference:kraken2-standard | model:full task specific domain model | model:real public or official cohort present | model:checksum locked holdout complete | model:leakage audit pass | model:calibration audit pass | model:independent external site complete | model:expert review complete | confirmation:protocol complete | confirmation:independent site complete | confirmation:prospective complete | governance:physical qualification complete | governance:operating history complete | governance:expert signoff complete | governance:formal release review complete | governance:upstream runtime reference model complete | step172:confirmation manifest missing"
+    },
+    {
+      "module_key": "spatial_omics_pathology",
+      "module_title": "Spatial pathology depth",
+      "actual_practical_readiness_rating": 4.25,
+      "remaining_blockers": "engine:cellpose | engine:openslide | model:full task specific domain model | model:real public or official cohort present | model:checksum locked holdout complete | model:leakage audit pass | model:calibration audit pass | model:independent external site complete | model:expert review complete | confirmation:protocol complete | confirmation:independent site complete | confirmation:wet lab complete | confirmation:prospective complete | confirmation:orthogonal complete | confirmation:instrument qualification complete | governance:physical qualification complete | governance:operating history complete | governance:expert signoff complete | governance:formal release review complete | governance:upstream runtime reference model complete | step172:confirmation manifest missing"
+    },
+    {
+      "module_key": "phenotypic_screening",
+      "module_title": "Phenotypic screening depth",
+      "actual_practical_readiness_rating": 4.36,
+      "remaining_blockers": "engine:cellpose | engine:stardist | reference:chembl | model:full task specific domain model | model:independent external site complete | model:expert review complete | confirmation:protocol complete | confirmation:independent site complete | confirmation:wet lab complete | confirmation:prospective complete | confirmation:orthogonal complete | governance:physical qualification complete | governance:operating history complete | governance:expert signoff complete | governance:formal release review complete | governance:upstream runtime reference model complete | step172:confirmation manifest missing"
+    },
+    {
+      "module_key": "amr_surveillance",
+      "module_title": "AMR surveillance depth",
+      "actual_practical_readiness_rating": 5.0,
+      "remaining_blockers": "engine:amrfinderplus | engine:bcftools | engine:kraken2 | engine:minimap2 | engine:resfinder | reference:amrfinder-db | reference:card | reference:resfinder-db | confirmation:protocol complete | confirmation:independent site complete | confirmation:orthogonal complete | governance:physical qualification complete | governance:operating history complete | governance:expert signoff complete | governance:formal release review complete | governance:upstream runtime reference model complete | step172:confirmation manifest missing"
+    },
+    {
+      "module_key": "antibody_biologics",
+      "module_title": "Antibody engineering depth",
+      "actual_practical_readiness_rating": 5.0,
+      "remaining_blockers": "engine:anarci | engine:igblast | reference:igblast-germline | confirmation:protocol complete | confirmation:independent site complete | confirmation:wet lab complete | confirmation:orthogonal complete | governance:physical qualification complete | governance:operating history complete | governance:expert signoff complete | governance:formal release review complete | governance:upstream runtime reference model complete | step172:confirmation manifest missing"
+    },
+    {
+      "module_key": "cancer_genomics_core",
+      "module_title": "Cancer genomics depth",
+      "actual_practical_readiness_rating": 5.0,
+      "remaining_blockers": "engine:bcftools | engine:vep | reference:clinvar-grch38-tbi | reference:clinvar-grch38-vcf | reference:grch38-fasta | reference:vep-cache-grch38 | confirmation:protocol complete | confirmation:independent site complete | confirmation:wet lab complete | confirmation:prospective complete | confirmation:orthogonal complete | governance:physical qualification complete | governance:operating history complete | governance:expert signoff complete | governance:formal release review complete | governance:upstream runtime reference model complete | step172:confirmation manifest missing"
+    },
+    {
+      "module_key": "cell_therapy_cart",
+      "module_title": "Cell-therapy and CAR-T depth",
+      "actual_practical_readiness_rating": 5.0,
+      "remaining_blockers": "engine:anarci | engine:igblast | reference:igblast-germline | confirmation:protocol complete | confirmation:independent site complete | confirmation:wet lab complete | confirmation:prospective complete | confirmation:orthogonal complete | governance:physical qualification complete | governance:operating history complete | governance:expert signoff complete | governance:formal release review complete | governance:upstream runtime reference model complete | step172:confirmation manifest missing"
+    },
+    {
+      "module_key": "docking_dynamics",
+      "module_title": "Docking and dynamics depth",
+      "actual_practical_readiness_rating": 5.0,
+      "remaining_blockers": "engine:gromacs | engine:openmm | engine:vina | reference:bindingdb | reference:chembl | confirmation:protocol complete | confirmation:independent site complete | confirmation:wet lab complete | confirmation:prospective complete | confirmation:orthogonal complete | governance:physical qualification complete | governance:operating history complete | governance:expert signoff complete | governance:formal release review complete | governance:upstream runtime reference model complete | step172:confirmation manifest missing"
+    },
+    {
+      "module_key": "enzyme_pathway_design",
+      "module_title": "Enzyme/pathway design depth",
+      "actual_practical_readiness_rating": 5.0,
+      "remaining_blockers": "engine:proteinmpnn | reference:go-basic | reference:reactome-uniprot | reference:uniprot-swissprot | confirmation:protocol complete | confirmation:independent site complete | confirmation:wet lab complete | confirmation:orthogonal complete | governance:physical qualification complete | governance:operating history complete | governance:expert signoff complete | governance:formal release review complete | governance:upstream runtime reference model complete | step172:confirmation manifest missing"
+    },
+    {
+      "module_key": "rare_variant_family",
+      "module_title": "Family genetics depth",
+      "actual_practical_readiness_rating": 5.0,
+      "remaining_blockers": "engine:bcftools | engine:vep | engine:whatshap | reference:clinvar-grch38-tbi | reference:clinvar-grch38-vcf | reference:gnomad-genomes | reference:grch38-fasta | reference:hpo-ontology | reference:vep-cache-grch38 | confirmation:protocol complete | confirmation:independent site complete | confirmation:wet lab complete | confirmation:prospective complete | confirmation:orthogonal complete | governance:physical qualification complete | governance:operating history complete | governance:expert signoff complete | governance:formal release review complete | governance:upstream runtime reference model complete | step172:confirmation manifest missing"
+    },
+    {
+      "module_key": "population_gwas",
+      "module_title": "GWAS depth",
+      "actual_practical_readiness_rating": 5.0,
+      "remaining_blockers": "engine:plink2 | engine:regenie | engine:saige | reference:gnomad-genomes | reference:grch38-fasta | confirmation:protocol complete | confirmation:independent site complete | confirmation:prospective complete | confirmation:orthogonal complete | governance:physical qualification complete | governance:operating history complete | governance:expert signoff complete | governance:formal release review complete | governance:upstream runtime reference model complete | step172:confirmation manifest missing"
+    },
+    {
+      "module_key": "genome_editing_safety",
+      "module_title": "Genome-editing safety depth",
+      "actual_practical_readiness_rating": 5.0,
+      "remaining_blockers": "engine:bcftools | engine:blastn | engine:bowtie | reference:grch38-fasta | confirmation:protocol complete | confirmation:independent site complete | confirmation:wet lab complete | confirmation:orthogonal complete | governance:physical qualification complete | governance:operating history complete | governance:expert signoff complete | governance:formal release review complete | governance:upstream runtime reference model complete | step172:confirmation manifest missing"
+    },
+    {
+      "module_key": "immunoinformatics_vaccine",
+      "module_title": "Immunoinformatics depth",
+      "actual_practical_readiness_rating": 5.0,
+      "remaining_blockers": "engine:netmhciipan | engine:netmhcpan | reference:netmhciipan-data | reference:netmhcpan-data | reference:uniprot-swissprot | confirmation:protocol complete | confirmation:independent site complete | confirmation:wet lab complete | confirmation:orthogonal complete | governance:physical qualification complete | governance:operating history complete | governance:expert signoff complete | governance:formal release review complete | governance:upstream runtime reference model complete | step172:confirmation manifest missing"
+    }
+  ],
+  "strongest_modules": [
+    {
+      "module_key": "cross_module_workspace",
+      "module_title": "Cross-module project depth",
+      "actual_practical_readiness_rating": 7.5,
+      "readiness_stage": "S2-scientific-environment-ready"
+    },
+    {
+      "module_key": "data_lakehouse_v2",
+      "module_title": "Data lakehouse depth",
+      "actual_practical_readiness_rating": 7.5,
+      "readiness_stage": "S2-scientific-environment-ready"
+    },
+    {
+      "module_key": "document_intelligence_core",
+      "module_title": "Document intelligence depth",
+      "actual_practical_readiness_rating": 7.5,
+      "readiness_stage": "S2-scientific-environment-ready"
+    },
+    {
+      "module_key": "evidence_citation_engine",
+      "module_title": "Evidence and citation depth",
+      "actual_practical_readiness_rating": 7.5,
+      "readiness_stage": "S2-scientific-environment-ready"
+    },
+    {
+      "module_key": "knowledge_graph_core",
+      "module_title": "Knowledge-graph depth",
+      "actual_practical_readiness_rating": 7.5,
+      "readiness_stage": "S2-scientific-environment-ready"
+    },
+    {
+      "module_key": "plugin_marketplace_core",
+      "module_title": "Plugin security depth",
+      "actual_practical_readiness_rating": 7.5,
+      "readiness_stage": "S2-scientific-environment-ready"
+    },
+    {
+      "module_key": "plugin_marketplace_v2",
+      "module_title": "Plugin security depth",
+      "actual_practical_readiness_rating": 7.5,
+      "readiness_stage": "S2-scientific-environment-ready"
+    },
+    {
+      "module_key": "provenance_ledger_v2",
+      "module_title": "Provenance depth",
+      "actual_practical_readiness_rating": 7.5,
+      "readiness_stage": "S2-scientific-environment-ready"
+    },
+    {
+      "module_key": "reference_lifecycle_v2",
+      "module_title": "Reference lifecycle depth",
+      "actual_practical_readiness_rating": 7.5,
+      "readiness_stage": "S2-scientific-environment-ready"
+    },
+    {
+      "module_key": "unified_report_builder",
+      "module_title": "Scientific reporting depth",
+      "actual_practical_readiness_rating": 7.5,
+      "readiness_stage": "S2-scientific-environment-ready"
+    },
+    {
+      "module_key": "collaboration_review_v2",
+      "module_title": "Scientific review depth",
+      "actual_practical_readiness_rating": 7.5,
+      "readiness_stage": "S2-scientific-environment-ready"
+    },
+    {
+      "module_key": "universal_file_inspector",
+      "module_title": "Universal file-inspection depth",
+      "actual_practical_readiness_rating": 7.5,
+      "readiness_stage": "S2-scientific-environment-ready"
+    },
+    {
+      "module_key": "store_readiness_core",
+      "module_title": "Windows product readiness",
+      "actual_practical_readiness_rating": 7.5,
+      "readiness_stage": "S2-scientific-environment-ready"
+    },
+    {
+      "module_key": "workflow_builder_core",
+      "module_title": "Workflow execution depth",
+      "actual_practical_readiness_rating": 7.5,
+      "readiness_stage": "S2-scientific-environment-ready"
+    },
+    {
+      "module_key": "workflow_builder_v2",
+      "module_title": "Workflow execution depth",
+      "actual_practical_readiness_rating": 7.5,
+      "readiness_stage": "S2-scientific-environment-ready"
+    }
+  ],
+  "ratings_file": "/mnt/data/step173_work/BioIntel-AI/reports/step173_final_all_module_ratings.csv"
+}

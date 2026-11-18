@@ -1,0 +1,75 @@
+{
+  "schema": "biointel.step174.test-results.v1",
+  "status": "passed",
+  "version": "14.6.0",
+  "groups": [
+    {
+      "group": "Step159 compatibility",
+      "passed": 7,
+      "failed": 0
+    },
+    {
+      "group": "Step160 compatibility",
+      "passed": 7,
+      "failed": 0
+    },
+    {
+      "group": "Step161 compatibility",
+      "passed": 7,
+      "failed": 0
+    },
+    {
+      "group": "Step162 compatibility",
+      "passed": 6,
+      "failed": 0
+    },
+    {
+      "group": "Step163 compatibility",
+      "passed": 2,
+      "failed": 0
+    },
+    {
+      "group": "Step164 compatibility",
+      "passed": 5,
+      "failed": 0
+    },
+    {
+      "group": "Step165 compatibility",
+      "passed": 4,
+      "failed": 0
+    },
+    {
+      "group": "Step166 compatibility",
+      "passed": 5,
+      "failed": 0,
+      "warnings": 2
+    },
+    {
+      "group": "Step167 compatibility",
+      "passed": 6,
+      "failed": 0
+    },
+    {
+      "group": "Step168 completed focused tests",
+      "passed": 4,
+      "failed": 0,
+      "superseded_long_test": "Current full native 80-module sweep passed"
+    },
+    {
+      "group": "Step169 completed focused tests",
+      "passed": 3,
+      "failed": 0,
+      "superseded_long_test": "Current full native 80-module sweep passed"
+    },
+    {
+      "group": "Step170-174 focused qualification",
+      "passed": 29,
+      "failed": 0
+    }
+  ],
+  "selected_tests_passed": 85,
+  "selected_tests_failed": 0,
+  "full_native_modules_passed": 80,
+  "full_native_modules_failed": 0,
+  "incomplete_long_runs_claimed_as_passed": false
+}

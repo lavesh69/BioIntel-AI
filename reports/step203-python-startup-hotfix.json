@@ -1,0 +1,56 @@
+{
+  "schema": "biointel.step203.python-startup-hotfix.v1",
+  "generated_at": "2026-07-17T17:23:18.385227+00:00",
+  "passed": true,
+  "checks": [
+    {
+      "name": "hotfix files",
+      "passed": true,
+      "detail": "complete"
+    },
+    {
+      "name": "direct Python path detection",
+      "passed": true,
+      "detail": "direct-first plus locator fallback"
+    },
+    {
+      "name": "space-safe path handling",
+      "passed": true,
+      "detail": "quoted executable paths"
+    },
+    {
+      "name": "no TEMP installer download",
+      "passed": true,
+      "detail": "app-local download directory"
+    },
+    {
+      "name": "official signature verification",
+      "passed": true,
+      "detail": "signed installer required"
+    },
+    {
+      "name": "compatible runtime policy",
+      "passed": true,
+      "detail": "any CPython 3.11.x x64 accepted; 3.11.9 preferred installer"
+    },
+    {
+      "name": "locator breadth",
+      "passed": true,
+      "detail": "user/local/registry/launcher/PATH"
+    },
+    {
+      "name": "Step203 markers",
+      "passed": true,
+      "detail": "5/5 present"
+    },
+    {
+      "name": "builder runtime informational",
+      "passed": true,
+      "detail": {
+        "version": "3.13.5",
+        "bits": 64,
+        "target_runtime_ok": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "classification": "documented_control_qualification",
+  "existing": [
+    "src/biointel/enterprise/saas.py",
+    "src/biointel/multitenancy/store.py",
+    "tests/test_step36_maturity_frameworks.py"
+  ],
+  "external_boundary": "SaaS controls are not paying-customer history.",
+  "missing": [],
+  "observed_at": "2026-07-05T07:33:16.094138+00:00",
+  "passed": true,
+  "required": [
+    "src/biointel/enterprise/saas.py",
+    "src/biointel/multitenancy/store.py",
+    "tests/test_step36_maturity_frameworks.py"
+  ],
+  "schema": "biointel.step42.saas_controls.v1"
+}

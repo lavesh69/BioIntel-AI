@@ -1,0 +1,89 @@
+{
+  "affected_module_smoke_tests": {
+    "failed": 0,
+    "mapped_modules": 33,
+    "passed": 33
+  },
+  "databases": {
+    "count": 22,
+    "foreign_key_issues": 0,
+    "healthy": 22,
+    "rows_checked": 107229
+  },
+  "dataset_groups": 10,
+  "directly_mapped_scientific_modules": 33,
+  "focused_tests": {
+    "failed": 0,
+    "passed": 14
+  },
+  "internal_data_authenticity_controls": "10/10",
+  "mapped_module_keys": [
+    "admet_discovery",
+    "batch_sequence",
+    "benchmark_leakage_lab",
+    "cancer_genomics",
+    "chembl_builder",
+    "comparative_pathogen_genomics",
+    "connected_data_explorer",
+    "dataset_registry",
+    "discovery_command_center",
+    "drug_analyzer",
+    "dti_features",
+    "dti_predictor",
+    "evidence_studio",
+    "external_databases",
+    "external_validation",
+    "metagenomics_pipeline",
+    "microbiology_metagenomics",
+    "model_evaluation",
+    "model_training",
+    "omics_integration",
+    "pathway_network",
+    "ppi_interaction_ml",
+    "primer_crispr_codon",
+    "protein_annotation",
+    "provider_integration_center",
+    "real_evidence_studio",
+    "scientific_curation",
+    "scientific_release_gate",
+    "sequence_analyzer",
+    "sequence_comparison",
+    "structural_bioinformatics",
+    "transcriptomics_expression",
+    "variant_annotation"
+  ],
+  "physical_data_and_support_files": 20,
+  "providers": [
+    "ChEMBL / EMBL-EBI",
+    "ClinicalTrials.gov",
+    "Multiple official providers",
+    "NCBI ClinVar",
+    "NCBI Gene Expression Omnibus",
+    "RCSB PDB / wwPDB",
+    "Reactome",
+    "UCI Machine Learning Repository",
+    "UniProt",
+    "UniProt / NCBI Taxonomy references"
+  ],
+  "python_parse": {
+    "failed": 0,
+    "files": 593
+  },
+  "real_public_reference_coverage": "materially improved; not universal full-scale datasets for every scientific modality",
+  "release_name": "Verified Real Scientific Data Layer",
+  "runtime_sweep": {
+    "entry_points": 91,
+    "note": "All pages tested before final clean reconstruction; intended code/data overlay is identical.",
+    "passed": 91,
+    "timeouts": 0,
+    "uncaught_exceptions": 0
+  },
+  "scientific_boundary": "Real public/reference data do not substitute for independent prospective wet-lab, clinical, multi-site, regulatory, or patient-care validation.",
+  "scientific_release_eligible_datasets": 0,
+  "source_release_licence_checksum_coverage": "10/10",
+  "training_eligible_datasets": [
+    "uci_wdbc"
+  ],
+  "verified_local_data_bytes": 3153724,
+  "version": "8.2.6"
+}

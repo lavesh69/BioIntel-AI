@@ -1,0 +1,49 @@
+{
+  "schema": "biointel.step60.verification.v1",
+  "release": "BioIntel AI Step 60 Lab Analytics Excellence",
+  "generated_at": "2026-07-06T12:04:17.586843+00:00",
+  "tests": {
+    "collected": 527,
+    "passed": 511,
+    "skipped": 16,
+    "failed": 0,
+    "focused_step60_passed": 22,
+    "full_duration_seconds": 323.16
+  },
+  "lab_analytics": {
+    "modules_upgraded": 4,
+    "advanced_backend_modules": 9,
+    "template_files": 13,
+    "capability_catalog": 33,
+    "capabilities_detected_in_qualification_runner": 3,
+    "template_archive_sha256": "988be4a61772fea5d6c9430939ef722f825b5ea8125f37a6e10703f4e0beb326"
+  },
+  "quality": {
+    "ruff": "passed",
+    "python_compilation": "passed",
+    "engineering_gates_passed": true,
+    "secret_scan_passed": true,
+    "secret_findings": 0
+  },
+  "data_and_models": {
+    "databases": 20,
+    "healthy_databases": 20,
+    "database_rows": 106465,
+    "foreign_key_violations": 0,
+    "model_artifacts": 24,
+    "model_mismatches": 0,
+    "lab_template_pack_passed": true
+  },
+  "store_release": {
+    "internal_failures": 0,
+    "external_actions": 3,
+    "source_size_bytes": 339910348
+  },
+  "external_boundaries": [
+    "regulated LIMS/ELN validation and electronic-signature qualification",
+    "instrument certification and laboratory accreditation",
+    "official/licensed database redistribution and third-party specialist binaries",
+    "independent wet-lab, clinical or regulatory validation",
+    "real GLP/GMP operating history and authority inspection evidence"
+  ]
+}

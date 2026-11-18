@@ -1,0 +1,19 @@
+{
+  "schema": "biointel.step172.qualification.v1",
+  "status": "software-qualified-external-evidence-pending",
+  "version": "14.4.0",
+  "modules": 80,
+  "software_framework_score": 10.0,
+  "module_profiles_complete": 80,
+  "wet_lab_required_modules": 30,
+  "prospective_required_modules": 29,
+  "orthogonal_required_modules": 55,
+  "instrument_qualification_required_modules": 8,
+  "gpu_qualification_required_modules": 13,
+  "expert_signoff_required_modules": 80,
+  "formal_release_review_required_modules": 80,
+  "controlled_release_eligible_modules": 0,
+  "current_external_confirmation_complete_modules": 0,
+  "external_results_fabricated": false,
+  "boundary": "Implementation and evidence-verification workflows are 10/10. Wet-lab, prospective, orthogonal, expert, physical-site and release outcomes must be generated and signed externally."
+}

@@ -1,0 +1,37 @@
+{
+  "schema": "biointel.step165.release-doctor.v1",
+  "status": "passed",
+  "checks": [
+    {
+      "check": "Version",
+      "passed": true,
+      "detail": "13.7.0"
+    },
+    {
+      "check": "STEP165_RELEASE.json",
+      "passed": true,
+      "detail": "present"
+    },
+    {
+      "check": "STEP165_PRIORITY_MODULE_UPGRADE_REPORT.md",
+      "passed": true,
+      "detail": "present"
+    },
+    {
+      "check": "pages/234_Priority_Three_Module_Excellence_Center.py",
+      "passed": true,
+      "detail": "present"
+    },
+    {
+      "check": "src/biointel/priority_v165/assurance.py",
+      "passed": true,
+      "detail": "present"
+    },
+    {
+      "check": "Step 165 validation",
+      "passed": true,
+      "detail": "{\n  \"schema\": \"biointel.step165.validation.v1\",\n  \"status\": \"passed\",\n  \"priority_modules\": 3,\n  \"software_10of10\": 3,\n  \"module_runs\": [\n    {\n      \"module_key\": \"amr_surveillance\",\n      \"status\": \"review\",\n      \"passed\": true,\n      \"tables\": 24\n    },\n    {\n      \"module_key\": \"protein_ligand_codesign\",\n      \"status\": \"review\",\n      \"passed\": true,\n      \"tables\": 23\n    },\n    {\n      \"module_key\": \"long_read_epigenome\",\n      \"status\": \"review\",\n      \"passed\": true,\n      \"tables\": 19\n    }\n  ],\n  \"python_files_compiled\": 825,\n  \"module_failures\": [],\n  \"compile_failures\": [],\n  \"external_evidence_not_inferred\": true\n}\n"
+    }
+  ],
+  "external_claims_not_inferred": true
+}

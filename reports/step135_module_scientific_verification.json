@@ -1,0 +1,185 @@
+{
+  "schema": "biointel.step135-module-scientific-verification.v1",
+  "step": 135,
+  "version": "13.2.0",
+  "scope": "module-scientific-depth-specialist-visuals",
+  "checks": [
+    {
+      "name": "Product version preserved",
+      "passed": true,
+      "detail": "13.2.0"
+    },
+    {
+      "name": "Exactly fifteen module profiles",
+      "passed": true,
+      "detail": [
+        "amr_surveillance",
+        "autonomous_lab_planner",
+        "biomedical_foundation_model_hub",
+        "cell_therapy_cart",
+        "clinical_biomarker_survival",
+        "digital_pathology_foundation",
+        "federated_biomedical_ai",
+        "gene_therapy_vector",
+        "long_read_epigenome",
+        "pangenome_population_medicine",
+        "pharmacovigilance_intelligence",
+        "protein_ligand_codesign",
+        "single_cell_long_read_isoforms",
+        "spatial_medicine_tme",
+        "synthetic_cohort_trial"
+      ]
+    },
+    {
+      "name": "Module scientific and visual smoke",
+      "passed": true,
+      "detail": {
+        "passed": true,
+        "modules": [
+          {
+            "module": "amr_surveillance",
+            "tables": 3,
+            "figures": 3,
+            "quality_checks": 6
+          },
+          {
+            "module": "autonomous_lab_planner",
+            "tables": 4,
+            "figures": 4,
+            "quality_checks": 6
+          },
+          {
+            "module": "biomedical_foundation_model_hub",
+            "tables": 3,
+            "figures": 3,
+            "quality_checks": 6
+          },
+          {
+            "module": "cell_therapy_cart",
+            "tables": 2,
+            "figures": 3,
+            "quality_checks": 6
+          },
+          {
+            "module": "clinical_biomarker_survival",
+            "tables": 4,
+            "figures": 4,
+            "quality_checks": 6
+          },
+          {
+            "module": "digital_pathology_foundation",
+            "tables": 3,
+            "figures": 3,
+            "quality_checks": 6
+          },
+          {
+            "module": "federated_biomedical_ai",
+            "tables": 2,
+            "figures": 4,
+            "quality_checks": 6
+          },
+          {
+            "module": "gene_therapy_vector",
+            "tables": 2,
+            "figures": 3,
+            "quality_checks": 6
+          },
+          {
+            "module": "long_read_epigenome",
+            "tables": 2,
+            "figures": 3,
+            "quality_checks": 6
+          },
+          {
+            "module": "pangenome_population_medicine",
+            "tables": 2,
+            "figures": 3,
+            "quality_checks": 6
+          },
+          {
+            "module": "pharmacovigilance_intelligence",
+            "tables": 2,
+            "figures": 3,
+            "quality_checks": 6
+          },
+          {
+            "module": "protein_ligand_codesign",
+            "tables": 2,
+            "figures": 3,
+            "quality_checks": 6
+          },
+          {
+            "module": "single_cell_long_read_isoforms",
+            "tables": 2,
+            "figures": 3,
+            "quality_checks": 6
+          },
+          {
+            "module": "spatial_medicine_tme",
+            "tables": 3,
+            "figures": 3,
+            "quality_checks": 6
+          },
+          {
+            "module": "synthetic_cohort_trial",
+            "tables": 3,
+            "figures": 4,
+            "quality_checks": 6
+          }
+        ],
+        "module_count": 15,
+        "scientific_tables": 39,
+        "specialist_figures": 49,
+        "failures": []
+      }
+    },
+    {
+      "name": "Python syntax",
+      "passed": true,
+      "detail": {
+        "passed": true,
+        "files": 951,
+        "failures": []
+      }
+    },
+    {
+      "name": "Database integrity",
+      "passed": true,
+      "detail": {
+        "passed": true,
+        "databases": 36,
+        "rows": 108425,
+        "foreign_key_issues": 0,
+        "failures": []
+      }
+    },
+    {
+      "name": "Protected pages",
+      "passed": true,
+      "detail": "5/5 byte-identical"
+    },
+    {
+      "name": "Module-only renderer integration",
+      "passed": true,
+      "detail": {
+        "renderer_hook": true,
+        "new_central_pages": []
+      }
+    },
+    {
+      "name": "Release artifacts",
+      "passed": true,
+      "detail": "Complete"
+    },
+    {
+      "name": "Runtime residue",
+      "passed": true,
+      "detail": {
+        "passed": true,
+        "count": 0,
+        "paths": []
+      }
+    }
+  ],
+  "passed": true
+}

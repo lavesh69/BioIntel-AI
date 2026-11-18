@@ -1,0 +1,487 @@
+{
+  "blocking_failures": [
+    {
+      "advisory": false,
+      "key": "version_file_matches",
+      "message": "15.6.0",
+      "passed": false
+    },
+    {
+      "advisory": false,
+      "key": "readme_current_step",
+      "message": "README must identify Step 158",
+      "passed": false
+    },
+    {
+      "advisory": false,
+      "key": "readme_current_version",
+      "message": "README must identify product version",
+      "passed": false
+    },
+    {
+      "advisory": false,
+      "key": "readme_no_stale_product_header",
+      "message": "stale BioIntel AI version header",
+      "passed": false
+    },
+    {
+      "advisory": false,
+      "key": "readme_external_boundary",
+      "message": "external boundary",
+      "passed": false
+    }
+  ],
+  "checks": [
+    {
+      "advisory": false,
+      "key": "root_exists",
+      "message": "/workspace/scratch/6e924a4e01a6/worktree/BioIntel-AI-15.6.0-Step206-WINDOWS-V19.6",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "canonical_entry_points_present",
+      "message": "[]",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "release_metadata_parse",
+      "message": "",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "release_step_current",
+      "message": "158",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "release_product_version",
+      "message": "13.2.0",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "release_boundary_present",
+      "message": "validation_boundary",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "version_file_matches",
+      "message": "15.6.0",
+      "passed": false
+    },
+    {
+      "advisory": false,
+      "key": "readme_current_step",
+      "message": "README must identify Step 158",
+      "passed": false
+    },
+    {
+      "advisory": false,
+      "key": "readme_current_version",
+      "message": "README must identify product version",
+      "passed": false
+    },
+    {
+      "advisory": false,
+      "key": "readme_no_stale_product_header",
+      "message": "stale BioIntel AI version header",
+      "passed": false
+    },
+    {
+      "advisory": false,
+      "key": "readme_external_boundary",
+      "message": "external boundary",
+      "passed": false
+    },
+    {
+      "advisory": true,
+      "key": "release_runtime_residue_absent",
+      "message": "[\".ruff_cache\", \".pytest_cache\", \"tests/__pycache__\", \"reports/workflow_automation.sqlite3-wal\", \"reports/relationships.sqlite3-shm\", \"reports/evidence.sqlite3-wal\", \"reports/realworld_evidence.sqlite3-shm\", \"reports/workflow_automation.sqlite3-shm\", \"reports/evidence.sqlite3-shm\", \"reports/performance.sqlite3-wal\", \"reports/assets.sqlite3-wal\", \"reports/jobs.sqlite3-wal\", \"reports/relationships.sqlite3-wal\", \"reports/knowledge.sqlite3-wal\", \"reports/prospective_validation.sqlite3-wal\", \"reports/scientific_evidence.sqlite3-wal\", \"reports/validation_evidence.sqlite3-shm\", \"reports/viewer_sync.sqlite3-shm\", \"reports/performance.sqlite3-shm\", \"reports/biotechnology_project_runs.sqlite3-wal\", \"reports/prospective_validation.sqlite3-shm\", \"reports/realworld_evidence.sqlite3-wal\", \"reports/step103_lims.sqlite3-shm\", \"reports/validation_evidence.sqlite3-wal\", \"reports/step103_lims.sqlite3-wal\", \"reports/analytics.sqlite3-wal\", \"reports/analytics.sqlite3-shm\", \"reports/knowledge.sqlite3-shm\", \"reports/jobs.sqlite3-shm\", \"reports/scientific_evidence.sqlite3-shm\", \"reports/viewer_sync.sqlite3-wal\", \"reports/biotechnology_project_runs.sqlite3-shm\", \"reports/assets.sqlite3-shm\", \"scripts/__pycache__\", \"data/discovery_projects.sqlite3-shm\", \"data/lab_analytics.sqlite3-wal\", \"data/lab_analytics.sqlite3-shm\", \"data/discovery_projects.sqlite3-wal\", \"pages/__pycache__\", \"tests/integration/__pycache__\", \"tests/visual/__pycache__\", \"tests/__pycache__/test_neuro_cns_step200_max_potential.cpython-312-pytest-8.4.2.pyc\", \"tests/__pycache__/test_step136_non_ai_visual_peak.cpython-312-pytest-8.4.2.pyc\", \"tests/__pycache__/test_step188_major_module_standard.cpython-312-pytest-8.4.2.pyc\", \"tests/__pycache__/test_step121_selected_module_upgrades.cpython-312-pytest-8.4.2.pyc\", \"tests/__pycache__/test_step131_realtime_interaction.cpython-312-pytest-8.4.2.pyc\", \"tests/__pycache__/test_step31_scientific_data_ui.cpython-312-pytest-8.4.2.pyc\", \"tests/__pycache__/test_step19_5x.cpython-312-pytest-8.4.2.pyc\", \"tests/__pycache__/test_step122_protein_design_execution.cpython-312-pytest-8.4.2.pyc\", \"tests/__pycache__/test_step211_live_workspace_peak.cpython-312-pytest-8.4.2.pyc\", \"tests/__pycache__/test_step94_pro_modules.cpython-312-pytest-8.4.2.pyc\", \"tests/__pycache__/test_step24_comprehensive_upgrade.cpython-312-pytest-8.4.2.pyc\", \"tests/__pycache__/test_step196_windows_release_v7.cpython-312-pytest-8.4.2.pyc\", \"tests/__pycache__/test_step32_scientific_ux.cpython-312-pytest-8.4.2.pyc\", \"tests/__pycache__/test_step143_research_planning_feature_peak.cpython-312-pytest-8.4.2.pyc\", \"tests/__pycache__/test_orf_analysis.cpython-312-pytest-8.4.2.pyc\", \"tests/__pycache__/test_step167_priority_module_excellence.cpython-312-pytest-8.4.2.pyc\", \"tests/__pycache__/test_step66_full_experience_themes.cpython-312-pytest-8.4.2.pyc\", \"tests/__pycache__/test_dti_dataset_validation.cpython-312-pytest-8.4.2.pyc\", \"tests/__pycache__/test_step102_scientific_expansion.cpython-312-pytest-8.4.2.pyc\", \"tests/__pycache__/test_step37_engineering_excellence.cpython-312-pytest-8.4.2.pyc\", \"tests/__pycache__/test_step164_operational_readiness.cpython-312-pytest-8.4.2.pyc\", \"tests/__pycache__/test_step196_cross_release_handover.cpython-312-pytest-8.4.2.pyc\", \"tests/__pycache__/test_step129_nextgen_depth_visuals_stability.cpython-312-pytest-8.4.2.pyc\", \"tests/__pycache__/test_step133_module_only_upgrade.cpython-312-pytest-8.4.2.pyc\", \"tests/__pycache__/test_step10_lifecycle.cpython-312-pytest-8.4.2.pyc\", \"tests/__pycache__/test_step103_advanced_scientific_depth.cpython-312-pytest-8.4.2.pyc\", \"tests/__pycache__/test_step91_branding.cpython-312-pytest-8.4.2.pyc\", \"tests/__pycache__/conftest.cpython-312-pytest-8.4.2.pyc\", \"tests/__pycache__/test_step168_remaining_module_excellence.cpython-312-pytest-8.4.2.pyc\", \"tests/__pycache__/test_step97_reliability_optimization.cpython-312-pytest-8.4.2.pyc\", \"tests/__pycache__/test_step18_coverage.cpython-312-pytest-8.4.2.pyc\", \"tests/__pycache__/test_step46_ui_excellence.cpython-312-pytest-8.4.2.pyc\", \"tests/__pycache__/test_step196_v13_ui_polish.cpython-312-pytest-8.4.2.pyc\", \"tests/__pycache__/test_step108_decision_visuals.cpython-312-pytest-8.4.2.pyc\", \"tests/__pycache__/test_step13_professional.cpython-312-pytest-8.4.2.pyc\", \"tests/__pycache__/test_step161_all_module_upgrade.cpython-312-pytest-8.4.2.pyc\", \"tests/__pycache__/test_step142_connected_research_planning_os.cpython-312-pytest-8.4.2.pyc\", \"tests/__pycache__/test_model_errors.cpython-312-pytest-8.4.2.pyc\", \"tests/__pycache__/test_step16_ml_suite.cpython-312-pytest-8.4.2.pyc\", \"tests/__pycache__/test_alignment.cpython-312-pytest-8.4.2.pyc\", \"tests/__pycache__/test_step54_remaining_fixes.cpython-312-pytest-8.4.2.pyc\", \"tests/__pycache__/test_step101_execution_reporting.cpython-312-pytest-8.4.2.pyc\", \"tests/__pycache__/test_step147_research_lifecycle_operational_peak.cpython-312-pytest-8.4.2.pyc\", \"tests/__pycache__/test_step196_p0_p1_priority_upgrade.cpython-312-pytest-8.4.2.pyc\", \"tests/__pycache__/test_step25_real_evidence.cpython-312-pytest-8.4.2.pyc\", \"tests/__pycache__/test_module_starter_kits.cpython-312-pytest-8.4.2.pyc\", \"tests/__pycache__/test_step55_comprehensive_app_improvements.cpython-312-pytest-8.4.2.pyc\", \"tests/__pycache__/test_step187_page_excellence.cpython-312-pytest-8.4.2.pyc\", \"tests/__pycache__/test_step56_store_release.cpython-312-pytest-8.4.2.pyc\", \"tests/__pycache__/test_step14_governance.cpython-312-pytest-8.4.2.pyc\", \"tests/__pycache__/test_neuro_cns_step199_advanced.cpython-312-pytest-8.4.2.pyc\", \"tests/__pycache__/test_step197_upload_canvas.cpython-312-pytest-8.4.2.pyc\", \"tests/__pycache__/test_neuro_cns_step198_hardening.cpython-312-pytest-8.4.2.pyc\", \"tests/__pycache__/test_step149_windows_path_safety.cpython-312-pytest-8.4.2.pyc\", \"tests/__pycache__/test_step62_lab_analytics_excellence.cpython-312-pytest-8.4.2.pyc\", \"tests/__pycache__/test_step127_scientific_depth.cpython-312-pytest-8.4.2.pyc\", \"tests/__pycache__/test_step173_final_all_module_readiness.cpython-312-pytest-8.4.2.pyc\", \"tests/__pycache__/test_smiles_and_descriptors.cpython-312-pytest-8.4.2.pyc\", \"tests/__pycache__/test_step193_mandatory_completion.cpython-312-pytest-8.4.2.pyc\"]",
+      "passed": false
+    },
+    {
+      "advisory": false,
+      "key": "sqlite_release_integrity",
+      "message": "databases=50",
+      "passed": true
+    },
+    {
+      "advisory": true,
+      "key": "historical_verifiers_retained_as_traceability",
+      "message": "historical=101",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "latest_verifier_alias_present",
+      "message": "VERIFY_LATEST_WINDOWS.bat",
+      "passed": true
+    }
+  ],
+  "generated_at_utc": "2026-07-18T20:58:30.214193+00:00",
+  "historical_verifiers": [
+    "VERIFY_STEP104_WINDOWS.bat",
+    "VERIFY_STEP105_WINDOWS.bat",
+    "VERIFY_STEP106_WINDOWS.bat",
+    "VERIFY_STEP107_WINDOWS.bat",
+    "VERIFY_STEP108_WINDOWS.bat",
+    "VERIFY_STEP109_WINDOWS.bat",
+    "VERIFY_STEP110_WINDOWS.bat",
+    "VERIFY_STEP111_WINDOWS.bat",
+    "VERIFY_STEP113_WINDOWS.bat",
+    "VERIFY_STEP114_WINDOWS.bat",
+    "VERIFY_STEP115_WINDOWS.bat",
+    "VERIFY_STEP116_WINDOWS.bat",
+    "VERIFY_STEP117_WINDOWS.bat",
+    "VERIFY_STEP118_WINDOWS.bat",
+    "VERIFY_STEP119_WINDOWS.bat",
+    "VERIFY_STEP120_WINDOWS.bat",
+    "VERIFY_STEP121_WINDOWS.bat",
+    "VERIFY_STEP122_WINDOWS.bat",
+    "VERIFY_STEP123_WINDOWS.bat",
+    "VERIFY_STEP124_CANVAS_HOTFIX_WINDOWS.bat",
+    "VERIFY_STEP124_WINDOWS.bat",
+    "VERIFY_STEP125_WINDOWS.bat",
+    "VERIFY_STEP126_WINDOWS.bat",
+    "VERIFY_STEP127_WINDOWS.bat",
+    "VERIFY_STEP128_WINDOWS.bat",
+    "VERIFY_STEP129_WINDOWS.bat",
+    "VERIFY_STEP130_WINDOWS.bat",
+    "VERIFY_STEP131_WINDOWS.bat",
+    "VERIFY_STEP132_WINDOWS.bat",
+    "VERIFY_STEP133_MODULE_ONLY_WINDOWS.bat",
+    "VERIFY_STEP134_WINDOWS.bat",
+    "VERIFY_STEP135_MODULES_WINDOWS.bat",
+    "VERIFY_STEP136_WINDOWS.bat",
+    "VERIFY_STEP151_WINDOWS.bat",
+    "VERIFY_STEP152_WINDOWS.bat",
+    "VERIFY_STEP153_WINDOWS.bat",
+    "VERIFY_STEP154_WINDOWS.bat",
+    "VERIFY_STEP155_WINDOWS.bat",
+    "VERIFY_STEP156_WINDOWS.bat",
+    "VERIFY_STEP157_WINDOWS.bat",
+    "VERIFY_STEP159_WINDOWS.bat",
+    "VERIFY_STEP160_WINDOWS.bat",
+    "VERIFY_STEP161_WINDOWS.bat",
+    "VERIFY_STEP162_WINDOWS.bat",
+    "VERIFY_STEP163_WINDOWS.bat",
+    "VERIFY_STEP164_WINDOWS.bat",
+    "VERIFY_STEP165_WINDOWS.bat",
+    "VERIFY_STEP166_WINDOWS.bat",
+    "VERIFY_STEP167_WINDOWS.bat",
+    "VERIFY_STEP168_WINDOWS.bat",
+    "VERIFY_STEP169_WINDOWS.bat",
+    "VERIFY_STEP170_WINDOWS.bat",
+    "VERIFY_STEP171_WINDOWS.bat",
+    "VERIFY_STEP172_WINDOWS.bat",
+    "VERIFY_STEP173_WINDOWS.bat",
+    "VERIFY_STEP174_WINDOWS.bat",
+    "VERIFY_STEP175_WINDOWS.bat",
+    "VERIFY_STEP176_TARGET_MODULES_WINDOWS.bat",
+    "VERIFY_STEP177_TARGET_MODULES_WINDOWS.bat",
+    "VERIFY_STEP178_TARGET_MODULES_WINDOWS.bat",
+    "VERIFY_STEP179_TARGET_MODULES_WINDOWS.bat",
+    "VERIFY_STEP180_TARGET_MODULES_WINDOWS.bat",
+    "VERIFY_STEP181_EXTERNAL_EVIDENCE_WINDOWS.bat",
+    "VERIFY_STEP182_DEMO_EVIDENCE_WINDOWS.bat",
+    "VERIFY_STEP183_ALL_MODULE_DEMOS_WINDOWS.bat",
+    "VERIFY_STEP184_43_MODULE_DEMO_ASSURANCE_WINDOWS.bat",
+    "VERIFY_STEP185_19_MODULE_OPERATIONAL_ASSURANCE_WINDOWS.bat",
+    "VERIFY_STEP192_WINDOWS.bat",
+    "VERIFY_STEP196_WINDOWS.bat",
+    "VERIFY_STEP198_NEURO_CNS_WINDOWS.bat",
+    "VERIFY_STEP199_NEURO_CNS_WINDOWS.bat",
+    "VERIFY_STEP200_NEURO_CNS_WINDOWS.bat",
+    "VERIFY_STEP201_NEURO_CNS_WINDOWS.bat",
+    "VERIFY_STEP202_NEURO_CNS_WINDOWS.bat",
+    "VERIFY_STEP203_INTEGRITY_GATE_WINDOWS.bat",
+    "VERIFY_STEP203_WINDOWS.bat",
+    "VERIFY_STEP24_WINDOWS.bat",
+    "VERIFY_STEP25_WINDOWS.bat",
+    "VERIFY_STEP26_WINDOWS.bat",
+    "VERIFY_STEP27_WINDOWS.bat",
+    "VERIFY_STEP28_WINDOWS.bat",
+    "VERIFY_STEP29_WINDOWS.bat",
+    "VERIFY_STEP30_WINDOWS.bat",
+    "VERIFY_STEP31_WINDOWS.bat",
+    "VERIFY_STEP32_WINDOWS.bat",
+    "VERIFY_STEP33_WINDOWS.bat",
+    "VERIFY_STEP36_WINDOWS.bat",
+    "VERIFY_STEP53_FIXES_WINDOWS.bat",
+    "VERIFY_STEP54_WINDOWS.bat",
+    "VERIFY_STEP55_WINDOWS.bat",
+    "VERIFY_STEP57_WINDOWS.bat",
+    "VERIFY_STEP58_WINDOWS.bat",
+    "VERIFY_STEP59_WINDOWS.bat",
+    "VERIFY_STEP60_WINDOWS.bat",
+    "VERIFY_STEP61_DISCOVERY_WINDOWS.bat",
+    "VERIFY_STEP62_LAB_ANALYTICS_WINDOWS.bat",
+    "VERIFY_STEP63_DISCOVERY_WINDOWS.bat",
+    "VERIFY_STEP64_FINAL_WINDOWS.bat",
+    "VERIFY_STEP67_WINDOWS.bat",
+    "VERIFY_STEP68_RUNTIME_REPAIRS_WINDOWS.bat",
+    "VERIFY_STEP95_QUALITY_WINDOWS.bat"
+  ],
+  "passed": false,
+  "product_version": "13.2.0",
+  "root": "/workspace/scratch/6e924a4e01a6/worktree/BioIntel-AI-15.6.0-Step206-WINDOWS-V19.6",
+  "schema": "biointel.step158.release-doctor.v1",
+  "sqlite_databases": [
+    {
+      "foreign_key_violations": 0,
+      "integrity": "ok",
+      "path": "UserData/engine_platform_v196/engine-platform.sqlite3"
+    },
+    {
+      "foreign_key_violations": 0,
+      "integrity": "ok",
+      "path": "UserData/proof_gates_v10/priority_evidence.sqlite3"
+    },
+    {
+      "foreign_key_violations": 0,
+      "integrity": "ok",
+      "path": "UserData/step170/runtime_reference_qualification.sqlite3"
+    },
+    {
+      "foreign_key_violations": 0,
+      "integrity": "ok",
+      "path": "UserData/step172/external_confirmation_release.sqlite3"
+    },
+    {
+      "foreign_key_violations": 0,
+      "integrity": "ok",
+      "path": "UserData/step173/final_all_module_readiness.sqlite3"
+    },
+    {
+      "foreign_key_violations": 0,
+      "integrity": "ok",
+      "path": "UserData/step174/phase1_to_9_execution.sqlite3"
+    },
+    {
+      "foreign_key_violations": 0,
+      "integrity": "ok",
+      "path": "UserData/step175/target_environment_qualification.sqlite3"
+    },
+    {
+      "foreign_key_violations": 0,
+      "integrity": "ok",
+      "path": "UserData/step189/step189_platform.sqlite3"
+    },
+    {
+      "foreign_key_violations": 0,
+      "integrity": "ok",
+      "path": "UserData/step190/step190_execution.sqlite3"
+    },
+    {
+      "foreign_key_violations": 0,
+      "integrity": "ok",
+      "path": "UserData/step193/mandatory_completion.sqlite3"
+    },
+    {
+      "foreign_key_violations": 0,
+      "integrity": "ok",
+      "path": "UserData/workspace/live_experience.sqlite3"
+    },
+    {
+      "foreign_key_violations": 0,
+      "integrity": "ok",
+      "path": "UserData/workspace/live_workspace/live_workspace.sqlite3"
+    },
+    {
+      "foreign_key_violations": 0,
+      "integrity": "ok",
+      "path": "data/clinical_pharma/clinical_validation.sqlite3"
+    },
+    {
+      "foreign_key_violations": 0,
+      "integrity": "ok",
+      "path": "data/discovery_projects.sqlite3"
+    },
+    {
+      "foreign_key_violations": 0,
+      "integrity": "ok",
+      "path": "data/lab_analytics.sqlite3"
+    },
+    {
+      "foreign_key_violations": 0,
+      "integrity": "ok",
+      "path": "data/reference_assets/reference_assets.sqlite3"
+    },
+    {
+      "foreign_key_violations": 0,
+      "integrity": "ok",
+      "path": "reports/analytics.sqlite3"
+    },
+    {
+      "foreign_key_violations": 0,
+      "integrity": "ok",
+      "path": "reports/api_security.sqlite3"
+    },
+    {
+      "foreign_key_violations": 0,
+      "integrity": "ok",
+      "path": "reports/assets.sqlite3"
+    },
+    {
+      "foreign_key_violations": 0,
+      "integrity": "ok",
+      "path": "reports/batch_jobs/batch_prediction_sample_250.sqlite3"
+    },
+    {
+      "foreign_key_violations": 0,
+      "integrity": "ok",
+      "path": "reports/biotechnology_project_runs.sqlite3"
+    },
+    {
+      "foreign_key_violations": 0,
+      "integrity": "ok",
+      "path": "reports/connected_sources.sqlite3"
+    },
+    {
+      "foreign_key_violations": 0,
+      "integrity": "ok",
+      "path": "reports/datasets.sqlite3"
+    },
+    {
+      "foreign_key_violations": 0,
+      "integrity": "ok",
+      "path": "reports/document_history.sqlite3"
+    },
+    {
+      "foreign_key_violations": 0,
+      "integrity": "ok",
+      "path": "reports/evidence.sqlite3"
+    },
+    {
+      "foreign_key_violations": 0,
+      "integrity": "ok",
+      "path": "reports/experiments.sqlite3"
+    },
+    {
+      "foreign_key_violations": 0,
+      "integrity": "ok",
+      "path": "reports/feature_cache.sqlite3"
+    },
+    {
+      "foreign_key_violations": 0,
+      "integrity": "ok",
+      "path": "reports/internet_downloads.sqlite3"
+    },
+    {
+      "foreign_key_violations": 0,
+      "integrity": "ok",
+      "path": "reports/jobs.sqlite3"
+    },
+    {
+      "foreign_key_violations": 0,
+      "integrity": "ok",
+      "path": "reports/knowledge.sqlite3"
+    },
+    {
+      "foreign_key_violations": 0,
+      "integrity": "ok",
+      "path": "reports/performance.sqlite3"
+    },
+    {
+      "foreign_key_violations": 0,
+      "integrity": "ok",
+      "path": "reports/projects.sqlite3"
+    },
+    {
+      "foreign_key_violations": 0,
+      "integrity": "ok",
+      "path": "reports/prospective_validation.sqlite3"
+    },
+    {
+      "foreign_key_violations": 0,
+      "integrity": "ok",
+      "path": "reports/realworld_evidence.sqlite3"
+    },
+    {
+      "foreign_key_violations": 0,
+      "integrity": "ok",
+      "path": "reports/relationships.sqlite3"
+    },
+    {
+      "foreign_key_violations": 0,
+      "integrity": "ok",
+      "path": "reports/scientific_evidence.sqlite3"
+    },
+    {
+      "foreign_key_violations": 0,
+      "integrity": "ok",
+      "path": "reports/step103_lims.sqlite3"
+    },
+    {
+      "foreign_key_violations": 0,
+      "integrity": "ok",
+      "path": "reports/step127_scientific_runs.sqlite3"
+    },
+    {
+      "foreign_key_violations": 0,
+      "integrity": "ok",
+      "path": "reports/step95_quality10_self_test/self_test_registry.sqlite3"
+    },
+    {
+      "foreign_key_violations": 0,
+      "integrity": "ok",
+      "path": "reports/tenants.sqlite3"
+    },
+    {
+      "foreign_key_violations": 0,
+      "integrity": "ok",
+      "path": "reports/validation_evidence.sqlite3"
+    },
+    {
+      "foreign_key_violations": 0,
+      "integrity": "ok",
+      "path": "reports/viewer_sync.sqlite3"
+    },
+    {
+      "foreign_key_violations": 0,
+      "integrity": "ok",
+      "path": "reports/workflow_automation.sqlite3"
+    },
+    {
+      "foreign_key_violations": 0,
+      "integrity": "ok",
+      "path": "workspace/quality10/workflow_runs.sqlite3"
+    },
+    {
+      "foreign_key_violations": 0,
+      "integrity": "ok",
+      "path": "workspace/reference_lifecycle/reference_lifecycle.sqlite3"
+    },
+    {
+      "foreign_key_violations": 0,
+      "integrity": "ok",
+      "path": "workspace/step104/jobs.sqlite3"
+    },
+    {
+      "foreign_key_violations": 0,
+      "integrity": "ok",
+      "path": "workspace/step104/platform.sqlite3"
+    },
+    {
+      "foreign_key_violations": 0,
+      "integrity": "ok",
+      "path": "workspace/step130_scientific_intelligence.sqlite3"
+    },
+    {
+      "foreign_key_violations": 0,
+      "integrity": "ok",
+      "path": "workspace/visual_workspace.sqlite3"
+    },
+    {
+      "foreign_key_violations": 0,
+      "integrity": "ok",
+      "path": "workspace/workflow_runs/workflow_runs.sqlite3"
+    }
+  ],
+  "step": 158
+}

@@ -1,0 +1,195 @@
+{
+  "release": "BioIntel AI Step 55 Comprehensive App Upgrade",
+  "ruff": "passed",
+  "python_compilation": "passed",
+  "focused_regression": "passed",
+  "required_files_present": true,
+  "page_scan": {
+    "file_uploaders": 50,
+    "single_upload_preflights": 49,
+    "collection_upload_preflights": 1,
+    "direct_pandas_uploaded_csv_reads": 0,
+    "analysis_run_contexts": 28,
+    "methodology_disclosures": 16
+  },
+  "upload_preflight_coverage": "50/50",
+  "all_uploads_preflight_protected": true,
+  "database_count": 20,
+  "healthy_databases": 20,
+  "foreign_key_violations": 0,
+  "database_rows": 106465,
+  "repository_audit": {
+    "schema": "biointel.repository-audit.v1",
+    "passed": true,
+    "checks": {
+      "secrets": {
+        "passed": true,
+        "scanned_files": 913,
+        "finding_count": 0,
+        "findings": []
+      },
+      "workspace_hygiene": {
+        "passed": true,
+        "finding_count": 0,
+        "findings": []
+      },
+      "version_consistency": {
+        "passed": true,
+        "version": "4.3.1",
+        "failures": []
+      },
+      "markdown_links": {
+        "passed": true,
+        "checked_links": 0,
+        "broken_count": 0,
+        "broken": []
+      }
+    },
+    "environment": {
+      "python": "3.13.5",
+      "platform": "posix"
+    }
+  },
+  "databases": [
+    {
+      "path": "reports/analytics.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "tables": 5,
+      "rows": 17690
+    },
+    {
+      "path": "reports/api_security.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "tables": 5,
+      "rows": 94
+    },
+    {
+      "path": "reports/assets.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "tables": 11,
+      "rows": 20547
+    },
+    {
+      "path": "reports/biotechnology_project_runs.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "tables": 2,
+      "rows": 0
+    },
+    {
+      "path": "reports/connected_sources.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "tables": 4,
+      "rows": 0
+    },
+    {
+      "path": "reports/datasets.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "tables": 13,
+      "rows": 4879
+    },
+    {
+      "path": "reports/document_history.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "tables": 14,
+      "rows": 1973
+    },
+    {
+      "path": "reports/evidence.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "tables": 10,
+      "rows": 3891
+    },
+    {
+      "path": "reports/experiments.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "tables": 9,
+      "rows": 783
+    },
+    {
+      "path": "reports/feature_cache.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "tables": 2,
+      "rows": 1293
+    },
+    {
+      "path": "reports/internet_downloads.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "tables": 5,
+      "rows": 105
+    },
+    {
+      "path": "reports/jobs.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "tables": 6,
+      "rows": 878
+    },
+    {
+      "path": "reports/knowledge.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "tables": 10,
+      "rows": 38427
+    },
+    {
+      "path": "reports/projects.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "tables": 7,
+      "rows": 688
+    },
+    {
+      "path": "reports/prospective_validation.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "tables": 4,
+      "rows": 0
+    },
+    {
+      "path": "reports/realworld_evidence.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "tables": 6,
+      "rows": 8
+    },
+    {
+      "path": "reports/relationships.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "tables": 4,
+      "rows": 2291
+    },
+    {
+      "path": "reports/scientific_evidence.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "tables": 5,
+      "rows": 12903
+    },
+    {
+      "path": "reports/tenants.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "tables": 4,
+      "rows": 3
+    },
+    {
+      "path": "reports/validation_evidence.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "tables": 8,
+      "rows": 12
+    }
+  ]
+}

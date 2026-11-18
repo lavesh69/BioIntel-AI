@@ -1,0 +1,73 @@
+{
+  "generated_at_utc": "2026-07-08T00:00:00Z",
+  "headline": {
+    "completed_independent_prospective_outcomes": 3.0,
+    "multisite_implementation": 10.0,
+    "multisite_real_public_evidence": 8.5,
+    "prospective_validation_readiness": 10.0,
+    "proteomics_implementation": 10.0,
+    "proteomics_real_data_depth": 8.7,
+    "single_cell_implementation": 10.0,
+    "single_cell_real_data_depth": 8.3
+  },
+  "inventory": {
+    "checksum_bound_public_files": 28,
+    "databases": 22,
+    "direct_module_mappings": 35,
+    "fonts": 11,
+    "prospective_site_pack_files": 9,
+    "starter_kits": 47,
+    "streamlit_entry_points": 91,
+    "themes": 32,
+    "verified_public_dataset_groups": 14
+  },
+  "ratings": [
+    {
+      "area": "Multi-site reproducibility",
+      "boundary": "The public studies are genuine multi-site evidence, but they are not new independent replications of every BioIntel module.",
+      "evidence_score": 8.5,
+      "implementation_score": 10.0,
+      "status": "official retrospective multi-site benchmarks integrated"
+    },
+    {
+      "area": "Single-cell depth",
+      "boundary": "The bundled payload is study metadata/QC reference, not a full multi-donor clinical cohort.",
+      "evidence_score": 8.3,
+      "implementation_score": 10.0,
+      "status": "official PBMC3k study manifest and reproducible QC reference integrated"
+    },
+    {
+      "area": "Proteomics depth",
+      "boundary": "Raw spectra remain in official repositories; local files are verified study indices and evidence manifests.",
+      "evidence_score": 8.7,
+      "implementation_score": 10.0,
+      "status": "CPTAC and ProteomeXchange multi-laboratory benchmarks integrated"
+    },
+    {
+      "area": "Prospective wet-lab validation",
+      "boundary": "Completed independent outcomes cannot be created by software and remain absent until real laboratories return signed results.",
+      "evidence_score": 3.0,
+      "implementation_score": 10.0,
+      "status": "site-ready locked/blinded validation workflow"
+    }
+  ],
+  "scientific_boundary": {
+    "completed_prospective_outcomes": "3/10 until independent laboratories return genuine signed outcomes",
+    "implementation_readiness": "10/10 for multi-site evidence handling, single-cell/proteomics reference integration, and locked/blinded prospective-validation workflow",
+    "no_fabricated_outcomes": true,
+    "raw_repository_payload_boundary": "Large raw CEL, RAW/mzML and full single-cell matrices remain in official repositories; local package contains verified study indices, manifests, QC references and download provenance."
+  },
+  "verification": {
+    "clean_release_critical_smoke": "8/8",
+    "database_rows_checked": 107245,
+    "databases_healthy": "22/22",
+    "focused_evidence_tests": "15/15",
+    "foreign_key_issues": 0,
+    "python_files_compiled": "595/595",
+    "ruff_findings": 0,
+    "runtime_timeouts": 0,
+    "streamlit_pages_passed": "91/91",
+    "uncaught_exceptions": 0
+  },
+  "version": "8.2.6"
+}

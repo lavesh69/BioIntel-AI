@@ -1,0 +1,18 @@
+{
+  "classification": "documented_control_qualification",
+  "existing": [
+    "reports/step38/uci_wdbc_real_benchmark.json",
+    "reports/step40_validation_qualification.json",
+    "src/biointel/scientific/validation_depth.py"
+  ],
+  "external_boundary": "Analytical qualification is not independent external DTI or wet-lab validation.",
+  "missing": [],
+  "observed_at": "2026-07-05T07:33:16.095348+00:00",
+  "passed": true,
+  "required": [
+    "reports/step38/uci_wdbc_real_benchmark.json",
+    "reports/step40_validation_qualification.json",
+    "src/biointel/scientific/validation_depth.py"
+  ],
+  "schema": "biointel.step42.scientific_validation.v1"
+}

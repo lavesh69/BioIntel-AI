@@ -1,0 +1,277 @@
+{
+  "blocking": 0,
+  "boundary": "Internal software and package reliability only; external scientific, clinical, regulatory and wet-lab evidence is not manufactured.",
+  "checks": [
+    {
+      "advisory": false,
+      "key": "release_metadata",
+      "message": "/mnt/data/biointel159_work/extract/BioIntel-AI/STEP159_RELEASE.json",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "product_version",
+      "message": "13.2.0",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "current_entry_points",
+      "message": "[]",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "four_part_markers",
+      "message": "[]",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "scientific_contracts",
+      "message": "{\"schema\": \"biointel.step159.module-reliability-summary.v1\", \"scientific_modules\": 80, \"internal_complete\": 80, \"specialist_runtime_complete\": 39, \"references_complete\": 0, \"pages\": 230, \"pages_present\": 230, \"pages_syntax_clean\": 230, \"thin_wrappers\": 69, \"runtime_diagnostics\": 0, \"resources\": {\"total_memory_bytes\": 4294967296, \"available_memory_bytes\": 3276066816, \"process_rss_bytes\": 626757632, \"cpu_count\": 56, \"disk_free_bytes\": 9223372031304597504, \"source\": \"psutil\", \"memory_pressure\": 0.23723125457763672}}",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "registered_screens",
+      "message": "{\"schema\": \"biointel.step159.module-reliability-summary.v1\", \"scientific_modules\": 80, \"internal_complete\": 80, \"specialist_runtime_complete\": 39, \"references_complete\": 0, \"pages\": 230, \"pages_present\": 230, \"pages_syntax_clean\": 230, \"thin_wrappers\": 69, \"runtime_diagnostics\": 0, \"resources\": {\"total_memory_bytes\": 4294967296, \"available_memory_bytes\": 3276066816, \"process_rss_bytes\": 626757632, \"cpu_count\": 56, \"disk_free_bytes\": 9223372031304597504, \"source\": \"psutil\", \"memory_pressure\": 0.23723125457763672}}",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "resource_guard",
+      "message": "{\"total_memory_bytes\": 4294967296, \"available_memory_bytes\": 3276066816, \"process_rss_bytes\": 626757632, \"cpu_count\": 56, \"disk_free_bytes\": 9223372031304597504, \"source\": \"psutil\", \"memory_pressure\": 0.23723125457763672}",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "release_runtime_residue_absent",
+      "message": "[]",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "sqlite_integrity",
+      "message": "38/38",
+      "passed": true
+    }
+  ],
+  "database_results": [
+    {
+      "detail": "integrity=ok; foreign_keys=0",
+      "passed": true,
+      "path": "data/clinical_pharma/clinical_validation.sqlite3"
+    },
+    {
+      "detail": "integrity=ok; foreign_keys=0",
+      "passed": true,
+      "path": "data/discovery_projects.sqlite3"
+    },
+    {
+      "detail": "integrity=ok; foreign_keys=0",
+      "passed": true,
+      "path": "data/lab_analytics.sqlite3"
+    },
+    {
+      "detail": "integrity=ok; foreign_keys=0",
+      "passed": true,
+      "path": "data/reference_assets/reference_assets.sqlite3"
+    },
+    {
+      "detail": "integrity=ok; foreign_keys=0",
+      "passed": true,
+      "path": "reports/analytics.sqlite3"
+    },
+    {
+      "detail": "integrity=ok; foreign_keys=0",
+      "passed": true,
+      "path": "reports/api_security.sqlite3"
+    },
+    {
+      "detail": "integrity=ok; foreign_keys=0",
+      "passed": true,
+      "path": "reports/assets.sqlite3"
+    },
+    {
+      "detail": "integrity=ok; foreign_keys=0",
+      "passed": true,
+      "path": "reports/batch_jobs/batch_prediction_sample_250.sqlite3"
+    },
+    {
+      "detail": "integrity=ok; foreign_keys=0",
+      "passed": true,
+      "path": "reports/biotechnology_project_runs.sqlite3"
+    },
+    {
+      "detail": "integrity=ok; foreign_keys=0",
+      "passed": true,
+      "path": "reports/connected_sources.sqlite3"
+    },
+    {
+      "detail": "integrity=ok; foreign_keys=0",
+      "passed": true,
+      "path": "reports/datasets.sqlite3"
+    },
+    {
+      "detail": "integrity=ok; foreign_keys=0",
+      "passed": true,
+      "path": "reports/document_history.sqlite3"
+    },
+    {
+      "detail": "integrity=ok; foreign_keys=0",
+      "passed": true,
+      "path": "reports/evidence.sqlite3"
+    },
+    {
+      "detail": "integrity=ok; foreign_keys=0",
+      "passed": true,
+      "path": "reports/experiments.sqlite3"
+    },
+    {
+      "detail": "integrity=ok; foreign_keys=0",
+      "passed": true,
+      "path": "reports/feature_cache.sqlite3"
+    },
+    {
+      "detail": "integrity=ok; foreign_keys=0",
+      "passed": true,
+      "path": "reports/internet_downloads.sqlite3"
+    },
+    {
+      "detail": "integrity=ok; foreign_keys=0",
+      "passed": true,
+      "path": "reports/jobs.sqlite3"
+    },
+    {
+      "detail": "integrity=ok; foreign_keys=0",
+      "passed": true,
+      "path": "reports/knowledge.sqlite3"
+    },
+    {
+      "detail": "integrity=ok; foreign_keys=0",
+      "passed": true,
+      "path": "reports/performance.sqlite3"
+    },
+    {
+      "detail": "integrity=ok; foreign_keys=0",
+      "passed": true,
+      "path": "reports/projects.sqlite3"
+    },
+    {
+      "detail": "integrity=ok; foreign_keys=0",
+      "passed": true,
+      "path": "reports/prospective_validation.sqlite3"
+    },
+    {
+      "detail": "integrity=ok; foreign_keys=0",
+      "passed": true,
+      "path": "reports/realworld_evidence.sqlite3"
+    },
+    {
+      "detail": "integrity=ok; foreign_keys=0",
+      "passed": true,
+      "path": "reports/relationships.sqlite3"
+    },
+    {
+      "detail": "integrity=ok; foreign_keys=0",
+      "passed": true,
+      "path": "reports/scientific_evidence.sqlite3"
+    },
+    {
+      "detail": "integrity=ok; foreign_keys=0",
+      "passed": true,
+      "path": "reports/step103_lims.sqlite3"
+    },
+    {
+      "detail": "integrity=ok; foreign_keys=0",
+      "passed": true,
+      "path": "reports/step127_scientific_runs.sqlite3"
+    },
+    {
+      "detail": "integrity=ok; foreign_keys=0",
+      "passed": true,
+      "path": "reports/step95_quality10_self_test/self_test_registry.sqlite3"
+    },
+    {
+      "detail": "integrity=ok; foreign_keys=0",
+      "passed": true,
+      "path": "reports/tenants.sqlite3"
+    },
+    {
+      "detail": "integrity=ok; foreign_keys=0",
+      "passed": true,
+      "path": "reports/validation_evidence.sqlite3"
+    },
+    {
+      "detail": "integrity=ok; foreign_keys=0",
+      "passed": true,
+      "path": "reports/viewer_sync.sqlite3"
+    },
+    {
+      "detail": "integrity=ok; foreign_keys=0",
+      "passed": true,
+      "path": "reports/workflow_automation.sqlite3"
+    },
+    {
+      "detail": "integrity=ok; foreign_keys=0",
+      "passed": true,
+      "path": "workspace/quality10/workflow_runs.sqlite3"
+    },
+    {
+      "detail": "integrity=ok; foreign_keys=0",
+      "passed": true,
+      "path": "workspace/reference_lifecycle/reference_lifecycle.sqlite3"
+    },
+    {
+      "detail": "integrity=ok; foreign_keys=0",
+      "passed": true,
+      "path": "workspace/step104/jobs.sqlite3"
+    },
+    {
+      "detail": "integrity=ok; foreign_keys=0",
+      "passed": true,
+      "path": "workspace/step104/platform.sqlite3"
+    },
+    {
+      "detail": "integrity=ok; foreign_keys=0",
+      "passed": true,
+      "path": "workspace/step130_scientific_intelligence.sqlite3"
+    },
+    {
+      "detail": "integrity=ok; foreign_keys=0",
+      "passed": true,
+      "path": "workspace/visual_workspace.sqlite3"
+    },
+    {
+      "detail": "integrity=ok; foreign_keys=0",
+      "passed": true,
+      "path": "workspace/workflow_runs/workflow_runs.sqlite3"
+    }
+  ],
+  "passed": true,
+  "product_version": "13.2.0",
+  "reliability_summary": {
+    "internal_complete": 80,
+    "pages": 230,
+    "pages_present": 230,
+    "pages_syntax_clean": 230,
+    "references_complete": 0,
+    "resources": {
+      "available_memory_bytes": 3276066816,
+      "cpu_count": 56,
+      "disk_free_bytes": 9223372031304597504,
+      "memory_pressure": 0.23723125457763672,
+      "process_rss_bytes": 626757632,
+      "source": "psutil",
+      "total_memory_bytes": 4294967296
+    },
+    "runtime_diagnostics": 0,
+    "schema": "biointel.step159.module-reliability-summary.v1",
+    "scientific_modules": 80,
+    "specialist_runtime_complete": 39,
+    "thin_wrappers": 69
+  },
+  "schema": "biointel.step159.release-doctor.v1",
+  "step": 159
+}

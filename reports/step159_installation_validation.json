@@ -1,0 +1,54 @@
+{
+  "checks": [
+    {
+      "key": "required_files",
+      "message": "[]",
+      "passed": true
+    },
+    {
+      "key": "release_markers",
+      "message": "[]",
+      "passed": true
+    },
+    {
+      "key": "page_sources",
+      "message": "272/272",
+      "passed": true
+    },
+    {
+      "key": "scientific_contracts",
+      "message": "{\"schema\": \"biointel.step159.module-reliability-summary.v1\", \"scientific_modules\": 80, \"internal_complete\": 80, \"specialist_runtime_complete\": 39, \"references_complete\": 0, \"pages\": 272, \"pages_present\": 272, \"pages_syntax_clean\": 272, \"thin_wrappers\": 16, \"runtime_diagnostics\": 0, \"resources\": {\"total_memory_bytes\": 8589934592, \"available_memory_bytes\": 4294967296, \"process_rss_bytes\": 0, \"cpu_count\": 16, \"disk_free_bytes\": 120106745856, \"source\": \"portable-fallback\", \"memory_pressure\": 0.5}}",
+      "passed": true
+    },
+    {
+      "key": "native_portfolio",
+      "message": "workflows=80; families=49",
+      "passed": true
+    },
+    {
+      "key": "step159_controls",
+      "message": "{\"step159_streaming_full_file_profiler\": true, \"step159_honest_readiness_axes\": true, \"step159_registered_engine_adapters\": 76, \"step159_protected_execution_plans\": 78, \"step159_resource_aware_admission\": true, \"step159_crash_loop_circuit_breaker\": true, \"step159_persistent_redacted_failure_diagnostics\": true}",
+      "passed": true
+    },
+    {
+      "key": "native_demo_execution",
+      "message": "{\"amr_surveillance\": \"review\", \"antibody_biologics\": \"review\", \"autonomous_lab_planner\": \"review\"}",
+      "passed": true
+    },
+    {
+      "key": "release_hygiene",
+      "message": "Skipped in quick mode",
+      "passed": true
+    }
+  ],
+  "failed": 0,
+  "module_statuses": {
+    "amr_surveillance": "review",
+    "antibody_biologics": "review",
+    "autonomous_lab_planner": "review"
+  },
+  "modules_executed": 3,
+  "passed": true,
+  "schema": "biointel.step159.installation-validation.v1",
+  "step": 159
+}

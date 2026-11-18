@@ -1,0 +1,198 @@
+{
+  "app_version": "6.0.0",
+  "databases": {
+    "details": [
+      {
+        "foreign_key_violations": 0,
+        "integrity": "ok",
+        "path": "reports/analytics.sqlite3",
+        "rows": 17690
+      },
+      {
+        "foreign_key_violations": 0,
+        "integrity": "ok",
+        "path": "reports/api_security.sqlite3",
+        "rows": 94
+      },
+      {
+        "foreign_key_violations": 0,
+        "integrity": "ok",
+        "path": "reports/assets.sqlite3",
+        "rows": 20547
+      },
+      {
+        "foreign_key_violations": 0,
+        "integrity": "ok",
+        "path": "reports/biotechnology_project_runs.sqlite3",
+        "rows": 0
+      },
+      {
+        "foreign_key_violations": 0,
+        "integrity": "ok",
+        "path": "reports/connected_sources.sqlite3",
+        "rows": 0
+      },
+      {
+        "foreign_key_violations": 0,
+        "integrity": "ok",
+        "path": "reports/datasets.sqlite3",
+        "rows": 4879
+      },
+      {
+        "foreign_key_violations": 0,
+        "integrity": "ok",
+        "path": "reports/document_history.sqlite3",
+        "rows": 1973
+      },
+      {
+        "foreign_key_violations": 0,
+        "integrity": "ok",
+        "path": "reports/evidence.sqlite3",
+        "rows": 3891
+      },
+      {
+        "foreign_key_violations": 0,
+        "integrity": "ok",
+        "path": "reports/experiments.sqlite3",
+        "rows": 783
+      },
+      {
+        "foreign_key_violations": 0,
+        "integrity": "ok",
+        "path": "reports/feature_cache.sqlite3",
+        "rows": 1293
+      },
+      {
+        "foreign_key_violations": 0,
+        "integrity": "ok",
+        "path": "reports/internet_downloads.sqlite3",
+        "rows": 105
+      },
+      {
+        "foreign_key_violations": 0,
+        "integrity": "ok",
+        "path": "reports/jobs.sqlite3",
+        "rows": 878
+      },
+      {
+        "foreign_key_violations": 0,
+        "integrity": "ok",
+        "path": "reports/knowledge.sqlite3",
+        "rows": 38427
+      },
+      {
+        "foreign_key_violations": 0,
+        "integrity": "ok",
+        "path": "reports/projects.sqlite3",
+        "rows": 688
+      },
+      {
+        "foreign_key_violations": 0,
+        "integrity": "ok",
+        "path": "reports/prospective_validation.sqlite3",
+        "rows": 0
+      },
+      {
+        "foreign_key_violations": 0,
+        "integrity": "ok",
+        "path": "reports/realworld_evidence.sqlite3",
+        "rows": 8
+      },
+      {
+        "foreign_key_violations": 0,
+        "integrity": "ok",
+        "path": "reports/relationships.sqlite3",
+        "rows": 2291
+      },
+      {
+        "foreign_key_violations": 0,
+        "integrity": "ok",
+        "path": "reports/scientific_evidence.sqlite3",
+        "rows": 12903
+      },
+      {
+        "foreign_key_violations": 0,
+        "integrity": "ok",
+        "path": "reports/tenants.sqlite3",
+        "rows": 3
+      },
+      {
+        "foreign_key_violations": 0,
+        "integrity": "ok",
+        "path": "reports/validation_evidence.sqlite3",
+        "rows": 12
+      }
+    ],
+    "foreign_key_violations": 0,
+    "healthy": 20,
+    "rows": 106465,
+    "total": 20
+  },
+  "fonts": {
+    "bundled_font_files": 0,
+    "names": [
+      "Inter",
+      "Aptos",
+      "Segoe UI",
+      "Arial",
+      "Verdana",
+      "Tahoma",
+      "Trebuchet MS",
+      "Georgia",
+      "Times New Roman",
+      "Courier New",
+      "Century Gothic"
+    ],
+    "new": 10,
+    "remote_dependencies": 0,
+    "total": 11
+  },
+  "models": {
+    "checksum_failures": 0,
+    "manifest_entries": 24
+  },
+  "quality": {
+    "appearance_studio_render": "passed",
+    "files_secret_scanned": 1047,
+    "python_compilation": "passed",
+    "ruff_findings": 0,
+    "secret_findings": 0
+  },
+  "release": "BioIntel AI Step 57 Theme & Typography Expansion",
+  "scientific_boundary": "UI personalization does not alter scientific calculations, model outputs, evidence status or research-only boundaries.",
+  "store_verifier": {
+    "external_account_or_signing_actions": 3,
+    "internal_failures": 0
+  },
+  "tests": {
+    "collected": 473,
+    "failed": 0,
+    "focused_step57_passed": 31,
+    "passed": 457,
+    "skipped_environment_or_browser": 16
+  },
+  "themes": {
+    "contrast_failures": [],
+    "names": [
+      "Executive",
+      "Clinical",
+      "Regulatory",
+      "Aurora",
+      "Ocean",
+      "Emerald",
+      "Rose",
+      "Midnight Graphite",
+      "Nordic Frost",
+      "Solarized Lab",
+      "Deep Space",
+      "BioMatrix",
+      "Royal Amethyst",
+      "Ember Forge",
+      "Arctic Glass",
+      "Sakura Research",
+      "Monochrome Pro"
+    ],
+    "new": 10,
+    "total": 17
+  }
+}

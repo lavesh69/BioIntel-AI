@@ -1,0 +1,258 @@
+{
+  "release": "BioIntel AI Step 55 Comprehensive App Upgrade",
+  "application_version": "4.3.1",
+  "tests_collected": 463,
+  "tests_passed": 447,
+  "tests_skipped_environment_gated": 16,
+  "tests_failed": 0,
+  "step55_focused_regression_passed": 11,
+  "ruff_errors": 0,
+  "python_compilation": "passed",
+  "page_scan": {
+    "file_uploaders": 50,
+    "single_upload_preflights": 49,
+    "collection_upload_preflights": 1,
+    "direct_pandas_uploaded_csv_reads": 0,
+    "analysis_run_contexts": 28,
+    "methodology_disclosures": 16
+  },
+  "upload_preflight_coverage": "50/50",
+  "database_count": 20,
+  "healthy_databases": 20,
+  "foreign_key_violations": 0,
+  "database_rows": 106465,
+  "repository_audit": {
+    "schema": "biointel.repository-audit.v1",
+    "passed": true,
+    "checks": {
+      "secrets": {
+        "passed": true,
+        "scanned_files": 915,
+        "finding_count": 0,
+        "findings": []
+      },
+      "workspace_hygiene": {
+        "passed": true,
+        "finding_count": 0,
+        "findings": []
+      },
+      "version_consistency": {
+        "passed": true,
+        "version": "4.3.1",
+        "failures": []
+      },
+      "markdown_links": {
+        "passed": true,
+        "checked_links": 0,
+        "broken_count": 0,
+        "broken": []
+      }
+    },
+    "environment": {
+      "python": "3.13.5",
+      "platform": "posix"
+    }
+  },
+  "source_step54_files": 1910,
+  "source_files_missing": 0,
+  "source_files_modified": 45,
+  "new_files_before_release_manifests": 7,
+  "modified_files": [
+    "pages/14_External_Validation_Drift.py",
+    "pages/16_Batch_Sequence_Analysis.py",
+    "pages/18_Workspace_Backup_Restore.py",
+    "pages/19_System_Diagnostics.py",
+    "pages/1_Sequence_Analyzer.py",
+    "pages/21_Dataset_Registry_Lineage.py",
+    "pages/23_Batch_Prediction_Jobs.py",
+    "pages/28_Project_Portfolio.py",
+    "pages/31_Evidence_Package_Studio.py",
+    "pages/42_Internet_Research_Hub.py",
+    "pages/43_Scientific_Data_Curation.py",
+    "pages/44_Performance_Job_Center.py",
+    "pages/45_Scientific_Release_Gate.py",
+    "pages/46_Real_Evidence_Studio.py",
+    "pages/47_Benchmark_Leakage_Lab.py",
+    "pages/49_Document_Intelligence_Center.py",
+    "pages/4_DTI_Feature_Builder.py",
+    "pages/52_Batch_Document_Processor.py",
+    "pages/55_Demo_Data_Hub.py",
+    "pages/56_FASTQ_Genomics_QC.py",
+    "pages/57_Variant_Annotation_Workbench.py",
+    "pages/58_Primer_CRISPR_Codon_Studio.py",
+    "pages/59_Transcriptomics_Expression_Lab.py",
+    "pages/5_Model_Training.py",
+    "pages/60_Protein_Annotation_Proteomics.py",
+    "pages/61_Structural_Bioinformatics.py",
+    "pages/62_ADMET_Drug_Discovery.py",
+    "pages/63_Pathway_Network_Analysis.py",
+    "pages/64_Wet_Lab_Biotechnology.py",
+    "pages/65_Microbiology_Metagenomics.py",
+    "pages/66_Omics_Integration_Hub.py",
+    "pages/68_Alignment_Phylogeny.py",
+    "pages/69_Scientific_Data_Readiness.py",
+    "pages/6_DTI_Predictor.py",
+    "pages/78_Protein_Interaction_ML.py",
+    "pages/79_Comparative_Pathogen_Genomics.py",
+    "pages/80_Single_Cell_Heterogeneity.py",
+    "pages/81_Cancer_Genomics.py",
+    "pages/82_Metagenomics_Pipeline.py",
+    "pages/8_Data_Quality_Activity.py",
+    "src/biointel/projects/cancer_genomics.py",
+    "src/biointel/projects/metagenomics_pipeline.py",
+    "src/biointel/projects/single_cell.py",
+    "src/biointel/transcriptomics/expression.py",
+    "src/biointel/ui/theme.py"
+  ],
+  "new_files": [
+    "STEP55_COMPREHENSIVE_APP_UPGRADE_REPORT.md",
+    "VERIFY_STEP55_WINDOWS.bat",
+    "reports/step55_local_verification.json",
+    "reports/step55_verification.json",
+    "scripts/verify_step55.py",
+    "src/biointel/ui/workflow.py",
+    "tests/test_step55_comprehensive_app_improvements.py"
+  ],
+  "databases": [
+    {
+      "path": "reports/analytics.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "tables": 5,
+      "rows": 17690
+    },
+    {
+      "path": "reports/api_security.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "tables": 5,
+      "rows": 94
+    },
+    {
+      "path": "reports/assets.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "tables": 11,
+      "rows": 20547
+    },
+    {
+      "path": "reports/biotechnology_project_runs.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "tables": 2,
+      "rows": 0
+    },
+    {
+      "path": "reports/connected_sources.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "tables": 4,
+      "rows": 0
+    },
+    {
+      "path": "reports/datasets.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "tables": 13,
+      "rows": 4879
+    },
+    {
+      "path": "reports/document_history.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "tables": 14,
+      "rows": 1973
+    },
+    {
+      "path": "reports/evidence.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "tables": 10,
+      "rows": 3891
+    },
+    {
+      "path": "reports/experiments.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "tables": 9,
+      "rows": 783
+    },
+    {
+      "path": "reports/feature_cache.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "tables": 2,
+      "rows": 1293
+    },
+    {
+      "path": "reports/internet_downloads.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "tables": 5,
+      "rows": 105
+    },
+    {
+      "path": "reports/jobs.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "tables": 6,
+      "rows": 878
+    },
+    {
+      "path": "reports/knowledge.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "tables": 10,
+      "rows": 38427
+    },
+    {
+      "path": "reports/projects.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "tables": 7,
+      "rows": 688
+    },
+    {
+      "path": "reports/prospective_validation.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "tables": 4,
+      "rows": 0
+    },
+    {
+      "path": "reports/realworld_evidence.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "tables": 6,
+      "rows": 8
+    },
+    {
+      "path": "reports/relationships.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "tables": 4,
+      "rows": 2291
+    },
+    {
+      "path": "reports/scientific_evidence.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "tables": 5,
+      "rows": 12903
+    },
+    {
+      "path": "reports/tenants.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "tables": 4,
+      "rows": 3
+    },
+    {
+      "path": "reports/validation_evidence.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "tables": 8,
+      "rows": 12
+    }
+  ]
+}

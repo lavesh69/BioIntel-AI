@@ -1,0 +1,30 @@
+{
+  "schema": "biointel.step165.validation.v1",
+  "status": "passed",
+  "priority_modules": 3,
+  "software_10of10": 3,
+  "module_runs": [
+    {
+      "module_key": "amr_surveillance",
+      "status": "review",
+      "passed": true,
+      "tables": 24
+    },
+    {
+      "module_key": "protein_ligand_codesign",
+      "status": "review",
+      "passed": true,
+      "tables": 23
+    },
+    {
+      "module_key": "long_read_epigenome",
+      "status": "review",
+      "passed": true,
+      "tables": 19
+    }
+  ],
+  "python_files_compiled": 825,
+  "module_failures": [],
+  "compile_failures": [],
+  "external_evidence_not_inferred": true
+}

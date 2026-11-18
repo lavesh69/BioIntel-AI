@@ -1,0 +1,160 @@
+{
+  "environment": {
+    "captured_at": "2026-07-09T14:52:43.905310+00:00",
+    "cpu_count": 56,
+    "environment_flags": {
+      "BIOINTEL_DATA_HOME": "",
+      "BIOINTEL_OFFLINE": "",
+      "BIOINTEL_TOOLS_HOME": ""
+    },
+    "hostname": "a617ca1737cc",
+    "implementation": "CPython",
+    "machine": "x86_64",
+    "packages": {
+      "biointel-ai": "not-installed",
+      "biopython": "1.86",
+      "fastapi": "0.128.2",
+      "numpy": "2.3.5",
+      "pandas": "2.2.3",
+      "plotly": "6.5.2",
+      "rdkit": "2025.9.4",
+      "scikit-learn": "1.8.0",
+      "scipy": "1.17.0",
+      "streamlit": "not-installed"
+    },
+    "platform": "Linux-4.4.0-x86_64-with-glibc2.41",
+    "processor": "",
+    "python": "3.13.5 (main, May  5 2026, 21:05:52) [GCC 14.2.0]",
+    "python_executable": "/opt/pyvenv/bin/python"
+  },
+  "name": "quality10_self_test",
+  "parameters": {
+    "candidate_limit": 20,
+    "fail_on_quality_gate": false
+  },
+  "quality_assessment": {
+    "blockers": [
+      "Synthetic or demonstration data cannot support scientific release.",
+      "Demonstration/reference input is not release evidence.",
+      "Independent external validation is below the release threshold.",
+      "Prospective validation is below the release threshold.",
+      "Peer-reviewed evidence is below the release threshold.",
+      "Clinical/regulatory evidence is below the release threshold."
+    ],
+    "dimensions": [
+      {
+        "blocker": false,
+        "evidence": "Checksums, schema and parse validation",
+        "key": "input_integrity",
+        "label": "Input integrity",
+        "score": 10.0,
+        "weight": 0.18
+      },
+      {
+        "blocker": false,
+        "evidence": "Versioned workflow and environment manifest",
+        "key": "reproducibility",
+        "label": "Reproducibility",
+        "score": 10.0,
+        "weight": 0.19
+      },
+      {
+        "blocker": false,
+        "evidence": "Dependency-aware step completion",
+        "key": "execution_completion",
+        "label": "Execution completion",
+        "score": 10.0,
+        "weight": 0.2
+      },
+      {
+        "blocker": false,
+        "evidence": "Retries, timeout, logs and recovery",
+        "key": "error_handling",
+        "label": "Error handling",
+        "score": 10.0,
+        "weight": 0.15
+      },
+      {
+        "blocker": false,
+        "evidence": "Unit, integration and package verification",
+        "key": "test_coverage",
+        "label": "Automated verification",
+        "score": 10.0,
+        "weight": 0.13
+      },
+      {
+        "blocker": false,
+        "evidence": "Input/output hashes and immutable audit records",
+        "key": "provenance",
+        "label": "Provenance",
+        "score": 10.0,
+        "weight": 0.15
+      },
+      {
+        "blocker": true,
+        "evidence": "Independent dataset/laboratory result",
+        "key": "external_validation",
+        "label": "Independent external validation",
+        "score": 0.0,
+        "weight": 0.35
+      },
+      {
+        "blocker": true,
+        "evidence": "Pre-registered blinded or prospective outcome",
+        "key": "prospective_validation",
+        "label": "Prospective validation",
+        "score": 0.0,
+        "weight": 0.3
+      },
+      {
+        "blocker": true,
+        "evidence": "External scientific review",
+        "key": "peer_review",
+        "label": "Peer-reviewed evidence",
+        "score": 0.0,
+        "weight": 0.2
+      },
+      {
+        "blocker": true,
+        "evidence": "Authority, accredited laboratory or clinical operating evidence",
+        "key": "clinical_or_regulatory",
+        "label": "Clinical/regulatory evidence",
+        "score": 0.0,
+        "weight": 0.15
+      }
+    ],
+    "implementation_readiness": 10.0,
+    "release_eligible": false,
+    "scientific_evidence_score": 0.0,
+    "warnings": []
+  },
+  "run_id": "quality10_self_test-507195924059",
+  "schema": "biointel.workflow.v3",
+  "steps": [
+    {
+      "block": "Protein design",
+      "condition": "always",
+      "depends_on": "",
+      "enabled": true,
+      "execution_order": 1,
+      "id": "step_01"
+    },
+    {
+      "block": "Quality gate",
+      "condition": "always",
+      "depends_on": "step_01",
+      "enabled": true,
+      "execution_order": 2,
+      "id": "step_02"
+    },
+    {
+      "block": "Generate report",
+      "condition": "always",
+      "depends_on": "step_02",
+      "enabled": true,
+      "execution_order": 3,
+      "id": "step_03"
+    }
+  ],
+  "workflow_sha256": "507195924059e979276be5112896247811acd16438a9e5e7c638ac0cd46db0f0"
+}

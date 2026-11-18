@@ -1,0 +1,81 @@
+module_key,module_title,production_reference_intake,independent_validation_protocol,prospective_or_orthogonal_protocol,domain_expert_review_workflow,formal_release_review_workflow,operating_history_capture,physical_qualification_protocol,framework_score,evidence_complete,real_world_release_eligible
+amr_surveillance,AMR surveillance depth,True,True,True,True,True,True,True,10.0,False,False
+antibody_biologics,Antibody engineering depth,True,True,True,True,True,True,True,10.0,False,False
+autonomous_lab_planner,Laboratory experiment-planning depth,True,True,True,True,True,True,True,10.0,False,False
+background_job_engine,Background execution depth,True,True,True,True,True,True,True,10.0,False,False
+background_jobs_core,Background execution depth,True,True,True,True,True,True,True,10.0,False,False
+benchmark_validation_v2,Benchmarking depth,True,True,True,True,True,True,True,10.0,False,False
+bioimage_microscopy,Bioimage depth,True,True,True,True,True,True,True,10.0,False,False
+biomedical_foundation_model_hub,Foundation-model hub depth,True,True,True,True,True,True,True,10.0,False,False
+bioprocess_fermentation,Bioprocess depth,True,True,True,True,True,True,True,10.0,False,False
+cancer_genomics_core,Cancer genomics depth,True,True,True,True,True,True,True,10.0,False,False
+causal_perturbation,Causal inference depth,True,True,True,True,True,True,True,10.0,False,False
+cell_atlas_mapping,Cell-atlas mapping depth,True,True,True,True,True,True,True,10.0,False,False
+cell_therapy_cart,Cell-therapy and CAR-T depth,True,True,True,True,True,True,True,10.0,False,False
+clinical_biomarker_survival,Clinical biomarker and survival depth,True,True,True,True,True,True,True,10.0,False,False
+clinical_pharma_core,Clinical validation depth,True,True,True,True,True,True,True,10.0,False,False
+clinical_trial_biomarker,Clinical biomarker depth,True,True,True,True,True,True,True,10.0,False,False
+collaboration_review_v2,Scientific review depth,True,True,True,True,True,True,True,10.0,False,False
+cross_module_workspace,Cross-module project depth,True,True,True,True,True,True,True,10.0,False,False
+data_lakehouse_v2,Data lakehouse depth,True,True,True,True,True,True,True,10.0,False,False
+digital_pathology_foundation,Digital pathology foundation-model depth,True,True,True,True,True,True,True,10.0,False,False
+docking_dynamics,Docking and dynamics depth,True,True,True,True,True,True,True,10.0,False,False
+document_intelligence_core,Document intelligence depth,True,True,True,True,True,True,True,10.0,False,False
+enzyme_pathway_design,Enzyme/pathway design depth,True,True,True,True,True,True,True,10.0,False,False
+epigenomics_chromatin,Epigenomics depth,True,True,True,True,True,True,True,10.0,False,False
+epitranscriptomics,Epitranscriptomics depth,True,True,True,True,True,True,True,10.0,False,False
+evidence_citation_engine,Evidence and citation depth,True,True,True,True,True,True,True,10.0,False,False
+explainable_ai_assurance,Model assurance depth,True,True,True,True,True,True,True,10.0,False,False
+federated_biomedical_ai,Federated biomedical AI depth,True,True,True,True,True,True,True,10.0,False,False
+flow_cytometry,Flow-cytometry depth,True,True,True,True,True,True,True,10.0,False,False
+gene_therapy_vector,Gene-therapy vector depth,True,True,True,True,True,True,True,10.0,False,False
+genome_editing_safety,Genome-editing safety depth,True,True,True,True,True,True,True,10.0,False,False
+glycomics_glycoproteomics,Glycomics depth,True,True,True,True,True,True,True,10.0,False,False
+host_pathogen_interaction,Host-pathogen interaction depth,True,True,True,True,True,True,True,10.0,False,False
+immunoinformatics_vaccine,Immunoinformatics depth,True,True,True,True,True,True,True,10.0,False,False
+knowledge_graph_core,Knowledge-graph depth,True,True,True,True,True,True,True,10.0,False,False
+long_read_core,Long-read assembly depth,True,True,True,True,True,True,True,10.0,False,False
+long_read_epigenome,Long-read epigenome depth,True,True,True,True,True,True,True,10.0,False,False
+longitudinal_multiomics,Longitudinal multi-omics depth,True,True,True,True,True,True,True,10.0,False,False
+metabolomics_lipidomics,Metabolomics depth,True,True,True,True,True,True,True,10.0,False,False
+metagenomics_core,Metagenomics execution depth,True,True,True,True,True,True,True,10.0,False,False
+model_registry_v2,Model lifecycle depth,True,True,True,True,True,True,True,10.0,False,False
+multiomics_biomarker_core,Biomarker-discovery depth,True,True,True,True,True,True,True,10.0,False,False
+multiomics_harmonization,Multi-omics harmonization depth,True,True,True,True,True,True,True,10.0,False,False
+offline_copilot_core,Offline copilot depth,True,True,True,True,True,True,True,10.0,False,False
+offline_scientific_copilot_v2,Offline copilot depth,True,True,True,True,True,True,True,10.0,False,False
+one_health_environmental,One Health depth,True,True,True,True,True,True,True,10.0,False,False
+organoid_3d,Organoid analytics depth,True,True,True,True,True,True,True,10.0,False,False
+pangenome_core,Pangenome execution depth,True,True,True,True,True,True,True,10.0,False,False
+pangenome_population_medicine,Pangenome population-medicine depth,True,True,True,True,True,True,True,10.0,False,False
+pathogen_outbreak_core,Outbreak genomics depth,True,True,True,True,True,True,True,10.0,False,False
+pharmacogenomics,Pharmacogenomics depth,True,True,True,True,True,True,True,10.0,False,False
+pharmacovigilance_intelligence,Pharmacovigilance depth,True,True,True,True,True,True,True,10.0,False,False
+phenotypic_screening,Phenotypic screening depth,True,True,True,True,True,True,True,10.0,False,False
+plugin_marketplace_core,Plugin security depth,True,True,True,True,True,True,True,10.0,False,False
+plugin_marketplace_v2,Plugin security depth,True,True,True,True,True,True,True,10.0,False,False
+population_gwas,GWAS depth,True,True,True,True,True,True,True,10.0,False,False
+protein_language_design,Protein design depth,True,True,True,True,True,True,True,10.0,False,False
+protein_ligand_codesign,Protein-ligand co-design depth,True,True,True,True,True,True,True,10.0,False,False
+proteogenomics_neoantigen,Proteogenomics depth,True,True,True,True,True,True,True,10.0,False,False
+provenance_ledger_v2,Provenance depth,True,True,True,True,True,True,True,10.0,False,False
+rare_variant_family,Family genetics depth,True,True,True,True,True,True,True,10.0,False,False
+reference_lifecycle_v2,Reference lifecycle depth,True,True,True,True,True,True,True,10.0,False,False
+rna_isoform_splicing,RNA splicing depth,True,True,True,True,True,True,True,10.0,False,False
+single_cell_core,Single-cell analysis depth,True,True,True,True,True,True,True,10.0,False,False
+single_cell_long_read_isoforms,Single-cell long-read isoform depth,True,True,True,True,True,True,True,10.0,False,False
+single_cell_trajectory,Single-cell trajectory depth,True,True,True,True,True,True,True,10.0,False,False
+spatial_medicine_tme,Spatial medicine and TME depth,True,True,True,True,True,True,True,10.0,False,False
+spatial_omics_pathology,Spatial pathology depth,True,True,True,True,True,True,True,10.0,False,False
+store_readiness_core,Windows product readiness,True,True,True,True,True,True,True,10.0,False,False
+strain_microbiome,Strain-resolved microbiome depth,True,True,True,True,True,True,True,10.0,False,False
+structural_bioinformatics_core,Structural bioinformatics depth,True,True,True,True,True,True,True,10.0,False,False
+structural_variant_repeat,Structural-variant depth,True,True,True,True,True,True,True,10.0,False,False
+synthetic_biology_core,Synthetic-biology depth,True,True,True,True,True,True,True,10.0,False,False
+synthetic_cohort_trial,Synthetic cohort and trial-simulation depth,True,True,True,True,True,True,True,10.0,False,False
+synthetic_data_privacy,Synthetic-data privacy depth,True,True,True,True,True,True,True,10.0,False,False
+unified_report_builder,Scientific reporting depth,True,True,True,True,True,True,True,10.0,False,False
+universal_file_inspector,Universal file-inspection depth,True,True,True,True,True,True,True,10.0,False,False
+virology_evolution,Virology depth,True,True,True,True,True,True,True,10.0,False,False
+workflow_builder_core,Workflow execution depth,True,True,True,True,True,True,True,10.0,False,False
+workflow_builder_v2,Workflow execution depth,True,True,True,True,True,True,True,10.0,False,False

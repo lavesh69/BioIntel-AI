@@ -1,0 +1,17 @@
+{
+  "schema": "biointel.step51.qualification.v1",
+  "status": "passed_with_external_connectivity_boundary",
+  "application_routes": 87,
+  "routes_smoke_passed": 87,
+  "new_modules": 3,
+  "connected_providers": 11,
+  "connected_api_endpoints": 5,
+  "selected_tests_passed": 71,
+  "step51_tests_passed": 8,
+  "database_systems": 19,
+  "healthy_database_systems": 19,
+  "foreign_key_violations": 0,
+  "live_external_probe": "not_completed_due_to_build_environment_dns_resolution_failure",
+  "secret_files_included": false,
+  "scientific_boundary": "provider references and AI interpretation require domain review and independent validation"
+}

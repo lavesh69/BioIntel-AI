@@ -1,0 +1,358 @@
+{
+  "generated_at": "2026-07-06T18:28:41.112811+00:00",
+  "version": "6.8.0",
+  "implementation_ready": true,
+  "internal_failures": 0,
+  "external_actions": 3,
+  "release_size_bytes": 358209633,
+  "checks": [
+    {
+      "name": "Version consistency: pyproject.toml",
+      "status": "pass",
+      "detail": "Expected 6.8.0; found 6.8.0",
+      "category": "internal"
+    },
+    {
+      "name": "Version consistency: src/biointel/__init__.py",
+      "status": "pass",
+      "detail": "Expected 6.8.0; found 6.8.0",
+      "category": "internal"
+    },
+    {
+      "name": "Version consistency: mobile package",
+      "status": "pass",
+      "detail": "Expected 6.8.0; found 6.8.0",
+      "category": "internal"
+    },
+    {
+      "name": "Version consistency: desktop package",
+      "status": "pass",
+      "detail": "Expected 6.8.0; found 6.8.0",
+      "category": "internal"
+    },
+    {
+      "name": "Version consistency: Android",
+      "status": "pass",
+      "detail": "Expected 6.8.0; found 6.8.0",
+      "category": "internal"
+    },
+    {
+      "name": "Version consistency: iOS",
+      "status": "pass",
+      "detail": "Expected 6.8.0; found 6.8.0",
+      "category": "internal"
+    },
+    {
+      "name": "Semantic release version",
+      "status": "pass",
+      "detail": "6.8.0",
+      "category": "internal"
+    },
+    {
+      "name": "Android target SDK",
+      "status": "pass",
+      "detail": "targetSdkVersion=36",
+      "category": "internal"
+    },
+    {
+      "name": "Android compile SDK",
+      "status": "pass",
+      "detail": "compileSdkVersion=36",
+      "category": "internal"
+    },
+    {
+      "name": "Android release shrinking",
+      "status": "pass",
+      "detail": "R8 and resource shrinking enabled",
+      "category": "internal"
+    },
+    {
+      "name": "Android external signing",
+      "status": "pass",
+      "detail": "Release signing is supplied by environment",
+      "category": "internal"
+    },
+    {
+      "name": "Android version name",
+      "status": "pass",
+      "detail": "6.8.0",
+      "category": "internal"
+    },
+    {
+      "name": "Android least-privilege permissions",
+      "status": "pass",
+      "detail": "Permissions=['android.permission.INTERNET']; unexpected=[]",
+      "category": "internal"
+    },
+    {
+      "name": "Android cleartext disabled",
+      "status": "pass",
+      "detail": "HTTPS-only network policy",
+      "category": "internal"
+    },
+    {
+      "name": "Android backups disabled",
+      "status": "pass",
+      "detail": "Sensitive local preferences excluded from OS backup",
+      "category": "internal"
+    },
+    {
+      "name": "Android App Bundle workflow",
+      "status": "pass",
+      "detail": "Signed AAB workflow present",
+      "category": "internal"
+    },
+    {
+      "name": "Google Play signing/account",
+      "status": "external_action",
+      "detail": "Provide the Play Console account and upload keystore secrets; enable Play App Signing before submission.",
+      "category": "external"
+    },
+    {
+      "name": "iOS privacy manifest",
+      "status": "pass",
+      "detail": "PrivacyInfo.xcprivacy present",
+      "category": "internal"
+    },
+    {
+      "name": "iOS privacy manifest embedded",
+      "status": "pass",
+      "detail": "Xcode Resources build phase contains manifest",
+      "category": "internal"
+    },
+    {
+      "name": "iOS version",
+      "status": "pass",
+      "detail": "6.8.0",
+      "category": "internal"
+    },
+    {
+      "name": "iOS deployment target",
+      "status": "pass",
+      "detail": "Minimum iOS 15.0",
+      "category": "internal"
+    },
+    {
+      "name": "iOS encryption declaration",
+      "status": "pass",
+      "detail": "No non-exempt encryption declared",
+      "category": "internal"
+    },
+    {
+      "name": "iOS obsolete armv7 requirement removed",
+      "status": "pass",
+      "detail": "Modern device capability configuration",
+      "category": "internal"
+    },
+    {
+      "name": "iOS IPA workflow",
+      "status": "pass",
+      "detail": "Archive and App Store IPA export scripted",
+      "category": "internal"
+    },
+    {
+      "name": "Apple signing/account",
+      "status": "external_action",
+      "detail": "Provide Apple Developer/App Store Connect access, distribution certificate, provisioning profile and team identifier on a macOS/Xcode runner.",
+      "category": "external"
+    },
+    {
+      "name": "Windows APPX target",
+      "status": "pass",
+      "detail": "Targets=['appx', 'nsis']",
+      "category": "internal"
+    },
+    {
+      "name": "Windows installer target",
+      "status": "pass",
+      "detail": "Targets=['appx', 'nsis']",
+      "category": "internal"
+    },
+    {
+      "name": "Windows version",
+      "status": "pass",
+      "detail": "6.8.0",
+      "category": "internal"
+    },
+    {
+      "name": "Windows external navigation isolation",
+      "status": "pass",
+      "detail": "External URLs are opened outside the privileged renderer",
+      "category": "internal"
+    },
+    {
+      "name": "Windows context isolation",
+      "status": "pass",
+      "detail": "Secure Electron renderer defaults",
+      "category": "internal"
+    },
+    {
+      "name": "Windows local report preservation",
+      "status": "pass",
+      "detail": "User report files are preserved across upgrades",
+      "category": "internal"
+    },
+    {
+      "name": "Windows reproducible backend setup",
+      "status": "pass",
+      "detail": "Python project installed before PyInstaller",
+      "category": "internal"
+    },
+    {
+      "name": "Microsoft Store identity/signing",
+      "status": "external_action",
+      "detail": "Replace Partner Center identity fields and provide a code-signing certificate before APPX submission.",
+      "category": "external"
+    },
+    {
+      "name": "Metadata length: store/metadata/google-play/en-US/title.txt",
+      "status": "pass",
+      "detail": "11/30 characters",
+      "category": "internal"
+    },
+    {
+      "name": "Metadata length: store/metadata/google-play/en-US/short-description.txt",
+      "status": "pass",
+      "detail": "74/80 characters",
+      "category": "internal"
+    },
+    {
+      "name": "Metadata length: store/metadata/google-play/en-US/full-description.txt",
+      "status": "pass",
+      "detail": "1658/4000 characters",
+      "category": "internal"
+    },
+    {
+      "name": "Metadata length: store/metadata/apple/en-US/name.txt",
+      "status": "pass",
+      "detail": "11/30 characters",
+      "category": "internal"
+    },
+    {
+      "name": "Metadata length: store/metadata/apple/en-US/subtitle.txt",
+      "status": "pass",
+      "detail": "29/30 characters",
+      "category": "internal"
+    },
+    {
+      "name": "Metadata length: store/metadata/apple/en-US/promotional-text.txt",
+      "status": "pass",
+      "detail": "148/170 characters",
+      "category": "internal"
+    },
+    {
+      "name": "Metadata length: store/metadata/apple/en-US/keywords.txt",
+      "status": "pass",
+      "detail": "95/100 characters",
+      "category": "internal"
+    },
+    {
+      "name": "Store copy scientific boundary",
+      "status": "pass",
+      "detail": "Forbidden claims=[]",
+      "category": "internal"
+    },
+    {
+      "name": "Apple 1024 icon",
+      "status": "pass",
+      "detail": "1024x1024",
+      "category": "internal"
+    },
+    {
+      "name": "Apple icon no alpha",
+      "status": "pass",
+      "detail": "mode=RGB",
+      "category": "internal"
+    },
+    {
+      "name": "Google Play feature graphic",
+      "status": "pass",
+      "detail": "1024x500",
+      "category": "internal"
+    },
+    {
+      "name": "Google Play screenshots",
+      "status": "pass",
+      "detail": "3 PNG files",
+      "category": "internal"
+    },
+    {
+      "name": "Apple screenshots",
+      "status": "pass",
+      "detail": "3 PNG files",
+      "category": "internal"
+    },
+    {
+      "name": "Microsoft screenshots",
+      "status": "pass",
+      "detail": "3 PNG files",
+      "category": "internal"
+    },
+    {
+      "name": "JSON: store/model-manifest.json",
+      "status": "pass",
+      "detail": "Valid JSON",
+      "category": "internal"
+    },
+    {
+      "name": "Model manifest coverage",
+      "status": "pass",
+      "detail": "manifest=24, joblib=24, mismatches=[]",
+      "category": "internal"
+    },
+    {
+      "name": "SQLite integrity",
+      "status": "pass",
+      "detail": "healthy=22/22; bad=[]",
+      "category": "internal"
+    },
+    {
+      "name": "SQLite foreign keys",
+      "status": "pass",
+      "detail": "violations=0",
+      "category": "internal"
+    },
+    {
+      "name": "Store/legal artifact coverage",
+      "status": "pass",
+      "detail": "missing=[]",
+      "category": "internal"
+    },
+    {
+      "name": "JSON: store/data-safety/google-play-data-safety.json",
+      "status": "pass",
+      "detail": "Valid JSON",
+      "category": "internal"
+    },
+    {
+      "name": "JSON: store/data-safety/apple-app-privacy.json",
+      "status": "pass",
+      "detail": "Valid JSON",
+      "category": "internal"
+    },
+    {
+      "name": "JSON: store/data-safety/permissions-inventory.json",
+      "status": "pass",
+      "detail": "Valid JSON",
+      "category": "internal"
+    },
+    {
+      "name": "Public legal/bootstrap endpoints",
+      "status": "pass",
+      "detail": "Mobile connection bootstrap and legal pages work before API-key authentication",
+      "category": "internal"
+    },
+    {
+      "name": "Production UI authentication",
+      "status": "pass",
+      "detail": "Production Streamlit sign-in gate present",
+      "category": "internal"
+    },
+    {
+      "name": "Release size below 2 GiB",
+      "status": "pass",
+      "detail": "341.62 MiB excluding build caches",
+      "category": "internal"
+    }
+  ]
+}

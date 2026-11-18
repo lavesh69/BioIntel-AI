@@ -1,0 +1,78 @@
+{
+  "schema": "biointel.step132.verification.v1",
+  "version": "13.2.0",
+  "checks": [
+    {
+      "name": "Version",
+      "passed": true,
+      "detail": "13.2.0"
+    },
+    {
+      "name": "Step 132 release",
+      "passed": true,
+      "detail": "release contract"
+    },
+    {
+      "name": "Step 132 config",
+      "passed": true,
+      "detail": "configuration"
+    },
+    {
+      "name": "Central visual studio",
+      "passed": true,
+      "detail": "page 196"
+    },
+    {
+      "name": "Visual catalog",
+      "passed": true,
+      "detail": "visuals=30"
+    },
+    {
+      "name": "Fifteen-module integration",
+      "passed": true,
+      "detail": "modules=15"
+    },
+    {
+      "name": "Navigation",
+      "passed": true,
+      "detail": "catalogue healthy"
+    },
+    {
+      "name": "Thirty visual runtime artifacts",
+      "passed": true,
+      "detail": "errors=0"
+    },
+    {
+      "name": "Curated module visual runtime",
+      "passed": true,
+      "detail": "errors=0"
+    },
+    {
+      "name": "Step 132 persistence",
+      "passed": true,
+      "detail": "{'bookmarks': 1, 'layouts': 1, 'presenter_sessions': 0, 'commands': 0, 'replay_events': 0}"
+    },
+    {
+      "name": "Step 132 database integrity",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "name": "Python syntax",
+      "passed": true,
+      "detail": "files=941"
+    },
+    {
+      "name": "Locked pages",
+      "passed": true,
+      "detail": "5 protected pages byte-identical"
+    }
+  ],
+  "passed": 13,
+  "total": 13,
+  "healthy": true,
+  "python_files": 941,
+  "syntax_failures": [],
+  "visual_errors": [],
+  "module_errors": []
+}

@@ -1,0 +1,537 @@
+[
+  {
+    "module_key":"phenotypic_screening",
+    "module_title":"Phenotypic Screening & High-Content Analysis",
+    "evidence_id":"physical_instrument_qualification",
+    "evidence_title":"Physical imaging instrument qualification",
+    "manifest_passed":true,
+    "data_passed":true,
+    "demo_ready":true,
+    "real_evidence":false,
+    "controlled_release_eligible":false,
+    "record_count":3,
+    "metrics":{
+      "runs":3,
+      "max_field_flatness_pct":6.0,
+      "max_focus_cv_pct":5.8,
+      "max_illumination_cv_pct":5.6,
+      "max_stage_error_um":3.0
+    },
+    "blockers":[
+
+    ],
+    "path":"\/mnt\/data\/biointel182_upgrade\/src\/BioIntel-AI\/UserData\/step182\/demo_evidence\/phenotypic_screening\/physical_instrument_qualification"
+  },
+  {
+    "module_key":"phenotypic_screening",
+    "module_title":"Phenotypic Screening & High-Content Analysis",
+    "evidence_id":"multi_plate_validation",
+    "evidence_title":"Real multi-plate validation",
+    "manifest_passed":true,
+    "data_passed":true,
+    "demo_ready":true,
+    "real_evidence":false,
+    "controlled_release_eligible":false,
+    "record_count":3,
+    "metrics":{
+      "plates":3,
+      "min_z_prime":0.8787878788,
+      "min_replicate_corr":0.9,
+      "max_edge_effect_pct":6.0
+    },
+    "blockers":[
+
+    ],
+    "path":"\/mnt\/data\/biointel182_upgrade\/src\/BioIntel-AI\/UserData\/step182\/demo_evidence\/phenotypic_screening\/multi_plate_validation"
+  },
+  {
+    "module_key":"phenotypic_screening",
+    "module_title":"Phenotypic Screening & High-Content Analysis",
+    "evidence_id":"segmentation_ground_truth",
+    "evidence_title":"Segmentation ground-truth validation",
+    "manifest_passed":true,
+    "data_passed":true,
+    "demo_ready":true,
+    "real_evidence":false,
+    "controlled_release_eligible":false,
+    "record_count":20,
+    "metrics":{
+      "images":20,
+      "mean_dice":0.9,
+      "mean_iou":0.82,
+      "mean_object_f1":0.91
+    },
+    "blockers":[
+
+    ],
+    "path":"\/mnt\/data\/biointel182_upgrade\/src\/BioIntel-AI\/UserData\/step182\/demo_evidence\/phenotypic_screening\/segmentation_ground_truth"
+  },
+  {
+    "module_key":"phenotypic_screening",
+    "module_title":"Phenotypic Screening & High-Content Analysis",
+    "evidence_id":"biological_replicates_external_site",
+    "evidence_title":"Biological replicate and external-site validation",
+    "manifest_passed":true,
+    "data_passed":true,
+    "demo_ready":true,
+    "real_evidence":false,
+    "controlled_release_eligible":false,
+    "record_count":4,
+    "metrics":{
+      "sites":2,
+      "batches":4,
+      "mean_replicate_corr":0.895,
+      "mean_confirmed_hit_rate":0.7875
+    },
+    "blockers":[
+
+    ],
+    "path":"\/mnt\/data\/biointel182_upgrade\/src\/BioIntel-AI\/UserData\/step182\/demo_evidence\/phenotypic_screening\/biological_replicates_external_site"
+  },
+  {
+    "module_key":"phenotypic_screening",
+    "module_title":"Phenotypic Screening & High-Content Analysis",
+    "evidence_id":"orthogonal_assay_confirmation",
+    "evidence_title":"Orthogonal assay confirmation",
+    "manifest_passed":true,
+    "data_passed":true,
+    "demo_ready":true,
+    "real_evidence":false,
+    "controlled_release_eligible":false,
+    "record_count":10,
+    "metrics":{
+      "candidates":10,
+      "effect_correlation":1.0,
+      "confirmed_fraction":0.8
+    },
+    "blockers":[
+
+    ],
+    "path":"\/mnt\/data\/biointel182_upgrade\/src\/BioIntel-AI\/UserData\/step182\/demo_evidence\/phenotypic_screening\/orthogonal_assay_confirmation"
+  },
+  {
+    "module_key":"spatial_omics_pathology",
+    "module_title":"Spatial Omics & Digital Pathology",
+    "evidence_id":"scanner_qualification",
+    "evidence_title":"Real scanner qualification",
+    "manifest_passed":true,
+    "data_passed":true,
+    "demo_ready":true,
+    "real_evidence":false,
+    "controlled_release_eligible":false,
+    "record_count":3,
+    "metrics":{
+      "runs":3,
+      "scanners":2,
+      "max_colour_delta_e":3.0,
+      "max_focus_failure_pct":1.0,
+      "max_tile_artifact_pct":1.0,
+      "max_registration_error_um":6.0
+    },
+    "blockers":[
+
+    ],
+    "path":"\/mnt\/data\/biointel182_upgrade\/src\/BioIntel-AI\/UserData\/step182\/demo_evidence\/spatial_omics_pathology\/scanner_qualification"
+  },
+  {
+    "module_key":"spatial_omics_pathology",
+    "module_title":"Spatial Omics & Digital Pathology",
+    "evidence_id":"stain_site_drift_validation",
+    "evidence_title":"Stain, scanner and site drift validation",
+    "manifest_passed":true,
+    "data_passed":true,
+    "demo_ready":true,
+    "real_evidence":false,
+    "controlled_release_eligible":false,
+    "record_count":4,
+    "metrics":{
+      "sites":2,
+      "scanners":2,
+      "stain_batches":2,
+      "max_embedding_shift":0.12,
+      "max_auc_drop":0.03,
+      "max_calibration_error":0.03
+    },
+    "blockers":[
+
+    ],
+    "path":"\/mnt\/data\/biointel182_upgrade\/src\/BioIntel-AI\/UserData\/step182\/demo_evidence\/spatial_omics_pathology\/stain_site_drift_validation"
+  },
+  {
+    "module_key":"spatial_omics_pathology",
+    "module_title":"Spatial Omics & Digital Pathology",
+    "evidence_id":"patient_external_cohort",
+    "evidence_title":"Patient-level external cohort",
+    "manifest_passed":true,
+    "data_passed":true,
+    "demo_ready":true,
+    "real_evidence":false,
+    "controlled_release_eligible":false,
+    "record_count":30,
+    "metrics":{
+      "patients":30,
+      "sites":2,
+      "roc_auc":1.0,
+      "balanced_accuracy":1.0
+    },
+    "blockers":[
+
+    ],
+    "path":"\/mnt\/data\/biointel182_upgrade\/src\/BioIntel-AI\/UserData\/step182\/demo_evidence\/spatial_omics_pathology\/patient_external_cohort"
+  },
+  {
+    "module_key":"spatial_omics_pathology",
+    "module_title":"Spatial Omics & Digital Pathology",
+    "evidence_id":"pathologist_agreement",
+    "evidence_title":"Pathologist agreement study",
+    "manifest_passed":true,
+    "data_passed":true,
+    "demo_ready":true,
+    "real_evidence":false,
+    "controlled_release_eligible":false,
+    "record_count":30,
+    "metrics":{
+      "cases":30,
+      "consensus_cases":30,
+      "inter_reviewer_kappa":1.0,
+      "model_consensus_kappa":1.0
+    },
+    "blockers":[
+
+    ],
+    "path":"\/mnt\/data\/biointel182_upgrade\/src\/BioIntel-AI\/UserData\/step182\/demo_evidence\/spatial_omics_pathology\/pathologist_agreement"
+  },
+  {
+    "module_key":"spatial_omics_pathology",
+    "module_title":"Spatial Omics & Digital Pathology",
+    "evidence_id":"prospective_clinical_validation",
+    "evidence_title":"Prospective clinical validation",
+    "manifest_passed":true,
+    "data_passed":true,
+    "demo_ready":true,
+    "real_evidence":false,
+    "controlled_release_eligible":false,
+    "record_count":30,
+    "metrics":{
+      "cases":30,
+      "balanced_accuracy":1.0
+    },
+    "blockers":[
+
+    ],
+    "path":"\/mnt\/data\/biointel182_upgrade\/src\/BioIntel-AI\/UserData\/step182\/demo_evidence\/spatial_omics_pathology\/prospective_clinical_validation"
+  },
+  {
+    "module_key":"protein_language_design",
+    "module_title":"Protein Language Model & Generative Design",
+    "evidence_id":"authentic_trained_weights",
+    "evidence_title":"Authentic trained model weights",
+    "manifest_passed":true,
+    "data_passed":true,
+    "demo_ready":true,
+    "real_evidence":false,
+    "controlled_release_eligible":false,
+    "record_count":0,
+    "metrics":{
+      "manifest_only":true
+    },
+    "blockers":[
+
+    ],
+    "path":"\/mnt\/data\/biointel182_upgrade\/src\/BioIntel-AI\/UserData\/step182\/demo_evidence\/protein_language_design\/authentic_trained_weights"
+  },
+  {
+    "module_key":"protein_language_design",
+    "module_title":"Protein Language Model & Generative Design",
+    "evidence_id":"independent_sequence_benchmark",
+    "evidence_title":"Independent sequence benchmark",
+    "manifest_passed":true,
+    "data_passed":true,
+    "demo_ready":true,
+    "real_evidence":false,
+    "controlled_release_eligible":false,
+    "record_count":2,
+    "metrics":{
+      "benchmarks":2,
+      "all_metrics_passed":true,
+      "max_identity_to_train":0.6
+    },
+    "blockers":[
+
+    ],
+    "path":"\/mnt\/data\/biointel182_upgrade\/src\/BioIntel-AI\/UserData\/step182\/demo_evidence\/protein_language_design\/independent_sequence_benchmark"
+  },
+  {
+    "module_key":"protein_language_design",
+    "module_title":"Protein Language Model & Generative Design",
+    "evidence_id":"novelty_verification",
+    "evidence_title":"Novelty and memorisation verification",
+    "manifest_passed":true,
+    "data_passed":true,
+    "demo_ready":true,
+    "real_evidence":false,
+    "controlled_release_eligible":false,
+    "record_count":20,
+    "metrics":{
+      "sequences":20,
+      "max_identity_to_training":0.5,
+      "max_kmer_jaccard":0.4
+    },
+    "blockers":[
+
+    ],
+    "path":"\/mnt\/data\/biointel182_upgrade\/src\/BioIntel-AI\/UserData\/step182\/demo_evidence\/protein_language_design\/novelty_verification"
+  },
+  {
+    "module_key":"protein_language_design",
+    "module_title":"Protein Language Model & Generative Design",
+    "evidence_id":"structure_confirmation",
+    "evidence_title":"Independent structure confirmation",
+    "manifest_passed":true,
+    "data_passed":true,
+    "demo_ready":true,
+    "real_evidence":false,
+    "controlled_release_eligible":false,
+    "record_count":10,
+    "metrics":{
+      "sequences":10,
+      "confidence_pass_fraction":1.0,
+      "independent_or_experimental_confirmations":1
+    },
+    "blockers":[
+
+    ],
+    "path":"\/mnt\/data\/biointel182_upgrade\/src\/BioIntel-AI\/UserData\/step182\/demo_evidence\/protein_language_design\/structure_confirmation"
+  },
+  {
+    "module_key":"protein_language_design",
+    "module_title":"Protein Language Model & Generative Design",
+    "evidence_id":"wet_lab_expression",
+    "evidence_title":"Wet-lab expression and activity evidence",
+    "manifest_passed":true,
+    "data_passed":true,
+    "demo_ready":true,
+    "real_evidence":false,
+    "controlled_release_eligible":false,
+    "record_count":5,
+    "metrics":{
+      "designs":5,
+      "wet_lab_success_fraction":1.0
+    },
+    "blockers":[
+
+    ],
+    "path":"\/mnt\/data\/biointel182_upgrade\/src\/BioIntel-AI\/UserData\/step182\/demo_evidence\/protein_language_design\/wet_lab_expression"
+  },
+  {
+    "module_key":"protein_ligand_codesign",
+    "module_title":"Protein\u2013Ligand Co-Design",
+    "evidence_id":"docking_engine_qualification",
+    "evidence_title":"Docking and structure-engine qualification",
+    "manifest_passed":true,
+    "data_passed":true,
+    "demo_ready":true,
+    "real_evidence":false,
+    "controlled_release_eligible":false,
+    "record_count":20,
+    "metrics":{
+      "complexes":20,
+      "median_pose_rmsd":1.2,
+      "top1_success_fraction":1.0
+    },
+    "blockers":[
+
+    ],
+    "path":"\/mnt\/data\/biointel182_upgrade\/src\/BioIntel-AI\/UserData\/step182\/demo_evidence\/protein_ligand_codesign\/docking_engine_qualification"
+  },
+  {
+    "module_key":"protein_ligand_codesign",
+    "module_title":"Protein\u2013Ligand Co-Design",
+    "evidence_id":"experimental_binding_affinity",
+    "evidence_title":"Experimental binding-affinity validation",
+    "manifest_passed":true,
+    "data_passed":true,
+    "demo_ready":true,
+    "real_evidence":false,
+    "controlled_release_eligible":false,
+    "record_count":20,
+    "metrics":{
+      "measurements":20,
+      "pearson":1.0,
+      "rmse_pkd":0.1
+    },
+    "blockers":[
+
+    ],
+    "path":"\/mnt\/data\/biointel182_upgrade\/src\/BioIntel-AI\/UserData\/step182\/demo_evidence\/protein_ligand_codesign\/experimental_binding_affinity"
+  },
+  {
+    "module_key":"protein_ligand_codesign",
+    "module_title":"Protein\u2013Ligand Co-Design",
+    "evidence_id":"selectivity_panel",
+    "evidence_title":"Experimental selectivity panel",
+    "manifest_passed":true,
+    "data_passed":true,
+    "demo_ready":true,
+    "real_evidence":false,
+    "controlled_release_eligible":false,
+    "record_count":10,
+    "metrics":{
+      "compounds":10,
+      "min_panel_size":8,
+      "selectivity_pass_fraction":0.8
+    },
+    "blockers":[
+
+    ],
+    "path":"\/mnt\/data\/biointel182_upgrade\/src\/BioIntel-AI\/UserData\/step182\/demo_evidence\/protein_ligand_codesign\/selectivity_panel"
+  },
+  {
+    "module_key":"protein_ligand_codesign",
+    "module_title":"Protein\u2013Ligand Co-Design",
+    "evidence_id":"admet_confirmation",
+    "evidence_title":"Experimental ADMET confirmation",
+    "manifest_passed":true,
+    "data_passed":true,
+    "demo_ready":true,
+    "real_evidence":false,
+    "controlled_release_eligible":false,
+    "record_count":10,
+    "metrics":{
+      "compounds":10,
+      "all_gate_pass_fraction":1.0
+    },
+    "blockers":[
+
+    ],
+    "path":"\/mnt\/data\/biointel182_upgrade\/src\/BioIntel-AI\/UserData\/step182\/demo_evidence\/protein_ligand_codesign\/admet_confirmation"
+  },
+  {
+    "module_key":"protein_ligand_codesign",
+    "module_title":"Protein\u2013Ligand Co-Design",
+    "evidence_id":"prospective_assay_validation",
+    "evidence_title":"Prospective assay validation",
+    "manifest_passed":true,
+    "data_passed":true,
+    "demo_ready":true,
+    "real_evidence":false,
+    "controlled_release_eligible":false,
+    "record_count":20,
+    "metrics":{
+      "compounds":20,
+      "precision":1.0,
+      "recall":1.0
+    },
+    "blockers":[
+
+    ],
+    "path":"\/mnt\/data\/biointel182_upgrade\/src\/BioIntel-AI\/UserData\/step182\/demo_evidence\/protein_ligand_codesign\/prospective_assay_validation"
+  },
+  {
+    "module_key":"strain_microbiome",
+    "module_title":"Strain-Resolved Microbiome",
+    "evidence_id":"licensed_reference_database",
+    "evidence_title":"Licensed strain\/reference database",
+    "manifest_passed":true,
+    "data_passed":true,
+    "demo_ready":true,
+    "real_evidence":false,
+    "controlled_release_eligible":false,
+    "record_count":0,
+    "metrics":{
+      "manifest_only":true
+    },
+    "blockers":[
+
+    ],
+    "path":"\/mnt\/data\/biointel182_upgrade\/src\/BioIntel-AI\/UserData\/step182\/demo_evidence\/strain_microbiome\/licensed_reference_database"
+  },
+  {
+    "module_key":"strain_microbiome",
+    "module_title":"Strain-Resolved Microbiome",
+    "evidence_id":"real_mock_community",
+    "evidence_title":"Real mock-community benchmark",
+    "manifest_passed":true,
+    "data_passed":true,
+    "demo_ready":true,
+    "real_evidence":false,
+    "controlled_release_eligible":false,
+    "record_count":12,
+    "metrics":{
+      "records":12,
+      "precision":1.0,
+      "recall":1.0,
+      "abundance_correlation":1.0
+    },
+    "blockers":[
+
+    ],
+    "path":"\/mnt\/data\/biointel182_upgrade\/src\/BioIntel-AI\/UserData\/step182\/demo_evidence\/strain_microbiome\/real_mock_community"
+  },
+  {
+    "module_key":"strain_microbiome",
+    "module_title":"Strain-Resolved Microbiome",
+    "evidence_id":"contamination_controls",
+    "evidence_title":"Contamination-control validation",
+    "manifest_passed":true,
+    "data_passed":true,
+    "demo_ready":true,
+    "real_evidence":false,
+    "controlled_release_eligible":false,
+    "record_count":5,
+    "metrics":{
+      "negative_controls":5,
+      "critical_unflagged":0,
+      "max_contaminant_fraction":0.02
+    },
+    "blockers":[
+
+    ],
+    "path":"\/mnt\/data\/biointel182_upgrade\/src\/BioIntel-AI\/UserData\/step182\/demo_evidence\/strain_microbiome\/contamination_controls"
+  },
+  {
+    "module_key":"strain_microbiome",
+    "module_title":"Strain-Resolved Microbiome",
+    "evidence_id":"strain_ground_truth",
+    "evidence_title":"Strain-level ground-truth validation",
+    "manifest_passed":true,
+    "data_passed":true,
+    "demo_ready":true,
+    "real_evidence":false,
+    "controlled_release_eligible":false,
+    "record_count":10,
+    "metrics":{
+      "records":10,
+      "precision":1.0,
+      "recall":1.0,
+      "all_called_quality_pass":true,
+      "ambiguous_calls":0
+    },
+    "blockers":[
+
+    ],
+    "path":"\/mnt\/data\/biointel182_upgrade\/src\/BioIntel-AI\/UserData\/step182\/demo_evidence\/strain_microbiome\/strain_ground_truth"
+  },
+  {
+    "module_key":"strain_microbiome",
+    "module_title":"Strain-Resolved Microbiome",
+    "evidence_id":"independent_site_validation",
+    "evidence_title":"Independent sequencing-site validation",
+    "manifest_passed":true,
+    "data_passed":true,
+    "demo_ready":true,
+    "real_evidence":false,
+    "controlled_release_eligible":false,
+    "record_count":4,
+    "metrics":{
+      "sites":2,
+      "min_site_precision":0.91,
+      "min_site_recall":0.905,
+      "min_site_abundance_corr":0.915
+    },
+    "blockers":[
+
+    ],
+    "path":"\/mnt\/data\/biointel182_upgrade\/src\/BioIntel-AI\/UserData\/step182\/demo_evidence\/strain_microbiome\/independent_site_validation"
+  }
+]

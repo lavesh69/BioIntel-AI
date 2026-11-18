@@ -1,0 +1,256 @@
+{
+  "schema": "biointel.step96.production-safety.qualification.v1",
+  "status": "qualified",
+  "version": "9.6.0",
+  "built_at_utc": "2026-07-09T15:35:59.443060+00:00",
+  "implementation_readiness": 10.0,
+  "scope": "Software-controlled production safety, user-data protection, scientific asset lifecycle, external model package intake, instrument-file normalization and service connectivity probes.",
+  "verification": {
+    "selected_regression_and_upgrade_tests": {
+      "passed": 48,
+      "failed": 0,
+      "command": "pytest Step90, Step92, Step93, Step94, Step95 and Step96 focused suites"
+    },
+    "step96_page_smoke": {
+      "passed": 4,
+      "failed": 0,
+      "method": "isolated Streamlit API stub import smoke"
+    },
+    "python_compilation": "passed",
+    "dependency_lock": {
+      "valid": true,
+      "packages": 32,
+      "sha256": "b609c6dd48d814c6c9f5f1afa46892060d1d0ae1587034b826b8272328a385a0"
+    },
+    "offline_wheelhouse": {
+      "valid": true,
+      "wheels": 102,
+      "total_size_bytes": 248266900
+    },
+    "databases": {
+      "count": 28,
+      "healthy": 28,
+      "foreign_key_violations": 0,
+      "rows_checked": 107472
+    },
+    "advanced_tools_registered": 44,
+    "new_step96_pages": 4
+  },
+  "implemented_controls": [
+    "Transactional staged installation and activation journal",
+    "Complete persistent-file backup with SHA-256 manifest",
+    "Exact UserData rollback and first-install failure recovery",
+    "Application code separated from data/reports/workspace/exports/projects through Windows junctions",
+    "Official Python 3.11.9 Windows installer retrieval when Python is missing, with Windows Authenticode signer validation",
+    "Reference asset resume, expected SHA-256, licence acknowledgement, safe extraction limits and event registry",
+    "External model package qualification without model deserialization or execution",
+    "RDML, QuantStudio, Bio-Rad CFX, Roche LightCycler, SoftMax Pro and BioTek Gen5 normalization with source-column preservation",
+    "Credential-redacted PostgreSQL, Redis and MinIO/S3 connectivity probes",
+    "Version synchronization across Python package, desktop source and store manifests"
+  ],
+  "external_boundaries": [
+    "No publisher code-signing certificate was available, so BAT/PowerShell and source packages are not signed EXE/MSIX releases.",
+    "The transactional installer was statically reviewed and tested at Python/package level; a full physical Windows 10/11 execution was not possible in this Linux build environment.",
+    "Large reference databases, licensed tools and GPU model weights are managed downloads and are not all embedded in the four archives.",
+    "Independent wet-lab validation, peer review, regulatory approval, paying customers and long-term production history are external evidence and were not fabricated.",
+    "PostgreSQL/Redis/object-storage probes are implemented, but complete migration of every local SQLite repository remains deployment work."
+  ],
+  "database_details": [
+    {
+      "path": "data/clinical_pharma/clinical_validation.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "table_count": 13,
+      "row_count": 0
+    },
+    {
+      "path": "data/discovery_projects.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "table_count": 7,
+      "row_count": 0
+    },
+    {
+      "path": "data/lab_analytics.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "table_count": 3,
+      "row_count": 0
+    },
+    {
+      "path": "reports/analytics.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "table_count": 5,
+      "row_count": 17690
+    },
+    {
+      "path": "reports/api_security.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "table_count": 5,
+      "row_count": 1013
+    },
+    {
+      "path": "reports/assets.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "table_count": 11,
+      "row_count": 20547
+    },
+    {
+      "path": "reports/batch_jobs/batch_prediction_sample_250.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "table_count": 0,
+      "row_count": 0
+    },
+    {
+      "path": "reports/biotechnology_project_runs.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "table_count": 2,
+      "row_count": 0
+    },
+    {
+      "path": "reports/connected_sources.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "table_count": 4,
+      "row_count": 0
+    },
+    {
+      "path": "reports/datasets.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "table_count": 13,
+      "row_count": 4935
+    },
+    {
+      "path": "reports/document_history.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "table_count": 14,
+      "row_count": 1973
+    },
+    {
+      "path": "reports/evidence.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "table_count": 10,
+      "row_count": 3891
+    },
+    {
+      "path": "reports/experiments.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "table_count": 9,
+      "row_count": 783
+    },
+    {
+      "path": "reports/feature_cache.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "table_count": 2,
+      "row_count": 1293
+    },
+    {
+      "path": "reports/internet_downloads.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "table_count": 5,
+      "row_count": 105
+    },
+    {
+      "path": "reports/jobs.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "table_count": 6,
+      "row_count": 890
+    },
+    {
+      "path": "reports/knowledge.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "table_count": 10,
+      "row_count": 38427
+    },
+    {
+      "path": "reports/projects.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "table_count": 7,
+      "row_count": 688
+    },
+    {
+      "path": "reports/prospective_validation.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "table_count": 4,
+      "row_count": 0
+    },
+    {
+      "path": "reports/realworld_evidence.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "table_count": 6,
+      "row_count": 10
+    },
+    {
+      "path": "reports/relationships.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "table_count": 4,
+      "row_count": 2291
+    },
+    {
+      "path": "reports/scientific_evidence.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "table_count": 5,
+      "row_count": 12903
+    },
+    {
+      "path": "reports/step95_quality10_self_test/self_test_registry.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "table_count": 4,
+      "row_count": 14
+    },
+    {
+      "path": "reports/tenants.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "table_count": 4,
+      "row_count": 3
+    },
+    {
+      "path": "reports/validation_evidence.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "table_count": 8,
+      "row_count": 12
+    },
+    {
+      "path": "reports/workflow_automation.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "table_count": 4,
+      "row_count": 4
+    },
+    {
+      "path": "workspace/quality10/workflow_runs.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "table_count": 4,
+      "row_count": 0
+    },
+    {
+      "path": "workspace/workflow_runs/workflow_runs.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "table_count": 4,
+      "row_count": 0
+    }
+  ]
+}

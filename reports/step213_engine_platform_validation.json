@@ -1,0 +1,200 @@
+{
+  "checks": [
+    {
+      "detail": 76,
+      "name": "engine_catalog_76",
+      "passed": true
+    },
+    {
+      "detail": 12,
+      "name": "adapters_12",
+      "passed": true
+    },
+    {
+      "detail": [
+        {
+          "claim_boundary": "Pack is installable only after every included artifact, licence and smoke test is qualified.",
+          "contains_model_weights": false,
+          "engine_count": 46,
+          "label": "Bioinformatics Engine Pack",
+          "p1_count": 13,
+          "p2_count": 12,
+          "pack_key": "bioinformatics",
+          "qualified_engine_count": 0
+        },
+        {
+          "claim_boundary": "Pack is installable only after every included artifact, licence and smoke test is qualified.",
+          "contains_model_weights": false,
+          "engine_count": 8,
+          "label": "Discovery Engine Pack",
+          "p1_count": 2,
+          "p2_count": 2,
+          "pack_key": "discovery",
+          "qualified_engine_count": 0
+        },
+        {
+          "claim_boundary": "Pack is installable only after every included artifact, licence and smoke test is qualified.",
+          "contains_model_weights": false,
+          "engine_count": 8,
+          "label": "Lab Imaging & Proteomics Pack",
+          "p1_count": 1,
+          "p2_count": 3,
+          "pack_key": "lab-imaging-proteomics",
+          "qualified_engine_count": 0
+        },
+        {
+          "claim_boundary": "Pack is installable only after every included artifact, licence and smoke test is qualified.",
+          "contains_model_weights": true,
+          "engine_count": 5,
+          "label": "AI/GPU Model Pack",
+          "p1_count": 0,
+          "p2_count": 1,
+          "pack_key": "ai-gpu-models",
+          "qualified_engine_count": 0
+        },
+        {
+          "claim_boundary": "Pack is installable only after every included artifact, licence and smoke test is qualified.",
+          "contains_model_weights": false,
+          "engine_count": 9,
+          "label": "Specialist Extension Pack",
+          "p1_count": 4,
+          "p2_count": 3,
+          "pack_key": "specialist-extensions",
+          "qualified_engine_count": 0
+        }
+      ],
+      "name": "pack_groups_5",
+      "passed": true
+    },
+    {
+      "detail": 6,
+      "name": "production_services_6",
+      "passed": true
+    },
+    {
+      "detail": 0,
+      "name": "fail_closed_manifest",
+      "passed": true
+    },
+    {
+      "detail": {
+        "path": "/tmp/biointel-step213-pwzw87ue/engine_platform_v196/engine-platform.sqlite3",
+        "sqlite_integrity": "ok",
+        "status": "passed",
+        "tables": {
+          "engine_state": 0,
+          "imported_packs": 0,
+          "operations": 0,
+          "qualification_evidence": 0
+        }
+      },
+      "name": "state_db_integrity",
+      "passed": true
+    },
+    {
+      "detail": {
+        "advanced_adapters": 12,
+        "available_or_registered": 0,
+        "claim_boundary": "This health report describes software readiness only. It is not clinical, regulatory or wet-lab validation.",
+        "configured_services": 0,
+        "database": {
+          "path": "/tmp/biointel-step213-pwzw87ue/engine_platform_v196/engine-platform.sqlite3",
+          "sqlite_integrity": "ok",
+          "status": "passed",
+          "tables": {
+            "engine_state": 0,
+            "imported_packs": 0,
+            "operations": 0,
+            "qualification_evidence": 0
+          }
+        },
+        "generated_at_utc": "2026-07-18T12:06:40+00:00",
+        "gpu_hint": false,
+        "production_services": 6,
+        "qualified_engines": 0,
+        "ready_adapters": 2,
+        "registered_engines": 76,
+        "schema": "biointel.engine-platform.health.v1",
+        "wsl_detected": false
+      },
+      "name": "health_counts",
+      "passed": true
+    },
+    {
+      "detail": {
+        "backend": "manual-authorized-provider",
+        "blockers": [
+          "User-specific provider authorisation is required; automatic redistribution is blocked.",
+          "Reference/database release, checksum, licence and disk estimate are required.",
+          "WSL2 availability and Linux runtime qualification are required on Windows.",
+          "Exact version, artifact SHA-256, licence SHA-256 and target-machine smoke evidence are incomplete."
+        ],
+        "claim_boundary": "An installation plan is not execution or scientific qualification. BioIntel records readiness only after target-machine evidence passes.",
+        "commands": [],
+        "engine": "netmhcpan",
+        "estimated_reference_size": "small-to-large-dataset-dependent",
+        "estimated_tool_size": "small-to-medium",
+        "label": "NetMHCpan",
+        "pack_key": "discovery",
+        "prerequisites": [
+          "WSL2 with an approved Linux distribution",
+          "Qualified reference/database pack: NetMHCpan data files"
+        ],
+        "references": [
+          "NetMHCpan data files"
+        ],
+        "state": "requires-user-authorization"
+      },
+      "name": "restricted_fail_closed",
+      "passed": true
+    },
+    {
+      "detail": {
+        "backend": "offline-model-pack",
+        "blockers": [
+          "Model-weight licence, checksum and hardware qualification are required.",
+          "Reference/database release, checksum, licence and disk estimate are required.",
+          "WSL2 availability and Linux runtime qualification are required on Windows.",
+          "Exact version, artifact SHA-256, licence SHA-256 and target-machine smoke evidence are incomplete."
+        ],
+        "claim_boundary": "An installation plan is not execution or scientific qualification. BioIntel records readiness only after target-machine evidence passes.",
+        "commands": [],
+        "engine": "rfdiffusion",
+        "estimated_reference_size": "very-large-model-or-database-pack",
+        "estimated_tool_size": "large-or-model-dependent",
+        "label": "RFdiffusion",
+        "pack_key": "ai-gpu-models",
+        "prerequisites": [
+          "WSL2 with an approved Linux distribution",
+          "Qualified reference/database pack: Model weights",
+          "GPU is optional; CPU fallback depends on the selected engine release"
+        ],
+        "references": [
+          "Model weights"
+        ],
+        "state": "requires-model-pack"
+      },
+      "name": "model_fail_closed",
+      "passed": true
+    },
+    {
+      "detail": {
+        "compiled": 12,
+        "errors": []
+      },
+      "name": "compile",
+      "passed": true
+    },
+    {
+      "detail": {
+        "bad": [],
+        "checked": 17
+      },
+      "name": "protected_hashes",
+      "passed": true
+    }
+  ],
+  "claim_boundary": "Linux validation cannot replace native Windows/WSL2 engine execution evidence.",
+  "passed": true,
+  "schema": "biointel.step213.engine-platform-validation.v1"
+}

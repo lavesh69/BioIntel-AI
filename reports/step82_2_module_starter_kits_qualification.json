@@ -1,0 +1,44 @@
+{
+  "version": "8.2.2",
+  "feature": "Local Module Data Starter Kits",
+  "supported_modules": 47,
+  "starter_library_files": 340,
+  "starter_zip_count": 47,
+  "starter_zip_crc_failures": 0,
+  "network_required": false,
+  "streamlit_entry_points": {
+    "passed": 91,
+    "failed": 0
+  },
+  "starter_kit_ui": {
+    "passed": 47,
+    "failed": 0
+  },
+  "focused_tests": {
+    "passed": 25,
+    "failed": 0
+  },
+  "python_compilation": {
+    "files": 586,
+    "failed": 0
+  },
+  "ruff_findings": 0,
+  "scientific_boundary": "All bundled examples are synthetic/demo data and are not clinical, regulatory or experimental evidence.",
+  "artifacts": [
+    "data/module_starter_kits/catalog.json",
+    "OPEN_MODULE_STARTER_KITS_WINDOWS.bat",
+    "src/biointel/ui/starter_kits.py",
+    "reports/step82_2_all_page_streamlit_sweep.json",
+    "reports/step82_2_starter_kit_streamlit_sweep.json"
+  ],
+  "databases": {
+    "healthy": 22,
+    "total": 22,
+    "rows_checked": 107189,
+    "foreign_key_violations": 0
+  },
+  "clean_build_smoke_pages": {
+    "passed": 7,
+    "failed": 0
+  }
+}

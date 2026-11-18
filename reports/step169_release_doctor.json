@@ -1,0 +1,39 @@
+{
+  "schema": "biointel.step169.release-doctor.v1",
+  "status": "passed",
+  "checks": [
+    {
+      "check": "Step 169 all-module validation",
+      "passed": true,
+      "detail": "{\n  \"schema\": \"biointel.step169.validation.v1\",\n  \"status\": \"passed\",\n  \"modules_checked\": 80,\n  \"modules_passed\": 80,\n  \"failures\": [],\n  \"matrix_rows\": 80,\n  \"metadata_flags_cannot_unlock_release\": true,\n  \"external_claims_inferred\": false\n}\n"
+    },
+    {
+      "check": "Version consistency",
+      "passed": true,
+      "detail": "VERSION=14.5.0; python=14.5.0; desktop=14.5.0; mobile=14.5.0"
+    },
+    {
+      "check": "Final module contracts",
+      "passed": true,
+      "detail": "80/80"
+    },
+    {
+      "check": "Verified release registry",
+      "passed": true,
+      "detail": "integrity=True; modules=80/80"
+    },
+    {
+      "check": "Final consolidation page",
+      "passed": true,
+      "detail": "pages/238_Final_Consolidation_10of10_Center.py"
+    },
+    {
+      "check": "Latest Windows verifier route",
+      "passed": true,
+      "detail": "VERIFY_LATEST_WINDOWS.bat"
+    }
+  ],
+  "external_claims_not_inferred": true,
+  "metadata_flags_cannot_unlock_release": true,
+  "fake_customer_clinical_wetlab_or_regulatory_history_created": false
+}

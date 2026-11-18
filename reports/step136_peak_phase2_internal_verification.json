@@ -1,0 +1,13 @@
+{
+  "build": "BioIntel AI Step 136 Peak Phase 2",
+  "scope": ["1-5", "8-37"],
+  "version": "13.2.0",
+  "tagline": "Biology, Engineered into Intelligence.",
+  "founder_credit": "Created & Developed by Lavesh Dobriyal",
+  "workflow_stages": ["Input", "Validation", "Configuration", "Run", "Results", "Interpretation", "Evidence", "Export"],
+  "targeted_tests": {"passed": 87, "failed": 0},
+  "python_syntax": {"files": 972, "passed": 972, "failed": 0},
+  "databases": {"count": 40, "healthy": 40, "rows_inspected": 108493, "foreign_key_issues": 0},
+  "browser_runtime": {"harness_included": true, "executed": false, "reason": "Streamlit unavailable in build environment"},
+  "truthfulness_boundary": "No fabricated external validation, clinical approval, regulatory approval or wet-lab evidence."
+}

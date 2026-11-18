@@ -1,0 +1,198 @@
+{
+  "checks": [
+    {
+      "key": "step150_validator_present",
+      "message": "/mnt/data/biointel153_work/BioIntel-AI/scripts/step150_validate_installation.py",
+      "passed": true
+    },
+    {
+      "key": "step150_base_validation",
+      "message": "ted_sha256\": \"e4f3827e4c7bf03bea9e6712b3f0ada1a8e7218ad177d817ffdb5627466b0d8b\",\n      \"actual_sha256\": \"e4f3827e4c7bf03bea9e6712b3f0ada1a8e7218ad177d817ffdb5627466b0d8b\"\n    },\n    {\n      \"key\": \"critical:src/biointel/utils/atomic_io.py\",\n      \"passed\": true,\n      \"expected_sha256\": \"7ef667d88d20b85cb1b51003550536f237b5a66385d1d87a6d565f5dd6c1f527\",\n      \"actual_sha256\": \"7ef667d88d20b85cb1b51003550536f237b5a66385d1d87a6d565f5dd6c1f527\"\n    },\n    {\n      \"key\": \"critical:src/biointel/utils/path_safety.py\",\n      \"passed\": true,\n      \"expected_sha256\": \"accf79b91d72b96f78279502a7fc6225d164797ec0cc7c5f21d79f82f6833607\",\n      \"actual_sha256\": \"accf79b91d72b96f78279502a7fc6225d164797ec0cc7c5f21d79f82f6833607\"\n    },\n    {\n      \"key\": \"launcher_required:--root \\\".\\\"\",\n      \"passed\": true\n    },\n    {\n      \"key\": \"launcher_required:Step 150\",\n      \"passed\": true\n    },\n    {\n      \"key\": \"launcher_required:step150_validate_installation.py\",\n      \"passed\": true\n    },\n    {\n      \"key\": \"launcher_forbidden_absent:--root \\\"%~dp0\\\"\",\n      \"passed\": true\n    },\n    {\n      \"key\": \"launcher_forbidden_absent:title BioIntel AI Step 145\",\n      \"passed\": true\n    },\n    {\n      \"key\": \"preflight_v150_contract\",\n      \"passed\": true\n    }\n  ],\n  \"failures\": [],\n  \"passed\": true,\n  \"report_path\": \"/mnt/data/biointel153_work/BioIntel-AI/reports/step150_installation_validation.json\"\n}\nREPORT_PATH=/mnt/data/biointel153_work/BioIntel-AI/reports/step150_installation_validation.json\n",
+      "passed": true
+    },
+    {
+      "key": "step153_part_1",
+      "message": "/mnt/data/biointel153_work/BioIntel-AI/.release_parts/step153_part1.ok",
+      "passed": true
+    },
+    {
+      "key": "step153_part_2",
+      "message": "/mnt/data/biointel153_work/BioIntel-AI/.release_parts/step153_part2.ok",
+      "passed": true
+    },
+    {
+      "key": "step153_part_3",
+      "message": "/mnt/data/biointel153_work/BioIntel-AI/.release_parts/step153_part3.ok",
+      "passed": true
+    },
+    {
+      "key": "step153_part_4",
+      "message": "/mnt/data/biointel153_work/BioIntel-AI/.release_parts/step153_part4.ok",
+      "passed": true
+    },
+    {
+      "key": "critical_manifest_present",
+      "message": "/mnt/data/biointel153_work/BioIntel-AI/release/step153_critical_hashes.json",
+      "passed": true
+    },
+    {
+      "key": "critical_file:INSTALL_WINDOWS.bat",
+      "message": "expected=987d0c05284ad4d4b6402b71024a0292226eab43ceb439050fc7f022b42bb66c actual=987d0c05284ad4d4b6402b71024a0292226eab43ceb439050fc7f022b42bb66c",
+      "passed": true
+    },
+    {
+      "key": "critical_file:RUN_BOTH_WINDOWS.bat",
+      "message": "expected=e9583323d1e10d644f075bd542b2d4f3a4bcd5c457c231bdf7c62f66db106cb4 actual=e9583323d1e10d644f075bd542b2d4f3a4bcd5c457c231bdf7c62f66db106cb4",
+      "passed": true
+    },
+    {
+      "key": "critical_file:STEP153_RELEASE.json",
+      "message": "expected=87c316ec4dc4e073da65997321e36d941d0ee63bac700f544207ea1d35e58ab9 actual=87c316ec4dc4e073da65997321e36d941d0ee63bac700f544207ea1d35e58ab9",
+      "passed": true
+    },
+    {
+      "key": "critical_file:VERIFY_STEP153_WINDOWS.bat",
+      "message": "expected=87793ad54541a65f1c79e8bb2d87a766c835005f09c0cc5d4faf35a5138629f2 actual=87793ad54541a65f1c79e8bb2d87a766c835005f09c0cc5d4faf35a5138629f2",
+      "passed": true
+    },
+    {
+      "key": "critical_file:pages/227_Scientific_Readiness_Command_Center.py",
+      "message": "expected=5ce26c748058888846bcb399d6843f8306cbb763bbf210ab03e2821f8d998aad actual=5ce26c748058888846bcb399d6843f8306cbb763bbf210ab03e2821f8d998aad",
+      "passed": true
+    },
+    {
+      "key": "critical_file:release/STEP153_DOMAIN_SCIENTIFIC_CORE_REPORT.md",
+      "message": "expected=8bb6c74167f93d887280f4a39c2ed2dfa8b765efb384fb77991a2593c4303e88 actual=8bb6c74167f93d887280f4a39c2ed2dfa8b765efb384fb77991a2593c4303e88",
+      "passed": true
+    },
+    {
+      "key": "critical_file:release/STEP153_FULL_TEST_REPORT.txt",
+      "message": "expected=df666964017131e513eeeb7aba4765aaefd4076e32f3d8c0cfbfd3f43449534d actual=df666964017131e513eeeb7aba4765aaefd4076e32f3d8c0cfbfd3f43449534d",
+      "passed": true
+    },
+    {
+      "key": "critical_file:release/step153_change_manifest.json",
+      "message": "expected=aa04075bae73c08c67187351e6c0c42650ab80d2d41b3a00f44dc9fa0f03c1bd actual=aa04075bae73c08c67187351e6c0c42650ab80d2d41b3a00f44dc9fa0f03c1bd",
+      "passed": true
+    },
+    {
+      "key": "critical_file:scripts/step150_validate_installation.py",
+      "message": "expected=e4f3827e4c7bf03bea9e6712b3f0ada1a8e7218ad177d817ffdb5627466b0d8b actual=e4f3827e4c7bf03bea9e6712b3f0ada1a8e7218ad177d817ffdb5627466b0d8b",
+      "passed": true
+    },
+    {
+      "key": "critical_file:scripts/step153_validate_installation.py",
+      "message": "expected=e6d4ca82c6993bbfc0454c9a9f680685c2dc9e09f458fae946c201fff491091e actual=e6d4ca82c6993bbfc0454c9a9f680685c2dc9e09f458fae946c201fff491091e",
+      "passed": true
+    },
+    {
+      "key": "critical_file:src/biointel/scientific_depth/__init__.py",
+      "message": "expected=038d2e189c97316d8dcf6e0604e9e569f4d51524cd7a31ba30fde77b3e71c749 actual=038d2e189c97316d8dcf6e0604e9e569f4d51524cd7a31ba30fde77b3e71c749",
+      "passed": true
+    },
+    {
+      "key": "critical_file:src/biointel/scientific_depth/native_advanced_workflows.py",
+      "message": "expected=8bd50722a89f593f533fd0cc99d9cd007255d9b021dd2e8f9efc2fac733b585e actual=8bd50722a89f593f533fd0cc99d9cd007255d9b021dd2e8f9efc2fac733b585e",
+      "passed": true
+    },
+    {
+      "key": "critical_file:src/biointel/scientific_depth/native_biodesign_workflows.py",
+      "message": "expected=903fc370f06c46bf16c02813a749029d609851a3096f54c7f48cbb0ab6ce115d actual=903fc370f06c46bf16c02813a749029d609851a3096f54c7f48cbb0ab6ce115d",
+      "passed": true
+    },
+    {
+      "key": "critical_file:src/biointel/scientific_depth/native_omics_workflows.py",
+      "message": "expected=7436341b637bfa6d99278d43a03921d5e56b7cbc7fdea7ba61d23140a5a30eb5 actual=7436341b637bfa6d99278d43a03921d5e56b7cbc7fdea7ba61d23140a5a30eb5",
+      "passed": true
+    },
+    {
+      "key": "critical_file:src/biointel/scientific_depth/native_specialist_workflows.py",
+      "message": "expected=7dba887fb402a98dd5dc7282101900a202fc4da74449703636fed44bf19eb1e0 actual=7dba887fb402a98dd5dc7282101900a202fc4da74449703636fed44bf19eb1e0",
+      "passed": true
+    },
+    {
+      "key": "critical_file:src/biointel/scientific_depth/native_workflows.py",
+      "message": "expected=677a286cd94c83ba1dfbd798e7928e0219200b0610e1417a819c440892e16275 actual=677a286cd94c83ba1dfbd798e7928e0219200b0610e1417a819c440892e16275",
+      "passed": true
+    },
+    {
+      "key": "critical_file:src/biointel/scientific_depth/portfolio.py",
+      "message": "expected=7555238a062297fc9e8416254b802b7ce1d8af8838c8d2db7d8ef674713aa430 actual=7555238a062297fc9e8416254b802b7ce1d8af8838c8d2db7d8ef674713aa430",
+      "passed": true
+    },
+    {
+      "key": "critical_file:src/biointel/scientific_depth/profiles.py",
+      "message": "expected=4b88ccde13b2e706bf8c2946a55dbc5820d2a998bfea58c4be8dd58402d38dc7 actual=4b88ccde13b2e706bf8c2946a55dbc5820d2a998bfea58c4be8dd58402d38dc7",
+      "passed": true
+    },
+    {
+      "key": "critical_file:src/biointel/scientific_depth/renderer.py",
+      "message": "expected=f7d6d14e89bce76fbe4004970444bca14a5b2b099eea87ba4570673885c36b38 actual=f7d6d14e89bce76fbe4004970444bca14a5b2b099eea87ba4570673885c36b38",
+      "passed": true
+    },
+    {
+      "key": "critical_file:src/biointel/scientific_depth/toolchain_readiness.py",
+      "message": "expected=012be877e55dfa8679825697cbc986f9d6de5718f4b487fe5f46c51c7e291dcb actual=012be877e55dfa8679825697cbc986f9d6de5718f4b487fe5f46c51c7e291dcb",
+      "passed": true
+    },
+    {
+      "key": "critical_file:tests/test_step153_domain_scientific_core.py",
+      "message": "expected=a028dec8e899e7762dc8df65f660728517c67dafe184e5106799c5dba6884c4f actual=a028dec8e899e7762dc8df65f660728517c67dafe184e5106799c5dba6884c4f",
+      "passed": true
+    },
+    {
+      "key": "release_metadata",
+      "message": "/mnt/data/biointel153_work/BioIntel-AI/STEP153_RELEASE.json",
+      "passed": true
+    },
+    {
+      "key": "release_step",
+      "message": "153",
+      "passed": true
+    },
+    {
+      "key": "regression_failures_zero",
+      "message": "{'collected': 1290, 'failed': 0, 'passed': 1263, 'skipped': 27}",
+      "passed": true
+    },
+    {
+      "key": "native_workflows_complete",
+      "message": "80",
+      "passed": true
+    },
+    {
+      "key": "domain_families_expanded",
+      "message": "36",
+      "passed": true
+    },
+    {
+      "key": "native_orchestrator",
+      "message": "src/biointel/scientific_depth/native_workflows.py",
+      "passed": true
+    },
+    {
+      "key": "native_specialist",
+      "message": "src/biointel/scientific_depth/native_specialist_workflows.py",
+      "passed": true
+    },
+    {
+      "key": "native_biodesign",
+      "message": "src/biointel/scientific_depth/native_biodesign_workflows.py",
+      "passed": true
+    },
+    {
+      "key": "toolchain_readiness",
+      "message": "src/biointel/scientific_depth/toolchain_readiness.py",
+      "passed": true
+    },
+    {
+      "key": "native_tests",
+      "message": "tests/test_step153_domain_scientific_core.py",
+      "passed": true
+    }
+  ],
+  "failures": [],
+  "passed": true,
+  "root": "/mnt/data/biointel153_work/BioIntel-AI",
+  "schema": "biointel.step153.validation-report.v1"
+}

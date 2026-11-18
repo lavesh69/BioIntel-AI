@@ -1,0 +1,92 @@
+{
+  "schema": "biointel.neuro-cns.step200-verification.v1",
+  "generated_at_utc": "2026-07-16T21:44:20+00:00",
+  "passed": true,
+  "checks": [
+    {
+      "name": "critical Step200 files",
+      "passed": true,
+      "detail": "complete"
+    },
+    {
+      "name": "five Step200 part markers",
+      "passed": true,
+      "detail": "complete"
+    },
+    {
+      "name": "feature registry",
+      "passed": true,
+      "detail": {
+        "schema": "biointel.neuro-cns.max-potential-features.v1",
+        "step": 200,
+        "base_neuro_modules": 23,
+        "step199_laboratories": 9,
+        "step200_control_systems": 9,
+        "advanced_systems_total": 18,
+        "step200_features": [
+          {
+            "number": 1,
+            "key": "evidence_knowledge_graph",
+            "title": "Neuro Evidence Knowledge Graph"
+          },
+          {
+            "number": 2,
+            "key": "benchmark_validation_center",
+            "title": "Benchmark Validation Center"
+          },
+          {
+            "number": 3,
+            "key": "applicability_domain_inspector",
+            "title": "Applicability Domain Inspector"
+          },
+          {
+            "number": 4,
+            "key": "uncertainty_sensitivity_lab",
+            "title": "Uncertainty & Sensitivity Lab"
+          },
+          {
+            "number": 5,
+            "key": "resource_qualification_manager",
+            "title": "Scientific Resource Qualification Manager"
+          },
+          {
+            "number": 6,
+            "key": "contradiction_resolution_board",
+            "title": "Cross-Module Contradiction Resolver"
+          },
+          {
+            "number": 7,
+            "key": "batch_pipeline_orchestrator",
+            "title": "Resilient Batch Pipeline Orchestrator"
+          },
+          {
+            "number": 8,
+            "key": "failure_recovery_center",
+            "title": "Failure Mode & Recovery Center"
+          },
+          {
+            "number": 9,
+            "key": "maximum_potential_release_dashboard",
+            "title": "Maximum-Potential Release Dashboard"
+          }
+        ],
+        "software_release_status": "hardened",
+        "controlled_scientific_release_eligible": false
+      }
+    },
+    {
+      "name": "Python imports",
+      "passed": true,
+      "detail": {
+        "version": "200.0",
+        "max_features": 9
+      }
+    },
+    {
+      "name": "focused Neuro test suite",
+      "passed": true,
+      "detail": ".................................................................        [100%]\n65 passed in 16.39s\n\n"
+    }
+  ],
+  "native_windows_execution": "requires execution on the target Windows machine"
+}

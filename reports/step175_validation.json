@@ -1,0 +1,91 @@
+{
+  "schema": "biointel.step175.validation.v1",
+  "status": "passed",
+  "version": "14.7.0",
+  "checks": [
+    {
+      "name": "version",
+      "passed": true,
+      "detail": "14.7.0"
+    },
+    {
+      "name": "engine_catalog",
+      "passed": true,
+      "detail": "53/53"
+    },
+    {
+      "name": "reference_catalog",
+      "passed": true,
+      "detail": "26/26"
+    },
+    {
+      "name": "environment_groups",
+      "passed": true,
+      "detail": "12"
+    },
+    {
+      "name": "target_profiles",
+      "passed": true,
+      "detail": "3"
+    },
+    {
+      "name": "qualification_matrix",
+      "passed": true,
+      "detail": "79"
+    },
+    {
+      "name": "software_framework",
+      "passed": true,
+      "detail": "79/79"
+    },
+    {
+      "name": "fail_closed",
+      "passed": true,
+      "detail": "target + artifact required"
+    },
+    {
+      "name": "assets",
+      "passed": true,
+      "detail": "190"
+    },
+    {
+      "name": "registry_integrity",
+      "passed": true,
+      "detail": "{\"schema\": \"biointel.step175.registry-status.v1\", \"database_integrity\": \"ok\", \"foreign_key_violations\": 0, \"audit_chain_valid\": true, \"target_hosts_registered\": 0, \"target_hosts_qualified\": 0, \"install_sessions\": 0, \"completed_install_sessions\": 0, \"engines_registered\": 0, \"engines_qualified\": 0, \"references_registered\": 0, \"references_qualified\": 0, \"licences_registered\": 17, \"licences_accepted\": 0, \"step170_registry\": {\"schema\": \"biointel.step170.registry-status.v1\", \"database_integrity\": \"ok\", \"foreign_key_violations\": 0, \"engines_registered\": 0, \"engines_qualified\": 0, \"references_registered\": 0, \"references_qualified\": 0, \"licences_registered\": 17, \"licences_accepted\": 0}}"
+    },
+    {
+      "name": "file:RUN_STEP175_TARGET_ENVIRONMENT_WINDOWS.bat",
+      "passed": true,
+      "detail": "RUN_STEP175_TARGET_ENVIRONMENT_WINDOWS.bat"
+    },
+    {
+      "name": "file:VERIFY_STEP175_WINDOWS.bat",
+      "passed": true,
+      "detail": "VERIFY_STEP175_WINDOWS.bat"
+    },
+    {
+      "name": "file:RUN_STEP175_RELEASE_DOCTOR_WINDOWS.bat",
+      "passed": true,
+      "detail": "RUN_STEP175_RELEASE_DOCTOR_WINDOWS.bat"
+    },
+    {
+      "name": "file:BUILD_STEP175_ENVIRONMENT_ASSETS_WINDOWS.bat",
+      "passed": true,
+      "detail": "BUILD_STEP175_ENVIRONMENT_ASSETS_WINDOWS.bat"
+    },
+    {
+      "name": "file:scripts/windows/step175_target_environment.ps1",
+      "passed": true,
+      "detail": "scripts/windows/step175_target_environment.ps1"
+    },
+    {
+      "name": "file:scripts/linux/step175_execute_wsl.sh",
+      "passed": true,
+      "detail": "scripts/linux/step175_execute_wsl.sh"
+    }
+  ],
+  "engines": 53,
+  "references": 26,
+  "software_framework_score": 10.0,
+  "external_installation_fabricated": false
+}

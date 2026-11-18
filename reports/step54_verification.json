@@ -1,0 +1,160 @@
+{
+  "release": "BioIntel AI Step 54 Remaining Functional Gaps Fixed",
+  "application_version": "4.3.1",
+  "tests_collected": 452,
+  "tests_passed": 436,
+  "tests_skipped_environment_gated": 16,
+  "tests_failed": 0,
+  "step54_focused_regression_passed": 8,
+  "ruff_errors": 0,
+  "python_compilation": "passed",
+  "database_count": 20,
+  "healthy_databases": 20,
+  "foreign_key_violations": 0,
+  "databases": [
+    {
+      "path": "reports/analytics.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "tables": 5,
+      "rows": 17690
+    },
+    {
+      "path": "reports/api_security.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "tables": 5,
+      "rows": 94
+    },
+    {
+      "path": "reports/assets.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "tables": 11,
+      "rows": 20547
+    },
+    {
+      "path": "reports/biotechnology_project_runs.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "tables": 2,
+      "rows": 0
+    },
+    {
+      "path": "reports/connected_sources.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "tables": 4,
+      "rows": 0
+    },
+    {
+      "path": "reports/datasets.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "tables": 13,
+      "rows": 4879
+    },
+    {
+      "path": "reports/document_history.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "tables": 14,
+      "rows": 1973
+    },
+    {
+      "path": "reports/evidence.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "tables": 10,
+      "rows": 3891
+    },
+    {
+      "path": "reports/experiments.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "tables": 9,
+      "rows": 783
+    },
+    {
+      "path": "reports/feature_cache.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "tables": 2,
+      "rows": 1293
+    },
+    {
+      "path": "reports/internet_downloads.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "tables": 5,
+      "rows": 105
+    },
+    {
+      "path": "reports/jobs.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "tables": 6,
+      "rows": 878
+    },
+    {
+      "path": "reports/knowledge.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "tables": 10,
+      "rows": 38427
+    },
+    {
+      "path": "reports/projects.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "tables": 7,
+      "rows": 688
+    },
+    {
+      "path": "reports/prospective_validation.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "tables": 4,
+      "rows": 0
+    },
+    {
+      "path": "reports/realworld_evidence.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "tables": 6,
+      "rows": 8
+    },
+    {
+      "path": "reports/relationships.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "tables": 4,
+      "rows": 2291
+    },
+    {
+      "path": "reports/scientific_evidence.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "tables": 5,
+      "rows": 12903
+    },
+    {
+      "path": "reports/tenants.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "tables": 4,
+      "rows": 3
+    },
+    {
+      "path": "reports/validation_evidence.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "tables": 8,
+      "rows": 12
+    }
+  ],
+  "scientific_boundary": "External laboratory, clinical, regulatory, publication, customer, and long-duration operating evidence is not fabricated.",
+  "release_repository_files": 1910,
+  "runtime_cache_artifacts_in_release": 0,
+  "sqlite_wal_shm_files_in_release": 0
+}

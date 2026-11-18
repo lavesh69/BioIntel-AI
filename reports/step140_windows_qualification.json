@@ -1,0 +1,80 @@
+{
+  "schema": "biointel.step140.windows-qualification.v1",
+  "generated_at_utc": "2026-07-12T16:10:10.621392+00:00",
+  "host": {
+    "platform": "Linux-4.4.0-x86_64-with-glibc2.41",
+    "python": "3.13.5",
+    "machine": "x86_64"
+  },
+  "checks": [
+    {
+      "name": "Operating system",
+      "passed": false,
+      "detail": "Linux-4.4.0-x86_64-with-glibc2.41",
+      "environment_gated": true
+    },
+    {
+      "name": "Python architecture",
+      "passed": true,
+      "detail": "3.13.5 \u00b7 64bit",
+      "environment_gated": false
+    },
+    {
+      "name": "Python version",
+      "passed": true,
+      "detail": "3.13.5",
+      "environment_gated": false
+    },
+    {
+      "name": "Writable UserData",
+      "passed": true,
+      "detail": "/mnt/data/step139_work/UserData",
+      "environment_gated": false
+    },
+    {
+      "name": "Free disk",
+      "passed": true,
+      "detail": "8589934582.52 GB free",
+      "environment_gated": false
+    },
+    {
+      "name": "Spaces/non-English path",
+      "passed": true,
+      "detail": "Unicode workspace write/read passed",
+      "environment_gated": false
+    },
+    {
+      "name": "SQLite WAL/read-write",
+      "passed": true,
+      "detail": "SQLite local write and integrity check passed",
+      "environment_gated": false
+    },
+    {
+      "name": "Step 140 focused tests",
+      "passed": true,
+      "detail": ".................                                                        [100%]\n17 passed in 7.38s",
+      "environment_gated": false
+    },
+    {
+      "name": "Python compilation",
+      "passed": true,
+      "detail": "Passed",
+      "environment_gated": false
+    },
+    {
+      "name": "Display scaling detection",
+      "passed": false,
+      "detail": "Display scaling query requires Windows",
+      "environment_gated": true
+    },
+    {
+      "name": "Minimum RAM profile",
+      "passed": true,
+      "detail": "4.00 GB physical RAM; 8 GB or more is recommended for large workflows",
+      "environment_gated": false
+    }
+  ],
+  "passed": true,
+  "blockers": [],
+  "boundary": "Physical Windows qualification covers this machine only. External scientific tools, licensed databases and every possible hardware configuration require separate qualification."
+}

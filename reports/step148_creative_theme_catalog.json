@@ -1,0 +1,633 @@
+{
+  "schema": "biointel.step148.creative-theme-catalog.v1",
+  "product_version": "13.2.0",
+  "themes_before": 49,
+  "themes_after": 55,
+  "fonts_preserved": 11,
+  "themes": [
+    {
+      "name": "Solar Helix",
+      "description": "Luminous yellow helix energy on deep carbon surfaces for bold scientific dashboards.",
+      "dark_palette": {
+        "primary": "#FFD60A",
+        "secondary": "#FFB000",
+        "accent": "#22D3EE",
+        "background_start": "#0D0B02",
+        "background_mid": "#241C03",
+        "background_end": "#050400",
+        "text": "#FFFBEA",
+        "muted": "#CFC49A"
+      },
+      "light_palette": {
+        "background": "#FFFBE8",
+        "background_soft": "#FFF2B8",
+        "surface": "rgba(255,255,252,.97)",
+        "surface_strong": "#FFFFFF",
+        "sidebar_start": "#FFFDF4",
+        "sidebar_end": "#FFF5C9",
+        "text": "#342A00",
+        "muted": "#756A42",
+        "border": "rgba(176,133,0,.24)"
+      },
+      "experience": {
+        "title": "Solar Helix",
+        "archetype": "Solar kinetic helix",
+        "audience": "Bold scientific presentations",
+        "summary": "Radiant yellow energy bands, carbon surfaces and cyan telemetry for striking research dashboards.",
+        "max_width": "1522px",
+        "sidebar_width": "280px",
+        "hero_radius": "28px 6px 28px 6px",
+        "card_radius": "18px 5px 18px 5px",
+        "control_radius": "12px 4px",
+        "chip_radius": "999px",
+        "border_width": "1px",
+        "card_padding": "1.12rem",
+        "grid_gap": ".78rem",
+        "blur": "8px",
+        "shadow": "0 24px 66px rgba(14,10,0,.46)",
+        "hover_shadow": "0 32px 86px rgba(255,214,10,.20)",
+        "heading_tracking": "-.041em",
+        "heading_transform": "none",
+        "pattern_css": "repeating-linear-gradient(118deg,transparent 0 52px,rgba(255,214,10,.045) 53px 54px),radial-gradient(circle at 88% 10%,rgba(255,214,10,.16),transparent 24%)",
+        "surface_css": "linear-gradient(145deg,color-mix(in srgb,var(--bio-primary) 8%,var(--bio-surface-strong)),color-mix(in srgb,var(--bio-surface) 94%,black))",
+        "hero_css": "linear-gradient(116deg,color-mix(in srgb,var(--bio-primary) 27%,#151000),color-mix(in srgb,var(--bio-secondary) 16%,var(--bio-surface-strong)) 58%,color-mix(in srgb,var(--bio-accent) 9%,var(--bio-surface-strong)))",
+        "button_css": "linear-gradient(100deg,var(--bio-primary),var(--bio-secondary))",
+        "nav_active_css": "linear-gradient(90deg,var(--bio-primary) 0 5px,color-mix(in srgb,var(--bio-primary) 19%,transparent) 5px)",
+        "extra_css": ".bio-hero::after{content:'SOLAR // ACTIVE';position:absolute;right:1.1rem;bottom:.7rem;color:var(--bio-primary);font-size:.58rem;letter-spacing:.16em}.bio-card:nth-child(3n+1){border-top:2px solid color-mix(in srgb,var(--bio-primary) 52%,transparent)!important}"
+      },
+      "metadata": {
+        "category": "Bold",
+        "best_for": [
+          "Executive dashboards",
+          "Presentation screens",
+          "High-energy monitoring"
+        ],
+        "performance": "Balanced",
+        "recommended_fonts": [
+          "Century Gothic",
+          "Inter",
+          "Segoe UI"
+        ],
+        "layout_mode": "solar"
+      },
+      "chart_profile": {
+        "grid_dash": "dash",
+        "grid_alpha": 0.126,
+        "axis_width": 1,
+        "line_width": 2.66,
+        "marker_symbol": "triangle-up",
+        "marker_size": 9,
+        "legend_orientation": "h",
+        "legend_y": 1.311,
+        "hover_border": "#D6A900",
+        "plot_alpha": 0.022
+      },
+      "health": {
+        "dark": {
+          "theme": "Solar Helix",
+          "accessibility": 100,
+          "performance": 92,
+          "readability": 100,
+          "scientific_clarity": 84,
+          "print_compatibility": 80,
+          "overall": 93,
+          "body_contrast": 18.99,
+          "muted_contrast": 11.27,
+          "issues": []
+        },
+        "light": {
+          "theme": "Solar Helix",
+          "accessibility": 100,
+          "performance": 92,
+          "readability": 100,
+          "scientific_clarity": 84,
+          "print_compatibility": 84,
+          "overall": 94,
+          "body_contrast": 13.69,
+          "muted_contrast": 5.19,
+          "issues": []
+        }
+      }
+    },
+    {
+      "name": "Black Diamond",
+      "description": "True-black faceted luxury interface with platinum typography and ice-blue signals.",
+      "dark_palette": {
+        "primary": "#F8FAFC",
+        "secondary": "#A7B0BE",
+        "accent": "#38BDF8",
+        "background_start": "#000000",
+        "background_mid": "#08090B",
+        "background_end": "#000000",
+        "text": "#FFFFFF",
+        "muted": "#AEB6C2"
+      },
+      "light_palette": {
+        "background": "#F4F5F7",
+        "background_soft": "#E5E8EC",
+        "surface": "rgba(255,255,255,.98)",
+        "surface_strong": "#FFFFFF",
+        "sidebar_start": "#FAFBFC",
+        "sidebar_end": "#E9EDF1",
+        "text": "#0A0B0D",
+        "muted": "#5C626C",
+        "border": "rgba(0,0,0,.32)"
+      },
+      "experience": {
+        "title": "Black Diamond",
+        "archetype": "Faceted black diamond",
+        "audience": "Luxury low-light research",
+        "summary": "True-black faceted panels, platinum edges and restrained ice-blue scientific signals.",
+        "max_width": "1488px",
+        "sidebar_width": "286px",
+        "hero_radius": "2px 26px 2px 26px",
+        "card_radius": "2px 18px 2px 18px",
+        "control_radius": "2px 10px 2px 10px",
+        "chip_radius": "2px",
+        "border_width": "1px",
+        "card_padding": "1.08rem",
+        "grid_gap": ".72rem",
+        "blur": "3px",
+        "shadow": "0 22px 0 rgba(0,0,0,.46),0 30px 82px rgba(0,0,0,.58)",
+        "hover_shadow": "0 28px 0 rgba(0,0,0,.55),0 40px 100px rgba(56,189,248,.14)",
+        "heading_tracking": ".006em",
+        "heading_transform": "uppercase",
+        "pattern_css": "linear-gradient(135deg,rgba(255,255,255,.026) 0 1px,transparent 1px 50%),linear-gradient(45deg,rgba(56,189,248,.02) 0 1px,transparent 1px 50%)",
+        "surface_css": "linear-gradient(135deg,#07080a,color-mix(in srgb,var(--bio-surface-strong) 96%,#171a1f))",
+        "hero_css": "linear-gradient(128deg,#020203 0%,#1b1e24 46%,#050607 70%,color-mix(in srgb,var(--bio-accent) 8%,#020203))",
+        "button_css": "linear-gradient(90deg,#F8FAFC,#9CA3AF)",
+        "nav_active_css": "linear-gradient(90deg,#F8FAFC 0 3px,rgba(248,250,252,.10) 3px)",
+        "extra_css": ".bio-hero,.bio-card,.bio-kpi,.bio-db-card{clip-path:polygon(0 0,calc(100% - 18px) 0,100% 18px,100% 100%,18px 100%,0 calc(100% - 18px))}.bio-gradient-text{background:none!important;color:#fff!important}.bio-hero::after{content:'\u25c6';position:absolute;right:1.2rem;bottom:.55rem;color:var(--bio-accent);font-size:1.8rem;opacity:.34}"
+      },
+      "metadata": {
+        "category": "Luxury",
+        "best_for": [
+          "Low-light analysis",
+          "Executive review",
+          "Molecular modelling"
+        ],
+        "performance": "Fast",
+        "recommended_fonts": [
+          "Aptos",
+          "Segoe UI",
+          "Arial"
+        ],
+        "layout_mode": "faceted"
+      },
+      "chart_profile": {
+        "grid_dash": "solid",
+        "grid_alpha": 0.224,
+        "axis_width": 2,
+        "line_width": 2.58,
+        "marker_symbol": "diamond-open",
+        "marker_size": 8,
+        "legend_orientation": "v",
+        "legend_y": 1.081,
+        "hover_border": "#F8FAFC",
+        "plot_alpha": 0.046
+      },
+      "health": {
+        "dark": {
+          "theme": "Black Diamond",
+          "accessibility": 100,
+          "performance": 100,
+          "readability": 100,
+          "scientific_clarity": 84,
+          "print_compatibility": 80,
+          "overall": 95,
+          "body_contrast": 21.0,
+          "muted_contrast": 10.27,
+          "issues": []
+        },
+        "light": {
+          "theme": "Black Diamond",
+          "accessibility": 100,
+          "performance": 100,
+          "readability": 100,
+          "scientific_clarity": 84,
+          "print_compatibility": 84,
+          "overall": 95,
+          "body_contrast": 18.05,
+          "muted_contrast": 5.63,
+          "issues": []
+        }
+      }
+    },
+    {
+      "name": "Crimson Genome",
+      "description": "High-impact crimson genomic interface with pulse geometry and warm evidence gold.",
+      "dark_palette": {
+        "primary": "#EF233C",
+        "secondary": "#FF4D6D",
+        "accent": "#FFB703",
+        "background_start": "#140205",
+        "background_mid": "#31070D",
+        "background_end": "#070001",
+        "text": "#FFF5F6",
+        "muted": "#D8A8AE"
+      },
+      "light_palette": {
+        "background": "#FFF4F5",
+        "background_soft": "#FCE2E6",
+        "surface": "rgba(255,253,253,.97)",
+        "surface_strong": "#FFFFFF",
+        "sidebar_start": "#FFF9FA",
+        "sidebar_end": "#FDE8EB",
+        "text": "#4B111A",
+        "muted": "#84616A",
+        "border": "rgba(190,18,60,.22)"
+      },
+      "experience": {
+        "title": "Crimson Genome",
+        "archetype": "Crimson genomic pulse",
+        "audience": "Critical scientific review",
+        "summary": "Crimson pulse tracks, asymmetric genomic surfaces and warm-gold evidence markers.",
+        "max_width": "1536px",
+        "sidebar_width": "282px",
+        "hero_radius": "8px 34px 8px 34px",
+        "card_radius": "7px 22px 7px 22px",
+        "control_radius": "6px 14px 6px 14px",
+        "chip_radius": "999px",
+        "border_width": "1px",
+        "card_padding": "1.13rem",
+        "grid_gap": ".74rem",
+        "blur": "10px",
+        "shadow": "0 26px 72px rgba(52,2,10,.43)",
+        "hover_shadow": "0 36px 94px rgba(239,35,60,.22)",
+        "heading_tracking": "-.032em",
+        "heading_transform": "none",
+        "pattern_css": "repeating-linear-gradient(90deg,transparent 0 70px,rgba(239,35,60,.038) 71px 72px),linear-gradient(0deg,transparent 49%,rgba(255,77,109,.04) 50%,transparent 51%)",
+        "surface_css": "linear-gradient(138deg,color-mix(in srgb,var(--bio-primary) 9%,var(--bio-surface-strong)),color-mix(in srgb,var(--bio-secondary) 4%,var(--bio-surface)))",
+        "hero_css": "linear-gradient(102deg,var(--bio-primary) 0 6px,color-mix(in srgb,var(--bio-primary) 21%,var(--bio-surface-strong)) 6px 42%,color-mix(in srgb,var(--bio-secondary) 13%,var(--bio-surface-strong)))",
+        "button_css": "linear-gradient(100deg,var(--bio-primary),var(--bio-secondary))",
+        "nav_active_css": "linear-gradient(90deg,var(--bio-primary) 0 4px,color-mix(in srgb,var(--bio-primary) 18%,transparent) 4px)",
+        "extra_css": ".bio-card::after,.bio-kpi::after{content:'';position:absolute;left:12%;right:12%;bottom:-1px;height:1px;background:linear-gradient(90deg,transparent,var(--bio-primary),transparent);opacity:.55}.bio-hero::after{content:'GENOME \u2022 PULSE';position:absolute;right:1rem;bottom:.72rem;color:var(--bio-accent);font-size:.57rem;letter-spacing:.15em}"
+      },
+      "metadata": {
+        "category": "Bold",
+        "best_for": [
+          "Genomics",
+          "Safety monitoring",
+          "Critical review"
+        ],
+        "performance": "Balanced",
+        "recommended_fonts": [
+          "Inter",
+          "Aptos",
+          "Segoe UI"
+        ],
+        "layout_mode": "pulse"
+      },
+      "chart_profile": {
+        "grid_dash": "dashdot",
+        "grid_alpha": 0.154,
+        "axis_width": 1,
+        "line_width": 2.73,
+        "marker_symbol": "diamond",
+        "marker_size": 9,
+        "legend_orientation": "h",
+        "legend_y": 1.321,
+        "hover_border": "#EF233C",
+        "plot_alpha": 0.034
+      },
+      "health": {
+        "dark": {
+          "theme": "Crimson Genome",
+          "accessibility": 100,
+          "performance": 92,
+          "readability": 100,
+          "scientific_clarity": 84,
+          "print_compatibility": 80,
+          "overall": 93,
+          "body_contrast": 18.88,
+          "muted_contrast": 9.74,
+          "issues": []
+        },
+        "light": {
+          "theme": "Crimson Genome",
+          "accessibility": 100,
+          "performance": 92,
+          "readability": 100,
+          "scientific_clarity": 84,
+          "print_compatibility": 84,
+          "overall": 94,
+          "body_contrast": 13.99,
+          "muted_contrast": 5.0,
+          "issues": []
+        }
+      }
+    },
+    {
+      "name": "Electric Lime",
+      "description": "Neon-lime circuit laboratory with cyan telemetry for energetic technical workflows.",
+      "dark_palette": {
+        "primary": "#B7FF00",
+        "secondary": "#7CFF6B",
+        "accent": "#00E5FF",
+        "background_start": "#030702",
+        "background_mid": "#101C05",
+        "background_end": "#010200",
+        "text": "#F8FFE8",
+        "muted": "#B9C99E"
+      },
+      "light_palette": {
+        "background": "#F8FFE8",
+        "background_soft": "#ECF9C9",
+        "surface": "rgba(254,255,251,.97)",
+        "surface_strong": "#FFFFFF",
+        "sidebar_start": "#FBFFF3",
+        "sidebar_end": "#EFFAD5",
+        "text": "#263600",
+        "muted": "#68764A",
+        "border": "rgba(101,140,0,.23)"
+      },
+      "experience": {
+        "title": "Electric Lime",
+        "archetype": "Electric lime circuit",
+        "audience": "Technical bioinformatics operations",
+        "summary": "Neon lime circuit traces, compact technical panels and cyan live-state telemetry.",
+        "max_width": "1572px",
+        "sidebar_width": "296px",
+        "hero_radius": "0px",
+        "card_radius": "0px 14px 0px 14px",
+        "control_radius": "0px 8px 0px 8px",
+        "chip_radius": "0px",
+        "border_width": "1px",
+        "card_padding": "1.02rem",
+        "grid_gap": ".60rem",
+        "blur": "4px",
+        "shadow": "0 0 0 1px rgba(183,255,0,.09),0 20px 58px rgba(0,0,0,.44)",
+        "hover_shadow": "0 0 0 1px rgba(0,229,255,.44),0 0 38px rgba(183,255,0,.18)",
+        "heading_tracking": ".018em",
+        "heading_transform": "uppercase",
+        "pattern_css": "linear-gradient(rgba(183,255,0,.052) 1px,transparent 1px),linear-gradient(90deg,rgba(0,229,255,.042) 1px,transparent 1px)",
+        "surface_css": "linear-gradient(135deg,color-mix(in srgb,var(--bio-primary) 7%,#081004),color-mix(in srgb,var(--bio-surface-strong) 96%,black))",
+        "hero_css": "linear-gradient(110deg,color-mix(in srgb,var(--bio-primary) 19%,#061003),#0b1704 56%,color-mix(in srgb,var(--bio-accent) 12%,#061003))",
+        "button_css": "linear-gradient(90deg,var(--bio-primary),var(--bio-secondary))",
+        "nav_active_css": "linear-gradient(90deg,var(--bio-primary) 0 2px,color-mix(in srgb,var(--bio-primary) 17%,transparent) 2px)",
+        "extra_css": ".bio-hero,.bio-card,.bio-kpi,.bio-db-card{clip-path:polygon(0 0,calc(100% - 12px) 0,100% 12px,100% 100%,0 100%)}.bio-hero::after{content:'CIRCUIT // LIVE';position:absolute;right:1rem;bottom:.65rem;color:var(--bio-accent);font-family:var(--bio-data-font);font-size:.56rem;letter-spacing:.16em}"
+      },
+      "metadata": {
+        "category": "Neon",
+        "best_for": [
+          "Bioinformatics",
+          "Live workflows",
+          "Technical operations"
+        ],
+        "performance": "Balanced",
+        "recommended_fonts": [
+          "Tahoma",
+          "Courier New",
+          "Segoe UI"
+        ],
+        "layout_mode": "circuit"
+      },
+      "chart_profile": {
+        "grid_dash": "dot",
+        "grid_alpha": 0.193,
+        "axis_width": 1,
+        "line_width": 2.69,
+        "marker_symbol": "star",
+        "marker_size": 10,
+        "legend_orientation": "v",
+        "legend_y": 1.091,
+        "hover_border": "#78B800",
+        "plot_alpha": 0.068
+      },
+      "health": {
+        "dark": {
+          "theme": "Electric Lime",
+          "accessibility": 100,
+          "performance": 92,
+          "readability": 100,
+          "scientific_clarity": 84,
+          "print_compatibility": 80,
+          "overall": 93,
+          "body_contrast": 19.77,
+          "muted_contrast": 11.51,
+          "issues": []
+        },
+        "light": {
+          "theme": "Electric Lime",
+          "accessibility": 100,
+          "performance": 92,
+          "readability": 100,
+          "scientific_clarity": 84,
+          "print_compatibility": 84,
+          "overall": 94,
+          "body_contrast": 12.71,
+          "muted_contrast": 4.78,
+          "issues": []
+        }
+      }
+    },
+    {
+      "name": "Velvet Neon",
+      "description": "Velvet-black neon magenta lounge with violet glass and cyan scientific highlights.",
+      "dark_palette": {
+        "primary": "#FF2BD6",
+        "secondary": "#8B5CF6",
+        "accent": "#22D3EE",
+        "background_start": "#0D0210",
+        "background_mid": "#25072C",
+        "background_end": "#040005",
+        "text": "#FFF4FD",
+        "muted": "#D2B0D3"
+      },
+      "light_palette": {
+        "background": "#FFF3FC",
+        "background_soft": "#F5E2F3",
+        "surface": "rgba(255,253,255,.95)",
+        "surface_strong": "#FFFFFF",
+        "sidebar_start": "#FFF9FE",
+        "sidebar_end": "#F8E8F6",
+        "text": "#4A1644",
+        "muted": "#80667E",
+        "border": "rgba(210,20,170,.21)"
+      },
+      "experience": {
+        "title": "Velvet Neon",
+        "archetype": "Velvet neon scientific lounge",
+        "audience": "Creative discovery and presentations",
+        "summary": "Soft velvet-black depth, neon magenta glass and cyan highlights with luxurious rounded geometry.",
+        "max_width": "1506px",
+        "sidebar_width": "278px",
+        "hero_radius": "44px 18px 44px 18px",
+        "card_radius": "28px 12px 28px 12px",
+        "control_radius": "18px",
+        "chip_radius": "999px",
+        "border_width": "1px",
+        "card_padding": "1.18rem",
+        "grid_gap": ".88rem",
+        "blur": "30px",
+        "shadow": "0 34px 92px rgba(45,3,53,.44)",
+        "hover_shadow": "0 46px 118px rgba(255,43,214,.23)",
+        "heading_tracking": "-.052em",
+        "heading_transform": "none",
+        "pattern_css": "radial-gradient(circle at 14% 8%,rgba(255,43,214,.18),transparent 26%),radial-gradient(circle at 86% 22%,rgba(34,211,238,.11),transparent 24%)",
+        "surface_css": "linear-gradient(145deg,color-mix(in srgb,var(--bio-primary) 11%,transparent),color-mix(in srgb,var(--bio-surface-strong) 76%,transparent))",
+        "hero_css": "linear-gradient(130deg,color-mix(in srgb,var(--bio-primary) 28%,var(--bio-surface-strong)),color-mix(in srgb,var(--bio-secondary) 20%,var(--bio-surface-strong)) 58%,color-mix(in srgb,var(--bio-accent) 12%,var(--bio-surface-strong)))",
+        "button_css": "linear-gradient(105deg,var(--bio-primary),var(--bio-secondary),var(--bio-accent))",
+        "nav_active_css": "linear-gradient(95deg,color-mix(in srgb,var(--bio-primary) 24%,transparent),color-mix(in srgb,var(--bio-secondary) 10%,transparent))",
+        "extra_css": ".bio-card,.bio-kpi,.bio-db-card{border-color:color-mix(in srgb,var(--bio-primary) 22%,rgba(255,255,255,.12))!important}.bio-card::after{content:'';position:absolute;inset:auto 20% -1px 20%;height:1px;background:linear-gradient(90deg,transparent,var(--bio-accent),transparent);opacity:.55}"
+      },
+      "metadata": {
+        "category": "Luxury",
+        "best_for": [
+          "Presentations",
+          "AI discovery",
+          "Creative scientific review"
+        ],
+        "performance": "Effects-heavy",
+        "recommended_fonts": [
+          "Century Gothic",
+          "Inter",
+          "Trebuchet MS"
+        ],
+        "layout_mode": "velvet"
+      },
+      "chart_profile": {
+        "grid_dash": "dashdot",
+        "grid_alpha": 0.088,
+        "axis_width": 1,
+        "line_width": 2.77,
+        "marker_symbol": "hexagon2",
+        "marker_size": 9,
+        "legend_orientation": "h",
+        "legend_y": 1.331,
+        "hover_border": "#D61FB3",
+        "plot_alpha": 0.029
+      },
+      "health": {
+        "dark": {
+          "theme": "Velvet Neon",
+          "accessibility": 100,
+          "performance": 74,
+          "readability": 100,
+          "scientific_clarity": 84,
+          "print_compatibility": 80,
+          "overall": 90,
+          "body_contrast": 18.98,
+          "muted_contrast": 10.54,
+          "issues": []
+        },
+        "light": {
+          "theme": "Velvet Neon",
+          "accessibility": 100,
+          "performance": 74,
+          "readability": 100,
+          "scientific_clarity": 84,
+          "print_compatibility": 84,
+          "overall": 90,
+          "body_contrast": 13.08,
+          "muted_contrast": 4.73,
+          "issues": []
+        }
+      }
+    },
+    {
+      "name": "Copper Eclipse",
+      "description": "Copper-metal eclipse studio with warm depth and turquoise analytical contrast.",
+      "dark_palette": {
+        "primary": "#D97745",
+        "secondary": "#F2A65A",
+        "accent": "#2DD4BF",
+        "background_start": "#100806",
+        "background_mid": "#27140D",
+        "background_end": "#060302",
+        "text": "#FFF7EF",
+        "muted": "#D1B5A2"
+      },
+      "light_palette": {
+        "background": "#FFF7F1",
+        "background_soft": "#F5E8DE",
+        "surface": "rgba(255,254,252,.97)",
+        "surface_strong": "#FFFFFF",
+        "sidebar_start": "#FFFAF6",
+        "sidebar_end": "#F8ECE3",
+        "text": "#43281B",
+        "muted": "#7A695D",
+        "border": "rgba(173,83,40,.22)"
+      },
+      "experience": {
+        "title": "Copper Eclipse",
+        "archetype": "Copper eclipse scientific atelier",
+        "audience": "Scientific storytelling and reports",
+        "summary": "Metallic copper layers, eclipse rings and turquoise analytical accents for sophisticated research narratives.",
+        "max_width": "1436px",
+        "sidebar_width": "272px",
+        "hero_radius": "50% 10px 10px 10px / 28px 10px 10px 10px",
+        "card_radius": "20px 6px 20px 6px",
+        "control_radius": "12px 4px 12px 4px",
+        "chip_radius": "999px",
+        "border_width": "1px",
+        "card_padding": "1.22rem",
+        "grid_gap": "1.02rem",
+        "blur": "9px",
+        "shadow": "0 24px 64px rgba(30,12,5,.42)",
+        "hover_shadow": "0 34px 84px rgba(217,119,69,.22)",
+        "heading_tracking": "-.015em",
+        "heading_transform": "none",
+        "pattern_css": "radial-gradient(circle at 88% 10%,transparent 0 52px,rgba(217,119,69,.075) 53px 55px,transparent 56px),repeating-linear-gradient(0deg,transparent 0 33px,rgba(242,166,90,.028) 34px 35px)",
+        "surface_css": "linear-gradient(155deg,color-mix(in srgb,var(--bio-primary) 8%,var(--bio-surface-strong)),color-mix(in srgb,var(--bio-surface) 96%,#150b07))",
+        "hero_css": "radial-gradient(circle at 84% 24%,color-mix(in srgb,var(--bio-accent) 14%,transparent),transparent 27%),linear-gradient(125deg,color-mix(in srgb,var(--bio-primary) 22%,var(--bio-surface-strong)),var(--bio-surface-strong))",
+        "button_css": "linear-gradient(95deg,var(--bio-primary),var(--bio-secondary))",
+        "nav_active_css": "linear-gradient(90deg,color-mix(in srgb,var(--bio-primary) 22%,transparent),transparent)",
+        "extra_css": ".bio-section-label{border-bottom:1px solid color-mix(in srgb,var(--bio-primary) 40%,transparent);padding-bottom:.42rem}.bio-hero::after{content:'ECLIPSE \u2022 RESEARCH';position:absolute;right:1rem;bottom:.7rem;color:var(--bio-accent);font-size:.56rem;letter-spacing:.14em}"
+      },
+      "metadata": {
+        "category": "Art",
+        "best_for": [
+          "Structural biology",
+          "Research storytelling",
+          "Scientific reports"
+        ],
+        "performance": "Balanced",
+        "recommended_fonts": [
+          "Georgia",
+          "Aptos",
+          "Inter"
+        ],
+        "layout_mode": "eclipse"
+      },
+      "chart_profile": {
+        "grid_dash": "dash",
+        "grid_alpha": 0.137,
+        "axis_width": 1,
+        "line_width": 2.41,
+        "marker_symbol": "triangle-right",
+        "marker_size": 8,
+        "legend_orientation": "h",
+        "legend_y": 1.341,
+        "hover_border": "#B85E32",
+        "plot_alpha": 0.025
+      },
+      "health": {
+        "dark": {
+          "theme": "Copper Eclipse",
+          "accessibility": 100,
+          "performance": 92,
+          "readability": 100,
+          "scientific_clarity": 84,
+          "print_compatibility": 80,
+          "overall": 93,
+          "body_contrast": 18.69,
+          "muted_contrast": 10.23,
+          "issues": []
+        },
+        "light": {
+          "theme": "Copper Eclipse",
+          "accessibility": 100,
+          "performance": 92,
+          "readability": 100,
+          "scientific_clarity": 84,
+          "print_compatibility": 84,
+          "overall": 94,
+          "body_contrast": 12.73,
+          "muted_contrast": 4.95,
+          "issues": []
+        }
+      }
+    }
+  ]
+}

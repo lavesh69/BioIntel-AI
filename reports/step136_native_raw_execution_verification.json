@@ -1,0 +1,336 @@
+{
+  "checks": [
+    {
+      "detail": "13.2.0",
+      "name": "Product version preserved",
+      "passed": true
+    },
+    {
+      "detail": {
+        "duplicate_extensions": {},
+        "extra_profiles": [],
+        "missing_profiles": [],
+        "module_count": 15,
+        "valid": true
+      },
+      "name": "Fifteen native pipeline profiles",
+      "passed": true
+    },
+    {
+      "detail": [
+        "bcf",
+        "bedmethyl",
+        "genbank",
+        "graph_binary",
+        "hdf5",
+        "jsonl",
+        "model_asset",
+        "parquet",
+        "safety_xml",
+        "sdf",
+        "wsi",
+        "yaml"
+      ],
+      "name": "Native format registry",
+      "passed": true
+    },
+    {
+      "detail": {
+        "failures": [],
+        "module_count": 15,
+        "modules": [
+          {
+            "analysis_state": "completed",
+            "format": "fasta",
+            "manifest_sha256": "3ec276b3e0a6e3dbee4821f8532e3a5d9938c228c59c2c18578b3a718cac3c85",
+            "module": "amr_surveillance",
+            "records_loaded": 1
+          },
+          {
+            "analysis_state": "completed",
+            "format": "plate",
+            "manifest_sha256": "f13a553604593aad3150d66218f8621545bf15cbe091ce2177cbda9054bbcb97",
+            "module": "autonomous_lab_planner",
+            "records_loaded": 2
+          },
+          {
+            "analysis_state": "safe_conversion_block",
+            "format": "model_asset",
+            "manifest_sha256": "623df34be1a650e75584b0e471d3e5709a312ad61abd3a444037a8e424fae267",
+            "module": "biomedical_foundation_model_hub",
+            "records_loaded": 1
+          },
+          {
+            "analysis_state": "completed",
+            "format": "fasta",
+            "manifest_sha256": "586bb03feda8951f4969e4f07fe893bad44b4758185e1e21ea5e6f0daeee4824",
+            "module": "cell_therapy_cart",
+            "records_loaded": 1
+          },
+          {
+            "analysis_state": "completed",
+            "format": "tabular",
+            "manifest_sha256": "93786e33ff789ba102ce18d479f27fb8fc5e34b5baff4d3a8a2f6d39cf38f6ba",
+            "module": "clinical_biomarker_survival",
+            "records_loaded": 4
+          },
+          {
+            "analysis_state": "completed",
+            "format": "image",
+            "manifest_sha256": "ac6724b8fc2695452aabb7ecaf8846cf9ec9ae48736ab2cb1f7aed68c8e5dd50",
+            "module": "digital_pathology_foundation",
+            "records_loaded": 1
+          },
+          {
+            "analysis_state": "completed",
+            "format": "tabular",
+            "manifest_sha256": "895e2c6e8c865685c4bb9b591f3a2f342cd79d43efdc89ca4d6a92fcdf9cb980",
+            "module": "federated_biomedical_ai",
+            "records_loaded": 2
+          },
+          {
+            "analysis_state": "completed",
+            "format": "genbank",
+            "manifest_sha256": "dc81df7208436090d93e6388b6b7152429bd6291db7fde41a558cf76fec8f1dd",
+            "module": "gene_therapy_vector",
+            "records_loaded": 1
+          },
+          {
+            "analysis_state": "completed",
+            "format": "bedmethyl",
+            "manifest_sha256": "b45d901c2ae8c259261b37afa4d3267207f6a2e733208e12fe0ff284be9fa2ee",
+            "module": "long_read_epigenome",
+            "records_loaded": 1
+          },
+          {
+            "analysis_state": "completed",
+            "format": "gfa",
+            "manifest_sha256": "9eb0519f5a1a25ce3d1430bc4d1f4bf97bb971740adb738aba09ac20b026fe2c",
+            "module": "pangenome_population_medicine",
+            "records_loaded": 2
+          },
+          {
+            "analysis_state": "completed",
+            "format": "tabular",
+            "manifest_sha256": "20a2e6dede0497dbd81184864587e258425c06389da8ee39b3265874f1a5f63c",
+            "module": "pharmacovigilance_intelligence",
+            "records_loaded": 2
+          },
+          {
+            "analysis_state": "completed",
+            "format": "pdb",
+            "manifest_sha256": "c381edad618c65dd90ae31ab3c2faf8cdb100102af2a647ee746fcf68317aac6",
+            "module": "protein_ligand_codesign",
+            "records_loaded": 1
+          },
+          {
+            "analysis_state": "completed",
+            "format": "gff",
+            "manifest_sha256": "d2698710bba6f676fcb952290c9a17cf82069c30fd4c4688c586c8f19259c11d",
+            "module": "single_cell_long_read_isoforms",
+            "records_loaded": 1
+          },
+          {
+            "analysis_state": "completed",
+            "format": "tabular",
+            "manifest_sha256": "0158a1b3e5da9fd4d62e85094547e39fefbd9850c8ec173e2e5f1fe7a6263c10",
+            "module": "spatial_medicine_tme",
+            "records_loaded": 2
+          },
+          {
+            "analysis_state": "completed",
+            "format": "tabular",
+            "manifest_sha256": "c41e315e29aedd450ebc8af890698cc91817ba26ec8979313af0a7cc8c6b9079",
+            "module": "synthetic_cohort_trial",
+            "records_loaded": 4
+          }
+        ],
+        "passed": true
+      },
+      "name": "Native raw-data pipeline smoke",
+      "passed": true
+    },
+    {
+      "detail": {
+        "failures": [],
+        "module_count": 15,
+        "modules": [
+          {
+            "figures": 3,
+            "module": "amr_surveillance",
+            "tables": 3
+          },
+          {
+            "figures": 4,
+            "module": "autonomous_lab_planner",
+            "tables": 4
+          },
+          {
+            "figures": 3,
+            "module": "biomedical_foundation_model_hub",
+            "tables": 3
+          },
+          {
+            "figures": 3,
+            "module": "cell_therapy_cart",
+            "tables": 2
+          },
+          {
+            "figures": 4,
+            "module": "clinical_biomarker_survival",
+            "tables": 4
+          },
+          {
+            "figures": 3,
+            "module": "digital_pathology_foundation",
+            "tables": 3
+          },
+          {
+            "figures": 4,
+            "module": "federated_biomedical_ai",
+            "tables": 2
+          },
+          {
+            "figures": 3,
+            "module": "gene_therapy_vector",
+            "tables": 2
+          },
+          {
+            "figures": 3,
+            "module": "long_read_epigenome",
+            "tables": 2
+          },
+          {
+            "figures": 3,
+            "module": "pangenome_population_medicine",
+            "tables": 2
+          },
+          {
+            "figures": 3,
+            "module": "pharmacovigilance_intelligence",
+            "tables": 2
+          },
+          {
+            "figures": 3,
+            "module": "protein_ligand_codesign",
+            "tables": 2
+          },
+          {
+            "figures": 3,
+            "module": "single_cell_long_read_isoforms",
+            "tables": 2
+          },
+          {
+            "figures": 3,
+            "module": "spatial_medicine_tme",
+            "tables": 3
+          },
+          {
+            "figures": 4,
+            "module": "synthetic_cohort_trial",
+            "tables": 3
+          }
+        ],
+        "passed": true,
+        "scientific_tables": 39,
+        "specialist_figures": 49
+      },
+      "name": "Scientific depth and specialist viewers preserved",
+      "passed": true
+    },
+    {
+      "detail": {
+        "failures": [],
+        "files": 958,
+        "passed": true
+      },
+      "name": "Python syntax",
+      "passed": true
+    },
+    {
+      "detail": {
+        "passed": true,
+        "results": [
+          {
+            "evidence": "packages=32 invalid=0 sha256=b609c6dd48d814c6c9f5f1afa46892060d1d0ae1587034b826b8272328a385a0",
+            "name": "exact_dependency_lock",
+            "passed": true
+          },
+          {
+            "evidence": "violations=0",
+            "name": "architecture_boundaries",
+            "passed": true
+          },
+          {
+            "evidence": "overdue=0",
+            "name": "technical_debt_expiry",
+            "passed": true
+          },
+          {
+            "evidence": "offenders=0",
+            "name": "module_size_budget",
+            "passed": true
+          }
+        ],
+        "schema": "biointel.engineering-gates.v1"
+      },
+      "name": "Engineering quality gates",
+      "passed": true
+    },
+    {
+      "detail": {
+        "databases": 36,
+        "failures": [],
+        "foreign_key_issues": 0,
+        "passed": true,
+        "rows": 108425
+      },
+      "name": "Database integrity",
+      "passed": true
+    },
+    {
+      "detail": {
+        "added": [],
+        "baseline_databases": 36,
+        "changed": [],
+        "current_databases": 36
+      },
+      "name": "Step 135 database baseline preserved",
+      "passed": true
+    },
+    {
+      "detail": "5/5 byte-identical",
+      "name": "Protected pages",
+      "passed": true
+    },
+    {
+      "detail": {
+        "native_tab": true,
+        "new_central_pages": [],
+        "renderer_hook": true,
+        "worker_handler": true
+      },
+      "name": "Module-only native execution integration",
+      "passed": true
+    },
+    {
+      "detail": "Complete",
+      "name": "Release artifacts",
+      "passed": true
+    },
+    {
+      "detail": {
+        "count": 0,
+        "passed": true,
+        "paths": []
+      },
+      "name": "Runtime residue",
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "schema": "biointel.step136-native-raw-execution-verification.v1",
+  "scope": "native-raw-data-real-engine-readiness-background-pipelines",
+  "step": 136,
+  "version": "13.2.0"
+}

@@ -1,0 +1,42 @@
+{
+  "schema": "biointel.step193.self-test.v1",
+  "status": "DEGRADED",
+  "passed": false,
+  "checks": [
+    {
+      "name": "Version consistency",
+      "status": "PASS",
+      "severity": "critical",
+      "detail": "BioIntel AI 15.1.0",
+      "seconds": 0.0
+    },
+    {
+      "name": "Core scientific imports",
+      "status": "FAIL",
+      "severity": "critical",
+      "detail": "ModuleNotFoundError: No module named 'streamlit'",
+      "seconds": 0.0
+    },
+    {
+      "name": "Step 193 mandatory module completion",
+      "status": "PASS",
+      "severity": "critical",
+      "detail": "80/80 mandatory module qualification passed",
+      "seconds": 0.027
+    },
+    {
+      "name": "Python compilation",
+      "status": "PASS",
+      "severity": "critical",
+      "detail": "src, pages and scripts compiled",
+      "seconds": 3.084
+    },
+    {
+      "name": "Windows installer contract",
+      "status": "PASS",
+      "severity": "critical",
+      "detail": "installer arguments, markers and Python locator aligned",
+      "seconds": 0.0
+    }
+  ]
+}

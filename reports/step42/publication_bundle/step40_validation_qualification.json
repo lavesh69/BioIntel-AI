@@ -1,0 +1,346 @@
+{
+  "boundary": "The repository cannot manufacture wet-lab, independent laboratory or multi-site evidence. Those scores are evidence-gated by design.",
+  "capabilities": [
+    {
+      "blockers": [],
+      "boundary": "10/10 implementation means enforceable schemas, hashes, chronology, split policies, calibration, review and release gates exist. Actual evidence reaches 10/10 only after qualifying independent datasets or genuine laboratory/site results are imported.",
+      "controls": [
+        "src/biointel/scientific/validation_depth.py",
+        "config/step40_validation_policy.yaml",
+        "scripts/register_step40_validation_study.py",
+        "tests/scientific/test_step40_validation_depth.py"
+      ],
+      "evidence_score": 3.0,
+      "implementation_score": 10.0,
+      "key": "prospective_validation",
+      "label": "Prospective Validation \u2014 blinded outcomes",
+      "status": "framework-ready/evidence-pending"
+    },
+    {
+      "blockers": [],
+      "boundary": "10/10 implementation means enforceable schemas, hashes, chronology, split policies, calibration, review and release gates exist. Actual evidence reaches 10/10 only after qualifying independent datasets or genuine laboratory/site results are imported.",
+      "controls": [
+        "src/biointel/scientific/validation_depth.py",
+        "config/dti_scientific_benchmark.yaml",
+        "scripts/qualify_step40_validation.py",
+        "tests/scientific/test_step40_validation_depth.py"
+      ],
+      "evidence_score": 3.5,
+      "implementation_score": 10.0,
+      "key": "external_dti_validation",
+      "label": "External DTI Validation \u2014 independent study",
+      "status": "framework-ready/evidence-pending"
+    },
+    {
+      "blockers": [],
+      "boundary": "10/10 implementation means enforceable schemas, hashes, chronology, split policies, calibration, review and release gates exist. Actual evidence reaches 10/10 only after qualifying independent datasets or genuine laboratory/site results are imported.",
+      "controls": [
+        "src/biointel/scientific/benchmark.py",
+        "src/biointel/dti/validation_suite.py",
+        "config/step40_validation_policy.yaml",
+        "tests/scientific/test_step40_validation_depth.py"
+      ],
+      "evidence_score": 4.0,
+      "implementation_score": 10.0,
+      "key": "independent_dti_benchmarking",
+      "label": "Independent DTI Benchmarking",
+      "status": "framework-ready/evidence-pending"
+    },
+    {
+      "blockers": [],
+      "boundary": "10/10 implementation means enforceable schemas, hashes, chronology, split policies, calibration, review and release gates exist. Actual evidence reaches 10/10 only after qualifying independent datasets or genuine laboratory/site results are imported.",
+      "controls": [
+        "src/biointel/training/release_gate.py",
+        "src/biointel/quality/model_audit.py",
+        "config/scientific_release_policy.yaml",
+        "tests/scientific/test_step40_validation_depth.py"
+      ],
+      "evidence_score": 4.5,
+      "implementation_score": 10.0,
+      "key": "ml_model_quality",
+      "label": "ML Model Quality \u2014 bundled models",
+      "status": "framework-ready/evidence-pending"
+    },
+    {
+      "blockers": [],
+      "boundary": "10/10 implementation means enforceable schemas, hashes, chronology, split policies, calibration, review and release gates exist. Actual evidence reaches 10/10 only after qualifying independent datasets or genuine laboratory/site results are imported.",
+      "controls": [
+        "src/biointel/dti/validation_suite.py",
+        "src/biointel/scientific/benchmark.py",
+        "config/dti_scientific_benchmark.yaml",
+        "tests/scientific/test_step40_validation_depth.py"
+      ],
+      "evidence_score": 4.5,
+      "implementation_score": 10.0,
+      "key": "dti_prediction_capability",
+      "label": "DTI Prediction Capability \u2014 validated performance",
+      "status": "framework-ready/evidence-pending"
+    },
+    {
+      "blockers": [],
+      "boundary": "10/10 implementation means enforceable schemas, hashes, chronology, split policies, calibration, review and release gates exist. Actual evidence reaches 10/10 only after qualifying independent datasets or genuine laboratory/site results are imported.",
+      "controls": [
+        "src/biointel/training/scientific_splits.py",
+        "src/biointel/training/subgroup_evaluation.py",
+        "config/step40_validation_policy.yaml",
+        "tests/scientific/test_step40_validation_depth.py"
+      ],
+      "evidence_score": 4.0,
+      "implementation_score": 10.0,
+      "key": "model_generalization",
+      "label": "Model Generalization \u2014 unseen biology",
+      "status": "framework-ready/evidence-pending"
+    },
+    {
+      "blockers": [],
+      "boundary": "10/10 implementation means enforceable schemas, hashes, chronology, split policies, calibration, review and release gates exist. Actual evidence reaches 10/10 only after qualifying independent datasets or genuine laboratory/site results are imported.",
+      "controls": [
+        "src/biointel/training/scientific_splits.py",
+        "src/biointel/dti/validation_suite.py",
+        "config/step40_validation_policy.yaml"
+      ],
+      "evidence_score": 5.0,
+      "implementation_score": 10.0,
+      "key": "cold_drug_validation",
+      "label": "Cold-Drug Real Validation",
+      "status": "framework-ready/evidence-pending"
+    },
+    {
+      "blockers": [],
+      "boundary": "10/10 implementation means enforceable schemas, hashes, chronology, split policies, calibration, review and release gates exist. Actual evidence reaches 10/10 only after qualifying independent datasets or genuine laboratory/site results are imported.",
+      "controls": [
+        "src/biointel/training/scientific_splits.py",
+        "src/biointel/dti/validation_suite.py",
+        "config/step40_validation_policy.yaml"
+      ],
+      "evidence_score": 4.5,
+      "implementation_score": 10.0,
+      "key": "cold_target_validation",
+      "label": "Cold-Target Real Validation",
+      "status": "framework-ready/evidence-pending"
+    },
+    {
+      "blockers": [],
+      "boundary": "10/10 implementation means enforceable schemas, hashes, chronology, split policies, calibration, review and release gates exist. Actual evidence reaches 10/10 only after qualifying independent datasets or genuine laboratory/site results are imported.",
+      "controls": [
+        "src/biointel/training/scientific_splits.py",
+        "src/biointel/dti/validation_suite.py",
+        "config/step40_validation_policy.yaml"
+      ],
+      "evidence_score": 4.0,
+      "implementation_score": 10.0,
+      "key": "cold_both_validation",
+      "label": "Cold-Drug-and-Target Real Validation",
+      "status": "framework-ready/evidence-pending"
+    },
+    {
+      "blockers": [],
+      "boundary": "10/10 implementation means enforceable schemas, hashes, chronology, split policies, calibration, review and release gates exist. Actual evidence reaches 10/10 only after qualifying independent datasets or genuine laboratory/site results are imported.",
+      "controls": [
+        "src/biointel/training/scaffold.py",
+        "src/biointel/dti/validation_suite.py",
+        "config/step40_validation_policy.yaml"
+      ],
+      "evidence_score": 4.5,
+      "implementation_score": 10.0,
+      "key": "scaffold_generalization",
+      "label": "Scaffold Generalization \u2014 real datasets",
+      "status": "framework-ready/evidence-pending"
+    },
+    {
+      "blockers": [],
+      "boundary": "10/10 implementation means enforceable schemas, hashes, chronology, split policies, calibration, review and release gates exist. Actual evidence reaches 10/10 only after qualifying independent datasets or genuine laboratory/site results are imported.",
+      "controls": [
+        "src/biointel/training/scientific_splits.py",
+        "src/biointel/dti/validation_suite.py",
+        "config/step40_validation_policy.yaml"
+      ],
+      "evidence_score": 4.0,
+      "implementation_score": 10.0,
+      "key": "temporal_generalization",
+      "label": "Temporal Generalization \u2014 historical holdout",
+      "status": "framework-ready/evidence-pending"
+    },
+    {
+      "blockers": [],
+      "boundary": "10/10 implementation means enforceable schemas, hashes, chronology, split policies, calibration, review and release gates exist. Actual evidence reaches 10/10 only after qualifying independent datasets or genuine laboratory/site results are imported.",
+      "controls": [
+        "src/biointel/training/group_calibration.py",
+        "src/biointel/training/evaluation.py",
+        "config/step40_validation_policy.yaml"
+      ],
+      "evidence_score": 4.0,
+      "implementation_score": 10.0,
+      "key": "independent_calibration",
+      "label": "Calibration on Independent DTI Data",
+      "status": "framework-ready/evidence-pending"
+    },
+    {
+      "blockers": [],
+      "boundary": "10/10 implementation means enforceable schemas, hashes, chronology, split policies, calibration, review and release gates exist. Actual evidence reaches 10/10 only after qualifying independent datasets or genuine laboratory/site results are imported.",
+      "controls": [
+        "src/biointel/training/uncertainty.py",
+        "src/biointel/training/evaluation.py",
+        "config/step40_validation_policy.yaml"
+      ],
+      "evidence_score": 4.0,
+      "implementation_score": 10.0,
+      "key": "independent_uncertainty",
+      "label": "Uncertainty Validation on Independent Data",
+      "status": "framework-ready/evidence-pending"
+    },
+    {
+      "blockers": [],
+      "boundary": "10/10 implementation means enforceable schemas, hashes, chronology, split policies, calibration, review and release gates exist. Actual evidence reaches 10/10 only after qualifying independent datasets or genuine laboratory/site results are imported.",
+      "controls": [
+        "src/biointel/scientific/validation_depth.py",
+        "docs/STEP40_VALIDATION_EVIDENCE.md",
+        "pages/74_DTI_Validation_Evidence_Center.py",
+        "tests/scientific/test_step40_validation_depth.py"
+      ],
+      "evidence_score": 3.1,
+      "implementation_score": 10.0,
+      "key": "scientific_credibility",
+      "label": "Overall Scientific Credibility \u2014 actual evidence",
+      "status": "framework-ready/evidence-pending"
+    },
+    {
+      "blockers": [],
+      "boundary": "10/10 implementation means enforceable schemas, hashes, chronology, split policies, calibration, review and release gates exist. Actual evidence reaches 10/10 only after qualifying independent datasets or genuine laboratory/site results are imported.",
+      "controls": [
+        "src/biointel/scientific/evidence_lake.py",
+        "src/biointel/scientific/validation_depth.py",
+        "reports/scientific_evidence.sqlite3",
+        "reports/validation_evidence.sqlite3"
+      ],
+      "evidence_score": 8.4,
+      "implementation_score": 10.0,
+      "key": "database_depth",
+      "label": "Database Real Scientific Depth",
+      "status": "framework-ready/evidence-pending"
+    },
+    {
+      "blockers": [],
+      "boundary": "10/10 implementation means enforceable schemas, hashes, chronology, split policies, calibration, review and release gates exist. Actual evidence reaches 10/10 only after qualifying independent datasets or genuine laboratory/site results are imported.",
+      "controls": [
+        "src/biointel/scientific/evidence_lake.py",
+        "src/biointel/scientific/validation_depth.py",
+        "config/step40_validation_policy.yaml"
+      ],
+      "evidence_score": 8.6,
+      "implementation_score": 10.0,
+      "key": "evidence_registry",
+      "label": "Evidence Registry \u2014 volume and diversity",
+      "status": "framework-ready/evidence-pending"
+    },
+    {
+      "blockers": [],
+      "boundary": "10/10 implementation means enforceable schemas, hashes, chronology, split policies, calibration, review and release gates exist. Actual evidence reaches 10/10 only after qualifying independent datasets or genuine laboratory/site results are imported.",
+      "controls": [
+        "src/biointel/scientific/provider_hub.py",
+        "scripts/sync_scientific_evidence.py",
+        "config/scientific_provider_policy.yaml"
+      ],
+      "evidence_score": 8.6,
+      "implementation_score": 10.0,
+      "key": "provider_integration",
+      "label": "Internet/Provider Integration \u2014 sustained sync",
+      "status": "framework-ready/evidence-pending"
+    },
+    {
+      "blockers": [],
+      "boundary": "10/10 implementation means enforceable schemas, hashes, chronology, split policies, calibration, review and release gates exist. Actual evidence reaches 10/10 only after qualifying independent datasets or genuine laboratory/site results are imported.",
+      "controls": [
+        "src/biointel/scientific/provider_hub.py",
+        "src/biointel/scientific/evidence_lake.py",
+        "config/step40_validation_policy.yaml"
+      ],
+      "evidence_score": 8.2,
+      "implementation_score": 10.0,
+      "key": "provider_release_coverage",
+      "label": "Real Provider Release Coverage",
+      "status": "framework-ready/evidence-pending"
+    },
+    {
+      "blockers": [],
+      "boundary": "10/10 implementation means enforceable schemas, hashes, chronology, split policies, calibration, review and release gates exist. Actual evidence reaches 10/10 only after qualifying independent datasets or genuine laboratory/site results are imported.",
+      "controls": [
+        "src/biointel/scientific/validation_depth.py",
+        "config/wetlab_evidence_policy.yaml",
+        "scripts/register_step40_validation_study.py",
+        "tests/scientific/test_step40_validation_depth.py"
+      ],
+      "evidence_score": 2.5,
+      "implementation_score": 10.0,
+      "key": "wet_lab_evidence",
+      "label": "Real Wet-Lab Evidence",
+      "status": "framework-ready/evidence-pending"
+    },
+    {
+      "blockers": [],
+      "boundary": "10/10 implementation means enforceable schemas, hashes, chronology, split policies, calibration, review and release gates exist. Actual evidence reaches 10/10 only after qualifying independent datasets or genuine laboratory/site results are imported.",
+      "controls": [
+        "src/biointel/scientific/prospective.py",
+        "src/biointel/scientific/validation_depth.py",
+        "config/wetlab_evidence_policy.yaml",
+        "tests/scientific/test_step40_validation_depth.py"
+      ],
+      "evidence_score": 2.5,
+      "implementation_score": 10.0,
+      "key": "prospective_wetlab_reproducibility",
+      "label": "Prospective Wet-Lab Reproducibility",
+      "status": "framework-ready/evidence-pending"
+    },
+    {
+      "blockers": [],
+      "boundary": "10/10 implementation means enforceable schemas, hashes, chronology, split policies, calibration, review and release gates exist. Actual evidence reaches 10/10 only after qualifying independent datasets or genuine laboratory/site results are imported.",
+      "controls": [
+        "src/biointel/scientific/validation_depth.py",
+        "config/wetlab_evidence_policy.yaml",
+        "docs/STEP40_VALIDATION_EVIDENCE.md"
+      ],
+      "evidence_score": 2.0,
+      "implementation_score": 10.0,
+      "key": "independent_lab_replication",
+      "label": "Independent Laboratory Replication",
+      "status": "framework-ready/evidence-pending"
+    },
+    {
+      "blockers": [],
+      "boundary": "10/10 implementation means enforceable schemas, hashes, chronology, split policies, calibration, review and release gates exist. Actual evidence reaches 10/10 only after qualifying independent datasets or genuine laboratory/site results are imported.",
+      "controls": [
+        "src/biointel/scientific/validation_depth.py",
+        "config/wetlab_evidence_policy.yaml",
+        "docs/STEP40_VALIDATION_EVIDENCE.md"
+      ],
+      "evidence_score": 2.0,
+      "implementation_score": 10.0,
+      "key": "multi_site_validation",
+      "label": "Multi-Site Validation",
+      "status": "framework-ready/evidence-pending"
+    }
+  ],
+  "capability_count": 22,
+  "evidence_average": 4.5,
+  "implementation_average": 10.0,
+  "integrity": {
+    "errors": [],
+    "ok": true
+  },
+  "summary": {
+    "approved_independent_reviews": 0,
+    "completed_analytical": 0,
+    "completed_blinded_prospective": 0,
+    "completed_external_dti": 0,
+    "completed_independent_wetlab": 0,
+    "completed_multisite": 0,
+    "completed_wetlab": 0,
+    "independent_sites": 0,
+    "outcomes": 0,
+    "provider_releases": 3,
+    "release_eligible_studies": 0,
+    "sites": 0,
+    "studies": 3,
+    "verified_provider_releases": 3
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "bundle": "reports/step42/publication_bundle",
+  "checksums_verified": true,
+  "classification": "review_ready_reproducibility_package",
+  "external_boundary": "The package is publication-ready but has no DOI, journal acceptance or independent peer-review decision.",
+  "file_count": 9,
+  "files": [
+    "CITATION.cff",
+    "DATA_AVAILABILITY.md",
+    "LIMITATIONS.md",
+    "MANUSCRIPT_DRAFT.md",
+    "METHODS.md",
+    "REPRODUCIBILITY.json",
+    "checksums.sha256",
+    "step40_validation_qualification.json",
+    "uci_wdbc_real_benchmark.json"
+  ],
+  "has_doi": false,
+  "observed_at": "2026-07-05T07:33:16.091780+00:00",
+  "passed": true,
+  "peer_reviewed": false,
+  "schema": "biointel.step42.publication-bundle.v1"
+}

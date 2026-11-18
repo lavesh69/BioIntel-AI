@@ -1,0 +1,182 @@
+{
+  "schema": "biointel.step206.windows-install-run-verification.v1",
+  "generated_at": "2026-07-17T23:33:59+00:00",
+  "root": "/mnt/data/step207_work/BioIntel-AI-15.6.0-Step206-WINDOWS-V19.1",
+  "passed": true,
+  "checks": [
+    {
+      "name": "release identity",
+      "passed": true,
+      "detail": {
+        "schema": "biointel.step206.windows-install-run-fix.release.v1",
+        "step": 206,
+        "version": "15.6.0",
+        "package_generation": "V19.2",
+        "part_count": 5,
+        "platform": "Windows desktop",
+        "python_runtime": "CPython 3.11.9 x64",
+        "supported_workflow": [
+          "INSTALL_WINDOWS.bat",
+          "RUN_BOTH_WINDOWS.bat"
+        ],
+        "archive_root": "BioIntel-AI-15.6.0-Step206-WINDOWS-V19.2",
+        "offline_core": true,
+        "upgrade_scope": "Cross-category module stability and data-readiness upgrades for Bioinformatics, Discovery, Lab Analytics and Neuro/CNS, plus ten new Neuro/CNS research modules; Windows V19.1 install/run hotfix preserved.",
+        "managed_install_root": "%LOCALAPPDATA%\\BioIntelAI\\App\\Releases\\15.6.0-Step206",
+        "implemented": [
+          "Atomic verified source installation with rollback",
+          "Exact CPython 3.11.9 x64 detection and friendly preparation route",
+          "Offline wheelhouse installation after Python is available",
+          "Stable Desktop and Start Menu launchers independent of the extracted folder",
+          "Resident UI/API/background-worker supervisor with bounded restart recovery",
+          "Strict API, Streamlit, local SQLite read/write, and worker readiness",
+          "Graceful Stop and Restart controls with orphan-process cleanup",
+          "Pre-activation SQLite backup and native Windows startup/shutdown smoke test",
+          "Automatic support logs and browser fallback",
+          "Current VERSION and pyproject.toml metadata are enforced as 15.6.0",
+          "Five-part Step206 markers are accepted by the scientific runtime preflight",
+          "Same-release repair compares source manifests and replaces stale managed copies",
+          "Shared local data-readiness, provenance, diagnostics and transient-state recovery layer across 77 non-protected target pages",
+          "Bioinformatics cohort/reference-build and count-matrix quality workspaces",
+          "Discovery assay normalisation, replicate review and multi-objective Pareto ranking",
+          "Lab assay replicate precision, batch drift, control separation and Z-prime review",
+          "Ten new Neuro/CNS research workflows with calculated visuals, exports and synthetic demonstrations",
+          "Neuro/CNS catalog, demo showcase, qualification resources and release dashboards expanded from 23 to 33 modules"
+        ],
+        "protected_modules_unchanged": [
+          "DTI Predictor",
+          "DTI Validation Evidence Center",
+          "LIMS / ELN / Sample Chain of Custody",
+          "Lab Instrument Import Center",
+          "Instrument Integration Hub"
+        ],
+        "optional_services": [
+          "Ollama",
+          "SearXNG",
+          "external scientific providers"
+        ],
+        "scientific_boundary": "V19.2 adds research-software workflows, internal checks and synthetic demonstrations. It does not claim clinical certification, regulatory approval, wet-lab validation, licensed current databases or external scientific qualification.",
+        "hotfix": "V19.1 RUN_BOTH metadata/repair hotfix retained; V19.2 adds module reliability and Neuro/CNS expansion without changing protected modules."
+      }
+    },
+    {
+      "name": "exact Python 3.11.9 x64",
+      "passed": true,
+      "detail": "CPython 3.11.9 x64"
+    },
+    {
+      "name": "five-part workflow",
+      "passed": true,
+      "detail": "5/5 markers"
+    },
+    {
+      "name": "five-part scientific runtime preflight",
+      "passed": true,
+      "detail": "Step206 accepts 5/5 markers"
+    },
+    {
+      "name": "same-release stale managed copy replacement",
+      "passed": true,
+      "detail": "source manifest comparison"
+    },
+    {
+      "name": "two supported user entrypoints",
+      "passed": true,
+      "detail": "INSTALL_WINDOWS.bat -> RUN_BOTH_WINDOWS.bat"
+    },
+    {
+      "name": "managed LocalAppData install",
+      "passed": true,
+      "detail": "/home/oai/AppData/Local/BioIntelAI/App/Releases/15.6.0-Step206"
+    },
+    {
+      "name": "atomic source staging",
+      "passed": true,
+      "detail": "staging plus rollback"
+    },
+    {
+      "name": "environment rollback",
+      "passed": true,
+      "detail": "previous venv restored on failure"
+    },
+    {
+      "name": "automatic deep integrity",
+      "passed": true,
+      "detail": "source and wheelhouse"
+    },
+    {
+      "name": "database backup and migration before activation",
+      "passed": true,
+      "detail": "UserData and known release-local SQLite state preserved"
+    },
+    {
+      "name": "stable shortcut refresh",
+      "passed": true,
+      "detail": "Desktop and Start Menu"
+    },
+    {
+      "name": "Stop and Restart controls",
+      "passed": true,
+      "detail": "graceful lifecycle"
+    },
+    {
+      "name": "resident supervisor",
+      "passed": true,
+      "detail": "UI/API/worker monitoring"
+    },
+    {
+      "name": "strict readiness",
+      "passed": true,
+      "detail": "API health, local SQLite read/write, Streamlit health"
+    },
+    {
+      "name": "startup failure cleanup",
+      "passed": true,
+      "detail": "no orphan UI/API/worker"
+    },
+    {
+      "name": "native smoke test is installer-blocking",
+      "passed": true,
+      "detail": "starts, verifies, and stops runtime on Windows"
+    },
+    {
+      "name": "Streamlit app exception gate",
+      "passed": true,
+      "detail": "home app executes before activation"
+    },
+    {
+      "name": "optional services isolated",
+      "passed": true,
+      "detail": "offline core unaffected"
+    },
+    {
+      "name": "browser fallback",
+      "passed": true,
+      "detail": "visible URL and clipboard fallback"
+    },
+    {
+      "name": "sanitized automatic support bundle",
+      "passed": true,
+      "detail": "failure diagnostics without project data"
+    },
+    {
+      "name": "space-safe batch paths",
+      "passed": true,
+      "detail": "quoted paths"
+    },
+    {
+      "name": "extracted package markers",
+      "passed": true,
+      "detail": "5/5 present"
+    },
+    {
+      "name": "builder runtime informational",
+      "passed": true,
+      "detail": {
+        "version": "3.13.5",
+        "allow_builder_python": true
+      }
+    }
+  ],
+  "native_windows_execution": false
+}

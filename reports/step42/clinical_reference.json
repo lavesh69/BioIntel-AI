@@ -1,0 +1,18 @@
+{
+  "classification": "documented_control_qualification",
+  "existing": [
+    "reports/scientific_evidence.sqlite3",
+    "pages/73_Scientific_Evidence_Excellence.py",
+    "docs/SCIENTIFIC_EVIDENCE_AND_VALIDATION.md"
+  ],
+  "external_boundary": "Clinical-reference coverage is not clinical deployment or ethics approval.",
+  "missing": [],
+  "observed_at": "2026-07-05T07:33:16.095066+00:00",
+  "passed": true,
+  "required": [
+    "reports/scientific_evidence.sqlite3",
+    "pages/73_Scientific_Evidence_Excellence.py",
+    "docs/SCIENTIFIC_EVIDENCE_AND_VALIDATION.md"
+  ],
+  "schema": "biointel.step42.clinical_reference.v1"
+}

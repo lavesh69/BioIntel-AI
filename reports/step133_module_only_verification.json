@@ -1,0 +1,71 @@
+{
+  "step": 133,
+  "version": "13.2.0",
+  "scope": "module-only",
+  "checks": [
+    {
+      "name": "Product version preserved",
+      "passed": true,
+      "detail": "13.2.0"
+    },
+    {
+      "name": "Module-only scope",
+      "passed": true,
+      "detail": 15
+    },
+    {
+      "name": "Module profiles",
+      "passed": true,
+      "detail": 15
+    },
+    {
+      "name": "No Step 133 central page",
+      "passed": true,
+      "detail": "no new central page"
+    },
+    {
+      "name": "All module analyses",
+      "passed": true,
+      "detail": "15/15"
+    },
+    {
+      "name": "Advanced tables",
+      "passed": true,
+      "detail": 27
+    },
+    {
+      "name": "Advanced visuals",
+      "passed": true,
+      "detail": 28
+    },
+    {
+      "name": "Renderer integration",
+      "passed": true,
+      "detail": "module tab"
+    },
+    {
+      "name": "Locked pages",
+      "passed": true,
+      "detail": "5/5"
+    },
+    {
+      "name": "Python syntax",
+      "passed": true,
+      "detail": {
+        "files": 944,
+        "failures": []
+      }
+    },
+    {
+      "name": "Database integrity",
+      "passed": true,
+      "detail": {
+        "databases": 36,
+        "rows": 108425,
+        "foreign_key_issues": 0,
+        "failures": []
+      }
+    }
+  ],
+  "passed": true
+}

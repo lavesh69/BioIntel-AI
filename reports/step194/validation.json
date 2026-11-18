@@ -1,0 +1,22 @@
+{
+  "schema": "biointel.step194.validation.v1",
+  "generated_at": "2026-07-15T10:43:46.129883+00:00",
+  "passed": false,
+  "checks": [
+    {
+      "name": "required files",
+      "passed": true,
+      "detail": "complete"
+    },
+    {
+      "name": "four part markers",
+      "passed": true,
+      "detail": "complete"
+    },
+    {
+      "name": "source manifest",
+      "passed": false,
+      "detail": "checked=25165 bad=39"
+    }
+  ]
+}

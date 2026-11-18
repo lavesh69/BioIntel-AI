@@ -1,0 +1,28 @@
+{
+  "primer": {
+    "fast": {
+      "seconds": 0.8958,
+      "pairs": 100,
+      "best_score": 99.57
+    },
+    "balanced": {
+      "seconds": 1.8011,
+      "pairs": 100,
+      "best_score": 99.57
+    },
+    "exhaustive": {
+      "seconds": 10.3672,
+      "pairs": 100,
+      "best_score": 100.0
+    }
+  },
+  "balanced_speedup_vs_exhaustive": 5.76,
+  "structure": {
+    "atom_rows": 484,
+    "display_rows": 124,
+    "table_seconds": 0.005,
+    "figure_seconds": 0.2126,
+    "figure_traces": 3,
+    "height": 840
+  }
+}

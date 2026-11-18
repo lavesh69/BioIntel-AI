@@ -1,0 +1,411 @@
+{
+  "artifact_integrity": {
+    "artifact_count": 16,
+    "failures": [],
+    "ok": true,
+    "verified": {
+      "api_load": true,
+      "clinical_reference": true,
+      "cloud_iac": true,
+      "customer_acceptance_kit": true,
+      "database_drill": true,
+      "gxp_controls": true,
+      "ha_rehearsal": true,
+      "kubernetes_static": true,
+      "multitenant_isolation": true,
+      "publication_bundle": true,
+      "regulatory_dossier": true,
+      "release_provenance": true,
+      "saas_controls": true,
+      "scientific_validation": true,
+      "security_controls": true,
+      "verification_results": true
+    },
+    "verified_count": 16
+  },
+  "authentic_external_average": 0.0,
+  "capabilities": [
+    {
+      "authentic_external_score": 0.0,
+      "boundary": "Measured repository qualification can raise the verifiable score only to the published cap; customers, regulators, journals and production history require genuine third-party evidence.",
+      "ceiling_without_external_evidence": 6.5,
+      "evidence_level": "moderate_verifiable_internal_evidence",
+      "implementation_score": 10.0,
+      "key": "pharma_rnd_deployment",
+      "label": "Real Pharma R&D Deployment Evidence",
+      "maximum_current_score": 6.5,
+      "missing_external_proof": [
+        "Sponsor-signed deployment dossier",
+        "90+ days authentic pharmaceutical operating history"
+      ],
+      "passed_measurements": [
+        "Scientific benchmark and validation package verified",
+        "Decision-use publication/reproducibility bundle verified",
+        "Controlled R&D operating controls verified"
+      ],
+      "verifiable_score": 6.5
+    },
+    {
+      "authentic_external_score": 0.0,
+      "boundary": "Measured repository qualification can raise the verifiable score only to the published cap; customers, regulators, journals and production history require genuine third-party evidence.",
+      "ceiling_without_external_evidence": 5.5,
+      "evidence_level": "moderate_verifiable_internal_evidence",
+      "implementation_score": 10.0,
+      "key": "clinical_deployment",
+      "label": "Real Clinical Deployment Evidence",
+      "maximum_current_score": 5.5,
+      "missing_external_proof": [
+        "Approved protocol and ethics decision",
+        "Real clinical production history"
+      ],
+      "passed_measurements": [
+        "Clinical-reference data and safety-control package verified",
+        "Audit trail, controlled records and validation controls verified"
+      ],
+      "verifiable_score": 5.5
+    },
+    {
+      "authentic_external_score": 0.0,
+      "boundary": "Measured repository qualification can raise the verifiable score only to the published cap; customers, regulators, journals and production history require genuine third-party evidence.",
+      "ceiling_without_external_evidence": 8.0,
+      "evidence_level": "strong_verifiable_internal_evidence",
+      "implementation_score": 10.0,
+      "key": "publication_grade_dti",
+      "label": "Publication-Grade DTI Evidence",
+      "maximum_current_score": 8.0,
+      "missing_external_proof": [
+        "Persistent DOI and public archival record"
+      ],
+      "passed_measurements": [
+        "Complete checksum-bound publication package verified",
+        "Deterministic scientific validation report verified",
+        "Release provenance and source manifest verified"
+      ],
+      "verifiable_score": 8.0
+    },
+    {
+      "authentic_external_score": 0.0,
+      "boundary": "Measured repository qualification can raise the verifiable score only to the published cap; customers, regulators, journals and production history require genuine third-party evidence.",
+      "ceiling_without_external_evidence": 4.0,
+      "evidence_level": "moderate_verifiable_internal_evidence",
+      "implementation_score": 10.0,
+      "key": "peer_reviewed_validation",
+      "label": "Peer-Reviewed Validation Evidence",
+      "maximum_current_score": 4.0,
+      "missing_external_proof": [
+        "Journal acceptance and independent peer-review record"
+      ],
+      "passed_measurements": [
+        "Review-ready manuscript, methods, data and code package verified",
+        "Independent-reproduction instructions and golden results verified"
+      ],
+      "verifiable_score": 4.0
+    },
+    {
+      "authentic_external_score": 0.0,
+      "boundary": "Measured repository qualification can raise the verifiable score only to the published cap; customers, regulators, journals and production history require genuine third-party evidence.",
+      "ceiling_without_external_evidence": 3.0,
+      "evidence_level": "foundational_verifiable_evidence",
+      "implementation_score": 10.0,
+      "key": "regulatory_approval",
+      "label": "Regulatory Approval Evidence",
+      "maximum_current_score": 3.0,
+      "missing_external_proof": [
+        "Regulatory authority decision letter and approval identifier"
+      ],
+      "passed_measurements": [
+        "Regulator-ready dossier completeness verified",
+        "Electronic-record, audit-trail and signature controls verified"
+      ],
+      "verifiable_score": 3.0
+    },
+    {
+      "authentic_external_score": 0.0,
+      "boundary": "Measured repository qualification can raise the verifiable score only to the published cap; customers, regulators, journals and production history require genuine third-party evidence.",
+      "ceiling_without_external_evidence": 7.0,
+      "evidence_level": "strong_verifiable_internal_evidence",
+      "implementation_score": 10.0,
+      "key": "gxp_operating_history",
+      "label": "Completed GxP Operating History",
+      "maximum_current_score": 7.0,
+      "missing_external_proof": [
+        "180+ days controlled operation with approved SOP execution"
+      ],
+      "passed_measurements": [
+        "GxP control execution and audit-chain integrity verified",
+        "Controlled backup/restore and record integrity verified",
+        "Immutable release provenance verified"
+      ],
+      "verifiable_score": 7.0
+    },
+    {
+      "authentic_external_score": 0.0,
+      "boundary": "Measured repository qualification can raise the verifiable score only to the published cap; customers, regulators, journals and production history require genuine third-party evidence.",
+      "ceiling_without_external_evidence": 4.5,
+      "evidence_level": "moderate_verifiable_internal_evidence",
+      "implementation_score": 10.0,
+      "key": "regulatory_inspection",
+      "label": "Successful Regulatory Inspection History",
+      "maximum_current_score": 4.5,
+      "missing_external_proof": [
+        "Authority inspection report and finding closure"
+      ],
+      "passed_measurements": [
+        "Inspection-ready evidence index and CAPA workflow verified",
+        "Inspection reconstruction controls verified"
+      ],
+      "verifiable_score": 4.5
+    },
+    {
+      "authentic_external_score": 0.0,
+      "boundary": "Measured repository qualification can raise the verifiable score only to the published cap; customers, regulators, journals and production history require genuine third-party evidence.",
+      "ceiling_without_external_evidence": 7.5,
+      "evidence_level": "strong_verifiable_internal_evidence",
+      "implementation_score": 10.0,
+      "key": "production_sla_history",
+      "label": "Production SLA Operating History",
+      "maximum_current_score": 7.5,
+      "missing_external_proof": [
+        "90+ days signed production telemetry and incident history"
+      ],
+      "passed_measurements": [
+        "Measured API availability, latency and error-rate qualification passed",
+        "Application failover rehearsal passed",
+        "Restore integrity qualification passed"
+      ],
+      "verifiable_score": 7.5
+    },
+    {
+      "authentic_external_score": 0.0,
+      "boundary": "Measured repository qualification can raise the verifiable score only to the published cap; customers, regulators, journals and production history require genuine third-party evidence.",
+      "ceiling_without_external_evidence": 8.0,
+      "evidence_level": "strong_verifiable_internal_evidence",
+      "implementation_score": 10.0,
+      "key": "multitenant_production",
+      "label": "Real Multi-Tenant Production History",
+      "maximum_current_score": 8.0,
+      "missing_external_proof": [
+        "90+ days with independent external tenants"
+      ],
+      "passed_measurements": [
+        "High-volume tenant isolation qualification passed",
+        "Tenant-capable API load qualification passed"
+      ],
+      "verifiable_score": 8.0
+    },
+    {
+      "authentic_external_score": 0.0,
+      "boundary": "Measured repository qualification can raise the verifiable score only to the published cap; customers, regulators, journals and production history require genuine third-party evidence.",
+      "ceiling_without_external_evidence": 7.5,
+      "evidence_level": "strong_verifiable_internal_evidence",
+      "implementation_score": 10.0,
+      "key": "kubernetes_production",
+      "label": "Real Kubernetes Production History",
+      "maximum_current_score": 7.5,
+      "missing_external_proof": [
+        "90+ days on a real multi-zone Kubernetes cluster"
+      ],
+      "passed_measurements": [
+        "Helm/Kubernetes production-control validation passed",
+        "Service redundancy/failover rehearsal passed",
+        "Deployable artifact provenance verified"
+      ],
+      "verifiable_score": 7.5
+    },
+    {
+      "authentic_external_score": 0.0,
+      "boundary": "Measured repository qualification can raise the verifiable score only to the published cap; customers, regulators, journals and production history require genuine third-party evidence.",
+      "ceiling_without_external_evidence": 6.5,
+      "evidence_level": "moderate_verifiable_internal_evidence",
+      "implementation_score": 10.0,
+      "key": "cloud_scale",
+      "label": "Real Cloud Scale Evidence",
+      "maximum_current_score": 6.5,
+      "missing_external_proof": [
+        "Cloud telemetry, billing and regional production evidence"
+      ],
+      "passed_measurements": [
+        "Cloud-neutral infrastructure-as-code qualification passed",
+        "Measured scale/load qualification passed",
+        "Autoscaling and multi-zone controls verified"
+      ],
+      "verifiable_score": 6.5
+    },
+    {
+      "authentic_external_score": 0.0,
+      "boundary": "Measured repository qualification can raise the verifiable score only to the published cap; customers, regulators, journals and production history require genuine third-party evidence.",
+      "ceiling_without_external_evidence": 7.5,
+      "evidence_level": "strong_verifiable_internal_evidence",
+      "implementation_score": 10.0,
+      "key": "sustained_high_load",
+      "label": "Sustained High-Load Production Evidence",
+      "maximum_current_score": 7.5,
+      "missing_external_proof": [
+        "24-hour production-like independent load qualification"
+      ],
+      "passed_measurements": [
+        "Measured concurrent load run passed",
+        "Failover under request traffic passed"
+      ],
+      "verifiable_score": 7.5
+    },
+    {
+      "authentic_external_score": 0.0,
+      "boundary": "Measured repository qualification can raise the verifiable score only to the published cap; customers, regulators, journals and production history require genuine third-party evidence.",
+      "ceiling_without_external_evidence": 9.0,
+      "evidence_level": "strong_verifiable_internal_evidence",
+      "implementation_score": 10.0,
+      "key": "disaster_recovery_drill",
+      "label": "Disaster-Recovery Drill Evidence",
+      "maximum_current_score": 9.0,
+      "missing_external_proof": [
+        "Independently witnessed production restore drill"
+      ],
+      "passed_measurements": [
+        "All active databases restored with matching checksums and integrity",
+        "Restore evidence is checksum-bound to release provenance"
+      ],
+      "verifiable_score": 9.0
+    },
+    {
+      "authentic_external_score": 0.0,
+      "boundary": "Measured repository qualification can raise the verifiable score only to the published cap; customers, regulators, journals and production history require genuine third-party evidence.",
+      "ceiling_without_external_evidence": 7.0,
+      "evidence_level": "strong_verifiable_internal_evidence",
+      "implementation_score": 10.0,
+      "key": "high_availability",
+      "label": "High-Availability Production Evidence",
+      "maximum_current_score": 7.0,
+      "missing_external_proof": [
+        "90+ days availability and real multi-zone failover"
+      ],
+      "passed_measurements": [
+        "Primary-to-secondary failover rehearsal passed",
+        "PDB, HPA, topology spread and multi-replica controls verified",
+        "Post-failover API traffic qualification passed"
+      ],
+      "verifiable_score": 7.0
+    },
+    {
+      "authentic_external_score": 0.0,
+      "boundary": "Measured repository qualification can raise the verifiable score only to the published cap; customers, regulators, journals and production history require genuine third-party evidence.",
+      "ceiling_without_external_evidence": 5.5,
+      "evidence_level": "moderate_verifiable_internal_evidence",
+      "implementation_score": 10.0,
+      "key": "commercial_saas_history",
+      "label": "Commercial SaaS Operating History",
+      "maximum_current_score": 5.5,
+      "missing_external_proof": [
+        "Paying customers and completed billing/support history"
+      ],
+      "passed_measurements": [
+        "Tenant isolation and resource ownership verified",
+        "Entitlement, quota, billing-event and support controls verified"
+      ],
+      "verifiable_score": 5.5
+    },
+    {
+      "authentic_external_score": 0.0,
+      "boundary": "Measured repository qualification can raise the verifiable score only to the published cap; customers, regulators, journals and production history require genuine third-party evidence.",
+      "ceiling_without_external_evidence": 4.0,
+      "evidence_level": "moderate_verifiable_internal_evidence",
+      "implementation_score": 10.0,
+      "key": "enterprise_customer_validation",
+      "label": "Enterprise Customer Validation",
+      "maximum_current_score": 4.0,
+      "missing_external_proof": [
+        "External enterprise acceptance signature"
+      ],
+      "passed_measurements": [
+        "Enterprise UAT and acceptance package verified",
+        "Enterprise security and audit controls verified"
+      ],
+      "verifiable_score": 4.0
+    },
+    {
+      "authentic_external_score": 0.0,
+      "boundary": "Measured repository qualification can raise the verifiable score only to the published cap; customers, regulators, journals and production history require genuine third-party evidence.",
+      "ceiling_without_external_evidence": 4.0,
+      "evidence_level": "moderate_verifiable_internal_evidence",
+      "implementation_score": 10.0,
+      "key": "pharma_customer_validation",
+      "label": "Pharmaceutical Customer Validation",
+      "maximum_current_score": 4.0,
+      "missing_external_proof": [
+        "External pharmaceutical customer acceptance signature"
+      ],
+      "passed_measurements": [
+        "Pharmaceutical UAT/scientific decision-use package verified",
+        "GxP and scientific governance controls verified",
+        "Scientific validation evidence package verified"
+      ],
+      "verifiable_score": 4.0
+    },
+    {
+      "authentic_external_score": 0.0,
+      "boundary": "Measured repository qualification can raise the verifiable score only to the published cap; customers, regulators, journals and production history require genuine third-party evidence.",
+      "ceiling_without_external_evidence": 7.0,
+      "evidence_level": "moderate_verifiable_internal_evidence",
+      "implementation_score": 10.0,
+      "key": "overall_platform_maturity",
+      "label": "Real-World Overall Platform Maturity",
+      "maximum_current_score": 6.2,
+      "missing_external_proof": [
+        "Qualifying external evidence across all operating-history areas"
+      ],
+      "passed_measurements": [
+        "Real Pharma R&D Deployment Evidence: 6.5/10",
+        "Real Clinical Deployment Evidence: 5.5/10",
+        "Publication-Grade DTI Evidence: 8.0/10",
+        "Peer-Reviewed Validation Evidence: 4.0/10",
+        "Regulatory Approval Evidence: 3.0/10",
+        "Completed GxP Operating History: 7.0/10",
+        "Successful Regulatory Inspection History: 4.5/10",
+        "Production SLA Operating History: 7.5/10",
+        "Real Multi-Tenant Production History: 8.0/10",
+        "Real Kubernetes Production History: 7.5/10",
+        "Real Cloud Scale Evidence: 6.5/10",
+        "Sustained High-Load Production Evidence: 7.5/10",
+        "Disaster-Recovery Drill Evidence: 9.0/10",
+        "High-Availability Production Evidence: 7.0/10",
+        "Commercial SaaS Operating History: 5.5/10",
+        "Enterprise Customer Validation: 4.0/10",
+        "Pharmaceutical Customer Validation: 4.0/10"
+      ],
+      "verifiable_score": 6.2
+    }
+  ],
+  "capability_count": 18,
+  "external_registry_integrity": {
+    "failures": [],
+    "ok": true
+  },
+  "generated_at": "2026-07-05T07:38:16.501120+00:00",
+  "implementation_average": 10.0,
+  "maximum_current_average": 6.2,
+  "measurement_status": {
+    "api_load": true,
+    "clinical_reference": true,
+    "cloud_iac": true,
+    "customer_acceptance_kit": true,
+    "database_drill": true,
+    "gxp_controls": true,
+    "ha_rehearsal": true,
+    "kubernetes_static": true,
+    "multitenant_isolation": true,
+    "publication_bundle": true,
+    "regulatory_dossier": true,
+    "release_provenance": true,
+    "saas_controls": true,
+    "scientific_validation": true,
+    "security_controls": true
+  },
+  "schema": "biointel.step42.maximum-verifiable-evidence.v1",
+  "score_policy": {
+    "authentic_external": "Independent customers, regulators, journals, laboratories or real production operating history.",
+    "implementation": "Repository controls, schemas, APIs and tests.",
+    "verifiable": "Measured, checksum-bound repository or controlled-environment qualification evidence."
+  },
+  "strong_verifiable_areas": 8,
+  "verifiable_average": 6.2
+}

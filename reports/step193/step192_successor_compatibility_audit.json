@@ -1,0 +1,3836 @@
+{
+  "schema": "biointel.step192.release-integrity.v1",
+  "generated_at_utc": "2026-07-15T08:51:00.241882+00:00",
+  "root": "/mnt/data/biointel193_work/BioIntel-AI",
+  "release_step": 192,
+  "release_version": "15.0.0",
+  "passed": true,
+  "checks": [
+    {
+      "name": "release version consistency",
+      "passed": true,
+      "detail": "{\"step192\": {\"VERSION\": \"15.1.0\", \"citation\": \"15.1.0\", \"package_init\": \"15.1.0\", \"pyproject\": \"15.1.0\", \"release_json\": \"15.0.0\", \"settings\": \"15.1.0\"}, \"successor_step193\": true}",
+      "severity": "critical"
+    },
+    {
+      "name": "release identity",
+      "passed": true,
+      "detail": "{\"author\": \"Lavesh Dobriyal\", \"controlled_scientific_release_eligible\": false, \"date\": \"2026-07-15\", \"external_blockers\": [\"public_archive_doi\", \"public_repository_url\", \"journal_compatible_licence_decision\", \"independent_external_benchmarks\", \"real wet-lab/clinical/instrument evidence where applicable\"], \"honesty_boundary\": \"Internal, synthetic and deterministic tests verify software behavior only and do not manufacture external scientific validity.\", \"installation_method\": [\"INSTALL_WINDOWS.bat\", \"RUN_BOTH_WINDOWS.bat\"], \"major_module_page_files\": 79, \"major_modules\": 80, \"release_name\": \"Release Integrity, Publication Integration & Offline Install Repair\", \"schema\": \"biointel.step192.release.v1\", \"step\": 192, \"version\": \"15.0.0\"}",
+      "severity": "critical"
+    },
+    {
+      "name": "dependency lock parity",
+      "passed": true,
+      "detail": "project=32 lock=32",
+      "severity": "critical"
+    },
+    {
+      "name": "offline wheelhouse integrity",
+      "passed": true,
+      "detail": "{\"corrupt_wheels\": [], \"hash_mismatches\": [], \"lock_rows\": 102, \"malformed_manifest\": [], \"metadata_wheel_count\": 102, \"missing_required\": [], \"missing_wheels\": [], \"total_size_bytes\": 248266900, \"unexpected_wheels\": [], \"unhashed_lock_rows\": [], \"valid\": true, \"wheel_count\": 102}",
+      "severity": "critical"
+    },
+    {
+      "name": "all page syntax and security",
+      "passed": true,
+      "detail": "pages=262 failures=0",
+      "severity": "critical"
+    },
+    {
+      "name": "major-module publication hooks",
+      "passed": true,
+      "detail": "hooked=79/79",
+      "severity": "critical"
+    },
+    {
+      "name": "80-module publication assets",
+      "passed": true,
+      "detail": "modules=80 failures=0",
+      "severity": "critical"
+    },
+    {
+      "name": "SQLite integrity",
+      "passed": true,
+      "detail": "databases=51 failures=0",
+      "severity": "advisory"
+    },
+    {
+      "name": "scientific claim safety",
+      "passed": true,
+      "detail": "files=3 failures=0",
+      "severity": "critical"
+    },
+    {
+      "name": "classic installer latest-release contract",
+      "passed": true,
+      "detail": "INSTALL_WINDOWS.bat and RUN_BOTH_WINDOWS.bat",
+      "severity": "critical"
+    }
+  ],
+  "critical_failures": [],
+  "page_audit": {
+    "rows": [
+      {
+        "page": "0_Quick_Start.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 1
+      },
+      {
+        "page": "100_Rare_Disease_Genome_Interpretation.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "101_Biomedical_Knowledge_Graph_Copilot.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": true,
+        "functions": 0
+      },
+      {
+        "page": "102_Multi_Omics_Biomarker_Discovery.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": true,
+        "functions": 0
+      },
+      {
+        "page": "103_Visual_Workflow_Builder.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": true,
+        "functions": 0
+      },
+      {
+        "page": "104_Innovation_Modules_Hub.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "105_Scientific_Execution_Quality_Center.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "106_Reference_Database_Manager.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 1
+      },
+      {
+        "page": "107_Installation_Data_Recovery_Center.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "108_External_Model_Qualification.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "109_Lab_Instrument_Import_Center.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "10_External_Databases.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "110_Reliability_Optimization_Center.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 2
+      },
+      {
+        "page": "111_Windows_UI_Regression_Performance_Center.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "112_Epigenomics_and_Chromatin_Regulation_Studio.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": true,
+        "functions": 0
+      },
+      {
+        "page": "113_Metabolomics_and_Lipidomics_Workbench.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": true,
+        "functions": 0
+      },
+      {
+        "page": "114_Immunoinformatics_and_Vaccine_Design_Lab.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": true,
+        "functions": 0
+      },
+      {
+        "page": "115_Antibody_and_Biologics_Engineering_Studio.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": true,
+        "functions": 0
+      },
+      {
+        "page": "116_Molecular_Docking_and_Dynamics_Lab.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": true,
+        "functions": 0
+      },
+      {
+        "page": "117_Pharmacogenomics_and_Precision_Medicine_Board.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": true,
+        "functions": 0
+      },
+      {
+        "page": "118_Spatial_Omics_and_Digital_Pathology_Studio.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": true,
+        "functions": 0
+      },
+      {
+        "page": "119_Single_Cell_Trajectory_and_Communication_Lab.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": true,
+        "functions": 0
+      },
+      {
+        "page": "11_Experiment_Registry.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "120_Bioimage_and_Microscopy_AI_Lab.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": true,
+        "functions": 0
+      },
+      {
+        "page": "121_Biostatistics_Power_and_Experimental_Design_Studio.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "122_Clinical_Trial_Biomarker_and_Patient_Stratification_Studio.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": true,
+        "functions": 0
+      },
+      {
+        "page": "123_Genome_Editing_Safety_and_Off_Target_Validation_Lab.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": true,
+        "functions": 0
+      },
+      {
+        "page": "124_Proteogenomics_and_Neoantigen_Discovery_Studio.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": true,
+        "functions": 0
+      },
+      {
+        "page": "125_Bioprocess_and_Fermentation_Optimization_Studio.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": true,
+        "functions": 0
+      },
+      {
+        "page": "126_LIMS_ELN_and_Sample_Chain_of_Custody_Hub.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "127_Causal_Biology_and_Perturbation_Modelling.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": true,
+        "functions": 0
+      },
+      {
+        "page": "128_Explainable_AI_and_Model_Assurance_Center.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": true,
+        "functions": 0
+      },
+      {
+        "page": "129_Multi_Omics_Harmonization_and_Batch_Correction_Studio.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": true,
+        "functions": 0
+      },
+      {
+        "page": "12_API_Deployment.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "130_Glycomics_and_Glycoproteomics_Workbench.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": true,
+        "functions": 0
+      },
+      {
+        "page": "131_One_Health_and_Environmental_Genomics_Center.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": true,
+        "functions": 0
+      },
+      {
+        "page": "132_Synthetic_Data_and_Privacy_Engineering_Lab.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": true,
+        "functions": 0
+      },
+      {
+        "page": "133_Scientific_Expansion_Hub.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "134_Population_Genetics_GWAS_Studio.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": true,
+        "functions": 0
+      },
+      {
+        "page": "135_Structural_Variant_Repeat_Expansion_Lab.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": true,
+        "functions": 0
+      },
+      {
+        "page": "136_Longitudinal_Multi_Omics_Time_Series_Studio.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": true,
+        "functions": 0
+      },
+      {
+        "page": "137_RNA_Isoform_Alternative_Splicing_Studio.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": true,
+        "functions": 0
+      },
+      {
+        "page": "138_RNA_Modification_Epitranscriptomics_Lab.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": true,
+        "functions": 0
+      },
+      {
+        "page": "139_Strain_Resolved_Microbiome_Functional_Profiling_Studio.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": true,
+        "functions": 0
+      },
+      {
+        "page": "13_ChEMBL_Dataset_Builder.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "140_Cell_Atlas_Mapping_Reference_Annotation_Studio.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": true,
+        "functions": 0
+      },
+      {
+        "page": "141_Phenotypic_Screening_High_Content_Analysis_Lab.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": true,
+        "functions": 0
+      },
+      {
+        "page": "142_Organoid_3D_Cell_Model_Analytics.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": true,
+        "functions": 0
+      },
+      {
+        "page": "143_Protein_Language_Model_Generative_Design_Lab.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": true,
+        "functions": 0
+      },
+      {
+        "page": "144_Enzyme_Engineering_Metabolic_Pathway_Design_Studio.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": true,
+        "functions": 0
+      },
+      {
+        "page": "145_Host_Pathogen_Interaction_Studio.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": true,
+        "functions": 0
+      },
+      {
+        "page": "146_Virology_Viral_Evolution_Workbench.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": true,
+        "functions": 0
+      },
+      {
+        "page": "147_Rare_Variant_Burden_Family_Genetics_Lab.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": true,
+        "functions": 0
+      },
+      {
+        "page": "148_Universal_Scientific_File_Inspector.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": true,
+        "functions": 0
+      },
+      {
+        "page": "149_Cross_Module_Project_Workspace.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": true,
+        "functions": 0
+      },
+      {
+        "page": "14_External_Validation_Drift.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "150_Visual_Scientific_Workflow_Builder_2.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": true,
+        "functions": 0
+      },
+      {
+        "page": "151_Real_Background_Job_Queue_Engine.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": true,
+        "functions": 0
+      },
+      {
+        "page": "152_Unified_Scientific_Report_Builder.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": true,
+        "functions": 0
+      },
+      {
+        "page": "153_Reference_Database_Lifecycle_Manager_2.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": true,
+        "functions": 0
+      },
+      {
+        "page": "154_Data_Provenance_Reproducibility_Ledger_2.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": true,
+        "functions": 0
+      },
+      {
+        "page": "155_Scientific_Evidence_Citation_Engine.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": true,
+        "functions": 0
+      },
+      {
+        "page": "156_Model_Registry_ML_Lifecycle_Center_2.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": true,
+        "functions": 0
+      },
+      {
+        "page": "157_Instrument_Integration_Hub_2.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "158_Collaboration_Scientific_Review_System_2.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": true,
+        "functions": 0
+      },
+      {
+        "page": "159_Offline_AI_Scientific_Copilot_2.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": true,
+        "functions": 0
+      },
+      {
+        "page": "15_Audit_Release.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "160_Data_Lakehouse_Sample_Search_Engine_2.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": true,
+        "functions": 0
+      },
+      {
+        "page": "161_Benchmark_Validation_Center_2.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": true,
+        "functions": 0
+      },
+      {
+        "page": "162_Plugin_Module_Marketplace_2.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": true,
+        "functions": 0
+      },
+      {
+        "page": "163_Step104_Scientific_and_Platform_Expansion_Hub.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "164_Visual_Interaction_Accessibility_Workspace.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "165_Advanced_Scientific_Viewers.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "166_Real_Engine_Native_Format_Integration.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 2
+      },
+      {
+        "page": "167_Bioinformatics_Feature_Upgrade_Center.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "168_Scientific_Depth_Optimization_Center.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "169_Non_Chart_Scientific_Visuals.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "16_Batch_Sequence_Analysis.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "170_Module_Experience_Canvases_2_to_9.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "171_Module_Catalogue_Search.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "172_Scientific_Depth_Command_Center.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "173_Digital_Pathology_Histology_Foundation_Model_Studio.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": true,
+        "functions": 0
+      },
+      {
+        "page": "174_Long_Read_Epigenome_Methylation_Imprinting_Studio.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": true,
+        "functions": 0
+      },
+      {
+        "page": "175_Single_Cell_Long_Read_Transcript_Isoform_Studio.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": true,
+        "functions": 0
+      },
+      {
+        "page": "176_Biomedical_Foundation_Model_Embedding_Hub.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": true,
+        "functions": 0
+      },
+      {
+        "page": "177_AMR_Genomic_Surveillance_Resistance_Intelligence.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": true,
+        "functions": 0
+      },
+      {
+        "page": "178_Spatial_Medicine_Tumour_Microenvironment_Atlas.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": true,
+        "functions": 0
+      },
+      {
+        "page": "179_Gene_Therapy_Vector_Engineering_Safety_Studio.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": true,
+        "functions": 0
+      },
+      {
+        "page": "17_Local_Data_Manager.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "180_Cell_Therapy_CART_Immune_Engineering_Studio.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": true,
+        "functions": 0
+      },
+      {
+        "page": "181_Federated_Biomedical_AI_Privacy_Lab.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": true,
+        "functions": 0
+      },
+      {
+        "page": "182_Clinical_Biomarker_Survival_Patient_Stratification.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": true,
+        "functions": 0
+      },
+      {
+        "page": "183_Protein_Ligand_CoDesign_Studio.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": true,
+        "functions": 0
+      },
+      {
+        "page": "184_Pangenome_Population_Medicine_Studio.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": true,
+        "functions": 0
+      },
+      {
+        "page": "185_Pharmacovigilance_Adverse_Event_Intelligence.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": true,
+        "functions": 0
+      },
+      {
+        "page": "186_Synthetic_Cohort_Trial_Simulation_Lab.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": true,
+        "functions": 0
+      },
+      {
+        "page": "187_Autonomous_Laboratory_Experiment_Planner.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": true,
+        "functions": 0
+      },
+      {
+        "page": "188_Next_Generation_Biomedical_Modules_Hub.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "189_Scientific_Visual_Workspace_Studio.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "18_Workspace_Backup_Restore.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "190_Cross_Module_Evidence_Board.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "191_Scientific_Scenario_Sensitivity_Lab.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "192_Validation_Cohort_Manager.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "193_Visual_Review_Approval_Center.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "194_Scientific_Intelligence_Hub.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "195_Real_Time_Scientific_Canvas_Collaboration_Center.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "196_Multi_Scale_Scientific_Visual_Intelligence_Studio.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "197_Immune_Repertoire_Studio.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "198_Single_Cell_Multiome_Regulatory_Network_Studio.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "199_Gene_Regulatory_Network_TF_Activity_Studio.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "19_System_Diagnostics.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 2
+      },
+      {
+        "page": "1_Sequence_Analyzer.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "200_Federated_Genomic_Discovery_Phenopacket_Studio.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "201_Genome_Annotation_Comparative_Annotation_Studio.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "202_Circular_DNA_Mobile_Elements_Genome_Instability_Studio.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "203_Environmental_Genomics_eDNA_Surveillance_Studio.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "204_Comparative_Regulatory_Genomics_Studio.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "205_Study_Protocol_Designer.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "206_Sample_Size_Statistical_Power_Studio.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "207_Clinical_Trial_Design_Studio.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "208_Experimental_Design_DoE_Workbench.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "209_Randomization_Blinding_Allocation_Studio.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "20_Workflow_Dashboard.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 2
+      },
+      {
+        "page": "210_Cohort_Definition_Eligibility_Builder.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "211_Endpoint_Outcome_Strategy_Studio.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "212_Biomarker_Study_Planning_Studio.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "213_Sampling_Biospecimen_Planning_Studio.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "214_Data_Collection_CRF_Designer.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "215_Statistical_Analysis_Plan_Studio.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "216_Research_Feasibility_Recruitment_Planner.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "217_Research_Timeline_Milestones_Dependencies_Studio.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "218_Research_Risk_Mitigation_Planner.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "219_Evidence_Gap_Literature_Planning_Studio.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "21_Dataset_Registry_Lineage.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "220_PreRegistration_Reproducibility_Studio.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "221_Research_Planning_Command_Center.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "222_Research_Budget_Participant_Burden_Studio.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "223_Research_Ethics_Consent_Participant_Protection_Studio.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "224_Research_Data_Management_FAIR_Planning_Studio.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "225_Data_Monitoring_Interim_Review_Safety_Studio.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "226_Publication_Dissemination_Knowledge_Translation_Studio.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "227_Scientific_Readiness_Command_Center.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 1
+      },
+      {
+        "page": "228_Module_Reliability_Command_Center.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 3
+      },
+      {
+        "page": "229_Module_Quality_10of10_Command_Center.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 1
+      },
+      {
+        "page": "22_Model_Lifecycle.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 3
+      },
+      {
+        "page": "230_All_Module_10of10_Upgrade_Center.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 2
+      },
+      {
+        "page": "231_Model_Authenticity_10of10_Center.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 4
+      },
+      {
+        "page": "232_All_Module_Authentic_10of10_Center.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 2
+      },
+      {
+        "page": "233_Operational_Readiness_10of10_Center.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 2
+      },
+      {
+        "page": "234_Priority_Three_Module_Excellence_Center.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "235_Six_Module_Scientific_Excellence_Center.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "236_Priority_Module_Scientific_Excellence_Center.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "237_Remaining_Modules_and_External_Evidence_10of10_Center.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "238_Final_Consolidation_10of10_Center.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "239_Specialist_Runtime_Reference_Qualification.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "23_Batch_Prediction_Jobs.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 2
+      },
+      {
+        "page": "240_Authentic_Models_Independent_Benchmarks.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "241_External_Confirmation_Formal_Release.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "242_Final_All_Module_10of10_Command_Center.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "243_Phase_1_to_9_Real_World_Qualification_Execution.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "244_Target_Environment_Engine_Reference_Qualification.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "246_Step176_Target_Module_Qualification_Center.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "247_Step177_21_Module_Qualification_Center.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "248_Step178_19_Module_Assurance_Center.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "249_Step179_18_Platform_Core_Assurance_Center.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "24_Appearance_Studio.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 8
+      },
+      {
+        "page": "250_Step180_Final_Five_Scientific_Qualification_Center.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "251_Step181_External_Scientific_Evidence_Center.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "252_Step182_Demo_Evidence_Center.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "253_Step183_All_Module_Demo_Center.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "254_Step184_43_Module_Demo_Assurance_Center.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "255_Step185_19_Module_Operational_Assurance_Center.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "256_Step186_18_Module_Platform_Completion_Center.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "257_Step187_All_Page_Excellence_Center.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "258_Step188_Universal_Major_Module_Standard_Center.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "259_Step189_Universal_Production_Platform_Center.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "25_Command_Center.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 2
+      },
+      {
+        "page": "260_Step190_Scientific_Execution_Interoperability_Center.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "261_Step192_Release_Integrity_Publication_Center.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 1
+      },
+      {
+        "page": "262_Step193_Mandatory_Module_Completion_Install_Repair_Center.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "26_Research_Report_Studio.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "27_Executive_Overview.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "28_Project_Portfolio.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "29_Activity_Risk_Center.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "2_Sequence_Comparison.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "30_Governance_Hub.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "31_Evidence_Package_Studio.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 1
+      },
+      {
+        "page": "32_Release_Readiness_Lineage.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 1
+      },
+      {
+        "page": "33_Data_Model_Library.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 2
+      },
+      {
+        "page": "34_ML_AutoLab.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 1
+      },
+      {
+        "page": "35_Double_Data_ML.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "36_Data_Coverage_Center.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "37_5X_Data_ML.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "38_Data_Intelligence_Hub.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "39_Knowledge_Warehouse.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "3_Drug_SMILES_Analyzer.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "40_Analytics_Observability.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 1
+      },
+      {
+        "page": "41_Research_Assets.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 1
+      },
+      {
+        "page": "42_Internet_Research_Hub.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "43_Scientific_Data_Curation.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "44_Performance_Job_Center.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": true,
+        "functions": 0
+      },
+      {
+        "page": "45_Scientific_Release_Gate.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 1
+      },
+      {
+        "page": "46_Real_Evidence_Studio.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "47_Benchmark_Leakage_Lab.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "48_Evidence_Review_Queue.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "49_Document_Intelligence_Center.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": true,
+        "functions": 0
+      },
+      {
+        "page": "4_DTI_Feature_Builder.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "50_Document_Extraction_History.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "51_OCR_Layout_Review.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "52_Batch_Document_Processor.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 1
+      },
+      {
+        "page": "53_Document_Knowledge_Search.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "54_Document_Evidence_Bridge.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "55_Demo_Data_Hub.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "56_FASTQ_Genomics_QC.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 1
+      },
+      {
+        "page": "57_Variant_Annotation_Workbench.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "58_Primer_CRISPR_Codon_Studio.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "59_Transcriptomics_Expression_Lab.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "5_Model_Training.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "60_Protein_Annotation_Proteomics.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "61_Structural_Bioinformatics.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": true,
+        "functions": 1
+      },
+      {
+        "page": "62_ADMET_Drug_Discovery.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "63_Pathway_Network_Analysis.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "64_Wet_Lab_Biotechnology.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": true,
+        "functions": 4
+      },
+      {
+        "page": "65_Microbiology_Metagenomics.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "66_Omics_Integration_Hub.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 1
+      },
+      {
+        "page": "67_Bioinformatics_Capability_Center.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "68_Alignment_Phylogeny.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 3
+      },
+      {
+        "page": "69_Scientific_Data_Readiness.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "6_DTI_Predictor.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 1
+      },
+      {
+        "page": "70_BioIntel_Studio.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 2
+      },
+      {
+        "page": "71_Platform_Quality_Center.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 2
+      },
+      {
+        "page": "72_Compliance_Research_Readiness.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 1
+      },
+      {
+        "page": "73_Scientific_Evidence_Excellence.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 1
+      },
+      {
+        "page": "74_DTI_Validation_Evidence_Center.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 1
+      },
+      {
+        "page": "75_Real_World_Operations_Evidence.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 1
+      },
+      {
+        "page": "76_Final_Assurance_Center.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 1
+      },
+      {
+        "page": "77_Biotechnology_Project_Center.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "78_Protein_Interaction_ML.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 1
+      },
+      {
+        "page": "79_Comparative_Pathogen_Genomics.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 1
+      },
+      {
+        "page": "7_Model_Evaluation.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "80_Single_Cell_Heterogeneity.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": true,
+        "functions": 0
+      },
+      {
+        "page": "81_Cancer_Genomics.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": true,
+        "functions": 0
+      },
+      {
+        "page": "82_Metagenomics_Pipeline.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": true,
+        "functions": 0
+      },
+      {
+        "page": "83_BioIntel_Copilot.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": true,
+        "functions": 1
+      },
+      {
+        "page": "84_Connected_Data_Explorer.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "85_Provider_Integration_Center.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "86_Privacy_Security_Center.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "87_Store_Readiness_Center.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": true,
+        "functions": 0
+      },
+      {
+        "page": "88_Discovery_Command_Center.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 2
+      },
+      {
+        "page": "89_Lab_Analytics_Command_Center.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "8_Data_Quality_Activity.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "90_Clinical_Pharma_Validation_Center.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": true,
+        "functions": 3
+      },
+      {
+        "page": "91_Real_External_Validation_Center.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 2
+      },
+      {
+        "page": "92_Independent_Validation_Accelerator.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "93_Advanced_Bioinformatics_Tools.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "94_Pangenome_Variation_Graph_Studio.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": true,
+        "functions": 0
+      },
+      {
+        "page": "95_Long_Read_Assembly_T2T_Studio.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": true,
+        "functions": 0
+      },
+      {
+        "page": "96_AI_Protein_Design_Lab.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "97_CRISPR_Screen_PerturbSeq_Analytics.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 0
+      },
+      {
+        "page": "98_Pathogen_Outbreak_Command_Center.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": true,
+        "functions": 0
+      },
+      {
+        "page": "99_Synthetic_Biology_Circuit_Designer.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": true,
+        "functions": 0
+      },
+      {
+        "page": "9_Project_Status.py",
+        "syntax_ok": true,
+        "set_page_config_count": 1,
+        "dangerous_shell": false,
+        "eval_exec": false,
+        "secret_pattern_hits": 0,
+        "step192_hook": false,
+        "functions": 1
+      }
+    ],
+    "failures": []
+  },
+  "publication_audit": {
+    "rows": [
+      {
+        "module_key": "amr_surveillance",
+        "title": "AMR Genomic Surveillance & Resistance Intelligence",
+        "page": "pages/177_AMR_Genomic_Surveillance_Resistance_Intelligence.py",
+        "publication_assets_complete": true,
+        "publication_card_valid": true,
+        "benchmark_passed": true,
+        "repeatability_explicit": false,
+        "passed": true
+      },
+      {
+        "module_key": "antibody_biologics",
+        "title": "Antibody & Biologics Engineering",
+        "page": "pages/115_Antibody_and_Biologics_Engineering_Studio.py",
+        "publication_assets_complete": true,
+        "publication_card_valid": true,
+        "benchmark_passed": true,
+        "repeatability_explicit": false,
+        "passed": true
+      },
+      {
+        "module_key": "autonomous_laboratory_planner",
+        "title": "Autonomous Laboratory Planner",
+        "page": "pages/187_Autonomous_Laboratory_Experiment_Planner.py",
+        "publication_assets_complete": true,
+        "publication_card_valid": true,
+        "benchmark_passed": true,
+        "repeatability_explicit": false,
+        "passed": true
+      },
+      {
+        "module_key": "background_job_engine",
+        "title": "Background Job Engine",
+        "page": "pages/151_Real_Background_Job_Queue_Engine.py",
+        "publication_assets_complete": true,
+        "publication_card_valid": true,
+        "benchmark_passed": true,
+        "repeatability_explicit": false,
+        "passed": true
+      },
+      {
+        "module_key": "background_jobs_core",
+        "title": "Background Jobs Core",
+        "page": "pages/44_Performance_Job_Center.py",
+        "publication_assets_complete": true,
+        "publication_card_valid": true,
+        "benchmark_passed": true,
+        "repeatability_explicit": false,
+        "passed": true
+      },
+      {
+        "module_key": "benchmark_validation_v2",
+        "title": "Benchmark Validation Center",
+        "page": "pages/161_Benchmark_Validation_Center_2.py",
+        "publication_assets_complete": true,
+        "publication_card_valid": true,
+        "benchmark_passed": true,
+        "repeatability_explicit": false,
+        "passed": true
+      },
+      {
+        "module_key": "bioimage_microscopy",
+        "title": "Bioimage & Microscopy AI",
+        "page": "pages/120_Bioimage_and_Microscopy_AI_Lab.py",
+        "publication_assets_complete": true,
+        "publication_card_valid": true,
+        "benchmark_passed": true,
+        "repeatability_explicit": false,
+        "passed": true
+      },
+      {
+        "module_key": "biomedical_foundation_model_hub",
+        "title": "Biomedical Foundation Model Hub",
+        "page": "pages/176_Biomedical_Foundation_Model_Embedding_Hub.py",
+        "publication_assets_complete": true,
+        "publication_card_valid": true,
+        "benchmark_passed": true,
+        "repeatability_explicit": false,
+        "passed": true
+      },
+      {
+        "module_key": "bioprocess_fermentation",
+        "title": "Bioprocess & Fermentation Optimization",
+        "page": "pages/125_Bioprocess_and_Fermentation_Optimization_Studio.py",
+        "publication_assets_complete": true,
+        "publication_card_valid": true,
+        "benchmark_passed": true,
+        "repeatability_explicit": false,
+        "passed": true
+      },
+      {
+        "module_key": "cancer_genomics_core",
+        "title": "Cancer Genomics",
+        "page": "pages/81_Cancer_Genomics.py",
+        "publication_assets_complete": true,
+        "publication_card_valid": true,
+        "benchmark_passed": true,
+        "repeatability_explicit": false,
+        "passed": true
+      },
+      {
+        "module_key": "causal_inference_perturbation",
+        "title": "Causal Inference & Perturbation Analysis",
+        "page": "pages/127_Causal_Biology_and_Perturbation_Modelling.py",
+        "publication_assets_complete": true,
+        "publication_card_valid": true,
+        "benchmark_passed": true,
+        "repeatability_explicit": false,
+        "passed": true
+      },
+      {
+        "module_key": "cell_atlas_mapping",
+        "title": "Cell Atlas Mapping",
+        "page": "pages/140_Cell_Atlas_Mapping_Reference_Annotation_Studio.py",
+        "publication_assets_complete": true,
+        "publication_card_valid": true,
+        "benchmark_passed": true,
+        "repeatability_explicit": false,
+        "passed": true
+      },
+      {
+        "module_key": "cell_therapy_cart",
+        "title": "Cell Therapy & CAR-T Engineering",
+        "page": "pages/180_Cell_Therapy_CART_Immune_Engineering_Studio.py",
+        "publication_assets_complete": true,
+        "publication_card_valid": true,
+        "benchmark_passed": true,
+        "repeatability_explicit": false,
+        "passed": true
+      },
+      {
+        "module_key": "clinical_biomarker_survival",
+        "title": "Clinical Biomarker & Survival Analysis",
+        "page": "pages/182_Clinical_Biomarker_Survival_Patient_Stratification.py",
+        "publication_assets_complete": true,
+        "publication_card_valid": true,
+        "benchmark_passed": true,
+        "repeatability_explicit": false,
+        "passed": true
+      },
+      {
+        "module_key": "clinical_pharma_validation",
+        "title": "Clinical/Pharma Validation",
+        "page": "pages/90_Clinical_Pharma_Validation_Center.py",
+        "publication_assets_complete": true,
+        "publication_card_valid": true,
+        "benchmark_passed": true,
+        "repeatability_explicit": false,
+        "passed": true
+      },
+      {
+        "module_key": "clinical_trial_biomarker",
+        "title": "Clinical Trial Biomarker Studio",
+        "page": "pages/122_Clinical_Trial_Biomarker_and_Patient_Stratification_Studio.py",
+        "publication_assets_complete": true,
+        "publication_card_valid": true,
+        "benchmark_passed": true,
+        "repeatability_explicit": false,
+        "passed": true
+      },
+      {
+        "module_key": "collaboration_review_v2",
+        "title": "Collaboration & Scientific Review",
+        "page": "pages/158_Collaboration_Scientific_Review_System_2.py",
+        "publication_assets_complete": true,
+        "publication_card_valid": true,
+        "benchmark_passed": true,
+        "repeatability_explicit": false,
+        "passed": true
+      },
+      {
+        "module_key": "cross_module_workspace",
+        "title": "Cross-Module Project Workspace",
+        "page": "pages/149_Cross_Module_Project_Workspace.py",
+        "publication_assets_complete": true,
+        "publication_card_valid": true,
+        "benchmark_passed": true,
+        "repeatability_explicit": false,
+        "passed": true
+      },
+      {
+        "module_key": "data_lakehouse_v2",
+        "title": "Data Lakehouse & Sample Search",
+        "page": "pages/160_Data_Lakehouse_Sample_Search_Engine_2.py",
+        "publication_assets_complete": true,
+        "publication_card_valid": true,
+        "benchmark_passed": true,
+        "repeatability_explicit": false,
+        "passed": true
+      },
+      {
+        "module_key": "digital_pathology_foundation",
+        "title": "Digital Pathology Foundation Model",
+        "page": "pages/173_Digital_Pathology_Histology_Foundation_Model_Studio.py",
+        "publication_assets_complete": true,
+        "publication_card_valid": true,
+        "benchmark_passed": true,
+        "repeatability_explicit": false,
+        "passed": true
+      },
+      {
+        "module_key": "docking_dynamics",
+        "title": "Molecular Docking & Dynamics",
+        "page": "pages/116_Molecular_Docking_and_Dynamics_Lab.py",
+        "publication_assets_complete": true,
+        "publication_card_valid": true,
+        "benchmark_passed": true,
+        "repeatability_explicit": false,
+        "passed": true
+      },
+      {
+        "module_key": "document_intelligence_core",
+        "title": "Document Intelligence",
+        "page": "pages/49_Document_Intelligence_Center.py",
+        "publication_assets_complete": true,
+        "publication_card_valid": true,
+        "benchmark_passed": true,
+        "repeatability_explicit": false,
+        "passed": true
+      },
+      {
+        "module_key": "enzyme_pathway_design",
+        "title": "Enzyme & Metabolic Pathway Design",
+        "page": "pages/144_Enzyme_Engineering_Metabolic_Pathway_Design_Studio.py",
+        "publication_assets_complete": true,
+        "publication_card_valid": true,
+        "benchmark_passed": true,
+        "repeatability_explicit": false,
+        "passed": true
+      },
+      {
+        "module_key": "epigenomics_chromatin",
+        "title": "Epigenomics & Chromatin Regulation",
+        "page": "pages/112_Epigenomics_and_Chromatin_Regulation_Studio.py",
+        "publication_assets_complete": true,
+        "publication_card_valid": true,
+        "benchmark_passed": true,
+        "repeatability_explicit": false,
+        "passed": true
+      },
+      {
+        "module_key": "epitranscriptomics",
+        "title": "Epitranscriptomics",
+        "page": "pages/138_RNA_Modification_Epitranscriptomics_Lab.py",
+        "publication_assets_complete": true,
+        "publication_card_valid": true,
+        "benchmark_passed": true,
+        "repeatability_explicit": false,
+        "passed": true
+      },
+      {
+        "module_key": "evidence_citation_engine",
+        "title": "Evidence & Citation Engine",
+        "page": "pages/155_Scientific_Evidence_Citation_Engine.py",
+        "publication_assets_complete": true,
+        "publication_card_valid": true,
+        "benchmark_passed": true,
+        "repeatability_explicit": false,
+        "passed": true
+      },
+      {
+        "module_key": "explainable_ai_assurance",
+        "title": "Explainable AI & Model Assurance",
+        "page": "pages/128_Explainable_AI_and_Model_Assurance_Center.py",
+        "publication_assets_complete": true,
+        "publication_card_valid": true,
+        "benchmark_passed": true,
+        "repeatability_explicit": false,
+        "passed": true
+      },
+      {
+        "module_key": "federated_biomedical_ai",
+        "title": "Federated Biomedical AI",
+        "page": "pages/181_Federated_Biomedical_AI_Privacy_Lab.py",
+        "publication_assets_complete": true,
+        "publication_card_valid": true,
+        "benchmark_passed": true,
+        "repeatability_explicit": false,
+        "passed": true
+      },
+      {
+        "module_key": "flow_cytometry",
+        "title": "Flow Cytometry",
+        "page": "pages/64_Wet_Lab_Biotechnology.py",
+        "publication_assets_complete": true,
+        "publication_card_valid": true,
+        "benchmark_passed": true,
+        "repeatability_explicit": false,
+        "passed": true
+      },
+      {
+        "module_key": "gene_therapy_vector",
+        "title": "Gene Therapy Vector Engineering",
+        "page": "pages/179_Gene_Therapy_Vector_Engineering_Safety_Studio.py",
+        "publication_assets_complete": true,
+        "publication_card_valid": true,
+        "benchmark_passed": true,
+        "repeatability_explicit": false,
+        "passed": true
+      },
+      {
+        "module_key": "genome_editing_safety",
+        "title": "Genome Editing & Off-Target Safety",
+        "page": "pages/123_Genome_Editing_Safety_and_Off_Target_Validation_Lab.py",
+        "publication_assets_complete": true,
+        "publication_card_valid": true,
+        "benchmark_passed": true,
+        "repeatability_explicit": false,
+        "passed": true
+      },
+      {
+        "module_key": "glycomics_glycoproteomics",
+        "title": "Glycomics & Glycoproteomics",
+        "page": "pages/130_Glycomics_and_Glycoproteomics_Workbench.py",
+        "publication_assets_complete": true,
+        "publication_card_valid": true,
+        "benchmark_passed": true,
+        "repeatability_explicit": false,
+        "passed": true
+      },
+      {
+        "module_key": "host_pathogen_interaction",
+        "title": "Host\u2013Pathogen Interaction",
+        "page": "pages/145_Host_Pathogen_Interaction_Studio.py",
+        "publication_assets_complete": true,
+        "publication_card_valid": true,
+        "benchmark_passed": true,
+        "repeatability_explicit": false,
+        "passed": true
+      },
+      {
+        "module_key": "immunoinformatics_vaccine",
+        "title": "Immunoinformatics & Vaccine Design",
+        "page": "pages/114_Immunoinformatics_and_Vaccine_Design_Lab.py",
+        "publication_assets_complete": true,
+        "publication_card_valid": true,
+        "benchmark_passed": true,
+        "repeatability_explicit": false,
+        "passed": true
+      },
+      {
+        "module_key": "knowledge_graph_core",
+        "title": "Biomedical Knowledge Graph",
+        "page": "pages/101_Biomedical_Knowledge_Graph_Copilot.py",
+        "publication_assets_complete": true,
+        "publication_card_valid": true,
+        "benchmark_passed": true,
+        "repeatability_explicit": false,
+        "passed": true
+      },
+      {
+        "module_key": "long_read_core",
+        "title": "Long-Read Assembly & T2T",
+        "page": "pages/95_Long_Read_Assembly_T2T_Studio.py",
+        "publication_assets_complete": true,
+        "publication_card_valid": true,
+        "benchmark_passed": true,
+        "repeatability_explicit": false,
+        "passed": true
+      },
+      {
+        "module_key": "long_read_epigenome",
+        "title": "Long-Read Epigenome",
+        "page": "pages/174_Long_Read_Epigenome_Methylation_Imprinting_Studio.py",
+        "publication_assets_complete": true,
+        "publication_card_valid": true,
+        "benchmark_passed": true,
+        "repeatability_explicit": false,
+        "passed": true
+      },
+      {
+        "module_key": "longitudinal_multiomics",
+        "title": "Longitudinal Multi-Omics",
+        "page": "pages/136_Longitudinal_Multi_Omics_Time_Series_Studio.py",
+        "publication_assets_complete": true,
+        "publication_card_valid": true,
+        "benchmark_passed": true,
+        "repeatability_explicit": false,
+        "passed": true
+      },
+      {
+        "module_key": "metabolomics_lipidomics",
+        "title": "Metabolomics & Lipidomics",
+        "page": "pages/113_Metabolomics_and_Lipidomics_Workbench.py",
+        "publication_assets_complete": true,
+        "publication_card_valid": true,
+        "benchmark_passed": true,
+        "repeatability_explicit": false,
+        "passed": true
+      },
+      {
+        "module_key": "metagenomics_core",
+        "title": "Metagenomics Pipeline",
+        "page": "pages/82_Metagenomics_Pipeline.py",
+        "publication_assets_complete": true,
+        "publication_card_valid": true,
+        "benchmark_passed": true,
+        "repeatability_explicit": false,
+        "passed": true
+      },
+      {
+        "module_key": "model_registry_ml_lifecycle",
+        "title": "Model Registry & ML Lifecycle",
+        "page": "pages/156_Model_Registry_ML_Lifecycle_Center_2.py",
+        "publication_assets_complete": true,
+        "publication_card_valid": true,
+        "benchmark_passed": true,
+        "repeatability_explicit": false,
+        "passed": true
+      },
+      {
+        "module_key": "multiomics_biomarker_discovery",
+        "title": "Multi-Omics Biomarker Discovery",
+        "page": "pages/102_Multi_Omics_Biomarker_Discovery.py",
+        "publication_assets_complete": true,
+        "publication_card_valid": true,
+        "benchmark_passed": true,
+        "repeatability_explicit": false,
+        "passed": true
+      },
+      {
+        "module_key": "multiomics_harmonization",
+        "title": "Multi-Omics Harmonization",
+        "page": "pages/129_Multi_Omics_Harmonization_and_Batch_Correction_Studio.py",
+        "publication_assets_complete": true,
+        "publication_card_valid": true,
+        "benchmark_passed": true,
+        "repeatability_explicit": false,
+        "passed": true
+      },
+      {
+        "module_key": "offline_copilot_core",
+        "title": "Offline Scientific Copilot Core",
+        "page": "pages/83_BioIntel_Copilot.py",
+        "publication_assets_complete": true,
+        "publication_card_valid": true,
+        "benchmark_passed": true,
+        "repeatability_explicit": false,
+        "passed": true
+      },
+      {
+        "module_key": "offline_scientific_copilot_v2",
+        "title": "Offline Scientific Copilot V2",
+        "page": "pages/159_Offline_AI_Scientific_Copilot_2.py",
+        "publication_assets_complete": true,
+        "publication_card_valid": true,
+        "benchmark_passed": true,
+        "repeatability_explicit": false,
+        "passed": true
+      },
+      {
+        "module_key": "one_health_environmental",
+        "title": "One Health & Environmental Genomics",
+        "page": "pages/131_One_Health_and_Environmental_Genomics_Center.py",
+        "publication_assets_complete": true,
+        "publication_card_valid": true,
+        "benchmark_passed": true,
+        "repeatability_explicit": false,
+        "passed": true
+      },
+      {
+        "module_key": "organoid_3d",
+        "title": "Organoid & 3D Cell Analytics",
+        "page": "pages/142_Organoid_3D_Cell_Model_Analytics.py",
+        "publication_assets_complete": true,
+        "publication_card_valid": true,
+        "benchmark_passed": true,
+        "repeatability_explicit": false,
+        "passed": true
+      },
+      {
+        "module_key": "pangenome_core",
+        "title": "Pangenome & Variation Graph",
+        "page": "pages/94_Pangenome_Variation_Graph_Studio.py",
+        "publication_assets_complete": true,
+        "publication_card_valid": true,
+        "benchmark_passed": true,
+        "repeatability_explicit": false,
+        "passed": true
+      },
+      {
+        "module_key": "pangenome_population_medicine",
+        "title": "Pangenome Population Medicine",
+        "page": "pages/184_Pangenome_Population_Medicine_Studio.py",
+        "publication_assets_complete": true,
+        "publication_card_valid": true,
+        "benchmark_passed": true,
+        "repeatability_explicit": false,
+        "passed": true
+      },
+      {
+        "module_key": "pathogen_outbreak_core",
+        "title": "Pathogen Outbreak Genomics",
+        "page": "pages/98_Pathogen_Outbreak_Command_Center.py",
+        "publication_assets_complete": true,
+        "publication_card_valid": true,
+        "benchmark_passed": true,
+        "repeatability_explicit": false,
+        "passed": true
+      },
+      {
+        "module_key": "pharmacogenomics",
+        "title": "Pharmacogenomics",
+        "page": "pages/117_Pharmacogenomics_and_Precision_Medicine_Board.py",
+        "publication_assets_complete": true,
+        "publication_card_valid": true,
+        "benchmark_passed": true,
+        "repeatability_explicit": false,
+        "passed": true
+      },
+      {
+        "module_key": "pharmacovigilance",
+        "title": "Pharmacovigilance Intelligence",
+        "page": "pages/185_Pharmacovigilance_Adverse_Event_Intelligence.py",
+        "publication_assets_complete": true,
+        "publication_card_valid": true,
+        "benchmark_passed": true,
+        "repeatability_explicit": false,
+        "passed": true
+      },
+      {
+        "module_key": "phenotypic_screening",
+        "title": "Phenotypic Screening & High-Content Analysis",
+        "page": "pages/141_Phenotypic_Screening_High_Content_Analysis_Lab.py",
+        "publication_assets_complete": true,
+        "publication_card_valid": true,
+        "benchmark_passed": true,
+        "repeatability_explicit": false,
+        "passed": true
+      },
+      {
+        "module_key": "plugin_marketplace_core",
+        "title": "Plugin Marketplace Core",
+        "page": "pages/103_Visual_Workflow_Builder.py",
+        "publication_assets_complete": true,
+        "publication_card_valid": true,
+        "benchmark_passed": true,
+        "repeatability_explicit": false,
+        "passed": true
+      },
+      {
+        "module_key": "plugin_marketplace_v2",
+        "title": "Plugin Marketplace V2",
+        "page": "pages/162_Plugin_Module_Marketplace_2.py",
+        "publication_assets_complete": true,
+        "publication_card_valid": true,
+        "benchmark_passed": true,
+        "repeatability_explicit": false,
+        "passed": true
+      },
+      {
+        "module_key": "population_gwas",
+        "title": "Population Genetics, GWAS & PRS",
+        "page": "pages/134_Population_Genetics_GWAS_Studio.py",
+        "publication_assets_complete": true,
+        "publication_card_valid": true,
+        "benchmark_passed": true,
+        "repeatability_explicit": false,
+        "passed": true
+      },
+      {
+        "module_key": "protein_language_design",
+        "title": "Protein Language Model & Generative Design",
+        "page": "pages/143_Protein_Language_Model_Generative_Design_Lab.py",
+        "publication_assets_complete": true,
+        "publication_card_valid": true,
+        "benchmark_passed": true,
+        "repeatability_explicit": false,
+        "passed": true
+      },
+      {
+        "module_key": "protein_ligand_codesign",
+        "title": "Protein\u2013Ligand Co-Design",
+        "page": "pages/183_Protein_Ligand_CoDesign_Studio.py",
+        "publication_assets_complete": true,
+        "publication_card_valid": true,
+        "benchmark_passed": true,
+        "repeatability_explicit": false,
+        "passed": true
+      },
+      {
+        "module_key": "proteogenomics_neoantigen",
+        "title": "Proteogenomics & Neoantigen Discovery",
+        "page": "pages/124_Proteogenomics_and_Neoantigen_Discovery_Studio.py",
+        "publication_assets_complete": true,
+        "publication_card_valid": true,
+        "benchmark_passed": true,
+        "repeatability_explicit": false,
+        "passed": true
+      },
+      {
+        "module_key": "provenance_ledger_v2",
+        "title": "Provenance & Reproducibility Ledger",
+        "page": "pages/154_Data_Provenance_Reproducibility_Ledger_2.py",
+        "publication_assets_complete": true,
+        "publication_card_valid": true,
+        "benchmark_passed": true,
+        "repeatability_explicit": false,
+        "passed": true
+      },
+      {
+        "module_key": "rare_variant_family",
+        "title": "Rare Variant & Family Genetics",
+        "page": "pages/147_Rare_Variant_Burden_Family_Genetics_Lab.py",
+        "publication_assets_complete": true,
+        "publication_card_valid": true,
+        "benchmark_passed": true,
+        "repeatability_explicit": false,
+        "passed": true
+      },
+      {
+        "module_key": "reference_lifecycle_v2",
+        "title": "Reference Database Lifecycle Manager",
+        "page": "pages/153_Reference_Database_Lifecycle_Manager_2.py",
+        "publication_assets_complete": true,
+        "publication_card_valid": true,
+        "benchmark_passed": true,
+        "repeatability_explicit": false,
+        "passed": true
+      },
+      {
+        "module_key": "rna_isoform_splicing",
+        "title": "RNA Isoform & Alternative Splicing",
+        "page": "pages/137_RNA_Isoform_Alternative_Splicing_Studio.py",
+        "publication_assets_complete": true,
+        "publication_card_valid": true,
+        "benchmark_passed": true,
+        "repeatability_explicit": false,
+        "passed": true
+      },
+      {
+        "module_key": "single_cell_core",
+        "title": "Single-Cell Analysis",
+        "page": "pages/80_Single_Cell_Heterogeneity.py",
+        "publication_assets_complete": true,
+        "publication_card_valid": true,
+        "benchmark_passed": true,
+        "repeatability_explicit": false,
+        "passed": true
+      },
+      {
+        "module_key": "single_cell_long_read_isoforms",
+        "title": "Single-Cell Long-Read Isoforms",
+        "page": "pages/175_Single_Cell_Long_Read_Transcript_Isoform_Studio.py",
+        "publication_assets_complete": true,
+        "publication_card_valid": true,
+        "benchmark_passed": true,
+        "repeatability_explicit": false,
+        "passed": true
+      },
+      {
+        "module_key": "single_cell_trajectory",
+        "title": "Single-Cell Trajectory & Communication",
+        "page": "pages/119_Single_Cell_Trajectory_and_Communication_Lab.py",
+        "publication_assets_complete": true,
+        "publication_card_valid": true,
+        "benchmark_passed": true,
+        "repeatability_explicit": false,
+        "passed": true
+      },
+      {
+        "module_key": "spatial_medicine_tme",
+        "title": "Spatial Medicine & Tumour Microenvironment",
+        "page": "pages/178_Spatial_Medicine_Tumour_Microenvironment_Atlas.py",
+        "publication_assets_complete": true,
+        "publication_card_valid": true,
+        "benchmark_passed": true,
+        "repeatability_explicit": false,
+        "passed": true
+      },
+      {
+        "module_key": "spatial_omics_pathology",
+        "title": "Spatial Omics & Digital Pathology",
+        "page": "pages/118_Spatial_Omics_and_Digital_Pathology_Studio.py",
+        "publication_assets_complete": true,
+        "publication_card_valid": true,
+        "benchmark_passed": true,
+        "repeatability_explicit": false,
+        "passed": true
+      },
+      {
+        "module_key": "store_readiness_core",
+        "title": "Windows Store/Product Readiness",
+        "page": "pages/87_Store_Readiness_Center.py",
+        "publication_assets_complete": true,
+        "publication_card_valid": true,
+        "benchmark_passed": true,
+        "repeatability_explicit": false,
+        "passed": true
+      },
+      {
+        "module_key": "strain_microbiome",
+        "title": "Strain-Resolved Microbiome",
+        "page": "pages/139_Strain_Resolved_Microbiome_Functional_Profiling_Studio.py",
+        "publication_assets_complete": true,
+        "publication_card_valid": true,
+        "benchmark_passed": true,
+        "repeatability_explicit": false,
+        "passed": true
+      },
+      {
+        "module_key": "structural_bioinformatics_core",
+        "title": "Structural Bioinformatics",
+        "page": "pages/61_Structural_Bioinformatics.py",
+        "publication_assets_complete": true,
+        "publication_card_valid": true,
+        "benchmark_passed": true,
+        "repeatability_explicit": false,
+        "passed": true
+      },
+      {
+        "module_key": "structural_variant_repeat",
+        "title": "Structural Variant & Repeat Expansion",
+        "page": "pages/135_Structural_Variant_Repeat_Expansion_Lab.py",
+        "publication_assets_complete": true,
+        "publication_card_valid": true,
+        "benchmark_passed": true,
+        "repeatability_explicit": false,
+        "passed": true
+      },
+      {
+        "module_key": "synthetic_biology_circuit",
+        "title": "Synthetic Biology & Circuit Design",
+        "page": "pages/99_Synthetic_Biology_Circuit_Designer.py",
+        "publication_assets_complete": true,
+        "publication_card_valid": true,
+        "benchmark_passed": true,
+        "repeatability_explicit": false,
+        "passed": true
+      },
+      {
+        "module_key": "synthetic_cohort_trial",
+        "title": "Synthetic Cohort & Trial Simulation",
+        "page": "pages/186_Synthetic_Cohort_Trial_Simulation_Lab.py",
+        "publication_assets_complete": true,
+        "publication_card_valid": true,
+        "benchmark_passed": true,
+        "repeatability_explicit": false,
+        "passed": true
+      },
+      {
+        "module_key": "synthetic_data_privacy",
+        "title": "Synthetic Data & Privacy Engineering",
+        "page": "pages/132_Synthetic_Data_and_Privacy_Engineering_Lab.py",
+        "publication_assets_complete": true,
+        "publication_card_valid": true,
+        "benchmark_passed": true,
+        "repeatability_explicit": false,
+        "passed": true
+      },
+      {
+        "module_key": "unified_report_builder",
+        "title": "Unified Scientific Report Builder",
+        "page": "pages/152_Unified_Scientific_Report_Builder.py",
+        "publication_assets_complete": true,
+        "publication_card_valid": true,
+        "benchmark_passed": true,
+        "repeatability_explicit": false,
+        "passed": true
+      },
+      {
+        "module_key": "universal_file_inspector",
+        "title": "Universal Scientific File Inspector",
+        "page": "pages/148_Universal_Scientific_File_Inspector.py",
+        "publication_assets_complete": true,
+        "publication_card_valid": true,
+        "benchmark_passed": true,
+        "repeatability_explicit": false,
+        "passed": true
+      },
+      {
+        "module_key": "virology_evolution",
+        "title": "Virology & Viral Evolution",
+        "page": "pages/146_Virology_Viral_Evolution_Workbench.py",
+        "publication_assets_complete": true,
+        "publication_card_valid": true,
+        "benchmark_passed": true,
+        "repeatability_explicit": false,
+        "passed": true
+      },
+      {
+        "module_key": "workflow_builder_core",
+        "title": "Visual Workflow Builder Core",
+        "page": "pages/103_Visual_Workflow_Builder.py",
+        "publication_assets_complete": true,
+        "publication_card_valid": true,
+        "benchmark_passed": true,
+        "repeatability_explicit": false,
+        "passed": true
+      },
+      {
+        "module_key": "workflow_builder_v2",
+        "title": "Visual Workflow Builder V2",
+        "page": "pages/150_Visual_Scientific_Workflow_Builder_2.py",
+        "publication_assets_complete": true,
+        "publication_card_valid": true,
+        "benchmark_passed": true,
+        "repeatability_explicit": false,
+        "passed": true
+      }
+    ],
+    "failures": []
+  },
+  "database_audit": {
+    "rows": [
+      {
+        "path": "UserData/step170/runtime_reference_qualification.sqlite3",
+        "integrity": "ok",
+        "foreign_key_violations": 0,
+        "passed": true
+      },
+      {
+        "path": "UserData/step172/external_confirmation_release.sqlite3",
+        "integrity": "ok",
+        "foreign_key_violations": 0,
+        "passed": true
+      },
+      {
+        "path": "UserData/step173/final_all_module_readiness.sqlite3",
+        "integrity": "ok",
+        "foreign_key_violations": 0,
+        "passed": true
+      },
+      {
+        "path": "UserData/step174/phase1_to_9_execution.sqlite3",
+        "integrity": "ok",
+        "foreign_key_violations": 0,
+        "passed": true
+      },
+      {
+        "path": "UserData/step175/target_environment_qualification.sqlite3",
+        "integrity": "ok",
+        "foreign_key_violations": 0,
+        "passed": true
+      },
+      {
+        "path": "UserData/step189/step189_platform.sqlite3",
+        "integrity": "ok",
+        "foreign_key_violations": 0,
+        "passed": true
+      },
+      {
+        "path": "UserData/step190/step190_execution.sqlite3",
+        "integrity": "ok",
+        "foreign_key_violations": 0,
+        "passed": true
+      },
+      {
+        "path": "UserData/step193/mandatory_completion.sqlite3",
+        "integrity": "ok",
+        "foreign_key_violations": 0,
+        "passed": true
+      },
+      {
+        "path": "UserData/workspace/live_experience.sqlite3",
+        "integrity": "ok",
+        "foreign_key_violations": 0,
+        "passed": true
+      },
+      {
+        "path": "UserData/workspace/step132_visual_intelligence.sqlite",
+        "integrity": "ok",
+        "foreign_key_violations": 0,
+        "passed": true
+      },
+      {
+        "path": "data/clinical_pharma/clinical_validation.sqlite3",
+        "integrity": "ok",
+        "foreign_key_violations": 0,
+        "passed": true
+      },
+      {
+        "path": "data/databases/step168_external_evidence.sqlite",
+        "integrity": "ok",
+        "foreign_key_violations": 0,
+        "passed": true
+      },
+      {
+        "path": "data/databases/step169_verified_release.sqlite",
+        "integrity": "ok",
+        "foreign_key_violations": 0,
+        "passed": true
+      },
+      {
+        "path": "data/databases/step171_model_benchmark_registry.sqlite",
+        "integrity": "ok",
+        "foreign_key_violations": 0,
+        "passed": true
+      },
+      {
+        "path": "data/discovery_projects.sqlite3",
+        "integrity": "ok",
+        "foreign_key_violations": 0,
+        "passed": true
+      },
+      {
+        "path": "data/lab_analytics.sqlite3",
+        "integrity": "ok",
+        "foreign_key_violations": 0,
+        "passed": true
+      },
+      {
+        "path": "data/reference_assets/reference_assets.sqlite3",
+        "integrity": "ok",
+        "foreign_key_violations": 0,
+        "passed": true
+      },
+      {
+        "path": "reports/analytics.sqlite3",
+        "integrity": "ok",
+        "foreign_key_violations": 0,
+        "passed": true
+      },
+      {
+        "path": "reports/api_security.sqlite3",
+        "integrity": "ok",
+        "foreign_key_violations": 0,
+        "passed": true
+      },
+      {
+        "path": "reports/assets.sqlite3",
+        "integrity": "ok",
+        "foreign_key_violations": 0,
+        "passed": true
+      },
+      {
+        "path": "reports/batch_jobs/batch_prediction_sample_250.sqlite3",
+        "integrity": "ok",
+        "foreign_key_violations": 0,
+        "passed": true
+      },
+      {
+        "path": "reports/biotechnology_project_runs.sqlite3",
+        "integrity": "ok",
+        "foreign_key_violations": 0,
+        "passed": true
+      },
+      {
+        "path": "reports/connected_sources.sqlite3",
+        "integrity": "ok",
+        "foreign_key_violations": 0,
+        "passed": true
+      },
+      {
+        "path": "reports/datasets.sqlite3",
+        "integrity": "ok",
+        "foreign_key_violations": 0,
+        "passed": true
+      },
+      {
+        "path": "reports/document_history.sqlite3",
+        "integrity": "ok",
+        "foreign_key_violations": 0,
+        "passed": true
+      },
+      {
+        "path": "reports/evidence.sqlite3",
+        "integrity": "ok",
+        "foreign_key_violations": 0,
+        "passed": true
+      },
+      {
+        "path": "reports/experiments.sqlite3",
+        "integrity": "ok",
+        "foreign_key_violations": 0,
+        "passed": true
+      },
+      {
+        "path": "reports/feature_cache.sqlite3",
+        "integrity": "ok",
+        "foreign_key_violations": 0,
+        "passed": true
+      },
+      {
+        "path": "reports/internet_downloads.sqlite3",
+        "integrity": "ok",
+        "foreign_key_violations": 0,
+        "passed": true
+      },
+      {
+        "path": "reports/jobs.sqlite3",
+        "integrity": "ok",
+        "foreign_key_violations": 0,
+        "passed": true
+      },
+      {
+        "path": "reports/knowledge.sqlite3",
+        "integrity": "ok",
+        "foreign_key_violations": 0,
+        "passed": true
+      },
+      {
+        "path": "reports/performance.sqlite3",
+        "integrity": "ok",
+        "foreign_key_violations": 0,
+        "passed": true
+      },
+      {
+        "path": "reports/projects.sqlite3",
+        "integrity": "ok",
+        "foreign_key_violations": 0,
+        "passed": true
+      },
+      {
+        "path": "reports/prospective_validation.sqlite3",
+        "integrity": "ok",
+        "foreign_key_violations": 0,
+        "passed": true
+      },
+      {
+        "path": "reports/realworld_evidence.sqlite3",
+        "integrity": "ok",
+        "foreign_key_violations": 0,
+        "passed": true
+      },
+      {
+        "path": "reports/relationships.sqlite3",
+        "integrity": "ok",
+        "foreign_key_violations": 0,
+        "passed": true
+      },
+      {
+        "path": "reports/scientific_evidence.sqlite3",
+        "integrity": "ok",
+        "foreign_key_violations": 0,
+        "passed": true
+      },
+      {
+        "path": "reports/step103_lims.sqlite3",
+        "integrity": "ok",
+        "foreign_key_violations": 0,
+        "passed": true
+      },
+      {
+        "path": "reports/step127_scientific_runs.sqlite3",
+        "integrity": "ok",
+        "foreign_key_violations": 0,
+        "passed": true
+      },
+      {
+        "path": "reports/step95_quality10_self_test/self_test_registry.sqlite3",
+        "integrity": "ok",
+        "foreign_key_violations": 0,
+        "passed": true
+      },
+      {
+        "path": "reports/tenants.sqlite3",
+        "integrity": "ok",
+        "foreign_key_violations": 0,
+        "passed": true
+      },
+      {
+        "path": "reports/validation_evidence.sqlite3",
+        "integrity": "ok",
+        "foreign_key_violations": 0,
+        "passed": true
+      },
+      {
+        "path": "reports/viewer_sync.sqlite3",
+        "integrity": "ok",
+        "foreign_key_violations": 0,
+        "passed": true
+      },
+      {
+        "path": "reports/workflow_automation.sqlite3",
+        "integrity": "ok",
+        "foreign_key_violations": 0,
+        "passed": true
+      },
+      {
+        "path": "workspace/quality10/workflow_runs.sqlite3",
+        "integrity": "ok",
+        "foreign_key_violations": 0,
+        "passed": true
+      },
+      {
+        "path": "workspace/reference_lifecycle/reference_lifecycle.sqlite3",
+        "integrity": "ok",
+        "foreign_key_violations": 0,
+        "passed": true
+      },
+      {
+        "path": "workspace/step104/jobs.sqlite3",
+        "integrity": "ok",
+        "foreign_key_violations": 0,
+        "passed": true
+      },
+      {
+        "path": "workspace/step104/platform.sqlite3",
+        "integrity": "ok",
+        "foreign_key_violations": 0,
+        "passed": true
+      },
+      {
+        "path": "workspace/step130_scientific_intelligence.sqlite3",
+        "integrity": "ok",
+        "foreign_key_violations": 0,
+        "passed": true
+      },
+      {
+        "path": "workspace/visual_workspace.sqlite3",
+        "integrity": "ok",
+        "foreign_key_violations": 0,
+        "passed": true
+      },
+      {
+        "path": "workspace/workflow_runs/workflow_runs.sqlite3",
+        "integrity": "ok",
+        "foreign_key_violations": 0,
+        "passed": true
+      }
+    ],
+    "failures": []
+  },
+  "claim_audit": {
+    "rows": [
+      {
+        "path": "README.md",
+        "unsafe_claim_patterns": [],
+        "passed": true
+      },
+      {
+        "path": "CURRENT_RELEASE.md",
+        "unsafe_claim_patterns": [],
+        "passed": true
+      },
+      {
+        "path": "research/joss_paper/paper.md",
+        "unsafe_claim_patterns": [],
+        "passed": true
+      }
+    ],
+    "failures": []
+  },
+  "manifest_audit": {
+    "checked": 0,
+    "mismatches": []
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "schema": "biointel.step130.verification.v1",
+  "version": "13.0.0",
+  "checks": {
+    "version": true,
+    "new_modules": true,
+    "handoff_profiles": true,
+    "central_pages": true,
+    "config": true,
+    "release": true,
+    "module_integration": true,
+    "persistent_runs": true,
+    "linked_selection": true,
+    "navigation": true,
+    "python_syntax": true,
+    "database_schema": true,
+    "database_integrity": true,
+    "locked_pages": true
+  },
+  "python_files": 931,
+  "syntax_failures": [],
+  "passed": 14,
+  "total": 14,
+  "healthy": true
+}

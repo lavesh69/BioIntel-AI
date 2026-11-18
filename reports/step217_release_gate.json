@@ -1,0 +1,303 @@
+{
+  "errors": [],
+  "passed": true,
+  "production_evidence_passed": false,
+  "readiness": {
+    "capabilities": [
+      {
+        "blockers": [
+          "No target-machine engine qualification has passed."
+        ],
+        "control_paths": [
+          "src/biointel/scientific_pipeline_v217.py",
+          "src/biointel/engine_platform_v196/qualification.py",
+          "config/step217/native_workflows.json"
+        ],
+        "evidence_detail": "0/0 target-machine engines qualified",
+        "evidence_state": "blocked",
+        "external_evidence_required": true,
+        "external_inputs": [
+          "Exact engine binaries",
+          "licences",
+          "checksums",
+          "target-machine fixtures"
+        ],
+        "feature": "Qualified scientific engine execution",
+        "internal_control_state": "ready",
+        "key": "scientific_engines",
+        "priority": "P0",
+        "release_eligible": false
+      },
+      {
+        "blockers": [
+          "No independently validated model candidate is qualified."
+        ],
+        "control_paths": [
+          "src/biointel/model_qualification/package.py",
+          "models/authenticity_registry.json",
+          "config/step217/model_candidate_policy.json"
+        ],
+        "evidence_detail": "0 model candidates qualified",
+        "evidence_state": "blocked",
+        "external_evidence_required": true,
+        "external_inputs": [
+          "Biomedical weights",
+          "real cohorts",
+          "independent benchmark evidence"
+        ],
+        "feature": "Authentic models and datasets",
+        "internal_control_state": "ready",
+        "key": "authentic_models",
+        "priority": "P0",
+        "release_eligible": false
+      },
+      {
+        "blockers": [
+          "Pipelines remain release-blocked until required engines pass qualification."
+        ],
+        "control_paths": [
+          "src/biointel/scientific_pipeline_v217.py",
+          "config/step217/native_workflows.json"
+        ],
+        "evidence_detail": "Pipeline contract installed; native release requires qualified engines",
+        "evidence_state": "blocked",
+        "external_evidence_required": true,
+        "external_inputs": "Qualified engines and workflow-specific golden fixtures",
+        "feature": "Complete end-to-end module pipelines",
+        "internal_control_state": "ready",
+        "key": "end_to_end_pipelines",
+        "priority": "P0",
+        "release_eligible": false
+      },
+      {
+        "blockers": [],
+        "control_paths": [
+          "src/biointel/ui/information_architecture_v217.py",
+          "pages/269_Production_Enablement_Center.py"
+        ],
+        "evidence_detail": "Operational, platform, assurance and internal surfaces are classified",
+        "evidence_state": "ready",
+        "external_evidence_required": false,
+        "external_inputs": [],
+        "feature": "Professional UI information architecture",
+        "internal_control_state": "ready",
+        "key": "professional_information_architecture",
+        "priority": "P0",
+        "release_eligible": true
+      },
+      {
+        "blockers": [
+          "Publisher certificate and timestamp evidence are not configured."
+        ],
+        "control_paths": [
+          "src/biointel/security/trust_v217.py",
+          "scripts/step217_release_gate.py"
+        ],
+        "evidence_detail": "Signing controls installed; certificate absent",
+        "evidence_state": "blocked",
+        "external_evidence_required": true,
+        "external_inputs": [
+          "Publisher certificate",
+          "timestamp service",
+          "SmartScreen history",
+          "Windows certification"
+        ],
+        "feature": "Signed Windows installer and updater",
+        "internal_control_state": "ready",
+        "key": "signed_windows_delivery",
+        "priority": "P0",
+        "release_eligible": false
+      },
+      {
+        "blockers": [
+          "PostgreSQL, Redis and S3/MinIO dependencies/configuration are incomplete."
+        ],
+        "control_paths": [
+          "src/biointel/production/backends_v217.py",
+          "requirements-production.txt"
+        ],
+        "evidence_detail": "Adapters installed; production services not fully selected",
+        "evidence_state": "blocked",
+        "external_evidence_required": true,
+        "external_inputs": [
+          "PostgreSQL",
+          "Redis",
+          "S3/MinIO credentials and deployed services"
+        ],
+        "feature": "Enterprise backend adapters",
+        "internal_control_state": "ready",
+        "key": "enterprise_backends",
+        "priority": "P1",
+        "release_eligible": false
+      },
+      {
+        "blockers": [
+          "OIDC issuer, audience and python-jose production dependency are required."
+        ],
+        "control_paths": [
+          "src/biointel/security/identity_v217.py",
+          "requirements-production.txt"
+        ],
+        "evidence_detail": "OIDC verifier installed; issuer/dependency incomplete",
+        "evidence_state": "blocked",
+        "external_evidence_required": true,
+        "external_inputs": [
+          "OIDC issuer/JWKS",
+          "tenant claim mapping",
+          "enterprise key management"
+        ],
+        "feature": "Enterprise identity and security",
+        "internal_control_state": "ready",
+        "key": "enterprise_identity",
+        "priority": "P1",
+        "release_eligible": false
+      },
+      {
+        "blockers": [
+          "No FHIR, DICOMweb, REDCap or LIMS endpoint is configured."
+        ],
+        "control_paths": [
+          "src/biointel/integrations/clinical_connectors_v217.py"
+        ],
+        "evidence_detail": "0/4 interoperability endpoints configured",
+        "evidence_state": "blocked",
+        "external_evidence_required": true,
+        "external_inputs": [
+          "FHIR/DICOMweb/REDCap/LIMS endpoints",
+          "credentials",
+          "vendor conformance evidence"
+        ],
+        "feature": "Hospital and laboratory interoperability",
+        "internal_control_state": "ready",
+        "key": "clinical_interoperability",
+        "priority": "P1",
+        "release_eligible": false
+      },
+      {
+        "blockers": [
+          "No trusted publisher public keys are installed."
+        ],
+        "control_paths": [
+          "src/biointel/security/trust_v217.py",
+          "config/step217/plugin_policy.json"
+        ],
+        "evidence_detail": "0 trusted publisher keys",
+        "evidence_state": "blocked",
+        "external_evidence_required": true,
+        "external_inputs": [
+          "Trusted publisher public keys",
+          "reviewed plugin signatures",
+          "sandbox policy"
+        ],
+        "feature": "Cryptographically trusted plugin ecosystem",
+        "internal_control_state": "ready",
+        "key": "plugin_ecosystem",
+        "priority": "P1",
+        "release_eligible": false
+      },
+      {
+        "blockers": [
+          "A qualified biomedical generator and embedding model are not registered."
+        ],
+        "control_paths": [
+          "src/biointel/connected/rag_v217.py",
+          "src/biointel/model_qualification/package.py"
+        ],
+        "evidence_detail": "RAG gate installed; qualified generator absent",
+        "evidence_state": "blocked",
+        "external_evidence_required": true,
+        "external_inputs": [
+          "Qualified biomedical generator",
+          "embedding model",
+          "approved evidence corpus"
+        ],
+        "feature": "Evidence-grounded biomedical AI copilot",
+        "internal_control_state": "ready",
+        "key": "biomedical_copilot",
+        "priority": "P1",
+        "release_eligible": false
+      },
+      {
+        "blockers": [
+          "Federated identity and regulated electronic-signature evidence are incomplete."
+        ],
+        "control_paths": [
+          "src/biointel/engine_platform_v196/crdt.py",
+          "src/biointel/live_workspace_v210/advanced.py",
+          "src/biointel/security/trust_v217.py"
+        ],
+        "evidence_detail": "CRDT/revisions installed; regulated identity/signature absent",
+        "evidence_state": "blocked",
+        "external_evidence_required": true,
+        "external_inputs": [
+          "Federated identity",
+          "regulated e-signature certificate",
+          "independent concurrency validation"
+        ],
+        "feature": "Advanced collaboration and compliance",
+        "internal_control_state": "ready",
+        "key": "advanced_collaboration",
+        "priority": "P2",
+        "release_eligible": false
+      },
+      {
+        "blockers": [
+          "Independent scientific, clinical, security and regulatory evidence is required."
+        ],
+        "control_paths": [
+          "docs/STEP217_EXTERNAL_EVIDENCE_BOUNDARY.md"
+        ],
+        "evidence_detail": "External evidence cannot be generated by the software package",
+        "evidence_state": "blocked",
+        "external_evidence_required": true,
+        "external_inputs": [
+          "Independent cohorts",
+          "wet-lab confirmation",
+          "clinical and regulatory approval"
+        ],
+        "feature": "Scientific and clinical validation",
+        "internal_control_state": "ready",
+        "key": "external_validation",
+        "priority": "External",
+        "release_eligible": false
+      }
+    ],
+    "capability_count": 12,
+    "claim_boundary": "Step217 adds executable software controls and fail-closed adapters. It does not manufacture engine binaries, model weights, licences, credentials, certificates, independent cohorts, wet-lab confirmation, clinical validation or regulatory approval.",
+    "engine_inventory": {
+      "qualified_on_target": 0,
+      "registered": 0
+    },
+    "generated_at_utc": "2026-08-02T04:29:26+00:00",
+    "information_architecture": {
+      "Administration": 2,
+      "Assurance": 58,
+      "Internal": 103,
+      "Operational": 180,
+      "Platform": 24,
+      "Total": 367
+    },
+    "internal_controls_ready": 12,
+    "model_inventory": {
+      "qualified_candidates": 0,
+      "registered": 25,
+      "synthetic_demo_quarantined": 23
+    },
+    "p0_blockers": [
+      "Qualified scientific engine execution",
+      "Authentic models and datasets",
+      "Complete end-to-end module pipelines",
+      "Signed Windows installer and updater"
+    ],
+    "package_generation": "V20.0",
+    "passed": false,
+    "product_version": "15.6.0",
+    "release_eligible_capabilities": 1,
+    "release_step": 217,
+    "schema": "biointel.production-enablement.v217"
+  },
+  "require_external_evidence": false,
+  "schema": "biointel.step217.release-gate.v1",
+  "software_controls_passed": true,
+  "workflow_count": 9
+}

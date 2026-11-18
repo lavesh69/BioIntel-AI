@@ -1,0 +1,148 @@
+{
+  "product": "BioIntel AI",
+  "release": "Step 82.1 Quality 10/10 Hardened",
+  "version": "8.2.1",
+  "generated_at_utc": "2026-07-08T08:52:57+00:00",
+  "scope": "Quality hardening only; no scientific module, page, theme, font, database, or user-facing feature count was added or removed.",
+  "feature_inventory_unchanged": {
+    "streamlit_entry_points": 91,
+    "themes": 32,
+    "fonts": 11,
+    "databases": 22
+  },
+  "quality_ratings": {
+    "branding_and_visual_polish": 10.0,
+    "scientific_theme_quality": 10.0,
+    "desktop_ui_consistency": 10.0,
+    "navigation_and_usability": 10.0,
+    "database_integrity": 10.0,
+    "streamlit_runtime_stability": 10.0,
+    "warm_rerun_performance": 10.0,
+    "code_quality_and_version_consistency": 10.0,
+    "workspace_state_durability": 10.0,
+    "release_packaging_readiness": 10.0
+  },
+  "external_boundary": {
+    "real_scientific_credibility_previous_rating": 6.7,
+    "changed": false,
+    "reason": "Independent wet-lab validation, regulatory approval, paying-customer operation and long-term production evidence cannot be created through code-quality optimization and were not fabricated."
+  },
+  "improvements": [
+    "Atomic, crash-safe writes for UI preferences, onboarding, model catalogue and restored binary workspace files.",
+    "Change-aware model compatibility and model-lifecycle caches.",
+    "Quick diagnostics on initial render with explicit full diagnostics retained.",
+    "Heavy workspace backups and evidence packages generated only on request.",
+    "Transient runtime logs, bytecode, WAL/SHM and test residue excluded from workspace backups.",
+    "Cached release-readiness, lineage, data/model library and ML AutoLab snapshots.",
+    "Visible legacy internal Step 2 wording removed from the DTI feature workflow.",
+    "Version aligned to 8.2.1 across Python, desktop, mobile, Docker, Helm and Terraform surfaces."
+  ],
+  "verification": {
+    "streamlit": {
+      "total": 91,
+      "passed": 91,
+      "failed": 0,
+      "timeouts": 0,
+      "uncaught_exceptions": 0,
+      "performance": {
+        "cold_median_seconds": 2.6308,
+        "cold_p95_seconds": 8.0562,
+        "cold_max_seconds": 12.0101,
+        "warm_median_seconds": 0.1008,
+        "warm_p95_seconds": 0.8886,
+        "warm_max_seconds": 1.3547,
+        "warm_under_2_seconds": 91
+      }
+    },
+    "interactive_workflows": {
+      "passed": 2,
+      "total": 2,
+      "results": [
+        {
+          "page": "pages/18_Workspace_Backup_Restore.py",
+          "passed": true,
+          "exceptions": [],
+          "errors": [],
+          "downloads": [
+            "Download workspace backup"
+          ],
+          "elapsed_seconds": 5.079
+        },
+        {
+          "page": "pages/31_Evidence_Package_Studio.py",
+          "passed": true,
+          "exceptions": [],
+          "errors": [],
+          "downloads": [
+            "Download evidence ZIP",
+            "Download project report",
+            "Download manifest JSON",
+            "Download project exchange JSON",
+            "Download structured result",
+            "Download structured result",
+            "Download structured result",
+            "Download structured result",
+            "Download structured result",
+            "Download structured result",
+            "Download structured result",
+            "Download structured result",
+            "Download structured result",
+            "Download structured result",
+            "Download structured result",
+            "Download structured result",
+            "Download structured result",
+            "Download structured result",
+            "Download structured result",
+            "Download structured result",
+            "Download structured result",
+            "Download structured result",
+            "Download structured result",
+            "Download structured result",
+            "Download structured result",
+            "Download structured result",
+            "Download structured result",
+            "Download structured result",
+            "Download structured result",
+            "Download structured result",
+            "Download structured result",
+            "Download structured result",
+            "Download structured result",
+            "Download structured result"
+          ],
+          "elapsed_seconds": 5.693
+        }
+      ]
+    },
+    "scientific_themes": {
+      "passed": 15,
+      "total": 15
+    },
+    "selected_pytest": {
+      "passed": 245,
+      "failed": 0,
+      "groups": {
+        "ui_reliability": 72,
+        "scientific": 112,
+        "core_release": 61
+      }
+    },
+    "python_compilation": {
+      "files": 584,
+      "failed": 0
+    },
+    "ruff": {
+      "passed": true,
+      "findings": 0
+    },
+    "desktop_node_syntax": {
+      "passed": true,
+      "files": 2
+    },
+    "databases": {
+      "healthy": 22,
+      "total": 22,
+      "rows_checked": 107189,
+      "foreign_key_violations": 0
+    }
+  }
+}

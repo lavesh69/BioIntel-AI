@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "release_version": "15.6.0",
+  "release_channel": "step220-phase16-backend-fixed",
+  "application_ids": {
+    "android": "com.biointel.workspace",
+    "ios": "com.biointel.workspace",
+    "windows": "com.biointel.workspace.desktop"
+  },
+  "packaging": {
+    "android": "Signed Android App Bundle (.aab) produced by store-mobile workflow when signing secrets are supplied.",
+    "ios": "Signed App Store IPA produced on macOS/Xcode when certificate/profile secrets are supplied.",
+    "windows": "Offline-first Python 3.11 source installation with a SHA-256-locked Windows wheelhouse; signed APPX/NSIS packages require external Partner Center identity and a code-signing certificate.",
+    "hosted_backend": "Docker Compose + Caddy HTTPS deployment in deploy/store."
+  },
+  "scientific_boundary": "Research and education only; not medical diagnosis, treatment advice, or a clinically validated medical device.",
+  "privacy": {
+    "tracking": false,
+    "advertising_sdks": false,
+    "automatic_external_file_sharing": false,
+    "operator_controlled_providers": true
+  },
+  "external_actions_required": [
+    "Reserve identifiers and listings in each store account.",
+    "Provide signing identities/certificates and upload credentials.",
+    "Publish the legal/support URLs under the publishing organisation domain.",
+    "Deploy the hosted HTTPS backend before mobile production release.",
+    "Complete physical-device/internal-track certification and store review."
+  ],
+  "brand_system": {
+    "name": "BioIntel AI",
+    "descriptor": "Scientific Intelligence for Life Sciences",
+    "tagline": "Biology, Engineered into Intelligence.",
+    "founder": "Lavesh Dobriyal",
+    "asset_manifest": "assets/brand/brand-manifest.json"
+  }
+}

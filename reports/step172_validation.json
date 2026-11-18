@@ -1,0 +1,20 @@
+{
+  "schema": "biointel.step172.validation.v1",
+  "status": "passed",
+  "version": "14.4.0",
+  "checks": {
+    "module_profiles_80": true,
+    "profile_framework_10of10": true,
+    "assets_at_least_800": true,
+    "matrix_80": true,
+    "fail_closed_without_external_evidence": true,
+    "no_external_outcomes_inferred": true,
+    "registry_integrity": true,
+    "registry_fk_clean": true
+  },
+  "modules": 80,
+  "assets": 801,
+  "software_framework_score": 10.0,
+  "actual_release_eligible_modules": 0,
+  "external_evidence_fabricated": false
+}

@@ -1,0 +1,38 @@
+{
+  "schema": "biointel.step168.release-doctor.v1",
+  "status": "passed",
+  "checks": [
+    {
+      "check": "Step 168 validation",
+      "passed": true,
+      "detail": "{\n  \"status\": \"passed\",\n  \"focused_modules\": 35,\n  \"universal_modules\": 80,\n  \"assets\": 620,\n  \"database_integrity\": \"ok\"\n}\n"
+    },
+    {
+      "check": "Version marker",
+      "passed": true,
+      "detail": "14.0.0"
+    },
+    {
+      "check": "Focused module assets",
+      "passed": true,
+      "detail": "140/140"
+    },
+    {
+      "check": "Universal evidence assets",
+      "passed": true,
+      "detail": "480/480"
+    },
+    {
+      "check": "Evidence registry",
+      "passed": true,
+      "detail": "step168_external_evidence.sqlite"
+    },
+    {
+      "check": "Command center page",
+      "passed": true,
+      "detail": "pages/237_Remaining_Modules_and_External_Evidence_10of10_Center.py"
+    }
+  ],
+  "external_claims_not_inferred": true,
+  "fake_customer_clinical_wetlab_or_regulatory_history_created": false
+}

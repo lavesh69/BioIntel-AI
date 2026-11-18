@@ -1,0 +1,25 @@
+{
+  "version": "6.2.0",
+  "android": {
+    "application_id": "com.biointel.workspace",
+    "play_console_package_reserved": false,
+    "upload_keystore_configured": false
+  },
+  "apple": {
+    "bundle_id": "com.biointel.workspace",
+    "team_id": "REQUIRED",
+    "app_store_connect_record_created": false,
+    "signing_configured": false
+  },
+  "microsoft": {
+    "identity_name": "REQUIRED_FROM_PARTNER_CENTER",
+    "publisher": "REQUIRED_FROM_PARTNER_CENTER",
+    "publisher_display_name": "REQUIRED"
+  },
+  "public": {
+    "production_url": "https://YOUR_PRODUCTION_DOMAIN",
+    "privacy_url": "https://YOUR_PRODUCTION_DOMAIN/legal/privacy",
+    "support_url": "https://YOUR_PRODUCTION_DOMAIN/legal/support",
+    "support_email": "REQUIRED"
+  }
+}

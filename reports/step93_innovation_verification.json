@@ -1,0 +1,51 @@
+{
+  "schema": "biointel.step93.innovation-verification.v1",
+  "status": "verified",
+  "version": "9.3.0",
+  "python_compile": "passed",
+  "targeted_pytest": {
+    "passed": 7,
+    "failed": 0,
+    "tests": [
+      "test_step92_advanced_tools.py",
+      "test_step93_innovation_modules.py"
+    ]
+  },
+  "streamlit_page_smoke": {
+    "passed": 11,
+    "failed": 0,
+    "pages": [
+      "94_Pangenome_Variation_Graph_Studio.py",
+      "95_Long_Read_Assembly_T2T_Studio.py",
+      "96_AI_Protein_Design_Lab.py",
+      "97_CRISPR_Screen_PerturbSeq_Analytics.py",
+      "98_Pathogen_Outbreak_Command_Center.py",
+      "99_Synthetic_Biology_Circuit_Designer.py",
+      "100_Rare_Disease_Genome_Interpretation.py",
+      "101_Biomedical_Knowledge_Graph_Copilot.py",
+      "102_Multi_Omics_Biomarker_Discovery.py",
+      "103_Visual_Workflow_Builder.py",
+      "104_Innovation_Modules_Hub.py"
+    ]
+  },
+  "new_scientific_workbenches": 10,
+  "innovation_hub": 1,
+  "advanced_tool_manifest_entries": 25,
+  "page_files": 105,
+  "navigation_entries": 106,
+  "template_pack": {
+    "filename": "BIOINTEL_INNOVATION_TEMPLATE_PACK.zip",
+    "members": [
+      "README.txt",
+      "crispr_screen_template.csv",
+      "multiomics_template.csv",
+      "outbreak_samples_template.csv",
+      "pangenome_demo.gfa",
+      "protein_design_template.fasta",
+      "rare_disease_variants_template.csv",
+      "workflow_template.json"
+    ],
+    "zip_test": "passed"
+  },
+  "scientific_boundary": "Research/demo workflows require independent validation before publication, clinical or regulated use."
+}

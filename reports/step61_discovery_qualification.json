@@ -1,0 +1,392 @@
+{
+  "schema": "biointel.step61.discovery-qualification.v1",
+  "release": "BioIntel AI Step 61 Discovery Excellence",
+  "version": "6.1.0",
+  "generated_at_utc": "2026-07-06T12:33:33+00:00",
+  "passed": true,
+  "version_consistent": true,
+  "ruff": {
+    "command": [
+      "/opt/pyvenv/bin/python",
+      "-m",
+      "ruff",
+      "check",
+      "."
+    ],
+    "returncode": 0,
+    "passed": true,
+    "elapsed_seconds": 1.555,
+    "stdout_tail": "All checks passed!\n",
+    "stderr_tail": ""
+  },
+  "python_compilation": {
+    "command": [
+      "/opt/pyvenv/bin/python",
+      "-m",
+      "compileall",
+      "-q",
+      "app.py",
+      "pages",
+      "src",
+      "scripts",
+      "platform"
+    ],
+    "returncode": 0,
+    "passed": true,
+    "elapsed_seconds": 1.811,
+    "stdout_tail": "",
+    "stderr_tail": ""
+  },
+  "focused_tests": {
+    "command": [
+      "/opt/pyvenv/bin/python",
+      "-m",
+      "pytest",
+      "-q",
+      "tests/test_step61_discovery_excellence.py",
+      "tests/test_smiles_and_descriptors.py",
+      "tests/test_step29_biotech_bioinformatics.py",
+      "tests/test_step22_internet_common_names.py"
+    ],
+    "returncode": 0,
+    "passed": true,
+    "elapsed_seconds": 15.351,
+    "stdout_tail": "................................                                         [100%]\n32 passed in 12.47s\n",
+    "stderr_tail": ""
+  },
+  "streamlit": {
+    "scenario_count": 5,
+    "passed_scenarios": 5,
+    "scenarios": [
+      {
+        "page": "pages/3_Drug_SMILES_Analyzer.py",
+        "passed": true,
+        "exceptions": []
+      },
+      {
+        "page": "pages/62_ADMET_Drug_Discovery.py",
+        "passed": true,
+        "exceptions": []
+      },
+      {
+        "page": "pages/88_Discovery_Command_Center.py",
+        "passed": true,
+        "exceptions": []
+      },
+      {
+        "page": "pages/62_ADMET_Drug_Discovery.py",
+        "scenario": "salt standardization interaction",
+        "passed": true,
+        "exceptions": []
+      },
+      {
+        "page": "pages/88_Discovery_Command_Center.py",
+        "scenario": "target score and compound project interaction",
+        "passed": true,
+        "exceptions": []
+      }
+    ]
+  },
+  "api": {
+    "case_count": 3,
+    "passed_cases": 3,
+    "cases": [
+      {
+        "name": "aspirin",
+        "status_code": 200,
+        "expected_status": 200,
+        "passed": true,
+        "standardized_smiles": "CC(=O)Oc1ccccc1C(=O)O",
+        "developability_score": 84,
+        "endpoint_count": 30
+      },
+      {
+        "name": "sodium acetate",
+        "status_code": 200,
+        "expected_status": 200,
+        "passed": true,
+        "standardized_smiles": "CC(=O)O",
+        "developability_score": 98,
+        "endpoint_count": 30
+      },
+      {
+        "name": "invalid",
+        "status_code": 422,
+        "expected_status": 422,
+        "passed": true,
+        "standardized_smiles": null,
+        "developability_score": null,
+        "endpoint_count": 0
+      }
+    ]
+  },
+  "databases": {
+    "database_count": 20,
+    "healthy_databases": 20,
+    "foreign_key_violations": 0,
+    "row_count": 106560,
+    "databases": [
+      {
+        "path": "reports/analytics.sqlite3",
+        "integrity": "ok",
+        "foreign_key_violations": 0,
+        "table_count": 5,
+        "row_count": 17690
+      },
+      {
+        "path": "reports/api_security.sqlite3",
+        "integrity": "ok",
+        "foreign_key_violations": 0,
+        "table_count": 5,
+        "row_count": 182
+      },
+      {
+        "path": "reports/assets.sqlite3",
+        "integrity": "ok",
+        "foreign_key_violations": 0,
+        "table_count": 11,
+        "row_count": 20547
+      },
+      {
+        "path": "reports/biotechnology_project_runs.sqlite3",
+        "integrity": "ok",
+        "foreign_key_violations": 0,
+        "table_count": 2,
+        "row_count": 0
+      },
+      {
+        "path": "reports/connected_sources.sqlite3",
+        "integrity": "ok",
+        "foreign_key_violations": 0,
+        "table_count": 4,
+        "row_count": 0
+      },
+      {
+        "path": "reports/datasets.sqlite3",
+        "integrity": "ok",
+        "foreign_key_violations": 0,
+        "table_count": 13,
+        "row_count": 4879
+      },
+      {
+        "path": "reports/document_history.sqlite3",
+        "integrity": "ok",
+        "foreign_key_violations": 0,
+        "table_count": 14,
+        "row_count": 1973
+      },
+      {
+        "path": "reports/evidence.sqlite3",
+        "integrity": "ok",
+        "foreign_key_violations": 0,
+        "table_count": 10,
+        "row_count": 3891
+      },
+      {
+        "path": "reports/experiments.sqlite3",
+        "integrity": "ok",
+        "foreign_key_violations": 0,
+        "table_count": 9,
+        "row_count": 783
+      },
+      {
+        "path": "reports/feature_cache.sqlite3",
+        "integrity": "ok",
+        "foreign_key_violations": 0,
+        "table_count": 2,
+        "row_count": 1293
+      },
+      {
+        "path": "reports/internet_downloads.sqlite3",
+        "integrity": "ok",
+        "foreign_key_violations": 0,
+        "table_count": 5,
+        "row_count": 105
+      },
+      {
+        "path": "reports/jobs.sqlite3",
+        "integrity": "ok",
+        "foreign_key_violations": 0,
+        "table_count": 6,
+        "row_count": 884
+      },
+      {
+        "path": "reports/knowledge.sqlite3",
+        "integrity": "ok",
+        "foreign_key_violations": 0,
+        "table_count": 10,
+        "row_count": 38427
+      },
+      {
+        "path": "reports/projects.sqlite3",
+        "integrity": "ok",
+        "foreign_key_violations": 0,
+        "table_count": 7,
+        "row_count": 688
+      },
+      {
+        "path": "reports/prospective_validation.sqlite3",
+        "integrity": "ok",
+        "foreign_key_violations": 0,
+        "table_count": 4,
+        "row_count": 0
+      },
+      {
+        "path": "reports/realworld_evidence.sqlite3",
+        "integrity": "ok",
+        "foreign_key_violations": 0,
+        "table_count": 6,
+        "row_count": 9
+      },
+      {
+        "path": "reports/relationships.sqlite3",
+        "integrity": "ok",
+        "foreign_key_violations": 0,
+        "table_count": 4,
+        "row_count": 2291
+      },
+      {
+        "path": "reports/scientific_evidence.sqlite3",
+        "integrity": "ok",
+        "foreign_key_violations": 0,
+        "table_count": 5,
+        "row_count": 12903
+      },
+      {
+        "path": "reports/tenants.sqlite3",
+        "integrity": "ok",
+        "foreign_key_violations": 0,
+        "table_count": 4,
+        "row_count": 3
+      },
+      {
+        "path": "reports/validation_evidence.sqlite3",
+        "integrity": "ok",
+        "foreign_key_violations": 0,
+        "table_count": 8,
+        "row_count": 12
+      }
+    ]
+  },
+  "performance": {
+    "molecule_count": 100,
+    "failures": 0,
+    "elapsed_seconds": 0.593,
+    "molecules_per_second": 168.62
+  },
+  "navigation": {
+    "admet_discovery": {
+      "category": "Discovery",
+      "path": "pages/62_ADMET_Drug_Discovery.py",
+      "file_exists": true
+    },
+    "chembl_builder": {
+      "category": "Discovery",
+      "path": "pages/13_ChEMBL_Dataset_Builder.py",
+      "file_exists": true
+    },
+    "discovery_command_center": {
+      "category": "Discovery",
+      "path": "pages/88_Discovery_Command_Center.py",
+      "file_exists": true
+    },
+    "drug_analyzer": {
+      "category": "Discovery",
+      "path": "pages/3_Drug_SMILES_Analyzer.py",
+      "file_exists": true
+    },
+    "dti_features": {
+      "category": "Discovery",
+      "path": "pages/4_DTI_Feature_Builder.py",
+      "file_exists": true
+    },
+    "dti_predictor": {
+      "category": "Discovery",
+      "path": "pages/6_DTI_Predictor.py",
+      "file_exists": true
+    },
+    "pathway_network": {
+      "category": "Discovery",
+      "path": "pages/63_Pathway_Network_Analysis.py",
+      "file_exists": true
+    },
+    "structural_bioinformatics": {
+      "category": "Discovery",
+      "path": "pages/61_Structural_Bioinformatics.py",
+      "file_exists": true
+    }
+  },
+  "discovery_files": {
+    "src/biointel/chemistry/standardization.py": {
+      "exists": true,
+      "sha256": "e05e1f83a69b5f9a0dff53b41f9987c12c1ade9fed989ba57d1118f8dff78061"
+    },
+    "src/biointel/chemistry/medicinal_chemistry.py": {
+      "exists": true,
+      "sha256": "393d19660feb0d51a5160c148aa1a8e82c93a37c17eefeb032df06b79976c5f1"
+    },
+    "src/biointel/chemistry/similarity_search.py": {
+      "exists": true,
+      "sha256": "11a81b5e863e7fe987a415d9ab4c12ac01d05d00443edbe8efbe45b5fd04f41b"
+    },
+    "src/biointel/chemistry/admet.py": {
+      "exists": true,
+      "sha256": "4367333f8b4d01de39e720b026925d9424bb3c8ba6c15aea1bff617f24a21541"
+    },
+    "src/biointel/discovery/__init__.py": {
+      "exists": true,
+      "sha256": "576851592d51661b0206e7a1a290df5e66a5d5d46c8a3c89d3059bd4a0fd5a81"
+    },
+    "src/biointel/discovery/workflow.py": {
+      "exists": true,
+      "sha256": "6e1df6611fe07db7272bb69b496f44878c2e541b9a7bb6a76947f36afcf8aabe"
+    },
+    "pages/3_Drug_SMILES_Analyzer.py": {
+      "exists": true,
+      "sha256": "3b8c73a380dcb980dac2d3965fccddf5c7a498650138c5ae7a369dd8c06f4b29"
+    },
+    "pages/4_DTI_Feature_Builder.py": {
+      "exists": true,
+      "sha256": "b83100e609f1e19f06675bde34abfe0ee2155e13d7629eca737a96eecbc04fd4"
+    },
+    "pages/6_DTI_Predictor.py": {
+      "exists": true,
+      "sha256": "fe5d1a117d390e10f76a15587397d16ca9683e4f36ca48fd5ecc7c74fe2e9feb"
+    },
+    "pages/13_ChEMBL_Dataset_Builder.py": {
+      "exists": true,
+      "sha256": "15873eb02b0ba44672fa1bd165cbdacedf344e78c9598353102bdc72bbea56b7"
+    },
+    "pages/61_Structural_Bioinformatics.py": {
+      "exists": true,
+      "sha256": "772a53ddc857b8d305d7f2c7478e33363f6709f2462c070e7f0fb98849a2f8f2"
+    },
+    "pages/62_ADMET_Drug_Discovery.py": {
+      "exists": true,
+      "sha256": "6586e2b3dc0cf9eb564849b18b206c50bd370f3d3e89e00561d85423be46e3f1"
+    },
+    "pages/63_Pathway_Network_Analysis.py": {
+      "exists": true,
+      "sha256": "8cbf6b0ec22c1bcc93916a354fe90bce036465e27cfb88de55e4e3a14e5e7829"
+    },
+    "pages/88_Discovery_Command_Center.py": {
+      "exists": true,
+      "sha256": "46aae1cb98c367b50feda0d8ec8b04ad825544278f7194c03afe0880a25e2565"
+    },
+    "tests/test_step61_discovery_excellence.py": {
+      "exists": true,
+      "sha256": "c19cf2d9f7967a17985da65048b11c4ec59f25af5a6a42da92a0e79c723de580"
+    }
+  },
+  "scientific_boundary": {
+    "validated_admet_endpoint_models_installed": false,
+    "fake_endpoint_probabilities_generated": false,
+    "external_requirements": [
+      "Qualified endpoint-specific ADMET models",
+      "Validated docking protocol and pose review",
+      "Independent activity/selectivity assays",
+      "Prospective wet-lab validation",
+      "Patent and freedom-to-operate review"
+    ]
+  }
+}

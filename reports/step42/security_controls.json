@@ -1,0 +1,20 @@
+{
+  "classification": "documented_control_qualification",
+  "existing": [
+    "src/biointel/api/security_store.py",
+    "src/biointel/production/config.py",
+    ".github/workflows/security.yml",
+    ".github/workflows/dependency-management.yml"
+  ],
+  "external_boundary": "Security-control qualification is not external enterprise acceptance.",
+  "missing": [],
+  "observed_at": "2026-07-05T07:33:16.094465+00:00",
+  "passed": true,
+  "required": [
+    "src/biointel/api/security_store.py",
+    "src/biointel/production/config.py",
+    ".github/workflows/security.yml",
+    ".github/workflows/dependency-management.yml"
+  ],
+  "schema": "biointel.step42.security_controls.v1"
+}

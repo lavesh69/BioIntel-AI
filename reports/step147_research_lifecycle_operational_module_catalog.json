@@ -1,0 +1,142 @@
+{
+  "schema": "biointel.step147.module-catalog.v1",
+  "milestone": 147,
+  "product_version": "13.2.0",
+  "research_planning_modules": 24,
+  "upgraded_modules": [
+    {
+      "module_key": "research_ethics_consent",
+      "title": "Research Ethics, Consent & Participant Protection Studio",
+      "operational_features": [
+        "Consent version registry",
+        "Participant consent matrix",
+        "Re-consent schedule",
+        "Ethics submission readiness",
+        "Committee query tracker",
+        "Privacy data-flow mapping",
+        "Withdrawal impact analysis",
+        "Readability review"
+      ],
+      "result_tables_including_support": 12,
+      "specialist_visuals": [
+        "Readiness by protection domain",
+        "Vulnerable-population safeguard matrix",
+        "Weighted ethics gaps",
+        "Consent version lineage",
+        "Participant consent option matrix",
+        "Re-consent due calendar",
+        "Committee query aging",
+        "Privacy data-flow map",
+        "Withdrawal impact coverage",
+        "Participant material readability",
+        "Ethics submission readiness"
+      ],
+      "domain_specific_export": true,
+      "cross_module_impact_rules": true
+    },
+    {
+      "module_key": "research_data_fair_planning",
+      "title": "Research Data Management & FAIR Planning Studio",
+      "operational_features": [
+        "Metadata schema validation",
+        "Technical file integrity",
+        "Repository deposit readiness",
+        "Storage forecast",
+        "Access governance",
+        "Licence compatibility",
+        "Retention and destruction",
+        "Restore-test monitoring"
+      ],
+      "result_tables_including_support": 12,
+      "specialist_visuals": [
+        "FAIR readiness profile",
+        "Asset-level FAIR score",
+        "Data type readiness",
+        "Operational lifecycle readiness",
+        "File integrity status board",
+        "Repository deposit readiness",
+        "Storage growth forecast",
+        "Access governance matrix",
+        "Licence compatibility review",
+        "Retention and destruction calendar",
+        "Data lifecycle quality heatmap"
+      ],
+      "domain_specific_export": true,
+      "cross_module_impact_rules": true
+    },
+    {
+      "module_key": "research_interim_monitoring_safety",
+      "title": "Data Monitoring, Interim Review & Safety Studio",
+      "operational_features": [
+        "Exposure-adjusted incidence",
+        "Time-to-first-event planning",
+        "Recurrent-event burden",
+        "Safety coding",
+        "Reporting deadlines",
+        "Site signal detection",
+        "Laboratory shifts",
+        "Interim boundaries",
+        "Conditional power",
+        "Benefit-risk planning"
+      ],
+      "result_tables_including_support": 16,
+      "specialist_visuals": [
+        "Serious-event rate by arm",
+        "Cumulative event timeline",
+        "Severity distribution",
+        "Exposure-adjusted incidence",
+        "Time to first event",
+        "Organ-system severity heatmap",
+        "Participant safety timeline",
+        "Safety reporting deadlines",
+        "Recurrent-event burden",
+        "Site safety signal review",
+        "Laboratory grade shifts",
+        "Interim stopping boundaries",
+        "Conditional power trajectory",
+        "Benefit-risk planning view",
+        "Dose and adverse-event profile"
+      ],
+      "domain_specific_export": true,
+      "cross_module_impact_rules": true
+    },
+    {
+      "module_key": "research_publication_dissemination",
+      "title": "Publication, Dissemination & Knowledge Translation Studio",
+      "operational_features": [
+        "Manuscript workflow",
+        "Claim-evidence traceability",
+        "Reporting guideline checklist",
+        "Authorship and conflicts",
+        "Journal selection",
+        "Figure/table inventory",
+        "Peer review workflow",
+        "Version lineage",
+        "Protocol-publication deviation audit",
+        "Audience-channel mapping"
+      ],
+      "result_tables_including_support": 17,
+      "specialist_visuals": [
+        "Audience coverage and readiness",
+        "Channel readiness",
+        "Dissemination timeline",
+        "Manuscript section completion",
+        "Claim-evidence traceability graph",
+        "Reporting guideline completion",
+        "Author contribution matrix",
+        "Journal fit and access planning",
+        "Figure and table readiness",
+        "Peer review issue burn-down",
+        "Publication version lineage",
+        "Protocol-to-publication deviations",
+        "Audience-channel dissemination map",
+        "Open-science dependency matrix"
+      ],
+      "domain_specific_export": true,
+      "cross_module_impact_rules": true
+    }
+  ],
+  "operational_result_tables": 57,
+  "specialist_visuals": 51,
+  "implementation_boundary": "Internal implementation and automated qualification can be hardened to a high level, but ethics approval, legal compliance, medical decisions, regulatory acceptance, journal acceptance and real-world operating history require external qualified organisations and cannot be manufactured by software."
+}

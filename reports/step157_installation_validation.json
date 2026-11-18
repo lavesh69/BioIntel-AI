@@ -1,0 +1,441 @@
+{
+  "advisories": [
+    {
+      "key": "runtime_dependencies_available",
+      "message": "ModuleNotFoundError: No module named 'biointel.engineering.module_reliability'"
+    }
+  ],
+  "checks": [
+    {
+      "advisory": false,
+      "key": "release_runtime_residue_absent",
+      "message": "[]",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "root_exists",
+      "message": "/mnt/data/biointel158_work/extract/BioIntel-AI",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "step157_part_1",
+      "message": "/mnt/data/biointel158_work/extract/BioIntel-AI/.release_parts/step157_part1.ok",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "step157_part_2",
+      "message": "/mnt/data/biointel158_work/extract/BioIntel-AI/.release_parts/step157_part2.ok",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "step157_part_3",
+      "message": "/mnt/data/biointel158_work/extract/BioIntel-AI/.release_parts/step157_part3.ok",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "step157_part_4",
+      "message": "/mnt/data/biointel158_work/extract/BioIntel-AI/.release_parts/step157_part4.ok",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "step150_validator_present",
+      "message": "/mnt/data/biointel158_work/extract/BioIntel-AI/scripts/step150_validate_installation.py",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "step150_base_validation",
+      "message": "step97.py\",\n      \"passed\": true,\n      \"expected_sha256\": \"f832767853b669fafe34477c29accffc4b2ae48dec0b5d5e24bc576db83ea1b0\",\n      \"actual_sha256\": \"f832767853b669fafe34477c29accffc4b2ae48dec0b5d5e24bc576db83ea1b0\"\n    },\n    {\n      \"key\": \"critical:scripts/run_biointel_step97.py\",\n      \"passed\": true,\n      \"expected_sha256\": \"80baab80512f239166801f254a1fb04e159250c1e05655e57cca3d41bbafa806\",\n      \"actual_sha256\": \"80baab80512f239166801f254a1fb04e159250c1e05655e57cca3d41bbafa806\"\n    },\n    {\n      \"key\": \"critical:scripts/step145_runtime_preflight.py\",\n      \"passed\": true,\n      \"expected_sha256\": \"b8dcb2350381ee4d6ab3d28d6cd5ed2a73025bc597d8fdd5e4d0cd5af2c92385\",\n      \"actual_sha256\": \"b8dcb2350381ee4d6ab3d28d6cd5ed2a73025bc597d8fdd5e4d0cd5af2c92385\"\n    },\n    {\n      \"key\": \"critical:scripts/step150_validate_installation.py\",\n      \"passed\": true,\n      \"expected_sha256\": \"e4f3827e4c7bf03bea9e6712b3f0ada1a8e7218ad177d817ffdb5627466b0d8b\",\n      \"actual_sha256\": \"e4f3827e4c7bf03bea9e6712b3f0ada1a8e7218ad177d817ffdb5627466b0d8b\"\n    },\n    {\n      \"key\": \"critical:src/biointel/utils/atomic_io.py\",\n      \"passed\": true,\n      \"expected_sha256\": \"7ef667d88d20b85cb1b51003550536f237b5a66385d1d87a6d565f5dd6c1f527\",\n      \"actual_sha256\": \"7ef667d88d20b85cb1b51003550536f237b5a66385d1d87a6d565f5dd6c1f527\"\n    },\n    {\n      \"key\": \"critical:src/biointel/utils/path_safety.py\",\n      \"passed\": true,\n      \"expected_sha256\": \"accf79b91d72b96f78279502a7fc6225d164797ec0cc7c5f21d79f82f6833607\",\n      \"actual_sha256\": \"accf79b91d72b96f78279502a7fc6225d164797ec0cc7c5f21d79f82f6833607\"\n    },\n    {\n      \"key\": \"launcher_required:--root \\\".\\\"\",\n      \"passed\": true\n    },\n    {\n      \"key\": \"launcher_required:Step 150\",\n      \"passed\": true\n    },\n    {\n      \"key\": \"launcher_required:step150_validate_installation.py\",\n      \"passed\": true\n    },\n    {\n      \"key\": \"launcher_forbidden_absent:--root \\\"%~dp0\\\"\",\n      \"passed\": true\n    },\n    {\n      \"key\": \"launcher_forbidden_absent:title BioIntel AI Step 145\",\n      \"passed\": true\n    },\n    {\n      \"key\": \"preflight_v150_contract\",\n      \"passed\": true\n    }\n  ],\n  \"failures\": [],\n  \"passed\": true,\n  \"report_path\": \"/mnt/data/biointel158_work/extract/BioIntel-AI/reports/step150_installation_validation.json\"\n}\nREPORT_PATH=/mnt/data/biointel158_work/extract/BioIntel-AI/reports/step150_installation_validation.json\n",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "release_metadata_present",
+      "message": "/mnt/data/biointel158_work/extract/BioIntel-AI/STEP157_RELEASE.json",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "release_step",
+      "message": "157",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "tests_collected",
+      "message": "{'collected': 1342, 'passed': 1315, 'skipped': 27, 'failed': 0}",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "tests_passed",
+      "message": "{'collected': 1342, 'passed': 1315, 'skipped': 27, 'failed': 0}",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "tests_skipped",
+      "message": "{'collected': 1342, 'passed': 1315, 'skipped': 27, 'failed': 0}",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "tests_failed_zero",
+      "message": "{'collected': 1342, 'passed': 1315, 'skipped': 27, 'failed': 0}",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "native_workflows_80_metadata",
+      "message": "80",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "workflow_families_49_metadata",
+      "message": "49",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "engine_adapters_76_metadata",
+      "message": "76",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "plans_78_metadata",
+      "message": "78",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "full_mode_one_million_rows",
+      "message": "{'row_limit': 1000000, 'feature_limit': 512, 'cell_limit': 80000000}",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "full_mode_512_features",
+      "message": "{'row_limit': 1000000, 'feature_limit': 512, 'cell_limit': 80000000}",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "critical_manifest_present",
+      "message": "/mnt/data/biointel158_work/extract/BioIntel-AI/release/step157_critical_hashes.json",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "critical_file:STEP157_RELEASE.json",
+      "message": "expected=b6ead2a91dc32367e578069b6af374fa8e1411d01511ae01353c379591ea82c9 actual=b6ead2a91dc32367e578069b6af374fa8e1411d01511ae01353c379591ea82c9",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "critical_file:VERIFY_STEP157_WINDOWS.bat",
+      "message": "expected=17d3c5d7790369fae788b0a3bb8fb6b45325c1080577292f40e7b7a7ea015910 actual=17d3c5d7790369fae788b0a3bb8fb6b45325c1080577292f40e7b7a7ea015910",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "critical_file:pages/227_Scientific_Readiness_Command_Center.py",
+      "message": "expected=7d85c7f4fee3ff73cca5181eba75ea4ea6b87520aa7ab494b1799116e7680ef5 actual=7d85c7f4fee3ff73cca5181eba75ea4ea6b87520aa7ab494b1799116e7680ef5",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "critical_file:release/STEP157_DATABASE_INTEGRITY.json",
+      "message": "expected=81ee08e98a674fd25f7ed836973be87b1e39cf314df0b2f2b2119ab64fb6bf92 actual=81ee08e98a674fd25f7ed836973be87b1e39cf314df0b2f2b2119ab64fb6bf92",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "critical_file:release/STEP157_FINAL_INTERNAL_EXCELLENCE_REPORT.md",
+      "message": "expected=7f73cb0484979df04cad54530c679a97137b21cbcf097f86c8056f0fac659fa4 actual=7f73cb0484979df04cad54530c679a97137b21cbcf097f86c8056f0fac659fa4",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "critical_file:release/STEP157_FULL_TEST_REPORT.txt",
+      "message": "expected=6a124b0ceecac15fab4c6e621f4b2f658db51a6a5a25cc3e73f764b6ad3cdc61 actual=6a124b0ceecac15fab4c6e621f4b2f658db51a6a5a25cc3e73f764b6ad3cdc61",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "critical_file:release/STEP157_TARGET_QUALIFICATION.json",
+      "message": "expected=d2a6106786406d605115e6ff2e1d1965f0be88e5b1ebd8028a62f5e17ad6a896 actual=d2a6106786406d605115e6ff2e1d1965f0be88e5b1ebd8028a62f5e17ad6a896",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "critical_file:reports/step157_all_pages_app_test.json",
+      "message": "expected=6eacaafda38652239ef9d8547447a77e13623c5c6e7a6a5226a8f8d780453fdc actual=6eacaafda38652239ef9d8547447a77e13623c5c6e7a6a5226a8f8d780453fdc",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "critical_file:scripts/step157_app_test_matrix.py",
+      "message": "expected=2707be3f9ca163029b728b4aeda94674b65c58cc03f19adf9a57ef0cc66ac95a actual=2707be3f9ca163029b728b4aeda94674b65c58cc03f19adf9a57ef0cc66ac95a",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "critical_file:scripts/step157_app_test_worker.py",
+      "message": "expected=12132a1a70d52ee0df5faaf44e87863d41bcc75d5a0e4eca1ed91e189d9b51cb actual=12132a1a70d52ee0df5faaf44e87863d41bcc75d5a0e4eca1ed91e189d9b51cb",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "critical_file:scripts/step157_merge_app_test_reports.py",
+      "message": "expected=e3747f261afd9e5683850f2ff3f1271e2328edc0e41d1d6a78f9a29faf63a8a5 actual=e3747f261afd9e5683850f2ff3f1271e2328edc0e41d1d6a78f9a29faf63a8a5",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "critical_file:scripts/step157_target_qualification.py",
+      "message": "expected=ce58616c603917df35a62a66690984fae8a1856030ebc84e4fb49e3b62abba60 actual=ce58616c603917df35a62a66690984fae8a1856030ebc84e4fb49e3b62abba60",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "critical_file:scripts/step157_validate_installation.py",
+      "message": "expected=03892d1369934e8d32be3cf9e25e8e1165b201d880e53872da31daa1dbd34969 actual=03892d1369934e8d32be3cf9e25e8e1165b201d880e53872da31daa1dbd34969",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "critical_file:src/biointel/native/engine_plans_step157.py",
+      "message": "expected=2c3b1a36b5f134d51136bd50dfa46a08966632f9eba47e66ba8a0b5dd9c722b3 actual=2c3b1a36b5f134d51136bd50dfa46a08966632f9eba47e66ba8a0b5dd9c722b3",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "critical_file:src/biointel/native/engines.py",
+      "message": "expected=a73b1b2ce86df031dd652be8326feb017f83419d305eb041cd5f67128a9b14e0 actual=a73b1b2ce86df031dd652be8326feb017f83419d305eb041cd5f67128a9b14e0",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "critical_file:src/biointel/scientific_depth/__init__.py",
+      "message": "expected=0fbb09fcd8f915c4641d434db1402d5f7204ae065cabbd98ef8f7fc5852a47ea actual=0fbb09fcd8f915c4641d434db1402d5f7204ae065cabbd98ef8f7fc5852a47ea",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "critical_file:src/biointel/scientific_depth/native_workflows.py",
+      "message": "expected=10f259c31d1d389d09fc0c1340d7e35fced5b03a91d992155a3a50effbfd8f08 actual=10f259c31d1d389d09fc0c1340d7e35fced5b03a91d992155a3a50effbfd8f08",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "critical_file:src/biointel/scientific_depth/readiness_matrix.py",
+      "message": "expected=b35dd29b5443d8f6a9050accb8ef1e683416054e48291c0fcf9e9117211b33c8 actual=b35dd29b5443d8f6a9050accb8ef1e683416054e48291c0fcf9e9117211b33c8",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "critical_file:src/biointel/scientific_depth/renderer.py",
+      "message": "expected=4dd213a0433400d9843765c0d6bb9c5552840ba0c1a9e1225fa75cad39977555 actual=4dd213a0433400d9843765c0d6bb9c5552840ba0c1a9e1225fa75cad39977555",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "critical_file:src/biointel/scientific_depth/streaming_profile.py",
+      "message": "expected=0486a510dec62df391570f94d38f3428de0f52a2ebe9a0f384dcdb996827173e actual=0486a510dec62df391570f94d38f3428de0f52a2ebe9a0f384dcdb996827173e",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "critical_file:src/biointel/scientific_depth/toolchain_readiness.py",
+      "message": "expected=778193ed39c22cd41617a9d4842ed801c093e12015c85032339f236560044e7d actual=778193ed39c22cd41617a9d4842ed801c093e12015c85032339f236560044e7d",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "critical_file:src/biointel/validation/__init__.py",
+      "message": "expected=6d04c331fea6e775186664509e702d89cda305e8b8936098a4335c7575ac342b actual=6d04c331fea6e775186664509e702d89cda305e8b8936098a4335c7575ac342b",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "critical_file:src/biointel/validation/target_qualification.py",
+      "message": "expected=96c445d0fe0ab8cd93afe84a3868479f8e4e6b01e1b9fc8db9b72231e2384e58 actual=96c445d0fe0ab8cd93afe84a3868479f8e4e6b01e1b9fc8db9b72231e2384e58",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "critical_file:tests/test_step157_portfolio_streaming_qualification.py",
+      "message": "expected=ae38fecc4cdd26d8ca7e907129a59d68a3835f9dc26c5b028eb416e7557d5f7d actual=ae38fecc4cdd26d8ca7e907129a59d68a3835f9dc26c5b028eb416e7557d5f7d",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "python_source_compile",
+      "message": "{}",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "sqlite_databases_40",
+      "message": "33",
+      "passed": false
+    },
+    {
+      "advisory": false,
+      "key": "sqlite_integrity_and_foreign_keys",
+      "message": "{}",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "package_manifest_present",
+      "message": "/mnt/data/biointel158_work/extract/BioIntel-AI/release/step157_package_manifest.json",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "package_manifest_entries",
+      "message": "4426",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "package_manifest_hashes",
+      "message": "{\"README.md\": \"size\", \"models/packv4_double_classification_extra_trees.joblib\": \"size\", \"models/packv4_double_classification_random_forest.joblib\": \"missing\", \"models/packv4_double_classification_random_forest.json\": \"missing\", \"models/packv4_double_classification_random_forest.model_card.md\": \"missing\", \"models/packv4_double_regression_extra_trees.joblib\": \"missing\", \"models/packv4_double_regression_extra_trees.json\": \"missing\", \"models/packv4_double_regression_ridge.joblib\": \"missing\", \"models/packv4_double_regression_sgd.model_card.md\": \"missing\", \"models/packv5_5x_classification_extra_trees.joblib\": \"missing\", \"models/packv5_5x_classification_random_forest.model_card.md\": \"missing\", \"models/packv5_5x_classification_sgd_logistic.json\": \"missing\", \"models/packv5_5x_regression_extra_trees.model_card.md\": \"missing\", \"models/packv5_5x_regression_ridge.json\": \"missing\", \"pages/0_Quick_Start.py\": \"missing\", \"pages/106_Reference_Database_Manager.py\": \"missing\", \"pages/109_Lab_Instrument_Import_Center.py\": \"missing\", \"pages/115_Antibody_and_Biologics_Engineering_Studio.py\": \"missing\", \"pages/11_Experiment_Registry.py\": \"missing\", \"pages/120_Bioimage_and_Microscopy_AI_Lab.py\": \"missing\", \"pages/121_Biostatistics_Power_and_Experimental_Design_Studio.py\": \"missing\", \"pages/122_Clinical_Trial_Biomarker_and_Patient_Stratification_Studio.py\": \"missing\", \"pages/123_Genome_Editing_Safety_and_Off_Target_Validation_Lab.py\": \"missing\", \"pages/128_Explainable_AI_and_Model_Assurance_Center.py\": \"missing\", \"pages/132_Synthetic_Data_and_Privacy_Engineering_Lab.py\": \"missing\", \"pages/137_RNA_Isoform_Alternative_Splicing_Studio.py\": \"missing\", \"pages/13_ChEMBL_Dataset_Builder.py\": \"missing\", \"pages/140_Cell_Atlas_Mapping_Reference_Annotation_Studio.py\": \"missing\", \"pages/145_Host_Pathogen_Interaction_Studio.py\": \"missing\", \"pages/147_Rare_Variant_Burden_Family_Genetics_Lab.py\": \"missing\", \"pages/156_Model_Registry_ML_Lifecycle_Center_2.py\": \"missing\", \"pages/158_Collaboration_Scientific_Review_System_2.py\": \"missing\", \"pages/161_Benchmark_Validation_Center_2.py\": \"missing\", \"pages/166_Real_Engine_Native_Format_Integration.py\": \"missing\", \"pages/168_Scientific_Depth_Optimization_Center.py\": \"missing\", \"pages/173_Digital_Pathology_Histology_Foundation_Model_Studio.py\": \"missing\", \"pages/174_Long_Read_Epigenome_Methylation_Imprinting_Studio.py\": \"missing\", \"pages/183_Protein_Ligand_CoDesign_Studio.py\": \"missing\", \"pages/184_Pangenome_Population_Medicine_Studio.py\": \"missing\", \"pages/190_Cross_Module_Evidence_Board.py\": \"missing\", \"pages/191_Scientific_Scenario_Sensitivity_Lab.py\": \"missing\", \"pages/197_Immune_Repertoire_Studio.py\": \"missing\", \"pages/19_System_Diagnostics.py\": \"missing\", \"pages/200_Federated_Genomic_Discovery_Phenopacket_Studio.py\": \"missing\", \"pages/201_Genome_Annotation_Comparative_Annotation_Studio.py\": \"missing\", \"pages/20_Workflow_Dashboard.py\": \"missing\", \"pages/210_Cohort_Definition_Eligibility_Builder.py\": \"missing\", \"pages/215_Statistical_Analysis_Plan_Studio.py\": \"missing\", \"pages/225_Data_Monitoring_Interim_Review_Safety_Studio.py\": \"missing\", \"pages/22_Model_Lifecycle.py\": \"missing\"}",
+      "passed": false
+    },
+    {
+      "advisory": true,
+      "key": "runtime_dependencies_available",
+      "message": "ModuleNotFoundError: No module named 'biointel.engineering.module_reliability'",
+      "passed": false
+    },
+    {
+      "advisory": false,
+      "key": "native_budget",
+      "message": "src/biointel/scientific_depth/native_budget.py",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "step155_enhancements",
+      "message": "src/biointel/scientific_depth/native_step155_enhancements.py",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "step156_translational",
+      "message": "src/biointel/scientific_depth/native_step156_translational.py",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "step156_operational",
+      "message": "src/biointel/scientific_depth/native_step156_operational.py",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "native_orchestrator",
+      "message": "src/biointel/scientific_depth/native_workflows.py",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "step157_specialist_plans",
+      "message": "src/biointel/native/engine_plans_step157.py",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "engine_registry",
+      "message": "src/biointel/native/engines.py",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "engine_qualification",
+      "message": "src/biointel/native/qualification.py",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "instrument_qualification",
+      "message": "src/biointel/biotech/instrument_qualification.py",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "instrument_import",
+      "message": "src/biointel/biotech/lab_import.py",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "lims_lineage",
+      "message": "src/biointel/expansion/advanced_analysis.py",
+      "passed": false
+    },
+    {
+      "advisory": false,
+      "key": "read_only_jobs",
+      "message": "src/biointel/jobs/local_queue.py",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "read_only_api",
+      "message": "src/biointel/api/main.py",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "renderer",
+      "message": "src/biointel/scientific_depth/renderer.py",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "command_center",
+      "message": "pages/227_Scientific_Readiness_Command_Center.py",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "step156_translational_tests",
+      "message": "tests/test_step156_translational_readiness.py",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "step156_qualification_tests",
+      "message": "tests/test_step156_tool_instrument_qualification.py",
+      "passed": true
+    }
+  ],
+  "failures": [
+    {
+      "key": "sqlite_databases_40",
+      "message": "33"
+    },
+    {
+      "key": "package_manifest_hashes",
+      "message": "{\"README.md\": \"size\", \"models/packv4_double_classification_extra_trees.joblib\": \"size\", \"models/packv4_double_classification_random_forest.joblib\": \"missing\", \"models/packv4_double_classification_random_forest.json\": \"missing\", \"models/packv4_double_classification_random_forest.model_card.md\": \"missing\", \"models/packv4_double_regression_extra_trees.joblib\": \"missing\", \"models/packv4_double_regression_extra_trees.json\": \"missing\", \"models/packv4_double_regression_ridge.joblib\": \"missing\", \"models/packv4_double_regression_sgd.model_card.md\": \"missing\", \"models/packv5_5x_classification_extra_trees.joblib\": \"missing\", \"models/packv5_5x_classification_random_forest.model_card.md\": \"missing\", \"models/packv5_5x_classification_sgd_logistic.json\": \"missing\", \"models/packv5_5x_regression_extra_trees.model_card.md\": \"missing\", \"models/packv5_5x_regression_ridge.json\": \"missing\", \"pages/0_Quick_Start.py\": \"missing\", \"pages/106_Reference_Database_Manager.py\": \"missing\", \"pages/109_Lab_Instrument_Import_Center.py\": \"missing\", \"pages/115_Antibody_and_Biologics_Engineering_Studio.py\": \"missing\", \"pages/11_Experiment_Registry.py\": \"missing\", \"pages/120_Bioimage_and_Microscopy_AI_Lab.py\": \"missing\", \"pages/121_Biostatistics_Power_and_Experimental_Design_Studio.py\": \"missing\", \"pages/122_Clinical_Trial_Biomarker_and_Patient_Stratification_Studio.py\": \"missing\", \"pages/123_Genome_Editing_Safety_and_Off_Target_Validation_Lab.py\": \"missing\", \"pages/128_Explainable_AI_and_Model_Assurance_Center.py\": \"missing\", \"pages/132_Synthetic_Data_and_Privacy_Engineering_Lab.py\": \"missing\", \"pages/137_RNA_Isoform_Alternative_Splicing_Studio.py\": \"missing\", \"pages/13_ChEMBL_Dataset_Builder.py\": \"missing\", \"pages/140_Cell_Atlas_Mapping_Reference_Annotation_Studio.py\": \"missing\", \"pages/145_Host_Pathogen_Interaction_Studio.py\": \"missing\", \"pages/147_Rare_Variant_Burden_Family_Genetics_Lab.py\": \"missing\", \"pages/156_Model_Registry_ML_Lifecycle_Center_2.py\": \"missing\", \"pages/158_Collaboration_Scientific_Review_System_2.py\": \"missing\", \"pages/161_Benchmark_Validation_Center_2.py\": \"missing\", \"pages/166_Real_Engine_Native_Format_Integration.py\": \"missing\", \"pages/168_Scientific_Depth_Optimization_Center.py\": \"missing\", \"pages/173_Digital_Pathology_Histology_Foundation_Model_Studio.py\": \"missing\", \"pages/174_Long_Read_Epigenome_Methylation_Imprinting_Studio.py\": \"missing\", \"pages/183_Protein_Ligand_CoDesign_Studio.py\": \"missing\", \"pages/184_Pangenome_Population_Medicine_Studio.py\": \"missing\", \"pages/190_Cross_Module_Evidence_Board.py\": \"missing\", \"pages/191_Scientific_Scenario_Sensitivity_Lab.py\": \"missing\", \"pages/197_Immune_Repertoire_Studio.py\": \"missing\", \"pages/19_System_Diagnostics.py\": \"missing\", \"pages/200_Federated_Genomic_Discovery_Phenopacket_Studio.py\": \"missing\", \"pages/201_Genome_Annotation_Comparative_Annotation_Studio.py\": \"missing\", \"pages/20_Workflow_Dashboard.py\": \"missing\", \"pages/210_Cohort_Definition_Eligibility_Builder.py\": \"missing\", \"pages/215_Statistical_Analysis_Plan_Studio.py\": \"missing\", \"pages/225_Data_Monitoring_Interim_Review_Safety_Studio.py\": \"missing\", \"pages/22_Model_Lifecycle.py\": \"missing\"}"
+    },
+    {
+      "key": "lims_lineage",
+      "message": "src/biointel/expansion/advanced_analysis.py"
+    }
+  ],
+  "passed": false,
+  "root": "/mnt/data/biointel158_work/extract/BioIntel-AI",
+  "schema": "biointel.step157.validation-report.v1"
+}

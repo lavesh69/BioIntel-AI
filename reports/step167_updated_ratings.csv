@@ -1,0 +1,22 @@
+module_key,title,previous_practical_rating,software_score,native_research_depth_score,external_confirmation_required,controlled_release_eligible,updated_internal_rating,updated_native_research_rating,external_confirmatory_status
+docking_dynamics,Docking & Molecular Dynamics,5.0,10.0,10.0,"Pinned docking/MD engines, receptor preparation, benchmark complexes and measured affinity validation",False,10/10,10/10,research-only-fail-closed
+genome_editing_safety,Genome Editing Safety,5.0,10.0,10.0,"Qualified genome indexes, validated off-target engines and orthogonal editing assays",False,10/10,10/10,research-only-fail-closed
+metagenomics_core,Metagenomics Execution,5.0,10.0,10.0,"Pinned classifiers/databases, mock communities and orthogonal taxonomic confirmation",False,10/10,10/10,research-only-fail-closed
+pathogen_outbreak_core,Pathogen Outbreak Genomics,5.0,10.0,10.0,"Versioned alignment/phylogeny tools, reference panels and public-health confirmation",False,10/10,10/10,research-only-fail-closed
+pharmacogenomics,Pharmacogenomics,5.0,10.0,10.0,"Qualified star-allele/CNV callers, guideline releases and clinical expert review",False,10/10,10/10,research-only-fail-closed
+phenotypic_screening,Phenotypic Screening,5.0,10.0,10.0,"Validated segmentation/model weights, independent plates/sites and assay confirmation",False,10/10,10/10,research-only-fail-closed
+population_gwas,Population Genetics & GWAS,5.0,10.0,10.0,PLINK/REGENIE/SAIGE-class execution and independent cohort replication,False,10/10,10/10,research-only-fail-closed
+protein_language_design,Protein Language Model Design,5.0,10.0,10.0,Licensed/versioned PLM/design weights and wet-lab expression/activity confirmation,False,10/10,10/10,research-only-fail-closed
+proteogenomics_neoantigen,Proteogenomics & Neoantigen,5.0,10.0,10.0,"Qualified search/HLA engines, matched normal evidence and immunogenicity validation",False,10/10,10/10,research-only-fail-closed
+single_cell_core,Single-Cell Analysis,5.0,10.0,10.0,"Pinned single-cell runtime, reference atlas and independent biological validation",False,10/10,10/10,research-only-fail-closed
+single_cell_trajectory,Single-Cell Trajectory,5.0,10.0,10.0,Validated trajectory/velocity engines and time-course/lineage confirmation,False,10/10,10/10,research-only-fail-closed
+spatial_omics_pathology,Spatial Omics & Pathology,5.0,10.0,10.0,"Validated pathology/spatial models, scanner/site cohorts and orthogonal tissue review",False,10/10,10/10,research-only-fail-closed
+structural_bioinformatics_core,Structural Bioinformatics,5.0,10.0,10.0,"Qualified structures, docking/MD engines and experimental structural validation",False,10/10,10/10,research-only-fail-closed
+virology_evolution,Virology & Viral Evolution,5.0,10.0,10.0,"Pinned lineage/reference releases, phylogeny tools and epidemiological confirmation",False,10/10,10/10,research-only-fail-closed
+federated_biomedical_ai,Federated Biomedical AI,5.75,10.0,10.0,"Real multi-site deployment, secure aggregation and membership/property-inference testing",False,10/10,10/10,research-only-fail-closed
+cell_atlas_mapping,Cell Atlas Mapping,6.0,10.0,10.0,Versioned reference atlas and independent cell-type annotation review,False,10/10,10/10,research-only-fail-closed
+enzyme_pathway_design,Enzyme & Pathway Design,6.0,10.0,10.0,"Qualified design models, pathway context and biochemical validation",False,10/10,10/10,research-only-fail-closed
+explainable_ai_assurance,Explainable AI & Model Assurance,6.0,10.0,10.0,"Independent model audit, drift cohorts and domain-owner approval",False,10/10,10/10,research-only-fail-closed
+glycomics_glycoproteomics,Glycomics & Glycoproteomics,6.0,10.0,10.0,"Qualified search engine, spectral libraries and orthogonal glycopeptide confirmation",False,10/10,10/10,research-only-fail-closed
+metabolomics_lipidomics,Metabolomics & Lipidomics,6.0,10.0,10.0,"Pinned processing engine, spectral libraries, pooled-QC and authentic standards",False,10/10,10/10,research-only-fail-closed
+model_registry_v2,Model Registry & Lifecycle,6.0,10.0,10.0,"Independent validation, monitoring history, reviewer approval and controlled deployment",False,10/10,10/10,research-only-fail-closed

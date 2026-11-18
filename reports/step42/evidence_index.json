@@ -1,0 +1,87 @@
+{
+  "artifacts": {
+    "api_load": {
+      "bytes": 690,
+      "path": "reports/step42/api_load.json",
+      "sha256": "9e2ae51ff17697c4d0658cd6e0e9f7d147e940ac3b90c3e00e56dcc3bcdb5a94"
+    },
+    "clinical_reference": {
+      "bytes": 626,
+      "path": "reports/step42/clinical_reference.json",
+      "sha256": "f9e17443d9ab8bb19e01919d3773aa3847f1cfa97f414b8654a2b01d2466064d"
+    },
+    "cloud_iac": {
+      "bytes": 889,
+      "path": "reports/step42/cloud_iac.json",
+      "sha256": "e724ab2acd883b013a9daaf7d132c007637c704e277c3e57e01b9cd5e56b0021"
+    },
+    "customer_acceptance_kit": {
+      "bytes": 674,
+      "path": "reports/step42/customer_acceptance_kit.json",
+      "sha256": "5fff60505011ce961fe8707513a82178f9b82b54e3f63edc706555f1731d9cf9"
+    },
+    "database_drill": {
+      "bytes": 6708,
+      "path": "reports/step42/database_drill.json",
+      "sha256": "1b36899462cb5a0662790a314975080f4f47a3a71446100ced60e3cf8109c301"
+    },
+    "gxp_controls": {
+      "bytes": 681,
+      "path": "reports/step42/gxp_controls.json",
+      "sha256": "ac68a83ea9261a652f10c581714b54db74f4defa12915c889bd5c7f326776b48"
+    },
+    "ha_rehearsal": {
+      "bytes": 527,
+      "path": "reports/step42/ha_rehearsal.json",
+      "sha256": "f860698ad975c25cd3e586dfa2d45a85dbb2dec2fb05b1645a61c0693e60f512"
+    },
+    "kubernetes_static": {
+      "bytes": 869,
+      "path": "reports/step42/kubernetes_static.json",
+      "sha256": "741c7a67093176c2aa8f3b1d7b871d20c9023a677a18f2631dbb1f3ca415de59"
+    },
+    "multitenant_isolation": {
+      "bytes": 618,
+      "path": "reports/step42/multitenant_isolation.json",
+      "sha256": "47984489982bd9ff767c3f8ce4fbfe4465c5b8816c21420b2d69a79023cbc4c7"
+    },
+    "publication_bundle": {
+      "bytes": 725,
+      "path": "reports/step42/publication_bundle.json",
+      "sha256": "56da5d79dc1830e47a77801ba32f1da7e09e91762234f1c63e7676ac7bfd967c"
+    },
+    "regulatory_dossier": {
+      "bytes": 654,
+      "path": "reports/step42/regulatory_dossier.json",
+      "sha256": "9629fe2695f40d2b4efe1a3200eb3ca75ced8d9bd7123609697121b4a267961e"
+    },
+    "release_provenance": {
+      "bytes": 49084,
+      "path": "reports/step42/release_provenance.json",
+      "sha256": "a9e0406d79c961be5f073d082a9fa2288edc4270700a43d71012e3b5e83ad578"
+    },
+    "saas_controls": {
+      "bytes": 565,
+      "path": "reports/step42/saas_controls.json",
+      "sha256": "e7adc2b7e0f84acc08d4c5644627a2badb91df11c7e9410431b9209ea1b0e764"
+    },
+    "scientific_validation": {
+      "bytes": 656,
+      "path": "reports/step42/scientific_validation.json",
+      "sha256": "72fcbd0b8b5c1935a21ebc3403585084e013a096c77f627b9e191f89b2b723d5"
+    },
+    "security_controls": {
+      "bytes": 678,
+      "path": "reports/step42/security_controls.json",
+      "sha256": "68394c291776587eaa4e96a24a9b75bf4cb33fbb7c26c8d81d58a0a6cf951f3b"
+    },
+    "verification_results": {
+      "bytes": 72087,
+      "path": "reports/step42/verification_results.json",
+      "sha256": "119f964984937cccc7919f0e27fe6f01e8cc0813893107aa3aad6a95a55d4383"
+    }
+  },
+  "generated_at": "2026-07-05T07:38:13.738107+00:00",
+  "passed": true,
+  "schema": "biointel.step42.evidence-index.v1"
+}

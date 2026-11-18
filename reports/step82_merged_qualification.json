@@ -1,0 +1,246 @@
+{
+  "release": "BioIntel AI Step 70\u219282 reconstructed merged build",
+  "version": "8.2.0",
+  "generated_at_utc": "2026-07-08T07:18:34+00:00",
+  "passed": true,
+  "checks": {
+    "required_features": {
+      "required": [
+        "src/biointel/ui/onboarding.py",
+        "src/biointel/automation/workflow_automation.py",
+        "src/biointel/ui/runtime_guard.py",
+        "pages/19_System_Diagnostics.py",
+        "pages/20_Workflow_Dashboard.py",
+        "platform/desktop/src/main.cjs",
+        "tests/test_step82_merged_reliability.py"
+      ],
+      "missing": [],
+      "passed": true
+    },
+    "python_compilation": {
+      "python_files": 581,
+      "failures": [],
+      "passed": true
+    },
+    "databases": {
+      "database_count": 22,
+      "healthy": 22,
+      "total_rows": 107189,
+      "databases": [
+        {
+          "path": "data/discovery_projects.sqlite3",
+          "healthy": true,
+          "quick_check": "ok",
+          "foreign_key_violations": 0,
+          "tables": 7,
+          "rows": 0
+        },
+        {
+          "path": "data/lab_analytics.sqlite3",
+          "healthy": true,
+          "quick_check": "ok",
+          "foreign_key_violations": 0,
+          "tables": 3,
+          "rows": 0
+        },
+        {
+          "path": "reports/analytics.sqlite3",
+          "healthy": true,
+          "quick_check": "ok",
+          "foreign_key_violations": 0,
+          "tables": 5,
+          "rows": 17690
+        },
+        {
+          "path": "reports/api_security.sqlite3",
+          "healthy": true,
+          "quick_check": "ok",
+          "foreign_key_violations": 0,
+          "tables": 5,
+          "rows": 811
+        },
+        {
+          "path": "reports/assets.sqlite3",
+          "healthy": true,
+          "quick_check": "ok",
+          "foreign_key_violations": 0,
+          "tables": 11,
+          "rows": 20547
+        },
+        {
+          "path": "reports/biotechnology_project_runs.sqlite3",
+          "healthy": true,
+          "quick_check": "ok",
+          "foreign_key_violations": 0,
+          "tables": 2,
+          "rows": 0
+        },
+        {
+          "path": "reports/connected_sources.sqlite3",
+          "healthy": true,
+          "quick_check": "ok",
+          "foreign_key_violations": 0,
+          "tables": 4,
+          "rows": 0
+        },
+        {
+          "path": "reports/datasets.sqlite3",
+          "healthy": true,
+          "quick_check": "ok",
+          "foreign_key_violations": 0,
+          "tables": 13,
+          "rows": 4879
+        },
+        {
+          "path": "reports/document_history.sqlite3",
+          "healthy": true,
+          "quick_check": "ok",
+          "foreign_key_violations": 0,
+          "tables": 14,
+          "rows": 1973
+        },
+        {
+          "path": "reports/evidence.sqlite3",
+          "healthy": true,
+          "quick_check": "ok",
+          "foreign_key_violations": 0,
+          "tables": 10,
+          "rows": 3891
+        },
+        {
+          "path": "reports/experiments.sqlite3",
+          "healthy": true,
+          "quick_check": "ok",
+          "foreign_key_violations": 0,
+          "tables": 9,
+          "rows": 783
+        },
+        {
+          "path": "reports/feature_cache.sqlite3",
+          "healthy": true,
+          "quick_check": "ok",
+          "foreign_key_violations": 0,
+          "tables": 2,
+          "rows": 1293
+        },
+        {
+          "path": "reports/internet_downloads.sqlite3",
+          "healthy": true,
+          "quick_check": "ok",
+          "foreign_key_violations": 0,
+          "tables": 5,
+          "rows": 105
+        },
+        {
+          "path": "reports/jobs.sqlite3",
+          "healthy": true,
+          "quick_check": "ok",
+          "foreign_key_violations": 0,
+          "tables": 6,
+          "rows": 884
+        },
+        {
+          "path": "reports/knowledge.sqlite3",
+          "healthy": true,
+          "quick_check": "ok",
+          "foreign_key_violations": 0,
+          "tables": 10,
+          "rows": 38427
+        },
+        {
+          "path": "reports/projects.sqlite3",
+          "healthy": true,
+          "quick_check": "ok",
+          "foreign_key_violations": 0,
+          "tables": 7,
+          "rows": 688
+        },
+        {
+          "path": "reports/prospective_validation.sqlite3",
+          "healthy": true,
+          "quick_check": "ok",
+          "foreign_key_violations": 0,
+          "tables": 4,
+          "rows": 0
+        },
+        {
+          "path": "reports/realworld_evidence.sqlite3",
+          "healthy": true,
+          "quick_check": "ok",
+          "foreign_key_violations": 0,
+          "tables": 6,
+          "rows": 9
+        },
+        {
+          "path": "reports/relationships.sqlite3",
+          "healthy": true,
+          "quick_check": "ok",
+          "foreign_key_violations": 0,
+          "tables": 4,
+          "rows": 2291
+        },
+        {
+          "path": "reports/scientific_evidence.sqlite3",
+          "healthy": true,
+          "quick_check": "ok",
+          "foreign_key_violations": 0,
+          "tables": 5,
+          "rows": 12903
+        },
+        {
+          "path": "reports/tenants.sqlite3",
+          "healthy": true,
+          "quick_check": "ok",
+          "foreign_key_violations": 0,
+          "tables": 4,
+          "rows": 3
+        },
+        {
+          "path": "reports/validation_evidence.sqlite3",
+          "healthy": true,
+          "quick_check": "ok",
+          "foreign_key_violations": 0,
+          "tables": 8,
+          "rows": 12
+        }
+      ],
+      "passed": true
+    },
+    "desktop_syntax": {
+      "files": [
+        {
+          "path": "platform/desktop/src/main.cjs",
+          "passed": true,
+          "message": ""
+        },
+        {
+          "path": "platform/desktop/src/preload.cjs",
+          "passed": true,
+          "message": ""
+        }
+      ],
+      "passed": true
+    },
+    "streamlit_entry_points": {
+      "total": 91,
+      "passed": 91,
+      "failed": 0,
+      "qualified": true
+    }
+  },
+  "source_boundary": "Reconstructed from documented Step 70\u201382 requirements on the available Step 68 stability-hardened source; not a byte-for-byte merge of unavailable archives.",
+  "selected_tests": {
+    "passed": 105,
+    "failed": 0,
+    "groups": {
+      "step82_and_core": 30,
+      "crash_backports_runtime_repairs": 15,
+      "lab_discovery_coverage": 42,
+      "optimization_desktop_motion": 18
+    }
+  },
+  "code_quality": {
+    "ruff_findings": 0,
+    "passed": true
+  }
+}

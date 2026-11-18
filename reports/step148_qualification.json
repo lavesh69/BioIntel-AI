@@ -1,0 +1,185 @@
+{
+  "schema": "biointel.step148.qualification.v1",
+  "release_name": "Step 148 Creative Premium Themes",
+  "product_version": "13.2.0",
+  "themes_before": 49,
+  "themes_added": 6,
+  "themes_after": 55,
+  "fonts_preserved": 11,
+  "theme_registry_parity": true,
+  "unique_structural_experiences": 55,
+  "unique_archetypes": 55,
+  "selected_tests_passed": 59,
+  "environment_gated_browser_tests": 4,
+  "python_compilation": {
+    "passed": 1093,
+    "failed": 0
+  },
+  "databases": {
+    "healthy": 40,
+    "rows_inspected": 108493,
+    "foreign_key_violations": 0
+  },
+  "new_theme_health": {
+    "Solar Helix": {
+      "dark": {
+        "theme": "Solar Helix",
+        "accessibility": 100,
+        "performance": 92,
+        "readability": 100,
+        "scientific_clarity": 84,
+        "print_compatibility": 80,
+        "overall": 93,
+        "body_contrast": 18.99,
+        "muted_contrast": 11.27,
+        "issues": []
+      },
+      "light": {
+        "theme": "Solar Helix",
+        "accessibility": 100,
+        "performance": 92,
+        "readability": 100,
+        "scientific_clarity": 84,
+        "print_compatibility": 84,
+        "overall": 94,
+        "body_contrast": 13.69,
+        "muted_contrast": 5.19,
+        "issues": []
+      }
+    },
+    "Black Diamond": {
+      "dark": {
+        "theme": "Black Diamond",
+        "accessibility": 100,
+        "performance": 100,
+        "readability": 100,
+        "scientific_clarity": 84,
+        "print_compatibility": 80,
+        "overall": 95,
+        "body_contrast": 21.0,
+        "muted_contrast": 10.27,
+        "issues": []
+      },
+      "light": {
+        "theme": "Black Diamond",
+        "accessibility": 100,
+        "performance": 100,
+        "readability": 100,
+        "scientific_clarity": 84,
+        "print_compatibility": 84,
+        "overall": 95,
+        "body_contrast": 18.05,
+        "muted_contrast": 5.63,
+        "issues": []
+      }
+    },
+    "Crimson Genome": {
+      "dark": {
+        "theme": "Crimson Genome",
+        "accessibility": 100,
+        "performance": 92,
+        "readability": 100,
+        "scientific_clarity": 84,
+        "print_compatibility": 80,
+        "overall": 93,
+        "body_contrast": 18.88,
+        "muted_contrast": 9.74,
+        "issues": []
+      },
+      "light": {
+        "theme": "Crimson Genome",
+        "accessibility": 100,
+        "performance": 92,
+        "readability": 100,
+        "scientific_clarity": 84,
+        "print_compatibility": 84,
+        "overall": 94,
+        "body_contrast": 13.99,
+        "muted_contrast": 5.0,
+        "issues": []
+      }
+    },
+    "Electric Lime": {
+      "dark": {
+        "theme": "Electric Lime",
+        "accessibility": 100,
+        "performance": 92,
+        "readability": 100,
+        "scientific_clarity": 84,
+        "print_compatibility": 80,
+        "overall": 93,
+        "body_contrast": 19.77,
+        "muted_contrast": 11.51,
+        "issues": []
+      },
+      "light": {
+        "theme": "Electric Lime",
+        "accessibility": 100,
+        "performance": 92,
+        "readability": 100,
+        "scientific_clarity": 84,
+        "print_compatibility": 84,
+        "overall": 94,
+        "body_contrast": 12.71,
+        "muted_contrast": 4.78,
+        "issues": []
+      }
+    },
+    "Velvet Neon": {
+      "dark": {
+        "theme": "Velvet Neon",
+        "accessibility": 100,
+        "performance": 74,
+        "readability": 100,
+        "scientific_clarity": 84,
+        "print_compatibility": 80,
+        "overall": 90,
+        "body_contrast": 18.98,
+        "muted_contrast": 10.54,
+        "issues": []
+      },
+      "light": {
+        "theme": "Velvet Neon",
+        "accessibility": 100,
+        "performance": 74,
+        "readability": 100,
+        "scientific_clarity": 84,
+        "print_compatibility": 84,
+        "overall": 90,
+        "body_contrast": 13.08,
+        "muted_contrast": 4.73,
+        "issues": []
+      }
+    },
+    "Copper Eclipse": {
+      "dark": {
+        "theme": "Copper Eclipse",
+        "accessibility": 100,
+        "performance": 92,
+        "readability": 100,
+        "scientific_clarity": 84,
+        "print_compatibility": 80,
+        "overall": 93,
+        "body_contrast": 18.69,
+        "muted_contrast": 10.23,
+        "issues": []
+      },
+      "light": {
+        "theme": "Copper Eclipse",
+        "accessibility": 100,
+        "performance": 92,
+        "readability": 100,
+        "scientific_clarity": 84,
+        "print_compatibility": 84,
+        "overall": 94,
+        "body_contrast": 12.73,
+        "muted_contrast": 4.95,
+        "issues": []
+      }
+    }
+  },
+  "limitations": [
+    "Live Streamlit/AppTest rendering unavailable in the current Linux qualification environment.",
+    "Physical Windows GPU, WebView, display-profile and DPI visual qualification remains target-machine work."
+  ]
+}

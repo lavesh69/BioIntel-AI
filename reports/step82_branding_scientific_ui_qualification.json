@@ -1,0 +1,56 @@
+{
+  "product": "BioIntel AI",
+  "version": "8.2.0",
+  "patch_label": "Step 82.1 Branding + Scientific UI + Smooth Optimization",
+  "generated_at_utc": "2026-07-08T08:03:39.019384+00:00",
+  "branding": {
+    "developer": "Lavesh Dobriyal",
+    "motto": "Biology, Engineered into Intelligence.",
+    "global_top_brand_bar": true,
+    "sidebar_branding": true
+  },
+  "themes": {
+    "total": 32,
+    "new": 15,
+    "new_names": [
+      "Genomic Noir",
+      "Helix Quantum",
+      "CRISPR Cyan",
+      "Proteome Platinum",
+      "Cell Atlas",
+      "Neural Biotech",
+      "Quantum Enzyme",
+      "Botanical Circuit",
+      "Clinical Sapphire",
+      "Molecular Carbon",
+      "Spatial Omics",
+      "BioLuminescence",
+      "Pathway Gold",
+      "Cryo-EM Frost",
+      "Synthetic Biology"
+    ],
+    "new_theme_streamlit_render": "15/15 passed"
+  },
+  "performance": {
+    "smooth_performance_default": true,
+    "css_lru_caching": true,
+    "plotly_template_signature_cache": true,
+    "desktop_css_file_cache": true,
+    "page_key_fast_frame_walk": true,
+    "database_health_cache_ttl_seconds": 300,
+    "fixed_backgrounds_removed": true,
+    "paint_containment": true,
+    "probe_report": "reports/step82_ui_performance_probe.json"
+  },
+  "verification": {
+    "focused_tests": "31/31 passed",
+    "new_theme_render": "15/15 passed",
+    "critical_page_smoke": "11/11 passed",
+    "python_compilation": "passed",
+    "ruff": "passed",
+    "databases": "22/22 healthy",
+    "database_rows_checked": 107189,
+    "foreign_key_violations": 0,
+    "full_91_page_post-change_sweep": "not completed because the legacy AppTest batch harness had unreliable subprocess shutdown; no false 91/91 claim is made"
+  }
+}

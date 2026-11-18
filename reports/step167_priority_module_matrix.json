@@ -1,0 +1,215 @@
+{
+  "schema": "biointel.step167.priority-module-matrix.v1",
+  "modules": [
+    {
+      "module_key": "docking_dynamics",
+      "title": "Docking & Molecular Dynamics",
+      "previous_practical_rating": 5.0,
+      "software_score": 10.0,
+      "native_research_depth_score": 10.0,
+      "focused_upgrade": "Pose reproducibility, ligand strain, consensus ranking, applicability domain and measured-affinity gates",
+      "external_confirmation_required": "Pinned docking/MD engines, receptor preparation, benchmark complexes and measured affinity validation",
+      "controlled_release_eligible": false
+    },
+    {
+      "module_key": "genome_editing_safety",
+      "title": "Genome Editing Safety",
+      "previous_practical_rating": 5.0,
+      "software_score": 10.0,
+      "native_research_depth_score": 10.0,
+      "focused_upgrade": "Guide sequence QC, GC/homopolymer/PAM audit, off-target and population-variant risk ranking",
+      "external_confirmation_required": "Qualified genome indexes, validated off-target engines and orthogonal editing assays",
+      "controlled_release_eligible": false
+    },
+    {
+      "module_key": "metagenomics_core",
+      "title": "Metagenomics Execution",
+      "previous_practical_rating": 5.0,
+      "software_score": 10.0,
+      "native_research_depth_score": 10.0,
+      "focused_upgrade": "Library/QC, compositional profiles, contamination controls, alpha/beta diversity and differential screening",
+      "external_confirmation_required": "Pinned classifiers/databases, mock communities and orthogonal taxonomic confirmation",
+      "controlled_release_eligible": false
+    },
+    {
+      "module_key": "pathogen_outbreak_core",
+      "title": "Pathogen Outbreak Genomics",
+      "previous_practical_rating": 5.0,
+      "software_score": 10.0,
+      "native_research_depth_score": 10.0,
+      "focused_upgrade": "Sample-profile distances, outbreak clusters, contamination, site concordance and epidemiology evidence gates",
+      "external_confirmation_required": "Versioned alignment/phylogeny tools, reference panels and public-health confirmation",
+      "controlled_release_eligible": false
+    },
+    {
+      "module_key": "pharmacogenomics",
+      "title": "Pharmacogenomics",
+      "previous_practical_rating": 5.0,
+      "software_score": 10.0,
+      "native_research_depth_score": 10.0,
+      "focused_upgrade": "Genotype QC, MAF/HWE, genome-build consistency, phenotype association and interpretation readiness",
+      "external_confirmation_required": "Qualified star-allele/CNV callers, guideline releases and clinical expert review",
+      "controlled_release_eligible": false
+    },
+    {
+      "module_key": "phenotypic_screening",
+      "title": "Phenotypic Screening",
+      "previous_practical_rating": 5.0,
+      "software_score": 10.0,
+      "native_research_depth_score": 10.0,
+      "focused_upgrade": "Patient-aware performance, leakage audit, morphology distribution, uncertainty and model eligibility",
+      "external_confirmation_required": "Validated segmentation/model weights, independent plates/sites and assay confirmation",
+      "controlled_release_eligible": false
+    },
+    {
+      "module_key": "population_gwas",
+      "title": "Population Genetics & GWAS",
+      "previous_practical_rating": 5.0,
+      "software_score": 10.0,
+      "native_research_depth_score": 10.0,
+      "focused_upgrade": "Call-rate/MAF/HWE, ancestry covariate audit, association screening and multiple-testing control",
+      "external_confirmation_required": "PLINK/REGENIE/SAIGE-class execution and independent cohort replication",
+      "controlled_release_eligible": false
+    },
+    {
+      "module_key": "protein_language_design",
+      "title": "Protein Language Model Design",
+      "previous_practical_rating": 5.0,
+      "software_score": 10.0,
+      "native_research_depth_score": 10.0,
+      "focused_upgrade": "Sequence validity, novelty, composition, structure confidence, Pareto ranking and model provenance gates",
+      "external_confirmation_required": "Licensed/versioned PLM/design weights and wet-lab expression/activity confirmation",
+      "controlled_release_eligible": false
+    },
+    {
+      "module_key": "proteogenomics_neoantigen",
+      "title": "Proteogenomics & Neoantigen",
+      "previous_practical_rating": 5.0,
+      "software_score": 10.0,
+      "native_research_depth_score": 10.0,
+      "focused_upgrade": "Target-decoy FDR, variant/tumour specificity, HLA ranking and candidate evidence tiers",
+      "external_confirmation_required": "Qualified search/HLA engines, matched normal evidence and immunogenicity validation",
+      "controlled_release_eligible": false
+    },
+    {
+      "module_key": "single_cell_core",
+      "title": "Single-Cell Analysis",
+      "previous_practical_rating": 5.0,
+      "software_score": 10.0,
+      "native_research_depth_score": 10.0,
+      "focused_upgrade": "Cell QC, robust outliers, normalization, PCA, batch diagnostics and research clusters",
+      "external_confirmation_required": "Pinned single-cell runtime, reference atlas and independent biological validation",
+      "controlled_release_eligible": false
+    },
+    {
+      "module_key": "single_cell_trajectory",
+      "title": "Single-Cell Trajectory",
+      "previous_practical_rating": 5.0,
+      "software_score": 10.0,
+      "native_research_depth_score": 10.0,
+      "focused_upgrade": "QC-aware pseudotime, gene trends, branch uncertainty and batch-confounding audit",
+      "external_confirmation_required": "Validated trajectory/velocity engines and time-course/lineage confirmation",
+      "controlled_release_eligible": false
+    },
+    {
+      "module_key": "spatial_omics_pathology",
+      "title": "Spatial Omics & Pathology",
+      "previous_practical_rating": 5.0,
+      "software_score": 10.0,
+      "native_research_depth_score": 10.0,
+      "focused_upgrade": "Coordinate QC, neighbourhood autocorrelation, hotspots, region contrasts and model eligibility",
+      "external_confirmation_required": "Validated pathology/spatial models, scanner/site cohorts and orthogonal tissue review",
+      "controlled_release_eligible": false
+    },
+    {
+      "module_key": "structural_bioinformatics_core",
+      "title": "Structural Bioinformatics",
+      "previous_practical_rating": 5.0,
+      "software_score": 10.0,
+      "native_research_depth_score": 10.0,
+      "focused_upgrade": "Composite structure-quality tiers, geometry completeness, confidence and downstream-use gates",
+      "external_confirmation_required": "Qualified structures, docking/MD engines and experimental structural validation",
+      "controlled_release_eligible": false
+    },
+    {
+      "module_key": "virology_evolution",
+      "title": "Virology & Viral Evolution",
+      "previous_practical_rating": 5.0,
+      "software_score": 10.0,
+      "native_research_depth_score": 10.0,
+      "focused_upgrade": "Temporal mutation trends, lineage growth, geography, outlier detection and surveillance gates",
+      "external_confirmation_required": "Pinned lineage/reference releases, phylogeny tools and epidemiological confirmation",
+      "controlled_release_eligible": false
+    },
+    {
+      "module_key": "federated_biomedical_ai",
+      "title": "Federated Biomedical AI",
+      "previous_practical_rating": 5.75,
+      "software_score": 10.0,
+      "native_research_depth_score": 10.0,
+      "focused_upgrade": "Weighted aggregation, convergence, site heterogeneity, participation, privacy budget and attack-readiness gates",
+      "external_confirmation_required": "Real multi-site deployment, secure aggregation and membership/property-inference testing",
+      "controlled_release_eligible": false
+    },
+    {
+      "module_key": "cell_atlas_mapping",
+      "title": "Cell Atlas Mapping",
+      "previous_practical_rating": 6.0,
+      "software_score": 10.0,
+      "native_research_depth_score": 10.0,
+      "focused_upgrade": "QC-normalized embedding, nearest-centroid mapping confidence, batch distance and unmapped-cell review",
+      "external_confirmation_required": "Versioned reference atlas and independent cell-type annotation review",
+      "controlled_release_eligible": false
+    },
+    {
+      "module_key": "enzyme_pathway_design",
+      "title": "Enzyme & Pathway Design",
+      "previous_practical_rating": 6.0,
+      "software_score": 10.0,
+      "native_research_depth_score": 10.0,
+      "focused_upgrade": "Thermodynamic feasibility, catalytic efficiency, sequence QC, flux and Pareto prioritisation",
+      "external_confirmation_required": "Qualified design models, pathway context and biochemical validation",
+      "controlled_release_eligible": false
+    },
+    {
+      "module_key": "explainable_ai_assurance",
+      "title": "Explainable AI & Model Assurance",
+      "previous_practical_rating": 6.0,
+      "software_score": 10.0,
+      "native_research_depth_score": 10.0,
+      "focused_upgrade": "Calibration, threshold curves, subgroup fairness, uncertainty and claim-safe release gates",
+      "external_confirmation_required": "Independent model audit, drift cohorts and domain-owner approval",
+      "controlled_release_eligible": false
+    },
+    {
+      "module_key": "glycomics_glycoproteomics",
+      "title": "Glycomics & Glycoproteomics",
+      "previous_practical_rating": 6.0,
+      "software_score": 10.0,
+      "native_research_depth_score": 10.0,
+      "focused_upgrade": "Target-decoy FDR, localisation confidence, glycan/site summaries and evidence tiers",
+      "external_confirmation_required": "Qualified search engine, spectral libraries and orthogonal glycopeptide confirmation",
+      "controlled_release_eligible": false
+    },
+    {
+      "module_key": "metabolomics_lipidomics",
+      "title": "Metabolomics & Lipidomics",
+      "previous_practical_rating": 6.0,
+      "software_score": 10.0,
+      "native_research_depth_score": 10.0,
+      "focused_upgrade": "Missingness, QC CV, injection drift, differential analysis, FDR and feature readiness",
+      "external_confirmation_required": "Pinned processing engine, spectral libraries, pooled-QC and authentic standards",
+      "controlled_release_eligible": false
+    },
+    {
+      "module_key": "model_registry_v2",
+      "title": "Model Registry & Lifecycle",
+      "previous_practical_rating": 6.0,
+      "software_score": 10.0,
+      "native_research_depth_score": 10.0,
+      "focused_upgrade": "Performance/calibration/fairness cards, reproducibility, lifecycle gates and release checklist",
+      "external_confirmation_required": "Independent validation, monitoring history, reviewer approval and controlled deployment",
+      "controlled_release_eligible": false
+    }
+  ]
+}

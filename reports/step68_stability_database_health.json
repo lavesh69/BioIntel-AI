@@ -1,0 +1,186 @@
+{
+  "summary": {
+    "databases": 22,
+    "healthy": 22,
+    "failed": 0,
+    "rows": 107189
+  },
+  "results": [
+    {
+      "file": "data/discovery_projects.sqlite3",
+      "healthy": true,
+      "quick_check": "ok",
+      "foreign_key_issues": 0,
+      "tables": 7,
+      "rows": 0
+    },
+    {
+      "file": "data/lab_analytics.sqlite3",
+      "healthy": true,
+      "quick_check": "ok",
+      "foreign_key_issues": 0,
+      "tables": 3,
+      "rows": 0
+    },
+    {
+      "file": "reports/analytics.sqlite3",
+      "healthy": true,
+      "quick_check": "ok",
+      "foreign_key_issues": 0,
+      "tables": 5,
+      "rows": 17690
+    },
+    {
+      "file": "reports/api_security.sqlite3",
+      "healthy": true,
+      "quick_check": "ok",
+      "foreign_key_issues": 0,
+      "tables": 5,
+      "rows": 811
+    },
+    {
+      "file": "reports/assets.sqlite3",
+      "healthy": true,
+      "quick_check": "ok",
+      "foreign_key_issues": 0,
+      "tables": 11,
+      "rows": 20547
+    },
+    {
+      "file": "reports/biotechnology_project_runs.sqlite3",
+      "healthy": true,
+      "quick_check": "ok",
+      "foreign_key_issues": 0,
+      "tables": 2,
+      "rows": 0
+    },
+    {
+      "file": "reports/connected_sources.sqlite3",
+      "healthy": true,
+      "quick_check": "ok",
+      "foreign_key_issues": 0,
+      "tables": 4,
+      "rows": 0
+    },
+    {
+      "file": "reports/datasets.sqlite3",
+      "healthy": true,
+      "quick_check": "ok",
+      "foreign_key_issues": 0,
+      "tables": 13,
+      "rows": 4879
+    },
+    {
+      "file": "reports/document_history.sqlite3",
+      "healthy": true,
+      "quick_check": "ok",
+      "foreign_key_issues": 0,
+      "tables": 14,
+      "rows": 1973
+    },
+    {
+      "file": "reports/evidence.sqlite3",
+      "healthy": true,
+      "quick_check": "ok",
+      "foreign_key_issues": 0,
+      "tables": 10,
+      "rows": 3891
+    },
+    {
+      "file": "reports/experiments.sqlite3",
+      "healthy": true,
+      "quick_check": "ok",
+      "foreign_key_issues": 0,
+      "tables": 9,
+      "rows": 783
+    },
+    {
+      "file": "reports/feature_cache.sqlite3",
+      "healthy": true,
+      "quick_check": "ok",
+      "foreign_key_issues": 0,
+      "tables": 2,
+      "rows": 1293
+    },
+    {
+      "file": "reports/internet_downloads.sqlite3",
+      "healthy": true,
+      "quick_check": "ok",
+      "foreign_key_issues": 0,
+      "tables": 5,
+      "rows": 105
+    },
+    {
+      "file": "reports/jobs.sqlite3",
+      "healthy": true,
+      "quick_check": "ok",
+      "foreign_key_issues": 0,
+      "tables": 6,
+      "rows": 884
+    },
+    {
+      "file": "reports/knowledge.sqlite3",
+      "healthy": true,
+      "quick_check": "ok",
+      "foreign_key_issues": 0,
+      "tables": 10,
+      "rows": 38427
+    },
+    {
+      "file": "reports/projects.sqlite3",
+      "healthy": true,
+      "quick_check": "ok",
+      "foreign_key_issues": 0,
+      "tables": 7,
+      "rows": 688
+    },
+    {
+      "file": "reports/prospective_validation.sqlite3",
+      "healthy": true,
+      "quick_check": "ok",
+      "foreign_key_issues": 0,
+      "tables": 4,
+      "rows": 0
+    },
+    {
+      "file": "reports/realworld_evidence.sqlite3",
+      "healthy": true,
+      "quick_check": "ok",
+      "foreign_key_issues": 0,
+      "tables": 6,
+      "rows": 9
+    },
+    {
+      "file": "reports/relationships.sqlite3",
+      "healthy": true,
+      "quick_check": "ok",
+      "foreign_key_issues": 0,
+      "tables": 4,
+      "rows": 2291
+    },
+    {
+      "file": "reports/scientific_evidence.sqlite3",
+      "healthy": true,
+      "quick_check": "ok",
+      "foreign_key_issues": 0,
+      "tables": 5,
+      "rows": 12903
+    },
+    {
+      "file": "reports/tenants.sqlite3",
+      "healthy": true,
+      "quick_check": "ok",
+      "foreign_key_issues": 0,
+      "tables": 4,
+      "rows": 3
+    },
+    {
+      "file": "reports/validation_evidence.sqlite3",
+      "healthy": true,
+      "quick_check": "ok",
+      "foreign_key_issues": 0,
+      "tables": 8,
+      "rows": 12
+    }
+  ]
+}

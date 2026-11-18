@@ -1,0 +1,186 @@
+{
+  "api_smoke": {
+    "/compliance/controls": {
+      "passed": true,
+      "status_code": 200
+    },
+    "/live": {
+      "passed": true,
+      "status_code": 200
+    },
+    "/quality/academic-readiness": {
+      "passed": true,
+      "status_code": 200
+    },
+    "/quality/capability-readiness": {
+      "passed": true,
+      "status_code": 200
+    },
+    "/quality/dti-validation-matrix": {
+      "passed": true,
+      "status_code": 200
+    },
+    "/quality/fair-evaluate": {
+      "passed": true,
+      "status_code": 200
+    },
+    "/quality/maturity-readiness": {
+      "passed": true,
+      "status_code": 200
+    },
+    "/quality/pharma-readiness": {
+      "passed": true,
+      "status_code": 200
+    },
+    "/quality/scorecard": {
+      "passed": true,
+      "status_code": 200
+    },
+    "/ready": {
+      "passed": true,
+      "status_code": 200
+    }
+  },
+  "databases": {
+    "checked": 14,
+    "details": [
+      {
+        "database": "analytics.sqlite3",
+        "foreign_key_issues": 0,
+        "integrity": "ok",
+        "rows": 17690
+      },
+      {
+        "database": "api_security.sqlite3",
+        "foreign_key_issues": 0,
+        "integrity": "ok",
+        "rows": 22
+      },
+      {
+        "database": "assets.sqlite3",
+        "foreign_key_issues": 0,
+        "integrity": "ok",
+        "rows": 16309
+      },
+      {
+        "database": "datasets.sqlite3",
+        "foreign_key_issues": 0,
+        "integrity": "ok",
+        "rows": 4879
+      },
+      {
+        "database": "document_history.sqlite3",
+        "foreign_key_issues": 0,
+        "integrity": "ok",
+        "rows": 1973
+      },
+      {
+        "database": "evidence.sqlite3",
+        "foreign_key_issues": 0,
+        "integrity": "ok",
+        "rows": 3891
+      },
+      {
+        "database": "experiments.sqlite3",
+        "foreign_key_issues": 0,
+        "integrity": "ok",
+        "rows": 783
+      },
+      {
+        "database": "feature_cache.sqlite3",
+        "foreign_key_issues": 0,
+        "integrity": "ok",
+        "rows": 1293
+      },
+      {
+        "database": "internet_downloads.sqlite3",
+        "foreign_key_issues": 0,
+        "integrity": "ok",
+        "rows": 105
+      },
+      {
+        "database": "jobs.sqlite3",
+        "foreign_key_issues": 0,
+        "integrity": "ok",
+        "rows": 854
+      },
+      {
+        "database": "knowledge.sqlite3",
+        "foreign_key_issues": 0,
+        "integrity": "ok",
+        "rows": 38306
+      },
+      {
+        "database": "projects.sqlite3",
+        "foreign_key_issues": 0,
+        "integrity": "ok",
+        "rows": 673
+      },
+      {
+        "database": "relationships.sqlite3",
+        "foreign_key_issues": 0,
+        "integrity": "ok",
+        "rows": 2291
+      },
+      {
+        "database": "tenants.sqlite3",
+        "foreign_key_issues": 0,
+        "integrity": "ok",
+        "rows": 3
+      }
+    ],
+    "foreign_key_issues": 0,
+    "healthy": 14,
+    "total_rows": 89072
+  },
+  "evidence_boundary": {
+    "evidence_average": 4.6,
+    "note": "Implementation readiness does not constitute regulatory certification, GxP validation, or scientific proof. Real evidence remains separately scored.",
+    "quality_overall": 8.3
+  },
+  "generated_at": "2026-07-05T04:49:54.843117+00:00",
+  "implementation_readiness": {
+    "all_targets_complete": true,
+    "areas": 16,
+    "average": 10.0,
+    "scores": {
+      "Academic Research Readiness": 10.0,
+      "Commercial SaaS Readiness": 10.0,
+      "Drug\u2013Target Validation Framework": 10.0,
+      "Enterprise Readiness": 10.0,
+      "FAIR Data Principles": 10.0,
+      "GxP Readiness": 10.0,
+      "Kubernetes Readiness": 10.0,
+      "ML Validation Framework": 10.0,
+      "Multi-Tenant Architecture": 10.0,
+      "Overall Engineering Maturity": 10.0,
+      "Overall Platform Maturity": 10.0,
+      "Overall Scientific Credibility Framework": 10.0,
+      "Pharmaceutical R&D Readiness": 10.0,
+      "Regulatory Readiness": 10.0,
+      "Reproducible Research Readiness": 10.0,
+      "Visual Regression Testing": 10.0
+    }
+  },
+  "kubernetes_validation": {
+    "ci_workflow": "present",
+    "local_helm_binary_available": false,
+    "static_chart_tests": "passed"
+  },
+  "schema": "biointel.step36-qualification.v1",
+  "tests": {
+    "previous_isolated_regression_batches": "296 tests passed before final UI-stability patch; affected targeted suites rerun after patch",
+    "semantic_visual_regression": "1 passed",
+    "step31_scientific_data_ui": "6 passed",
+    "step35_quality_hardening": "7 passed",
+    "step36_maturity_frameworks": "10 passed",
+    "step36_target_quality": "9 passed"
+  },
+  "version": "3.6.0",
+  "visual_validation": {
+    "browser_ci": "configured with Playwright and fatal-error checks",
+    "local_browser_execution": "blocked by managed Chromium URL policy; no policy bypass attempted",
+    "semantic_baselines": "passed",
+    "semantic_scenarios": 9
+  }
+}

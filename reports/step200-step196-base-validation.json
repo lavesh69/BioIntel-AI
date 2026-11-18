@@ -1,0 +1,48 @@
+{
+  "schema": "biointel.step196.validation.v1",
+  "generated_at_utc": "2026-07-16T21:47:34+00:00",
+  "passed": true,
+  "checks": [
+    {
+      "name": "required files",
+      "passed": true,
+      "detail": "complete"
+    },
+    {
+      "name": "five part markers",
+      "passed": true,
+      "detail": "complete"
+    },
+    {
+      "name": "version consistency",
+      "passed": true,
+      "detail": "{'VERSION': '15.4.0', 'pyproject': '15.4.0', 'release': '15.4.0', 'step': 196, 'part_count': 5}"
+    },
+    {
+      "name": "source manifest",
+      "passed": true,
+      "detail": "checked=25202 bad=0"
+    },
+    {
+      "name": "80 module hooks with relevant website access at top",
+      "passed": true,
+      "detail": "{'page_files': 79, 'hooks': 80, 'unique_modules': 80, 'top_failures': [], 'relevant_modules': 61}"
+    },
+    {
+      "name": "P0/P1 priority evidence upgrade contract",
+      "passed": true,
+      "detail": "{'module_workbenches': 62, 'unique_modules': 62, 'portfolio_centres': True, 'canonical_execution_aliases': 7, 'native_execution_routes': 15, 'automatic_controlled_release': False}"
+    },
+    {
+      "name": "cross-release runtime handover contract",
+      "passed": true,
+      "detail": "{'verified_process_handover': True, 'unverified_pid_termination': False, 'project_data_changed': False}"
+    },
+    {
+      "name": "free web AI integration contract",
+      "passed": true,
+      "detail": "complete"
+    }
+  ],
+  "report_path": "/mnt/data/BioIntel-Step200-Neuro-MaxPotential-Work/BioIntel-AI-Step196-WINDOWS-RELEASE-V16/reports/step200-step196-base-validation.json"
+}

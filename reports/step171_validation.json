@@ -1,0 +1,69 @@
+{
+  "schema": "biointel.step171.validation.v2",
+  "version": "14.3.0",
+  "status": "passed",
+  "checks": [
+    {
+      "check": "12 applicable module contracts",
+      "passed": true,
+      "detail": "12"
+    },
+    {
+      "check": "8 authentic research packages",
+      "passed": true,
+      "detail": "8"
+    },
+    {
+      "check": "4 external acquisition plans",
+      "passed": true,
+      "detail": "4"
+    },
+    {
+      "check": "package file manifests",
+      "passed": true,
+      "detail": "all package hashes match"
+    },
+    {
+      "check": "model artifacts load and hash",
+      "passed": true,
+      "detail": "all joblib artifacts load"
+    },
+    {
+      "check": "registry integrity",
+      "passed": true,
+      "detail": "{'database_integrity': 'ok', 'foreign_key_violations': 0, 'applicable_modules': 12, 'authentic_research_packages': 8, 'real_cohorts': 8, 'locked_benchmarks': 8, 'independent_external_sites': 0, 'release_eligible_models': 0, 'acquisition_pending': 4}"
+    },
+    {
+      "check": "matrix module coverage",
+      "passed": true,
+      "detail": "12"
+    },
+    {
+      "check": "authentic research benchmarks",
+      "passed": true,
+      "detail": "8"
+    },
+    {
+      "check": "real public or official cohorts",
+      "passed": true,
+      "detail": "8"
+    },
+    {
+      "check": "locked benchmark evaluations",
+      "passed": true,
+      "detail": "8"
+    },
+    {
+      "check": "synthetic and wrong-domain fail closed",
+      "passed": true,
+      "detail": "0 production releases; 4 task cohorts pending"
+    }
+  ],
+  "applicable_modules": 12,
+  "authentic_research_packages": 8,
+  "full_task_specific_research_packages": 5,
+  "external_acquisition_required": 4,
+  "independent_external_site_complete": 0,
+  "release_eligible": 0,
+  "boundary": "Untouched checksum-locked public benchmarks are qualified for research; independent external-site validation and expert approval remain required for controlled release."
+}

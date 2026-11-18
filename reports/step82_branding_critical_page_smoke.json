@@ -1,0 +1,64 @@
+{
+  "total": 11,
+  "passed": 11,
+  "failed": 0,
+  "uncaught_exceptions": 0,
+  "pages": [
+    {
+      "page": "app.py",
+      "passed": true,
+      "exceptions": []
+    },
+    {
+      "page": "pages/1_Sequence_Analyzer.py",
+      "passed": true,
+      "exceptions": []
+    },
+    {
+      "page": "pages/6_DTI_Predictor.py",
+      "passed": true,
+      "exceptions": []
+    },
+    {
+      "page": "pages/19_System_Diagnostics.py",
+      "passed": true,
+      "exceptions": []
+    },
+    {
+      "page": "pages/20_Workflow_Dashboard.py",
+      "passed": true,
+      "exceptions": []
+    },
+    {
+      "page": "pages/24_Appearance_Studio.py",
+      "passed": true,
+      "exceptions": []
+    },
+    {
+      "page": "pages/61_Structural_Bioinformatics.py",
+      "passed": true,
+      "exceptions": []
+    },
+    {
+      "page": "pages/64_Wet_Lab_Biotechnology.py",
+      "passed": true,
+      "exceptions": []
+    },
+    {
+      "page": "pages/82_Metagenomics_Pipeline.py",
+      "passed": true,
+      "exceptions": []
+    },
+    {
+      "page": "pages/86_Privacy_Security_Center.py",
+      "passed": true,
+      "exceptions": []
+    },
+    {
+      "page": "pages/87_Store_Readiness_Center.py",
+      "passed": true,
+      "exceptions": []
+    }
+  ],
+  "note": "Each page was launched with Streamlit AppTest in an isolated worker process."
+}

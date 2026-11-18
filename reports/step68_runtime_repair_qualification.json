@@ -1,0 +1,270 @@
+{
+  "checks": {
+    "api_smoke": {
+      "case_count": 9,
+      "cases": [
+        {
+          "name": "health",
+          "passed": true,
+          "status_code": 200
+        },
+        {
+          "name": "ui catalog",
+          "passed": true,
+          "status_code": 200
+        },
+        {
+          "name": "project",
+          "passed": true,
+          "status_code": 200
+        },
+        {
+          "name": "compound",
+          "passed": true,
+          "status_code": 200
+        },
+        {
+          "name": "ranking",
+          "passed": true,
+          "status_code": 200
+        },
+        {
+          "name": "admet",
+          "passed": true,
+          "status_code": 200
+        },
+        {
+          "name": "enzyme",
+          "passed": true,
+          "status_code": 200
+        },
+        {
+          "name": "bioprocess",
+          "passed": true,
+          "status_code": 200
+        },
+        {
+          "name": "sequence",
+          "passed": true,
+          "status_code": 200
+        }
+      ],
+      "failed_cases": 0,
+      "passed_cases": 9
+    },
+    "compilation": {
+      "passed": true,
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "",
+      "timed_out": false
+    },
+    "databases": {
+      "database_count": 22,
+      "failures": [],
+      "foreign_key_violations": 0,
+      "healthy": 22,
+      "passed": true,
+      "rows": 107189
+    },
+    "focused_regressions": {
+      "files": 16,
+      "groups": 8,
+      "items": [
+        {
+          "files": 4,
+          "group": "Runtime/DTI/chemistry",
+          "passed": true,
+          "source": "reports/step68_regression_group1.json",
+          "tests": 19
+        },
+        {
+          "files": 6,
+          "group": "UI/theme/runtime compatibility",
+          "passed": true,
+          "source": "reports/step68_regression_group2.json",
+          "tests": 43
+        },
+        {
+          "file": "tests/test_step59_bioinformatics_excellence.py",
+          "group": "Bioinformatics excellence",
+          "passed": true,
+          "tests": 27
+        },
+        {
+          "file": "tests/test_step60_lab_analytics_excellence.py",
+          "group": "Lab Analytics Step60",
+          "passed": true,
+          "tests": 22
+        },
+        {
+          "file": "tests/test_step61_discovery_excellence.py",
+          "group": "Discovery Step61",
+          "passed": true,
+          "tests": 10
+        },
+        {
+          "file": "tests/test_step62_lab_analytics_excellence.py",
+          "group": "Lab Analytics Step62",
+          "passed": true,
+          "tests": 19
+        },
+        {
+          "file": "tests/test_step63_discovery_excellence.py",
+          "group": "Discovery Step63",
+          "passed": true,
+          "tests": 24
+        },
+        {
+          "file": "tests/test_step64_final_optimization.py",
+          "group": "Final optimization Step64",
+          "passed": true,
+          "tests": 7
+        }
+      ],
+      "note": "Each listed group/file was executed successfully in isolated runs. A monolithic historical-suite pass is not claimed because the environment execution cap can terminate long multi-file runs after child frameworks finish.",
+      "passed": true,
+      "schema": "biointel.step68.regression-summary.v1",
+      "tests": 171
+    },
+    "performance": {
+      "balanced_speedup_vs_exhaustive": 5.76,
+      "primer": {
+        "balanced": {
+          "best_score": 99.57,
+          "pairs": 100,
+          "seconds": 1.8011
+        },
+        "exhaustive": {
+          "best_score": 100.0,
+          "pairs": 100,
+          "seconds": 10.3672
+        },
+        "fast": {
+          "best_score": 99.57,
+          "pairs": 100,
+          "seconds": 0.8958
+        }
+      },
+      "structure": {
+        "atom_rows": 484,
+        "display_rows": 124,
+        "figure_seconds": 0.2126,
+        "figure_traces": 3,
+        "height": 840,
+        "table_seconds": 0.005
+      }
+    },
+    "ruff": {
+      "passed": true,
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "All checks passed!\n",
+      "timed_out": false
+    },
+    "secrets": {
+      "finding_count": 0,
+      "findings": [],
+      "passed": true,
+      "scanned_files": 1194
+    },
+    "step68_tests": {
+      "passed": true,
+      "returncode": 0,
+      "stderr": "",
+      "stdout": ".........                                                                [100%]\n9 passed in 15.38s\n",
+      "timed_out": false
+    },
+    "store": {
+      "external_actions": 3,
+      "implementation_ready": true,
+      "internal_failures": 0
+    },
+    "streamlit_runtime": {
+      "failed_scenarios": 0,
+      "passed_scenarios": 15,
+      "scenario_count": 15,
+      "scenarios": [
+        {
+          "exceptions": [],
+          "page": "app.py",
+          "passed": true
+        },
+        {
+          "exceptions": [],
+          "page": "pages/24_Appearance_Studio.py",
+          "passed": true
+        },
+        {
+          "exceptions": [],
+          "page": "pages/6_DTI_Predictor.py",
+          "passed": true
+        },
+        {
+          "exceptions": [],
+          "page": "pages/58_Primer_CRISPR_Codon_Studio.py",
+          "passed": true
+        },
+        {
+          "exceptions": [],
+          "page": "pages/61_Structural_Bioinformatics.py",
+          "passed": true
+        },
+        {
+          "exceptions": [],
+          "page": "pages/62_ADMET_Drug_Discovery.py",
+          "passed": true
+        },
+        {
+          "exceptions": [],
+          "page": "pages/64_Wet_Lab_Biotechnology.py",
+          "passed": true
+        },
+        {
+          "exceptions": [],
+          "page": "pages/82_Metagenomics_Pipeline.py",
+          "passed": true
+        },
+        {
+          "exceptions": [],
+          "page": "pages/1_Sequence_Analyzer.py",
+          "passed": true
+        },
+        {
+          "exceptions": [],
+          "page": "pages/57_Variant_Annotation_Workbench.py",
+          "passed": true
+        },
+        {
+          "exceptions": [],
+          "page": "pages/59_Transcriptomics_Expression_Lab.py",
+          "passed": true
+        },
+        {
+          "exceptions": [],
+          "page": "pages/80_Single_Cell_Heterogeneity.py",
+          "passed": true
+        },
+        {
+          "exceptions": [],
+          "page": "pages/81_Cancer_Genomics.py",
+          "passed": true
+        },
+        {
+          "exceptions": [],
+          "page": "pages/88_Discovery_Command_Center.py",
+          "passed": true
+        },
+        {
+          "exceptions": [],
+          "page": "pages/89_Lab_Analytics_Command_Center.py",
+          "passed": true
+        }
+      ]
+    },
+    "version": "6.8.0"
+  },
+  "historical_full_suite_note": "A single monolithic historical test run can exceed the environment execution cap. No complete historical-suite pass is claimed. The release is supported by 171 isolated focused/regression tests, 15 representative Streamlit page renders, API checks, lint, compilation, database integrity and package verification.",
+  "passed": true,
+  "schema": "biointel.step68.runtime-repair-qualification.v1"
+}

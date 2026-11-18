@@ -1,0 +1,241 @@
+{
+  "bomFormat": "CycloneDX",
+  "components": [
+    {
+      "declared": "anndata==0.12.7",
+      "installed_version": "not-installed-in-build-environment",
+      "name": "anndata",
+      "purl": "pkg:pypi/anndata",
+      "type": "library"
+    },
+    {
+      "declared": "beautifulsoup4==4.14.3",
+      "installed_version": "4.14.3",
+      "name": "beautifulsoup4",
+      "purl": "pkg:pypi/beautifulsoup4@4.14.3",
+      "type": "library"
+    },
+    {
+      "declared": "biopython==1.86",
+      "installed_version": "1.86",
+      "name": "biopython",
+      "purl": "pkg:pypi/biopython@1.86",
+      "type": "library"
+    },
+    {
+      "declared": "fastapi==0.128.2",
+      "installed_version": "0.128.2",
+      "name": "fastapi",
+      "purl": "pkg:pypi/fastapi@0.128.2",
+      "type": "library"
+    },
+    {
+      "declared": "h5py==3.15.1",
+      "installed_version": "3.15.1",
+      "name": "h5py",
+      "purl": "pkg:pypi/h5py@3.15.1",
+      "type": "library"
+    },
+    {
+      "declared": "httpx==0.28.1",
+      "installed_version": "0.28.1",
+      "name": "httpx",
+      "purl": "pkg:pypi/httpx@0.28.1",
+      "type": "library"
+    },
+    {
+      "declared": "joblib==1.5.3",
+      "installed_version": "1.5.3",
+      "name": "joblib",
+      "purl": "pkg:pypi/joblib@1.5.3",
+      "type": "library"
+    },
+    {
+      "declared": "leidenalg==0.10.2",
+      "installed_version": "not-installed-in-build-environment",
+      "name": "leidenalg",
+      "purl": "pkg:pypi/leidenalg",
+      "type": "library"
+    },
+    {
+      "declared": "lxml==6.1.1",
+      "installed_version": "6.1.1",
+      "name": "lxml",
+      "purl": "pkg:pypi/lxml@6.1.1",
+      "type": "library"
+    },
+    {
+      "declared": "numpy==2.3.5",
+      "installed_version": "2.3.5",
+      "name": "numpy",
+      "purl": "pkg:pypi/numpy@2.3.5",
+      "type": "library"
+    },
+    {
+      "declared": "odfpy==1.4.1",
+      "installed_version": "1.4.1",
+      "name": "odfpy",
+      "purl": "pkg:pypi/odfpy@1.4.1",
+      "type": "library"
+    },
+    {
+      "declared": "openpyxl==3.1.5",
+      "installed_version": "3.1.5",
+      "name": "openpyxl",
+      "purl": "pkg:pypi/openpyxl@3.1.5",
+      "type": "library"
+    },
+    {
+      "declared": "pandas==2.2.3",
+      "installed_version": "2.2.3",
+      "name": "pandas",
+      "purl": "pkg:pypi/pandas@2.2.3",
+      "type": "library"
+    },
+    {
+      "declared": "pdfplumber==0.11.9",
+      "installed_version": "0.11.9",
+      "name": "pdfplumber",
+      "purl": "pkg:pypi/pdfplumber@0.11.9",
+      "type": "library"
+    },
+    {
+      "declared": "Pillow==11.3.0",
+      "installed_version": "12.2.0",
+      "name": "Pillow",
+      "purl": "pkg:pypi/pillow@12.2.0",
+      "type": "library"
+    },
+    {
+      "declared": "plotly==6.5.2",
+      "installed_version": "6.5.2",
+      "name": "plotly",
+      "purl": "pkg:pypi/plotly@6.5.2",
+      "type": "library"
+    },
+    {
+      "declared": "pypdf==5.9.0",
+      "installed_version": "5.9.0",
+      "name": "pypdf",
+      "purl": "pkg:pypi/pypdf@5.9.0",
+      "type": "library"
+    },
+    {
+      "declared": "pypdfium2==4.30.0",
+      "installed_version": "5.8.0",
+      "name": "pypdfium2",
+      "purl": "pkg:pypi/pypdfium2@5.8.0",
+      "type": "library"
+    },
+    {
+      "declared": "pytesseract==0.3.13",
+      "installed_version": "0.3.13",
+      "name": "pytesseract",
+      "purl": "pkg:pypi/pytesseract@0.3.13",
+      "type": "library"
+    },
+    {
+      "declared": "python-docx==1.2.0",
+      "installed_version": "1.2.0",
+      "name": "python-docx",
+      "purl": "pkg:pypi/python-docx@1.2.0",
+      "type": "library"
+    },
+    {
+      "declared": "python-igraph==0.11.9",
+      "installed_version": "not-installed-in-build-environment",
+      "name": "python-igraph",
+      "purl": "pkg:pypi/python-igraph",
+      "type": "library"
+    },
+    {
+      "declared": "python-multipart==0.0.29",
+      "installed_version": "0.0.29",
+      "name": "python-multipart",
+      "purl": "pkg:pypi/python-multipart@0.0.29",
+      "type": "library"
+    },
+    {
+      "declared": "python-pptx==1.0.2",
+      "installed_version": "1.0.2",
+      "name": "python-pptx",
+      "purl": "pkg:pypi/python-pptx@1.0.2",
+      "type": "library"
+    },
+    {
+      "declared": "PyYAML==6.0.3",
+      "installed_version": "6.0.3",
+      "name": "PyYAML",
+      "purl": "pkg:pypi/pyyaml@6.0.3",
+      "type": "library"
+    },
+    {
+      "declared": "rdkit==2025.9.4",
+      "installed_version": "2025.9.4",
+      "name": "rdkit",
+      "purl": "pkg:pypi/rdkit@2025.9.4",
+      "type": "library"
+    },
+    {
+      "declared": "reportlab==4.4.9",
+      "installed_version": "4.4.9",
+      "name": "reportlab",
+      "purl": "pkg:pypi/reportlab@4.4.9",
+      "type": "library"
+    },
+    {
+      "declared": "scikit-learn==1.8.0",
+      "installed_version": "1.8.0",
+      "name": "scikit-learn",
+      "purl": "pkg:pypi/scikit-learn@1.8.0",
+      "type": "library"
+    },
+    {
+      "declared": "scipy==1.17.0",
+      "installed_version": "1.17.0",
+      "name": "scipy",
+      "purl": "pkg:pypi/scipy@1.17.0",
+      "type": "library"
+    },
+    {
+      "declared": "streamlit==1.58.0",
+      "installed_version": "not-installed-in-build-environment",
+      "name": "streamlit",
+      "purl": "pkg:pypi/streamlit",
+      "type": "library"
+    },
+    {
+      "declared": "umap-learn==0.5.9.post2",
+      "installed_version": "not-installed-in-build-environment",
+      "name": "umap-learn",
+      "purl": "pkg:pypi/umap-learn",
+      "type": "library"
+    },
+    {
+      "declared": "uvicorn==0.48.0",
+      "installed_version": "0.48.0",
+      "name": "uvicorn",
+      "purl": "pkg:pypi/uvicorn@0.48.0",
+      "type": "library"
+    },
+    {
+      "declared": "xlrd==2.0.2",
+      "installed_version": "not-installed-in-build-environment",
+      "name": "xlrd",
+      "purl": "pkg:pypi/xlrd",
+      "type": "library"
+    }
+  ],
+  "metadata": {
+    "component": {
+      "name": "BioIntel AI",
+      "type": "application",
+      "version": "14.9.0"
+    },
+    "note": "Requirements-derived SBOM. It is not an online CVE scan or third-party certification.",
+    "timestamp": "2026-07-15T07:28:51+00:00"
+  },
+  "serialNumber": "urn:uuid:biointel-step191-1d6743257f287d8e1cc92dea",
+  "specVersion": "1.5",
+  "version": 1
+}

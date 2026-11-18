@@ -1,0 +1,80 @@
+kind,id,label,environment_group,automatic_install_eligible,manual_provider_action_required,licence_id,target_host_qualified,artifact_qualified,final_target_qualification_complete,next_action,step175_framework_score
+engine,deeptools,deepTools,epigenomics,True,False,bioconda-upstream,False,False,False,Run Step 175 transactional installer,10.0
+engine,macs2,MACS2,epigenomics,True,False,bioconda-upstream,False,False,False,Run Step 175 transactional installer,10.0
+engine,bcftools,BCFtools,genomics-core,True,False,bioconda-upstream,False,False,False,Run Step 175 transactional installer,10.0
+engine,blastn,BLASTN,genomics-core,True,False,bioconda-upstream,False,False,False,Run Step 175 transactional installer,10.0
+engine,bowtie,Bowtie 2,genomics-core,True,False,bioconda-upstream,False,False,False,Run Step 175 transactional installer,10.0
+engine,bwa,BWA,genomics-core,True,False,bioconda-upstream,False,False,False,Run Step 175 transactional installer,10.0
+engine,expansionhunter,ExpansionHunter,genomics-core,True,False,bioconda-upstream,False,False,False,Run Step 175 transactional installer,10.0
+engine,iqtree,IQ-TREE,genomics-core,True,False,bioconda-upstream,False,False,False,Run Step 175 transactional installer,10.0
+engine,mafft,MAFFT,genomics-core,True,False,bioconda-upstream,False,False,False,Run Step 175 transactional installer,10.0
+engine,minimap2,minimap2,genomics-core,True,False,bioconda-upstream,False,False,False,Run Step 175 transactional installer,10.0
+engine,samtools,SAMtools,genomics-core,True,False,bioconda-upstream,False,False,False,Run Step 175 transactional installer,10.0
+engine,sniffles,Sniffles2,genomics-core,True,False,bioconda-upstream,False,False,False,Run Step 175 transactional installer,10.0
+engine,star,STAR,genomics-core,True,False,bioconda-upstream,False,False,False,Run Step 175 transactional installer,10.0
+engine,vep,Ensembl VEP,genomics-core,True,False,bioconda-upstream,False,False,False,Run Step 175 transactional installer,10.0
+engine,whatshap,WhatsHap,genomics-core,True,False,bioconda-upstream,False,False,False,Run Step 175 transactional installer,10.0
+engine,cellpose,Cellpose,imaging,True,False,bioconda-upstream,False,False,False,Run Step 175 transactional installer,10.0
+engine,openslide,OpenSlide Python,imaging,True,False,bioconda-upstream,False,False,False,Run Step 175 transactional installer,10.0
+engine,stardist,StarDist Python,imaging,True,False,bioconda-upstream,False,False,False,Run Step 175 transactional installer,10.0
+engine,anarci,ANARCI,immunology,True,False,bioconda-upstream,False,False,False,Run Step 175 transactional installer,10.0
+engine,igblast,IgBLAST,immunology,True,False,bioconda-upstream,False,False,False,Run Step 175 transactional installer,10.0
+engine,netmhciipan,NetMHCIIpan,immunology,False,True,dtu-academic,False,False,False,Complete manual/provider installation,10.0
+engine,netmhcpan,NetMHCpan,immunology,False,True,dtu-academic,False,False,False,Complete manual/provider installation,10.0
+engine,llama_cpp,llama.cpp,local-ai,True,False,bioconda-upstream,False,False,False,Run Step 175 transactional installer,10.0
+engine,busco,BUSCO,longread-assembly,True,False,bioconda-upstream,False,False,False,Run Step 175 transactional installer,10.0
+engine,dorado,Oxford Nanopore Dorado,longread-assembly,False,True,ont-public-license,False,False,False,Complete manual/provider installation,10.0
+engine,flye,Flye,longread-assembly,True,False,bioconda-upstream,False,False,False,Run Step 175 transactional installer,10.0
+engine,hifiasm,hifiasm,longread-assembly,True,False,bioconda-upstream,False,False,False,Run Step 175 transactional installer,10.0
+engine,merqury,Merqury,longread-assembly,True,False,bioconda-upstream,False,False,False,Run Step 175 transactional installer,10.0
+engine,modkit,Oxford Nanopore Modkit,longread-assembly,True,False,bioconda-upstream,False,False,False,Run Step 175 transactional installer,10.0
+engine,amrfinderplus,NCBI AMRFinderPlus,microbiome-amr,True,False,bioconda-upstream,False,False,False,Run Step 175 transactional installer,10.0
+engine,bracken,Bracken,microbiome-amr,True,False,bioconda-upstream,False,False,False,Run Step 175 transactional installer,10.0
+engine,humann,HUMAnN,microbiome-amr,True,False,bioconda-upstream,False,False,False,Run Step 175 transactional installer,10.0
+engine,kraken2,Kraken 2,microbiome-amr,True,False,bioconda-upstream,False,False,False,Run Step 175 transactional installer,10.0
+engine,resfinder,ResFinder,microbiome-amr,True,False,bioconda-upstream,False,False,False,Run Step 175 transactional installer,10.0
+engine,graphaligner,GraphAligner,pangenome,True,False,bioconda-upstream,False,False,False,Run Step 175 transactional installer,10.0
+engine,minigraph,minigraph,pangenome,True,False,bioconda-upstream,False,False,False,Run Step 175 transactional installer,10.0
+engine,odgi,odgi,pangenome,True,False,bioconda-upstream,False,False,False,Run Step 175 transactional installer,10.0
+engine,vg,vg toolkit,pangenome,True,False,bioconda-upstream,False,False,False,Run Step 175 transactional installer,10.0
+engine,plink2,PLINK 2,population,True,False,bioconda-upstream,False,False,False,Run Step 175 transactional installer,10.0
+engine,regenie,REGENIE,population,True,False,bioconda-upstream,False,False,False,Run Step 175 transactional installer,10.0
+engine,saige,SAIGE,population,True,False,bioconda-upstream,False,False,False,Run Step 175 transactional installer,10.0
+engine,comet,Comet,proteomics,True,False,bioconda-upstream,False,False,False,Run Step 175 transactional installer,10.0
+engine,msgfplus,MS-GF+,proteomics,True,False,bioconda-upstream,False,False,False,Run Step 175 transactional installer,10.0
+engine,openms,OpenMS,proteomics,True,False,bioconda-upstream,False,False,False,Run Step 175 transactional installer,10.0
+engine,cellrank,CellRank Python,single-cell,True,False,bioconda-upstream,False,False,False,Run Step 175 transactional installer,10.0
+engine,scanpy,Scanpy Python,single-cell,True,False,bioconda-upstream,False,False,False,Run Step 175 transactional installer,10.0
+engine,scvelo,scVelo Python,single-cell,True,False,bioconda-upstream,False,False,False,Run Step 175 transactional installer,10.0
+engine,colabfold,ColabFold,structure-design,True,False,bioconda-upstream,False,False,False,Run Step 175 transactional installer,10.0
+engine,gromacs,GROMACS,structure-design,True,False,bioconda-upstream,False,False,False,Run Step 175 transactional installer,10.0
+engine,openmm,OpenMM Python,structure-design,True,False,bioconda-upstream,False,False,False,Run Step 175 transactional installer,10.0
+engine,proteinmpnn,ProteinMPNN,structure-design,False,True,proteinmpnn-mit,False,False,False,Complete manual/provider installation,10.0
+engine,rfdiffusion,RFdiffusion,structure-design,False,True,rfdiffusion-bsd,False,False,False,Complete manual/provider installation,10.0
+engine,vina,AutoDock Vina,structure-design,True,False,bioconda-upstream,False,False,False,Run Step 175 transactional installer,10.0
+reference,amrfinder-db,NCBI AMRFinderPlus database,reference-data,False,True,ncbi-data-policy,False,False,False,Acquire provider-authorized release,10.0
+reference,bindingdb,BindingDB complete dataset,reference-data,False,True,bindingdb-terms,False,False,False,Acquire provider-authorized release,10.0
+reference,busco-lineages,BUSCO lineage datasets,reference-data,False,True,source-database-terms,False,False,False,Acquire provider-authorized release,10.0
+reference,card,Comprehensive Antibiotic Resistance Database,reference-data,False,True,card-terms,False,False,False,Acquire provider-authorized release,10.0
+reference,chembl,ChEMBL database release,reference-data,False,True,chembl-cc-by-sa-3,False,False,False,Acquire provider-authorized release,10.0
+reference,clinvar-grch38-tbi,ClinVar GRCh38 VCF index,reference-data,True,False,ncbi-data-policy,False,False,False,Run Step 175 resumable reference installer,10.0
+reference,clinvar-grch38-vcf,ClinVar GRCh38 VCF,reference-data,True,False,ncbi-data-policy,False,False,False,Run Step 175 resumable reference installer,10.0
+reference,colabfold-databases,ColabFold search databases,reference-data,False,True,source-database-terms,False,False,False,Acquire provider-authorized release,10.0
+reference,dorado-models,Dorado basecalling models,reference-data,False,True,ont-public-license,False,False,False,Acquire provider-authorized release,10.0
+reference,gnomad-genomes,gnomAD genomes,reference-data,False,True,broad-gnomad-terms,False,False,False,Acquire provider-authorized release,10.0
+reference,go-basic,Gene Ontology basic,reference-data,True,False,go-cc-by-4,False,False,False,Run Step 175 resumable reference installer,10.0
+reference,grch38-fasta,Human reference genome GRCh38,reference-data,True,False,ucsc-terms,False,False,False,Run Step 175 resumable reference installer,10.0
+reference,hpo-ontology,Human Phenotype Ontology,reference-data,True,False,hpo-terms,False,False,False,Run Step 175 resumable reference installer,10.0
+reference,humann-chocophlan,HUMAnN ChocoPhlAn database,reference-data,False,True,source-database-terms,False,False,False,Acquire provider-authorized release,10.0
+reference,humann-uniref90,HUMAnN UniRef90 database,reference-data,False,True,source-database-terms,False,False,False,Acquire provider-authorized release,10.0
+reference,igblast-germline,IgBLAST germline database,reference-data,False,True,ncbi-data-policy,False,False,False,Acquire provider-authorized release,10.0
+reference,kraken2-standard,Kraken 2 Standard database,reference-data,False,True,source-database-terms,False,False,False,Acquire provider-authorized release,10.0
+reference,netmhciipan-data,NetMHCIIpan stand-alone data package,reference-data,False,True,dtu-academic,False,False,False,Acquire provider-authorized release,10.0
+reference,netmhcpan-data,NetMHCpan stand-alone data package,reference-data,False,True,dtu-academic,False,False,False,Acquire provider-authorized release,10.0
+reference,proteinmpnn-weights,ProteinMPNN official model weights,reference-data,False,True,proteinmpnn-mit,False,False,False,Acquire provider-authorized release,10.0
+reference,reactome-uniprot,Reactome UniProt pathway mapping,reference-data,True,False,reactome-cc-by-4,False,False,False,Run Step 175 resumable reference installer,10.0
+reference,repeat-expansion-catalog,Repeat-expansion locus catalogue,reference-data,False,True,bioconda-upstream,False,False,False,Acquire provider-authorized release,10.0
+reference,resfinder-db,ResFinder database,reference-data,False,True,source-database-terms,False,False,False,Acquire provider-authorized release,10.0
+reference,rfdiffusion-weights,RFdiffusion official model weights,reference-data,False,True,rfdiffusion-bsd,False,False,False,Acquire provider-authorized release,10.0
+reference,uniprot-swissprot,UniProtKB Swiss-Prot,reference-data,True,False,uniprot-cc-by-4,False,False,False,Run Step 175 resumable reference installer,10.0
+reference,vep-cache-grch38,Ensembl VEP Homo sapiens GRCh38 cache,reference-data,False,True,ensembl-terms,False,False,False,Acquire provider-authorized release,10.0

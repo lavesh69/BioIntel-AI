@@ -1,0 +1,13 @@
+{
+  "schema": "biointel.step172.test-results.v1",
+  "completed_passes": 75,
+  "completed_failures": 1,
+  "focused_step170_to_172_passed": 18,
+  "full_native_modules_passed": 80,
+  "historical_version_pin_failure": {
+    "test": "tests/test_step169_final_consolidation.py::test_step169_assets_matrix_and_version_consistency",
+    "reason": "Historical Step 169 test hard-codes VERSION 14.1.0; current Step 172 release is intentionally 14.4.0.",
+    "regression": false
+  },
+  "incomplete_runs_counted_as_pass": false
+}

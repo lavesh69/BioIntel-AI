@@ -1,0 +1,16 @@
+{
+  "android": {
+    "required": ["android.permission.INTERNET"],
+    "not_requested": ["Camera", "Microphone", "Contacts", "Location", "SMS", "Phone", "Photos", "Advertising ID"]
+  },
+  "ios": {
+    "required_usage_descriptions": [],
+    "url_scheme": "biointel://connect",
+    "tracking": false,
+    "non_exempt_encryption": false
+  },
+  "windows": {
+    "network": "Local localhost backend plus operator-invoked outbound providers",
+    "restricted_capabilities": []
+  }
+}

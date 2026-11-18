@@ -1,0 +1,1878 @@
+{
+  "complete": true,
+  "duplicates": [],
+  "failed": 0,
+  "generated_at_utc": "2026-07-13T14:11:15.443016+00:00",
+  "missing": [],
+  "pages_collected": 229,
+  "pages_expected": 229,
+  "passed": 229,
+  "results": [
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 13:52:08.539 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 4.276,
+      "page": "app.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 13:52:08.540 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 6.003,
+      "page": "pages/0_Quick_Start.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 13:52:12.707 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 8.165,
+      "page": "pages/100_Rare_Disease_Genome_Interpretation.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 13:52:14.937 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 6.866,
+      "page": "pages/101_Biomedical_Knowledge_Graph_Copilot.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 13:52:21.691 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 7.151,
+      "page": "pages/102_Multi_Omics_Biomarker_Discovery.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 13:52:22.028 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 6.832,
+      "page": "pages/103_Visual_Workflow_Builder.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 13:52:28.414 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 6.529,
+      "page": "pages/104_Innovation_Modules_Hub.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 13:52:28.414 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 6.804,
+      "page": "pages/105_Scientific_Execution_Quality_Center.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 13:52:34.882 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 6.243,
+      "page": "pages/106_Reference_Database_Manager.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 13:52:35.231 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 4.263,
+      "page": "pages/107_Installation_Data_Recovery_Center.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 13:53:32.136 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 3.833,
+      "page": "pages/108_External_Model_Qualification.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 13:53:32.138 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 6.99,
+      "page": "pages/109_Lab_Instrument_Import_Center.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 13:53:36.118 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 6.363,
+      "page": "pages/10_External_Databases.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 13:53:39.501 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 4.655,
+      "page": "pages/110_Reliability_Optimization_Center.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 13:53:42.716 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 5.333,
+      "page": "pages/111_Windows_UI_Regression_Performance_Center.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 13:53:43.778 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 8.091,
+      "page": "pages/112_Epigenomics_and_Chromatin_Regulation_Studio.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 13:53:47.497 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 7.317,
+      "page": "pages/113_Metabolomics_and_Lipidomics_Workbench.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 13:53:51.855 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 6.429,
+      "page": "pages/114_Immunoinformatics_and_Vaccine_Design_Lab.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 13:54:09.178 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 7.69,
+      "page": "pages/115_Antibody_and_Biologics_Engineering_Studio.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 13:54:09.169 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 7.511,
+      "page": "pages/116_Molecular_Docking_and_Dynamics_Lab.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 13:54:16.947 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 7.483,
+      "page": "pages/117_Pharmacogenomics_and_Precision_Medicine_Board.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 13:54:16.974 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 7.262,
+      "page": "pages/118_Spatial_Omics_and_Digital_Pathology_Studio.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 13:54:24.224 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 7.884,
+      "page": "pages/119_Single_Cell_Trajectory_and_Communication_Lab.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 13:54:24.221 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 6.708,
+      "page": "pages/11_Experiment_Registry.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 13:54:30.814 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 7.01,
+      "page": "pages/120_Bioimage_and_Microscopy_AI_Lab.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 13:54:32.162 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 6.778,
+      "page": "pages/121_Biostatistics_Power_and_Experimental_Design_Studio.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 13:54:50.182 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 8.033,
+      "page": "pages/122_Clinical_Trial_Biomarker_and_Patient_Stratification_Studio.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 13:54:50.186 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 8.262,
+      "page": "pages/123_Genome_Editing_Safety_and_Off_Target_Validation_Lab.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 13:54:50.185 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 8.389,
+      "page": "pages/124_Proteogenomics_and_Neoantigen_Discovery_Studio.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 13:54:58.589 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 9.599,
+      "page": "pages/125_Bioprocess_and_Fermentation_Optimization_Studio.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 13:54:58.789 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 9.27,
+      "page": "pages/126_LIMS_ELN_and_Sample_Chain_of_Custody_Hub.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 13:54:59.146 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 7.914,
+      "page": "pages/127_Causal_Biology_and_Perturbation_Modelling.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 13:55:07.126 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 8.125,
+      "page": "pages/128_Explainable_AI_and_Model_Assurance_Center.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 13:55:08.599 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 8.501,
+      "page": "pages/129_Multi_Omics_Harmonization_and_Batch_Correction_Studio.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 13:55:08.599 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 5.519,
+      "page": "pages/12_API_Deployment.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 13:56:15.382 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 9.251,
+      "page": "pages/130_Glycomics_and_Glycoproteomics_Workbench.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 13:56:15.385 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 9.117,
+      "page": "pages/131_One_Health_and_Environmental_Genomics_Center.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 13:56:15.383 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 7.6,
+      "page": "pages/132_Synthetic_Data_and_Privacy_Engineering_Lab.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 13:56:22.646 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 7.373,
+      "page": "pages/133_Scientific_Expansion_Hub.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 13:56:24.396 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 11.834,
+      "page": "pages/134_Population_Genetics_GWAS_Studio.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 13:56:24.394 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 11.612,
+      "page": "pages/135_Structural_Variant_Repeat_Expansion_Lab.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 13:56:29.815 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 11.886,
+      "page": "pages/136_Longitudinal_Multi_Omics_Time_Series_Studio.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 13:56:35.991 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 9.965,
+      "page": "pages/137_RNA_Isoform_Alternative_Splicing_Studio.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 13:56:35.989 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 9.494,
+      "page": "pages/138_RNA_Modification_Epitranscriptomics_Lab.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 13:57:38.984 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 10.999,
+      "page": "pages/139_Strain_Resolved_Microbiome_Functional_Profiling_Studio.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 13:57:38.995 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 9.208,
+      "page": "pages/13_ChEMBL_Dataset_Builder.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 13:57:38.984 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 10.984,
+      "page": "pages/140_Cell_Atlas_Mapping_Reference_Annotation_Studio.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 13:57:47.814 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 10.293,
+      "page": "pages/141_Phenotypic_Screening_High_Content_Analysis_Lab.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 13:57:50.149 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 10.277,
+      "page": "pages/142_Organoid_3D_Cell_Model_Analytics.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 13:57:50.162 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 10.087,
+      "page": "pages/143_Protein_Language_Model_Generative_Design_Lab.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 13:57:58.000 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 8.748,
+      "page": "pages/144_Enzyme_Engineering_Metabolic_Pathway_Design_Studio.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 13:57:59.812 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 8.158,
+      "page": "pages/145_Host_Pathogen_Interaction_Studio.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 13:59:18.704 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 12.642,
+      "page": "pages/146_Virology_Viral_Evolution_Workbench.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 13:59:18.704 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 12.62,
+      "page": "pages/147_Rare_Variant_Burden_Family_Genetics_Lab.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 13:59:18.704 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 10.662,
+      "page": "pages/148_Universal_Scientific_File_Inspector.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 13:59:30.051 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 12.585,
+      "page": "pages/149_Cross_Module_Project_Workspace.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 13:59:32.362 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 17.451,
+      "page": "pages/14_External_Validation_Drift.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 13:59:32.348 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 12.907,
+      "page": "pages/150_Visual_Scientific_Workflow_Builder_2.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 13:59:42.568 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 10.543,
+      "page": "pages/151_Real_Background_Job_Queue_Engine.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 13:59:44.697 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 9.207,
+      "page": "pages/152_Unified_Scientific_Report_Builder.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 13:59:56.754 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 11.31,
+      "page": "pages/153_Reference_Database_Lifecycle_Manager_2.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 13:59:56.749 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 13.031,
+      "page": "pages/154_Data_Provenance_Reproducibility_Ledger_2.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 13:59:56.754 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 13.187,
+      "page": "pages/155_Scientific_Evidence_Citation_Engine.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:00:07.948 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 11.484,
+      "page": "pages/156_Model_Registry_ML_Lifecycle_Center_2.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:00:09.311 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 11.955,
+      "page": "pages/157_Instrument_Integration_Hub_2.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:00:09.372 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 11.008,
+      "page": "pages/158_Collaboration_Scientific_Review_System_2.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:00:19.402 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 9.057,
+      "page": "pages/159_Offline_AI_Scientific_Copilot_2.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:00:20.477 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 9.92,
+      "page": "pages/15_Audit_Release.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:00:33.228 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 12.789,
+      "page": "pages/160_Data_Lakehouse_Sample_Search_Engine_2.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:00:33.226 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 12.49,
+      "page": "pages/161_Benchmark_Validation_Center_2.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:00:33.225 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 12.219,
+      "page": "pages/162_Plugin_Module_Marketplace_2.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:00:46.583 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 11.106,
+      "page": "pages/163_Step104_Scientific_and_Platform_Expansion_Hub.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:00:46.791 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 11.989,
+      "page": "pages/164_Visual_Interaction_Accessibility_Workspace.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:00:46.900 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 10.501,
+      "page": "pages/165_Advanced_Scientific_Viewers.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:00:56.110 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 6.825,
+      "page": "pages/166_Real_Engine_Native_Format_Integration.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:00:56.107 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 5.666,
+      "page": "pages/167_Bioinformatics_Feature_Upgrade_Center.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:01:05.906 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 8.123,
+      "page": "pages/168_Scientific_Depth_Optimization_Center.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:01:05.900 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 7.26,
+      "page": "pages/169_Non_Chart_Scientific_Visuals.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:01:05.901 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 9.892,
+      "page": "pages/16_Batch_Sequence_Analysis.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:01:13.491 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 8.99,
+      "page": "pages/170_Module_Experience_Canvases_2_to_9.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:01:14.568 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 10.438,
+      "page": "pages/171_Module_Catalogue_Search.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:01:16.514 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 8.302,
+      "page": "pages/172_Scientific_Depth_Command_Center.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:01:23.224 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 13.366,
+      "page": "pages/173_Digital_Pathology_Histology_Foundation_Model_Studio.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:01:24.599 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 10.058,
+      "page": "pages/174_Long_Read_Epigenome_Methylation_Imprinting_Studio.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:01:39.160 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 15.22,
+      "page": "pages/175_Single_Cell_Long_Read_Transcript_Isoform_Studio.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:01:39.158 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 14.036,
+      "page": "pages/176_Biomedical_Foundation_Model_Embedding_Hub.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:01:39.160 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 13.759,
+      "page": "pages/177_AMR_Genomic_Surveillance_Resistance_Intelligence.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:01:52.646 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 17.943,
+      "page": "pages/178_Spatial_Medicine_Tumour_Microenvironment_Atlas.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:01:52.926 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 12.155,
+      "page": "pages/179_Gene_Therapy_Vector_Engineering_Safety_Studio.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:01:54.691 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 6.2,
+      "page": "pages/17_Local_Data_Manager.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:02:00.005 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 11.41,
+      "page": "pages/180_Cell_Therapy_CART_Immune_Engineering_Studio.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:02:04.902 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 9.142,
+      "page": "pages/181_Federated_Biomedical_AI_Privacy_Lab.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:02:17.374 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 12.666,
+      "page": "pages/182_Clinical_Biomarker_Survival_Patient_Stratification.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:02:17.370 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 14.897,
+      "page": "pages/183_Protein_Ligand_CoDesign_Studio.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:02:17.369 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 12.637,
+      "page": "pages/184_Pangenome_Population_Medicine_Studio.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:02:30.127 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 10.895,
+      "page": "pages/185_Pharmacovigilance_Adverse_Event_Intelligence.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:02:30.124 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 10.71,
+      "page": "pages/186_Synthetic_Cohort_Trial_Simulation_Lab.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:02:32.500 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 10.914,
+      "page": "pages/187_Autonomous_Laboratory_Experiment_Planner.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:02:40.159 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 7.242,
+      "page": "pages/188_Next_Generation_Biomedical_Modules_Hub.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:02:40.200 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 6.596,
+      "page": "pages/189_Scientific_Visual_Workspace_Studio.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:02:52.107 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 6.022,
+      "page": "pages/18_Workspace_Backup_Restore.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:02:52.112 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 8.932,
+      "page": "pages/190_Cross_Module_Evidence_Board.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:02:52.128 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 6.344,
+      "page": "pages/191_Scientific_Scenario_Sensitivity_Lab.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:02:57.499 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 8.18,
+      "page": "pages/192_Validation_Cohort_Manager.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:02:58.024 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 8.721,
+      "page": "pages/193_Visual_Review_Approval_Center.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:03:00.925 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 9.274,
+      "page": "pages/194_Scientific_Intelligence_Hub.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:03:06.370 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 8.094,
+      "page": "pages/195_Real_Time_Scientific_Canvas_Collaboration_Center.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:03:07.064 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 7.564,
+      "page": "pages/196_Multi_Scale_Scientific_Visual_Intelligence_Studio.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:03:17.687 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 10.07,
+      "page": "pages/197_Immune_Repertoire_Studio.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:03:17.681 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 14.265,
+      "page": "pages/198_Single_Cell_Multiome_Regulatory_Network_Studio.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:03:17.679 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 12.504,
+      "page": "pages/199_Gene_Regulatory_Network_TF_Activity_Studio.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:03:28.556 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 7.432,
+      "page": "pages/19_System_Diagnostics.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:03:30.364 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 9.73,
+      "page": "pages/1_Sequence_Analyzer.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:03:32.081 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 10.498,
+      "page": "pages/200_Federated_Genomic_Discovery_Phenopacket_Studio.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:03:35.397 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 9.376,
+      "page": "pages/201_Genome_Annotation_Comparative_Annotation_Studio.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:03:39.454 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 7.404,
+      "page": "pages/202_Circular_DNA_Mobile_Elements_Genome_Instability_Studio.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:03:50.214 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 9.27,
+      "page": "pages/203_Environmental_Genomics_eDNA_Surveillance_Studio.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:03:50.213 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 9.41,
+      "page": "pages/204_Comparative_Regulatory_Genomics_Studio.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:03:50.217 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 8.357,
+      "page": "pages/205_Study_Protocol_Designer.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:03:59.870 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 10.881,
+      "page": "pages/206_Sample_Size_Statistical_Power_Studio.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:04:00.846 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 10.309,
+      "page": "pages/207_Clinical_Trial_Design_Studio.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:04:00.844 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 10.209,
+      "page": "pages/208_Experimental_Design_DoE_Workbench.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:04:09.229 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 6.867,
+      "page": "pages/209_Randomization_Blinding_Allocation_Studio.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:04:09.623 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 8.817,
+      "page": "pages/20_Workflow_Dashboard.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:04:21.540 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 9.22,
+      "page": "pages/210_Cohort_Definition_Eligibility_Builder.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:04:21.537 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 9.238,
+      "page": "pages/211_Endpoint_Outcome_Strategy_Studio.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:04:21.535 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 9.329,
+      "page": "pages/212_Biomarker_Study_Planning_Studio.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:04:31.458 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 8.337,
+      "page": "pages/213_Sampling_Biospecimen_Planning_Studio.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:04:31.454 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 8.291,
+      "page": "pages/214_Data_Collection_CRF_Designer.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:04:31.459 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 8.143,
+      "page": "pages/215_Statistical_Analysis_Plan_Studio.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:04:38.593 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 6.077,
+      "page": "pages/216_Research_Feasibility_Recruitment_Planner.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:04:38.610 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 6.158,
+      "page": "pages/217_Research_Timeline_Milestones_Dependencies_Studio.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:04:48.000 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 7.836,
+      "page": "pages/218_Research_Risk_Mitigation_Planner.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:04:48.002 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 7.787,
+      "page": "pages/219_Evidence_Gap_Literature_Planning_Studio.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:04:48.000 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 7.801,
+      "page": "pages/21_Dataset_Registry_Lineage.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:04:56.641 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 11.515,
+      "page": "pages/220_PreRegistration_Reproducibility_Studio.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:04:56.637 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 9.954,
+      "page": "pages/221_Research_Planning_Command_Center.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:04:56.636 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 11.11,
+      "page": "pages/222_Research_Budget_Participant_Burden_Studio.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:05:06.513 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 6.864,
+      "page": "pages/223_Research_Ethics_Consent_Participant_Protection_Studio.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:05:07.303 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 6.046,
+      "page": "pages/224_Research_Data_Management_FAIR_Planning_Studio.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:05:15.965 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 8.675,
+      "page": "pages/225_Data_Monitoring_Interim_Review_Safety_Studio.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:05:15.971 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 8.702,
+      "page": "pages/226_Publication_Dissemination_Knowledge_Translation_Studio.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:05:15.967 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 9.846,
+      "page": "pages/227_Scientific_Readiness_Command_Center.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:05:24.807 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 13.85,
+      "page": "pages/22_Model_Lifecycle.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:05:24.799 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 9.901,
+      "page": "pages/23_Batch_Prediction_Jobs.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:05:25.397 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 8.566,
+      "page": "pages/24_Appearance_Studio.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:05:34.940 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 8.739,
+      "page": "pages/25_Command_Center.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:05:34.928 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 5.575,
+      "page": "pages/26_Research_Report_Studio.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:05:46.388 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 11.312,
+      "page": "pages/27_Executive_Overview.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:05:46.383 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 11.482,
+      "page": "pages/28_Project_Portfolio.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:05:46.382 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 11.225,
+      "page": "pages/29_Activity_Risk_Center.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:05:57.461 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 10.469,
+      "page": "pages/2_Sequence_Comparison.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:05:57.460 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 8.995,
+      "page": "pages/30_Governance_Hub.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:05:57.461 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 10.383,
+      "page": "pages/31_Evidence_Package_Studio.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:06:06.475 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 8.804,
+      "page": "pages/32_Release_Readiness_Lineage.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:06:07.690 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 10.97,
+      "page": "pages/33_Data_Model_Library.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:06:22.080 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 14.633,
+      "page": "pages/34_ML_AutoLab.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:06:22.081 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 17.322,
+      "page": "pages/35_Double_Data_ML.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:06:22.080 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 10.072,
+      "page": "pages/36_Data_Coverage_Center.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:06:31.743 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 14.197,
+      "page": "pages/37_5X_Data_ML.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:06:36.915 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 8.979,
+      "page": "pages/38_Data_Intelligence_Hub.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:06:38.951 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 7.968,
+      "page": "pages/39_Knowledge_Warehouse.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:06:44.936 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 7.818,
+      "page": "pages/3_Drug_SMILES_Analyzer.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:06:45.390 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 7.879,
+      "page": "pages/40_Analytics_Observability.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:06:56.155 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 9.096,
+      "page": "pages/41_Research_Assets.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:06:56.157 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 9.647,
+      "page": "pages/42_Internet_Research_Hub.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:06:56.154 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 9.049,
+      "page": "pages/43_Scientific_Data_Curation.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:07:06.082 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 6.39,
+      "page": "pages/44_Performance_Job_Center.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:07:06.083 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 8.352,
+      "page": "pages/45_Scientific_Release_Gate.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:07:06.653 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 9.207,
+      "page": "pages/46_Real_Evidence_Studio.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:07:11.568 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 7.73,
+      "page": "pages/47_Benchmark_Leakage_Lab.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:07:13.789 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 5.179,
+      "page": "pages/48_Evidence_Review_Queue.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:07:22.489 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 8.54,
+      "page": "pages/49_Document_Intelligence_Center.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:07:22.490 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 10.245,
+      "page": "pages/4_DTI_Feature_Builder.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:07:22.493 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 4.944,
+      "page": "pages/50_Document_Extraction_History.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:07:27.855 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 8.688,
+      "page": "pages/51_OCR_Layout_Review.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:07:31.529 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 5.285,
+      "page": "pages/52_Batch_Document_Processor.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:07:33.090 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 8.079,
+      "page": "pages/53_Document_Knowledge_Search.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:07:36.712 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 7.678,
+      "page": "pages/54_Document_Evidence_Bridge.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:07:36.712 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 8.043,
+      "page": "pages/55_Demo_Data_Hub.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:07:47.215 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 12.459,
+      "page": "pages/56_FASTQ_Genomics_QC.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:07:47.229 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 12.351,
+      "page": "pages/57_Variant_Annotation_Workbench.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:07:47.241 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 8.071,
+      "page": "pages/58_Primer_CRISPR_Codon_Studio.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:07:56.300 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 9.691,
+      "page": "pages/59_Transcriptomics_Expression_Lab.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:08:00.075 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 8.535,
+      "page": "pages/5_Model_Training.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:08:00.093 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 10.166,
+      "page": "pages/60_Protein_Annotation_Proteomics.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:08:05.243 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 9.377,
+      "page": "pages/61_Structural_Bioinformatics.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:08:08.328 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 7.759,
+      "page": "pages/62_ADMET_Drug_Discovery.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:08:18.630 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 5.825,
+      "page": "pages/63_Pathway_Network_Analysis.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:08:18.631 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 11.645,
+      "page": "pages/64_Wet_Lab_Biotechnology.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:08:18.628 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 8.82,
+      "page": "pages/65_Microbiology_Metagenomics.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:08:24.582 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 5.912,
+      "page": "pages/66_Omics_Integration_Hub.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:08:27.770 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 6.012,
+      "page": "pages/67_Bioinformatics_Capability_Center.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:08:30.625 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 6.695,
+      "page": "pages/68_Alignment_Phylogeny.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:08:30.624 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 8.223,
+      "page": "pages/69_Scientific_Data_Readiness.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:08:33.454 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 9.299,
+      "page": "pages/6_DTI_Predictor.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:08:46.075 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 12.182,
+      "page": "pages/70_BioIntel_Studio.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:08:46.072 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 11.915,
+      "page": "pages/71_Platform_Quality_Center.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:08:46.073 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 5.123,
+      "page": "pages/72_Compliance_Research_Readiness.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:08:51.243 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 6.527,
+      "page": "pages/73_Scientific_Evidence_Excellence.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:08:57.819 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 7.773,
+      "page": "pages/74_DTI_Validation_Evidence_Center.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:08:58.086 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 5.764,
+      "page": "pages/75_Real_World_Operations_Evidence.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:08:58.182 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 7.919,
+      "page": "pages/76_Final_Assurance_Center.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:09:03.571 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 5.634,
+      "page": "pages/77_Biotechnology_Project_Center.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:09:12.426 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 11.684,
+      "page": "pages/78_Protein_Interaction_ML.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:09:12.434 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 12.018,
+      "page": "pages/79_Comparative_Pathogen_Genomics.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:09:12.408 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 15.988,
+      "page": "pages/7_Model_Evaluation.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:09:23.629 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 11.042,
+      "page": "pages/80_Single_Cell_Heterogeneity.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:09:24.431 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 11.156,
+      "page": "pages/81_Cancer_Genomics.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:09:28.822 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 9.869,
+      "page": "pages/82_Metagenomics_Pipeline.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:09:34.871 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 7.371,
+      "page": "pages/83_BioIntel_Copilot.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:09:35.187 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 7.763,
+      "page": "pages/84_Connected_Data_Explorer.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:09:45.460 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 7.857,
+      "page": "pages/85_Provider_Integration_Center.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:09:45.457 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 7.638,
+      "page": "pages/86_Privacy_Security_Center.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:09:45.459 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 7.664,
+      "page": "pages/87_Store_Readiness_Center.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:09:53.088 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 11.124,
+      "page": "pages/88_Discovery_Command_Center.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:09:53.087 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 9.401,
+      "page": "pages/89_Lab_Analytics_Command_Center.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:09:53.238 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 8.359,
+      "page": "pages/8_Data_Quality_Activity.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:10:02.346 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 6.367,
+      "page": "pages/90_Clinical_Pharma_Validation_Center.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:10:02.749 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 4.636,
+      "page": "pages/91_Real_External_Validation_Center.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:10:11.111 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 5.044,
+      "page": "pages/92_Independent_Validation_Accelerator.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:10:11.111 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 6.061,
+      "page": "pages/93_Advanced_Bioinformatics_Tools.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:10:11.111 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 10.248,
+      "page": "pages/94_Pangenome_Variation_Graph_Studio.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:10:16.393 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 10.383,
+      "page": "pages/95_Long_Read_Assembly_T2T_Studio.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:10:17.226 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 14.344,
+      "page": "pages/96_AI_Protein_Design_Lab.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:10:21.350 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 8.225,
+      "page": "pages/97_CRISPR_Screen_PerturbSeq_Analytics.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:10:26.779 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 9.554,
+      "page": "pages/98_Pathogen_Outbreak_Command_Center.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:10:29.558 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 8.814,
+      "page": "pages/99_Synthetic_Biology_Circuit_Designer.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    },
+    {
+      "detail": "BIOINTEL_APPTEST_OK\n2026-07-13 14:10:40.777 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "duration_seconds": 3.44,
+      "page": "pages/9_Project_Status.py",
+      "passed": true,
+      "return_code": 0,
+      "timed_out": false
+    }
+  ],
+  "schema": "biointel.step157.all-pages-app-test-merged.v1",
+  "source_reports": [
+    "reports/app_batches/batch_000_009.json",
+    "reports/app_batches/batch_010_017.json",
+    "reports/app_batches/batch_018_025.json",
+    "reports/app_batches/batch_026_034.json",
+    "reports/app_batches/batch_035_043.json",
+    "reports/app_batches/batch_044_051.json",
+    "reports/app_batches/batch_052_059.json",
+    "reports/app_batches/batch_060_067.json",
+    "reports/app_batches/batch_068_075.json",
+    "reports/app_batches/batch_076_083.json",
+    "reports/app_batches/batch_084_091.json",
+    "reports/app_batches/batch_092_099.json",
+    "reports/app_batches/batch_100_107.json",
+    "reports/app_batches/batch_108_115.json",
+    "reports/app_batches/batch_116_123.json",
+    "reports/app_batches/batch_124_131.json",
+    "reports/app_batches/batch_132_139.json",
+    "reports/app_batches/batch_140_147.json",
+    "reports/app_batches/batch_148_155.json",
+    "reports/app_batches/batch_156_163.json",
+    "reports/app_batches/batch_164_171.json",
+    "reports/app_batches/batch_172_179.json",
+    "reports/app_batches/batch_180_187.json",
+    "reports/app_batches/batch_188_195.json",
+    "reports/app_batches/batch_196_203.json",
+    "reports/app_batches/batch_204_211.json",
+    "reports/app_batches/batch_212_219.json",
+    "reports/app_batches/batch_220_227.json",
+    "reports/app_batches/batch_228_228.json"
+  ],
+  "timeouts": 0,
+  "unexpected": []
+}

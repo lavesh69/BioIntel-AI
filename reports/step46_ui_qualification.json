@@ -1,0 +1,42 @@
+{
+  "accessibility": {
+    "focus_visible": true,
+    "high_contrast": true,
+    "reduce_motion": true,
+    "skip_link": true,
+    "system_theme": true,
+    "text_scale": true
+  },
+  "implementation_ui_score": 10.0,
+  "milestone": 46,
+  "navigation": {
+    "categories": 10,
+    "pinning": true,
+    "recent_pages": true,
+    "sidebar_primary": 4,
+    "task_lanes": 4,
+    "typo_tolerant_search": true
+  },
+  "qualification": {
+    "focused_tests_failed": 0,
+    "focused_tests_passed": 33,
+    "python_compilation": true,
+    "runtime_smoke_passed": 4,
+    "semantic_manifest_integrity": true,
+    "semantic_scenarios": 12,
+    "step46_tests_passed": 5
+  },
+  "routes": {
+    "registered": 78,
+    "shared_hero": 78,
+    "shared_theme": 78
+  },
+  "schema": "biointel.step46-ui-qualification.v1",
+  "scope": {
+    "database_schema_changed": false,
+    "external_usability_study": false,
+    "scientific_logic_changed": false
+  },
+  "status": "passed",
+  "version": "4.3.1"
+}

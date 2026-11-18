@@ -1,0 +1,71 @@
+{
+  "schema": "biointel.step147.research-lifecycle-operational-peak.qualification.v1",
+  "planning_modules": 24,
+  "lifecycle_engines": 4,
+  "engine_checks": [
+    {
+      "module_key": "research_ethics_consent",
+      "template": "research_ethics_consent_template.csv",
+      "minimum_tables": 12,
+      "passed": true,
+      "rows": 3,
+      "tables": 12,
+      "summary_metrics": 13,
+      "manifest_sha256": "df65551e03a59fb5f3260c86f320e4d06627886a6a460c473f5b8b6aef144a9d"
+    },
+    {
+      "module_key": "research_data_fair_planning",
+      "template": "research_data_fair_planning_template.csv",
+      "minimum_tables": 12,
+      "passed": true,
+      "rows": 2,
+      "tables": 12,
+      "summary_metrics": 12,
+      "manifest_sha256": "0633858f696d84327a3b55ceb6750775dde07bd17d8da9154a8744d1e7b9511c"
+    },
+    {
+      "module_key": "research_interim_monitoring_safety",
+      "template": "research_interim_monitoring_safety_template.csv",
+      "minimum_tables": 16,
+      "passed": true,
+      "rows": 3,
+      "tables": 16,
+      "summary_metrics": 13,
+      "manifest_sha256": "4027de4e87aa4c9500ecf20e832da63ebf62e73646fb4765fff09877bbddd593"
+    },
+    {
+      "module_key": "research_publication_dissemination",
+      "template": "research_publication_dissemination_template.csv",
+      "minimum_tables": 17,
+      "passed": true,
+      "rows": 2,
+      "tables": 17,
+      "summary_metrics": 14,
+      "manifest_sha256": "506ec37fc9feae21f556e10884aede812ea0132ddbdd5712eaeb302257b1dd12"
+    }
+  ],
+  "missing_pages": [],
+  "missing_required_visuals": [],
+  "operational_result_tables": 57,
+  "reliability": {
+    "schema": "biointel.module-reliability.v1",
+    "page_entrypoints": 228,
+    "page_bootstrap_passed": 228,
+    "page_bootstrap_failures": [],
+    "python_files": 918,
+    "python_compile_passed": 918,
+    "python_compile_failures": [],
+    "sqlite_connection_audit": {
+      "passed": true,
+      "violations": [],
+      "managed_connection_contract": "biointel.database.core.managed_connect"
+    },
+    "passed": true
+  },
+  "runtime_residue": {
+    "passed": true,
+    "count": 0,
+    "paths": []
+  },
+  "passed": true
+}

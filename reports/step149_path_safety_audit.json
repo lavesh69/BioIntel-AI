@@ -1,0 +1,15 @@
+{
+  "schema": "biointel.step149.path-safety-audit.v1",
+  "generated_at_utc": "2026-07-13T04:40:45.193437+00:00",
+  "root": "/mnt/data/step149_work/BioIntel-AI",
+  "launchers_scanned": 160,
+  "findings": [],
+  "contract": {
+    "launcher_exists": true,
+    "uses_relative_root_argument": true,
+    "sets_normalized_project_root": true,
+    "legacy_dangerous_argument_absent": true,
+    "path_safe_launcher_exists": true
+  },
+  "passed": true
+}

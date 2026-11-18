@@ -1,0 +1,60 @@
+{
+  "schema": "biointel.step68.regression-summary.v1",
+  "passed": true,
+  "groups": 8,
+  "files": 16,
+  "tests": 171,
+  "items": [
+    {
+      "group": "Runtime/DTI/chemistry",
+      "source": "reports/step68_regression_group1.json",
+      "tests": 19,
+      "files": 4,
+      "passed": true
+    },
+    {
+      "group": "UI/theme/runtime compatibility",
+      "source": "reports/step68_regression_group2.json",
+      "tests": 43,
+      "files": 6,
+      "passed": true
+    },
+    {
+      "group": "Bioinformatics excellence",
+      "file": "tests/test_step59_bioinformatics_excellence.py",
+      "tests": 27,
+      "passed": true
+    },
+    {
+      "group": "Lab Analytics Step60",
+      "file": "tests/test_step60_lab_analytics_excellence.py",
+      "tests": 22,
+      "passed": true
+    },
+    {
+      "group": "Discovery Step61",
+      "file": "tests/test_step61_discovery_excellence.py",
+      "tests": 10,
+      "passed": true
+    },
+    {
+      "group": "Lab Analytics Step62",
+      "file": "tests/test_step62_lab_analytics_excellence.py",
+      "tests": 19,
+      "passed": true
+    },
+    {
+      "group": "Discovery Step63",
+      "file": "tests/test_step63_discovery_excellence.py",
+      "tests": 24,
+      "passed": true
+    },
+    {
+      "group": "Final optimization Step64",
+      "file": "tests/test_step64_final_optimization.py",
+      "tests": 7,
+      "passed": true
+    }
+  ],
+  "note": "Each listed group/file was executed successfully in isolated runs. A monolithic historical-suite pass is not claimed because the environment execution cap can terminate long multi-file runs after child frameworks finish."
+}

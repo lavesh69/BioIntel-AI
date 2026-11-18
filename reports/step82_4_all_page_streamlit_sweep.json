@@ -1,0 +1,468 @@
+{
+  "entry_points": 91,
+  "failed": 0,
+  "max_seconds": 17.201,
+  "median_seconds": 6.348,
+  "p95_seconds": 15.344,
+  "passed": 91,
+  "results": {
+    "activity_center": {
+      "exceptions": [],
+      "path": "/mnt/data/step82_searchcred_work/BioIntel-AI/pages/29_Activity_Risk_Center.py",
+      "seconds": 9.903
+    },
+    "admet_discovery": {
+      "exceptions": [],
+      "path": "/mnt/data/step82_searchcred_work/BioIntel-AI/pages/62_ADMET_Drug_Discovery.py",
+      "seconds": 7.167
+    },
+    "alignment_phylogeny": {
+      "exceptions": [],
+      "path": "/mnt/data/step82_searchcred_work/BioIntel-AI/pages/68_Alignment_Phylogeny.py",
+      "seconds": 6.563
+    },
+    "analytics_observability": {
+      "exceptions": [],
+      "path": "/mnt/data/step82_searchcred_work/BioIntel-AI/pages/40_Analytics_Observability.py",
+      "seconds": 8.394
+    },
+    "api_deployment": {
+      "exceptions": [],
+      "path": "/mnt/data/step82_searchcred_work/BioIntel-AI/pages/12_API_Deployment.py",
+      "seconds": 3.631
+    },
+    "appearance": {
+      "exceptions": [],
+      "path": "/mnt/data/step82_searchcred_work/BioIntel-AI/pages/24_Appearance_Studio.py",
+      "seconds": 5.141
+    },
+    "audit_release": {
+      "exceptions": [],
+      "path": "/mnt/data/step82_searchcred_work/BioIntel-AI/pages/15_Audit_Release.py",
+      "seconds": 16.576
+    },
+    "backup_restore": {
+      "exceptions": [],
+      "path": "/mnt/data/step82_searchcred_work/BioIntel-AI/pages/18_Workspace_Backup_Restore.py",
+      "seconds": 5.511
+    },
+    "batch_document_processor": {
+      "exceptions": [],
+      "path": "/mnt/data/step82_searchcred_work/BioIntel-AI/pages/52_Batch_Document_Processor.py",
+      "seconds": 2.213
+    },
+    "batch_jobs": {
+      "exceptions": [],
+      "path": "/mnt/data/step82_searchcred_work/BioIntel-AI/pages/23_Batch_Prediction_Jobs.py",
+      "seconds": 15.344
+    },
+    "batch_sequence": {
+      "exceptions": [],
+      "path": "/mnt/data/step82_searchcred_work/BioIntel-AI/pages/16_Batch_Sequence_Analysis.py",
+      "seconds": 7.458
+    },
+    "benchmark_leakage_lab": {
+      "exceptions": [],
+      "path": "/mnt/data/step82_searchcred_work/BioIntel-AI/pages/47_Benchmark_Leakage_Lab.py",
+      "seconds": 5.309
+    },
+    "bioinformatics_capabilities": {
+      "exceptions": [],
+      "path": "/mnt/data/step82_searchcred_work/BioIntel-AI/pages/67_Bioinformatics_Capability_Center.py",
+      "seconds": 2.527
+    },
+    "biointel_copilot": {
+      "exceptions": [],
+      "path": "/mnt/data/step82_searchcred_work/BioIntel-AI/pages/83_BioIntel_Copilot.py",
+      "seconds": 7.389
+    },
+    "biointel_studio": {
+      "exceptions": [],
+      "path": "/mnt/data/step82_searchcred_work/BioIntel-AI/pages/70_BioIntel_Studio.py",
+      "seconds": 11.513
+    },
+    "biotechnology_projects": {
+      "exceptions": [],
+      "path": "/mnt/data/step82_searchcred_work/BioIntel-AI/pages/77_Biotechnology_Project_Center.py",
+      "seconds": 2.22
+    },
+    "cancer_genomics": {
+      "exceptions": [],
+      "path": "/mnt/data/step82_searchcred_work/BioIntel-AI/pages/81_Cancer_Genomics.py",
+      "seconds": 7.647
+    },
+    "chembl_builder": {
+      "exceptions": [],
+      "path": "/mnt/data/step82_searchcred_work/BioIntel-AI/pages/13_ChEMBL_Dataset_Builder.py",
+      "seconds": 3.605
+    },
+    "command_center": {
+      "exceptions": [],
+      "path": "/mnt/data/step82_searchcred_work/BioIntel-AI/pages/25_Command_Center.py",
+      "seconds": 17.121
+    },
+    "comparative_pathogen_genomics": {
+      "exceptions": [],
+      "path": "/mnt/data/step82_searchcred_work/BioIntel-AI/pages/79_Comparative_Pathogen_Genomics.py",
+      "seconds": 7.574
+    },
+    "compliance_research_readiness": {
+      "exceptions": [],
+      "path": "/mnt/data/step82_searchcred_work/BioIntel-AI/pages/72_Compliance_Research_Readiness.py",
+      "seconds": 7.167
+    },
+    "connected_data_explorer": {
+      "exceptions": [],
+      "path": "/mnt/data/step82_searchcred_work/BioIntel-AI/pages/84_Connected_Data_Explorer.py",
+      "seconds": 2.367
+    },
+    "data_coverage": {
+      "exceptions": [],
+      "path": "/mnt/data/step82_searchcred_work/BioIntel-AI/pages/36_Data_Coverage_Center.py",
+      "seconds": 3.336
+    },
+    "data_intelligence": {
+      "exceptions": [],
+      "path": "/mnt/data/step82_searchcred_work/BioIntel-AI/pages/38_Data_Intelligence_Hub.py",
+      "seconds": 7.781
+    },
+    "data_library": {
+      "exceptions": [],
+      "path": "/mnt/data/step82_searchcred_work/BioIntel-AI/pages/33_Data_Model_Library.py",
+      "seconds": 9.067
+    },
+    "data_quality": {
+      "exceptions": [],
+      "path": "/mnt/data/step82_searchcred_work/BioIntel-AI/pages/8_Data_Quality_Activity.py",
+      "seconds": 5.809
+    },
+    "dataset_registry": {
+      "exceptions": [],
+      "path": "/mnt/data/step82_searchcred_work/BioIntel-AI/pages/21_Dataset_Registry_Lineage.py",
+      "seconds": 5.524
+    },
+    "demo_data_hub": {
+      "exceptions": [],
+      "path": "/mnt/data/step82_searchcred_work/BioIntel-AI/pages/55_Demo_Data_Hub.py",
+      "seconds": 6.49
+    },
+    "diagnostics": {
+      "exceptions": [],
+      "path": "/mnt/data/step82_searchcred_work/BioIntel-AI/pages/19_System_Diagnostics.py",
+      "seconds": 15.227
+    },
+    "discovery_command_center": {
+      "exceptions": [],
+      "path": "/mnt/data/step82_searchcred_work/BioIntel-AI/pages/88_Discovery_Command_Center.py",
+      "seconds": 10.224
+    },
+    "document_evidence_bridge": {
+      "exceptions": [],
+      "path": "/mnt/data/step82_searchcred_work/BioIntel-AI/pages/54_Document_Evidence_Bridge.py",
+      "seconds": 5.308
+    },
+    "document_history": {
+      "exceptions": [],
+      "path": "/mnt/data/step82_searchcred_work/BioIntel-AI/pages/50_Document_Extraction_History.py",
+      "seconds": 5.305
+    },
+    "document_intelligence": {
+      "exceptions": [],
+      "path": "/mnt/data/step82_searchcred_work/BioIntel-AI/pages/49_Document_Intelligence_Center.py",
+      "seconds": 5.213
+    },
+    "document_knowledge_search": {
+      "exceptions": [],
+      "path": "/mnt/data/step82_searchcred_work/BioIntel-AI/pages/53_Document_Knowledge_Search.py",
+      "seconds": 2.214
+    },
+    "double_data_ml": {
+      "exceptions": [],
+      "path": "/mnt/data/step82_searchcred_work/BioIntel-AI/pages/35_Double_Data_ML.py",
+      "seconds": 10.197
+    },
+    "drug_analyzer": {
+      "exceptions": [],
+      "path": "/mnt/data/step82_searchcred_work/BioIntel-AI/pages/3_Drug_SMILES_Analyzer.py",
+      "seconds": 6.918
+    },
+    "dti_features": {
+      "exceptions": [],
+      "path": "/mnt/data/step82_searchcred_work/BioIntel-AI/pages/4_DTI_Feature_Builder.py",
+      "seconds": 2.98
+    },
+    "dti_predictor": {
+      "exceptions": [],
+      "path": "/mnt/data/step82_searchcred_work/BioIntel-AI/pages/6_DTI_Predictor.py",
+      "seconds": 12.1
+    },
+    "dti_validation_evidence": {
+      "exceptions": [],
+      "path": "/mnt/data/step82_searchcred_work/BioIntel-AI/pages/74_DTI_Validation_Evidence_Center.py",
+      "seconds": 7.013
+    },
+    "evidence_review_queue": {
+      "exceptions": [],
+      "path": "/mnt/data/step82_searchcred_work/BioIntel-AI/pages/48_Evidence_Review_Queue.py",
+      "seconds": 5.426
+    },
+    "evidence_studio": {
+      "exceptions": [],
+      "path": "/mnt/data/step82_searchcred_work/BioIntel-AI/pages/31_Evidence_Package_Studio.py",
+      "seconds": 13.825
+    },
+    "executive_overview": {
+      "exceptions": [],
+      "path": "/mnt/data/step82_searchcred_work/BioIntel-AI/pages/27_Executive_Overview.py",
+      "seconds": 16.804
+    },
+    "experiments": {
+      "exceptions": [],
+      "path": "/mnt/data/step82_searchcred_work/BioIntel-AI/pages/11_Experiment_Registry.py",
+      "seconds": 5.695
+    },
+    "external_databases": {
+      "exceptions": [],
+      "path": "/mnt/data/step82_searchcred_work/BioIntel-AI/pages/10_External_Databases.py",
+      "seconds": 5.612
+    },
+    "external_validation": {
+      "exceptions": [],
+      "path": "/mnt/data/step82_searchcred_work/BioIntel-AI/pages/14_External_Validation_Drift.py",
+      "seconds": 17.201
+    },
+    "fastq_genomics_qc": {
+      "exceptions": [],
+      "path": "/mnt/data/step82_searchcred_work/BioIntel-AI/pages/56_FASTQ_Genomics_QC.py",
+      "seconds": 9.807
+    },
+    "final_assurance": {
+      "exceptions": [],
+      "path": "/mnt/data/step82_searchcred_work/BioIntel-AI/pages/76_Final_Assurance_Center.py",
+      "seconds": 6.248
+    },
+    "five_x_data_ml": {
+      "exceptions": [],
+      "path": "/mnt/data/step82_searchcred_work/BioIntel-AI/pages/37_5X_Data_ML.py",
+      "seconds": 9.854
+    },
+    "governance_hub": {
+      "exceptions": [],
+      "path": "/mnt/data/step82_searchcred_work/BioIntel-AI/pages/30_Governance_Hub.py",
+      "seconds": 3.396
+    },
+    "home": {
+      "exceptions": [],
+      "path": "/mnt/data/step82_searchcred_work/BioIntel-AI/app.py",
+      "seconds": 5.098
+    },
+    "internet_research": {
+      "exceptions": [],
+      "path": "/mnt/data/step82_searchcred_work/BioIntel-AI/pages/42_Internet_Research_Hub.py",
+      "seconds": 5.995
+    },
+    "knowledge_warehouse": {
+      "exceptions": [],
+      "path": "/mnt/data/step82_searchcred_work/BioIntel-AI/pages/39_Knowledge_Warehouse.py",
+      "seconds": 6.307
+    },
+    "lab_analytics_command_center": {
+      "exceptions": [],
+      "path": "/mnt/data/step82_searchcred_work/BioIntel-AI/pages/89_Lab_Analytics_Command_Center.py",
+      "seconds": 6.258
+    },
+    "local_data": {
+      "exceptions": [],
+      "path": "/mnt/data/step82_searchcred_work/BioIntel-AI/pages/17_Local_Data_Manager.py",
+      "seconds": 6.348
+    },
+    "metagenomics_pipeline": {
+      "exceptions": [],
+      "path": "/mnt/data/step82_searchcred_work/BioIntel-AI/pages/82_Metagenomics_Pipeline.py",
+      "seconds": 10.053
+    },
+    "microbiology_metagenomics": {
+      "exceptions": [],
+      "path": "/mnt/data/step82_searchcred_work/BioIntel-AI/pages/65_Microbiology_Metagenomics.py",
+      "seconds": 7.477
+    },
+    "ml_autolab": {
+      "exceptions": [],
+      "path": "/mnt/data/step82_searchcred_work/BioIntel-AI/pages/34_ML_AutoLab.py",
+      "seconds": 10.488
+    },
+    "model_evaluation": {
+      "exceptions": [],
+      "path": "/mnt/data/step82_searchcred_work/BioIntel-AI/pages/7_Model_Evaluation.py",
+      "seconds": 14.649
+    },
+    "model_lifecycle": {
+      "exceptions": [],
+      "path": "/mnt/data/step82_searchcred_work/BioIntel-AI/pages/22_Model_Lifecycle.py",
+      "seconds": 17.063
+    },
+    "model_training": {
+      "exceptions": [],
+      "path": "/mnt/data/step82_searchcred_work/BioIntel-AI/pages/5_Model_Training.py",
+      "seconds": 5.03
+    },
+    "ocr_layout_review": {
+      "exceptions": [],
+      "path": "/mnt/data/step82_searchcred_work/BioIntel-AI/pages/51_OCR_Layout_Review.py",
+      "seconds": 5.192
+    },
+    "omics_integration": {
+      "exceptions": [],
+      "path": "/mnt/data/step82_searchcred_work/BioIntel-AI/pages/66_Omics_Integration_Hub.py",
+      "seconds": 5.789
+    },
+    "pathway_network": {
+      "exceptions": [],
+      "path": "/mnt/data/step82_searchcred_work/BioIntel-AI/pages/63_Pathway_Network_Analysis.py",
+      "seconds": 5.297
+    },
+    "performance_jobs": {
+      "exceptions": [],
+      "path": "/mnt/data/step82_searchcred_work/BioIntel-AI/pages/44_Performance_Job_Center.py",
+      "seconds": 2.807
+    },
+    "platform_quality": {
+      "exceptions": [],
+      "path": "/mnt/data/step82_searchcred_work/BioIntel-AI/pages/71_Platform_Quality_Center.py",
+      "seconds": 8.492
+    },
+    "ppi_interaction_ml": {
+      "exceptions": [],
+      "path": "/mnt/data/step82_searchcred_work/BioIntel-AI/pages/78_Protein_Interaction_ML.py",
+      "seconds": 11.525
+    },
+    "primer_crispr_codon": {
+      "exceptions": [],
+      "path": "/mnt/data/step82_searchcred_work/BioIntel-AI/pages/58_Primer_CRISPR_Codon_Studio.py",
+      "seconds": 5.812
+    },
+    "privacy_security": {
+      "exceptions": [],
+      "path": "/mnt/data/step82_searchcred_work/BioIntel-AI/pages/86_Privacy_Security_Center.py",
+      "seconds": 2.412
+    },
+    "project_portfolio": {
+      "exceptions": [],
+      "path": "/mnt/data/step82_searchcred_work/BioIntel-AI/pages/28_Project_Portfolio.py",
+      "seconds": 6.696
+    },
+    "project_status": {
+      "exceptions": [],
+      "path": "/mnt/data/step82_searchcred_work/BioIntel-AI/pages/9_Project_Status.py",
+      "seconds": 8.471
+    },
+    "protein_annotation": {
+      "exceptions": [],
+      "path": "/mnt/data/step82_searchcred_work/BioIntel-AI/pages/60_Protein_Annotation_Proteomics.py",
+      "seconds": 2.88
+    },
+    "provider_integration_center": {
+      "exceptions": [],
+      "path": "/mnt/data/step82_searchcred_work/BioIntel-AI/pages/85_Provider_Integration_Center.py",
+      "seconds": 2.383
+    },
+    "quick_start": {
+      "exceptions": [],
+      "path": "/mnt/data/step82_searchcred_work/BioIntel-AI/pages/0_Quick_Start.py",
+      "seconds": 5.195
+    },
+    "real_evidence_studio": {
+      "exceptions": [],
+      "path": "/mnt/data/step82_searchcred_work/BioIntel-AI/pages/46_Real_Evidence_Studio.py",
+      "seconds": 5.322
+    },
+    "realworld_operations_evidence": {
+      "exceptions": [],
+      "path": "/mnt/data/step82_searchcred_work/BioIntel-AI/pages/75_Real_World_Operations_Evidence.py",
+      "seconds": 2.742
+    },
+    "release_readiness": {
+      "exceptions": [],
+      "path": "/mnt/data/step82_searchcred_work/BioIntel-AI/pages/32_Release_Readiness_Lineage.py",
+      "seconds": 13.783
+    },
+    "report_studio": {
+      "exceptions": [],
+      "path": "/mnt/data/step82_searchcred_work/BioIntel-AI/pages/26_Research_Report_Studio.py",
+      "seconds": 5.237
+    },
+    "research_assets": {
+      "exceptions": [],
+      "path": "/mnt/data/step82_searchcred_work/BioIntel-AI/pages/41_Research_Assets.py",
+      "seconds": 6.032
+    },
+    "scientific_curation": {
+      "exceptions": [],
+      "path": "/mnt/data/step82_searchcred_work/BioIntel-AI/pages/43_Scientific_Data_Curation.py",
+      "seconds": 6.618
+    },
+    "scientific_data_readiness": {
+      "exceptions": [],
+      "path": "/mnt/data/step82_searchcred_work/BioIntel-AI/pages/69_Scientific_Data_Readiness.py",
+      "seconds": 2.504
+    },
+    "scientific_evidence_excellence": {
+      "exceptions": [],
+      "path": "/mnt/data/step82_searchcred_work/BioIntel-AI/pages/73_Scientific_Evidence_Excellence.py",
+      "seconds": 8.582
+    },
+    "scientific_release_gate": {
+      "exceptions": [],
+      "path": "/mnt/data/step82_searchcred_work/BioIntel-AI/pages/45_Scientific_Release_Gate.py",
+      "seconds": 7.072
+    },
+    "sequence_analyzer": {
+      "exceptions": [],
+      "path": "/mnt/data/step82_searchcred_work/BioIntel-AI/pages/1_Sequence_Analyzer.py",
+      "seconds": 6.953
+    },
+    "sequence_comparison": {
+      "exceptions": [],
+      "path": "/mnt/data/step82_searchcred_work/BioIntel-AI/pages/2_Sequence_Comparison.py",
+      "seconds": 5.122
+    },
+    "single_cell_heterogeneity": {
+      "exceptions": [],
+      "path": "/mnt/data/step82_searchcred_work/BioIntel-AI/pages/80_Single_Cell_Heterogeneity.py",
+      "seconds": 8.04
+    },
+    "store_readiness": {
+      "exceptions": [],
+      "path": "/mnt/data/step82_searchcred_work/BioIntel-AI/pages/87_Store_Readiness_Center.py",
+      "seconds": 2.403
+    },
+    "structural_bioinformatics": {
+      "exceptions": [],
+      "path": "/mnt/data/step82_searchcred_work/BioIntel-AI/pages/61_Structural_Bioinformatics.py",
+      "seconds": 3.48
+    },
+    "transcriptomics_expression": {
+      "exceptions": [],
+      "path": "/mnt/data/step82_searchcred_work/BioIntel-AI/pages/59_Transcriptomics_Expression_Lab.py",
+      "seconds": 5.81
+    },
+    "variant_annotation": {
+      "exceptions": [],
+      "path": "/mnt/data/step82_searchcred_work/BioIntel-AI/pages/57_Variant_Annotation_Workbench.py",
+      "seconds": 8.187
+    },
+    "wetlab_biotechnology": {
+      "exceptions": [],
+      "path": "/mnt/data/step82_searchcred_work/BioIntel-AI/pages/64_Wet_Lab_Biotechnology.py",
+      "seconds": 6.566
+    },
+    "workflow_dashboard": {
+      "exceptions": [],
+      "path": "/mnt/data/step82_searchcred_work/BioIntel-AI/pages/20_Workflow_Dashboard.py",
+      "seconds": 10.45
+    }
+  },
+  "schema": "biointel.step82_4.streamlit_sweep.v1",
+  "timeouts": 0,
+  "version": "8.2.6"
+}

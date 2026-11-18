@@ -1,0 +1,35 @@
+{
+  "schema": "biointel.step135-final-validation.v1",
+  "step": 135,
+  "version": "13.2.0",
+  "scope": "fifteen next-generation biomedical modules: scientific depth, specialist visuals, dirty-input qualification and safe optimisation",
+  "implementation": {
+    "modules_upgraded": 15,
+    "new_scientific_tables": 39,
+    "new_specialist_viewers": 49,
+    "new_central_pages": 0,
+    "new_navigation_categories": 0,
+    "existing_features_removed": 0
+  },
+  "verification": {
+    "step135_verifier_checks": 9,
+    "step135_verifier_passed": 9,
+    "selected_non_overlapping_regression_tests": 140,
+    "module_scientific_smoke": "15/15 passed",
+    "figure_serialisation": "49/49 passed",
+    "python_syntax": "951/951 passed",
+    "databases": "36/36 healthy",
+    "database_rows": 108425,
+    "foreign_key_issues": 0,
+    "database_hash_changes": 0,
+    "protected_pages": "5/5 byte-identical",
+    "runtime_residue": 0
+  },
+  "testing_boundary": {
+    "step134_page_runtime_baseline": "198/198 entrypoints passed before this module-only patch",
+    "step135_live_streamlit_apptest": "Not rerun in the current Linux build container because the packaged Streamlit wheel is Windows-specific and a compatible Linux pyarrow runtime was unavailable.",
+    "step135_direct_validation": "All fifteen module calculations, tables and Plotly figures were executed and serialised from deterministic demonstration data; selected regression suites passed.",
+    "full_repository_suite": "Not claimed. The selected 140 completed non-overlapping tests are reported instead."
+  },
+  "scientific_boundary": "Built-in methods are transparent exploratory screens. Proprietary model weights, validated specialist engines, current licensed databases, independent wet-lab evidence, clinical qualification and regulatory approval remain external."
+}

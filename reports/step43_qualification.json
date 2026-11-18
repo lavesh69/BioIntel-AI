@@ -1,0 +1,260 @@
+{
+  "api_runtime": {
+    "/assurance/final": {
+      "bytes": 28970,
+      "content_type": "application/json",
+      "status": 200
+    },
+    "/databases/status": {
+      "bytes": 7454,
+      "content_type": "application/json",
+      "status": 200
+    },
+    "/live": {
+      "bytes": 36,
+      "content_type": "application/json",
+      "status": 200
+    },
+    "/metrics": {
+      "bytes": 1779,
+      "content_type": "text/plain; charset=utf-8",
+      "status": 200
+    },
+    "/ready": {
+      "bytes": 61,
+      "content_type": "application/json",
+      "status": 200
+    }
+  },
+  "authentic_external_evidence_score": 0.0,
+  "boundaries": {
+    "external": "Regulatory decisions, customer signatures, journal acceptance, independent lab outcomes and long-term production history remain external.",
+    "implementation": "Repository-level controls, code, tests and qualification tooling.",
+    "verifiable": "Checksum-bound controlled-environment evidence."
+  },
+  "database_backup_verification": {
+    "backup_count": 18,
+    "database_count": 18,
+    "databases": [
+      {
+        "digest_ok": true,
+        "exists": true,
+        "filename": "analytics.sqlite3",
+        "integrity_ok": true,
+        "row_count": 17690
+      },
+      {
+        "digest_ok": true,
+        "exists": true,
+        "filename": "api_security.sqlite3",
+        "integrity_ok": true,
+        "row_count": 20
+      },
+      {
+        "digest_ok": true,
+        "exists": true,
+        "filename": "assets.sqlite3",
+        "integrity_ok": true,
+        "row_count": 16309
+      },
+      {
+        "digest_ok": true,
+        "exists": true,
+        "filename": "datasets.sqlite3",
+        "integrity_ok": true,
+        "row_count": 4879
+      },
+      {
+        "digest_ok": true,
+        "exists": true,
+        "filename": "document_history.sqlite3",
+        "integrity_ok": true,
+        "row_count": 1973
+      },
+      {
+        "digest_ok": true,
+        "exists": true,
+        "filename": "internet_downloads.sqlite3",
+        "integrity_ok": true,
+        "row_count": 105
+      },
+      {
+        "digest_ok": true,
+        "exists": true,
+        "filename": "evidence.sqlite3",
+        "integrity_ok": true,
+        "row_count": 3891
+      },
+      {
+        "digest_ok": true,
+        "exists": true,
+        "filename": "experiments.sqlite3",
+        "integrity_ok": true,
+        "row_count": 783
+      },
+      {
+        "digest_ok": true,
+        "exists": true,
+        "filename": "feature_cache.sqlite3",
+        "integrity_ok": true,
+        "row_count": 1293
+      },
+      {
+        "digest_ok": true,
+        "exists": true,
+        "filename": "jobs.sqlite3",
+        "integrity_ok": true,
+        "row_count": 878
+      },
+      {
+        "digest_ok": true,
+        "exists": true,
+        "filename": "knowledge.sqlite3",
+        "integrity_ok": true,
+        "row_count": 38306
+      },
+      {
+        "digest_ok": true,
+        "exists": true,
+        "filename": "projects.sqlite3",
+        "integrity_ok": true,
+        "row_count": 673
+      },
+      {
+        "digest_ok": true,
+        "exists": true,
+        "filename": "prospective_validation.sqlite3",
+        "integrity_ok": true,
+        "row_count": 0
+      },
+      {
+        "digest_ok": true,
+        "exists": true,
+        "filename": "realworld_evidence.sqlite3",
+        "integrity_ok": true,
+        "row_count": 14
+      },
+      {
+        "digest_ok": true,
+        "exists": true,
+        "filename": "relationships.sqlite3",
+        "integrity_ok": true,
+        "row_count": 2291
+      },
+      {
+        "digest_ok": true,
+        "exists": true,
+        "filename": "scientific_evidence.sqlite3",
+        "integrity_ok": true,
+        "row_count": 12903
+      },
+      {
+        "digest_ok": true,
+        "exists": true,
+        "filename": "tenants.sqlite3",
+        "integrity_ok": true,
+        "row_count": 3
+      },
+      {
+        "digest_ok": true,
+        "exists": true,
+        "filename": "validation_evidence.sqlite3",
+        "integrity_ok": true,
+        "row_count": 12
+      }
+    ],
+    "valid": true
+  },
+  "database_health": {
+    "broken_relationships": 0,
+    "healthy": 18,
+    "rows": 102021,
+    "total": 18
+  },
+  "implementation_score": 10.0,
+  "live_semantic_smoke": {
+    "passed": 3,
+    "scenarios": [
+      "home-desktop",
+      "quality-desktop",
+      "final-assurance-desktop"
+    ]
+  },
+  "navigation": {
+    "featured": 15,
+    "routes": 78
+  },
+  "passed": true,
+  "repository_audit": {
+    "checks": {
+      "markdown_links": {
+        "broken": [],
+        "broken_count": 0,
+        "checked_links": 0,
+        "passed": true
+      },
+      "secrets": {
+        "finding_count": 0,
+        "findings": [],
+        "passed": true,
+        "scanned_files": 820
+      },
+      "version_consistency": {
+        "failures": [],
+        "passed": true,
+        "version": "4.3.1"
+      },
+      "workspace_hygiene": {
+        "finding_count": 0,
+        "findings": [],
+        "passed": true
+      }
+    },
+    "environment": {
+      "platform": "posix",
+      "python": "3.13.5"
+    },
+    "passed": true,
+    "schema": "biointel.repository-audit.v1"
+  },
+  "schema": "biointel.step43.qualification.v1",
+  "tests": {
+    "failed": 0,
+    "note": "Suites were executed in fresh processes to prevent native ML/Streamlit thread shutdown from contaminating unrelated suites.",
+    "passed": 103,
+    "skipped": 12,
+    "suites": [
+      {
+        "name": "production_engineering_regression",
+        "passed": 38
+      },
+      {
+        "name": "scientific_regression",
+        "passed": 25
+      },
+      {
+        "name": "operations_api_drill",
+        "passed": 3
+      },
+      {
+        "name": "operations_realworld",
+        "passed": 20
+      },
+      {
+        "name": "operations_verifiable_evidence",
+        "passed": 8
+      },
+      {
+        "name": "integration_contracts",
+        "passed": 3
+      },
+      {
+        "name": "final_assurance_and_visual_integrity",
+        "passed": 6,
+        "skipped": 12
+      }
+    ]
+  },
+  "verifiable_evidence_score": 6.2,
+  "version": "4.3.1"
+}

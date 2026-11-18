@@ -1,0 +1,93 @@
+{
+  "schema": "biointel.step174.qualification.v1",
+  "status": "passed",
+  "version": "14.6.0",
+  "modules": 80,
+  "phases": 9,
+  "software_phase_automation_rating": 10.0,
+  "automation_ready_modules": 80,
+  "controlled_release_eligible_modules": 0,
+  "external_phase_steps_completed": 102,
+  "external_phase_steps_required": 584,
+  "external_phase_completion_fraction": 0.1747,
+  "average_practical_readiness": 6.01,
+  "minimum_practical_readiness": 3.5,
+  "maximum_practical_readiness": 7.5,
+  "phase_summary": [
+    {
+      "phase": 1,
+      "title": "Physical scientific environment qualification",
+      "applicable_modules": 80,
+      "complete_modules": 0,
+      "pending_modules": 80
+    },
+    {
+      "phase": 2,
+      "title": "Specialist engine installation and qualification",
+      "applicable_modules": 80,
+      "complete_modules": 39,
+      "pending_modules": 41
+    },
+    {
+      "phase": 3,
+      "title": "Production reference database qualification",
+      "applicable_modules": 80,
+      "complete_modules": 58,
+      "pending_modules": 22
+    },
+    {
+      "phase": 4,
+      "title": "Authentic task-specific models and real cohorts",
+      "applicable_modules": 12,
+      "complete_modules": 5,
+      "pending_modules": 7
+    },
+    {
+      "phase": 5,
+      "title": "Independent locked benchmark validation",
+      "applicable_modules": 12,
+      "complete_modules": 0,
+      "pending_modules": 12
+    },
+    {
+      "phase": 6,
+      "title": "Wet-lab, prospective and orthogonal confirmation",
+      "applicable_modules": 80,
+      "complete_modules": 0,
+      "pending_modules": 80
+    },
+    {
+      "phase": 7,
+      "title": "Independent expert sign-off",
+      "applicable_modules": 80,
+      "complete_modules": 0,
+      "pending_modules": 80
+    },
+    {
+      "phase": 8,
+      "title": "Qualified real-world operating history",
+      "applicable_modules": 80,
+      "complete_modules": 0,
+      "pending_modules": 80
+    },
+    {
+      "phase": 9,
+      "title": "Formal controlled-release review",
+      "applicable_modules": 80,
+      "complete_modules": 0,
+      "pending_modules": 80
+    }
+  ],
+  "focused_and_compatibility_tests_passed": 85,
+  "focused_and_compatibility_tests_failed": 0,
+  "full_native_modules_passed": 80,
+  "full_native_modules_failed": 0,
+  "python_files": 1313,
+  "application_pages": 244,
+  "databases": 47,
+  "database_rows": 114169,
+  "foreign_key_violations": 0,
+  "assets": 971,
+  "external_evidence_fabricated": false,
+  "boundary": "All software-controlled automation and verification are complete. Physical machines, provider access, real cohorts, laboratory outcomes, qualified experts and operating history remain genuine external execution."
+}

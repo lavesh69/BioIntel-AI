@@ -1,0 +1,172 @@
+{
+  "release": "BioIntel AI Step 58 Premium Aesthetic UI & Error Hardening",
+  "version": "6.0.0",
+  "tests": {
+    "collected": 478,
+    "passed": 462,
+    "skipped": 16,
+    "failed": 0,
+    "latest_focused_passed": 27
+  },
+  "quality": {
+    "ruff_findings": 0,
+    "python_compilation": "passed",
+    "secret_findings": 0
+  },
+  "ui": {
+    "screens": 89,
+    "themes": 17,
+    "fonts": 11,
+    "theme_font_combinations_verified": 187,
+    "missing_global_theme": [],
+    "missing_professional_hero": [],
+    "external_css_or_font_dependencies": 0,
+    "accessibility_modes": [
+      "reduced motion",
+      "higher contrast",
+      "forced colours",
+      "keyboard focus",
+      "responsive mobile"
+    ]
+  },
+  "data": {
+    "database_count": 20,
+    "healthy_databases": 20,
+    "foreign_key_violations": 0,
+    "database_rows": 106465
+  },
+  "models": {
+    "joblib_artifacts": 24
+  },
+  "store": {
+    "internal_failures": 0,
+    "external_account_or_signing_actions": 3,
+    "implementation_ready": true
+  },
+  "release_hygiene": {
+    "sqlite_runtime_residue": 0,
+    "bytecode_cache_artifacts": 0
+  },
+  "databases": [
+    {
+      "path": "reports/analytics.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "rows": 17690
+    },
+    {
+      "path": "reports/api_security.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "rows": 94
+    },
+    {
+      "path": "reports/assets.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "rows": 20547
+    },
+    {
+      "path": "reports/biotechnology_project_runs.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "rows": 0
+    },
+    {
+      "path": "reports/connected_sources.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "rows": 0
+    },
+    {
+      "path": "reports/datasets.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "rows": 4879
+    },
+    {
+      "path": "reports/document_history.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "rows": 1973
+    },
+    {
+      "path": "reports/evidence.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "rows": 3891
+    },
+    {
+      "path": "reports/experiments.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "rows": 783
+    },
+    {
+      "path": "reports/feature_cache.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "rows": 1293
+    },
+    {
+      "path": "reports/internet_downloads.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "rows": 105
+    },
+    {
+      "path": "reports/jobs.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "rows": 878
+    },
+    {
+      "path": "reports/knowledge.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "rows": 38427
+    },
+    {
+      "path": "reports/projects.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "rows": 688
+    },
+    {
+      "path": "reports/prospective_validation.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "rows": 0
+    },
+    {
+      "path": "reports/realworld_evidence.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "rows": 8
+    },
+    {
+      "path": "reports/relationships.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "rows": 2291
+    },
+    {
+      "path": "reports/scientific_evidence.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "rows": 12903
+    },
+    {
+      "path": "reports/tenants.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "rows": 3
+    },
+    {
+      "path": "reports/validation_evidence.sqlite3",
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "rows": 12
+    }
+  ]
+}

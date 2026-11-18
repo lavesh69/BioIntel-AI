@@ -1,0 +1,44 @@
+{
+  "databases": {
+    "foreign_key_issues": 0,
+    "hash_changes_from_step135": 0,
+    "healthy": 36,
+    "rows": 108425,
+    "total": 36
+  },
+  "engineering_gates": {
+    "checks": 4,
+    "passed": true
+  },
+  "full_repository_suite_claimed": false,
+  "generated_at_utc": "2026-07-12T06:59:25.736540+00:00",
+  "live_streamlit_apptest": {
+    "executed": false,
+    "reason": "Compatible Streamlit and PyArrow are unavailable in the Linux build environment; no false browser-runtime claim is made."
+  },
+  "module_count": 15,
+  "native_format_additions": 12,
+  "native_pipeline_smoke": {
+    "modules": 15,
+    "passed": true
+  },
+  "product_version": "13.2.0",
+  "protected_pages": {
+    "passed": 5,
+    "total": 5
+  },
+  "python_syntax": {
+    "files": 958,
+    "passed": true
+  },
+  "runtime_residue": 0,
+  "schema": "biointel.step136-final-validation.v1",
+  "scientific_boundary": "External executables, licensed references, proprietary weights, wet-lab results, clinical qualification and regulatory approval are not fabricated or bundled.",
+  "scientific_tables_preserved": 39,
+  "scope": "native raw data, external-engine readiness, checksum-bound background pipelines and module stability",
+  "selected_regression_tests_passed": 84,
+  "specialist_viewers_preserved": 49,
+  "step": 136,
+  "verifier_checks": 13,
+  "verifier_passed": true
+}

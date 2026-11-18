@@ -1,0 +1,170 @@
+{
+  "accepted_licences": [],
+  "blocked_by_size": 0,
+  "download_does_not_equal_qualification": true,
+  "downloaded": 0,
+  "dry_run": 7,
+  "execute": false,
+  "manual_or_tool_managed": 19,
+  "max_size_gb": 2.0,
+  "results": [
+    {
+      "install_command": "amrfinder, -u",
+      "reference_id": "amrfinder-db",
+      "source_url": "https://github.com/ncbi/amr",
+      "status": "manual-or-tool-managed"
+    },
+    {
+      "install_command": "",
+      "reference_id": "bindingdb",
+      "source_url": "https://www.bindingdb.org/rwd/bind/chemsearch/marvin/SDFdownload.jsp?all_download=yes",
+      "status": "manual-or-tool-managed"
+    },
+    {
+      "install_command": "busco, --download, all",
+      "reference_id": "busco-lineages",
+      "source_url": "https://busco.ezlab.org/busco_userguide.html",
+      "status": "manual-or-tool-managed"
+    },
+    {
+      "install_command": "",
+      "reference_id": "card",
+      "source_url": "https://card.mcmaster.ca/download",
+      "status": "manual-or-tool-managed"
+    },
+    {
+      "install_command": "",
+      "reference_id": "chembl",
+      "source_url": "https://chembl.gitbook.io/chembl-interface-documentation/downloads",
+      "status": "manual-or-tool-managed"
+    },
+    {
+      "reference_id": "clinvar-grch38-tbi",
+      "source_url": "https://ftp.ncbi.nlm.nih.gov/pub/clinvar/vcf_GRCh38/clinvar.vcf.gz.tbi",
+      "status": "dry-run",
+      "target": "/mnt/data/step170_work/BioIntel-AI/UserData/step170/downloads/clinvar-grch38-tbi.tbi"
+    },
+    {
+      "reference_id": "clinvar-grch38-vcf",
+      "source_url": "https://ftp.ncbi.nlm.nih.gov/pub/clinvar/vcf_GRCh38/clinvar.vcf.gz",
+      "status": "dry-run",
+      "target": "/mnt/data/step170_work/BioIntel-AI/UserData/step170/downloads/clinvar-grch38-vcf.gz"
+    },
+    {
+      "install_command": "",
+      "reference_id": "colabfold-databases",
+      "source_url": "https://github.com/sokrypton/ColabFold",
+      "status": "manual-or-tool-managed"
+    },
+    {
+      "install_command": "dorado, download, --model, all",
+      "reference_id": "dorado-models",
+      "source_url": "https://github.com/nanoporetech/dorado",
+      "status": "manual-or-tool-managed"
+    },
+    {
+      "install_command": "",
+      "reference_id": "gnomad-genomes",
+      "source_url": "https://gnomad.broadinstitute.org/downloads",
+      "status": "manual-or-tool-managed"
+    },
+    {
+      "reference_id": "go-basic",
+      "source_url": "https://purl.obolibrary.org/obo/go/go-basic.obo",
+      "status": "dry-run",
+      "target": "/mnt/data/step170_work/BioIntel-AI/UserData/step170/downloads/go-basic.obo"
+    },
+    {
+      "reference_id": "grch38-fasta",
+      "source_url": "https://hgdownload.soe.ucsc.edu/goldenPath/hg38/bigZips/hg38.fa.gz",
+      "status": "dry-run",
+      "target": "/mnt/data/step170_work/BioIntel-AI/UserData/step170/downloads/grch38-fasta.gz"
+    },
+    {
+      "reference_id": "hpo-ontology",
+      "source_url": "https://github.com/obophenotype/human-phenotype-ontology/releases/latest/download/hp.obo",
+      "status": "dry-run",
+      "target": "/mnt/data/step170_work/BioIntel-AI/UserData/step170/downloads/hpo-ontology.obo"
+    },
+    {
+      "install_command": "humann_databases, --download, chocophlan, full",
+      "reference_id": "humann-chocophlan",
+      "source_url": "https://huttenhower.sph.harvard.edu/humann/",
+      "status": "manual-or-tool-managed"
+    },
+    {
+      "install_command": "humann_databases, --download, uniref, uniref90_diamond",
+      "reference_id": "humann-uniref90",
+      "source_url": "https://huttenhower.sph.harvard.edu/humann/",
+      "status": "manual-or-tool-managed"
+    },
+    {
+      "install_command": "",
+      "reference_id": "igblast-germline",
+      "source_url": "https://ftp.ncbi.nih.gov/blast/executables/igblast/release/",
+      "status": "manual-or-tool-managed"
+    },
+    {
+      "install_command": "",
+      "reference_id": "kraken2-standard",
+      "source_url": "https://benlangmead.github.io/aws-indexes/k2",
+      "status": "manual-or-tool-managed"
+    },
+    {
+      "install_command": "",
+      "reference_id": "netmhciipan-data",
+      "source_url": "https://services.healthtech.dtu.dk/services/NetMHCIIpan-4.0/",
+      "status": "manual-or-tool-managed"
+    },
+    {
+      "install_command": "",
+      "reference_id": "netmhcpan-data",
+      "source_url": "https://services.healthtech.dtu.dk/services/NetMHCpan-4.1/",
+      "status": "manual-or-tool-managed"
+    },
+    {
+      "install_command": "",
+      "reference_id": "proteinmpnn-weights",
+      "source_url": "https://github.com/dauparas/ProteinMPNN",
+      "status": "manual-or-tool-managed"
+    },
+    {
+      "reference_id": "reactome-uniprot",
+      "source_url": "https://reactome.org/download/current/UniProt2Reactome_All_Levels.txt",
+      "status": "dry-run",
+      "target": "/mnt/data/step170_work/BioIntel-AI/UserData/step170/downloads/reactome-uniprot.txt"
+    },
+    {
+      "install_command": "",
+      "reference_id": "repeat-expansion-catalog",
+      "source_url": "https://github.com/Illumina/ExpansionHunter",
+      "status": "manual-or-tool-managed"
+    },
+    {
+      "install_command": "",
+      "reference_id": "resfinder-db",
+      "source_url": "https://bitbucket.org/genomicepidemiology/resfinder_db.git",
+      "status": "manual-or-tool-managed"
+    },
+    {
+      "install_command": "",
+      "reference_id": "rfdiffusion-weights",
+      "source_url": "https://github.com/RosettaCommons/RFdiffusion",
+      "status": "manual-or-tool-managed"
+    },
+    {
+      "reference_id": "uniprot-swissprot",
+      "source_url": "https://rest.uniprot.org/uniprotkb/stream?compressed=true&format=fasta&query=%28reviewed%3Atrue%29",
+      "status": "dry-run",
+      "target": "/mnt/data/step170_work/BioIntel-AI/UserData/step170/downloads/uniprot-swissprot.dat"
+    },
+    {
+      "install_command": "perl, INSTALL.pl, -a, c, -s, homo_sapiens, -y, GRCh38",
+      "reference_id": "vep-cache-grch38",
+      "source_url": "https://www.ensembl.org/info/docs/tools/vep/script/vep_cache.html",
+      "status": "manual-or-tool-managed"
+    }
+  ],
+  "schema": "biointel.step170.reference-manager.v1",
+  "selected": 26
+}

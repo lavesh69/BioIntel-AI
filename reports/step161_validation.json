@@ -1,0 +1,47 @@
+{
+  "checks": [
+    {
+      "check": "required_files",
+      "detail": "[]",
+      "passed": true
+    },
+    {
+      "check": "release_markers",
+      "detail": "[]",
+      "passed": true
+    },
+    {
+      "check": "runtime_recipes",
+      "detail": "53/53 complete",
+      "passed": true
+    },
+    {
+      "check": "development_reference_kits",
+      "detail": "257/257 qualified for development",
+      "passed": true
+    },
+    {
+      "check": "validation_protocols",
+      "detail": "80/80 ready",
+      "passed": true
+    },
+    {
+      "check": "all_module_upgrade_score",
+      "detail": "80/80 at 10/10",
+      "passed": true
+    },
+    {
+      "check": "native_execution",
+      "detail": "4/4 module executions passed",
+      "passed": true
+    },
+    {
+      "check": "compile_scan",
+      "detail": "5 Step 161 source files compiled",
+      "passed": true
+    }
+  ],
+  "external_claims_not_inferred": true,
+  "schema": "biointel.step161.validation.v1",
+  "status": "passed"
+}

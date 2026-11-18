@@ -1,0 +1,59 @@
+{
+  "boundary": "A genuine 10/10 real-evidence score requires independently verifiable external DTI validation, blinded prospective outcomes, independent wet-lab replication and multi-site evidence. These were not fabricated.",
+  "inventory": {
+    "databases": 22,
+    "entry_points": 91,
+    "fonts": 11,
+    "starter_kits": 47,
+    "themes": 32
+  },
+  "ratings": {
+    "combined_scientific_credibility": 6.8,
+    "scientific_credibility_controls": 10.0,
+    "scientific_implementation": 10.0,
+    "search_typo_tolerance_internal": 10.0,
+    "verifiable_scientific_evidence": 5.1
+  },
+  "schema": "biointel.step82_4.qualification.v1",
+  "scientific_credibility": {
+    "blocked_claims": [
+      "Independent external DTI validation",
+      "Blinded prospective DTI validation",
+      "Independent wet-lab replication",
+      "Multi-site reproducibility"
+    ],
+    "eligible_claims": [
+      "Scientific evidence-control implementation",
+      "Provider-authenticated reference evidence",
+      "Reproducible analytical benchmark"
+    ],
+    "evidence_chain_ok": true,
+    "official_https_snapshots": 25,
+    "snapshots": 25,
+    "strictly_rejected_studies": 12,
+    "validation_chain_ok": true
+  },
+  "search": {
+    "cases": 42,
+    "catalogue_recall": 1.0,
+    "cold_mean_ms_per_query": 76.78,
+    "top1_accuracy": 1.0,
+    "top3_accuracy": 1.0,
+    "warm_mean_ms_per_query": 0.197
+  },
+  "verification": {
+    "critical_clean_release_pages_passed": 4,
+    "database_count": 22,
+    "database_rows": 107189,
+    "foreign_key_issues": 0,
+    "healthy_databases": 22,
+    "python_ast_failures": [],
+    "python_files_ast_parsed": 592,
+    "selected_tests_passed": 84,
+    "streamlit_entry_points": 91,
+    "streamlit_failed": 0,
+    "streamlit_passed": 91,
+    "timeouts": 0
+  },
+  "version": "8.2.6"
+}

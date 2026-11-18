@@ -1,0 +1,29 @@
+{
+  "step": 65,
+  "version": "6.5.0",
+  "status": "passed",
+  "scope": {
+    "mobile_changes": false,
+    "themes_preserved": 17,
+    "fonts_preserved": 11
+  },
+  "checks": {
+    "ruff": "passed",
+    "compilation": "passed",
+    "desktop_ui_tests": {
+      "passed": 36,
+      "skipped": 13
+    },
+    "store_internal_failures": 0,
+    "databases": {
+      "healthy": 22,
+      "total": 22,
+      "foreign_key_violations": 0
+    }
+  },
+  "historical_full_suite": {
+    "status": "timed_out",
+    "failure_reported": false,
+    "note": "The legacy all-in-one verifier exceeded the 15-minute execution cap during isolated test-file execution."
+  }
+}

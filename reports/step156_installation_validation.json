@@ -1,0 +1,504 @@
+{
+  "advisories": [],
+  "checks": [
+    {
+      "advisory": false,
+      "key": "release_runtime_residue_absent",
+      "message": "[\"pages/__pycache__\", \"pages/__pycache__/340_BioIntel_Classroom.cpython-314.pyc\", \"pages/__pycache__/342_BioIntel_Academy_and_Lecture_Studio.cpython-314.pyc\", \"pages/__pycache__/343_BioIntel_Education_Universe.cpython-314.pyc\", \"scripts/__pycache__\", \"scripts/__pycache__/step206_contract.cpython-311.pyc\", \"scripts/__pycache__/step206_contract.cpython-314.pyc\", \"scripts/__pycache__/step206_release_gate.cpython-314.pyc\", \"src/biointel/__pycache__\", \"src/biointel/__pycache__/__init__.cpython-311.pyc\", \"src/biointel/__pycache__/__init__.cpython-314.pyc\", \"src/biointel/__pycache__/demo_workspace.cpython-311.pyc\", \"src/biointel/__pycache__/media_tools.cpython-311.pyc\", \"src/biointel/__pycache__/media_tools.cpython-314.pyc\", \"src/biointel/__pycache__/product_registry.cpython-314.pyc\", \"src/biointel/__pycache__/production_enablement_v217.cpython-314.pyc\", \"src/biointel/__pycache__/provenance.cpython-311.pyc\", \"src/biointel/__pycache__/release_readiness_v216.cpython-311.pyc\", \"src/biointel/__pycache__/release_readiness_v216.cpython-314.pyc\", \"src/biointel/__pycache__/runtime_paths.cpython-311.pyc\", \"src/biointel/__pycache__/runtime_paths.cpython-314.pyc\", \"src/biointel/acquisition/__pycache__\", \"src/biointel/acquisition/__pycache__/realtime_acquisition_hub.cpython-314.pyc\", \"src/biointel/api/__pycache__\", \"src/biointel/api/__pycache__/__init__.cpython-314.pyc\", \"src/biointel/assets/__pycache__\", \"src/biointel/assets/__pycache__/__init__.cpython-311.pyc\", \"src/biointel/assets/__pycache__/__init__.cpython-314.pyc\", \"src/biointel/assets/__pycache__/research_assets.cpython-311.pyc\", \"src/biointel/assurance/__pycache__\", \"src/biointel/assurance/__pycache__/__init__.cpython-314.pyc\", \"src/biointel/assurance/__pycache__/cache.cpython-314.pyc\", \"src/biointel/assurance/__pycache__/final.cpython-314.pyc\", \"src/biointel/authenticity_v162/__pycache__\", \"src/biointel/authenticity_v162/__pycache__/__init__.cpython-314.pyc\", \"src/biointel/authenticity_v162/__pycache__/assessment.cpython-314.pyc\", \"src/biointel/automation/__pycache__\", \"src/biointel/automation/__pycache__/__init__.cpython-314.pyc\", \"src/biointel/automation/__pycache__/workflow_automation.cpython-314.pyc\", \"src/biointel/bioinformatics/__pycache__\", \"src/biointel/bioinformatics/__pycache__/__init__.cpython-314.pyc\", \"src/biointel/bioinformatics/__pycache__/upgrades.cpython-314.pyc\", \"src/biointel/bioinformatics_peak_v137/__pycache__\", \"src/biointel/bioinformatics_peak_v137/__pycache__/__init__.cpython-314.pyc\", \"src/biointel/bioinformatics_peak_v137/__pycache__/catalog.cpython-314.pyc\", \"src/biointel/bioinformatics_peak_v137/__pycache__/scientific.cpython-314.pyc\", \"src/biointel/bioinformatics_peak_v138/__pycache__\", \"src/biointel/bioinformatics_peak_v138/__pycache__/__init__.cpython-314.pyc\", \"src/biointel/bioinformatics_peak_v138/__pycache__/catalog.cpython-314.pyc\", \"src/biointel/bioinformatics_peak_v138/__pycache__/scientific.cpython-314.pyc\", \"src/biointel/biotech/__pycache__\", \"src/biointel/biotech/__pycache__/__init__.cpython-314.pyc\", \"src/biointel/biotech/__pycache__/instrument_qualification.cpython-314.pyc\", \"src/biointel/chemistry/__pycache__\", \"src/biointel/chemistry/__pycache__/__init__.cpython-311.pyc\", \"src/biointel/chemistry/__pycache__/__init__.cpython-314.pyc\", \"src/biointel/chemistry/__pycache__/common_compounds.cpython-311.pyc\", \"src/biointel/chemistry/__pycache__/descriptors.cpython-311.pyc\", \"src/biointel/chemistry/__pycache__/fingerprints.cpython-311.pyc\", \"src/biointel/chemistry/__pycache__/fingerprints.cpython-314.pyc\", \"src/biointel/chemistry/__pycache__/smiles_validator.cpython-311.pyc\", \"src/biointel/clinical/__pycache__\", \"src/biointel/clinical/__pycache__/__init__.cpython-314.pyc\", \"src/biointel/clinical/__pycache__/dossier.cpython-314.pyc\", \"src/biointel/clinical/__pycache__/external_evidence.cpython-314.pyc\", \"src/biointel/clinical/__pycache__/external_readiness.cpython-314.pyc\", \"src/biointel/clinical/__pycache__/quality.cpython-314.pyc\", \"src/biointel/clinical/__pycache__/readiness.cpython-314.pyc\", \"src/biointel/clinical/__pycache__/registry.cpython-314.pyc\", \"src/biointel/clinical/__pycache__/schema.cpython-314.pyc\", \"src/biointel/clinical/__pycache__/templates.cpython-314.pyc\", \"src/biointel/clinical/__pycache__/validation_accelerator.cpython-314.pyc\", \"src/biointel/compliance/__pycache__\", \"src/biointel/compliance/__pycache__/__init__.cpython-314.pyc\", \"src/biointel/compliance/__pycache__/control_catalog.cpython-314.pyc\", \"src/biointel/compliance/__pycache__/ledger.cpython-314.pyc\", \"src/biointel/connect/__pycache__\", \"src/biointel/connect/__pycache__/__init__.cpython-311.pyc\", \"src/biointel/connect/__pycache__/__init__.cpython-314.pyc\", \"src/biointel/connect/__pycache__/advanced_ui.cpython-311.pyc\", \"src/biointel/connect/__pycache__/api.cpython-311.pyc\", \"src/biointel/connect/__pycache__/collaboration.cpython-311.pyc\", \"src/biointel/connect/__pycache__/collaboration.cpython-314.pyc\", \"src/biointel/connect/__pycache__/communities.cpython-311.pyc\", \"src/biointel/connect/__pycache__/communities.cpython-314.pyc\", \"src/biointel/connect/__pycache__/complete_api.cpython-311.pyc\", \"src/biointel/connect/__pycache__/complete_schema.cpython-311.pyc\", \"src/biointel/connect/__pycache__/complete_schema.cpython-314.pyc\", \"src/biointel/connect/__pycache__/complete_services.cpython-311.pyc\", \"src/biointel/connect/__pycache__/complete_services.cpython-314.pyc\", \"src/biointel/connect/__pycache__/complete_ui.cpython-311.pyc\", \"src/biointel/connect/__pycache__/connect_service.cpython-314.pyc\", \"src/biointel/connect/__pycache__/database.cpython-311.pyc\", \"src/biointel/connect/__pycache__/database.cpython-314.pyc\", \"src/biointel/connect/__pycache__/discovery.cpython-311.pyc\", \"src/biointel/connect/__pycache__/discovery.cpython-314.pyc\", \"src/biointel/connect/__pycache__/governance.cpython-311.pyc\", \"src/biointel/connect/__pycache__/governance.cpython-314.pyc\", \"src/biointel/connect/__pycache__/media.cpython-311.pyc\", \"src/biointel/connect/__pycache__/media.cpython-314.pyc\"]",
+      "passed": false
+    },
+    {
+      "advisory": false,
+      "key": "root_exists",
+      "message": "C:\\Users\\lavesh dobriyal\\.gemini\\antigravity\\scratch\\BioIntel-Step220",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "step156_part_1",
+      "message": "C:/Users/lavesh dobriyal/.gemini/antigravity/scratch/BioIntel-Step220/.release_parts/step156_part1.ok",
+      "passed": false
+    },
+    {
+      "advisory": false,
+      "key": "step156_part_2",
+      "message": "C:/Users/lavesh dobriyal/.gemini/antigravity/scratch/BioIntel-Step220/.release_parts/step156_part2.ok",
+      "passed": false
+    },
+    {
+      "advisory": false,
+      "key": "step156_part_3",
+      "message": "C:/Users/lavesh dobriyal/.gemini/antigravity/scratch/BioIntel-Step220/.release_parts/step156_part3.ok",
+      "passed": false
+    },
+    {
+      "advisory": false,
+      "key": "step156_part_4",
+      "message": "C:/Users/lavesh dobriyal/.gemini/antigravity/scratch/BioIntel-Step220/.release_parts/step156_part4.ok",
+      "passed": false
+    },
+    {
+      "advisory": false,
+      "key": "step150_validator_present",
+      "message": "C:\\Users\\lavesh dobriyal\\.gemini\\antigravity\\scratch\\BioIntel-Step220\\scripts\\step150_validate_installation.py",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "step150_base_validation",
+      "message": "ssing\",\n      \"path\": \".release_parts/step170_part1.ok\",\n      \"message\": \"A file assigned to one of the four Step 175 ZIP parts is missing.\"\n    },\n    {\n      \"key\": \"assigned_file_missing\",\n      \"path\": \".release_parts/step170_part2.ok\",\n      \"message\": \"A file assigned to one of the four Step 175 ZIP parts is missing.\"\n    },\n    {\n      \"key\": \"assigned_files_missing_truncated\",\n      \"path\": \"STEP175_PACKAGE_PART_ASSIGNMENT.json\",\n      \"message\": \"1223 additional assigned files are missing.\"\n    },\n    {\n      \"key\": \"critical_file_hash_mismatch\",\n      \"path\": \"INSTALL_WINDOWS.bat\",\n      \"message\": \"A stale, mixed, or damaged critical Step 175 file was found.\"\n    },\n    {\n      \"key\": \"critical_file_hash_mismatch\",\n      \"path\": \"RUN_BOTH_WINDOWS.bat\",\n      \"message\": \"A stale, mixed, or damaged critical Step 175 file was found.\"\n    },\n    {\n      \"key\": \"critical_file_hash_mismatch\",\n      \"path\": \"RUN_BIOINTEL_PATH_SAFE_WINDOWS.bat\",\n      \"message\": \"A stale, mixed, or damaged critical Step 175 file was found.\"\n    },\n    {\n      \"key\": \"critical_file_missing\",\n      \"path\": \"AUTO_INSTALL_AND_RUN_WINDOWS.bat\",\n      \"message\": \"Critical startup or release file is missing.\"\n    },\n    {\n      \"key\": \"critical_file_hash_mismatch\",\n      \"path\": \"scripts/install_windows_step97.py\",\n      \"message\": \"A stale, mixed, or damaged critical Step 175 file was found.\"\n    },\n    {\n      \"key\": \"critical_file_hash_mismatch\",\n      \"path\": \"scripts/run_biointel_step97.py\",\n      \"message\": \"A stale, mixed, or damaged critical Step 175 file was found.\"\n    },\n    {\n      \"key\": \"critical_file_hash_mismatch\",\n      \"path\": \"scripts/verify_windows_wheelhouse.py\",\n      \"message\": \"A stale, mixed, or damaged critical Step 175 file was found.\"\n    },\n    {\n      \"key\": \"stale_launcher\",\n      \"path\": \"RUN_BOTH_WINDOWS.bat\",\n      \"message\": \"The launcher still contains a legacy release-part contract.\"\n    },\n    {\n      \"key\": \"application_not_installed\",\n      \"path\": \".venv/Scripts/python.exe\",\n      \"message\": \"Run INSTALL_WINDOWS.bat before starting the app.\"\n    }\n  ],\n  \"passed\": false,\n  \"report_path\": \"C:\\\\Users\\\\lavesh dobriyal\\\\.gemini\\\\antigravity\\\\scratch\\\\BioIntel-Step220\\\\reports\\\\step175_installation_validation.json\"\n}\nREPORT_PATH=C:\\Users\\lavesh dobriyal\\.gemini\\antigravity\\scratch\\BioIntel-Step220\\reports\\step175_installation_validation.json\n",
+      "passed": false
+    },
+    {
+      "advisory": false,
+      "key": "release_metadata_present",
+      "message": "C:/Users/lavesh dobriyal/.gemini/antigravity/scratch/BioIntel-Step220/STEP156_RELEASE.json",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "release_step",
+      "message": "156",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "tests_collected",
+      "message": "{'collected': 1333, 'passed': 1306, 'skipped': 27, 'failed': 0}",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "tests_passed",
+      "message": "{'collected': 1333, 'passed': 1306, 'skipped': 27, 'failed': 0}",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "tests_skipped",
+      "message": "{'collected': 1333, 'passed': 1306, 'skipped': 27, 'failed': 0}",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "tests_failed_zero",
+      "message": "{'collected': 1333, 'passed': 1306, 'skipped': 27, 'failed': 0}",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "native_workflows_80_metadata",
+      "message": "80",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "workflow_families_49_metadata",
+      "message": "49",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "engine_adapters_64_metadata",
+      "message": "64",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "plans_66_metadata",
+      "message": "66",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "full_mode_one_million_rows",
+      "message": "{'row_limit': 1000000, 'feature_limit': 512, 'cell_limit': 80000000}",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "full_mode_512_features",
+      "message": "{'row_limit': 1000000, 'feature_limit': 512, 'cell_limit': 80000000}",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "critical_manifest_present",
+      "message": "C:/Users/lavesh dobriyal/.gemini/antigravity/scratch/BioIntel-Step220/release/step156_critical_hashes.json",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "critical_file:STEP156_RELEASE.json",
+      "message": "expected=47aa22137ed1030e5290ad411504d64b91db0604128297f022c67891025bb024 actual=47aa22137ed1030e5290ad411504d64b91db0604128297f022c67891025bb024",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "critical_file:VERIFY_STEP156_WINDOWS.bat",
+      "message": "expected=81a1be560dd665fa7847ba4ffc6276de2d14ecd4be6971f5ae74ef172b4caa4d actual=81a1be560dd665fa7847ba4ffc6276de2d14ecd4be6971f5ae74ef172b4caa4d",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "critical_file:config/step156_translational_readiness.json",
+      "message": "expected=5e61a4b60721a003f768af84f0398bd5c5ba67020acab383daebf34d2ab3c4fa actual=5e61a4b60721a003f768af84f0398bd5c5ba67020acab383daebf34d2ab3c4fa",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "critical_file:release/STEP156_DATABASE_INTEGRITY.json",
+      "message": "expected=fcdd5e813b3bd5190639afbf63c5de04dcc681e27ae880436ba4319c1bed1710 actual=fcdd5e813b3bd5190639afbf63c5de04dcc681e27ae880436ba4319c1bed1710",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "critical_file:release/STEP156_FULL_TEST_REPORT.txt",
+      "message": "expected=d6b83cca6ed58219d7df60eb21d45a95391ba03f0946875ac773d5c2bb7441f6 actual=d6b83cca6ed58219d7df60eb21d45a95391ba03f0946875ac773d5c2bb7441f6",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "critical_file:release/STEP156_RELEASE_HYGIENE.json",
+      "message": "expected=f2902b5949ff7194c8d48ef1a09b0b9887ef0a69a194f4d3ad596b60ebca2f3c actual=f2902b5949ff7194c8d48ef1a09b0b9887ef0a69a194f4d3ad596b60ebca2f3c",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "critical_file:release/STEP156_TRANSLATIONAL_READINESS_REPORT.md",
+      "message": "expected=3411116aac717db304e4d48277646a2965dfac2c5ecdf18f09e41dbca8261836 actual=3411116aac717db304e4d48277646a2965dfac2c5ecdf18f09e41dbca8261836",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "critical_file:scripts/step156_validate_installation.py",
+      "message": "expected=8ef189965b841173645b54a43ef930a2b2506f8325c5ecf5b7bd2fd3a05295f1 actual=8ef189965b841173645b54a43ef930a2b2506f8325c5ecf5b7bd2fd3a05295f1",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "critical_file:src/biointel/api/main.py",
+      "message": "expected=dedfee8fd19514b00d43818ccb3bd4746d7f6a2f9edea38bcab94e5c4920e243 actual=48eeae54f41e6cd53024ed57df8093c3384d19aa2182776ee68bf67a67198e67",
+      "passed": false
+    },
+    {
+      "advisory": false,
+      "key": "critical_file:src/biointel/biotech/__init__.py",
+      "message": "expected=a062bbb7b47aeaf995351e1b9a227df159cf8640fb909ffeba7368e424331db5 actual=a062bbb7b47aeaf995351e1b9a227df159cf8640fb909ffeba7368e424331db5",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "critical_file:src/biointel/biotech/instrument_qualification.py",
+      "message": "expected=a2f3ab11600d4516946898c1bf07047f87332180b05e4621278079c06b5ec364 actual=a2f3ab11600d4516946898c1bf07047f87332180b05e4621278079c06b5ec364",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "critical_file:src/biointel/biotech/lab_import.py",
+      "message": "expected=796da692a990429b43ba4dfc7b93f9e60cef886e6eced52d982ad8f2ca627fb3 actual=796da692a990429b43ba4dfc7b93f9e60cef886e6eced52d982ad8f2ca627fb3",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "critical_file:src/biointel/expansion/advanced_analysis.py",
+      "message": "expected=49d6dcfab082423285afcb1593fb9b525bf7831aaafc26f3bd5e7161e64404d2 actual=49d6dcfab082423285afcb1593fb9b525bf7831aaafc26f3bd5e7161e64404d2",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "critical_file:src/biointel/jobs/local_queue.py",
+      "message": "expected=ddcc8bcc4ad306d85bedfcc43c7ebe877c0e72c554f2f5fb4633f86df185c1bc actual=ddcc8bcc4ad306d85bedfcc43c7ebe877c0e72c554f2f5fb4633f86df185c1bc",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "critical_file:src/biointel/native/__init__.py",
+      "message": "expected=1fbfbad7d5f8847f82d466dddb6a69d1f9f359e03b3d7cbda2f10c48392e56be actual=1fbfbad7d5f8847f82d466dddb6a69d1f9f359e03b3d7cbda2f10c48392e56be",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "critical_file:src/biointel/native/engine_plans_step156.py",
+      "message": "expected=74958f2b8a5d8edfc6577f51994936c0e58eb51bf968e6589fa5c670b4fcbdb6 actual=74958f2b8a5d8edfc6577f51994936c0e58eb51bf968e6589fa5c670b4fcbdb6",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "critical_file:src/biointel/native/engines.py",
+      "message": "expected=935def36e61aa6b6a4788f413bbe1870a8001420520dd3ecd8d30f1794c4f76a actual=a73b1b2ce86df031dd652be8326feb017f83419d305eb041cd5f67128a9b14e0",
+      "passed": false
+    },
+    {
+      "advisory": false,
+      "key": "critical_file:src/biointel/native/qualification.py",
+      "message": "expected=e5d65f8fd579d425043d7613125c6f5c3781c8d63e39e52413f3b4a6957ab9f1 actual=e5d65f8fd579d425043d7613125c6f5c3781c8d63e39e52413f3b4a6957ab9f1",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "critical_file:src/biointel/scientific_depth/native_biodesign_workflows.py",
+      "message": "expected=0d1e1266c29627bd65eab01ca8f82fc26c3a3e6327d5ba5dda6e25925280e249 actual=0d1e1266c29627bd65eab01ca8f82fc26c3a3e6327d5ba5dda6e25925280e249",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "critical_file:src/biointel/scientific_depth/native_omics_workflows.py",
+      "message": "expected=138ef42ba509505ecb3d121186cd478c44383cb851d7ce4b5d3424d0df852a1c actual=138ef42ba509505ecb3d121186cd478c44383cb851d7ce4b5d3424d0df852a1c",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "critical_file:src/biointel/scientific_depth/native_specialist_workflows.py",
+      "message": "expected=60d3522a0f388a5f2310c6bebedc624d21f6cfc600dcdca775c4ba3cd9108701 actual=60d3522a0f388a5f2310c6bebedc624d21f6cfc600dcdca775c4ba3cd9108701",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "critical_file:src/biointel/scientific_depth/native_step156_operational.py",
+      "message": "expected=58cc9448885cb9fc47676a0dedd1d47569abd1cc4a931d6b9989a8e6936db1d8 actual=58cc9448885cb9fc47676a0dedd1d47569abd1cc4a931d6b9989a8e6936db1d8",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "critical_file:src/biointel/scientific_depth/native_step156_translational.py",
+      "message": "expected=06c7a441f5a0ef16f384225bea031c100a7adfecede7cb5cd23242c5a4dcafef actual=06c7a441f5a0ef16f384225bea031c100a7adfecede7cb5cd23242c5a4dcafef",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "critical_file:src/biointel/scientific_depth/native_workflows.py",
+      "message": "expected=37a6c2284ab2e776469b10f6b005575cdf6242fe5de736b48a35f9698b3b3b06 actual=a10f05440d86380fd1b903dc591690e99389c5f10559c53104c2e569102fd016",
+      "passed": false
+    },
+    {
+      "advisory": false,
+      "key": "critical_file:src/biointel/scientific_depth/renderer.py",
+      "message": "expected=d094be4f66225f63bac3025921ea1b172fe1987774e0a20b8d9d00575c2fbd89 actual=1da2309f8208d0e6edb3e5831ef4df19fa7357391957cb9fa5326ffbd5a96f86",
+      "passed": false
+    },
+    {
+      "advisory": false,
+      "key": "critical_file:tests/test_step156_tool_instrument_qualification.py",
+      "message": "expected=14b97a703bd43fb02f012f1bdece93b6e071f3f2fc5d89742dfe63232ed35755 actual=14b97a703bd43fb02f012f1bdece93b6e071f3f2fc5d89742dfe63232ed35755",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "critical_file:tests/test_step156_translational_readiness.py",
+      "message": "expected=b65c4e76e965985902475b1fae034a7600be425d183819baea31a54f73d7c796 actual=b65c4e76e965985902475b1fae034a7600be425d183819baea31a54f73d7c796",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "critical_file:validate_step156_installation.py",
+      "message": "expected=ec21dc2b9d71696031e712723aa3805d1da1c2faa3a266b8629eb0087dd184e2 actual=ec21dc2b9d71696031e712723aa3805d1da1c2faa3a266b8629eb0087dd184e2",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "python_source_compile",
+      "message": "{}",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "sqlite_databases_40",
+      "message": "54",
+      "passed": false
+    },
+    {
+      "advisory": false,
+      "key": "sqlite_integrity_and_foreign_keys",
+      "message": "{\"tests/BioIntel Demo With Spaces soy9q6cx/User Data With Spaces/education/education-demo.sqlite3-journal\": \"DatabaseError: file is not a database\"}",
+      "passed": false
+    },
+    {
+      "advisory": false,
+      "key": "package_manifest_present",
+      "message": "C:/Users/lavesh dobriyal/.gemini/antigravity/scratch/BioIntel-Step220/release/step156_package_manifest.json",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "package_manifest_entries",
+      "message": "4399",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "package_manifest_hashes",
+      "message": "{\".env.example\": \"size\", \".github/CODEOWNERS\": \"missing\", \".github/workflows/ci.yml\": \"missing\", \".github/workflows/code-quality.yml\": \"missing\", \".github/workflows/container.yml\": \"missing\", \".github/workflows/dependency-management.yml\": \"missing\", \".github/workflows/docs.yml\": \"missing\", \".github/workflows/e2e.yml\": \"missing\", \".github/workflows/final-assurance.yml\": \"missing\", \".github/workflows/installation.yml\": \"missing\", \".github/workflows/kubernetes.yml\": \"missing\", \".github/workflows/maturity-quality-gates.yml\": \"missing\", \".github/workflows/performance.yml\": \"missing\", \".github/workflows/release.yml\": \"missing\", \".github/workflows/security.yml\": \"missing\", \".github/workflows/step41-operational-qualification.yml\": \"missing\", \".github/workflows/step42-verifiable-evidence.yml\": \"missing\", \".github/workflows/store-legal-pages.yml\": \"missing\", \".github/workflows/store-mobile.yml\": \"missing\", \".github/workflows/store-windows.yml\": \"missing\", \".github/workflows/visual-regression.yml\": \"missing\", \".release_parts/step150_part1.ok\": \"missing\", \".release_parts/step150_part2.ok\": \"missing\", \".release_parts/step150_part3.ok\": \"missing\", \".release_parts/step150_part4.ok\": \"missing\", \".release_parts/step151_part1.ok\": \"missing\", \".release_parts/step151_part2.ok\": \"missing\", \".release_parts/step151_part3.ok\": \"missing\", \".release_parts/step151_part4.ok\": \"missing\", \".release_parts/step152_part1.ok\": \"missing\", \".release_parts/step152_part2.ok\": \"missing\", \".release_parts/step152_part3.ok\": \"missing\", \".release_parts/step152_part4.ok\": \"missing\", \".release_parts/step153_part1.ok\": \"missing\", \".release_parts/step153_part2.ok\": \"missing\", \".release_parts/step153_part3.ok\": \"missing\", \".release_parts/step153_part4.ok\": \"missing\", \".release_parts/step154_part1.ok\": \"missing\", \".release_parts/step154_part2.ok\": \"missing\", \".release_parts/step154_part3.ok\": \"missing\", \".release_parts/step154_part4.ok\": \"missing\", \".release_parts/step155_part1.ok\": \"missing\", \".release_parts/step155_part2.ok\": \"missing\", \".release_parts/step155_part3.ok\": \"missing\", \".release_parts/step155_part4.ok\": \"missing\", \".release_parts/step156_part1.ok\": \"missing\", \".release_parts/step156_part2.ok\": \"missing\", \".release_parts/step156_part3.ok\": \"missing\", \".release_parts/step156_part4.ok\": \"missing\", \".streamlit/config.toml\": \"size\"}",
+      "passed": false
+    },
+    {
+      "advisory": false,
+      "key": "runtime_dependencies_available",
+      "message": "ModuleNotFoundError: No module named 'pandas'",
+      "passed": false
+    },
+    {
+      "advisory": false,
+      "key": "native_budget",
+      "message": "src/biointel/scientific_depth/native_budget.py",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "step155_enhancements",
+      "message": "src/biointel/scientific_depth/native_step155_enhancements.py",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "step156_translational",
+      "message": "src/biointel/scientific_depth/native_step156_translational.py",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "step156_operational",
+      "message": "src/biointel/scientific_depth/native_step156_operational.py",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "native_orchestrator",
+      "message": "src/biointel/scientific_depth/native_workflows.py",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "step156_specialist_plans",
+      "message": "src/biointel/native/engine_plans_step156.py",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "engine_registry",
+      "message": "src/biointel/native/engines.py",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "engine_qualification",
+      "message": "src/biointel/native/qualification.py",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "instrument_qualification",
+      "message": "src/biointel/biotech/instrument_qualification.py",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "instrument_import",
+      "message": "src/biointel/biotech/lab_import.py",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "lims_lineage",
+      "message": "src/biointel/expansion/advanced_analysis.py",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "read_only_jobs",
+      "message": "src/biointel/jobs/local_queue.py",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "read_only_api",
+      "message": "src/biointel/api/main.py",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "renderer",
+      "message": "src/biointel/scientific_depth/renderer.py",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "command_center",
+      "message": "pages/227_Scientific_Readiness_Command_Center.py",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "step156_translational_tests",
+      "message": "tests/test_step156_translational_readiness.py",
+      "passed": true
+    },
+    {
+      "advisory": false,
+      "key": "step156_qualification_tests",
+      "message": "tests/test_step156_tool_instrument_qualification.py",
+      "passed": true
+    }
+  ],
+  "failures": [
+    {
+      "key": "release_runtime_residue_absent",
+      "message": "[\"pages/__pycache__\", \"pages/__pycache__/340_BioIntel_Classroom.cpython-314.pyc\", \"pages/__pycache__/342_BioIntel_Academy_and_Lecture_Studio.cpython-314.pyc\", \"pages/__pycache__/343_BioIntel_Education_Universe.cpython-314.pyc\", \"scripts/__pycache__\", \"scripts/__pycache__/step206_contract.cpython-311.pyc\", \"scripts/__pycache__/step206_contract.cpython-314.pyc\", \"scripts/__pycache__/step206_release_gate.cpython-314.pyc\", \"src/biointel/__pycache__\", \"src/biointel/__pycache__/__init__.cpython-311.pyc\", \"src/biointel/__pycache__/__init__.cpython-314.pyc\", \"src/biointel/__pycache__/demo_workspace.cpython-311.pyc\", \"src/biointel/__pycache__/media_tools.cpython-311.pyc\", \"src/biointel/__pycache__/media_tools.cpython-314.pyc\", \"src/biointel/__pycache__/product_registry.cpython-314.pyc\", \"src/biointel/__pycache__/production_enablement_v217.cpython-314.pyc\", \"src/biointel/__pycache__/provenance.cpython-311.pyc\", \"src/biointel/__pycache__/release_readiness_v216.cpython-311.pyc\", \"src/biointel/__pycache__/release_readiness_v216.cpython-314.pyc\", \"src/biointel/__pycache__/runtime_paths.cpython-311.pyc\", \"src/biointel/__pycache__/runtime_paths.cpython-314.pyc\", \"src/biointel/acquisition/__pycache__\", \"src/biointel/acquisition/__pycache__/realtime_acquisition_hub.cpython-314.pyc\", \"src/biointel/api/__pycache__\", \"src/biointel/api/__pycache__/__init__.cpython-314.pyc\", \"src/biointel/assets/__pycache__\", \"src/biointel/assets/__pycache__/__init__.cpython-311.pyc\", \"src/biointel/assets/__pycache__/__init__.cpython-314.pyc\", \"src/biointel/assets/__pycache__/research_assets.cpython-311.pyc\", \"src/biointel/assurance/__pycache__\", \"src/biointel/assurance/__pycache__/__init__.cpython-314.pyc\", \"src/biointel/assurance/__pycache__/cache.cpython-314.pyc\", \"src/biointel/assurance/__pycache__/final.cpython-314.pyc\", \"src/biointel/authenticity_v162/__pycache__\", \"src/biointel/authenticity_v162/__pycache__/__init__.cpython-314.pyc\", \"src/biointel/authenticity_v162/__pycache__/assessment.cpython-314.pyc\", \"src/biointel/automation/__pycache__\", \"src/biointel/automation/__pycache__/__init__.cpython-314.pyc\", \"src/biointel/automation/__pycache__/workflow_automation.cpython-314.pyc\", \"src/biointel/bioinformatics/__pycache__\", \"src/biointel/bioinformatics/__pycache__/__init__.cpython-314.pyc\", \"src/biointel/bioinformatics/__pycache__/upgrades.cpython-314.pyc\", \"src/biointel/bioinformatics_peak_v137/__pycache__\", \"src/biointel/bioinformatics_peak_v137/__pycache__/__init__.cpython-314.pyc\", \"src/biointel/bioinformatics_peak_v137/__pycache__/catalog.cpython-314.pyc\", \"src/biointel/bioinformatics_peak_v137/__pycache__/scientific.cpython-314.pyc\", \"src/biointel/bioinformatics_peak_v138/__pycache__\", \"src/biointel/bioinformatics_peak_v138/__pycache__/__init__.cpython-314.pyc\", \"src/biointel/bioinformatics_peak_v138/__pycache__/catalog.cpython-314.pyc\", \"src/biointel/bioinformatics_peak_v138/__pycache__/scientific.cpython-314.pyc\", \"src/biointel/biotech/__pycache__\", \"src/biointel/biotech/__pycache__/__init__.cpython-314.pyc\", \"src/biointel/biotech/__pycache__/instrument_qualification.cpython-314.pyc\", \"src/biointel/chemistry/__pycache__\", \"src/biointel/chemistry/__pycache__/__init__.cpython-311.pyc\", \"src/biointel/chemistry/__pycache__/__init__.cpython-314.pyc\", \"src/biointel/chemistry/__pycache__/common_compounds.cpython-311.pyc\", \"src/biointel/chemistry/__pycache__/descriptors.cpython-311.pyc\", \"src/biointel/chemistry/__pycache__/fingerprints.cpython-311.pyc\", \"src/biointel/chemistry/__pycache__/fingerprints.cpython-314.pyc\", \"src/biointel/chemistry/__pycache__/smiles_validator.cpython-311.pyc\", \"src/biointel/clinical/__pycache__\", \"src/biointel/clinical/__pycache__/__init__.cpython-314.pyc\", \"src/biointel/clinical/__pycache__/dossier.cpython-314.pyc\", \"src/biointel/clinical/__pycache__/external_evidence.cpython-314.pyc\", \"src/biointel/clinical/__pycache__/external_readiness.cpython-314.pyc\", \"src/biointel/clinical/__pycache__/quality.cpython-314.pyc\", \"src/biointel/clinical/__pycache__/readiness.cpython-314.pyc\", \"src/biointel/clinical/__pycache__/registry.cpython-314.pyc\", \"src/biointel/clinical/__pycache__/schema.cpython-314.pyc\", \"src/biointel/clinical/__pycache__/templates.cpython-314.pyc\", \"src/biointel/clinical/__pycache__/validation_accelerator.cpython-314.pyc\", \"src/biointel/compliance/__pycache__\", \"src/biointel/compliance/__pycache__/__init__.cpython-314.pyc\", \"src/biointel/compliance/__pycache__/control_catalog.cpython-314.pyc\", \"src/biointel/compliance/__pycache__/ledger.cpython-314.pyc\", \"src/biointel/connect/__pycache__\", \"src/biointel/connect/__pycache__/__init__.cpython-311.pyc\", \"src/biointel/connect/__pycache__/__init__.cpython-314.pyc\", \"src/biointel/connect/__pycache__/advanced_ui.cpython-311.pyc\", \"src/biointel/connect/__pycache__/api.cpython-311.pyc\", \"src/biointel/connect/__pycache__/collaboration.cpython-311.pyc\", \"src/biointel/connect/__pycache__/collaboration.cpython-314.pyc\", \"src/biointel/connect/__pycache__/communities.cpython-311.pyc\", \"src/biointel/connect/__pycache__/communities.cpython-314.pyc\", \"src/biointel/connect/__pycache__/complete_api.cpython-311.pyc\", \"src/biointel/connect/__pycache__/complete_schema.cpython-311.pyc\", \"src/biointel/connect/__pycache__/complete_schema.cpython-314.pyc\", \"src/biointel/connect/__pycache__/complete_services.cpython-311.pyc\", \"src/biointel/connect/__pycache__/complete_services.cpython-314.pyc\", \"src/biointel/connect/__pycache__/complete_ui.cpython-311.pyc\", \"src/biointel/connect/__pycache__/connect_service.cpython-314.pyc\", \"src/biointel/connect/__pycache__/database.cpython-311.pyc\", \"src/biointel/connect/__pycache__/database.cpython-314.pyc\", \"src/biointel/connect/__pycache__/discovery.cpython-311.pyc\", \"src/biointel/connect/__pycache__/discovery.cpython-314.pyc\", \"src/biointel/connect/__pycache__/governance.cpython-311.pyc\", \"src/biointel/connect/__pycache__/governance.cpython-314.pyc\", \"src/biointel/connect/__pycache__/media.cpython-311.pyc\", \"src/biointel/connect/__pycache__/media.cpython-314.pyc\"]"
+    },
+    {
+      "key": "step156_part_1",
+      "message": "C:/Users/lavesh dobriyal/.gemini/antigravity/scratch/BioIntel-Step220/.release_parts/step156_part1.ok"
+    },
+    {
+      "key": "step156_part_2",
+      "message": "C:/Users/lavesh dobriyal/.gemini/antigravity/scratch/BioIntel-Step220/.release_parts/step156_part2.ok"
+    },
+    {
+      "key": "step156_part_3",
+      "message": "C:/Users/lavesh dobriyal/.gemini/antigravity/scratch/BioIntel-Step220/.release_parts/step156_part3.ok"
+    },
+    {
+      "key": "step156_part_4",
+      "message": "C:/Users/lavesh dobriyal/.gemini/antigravity/scratch/BioIntel-Step220/.release_parts/step156_part4.ok"
+    },
+    {
+      "key": "step150_base_validation",
+      "message": "ssing\",\n      \"path\": \".release_parts/step170_part1.ok\",\n      \"message\": \"A file assigned to one of the four Step 175 ZIP parts is missing.\"\n    },\n    {\n      \"key\": \"assigned_file_missing\",\n      \"path\": \".release_parts/step170_part2.ok\",\n      \"message\": \"A file assigned to one of the four Step 175 ZIP parts is missing.\"\n    },\n    {\n      \"key\": \"assigned_files_missing_truncated\",\n      \"path\": \"STEP175_PACKAGE_PART_ASSIGNMENT.json\",\n      \"message\": \"1223 additional assigned files are missing.\"\n    },\n    {\n      \"key\": \"critical_file_hash_mismatch\",\n      \"path\": \"INSTALL_WINDOWS.bat\",\n      \"message\": \"A stale, mixed, or damaged critical Step 175 file was found.\"\n    },\n    {\n      \"key\": \"critical_file_hash_mismatch\",\n      \"path\": \"RUN_BOTH_WINDOWS.bat\",\n      \"message\": \"A stale, mixed, or damaged critical Step 175 file was found.\"\n    },\n    {\n      \"key\": \"critical_file_hash_mismatch\",\n      \"path\": \"RUN_BIOINTEL_PATH_SAFE_WINDOWS.bat\",\n      \"message\": \"A stale, mixed, or damaged critical Step 175 file was found.\"\n    },\n    {\n      \"key\": \"critical_file_missing\",\n      \"path\": \"AUTO_INSTALL_AND_RUN_WINDOWS.bat\",\n      \"message\": \"Critical startup or release file is missing.\"\n    },\n    {\n      \"key\": \"critical_file_hash_mismatch\",\n      \"path\": \"scripts/install_windows_step97.py\",\n      \"message\": \"A stale, mixed, or damaged critical Step 175 file was found.\"\n    },\n    {\n      \"key\": \"critical_file_hash_mismatch\",\n      \"path\": \"scripts/run_biointel_step97.py\",\n      \"message\": \"A stale, mixed, or damaged critical Step 175 file was found.\"\n    },\n    {\n      \"key\": \"critical_file_hash_mismatch\",\n      \"path\": \"scripts/verify_windows_wheelhouse.py\",\n      \"message\": \"A stale, mixed, or damaged critical Step 175 file was found.\"\n    },\n    {\n      \"key\": \"stale_launcher\",\n      \"path\": \"RUN_BOTH_WINDOWS.bat\",\n      \"message\": \"The launcher still contains a legacy release-part contract.\"\n    },\n    {\n      \"key\": \"application_not_installed\",\n      \"path\": \".venv/Scripts/python.exe\",\n      \"message\": \"Run INSTALL_WINDOWS.bat before starting the app.\"\n    }\n  ],\n  \"passed\": false,\n  \"report_path\": \"C:\\\\Users\\\\lavesh dobriyal\\\\.gemini\\\\antigravity\\\\scratch\\\\BioIntel-Step220\\\\reports\\\\step175_installation_validation.json\"\n}\nREPORT_PATH=C:\\Users\\lavesh dobriyal\\.gemini\\antigravity\\scratch\\BioIntel-Step220\\reports\\step175_installation_validation.json\n"
+    },
+    {
+      "key": "critical_file:src/biointel/api/main.py",
+      "message": "expected=dedfee8fd19514b00d43818ccb3bd4746d7f6a2f9edea38bcab94e5c4920e243 actual=48eeae54f41e6cd53024ed57df8093c3384d19aa2182776ee68bf67a67198e67"
+    },
+    {
+      "key": "critical_file:src/biointel/native/engines.py",
+      "message": "expected=935def36e61aa6b6a4788f413bbe1870a8001420520dd3ecd8d30f1794c4f76a actual=a73b1b2ce86df031dd652be8326feb017f83419d305eb041cd5f67128a9b14e0"
+    },
+    {
+      "key": "critical_file:src/biointel/scientific_depth/native_workflows.py",
+      "message": "expected=37a6c2284ab2e776469b10f6b005575cdf6242fe5de736b48a35f9698b3b3b06 actual=a10f05440d86380fd1b903dc591690e99389c5f10559c53104c2e569102fd016"
+    },
+    {
+      "key": "critical_file:src/biointel/scientific_depth/renderer.py",
+      "message": "expected=d094be4f66225f63bac3025921ea1b172fe1987774e0a20b8d9d00575c2fbd89 actual=1da2309f8208d0e6edb3e5831ef4df19fa7357391957cb9fa5326ffbd5a96f86"
+    },
+    {
+      "key": "sqlite_databases_40",
+      "message": "54"
+    },
+    {
+      "key": "sqlite_integrity_and_foreign_keys",
+      "message": "{\"tests/BioIntel Demo With Spaces soy9q6cx/User Data With Spaces/education/education-demo.sqlite3-journal\": \"DatabaseError: file is not a database\"}"
+    },
+    {
+      "key": "package_manifest_hashes",
+      "message": "{\".env.example\": \"size\", \".github/CODEOWNERS\": \"missing\", \".github/workflows/ci.yml\": \"missing\", \".github/workflows/code-quality.yml\": \"missing\", \".github/workflows/container.yml\": \"missing\", \".github/workflows/dependency-management.yml\": \"missing\", \".github/workflows/docs.yml\": \"missing\", \".github/workflows/e2e.yml\": \"missing\", \".github/workflows/final-assurance.yml\": \"missing\", \".github/workflows/installation.yml\": \"missing\", \".github/workflows/kubernetes.yml\": \"missing\", \".github/workflows/maturity-quality-gates.yml\": \"missing\", \".github/workflows/performance.yml\": \"missing\", \".github/workflows/release.yml\": \"missing\", \".github/workflows/security.yml\": \"missing\", \".github/workflows/step41-operational-qualification.yml\": \"missing\", \".github/workflows/step42-verifiable-evidence.yml\": \"missing\", \".github/workflows/store-legal-pages.yml\": \"missing\", \".github/workflows/store-mobile.yml\": \"missing\", \".github/workflows/store-windows.yml\": \"missing\", \".github/workflows/visual-regression.yml\": \"missing\", \".release_parts/step150_part1.ok\": \"missing\", \".release_parts/step150_part2.ok\": \"missing\", \".release_parts/step150_part3.ok\": \"missing\", \".release_parts/step150_part4.ok\": \"missing\", \".release_parts/step151_part1.ok\": \"missing\", \".release_parts/step151_part2.ok\": \"missing\", \".release_parts/step151_part3.ok\": \"missing\", \".release_parts/step151_part4.ok\": \"missing\", \".release_parts/step152_part1.ok\": \"missing\", \".release_parts/step152_part2.ok\": \"missing\", \".release_parts/step152_part3.ok\": \"missing\", \".release_parts/step152_part4.ok\": \"missing\", \".release_parts/step153_part1.ok\": \"missing\", \".release_parts/step153_part2.ok\": \"missing\", \".release_parts/step153_part3.ok\": \"missing\", \".release_parts/step153_part4.ok\": \"missing\", \".release_parts/step154_part1.ok\": \"missing\", \".release_parts/step154_part2.ok\": \"missing\", \".release_parts/step154_part3.ok\": \"missing\", \".release_parts/step154_part4.ok\": \"missing\", \".release_parts/step155_part1.ok\": \"missing\", \".release_parts/step155_part2.ok\": \"missing\", \".release_parts/step155_part3.ok\": \"missing\", \".release_parts/step155_part4.ok\": \"missing\", \".release_parts/step156_part1.ok\": \"missing\", \".release_parts/step156_part2.ok\": \"missing\", \".release_parts/step156_part3.ok\": \"missing\", \".release_parts/step156_part4.ok\": \"missing\", \".streamlit/config.toml\": \"size\"}"
+    },
+    {
+      "key": "runtime_dependencies_available",
+      "message": "ModuleNotFoundError: No module named 'pandas'"
+    }
+  ],
+  "passed": false,
+  "root": "C:\\Users\\lavesh dobriyal\\.gemini\\antigravity\\scratch\\BioIntel-Step220",
+  "schema": "biointel.step156.validation-report.v1"
+}

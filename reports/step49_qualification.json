@@ -1,0 +1,46 @@
+{
+  "application_routes": 84,
+  "automated_tests": {
+    "selected_total": {
+      "failed": 0,
+      "passed": 40
+    },
+    "step43_45_46_assurance_ui": {
+      "failed": 0,
+      "passed": 16
+    },
+    "step47_compatibility": {
+      "failed": 0,
+      "passed": 8
+    },
+    "step48_compatibility": {
+      "failed": 0,
+      "passed": 7
+    },
+    "step49": {
+      "failed": 0,
+      "passed": 9
+    }
+  },
+  "base_release": "Step 48 \u2014 Equal-Depth Biotechnology Workbenches",
+  "biotechnology_workbenches": 5,
+  "bundle_integrity_check": "passed",
+  "complete_workbench_runs": {
+    "failed": 0,
+    "passed": 5,
+    "streamlit_exceptions": 0
+  },
+  "database_integrity": {
+    "foreign_key_issues": 0,
+    "healthy": 18,
+    "total": 18,
+    "unchanged_from_step48": 18
+  },
+  "manifest_schema": "2.0",
+  "new_api_endpoints": 2,
+  "new_shared_modules": 2,
+  "python_files_compiled": 467,
+  "release": "Step 49 \u2014 Deep Professional Biotechnology Platform",
+  "run_registry": "implemented_empty_until_runtime_use",
+  "scientific_boundary": "Research and implementation qualification only; no experimental, diagnostic, clinical or regulatory proof is manufactured."
+}

@@ -1,0 +1,75 @@
+{
+  "schema": "biointel.step134-final-validation.v1",
+  "step": 134,
+  "version": "13.2.0",
+  "scope": "all-module reliability, stability, performance and error recovery",
+  "fixed": {
+    "direct_page_bootstrap_crashes": 15,
+    "managed_sqlite_connection_leaks": 1,
+    "eager_model_deserialisation_paths": 1,
+    "expensive_default_assurance_scans": 1,
+    "tenant_timestamp_churn_on_initialisation": 1
+  },
+  "streamlit": {
+    "entrypoints": 198,
+    "passed": 198,
+    "failed": 0,
+    "runtime_exceptions": 0,
+    "ui_errors": 0
+  },
+  "module_functional_smoke": {
+    "passed": true,
+    "modules": 15,
+    "advanced_tables": 27,
+    "advanced_visuals": 28,
+    "failures": []
+  },
+  "tests": {
+    "completed_non_overlapping": 99,
+    "recent_reliability_module_regressions": 66,
+    "additional_stability_database_runtime": 33,
+    "additional_files": [
+      {
+        "file": "test_step9_stability.log",
+        "passed": 10
+      },
+      {
+        "file": "test_step21_professional_databases.log",
+        "passed": 10
+      },
+      {
+        "file": "test_step29_biotech_bioinformatics.log",
+        "passed": 10
+      },
+      {
+        "file": "test_step50_runtime_repair.log",
+        "passed": 3
+      }
+    ],
+    "collected": 1055,
+    "full_monolithic_suite_completed": false
+  },
+  "python": {
+    "files": 948,
+    "syntax_passed": 948,
+    "failures": []
+  },
+  "databases": {
+    "count": 36,
+    "rows": 108425,
+    "integrity_failures": [],
+    "foreign_key_issues": 0,
+    "byte_identical_to_step133": true,
+    "hash_mismatches": []
+  },
+  "protected_pages": {
+    "count": 5,
+    "byte_identical": true
+  },
+  "release_hygiene": {
+    "runtime_residue_count": 0,
+    "runtime_residue": []
+  },
+  "verifier_passed": true,
+  "honesty_boundary": "External executables, proprietary model weights, licensed databases, physical instruments, wet-lab outcomes, clinical validation and regulatory acceptance are not fabricated or certified by this release."
+}

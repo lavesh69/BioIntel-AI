@@ -1,0 +1,22 @@
+{
+  "schema": "biointel.step166.release-doctor.v1",
+  "status": "passed",
+  "checks": [
+    {
+      "check": "Step 166 validation",
+      "passed": true,
+      "detail": "{\n  \"schema\": \"biointel.step166.validation.v1\",\n  \"status\": \"passed\",\n  \"priority_modules\": 6,\n  \"software_10of10\": 6,\n  \"native_depth_10of10\": 6,\n  \"module_runs\": [\n    {\n      \"module_key\": \"epigenomics_chromatin\",\n      \"status\": \"review\",\n      \"passed\": true,\n      \"tables\": 24\n    },\n    {\n      \"module_key\": \"long_read_core\",\n      \"status\": \"review\",\n      \"passed\": true,\n      \"tables\": 22\n    },\n    {\n      \"module_key\": \"one_health_environmental\",\n      \"status\": \"review\",\n      \"passed\": true,\n      \"tables\": 22\n    },\n    {\n      \"module_key\": \"pangenome_core\",\n      \"status\": \"review\",\n      \"passed\": true,\n      \"tables\": 21\n    },\n    {\n      \"module_key\": \"strain_microbiome\",\n      \"status\": \"review\",\n      \"passed\": true,\n      \"tables\": 21\n    },\n    {\n      \"module_key\": \"structural_variant_repeat\",\n      \"status\": \"review\",\n      \"passed\": true,\n      \"tables\": 26\n    }\n  ],\n  \"python_files_compiled\": 830,\n  \"module_failures\": [],\n  \"compile_failures\": [],\n  \"external_evidence_not_inferred\": true\n}\n"
+    },
+    {
+      "check": "Version marker",
+      "passed": true,
+      "detail": "13.8.0"
+    },
+    {
+      "check": "Six-module assets",
+      "passed": true,
+      "detail": "18 assets"
+    }
+  ],
+  "external_claims_not_inferred": true
+}

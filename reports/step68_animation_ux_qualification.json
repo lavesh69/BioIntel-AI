@@ -1,0 +1,34 @@
+{
+  "checks": {
+    "desktop_javascript_syntax": "passed",
+    "focused_motion_tests": {
+      "count": 12,
+      "status": "passed"
+    },
+    "interactive_streamlit_runtime": "not_run_streamlit_dependency_unavailable",
+    "mobile_clean_npm_rebuild": "not_run_offline_package_cache_incomplete",
+    "mobile_distribution_javascript_syntax": "passed",
+    "python_compileall": "passed",
+    "release_integrity": "verified_after_archive_creation"
+  },
+  "implemented": {
+    "active_state_only_pulse": true,
+    "cooperative_cancellation_hooks": true,
+    "default_mode": "Balanced",
+    "desktop_native_splash": true,
+    "determinate_and_indeterminate_progress": true,
+    "large_chart_transition_threshold_points": 5000,
+    "mobile_busy_timeout_network_feedback": true,
+    "motion_modes": [
+      "Full",
+      "Balanced",
+      "Reduced"
+    ],
+    "rerun_safe_intro": true,
+    "skeleton_loaders": true
+  },
+  "qualified_at_utc": "2026-07-06T18:52:00+00:00",
+  "schema": "biointel.animation-ux-qualification.v1",
+  "scope": "Step 68 animation, motion accessibility, workflow feedback, desktop startup, and mobile interaction enhancement",
+  "status": "qualified_with_environment_limitations"
+}

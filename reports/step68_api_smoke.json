@@ -1,0 +1,52 @@
+{
+  "case_count": 9,
+  "passed_cases": 9,
+  "failed_cases": 0,
+  "cases": [
+    {
+      "name": "health",
+      "status_code": 200,
+      "passed": true
+    },
+    {
+      "name": "ui catalog",
+      "status_code": 200,
+      "passed": true
+    },
+    {
+      "name": "project",
+      "status_code": 200,
+      "passed": true
+    },
+    {
+      "name": "compound",
+      "status_code": 200,
+      "passed": true
+    },
+    {
+      "name": "ranking",
+      "status_code": 200,
+      "passed": true
+    },
+    {
+      "name": "admet",
+      "status_code": 200,
+      "passed": true
+    },
+    {
+      "name": "enzyme",
+      "status_code": 200,
+      "passed": true
+    },
+    {
+      "name": "bioprocess",
+      "status_code": 200,
+      "passed": true
+    },
+    {
+      "name": "sequence",
+      "status_code": 200,
+      "passed": true
+    }
+  ]
+}

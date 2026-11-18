@@ -1,0 +1,18 @@
+{
+  "classification": "documented_control_qualification",
+  "existing": [
+    "data/templates/step41_customer_validation_manifest.json",
+    "docs/operations/STEP41_REALWORLD_EVIDENCE.md",
+    "tests/operations/test_step41_realworld_operations.py"
+  ],
+  "external_boundary": "Acceptance kit readiness is not a customer signature.",
+  "missing": [],
+  "observed_at": "2026-07-05T07:33:16.094786+00:00",
+  "passed": true,
+  "required": [
+    "data/templates/step41_customer_validation_manifest.json",
+    "docs/operations/STEP41_REALWORLD_EVIDENCE.md",
+    "tests/operations/test_step41_realworld_operations.py"
+  ],
+  "schema": "biointel.step42.customer_acceptance_kit.v1"
+}

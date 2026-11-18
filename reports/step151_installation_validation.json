@@ -1,0 +1,158 @@
+{
+  "checks": [
+    {
+      "key": "step150_validator_present",
+      "message": "/mnt/data/biointel150_work/BioIntel-AI/scripts/step150_validate_installation.py",
+      "passed": true
+    },
+    {
+      "key": "step150_base_validation",
+      "message": "ca3d41bbafa806\",\n      \"actual_sha256\": \"80baab80512f239166801f254a1fb04e159250c1e05655e57cca3d41bbafa806\"\n    },\n    {\n      \"key\": \"critical:scripts/step145_runtime_preflight.py\",\n      \"passed\": true,\n      \"expected_sha256\": \"b8dcb2350381ee4d6ab3d28d6cd5ed2a73025bc597d8fdd5e4d0cd5af2c92385\",\n      \"actual_sha256\": \"b8dcb2350381ee4d6ab3d28d6cd5ed2a73025bc597d8fdd5e4d0cd5af2c92385\"\n    },\n    {\n      \"key\": \"critical:scripts/step150_validate_installation.py\",\n      \"passed\": true,\n      \"expected_sha256\": \"e4f3827e4c7bf03bea9e6712b3f0ada1a8e7218ad177d817ffdb5627466b0d8b\",\n      \"actual_sha256\": \"e4f3827e4c7bf03bea9e6712b3f0ada1a8e7218ad177d817ffdb5627466b0d8b\"\n    },\n    {\n      \"key\": \"critical:src/biointel/utils/atomic_io.py\",\n      \"passed\": true,\n      \"expected_sha256\": \"7ef667d88d20b85cb1b51003550536f237b5a66385d1d87a6d565f5dd6c1f527\",\n      \"actual_sha256\": \"7ef667d88d20b85cb1b51003550536f237b5a66385d1d87a6d565f5dd6c1f527\"\n    },\n    {\n      \"key\": \"critical:src/biointel/utils/path_safety.py\",\n      \"passed\": true,\n      \"expected_sha256\": \"accf79b91d72b96f78279502a7fc6225d164797ec0cc7c5f21d79f82f6833607\",\n      \"actual_sha256\": \"accf79b91d72b96f78279502a7fc6225d164797ec0cc7c5f21d79f82f6833607\"\n    },\n    {\n      \"key\": \"launcher_required:--root \\\".\\\"\",\n      \"passed\": true\n    },\n    {\n      \"key\": \"launcher_required:Step 150\",\n      \"passed\": true\n    },\n    {\n      \"key\": \"launcher_required:step150_validate_installation.py\",\n      \"passed\": true\n    },\n    {\n      \"key\": \"launcher_forbidden_absent:--root \\\"%~dp0\\\"\",\n      \"passed\": true\n    },\n    {\n      \"key\": \"launcher_forbidden_absent:title BioIntel AI Step 145\",\n      \"passed\": true\n    },\n    {\n      \"key\": \"preflight_v150_contract\",\n      \"passed\": true\n    }\n  ],\n  \"failures\": [],\n  \"passed\": true,\n  \"report_path\": \"/mnt/data/biointel150_work/BioIntel-AI/reports/step150_installation_validation.json\"\n}\nREPORT_PATH=/mnt/data/biointel150_work/BioIntel-AI/reports/step150_installation_validation.json\n",
+      "passed": true
+    },
+    {
+      "key": "step151_part_1",
+      "message": "/mnt/data/biointel150_work/BioIntel-AI/.release_parts/step151_part1.ok",
+      "passed": true
+    },
+    {
+      "key": "step151_part_2",
+      "message": "/mnt/data/biointel150_work/BioIntel-AI/.release_parts/step151_part2.ok",
+      "passed": true
+    },
+    {
+      "key": "step151_part_3",
+      "message": "/mnt/data/biointel150_work/BioIntel-AI/.release_parts/step151_part3.ok",
+      "passed": true
+    },
+    {
+      "key": "step151_part_4",
+      "message": "/mnt/data/biointel150_work/BioIntel-AI/.release_parts/step151_part4.ok",
+      "passed": true
+    },
+    {
+      "key": "critical_manifest_present",
+      "message": "/mnt/data/biointel150_work/BioIntel-AI/release/step151_critical_hashes.json",
+      "passed": true
+    },
+    {
+      "key": "critical_file:INSTALL_WINDOWS.bat",
+      "message": "expected=987d0c05284ad4d4b6402b71024a0292226eab43ceb439050fc7f022b42bb66c actual=987d0c05284ad4d4b6402b71024a0292226eab43ceb439050fc7f022b42bb66c",
+      "passed": true
+    },
+    {
+      "key": "critical_file:STEP151_RELEASE.json",
+      "message": "expected=167ed15e56c3682eedb5e04b5cadee0132acc563c5a4094618b52772cf2621d1 actual=167ed15e56c3682eedb5e04b5cadee0132acc563c5a4094618b52772cf2621d1",
+      "passed": true
+    },
+    {
+      "key": "critical_file:VERIFY_STEP151_WINDOWS.bat",
+      "message": "expected=67a8fabb461ec0db1b1a1a896664623d0e1cf2047c3098ccf4e1ceb4f29f2fb6 actual=67a8fabb461ec0db1b1a1a896664623d0e1cf2047c3098ccf4e1ceb4f29f2fb6",
+      "passed": true
+    },
+    {
+      "key": "critical_file:deploy/terraform/variables.tf",
+      "message": "expected=7a0b69dd5fc1e7b186a4a5147ccfb818af438ab3b15a28b7d966c87260e2961e actual=7a0b69dd5fc1e7b186a4a5147ccfb818af438ab3b15a28b7d966c87260e2961e",
+      "passed": true
+    },
+    {
+      "key": "critical_file:pages/227_Scientific_Readiness_Command_Center.py",
+      "message": "expected=5b3b0336279dd1c346eff8ecea41010906c4cf72ff1fd70440bf20b898af26f8 actual=5b3b0336279dd1c346eff8ecea41010906c4cf72ff1fd70440bf20b898af26f8",
+      "passed": true
+    },
+    {
+      "key": "critical_file:pages/64_Wet_Lab_Biotechnology.py",
+      "message": "expected=1c074ec35360825560305f683bb8a8accd9800f9aa7aedf8d7efb50d22b05771 actual=1c074ec35360825560305f683bb8a8accd9800f9aa7aedf8d7efb50d22b05771",
+      "passed": true
+    },
+    {
+      "key": "critical_file:platform/desktop/src/main.cjs",
+      "message": "expected=9c60d2d738076618620e87ea74e46a3f45a6b8f34176ca1b3bde3b55e3ef04e1 actual=9c60d2d738076618620e87ea74e46a3f45a6b8f34176ca1b3bde3b55e3ef04e1",
+      "passed": true
+    },
+    {
+      "key": "critical_file:platform/mobile/android/app/build.gradle",
+      "message": "expected=47ad273f42080eae948bffbb6aeb0ab6affc02dceb37f2badad211afc1f5fbde actual=47ad273f42080eae948bffbb6aeb0ab6affc02dceb37f2badad211afc1f5fbde",
+      "passed": true
+    },
+    {
+      "key": "critical_file:scripts/step151_validate_installation.py",
+      "message": "expected=ab0bcb4afbc63549120d97bcbb424998c73f1e38c306ddc84050bc6b94fc4421 actual=ab0bcb4afbc63549120d97bcbb424998c73f1e38c306ddc84050bc6b94fc4421",
+      "passed": true
+    },
+    {
+      "key": "critical_file:src/biointel/biotech/flow_cytometry.py",
+      "message": "expected=fa67dbde5ae1216d6d531eaa339f9b9efcaea7a409e76225894052c4ed38eace actual=fa67dbde5ae1216d6d531eaa339f9b9efcaea7a409e76225894052c4ed38eace",
+      "passed": true
+    },
+    {
+      "key": "critical_file:src/biointel/observability/analytics_store.py",
+      "message": "expected=e46fe6d925fcff55dbe7ce4b00dad9272db5dfd538eee3380e65f715353be20c actual=e46fe6d925fcff55dbe7ce4b00dad9272db5dfd538eee3380e65f715353be20c",
+      "passed": true
+    },
+    {
+      "key": "critical_file:src/biointel/scientific_depth/capability.py",
+      "message": "expected=1e22f8179c9ef3006bf402a260d8756e1857dbe64620f75d25baab399f739648 actual=1e22f8179c9ef3006bf402a260d8756e1857dbe64620f75d25baab399f739648",
+      "passed": true
+    },
+    {
+      "key": "critical_file:src/biointel/scientific_depth/evidence_readiness.py",
+      "message": "expected=9c7c3ac72395047463bdecf42dcec4becf84f41151142398b4e0d59793f5a31c actual=9c7c3ac72395047463bdecf42dcec4becf84f41151142398b4e0d59793f5a31c",
+      "passed": true
+    },
+    {
+      "key": "critical_file:src/biointel/scientific_depth/portfolio.py",
+      "message": "expected=aea70267c1f12c271400fd5106aef9b0c4df4f2afef6933845a83926b23faeff actual=aea70267c1f12c271400fd5106aef9b0c4df4f2afef6933845a83926b23faeff",
+      "passed": true
+    },
+    {
+      "key": "critical_file:src/biointel/scientific_depth/renderer.py",
+      "message": "expected=234fbe0d2d7c44860cddeb826db16c0ccb5fbf3688e20121f98e630bbdadb7fb actual=234fbe0d2d7c44860cddeb826db16c0ccb5fbf3688e20121f98e630bbdadb7fb",
+      "passed": true
+    },
+    {
+      "key": "critical_file:src/biointel/ui/navigation.py",
+      "message": "expected=a5c3507f166c09ac1861aec1398df63d9f00f1a8b613afda2c9b20fc2e5e1f0e actual=a5c3507f166c09ac1861aec1398df63d9f00f1a8b613afda2c9b20fc2e5e1f0e",
+      "passed": true
+    },
+    {
+      "key": "critical_file:src/biointel/ui/preferences.py",
+      "message": "expected=63e4088f942689c40864208c66f158c03a4cac124e418f3caf1203f0f59d99d8 actual=63e4088f942689c40864208c66f158c03a4cac124e418f3caf1203f0f59d99d8",
+      "passed": true
+    },
+    {
+      "key": "critical_file:src/biointel/ui/style_catalog.py",
+      "message": "expected=88f7eda97c4e3e1dc7322215bc19d442fde95166b32966c3350e03abe49cf6c9 actual=88f7eda97c4e3e1dc7322215bc19d442fde95166b32966c3350e03abe49cf6c9",
+      "passed": true
+    },
+    {
+      "key": "critical_file:src/biointel/ui/theme.py",
+      "message": "expected=b2cbd44431b9300dc201cd1f397866a8216763da582b424cb40fa5d0a11681e2 actual=b2cbd44431b9300dc201cd1f397866a8216763da582b424cb40fa5d0a11681e2",
+      "passed": true
+    },
+    {
+      "key": "critical_file:visual/semantic_baselines/manifest.json",
+      "message": "expected=99618608fe55806774da6d9bbf3e3ed0ba31ec7175b33de6cc7d9cb193e672c4 actual=99618608fe55806774da6d9bbf3e3ed0ba31ec7175b33de6cc7d9cb193e672c4",
+      "passed": true
+    },
+    {
+      "key": "release_metadata",
+      "message": "/mnt/data/biointel150_work/BioIntel-AI/STEP151_RELEASE.json",
+      "passed": true
+    },
+    {
+      "key": "release_step",
+      "message": "151",
+      "passed": true
+    },
+    {
+      "key": "regression_failures_zero",
+      "message": "{'duration_seconds': 329.57, 'failed': 0, 'passed': 1240, 'skipped': 27}",
+      "passed": true
+    }
+  ],
+  "failures": [],
+  "passed": true,
+  "root": "/mnt/data/biointel150_work/BioIntel-AI",
+  "schema": "biointel.step151.validation-report.v1"
+}

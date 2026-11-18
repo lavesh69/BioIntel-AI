@@ -1,0 +1,30 @@
+{
+  "schema": "biointel.step141.qualification.v1",
+  "milestone": "Step 141",
+  "product_version": "13.2.0",
+  "new_modules": 16,
+  "research_planning_modules_total": 18,
+  "visual_assignments": 128,
+  "module_smoke_checks": "16/16 passed",
+  "visual_construction_checks": "128/128 passed",
+  "focused_tests": "5 passed",
+  "compatibility_tests": {
+    "step140": 17,
+    "step139": 9,
+    "step138": 20,
+    "step137": 19,
+    "brand": 6,
+    "home_founder": 3
+  },
+  "completed_selected_tests": 79,
+  "test_failures": 0,
+  "python_files_compiled": 1049,
+  "compile_failures": 0,
+  "navigation_research_planning_modules": 18,
+  "missing_navigation_pages": 0,
+  "databases_healthy": "40/40",
+  "database_rows_inspected": 108493,
+  "foreign_key_violations": 0,
+  "browser_runtime": "Not executed: Streamlit is unavailable in the build environment.",
+  "physical_windows_installation": "Not executed in the Linux build environment."
+}

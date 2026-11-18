@@ -1,0 +1,41 @@
+{
+  "schema": "biointel.step171.release-doctor.v2",
+  "version": "14.3.0",
+  "status": "passed",
+  "checks": [
+    {
+      "check": "Step 171 model validator",
+      "passed": true,
+      "detail": "quisition_pending': 4}\"\n    },\n    {\n      \"check\": \"matrix module coverage\",\n      \"passed\": true,\n      \"detail\": \"12\"\n    },\n    {\n      \"check\": \"authentic research benchmarks\",\n      \"passed\": true,\n      \"detail\": \"8\"\n    },\n    {\n      \"check\": \"real public or official cohorts\",\n      \"passed\": true,\n      \"detail\": \"8\"\n    },\n    {\n      \"check\": \"locked benchmark evaluations\",\n      \"passed\": true,\n      \"detail\": \"8\"\n    },\n    {\n      \"check\": \"synthetic and wrong-domain fail closed\",\n      \"passed\": true,\n      \"detail\": \"0 production releases; 4 task cohorts pending\"\n    }\n  ],\n  \"applicable_modules\": 12,\n  \"authentic_research_packages\": 8,\n  \"full_task_specific_research_packages\": 5,\n  \"external_acquisition_required\": 4,\n  \"independent_external_site_complete\": 0,\n  \"release_eligible\": 0,\n  \"boundary\": \"Untouched checksum-locked public benchmarks are qualified for research; independent external-site validation and expert approval remain required for controlled release.\"\n}\n"
+    },
+    {
+      "check": "Step 170 runtime/reference compatibility",
+      "passed": true,
+      "detail": "_registered\\\": 17, \\\"licences_accepted\\\": 0}\"\n    },\n    {\n      \"check\": \"Step 170 UI page\",\n      \"passed\": true,\n      \"detail\": \"pages/239_Specialist_Runtime_Reference_Qualification.py\"\n    },\n    {\n      \"check\": \"Windows provisioning launchers\",\n      \"passed\": true,\n      \"detail\": \"4 launchers\"\n    }\n  ],\n  \"software_qualification_complete\": true,\n  \"external_runtime_installation_complete\": false,\n  \"production_reference_downloads_complete\": false,\n  \"licences_not_auto_accepted\": true\n}\n"
+    },
+    {
+      "check": "Version 14.3.0",
+      "passed": true,
+      "detail": "14.3.0"
+    },
+    {
+      "check": "Latest verifier routes Step 171",
+      "passed": true,
+      "detail": "VERIFY_STEP171_WINDOWS.bat"
+    },
+    {
+      "check": "80-module native assurance integration",
+      "passed": true,
+      "detail": "Step 171 assurance hook present"
+    }
+  ],
+  "applicable_modules": 12,
+  "software_framework_10of10": 12,
+  "authentic_research_packages": 8,
+  "real_public_or_official_cohorts": 8,
+  "locked_benchmarks": 8,
+  "external_acquisition_required": 4,
+  "independent_external_sites_complete": 0,
+  "release_eligible": 0,
+  "boundary": "Research benchmark qualification is not clinical, wet-lab, regulatory or independent-site approval."
+}

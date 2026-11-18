@@ -1,0 +1,29 @@
+{
+  "checks": {
+    "autoscaling": true,
+    "aws_reference": true,
+    "azure_reference": true,
+    "configurable_image": true,
+    "configurable_namespace": true,
+    "gcp_reference": true,
+    "helm_release": true,
+    "monitoring": true,
+    "multi_zone_topology": true,
+    "network_policy": true,
+    "persistent_storage": true,
+    "resource_limits": true,
+    "terraform_module": true
+  },
+  "classification": "static_cloud_readiness_qualification",
+  "controls_passed": 13,
+  "controls_total": 13,
+  "external_boundary": "Cloud-neutral IaC readiness is not cloud billing, regional traffic or production scale history.",
+  "observed_at": "2026-07-05T07:33:16.084265+00:00",
+  "passed": true,
+  "schema": "biointel.step42.cloud-iac.v1",
+  "terraform_files": [
+    "deploy/terraform/main.tf",
+    "deploy/terraform/modules/biointel/main.tf",
+    "deploy/terraform/variables.tf"
+  ]
+}

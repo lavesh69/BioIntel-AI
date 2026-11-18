@@ -1,0 +1,192 @@
+{
+  "artifacts": [
+    {
+      "artifact_id": "8a45625165bc7dfbcb7d",
+      "media_type": "text/csv",
+      "metadata": {
+        "engine": "transparent_physicochemical_blosum"
+      },
+      "path": "/mnt/data/step95_build/BioIntel-AI/reports/step95_quality10_self_test/workflow_runs/quality10_self_test-507195924059/step_01/protein_design_candidates.csv",
+      "role": "designed_protein_candidates",
+      "sha256": "21412c9f8132b342df25b7a7d73dcec6e2dc61afc75f60ad33a07272153fcfa4",
+      "size_bytes": 3410,
+      "step_id": "step_01"
+    },
+    {
+      "artifact_id": "2c6e989837550fefd378",
+      "media_type": "application/json",
+      "metadata": {},
+      "path": "/mnt/data/step95_build/BioIntel-AI/reports/step95_quality10_self_test/workflow_runs/quality10_self_test-507195924059/step_02/quality_gate.json",
+      "role": "quality_gate",
+      "sha256": "c7288323b6a30bcafff72777e0ead7b25f8bf600da6c5e954b39ae7dda67aa80",
+      "size_bytes": 108,
+      "step_id": "step_02"
+    },
+    {
+      "artifact_id": "182df645753012f4ee3b",
+      "media_type": "text/html",
+      "metadata": {},
+      "path": "/mnt/data/step95_build/BioIntel-AI/reports/step95_quality10_self_test/workflow_runs/quality10_self_test-507195924059/step_03/workflow_report.html",
+      "role": "report",
+      "sha256": "7d4181edfaca5ac61be22aabc4525b6a38d5e6492354754f6f48f448df8612e3",
+      "size_bytes": 902,
+      "step_id": "step_03"
+    }
+  ],
+  "duration_seconds": 0.757882,
+  "environment": {
+    "captured_at": "2026-07-09T14:52:43.905310+00:00",
+    "cpu_count": 56,
+    "environment_flags": {
+      "BIOINTEL_DATA_HOME": "",
+      "BIOINTEL_OFFLINE": "",
+      "BIOINTEL_TOOLS_HOME": ""
+    },
+    "hostname": "a617ca1737cc",
+    "implementation": "CPython",
+    "machine": "x86_64",
+    "packages": {
+      "biointel-ai": "not-installed",
+      "biopython": "1.86",
+      "fastapi": "0.128.2",
+      "numpy": "2.3.5",
+      "pandas": "2.2.3",
+      "plotly": "6.5.2",
+      "rdkit": "2025.9.4",
+      "scikit-learn": "1.8.0",
+      "scipy": "1.17.0",
+      "streamlit": "not-installed"
+    },
+    "platform": "Linux-4.4.0-x86_64-with-glibc2.41",
+    "processor": "",
+    "python": "3.13.5 (main, May  5 2026, 21:05:52) [GCC 14.2.0]",
+    "python_executable": "/opt/pyvenv/bin/python"
+  },
+  "finished_at": "2026-07-09T14:52:44.699831+00:00",
+  "implementation_readiness": 10.0,
+  "output_directory": "/mnt/data/step95_build/BioIntel-AI/reports/step95_quality10_self_test/workflow_runs/quality10_self_test-507195924059",
+  "parameters": {
+    "candidate_limit": 20,
+    "fail_on_quality_gate": false
+  },
+  "resumed": false,
+  "run_id": "quality10_self_test-507195924059",
+  "scientific_evidence_score": 0.0,
+  "started_at": "2026-07-09T14:52:43.941949+00:00",
+  "status": "completed",
+  "steps": [
+    {
+      "artifacts": [
+        {
+          "artifact_id": "8a45625165bc7dfbcb7d",
+          "media_type": "text/csv",
+          "metadata": {
+            "engine": "transparent_physicochemical_blosum"
+          },
+          "path": "/mnt/data/step95_build/BioIntel-AI/reports/step95_quality10_self_test/workflow_runs/quality10_self_test-507195924059/step_01/protein_design_candidates.csv",
+          "role": "designed_protein_candidates",
+          "sha256": "21412c9f8132b342df25b7a7d73dcec6e2dc61afc75f60ad33a07272153fcfa4",
+          "size_bytes": 3410,
+          "step_id": "step_01"
+        }
+      ],
+      "attempt": 1,
+      "block": "Protein design",
+      "command": [],
+      "depends_on": [],
+      "duration_seconds": 0.718322,
+      "error": "",
+      "exit_code": null,
+      "finished_at": "2026-07-09T14:52:44.668025+00:00",
+      "metrics": {
+        "candidates": 20,
+        "pareto_candidates": 20
+      },
+      "result_path": "/mnt/data/step95_build/BioIntel-AI/reports/step95_quality10_self_test/workflow_runs/quality10_self_test-507195924059/step_01/result.json",
+      "run_id": "quality10_self_test-507195924059",
+      "skipped_reason": "",
+      "started_at": "2026-07-09T14:52:43.949717+00:00",
+      "status": "completed",
+      "stderr_path": "/mnt/data/step95_build/BioIntel-AI/reports/step95_quality10_self_test/workflow_runs/quality10_self_test-507195924059/step_01/attempt_1.stderr.log",
+      "stdout_path": "/mnt/data/step95_build/BioIntel-AI/reports/step95_quality10_self_test/workflow_runs/quality10_self_test-507195924059/step_01/attempt_1.stdout.log",
+      "step_id": "step_01"
+    },
+    {
+      "artifacts": [
+        {
+          "artifact_id": "2c6e989837550fefd378",
+          "media_type": "application/json",
+          "metadata": {},
+          "path": "/mnt/data/step95_build/BioIntel-AI/reports/step95_quality10_self_test/workflow_runs/quality10_self_test-507195924059/step_02/quality_gate.json",
+          "role": "quality_gate",
+          "sha256": "c7288323b6a30bcafff72777e0ead7b25f8bf600da6c5e954b39ae7dda67aa80",
+          "size_bytes": 108,
+          "step_id": "step_02"
+        }
+      ],
+      "attempt": 1,
+      "block": "Quality gate",
+      "command": [],
+      "depends_on": [
+        "step_01"
+      ],
+      "duration_seconds": 0.001196,
+      "error": "",
+      "exit_code": null,
+      "finished_at": "2026-07-09T14:52:44.678147+00:00",
+      "metrics": {
+        "approved": true,
+        "blockers": [],
+        "minimum_score": 7.0,
+        "quality_score": 10.0,
+        "warnings": []
+      },
+      "result_path": "/mnt/data/step95_build/BioIntel-AI/reports/step95_quality10_self_test/workflow_runs/quality10_self_test-507195924059/step_02/result.json",
+      "run_id": "quality10_self_test-507195924059",
+      "skipped_reason": "",
+      "started_at": "2026-07-09T14:52:44.676951+00:00",
+      "status": "completed",
+      "stderr_path": "/mnt/data/step95_build/BioIntel-AI/reports/step95_quality10_self_test/workflow_runs/quality10_self_test-507195924059/step_02/attempt_1.stderr.log",
+      "stdout_path": "/mnt/data/step95_build/BioIntel-AI/reports/step95_quality10_self_test/workflow_runs/quality10_self_test-507195924059/step_02/attempt_1.stdout.log",
+      "step_id": "step_02"
+    },
+    {
+      "artifacts": [
+        {
+          "artifact_id": "182df645753012f4ee3b",
+          "media_type": "text/html",
+          "metadata": {},
+          "path": "/mnt/data/step95_build/BioIntel-AI/reports/step95_quality10_self_test/workflow_runs/quality10_self_test-507195924059/step_03/workflow_report.html",
+          "role": "report",
+          "sha256": "7d4181edfaca5ac61be22aabc4525b6a38d5e6492354754f6f48f448df8612e3",
+          "size_bytes": 902,
+          "step_id": "step_03"
+        }
+      ],
+      "attempt": 1,
+      "block": "Generate report",
+      "command": [],
+      "depends_on": [
+        "step_02"
+      ],
+      "duration_seconds": 0.001438,
+      "error": "",
+      "exit_code": null,
+      "finished_at": "2026-07-09T14:52:44.691666+00:00",
+      "metrics": {
+        "reported_steps": 2
+      },
+      "result_path": "/mnt/data/step95_build/BioIntel-AI/reports/step95_quality10_self_test/workflow_runs/quality10_self_test-507195924059/step_03/result.json",
+      "run_id": "quality10_self_test-507195924059",
+      "skipped_reason": "",
+      "started_at": "2026-07-09T14:52:44.690224+00:00",
+      "status": "completed",
+      "stderr_path": "/mnt/data/step95_build/BioIntel-AI/reports/step95_quality10_self_test/workflow_runs/quality10_self_test-507195924059/step_03/attempt_1.stderr.log",
+      "stdout_path": "/mnt/data/step95_build/BioIntel-AI/reports/step95_quality10_self_test/workflow_runs/quality10_self_test-507195924059/step_03/attempt_1.stdout.log",
+      "step_id": "step_03"
+    }
+  ],
+  "warnings": [],
+  "workflow_name": "quality10_self_test",
+  "workflow_sha256": "507195924059e979276be5112896247811acd16438a9e5e7c638ac0cd46db0f0"
+}

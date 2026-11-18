@@ -1,0 +1,53 @@
+{
+  "schema": "biointel.step132.final-validation.v1",
+  "version": "13.2.0",
+  "base": "Step 131",
+  "step132_verifier": {
+    "passed": 13,
+    "total": 13
+  },
+  "selected_regressions": {
+    "passed": 196,
+    "failed": 0,
+    "scope": "completed non-overlapping Step 105\u2013132 groups"
+  },
+  "runtime_pages": {
+    "passed": 24,
+    "total": 24,
+    "exceptions": 0
+  },
+  "visual_runtime": {
+    "catalog_passed": 30,
+    "catalog_total": 30,
+    "cross_module_combinations_passed": 450,
+    "cross_module_combinations_total": 450
+  },
+  "python": {
+    "files": 941,
+    "syntax_failures": []
+  },
+  "databases": {
+    "healthy": 36,
+    "total": 36,
+    "rows_checked": 108425,
+    "foreign_key_issues": 0,
+    "integrity_failures": [],
+    "byte_identical_to_step131": true
+  },
+  "locked_pages": {
+    "passed": 5,
+    "total": 5
+  },
+  "full_test_collection": {
+    "collected": 1040,
+    "full_suite_claimed_passed": false
+  },
+  "release_cleanliness": {
+    "pyc": 0,
+    "pycache": 0,
+    "sqlite_sidecars": 0,
+    "runtime_step132_database_bundled": false
+  },
+  "predicted_packaged_files": 3915,
+  "scientific_boundary": "No causal, diagnostic, synthetic-route, transmission, instrument-qualification, clinical, publication or regulatory claim is fabricated."
+}

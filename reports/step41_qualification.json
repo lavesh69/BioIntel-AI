@@ -1,0 +1,544 @@
+{
+  "all_external_evidence_qualified": false,
+  "all_implementation_targets_complete": true,
+  "api_smoke": [
+    {
+      "path": "/live",
+      "status_code": 200
+    },
+    {
+      "path": "/ready",
+      "status_code": 200
+    },
+    {
+      "path": "/operations/realworld-readiness",
+      "status_code": 200
+    },
+    {
+      "path": "/operations/realworld-evidence-summary",
+      "status_code": 200
+    },
+    {
+      "path": "/scientific/validation-depth",
+      "status_code": 200
+    },
+    {
+      "path": "/quality/engineering-readiness",
+      "status_code": 200
+    }
+  ],
+  "api_smoke_passed": 6,
+  "capabilities": [
+    {
+      "blockers": [
+        "Import a sponsor-signed production R&D deployment dossier covering at least 90 days."
+      ],
+      "boundary": "Repository controls can be 10/10; external approvals, customers and operating history require authentic third-party evidence.",
+      "evidence_score": 0.0,
+      "evidence_status": "external_evidence_required",
+      "failed_controls": [],
+      "implementation_score": 10.0,
+      "implementation_status": "complete",
+      "key": "pharma_rnd_deployment",
+      "label": "Real Pharma R&D Deployment Evidence",
+      "passed_controls": [
+        "Evidence registry and hard qualification rules",
+        "Real-world evidence policy",
+        "Auditable import template",
+        "Qualification and registration tooling",
+        "Automated controls test"
+      ],
+      "qualifying_evidence": 0
+    },
+    {
+      "blockers": [
+        "Import approved clinical protocol, ethics decision and production operating evidence."
+      ],
+      "boundary": "Repository controls can be 10/10; external approvals, customers and operating history require authentic third-party evidence.",
+      "evidence_score": 0.0,
+      "evidence_status": "external_evidence_required",
+      "failed_controls": [],
+      "implementation_score": 10.0,
+      "implementation_status": "complete",
+      "key": "clinical_deployment",
+      "label": "Real Clinical Deployment Evidence",
+      "passed_controls": [
+        "Evidence registry and hard qualification rules",
+        "Real-world evidence policy",
+        "Auditable import template",
+        "Qualification and registration tooling",
+        "Automated controls test"
+      ],
+      "qualifying_evidence": 0
+    },
+    {
+      "blockers": [
+        "Register a DOI-linked DTI publication with code, data and reproducibility bundle."
+      ],
+      "boundary": "Repository controls can be 10/10; external approvals, customers and operating history require authentic third-party evidence.",
+      "evidence_score": 0.0,
+      "evidence_status": "external_evidence_required",
+      "failed_controls": [],
+      "implementation_score": 10.0,
+      "implementation_status": "complete",
+      "key": "publication_grade_dti",
+      "label": "Publication-Grade DTI Evidence",
+      "passed_controls": [
+        "Evidence registry and hard qualification rules",
+        "Real-world evidence policy",
+        "Auditable import template",
+        "Qualification and registration tooling",
+        "Automated controls test"
+      ],
+      "qualifying_evidence": 0
+    },
+    {
+      "blockers": [
+        "Register accepted peer-reviewed validation and at least two independent reviews."
+      ],
+      "boundary": "Repository controls can be 10/10; external approvals, customers and operating history require authentic third-party evidence.",
+      "evidence_score": 0.0,
+      "evidence_status": "external_evidence_required",
+      "failed_controls": [],
+      "implementation_score": 10.0,
+      "implementation_status": "complete",
+      "key": "peer_reviewed_validation",
+      "label": "Peer-Reviewed Validation Evidence",
+      "passed_controls": [
+        "Evidence registry and hard qualification rules",
+        "Real-world evidence policy",
+        "Auditable import template",
+        "Qualification and registration tooling",
+        "Automated controls test"
+      ],
+      "qualifying_evidence": 0
+    },
+    {
+      "blockers": [
+        "Import a verifiable regulator decision letter and approved intended-use identifier."
+      ],
+      "boundary": "Repository controls can be 10/10; external approvals, customers and operating history require authentic third-party evidence.",
+      "evidence_score": 0.0,
+      "evidence_status": "external_evidence_required",
+      "failed_controls": [],
+      "implementation_score": 10.0,
+      "implementation_status": "complete",
+      "key": "regulatory_approval",
+      "label": "Regulatory Approval Evidence",
+      "passed_controls": [
+        "Evidence registry and hard qualification rules",
+        "Real-world evidence policy",
+        "Auditable import template",
+        "Qualification and registration tooling",
+        "Automated controls test"
+      ],
+      "qualifying_evidence": 0
+    },
+    {
+      "blockers": [
+        "Record at least 180 days of validated operation, training, deviations and CAPA metrics."
+      ],
+      "boundary": "Repository controls can be 10/10; external approvals, customers and operating history require authentic third-party evidence.",
+      "evidence_score": 0.0,
+      "evidence_status": "external_evidence_required",
+      "failed_controls": [],
+      "implementation_score": 10.0,
+      "implementation_status": "complete",
+      "key": "gxp_operating_history",
+      "label": "Completed GxP Operating History",
+      "passed_controls": [
+        "Evidence registry and hard qualification rules",
+        "Real-world evidence policy",
+        "Auditable import template",
+        "Qualification and registration tooling",
+        "Automated controls test"
+      ],
+      "qualifying_evidence": 0
+    },
+    {
+      "blockers": [
+        "Import an authority inspection report and evidence that critical findings are closed."
+      ],
+      "boundary": "Repository controls can be 10/10; external approvals, customers and operating history require authentic third-party evidence.",
+      "evidence_score": 0.0,
+      "evidence_status": "external_evidence_required",
+      "failed_controls": [],
+      "implementation_score": 10.0,
+      "implementation_status": "complete",
+      "key": "regulatory_inspection",
+      "label": "Successful Regulatory Inspection History",
+      "passed_controls": [
+        "Evidence registry and hard qualification rules",
+        "Real-world evidence policy",
+        "Auditable import template",
+        "Qualification and registration tooling",
+        "Automated controls test"
+      ],
+      "qualifying_evidence": 0
+    },
+    {
+      "blockers": [
+        "Import at least 90 days of signed SLA telemetry and incident/postmortem evidence."
+      ],
+      "boundary": "Repository controls can be 10/10; external approvals, customers and operating history require authentic third-party evidence.",
+      "evidence_score": 0.0,
+      "evidence_status": "external_evidence_required",
+      "failed_controls": [],
+      "implementation_score": 10.0,
+      "implementation_status": "complete",
+      "key": "production_sla_history",
+      "label": "Production SLA Operating History",
+      "passed_controls": [
+        "Evidence registry and hard qualification rules",
+        "Real-world evidence policy",
+        "Auditable import template",
+        "Qualification and registration tooling",
+        "Automated controls test"
+      ],
+      "qualifying_evidence": 0
+    },
+    {
+      "blockers": [
+        "Import 90-day production evidence for at least three independent tenants with zero isolation breaches."
+      ],
+      "boundary": "Repository controls can be 10/10; external approvals, customers and operating history require authentic third-party evidence.",
+      "evidence_score": 0.0,
+      "evidence_status": "external_evidence_required",
+      "failed_controls": [],
+      "implementation_score": 10.0,
+      "implementation_status": "complete",
+      "key": "multitenant_production",
+      "label": "Real Multi-Tenant Production History",
+      "passed_controls": [
+        "Evidence registry and hard qualification rules",
+        "Real-world evidence policy",
+        "Auditable import template",
+        "Qualification and registration tooling",
+        "Automated controls test"
+      ],
+      "qualifying_evidence": 0
+    },
+    {
+      "blockers": [
+        "Import 90-day multi-zone Kubernetes operating, upgrade and rollback evidence."
+      ],
+      "boundary": "Repository controls can be 10/10; external approvals, customers and operating history require authentic third-party evidence.",
+      "evidence_score": 0.0,
+      "evidence_status": "external_evidence_required",
+      "failed_controls": [],
+      "implementation_score": 10.0,
+      "implementation_status": "complete",
+      "key": "kubernetes_production",
+      "label": "Real Kubernetes Production History",
+      "passed_controls": [
+        "Evidence registry and hard qualification rules",
+        "Real-world evidence policy",
+        "Auditable import template",
+        "Qualification and registration tooling",
+        "Automated controls test"
+      ],
+      "qualifying_evidence": 0
+    },
+    {
+      "blockers": [
+        "Import cloud billing/telemetry evidence for regional autoscaling and at least one million requests."
+      ],
+      "boundary": "Repository controls can be 10/10; external approvals, customers and operating history require authentic third-party evidence.",
+      "evidence_score": 0.0,
+      "evidence_status": "external_evidence_required",
+      "failed_controls": [],
+      "implementation_score": 10.0,
+      "implementation_status": "complete",
+      "key": "cloud_scale",
+      "label": "Real Cloud Scale Evidence",
+      "passed_controls": [
+        "Evidence registry and hard qualification rules",
+        "Real-world evidence policy",
+        "Auditable import template",
+        "Qualification and registration tooling",
+        "Automated controls test"
+      ],
+      "qualifying_evidence": 0
+    },
+    {
+      "blockers": [
+        "Import a 24-hour production-like load run with latency, error and saturation metrics."
+      ],
+      "boundary": "Repository controls can be 10/10; external approvals, customers and operating history require authentic third-party evidence.",
+      "evidence_score": 0.0,
+      "evidence_status": "external_evidence_required",
+      "failed_controls": [],
+      "implementation_score": 10.0,
+      "implementation_status": "complete",
+      "key": "sustained_high_load",
+      "label": "Sustained High-Load Production Evidence",
+      "passed_controls": [
+        "Evidence registry and hard qualification rules",
+        "Real-world evidence policy",
+        "Auditable import template",
+        "Qualification and registration tooling",
+        "Automated controls test"
+      ],
+      "qualifying_evidence": 0
+    },
+    {
+      "blockers": [
+        "Import a completed restore drill with measured RTO/RPO and checksum verification."
+      ],
+      "boundary": "Repository controls can be 10/10; external approvals, customers and operating history require authentic third-party evidence.",
+      "evidence_score": 0.0,
+      "evidence_status": "external_evidence_required",
+      "failed_controls": [],
+      "implementation_score": 10.0,
+      "implementation_status": "complete",
+      "key": "disaster_recovery_drill",
+      "label": "Disaster-Recovery Drill Evidence",
+      "passed_controls": [
+        "Evidence registry and hard qualification rules",
+        "Real-world evidence policy",
+        "Auditable import template",
+        "Qualification and registration tooling",
+        "Automated controls test"
+      ],
+      "qualifying_evidence": 0
+    },
+    {
+      "blockers": [
+        "Import 90-day availability history and a successful multi-zone failover event."
+      ],
+      "boundary": "Repository controls can be 10/10; external approvals, customers and operating history require authentic third-party evidence.",
+      "evidence_score": 0.0,
+      "evidence_status": "external_evidence_required",
+      "failed_controls": [],
+      "implementation_score": 10.0,
+      "implementation_status": "complete",
+      "key": "high_availability",
+      "label": "High-Availability Production Evidence",
+      "passed_controls": [
+        "Evidence registry and hard qualification rules",
+        "Real-world evidence policy",
+        "Auditable import template",
+        "Qualification and registration tooling",
+        "Automated controls test"
+      ],
+      "qualifying_evidence": 0
+    },
+    {
+      "blockers": [
+        "Import 180-day billing/support history for at least three paying customers."
+      ],
+      "boundary": "Repository controls can be 10/10; external approvals, customers and operating history require authentic third-party evidence.",
+      "evidence_score": 0.0,
+      "evidence_status": "external_evidence_required",
+      "failed_controls": [],
+      "implementation_score": 10.0,
+      "implementation_status": "complete",
+      "key": "commercial_saas_history",
+      "label": "Commercial SaaS Operating History",
+      "passed_controls": [
+        "Evidence registry and hard qualification rules",
+        "Real-world evidence policy",
+        "Auditable import template",
+        "Qualification and registration tooling",
+        "Automated controls test"
+      ],
+      "qualifying_evidence": 0
+    },
+    {
+      "blockers": [
+        "Import signed external enterprise acceptance against measurable success criteria."
+      ],
+      "boundary": "Repository controls can be 10/10; external approvals, customers and operating history require authentic third-party evidence.",
+      "evidence_score": 0.0,
+      "evidence_status": "external_evidence_required",
+      "failed_controls": [],
+      "implementation_score": 10.0,
+      "implementation_status": "complete",
+      "key": "enterprise_customer_validation",
+      "label": "Enterprise Customer Validation",
+      "passed_controls": [
+        "Evidence registry and hard qualification rules",
+        "Real-world evidence policy",
+        "Auditable import template",
+        "Qualification and registration tooling",
+        "Automated controls test"
+      ],
+      "qualifying_evidence": 0
+    },
+    {
+      "blockers": [
+        "Import signed pharmaceutical customer acceptance and scientific decision-use evidence."
+      ],
+      "boundary": "Repository controls can be 10/10; external approvals, customers and operating history require authentic third-party evidence.",
+      "evidence_score": 0.0,
+      "evidence_status": "external_evidence_required",
+      "failed_controls": [],
+      "implementation_score": 10.0,
+      "implementation_status": "complete",
+      "key": "pharma_customer_validation",
+      "label": "Pharmaceutical Customer Validation",
+      "passed_controls": [
+        "Evidence registry and hard qualification rules",
+        "Real-world evidence policy",
+        "Auditable import template",
+        "Qualification and registration tooling",
+        "Automated controls test"
+      ],
+      "qualifying_evidence": 0
+    },
+    {
+      "blockers": [
+        "Import a sponsor-signed production R&D deployment dossier covering at least 90 days.",
+        "Import approved clinical protocol, ethics decision and production operating evidence.",
+        "Register a DOI-linked DTI publication with code, data and reproducibility bundle.",
+        "Register accepted peer-reviewed validation and at least two independent reviews.",
+        "Import a verifiable regulator decision letter and approved intended-use identifier.",
+        "Record at least 180 days of validated operation, training, deviations and CAPA metrics.",
+        "Import an authority inspection report and evidence that critical findings are closed.",
+        "Import at least 90 days of signed SLA telemetry and incident/postmortem evidence.",
+        "Import 90-day production evidence for at least three independent tenants with zero isolation breaches.",
+        "Import 90-day multi-zone Kubernetes operating, upgrade and rollback evidence.",
+        "Import cloud billing/telemetry evidence for regional autoscaling and at least one million requests.",
+        "Import a 24-hour production-like load run with latency, error and saturation metrics.",
+        "Import a completed restore drill with measured RTO/RPO and checksum verification.",
+        "Import 90-day availability history and a successful multi-zone failover event.",
+        "Import 180-day billing/support history for at least three paying customers.",
+        "Import signed external enterprise acceptance against measurable success criteria.",
+        "Import signed pharmaceutical customer acceptance and scientific decision-use evidence."
+      ],
+      "boundary": "Repository controls can be 10/10; external approvals, customers and operating history require authentic third-party evidence.",
+      "evidence_score": 0.0,
+      "evidence_status": "external_evidence_required",
+      "failed_controls": [],
+      "implementation_score": 10.0,
+      "implementation_status": "complete",
+      "key": "overall_platform_maturity",
+      "label": "Real-World Overall Platform Maturity",
+      "passed_controls": [
+        "Evidence registry and hard qualification rules",
+        "Real-world evidence policy",
+        "Auditable import template",
+        "Qualification and registration tooling",
+        "Automated controls test"
+      ],
+      "qualifying_evidence": 0
+    }
+  ],
+  "certification_boundary": "Repository implementation readiness is not regulatory approval, customer acceptance, publication, or production operating history. External evidence remains 0/10 until authentic independently attested records are imported.",
+  "database_health": {
+    "database_count": 18,
+    "health_percent": 100.0,
+    "healthy_count": 18,
+    "total_indices": 181,
+    "total_rows": 102002
+  },
+  "evidence_average": 0.0,
+  "evidence_integrity": {
+    "failures": [],
+    "ok": true
+  },
+  "evidence_summary": {
+    "area_counts": {},
+    "areas_with_records": 0,
+    "artifacts": 0,
+    "attestations": 0,
+    "entities": 0,
+    "independent_approvals": 0,
+    "metrics": 0,
+    "qualifying_areas": 0,
+    "qualifying_records": 0,
+    "records": 0
+  },
+  "generated_at": "2026-07-05T07:05:27.834831+00:00",
+  "implementation_average": 10.0,
+  "python_compilation": "passed",
+  "requested_areas": 18,
+  "schema": "biointel.step41.qualification.v1",
+  "semantic_visual_passed": 11,
+  "semantic_visual_scenarios": [
+    {
+      "json_ok": true,
+      "png_ok": true,
+      "scenario": "compliance-desktop"
+    },
+    {
+      "json_ok": true,
+      "png_ok": true,
+      "scenario": "data-quality-desktop"
+    },
+    {
+      "json_ok": true,
+      "png_ok": true,
+      "scenario": "dti-predictor-desktop"
+    },
+    {
+      "json_ok": true,
+      "png_ok": true,
+      "scenario": "experiment-registry-desktop"
+    },
+    {
+      "json_ok": true,
+      "png_ok": true,
+      "scenario": "home-desktop"
+    },
+    {
+      "json_ok": true,
+      "png_ok": true,
+      "scenario": "home-mobile"
+    },
+    {
+      "json_ok": true,
+      "png_ok": true,
+      "scenario": "model-training-desktop"
+    },
+    {
+      "json_ok": true,
+      "png_ok": true,
+      "scenario": "quality-desktop"
+    },
+    {
+      "json_ok": true,
+      "png_ok": true,
+      "scenario": "realworld-operations-desktop"
+    },
+    {
+      "json_ok": true,
+      "png_ok": true,
+      "scenario": "scientific-evidence-desktop"
+    },
+    {
+      "json_ok": true,
+      "png_ok": true,
+      "scenario": "studio-desktop"
+    }
+  ],
+  "test_suites": [
+    {
+      "errors": 0,
+      "failures": 0,
+      "file": "reports/step41_operations_tests.xml",
+      "skipped": 0,
+      "tests": 23,
+      "time_seconds": 8.188
+    },
+    {
+      "errors": 0,
+      "failures": 0,
+      "file": "reports/step41_legacy_tests.xml",
+      "skipped": 0,
+      "tests": 51,
+      "time_seconds": 25.869
+    },
+    {
+      "errors": 0,
+      "failures": 0,
+      "file": "reports/step41_database_tests.xml",
+      "skipped": 0,
+      "tests": 22,
+      "time_seconds": 19.156
+    }
+  ],
+  "tests_failed": 0,
+  "tests_total": 96,
+  "version": "4.1.0"
+}

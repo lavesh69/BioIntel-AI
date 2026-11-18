@@ -1,0 +1,43 @@
+{
+  "checks": [
+    {
+      "check": "required_files",
+      "detail": "[]",
+      "passed": true
+    },
+    {
+      "check": "public_benchmark_models",
+      "detail": "5/5 verified",
+      "passed": true
+    },
+    {
+      "check": "synthetic_model_quarantine",
+      "detail": "23 synthetic models quarantined; unsafe defaults=0",
+      "passed": true
+    },
+    {
+      "check": "provider_source_contracts",
+      "detail": "14/14 descriptors verified; 7 have local checksummed assets",
+      "passed": true
+    },
+    {
+      "check": "module_authenticity_contracts",
+      "detail": "80/80 software authenticity contracts at 10/10",
+      "passed": true
+    },
+    {
+      "check": "native_module_integration",
+      "detail": "4/4 module executions passed",
+      "passed": true
+    },
+    {
+      "check": "compile_scan",
+      "detail": "6 Step 162 source files compiled",
+      "passed": true
+    }
+  ],
+  "external_claims_not_inferred": true,
+  "public_benchmark_is_not_domain_validation": true,
+  "schema": "biointel.step162.validation.v1",
+  "status": "passed"
+}

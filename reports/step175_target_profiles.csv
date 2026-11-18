@@ -1,0 +1,4 @@
+profile_id,label,minimum_ram_gb,recommended_ram_gb,minimum_free_storage_gb,recommended_free_storage_gb,gpu_required,wsl2_required,notes,minimum_gpu_vram_gb,recommended_gpu_vram_gb
+cpu-standard,CPU standard research workstation,32,64,250,1000,False,True,"Suitable for most genomics, microbiome and standard analytical modules; large references may need more storage.",,
+gpu-scientific,GPU scientific workstation,64,128,1000,4000,True,True,"Required for full pathology, imaging, protein design, ColabFold and large local-model qualification.",16.0,24.0
+reference-server,Production reference-data server,64,128,4000,8000,False,True,"Recommended when qualifying every large reference group, including ColabFold and gnomAD.",,

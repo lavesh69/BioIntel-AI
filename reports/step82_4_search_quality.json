@@ -1,0 +1,230 @@
+{
+  "case_count": 42,
+  "cases": [
+    {
+      "actual": "sequence_analyzer",
+      "expected": "sequence_analyzer",
+      "query": "sequece"
+    },
+    {
+      "actual": "sequence_analyzer",
+      "expected": "sequence_analyzer",
+      "query": "seqence"
+    },
+    {
+      "actual": "sequence_analyzer",
+      "expected": "sequence_analyzer",
+      "query": "sequnce"
+    },
+    {
+      "actual": "transcriptomics_expression",
+      "expected": "transcriptomics_expression",
+      "query": "transriptomics"
+    },
+    {
+      "actual": "transcriptomics_expression",
+      "expected": "transcriptomics_expression",
+      "query": "transcripomics"
+    },
+    {
+      "actual": "protein_annotation",
+      "expected": "protein_annotation",
+      "query": "protien"
+    },
+    {
+      "actual": "protein_annotation",
+      "expected": "protein_annotation",
+      "query": "proteimics"
+    },
+    {
+      "actual": "metagenomics_pipeline",
+      "expected": "metagenomics_pipeline",
+      "query": "metgenomics"
+    },
+    {
+      "actual": "metagenomics_pipeline",
+      "expected": "metagenomics_pipeline",
+      "query": "metagenmoics"
+    },
+    {
+      "actual": "variant_annotation",
+      "expected": "variant_annotation",
+      "query": "varient"
+    },
+    {
+      "actual": "variant_annotation",
+      "expected": "variant_annotation",
+      "query": "vairant"
+    },
+    {
+      "actual": "admet_discovery",
+      "expected": "admet_discovery",
+      "query": "admat"
+    },
+    {
+      "actual": "primer_crispr_codon",
+      "expected": "primer_crispr_codon",
+      "query": "crisprr"
+    },
+    {
+      "actual": "structural_bioinformatics",
+      "expected": "structural_bioinformatics",
+      "query": "strcuture"
+    },
+    {
+      "actual": "structural_bioinformatics",
+      "expected": "structural_bioinformatics",
+      "query": "structral"
+    },
+    {
+      "actual": "single_cell_heterogeneity",
+      "expected": "single_cell_heterogeneity",
+      "query": "singel cell"
+    },
+    {
+      "actual": "single_cell_heterogeneity",
+      "expected": "single_cell_heterogeneity",
+      "query": "singlecell"
+    },
+    {
+      "actual": "dti_predictor",
+      "expected": "dti_predictor",
+      "query": "durg target"
+    },
+    {
+      "actual": "dti_predictor",
+      "expected": "dti_predictor",
+      "query": "drug traget"
+    },
+    {
+      "actual": "fastq_genomics_qc",
+      "expected": "fastq_genomics_qc",
+      "query": "fastqc"
+    },
+    {
+      "actual": "bioinformatics_capabilities",
+      "expected": "bioinformatics_capabilities",
+      "query": "bioinfomatics"
+    },
+    {
+      "actual": "bioinformatics_capabilities",
+      "expected": "bioinformatics_capabilities",
+      "query": "bioinformatcs"
+    },
+    {
+      "actual": "wetlab_biotechnology",
+      "expected": "wetlab_biotechnology",
+      "query": "qpcrr"
+    },
+    {
+      "actual": "document_intelligence",
+      "expected": "document_intelligence",
+      "query": "documention"
+    },
+    {
+      "actual": "document_intelligence",
+      "expected": "document_intelligence",
+      "query": "docmentation"
+    },
+    {
+      "actual": "workflow_dashboard",
+      "expected": "workflow_dashboard",
+      "query": "worklfow"
+    },
+    {
+      "actual": "workflow_dashboard",
+      "expected": "workflow_dashboard",
+      "query": "worfklow"
+    },
+    {
+      "actual": "scientific_release_gate",
+      "expected": "scientific_release_gate",
+      "query": "relese"
+    },
+    {
+      "actual": "drug_analyzer",
+      "expected": "drug_analyzer",
+      "query": "moleclue"
+    },
+    {
+      "actual": "discovery_command_center",
+      "expected": "discovery_command_center",
+      "query": "discoverey"
+    },
+    {
+      "actual": "fastq_genomics_qc",
+      "expected": "fastq_genomics_qc",
+      "query": "genmoics"
+    },
+    {
+      "actual": "microbiology_metagenomics",
+      "expected": "microbiology_metagenomics",
+      "query": "microbiom"
+    },
+    {
+      "actual": "cancer_genomics",
+      "expected": "cancer_genomics",
+      "query": "cancergenomics"
+    },
+    {
+      "actual": "sequence_comparison",
+      "expected": "sequence_comparison",
+      "query": "aligment"
+    },
+    {
+      "actual": "sequence_analyzer",
+      "expected": "sequence_analyzer",
+      "query": "analizer"
+    },
+    {
+      "actual": "dataset_registry",
+      "expected": "dataset_registry",
+      "query": "datset"
+    },
+    {
+      "actual": "model_training",
+      "expected": "model_training",
+      "query": "modle training"
+    },
+    {
+      "actual": "ppi_interaction_ml",
+      "expected": "ppi_interaction_ml",
+      "query": "potein interaction"
+    },
+    {
+      "actual": "protein_annotation",
+      "expected": "protein_annotation",
+      "query": "mass spectrometery"
+    },
+    {
+      "actual": "lab_analytics_command_center",
+      "expected": "lab_analytics_command_center",
+      "query": "flow cytometery"
+    },
+    {
+      "actual": "connected_data_explorer",
+      "expected": "connected_data_explorer",
+      "query": "clincal trials"
+    },
+    {
+      "actual": "connected_data_explorer",
+      "expected": "connected_data_explorer",
+      "query": "pubmed serch"
+    }
+  ],
+  "cold_mean_ms_per_query": 76.78,
+  "cold_total_ms": 3224.764,
+  "metrics": {
+    "cases": 42,
+    "catalogue_recall": 1.0,
+    "mean_reciprocal_rank": 1.0,
+    "passed": 42,
+    "top1_accuracy": 1.0,
+    "top3_accuracy": 1.0
+  },
+  "rating": 10.0,
+  "schema": "biointel.step82_4.search_quality.v1",
+  "version": "8.2.6",
+  "warm_mean_ms_per_query": 0.197,
+  "warm_total_ms": 8.294
+}

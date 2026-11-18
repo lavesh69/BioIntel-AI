@@ -1,0 +1,45 @@
+{
+  "checks": [
+    {
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "/mnt/data/step161_work/BioIntel-AI/scripts/step161_build_upgrade_assets.py",
+        "--root",
+        "/mnt/data/step161_work/BioIntel-AI"
+      ],
+      "passed": true,
+      "return_code": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\n  \"development_references\": {\n    \"all_development_references_ready\": true,\n    \"confirmatory_use_requires_replacement\": true,\n    \"development_qualified\": 257,\n    \"production_references_not_inferred\": true,\n    \"required_assets\": 257,\n    \"schema\": \"biointel.step161.development-reference-summary.v1\"\n  },\n  \"external_release_not_inferred\": true,\n  \"module_upgrades\": {\n    \"development_references_10_of_10\": 80,\n    \"execution_paths_10_of_10\": 80,\n    \"modules\": 80,\n    \"real_world_release_eligible\": 0,\n    \"schema\": \"biointel.step161.portfolio-upgrade-summary.v1\",\n    \"software_upgrade_and_external_validation_are_separate\": true,\n    \"step161_10_of_10\": 80,\n    \"validation_protocols_10_of_10\": 80\n  },\n  \"modules\": 80,\n  \"reference_files_written\": 514,\n  \"runtime_recipes\": {\n    \"all_engines_have_managed_paths\": true,\n    \"complete_recipes\": 53,\n    \"external_engines\": 53,\n    \"installed_tools_are_detected_separately\": true,\n    \"licences_models_and_databases_are_not_inferred\": true,\n    \"protected_execution_plans\": 53,\n    \"schema\": \"biointel.step161.runtime-recipe-summary.v1\"\n  },\n  \"schema\": \"biointel.step161.upgrade-assets.v1\",\n  \"validation_protocols\": {\n    \"all_protocols_ready\": true,\n    \"external_evidence_attached\": 0,\n    \"external_release_not_inferred\": true,\n    \"modules\": 80,\n    \"protocol_ready\": 80,\n    \"schema\": \"biointel.step161.validation-protocol-summary.v1\"\n  },\n  \"validation_protocols_written\": 80\n}\n"
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "/mnt/data/step161_work/BioIntel-AI/scripts/step161_runtime_manager.py",
+        "--root",
+        "/mnt/data/step161_work/BioIntel-AI",
+        "--fail-if-recipes-missing"
+      ],
+      "passed": true,
+      "return_code": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\n  \"all_provisioning_paths_ready\": true,\n  \"complete_recipes\": 53,\n  \"engines\": 53,\n  \"installed\": 0,\n  \"installed_status_is_environment_specific\": true,\n  \"manual_action_required\": 8,\n  \"no_automatic_acceptance_of_external_licences\": true,\n  \"schema\": \"biointel.step161.runtime-manager.v1\"\n}\n"
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "/mnt/data/step161_work/BioIntel-AI/scripts/step161_validate_upgrade.py",
+        "--root",
+        "/mnt/data/step161_work/BioIntel-AI",
+        "--quick"
+      ],
+      "passed": true,
+      "return_code": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\n  \"checks\": [\n    {\n      \"check\": \"runtime_recipes\",\n      \"detail\": \"53/53 complete\",\n      \"passed\": true\n    },\n    {\n      \"check\": \"development_reference_kits\",\n      \"detail\": \"257/257 qualified for development\",\n      \"passed\": true\n    },\n    {\n      \"check\": \"validation_protocols\",\n      \"detail\": \"80/80 ready\",\n      \"passed\": true\n    },\n    {\n      \"check\": \"all_module_upgrade_score\",\n      \"detail\": \"80/80 at 10/10\",\n      \"passed\": true\n    },\n    {\n      \"check\": \"native_execution\",\n      \"detail\": \"4/4 module executions passed\",\n      \"passed\": true\n    },\n    {\n      \"check\": \"compile_scan\",\n      \"detail\": \"5 Step 161 source files compiled\",\n      \"passed\": true\n    }\n  ],\n  \"external_claims_not_inferred\": true,\n  \"schema\": \"biointel.step161.validation.v1\",\n  \"status\": \"passed\"\n}\n"
+    }
+  ],
+  "external_release_not_inferred": true,
+  "schema": "biointel.step161.release-doctor.v1",
+  "status": "passed"
+}

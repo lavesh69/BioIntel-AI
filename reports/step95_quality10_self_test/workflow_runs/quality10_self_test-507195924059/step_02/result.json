@@ -1,0 +1,39 @@
+{
+  "artifacts": [
+    {
+      "artifact_id": "2c6e989837550fefd378",
+      "media_type": "application/json",
+      "metadata": {},
+      "path": "/mnt/data/step95_build/BioIntel-AI/reports/step95_quality10_self_test/workflow_runs/quality10_self_test-507195924059/step_02/quality_gate.json",
+      "role": "quality_gate",
+      "sha256": "c7288323b6a30bcafff72777e0ead7b25f8bf600da6c5e954b39ae7dda67aa80",
+      "size_bytes": 108,
+      "step_id": "step_02"
+    }
+  ],
+  "attempt": 1,
+  "block": "Quality gate",
+  "command": [],
+  "depends_on": [
+    "step_01"
+  ],
+  "duration_seconds": 0.001196,
+  "error": "",
+  "exit_code": null,
+  "finished_at": "2026-07-09T14:52:44.678147+00:00",
+  "metrics": {
+    "approved": true,
+    "blockers": [],
+    "minimum_score": 7.0,
+    "quality_score": 10.0,
+    "warnings": []
+  },
+  "result_path": "/mnt/data/step95_build/BioIntel-AI/reports/step95_quality10_self_test/workflow_runs/quality10_self_test-507195924059/step_02/result.json",
+  "run_id": "quality10_self_test-507195924059",
+  "skipped_reason": "",
+  "started_at": "2026-07-09T14:52:44.676951+00:00",
+  "status": "completed",
+  "stderr_path": "/mnt/data/step95_build/BioIntel-AI/reports/step95_quality10_self_test/workflow_runs/quality10_self_test-507195924059/step_02/attempt_1.stderr.log",
+  "stdout_path": "/mnt/data/step95_build/BioIntel-AI/reports/step95_quality10_self_test/workflow_runs/quality10_self_test-507195924059/step_02/attempt_1.stdout.log",
+  "step_id": "step_02"
+}

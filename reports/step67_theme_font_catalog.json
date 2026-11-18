@@ -1,0 +1,1202 @@
+{
+  "font_count": 11,
+  "fonts": {
+    "Aptos": {
+      "css_stack": "Aptos, \"Segoe UI\", Calibri, sans-serif",
+      "metrics": {
+        "body_line_height": 1.55,
+        "body_weight": 400,
+        "heading_tracking": "-.018em",
+        "heading_weight": 700,
+        "navigation_weight": 600,
+        "table_scale": 1.0
+      }
+    },
+    "Arial": {
+      "css_stack": "Arial, Helvetica, sans-serif",
+      "metrics": {
+        "body_line_height": 1.5,
+        "body_weight": 400,
+        "heading_tracking": "-.012em",
+        "heading_weight": 700,
+        "navigation_weight": 600,
+        "table_scale": 0.98
+      }
+    },
+    "Century Gothic": {
+      "css_stack": "\"Century Gothic\", Avenir, Futura, \"Trebuchet MS\", sans-serif",
+      "metrics": {
+        "body_line_height": 1.55,
+        "body_weight": 400,
+        "heading_tracking": "-.035em",
+        "heading_weight": 700,
+        "navigation_weight": 600,
+        "table_scale": 0.92
+      }
+    },
+    "Courier New": {
+      "css_stack": "\"Courier New\", Courier, monospace",
+      "metrics": {
+        "body_line_height": 1.48,
+        "body_weight": 400,
+        "heading_tracking": "-.025em",
+        "heading_weight": 700,
+        "navigation_weight": 700,
+        "table_scale": 0.9
+      }
+    },
+    "Georgia": {
+      "css_stack": "Georgia, \"Times New Roman\", serif",
+      "metrics": {
+        "body_line_height": 1.62,
+        "body_weight": 400,
+        "heading_tracking": "-.012em",
+        "heading_weight": 700,
+        "navigation_weight": 600,
+        "table_scale": 1.0
+      }
+    },
+    "Inter": {
+      "css_stack": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+      "metrics": {
+        "body_line_height": 1.55,
+        "body_weight": 400,
+        "heading_tracking": "-.025em",
+        "heading_weight": 700,
+        "navigation_weight": 600,
+        "table_scale": 1.0
+      }
+    },
+    "Segoe UI": {
+      "css_stack": "\"Segoe UI\", Tahoma, Geneva, sans-serif",
+      "metrics": {
+        "body_line_height": 1.52,
+        "body_weight": 400,
+        "heading_tracking": "-.018em",
+        "heading_weight": 700,
+        "navigation_weight": 600,
+        "table_scale": 1.0
+      }
+    },
+    "Tahoma": {
+      "css_stack": "Tahoma, Verdana, sans-serif",
+      "metrics": {
+        "body_line_height": 1.5,
+        "body_weight": 400,
+        "heading_tracking": "-.012em",
+        "heading_weight": 700,
+        "navigation_weight": 600,
+        "table_scale": 0.96
+      }
+    },
+    "Times New Roman": {
+      "css_stack": "\"Times New Roman\", Times, serif",
+      "metrics": {
+        "body_line_height": 1.58,
+        "body_weight": 400,
+        "heading_tracking": "0em",
+        "heading_weight": 700,
+        "navigation_weight": 600,
+        "table_scale": 1.02
+      }
+    },
+    "Trebuchet MS": {
+      "css_stack": "\"Trebuchet MS\", \"Segoe UI\", sans-serif",
+      "metrics": {
+        "body_line_height": 1.56,
+        "body_weight": 400,
+        "heading_tracking": "-.020em",
+        "heading_weight": 700,
+        "navigation_weight": 600,
+        "table_scale": 0.98
+      }
+    },
+    "Verdana": {
+      "css_stack": "Verdana, Geneva, sans-serif",
+      "metrics": {
+        "body_line_height": 1.58,
+        "body_weight": 400,
+        "heading_tracking": "-.010em",
+        "heading_weight": 700,
+        "navigation_weight": 600,
+        "table_scale": 0.94
+      }
+    }
+  },
+  "schema": "biointel.step67.appearance-catalog.v1",
+  "theme_count": 17,
+  "themes": {
+    "Arctic Glass": {
+      "chart_profile": {
+        "axis_width": 1,
+        "grid_alpha": 0.07,
+        "grid_dash": "dot",
+        "hover_border": "#06B6D4",
+        "legend_orientation": "h",
+        "legend_y": 1.12,
+        "line_width": 2.4,
+        "marker_size": 8,
+        "marker_symbol": "circle-open",
+        "plot_alpha": 0.015
+      },
+      "light_palette": {
+        "background": "#F1FBFD",
+        "background_soft": "#E4F5F8",
+        "border": "rgba(6,182,212,.19)",
+        "muted": "#5B7880",
+        "sidebar_end": "rgba(232,247,250,.90)",
+        "sidebar_start": "rgba(250,254,255,.82)",
+        "surface": "rgba(255,255,255,.68)",
+        "surface_strong": "rgba(255,255,255,.84)",
+        "text": "#123946"
+      },
+      "metadata": {
+        "best_for": [
+          "Modern dashboards",
+          "Presentations"
+        ],
+        "category": "Glass",
+        "layout_mode": "glass",
+        "performance": "Effects-heavy",
+        "recommended_fonts": [
+          "Inter",
+          "Century Gothic",
+          "Segoe UI"
+        ]
+      },
+      "palette": {
+        "accent": "#C4B5FD",
+        "bg_end": "#031015",
+        "bg_mid": "#0A2631",
+        "bg_soft": "#0D2A36",
+        "bg_start": "#04131A",
+        "description": "Translucent cyan glass effect for modern dashboards.",
+        "glow": "rgba(6, 182, 212, 0.30)",
+        "hero_end": "rgba(7, 30, 40, 0.68)",
+        "hero_start": "rgba(13, 57, 72, 0.88)",
+        "is_new": true,
+        "muted": "#94A3B8",
+        "name": "Arctic Glass",
+        "primary": "#06B6D4",
+        "secondary": "#7DD3FC",
+        "sidebar_end": "rgba(3, 15, 21, 0.99)",
+        "sidebar_start": "rgba(7, 32, 42, 0.97)",
+        "surface": "rgba(10, 42, 54, 0.72)",
+        "surface_strong": "rgba(7, 32, 43, 0.94)",
+        "text": "#F8FAFC"
+      }
+    },
+    "Aurora": {
+      "chart_profile": {
+        "axis_width": 1,
+        "grid_alpha": 0.08,
+        "grid_dash": "dot",
+        "hover_border": "#8B5CF6",
+        "legend_orientation": "h",
+        "legend_y": 1.12,
+        "line_width": 2.6,
+        "marker_size": 9,
+        "marker_symbol": "diamond",
+        "plot_alpha": 0.02
+      },
+      "light_palette": {
+        "background": "#F7F4FF",
+        "background_soft": "#EEE9FF",
+        "border": "rgba(139,92,246,.18)",
+        "muted": "#6A5D87",
+        "sidebar_end": "#F0EAFF",
+        "sidebar_start": "#FBF9FF",
+        "surface": "rgba(255,255,255,.88)",
+        "surface_strong": "#FFFFFF",
+        "text": "#2B1F4A"
+      },
+      "metadata": {
+        "best_for": [
+          "Exploration",
+          "Presentations"
+        ],
+        "category": "Creative",
+        "layout_mode": "fluid",
+        "performance": "Balanced",
+        "recommended_fonts": [
+          "Inter",
+          "Trebuchet MS",
+          "Century Gothic"
+        ]
+      },
+      "palette": {
+        "accent": "#34D399",
+        "bg_end": "#060A14",
+        "bg_mid": "#091020",
+        "bg_soft": "#0D1425",
+        "bg_start": "#050814",
+        "description": "Violet, cyan and mint exploratory workspace.",
+        "glow": "rgba(139, 92, 246, 0.34)",
+        "hero_end": "rgba(15, 23, 42, 0.62)",
+        "hero_start": "rgba(15, 23, 42, 0.90)",
+        "is_new": false,
+        "muted": "#94A3B8",
+        "name": "Aurora",
+        "primary": "#8B5CF6",
+        "secondary": "#22D3EE",
+        "sidebar_end": "rgba(5, 9, 20, 0.98)",
+        "sidebar_start": "rgba(9, 14, 30, 0.97)",
+        "surface": "rgba(15, 23, 42, 0.74)",
+        "surface_strong": "rgba(17, 25, 45, 0.94)",
+        "text": "#F8FAFC"
+      }
+    },
+    "BioMatrix": {
+      "chart_profile": {
+        "axis_width": 1,
+        "grid_alpha": 0.23,
+        "grid_dash": "dot",
+        "hover_border": "#22C55E",
+        "legend_orientation": "v",
+        "legend_y": 1.0,
+        "line_width": 2.3,
+        "marker_size": 8,
+        "marker_symbol": "square",
+        "plot_alpha": 0.08
+      },
+      "light_palette": {
+        "background": "#F0FAF2",
+        "background_soft": "#E3F4E8",
+        "border": "rgba(34,197,94,.18)",
+        "muted": "#5C7665",
+        "sidebar_end": "#E8F6EB",
+        "sidebar_start": "#F7FDF8",
+        "surface": "rgba(251,255,252,.96)",
+        "surface_strong": "#FFFFFF",
+        "text": "#153A25"
+      },
+      "metadata": {
+        "best_for": [
+          "Bioinformatics",
+          "Technical monitoring"
+        ],
+        "category": "Technology",
+        "layout_mode": "terminal",
+        "performance": "Balanced",
+        "recommended_fonts": [
+          "Tahoma",
+          "Courier New",
+          "Segoe UI"
+        ]
+      },
+      "palette": {
+        "accent": "#2DD4BF",
+        "bg_end": "#020C07",
+        "bg_mid": "#082419",
+        "bg_soft": "#0A291C",
+        "bg_start": "#03120B",
+        "description": "High-energy green bioinformatics command theme.",
+        "glow": "rgba(34, 197, 94, 0.30)",
+        "hero_end": "rgba(5, 28, 19, 0.72)",
+        "hero_start": "rgba(12, 55, 36, 0.92)",
+        "is_new": true,
+        "muted": "#94A3B8",
+        "name": "BioMatrix",
+        "primary": "#22C55E",
+        "secondary": "#4ADE80",
+        "sidebar_end": "rgba(2, 14, 9, 0.99)",
+        "sidebar_start": "rgba(5, 31, 21, 0.99)",
+        "surface": "rgba(9, 42, 29, 0.78)",
+        "surface_strong": "rgba(6, 31, 22, 0.96)",
+        "text": "#F8FAFC"
+      }
+    },
+    "Clinical": {
+      "chart_profile": {
+        "axis_width": 1,
+        "grid_alpha": 0.11,
+        "grid_dash": "dot",
+        "hover_border": "#0F766E",
+        "legend_orientation": "h",
+        "legend_y": 1.12,
+        "line_width": 2.1,
+        "marker_size": 8,
+        "marker_symbol": "circle-open",
+        "plot_alpha": 0.0
+      },
+      "light_palette": {
+        "background": "#F1FAF8",
+        "background_soft": "#E6F5F1",
+        "border": "rgba(15,118,110,.18)",
+        "muted": "#55706C",
+        "sidebar_end": "#E8F5F1",
+        "sidebar_start": "#F6FCFA",
+        "surface": "rgba(253,255,254,.97)",
+        "surface_strong": "#FFFFFF",
+        "text": "#123B37"
+      },
+      "metadata": {
+        "best_for": [
+          "Laboratory review",
+          "Large tables"
+        ],
+        "category": "Clinical",
+        "layout_mode": "minimal",
+        "performance": "Fast",
+        "recommended_fonts": [
+          "Verdana",
+          "Segoe UI",
+          "Arial"
+        ]
+      },
+      "palette": {
+        "accent": "#06B6D4",
+        "bg_end": "#060A14",
+        "bg_mid": "#091020",
+        "bg_soft": "#0D1425",
+        "bg_start": "#050814",
+        "description": "Calm teal and green clinical-review palette.",
+        "glow": "rgba(13, 148, 136, 0.28)",
+        "hero_end": "rgba(15, 23, 42, 0.62)",
+        "hero_start": "rgba(15, 23, 42, 0.90)",
+        "is_new": false,
+        "muted": "#94A3B8",
+        "name": "Clinical",
+        "primary": "#0F766E",
+        "secondary": "#22C55E",
+        "sidebar_end": "rgba(5, 9, 20, 0.98)",
+        "sidebar_start": "rgba(9, 14, 30, 0.97)",
+        "surface": "rgba(15, 23, 42, 0.74)",
+        "surface_strong": "rgba(17, 25, 45, 0.94)",
+        "text": "#F8FAFC"
+      }
+    },
+    "Deep Space": {
+      "chart_profile": {
+        "axis_width": 1,
+        "grid_alpha": 0.22,
+        "grid_dash": "dashdot",
+        "hover_border": "#6366F1",
+        "legend_orientation": "v",
+        "legend_y": 1.0,
+        "line_width": 2.8,
+        "marker_size": 9,
+        "marker_symbol": "diamond",
+        "plot_alpha": 0.1
+      },
+      "light_palette": {
+        "background": "#F4F3FF",
+        "background_soft": "#E9E7FA",
+        "border": "rgba(99,102,241,.18)",
+        "muted": "#676184",
+        "sidebar_end": "#ECE9FC",
+        "sidebar_start": "#F9F8FF",
+        "surface": "rgba(253,252,255,.95)",
+        "surface_strong": "#FFFFFF",
+        "text": "#28234C"
+      },
+      "metadata": {
+        "best_for": [
+          "AI/ML",
+          "Discovery workflows"
+        ],
+        "category": "Technology",
+        "layout_mode": "tech",
+        "performance": "Balanced",
+        "recommended_fonts": [
+          "Inter",
+          "Century Gothic",
+          "Segoe UI"
+        ]
+      },
+      "palette": {
+        "accent": "#22D3EE",
+        "bg_end": "#02030A",
+        "bg_mid": "#090A25",
+        "bg_soft": "#0C0D2B",
+        "bg_start": "#02030B",
+        "description": "Deep indigo workspace for modelling and discovery.",
+        "glow": "rgba(99, 102, 241, 0.36)",
+        "hero_end": "rgba(8, 9, 35, 0.72)",
+        "hero_start": "rgba(24, 24, 72, 0.93)",
+        "is_new": true,
+        "muted": "#94A3B8",
+        "name": "Deep Space",
+        "primary": "#6366F1",
+        "secondary": "#C084FC",
+        "sidebar_end": "rgba(2, 3, 12, 0.99)",
+        "sidebar_start": "rgba(8, 9, 35, 0.99)",
+        "surface": "rgba(13, 15, 48, 0.80)",
+        "surface_strong": "rgba(9, 10, 37, 0.97)",
+        "text": "#F8FAFC"
+      }
+    },
+    "Ember Forge": {
+      "chart_profile": {
+        "axis_width": 2,
+        "grid_alpha": 0.2,
+        "grid_dash": "dash",
+        "hover_border": "#F97316",
+        "legend_orientation": "v",
+        "legend_y": 1.0,
+        "line_width": 2.8,
+        "marker_size": 9,
+        "marker_symbol": "square",
+        "plot_alpha": 0.06
+      },
+      "light_palette": {
+        "background": "#FFF7F1",
+        "background_soft": "#F8EBDD",
+        "border": "rgba(194,65,12,.20)",
+        "muted": "#806957",
+        "sidebar_end": "#F8ECE1",
+        "sidebar_start": "#FFF9F5",
+        "surface": "rgba(255,253,250,.97)",
+        "surface_strong": "#FFFFFF",
+        "text": "#4A2A18"
+      },
+      "metadata": {
+        "best_for": [
+          "Operations",
+          "Process analytics"
+        ],
+        "category": "Technology",
+        "layout_mode": "industrial",
+        "performance": "Fast",
+        "recommended_fonts": [
+          "Aptos",
+          "Segoe UI",
+          "Tahoma"
+        ]
+      },
+      "palette": {
+        "accent": "#FB7185",
+        "bg_end": "#0D0502",
+        "bg_mid": "#2B130A",
+        "bg_soft": "#32180D",
+        "bg_start": "#170904",
+        "description": "Warm orange theme for energetic operational dashboards.",
+        "glow": "rgba(249, 115, 22, 0.32)",
+        "hero_end": "rgba(37, 15, 7, 0.72)",
+        "hero_start": "rgba(72, 31, 13, 0.92)",
+        "is_new": true,
+        "muted": "#94A3B8",
+        "name": "Ember Forge",
+        "primary": "#F97316",
+        "secondary": "#FBBF24",
+        "sidebar_end": "rgba(15, 5, 2, 0.99)",
+        "sidebar_start": "rgba(39, 16, 7, 0.99)",
+        "surface": "rgba(53, 25, 13, 0.78)",
+        "surface_strong": "rgba(39, 17, 8, 0.96)",
+        "text": "#F8FAFC"
+      }
+    },
+    "Emerald": {
+      "chart_profile": {
+        "axis_width": 1,
+        "grid_alpha": 0.1,
+        "grid_dash": "dot",
+        "hover_border": "#059669",
+        "legend_orientation": "h",
+        "legend_y": 1.12,
+        "line_width": 2.5,
+        "marker_size": 9,
+        "marker_symbol": "hexagon",
+        "plot_alpha": 0.012
+      },
+      "light_palette": {
+        "background": "#F1FBF5",
+        "background_soft": "#E5F7EC",
+        "border": "rgba(16,185,129,.18)",
+        "muted": "#557465",
+        "sidebar_end": "#E8F7EE",
+        "sidebar_start": "#F7FDF9",
+        "surface": "rgba(253,255,254,.95)",
+        "surface_strong": "#FFFFFF",
+        "text": "#113D2A"
+      },
+      "metadata": {
+        "best_for": [
+          "Biotechnology",
+          "Assay analytics"
+        ],
+        "category": "Scientific",
+        "layout_mode": "organic",
+        "performance": "Balanced",
+        "recommended_fonts": [
+          "Inter",
+          "Tahoma",
+          "Trebuchet MS"
+        ]
+      },
+      "palette": {
+        "accent": "#84CC16",
+        "bg_end": "#060A14",
+        "bg_mid": "#091020",
+        "bg_soft": "#0D1425",
+        "bg_start": "#050814",
+        "description": "Green biotechnology and assay workspace.",
+        "glow": "rgba(16, 185, 129, 0.30)",
+        "hero_end": "rgba(15, 23, 42, 0.62)",
+        "hero_start": "rgba(15, 23, 42, 0.90)",
+        "is_new": false,
+        "muted": "#94A3B8",
+        "name": "Emerald",
+        "primary": "#10B981",
+        "secondary": "#14B8A6",
+        "sidebar_end": "rgba(5, 9, 20, 0.98)",
+        "sidebar_start": "rgba(9, 14, 30, 0.97)",
+        "surface": "rgba(15, 23, 42, 0.74)",
+        "surface_strong": "rgba(17, 25, 45, 0.94)",
+        "text": "#F8FAFC"
+      }
+    },
+    "Executive": {
+      "chart_profile": {
+        "axis_width": 1,
+        "grid_alpha": 0.13,
+        "grid_dash": "solid",
+        "hover_border": "#2563EB",
+        "legend_orientation": "h",
+        "legend_y": 1.12,
+        "line_width": 2.4,
+        "marker_size": 8,
+        "marker_symbol": "circle",
+        "plot_alpha": 0.018
+      },
+      "light_palette": {
+        "background": "#F3F7FC",
+        "background_soft": "#EAF1FA",
+        "border": "rgba(26,71,126,.16)",
+        "muted": "#52657D",
+        "sidebar_end": "#EDF4FC",
+        "sidebar_start": "#F8FBFF",
+        "surface": "rgba(255,255,255,.95)",
+        "surface_strong": "#FFFFFF",
+        "text": "#0F2340"
+      },
+      "metadata": {
+        "best_for": [
+          "Daily work",
+          "Executive dashboards"
+        ],
+        "category": "Professional",
+        "layout_mode": "executive",
+        "performance": "Balanced",
+        "recommended_fonts": [
+          "Inter",
+          "Aptos",
+          "Segoe UI"
+        ]
+      },
+      "palette": {
+        "accent": "#14B8A6",
+        "bg_end": "#060A14",
+        "bg_mid": "#091020",
+        "bg_soft": "#0D1425",
+        "bg_start": "#050814",
+        "description": "Balanced blue scientific workspace for daily use.",
+        "glow": "rgba(37, 99, 235, 0.30)",
+        "hero_end": "rgba(15, 23, 42, 0.62)",
+        "hero_start": "rgba(15, 23, 42, 0.90)",
+        "is_new": false,
+        "muted": "#94A3B8",
+        "name": "Executive",
+        "primary": "#2563EB",
+        "secondary": "#38BDF8",
+        "sidebar_end": "rgba(5, 9, 20, 0.98)",
+        "sidebar_start": "rgba(9, 14, 30, 0.97)",
+        "surface": "rgba(15, 23, 42, 0.74)",
+        "surface_strong": "rgba(17, 25, 45, 0.94)",
+        "text": "#F8FAFC"
+      }
+    },
+    "Midnight Graphite": {
+      "chart_profile": {
+        "axis_width": 1,
+        "grid_alpha": 0.18,
+        "grid_dash": "dash",
+        "hover_border": "#818CF8",
+        "legend_orientation": "v",
+        "legend_y": 1.0,
+        "line_width": 2.3,
+        "marker_size": 8,
+        "marker_symbol": "square",
+        "plot_alpha": 0.08
+      },
+      "light_palette": {
+        "background": "#F0F2F6",
+        "background_soft": "#E4E8EF",
+        "border": "rgba(51,65,85,.20)",
+        "muted": "#647083",
+        "sidebar_end": "#E7EAF0",
+        "sidebar_start": "#F6F7FA",
+        "surface": "rgba(250,251,253,.96)",
+        "surface_strong": "#FFFFFF",
+        "text": "#202938"
+      },
+      "metadata": {
+        "best_for": [
+          "Low-light work",
+          "Operations"
+        ],
+        "category": "Professional",
+        "layout_mode": "executive",
+        "performance": "Fast",
+        "recommended_fonts": [
+          "Segoe UI",
+          "Aptos",
+          "Tahoma"
+        ]
+      },
+      "palette": {
+        "accent": "#22D3EE",
+        "bg_end": "#020617",
+        "bg_mid": "#111827",
+        "bg_soft": "#111827",
+        "bg_start": "#030712",
+        "description": "Low-distraction graphite workspace with cool highlights.",
+        "glow": "rgba(129, 140, 248, 0.30)",
+        "hero_end": "rgba(15, 23, 42, 0.70)",
+        "hero_start": "rgba(31, 41, 55, 0.92)",
+        "is_new": true,
+        "muted": "#94A3B8",
+        "name": "Midnight Graphite",
+        "primary": "#818CF8",
+        "secondary": "#94A3B8",
+        "sidebar_end": "rgba(3, 7, 18, 0.99)",
+        "sidebar_start": "rgba(17, 24, 39, 0.98)",
+        "surface": "rgba(17, 24, 39, 0.78)",
+        "surface_strong": "rgba(15, 23, 42, 0.96)",
+        "text": "#F8FAFC"
+      }
+    },
+    "Monochrome Pro": {
+      "chart_profile": {
+        "axis_width": 2,
+        "grid_alpha": 0.2,
+        "grid_dash": "solid",
+        "hover_border": "#111111",
+        "legend_orientation": "h",
+        "legend_y": 1.12,
+        "line_width": 2.6,
+        "marker_size": 8,
+        "marker_symbol": "square-open",
+        "plot_alpha": 0
+      },
+      "light_palette": {
+        "background": "#F6F6F6",
+        "background_soft": "#EAEAEA",
+        "border": "rgba(17,17,17,.28)",
+        "muted": "#5B5B5B",
+        "sidebar_end": "#EDEDED",
+        "sidebar_start": "#FAFAFA",
+        "surface": "#FFFFFF",
+        "surface_strong": "#FFFFFF",
+        "text": "#111111"
+      },
+      "metadata": {
+        "best_for": [
+          "Print review",
+          "Accessibility"
+        ],
+        "category": "High contrast",
+        "layout_mode": "brutalist",
+        "performance": "Fast",
+        "recommended_fonts": [
+          "Arial",
+          "Georgia",
+          "Courier New"
+        ]
+      },
+      "palette": {
+        "accent": "#F8FAFC",
+        "bg_end": "#030303",
+        "bg_mid": "#151515",
+        "bg_soft": "#1B1B1B",
+        "bg_start": "#050505",
+        "description": "Neutral grayscale theme for maximum visual restraint.",
+        "glow": "rgba(226, 232, 240, 0.20)",
+        "hero_end": "rgba(18, 18, 18, 0.74)",
+        "hero_start": "rgba(39, 39, 39, 0.93)",
+        "is_new": true,
+        "muted": "#94A3B8",
+        "name": "Monochrome Pro",
+        "primary": "#E2E8F0",
+        "secondary": "#94A3B8",
+        "sidebar_end": "rgba(5, 5, 5, 0.99)",
+        "sidebar_start": "rgba(20, 20, 20, 0.99)",
+        "surface": "rgba(30, 30, 30, 0.82)",
+        "surface_strong": "rgba(20, 20, 20, 0.97)",
+        "text": "#F8FAFC"
+      }
+    },
+    "Nordic Frost": {
+      "chart_profile": {
+        "axis_width": 1,
+        "grid_alpha": 0.09,
+        "grid_dash": "dot",
+        "hover_border": "#0284C7",
+        "legend_orientation": "h",
+        "legend_y": 1.12,
+        "line_width": 2.1,
+        "marker_size": 8,
+        "marker_symbol": "circle-open",
+        "plot_alpha": 0
+      },
+      "light_palette": {
+        "background": "#F4FAFC",
+        "background_soft": "#E9F3F7",
+        "border": "rgba(14,165,233,.15)",
+        "muted": "#627780",
+        "sidebar_end": "#EDF6F8",
+        "sidebar_start": "#F9FCFD",
+        "surface": "rgba(255,255,255,.96)",
+        "surface_strong": "#FFFFFF",
+        "text": "#173641"
+      },
+      "metadata": {
+        "best_for": [
+          "Large tables",
+          "Focused review"
+        ],
+        "category": "Minimal",
+        "layout_mode": "minimal",
+        "performance": "Fast",
+        "recommended_fonts": [
+          "Inter",
+          "Verdana",
+          "Arial"
+        ]
+      },
+      "palette": {
+        "accent": "#A7F3D0",
+        "bg_end": "#06111C",
+        "bg_mid": "#0B2235",
+        "bg_soft": "#0D2436",
+        "bg_start": "#071521",
+        "description": "Crisp cyan workspace inspired by Nordic research labs.",
+        "glow": "rgba(14, 165, 233, 0.28)",
+        "hero_end": "rgba(7, 25, 39, 0.70)",
+        "hero_start": "rgba(13, 45, 66, 0.91)",
+        "is_new": true,
+        "muted": "#94A3B8",
+        "name": "Nordic Frost",
+        "primary": "#0EA5E9",
+        "secondary": "#67E8F9",
+        "sidebar_end": "rgba(3, 15, 25, 0.99)",
+        "sidebar_start": "rgba(7, 26, 40, 0.98)",
+        "surface": "rgba(12, 35, 52, 0.78)",
+        "surface_strong": "rgba(8, 29, 44, 0.96)",
+        "text": "#F8FAFC"
+      }
+    },
+    "Ocean": {
+      "chart_profile": {
+        "axis_width": 1,
+        "grid_alpha": 0.11,
+        "grid_dash": "solid",
+        "hover_border": "#0284C7",
+        "legend_orientation": "h",
+        "legend_y": 1.12,
+        "line_width": 2.5,
+        "marker_size": 8,
+        "marker_symbol": "circle",
+        "plot_alpha": 0.015
+      },
+      "light_palette": {
+        "background": "#F0F9FF",
+        "background_soft": "#E2F4FD",
+        "border": "rgba(14,165,233,.18)",
+        "muted": "#527188",
+        "sidebar_end": "#E7F6FD",
+        "sidebar_start": "#F7FCFF",
+        "surface": "rgba(252,255,255,.94)",
+        "surface_strong": "#FFFFFF",
+        "text": "#0E3855"
+      },
+      "metadata": {
+        "best_for": [
+          "Data analysis",
+          "Long sessions"
+        ],
+        "category": "Professional",
+        "layout_mode": "layered",
+        "performance": "Balanced",
+        "recommended_fonts": [
+          "Inter",
+          "Verdana",
+          "Segoe UI"
+        ]
+      },
+      "palette": {
+        "accent": "#2DD4BF",
+        "bg_end": "#060A14",
+        "bg_mid": "#091020",
+        "bg_soft": "#0D1425",
+        "bg_start": "#050814",
+        "description": "Cool blue and aqua data-analysis palette.",
+        "glow": "rgba(56, 189, 248, 0.32)",
+        "hero_end": "rgba(15, 23, 42, 0.62)",
+        "hero_start": "rgba(15, 23, 42, 0.90)",
+        "is_new": false,
+        "muted": "#94A3B8",
+        "name": "Ocean",
+        "primary": "#38BDF8",
+        "secondary": "#2563EB",
+        "sidebar_end": "rgba(5, 9, 20, 0.98)",
+        "sidebar_start": "rgba(9, 14, 30, 0.97)",
+        "surface": "rgba(15, 23, 42, 0.74)",
+        "surface_strong": "rgba(17, 25, 45, 0.94)",
+        "text": "#F8FAFC"
+      }
+    },
+    "Regulatory": {
+      "chart_profile": {
+        "axis_width": 1,
+        "grid_alpha": 0.15,
+        "grid_dash": "dash",
+        "hover_border": "#1D4ED8",
+        "legend_orientation": "h",
+        "legend_y": 1.12,
+        "line_width": 2.3,
+        "marker_size": 8,
+        "marker_symbol": "square",
+        "plot_alpha": 0.01
+      },
+      "light_palette": {
+        "background": "#F7F5EF",
+        "background_soft": "#EFEADF",
+        "border": "rgba(29,78,216,.16)",
+        "muted": "#6D685A",
+        "sidebar_end": "#EEE8DA",
+        "sidebar_start": "#FBF9F4",
+        "surface": "rgba(255,254,250,.97)",
+        "surface_strong": "#FFFFFF",
+        "text": "#29271F"
+      },
+      "metadata": {
+        "best_for": [
+          "Governance",
+          "Audit review"
+        ],
+        "category": "Professional",
+        "layout_mode": "ledger",
+        "performance": "Fast",
+        "recommended_fonts": [
+          "Aptos",
+          "Georgia",
+          "Segoe UI"
+        ]
+      },
+      "palette": {
+        "accent": "#0F766E",
+        "bg_end": "#060A14",
+        "bg_mid": "#091020",
+        "bg_soft": "#0D1425",
+        "bg_start": "#050814",
+        "description": "High-clarity blue and amber governance palette.",
+        "glow": "rgba(29, 78, 216, 0.28)",
+        "hero_end": "rgba(15, 23, 42, 0.62)",
+        "hero_start": "rgba(15, 23, 42, 0.90)",
+        "is_new": false,
+        "muted": "#94A3B8",
+        "name": "Regulatory",
+        "primary": "#1D4ED8",
+        "secondary": "#F59E0B",
+        "sidebar_end": "rgba(5, 9, 20, 0.98)",
+        "sidebar_start": "rgba(9, 14, 30, 0.97)",
+        "surface": "rgba(15, 23, 42, 0.74)",
+        "surface_strong": "rgba(17, 25, 45, 0.94)",
+        "text": "#F8FAFC"
+      }
+    },
+    "Rose": {
+      "chart_profile": {
+        "axis_width": 1,
+        "grid_alpha": 0.08,
+        "grid_dash": "dot",
+        "hover_border": "#E11D48",
+        "legend_orientation": "h",
+        "legend_y": 1.12,
+        "line_width": 2.5,
+        "marker_size": 9,
+        "marker_symbol": "diamond",
+        "plot_alpha": 0.018
+      },
+      "light_palette": {
+        "background": "#FFF5F8",
+        "background_soft": "#FCE8EF",
+        "border": "rgba(244,63,94,.18)",
+        "muted": "#806273",
+        "sidebar_end": "#FCEAF1",
+        "sidebar_start": "#FFF9FB",
+        "surface": "rgba(255,252,253,.94)",
+        "surface_strong": "#FFFFFF",
+        "text": "#4B1E31"
+      },
+      "metadata": {
+        "best_for": [
+          "Presentations",
+          "Soft professional UI"
+        ],
+        "category": "Creative",
+        "layout_mode": "atelier",
+        "performance": "Balanced",
+        "recommended_fonts": [
+          "Century Gothic",
+          "Trebuchet MS",
+          "Inter"
+        ]
+      },
+      "palette": {
+        "accent": "#FB7185",
+        "bg_end": "#060A14",
+        "bg_mid": "#091020",
+        "bg_soft": "#0D1425",
+        "bg_start": "#050814",
+        "description": "Rose and violet presentation palette.",
+        "glow": "rgba(244, 63, 94, 0.30)",
+        "hero_end": "rgba(15, 23, 42, 0.62)",
+        "hero_start": "rgba(15, 23, 42, 0.90)",
+        "is_new": false,
+        "muted": "#94A3B8",
+        "name": "Rose",
+        "primary": "#F43F5E",
+        "secondary": "#A855F7",
+        "sidebar_end": "rgba(5, 9, 20, 0.98)",
+        "sidebar_start": "rgba(9, 14, 30, 0.97)",
+        "surface": "rgba(15, 23, 42, 0.74)",
+        "surface_strong": "rgba(17, 25, 45, 0.94)",
+        "text": "#F8FAFC"
+      }
+    },
+    "Royal Amethyst": {
+      "chart_profile": {
+        "axis_width": 1,
+        "grid_alpha": 0.09,
+        "grid_dash": "dot",
+        "hover_border": "#A855F7",
+        "legend_orientation": "h",
+        "legend_y": 1.12,
+        "line_width": 2.7,
+        "marker_size": 9,
+        "marker_symbol": "diamond",
+        "plot_alpha": 0.025
+      },
+      "light_palette": {
+        "background": "#FBF4FF",
+        "background_soft": "#F1E7F8",
+        "border": "rgba(168,85,247,.18)",
+        "muted": "#7A6287",
+        "sidebar_end": "#F2E9F8",
+        "sidebar_start": "#FDF8FF",
+        "surface": "rgba(255,252,255,.92)",
+        "surface_strong": "#FFFFFF",
+        "text": "#412252"
+      },
+      "metadata": {
+        "best_for": [
+          "Presentations",
+          "Premium dashboards"
+        ],
+        "category": "Glass",
+        "layout_mode": "glass",
+        "performance": "Effects-heavy",
+        "recommended_fonts": [
+          "Century Gothic",
+          "Inter",
+          "Trebuchet MS"
+        ]
+      },
+      "palette": {
+        "accent": "#60A5FA",
+        "bg_end": "#0B0311",
+        "bg_mid": "#23103A",
+        "bg_soft": "#29133F",
+        "bg_start": "#12051B",
+        "description": "Premium violet workspace for presentations and reports.",
+        "glow": "rgba(168, 85, 247, 0.34)",
+        "hero_end": "rgba(31, 12, 46, 0.72)",
+        "hero_start": "rgba(61, 26, 88, 0.92)",
+        "is_new": true,
+        "muted": "#94A3B8",
+        "name": "Royal Amethyst",
+        "primary": "#A855F7",
+        "secondary": "#E879F9",
+        "sidebar_end": "rgba(12, 4, 18, 0.99)",
+        "sidebar_start": "rgba(35, 14, 52, 0.98)",
+        "surface": "rgba(43, 20, 64, 0.78)",
+        "surface_strong": "rgba(31, 13, 48, 0.96)",
+        "text": "#F8FAFC"
+      }
+    },
+    "Sakura Research": {
+      "chart_profile": {
+        "axis_width": 1,
+        "grid_alpha": 0.08,
+        "grid_dash": "dot",
+        "hover_border": "#EC4899",
+        "legend_orientation": "h",
+        "legend_y": 1.12,
+        "line_width": 2.5,
+        "marker_size": 9,
+        "marker_symbol": "diamond",
+        "plot_alpha": 0.018
+      },
+      "light_palette": {
+        "background": "#FFF5FA",
+        "background_soft": "#FBE7F1",
+        "border": "rgba(236,72,153,.18)",
+        "muted": "#806678",
+        "sidebar_end": "#FCEAF3",
+        "sidebar_start": "#FFF9FC",
+        "surface": "rgba(255,252,254,.94)",
+        "surface_strong": "#FFFFFF",
+        "text": "#4D2038"
+      },
+      "metadata": {
+        "best_for": [
+          "Research planning",
+          "Soft professional UI"
+        ],
+        "category": "Creative",
+        "layout_mode": "studio",
+        "performance": "Balanced",
+        "recommended_fonts": [
+          "Trebuchet MS",
+          "Century Gothic",
+          "Inter"
+        ]
+      },
+      "palette": {
+        "accent": "#A78BFA",
+        "bg_end": "#0D040A",
+        "bg_mid": "#2B1021",
+        "bg_soft": "#311326",
+        "bg_start": "#170712",
+        "description": "Soft pink and violet theme with strong readability.",
+        "glow": "rgba(236, 72, 153, 0.30)",
+        "hero_end": "rgba(35, 12, 27, 0.70)",
+        "hero_start": "rgba(70, 26, 51, 0.91)",
+        "is_new": true,
+        "muted": "#94A3B8",
+        "name": "Sakura Research",
+        "primary": "#EC4899",
+        "secondary": "#F9A8D4",
+        "sidebar_end": "rgba(14, 4, 10, 0.99)",
+        "sidebar_start": "rgba(39, 14, 30, 0.98)",
+        "surface": "rgba(51, 20, 39, 0.78)",
+        "surface_strong": "rgba(38, 14, 29, 0.96)",
+        "text": "#F8FAFC"
+      }
+    },
+    "Solarized Lab": {
+      "chart_profile": {
+        "axis_width": 1,
+        "grid_alpha": 0.12,
+        "grid_dash": "dash",
+        "hover_border": "#B45309",
+        "legend_orientation": "h",
+        "legend_y": 1.12,
+        "line_width": 2.2,
+        "marker_size": 8,
+        "marker_symbol": "triangle-up",
+        "plot_alpha": 0.01
+      },
+      "light_palette": {
+        "background": "#FCF8EE",
+        "background_soft": "#F4EDDE",
+        "border": "rgba(180,114,8,.20)",
+        "muted": "#756C5C",
+        "sidebar_end": "#F5EDDE",
+        "sidebar_start": "#FFFCF6",
+        "surface": "rgba(255,253,247,.96)",
+        "surface_strong": "#FFFFFF",
+        "text": "#3D3424"
+      },
+      "metadata": {
+        "best_for": [
+          "Scientific reports",
+          "Reading"
+        ],
+        "category": "Editorial",
+        "layout_mode": "editorial",
+        "performance": "Fast",
+        "recommended_fonts": [
+          "Georgia",
+          "Aptos",
+          "Times New Roman"
+        ]
+      },
+      "palette": {
+        "accent": "#38BDF8",
+        "bg_end": "#081014",
+        "bg_mid": "#142126",
+        "bg_soft": "#17262B",
+        "bg_start": "#0B1418",
+        "description": "Warm amber highlights on a muted scientific canvas.",
+        "glow": "rgba(245, 158, 11, 0.30)",
+        "hero_end": "rgba(15, 29, 33, 0.72)",
+        "hero_start": "rgba(35, 50, 50, 0.92)",
+        "is_new": true,
+        "muted": "#94A3B8",
+        "name": "Solarized Lab",
+        "primary": "#F59E0B",
+        "secondary": "#22C55E",
+        "sidebar_end": "rgba(8, 18, 22, 0.99)",
+        "sidebar_start": "rgba(18, 34, 39, 0.98)",
+        "surface": "rgba(24, 39, 44, 0.80)",
+        "surface_strong": "rgba(18, 33, 38, 0.96)",
+        "text": "#F8FAFC"
+      }
+    }
+  },
+  "typography_pairings": {
+    "Classic Academic": {
+      "body_font": "Georgia",
+      "data_font": "Courier New",
+      "description": "Traditional academic report pairing.",
+      "heading_font": "Times New Roman",
+      "name": "Classic Academic"
+    },
+    "Clinical Readable": {
+      "body_font": "Verdana",
+      "data_font": "Tahoma",
+      "description": "Highly readable clinical and laboratory pairing.",
+      "heading_font": "Trebuchet MS",
+      "name": "Clinical Readable"
+    },
+    "Custom": {
+      "body_font": "Inter",
+      "data_font": "Inter",
+      "description": "Choose heading, body and data fonts independently.",
+      "heading_font": "Inter",
+      "name": "Custom"
+    },
+    "Executive Report": {
+      "body_font": "Aptos",
+      "data_font": "Segoe UI",
+      "description": "Geometric headings with document-oriented body text.",
+      "heading_font": "Century Gothic",
+      "name": "Executive Report"
+    },
+    "Modern Professional": {
+      "body_font": "Inter",
+      "data_font": "Segoe UI",
+      "description": "Neutral modern pairing for everyday scientific work.",
+      "heading_font": "Inter",
+      "name": "Modern Professional"
+    },
+    "Scientific Editorial": {
+      "body_font": "Aptos",
+      "data_font": "Courier New",
+      "description": "Editorial headings with efficient body and fixed-width data.",
+      "heading_font": "Georgia",
+      "name": "Scientific Editorial"
+    },
+    "Technical Console": {
+      "body_font": "Tahoma",
+      "data_font": "Courier New",
+      "description": "Dense technical controls with monospaced data output.",
+      "heading_font": "Segoe UI",
+      "name": "Technical Console"
+    }
+  },
+  "version": "6.7.0"
+}

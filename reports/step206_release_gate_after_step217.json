@@ -1,0 +1,186 @@
+{
+  "schema": "biointel.step206.release-gate.v1",
+  "generated_at_utc": "2026-07-22T16:28:47+00:00",
+  "root": "C:\\Users\\lavesh dobriyal\\Documents\\Codex\\2026-07-22\\bha\\work\\biointel_extract\\BioIntel-AI-15.6.0-Step206-WINDOWS-V19.6",
+  "managed_root": "C:\\Users\\lavesh dobriyal\\AppData\\Local\\BioIntelAI\\App\\Releases\\15.6.0-Step206",
+  "passed": true,
+  "checks": [
+    {
+      "name": "critical files",
+      "passed": true,
+      "detail": "complete"
+    },
+    {
+      "name": "five-part Step206 extraction",
+      "passed": true,
+      "detail": "5/5 present"
+    },
+    {
+      "name": "active release identity",
+      "passed": true,
+      "detail": {
+        "VERSION": "15.6.0",
+        "pyproject": "15.6.0",
+        "release": {
+          "schema": "biointel.step206.windows-install-run-fix.release.v1",
+          "step": 206,
+          "version": "15.6.0",
+          "package_generation": "V19.6",
+          "build_number": "Step206-V19.6",
+          "part_count": 5,
+          "platform": "Windows desktop",
+          "python_runtime": "CPython 3.11.9 x64",
+          "supported_workflow": [
+            "INSTALL_WINDOWS.bat",
+            "RUN_BOTH_WINDOWS.bat"
+          ],
+          "archive_root": "BioIntel-AI-15.6.0-Step206-WINDOWS-V19.6",
+          "offline_core": true,
+          "upgrade_scope": "V19.6 Engine Platform Integration layered on the complete V19.5 Live Workspace release: unified Engine Control Center, 76-engine fail-closed catalogue, 12 advanced format adapters, Windows CPython 3.11 x64 offline adapter wheelhouse, WSL2/micromamba acquisition recipes, target-machine qualification evidence, integrity-checked engine packs, repair/update/uninstall controls and six optional production-service interfaces while preserving all V19.5 collaboration and scientific functionality.",
+          "managed_install_root": "%LOCALAPPDATA%\\BioIntelAI\\App\\Releases\\15.6.0-Step206",
+          "implemented": [
+            "Atomic verified source installation with rollback",
+            "Exact CPython 3.11.9 x64 detection and friendly preparation route",
+            "Offline wheelhouse installation after Python is available",
+            "Stable Desktop and Start Menu launchers independent of the extracted folder",
+            "Resident UI/API/background-worker supervisor with bounded restart recovery",
+            "Strict API, Streamlit, local SQLite read/write, and worker readiness",
+            "Graceful Stop and Restart controls with orphan-process cleanup",
+            "Pre-activation SQLite backup and native Windows startup/shutdown smoke test",
+            "Automatic support logs and browser fallback",
+            "Current VERSION and pyproject.toml metadata are enforced as 15.6.0",
+            "Five-part Step206 markers are accepted by the scientific runtime preflight",
+            "Same-release repair compares source manifests and replaces stale managed copies",
+            "Shared local data-readiness, provenance, diagnostics and transient-state recovery layer across 81 non-protected target pages",
+            "Bioinformatics cohort/reference-build and count-matrix quality workspaces",
+            "Discovery assay normalisation, replicate review and multi-objective Pareto ranking",
+            "Lab assay replicate precision, batch drift, control separation and Z-prime review",
+            "Eighteen post-Step205 Neuro/CNS research workflows retained across V19.2/V19.3, with calculated visuals, exports and synthetic demonstrations",
+            "Neuro/CNS catalog, demo showcase, qualification resources and release dashboards expanded from 23 to 41 modules",
+            "Explicit demo versus local-upload selection with no silent fallback to demo data",
+            "Safe structured ZIP ingestion for multi-table scientific workflows with path and expansion checks",
+            "Complete downloadable result/provenance bundles for Step208 advanced workflows",
+            "Generated labelled synthetic demo-input bundles for target modules without static starter kits",
+            "Per-module curated official scientific website access with privacy warning and offline-safe availability checks",
+            "Expanded Neuro/CNS calculated visuals for all 17 deep workflows plus portfolio coverage/readiness visuals",
+            "Error reference IDs and sanitized local diagnostics for upload and execution failures",
+            "BioIntel Live Workspace with Personal Local, Host Lab Workspace and Join Lab Workspace operation",
+            "Privacy-bounded live presence with current module, safe record alias, activity state and heartbeat expiry",
+            "Same-record viewers, renewable edit locks, controlled admin takeover and revision-conflict protection",
+            "Owner/Admin/Researcher/Reviewer/Viewer/Guest roles with workspace, module, category and project access limits",
+            "Secure time-limited hashed invite tokens, named password accounts, optional TOTP and account-session revocation",
+            "Threaded comments, mentions, edit history, resolution state, review queues and expanded review lifecycle",
+            "Shared tasks, evidence bookmarks, cross-module project links, research timeline and notification preferences",
+            "Neuro-aware scientific annotations for EEG events, imaging ROIs, variants, biomarkers and histology metadata",
+            "Collaborative follow-host sessions with safe navigation, record alias and scientific pointer synchronization",
+            "Shared analysis-job status, duplicate-workflow warning and owner/admin pause, resume, retry and cancel requests",
+            "Offline-safe draft storage with revision resynchronization and explicit conflict handling",
+            "Recoverable trash for tasks, evidence, annotations, links and timeline events",
+            "Integrity-protected workspace export/restore and scheduled SQLite WAL automatic backups with retention",
+            "Admin health, database integrity, audit export, retention cleanup and active-session controls",
+            "Reconnecting WebSocket snapshots for presence, activity cursor resync, dashboard, notifications and sessions",
+            "Trusted-LAN host mode with mandatory named UI authentication and optional locally generated HTTPS certificate",
+            "Existing V19.4 scientific modules, demos, visuals, websites, uploads and Windows repair workflow retained",
+            "Unified V19.6 Engine Control Center backend, FastAPI routes and Streamlit management page",
+            "Complete 76-engine registry with deterministic priority, platform, licence, database/model and acquisition metadata",
+            "Twelve advanced scientific format adapters covering H5AD, Zarr, NIfTI, DICOM, EDF/BDF/FIF, BAM/CRAM/BCF, BigWig, PLINK, mzML, FAST5, POD5 and OME-TIFF readiness",
+            "Five logical engine-pack groups spanning Bioinformatics, Discovery, Lab Imaging/Proteomics, AI/GPU and specialist extensions",
+            "Windows CPython 3.11 x64 offline adapter wheelhouse with SHA-256 manifest and deterministic lockfile",
+            "WSL2 micromamba environment recipes and Windows-to-WSL execution proxy for supported Linux scientific engines",
+            "Hardware, disk, WSL2 and GPU readiness inventory with explicit blockers rather than silent fallback",
+            "Integrity-checked offline engine pack import, inspection, installation, probing, repair and uninstall primitives",
+            "Fail-closed licence, redistribution, exact-version, artifact-hash, model/database and target-machine qualification gates",
+            "Positive and negative target-machine smoke evidence required before an external engine can be declared qualified-ready",
+            "Six optional production architecture interfaces for PostgreSQL, Redis queueing, object storage, OIDC identity, observability and collaborative CRDT editing",
+            "Installer initializes engine metadata and acquisition plans without performing silent external downloads",
+            "Optional INSTALL_ALL_ENGINES_WINDOWS.bat route for operator-approved WSL2 acquisition; restricted providers, licensed assets and model weights are never bypassed",
+            "Engine readiness is exposed to scientific modules through the shared Engine Control Center state store",
+            "All V19.5 Live Workspace collaboration, V19.4 module hardening and earlier Windows repair features retained",
+            "Windows runtime compatibility hotfix pins setuptools 80.9.0 and validates pkg_resources so ont-fast5-api 4.1.3 installs and imports offline."
+          ],
+          "protected_modules_unchanged": [
+            "DTI Predictor",
+            "DTI Validation Evidence Center",
+            "LIMS / ELN / Sample Chain of Custody",
+            "Lab Instrument Import Center",
+            "Instrument Integration Hub"
+          ],
+          "optional_services": [
+            "Ollama",
+            "SearXNG",
+            "external scientific providers"
+          ],
+          "scientific_boundary": "V19.6 integrates engine management, offline Python format-adapter assets, deterministic acquisition recipes and qualification controls. It does not claim that all 76 external executables, restricted databases, provider downloads, large model weights or GPU workflows were executed on this Linux builder. An external engine is reported qualified only after exact artifact/licence hashes plus positive and negative smoke evidence pass on the target Windows/WSL2 machine. Existing research-software, clinical, regulatory and external-validation boundaries remain unchanged.",
+          "hotfix": "V19.1 install/run repair, V19.2/V19.3 scientific workflows, V19.4 professional module hardening and V19.5 BioIntel Live Workspace are retained. V19.6 adds the merged Engine Platform Integration without changing protected DTI, LIMS/ELN or instrument modules. V19.6 Windows runtime compatibility hotfix pins setuptools 80.9.0 for ont-fast5-api/pkg_resources and adds install plus RUN_BOTH validation."
+        }
+      }
+    },
+    {
+      "name": "Python runtime",
+      "passed": true,
+      "detail": {
+        "current": "3.11.9",
+        "bits": 64,
+        "required": "CPython 3.11.9 x64",
+        "builder_override": true
+      }
+    },
+    {
+      "name": "managed application path",
+      "passed": true,
+      "detail": {
+        "path": "C:\\Users\\lavesh dobriyal\\AppData\\Local\\BioIntelAI\\App\\Releases\\15.6.0-Step206",
+        "length": 77,
+        "maximum": 180
+      }
+    },
+    {
+      "name": "managed application directory writable",
+      "passed": true,
+      "detail": "C:\\Users\\lavesh dobriyal\\AppData\\Local\\BioIntelAI"
+    },
+    {
+      "name": "managed-install free disk",
+      "passed": true,
+      "detail": {
+        "available_gb": 117.08,
+        "required_gb": 5.0,
+        "manifest_source_gb": 0.78
+      }
+    },
+    {
+      "name": "extracted source readable",
+      "passed": true,
+      "detail": "C:\\Users\\lavesh dobriyal\\Documents\\Codex\\2026-07-22\\bha\\work\\biointel_extract\\BioIntel-AI-15.6.0-Step206-WINDOWS-V19.6"
+    },
+    {
+      "name": "Windows PowerShell",
+      "passed": true,
+      "detail": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+    },
+    {
+      "name": "Step206 SHA-256 source manifest",
+      "passed": true,
+      "detail": {
+        "tracked_files": 24263,
+        "deep_hashes": false,
+        "bad_count": 0,
+        "bad_files": []
+      }
+    },
+    {
+      "name": "offline wheelhouse",
+      "passed": true,
+      "detail": {
+        "wheel_count": 121,
+        "missing": [],
+        "setuptools_pkg_resources_compatibility": true
+      }
+    }
+  ],
+  "recovery": [
+    "Extract all five matching Step206 ZIP parts into one new folder.",
+    "Run INSTALL_WINDOWS.bat; it installs to a stable LocalAppData application folder.",
+    "If Python is absent, allow the signed Python 3.11.9 installer or install it manually and retry."
+  ]
+}

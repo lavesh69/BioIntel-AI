@@ -1,0 +1,78 @@
+{
+  "schema": "biointel.step134-verification.v1",
+  "step": 134,
+  "version": "13.2.0",
+  "scope": "full-module-reliability-stability",
+  "checks": [
+    {
+      "name": "Product version",
+      "passed": true,
+      "detail": "13.2.0"
+    },
+    {
+      "name": "Page bootstrap and Python compilation",
+      "passed": true,
+      "detail": {
+        "schema": "biointel.module-reliability.v1",
+        "page_entrypoints": 198,
+        "page_bootstrap_passed": 198,
+        "page_bootstrap_failures": [],
+        "python_files": 794,
+        "python_compile_passed": 794,
+        "python_compile_failures": [],
+        "sqlite_connection_audit": {
+          "passed": true,
+          "violations": [],
+          "managed_connection_contract": "biointel.database.core.managed_connect"
+        },
+        "passed": true
+      }
+    },
+    {
+      "name": "Fifteen module functional smoke tests",
+      "passed": true,
+      "detail": {
+        "passed": true,
+        "modules": 15,
+        "advanced_tables": 27,
+        "advanced_visuals": 28,
+        "failures": []
+      }
+    },
+    {
+      "name": "Protected modules",
+      "passed": true,
+      "detail": "5/5 byte-identical"
+    },
+    {
+      "name": "Database integrity",
+      "passed": true,
+      "detail": {
+        "passed": true,
+        "databases": 36,
+        "rows": 108425,
+        "foreign_key_issues": 0,
+        "failures": []
+      }
+    },
+    {
+      "name": "No eager model deserialisation",
+      "passed": true,
+      "detail": {
+        "button_index": 2884,
+        "load_index": 2956
+      }
+    },
+    {
+      "name": "Runtime residue",
+      "passed": true,
+      "detail": {
+        "passed": true,
+        "count": 0,
+        "paths": []
+      }
+    }
+  ],
+  "page_smoke": null,
+  "passed": true
+}

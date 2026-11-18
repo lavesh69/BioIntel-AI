@@ -1,0 +1,65 @@
+{
+  "schema": "biointel.step170.validation.v1",
+  "status": "passed",
+  "checks": [
+    {
+      "check": "53 unique specialist engines",
+      "passed": true,
+      "detail": "53/53"
+    },
+    {
+      "check": "Engine manifests",
+      "passed": true,
+      "detail": "data/step170/engine_manifests"
+    },
+    {
+      "check": "Reference catalog",
+      "passed": true,
+      "detail": "26 production reference groups"
+    },
+    {
+      "check": "Licence policy coverage",
+      "passed": true,
+      "detail": "17 licence policies"
+    },
+    {
+      "check": "Provider/manual installs fail closed",
+      "passed": true,
+      "detail": "manual=5"
+    },
+    {
+      "check": "Every engine has checksum and smoke-test policy",
+      "passed": true,
+      "detail": "all 53"
+    },
+    {
+      "check": "Every reference has release/hash/licence/schema gates",
+      "passed": true,
+      "detail": "all 26"
+    },
+    {
+      "check": "WSL/micromamba environment plan",
+      "passed": true,
+      "detail": "step170-linux-64.yml"
+    },
+    {
+      "check": "Registry integrity",
+      "passed": true,
+      "detail": "{\"schema\": \"biointel.step170.registry-status.v1\", \"database_integrity\": \"ok\", \"foreign_key_violations\": 0, \"engines_registered\": 0, \"engines_qualified\": 0, \"references_registered\": 0, \"references_qualified\": 0, \"licences_registered\": 17, \"licences_accepted\": 0}"
+    },
+    {
+      "check": "Step 170 UI page",
+      "passed": true,
+      "detail": "pages/239_Specialist_Runtime_Reference_Qualification.py"
+    },
+    {
+      "check": "Windows provisioning launchers",
+      "passed": true,
+      "detail": "4 launchers"
+    }
+  ],
+  "software_qualification_complete": true,
+  "external_runtime_installation_complete": false,
+  "production_reference_downloads_complete": false,
+  "licences_not_auto_accepted": true
+}

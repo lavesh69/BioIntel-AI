@@ -1,0 +1,20 @@
+{
+  "classification": "documented_control_qualification",
+  "existing": [
+    "src/biointel/compliance/ledger.py",
+    "src/biointel/compliance/control_catalog.py",
+    "docs/REGULATORY_GXP_READINESS.md",
+    "tests/test_step36_maturity_frameworks.py"
+  ],
+  "external_boundary": "Control qualification is not 180 days of GxP operating history.",
+  "missing": [],
+  "observed_at": "2026-07-05T07:33:16.093725+00:00",
+  "passed": true,
+  "required": [
+    "src/biointel/compliance/ledger.py",
+    "src/biointel/compliance/control_catalog.py",
+    "docs/REGULATORY_GXP_READINESS.md",
+    "tests/test_step36_maturity_frameworks.py"
+  ],
+  "schema": "biointel.step42.gxp_controls.v1"
+}

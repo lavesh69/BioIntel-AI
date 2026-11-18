@@ -1,0 +1,465 @@
+{
+  "version": "8.2.3",
+  "entry_points": 91,
+  "failed": 0,
+  "median_seconds": 4.163,
+  "p95_seconds": 11.065,
+  "max_seconds": 17.92,
+  "results": {
+    "home": {
+      "path": "app.py",
+      "seconds": 3.73,
+      "exceptions": []
+    },
+    "quick_start": {
+      "path": "pages/0_Quick_Start.py",
+      "seconds": 3.922,
+      "exceptions": []
+    },
+    "sequence_analyzer": {
+      "path": "pages/1_Sequence_Analyzer.py",
+      "seconds": 5.59,
+      "exceptions": []
+    },
+    "sequence_comparison": {
+      "path": "pages/2_Sequence_Comparison.py",
+      "seconds": 3.624,
+      "exceptions": []
+    },
+    "biointel_studio": {
+      "path": "pages/70_BioIntel_Studio.py",
+      "seconds": 11.824,
+      "exceptions": []
+    },
+    "drug_analyzer": {
+      "path": "pages/3_Drug_SMILES_Analyzer.py",
+      "seconds": 4.418,
+      "exceptions": []
+    },
+    "dti_features": {
+      "path": "pages/4_DTI_Feature_Builder.py",
+      "seconds": 3.551,
+      "exceptions": []
+    },
+    "data_quality": {
+      "path": "pages/8_Data_Quality_Activity.py",
+      "seconds": 4.024,
+      "exceptions": []
+    },
+    "model_training": {
+      "path": "pages/5_Model_Training.py",
+      "seconds": 8.412,
+      "exceptions": []
+    },
+    "dti_predictor": {
+      "path": "pages/6_DTI_Predictor.py",
+      "seconds": 8.835,
+      "exceptions": []
+    },
+    "project_status": {
+      "path": "pages/9_Project_Status.py",
+      "seconds": 3.411,
+      "exceptions": []
+    },
+    "model_evaluation": {
+      "path": "pages/7_Model_Evaluation.py",
+      "seconds": 11.065,
+      "exceptions": []
+    },
+    "external_databases": {
+      "path": "pages/10_External_Databases.py",
+      "seconds": 2.071,
+      "exceptions": []
+    },
+    "experiments": {
+      "path": "pages/11_Experiment_Registry.py",
+      "seconds": 2.015,
+      "exceptions": []
+    },
+    "api_deployment": {
+      "path": "pages/12_API_Deployment.py",
+      "seconds": 2.05,
+      "exceptions": []
+    },
+    "chembl_builder": {
+      "path": "pages/13_ChEMBL_Dataset_Builder.py",
+      "seconds": 1.966,
+      "exceptions": []
+    },
+    "external_validation": {
+      "path": "pages/14_External_Validation_Drift.py",
+      "seconds": 7.187,
+      "exceptions": []
+    },
+    "backup_restore": {
+      "path": "pages/18_Workspace_Backup_Restore.py",
+      "seconds": 3.292,
+      "exceptions": []
+    },
+    "batch_sequence": {
+      "path": "pages/16_Batch_Sequence_Analysis.py",
+      "seconds": 4.352,
+      "exceptions": []
+    },
+    "local_data": {
+      "path": "pages/17_Local_Data_Manager.py",
+      "seconds": 4.357,
+      "exceptions": []
+    },
+    "audit_release": {
+      "path": "pages/15_Audit_Release.py",
+      "seconds": 11.658,
+      "exceptions": []
+    },
+    "dataset_registry": {
+      "path": "pages/21_Dataset_Registry_Lineage.py",
+      "seconds": 4.59,
+      "exceptions": []
+    },
+    "diagnostics": {
+      "path": "pages/19_System_Diagnostics.py",
+      "seconds": 9.638,
+      "exceptions": []
+    },
+    "workflow_dashboard": {
+      "path": "pages/20_Workflow_Dashboard.py",
+      "seconds": 10.543,
+      "exceptions": []
+    },
+    "model_lifecycle": {
+      "path": "pages/22_Model_Lifecycle.py",
+      "seconds": 7.029,
+      "exceptions": []
+    },
+    "report_studio": {
+      "path": "pages/26_Research_Report_Studio.py",
+      "seconds": 3.515,
+      "exceptions": []
+    },
+    "appearance": {
+      "path": "pages/24_Appearance_Studio.py",
+      "seconds": 3.547,
+      "exceptions": []
+    },
+    "batch_jobs": {
+      "path": "pages/23_Batch_Prediction_Jobs.py",
+      "seconds": 9.149,
+      "exceptions": []
+    },
+    "command_center": {
+      "path": "pages/25_Command_Center.py",
+      "seconds": 11.013,
+      "exceptions": []
+    },
+    "project_portfolio": {
+      "path": "pages/28_Project_Portfolio.py",
+      "seconds": 4.555,
+      "exceptions": []
+    },
+    "executive_overview": {
+      "path": "pages/27_Executive_Overview.py",
+      "seconds": 9.16,
+      "exceptions": []
+    },
+    "governance_hub": {
+      "path": "pages/30_Governance_Hub.py",
+      "seconds": 2.977,
+      "exceptions": []
+    },
+    "activity_center": {
+      "path": "pages/29_Activity_Risk_Center.py",
+      "seconds": 6.699,
+      "exceptions": []
+    },
+    "data_library": {
+      "path": "pages/33_Data_Model_Library.py",
+      "seconds": 10.981,
+      "exceptions": []
+    },
+    "ml_autolab": {
+      "path": "pages/34_ML_AutoLab.py",
+      "seconds": 13.022,
+      "exceptions": []
+    },
+    "release_readiness": {
+      "path": "pages/32_Release_Readiness_Lineage.py",
+      "seconds": 17.826,
+      "exceptions": []
+    },
+    "evidence_studio": {
+      "path": "pages/31_Evidence_Package_Studio.py",
+      "seconds": 17.92,
+      "exceptions": []
+    },
+    "data_coverage": {
+      "path": "pages/36_Data_Coverage_Center.py",
+      "seconds": 4.07,
+      "exceptions": []
+    },
+    "data_intelligence": {
+      "path": "pages/38_Data_Intelligence_Hub.py",
+      "seconds": 3.42,
+      "exceptions": []
+    },
+    "double_data_ml": {
+      "path": "pages/35_Double_Data_ML.py",
+      "seconds": 9.893,
+      "exceptions": []
+    },
+    "five_x_data_ml": {
+      "path": "pages/37_5X_Data_ML.py",
+      "seconds": 7.655,
+      "exceptions": []
+    },
+    "internet_research": {
+      "path": "pages/42_Internet_Research_Hub.py",
+      "seconds": 3.318,
+      "exceptions": []
+    },
+    "research_assets": {
+      "path": "pages/41_Research_Assets.py",
+      "seconds": 3.394,
+      "exceptions": []
+    },
+    "knowledge_warehouse": {
+      "path": "pages/39_Knowledge_Warehouse.py",
+      "seconds": 3.588,
+      "exceptions": []
+    },
+    "analytics_observability": {
+      "path": "pages/40_Analytics_Observability.py",
+      "seconds": 6.32,
+      "exceptions": []
+    },
+    "scientific_curation": {
+      "path": "pages/43_Scientific_Data_Curation.py",
+      "seconds": 4.532,
+      "exceptions": []
+    },
+    "performance_jobs": {
+      "path": "pages/44_Performance_Job_Center.py",
+      "seconds": 4.694,
+      "exceptions": []
+    },
+    "real_evidence_studio": {
+      "path": "pages/46_Real_Evidence_Studio.py",
+      "seconds": 3.277,
+      "exceptions": []
+    },
+    "scientific_release_gate": {
+      "path": "pages/45_Scientific_Release_Gate.py",
+      "seconds": 8.743,
+      "exceptions": []
+    },
+    "benchmark_leakage_lab": {
+      "path": "pages/47_Benchmark_Leakage_Lab.py",
+      "seconds": 3.308,
+      "exceptions": []
+    },
+    "document_intelligence": {
+      "path": "pages/49_Document_Intelligence_Center.py",
+      "seconds": 3.299,
+      "exceptions": []
+    },
+    "document_history": {
+      "path": "pages/50_Document_Extraction_History.py",
+      "seconds": 3.31,
+      "exceptions": []
+    },
+    "evidence_review_queue": {
+      "path": "pages/48_Evidence_Review_Queue.py",
+      "seconds": 3.393,
+      "exceptions": []
+    },
+    "ocr_layout_review": {
+      "path": "pages/51_OCR_Layout_Review.py",
+      "seconds": 3.203,
+      "exceptions": []
+    },
+    "batch_document_processor": {
+      "path": "pages/52_Batch_Document_Processor.py",
+      "seconds": 3.197,
+      "exceptions": []
+    },
+    "document_knowledge_search": {
+      "path": "pages/53_Document_Knowledge_Search.py",
+      "seconds": 3.196,
+      "exceptions": []
+    },
+    "document_evidence_bridge": {
+      "path": "pages/54_Document_Evidence_Bridge.py",
+      "seconds": 3.23,
+      "exceptions": []
+    },
+    "primer_crispr_codon": {
+      "path": "pages/58_Primer_CRISPR_Codon_Studio.py",
+      "seconds": 3.523,
+      "exceptions": []
+    },
+    "demo_data_hub": {
+      "path": "pages/55_Demo_Data_Hub.py",
+      "seconds": 3.861,
+      "exceptions": []
+    },
+    "variant_annotation": {
+      "path": "pages/57_Variant_Annotation_Workbench.py",
+      "seconds": 5.337,
+      "exceptions": []
+    },
+    "fastq_genomics_qc": {
+      "path": "pages/56_FASTQ_Genomics_QC.py",
+      "seconds": 7.536,
+      "exceptions": []
+    },
+    "transcriptomics_expression": {
+      "path": "pages/59_Transcriptomics_Expression_Lab.py",
+      "seconds": 4.36,
+      "exceptions": []
+    },
+    "protein_annotation": {
+      "path": "pages/60_Protein_Annotation_Proteomics.py",
+      "seconds": 4.593,
+      "exceptions": []
+    },
+    "structural_bioinformatics": {
+      "path": "pages/61_Structural_Bioinformatics.py",
+      "seconds": 4.459,
+      "exceptions": []
+    },
+    "admet_discovery": {
+      "path": "pages/62_ADMET_Drug_Discovery.py",
+      "seconds": 3.141,
+      "exceptions": []
+    },
+    "pathway_network": {
+      "path": "pages/63_Pathway_Network_Analysis.py",
+      "seconds": 3.362,
+      "exceptions": []
+    },
+    "omics_integration": {
+      "path": "pages/66_Omics_Integration_Hub.py",
+      "seconds": 3.575,
+      "exceptions": []
+    },
+    "wetlab_biotechnology": {
+      "path": "pages/64_Wet_Lab_Biotechnology.py",
+      "seconds": 4.152,
+      "exceptions": []
+    },
+    "microbiology_metagenomics": {
+      "path": "pages/65_Microbiology_Metagenomics.py",
+      "seconds": 5.17,
+      "exceptions": []
+    },
+    "alignment_phylogeny": {
+      "path": "pages/68_Alignment_Phylogeny.py",
+      "seconds": 4.388,
+      "exceptions": []
+    },
+    "bioinformatics_capabilities": {
+      "path": "pages/67_Bioinformatics_Capability_Center.py",
+      "seconds": 4.278,
+      "exceptions": []
+    },
+    "scientific_data_readiness": {
+      "path": "pages/69_Scientific_Data_Readiness.py",
+      "seconds": 4.271,
+      "exceptions": []
+    },
+    "discovery_command_center": {
+      "path": "pages/88_Discovery_Command_Center.py",
+      "seconds": 5.922,
+      "exceptions": []
+    },
+    "lab_analytics_command_center": {
+      "path": "pages/89_Lab_Analytics_Command_Center.py",
+      "seconds": 3.204,
+      "exceptions": []
+    },
+    "compliance_research_readiness": {
+      "path": "pages/72_Compliance_Research_Readiness.py",
+      "seconds": 3.691,
+      "exceptions": []
+    },
+    "scientific_evidence_excellence": {
+      "path": "pages/73_Scientific_Evidence_Excellence.py",
+      "seconds": 4.163,
+      "exceptions": []
+    },
+    "platform_quality": {
+      "path": "pages/71_Platform_Quality_Center.py",
+      "seconds": 4.502,
+      "exceptions": []
+    },
+    "biotechnology_projects": {
+      "path": "pages/77_Biotechnology_Project_Center.py",
+      "seconds": 3.886,
+      "exceptions": []
+    },
+    "dti_validation_evidence": {
+      "path": "pages/74_DTI_Validation_Evidence_Center.py",
+      "seconds": 4.617,
+      "exceptions": []
+    },
+    "realworld_operations_evidence": {
+      "path": "pages/75_Real_World_Operations_Evidence.py",
+      "seconds": 4.395,
+      "exceptions": []
+    },
+    "ppi_interaction_ml": {
+      "path": "pages/78_Protein_Interaction_ML.py",
+      "seconds": 6.473,
+      "exceptions": []
+    },
+    "comparative_pathogen_genomics": {
+      "path": "pages/79_Comparative_Pathogen_Genomics.py",
+      "seconds": 3.884,
+      "exceptions": []
+    },
+    "cancer_genomics": {
+      "path": "pages/81_Cancer_Genomics.py",
+      "seconds": 3.955,
+      "exceptions": []
+    },
+    "single_cell_heterogeneity": {
+      "path": "pages/80_Single_Cell_Heterogeneity.py",
+      "seconds": 4.151,
+      "exceptions": []
+    },
+    "metagenomics_pipeline": {
+      "path": "pages/82_Metagenomics_Pipeline.py",
+      "seconds": 6.425,
+      "exceptions": []
+    },
+    "biointel_copilot": {
+      "path": "pages/83_BioIntel_Copilot.py",
+      "seconds": 3.778,
+      "exceptions": []
+    },
+    "connected_data_explorer": {
+      "path": "pages/84_Connected_Data_Explorer.py",
+      "seconds": 3.783,
+      "exceptions": []
+    },
+    "provider_integration_center": {
+      "path": "pages/85_Provider_Integration_Center.py",
+      "seconds": 3.71,
+      "exceptions": []
+    },
+    "privacy_security": {
+      "path": "pages/86_Privacy_Security_Center.py",
+      "seconds": 2.742,
+      "exceptions": []
+    },
+    "store_readiness": {
+      "path": "pages/87_Store_Readiness_Center.py",
+      "seconds": 2.218,
+      "exceptions": []
+    },
+    "final_assurance": {
+      "path": "pages/76_Final_Assurance_Center.py",
+      "seconds": 6.277,
+      "exceptions": []
+    }
+  }
+}

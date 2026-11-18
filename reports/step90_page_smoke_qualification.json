@@ -1,0 +1,762 @@
+{
+  "schema": "biointel.step90.page-smoke.v1",
+  "pages": 94,
+  "passed_count": 94,
+  "failed_count": 0,
+  "passed": true,
+  "max_seconds": 27.51,
+  "results": [
+    {
+      "page": "app.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "returncode": 0,
+      "seconds": 11.13
+    },
+    {
+      "page": "pages/0_Quick_Start.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "returncode": 0,
+      "seconds": 10.55
+    },
+    {
+      "page": "pages/10_External_Databases.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "returncode": 0,
+      "seconds": 11.04
+    },
+    {
+      "page": "pages/11_Experiment_Registry.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "returncode": 0,
+      "seconds": 11.07
+    },
+    {
+      "page": "pages/12_API_Deployment.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "returncode": 0,
+      "seconds": 10.63
+    },
+    {
+      "page": "pages/13_ChEMBL_Dataset_Builder.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "returncode": 0,
+      "seconds": 10.93
+    },
+    {
+      "page": "pages/14_External_Validation_Drift.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "returncode": 0,
+      "seconds": 15.62
+    },
+    {
+      "page": "pages/15_Audit_Release.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "returncode": 0,
+      "seconds": 15.55
+    },
+    {
+      "page": "pages/16_Batch_Sequence_Analysis.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "returncode": 0,
+      "seconds": 11.35
+    },
+    {
+      "page": "pages/17_Local_Data_Manager.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "returncode": 0,
+      "seconds": 10.46
+    },
+    {
+      "page": "pages/18_Workspace_Backup_Restore.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "returncode": 0,
+      "seconds": 10.36
+    },
+    {
+      "page": "pages/19_System_Diagnostics.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "returncode": 0,
+      "seconds": 16.16
+    },
+    {
+      "page": "pages/1_Sequence_Analyzer.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "returncode": 0,
+      "seconds": 12.1
+    },
+    {
+      "page": "pages/20_Workflow_Dashboard.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "returncode": 0,
+      "seconds": 16.83
+    },
+    {
+      "page": "pages/21_Dataset_Registry_Lineage.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "returncode": 0,
+      "seconds": 11.28
+    },
+    {
+      "page": "pages/22_Model_Lifecycle.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "returncode": 0,
+      "seconds": 16.01
+    },
+    {
+      "page": "pages/23_Batch_Prediction_Jobs.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "returncode": 0,
+      "seconds": 15.56
+    },
+    {
+      "page": "pages/24_Appearance_Studio.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "returncode": 0,
+      "seconds": 10.19
+    },
+    {
+      "page": "pages/25_Command_Center.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "returncode": 0,
+      "seconds": 16.44
+    },
+    {
+      "page": "pages/26_Research_Report_Studio.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "returncode": 0,
+      "seconds": 10.21
+    },
+    {
+      "page": "pages/27_Executive_Overview.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "returncode": 0,
+      "seconds": 16.43
+    },
+    {
+      "page": "pages/28_Project_Portfolio.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "returncode": 0,
+      "seconds": 10.84
+    },
+    {
+      "page": "pages/29_Activity_Risk_Center.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "returncode": 0,
+      "seconds": 16.28
+    },
+    {
+      "page": "pages/2_Sequence_Comparison.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "returncode": 0,
+      "seconds": 10.38
+    },
+    {
+      "page": "pages/30_Governance_Hub.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "returncode": 0,
+      "seconds": 10.09
+    },
+    {
+      "page": "pages/31_Evidence_Package_Studio.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "returncode": 0,
+      "seconds": 27.51
+    },
+    {
+      "page": "pages/32_Release_Readiness_Lineage.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "returncode": 0,
+      "seconds": 27.5
+    },
+    {
+      "page": "pages/33_Data_Model_Library.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "returncode": 0,
+      "seconds": 21.79
+    },
+    {
+      "page": "pages/34_ML_AutoLab.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "returncode": 0,
+      "seconds": 23.79
+    },
+    {
+      "page": "pages/35_Double_Data_ML.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "returncode": 0,
+      "seconds": 23.38
+    },
+    {
+      "page": "pages/36_Data_Coverage_Center.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "returncode": 0,
+      "seconds": 10.37
+    },
+    {
+      "page": "pages/37_5X_Data_ML.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "returncode": 0,
+      "seconds": 22.92
+    },
+    {
+      "page": "pages/38_Data_Intelligence_Hub.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "returncode": 0,
+      "seconds": 12.34
+    },
+    {
+      "page": "pages/39_Knowledge_Warehouse.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "returncode": 0,
+      "seconds": 11.55
+    },
+    {
+      "page": "pages/3_Drug_SMILES_Analyzer.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "returncode": 0,
+      "seconds": 12.01
+    },
+    {
+      "page": "pages/40_Analytics_Observability.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "returncode": 0,
+      "seconds": 12.77
+    },
+    {
+      "page": "pages/41_Research_Assets.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "returncode": 0,
+      "seconds": 11.13
+    },
+    {
+      "page": "pages/42_Internet_Research_Hub.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "returncode": 0,
+      "seconds": 10.96
+    },
+    {
+      "page": "pages/43_Scientific_Data_Curation.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "returncode": 0,
+      "seconds": 11.67
+    },
+    {
+      "page": "pages/44_Performance_Job_Center.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "returncode": 0,
+      "seconds": 11.77
+    },
+    {
+      "page": "pages/45_Scientific_Release_Gate.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "returncode": 0,
+      "seconds": 17.0
+    },
+    {
+      "page": "pages/46_Real_Evidence_Studio.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "returncode": 0,
+      "seconds": 10.37
+    },
+    {
+      "page": "pages/47_Benchmark_Leakage_Lab.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "returncode": 0,
+      "seconds": 10.53
+    },
+    {
+      "page": "pages/48_Evidence_Review_Queue.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "returncode": 0,
+      "seconds": 10.33
+    },
+    {
+      "page": "pages/49_Document_Intelligence_Center.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "returncode": 0,
+      "seconds": 10.59
+    },
+    {
+      "page": "pages/4_DTI_Feature_Builder.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "returncode": 0,
+      "seconds": 10.65
+    },
+    {
+      "page": "pages/50_Document_Extraction_History.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "returncode": 0,
+      "seconds": 10.63
+    },
+    {
+      "page": "pages/51_OCR_Layout_Review.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "returncode": 0,
+      "seconds": 10.13
+    },
+    {
+      "page": "pages/52_Batch_Document_Processor.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "returncode": 0,
+      "seconds": 10.32
+    },
+    {
+      "page": "pages/53_Document_Knowledge_Search.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "returncode": 0,
+      "seconds": 10.23
+    },
+    {
+      "page": "pages/54_Document_Evidence_Bridge.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "returncode": 0,
+      "seconds": 10.33
+    },
+    {
+      "page": "pages/55_Demo_Data_Hub.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "returncode": 0,
+      "seconds": 11.18
+    },
+    {
+      "page": "pages/56_FASTQ_Genomics_QC.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "returncode": 0,
+      "seconds": 13.5
+    },
+    {
+      "page": "pages/57_Variant_Annotation_Workbench.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "returncode": 0,
+      "seconds": 11.9
+    },
+    {
+      "page": "pages/58_Primer_CRISPR_Codon_Studio.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "returncode": 0,
+      "seconds": 10.65
+    },
+    {
+      "page": "pages/59_Transcriptomics_Expression_Lab.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "returncode": 0,
+      "seconds": 10.67
+    },
+    {
+      "page": "pages/5_Model_Training.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "returncode": 0,
+      "seconds": 13.64
+    },
+    {
+      "page": "pages/60_Protein_Annotation_Proteomics.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "returncode": 0,
+      "seconds": 11.56
+    },
+    {
+      "page": "pages/61_Structural_Bioinformatics.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "returncode": 0,
+      "seconds": 12.84
+    },
+    {
+      "page": "pages/62_ADMET_Drug_Discovery.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "returncode": 0,
+      "seconds": 12.01
+    },
+    {
+      "page": "pages/63_Pathway_Network_Analysis.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "returncode": 0,
+      "seconds": 10.27
+    },
+    {
+      "page": "pages/64_Wet_Lab_Biotechnology.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "returncode": 0,
+      "seconds": 11.86
+    },
+    {
+      "page": "pages/65_Microbiology_Metagenomics.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "returncode": 0,
+      "seconds": 12.34
+    },
+    {
+      "page": "pages/66_Omics_Integration_Hub.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "returncode": 0,
+      "seconds": 11.25
+    },
+    {
+      "page": "pages/67_Bioinformatics_Capability_Center.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "returncode": 0,
+      "seconds": 12.26
+    },
+    {
+      "page": "pages/68_Alignment_Phylogeny.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "returncode": 0,
+      "seconds": 12.55
+    },
+    {
+      "page": "pages/69_Scientific_Data_Readiness.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "returncode": 0,
+      "seconds": 12.66
+    },
+    {
+      "page": "pages/6_DTI_Predictor.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "returncode": 0,
+      "seconds": 15.73
+    },
+    {
+      "page": "pages/70_BioIntel_Studio.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "returncode": 0,
+      "seconds": 18.94
+    },
+    {
+      "page": "pages/71_Platform_Quality_Center.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "returncode": 0,
+      "seconds": 14.29
+    },
+    {
+      "page": "pages/72_Compliance_Research_Readiness.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "returncode": 0,
+      "seconds": 12.34
+    },
+    {
+      "page": "pages/73_Scientific_Evidence_Excellence.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "returncode": 0,
+      "seconds": 13.05
+    },
+    {
+      "page": "pages/74_DTI_Validation_Evidence_Center.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "returncode": 0,
+      "seconds": 12.54
+    },
+    {
+      "page": "pages/75_Real_World_Operations_Evidence.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "returncode": 0,
+      "seconds": 12.45
+    },
+    {
+      "page": "pages/76_Final_Assurance_Center.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "returncode": 0,
+      "seconds": 16.27
+    },
+    {
+      "page": "pages/77_Biotechnology_Project_Center.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "returncode": 0,
+      "seconds": 11.05
+    },
+    {
+      "page": "pages/78_Protein_Interaction_ML.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "returncode": 0,
+      "seconds": 15.72
+    },
+    {
+      "page": "pages/79_Comparative_Pathogen_Genomics.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "returncode": 0,
+      "seconds": 12.16
+    },
+    {
+      "page": "pages/7_Model_Evaluation.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "returncode": 0,
+      "seconds": 17.81
+    },
+    {
+      "page": "pages/80_Single_Cell_Heterogeneity.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "returncode": 0,
+      "seconds": 12.74
+    },
+    {
+      "page": "pages/81_Cancer_Genomics.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "returncode": 0,
+      "seconds": 11.8
+    },
+    {
+      "page": "pages/82_Metagenomics_Pipeline.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "returncode": 0,
+      "seconds": 12.89
+    },
+    {
+      "page": "pages/83_BioIntel_Copilot.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "returncode": 0,
+      "seconds": 11.45
+    },
+    {
+      "page": "pages/84_Connected_Data_Explorer.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "returncode": 0,
+      "seconds": 11.45
+    },
+    {
+      "page": "pages/85_Provider_Integration_Center.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "returncode": 0,
+      "seconds": 11.57
+    },
+    {
+      "page": "pages/86_Privacy_Security_Center.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "returncode": 0,
+      "seconds": 11.04
+    },
+    {
+      "page": "pages/87_Store_Readiness_Center.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "returncode": 0,
+      "seconds": 11.22
+    },
+    {
+      "page": "pages/88_Discovery_Command_Center.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "returncode": 0,
+      "seconds": 13.52
+    },
+    {
+      "page": "pages/89_Lab_Analytics_Command_Center.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "returncode": 0,
+      "seconds": 7.7
+    },
+    {
+      "page": "pages/8_Data_Quality_Activity.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "returncode": 0,
+      "seconds": 7.89
+    },
+    {
+      "page": "pages/90_Clinical_Pharma_Validation_Center.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "returncode": 0,
+      "seconds": 7.94
+    },
+    {
+      "page": "pages/91_Real_External_Validation_Center.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "returncode": 0,
+      "seconds": 7.95
+    },
+    {
+      "page": "pages/92_Independent_Validation_Accelerator.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "returncode": 0,
+      "seconds": 7.85
+    },
+    {
+      "page": "pages/9_Project_Status.py",
+      "passed": true,
+      "exceptions": [],
+      "errors": [],
+      "returncode": 0,
+      "seconds": 8.88
+    }
+  ]
+}

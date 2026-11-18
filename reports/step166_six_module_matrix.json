@@ -1,0 +1,65 @@
+{
+  "schema": "biointel.step166.six-module-matrix.v1",
+  "modules": [
+    {
+      "module_key": "epigenomics_chromatin",
+      "title": "Epigenomics & Chromatin",
+      "previous_practical_rating": 4.5,
+      "software_score": 10.0,
+      "native_research_depth_score": 10.0,
+      "focused_upgrade": "Replicate concordance, consensus peaks, differential accessibility, blacklist/QC and evidence gates",
+      "external_confirmation_required": "BWA/SAMtools/MACS2/deepTools, pinned genome references, IDR and orthogonal chromatin validation",
+      "controlled_release_eligible": false
+    },
+    {
+      "module_key": "long_read_core",
+      "title": "Long-Read Assembly & T2T",
+      "previous_practical_rating": 4.5,
+      "software_score": 10.0,
+      "native_research_depth_score": 10.0,
+      "focused_upgrade": "Read N50/N90, platform-aware QC, resource/checkpoint planning, contiguity and assembly evidence gates",
+      "external_confirmation_required": "Flye/hifiasm, polishing, BUSCO/Merqury and contamination qualification",
+      "controlled_release_eligible": false
+    },
+    {
+      "module_key": "one_health_environmental",
+      "title": "One Health & Environmental Genomics",
+      "previous_practical_rating": 4.5,
+      "software_score": 10.0,
+      "native_research_depth_score": 10.0,
+      "focused_upgrade": "Control-aware contamination, source/site harmonization, diversity, temporal clusters and AMR linkage",
+      "external_confirmation_required": "Pinned taxonomy/AMR databases, epidemiological review and confirmatory testing",
+      "controlled_release_eligible": false
+    },
+    {
+      "module_key": "pangenome_core",
+      "title": "Pangenome Execution",
+      "previous_practical_rating": 4.5,
+      "software_score": 10.0,
+      "native_research_depth_score": 10.0,
+      "focused_upgrade": "Core/accessory classification, graph integrity, bubble/path support, resource planning and evidence gates",
+      "external_confirmation_required": "minigraph/vg/ODGI/GraphAligner, qualified assemblies and benchmark graph validation",
+      "controlled_release_eligible": false
+    },
+    {
+      "module_key": "strain_microbiome",
+      "title": "Strain-Resolved Microbiome",
+      "previous_practical_rating": 4.5,
+      "software_score": 10.0,
+      "native_research_depth_score": 10.0,
+      "focused_upgrade": "CLR compositional analysis, strain confidence, contamination, functions, differential and mock-community gates",
+      "external_confirmation_required": "Pinned strain databases, authentic task model, mock-community and orthogonal validation",
+      "controlled_release_eligible": false
+    },
+    {
+      "module_key": "structural_variant_repeat",
+      "title": "Structural Variant & Repeat Expansion",
+      "previous_practical_rating": 4.5,
+      "software_score": 10.0,
+      "native_research_depth_score": 10.0,
+      "focused_upgrade": "Breakpoint support, carrier burden, repeat expansion, association screening and release gates",
+      "external_confirmation_required": "SAMtools/bcftools/Sniffles/ExpansionHunter, read-level review and orthogonal confirmation",
+      "controlled_release_eligible": false
+    }
+  ]
+}

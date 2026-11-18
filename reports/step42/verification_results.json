@@ -1,0 +1,1740 @@
+{
+  "check_count": 15,
+  "checks": {
+    "api_load": {
+      "availability_percent": 100.0,
+      "classification": "measured_controlled_environment_qualification",
+      "concurrency": 8,
+      "duration_seconds": 3.7242936639995605,
+      "error_rate_percent": 0.0,
+      "external_boundary": "This is a bounded local qualification run, not a 24-hour cloud or 90-day production SLA record.",
+      "failures": 0,
+      "mean_latency_ms": 71.77241162247356,
+      "observed_at": "2026-07-05T07:31:36.624605+00:00",
+      "p50_latency_ms": 67.87111300036486,
+      "p95_latency_ms": 79.40377299928514,
+      "p99_latency_ms": 251.65847499920346,
+      "passed": true,
+      "requests": 400,
+      "requests_per_second": 107.40291611978728,
+      "schema": "biointel.step42.api-load.v1",
+      "successes": 400
+    },
+    "clinical_reference": {
+      "classification": "documented_control_qualification",
+      "existing": [
+        "reports/scientific_evidence.sqlite3",
+        "pages/73_Scientific_Evidence_Excellence.py",
+        "docs/SCIENTIFIC_EVIDENCE_AND_VALIDATION.md"
+      ],
+      "external_boundary": "Clinical-reference coverage is not clinical deployment or ethics approval.",
+      "missing": [],
+      "observed_at": "2026-07-05T07:33:16.095066+00:00",
+      "passed": true,
+      "required": [
+        "reports/scientific_evidence.sqlite3",
+        "pages/73_Scientific_Evidence_Excellence.py",
+        "docs/SCIENTIFIC_EVIDENCE_AND_VALIDATION.md"
+      ],
+      "schema": "biointel.step42.clinical_reference.v1"
+    },
+    "cloud_iac": {
+      "checks": {
+        "autoscaling": true,
+        "aws_reference": true,
+        "azure_reference": true,
+        "configurable_image": true,
+        "configurable_namespace": true,
+        "gcp_reference": true,
+        "helm_release": true,
+        "monitoring": true,
+        "multi_zone_topology": true,
+        "network_policy": true,
+        "persistent_storage": true,
+        "resource_limits": true,
+        "terraform_module": true
+      },
+      "classification": "static_cloud_readiness_qualification",
+      "controls_passed": 13,
+      "controls_total": 13,
+      "external_boundary": "Cloud-neutral IaC readiness is not cloud billing, regional traffic or production scale history.",
+      "observed_at": "2026-07-05T07:33:16.084265+00:00",
+      "passed": true,
+      "schema": "biointel.step42.cloud-iac.v1",
+      "terraform_files": [
+        "deploy/terraform/main.tf",
+        "deploy/terraform/modules/biointel/main.tf",
+        "deploy/terraform/variables.tf"
+      ]
+    },
+    "customer_acceptance_kit": {
+      "classification": "documented_control_qualification",
+      "existing": [
+        "data/templates/step41_customer_validation_manifest.json",
+        "docs/operations/STEP41_REALWORLD_EVIDENCE.md",
+        "tests/operations/test_step41_realworld_operations.py"
+      ],
+      "external_boundary": "Acceptance kit readiness is not a customer signature.",
+      "missing": [],
+      "observed_at": "2026-07-05T07:33:16.094786+00:00",
+      "passed": true,
+      "required": [
+        "data/templates/step41_customer_validation_manifest.json",
+        "docs/operations/STEP41_REALWORLD_EVIDENCE.md",
+        "tests/operations/test_step41_realworld_operations.py"
+      ],
+      "schema": "biointel.step42.customer_acceptance_kit.v1"
+    },
+    "database_drill": {
+      "classification": "measured_controlled_environment_qualification",
+      "database_count": 18,
+      "external_boundary": "This is a measured repository restore qualification, not an independently witnessed production DR event.",
+      "observed_at": "2026-07-05T07:31:21.901696+00:00",
+      "passed": true,
+      "records": [
+        {
+          "bytes": 6144000,
+          "checksum_match": true,
+          "database": "analytics.sqlite3",
+          "foreign_key_issues": 0,
+          "integrity": "ok",
+          "restored_sha256": "520faba50913a5dc341cb8096990b58f00cd94547bede62df374880d0f81d1fd",
+          "source_sha256": "520faba50913a5dc341cb8096990b58f00cd94547bede62df374880d0f81d1fd"
+        },
+        {
+          "bytes": 86016,
+          "checksum_match": true,
+          "database": "api_security.sqlite3",
+          "foreign_key_issues": 0,
+          "integrity": "ok",
+          "restored_sha256": "edd12c02c133f1ca2f282b7d223d58a8f851de49335c3a54551d51dad772b678",
+          "source_sha256": "edd12c02c133f1ca2f282b7d223d58a8f851de49335c3a54551d51dad772b678"
+        },
+        {
+          "bytes": 4464640,
+          "checksum_match": true,
+          "database": "assets.sqlite3",
+          "foreign_key_issues": 0,
+          "integrity": "ok",
+          "restored_sha256": "f4711a29f0e6f886b780e4ac4e45b7b67395a2a69f9e51fef41c9afb806ceb83",
+          "source_sha256": "f4711a29f0e6f886b780e4ac4e45b7b67395a2a69f9e51fef41c9afb806ceb83"
+        },
+        {
+          "bytes": 1957888,
+          "checksum_match": true,
+          "database": "datasets.sqlite3",
+          "foreign_key_issues": 0,
+          "integrity": "ok",
+          "restored_sha256": "4e8cb27b9f2d691be428a7f1d8e0d2c41f8d9ef6bf97c782000b70f8a5374d2f",
+          "source_sha256": "4e8cb27b9f2d691be428a7f1d8e0d2c41f8d9ef6bf97c782000b70f8a5374d2f"
+        },
+        {
+          "bytes": 1085440,
+          "checksum_match": true,
+          "database": "document_history.sqlite3",
+          "foreign_key_issues": 0,
+          "integrity": "ok",
+          "restored_sha256": "177b66d86bddf38844af1597577d624fb04cea854c80562dd63909859882edae",
+          "source_sha256": "177b66d86bddf38844af1597577d624fb04cea854c80562dd63909859882edae"
+        },
+        {
+          "bytes": 2678784,
+          "checksum_match": true,
+          "database": "evidence.sqlite3",
+          "foreign_key_issues": 0,
+          "integrity": "ok",
+          "restored_sha256": "66bbb54620b2e71e17bce0433bf46820171032e3c769dbfba1fa43c45a3e3b5d",
+          "source_sha256": "66bbb54620b2e71e17bce0433bf46820171032e3c769dbfba1fa43c45a3e3b5d"
+        },
+        {
+          "bytes": 626688,
+          "checksum_match": true,
+          "database": "experiments.sqlite3",
+          "foreign_key_issues": 0,
+          "integrity": "ok",
+          "restored_sha256": "fcca2cb1783afade85e9db1d642af6dcc82c121b8f21e185d4d22c91e2bbcb8a",
+          "source_sha256": "fcca2cb1783afade85e9db1d642af6dcc82c121b8f21e185d4d22c91e2bbcb8a"
+        },
+        {
+          "bytes": 2777088,
+          "checksum_match": true,
+          "database": "feature_cache.sqlite3",
+          "foreign_key_issues": 0,
+          "integrity": "ok",
+          "restored_sha256": "7c6ccf087fd4d9e979d3a05292d709e748794713c733b4779ac9b4bcbcb8f28f",
+          "source_sha256": "7c6ccf087fd4d9e979d3a05292d709e748794713c733b4779ac9b4bcbcb8f28f"
+        },
+        {
+          "bytes": 208896,
+          "checksum_match": true,
+          "database": "internet_downloads.sqlite3",
+          "foreign_key_issues": 0,
+          "integrity": "ok",
+          "restored_sha256": "0c41ad34141872881faa8695df4031755bd0d5ca00b94ec44b9763ade960cd9a",
+          "source_sha256": "0c41ad34141872881faa8695df4031755bd0d5ca00b94ec44b9763ade960cd9a"
+        },
+        {
+          "bytes": 335872,
+          "checksum_match": true,
+          "database": "jobs.sqlite3",
+          "foreign_key_issues": 0,
+          "integrity": "ok",
+          "restored_sha256": "b722f731142eae95d0c1d8cfa938e8f9b272dec5cae18acd91a218af5ac477db",
+          "source_sha256": "b722f731142eae95d0c1d8cfa938e8f9b272dec5cae18acd91a218af5ac477db"
+        },
+        {
+          "bytes": 16117760,
+          "checksum_match": true,
+          "database": "knowledge.sqlite3",
+          "foreign_key_issues": 0,
+          "integrity": "ok",
+          "restored_sha256": "53e09144f58ee6b5c10fbddab53be5631a494665f78e69b9ce2d6071c3b965cd",
+          "source_sha256": "53e09144f58ee6b5c10fbddab53be5631a494665f78e69b9ce2d6071c3b965cd"
+        },
+        {
+          "bytes": 516096,
+          "checksum_match": true,
+          "database": "projects.sqlite3",
+          "foreign_key_issues": 0,
+          "integrity": "ok",
+          "restored_sha256": "039d58aa00a50e7ca7c677c2746a62ea94b045d5a5fbe7bc79a61043a6e16538",
+          "source_sha256": "039d58aa00a50e7ca7c677c2746a62ea94b045d5a5fbe7bc79a61043a6e16538"
+        },
+        {
+          "bytes": 36864,
+          "checksum_match": true,
+          "database": "prospective_validation.sqlite3",
+          "foreign_key_issues": 0,
+          "integrity": "ok",
+          "restored_sha256": "757ffcfd5b1dc467b4dff8ace0a1fe44fdcb103d78472e68398c59fd8412226c",
+          "source_sha256": "757ffcfd5b1dc467b4dff8ace0a1fe44fdcb103d78472e68398c59fd8412226c"
+        },
+        {
+          "bytes": 61440,
+          "checksum_match": true,
+          "database": "realworld_evidence.sqlite3",
+          "foreign_key_issues": 0,
+          "integrity": "ok",
+          "restored_sha256": "4238c05f1a47ca0e78b0d45f606a4e48a9434fd3e9328c9698cdb028ef0c9eb0",
+          "source_sha256": "4238c05f1a47ca0e78b0d45f606a4e48a9434fd3e9328c9698cdb028ef0c9eb0"
+        },
+        {
+          "bytes": 1159168,
+          "checksum_match": true,
+          "database": "relationships.sqlite3",
+          "foreign_key_issues": 0,
+          "integrity": "ok",
+          "restored_sha256": "89bbc585445a9680c4db69d79f0ac9ff64c902ee1b848521430755b36d344fe1",
+          "source_sha256": "89bbc585445a9680c4db69d79f0ac9ff64c902ee1b848521430755b36d344fe1"
+        },
+        {
+          "bytes": 16769024,
+          "checksum_match": true,
+          "database": "scientific_evidence.sqlite3",
+          "foreign_key_issues": 0,
+          "integrity": "ok",
+          "restored_sha256": "9225cb0e28d24b3c6ffe2b7f7586206e2928a7e4fc26023ac76d97c82dc2b6f9",
+          "source_sha256": "9225cb0e28d24b3c6ffe2b7f7586206e2928a7e4fc26023ac76d97c82dc2b6f9"
+        },
+        {
+          "bytes": 49152,
+          "checksum_match": true,
+          "database": "tenants.sqlite3",
+          "foreign_key_issues": 0,
+          "integrity": "ok",
+          "restored_sha256": "f057e2c5ff65043e596ad2936401c42117a64a16c742219a29de60c54f394a13",
+          "source_sha256": "f057e2c5ff65043e596ad2936401c42117a64a16c742219a29de60c54f394a13"
+        },
+        {
+          "bytes": 98304,
+          "checksum_match": true,
+          "database": "validation_evidence.sqlite3",
+          "foreign_key_issues": 0,
+          "integrity": "ok",
+          "restored_sha256": "0b8af4ec427c557a1ed7d60b549702e12fc376f42aaca92b30a023f164bab581",
+          "source_sha256": "0b8af4ec427c557a1ed7d60b549702e12fc376f42aaca92b30a023f164bab581"
+        }
+      ],
+      "rpo_minutes": 0.0,
+      "rto_minutes": 0.02178131803332993,
+      "schema": "biointel.step42.database-drill.v1",
+      "total_bytes": 55173120
+    },
+    "gxp_controls": {
+      "classification": "documented_control_qualification",
+      "existing": [
+        "src/biointel/compliance/ledger.py",
+        "src/biointel/compliance/control_catalog.py",
+        "docs/REGULATORY_GXP_READINESS.md",
+        "tests/test_step36_maturity_frameworks.py"
+      ],
+      "external_boundary": "Control qualification is not 180 days of GxP operating history.",
+      "missing": [],
+      "observed_at": "2026-07-05T07:33:16.093725+00:00",
+      "passed": true,
+      "required": [
+        "src/biointel/compliance/ledger.py",
+        "src/biointel/compliance/control_catalog.py",
+        "docs/REGULATORY_GXP_READINESS.md",
+        "tests/test_step36_maturity_frameworks.py"
+      ],
+      "schema": "biointel.step42.gxp_controls.v1"
+    },
+    "ha_rehearsal": {
+      "classification": "application_instance_failover_rehearsal",
+      "external_boundary": "This validates application-instance continuity, not a multi-zone cloud failover or 90-day HA record.",
+      "failed_requests": 0,
+      "failover_duration_seconds": 0.727732545001345,
+      "observed_at": "2026-07-05T07:33:16.058321+00:00",
+      "passed": true,
+      "requests_after_failover": 50,
+      "requests_before_failover": 50,
+      "schema": "biointel.step42.ha-rehearsal.v1",
+      "successful_failovers": 1,
+      "total_duration_seconds": 16.33030304699969
+    },
+    "kubernetes_static": {
+      "chart_files": 16,
+      "checks": {
+        "horizontal_autoscaling": true,
+        "ingress": true,
+        "liveness_probe": true,
+        "migration_job": true,
+        "network_policy": true,
+        "persistent_storage": true,
+        "pod_disruption_budget": true,
+        "readiness_probe": true,
+        "replicas": true,
+        "resources": true,
+        "security_context": true,
+        "service_monitor": true,
+        "startup_probe": true,
+        "topology_spread": true
+      },
+      "classification": "static_deployment_qualification",
+      "controls_passed": 14,
+      "controls_total": 14,
+      "external_boundary": "Static Helm/IaC qualification is not Kubernetes conformance certification or production cluster history.",
+      "observed_at": "2026-07-05T07:33:16.081435+00:00",
+      "parse_failures": [],
+      "passed": true,
+      "schema": "biointel.step42.kubernetes-static.v1",
+      "yaml_files_parsed_without_template_errors": 3
+    },
+    "multitenant_isolation": {
+      "classification": "measured_controlled_environment_qualification",
+      "confirmed_isolation_breaches": 0,
+      "duration_seconds": 3.5236056610010564,
+      "expected_cross_tenant_denials": 1000,
+      "external_boundary": "This is controlled-environment isolation evidence, not 90-day history with independent customer tenants.",
+      "isolation_tests": 1000,
+      "observed_at": "2026-07-05T07:31:25.426225+00:00",
+      "operations_per_second": 851.4006073959196,
+      "passed": true,
+      "resources_created": 1000,
+      "schema": "biointel.step42.multitenant-isolation.v1",
+      "storage_traversal_attempts_blocked": 1000,
+      "tenant_count": 5
+    },
+    "publication_bundle": {
+      "bundle": "reports/step42/publication_bundle",
+      "checksums_verified": true,
+      "classification": "review_ready_reproducibility_package",
+      "external_boundary": "The package is publication-ready but has no DOI, journal acceptance or independent peer-review decision.",
+      "file_count": 9,
+      "files": [
+        "CITATION.cff",
+        "DATA_AVAILABILITY.md",
+        "LIMITATIONS.md",
+        "MANUSCRIPT_DRAFT.md",
+        "METHODS.md",
+        "REPRODUCIBILITY.json",
+        "checksums.sha256",
+        "step40_validation_qualification.json",
+        "uci_wdbc_real_benchmark.json"
+      ],
+      "has_doi": false,
+      "observed_at": "2026-07-05T07:33:16.091780+00:00",
+      "passed": true,
+      "peer_reviewed": false,
+      "schema": "biointel.step42.publication-bundle.v1"
+    },
+    "regulatory_dossier": {
+      "classification": "documented_control_qualification",
+      "existing": [
+        "docs/REGULATORY_GXP_READINESS.md",
+        "docs/operations/STEP41_REALWORLD_EVIDENCE.md",
+        "STEP40_IMPLEMENTATION_REPORT.md",
+        "STEP41_IMPLEMENTATION_REPORT.md"
+      ],
+      "external_boundary": "Dossier completeness is not regulatory approval.",
+      "missing": [],
+      "observed_at": "2026-07-05T07:33:16.092682+00:00",
+      "passed": true,
+      "required": [
+        "docs/REGULATORY_GXP_READINESS.md",
+        "docs/operations/STEP41_REALWORLD_EVIDENCE.md",
+        "STEP40_IMPLEMENTATION_REPORT.md",
+        "STEP41_IMPLEMENTATION_REPORT.md"
+      ],
+      "schema": "biointel.step42.regulatory_dossier.v1"
+    },
+    "release_provenance": {
+      "_type": "https://in-toto.io/Statement/v1",
+      "classification": "unsigned_local_slsa_compatible_provenance",
+      "external_boundary": "This provenance is checksum-verifiable but not a Sigstore transparency-log signature until executed in OIDC-enabled CI.",
+      "passed": true,
+      "predicate": {
+        "buildDefinition": {
+          "buildType": "https://biointel.local/build/step42",
+          "externalParameters": {
+            "mode": "deterministic-local-qualification",
+            "version": "4.2.0"
+          },
+          "internalParameters": {},
+          "resolvedDependencies": [
+            {
+              "bytes": 55,
+              "name": "src/biointel/__init__.py",
+              "sha256": "c06b70acd24421bd4ec8967d51035e546ceccf769840c57ca150bada40b0dfd8"
+            },
+            {
+              "bytes": 56,
+              "name": "src/biointel/__main__.py",
+              "sha256": "25e96a5ee07d4e35dc4422281baabfc409dc28e3f448dd27f804819b11da6cfa"
+            },
+            {
+              "bytes": 41,
+              "name": "src/biointel/api/__init__.py",
+              "sha256": "fe181591df893b7945f0344b5d2d0b4b8fde5bd1534903fbdf3d3962673f5685"
+            },
+            {
+              "bytes": 68680,
+              "name": "src/biointel/api/main.py",
+              "sha256": "8b46342f5a60e68b778e20ee1193ec925534d510e0d1fd9bba09908fc2f5412f"
+            },
+            {
+              "bytes": 15965,
+              "name": "src/biointel/api/middleware.py",
+              "sha256": "c45f1bd1bd5e6eba9dac0bf0a9ea6eaea8da11c9000a57cf5f82fd9833d607ec"
+            },
+            {
+              "bytes": 6571,
+              "name": "src/biointel/api/schemas.py",
+              "sha256": "2d28052041b948bc2dab8147fc5a3b4836067bdf4b1a47ae65de91085da290b6"
+            },
+            {
+              "bytes": 15486,
+              "name": "src/biointel/api/security_store.py",
+              "sha256": "447d65b69d713187d794b0c8d968e4f8655aaaf1987d28e53b14a9f9217ffd7e"
+            },
+            {
+              "bytes": 46,
+              "name": "src/biointel/assets/__init__.py",
+              "sha256": "be85d7453116e0302f3c0a8fc817ec53a90549e219fb912e04716d25f97f1cae"
+            },
+            {
+              "bytes": 34228,
+              "name": "src/biointel/assets/research_assets.py",
+              "sha256": "ab0bea49918959b0e88017d25e1ef4e8e5f5f670153c64f016957e0cfdfa8873"
+            },
+            {
+              "bytes": 1909,
+              "name": "src/biointel/bioinformatics_capabilities.py",
+              "sha256": "64f7a660b2ab384b98b6e60b214b7deca2339e616e1691b24164b0923ecec083"
+            },
+            {
+              "bytes": 30,
+              "name": "src/biointel/biotech/__init__.py",
+              "sha256": "55ebd1f46f0b17c42f597f5605c39cf208999ce09a38cfc8c7918c2f710b455c"
+            },
+            {
+              "bytes": 6113,
+              "name": "src/biointel/biotech/assays.py",
+              "sha256": "90673451ca202c9724781c1b98cd2c972ed5a50b41274660b6f1508d2afc3918"
+            },
+            {
+              "bytes": 1697,
+              "name": "src/biointel/biotech/experimental_design.py",
+              "sha256": "e03c8b23c6efb403fd22ab35b4f31d758016e3aea2b156a0ed40262bfe8be790"
+            },
+            {
+              "bytes": 0,
+              "name": "src/biointel/chemistry/__init__.py",
+              "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            },
+            {
+              "bytes": 2837,
+              "name": "src/biointel/chemistry/admet.py",
+              "sha256": "f3b71c6e8594806dba61e6f8db08f1b42a092f6324b25d68d7710829473eb1bf"
+            },
+            {
+              "bytes": 11302,
+              "name": "src/biointel/chemistry/common_compounds.py",
+              "sha256": "c2ce635c321e5eddd163d0e6cb64616d699f12f816188ac4e34f315a5cada60a"
+            },
+            {
+              "bytes": 2372,
+              "name": "src/biointel/chemistry/descriptors.py",
+              "sha256": "72459a075ae586e562a0a523c59a5ff04b0480f1310e32ec2299ba47b4a6e1fb"
+            },
+            {
+              "bytes": 1815,
+              "name": "src/biointel/chemistry/fingerprints.py",
+              "sha256": "7a34a4b3f037d6012eb0f56ef8e41cee6adc24e91997f05736260bc7e9c96977"
+            },
+            {
+              "bytes": 418,
+              "name": "src/biointel/chemistry/molecule_visualization.py",
+              "sha256": "0fd1cca851ced6d03785781c8ef67b286cc4219adc763c4bb5eed95aa5abec3e"
+            },
+            {
+              "bytes": 1743,
+              "name": "src/biointel/chemistry/smiles_validator.py",
+              "sha256": "a62e440be5fd8e243e08c1cd0c8fdccb7b53298ac809e012310417c82d7d4911"
+            },
+            {
+              "bytes": 44864,
+              "name": "src/biointel/cli.py",
+              "sha256": "de0a428dcf3d1fb5f81b26ea8babe78d25b671af3e13088b92dc611fe243e252"
+            },
+            {
+              "bytes": 290,
+              "name": "src/biointel/compliance/__init__.py",
+              "sha256": "560654c31d7d6e9dbad2af79af1b34751d5e3a79d23ca4452994cf36d9aac86c"
+            },
+            {
+              "bytes": 6160,
+              "name": "src/biointel/compliance/control_catalog.py",
+              "sha256": "1f78521715db5c36da98899385633d0710ed07d133b8d8f8e1a706892fd6b1e5"
+            },
+            {
+              "bytes": 24502,
+              "name": "src/biointel/compliance/ledger.py",
+              "sha256": "1e883664c64e0cbe8d63b7fb4cbfde0654585f8ef92c97dba6695f18c7fd83ca"
+            },
+            {
+              "bytes": 57,
+              "name": "src/biointel/data/__init__.py",
+              "sha256": "65893cf8cc357a134343ec754ca7cb422fac8f3d3ad841aa127271a8ef42e763"
+            },
+            {
+              "bytes": 1030,
+              "name": "src/biointel/data/assay_ontology.py",
+              "sha256": "f9bc8932b833da8cc492abd72c594982ada44b1792bbf98c98f9f1cd6ad269ba"
+            },
+            {
+              "bytes": 24499,
+              "name": "src/biointel/data/coverage_packs.py",
+              "sha256": "3ae7e3be08b3230e2ab861bccdeee384247230408a95354f2e49f93f5c8c09b1"
+            },
+            {
+              "bytes": 12681,
+              "name": "src/biointel/data/curation.py",
+              "sha256": "2ef8814b4b12dafcee7722988511ef3aa8cb137e34a5ba1261fb8f42eb89da48"
+            },
+            {
+              "bytes": 43096,
+              "name": "src/biointel/data/data_packs.py",
+              "sha256": "e5db822c587b7092192e1fa2b123a7ece033f3bc1d6d357741a4f09cd9144a34"
+            },
+            {
+              "bytes": 6620,
+              "name": "src/biointel/data/dataset_registry.py",
+              "sha256": "5298c81c9304fb4d414d47f83d9f4f1388c25d3482e04c141d118deb73cc4965"
+            },
+            {
+              "bytes": 16370,
+              "name": "src/biointel/data/evidence_registry.py",
+              "sha256": "25cbdfdbef0e6f6c5d94e43c3831733c4cf18f6290210c26a2e089b4d6a85596"
+            },
+            {
+              "bytes": 3577,
+              "name": "src/biointel/data/profiling.py",
+              "sha256": "04d77025d19dc4f1a755390f429c88cfb6fba1acbfcaf4c56e4f987ccdab8a17"
+            },
+            {
+              "bytes": 21214,
+              "name": "src/biointel/data/public_reference.py",
+              "sha256": "beaf506e6254726bb0fe7407db101afeb5e07b029da21982ad8c5b2b8e2732cd"
+            },
+            {
+              "bytes": 14509,
+              "name": "src/biointel/data/readiness.py",
+              "sha256": "d6cf791910664078c21635e1f160470c6506c8bc86cce7c3b060ed8577c8afcf"
+            },
+            {
+              "bytes": 8083,
+              "name": "src/biointel/data/real_evidence.py",
+              "sha256": "92758ca1d5af86a32166f645eddb2426e090154ba894fe730513416bca56ad8c"
+            },
+            {
+              "bytes": 18494,
+              "name": "src/biointel/data/relationship_integrity.py",
+              "sha256": "7269278e037c029a5fab126c89e71bc6f29fe5dd76239f8057d0b0b43e24e440"
+            },
+            {
+              "bytes": 16569,
+              "name": "src/biointel/data/scientific_registry.py",
+              "sha256": "708e7a61330667d690d4e88eafc661625cd0df82805cde788f22601574ec84ba"
+            },
+            {
+              "bytes": 2065,
+              "name": "src/biointel/data/streaming.py",
+              "sha256": "d1f3838fbca20b98b81d1199072e9f492b0993648ca527abdbbc2a65a182312a"
+            },
+            {
+              "bytes": 50,
+              "name": "src/biointel/database/__init__.py",
+              "sha256": "287b5a764b043ab72d6b5e31257e42a6865c3be327fa1f0cd35b4806ffd046e0"
+            },
+            {
+              "bytes": 7632,
+              "name": "src/biointel/database/core.py",
+              "sha256": "d2b6d26f42b29536d16bad8bd51a79d6312f33fabb415497dbd34da19f5351ef"
+            },
+            {
+              "bytes": 10488,
+              "name": "src/biointel/database/integrity_guards.py",
+              "sha256": "2c8a53dfad03a77dfc49b2b0ccb246f3901a9498abf342c30ea08c6a922d0501"
+            },
+            {
+              "bytes": 8588,
+              "name": "src/biointel/database/migrations.py",
+              "sha256": "0a2cca5f36e2136b43c0ae7e631cc3262c0779ae7f9910a5dc6a8ff9a7f6f262"
+            },
+            {
+              "bytes": 28634,
+              "name": "src/biointel/demo_workspace.py",
+              "sha256": "f5805a762c9ee0b67f3245acbe917b6f379fe39b7577ea34788c76e7c3c20f67"
+            },
+            {
+              "bytes": 227,
+              "name": "src/biointel/documents/__init__.py",
+              "sha256": "ad27995647cf70ee11cde82ef55c5792831b8fe8aafcff749a6fbf5c64879edb"
+            },
+            {
+              "bytes": 4188,
+              "name": "src/biointel/documents/bridge.py",
+              "sha256": "0c11417ae0648175e2393fb6dbca2b59ce6fcb27dbb48c2f47def0d0c8cd9dba"
+            },
+            {
+              "bytes": 16188,
+              "name": "src/biointel/documents/exporters.py",
+              "sha256": "3c0de8720c8e8cf26b4b2ac59d8be02a10b450a3fdb187cff21d3a8f0240b8df"
+            },
+            {
+              "bytes": 43470,
+              "name": "src/biointel/documents/extractor.py",
+              "sha256": "9116e22daef1d8a97f39078e0db0c8a1e18cd460f961b337f3affc9667038f14"
+            },
+            {
+              "bytes": 35063,
+              "name": "src/biointel/documents/history.py",
+              "sha256": "a2a1352a08b7a2b46bb1f7e89073e892dead40d635f83f5a8f378792ca35102c"
+            },
+            {
+              "bytes": 15209,
+              "name": "src/biointel/documents/intelligence.py",
+              "sha256": "5540530dcddf8ccdfb7ff4f71a90e52f1751cf0cf82bed795b0cdaef901df34e"
+            },
+            {
+              "bytes": 1972,
+              "name": "src/biointel/documents/knowledge.py",
+              "sha256": "3cacf07f2e9a0ee289173d5955f311aed7faeb8c7d692df19f5ae8c1bf158412"
+            },
+            {
+              "bytes": 9011,
+              "name": "src/biointel/documents/models.py",
+              "sha256": "dc7dce23bfe67ad07d85dc352a4fee19d1c9c232a8304e29af2a8b524bc21074"
+            },
+            {
+              "bytes": 4280,
+              "name": "src/biointel/documents/ocr.py",
+              "sha256": "0efe682fe9016895540eb8242225bd06fee33f2a45f46c2002f17661c6e4ed9a"
+            },
+            {
+              "bytes": 10057,
+              "name": "src/biointel/documents/security.py",
+              "sha256": "1412b58e4bfb84a516aba8ddf6e66a3ba6703aeaceb9ad72ed8d5c0076de99ba"
+            },
+            {
+              "bytes": 11711,
+              "name": "src/biointel/documents/service.py",
+              "sha256": "587a70c5349a27547080be310181602cf5dcdbd74a25fd56fcd7c99b45ab3099"
+            },
+            {
+              "bytes": 0,
+              "name": "src/biointel/dti/__init__.py",
+              "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            },
+            {
+              "bytes": 1450,
+              "name": "src/biointel/dti/activity.py",
+              "sha256": "dde210d6b039bb7a33e020d95211f4763cfe94f6646525ded3287565728534ab"
+            },
+            {
+              "bytes": 5450,
+              "name": "src/biointel/dti/batch_pipeline.py",
+              "sha256": "9191904fc09cfb6ba8c8a1404d948936d5727e77ee8ad7ebca1e79587a3bf386"
+            },
+            {
+              "bytes": 6528,
+              "name": "src/biointel/dti/checkpoints.py",
+              "sha256": "29fb1f7e2e61f6800c0c8340ad2cc65e03eb471da89ecb6cc6e9995092f095b0"
+            },
+            {
+              "bytes": 8288,
+              "name": "src/biointel/dti/dataset_validation.py",
+              "sha256": "ed7c2445663b1652b5f0e1f9bbcc9055652359a2ff51771709bf4b43b384cd0f"
+            },
+            {
+              "bytes": 1699,
+              "name": "src/biointel/dti/drug_features.py",
+              "sha256": "34db774e6a59d1920a8fd8c733aa20a8493e9db9e2ac2241b95241573a8d3dd5"
+            },
+            {
+              "bytes": 11301,
+              "name": "src/biointel/dti/feature_cache.py",
+              "sha256": "35429ab88b4a0506062621588582cfe21546d8cc8159a51e4c375239f74753f6"
+            },
+            {
+              "bytes": 2388,
+              "name": "src/biointel/dti/feature_combiner.py",
+              "sha256": "2d1e37d688701b896e16ca6029cbe119c40069101e982f3490117f1d41f50014"
+            },
+            {
+              "bytes": 9477,
+              "name": "src/biointel/dti/inference_matrix.py",
+              "sha256": "ae9b0d270fdba9e1471e2beb8f5c978253789e3865e0b31e0fdc8f289e601879"
+            },
+            {
+              "bytes": 14674,
+              "name": "src/biointel/dti/predictor.py",
+              "sha256": "868f6a8db5cbd526efa2bd16d1c99b3246b27b520a5eb47ced94fabf87109dbb"
+            },
+            {
+              "bytes": 3150,
+              "name": "src/biointel/dti/protein_features.py",
+              "sha256": "71ca312e9bcbd6ae22947fd5f927cafd0527cb37714d165aae70d26a1a9e01e6"
+            },
+            {
+              "bytes": 6474,
+              "name": "src/biointel/dti/validation_suite.py",
+              "sha256": "e05c75365a6f1cedcd8d4be8387a95128b6d7741ae62ab04d72d715259a31f3e"
+            },
+            {
+              "bytes": 288,
+              "name": "src/biointel/engineering/__init__.py",
+              "sha256": "3ed97dd1af62f41b71d9aaf47388b89a1f8ae1e40e2d74809a340f3cf51df474"
+            },
+            {
+              "bytes": 4324,
+              "name": "src/biointel/engineering/quality_gates.py",
+              "sha256": "b8e1f564a99b95d89b8fb753c1d07f2ad127ccf36440fc336d8e41b6cc7eb758"
+            },
+            {
+              "bytes": 19873,
+              "name": "src/biointel/engineering/readiness.py",
+              "sha256": "7329b946b17cfb051d21d8b700f31a52cc3ee26ff02ba87359ba8f73dfdf2123"
+            },
+            {
+              "bytes": 2850,
+              "name": "src/biointel/engineering/release.py",
+              "sha256": "be495ac67b6a160afaeb8e6a16a3774cdf147333759cdc07cc62e26dceab0429"
+            },
+            {
+              "bytes": 99,
+              "name": "src/biointel/enterprise/__init__.py",
+              "sha256": "c87a47b6c72581eba046bbd86b94493e56e91ef3f51363982e65fbb706e0bd70"
+            },
+            {
+              "bytes": 13162,
+              "name": "src/biointel/enterprise/saas.py",
+              "sha256": "2154d883a6c44b9d8b3490a404b31f906456c0d29fa378db2dd1018f5bfb55d7"
+            },
+            {
+              "bytes": 292,
+              "name": "src/biointel/fair/__init__.py",
+              "sha256": "75c518e4f49f6a675823f1dbb439e6f3628eb7af280086c4cec8d986c8d55300"
+            },
+            {
+              "bytes": 3189,
+              "name": "src/biointel/fair/digital_object.py",
+              "sha256": "dac724f5b4735319baabbef0c8ed2e71ee4ab191ec54f9c681a003be0f259876"
+            },
+            {
+              "bytes": 7924,
+              "name": "src/biointel/fair/evaluator.py",
+              "sha256": "ece3f70090fb6aeafdd678ba1fc318794f8a749f8e75d46566b03252eb45fc3c"
+            },
+            {
+              "bytes": 31,
+              "name": "src/biointel/genomics/__init__.py",
+              "sha256": "90f1aef62e3483b1b3500cd0cf20c8760e64c795b911ee30bdaa05a4d60520ba"
+            },
+            {
+              "bytes": 2566,
+              "name": "src/biointel/genomics/annotations.py",
+              "sha256": "5e85ad76c4f5a0468f12b28a3255cb69d36911efdb594b0b443caa84d9c0bc4a"
+            },
+            {
+              "bytes": 1552,
+              "name": "src/biointel/genomics/assembly.py",
+              "sha256": "51bbd32ed8c85049d66d7158355cceadc343cabb0f8cac9b5eb566cbc7dd79c1"
+            },
+            {
+              "bytes": 2555,
+              "name": "src/biointel/genomics/codon.py",
+              "sha256": "f7497e1fa161ee5937ef858e6f52621eba4d4491070ebbae7758d1dfc64b0c0c"
+            },
+            {
+              "bytes": 4552,
+              "name": "src/biointel/genomics/design.py",
+              "sha256": "d4152607140c4fbbfc3d211c43cb5842b418fd0ed98a58cdb85fd265f5b2c355"
+            },
+            {
+              "bytes": 2024,
+              "name": "src/biointel/genomics/external_tools.py",
+              "sha256": "718ba36ee0589c3df871cd8d4a99f3c71158f84f9e2f476991ab1c79879128f2"
+            },
+            {
+              "bytes": 10760,
+              "name": "src/biointel/genomics/fastq.py",
+              "sha256": "fd33c58e5c2bbc01157479d9bdd52474f9697a48b8e668e5ca35399b9146558e"
+            },
+            {
+              "bytes": 2146,
+              "name": "src/biointel/genomics/phylogeny.py",
+              "sha256": "6808362ca3b41184be9f86ce77ba7d38d8bc8a015ae3b66798ba91556fce0f5e"
+            },
+            {
+              "bytes": 10443,
+              "name": "src/biointel/genomics/variants.py",
+              "sha256": "371b91b9c3b7a2eebcb8cffb04b2b17d473631d60756afe5519b885d579032f2"
+            },
+            {
+              "bytes": 66,
+              "name": "src/biointel/governance/__init__.py",
+              "sha256": "75e7a83e3ede3a0fd71f983fee854e0f32395a690b7d1231e7241933d58e3f7e"
+            },
+            {
+              "bytes": 24823,
+              "name": "src/biointel/governance/governance_registry.py",
+              "sha256": "3dd01f395cc08906e84540adca4d1dfd98a38fdafc323f29db0f0ad984b12dbd"
+            },
+            {
+              "bytes": 27562,
+              "name": "src/biointel/governance/reproducibility.py",
+              "sha256": "137473de467c7b11ae8d9fdfa18349f6fb61a99f871baf789a169bc611ed8c74"
+            },
+            {
+              "bytes": 58,
+              "name": "src/biointel/integrations/__init__.py",
+              "sha256": "3b82985cf0b9a530ecec5d471a1837efffa856b7202259591f367501734fa778"
+            },
+            {
+              "bytes": 4119,
+              "name": "src/biointel/integrations/bindingdb.py",
+              "sha256": "1f2a4ac255b65f4da6cf7dd7fc7dd05329bc309f0539d570f73eb242e6434322"
+            },
+            {
+              "bytes": 5036,
+              "name": "src/biointel/integrations/cache.py",
+              "sha256": "ac292641fd08b9a438f8d56d3d7159bb7d0a44f76e2e7c01eac9799b3ee2c6d4"
+            },
+            {
+              "bytes": 2286,
+              "name": "src/biointel/integrations/chembl.py",
+              "sha256": "68988aafa4d76fd364daa1d04375103cfcca904f3c4a79d8965eb839d294eacd"
+            },
+            {
+              "bytes": 11205,
+              "name": "src/biointel/integrations/chembl_dataset.py",
+              "sha256": "351fdc771d59833e02f45f79fef6b5ab1dee9ab204510ccbdba94043bc93c4f1"
+            },
+            {
+              "bytes": 6183,
+              "name": "src/biointel/integrations/chembl_evidence.py",
+              "sha256": "c325c52d36ce809dc755a27b4e765074ee4932489c2188fc5f838697ea1dd0ed"
+            },
+            {
+              "bytes": 4927,
+              "name": "src/biointel/integrations/http_client.py",
+              "sha256": "3871a3a6097809e8ae0bf4cd3a9ce129da15c3d7a0b394a4f42889afe22b1e80"
+            },
+            {
+              "bytes": 3582,
+              "name": "src/biointel/integrations/pubchem_bioassay.py",
+              "sha256": "a2de7fad4cb49654d85a69175c18d2d2f65bdff3f1851736b181aa59ebf3bcf4"
+            },
+            {
+              "bytes": 13486,
+              "name": "src/biointel/integrations/public_sync.py",
+              "sha256": "90032637a91d7a457741b70cca17df6609a624f71cb169cd5a2344cdfc222f1e"
+            },
+            {
+              "bytes": 3812,
+              "name": "src/biointel/integrations/uniprot.py",
+              "sha256": "d9d2a32333aba12678e94973060f2c02c83b360a4a6668f480b8e1b6a1b4f134"
+            },
+            {
+              "bytes": 38,
+              "name": "src/biointel/intelligence/__init__.py",
+              "sha256": "37a7d3511ebcb77217a549584f2904a6a541291f358183fc4c745eeb17b65da3"
+            },
+            {
+              "bytes": 6794,
+              "name": "src/biointel/intelligence/data_intelligence.py",
+              "sha256": "229888ff52c2d06f87c0101d708d39cd68d36663ed3c2192d68c4159e2e40727"
+            },
+            {
+              "bytes": 39901,
+              "name": "src/biointel/intelligence/knowledge_warehouse.py",
+              "sha256": "b9884550cf6a98aa435d8d4c3058d0b9f9d2b349baaa4f1c13b7db00f3614877"
+            },
+            {
+              "bytes": 65,
+              "name": "src/biointel/internet/__init__.py",
+              "sha256": "341cf9042cc05fde22bde1d836c3de1e518edcdd8c05306bf743f6b80954d50f"
+            },
+            {
+              "bytes": 2487,
+              "name": "src/biointel/internet/connectivity.py",
+              "sha256": "12c3a6042423c1b4c7c82b3f97c7b57eb4fc965e6bd49c330ece6502cdd38c40"
+            },
+            {
+              "bytes": 5831,
+              "name": "src/biointel/internet/download_registry.py",
+              "sha256": "f4fecb9cd0921e780f915f0099a401276f9eb0bfe5f97ae279846042c32a9b45"
+            },
+            {
+              "bytes": 11613,
+              "name": "src/biointel/internet/downloader.py",
+              "sha256": "d45baeb4614b65597c3559681430f243f5d8036ee3b5fccf1b87b6c047e0084c"
+            },
+            {
+              "bytes": 4346,
+              "name": "src/biointel/internet/network_policy.py",
+              "sha256": "7ee94db818317cc2f00475920b7fba06d07989f8f195de9191672a8db18e63e8"
+            },
+            {
+              "bytes": 3369,
+              "name": "src/biointel/internet/pubchem.py",
+              "sha256": "b428be0c31f06559e22a69d8c9d03ae202a7abb75ffa949e3d8f69629a3cd6a5"
+            },
+            {
+              "bytes": 6344,
+              "name": "src/biointel/internet/rcsb.py",
+              "sha256": "3eaa0553f1c7f5f9e280db751c1f435289354442b5e327f743484e47c3fe9240"
+            },
+            {
+              "bytes": 105,
+              "name": "src/biointel/jobs/__init__.py",
+              "sha256": "b635688be356e7c283dc3e8f8962236b75d96ca5c8c38144f13430c2b9f659ab"
+            },
+            {
+              "bytes": 32519,
+              "name": "src/biointel/jobs/local_queue.py",
+              "sha256": "956e36f74160a00439437c5d96d27a3a7aad390bde5e74c37c60a46dc52a5abd"
+            },
+            {
+              "bytes": 6564,
+              "name": "src/biointel/jobs/worker.py",
+              "sha256": "36a157db6f31553ccbf6c42fef056bedbf4fbc81f5fc0c07586dd5977a34a03d"
+            },
+            {
+              "bytes": 223,
+              "name": "src/biointel/maturity/__init__.py",
+              "sha256": "48c92cecdd810619d48f535fdb719a868a8e8e1ebb4f48966bed0dd7c2570c66"
+            },
+            {
+              "bytes": 22288,
+              "name": "src/biointel/maturity/framework.py",
+              "sha256": "2415e9e588dc2eb238321dbb52bb1f5eebbe57523d0e62bb6e4886144d321e0a"
+            },
+            {
+              "bytes": 35,
+              "name": "src/biointel/microbiology/__init__.py",
+              "sha256": "3e4c3aa951a64c355e64a3700cc045100fc887616258b31bbcf1c968e848a39e"
+            },
+            {
+              "bytes": 1686,
+              "name": "src/biointel/microbiology/metagenomics.py",
+              "sha256": "4a57b0d10962956fdbec6d40d57279258298bc3a617f45df8a718a0132ef9fb4"
+            },
+            {
+              "bytes": 312,
+              "name": "src/biointel/multitenancy/__init__.py",
+              "sha256": "61253512c97a1e3ab67e4f90e28e66b7f9042590bc8391b6d1b91354ed5073bc"
+            },
+            {
+              "bytes": 847,
+              "name": "src/biointel/multitenancy/context.py",
+              "sha256": "3c224dc4ab83fa75bcf3b7a0818f3dde8b8711a53ac0b5486f1961ee1056f3d7"
+            },
+            {
+              "bytes": 3289,
+              "name": "src/biointel/multitenancy/middleware.py",
+              "sha256": "f71eb69e4f66fbcade248bae3bf13848c7798049972fe2ddb79d6822d6fb780e"
+            },
+            {
+              "bytes": 1485,
+              "name": "src/biointel/multitenancy/storage.py",
+              "sha256": "445ad0be6a44938571414a01e7abac40f060c99ddcc04cbad976b228ada52d4e"
+            },
+            {
+              "bytes": 12444,
+              "name": "src/biointel/multitenancy/store.py",
+              "sha256": "f9f3cff40b0843cae749d025d26e1d4e2d8fc0392c5a931ff0c3926c609e6053"
+            },
+            {
+              "bytes": 44,
+              "name": "src/biointel/observability/__init__.py",
+              "sha256": "28eeb828f24eab2c2a0558c7316260584ad800454190ad7739202c8842161947"
+            },
+            {
+              "bytes": 27199,
+              "name": "src/biointel/observability/analytics_store.py",
+              "sha256": "ee61bc2a4705f1ba62b5439ad463436a37cdb041a91e46712698385df1771efe"
+            },
+            {
+              "bytes": 5795,
+              "name": "src/biointel/observability/metrics.py",
+              "sha256": "48b7b4a7c3b7f0d04c3729cf55824ded2c6a2d4f47f898c8ee7dc3c335c7abc9"
+            },
+            {
+              "bytes": 2304,
+              "name": "src/biointel/observability/performance.py",
+              "sha256": "b177779298f8cbce5754c0b5cfaf0517bfdb82968330887347e57e711127cc13"
+            },
+            {
+              "bytes": 1722,
+              "name": "src/biointel/observability/structured_logging.py",
+              "sha256": "7f685f3c5af80ecbcf230f40ebc0e36413d09405eda608612d5125a3819333f0"
+            },
+            {
+              "bytes": 28,
+              "name": "src/biointel/omics/__init__.py",
+              "sha256": "702cf798d971e7f5450c04f3922bde1e8d7a8b3968b8dda64db7adcaf62072b3"
+            },
+            {
+              "bytes": 1364,
+              "name": "src/biointel/omics/integration.py",
+              "sha256": "f15bf2372104dc4a52b5045ca897c4c3ef362d6d34400d5c92ce4bb68b64403c"
+            },
+            {
+              "bytes": 58,
+              "name": "src/biointel/operations/__init__.py",
+              "sha256": "09519551575ebc319f21d4b0d4e5f6a3c6bf2f08058e8f2882c1a8b3048bbb52"
+            },
+            {
+              "bytes": 14050,
+              "name": "src/biointel/operations/activity_center.py",
+              "sha256": "2c6d626b3ec9ce8a8934f5320ff8d244ba6edbd563097f15b48274bdd82c603a"
+            },
+            {
+              "bytes": 3943,
+              "name": "src/biointel/operations/executive_summary.py",
+              "sha256": "8721673ae2cb1b5697d965ff43524878355892f22663358a928b32da3d9b540c"
+            },
+            {
+              "bytes": 51,
+              "name": "src/biointel/portfolio/__init__.py",
+              "sha256": "3cf9b5067bdac17d1f4d0e0444b7b115d070e8195dd5a85cbf3a18adbfb693bc"
+            },
+            {
+              "bytes": 6109,
+              "name": "src/biointel/portfolio/project_exchange.py",
+              "sha256": "090f4db81877f81bcf4074f74f005300f30a3f3cbbad356daa7edeac5000bafa"
+            },
+            {
+              "bytes": 17149,
+              "name": "src/biointel/portfolio/project_registry.py",
+              "sha256": "2abf8fd362f4e300d014dcab1d4b62608710b5515184740cc7fcdc92bfd97a78"
+            },
+            {
+              "bytes": 67,
+              "name": "src/biointel/production/__init__.py",
+              "sha256": "07f5e2940b777e418f38e9fc9d0c6624bf0eb412813d05240034d2bf2c319b78"
+            },
+            {
+              "bytes": 5232,
+              "name": "src/biointel/production/config.py",
+              "sha256": "43c161601809f236f4a4dc1352b7bf5cf3c412c8a51acf6bf2d48efb06d37c98"
+            },
+            {
+              "bytes": 7466,
+              "name": "src/biointel/production/readiness.py",
+              "sha256": "3838e91c657659a8c129d13376f5b2708cbcafc91f4f145f90cb5000e8486df6"
+            },
+            {
+              "bytes": 1339,
+              "name": "src/biointel/production/scaling.py",
+              "sha256": "3b0b6afbb94eee176bf34fe472d7463d1242bc5448463f66a07a28756c78a8b9"
+            },
+            {
+              "bytes": 33,
+              "name": "src/biointel/proteomics/__init__.py",
+              "sha256": "c7db78bf486309c051905f5ef24ed8e47156d2832bad05bbfdfc309c90266400"
+            },
+            {
+              "bytes": 2807,
+              "name": "src/biointel/proteomics/annotation.py",
+              "sha256": "f58a7289d16869ca4a9e98d18c27826bf0c97f6cab6a21e25b6f8dad9b90caac"
+            },
+            {
+              "bytes": 2200,
+              "name": "src/biointel/provenance.py",
+              "sha256": "66d199a9a3e9494376d2420f2cfd7e945244e906a5940cce2e0aeb57532b6379"
+            },
+            {
+              "bytes": 405,
+              "name": "src/biointel/quality/__init__.py",
+              "sha256": "34dcac1b4b9fefe0bc220a438c2122d75198c5a373494e7bd37c614c3f0cec9b"
+            },
+            {
+              "bytes": 3717,
+              "name": "src/biointel/quality/capability_readiness.py",
+              "sha256": "cd4342898adc03e0b47cec4780fa20f96709d8e6e53ab98233f3cf5e24204d73"
+            },
+            {
+              "bytes": 6152,
+              "name": "src/biointel/quality/model_audit.py",
+              "sha256": "c76d33fbf34d5aff5e671237a56f10e694304c8d44c664dab878c65f4fdd7a58"
+            },
+            {
+              "bytes": 20355,
+              "name": "src/biointel/quality/scorecard.py",
+              "sha256": "bdd1333c7261cea564cda8da14b7077a888a8fbd8b8d6b3a5a44fe7e98706785"
+            },
+            {
+              "bytes": 690,
+              "name": "src/biointel/realworld/__init__.py",
+              "sha256": "2d0929e4bc14999d766a2b52e6e9ac525fb62cd7cf4ae712d05d5378ff2f54d6"
+            },
+            {
+              "bytes": 35355,
+              "name": "src/biointel/realworld/evidence.py",
+              "sha256": "08a206ec61035d830f8ee142dcf931e840317d16b7f4f5467f83c6825e206509"
+            },
+            {
+              "bytes": 13037,
+              "name": "src/biointel/realworld/verified_evidence.py",
+              "sha256": "d0c47351544aa8539be47d8831d6985bb18023e4a4e53616c0b8a735ba4020d9"
+            },
+            {
+              "bytes": 35,
+              "name": "src/biointel/reports/__init__.py",
+              "sha256": "1a048e1dbf98994f4406df80823915e607d4bfa6ae490a044b50f94bf587b078"
+            },
+            {
+              "bytes": 3956,
+              "name": "src/biointel/reports/model_card.py",
+              "sha256": "107db7b6af1fb1054776bb9efe4a51eb6eeef44272fbf3f5bfa5671c6a02386e"
+            },
+            {
+              "bytes": 3908,
+              "name": "src/biointel/reports/pdf_report.py",
+              "sha256": "7e7f9dd6e7e737af270188bfe03f073f27313309408749ee5177147a3c2841b9"
+            },
+            {
+              "bytes": 1182,
+              "name": "src/biointel/reports/release_bundle.py",
+              "sha256": "7b9b4f49b869f1017994fd5aa12c18ab30a9657479e8b13d257f04d335081cd1"
+            },
+            {
+              "bytes": 9216,
+              "name": "src/biointel/reports/workspace_report.py",
+              "sha256": "fde8feeb941c653d0abf7d878c7294c0da2ecc4905604f752641879bbd5b617a"
+            },
+            {
+              "bytes": 216,
+              "name": "src/biointel/reproducibility/__init__.py",
+              "sha256": "da958c8834490d7d26b170dda69a0b55b2d4b8655f7b6691c39bb051ccf7a799"
+            },
+            {
+              "bytes": 6916,
+              "name": "src/biointel/reproducibility/bundle.py",
+              "sha256": "ad0e274c5f92ca587904906c9378437aa500f8b9cdae4fda628931e973d56346"
+            },
+            {
+              "bytes": 276,
+              "name": "src/biointel/research/__init__.py",
+              "sha256": "e2f70bb92d967f8b2030d5fcce334635b0e9da3fa1d57697395238be05a27157"
+            },
+            {
+              "bytes": 7465,
+              "name": "src/biointel/research/readiness.py",
+              "sha256": "04ca4a72d58c621e159e8a0a862b9e79641c0dda99ddb8c9c013f2b9f5e9618b"
+            },
+            {
+              "bytes": 426,
+              "name": "src/biointel/scientific/__init__.py",
+              "sha256": "b88c6d3510819c6ddb9c0780d97afde68654c84bdaedbe7ecb712c8282627fb9"
+            },
+            {
+              "bytes": 3088,
+              "name": "src/biointel/scientific/assay_quality.py",
+              "sha256": "fbf6f777b964c84d3a848493191619297f15a58db1fd23ac9797e20171af7f12"
+            },
+            {
+              "bytes": 3362,
+              "name": "src/biointel/scientific/benchmark.py",
+              "sha256": "39c702cfb6d04e9ce31207027adc6b5a0729d7b209273b68f135371bbe11c2b6"
+            },
+            {
+              "bytes": 16873,
+              "name": "src/biointel/scientific/evidence_lake.py",
+              "sha256": "6cb7e77d1539c8badac17ab6382873a50406395e54711176ee00520329e1a7d3"
+            },
+            {
+              "bytes": 8769,
+              "name": "src/biointel/scientific/excellence.py",
+              "sha256": "2056df7d134359ed8ceca94dc26a49deddbc7062fd1c006a77d56058de76efb0"
+            },
+            {
+              "bytes": 5915,
+              "name": "src/biointel/scientific/prospective.py",
+              "sha256": "4153e63ea50e440d782114d8f3dd8da56c7f7dc051e094dc808ad4f047f731d7"
+            },
+            {
+              "bytes": 5252,
+              "name": "src/biointel/scientific/provider_hub.py",
+              "sha256": "96893e712ff204a6b13da229a31945eae5fbec3a488090606e53c7b357e88206"
+            },
+            {
+              "bytes": 34339,
+              "name": "src/biointel/scientific/validation_depth.py",
+              "sha256": "e6e7d4eb4ab1796aaaca49620756a073c387e253ba585972710c69f124c8f665"
+            },
+            {
+              "bytes": 35,
+              "name": "src/biointel/sequence/__init__.py",
+              "sha256": "950d50f12945ab2c18eb17063ea94764a013e61a63f0cd3b446de836ddece0c5"
+            },
+            {
+              "bytes": 2958,
+              "name": "src/biointel/sequence/additional_analysis.py",
+              "sha256": "b787f0477de41e0bbbb1e91b3c1095512bb81c8df697fe4b2baf245f9d551f4b"
+            },
+            {
+              "bytes": 3878,
+              "name": "src/biointel/sequence/alignment.py",
+              "sha256": "f48e0e2503104717d6b181ba468ce9ccdd5b5e39456abf38b91ba7f911a8767d"
+            },
+            {
+              "bytes": 3493,
+              "name": "src/biointel/sequence/batch_analysis.py",
+              "sha256": "ea42cd6ce911e5fe47ae0e37cc1fb1e435c74b02a9f5847517053eb1c83364c3"
+            },
+            {
+              "bytes": 4224,
+              "name": "src/biointel/sequence/dna_analysis.py",
+              "sha256": "54f2d2092657cc171a674f62d7fc2e261890295cbc1a11090c2c33be73a069d2"
+            },
+            {
+              "bytes": 3547,
+              "name": "src/biointel/sequence/motif_analysis.py",
+              "sha256": "bd74272e9eeae12be35a8ed17ac2075638443b63ec81631cf8b138c5641bebf0"
+            },
+            {
+              "bytes": 3305,
+              "name": "src/biointel/sequence/orf_analysis.py",
+              "sha256": "ffe95bd12db3856e5f06f319de535213ed49b6c39c1dc6141991580fb8bf354c"
+            },
+            {
+              "bytes": 2953,
+              "name": "src/biointel/sequence/parser.py",
+              "sha256": "ecf8ecd2a4eaf2adef336f33906e958398e1cafbf710f53681dae790eccf86ad"
+            },
+            {
+              "bytes": 2823,
+              "name": "src/biointel/sequence/protein_analysis.py",
+              "sha256": "68cfce9537ec3595177a7a9cec479507d10c36fcffbb349070d7ba4c0867eb89"
+            },
+            {
+              "bytes": 1636,
+              "name": "src/biointel/sequence/restriction_analysis.py",
+              "sha256": "5583a39a94bd6ce3306b29a729f263ed3713b8d5f09572c7f529deeee647b8f9"
+            },
+            {
+              "bytes": 2388,
+              "name": "src/biointel/sequence/validators.py",
+              "sha256": "607069181b3976462739ad01fb38da6bb7db68e76d5e5e3b049f5bd36fe11e44"
+            },
+            {
+              "bytes": 33,
+              "name": "src/biointel/structural/__init__.py",
+              "sha256": "7835bb0b7d0bf381b4b74bbe135817387105b19b2e49e5bab2a7105c1ec8dead"
+            },
+            {
+              "bytes": 2905,
+              "name": "src/biointel/structural/pdb_analysis.py",
+              "sha256": "a32924d86000424a446bb2dc95b22bd6d46ad46c3ced23bf5a336b358d68adfe"
+            },
+            {
+              "bytes": 30,
+              "name": "src/biointel/systems/__init__.py",
+              "sha256": "3b386317ac11b9b9205b64cca1cca2e32c42fa3d8426d532ef6fa87d7f47bf2c"
+            },
+            {
+              "bytes": 2751,
+              "name": "src/biointel/systems/pathways.py",
+              "sha256": "de51028ea912433057a55d7d28cb344442a3987a838cc6caa5de6f075a05f684"
+            },
+            {
+              "bytes": 0,
+              "name": "src/biointel/training/__init__.py",
+              "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            },
+            {
+              "bytes": 3874,
+              "name": "src/biointel/training/active_learning.py",
+              "sha256": "91dda68eca49518c5c6fc7f3d57333b2342e3c7d552d5c9dd295c0fec5f59815"
+            },
+            {
+              "bytes": 2414,
+              "name": "src/biointel/training/benchmark_suite.py",
+              "sha256": "1ced290502daf21b32f43696f236360a2e1925cc2accee388af4b9b124f31574"
+            },
+            {
+              "bytes": 1684,
+              "name": "src/biointel/training/capabilities.py",
+              "sha256": "cf290436e3bb8b681f7db96e686c0f590ac3ae5e18e8c543333b856f97488b3d"
+            },
+            {
+              "bytes": 3241,
+              "name": "src/biointel/training/champion_challenger.py",
+              "sha256": "344b3a7b071d92fb928916f5720b0e2f0570ab2722bdb4f704c1cf71b6beebb2"
+            },
+            {
+              "bytes": 2939,
+              "name": "src/biointel/training/dataset_bias.py",
+              "sha256": "7d81eaeb15a55af839be874b3bc4f25b2470d22d7759689ee18be924bc90caee"
+            },
+            {
+              "bytes": 3538,
+              "name": "src/biointel/training/drift.py",
+              "sha256": "2c895d17da8c18e61ef93baaebead0210d512fcc343a111c3b7ddae47316eec1"
+            },
+            {
+              "bytes": 3642,
+              "name": "src/biointel/training/ensemble.py",
+              "sha256": "d17beca3fe30d531bb96ab5a115a0fd39e3423573faf34f092b9076b31875164"
+            },
+            {
+              "bytes": 6436,
+              "name": "src/biointel/training/evaluation.py",
+              "sha256": "6c6e97d4774d50e79cc6a7f9316aaaf6efe4c75231d7225a89db153a4294ab82"
+            },
+            {
+              "bytes": 3709,
+              "name": "src/biointel/training/experiment_registry.py",
+              "sha256": "cd6b83abf448bdc4e6399df748d77df9a4c442849a32bfba7207c3273dfc5b66"
+            },
+            {
+              "bytes": 4408,
+              "name": "src/biointel/training/explainability.py",
+              "sha256": "f2fe762ba2a3a2e8a0b5577cc0219ccef3821e3595247ba353039960c8e1235c"
+            },
+            {
+              "bytes": 3937,
+              "name": "src/biointel/training/external_validation.py",
+              "sha256": "646e07ec3b4bfe4257442d3b472e2b1b2524db0d8b20e542d9e0b415cee9373d"
+            },
+            {
+              "bytes": 7471,
+              "name": "src/biointel/training/feature_matrix.py",
+              "sha256": "61f93d39ccc41370b8767f025020589f1a74916c788fb2b1de8ae2fbbb394c6a"
+            },
+            {
+              "bytes": 2012,
+              "name": "src/biointel/training/group_calibration.py",
+              "sha256": "4b3bea12616c5fd51776a464007ddee552813e994fae73382b000753221312ae"
+            },
+            {
+              "bytes": 1897,
+              "name": "src/biointel/training/label_noise.py",
+              "sha256": "32edabf5cb59518d22f4c736c670e263abb7fe4b75f611c034b5ba9b16819992"
+            },
+            {
+              "bytes": 3107,
+              "name": "src/biointel/training/leakage_audit.py",
+              "sha256": "20227ee3ff7db82d8aa4394cbb9854e2c266baa214136a32ccdf519dd796db36"
+            },
+            {
+              "bytes": 6720,
+              "name": "src/biointel/training/model_artifact.py",
+              "sha256": "a87962fe4789cd998fc6a4fcc27b216364e95d8ace56fd5064ed4cc6c9461f21"
+            },
+            {
+              "bytes": 6177,
+              "name": "src/biointel/training/model_catalog.py",
+              "sha256": "f7e294937430eac1c23245fec89c375657c9df898756dd51dc8fe74c33df4c27"
+            },
+            {
+              "bytes": 1004,
+              "name": "src/biointel/training/onnx_export.py",
+              "sha256": "9d755bc7be5efb5015971abb3c5f19511dee109d959244045eb68548ac6649b8"
+            },
+            {
+              "bytes": 7059,
+              "name": "src/biointel/training/prospective_validation.py",
+              "sha256": "b20cd8c6ec0c153f6074d45ae842de3ed5bf144d4cf2144374b52b76aba95b63"
+            },
+            {
+              "bytes": 16711,
+              "name": "src/biointel/training/release_gate.py",
+              "sha256": "3d48ceb92c76444411f6875b182b361269e53e84248f7776e944130c0897a4a1"
+            },
+            {
+              "bytes": 592,
+              "name": "src/biointel/training/scaffold.py",
+              "sha256": "36693ad2d5c7c5792d1bc8be9c54f533cb9bbd3f373427463b32e16b8eff9283"
+            },
+            {
+              "bytes": 9376,
+              "name": "src/biointel/training/scientific_splits.py",
+              "sha256": "9666736bf2a6b613acf1a35ebb8d24daf37c32b33b28d2912e0338a08f30ab00"
+            },
+            {
+              "bytes": 1674,
+              "name": "src/biointel/training/subgroup_evaluation.py",
+              "sha256": "b61e7cff620ea3771e3a20b63e75c77d37f441354314253a1dfcee1f4b85ac67"
+            },
+            {
+              "bytes": 25451,
+              "name": "src/biointel/training/trainers.py",
+              "sha256": "6470178b581c8cb3667bce4096e04a9a6774c3d41377cfe6b371d8f451bdc9b2"
+            },
+            {
+              "bytes": 3792,
+              "name": "src/biointel/training/uncertainty.py",
+              "sha256": "fe75b3b9559d80983b06e61234bab69dfd131b1c0bf54fc95f8779cfdd8f63ef"
+            },
+            {
+              "bytes": 38,
+              "name": "src/biointel/transcriptomics/__init__.py",
+              "sha256": "98014518667d737ed05f1d6bd919bc5720e5866c5017c37de000322d5050d909"
+            },
+            {
+              "bytes": 4964,
+              "name": "src/biointel/transcriptomics/expression.py",
+              "sha256": "b2e8a6f91f0bee9266acde03f207f112661cd3de649663810b9a7496fe3883be"
+            },
+            {
+              "bytes": 38,
+              "name": "src/biointel/ui/__init__.py",
+              "sha256": "53e6ea38e9e83798c8bc1ce519f78503e920c3571bd894cc2f053732b6dcc1a3"
+            },
+            {
+              "bytes": 10020,
+              "name": "src/biointel/ui/components.py",
+              "sha256": "81afbce0a90f2fb2c8968a4f87f7ddb45199f9a48e41cf9c1299962c0444d4d8"
+            },
+            {
+              "bytes": 31630,
+              "name": "src/biointel/ui/navigation.py",
+              "sha256": "6baf12a2c93e956afcc108c389cc7638f11032419facb5135adf8114dd50687c"
+            },
+            {
+              "bytes": 2986,
+              "name": "src/biointel/ui/performance.py",
+              "sha256": "67124630b5df06f09f33b38961e2c588f3bbd5ea9c6385be767ff9ecf52a238e"
+            },
+            {
+              "bytes": 4326,
+              "name": "src/biointel/ui/preferences.py",
+              "sha256": "f80f9c7f3da52ec167882d34714f76a704763c4c85a9fc1adc8133abbea97eab"
+            },
+            {
+              "bytes": 62392,
+              "name": "src/biointel/ui/theme.py",
+              "sha256": "de518de6faeda6b82b8332d460d4eb4713a229ff7fcf0856286bfb1d72a11da7"
+            },
+            {
+              "bytes": 8184,
+              "name": "src/biointel/ui/visual_snapshot.py",
+              "sha256": "24538a9e4b9b2ff59866ec56e5e7b4506befeb1566ddbb425c490f0fba42b46e"
+            },
+            {
+              "bytes": 22,
+              "name": "src/biointel/utils/__init__.py",
+              "sha256": "eb5dba5155c5a1f6cfb7cb5f23cc3b446e07086e97eeee026ae84486067eba7d"
+            },
+            {
+              "bytes": 4322,
+              "name": "src/biointel/utils/audit_log.py",
+              "sha256": "66fbbf3ee57241bc801d15dcd2eb4aff3cfbd9b6cfda03f14cc9473d9a725e22"
+            },
+            {
+              "bytes": 831,
+              "name": "src/biointel/utils/constants.py",
+              "sha256": "10bfe6a1a173bfb122de12f944cf9b574e6a7a75aa961c4b126903322d9c4a8e"
+            },
+            {
+              "bytes": 13014,
+              "name": "src/biointel/utils/diagnostics.py",
+              "sha256": "855afc648eacd79d859ddb7dfe8767ff634e56e1cb275fb1f51fc463995229f4"
+            },
+            {
+              "bytes": 910,
+              "name": "src/biointel/utils/exceptions.py",
+              "sha256": "3e2b73df58e0df05280a4c422a408071725a5faff95df660a475fd71875d6cc4"
+            },
+            {
+              "bytes": 4043,
+              "name": "src/biointel/utils/integrity_cache.py",
+              "sha256": "7c4cb1a74f97be0d9a7bb1d23134346d33b5d50f14e054f90bda19212a03ad26"
+            },
+            {
+              "bytes": 3681,
+              "name": "src/biointel/utils/local_data.py",
+              "sha256": "44335c2832ea588dcaf5686ff06d839580b89ddcf34e1d2fb0a39a36127dcd73"
+            },
+            {
+              "bytes": 2983,
+              "name": "src/biointel/utils/runtime_cache.py",
+              "sha256": "95ba3d1d1e90cd54caa7f6b832fd16c5aeea65a80ed0096d0622404f7e99c7a3"
+            },
+            {
+              "bytes": 2810,
+              "name": "src/biointel/utils/workflow_status.py",
+              "sha256": "5e1740647c0b542587ffd302b2e78d2a55ab886caf8a46d3ecafd4faa8d67c22"
+            },
+            {
+              "bytes": 7166,
+              "name": "src/biointel/utils/workspace_backup.py",
+              "sha256": "88cce39940f305942787a51ffd3ad721a258d0658c130b2e46b7b01ee28af4e7"
+            },
+            {
+              "bytes": 402,
+              "name": "src/biointel/validation/__init__.py",
+              "sha256": "83187f37632c9a3c6d2c8a85e2e900735a4d74750daf3b70abb46946eaf88aa6"
+            },
+            {
+              "bytes": 10384,
+              "name": "src/biointel/validation/rigorous.py",
+              "sha256": "a6e026b1a9f9addb9b87c56e3c2502e749b460d7f1c96f833543b8ae49e197a2"
+            },
+            {
+              "bytes": 622,
+              "name": "config/architecture_rules.yaml",
+              "sha256": "d4ca82400af008dc8eb256dffd32ddae8b15659b5336424e239ec7b37fc7d139"
+            },
+            {
+              "bytes": 553,
+              "name": "config/assay_quality_policy.yaml",
+              "sha256": "f700d2c1a8b7f1b28e4a2bf1ea0664e3a9d14076afdf8d0fc538ad3aec7f6cf6"
+            },
+            {
+              "bytes": 216,
+              "name": "config/build_policy.yaml",
+              "sha256": "d725fabfbf1509b5aafdb952b50d29c98546337290dcf60db54556fc03e567ac"
+            },
+            {
+              "bytes": 429,
+              "name": "config/clinical_evidence_policy.yaml",
+              "sha256": "62894b567457568c358976f2b461f9819271ce4585a99c3f33dd3f189136c861"
+            },
+            {
+              "bytes": 1155,
+              "name": "config/compliance_control_catalog.yaml",
+              "sha256": "01a52dd23012c6f0bb2f27cd7d8a4bc919ff46594e12b4141871181d7a33f477"
+            },
+            {
+              "bytes": 264,
+              "name": "config/dependency_policy.yaml",
+              "sha256": "d619a70127f68abdb386cb0cd57069383055cf561a979a30358306c21d8cb46a"
+            },
+            {
+              "bytes": 534,
+              "name": "config/dti_scientific_benchmark.yaml",
+              "sha256": "fb8b1bfbb4c09f8a18dab8dc41ee4ca305b5a4cfb20e17a148d34938362bd917"
+            },
+            {
+              "bytes": 545,
+              "name": "config/fair_profile.yaml",
+              "sha256": "eb52f7013a4c178d754ce4538571872cb8c9891c56d11f539aa9584c947f94f4"
+            },
+            {
+              "bytes": 278,
+              "name": "config/performance_thresholds.yaml",
+              "sha256": "d43a34c890c992f5be4097ed07b38cf6ac03c3119f83ef7267bc4ab0ca068956"
+            },
+            {
+              "bytes": 857,
+              "name": "config/production.example.env",
+              "sha256": "9fadc1eeb286649032f958a436f3fa3953a753356f8e1c36a4a53925c2264ec1"
+            },
+            {
+              "bytes": 364,
+              "name": "config/prospective_validation_policy.yaml",
+              "sha256": "480fcfc6929d1bae81c50c6ac55101851b8025b18166af2f7bca8ae355c26832"
+            },
+            {
+              "bytes": 668,
+              "name": "config/quality_budgets.yaml",
+              "sha256": "ff7d78550d87c5d059e6859b4546d252a26bfd4855b1c6643c4b405b7f239f9c"
+            },
+            {
+              "bytes": 484,
+              "name": "config/reproducibility_policy.yaml",
+              "sha256": "31a997097979901f7cfdb14f3675bd5fc4b8c307f4ffa4feeb1d226af7376ded"
+            },
+            {
+              "bytes": 745,
+              "name": "config/retention_policy.yaml",
+              "sha256": "48d98953a6ac63378dc379566ee600bfcc347d2ff8abedfc0730dfb591cf5309"
+            },
+            {
+              "bytes": 834,
+              "name": "config/saas_plans.yaml",
+              "sha256": "78de68b95ef01c9772444a8d99f541431a75dc826f47e475b2b8ba75fc019726"
+            },
+            {
+              "bytes": 584,
+              "name": "config/scientific_coverage_targets.yaml",
+              "sha256": "fb12ee5f6bb8a851212dca3eac147a24d8ea0129b4dfbe6afcf83beb128be6dc"
+            },
+            {
+              "bytes": 1587,
+              "name": "config/scientific_provider_policy.yaml",
+              "sha256": "10062aa18afa659db36bbd2ab42942950fd36efdd539dfb3e474886e2e553570"
+            },
+            {
+              "bytes": 330,
+              "name": "config/scientific_regression_thresholds.yaml",
+              "sha256": "989893dac5cd1c51e87d0d9d55de90ed0c96fbcb726244e48565dd03e6ce1c1d"
+            },
+            {
+              "bytes": 482,
+              "name": "config/scientific_release_policy.yaml",
+              "sha256": "2f56bd7aa33ba0d88b3d69803ad6971960096fc85a68c9c3d9a812a4476c555b"
+            },
+            {
+              "bytes": 731,
+              "name": "config/scientific_validation_policy.yaml",
+              "sha256": "47a1328c760fdee6623b452a5af2e4682c1b806bcb08d0f70ad6719188b73e98"
+            },
+            {
+              "bytes": 8996,
+              "name": "config/settings.yaml",
+              "sha256": "ff7db4baadc952d0b79d40441ef50ee92480f30d90f28164645a4967ae5bc143"
+            },
+            {
+              "bytes": 730,
+              "name": "config/step40_validation_policy.yaml",
+              "sha256": "d5e0286e5e88d148651f4d5e0f951623c1816bfe41362c4a6628ae4db9417f9a"
+            },
+            {
+              "bytes": 2568,
+              "name": "config/step41_realworld_evidence_policy.yaml",
+              "sha256": "16fd86535dfd3bdfb0e911037ebe86dae161190aac170efe7a6f43b16d80e34a"
+            },
+            {
+              "bytes": 1749,
+              "name": "config/step42_maximum_verifiable_evidence.yaml",
+              "sha256": "f31ec97253d5342d9a737ac944ad0ba4a7db61542df2997ba8f109e31c67fa81"
+            },
+            {
+              "bytes": 251,
+              "name": "config/testing_policy.yaml",
+              "sha256": "c8eb7e4aa2faf344df6723ed2eadf95a8dd91fc834425f051b62706a2e678458"
+            },
+            {
+              "bytes": 850,
+              "name": "config/validation_policy.yaml",
+              "sha256": "051401f1e5b8ee54a71d86ad6122bc9abc88dadef418269e7ad4f201a40ce153"
+            },
+            {
+              "bytes": 815,
+              "name": "config/wetlab_evidence_policy.yaml",
+              "sha256": "9f13177564b686a8671afb7001cfa2fdacd8c8152d389244352f0f8f3c1d0ee7"
+            }
+          ]
+        },
+        "runDetails": {
+          "builder": {
+            "id": "https://biointel.local/builders/step42"
+          },
+          "metadata": {
+            "finishedOn": "2026-07-05T07:38:13.728113+00:00",
+            "invocationId": "90f32a4db9b1bbdbcd5a1537fe346ba7a80ca538ac689b63c9a4e2774cdd0877",
+            "startedOn": "2026-07-05T07:38:13.728075+00:00"
+          }
+        }
+      },
+      "predicateType": "https://slsa.dev/provenance/v1",
+      "subject": [
+        {
+          "digest": {
+            "sha256": "90f32a4db9b1bbdbcd5a1537fe346ba7a80ca538ac689b63c9a4e2774cdd0877"
+          },
+          "name": "biointel-ai-source-and-config"
+        }
+      ]
+    },
+    "saas_controls": {
+      "classification": "documented_control_qualification",
+      "existing": [
+        "src/biointel/enterprise/saas.py",
+        "src/biointel/multitenancy/store.py",
+        "tests/test_step36_maturity_frameworks.py"
+      ],
+      "external_boundary": "SaaS controls are not paying-customer history.",
+      "missing": [],
+      "observed_at": "2026-07-05T07:33:16.094138+00:00",
+      "passed": true,
+      "required": [
+        "src/biointel/enterprise/saas.py",
+        "src/biointel/multitenancy/store.py",
+        "tests/test_step36_maturity_frameworks.py"
+      ],
+      "schema": "biointel.step42.saas_controls.v1"
+    },
+    "scientific_validation": {
+      "classification": "documented_control_qualification",
+      "existing": [
+        "reports/step38/uci_wdbc_real_benchmark.json",
+        "reports/step40_validation_qualification.json",
+        "src/biointel/scientific/validation_depth.py"
+      ],
+      "external_boundary": "Analytical qualification is not independent external DTI or wet-lab validation.",
+      "missing": [],
+      "observed_at": "2026-07-05T07:33:16.095348+00:00",
+      "passed": true,
+      "required": [
+        "reports/step38/uci_wdbc_real_benchmark.json",
+        "reports/step40_validation_qualification.json",
+        "src/biointel/scientific/validation_depth.py"
+      ],
+      "schema": "biointel.step42.scientific_validation.v1"
+    },
+    "security_controls": {
+      "classification": "documented_control_qualification",
+      "existing": [
+        "src/biointel/api/security_store.py",
+        "src/biointel/production/config.py",
+        ".github/workflows/security.yml",
+        ".github/workflows/dependency-management.yml"
+      ],
+      "external_boundary": "Security-control qualification is not external enterprise acceptance.",
+      "missing": [],
+      "observed_at": "2026-07-05T07:33:16.094465+00:00",
+      "passed": true,
+      "required": [
+        "src/biointel/api/security_store.py",
+        "src/biointel/production/config.py",
+        ".github/workflows/security.yml",
+        ".github/workflows/dependency-management.yml"
+      ],
+      "schema": "biointel.step42.security_controls.v1"
+    }
+  },
+  "generated_at": "2026-07-05T07:38:13.733125+00:00",
+  "passed": true,
+  "passed_count": 15,
+  "schema": "biointel.step42.verification-results.v1"
+}

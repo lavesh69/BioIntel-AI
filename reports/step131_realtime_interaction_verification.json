@@ -1,0 +1,111 @@
+{
+  "schema": "biointel.step131.verification.v1",
+  "version": "13.1.0",
+  "checks": [
+    {
+      "name": "Version",
+      "passed": true,
+      "detail": "VERSION=13.1.0"
+    },
+    {
+      "name": "New biomedical modules",
+      "passed": true,
+      "detail": "modules=15"
+    },
+    {
+      "name": "Central interaction page",
+      "passed": true,
+      "detail": "page 195"
+    },
+    {
+      "name": "Step 131 config",
+      "passed": true,
+      "detail": "configuration present"
+    },
+    {
+      "name": "Step 131 release",
+      "passed": true,
+      "detail": "release contract present"
+    },
+    {
+      "name": "All-module integration",
+      "passed": true,
+      "detail": "shared intelligence tab"
+    },
+    {
+      "name": "No-rerun canvas",
+      "passed": true,
+      "detail": "offline browser-side interaction"
+    },
+    {
+      "name": "Visual provenance and collaboration",
+      "passed": true,
+      "detail": "integrated"
+    },
+    {
+      "name": "Publication layout",
+      "passed": true,
+      "detail": "journal presets and editable SVG bundle"
+    },
+    {
+      "name": "WebGL and LOD",
+      "passed": true,
+      "detail": "scatter acceleration"
+    },
+    {
+      "name": "Visual fingerprinting",
+      "passed": true,
+      "detail": "render-spec regression fingerprints"
+    },
+    {
+      "name": "Navigation",
+      "passed": true,
+      "detail": "catalogue healthy"
+    },
+    {
+      "name": "Progressive rendering",
+      "passed": true,
+      "detail": "492/10000"
+    },
+    {
+      "name": "Uncertainty audit",
+      "passed": true,
+      "detail": "interval integrity"
+    },
+    {
+      "name": "Step 131 database schema",
+      "passed": true,
+      "detail": "tables=13"
+    },
+    {
+      "name": "Step 131 database integrity",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "name": "Review persistence",
+      "passed": true,
+      "detail": "thread persisted"
+    },
+    {
+      "name": "Figure layout bundle",
+      "passed": true,
+      "detail": "editable SVG bundle"
+    },
+    {
+      "name": "Python syntax",
+      "passed": true,
+      "detail": "936 files"
+    },
+    {
+      "name": "Locked pages",
+      "passed": true,
+      "detail": "5 protected pages byte-identical"
+    }
+  ],
+  "passed": 20,
+  "total": 20,
+  "healthy": true,
+  "python_files": 936,
+  "syntax_failures": []
+}

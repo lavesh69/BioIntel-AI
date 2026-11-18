@@ -1,0 +1,33 @@
+{
+  "schema": "biointel.step94.pro-upgrade.verification.v1",
+  "version": "9.4.0",
+  "status": "verified",
+  "scope": {
+    "upgraded_pages": 12,
+    "pro_workbenches": 10,
+    "advanced_tool_manager": true,
+    "innovation_hub": true,
+    "new_engine": "src/biointel/innovation/advanced_engines.py"
+  },
+  "tests": {
+    "targeted_pytest": "15 passed",
+    "step94_specific": "11 passed",
+    "page_smoke": "12 passed",
+    "python_compile": "653 files compiled"
+  },
+  "capabilities": [
+    "GFA1/GFA2 audit",
+    "FASTQ.GZ long-read QC",
+    "PDB-aware mutation review",
+    "CRISPR BH-FDR",
+    "Perturb-seq UMAP/differential testing",
+    "Outbreak MST/link scoring",
+    "Synthetic construct QC and GenBank",
+    "Extended VCF and ACMG assistance",
+    "Knowledge-graph paths/conflicts/gaps",
+    "Nested-CV biomarker modelling",
+    "Resumable workflow DAG execution",
+    "Toolchain readiness and lock export"
+  ],
+  "scientific_boundary": "No independent clinical, regulatory, wet-lab or publication evidence is claimed or fabricated."
+}

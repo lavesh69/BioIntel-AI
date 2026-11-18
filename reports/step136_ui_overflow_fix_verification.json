@@ -1,0 +1,17 @@
+{
+  "build": "BioIntel AI Step 136 UI Overflow Fixed",
+  "fixes": {
+    "oversized_metric_columns_removed": true,
+    "reactive_visual_css_isolated": true,
+    "heading_anchor_svg_bounded": true,
+    "import_preview_expanded_by_default": true,
+    "desktop_shell_ratio_rebalanced": true,
+    "popover_character_wrapping_blocked": true
+  },
+  "verification": {
+    "python_compileall": "passed",
+    "ui_overflow_regression_tests": {"passed": 4, "failed": 0},
+    "sqlite_integrity": {"healthy": 36, "failed": 0},
+    "streamlit_browser_runtime": "not_run_streamlit_not_installed_in_build_environment"
+  }
+}

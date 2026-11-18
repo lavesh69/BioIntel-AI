@@ -1,0 +1,420 @@
+{
+  "boundary": "Repository capability readiness is distinct from scientific truth, clinical utility, wet-lab confirmation or regulatory acceptance.",
+  "capabilities": [
+    {
+      "certification_boundary": "10/10 implementation readiness means the provider, provenance, QC, benchmark and release controls exist. Actual 10/10 evidence requires large licensed provider snapshots, independent external studies and completed blinded prospective validation.",
+      "controls": [
+        "src/biointel/scientific/provider_hub.py",
+        "src/biointel/scientific/evidence_lake.py",
+        "config/scientific_provider_policy.yaml",
+        "scripts/sync_scientific_evidence.py",
+        "tests/scientific/test_step38_scientific_excellence.py"
+      ],
+      "evidence_score": 6.1,
+      "evidence_status": "developing",
+      "implementation_score": 10.0,
+      "implementation_status": "complete",
+      "key": "scientific_data_authenticity",
+      "label": "Scientific Data Authenticity",
+      "missing": []
+    },
+    {
+      "certification_boundary": "10/10 implementation readiness means the provider, provenance, QC, benchmark and release controls exist. Actual 10/10 evidence requires large licensed provider snapshots, independent external studies and completed blinded prospective validation.",
+      "controls": [
+        "config/scientific_coverage_targets.yaml",
+        "data/real_evidence/official_snapshots/provider_seed_catalog.json",
+        "src/biointel/scientific/excellence.py"
+      ],
+      "evidence_score": 7.9,
+      "evidence_status": "developing",
+      "implementation_score": 10.0,
+      "implementation_status": "complete",
+      "key": "dataset_diversity",
+      "label": "Dataset Diversity",
+      "missing": []
+    },
+    {
+      "certification_boundary": "10/10 implementation readiness means the provider, provenance, QC, benchmark and release controls exist. Actual 10/10 evidence requires large licensed provider snapshots, independent external studies and completed blinded prospective validation.",
+      "controls": [
+        "src/biointel/scientific/evidence_lake.py",
+        "config/scientific_release_policy.yaml",
+        "scripts/qualify_scientific_release.py"
+      ],
+      "evidence_score": 5.9,
+      "evidence_status": "developing",
+      "implementation_score": 10.0,
+      "implementation_status": "complete",
+      "key": "unique_dataset_quality",
+      "label": "Unique Dataset Quality",
+      "missing": []
+    },
+    {
+      "certification_boundary": "10/10 implementation readiness means the provider, provenance, QC, benchmark and release controls exist. Actual 10/10 evidence requires large licensed provider snapshots, independent external studies and completed blinded prospective validation.",
+      "controls": [
+        "src/biointel/scientific/assay_quality.py",
+        "config/assay_quality_policy.yaml",
+        "tests/scientific/test_step38_scientific_excellence.py"
+      ],
+      "evidence_score": 4.2,
+      "evidence_status": "insufficient",
+      "implementation_score": 10.0,
+      "implementation_status": "complete",
+      "key": "assay_data_quality",
+      "label": "Assay Data Quality",
+      "missing": []
+    },
+    {
+      "certification_boundary": "10/10 implementation readiness means the provider, provenance, QC, benchmark and release controls exist. Actual 10/10 evidence requires large licensed provider snapshots, independent external studies and completed blinded prospective validation.",
+      "controls": [
+        "config/scientific_coverage_targets.yaml",
+        "data/real_evidence/official_snapshots/organism_coverage_seed.csv"
+      ],
+      "evidence_score": 7.2,
+      "evidence_status": "developing",
+      "implementation_score": 10.0,
+      "implementation_status": "complete",
+      "key": "biological_diversity",
+      "label": "Biological Diversity",
+      "missing": []
+    },
+    {
+      "certification_boundary": "10/10 implementation readiness means the provider, provenance, QC, benchmark and release controls exist. Actual 10/10 evidence requires large licensed provider snapshots, independent external studies and completed blinded prospective validation.",
+      "controls": [
+        "config/scientific_coverage_targets.yaml",
+        "data/real_evidence/official_snapshots/organism_coverage_seed.csv"
+      ],
+      "evidence_score": 8.0,
+      "evidence_status": "developing",
+      "implementation_score": 10.0,
+      "implementation_status": "complete",
+      "key": "multi_organism_coverage",
+      "label": "Multi-Organism Coverage",
+      "missing": []
+    },
+    {
+      "certification_boundary": "10/10 implementation readiness means the provider, provenance, QC, benchmark and release controls exist. Actual 10/10 evidence requires large licensed provider snapshots, independent external studies and completed blinded prospective validation.",
+      "controls": [
+        "src/biointel/scientific/provider_hub.py",
+        "data/real_evidence/official_snapshots/clinicaltrials_verified_seed.json",
+        "config/clinical_evidence_policy.yaml"
+      ],
+      "evidence_score": 6.6,
+      "evidence_status": "developing",
+      "implementation_score": 10.0,
+      "implementation_status": "complete",
+      "key": "clinical_data_coverage",
+      "label": "Clinical Data Coverage",
+      "missing": []
+    },
+    {
+      "certification_boundary": "10/10 implementation readiness means the provider, provenance, QC, benchmark and release controls exist. Actual 10/10 evidence requires large licensed provider snapshots, independent external studies and completed blinded prospective validation.",
+      "controls": [
+        "src/biointel/scientific/benchmark.py",
+        "src/biointel/scientific/prospective.py",
+        "config/scientific_validation_policy.yaml"
+      ],
+      "evidence_score": 3.5,
+      "evidence_status": "insufficient",
+      "implementation_score": 10.0,
+      "implementation_status": "complete",
+      "key": "real_scientific_validation",
+      "label": "Real Scientific Validation",
+      "missing": []
+    },
+    {
+      "certification_boundary": "10/10 implementation readiness means the provider, provenance, QC, benchmark and release controls exist. Actual 10/10 evidence requires large licensed provider snapshots, independent external studies and completed blinded prospective validation.",
+      "controls": [
+        "src/biointel/scientific/prospective.py",
+        "scripts/register_prospective_study.py",
+        "config/prospective_validation_policy.yaml"
+      ],
+      "evidence_score": 1.0,
+      "evidence_status": "insufficient",
+      "implementation_score": 10.0,
+      "implementation_status": "complete",
+      "key": "prospective_validation",
+      "label": "Prospective Validation",
+      "missing": []
+    },
+    {
+      "certification_boundary": "10/10 implementation readiness means the provider, provenance, QC, benchmark and release controls exist. Actual 10/10 evidence requires large licensed provider snapshots, independent external studies and completed blinded prospective validation.",
+      "controls": [
+        "src/biointel/scientific/benchmark.py",
+        "scripts/qualify_scientific_release.py",
+        "config/scientific_validation_policy.yaml"
+      ],
+      "evidence_score": 2.0,
+      "evidence_status": "insufficient",
+      "implementation_score": 10.0,
+      "implementation_status": "complete",
+      "key": "external_validation",
+      "label": "External Validation",
+      "missing": []
+    },
+    {
+      "certification_boundary": "10/10 implementation readiness means the provider, provenance, QC, benchmark and release controls exist. Actual 10/10 evidence requires large licensed provider snapshots, independent external studies and completed blinded prospective validation.",
+      "controls": [
+        "src/biointel/scientific/benchmark.py",
+        "src/biointel/training/release_gate.py",
+        "config/scientific_release_policy.yaml"
+      ],
+      "evidence_score": 4.5,
+      "evidence_status": "insufficient",
+      "implementation_score": 10.0,
+      "implementation_status": "complete",
+      "key": "ml_model_quality",
+      "label": "ML Model Quality",
+      "missing": []
+    },
+    {
+      "certification_boundary": "10/10 implementation readiness means the provider, provenance, QC, benchmark and release controls exist. Actual 10/10 evidence requires large licensed provider snapshots, independent external studies and completed blinded prospective validation.",
+      "controls": [
+        "src/biointel/dti/validation_suite.py",
+        "src/biointel/scientific/benchmark.py",
+        "config/dti_scientific_benchmark.yaml"
+      ],
+      "evidence_score": 3.0,
+      "evidence_status": "insufficient",
+      "implementation_score": 10.0,
+      "implementation_status": "complete",
+      "key": "dti_prediction_capability",
+      "label": "DTI Prediction Capability",
+      "missing": []
+    },
+    {
+      "certification_boundary": "10/10 implementation readiness means the provider, provenance, QC, benchmark and release controls exist. Actual 10/10 evidence requires large licensed provider snapshots, independent external studies and completed blinded prospective validation.",
+      "controls": [
+        "src/biointel/scientific/excellence.py",
+        "docs/SCIENTIFIC_EVIDENCE_AND_VALIDATION.md",
+        "reports/step38_scientific_qualification.json"
+      ],
+      "evidence_score": 5.4,
+      "evidence_status": "insufficient",
+      "implementation_score": 10.0,
+      "implementation_status": "complete",
+      "key": "overall_scientific_credibility",
+      "label": "Overall Scientific Credibility",
+      "missing": []
+    },
+    {
+      "certification_boundary": "10/10 implementation readiness means the provider, provenance, QC, benchmark and release controls exist. Actual 10/10 evidence requires large licensed provider snapshots, independent external studies and completed blinded prospective validation.",
+      "controls": [
+        "src/biointel/scientific/evidence_lake.py",
+        "reports/scientific_evidence.sqlite3",
+        "config/scientific_coverage_targets.yaml"
+      ],
+      "evidence_score": 6.8,
+      "evidence_status": "developing",
+      "implementation_score": 10.0,
+      "implementation_status": "complete",
+      "key": "database_scientific_depth",
+      "label": "Database Real Scientific Depth",
+      "missing": []
+    },
+    {
+      "certification_boundary": "10/10 implementation readiness means the provider, provenance, QC, benchmark and release controls exist. Actual 10/10 evidence requires large licensed provider snapshots, independent external studies and completed blinded prospective validation.",
+      "controls": [
+        "src/biointel/scientific/evidence_lake.py",
+        "src/biointel/data/evidence_registry.py",
+        "scripts/seed_step38_scientific_evidence.py"
+      ],
+      "evidence_score": 6.8,
+      "evidence_status": "developing",
+      "implementation_score": 10.0,
+      "implementation_status": "complete",
+      "key": "evidence_registry",
+      "label": "Evidence Registry",
+      "missing": []
+    },
+    {
+      "certification_boundary": "10/10 implementation readiness means the provider, provenance, QC, benchmark and release controls exist. Actual 10/10 evidence requires large licensed provider snapshots, independent external studies and completed blinded prospective validation.",
+      "controls": [
+        "src/biointel/scientific/provider_hub.py",
+        "config/scientific_provider_policy.yaml",
+        "scripts/sync_scientific_evidence.py"
+      ],
+      "evidence_score": 8.2,
+      "evidence_status": "developing",
+      "implementation_score": 10.0,
+      "implementation_status": "complete",
+      "key": "internet_provider_integration",
+      "label": "Internet/Provider Integration",
+      "missing": []
+    }
+  ],
+  "database_integrity": {
+    "databases": [
+      {
+        "database": "analytics.sqlite3",
+        "foreign_key_issues": 0,
+        "healthy": true,
+        "integrity": "ok"
+      },
+      {
+        "database": "api_security.sqlite3",
+        "foreign_key_issues": 0,
+        "healthy": true,
+        "integrity": "ok"
+      },
+      {
+        "database": "assets.sqlite3",
+        "foreign_key_issues": 0,
+        "healthy": true,
+        "integrity": "ok"
+      },
+      {
+        "database": "datasets.sqlite3",
+        "foreign_key_issues": 0,
+        "healthy": true,
+        "integrity": "ok"
+      },
+      {
+        "database": "document_history.sqlite3",
+        "foreign_key_issues": 0,
+        "healthy": true,
+        "integrity": "ok"
+      },
+      {
+        "database": "evidence.sqlite3",
+        "foreign_key_issues": 0,
+        "healthy": true,
+        "integrity": "ok"
+      },
+      {
+        "database": "experiments.sqlite3",
+        "foreign_key_issues": 0,
+        "healthy": true,
+        "integrity": "ok"
+      },
+      {
+        "database": "feature_cache.sqlite3",
+        "foreign_key_issues": 0,
+        "healthy": true,
+        "integrity": "ok"
+      },
+      {
+        "database": "internet_downloads.sqlite3",
+        "foreign_key_issues": 0,
+        "healthy": true,
+        "integrity": "ok"
+      },
+      {
+        "database": "jobs.sqlite3",
+        "foreign_key_issues": 0,
+        "healthy": true,
+        "integrity": "ok"
+      },
+      {
+        "database": "knowledge.sqlite3",
+        "foreign_key_issues": 0,
+        "healthy": true,
+        "integrity": "ok"
+      },
+      {
+        "database": "projects.sqlite3",
+        "foreign_key_issues": 0,
+        "healthy": true,
+        "integrity": "ok"
+      },
+      {
+        "database": "prospective_validation.sqlite3",
+        "foreign_key_issues": 0,
+        "healthy": true,
+        "integrity": "ok"
+      },
+      {
+        "database": "relationships.sqlite3",
+        "foreign_key_issues": 0,
+        "healthy": true,
+        "integrity": "ok"
+      },
+      {
+        "database": "scientific_evidence.sqlite3",
+        "foreign_key_issues": 0,
+        "healthy": true,
+        "integrity": "ok"
+      },
+      {
+        "database": "tenants.sqlite3",
+        "foreign_key_issues": 0,
+        "healthy": true,
+        "integrity": "ok"
+      }
+    ],
+    "healthy": 16,
+    "total": 16
+  },
+  "evidence_average": 5.4,
+  "evidence_summary": {
+    "approved_records": 569,
+    "assay_types": 3,
+    "clinical_records": 571,
+    "dti_external_completed_studies": 0,
+    "dti_prospective_completed_studies": 0,
+    "external_completed_studies": 0,
+    "independent_completed_studies": 0,
+    "organisms": 9,
+    "prospective_completed_studies": 0,
+    "providers": 9,
+    "records": 604,
+    "release_eligible_records": 0,
+    "reviewed_benchmarks": 1,
+    "snapshots": 10,
+    "structure_records": 1,
+    "validation_studies": 1
+  },
+  "generated_at": "2026-07-05T06:04:36.384674+00:00",
+  "implementation_average": 10.0,
+  "not_certified_claims": [
+    "No completed independent external DTI study is bundled.",
+    "No completed blinded prospective wet-lab study is bundled.",
+    "No clinical utility, regulatory approval or laboratory accreditation is claimed.",
+    "Synthetic DTI models remain blocked from scientific release."
+  ],
+  "qualification_status": "PASSED_WITH_EVIDENCE_BOUNDARY",
+  "real_reference_benchmark": {
+    "completed_at": "2026-07-05T05:49:36.659581+00:00",
+    "dataset": "UCI Breast Cancer Wisconsin Diagnostic",
+    "dataset_doi": "10.24432/C5DW2B",
+    "dataset_sha256": "111000dc8b565e16d91880afd585fed4a2715955ace30c43addf1795459470ea",
+    "features": 30,
+    "licence": "CC BY 4.0",
+    "limitations": [
+      "Single public dataset",
+      "Not an external DTI benchmark",
+      "No prospective outcomes"
+    ],
+    "metrics": {
+      "cv_balanced_accuracy_mean": 0.9700364330686964,
+      "cv_f1_mean": 0.9781105573942129,
+      "cv_roc_auc_mean": 0.9943359337766479,
+      "cv_roc_auc_std": 0.004939962318966729,
+      "holdout_balanced_accuracy": 0.9811507936507937,
+      "holdout_brier": 0.020597679739436534,
+      "holdout_ece": 0.028066718847215184,
+      "holdout_f1": 0.9861111111111112,
+      "holdout_log_loss": 0.08047898585854318,
+      "holdout_roc_auc": 0.9943783068783069
+    },
+    "model_sha256": "f1ff2b4664cfdc3e89af624372028914e587b810d96022a921e118168404e8d6",
+    "protocol": "Repeated stratified 5-fold CV x3 plus untouched stratified 20% holdout",
+    "rows": 569,
+    "study_id": "GEN-UCI-WDBC-REPEATED-CV-2026"
+  },
+  "schema": "biointel.step38-scientific-qualification.v1",
+  "verification": {
+    "api_smoke_endpoints": "5/5 HTTP 200",
+    "databases": "16/16 healthy",
+    "environment_gated_tests_skipped": 3,
+    "foreign_key_issues": 0,
+    "fresh_tests_passed": 110,
+    "integration_e2e_visual": "5 passed / 3 environment-gated skipped",
+    "legacy_foundation_tests": "23/23",
+    "python_compilation": "passed",
+    "scientific_capability_tests": "17/17",
+    "selected_regression_tests": "82/82",
+    "semantic_visual_scenarios": "10/10",
+    "test_failures": 0
+  },
+  "version": "3.8.0"
+}

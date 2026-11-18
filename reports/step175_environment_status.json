@@ -1,0 +1,44 @@
+{
+  "summary": {
+    "schema": "biointel.step175.environment-summary.v1",
+    "version": "14.7.0",
+    "software_framework_score": 10.0,
+    "target_hosts_qualified": 0,
+    "engines_total": 53,
+    "engines_artifact_qualified": 0,
+    "engines_target_qualified": 0,
+    "references_total": 26,
+    "references_artifact_qualified": 0,
+    "references_target_qualified": 0,
+    "target_profiles": 3,
+    "controlled_environment_ready": false,
+    "external_installation_fabricated": false
+  },
+  "registry": {
+    "schema": "biointel.step175.registry-status.v1",
+    "database_integrity": "ok",
+    "foreign_key_violations": 0,
+    "audit_chain_valid": true,
+    "target_hosts_registered": 0,
+    "target_hosts_qualified": 0,
+    "install_sessions": 0,
+    "completed_install_sessions": 0,
+    "engines_registered": 0,
+    "engines_qualified": 0,
+    "references_registered": 0,
+    "references_qualified": 0,
+    "licences_registered": 17,
+    "licences_accepted": 0,
+    "step170_registry": {
+      "schema": "biointel.step170.registry-status.v1",
+      "database_integrity": "ok",
+      "foreign_key_violations": 0,
+      "engines_registered": 0,
+      "engines_qualified": 0,
+      "references_registered": 0,
+      "references_qualified": 0,
+      "licences_registered": 17,
+      "licences_accepted": 0
+    }
+  }
+}

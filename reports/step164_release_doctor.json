@@ -1,0 +1,58 @@
+{
+  "checks": [
+    {
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "/mnt/data/step164_work/BioIntel-AI/scripts/step164_build_operational_assets.py",
+        "--root",
+        "/mnt/data/step164_work/BioIntel-AI"
+      ],
+      "passed": true,
+      "return_code": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\n  \"engine_recipes_complete\": 53,\n  \"engine_recipes_total\": 53,\n  \"engines_installed\": 0,\n  \"external_evidence_not_inferred\": true,\n  \"modules\": 80,\n  \"production_references_qualified\": 0,\n  \"real_world_release_eligible\": 0,\n  \"runtime_probe_performed\": false,\n  \"schema\": \"biointel.step164.operational-summary.v1\",\n  \"software_owned_10of10\": 80\n}\n"
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "/mnt/data/step164_work/BioIntel-AI/scripts/step164_validate_operational.py",
+        "--root",
+        "/mnt/data/step164_work/BioIntel-AI",
+        "--quick"
+      ],
+      "passed": true,
+      "return_code": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\n  \"checks\": [\n    {\n      \"check\": \"required_files\",\n      \"detail\": \"[]\",\n      \"passed\": true\n    },\n    {\n      \"check\": \"all_module_contracts\",\n      \"detail\": \"80/80\",\n      \"passed\": true\n    },\n    {\n      \"check\": \"engine_provisioning_recipes\",\n      \"detail\": \"53/53\",\n      \"passed\": true\n    },\n    {\n      \"check\": \"generated_operational_assets\",\n      \"detail\": \"550 assets\",\n      \"passed\": true\n    },\n    {\n      \"check\": \"native_module_integration\",\n      \"detail\": \"5/5 module executions\",\n      \"passed\": true\n    },\n    {\n      \"check\": \"compile_scan\",\n      \"detail\": \"8 Step 164 files\",\n      \"passed\": true\n    }\n  ],\n  \"external_evidence_not_inferred\": true,\n  \"schema\": \"biointel.step164.validation.v1\",\n  \"software_owned_operational_target\": \"10/10\",\n  \"status\": \"passed\",\n  \"third_party_installations_not_falsely_marked_complete\": true\n}\n"
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "/mnt/data/step164_work/BioIntel-AI/scripts/step163_validate_module_excellence.py",
+        "--root",
+        "/mnt/data/step164_work/BioIntel-AI",
+        "--quick"
+      ],
+      "passed": true,
+      "return_code": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\n  \"checks\": [\n    {\n      \"check\": \"required_files\",\n      \"detail\": \"[]\",\n      \"passed\": true\n    },\n    {\n      \"check\": \"portfolio_software_excellence\",\n      \"detail\": \"80/80 modules at software-owned 10/10\",\n      \"passed\": true\n    },\n    {\n      \"check\": \"task_specific_benchmark_specs\",\n      \"detail\": \"80/80 benchmark specifications complete\",\n      \"passed\": true\n    },\n    {\n      \"check\": \"model_authenticity_guards\",\n      \"detail\": \"80/80 model guards complete\",\n      \"passed\": true\n    },\n    {\n      \"check\": \"native_module_integration\",\n      \"detail\": \"4/4 module executions passed\",\n      \"passed\": true\n    },\n    {\n      \"check\": \"compile_scan\",\n      \"detail\": \"5 Step 163 source files compiled\",\n      \"passed\": true\n    }\n  ],\n  \"external_evidence_not_inferred\": true,\n  \"schema\": \"biointel.step163.validation.v1\",\n  \"software_owned_upgrade_target\": \"10/10\",\n  \"status\": \"passed\",\n  \"third_party_tools_not_falsely_marked_bundled\": true\n}\n"
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "/mnt/data/step164_work/BioIntel-AI/scripts/step162_validate_authenticity.py",
+        "--root",
+        "/mnt/data/step164_work/BioIntel-AI",
+        "--quick"
+      ],
+      "passed": true,
+      "return_code": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\n  \"checks\": [\n    {\n      \"check\": \"required_files\",\n      \"detail\": \"[]\",\n      \"passed\": true\n    },\n    {\n      \"check\": \"public_benchmark_models\",\n      \"detail\": \"5/5 verified\",\n      \"passed\": true\n    },\n    {\n      \"check\": \"synthetic_model_quarantine\",\n      \"detail\": \"23 synthetic models quarantined; unsafe defaults=0\",\n      \"passed\": true\n    },\n    {\n      \"check\": \"provider_source_contracts\",\n      \"detail\": \"14/14 descriptors verified; 7 have local checksummed assets\",\n      \"passed\": true\n    },\n    {\n      \"check\": \"module_authenticity_contracts\",\n      \"detail\": \"80/80 software authenticity contracts at 10/10\",\n      \"passed\": true\n    },\n    {\n      \"check\": \"native_module_integration\",\n      \"detail\": \"4/4 module executions passed\",\n      \"passed\": true\n    },\n    {\n      \"check\": \"compile_scan\",\n      \"detail\": \"6 Step 162 source files compiled\",\n      \"passed\": true\n    }\n  ],\n  \"external_claims_not_inferred\": true,\n  \"public_benchmark_is_not_domain_validation\": true,\n  \"schema\": \"biointel.step162.validation.v1\",\n  \"status\": \"passed\"\n}\n"
+    }
+  ],
+  "external_release_not_inferred": true,
+  "schema": "biointel.step164.release-doctor.v1",
+  "status": "passed"
+}

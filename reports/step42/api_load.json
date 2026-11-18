@@ -1,0 +1,19 @@
+{
+  "availability_percent": 100.0,
+  "classification": "measured_controlled_environment_qualification",
+  "concurrency": 8,
+  "duration_seconds": 3.7242936639995605,
+  "error_rate_percent": 0.0,
+  "external_boundary": "This is a bounded local qualification run, not a 24-hour cloud or 90-day production SLA record.",
+  "failures": 0,
+  "mean_latency_ms": 71.77241162247356,
+  "observed_at": "2026-07-05T07:31:36.624605+00:00",
+  "p50_latency_ms": 67.87111300036486,
+  "p95_latency_ms": 79.40377299928514,
+  "p99_latency_ms": 251.65847499920346,
+  "passed": true,
+  "requests": 400,
+  "requests_per_second": 107.40291611978728,
+  "schema": "biointel.step42.api-load.v1",
+  "successes": 400
+}

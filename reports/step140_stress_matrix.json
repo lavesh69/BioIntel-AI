@@ -1,0 +1,406 @@
+{
+  "schema": "biointel.step140.stress-matrix.v1",
+  "generated_at_utc": "2026-07-12T16:22:07.020636+00:00",
+  "modules": [
+    {
+      "module_key": "population_gwas_peak",
+      "cases": [
+        {
+          "case": "empty input",
+          "passed": true
+        },
+        {
+          "case": "single record",
+          "passed": true
+        },
+        {
+          "case": "missing required field",
+          "passed": true
+        },
+        {
+          "case": "duplicate records retained",
+          "passed": true
+        },
+        {
+          "case": "large input planning",
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "module_key": "epigenomics_peak",
+      "cases": [
+        {
+          "case": "empty input",
+          "passed": true
+        },
+        {
+          "case": "single record",
+          "passed": true
+        },
+        {
+          "case": "missing required field",
+          "passed": true
+        },
+        {
+          "case": "duplicate records retained",
+          "passed": true
+        },
+        {
+          "case": "large input planning",
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "module_key": "pharmacogenomics_peak",
+      "cases": [
+        {
+          "case": "empty input",
+          "passed": true
+        },
+        {
+          "case": "single record",
+          "passed": true
+        },
+        {
+          "case": "missing required field",
+          "passed": true
+        },
+        {
+          "case": "duplicate records retained",
+          "passed": true
+        },
+        {
+          "case": "large input planning",
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "module_key": "structural_variant_peak",
+      "cases": [
+        {
+          "case": "empty input",
+          "passed": true
+        },
+        {
+          "case": "single record",
+          "passed": true
+        },
+        {
+          "case": "missing required field",
+          "passed": true
+        },
+        {
+          "case": "duplicate records retained",
+          "passed": true
+        },
+        {
+          "case": "large input planning",
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "module_key": "rna_splicing_peak",
+      "cases": [
+        {
+          "case": "empty input",
+          "passed": true
+        },
+        {
+          "case": "single record",
+          "passed": true
+        },
+        {
+          "case": "missing required field",
+          "passed": true
+        },
+        {
+          "case": "duplicate records retained",
+          "passed": true
+        },
+        {
+          "case": "large input planning",
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "module_key": "immune_repertoire",
+      "cases": [
+        {
+          "case": "empty input",
+          "passed": true
+        },
+        {
+          "case": "single record",
+          "passed": true
+        },
+        {
+          "case": "missing required field",
+          "passed": true
+        },
+        {
+          "case": "duplicate records retained",
+          "passed": true
+        },
+        {
+          "case": "large input planning",
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "module_key": "single_cell_multiome",
+      "cases": [
+        {
+          "case": "empty input",
+          "passed": true
+        },
+        {
+          "case": "single record",
+          "passed": true
+        },
+        {
+          "case": "missing required field",
+          "passed": true
+        },
+        {
+          "case": "duplicate records retained",
+          "passed": true
+        },
+        {
+          "case": "large input planning",
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "module_key": "proteogenomics_peak",
+      "cases": [
+        {
+          "case": "empty input",
+          "passed": true
+        },
+        {
+          "case": "single record",
+          "passed": true
+        },
+        {
+          "case": "missing required field",
+          "passed": true
+        },
+        {
+          "case": "duplicate records retained",
+          "passed": true
+        },
+        {
+          "case": "large input planning",
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "module_key": "gene_regulatory_network",
+      "cases": [
+        {
+          "case": "empty input",
+          "passed": true
+        },
+        {
+          "case": "single record",
+          "passed": true
+        },
+        {
+          "case": "missing required field",
+          "passed": true
+        },
+        {
+          "case": "duplicate records retained",
+          "passed": true
+        },
+        {
+          "case": "large input planning",
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "module_key": "federated_genomic_discovery",
+      "cases": [
+        {
+          "case": "empty input",
+          "passed": true
+        },
+        {
+          "case": "single record",
+          "passed": true
+        },
+        {
+          "case": "missing required field",
+          "passed": true
+        },
+        {
+          "case": "duplicate records retained",
+          "passed": true
+        },
+        {
+          "case": "large input planning",
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "module_key": "viral_within_host",
+      "cases": [
+        {
+          "case": "empty input",
+          "passed": true
+        },
+        {
+          "case": "single record",
+          "passed": true
+        },
+        {
+          "case": "missing required field",
+          "passed": true
+        },
+        {
+          "case": "duplicate records retained",
+          "passed": true
+        },
+        {
+          "case": "large input planning",
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "module_key": "genome_annotation",
+      "cases": [
+        {
+          "case": "empty input",
+          "passed": true
+        },
+        {
+          "case": "single record",
+          "passed": true
+        },
+        {
+          "case": "missing required field",
+          "passed": true
+        },
+        {
+          "case": "duplicate records retained",
+          "passed": true
+        },
+        {
+          "case": "large input planning",
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "module_key": "circular_dna_instability",
+      "cases": [
+        {
+          "case": "empty input",
+          "passed": true
+        },
+        {
+          "case": "single record",
+          "passed": true
+        },
+        {
+          "case": "missing required field",
+          "passed": true
+        },
+        {
+          "case": "duplicate records retained",
+          "passed": true
+        },
+        {
+          "case": "large input planning",
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "module_key": "environmental_edna",
+      "cases": [
+        {
+          "case": "empty input",
+          "passed": true
+        },
+        {
+          "case": "single record",
+          "passed": true
+        },
+        {
+          "case": "missing required field",
+          "passed": true
+        },
+        {
+          "case": "duplicate records retained",
+          "passed": true
+        },
+        {
+          "case": "large input planning",
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "module_key": "comparative_regulatory_genomics",
+      "cases": [
+        {
+          "case": "empty input",
+          "passed": true
+        },
+        {
+          "case": "single record",
+          "passed": true
+        },
+        {
+          "case": "missing required field",
+          "passed": true
+        },
+        {
+          "case": "duplicate records retained",
+          "passed": true
+        },
+        {
+          "case": "large input planning",
+          "passed": true
+        }
+      ],
+      "passed": true
+    }
+  ],
+  "regional_streaming": true,
+  "passed": true,
+  "covered_cases": [
+    "empty input",
+    "single record",
+    "missing field",
+    "duplicate records",
+    "large input planning",
+    "indexed regional query"
+  ]
+}

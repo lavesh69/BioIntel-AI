@@ -1,0 +1,194 @@
+{
+  "schema": "biointel.step175.execution-plan.v1",
+  "created_at_utc": "2026-07-14T12:33:09+00:00",
+  "version": "14.7.0",
+  "profile": {
+    "label": "GPU scientific workstation",
+    "minimum_ram_gb": 64,
+    "recommended_ram_gb": 128,
+    "minimum_free_storage_gb": 1000,
+    "recommended_free_storage_gb": 4000,
+    "gpu_required": true,
+    "wsl2_required": true,
+    "notes": "Required for full pathology, imaging, protein design, ColabFold and large local-model qualification.",
+    "minimum_gpu_vram_gb": 16.0,
+    "recommended_gpu_vram_gb": 24.0
+  },
+  "environment_groups": [
+    {
+      "group_id": "genomics-core",
+      "label": "Genomics, variants and transcriptomics",
+      "python_version": "3.11",
+      "engine_categories": [
+        "Genomics",
+        "Variant interpretation",
+        "Structural variation",
+        "Transcriptomics",
+        "Phylogenetics"
+      ],
+      "gpu_optional": false,
+      "gpu_required_for_full_qualification": false,
+      "approximate_environment_gb": 8.0,
+      "notes": ""
+    },
+    {
+      "group_id": "longread-assembly",
+      "label": "Long-read sequencing and assembly",
+      "python_version": "3.11",
+      "engine_categories": [
+        "Genome assembly",
+        "Long-read sequencing",
+        "Long-read epigenomics"
+      ],
+      "gpu_optional": true,
+      "gpu_required_for_full_qualification": false,
+      "approximate_environment_gb": 12.0,
+      "notes": ""
+    },
+    {
+      "group_id": "pangenome",
+      "label": "Pangenome graph toolchain",
+      "python_version": "3.11",
+      "engine_categories": [
+        "Pangenomics"
+      ],
+      "gpu_optional": false,
+      "gpu_required_for_full_qualification": false,
+      "approximate_environment_gb": 6.0,
+      "notes": ""
+    },
+    {
+      "group_id": "microbiome-amr",
+      "label": "Metagenomics and AMR",
+      "python_version": "3.11",
+      "engine_categories": [
+        "Metagenomics",
+        "AMR"
+      ],
+      "gpu_optional": false,
+      "gpu_required_for_full_qualification": false,
+      "approximate_environment_gb": 12.0,
+      "notes": ""
+    },
+    {
+      "group_id": "single-cell",
+      "label": "Single-cell analysis",
+      "python_version": "3.11",
+      "engine_categories": [
+        "Single-cell"
+      ],
+      "gpu_optional": true,
+      "gpu_required_for_full_qualification": false,
+      "approximate_environment_gb": 8.0,
+      "notes": ""
+    },
+    {
+      "group_id": "structure-design",
+      "label": "Structural biology and protein design",
+      "python_version": "3.11",
+      "engine_categories": [
+        "Structural biology",
+        "Protein structure",
+        "Protein design"
+      ],
+      "gpu_optional": true,
+      "gpu_required_for_full_qualification": true,
+      "approximate_environment_gb": 18.0,
+      "notes": ""
+    },
+    {
+      "group_id": "proteomics",
+      "label": "Proteomics and mass spectrometry",
+      "python_version": "3.11",
+      "engine_categories": [
+        "Proteomics",
+        "Mass spectrometry"
+      ],
+      "gpu_optional": false,
+      "gpu_required_for_full_qualification": false,
+      "approximate_environment_gb": 8.0,
+      "notes": ""
+    },
+    {
+      "group_id": "imaging",
+      "label": "Bioimaging and pathology",
+      "python_version": "3.11",
+      "engine_categories": [
+        "Bioimaging",
+        "Digital pathology"
+      ],
+      "gpu_optional": true,
+      "gpu_required_for_full_qualification": true,
+      "approximate_environment_gb": 10.0,
+      "notes": ""
+    },
+    {
+      "group_id": "population",
+      "label": "Population genetics",
+      "python_version": "3.11",
+      "engine_categories": [
+        "Population genetics"
+      ],
+      "gpu_optional": false,
+      "gpu_required_for_full_qualification": false,
+      "approximate_environment_gb": 8.0,
+      "notes": ""
+    },
+    {
+      "group_id": "immunology",
+      "label": "Antibody and immunoinformatics",
+      "python_version": "3.11",
+      "engine_categories": [
+        "Antibody engineering",
+        "Immunoinformatics"
+      ],
+      "gpu_optional": false,
+      "gpu_required_for_full_qualification": false,
+      "approximate_environment_gb": 5.0,
+      "notes": ""
+    },
+    {
+      "group_id": "epigenomics",
+      "label": "Epigenomics",
+      "python_version": "3.11",
+      "engine_categories": [
+        "Epigenomics"
+      ],
+      "gpu_optional": false,
+      "gpu_required_for_full_qualification": false,
+      "approximate_environment_gb": 6.0,
+      "notes": ""
+    },
+    {
+      "group_id": "local-ai",
+      "label": "Local scientific AI",
+      "python_version": "3.11",
+      "engine_categories": [
+        "Local AI"
+      ],
+      "gpu_optional": true,
+      "gpu_required_for_full_qualification": false,
+      "approximate_environment_gb": 8.0,
+      "notes": ""
+    }
+  ],
+  "engines_total": 53,
+  "automatic_engines": 48,
+  "manual_engines": 5,
+  "references_total": 26,
+  "automatic_references_under_size_policy": 7,
+  "reference_storage_estimate_gb": 2825.11,
+  "open_reference_storage_selected_gb": 1.8,
+  "max_reference_gb": 2.0,
+  "commands": {
+    "plan": "RUN_STEP175_TARGET_ENVIRONMENT_WINDOWS.bat",
+    "execute_open": "RUN_STEP175_TARGET_ENVIRONMENT_WINDOWS.bat --execute-open",
+    "resume": "RUN_STEP175_TARGET_ENVIRONMENT_WINDOWS.bat --resume",
+    "verify": "VERIFY_STEP175_WINDOWS.bat"
+  },
+  "licences_never_silently_accepted": true,
+  "provider_credentials_never_stored": true,
+  "automatic_installation_does_not_equal_qualification": true,
+  "plan_path": "/mnt/data/step175_work/BioIntel-AI/UserData/step175/execution_plan.json",
+  "plan_sha256": "13d37c643f1f51993c069e68ca45e8721dc1db9ab55d9bf21739fa557d4b89e8"
+}

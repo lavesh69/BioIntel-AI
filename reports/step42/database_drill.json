@@ -1,0 +1,175 @@
+{
+  "classification": "measured_controlled_environment_qualification",
+  "database_count": 18,
+  "external_boundary": "This is a measured repository restore qualification, not an independently witnessed production DR event.",
+  "observed_at": "2026-07-05T07:31:21.901696+00:00",
+  "passed": true,
+  "records": [
+    {
+      "bytes": 6144000,
+      "checksum_match": true,
+      "database": "analytics.sqlite3",
+      "foreign_key_issues": 0,
+      "integrity": "ok",
+      "restored_sha256": "520faba50913a5dc341cb8096990b58f00cd94547bede62df374880d0f81d1fd",
+      "source_sha256": "520faba50913a5dc341cb8096990b58f00cd94547bede62df374880d0f81d1fd"
+    },
+    {
+      "bytes": 86016,
+      "checksum_match": true,
+      "database": "api_security.sqlite3",
+      "foreign_key_issues": 0,
+      "integrity": "ok",
+      "restored_sha256": "edd12c02c133f1ca2f282b7d223d58a8f851de49335c3a54551d51dad772b678",
+      "source_sha256": "edd12c02c133f1ca2f282b7d223d58a8f851de49335c3a54551d51dad772b678"
+    },
+    {
+      "bytes": 4464640,
+      "checksum_match": true,
+      "database": "assets.sqlite3",
+      "foreign_key_issues": 0,
+      "integrity": "ok",
+      "restored_sha256": "f4711a29f0e6f886b780e4ac4e45b7b67395a2a69f9e51fef41c9afb806ceb83",
+      "source_sha256": "f4711a29f0e6f886b780e4ac4e45b7b67395a2a69f9e51fef41c9afb806ceb83"
+    },
+    {
+      "bytes": 1957888,
+      "checksum_match": true,
+      "database": "datasets.sqlite3",
+      "foreign_key_issues": 0,
+      "integrity": "ok",
+      "restored_sha256": "4e8cb27b9f2d691be428a7f1d8e0d2c41f8d9ef6bf97c782000b70f8a5374d2f",
+      "source_sha256": "4e8cb27b9f2d691be428a7f1d8e0d2c41f8d9ef6bf97c782000b70f8a5374d2f"
+    },
+    {
+      "bytes": 1085440,
+      "checksum_match": true,
+      "database": "document_history.sqlite3",
+      "foreign_key_issues": 0,
+      "integrity": "ok",
+      "restored_sha256": "177b66d86bddf38844af1597577d624fb04cea854c80562dd63909859882edae",
+      "source_sha256": "177b66d86bddf38844af1597577d624fb04cea854c80562dd63909859882edae"
+    },
+    {
+      "bytes": 2678784,
+      "checksum_match": true,
+      "database": "evidence.sqlite3",
+      "foreign_key_issues": 0,
+      "integrity": "ok",
+      "restored_sha256": "66bbb54620b2e71e17bce0433bf46820171032e3c769dbfba1fa43c45a3e3b5d",
+      "source_sha256": "66bbb54620b2e71e17bce0433bf46820171032e3c769dbfba1fa43c45a3e3b5d"
+    },
+    {
+      "bytes": 626688,
+      "checksum_match": true,
+      "database": "experiments.sqlite3",
+      "foreign_key_issues": 0,
+      "integrity": "ok",
+      "restored_sha256": "fcca2cb1783afade85e9db1d642af6dcc82c121b8f21e185d4d22c91e2bbcb8a",
+      "source_sha256": "fcca2cb1783afade85e9db1d642af6dcc82c121b8f21e185d4d22c91e2bbcb8a"
+    },
+    {
+      "bytes": 2777088,
+      "checksum_match": true,
+      "database": "feature_cache.sqlite3",
+      "foreign_key_issues": 0,
+      "integrity": "ok",
+      "restored_sha256": "7c6ccf087fd4d9e979d3a05292d709e748794713c733b4779ac9b4bcbcb8f28f",
+      "source_sha256": "7c6ccf087fd4d9e979d3a05292d709e748794713c733b4779ac9b4bcbcb8f28f"
+    },
+    {
+      "bytes": 208896,
+      "checksum_match": true,
+      "database": "internet_downloads.sqlite3",
+      "foreign_key_issues": 0,
+      "integrity": "ok",
+      "restored_sha256": "0c41ad34141872881faa8695df4031755bd0d5ca00b94ec44b9763ade960cd9a",
+      "source_sha256": "0c41ad34141872881faa8695df4031755bd0d5ca00b94ec44b9763ade960cd9a"
+    },
+    {
+      "bytes": 335872,
+      "checksum_match": true,
+      "database": "jobs.sqlite3",
+      "foreign_key_issues": 0,
+      "integrity": "ok",
+      "restored_sha256": "b722f731142eae95d0c1d8cfa938e8f9b272dec5cae18acd91a218af5ac477db",
+      "source_sha256": "b722f731142eae95d0c1d8cfa938e8f9b272dec5cae18acd91a218af5ac477db"
+    },
+    {
+      "bytes": 16117760,
+      "checksum_match": true,
+      "database": "knowledge.sqlite3",
+      "foreign_key_issues": 0,
+      "integrity": "ok",
+      "restored_sha256": "53e09144f58ee6b5c10fbddab53be5631a494665f78e69b9ce2d6071c3b965cd",
+      "source_sha256": "53e09144f58ee6b5c10fbddab53be5631a494665f78e69b9ce2d6071c3b965cd"
+    },
+    {
+      "bytes": 516096,
+      "checksum_match": true,
+      "database": "projects.sqlite3",
+      "foreign_key_issues": 0,
+      "integrity": "ok",
+      "restored_sha256": "039d58aa00a50e7ca7c677c2746a62ea94b045d5a5fbe7bc79a61043a6e16538",
+      "source_sha256": "039d58aa00a50e7ca7c677c2746a62ea94b045d5a5fbe7bc79a61043a6e16538"
+    },
+    {
+      "bytes": 36864,
+      "checksum_match": true,
+      "database": "prospective_validation.sqlite3",
+      "foreign_key_issues": 0,
+      "integrity": "ok",
+      "restored_sha256": "757ffcfd5b1dc467b4dff8ace0a1fe44fdcb103d78472e68398c59fd8412226c",
+      "source_sha256": "757ffcfd5b1dc467b4dff8ace0a1fe44fdcb103d78472e68398c59fd8412226c"
+    },
+    {
+      "bytes": 61440,
+      "checksum_match": true,
+      "database": "realworld_evidence.sqlite3",
+      "foreign_key_issues": 0,
+      "integrity": "ok",
+      "restored_sha256": "4238c05f1a47ca0e78b0d45f606a4e48a9434fd3e9328c9698cdb028ef0c9eb0",
+      "source_sha256": "4238c05f1a47ca0e78b0d45f606a4e48a9434fd3e9328c9698cdb028ef0c9eb0"
+    },
+    {
+      "bytes": 1159168,
+      "checksum_match": true,
+      "database": "relationships.sqlite3",
+      "foreign_key_issues": 0,
+      "integrity": "ok",
+      "restored_sha256": "89bbc585445a9680c4db69d79f0ac9ff64c902ee1b848521430755b36d344fe1",
+      "source_sha256": "89bbc585445a9680c4db69d79f0ac9ff64c902ee1b848521430755b36d344fe1"
+    },
+    {
+      "bytes": 16769024,
+      "checksum_match": true,
+      "database": "scientific_evidence.sqlite3",
+      "foreign_key_issues": 0,
+      "integrity": "ok",
+      "restored_sha256": "9225cb0e28d24b3c6ffe2b7f7586206e2928a7e4fc26023ac76d97c82dc2b6f9",
+      "source_sha256": "9225cb0e28d24b3c6ffe2b7f7586206e2928a7e4fc26023ac76d97c82dc2b6f9"
+    },
+    {
+      "bytes": 49152,
+      "checksum_match": true,
+      "database": "tenants.sqlite3",
+      "foreign_key_issues": 0,
+      "integrity": "ok",
+      "restored_sha256": "f057e2c5ff65043e596ad2936401c42117a64a16c742219a29de60c54f394a13",
+      "source_sha256": "f057e2c5ff65043e596ad2936401c42117a64a16c742219a29de60c54f394a13"
+    },
+    {
+      "bytes": 98304,
+      "checksum_match": true,
+      "database": "validation_evidence.sqlite3",
+      "foreign_key_issues": 0,
+      "integrity": "ok",
+      "restored_sha256": "0b8af4ec427c557a1ed7d60b549702e12fc376f42aaca92b30a023f164bab581",
+      "source_sha256": "0b8af4ec427c557a1ed7d60b549702e12fc376f42aaca92b30a023f164bab581"
+    }
+  ],
+  "rpo_minutes": 0.0,
+  "rto_minutes": 0.02178131803332993,
+  "schema": "biointel.step42.database-drill.v1",
+  "total_bytes": 55173120
+}

@@ -1,0 +1,45 @@
+{
+  "generated_at_utc": "2026-07-08T00:00:00Z",
+  "headline": {
+    "completed_independent_prospective_outcomes": 3.0,
+    "multisite_implementation": 10.0,
+    "multisite_real_public_evidence": 8.5,
+    "prospective_validation_readiness": 10.0,
+    "proteomics_implementation": 10.0,
+    "proteomics_real_data_depth": 8.7,
+    "single_cell_implementation": 10.0,
+    "single_cell_real_data_depth": 8.3
+  },
+  "honesty_boundary": "Software readiness can reach 10/10. Completed prospective wet-lab evidence cannot reach 10/10 without genuine independent laboratory outcomes.",
+  "ratings": [
+    {
+      "area": "Multi-site reproducibility",
+      "boundary": "The public studies are genuine multi-site evidence, but they are not new independent replications of every BioIntel module.",
+      "evidence_score": 8.5,
+      "implementation_score": 10.0,
+      "status": "official retrospective multi-site benchmarks integrated"
+    },
+    {
+      "area": "Single-cell depth",
+      "boundary": "The bundled payload is study metadata/QC reference, not a full multi-donor clinical cohort.",
+      "evidence_score": 8.3,
+      "implementation_score": 10.0,
+      "status": "official PBMC3k study manifest and reproducible QC reference integrated"
+    },
+    {
+      "area": "Proteomics depth",
+      "boundary": "Raw spectra remain in official repositories; local files are verified study indices and evidence manifests.",
+      "evidence_score": 8.7,
+      "implementation_score": 10.0,
+      "status": "CPTAC and ProteomeXchange multi-laboratory benchmarks integrated"
+    },
+    {
+      "area": "Prospective wet-lab validation",
+      "boundary": "Completed independent outcomes cannot be created by software and remain absent until real laboratories return signed results.",
+      "evidence_score": 3.0,
+      "implementation_score": 10.0,
+      "status": "site-ready locked/blinded validation workflow"
+    }
+  ],
+  "version": "8.2.6"
+}

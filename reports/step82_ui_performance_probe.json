@@ -1,0 +1,28 @@
+{
+  "theme_specs": 32,
+  "experience_themes": 32,
+  "new_themes_present": true,
+  "cold_45_css_calls_seconds": 0.018172,
+  "warm_900_css_calls_seconds": 0.00072,
+  "avg_warm_css_call_ms": 0.0008,
+  "cache_info": {
+    "premium": {
+      "hits": 300,
+      "misses": 15,
+      "maxsize": 128,
+      "currsize": 15
+    },
+    "experience": {
+      "hits": 300,
+      "misses": 15,
+      "maxsize": 128,
+      "currsize": 15
+    },
+    "override": {
+      "hits": 300,
+      "misses": 15,
+      "maxsize": 256,
+      "currsize": 15
+    }
+  }
+}
