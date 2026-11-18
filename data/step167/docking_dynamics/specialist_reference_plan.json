@@ -1,0 +1,12 @@
+{
+  "schema": "biointel.step167.specialist-reference-plan.v1",
+  "module_key": "docking_dynamics",
+  "required_external_confirmation": "Pinned docking/MD engines, receptor preparation, benchmark complexes and measured affinity validation",
+  "requirements": [
+    "version lock",
+    "SHA-256 or OCI digest",
+    "licence record",
+    "scientific smoke test",
+    "reference release manifest"
+  ]
+}

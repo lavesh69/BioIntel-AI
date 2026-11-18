@@ -1,0 +1,15 @@
+{
+  "boundary": "Computational co-design prioritises experiments; it does not establish binding, selectivity, efficacy, safety or synthesizability.",
+  "capabilities": [
+    "multi-objective consensus ranking",
+    "rank-stability uncertainty",
+    "selectivity panel",
+    "structure/ligand completeness",
+    "applicability-domain gate",
+    "candidate evidence gate"
+  ],
+  "fail_closed": true,
+  "module_key": "protein_ligand_codesign",
+  "schema": "biointel.step165.priority-software-contract.v1",
+  "software_owned_score": 10.0
+}

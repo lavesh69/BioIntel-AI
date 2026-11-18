@@ -1,0 +1,13 @@
+{
+  "schema": "biointel.step168.external-validation-plan.v1",
+  "module_key": "reference_lifecycle_v2",
+  "required": [
+    "prespecified protocol",
+    "independent dataset/site",
+    "negative controls",
+    "acceptance thresholds",
+    "failure analysis",
+    "uncertainty"
+  ],
+  "completion_inferred": false
+}

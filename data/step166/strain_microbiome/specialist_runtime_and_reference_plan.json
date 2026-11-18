@@ -1,0 +1,14 @@
+{
+  "checks": [
+    "executable/container version",
+    "binary/container sha256",
+    "database release",
+    "database sha256",
+    "licence",
+    "schema/record counts",
+    "scientific reviewer"
+  ],
+  "external_confirmation_required": "Pinned strain databases, authentic task model, mock-community and orthogonal validation",
+  "module_key": "strain_microbiome",
+  "schema": "biointel.step166.specialist-runtime-reference-plan.v1"
+}

@@ -1,0 +1,21 @@
+{
+  "balanced_accuracy": 0.9651162790697674,
+  "balanced_accuracy_ci95": {
+    "iterations": 250,
+    "lower_95": 0.9174166666666667,
+    "upper_95": 1.0
+  },
+  "brier_score": 0.02121216397788893,
+  "decision_threshold": 0.7100000000000002,
+  "expected_calibration_error": 0.024148648023925103,
+  "f1": 0.963855421686747,
+  "f1_ci95": {
+    "iterations": 250,
+    "lower_95": 0.9099802371541502,
+    "upper_95": 1.0
+  },
+  "log_loss": 0.09904140797161157,
+  "precision": 1.0,
+  "recall": 0.9302325581395349,
+  "roc_auc": 0.9890180878552971
+}

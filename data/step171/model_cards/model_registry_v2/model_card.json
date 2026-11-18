@@ -1,0 +1,68 @@
+{
+  "authenticity_tier": "verified-authentic-model-lifecycle-benchmark",
+  "cohort_path": "data/step162/public_benchmarks/uci_wdbc_breast_cancer/dataset.csv",
+  "cohort_rows": 569,
+  "cohort_sha256": "6ace0ad2c71bcd8214d6995d1d4ad5ebe89b8342387b6a021c7a80a0f8ecb555",
+  "generic_benchmark_models_eligible_for_domain_release": false,
+  "holdout_metrics": {
+    "cross_validation_metrics": {
+      "balanced_accuracy_mean": 0.9718451536089925,
+      "balanced_accuracy_std": 0.025783657004086604,
+      "f1_macro_mean": 0.9735799518668816,
+      "f1_macro_std": 0.02444330745948841
+    },
+    "holdout_metrics": {
+      "accuracy": 0.9385964912280702,
+      "balanced_accuracy": 0.941468253968254,
+      "balanced_accuracy_ci95": {
+        "iterations": 250,
+        "lower_95": 0.8966008835923889,
+        "upper_95": 0.9788053319919517
+      },
+      "brier_score": 0.035617823368507516,
+      "confusion_matrix": [
+        [
+          40,
+          2
+        ],
+        [
+          5,
+          67
+        ]
+      ],
+      "expected_calibration_error": 0.0359411587406016,
+      "f1_macro": 0.9349474199070678,
+      "f1_macro_ci95": {
+        "iterations": 250,
+        "lower_95": 0.887415264713928,
+        "upper_95": 0.9725196808800032
+      },
+      "log_loss": 0.10490754095140292,
+      "precision_macro": 0.929951690821256,
+      "recall_macro": 0.941468253968254,
+      "roc_auc": 0.994047619047619
+    },
+    "schema": "biointel.step162.benchmark-metrics.v1",
+    "uncertainty": {
+      "brier_score": 0.035617823368507516,
+      "expected_calibration_error": 0.0359411587406016,
+      "method": "probability calibration diagnostics"
+    }
+  },
+  "independent_external_site_complete": false,
+  "independent_holdout_complete": true,
+  "licence": "mixed public dataset licences",
+  "limitations": "Validates immutable model cards, hashes, stage transitions and rollback; does not create domain deployment approval.",
+  "model_artifact": "models/authentic_benchmarks/uci_wdbc_breast_cancer.joblib",
+  "model_sha256": "e1e26554146d8c9bd96f74a684647532990d6b55cbf153f1709271cbe7a3ac86",
+  "module_key": "model_registry_v2",
+  "module_title": "Model Registry & Lifecycle",
+  "package_strategy": "step162_registry_lifecycle",
+  "release_eligible": false,
+  "schema": "biointel.step171.authentic-model-card.v2",
+  "source_name": "Verified local Step 162 benchmark artifacts",
+  "source_url": "local://models/authentic_benchmarks",
+  "synthetic_models_eligible": false,
+  "task_scope": "task-specific-governance",
+  "task_type": "model lifecycle and rollback"
+}

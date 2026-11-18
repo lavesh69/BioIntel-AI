@@ -1,0 +1,12 @@
+{
+  "schema": "biointel.step167.specialist-reference-plan.v1",
+  "module_key": "pathogen_outbreak_core",
+  "required_external_confirmation": "Versioned alignment/phylogeny tools, reference panels and public-health confirmation",
+  "requirements": [
+    "version lock",
+    "SHA-256 or OCI digest",
+    "licence record",
+    "scientific smoke test",
+    "reference release manifest"
+  ]
+}

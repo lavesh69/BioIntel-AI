@@ -1,0 +1,18 @@
+{
+  "acquisition_source": "Verified local Step 162 benchmark artifacts",
+  "cohort_key": "step162_public_benchmarks",
+  "expert_signoff_required_for_release": true,
+  "independent_external_validation_required_for_release": true,
+  "licence": "mixed public dataset licences",
+  "limitations": "Validates immutable model cards, hashes, stage transitions and rollback; does not create domain deployment approval.",
+  "module_key": "model_registry_v2",
+  "module_title": "Model Registry & Lifecycle",
+  "package_strategy": "step162_registry_lifecycle",
+  "schema": "biointel.step171.module-model-contract.v1",
+  "software_framework_score": 10.0,
+  "source_url": "local://models/authentic_benchmarks",
+  "synthetic_models_eligible": false,
+  "task_scope": "task-specific-governance",
+  "task_type": "model lifecycle and rollback",
+  "wrong_domain_models_eligible": false
+}

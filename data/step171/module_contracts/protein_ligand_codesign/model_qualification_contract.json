@@ -1,0 +1,18 @@
+{
+  "acquisition_source": "DeepDTA Davis/KIBA benchmark",
+  "cohort_key": null,
+  "expert_signoff_required_for_release": true,
+  "independent_external_validation_required_for_release": true,
+  "licence": "source-specific research terms",
+  "limitations": "Requires measured affinity cohorts, chemically disjoint splits and qualified design/docking weights; generic tabular models are ineligible.",
+  "module_key": "protein_ligand_codesign",
+  "module_title": "Protein\u2013Ligand Co-Design",
+  "package_strategy": "external_acquisition_required",
+  "schema": "biointel.step171.module-model-contract.v1",
+  "software_framework_score": 10.0,
+  "source_url": "https://github.com/hkmztrk/DeepDTA",
+  "synthetic_models_eligible": false,
+  "task_scope": "blocked-pending-task-cohort",
+  "task_type": "protein-ligand affinity and design",
+  "wrong_domain_models_eligible": false
+}

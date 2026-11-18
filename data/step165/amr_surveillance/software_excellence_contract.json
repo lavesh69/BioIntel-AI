@@ -1,0 +1,15 @@
+{
+  "boundary": "Genomic AMR predictions remain research support and never replace phenotypic susceptibility testing or public-health interpretation.",
+  "capabilities": [
+    "genotype\u2013phenotype concordance metrics",
+    "drug-level performance",
+    "discordance review",
+    "MIC/breakpoint intake",
+    "outbreak-cluster screening",
+    "isolate-level evidence gate"
+  ],
+  "fail_closed": true,
+  "module_key": "amr_surveillance",
+  "schema": "biointel.step165.priority-software-contract.v1",
+  "software_owned_score": 10.0
+}

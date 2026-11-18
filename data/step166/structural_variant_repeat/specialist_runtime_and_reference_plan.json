@@ -1,0 +1,14 @@
+{
+  "checks": [
+    "executable/container version",
+    "binary/container sha256",
+    "database release",
+    "database sha256",
+    "licence",
+    "schema/record counts",
+    "scientific reviewer"
+  ],
+  "external_confirmation_required": "SAMtools/bcftools/Sniffles/ExpansionHunter, read-level review and orthogonal confirmation",
+  "module_key": "structural_variant_repeat",
+  "schema": "biointel.step166.specialist-runtime-reference-plan.v1"
+}

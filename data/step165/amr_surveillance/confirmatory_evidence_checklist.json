@@ -1,0 +1,31 @@
+{
+  "controlled_release_eligible": false,
+  "module_key": "amr_surveillance",
+  "requirements": [
+    {
+      "complete": false,
+      "requirement": "pinned AMR database"
+    },
+    {
+      "complete": false,
+      "requirement": "species confirmation"
+    },
+    {
+      "complete": false,
+      "requirement": "phenotypic AST"
+    },
+    {
+      "complete": false,
+      "requirement": "breakpoint standard/version"
+    },
+    {
+      "complete": false,
+      "requirement": "independent isolate cohort"
+    },
+    {
+      "complete": false,
+      "requirement": "public-health expert review"
+    }
+  ],
+  "schema": "biointel.step165.confirmatory-evidence-checklist.v1"
+}

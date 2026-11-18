@@ -1,0 +1,9 @@
+{
+  "acceptance_mode": "capture-and-review",
+  "label": "Upstream package licence captured from installed package and project source",
+  "licence_id": "bioconda-upstream",
+  "notes": "Conda packaging is not a substitute for reviewing the upstream software licence.",
+  "redistribution_status": "depends-on-upstream",
+  "schema": "biointel.step170.licence-policy.v1",
+  "terms_url": "https://bioconda.github.io/"
+}

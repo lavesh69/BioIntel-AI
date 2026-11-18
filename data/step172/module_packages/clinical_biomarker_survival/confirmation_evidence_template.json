@@ -1,0 +1,29 @@
+{
+  "allowed_types": [
+    "wet_lab",
+    "prospective",
+    "orthogonal"
+  ],
+  "confirmations": [
+    {
+      "acceptance_passed": false,
+      "adjudicated": false,
+      "batch_id": "",
+      "biological_replicates": 0,
+      "blinded": false,
+      "controls_complete": false,
+      "data_manifest_path": "",
+      "data_manifest_sha256": "",
+      "evidence_path": "",
+      "evidence_sha256": "",
+      "independent": false,
+      "instrument_id": "",
+      "sample_count": 0,
+      "site_id": "",
+      "technical_replicates": 0,
+      "type": ""
+    }
+  ],
+  "module_key": "clinical_biomarker_survival",
+  "schema": "biointel.step172.confirmation-evidence.v1"
+}

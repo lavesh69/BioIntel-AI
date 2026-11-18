@@ -1,0 +1,9 @@
+{
+  "module_key": "amr_surveillance",
+  "requires_domain_expert_review": true,
+  "requires_locked_inputs": true,
+  "requires_negative_controls": true,
+  "requires_uncertainty_and_failure_analysis": true,
+  "requires_untouched_external_set": true,
+  "schema": "biointel.step165.task-benchmark-protocol.v1"
+}

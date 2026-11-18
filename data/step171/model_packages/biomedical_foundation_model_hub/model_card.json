@@ -1,0 +1,26 @@
+{
+  "authenticity_tier": "verified-public-model-governance-suite",
+  "cohort_path": "data/step162/public_benchmarks",
+  "cohort_rows": 5,
+  "cohort_sha256": "76f257456ea0822242f2425ab46b9119f48918e42b4617631584c95769d4e9dd",
+  "generic_benchmark_models_eligible_for_domain_release": false,
+  "holdout_metrics": {
+    "verified_benchmark_models": 5
+  },
+  "independent_external_site_complete": false,
+  "independent_holdout_complete": true,
+  "licence": "mixed public dataset licences",
+  "limitations": "Five authentic public benchmark models validate lifecycle, provenance and evaluation plumbing; they are not biomedical foundation-model weights.",
+  "model_artifact": "data/step171/model_packages/biomedical_foundation_model_hub/verified_public_benchmark_suite.json",
+  "model_sha256": "0c0892b4dd72f6fbfc67403b4ae494d16abb8187be7788047c3dfae6b0a67d4b",
+  "module_key": "biomedical_foundation_model_hub",
+  "module_title": "Biomedical Foundation Model Hub",
+  "package_strategy": "step162_verified_public_suite",
+  "release_eligible": false,
+  "schema": "biointel.step171.authentic-model-card.v2",
+  "source_name": "Verified local Step 162 public benchmark suite",
+  "source_url": "local://data/step162/public_benchmarks",
+  "synthetic_models_eligible": false,
+  "task_scope": "governance-benchmark-only",
+  "task_type": "model-governance benchmark suite"
+}

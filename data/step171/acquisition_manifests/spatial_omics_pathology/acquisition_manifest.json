@@ -1,0 +1,19 @@
+{
+  "acquisition_source": "Public spatial transcriptomics/pathology cohorts",
+  "benchmark_executed": false,
+  "checksum_verified": false,
+  "cohort_key": null,
+  "downloaded": false,
+  "licence": "provider/source-specific",
+  "licence_accepted": false,
+  "limitations": "Requires spatial coordinates, expression matrices, histology and independent site validation; WDBC tabular morphology is not substituted.",
+  "module_key": "spatial_omics_pathology",
+  "module_title": "Spatial Omics & Pathology",
+  "package_strategy": "external_acquisition_required",
+  "release_eligible": false,
+  "schema": "biointel.step171.acquisition-manifest.v1",
+  "source_url": "https://www.10xgenomics.com/datasets",
+  "status": "external-acquisition-required",
+  "task_scope": "blocked-pending-task-cohort",
+  "task_type": "spatial molecular pathology"
+}

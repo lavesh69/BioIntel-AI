@@ -1,0 +1,12 @@
+{
+  "schema": "biointel.step167.specialist-reference-plan.v1",
+  "module_key": "single_cell_trajectory",
+  "required_external_confirmation": "Validated trajectory/velocity engines and time-course/lineage confirmation",
+  "requirements": [
+    "version lock",
+    "SHA-256 or OCI digest",
+    "licence record",
+    "scientific smoke test",
+    "reference release manifest"
+  ]
+}

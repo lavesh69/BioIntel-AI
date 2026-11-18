@@ -1,0 +1,14 @@
+{
+  "checks": [
+    "executable/container version",
+    "binary/container sha256",
+    "database release",
+    "database sha256",
+    "licence",
+    "schema/record counts",
+    "scientific reviewer"
+  ],
+  "external_confirmation_required": "Pinned taxonomy/AMR databases, epidemiological review and confirmatory testing",
+  "module_key": "one_health_environmental",
+  "schema": "biointel.step166.specialist-runtime-reference-plan.v1"
+}

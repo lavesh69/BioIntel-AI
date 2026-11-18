@@ -1,0 +1,15 @@
+{
+  "artifact": "models/authentic_benchmarks/uci_wdbc_breast_cancer.joblib",
+  "artifact_sha256": "e1e26554146d8c9bd96f74a684647532990d6b55cbf153f1709271cbe7a3ac86",
+  "metrics_sha256": "26c9054521b7a4c54e775643d9b5b7429d38854ba749d83b1e9130088665eca9",
+  "model_card_sha256": "522be231ffb4c9f443e8ad4004586faad322fa460ff797f562b104318b20a44b",
+  "production_release": false,
+  "rollback_target": "integrity-verified",
+  "schema": "biointel.step171.model-lifecycle.v1",
+  "stages": [
+    "registered",
+    "integrity-verified",
+    "research-benchmark-qualified",
+    "external-validation-pending"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "schema": "biointel.step168.operating-history.v1",
+  "module_key": "organoid_3d",
+  "fields": [
+    "site",
+    "environment",
+    "start/end",
+    "runs",
+    "failures",
+    "downtime",
+    "drift",
+    "incidents",
+    "corrective actions"
+  ],
+  "minimum_history_complete": false
+}

@@ -1,0 +1,14 @@
+{
+  "schema": "biointel.step168.production-data-intake.v1",
+  "module_key": "evidence_citation_engine",
+  "required": [
+    "provider/site/instrument",
+    "release or cohort identifier",
+    "licence",
+    "SHA-256",
+    "schema",
+    "QC report",
+    "reviewer"
+  ],
+  "completion_inferred": false
+}

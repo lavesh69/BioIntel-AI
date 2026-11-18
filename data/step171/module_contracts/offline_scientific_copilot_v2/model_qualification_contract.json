@@ -1,0 +1,18 @@
+{
+  "acquisition_source": "BioIntel verified official-reference snapshots",
+  "cohort_key": "verified_scientific_evidence_corpus",
+  "expert_signoff_required_for_release": true,
+  "independent_external_validation_required_for_release": true,
+  "licence": "source-specific public licences",
+  "limitations": "Citation retrieval benchmark only; generation quality, clinical safety and expert acceptance remain external.",
+  "module_key": "offline_scientific_copilot_v2",
+  "module_title": "Offline Scientific Copilot V2",
+  "package_strategy": "verified_evidence_retrieval",
+  "schema": "biointel.step171.module-model-contract.v1",
+  "software_framework_score": 10.0,
+  "source_url": "local://data/real_scientific_pack",
+  "synthetic_models_eligible": false,
+  "task_scope": "task-specific-retrieval",
+  "task_type": "scientific evidence retrieval",
+  "wrong_domain_models_eligible": false
+}

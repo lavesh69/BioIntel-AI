@@ -1,0 +1,18 @@
+{
+  "acquisition_source": "curatedMetagenomicData / MicrobiomeHD",
+  "cohort_key": null,
+  "expert_signoff_required_for_release": true,
+  "independent_external_validation_required_for_release": true,
+  "licence": "source-specific public study licences",
+  "limitations": "Requires raw or strain-resolved metagenomes, study metadata and leave-study-out validation; demo abundance tables are ineligible.",
+  "module_key": "strain_microbiome",
+  "module_title": "Strain-Resolved Microbiome",
+  "package_strategy": "external_acquisition_required",
+  "schema": "biointel.step171.module-model-contract.v1",
+  "software_framework_score": 10.0,
+  "source_url": "https://waldronlab.io/curatedMetagenomicData/",
+  "synthetic_models_eligible": false,
+  "task_scope": "blocked-pending-task-cohort",
+  "task_type": "strain-level microbiome prediction",
+  "wrong_domain_models_eligible": false
+}

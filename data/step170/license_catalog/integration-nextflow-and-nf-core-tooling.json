@@ -1,0 +1,9 @@
+{
+  "schema": "biointel.step170.licence-policy.v1",
+  "licence_id": "Apache-2.0 / per-project notices",
+  "label": "Nextflow and nf-core tooling",
+  "terms_url": "https://github.com/nextflow-io/nextflow",
+  "acceptance_mode": "installed-metadata-and-notice-review",
+  "redistribution_status": "wsl-runtime-pipelines-separate",
+  "notes": "Used internally by BioIntel Reproducible Pipeline Engine. Model, database, gene-set, workflow and pipeline assets require separate review where applicable."
+}

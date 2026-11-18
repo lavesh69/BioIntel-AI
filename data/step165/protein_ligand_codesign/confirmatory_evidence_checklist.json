@@ -1,0 +1,31 @@
+{
+  "controlled_release_eligible": false,
+  "module_key": "protein_ligand_codesign",
+  "requirements": [
+    {
+      "complete": false,
+      "requirement": "prepared receptor and ligand states"
+    },
+    {
+      "complete": false,
+      "requirement": "versioned design/docking weights"
+    },
+    {
+      "complete": false,
+      "requirement": "orthogonal docking/MD"
+    },
+    {
+      "complete": false,
+      "requirement": "selectivity panel"
+    },
+    {
+      "complete": false,
+      "requirement": "measured affinity"
+    },
+    {
+      "complete": false,
+      "requirement": "medicinal chemistry review"
+    }
+  ],
+  "schema": "biointel.step165.confirmatory-evidence-checklist.v1"
+}

@@ -1,0 +1,14 @@
+{
+  "checks": [
+    "executable/container version",
+    "binary/container sha256",
+    "database release",
+    "database sha256",
+    "licence",
+    "schema/record counts",
+    "scientific reviewer"
+  ],
+  "external_confirmation_required": "minigraph/vg/ODGI/GraphAligner, qualified assemblies and benchmark graph validation",
+  "module_key": "pangenome_core",
+  "schema": "biointel.step166.specialist-runtime-reference-plan.v1"
+}

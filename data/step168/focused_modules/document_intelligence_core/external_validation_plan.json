@@ -1,0 +1,13 @@
+{
+  "schema": "biointel.step168.external-validation-plan.v1",
+  "module_key": "document_intelligence_core",
+  "required": [
+    "prespecified protocol",
+    "independent dataset/site",
+    "negative controls",
+    "acceptance thresholds",
+    "failure analysis",
+    "uncertainty"
+  ],
+  "completion_inferred": false
+}

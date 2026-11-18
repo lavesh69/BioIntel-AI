@@ -1,0 +1,18 @@
+{
+  "acquisition_source": "UCI Wisconsin Diagnostic Breast Cancer",
+  "cohort_key": "uci_wdbc_real",
+  "expert_signoff_required_for_release": true,
+  "independent_external_validation_required_for_release": true,
+  "licence": "CC BY 4.0",
+  "limitations": "Real morphometric phenotype baseline, not a high-content screening assay model and not externally validated across instruments.",
+  "module_key": "phenotypic_screening",
+  "module_title": "Phenotypic Screening",
+  "package_strategy": "wdbc_morphometry",
+  "schema": "biointel.step171.module-model-contract.v1",
+  "software_framework_score": 10.0,
+  "source_url": "https://archive.ics.uci.edu/dataset/17/breast+cancer+wisconsin+diagnostic",
+  "synthetic_models_eligible": false,
+  "task_scope": "task-adjacent-baseline",
+  "task_type": "morphometric phenotype classification",
+  "wrong_domain_models_eligible": false
+}

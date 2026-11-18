@@ -1,0 +1,15 @@
+{
+  "schema": "biointel.step168.physical-qualification.v1",
+  "module_key": "cell_atlas_mapping",
+  "requirements": [
+    "Windows hardware",
+    "GPU when applicable",
+    "instrument when applicable",
+    "antivirus",
+    "sleep/resume",
+    "network loss",
+    "large-file",
+    "recovery"
+  ],
+  "complete": false
+}

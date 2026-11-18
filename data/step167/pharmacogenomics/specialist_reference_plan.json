@@ -1,0 +1,12 @@
+{
+  "schema": "biointel.step167.specialist-reference-plan.v1",
+  "module_key": "pharmacogenomics",
+  "required_external_confirmation": "Qualified star-allele/CNV callers, guideline releases and clinical expert review",
+  "requirements": [
+    "version lock",
+    "SHA-256 or OCI digest",
+    "licence record",
+    "scientific smoke test",
+    "reference release manifest"
+  ]
+}

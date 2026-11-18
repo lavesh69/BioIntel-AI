@@ -1,0 +1,12 @@
+{
+  "schema": "biointel.step167.specialist-reference-plan.v1",
+  "module_key": "cell_atlas_mapping",
+  "required_external_confirmation": "Versioned reference atlas and independent cell-type annotation review",
+  "requirements": [
+    "version lock",
+    "SHA-256 or OCI digest",
+    "licence record",
+    "scientific smoke test",
+    "reference release manifest"
+  ]
+}

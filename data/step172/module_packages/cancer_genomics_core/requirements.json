@@ -1,0 +1,22 @@
+{
+  "claim_boundary": "No external outcome, signature, qualification or operating history is inferred from software completion.",
+  "completion_inferred": false,
+  "evidence_class": "clinical-high-impact",
+  "minimum_confirmation_batches": 2,
+  "minimum_independent_sites": 2,
+  "minimum_operating_runs": 30,
+  "minimum_qualified_experts": 2,
+  "module_key": "cancer_genomics_core",
+  "module_title": "Cancer genomics depth",
+  "requires_expert_signoff": true,
+  "requires_formal_release_review": true,
+  "requires_gpu_qualification": false,
+  "requires_independent_site": true,
+  "requires_instrument_qualification": false,
+  "requires_orthogonal": true,
+  "requires_prospective": true,
+  "requires_wet_lab": true,
+  "schema": "biointel.step172.module-confirmation-requirements.v1",
+  "scientific_boundary": "Cancer-genomics findings are research evidence and not autonomous clinical interpretation.",
+  "software_framework_score": 10.0
+}

@@ -1,0 +1,13 @@
+{
+  "schema": "biointel.step168.independent-validation-protocol.v1",
+  "module_key": "phenotypic_screening",
+  "requirements": [
+    "locked protocol",
+    "independent site/dataset",
+    "negative controls",
+    "prespecified thresholds",
+    "calibration",
+    "failure analysis"
+  ],
+  "complete": false
+}

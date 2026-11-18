@@ -1,0 +1,40 @@
+{
+  "files": [
+    {
+      "bytes": 186,
+      "path": "environment.json",
+      "sha256": "e76bb01b7433e0f6a4f803464571288e146df2fb6a387e23ab08dd2d4377585c"
+    },
+    {
+      "bytes": 571,
+      "path": "metrics.json",
+      "sha256": "8001c6676566ba8b25949424d8ea483206e4a22f39d4a561f4df1fc1f3636461"
+    },
+    {
+      "bytes": 1881,
+      "path": "model_card.json",
+      "sha256": "cbe06b9b5c40b8a6b257c675dc00ed952b6aa48a3c5d87c2e628d914fc1cca7b"
+    },
+    {
+      "bytes": 155,
+      "path": "pseudo_site_manifest.csv",
+      "sha256": "afcba76c99b473b57a9b03eaff1d0f665f7d0868771d844e4e34f81dfe6a4f13"
+    },
+    {
+      "bytes": 9910,
+      "path": "split_manifest.json",
+      "sha256": "dbf7f9eb418919de1dd43a2d4efba13d5dcc7992892832533cc95f82087193e4"
+    },
+    {
+      "bytes": 444,
+      "path": "technical_partition_metrics.csv",
+      "sha256": "959f4ccf7931499cc8438656c7511af45c689309169de59162b9109666ed6375"
+    },
+    {
+      "bytes": 7422,
+      "path": "untouched_holdout_predictions.csv",
+      "sha256": "de07d9425f84359b2268020aa37b088244b1365bf7795dddaed56f75952525a4"
+    }
+  ],
+  "schema": "biointel.step171.file-manifest.v1"
+}

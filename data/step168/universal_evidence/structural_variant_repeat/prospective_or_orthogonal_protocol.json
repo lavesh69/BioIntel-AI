@@ -1,0 +1,11 @@
+{
+  "schema": "biointel.step168.prospective-validation-protocol.v1",
+  "module_key": "structural_variant_repeat",
+  "requirements": [
+    "prediction lock",
+    "blinded outcome",
+    "orthogonal assay or prospective operation",
+    "deviation log"
+  ],
+  "complete": false
+}

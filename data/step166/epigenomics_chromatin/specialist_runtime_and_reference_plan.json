@@ -1,0 +1,14 @@
+{
+  "checks": [
+    "executable/container version",
+    "binary/container sha256",
+    "database release",
+    "database sha256",
+    "licence",
+    "schema/record counts",
+    "scientific reviewer"
+  ],
+  "external_confirmation_required": "BWA/SAMtools/MACS2/deepTools, pinned genome references, IDR and orthogonal chromatin validation",
+  "module_key": "epigenomics_chromatin",
+  "schema": "biointel.step166.specialist-runtime-reference-plan.v1"
+}

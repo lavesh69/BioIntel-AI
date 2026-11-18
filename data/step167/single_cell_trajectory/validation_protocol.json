@@ -1,0 +1,12 @@
+{
+  "schema": "biointel.step167.validation-protocol.v1",
+  "module_key": "single_cell_trajectory",
+  "required_evidence": [
+    "independent cohort",
+    "negative controls",
+    "uncertainty analysis",
+    "prospective or orthogonal confirmation",
+    "domain-expert sign-off"
+  ],
+  "release_eligible_without_evidence": false
+}

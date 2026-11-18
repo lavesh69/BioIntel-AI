@@ -1,0 +1,44 @@
+{
+  "authenticity_tier": "real-public-cohort-research-benchmark",
+  "cohort_path": "data/real_scientific_pack/cancer/uci_wdbc_real.csv",
+  "cohort_rows": 569,
+  "cohort_sha256": "111000dc8b565e16d91880afd585fed4a2715955ace30c43addf1795459470ea",
+  "generic_benchmark_models_eligible_for_domain_release": false,
+  "holdout_metrics": {
+    "balanced_accuracy": 0.9534883720930232,
+    "balanced_accuracy_ci95": {
+      "iterations": 250,
+      "lower_95": 0.9047619047619048,
+      "upper_95": 0.9888888888888889
+    },
+    "brier_score": 0.02237554910520311,
+    "decision_threshold": 0.7550000000000001,
+    "expected_calibration_error": 0.02690104264729902,
+    "f1": 0.9512195121951219,
+    "f1_ci95": {
+      "iterations": 250,
+      "lower_95": 0.8947368421052632,
+      "upper_95": 0.9887640449438202
+    },
+    "log_loss": 0.1035211899181886,
+    "precision": 1.0,
+    "recall": 0.9069767441860465,
+    "roc_auc": 0.9857881136950905
+  },
+  "independent_external_site_complete": false,
+  "independent_holdout_complete": true,
+  "licence": "CC BY 4.0",
+  "limitations": "Uses deterministic same-source pseudo-sites to validate aggregation and heterogeneity controls; it is not a real multi-institution study.",
+  "model_artifact": "models/step171/federated_biomedical_ai.joblib",
+  "model_sha256": "c2f332c9ca25fb65175dd497ac6571f46eae170f7259044b918421411168908b",
+  "module_key": "federated_biomedical_ai",
+  "module_title": "Federated Biomedical AI",
+  "package_strategy": "wdbc_federated_simulation",
+  "release_eligible": false,
+  "schema": "biointel.step171.authentic-model-card.v2",
+  "source_name": "UCI Wisconsin Diagnostic Breast Cancer",
+  "source_url": "https://archive.ics.uci.edu/dataset/17/breast+cancer+wisconsin+diagnostic",
+  "synthetic_models_eligible": false,
+  "task_scope": "task-specific-simulated-sites",
+  "task_type": "federated learning benchmark"
+}

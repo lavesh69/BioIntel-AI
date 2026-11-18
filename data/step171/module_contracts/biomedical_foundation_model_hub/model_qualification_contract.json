@@ -1,0 +1,18 @@
+{
+  "acquisition_source": "Verified local Step 162 public benchmark suite",
+  "cohort_key": "step162_public_benchmarks",
+  "expert_signoff_required_for_release": true,
+  "independent_external_validation_required_for_release": true,
+  "licence": "mixed public dataset licences",
+  "limitations": "Five authentic public benchmark models validate lifecycle, provenance and evaluation plumbing; they are not biomedical foundation-model weights.",
+  "module_key": "biomedical_foundation_model_hub",
+  "module_title": "Biomedical Foundation Model Hub",
+  "package_strategy": "step162_verified_public_suite",
+  "schema": "biointel.step171.module-model-contract.v1",
+  "software_framework_score": 10.0,
+  "source_url": "local://data/step162/public_benchmarks",
+  "synthetic_models_eligible": false,
+  "task_scope": "governance-benchmark-only",
+  "task_type": "model-governance benchmark suite",
+  "wrong_domain_models_eligible": false
+}

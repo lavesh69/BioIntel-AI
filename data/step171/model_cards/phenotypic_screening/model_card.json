@@ -1,0 +1,44 @@
+{
+  "authenticity_tier": "real-public-cohort-research-benchmark",
+  "cohort_path": "data/real_scientific_pack/cancer/uci_wdbc_real.csv",
+  "cohort_rows": 569,
+  "cohort_sha256": "111000dc8b565e16d91880afd585fed4a2715955ace30c43addf1795459470ea",
+  "generic_benchmark_models_eligible_for_domain_release": false,
+  "holdout_metrics": {
+    "balanced_accuracy": 0.9651162790697674,
+    "balanced_accuracy_ci95": {
+      "iterations": 250,
+      "lower_95": 0.9174166666666667,
+      "upper_95": 1.0
+    },
+    "brier_score": 0.02121216397788893,
+    "decision_threshold": 0.7100000000000002,
+    "expected_calibration_error": 0.024148648023925103,
+    "f1": 0.963855421686747,
+    "f1_ci95": {
+      "iterations": 250,
+      "lower_95": 0.9099802371541502,
+      "upper_95": 1.0
+    },
+    "log_loss": 0.09904140797161157,
+    "precision": 1.0,
+    "recall": 0.9302325581395349,
+    "roc_auc": 0.9890180878552971
+  },
+  "independent_external_site_complete": false,
+  "independent_holdout_complete": true,
+  "licence": "CC BY 4.0",
+  "limitations": "Real morphometric phenotype baseline, not a high-content screening assay model and not externally validated across instruments.",
+  "model_artifact": "models/step171/phenotypic_screening.joblib",
+  "model_sha256": "4b730f62dd51389d1021191b80e203b28fe0f54db1a999c47d398502fb6ce796",
+  "module_key": "phenotypic_screening",
+  "module_title": "Phenotypic Screening",
+  "package_strategy": "wdbc_morphometry",
+  "release_eligible": false,
+  "schema": "biointel.step171.authentic-model-card.v2",
+  "source_name": "UCI Wisconsin Diagnostic Breast Cancer",
+  "source_url": "https://archive.ics.uci.edu/dataset/17/breast+cancer+wisconsin+diagnostic",
+  "synthetic_models_eligible": false,
+  "task_scope": "task-adjacent-baseline",
+  "task_type": "morphometric phenotype classification"
+}

@@ -1,0 +1,31 @@
+{
+  "controlled_release_eligible": false,
+  "module_key": "long_read_epigenome",
+  "requirements": [
+    {
+      "complete": false,
+      "requirement": "reference genome/build"
+    },
+    {
+      "complete": false,
+      "requirement": "basecaller/modification model release"
+    },
+    {
+      "complete": false,
+      "requirement": "phasing evidence"
+    },
+    {
+      "complete": false,
+      "requirement": "biological replicates"
+    },
+    {
+      "complete": false,
+      "requirement": "orthogonal methylation assay"
+    },
+    {
+      "complete": false,
+      "requirement": "epigenomics expert review"
+    }
+  ],
+  "schema": "biointel.step165.confirmatory-evidence-checklist.v1"
+}

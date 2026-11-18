@@ -1,0 +1,14 @@
+{
+  "checks": [
+    "executable/container version",
+    "binary/container sha256",
+    "database release",
+    "database sha256",
+    "licence",
+    "schema/record counts",
+    "scientific reviewer"
+  ],
+  "external_confirmation_required": "Flye/hifiasm, polishing, BUSCO/Merqury and contamination qualification",
+  "module_key": "long_read_core",
+  "schema": "biointel.step166.specialist-runtime-reference-plan.v1"
+}

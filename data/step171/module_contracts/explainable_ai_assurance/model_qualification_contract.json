@@ -1,0 +1,18 @@
+{
+  "acquisition_source": "UCI Wisconsin Diagnostic Breast Cancer",
+  "cohort_key": "uci_wdbc_real",
+  "expert_signoff_required_for_release": true,
+  "independent_external_validation_required_for_release": true,
+  "licence": "CC BY 4.0",
+  "limitations": "Validates deterministic calibration, leakage controls and coefficient-stability reporting; not evidence of clinical utility.",
+  "module_key": "explainable_ai_assurance",
+  "module_title": "Explainable AI & Model Assurance",
+  "package_strategy": "wdbc_explainability",
+  "schema": "biointel.step171.module-model-contract.v1",
+  "software_framework_score": 10.0,
+  "source_url": "https://archive.ics.uci.edu/dataset/17/breast+cancer+wisconsin+diagnostic",
+  "synthetic_models_eligible": false,
+  "task_scope": "task-specific-assurance",
+  "task_type": "calibrated model assurance",
+  "wrong_domain_models_eligible": false
+}

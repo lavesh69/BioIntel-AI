@@ -1,0 +1,19 @@
+{
+  "acquisition_source": "TAPE protein benchmark",
+  "benchmark_executed": false,
+  "checksum_verified": false,
+  "cohort_key": null,
+  "downloaded": false,
+  "licence": "MIT code; dataset licences are source-specific",
+  "licence_accepted": false,
+  "limitations": "No suitable real task cohort or qualified protein-language weights are bundled; synthetic sequence libraries are ineligible.",
+  "module_key": "protein_language_design",
+  "module_title": "Protein Language Model Design",
+  "package_strategy": "external_acquisition_required",
+  "release_eligible": false,
+  "schema": "biointel.step171.acquisition-manifest.v1",
+  "source_url": "https://github.com/songlab-cal/tape",
+  "status": "external-acquisition-required",
+  "task_scope": "blocked-pending-task-cohort",
+  "task_type": "protein sequence property prediction"
+}

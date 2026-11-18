@@ -1,0 +1,23 @@
+{
+  "schema": "biointel.step169.final-consolidation-contract.v1",
+  "module_key": "metabolomics_lipidomics",
+  "module_title": "Metabolomics depth",
+  "product_version": "14.1.0",
+  "internal_software_score": 10.0,
+  "native_research_depth_score": 10.0,
+  "evidence_framework_score": 10.0,
+  "verified_release_axes": [
+    "production_reference",
+    "independent_validation",
+    "prospective_or_orthogonal",
+    "expert_signoff",
+    "formal_release_review",
+    "operating_history",
+    "physical_qualification"
+  ],
+  "release_unlock_source": "step169_verified_release.sqlite plus checksum-valid evidence artifacts",
+  "metadata_flags_can_unlock_release": false,
+  "synthetic_or_demo_evidence_can_unlock_release": false,
+  "default_release_status": "research-only-fail-closed",
+  "boundary": "Feature matches are hypotheses until confirmed by retention time, MS/MS evidence and authentic standards."
+}

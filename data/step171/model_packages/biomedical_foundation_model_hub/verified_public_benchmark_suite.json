@@ -1,0 +1,40 @@
+{
+  "packages": [
+    {
+      "benchmark_key": "diabetes_progression_regression",
+      "metrics_sha256": "22e6867f46bd5d5b57f31f8a4f4003851cf1f0c3ab9d62843ff425cb8b62b47c",
+      "model_artifact": "models/authentic_benchmarks/diabetes_progression_regression.joblib",
+      "model_card_sha256": "1a9e0f0bdee032da603bd75132ad2b1e62dce575eec271fbd0330c672dad0d02",
+      "model_sha256": "299feebfa0991e50fc8f949f2c9d603e1eca06f50c6d27cca782c9d7cc4a5572"
+    },
+    {
+      "benchmark_key": "fisher_iris_classification",
+      "metrics_sha256": "15cd812cc57565fd53bfaf3af084e38311656bb1e810134178179be4cb15b8b5",
+      "model_artifact": "models/authentic_benchmarks/fisher_iris_classification.joblib",
+      "model_card_sha256": "0ebba748abd503ed7a5e8246d982e10a47037e8e6961354abe367b989858797f",
+      "model_sha256": "7b2e523c03fe981bad34db03767bbf32afa9a47a39f9068566546bba0c84320f"
+    },
+    {
+      "benchmark_key": "uci_optical_digits_classification",
+      "metrics_sha256": "ee2fa372f4515c8423c5932bd4a0c290a4ba93cf0bb18a3921c87263fb5fe405",
+      "model_artifact": "models/authentic_benchmarks/uci_optical_digits_classification.joblib",
+      "model_card_sha256": "4896e77f8e180eff7a3f4671b8bffc93ed8813e76cb6b71ff0e85a8de4660720",
+      "model_sha256": "44321cb05da288dde27820dfd564598362b73d0042352026eeccec6f560b87b4"
+    },
+    {
+      "benchmark_key": "uci_wdbc_breast_cancer",
+      "metrics_sha256": "26c9054521b7a4c54e775643d9b5b7429d38854ba749d83b1e9130088665eca9",
+      "model_artifact": "models/authentic_benchmarks/uci_wdbc_breast_cancer.joblib",
+      "model_card_sha256": "522be231ffb4c9f443e8ad4004586faad322fa460ff797f562b104318b20a44b",
+      "model_sha256": "e1e26554146d8c9bd96f74a684647532990d6b55cbf153f1709271cbe7a3ac86"
+    },
+    {
+      "benchmark_key": "uci_wine_classification",
+      "metrics_sha256": "438d28480027c23c7adbb882ce8ad211aa9e698295e435876406de96e5b494e8",
+      "model_artifact": "models/authentic_benchmarks/uci_wine_classification.joblib",
+      "model_card_sha256": "cf9f295c4f412880ab1efa109ae4908986a4650a0a8366459283e575d029e6b7",
+      "model_sha256": "759b1165bd1d77cad2a85e78213341c3fe98bd34aed82dbaccd5f44dc1f8596c"
+    }
+  ],
+  "schema": "biointel.step171.public-suite.v1"
+}

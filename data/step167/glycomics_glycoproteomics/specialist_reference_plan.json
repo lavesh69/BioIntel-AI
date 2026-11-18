@@ -1,0 +1,12 @@
+{
+  "schema": "biointel.step167.specialist-reference-plan.v1",
+  "module_key": "glycomics_glycoproteomics",
+  "required_external_confirmation": "Qualified search engine, spectral libraries and orthogonal glycopeptide confirmation",
+  "requirements": [
+    "version lock",
+    "SHA-256 or OCI digest",
+    "licence record",
+    "scientific smoke test",
+    "reference release manifest"
+  ]
+}

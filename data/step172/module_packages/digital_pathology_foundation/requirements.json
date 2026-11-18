@@ -1,0 +1,22 @@
+{
+  "claim_boundary": "No external outcome, signature, qualification or operating history is inferred from software completion.",
+  "completion_inferred": false,
+  "evidence_class": "clinical-high-impact",
+  "minimum_confirmation_batches": 2,
+  "minimum_independent_sites": 2,
+  "minimum_operating_runs": 30,
+  "minimum_qualified_experts": 2,
+  "module_key": "digital_pathology_foundation",
+  "module_title": "Digital pathology foundation-model depth",
+  "requires_expert_signoff": true,
+  "requires_formal_release_review": true,
+  "requires_gpu_qualification": true,
+  "requires_independent_site": true,
+  "requires_instrument_qualification": true,
+  "requires_orthogonal": true,
+  "requires_prospective": true,
+  "requires_wet_lab": true,
+  "schema": "biointel.step172.module-confirmation-requirements.v1",
+  "scientific_boundary": "Foundation-model pathology outputs require validated models, scanner/site qualification and pathologist review.",
+  "software_framework_score": 10.0
+}

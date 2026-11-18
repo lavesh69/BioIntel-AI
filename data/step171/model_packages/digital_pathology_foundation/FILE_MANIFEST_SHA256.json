@@ -1,0 +1,35 @@
+{
+  "files": [
+    {
+      "bytes": 186,
+      "path": "environment.json",
+      "sha256": "e76bb01b7433e0f6a4f803464571288e146df2fb6a387e23ab08dd2d4377585c"
+    },
+    {
+      "bytes": 542,
+      "path": "metrics.json",
+      "sha256": "371af1d652c73abf334fd6ed87daa5c48489a0feb793a3c24f3d6e54bb15ea05"
+    },
+    {
+      "bytes": 1848,
+      "path": "model_card.json",
+      "sha256": "2528491d0577d3a5ce8d0a6d440746fd905c937c5b25f9fdb6544e13313402f2"
+    },
+    {
+      "bytes": 9910,
+      "path": "split_manifest.json",
+      "sha256": "dbf7f9eb418919de1dd43a2d4efba13d5dcc7992892832533cc95f82087193e4"
+    },
+    {
+      "bytes": 444,
+      "path": "technical_partition_metrics.csv",
+      "sha256": "880173d8f690f231d95bce466bddf28d640be23e095269cf2b1926872e03b949"
+    },
+    {
+      "bytes": 7450,
+      "path": "untouched_holdout_predictions.csv",
+      "sha256": "632f0d47aaaf4b830f8a62f4ffa89a86f4c284e45271381d41d02b03d7fdcd1b"
+    }
+  ],
+  "schema": "biointel.step171.file-manifest.v1"
+}

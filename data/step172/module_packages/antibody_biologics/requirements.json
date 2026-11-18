@@ -1,0 +1,22 @@
+{
+  "claim_boundary": "No external outcome, signature, qualification or operating history is inferred from software completion.",
+  "completion_inferred": false,
+  "evidence_class": "biological-research",
+  "minimum_confirmation_batches": 2,
+  "minimum_independent_sites": 1,
+  "minimum_operating_runs": 20,
+  "minimum_qualified_experts": 1,
+  "module_key": "antibody_biologics",
+  "module_title": "Antibody engineering depth",
+  "requires_expert_signoff": true,
+  "requires_formal_release_review": true,
+  "requires_gpu_qualification": false,
+  "requires_independent_site": true,
+  "requires_instrument_qualification": false,
+  "requires_orthogonal": true,
+  "requires_prospective": false,
+  "requires_wet_lab": true,
+  "schema": "biointel.step172.module-confirmation-requirements.v1",
+  "scientific_boundary": "Computational developability does not establish manufacturability, efficacy or clinical safety.",
+  "software_framework_score": 10.0
+}

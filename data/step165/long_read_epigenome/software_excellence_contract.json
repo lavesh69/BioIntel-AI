@@ -1,0 +1,15 @@
+{
+  "boundary": "Methylation, allele-specific and imprinting findings require model, coverage, phasing, replication and orthogonal confirmation.",
+  "capabilities": [
+    "coverage-aware methylation intervals",
+    "replicate-aware DMR gate",
+    "haplotype imbalance",
+    "imprinting concordance",
+    "batch/model drift review",
+    "region-level evidence gate"
+  ],
+  "fail_closed": true,
+  "module_key": "long_read_epigenome",
+  "schema": "biointel.step165.priority-software-contract.v1",
+  "software_owned_score": 10.0
+}

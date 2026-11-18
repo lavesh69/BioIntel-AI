@@ -1,0 +1,12 @@
+{
+  "schema": "biointel.step168.expert-release-review.v1",
+  "module_key": "universal_file_inspector",
+  "requirements": [
+    "named domain expert",
+    "conflict disclosure",
+    "signed review",
+    "release committee decision",
+    "intended-use boundary"
+  ],
+  "complete": false
+}

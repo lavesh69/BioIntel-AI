@@ -1,0 +1,9 @@
+{
+  "schema": "biointel.step170.licence-policy.v1",
+  "licence_id": "MIT",
+  "label": "Kraken 2",
+  "terms_url": "https://github.com/DerrickWood/kraken2",
+  "acceptance_mode": "installed-metadata-and-notice-review",
+  "redistribution_status": "wsl-runtime-databases-separate",
+  "notes": "Used internally by BioIntel Taxonomic Classification Engine. Model, database, gene-set, workflow and pipeline assets require separate review where applicable."
+}

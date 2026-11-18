@@ -1,0 +1,13 @@
+{
+  "controlled_release_eligible": false,
+  "module_key": "epigenomics_chromatin",
+  "requirements": [
+    "independent dataset",
+    "prespecified acceptance criteria",
+    "negative controls",
+    "orthogonal or wet-lab confirmation",
+    "domain expert sign-off",
+    "immutable evidence hashes"
+  ],
+  "schema": "biointel.step166.confirmatory-validation-protocol.v1"
+}

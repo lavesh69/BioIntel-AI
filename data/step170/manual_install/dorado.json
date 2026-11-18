@@ -1,0 +1,20 @@
+{
+  "engine": "dorado",
+  "licence_id": "ont-public-license",
+  "operator_fields": {
+    "executable_sha256": "",
+    "licence_text_path": "",
+    "licence_text_sha256": "",
+    "local_path": "",
+    "model_weight_paths": [],
+    "model_weight_sha256": [],
+    "qualified_at_utc": "",
+    "qualified_by": "",
+    "release_id": "",
+    "smoke_test_output": ""
+  },
+  "route": "provider-release",
+  "schema": "biointel.step170.manual-install-intake.v1",
+  "status": "operator-action-required",
+  "upstream_url": "https://github.com/nanoporetech/dorado"
+}
