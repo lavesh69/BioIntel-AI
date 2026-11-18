@@ -1,0 +1,44 @@
+{
+  "schema": "biointel.step173.module-readiness-contract.v1",
+  "module_key": "strain_microbiome",
+  "module_title": "Strain-resolved microbiome depth",
+  "internal_ratings": {
+    "software": 10.0,
+    "native_research_depth": 10.0,
+    "qualification_framework": 10.0
+  },
+  "actual_state": {
+    "schema": "biointel.step173.final-readiness.v1",
+    "module_key": "strain_microbiome",
+    "module_title": "Strain-resolved microbiome depth",
+    "evidence_class": "predictive-model",
+    "internal_software_rating": 10.0,
+    "native_research_depth_rating": 10.0,
+    "qualification_framework_rating": 10.0,
+    "internal_10of10_complete": true,
+    "required_engines": 3,
+    "qualified_engines": 0,
+    "missing_engines": "bracken, humann, kraken2",
+    "required_references": 3,
+    "qualified_references": 0,
+    "missing_references": "humann-chocophlan, humann-uniref90, kraken2-standard",
+    "runtime_reference_fraction": 0.0,
+    "task_specific_model_required": true,
+    "model_cohort_benchmark_fraction": 0.0,
+    "external_confirmation_fraction": 0.0,
+    "governance_release_fraction": 0.0,
+    "actual_practical_readiness_rating": 3.5,
+    "controlled_release_eligible": false,
+    "decision": "research-only-fail-closed",
+    "blocker_count": 22,
+    "remaining_blockers": "engine:bracken | engine:humann | engine:kraken2 | reference:humann-chocophlan | reference:humann-uniref90 | reference:kraken2-standard | model:full task specific domain model | model:real public or official cohort present | model:checksum locked holdout complete | model:leakage audit pass | model:calibration audit pass | model:independent external site complete | model:expert review complete | confirmation:protocol complete | confirmation:independent site complete | confirmation:prospective complete | governance:physical qualification complete | governance:operating history complete | governance:expert signoff complete | governance:formal release review complete | governance:upstream runtime reference model complete | step172:confirmation manifest missing",
+    "next_actions": "Run PROVISION_STEP170_SCIENTIFIC_RUNTIME_WINDOWS.bat --execute and qualify missing engines. | Run DOWNLOAD_STEP170_REFERENCE_DATABASES_WINDOWS.bat, then register checksums, licences and scientific review. | Prepare/import the authentic Step 171 package for strain_microbiome and run independent holdout validation. | Prepare Step 172 evidence workspace for strain_microbiome; attach prospective/wet-lab/orthogonal evidence as required. | Complete physical qualification, operating history, cryptographic expert sign-off and formal release review.",
+    "scientific_boundary": "Strain-level assignments are database- and coverage-dependent.",
+    "readiness_stage": "S0-internal-10of10-external-evidence-pending"
+  },
+  "claim_policy": {
+    "external_results_may_not_be_inferred": true,
+    "controlled_release_requires_all_gates": true,
+    "missing_evidence_decision": "research-only-fail-closed"
+  }
+}

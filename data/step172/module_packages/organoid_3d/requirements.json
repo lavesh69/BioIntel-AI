@@ -1,0 +1,22 @@
+{
+  "claim_boundary": "No external outcome, signature, qualification or operating history is inferred from software completion.",
+  "completion_inferred": false,
+  "evidence_class": "instrument-assisted-biological",
+  "minimum_confirmation_batches": 3,
+  "minimum_independent_sites": 1,
+  "minimum_operating_runs": 20,
+  "minimum_qualified_experts": 1,
+  "module_key": "organoid_3d",
+  "module_title": "Organoid analytics depth",
+  "requires_expert_signoff": true,
+  "requires_formal_release_review": true,
+  "requires_gpu_qualification": true,
+  "requires_independent_site": true,
+  "requires_instrument_qualification": true,
+  "requires_orthogonal": true,
+  "requires_prospective": true,
+  "requires_wet_lab": true,
+  "schema": "biointel.step172.module-confirmation-requirements.v1",
+  "scientific_boundary": "Automated organoid phenotypes require manual QC and biological replication.",
+  "software_framework_score": 10.0
+}

@@ -1,0 +1,24 @@
+{
+  "experts": [
+    {
+      "approved": false,
+      "conflict_disclosure_path": "",
+      "conflict_disclosure_sha256": "",
+      "credential_path": "",
+      "credential_sha256": "",
+      "independent": false,
+      "name": "",
+      "organization": "",
+      "public_key_path": "",
+      "public_key_sha256": "",
+      "review_path": "",
+      "review_sha256": "",
+      "role": "",
+      "signature_path": "",
+      "signature_sha256": ""
+    }
+  ],
+  "module_key": "phenotypic_screening",
+  "schema": "biointel.step172.expert-signoff.v1",
+  "signature_verification": "OpenSSL SHA-256 detached signature verification is required for controlled release."
+}

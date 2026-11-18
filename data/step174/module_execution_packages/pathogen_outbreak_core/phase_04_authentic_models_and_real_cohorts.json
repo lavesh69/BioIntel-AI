@@ -1,0 +1,27 @@
+{
+  "schema": "biointel.step174.module-phase-work-package.v1",
+  "module_key": "pathogen_outbreak_core",
+  "module_title": "Outbreak genomics depth",
+  "phase_number": 4,
+  "phase_key": "authentic_models_and_real_cohorts",
+  "phase_title": "Authentic task-specific models and real cohorts",
+  "applicable": false,
+  "complete": true,
+  "software_automation_ready": true,
+  "objective": "Qualify task-matched model weights and real public, institutional or assay cohorts without synthetic or wrong-domain substitution.",
+  "software_automation": "Step 171 model-card, cohort, feature-schema, environment-lock, licence and cryptographic artifact verification.",
+  "external_evidence_required": [
+    "Authentic task-specific model artifact",
+    "Real cohort and metadata",
+    "Model card, training logs and environment lock",
+    "Model/cohort/feature SHA-256 records",
+    "Human-data authorization where applicable"
+  ],
+  "completion_rule": "Applicable modules require both a full task-specific domain model and a real public/official cohort; non-model modules are not applicable.",
+  "command": "python scripts\\step174_realworld_manager.py prepare-model-cohort --module pathogen_outbreak_core",
+  "claim_policy": {
+    "external_evidence_must_be_genuine": true,
+    "metadata_flags_without_files_are_ineligible": true,
+    "missing_evidence_decision": "research-only-fail-closed"
+  }
+}

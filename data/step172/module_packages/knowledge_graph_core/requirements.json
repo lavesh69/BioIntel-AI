@@ -1,0 +1,22 @@
+{
+  "claim_boundary": "No external outcome, signature, qualification or operating history is inferred from software completion.",
+  "completion_inferred": false,
+  "evidence_class": "software-operational",
+  "minimum_confirmation_batches": 0,
+  "minimum_independent_sites": 0,
+  "minimum_operating_runs": 30,
+  "minimum_qualified_experts": 1,
+  "module_key": "knowledge_graph_core",
+  "module_title": "Knowledge-graph depth",
+  "requires_expert_signoff": true,
+  "requires_formal_release_review": true,
+  "requires_gpu_qualification": false,
+  "requires_independent_site": false,
+  "requires_instrument_qualification": false,
+  "requires_orthogonal": false,
+  "requires_prospective": false,
+  "requires_wet_lab": false,
+  "schema": "biointel.step172.module-confirmation-requirements.v1",
+  "scientific_boundary": "Graph paths do not establish causality and must preserve exact supporting evidence.",
+  "software_framework_score": 10.0
+}

@@ -1,0 +1,44 @@
+{
+  "schema": "biointel.step173.module-readiness-contract.v1",
+  "module_key": "one_health_environmental",
+  "module_title": "One Health depth",
+  "internal_ratings": {
+    "software": 10.0,
+    "native_research_depth": 10.0,
+    "qualification_framework": 10.0
+  },
+  "actual_state": {
+    "schema": "biointel.step173.final-readiness.v1",
+    "module_key": "one_health_environmental",
+    "module_title": "One Health depth",
+    "evidence_class": "biological-research",
+    "internal_software_rating": 10.0,
+    "native_research_depth_rating": 10.0,
+    "qualification_framework_rating": 10.0,
+    "internal_10of10_complete": true,
+    "required_engines": 4,
+    "qualified_engines": 0,
+    "missing_engines": "bracken, humann, kraken2, minimap2",
+    "required_references": 4,
+    "qualified_references": 0,
+    "missing_references": "card, humann-chocophlan, humann-uniref90, kraken2-standard",
+    "runtime_reference_fraction": 0.0,
+    "task_specific_model_required": false,
+    "model_cohort_benchmark_fraction": 1.0,
+    "external_confirmation_fraction": 0.0,
+    "governance_release_fraction": 0.0,
+    "actual_practical_readiness_rating": 5.0,
+    "controlled_release_eligible": false,
+    "decision": "research-only-fail-closed",
+    "blocker_count": 17,
+    "remaining_blockers": "engine:bracken | engine:humann | engine:kraken2 | engine:minimap2 | reference:card | reference:humann-chocophlan | reference:humann-uniref90 | reference:kraken2-standard | confirmation:protocol complete | confirmation:independent site complete | confirmation:orthogonal complete | governance:physical qualification complete | governance:operating history complete | governance:expert signoff complete | governance:formal release review complete | governance:upstream runtime reference model complete | step172:confirmation manifest missing",
+    "next_actions": "Run PROVISION_STEP170_SCIENTIFIC_RUNTIME_WINDOWS.bat --execute and qualify missing engines. | Run DOWNLOAD_STEP170_REFERENCE_DATABASES_WINDOWS.bat, then register checksums, licences and scientific review. | Prepare Step 172 evidence workspace for one_health_environmental; attach prospective/wet-lab/orthogonal evidence as required. | Complete physical qualification, operating history, cryptographic expert sign-off and formal release review.",
+    "scientific_boundary": "Surveillance signals require epidemiological context, confirmatory testing and public-health review.",
+    "readiness_stage": "S1-qualification-in-progress"
+  },
+  "claim_policy": {
+    "external_results_may_not_be_inferred": true,
+    "controlled_release_requires_all_gates": true,
+    "missing_evidence_decision": "research-only-fail-closed"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "schema": "biointel.step174.module-phase-work-package.v1",
+  "module_key": "evidence_citation_engine",
+  "module_title": "Evidence and citation depth",
+  "phase_number": 2,
+  "phase_key": "specialist_engine_qualification",
+  "phase_title": "Specialist engine installation and qualification",
+  "applicable": true,
+  "complete": true,
+  "software_automation_ready": true,
+  "objective": "Install and qualify every module-required scientific engine with pinned version, licence, executable hash and golden-fixture smoke test.",
+  "software_automation": "Step 170 WSL2/micromamba provisioning, manual-provider intake, version capture, executable SHA-256, smoke tests and registry updates.",
+  "external_evidence_required": [
+    "Installed executable or provider package",
+    "Licence acceptance",
+    "Version and executable SHA-256",
+    "Golden fixture and integration result"
+  ],
+  "completion_rule": "All engines required by the module must be qualified in the Step 170 registry.",
+  "command": "PROVISION_STEP170_SCIENTIFIC_RUNTIME_WINDOWS.bat --execute",
+  "claim_policy": {
+    "external_evidence_must_be_genuine": true,
+    "metadata_flags_without_files_are_ineligible": true,
+    "missing_evidence_decision": "research-only-fail-closed"
+  }
+}

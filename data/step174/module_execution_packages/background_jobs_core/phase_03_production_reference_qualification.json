@@ -1,0 +1,27 @@
+{
+  "schema": "biointel.step174.module-phase-work-package.v1",
+  "module_key": "background_jobs_core",
+  "module_title": "Background execution depth",
+  "phase_number": 3,
+  "phase_key": "production_reference_qualification",
+  "phase_title": "Production reference database qualification",
+  "applicable": true,
+  "complete": true,
+  "software_automation_ready": true,
+  "objective": "Acquire official production reference releases and verify release identity, licence, provider checksum, local SHA-256, schema, indexes and scientific review.",
+  "software_automation": "Resumable download/import, checksum verification, licence gates, schema/index validation, rollback and release lifecycle registry.",
+  "external_evidence_required": [
+    "Official provider release",
+    "Provider checksum and local SHA-256",
+    "Licence/permitted-use record",
+    "Schema, record-count and index validation",
+    "Scientific reviewer approval"
+  ],
+  "completion_rule": "All references required by the module must be qualified in the Step 170 registry.",
+  "command": "DOWNLOAD_STEP170_REFERENCE_DATABASES_WINDOWS.bat",
+  "claim_policy": {
+    "external_evidence_must_be_genuine": true,
+    "metadata_flags_without_files_are_ineligible": true,
+    "missing_evidence_decision": "research-only-fail-closed"
+  }
+}

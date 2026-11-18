@@ -1,0 +1,15 @@
+{
+  "schema": "biointel.step173.release-checklist.v1",
+  "module_key": "provenance_ledger_v2",
+  "checks": {
+    "internal_software_10of10": true,
+    "native_depth_10of10": true,
+    "framework_10of10": true,
+    "runtime_reference_complete": true,
+    "model_cohort_benchmark_complete": true,
+    "external_confirmation_complete": false,
+    "governance_release_complete": false,
+    "controlled_release_eligible": false
+  },
+  "remaining_blockers": "confirmation:protocol complete | governance:physical qualification complete | governance:operating history complete | governance:expert signoff complete | governance:formal release review complete | governance:upstream runtime reference model complete | step172:confirmation manifest missing"
+}

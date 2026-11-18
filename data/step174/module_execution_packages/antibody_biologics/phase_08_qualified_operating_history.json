@@ -1,0 +1,27 @@
+{
+  "schema": "biointel.step174.module-phase-work-package.v1",
+  "module_key": "antibody_biologics",
+  "module_title": "Antibody engineering depth",
+  "phase_number": 8,
+  "phase_key": "qualified_operating_history",
+  "phase_title": "Qualified real-world operating history",
+  "applicable": true,
+  "complete": false,
+  "software_automation_ready": true,
+  "objective": "Record enough genuine module runs, incidents, downtime, drift, recovery and corrective actions to demonstrate sustained operation.",
+  "software_automation": "Append-only run ledger, incident/CAPA templates, drift review and immutable history report verification.",
+  "external_evidence_required": [
+    "Minimum required qualified runs",
+    "Failure and downtime history",
+    "Incident and CAPA records",
+    "Drift review",
+    "Zero unresolved critical incidents"
+  ],
+  "completion_rule": "The module-specific minimum operating-run count, drift review and critical-incident controls must pass.",
+  "command": "python scripts\\step174_realworld_manager.py prepare-history --module antibody_biologics",
+  "claim_policy": {
+    "external_evidence_must_be_genuine": true,
+    "metadata_flags_without_files_are_ineligible": true,
+    "missing_evidence_decision": "research-only-fail-closed"
+  }
+}

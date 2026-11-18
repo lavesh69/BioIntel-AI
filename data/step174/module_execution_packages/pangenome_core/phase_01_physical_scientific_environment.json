@@ -1,0 +1,26 @@
+{
+  "schema": "biointel.step174.module-phase-work-package.v1",
+  "module_key": "pangenome_core",
+  "module_title": "Pangenome execution depth",
+  "phase_number": 1,
+  "phase_key": "physical_scientific_environment",
+  "phase_title": "Physical scientific environment qualification",
+  "applicable": true,
+  "complete": false,
+  "software_automation_ready": true,
+  "objective": "Qualify the actual Windows workstation, WSL2 runtime, GPU, storage, recovery behaviour, antivirus compatibility and instrument-connected site where applicable.",
+  "software_automation": "System probe, disk/RAM/GPU inventory, large-file integrity, recovery probe, immutable report and target-machine boundary checks.",
+  "external_evidence_required": [
+    "Target Windows machine report",
+    "GPU/driver report where applicable",
+    "Antivirus, sleep/resume and network-loss results",
+    "Instrument/site IQ-OQ-PQ and calibration records where applicable"
+  ],
+  "completion_rule": "Every required physical-machine, GPU, site and instrument control must pass on the actual target environment.",
+  "command": "RUN_STEP174_LOCAL_ENVIRONMENT_QUALIFICATION_WINDOWS.bat",
+  "claim_policy": {
+    "external_evidence_must_be_genuine": true,
+    "metadata_flags_without_files_are_ineligible": true,
+    "missing_evidence_decision": "research-only-fail-closed"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "schema": "biointel.step173.rating-breakdown.v1",
+  "module_key": "epigenomics_chromatin",
+  "internal_software_rating": 10.0,
+  "native_research_depth_rating": 10.0,
+  "qualification_framework_rating": 10.0,
+  "actual_practical_readiness_rating": 5.75,
+  "readiness_stage": "S1-qualification-in-progress",
+  "rating_is_evidence_bound": true,
+  "rating_formula": "3.5 internal + 1.5 runtime/reference + 1.5 model/cohort + 2.0 external confirmation + 1.5 governance/release"
+}

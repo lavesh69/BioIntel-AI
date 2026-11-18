@@ -1,0 +1,32 @@
+{
+  "schema": "biointel.step173.qualification-plan.v1",
+  "module_key": "model_registry_v2",
+  "ordered_phases": [
+    {
+      "phase": "runtime-reference",
+      "command": "PROVISION_STEP170_SCIENTIFIC_RUNTIME_WINDOWS.bat --execute",
+      "complete": true
+    },
+    {
+      "phase": "authentic-model-cohort",
+      "command": "python scripts\\step171_model_manager.py evaluate model_registry_v2",
+      "complete": false
+    },
+    {
+      "phase": "external-confirmation",
+      "command": "python scripts\\step172_evidence_manager.py evaluate model_registry_v2",
+      "complete": false
+    },
+    {
+      "phase": "physical-and-governance",
+      "command": "RUN_STEP172_PHYSICAL_QUALIFICATION_WINDOWS.bat",
+      "complete": false
+    },
+    {
+      "phase": "final-evaluation",
+      "command": "VERIFY_STEP173_WINDOWS.bat",
+      "complete": false
+    }
+  ],
+  "next_actions": "Prepare/import the authentic Step 171 package for model_registry_v2 and run independent holdout validation. | Prepare Step 172 evidence workspace for model_registry_v2; attach prospective/wet-lab/orthogonal evidence as required. | Complete physical qualification, operating history, cryptographic expert sign-off and formal release review."
+}

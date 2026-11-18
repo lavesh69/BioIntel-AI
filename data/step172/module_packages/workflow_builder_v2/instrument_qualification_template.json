@@ -1,0 +1,23 @@
+{
+  "instruments": [
+    {
+      "calibration_path": "",
+      "calibration_sha256": "",
+      "firmware": "",
+      "instrument_id": "",
+      "iq_path": "",
+      "iq_sha256": "",
+      "manufacturer": "",
+      "model": "",
+      "oq_path": "",
+      "oq_sha256": "",
+      "pq_path": "",
+      "pq_sha256": "",
+      "qualified": false,
+      "serial_number": ""
+    }
+  ],
+  "module_key": "workflow_builder_v2",
+  "required": false,
+  "schema": "biointel.step172.instrument-qualification.v1"
+}

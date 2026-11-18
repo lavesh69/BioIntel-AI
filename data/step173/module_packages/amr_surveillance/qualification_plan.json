@@ -1,0 +1,32 @@
+{
+  "schema": "biointel.step173.qualification-plan.v1",
+  "module_key": "amr_surveillance",
+  "ordered_phases": [
+    {
+      "phase": "runtime-reference",
+      "command": "PROVISION_STEP170_SCIENTIFIC_RUNTIME_WINDOWS.bat --execute",
+      "complete": false
+    },
+    {
+      "phase": "authentic-model-cohort",
+      "command": "python scripts\\step171_model_manager.py evaluate amr_surveillance",
+      "complete": true
+    },
+    {
+      "phase": "external-confirmation",
+      "command": "python scripts\\step172_evidence_manager.py evaluate amr_surveillance",
+      "complete": false
+    },
+    {
+      "phase": "physical-and-governance",
+      "command": "RUN_STEP172_PHYSICAL_QUALIFICATION_WINDOWS.bat",
+      "complete": false
+    },
+    {
+      "phase": "final-evaluation",
+      "command": "VERIFY_STEP173_WINDOWS.bat",
+      "complete": false
+    }
+  ],
+  "next_actions": "Run PROVISION_STEP170_SCIENTIFIC_RUNTIME_WINDOWS.bat --execute and qualify missing engines. | Run DOWNLOAD_STEP170_REFERENCE_DATABASES_WINDOWS.bat, then register checksums, licences and scientific review. | Prepare Step 172 evidence workspace for amr_surveillance; attach prospective/wet-lab/orthogonal evidence as required. | Complete physical qualification, operating history, cryptographic expert sign-off and formal release review."
+}
