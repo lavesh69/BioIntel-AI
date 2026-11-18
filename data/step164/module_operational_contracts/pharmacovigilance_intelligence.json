@@ -1,0 +1,31 @@
+{
+  "accepted_formats": [
+    "CSV/TSV adverse-event reports"
+  ],
+  "external_release_requires_all_real_artifacts": true,
+  "module_key": "pharmacovigilance_intelligence",
+  "module_title": "Pharmacovigilance depth",
+  "native_research_fallback_ready": true,
+  "optimization_controls": [
+    "Incremental aggregation",
+    "Coded-term cache",
+    "Bounded report previews"
+  ],
+  "reference_asset_ids": [
+    "pharmacovigilance_intelligence-01-drug-event-dictionaries",
+    "pharmacovigilance_intelligence-02-deduplication-rules",
+    "pharmacovigilance_intelligence-03-exposure-context",
+    "pharmacovigilance_intelligence-04-review-policy"
+  ],
+  "schema": "biointel.step164.module-operational-contract.v1",
+  "scientific_boundary": "Spontaneous-report signals do not prove causality, incidence or comparative risk.",
+  "software_owned_target": "10/10",
+  "specialist_claims_fail_closed": true,
+  "specialist_engines": [],
+  "validation_gates": [
+    "Duplicate reports",
+    "Disproportionality stability",
+    "Confounding/reporting bias",
+    "Clinical review"
+  ]
+}

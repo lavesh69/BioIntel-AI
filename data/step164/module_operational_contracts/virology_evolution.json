@@ -1,0 +1,36 @@
+{
+  "accepted_formats": [
+    "FASTA",
+    "VCF",
+    "CSV metadata"
+  ],
+  "external_release_requires_all_real_artifacts": true,
+  "module_key": "virology_evolution",
+  "module_title": "Virology depth",
+  "native_research_fallback_ready": true,
+  "optimization_controls": [
+    "Sample-parallel consensus",
+    "Indexed variants",
+    "Tree caches"
+  ],
+  "reference_asset_ids": [
+    "virology_evolution-01-reference-genome",
+    "virology_evolution-02-lineage-definitions",
+    "virology_evolution-03-sampling-metadata"
+  ],
+  "schema": "biointel.step164.module-operational-contract.v1",
+  "scientific_boundary": "Evolutionary and outbreak interpretations require sampling context and confirmatory epidemiology.",
+  "software_owned_target": "10/10",
+  "specialist_claims_fail_closed": true,
+  "specialist_engines": [
+    "mafft",
+    "iqtree",
+    "bcftools"
+  ],
+  "validation_gates": [
+    "Mixed infection",
+    "Recombination",
+    "Low-frequency variants",
+    "Temporal/geographic bias"
+  ]
+}

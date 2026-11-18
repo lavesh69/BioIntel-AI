@@ -1,0 +1,248 @@
+{
+  "domain": "Reproducible ML benchmarks",
+  "generated_at_utc": "2026-07-14T04:25:32+00:00",
+  "key": "sklearn",
+  "licence_review_required": true,
+  "local_assets": [
+    {
+      "path": "data/step162/public_benchmarks/diabetes_progression_regression/FILE_MANIFEST_SHA256.json",
+      "sha256": "fc75ff66d8415f7b62e857da355a9547bf81a2b1b69a439db53ed9571388df4b",
+      "size_bytes": 1881
+    },
+    {
+      "path": "data/step162/public_benchmarks/diabetes_progression_regression/MODEL_CARD.md",
+      "sha256": "00eadd9bafd50b7c9ce1d79d4bbb95cfd3b6f6e927cc8d89dc456a6872d22485",
+      "size_bytes": 1236
+    },
+    {
+      "path": "data/step162/public_benchmarks/diabetes_progression_regression/dataset.csv",
+      "sha256": "234091ed70a373b59de7b6382b946e70416204645d615f4e6d92d816bc1b0fd0",
+      "size_bytes": 91439
+    },
+    {
+      "path": "data/step162/public_benchmarks/diabetes_progression_regression/dataset_manifest.json",
+      "sha256": "8b84088199e313798d006db91823018751315fb5466c3d0089e1ae31f0c8d6c1",
+      "size_bytes": 776
+    },
+    {
+      "path": "data/step162/public_benchmarks/diabetes_progression_regression/environment.json",
+      "sha256": "e76bb01b7433e0f6a4f803464571288e146df2fb6a387e23ab08dd2d4377585c",
+      "size_bytes": 186
+    },
+    {
+      "path": "data/step162/public_benchmarks/diabetes_progression_regression/metrics.json",
+      "sha256": "22e6867f46bd5d5b57f31f8a4f4003851cf1f0c3ab9d62843ff425cb8b62b47c",
+      "size_bytes": 960
+    },
+    {
+      "path": "data/step162/public_benchmarks/diabetes_progression_regression/model_card.json",
+      "sha256": "1a9e0f0bdee032da603bd75132ad2b1e62dce575eec271fbd0330c672dad0d02",
+      "size_bytes": 2337
+    },
+    {
+      "path": "data/step162/public_benchmarks/diabetes_progression_regression/split_manifest.json",
+      "sha256": "4548d1a5eaa719158ad7222588723d55dc5c1bbd405c358c0122c89c66c63f00",
+      "size_bytes": 3977
+    },
+    {
+      "path": "data/step162/public_benchmarks/diabetes_progression_regression/untouched_holdout_predictions.csv",
+      "sha256": "1fb7b9d3be5fe4a963d64d267234e0cf547d67e9b3f8fac51a51a853fabda9cd",
+      "size_bytes": 8927
+    },
+    {
+      "path": "data/step162/public_benchmarks/fisher_iris_classification/FILE_MANIFEST_SHA256.json",
+      "sha256": "885b64ef7fd4a57b798c46a749afe1a688c02db6b6947c0de93dcd4b9b0ab7bd",
+      "size_bytes": 1836
+    },
+    {
+      "path": "data/step162/public_benchmarks/fisher_iris_classification/MODEL_CARD.md",
+      "sha256": "e46ac2cf4ca54f4ef506de5801cd53d01a85bfa82b84876dad4ba2323bc81835",
+      "size_bytes": 1281
+    },
+    {
+      "path": "data/step162/public_benchmarks/fisher_iris_classification/dataset.csv",
+      "sha256": "1c4da6110b845a828bf245faa15b02586a4b45ca0a79f01fe534ed65cf55d63e",
+      "size_bytes": 7595
+    },
+    {
+      "path": "data/step162/public_benchmarks/fisher_iris_classification/dataset_manifest.json",
+      "sha256": "54826c7fe868e3d16c7e094e778081d290162076a1a68bdc25c6b13d57ba428a",
+      "size_bytes": 766
+    },
+    {
+      "path": "data/step162/public_benchmarks/fisher_iris_classification/environment.json",
+      "sha256": "e76bb01b7433e0f6a4f803464571288e146df2fb6a387e23ab08dd2d4377585c",
+      "size_bytes": 186
+    },
+    {
+      "path": "data/step162/public_benchmarks/fisher_iris_classification/metrics.json",
+      "sha256": "15cd812cc57565fd53bfaf3af084e38311656bb1e810134178179be4cb15b8b5",
+      "size_bytes": 1257
+    },
+    {
+      "path": "data/step162/public_benchmarks/fisher_iris_classification/model_card.json",
+      "sha256": "0ebba748abd503ed7a5e8246d982e10a47037e8e6961354abe367b989858797f",
+      "size_bytes": 2593
+    },
+    {
+      "path": "data/step162/public_benchmarks/fisher_iris_classification/split_manifest.json",
+      "sha256": "96267929d534e2ae77553a852a7344db84611b17c505af3cd881f1e4dfb94a11",
+      "size_bytes": 1346
+    },
+    {
+      "path": "data/step162/public_benchmarks/fisher_iris_classification/untouched_holdout_predictions.csv",
+      "sha256": "f2ab5a851623099ec4278773bd478816f266e0e10e818a3d1fae1abbf33d0b6e",
+      "size_bytes": 3603
+    },
+    {
+      "path": "data/step162/public_benchmarks/uci_optical_digits_classification/FILE_MANIFEST_SHA256.json",
+      "sha256": "bd9bc5b15c36220640b669a9b5dae7d5ba1f7b9b700a267502233802ac365b67",
+      "size_bytes": 1904
+    },
+    {
+      "path": "data/step162/public_benchmarks/uci_optical_digits_classification/MODEL_CARD.md",
+      "sha256": "7e67c5d60fa7acb064d1765972471110fc6e977d7f31ad58eabb8d39bca08a05",
+      "size_bytes": 1313
+    },
+    {
+      "path": "data/step162/public_benchmarks/uci_optical_digits_classification/dataset.csv",
+      "sha256": "7e5e64cd662d533eeec739bb699bf718243fc2c2f6993db801f062cd0dae337d",
+      "size_bytes": 337249
+    },
+    {
+      "path": "data/step162/public_benchmarks/uci_optical_digits_classification/dataset_manifest.json",
+      "sha256": "272bbbfeacc6816539be06cb6502f3d4ceedd7861e31c048c2a7fd2a66a823d6",
+      "size_bytes": 780
+    },
+    {
+      "path": "data/step162/public_benchmarks/uci_optical_digits_classification/environment.json",
+      "sha256": "e76bb01b7433e0f6a4f803464571288e146df2fb6a387e23ab08dd2d4377585c",
+      "size_bytes": 186
+    },
+    {
+      "path": "data/step162/public_benchmarks/uci_optical_digits_classification/metrics.json",
+      "sha256": "ee2fa372f4515c8423c5932bd4a0c290a4ba93cf0bb18a3921c87263fb5fe405",
+      "size_bytes": 2420
+    },
+    {
+      "path": "data/step162/public_benchmarks/uci_optical_digits_classification/model_card.json",
+      "sha256": "4896e77f8e180eff7a3f4671b8bffc93ed8813e76cb6b71ff0e85a8de4660720",
+      "size_bytes": 4787
+    },
+    {
+      "path": "data/step162/public_benchmarks/uci_optical_digits_classification/split_manifest.json",
+      "sha256": "a138d20bd4b3447823824ff5494f6ac823e0a39d32e4c469cdfdf92f2cd85f0e",
+      "size_bytes": 16966
+    },
+    {
+      "path": "data/step162/public_benchmarks/uci_optical_digits_classification/untouched_holdout_predictions.csv",
+      "sha256": "968a25bb3173bee3a3b9b4b6b9143715b69f00585ddb639986f3d051dab6439c",
+      "size_bytes": 101431
+    },
+    {
+      "path": "data/step162/public_benchmarks/uci_wdbc_breast_cancer/FILE_MANIFEST_SHA256.json",
+      "sha256": "9d96cf693df0f81c5893c95665c144c675eb8d108fe11dc1e5f536dc624f7dfb",
+      "size_bytes": 1803
+    },
+    {
+      "path": "data/step162/public_benchmarks/uci_wdbc_breast_cancer/MODEL_CARD.md",
+      "sha256": "85920ffa5a0c5bc31f1f645bc2c2c397592db1bc4fcf14915b52ceee2b02fb72",
+      "size_bytes": 1322
+    },
+    {
+      "path": "data/step162/public_benchmarks/uci_wdbc_breast_cancer/dataset.csv",
+      "sha256": "6ace0ad2c71bcd8214d6995d1d4ad5ebe89b8342387b6a021c7a80a0f8ecb555",
+      "size_bytes": 136892
+    },
+    {
+      "path": "data/step162/public_benchmarks/uci_wdbc_breast_cancer/dataset_manifest.json",
+      "sha256": "7dc98a02f05573612308f665ef23591566631386dfeed46ec7d2a205a06438ac",
+      "size_bytes": 771
+    },
+    {
+      "path": "data/step162/public_benchmarks/uci_wdbc_breast_cancer/environment.json",
+      "sha256": "e76bb01b7433e0f6a4f803464571288e146df2fb6a387e23ab08dd2d4377585c",
+      "size_bytes": 186
+    },
+    {
+      "path": "data/step162/public_benchmarks/uci_wdbc_breast_cancer/metrics.json",
+      "sha256": "26c9054521b7a4c54e775643d9b5b7429d38854ba749d83b1e9130088665eca9",
+      "size_bytes": 1214
+    },
+    {
+      "path": "data/step162/public_benchmarks/uci_wdbc_breast_cancer/model_card.json",
+      "sha256": "522be231ffb4c9f443e8ad4004586faad322fa460ff797f562b104318b20a44b",
+      "size_bytes": 3184
+    },
+    {
+      "path": "data/step162/public_benchmarks/uci_wdbc_breast_cancer/split_manifest.json",
+      "sha256": "270e456dc7ed021108a1528140064f94bfec0372a3560f4a4f6e958b70c8122f",
+      "size_bytes": 5117
+    },
+    {
+      "path": "data/step162/public_benchmarks/uci_wdbc_breast_cancer/untouched_holdout_predictions.csv",
+      "sha256": "6555fed7512b19936cf56256241cd608564376dd05a112a9282cfd7fe08637eb",
+      "size_bytes": 10587
+    },
+    {
+      "path": "data/step162/public_benchmarks/uci_wine_classification/FILE_MANIFEST_SHA256.json",
+      "sha256": "57a6cbb6ae81c07caae8b000c5ddbf540b96cfcceded6b9d394430494b9eb587",
+      "size_bytes": 1810
+    },
+    {
+      "path": "data/step162/public_benchmarks/uci_wine_classification/MODEL_CARD.md",
+      "sha256": "8c6a34c96869838f5e4c82ce2cd9773c319fbfbbabf1c4fcd6a9ba9e25235c65",
+      "size_bytes": 1198
+    },
+    {
+      "path": "data/step162/public_benchmarks/uci_wine_classification/dataset.csv",
+      "sha256": "20d00cffdb11ca25b0c3282da98607f0eb42df2c6657a63492b7b836e44cd66e",
+      "size_bytes": 16653
+    },
+    {
+      "path": "data/step162/public_benchmarks/uci_wine_classification/dataset_manifest.json",
+      "sha256": "23da2754a75e8af4848e9689ef19eb6320037e26e21c9630e0928f0cd4d0031f",
+      "size_bytes": 728
+    },
+    {
+      "path": "data/step162/public_benchmarks/uci_wine_classification/environment.json",
+      "sha256": "e76bb01b7433e0f6a4f803464571288e146df2fb6a387e23ab08dd2d4377585c",
+      "size_bytes": 186
+    },
+    {
+      "path": "data/step162/public_benchmarks/uci_wine_classification/metrics.json",
+      "sha256": "438d28480027c23c7adbb882ce8ad211aa9e698295e435876406de96e5b494e8",
+      "size_bytes": 1150
+    },
+    {
+      "path": "data/step162/public_benchmarks/uci_wine_classification/model_card.json",
+      "sha256": "cf9f295c4f412880ab1efa109ae4908986a4650a0a8366459283e575d029e6b7",
+      "size_bytes": 2593
+    },
+    {
+      "path": "data/step162/public_benchmarks/uci_wine_classification/split_manifest.json",
+      "sha256": "467e9ed2b09fca39762dab77b37e5b8f12eb8030e54a03aca0a39d1fbd5309f9",
+      "size_bytes": 1598
+    },
+    {
+      "path": "data/step162/public_benchmarks/uci_wine_classification/untouched_holdout_predictions.csv",
+      "sha256": "c76e45dd65779c8876d6285525c0566b63b394b01e399f57b31c9fc115c72846",
+      "size_bytes": 4221
+    }
+  ],
+  "local_candidates": [
+    "data/step162/public_benchmarks"
+  ],
+  "local_snapshot_checksum_verified": true,
+  "local_snapshot_present": true,
+  "official_url": "https://scikit-learn.org/stable/datasets.html",
+  "production_reference_qualified": false,
+  "provider": "scikit-learn bundled datasets",
+  "qualification_blockers": [
+    "Licence/terms acceptance must match the intended deployment.",
+    "A complete provider release, release date and record-level QC must be attached.",
+    "Independent scientific review is required before confirmatory use."
+  ],
+  "schema": "biointel.step162.provider-source-contract.v1",
+  "source_descriptor_verified": true
+}

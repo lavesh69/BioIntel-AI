@@ -1,0 +1,30 @@
+{
+  "accepted_formats": [
+    "Benchmark manifests/results"
+  ],
+  "external_release_requires_all_real_artifacts": true,
+  "module_key": "benchmark_validation_v2",
+  "module_title": "Benchmarking depth",
+  "native_research_fallback_ready": true,
+  "optimization_controls": [
+    "Cached fixtures",
+    "Isolated workers",
+    "Hardware-normalized reports"
+  ],
+  "reference_asset_ids": [
+    "benchmark_validation_v2-01-locked-benchmark-datasets",
+    "benchmark_validation_v2-02-expected-outputs",
+    "benchmark_validation_v2-03-hardware-metadata"
+  ],
+  "schema": "biointel.step164.module-operational-contract.v1",
+  "scientific_boundary": "Passing software benchmarks does not by itself establish clinical or biological validity.",
+  "software_owned_target": "10/10",
+  "specialist_claims_fail_closed": true,
+  "specialist_engines": [],
+  "validation_gates": [
+    "Gold-standard provenance",
+    "Tolerance ranges",
+    "Version regression",
+    "Scientific metrics"
+  ]
+}

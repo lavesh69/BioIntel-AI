@@ -1,0 +1,41 @@
+{
+  "category": "Genomics",
+  "claim_boundary": "A complete recipe is not an installed or scientifically qualified runtime. Installation, licence acceptance, weights, references and smoke-test evidence are verified independently.",
+  "engine": "bwa",
+  "installation": {
+    "conda_channels": [
+      "conda-forge",
+      "bioconda"
+    ],
+    "conda_packages": [
+      "bwa"
+    ],
+    "licence_acceptance_required": false,
+    "manual_distribution": false,
+    "pip_packages": [],
+    "supported_backends": [
+      "micromamba-conda-lock",
+      "container",
+      "registered-native-installation"
+    ],
+    "version_constraint": ">=current-supported-release,<next-breaking-major"
+  },
+  "label": "BWA",
+  "manifest_sha256": "aff3feba03d843ac7aac419436bf292bc23fdb5b3136a1ca11eb4fd7fff287a4",
+  "modules": [
+    "epigenomics_chromatin"
+  ],
+  "qualification": {
+    "executable_sha256_required": true,
+    "golden_fixture_required": true,
+    "model_weights_required": false,
+    "negative_control_required": true,
+    "reference_data_required": false,
+    "smoke_test": [
+      "bwa-mem2",
+      "--version"
+    ],
+    "version_capture_required": true
+  },
+  "schema": "biointel.step164.engine-provisioning-manifest.v1"
+}

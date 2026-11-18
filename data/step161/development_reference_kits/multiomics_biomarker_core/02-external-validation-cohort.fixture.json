@@ -1,0 +1,18 @@
+{
+  "external_scientific_evidence": false,
+  "module_key": "multiomics_biomarker_core",
+  "module_title": "Biomarker-discovery depth",
+  "production_use_allowed": false,
+  "records": [
+    {
+      "record_id": "multiomics_biomarker_core:2:demo",
+      "reference_label": "External validation cohort",
+      "status": "test-fixture",
+      "value": 1.0
+    }
+  ],
+  "reference_name": "External validation cohort",
+  "schema": "biointel.step161.development-reference-fixture.v1",
+  "scope": "development-and-regression-only",
+  "synthetic": true
+}

@@ -1,0 +1,42 @@
+{
+  "completion_fields": {
+    "independent_validation": false,
+    "prospective_validation": false,
+    "protocol_version": true,
+    "reviewer_approved": false,
+    "source_checksums": false
+  },
+  "external_evidence_attached": false,
+  "intended_use_boundary": "A visually valid workflow is not scientifically valid until inputs, tools and parameters are qualified.",
+  "module_key": "workflow_builder_core",
+  "module_title": "Workflow execution depth",
+  "negative_controls_required": true,
+  "prospective_validation_required": true,
+  "protocol_sha256": "dcbde8ae56f8955b53e4c02f9513d8464c15fc50247de80a94768669d9ea892f",
+  "protocol_status": "ready-for-external-execution",
+  "protocol_version": "1.0.0",
+  "release_eligible": false,
+  "required_reference_assets": [
+    "Typed node schema",
+    "Container/tool versions",
+    "Resource policy"
+  ],
+  "required_specialist_engines": [],
+  "required_validation_gates": [
+    "DAG validation",
+    "Input/output compatibility",
+    "Checkpoint resume",
+    "Provenance"
+  ],
+  "reviewer_signoff_required": true,
+  "schema": "biointel.step161.external-validation-protocol.v1",
+  "source_checksums_required": true,
+  "study_design_requirements": [
+    "Independent dataset or site not used during development",
+    "Prespecified endpoints and acceptance thresholds",
+    "Locked software, model and reference versions",
+    "Source-data checksums and immutable analysis manifest",
+    "Blinded or independently adjudicated review where applicable",
+    "Subgroup, calibration, uncertainty and failure analysis"
+  ]
+}

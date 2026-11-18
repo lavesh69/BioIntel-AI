@@ -1,0 +1,38 @@
+{
+  "category": "Long-read sequencing",
+  "claim_boundary": "A complete recipe is not an installed or scientifically qualified runtime. Installation, licence acceptance, weights, references and smoke-test evidence are verified independently.",
+  "engine": "dorado",
+  "installation": {
+    "conda_channels": [
+      "conda-forge",
+      "bioconda"
+    ],
+    "conda_packages": [],
+    "licence_acceptance_required": false,
+    "manual_distribution": true,
+    "pip_packages": [],
+    "supported_backends": [
+      "registered-provider-installation",
+      "protected-native-workspace"
+    ],
+    "version_constraint": ">=current-supported-release,<next-breaking-major"
+  },
+  "label": "Oxford Nanopore Dorado",
+  "manifest_sha256": "c968247c42297cbaece3d9b0229bfb5dd5d750665eaea289f542c73f8a716b46",
+  "modules": [
+    "long_read_epigenome"
+  ],
+  "qualification": {
+    "executable_sha256_required": true,
+    "golden_fixture_required": true,
+    "model_weights_required": true,
+    "negative_control_required": true,
+    "reference_data_required": true,
+    "smoke_test": [
+      "dorado",
+      "--version"
+    ],
+    "version_capture_required": true
+  },
+  "schema": "biointel.step164.engine-provisioning-manifest.v1"
+}

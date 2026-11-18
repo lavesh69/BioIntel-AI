@@ -1,0 +1,61 @@
+{
+  "all_assets_production_qualified": false,
+  "assets": [
+    {
+      "asset_id": "step163-protein_ligand_codesign-reference-01",
+      "current_state": "not-bundled-awaiting-qualified-production-asset",
+      "download_checksum_required": true,
+      "licence_review_required": true,
+      "production_qualified": false,
+      "provider_release_id_required": true,
+      "record_count_required": true,
+      "reference_name": "Prepared structures",
+      "required": true,
+      "schema_validation_required": true,
+      "scientific_reviewer_required": true
+    },
+    {
+      "asset_id": "step163-protein_ligand_codesign-reference-02",
+      "current_state": "not-bundled-awaiting-qualified-production-asset",
+      "download_checksum_required": true,
+      "licence_review_required": true,
+      "production_qualified": false,
+      "provider_release_id_required": true,
+      "record_count_required": true,
+      "reference_name": "Ligand states",
+      "required": true,
+      "schema_validation_required": true,
+      "scientific_reviewer_required": true
+    },
+    {
+      "asset_id": "step163-protein_ligand_codesign-reference-03",
+      "current_state": "not-bundled-awaiting-qualified-production-asset",
+      "download_checksum_required": true,
+      "licence_review_required": true,
+      "production_qualified": false,
+      "provider_release_id_required": true,
+      "record_count_required": true,
+      "reference_name": "Model weights",
+      "required": true,
+      "schema_validation_required": true,
+      "scientific_reviewer_required": true
+    },
+    {
+      "asset_id": "step163-protein_ligand_codesign-reference-04",
+      "current_state": "not-bundled-awaiting-qualified-production-asset",
+      "download_checksum_required": true,
+      "licence_review_required": true,
+      "production_qualified": false,
+      "provider_release_id_required": true,
+      "record_count_required": true,
+      "reference_name": "Selectivity panel",
+      "required": true,
+      "schema_validation_required": true,
+      "scientific_reviewer_required": true
+    }
+  ],
+  "demo_or_development_fixture_may_substitute": false,
+  "module_key": "protein_ligand_codesign",
+  "module_title": "Protein-ligand co-design depth",
+  "schema": "biointel.step163.reference-acquisition-manifest.v1"
+}

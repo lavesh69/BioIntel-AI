@@ -1,0 +1,45 @@
+{
+  "completion_fields": {
+    "independent_validation": false,
+    "prospective_validation": false,
+    "protocol_version": true,
+    "reviewer_approved": false,
+    "source_checksums": false
+  },
+  "external_evidence_attached": false,
+  "intended_use_boundary": "Predicted epitopes are research candidates and require experimental immunogenicity and safety validation.",
+  "module_key": "immunoinformatics_vaccine",
+  "module_title": "Immunoinformatics depth",
+  "negative_controls_required": true,
+  "prospective_validation_required": true,
+  "protocol_sha256": "d4a96d462498d645dd58361c0f6e89f5d5e4dbe0f29e2bf32774e805a06527f5",
+  "protocol_status": "ready-for-external-execution",
+  "protocol_version": "1.0.0",
+  "release_eligible": false,
+  "required_reference_assets": [
+    "HLA allele frequencies",
+    "Pathogen proteome",
+    "Allergen/toxin references"
+  ],
+  "required_specialist_engines": [
+    "netmhcpan",
+    "netmhciipan"
+  ],
+  "required_validation_gates": [
+    "Allele coverage",
+    "Conservancy",
+    "Safety filters",
+    "Experimental immunogenicity plan"
+  ],
+  "reviewer_signoff_required": true,
+  "schema": "biointel.step161.external-validation-protocol.v1",
+  "source_checksums_required": true,
+  "study_design_requirements": [
+    "Independent dataset or site not used during development",
+    "Prespecified endpoints and acceptance thresholds",
+    "Locked software, model and reference versions",
+    "Source-data checksums and immutable analysis manifest",
+    "Blinded or independently adjudicated review where applicable",
+    "Subgroup, calibration, uncertainty and failure analysis"
+  ]
+}

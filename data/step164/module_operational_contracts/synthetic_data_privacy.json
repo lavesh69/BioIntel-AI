@@ -1,0 +1,30 @@
+{
+  "accepted_formats": [
+    "CSV/TSV"
+  ],
+  "external_release_requires_all_real_artifacts": true,
+  "module_key": "synthetic_data_privacy",
+  "module_title": "Synthetic-data privacy depth",
+  "native_research_fallback_ready": true,
+  "optimization_controls": [
+    "Vectorized privacy groups",
+    "Bounded attack simulations",
+    "Seeded generation"
+  ],
+  "reference_asset_ids": [
+    "synthetic_data_privacy-01-privacy-policy",
+    "synthetic_data_privacy-02-quasi-identifier-definitions",
+    "synthetic_data_privacy-03-utility-benchmark"
+  ],
+  "schema": "biointel.step164.module-operational-contract.v1",
+  "scientific_boundary": "Synthetic data reduces but does not eliminate disclosure risk.",
+  "software_owned_target": "10/10",
+  "specialist_claims_fail_closed": true,
+  "specialist_engines": [],
+  "validation_gates": [
+    "k-anonymity",
+    "l-diversity",
+    "t-closeness",
+    "Membership-inference testing"
+  ]
+}

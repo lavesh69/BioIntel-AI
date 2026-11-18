@@ -1,0 +1,37 @@
+{
+  "accepted_formats": [
+    "VCF/BCF",
+    "PED/FAM",
+    "CSV phenotype table"
+  ],
+  "external_release_requires_all_real_artifacts": true,
+  "module_key": "rare_variant_family",
+  "module_title": "Family genetics depth",
+  "native_research_fallback_ready": true,
+  "optimization_controls": [
+    "Region-indexed variants",
+    "Evidence cache",
+    "Family-aware filtering"
+  ],
+  "reference_asset_ids": [
+    "rare_variant_family-01-reference-genome",
+    "rare_variant_family-02-hpo",
+    "rare_variant_family-03-population-frequencies",
+    "rare_variant_family-04-gene-disease-evidence"
+  ],
+  "schema": "biointel.step164.module-operational-contract.v1",
+  "scientific_boundary": "Variant prioritisation is research support and not a diagnostic conclusion.",
+  "software_owned_target": "10/10",
+  "specialist_claims_fail_closed": true,
+  "specialist_engines": [
+    "bcftools",
+    "whatshap",
+    "vep"
+  ],
+  "validation_gates": [
+    "Pedigree validation",
+    "Phasing",
+    "Mosaicism",
+    "Segregation and clinical review"
+  ]
+}

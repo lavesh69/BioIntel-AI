@@ -1,0 +1,32 @@
+{
+  "accepted_formats": [
+    "CSV/TSV synthetic cohort",
+    "JSON scenario manifest"
+  ],
+  "external_release_requires_all_real_artifacts": true,
+  "module_key": "synthetic_cohort_trial",
+  "module_title": "Synthetic cohort and trial-simulation depth",
+  "native_research_fallback_ready": true,
+  "optimization_controls": [
+    "Seeded simulation",
+    "Vectorized scenarios",
+    "Background Monte Carlo"
+  ],
+  "reference_asset_ids": [
+    "synthetic_cohort_trial-01-scenario-assumptions",
+    "synthetic_cohort_trial-02-outcome-model",
+    "synthetic_cohort_trial-03-site-arm-definitions",
+    "synthetic_cohort_trial-04-random-seeds"
+  ],
+  "schema": "biointel.step164.module-operational-contract.v1",
+  "scientific_boundary": "Synthetic cohorts are design tools and must never be represented as real clinical evidence.",
+  "software_owned_target": "10/10",
+  "specialist_claims_fail_closed": true,
+  "specialist_engines": [],
+  "validation_gates": [
+    "Covariate balance",
+    "Scenario sensitivity",
+    "Missingness/dropout",
+    "Reproducibility"
+  ]
+}

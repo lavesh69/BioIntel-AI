@@ -1,0 +1,62 @@
+{
+  "accepted_native_formats": [
+    "GFA",
+    "FASTA",
+    "GFF/GTF"
+  ],
+  "claim_policy": {
+    "demo_result_label_required": true,
+    "expert_review_required_for_release": true,
+    "external_validation_required_for_release": true,
+    "limitations_required": true,
+    "reference_result_label_required": true,
+    "uncertainty_disclosure_required": true
+  },
+  "contract_sha256": "9720a9aa2f4c756040acbf4ebe9f940e510426c1d0c8a01904639d538f12fdb1",
+  "module_key": "pangenome_core",
+  "module_title": "Pangenome execution depth",
+  "native_fallback_policy": {
+    "available": true,
+    "confirmatory_claims_allowed": false,
+    "label": "BioIntel deterministic research fallback",
+    "may_replace_specialist_engine": false
+  },
+  "optimization_controls": [
+    "Graph indexing",
+    "Region/path queries",
+    "Background graph builds"
+  ],
+  "quality_dimensions": {
+    "bounded_resource_execution": true,
+    "complete_result_export": true,
+    "crash_loop_protection": true,
+    "deterministic_native_execution": true,
+    "external_release_fail_closed": true,
+    "input_integrity": true,
+    "model_authenticity_guard": true,
+    "reference_lifecycle_contract": true,
+    "reproducibility_signature": true,
+    "specialist_runtime_adapter": true
+  },
+  "required_production_references": [
+    "Assembly set",
+    "GFF/GTF annotations",
+    "Reference path"
+  ],
+  "required_specialist_engines": [
+    "biointel_native::pangenome_core",
+    "minigraph",
+    "vg",
+    "odgi",
+    "graphaligner"
+  ],
+  "schema": "biointel.step163.module-excellence-contract.v1",
+  "scientific_boundary": "Pangenome paths and bubbles require assembly, annotation and graph-quality validation.",
+  "software_owned_target": "10/10",
+  "validation_gates": [
+    "Assembly quality",
+    "Path recovery",
+    "Bubble/variant validation",
+    "Graph benchmark"
+  ]
+}

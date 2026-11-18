@@ -1,0 +1,61 @@
+participant_id,age,sex,biomarker,diagnosis,eligible,exclusion_reason
+C00001,36,Female,5.51,Target disease,True,Eligible
+C00002,26,Female,5.96,Target disease,True,Eligible
+C00003,84,Male,7.95,Target disease,False,Age above limit
+C00004,65,Male,2.66,No confirmed diagnosis,False,Biomarker below threshold
+C00005,67,Male,4.73,Related condition,False,Diagnosis mismatch
+C00006,42,Female,3.97,Target disease,True,Eligible
+C00007,19,Female,6.93,Target disease,True,Eligible
+C00008,24,Female,6.17,Target disease,True,Eligible
+C00009,25,Male,9.65,Related condition,False,Diagnosis mismatch
+C00010,22,Male,3.01,No confirmed diagnosis,False,Diagnosis mismatch
+C00011,50,Male,5.02,Related condition,False,Diagnosis mismatch
+C00012,85,Male,8.62,Target disease,False,Age above limit
+C00013,49,Male,2.25,Target disease,False,Biomarker below threshold
+C00014,50,Male,3.36,Target disease,True,Eligible
+C00015,82,Female,4.65,Target disease,False,Age above limit
+C00016,80,Male,6.18,Target disease,False,Age above limit
+C00017,82,Male,4.02,Target disease,False,Age above limit
+C00018,31,Male,7.62,Target disease,True,Eligible
+C00019,59,Male,5.46,Target disease,True,Eligible
+C00020,68,Female,5.82,Related condition,False,Diagnosis mismatch
+C00021,38,Male,3.53,Target disease,True,Eligible
+C00022,70,Female,7.37,Related condition,False,Diagnosis mismatch
+C00023,41,Male,4.7,Target disease,True,Eligible
+C00024,44,Male,2.63,Related condition,False,Biomarker below threshold
+C00025,65,Female,5.13,Target disease,True,Eligible
+C00026,67,Female,3.04,Target disease,True,Eligible
+C00027,40,Male,5.33,Related condition,False,Diagnosis mismatch
+C00028,68,Female,3.8,Target disease,True,Eligible
+C00029,30,Male,4.1,Target disease,True,Eligible
+C00030,80,Female,4.94,Target disease,False,Age above limit
+C00031,66,Female,4.12,Target disease,True,Eligible
+C00032,67,Female,5.2,Target disease,True,Eligible
+C00033,75,Male,5.96,Target disease,True,Eligible
+C00034,20,Female,3.7,Target disease,True,Eligible
+C00035,61,Male,4.17,Target disease,True,Eligible
+C00036,73,Male,4.63,Target disease,True,Eligible
+C00037,55,Male,3.83,Related condition,False,Diagnosis mismatch
+C00038,28,Male,8.88,Target disease,True,Eligible
+C00039,19,Female,5.04,Related condition,False,Diagnosis mismatch
+C00040,66,Male,6.13,Related condition,False,Diagnosis mismatch
+C00041,61,Female,3.63,Target disease,True,Eligible
+C00042,74,Female,1.36,Target disease,False,Biomarker below threshold
+C00043,60,Male,4.5,No confirmed diagnosis,False,Diagnosis mismatch
+C00044,39,Female,4.47,Related condition,False,Diagnosis mismatch
+C00045,81,Male,5.06,Related condition,False,Age above limit
+C00046,32,Female,2.81,No confirmed diagnosis,False,Biomarker below threshold
+C00047,41,Male,4.4,No confirmed diagnosis,False,Diagnosis mismatch
+C00048,18,Female,6.75,No confirmed diagnosis,False,Diagnosis mismatch
+C00049,47,Female,6.89,No confirmed diagnosis,False,Diagnosis mismatch
+C00050,32,Male,3.82,Target disease,True,Eligible
+C00051,42,Male,3.34,No confirmed diagnosis,False,Diagnosis mismatch
+C00052,83,Female,4.62,Target disease,False,Age above limit
+C00053,76,Female,8.08,Related condition,False,Age above limit
+C00054,68,Male,6.46,No confirmed diagnosis,False,Diagnosis mismatch
+C00055,18,Female,3.63,Related condition,False,Diagnosis mismatch
+C00056,55,Female,5.3,Related condition,False,Diagnosis mismatch
+C00057,53,Male,3.12,Target disease,True,Eligible
+C00058,85,Female,1.53,Target disease,False,Age above limit
+C00059,56,Male,4.6,Target disease,True,Eligible
+C00060,28,Female,4.74,Target disease,True,Eligible

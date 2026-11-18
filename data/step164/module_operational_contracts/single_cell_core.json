@@ -1,0 +1,36 @@
+{
+  "accepted_formats": [
+    "H5AD",
+    "MTX",
+    "10x matrices"
+  ],
+  "external_release_requires_all_real_artifacts": true,
+  "module_key": "single_cell_core",
+  "module_title": "Single-cell analysis depth",
+  "native_research_fallback_ready": true,
+  "optimization_controls": [
+    "Sparse matrices",
+    "Backed mode",
+    "Embedding cache"
+  ],
+  "reference_asset_ids": [
+    "single_cell_core-01-reference-atlas",
+    "single_cell_core-02-gene-annotation",
+    "single_cell_core-03-ligand-receptor-database"
+  ],
+  "schema": "biointel.step164.module-operational-contract.v1",
+  "scientific_boundary": "Cells are not biological replicates; confirm findings using replicate-aware analyses.",
+  "software_owned_target": "10/10",
+  "specialist_claims_fail_closed": true,
+  "specialist_engines": [
+    "scanpy",
+    "scvelo",
+    "cellrank"
+  ],
+  "validation_gates": [
+    "Cell QC",
+    "Doublets/ambient RNA",
+    "Replicate-aware differential analysis",
+    "Annotation confidence"
+  ]
+}

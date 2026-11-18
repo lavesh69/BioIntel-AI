@@ -1,0 +1,45 @@
+{
+  "category": "Single-cell",
+  "claim_boundary": "A complete recipe is not an installed or scientifically qualified runtime. Installation, licence acceptance, weights, references and smoke-test evidence are verified independently.",
+  "engine": "scvelo",
+  "installation": {
+    "conda_channels": [
+      "conda-forge",
+      "bioconda"
+    ],
+    "conda_packages": [
+      "scvelo"
+    ],
+    "licence_acceptance_required": false,
+    "manual_distribution": false,
+    "pip_packages": [
+      "scvelo"
+    ],
+    "supported_backends": [
+      "micromamba-conda-lock",
+      "container",
+      "registered-native-installation"
+    ],
+    "version_constraint": ">=current-supported-release,<next-breaking-major"
+  },
+  "label": "scVelo Python",
+  "manifest_sha256": "2bf1d8d4bb9cc3055782f7fd9cdbb8045637d60c5bf6670cd72a79456fbc0bca",
+  "modules": [
+    "single_cell_core",
+    "single_cell_trajectory"
+  ],
+  "qualification": {
+    "executable_sha256_required": true,
+    "golden_fixture_required": true,
+    "model_weights_required": false,
+    "negative_control_required": true,
+    "reference_data_required": false,
+    "smoke_test": [
+      "C:\\Users\\lavesh dobriyal\\AppData\\Local\\BioIntelAI\\App\\Releases\\15.6.0-Step206\\.venv\\Scripts\\python.exe",
+      "-c",
+      "import scvelo; print(scvelo.__version__)"
+    ],
+    "version_capture_required": true
+  },
+  "schema": "biointel.step164.engine-provisioning-manifest.v1"
+}

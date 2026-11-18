@@ -1,0 +1,42 @@
+{
+  "completion_fields": {
+    "independent_validation": false,
+    "prospective_validation": false,
+    "protocol_version": true,
+    "reviewer_approved": false,
+    "source_checksums": false
+  },
+  "external_evidence_attached": false,
+  "intended_use_boundary": "Predicted interactions require independent experimental support.",
+  "module_key": "host_pathogen_interaction",
+  "module_title": "Host-pathogen interaction depth",
+  "negative_controls_required": true,
+  "prospective_validation_required": true,
+  "protocol_sha256": "0c0a8144ddca50ceb328b9deabe1d116959c3c7ac215a7e2ac1aa5fe68cbfa3c",
+  "protocol_status": "ready-for-external-execution",
+  "protocol_version": "1.0.0",
+  "release_eligible": false,
+  "required_reference_assets": [
+    "Host/pathogen proteomes",
+    "Interaction evidence",
+    "Virulence database"
+  ],
+  "required_specialist_engines": [],
+  "required_validation_gates": [
+    "Evidence provenance",
+    "False-positive control",
+    "Network bias",
+    "Experimental interaction validation"
+  ],
+  "reviewer_signoff_required": true,
+  "schema": "biointel.step161.external-validation-protocol.v1",
+  "source_checksums_required": true,
+  "study_design_requirements": [
+    "Independent dataset or site not used during development",
+    "Prespecified endpoints and acceptance thresholds",
+    "Locked software, model and reference versions",
+    "Source-data checksums and immutable analysis manifest",
+    "Blinded or independently adjudicated review where applicable",
+    "Subgroup, calibration, uncertainty and failure analysis"
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "accepted_native_formats": [
+    "VCF/BCF",
+    "BEDPE",
+    "BAM/CRAM"
+  ],
+  "claim_policy": {
+    "demo_result_label_required": true,
+    "expert_review_required_for_release": true,
+    "external_validation_required_for_release": true,
+    "limitations_required": true,
+    "reference_result_label_required": true,
+    "uncertainty_disclosure_required": true
+  },
+  "contract_sha256": "cf4255369898a55439d4f6b100a687a09fc380b47bed8333d9dfb2d7361c0ba1",
+  "module_key": "structural_variant_repeat",
+  "module_title": "Structural-variant depth",
+  "native_fallback_policy": {
+    "available": true,
+    "confirmatory_claims_allowed": false,
+    "label": "BioIntel deterministic research fallback",
+    "may_replace_specialist_engine": false
+  },
+  "optimization_controls": [
+    "Region-indexed reads",
+    "Breakpoint caches",
+    "Bounded evidence snapshots"
+  ],
+  "quality_dimensions": {
+    "bounded_resource_execution": true,
+    "complete_result_export": true,
+    "crash_loop_protection": true,
+    "deterministic_native_execution": true,
+    "external_release_fail_closed": true,
+    "input_integrity": true,
+    "model_authenticity_guard": true,
+    "reference_lifecycle_contract": true,
+    "reproducibility_signature": true,
+    "specialist_runtime_adapter": true
+  },
+  "required_production_references": [
+    "Reference genome",
+    "Gene annotation",
+    "Population SV resource"
+  ],
+  "required_specialist_engines": [
+    "biointel_native::structural_variant_repeat",
+    "samtools",
+    "bcftools",
+    "sniffles",
+    "expansionhunter"
+  ],
+  "schema": "biointel.step163.module-excellence-contract.v1",
+  "scientific_boundary": "Structural-variant calls require caller-specific QC and orthogonal confirmation.",
+  "software_owned_target": "10/10",
+  "validation_gates": [
+    "Split-read/pair evidence",
+    "Breakpoint confidence",
+    "Inheritance",
+    "Orthogonal confirmation"
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "cancer_reference_version": "BioIntel research cancer-gene pack 2026.07-v1",
+  "files": [
+    {
+      "bytes": 436,
+      "path": "README.md",
+      "sha256": "423aa760a87174654d075ab9a99cd72f5ab353d368ad00f71b3e979131da4b6e"
+    },
+    {
+      "bytes": 17764,
+      "path": "cancer_gene_research_reference.csv",
+      "sha256": "12b12206db78c70cb0e3aa5c7dd9b5701950579bfd24a3e222e208c7d947f1de"
+    },
+    {
+      "bytes": 454,
+      "path": "enzyme_motif_hints.csv",
+      "sha256": "258e43b6f9a6a54efbddb7a74d4365a0823045964a6ea95ec04ce37bcab10714"
+    },
+    {
+      "bytes": 663,
+      "path": "ligand_receptor_pairs.csv",
+      "sha256": "4c8a22ae84926290bc27969cc2f1de088747d81e66ad91c443f2b66cddbe5921"
+    },
+    {
+      "bytes": 170,
+      "path": "pathogen_marker_schema.csv",
+      "sha256": "048d5608deb75b2da52b7d3026f8c8907ad7106d168eb17bae9a14c61569c02b"
+    },
+    {
+      "bytes": 3139,
+      "path": "pathways_human.gmt",
+      "sha256": "a136a87ea418e6b8eb2c6a877ef2bcb4f9056d6ffa563756f5ff34d1024b3625"
+    },
+    {
+      "bytes": 3348,
+      "path": "pathways_mouse.gmt",
+      "sha256": "d331334a46df31e1be6bb09abc8f3aa5b4a893859a4609ac7579046e575e86d5"
+    },
+    {
+      "bytes": 1836,
+      "path": "protein_domain_signatures.csv",
+      "sha256": "f1f7954dda2f2635c2c349d5aff4c736c1c145aa71550db96b435d5a08d6c6fe"
+    }
+  ],
+  "pack_id": "bioinformatics-step59-local-packs",
+  "pathway_pack_version": "2026.07-local-reviewed-v1",
+  "schema_version": "1.0",
+  "scope": "offline research screening only"
+}

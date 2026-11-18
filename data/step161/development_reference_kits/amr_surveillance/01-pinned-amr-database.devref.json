@@ -1,0 +1,16 @@
+{
+  "asset_id": "step161-devref-amr_surveillance-01",
+  "checksum_verified": true,
+  "licence_accepted": true,
+  "licence_class": "BioIntel synthetic fixture",
+  "local_path": "01-pinned-amr-database.fixture.json",
+  "module_key": "amr_surveillance",
+  "production_use_allowed": false,
+  "reference_name": "Pinned AMR database",
+  "replacement_required_for_confirmatory_use": true,
+  "schema": "biointel.step161.development-reference-manifest.v1",
+  "scope": "development-and-regression-only",
+  "sha256": "9508cf628867a0f4033e5dd6bcd38dd08cf15a85b4f24a030d48cb7a1c0db050",
+  "status": "verified-development-fixture",
+  "version": "step161-demo-v1"
+}

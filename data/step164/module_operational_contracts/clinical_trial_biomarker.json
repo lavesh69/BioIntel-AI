@@ -1,0 +1,30 @@
+{
+  "accepted_formats": [
+    "CSV/TSV patient table"
+  ],
+  "external_release_requires_all_real_artifacts": true,
+  "module_key": "clinical_trial_biomarker",
+  "module_title": "Clinical biomarker depth",
+  "native_research_fallback_ready": true,
+  "optimization_controls": [
+    "Cohort-level caching",
+    "Lazy survival curves",
+    "De-identified exports"
+  ],
+  "reference_asset_ids": [
+    "clinical_trial_biomarker-01-protocol",
+    "clinical_trial_biomarker-02-data-dictionary",
+    "clinical_trial_biomarker-03-endpoint-definitions"
+  ],
+  "schema": "biointel.step164.module-operational-contract.v1",
+  "scientific_boundary": "Exploratory subgroups and cut-offs require prespecification and independent validation.",
+  "software_owned_target": "10/10",
+  "specialist_claims_fail_closed": true,
+  "specialist_engines": [],
+  "validation_gates": [
+    "Prespecified cut-offs",
+    "Missing-data plan",
+    "Multivariable adjustment",
+    "External validation"
+  ]
+}

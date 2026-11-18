@@ -1,0 +1,18 @@
+{
+  "external_scientific_evidence": false,
+  "module_key": "clinical_biomarker_survival",
+  "module_title": "Clinical biomarker and survival depth",
+  "production_use_allowed": false,
+  "records": [
+    {
+      "record_id": "clinical_biomarker_survival:3:demo",
+      "reference_label": "Prespecified cut-off",
+      "status": "test-fixture",
+      "value": 1.0
+    }
+  ],
+  "reference_name": "Prespecified cut-off",
+  "schema": "biointel.step161.development-reference-fixture.v1",
+  "scope": "development-and-regression-only",
+  "synthetic": true
+}

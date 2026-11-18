@@ -1,0 +1,18 @@
+{
+  "external_scientific_evidence": false,
+  "module_key": "long_read_core",
+  "module_title": "Long-read assembly depth",
+  "production_use_allowed": false,
+  "records": [
+    {
+      "record_id": "long_read_core:1:demo",
+      "reference_label": "Reference/related genome",
+      "status": "test-fixture",
+      "value": 1.0
+    }
+  ],
+  "reference_name": "Reference/related genome",
+  "schema": "biointel.step161.development-reference-fixture.v1",
+  "scope": "development-and-regression-only",
+  "synthetic": true
+}

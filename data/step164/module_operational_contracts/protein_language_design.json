@@ -1,0 +1,35 @@
+{
+  "accepted_formats": [
+    "FASTA",
+    "PDB/mmCIF",
+    "CSV candidates"
+  ],
+  "external_release_requires_all_real_artifacts": true,
+  "module_key": "protein_language_design",
+  "module_title": "Protein design depth",
+  "native_research_fallback_ready": true,
+  "optimization_controls": [
+    "GPU-aware jobs",
+    "Embedding cache",
+    "Candidate deduplication"
+  ],
+  "reference_asset_ids": [
+    "protein_language_design-01-model-weights",
+    "protein_language_design-02-structure-templates",
+    "protein_language_design-03-conservation-constraints"
+  ],
+  "schema": "biointel.step164.module-operational-contract.v1",
+  "scientific_boundary": "Generated sequences are hypotheses and require structural and experimental validation.",
+  "software_owned_target": "10/10",
+  "specialist_claims_fail_closed": true,
+  "specialist_engines": [
+    "proteinmpnn",
+    "rfdiffusion"
+  ],
+  "validation_gates": [
+    "Constraint enforcement",
+    "Sequence diversity",
+    "Structure feedback",
+    "Wet-lab validation"
+  ]
+}

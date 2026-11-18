@@ -1,0 +1,34 @@
+{
+  "accepted_formats": [
+    "mzML",
+    "MGF",
+    "CSV/TSV feature table"
+  ],
+  "external_release_requires_all_real_artifacts": true,
+  "module_key": "metabolomics_lipidomics",
+  "module_title": "Metabolomics depth",
+  "native_research_fallback_ready": true,
+  "optimization_controls": [
+    "Streaming mzML",
+    "Feature-level caching",
+    "Bounded spectrum previews"
+  ],
+  "reference_asset_ids": [
+    "metabolomics_lipidomics-01-spectral-library",
+    "metabolomics_lipidomics-02-retention-time-standards",
+    "metabolomics_lipidomics-03-adduct-table"
+  ],
+  "schema": "biointel.step164.module-operational-contract.v1",
+  "scientific_boundary": "Feature matches are hypotheses until confirmed by retention time, MS/MS evidence and authentic standards.",
+  "software_owned_target": "10/10",
+  "specialist_claims_fail_closed": true,
+  "specialist_engines": [
+    "openms"
+  ],
+  "validation_gates": [
+    "Blank subtraction",
+    "Pooled-QC CV",
+    "Batch drift",
+    "Identification confidence"
+  ]
+}

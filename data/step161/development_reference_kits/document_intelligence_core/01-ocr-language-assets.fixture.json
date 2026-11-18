@@ -1,0 +1,18 @@
+{
+  "external_scientific_evidence": false,
+  "module_key": "document_intelligence_core",
+  "module_title": "Document intelligence depth",
+  "production_use_allowed": false,
+  "records": [
+    {
+      "record_id": "document_intelligence_core:1:demo",
+      "reference_label": "OCR language assets",
+      "status": "test-fixture",
+      "value": 1.0
+    }
+  ],
+  "reference_name": "OCR language assets",
+  "schema": "biointel.step161.development-reference-fixture.v1",
+  "scope": "development-and-regression-only",
+  "synthetic": true
+}

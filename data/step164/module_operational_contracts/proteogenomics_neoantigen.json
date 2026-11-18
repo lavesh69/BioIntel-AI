@@ -1,0 +1,37 @@
+{
+  "accepted_formats": [
+    "VCF",
+    "FASTA",
+    "mzML/MGF",
+    "CSV evidence table"
+  ],
+  "external_release_requires_all_real_artifacts": true,
+  "module_key": "proteogenomics_neoantigen",
+  "module_title": "Proteogenomics depth",
+  "native_research_fallback_ready": true,
+  "optimization_controls": [
+    "Spectrum streaming",
+    "Candidate database cache",
+    "Background PSM search"
+  ],
+  "reference_asset_ids": [
+    "proteogenomics_neoantigen-01-reference-proteome",
+    "proteogenomics_neoantigen-02-hla-alleles",
+    "proteogenomics_neoantigen-03-spectral-libraries"
+  ],
+  "schema": "biointel.step164.module-operational-contract.v1",
+  "scientific_boundary": "Neoantigen candidates require orthogonal peptide, tumour-specificity and immune-function validation.",
+  "software_owned_target": "10/10",
+  "specialist_claims_fail_closed": true,
+  "specialist_engines": [
+    "bcftools",
+    "comet",
+    "msgfplus"
+  ],
+  "validation_gates": [
+    "Target-decoy FDR",
+    "Variant-protein provenance",
+    "Tumour-normal specificity",
+    "Functional immune validation"
+  ]
+}

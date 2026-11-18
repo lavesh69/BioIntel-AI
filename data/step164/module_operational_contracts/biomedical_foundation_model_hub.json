@@ -1,0 +1,35 @@
+{
+  "accepted_formats": [
+    "JSON/YAML model metadata",
+    "CSV benchmark tables",
+    "Local model directories"
+  ],
+  "external_release_requires_all_real_artifacts": true,
+  "module_key": "biomedical_foundation_model_hub",
+  "module_title": "Foundation-model hub depth",
+  "native_research_fallback_ready": true,
+  "optimization_controls": [
+    "Content-addressed model cache",
+    "Lazy model loading",
+    "Hardware preflight"
+  ],
+  "reference_asset_ids": [
+    "biomedical_foundation_model_hub-01-model-cards",
+    "biomedical_foundation_model_hub-02-weight-checksums",
+    "biomedical_foundation_model_hub-03-licences",
+    "biomedical_foundation_model_hub-04-benchmark-protocols",
+    "biomedical_foundation_model_hub-05-hardware-manifest"
+  ],
+  "schema": "biointel.step164.module-operational-contract.v1",
+  "scientific_boundary": "Model availability and benchmark scores do not establish fitness for a specific biomedical intended use.",
+  "software_owned_target": "10/10",
+  "specialist_claims_fail_closed": true,
+  "specialist_engines": [],
+  "validation_gates": [
+    "Licence review",
+    "Asset integrity",
+    "Task compatibility",
+    "External validation",
+    "OOD testing"
+  ]
+}

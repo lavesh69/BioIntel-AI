@@ -1,0 +1,18 @@
+{
+  "external_scientific_evidence": false,
+  "module_key": "epigenomics_chromatin",
+  "module_title": "Epigenomics depth",
+  "production_use_allowed": false,
+  "records": [
+    {
+      "record_id": "epigenomics_chromatin:3:demo",
+      "reference_label": "Motif database",
+      "status": "test-fixture",
+      "value": 1.0
+    }
+  ],
+  "reference_name": "Motif database",
+  "schema": "biointel.step161.development-reference-fixture.v1",
+  "scope": "development-and-regression-only",
+  "synthetic": true
+}

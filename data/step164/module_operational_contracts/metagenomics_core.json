@@ -1,0 +1,35 @@
+{
+  "accepted_formats": [
+    "FASTQ/FASTA",
+    "abundance tables"
+  ],
+  "external_release_requires_all_real_artifacts": true,
+  "module_key": "metagenomics_core",
+  "module_title": "Metagenomics execution depth",
+  "native_research_fallback_ready": true,
+  "optimization_controls": [
+    "Per-sample jobs",
+    "Database pinning",
+    "Checkpoint resume"
+  ],
+  "reference_asset_ids": [
+    "metagenomics_core-01-pinned-taxonomy-database",
+    "metagenomics_core-02-functional-database",
+    "metagenomics_core-03-amr-virulence-database"
+  ],
+  "schema": "biointel.step164.module-operational-contract.v1",
+  "scientific_boundary": "Taxonomic and functional profiles depend on controls, database version and sufficient coverage.",
+  "software_owned_target": "10/10",
+  "specialist_claims_fail_closed": true,
+  "specialist_engines": [
+    "kraken2",
+    "bracken",
+    "humann"
+  ],
+  "validation_gates": [
+    "Negative/mock controls",
+    "Host depletion",
+    "Compositional statistics",
+    "Database/version traceability"
+  ]
+}

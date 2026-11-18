@@ -1,0 +1,48 @@
+{
+  "completion_fields": {
+    "independent_validation": false,
+    "prospective_validation": false,
+    "protocol_version": true,
+    "reviewer_approved": false,
+    "source_checksums": false
+  },
+  "external_evidence_attached": false,
+  "intended_use_boundary": "Long-read methylation and imprinting findings depend on model, coverage, phasing and orthogonal confirmation.",
+  "module_key": "long_read_epigenome",
+  "module_title": "Long-read epigenome depth",
+  "negative_controls_required": true,
+  "prospective_validation_required": true,
+  "protocol_sha256": "86589817d2c05c239571dd68949748f7f59ff38af7280d7d5725e250a6c0efd2",
+  "protocol_status": "ready-for-external-execution",
+  "protocol_version": "1.0.0",
+  "release_eligible": false,
+  "required_reference_assets": [
+    "Reference genome",
+    "Modification model release",
+    "Imprinting/DMR catalogue",
+    "Genome build"
+  ],
+  "required_specialist_engines": [
+    "dorado",
+    "modkit",
+    "samtools",
+    "whatshap"
+  ],
+  "required_validation_gates": [
+    "Coverage",
+    "Phasing",
+    "Condition replication",
+    "Orthogonal methylation validation"
+  ],
+  "reviewer_signoff_required": true,
+  "schema": "biointel.step161.external-validation-protocol.v1",
+  "source_checksums_required": true,
+  "study_design_requirements": [
+    "Independent dataset or site not used during development",
+    "Prespecified endpoints and acceptance thresholds",
+    "Locked software, model and reference versions",
+    "Source-data checksums and immutable analysis manifest",
+    "Blinded or independently adjudicated review where applicable",
+    "Subgroup, calibration, uncertainty and failure analysis"
+  ]
+}

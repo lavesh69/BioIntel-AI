@@ -1,0 +1,35 @@
+{
+  "accepted_formats": [
+    "FASTA",
+    "CSV/TSV variant table",
+    "PDB/mmCIF"
+  ],
+  "external_release_requires_all_real_artifacts": true,
+  "module_key": "antibody_biologics",
+  "module_title": "Antibody engineering depth",
+  "native_research_fallback_ready": true,
+  "optimization_controls": [
+    "Sequence fingerprint cache",
+    "Batch variant scoring",
+    "Lazy structure loading"
+  ],
+  "reference_asset_ids": [
+    "antibody_biologics-01-imgt-germlines",
+    "antibody_biologics-02-liability-motif-catalogue",
+    "antibody_biologics-03-structure-templates"
+  ],
+  "schema": "biointel.step164.module-operational-contract.v1",
+  "scientific_boundary": "Computational developability does not establish manufacturability, efficacy or clinical safety.",
+  "software_owned_target": "10/10",
+  "specialist_claims_fail_closed": true,
+  "specialist_engines": [
+    "anarci",
+    "igblast"
+  ],
+  "validation_gates": [
+    "CDR numbering",
+    "Humanness",
+    "Aggregation/liability review",
+    "Affinity assay linkage"
+  ]
+}

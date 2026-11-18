@@ -1,0 +1,45 @@
+{
+  "category": "Structural biology",
+  "claim_boundary": "A complete recipe is not an installed or scientifically qualified runtime. Installation, licence acceptance, weights, references and smoke-test evidence are verified independently.",
+  "engine": "openmm",
+  "installation": {
+    "conda_channels": [
+      "conda-forge",
+      "bioconda"
+    ],
+    "conda_packages": [
+      "openmm"
+    ],
+    "licence_acceptance_required": false,
+    "manual_distribution": false,
+    "pip_packages": [
+      "openmm"
+    ],
+    "supported_backends": [
+      "micromamba-conda-lock",
+      "container",
+      "registered-native-installation"
+    ],
+    "version_constraint": ">=current-supported-release,<next-breaking-major"
+  },
+  "label": "OpenMM Python",
+  "manifest_sha256": "e57f5e4beb93980353617ca9f4c677048938fd046eefbe385e2ec6ca4b06806a",
+  "modules": [
+    "docking_dynamics",
+    "structural_bioinformatics_core"
+  ],
+  "qualification": {
+    "executable_sha256_required": true,
+    "golden_fixture_required": true,
+    "model_weights_required": false,
+    "negative_control_required": true,
+    "reference_data_required": false,
+    "smoke_test": [
+      "C:\\Users\\lavesh dobriyal\\AppData\\Local\\BioIntelAI\\App\\Releases\\15.6.0-Step206\\.venv\\Scripts\\python.exe",
+      "-c",
+      "import openmm; print(openmm.__version__)"
+    ],
+    "version_capture_required": true
+  },
+  "schema": "biointel.step164.engine-provisioning-manifest.v1"
+}

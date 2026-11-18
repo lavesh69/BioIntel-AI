@@ -1,0 +1,34 @@
+{
+  "accepted_formats": [
+    "GTF/GFF",
+    "BED",
+    "junction tables"
+  ],
+  "external_release_requires_all_real_artifacts": true,
+  "module_key": "rna_isoform_splicing",
+  "module_title": "RNA splicing depth",
+  "native_research_fallback_ready": true,
+  "optimization_controls": [
+    "Indexed annotations",
+    "Sparse junction matrices",
+    "Region queries"
+  ],
+  "reference_asset_ids": [
+    "rna_isoform_splicing-01-transcript-annotation",
+    "rna_isoform_splicing-02-reference-genome"
+  ],
+  "schema": "biointel.step164.module-operational-contract.v1",
+  "scientific_boundary": "Isoform and splicing calls depend on alignment, annotation and replicate-aware statistics.",
+  "software_owned_target": "10/10",
+  "specialist_claims_fail_closed": true,
+  "specialist_engines": [
+    "star",
+    "mafft"
+  ],
+  "validation_gates": [
+    "Junction confidence",
+    "Isoform ambiguity",
+    "Replicate-aware PSI",
+    "Long-read support"
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "accepted_native_formats": [
+    "FASTQ/FASTA through pipeline",
+    "VCF",
+    "CSV/TSV isolate table"
+  ],
+  "claim_policy": {
+    "demo_result_label_required": true,
+    "expert_review_required_for_release": true,
+    "external_validation_required_for_release": true,
+    "limitations_required": true,
+    "reference_result_label_required": true,
+    "uncertainty_disclosure_required": true
+  },
+  "contract_sha256": "01961a38029ce76dc27c5bae5b34ba67e8f2ac0346c86ceb2072581711cf3cd3",
+  "module_key": "amr_surveillance",
+  "module_title": "AMR surveillance depth",
+  "native_fallback_policy": {
+    "available": true,
+    "confirmatory_claims_allowed": false,
+    "label": "BioIntel deterministic research fallback",
+    "may_replace_specialist_engine": false
+  },
+  "optimization_controls": [
+    "Per-isolate jobs",
+    "Database pinning",
+    "Incremental surveillance"
+  ],
+  "quality_dimensions": {
+    "bounded_resource_execution": true,
+    "complete_result_export": true,
+    "crash_loop_protection": true,
+    "deterministic_native_execution": true,
+    "external_release_fail_closed": true,
+    "input_integrity": true,
+    "model_authenticity_guard": true,
+    "reference_lifecycle_contract": true,
+    "reproducibility_signature": true,
+    "specialist_runtime_adapter": true
+  },
+  "required_production_references": [
+    "Pinned AMR database",
+    "Taxonomy release",
+    "Typing scheme",
+    "Phenotype standards"
+  ],
+  "required_specialist_engines": [
+    "biointel_native::amr_surveillance",
+    "kraken2",
+    "bcftools",
+    "minimap2",
+    "amrfinderplus",
+    "resfinder"
+  ],
+  "schema": "biointel.step163.module-excellence-contract.v1",
+  "scientific_boundary": "Genomic resistance predictions do not replace susceptibility testing or public-health interpretation.",
+  "software_owned_target": "10/10",
+  "validation_gates": [
+    "Species confirmation",
+    "Genotype-phenotype concordance",
+    "Contamination",
+    "Epidemiological review"
+  ]
+}

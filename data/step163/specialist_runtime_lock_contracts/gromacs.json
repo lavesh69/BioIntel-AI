@@ -1,0 +1,28 @@
+{
+  "bundled_in_core_package": false,
+  "category": "Structural biology",
+  "checksum_required": true,
+  "container_digest_or_binary_hash_required": true,
+  "engine": "gromacs",
+  "environment_lock_required": true,
+  "execution_backends": [
+    "container",
+    "conda-lock",
+    "native-executable"
+  ],
+  "install_strategy": "digest-pinned-container-or-conda",
+  "installed_and_qualified": false,
+  "label": "GROMACS",
+  "licence_class": "open-source-or-provider-terms",
+  "manual_action_required": false,
+  "model_or_database_required": false,
+  "modules": [
+    "docking_dynamics",
+    "structural_bioinformatics_core"
+  ],
+  "package_hint": "Provision GROMACS through a digest-pinned container or locked environment.",
+  "runtime_self_test_required": true,
+  "schema": "biointel.step163.specialist-runtime-lock-contract.v1",
+  "scientific_smoke_test_required": true,
+  "version_probe_required": true
+}

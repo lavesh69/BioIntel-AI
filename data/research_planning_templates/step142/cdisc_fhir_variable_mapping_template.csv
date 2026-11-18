@@ -1,0 +1,3 @@
+variable,label,data_type,unit,codelist,cdash_variable,sdtm_domain,adam_dataset,analysis_role,derivation,fhir_path,source_provenance
+participant_id,Participant identifier,string,,,SUBJID,DM,ADSL,Identifier,Source,Patient.identifier,CRF
+primary_outcome,Primary outcome,float,unit,,PRIMOUT,SUPP,ADPRIM,Endpoint,Source,Observation.value[x],CRF

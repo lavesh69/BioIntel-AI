@@ -1,0 +1,18 @@
+{
+  "external_scientific_evidence": false,
+  "module_key": "phenotypic_screening",
+  "module_title": "Phenotypic screening depth",
+  "production_use_allowed": false,
+  "records": [
+    {
+      "record_id": "phenotypic_screening:3:demo",
+      "reference_label": "Image calibration",
+      "status": "test-fixture",
+      "value": 1.0
+    }
+  ],
+  "reference_name": "Image calibration",
+  "schema": "biointel.step161.development-reference-fixture.v1",
+  "scope": "development-and-regression-only",
+  "synthetic": true
+}

@@ -1,0 +1,36 @@
+{
+  "accepted_formats": [
+    "BAM/CRAM through adapter",
+    "GTF/GFF",
+    "CSV/TSV isoform table"
+  ],
+  "external_release_requires_all_real_artifacts": true,
+  "module_key": "single_cell_long_read_isoforms",
+  "module_title": "Single-cell long-read isoform depth",
+  "native_research_fallback_ready": true,
+  "optimization_controls": [
+    "Sparse cell-transcript matrices",
+    "Backed storage",
+    "Transcript cache"
+  ],
+  "reference_asset_ids": [
+    "single_cell_long_read_isoforms-01-transcript-annotation",
+    "single_cell_long_read_isoforms-02-cell-barcode-whitelist",
+    "single_cell_long_read_isoforms-03-reference-genome",
+    "single_cell_long_read_isoforms-04-replicate-metadata"
+  ],
+  "schema": "biointel.step164.module-operational-contract.v1",
+  "scientific_boundary": "Cells are not biological replicates; cluster-specific isoform shifts require replicate-aware validation.",
+  "software_owned_target": "10/10",
+  "specialist_claims_fail_closed": true,
+  "specialist_engines": [
+    "minimap2",
+    "samtools"
+  ],
+  "validation_gates": [
+    "Barcode/UMI QC",
+    "Full-length support",
+    "Junction validation",
+    "Replicate-aware inference"
+  ]
+}

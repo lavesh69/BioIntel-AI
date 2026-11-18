@@ -1,0 +1,46 @@
+{
+  "completion_fields": {
+    "independent_validation": false,
+    "prospective_validation": false,
+    "protocol_version": true,
+    "reviewer_approved": false,
+    "source_checksums": false
+  },
+  "external_evidence_attached": false,
+  "intended_use_boundary": "Cells are not biological replicates; cluster-specific isoform shifts require replicate-aware validation.",
+  "module_key": "single_cell_long_read_isoforms",
+  "module_title": "Single-cell long-read isoform depth",
+  "negative_controls_required": true,
+  "prospective_validation_required": true,
+  "protocol_sha256": "79a1faf51b3e25073c5ecc82d0503e733c2fef3a6ea0774497e549d4559825c3",
+  "protocol_status": "ready-for-external-execution",
+  "protocol_version": "1.0.0",
+  "release_eligible": false,
+  "required_reference_assets": [
+    "Transcript annotation",
+    "Cell barcode whitelist",
+    "Reference genome",
+    "Replicate metadata"
+  ],
+  "required_specialist_engines": [
+    "minimap2",
+    "samtools"
+  ],
+  "required_validation_gates": [
+    "Barcode/UMI QC",
+    "Full-length support",
+    "Junction validation",
+    "Replicate-aware inference"
+  ],
+  "reviewer_signoff_required": true,
+  "schema": "biointel.step161.external-validation-protocol.v1",
+  "source_checksums_required": true,
+  "study_design_requirements": [
+    "Independent dataset or site not used during development",
+    "Prespecified endpoints and acceptance thresholds",
+    "Locked software, model and reference versions",
+    "Source-data checksums and immutable analysis manifest",
+    "Blinded or independently adjudicated review where applicable",
+    "Subgroup, calibration, uncertainty and failure analysis"
+  ]
+}

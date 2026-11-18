@@ -1,0 +1,28 @@
+{
+  "domain": "Functional genomics",
+  "generated_at_utc": "2026-07-14T04:25:32+00:00",
+  "key": "geo",
+  "licence_review_required": true,
+  "local_assets": [
+    {
+      "path": "data/real_scientific_pack/multisite/MAQC_GSE5350_evidence_manifest.json",
+      "sha256": "b776a6df0ac66b2392871a6ddda1befb693a98491e7cdf81063e878821f9e74f",
+      "size_bytes": 950
+    }
+  ],
+  "local_candidates": [
+    "data/real_scientific_pack/multisite/MAQC_GSE5350_evidence_manifest.json"
+  ],
+  "local_snapshot_checksum_verified": true,
+  "local_snapshot_present": true,
+  "official_url": "https://www.ncbi.nlm.nih.gov/geo/",
+  "production_reference_qualified": false,
+  "provider": "NCBI GEO",
+  "qualification_blockers": [
+    "Licence/terms acceptance must match the intended deployment.",
+    "A complete provider release, release date and record-level QC must be attached.",
+    "Independent scientific review is required before confirmatory use."
+  ],
+  "schema": "biointel.step162.provider-source-contract.v1",
+  "source_descriptor_verified": true
+}

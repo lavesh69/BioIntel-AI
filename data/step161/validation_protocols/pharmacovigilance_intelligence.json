@@ -1,0 +1,43 @@
+{
+  "completion_fields": {
+    "independent_validation": false,
+    "prospective_validation": false,
+    "protocol_version": true,
+    "reviewer_approved": false,
+    "source_checksums": false
+  },
+  "external_evidence_attached": false,
+  "intended_use_boundary": "Spontaneous-report signals do not prove causality, incidence or comparative risk.",
+  "module_key": "pharmacovigilance_intelligence",
+  "module_title": "Pharmacovigilance depth",
+  "negative_controls_required": true,
+  "prospective_validation_required": true,
+  "protocol_sha256": "da11c0d2386d5741abda8d4a03c2164a64607753e2d29c9713c33dd3cc54c211",
+  "protocol_status": "ready-for-external-execution",
+  "protocol_version": "1.0.0",
+  "release_eligible": false,
+  "required_reference_assets": [
+    "Drug/event dictionaries",
+    "Deduplication rules",
+    "Exposure context",
+    "Review policy"
+  ],
+  "required_specialist_engines": [],
+  "required_validation_gates": [
+    "Duplicate reports",
+    "Disproportionality stability",
+    "Confounding/reporting bias",
+    "Clinical review"
+  ],
+  "reviewer_signoff_required": true,
+  "schema": "biointel.step161.external-validation-protocol.v1",
+  "source_checksums_required": true,
+  "study_design_requirements": [
+    "Independent dataset or site not used during development",
+    "Prespecified endpoints and acceptance thresholds",
+    "Locked software, model and reference versions",
+    "Source-data checksums and immutable analysis manifest",
+    "Blinded or independently adjudicated review where applicable",
+    "Subgroup, calibration, uncertainty and failure analysis"
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "accepted_native_formats": [
+    "CSV/TSV plan",
+    "JSON protocol draft"
+  ],
+  "claim_policy": {
+    "demo_result_label_required": true,
+    "expert_review_required_for_release": true,
+    "external_validation_required_for_release": true,
+    "limitations_required": true,
+    "reference_result_label_required": true,
+    "uncertainty_disclosure_required": true
+  },
+  "contract_sha256": "51236a84da515a16bdaea122c3dd708aeb0d7763f96bd984818efb2117e5bf46",
+  "module_key": "autonomous_lab_planner",
+  "module_title": "Laboratory experiment-planning depth",
+  "native_fallback_policy": {
+    "available": true,
+    "confirmatory_claims_allowed": false,
+    "label": "BioIntel deterministic research fallback",
+    "may_replace_specialist_engine": false
+  },
+  "optimization_controls": [
+    "Template reuse",
+    "Cost cache",
+    "Schedule-aware planning"
+  ],
+  "quality_dimensions": {
+    "bounded_resource_execution": true,
+    "complete_result_export": true,
+    "crash_loop_protection": true,
+    "deterministic_native_execution": true,
+    "external_release_fail_closed": true,
+    "input_integrity": true,
+    "model_authenticity_guard": true,
+    "reference_lifecycle_contract": true,
+    "reproducibility_signature": true,
+    "specialist_runtime_adapter": true
+  },
+  "required_production_references": [
+    "Biosafety policy",
+    "Approved protocols",
+    "Cost catalogue",
+    "Instrument availability"
+  ],
+  "required_specialist_engines": [
+    "biointel_native::autonomous_lab_planner"
+  ],
+  "schema": "biointel.step163.module-excellence-contract.v1",
+  "scientific_boundary": "The planner cannot authorise or autonomously execute experiments; human scientific and safety approval is mandatory.",
+  "software_owned_target": "10/10",
+  "validation_gates": [
+    "Controls",
+    "Replication",
+    "Randomization",
+    "Resource feasibility",
+    "Human approval"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "benchmark_status": "specification-ready-data-required",
+  "development_dataset_must_be_non_synthetic": true,
+  "independent_test_dataset_required": true,
+  "locked_data_model_reference_versions_required": true,
+  "minimum_evidence_bundle": [
+    "immutable source-data checksums",
+    "training/validation/test partition manifest",
+    "per-sample predictions or module-level outputs",
+    "uncertainty intervals or confidence diagnostics",
+    "full parameter and environment manifest",
+    "expert reviewer sign-off"
+  ],
+  "module_key": "clinical_trial_biomarker",
+  "module_title": "Clinical biomarker depth",
+  "prespecified_acceptance_thresholds_required": true,
+  "prospective_or_orthogonal_validation_required": true,
+  "release_eligible": false,
+  "required_data_formats": [
+    "CSV/TSV patient table"
+  ],
+  "required_failure_analyses": [
+    "missingness and malformed-input analysis",
+    "out-of-distribution or applicability-domain analysis",
+    "subgroup or biological-context analysis",
+    "calibration and uncertainty analysis",
+    "negative-control and leakage analysis",
+    "failed-case review with retained identifiers"
+  ],
+  "required_reference_assets": [
+    "Protocol",
+    "Data dictionary",
+    "Endpoint definitions"
+  ],
+  "required_validation_analyses": [
+    "Prespecified cut-offs",
+    "Missing-data plan",
+    "Multivariable adjustment",
+    "External validation"
+  ],
+  "schema": "biointel.step163.task-specific-benchmark.v1",
+  "specification_sha256": "98607541fc667784a196e9180fd86cf46181ef57ca4dcec83016b7c16af447e6"
+}

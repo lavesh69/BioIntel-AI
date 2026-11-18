@@ -1,0 +1,61 @@
+{
+  "accepted_native_formats": [
+    "VCF/BCF",
+    "PLINK BED/BIM/FAM",
+    "summary statistics"
+  ],
+  "claim_policy": {
+    "demo_result_label_required": true,
+    "expert_review_required_for_release": true,
+    "external_validation_required_for_release": true,
+    "limitations_required": true,
+    "reference_result_label_required": true,
+    "uncertainty_disclosure_required": true
+  },
+  "contract_sha256": "0dcbd99102c604d972fbbf0b9c700d49fd2b034d3eb3d2b20a701f67e068129b",
+  "module_key": "population_gwas",
+  "module_title": "GWAS depth",
+  "native_fallback_policy": {
+    "available": true,
+    "confirmatory_claims_allowed": false,
+    "label": "BioIntel deterministic research fallback",
+    "may_replace_specialist_engine": false
+  },
+  "optimization_controls": [
+    "Indexed variants",
+    "Chromosome-partitioned jobs",
+    "Memory estimates"
+  ],
+  "quality_dimensions": {
+    "bounded_resource_execution": true,
+    "complete_result_export": true,
+    "crash_loop_protection": true,
+    "deterministic_native_execution": true,
+    "external_release_fail_closed": true,
+    "input_integrity": true,
+    "model_authenticity_guard": true,
+    "reference_lifecycle_contract": true,
+    "reproducibility_signature": true,
+    "specialist_runtime_adapter": true
+  },
+  "required_production_references": [
+    "Reference panel",
+    "Genome build",
+    "Phenotype/covariate dictionary"
+  ],
+  "required_specialist_engines": [
+    "biointel_native::population_gwas",
+    "plink2",
+    "regenie",
+    "saige"
+  ],
+  "schema": "biointel.step163.module-excellence-contract.v1",
+  "scientific_boundary": "Association findings require ancestry-aware QC, replication and careful interpretation.",
+  "software_owned_target": "10/10",
+  "validation_gates": [
+    "Sample/variant QC",
+    "Population structure",
+    "Relatedness",
+    "External replication"
+  ]
+}

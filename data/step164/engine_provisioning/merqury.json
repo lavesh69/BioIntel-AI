@@ -1,0 +1,41 @@
+{
+  "category": "Genome assembly",
+  "claim_boundary": "A complete recipe is not an installed or scientifically qualified runtime. Installation, licence acceptance, weights, references and smoke-test evidence are verified independently.",
+  "engine": "merqury",
+  "installation": {
+    "conda_channels": [
+      "conda-forge",
+      "bioconda"
+    ],
+    "conda_packages": [
+      "merqury"
+    ],
+    "licence_acceptance_required": false,
+    "manual_distribution": false,
+    "pip_packages": [],
+    "supported_backends": [
+      "micromamba-conda-lock",
+      "container",
+      "registered-native-installation"
+    ],
+    "version_constraint": ">=current-supported-release,<next-breaking-major"
+  },
+  "label": "Merqury",
+  "manifest_sha256": "7246d0388b7b8a93002dff55d2382d4427d2ad2f9f57d2d46c804554ece11546",
+  "modules": [
+    "long_read_core"
+  ],
+  "qualification": {
+    "executable_sha256_required": true,
+    "golden_fixture_required": true,
+    "model_weights_required": false,
+    "negative_control_required": true,
+    "reference_data_required": false,
+    "smoke_test": [
+      "merqury.sh",
+      "--version"
+    ],
+    "version_capture_required": true
+  },
+  "schema": "biointel.step164.engine-provisioning-manifest.v1"
+}

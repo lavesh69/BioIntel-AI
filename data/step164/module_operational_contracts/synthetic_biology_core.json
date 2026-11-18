@@ -1,0 +1,32 @@
+{
+  "accepted_formats": [
+    "FASTA/GenBank-like sequence",
+    "SBOL-lite JSON",
+    "CSV parts"
+  ],
+  "external_release_requires_all_real_artifacts": true,
+  "module_key": "synthetic_biology_core",
+  "module_title": "Synthetic-biology depth",
+  "native_research_fallback_ready": true,
+  "optimization_controls": [
+    "Part caches",
+    "Bounded sequence simulation",
+    "Versioned construct manifests"
+  ],
+  "reference_asset_ids": [
+    "synthetic_biology_core-01-host-codon-table",
+    "synthetic_biology_core-02-part-registry",
+    "synthetic_biology_core-03-biosafety-constraints"
+  ],
+  "schema": "biointel.step164.module-operational-contract.v1",
+  "scientific_boundary": "Circuit behaviour and biosafety require organism-specific experimental validation.",
+  "software_owned_target": "10/10",
+  "specialist_claims_fail_closed": true,
+  "specialist_engines": [],
+  "validation_gates": [
+    "Sequence integrity",
+    "Host burden",
+    "Failure-mode review",
+    "Experimental construct validation"
+  ]
+}

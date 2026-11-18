@@ -1,0 +1,61 @@
+{
+  "accepted_native_formats": [
+    "FCS",
+    "CSV/TSV event table",
+    "Compensation matrix"
+  ],
+  "claim_policy": {
+    "demo_result_label_required": true,
+    "expert_review_required_for_release": true,
+    "external_validation_required_for_release": true,
+    "limitations_required": true,
+    "reference_result_label_required": true,
+    "uncertainty_disclosure_required": true
+  },
+  "contract_sha256": "c0ac2e7650fe450d839319bb06bfa1f73798e5b7a4dfed6a117369f496f6870d",
+  "module_key": "flow_cytometry",
+  "module_title": "Flow-cytometry depth",
+  "native_fallback_policy": {
+    "available": true,
+    "confirmatory_claims_allowed": false,
+    "label": "BioIntel deterministic research fallback",
+    "may_replace_specialist_engine": false
+  },
+  "optimization_controls": [
+    "Bounded FCS decoding",
+    "Sampled scatter previews",
+    "Vectorized compensation",
+    "Gate-audit export"
+  ],
+  "quality_dimensions": {
+    "bounded_resource_execution": true,
+    "complete_result_export": true,
+    "crash_loop_protection": true,
+    "deterministic_native_execution": true,
+    "external_release_fail_closed": true,
+    "input_integrity": true,
+    "model_authenticity_guard": true,
+    "reference_lifecycle_contract": true,
+    "reproducibility_signature": true,
+    "specialist_runtime_adapter": true
+  },
+  "required_production_references": [
+    "Single-stained controls",
+    "FMO/unstained controls",
+    "Panel and instrument metadata",
+    "Ground-truth/manual gating review"
+  ],
+  "required_specialist_engines": [
+    "biointel_native::flow_cytometry"
+  ],
+  "schema": "biointel.step163.module-excellence-contract.v1",
+  "scientific_boundary": "Flow-cytometry populations require instrument QC, validated compensation, control-aware gates and representative manual review.",
+  "software_owned_target": "10/10",
+  "validation_gates": [
+    "Compensation stability",
+    "Transformation lock",
+    "Doublet/time-drift review",
+    "Control-aware gating",
+    "Population reproducibility"
+  ]
+}

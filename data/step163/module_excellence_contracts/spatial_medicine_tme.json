@@ -1,0 +1,63 @@
+{
+  "accepted_native_formats": [
+    "H5AD",
+    "OME-TIFF",
+    "CSV/TSV spots/cells"
+  ],
+  "claim_policy": {
+    "demo_result_label_required": true,
+    "expert_review_required_for_release": true,
+    "external_validation_required_for_release": true,
+    "limitations_required": true,
+    "reference_result_label_required": true,
+    "uncertainty_disclosure_required": true
+  },
+  "contract_sha256": "6446687b8364a50d428bb0b5a6e81295dbaf902e9ef989cb59ca31f2f89a5adc",
+  "module_key": "spatial_medicine_tme",
+  "module_title": "Spatial medicine and TME depth",
+  "native_fallback_policy": {
+    "available": true,
+    "confirmatory_claims_allowed": false,
+    "label": "BioIntel deterministic research fallback",
+    "may_replace_specialist_engine": false
+  },
+  "optimization_controls": [
+    "Tiled images",
+    "Sparse matrices",
+    "ROI caches"
+  ],
+  "quality_dimensions": {
+    "bounded_resource_execution": true,
+    "complete_result_export": true,
+    "crash_loop_protection": true,
+    "deterministic_native_execution": true,
+    "external_release_fail_closed": true,
+    "input_integrity": true,
+    "model_authenticity_guard": true,
+    "reference_lifecycle_contract": true,
+    "reproducibility_signature": true,
+    "specialist_runtime_adapter": true
+  },
+  "required_production_references": [
+    "Tissue image",
+    "Spatial assay manifest",
+    "Cell-type reference",
+    "Pathology annotations"
+  ],
+  "required_specialist_engines": [
+    "biointel_native::spatial_medicine_tme",
+    "openslide",
+    "cellpose",
+    "scanpy"
+  ],
+  "schema": "biointel.step163.module-excellence-contract.v1",
+  "scientific_boundary": "Tumour-microenvironment patterns are exploratory until registration, pathology and cohort validation are complete.",
+  "software_owned_target": "10/10",
+  "validation_gates": [
+    "Registration",
+    "Segmentation",
+    "Patient replication",
+    "Neighborhood uncertainty",
+    "Pathologist review"
+  ]
+}

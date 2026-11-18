@@ -1,0 +1,46 @@
+{
+  "completion_fields": {
+    "independent_validation": false,
+    "prospective_validation": false,
+    "protocol_version": true,
+    "reviewer_approved": false,
+    "source_checksums": false
+  },
+  "external_evidence_attached": false,
+  "intended_use_boundary": "Genomic clusters do not by themselves prove direct transmission.",
+  "module_key": "pathogen_outbreak_core",
+  "module_title": "Outbreak genomics depth",
+  "negative_controls_required": true,
+  "prospective_validation_required": true,
+  "protocol_sha256": "46c39cc93596de48c92dabbd6df983b30e4536e18d0889e2988ff0870a5c42f5",
+  "protocol_status": "ready-for-external-execution",
+  "protocol_version": "1.0.0",
+  "release_eligible": false,
+  "required_reference_assets": [
+    "Reference genome",
+    "Lineage definitions",
+    "AMR database"
+  ],
+  "required_specialist_engines": [
+    "mafft",
+    "iqtree",
+    "bcftools"
+  ],
+  "required_validation_gates": [
+    "Recombination",
+    "Sampling bias",
+    "Transmission uncertainty",
+    "AMR confirmation"
+  ],
+  "reviewer_signoff_required": true,
+  "schema": "biointel.step161.external-validation-protocol.v1",
+  "source_checksums_required": true,
+  "study_design_requirements": [
+    "Independent dataset or site not used during development",
+    "Prespecified endpoints and acceptance thresholds",
+    "Locked software, model and reference versions",
+    "Source-data checksums and immutable analysis manifest",
+    "Blinded or independently adjudicated review where applicable",
+    "Subgroup, calibration, uncertainty and failure analysis"
+  ]
+}

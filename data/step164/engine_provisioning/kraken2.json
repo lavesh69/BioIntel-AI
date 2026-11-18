@@ -1,0 +1,44 @@
+{
+  "category": "Metagenomics",
+  "claim_boundary": "A complete recipe is not an installed or scientifically qualified runtime. Installation, licence acceptance, weights, references and smoke-test evidence are verified independently.",
+  "engine": "kraken2",
+  "installation": {
+    "conda_channels": [
+      "conda-forge",
+      "bioconda"
+    ],
+    "conda_packages": [
+      "kraken2"
+    ],
+    "licence_acceptance_required": false,
+    "manual_distribution": false,
+    "pip_packages": [],
+    "supported_backends": [
+      "micromamba-conda-lock",
+      "container",
+      "registered-native-installation"
+    ],
+    "version_constraint": ">=current-supported-release,<next-breaking-major"
+  },
+  "label": "Kraken 2",
+  "manifest_sha256": "71d3f4de2f7a47b8a13708ef5442d6c0fbb415a710bea8b7ffa5f7f121e2e9eb",
+  "modules": [
+    "amr_surveillance",
+    "metagenomics_core",
+    "one_health_environmental",
+    "strain_microbiome"
+  ],
+  "qualification": {
+    "executable_sha256_required": true,
+    "golden_fixture_required": true,
+    "model_weights_required": false,
+    "negative_control_required": true,
+    "reference_data_required": true,
+    "smoke_test": [
+      "kraken2",
+      "--version"
+    ],
+    "version_capture_required": true
+  },
+  "schema": "biointel.step164.engine-provisioning-manifest.v1"
+}

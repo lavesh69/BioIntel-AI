@@ -1,0 +1,36 @@
+{
+  "accepted_formats": [
+    "PDB/mmCIF",
+    "SDF/MOL2",
+    "trajectory files"
+  ],
+  "external_release_requires_all_real_artifacts": true,
+  "module_key": "structural_bioinformatics_core",
+  "module_title": "Structural bioinformatics depth",
+  "native_research_fallback_ready": true,
+  "optimization_controls": [
+    "Lazy 3D rendering",
+    "Coordinate downsampling",
+    "Trajectory background jobs"
+  ],
+  "reference_asset_ids": [
+    "structural_bioinformatics_core-01-reference-structure",
+    "structural_bioinformatics_core-02-ligand-definitions",
+    "structural_bioinformatics_core-03-density-pae-assets"
+  ],
+  "schema": "biointel.step164.module-operational-contract.v1",
+  "scientific_boundary": "Structural scores and visual contacts are hypotheses until experimentally validated.",
+  "software_owned_target": "10/10",
+  "specialist_claims_fail_closed": true,
+  "specialist_engines": [
+    "vina",
+    "gromacs",
+    "openmm"
+  ],
+  "validation_gates": [
+    "Structure quality",
+    "Biological assembly",
+    "Pocket/contact validation",
+    "Experimental support"
+  ]
+}

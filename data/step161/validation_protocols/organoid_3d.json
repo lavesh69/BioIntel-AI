@@ -1,0 +1,45 @@
+{
+  "completion_fields": {
+    "independent_validation": false,
+    "prospective_validation": false,
+    "protocol_version": true,
+    "reviewer_approved": false,
+    "source_checksums": false
+  },
+  "external_evidence_attached": false,
+  "intended_use_boundary": "Automated organoid phenotypes require manual QC and biological replication.",
+  "module_key": "organoid_3d",
+  "module_title": "Organoid analytics depth",
+  "negative_controls_required": true,
+  "prospective_validation_required": true,
+  "protocol_sha256": "3018427caa288cbf12f8fadecd98060a7206220271dfa09e7489665e694e6e1b",
+  "protocol_status": "ready-for-external-execution",
+  "protocol_version": "1.0.0",
+  "release_eligible": false,
+  "required_reference_assets": [
+    "Voxel calibration",
+    "Plate map",
+    "Ground-truth masks"
+  ],
+  "required_specialist_engines": [
+    "cellpose",
+    "stardist"
+  ],
+  "required_validation_gates": [
+    "3D segmentation",
+    "Tracking",
+    "Batch effects",
+    "Manual correction"
+  ],
+  "reviewer_signoff_required": true,
+  "schema": "biointel.step161.external-validation-protocol.v1",
+  "source_checksums_required": true,
+  "study_design_requirements": [
+    "Independent dataset or site not used during development",
+    "Prespecified endpoints and acceptance thresholds",
+    "Locked software, model and reference versions",
+    "Source-data checksums and immutable analysis manifest",
+    "Blinded or independently adjudicated review where applicable",
+    "Subgroup, calibration, uncertainty and failure analysis"
+  ]
+}

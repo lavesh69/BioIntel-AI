@@ -1,0 +1,47 @@
+{
+  "completion_fields": {
+    "independent_validation": false,
+    "prospective_validation": false,
+    "protocol_version": true,
+    "reviewer_approved": false,
+    "source_checksums": false
+  },
+  "external_evidence_attached": false,
+  "intended_use_boundary": "Population-specific graph findings do not establish individual clinical risk without validated evidence.",
+  "module_key": "pangenome_population_medicine",
+  "module_title": "Pangenome population-medicine depth",
+  "negative_controls_required": true,
+  "prospective_validation_required": true,
+  "protocol_sha256": "58cf3577d722fdb45c938e0b594b34a1daa854d532e6ab17568128c2775d9ee8",
+  "protocol_status": "ready-for-external-execution",
+  "protocol_version": "1.0.0",
+  "release_eligible": false,
+  "required_reference_assets": [
+    "Population assemblies",
+    "Reference paths",
+    "Clinical evidence release",
+    "Ancestry metadata"
+  ],
+  "required_specialist_engines": [
+    "minigraph",
+    "vg",
+    "odgi"
+  ],
+  "required_validation_gates": [
+    "Population representation",
+    "Reference bias",
+    "Graph coordinate traceability",
+    "Clinical evidence review"
+  ],
+  "reviewer_signoff_required": true,
+  "schema": "biointel.step161.external-validation-protocol.v1",
+  "source_checksums_required": true,
+  "study_design_requirements": [
+    "Independent dataset or site not used during development",
+    "Prespecified endpoints and acceptance thresholds",
+    "Locked software, model and reference versions",
+    "Source-data checksums and immutable analysis manifest",
+    "Blinded or independently adjudicated review where applicable",
+    "Subgroup, calibration, uncertainty and failure analysis"
+  ]
+}

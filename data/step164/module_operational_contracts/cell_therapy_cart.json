@@ -1,0 +1,36 @@
+{
+  "accepted_formats": [
+    "FASTA",
+    "CSV/TSV construct and assay tables"
+  ],
+  "external_release_requires_all_real_artifacts": true,
+  "module_key": "cell_therapy_cart",
+  "module_title": "Cell-therapy and CAR-T depth",
+  "native_research_fallback_ready": true,
+  "optimization_controls": [
+    "Sequence cache",
+    "Batch construct scoring",
+    "Evidence-linked review"
+  ],
+  "reference_asset_ids": [
+    "cell_therapy_cart-01-antigen-expression-atlas",
+    "cell_therapy_cart-02-germline-references",
+    "cell_therapy_cart-03-cell-product-qc",
+    "cell_therapy_cart-04-safety-evidence"
+  ],
+  "schema": "biointel.step164.module-operational-contract.v1",
+  "scientific_boundary": "Computational CAR-T prioritisation requires functional, safety and manufacturing validation.",
+  "software_owned_target": "10/10",
+  "specialist_claims_fail_closed": true,
+  "specialist_engines": [
+    "anarci",
+    "igblast"
+  ],
+  "validation_gates": [
+    "Antigen specificity",
+    "Off-tumour expression",
+    "Exhaustion",
+    "Manufacturability",
+    "Functional validation"
+  ]
+}

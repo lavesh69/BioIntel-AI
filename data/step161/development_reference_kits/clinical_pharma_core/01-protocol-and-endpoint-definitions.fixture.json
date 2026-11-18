@@ -1,0 +1,18 @@
+{
+  "external_scientific_evidence": false,
+  "module_key": "clinical_pharma_core",
+  "module_title": "Clinical validation depth",
+  "production_use_allowed": false,
+  "records": [
+    {
+      "record_id": "clinical_pharma_core:1:demo",
+      "reference_label": "Protocol and endpoint definitions",
+      "status": "test-fixture",
+      "value": 1.0
+    }
+  ],
+  "reference_name": "Protocol and endpoint definitions",
+  "schema": "biointel.step161.development-reference-fixture.v1",
+  "scope": "development-and-regression-only",
+  "synthetic": true
+}

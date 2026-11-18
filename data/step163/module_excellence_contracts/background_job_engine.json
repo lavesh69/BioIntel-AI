@@ -1,0 +1,56 @@
+{
+  "accepted_native_formats": [
+    "JSON job manifests"
+  ],
+  "claim_policy": {
+    "demo_result_label_required": true,
+    "expert_review_required_for_release": true,
+    "external_validation_required_for_release": true,
+    "limitations_required": true,
+    "reference_result_label_required": true,
+    "uncertainty_disclosure_required": true
+  },
+  "contract_sha256": "167c1721a37533b823bf676d41874d3a8e3362e01fca565bf352078ee249df0b",
+  "module_key": "background_job_engine",
+  "module_title": "Background execution depth",
+  "native_fallback_policy": {
+    "available": true,
+    "confirmatory_claims_allowed": false,
+    "label": "BioIntel deterministic research fallback",
+    "may_replace_specialist_engine": false
+  },
+  "optimization_controls": [
+    "Separate workers",
+    "Priority queues",
+    "Persistent retries"
+  ],
+  "quality_dimensions": {
+    "bounded_resource_execution": true,
+    "complete_result_export": true,
+    "crash_loop_protection": true,
+    "deterministic_native_execution": true,
+    "external_release_fail_closed": true,
+    "input_integrity": true,
+    "model_authenticity_guard": true,
+    "reference_lifecycle_contract": true,
+    "reproducibility_signature": true,
+    "specialist_runtime_adapter": true
+  },
+  "required_production_references": [
+    "Resource policy",
+    "Worker state database",
+    "Artifact registry"
+  ],
+  "required_specialist_engines": [
+    "biointel_native::background_job_engine"
+  ],
+  "schema": "biointel.step163.module-excellence-contract.v1",
+  "scientific_boundary": "Heavy jobs should not execute inside a Streamlit rerun process.",
+  "software_owned_target": "10/10",
+  "validation_gates": [
+    "Heartbeat",
+    "Process-tree cancellation",
+    "Checkpoint recovery",
+    "Resource limits"
+  ]
+}

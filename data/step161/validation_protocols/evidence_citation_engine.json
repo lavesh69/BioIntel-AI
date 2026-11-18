@@ -1,0 +1,42 @@
+{
+  "completion_fields": {
+    "independent_validation": false,
+    "prospective_validation": false,
+    "protocol_version": true,
+    "reviewer_approved": false,
+    "source_checksums": false
+  },
+  "external_evidence_attached": false,
+  "intended_use_boundary": "Citations must support the exact claim and may still represent weak or conflicting evidence.",
+  "module_key": "evidence_citation_engine",
+  "module_title": "Evidence and citation depth",
+  "negative_controls_required": true,
+  "prospective_validation_required": true,
+  "protocol_sha256": "70c8edef5a052ce7f8efac4885cbef3a1111fdee4e032db0e5e40d75385414a2",
+  "protocol_status": "ready-for-external-execution",
+  "protocol_version": "1.0.0",
+  "release_eligible": false,
+  "required_reference_assets": [
+    "Provider snapshots",
+    "Retraction metadata",
+    "Entity normalization"
+  ],
+  "required_specialist_engines": [],
+  "required_validation_gates": [
+    "Claim-source mapping",
+    "Evidence strength",
+    "Conflict/retraction review",
+    "Versioned citations"
+  ],
+  "reviewer_signoff_required": true,
+  "schema": "biointel.step161.external-validation-protocol.v1",
+  "source_checksums_required": true,
+  "study_design_requirements": [
+    "Independent dataset or site not used during development",
+    "Prespecified endpoints and acceptance thresholds",
+    "Locked software, model and reference versions",
+    "Source-data checksums and immutable analysis manifest",
+    "Blinded or independently adjudicated review where applicable",
+    "Subgroup, calibration, uncertainty and failure analysis"
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "algorithm": "LogisticRegression",
+  "artifact_path": "models/authentic_benchmarks/fisher_iris_classification.joblib",
+  "artifact_sha256": "7b2e523c03fe981bad34db03767bbf32afa9a47a39f9068566546bba0c84320f",
+  "authenticity_tier": "Public benchmark / immutable snapshot / reproducible holdout",
+  "calibration_rows": 0,
+  "clinical_or_regulatory_release_eligible": false,
+  "created_at_utc": "2026-07-14T04:25:31+00:00",
+  "cross_validation_metrics": {
+    "balanced_accuracy_mean": 0.9400000000000001,
+    "balanced_accuracy_std": 0.043461349368017654,
+    "f1_macro_mean": 0.9394728081926896,
+    "f1_macro_std": 0.04404336412967376
+  },
+  "dataset_sha256": "1c4da6110b845a828bf245faa15b02586a4b45ca0a79f01fe534ed65cf55d63e",
+  "feature_names": [
+    "sepal length (cm)",
+    "sepal width (cm)",
+    "petal length (cm)",
+    "petal width (cm)"
+  ],
+  "holdout_metrics": {
+    "accuracy": 0.9666666666666667,
+    "balanced_accuracy": 0.9666666666666667,
+    "balanced_accuracy_ci95": {
+      "iterations": 250,
+      "lower_95": 0.8888888888888888,
+      "upper_95": 1.0
+    },
+    "brier_score": 0.023440166660334175,
+    "confusion_matrix": [
+      [
+        10,
+        0,
+        0
+      ],
+      [
+        0,
+        10,
+        0
+      ],
+      [
+        0,
+        1,
+        9
+      ]
+    ],
+    "expected_calibration_error": 0.08840192576069429,
+    "f1_macro": 0.9665831244778613,
+    "f1_macro_ci95": {
+      "iterations": 250,
+      "lower_95": 0.8886222910216718,
+      "upper_95": 1.0
+    },
+    "log_loss": 0.15571904719801014,
+    "precision_macro": 0.9696969696969697,
+    "recall_macro": 0.9666666666666667,
+    "roc_auc_ovr_macro": 1.0
+  },
+  "holdout_rows": 30,
+  "independent_external_validation": false,
+  "intended_use": "Small multiclass pipeline and reproducibility benchmark only.",
+  "limitations": "Educational botanical dataset; not representative of high-dimensional biomedical deployment.",
+  "model_id": "step162-fisher_iris_classification",
+  "model_version": "1.0.0",
+  "public_data_authenticity_passed": true,
+  "schema": "biointel.step162.public-benchmark-model-card.v1",
+  "source_name": "Fisher Iris dataset distributed with scikit-learn",
+  "source_url": "https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_iris.html",
+  "synthetic_training_data": false,
+  "task_type": "classification",
+  "title": "Fisher Iris public benchmark",
+  "training_rows": 120,
+  "uncertainty": {
+    "brier_score": 0.023440166660334175,
+    "expected_calibration_error": 0.08840192576069429,
+    "method": "probability calibration diagnostics"
+  }
+}

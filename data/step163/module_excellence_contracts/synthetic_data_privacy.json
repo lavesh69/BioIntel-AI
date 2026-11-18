@@ -1,0 +1,56 @@
+{
+  "accepted_native_formats": [
+    "CSV/TSV"
+  ],
+  "claim_policy": {
+    "demo_result_label_required": true,
+    "expert_review_required_for_release": true,
+    "external_validation_required_for_release": true,
+    "limitations_required": true,
+    "reference_result_label_required": true,
+    "uncertainty_disclosure_required": true
+  },
+  "contract_sha256": "65d26d9fb23dbe0ff5c77d8bb6be10041209ec2e45b4d3ed221cd52626945c5b",
+  "module_key": "synthetic_data_privacy",
+  "module_title": "Synthetic-data privacy depth",
+  "native_fallback_policy": {
+    "available": true,
+    "confirmatory_claims_allowed": false,
+    "label": "BioIntel deterministic research fallback",
+    "may_replace_specialist_engine": false
+  },
+  "optimization_controls": [
+    "Vectorized privacy groups",
+    "Bounded attack simulations",
+    "Seeded generation"
+  ],
+  "quality_dimensions": {
+    "bounded_resource_execution": true,
+    "complete_result_export": true,
+    "crash_loop_protection": true,
+    "deterministic_native_execution": true,
+    "external_release_fail_closed": true,
+    "input_integrity": true,
+    "model_authenticity_guard": true,
+    "reference_lifecycle_contract": true,
+    "reproducibility_signature": true,
+    "specialist_runtime_adapter": true
+  },
+  "required_production_references": [
+    "Privacy policy",
+    "Quasi-identifier definitions",
+    "Utility benchmark"
+  ],
+  "required_specialist_engines": [
+    "biointel_native::synthetic_data_privacy"
+  ],
+  "schema": "biointel.step163.module-excellence-contract.v1",
+  "scientific_boundary": "Synthetic data reduces but does not eliminate disclosure risk.",
+  "software_owned_target": "10/10",
+  "validation_gates": [
+    "k-anonymity",
+    "l-diversity",
+    "t-closeness",
+    "Membership-inference testing"
+  ]
+}

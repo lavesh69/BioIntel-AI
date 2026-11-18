@@ -1,0 +1,30 @@
+{
+  "accepted_formats": [
+    "EXE/MSI/MSIX artifacts"
+  ],
+  "external_release_requires_all_real_artifacts": true,
+  "module_key": "store_readiness_core",
+  "module_title": "Windows product readiness",
+  "native_research_fallback_ready": true,
+  "optimization_controls": [
+    "Deterministic build",
+    "Delta-update planning",
+    "Crash-log rotation"
+  ],
+  "reference_asset_ids": [
+    "store_readiness_core-01-publisher-certificate",
+    "store_readiness_core-02-legal-urls",
+    "store_readiness_core-03-store-metadata"
+  ],
+  "schema": "biointel.step164.module-operational-contract.v1",
+  "scientific_boundary": "Store acceptance, certificate trust and SmartScreen reputation are external outcomes.",
+  "software_owned_target": "10/10",
+  "specialist_claims_fail_closed": true,
+  "specialist_engines": [],
+  "validation_gates": [
+    "Signed binaries",
+    "Upgrade/rollback",
+    "Uninstall",
+    "Physical Windows matrix"
+  ]
+}

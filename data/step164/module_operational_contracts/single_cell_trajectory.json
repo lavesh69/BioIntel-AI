@@ -1,0 +1,36 @@
+{
+  "accepted_formats": [
+    "H5AD",
+    "MTX",
+    "CSV/TSV cell metadata"
+  ],
+  "external_release_requires_all_real_artifacts": true,
+  "module_key": "single_cell_trajectory",
+  "module_title": "Single-cell trajectory depth",
+  "native_research_fallback_ready": true,
+  "optimization_controls": [
+    "Backed H5AD mode",
+    "Sparse matrices",
+    "Bounded embeddings"
+  ],
+  "reference_asset_ids": [
+    "single_cell_trajectory-01-cell-atlas",
+    "single_cell_trajectory-02-ligand-receptor-database",
+    "single_cell_trajectory-03-genome-annotation"
+  ],
+  "schema": "biointel.step164.module-operational-contract.v1",
+  "scientific_boundary": "Trajectory and communication results are model-dependent and require replicate-aware biological validation.",
+  "software_owned_target": "10/10",
+  "specialist_claims_fail_closed": true,
+  "specialist_engines": [
+    "scanpy",
+    "scvelo",
+    "cellrank"
+  ],
+  "validation_gates": [
+    "Cell QC",
+    "Doublet/ambient-RNA review",
+    "Replicate-aware inference",
+    "Trajectory uncertainty"
+  ]
+}

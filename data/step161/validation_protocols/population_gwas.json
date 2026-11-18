@@ -1,0 +1,46 @@
+{
+  "completion_fields": {
+    "independent_validation": false,
+    "prospective_validation": false,
+    "protocol_version": true,
+    "reviewer_approved": false,
+    "source_checksums": false
+  },
+  "external_evidence_attached": false,
+  "intended_use_boundary": "Association findings require ancestry-aware QC, replication and careful interpretation.",
+  "module_key": "population_gwas",
+  "module_title": "GWAS depth",
+  "negative_controls_required": true,
+  "prospective_validation_required": true,
+  "protocol_sha256": "46af1067162e5f8dcaef87ad3fe251e6c74f8e0f8605962aced2595072fd0276",
+  "protocol_status": "ready-for-external-execution",
+  "protocol_version": "1.0.0",
+  "release_eligible": false,
+  "required_reference_assets": [
+    "Reference panel",
+    "Genome build",
+    "Phenotype/covariate dictionary"
+  ],
+  "required_specialist_engines": [
+    "plink2",
+    "regenie",
+    "saige"
+  ],
+  "required_validation_gates": [
+    "Sample/variant QC",
+    "Population structure",
+    "Relatedness",
+    "External replication"
+  ],
+  "reviewer_signoff_required": true,
+  "schema": "biointel.step161.external-validation-protocol.v1",
+  "source_checksums_required": true,
+  "study_design_requirements": [
+    "Independent dataset or site not used during development",
+    "Prespecified endpoints and acceptance thresholds",
+    "Locked software, model and reference versions",
+    "Source-data checksums and immutable analysis manifest",
+    "Blinded or independently adjudicated review where applicable",
+    "Subgroup, calibration, uncertainty and failure analysis"
+  ]
+}

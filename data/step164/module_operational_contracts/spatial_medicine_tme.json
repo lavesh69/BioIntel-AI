@@ -1,0 +1,38 @@
+{
+  "accepted_formats": [
+    "H5AD",
+    "OME-TIFF",
+    "CSV/TSV spots/cells"
+  ],
+  "external_release_requires_all_real_artifacts": true,
+  "module_key": "spatial_medicine_tme",
+  "module_title": "Spatial medicine and TME depth",
+  "native_research_fallback_ready": true,
+  "optimization_controls": [
+    "Tiled images",
+    "Sparse matrices",
+    "ROI caches"
+  ],
+  "reference_asset_ids": [
+    "spatial_medicine_tme-01-tissue-image",
+    "spatial_medicine_tme-02-spatial-assay-manifest",
+    "spatial_medicine_tme-03-cell-type-reference",
+    "spatial_medicine_tme-04-pathology-annotations"
+  ],
+  "schema": "biointel.step164.module-operational-contract.v1",
+  "scientific_boundary": "Tumour-microenvironment patterns are exploratory until registration, pathology and cohort validation are complete.",
+  "software_owned_target": "10/10",
+  "specialist_claims_fail_closed": true,
+  "specialist_engines": [
+    "openslide",
+    "cellpose",
+    "scanpy"
+  ],
+  "validation_gates": [
+    "Registration",
+    "Segmentation",
+    "Patient replication",
+    "Neighborhood uncertainty",
+    "Pathologist review"
+  ]
+}

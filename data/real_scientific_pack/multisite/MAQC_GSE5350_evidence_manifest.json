@@ -1,0 +1,17 @@
+{
+  "accession": "GSE5350",
+  "local_payload": "Study design and official file index only; full raw/matrix payload remains at NCBI GEO.",
+  "official_summary": {
+    "design_note": "MAQC-I used common reference RNA samples, multiple test sites, microarray platforms and qRT-PCR calibration.",
+    "one_color_protocol_reference_design": "3 sites x 4 sample types x 5 replicates = 60 arrays per protocol",
+    "reference_samples": 2
+  },
+  "provider": "NCBI Gene Expression Omnibus / U.S. FDA",
+  "scientific_boundary": "Retrospective public multi-site evidence; not a new BioIntel prospective experiment.",
+  "source_urls": [
+    "https://www.fda.gov/science-research/bioinformatics-tools/microarraysequencing-quality-control-maqcseqc",
+    "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE5350"
+  ],
+  "study_type": "multi-site and cross-platform transcriptomics reproducibility study",
+  "title": "MicroArray Quality Control (MAQC) Project"
+}

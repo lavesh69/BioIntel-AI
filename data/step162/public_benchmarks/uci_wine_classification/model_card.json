@@ -1,0 +1,88 @@
+{
+  "algorithm": "LogisticRegression",
+  "artifact_path": "models/authentic_benchmarks/uci_wine_classification.joblib",
+  "artifact_sha256": "759b1165bd1d77cad2a85e78213341c3fe98bd34aed82dbaccd5f44dc1f8596c",
+  "authenticity_tier": "Public benchmark / immutable snapshot / reproducible holdout",
+  "calibration_rows": 0,
+  "clinical_or_regulatory_release_eligible": false,
+  "created_at_utc": "2026-07-14T04:25:31+00:00",
+  "cross_validation_metrics": {
+    "balanced_accuracy_mean": 0.9904761904761905,
+    "balanced_accuracy_std": 0.01304101327393248,
+    "f1_macro_mean": 0.9887125220458554,
+    "f1_macro_std": 0.015456015732068179
+  },
+  "dataset_sha256": "20d00cffdb11ca25b0c3282da98607f0eb42df2c6657a63492b7b836e44cd66e",
+  "feature_names": [
+    "alcohol",
+    "malic_acid",
+    "ash",
+    "alcalinity_of_ash",
+    "magnesium",
+    "total_phenols",
+    "flavanoids",
+    "nonflavanoid_phenols",
+    "proanthocyanins",
+    "color_intensity",
+    "hue",
+    "od280/od315_of_diluted_wines",
+    "proline"
+  ],
+  "holdout_metrics": {
+    "accuracy": 1.0,
+    "balanced_accuracy": 1.0,
+    "balanced_accuracy_ci95": {
+      "iterations": 250,
+      "lower_95": 1.0,
+      "upper_95": 1.0
+    },
+    "brier_score": 0.009316976209050606,
+    "confusion_matrix": [
+      [
+        12,
+        0,
+        0
+      ],
+      [
+        0,
+        14,
+        0
+      ],
+      [
+        0,
+        0,
+        10
+      ]
+    ],
+    "expected_calibration_error": 0.0600683738408546,
+    "f1_macro": 1.0,
+    "f1_macro_ci95": {
+      "iterations": 250,
+      "lower_95": 1.0,
+      "upper_95": 1.0
+    },
+    "log_loss": 0.0697368316466887,
+    "precision_macro": 1.0,
+    "recall_macro": 1.0,
+    "roc_auc_ovr_macro": 1.0
+  },
+  "holdout_rows": 36,
+  "independent_external_validation": false,
+  "intended_use": "Reproducible multiclass scientific-ML benchmark only.",
+  "limitations": "Chemical-class benchmark; it is not a drug, toxicity or clinical prediction model.",
+  "model_id": "step162-uci_wine_classification",
+  "model_version": "1.0.0",
+  "public_data_authenticity_passed": true,
+  "schema": "biointel.step162.public-benchmark-model-card.v1",
+  "source_name": "UCI Wine recognition dataset via scikit-learn",
+  "source_url": "https://archive.ics.uci.edu/dataset/109/wine",
+  "synthetic_training_data": false,
+  "task_type": "classification",
+  "title": "UCI Wine recognition public benchmark",
+  "training_rows": 142,
+  "uncertainty": {
+    "brier_score": 0.009316976209050606,
+    "expected_calibration_error": 0.0600683738408546,
+    "method": "probability calibration diagnostics"
+  }
+}

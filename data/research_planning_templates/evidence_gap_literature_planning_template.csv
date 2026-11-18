@@ -1,0 +1,9 @@
+question,population,intervention,comparator,outcome,evidence_count,quality,contradiction
+Earlier diagnosis,Adults,Diagnostic test,Standard care,Sensitivity,18,Moderate,0.2
+Response prediction,Biomarker+,Therapy,Control,Response,12,Moderate,0.35
+Long-term safety,All,Therapy,External cohort,Safety,8,Low,0.45
+Paediatric population,Paediatric,Therapy,Standard care,Response,3,Very low,0.1
+Rare subgroup,Rare genotype,Therapy,Control,Response,2,Very low,0.25
+Real-world effectiveness,Routine care,Therapy,Historical,Effectiveness,5,Low,0.55
+Mechanism,Translational,Mechanistic assay,Reference,Pathway activity,10,Moderate,0.4
+Dose optimisation,All,Dose strategy,Standard dose,Benefit-risk,4,Low,0.3

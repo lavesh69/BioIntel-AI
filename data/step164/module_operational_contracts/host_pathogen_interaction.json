@@ -1,0 +1,31 @@
+{
+  "accepted_formats": [
+    "FASTA",
+    "CSV interaction table"
+  ],
+  "external_release_requires_all_real_artifacts": true,
+  "module_key": "host_pathogen_interaction",
+  "module_title": "Host-pathogen interaction depth",
+  "native_research_fallback_ready": true,
+  "optimization_controls": [
+    "Sparse networks",
+    "Evidence caches",
+    "Bounded layouts"
+  ],
+  "reference_asset_ids": [
+    "host_pathogen_interaction-01-host-pathogen-proteomes",
+    "host_pathogen_interaction-02-interaction-evidence",
+    "host_pathogen_interaction-03-virulence-database"
+  ],
+  "schema": "biointel.step164.module-operational-contract.v1",
+  "scientific_boundary": "Predicted interactions require independent experimental support.",
+  "software_owned_target": "10/10",
+  "specialist_claims_fail_closed": true,
+  "specialist_engines": [],
+  "validation_gates": [
+    "Evidence provenance",
+    "False-positive control",
+    "Network bias",
+    "Experimental interaction validation"
+  ]
+}

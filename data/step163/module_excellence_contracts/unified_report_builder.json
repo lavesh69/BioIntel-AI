@@ -1,0 +1,56 @@
+{
+  "accepted_native_formats": [
+    "PDF/DOCX/HTML/JSON"
+  ],
+  "claim_policy": {
+    "demo_result_label_required": true,
+    "expert_review_required_for_release": true,
+    "external_validation_required_for_release": true,
+    "limitations_required": true,
+    "reference_result_label_required": true,
+    "uncertainty_disclosure_required": true
+  },
+  "contract_sha256": "a46772f1995854eb6295cb43ec9e9f290b8e923e4503622f1dbca0afa9239561",
+  "module_key": "unified_report_builder",
+  "module_title": "Scientific reporting depth",
+  "native_fallback_policy": {
+    "available": true,
+    "confirmatory_claims_allowed": false,
+    "label": "BioIntel deterministic research fallback",
+    "may_replace_specialist_engine": false
+  },
+  "optimization_controls": [
+    "Background rendering",
+    "Asset reuse",
+    "Deterministic bundles"
+  ],
+  "quality_dimensions": {
+    "bounded_resource_execution": true,
+    "complete_result_export": true,
+    "crash_loop_protection": true,
+    "deterministic_native_execution": true,
+    "external_release_fail_closed": true,
+    "input_integrity": true,
+    "model_authenticity_guard": true,
+    "reference_lifecycle_contract": true,
+    "reproducibility_signature": true,
+    "specialist_runtime_adapter": true
+  },
+  "required_production_references": [
+    "Report templates",
+    "Citation policy",
+    "Approval roles"
+  ],
+  "required_specialist_engines": [
+    "biointel_native::unified_report_builder"
+  ],
+  "schema": "biointel.step163.module-excellence-contract.v1",
+  "scientific_boundary": "Reports are only as reliable as their underlying data, methods and review.",
+  "software_owned_target": "10/10",
+  "validation_gates": [
+    "Claim-source traceability",
+    "Method/parameter completeness",
+    "Version locking",
+    "Reviewer approval"
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "accepted_formats": [
+    "FASTA",
+    "SBML-like tables",
+    "CSV flux table"
+  ],
+  "external_release_requires_all_real_artifacts": true,
+  "module_key": "enzyme_pathway_design",
+  "module_title": "Enzyme/pathway design depth",
+  "native_research_fallback_ready": true,
+  "optimization_controls": [
+    "Reaction graph cache",
+    "Sparse stoichiometry",
+    "Candidate batching"
+  ],
+  "reference_asset_ids": [
+    "enzyme_pathway_design-01-metabolic-model",
+    "enzyme_pathway_design-02-ec-reaction-database",
+    "enzyme_pathway_design-03-structure-templates"
+  ],
+  "schema": "biointel.step164.module-operational-contract.v1",
+  "scientific_boundary": "Predicted pathway or enzyme improvements require organism-specific experimental validation.",
+  "software_owned_target": "10/10",
+  "specialist_claims_fail_closed": true,
+  "specialist_engines": [
+    "proteinmpnn"
+  ],
+  "validation_gates": [
+    "Active-site protection",
+    "Flux feasibility",
+    "Cofactor balance",
+    "Experimental activity"
+  ]
+}

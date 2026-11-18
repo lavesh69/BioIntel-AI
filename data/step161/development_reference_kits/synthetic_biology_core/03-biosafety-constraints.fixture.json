@@ -1,0 +1,18 @@
+{
+  "external_scientific_evidence": false,
+  "module_key": "synthetic_biology_core",
+  "module_title": "Synthetic-biology depth",
+  "production_use_allowed": false,
+  "records": [
+    {
+      "record_id": "synthetic_biology_core:3:demo",
+      "reference_label": "Biosafety constraints",
+      "status": "test-fixture",
+      "value": 1.0
+    }
+  ],
+  "reference_name": "Biosafety constraints",
+  "schema": "biointel.step161.development-reference-fixture.v1",
+  "scope": "development-and-regression-only",
+  "synthetic": true
+}

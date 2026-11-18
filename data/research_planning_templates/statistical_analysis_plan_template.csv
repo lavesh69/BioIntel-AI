@@ -1,0 +1,7 @@
+analysis,endpoint,population,model,covariates,multiplicity,status
+Primary efficacy,Overall response,ITT,Logistic regression,"Baseline status, site",Gatekeeping,Reviewed
+Key secondary,PFS,ITT,Cox model,"Site, disease stage",Gatekeeping,Reviewed
+Safety,Adverse events,Safety,Descriptive,None,None,Draft
+Biomarker subgroup,Response,ITT,Interaction model,"Biomarker, treatment, interaction",Exploratory,Draft
+Sensitivity MI,Overall response,ITT,Multiple imputation + logistic,"Baseline status, site",Sensitivity,Planned
+Per-protocol sensitivity,Overall response,PP,Logistic regression,Baseline status,Sensitivity,Planned

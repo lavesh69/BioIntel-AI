@@ -1,0 +1,16 @@
+{
+  "clinical_release_eligible": false,
+  "dataset_key": "uci_wdbc_breast_cancer",
+  "dataset_sha256": "6ace0ad2c71bcd8214d6995d1d4ad5ebe89b8342387b6a021c7a80a0f8ecb555",
+  "distribution": "scikit-learn 1.8.0 bundled dataset copy",
+  "features": 30,
+  "licence_review_status": "source terms recorded; deployment user must confirm intended-use compliance",
+  "public_reference_data": true,
+  "rows": 569,
+  "schema": "biointel.step162.public-dataset-manifest.v1",
+  "source_name": "UCI Wisconsin Diagnostic Breast Cancer via scikit-learn",
+  "source_url": "https://archive.ics.uci.edu/dataset/17/breast+cancer+wisconsin+diagnostic",
+  "synthetic": false,
+  "target_description": "['malignant' 'benign']",
+  "title": "Wisconsin Diagnostic Breast Cancer public benchmark"
+}

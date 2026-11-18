@@ -1,0 +1,45 @@
+{
+  "completion_fields": {
+    "independent_validation": false,
+    "prospective_validation": false,
+    "protocol_version": true,
+    "reviewer_approved": false,
+    "source_checksums": false
+  },
+  "external_evidence_attached": false,
+  "intended_use_boundary": "Model availability and benchmark scores do not establish fitness for a specific biomedical intended use.",
+  "module_key": "biomedical_foundation_model_hub",
+  "module_title": "Foundation-model hub depth",
+  "negative_controls_required": true,
+  "prospective_validation_required": true,
+  "protocol_sha256": "779534f54002f0b554f7bf444c202d683e13d66c5ef95c530c86198627126d28",
+  "protocol_status": "ready-for-external-execution",
+  "protocol_version": "1.0.0",
+  "release_eligible": false,
+  "required_reference_assets": [
+    "Model cards",
+    "Weight checksums",
+    "Licences",
+    "Benchmark protocols",
+    "Hardware manifest"
+  ],
+  "required_specialist_engines": [],
+  "required_validation_gates": [
+    "Licence review",
+    "Asset integrity",
+    "Task compatibility",
+    "External validation",
+    "OOD testing"
+  ],
+  "reviewer_signoff_required": true,
+  "schema": "biointel.step161.external-validation-protocol.v1",
+  "source_checksums_required": true,
+  "study_design_requirements": [
+    "Independent dataset or site not used during development",
+    "Prespecified endpoints and acceptance thresholds",
+    "Locked software, model and reference versions",
+    "Source-data checksums and immutable analysis manifest",
+    "Blinded or independently adjudicated review where applicable",
+    "Subgroup, calibration, uncertainty and failure analysis"
+  ]
+}

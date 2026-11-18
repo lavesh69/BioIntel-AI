@@ -1,0 +1,47 @@
+{
+  "completion_fields": {
+    "independent_validation": false,
+    "prospective_validation": false,
+    "protocol_version": true,
+    "reviewer_approved": false,
+    "source_checksums": false
+  },
+  "external_evidence_attached": false,
+  "intended_use_boundary": "Peak calls and motif findings require specialist tools, matched controls and orthogonal validation.",
+  "module_key": "epigenomics_chromatin",
+  "module_title": "Epigenomics depth",
+  "negative_controls_required": true,
+  "prospective_validation_required": true,
+  "protocol_sha256": "02c601359b7e763aa830017cdd08dcf5a28f9e4491611b82b51815b7d697e0b3",
+  "protocol_status": "ready-for-external-execution",
+  "protocol_version": "1.0.0",
+  "release_eligible": false,
+  "required_reference_assets": [
+    "Reference FASTA",
+    "Gene annotation",
+    "Motif database"
+  ],
+  "required_specialist_engines": [
+    "bwa",
+    "samtools",
+    "macs2",
+    "deeptools"
+  ],
+  "required_validation_gates": [
+    "Replicate balance",
+    "Peak reproducibility",
+    "Differential-accessibility assumptions",
+    "Genome-build match"
+  ],
+  "reviewer_signoff_required": true,
+  "schema": "biointel.step161.external-validation-protocol.v1",
+  "source_checksums_required": true,
+  "study_design_requirements": [
+    "Independent dataset or site not used during development",
+    "Prespecified endpoints and acceptance thresholds",
+    "Locked software, model and reference versions",
+    "Source-data checksums and immutable analysis manifest",
+    "Blinded or independently adjudicated review where applicable",
+    "Subgroup, calibration, uncertainty and failure analysis"
+  ]
+}

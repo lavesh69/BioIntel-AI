@@ -1,0 +1,61 @@
+{
+  "all_assets_production_qualified": false,
+  "assets": [
+    {
+      "asset_id": "step163-federated_biomedical_ai-reference-01",
+      "current_state": "not-bundled-awaiting-qualified-production-asset",
+      "download_checksum_required": true,
+      "licence_review_required": true,
+      "production_qualified": false,
+      "provider_release_id_required": true,
+      "record_count_required": true,
+      "reference_name": "Site governance agreements",
+      "required": true,
+      "schema_validation_required": true,
+      "scientific_reviewer_required": true
+    },
+    {
+      "asset_id": "step163-federated_biomedical_ai-reference-02",
+      "current_state": "not-bundled-awaiting-qualified-production-asset",
+      "download_checksum_required": true,
+      "licence_review_required": true,
+      "production_qualified": false,
+      "provider_release_id_required": true,
+      "record_count_required": true,
+      "reference_name": "Privacy policy",
+      "required": true,
+      "schema_validation_required": true,
+      "scientific_reviewer_required": true
+    },
+    {
+      "asset_id": "step163-federated_biomedical_ai-reference-03",
+      "current_state": "not-bundled-awaiting-qualified-production-asset",
+      "download_checksum_required": true,
+      "licence_review_required": true,
+      "production_qualified": false,
+      "provider_release_id_required": true,
+      "record_count_required": true,
+      "reference_name": "Locked evaluation protocol",
+      "required": true,
+      "schema_validation_required": true,
+      "scientific_reviewer_required": true
+    },
+    {
+      "asset_id": "step163-federated_biomedical_ai-reference-04",
+      "current_state": "not-bundled-awaiting-qualified-production-asset",
+      "download_checksum_required": true,
+      "licence_review_required": true,
+      "production_qualified": false,
+      "provider_release_id_required": true,
+      "record_count_required": true,
+      "reference_name": "Threat model",
+      "required": true,
+      "schema_validation_required": true,
+      "scientific_reviewer_required": true
+    }
+  ],
+  "demo_or_development_fixture_may_substitute": false,
+  "module_key": "federated_biomedical_ai",
+  "module_title": "Federated biomedical AI depth",
+  "schema": "biointel.step163.reference-acquisition-manifest.v1"
+}

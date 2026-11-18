@@ -1,0 +1,18 @@
+{
+  "external_scientific_evidence": false,
+  "module_key": "autonomous_lab_planner",
+  "module_title": "Laboratory experiment-planning depth",
+  "production_use_allowed": false,
+  "records": [
+    {
+      "record_id": "autonomous_lab_planner:4:demo",
+      "reference_label": "Instrument availability",
+      "status": "test-fixture",
+      "value": 1.0
+    }
+  ],
+  "reference_name": "Instrument availability",
+  "schema": "biointel.step161.development-reference-fixture.v1",
+  "scope": "development-and-regression-only",
+  "synthetic": true
+}

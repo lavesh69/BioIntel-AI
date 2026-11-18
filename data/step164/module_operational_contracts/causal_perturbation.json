@@ -1,0 +1,30 @@
+{
+  "accepted_formats": [
+    "CSV/TSV estimates"
+  ],
+  "external_release_requires_all_real_artifacts": true,
+  "module_key": "causal_perturbation",
+  "module_title": "Causal inference depth",
+  "native_research_fallback_ready": true,
+  "optimization_controls": [
+    "Vectorized sensitivity analysis",
+    "Cached bootstrap",
+    "Bounded DAG rendering"
+  ],
+  "reference_asset_ids": [
+    "causal_perturbation-01-covariate-register",
+    "causal_perturbation-02-instrument-definitions",
+    "causal_perturbation-03-dag-assumptions"
+  ],
+  "schema": "biointel.step164.module-operational-contract.v1",
+  "scientific_boundary": "Causal claims depend on design assumptions and cannot be established by association alone.",
+  "software_owned_target": "10/10",
+  "specialist_claims_fail_closed": true,
+  "specialist_engines": [],
+  "validation_gates": [
+    "Instrument strength",
+    "Pleiotropy/sensitivity",
+    "Confounding assessment",
+    "Multiplicity correction"
+  ]
+}

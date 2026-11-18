@@ -1,0 +1,47 @@
+{
+  "completion_fields": {
+    "independent_validation": false,
+    "prospective_validation": false,
+    "protocol_version": true,
+    "reviewer_approved": false,
+    "source_checksums": false
+  },
+  "external_evidence_attached": false,
+  "intended_use_boundary": "Pangenome paths and bubbles require assembly, annotation and graph-quality validation.",
+  "module_key": "pangenome_core",
+  "module_title": "Pangenome execution depth",
+  "negative_controls_required": true,
+  "prospective_validation_required": true,
+  "protocol_sha256": "3262a6debb31b2ef0ebbaff6a6c0341786c889127d955c49182342f0da02be28",
+  "protocol_status": "ready-for-external-execution",
+  "protocol_version": "1.0.0",
+  "release_eligible": false,
+  "required_reference_assets": [
+    "Assembly set",
+    "GFF/GTF annotations",
+    "Reference path"
+  ],
+  "required_specialist_engines": [
+    "minigraph",
+    "vg",
+    "odgi",
+    "graphaligner"
+  ],
+  "required_validation_gates": [
+    "Assembly quality",
+    "Path recovery",
+    "Bubble/variant validation",
+    "Graph benchmark"
+  ],
+  "reviewer_signoff_required": true,
+  "schema": "biointel.step161.external-validation-protocol.v1",
+  "source_checksums_required": true,
+  "study_design_requirements": [
+    "Independent dataset or site not used during development",
+    "Prespecified endpoints and acceptance thresholds",
+    "Locked software, model and reference versions",
+    "Source-data checksums and immutable analysis manifest",
+    "Blinded or independently adjudicated review where applicable",
+    "Subgroup, calibration, uncertainty and failure analysis"
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "accepted_formats": [
+    "VCF/BCF",
+    "BEDPE",
+    "BAM/CRAM"
+  ],
+  "external_release_requires_all_real_artifacts": true,
+  "module_key": "structural_variant_repeat",
+  "module_title": "Structural-variant depth",
+  "native_research_fallback_ready": true,
+  "optimization_controls": [
+    "Region-indexed reads",
+    "Breakpoint caches",
+    "Bounded evidence snapshots"
+  ],
+  "reference_asset_ids": [
+    "structural_variant_repeat-01-reference-genome",
+    "structural_variant_repeat-02-gene-annotation",
+    "structural_variant_repeat-03-population-sv-resource"
+  ],
+  "schema": "biointel.step164.module-operational-contract.v1",
+  "scientific_boundary": "Structural-variant calls require caller-specific QC and orthogonal confirmation.",
+  "software_owned_target": "10/10",
+  "specialist_claims_fail_closed": true,
+  "specialist_engines": [
+    "samtools",
+    "bcftools",
+    "sniffles",
+    "expansionhunter"
+  ],
+  "validation_gates": [
+    "Split-read/pair evidence",
+    "Breakpoint confidence",
+    "Inheritance",
+    "Orthogonal confirmation"
+  ]
+}

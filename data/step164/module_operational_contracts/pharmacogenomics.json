@@ -1,0 +1,35 @@
+{
+  "accepted_formats": [
+    "VCF/BCF",
+    "CSV/TSV medication table"
+  ],
+  "external_release_requires_all_real_artifacts": true,
+  "module_key": "pharmacogenomics",
+  "module_title": "Pharmacogenomics depth",
+  "native_research_fallback_ready": true,
+  "optimization_controls": [
+    "Indexed VCF queries",
+    "Reference-version pinning",
+    "Cached normalized variants"
+  ],
+  "reference_asset_ids": [
+    "pharmacogenomics-01-allele-definition-release",
+    "pharmacogenomics-02-guideline-release",
+    "pharmacogenomics-03-population-frequencies"
+  ],
+  "schema": "biointel.step164.module-operational-contract.v1",
+  "scientific_boundary": "This is a research evidence workspace, not autonomous prescribing or clinical decision support.",
+  "software_owned_target": "10/10",
+  "specialist_claims_fail_closed": true,
+  "specialist_engines": [
+    "bcftools",
+    "whatshap",
+    "vep"
+  ],
+  "validation_gates": [
+    "Phasing",
+    "Copy-number awareness",
+    "Allele-version traceability",
+    "Human clinical review"
+  ]
+}

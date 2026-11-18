@@ -1,0 +1,13 @@
+{
+  "protocol_id": "BIOINTEL-PLAN-001",
+  "protocol_version": "0.1-draft",
+  "primary_objective": "Evaluate the prespecified primary objective",
+  "primary_endpoint": "Primary outcome at follow-up",
+  "protocol_sample_size": 200,
+  "power_sample_size": 200,
+  "randomization_strata": ["site"],
+  "crf_variables": ["primary_outcome", "site"],
+  "estimand_ids": ["EST-001"],
+  "sap_estimand_ids": ["EST-001"],
+  "budget_contingency_fraction": 0.12
+}

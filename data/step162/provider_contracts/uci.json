@@ -1,0 +1,34 @@
+{
+  "domain": "Public benchmark datasets",
+  "generated_at_utc": "2026-07-14T04:25:32+00:00",
+  "key": "uci",
+  "licence_review_required": true,
+  "local_assets": [
+    {
+      "path": "data/public_reference/uci_breast_cancer_wisconsin_diagnostic.csv",
+      "sha256": "111000dc8b565e16d91880afd585fed4a2715955ace30c43addf1795459470ea",
+      "size_bytes": 131720
+    },
+    {
+      "path": "data/real_scientific_pack/cancer/uci_wdbc_real.csv",
+      "sha256": "111000dc8b565e16d91880afd585fed4a2715955ace30c43addf1795459470ea",
+      "size_bytes": 131720
+    }
+  ],
+  "local_candidates": [
+    "data/public_reference/uci_breast_cancer_wisconsin_diagnostic.csv",
+    "data/real_scientific_pack/cancer/uci_wdbc_real.csv"
+  ],
+  "local_snapshot_checksum_verified": true,
+  "local_snapshot_present": true,
+  "official_url": "https://archive.ics.uci.edu/",
+  "production_reference_qualified": false,
+  "provider": "UCI Machine Learning Repository",
+  "qualification_blockers": [
+    "Licence/terms acceptance must match the intended deployment.",
+    "A complete provider release, release date and record-level QC must be attached.",
+    "Independent scientific review is required before confirmatory use."
+  ],
+  "schema": "biointel.step162.provider-source-contract.v1",
+  "source_descriptor_verified": true
+}

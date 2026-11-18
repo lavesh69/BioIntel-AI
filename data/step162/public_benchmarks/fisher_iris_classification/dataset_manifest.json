@@ -1,0 +1,16 @@
+{
+  "clinical_release_eligible": false,
+  "dataset_key": "fisher_iris_classification",
+  "dataset_sha256": "1c4da6110b845a828bf245faa15b02586a4b45ca0a79f01fe534ed65cf55d63e",
+  "distribution": "scikit-learn 1.8.0 bundled dataset copy",
+  "features": 4,
+  "licence_review_status": "source terms recorded; deployment user must confirm intended-use compliance",
+  "public_reference_data": true,
+  "rows": 150,
+  "schema": "biointel.step162.public-dataset-manifest.v1",
+  "source_name": "Fisher Iris dataset distributed with scikit-learn",
+  "source_url": "https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_iris.html",
+  "synthetic": false,
+  "target_description": "['setosa' 'versicolor' 'virginica']",
+  "title": "Fisher Iris public benchmark"
+}

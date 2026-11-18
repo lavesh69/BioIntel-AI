@@ -1,0 +1,28 @@
+{
+  "domain": "Clinical studies",
+  "generated_at_utc": "2026-07-14T04:25:32+00:00",
+  "key": "clinicaltrials",
+  "licence_review_required": true,
+  "local_assets": [
+    {
+      "path": "data/real_evidence/official_snapshots/clinicaltrials_verified_seed.json",
+      "sha256": "e40fe409173a53638f09b7946c5f2b93759ac44c077e9e3a5b32a5d2fd79a6a0",
+      "size_bytes": 956
+    }
+  ],
+  "local_candidates": [
+    "data/real_evidence/official_snapshots/clinicaltrials_verified_seed.json"
+  ],
+  "local_snapshot_checksum_verified": true,
+  "local_snapshot_present": true,
+  "official_url": "https://clinicaltrials.gov/",
+  "production_reference_qualified": false,
+  "provider": "ClinicalTrials.gov",
+  "qualification_blockers": [
+    "Licence/terms acceptance must match the intended deployment.",
+    "A complete provider release, release date and record-level QC must be attached.",
+    "Independent scientific review is required before confirmatory use."
+  ],
+  "schema": "biointel.step162.provider-source-contract.v1",
+  "source_descriptor_verified": true
+}

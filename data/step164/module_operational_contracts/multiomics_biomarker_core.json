@@ -1,0 +1,32 @@
+{
+  "accepted_formats": [
+    "CSV/TSV",
+    "H5AD",
+    "MTX"
+  ],
+  "external_release_requires_all_real_artifacts": true,
+  "module_key": "multiomics_biomarker_core",
+  "module_title": "Biomarker-discovery depth",
+  "native_research_fallback_ready": true,
+  "optimization_controls": [
+    "Sparse matrices",
+    "Cached folds",
+    "Background resampling"
+  ],
+  "reference_asset_ids": [
+    "multiomics_biomarker_core-01-feature-maps",
+    "multiomics_biomarker_core-02-external-validation-cohort",
+    "multiomics_biomarker_core-03-analysis-protocol"
+  ],
+  "schema": "biointel.step164.module-operational-contract.v1",
+  "scientific_boundary": "Exploratory biomarker panels require independent validation and locked analysis plans.",
+  "software_owned_target": "10/10",
+  "specialist_claims_fail_closed": true,
+  "specialist_engines": [],
+  "validation_gates": [
+    "Nested validation",
+    "Leakage audit",
+    "Calibration",
+    "Panel stability"
+  ]
+}

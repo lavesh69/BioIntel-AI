@@ -1,0 +1,30 @@
+{
+  "accepted_formats": [
+    "Scientific file families"
+  ],
+  "external_release_requires_all_real_artifacts": true,
+  "module_key": "universal_file_inspector",
+  "module_title": "Universal file-inspection depth",
+  "native_research_fallback_ready": true,
+  "optimization_controls": [
+    "Streaming inspection",
+    "Bounded previews",
+    "Content-hash cache"
+  ],
+  "reference_asset_ids": [
+    "universal_file_inspector-01-format-signatures",
+    "universal_file_inspector-02-schema-rules",
+    "universal_file_inspector-03-privacy-policy"
+  ],
+  "schema": "biointel.step164.module-operational-contract.v1",
+  "scientific_boundary": "Format detection and previews do not establish biological validity.",
+  "software_owned_target": "10/10",
+  "specialist_claims_fail_closed": true,
+  "specialist_engines": [],
+  "validation_gates": [
+    "Magic-byte detection",
+    "Corruption/schema checks",
+    "Resource estimate",
+    "Sensitive-data warning"
+  ]
+}

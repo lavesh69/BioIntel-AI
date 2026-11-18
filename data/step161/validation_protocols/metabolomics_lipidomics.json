@@ -1,0 +1,44 @@
+{
+  "completion_fields": {
+    "independent_validation": false,
+    "prospective_validation": false,
+    "protocol_version": true,
+    "reviewer_approved": false,
+    "source_checksums": false
+  },
+  "external_evidence_attached": false,
+  "intended_use_boundary": "Feature matches are hypotheses until confirmed by retention time, MS/MS evidence and authentic standards.",
+  "module_key": "metabolomics_lipidomics",
+  "module_title": "Metabolomics depth",
+  "negative_controls_required": true,
+  "prospective_validation_required": true,
+  "protocol_sha256": "060c23f6d5607df189190ccd414945b30c5c52a09b8e3ffbe96d3d592a8c3adf",
+  "protocol_status": "ready-for-external-execution",
+  "protocol_version": "1.0.0",
+  "release_eligible": false,
+  "required_reference_assets": [
+    "Spectral library",
+    "Retention-time standards",
+    "Adduct table"
+  ],
+  "required_specialist_engines": [
+    "openms"
+  ],
+  "required_validation_gates": [
+    "Blank subtraction",
+    "Pooled-QC CV",
+    "Batch drift",
+    "Identification confidence"
+  ],
+  "reviewer_signoff_required": true,
+  "schema": "biointel.step161.external-validation-protocol.v1",
+  "source_checksums_required": true,
+  "study_design_requirements": [
+    "Independent dataset or site not used during development",
+    "Prespecified endpoints and acceptance thresholds",
+    "Locked software, model and reference versions",
+    "Source-data checksums and immutable analysis manifest",
+    "Blinded or independently adjudicated review where applicable",
+    "Subgroup, calibration, uncertainty and failure analysis"
+  ]
+}

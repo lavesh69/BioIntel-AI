@@ -1,0 +1,157 @@
+{
+  "cross_validation_metrics": {
+    "balanced_accuracy_mean": 0.9688617861559038,
+    "balanced_accuracy_std": 0.009205985747750589,
+    "f1_macro_mean": 0.968915196176566,
+    "f1_macro_std": 0.009129902685879309
+  },
+  "holdout_metrics": {
+    "accuracy": 0.9805555555555555,
+    "balanced_accuracy": 0.9806263406263407,
+    "balanced_accuracy_ci95": {
+      "iterations": 250,
+      "lower_95": 0.9663873813433175,
+      "upper_95": 0.9936234936234936
+    },
+    "brier_score": 0.0037175495312820814,
+    "confusion_matrix": [
+      [
+        36,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        35,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      [
+        0,
+        0,
+        35,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        37,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        35,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        35,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        35,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        35,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        34,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        36
+      ]
+    ],
+    "expected_calibration_error": 0.025173991957511,
+    "f1_macro": 0.9806258046861945,
+    "f1_macro_ci95": {
+      "iterations": 250,
+      "lower_95": 0.966006913285561,
+      "upper_95": 0.9934785143514767
+    },
+    "log_loss": 0.08767545452496993,
+    "precision_macro": 0.9809898620424937,
+    "recall_macro": 0.9806263406263407,
+    "roc_auc_ovr_macro": 0.9996478137558864
+  },
+  "schema": "biointel.step162.benchmark-metrics.v1",
+  "uncertainty": {
+    "brier_score": 0.0037175495312820814,
+    "expected_calibration_error": 0.025173991957511,
+    "method": "probability calibration diagnostics"
+  }
+}

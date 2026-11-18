@@ -1,0 +1,4 @@
+participant_id,arm,arm_population,event_id,event_type,severity,serious,relatedness,event_day,resolved,reportable,site_id,system_organ_class,preferred_term,expectedness,treatment_emergent,adverse_event_of_special_interest,action_taken,outcome,awareness_date,report_due_date,submitted_date,dose_level,person_time_days,followup_days,information_fraction,efficacy_z,efficacy_boundary,futility_boundary,conditional_power,lab_test,baseline_grade,worst_grade,monitoring_committee_action,data_access_state
+P001,Control,50,EV-001,Headache,Mild,False,Unlikely,8,True,False,,,,,False,False,,,,,,,0,0,0,0,0,0,0,,,,,
+P002,Treatment,50,EV-002,Laboratory abnormality,Moderate,False,Possible,12,True,False,,,,,False,False,,,,,,,0,0,0,0,0,0,0,,,,,
+P003,Treatment,50,EV-003,Hospitalisation,Severe,True,Possible,19,False,True,,,,,False,False,,,,,,,0,0,0,0,0,0,0,,,,,

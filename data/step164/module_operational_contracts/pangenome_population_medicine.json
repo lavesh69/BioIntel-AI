@@ -1,0 +1,37 @@
+{
+  "accepted_formats": [
+    "GFA",
+    "VCF/BCF",
+    "CSV/TSV population table"
+  ],
+  "external_release_requires_all_real_artifacts": true,
+  "module_key": "pangenome_population_medicine",
+  "module_title": "Pangenome population-medicine depth",
+  "native_research_fallback_ready": true,
+  "optimization_controls": [
+    "Graph indexing",
+    "Population-frequency cache",
+    "Region queries"
+  ],
+  "reference_asset_ids": [
+    "pangenome_population_medicine-01-population-assemblies",
+    "pangenome_population_medicine-02-reference-paths",
+    "pangenome_population_medicine-03-clinical-evidence-release",
+    "pangenome_population_medicine-04-ancestry-metadata"
+  ],
+  "schema": "biointel.step164.module-operational-contract.v1",
+  "scientific_boundary": "Population-specific graph findings do not establish individual clinical risk without validated evidence.",
+  "software_owned_target": "10/10",
+  "specialist_claims_fail_closed": true,
+  "specialist_engines": [
+    "minigraph",
+    "vg",
+    "odgi"
+  ],
+  "validation_gates": [
+    "Population representation",
+    "Reference bias",
+    "Graph coordinate traceability",
+    "Clinical evidence review"
+  ]
+}

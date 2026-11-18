@@ -1,0 +1,42 @@
+{
+  "completion_fields": {
+    "independent_validation": false,
+    "prospective_validation": false,
+    "protocol_version": true,
+    "reviewer_approved": false,
+    "source_checksums": false
+  },
+  "external_evidence_attached": false,
+  "intended_use_boundary": "Passing software benchmarks does not by itself establish clinical or biological validity.",
+  "module_key": "benchmark_validation_v2",
+  "module_title": "Benchmarking depth",
+  "negative_controls_required": true,
+  "prospective_validation_required": true,
+  "protocol_sha256": "87a2aed0a5d6e8386132d80293e08c095cef56b53a1458461458597f04253810",
+  "protocol_status": "ready-for-external-execution",
+  "protocol_version": "1.0.0",
+  "release_eligible": false,
+  "required_reference_assets": [
+    "Locked benchmark datasets",
+    "Expected outputs",
+    "Hardware metadata"
+  ],
+  "required_specialist_engines": [],
+  "required_validation_gates": [
+    "Gold-standard provenance",
+    "Tolerance ranges",
+    "Version regression",
+    "Scientific metrics"
+  ],
+  "reviewer_signoff_required": true,
+  "schema": "biointel.step161.external-validation-protocol.v1",
+  "source_checksums_required": true,
+  "study_design_requirements": [
+    "Independent dataset or site not used during development",
+    "Prespecified endpoints and acceptance thresholds",
+    "Locked software, model and reference versions",
+    "Source-data checksums and immutable analysis manifest",
+    "Blinded or independently adjudicated review where applicable",
+    "Subgroup, calibration, uncertainty and failure analysis"
+  ]
+}

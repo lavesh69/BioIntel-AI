@@ -1,0 +1,4 @@
+item_id,domain,requirement,status,risk_level,vulnerable_group,consent_required,privacy_sensitive,owner,evidence_reference,consent_version,consent_language,effective_date,approval_expiry,participant_id,consent_option,consent_decision,signed_date,withdrawal_date,reconsent_due_date,submission_id,submission_status,submission_date,approval_date,query_id,query_status,query_due_date,withdrawal_scope,data_category,data_destination
+ETH-001,Consent,Participant information and consent language,In review,High,All participants,True,True,Ethics lead,Draft consent form v0.3,,,,,,,,,,,,,,,,,,,,
+ETH-002,Privacy,Data minimisation and access controls,Draft,High,All participants,False,True,Data protection lead,Data flow diagram,,,,,,,,,,,,,,,,,,,,
+ETH-003,Safeguards,Additional safeguards for vulnerable participants,Not started,Critical,Vulnerable participants,True,True,,,,,,,,,,,,,,,,,,,,,,

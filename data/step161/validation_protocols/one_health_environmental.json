@@ -1,0 +1,47 @@
+{
+  "completion_fields": {
+    "independent_validation": false,
+    "prospective_validation": false,
+    "protocol_version": true,
+    "reviewer_approved": false,
+    "source_checksums": false
+  },
+  "external_evidence_attached": false,
+  "intended_use_boundary": "Surveillance signals require epidemiological context, confirmatory testing and public-health review.",
+  "module_key": "one_health_environmental",
+  "module_title": "One Health depth",
+  "negative_controls_required": true,
+  "prospective_validation_required": true,
+  "protocol_sha256": "cf0b05a3d3aeb4131597f49c80711fafd28f27ca222094fc925bb3b1f59e7a6c",
+  "protocol_status": "ready-for-external-execution",
+  "protocol_version": "1.0.0",
+  "release_eligible": false,
+  "required_reference_assets": [
+    "Taxonomy database",
+    "AMR database",
+    "Geographic metadata"
+  ],
+  "required_specialist_engines": [
+    "kraken2",
+    "bracken",
+    "humann",
+    "minimap2"
+  ],
+  "required_validation_gates": [
+    "Source harmonization",
+    "Contamination controls",
+    "Temporal/geographic uncertainty",
+    "AMR evidence"
+  ],
+  "reviewer_signoff_required": true,
+  "schema": "biointel.step161.external-validation-protocol.v1",
+  "source_checksums_required": true,
+  "study_design_requirements": [
+    "Independent dataset or site not used during development",
+    "Prespecified endpoints and acceptance thresholds",
+    "Locked software, model and reference versions",
+    "Source-data checksums and immutable analysis manifest",
+    "Blinded or independently adjudicated review where applicable",
+    "Subgroup, calibration, uncertainty and failure analysis"
+  ]
+}

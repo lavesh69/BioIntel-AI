@@ -1,0 +1,36 @@
+{
+  "accepted_formats": [
+    "VCF/MAF",
+    "CNV tables",
+    "RNA expression"
+  ],
+  "external_release_requires_all_real_artifacts": true,
+  "module_key": "cancer_genomics_core",
+  "module_title": "Cancer genomics depth",
+  "native_research_fallback_ready": true,
+  "optimization_controls": [
+    "Chromosome-partitioned processing",
+    "Sparse alteration matrices",
+    "Cached annotations"
+  ],
+  "reference_asset_ids": [
+    "cancer_genomics_core-01-reference-genome",
+    "cancer_genomics_core-02-cancer-gene-census",
+    "cancer_genomics_core-03-population-frequencies",
+    "cancer_genomics_core-04-clinical-annotation-release"
+  ],
+  "schema": "biointel.step164.module-operational-contract.v1",
+  "scientific_boundary": "Cancer-genomics findings are research evidence and not autonomous clinical interpretation.",
+  "software_owned_target": "10/10",
+  "specialist_claims_fail_closed": true,
+  "specialist_engines": [
+    "bcftools",
+    "vep"
+  ],
+  "validation_gates": [
+    "Tumour-normal provenance",
+    "Purity/ploidy",
+    "Multiple-testing control",
+    "Independent cohort validation"
+  ]
+}

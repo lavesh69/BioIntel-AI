@@ -1,0 +1,574 @@
+{
+  "boundary": "Official retrospective multi-site studies, real public single-cell references and validation-readiness controls improve reproducibility evidence. They do not constitute a completed new prospective BioIntel wet-lab study, clinical validation or regulatory approval.",
+  "catalog_version": "1.2",
+  "created_at_utc": "2026-07-08T00:00:00Z",
+  "dataset_count": 14,
+  "datasets": [
+    {
+      "file_metadata": [
+        {
+          "filename": "O03042_ARABIDOPSIS_RBCL.fasta",
+          "format": "fasta",
+          "path": "data/real_scientific_pack/uniprot/O03042_ARABIDOPSIS_RBCL.fasta",
+          "sha256": "9d5a51bb305a3f7c45625a69524dfd0622f8baf1c8738af3b69cd4c217902bf4",
+          "size_bytes": 604
+        },
+        {
+          "filename": "P00533_EGFR.fasta",
+          "format": "fasta",
+          "path": "data/real_scientific_pack/uniprot/P00533_EGFR.fasta",
+          "sha256": "684e2da1f3ef05d0ce90d0aefe9125c6f7e9cdcfeac27ae72ed35243b64a73e8",
+          "size_bytes": 1328
+        },
+        {
+          "filename": "P00722_ECOLI_LACZ.fasta",
+          "format": "fasta",
+          "path": "data/real_scientific_pack/uniprot/P00722_ECOLI_LACZ.fasta",
+          "sha256": "6eaf4eb59b178dc946fcd9f50fdcfbec9d1b49b53bc8d849a402c3a0405830eb",
+          "size_bytes": 1143
+        },
+        {
+          "filename": "P01116_KRAS.fasta",
+          "format": "fasta",
+          "path": "data/real_scientific_pack/uniprot/P01116_KRAS.fasta",
+          "sha256": "be58c42a464baafed08805898078839b0b47b559cec93fdb3cd7f8d95ab95ea6",
+          "size_bytes": 269
+        },
+        {
+          "filename": "P04637_TP53.fasta",
+          "format": "fasta",
+          "path": "data/real_scientific_pack/uniprot/P04637_TP53.fasta",
+          "sha256": "59aace7211b64e5918ef6547fc48d6419a134fa91f158415d598d3416882f063",
+          "size_bytes": 490
+        },
+        {
+          "filename": "P0DTC2_SARS2_SPIKE.fasta",
+          "format": "fasta",
+          "path": "data/real_scientific_pack/uniprot/P0DTC2_SARS2_SPIKE.fasta",
+          "sha256": "399308ca13674141add24eb388b1b4fc3a84330350075c18be0b4261166f8086",
+          "size_bytes": 1414
+        },
+        {
+          "filename": "P38398_BRCA1.fasta",
+          "format": "fasta",
+          "path": "data/real_scientific_pack/uniprot/P38398_BRCA1.fasta",
+          "sha256": "76e29e4e2e1310c227ed32ce2eb030a273eea456592015f9d4080f1d86750b82",
+          "size_bytes": 2005
+        },
+        {
+          "filename": "uniprot_reviewed_multi_organism_panel.fasta",
+          "format": "fasta",
+          "path": "data/real_scientific_pack/uniprot/uniprot_reviewed_multi_organism_panel.fasta",
+          "sha256": "eeadc4c89d31848bf0ee451b0caa556fc3f8b2a52ec7d239bbe52f7854309f65",
+          "size_bytes": 7253
+        }
+      ],
+      "files": [
+        "data/real_scientific_pack/uniprot/O03042_ARABIDOPSIS_RBCL.fasta",
+        "data/real_scientific_pack/uniprot/P00533_EGFR.fasta",
+        "data/real_scientific_pack/uniprot/P00722_ECOLI_LACZ.fasta",
+        "data/real_scientific_pack/uniprot/P01116_KRAS.fasta",
+        "data/real_scientific_pack/uniprot/P04637_TP53.fasta",
+        "data/real_scientific_pack/uniprot/P0DTC2_SARS2_SPIKE.fasta",
+        "data/real_scientific_pack/uniprot/P38398_BRCA1.fasta",
+        "data/real_scientific_pack/uniprot/uniprot_reviewed_multi_organism_panel.fasta"
+      ],
+      "id": "uniprot_reviewed_panel",
+      "licence": "UniProt terms; attribution required",
+      "modules": [
+        "sequence_analyzer",
+        "sequence_comparison",
+        "batch_sequence",
+        "protein_annotation",
+        "comparative_pathogen_genomics",
+        "primer_crispr_codon",
+        "ppi_interaction_ml"
+      ],
+      "provider": "UniProt",
+      "record_count": 8,
+      "release": "live records accessed 2026-07-08",
+      "retrieved_at_utc": "2026-07-08T00:00:00Z",
+      "scientific_release_eligible": false,
+      "scope": "verified_public_reference",
+      "source_url": "https://www.uniprot.org/",
+      "title": "UniProt reviewed multi-organism protein panel",
+      "training_eligible": false
+    },
+    {
+      "file_metadata": [
+        {
+          "filename": "4HHB_hemoglobin.cif",
+          "format": "cif",
+          "path": "data/real_scientific_pack/rcsb/4HHB_hemoglobin.cif",
+          "sha256": "6c977e3c48fcae60ef116dffff90ce2ae2dbc987f39c3f930d325361a1916812",
+          "size_bytes": 764822
+        }
+      ],
+      "files": [
+        "data/real_scientific_pack/rcsb/4HHB_hemoglobin.cif"
+      ],
+      "id": "rcsb_4hhb",
+      "licence": "RCSB PDB usage policy",
+      "modules": [
+        "structural_bioinformatics",
+        "protein_annotation"
+      ],
+      "provider": "RCSB PDB / wwPDB",
+      "record_count": 1,
+      "release": "entry revision current at access 2026-07-08",
+      "retrieved_at_utc": "2026-07-08T00:00:00Z",
+      "scientific_release_eligible": false,
+      "scope": "experimental_structure_reference",
+      "source_url": "https://www.rcsb.org/structure/4HHB",
+      "title": "RCSB PDB 4HHB human deoxyhemoglobin structure",
+      "training_eligible": false
+    },
+    {
+      "file_metadata": [
+        {
+          "filename": "ReactomePathways.txt",
+          "format": "txt",
+          "path": "data/real_scientific_pack/reactome/ReactomePathways.txt",
+          "sha256": "f6d7a2bf89b5bcfe0250a0bc7f51bff94641447911712b8ff129f5b55e52df3a",
+          "size_bytes": 1592393
+        },
+        {
+          "filename": "ReactomePathwaysRelation.txt",
+          "format": "txt",
+          "path": "data/real_scientific_pack/reactome/ReactomePathwaysRelation.txt",
+          "sha256": "fd49a624d80c14eb37ae57a02e141d574d5ede3f60022bb99edbd909448a3f1e",
+          "size_bytes": 634259
+        }
+      ],
+      "files": [
+        "data/real_scientific_pack/reactome/ReactomePathways.txt",
+        "data/real_scientific_pack/reactome/ReactomePathwaysRelation.txt"
+      ],
+      "id": "reactome_current_pathways",
+      "licence": "Reactome open data terms; attribution required",
+      "modules": [
+        "pathway_network",
+        "omics_integration",
+        "transcriptomics_expression",
+        "protein_annotation"
+      ],
+      "provider": "Reactome",
+      "record_count": 2,
+      "release": "current download accessed 2026-07-08",
+      "retrieved_at_utc": "2026-07-08T00:00:00Z",
+      "scientific_release_eligible": false,
+      "scope": "curated_peer_reviewed_pathway_reference",
+      "source_url": "https://reactome.org/download-data",
+      "title": "Reactome current pathway hierarchy and relations",
+      "training_eligible": false
+    },
+    {
+      "file_metadata": [
+        {
+          "filename": "uci_wdbc_real.csv",
+          "format": "csv",
+          "path": "data/real_scientific_pack/cancer/uci_wdbc_real.csv",
+          "sha256": "111000dc8b565e16d91880afd585fed4a2715955ace30c43addf1795459470ea",
+          "size_bytes": 131720
+        },
+        {
+          "filename": "UCI_WDBC_ATTRIBUTION.md",
+          "format": "md",
+          "path": "data/real_scientific_pack/cancer/UCI_WDBC_ATTRIBUTION.md",
+          "sha256": "61de0681144ece238c41a94943fe54d7c104176faf583da1623e025cf417f026",
+          "size_bytes": 476
+        }
+      ],
+      "files": [
+        "data/real_scientific_pack/cancer/uci_wdbc_real.csv",
+        "data/real_scientific_pack/cancer/UCI_WDBC_ATTRIBUTION.md"
+      ],
+      "id": "uci_wdbc",
+      "licence": "CC BY 4.0",
+      "modules": [
+        "cancer_genomics",
+        "model_training",
+        "model_evaluation",
+        "external_validation",
+        "benchmark_leakage_lab",
+        "dataset_registry"
+      ],
+      "provider": "UCI Machine Learning Repository",
+      "record_count": 2,
+      "release": "dataset 17",
+      "retrieved_at_utc": "2026-07-08T00:00:00Z",
+      "scientific_release_eligible": false,
+      "scope": "real_public_benchmark",
+      "source_url": "https://archive.ics.uci.edu/dataset/17/breast+cancer+wisconsin+diagnostic",
+      "title": "Breast Cancer Wisconsin Diagnostic real public dataset",
+      "training_eligible": true
+    },
+    {
+      "file_metadata": [
+        {
+          "filename": "chembl_verified_activities.json",
+          "format": "json",
+          "path": "data/real_scientific_pack/chembl/chembl_verified_activities.json",
+          "sha256": "fd4145d3f2d10050091c9d868382163de2571a60b3237445318638e62783d286",
+          "size_bytes": 4731
+        }
+      ],
+      "files": [
+        "data/real_scientific_pack/chembl/chembl_verified_activities.json"
+      ],
+      "id": "chembl_verified_activities",
+      "licence": "ChEMBL terms",
+      "modules": [
+        "chembl_builder",
+        "drug_analyzer",
+        "dti_features",
+        "dti_predictor",
+        "admet_discovery",
+        "discovery_command_center",
+        "real_evidence_studio"
+      ],
+      "provider": "ChEMBL / EMBL-EBI",
+      "record_count": 1,
+      "release": "live API snapshot 2026-07-05",
+      "retrieved_at_utc": "2026-07-08T00:00:00Z",
+      "scientific_release_eligible": false,
+      "scope": "real_public_reference_requires_curation",
+      "source_url": "https://www.ebi.ac.uk/chembl/",
+      "title": "ChEMBL verified bioactivity reference snapshot",
+      "training_eligible": false
+    },
+    {
+      "file_metadata": [
+        {
+          "filename": "clinvar_official_variant_reference.tsv",
+          "format": "tsv",
+          "path": "data/real_scientific_pack/clinvar/clinvar_official_variant_reference.tsv",
+          "sha256": "cd13263f6ce13b10a9173eafceb39123047bc7fd4854ff20fdf6abd6e0d4acd4",
+          "size_bytes": 351
+        }
+      ],
+      "files": [
+        "data/real_scientific_pack/clinvar/clinvar_official_variant_reference.tsv"
+      ],
+      "id": "clinvar_official_reference",
+      "licence": "US Government public data / submitter terms",
+      "modules": [
+        "variant_annotation",
+        "cancer_genomics",
+        "real_evidence_studio",
+        "scientific_curation"
+      ],
+      "provider": "NCBI ClinVar",
+      "record_count": 1,
+      "release": "records accessed 2026-07-08",
+      "retrieved_at_utc": "2026-07-08T00:00:00Z",
+      "scientific_release_eligible": false,
+      "scope": "clinical_variant_reference_not_diagnostic",
+      "source_url": "https://www.ncbi.nlm.nih.gov/clinvar/",
+      "title": "NCBI ClinVar official variant reference records",
+      "training_eligible": false
+    },
+    {
+      "file_metadata": [
+        {
+          "filename": "clinicaltrials_verified_reference.json",
+          "format": "json",
+          "path": "data/real_scientific_pack/clinvar/clinicaltrials_verified_reference.json",
+          "sha256": "e40fe409173a53638f09b7946c5f2b93759ac44c077e9e3a5b32a5d2fd79a6a0",
+          "size_bytes": 956
+        }
+      ],
+      "files": [
+        "data/real_scientific_pack/clinvar/clinicaltrials_verified_reference.json"
+      ],
+      "id": "clinicaltrials_reference",
+      "licence": "US Government public data",
+      "modules": [
+        "real_evidence_studio",
+        "evidence_studio",
+        "external_validation",
+        "scientific_release_gate",
+        "scientific_curation"
+      ],
+      "provider": "ClinicalTrials.gov",
+      "record_count": 1,
+      "release": "snapshot 2026-07-05",
+      "retrieved_at_utc": "2026-07-08T00:00:00Z",
+      "scientific_release_eligible": false,
+      "scope": "clinical_reference_not_outcome_validation",
+      "source_url": "https://clinicaltrials.gov/",
+      "title": "ClinicalTrials.gov verified reference snapshot",
+      "training_eligible": false
+    },
+    {
+      "file_metadata": [
+        {
+          "filename": "organism_coverage_reference.csv",
+          "format": "csv",
+          "path": "data/real_scientific_pack/ncbi/organism_coverage_reference.csv",
+          "sha256": "6319c2ea7b73a484a64b0df13f538da17b01c363b662d15cb1cccda12182f8e8",
+          "size_bytes": 509
+        }
+      ],
+      "files": [
+        "data/real_scientific_pack/ncbi/organism_coverage_reference.csv"
+      ],
+      "id": "organism_coverage_reference",
+      "licence": "provider terms",
+      "modules": [
+        "comparative_pathogen_genomics",
+        "microbiology_metagenomics",
+        "metagenomics_pipeline",
+        "sequence_comparison"
+      ],
+      "provider": "UniProt / NCBI Taxonomy references",
+      "record_count": 1,
+      "release": "snapshot 2026-07-05",
+      "retrieved_at_utc": "2026-07-08T00:00:00Z",
+      "scientific_release_eligible": false,
+      "scope": "verified_multi_organism_reference",
+      "source_url": "https://www.uniprot.org/",
+      "title": "Multi-organism official identifier coverage",
+      "training_eligible": false
+    },
+    {
+      "file_metadata": [
+        {
+          "filename": "verified_public_reference_catalog.csv",
+          "format": "csv",
+          "path": "data/real_scientific_pack/manifests/verified_public_reference_catalog.csv",
+          "sha256": "f0f8c2f39aeb8864048a519437b977824380264835a6f1393b2114e5036c5af8",
+          "size_bytes": 8052
+        }
+      ],
+      "files": [
+        "data/real_scientific_pack/manifests/verified_public_reference_catalog.csv"
+      ],
+      "id": "public_reference_catalog",
+      "licence": "per-record provider terms",
+      "modules": [
+        "external_databases",
+        "connected_data_explorer",
+        "provider_integration_center",
+        "dataset_registry",
+        "scientific_curation"
+      ],
+      "provider": "Multiple official providers",
+      "record_count": 1,
+      "release": "BioIntel verified catalog 2026-07-08",
+      "retrieved_at_utc": "2026-07-08T00:00:00Z",
+      "scientific_release_eligible": false,
+      "scope": "identifier_and_provenance_reference",
+      "source_url": "local verified provider catalog",
+      "title": "Verified official-provider identifier catalog",
+      "training_eligible": false
+    },
+    {
+      "file_metadata": [
+        {
+          "filename": "GSE2034_expression_excerpt.tsv",
+          "format": "tsv",
+          "path": "data/real_scientific_pack/geo/GSE2034_expression_excerpt.tsv",
+          "sha256": "d5a25f06ef28d51a5ffb76a88ec99cd95fcf9becd7cc65bfa0001cc33d160f46",
+          "size_bytes": 450
+        },
+        {
+          "filename": "GSE2034_EXCERPT_ATTRIBUTION.md",
+          "format": "md",
+          "path": "data/real_scientific_pack/geo/GSE2034_EXCERPT_ATTRIBUTION.md",
+          "sha256": "e7969dd1390d0e712e91f87ce3cb66cd1107b910779a8f0d461236ee6c09281d",
+          "size_bytes": 499
+        }
+      ],
+      "files": [
+        "data/real_scientific_pack/geo/GSE2034_expression_excerpt.tsv",
+        "data/real_scientific_pack/geo/GSE2034_EXCERPT_ATTRIBUTION.md"
+      ],
+      "id": "geo_gse2034_excerpt",
+      "licence": "NCBI/GEO public data; original submitter citation required",
+      "modules": [
+        "transcriptomics_expression",
+        "omics_integration",
+        "cancer_genomics",
+        "model_training",
+        "model_evaluation",
+        "external_validation"
+      ],
+      "provider": "NCBI Gene Expression Omnibus",
+      "record_count": 2,
+      "release": "GSE2034 public series; official page accessed 2026-07-08",
+      "retrieved_at_utc": "2026-07-08T00:00:00Z",
+      "scientific_release_eligible": false,
+      "scope": "real_public_expression_excerpt_for_format_and_software_validation",
+      "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE2034",
+      "title": "NCBI GEO GSE2034 real breast-cancer expression excerpt",
+      "training_eligible": false
+    },
+    {
+      "evidence_level": "official retrospective multi-site benchmark",
+      "file_metadata": [
+        {
+          "filename": "MAQC_GSE5350_multisite_study_index.csv",
+          "format": "csv",
+          "path": "data/real_scientific_pack/multisite/MAQC_GSE5350_multisite_study_index.csv",
+          "sha256": "1e6e71149917dac197346ec2dac137d41113bcd5eed3e17996cbe6b89fedb4f0",
+          "size_bytes": 1391
+        },
+        {
+          "filename": "MAQC_GSE5350_evidence_manifest.json",
+          "format": "json",
+          "path": "data/real_scientific_pack/multisite/MAQC_GSE5350_evidence_manifest.json",
+          "sha256": "b776a6df0ac66b2392871a6ddda1befb693a98491e7cdf81063e878821f9e74f",
+          "size_bytes": 950
+        }
+      ],
+      "files": [
+        "data/real_scientific_pack/multisite/MAQC_GSE5350_multisite_study_index.csv",
+        "data/real_scientific_pack/multisite/MAQC_GSE5350_evidence_manifest.json"
+      ],
+      "id": "maqc_gse5350_multisite",
+      "licence": "NCBI public archive; original-study citation required",
+      "modules": [
+        "transcriptomics_expression",
+        "omics_integration",
+        "external_validation",
+        "scientific_release_gate",
+        "scientific_data_readiness",
+        "real_evidence_studio"
+      ],
+      "provider": "U.S. FDA / NCBI GEO",
+      "record_count": 2,
+      "release": "GSE5350 public series; metadata verified 2026-07-08",
+      "retrieved_at_utc": "2026-07-08T00:00:00Z",
+      "scientific_release_eligible": false,
+      "scope": "retrospective_official_multisite_reproducibility_evidence",
+      "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE5350",
+      "title": "FDA/NCBI MAQC GSE5350 multi-site transcriptomics benchmark",
+      "training_eligible": false
+    },
+    {
+      "evidence_level": "official retrospective multi-site benchmark",
+      "file_metadata": [
+        {
+          "filename": "CPTAC_Phase_I_multisite_benchmark_index.csv",
+          "format": "csv",
+          "path": "data/real_scientific_pack/proteomics/CPTAC_Phase_I_multisite_benchmark_index.csv",
+          "sha256": "b019ca01db3b984a425d81a6a6d14d832ae1f72303abfc6e742bd08e8bf04735",
+          "size_bytes": 1052
+        },
+        {
+          "filename": "CPTAC_Phase_I_evidence_manifest.json",
+          "format": "json",
+          "path": "data/real_scientific_pack/proteomics/CPTAC_Phase_I_evidence_manifest.json",
+          "sha256": "860cfcfd0ad33592b92a27e0d2f7da2b15e3925676a2ac59768805037181c861",
+          "size_bytes": 611
+        }
+      ],
+      "files": [
+        "data/real_scientific_pack/proteomics/CPTAC_Phase_I_multisite_benchmark_index.csv",
+        "data/real_scientific_pack/proteomics/CPTAC_Phase_I_evidence_manifest.json"
+      ],
+      "id": "cptac_phase1_multisite",
+      "licence": "U.S. Government/public repository terms; study citation required",
+      "modules": [
+        "protein_annotation",
+        "omics_integration",
+        "external_validation",
+        "scientific_release_gate",
+        "scientific_data_readiness",
+        "real_evidence_studio"
+      ],
+      "provider": "National Cancer Institute CPTAC",
+      "record_count": 2,
+      "release": "CPTAC Technology Assessment Phase I; metadata verified 2026-07-08",
+      "retrieved_at_utc": "2026-07-08T00:00:00Z",
+      "scientific_release_eligible": false,
+      "scope": "retrospective_official_multisite_proteomics_evidence",
+      "source_url": "https://cptac-data-portal.georgetown.edu/cptac/study/list?scope=Phase+I",
+      "title": "NCI CPTAC Phase I multi-site proteomics benchmark index",
+      "training_eligible": false
+    },
+    {
+      "evidence_level": "official public multi-laboratory study metadata",
+      "file_metadata": [
+        {
+          "filename": "PXD002114_longitudinal_QC_manifest.json",
+          "format": "json",
+          "path": "data/real_scientific_pack/proteomics/PXD002114_longitudinal_QC_manifest.json",
+          "sha256": "1c64b0b93c27afff3a7645ddb7797e53134aa0a73c4c12c5f0c852480080e89b",
+          "size_bytes": 771
+        },
+        {
+          "filename": "PXD002114_reproducibility_summary.csv",
+          "format": "csv",
+          "path": "data/real_scientific_pack/proteomics/PXD002114_reproducibility_summary.csv",
+          "sha256": "5060e2168092a3f1fe3cebce329caececabaa56ae93ada0bb1b783b1ca00fe57",
+          "size_bytes": 291
+        }
+      ],
+      "files": [
+        "data/real_scientific_pack/proteomics/PXD002114_longitudinal_QC_manifest.json",
+        "data/real_scientific_pack/proteomics/PXD002114_reproducibility_summary.csv"
+      ],
+      "id": "pxd002114_multilab_qc",
+      "licence": "Repository and submitter terms; attribution required",
+      "modules": [
+        "protein_annotation",
+        "omics_integration",
+        "external_validation",
+        "scientific_data_readiness",
+        "provider_integration_center"
+      ],
+      "provider": "ProteomeXchange / MassIVE",
+      "record_count": 2,
+      "release": "PXD002114 announced 2015-04-28; metadata verified 2026-07-08",
+      "retrieved_at_utc": "2026-07-08T00:00:00Z",
+      "scientific_release_eligible": false,
+      "scope": "real_multilaboratory_proteomics_qc_metadata",
+      "source_url": "https://proteomecentral.proteomexchange.org/cgi/GetDataset?ID=PXD002114",
+      "title": "ProteomeXchange PXD002114 longitudinal multi-laboratory QC study",
+      "training_eligible": false
+    },
+    {
+      "evidence_level": "official public single-cell study metadata and reproducible QC reference",
+      "file_metadata": [
+        {
+          "filename": "10x_PBMC3k_official_study_manifest.json",
+          "format": "json",
+          "path": "data/real_scientific_pack/single_cell/10x_PBMC3k_official_study_manifest.json",
+          "sha256": "11f88f5e06842cfcde9fa788b4ec46f2a593ebfe5005d268e3a9ebac76e6fd02",
+          "size_bytes": 964
+        },
+        {
+          "filename": "10x_PBMC3k_reference_QC.csv",
+          "format": "csv",
+          "path": "data/real_scientific_pack/single_cell/10x_PBMC3k_reference_QC.csv",
+          "sha256": "09d93ce87383a66476669344ad9a4d2d910cf90485fc3764911f677c00d3c3c0",
+          "size_bytes": 243
+        }
+      ],
+      "files": [
+        "data/real_scientific_pack/single_cell/10x_PBMC3k_official_study_manifest.json",
+        "data/real_scientific_pack/single_cell/10x_PBMC3k_reference_QC.csv"
+      ],
+      "id": "tenx_pbmc3k_reference",
+      "licence": "10x Genomics dataset terms; attribution required",
+      "modules": [
+        "single_cell_heterogeneity",
+        "transcriptomics_expression",
+        "omics_integration",
+        "scientific_data_readiness"
+      ],
+      "provider": "10x Genomics / Scanpy reference workflow",
+      "record_count": 2,
+      "release": "PBMC3k public reference; metadata verified 2026-07-08",
+      "retrieved_at_utc": "2026-07-08T00:00:00Z",
+      "scientific_release_eligible": false,
+      "scope": "real_single_cell_study_manifest_and_qc_reference",
+      "source_url": "https://www.10xgenomics.com/datasets/3-k-pbm-cs-from-a-healthy-donor-1-standard-1-1-0",
+      "title": "10x Genomics PBMC3k real single-cell reference study",
+      "training_eligible": false
+    }
+  ],
+  "software_version": "8.2.6"
+}

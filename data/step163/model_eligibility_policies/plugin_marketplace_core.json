@@ -1,0 +1,29 @@
+{
+  "allowed_default_states": [
+    "verified-task-specific-research-model",
+    "externally-validated-domain-model"
+  ],
+  "blocked_default_states": [
+    "synthetic-demo",
+    "wrong-domain-public-benchmark",
+    "missing-model-card",
+    "checksum-mismatch",
+    "unknown-training-data"
+  ],
+  "current_domain_model_release_eligible": false,
+  "module_key": "plugin_marketplace_core",
+  "module_title": "Plugin security depth",
+  "public_generic_benchmark_counts_as_domain_validation": false,
+  "required_model_artifacts": [
+    "model artifact SHA-256",
+    "training dataset SHA-256",
+    "model card",
+    "split manifest",
+    "untouched holdout outputs",
+    "calibration or uncertainty diagnostics",
+    "environment manifest",
+    "intended-use and limitations"
+  ],
+  "schema": "biointel.step163.model-eligibility-policy.v1",
+  "synthetic_model_scientific_default_allowed": false
+}

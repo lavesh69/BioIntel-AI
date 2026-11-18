@@ -1,0 +1,44 @@
+{
+  "completion_fields": {
+    "independent_validation": false,
+    "prospective_validation": false,
+    "protocol_version": true,
+    "reviewer_approved": false,
+    "source_checksums": false
+  },
+  "external_evidence_attached": false,
+  "intended_use_boundary": "Exploratory biomarker strata require prespecification and independent clinical validation.",
+  "module_key": "clinical_biomarker_survival",
+  "module_title": "Clinical biomarker and survival depth",
+  "negative_controls_required": true,
+  "prospective_validation_required": true,
+  "protocol_sha256": "5db89d0df5c5ace6ae7b5bcc2de2d29a189e5998ccb5e498af415c0ab2e62c40",
+  "protocol_status": "ready-for-external-execution",
+  "protocol_version": "1.0.0",
+  "release_eligible": false,
+  "required_reference_assets": [
+    "Protocol",
+    "Endpoint definitions",
+    "Prespecified cut-off",
+    "External validation cohort"
+  ],
+  "required_specialist_engines": [],
+  "required_validation_gates": [
+    "Missing-data plan",
+    "Proportional-hazards checks",
+    "Calibration",
+    "Site heterogeneity",
+    "Independent validation"
+  ],
+  "reviewer_signoff_required": true,
+  "schema": "biointel.step161.external-validation-protocol.v1",
+  "source_checksums_required": true,
+  "study_design_requirements": [
+    "Independent dataset or site not used during development",
+    "Prespecified endpoints and acceptance thresholds",
+    "Locked software, model and reference versions",
+    "Source-data checksums and immutable analysis manifest",
+    "Blinded or independently adjudicated review where applicable",
+    "Subgroup, calibration, uncertainty and failure analysis"
+  ]
+}

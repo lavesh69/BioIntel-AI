@@ -1,0 +1,18 @@
+{
+  "external_scientific_evidence": false,
+  "module_key": "spatial_omics_pathology",
+  "module_title": "Spatial pathology depth",
+  "production_use_allowed": false,
+  "records": [
+    {
+      "record_id": "spatial_omics_pathology:1:demo",
+      "reference_label": "Tissue image",
+      "status": "test-fixture",
+      "value": 1.0
+    }
+  ],
+  "reference_name": "Tissue image",
+  "schema": "biointel.step161.development-reference-fixture.v1",
+  "scope": "development-and-regression-only",
+  "synthetic": true
+}

@@ -1,0 +1,18 @@
+{
+  "external_scientific_evidence": false,
+  "module_key": "population_gwas",
+  "module_title": "GWAS depth",
+  "production_use_allowed": false,
+  "records": [
+    {
+      "record_id": "population_gwas:2:demo",
+      "reference_label": "Genome build",
+      "status": "test-fixture",
+      "value": 1.0
+    }
+  ],
+  "reference_name": "Genome build",
+  "schema": "biointel.step161.development-reference-fixture.v1",
+  "scope": "development-and-regression-only",
+  "synthetic": true
+}

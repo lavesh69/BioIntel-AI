@@ -1,0 +1,33 @@
+{
+  "accepted_formats": [
+    "CSV/JSON round metrics",
+    "Signed update manifests"
+  ],
+  "external_release_requires_all_real_artifacts": true,
+  "module_key": "federated_biomedical_ai",
+  "module_title": "Federated biomedical AI depth",
+  "native_research_fallback_ready": true,
+  "optimization_controls": [
+    "Round-metric cache",
+    "Bounded audit logs",
+    "Checkpointed aggregation"
+  ],
+  "reference_asset_ids": [
+    "federated_biomedical_ai-01-site-governance-agreements",
+    "federated_biomedical_ai-02-privacy-policy",
+    "federated_biomedical_ai-03-locked-evaluation-protocol",
+    "federated_biomedical_ai-04-threat-model"
+  ],
+  "schema": "biointel.step164.module-operational-contract.v1",
+  "scientific_boundary": "Federation does not automatically guarantee privacy, fairness, security or scientific validity.",
+  "software_owned_target": "10/10",
+  "specialist_claims_fail_closed": true,
+  "specialist_engines": [],
+  "validation_gates": [
+    "Site drift",
+    "Secure aggregation",
+    "Privacy budget",
+    "Subgroup fairness",
+    "External validation"
+  ]
+}

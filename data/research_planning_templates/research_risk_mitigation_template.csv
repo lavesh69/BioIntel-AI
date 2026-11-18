@@ -1,0 +1,9 @@
+risk,category,probability,impact,mitigation_status,owner
+Slow recruitment,Recruitment,4,5,In progress,Clinical Ops
+Assay failure,Assay,3,5,Planned,Lab Lead
+High dropout,Clinical,3,4,Planned,PI
+Batch effect,Data,4,4,In progress,Data Lead
+Endpoint missingness,Statistics,3,4,Planned,Statistician
+Reference update,Scientific,2,3,Monitored,Bioinformatics
+Site delay,Operations,4,4,In progress,Clinical Ops
+Underpowered subgroup,Statistics,4,3,Open,Statistician

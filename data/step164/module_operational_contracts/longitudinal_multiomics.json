@@ -1,0 +1,31 @@
+{
+  "accepted_formats": [
+    "CSV/TSV",
+    "H5AD"
+  ],
+  "external_release_requires_all_real_artifacts": true,
+  "module_key": "longitudinal_multiomics",
+  "module_title": "Longitudinal multi-omics depth",
+  "native_research_fallback_ready": true,
+  "optimization_controls": [
+    "Long-format storage",
+    "Subject caches",
+    "Chunked mixed-model inputs"
+  ],
+  "reference_asset_ids": [
+    "longitudinal_multiomics-01-visit-schedule",
+    "longitudinal_multiomics-02-subject-metadata",
+    "longitudinal_multiomics-03-feature-maps"
+  ],
+  "schema": "biointel.step164.module-operational-contract.v1",
+  "scientific_boundary": "Longitudinal inference must account for repeated measures and informative missingness.",
+  "software_owned_target": "10/10",
+  "specialist_claims_fail_closed": true,
+  "specialist_engines": [],
+  "validation_gates": [
+    "Within-subject modelling",
+    "Unequal visits",
+    "Missingness",
+    "Batch/time confounding"
+  ]
+}

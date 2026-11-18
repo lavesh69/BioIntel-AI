@@ -1,0 +1,57 @@
+{
+  "accepted_native_formats": [
+    "FASTA",
+    "CSV interaction table"
+  ],
+  "claim_policy": {
+    "demo_result_label_required": true,
+    "expert_review_required_for_release": true,
+    "external_validation_required_for_release": true,
+    "limitations_required": true,
+    "reference_result_label_required": true,
+    "uncertainty_disclosure_required": true
+  },
+  "contract_sha256": "d2cfe3bd3fe4466916b6f73b9734b145caf293be0d3b4f5cf8c13b5f9f2e9594",
+  "module_key": "host_pathogen_interaction",
+  "module_title": "Host-pathogen interaction depth",
+  "native_fallback_policy": {
+    "available": true,
+    "confirmatory_claims_allowed": false,
+    "label": "BioIntel deterministic research fallback",
+    "may_replace_specialist_engine": false
+  },
+  "optimization_controls": [
+    "Sparse networks",
+    "Evidence caches",
+    "Bounded layouts"
+  ],
+  "quality_dimensions": {
+    "bounded_resource_execution": true,
+    "complete_result_export": true,
+    "crash_loop_protection": true,
+    "deterministic_native_execution": true,
+    "external_release_fail_closed": true,
+    "input_integrity": true,
+    "model_authenticity_guard": true,
+    "reference_lifecycle_contract": true,
+    "reproducibility_signature": true,
+    "specialist_runtime_adapter": true
+  },
+  "required_production_references": [
+    "Host/pathogen proteomes",
+    "Interaction evidence",
+    "Virulence database"
+  ],
+  "required_specialist_engines": [
+    "biointel_native::host_pathogen_interaction"
+  ],
+  "schema": "biointel.step163.module-excellence-contract.v1",
+  "scientific_boundary": "Predicted interactions require independent experimental support.",
+  "software_owned_target": "10/10",
+  "validation_gates": [
+    "Evidence provenance",
+    "False-positive control",
+    "Network bias",
+    "Experimental interaction validation"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "bundled_in_core_package": false,
+  "category": "Genomics",
+  "checksum_required": true,
+  "container_digest_or_binary_hash_required": true,
+  "engine": "bcftools",
+  "environment_lock_required": true,
+  "execution_backends": [
+    "native-executable",
+    "conda-lock",
+    "container",
+    "wsl2"
+  ],
+  "install_strategy": "native-or-conda-lock",
+  "installed_and_qualified": false,
+  "label": "BCFtools",
+  "licence_class": "open-source-or-provider-terms",
+  "manual_action_required": false,
+  "model_or_database_required": true,
+  "modules": [
+    "amr_surveillance",
+    "cancer_genomics_core",
+    "genome_editing_safety",
+    "pathogen_outbreak_core",
+    "pharmacogenomics",
+    "proteogenomics_neoantigen",
+    "rare_variant_family",
+    "structural_variant_repeat",
+    "virology_evolution"
+  ],
+  "package_hint": "Provision a version-pinned BCFtools executable and record its checksum.",
+  "runtime_self_test_required": true,
+  "schema": "biointel.step163.specialist-runtime-lock-contract.v1",
+  "scientific_smoke_test_required": true,
+  "version_probe_required": true
+}

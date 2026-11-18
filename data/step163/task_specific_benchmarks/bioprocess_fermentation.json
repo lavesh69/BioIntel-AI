@@ -1,0 +1,43 @@
+{
+  "benchmark_status": "specification-ready-data-required",
+  "development_dataset_must_be_non_synthetic": true,
+  "independent_test_dataset_required": true,
+  "locked_data_model_reference_versions_required": true,
+  "minimum_evidence_bundle": [
+    "immutable source-data checksums",
+    "training/validation/test partition manifest",
+    "per-sample predictions or module-level outputs",
+    "uncertainty intervals or confidence diagnostics",
+    "full parameter and environment manifest",
+    "expert reviewer sign-off"
+  ],
+  "module_key": "bioprocess_fermentation",
+  "module_title": "Bioprocess depth",
+  "prespecified_acceptance_thresholds_required": true,
+  "prospective_or_orthogonal_validation_required": true,
+  "release_eligible": false,
+  "required_data_formats": [
+    "CSV/TSV sensor time series"
+  ],
+  "required_failure_analyses": [
+    "missingness and malformed-input analysis",
+    "out-of-distribution or applicability-domain analysis",
+    "subgroup or biological-context analysis",
+    "calibration and uncertainty analysis",
+    "negative-control and leakage analysis",
+    "failed-case review with retained identifiers"
+  ],
+  "required_reference_assets": [
+    "Process units",
+    "Batch phase definitions",
+    "Golden batch"
+  ],
+  "required_validation_analyses": [
+    "Batch-specific time order",
+    "Unit consistency",
+    "Mass-balance assumptions",
+    "Control-limit review"
+  ],
+  "schema": "biointel.step163.task-specific-benchmark.v1",
+  "specification_sha256": "02eacc6b3d39c11174243d0eed181706c4d52492adf7204dc647e7b0af6deae4"
+}

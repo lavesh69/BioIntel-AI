@@ -1,0 +1,31 @@
+{
+  "accepted_formats": [
+    "BED/GFF/GTF",
+    "CSV site table"
+  ],
+  "external_release_requires_all_real_artifacts": true,
+  "module_key": "epitranscriptomics",
+  "module_title": "Epitranscriptomics depth",
+  "native_research_fallback_ready": true,
+  "optimization_controls": [
+    "Region indexes",
+    "Site-level caches",
+    "Bounded motif scans"
+  ],
+  "reference_asset_ids": [
+    "epitranscriptomics-01-transcript-annotation",
+    "epitranscriptomics-02-modification-motifs",
+    "epitranscriptomics-03-editing-database"
+  ],
+  "schema": "biointel.step164.module-operational-contract.v1",
+  "scientific_boundary": "RNA modification/editing signals require technology-specific controls and orthogonal validation.",
+  "software_owned_target": "10/10",
+  "specialist_claims_fail_closed": true,
+  "specialist_engines": [],
+  "validation_gates": [
+    "Strand awareness",
+    "Coverage support",
+    "Sequencing-error separation",
+    "Replicate validation"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "accepted_formats": [
+    "CSV/JSON/RDF-like edge tables"
+  ],
+  "external_release_requires_all_real_artifacts": true,
+  "module_key": "knowledge_graph_core",
+  "module_title": "Knowledge-graph depth",
+  "native_research_fallback_ready": true,
+  "optimization_controls": [
+    "Indexed graph search",
+    "Evidence caches",
+    "Bounded layouts"
+  ],
+  "reference_asset_ids": [
+    "knowledge_graph_core-01-ontology-releases",
+    "knowledge_graph_core-02-provider-snapshots",
+    "knowledge_graph_core-03-retraction-metadata"
+  ],
+  "schema": "biointel.step164.module-operational-contract.v1",
+  "scientific_boundary": "Graph paths do not establish causality and must preserve exact supporting evidence.",
+  "software_owned_target": "10/10",
+  "specialist_claims_fail_closed": true,
+  "specialist_engines": [],
+  "validation_gates": [
+    "Entity resolution",
+    "Claim-source traceability",
+    "Contradictory evidence",
+    "Temporal provenance"
+  ]
+}

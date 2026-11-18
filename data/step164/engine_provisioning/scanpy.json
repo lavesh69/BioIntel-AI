@@ -1,0 +1,47 @@
+{
+  "category": "Single-cell",
+  "claim_boundary": "A complete recipe is not an installed or scientifically qualified runtime. Installation, licence acceptance, weights, references and smoke-test evidence are verified independently.",
+  "engine": "scanpy",
+  "installation": {
+    "conda_channels": [
+      "conda-forge",
+      "bioconda"
+    ],
+    "conda_packages": [
+      "scanpy"
+    ],
+    "licence_acceptance_required": false,
+    "manual_distribution": false,
+    "pip_packages": [
+      "scanpy"
+    ],
+    "supported_backends": [
+      "micromamba-conda-lock",
+      "container",
+      "registered-native-installation"
+    ],
+    "version_constraint": ">=current-supported-release,<next-breaking-major"
+  },
+  "label": "Scanpy Python",
+  "manifest_sha256": "a566347a202c4fba2e950b10533c85c9480ca5e321a8838507eb8c05beb72da5",
+  "modules": [
+    "cell_atlas_mapping",
+    "single_cell_core",
+    "single_cell_trajectory",
+    "spatial_medicine_tme"
+  ],
+  "qualification": {
+    "executable_sha256_required": true,
+    "golden_fixture_required": true,
+    "model_weights_required": false,
+    "negative_control_required": true,
+    "reference_data_required": false,
+    "smoke_test": [
+      "C:\\Users\\lavesh dobriyal\\AppData\\Local\\BioIntelAI\\App\\Releases\\15.6.0-Step206\\.venv\\Scripts\\python.exe",
+      "-c",
+      "import scanpy; print(scanpy.__version__)"
+    ],
+    "version_capture_required": true
+  },
+  "schema": "biointel.step164.engine-provisioning-manifest.v1"
+}

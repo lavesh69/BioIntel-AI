@@ -1,0 +1,56 @@
+{
+  "accepted_native_formats": [
+    "CSV/TSV sensor time series"
+  ],
+  "claim_policy": {
+    "demo_result_label_required": true,
+    "expert_review_required_for_release": true,
+    "external_validation_required_for_release": true,
+    "limitations_required": true,
+    "reference_result_label_required": true,
+    "uncertainty_disclosure_required": true
+  },
+  "contract_sha256": "5b1628c62838e5a4a5e0f88cd11f27856d30d136d918d0eba4c6b583dcd8a367",
+  "module_key": "bioprocess_fermentation",
+  "module_title": "Bioprocess depth",
+  "native_fallback_policy": {
+    "available": true,
+    "confirmatory_claims_allowed": false,
+    "label": "BioIntel deterministic research fallback",
+    "may_replace_specialist_engine": false
+  },
+  "optimization_controls": [
+    "Chunked time-series processing",
+    "Downsampled live plots",
+    "Batch caches"
+  ],
+  "quality_dimensions": {
+    "bounded_resource_execution": true,
+    "complete_result_export": true,
+    "crash_loop_protection": true,
+    "deterministic_native_execution": true,
+    "external_release_fail_closed": true,
+    "input_integrity": true,
+    "model_authenticity_guard": true,
+    "reference_lifecycle_contract": true,
+    "reproducibility_signature": true,
+    "specialist_runtime_adapter": true
+  },
+  "required_production_references": [
+    "Process units",
+    "Batch phase definitions",
+    "Golden batch"
+  ],
+  "required_specialist_engines": [
+    "biointel_native::bioprocess_fermentation"
+  ],
+  "schema": "biointel.step163.module-excellence-contract.v1",
+  "scientific_boundary": "Process recommendations require controlled experiments and approved quality systems.",
+  "software_owned_target": "10/10",
+  "validation_gates": [
+    "Batch-specific time order",
+    "Unit consistency",
+    "Mass-balance assumptions",
+    "Control-limit review"
+  ]
+}

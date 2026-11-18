@@ -1,0 +1,42 @@
+{
+  "completion_fields": {
+    "independent_validation": false,
+    "prospective_validation": false,
+    "protocol_version": true,
+    "reviewer_approved": false,
+    "source_checksums": false
+  },
+  "external_evidence_attached": false,
+  "intended_use_boundary": "Reference data must be licensed, versioned and scientifically suitable for the analysis.",
+  "module_key": "reference_lifecycle_v2",
+  "module_title": "Reference lifecycle depth",
+  "negative_controls_required": true,
+  "prospective_validation_required": true,
+  "protocol_sha256": "664ce9c14145ece9b0bf7ced8afb9e7312b9523cffc2f3f90b9c29ed280155e4",
+  "protocol_status": "ready-for-external-execution",
+  "protocol_version": "1.0.0",
+  "release_eligible": false,
+  "required_reference_assets": [
+    "Provider release metadata",
+    "Licence terms",
+    "Checksums"
+  ],
+  "required_specialist_engines": [],
+  "required_validation_gates": [
+    "Checksum verification",
+    "Version activation",
+    "Rollback",
+    "Compatibility"
+  ],
+  "reviewer_signoff_required": true,
+  "schema": "biointel.step161.external-validation-protocol.v1",
+  "source_checksums_required": true,
+  "study_design_requirements": [
+    "Independent dataset or site not used during development",
+    "Prespecified endpoints and acceptance thresholds",
+    "Locked software, model and reference versions",
+    "Source-data checksums and immutable analysis manifest",
+    "Blinded or independently adjudicated review where applicable",
+    "Subgroup, calibration, uncertainty and failure analysis"
+  ]
+}

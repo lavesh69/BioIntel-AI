@@ -1,0 +1,36 @@
+{
+  "accepted_formats": [
+    "FASTQ/FASTA",
+    "CSV/TSV surveillance table"
+  ],
+  "external_release_requires_all_real_artifacts": true,
+  "module_key": "one_health_environmental",
+  "module_title": "One Health depth",
+  "native_research_fallback_ready": true,
+  "optimization_controls": [
+    "Per-sample jobs",
+    "Database pinning",
+    "Incremental surveillance"
+  ],
+  "reference_asset_ids": [
+    "one_health_environmental-01-taxonomy-database",
+    "one_health_environmental-02-amr-database",
+    "one_health_environmental-03-geographic-metadata"
+  ],
+  "schema": "biointel.step164.module-operational-contract.v1",
+  "scientific_boundary": "Surveillance signals require epidemiological context, confirmatory testing and public-health review.",
+  "software_owned_target": "10/10",
+  "specialist_claims_fail_closed": true,
+  "specialist_engines": [
+    "kraken2",
+    "bracken",
+    "humann",
+    "minimap2"
+  ],
+  "validation_gates": [
+    "Source harmonization",
+    "Contamination controls",
+    "Temporal/geographic uncertainty",
+    "AMR evidence"
+  ]
+}

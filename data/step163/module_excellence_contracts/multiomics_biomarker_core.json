@@ -1,0 +1,58 @@
+{
+  "accepted_native_formats": [
+    "CSV/TSV",
+    "H5AD",
+    "MTX"
+  ],
+  "claim_policy": {
+    "demo_result_label_required": true,
+    "expert_review_required_for_release": true,
+    "external_validation_required_for_release": true,
+    "limitations_required": true,
+    "reference_result_label_required": true,
+    "uncertainty_disclosure_required": true
+  },
+  "contract_sha256": "8347720d649a03820962bd5f29757b91d0f0fc182525f22f24fb3969b7649dea",
+  "module_key": "multiomics_biomarker_core",
+  "module_title": "Biomarker-discovery depth",
+  "native_fallback_policy": {
+    "available": true,
+    "confirmatory_claims_allowed": false,
+    "label": "BioIntel deterministic research fallback",
+    "may_replace_specialist_engine": false
+  },
+  "optimization_controls": [
+    "Sparse matrices",
+    "Cached folds",
+    "Background resampling"
+  ],
+  "quality_dimensions": {
+    "bounded_resource_execution": true,
+    "complete_result_export": true,
+    "crash_loop_protection": true,
+    "deterministic_native_execution": true,
+    "external_release_fail_closed": true,
+    "input_integrity": true,
+    "model_authenticity_guard": true,
+    "reference_lifecycle_contract": true,
+    "reproducibility_signature": true,
+    "specialist_runtime_adapter": true
+  },
+  "required_production_references": [
+    "Feature maps",
+    "External validation cohort",
+    "Analysis protocol"
+  ],
+  "required_specialist_engines": [
+    "biointel_native::multiomics_biomarker_core"
+  ],
+  "schema": "biointel.step163.module-excellence-contract.v1",
+  "scientific_boundary": "Exploratory biomarker panels require independent validation and locked analysis plans.",
+  "software_owned_target": "10/10",
+  "validation_gates": [
+    "Nested validation",
+    "Leakage audit",
+    "Calibration",
+    "Panel stability"
+  ]
+}

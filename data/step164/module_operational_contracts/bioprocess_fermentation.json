@@ -1,0 +1,30 @@
+{
+  "accepted_formats": [
+    "CSV/TSV sensor time series"
+  ],
+  "external_release_requires_all_real_artifacts": true,
+  "module_key": "bioprocess_fermentation",
+  "module_title": "Bioprocess depth",
+  "native_research_fallback_ready": true,
+  "optimization_controls": [
+    "Chunked time-series processing",
+    "Downsampled live plots",
+    "Batch caches"
+  ],
+  "reference_asset_ids": [
+    "bioprocess_fermentation-01-process-units",
+    "bioprocess_fermentation-02-batch-phase-definitions",
+    "bioprocess_fermentation-03-golden-batch"
+  ],
+  "schema": "biointel.step164.module-operational-contract.v1",
+  "scientific_boundary": "Process recommendations require controlled experiments and approved quality systems.",
+  "software_owned_target": "10/10",
+  "specialist_claims_fail_closed": true,
+  "specialist_engines": [],
+  "validation_gates": [
+    "Batch-specific time order",
+    "Unit consistency",
+    "Mass-balance assumptions",
+    "Control-limit review"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "category": "Immunoinformatics",
+  "claim_boundary": "A complete recipe is not an installed or scientifically qualified runtime. Installation, licence acceptance, weights, references and smoke-test evidence are verified independently.",
+  "engine": "netmhciipan",
+  "installation": {
+    "conda_channels": [
+      "conda-forge",
+      "bioconda"
+    ],
+    "conda_packages": [],
+    "licence_acceptance_required": true,
+    "manual_distribution": true,
+    "pip_packages": [],
+    "supported_backends": [
+      "registered-provider-installation",
+      "protected-native-workspace"
+    ],
+    "version_constraint": ">=current-supported-release,<next-breaking-major"
+  },
+  "label": "NetMHCIIpan",
+  "manifest_sha256": "788fab771abd390d437d893931080ced0128e0c05382b308c5cc173db2ed6198",
+  "modules": [
+    "immunoinformatics_vaccine"
+  ],
+  "qualification": {
+    "executable_sha256_required": true,
+    "golden_fixture_required": true,
+    "model_weights_required": false,
+    "negative_control_required": true,
+    "reference_data_required": true,
+    "smoke_test": [
+      "netMHCIIpan",
+      "--version"
+    ],
+    "version_capture_required": true
+  },
+  "schema": "biointel.step164.engine-provisioning-manifest.v1"
+}

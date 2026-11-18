@@ -1,0 +1,38 @@
+{
+  "accepted_formats": [
+    "bedMethyl/bedGraph",
+    "BAM/CRAM through adapter",
+    "CSV/TSV"
+  ],
+  "external_release_requires_all_real_artifacts": true,
+  "module_key": "long_read_epigenome",
+  "module_title": "Long-read epigenome depth",
+  "native_research_fallback_ready": true,
+  "optimization_controls": [
+    "Indexed region queries",
+    "Chunked methylation tables",
+    "Haplotype caches"
+  ],
+  "reference_asset_ids": [
+    "long_read_epigenome-01-reference-genome",
+    "long_read_epigenome-02-modification-model-release",
+    "long_read_epigenome-03-imprinting-dmr-catalogue",
+    "long_read_epigenome-04-genome-build"
+  ],
+  "schema": "biointel.step164.module-operational-contract.v1",
+  "scientific_boundary": "Long-read methylation and imprinting findings depend on model, coverage, phasing and orthogonal confirmation.",
+  "software_owned_target": "10/10",
+  "specialist_claims_fail_closed": true,
+  "specialist_engines": [
+    "dorado",
+    "modkit",
+    "samtools",
+    "whatshap"
+  ],
+  "validation_gates": [
+    "Coverage",
+    "Phasing",
+    "Condition replication",
+    "Orthogonal methylation validation"
+  ]
+}

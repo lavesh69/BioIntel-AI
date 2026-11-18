@@ -1,0 +1,57 @@
+{
+  "accepted_native_formats": [
+    "CSV/TSV",
+    "H5AD"
+  ],
+  "claim_policy": {
+    "demo_result_label_required": true,
+    "expert_review_required_for_release": true,
+    "external_validation_required_for_release": true,
+    "limitations_required": true,
+    "reference_result_label_required": true,
+    "uncertainty_disclosure_required": true
+  },
+  "contract_sha256": "9555d278a530d412de2eadeb006a83919ff467385da490e0a91e842b13c28263",
+  "module_key": "longitudinal_multiomics",
+  "module_title": "Longitudinal multi-omics depth",
+  "native_fallback_policy": {
+    "available": true,
+    "confirmatory_claims_allowed": false,
+    "label": "BioIntel deterministic research fallback",
+    "may_replace_specialist_engine": false
+  },
+  "optimization_controls": [
+    "Long-format storage",
+    "Subject caches",
+    "Chunked mixed-model inputs"
+  ],
+  "quality_dimensions": {
+    "bounded_resource_execution": true,
+    "complete_result_export": true,
+    "crash_loop_protection": true,
+    "deterministic_native_execution": true,
+    "external_release_fail_closed": true,
+    "input_integrity": true,
+    "model_authenticity_guard": true,
+    "reference_lifecycle_contract": true,
+    "reproducibility_signature": true,
+    "specialist_runtime_adapter": true
+  },
+  "required_production_references": [
+    "Visit schedule",
+    "Subject metadata",
+    "Feature maps"
+  ],
+  "required_specialist_engines": [
+    "biointel_native::longitudinal_multiomics"
+  ],
+  "schema": "biointel.step163.module-excellence-contract.v1",
+  "scientific_boundary": "Longitudinal inference must account for repeated measures and informative missingness.",
+  "software_owned_target": "10/10",
+  "validation_gates": [
+    "Within-subject modelling",
+    "Unequal visits",
+    "Missingness",
+    "Batch/time confounding"
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "accepted_native_formats": [
+    "CSV/TSV de-identified cohort"
+  ],
+  "claim_policy": {
+    "demo_result_label_required": true,
+    "expert_review_required_for_release": true,
+    "external_validation_required_for_release": true,
+    "limitations_required": true,
+    "reference_result_label_required": true,
+    "uncertainty_disclosure_required": true
+  },
+  "contract_sha256": "f6ef320203b3c32af5e47d4695960eed75db2c8e34340b74cc05aa0becf43692",
+  "module_key": "clinical_biomarker_survival",
+  "module_title": "Clinical biomarker and survival depth",
+  "native_fallback_policy": {
+    "available": true,
+    "confirmatory_claims_allowed": false,
+    "label": "BioIntel deterministic research fallback",
+    "may_replace_specialist_engine": false
+  },
+  "optimization_controls": [
+    "Cohort caches",
+    "Background resampling",
+    "De-identified exports"
+  ],
+  "quality_dimensions": {
+    "bounded_resource_execution": true,
+    "complete_result_export": true,
+    "crash_loop_protection": true,
+    "deterministic_native_execution": true,
+    "external_release_fail_closed": true,
+    "input_integrity": true,
+    "model_authenticity_guard": true,
+    "reference_lifecycle_contract": true,
+    "reproducibility_signature": true,
+    "specialist_runtime_adapter": true
+  },
+  "required_production_references": [
+    "Protocol",
+    "Endpoint definitions",
+    "Prespecified cut-off",
+    "External validation cohort"
+  ],
+  "required_specialist_engines": [
+    "biointel_native::clinical_biomarker_survival"
+  ],
+  "schema": "biointel.step163.module-excellence-contract.v1",
+  "scientific_boundary": "Exploratory biomarker strata require prespecification and independent clinical validation.",
+  "software_owned_target": "10/10",
+  "validation_gates": [
+    "Missing-data plan",
+    "Proportional-hazards checks",
+    "Calibration",
+    "Site heterogeneity",
+    "Independent validation"
+  ]
+}

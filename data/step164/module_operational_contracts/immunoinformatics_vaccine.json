@@ -1,0 +1,34 @@
+{
+  "accepted_formats": [
+    "FASTA",
+    "CSV/TSV peptide table"
+  ],
+  "external_release_requires_all_real_artifacts": true,
+  "module_key": "immunoinformatics_vaccine",
+  "module_title": "Immunoinformatics depth",
+  "native_research_fallback_ready": true,
+  "optimization_controls": [
+    "Batch peptide generation",
+    "Deduplicated peptide cache",
+    "Allele-parallel execution"
+  ],
+  "reference_asset_ids": [
+    "immunoinformatics_vaccine-01-hla-allele-frequencies",
+    "immunoinformatics_vaccine-02-pathogen-proteome",
+    "immunoinformatics_vaccine-03-allergen-toxin-references"
+  ],
+  "schema": "biointel.step164.module-operational-contract.v1",
+  "scientific_boundary": "Predicted epitopes are research candidates and require experimental immunogenicity and safety validation.",
+  "software_owned_target": "10/10",
+  "specialist_claims_fail_closed": true,
+  "specialist_engines": [
+    "netmhcpan",
+    "netmhciipan"
+  ],
+  "validation_gates": [
+    "Allele coverage",
+    "Conservancy",
+    "Safety filters",
+    "Experimental immunogenicity plan"
+  ]
+}

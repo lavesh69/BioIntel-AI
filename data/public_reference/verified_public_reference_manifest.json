@@ -1,0 +1,19 @@
+{
+  "generated_at_utc": "2026-07-04T20:42:20+00:00",
+  "providers": [
+    "NCBI Gene",
+    "RCSB PDB",
+    "UCI Machine Learning Repository",
+    "UniProt"
+  ],
+  "public_dataset_count": 1,
+  "public_dataset_records": 569,
+  "record_count": 60,
+  "records_sha256": "f0f8c2f39aeb8864048a519437b977824380264835a6f1393b2114e5036c5af8",
+  "scientific_boundary": "Identifier-level public reference metadata only; not a training or validation dataset.",
+  "source_documentation": {
+    "NCBI": "https://www.ncbi.nlm.nih.gov/home/develop/api/",
+    "RCSB PDB": "https://www.rcsb.org/docs/programmatic-access/web-apis-overview",
+    "UniProt": "https://www.uniprot.org/api-documentation"
+  }
+}

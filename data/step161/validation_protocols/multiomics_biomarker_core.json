@@ -1,0 +1,42 @@
+{
+  "completion_fields": {
+    "independent_validation": false,
+    "prospective_validation": false,
+    "protocol_version": true,
+    "reviewer_approved": false,
+    "source_checksums": false
+  },
+  "external_evidence_attached": false,
+  "intended_use_boundary": "Exploratory biomarker panels require independent validation and locked analysis plans.",
+  "module_key": "multiomics_biomarker_core",
+  "module_title": "Biomarker-discovery depth",
+  "negative_controls_required": true,
+  "prospective_validation_required": true,
+  "protocol_sha256": "050d6e47259e3e1e55441019932f175042e96dadab747e597fcd3e8e9b5eda89",
+  "protocol_status": "ready-for-external-execution",
+  "protocol_version": "1.0.0",
+  "release_eligible": false,
+  "required_reference_assets": [
+    "Feature maps",
+    "External validation cohort",
+    "Analysis protocol"
+  ],
+  "required_specialist_engines": [],
+  "required_validation_gates": [
+    "Nested validation",
+    "Leakage audit",
+    "Calibration",
+    "Panel stability"
+  ],
+  "reviewer_signoff_required": true,
+  "schema": "biointel.step161.external-validation-protocol.v1",
+  "source_checksums_required": true,
+  "study_design_requirements": [
+    "Independent dataset or site not used during development",
+    "Prespecified endpoints and acceptance thresholds",
+    "Locked software, model and reference versions",
+    "Source-data checksums and immutable analysis manifest",
+    "Blinded or independently adjudicated review where applicable",
+    "Subgroup, calibration, uncertainty and failure analysis"
+  ]
+}

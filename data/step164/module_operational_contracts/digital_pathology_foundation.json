@@ -1,0 +1,37 @@
+{
+  "accepted_formats": [
+    "SVS/NDPI/MRXS through adapter",
+    "OME-TIFF/TIFF",
+    "CSV/TSV tile table"
+  ],
+  "external_release_requires_all_real_artifacts": true,
+  "module_key": "digital_pathology_foundation",
+  "module_title": "Digital pathology foundation-model depth",
+  "native_research_fallback_ready": true,
+  "optimization_controls": [
+    "Tile streaming",
+    "Embedding cache",
+    "GPU queues",
+    "ROI-level loading"
+  ],
+  "reference_asset_ids": [
+    "digital_pathology_foundation-01-scanner-site-qualification",
+    "digital_pathology_foundation-02-pathology-model-card",
+    "digital_pathology_foundation-03-ground-truth-annotations",
+    "digital_pathology_foundation-04-tissue-ontology"
+  ],
+  "schema": "biointel.step164.module-operational-contract.v1",
+  "scientific_boundary": "Foundation-model pathology outputs require validated models, scanner/site qualification and pathologist review.",
+  "software_owned_target": "10/10",
+  "specialist_claims_fail_closed": true,
+  "specialist_engines": [
+    "openslide",
+    "cellpose"
+  ],
+  "validation_gates": [
+    "Tissue coverage",
+    "Scanner/site drift",
+    "OOD/uncertainty",
+    "Pathologist review"
+  ]
+}

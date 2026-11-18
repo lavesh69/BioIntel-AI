@@ -1,0 +1,19 @@
+{
+  "approximate_reads_per_cell": 69000,
+  "assay": "Chromium Single Cell 3' gene expression",
+  "biospecimen": "Peripheral blood mononuclear cells from a healthy donor",
+  "cells_detected": 2700,
+  "dataset_id": "10x_pbmc3k",
+  "local_payload": "Official study manifest and reproducible QC reference; the 7.3 MB matrix archive is referenced but not duplicated in this package.",
+  "matrix_dimensions_reference": {
+    "cells": 2700,
+    "genes": 32738
+  },
+  "official_dataset_page": "https://www.10xgenomics.com/datasets/3-k-pbm-cs-from-a-healthy-donor-1-standard-1-1-0",
+  "organism": "Homo sapiens",
+  "provider": "10x Genomics",
+  "public_matrix_url": "https://cf.10xgenomics.com/samples/cell-exp/1.1.0/pbmc3k/pbmc3k_filtered_gene_bc_matrices.tar.gz",
+  "scientific_boundary": "Real public single-cell study metadata; not a multi-donor cohort or clinical validation study.",
+  "sequencer": "Illumina NextSeq 500",
+  "title": "3k PBMCs from a Healthy Donor"
+}

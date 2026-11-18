@@ -1,0 +1,11 @@
+task,phase,duration_days,predecessor,owner,progress,risk
+Protocol,Planning,30,,PI,100,2
+Ethics submission,Approvals,45,Protocol,Regulatory,60,4
+Database build,Setup,35,Protocol,Data Manager,70,3
+Site selection,Setup,28,Protocol,Operations,80,2
+Site activation,Setup,35,Ethics submission;Site selection,Operations,30,4
+Recruitment,Execution,180,Site activation,Sites,0,5
+Sample analysis,Execution,120,Recruitment,Laboratory,0,4
+Database lock,Closeout,21,Sample analysis,Data Manager,0,3
+Statistical analysis,Analysis,30,Database lock,Statistician,0,3
+Final report,Reporting,25,Statistical analysis,Medical Writer,0,2

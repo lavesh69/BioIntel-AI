@@ -1,0 +1,56 @@
+{
+  "accepted_native_formats": [
+    "CSV/TSV patient table"
+  ],
+  "claim_policy": {
+    "demo_result_label_required": true,
+    "expert_review_required_for_release": true,
+    "external_validation_required_for_release": true,
+    "limitations_required": true,
+    "reference_result_label_required": true,
+    "uncertainty_disclosure_required": true
+  },
+  "contract_sha256": "5449210637b3468f63a67b900cf29cfaa9a4c2024e2320f434b19ea5b4d0968d",
+  "module_key": "clinical_trial_biomarker",
+  "module_title": "Clinical biomarker depth",
+  "native_fallback_policy": {
+    "available": true,
+    "confirmatory_claims_allowed": false,
+    "label": "BioIntel deterministic research fallback",
+    "may_replace_specialist_engine": false
+  },
+  "optimization_controls": [
+    "Cohort-level caching",
+    "Lazy survival curves",
+    "De-identified exports"
+  ],
+  "quality_dimensions": {
+    "bounded_resource_execution": true,
+    "complete_result_export": true,
+    "crash_loop_protection": true,
+    "deterministic_native_execution": true,
+    "external_release_fail_closed": true,
+    "input_integrity": true,
+    "model_authenticity_guard": true,
+    "reference_lifecycle_contract": true,
+    "reproducibility_signature": true,
+    "specialist_runtime_adapter": true
+  },
+  "required_production_references": [
+    "Protocol",
+    "Data dictionary",
+    "Endpoint definitions"
+  ],
+  "required_specialist_engines": [
+    "biointel_native::clinical_trial_biomarker"
+  ],
+  "schema": "biointel.step163.module-excellence-contract.v1",
+  "scientific_boundary": "Exploratory subgroups and cut-offs require prespecification and independent validation.",
+  "software_owned_target": "10/10",
+  "validation_gates": [
+    "Prespecified cut-offs",
+    "Missing-data plan",
+    "Multivariable adjustment",
+    "External validation"
+  ]
+}

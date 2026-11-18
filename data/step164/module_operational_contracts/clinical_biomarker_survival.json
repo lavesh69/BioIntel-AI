@@ -1,0 +1,32 @@
+{
+  "accepted_formats": [
+    "CSV/TSV de-identified cohort"
+  ],
+  "external_release_requires_all_real_artifacts": true,
+  "module_key": "clinical_biomarker_survival",
+  "module_title": "Clinical biomarker and survival depth",
+  "native_research_fallback_ready": true,
+  "optimization_controls": [
+    "Cohort caches",
+    "Background resampling",
+    "De-identified exports"
+  ],
+  "reference_asset_ids": [
+    "clinical_biomarker_survival-01-protocol",
+    "clinical_biomarker_survival-02-endpoint-definitions",
+    "clinical_biomarker_survival-03-prespecified-cut-off",
+    "clinical_biomarker_survival-04-external-validation-cohort"
+  ],
+  "schema": "biointel.step164.module-operational-contract.v1",
+  "scientific_boundary": "Exploratory biomarker strata require prespecification and independent clinical validation.",
+  "software_owned_target": "10/10",
+  "specialist_claims_fail_closed": true,
+  "specialist_engines": [],
+  "validation_gates": [
+    "Missing-data plan",
+    "Proportional-hazards checks",
+    "Calibration",
+    "Site heterogeneity",
+    "Independent validation"
+  ]
+}

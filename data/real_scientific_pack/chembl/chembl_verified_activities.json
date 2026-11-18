@@ -1,0 +1,28 @@
+{
+  "provider": "chembl",
+  "resource_type": "bioactivity_reference_seed",
+  "source_url": "https://www.ebi.ac.uk/chembl/api/data/activity.json?assay_type=B&only=molecule_chembl_id,pchembl_value&pchembl_value__gte=5&target_chembl_id__in=CHEMBL5552,CHEMBL1075195",
+  "retrieved_at": "2026-07-05T00:00:00Z",
+  "release": "live-api-snapshot-2026-07-05",
+  "licence": "ChEMBL terms; verify current terms before redistribution",
+  "query_scope": {"target_chembl_id__in": ["CHEMBL5552", "CHEMBL1075195"], "assay_type": "B", "pchembl_value__gte": 5},
+  "records": [
+    {"provider_record_id":"seed-001","entity_type":"bioactivity","molecule_id":"CHEMBL574738","value":5.92,"unit":"pChEMBL","assay_type":"binding","target_id":"QUERY_SCOPE:CHEMBL5552|CHEMBL1075195","source_url":"official_query"},
+    {"provider_record_id":"seed-002","entity_type":"bioactivity","molecule_id":"CHEMBL522892","value":5.92,"unit":"pChEMBL","assay_type":"binding","target_id":"QUERY_SCOPE:CHEMBL5552|CHEMBL1075195","source_url":"official_query"},
+    {"provider_record_id":"seed-003","entity_type":"bioactivity","molecule_id":"CHEMBL607707","value":5.47,"unit":"pChEMBL","assay_type":"binding","target_id":"QUERY_SCOPE:CHEMBL5552|CHEMBL1075195","source_url":"official_query"},
+    {"provider_record_id":"seed-004","entity_type":"bioactivity","molecule_id":"CHEMBL191003","value":6.44,"unit":"pChEMBL","assay_type":"binding","target_id":"QUERY_SCOPE:CHEMBL5552|CHEMBL1075195","source_url":"official_query"},
+    {"provider_record_id":"seed-005","entity_type":"bioactivity","molecule_id":"CHEMBL608533","value":5.75,"unit":"pChEMBL","assay_type":"binding","target_id":"QUERY_SCOPE:CHEMBL5552|CHEMBL1075195","source_url":"official_query"},
+    {"provider_record_id":"seed-006","entity_type":"bioactivity","molecule_id":"CHEMBL388978","value":6.96,"unit":"pChEMBL","assay_type":"binding","target_id":"QUERY_SCOPE:CHEMBL5552|CHEMBL1075195","source_url":"official_query"},
+    {"provider_record_id":"seed-007","entity_type":"bioactivity","molecule_id":"CHEMBL1721885","value":6.44,"unit":"pChEMBL","assay_type":"binding","target_id":"QUERY_SCOPE:CHEMBL5552|CHEMBL1075195","source_url":"official_query"},
+    {"provider_record_id":"seed-008","entity_type":"bioactivity","molecule_id":"CHEMBL535","value":6.54,"unit":"pChEMBL","assay_type":"binding","target_id":"QUERY_SCOPE:CHEMBL5552|CHEMBL1075195","source_url":"official_query"},
+    {"provider_record_id":"seed-009","entity_type":"bioactivity","molecule_id":"CHEMBL572878","value":5.32,"unit":"pChEMBL","assay_type":"binding","target_id":"QUERY_SCOPE:CHEMBL5552|CHEMBL1075195","source_url":"official_query"},
+    {"provider_record_id":"seed-010","entity_type":"bioactivity","molecule_id":"CHEMBL603469","value":7.01,"unit":"pChEMBL","assay_type":"binding","target_id":"QUERY_SCOPE:CHEMBL5552|CHEMBL1075195","source_url":"official_query"},
+    {"provider_record_id":"seed-011","entity_type":"bioactivity","molecule_id":"CHEMBL180022","value":7.92,"unit":"pChEMBL","assay_type":"binding","target_id":"QUERY_SCOPE:CHEMBL5552|CHEMBL1075195","source_url":"official_query"},
+    {"provider_record_id":"seed-012","entity_type":"bioactivity","molecule_id":"CHEMBL386051","value":5.57,"unit":"pChEMBL","assay_type":"binding","target_id":"QUERY_SCOPE:CHEMBL5552|CHEMBL1075195","source_url":"official_query"},
+    {"provider_record_id":"seed-013","entity_type":"bioactivity","molecule_id":"CHEMBL386051","value":6.36,"unit":"pChEMBL","assay_type":"binding","target_id":"QUERY_SCOPE:CHEMBL5552|CHEMBL1075195","source_url":"official_query"},
+    {"provider_record_id":"seed-014","entity_type":"bioactivity","molecule_id":"CHEMBL491473","value":5.23,"unit":"pChEMBL","assay_type":"binding","target_id":"QUERY_SCOPE:CHEMBL5552|CHEMBL1075195","source_url":"official_query"},
+    {"provider_record_id":"seed-015","entity_type":"bioactivity","molecule_id":"CHEMBL450786","value":5.92,"unit":"pChEMBL","assay_type":"binding","target_id":"QUERY_SCOPE:CHEMBL5552|CHEMBL1075195","source_url":"official_query"},
+    {"provider_record_id":"CHEMBL998-CHEMBL1909156-Ki","entity_type":"bioactivity","molecule_id":"CHEMBL998","target_id":"CHEMBL231","assay_type":"Ki","value":20,"unit":"nM","relation":"=","organism":"Homo sapiens","taxonomy_id":9606,"source_url":"https://www.ebi.ac.uk/chembl/api/data/activity?molecule_chembl_id=CHEMBL998&assay_chembl_id=CHEMBL1909156"},
+    {"provider_record_id":"CHEMBL998-CHEMBL1909156-IC50","entity_type":"bioactivity","molecule_id":"CHEMBL998","target_id":"CHEMBL231","assay_type":"IC50","value":170,"unit":"nM","relation":"=","organism":"Homo sapiens","taxonomy_id":9606,"source_url":"https://www.ebi.ac.uk/chembl/api/data/activity?molecule_chembl_id=CHEMBL998&assay_chembl_id=CHEMBL1909156"}
+  ]
+}

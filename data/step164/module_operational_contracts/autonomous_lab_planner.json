@@ -1,0 +1,33 @@
+{
+  "accepted_formats": [
+    "CSV/TSV plan",
+    "JSON protocol draft"
+  ],
+  "external_release_requires_all_real_artifacts": true,
+  "module_key": "autonomous_lab_planner",
+  "module_title": "Laboratory experiment-planning depth",
+  "native_research_fallback_ready": true,
+  "optimization_controls": [
+    "Template reuse",
+    "Cost cache",
+    "Schedule-aware planning"
+  ],
+  "reference_asset_ids": [
+    "autonomous_lab_planner-01-biosafety-policy",
+    "autonomous_lab_planner-02-approved-protocols",
+    "autonomous_lab_planner-03-cost-catalogue",
+    "autonomous_lab_planner-04-instrument-availability"
+  ],
+  "schema": "biointel.step164.module-operational-contract.v1",
+  "scientific_boundary": "The planner cannot authorise or autonomously execute experiments; human scientific and safety approval is mandatory.",
+  "software_owned_target": "10/10",
+  "specialist_claims_fail_closed": true,
+  "specialist_engines": [],
+  "validation_gates": [
+    "Controls",
+    "Replication",
+    "Randomization",
+    "Resource feasibility",
+    "Human approval"
+  ]
+}

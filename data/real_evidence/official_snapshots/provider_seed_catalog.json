@@ -1,0 +1,152 @@
+{
+  "catalog_version": 1,
+  "created_at": "2026-07-05T00:00:00Z",
+  "records": [
+    {
+      "entity_type": "protein_reference",
+      "gene": "HBA1",
+      "organism": "Homo sapiens",
+      "provider": "uniprot",
+      "provider_record_id": "P69905",
+      "source_url": "https://www.uniprot.org/uniprotkb/P69905/entry",
+      "target_id": "P69905",
+      "taxonomy_id": 9606
+    },
+    {
+      "entity_type": "protein_reference",
+      "gene": "TP53",
+      "organism": "Homo sapiens",
+      "provider": "uniprot",
+      "provider_record_id": "P04637",
+      "source_url": "https://www.uniprot.org/uniprotkb/P04637/entry",
+      "target_id": "P04637",
+      "taxonomy_id": 9606
+    },
+    {
+      "entity_type": "structure_reference",
+      "organism": "Crambe hispanica",
+      "provider": "rcsb",
+      "provider_record_id": "1CRN",
+      "source_url": "https://data.rcsb.org/rest/v1/core/entry/1CRN",
+      "structure_id": "1CRN"
+    },
+    {
+      "entity_type": "provider_reference",
+      "provider": "chembl",
+      "provider_record_id": "CHEMBL-API",
+      "source_url": "https://www.ebi.ac.uk/chembl/api/data/docs"
+    },
+    {
+      "entity_type": "provider_reference",
+      "provider": "pubchem",
+      "provider_record_id": "PUBCHEM-PUG",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/docs/pug-rest"
+    },
+    {
+      "entity_type": "provider_reference",
+      "provider": "bindingdb",
+      "provider_record_id": "BINDINGDB",
+      "source_url": "https://www.bindingdb.org"
+    },
+    {
+      "entity_type": "provider_reference",
+      "provider": "clinvar",
+      "provider_record_id": "CLINVAR",
+      "source_url": "https://www.ncbi.nlm.nih.gov/clinvar/"
+    },
+    {
+      "entity_type": "provider_reference",
+      "provider": "geo",
+      "provider_record_id": "GEO",
+      "source_url": "https://www.ncbi.nlm.nih.gov/geo/"
+    },
+    {
+      "entity_type": "protein_reference",
+      "gene": "Tp53",
+      "organism": "Mus musculus",
+      "provider": "uniprot",
+      "provider_record_id": "P02340",
+      "reviewed": true,
+      "source_url": "https://www.uniprot.org/uniprotkb/P02340/entry",
+      "target_id": "P02340",
+      "taxonomy_id": 10090
+    },
+    {
+      "entity_type": "protein_reference",
+      "gene": "Tp53",
+      "organism": "Rattus norvegicus",
+      "provider": "uniprot",
+      "provider_record_id": "P10361",
+      "reviewed": true,
+      "source_url": "https://www.uniprot.org/uniprotkb/P10361/entry",
+      "target_id": "P10361",
+      "taxonomy_id": 10116
+    },
+    {
+      "entity_type": "protein_reference",
+      "gene": "tp53",
+      "organism": "Danio rerio",
+      "provider": "uniprot",
+      "provider_record_id": "P79734",
+      "reviewed": true,
+      "source_url": "https://www.uniprot.org/uniprotkb/P79734/entry",
+      "target_id": "P79734",
+      "taxonomy_id": 7955
+    },
+    {
+      "entity_type": "protein_reference",
+      "gene": "ACT1",
+      "organism": "Saccharomyces cerevisiae",
+      "provider": "uniprot",
+      "provider_record_id": "P60010",
+      "reviewed": true,
+      "source_url": "https://www.uniprot.org/uniprotkb/P60010/entry",
+      "target_id": "P60010",
+      "taxonomy_id": 559292
+    },
+    {
+      "entity_type": "protein_reference",
+      "gene": "lacZ",
+      "organism": "Escherichia coli",
+      "provider": "uniprot",
+      "provider_record_id": "P00722",
+      "reviewed": true,
+      "source_url": "https://www.uniprot.org/uniprotkb/P00722/entry",
+      "target_id": "P00722",
+      "taxonomy_id": 83333
+    },
+    {
+      "entity_type": "protein_reference",
+      "gene": "rbcL",
+      "organism": "Arabidopsis thaliana",
+      "provider": "uniprot",
+      "provider_record_id": "O03042",
+      "reviewed": true,
+      "source_url": "https://www.uniprot.org/uniprotkb/O03042/entry",
+      "target_id": "O03042",
+      "taxonomy_id": 3702
+    },
+    {
+      "entity_type": "protein_reference",
+      "gene": "dhfr-ts",
+      "organism": "Plasmodium falciparum",
+      "provider": "uniprot",
+      "provider_record_id": "P13922",
+      "reviewed": true,
+      "source_url": "https://www.uniprot.org/uniprotkb/P13922/entry",
+      "target_id": "P13922",
+      "taxonomy_id": 5833
+    },
+    {
+      "entity_type": "protein_reference",
+      "gene": "S",
+      "organism": "Severe acute respiratory syndrome coronavirus 2",
+      "provider": "uniprot",
+      "provider_record_id": "P0DTC2",
+      "reviewed": true,
+      "source_url": "https://www.uniprot.org/uniprotkb/P0DTC2/entry",
+      "target_id": "P0DTC2",
+      "taxonomy_id": 2697049
+    }
+  ]
+}

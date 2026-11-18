@@ -1,0 +1,43 @@
+{
+  "benchmark_status": "specification-ready-data-required",
+  "development_dataset_must_be_non_synthetic": true,
+  "independent_test_dataset_required": true,
+  "locked_data_model_reference_versions_required": true,
+  "minimum_evidence_bundle": [
+    "immutable source-data checksums",
+    "training/validation/test partition manifest",
+    "per-sample predictions or module-level outputs",
+    "uncertainty intervals or confidence diagnostics",
+    "full parameter and environment manifest",
+    "expert reviewer sign-off"
+  ],
+  "module_key": "knowledge_graph_core",
+  "module_title": "Knowledge-graph depth",
+  "prespecified_acceptance_thresholds_required": true,
+  "prospective_or_orthogonal_validation_required": true,
+  "release_eligible": false,
+  "required_data_formats": [
+    "CSV/JSON/RDF-like edge tables"
+  ],
+  "required_failure_analyses": [
+    "missingness and malformed-input analysis",
+    "out-of-distribution or applicability-domain analysis",
+    "subgroup or biological-context analysis",
+    "calibration and uncertainty analysis",
+    "negative-control and leakage analysis",
+    "failed-case review with retained identifiers"
+  ],
+  "required_reference_assets": [
+    "Ontology releases",
+    "Provider snapshots",
+    "Retraction metadata"
+  ],
+  "required_validation_analyses": [
+    "Entity resolution",
+    "Claim-source traceability",
+    "Contradictory evidence",
+    "Temporal provenance"
+  ],
+  "schema": "biointel.step163.task-specific-benchmark.v1",
+  "specification_sha256": "73d2c3f0247c6431713fb9bd973bebf784c2a8ca185888ca1b8514f7aba25fb8"
+}

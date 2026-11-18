@@ -1,0 +1,28 @@
+{
+  "bundled_in_core_package": false,
+  "category": "Genomics",
+  "checksum_required": true,
+  "container_digest_or_binary_hash_required": true,
+  "engine": "bowtie",
+  "environment_lock_required": true,
+  "execution_backends": [
+    "native-executable",
+    "conda-lock",
+    "container",
+    "wsl2"
+  ],
+  "install_strategy": "native-or-conda-lock",
+  "installed_and_qualified": false,
+  "label": "Bowtie 2",
+  "licence_class": "open-source-or-provider-terms",
+  "manual_action_required": false,
+  "model_or_database_required": true,
+  "modules": [
+    "genome_editing_safety"
+  ],
+  "package_hint": "Provision a version-pinned Bowtie 2 executable and record its checksum.",
+  "runtime_self_test_required": true,
+  "schema": "biointel.step163.specialist-runtime-lock-contract.v1",
+  "scientific_smoke_test_required": true,
+  "version_probe_required": true
+}

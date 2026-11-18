@@ -1,0 +1,33 @@
+{
+  "accepted_formats": [
+    "FASTA/GenBank through adapter",
+    "CSV/TSV construct table"
+  ],
+  "external_release_requires_all_real_artifacts": true,
+  "module_key": "gene_therapy_vector",
+  "module_title": "Gene-therapy vector depth",
+  "native_research_fallback_ready": true,
+  "optimization_controls": [
+    "Sequence validation cache",
+    "Construct deduplication",
+    "Background off-target review"
+  ],
+  "reference_asset_ids": [
+    "gene_therapy_vector-01-vector-specific-packaging-limits",
+    "gene_therapy_vector-02-promoter-tropism-evidence",
+    "gene_therapy_vector-03-immunogenicity-evidence",
+    "gene_therapy_vector-04-biosafety-policy"
+  ],
+  "schema": "biointel.step164.module-operational-contract.v1",
+  "scientific_boundary": "Vector engineering scores do not establish biodistribution, genotoxicity, manufacturability or clinical safety.",
+  "software_owned_target": "10/10",
+  "specialist_claims_fail_closed": true,
+  "specialist_engines": [],
+  "validation_gates": [
+    "Cargo integrity",
+    "Packaging capacity",
+    "Integration risk",
+    "Immunogenicity",
+    "Manufacturing review"
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "accepted_native_formats": [
+    "CSV/TSV de-identified cohort"
+  ],
+  "claim_policy": {
+    "demo_result_label_required": true,
+    "expert_review_required_for_release": true,
+    "external_validation_required_for_release": true,
+    "limitations_required": true,
+    "reference_result_label_required": true,
+    "uncertainty_disclosure_required": true
+  },
+  "contract_sha256": "22aa25880896a4b2e6ce550dbc02e83caea9982c968f14b40537d6a08af78e76",
+  "module_key": "clinical_pharma_core",
+  "module_title": "Clinical validation depth",
+  "native_fallback_policy": {
+    "available": true,
+    "confirmatory_claims_allowed": false,
+    "label": "BioIntel deterministic research fallback",
+    "may_replace_specialist_engine": false
+  },
+  "optimization_controls": [
+    "De-identified bounded datasets",
+    "Cached cohort summaries",
+    "Background report generation"
+  ],
+  "quality_dimensions": {
+    "bounded_resource_execution": true,
+    "complete_result_export": true,
+    "crash_loop_protection": true,
+    "deterministic_native_execution": true,
+    "external_release_fail_closed": true,
+    "input_integrity": true,
+    "model_authenticity_guard": true,
+    "reference_lifecycle_contract": true,
+    "reproducibility_signature": true,
+    "specialist_runtime_adapter": true
+  },
+  "required_production_references": [
+    "Protocol and endpoint definitions",
+    "Independent validation cohort",
+    "Bias/eligibility register"
+  ],
+  "required_specialist_engines": [
+    "biointel_native::clinical_pharma_core"
+  ],
+  "schema": "biointel.step163.module-excellence-contract.v1",
+  "scientific_boundary": "Clinical conclusions require independent prospective evidence and qualified human review.",
+  "software_owned_target": "10/10",
+  "validation_gates": [
+    "Cohort flow",
+    "Prespecified endpoints",
+    "Calibration/subgroups",
+    "Independent review"
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "accepted_native_formats": [
+    "JSONL/SQLite ledger"
+  ],
+  "claim_policy": {
+    "demo_result_label_required": true,
+    "expert_review_required_for_release": true,
+    "external_validation_required_for_release": true,
+    "limitations_required": true,
+    "reference_result_label_required": true,
+    "uncertainty_disclosure_required": true
+  },
+  "contract_sha256": "e361f023c9beb2f56d29e117c3259dd54439ece1bc4a41786023b090744f0c45",
+  "module_key": "provenance_ledger_v2",
+  "module_title": "Provenance depth",
+  "native_fallback_policy": {
+    "available": true,
+    "confirmatory_claims_allowed": false,
+    "label": "BioIntel deterministic research fallback",
+    "may_replace_specialist_engine": false
+  },
+  "optimization_controls": [
+    "Append-only writes",
+    "Batch commits",
+    "Ledger compaction without mutation"
+  ],
+  "quality_dimensions": {
+    "bounded_resource_execution": true,
+    "complete_result_export": true,
+    "crash_loop_protection": true,
+    "deterministic_native_execution": true,
+    "external_release_fail_closed": true,
+    "input_integrity": true,
+    "model_authenticity_guard": true,
+    "reference_lifecycle_contract": true,
+    "reproducibility_signature": true,
+    "specialist_runtime_adapter": true
+  },
+  "required_production_references": [
+    "Identity policy",
+    "Clock policy",
+    "Retention policy"
+  ],
+  "required_specialist_engines": [
+    "biointel_native::provenance_ledger_v2"
+  ],
+  "schema": "biointel.step163.module-excellence-contract.v1",
+  "scientific_boundary": "Local provenance is not equivalent to an independently timestamped or regulated audit trail.",
+  "software_owned_target": "10/10",
+  "validation_gates": [
+    "Hash chaining",
+    "Environment capture",
+    "External tool provenance",
+    "Tamper evidence"
+  ]
+}

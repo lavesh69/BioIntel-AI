@@ -1,0 +1,39 @@
+{
+  "accepted_formats": [
+    "PDB/mmCIF",
+    "SDF/MOL2",
+    "FASTA",
+    "CSV/TSV candidate table"
+  ],
+  "external_release_requires_all_real_artifacts": true,
+  "module_key": "protein_ligand_codesign",
+  "module_title": "Protein-ligand co-design depth",
+  "native_research_fallback_ready": true,
+  "optimization_controls": [
+    "GPU-aware queues",
+    "Structure cache",
+    "Candidate deduplication"
+  ],
+  "reference_asset_ids": [
+    "protein_ligand_codesign-01-prepared-structures",
+    "protein_ligand_codesign-02-ligand-states",
+    "protein_ligand_codesign-03-model-weights",
+    "protein_ligand_codesign-04-selectivity-panel"
+  ],
+  "schema": "biointel.step164.module-operational-contract.v1",
+  "scientific_boundary": "Joint design scores are hypotheses and do not establish affinity, selectivity or biological activity.",
+  "software_owned_target": "10/10",
+  "specialist_claims_fail_closed": true,
+  "specialist_engines": [
+    "proteinmpnn",
+    "rfdiffusion",
+    "vina",
+    "colabfold"
+  ],
+  "validation_gates": [
+    "Constraint enforcement",
+    "Pose/structure validation",
+    "Selectivity",
+    "Experimental binding"
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "accepted_native_formats": [
+    "CSV/JSON/RDF-like edge tables"
+  ],
+  "claim_policy": {
+    "demo_result_label_required": true,
+    "expert_review_required_for_release": true,
+    "external_validation_required_for_release": true,
+    "limitations_required": true,
+    "reference_result_label_required": true,
+    "uncertainty_disclosure_required": true
+  },
+  "contract_sha256": "0f0efff186550837d8b3d913a480148b4c91d2bdd3039499c7d9ce60a1a37d35",
+  "module_key": "knowledge_graph_core",
+  "module_title": "Knowledge-graph depth",
+  "native_fallback_policy": {
+    "available": true,
+    "confirmatory_claims_allowed": false,
+    "label": "BioIntel deterministic research fallback",
+    "may_replace_specialist_engine": false
+  },
+  "optimization_controls": [
+    "Indexed graph search",
+    "Evidence caches",
+    "Bounded layouts"
+  ],
+  "quality_dimensions": {
+    "bounded_resource_execution": true,
+    "complete_result_export": true,
+    "crash_loop_protection": true,
+    "deterministic_native_execution": true,
+    "external_release_fail_closed": true,
+    "input_integrity": true,
+    "model_authenticity_guard": true,
+    "reference_lifecycle_contract": true,
+    "reproducibility_signature": true,
+    "specialist_runtime_adapter": true
+  },
+  "required_production_references": [
+    "Ontology releases",
+    "Provider snapshots",
+    "Retraction metadata"
+  ],
+  "required_specialist_engines": [
+    "biointel_native::knowledge_graph_core"
+  ],
+  "schema": "biointel.step163.module-excellence-contract.v1",
+  "scientific_boundary": "Graph paths do not establish causality and must preserve exact supporting evidence.",
+  "software_owned_target": "10/10",
+  "validation_gates": [
+    "Entity resolution",
+    "Claim-source traceability",
+    "Contradictory evidence",
+    "Temporal provenance"
+  ]
+}

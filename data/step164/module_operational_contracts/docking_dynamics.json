@@ -1,0 +1,36 @@
+{
+  "accepted_formats": [
+    "PDB/mmCIF",
+    "SDF/MOL2",
+    "trajectory summaries"
+  ],
+  "external_release_requires_all_real_artifacts": true,
+  "module_key": "docking_dynamics",
+  "module_title": "Docking and dynamics depth",
+  "native_research_fallback_ready": true,
+  "optimization_controls": [
+    "Background execution",
+    "Checkpointed trajectories",
+    "Bounded coordinate previews"
+  ],
+  "reference_asset_ids": [
+    "docking_dynamics-01-prepared-receptor",
+    "docking_dynamics-02-ligand-protonation-states",
+    "docking_dynamics-03-force-field-assets"
+  ],
+  "schema": "biointel.step164.module-operational-contract.v1",
+  "scientific_boundary": "Docking and simulation scores are model-dependent and are not measured affinity.",
+  "software_owned_target": "10/10",
+  "specialist_claims_fail_closed": true,
+  "specialist_engines": [
+    "vina",
+    "gromacs",
+    "openmm"
+  ],
+  "validation_gates": [
+    "Pose replication",
+    "Consensus scoring",
+    "Trajectory equilibration",
+    "Experimental-affinity linkage"
+  ]
+}

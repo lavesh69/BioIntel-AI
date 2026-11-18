@@ -1,0 +1,59 @@
+{
+  "accepted_native_formats": [
+    "FASTA/GenBank through adapter",
+    "CSV/TSV construct table"
+  ],
+  "claim_policy": {
+    "demo_result_label_required": true,
+    "expert_review_required_for_release": true,
+    "external_validation_required_for_release": true,
+    "limitations_required": true,
+    "reference_result_label_required": true,
+    "uncertainty_disclosure_required": true
+  },
+  "contract_sha256": "3e603a2ae82c877989644d57a205d41c5f41039e038cebc0b69133233a5e880d",
+  "module_key": "gene_therapy_vector",
+  "module_title": "Gene-therapy vector depth",
+  "native_fallback_policy": {
+    "available": true,
+    "confirmatory_claims_allowed": false,
+    "label": "BioIntel deterministic research fallback",
+    "may_replace_specialist_engine": false
+  },
+  "optimization_controls": [
+    "Sequence validation cache",
+    "Construct deduplication",
+    "Background off-target review"
+  ],
+  "quality_dimensions": {
+    "bounded_resource_execution": true,
+    "complete_result_export": true,
+    "crash_loop_protection": true,
+    "deterministic_native_execution": true,
+    "external_release_fail_closed": true,
+    "input_integrity": true,
+    "model_authenticity_guard": true,
+    "reference_lifecycle_contract": true,
+    "reproducibility_signature": true,
+    "specialist_runtime_adapter": true
+  },
+  "required_production_references": [
+    "Vector-specific packaging limits",
+    "Promoter/tropism evidence",
+    "Immunogenicity evidence",
+    "Biosafety policy"
+  ],
+  "required_specialist_engines": [
+    "biointel_native::gene_therapy_vector"
+  ],
+  "schema": "biointel.step163.module-excellence-contract.v1",
+  "scientific_boundary": "Vector engineering scores do not establish biodistribution, genotoxicity, manufacturability or clinical safety.",
+  "software_owned_target": "10/10",
+  "validation_gates": [
+    "Cargo integrity",
+    "Packaging capacity",
+    "Integration risk",
+    "Immunogenicity",
+    "Manufacturing review"
+  ]
+}

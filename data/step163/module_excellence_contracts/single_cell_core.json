@@ -1,0 +1,61 @@
+{
+  "accepted_native_formats": [
+    "H5AD",
+    "MTX",
+    "10x matrices"
+  ],
+  "claim_policy": {
+    "demo_result_label_required": true,
+    "expert_review_required_for_release": true,
+    "external_validation_required_for_release": true,
+    "limitations_required": true,
+    "reference_result_label_required": true,
+    "uncertainty_disclosure_required": true
+  },
+  "contract_sha256": "f1151bf9731491b12514d4c4649d686620287fbb2073b06c35a765442bd344bd",
+  "module_key": "single_cell_core",
+  "module_title": "Single-cell analysis depth",
+  "native_fallback_policy": {
+    "available": true,
+    "confirmatory_claims_allowed": false,
+    "label": "BioIntel deterministic research fallback",
+    "may_replace_specialist_engine": false
+  },
+  "optimization_controls": [
+    "Sparse matrices",
+    "Backed mode",
+    "Embedding cache"
+  ],
+  "quality_dimensions": {
+    "bounded_resource_execution": true,
+    "complete_result_export": true,
+    "crash_loop_protection": true,
+    "deterministic_native_execution": true,
+    "external_release_fail_closed": true,
+    "input_integrity": true,
+    "model_authenticity_guard": true,
+    "reference_lifecycle_contract": true,
+    "reproducibility_signature": true,
+    "specialist_runtime_adapter": true
+  },
+  "required_production_references": [
+    "Reference atlas",
+    "Gene annotation",
+    "Ligand-receptor database"
+  ],
+  "required_specialist_engines": [
+    "biointel_native::single_cell_core",
+    "scanpy",
+    "scvelo",
+    "cellrank"
+  ],
+  "schema": "biointel.step163.module-excellence-contract.v1",
+  "scientific_boundary": "Cells are not biological replicates; confirm findings using replicate-aware analyses.",
+  "software_owned_target": "10/10",
+  "validation_gates": [
+    "Cell QC",
+    "Doublets/ambient RNA",
+    "Replicate-aware differential analysis",
+    "Annotation confidence"
+  ]
+}

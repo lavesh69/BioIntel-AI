@@ -1,0 +1,42 @@
+{
+  "completion_fields": {
+    "independent_validation": false,
+    "prospective_validation": false,
+    "protocol_version": true,
+    "reviewer_approved": false,
+    "source_checksums": false
+  },
+  "external_evidence_attached": false,
+  "intended_use_boundary": "Heavy jobs should not execute inside a Streamlit rerun process.",
+  "module_key": "background_job_engine",
+  "module_title": "Background execution depth",
+  "negative_controls_required": true,
+  "prospective_validation_required": true,
+  "protocol_sha256": "4fc4ab66a523c2369635b5ab8630a994e2b66a875b26a618cec8dab34e8e32f4",
+  "protocol_status": "ready-for-external-execution",
+  "protocol_version": "1.0.0",
+  "release_eligible": false,
+  "required_reference_assets": [
+    "Resource policy",
+    "Worker state database",
+    "Artifact registry"
+  ],
+  "required_specialist_engines": [],
+  "required_validation_gates": [
+    "Heartbeat",
+    "Process-tree cancellation",
+    "Checkpoint recovery",
+    "Resource limits"
+  ],
+  "reviewer_signoff_required": true,
+  "schema": "biointel.step161.external-validation-protocol.v1",
+  "source_checksums_required": true,
+  "study_design_requirements": [
+    "Independent dataset or site not used during development",
+    "Prespecified endpoints and acceptance thresholds",
+    "Locked software, model and reference versions",
+    "Source-data checksums and immutable analysis manifest",
+    "Blinded or independently adjudicated review where applicable",
+    "Subgroup, calibration, uncertainty and failure analysis"
+  ]
+}

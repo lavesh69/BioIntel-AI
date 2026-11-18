@@ -1,0 +1,74 @@
+{
+  "all_assets_production_qualified": false,
+  "assets": [
+    {
+      "asset_id": "step163-biomedical_foundation_model_hub-reference-01",
+      "current_state": "not-bundled-awaiting-qualified-production-asset",
+      "download_checksum_required": true,
+      "licence_review_required": true,
+      "production_qualified": false,
+      "provider_release_id_required": true,
+      "record_count_required": true,
+      "reference_name": "Model cards",
+      "required": true,
+      "schema_validation_required": true,
+      "scientific_reviewer_required": true
+    },
+    {
+      "asset_id": "step163-biomedical_foundation_model_hub-reference-02",
+      "current_state": "not-bundled-awaiting-qualified-production-asset",
+      "download_checksum_required": true,
+      "licence_review_required": true,
+      "production_qualified": false,
+      "provider_release_id_required": true,
+      "record_count_required": true,
+      "reference_name": "Weight checksums",
+      "required": true,
+      "schema_validation_required": true,
+      "scientific_reviewer_required": true
+    },
+    {
+      "asset_id": "step163-biomedical_foundation_model_hub-reference-03",
+      "current_state": "not-bundled-awaiting-qualified-production-asset",
+      "download_checksum_required": true,
+      "licence_review_required": true,
+      "production_qualified": false,
+      "provider_release_id_required": true,
+      "record_count_required": true,
+      "reference_name": "Licences",
+      "required": true,
+      "schema_validation_required": true,
+      "scientific_reviewer_required": true
+    },
+    {
+      "asset_id": "step163-biomedical_foundation_model_hub-reference-04",
+      "current_state": "not-bundled-awaiting-qualified-production-asset",
+      "download_checksum_required": true,
+      "licence_review_required": true,
+      "production_qualified": false,
+      "provider_release_id_required": true,
+      "record_count_required": true,
+      "reference_name": "Benchmark protocols",
+      "required": true,
+      "schema_validation_required": true,
+      "scientific_reviewer_required": true
+    },
+    {
+      "asset_id": "step163-biomedical_foundation_model_hub-reference-05",
+      "current_state": "not-bundled-awaiting-qualified-production-asset",
+      "download_checksum_required": true,
+      "licence_review_required": true,
+      "production_qualified": false,
+      "provider_release_id_required": true,
+      "record_count_required": true,
+      "reference_name": "Hardware manifest",
+      "required": true,
+      "schema_validation_required": true,
+      "scientific_reviewer_required": true
+    }
+  ],
+  "demo_or_development_fixture_may_substitute": false,
+  "module_key": "biomedical_foundation_model_hub",
+  "module_title": "Foundation-model hub depth",
+  "schema": "biointel.step163.reference-acquisition-manifest.v1"
+}

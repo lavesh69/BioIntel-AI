@@ -1,0 +1,32 @@
+{
+  "accepted_formats": [
+    "PDF/HTML/TXT/JSON documents"
+  ],
+  "external_release_requires_all_real_artifacts": true,
+  "module_key": "offline_copilot_core",
+  "module_title": "Offline copilot depth",
+  "native_research_fallback_ready": true,
+  "optimization_controls": [
+    "Quantized local models",
+    "Embedding cache",
+    "Bounded context"
+  ],
+  "reference_asset_ids": [
+    "offline_copilot_core-01-approved-local-corpus",
+    "offline_copilot_core-02-biomedical-ontology",
+    "offline_copilot_core-03-citation-index"
+  ],
+  "schema": "biointel.step164.module-operational-contract.v1",
+  "scientific_boundary": "The copilot must not replace expert scientific or clinical judgment.",
+  "software_owned_target": "10/10",
+  "specialist_claims_fail_closed": true,
+  "specialist_engines": [
+    "llama_cpp"
+  ],
+  "validation_gates": [
+    "Citation grounding",
+    "Hallucination tests",
+    "Conflict detection",
+    "Clinical-action blocking"
+  ]
+}

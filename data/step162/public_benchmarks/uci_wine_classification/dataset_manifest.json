@@ -1,0 +1,16 @@
+{
+  "clinical_release_eligible": false,
+  "dataset_key": "uci_wine_classification",
+  "dataset_sha256": "20d00cffdb11ca25b0c3282da98607f0eb42df2c6657a63492b7b836e44cd66e",
+  "distribution": "scikit-learn 1.8.0 bundled dataset copy",
+  "features": 13,
+  "licence_review_status": "source terms recorded; deployment user must confirm intended-use compliance",
+  "public_reference_data": true,
+  "rows": 178,
+  "schema": "biointel.step162.public-dataset-manifest.v1",
+  "source_name": "UCI Wine recognition dataset via scikit-learn",
+  "source_url": "https://archive.ics.uci.edu/dataset/109/wine",
+  "synthetic": false,
+  "target_description": "['class_0' 'class_1' 'class_2']",
+  "title": "UCI Wine recognition public benchmark"
+}

@@ -1,0 +1,31 @@
+{
+  "accepted_formats": [
+    "CSV predictions",
+    "JSON model metadata"
+  ],
+  "external_release_requires_all_real_artifacts": true,
+  "module_key": "explainable_ai_assurance",
+  "module_title": "Model assurance depth",
+  "native_research_fallback_ready": true,
+  "optimization_controls": [
+    "Cached metrics",
+    "Chunked predictions",
+    "Sampled explanation plots"
+  ],
+  "reference_asset_ids": [
+    "explainable_ai_assurance-01-model-card",
+    "explainable_ai_assurance-02-external-validation-cohort",
+    "explainable_ai_assurance-03-subgroup-definitions"
+  ],
+  "schema": "biointel.step164.module-operational-contract.v1",
+  "scientific_boundary": "Explanations describe model behaviour and do not establish biological causality.",
+  "software_owned_target": "10/10",
+  "specialist_claims_fail_closed": true,
+  "specialist_engines": [],
+  "validation_gates": [
+    "Calibration",
+    "Subgroup performance",
+    "OOD detection",
+    "Explanation stability"
+  ]
+}

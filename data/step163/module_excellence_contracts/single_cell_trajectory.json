@@ -1,0 +1,61 @@
+{
+  "accepted_native_formats": [
+    "H5AD",
+    "MTX",
+    "CSV/TSV cell metadata"
+  ],
+  "claim_policy": {
+    "demo_result_label_required": true,
+    "expert_review_required_for_release": true,
+    "external_validation_required_for_release": true,
+    "limitations_required": true,
+    "reference_result_label_required": true,
+    "uncertainty_disclosure_required": true
+  },
+  "contract_sha256": "2fa50f83bf65043d783851d98b602c9a639a06fb5de52cd85abb372ee7c46c39",
+  "module_key": "single_cell_trajectory",
+  "module_title": "Single-cell trajectory depth",
+  "native_fallback_policy": {
+    "available": true,
+    "confirmatory_claims_allowed": false,
+    "label": "BioIntel deterministic research fallback",
+    "may_replace_specialist_engine": false
+  },
+  "optimization_controls": [
+    "Backed H5AD mode",
+    "Sparse matrices",
+    "Bounded embeddings"
+  ],
+  "quality_dimensions": {
+    "bounded_resource_execution": true,
+    "complete_result_export": true,
+    "crash_loop_protection": true,
+    "deterministic_native_execution": true,
+    "external_release_fail_closed": true,
+    "input_integrity": true,
+    "model_authenticity_guard": true,
+    "reference_lifecycle_contract": true,
+    "reproducibility_signature": true,
+    "specialist_runtime_adapter": true
+  },
+  "required_production_references": [
+    "Cell atlas",
+    "Ligand-receptor database",
+    "Genome annotation"
+  ],
+  "required_specialist_engines": [
+    "biointel_native::single_cell_trajectory",
+    "scanpy",
+    "scvelo",
+    "cellrank"
+  ],
+  "schema": "biointel.step163.module-excellence-contract.v1",
+  "scientific_boundary": "Trajectory and communication results are model-dependent and require replicate-aware biological validation.",
+  "software_owned_target": "10/10",
+  "validation_gates": [
+    "Cell QC",
+    "Doublet/ambient-RNA review",
+    "Replicate-aware inference",
+    "Trajectory uncertainty"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "accepted_formats": [
+    "JSONL/SQLite ledger"
+  ],
+  "external_release_requires_all_real_artifacts": true,
+  "module_key": "provenance_ledger_v2",
+  "module_title": "Provenance depth",
+  "native_research_fallback_ready": true,
+  "optimization_controls": [
+    "Append-only writes",
+    "Batch commits",
+    "Ledger compaction without mutation"
+  ],
+  "reference_asset_ids": [
+    "provenance_ledger_v2-01-identity-policy",
+    "provenance_ledger_v2-02-clock-policy",
+    "provenance_ledger_v2-03-retention-policy"
+  ],
+  "schema": "biointel.step164.module-operational-contract.v1",
+  "scientific_boundary": "Local provenance is not equivalent to an independently timestamped or regulated audit trail.",
+  "software_owned_target": "10/10",
+  "specialist_claims_fail_closed": true,
+  "specialist_engines": [],
+  "validation_gates": [
+    "Hash chaining",
+    "Environment capture",
+    "External tool provenance",
+    "Tamper evidence"
+  ]
+}

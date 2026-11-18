@@ -1,0 +1,35 @@
+{
+  "accepted_formats": [
+    "FCS",
+    "CSV/TSV event table",
+    "Compensation matrix"
+  ],
+  "external_release_requires_all_real_artifacts": true,
+  "module_key": "flow_cytometry",
+  "module_title": "Flow-cytometry depth",
+  "native_research_fallback_ready": true,
+  "optimization_controls": [
+    "Bounded FCS decoding",
+    "Sampled scatter previews",
+    "Vectorized compensation",
+    "Gate-audit export"
+  ],
+  "reference_asset_ids": [
+    "flow_cytometry-01-single-stained-controls",
+    "flow_cytometry-02-fmo-unstained-controls",
+    "flow_cytometry-03-panel-and-instrument-metadata",
+    "flow_cytometry-04-ground-truth-manual-gating-review"
+  ],
+  "schema": "biointel.step164.module-operational-contract.v1",
+  "scientific_boundary": "Flow-cytometry populations require instrument QC, validated compensation, control-aware gates and representative manual review.",
+  "software_owned_target": "10/10",
+  "specialist_claims_fail_closed": true,
+  "specialist_engines": [],
+  "validation_gates": [
+    "Compensation stability",
+    "Transformation lock",
+    "Doublet/time-drift review",
+    "Control-aware gating",
+    "Population reproducibility"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "external_scientific_evidence": false,
+  "module_key": "cancer_genomics_core",
+  "module_title": "Cancer genomics depth",
+  "production_use_allowed": false,
+  "records": [
+    {
+      "record_id": "cancer_genomics_core:4:demo",
+      "reference_label": "Clinical annotation release",
+      "status": "test-fixture",
+      "value": 1.0
+    }
+  ],
+  "reference_name": "Clinical annotation release",
+  "schema": "biointel.step161.development-reference-fixture.v1",
+  "scope": "development-and-regression-only",
+  "synthetic": true
+}

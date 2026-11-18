@@ -1,0 +1,32 @@
+{
+  "accepted_formats": [
+    "CSV/TSV",
+    "H5AD",
+    "MTX"
+  ],
+  "external_release_requires_all_real_artifacts": true,
+  "module_key": "multiomics_harmonization",
+  "module_title": "Multi-omics harmonization depth",
+  "native_research_fallback_ready": true,
+  "optimization_controls": [
+    "Sparse matrices",
+    "Feature intersection cache",
+    "Chunked normalization"
+  ],
+  "reference_asset_ids": [
+    "multiomics_harmonization-01-feature-identifier-maps",
+    "multiomics_harmonization-02-batch-metadata",
+    "multiomics_harmonization-03-platform-metadata"
+  ],
+  "schema": "biointel.step164.module-operational-contract.v1",
+  "scientific_boundary": "Batch correction can remove biological signal and must preserve raw values and design context.",
+  "software_owned_target": "10/10",
+  "specialist_claims_fail_closed": true,
+  "specialist_engines": [],
+  "validation_gates": [
+    "Batch diagnostics",
+    "Biological-signal preservation",
+    "Identifier harmonization",
+    "Missing-modality policy"
+  ]
+}

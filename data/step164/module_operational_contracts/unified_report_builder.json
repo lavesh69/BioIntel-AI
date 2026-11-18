@@ -1,0 +1,30 @@
+{
+  "accepted_formats": [
+    "PDF/DOCX/HTML/JSON"
+  ],
+  "external_release_requires_all_real_artifacts": true,
+  "module_key": "unified_report_builder",
+  "module_title": "Scientific reporting depth",
+  "native_research_fallback_ready": true,
+  "optimization_controls": [
+    "Background rendering",
+    "Asset reuse",
+    "Deterministic bundles"
+  ],
+  "reference_asset_ids": [
+    "unified_report_builder-01-report-templates",
+    "unified_report_builder-02-citation-policy",
+    "unified_report_builder-03-approval-roles"
+  ],
+  "schema": "biointel.step164.module-operational-contract.v1",
+  "scientific_boundary": "Reports are only as reliable as their underlying data, methods and review.",
+  "software_owned_target": "10/10",
+  "specialist_claims_fail_closed": true,
+  "specialist_engines": [],
+  "validation_gates": [
+    "Claim-source traceability",
+    "Method/parameter completeness",
+    "Version locking",
+    "Reviewer approval"
+  ]
+}

@@ -1,0 +1,9 @@
+variable,domain,data_type,required,visit,validation_rule,completeness
+Subject_ID,Identifiers,string,True,Screening,Unique and non-empty,100
+Age,Demographics,integer,True,Screening,18–100,100
+Sex,Demographics,category,True,Screening,Controlled list,100
+Diagnosis_Date,Medical History,date,True,Baseline,Not future,90
+Treatment_Arm,Treatment,category,True,Baseline,Randomization code,85
+Response,Outcomes,category,True,Week 12,RECIST values,80
+QoL_Score,Outcomes,number,False,Week 12,0–100,75
+Adverse_Event,Safety,string,False,Every visit,Conditional details,70

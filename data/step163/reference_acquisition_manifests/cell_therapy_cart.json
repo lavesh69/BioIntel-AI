@@ -1,0 +1,61 @@
+{
+  "all_assets_production_qualified": false,
+  "assets": [
+    {
+      "asset_id": "step163-cell_therapy_cart-reference-01",
+      "current_state": "not-bundled-awaiting-qualified-production-asset",
+      "download_checksum_required": true,
+      "licence_review_required": true,
+      "production_qualified": false,
+      "provider_release_id_required": true,
+      "record_count_required": true,
+      "reference_name": "Antigen expression atlas",
+      "required": true,
+      "schema_validation_required": true,
+      "scientific_reviewer_required": true
+    },
+    {
+      "asset_id": "step163-cell_therapy_cart-reference-02",
+      "current_state": "not-bundled-awaiting-qualified-production-asset",
+      "download_checksum_required": true,
+      "licence_review_required": true,
+      "production_qualified": false,
+      "provider_release_id_required": true,
+      "record_count_required": true,
+      "reference_name": "Germline references",
+      "required": true,
+      "schema_validation_required": true,
+      "scientific_reviewer_required": true
+    },
+    {
+      "asset_id": "step163-cell_therapy_cart-reference-03",
+      "current_state": "not-bundled-awaiting-qualified-production-asset",
+      "download_checksum_required": true,
+      "licence_review_required": true,
+      "production_qualified": false,
+      "provider_release_id_required": true,
+      "record_count_required": true,
+      "reference_name": "Cell-product QC",
+      "required": true,
+      "schema_validation_required": true,
+      "scientific_reviewer_required": true
+    },
+    {
+      "asset_id": "step163-cell_therapy_cart-reference-04",
+      "current_state": "not-bundled-awaiting-qualified-production-asset",
+      "download_checksum_required": true,
+      "licence_review_required": true,
+      "production_qualified": false,
+      "provider_release_id_required": true,
+      "record_count_required": true,
+      "reference_name": "Safety evidence",
+      "required": true,
+      "schema_validation_required": true,
+      "scientific_reviewer_required": true
+    }
+  ],
+  "demo_or_development_fixture_may_substitute": false,
+  "module_key": "cell_therapy_cart",
+  "module_title": "Cell-therapy and CAR-T depth",
+  "schema": "biointel.step163.reference-acquisition-manifest.v1"
+}

@@ -1,0 +1,61 @@
+{
+  "all_assets_production_qualified": false,
+  "assets": [
+    {
+      "asset_id": "step163-pharmacovigilance_intelligence-reference-01",
+      "current_state": "not-bundled-awaiting-qualified-production-asset",
+      "download_checksum_required": true,
+      "licence_review_required": true,
+      "production_qualified": false,
+      "provider_release_id_required": true,
+      "record_count_required": true,
+      "reference_name": "Drug/event dictionaries",
+      "required": true,
+      "schema_validation_required": true,
+      "scientific_reviewer_required": true
+    },
+    {
+      "asset_id": "step163-pharmacovigilance_intelligence-reference-02",
+      "current_state": "not-bundled-awaiting-qualified-production-asset",
+      "download_checksum_required": true,
+      "licence_review_required": true,
+      "production_qualified": false,
+      "provider_release_id_required": true,
+      "record_count_required": true,
+      "reference_name": "Deduplication rules",
+      "required": true,
+      "schema_validation_required": true,
+      "scientific_reviewer_required": true
+    },
+    {
+      "asset_id": "step163-pharmacovigilance_intelligence-reference-03",
+      "current_state": "not-bundled-awaiting-qualified-production-asset",
+      "download_checksum_required": true,
+      "licence_review_required": true,
+      "production_qualified": false,
+      "provider_release_id_required": true,
+      "record_count_required": true,
+      "reference_name": "Exposure context",
+      "required": true,
+      "schema_validation_required": true,
+      "scientific_reviewer_required": true
+    },
+    {
+      "asset_id": "step163-pharmacovigilance_intelligence-reference-04",
+      "current_state": "not-bundled-awaiting-qualified-production-asset",
+      "download_checksum_required": true,
+      "licence_review_required": true,
+      "production_qualified": false,
+      "provider_release_id_required": true,
+      "record_count_required": true,
+      "reference_name": "Review policy",
+      "required": true,
+      "schema_validation_required": true,
+      "scientific_reviewer_required": true
+    }
+  ],
+  "demo_or_development_fixture_may_substitute": false,
+  "module_key": "pharmacovigilance_intelligence",
+  "module_title": "Pharmacovigilance depth",
+  "schema": "biointel.step163.reference-acquisition-manifest.v1"
+}

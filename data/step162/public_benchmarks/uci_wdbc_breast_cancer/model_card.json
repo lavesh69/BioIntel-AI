@@ -1,0 +1,98 @@
+{
+  "algorithm": "LogisticRegression",
+  "artifact_path": "models/authentic_benchmarks/uci_wdbc_breast_cancer.joblib",
+  "artifact_sha256": "e1e26554146d8c9bd96f74a684647532990d6b55cbf153f1709271cbe7a3ac86",
+  "authenticity_tier": "Public benchmark / immutable snapshot / reproducible holdout",
+  "calibration_rows": 0,
+  "clinical_or_regulatory_release_eligible": false,
+  "created_at_utc": "2026-07-14T04:25:31+00:00",
+  "cross_validation_metrics": {
+    "balanced_accuracy_mean": 0.9718451536089925,
+    "balanced_accuracy_std": 0.025783657004086604,
+    "f1_macro_mean": 0.9735799518668816,
+    "f1_macro_std": 0.02444330745948841
+  },
+  "dataset_sha256": "6ace0ad2c71bcd8214d6995d1d4ad5ebe89b8342387b6a021c7a80a0f8ecb555",
+  "feature_names": [
+    "mean radius",
+    "mean texture",
+    "mean perimeter",
+    "mean area",
+    "mean smoothness",
+    "mean compactness",
+    "mean concavity",
+    "mean concave points",
+    "mean symmetry",
+    "mean fractal dimension",
+    "radius error",
+    "texture error",
+    "perimeter error",
+    "area error",
+    "smoothness error",
+    "compactness error",
+    "concavity error",
+    "concave points error",
+    "symmetry error",
+    "fractal dimension error",
+    "worst radius",
+    "worst texture",
+    "worst perimeter",
+    "worst area",
+    "worst smoothness",
+    "worst compactness",
+    "worst concavity",
+    "worst concave points",
+    "worst symmetry",
+    "worst fractal dimension"
+  ],
+  "holdout_metrics": {
+    "accuracy": 0.9385964912280702,
+    "balanced_accuracy": 0.941468253968254,
+    "balanced_accuracy_ci95": {
+      "iterations": 250,
+      "lower_95": 0.8966008835923889,
+      "upper_95": 0.9788053319919517
+    },
+    "brier_score": 0.035617823368507516,
+    "confusion_matrix": [
+      [
+        40,
+        2
+      ],
+      [
+        5,
+        67
+      ]
+    ],
+    "expected_calibration_error": 0.0359411587406016,
+    "f1_macro": 0.9349474199070678,
+    "f1_macro_ci95": {
+      "iterations": 250,
+      "lower_95": 0.887415264713928,
+      "upper_95": 0.9725196808800032
+    },
+    "log_loss": 0.10490754095140292,
+    "precision_macro": 0.929951690821256,
+    "recall_macro": 0.941468253968254,
+    "roc_auc": 0.994047619047619
+  },
+  "holdout_rows": 114,
+  "independent_external_validation": false,
+  "intended_use": "Reproducible binary-classification, calibration and provenance benchmark only.",
+  "limitations": "Not a clinical diagnostic device and not externally validated for deployment at a healthcare site.",
+  "model_id": "step162-uci_wdbc_breast_cancer",
+  "model_version": "1.0.0",
+  "public_data_authenticity_passed": true,
+  "schema": "biointel.step162.public-benchmark-model-card.v1",
+  "source_name": "UCI Wisconsin Diagnostic Breast Cancer via scikit-learn",
+  "source_url": "https://archive.ics.uci.edu/dataset/17/breast+cancer+wisconsin+diagnostic",
+  "synthetic_training_data": false,
+  "task_type": "classification",
+  "title": "Wisconsin Diagnostic Breast Cancer public benchmark",
+  "training_rows": 455,
+  "uncertainty": {
+    "brier_score": 0.035617823368507516,
+    "expected_calibration_error": 0.0359411587406016,
+    "method": "probability calibration diagnostics"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "bundled_in_core_package": false,
+  "category": "Single-cell",
+  "checksum_required": true,
+  "container_digest_or_binary_hash_required": true,
+  "engine": "cellrank",
+  "environment_lock_required": true,
+  "execution_backends": [
+    "python-environment",
+    "conda-lock",
+    "container"
+  ],
+  "install_strategy": "pinned-python-environment",
+  "installed_and_qualified": false,
+  "label": "CellRank Python",
+  "licence_class": "open-source-or-provider-terms",
+  "manual_action_required": false,
+  "model_or_database_required": false,
+  "modules": [
+    "single_cell_core",
+    "single_cell_trajectory"
+  ],
+  "package_hint": "Install cellrank in the Step 161 pinned scientific environment.",
+  "runtime_self_test_required": true,
+  "schema": "biointel.step163.specialist-runtime-lock-contract.v1",
+  "scientific_smoke_test_required": true,
+  "version_probe_required": true
+}

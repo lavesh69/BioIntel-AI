@@ -1,0 +1,18 @@
+{
+  "external_scientific_evidence": false,
+  "module_key": "enzyme_pathway_design",
+  "module_title": "Enzyme/pathway design depth",
+  "production_use_allowed": false,
+  "records": [
+    {
+      "record_id": "enzyme_pathway_design:2:demo",
+      "reference_label": "EC/reaction database",
+      "status": "test-fixture",
+      "value": 1.0
+    }
+  ],
+  "reference_name": "EC/reaction database",
+  "schema": "biointel.step161.development-reference-fixture.v1",
+  "scope": "development-and-regression-only",
+  "synthetic": true
+}

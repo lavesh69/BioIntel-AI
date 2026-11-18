@@ -1,0 +1,30 @@
+{
+  "accepted_formats": [
+    "Content-addressed project assets"
+  ],
+  "external_release_requires_all_real_artifacts": true,
+  "module_key": "cross_module_workspace",
+  "module_title": "Cross-module project depth",
+  "native_research_fallback_ready": true,
+  "optimization_controls": [
+    "Deduplicated assets",
+    "Snapshot manifests",
+    "Bounded project indexes"
+  ],
+  "reference_asset_ids": [
+    "cross_module_workspace-01-project-schema",
+    "cross_module_workspace-02-dataset-run-identifiers",
+    "cross_module_workspace-03-storage-policy"
+  ],
+  "schema": "biointel.step164.module-operational-contract.v1",
+  "scientific_boundary": "A project snapshot is reproducible only when external tools and databases are pinned.",
+  "software_owned_target": "10/10",
+  "specialist_claims_fail_closed": true,
+  "specialist_engines": [],
+  "validation_gates": [
+    "Immutable lineage",
+    "Version locking",
+    "Permission review",
+    "Exact rerun"
+  ]
+}

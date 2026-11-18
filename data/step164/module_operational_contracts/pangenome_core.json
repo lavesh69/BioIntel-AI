@@ -1,0 +1,37 @@
+{
+  "accepted_formats": [
+    "GFA",
+    "FASTA",
+    "GFF/GTF"
+  ],
+  "external_release_requires_all_real_artifacts": true,
+  "module_key": "pangenome_core",
+  "module_title": "Pangenome execution depth",
+  "native_research_fallback_ready": true,
+  "optimization_controls": [
+    "Graph indexing",
+    "Region/path queries",
+    "Background graph builds"
+  ],
+  "reference_asset_ids": [
+    "pangenome_core-01-assembly-set",
+    "pangenome_core-02-gff-gtf-annotations",
+    "pangenome_core-03-reference-path"
+  ],
+  "schema": "biointel.step164.module-operational-contract.v1",
+  "scientific_boundary": "Pangenome paths and bubbles require assembly, annotation and graph-quality validation.",
+  "software_owned_target": "10/10",
+  "specialist_claims_fail_closed": true,
+  "specialist_engines": [
+    "minigraph",
+    "vg",
+    "odgi",
+    "graphaligner"
+  ],
+  "validation_gates": [
+    "Assembly quality",
+    "Path recovery",
+    "Bubble/variant validation",
+    "Graph benchmark"
+  ]
+}

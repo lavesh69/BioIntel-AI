@@ -1,0 +1,30 @@
+{
+  "accepted_formats": [
+    "JSON job manifests"
+  ],
+  "external_release_requires_all_real_artifacts": true,
+  "module_key": "background_jobs_core",
+  "module_title": "Background execution depth",
+  "native_research_fallback_ready": true,
+  "optimization_controls": [
+    "Separate workers",
+    "Priority queues",
+    "Persistent retries"
+  ],
+  "reference_asset_ids": [
+    "background_jobs_core-01-resource-policy",
+    "background_jobs_core-02-worker-state-database",
+    "background_jobs_core-03-artifact-registry"
+  ],
+  "schema": "biointel.step164.module-operational-contract.v1",
+  "scientific_boundary": "Heavy jobs should not execute inside a Streamlit rerun process.",
+  "software_owned_target": "10/10",
+  "specialist_claims_fail_closed": true,
+  "specialist_engines": [],
+  "validation_gates": [
+    "Heartbeat",
+    "Process-tree cancellation",
+    "Checkpoint recovery",
+    "Resource limits"
+  ]
+}

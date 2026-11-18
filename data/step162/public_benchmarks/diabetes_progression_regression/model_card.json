@@ -1,0 +1,67 @@
+{
+  "algorithm": "Ridge",
+  "artifact_path": "models/authentic_benchmarks/diabetes_progression_regression.joblib",
+  "artifact_sha256": "299feebfa0991e50fc8f949f2c9d603e1eca06f50c6d27cca782c9d7cc4a5572",
+  "authenticity_tier": "Public benchmark / immutable snapshot / reproducible holdout",
+  "calibration_rows": 71,
+  "clinical_or_regulatory_release_eligible": false,
+  "created_at_utc": "2026-07-14T04:25:32+00:00",
+  "cross_validation_metrics": {
+    "mae_mean": 44.807049982572714,
+    "mae_std": 3.940988879188818,
+    "r2_mean": 0.4714533173558926,
+    "r2_std": 0.11347768007623937
+  },
+  "dataset_sha256": "234091ed70a373b59de7b6382b946e70416204645d615f4e6d92d816bc1b0fd0",
+  "feature_names": [
+    "age",
+    "sex",
+    "bmi",
+    "bp",
+    "s1",
+    "s2",
+    "s3",
+    "s4",
+    "s5",
+    "s6"
+  ],
+  "holdout_metrics": {
+    "conformal_coverage": 0.8876404494382022,
+    "mae": 48.46641457692502,
+    "mae_ci95": {
+      "iterations": 250,
+      "lower_95": 42.50342807841033,
+      "upper_95": 56.54191234082014
+    },
+    "mean_prediction_interval_width": 181.3937484198851,
+    "pearson": 0.6912574049407254,
+    "r2": 0.4624361895530755,
+    "r2_ci95": {
+      "iterations": 250,
+      "lower_95": 0.2996985118330755,
+      "upper_95": 0.5867378021178917
+    },
+    "rmse": 59.18034751658067,
+    "spearman": 0.6569762516356157
+  },
+  "holdout_rows": 89,
+  "independent_external_validation": false,
+  "intended_use": "Reproducible regression, interval and residual-governance benchmark only.",
+  "limitations": "Not a patient-level clinical forecasting model and not validated for treatment decisions.",
+  "model_id": "step162-diabetes_progression_regression",
+  "model_version": "1.0.0",
+  "public_data_authenticity_passed": true,
+  "schema": "biointel.step162.public-benchmark-model-card.v1",
+  "source_name": "Diabetes progression dataset distributed with scikit-learn",
+  "source_url": "https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_diabetes.html",
+  "synthetic_training_data": false,
+  "task_type": "regression",
+  "title": "Diabetes progression public regression benchmark",
+  "training_rows": 282,
+  "uncertainty": {
+    "absolute_residual_quantile": 90.69687420994256,
+    "alpha": 0.1,
+    "holdout_coverage": 0.8876404494382022,
+    "method": "split conformal absolute residual"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "accepted_native_formats": [
+    "VCF/BCF",
+    "CSV/TSV medication table"
+  ],
+  "claim_policy": {
+    "demo_result_label_required": true,
+    "expert_review_required_for_release": true,
+    "external_validation_required_for_release": true,
+    "limitations_required": true,
+    "reference_result_label_required": true,
+    "uncertainty_disclosure_required": true
+  },
+  "contract_sha256": "c941d59f7348ebff508b37203f9f1e70144a8c2dc9af9f596e0fc2bca3d75d2f",
+  "module_key": "pharmacogenomics",
+  "module_title": "Pharmacogenomics depth",
+  "native_fallback_policy": {
+    "available": true,
+    "confirmatory_claims_allowed": false,
+    "label": "BioIntel deterministic research fallback",
+    "may_replace_specialist_engine": false
+  },
+  "optimization_controls": [
+    "Indexed VCF queries",
+    "Reference-version pinning",
+    "Cached normalized variants"
+  ],
+  "quality_dimensions": {
+    "bounded_resource_execution": true,
+    "complete_result_export": true,
+    "crash_loop_protection": true,
+    "deterministic_native_execution": true,
+    "external_release_fail_closed": true,
+    "input_integrity": true,
+    "model_authenticity_guard": true,
+    "reference_lifecycle_contract": true,
+    "reproducibility_signature": true,
+    "specialist_runtime_adapter": true
+  },
+  "required_production_references": [
+    "Allele-definition release",
+    "Guideline release",
+    "Population frequencies"
+  ],
+  "required_specialist_engines": [
+    "biointel_native::pharmacogenomics",
+    "bcftools",
+    "whatshap",
+    "vep"
+  ],
+  "schema": "biointel.step163.module-excellence-contract.v1",
+  "scientific_boundary": "This is a research evidence workspace, not autonomous prescribing or clinical decision support.",
+  "software_owned_target": "10/10",
+  "validation_gates": [
+    "Phasing",
+    "Copy-number awareness",
+    "Allele-version traceability",
+    "Human clinical review"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "completion_fields": {
+    "independent_validation": false,
+    "prospective_validation": false,
+    "protocol_version": true,
+    "reviewer_approved": false,
+    "source_checksums": false
+  },
+  "external_evidence_attached": false,
+  "intended_use_boundary": "Transferred labels require marker review and independent biological validation.",
+  "module_key": "cell_atlas_mapping",
+  "module_title": "Cell-atlas mapping depth",
+  "negative_controls_required": true,
+  "prospective_validation_required": true,
+  "protocol_sha256": "81f69de3abb4f0b1490bfb9f4fcb78da038477d4002a0004351b644d09bf16d2",
+  "protocol_status": "ready-for-external-execution",
+  "protocol_version": "1.0.0",
+  "release_eligible": false,
+  "required_reference_assets": [
+    "Reference atlas",
+    "Gene identifier map"
+  ],
+  "required_specialist_engines": [
+    "scanpy"
+  ],
+  "required_validation_gates": [
+    "Reference compatibility",
+    "Batch/platform shift",
+    "Unknown-cell detection",
+    "Annotation confidence"
+  ],
+  "reviewer_signoff_required": true,
+  "schema": "biointel.step161.external-validation-protocol.v1",
+  "source_checksums_required": true,
+  "study_design_requirements": [
+    "Independent dataset or site not used during development",
+    "Prespecified endpoints and acceptance thresholds",
+    "Locked software, model and reference versions",
+    "Source-data checksums and immutable analysis manifest",
+    "Blinded or independently adjudicated review where applicable",
+    "Subgroup, calibration, uncertainty and failure analysis"
+  ]
+}

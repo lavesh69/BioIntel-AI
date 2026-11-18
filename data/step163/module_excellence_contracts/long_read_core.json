@@ -1,0 +1,62 @@
+{
+  "accepted_native_formats": [
+    "FASTQ/FASTA",
+    "GFA",
+    "assembly FASTA"
+  ],
+  "claim_policy": {
+    "demo_result_label_required": true,
+    "expert_review_required_for_release": true,
+    "external_validation_required_for_release": true,
+    "limitations_required": true,
+    "reference_result_label_required": true,
+    "uncertainty_disclosure_required": true
+  },
+  "contract_sha256": "f324d5c650a5acdd08bec5f04713affb469baddd94a768a92a49f11eeecafd4e",
+  "module_key": "long_read_core",
+  "module_title": "Long-read assembly depth",
+  "native_fallback_policy": {
+    "available": true,
+    "confirmatory_claims_allowed": false,
+    "label": "BioIntel deterministic research fallback",
+    "may_replace_specialist_engine": false
+  },
+  "optimization_controls": [
+    "Checkpointed assembly",
+    "Disk/RAM estimation",
+    "Chunked read QC"
+  ],
+  "quality_dimensions": {
+    "bounded_resource_execution": true,
+    "complete_result_export": true,
+    "crash_loop_protection": true,
+    "deterministic_native_execution": true,
+    "external_release_fail_closed": true,
+    "input_integrity": true,
+    "model_authenticity_guard": true,
+    "reference_lifecycle_contract": true,
+    "reproducibility_signature": true,
+    "specialist_runtime_adapter": true
+  },
+  "required_production_references": [
+    "Reference/related genome",
+    "BUSCO lineage",
+    "k-mer database"
+  ],
+  "required_specialist_engines": [
+    "biointel_native::long_read_core",
+    "flye",
+    "hifiasm",
+    "busco",
+    "merqury"
+  ],
+  "schema": "biointel.step163.module-excellence-contract.v1",
+  "scientific_boundary": "Assemblies require platform-aware polishing and independent completeness/contamination assessment.",
+  "software_owned_target": "10/10",
+  "validation_gates": [
+    "Read QC",
+    "Polishing",
+    "Haplotig review",
+    "Completeness/contamination"
+  ]
+}

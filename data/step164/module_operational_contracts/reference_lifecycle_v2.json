@@ -1,0 +1,30 @@
+{
+  "accepted_formats": [
+    "Local archives/directories"
+  ],
+  "external_release_requires_all_real_artifacts": true,
+  "module_key": "reference_lifecycle_v2",
+  "module_title": "Reference lifecycle depth",
+  "native_research_fallback_ready": true,
+  "optimization_controls": [
+    "Resumable downloads",
+    "Managed storage",
+    "Index-build jobs"
+  ],
+  "reference_asset_ids": [
+    "reference_lifecycle_v2-01-provider-release-metadata",
+    "reference_lifecycle_v2-02-licence-terms",
+    "reference_lifecycle_v2-03-checksums"
+  ],
+  "schema": "biointel.step164.module-operational-contract.v1",
+  "scientific_boundary": "Reference data must be licensed, versioned and scientifically suitable for the analysis.",
+  "software_owned_target": "10/10",
+  "specialist_claims_fail_closed": true,
+  "specialist_engines": [],
+  "validation_gates": [
+    "Checksum verification",
+    "Version activation",
+    "Rollback",
+    "Compatibility"
+  ]
+}

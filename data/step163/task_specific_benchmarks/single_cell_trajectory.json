@@ -1,0 +1,45 @@
+{
+  "benchmark_status": "specification-ready-data-required",
+  "development_dataset_must_be_non_synthetic": true,
+  "independent_test_dataset_required": true,
+  "locked_data_model_reference_versions_required": true,
+  "minimum_evidence_bundle": [
+    "immutable source-data checksums",
+    "training/validation/test partition manifest",
+    "per-sample predictions or module-level outputs",
+    "uncertainty intervals or confidence diagnostics",
+    "full parameter and environment manifest",
+    "expert reviewer sign-off"
+  ],
+  "module_key": "single_cell_trajectory",
+  "module_title": "Single-cell trajectory depth",
+  "prespecified_acceptance_thresholds_required": true,
+  "prospective_or_orthogonal_validation_required": true,
+  "release_eligible": false,
+  "required_data_formats": [
+    "H5AD",
+    "MTX",
+    "CSV/TSV cell metadata"
+  ],
+  "required_failure_analyses": [
+    "missingness and malformed-input analysis",
+    "out-of-distribution or applicability-domain analysis",
+    "subgroup or biological-context analysis",
+    "calibration and uncertainty analysis",
+    "negative-control and leakage analysis",
+    "failed-case review with retained identifiers"
+  ],
+  "required_reference_assets": [
+    "Cell atlas",
+    "Ligand-receptor database",
+    "Genome annotation"
+  ],
+  "required_validation_analyses": [
+    "Cell QC",
+    "Doublet/ambient-RNA review",
+    "Replicate-aware inference",
+    "Trajectory uncertainty"
+  ],
+  "schema": "biointel.step163.task-specific-benchmark.v1",
+  "specification_sha256": "79dda5d1101b9aca12a8a97d218ea5b9e2d42212bd15dac7c7daa0abf7992556"
+}

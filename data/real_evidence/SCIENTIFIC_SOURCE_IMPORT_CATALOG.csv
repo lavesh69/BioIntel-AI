@@ -1,0 +1,16 @@
+source_key,provider,resource_type,official_host,access_method,licence_profile,refresh_cadence,local_status,real_records_imported,next_action
+alphafold,AlphaFold DB,predicted_structures,alphafold.ebi.ac.uk,REST/download,verify_terms,on_demand,profile_only,No,Use Internet Research Hub or provider-specific importer after reviewing licence terms
+bindingdb,BindingDB,binding_affinity,www.bindingdb.org,bulk_tsv,BINDINGDB_TERMS,monthly,connector_ready,No,Use Internet Research Hub or provider-specific importer after reviewing licence terms
+chembl,ChEMBL,bioactivity,www.ebi.ac.uk,REST/bulk,CHEMBL_TERMS,monthly,verified_public_reference_bundled,17 verified reference activities,Use locally with provider attribution; refresh from official provider when needed.
+clinvar,ClinVar,clinical_variants,www.ncbi.nlm.nih.gov,VCF/download,public_data_terms,monthly,verified_public_reference_bundled,2 official variant references,Use locally with provider attribution; refresh from official provider when needed.
+ensembl,Ensembl,genome_annotation,rest.ensembl.org,REST/FTP,verify_terms,quarterly,profile_only,No,Use Internet Research Hub or provider-specific importer after reviewing licence terms
+go,Gene Ontology,ontology,geneontology.org,download,verify_terms,monthly,profile_only,No,Use Internet Research Hub or provider-specific importer after reviewing licence terms
+interpro,InterPro,protein_domains,www.ebi.ac.uk,REST/download,verify_terms,quarterly,profile_only,No,Use Internet Research Hub or provider-specific importer after reviewing licence terms
+geo,NCBI GEO,gene_expression,www.ncbi.nlm.nih.gov,Entrez/download,verify_terms,on_demand,profile_only,No,Use Internet Research Hub or provider-specific importer after reviewing licence terms
+sra,NCBI SRA,sequencing_reads,www.ncbi.nlm.nih.gov,metadata/Toolkit,verify_terms,on_demand,profile_only,No,Use Internet Research Hub or provider-specific importer after reviewing licence terms
+pubchem,PubChem,compound_and_bioassay,pubchem.ncbi.nlm.nih.gov,PUG_REST,PUBCHEM_PUBLIC_DATA,weekly,connector_ready,No,Use Internet Research Hub or provider-specific importer after reviewing licence terms
+rcsb,RCSB PDB,protein_structure,files.rcsb.org,REST/download,public_data_terms,weekly,verified_public_reference_bundled,1 experimental mmCIF structure,Use locally with provider attribution; refresh from official provider when needed.
+reactome,Reactome,pathways,reactome.org,REST/download,verify_terms,quarterly,verified_public_reference_bundled,current pathway hierarchy and relations,Use locally with provider attribution; refresh from official provider when needed.
+string,STRING,protein_interactions,string-db.org,REST/download,verify_terms,quarterly,profile_only,No,Use Internet Research Hub or provider-specific importer after reviewing licence terms
+uniprot,UniProt,protein_sequence,rest.uniprot.org,REST,UNIPROT_TERMS,monthly,verified_public_reference_bundled,7 reviewed protein sequences,Use locally with provider attribution; refresh from official provider when needed.
+gnomad,gnomAD,population_variants,gnomad.broadinstitute.org,download/API,verify_terms,release_based,profile_only,No,Use Internet Research Hub or provider-specific importer after reviewing licence terms

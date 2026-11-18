@@ -1,0 +1,30 @@
+{
+  "accepted_formats": [
+    "CSV/TSV de-identified cohort"
+  ],
+  "external_release_requires_all_real_artifacts": true,
+  "module_key": "clinical_pharma_core",
+  "module_title": "Clinical validation depth",
+  "native_research_fallback_ready": true,
+  "optimization_controls": [
+    "De-identified bounded datasets",
+    "Cached cohort summaries",
+    "Background report generation"
+  ],
+  "reference_asset_ids": [
+    "clinical_pharma_core-01-protocol-and-endpoint-definitions",
+    "clinical_pharma_core-02-independent-validation-cohort",
+    "clinical_pharma_core-03-bias-eligibility-register"
+  ],
+  "schema": "biointel.step164.module-operational-contract.v1",
+  "scientific_boundary": "Clinical conclusions require independent prospective evidence and qualified human review.",
+  "software_owned_target": "10/10",
+  "specialist_claims_fail_closed": true,
+  "specialist_engines": [],
+  "validation_gates": [
+    "Cohort flow",
+    "Prespecified endpoints",
+    "Calibration/subgroups",
+    "Independent review"
+  ]
+}

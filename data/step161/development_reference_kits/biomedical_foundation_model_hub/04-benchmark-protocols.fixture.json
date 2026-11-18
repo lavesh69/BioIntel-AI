@@ -1,0 +1,18 @@
+{
+  "external_scientific_evidence": false,
+  "module_key": "biomedical_foundation_model_hub",
+  "module_title": "Foundation-model hub depth",
+  "production_use_allowed": false,
+  "records": [
+    {
+      "record_id": "biomedical_foundation_model_hub:4:demo",
+      "reference_label": "Benchmark protocols",
+      "status": "test-fixture",
+      "value": 1.0
+    }
+  ],
+  "reference_name": "Benchmark protocols",
+  "schema": "biointel.step161.development-reference-fixture.v1",
+  "scope": "development-and-regression-only",
+  "synthetic": true
+}

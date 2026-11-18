@@ -1,0 +1,52 @@
+{
+  "cross_validation_metrics": {
+    "balanced_accuracy_mean": 0.9904761904761905,
+    "balanced_accuracy_std": 0.01304101327393248,
+    "f1_macro_mean": 0.9887125220458554,
+    "f1_macro_std": 0.015456015732068179
+  },
+  "holdout_metrics": {
+    "accuracy": 1.0,
+    "balanced_accuracy": 1.0,
+    "balanced_accuracy_ci95": {
+      "iterations": 250,
+      "lower_95": 1.0,
+      "upper_95": 1.0
+    },
+    "brier_score": 0.009316976209050606,
+    "confusion_matrix": [
+      [
+        12,
+        0,
+        0
+      ],
+      [
+        0,
+        14,
+        0
+      ],
+      [
+        0,
+        0,
+        10
+      ]
+    ],
+    "expected_calibration_error": 0.0600683738408546,
+    "f1_macro": 1.0,
+    "f1_macro_ci95": {
+      "iterations": 250,
+      "lower_95": 1.0,
+      "upper_95": 1.0
+    },
+    "log_loss": 0.0697368316466887,
+    "precision_macro": 1.0,
+    "recall_macro": 1.0,
+    "roc_auc_ovr_macro": 1.0
+  },
+  "schema": "biointel.step162.benchmark-metrics.v1",
+  "uncertainty": {
+    "brier_score": 0.009316976209050606,
+    "expected_calibration_error": 0.0600683738408546,
+    "method": "probability calibration diagnostics"
+  }
+}

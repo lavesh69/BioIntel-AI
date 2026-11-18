@@ -1,0 +1,16 @@
+domain_hint,regex_pattern,evidence,scope
+Protein kinase catalytic core,"VAIK.{8,35}HRD.{5,25}DFG",Catalytic kinase motif constellation,screening motif; not domain HMM evidence
+P-loop NTPase,[AGX]....GK[ST],Walker-A/P-loop nucleotide-binding motif,screening motif; not domain HMM evidence
+Protein tyrosine phosphatase,HC.{5}R[STG],PTP catalytic-loop motif,screening motif; not domain HMM evidence
+C2H2 zinc finger,"C.{2,4}C.{10,16}H.{2,5}H",Classical C2H2 zinc-binding signature,screening motif; not domain HMM evidence
+C3HC4 RING finger,"C.{2}C.{9,39}C.{1,3}H.{2,3}C.{4,48}C.{2}C",RING-like zinc-binding signature,screening motif; not domain HMM evidence
+Homeobox DNA-binding,WFQNRR,Conserved homeodomain recognition motif,screening motif; not domain HMM evidence
+SH2 domain,FLVR,Conserved SH2 phosphotyrosine-recognition motif,screening motif; not domain HMM evidence
+SH3 domain,"[YF]..[YF].{8,30}P..P",Proline-rich ligand recognition pattern,screening motif; not domain HMM evidence
+EF-hand calcium binding,D.{2}D.{2}[DEN].{4}E,Acidic calcium-binding loop pattern,screening motif; not domain HMM evidence
+Rossmann-like dinucleotide binding,"[TIV].{1,2}[AG].{0,2}G..G",N-terminal glycine-rich dinucleotide motif,screening motif; not domain HMM evidence
+Serine protease,GDSGGP,Trypsin-like active-site neighbourhood,screening motif; not domain HMM evidence
+Cysteine protease,CG[SC]G,Cysteine protease active-site neighbourhood,screening motif; not domain HMM evidence
+HExxH metalloprotease,HE..H,Metal-binding metalloprotease motif,screening motif; not domain HMM evidence
+Nuclear receptor zinc-binding,C.EGCKGFFR,Nuclear receptor DNA-binding signature,screening motif; not domain HMM evidence
+Death domain interaction motif,[LIV].{2}[LIV].{2}[DE].{2}[LIV],Helical interaction-domain propensity,screening motif; not domain HMM evidence

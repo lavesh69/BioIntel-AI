@@ -1,0 +1,28 @@
+{
+  "domain": "Bioactivity",
+  "generated_at_utc": "2026-07-14T04:25:32+00:00",
+  "key": "chembl",
+  "licence_review_required": true,
+  "local_assets": [
+    {
+      "path": "data/real_evidence/official_snapshots/chembl_verified_seed.json",
+      "sha256": "fd4145d3f2d10050091c9d868382163de2571a60b3237445318638e62783d286",
+      "size_bytes": 4731
+    }
+  ],
+  "local_candidates": [
+    "data/real_evidence/official_snapshots/chembl_verified_seed.json"
+  ],
+  "local_snapshot_checksum_verified": true,
+  "local_snapshot_present": true,
+  "official_url": "https://www.ebi.ac.uk/chembl/",
+  "production_reference_qualified": false,
+  "provider": "ChEMBL",
+  "qualification_blockers": [
+    "Licence/terms acceptance must match the intended deployment.",
+    "A complete provider release, release date and record-level QC must be attached.",
+    "Independent scientific review is required before confirmatory use."
+  ],
+  "schema": "biointel.step162.provider-source-contract.v1",
+  "source_descriptor_verified": true
+}

@@ -1,0 +1,18 @@
+{
+  "external_scientific_evidence": false,
+  "module_key": "provenance_ledger_v2",
+  "module_title": "Provenance depth",
+  "production_use_allowed": false,
+  "records": [
+    {
+      "record_id": "provenance_ledger_v2:2:demo",
+      "reference_label": "Clock policy",
+      "status": "test-fixture",
+      "value": 1.0
+    }
+  ],
+  "reference_name": "Clock policy",
+  "schema": "biointel.step161.development-reference-fixture.v1",
+  "scope": "development-and-regression-only",
+  "synthetic": true
+}

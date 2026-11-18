@@ -1,0 +1,28 @@
+{
+  "domain": "Proteogenomics",
+  "generated_at_utc": "2026-07-14T04:25:32+00:00",
+  "key": "cptac",
+  "licence_review_required": true,
+  "local_assets": [
+    {
+      "path": "data/real_scientific_pack/proteomics/CPTAC_Phase_I_evidence_manifest.json",
+      "sha256": "860cfcfd0ad33592b92a27e0d2f7da2b15e3925676a2ac59768805037181c861",
+      "size_bytes": 611
+    }
+  ],
+  "local_candidates": [
+    "data/real_scientific_pack/proteomics/CPTAC_Phase_I_evidence_manifest.json"
+  ],
+  "local_snapshot_checksum_verified": true,
+  "local_snapshot_present": true,
+  "official_url": "https://proteomics.cancer.gov/programs/cptac",
+  "production_reference_qualified": false,
+  "provider": "CPTAC",
+  "qualification_blockers": [
+    "Licence/terms acceptance must match the intended deployment.",
+    "A complete provider release, release date and record-level QC must be attached.",
+    "Independent scientific review is required before confirmatory use."
+  ],
+  "schema": "biointel.step162.provider-source-contract.v1",
+  "source_descriptor_verified": true
+}

@@ -1,0 +1,36 @@
+{
+  "accepted_formats": [
+    "OME-TIFF",
+    "TIFF",
+    "PNG/JPEG",
+    "CSV object table"
+  ],
+  "external_release_requires_all_real_artifacts": true,
+  "module_key": "bioimage_microscopy",
+  "module_title": "Bioimage depth",
+  "native_research_fallback_ready": true,
+  "optimization_controls": [
+    "Tiled image processing",
+    "GPU-optional queues",
+    "Mask compression"
+  ],
+  "reference_asset_ids": [
+    "bioimage_microscopy-01-pixel-calibration",
+    "bioimage_microscopy-02-segmentation-model",
+    "bioimage_microscopy-03-ground-truth-annotations"
+  ],
+  "schema": "biointel.step164.module-operational-contract.v1",
+  "scientific_boundary": "Automated image segmentation must be reviewed against representative ground truth.",
+  "software_owned_target": "10/10",
+  "specialist_claims_fail_closed": true,
+  "specialist_engines": [
+    "cellpose",
+    "stardist"
+  ],
+  "validation_gates": [
+    "Segmentation quality",
+    "Manual correction",
+    "Batch/image drift",
+    "Ground-truth comparison"
+  ]
+}

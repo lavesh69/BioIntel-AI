@@ -1,0 +1,30 @@
+{
+  "accepted_formats": [
+    "Version-linked review records"
+  ],
+  "external_release_requires_all_real_artifacts": true,
+  "module_key": "collaboration_review_v2",
+  "module_title": "Scientific review depth",
+  "native_research_fallback_ready": true,
+  "optimization_controls": [
+    "Indexed review status",
+    "Notification batching",
+    "Immutable decision records"
+  ],
+  "reference_asset_ids": [
+    "collaboration_review_v2-01-reviewer-roles",
+    "collaboration_review_v2-02-decision-policy",
+    "collaboration_review_v2-03-retention-policy"
+  ],
+  "schema": "biointel.step164.module-operational-contract.v1",
+  "scientific_boundary": "Formal electronic signatures and regulated review require organization-specific validation.",
+  "software_owned_target": "10/10",
+  "specialist_claims_fail_closed": true,
+  "specialist_engines": [],
+  "validation_gates": [
+    "Identity",
+    "Version-linked comments",
+    "Conflict resolution",
+    "Locked decisions"
+  ]
+}

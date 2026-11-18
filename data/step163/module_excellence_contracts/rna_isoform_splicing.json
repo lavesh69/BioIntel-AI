@@ -1,0 +1,59 @@
+{
+  "accepted_native_formats": [
+    "GTF/GFF",
+    "BED",
+    "junction tables"
+  ],
+  "claim_policy": {
+    "demo_result_label_required": true,
+    "expert_review_required_for_release": true,
+    "external_validation_required_for_release": true,
+    "limitations_required": true,
+    "reference_result_label_required": true,
+    "uncertainty_disclosure_required": true
+  },
+  "contract_sha256": "7f9aa3c69cb390f0449cec49da30334fd384edfb48255ce3398956531660198f",
+  "module_key": "rna_isoform_splicing",
+  "module_title": "RNA splicing depth",
+  "native_fallback_policy": {
+    "available": true,
+    "confirmatory_claims_allowed": false,
+    "label": "BioIntel deterministic research fallback",
+    "may_replace_specialist_engine": false
+  },
+  "optimization_controls": [
+    "Indexed annotations",
+    "Sparse junction matrices",
+    "Region queries"
+  ],
+  "quality_dimensions": {
+    "bounded_resource_execution": true,
+    "complete_result_export": true,
+    "crash_loop_protection": true,
+    "deterministic_native_execution": true,
+    "external_release_fail_closed": true,
+    "input_integrity": true,
+    "model_authenticity_guard": true,
+    "reference_lifecycle_contract": true,
+    "reproducibility_signature": true,
+    "specialist_runtime_adapter": true
+  },
+  "required_production_references": [
+    "Transcript annotation",
+    "Reference genome"
+  ],
+  "required_specialist_engines": [
+    "biointel_native::rna_isoform_splicing",
+    "star",
+    "mafft"
+  ],
+  "schema": "biointel.step163.module-excellence-contract.v1",
+  "scientific_boundary": "Isoform and splicing calls depend on alignment, annotation and replicate-aware statistics.",
+  "software_owned_target": "10/10",
+  "validation_gates": [
+    "Junction confidence",
+    "Isoform ambiguity",
+    "Replicate-aware PSI",
+    "Long-read support"
+  ]
+}

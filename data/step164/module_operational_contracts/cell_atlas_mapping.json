@@ -1,0 +1,33 @@
+{
+  "accepted_formats": [
+    "H5AD",
+    "MTX",
+    "CSV metadata"
+  ],
+  "external_release_requires_all_real_artifacts": true,
+  "module_key": "cell_atlas_mapping",
+  "module_title": "Cell-atlas mapping depth",
+  "native_research_fallback_ready": true,
+  "optimization_controls": [
+    "Backed reference access",
+    "Embedding cache",
+    "Sparse query matrices"
+  ],
+  "reference_asset_ids": [
+    "cell_atlas_mapping-01-reference-atlas",
+    "cell_atlas_mapping-02-gene-identifier-map"
+  ],
+  "schema": "biointel.step164.module-operational-contract.v1",
+  "scientific_boundary": "Transferred labels require marker review and independent biological validation.",
+  "software_owned_target": "10/10",
+  "specialist_claims_fail_closed": true,
+  "specialist_engines": [
+    "scanpy"
+  ],
+  "validation_gates": [
+    "Reference compatibility",
+    "Batch/platform shift",
+    "Unknown-cell detection",
+    "Annotation confidence"
+  ]
+}

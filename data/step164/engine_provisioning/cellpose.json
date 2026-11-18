@@ -1,0 +1,48 @@
+{
+  "category": "Bioimaging",
+  "claim_boundary": "A complete recipe is not an installed or scientifically qualified runtime. Installation, licence acceptance, weights, references and smoke-test evidence are verified independently.",
+  "engine": "cellpose",
+  "installation": {
+    "conda_channels": [
+      "conda-forge",
+      "bioconda"
+    ],
+    "conda_packages": [
+      "cellpose"
+    ],
+    "licence_acceptance_required": false,
+    "manual_distribution": false,
+    "pip_packages": [
+      "cellpose"
+    ],
+    "supported_backends": [
+      "micromamba-conda-lock",
+      "container",
+      "registered-native-installation"
+    ],
+    "version_constraint": ">=current-supported-release,<next-breaking-major"
+  },
+  "label": "Cellpose",
+  "manifest_sha256": "a745e16ad2dae7c731f0ba560a0e28f6d8bf20de476af6f20acbeb0113a87ca2",
+  "modules": [
+    "bioimage_microscopy",
+    "digital_pathology_foundation",
+    "organoid_3d",
+    "phenotypic_screening",
+    "spatial_medicine_tme",
+    "spatial_omics_pathology"
+  ],
+  "qualification": {
+    "executable_sha256_required": true,
+    "golden_fixture_required": true,
+    "model_weights_required": false,
+    "negative_control_required": true,
+    "reference_data_required": false,
+    "smoke_test": [
+      "cellpose",
+      "--version"
+    ],
+    "version_capture_required": true
+  },
+  "schema": "biointel.step164.engine-provisioning-manifest.v1"
+}

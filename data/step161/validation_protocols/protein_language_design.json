@@ -1,0 +1,45 @@
+{
+  "completion_fields": {
+    "independent_validation": false,
+    "prospective_validation": false,
+    "protocol_version": true,
+    "reviewer_approved": false,
+    "source_checksums": false
+  },
+  "external_evidence_attached": false,
+  "intended_use_boundary": "Generated sequences are hypotheses and require structural and experimental validation.",
+  "module_key": "protein_language_design",
+  "module_title": "Protein design depth",
+  "negative_controls_required": true,
+  "prospective_validation_required": true,
+  "protocol_sha256": "0640cde0334c66fc275bd9511015d12a2a512930969f3ebb09655c1cd34d1d7c",
+  "protocol_status": "ready-for-external-execution",
+  "protocol_version": "1.0.0",
+  "release_eligible": false,
+  "required_reference_assets": [
+    "Model weights",
+    "Structure templates",
+    "Conservation constraints"
+  ],
+  "required_specialist_engines": [
+    "proteinmpnn",
+    "rfdiffusion"
+  ],
+  "required_validation_gates": [
+    "Constraint enforcement",
+    "Sequence diversity",
+    "Structure feedback",
+    "Wet-lab validation"
+  ],
+  "reviewer_signoff_required": true,
+  "schema": "biointel.step161.external-validation-protocol.v1",
+  "source_checksums_required": true,
+  "study_design_requirements": [
+    "Independent dataset or site not used during development",
+    "Prespecified endpoints and acceptance thresholds",
+    "Locked software, model and reference versions",
+    "Source-data checksums and immutable analysis manifest",
+    "Blinded or independently adjudicated review where applicable",
+    "Subgroup, calibration, uncertainty and failure analysis"
+  ]
+}

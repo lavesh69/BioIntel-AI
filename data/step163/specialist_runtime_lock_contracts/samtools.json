@@ -1,0 +1,31 @@
+{
+  "bundled_in_core_package": false,
+  "category": "Genomics",
+  "checksum_required": true,
+  "container_digest_or_binary_hash_required": true,
+  "engine": "samtools",
+  "environment_lock_required": true,
+  "execution_backends": [
+    "native-executable",
+    "conda-lock",
+    "container",
+    "wsl2"
+  ],
+  "install_strategy": "native-or-conda-lock",
+  "installed_and_qualified": false,
+  "label": "SAMtools",
+  "licence_class": "open-source-or-provider-terms",
+  "manual_action_required": false,
+  "model_or_database_required": false,
+  "modules": [
+    "epigenomics_chromatin",
+    "long_read_epigenome",
+    "single_cell_long_read_isoforms",
+    "structural_variant_repeat"
+  ],
+  "package_hint": "Provision a version-pinned SAMtools executable and record its checksum.",
+  "runtime_self_test_required": true,
+  "schema": "biointel.step163.specialist-runtime-lock-contract.v1",
+  "scientific_smoke_test_required": true,
+  "version_probe_required": true
+}

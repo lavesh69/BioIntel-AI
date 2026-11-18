@@ -1,0 +1,30 @@
+{
+  "accepted_formats": [
+    "Local scientific assets"
+  ],
+  "external_release_requires_all_real_artifacts": true,
+  "module_key": "data_lakehouse_v2",
+  "module_title": "Data lakehouse depth",
+  "native_research_fallback_ready": true,
+  "optimization_controls": [
+    "Incremental indexing",
+    "Hash cache",
+    "Tiered storage"
+  ],
+  "reference_asset_ids": [
+    "data_lakehouse_v2-01-metadata-schema",
+    "data_lakehouse_v2-02-access-policy",
+    "data_lakehouse_v2-03-retention-rules"
+  ],
+  "schema": "biointel.step164.module-operational-contract.v1",
+  "scientific_boundary": "Indexed assets still require scientific QC and appropriate access controls.",
+  "software_owned_target": "10/10",
+  "specialist_claims_fail_closed": true,
+  "specialist_engines": [],
+  "validation_gates": [
+    "Content identity",
+    "Schema/index freshness",
+    "Access filtering",
+    "Archive/restore"
+  ]
+}

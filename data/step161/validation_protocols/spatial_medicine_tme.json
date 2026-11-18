@@ -1,0 +1,48 @@
+{
+  "completion_fields": {
+    "independent_validation": false,
+    "prospective_validation": false,
+    "protocol_version": true,
+    "reviewer_approved": false,
+    "source_checksums": false
+  },
+  "external_evidence_attached": false,
+  "intended_use_boundary": "Tumour-microenvironment patterns are exploratory until registration, pathology and cohort validation are complete.",
+  "module_key": "spatial_medicine_tme",
+  "module_title": "Spatial medicine and TME depth",
+  "negative_controls_required": true,
+  "prospective_validation_required": true,
+  "protocol_sha256": "0f370f6f0e64613f31c2d9a70f158f7ca00db742b96a378efc1b98cce5da9b2b",
+  "protocol_status": "ready-for-external-execution",
+  "protocol_version": "1.0.0",
+  "release_eligible": false,
+  "required_reference_assets": [
+    "Tissue image",
+    "Spatial assay manifest",
+    "Cell-type reference",
+    "Pathology annotations"
+  ],
+  "required_specialist_engines": [
+    "openslide",
+    "cellpose",
+    "scanpy"
+  ],
+  "required_validation_gates": [
+    "Registration",
+    "Segmentation",
+    "Patient replication",
+    "Neighborhood uncertainty",
+    "Pathologist review"
+  ],
+  "reviewer_signoff_required": true,
+  "schema": "biointel.step161.external-validation-protocol.v1",
+  "source_checksums_required": true,
+  "study_design_requirements": [
+    "Independent dataset or site not used during development",
+    "Prespecified endpoints and acceptance thresholds",
+    "Locked software, model and reference versions",
+    "Source-data checksums and immutable analysis manifest",
+    "Blinded or independently adjudicated review where applicable",
+    "Subgroup, calibration, uncertainty and failure analysis"
+  ]
+}

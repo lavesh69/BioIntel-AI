@@ -1,0 +1,18 @@
+{
+  "external_scientific_evidence": false,
+  "module_key": "amr_surveillance",
+  "module_title": "AMR surveillance depth",
+  "production_use_allowed": false,
+  "records": [
+    {
+      "record_id": "amr_surveillance:1:demo",
+      "reference_label": "Pinned AMR database",
+      "status": "test-fixture",
+      "value": 1.0
+    }
+  ],
+  "reference_name": "Pinned AMR database",
+  "schema": "biointel.step161.development-reference-fixture.v1",
+  "scope": "development-and-regression-only",
+  "synthetic": true
+}

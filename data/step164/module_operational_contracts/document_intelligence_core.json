@@ -1,0 +1,30 @@
+{
+  "accepted_formats": [
+    "PDF/DOCX/XLSX/HTML/images"
+  ],
+  "external_release_requires_all_real_artifacts": true,
+  "module_key": "document_intelligence_core",
+  "module_title": "Document intelligence depth",
+  "native_research_fallback_ready": true,
+  "optimization_controls": [
+    "Page streaming",
+    "OCR caches",
+    "Background batch extraction"
+  ],
+  "reference_asset_ids": [
+    "document_intelligence_core-01-ocr-language-assets",
+    "document_intelligence_core-02-citation-policy",
+    "document_intelligence_core-03-approved-extraction-schema"
+  ],
+  "schema": "biointel.step164.module-operational-contract.v1",
+  "scientific_boundary": "Extracted text and tables require source-page review before scientific use.",
+  "software_owned_target": "10/10",
+  "specialist_claims_fail_closed": true,
+  "specialist_engines": [],
+  "validation_gates": [
+    "Page-level provenance",
+    "Table/figure review",
+    "OCR confidence",
+    "Citation traceability"
+  ]
+}

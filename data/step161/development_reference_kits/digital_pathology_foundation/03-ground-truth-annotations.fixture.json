@@ -1,0 +1,18 @@
+{
+  "external_scientific_evidence": false,
+  "module_key": "digital_pathology_foundation",
+  "module_title": "Digital pathology foundation-model depth",
+  "production_use_allowed": false,
+  "records": [
+    {
+      "record_id": "digital_pathology_foundation:3:demo",
+      "reference_label": "Ground-truth annotations",
+      "status": "test-fixture",
+      "value": 1.0
+    }
+  ],
+  "reference_name": "Ground-truth annotations",
+  "schema": "biointel.step161.development-reference-fixture.v1",
+  "scope": "development-and-regression-only",
+  "synthetic": true
+}

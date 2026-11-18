@@ -1,0 +1,42 @@
+{
+  "completion_fields": {
+    "independent_validation": false,
+    "prospective_validation": false,
+    "protocol_version": true,
+    "reviewer_approved": false,
+    "source_checksums": false
+  },
+  "external_evidence_attached": false,
+  "intended_use_boundary": "Process recommendations require controlled experiments and approved quality systems.",
+  "module_key": "bioprocess_fermentation",
+  "module_title": "Bioprocess depth",
+  "negative_controls_required": true,
+  "prospective_validation_required": true,
+  "protocol_sha256": "a2d9f71d0f68bb4c7a1d9738fa9753464b235fb790e4e1428f75cb2ae9682d8a",
+  "protocol_status": "ready-for-external-execution",
+  "protocol_version": "1.0.0",
+  "release_eligible": false,
+  "required_reference_assets": [
+    "Process units",
+    "Batch phase definitions",
+    "Golden batch"
+  ],
+  "required_specialist_engines": [],
+  "required_validation_gates": [
+    "Batch-specific time order",
+    "Unit consistency",
+    "Mass-balance assumptions",
+    "Control-limit review"
+  ],
+  "reviewer_signoff_required": true,
+  "schema": "biointel.step161.external-validation-protocol.v1",
+  "source_checksums_required": true,
+  "study_design_requirements": [
+    "Independent dataset or site not used during development",
+    "Prespecified endpoints and acceptance thresholds",
+    "Locked software, model and reference versions",
+    "Source-data checksums and immutable analysis manifest",
+    "Blinded or independently adjudicated review where applicable",
+    "Subgroup, calibration, uncertainty and failure analysis"
+  ]
+}

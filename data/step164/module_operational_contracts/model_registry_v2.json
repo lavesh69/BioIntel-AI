@@ -1,0 +1,30 @@
+{
+  "accepted_formats": [
+    "Model package/manifest"
+  ],
+  "external_release_requires_all_real_artifacts": true,
+  "module_key": "model_registry_v2",
+  "module_title": "Model lifecycle depth",
+  "native_research_fallback_ready": true,
+  "optimization_controls": [
+    "Artifact deduplication",
+    "Lazy model loading",
+    "Metric caches"
+  ],
+  "reference_asset_ids": [
+    "model_registry_v2-01-dataset-snapshots",
+    "model_registry_v2-02-evaluation-protocol",
+    "model_registry_v2-03-approval-policy"
+  ],
+  "schema": "biointel.step164.module-operational-contract.v1",
+  "scientific_boundary": "A registered model is not validated or approved merely because an artifact exists.",
+  "software_owned_target": "10/10",
+  "specialist_claims_fail_closed": true,
+  "specialist_engines": [],
+  "validation_gates": [
+    "Lineage",
+    "Calibration/external validation",
+    "Approval gates",
+    "Rollback"
+  ]
+}

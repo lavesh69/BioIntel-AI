@@ -1,0 +1,58 @@
+{
+  "accepted_native_formats": [
+    "CSV/TSV synthetic cohort",
+    "JSON scenario manifest"
+  ],
+  "claim_policy": {
+    "demo_result_label_required": true,
+    "expert_review_required_for_release": true,
+    "external_validation_required_for_release": true,
+    "limitations_required": true,
+    "reference_result_label_required": true,
+    "uncertainty_disclosure_required": true
+  },
+  "contract_sha256": "22d6861158c742ef9134746b5674acef3af9199be5a9ecd43ca616b48d6f133e",
+  "module_key": "synthetic_cohort_trial",
+  "module_title": "Synthetic cohort and trial-simulation depth",
+  "native_fallback_policy": {
+    "available": true,
+    "confirmatory_claims_allowed": false,
+    "label": "BioIntel deterministic research fallback",
+    "may_replace_specialist_engine": false
+  },
+  "optimization_controls": [
+    "Seeded simulation",
+    "Vectorized scenarios",
+    "Background Monte Carlo"
+  ],
+  "quality_dimensions": {
+    "bounded_resource_execution": true,
+    "complete_result_export": true,
+    "crash_loop_protection": true,
+    "deterministic_native_execution": true,
+    "external_release_fail_closed": true,
+    "input_integrity": true,
+    "model_authenticity_guard": true,
+    "reference_lifecycle_contract": true,
+    "reproducibility_signature": true,
+    "specialist_runtime_adapter": true
+  },
+  "required_production_references": [
+    "Scenario assumptions",
+    "Outcome model",
+    "Site/arm definitions",
+    "Random seeds"
+  ],
+  "required_specialist_engines": [
+    "biointel_native::synthetic_cohort_trial"
+  ],
+  "schema": "biointel.step163.module-excellence-contract.v1",
+  "scientific_boundary": "Synthetic cohorts are design tools and must never be represented as real clinical evidence.",
+  "software_owned_target": "10/10",
+  "validation_gates": [
+    "Covariate balance",
+    "Scenario sensitivity",
+    "Missingness/dropout",
+    "Reproducibility"
+  ]
+}

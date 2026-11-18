@@ -1,0 +1,59 @@
+{
+  "accepted_native_formats": [
+    "TIFF/OME-TIFF",
+    "CSV measurements"
+  ],
+  "claim_policy": {
+    "demo_result_label_required": true,
+    "expert_review_required_for_release": true,
+    "external_validation_required_for_release": true,
+    "limitations_required": true,
+    "reference_result_label_required": true,
+    "uncertainty_disclosure_required": true
+  },
+  "contract_sha256": "5424d1c3b387c25c825097bd8956f2f977cd05f14b545f49d284a9087f98c229",
+  "module_key": "organoid_3d",
+  "module_title": "Organoid analytics depth",
+  "native_fallback_policy": {
+    "available": true,
+    "confirmatory_claims_allowed": false,
+    "label": "BioIntel deterministic research fallback",
+    "may_replace_specialist_engine": false
+  },
+  "optimization_controls": [
+    "Chunked z-stacks",
+    "GPU queues",
+    "Compressed masks"
+  ],
+  "quality_dimensions": {
+    "bounded_resource_execution": true,
+    "complete_result_export": true,
+    "crash_loop_protection": true,
+    "deterministic_native_execution": true,
+    "external_release_fail_closed": true,
+    "input_integrity": true,
+    "model_authenticity_guard": true,
+    "reference_lifecycle_contract": true,
+    "reproducibility_signature": true,
+    "specialist_runtime_adapter": true
+  },
+  "required_production_references": [
+    "Voxel calibration",
+    "Plate map",
+    "Ground-truth masks"
+  ],
+  "required_specialist_engines": [
+    "biointel_native::organoid_3d",
+    "cellpose",
+    "stardist"
+  ],
+  "schema": "biointel.step163.module-excellence-contract.v1",
+  "scientific_boundary": "Automated organoid phenotypes require manual QC and biological replication.",
+  "software_owned_target": "10/10",
+  "validation_gates": [
+    "3D segmentation",
+    "Tracking",
+    "Batch effects",
+    "Manual correction"
+  ]
+}

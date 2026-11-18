@@ -1,0 +1,44 @@
+{
+  "completion_fields": {
+    "independent_validation": false,
+    "prospective_validation": false,
+    "protocol_version": true,
+    "reviewer_approved": false,
+    "source_checksums": false
+  },
+  "external_evidence_attached": false,
+  "intended_use_boundary": "Vector engineering scores do not establish biodistribution, genotoxicity, manufacturability or clinical safety.",
+  "module_key": "gene_therapy_vector",
+  "module_title": "Gene-therapy vector depth",
+  "negative_controls_required": true,
+  "prospective_validation_required": true,
+  "protocol_sha256": "99aa78bc949909200fd50e8f86ff2ae3e1b9d8387b808ffeb898c3e511cd5ebb",
+  "protocol_status": "ready-for-external-execution",
+  "protocol_version": "1.0.0",
+  "release_eligible": false,
+  "required_reference_assets": [
+    "Vector-specific packaging limits",
+    "Promoter/tropism evidence",
+    "Immunogenicity evidence",
+    "Biosafety policy"
+  ],
+  "required_specialist_engines": [],
+  "required_validation_gates": [
+    "Cargo integrity",
+    "Packaging capacity",
+    "Integration risk",
+    "Immunogenicity",
+    "Manufacturing review"
+  ],
+  "reviewer_signoff_required": true,
+  "schema": "biointel.step161.external-validation-protocol.v1",
+  "source_checksums_required": true,
+  "study_design_requirements": [
+    "Independent dataset or site not used during development",
+    "Prespecified endpoints and acceptance thresholds",
+    "Locked software, model and reference versions",
+    "Source-data checksums and immutable analysis manifest",
+    "Blinded or independently adjudicated review where applicable",
+    "Subgroup, calibration, uncertainty and failure analysis"
+  ]
+}

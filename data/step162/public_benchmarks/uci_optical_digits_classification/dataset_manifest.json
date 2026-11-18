@@ -1,0 +1,16 @@
+{
+  "clinical_release_eligible": false,
+  "dataset_key": "uci_optical_digits_classification",
+  "dataset_sha256": "7e5e64cd662d533eeec739bb699bf718243fc2c2f6993db801f062cd0dae337d",
+  "distribution": "scikit-learn 1.8.0 bundled dataset copy",
+  "features": 64,
+  "licence_review_status": "source terms recorded; deployment user must confirm intended-use compliance",
+  "public_reference_data": true,
+  "rows": 1797,
+  "schema": "biointel.step162.public-dataset-manifest.v1",
+  "source_name": "UCI Optical Recognition of Handwritten Digits via scikit-learn",
+  "source_url": "https://archive.ics.uci.edu/dataset/80/optical+recognition+of+handwritten+digits",
+  "synthetic": false,
+  "target_description": "[0 1 2 3 4 5 6 7 8 9]",
+  "title": "UCI Optical Digits public benchmark"
+}

@@ -1,0 +1,18 @@
+{
+  "external_scientific_evidence": false,
+  "module_key": "pharmacovigilance_intelligence",
+  "module_title": "Pharmacovigilance depth",
+  "production_use_allowed": false,
+  "records": [
+    {
+      "record_id": "pharmacovigilance_intelligence:4:demo",
+      "reference_label": "Review policy",
+      "status": "test-fixture",
+      "value": 1.0
+    }
+  ],
+  "reference_name": "Review policy",
+  "schema": "biointel.step161.development-reference-fixture.v1",
+  "scope": "development-and-regression-only",
+  "synthetic": true
+}

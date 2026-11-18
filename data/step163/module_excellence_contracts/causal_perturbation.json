@@ -1,0 +1,56 @@
+{
+  "accepted_native_formats": [
+    "CSV/TSV estimates"
+  ],
+  "claim_policy": {
+    "demo_result_label_required": true,
+    "expert_review_required_for_release": true,
+    "external_validation_required_for_release": true,
+    "limitations_required": true,
+    "reference_result_label_required": true,
+    "uncertainty_disclosure_required": true
+  },
+  "contract_sha256": "529cdebf09c15fac0accced1b92a341a3c4f17204f29b4149bdfd91fa29cd5df",
+  "module_key": "causal_perturbation",
+  "module_title": "Causal inference depth",
+  "native_fallback_policy": {
+    "available": true,
+    "confirmatory_claims_allowed": false,
+    "label": "BioIntel deterministic research fallback",
+    "may_replace_specialist_engine": false
+  },
+  "optimization_controls": [
+    "Vectorized sensitivity analysis",
+    "Cached bootstrap",
+    "Bounded DAG rendering"
+  ],
+  "quality_dimensions": {
+    "bounded_resource_execution": true,
+    "complete_result_export": true,
+    "crash_loop_protection": true,
+    "deterministic_native_execution": true,
+    "external_release_fail_closed": true,
+    "input_integrity": true,
+    "model_authenticity_guard": true,
+    "reference_lifecycle_contract": true,
+    "reproducibility_signature": true,
+    "specialist_runtime_adapter": true
+  },
+  "required_production_references": [
+    "Covariate register",
+    "Instrument definitions",
+    "DAG assumptions"
+  ],
+  "required_specialist_engines": [
+    "biointel_native::causal_perturbation"
+  ],
+  "schema": "biointel.step163.module-excellence-contract.v1",
+  "scientific_boundary": "Causal claims depend on design assumptions and cannot be established by association alone.",
+  "software_owned_target": "10/10",
+  "validation_gates": [
+    "Instrument strength",
+    "Pleiotropy/sensitivity",
+    "Confounding assessment",
+    "Multiplicity correction"
+  ]
+}

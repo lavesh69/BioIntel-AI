@@ -1,0 +1,34 @@
+{
+  "accepted_formats": [
+    "TIFF/OME-TIFF",
+    "CSV measurements"
+  ],
+  "external_release_requires_all_real_artifacts": true,
+  "module_key": "organoid_3d",
+  "module_title": "Organoid analytics depth",
+  "native_research_fallback_ready": true,
+  "optimization_controls": [
+    "Chunked z-stacks",
+    "GPU queues",
+    "Compressed masks"
+  ],
+  "reference_asset_ids": [
+    "organoid_3d-01-voxel-calibration",
+    "organoid_3d-02-plate-map",
+    "organoid_3d-03-ground-truth-masks"
+  ],
+  "schema": "biointel.step164.module-operational-contract.v1",
+  "scientific_boundary": "Automated organoid phenotypes require manual QC and biological replication.",
+  "software_owned_target": "10/10",
+  "specialist_claims_fail_closed": true,
+  "specialist_engines": [
+    "cellpose",
+    "stardist"
+  ],
+  "validation_gates": [
+    "3D segmentation",
+    "Tracking",
+    "Batch effects",
+    "Manual correction"
+  ]
+}

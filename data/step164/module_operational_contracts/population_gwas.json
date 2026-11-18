@@ -1,0 +1,36 @@
+{
+  "accepted_formats": [
+    "VCF/BCF",
+    "PLINK BED/BIM/FAM",
+    "summary statistics"
+  ],
+  "external_release_requires_all_real_artifacts": true,
+  "module_key": "population_gwas",
+  "module_title": "GWAS depth",
+  "native_research_fallback_ready": true,
+  "optimization_controls": [
+    "Indexed variants",
+    "Chromosome-partitioned jobs",
+    "Memory estimates"
+  ],
+  "reference_asset_ids": [
+    "population_gwas-01-reference-panel",
+    "population_gwas-02-genome-build",
+    "population_gwas-03-phenotype-covariate-dictionary"
+  ],
+  "schema": "biointel.step164.module-operational-contract.v1",
+  "scientific_boundary": "Association findings require ancestry-aware QC, replication and careful interpretation.",
+  "software_owned_target": "10/10",
+  "specialist_claims_fail_closed": true,
+  "specialist_engines": [
+    "plink2",
+    "regenie",
+    "saige"
+  ],
+  "validation_gates": [
+    "Sample/variant QC",
+    "Population structure",
+    "Relatedness",
+    "External replication"
+  ]
+}

@@ -1,0 +1,11 @@
+item,section,locked,status,planned_value,executed_value,deviation_reason
+Primary hypothesis,Hypothesis,True,Locked,Treatment improves response,Treatment improves response,
+Primary endpoint,Outcomes,True,Locked,Overall response,Overall response,
+Sample size,Design,True,Locked,140,140,
+Exclusion rules,Population,True,Locked,Predefined QC,Predefined QC,
+Primary model,Analysis,True,Locked,Logistic regression,Logistic regression,
+Covariates,Analysis,True,Locked,"Site, baseline","Site, baseline",
+Multiplicity,Analysis,True,Locked,Gatekeeping,Gatekeeping,
+Random seed,Reproducibility,True,Locked,84721,84721,
+Sensitivity analyses,Analysis,False,Amended,MI and PP,"MI, PP and tipping point",Added after blinded missingness review
+Stopping rule,Interim,True,Locked,No early efficacy stop,No early efficacy stop,

@@ -1,0 +1,35 @@
+{
+  "accepted_formats": [
+    "FASTQ/FASTA",
+    "abundance tables"
+  ],
+  "external_release_requires_all_real_artifacts": true,
+  "module_key": "strain_microbiome",
+  "module_title": "Strain-resolved microbiome depth",
+  "native_research_fallback_ready": true,
+  "optimization_controls": [
+    "Per-sample parallelism",
+    "Database pinning",
+    "Sparse abundance matrices"
+  ],
+  "reference_asset_ids": [
+    "strain_microbiome-01-taxonomy-database",
+    "strain_microbiome-02-marker-database",
+    "strain_microbiome-03-amr-virulence-database"
+  ],
+  "schema": "biointel.step164.module-operational-contract.v1",
+  "scientific_boundary": "Strain-level assignments are database- and coverage-dependent.",
+  "software_owned_target": "10/10",
+  "specialist_claims_fail_closed": true,
+  "specialist_engines": [
+    "kraken2",
+    "bracken",
+    "humann"
+  ],
+  "validation_gates": [
+    "Contamination control",
+    "Compositional statistics",
+    "Strain confidence",
+    "Mock-community benchmark"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "external_scientific_evidence": false,
+  "module_key": "protein_language_design",
+  "module_title": "Protein design depth",
+  "production_use_allowed": false,
+  "records": [
+    {
+      "record_id": "protein_language_design:1:demo",
+      "reference_label": "Model weights",
+      "status": "test-fixture",
+      "value": 1.0
+    }
+  ],
+  "reference_name": "Model weights",
+  "schema": "biointel.step161.development-reference-fixture.v1",
+  "scope": "development-and-regression-only",
+  "synthetic": true
+}

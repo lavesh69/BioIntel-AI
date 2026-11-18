@@ -1,0 +1,61 @@
+{
+  "accepted_native_formats": [
+    "JSON/YAML model metadata",
+    "CSV benchmark tables",
+    "Local model directories"
+  ],
+  "claim_policy": {
+    "demo_result_label_required": true,
+    "expert_review_required_for_release": true,
+    "external_validation_required_for_release": true,
+    "limitations_required": true,
+    "reference_result_label_required": true,
+    "uncertainty_disclosure_required": true
+  },
+  "contract_sha256": "0856eac283794affd8d0a9bb415463a54f14a38ee7e894b192f23a262d3b841b",
+  "module_key": "biomedical_foundation_model_hub",
+  "module_title": "Foundation-model hub depth",
+  "native_fallback_policy": {
+    "available": true,
+    "confirmatory_claims_allowed": false,
+    "label": "BioIntel deterministic research fallback",
+    "may_replace_specialist_engine": false
+  },
+  "optimization_controls": [
+    "Content-addressed model cache",
+    "Lazy model loading",
+    "Hardware preflight"
+  ],
+  "quality_dimensions": {
+    "bounded_resource_execution": true,
+    "complete_result_export": true,
+    "crash_loop_protection": true,
+    "deterministic_native_execution": true,
+    "external_release_fail_closed": true,
+    "input_integrity": true,
+    "model_authenticity_guard": true,
+    "reference_lifecycle_contract": true,
+    "reproducibility_signature": true,
+    "specialist_runtime_adapter": true
+  },
+  "required_production_references": [
+    "Model cards",
+    "Weight checksums",
+    "Licences",
+    "Benchmark protocols",
+    "Hardware manifest"
+  ],
+  "required_specialist_engines": [
+    "biointel_native::biomedical_foundation_model_hub"
+  ],
+  "schema": "biointel.step163.module-excellence-contract.v1",
+  "scientific_boundary": "Model availability and benchmark scores do not establish fitness for a specific biomedical intended use.",
+  "software_owned_target": "10/10",
+  "validation_gates": [
+    "Licence review",
+    "Asset integrity",
+    "Task compatibility",
+    "External validation",
+    "OOD testing"
+  ]
+}

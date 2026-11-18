@@ -1,0 +1,26 @@
+{
+  "bundled_in_core_package": false,
+  "category": "Immunoinformatics",
+  "checksum_required": true,
+  "container_digest_or_binary_hash_required": true,
+  "engine": "netmhciipan",
+  "environment_lock_required": true,
+  "execution_backends": [
+    "native-executable",
+    "managed-workspace"
+  ],
+  "install_strategy": "manual-licence-registration",
+  "installed_and_qualified": false,
+  "label": "NetMHCIIpan",
+  "licence_class": "registration-required",
+  "manual_action_required": true,
+  "model_or_database_required": true,
+  "modules": [
+    "immunoinformatics_vaccine"
+  ],
+  "package_hint": "Register a licensed NetMHCIIpan installation and its data directory.",
+  "runtime_self_test_required": true,
+  "schema": "biointel.step163.specialist-runtime-lock-contract.v1",
+  "scientific_smoke_test_required": true,
+  "version_probe_required": true
+}

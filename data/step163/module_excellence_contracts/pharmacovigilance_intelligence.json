@@ -1,0 +1,57 @@
+{
+  "accepted_native_formats": [
+    "CSV/TSV adverse-event reports"
+  ],
+  "claim_policy": {
+    "demo_result_label_required": true,
+    "expert_review_required_for_release": true,
+    "external_validation_required_for_release": true,
+    "limitations_required": true,
+    "reference_result_label_required": true,
+    "uncertainty_disclosure_required": true
+  },
+  "contract_sha256": "e92e96d7d52312bd9974cba86c0069275ccf1fa3d3a4b55fefc890691146f65f",
+  "module_key": "pharmacovigilance_intelligence",
+  "module_title": "Pharmacovigilance depth",
+  "native_fallback_policy": {
+    "available": true,
+    "confirmatory_claims_allowed": false,
+    "label": "BioIntel deterministic research fallback",
+    "may_replace_specialist_engine": false
+  },
+  "optimization_controls": [
+    "Incremental aggregation",
+    "Coded-term cache",
+    "Bounded report previews"
+  ],
+  "quality_dimensions": {
+    "bounded_resource_execution": true,
+    "complete_result_export": true,
+    "crash_loop_protection": true,
+    "deterministic_native_execution": true,
+    "external_release_fail_closed": true,
+    "input_integrity": true,
+    "model_authenticity_guard": true,
+    "reference_lifecycle_contract": true,
+    "reproducibility_signature": true,
+    "specialist_runtime_adapter": true
+  },
+  "required_production_references": [
+    "Drug/event dictionaries",
+    "Deduplication rules",
+    "Exposure context",
+    "Review policy"
+  ],
+  "required_specialist_engines": [
+    "biointel_native::pharmacovigilance_intelligence"
+  ],
+  "schema": "biointel.step163.module-excellence-contract.v1",
+  "scientific_boundary": "Spontaneous-report signals do not prove causality, incidence or comparative risk.",
+  "software_owned_target": "10/10",
+  "validation_gates": [
+    "Duplicate reports",
+    "Disproportionality stability",
+    "Confounding/reporting bias",
+    "Clinical review"
+  ]
+}

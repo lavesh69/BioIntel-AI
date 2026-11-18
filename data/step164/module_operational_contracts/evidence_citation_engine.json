@@ -1,0 +1,30 @@
+{
+  "accepted_formats": [
+    "DOI/PMID/URL metadata"
+  ],
+  "external_release_requires_all_real_artifacts": true,
+  "module_key": "evidence_citation_engine",
+  "module_title": "Evidence and citation depth",
+  "native_research_fallback_ready": true,
+  "optimization_controls": [
+    "Indexed retrieval",
+    "Deduplicated citations",
+    "Cached entity maps"
+  ],
+  "reference_asset_ids": [
+    "evidence_citation_engine-01-provider-snapshots",
+    "evidence_citation_engine-02-retraction-metadata",
+    "evidence_citation_engine-03-entity-normalization"
+  ],
+  "schema": "biointel.step164.module-operational-contract.v1",
+  "scientific_boundary": "Citations must support the exact claim and may still represent weak or conflicting evidence.",
+  "software_owned_target": "10/10",
+  "specialist_claims_fail_closed": true,
+  "specialist_engines": [],
+  "validation_gates": [
+    "Claim-source mapping",
+    "Evidence strength",
+    "Conflict/retraction review",
+    "Versioned citations"
+  ]
+}

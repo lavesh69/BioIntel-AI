@@ -1,0 +1,18 @@
+{
+  "external_scientific_evidence": false,
+  "module_key": "docking_dynamics",
+  "module_title": "Docking and dynamics depth",
+  "production_use_allowed": false,
+  "records": [
+    {
+      "record_id": "docking_dynamics:3:demo",
+      "reference_label": "Force-field assets",
+      "status": "test-fixture",
+      "value": 1.0
+    }
+  ],
+  "reference_name": "Force-field assets",
+  "schema": "biointel.step161.development-reference-fixture.v1",
+  "scope": "development-and-regression-only",
+  "synthetic": true
+}

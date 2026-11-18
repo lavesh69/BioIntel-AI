@@ -1,0 +1,37 @@
+{
+  "accepted_formats": [
+    "FASTQ/FASTA",
+    "GFA",
+    "assembly FASTA"
+  ],
+  "external_release_requires_all_real_artifacts": true,
+  "module_key": "long_read_core",
+  "module_title": "Long-read assembly depth",
+  "native_research_fallback_ready": true,
+  "optimization_controls": [
+    "Checkpointed assembly",
+    "Disk/RAM estimation",
+    "Chunked read QC"
+  ],
+  "reference_asset_ids": [
+    "long_read_core-01-reference-related-genome",
+    "long_read_core-02-busco-lineage",
+    "long_read_core-03-k-mer-database"
+  ],
+  "schema": "biointel.step164.module-operational-contract.v1",
+  "scientific_boundary": "Assemblies require platform-aware polishing and independent completeness/contamination assessment.",
+  "software_owned_target": "10/10",
+  "specialist_claims_fail_closed": true,
+  "specialist_engines": [
+    "flye",
+    "hifiasm",
+    "busco",
+    "merqury"
+  ],
+  "validation_gates": [
+    "Read QC",
+    "Polishing",
+    "Haplotig review",
+    "Completeness/contamination"
+  ]
+}

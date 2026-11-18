@@ -1,0 +1,61 @@
+{
+  "accepted_native_formats": [
+    "BAM/CRAM through adapter",
+    "GTF/GFF",
+    "CSV/TSV isoform table"
+  ],
+  "claim_policy": {
+    "demo_result_label_required": true,
+    "expert_review_required_for_release": true,
+    "external_validation_required_for_release": true,
+    "limitations_required": true,
+    "reference_result_label_required": true,
+    "uncertainty_disclosure_required": true
+  },
+  "contract_sha256": "f03f533bc1de7378ecd672b338f5c2290eb934236746879f9bddbec3458ef8c8",
+  "module_key": "single_cell_long_read_isoforms",
+  "module_title": "Single-cell long-read isoform depth",
+  "native_fallback_policy": {
+    "available": true,
+    "confirmatory_claims_allowed": false,
+    "label": "BioIntel deterministic research fallback",
+    "may_replace_specialist_engine": false
+  },
+  "optimization_controls": [
+    "Sparse cell-transcript matrices",
+    "Backed storage",
+    "Transcript cache"
+  ],
+  "quality_dimensions": {
+    "bounded_resource_execution": true,
+    "complete_result_export": true,
+    "crash_loop_protection": true,
+    "deterministic_native_execution": true,
+    "external_release_fail_closed": true,
+    "input_integrity": true,
+    "model_authenticity_guard": true,
+    "reference_lifecycle_contract": true,
+    "reproducibility_signature": true,
+    "specialist_runtime_adapter": true
+  },
+  "required_production_references": [
+    "Transcript annotation",
+    "Cell barcode whitelist",
+    "Reference genome",
+    "Replicate metadata"
+  ],
+  "required_specialist_engines": [
+    "biointel_native::single_cell_long_read_isoforms",
+    "minimap2",
+    "samtools"
+  ],
+  "schema": "biointel.step163.module-excellence-contract.v1",
+  "scientific_boundary": "Cells are not biological replicates; cluster-specific isoform shifts require replicate-aware validation.",
+  "software_owned_target": "10/10",
+  "validation_gates": [
+    "Barcode/UMI QC",
+    "Full-length support",
+    "Junction validation",
+    "Replicate-aware inference"
+  ]
+}

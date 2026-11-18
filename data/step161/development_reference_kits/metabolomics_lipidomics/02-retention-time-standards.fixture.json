@@ -1,0 +1,18 @@
+{
+  "external_scientific_evidence": false,
+  "module_key": "metabolomics_lipidomics",
+  "module_title": "Metabolomics depth",
+  "production_use_allowed": false,
+  "records": [
+    {
+      "record_id": "metabolomics_lipidomics:2:demo",
+      "reference_label": "Retention-time standards",
+      "status": "test-fixture",
+      "value": 1.0
+    }
+  ],
+  "reference_name": "Retention-time standards",
+  "schema": "biointel.step161.development-reference-fixture.v1",
+  "scope": "development-and-regression-only",
+  "synthetic": true
+}

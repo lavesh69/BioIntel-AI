@@ -1,0 +1,46 @@
+{
+  "benchmark_status": "specification-ready-data-required",
+  "development_dataset_must_be_non_synthetic": true,
+  "independent_test_dataset_required": true,
+  "locked_data_model_reference_versions_required": true,
+  "minimum_evidence_bundle": [
+    "immutable source-data checksums",
+    "training/validation/test partition manifest",
+    "per-sample predictions or module-level outputs",
+    "uncertainty intervals or confidence diagnostics",
+    "full parameter and environment manifest",
+    "expert reviewer sign-off"
+  ],
+  "module_key": "epigenomics_chromatin",
+  "module_title": "Epigenomics depth",
+  "prespecified_acceptance_thresholds_required": true,
+  "prospective_or_orthogonal_validation_required": true,
+  "release_eligible": false,
+  "required_data_formats": [
+    "FASTQ",
+    "BAM/CRAM",
+    "BED/narrowPeak",
+    "bigWig"
+  ],
+  "required_failure_analyses": [
+    "missingness and malformed-input analysis",
+    "out-of-distribution or applicability-domain analysis",
+    "subgroup or biological-context analysis",
+    "calibration and uncertainty analysis",
+    "negative-control and leakage analysis",
+    "failed-case review with retained identifiers"
+  ],
+  "required_reference_assets": [
+    "Reference FASTA",
+    "Gene annotation",
+    "Motif database"
+  ],
+  "required_validation_analyses": [
+    "Replicate balance",
+    "Peak reproducibility",
+    "Differential-accessibility assumptions",
+    "Genome-build match"
+  ],
+  "schema": "biointel.step163.task-specific-benchmark.v1",
+  "specification_sha256": "fd18c528dd4371e29b2cb21925ddc1564b654e35696f7066bc6c0e8cfc3c1e72"
+}

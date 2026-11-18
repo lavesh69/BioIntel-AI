@@ -1,0 +1,18 @@
+{
+  "external_scientific_evidence": false,
+  "module_key": "rare_variant_family",
+  "module_title": "Family genetics depth",
+  "production_use_allowed": false,
+  "records": [
+    {
+      "record_id": "rare_variant_family:1:demo",
+      "reference_label": "Reference genome",
+      "status": "test-fixture",
+      "value": 1.0
+    }
+  ],
+  "reference_name": "Reference genome",
+  "schema": "biointel.step161.development-reference-fixture.v1",
+  "scope": "development-and-regression-only",
+  "synthetic": true
+}

@@ -1,0 +1,18 @@
+{
+  "external_scientific_evidence": false,
+  "module_key": "flow_cytometry",
+  "module_title": "Flow-cytometry depth",
+  "production_use_allowed": false,
+  "records": [
+    {
+      "record_id": "flow_cytometry:2:demo",
+      "reference_label": "FMO/unstained controls",
+      "status": "test-fixture",
+      "value": 1.0
+    }
+  ],
+  "reference_name": "FMO/unstained controls",
+  "schema": "biointel.step161.development-reference-fixture.v1",
+  "scope": "development-and-regression-only",
+  "synthetic": true
+}

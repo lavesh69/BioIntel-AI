@@ -1,0 +1,62 @@
+{
+  "accepted_native_formats": [
+    "FASTA",
+    "VCF",
+    "BED",
+    "CSV guide table"
+  ],
+  "claim_policy": {
+    "demo_result_label_required": true,
+    "expert_review_required_for_release": true,
+    "external_validation_required_for_release": true,
+    "limitations_required": true,
+    "reference_result_label_required": true,
+    "uncertainty_disclosure_required": true
+  },
+  "contract_sha256": "0300370cad31f241137f63c9d8474982910ee48b2d5ec786cf52d38d2e47f037",
+  "module_key": "genome_editing_safety",
+  "module_title": "Genome-editing safety depth",
+  "native_fallback_policy": {
+    "available": true,
+    "confirmatory_claims_allowed": false,
+    "label": "BioIntel deterministic research fallback",
+    "may_replace_specialist_engine": false
+  },
+  "optimization_controls": [
+    "Indexed genome search",
+    "Guide cache",
+    "Parallel candidate evaluation"
+  ],
+  "quality_dimensions": {
+    "bounded_resource_execution": true,
+    "complete_result_export": true,
+    "crash_loop_protection": true,
+    "deterministic_native_execution": true,
+    "external_release_fail_closed": true,
+    "input_integrity": true,
+    "model_authenticity_guard": true,
+    "reference_lifecycle_contract": true,
+    "reproducibility_signature": true,
+    "specialist_runtime_adapter": true
+  },
+  "required_production_references": [
+    "Reference genome",
+    "Population VCF",
+    "Annotation GTF/GFF"
+  ],
+  "required_specialist_engines": [
+    "biointel_native::genome_editing_safety",
+    "bowtie",
+    "blastn",
+    "bcftools"
+  ],
+  "schema": "biointel.step163.module-excellence-contract.v1",
+  "scientific_boundary": "In-silico specificity is not proof of editing safety.",
+  "software_owned_target": "10/10",
+  "validation_gates": [
+    "Genome-wide off-target search",
+    "Variant overlap",
+    "Bulge/mismatch review",
+    "Orthogonal safety assay"
+  ]
+}

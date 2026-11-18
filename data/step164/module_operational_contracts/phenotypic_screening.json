@@ -1,0 +1,34 @@
+{
+  "accepted_formats": [
+    "OME-TIFF/TIFF/PNG",
+    "CSV object table"
+  ],
+  "external_release_requires_all_real_artifacts": true,
+  "module_key": "phenotypic_screening",
+  "module_title": "Phenotypic screening depth",
+  "native_research_fallback_ready": true,
+  "optimization_controls": [
+    "Tiled images",
+    "Plate-wise jobs",
+    "Feature caches"
+  ],
+  "reference_asset_ids": [
+    "phenotypic_screening-01-plate-map",
+    "phenotypic_screening-02-control-wells",
+    "phenotypic_screening-03-image-calibration"
+  ],
+  "schema": "biointel.step164.module-operational-contract.v1",
+  "scientific_boundary": "Screening hits require orthogonal confirmation and assay-specific acceptance criteria.",
+  "software_owned_target": "10/10",
+  "specialist_claims_fail_closed": true,
+  "specialist_engines": [
+    "cellpose",
+    "stardist"
+  ],
+  "validation_gates": [
+    "Z-prime",
+    "Edge effects",
+    "Replicate consistency",
+    "Dose-response QC"
+  ]
+}

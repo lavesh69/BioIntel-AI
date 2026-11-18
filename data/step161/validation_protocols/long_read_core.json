@@ -1,0 +1,47 @@
+{
+  "completion_fields": {
+    "independent_validation": false,
+    "prospective_validation": false,
+    "protocol_version": true,
+    "reviewer_approved": false,
+    "source_checksums": false
+  },
+  "external_evidence_attached": false,
+  "intended_use_boundary": "Assemblies require platform-aware polishing and independent completeness/contamination assessment.",
+  "module_key": "long_read_core",
+  "module_title": "Long-read assembly depth",
+  "negative_controls_required": true,
+  "prospective_validation_required": true,
+  "protocol_sha256": "f5fcf33c1aaa1578d63f1170d1919cf9d4949fcff78263e8391e42b9bbe0c552",
+  "protocol_status": "ready-for-external-execution",
+  "protocol_version": "1.0.0",
+  "release_eligible": false,
+  "required_reference_assets": [
+    "Reference/related genome",
+    "BUSCO lineage",
+    "k-mer database"
+  ],
+  "required_specialist_engines": [
+    "flye",
+    "hifiasm",
+    "busco",
+    "merqury"
+  ],
+  "required_validation_gates": [
+    "Read QC",
+    "Polishing",
+    "Haplotig review",
+    "Completeness/contamination"
+  ],
+  "reviewer_signoff_required": true,
+  "schema": "biointel.step161.external-validation-protocol.v1",
+  "source_checksums_required": true,
+  "study_design_requirements": [
+    "Independent dataset or site not used during development",
+    "Prespecified endpoints and acceptance thresholds",
+    "Locked software, model and reference versions",
+    "Source-data checksums and immutable analysis manifest",
+    "Blinded or independently adjudicated review where applicable",
+    "Subgroup, calibration, uncertainty and failure analysis"
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "accepted_native_formats": [
+    "mzML",
+    "MGF",
+    "CSV/TSV feature table"
+  ],
+  "claim_policy": {
+    "demo_result_label_required": true,
+    "expert_review_required_for_release": true,
+    "external_validation_required_for_release": true,
+    "limitations_required": true,
+    "reference_result_label_required": true,
+    "uncertainty_disclosure_required": true
+  },
+  "contract_sha256": "9d5914b4dd4be9800fe52bbcfd01f70a2b8b87e71142769b3f6f9d7d28643953",
+  "module_key": "metabolomics_lipidomics",
+  "module_title": "Metabolomics depth",
+  "native_fallback_policy": {
+    "available": true,
+    "confirmatory_claims_allowed": false,
+    "label": "BioIntel deterministic research fallback",
+    "may_replace_specialist_engine": false
+  },
+  "optimization_controls": [
+    "Streaming mzML",
+    "Feature-level caching",
+    "Bounded spectrum previews"
+  ],
+  "quality_dimensions": {
+    "bounded_resource_execution": true,
+    "complete_result_export": true,
+    "crash_loop_protection": true,
+    "deterministic_native_execution": true,
+    "external_release_fail_closed": true,
+    "input_integrity": true,
+    "model_authenticity_guard": true,
+    "reference_lifecycle_contract": true,
+    "reproducibility_signature": true,
+    "specialist_runtime_adapter": true
+  },
+  "required_production_references": [
+    "Spectral library",
+    "Retention-time standards",
+    "Adduct table"
+  ],
+  "required_specialist_engines": [
+    "biointel_native::metabolomics_lipidomics",
+    "openms"
+  ],
+  "schema": "biointel.step163.module-excellence-contract.v1",
+  "scientific_boundary": "Feature matches are hypotheses until confirmed by retention time, MS/MS evidence and authentic standards.",
+  "software_owned_target": "10/10",
+  "validation_gates": [
+    "Blank subtraction",
+    "Pooled-QC CV",
+    "Batch drift",
+    "Identification confidence"
+  ]
+}

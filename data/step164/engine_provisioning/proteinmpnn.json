@@ -1,0 +1,40 @@
+{
+  "category": "Protein design",
+  "claim_boundary": "A complete recipe is not an installed or scientifically qualified runtime. Installation, licence acceptance, weights, references and smoke-test evidence are verified independently.",
+  "engine": "proteinmpnn",
+  "installation": {
+    "conda_channels": [
+      "conda-forge",
+      "bioconda"
+    ],
+    "conda_packages": [],
+    "licence_acceptance_required": false,
+    "manual_distribution": true,
+    "pip_packages": [],
+    "supported_backends": [
+      "registered-provider-installation",
+      "protected-native-workspace"
+    ],
+    "version_constraint": ">=current-supported-release,<next-breaking-major"
+  },
+  "label": "ProteinMPNN",
+  "manifest_sha256": "d36d8318a222c1882e7a9ddf3e4e324efe7a46827600ad09f1ee20893a797e87",
+  "modules": [
+    "enzyme_pathway_design",
+    "protein_language_design",
+    "protein_ligand_codesign"
+  ],
+  "qualification": {
+    "executable_sha256_required": true,
+    "golden_fixture_required": true,
+    "model_weights_required": true,
+    "negative_control_required": true,
+    "reference_data_required": false,
+    "smoke_test": [
+      "protein_mpnn_run.py",
+      "--version"
+    ],
+    "version_capture_required": true
+  },
+  "schema": "biointel.step164.engine-provisioning-manifest.v1"
+}

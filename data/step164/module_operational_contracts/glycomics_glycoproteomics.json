@@ -1,0 +1,33 @@
+{
+  "accepted_formats": [
+    "mzML/MGF",
+    "CSV glycopeptide table"
+  ],
+  "external_release_requires_all_real_artifacts": true,
+  "module_key": "glycomics_glycoproteomics",
+  "module_title": "Glycomics depth",
+  "native_research_fallback_ready": true,
+  "optimization_controls": [
+    "Spectrum streaming",
+    "Library indexing",
+    "Bounded fragment previews"
+  ],
+  "reference_asset_ids": [
+    "glycomics_glycoproteomics-01-glycan-database",
+    "glycomics_glycoproteomics-02-fragment-rules",
+    "glycomics_glycoproteomics-03-protein-annotation"
+  ],
+  "schema": "biointel.step164.module-operational-contract.v1",
+  "scientific_boundary": "Glycan/glycopeptide assignments require spectrum-level review and validated identification control.",
+  "software_owned_target": "10/10",
+  "specialist_claims_fail_closed": true,
+  "specialist_engines": [
+    "openms"
+  ],
+  "validation_gates": [
+    "Target-decoy FDR",
+    "Site localization",
+    "Occupancy uncertainty",
+    "Manual spectrum review"
+  ]
+}

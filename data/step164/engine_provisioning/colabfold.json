@@ -1,0 +1,41 @@
+{
+  "category": "Protein structure",
+  "claim_boundary": "A complete recipe is not an installed or scientifically qualified runtime. Installation, licence acceptance, weights, references and smoke-test evidence are verified independently.",
+  "engine": "colabfold",
+  "installation": {
+    "conda_channels": [
+      "conda-forge",
+      "bioconda"
+    ],
+    "conda_packages": [
+      "colabfold"
+    ],
+    "licence_acceptance_required": false,
+    "manual_distribution": false,
+    "pip_packages": [],
+    "supported_backends": [
+      "micromamba-conda-lock",
+      "container",
+      "registered-native-installation"
+    ],
+    "version_constraint": ">=current-supported-release,<next-breaking-major"
+  },
+  "label": "ColabFold",
+  "manifest_sha256": "a0d7691c88f218c7b5be75cc3c52e6f2d313157df091dd0872153774c137d0d0",
+  "modules": [
+    "protein_ligand_codesign"
+  ],
+  "qualification": {
+    "executable_sha256_required": true,
+    "golden_fixture_required": true,
+    "model_weights_required": true,
+    "negative_control_required": true,
+    "reference_data_required": true,
+    "smoke_test": [
+      "colabfold_batch",
+      "--version"
+    ],
+    "version_capture_required": true
+  },
+  "schema": "biointel.step164.engine-provisioning-manifest.v1"
+}

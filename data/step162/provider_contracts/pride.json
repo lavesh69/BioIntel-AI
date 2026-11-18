@@ -1,0 +1,28 @@
+{
+  "domain": "Proteomics",
+  "generated_at_utc": "2026-07-14T04:25:32+00:00",
+  "key": "pride",
+  "licence_review_required": true,
+  "local_assets": [
+    {
+      "path": "data/real_scientific_pack/proteomics/PXD002114_reproducibility_summary.csv",
+      "sha256": "5060e2168092a3f1fe3cebce329caececabaa56ae93ada0bb1b783b1ca00fe57",
+      "size_bytes": 291
+    }
+  ],
+  "local_candidates": [
+    "data/real_scientific_pack/proteomics/PXD002114_reproducibility_summary.csv"
+  ],
+  "local_snapshot_checksum_verified": true,
+  "local_snapshot_present": true,
+  "official_url": "https://www.ebi.ac.uk/pride/",
+  "production_reference_qualified": false,
+  "provider": "PRIDE Archive",
+  "qualification_blockers": [
+    "Licence/terms acceptance must match the intended deployment.",
+    "A complete provider release, release date and record-level QC must be attached.",
+    "Independent scientific review is required before confirmatory use."
+  ],
+  "schema": "biointel.step162.provider-source-contract.v1",
+  "source_descriptor_verified": true
+}

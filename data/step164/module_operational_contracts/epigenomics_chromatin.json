@@ -1,0 +1,38 @@
+{
+  "accepted_formats": [
+    "FASTQ",
+    "BAM/CRAM",
+    "BED/narrowPeak",
+    "bigWig"
+  ],
+  "external_release_requires_all_real_artifacts": true,
+  "module_key": "epigenomics_chromatin",
+  "module_title": "Epigenomics depth",
+  "native_research_fallback_ready": true,
+  "optimization_controls": [
+    "Indexed region access",
+    "Chunked peak tables",
+    "Cached signal summaries"
+  ],
+  "reference_asset_ids": [
+    "epigenomics_chromatin-01-reference-fasta",
+    "epigenomics_chromatin-02-gene-annotation",
+    "epigenomics_chromatin-03-motif-database"
+  ],
+  "schema": "biointel.step164.module-operational-contract.v1",
+  "scientific_boundary": "Peak calls and motif findings require specialist tools, matched controls and orthogonal validation.",
+  "software_owned_target": "10/10",
+  "specialist_claims_fail_closed": true,
+  "specialist_engines": [
+    "bwa",
+    "samtools",
+    "macs2",
+    "deeptools"
+  ],
+  "validation_gates": [
+    "Replicate balance",
+    "Peak reproducibility",
+    "Differential-accessibility assumptions",
+    "Genome-build match"
+  ]
+}

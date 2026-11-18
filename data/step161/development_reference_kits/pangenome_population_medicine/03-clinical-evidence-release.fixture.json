@@ -1,0 +1,18 @@
+{
+  "external_scientific_evidence": false,
+  "module_key": "pangenome_population_medicine",
+  "module_title": "Pangenome population-medicine depth",
+  "production_use_allowed": false,
+  "records": [
+    {
+      "record_id": "pangenome_population_medicine:3:demo",
+      "reference_label": "Clinical evidence release",
+      "status": "test-fixture",
+      "value": 1.0
+    }
+  ],
+  "reference_name": "Clinical evidence release",
+  "schema": "biointel.step161.development-reference-fixture.v1",
+  "scope": "development-and-regression-only",
+  "synthetic": true
+}

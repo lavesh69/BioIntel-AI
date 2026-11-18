@@ -1,0 +1,46 @@
+{
+  "benchmark_status": "specification-ready-data-required",
+  "development_dataset_must_be_non_synthetic": true,
+  "independent_test_dataset_required": true,
+  "locked_data_model_reference_versions_required": true,
+  "minimum_evidence_bundle": [
+    "immutable source-data checksums",
+    "training/validation/test partition manifest",
+    "per-sample predictions or module-level outputs",
+    "uncertainty intervals or confidence diagnostics",
+    "full parameter and environment manifest",
+    "expert reviewer sign-off"
+  ],
+  "module_key": "genome_editing_safety",
+  "module_title": "Genome-editing safety depth",
+  "prespecified_acceptance_thresholds_required": true,
+  "prospective_or_orthogonal_validation_required": true,
+  "release_eligible": false,
+  "required_data_formats": [
+    "FASTA",
+    "VCF",
+    "BED",
+    "CSV guide table"
+  ],
+  "required_failure_analyses": [
+    "missingness and malformed-input analysis",
+    "out-of-distribution or applicability-domain analysis",
+    "subgroup or biological-context analysis",
+    "calibration and uncertainty analysis",
+    "negative-control and leakage analysis",
+    "failed-case review with retained identifiers"
+  ],
+  "required_reference_assets": [
+    "Reference genome",
+    "Population VCF",
+    "Annotation GTF/GFF"
+  ],
+  "required_validation_analyses": [
+    "Genome-wide off-target search",
+    "Variant overlap",
+    "Bulge/mismatch review",
+    "Orthogonal safety assay"
+  ],
+  "schema": "biointel.step163.task-specific-benchmark.v1",
+  "specification_sha256": "4b701215cb18fe7a98b5143aae31c92b1cbf4e2faf18005c5ce20bcbaab06377"
+}

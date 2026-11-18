@@ -1,0 +1,41 @@
+{
+  "category": "Local AI",
+  "claim_boundary": "A complete recipe is not an installed or scientifically qualified runtime. Installation, licence acceptance, weights, references and smoke-test evidence are verified independently.",
+  "engine": "llama_cpp",
+  "installation": {
+    "conda_channels": [
+      "conda-forge",
+      "bioconda"
+    ],
+    "conda_packages": [],
+    "licence_acceptance_required": false,
+    "manual_distribution": false,
+    "pip_packages": [
+      "llama-cpp-python"
+    ],
+    "supported_backends": [
+      "pinned-python-venv",
+      "container"
+    ],
+    "version_constraint": ">=current-supported-release,<next-breaking-major"
+  },
+  "label": "llama.cpp",
+  "manifest_sha256": "1eba79b570d3154eb00b1969195273eaf46c97036f380f11720d94921c47b903",
+  "modules": [
+    "offline_copilot_core",
+    "offline_scientific_copilot_v2"
+  ],
+  "qualification": {
+    "executable_sha256_required": true,
+    "golden_fixture_required": true,
+    "model_weights_required": false,
+    "negative_control_required": true,
+    "reference_data_required": true,
+    "smoke_test": [
+      "llama-cli",
+      "--version"
+    ],
+    "version_capture_required": true
+  },
+  "schema": "biointel.step164.engine-provisioning-manifest.v1"
+}

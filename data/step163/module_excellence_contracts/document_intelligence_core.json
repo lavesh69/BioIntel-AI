@@ -1,0 +1,56 @@
+{
+  "accepted_native_formats": [
+    "PDF/DOCX/XLSX/HTML/images"
+  ],
+  "claim_policy": {
+    "demo_result_label_required": true,
+    "expert_review_required_for_release": true,
+    "external_validation_required_for_release": true,
+    "limitations_required": true,
+    "reference_result_label_required": true,
+    "uncertainty_disclosure_required": true
+  },
+  "contract_sha256": "1259833880792a38b080fbdb744c72b3fd6005eaa1535b9f2be5a331a84bf603",
+  "module_key": "document_intelligence_core",
+  "module_title": "Document intelligence depth",
+  "native_fallback_policy": {
+    "available": true,
+    "confirmatory_claims_allowed": false,
+    "label": "BioIntel deterministic research fallback",
+    "may_replace_specialist_engine": false
+  },
+  "optimization_controls": [
+    "Page streaming",
+    "OCR caches",
+    "Background batch extraction"
+  ],
+  "quality_dimensions": {
+    "bounded_resource_execution": true,
+    "complete_result_export": true,
+    "crash_loop_protection": true,
+    "deterministic_native_execution": true,
+    "external_release_fail_closed": true,
+    "input_integrity": true,
+    "model_authenticity_guard": true,
+    "reference_lifecycle_contract": true,
+    "reproducibility_signature": true,
+    "specialist_runtime_adapter": true
+  },
+  "required_production_references": [
+    "OCR language assets",
+    "Citation policy",
+    "Approved extraction schema"
+  ],
+  "required_specialist_engines": [
+    "biointel_native::document_intelligence_core"
+  ],
+  "schema": "biointel.step163.module-excellence-contract.v1",
+  "scientific_boundary": "Extracted text and tables require source-page review before scientific use.",
+  "software_owned_target": "10/10",
+  "validation_gates": [
+    "Page-level provenance",
+    "Table/figure review",
+    "OCR confidence",
+    "Citation traceability"
+  ]
+}

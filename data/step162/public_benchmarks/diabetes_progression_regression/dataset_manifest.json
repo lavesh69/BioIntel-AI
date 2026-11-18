@@ -1,0 +1,16 @@
+{
+  "clinical_release_eligible": false,
+  "dataset_key": "diabetes_progression_regression",
+  "dataset_sha256": "234091ed70a373b59de7b6382b946e70416204645d615f4e6d92d816bc1b0fd0",
+  "distribution": "scikit-learn 1.8.0 bundled dataset copy",
+  "features": 10,
+  "licence_review_status": "source terms recorded; deployment user must confirm intended-use compliance",
+  "public_reference_data": true,
+  "rows": 442,
+  "schema": "biointel.step162.public-dataset-manifest.v1",
+  "source_name": "Diabetes progression dataset distributed with scikit-learn",
+  "source_url": "https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_diabetes.html",
+  "synthetic": false,
+  "target_description": "target",
+  "title": "Diabetes progression public regression benchmark"
+}

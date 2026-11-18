@@ -1,0 +1,44 @@
+{
+  "completion_fields": {
+    "independent_validation": false,
+    "prospective_validation": false,
+    "protocol_version": true,
+    "reviewer_approved": false,
+    "source_checksums": false
+  },
+  "external_evidence_attached": false,
+  "intended_use_boundary": "Flow-cytometry populations require instrument QC, validated compensation, control-aware gates and representative manual review.",
+  "module_key": "flow_cytometry",
+  "module_title": "Flow-cytometry depth",
+  "negative_controls_required": true,
+  "prospective_validation_required": true,
+  "protocol_sha256": "ef9beb3142be349cf9b0080913530fcf2a94957b891d2bdbe780c0de996488dd",
+  "protocol_status": "ready-for-external-execution",
+  "protocol_version": "1.0.0",
+  "release_eligible": false,
+  "required_reference_assets": [
+    "Single-stained controls",
+    "FMO/unstained controls",
+    "Panel and instrument metadata",
+    "Ground-truth/manual gating review"
+  ],
+  "required_specialist_engines": [],
+  "required_validation_gates": [
+    "Compensation stability",
+    "Transformation lock",
+    "Doublet/time-drift review",
+    "Control-aware gating",
+    "Population reproducibility"
+  ],
+  "reviewer_signoff_required": true,
+  "schema": "biointel.step161.external-validation-protocol.v1",
+  "source_checksums_required": true,
+  "study_design_requirements": [
+    "Independent dataset or site not used during development",
+    "Prespecified endpoints and acceptance thresholds",
+    "Locked software, model and reference versions",
+    "Source-data checksums and immutable analysis manifest",
+    "Blinded or independently adjudicated review where applicable",
+    "Subgroup, calibration, uncertainty and failure analysis"
+  ]
+}

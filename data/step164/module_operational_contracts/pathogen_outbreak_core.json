@@ -1,0 +1,36 @@
+{
+  "accepted_formats": [
+    "FASTA",
+    "VCF",
+    "CSV epidemiology"
+  ],
+  "external_release_requires_all_real_artifacts": true,
+  "module_key": "pathogen_outbreak_core",
+  "module_title": "Outbreak genomics depth",
+  "native_research_fallback_ready": true,
+  "optimization_controls": [
+    "Sample-parallel consensus",
+    "Tree cache",
+    "Incremental surveillance"
+  ],
+  "reference_asset_ids": [
+    "pathogen_outbreak_core-01-reference-genome",
+    "pathogen_outbreak_core-02-lineage-definitions",
+    "pathogen_outbreak_core-03-amr-database"
+  ],
+  "schema": "biointel.step164.module-operational-contract.v1",
+  "scientific_boundary": "Genomic clusters do not by themselves prove direct transmission.",
+  "software_owned_target": "10/10",
+  "specialist_claims_fail_closed": true,
+  "specialist_engines": [
+    "mafft",
+    "iqtree",
+    "bcftools"
+  ],
+  "validation_gates": [
+    "Recombination",
+    "Sampling bias",
+    "Transmission uncertainty",
+    "AMR confirmation"
+  ]
+}

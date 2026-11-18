@@ -1,0 +1,18 @@
+{
+  "external_scientific_evidence": false,
+  "module_key": "plugin_marketplace_core",
+  "module_title": "Plugin security depth",
+  "production_use_allowed": false,
+  "records": [
+    {
+      "record_id": "plugin_marketplace_core:3:demo",
+      "reference_label": "Compatibility matrix",
+      "status": "test-fixture",
+      "value": 1.0
+    }
+  ],
+  "reference_name": "Compatibility matrix",
+  "schema": "biointel.step161.development-reference-fixture.v1",
+  "scope": "development-and-regression-only",
+  "synthetic": true
+}

@@ -1,0 +1,14 @@
+{
+  "provider": "clinicaltrials",
+  "resource_type": "clinical_trial_reference_seed",
+  "source_url": "https://clinicaltrials.gov/api/v2/studies",
+  "api_version": "2.0.5",
+  "api_data_timestamp": "2026-07-02T09:00:05",
+  "retrieved_at": "2026-07-05T00:00:00Z",
+  "release": "api-v2.0.5-data-2026-07-02",
+  "licence": "ClinicalTrials.gov terms",
+  "records": [
+    {"provider_record_id":"NCT01802632","entity_type":"clinical_trial","clinical_trial_id":"NCT01802632","title":"AZD9291 First Time In Patients Ascending Dose Study","organism":"Homo sapiens","taxonomy_id":9606,"source_url":"https://clinicaltrials.gov/study/NCT01802632"},
+    {"provider_record_id":"NCT07511205","entity_type":"clinical_trial","clinical_trial_id":"NCT07511205","title":"A Study to Investigate Safety, Tolerability, Pharmacokinetics and Pharmacodynamics of AZD1043","organism":"Homo sapiens","taxonomy_id":9606,"source_url":"https://clinicaltrials.gov/study/NCT07511205"}
+  ]
+}

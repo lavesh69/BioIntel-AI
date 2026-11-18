@@ -1,0 +1,30 @@
+{
+  "accepted_formats": [
+    "Workflow JSON/YAML"
+  ],
+  "external_release_requires_all_real_artifacts": true,
+  "module_key": "workflow_builder_core",
+  "module_title": "Workflow execution depth",
+  "native_research_fallback_ready": true,
+  "optimization_controls": [
+    "Node caching",
+    "Critical-path scheduling",
+    "Scatter/gather limits"
+  ],
+  "reference_asset_ids": [
+    "workflow_builder_core-01-typed-node-schema",
+    "workflow_builder_core-02-container-tool-versions",
+    "workflow_builder_core-03-resource-policy"
+  ],
+  "schema": "biointel.step164.module-operational-contract.v1",
+  "scientific_boundary": "A visually valid workflow is not scientifically valid until inputs, tools and parameters are qualified.",
+  "software_owned_target": "10/10",
+  "specialist_claims_fail_closed": true,
+  "specialist_engines": [],
+  "validation_gates": [
+    "DAG validation",
+    "Input/output compatibility",
+    "Checkpoint resume",
+    "Provenance"
+  ]
+}

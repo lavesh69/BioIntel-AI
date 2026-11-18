@@ -1,0 +1,27 @@
+{
+  "bundled_in_core_package": false,
+  "category": "Protein structure",
+  "checksum_required": true,
+  "container_digest_or_binary_hash_required": true,
+  "engine": "colabfold",
+  "environment_lock_required": true,
+  "execution_backends": [
+    "container",
+    "conda-lock",
+    "native-executable"
+  ],
+  "install_strategy": "digest-pinned-container-or-conda",
+  "installed_and_qualified": false,
+  "label": "ColabFold",
+  "licence_class": "open-source-or-provider-terms",
+  "manual_action_required": true,
+  "model_or_database_required": true,
+  "modules": [
+    "protein_ligand_codesign"
+  ],
+  "package_hint": "Provision ColabFold through a digest-pinned container or locked environment.",
+  "runtime_self_test_required": true,
+  "schema": "biointel.step163.specialist-runtime-lock-contract.v1",
+  "scientific_smoke_test_required": true,
+  "version_probe_required": true
+}

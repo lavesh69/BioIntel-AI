@@ -1,0 +1,48 @@
+{
+  "completion_fields": {
+    "independent_validation": false,
+    "prospective_validation": false,
+    "protocol_version": true,
+    "reviewer_approved": false,
+    "source_checksums": false
+  },
+  "external_evidence_attached": false,
+  "intended_use_boundary": "Joint design scores are hypotheses and do not establish affinity, selectivity or biological activity.",
+  "module_key": "protein_ligand_codesign",
+  "module_title": "Protein-ligand co-design depth",
+  "negative_controls_required": true,
+  "prospective_validation_required": true,
+  "protocol_sha256": "eb9f44c29c00116fdfdc889f5b11c03c674211e6aecdf7986888fa5828c11a4c",
+  "protocol_status": "ready-for-external-execution",
+  "protocol_version": "1.0.0",
+  "release_eligible": false,
+  "required_reference_assets": [
+    "Prepared structures",
+    "Ligand states",
+    "Model weights",
+    "Selectivity panel"
+  ],
+  "required_specialist_engines": [
+    "proteinmpnn",
+    "rfdiffusion",
+    "vina",
+    "colabfold"
+  ],
+  "required_validation_gates": [
+    "Constraint enforcement",
+    "Pose/structure validation",
+    "Selectivity",
+    "Experimental binding"
+  ],
+  "reviewer_signoff_required": true,
+  "schema": "biointel.step161.external-validation-protocol.v1",
+  "source_checksums_required": true,
+  "study_design_requirements": [
+    "Independent dataset or site not used during development",
+    "Prespecified endpoints and acceptance thresholds",
+    "Locked software, model and reference versions",
+    "Source-data checksums and immutable analysis manifest",
+    "Blinded or independently adjudicated review where applicable",
+    "Subgroup, calibration, uncertainty and failure analysis"
+  ]
+}
