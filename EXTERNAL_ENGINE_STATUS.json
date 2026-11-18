@@ -1,0 +1,82 @@
+{
+  "engines": {
+    "Tesseract OCR": {
+      "status": "PASSED",
+      "type": "Executable",
+      "path": "System / LocalAppData",
+      "notes": "OCR document analysis adapter verified."
+    },
+    "Minimap2": {
+      "status": "PASSED",
+      "type": "Executable",
+      "path": "System / LocalAppData",
+      "notes": "Long-read alignment adapter verified."
+    },
+    "BCFtools": {
+      "status": "PASSED",
+      "type": "Executable",
+      "path": "System / LocalAppData",
+      "notes": "Variant calling & BCF manipulation adapter verified."
+    },
+    "PLINK2": {
+      "status": "PASSED",
+      "type": "Executable",
+      "path": "System / LocalAppData",
+      "notes": "GWAS and population genetics adapter verified."
+    },
+    "FFmpeg": {
+      "status": "PASSED",
+      "type": "Executable",
+      "path": "System / LocalAppData",
+      "notes": "Media & video processing adapter verified."
+    },
+    "FFprobe": {
+      "status": "PASSED",
+      "type": "Executable",
+      "path": "System / LocalAppData",
+      "notes": "Media stream inspection adapter verified."
+    },
+    "ProteinMPNN": {
+      "status": "PASSED",
+      "type": "Python / Adapter",
+      "path": "ExternalEngines",
+      "notes": "Protein sequence design adapter verified."
+    },
+    "RFdiffusion": {
+      "status": "PASSED",
+      "type": "Python / Adapter",
+      "path": "ExternalEngines",
+      "notes": "De novo protein structure generation adapter verified."
+    },
+    "ColabFold": {
+      "status": "PASSED",
+      "type": "Python / Adapter",
+      "path": "ExternalEngines",
+      "notes": "Structure prediction pipeline adapter verified."
+    },
+    "FoldX": {
+      "status": "PASSED",
+      "type": "Executable",
+      "path": "ExternalEngines",
+      "notes": "Mutational stability analysis adapter verified."
+    },
+    "Rosetta": {
+      "status": "PASSED",
+      "type": "Executable",
+      "path": "ExternalEngines",
+      "notes": "Macromolecular modeling adapter verified."
+    },
+    "NetMHCpan": {
+      "status": "LICENCE REQUIRED \u2014 NOT INSTALLED",
+      "type": "Licensed Binary",
+      "path": "None",
+      "notes": "Proprietary academic/commercial license required. Adapter preserved without fake execution."
+    },
+    "NetMHCIIpan": {
+      "status": "LICENCE REQUIRED \u2014 NOT INSTALLED",
+      "type": "Licensed Binary",
+      "path": "None",
+      "notes": "Proprietary academic/commercial license required. Adapter preserved without fake execution."
+    }
+  }
+}

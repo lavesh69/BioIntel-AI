@@ -1,0 +1,906 @@
+{
+  "schema": "biointel.step137.bioinformatics-peak-expansion.v1",
+  "product_version_preserved": "13.2.0",
+  "specialist_modules": 15,
+  "existing_modules_upgraded": 7,
+  "new_modules_added": 8,
+  "visuals_per_module": 8,
+  "total_signature_visuals": 120,
+  "modules": [
+    {
+      "key": "population_gwas_peak",
+      "title": "Population Genetics, GWAS & PRS Studio",
+      "new_module": false,
+      "existing_page": "pages/134_Population_Genetics_GWAS_Studio.py",
+      "required_columns": [
+        "sample",
+        "variant",
+        "chrom",
+        "position",
+        "genotype",
+        "phenotype"
+      ],
+      "accepted_inputs": [
+        "CSV",
+        "TSV",
+        "VCF",
+        "VCF.GZ",
+        "PLINK-exported table"
+      ],
+      "workflow": [
+        "Import and harmonise",
+        "Sample and variant QC",
+        "Ancestry structure",
+        "Association screening",
+        "LD and regional review",
+        "PRS exploration",
+        "Evidence export"
+      ],
+      "outputs": [
+        "variant QC",
+        "association table",
+        "sample ancestry scores",
+        "PRS scores",
+        "evidence bundle"
+      ],
+      "visuals": [
+        "Manhattan plot",
+        "QQ plot",
+        "Ancestry PCA",
+        "LD heatmap",
+        "Regional association",
+        "PRS distribution",
+        "Subgroup forest",
+        "QC dashboard"
+      ],
+      "boundary": "Exploratory screening does not replace validated PLINK, SAIGE or REGENIE pipelines, imputation, ancestry-matched validation or clinical interpretation.",
+      "handoffs": [
+        "Variant Workbench",
+        "Pathway Analysis",
+        "Clinical Biomarker Studio"
+      ],
+      "optional_tools": [
+        "PLINK 2",
+        "REGENIE",
+        "BCFtools"
+      ]
+    },
+    {
+      "key": "epigenomics_peak",
+      "title": "Epigenomics & Chromatin Accessibility Workbench",
+      "new_module": false,
+      "existing_page": "pages/112_Epigenomics_and_Chromatin_Regulation_Studio.py",
+      "required_columns": [
+        "sample",
+        "region",
+        "condition",
+        "signal",
+        "chrom",
+        "start",
+        "end"
+      ],
+      "accepted_inputs": [
+        "CSV",
+        "TSV",
+        "BED",
+        "narrowPeak",
+        "broadPeak"
+      ],
+      "workflow": [
+        "Import regions",
+        "Assay QC",
+        "Consensus regions",
+        "Differential signal",
+        "Motif and TF analysis",
+        "Peak-to-gene links",
+        "Export"
+      ],
+      "outputs": [
+        "differential regions",
+        "motif activity",
+        "peak-to-gene links",
+        "methylation summary",
+        "evidence bundle"
+      ],
+      "visuals": [
+        "Peak heatmap",
+        "Genome track",
+        "Accessibility volcano",
+        "Motif heatmap",
+        "TF network",
+        "Methylation profile",
+        "Peak-gene links",
+        "RNA concordance"
+      ],
+      "boundary": "Screening-level region analysis must be confirmed with replicate-aware specialist pipelines, matched genome builds and orthogonal assays.",
+      "handoffs": [
+        "Transcriptomics",
+        "Gene Regulatory Network",
+        "Comparative Regulatory Genomics"
+      ],
+      "optional_tools": [
+        "MACS3",
+        "deepTools",
+        "BEDTools"
+      ]
+    },
+    {
+      "key": "pharmacogenomics_peak",
+      "title": "Pharmacogenomics & Clinical Genomics Studio",
+      "new_module": false,
+      "existing_page": "pages/117_Pharmacogenomics_and_Precision_Medicine_Board.py",
+      "required_columns": [
+        "sample",
+        "gene",
+        "variant",
+        "drug",
+        "allele",
+        "evidence_level"
+      ],
+      "accepted_inputs": [
+        "CSV",
+        "TSV",
+        "VCF",
+        "VCF.GZ",
+        "medication list"
+      ],
+      "workflow": [
+        "Import variants and medications",
+        "Genome-build QC",
+        "Allele and diplotype review",
+        "Phenotype inference",
+        "Drug-gene evidence",
+        "Conflict review",
+        "Report"
+      ],
+      "outputs": [
+        "drug-gene review table",
+        "diplotype evidence",
+        "phenotype summary",
+        "conflict queue",
+        "structured report"
+      ],
+      "visuals": [
+        "Pharmacogene coverage",
+        "Diplotype waterfall",
+        "Drug-gene matrix",
+        "Phenotype distribution",
+        "Population comparison",
+        "Evidence ladder",
+        "Conflict matrix",
+        "Review timeline"
+      ],
+      "boundary": "Research-use output is not a prescribing recommendation. Clinical decisions require validated genotyping, current guidelines and qualified professional review.",
+      "handoffs": [
+        "Variant Workbench",
+        "Clinical Biomarker Studio",
+        "Evidence Review"
+      ],
+      "optional_tools": [
+        "Aldy",
+        "Stargazer",
+        "VEP"
+      ]
+    },
+    {
+      "key": "structural_variant_peak",
+      "title": "Structural Variant, Repeat Expansion & Mosaicism Studio",
+      "new_module": false,
+      "existing_page": "pages/135_Structural_Variant_Repeat_Expansion_Lab.py",
+      "required_columns": [
+        "sample",
+        "event_id",
+        "chrom",
+        "start",
+        "end",
+        "event_type",
+        "support"
+      ],
+      "accepted_inputs": [
+        "CSV",
+        "TSV",
+        "VCF",
+        "VCF.GZ",
+        "BED",
+        "BEDPE",
+        "CNV segments"
+      ],
+      "workflow": [
+        "Import caller outputs",
+        "Coordinate harmonisation",
+        "Evidence QC",
+        "Mosaic and repeat review",
+        "Gene and regulatory impact",
+        "Family segregation",
+        "Export"
+      ],
+      "outputs": [
+        "harmonised event table",
+        "caller concordance",
+        "mosaic candidates",
+        "repeat candidates",
+        "review bundle"
+      ],
+      "visuals": [
+        "Chromosome SV track",
+        "Breakpoint Circos",
+        "CNV profile",
+        "Repeat-size distribution",
+        "Mosaic allele fraction",
+        "Caller concordance",
+        "Segregation view",
+        "Priority waterfall"
+      ],
+      "boundary": "Breakpoints and mosaic fractions require raw-read review and orthogonal confirmation; this module does not manufacture clinical classifications.",
+      "handoffs": [
+        "Variant Workbench",
+        "Rare Disease Board",
+        "Cancer Genomics"
+      ],
+      "optional_tools": [
+        "SURVIVOR",
+        "ExpansionHunter",
+        "CNVkit"
+      ]
+    },
+    {
+      "key": "rna_splicing_peak",
+      "title": "RNA Splicing & Isoform Pathology Lab",
+      "new_module": false,
+      "existing_page": "pages/137_RNA_Isoform_Alternative_Splicing_Studio.py",
+      "required_columns": [
+        "sample",
+        "gene",
+        "transcript",
+        "event",
+        "group",
+        "psi",
+        "junction_support"
+      ],
+      "accepted_inputs": [
+        "CSV",
+        "TSV",
+        "GTF",
+        "GFF",
+        "junction table",
+        "long-read transcript table"
+      ],
+      "workflow": [
+        "Import transcripts and junctions",
+        "Support QC",
+        "Event classification",
+        "Differential splicing",
+        "Variant linkage",
+        "Disease prioritisation",
+        "Export"
+      ],
+      "outputs": [
+        "splicing event table",
+        "isoform switches",
+        "junction QC",
+        "variant-splice links",
+        "evidence bundle"
+      ],
+      "visuals": [
+        "Sashimi-style view",
+        "Transcript architecture",
+        "Exon-usage heatmap",
+        "PSI distribution",
+        "Isoform switching",
+        "Junction support",
+        "Variant-splice map",
+        "Gene summary"
+      ],
+      "boundary": "Built-in calculations are exploratory and do not replace splice-aware alignment, transcript assembly or validated DEXSeq, DRIMSeq, MAJIQ or long-read workflows.",
+      "handoffs": [
+        "Transcriptomics",
+        "Rare Disease Board",
+        "Long-Read Isoforms"
+      ],
+      "optional_tools": [
+        "STAR",
+        "RegTools",
+        "MAJIQ"
+      ]
+    },
+    {
+      "key": "immune_repertoire",
+      "title": "Immunogenomics & Immune Repertoire Studio",
+      "new_module": true,
+      "existing_page": null,
+      "required_columns": [
+        "sample",
+        "clonotype",
+        "chain",
+        "v_gene",
+        "j_gene",
+        "cdr3",
+        "count"
+      ],
+      "accepted_inputs": [
+        "CSV",
+        "TSV",
+        "AIRR table",
+        "VDJ summary",
+        "single-cell receptor table"
+      ],
+      "workflow": [
+        "Import repertoire",
+        "Sequence and count QC",
+        "Clonotype assignment",
+        "Diversity analysis",
+        "Expansion tracking",
+        "Single-cell integration",
+        "Export"
+      ],
+      "outputs": [
+        "clonotype table",
+        "diversity metrics",
+        "V/J usage",
+        "longitudinal clone tracking",
+        "evidence bundle"
+      ],
+      "visuals": [
+        "Clonotype network",
+        "V/J chord-style matrix",
+        "CDR3 length",
+        "Diversity curves",
+        "Expansion treemap",
+        "Clone-cell embedding",
+        "Longitudinal tracking",
+        "QC dashboard"
+      ],
+      "boundary": "Repertoire frequencies are sensitive to library preparation, sampling depth and clonotype definition; biological conclusions require matched experimental design.",
+      "handoffs": [
+        "Single-Cell Heterogeneity",
+        "Vaccine Design",
+        "Clinical Biomarker Studio"
+      ],
+      "optional_tools": [
+        "MiXCR",
+        "IgBLAST",
+        "Scirpy"
+      ]
+    },
+    {
+      "key": "single_cell_multiome",
+      "title": "Single-Cell Multiome & Regulatory Network Studio",
+      "new_module": true,
+      "existing_page": null,
+      "required_columns": [
+        "cell",
+        "sample",
+        "cluster",
+        "modality",
+        "feature",
+        "value",
+        "batch"
+      ],
+      "accepted_inputs": [
+        "CSV",
+        "TSV",
+        "H5AD metadata",
+        "MuData export",
+        "feature matrix"
+      ],
+      "workflow": [
+        "Import modalities",
+        "Modality QC",
+        "Cell and feature filtering",
+        "Joint embedding",
+        "Peak-to-gene links",
+        "Regulatory inference",
+        "Export"
+      ],
+      "outputs": [
+        "cell annotations",
+        "joint embedding",
+        "modality agreement",
+        "regulatory links",
+        "evidence bundle"
+      ],
+      "visuals": [
+        "Joint embedding",
+        "Modality agreement",
+        "RNA-ATAC links",
+        "TF activity heatmap",
+        "Cell trajectory",
+        "Feature browser",
+        "Batch mixing",
+        "Cluster composition"
+      ],
+      "boundary": "Joint embeddings and transferred labels are exploratory. Validate modality integration, cell labels and regulatory links with independent evidence.",
+      "handoffs": [
+        "Single-Cell Heterogeneity",
+        "Cell Atlas Mapping",
+        "Gene Regulatory Network"
+      ],
+      "optional_tools": [
+        "Scanpy",
+        "MuData",
+        "MuON"
+      ]
+    },
+    {
+      "key": "proteogenomics_peak",
+      "title": "Proteogenomics & Neoantigen Discovery Studio",
+      "new_module": false,
+      "existing_page": "pages/124_Proteogenomics_and_Neoantigen_Discovery_Studio.py",
+      "required_columns": [
+        "sample",
+        "variant",
+        "gene",
+        "peptide",
+        "hla",
+        "binding_score",
+        "expression",
+        "ms_support"
+      ],
+      "accepted_inputs": [
+        "CSV",
+        "TSV",
+        "VCF-derived peptide table",
+        "FASTA",
+        "proteomics evidence"
+      ],
+      "workflow": [
+        "Import variants and peptides",
+        "Peptide QC",
+        "HLA binding review",
+        "RNA and MS support",
+        "Clonality and safety",
+        "Panel selection",
+        "Export"
+      ],
+      "outputs": [
+        "ranked peptides",
+        "HLA coverage",
+        "evidence matrix",
+        "normal-tissue risk",
+        "vaccine panel"
+      ],
+      "visuals": [
+        "Variant-peptide Sankey",
+        "HLA heatmap",
+        "Peptide coverage",
+        "RNA-MS evidence",
+        "Candidate waterfall",
+        "Normal-tissue risk",
+        "Clonality map",
+        "Panel diversity"
+      ],
+      "boundary": "Predicted binding and immunogenicity do not establish therapeutic efficacy. Candidates require validated HLA typing, assays and safety review.",
+      "handoffs": [
+        "Cancer Genomics",
+        "Vaccine Design",
+        "Clinical Biomarker Studio"
+      ],
+      "optional_tools": [
+        "VEP",
+        "NetMHCpan",
+        "MSFragger"
+      ]
+    },
+    {
+      "key": "gene_regulatory_network",
+      "title": "Gene Regulatory Network & TF Activity Studio",
+      "new_module": true,
+      "existing_page": null,
+      "required_columns": [
+        "sample",
+        "condition",
+        "tf",
+        "target",
+        "activity",
+        "evidence",
+        "expression"
+      ],
+      "accepted_inputs": [
+        "CSV",
+        "TSV",
+        "regulon table",
+        "motif activity table",
+        "peak-gene links"
+      ],
+      "workflow": [
+        "Import regulatory evidence",
+        "Edge QC",
+        "Regulon scoring",
+        "Condition comparison",
+        "Master-regulator ranking",
+        "Perturbation scenarios",
+        "Export"
+      ],
+      "outputs": [
+        "regulatory edge table",
+        "TF activity",
+        "regulon scores",
+        "master regulators",
+        "evidence bundle"
+      ],
+      "visuals": [
+        "TF network",
+        "Regulon heatmap",
+        "TF volcano",
+        "Target Sankey",
+        "Centrality plot",
+        "Circuit diagram",
+        "Evidence matrix",
+        "Condition comparison"
+      ],
+      "boundary": "Inferred regulatory edges are hypotheses and must be validated with perturbation, binding or orthogonal evidence.",
+      "handoffs": [
+        "Epigenomics",
+        "Transcriptomics",
+        "Causal Biology"
+      ],
+      "optional_tools": [
+        "pySCENIC",
+        "HOMER",
+        "BEDTools"
+      ]
+    },
+    {
+      "key": "federated_genomic_discovery",
+      "title": "Federated Genomic Discovery & Phenopacket Studio",
+      "new_module": true,
+      "existing_page": null,
+      "required_columns": [
+        "case_id",
+        "source",
+        "phenotype",
+        "gene",
+        "variant",
+        "phenotype_similarity",
+        "variant_match",
+        "access_status"
+      ],
+      "accepted_inputs": [
+        "CSV",
+        "TSV",
+        "Phenopacket JSON",
+        "Beacon-style response",
+        "pedigree table"
+      ],
+      "workflow": [
+        "Import cases",
+        "Phenotype validation",
+        "Access and consent review",
+        "Federated query",
+        "Case matching",
+        "Human review",
+        "Export"
+      ],
+      "outputs": [
+        "case matches",
+        "source coverage",
+        "phenotype matrix",
+        "access review",
+        "query provenance"
+      ],
+      "visuals": [
+        "Phenotype-case matrix",
+        "Federated source map",
+        "Variant-match network",
+        "Pedigree view",
+        "Access badges",
+        "Query timeline",
+        "Match waterfall",
+        "Source coverage"
+      ],
+      "boundary": "Federated discovery does not grant access to restricted records and must respect consent, governance and source-specific interpretation rules.",
+      "handoffs": [
+        "Rare Disease Board",
+        "Variant Workbench",
+        "Evidence Review"
+      ],
+      "optional_tools": [
+        "Phenopackets",
+        "GA4GH VRS"
+      ]
+    },
+    {
+      "key": "viral_within_host",
+      "title": "Viral Genomics & Within-Host Evolution Studio",
+      "new_module": false,
+      "existing_page": "pages/146_Virology_Viral_Evolution_Workbench.py",
+      "required_columns": [
+        "sample",
+        "subject",
+        "time",
+        "chrom",
+        "position",
+        "ref",
+        "alt",
+        "frequency",
+        "lineage"
+      ],
+      "accepted_inputs": [
+        "CSV",
+        "TSV",
+        "VCF",
+        "VCF.GZ",
+        "FASTA-derived variant table"
+      ],
+      "workflow": [
+        "Import variants",
+        "Depth and frequency QC",
+        "Consensus and minor variants",
+        "Longitudinal dynamics",
+        "Lineage and recombination",
+        "Selection review",
+        "Export"
+      ],
+      "outputs": [
+        "variant table",
+        "within-host trajectories",
+        "lineage markers",
+        "recombination flags",
+        "surveillance bundle"
+      ],
+      "visuals": [
+        "Frequency trajectories",
+        "Minor-variant spectrum",
+        "Lineage map",
+        "Recombination matrix",
+        "Selection profile",
+        "Subject timeline",
+        "Mutation heatmap",
+        "QC dashboard"
+      ],
+      "boundary": "Low-frequency variants are highly sensitive to sequencing and contamination artefacts; confirm with validated callers, controls and replicate evidence.",
+      "handoffs": [
+        "Pathogen Outbreak",
+        "Comparative Pathogen Genomics",
+        "AMR Surveillance"
+      ],
+      "optional_tools": [
+        "iVar",
+        "Nextclade",
+        "LoFreq"
+      ]
+    },
+    {
+      "key": "genome_annotation",
+      "title": "Genome Annotation & Comparative Annotation Studio",
+      "new_module": true,
+      "existing_page": null,
+      "required_columns": [
+        "genome",
+        "feature_id",
+        "chrom",
+        "start",
+        "end",
+        "strand",
+        "feature_type",
+        "evidence"
+      ],
+      "accepted_inputs": [
+        "CSV",
+        "TSV",
+        "GFF",
+        "GFF3",
+        "GTF",
+        "annotation comparison table"
+      ],
+      "workflow": [
+        "Import annotation",
+        "Syntax and coordinate QC",
+        "Gene-model comparison",
+        "Functional evidence",
+        "Orthology and synteny",
+        "Completeness review",
+        "Export"
+      ],
+      "outputs": [
+        "validated annotation",
+        "version diff",
+        "completeness metrics",
+        "orthology table",
+        "review bundle"
+      ],
+      "visuals": [
+        "Genome feature track",
+        "Annotation diff",
+        "Completeness dashboard",
+        "Orthology matrix",
+        "Synteny blocks",
+        "Evidence distribution",
+        "Feature-length profile",
+        "Review funnel"
+      ],
+      "boundary": "Automated annotation transfer can propagate errors. Curated gene models and experimental evidence remain authoritative.",
+      "handoffs": [
+        "Long-Read Assembly",
+        "Protein Annotation",
+        "Comparative Genomics"
+      ],
+      "optional_tools": [
+        "BRAKER",
+        "Bakta",
+        "BUSCO"
+      ]
+    },
+    {
+      "key": "circular_dna_instability",
+      "title": "Circular DNA, Mobile Elements & Genome Instability Studio",
+      "new_module": true,
+      "existing_page": null,
+      "required_columns": [
+        "sample",
+        "event_id",
+        "chrom",
+        "start",
+        "end",
+        "event_type",
+        "copy_number",
+        "support"
+      ],
+      "accepted_inputs": [
+        "CSV",
+        "TSV",
+        "BED",
+        "BEDPE",
+        "VCF",
+        "amplicon summary"
+      ],
+      "workflow": [
+        "Import instability events",
+        "Breakpoint QC",
+        "Circle and insertion classification",
+        "Copy-number review",
+        "Gene impact",
+        "Recurrence analysis",
+        "Export"
+      ],
+      "outputs": [
+        "instability events",
+        "circle candidates",
+        "mobile-element insertions",
+        "amplification structures",
+        "review bundle"
+      ],
+      "visuals": [
+        "Circular breakpoint map",
+        "Copy-number profile",
+        "Amplification topology",
+        "Mobile-element map",
+        "Recurrence heatmap",
+        "Gene impact",
+        "Event-size distribution",
+        "Priority waterfall"
+      ],
+      "boundary": "Complex rearrangement structures require raw-read, assembly and orthogonal validation; inferred circles are research hypotheses.",
+      "handoffs": [
+        "Structural Variant Studio",
+        "Cancer Genomics",
+        "Long-Read Assembly"
+      ],
+      "optional_tools": [
+        "AmpliconArchitect",
+        "Circle-Map",
+        "MELT"
+      ]
+    },
+    {
+      "key": "environmental_edna",
+      "title": "Environmental Genomics & eDNA Surveillance Studio",
+      "new_module": true,
+      "existing_page": null,
+      "required_columns": [
+        "sample",
+        "site",
+        "date",
+        "species",
+        "reads",
+        "control_type",
+        "reference_confidence"
+      ],
+      "accepted_inputs": [
+        "CSV",
+        "TSV",
+        "metabarcoding abundance table",
+        "taxonomy table",
+        "sample metadata"
+      ],
+      "workflow": [
+        "Import detections",
+        "Control and depth QC",
+        "Taxonomy harmonisation",
+        "Occupancy and biodiversity",
+        "Spatial and temporal review",
+        "Alert generation",
+        "Export"
+      ],
+      "outputs": [
+        "species detections",
+        "occupancy summary",
+        "biodiversity metrics",
+        "contamination flags",
+        "surveillance report"
+      ],
+      "visuals": [
+        "Species-site heatmap",
+        "Occupancy map",
+        "Biodiversity curves",
+        "Control contamination",
+        "Temporal trends",
+        "Reference confidence",
+        "Community ordination",
+        "Alert dashboard"
+      ],
+      "boundary": "eDNA detection depends on sampling design, assay specificity, reference coverage and environmental persistence; presence does not prove abundance or viability.",
+      "handoffs": [
+        "One Health Center",
+        "Microbiology & Metagenomics",
+        "Pathogen Outbreak"
+      ],
+      "optional_tools": [
+        "QIIME 2",
+        "DADA2",
+        "OBITools"
+      ]
+    },
+    {
+      "key": "comparative_regulatory_genomics",
+      "title": "Comparative Regulatory Genomics Studio",
+      "new_module": true,
+      "existing_page": null,
+      "required_columns": [
+        "species",
+        "region",
+        "ortholog_group",
+        "motif",
+        "conservation",
+        "activity",
+        "chrom",
+        "start",
+        "end"
+      ],
+      "accepted_inputs": [
+        "CSV",
+        "TSV",
+        "BED",
+        "conserved-element table",
+        "orthologous peak table"
+      ],
+      "workflow": [
+        "Import orthologous regions",
+        "Coordinate and orthology QC",
+        "Conservation analysis",
+        "Motif turnover",
+        "Activity comparison",
+        "Regulatory synteny",
+        "Export"
+      ],
+      "outputs": [
+        "conserved regions",
+        "motif turnover",
+        "activity comparison",
+        "synteny blocks",
+        "evidence bundle"
+      ],
+      "visuals": [
+        "Conservation landscape",
+        "Motif turnover heatmap",
+        "Activity comparison",
+        "Regulatory synteny",
+        "Ortholog network",
+        "Constraint distribution",
+        "Species clustering",
+        "Evidence matrix"
+      ],
+      "boundary": "Conservation and motif presence are indirect evidence. Functional claims require species- and tissue-matched experimental validation.",
+      "handoffs": [
+        "Epigenomics",
+        "Comparative Genomics",
+        "Gene Regulatory Network"
+      ],
+      "optional_tools": [
+        "HAL tools",
+        "BEDTools",
+        "phastCons"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "schema": "biointel.phase34.approved-tool-registry.v1",
+  "generated_from": "source constants; deterministic checksums",
+  "external_validation_performed": false,
+  "tools": [
+    {
+      "tool_name": "fasta_qc",
+      "tool_version": "1.0.0",
+      "adapter_type": "native_python",
+      "handler_key": "fasta_qc",
+      "sha256": "51206ad2e29e003d5a9ff92542426968bb3ed1c6e186171a5c1c9ec5fae22abd",
+      "licence": "BioIntel internal",
+      "approved": true,
+      "validation_status": "Internal Technical Validation",
+      "inputs": ["FASTA"],
+      "outputs": ["JSON"]
+    },
+    {
+      "tool_name": "fastq_qc",
+      "tool_version": "1.0.0",
+      "adapter_type": "native_python",
+      "handler_key": "fastq_qc",
+      "sha256": "483d8a4656bdbe70aa69a7bfab2f6dfbdb9952d82a89522726240e5c82681ff4",
+      "licence": "BioIntel internal",
+      "approved": true,
+      "validation_status": "Internal Technical Validation",
+      "inputs": ["FASTQ"],
+      "outputs": ["JSON"]
+    },
+    {
+      "tool_name": "file_manifest",
+      "tool_version": "1.0.0",
+      "adapter_type": "native_python",
+      "handler_key": "file_manifest",
+      "sha256": "6ac472f5509e0b15172ae3d3b155a4832323853025dc49e0f37fb324d9579e43",
+      "licence": "BioIntel internal",
+      "approved": true,
+      "validation_status": "Internal Technical Validation",
+      "inputs": [
+        "ANNDATA", "BAM", "BCF", "BED", "CRAM", "CSV", "DICOM_METADATA",
+        "FASTA", "FASTQ", "GFF", "GTF", "HDF5", "IMAGE_METADATA", "JSON",
+        "MATRIX_MARKET", "MMCIF", "MZML", "PDB", "SAM", "TSV", "VCF", "XLSX"
+      ],
+      "outputs": ["JSON"]
+    },
+    {
+      "tool_name": "structure_inspect",
+      "tool_version": "1.0.0",
+      "adapter_type": "native_python",
+      "handler_key": "structure_inspect",
+      "sha256": "d1e1e5e1876880a1cfe6aa05a28623cd62436b66749abc32d9636f769704fc58",
+      "licence": "BioIntel internal",
+      "approved": true,
+      "validation_status": "Internal Technical Validation",
+      "inputs": ["PDB", "MMCIF"],
+      "outputs": ["JSON"]
+    },
+    {
+      "tool_name": "tabular_qc",
+      "tool_version": "1.0.0",
+      "adapter_type": "native_python",
+      "handler_key": "tabular_qc",
+      "sha256": "0203d9293d5e860d7b1c90648bfdc1015baab112c12d12afccfb68c5e97b0c39",
+      "licence": "BioIntel internal",
+      "approved": true,
+      "validation_status": "Internal Technical Validation",
+      "inputs": ["CSV", "TSV"],
+      "outputs": ["JSON"]
+    },
+    {
+      "tool_name": "vcf_qc",
+      "tool_version": "1.0.0",
+      "adapter_type": "native_python",
+      "handler_key": "vcf_qc",
+      "sha256": "6c7dec931e5a49bdf334d941600152acfb1ea94725b76d1acad5bf1a33469913",
+      "licence": "BioIntel internal",
+      "approved": true,
+      "validation_status": "Internal Technical Validation",
+      "inputs": ["VCF"],
+      "outputs": ["JSON"]
+    }
+  ],
+  "adapter_only_not_bundled": [
+    "alignment_variant_annotation",
+    "single_cell_clustering",
+    "taxonomic_classification",
+    "docking",
+    "phylogenetics"
+  ]
+}

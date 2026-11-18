@@ -1,0 +1,21 @@
+{
+  "schema": "biointel.step119.workspace-content-completeness.v1",
+  "version": "11.9.0",
+  "workspace_count": 78,
+  "summary_cards_per_workspace": 6,
+  "required_card_fields": [
+    "Primary canvas",
+    "Focus entity",
+    "Workflow coverage",
+    "Readiness checks",
+    "Handoff targets",
+    "Evidence boundary"
+  ],
+  "stable_attributes": [
+    "data-biointel-module-key",
+    "data-biointel-card-id",
+    "data-biointel-card-surface",
+    "data-biointel-summary-schema"
+  ],
+  "excluded_pages_preserved": 5
+}

@@ -1,0 +1,54 @@
+{
+  "schema": "biointel.step115.audit.v1",
+  "version": "11.6.0",
+  "generated_at_utc": "2026-07-11T04:52:38+00:00",
+  "advanced_non_chart_visuals": 15,
+  "module_specific_workspaces": 13,
+  "runtime": {
+    "pages_tested": 56,
+    "pages_passed": 56,
+    "renderer_states_tested": 28,
+    "renderer_states_passed": 28,
+    "failed": 0
+  },
+  "static": {
+    "pages_checked": 170,
+    "pages_passed": 170,
+    "python_files_checked": 525,
+    "python_files_passed": 525,
+    "failed": 0
+  },
+  "databases": {
+    "database_count": 36,
+    "healthy": 36,
+    "total_rows": 108077
+  },
+  "self_test": {
+    "status": "PASS",
+    "passed": 7,
+    "failed": 0
+  },
+  "verification": {
+    "status": "PASS",
+    "passed": 9,
+    "failed": 0
+  },
+  "regression_tests_selected": 120,
+  "excluded_hashes_preserved": 5,
+  "optimizations": [
+    "lazy rendering",
+    "single-session CSS injection",
+    "bounded raster generation",
+    "LRU caching",
+    "offline SVG/HTML",
+    "state export",
+    "safe error IDs"
+  ],
+  "fixed_defects": [
+    "flow-gate coordinate mismatch",
+    "redundant pathology generation loop",
+    "repeated CSS injection",
+    "unbounded repeated deterministic scene generation"
+  ],
+  "boundary": "No claim of universal error-free operation across every future dataset, optional engine, vendor format or Windows graphics environment."
+}

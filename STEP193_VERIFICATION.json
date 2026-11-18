@@ -1,0 +1,21 @@
+{
+  "schema": "biointel.step193.verification.v1",
+  "release_version": "15.1.0",
+  "release_step": 193,
+  "mandatory_modules": 80,
+  "mandatory_checks_passed": 1920,
+  "mandatory_checks_total": 1920,
+  "step193_tests": "8/8 passed",
+  "focused_step176_to_193_tests": "110/110 passed",
+  "python_files_compiled": "1519/1519 passed",
+  "dependency_lock_valid": true,
+  "windows_wheelhouse_valid": true,
+  "windows_wheels": "102/102",
+  "page_files_static_audit": 262,
+  "page_static_audit_critical_failures": 0,
+  "module_page_hooks": "79/79",
+  "logical_modules": "80/80",
+  "installer_contract_bug_fixed": true,
+  "build_host_runtime_note": "The Linux build host does not contain Streamlit; full Windows runtime import/self-test is performed after the verified offline wheelhouse is installed.",
+  "controlled_scientific_release_eligible": false
+}

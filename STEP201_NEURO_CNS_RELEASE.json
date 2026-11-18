@@ -1,0 +1,36 @@
+{
+  "schema": "biointel.release.step201.neuro-cns.v1",
+  "step": 201,
+  "title": "BioIntel AI Step201 Neuro/CNS Completion Hardening",
+  "base_runtime": "BioIntel-AI-Step196-WINDOWS-RELEASE-V16",
+  "neuro_modules": 23,
+  "step199_advanced_laboratories": 9,
+  "step200_max_potential_systems": 9,
+  "step201_completion_systems": 9,
+  "advanced_systems_total": 27,
+  "workspaces": 5,
+  "software_improvements": [
+    "local resource binding with SHA-256, version, licence, commercial-use, schema and validation metadata",
+    "specialist engine/package detection for HMMER, InterProScan, MNE, NIfTI/DICOM, VEP, bcftools, PLINK, FreeSurfer, FSL and ANTs",
+    "privacy and direct-identifier scanning with drop, pseudonymisation and date-shift exports",
+    "analytic continuous, paired and binary study-design power planning",
+    "subject/group split overlap, duplicate identity, outcome-like column and near-perfect outcome-correlation leakage checks",
+    "numeric PSI/KS and categorical distribution drift monitoring",
+    "fixed/random-effect multi-site reproducibility and heterogeneity analysis",
+    "professional bounded PDF scientific report export",
+    "integrity-preserving ZIP evidence pack with per-file SHA-256 manifest",
+    "background queue support for privacy, leakage, drift and multi-site workloads",
+    "Step201 installer/run completeness guards and verification script"
+  ],
+  "release_boundaries": {
+    "clinical_use": false,
+    "controlled_release": false,
+    "research_screening": true,
+    "software_completion_hardened": true
+  },
+  "tests": {
+    "focused_passed": 78,
+    "focused_failed": 0,
+    "native_windows_execution": "pending_target_machine_verification"
+  }
+}

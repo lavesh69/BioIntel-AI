@@ -1,0 +1,5 @@
+-r requirements-advanced.txt
+# Install the correct PyTorch build for your CPU/GPU first from the official PyTorch instructions.
+torch>=2.6,<3
+transformers>=4.50,<5
+torch-geometric>=2.6,<3

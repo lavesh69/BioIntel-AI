@@ -1,0 +1,48 @@
+{
+  "master_brand": "BioIntel AI",
+  "tagline": "Biology, Engineered into Intelligence.",
+  "families": [
+    {
+      "key": "genomics",
+      "label": "BioIntel Genomics",
+      "description": "Sequence, genome, variant and pathogen intelligence.",
+      "icon": "dna"
+    },
+    {
+      "key": "discovery",
+      "label": "BioIntel Discovery",
+      "description": "Target, compound, structure and developability workflows.",
+      "icon": "molecule"
+    },
+    {
+      "key": "lab",
+      "label": "BioIntel Lab",
+      "description": "Assay, instrument, wet-lab and process analytics.",
+      "icon": "flask"
+    },
+    {
+      "key": "omics",
+      "label": "BioIntel Omics",
+      "description": "Transcriptomic, proteomic, single-cell and multi-omics analysis.",
+      "icon": "layers"
+    },
+    {
+      "key": "models",
+      "label": "BioIntel Models",
+      "description": "Training, evaluation, validation and lifecycle governance.",
+      "icon": "model"
+    },
+    {
+      "key": "evidence",
+      "label": "BioIntel Evidence",
+      "description": "Provenance, evidence review, release gates and reporting.",
+      "icon": "shield"
+    },
+    {
+      "key": "operations",
+      "label": "BioIntel Operations",
+      "description": "Projects, workflows, reliability, storage and deployment.",
+      "icon": "workflow"
+    }
+  ]
+}

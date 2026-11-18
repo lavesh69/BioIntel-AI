@@ -1,0 +1,23 @@
+{
+  "schema": "biointel.step122.protein_design_execution.v1",
+  "release": "13.2.0",
+  "module": "AI Protein Design & Mutation Engineering Lab",
+  "protected_backends": [
+    "proteinmpnn",
+    "rfdiffusion",
+    "colabfold_batch",
+    "foldx",
+    "rosetta_scripts"
+  ],
+  "controls": {
+    "arbitrary_shell_arguments_disabled": true,
+    "input_staging_required": true,
+    "input_sha256_required": true,
+    "model_asset_checksum_required": true,
+    "license_acceptance_required": true,
+    "persistent_checkpoint_required": true,
+    "output_inventory_sha256_required": true,
+    "scientific_release_default": false
+  },
+  "evidence_boundary": "Generated proteins remain research hypotheses until independently reviewed and experimentally confirmed."
+}

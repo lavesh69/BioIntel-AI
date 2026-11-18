@@ -1,0 +1,16 @@
+BIOINTEL AI STEP 91 - WINDOWS INSTALLATION
+
+1. Extract every Step 91 ZIP part into one folder, or run START_STEP91_AUTO_INSTALL_WINDOWS.bat.
+2. Open the resulting BioIntel-AI folder.
+3. Double-click INSTALL_WINDOWS.bat.
+4. Installation uses the bundled Windows x64 / CPython 3.11 wheelhouse and does not require internet.
+5. Run RUN_APP_WINDOWS.bat after installation.
+6. On a low-RAM laptop, use RUN_APP_LOW_MEMORY_WINDOWS.bat.
+7. For multi-gigabyte FASTQ/BAM/H5AD/mzML files, use Local Data Manager -> Large-file intake instead of browser upload.
+
+The online fallback installer is provided only for repair situations where the bundled wheelhouse was intentionally removed.
+
+8. BioIntel AI 9.1 uses the unified brand system in assets/brand and the branded DTI model selector.
+
+ADVANCED TOOLS (STEP 92)
+After the app installs, run INSTALL_ADVANCED_TOOLS_WINDOWS.bat. Native packages and the optional WSL/Bioconda suite are stored under %LOCALAPPDATA%\B91Tools.

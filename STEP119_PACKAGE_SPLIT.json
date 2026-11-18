@@ -1,0 +1,12 @@
+{
+  "schema": "biointel.step119.package-split.v1",
+  "version": "11.9.0",
+  "parts": [
+    "BioIntel-AI-Step119-WORKSPACE-CONTENT-COMPLETENESS-Part1.zip",
+    "BioIntel-AI-Step119-WORKSPACE-CONTENT-COMPLETENESS-Part2.zip",
+    "BioIntel-AI-Step119-WORKSPACE-CONTENT-COMPLETENESS-Part3.zip",
+    "BioIntel-AI-Step119-WORKSPACE-CONTENT-COMPLETENESS-Part4.zip"
+  ],
+  "extraction": "Extract all four parts into the same destination. Files are non-overlapping and merge under BioIntel-AI/.",
+  "verify": "Run VERIFY_STEP119_WINDOWS.bat after extraction."
+}

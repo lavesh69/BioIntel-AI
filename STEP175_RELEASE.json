@@ -1,0 +1,20 @@
+{
+  "schema": "biointel.step175.release.v1",
+  "step": 175,
+  "version": "14.7.0",
+  "title": "Target Environment, Specialist Engine and Production Reference Qualification",
+  "scope": {
+    "specialist_engines": 53,
+    "production_reference_groups": 26,
+    "isolated_environment_groups": 12,
+    "target_profiles": 3
+  },
+  "software_framework_score": 10.0,
+  "transactional_installation": true,
+  "resume_supported": true,
+  "rollback_supported": true,
+  "licences_never_silently_accepted": true,
+  "provider_credentials_never_stored": true,
+  "target_machine_execution_required": true,
+  "external_installation_fabricated": false
+}

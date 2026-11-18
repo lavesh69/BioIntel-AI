@@ -1,0 +1,8 @@
+# Optional advanced bioinformatics stack. Core Step 29 remains usable without these.
+pysam>=0.23,<1
+scipy>=1.14,<2
+statsmodels>=0.14,<1
+networkx>=3.4,<4
+pyarrow>=18,<23
+anndata>=0.11,<1
+scanpy>=1.10,<2

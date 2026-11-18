@@ -1,0 +1,629 @@
+{
+  "schema": "biointel.education-phase12-verification.v1",
+  "generated_at": "2026-07-28T20:00:29.419860+00:00",
+  "passed": true,
+  "passed_controls": 36,
+  "total_controls": 36,
+  "controls": [
+    {
+      "name": "phase12_schema",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "migration_export_created",
+      "passed": true,
+      "detail": {
+        "id": "dbexport_3b06f074d9474f72a5e07f899213f1d3",
+        "output_path": "/tmp/biointel-phase12-verify-cc1pghe5/education/migration_exports/inst_4afe53e1baa44dcd805d984f60f518db/postgresql-migration-20260728T200028Z.jsonl",
+        "manifest_path": "/tmp/biointel-phase12-verify-cc1pghe5/education/migration_exports/inst_4afe53e1baa44dcd805d984f60f518db/postgresql-migration-20260728T200028Z.manifest.json",
+        "sha256": "c92ef8576b4541a49244f314d894db8666c1a6cd80de209e021c3d5db5336000",
+        "table_count": 100,
+        "row_count": 22,
+        "state": "ready"
+      }
+    },
+    {
+      "name": "migration_export_verified",
+      "passed": true,
+      "detail": {
+        "id": "dbexport_3b06f074d9474f72a5e07f899213f1d3",
+        "valid": true,
+        "expected_sha256": "c92ef8576b4541a49244f314d894db8666c1a6cd80de209e021c3d5db5336000",
+        "actual_sha256": "c92ef8576b4541a49244f314d894db8666c1a6cd80de209e021c3d5db5336000",
+        "row_count": 22,
+        "table_count": 100
+      }
+    },
+    {
+      "name": "migration_export_tenant_scoped",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "postgresql_apply_requires_profile",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "originality_no_auto_penalty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "originality_similarity_detected",
+      "passed": true,
+      "detail": {
+        "submission_id": "subm_a89f673ecaf84e508cebc76a8d3aa432",
+        "text_sha256": "4ae41826dc22a47af713a40dde992ad6d67fc9ba8d46f8dae880a4f8072d4ca6",
+        "token_count": 22,
+        "comparison_count": 1,
+        "matches": [
+          {
+            "candidate_submission_id": "subm_1dd8ecfaca0f4ff3977632b2cee9f3ba",
+            "similarity": 0.6111,
+            "matched_shingles": 11,
+            "state": "needs_review"
+          }
+        ],
+        "automatic_penalty": false,
+        "human_review_required": true
+      }
+    },
+    {
+      "name": "originality_human_review",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "originality_student_blocked",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exam_governance_configured",
+      "passed": true,
+      "detail": {
+        "id": "exgov_1571fce8512e41ff80eb00b4430b1447",
+        "institution_id": "inst_4afe53e1baa44dcd805d984f60f518db",
+        "exam_id": "exam_d7cab9a076354367b996386f104ec92a",
+        "lifecycle_state": "paper_review",
+        "paper_author_id": "teacher",
+        "paper_reviewer_id": "reviewer",
+        "answer_key_reviewer_id": "answer-reviewer",
+        "controller_id": "controller",
+        "moderation_tolerance": 5.0,
+        "paper_approved_at": null,
+        "answer_key_approved_at": null,
+        "controller_approved_at": null,
+        "created_by": "admin",
+        "created_at": "2026-07-28T20:00:28.877387+00:00",
+        "updated_at": "2026-07-28T20:00:28.877387+00:00",
+        "events": [
+          {
+            "id": "exge_ccd887415db248f099b9fae961b21ddb",
+            "governance_id": "exgov_1571fce8512e41ff80eb00b4430b1447",
+            "actor_id": "admin",
+            "event_type": "governance_configured",
+            "detail_json": "{\"answer_key_reviewer\":\"answer-reviewer\",\"controller\":\"controller\",\"paper_reviewer\":\"reviewer\"}",
+            "created_at": "2026-07-28T20:00:28.877387+00:00"
+          }
+        ]
+      }
+    },
+    {
+      "name": "exam_independent_review",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exam_controller_approval",
+      "passed": true,
+      "detail": {
+        "id": "exgov_1571fce8512e41ff80eb00b4430b1447",
+        "institution_id": "inst_4afe53e1baa44dcd805d984f60f518db",
+        "exam_id": "exam_d7cab9a076354367b996386f104ec92a",
+        "lifecycle_state": "scheduled",
+        "paper_author_id": "teacher",
+        "paper_reviewer_id": "reviewer",
+        "answer_key_reviewer_id": "answer-reviewer",
+        "controller_id": "controller",
+        "moderation_tolerance": 5.0,
+        "paper_approved_at": "2026-07-28T20:00:28.894656+00:00",
+        "answer_key_approved_at": "2026-07-28T20:00:28.908299+00:00",
+        "controller_approved_at": "2026-07-28T20:00:28.925522+00:00",
+        "created_by": "admin",
+        "created_at": "2026-07-28T20:00:28.877387+00:00",
+        "updated_at": "2026-07-28T20:00:28.925522+00:00",
+        "events": [
+          {
+            "id": "exge_ccd887415db248f099b9fae961b21ddb",
+            "governance_id": "exgov_1571fce8512e41ff80eb00b4430b1447",
+            "actor_id": "admin",
+            "event_type": "governance_configured",
+            "detail_json": "{\"answer_key_reviewer\":\"answer-reviewer\",\"controller\":\"controller\",\"paper_reviewer\":\"reviewer\"}",
+            "created_at": "2026-07-28T20:00:28.877387+00:00"
+          },
+          {
+            "id": "exge_c99cfe4580c24202a94988344bf43241",
+            "governance_id": "exgov_1571fce8512e41ff80eb00b4430b1447",
+            "actor_id": "reviewer",
+            "event_type": "paper_approved",
+            "detail_json": "{\"note\":\"\"}",
+            "created_at": "2026-07-28T20:00:28.894656+00:00"
+          },
+          {
+            "id": "exge_6fcefc46113c4e67b5934b3ee4acfbd4",
+            "governance_id": "exgov_1571fce8512e41ff80eb00b4430b1447",
+            "actor_id": "answer-reviewer",
+            "event_type": "answer_key_approved",
+            "detail_json": "{\"note\":\"\"}",
+            "created_at": "2026-07-28T20:00:28.908299+00:00"
+          },
+          {
+            "id": "exge_ff1c743cd69941eeb5f6fc6b0e1c055c",
+            "governance_id": "exgov_1571fce8512e41ff80eb00b4430b1447",
+            "actor_id": "controller",
+            "event_type": "controller_approved",
+            "detail_json": "{\"note\":\"\"}",
+            "created_at": "2026-07-28T20:00:28.925522+00:00"
+          }
+        ]
+      }
+    },
+    {
+      "name": "exam_live_heartbeat",
+      "passed": true,
+      "detail": {
+        "exam_id": "exam_d7cab9a076354367b996386f104ec92a",
+        "candidates": [
+          {
+            "session_id": "exsess_bbe50502ebd1425cbebd2c6ca9e01a65",
+            "student_id": "student",
+            "session_state": "active",
+            "started_at": "2026-07-28T20:00:28.967510+00:00",
+            "submitted_at": null,
+            "last_seen_at": "2026-07-28T20:00:28.967510+00:00",
+            "connection_state": "online",
+            "current_question_id": "exq_b94b020a6eb949bab527766237aa054f",
+            "answered_count": 0,
+            "client_clock_offset_ms": 0,
+            "heartbeat_at": "2026-07-28T20:00:28.997652+00:00",
+            "integrity_events": 0,
+            "heartbeat_age_seconds": 0.0,
+            "online": true
+          }
+        ],
+        "online": 1,
+        "offline": 0,
+        "generated_at": "2026-07-28T20:00:29.010698+00:00"
+      }
+    },
+    {
+      "name": "exam_server_scoring",
+      "passed": true,
+      "detail": {
+        "id": "exscore_b4395a8ebeb7446fa714692c5aefe225",
+        "institution_id": "inst_4afe53e1baa44dcd805d984f60f518db",
+        "session_id": "exsess_bbe50502ebd1425cbebd2c6ca9e01a65",
+        "exam_id": "exam_d7cab9a076354367b996386f104ec92a",
+        "student_id": "student",
+        "objective_score": 10.0,
+        "manual_score": 0.0,
+        "negative_score": 0.0,
+        "final_score": 10.0,
+        "max_marks": 10.0,
+        "grading_state": "completed",
+        "released": 0,
+        "created_at": "2026-07-28T20:00:29.051658+00:00",
+        "updated_at": "2026-07-28T20:00:29.051658+00:00",
+        "detail": {
+          "pending_manual": [],
+          "questions": [
+            {
+              "awarded": 10.0,
+              "penalty": 0.0,
+              "question_id": "exq_b94b020a6eb949bab527766237aa054f",
+              "status": "correct"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "exam_moderation_trigger",
+      "passed": true,
+      "detail": {
+        "session_id": "exsess_bbe50502ebd1425cbebd2c6ca9e01a65",
+        "evaluations": [
+          {
+            "id": "xeval_6af5a99888234831aa9d97f76553adb8",
+            "institution_id": "inst_4afe53e1baa44dcd805d984f60f518db",
+            "exam_id": "exam_d7cab9a076354367b996386f104ec92a",
+            "session_id": "exsess_bbe50502ebd1425cbebd2c6ca9e01a65",
+            "examiner_id": "teacher",
+            "stage": "first",
+            "score": 8.0,
+            "max_score": 10.0,
+            "rubric_json": "{}",
+            "comments": "",
+            "state": "submitted",
+            "created_at": "2026-07-28T20:00:29.075074+00:00",
+            "updated_at": "2026-07-28T20:00:29.075074+00:00"
+          },
+          {
+            "id": "xeval_3f7ab57b3fa54fd0b819c03c1486f3b2",
+            "institution_id": "inst_4afe53e1baa44dcd805d984f60f518db",
+            "exam_id": "exam_d7cab9a076354367b996386f104ec92a",
+            "session_id": "exsess_bbe50502ebd1425cbebd2c6ca9e01a65",
+            "examiner_id": "reviewer",
+            "stage": "second",
+            "score": 9.0,
+            "max_score": 10.0,
+            "rubric_json": "{}",
+            "comments": "",
+            "state": "submitted",
+            "created_at": "2026-07-28T20:00:29.106514+00:00",
+            "updated_at": "2026-07-28T20:00:29.106514+00:00"
+          }
+        ],
+        "difference_percent": 10.0,
+        "moderation_required": true,
+        "final_percent": 85.0
+      }
+    },
+    {
+      "name": "exam_moderated_score",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exam_appeal_created",
+      "passed": true,
+      "detail": {
+        "id": "appeal_cb9b74442d624c6097a0b64822fba225",
+        "institution_id": "inst_4afe53e1baa44dcd805d984f60f518db",
+        "exam_id": "exam_d7cab9a076354367b996386f104ec92a",
+        "session_id": "exsess_bbe50502ebd1425cbebd2c6ca9e01a65",
+        "student_id": "student",
+        "reason": "Request independent re-check of scoring evidence.",
+        "state": "submitted",
+        "assigned_to": "",
+        "decision_note": "",
+        "original_score": 10.0,
+        "revised_score": null,
+        "created_at": "2026-07-28T20:00:29.220808+00:00",
+        "updated_at": "2026-07-28T20:00:29.220808+00:00",
+        "resolved_at": null
+      }
+    },
+    {
+      "name": "exam_appeal_resolved",
+      "passed": true,
+      "detail": {
+        "id": "appeal_cb9b74442d624c6097a0b64822fba225",
+        "institution_id": "inst_4afe53e1baa44dcd805d984f60f518db",
+        "exam_id": "exam_d7cab9a076354367b996386f104ec92a",
+        "session_id": "exsess_bbe50502ebd1425cbebd2c6ca9e01a65",
+        "student_id": "student",
+        "reason": "Request independent re-check of scoring evidence.",
+        "state": "completed",
+        "assigned_to": "controller",
+        "decision_note": "Independent review completed.",
+        "original_score": 10.0,
+        "revised_score": 8.5,
+        "created_at": "2026-07-28T20:00:29.220808+00:00",
+        "updated_at": "2026-07-28T20:00:29.231066+00:00",
+        "resolved_at": "2026-07-28T20:00:29.231066+00:00"
+      }
+    },
+    {
+      "name": "exam_audit_events",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "ai_model_honest_disabled_profile",
+      "passed": true,
+      "detail": {
+        "id": "aimodel_91704815c7894f3ea32d0c8b450cd8c6",
+        "institution_id": "inst_4afe53e1baa44dcd805d984f60f518db",
+        "name": "Offline disabled policy",
+        "provider_type": "disabled",
+        "endpoint": "",
+        "model_name": "no-external-model",
+        "embedding_model": "",
+        "reranker_model": "",
+        "secret_reference": "missing",
+        "context_window": 4096,
+        "state": "verified",
+        "created_by": "admin",
+        "created_at": "2026-07-28T20:00:29.245980+00:00",
+        "updated_at": "2026-07-28T20:00:29.260276+00:00",
+        "readiness": {
+          "endpoint_present": true,
+          "last_error": "",
+          "last_evidence": {
+            "disabled_by_policy": true,
+            "model_name": "no-external-model",
+            "provider": "disabled"
+          },
+          "live_verified": true,
+          "model_name_present": true,
+          "provider_supported": true,
+          "secret_reference_present": true
+        }
+      }
+    },
+    {
+      "name": "hardware_posture",
+      "passed": true,
+      "detail": {
+        "os": "Linux-6.12.13-x86_64-with-glibc2.41",
+        "python": "3.13.5",
+        "cpu_count": 5,
+        "memory_bytes": 6367956992,
+        "gpus": [],
+        "recommended_quantization": "Q4/Q5"
+      }
+    },
+    {
+      "name": "rag_document_registered",
+      "passed": true,
+      "detail": {
+        "id": "ragdoc_93c51474a7c14cb4a086f277b048b787",
+        "institution_id": "inst_4afe53e1baa44dcd805d984f60f518db",
+        "project_id": "course-bio",
+        "title": "safe",
+        "source_path": "/tmp/biointel-phase12-verify-cc1pghe5/safe.txt",
+        "source_name": "safe.txt",
+        "mime_type": "text/plain",
+        "sha256": "85fc24b2fa030abda53eb5fdfa6bd6415fa3a0082d9c18d8cde412c703562782",
+        "size_bytes": 70,
+        "version": 1,
+        "state": "registered",
+        "created_by": "teacher",
+        "created_at": "2026-07-28T20:00:29.276965+00:00",
+        "updated_at": "2026-07-28T20:00:29.276965+00:00",
+        "permissions": {
+          "roles": [
+            "subject_teacher",
+            "university_student"
+          ]
+        },
+        "safety": {
+          "prompt_injection_patterns": [],
+          "sample_bytes_scanned": 70
+        }
+      }
+    },
+    {
+      "name": "rag_human_approval",
+      "passed": true,
+      "detail": {
+        "id": "ragdoc_93c51474a7c14cb4a086f277b048b787",
+        "institution_id": "inst_4afe53e1baa44dcd805d984f60f518db",
+        "project_id": "course-bio",
+        "title": "safe",
+        "source_path": "/tmp/biointel-phase12-verify-cc1pghe5/safe.txt",
+        "source_name": "safe.txt",
+        "mime_type": "text/plain",
+        "sha256": "85fc24b2fa030abda53eb5fdfa6bd6415fa3a0082d9c18d8cde412c703562782",
+        "size_bytes": 70,
+        "version": 1,
+        "state": "approved",
+        "created_by": "teacher",
+        "created_at": "2026-07-28T20:00:29.276965+00:00",
+        "updated_at": "2026-07-28T20:00:29.295186+00:00",
+        "permissions": {
+          "roles": [
+            "subject_teacher",
+            "university_student"
+          ]
+        },
+        "safety": {
+          "human_review": {
+            "approved": true,
+            "reason": "Institution-approved teaching evidence",
+            "reviewed_at": "2026-07-28T20:00:29.293357+00:00",
+            "reviewed_by": "admin"
+          },
+          "prompt_injection_patterns": [],
+          "sample_bytes_scanned": 70
+        }
+      }
+    },
+    {
+      "name": "rag_prompt_injection_quarantine",
+      "passed": true,
+      "detail": {
+        "id": "ragdoc_fb57cfc34c6947b69f7dfb5789b74629",
+        "institution_id": "inst_4afe53e1baa44dcd805d984f60f518db",
+        "project_id": "course-bio",
+        "title": "unsafe",
+        "source_path": "/tmp/biointel-phase12-verify-cc1pghe5/unsafe.txt",
+        "source_name": "unsafe.txt",
+        "mime_type": "text/plain",
+        "sha256": "69fadd9063b8c675fd8f9d464f60c0bf3fcfc050da7e8282f8d8e51c7188a0ad",
+        "size_bytes": 69,
+        "version": 1,
+        "state": "quarantined",
+        "created_by": "teacher",
+        "created_at": "2026-07-28T20:00:29.307250+00:00",
+        "updated_at": "2026-07-28T20:00:29.307250+00:00",
+        "permissions": {
+          "roles": [
+            "subject_teacher",
+            "university_student"
+          ]
+        },
+        "safety": {
+          "prompt_injection_patterns": [
+            "ignore\\s+(all|any|the)\\s+(previous|prior)\\s+instructions",
+            "reveal\\s+(your|the)\\s+(hidden|secret)",
+            "system\\s+prompt"
+          ],
+          "sample_bytes_scanned": 69
+        }
+      }
+    },
+    {
+      "name": "rag_grounding_evaluation",
+      "passed": true,
+      "detail": {
+        "id": "rageval_dbee8b5b660948589b180d6e6dc8e1c0",
+        "institution_id": "inst_4afe53e1baa44dcd805d984f60f518db",
+        "project_id": "course-bio",
+        "query_text": "What stores inheritance?",
+        "expected_refs_json": "[\"ragdoc_93c51474a7c14cb4a086f277b048b787\"]",
+        "retrieved_refs_json": "[\"ragdoc_93c51474a7c14cb4a086f277b048b787\"]",
+        "recall_at_k": 1.0,
+        "citation_coverage": 1.0,
+        "grounded": 1,
+        "evaluated_by": "teacher",
+        "created_at": "2026-07-28T20:00:29.319860+00:00"
+      }
+    },
+    {
+      "name": "local_delivery_provider_verified",
+      "passed": true,
+      "detail": {
+        "id": "delivery_c16f1598688c4587bc238cbb64676a3e",
+        "institution_id": "inst_4afe53e1baa44dcd805d984f60f518db",
+        "channel": "desktop",
+        "name": "Local desktop",
+        "endpoint": "",
+        "sender": "",
+        "secret_reference": "missing",
+        "state": "verified",
+        "created_by": "admin",
+        "created_at": "2026-07-28T20:00:29.327311+00:00",
+        "updated_at": "2026-07-28T20:00:29.327311+00:00",
+        "settings": {},
+        "readiness": {
+          "endpoint_present": true,
+          "live_verified": true,
+          "secret_reference_present": true
+        }
+      }
+    },
+    {
+      "name": "provider_plaintext_secret_blocked",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "oidc_rs256_signature_validation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "oidc_nonce_replay_defence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "completion_posture_honest",
+      "passed": true,
+      "detail": {
+        "institution_id": "inst_4afe53e1baa44dcd805d984f60f518db",
+        "local_code_completion_score": 65,
+        "governed_exams": 1,
+        "originality_fingerprints": 2,
+        "approved_rag_documents": 1,
+        "ai_model_profiles": 1,
+        "delivery_providers": 1,
+        "database_migration_exports": 1,
+        "external_dependencies": {
+          "dependencies": {
+            "postgresql": {
+              "module": "psycopg",
+              "available": false
+            },
+            "s3": {
+              "module": "boto3",
+              "available": true
+            },
+            "redis": {
+              "module": "redis",
+              "available": false
+            },
+            "celery": {
+              "module": "celery",
+              "available": false
+            },
+            "cryptography": {
+              "module": "cryptography",
+              "available": true
+            }
+          },
+          "database_profiles": {
+            "institution_id": "inst_4afe53e1baa44dcd805d984f60f518db",
+            "profiles": [],
+            "postgresql_configuration_ready": false,
+            "postgresql_network_verified": false,
+            "production_database_verified": false
+          },
+          "storage_profiles": [],
+          "integrations": [],
+          "qualification_rule": "Configured is not equivalent to live verified. External credentials, network access and provider-side tests are required."
+        },
+        "external_qualification_still_required": [
+          "Signed Windows MSI/EXE and SmartScreen reputation",
+          "Live identity-provider credentials and provider-side approval",
+          "Live PostgreSQL/S3/MinIO migration and failover drills",
+          "Independent penetration, load and WCAG audits",
+          "Real institution pilot and legal/compliance approval"
+        ]
+      }
+    },
+    {
+      "name": "external_qualification_not_faked",
+      "passed": true,
+      "detail": {
+        "id": "releaseq_3d50ced3141b49a58ccfd7f0aa5bee19",
+        "institution_id": "inst_4afe53e1baa44dcd805d984f60f518db",
+        "qualification_type": "windows_clean_machine",
+        "state": "external_required",
+        "evidence_json": "{\"reason\":\"Requires native Windows host\"}",
+        "performed_by": "admin",
+        "created_at": "2026-07-28T20:00:29.412505+00:00"
+      }
+    },
+    {
+      "name": "phase12_page",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "phase12_ui",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "phase12_worker",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "phase12_navigation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "phase12_api_contract",
+      "passed": true,
+      "detail": [
+        "phase12/oidc/authorize",
+        "phase12/database-migration-exports",
+        "phase12/database-migration-exports/{export_id}/apply",
+        "phase12/submissions/{submission_id}/originality",
+        "phase12/exams/{exam_id}/governance",
+        "phase12/ai-models",
+        "phase12/rag-documents",
+        "phase12/delivery-providers",
+        "phase12/completion-posture"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "schema": "biointel.step139.qualification.v1",
+  "milestone": "Step 139",
+  "product_version": "13.2.0",
+  "scope": {
+    "specialist_modules": 15,
+    "native_profiles": 15,
+    "visual_assignments": 180,
+    "registered_pages": 206
+  },
+  "completed_tests": {
+    "step139_focused": {
+      "passed": 9,
+      "failed": 0
+    },
+    "step138_compatibility": {
+      "passed": 20,
+      "failed": 0
+    },
+    "step137_compatibility": {
+      "passed": 19,
+      "failed": 0
+    },
+    "selected_core_and_regression": {
+      "passed": 65,
+      "failed": 0
+    },
+    "selected_visual_and_interaction": {
+      "passed": 33,
+      "failed": 0
+    },
+    "total_completed_in_separate_suites": {
+      "passed": 146,
+      "failed": 0
+    },
+    "monolithic_combined_run": "environment time cap crossed after 68 progress markers; not claimed as a complete pass"
+  },
+  "compile": {
+    "python_files": 1010,
+    "passed": 1010,
+    "failed": 0
+  },
+  "navigation": {
+    "page_files_including_home": 206,
+    "catalogue_pages": 206,
+    "missing_from_catalogue": 0,
+    "missing_on_disk": 0,
+    "duplicate_keys": 0,
+    "duplicate_paths": 0,
+    "healthy": true
+  },
+  "databases": {
+    "healthy": 40,
+    "total": 40,
+    "rows_inspected": 108493,
+    "foreign_key_violations": 0
+  },
+  "scientific_smoke": {
+    "modules_run": 15,
+    "nonempty_results": 15,
+    "visuals_built": 180,
+    "publication_bundles_verified": 15
+  },
+  "native_smoke": {
+    "VCF": true,
+    "BED": true,
+    "GFF3": true,
+    "BEDPE": true,
+    "PLINK_binary_metadata_only": true,
+    "BigWig_metadata_only": true,
+    "checksum_bound_staging": true
+  },
+  "environment_gates": {
+    "live_streamlit_browser": "not executed — compatible Streamlit/PyArrow runtime unavailable in build environment",
+    "external_specialist_engine_execution": "engine plans, path containment and readiness logic verified; absent third-party engines not falsely reported as executed",
+    "static_svg_png_pdf": "optional Kaleido renderer unavailable; interactive HTML, Plotly JSON, captions and data always verified",
+    "physical_windows_install": "not executed in Linux build environment"
+  },
+  "scientific_boundary": "Built-in workflows support research screening and reproducible review. Clinical decisions, licensed/current reference data, independent validation, specialist binaries and wet-lab confirmation remain external requirements."
+}

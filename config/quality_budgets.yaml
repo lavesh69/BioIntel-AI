@@ -1,0 +1,30 @@
+schema: biointel.quality-budgets.v1
+python:
+  max_cyclomatic_complexity: 15
+  max_module_lines: 900
+  minimum_coverage_percent: 85
+  maximum_duplicate_percent: 5
+  legacy_exclusions:
+    - src/biointel/api/main.py
+    - src/biointel/ui/theme.py
+    - src/biointel/ui/navigation.py
+    - src/biointel/ui/aesthetic.py
+    - src/biointel/ui/experience_themes.py
+    - src/biointel/maturity/framework.py
+    - src/biointel/chemistry/common_compounds.py
+    - src/biointel/training/experiment_registry.py
+    - src/biointel/cli.py
+    - src/biointel/assets/research_assets.py
+    - src/biointel/data/data_packs.py
+    - src/biointel/documents/extractor.py
+    - src/biointel/documents/history.py
+    - src/biointel/innovation/advanced_engines.py
+    - src/biointel/intelligence/knowledge_warehouse.py
+    - src/biointel/innovation/excellence_engines.py
+    - src/biointel/projects/ppi.py
+
+    - src/biointel/bioinformatics_peak_v138/renderer.py
+    - src/biointel/research_planning/lifecycle_engines.py
+    - src/biointel/research_planning/specialist_engines.py
+    - src/biointel/research_planning/feature_density.py
+    - src/biointel/ui/style_catalog.py

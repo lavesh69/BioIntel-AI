@@ -1,0 +1,21 @@
+{
+  "schema": "biointel.step115.non-chart-visuals.v1",
+  "release": "11.9.0",
+  "advanced_non_chart_visuals": 15,
+  "module_specific_workspaces": 13,
+  "rendering_policy": {
+    "default": "collapsed",
+    "heavy_rendering": "explicit user activation only",
+    "maximum_simultaneous_heavy_canvases": 1,
+    "image_preview_mode": "bounded raster preview",
+    "state_export": "JSON manifest"
+  },
+  "excluded_module_pages": [
+    "pages/6_DTI_Predictor.py",
+    "pages/74_DTI_Validation_Evidence_Center.py",
+    "pages/126_LIMS_ELN_and_Sample_Chain_of_Custody_Hub.py",
+    "pages/109_Lab_Instrument_Import_Center.py",
+    "pages/157_Instrument_Integration_Hub_2.py"
+  ],
+  "scientific_boundary": "Non-chart workspaces support inspection, annotation and review. Specialist engines, current references, independent validation and regulated interpretation remain external requirements where applicable."
+}

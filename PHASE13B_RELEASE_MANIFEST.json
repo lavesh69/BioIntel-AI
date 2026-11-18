@@ -1,0 +1,66 @@
+﻿{
+    "release":  "BioIntel AI 15.6.0 Phase 13B qualified-local-P2P preview",
+    "created_at_utc":  "2026-07-27T06:53:02.5882264Z",
+    "designation":  "NOT Call/VC Complete",
+    "archive_assembly":  "four CONNECT-UPGRADED parts normalized into BioIntel-Step220",
+    "tests":  {
+                  "connect_target":  "9 passed",
+                  "browser_media":  "not run",
+                  "turn_relay":  "not run",
+                  "sfu":  "not configured",
+                  "recording":  "unavailable",
+                  "transcription":  "unavailable"
+              },
+    "changed_files":  [
+                          {
+                              "path":  "src/biointel/connect/social_media.py",
+                              "size_bytes":  27076,
+                              "sha256":  "b16ef4098ff5c281c8931b963268d93e0bed2d4d1f3d796f9b59740b6b7859eb"
+                          },
+                          {
+                              "path":  "src/biointel/connect/complete_api.py",
+                              "size_bytes":  27821,
+                              "sha256":  "2b87d37e44ac0a25baa5df8a4a582df32eab13e06c35a5680c527c383c0f67b8"
+                          },
+                          {
+                              "path":  "src/biointel/connect/complete_ui.py",
+                              "size_bytes":  24602,
+                              "sha256":  "1a306eef335863364a09830c24f42b36bbd236a650b02e0c66fcf05e319f25b1"
+                          },
+                          {
+                              "path":  "src/biointel/connect/webrtc_client.html",
+                              "size_bytes":  6807,
+                              "sha256":  "d50fa8c4645fe3d2620184527d2eefbef7d0765ab01f102359d99c2fae803319"
+                          },
+                          {
+                              "path":  "tests/connect/test_connect_complete_target.py",
+                              "size_bytes":  12491,
+                              "sha256":  "2252a9f01a11aeb061e2994ede818f60183dc6fd6e9a51df18d442408d521d0e"
+                          },
+                          {
+                              "path":  "config/calls/.env.calls.example",
+                              "size_bytes":  393,
+                              "sha256":  "79db3d35fe0ca49885dcecbf2029f7195204ad2956e78750c8c3cdf7de2304fe"
+                          },
+                          {
+                              "path":  "config/calls/turnserver.conf.example",
+                              "size_bytes":  449,
+                              "sha256":  "ce263a2aa9671967e382714b08f4b421b5ecc3f303a851638d2b1488242ccdad"
+                          },
+                          {
+                              "path":  "docs/calls/PHASE13B_LOCAL_P2P_SETUP.md",
+                              "size_bytes":  2182,
+                              "sha256":  "73a9c80d1d174b84f0f2c1df49b8dad86c0af26edeeb6db31d0071cd5527f5f1"
+                          },
+                          {
+                              "path":  "reports/phase13b/QUALIFICATION_REPORT.md",
+                              "size_bytes":  1625,
+                              "sha256":  "e82393fd5947c9ba36ea3c5fde0b9ab01426c18617792f0c57b74576207faf48"
+                          },
+                          {
+                              "path":  "reports/phase13b/KNOWN_LIMITATIONS.md",
+                              "size_bytes":  1312,
+                              "sha256":  "d8305d5e1f2ef9a5d81c5d0418eae1c07d4a03407269c426c678ba945630f2dc"
+                          }
+                      ]
+}

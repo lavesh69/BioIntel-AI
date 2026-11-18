@@ -1,0 +1,52 @@
+{
+  "schema": "biointel.step120.release.v1",
+  "step": 120,
+  "version": "12.0.0",
+  "name": "Weak Module Scientific Depth Upgrade",
+  "weak_module_groups_upgraded": [
+    "Flow cytometry",
+    "Imaging and microscopy",
+    "Spatial omics",
+    "Metabolomics and lipidomics",
+    "Proteomics/proteogenomics",
+    "Glycomics",
+    "Population GWAS",
+    "Structural variation/repeat expansion",
+    "RNA splicing",
+    "Pharmacogenomics",
+    "Docking and dynamics",
+    "Antibody engineering",
+    "Immunoinformatics",
+    "Single-cell trajectory",
+    "Cell atlas mapping",
+    "Genome-editing safety",
+    "Epigenomics"
+  ],
+  "capability_modules": 17,
+  "pipeline_stages": 102,
+  "new_protected_engine_plans": 8,
+  "scientific_boundary": "Research and education only. External engines, licensed databases, model weights, wet-lab validation and clinical review remain operator-supplied and are never reported as complete when absent.",
+  "requested_exclusions": [
+    "DTI Predictor",
+    "DTI Validation Evidence Center",
+    "Lab Instrument Import Center",
+    "LIMS/ELN & Sample Chain-of-Custody",
+    "Instrument Integration Hub 2"
+  ],
+  "engineering_refactor": {
+    "module_size_gate": "passed",
+    "split_modules": [
+      "src/biointel/native/formats.py",
+      "src/biointel/ui/phase108_visuals.py",
+      "src/biointel/ui/advanced_scientific_viewers.py",
+      "src/biointel/ui/scientific_visuals.py"
+    ],
+    "companion_modules": [
+      "src/biointel/native/formats_specialized.py",
+      "src/biointel/ui/phase108_visual_builders_core.py",
+      "src/biointel/ui/advanced_viewer_builders_core.py",
+      "src/biointel/ui/scientific_visual_domain.py"
+    ]
+  },
+  "validation_report": "reports/step120_final_validation.json"
+}

@@ -1,0 +1,42 @@
+{
+  "schema": "biointel.step202.test-status.v1",
+  "generated_at_utc": "2026-07-17T04:30:00+00:00",
+  "python_compilation": {
+    "passed": true
+  },
+  "source_preflight_builder_mode": {
+    "passed": true,
+    "checks": 8
+  },
+  "runtime_self_test": {
+    "passed": true,
+    "checks": 11
+  },
+  "demo_execution": {
+    "passed": true,
+    "module_results": 23
+  },
+  "demo_assets": {
+    "passed": true,
+    "files": 21
+  },
+  "native_windows_installation": {
+    "status": "pending target-machine verification"
+  },
+  "native_windows_ui_boot": {
+    "status": "pending target-machine verification"
+  },
+  "scientific_boundary": "Software tests and synthetic demo execution do not establish external scientific or clinical validity.",
+  "focused_neuro_tests": {
+    "passed": 90,
+    "failed": 0
+  },
+  "windows_release_installer_contract_tests": {
+    "passed": 5,
+    "failed": 0
+  },
+  "combined_focused_tests": {
+    "passed": 95,
+    "failed": 0
+  }
+}

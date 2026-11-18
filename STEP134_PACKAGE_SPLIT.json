@@ -1,0 +1,13 @@
+{
+  "schema": "biointel.step134.package-split.v1",
+  "version": "13.2.0",
+  "parts": [
+    "BioIntel-AI-Step134-FULL-MODULE-RELIABILITY-STABILITY-Part1.zip",
+    "BioIntel-AI-Step134-FULL-MODULE-RELIABILITY-STABILITY-Part2.zip",
+    "BioIntel-AI-Step134-FULL-MODULE-RELIABILITY-STABILITY-Part3.zip",
+    "BioIntel-AI-Step134-FULL-MODULE-RELIABILITY-STABILITY-Part4.zip"
+  ],
+  "extraction_root": "BioIntel-AI",
+  "instructions": "Extract all four ZIP parts into the same destination folder, then run VERIFY_STEP134_WINDOWS.bat, INSTALL_WINDOWS.bat and RUN_APP_SMOOTH_WINDOWS.bat.",
+  "release_boundary": "External proprietary model weights, licensed references, specialist executables, physical instruments, clinical evidence and wet-lab validation are not fabricated or bundled."
+}

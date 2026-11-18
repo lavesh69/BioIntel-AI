@@ -1,0 +1,27 @@
+{
+  "schema": "biointel.step104.release.v1",
+  "version": "10.4.0",
+  "step": 104,
+  "release_name": "Optimized Scientific and Platform Expansion",
+  "new_scientific_modules": 14,
+  "new_platform_services": 15,
+  "new_feature_count": 29,
+  "pages_added": [
+    134,
+    163
+  ],
+  "scientific_engine": "biointel.nextgen.scientific.v1",
+  "platform_store": "workspace/step104/platform.sqlite3",
+  "verification": {
+    "targeted_pytest": "8 passed",
+    "streamlit_pages": "30/30 passed",
+    "scientific_demo_engines": "14/14 passed",
+    "platform_service_groups": "15 integrated",
+    "combined_regression_suite": "23 passed"
+  },
+  "boundaries": [
+    "No specialist external tool is silently simulated.",
+    "Clinical and diagnostic use remains blocked without independent validation.",
+    "Plugin signatures are not claimed as cryptographically verified unless an external verifier is configured."
+  ]
+}

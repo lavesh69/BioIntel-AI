@@ -1,0 +1,13 @@
+{
+  "schema": "biointel.step128.package-split.v1",
+  "version": "12.8.0",
+  "parts": [
+    "BioIntel-AI-Step128-NEXT-GENERATION-BIOMEDICAL-MODULES-Part1.zip",
+    "BioIntel-AI-Step128-NEXT-GENERATION-BIOMEDICAL-MODULES-Part2.zip",
+    "BioIntel-AI-Step128-NEXT-GENERATION-BIOMEDICAL-MODULES-Part3.zip",
+    "BioIntel-AI-Step128-NEXT-GENERATION-BIOMEDICAL-MODULES-Part4.zip"
+  ],
+  "extraction_root": "BioIntel-AI",
+  "instructions": "Extract all four ZIP parts into the same destination folder, then run VERIFY_STEP128_WINDOWS.bat.",
+  "release_boundary": "External proprietary model weights, licensed references, specialist executables, clinical evidence and wet-lab validation are not fabricated or bundled."
+}

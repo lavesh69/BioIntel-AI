@@ -1,0 +1,84 @@
+{
+  "schema": "biointel.scientific-runtime-profiles.v2",
+  "runtime_root": "%LOCALAPPDATA%\\BioIntelAI\\ScientificRuntimes",
+  "state_file": "%LOCALAPPDATA%\\BioIntelAI\\ScientificRuntimes\\state\\runtime-state.json",
+  "profiles": [
+    {
+      "profile_id": "p0_data",
+      "public_name": "BioIntel P0 Data Science Pack",
+      "priority": "P0",
+      "mode": "micromamba_python",
+      "python": "3.11",
+      "requirements_file": "requirements/scientific-p0-data.txt",
+      "integration_ids": ["variant_file_intelligence", "biological_statistics", "single_cell_analysis", "pathway_intelligence"]
+    },
+    {
+      "profile_id": "p0_imaging",
+      "public_name": "BioIntel P0 Imaging Workspace",
+      "priority": "P0",
+      "mode": "micromamba_python",
+      "python": "3.11",
+      "requirements_file": "requirements/scientific-p0-imaging.txt",
+      "integration_ids": ["bioimaging_workspace"]
+    },
+    {
+      "profile_id": "p1_omics",
+      "public_name": "BioIntel P1 Advanced Omics Pack",
+      "priority": "P1",
+      "mode": "micromamba_python",
+      "python": "3.11",
+      "requirements_file": "requirements/scientific-p1-omics.txt",
+      "integration_ids": ["single_cell_ai", "multiomics_integration", "spatial_omics"]
+    },
+    {
+      "profile_id": "p1_molecular",
+      "public_name": "BioIntel P1 Molecular AI Pack",
+      "priority": "P1",
+      "mode": "micromamba_python",
+      "python": "3.11",
+      "requirements_file": "requirements/scientific-p1-molecular.txt",
+      "integration_ids": ["molecular_ai"]
+    },
+    {
+      "profile_id": "p1_simulation",
+      "public_name": "BioIntel P1 Simulation Pack",
+      "priority": "P1",
+      "mode": "micromamba_python",
+      "python": "3.11",
+      "requirements_file": "requirements/scientific-p1-simulation.txt",
+      "integration_ids": ["molecular_simulation", "trajectory_analysis"]
+    },
+    {
+      "profile_id": "p1_imaging_ai",
+      "public_name": "BioIntel P1 Imaging AI Pack",
+      "priority": "P1",
+      "mode": "micromamba_python",
+      "python": "3.11",
+      "requirements_file": "requirements/scientific-p1-imaging-ai.txt",
+      "integration_ids": ["medical_imaging_ai"]
+    },
+    {
+      "profile_id": "p2_protein_ai",
+      "public_name": "BioIntel P2 Protein Intelligence Pack",
+      "priority": "P2",
+      "mode": "micromamba_python",
+      "python": "3.11",
+      "requirements_file": "requirements/scientific-p2-protein-ai.txt",
+      "integration_ids": ["protein_language", "protein_design"]
+    },
+    {
+      "profile_id": "native_tools",
+      "public_name": "BioIntel Native Scientific Tools",
+      "priority": "P1",
+      "mode": "native_cli",
+      "integration_ids": ["molecular_docking"]
+    },
+    {
+      "profile_id": "wsl_tools",
+      "public_name": "BioIntel Reproducible Workflow Suite",
+      "priority": "P1/P2",
+      "mode": "wsl_micromamba",
+      "integration_ids": ["taxonomy_classification", "workflow_automation", "pipeline_execution", "protein_design"]
+    }
+  ]
+}

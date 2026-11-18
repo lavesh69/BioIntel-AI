@@ -1,0 +1,29 @@
+{
+  "schema": "biointel.education-phase11-release.v1",
+  "product": "BioIntel AI",
+  "version": "15.6.0",
+  "release": "Education Phase 11 Mega Production and Academic Core",
+  "archive_root": "BioIntel-Step220",
+  "part_count": 4,
+  "desktop_first": true,
+  "mobile_redesign_in_scope": false,
+  "implemented": [
+    "RFC 6238 TOTP MFA with encrypted secrets and single-use recovery codes",
+    "tamper-evident security event chain and bounded rate limiting",
+    "governed Question Bank with independent review, versions, blueprinting and item analysis",
+    "weighted grade schemes, transcript CGPA and signed/revocable credentials",
+    "durable notification outbox with in-app/desktop delivery and SMTP adapter",
+    "governed CSV/JSON reports, health snapshots and incident lifecycle",
+    "privacy requests and retention policies",
+    "AES-256-GCM full backup with per-file hashes and non-destructive restore rehearsal",
+    "typed Phase 11 API, worker and Mega Production & Academic Center UI"
+  ],
+  "external_qualification_required": [
+    "live Google/Microsoft/SAML/OIDC provider credentials and callbacks",
+    "live PostgreSQL migration, pooling and failover",
+    "live S3/MinIO storage credentials and lifecycle validation",
+    "signed MSI/EXE and SmartScreen reputation",
+    "live SMS/WhatsApp and LMS/SIS vendor integrations",
+    "independent penetration, load, WCAG and native Windows clean-machine tests"
+  ]
+}

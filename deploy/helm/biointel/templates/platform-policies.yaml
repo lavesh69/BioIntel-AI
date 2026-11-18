@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: ResourceQuota
+metadata: {name: {{ include "biointel.fullname" . }}-quota}
+spec:
+  hard: {requests.cpu: "20", requests.memory: 40Gi, limits.cpu: "40", limits.memory: 80Gi, pods: "100"}
+---
+apiVersion: v1
+kind: LimitRange
+metadata: {name: {{ include "biointel.fullname" . }}-limits}
+spec:
+  limits:
+    - type: Container
+      default: {cpu: "2", memory: 4Gi}
+      defaultRequest: {cpu: 250m, memory: 512Mi}

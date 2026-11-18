@@ -1,0 +1,20 @@
+{{- range $name, $cfg := .Values.persistence }}
+{{- if and $cfg.enabled (not $cfg.existingClaim) }}
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: {{ include "biointel.fullname" $ }}-{{ $name }}
+  labels:
+    {{- include "biointel.labels" $ | nindent 4 }}
+spec:
+  accessModes:
+    {{- toYaml $cfg.accessModes | nindent 4 }}
+  {{- if $cfg.storageClass }}
+  storageClassName: {{ $cfg.storageClass | quote }}
+  {{- end }}
+  resources:
+    requests:
+      storage: {{ $cfg.size }}
+{{- end }}
+{{- end }}

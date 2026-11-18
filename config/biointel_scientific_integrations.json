@@ -1,0 +1,845 @@
+{
+  "schema": "biointel.scientific-integrations.v2",
+  "identity_policy": "BioIntel public names in normal UI; required upstream attribution in legal notices",
+  "integrations": [
+    {
+      "integration_id": "sequence_intelligence",
+      "public_key": "BI-INT-001",
+      "public_name": "BioIntel Sequence Intelligence Engine",
+      "category": "Sequence & Genomics",
+      "execution_mode": "In-process Python",
+      "target_modules": [
+        "Sequence Analyzer",
+        "Sequence Comparison",
+        "Comparative Genomics"
+      ],
+      "capabilities": [
+        "FASTA and GenBank parsing",
+        "Alignment utilities",
+        "Sequence feature extraction"
+      ],
+      "probe": {
+        "python_modules": [
+          "Bio"
+        ],
+        "distributions": [
+          "biopython"
+        ]
+      },
+      "readiness_policy": "all",
+      "setup_profile": "Core BioIntel",
+      "weight_or_database_required": false,
+      "priority": "P0",
+      "runtime_profile": "core",
+      "backend": "main_python",
+      "operations": [
+        "technical_diagnostic",
+        "sequence_summary",
+        "fasta_summary"
+      ],
+      "module_pages": [
+        "pages/1_Sequence_Analyzer.py",
+        "pages/2_Sequence_Comparison.py",
+        "pages/16_Batch_Sequence_Analysis.py"
+      ],
+      "timeout_seconds": 300,
+      "public_boundary": "Research-use integration; technical readiness does not establish scientific, clinical or regulatory validity."
+    },
+    {
+      "integration_id": "variant_file_intelligence",
+      "public_key": "BI-INT-002",
+      "public_name": "BioIntel Variant File Engine",
+      "category": "Genomics",
+      "execution_mode": "Isolated Python adapter",
+      "target_modules": [
+        "Cancer Genomics",
+        "Variant Workbench",
+        "NGS QC"
+      ],
+      "capabilities": [
+        "SAM/BAM/CRAM access",
+        "VCF/BCF access",
+        "Indexed region queries"
+      ],
+      "probe": {
+        "python_modules": [
+          "pysam"
+        ],
+        "distributions": [
+          "pysam"
+        ]
+      },
+      "readiness_policy": "all",
+      "setup_profile": "BioIntel Genomics Pack",
+      "weight_or_database_required": true,
+      "priority": "P0",
+      "runtime_profile": "p0_data",
+      "backend": "isolated_python",
+      "operations": [
+        "technical_diagnostic",
+        "variant_summary",
+        "alignment_summary"
+      ],
+      "module_pages": [
+        "pages/57_Variant_Annotation_Workbench.py",
+        "pages/81_Cancer_Genomics.py"
+      ],
+      "timeout_seconds": 300,
+      "public_boundary": "Research-use integration; technical readiness does not establish scientific, clinical or regulatory validity."
+    },
+    {
+      "integration_id": "biological_statistics",
+      "public_key": "BI-INT-003",
+      "public_name": "BioIntel Biological Statistics Engine",
+      "category": "Microbiome & Ecology",
+      "execution_mode": "Isolated Python adapter",
+      "target_modules": [
+        "Metagenomics Pipeline",
+        "Microbiome Analytics",
+        "Phylogeny"
+      ],
+      "capabilities": [
+        "Diversity metrics",
+        "Distance matrices",
+        "Biological statistics"
+      ],
+      "probe": {
+        "python_modules": [
+          "skbio"
+        ],
+        "distributions": [
+          "scikit-bio"
+        ]
+      },
+      "readiness_policy": "all",
+      "setup_profile": "BioIntel Omics Pack",
+      "weight_or_database_required": false,
+      "priority": "P0",
+      "runtime_profile": "p0_data",
+      "backend": "isolated_python",
+      "operations": [
+        "technical_diagnostic",
+        "alpha_diversity",
+        "distance_matrix"
+      ],
+      "module_pages": [
+        "pages/65_Microbiology_Metagenomics.py",
+        "pages/82_Metagenomics_Pipeline.py",
+        "pages/139_Strain_Resolved_Microbiome_Functional_Profiling_Studio.py"
+      ],
+      "timeout_seconds": 300,
+      "public_boundary": "Research-use integration; technical readiness does not establish scientific, clinical or regulatory validity."
+    },
+    {
+      "integration_id": "single_cell_analysis",
+      "public_key": "BI-INT-004",
+      "public_name": "BioIntel Single-Cell Analysis Engine",
+      "category": "Single Cell",
+      "execution_mode": "Isolated Python adapter",
+      "target_modules": [
+        "Single-Cell Heterogeneity",
+        "Cell Atlas Mapping",
+        "Perturb-seq Analytics"
+      ],
+      "capabilities": [
+        "QC and normalization",
+        "Clustering and embeddings",
+        "Marker analysis"
+      ],
+      "probe": {
+        "python_modules": [
+          "scanpy"
+        ],
+        "distributions": [
+          "scanpy"
+        ]
+      },
+      "readiness_policy": "all",
+      "setup_profile": "BioIntel Single-Cell Pack",
+      "weight_or_database_required": false,
+      "priority": "P0",
+      "runtime_profile": "p0_data",
+      "backend": "isolated_python",
+      "operations": [
+        "technical_diagnostic",
+        "single_cell_qc",
+        "single_cell_embedding"
+      ],
+      "module_pages": [
+        "pages/80_Single_Cell_Heterogeneity.py",
+        "pages/119_Single_Cell_Trajectory_and_Communication_Lab.py"
+      ],
+      "timeout_seconds": 300,
+      "public_boundary": "Research-use integration; technical readiness does not establish scientific, clinical or regulatory validity."
+    },
+    {
+      "integration_id": "single_cell_ai",
+      "public_key": "BI-INT-005",
+      "public_name": "BioIntel Single-Cell AI Engine",
+      "category": "Single Cell",
+      "execution_mode": "GPU/CPU model adapter",
+      "target_modules": [
+        "Single-Cell Heterogeneity",
+        "Cell Atlas Mapping",
+        "Multi-Omics Biomarker Discovery"
+      ],
+      "capabilities": [
+        "Probabilistic integration",
+        "Batch correction",
+        "Latent representations"
+      ],
+      "probe": {
+        "python_modules": [
+          "scvi"
+        ],
+        "distributions": [
+          "scvi-tools"
+        ]
+      },
+      "readiness_policy": "all",
+      "setup_profile": "BioIntel Single-Cell AI Pack",
+      "weight_or_database_required": true,
+      "priority": "P1",
+      "runtime_profile": "p1_omics",
+      "backend": "isolated_python",
+      "operations": [
+        "technical_diagnostic",
+        "single_cell_ai_diagnostic",
+        "single_cell_latent"
+      ],
+      "module_pages": [
+        "pages/80_Single_Cell_Heterogeneity.py",
+        "pages/119_Single_Cell_Trajectory_and_Communication_Lab.py",
+        "pages/198_Single_Cell_Multiome_Regulatory_Network_Studio.py"
+      ],
+      "timeout_seconds": 600,
+      "public_boundary": "Research-use integration; technical readiness does not establish scientific, clinical or regulatory validity."
+    },
+    {
+      "integration_id": "multiomics_integration",
+      "public_key": "BI-INT-006",
+      "public_name": "BioIntel Multi-Omics Integration Engine",
+      "category": "Multi-Omics",
+      "execution_mode": "Isolated Python adapter",
+      "target_modules": [
+        "Multi-Omics Biomarker Discovery",
+        "Cell Atlas Mapping",
+        "Knowledge Integration"
+      ],
+      "capabilities": [
+        "Multimodal data containers",
+        "Cross-modality integration",
+        "Joint embeddings"
+      ],
+      "probe": {
+        "python_modules": [
+          "muon"
+        ],
+        "distributions": [
+          "muon"
+        ]
+      },
+      "readiness_policy": "all",
+      "setup_profile": "BioIntel Multi-Omics Pack",
+      "weight_or_database_required": false,
+      "priority": "P1",
+      "runtime_profile": "p1_omics",
+      "backend": "isolated_python",
+      "operations": [
+        "technical_diagnostic",
+        "multiomics_summary",
+        "joint_container"
+      ],
+      "module_pages": [
+        "pages/102_Multi_Omics_Biomarker_Discovery.py",
+        "pages/129_Multi_Omics_Harmonization_and_Batch_Correction_Studio.py"
+      ],
+      "timeout_seconds": 600,
+      "public_boundary": "Research-use integration; technical readiness does not establish scientific, clinical or regulatory validity."
+    },
+    {
+      "integration_id": "spatial_omics",
+      "public_key": "BI-INT-007",
+      "public_name": "BioIntel Spatial Omics Engine",
+      "category": "Spatial Biology",
+      "execution_mode": "Isolated Python adapter",
+      "target_modules": [
+        "Spatial Omics",
+        "Digital Pathology",
+        "Single-Cell Heterogeneity"
+      ],
+      "capabilities": [
+        "Spatial graphs",
+        "Neighborhood statistics",
+        "Image-linked omics analysis"
+      ],
+      "probe": {
+        "python_modules": [
+          "squidpy"
+        ],
+        "distributions": [
+          "squidpy"
+        ]
+      },
+      "readiness_policy": "all",
+      "setup_profile": "BioIntel Spatial Biology Pack",
+      "weight_or_database_required": false,
+      "priority": "P1",
+      "runtime_profile": "p1_omics",
+      "backend": "isolated_python",
+      "operations": [
+        "technical_diagnostic",
+        "spatial_neighbors",
+        "spatial_summary"
+      ],
+      "module_pages": [
+        "pages/118_Spatial_Omics_and_Digital_Pathology_Studio.py",
+        "pages/178_Spatial_Medicine_Tumour_Microenvironment_Atlas.py"
+      ],
+      "timeout_seconds": 600,
+      "public_boundary": "Research-use integration; technical readiness does not establish scientific, clinical or regulatory validity."
+    },
+    {
+      "integration_id": "molecular_intelligence",
+      "public_key": "BI-INT-008",
+      "public_name": "BioIntel Molecular Intelligence Engine",
+      "category": "Drug Discovery",
+      "execution_mode": "In-process Python",
+      "target_modules": [
+        "Drug SMILES Analyzer",
+        "ADMET Drug Discovery",
+        "Discovery Command Center"
+      ],
+      "capabilities": [
+        "Molecular parsing",
+        "Descriptors and fingerprints",
+        "Substructure and similarity analysis"
+      ],
+      "probe": {
+        "python_modules": [
+          "rdkit"
+        ],
+        "distributions": [
+          "rdkit"
+        ]
+      },
+      "readiness_policy": "all",
+      "setup_profile": "Core BioIntel",
+      "weight_or_database_required": false,
+      "priority": "P0",
+      "runtime_profile": "core",
+      "backend": "main_python",
+      "operations": [
+        "technical_diagnostic",
+        "molecule_summary",
+        "fingerprint"
+      ],
+      "module_pages": [
+        "pages/3_Drug_SMILES_Analyzer.py",
+        "pages/62_ADMET_Drug_Discovery.py"
+      ],
+      "timeout_seconds": 300,
+      "public_boundary": "Research-use integration; technical readiness does not establish scientific, clinical or regulatory validity."
+    },
+    {
+      "integration_id": "molecular_ai",
+      "public_key": "BI-INT-009",
+      "public_name": "BioIntel Molecular AI Engine",
+      "category": "Drug Discovery AI",
+      "execution_mode": "Isolated Python adapter",
+      "target_modules": [
+        "DTI Predictor",
+        "Molecular Property Modelling",
+        "Discovery Command Center"
+      ],
+      "capabilities": [
+        "Graph-based molecular learning",
+        "Property prediction adapters",
+        "Dataset/model interfaces"
+      ],
+      "probe": {
+        "python_modules": [
+          "deepchem"
+        ],
+        "distributions": [
+          "deepchem"
+        ]
+      },
+      "readiness_policy": "all",
+      "setup_profile": "BioIntel Molecular AI Pack",
+      "weight_or_database_required": true,
+      "priority": "P1",
+      "runtime_profile": "p1_molecular",
+      "backend": "isolated_python",
+      "operations": [
+        "technical_diagnostic",
+        "molecular_featurize",
+        "model_diagnostic"
+      ],
+      "module_pages": [
+        "pages/6_DTI_Predictor.py",
+        "pages/78_Protein_Interaction_ML.py"
+      ],
+      "timeout_seconds": 600,
+      "public_boundary": "Research-use integration; technical readiness does not establish scientific, clinical or regulatory validity."
+    },
+    {
+      "integration_id": "molecular_docking",
+      "public_key": "BI-INT-010",
+      "public_name": "BioIntel Molecular Docking Engine",
+      "category": "Structural Biology",
+      "execution_mode": "Audited CLI worker",
+      "target_modules": [
+        "Molecular Docking Lab",
+        "Discovery Command Center",
+        "Protein-Ligand Co-Design"
+      ],
+      "capabilities": [
+        "Pose generation",
+        "Docking score capture",
+        "Reproducible search-box execution"
+      ],
+      "probe": {
+        "tool_ids": [
+          "vina"
+        ]
+      },
+      "readiness_policy": "all",
+      "setup_profile": "BioIntel Portable Core",
+      "weight_or_database_required": false,
+      "priority": "P1",
+      "runtime_profile": "native_tools",
+      "backend": "cli",
+      "operations": [
+        "technical_diagnostic",
+        "dock",
+        "score_only"
+      ],
+      "module_pages": [
+        "pages/116_Molecular_Docking_and_Dynamics_Lab.py",
+        "pages/183_Protein_Ligand_CoDesign_Studio.py"
+      ],
+      "timeout_seconds": 600,
+      "public_boundary": "Research-use integration; technical readiness does not establish scientific, clinical or regulatory validity."
+    },
+    {
+      "integration_id": "molecular_simulation",
+      "public_key": "BI-INT-011",
+      "public_name": "BioIntel Molecular Simulation Engine",
+      "category": "Structural Biology",
+      "execution_mode": "GPU/CPU Python worker",
+      "target_modules": [
+        "Molecular Dynamics Lab",
+        "Protein-Ligand Co-Design",
+        "Structural Bioinformatics"
+      ],
+      "capabilities": [
+        "Energy minimization",
+        "Molecular simulation",
+        "Custom force evaluation"
+      ],
+      "probe": {
+        "python_modules": [
+          "openmm"
+        ],
+        "distributions": [
+          "openmm"
+        ]
+      },
+      "readiness_policy": "all",
+      "setup_profile": "BioIntel Simulation Pack",
+      "weight_or_database_required": true,
+      "priority": "P1",
+      "runtime_profile": "p1_simulation",
+      "backend": "isolated_python",
+      "operations": [
+        "technical_diagnostic",
+        "simulation_diagnostic",
+        "energy_minimize"
+      ],
+      "module_pages": [
+        "pages/116_Molecular_Docking_and_Dynamics_Lab.py",
+        "pages/183_Protein_Ligand_CoDesign_Studio.py"
+      ],
+      "timeout_seconds": 600,
+      "public_boundary": "Research-use integration; technical readiness does not establish scientific, clinical or regulatory validity."
+    },
+    {
+      "integration_id": "trajectory_analysis",
+      "public_key": "BI-INT-012",
+      "public_name": "BioIntel Molecular Trajectory Engine",
+      "category": "Structural Biology",
+      "execution_mode": "Isolated Python adapter",
+      "target_modules": [
+        "Molecular Dynamics Lab",
+        "Structural Bioinformatics",
+        "Protein-Ligand Co-Design"
+      ],
+      "capabilities": [
+        "Trajectory loading",
+        "RMSD and RMSF",
+        "Contact and interaction analysis"
+      ],
+      "probe": {
+        "python_modules": [
+          "MDAnalysis"
+        ],
+        "distributions": [
+          "MDAnalysis"
+        ]
+      },
+      "readiness_policy": "all",
+      "setup_profile": "BioIntel Simulation Pack",
+      "weight_or_database_required": false,
+      "priority": "P1",
+      "runtime_profile": "p1_simulation",
+      "backend": "isolated_python",
+      "operations": [
+        "technical_diagnostic",
+        "trajectory_summary",
+        "rmsd"
+      ],
+      "module_pages": [
+        "pages/116_Molecular_Docking_and_Dynamics_Lab.py",
+        "pages/183_Protein_Ligand_CoDesign_Studio.py"
+      ],
+      "timeout_seconds": 600,
+      "public_boundary": "Research-use integration; technical readiness does not establish scientific, clinical or regulatory validity."
+    },
+    {
+      "integration_id": "protein_language",
+      "public_key": "BI-INT-013",
+      "public_name": "BioIntel Protein Language Engine",
+      "category": "Protein AI",
+      "execution_mode": "GPU/CPU model adapter",
+      "target_modules": [
+        "AI Protein Design Lab",
+        "Protein Annotation",
+        "Mutation Engineering"
+      ],
+      "capabilities": [
+        "Protein embeddings",
+        "Sequence representation",
+        "Structure/model adapters"
+      ],
+      "probe": {
+        "python_modules": [
+          "esm"
+        ],
+        "distributions": [
+          "fair-esm",
+          "esm"
+        ]
+      },
+      "readiness_policy": "all",
+      "setup_profile": "BioIntel Protein AI Pack",
+      "weight_or_database_required": true,
+      "priority": "P2",
+      "runtime_profile": "p2_protein_ai",
+      "backend": "isolated_python",
+      "operations": [
+        "technical_diagnostic",
+        "protein_model_diagnostic",
+        "protein_embedding"
+      ],
+      "module_pages": [
+        "pages/143_Protein_Language_Model_Generative_Design_Lab.py",
+        "pages/60_Protein_Annotation_Proteomics.py"
+      ],
+      "timeout_seconds": 900,
+      "public_boundary": "Research-use integration; technical readiness does not establish scientific, clinical or regulatory validity."
+    },
+    {
+      "integration_id": "protein_design",
+      "public_key": "BI-INT-014",
+      "public_name": "BioIntel Structure-Conditioned Protein Design Engine",
+      "category": "Protein AI",
+      "execution_mode": "Audited model worker",
+      "target_modules": [
+        "AI Protein Design Lab",
+        "Mutation Engineering",
+        "Enzyme Design"
+      ],
+      "capabilities": [
+        "Structure-conditioned sequence design",
+        "Constraint-aware candidates",
+        "Audited model execution"
+      ],
+      "probe": {
+        "tool_ids": [
+          "proteinmpnn"
+        ]
+      },
+      "readiness_policy": "all",
+      "setup_profile": "BioIntel Protein AI Pack",
+      "weight_or_database_required": true,
+      "priority": "P2",
+      "runtime_profile": "p2_protein_ai",
+      "backend": "wsl_cli",
+      "operations": [
+        "technical_diagnostic",
+        "design_sequences",
+        "score_sequence"
+      ],
+      "module_pages": [
+        "pages/96_AI_Protein_Design_Lab.py",
+        "pages/143_Protein_Language_Model_Generative_Design_Lab.py",
+        "pages/144_Enzyme_Engineering_Metabolic_Pathway_Design_Studio.py"
+      ],
+      "timeout_seconds": 900,
+      "public_boundary": "Research-use integration; technical readiness does not establish scientific, clinical or regulatory validity."
+    },
+    {
+      "integration_id": "pathway_intelligence",
+      "public_key": "BI-INT-015",
+      "public_name": "BioIntel Pathway Intelligence Engine",
+      "category": "Systems Biology",
+      "execution_mode": "Isolated Python adapter",
+      "target_modules": [
+        "Pathway & Network Analysis",
+        "Multi-Omics Biomarker Discovery",
+        "Cancer Genomics"
+      ],
+      "capabilities": [
+        "Enrichment analysis",
+        "Gene-set scoring",
+        "Pathway result visualization"
+      ],
+      "probe": {
+        "python_modules": [
+          "gseapy"
+        ],
+        "distributions": [
+          "gseapy"
+        ]
+      },
+      "readiness_policy": "all",
+      "setup_profile": "BioIntel Omics Pack",
+      "weight_or_database_required": true,
+      "priority": "P0",
+      "runtime_profile": "p0_data",
+      "backend": "isolated_python",
+      "operations": [
+        "technical_diagnostic",
+        "offline_prerank",
+        "gene_set_score"
+      ],
+      "module_pages": [
+        "pages/63_Pathway_Network_Analysis.py",
+        "pages/102_Multi_Omics_Biomarker_Discovery.py",
+        "pages/81_Cancer_Genomics.py"
+      ],
+      "timeout_seconds": 300,
+      "public_boundary": "Research-use integration; technical readiness does not establish scientific, clinical or regulatory validity."
+    },
+    {
+      "integration_id": "taxonomy_classification",
+      "public_key": "BI-INT-016",
+      "public_name": "BioIntel Taxonomic Classification Engine",
+      "category": "Metagenomics",
+      "execution_mode": "Audited WSL/CLI worker",
+      "target_modules": [
+        "Metagenomics Pipeline",
+        "Pathogen Outbreak Command Center",
+        "One Health Surveillance"
+      ],
+      "capabilities": [
+        "Read classification",
+        "Taxonomic abundance generation",
+        "Database-bound screening"
+      ],
+      "probe": {
+        "tool_ids": [
+          "kraken2"
+        ]
+      },
+      "readiness_policy": "all",
+      "setup_profile": "BioIntel Complete WSL2 Suite",
+      "weight_or_database_required": true,
+      "priority": "P1",
+      "runtime_profile": "wsl_tools",
+      "backend": "wsl_cli",
+      "operations": [
+        "technical_diagnostic",
+        "classify_reads",
+        "database_check"
+      ],
+      "module_pages": [
+        "pages/65_Microbiology_Metagenomics.py",
+        "pages/82_Metagenomics_Pipeline.py",
+        "pages/139_Strain_Resolved_Microbiome_Functional_Profiling_Studio.py"
+      ],
+      "timeout_seconds": 600,
+      "public_boundary": "Research-use integration; technical readiness does not establish scientific, clinical or regulatory validity."
+    },
+    {
+      "integration_id": "medical_imaging_ai",
+      "public_key": "BI-INT-017",
+      "public_name": "BioIntel Medical Imaging AI Engine",
+      "category": "Imaging",
+      "execution_mode": "GPU/CPU model adapter",
+      "target_modules": [
+        "Medical Imaging",
+        "Digital Pathology",
+        "Spatial Biology"
+      ],
+      "capabilities": [
+        "Imaging transforms",
+        "Segmentation/classification adapters",
+        "Healthcare imaging workflows"
+      ],
+      "probe": {
+        "python_modules": [
+          "monai"
+        ],
+        "distributions": [
+          "monai"
+        ]
+      },
+      "readiness_policy": "all",
+      "setup_profile": "BioIntel Imaging AI Pack",
+      "weight_or_database_required": true,
+      "priority": "P1",
+      "runtime_profile": "p1_imaging_ai",
+      "backend": "isolated_python",
+      "operations": [
+        "technical_diagnostic",
+        "imaging_preprocess",
+        "model_diagnostic"
+      ],
+      "module_pages": [
+        "pages/120_Bioimage_and_Microscopy_AI_Lab.py",
+        "pages/118_Spatial_Omics_and_Digital_Pathology_Studio.py"
+      ],
+      "timeout_seconds": 600,
+      "public_boundary": "Research-use integration; technical readiness does not establish scientific, clinical or regulatory validity."
+    },
+    {
+      "integration_id": "bioimaging_workspace",
+      "public_key": "BI-INT-018",
+      "public_name": "BioIntel Bioimaging Workspace",
+      "category": "Imaging",
+      "execution_mode": "Desktop companion adapter",
+      "target_modules": [
+        "Microscopy Analysis",
+        "Spatial Biology",
+        "Digital Pathology"
+      ],
+      "capabilities": [
+        "Multidimensional image viewing",
+        "Layer and annotation workflows",
+        "Plugin-compatible visualization"
+      ],
+      "probe": {
+        "python_modules": [
+          "napari"
+        ],
+        "distributions": [
+          "napari"
+        ]
+      },
+      "readiness_policy": "all",
+      "setup_profile": "BioIntel Imaging Pack",
+      "weight_or_database_required": false,
+      "priority": "P0",
+      "runtime_profile": "p0_imaging",
+      "backend": "desktop_companion",
+      "operations": [
+        "technical_diagnostic",
+        "open_image",
+        "viewer_diagnostic"
+      ],
+      "module_pages": [
+        "pages/120_Bioimage_and_Microscopy_AI_Lab.py",
+        "pages/118_Spatial_Omics_and_Digital_Pathology_Studio.py"
+      ],
+      "timeout_seconds": 300,
+      "public_boundary": "Research-use integration; technical readiness does not establish scientific, clinical or regulatory validity."
+    },
+    {
+      "integration_id": "workflow_automation",
+      "public_key": "BI-INT-019",
+      "public_name": "BioIntel Workflow Automation Engine",
+      "category": "Workflow Platform",
+      "execution_mode": "Audited WSL/CLI worker",
+      "target_modules": [
+        "Visual Workflow Builder",
+        "Pipeline Marketplace",
+        "Background Job Engine"
+      ],
+      "capabilities": [
+        "DAG execution",
+        "Dependency tracking",
+        "Checkpoint and retry workflows"
+      ],
+      "probe": {
+        "tool_ids": [
+          "snakemake"
+        ]
+      },
+      "readiness_policy": "all",
+      "setup_profile": "BioIntel Complete WSL2 Suite",
+      "weight_or_database_required": false,
+      "priority": "P1",
+      "runtime_profile": "wsl_tools",
+      "backend": "wsl_cli",
+      "operations": [
+        "technical_diagnostic",
+        "run_workflow",
+        "dry_run"
+      ],
+      "module_pages": [
+        "pages/103_Visual_Workflow_Builder.py",
+        "pages/150_Visual_Scientific_Workflow_Builder_2.py"
+      ],
+      "timeout_seconds": 600,
+      "public_boundary": "Research-use integration; technical readiness does not establish scientific, clinical or regulatory validity."
+    },
+    {
+      "integration_id": "pipeline_execution",
+      "public_key": "BI-INT-020",
+      "public_name": "BioIntel Reproducible Pipeline Engine",
+      "category": "Workflow Platform",
+      "execution_mode": "Audited WSL/CLI worker",
+      "target_modules": [
+        "Visual Workflow Builder",
+        "Pipeline Marketplace",
+        "RNA-seq and Genomics Workflows"
+      ],
+      "capabilities": [
+        "Portable pipeline execution",
+        "Container-ready orchestration",
+        "Curated workflow handoff"
+      ],
+      "probe": {
+        "tool_ids": [
+          "nextflow"
+        ]
+      },
+      "readiness_policy": "all",
+      "setup_profile": "BioIntel Complete WSL2 Suite",
+      "weight_or_database_required": false,
+      "priority": "P2",
+      "runtime_profile": "wsl_tools",
+      "backend": "wsl_cli",
+      "operations": [
+        "technical_diagnostic",
+        "run_pipeline",
+        "pipeline_catalog",
+        "download_pipeline"
+      ],
+      "module_pages": [
+        "pages/103_Visual_Workflow_Builder.py",
+        "pages/150_Visual_Scientific_Workflow_Builder_2.py"
+      ],
+      "timeout_seconds": 900,
+      "public_boundary": "Research-use integration; technical readiness does not establish scientific, clinical or regulatory validity."
+    }
+  ],
+  "priority_policy": {
+    "P0": "Core workflows with highest immediate product value and lowest operational risk.",
+    "P1": "Advanced isolated or specialist runtimes installed only where relevant.",
+    "P2": "Heavy model and reproducible-pipeline runtimes with explicit asset and infrastructure gates."
+  },
+  "execution_contract": "biointel.integration-run.v2"
+}

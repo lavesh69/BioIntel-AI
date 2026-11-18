@@ -1,0 +1,844 @@
+{
+  "schema": "biointel.third-party-notices.v2",
+  "components": [
+    {
+      "public_key": "BI-ENG-002",
+      "public_name": "BioIntel AMR gene and mutation detection Engine",
+      "upstream_component": "NCBI AMRFinderPlus",
+      "licence": "LicenseRef-Upstream-Package-License",
+      "source": "https://bioconda.github.io/recipes/amrfinderplus/README.html",
+      "redistribution": "review-before-bundling"
+    },
+    {
+      "public_key": "BI-ENG-059",
+      "public_name": "BioIntel Acquired resistance and point-mutation detection Engine",
+      "upstream_component": "ResFinder",
+      "licence": "LicenseRef-Upstream-Package-License",
+      "source": "https://bioconda.github.io/recipes/resfinder/README.html",
+      "redistribution": "review-before-bundling"
+    },
+    {
+      "public_key": "BI-ENG-003",
+      "public_name": "BioIntel Antibody numbering & CDR annotation Engine",
+      "upstream_component": "ANARCI",
+      "licence": "LicenseRef-Upstream-Package-License",
+      "source": "https://bioconda.github.io/recipes/anarci/README.html",
+      "redistribution": "review-before-bundling"
+    },
+    {
+      "public_key": "BI-ENG-030",
+      "public_name": "BioIntel Immunoglobulin germline alignment Engine",
+      "upstream_component": "IgBLAST",
+      "licence": "LicenseRef-Upstream-Package-License",
+      "source": "https://bioconda.github.io/recipes/igblast/README.html",
+      "redistribution": "review-before-bundling"
+    },
+    {
+      "public_key": "BI-ENG-014",
+      "public_name": "BioIntel Cell & nucleus segmentation Engine",
+      "upstream_component": "Cellpose",
+      "licence": "LicenseRef-Upstream-Package-License",
+      "source": "https://bioconda.github.io/recipes/cellpose/README.html",
+      "redistribution": "review-before-bundling"
+    },
+    {
+      "public_key": "BI-ENG-070",
+      "public_name": "BioIntel Star-convex object segmentation Engine",
+      "upstream_component": "StarDist Python",
+      "licence": "LicenseRef-Upstream-Package-License",
+      "source": "https://bioconda.github.io/recipes/stardist/README.html",
+      "redistribution": "review-before-bundling"
+    },
+    {
+      "public_key": "BI-ENG-049",
+      "public_name": "BioIntel Ligand format conversion & Hydrogen & protonation preparation Engine",
+      "upstream_component": "Open Babel",
+      "licence": "GPL-2.0-only",
+      "source": "https://openbabel.org/",
+      "redistribution": "copyleft-review-required"
+    },
+    {
+      "public_key": "BI-ENG-054",
+      "public_name": "BioIntel Tiled whole-slide access Engine",
+      "upstream_component": "OpenSlide Python",
+      "licence": "LicenseRef-Upstream-Package-License",
+      "source": "https://bioconda.github.io/recipes/openslide/README.html",
+      "redistribution": "review-before-bundling"
+    },
+    {
+      "public_key": "BI-ENG-019",
+      "public_name": "BioIntel bigWig generation & Signal profiles Engine",
+      "upstream_component": "deepTools",
+      "licence": "LicenseRef-Upstream-Package-License",
+      "source": "https://bioconda.github.io/recipes/deeptools/README.html",
+      "redistribution": "review-before-bundling"
+    },
+    {
+      "public_key": "BI-ENG-036",
+      "public_name": "BioIntel ChIP-seq & ATAC-seq peak calling Engine",
+      "upstream_component": "MACS2",
+      "licence": "LicenseRef-Upstream-Package-License",
+      "source": "https://bioconda.github.io/recipes/macs2/README.html",
+      "redistribution": "review-before-bundling"
+    },
+    {
+      "public_key": "BI-ENG-012",
+      "public_name": "BioIntel Assembly completeness Engine",
+      "upstream_component": "BUSCO",
+      "licence": "LicenseRef-Upstream-Package-License",
+      "source": "https://bioconda.github.io/recipes/busco/README.html",
+      "redistribution": "review-before-bundling"
+    },
+    {
+      "public_key": "BI-ENG-024",
+      "public_name": "BioIntel Long-read assembly & Metagenome assembly Engine",
+      "upstream_component": "Flye",
+      "licence": "LicenseRef-Upstream-Package-License",
+      "source": "https://bioconda.github.io/recipes/flye/README.html",
+      "redistribution": "review-before-bundling"
+    },
+    {
+      "public_key": "BI-ENG-027",
+      "public_name": "BioIntel HiFi assembly & Phased assembly Engine",
+      "upstream_component": "hifiasm",
+      "licence": "LicenseRef-Upstream-Package-License",
+      "source": "https://bioconda.github.io/recipes/hifiasm/README.html",
+      "redistribution": "review-before-bundling"
+    },
+    {
+      "public_key": "BI-ENG-039",
+      "public_name": "BioIntel K-mer completeness & Consensus quality Engine",
+      "upstream_component": "Merqury",
+      "licence": "LicenseRef-Upstream-Package-License",
+      "source": "https://bioconda.github.io/recipes/merqury/README.html",
+      "redistribution": "review-before-bundling"
+    },
+    {
+      "public_key": "BI-ENG-004",
+      "public_name": "BioIntel VCF normalization & Filtering Engine",
+      "upstream_component": "BCFtools",
+      "licence": "LicenseRef-Upstream-Package-License",
+      "source": "https://bioconda.github.io/recipes/bcftools/README.html",
+      "redistribution": "review-before-bundling"
+    },
+    {
+      "public_key": "BI-ENG-005",
+      "public_name": "BioIntel Interval arithmetic & Genome coverage Engine",
+      "upstream_component": "BEDTools",
+      "licence": "MIT",
+      "source": "https://github.com/arq5x/bedtools2",
+      "redistribution": "permissive-with-notice"
+    },
+    {
+      "public_key": "BI-ENG-006",
+      "public_name": "BioIntel Block-gzip compression Engine",
+      "upstream_component": "BGZF compressor",
+      "licence": "MIT",
+      "source": "https://www.htslib.org/",
+      "redistribution": "permissive-with-notice"
+    },
+    {
+      "public_key": "BI-ENG-007",
+      "public_name": "BioIntel Nucleotide similarity search Engine",
+      "upstream_component": "BLASTN",
+      "licence": "LicenseRef-Upstream-Package-License",
+      "source": "https://bioconda.github.io/recipes/blastn/README.html",
+      "redistribution": "review-before-bundling"
+    },
+    {
+      "public_key": "BI-ENG-009",
+      "public_name": "BioIntel Short-read alignment & CRISPR off-target candidate mapping Engine",
+      "upstream_component": "Bowtie 2",
+      "licence": "LicenseRef-Upstream-Package-License",
+      "source": "https://bioconda.github.io/recipes/bowtie2/README.html",
+      "redistribution": "review-before-bundling"
+    },
+    {
+      "public_key": "BI-ENG-009",
+      "public_name": "BioIntel Short-read alignment & CRISPR off-target candidate mapping Engine",
+      "upstream_component": "Bowtie 2",
+      "licence": "GPL-3.0-or-later",
+      "source": "https://github.com/BenLangmead/bowtie2",
+      "redistribution": "copyleft-review-required"
+    },
+    {
+      "public_key": "BI-ENG-013",
+      "public_name": "BioIntel Short-read mapping Engine",
+      "upstream_component": "BWA",
+      "licence": "LicenseRef-Upstream-Package-License",
+      "source": "https://bioconda.github.io/recipes/bwa/README.html",
+      "redistribution": "review-before-bundling"
+    },
+    {
+      "public_key": "BI-ENG-041",
+      "public_name": "BioIntel Long-read mapping & Assembly alignment Engine",
+      "upstream_component": "minimap2",
+      "licence": "LicenseRef-Upstream-Package-License",
+      "source": "https://bioconda.github.io/recipes/minimap2/README.html",
+      "redistribution": "review-before-bundling"
+    },
+    {
+      "public_key": "BI-ENG-043",
+      "public_name": "BioIntel Genome coverage & Region coverage summaries Engine",
+      "upstream_component": "mosdepth",
+      "licence": "MIT",
+      "source": "https://github.com/brentp/mosdepth",
+      "redistribution": "permissive-with-notice"
+    },
+    {
+      "public_key": "BI-ENG-055",
+      "public_name": "BioIntel Alignment metrics & Duplicate & insert-size metrics Engine",
+      "upstream_component": "Picard",
+      "licence": "MIT",
+      "source": "https://github.com/broadinstitute/picard",
+      "redistribution": "permissive-with-notice"
+    },
+    {
+      "public_key": "BI-ENG-064",
+      "public_name": "BioIntel BAM & CRAM validation & Indexing Engine",
+      "upstream_component": "SAMtools",
+      "licence": "LicenseRef-Upstream-Package-License",
+      "source": "https://bioconda.github.io/recipes/samtools/README.html",
+      "redistribution": "review-before-bundling"
+    },
+    {
+      "public_key": "BI-ENG-072",
+      "public_name": "BioIntel Indexed VCF & BED querying Engine",
+      "upstream_component": "Tabix",
+      "licence": "MIT",
+      "source": "https://www.htslib.org/doc/tabix.html",
+      "redistribution": "permissive-with-notice"
+    },
+    {
+      "public_key": "BI-ENG-047",
+      "public_name": "BioIntel MHC-II binding prediction Engine",
+      "upstream_component": "NetMHCIIpan",
+      "licence": "LicenseRef-DTU-Academic",
+      "source": "https://services.healthtech.dtu.dk/services/NetMHCIIpan-4.0/",
+      "redistribution": "restricted-do-not-bundle"
+    },
+    {
+      "public_key": "BI-ENG-048",
+      "public_name": "BioIntel MHC-I binding prediction Engine",
+      "upstream_component": "NetMHCpan",
+      "licence": "LicenseRef-DTU-Academic",
+      "source": "https://services.healthtech.dtu.dk/services/NetMHCpan-4.1/",
+      "redistribution": "restricted-do-not-bundle"
+    },
+    {
+      "public_key": "BI-ENG-035",
+      "public_name": "BioIntel Local language-model inference Engine",
+      "upstream_component": "llama.cpp",
+      "licence": "LicenseRef-Upstream-Package-License",
+      "source": "https://pypi.org/project/llama-cpp-python/",
+      "redistribution": "review-before-bundling"
+    },
+    {
+      "public_key": "BI-ENG-042",
+      "public_name": "BioIntel Modified-base pileup & Modification summary Engine",
+      "upstream_component": "Oxford Nanopore Modkit",
+      "licence": "LicenseRef-Upstream-Package-License",
+      "source": "https://bioconda.github.io/recipes/modkit/README.html",
+      "redistribution": "review-before-bundling"
+    },
+    {
+      "public_key": "BI-ENG-020",
+      "public_name": "BioIntel Basecalling & Modified-base calling Engine",
+      "upstream_component": "Oxford Nanopore Dorado",
+      "licence": "LicenseRef-ONT-Public-License",
+      "source": "https://github.com/nanoporetech/dorado",
+      "redistribution": "provider-policy-review"
+    },
+    {
+      "public_key": "BI-ENG-044",
+      "public_name": "BioIntel Vendor RAW conversion & mzML export Engine",
+      "upstream_component": "ProteoWizard msconvert",
+      "licence": "Apache-2.0",
+      "source": "https://proteowizard.sourceforge.io/",
+      "redistribution": "component-and-vendor-library-review-required"
+    },
+    {
+      "public_key": "BI-ENG-052",
+      "public_name": "BioIntel mzML validation & Peak processing Engine",
+      "upstream_component": "OpenMS",
+      "licence": "LicenseRef-Upstream-Package-License",
+      "source": "https://bioconda.github.io/recipes/openms/README.html",
+      "redistribution": "review-before-bundling"
+    },
+    {
+      "public_key": "BI-ENG-053",
+      "public_name": "BioIntel LC-MS feature detection & Chromatographic peak picking Engine",
+      "upstream_component": "OpenMS FeatureFinderMetabo",
+      "licence": "BSD-3-Clause",
+      "source": "https://www.openms.de/",
+      "redistribution": "permissive-with-notice"
+    },
+    {
+      "public_key": "BI-ENG-011",
+      "public_name": "BioIntel Abundance re-estimation Engine",
+      "upstream_component": "Bracken",
+      "licence": "LicenseRef-Upstream-Package-License",
+      "source": "https://bioconda.github.io/recipes/bracken/README.html",
+      "redistribution": "review-before-bundling"
+    },
+    {
+      "public_key": "BI-ENG-029",
+      "public_name": "BioIntel Functional profiling Engine",
+      "upstream_component": "HUMAnN",
+      "licence": "LicenseRef-Upstream-Package-License",
+      "source": "https://bioconda.github.io/recipes/humann/README.html",
+      "redistribution": "review-before-bundling"
+    },
+    {
+      "public_key": "BI-ENG-034",
+      "public_name": "BioIntel Taxonomic classification Engine",
+      "upstream_component": "Kraken 2",
+      "licence": "LicenseRef-Upstream-Package-License",
+      "source": "https://bioconda.github.io/recipes/kraken2/README.html",
+      "redistribution": "review-before-bundling"
+    },
+    {
+      "public_key": "BI-ENG-001",
+      "public_name": "BioIntel AMR & virulence screening Engine",
+      "upstream_component": "ABRicate",
+      "licence": "GPL-2.0-or-later",
+      "source": "https://github.com/tseemann/abricate",
+      "redistribution": "conditional-source-and-licence-notice"
+    },
+    {
+      "public_key": "BI-ENG-025",
+      "public_name": "BioIntel Sequence-to-graph alignment Engine",
+      "upstream_component": "GraphAligner",
+      "licence": "LicenseRef-Upstream-Package-License",
+      "source": "https://bioconda.github.io/recipes/graphaligner/README.html",
+      "redistribution": "review-before-bundling"
+    },
+    {
+      "public_key": "BI-ENG-040",
+      "public_name": "BioIntel Pangenome graph construction & Assembly alignment Engine",
+      "upstream_component": "minigraph",
+      "licence": "LicenseRef-Upstream-Package-License",
+      "source": "https://bioconda.github.io/recipes/minigraph/README.html",
+      "redistribution": "review-before-bundling"
+    },
+    {
+      "public_key": "BI-ENG-050",
+      "public_name": "BioIntel Graph sorting & Path statistics Engine",
+      "upstream_component": "odgi",
+      "licence": "LicenseRef-Upstream-Package-License",
+      "source": "https://bioconda.github.io/recipes/odgi/README.html",
+      "redistribution": "review-before-bundling"
+    },
+    {
+      "public_key": "BI-ENG-074",
+      "public_name": "BioIntel Graph indexing & Graph mapping Engine",
+      "upstream_component": "vg toolkit",
+      "licence": "LicenseRef-Upstream-Package-License",
+      "source": "https://bioconda.github.io/recipes/vg/README.html",
+      "redistribution": "review-before-bundling"
+    },
+    {
+      "public_key": "BI-ENG-032",
+      "public_name": "BioIntel Maximum-likelihood phylogeny & Model selection Engine",
+      "upstream_component": "IQ-TREE",
+      "licence": "LicenseRef-Upstream-Package-License",
+      "source": "https://bioconda.github.io/recipes/iqtree/README.html",
+      "redistribution": "review-before-bundling"
+    },
+    {
+      "public_key": "BI-ENG-037",
+      "public_name": "BioIntel Multiple sequence alignment Engine",
+      "upstream_component": "MAFFT",
+      "licence": "LicenseRef-Upstream-Package-License",
+      "source": "https://bioconda.github.io/recipes/mafft/README.html",
+      "redistribution": "review-before-bundling"
+    },
+    {
+      "public_key": "BI-ENG-056",
+      "public_name": "BioIntel Cohort QC & Association tests Engine",
+      "upstream_component": "PLINK 2",
+      "licence": "LicenseRef-Upstream-Package-License",
+      "source": "https://bioconda.github.io/recipes/plink2/README.html",
+      "redistribution": "review-before-bundling"
+    },
+    {
+      "public_key": "BI-ENG-058",
+      "public_name": "BioIntel Whole-genome regression & Association testing Engine",
+      "upstream_component": "REGENIE",
+      "licence": "LicenseRef-Upstream-Package-License",
+      "source": "https://bioconda.github.io/recipes/regenie/README.html",
+      "redistribution": "review-before-bundling"
+    },
+    {
+      "public_key": "BI-ENG-062",
+      "public_name": "BioIntel Mixed-model association & Case-control imbalance Engine",
+      "upstream_component": "SAIGE",
+      "licence": "LicenseRef-Upstream-Package-License",
+      "source": "https://bioconda.github.io/recipes/r-saige/README.html",
+      "redistribution": "review-before-bundling"
+    },
+    {
+      "public_key": "BI-ENG-007",
+      "public_name": "BioIntel Nucleotide similarity search Engine",
+      "upstream_component": "BLASTP",
+      "licence": "LicenseRef-Public-Domain-US-Gov",
+      "source": "https://blast.ncbi.nlm.nih.gov/doc/blast-help/downloadblastdata.html",
+      "redistribution": "public-domain-binary-provenance-required"
+    },
+    {
+      "public_key": "BI-ENG-028",
+      "public_name": "BioIntel Profile-HMM sequence search Engine",
+      "upstream_component": "HMMER hmmsearch",
+      "licence": "BSD-3-Clause",
+      "source": "https://hmmer.org/",
+      "redistribution": "permissive-with-notice"
+    },
+    {
+      "public_key": "BI-ENG-031",
+      "public_name": "BioIntel Domain annotation & GO & pathway mapping Engine",
+      "upstream_component": "InterProScan",
+      "licence": "Apache-2.0",
+      "source": "https://www.ebi.ac.uk/interpro/download/InterProScan/",
+      "redistribution": "mixed-components-separate-licence-review"
+    },
+    {
+      "public_key": "BI-ENG-057",
+      "public_name": "BioIntel Sequence design from structure Engine",
+      "upstream_component": "ProteinMPNN",
+      "licence": "MIT",
+      "source": "https://github.com/dauparas/ProteinMPNN",
+      "redistribution": "permissive-with-notice"
+    },
+    {
+      "public_key": "BI-ENG-060",
+      "public_name": "BioIntel Generative backbone design Engine",
+      "upstream_component": "RFdiffusion",
+      "licence": "BSD-3-Clause",
+      "source": "https://github.com/RosettaCommons/RFdiffusion",
+      "redistribution": "conditional-code-and-weight-review"
+    },
+    {
+      "public_key": "BI-ENG-016",
+      "public_name": "BioIntel Structure prediction & MSA-assisted confidence estimation Engine",
+      "upstream_component": "ColabFold",
+      "licence": "LicenseRef-Upstream-Package-License",
+      "source": "https://bioconda.github.io/recipes/colabfold/README.html",
+      "redistribution": "review-before-bundling"
+    },
+    {
+      "public_key": "BI-ENG-017",
+      "public_name": "BioIntel Peptide-spectrum matching Engine",
+      "upstream_component": "Comet",
+      "licence": "LicenseRef-Upstream-Package-License",
+      "source": "https://bioconda.github.io/recipes/comet/README.html",
+      "redistribution": "review-before-bundling"
+    },
+    {
+      "public_key": "BI-ENG-045",
+      "public_name": "BioIntel Peptide-spectrum matching Engine 2",
+      "upstream_component": "MS-GF+",
+      "licence": "LicenseRef-Upstream-Package-License",
+      "source": "https://bioconda.github.io/recipes/msgfplus/README.html",
+      "redistribution": "review-before-bundling"
+    },
+    {
+      "public_key": "BI-ENG-018",
+      "public_name": "BioIntel Adapter trimming & Linked-adapter handling Engine",
+      "upstream_component": "Cutadapt",
+      "licence": "MIT",
+      "source": "https://cutadapt.readthedocs.io/",
+      "redistribution": "permissive-with-notice"
+    },
+    {
+      "public_key": "BI-ENG-022",
+      "public_name": "BioIntel Read trimming & Adapter detection Engine",
+      "upstream_component": "fastp",
+      "licence": "MIT",
+      "source": "https://github.com/OpenGene/fastp",
+      "redistribution": "permissive-with-notice"
+    },
+    {
+      "public_key": "BI-ENG-023",
+      "public_name": "BioIntel Read-quality reports & Adapter & duplication diagnostics Engine",
+      "upstream_component": "FastQC",
+      "licence": "GPL-3.0-or-later",
+      "source": "https://www.bioinformatics.babraham.ac.uk/projects/fastqc/",
+      "redistribution": "copyleft-review-required"
+    },
+    {
+      "public_key": "BI-ENG-046",
+      "public_name": "BioIntel Cross-sample QC aggregation & Run-level quality reporting Engine",
+      "upstream_component": "MultiQC",
+      "licence": "GPL-3.0-or-later",
+      "source": "https://docs.seqera.io/multiqc/getting_started/installation",
+      "redistribution": "copyleft-review-required"
+    },
+    {
+      "public_key": "BI-ENG-015",
+      "public_name": "BioIntel Fate probabilities & Terminal-state analysis Engine",
+      "upstream_component": "CellRank Python",
+      "licence": "LicenseRef-Upstream-Package-License",
+      "source": "https://bioconda.github.io/recipes/cellrank/README.html",
+      "redistribution": "review-before-bundling"
+    },
+    {
+      "public_key": "BI-ENG-065",
+      "public_name": "BioIntel Single-cell QC & Embedding Engine",
+      "upstream_component": "Scanpy Python",
+      "licence": "LicenseRef-Upstream-Package-License",
+      "source": "https://bioconda.github.io/recipes/scanpy/README.html",
+      "redistribution": "review-before-bundling"
+    },
+    {
+      "public_key": "BI-ENG-066",
+      "public_name": "BioIntel RNA velocity Engine",
+      "upstream_component": "scVelo Python",
+      "licence": "LicenseRef-Upstream-Package-License",
+      "source": "https://bioconda.github.io/recipes/scvelo/README.html",
+      "redistribution": "review-before-bundling"
+    },
+    {
+      "public_key": "BI-ENG-026",
+      "public_name": "BioIntel Molecular dynamics & Trajectory analysis Engine",
+      "upstream_component": "GROMACS",
+      "licence": "LicenseRef-Upstream-Package-License",
+      "source": "https://bioconda.github.io/recipes/gromacs/README.html",
+      "redistribution": "review-before-bundling"
+    },
+    {
+      "public_key": "BI-ENG-051",
+      "public_name": "BioIntel Molecular dynamics Engine",
+      "upstream_component": "OpenMM Python",
+      "licence": "LicenseRef-Upstream-Package-License",
+      "source": "https://bioconda.github.io/recipes/openmm/README.html",
+      "redistribution": "review-before-bundling"
+    },
+    {
+      "public_key": "BI-ENG-075",
+      "public_name": "BioIntel Molecular docking & Pose scoring Engine",
+      "upstream_component": "AutoDock Vina",
+      "licence": "LicenseRef-Upstream-Package-License",
+      "source": "https://bioconda.github.io/recipes/vina/README.html",
+      "redistribution": "review-before-bundling"
+    },
+    {
+      "public_key": "BI-ENG-021",
+      "public_name": "BioIntel Repeat-expansion genotyping Engine",
+      "upstream_component": "ExpansionHunter",
+      "licence": "LicenseRef-Upstream-Package-License",
+      "source": "https://bioconda.github.io/recipes/expansionhunter/README.html",
+      "redistribution": "review-before-bundling"
+    },
+    {
+      "public_key": "BI-ENG-067",
+      "public_name": "BioIntel Long-read SV calling & Population SV merging Engine",
+      "upstream_component": "Sniffles2",
+      "licence": "LicenseRef-Upstream-Package-License",
+      "source": "https://bioconda.github.io/recipes/sniffles/README.html",
+      "redistribution": "review-before-bundling"
+    },
+    {
+      "public_key": "BI-ENG-033",
+      "public_name": "BioIntel Pseudoalignment & Transcript quantification Engine",
+      "upstream_component": "Kallisto",
+      "licence": "BSD-2-Clause",
+      "source": "https://pachterlab.github.io/kallisto/download",
+      "redistribution": "permissive-with-notice"
+    },
+    {
+      "public_key": "BI-ENG-038",
+      "public_name": "BioIntel Local splicing variation Engine",
+      "upstream_component": "MAJIQ",
+      "licence": "LicenseRef-Upstream-Review-Required",
+      "source": "https://majiq.biociphers.org/",
+      "redistribution": "do-not-bundle-until-licence-reviewed"
+    },
+    {
+      "public_key": "BI-ENG-061",
+      "public_name": "BioIntel Replicate-aware alternative splicing Engine",
+      "upstream_component": "rMATS",
+      "licence": "LicenseRef-Upstream-Review-Required",
+      "source": "https://github.com/Xinglab/rmats-turbo",
+      "redistribution": "do-not-bundle-until-licence-reviewed"
+    },
+    {
+      "public_key": "BI-ENG-063",
+      "public_name": "BioIntel Transcript quantification & Mapping validation Engine",
+      "upstream_component": "Salmon",
+      "licence": "BSD-3-Clause",
+      "source": "https://github.com/COMBINE-lab/salmon",
+      "redistribution": "permissive-with-notice"
+    },
+    {
+      "public_key": "BI-ENG-069",
+      "public_name": "BioIntel Splice-aware RNA alignment Engine",
+      "upstream_component": "STAR",
+      "licence": "LicenseRef-Upstream-Package-License",
+      "source": "https://bioconda.github.io/recipes/star/README.html",
+      "redistribution": "review-before-bundling"
+    },
+    {
+      "public_key": "BI-ENG-071",
+      "public_name": "BioIntel Alternative-splicing event quantification Engine",
+      "upstream_component": "SUPPA2",
+      "licence": "MIT",
+      "source": "https://github.com/comprna/SUPPA",
+      "redistribution": "permissive-with-notice"
+    },
+    {
+      "public_key": "BI-ENG-068",
+      "public_name": "BioIntel Variant consequence annotation Engine",
+      "upstream_component": "SnpEff",
+      "licence": "LGPL-3.0-or-later",
+      "source": "https://pcingola.github.io/SnpEff/",
+      "redistribution": "weak-copyleft-review-required"
+    },
+    {
+      "public_key": "BI-ENG-073",
+      "public_name": "BioIntel Variant consequence annotation & Transcript consequences Engine",
+      "upstream_component": "Ensembl VEP",
+      "licence": "LicenseRef-Upstream-Package-License",
+      "source": "https://bioconda.github.io/recipes/ensembl-vep/README.html",
+      "redistribution": "review-before-bundling"
+    },
+    {
+      "public_key": "BI-ENG-076",
+      "public_name": "BioIntel Read-backed phasing & Pedigree phasing Engine",
+      "upstream_component": "WhatsHap",
+      "licence": "LicenseRef-Upstream-Package-License",
+      "source": "https://bioconda.github.io/recipes/whatshap/README.html",
+      "redistribution": "review-before-bundling"
+    },
+    {
+      "public_key": "BI-INT-001",
+      "public_name": "BioIntel Sequence Intelligence Engine",
+      "upstream_component": "Biopython",
+      "licence": "LicenseRef-Biopython-BSD-Compatible",
+      "source": "https://github.com/biopython/biopython",
+      "redistribution": "runtime-metadata-notice"
+    },
+    {
+      "public_key": "BI-INT-002",
+      "public_name": "BioIntel Variant File Engine",
+      "upstream_component": "pysam",
+      "licence": "MIT",
+      "source": "https://github.com/pysam-developers/pysam",
+      "redistribution": "runtime-download-notice"
+    },
+    {
+      "public_key": "BI-INT-003",
+      "public_name": "BioIntel Biological Statistics Engine",
+      "upstream_component": "scikit-bio",
+      "licence": "BSD-3-Clause",
+      "source": "https://github.com/scikit-bio/scikit-bio",
+      "redistribution": "runtime-download-notice"
+    },
+    {
+      "public_key": "BI-INT-004",
+      "public_name": "BioIntel Single-Cell Analysis Engine",
+      "upstream_component": "Scanpy",
+      "licence": "BSD-3-Clause",
+      "source": "https://github.com/scverse/scanpy",
+      "redistribution": "runtime-download-notice"
+    },
+    {
+      "public_key": "BI-INT-005",
+      "public_name": "BioIntel Single-Cell AI Engine",
+      "upstream_component": "scvi-tools",
+      "licence": "BSD-3-Clause",
+      "source": "https://github.com/scverse/scvi-tools",
+      "redistribution": "runtime-download-assets-separate"
+    },
+    {
+      "public_key": "BI-INT-006",
+      "public_name": "BioIntel Multi-Omics Integration Engine",
+      "upstream_component": "Muon",
+      "licence": "BSD-3-Clause",
+      "source": "https://github.com/scverse/muon",
+      "redistribution": "runtime-download-notice"
+    },
+    {
+      "public_key": "BI-INT-007",
+      "public_name": "BioIntel Spatial Omics Engine",
+      "upstream_component": "Squidpy",
+      "licence": "BSD-3-Clause",
+      "source": "https://github.com/scverse/squidpy",
+      "redistribution": "runtime-download-notice"
+    },
+    {
+      "public_key": "BI-INT-008",
+      "public_name": "BioIntel Molecular Intelligence Engine",
+      "upstream_component": "RDKit",
+      "licence": "BSD-3-Clause",
+      "source": "https://github.com/rdkit/rdkit",
+      "redistribution": "runtime-metadata-notice"
+    },
+    {
+      "public_key": "BI-INT-009",
+      "public_name": "BioIntel Molecular AI Engine",
+      "upstream_component": "DeepChem",
+      "licence": "MIT",
+      "source": "https://github.com/deepchem/deepchem",
+      "redistribution": "runtime-download-assets-separate"
+    },
+    {
+      "public_key": "BI-INT-010",
+      "public_name": "BioIntel Molecular Docking Engine",
+      "upstream_component": "AutoDock Vina",
+      "licence": "Apache-2.0",
+      "source": "https://github.com/ccsb-scripps/AutoDock-Vina",
+      "redistribution": "downloaded-executable-notice"
+    },
+    {
+      "public_key": "BI-INT-011",
+      "public_name": "BioIntel Molecular Simulation Engine",
+      "upstream_component": "OpenMM",
+      "licence": "MIT",
+      "source": "https://github.com/openmm/openmm",
+      "redistribution": "runtime-download-notice"
+    },
+    {
+      "public_key": "BI-INT-012",
+      "public_name": "BioIntel Molecular Trajectory Engine",
+      "upstream_component": "MDAnalysis",
+      "licence": "LGPL-3.0-or-later",
+      "source": "https://github.com/MDAnalysis/mdanalysis",
+      "redistribution": "dynamic-runtime-copyleft-notice"
+    },
+    {
+      "public_key": "BI-INT-013",
+      "public_name": "BioIntel Protein Language Engine",
+      "upstream_component": "ESM",
+      "licence": "MIT-source-model-terms-separate",
+      "source": "https://github.com/facebookresearch/esm",
+      "redistribution": "runtime-download-weights-separate"
+    },
+    {
+      "public_key": "BI-INT-014",
+      "public_name": "BioIntel Structure-Conditioned Protein Design Engine",
+      "upstream_component": "ProteinMPNN",
+      "licence": "MIT",
+      "source": "https://github.com/dauparas/ProteinMPNN",
+      "redistribution": "runtime-clone-revision-recorded"
+    },
+    {
+      "public_key": "BI-INT-015",
+      "public_name": "BioIntel Pathway Intelligence Engine",
+      "upstream_component": "GSEApy",
+      "licence": "BSD-3-Clause",
+      "source": "https://github.com/zqfang/GSEApy",
+      "redistribution": "runtime-download-gene-sets-separate"
+    },
+    {
+      "public_key": "BI-INT-016",
+      "public_name": "BioIntel Taxonomic Classification Engine",
+      "upstream_component": "Kraken 2",
+      "licence": "MIT",
+      "source": "https://github.com/DerrickWood/kraken2",
+      "redistribution": "wsl-runtime-databases-separate"
+    },
+    {
+      "public_key": "BI-INT-017",
+      "public_name": "BioIntel Medical Imaging AI Engine",
+      "upstream_component": "MONAI",
+      "licence": "Apache-2.0",
+      "source": "https://github.com/Project-MONAI/MONAI",
+      "redistribution": "runtime-download-models-separate"
+    },
+    {
+      "public_key": "BI-INT-018",
+      "public_name": "BioIntel Bioimaging Workspace",
+      "upstream_component": "napari",
+      "licence": "BSD-3-Clause",
+      "source": "https://github.com/napari/napari",
+      "redistribution": "isolated-desktop-runtime-notice"
+    },
+    {
+      "public_key": "BI-INT-019",
+      "public_name": "BioIntel Workflow Automation Engine",
+      "upstream_component": "Snakemake",
+      "licence": "MIT",
+      "source": "https://github.com/snakemake/snakemake",
+      "redistribution": "wsl-runtime-workflows-separate"
+    },
+    {
+      "public_key": "BI-INT-020",
+      "public_name": "BioIntel Reproducible Pipeline Engine",
+      "upstream_component": "Nextflow and nf-core tooling",
+      "licence": "Apache-2.0 / per-project notices",
+      "source": "https://github.com/nextflow-io/nextflow",
+      "redistribution": "wsl-runtime-pipelines-separate"
+    },
+    {
+      "public_key": "BI-SHIRO-001",
+      "public_name": "Shiro Local Intelligence Runtime",
+      "upstream_component": "Ollama",
+      "licence": "MIT (runtime source); installed application terms and bundled notices remain authoritative",
+      "source": "https://github.com/ollama/ollama",
+      "redistribution": "not-bundled-user-installed-runtime"
+    },
+    {
+      "public_key": "BI-SHIRO-002",
+      "public_name": "Shiro Balanced Local Chat Model",
+      "upstream_component": "Qwen3 4B",
+      "licence": "Apache-2.0 model terms",
+      "source": "https://github.com/QwenLM/Qwen3",
+      "redistribution": "not-bundled-user-pulled-model"
+    },
+    {
+      "public_key": "BI-SHIRO-003",
+      "public_name": "Shiro Local Vision Model",
+      "upstream_component": "Gemma 3 4B",
+      "licence": "Gemma Terms of Use",
+      "source": "https://ai.google.dev/gemma/terms",
+      "redistribution": "not-bundled-user-pulled-model-terms-acceptance-required"
+    },
+    {
+      "public_key": "BI-SHIRO-004",
+      "public_name": "Shiro Local Reasoning Model",
+      "upstream_component": "DeepSeek-R1 Distill 8B",
+      "licence": "Model-card and base-model terms; verify exact pulled tag",
+      "source": "https://ollama.com/library/deepseek-r1:8b",
+      "redistribution": "not-bundled-user-pulled-model-review-required"
+    },
+    {
+      "public_key": "BI-SHIRO-005",
+      "public_name": "Shiro Local Embedding Model",
+      "upstream_component": "EmbeddingGemma",
+      "licence": "Gemma model terms",
+      "source": "https://ollama.com/library/embeddinggemma",
+      "redistribution": "not-bundled-user-pulled-model-terms-acceptance-required"
+    },
+    {
+      "public_key": "BI-SHIRO-006",
+      "public_name": "Shiro Online Intelligence",
+      "upstream_component": "Google Gemini API",
+      "licence": "Google APIs Terms and Gemini API Additional Terms",
+      "source": "https://ai.google.dev/gemini-api/terms",
+      "redistribution": "external-service-user-key-and-per-request-consent"
+    },
+    {
+      "public_key": "BI-SHIRO-007",
+      "public_name": "Shiro Backup Intelligence",
+      "upstream_component": "OpenRouter API and routed third-party models",
+      "licence": "OpenRouter Terms plus selected model/provider terms",
+      "source": "https://openrouter.ai/terms",
+      "redistribution": "external-service-user-key-model-availability-and-terms-variable"
+    }
+  ],
+  "scientific_integration_runtime_v2": true,
+  "shiro_ai_runtime_v3": {
+    "default_privacy": "local-first; cloud disabled unless user enables per-request consent",
+    "bundled_models": false,
+    "bundled_cloud_credentials": false,
+    "components": [
+      "BI-SHIRO-001",
+      "BI-SHIRO-002",
+      "BI-SHIRO-003",
+      "BI-SHIRO-004",
+      "BI-SHIRO-005",
+      "BI-SHIRO-006",
+      "BI-SHIRO-007"
+    ]
+  }
+}

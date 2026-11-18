@@ -1,0 +1,22 @@
+schema_version: "1.0"
+release: "13.2.0"
+requirements:
+  effect_size_justification_required: true
+  biological_and_technical_replicates_separate: true
+  dropout_policy_required: true
+  multiplicity_policy_required_for_multiple_primary_hypotheses: true
+  simulation_check_recommended: true
+  concealed_randomization_seed_recommended: true
+  confirmatory_statistical_review_required: true
+supported_designs:
+  - two_group_continuous
+  - paired_continuous
+  - two_proportions
+  - one_way_anova
+  - correlation
+  - survival
+  - precision_mean
+  - noninferiority
+  - equivalence
+  - repeated_measures
+  - cluster_randomized

@@ -1,0 +1,16 @@
+{
+  "schema": "biointel.step123.release.v1",
+  "version": "13.2.0",
+  "title": "Full Optimization and Stability",
+  "preserves_step122_protein_design": true,
+  "feature_removal": false,
+  "primary_changes": [
+    "managed SQLite lifecycle",
+    "WAL-aware cache invalidation",
+    "database health acceleration",
+    "Streamlit rerun optimization",
+    "Windows runtime resource controls",
+    "atomic diagnostics and state",
+    "safe workspace maintenance"
+  ]
+}

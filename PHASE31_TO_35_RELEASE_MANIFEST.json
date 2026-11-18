@@ -1,0 +1,92 @@
+{
+  "built_artifacts": [
+    {
+      "bytes": 585154764,
+      "filename": "BioIntel-AI-Phase31-to-35-Production-Windows.zip",
+      "sha256": "e8e7b96faa321b85b565ef784ba7e1fb5406f3cd128e793b2c8e4df1423bba12"
+    },
+    {
+      "bytes": 16384,
+      "filename": "BioIntel-AI-Windows-Installer.exe",
+      "sha256": "6353c1148cad9f65221f90d21d8ec2ff1569e5add9dd0cc5111e3d39aed7d20d"
+    }
+  ],
+  "canonical_root": "C:\\Users\\lavesh dobriyal\\Documents\\Codex\\2026-07-30\\files-mentioned-by-the-user-biointel\\work\\phase23_30_source\\BioIntel-Step220",
+  "critical_files": [
+    {
+      "bytes": 49198,
+      "path": "scripts/phase31_35_release.py",
+      "sha256": "d55c284bd81b6d76f6e864b28808236497bc2ee121e9634e23ee322fd19c8a18"
+    },
+    {
+      "bytes": 34999,
+      "path": "src/biointel/education/phase32_35/schema.py",
+      "sha256": "84180d6d3745ef7f2fe64546bd1ac2d0df9c23942e7d61f0bb621ff938d10274"
+    },
+    {
+      "bytes": 49472,
+      "path": "src/biointel/education/phase32_35/sync.py",
+      "sha256": "e885b15072cf17af4309c08ff31af5e62afe00afb3a03b87835325b6ed598a06"
+    },
+    {
+      "bytes": 47919,
+      "path": "src/biointel/education/phase32_35/twin.py",
+      "sha256": "eb03d52702e6a22c84fa88eba1982bc878cc85f08a6535dd81b6bdec1ac441b0"
+    },
+    {
+      "bytes": 83317,
+      "path": "src/biointel/education/phase32_35/compute.py",
+      "sha256": "b1a43e90bf1e9e6f5d3a9f52378b39169f30f7f694ab4c60338796f923b6c03b"
+    },
+    {
+      "bytes": 100790,
+      "path": "src/biointel/education/phase32_35/discovery.py",
+      "sha256": "cdb013d9e3258f63075b52615314559d114112e2540b5305fadb8973d5651a5d"
+    },
+    {
+      "bytes": 14194,
+      "path": "tests/test_phase31_35_cross_phase_workflows.py",
+      "sha256": "520e6d6f563a09b8419d788a42bcf2ad0fd7a9995ac82f3025139d5ab4e154cf"
+    },
+    {
+      "bytes": 9477,
+      "path": "tests/test_phase31_35_security.py",
+      "sha256": "bbb28547da8cf1c52cbfec76a734ad9a242b07b7e54ba94eb3ca07f996471b21"
+    },
+    {
+      "bytes": 1280,
+      "path": "PHASE31_TO_35_TEST_RESULTS.json",
+      "sha256": "ae780000526b0e63a6da949e4a8f3632605bcd443575dc295dca11854dcd77fb"
+    },
+    {
+      "bytes": 3668,
+      "path": "PHASE31_TO_35_IMPLEMENTATION_MATRIX.json",
+      "sha256": "4dfedd800797c5b34288ae3419eceb3e07652d9ce285cff15b8838498a1c09bf"
+    }
+  ],
+  "generated_at_utc": "2026-07-30T12:18:57.474874Z",
+  "migration_id": "education_phase31_to_35_research_platform_v1",
+  "phase": "31-35",
+  "planned_developer_parts": 4,
+  "product": "BioIntel AI",
+  "research_boundary": "Digital Twin and Discovery outputs are research/education-only and are not clinical diagnoses, treatment recommendations, or externally validated claims.",
+  "schema": "biointel.phase31-to-35.release-manifest.v1",
+  "source_inventory": {
+    "changed_counts": {
+      "added": 75,
+      "current_files": 13055,
+      "deleted": 3,
+      "modified": 7
+    },
+    "file_count": 13056,
+    "tree_sha256": "f5b9f3fce24d4b988df70e05a9691b2fe7b354823849f73555d71cbad828bbfd"
+  },
+  "test_summary": {
+    "focused_failed": 0,
+    "focused_passed": 48,
+    "historical_failed": 273,
+    "historical_passed": 1943,
+    "historical_skipped": 28
+  },
+  "version": "15.6.0"
+}

@@ -1,0 +1,43 @@
+from __future__ import annotations
+
+import argparse
+import json
+import os
+from pathlib import Path
+import subprocess
+import sys
+
+ROOT = Path(__file__).resolve().parents[1]
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser(description="Run Step 164 operational readiness release doctor.")
+    parser.add_argument("--root", default=str(ROOT))
+    args = parser.parse_args()
+    root = Path(args.root).expanduser().resolve()
+    env = {**os.environ, "PYTHONDONTWRITEBYTECODE": "1", "PYTHONPATH": str(root / "src")}
+    commands = [
+        [sys.executable, str(root / "scripts/step164_build_operational_assets.py"), "--root", str(root)],
+        [sys.executable, str(root / "scripts/step164_validate_operational.py"), "--root", str(root), "--quick"],
+        [sys.executable, str(root / "scripts/step163_validate_module_excellence.py"), "--root", str(root), "--quick"],
+        [sys.executable, str(root / "scripts/step162_validate_authenticity.py"), "--root", str(root), "--quick"],
+    ]
+    results = []
+    for command in commands:
+        completed = subprocess.run(command, cwd=root, env=env, text=True, capture_output=True, check=False)
+        results.append({"command": command, "return_code": completed.returncode, "passed": completed.returncode == 0, "stdout_tail": completed.stdout[-6000:], "stderr_tail": completed.stderr[-6000:]})
+    payload = {
+        "schema": "biointel.step164.release-doctor.v1",
+        "status": "passed" if all(bool(item["passed"]) for item in results) else "failed",
+        "checks": results,
+        "external_release_not_inferred": True,
+    }
+    reports = root / "reports"
+    reports.mkdir(parents=True, exist_ok=True)
+    (reports / "step164_release_doctor.json").write_text(json.dumps(payload, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+    print(json.dumps(payload, indent=2, sort_keys=True))
+    return 0 if payload["status"] == "passed" else 1
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

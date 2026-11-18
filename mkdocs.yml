@@ -1,0 +1,14 @@
+site_name: BioIntel AI Engineering Handbook
+strict: true
+theme:
+  name: material
+nav:
+  - Home: index.md
+  - Architecture: architecture/OVERVIEW.md
+  - Engineering:
+      - CI/CD and Releases: engineering/CI_CD_RELEASES.md
+      - Testing Strategy: engineering/TESTING_STRATEGY.md
+      - Technical Debt: engineering/TECHNICAL_DEBT_POLICY.md
+  - Runbooks:
+      - Incident Response: runbooks/INCIDENT_RESPONSE.md
+      - Performance and Capacity: runbooks/PERFORMANCE_AND_CAPACITY.md

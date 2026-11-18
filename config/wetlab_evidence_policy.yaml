@@ -1,0 +1,21 @@
+schema: biointel.step40.wetlab-evidence-policy.v1
+wet_lab:
+  raw_instrument_files_required: true
+  sample_manifest_required: true
+  protocol_version_required: true
+  reagent_lot_tracking_required: true
+  technical_replicates_required: true
+  biological_replicates_required: true
+  quality_control_acceptance_required: true
+  signed_site_attestation_required: true
+independent_replication:
+  minimum_independent_labs: 2
+  sponsor_independence_required: true
+  independent_signed_review_required: true
+multi_site:
+  minimum_independent_organizations: 3
+  minimum_countries: 2
+  harmonized_protocol_required: true
+  site_effect_analysis_required: true
+  heterogeneity_analysis_required: true
+boundary: Repository controls do not constitute laboratory evidence until authentic site artifacts and outcomes are imported.

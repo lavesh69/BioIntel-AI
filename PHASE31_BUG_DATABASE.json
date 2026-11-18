@@ -1,0 +1,74 @@
+{
+  "schema": "biointel.phase31.bug-database.v2",
+  "generated_at_utc": "2026-07-30T10:05:49.808709+00:00",
+  "summary": {
+    "critical_open": 0,
+    "high_open": 0,
+    "high_fixed": 4,
+    "historical_suite_failures_remaining": 273
+  },
+  "bugs": [
+    {
+      "id": "P31-WIN-DTI-001",
+      "severity": "high",
+      "state": "fixed_verified",
+      "title": "DTI tree training failed with WinError 5 in restricted Windows sessions",
+      "fix": "Configurable parallel_jobs with deterministic single-worker default.",
+      "verification": "DTI prediction and training pipeline: 5 passed."
+    },
+    {
+      "id": "P31-ARCHIVE-001",
+      "severity": "high",
+      "state": "fixed_verified",
+      "title": "External scientific-tool installer accepted unverified ZIP downloads",
+      "fix": "Mandatory publisher SHA-256, atomic staging, traversal/symlink/file-count/size guards.",
+      "verification": "Safe and malicious archive tests passed."
+    },
+    {
+      "id": "P31-UI-CCV2-001",
+      "severity": "high",
+      "state": "fixed_verified",
+      "title": "CCv2 layout observer could become unregistered in isolated Streamlit contexts",
+      "fix": "Stable wrapper re-registers only when the component registry was reset.",
+      "verification": "Neuro AppTest and focused Streamlit regression passed."
+    },
+    {
+      "id": "P31-UI-FORM-001",
+      "severity": "high",
+      "state": "fixed_verified",
+      "title": "Runtime exception boundary attempted a download widget inside a form",
+      "fix": "Form-safe diagnostic reference with export delegated to System Diagnostics.",
+      "verification": "Focused runtime/UI regression passed."
+    },
+    {
+      "id": "P31-HISTORY-001",
+      "severity": "medium",
+      "state": "accepted_historical_debt",
+      "title": "Broad cumulative suite remains non-green",
+      "evidence": {
+        "failed": 273,
+        "passed": 1943,
+        "skipped": 28,
+        "warnings": 11,
+        "duration_seconds": 683.97,
+        "errors": 0,
+        "status": "NOT_GREEN_HISTORICAL_DEBT_REMAINS"
+      },
+      "classification": "Dominated by mutually exclusive historical release/version assertions, generated-state assumptions, old feature-score contracts, and external/runtime prerequisites. It is not represented as green."
+    },
+    {
+      "id": "P31-WINDOWS-PATH-001",
+      "severity": "medium",
+      "state": "mitigated",
+      "title": "Canonical development path makes 441 files exceed 240 absolute characters",
+      "mitigation": "Production installer must use a short root such as C:\\BioIntelAI and perform preflight."
+    },
+    {
+      "id": "P31-OFFLINE-WHEELS-001",
+      "severity": "medium",
+      "state": "open_documented",
+      "title": "Canonical developer source has lock files but no populated wheelhouse",
+      "boundary": "Offline developer installation is not qualified; the production package must carry its runtime or verified wheels."
+    }
+  ]
+}

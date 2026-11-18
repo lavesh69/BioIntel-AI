@@ -1,0 +1,47 @@
+{
+  "schema": "biointel.step117.final-verification.v1",
+  "version": "11.7.0",
+  "generated_at_utc": "2026-07-11T06:55:20+00:00",
+  "status": "PASS",
+  "scope": {
+    "module_pages": 173,
+    "embedded_workspaces": 78,
+    "total_searchable_items": 251,
+    "theme_catalogue": 32,
+    "excluded_modules_locked": 5
+  },
+  "verification": {
+    "selected_step100_117_tests_passed": 124,
+    "selected_step100_117_tests_failed": 0,
+    "focused_theme_search_runtime_tests_passed": 57,
+    "focused_theme_search_runtime_tests_failed": 0,
+    "runtime_surfaces_passed": 173,
+    "runtime_surfaces_failed": 0,
+    "captured_runtime_exceptions": 0,
+    "captured_ui_errors": 0,
+    "python_files_compiled": 839,
+    "python_compile_errors": 0,
+    "theme_runtime_combinations_passed": 768,
+    "theme_runtime_combinations_failed": 0,
+    "minimum_body_contrast_ratio": 11.17,
+    "application_self_tests_passed": 7,
+    "application_self_tests_failed": 0,
+    "sqlite_databases_healthy": 36,
+    "sqlite_database_count": 36,
+    "sqlite_rows_checked": 108077,
+    "excluded_source_hashes_preserved": 5,
+    "project_files": 3657,
+    "manifest_entries": 3656
+  },
+  "bug_repairs": [
+    "Global finder displayed only the first 10 of 169 registered modules",
+    "New embedded scientific workspaces were absent from global search",
+    "Search pagination could remain on an invalid page after query or filter changes",
+    "Future page files could be silently omitted when navigation registration is missed",
+    "Pages 134\u2013152 could raise ModuleNotFoundError when launched directly",
+    "System Diagnostics displayed a Windows repair error in non-Windows source/test environments",
+    "Touched UI code emitted deprecated use_container_width notices",
+    "Imported old theme presets could omit new runtime fields"
+  ],
+  "boundary": "Tested paths passed; future datasets, optional engines, browser/graphics changes and machine-specific environments can still expose new issues."
+}

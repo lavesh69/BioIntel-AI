@@ -1,0 +1,30 @@
+{
+  "schema": "biointel.step129.nextgen-depth-visuals.v1",
+  "release": "13.2.0",
+  "module_count": 15,
+  "specialist_canvas_count": 15,
+  "specialist_visual_count": 75,
+  "advanced_result_tables": {
+    "minimum_per_module": 2,
+    "purpose": "Module-specific review, QC, lineage, temporal, spatial, survival, privacy, safety and resource tables"
+  },
+  "native_and_bounded_adapters": [
+    "PNG/JPEG/TIFF pathology tile QC",
+    "bedMethyl regional import",
+    "H5AD observation metadata routing",
+    "GFA path and segment summary",
+    "FASTA/GenBank construct import",
+    "PDB/mmCIF/SDF/MOL bounded structure summary"
+  ],
+  "stability_controls": {
+    "interactive_row_cap": 500000,
+    "interactive_result_row_cap": 250000,
+    "non_finite_output_sanitisation": true,
+    "duplicate_output_column_guard": true,
+    "deterministic_error_ids": true,
+    "memory_error_recovery": true,
+    "runtime_and_memory_metrics": true,
+    "large_file_background_staging": true
+  },
+  "evidence_boundary": "Specialist canvases and bounded local adapters improve research review but do not replace licensed models, validated external tools, qualified clinical pipelines, wet-lab confirmation or regulatory review."
+}

@@ -1,0 +1,25 @@
+{
+  "schema": "biointel.step100.release.v1",
+  "version": "10.0.0",
+  "release_name": "Professional Integration and Optimization",
+  "release_date": "2026-07-10",
+  "upgraded_modules": 11,
+  "streamlit_pages": 111,
+  "python_source_files": 698,
+  "advanced_tools_registered": 56,
+  "reference_asset_templates": 18,
+  "targeted_tests_passed": 84,
+  "engineering_gates": "4/4 passed",
+  "engineering_readiness_average": 10.0,
+  "dependency_lock_packages": 32,
+  "offline_windows_wheels": 102,
+  "sqlite_databases": 28,
+  "sqlite_healthy": 28,
+  "sqlite_foreign_key_issues": 0,
+  "sqlite_rows_checked": 107491,
+  "external_boundaries": [
+    "Specialist executables are detected and orchestrated but not falsely claimed as bundled.",
+    "Large/licensed reference databases and GPU model weights remain separately managed assets.",
+    "Clinical, wet-lab, regulatory and public-health decisions require external validation and authorized review."
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "schema": "biointel.step220.release-gate.v1",
+  "generated_at_utc": "2026-07-29T15:06:17+00:00",
+  "root": "C:\\Users\\lavesh dobriyal\\.gemini\\antigravity\\scratch\\BioIntel-Step220",
+  "managed_root": "C:\\Users\\lavesh dobriyal\\AppData\\Local\\BioIntelAI\\App\\Releases\\15.6.0-Step220",
+  "passed": true,
+  "checks": [
+    {
+      "name": "critical files",
+      "passed": true,
+      "detail": "complete"
+    },
+    {
+      "name": "four-part Step220 extraction",
+      "passed": true,
+      "detail": "4/4 present"
+    },
+    {
+      "name": "active release identity",
+      "passed": true,
+      "detail": {
+        "VERSION": "15.6.0",
+        "pyproject": "15.6.0",
+        "release": {
+          "schema": "biointel.step220.windows.release.v1",
+          "step": 220,
+          "version": "15.6.0",
+          "release_label": "15.6.0-Step220.0-WINDOWS-V20.5",
+          "package_generation": "V20.5",
+          "build_number": "Step220-V20.5-Phase16-R2.1-Install-Hotfix",
+          "part_count": 4,
+          "platform": "Windows desktop",
+          "python_runtime": "CPython 3.11.x x64",
+          "archive_root": "BioIntel-Step220",
+          "managed_install_root": "%LOCALAPPDATA%\\BioIntelAI\\App\\Releases\\15.6.0-Step220",
+          "offline_core": true,
+          "supported_workflow": [
+            "EXTRACT_AND_INSTALL_STEP220_WINDOWS.bat",
+            "INSTALL_WINDOWS.bat",
+            "RUN_BOTH_WINDOWS.bat"
+          ],
+          "upgrade_scope": "Phase 16 final local completion: replay-safe event consumers, measurable MMR RAG quality, Science Pulse saved alerts, bounded FASTA/FASTQ scientific workbenches, executable FFmpeg media processing, plus all retained earlier BioIntel capabilities.",
+          "windows_path_strategy": {
+            "short_archive_root": "BioIntel-Step220",
+            "short_extraction_root": "%LOCALAPPDATA%\\BioIntelAI\\InstallSource",
+            "managed_runtime_root": "%LOCALAPPDATA%\\BioIntelAI\\App\\Releases\\15.6.0-Step220",
+            "explorer_path_too_long_mitigation": true
+          },
+          "phase15": {
+            "release": "BioIntel-AI-15.6.0-EDUCATION-PHASE15",
+            "durable_realtime_events": true,
+            "hybrid_semantic_rag": true,
+            "governed_model_runtime": true,
+            "science_provider_connectors": true,
+            "server_governed_media_telemetry": true,
+            "external_qualification_honesty": true
+          },
+          "phase16": {
+            "release": "BioIntel-AI-15.6.0-EDUCATION-PHASE16-MEGA-FIXED-R2.1-INSTALL-HOTFIX",
+            "durable_event_consumers": true,
+            "mmr_rag_and_evaluation": true,
+            "science_pulse_saved_alerts": true,
+            "fasta_fastq_workbench": true,
+            "ffmpeg_media_pipeline": true,
+            "external_qualification_honesty": true
+          },
+          "hotfix": {
+            "id": "R2.1-install-verifier",
+            "purpose": "Fix false installation rollback caused by stale database-backup verifier contract and accept supported CPython 3.11.x x64 patch releases.",
+            "android_mobile_modified": false
+          }
+        }
+      }
+    },
+    {
+      "name": "Python runtime",
+      "passed": true,
+      "detail": {
+        "current": "3.11.9",
+        "bits": 64,
+        "required": "CPython 3.11.x x64",
+        "builder_override": true
+      }
+    },
+    {
+      "name": "managed application path",
+      "passed": true,
+      "detail": {
+        "path": "C:\\Users\\lavesh dobriyal\\AppData\\Local\\BioIntelAI\\App\\Releases\\15.6.0-Step220",
+        "length": 77,
+        "maximum": 180
+      }
+    },
+    {
+      "name": "managed application directory writable",
+      "passed": true,
+      "detail": "C:\\Users\\lavesh dobriyal\\AppData\\Local\\BioIntelAI"
+    },
+    {
+      "name": "managed-install free disk",
+      "passed": true,
+      "detail": {
+        "available_gb": 56.94,
+        "required_gb": 5.0,
+        "manifest_source_gb": 0.7
+      }
+    },
+    {
+      "name": "extracted source readable",
+      "passed": true,
+      "detail": "C:\\Users\\lavesh dobriyal\\.gemini\\antigravity\\scratch\\BioIntel-Step220"
+    },
+    {
+      "name": "Windows PowerShell",
+      "passed": true,
+      "detail": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+    },
+    {
+      "name": "Step220 SHA-256 source manifest",
+      "passed": true,
+      "detail": {
+        "manifest": "release/SOURCE_MANIFEST_SHA256.json",
+        "tracked_files": 12939,
+        "deep_hashes": true,
+        "bad_count": 0,
+        "bad_files": []
+      }
+    },
+    {
+      "name": "offline wheelhouse",
+      "passed": true,
+      "detail": {
+        "wheel_count": 121,
+        "missing": [],
+        "setuptools_pkg_resources_compatibility": true
+      }
+    }
+  ],
+  "recovery": [
+    "Extract all four matching Step220 ZIP parts into one new folder, or run EXTRACT_AND_INSTALL_STEP220_WINDOWS.bat beside the ZIPs.",
+    "Run INSTALL_WINDOWS.bat; it installs to a stable LocalAppData application folder.",
+    "If Python is absent, allow the signed Python 3.11 installer or install a compatible 3.11.x x64 build manually and retry."
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "schema": "biointel.phase31-to-35.test-results.v1",
+  "generated_at_utc": "2026-07-30T17:30:00Z",
+  "historical_full_suite": {
+    "baseline": {
+      "passed": 1931,
+      "failed": 279,
+      "skipped": 28,
+      "errors": 3,
+      "duration_seconds": 697.96,
+      "status": "NOT_GREEN"
+    },
+    "post_phase31_fixes": {
+      "passed": 1943,
+      "failed": 273,
+      "skipped": 28,
+      "errors": 0,
+      "duration_seconds": 683.97,
+      "status": "NOT_GREEN"
+    }
+  },
+  "final_focused_regression": {
+    "passed": 48,
+    "failed": 0,
+    "skipped": 0,
+    "blocked": 0,
+    "duration_seconds": 19.13,
+    "files": {
+      "phase31_stabilization": 3,
+      "phase32_secure_sync": 7,
+      "phase33_digital_twin": 8,
+      "phase34_research_compute": 10,
+      "phase35_scientific_discovery": 10,
+      "cross_phase_workflows": 5,
+      "security": 5
+    }
+  },
+  "windows": {
+    "canonical_hidden_launch_health": "PASS",
+    "canonical_apptest_exceptions": 0,
+    "installed_protected_apptest_exceptions": 0,
+    "installer_upgrade_backup": "PASS",
+    "native_launcher_health": "PASS",
+    "native_stop_no_orphans": "PASS"
+  },
+  "source_leak": {
+    "unexpected_raw_proprietary_python": 0,
+    "protected_proprietary_modules": 1505,
+    "status": "PASS"
+  }
+}

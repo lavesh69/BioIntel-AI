@@ -1,0 +1,3555 @@
+{
+  "schema": "biointel.step144.research-planning-specialist-engines.catalog.v1",
+  "milestone": 144,
+  "product_version_preserved": "13.2.0",
+  "research_planning_pages": [
+    {
+      "key": "biostatistics_design",
+      "title": "Biostatistics, Power & Experimental Design Studio",
+      "path": "pages/121_Biostatistics_Power_and_Experimental_Design_Studio.py",
+      "description": "Estimate sample size, power, dropout impact and design sensitivity using transparent assumptions."
+    },
+    {
+      "key": "study_protocol_designer",
+      "title": "Study Protocol Designer",
+      "path": "pages/205_Study_Protocol_Designer.py",
+      "description": "Build a complete, reviewable research protocol from objectives through visits, endpoints, deviations and amendments."
+    },
+    {
+      "key": "sample_size_power_studio",
+      "title": "Sample Size & Statistical Power Studio",
+      "path": "pages/206_Sample_Size_Statistical_Power_Studio.py",
+      "description": "Calculate transparent sample-size scenarios across continuous, binary, survival, repeated-measures and clustered designs."
+    },
+    {
+      "key": "clinical_trial_design_studio",
+      "title": "Clinical Trial Design Studio",
+      "path": "pages/207_Clinical_Trial_Design_Studio.py",
+      "description": "Design phase-aware clinical trials with arms, cohorts, interim decisions, endpoints, recruitment and safety monitoring."
+    },
+    {
+      "key": "experimental_design_doe",
+      "title": "Experimental Design & DoE Workbench",
+      "path": "pages/208_Experimental_Design_DoE_Workbench.py",
+      "description": "Create and analyse factorial, response-surface, screening and optimal experimental designs for laboratory and process studies."
+    },
+    {
+      "key": "randomization_blinding_allocation",
+      "title": "Randomization, Blinding & Allocation Studio",
+      "path": "pages/209_Randomization_Blinding_Allocation_Studio.py",
+      "description": "Generate reproducible allocation schedules with strata, variable blocks, concealment and balance diagnostics."
+    },
+    {
+      "key": "cohort_eligibility_builder",
+      "title": "Cohort Definition & Eligibility Builder",
+      "path": "pages/210_Cohort_Definition_Eligibility_Builder.py",
+      "description": "Define reproducible eligibility rules, estimate feasible cohorts and explain every inclusion or exclusion decision."
+    },
+    {
+      "key": "endpoint_outcome_strategy",
+      "title": "Endpoint & Outcome Strategy Studio",
+      "path": "pages/211_Endpoint_Outcome_Strategy_Studio.py",
+      "description": "Prioritise primary, secondary and exploratory endpoints with burden, validity, missingness and multiplicity controls."
+    },
+    {
+      "key": "biomarker_study_planning",
+      "title": "Biomarker Study Planning Studio",
+      "path": "pages/212_Biomarker_Study_Planning_Studio.py",
+      "description": "Plan diagnostic, prognostic and predictive biomarker studies from discovery through independent validation."
+    },
+    {
+      "key": "sampling_biospecimen_planning",
+      "title": "Sampling & Biospecimen Planning Studio",
+      "path": "pages/213_Sampling_Biospecimen_Planning_Studio.py",
+      "description": "Plan collection, aliquoting, storage, shipping and retention for biospecimen-intensive studies."
+    },
+    {
+      "key": "data_collection_crf_designer",
+      "title": "Data Collection & CRF Designer",
+      "path": "pages/214_Data_Collection_CRF_Designer.py",
+      "description": "Design structured case-report forms, data dictionaries and validation rules across visits and study domains."
+    },
+    {
+      "key": "statistical_analysis_plan",
+      "title": "Statistical Analysis Plan Studio",
+      "path": "pages/215_Statistical_Analysis_Plan_Studio.py",
+      "description": "Build a versioned statistical analysis plan linking populations, endpoints, models, covariates, multiplicity and sensitivity analyses."
+    },
+    {
+      "key": "research_feasibility_recruitment",
+      "title": "Research Feasibility & Recruitment Planner",
+      "path": "pages/216_Research_Feasibility_Recruitment_Planner.py",
+      "description": "Forecast enrolment, screen failures, site activation, dropout, cost and study-completion probability."
+    },
+    {
+      "key": "research_timeline_dependencies",
+      "title": "Research Timeline, Milestones & Dependencies Studio",
+      "path": "pages/217_Research_Timeline_Milestones_Dependencies_Studio.py",
+      "description": "Plan tasks, dependencies, critical paths, resources and risk-adjusted timelines across a research programme."
+    },
+    {
+      "key": "research_risk_mitigation",
+      "title": "Research Risk & Mitigation Planner",
+      "path": "pages/218_Research_Risk_Mitigation_Planner.py",
+      "description": "Identify, score, mitigate and monitor scientific, statistical, assay, data and operational research risks."
+    },
+    {
+      "key": "evidence_gap_literature_planning",
+      "title": "Evidence Gap & Literature Planning Studio",
+      "path": "pages/219_Evidence_Gap_Literature_Planning_Studio.py",
+      "description": "Map existing evidence, contradictions and unanswered questions to justify and prioritise new research."
+    },
+    {
+      "key": "preregistration_reproducibility",
+      "title": "Pre-Registration & Reproducibility Studio",
+      "path": "pages/220_PreRegistration_Reproducibility_Studio.py",
+      "description": "Lock hypotheses, outcomes, exclusions, sample-size rationale and analysis decisions before observing study outcomes."
+    },
+    {
+      "key": "research_planning_command_center",
+      "title": "Research Planning Command Center",
+      "path": "pages/221_Research_Planning_Command_Center.py",
+      "description": "Connect protocol, endpoints, sample size, CRFs, SAP, recruitment, risks, budgets and preregistration in one traceable planning system."
+    },
+    {
+      "key": "research_budget_burden",
+      "title": "Research Budget & Participant Burden Studio",
+      "path": "pages/222_Research_Budget_Participant_Burden_Studio.py",
+      "description": "Model participant burden, site capacity and probabilistic study costs with transparent assumptions."
+    },
+    {
+      "key": "synthetic_cohort_trial",
+      "title": "Synthetic Cohort & Trial Simulation Lab",
+      "path": "pages/186_Synthetic_Cohort_Trial_Simulation_Lab.py",
+      "description": "Simulate cohorts, treatment arms, outcomes, event times and site heterogeneity for design stress-testing."
+    }
+  ],
+  "explicit_peak_profiles": 20,
+  "generic_profile_fallbacks_for_research_planning": 0,
+  "specialist_engines_added": 10,
+  "total_deep_specialist_workspaces": 20,
+  "feature_contracts": 716,
+  "signature_visual_contracts": 160,
+  "validation_checks": 80,
+  "existing_step141_visuals_preserved": 128,
+  "step142_advanced_features_preserved": 220,
+  "step142_advanced_visual_specs_preserved": 119,
+  "new_specialist_engines": {
+    "biomarker_study_planning": {
+      "module_key": "biomarker_study_planning",
+      "specialist_engine": true,
+      "engine": "Diagnostic performance and validation-readiness planning",
+      "version": "1.0.0",
+      "execution": "local_bounded_deterministic",
+      "contract_sha256": "10750eb7eab3e1b3e323d44a54916648aac990a6e511c1d835aa722c848bdd76"
+    },
+    "clinical_trial_design_studio": {
+      "module_key": "clinical_trial_design_studio",
+      "specialist_engine": true,
+      "engine": "Operating-characteristic simulation and dose escalation",
+      "version": "1.0.0",
+      "execution": "local_bounded_deterministic",
+      "contract_sha256": "8117d40de8b7bf81373d79d71b05a4fe93061b8dddb2fa64804f8216b5f8ef23"
+    },
+    "evidence_gap_literature_planning": {
+      "module_key": "evidence_gap_literature_planning",
+      "specialist_engine": true,
+      "engine": "Deduplication, PRISMA, contradiction and meta-analysis",
+      "version": "1.0.0",
+      "execution": "local_bounded_deterministic",
+      "contract_sha256": "8cd105407378299ea5c25ce704f60213301b809bf7752e04fbf47b4c0cdb0556"
+    },
+    "experimental_design_doe": {
+      "module_key": "experimental_design_doe",
+      "specialist_engine": true,
+      "engine": "Factorial/CCD generation and response-surface fitting",
+      "version": "1.0.0",
+      "execution": "local_bounded_deterministic",
+      "contract_sha256": "ffab3524e2a88e3aaf0e6f6ae6bdc83eb61a74d01fff3589631652974960d077"
+    },
+    "preregistration_reproducibility": {
+      "module_key": "preregistration_reproducibility",
+      "specialist_engine": true,
+      "engine": "Outcome-switching, artifact integrity and environment lock",
+      "version": "1.0.0",
+      "execution": "local_bounded_deterministic",
+      "contract_sha256": "c4fde8de78693db5cf62935c7b9ec98ccca3c32b1f245a85244585091440d6ca"
+    },
+    "research_feasibility_recruitment": {
+      "module_key": "research_feasibility_recruitment",
+      "specialist_engine": true,
+      "engine": "Monte Carlo recruitment and Bayesian site updating",
+      "version": "1.0.0",
+      "execution": "local_bounded_deterministic",
+      "contract_sha256": "72ffff3db4e51928d745e61e198d365e2d42e900dfeeb7042a25f4bbc0d38471"
+    },
+    "research_risk_mitigation": {
+      "module_key": "research_risk_mitigation",
+      "specialist_engine": true,
+      "engine": "FMEA, KRI, bow-tie and aggregate exposure",
+      "version": "1.0.0",
+      "execution": "local_bounded_deterministic",
+      "contract_sha256": "841ec29a1ea89d72f87559b84845061efae404e8a37923712f1945bedfe915eb"
+    },
+    "research_timeline_dependencies": {
+      "module_key": "research_timeline_dependencies",
+      "specialist_engine": true,
+      "engine": "PERT/CPM Monte Carlo schedule risk",
+      "version": "1.0.0",
+      "execution": "local_bounded_deterministic",
+      "contract_sha256": "b17fee3862ace625a28cd245f318e4875c8fad71167de0fe79efac1628aec4a9"
+    },
+    "sample_size_power_studio": {
+      "module_key": "sample_size_power_studio",
+      "specialist_engine": true,
+      "engine": "Assurance, group-sequential and cluster/stepped-wedge planning",
+      "version": "1.0.0",
+      "execution": "local_bounded_deterministic",
+      "contract_sha256": "868ea6d8cabe7e3ef0206fdb3ae686937bfd0af0f5838893d7f75fe3f634128d"
+    },
+    "sampling_biospecimen_planning": {
+      "module_key": "sampling_biospecimen_planning",
+      "specialist_engine": true,
+      "engine": "Barcode lineage, volume and excursion lifecycle",
+      "version": "1.0.0",
+      "execution": "local_bounded_deterministic",
+      "contract_sha256": "33aace2bbb2b6dec1c12cc1527a86c47bbf7b888c97bd95f97348f83a33fb4e2"
+    }
+  },
+  "new_engine_capabilities": {
+    "evidence_gap_literature_planning": [
+      "DOI and normalized-title duplicate detection",
+      "PRISMA-style screening flow",
+      "inverse-variance fixed-effect pooling",
+      "Q and I-squared heterogeneity",
+      "direction contradiction review",
+      "evidence certainty downgrade"
+    ],
+    "preregistration_reproducibility": [
+      "planned-executed-reported comparison",
+      "outcome-switching detection",
+      "undisclosed deviation detection",
+      "item and plan SHA-256 locks",
+      "artifact hash validation",
+      "runtime environment snapshot"
+    ],
+    "clinical_trial_design_studio": [
+      "OBrien-Fleming and Pocock alpha spending",
+      "type-I error and power simulation",
+      "expected sample size under early stopping",
+      "3+3 dose-escalation review",
+      "Wilson toxicity intervals",
+      "MTD screening output"
+    ],
+    "experimental_design_doe": [
+      "randomized central composite design",
+      "response-surface regression",
+      "interaction and quadratic effects",
+      "AICc, RMSE and condition diagnostics",
+      "alias review",
+      "D-efficiency"
+    ],
+    "biomarker_study_planning": [
+      "expected confusion matrix",
+      "sensitivity/specificity confidence intervals",
+      "PPV/NPV prevalence sensitivity",
+      "likelihood ratios and Youden index",
+      "analytical CV penalty",
+      "external-validation and cut-off readiness"
+    ],
+    "sample_size_power_studio": [
+      "Bayesian assurance",
+      "conditional-power uncertainty",
+      "group-sequential simulation",
+      "cluster-size imbalance design effect",
+      "stepped-wedge covariance planning"
+    ],
+    "research_feasibility_recruitment": [
+      "probabilistic site activation",
+      "Gamma rate heterogeneity",
+      "P10/P50/P90 forecast",
+      "completion probability",
+      "site rescue triggers",
+      "Bayesian rate updating"
+    ],
+    "sampling_biospecimen_planning": [
+      "deterministic barcodes",
+      "parent-child aliquot lineage",
+      "volume exhaustion checks",
+      "storage aggregation",
+      "chain of custody",
+      "temperature excursion detection"
+    ],
+    "research_timeline_dependencies": [
+      "dependency cycle rejection",
+      "PERT expected duration",
+      "critical path and slack",
+      "beta-PERT Monte Carlo",
+      "task criticality index",
+      "P50/P90 finish dates"
+    ],
+    "research_risk_mitigation": [
+      "FMEA RPN",
+      "control-adjusted residual RPN",
+      "KRI classification",
+      "bow-tie links",
+      "financial and schedule exposure Monte Carlo"
+    ]
+  },
+  "optimization_guards": [
+    "All specialist simulations have explicit upper bounds",
+    "Deterministic seeds are recorded in manifests",
+    "Duplicate identifiers and invalid probabilities are blocked",
+    "Task dependency cycles and unknown predecessors are rejected",
+    "Unsafe negative volume, capacity and cost inputs are rejected",
+    "Literature duplicates are excluded from pooled calculations",
+    "Panel-level failures remain isolated with recovery IDs",
+    "Specialist output manifests contain table hashes",
+    "Specialist engine contracts are included in reproducibility bundles",
+    "Existing 250,000-row analysis and 5,000-row visual guards remain active"
+  ],
+  "peak_profiles": {
+    "biomarker_study_planning": {
+      "profile_digest": "2b8ab90a377f6b22596ff23d9859906fad3efab94013f5d3ed671aae11901810",
+      "feature_count": 36,
+      "feature_groups": {
+        "Traceability": [
+          "Objective-to-output scientific lineage",
+          "Change-impact propagation",
+          "Assumption-to-decision links",
+          "Review and approval history"
+        ],
+        "Comparison": [
+          "Scenario comparison",
+          "Version comparison",
+          "Before-versus-after amendment review",
+          "Selected-record handoff preservation"
+        ],
+        "Quality": [
+          "Module completeness score",
+          "Cross-module consistency checks",
+          "Unresolved blocker queue",
+          "Evidence and limitation status"
+        ],
+        "Export": [
+          "Machine-readable planning manifest",
+          "Underlying visual-data export",
+          "Calculation provenance",
+          "Reproducible review package"
+        ],
+        "Execution": [
+          "Bounded calculation runtime",
+          "Deterministic seed control",
+          "Failure-isolated specialist panels",
+          "Stable recovery identifiers"
+        ],
+        "Collaboration": [
+          "Named scientific owner",
+          "Reviewer decision queue",
+          "Comment and resolution history",
+          "Deadline and escalation metadata"
+        ],
+        "Specialist": [
+          "Expected confusion-matrix planning",
+          "Sensitivity and specificity confidence intervals",
+          "PPV and NPV prevalence sensitivity",
+          "Positive and negative likelihood ratios",
+          "Youden index",
+          "Analytical CV penalty",
+          "External-validation readiness",
+          "Cut-off lock status",
+          "Validation-maturity scoring",
+          "Leakage-prevention checklist",
+          "Candidate ranking",
+          "Intended-use prevalence sensitivity"
+        ]
+      },
+      "signature_visuals": [
+        "Performance-maturity map",
+        "PPV/NPV prevalence curves",
+        "Sensitivity-specificity intervals",
+        "Expected confusion matrix",
+        "Analytical CV comparison",
+        "Validation stage funnel",
+        "Leakage readiness",
+        "Candidate ranking"
+      ],
+      "validation_checks": [
+        "Candidate names are unique",
+        "Probabilities are in range",
+        "Cut-off lock is reported",
+        "External validation is distinguished"
+      ]
+    },
+    "biostatistics_design": {
+      "profile_digest": "c48144c3999be690ccba486201e03f4fe412475efce6d4631efdd13a2dc8772e",
+      "feature_count": 36,
+      "feature_groups": {
+        "Traceability": [
+          "Objective-to-output scientific lineage",
+          "Change-impact propagation",
+          "Assumption-to-decision links",
+          "Review and approval history"
+        ],
+        "Comparison": [
+          "Scenario comparison",
+          "Version comparison",
+          "Before-versus-after amendment review",
+          "Selected-record handoff preservation"
+        ],
+        "Quality": [
+          "Module completeness score",
+          "Cross-module consistency checks",
+          "Unresolved blocker queue",
+          "Evidence and limitation status"
+        ],
+        "Export": [
+          "Machine-readable planning manifest",
+          "Underlying visual-data export",
+          "Calculation provenance",
+          "Reproducible review package"
+        ],
+        "Execution": [
+          "Bounded calculation runtime",
+          "Deterministic seed control",
+          "Failure-isolated specialist panels",
+          "Stable recovery identifiers"
+        ],
+        "Collaboration": [
+          "Named scientific owner",
+          "Reviewer decision queue",
+          "Comment and resolution history",
+          "Deadline and escalation metadata"
+        ],
+        "Specialist": [
+          "Generalized linear mixed models",
+          "Bayesian model planning",
+          "Causal-inference estimators",
+          "Recurrent-event methods",
+          "Competing-risk methods",
+          "Robust estimation",
+          "Multiple imputation",
+          "Mediation analysis",
+          "Subgroup interaction",
+          "Equivalence and non-inferiority",
+          "Model-assumption compatibility",
+          "Independent calculation verification"
+        ]
+      },
+      "signature_visuals": [
+        "Model navigator",
+        "Assumption diagnostic matrix",
+        "Effect-size forest",
+        "Missing-data comparison",
+        "Sensitivity tornado",
+        "Method compatibility",
+        "Prior sensitivity",
+        "Model robustness"
+      ],
+      "validation_checks": [
+        "Outcome type is specified",
+        "Design and model are compatible",
+        "Missing-data strategy exists",
+        "Effect measure is interpretable"
+      ]
+    },
+    "clinical_trial_design_studio": {
+      "profile_digest": "eddcc0ae3398f2612eb07baa2bda3367376c4aa3d1a565733942b83f1bf980c7",
+      "feature_count": 36,
+      "feature_groups": {
+        "Traceability": [
+          "Objective-to-output scientific lineage",
+          "Change-impact propagation",
+          "Assumption-to-decision links",
+          "Review and approval history"
+        ],
+        "Comparison": [
+          "Scenario comparison",
+          "Version comparison",
+          "Before-versus-after amendment review",
+          "Selected-record handoff preservation"
+        ],
+        "Quality": [
+          "Module completeness score",
+          "Cross-module consistency checks",
+          "Unresolved blocker queue",
+          "Evidence and limitation status"
+        ],
+        "Export": [
+          "Machine-readable planning manifest",
+          "Underlying visual-data export",
+          "Calculation provenance",
+          "Reproducible review package"
+        ],
+        "Execution": [
+          "Bounded calculation runtime",
+          "Deterministic seed control",
+          "Failure-isolated specialist panels",
+          "Stable recovery identifiers"
+        ],
+        "Collaboration": [
+          "Named scientific owner",
+          "Reviewer decision queue",
+          "Comment and resolution history",
+          "Deadline and escalation metadata"
+        ],
+        "Specialist": [
+          "Group-sequential operating-characteristic simulation",
+          "Interim efficacy and futility planning",
+          "Type-I error verification",
+          "Expected sample size estimation",
+          "3+3 dose-escalation review",
+          "Dose-toxicity confidence intervals",
+          "Maximum tolerated dose screening",
+          "Arm lifecycle decision contract",
+          "Deterministic simulation seed",
+          "Safety stopping review",
+          "Independent boundary export",
+          "Decision manifest with checksums"
+        ]
+      },
+      "signature_visuals": [
+        "Interim boundary",
+        "Operating-characteristic bars",
+        "Stopping-look distribution",
+        "Dose-toxicity plot",
+        "Dose decision ladder",
+        "Expected sample size comparison",
+        "Safety review matrix",
+        "Arm lifecycle timeline"
+      ],
+      "validation_checks": [
+        "Type-I error is estimated",
+        "Dose toxicities do not exceed participants",
+        "Interim fractions are ordered",
+        "Simulation seed is recorded"
+      ]
+    },
+    "cohort_eligibility_builder": {
+      "profile_digest": "60ffdc1b7bfaefe9ad9e475147253e8bf33bd92b95f38130737035ae7058c676",
+      "feature_count": 36,
+      "feature_groups": {
+        "Traceability": [
+          "Objective-to-output scientific lineage",
+          "Change-impact propagation",
+          "Assumption-to-decision links",
+          "Review and approval history"
+        ],
+        "Comparison": [
+          "Scenario comparison",
+          "Version comparison",
+          "Before-versus-after amendment review",
+          "Selected-record handoff preservation"
+        ],
+        "Quality": [
+          "Module completeness score",
+          "Cross-module consistency checks",
+          "Unresolved blocker queue",
+          "Evidence and limitation status"
+        ],
+        "Export": [
+          "Machine-readable planning manifest",
+          "Underlying visual-data export",
+          "Calculation provenance",
+          "Reproducible review package"
+        ],
+        "Execution": [
+          "Bounded calculation runtime",
+          "Deterministic seed control",
+          "Failure-isolated specialist panels",
+          "Stable recovery identifiers"
+        ],
+        "Collaboration": [
+          "Named scientific owner",
+          "Reviewer decision queue",
+          "Comment and resolution history",
+          "Deadline and escalation metadata"
+        ],
+        "Specialist": [
+          "Visual rule builder",
+          "Nested Boolean groups",
+          "Temporal eligibility logic",
+          "Computable phenotype definitions",
+          "OMOP and FHIR source mappings",
+          "Duplicate participant detection",
+          "Source-data feasibility",
+          "Rule test cases",
+          "Cohort version comparison",
+          "Portable rule export",
+          "Eligibility sensitivity",
+          "Site-level eligible population estimation"
+        ]
+      },
+      "signature_visuals": [
+        "Attrition funnel",
+        "Temporal rule timeline",
+        "Eligibility decision tree",
+        "Rule-overlap UpSet",
+        "Site feasibility map",
+        "Rule sensitivity",
+        "Cohort version diff",
+        "Exclusion reason flow"
+      ],
+      "validation_checks": [
+        "Rules are syntactically valid",
+        "Required source variables exist",
+        "Temporal windows are explicit",
+        "Duplicate participants are handled"
+      ]
+    },
+    "data_collection_crf_designer": {
+      "profile_digest": "0aad48ca31da270a4486f90fad0620a3cb8d5f9ff168b1817fcf00b84b63459d",
+      "feature_count": 36,
+      "feature_groups": {
+        "Traceability": [
+          "Objective-to-output scientific lineage",
+          "Change-impact propagation",
+          "Assumption-to-decision links",
+          "Review and approval history"
+        ],
+        "Comparison": [
+          "Scenario comparison",
+          "Version comparison",
+          "Before-versus-after amendment review",
+          "Selected-record handoff preservation"
+        ],
+        "Quality": [
+          "Module completeness score",
+          "Cross-module consistency checks",
+          "Unresolved blocker queue",
+          "Evidence and limitation status"
+        ],
+        "Export": [
+          "Machine-readable planning manifest",
+          "Underlying visual-data export",
+          "Calculation provenance",
+          "Reproducible review package"
+        ],
+        "Execution": [
+          "Bounded calculation runtime",
+          "Deterministic seed control",
+          "Failure-isolated specialist panels",
+          "Stable recovery identifiers"
+        ],
+        "Collaboration": [
+          "Named scientific owner",
+          "Reviewer decision queue",
+          "Comment and resolution history",
+          "Deadline and escalation metadata"
+        ],
+        "Specialist": [
+          "Drag-and-drop form specification",
+          "ePRO and eCOA metadata",
+          "Multilingual labels",
+          "Dynamic skip logic",
+          "Cross-form edit checks",
+          "Coding dictionaries",
+          "Live form preview",
+          "Automated rule test cases",
+          "Dependency-cycle detection",
+          "Respondent burden scoring",
+          "Visit coverage analysis",
+          "FHIR/CDASH mapping"
+        ]
+      },
+      "signature_visuals": [
+        "Form logic graph",
+        "Edit-check network",
+        "Field dependency map",
+        "Respondent burden",
+        "Visit-form coverage",
+        "Variable lineage",
+        "Rule-test results",
+        "Translation completeness"
+      ],
+      "validation_checks": [
+        "Variable names are unique",
+        "Required fields have valid types",
+        "Skip logic has no cycles",
+        "Every endpoint has a collection variable"
+      ]
+    },
+    "endpoint_outcome_strategy": {
+      "profile_digest": "43ef374c7cee336c42df7675181709d7dc4b039f2075fcdcfa4da4b0d4fe0c30",
+      "feature_count": 36,
+      "feature_groups": {
+        "Traceability": [
+          "Objective-to-output scientific lineage",
+          "Change-impact propagation",
+          "Assumption-to-decision links",
+          "Review and approval history"
+        ],
+        "Comparison": [
+          "Scenario comparison",
+          "Version comparison",
+          "Before-versus-after amendment review",
+          "Selected-record handoff preservation"
+        ],
+        "Quality": [
+          "Module completeness score",
+          "Cross-module consistency checks",
+          "Unresolved blocker queue",
+          "Evidence and limitation status"
+        ],
+        "Export": [
+          "Machine-readable planning manifest",
+          "Underlying visual-data export",
+          "Calculation provenance",
+          "Reproducible review package"
+        ],
+        "Execution": [
+          "Bounded calculation runtime",
+          "Deterministic seed control",
+          "Failure-isolated specialist panels",
+          "Stable recovery identifiers"
+        ],
+        "Collaboration": [
+          "Named scientific owner",
+          "Reviewer decision queue",
+          "Comment and resolution history",
+          "Deadline and escalation metadata"
+        ],
+        "Specialist": [
+          "Endpoint library",
+          "Estimand alignment",
+          "Endpoint adjudication charter",
+          "MCID planning",
+          "Competing-risk strategy",
+          "Win-ratio planning",
+          "Composite endpoint contribution",
+          "Measurement-error model",
+          "Responder definition simulator",
+          "Missing-outcome strategy",
+          "Endpoint burden scoring",
+          "Validation-evidence registry"
+        ]
+      },
+      "signature_visuals": [
+        "Objective-estimand-endpoint graph",
+        "Endpoint hierarchy",
+        "Composite contribution",
+        "Adjudication workflow",
+        "Burden-versus-value",
+        "MCID sensitivity",
+        "Measurement schedule",
+        "Missingness risk"
+      ],
+      "validation_checks": [
+        "Primary endpoint is unique",
+        "MCID has a source",
+        "Intercurrent events are addressed",
+        "Collection and analysis are linked"
+      ]
+    },
+    "evidence_gap_literature_planning": {
+      "profile_digest": "9487412a048fbddbea10684ea53cdc9ce206016e558e672d4176c36bc6347f76",
+      "feature_count": 36,
+      "feature_groups": {
+        "Traceability": [
+          "Objective-to-output scientific lineage",
+          "Change-impact propagation",
+          "Assumption-to-decision links",
+          "Review and approval history"
+        ],
+        "Comparison": [
+          "Scenario comparison",
+          "Version comparison",
+          "Before-versus-after amendment review",
+          "Selected-record handoff preservation"
+        ],
+        "Quality": [
+          "Module completeness score",
+          "Cross-module consistency checks",
+          "Unresolved blocker queue",
+          "Evidence and limitation status"
+        ],
+        "Export": [
+          "Machine-readable planning manifest",
+          "Underlying visual-data export",
+          "Calculation provenance",
+          "Reproducible review package"
+        ],
+        "Execution": [
+          "Bounded calculation runtime",
+          "Deterministic seed control",
+          "Failure-isolated specialist panels",
+          "Stable recovery identifiers"
+        ],
+        "Collaboration": [
+          "Named scientific owner",
+          "Reviewer decision queue",
+          "Comment and resolution history",
+          "Deadline and escalation metadata"
+        ],
+        "Specialist": [
+          "DOI normalization",
+          "Exact DOI duplicate detection",
+          "Normalized-title duplicate detection",
+          "Bounded near-title similarity review",
+          "PRISMA-style screening flow",
+          "Quality and design weighting",
+          "Inverse-variance fixed-effect pooling",
+          "Heterogeneity Q and I-squared",
+          "Direction contradiction detection",
+          "Evidence certainty downgrade",
+          "Population-outcome evidence matrix",
+          "Search and screening manifest"
+        ]
+      },
+      "signature_visuals": [
+        "PRISMA flow",
+        "Study effect forest",
+        "Contradiction matrix",
+        "Evidence certainty",
+        "Duplicate review",
+        "Quality distribution",
+        "Population-outcome map",
+        "Evidence timeline"
+      ],
+      "validation_checks": [
+        "Study identifiers are unique",
+        "Duplicates are excluded from pooling",
+        "Standard errors are positive",
+        "Heterogeneity is reported"
+      ]
+    },
+    "experimental_design_doe": {
+      "profile_digest": "0f7705d3c881c1f76b6e577019a6ab196c4b6d77cdd5d915d24c7aaac422c971",
+      "feature_count": 36,
+      "feature_groups": {
+        "Traceability": [
+          "Objective-to-output scientific lineage",
+          "Change-impact propagation",
+          "Assumption-to-decision links",
+          "Review and approval history"
+        ],
+        "Comparison": [
+          "Scenario comparison",
+          "Version comparison",
+          "Before-versus-after amendment review",
+          "Selected-record handoff preservation"
+        ],
+        "Quality": [
+          "Module completeness score",
+          "Cross-module consistency checks",
+          "Unresolved blocker queue",
+          "Evidence and limitation status"
+        ],
+        "Export": [
+          "Machine-readable planning manifest",
+          "Underlying visual-data export",
+          "Calculation provenance",
+          "Reproducible review package"
+        ],
+        "Execution": [
+          "Bounded calculation runtime",
+          "Deterministic seed control",
+          "Failure-isolated specialist panels",
+          "Stable recovery identifiers"
+        ],
+        "Collaboration": [
+          "Named scientific owner",
+          "Reviewer decision queue",
+          "Comment and resolution history",
+          "Deadline and escalation metadata"
+        ],
+        "Specialist": [
+          "Randomized factorial design generation",
+          "Central composite design generation",
+          "Rotatable axial-point planning",
+          "Center-point allocation",
+          "Response-surface regression",
+          "Main-effect estimation",
+          "Interaction-effect estimation",
+          "Quadratic-effect estimation",
+          "Rank-deficiency detection",
+          "Alias and collinearity review",
+          "AICc and model diagnostics",
+          "D-efficiency calculation"
+        ]
+      },
+      "signature_visuals": [
+        "Design matrix",
+        "Coefficient Pareto",
+        "Observed-versus-predicted",
+        "Residual map",
+        "Alias network",
+        "Factor correlation heatmap",
+        "Response surface",
+        "Design-region coverage"
+      ],
+      "validation_checks": [
+        "Design is estimable",
+        "Factor ranges are valid",
+        "Aliasing is surfaced",
+        "Starter responses are labelled synthetic"
+      ]
+    },
+    "preregistration_reproducibility": {
+      "profile_digest": "7af15e0b373f5743109508d5ed93be9bd5a18b710957ec8c2f731abfb3b5840c",
+      "feature_count": 36,
+      "feature_groups": {
+        "Traceability": [
+          "Objective-to-output scientific lineage",
+          "Change-impact propagation",
+          "Assumption-to-decision links",
+          "Review and approval history"
+        ],
+        "Comparison": [
+          "Scenario comparison",
+          "Version comparison",
+          "Before-versus-after amendment review",
+          "Selected-record handoff preservation"
+        ],
+        "Quality": [
+          "Module completeness score",
+          "Cross-module consistency checks",
+          "Unresolved blocker queue",
+          "Evidence and limitation status"
+        ],
+        "Export": [
+          "Machine-readable planning manifest",
+          "Underlying visual-data export",
+          "Calculation provenance",
+          "Reproducible review package"
+        ],
+        "Execution": [
+          "Bounded calculation runtime",
+          "Deterministic seed control",
+          "Failure-isolated specialist panels",
+          "Stable recovery identifiers"
+        ],
+        "Collaboration": [
+          "Named scientific owner",
+          "Reviewer decision queue",
+          "Comment and resolution history",
+          "Deadline and escalation metadata"
+        ],
+        "Specialist": [
+          "Planned-executed-reported comparison",
+          "Outcome-switching detection",
+          "Undisclosed-deviation detection",
+          "Deviation severity classification",
+          "Item-level SHA-256 locks",
+          "Whole-plan cryptographic lock",
+          "Artifact SHA-256 format verification",
+          "Runtime environment snapshot",
+          "Analysis dependency manifest",
+          "Alignment score",
+          "Locked-item coverage",
+          "Reproducibility export contract"
+        ]
+      },
+      "signature_visuals": [
+        "Plan-execution-report alignment",
+        "Outcome-switching matrix",
+        "Deviation severity",
+        "Artifact integrity",
+        "Environment manifest",
+        "Lock coverage",
+        "Amendment timeline",
+        "Reproduction readiness"
+      ],
+      "validation_checks": [
+        "Preregistration items are unique",
+        "Locked values are hashed",
+        "Material changes have reasons",
+        "Artifact hashes are validated"
+      ]
+    },
+    "randomization_blinding_allocation": {
+      "profile_digest": "1be1553266e7c3d06926144e486359fd9e24a9183f1ab30c7171e3602227eb4a",
+      "feature_count": 36,
+      "feature_groups": {
+        "Traceability": [
+          "Objective-to-output scientific lineage",
+          "Change-impact propagation",
+          "Assumption-to-decision links",
+          "Review and approval history"
+        ],
+        "Comparison": [
+          "Scenario comparison",
+          "Version comparison",
+          "Before-versus-after amendment review",
+          "Selected-record handoff preservation"
+        ],
+        "Quality": [
+          "Module completeness score",
+          "Cross-module consistency checks",
+          "Unresolved blocker queue",
+          "Evidence and limitation status"
+        ],
+        "Export": [
+          "Machine-readable planning manifest",
+          "Underlying visual-data export",
+          "Calculation provenance",
+          "Reproducible review package"
+        ],
+        "Execution": [
+          "Bounded calculation runtime",
+          "Deterministic seed control",
+          "Failure-isolated specialist panels",
+          "Stable recovery identifiers"
+        ],
+        "Collaboration": [
+          "Named scientific owner",
+          "Reviewer decision queue",
+          "Comment and resolution history",
+          "Deadline and escalation metadata"
+        ],
+        "Specialist": [
+          "Minimization allocation",
+          "Covariate-adaptive assignment",
+          "Central allocation service contract",
+          "Secure seed and digest",
+          "Variable block generation",
+          "Unequal allocation",
+          "Re-randomization controls",
+          "Emergency code-break workflow",
+          "Sequential imbalance monitoring",
+          "Assignment entropy",
+          "Predictability testing",
+          "Independent allocation export"
+        ]
+      },
+      "signature_visuals": [
+        "Live imbalance trajectory",
+        "Assignment entropy",
+        "Site-arm heatmap",
+        "Block-pattern audit",
+        "Emergency unblinding timeline",
+        "Covariate balance",
+        "Predictability risk",
+        "Allocation sequence audit"
+      ],
+      "validation_checks": [
+        "Participant identifiers are unique",
+        "Strata are available",
+        "Seed is recorded",
+        "Maximum imbalance is within tolerance"
+      ]
+    },
+    "research_budget_participant_burden": {
+      "profile_digest": "8703653906856e2036e0ee8bb9e9b1150556500f0be2320f53220fa5a0a726d4",
+      "feature_count": 36,
+      "feature_groups": {
+        "Traceability": [
+          "Objective-to-output scientific lineage",
+          "Change-impact propagation",
+          "Assumption-to-decision links",
+          "Review and approval history"
+        ],
+        "Comparison": [
+          "Scenario comparison",
+          "Version comparison",
+          "Before-versus-after amendment review",
+          "Selected-record handoff preservation"
+        ],
+        "Quality": [
+          "Module completeness score",
+          "Cross-module consistency checks",
+          "Unresolved blocker queue",
+          "Evidence and limitation status"
+        ],
+        "Export": [
+          "Machine-readable planning manifest",
+          "Underlying visual-data export",
+          "Calculation provenance",
+          "Reproducible review package"
+        ],
+        "Execution": [
+          "Bounded calculation runtime",
+          "Deterministic seed control",
+          "Failure-isolated specialist panels",
+          "Stable recovery identifiers"
+        ],
+        "Collaboration": [
+          "Named scientific owner",
+          "Reviewer decision queue",
+          "Comment and resolution history",
+          "Deadline and escalation metadata"
+        ],
+        "Specialist": [
+          "Currency and exchange-rate normalization",
+          "Annual inflation escalation",
+          "Monthly cash-flow forecast",
+          "Site-specific cost contracts",
+          "Cost per enrolled participant",
+          "Cost per evaluable participant",
+          "Participant compensation planning",
+          "Burden-equity analysis",
+          "Contingency allocation",
+          "Budget scenario comparison",
+          "Cash runway warning",
+          "Cost-driver sensitivity"
+        ]
+      },
+      "signature_visuals": [
+        "Cost waterfall",
+        "P10-P50-P90 forecast",
+        "Monthly burn curve",
+        "Site-cost map",
+        "Burden equity heatmap",
+        "Cost-per-participant comparison",
+        "Contingency allocation",
+        "Cash runway timeline"
+      ],
+      "validation_checks": [
+        "Currency is specified",
+        "Inflation is non-negative",
+        "Contingency is explicit",
+        "Participant burden is subgroup-reviewed"
+      ]
+    },
+    "research_feasibility_recruitment": {
+      "profile_digest": "e68d5afa4b25327016d16175aa71db44cb970c5c6b8b6530e83ebbb9d50b8cd2",
+      "feature_count": 36,
+      "feature_groups": {
+        "Traceability": [
+          "Objective-to-output scientific lineage",
+          "Change-impact propagation",
+          "Assumption-to-decision links",
+          "Review and approval history"
+        ],
+        "Comparison": [
+          "Scenario comparison",
+          "Version comparison",
+          "Before-versus-after amendment review",
+          "Selected-record handoff preservation"
+        ],
+        "Quality": [
+          "Module completeness score",
+          "Cross-module consistency checks",
+          "Unresolved blocker queue",
+          "Evidence and limitation status"
+        ],
+        "Export": [
+          "Machine-readable planning manifest",
+          "Underlying visual-data export",
+          "Calculation provenance",
+          "Reproducible review package"
+        ],
+        "Execution": [
+          "Bounded calculation runtime",
+          "Deterministic seed control",
+          "Failure-isolated specialist panels",
+          "Stable recovery identifiers"
+        ],
+        "Collaboration": [
+          "Named scientific owner",
+          "Reviewer decision queue",
+          "Comment and resolution history",
+          "Deadline and escalation metadata"
+        ],
+        "Specialist": [
+          "Probabilistic site activation",
+          "Gamma-Poisson recruitment-rate variation",
+          "Screen-success adjustment",
+          "Retention adjustment",
+          "Site capacity limits",
+          "Monte Carlo completion probability",
+          "P10-P50-P90 recruitment forecast",
+          "Site underperformance probability",
+          "Rescue-trigger generation",
+          "Bayesian recruitment-rate update",
+          "Horizon sensitivity",
+          "Deterministic simulation seed"
+        ]
+      },
+      "signature_visuals": [
+        "Recruitment fan chart",
+        "Completion probability",
+        "Site contribution",
+        "Site underperformance risk",
+        "Bayesian rate update",
+        "Rescue trigger board",
+        "Capacity utilization",
+        "Activation uncertainty"
+      ],
+      "validation_checks": [
+        "Site names are unique",
+        "Rates and capacities are non-negative",
+        "Retention is a probability",
+        "Completion uncertainty is reported"
+      ]
+    },
+    "research_planning_command_center": {
+      "profile_digest": "167b177ea80ad3ec7b27600d2bca909be61521deb2cfdfa0ba8456e6e6f5d355",
+      "feature_count": 32,
+      "feature_groups": {
+        "Traceability": [
+          "Objective-to-output scientific lineage",
+          "Change-impact propagation",
+          "Assumption-to-decision links",
+          "Review and approval history"
+        ],
+        "Comparison": [
+          "Scenario comparison",
+          "Version comparison",
+          "Before-versus-after amendment review",
+          "Selected-record handoff preservation"
+        ],
+        "Quality": [
+          "Module completeness score",
+          "Cross-module consistency checks",
+          "Unresolved blocker queue",
+          "Evidence and limitation status"
+        ],
+        "Export": [
+          "Machine-readable planning manifest",
+          "Underlying visual-data export",
+          "Calculation provenance",
+          "Reproducible review package"
+        ],
+        "Execution": [
+          "Bounded calculation runtime",
+          "Deterministic seed control",
+          "Failure-isolated specialist panels",
+          "Stable recovery identifiers"
+        ],
+        "Collaboration": [
+          "Named scientific owner",
+          "Reviewer decision queue",
+          "Comment and resolution history",
+          "Deadline and escalation metadata"
+        ],
+        "Specialist": [
+          "Multi-study portfolio readiness",
+          "Weighted readiness policies",
+          "Approval and review deadline tracker",
+          "Unresolved assumption inbox",
+          "Amendment impact inbox",
+          "Cross-project comparison",
+          "Orphan planning-object detection",
+          "Portfolio-level dependency risk"
+        ]
+      },
+      "signature_visuals": [
+        "Portfolio readiness matrix",
+        "Digital-thread network",
+        "Blocker flow",
+        "Assumption aging",
+        "Approval calendar",
+        "Cross-study comparison",
+        "Dependency risk network",
+        "Readiness trend"
+      ],
+      "validation_checks": [
+        "Every study has an owner",
+        "Weights sum to one",
+        "Critical blockers are surfaced",
+        "Orphan objects are reported"
+      ]
+    },
+    "research_risk_mitigation": {
+      "profile_digest": "de0371e82d155b8a8b4229c092e3f60a9bb3aebc1a0909f56ea739a375ec95e5",
+      "feature_count": 36,
+      "feature_groups": {
+        "Traceability": [
+          "Objective-to-output scientific lineage",
+          "Change-impact propagation",
+          "Assumption-to-decision links",
+          "Review and approval history"
+        ],
+        "Comparison": [
+          "Scenario comparison",
+          "Version comparison",
+          "Before-versus-after amendment review",
+          "Selected-record handoff preservation"
+        ],
+        "Quality": [
+          "Module completeness score",
+          "Cross-module consistency checks",
+          "Unresolved blocker queue",
+          "Evidence and limitation status"
+        ],
+        "Export": [
+          "Machine-readable planning manifest",
+          "Underlying visual-data export",
+          "Calculation provenance",
+          "Reproducible review package"
+        ],
+        "Execution": [
+          "Bounded calculation runtime",
+          "Deterministic seed control",
+          "Failure-isolated specialist panels",
+          "Stable recovery identifiers"
+        ],
+        "Collaboration": [
+          "Named scientific owner",
+          "Reviewer decision queue",
+          "Comment and resolution history",
+          "Deadline and escalation metadata"
+        ],
+        "Specialist": [
+          "FMEA probability-impact-detectability scoring",
+          "Gross RPN",
+          "Control-effectiveness adjustment",
+          "Residual RPN",
+          "KRI traffic-light classification",
+          "Risk owner validation",
+          "Bow-tie threat-control-consequence links",
+          "Monte Carlo occurrence simulation",
+          "Financial exposure distribution",
+          "Schedule-delay distribution",
+          "Category aggregation",
+          "Residual-risk escalation"
+        ]
+      },
+      "signature_visuals": [
+        "Gross-versus-residual risk",
+        "FMEA matrix",
+        "Financial exposure distribution",
+        "Schedule-delay distribution",
+        "Category control effectiveness",
+        "Bow-tie network",
+        "KRI board",
+        "Residual-risk waterfall"
+      ],
+      "validation_checks": [
+        "Scores are within 1-5",
+        "Control effectiveness is a probability",
+        "Every risk has an owner",
+        "Residual high risks are surfaced"
+      ]
+    },
+    "research_timeline_dependencies": {
+      "profile_digest": "7c66d2f07ceee1ee3112feebd7b5ebfca05ea4ffeca4c89f2011c245521a2533",
+      "feature_count": 36,
+      "feature_groups": {
+        "Traceability": [
+          "Objective-to-output scientific lineage",
+          "Change-impact propagation",
+          "Assumption-to-decision links",
+          "Review and approval history"
+        ],
+        "Comparison": [
+          "Scenario comparison",
+          "Version comparison",
+          "Before-versus-after amendment review",
+          "Selected-record handoff preservation"
+        ],
+        "Quality": [
+          "Module completeness score",
+          "Cross-module consistency checks",
+          "Unresolved blocker queue",
+          "Evidence and limitation status"
+        ],
+        "Export": [
+          "Machine-readable planning manifest",
+          "Underlying visual-data export",
+          "Calculation provenance",
+          "Reproducible review package"
+        ],
+        "Execution": [
+          "Bounded calculation runtime",
+          "Deterministic seed control",
+          "Failure-isolated specialist panels",
+          "Stable recovery identifiers"
+        ],
+        "Collaboration": [
+          "Named scientific owner",
+          "Reviewer decision queue",
+          "Comment and resolution history",
+          "Deadline and escalation metadata"
+        ],
+        "Specialist": [
+          "PERT three-point durations",
+          "Dependency cycle detection",
+          "Unknown predecessor rejection",
+          "Critical path calculation",
+          "Task slack calculation",
+          "Beta-PERT duration sampling",
+          "Monte Carlo project duration",
+          "Task criticality index",
+          "P50 and P90 finish dates",
+          "Resource-load aggregation",
+          "Schedule-risk warning",
+          "Deterministic simulation seed"
+        ]
+      },
+      "signature_visuals": [
+        "Probabilistic Gantt",
+        "Project duration distribution",
+        "Task criticality index",
+        "Resource-load chart",
+        "Slack comparison",
+        "P50-P90 milestone view",
+        "Dependency network",
+        "Delay propagation"
+      ],
+      "validation_checks": [
+        "Dependencies are acyclic",
+        "PERT durations are ordered",
+        "Task names are unique",
+        "Schedule uncertainty is quantified"
+      ]
+    },
+    "sample_size_power_studio": {
+      "profile_digest": "2949cb2f0494dc30abed37061b22568453309bd7a19a5edbba30c47e5aa43845",
+      "feature_count": 36,
+      "feature_groups": {
+        "Traceability": [
+          "Objective-to-output scientific lineage",
+          "Change-impact propagation",
+          "Assumption-to-decision links",
+          "Review and approval history"
+        ],
+        "Comparison": [
+          "Scenario comparison",
+          "Version comparison",
+          "Before-versus-after amendment review",
+          "Selected-record handoff preservation"
+        ],
+        "Quality": [
+          "Module completeness score",
+          "Cross-module consistency checks",
+          "Unresolved blocker queue",
+          "Evidence and limitation status"
+        ],
+        "Export": [
+          "Machine-readable planning manifest",
+          "Underlying visual-data export",
+          "Calculation provenance",
+          "Reproducible review package"
+        ],
+        "Execution": [
+          "Bounded calculation runtime",
+          "Deterministic seed control",
+          "Failure-isolated specialist panels",
+          "Stable recovery identifiers"
+        ],
+        "Collaboration": [
+          "Named scientific owner",
+          "Reviewer decision queue",
+          "Comment and resolution history",
+          "Deadline and escalation metadata"
+        ],
+        "Specialist": [
+          "Bayesian assurance simulation",
+          "Conditional-power uncertainty",
+          "OBrien-Fleming alpha spending",
+          "Pocock alpha spending",
+          "Group-sequential operating characteristics",
+          "Type-I error simulation",
+          "Expected sample size under early stopping",
+          "Cluster-size imbalance adjustment",
+          "Stepped-wedge covariance planning",
+          "ICC sensitivity",
+          "Independent calculation manifest",
+          "Simulation convergence and deterministic seed"
+        ]
+      },
+      "signature_visuals": [
+        "Assurance curve",
+        "Conditional-power interval",
+        "Interim efficacy boundary",
+        "Type-I error and power",
+        "Stopping-look probability",
+        "ICC design-effect surface",
+        "Stepped-wedge precision",
+        "Simulation convergence"
+      ],
+      "validation_checks": [
+        "Alpha is valid",
+        "Simulation count is bounded",
+        "Type-I error is reported",
+        "Complex-design assumptions are explicit"
+      ]
+    },
+    "sampling_biospecimen_planning": {
+      "profile_digest": "c6d267192b443e5c53925d582ae00b95c0a61a77c29c1443c32c415f533862c3",
+      "feature_count": 36,
+      "feature_groups": {
+        "Traceability": [
+          "Objective-to-output scientific lineage",
+          "Change-impact propagation",
+          "Assumption-to-decision links",
+          "Review and approval history"
+        ],
+        "Comparison": [
+          "Scenario comparison",
+          "Version comparison",
+          "Before-versus-after amendment review",
+          "Selected-record handoff preservation"
+        ],
+        "Quality": [
+          "Module completeness score",
+          "Cross-module consistency checks",
+          "Unresolved blocker queue",
+          "Evidence and limitation status"
+        ],
+        "Export": [
+          "Machine-readable planning manifest",
+          "Underlying visual-data export",
+          "Calculation provenance",
+          "Reproducible review package"
+        ],
+        "Execution": [
+          "Bounded calculation runtime",
+          "Deterministic seed control",
+          "Failure-isolated specialist panels",
+          "Stable recovery identifiers"
+        ],
+        "Collaboration": [
+          "Named scientific owner",
+          "Reviewer decision queue",
+          "Comment and resolution history",
+          "Deadline and escalation metadata"
+        ],
+        "Specialist": [
+          "Deterministic specimen barcodes",
+          "Parent-child aliquot lineage",
+          "Volume-consumption planning",
+          "Reserve-volume policy",
+          "Sample exhaustion warning",
+          "Storage-demand aggregation",
+          "Chain-of-custody event contract",
+          "Temperature logger ingestion",
+          "Excursion detection",
+          "Freeze-temperature severity",
+          "Inventory checksum manifest",
+          "Bounded inventory generation"
+        ]
+      },
+      "signature_visuals": [
+        "Specimen lineage tree",
+        "Storage-demand chart",
+        "Volume sufficiency",
+        "Custody timeline",
+        "Temperature trace",
+        "Excursion table",
+        "Sample availability",
+        "Aliquot status distribution"
+      ],
+      "validation_checks": [
+        "Collection volumes are positive",
+        "Aliquot limits are bounded",
+        "Assay plus reserve volume is checked",
+        "Temperature thresholds are explicit"
+      ]
+    },
+    "statistical_analysis_plan": {
+      "profile_digest": "90ba5902573e7be25f6ba3b4c8647aabb772db670dc99fcb128027ff45fa7adc",
+      "feature_count": 36,
+      "feature_groups": {
+        "Traceability": [
+          "Objective-to-output scientific lineage",
+          "Change-impact propagation",
+          "Assumption-to-decision links",
+          "Review and approval history"
+        ],
+        "Comparison": [
+          "Scenario comparison",
+          "Version comparison",
+          "Before-versus-after amendment review",
+          "Selected-record handoff preservation"
+        ],
+        "Quality": [
+          "Module completeness score",
+          "Cross-module consistency checks",
+          "Unresolved blocker queue",
+          "Evidence and limitation status"
+        ],
+        "Export": [
+          "Machine-readable planning manifest",
+          "Underlying visual-data export",
+          "Calculation provenance",
+          "Reproducible review package"
+        ],
+        "Execution": [
+          "Bounded calculation runtime",
+          "Deterministic seed control",
+          "Failure-isolated specialist panels",
+          "Stable recovery identifiers"
+        ],
+        "Collaboration": [
+          "Named scientific owner",
+          "Reviewer decision queue",
+          "Comment and resolution history",
+          "Deadline and escalation metadata"
+        ],
+        "Specialist": [
+          "TFL shell builder",
+          "ADaM specification editor",
+          "Mock-data dry run",
+          "Analysis-code skeleton generation",
+          "Tipping-point analysis plan",
+          "Interim-analysis rules",
+          "Derived-variable catalogue",
+          "Endpoint-to-estimand mapping",
+          "Multiplicity graph",
+          "Analysis population rules",
+          "Dataset-variable lineage",
+          "Output production roadmap"
+        ]
+      },
+      "signature_visuals": [
+        "Endpoint-estimand-model flow",
+        "Multiplicity graph",
+        "Population overlap",
+        "Mock TFL gallery",
+        "Variable lineage",
+        "Sensitivity grid",
+        "Output roadmap",
+        "Analysis readiness matrix"
+      ],
+      "validation_checks": [
+        "Every primary endpoint has a model",
+        "Estimand IDs are present",
+        "Multiplicity is specified",
+        "TFL outputs have source datasets"
+      ]
+    },
+    "study_protocol_designer": {
+      "profile_digest": "8b7a67cabc24ebdb4c8dbe05a8c41f814cccaec2e86efe7a81bb85f6d6bef530",
+      "feature_count": 36,
+      "feature_groups": {
+        "Traceability": [
+          "Objective-to-output scientific lineage",
+          "Change-impact propagation",
+          "Assumption-to-decision links",
+          "Review and approval history"
+        ],
+        "Comparison": [
+          "Scenario comparison",
+          "Version comparison",
+          "Before-versus-after amendment review",
+          "Selected-record handoff preservation"
+        ],
+        "Quality": [
+          "Module completeness score",
+          "Cross-module consistency checks",
+          "Unresolved blocker queue",
+          "Evidence and limitation status"
+        ],
+        "Export": [
+          "Machine-readable planning manifest",
+          "Underlying visual-data export",
+          "Calculation provenance",
+          "Reproducible review package"
+        ],
+        "Execution": [
+          "Bounded calculation runtime",
+          "Deterministic seed control",
+          "Failure-isolated specialist panels",
+          "Stable recovery identifiers"
+        ],
+        "Collaboration": [
+          "Named scientific owner",
+          "Reviewer decision queue",
+          "Comment and resolution history",
+          "Deadline and escalation metadata"
+        ],
+        "Specialist": [
+          "Collaborative protocol section editor",
+          "Reusable protocol section library",
+          "Protocol synopsis generator",
+          "Schedule-of-activities editor",
+          "Country and site appendices",
+          "Protocol deviation dictionary",
+          "Approval workflow",
+          "Amendment redline",
+          "Section dependency validation",
+          "Participant journey builder",
+          "Critical-to-quality ownership",
+          "Review-progress tracking"
+        ]
+      },
+      "signature_visuals": [
+        "Schedule-of-activities matrix",
+        "Amendment redline",
+        "Section dependency graph",
+        "Participant journey",
+        "Review progress",
+        "Critical-to-quality map",
+        "Protocol completeness",
+        "Approval timeline"
+      ],
+      "validation_checks": [
+        "Primary objective is defined",
+        "Primary endpoint is linked",
+        "Schedule is internally consistent",
+        "Amendments are impact-assessed"
+      ]
+    },
+    "synthetic_cohort_trial": {
+      "profile_digest": "4c0557cc814ff1b1c1fc4ee58308286578d5a73db94ea3c5197dd5d32d141807",
+      "feature_count": 36,
+      "feature_groups": {
+        "Traceability": [
+          "Objective-to-output scientific lineage",
+          "Change-impact propagation",
+          "Assumption-to-decision links",
+          "Review and approval history"
+        ],
+        "Comparison": [
+          "Scenario comparison",
+          "Version comparison",
+          "Before-versus-after amendment review",
+          "Selected-record handoff preservation"
+        ],
+        "Quality": [
+          "Module completeness score",
+          "Cross-module consistency checks",
+          "Unresolved blocker queue",
+          "Evidence and limitation status"
+        ],
+        "Export": [
+          "Machine-readable planning manifest",
+          "Underlying visual-data export",
+          "Calculation provenance",
+          "Reproducible review package"
+        ],
+        "Execution": [
+          "Bounded calculation runtime",
+          "Deterministic seed control",
+          "Failure-isolated specialist panels",
+          "Stable recovery identifiers"
+        ],
+        "Collaboration": [
+          "Named scientific owner",
+          "Reviewer decision queue",
+          "Comment and resolution history",
+          "Deadline and escalation metadata"
+        ],
+        "Specialist": [
+          "Correlated synthetic variables",
+          "Longitudinal digital participants",
+          "Time-to-event outcomes",
+          "MNAR dropout",
+          "Treatment adherence",
+          "Protocol deviations",
+          "Site heterogeneity",
+          "Real-cohort calibration",
+          "Privacy attack screening",
+          "Distribution preservation",
+          "Treatment-effect recovery",
+          "Scenario-specific random seeds"
+        ]
+      },
+      "signature_visuals": [
+        "Real-versus-synthetic comparison",
+        "Privacy-utility frontier",
+        "Trajectory fan",
+        "Missingness mechanism",
+        "Effect recovery",
+        "Site heterogeneity",
+        "Correlation preservation",
+        "Disclosure-risk distribution"
+      ],
+      "validation_checks": [
+        "Synthetic labels are explicit",
+        "No direct identifiers are exported",
+        "Utility is measured",
+        "Disclosure risk is reported"
+      ]
+    }
+  },
+  "step141_modules": [
+    {
+      "key": "study_protocol_designer",
+      "title": "Study Protocol Designer",
+      "features": [
+        "Research question builder",
+        "Primary and secondary objectives",
+        "Inclusion and exclusion criteria",
+        "Endpoint definitions",
+        "Visit and sampling schedule",
+        "Control and blinding plan",
+        "Deviation handling",
+        "Amendment history",
+        "Protocol completeness scoring",
+        "DOCX/PDF-ready structured manifest"
+      ],
+      "visuals": [
+        {
+          "key": "protocol_completion",
+          "title": "Protocol completeness by section",
+          "source": "primary",
+          "kind": "bar",
+          "x": "section",
+          "y": "completeness",
+          "color": "status",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "protocol_risk",
+          "title": "Section risk and readiness",
+          "source": "primary",
+          "kind": "scatter",
+          "x": "completeness",
+          "y": "risk",
+          "color": "status",
+          "size": "due_day",
+          "description": ""
+        },
+        {
+          "key": "protocol_timeline",
+          "title": "Protocol development timeline",
+          "source": "timeline",
+          "kind": "timeline",
+          "x": "start_day",
+          "y": "end_day",
+          "color": "owner",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "protocol_status",
+          "title": "Review status distribution",
+          "source": "primary",
+          "kind": "donut",
+          "x": "status",
+          "y": null,
+          "color": null,
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "protocol_heatmap",
+          "title": "Section \u00d7 requirement readiness",
+          "source": "matrix",
+          "kind": "heatmap",
+          "x": "requirement",
+          "y": "section",
+          "color": null,
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "protocol_owner",
+          "title": "Owner workload",
+          "source": "primary",
+          "kind": "bar",
+          "x": "owner",
+          "y": "due_day",
+          "color": "status",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "protocol_funnel",
+          "title": "Protocol readiness funnel",
+          "source": "funnel",
+          "kind": "funnel",
+          "x": "stage",
+          "y": "records",
+          "color": null,
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "protocol_radar",
+          "title": "Protocol quality dimensions",
+          "source": "quality",
+          "kind": "radar",
+          "x": "dimension",
+          "y": "score",
+          "color": null,
+          "size": null,
+          "description": ""
+        }
+      ],
+      "handoffs": [
+        "Biostatistics, Power & Experimental Design Studio",
+        "Statistical Analysis Plan Studio",
+        "Pre-Registration & Reproducibility Studio"
+      ]
+    },
+    {
+      "key": "sample_size_power_studio",
+      "title": "Sample Size & Statistical Power Studio",
+      "features": [
+        "Continuous, binary, count and survival outcomes",
+        "Superiority, non-inferiority and equivalence",
+        "Paired and unpaired designs",
+        "Cluster and repeated-measures designs",
+        "Dropout inflation",
+        "Multiplicity adjustment",
+        "Precision-based sample size",
+        "Simulation-based power",
+        "Scenario comparison",
+        "Assumption provenance"
+      ],
+      "visuals": [
+        {
+          "key": "power_curve",
+          "title": "Power curve across sample sizes",
+          "source": "sensitivity",
+          "kind": "line",
+          "x": "total_sample_size",
+          "y": "achieved_power",
+          "color": "scenario",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "sample_size",
+          "title": "Required recruitment by scenario",
+          "source": "primary",
+          "kind": "bar",
+          "x": "scenario",
+          "y": "total_sample_size",
+          "color": "design",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "effect_heatmap",
+          "title": "Effect size \u00d7 power sensitivity",
+          "source": "grid",
+          "kind": "heatmap",
+          "x": "target_power",
+          "y": "effect_size",
+          "color": null,
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "dropout",
+          "title": "Dropout impact on recruitment",
+          "source": "dropout",
+          "kind": "line",
+          "x": "dropout",
+          "y": "total_sample_size",
+          "color": "scenario",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "allocation",
+          "title": "Allocation ratio sensitivity",
+          "source": "allocation",
+          "kind": "line",
+          "x": "allocation_ratio",
+          "y": "total_sample_size",
+          "color": "scenario",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "precision",
+          "title": "Precision versus sample size",
+          "source": "precision",
+          "kind": "line",
+          "x": "sample_size",
+          "y": "ci_half_width",
+          "color": "scenario",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "scenario_parallel",
+          "title": "Assumption trade-off landscape",
+          "source": "primary",
+          "kind": "parallel",
+          "x": null,
+          "y": null,
+          "color": "design",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "assumption_radar",
+          "title": "Scenario assumption quality",
+          "source": "quality",
+          "kind": "radar",
+          "x": "dimension",
+          "y": "score",
+          "color": null,
+          "size": null,
+          "description": ""
+        }
+      ],
+      "handoffs": [
+        "Study Protocol Designer",
+        "Clinical Trial Design Studio",
+        "Statistical Analysis Plan Studio"
+      ]
+    },
+    {
+      "key": "clinical_trial_design_studio",
+      "title": "Clinical Trial Design Studio",
+      "features": [
+        "Phase I\u2013IV templates",
+        "Parallel, crossover and factorial design",
+        "Dose escalation",
+        "Adaptive design",
+        "Randomisation and stratification",
+        "Interim analysis",
+        "Stopping boundaries",
+        "Endpoint hierarchy",
+        "Safety monitoring",
+        "Site and country planning",
+        "Recruitment assumptions",
+        "Trial milestones"
+      ],
+      "visuals": [
+        {
+          "key": "trial_schema",
+          "title": "Trial arm and cohort schema",
+          "source": "primary",
+          "kind": "sunburst",
+          "x": "arm",
+          "y": "cohort",
+          "color": "participants",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "recruitment",
+          "title": "Recruitment forecast",
+          "source": "recruitment",
+          "kind": "line",
+          "x": "month",
+          "y": "cumulative_enrolled",
+          "color": "arm",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "cohort_flow",
+          "title": "Participant flow",
+          "source": "funnel",
+          "kind": "funnel",
+          "x": "stage",
+          "y": "participants",
+          "color": null,
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "dose_ladder",
+          "title": "Dose-escalation ladder",
+          "source": "primary",
+          "kind": "bar",
+          "x": "cohort",
+          "y": "participants",
+          "color": "arm",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "interim",
+          "title": "Interim decision boundaries",
+          "source": "interim",
+          "kind": "line",
+          "x": "information_fraction",
+          "y": "boundary",
+          "color": "decision",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "dropout",
+          "title": "Expected dropout by arm",
+          "source": "primary",
+          "kind": "bar",
+          "x": "arm",
+          "y": "dropout_rate",
+          "color": "cohort",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "timeline",
+          "title": "Trial milestone timeline",
+          "source": "timeline",
+          "kind": "timeline",
+          "x": "start_day",
+          "y": "end_day",
+          "color": "arm",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "trial_radar",
+          "title": "Trial design readiness",
+          "source": "quality",
+          "kind": "radar",
+          "x": "dimension",
+          "y": "score",
+          "color": null,
+          "size": null,
+          "description": ""
+        }
+      ],
+      "handoffs": [
+        "Sample Size & Statistical Power Studio",
+        "Randomization, Blinding & Allocation Studio",
+        "Synthetic Cohort & Trial Simulation Lab"
+      ]
+    },
+    {
+      "key": "experimental_design_doe",
+      "title": "Experimental Design & DoE Workbench",
+      "features": [
+        "Full and fractional factorial designs",
+        "Response-surface methodology",
+        "Central composite design",
+        "Box\u2013Behnken design",
+        "Screening designs",
+        "Blocking and randomisation",
+        "Replicate allocation",
+        "Confounding analysis",
+        "Design efficiency",
+        "Optimal design",
+        "Interaction estimation",
+        "Response optimisation"
+      ],
+      "visuals": [
+        {
+          "key": "design_matrix",
+          "title": "Design matrix",
+          "source": "primary",
+          "kind": "heatmap",
+          "x": "factor",
+          "y": "run",
+          "color": null,
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "effects",
+          "title": "Standardised factor effects",
+          "source": "effects",
+          "kind": "bar",
+          "x": "term",
+          "y": "effect",
+          "color": "sign",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "pareto",
+          "title": "Pareto chart of effects",
+          "source": "effects",
+          "kind": "bar",
+          "x": "term",
+          "y": "abs_effect",
+          "color": "sign",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "interaction",
+          "title": "Factor interaction map",
+          "source": "interaction",
+          "kind": "heatmap",
+          "x": "factor_2",
+          "y": "factor_1",
+          "color": null,
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "surface",
+          "title": "Response surface",
+          "source": "surface",
+          "kind": "contour",
+          "x": "factor_a",
+          "y": "factor_b",
+          "color": null,
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "predicted",
+          "title": "Observed versus predicted response",
+          "source": "predictions",
+          "kind": "scatter",
+          "x": "predicted",
+          "y": "observed",
+          "color": "run",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "residuals",
+          "title": "Residual diagnostics",
+          "source": "predictions",
+          "kind": "scatter",
+          "x": "predicted",
+          "y": "residual",
+          "color": "run",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "design_radar",
+          "title": "Design quality dimensions",
+          "source": "quality",
+          "kind": "radar",
+          "x": "dimension",
+          "y": "score",
+          "color": null,
+          "size": null,
+          "description": ""
+        }
+      ],
+      "handoffs": [
+        "Biostatistics, Power & Experimental Design Studio",
+        "Sampling & Biospecimen Planning Studio",
+        "Research Timeline, Milestones & Dependencies Studio"
+      ]
+    },
+    {
+      "key": "randomization_blinding_allocation",
+      "title": "Randomization, Blinding & Allocation Studio",
+      "features": [
+        "Simple randomisation",
+        "Variable block randomisation",
+        "Stratified randomisation",
+        "Cluster allocation",
+        "Unequal ratios",
+        "Concealed allocation",
+        "Secure seed generation",
+        "Emergency unblinding",
+        "Re-randomisation controls",
+        "Treatment-code generation",
+        "Balance audit",
+        "Immutable manifest"
+      ],
+      "visuals": [
+        {
+          "key": "arm_balance",
+          "title": "Allocation balance by arm",
+          "source": "primary",
+          "kind": "bar",
+          "x": "arm",
+          "y": "participants",
+          "color": "site",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "strata",
+          "title": "Stratum \u00d7 arm balance",
+          "source": "matrix",
+          "kind": "heatmap",
+          "x": "arm",
+          "y": "stratum",
+          "color": null,
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "sites",
+          "title": "Site \u00d7 arm balance",
+          "source": "site_matrix",
+          "kind": "heatmap",
+          "x": "arm",
+          "y": "site",
+          "color": null,
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "sequence",
+          "title": "Allocation sequence",
+          "source": "sequence",
+          "kind": "scatter",
+          "x": "sequence",
+          "y": "arm",
+          "color": "stratum",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "blocks",
+          "title": "Block-size distribution",
+          "source": "blocks",
+          "kind": "bar",
+          "x": "block_size",
+          "y": "blocks",
+          "color": "site",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "imbalance",
+          "title": "Cumulative allocation imbalance",
+          "source": "imbalance",
+          "kind": "line",
+          "x": "sequence",
+          "y": "imbalance",
+          "color": "stratum",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "concealment",
+          "title": "Blinding and concealment status",
+          "source": "quality",
+          "kind": "bar",
+          "x": "dimension",
+          "y": "score",
+          "color": null,
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "allocation_radar",
+          "title": "Allocation quality dimensions",
+          "source": "quality",
+          "kind": "radar",
+          "x": "dimension",
+          "y": "score",
+          "color": null,
+          "size": null,
+          "description": ""
+        }
+      ],
+      "handoffs": [
+        "Clinical Trial Design Studio",
+        "Cohort Definition & Eligibility Builder",
+        "Pre-Registration & Reproducibility Studio"
+      ]
+    },
+    {
+      "key": "cohort_eligibility_builder",
+      "title": "Cohort Definition & Eligibility Builder",
+      "features": [
+        "Inclusion and exclusion rule builder",
+        "Demographic criteria",
+        "Disease and phenotype definitions",
+        "Laboratory thresholds",
+        "Medication criteria",
+        "Genomic biomarkers",
+        "Time-window rules",
+        "Missing-data policy",
+        "Cohort overlap detection",
+        "Feasibility estimate",
+        "Rule version history",
+        "Record-level explanation"
+      ],
+      "visuals": [
+        {
+          "key": "cohort_funnel",
+          "title": "Eligibility funnel",
+          "source": "funnel",
+          "kind": "funnel",
+          "x": "stage",
+          "y": "participants",
+          "color": null,
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "exclusions",
+          "title": "Exclusion reasons",
+          "source": "exclusions",
+          "kind": "bar",
+          "x": "exclusion_reason",
+          "y": "participants",
+          "color": null,
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "age",
+          "title": "Age distribution by eligibility",
+          "source": "primary",
+          "kind": "histogram",
+          "x": "age",
+          "y": null,
+          "color": "eligible",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "biomarker",
+          "title": "Biomarker distribution",
+          "source": "primary",
+          "kind": "box",
+          "x": "eligible",
+          "y": "biomarker",
+          "color": "diagnosis",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "rule_impact",
+          "title": "Rule impact",
+          "source": "rules",
+          "kind": "waterfall",
+          "x": "rule",
+          "y": "removed",
+          "color": null,
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "missingness",
+          "title": "Eligibility data missingness",
+          "source": "missingness",
+          "kind": "heatmap",
+          "x": "field",
+          "y": "group",
+          "color": null,
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "overlap",
+          "title": "Eligibility overlap",
+          "source": "overlap",
+          "kind": "upset",
+          "x": "rule",
+          "y": "participants",
+          "color": null,
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "cohort_radar",
+          "title": "Cohort definition quality",
+          "source": "quality",
+          "kind": "radar",
+          "x": "dimension",
+          "y": "score",
+          "color": null,
+          "size": null,
+          "description": ""
+        }
+      ],
+      "handoffs": [
+        "Clinical Trial Design Studio",
+        "Research Feasibility & Recruitment Planner",
+        "Synthetic Cohort & Trial Simulation Lab"
+      ]
+    },
+    {
+      "key": "endpoint_outcome_strategy",
+      "title": "Endpoint & Outcome Strategy Studio",
+      "features": [
+        "Primary, secondary and exploratory endpoints",
+        "Composite endpoints",
+        "Surrogate endpoint review",
+        "Measurement frequency",
+        "Endpoint hierarchy",
+        "Minimal clinically important difference",
+        "Responder definitions",
+        "Competing risks",
+        "Missing endpoint strategy",
+        "Multiplicity control",
+        "Endpoint adjudication",
+        "Estimand alignment"
+      ],
+      "visuals": [
+        {
+          "key": "endpoint_priority",
+          "title": "Endpoint priority ranking",
+          "source": "primary",
+          "kind": "bar",
+          "x": "endpoint",
+          "y": "priority_score",
+          "color": "type",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "burden_validity",
+          "title": "Measurement burden versus validity",
+          "source": "primary",
+          "kind": "scatter",
+          "x": "measurement_burden",
+          "y": "validity_score",
+          "color": "type",
+          "size": "priority_score",
+          "description": ""
+        },
+        {
+          "key": "hierarchy",
+          "title": "Endpoint hierarchy",
+          "source": "hierarchy",
+          "kind": "sunburst",
+          "x": "type",
+          "y": "endpoint",
+          "color": "priority_score",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "missingness",
+          "title": "Missingness risk",
+          "source": "primary",
+          "kind": "bar",
+          "x": "endpoint",
+          "y": "missingness_risk",
+          "color": "type",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "correlation",
+          "title": "Endpoint correlation plan",
+          "source": "matrix",
+          "kind": "heatmap",
+          "x": "endpoint_2",
+          "y": "endpoint_1",
+          "color": null,
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "timeline",
+          "title": "Outcome measurement schedule",
+          "source": "timeline",
+          "kind": "timeline",
+          "x": "start_day",
+          "y": "end_day",
+          "color": "endpoint",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "decision",
+          "title": "Endpoint decision matrix",
+          "source": "decision",
+          "kind": "heatmap",
+          "x": "criterion",
+          "y": "endpoint",
+          "color": null,
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "endpoint_radar",
+          "title": "Endpoint strategy readiness",
+          "source": "quality",
+          "kind": "radar",
+          "x": "dimension",
+          "y": "score",
+          "color": null,
+          "size": null,
+          "description": ""
+        }
+      ],
+      "handoffs": [
+        "Study Protocol Designer",
+        "Biomarker Study Planning Studio",
+        "Statistical Analysis Plan Studio"
+      ]
+    },
+    {
+      "key": "biomarker_study_planning",
+      "title": "Biomarker Study Planning Studio",
+      "features": [
+        "Diagnostic, prognostic and predictive modes",
+        "Discovery and validation cohorts",
+        "Cut-off strategy",
+        "Pre-analytical variables",
+        "Assay requirements",
+        "Batch-effect planning",
+        "Internal and external validation",
+        "Calibration planning",
+        "Subgroup analysis",
+        "Assay qualification",
+        "Locked analysis plan",
+        "Evidence maturity"
+      ],
+      "visuals": [
+        {
+          "key": "development_funnel",
+          "title": "Biomarker development funnel",
+          "source": "funnel",
+          "kind": "funnel",
+          "x": "stage",
+          "y": "biomarkers",
+          "color": null,
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "maturity",
+          "title": "Evidence maturity by biomarker",
+          "source": "primary",
+          "kind": "bar",
+          "x": "biomarker",
+          "y": "maturity_score",
+          "color": "stage",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "assay_evidence",
+          "title": "Assay readiness versus evidence",
+          "source": "primary",
+          "kind": "scatter",
+          "x": "assay_readiness",
+          "y": "evidence",
+          "color": "validation_status",
+          "size": "effect_size",
+          "description": ""
+        },
+        {
+          "key": "cohort_split",
+          "title": "Discovery and validation cohort split",
+          "source": "cohort",
+          "kind": "donut",
+          "x": "cohort",
+          "y": null,
+          "color": null,
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "cutoff",
+          "title": "Cut-off sensitivity",
+          "source": "cutoff",
+          "kind": "line",
+          "x": "threshold",
+          "y": "performance",
+          "color": "metric",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "validation",
+          "title": "Validation status matrix",
+          "source": "matrix",
+          "kind": "heatmap",
+          "x": "validation_stage",
+          "y": "biomarker",
+          "color": null,
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "timeline",
+          "title": "Biomarker validation roadmap",
+          "source": "timeline",
+          "kind": "timeline",
+          "x": "start_day",
+          "y": "end_day",
+          "color": "stage",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "biomarker_radar",
+          "title": "Biomarker plan readiness",
+          "source": "quality",
+          "kind": "radar",
+          "x": "dimension",
+          "y": "score",
+          "color": null,
+          "size": null,
+          "description": ""
+        }
+      ],
+      "handoffs": [
+        "Endpoint & Outcome Strategy Studio",
+        "Clinical Trial Biomarker & Patient Stratification Studio",
+        "Statistical Analysis Plan Studio"
+      ]
+    },
+    {
+      "key": "sampling_biospecimen_planning",
+      "title": "Sampling & Biospecimen Planning Studio",
+      "features": [
+        "Sample type selection",
+        "Collection time points",
+        "Aliquot planning",
+        "Storage conditions",
+        "Freeze\u2013thaw limits",
+        "Shipping plan",
+        "Sample-volume estimation",
+        "Batch and plate allocation",
+        "Chain of custody",
+        "Retention schedule",
+        "Biobank capacity",
+        "Failure contingency"
+      ],
+      "visuals": [
+        {
+          "key": "sampling_calendar",
+          "title": "Sampling calendar",
+          "source": "timeline",
+          "kind": "timeline",
+          "x": "start_day",
+          "y": "end_day",
+          "color": "sample_type",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "volume",
+          "title": "Total volume by specimen",
+          "source": "primary",
+          "kind": "bar",
+          "x": "sample_type",
+          "y": "total_volume_ml",
+          "color": "visit",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "aliquots",
+          "title": "Aliquot demand",
+          "source": "primary",
+          "kind": "bar",
+          "x": "sample_type",
+          "y": "total_aliquots",
+          "color": "storage_temp",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "storage",
+          "title": "Storage capacity by temperature",
+          "source": "storage",
+          "kind": "treemap",
+          "x": "storage_temp",
+          "y": "sample_type",
+          "color": "total_aliquots",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "failure",
+          "title": "Expected sample loss",
+          "source": "primary",
+          "kind": "bar",
+          "x": "sample_type",
+          "y": "expected_failures",
+          "color": "visit",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "journey",
+          "title": "Biospecimen journey",
+          "source": "journey",
+          "kind": "sankey",
+          "x": "from",
+          "y": "to",
+          "color": "samples",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "plate",
+          "title": "Plate and batch allocation",
+          "source": "matrix",
+          "kind": "heatmap",
+          "x": "batch",
+          "y": "sample_type",
+          "color": null,
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "biospecimen_radar",
+          "title": "Biospecimen plan readiness",
+          "source": "quality",
+          "kind": "radar",
+          "x": "dimension",
+          "y": "score",
+          "color": null,
+          "size": null,
+          "description": ""
+        }
+      ],
+      "handoffs": [
+        "Data Collection & CRF Designer",
+        "Lab Instrument Import Center",
+        "Research Timeline, Milestones & Dependencies Studio"
+      ]
+    },
+    {
+      "key": "data_collection_crf_designer",
+      "title": "Data Collection & CRF Designer",
+      "features": [
+        "Case report form builder",
+        "Variable dictionary",
+        "Data types and units",
+        "Required fields",
+        "Validation rules",
+        "Controlled vocabularies",
+        "Repeat visits",
+        "Conditional fields",
+        "Query rules",
+        "Missing-data reasons",
+        "Import/export schema",
+        "Database-ready package"
+      ],
+      "visuals": [
+        {
+          "key": "domain_variables",
+          "title": "Variables by study domain",
+          "source": "primary",
+          "kind": "bar",
+          "x": "domain",
+          "y": "variables",
+          "color": "visit",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "visit_matrix",
+          "title": "Visit \u00d7 domain data collection",
+          "source": "matrix",
+          "kind": "heatmap",
+          "x": "domain",
+          "y": "visit",
+          "color": null,
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "completeness",
+          "title": "Variable specification completeness",
+          "source": "primary",
+          "kind": "bar",
+          "x": "variable",
+          "y": "completeness",
+          "color": "domain",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "types",
+          "title": "Data type distribution",
+          "source": "primary",
+          "kind": "donut",
+          "x": "data_type",
+          "y": null,
+          "color": null,
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "required",
+          "title": "Required versus optional fields",
+          "source": "required",
+          "kind": "bar",
+          "x": "domain",
+          "y": "required_fields",
+          "color": "visit",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "validation",
+          "title": "Validation rule coverage",
+          "source": "validation",
+          "kind": "bar",
+          "x": "domain",
+          "y": "rule_coverage",
+          "color": "visit",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "dependencies",
+          "title": "Conditional field dependencies",
+          "source": "dependencies",
+          "kind": "sankey",
+          "x": "from",
+          "y": "to",
+          "color": "rules",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "crf_radar",
+          "title": "CRF readiness",
+          "source": "quality",
+          "kind": "radar",
+          "x": "dimension",
+          "y": "score",
+          "color": null,
+          "size": null,
+          "description": ""
+        }
+      ],
+      "handoffs": [
+        "Sampling & Biospecimen Planning Studio",
+        "Statistical Analysis Plan Studio",
+        "Dataset Registry & Lineage"
+      ]
+    },
+    {
+      "key": "statistical_analysis_plan",
+      "title": "Statistical Analysis Plan Studio",
+      "features": [
+        "Analysis populations",
+        "Primary and secondary models",
+        "Covariate definition",
+        "Transformation rules",
+        "Missing-data methods",
+        "Multiple-testing correction",
+        "Subgroup analyses",
+        "Sensitivity analyses",
+        "Interim analysis",
+        "Model assumptions",
+        "Table/figure/listing shells",
+        "Version locking"
+      ],
+      "visuals": [
+        {
+          "key": "analysis_status",
+          "title": "Analysis plan status",
+          "source": "primary",
+          "kind": "bar",
+          "x": "analysis",
+          "y": "readiness_score",
+          "color": "status",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "endpoint_model",
+          "title": "Endpoint-to-model matrix",
+          "source": "matrix",
+          "kind": "heatmap",
+          "x": "model",
+          "y": "endpoint",
+          "color": null,
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "population",
+          "title": "Analyses by population",
+          "source": "primary",
+          "kind": "bar",
+          "x": "population",
+          "y": "analyses",
+          "color": "status",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "multiplicity",
+          "title": "Multiplicity strategy",
+          "source": "multiplicity",
+          "kind": "sunburst",
+          "x": "multiplicity",
+          "y": "endpoint",
+          "color": "analyses",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "sensitivity",
+          "title": "Sensitivity analysis coverage",
+          "source": "sensitivity",
+          "kind": "bar",
+          "x": "endpoint",
+          "y": "sensitivity_count",
+          "color": "status",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "assumptions",
+          "title": "Model assumption coverage",
+          "source": "assumptions",
+          "kind": "heatmap",
+          "x": "assumption",
+          "y": "analysis",
+          "color": null,
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "timeline",
+          "title": "SAP review and lock timeline",
+          "source": "timeline",
+          "kind": "timeline",
+          "x": "start_day",
+          "y": "end_day",
+          "color": "status",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "sap_radar",
+          "title": "SAP completeness",
+          "source": "quality",
+          "kind": "radar",
+          "x": "dimension",
+          "y": "score",
+          "color": null,
+          "size": null,
+          "description": ""
+        }
+      ],
+      "handoffs": [
+        "Study Protocol Designer",
+        "Endpoint & Outcome Strategy Studio",
+        "Pre-Registration & Reproducibility Studio"
+      ]
+    },
+    {
+      "key": "research_feasibility_recruitment",
+      "title": "Research Feasibility & Recruitment Planner",
+      "features": [
+        "Eligible population estimation",
+        "Site recruitment rates",
+        "Screen-failure rate",
+        "Dropout assumptions",
+        "Recruitment scenarios",
+        "Competing-study effects",
+        "Seasonality",
+        "Site activation delays",
+        "Rescue strategies",
+        "Timeline estimation",
+        "Cost estimation",
+        "Completion probability"
+      ],
+      "visuals": [
+        {
+          "key": "recruitment",
+          "title": "Cumulative recruitment forecast",
+          "source": "forecast",
+          "kind": "line",
+          "x": "month",
+          "y": "cumulative_enrolled",
+          "color": "scenario",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "site_rank",
+          "title": "Site feasibility ranking",
+          "source": "primary",
+          "kind": "bar",
+          "x": "site",
+          "y": "feasibility_score",
+          "color": "risk_band",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "funnel",
+          "title": "Screening and enrolment funnel",
+          "source": "funnel",
+          "kind": "funnel",
+          "x": "stage",
+          "y": "participants",
+          "color": null,
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "completion",
+          "title": "Study completion probability",
+          "source": "simulation",
+          "kind": "line",
+          "x": "month",
+          "y": "completion_probability",
+          "color": "scenario",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "cost",
+          "title": "Cost versus enrolment",
+          "source": "primary",
+          "kind": "scatter",
+          "x": "projected_enrolment",
+          "y": "projected_cost",
+          "color": "risk_band",
+          "size": "eligible_pool",
+          "description": ""
+        },
+        {
+          "key": "startup",
+          "title": "Site activation delays",
+          "source": "primary",
+          "kind": "bar",
+          "x": "site",
+          "y": "startup_months",
+          "color": "risk_band",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "fan",
+          "title": "Recruitment uncertainty fan",
+          "source": "fan",
+          "kind": "area",
+          "x": "month",
+          "y": "median_enrolled",
+          "color": "scenario",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "feasibility_radar",
+          "title": "Feasibility dimensions",
+          "source": "quality",
+          "kind": "radar",
+          "x": "dimension",
+          "y": "score",
+          "color": null,
+          "size": null,
+          "description": ""
+        }
+      ],
+      "handoffs": [
+        "Cohort Definition & Eligibility Builder",
+        "Clinical Trial Design Studio",
+        "Research Timeline, Milestones & Dependencies Studio"
+      ]
+    },
+    {
+      "key": "research_timeline_dependencies",
+      "title": "Research Timeline, Milestones & Dependencies Studio",
+      "features": [
+        "Study phases",
+        "Milestones",
+        "Task dependencies",
+        "Critical path",
+        "Resource assignment",
+        "Approval dependencies",
+        "Sample/data availability",
+        "Risk-adjusted timeline",
+        "Delay simulation",
+        "Baseline versions",
+        "Planned-vs-actual",
+        "Resource conflicts"
+      ],
+      "visuals": [
+        {
+          "key": "gantt",
+          "title": "Research programme Gantt",
+          "source": "timeline",
+          "kind": "timeline",
+          "x": "start_day",
+          "y": "end_day",
+          "color": "phase",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "critical",
+          "title": "Critical path tasks",
+          "source": "primary",
+          "kind": "bar",
+          "x": "task",
+          "y": "duration_days",
+          "color": "critical",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "dependencies",
+          "title": "Task dependency network",
+          "source": "dependencies",
+          "kind": "sankey",
+          "x": "from",
+          "y": "to",
+          "color": "duration_days",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "progress",
+          "title": "Planned versus actual progress",
+          "source": "primary",
+          "kind": "bar",
+          "x": "task",
+          "y": "progress",
+          "color": "phase",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "resource",
+          "title": "Owner workload",
+          "source": "resource",
+          "kind": "bar",
+          "x": "owner",
+          "y": "workload_days",
+          "color": "phase",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "risk",
+          "title": "Delay risk heatmap",
+          "source": "risk_matrix",
+          "kind": "heatmap",
+          "x": "phase",
+          "y": "owner",
+          "color": null,
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "milestones",
+          "title": "Milestone timeline",
+          "source": "milestones",
+          "kind": "scatter",
+          "x": "day",
+          "y": "milestone",
+          "color": "status",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "timeline_radar",
+          "title": "Schedule readiness",
+          "source": "quality",
+          "kind": "radar",
+          "x": "dimension",
+          "y": "score",
+          "color": null,
+          "size": null,
+          "description": ""
+        }
+      ],
+      "handoffs": [
+        "Study Protocol Designer",
+        "Research Risk & Mitigation Planner",
+        "Project Portfolio"
+      ]
+    },
+    {
+      "key": "research_risk_mitigation",
+      "title": "Research Risk & Mitigation Planner",
+      "features": [
+        "Scientific risks",
+        "Recruitment risks",
+        "Assay risks",
+        "Data-quality risks",
+        "Operational risks",
+        "Statistical risks",
+        "Probability and impact",
+        "Mitigation ownership",
+        "Trigger thresholds",
+        "Contingency actions",
+        "Residual risk",
+        "Review history"
+      ],
+      "visuals": [
+        {
+          "key": "risk_matrix",
+          "title": "Probability \u00d7 impact risk matrix",
+          "source": "primary",
+          "kind": "scatter",
+          "x": "probability",
+          "y": "impact",
+          "color": "category",
+          "size": "risk_score",
+          "description": ""
+        },
+        {
+          "key": "priority",
+          "title": "Top research risks",
+          "source": "primary",
+          "kind": "bar",
+          "x": "risk",
+          "y": "risk_score",
+          "color": "category",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "residual",
+          "title": "Residual risk after mitigation",
+          "source": "primary",
+          "kind": "bar",
+          "x": "risk",
+          "y": "residual_score",
+          "color": "mitigation_status",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "category",
+          "title": "Risk exposure by category",
+          "source": "category",
+          "kind": "bar",
+          "x": "category",
+          "y": "total_risk",
+          "color": "mitigation_status",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "mitigation",
+          "title": "Mitigation status",
+          "source": "primary",
+          "kind": "donut",
+          "x": "mitigation_status",
+          "y": null,
+          "color": null,
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "owner",
+          "title": "Risk ownership",
+          "source": "owner",
+          "kind": "bar",
+          "x": "owner",
+          "y": "open_risks",
+          "color": "category",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "bowtie",
+          "title": "Risk-to-control pathways",
+          "source": "controls",
+          "kind": "sankey",
+          "x": "from",
+          "y": "to",
+          "color": "weight",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "risk_radar",
+          "title": "Risk management readiness",
+          "source": "quality",
+          "kind": "radar",
+          "x": "dimension",
+          "y": "score",
+          "color": null,
+          "size": null,
+          "description": ""
+        }
+      ],
+      "handoffs": [
+        "Research Timeline, Milestones & Dependencies Studio",
+        "Study Protocol Designer",
+        "Activity & Risk Center"
+      ]
+    },
+    {
+      "key": "evidence_gap_literature_planning",
+      "title": "Evidence Gap & Literature Planning Studio",
+      "features": [
+        "Research question decomposition",
+        "PICO/PECO framework",
+        "Evidence inventory",
+        "Contradictory findings",
+        "Evidence quality",
+        "Missing populations",
+        "Missing endpoints",
+        "Knowledge-gap ranking",
+        "Search strategy",
+        "Study justification",
+        "Citation-backed rationale",
+        "Research priority scoring"
+      ],
+      "visuals": [
+        {
+          "key": "gap_priority",
+          "title": "Research gap priority",
+          "source": "primary",
+          "kind": "bar",
+          "x": "question",
+          "y": "priority_score",
+          "color": "quality",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "evidence_pyramid",
+          "title": "Evidence quality pyramid",
+          "source": "quality_counts",
+          "kind": "funnel",
+          "x": "quality",
+          "y": "records",
+          "color": null,
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "gap_matrix",
+          "title": "Population \u00d7 outcome evidence gaps",
+          "source": "matrix",
+          "kind": "heatmap",
+          "x": "outcome",
+          "y": "population",
+          "color": null,
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "contradiction",
+          "title": "Contradiction versus evidence volume",
+          "source": "primary",
+          "kind": "scatter",
+          "x": "evidence_count",
+          "y": "contradiction",
+          "color": "quality",
+          "size": "priority_score",
+          "description": ""
+        },
+        {
+          "key": "pico",
+          "title": "PICO/PECO evidence map",
+          "source": "pico",
+          "kind": "sankey",
+          "x": "from",
+          "y": "to",
+          "color": "evidence_count",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "coverage",
+          "title": "Evidence coverage by domain",
+          "source": "coverage",
+          "kind": "bar",
+          "x": "domain",
+          "y": "coverage_score",
+          "color": "quality",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "timeline",
+          "title": "Evidence publication timeline",
+          "source": "timeline",
+          "kind": "line",
+          "x": "year",
+          "y": "records",
+          "color": "quality",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "evidence_radar",
+          "title": "Evidence planning readiness",
+          "source": "quality",
+          "kind": "radar",
+          "x": "dimension",
+          "y": "score",
+          "color": null,
+          "size": null,
+          "description": ""
+        }
+      ],
+      "handoffs": [
+        "Study Protocol Designer",
+        "Internet Research Hub",
+        "Pre-Registration & Reproducibility Studio"
+      ]
+    },
+    {
+      "key": "preregistration_reproducibility",
+      "title": "Pre-Registration & Reproducibility Studio",
+      "features": [
+        "Hypothesis locking",
+        "Primary endpoint locking",
+        "Sample-size justification",
+        "Exclusion rules",
+        "Analysis-plan locking",
+        "Random seed capture",
+        "Protocol checksum",
+        "Deviation tracking",
+        "Registry-ready export",
+        "Registered-report checklist",
+        "Reproducibility manifest",
+        "Planned-vs-executed comparison"
+      ],
+      "visuals": [
+        {
+          "key": "lock_status",
+          "title": "Preregistration lock status",
+          "source": "primary",
+          "kind": "bar",
+          "x": "section",
+          "y": "locked_items",
+          "color": "status",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "completeness",
+          "title": "Preregistration completeness",
+          "source": "primary",
+          "kind": "bar",
+          "x": "item",
+          "y": "completeness",
+          "color": "section",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "deviations",
+          "title": "Deviation severity",
+          "source": "deviations",
+          "kind": "bar",
+          "x": "item",
+          "y": "severity",
+          "color": "section",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "planned_executed",
+          "title": "Planned versus executed alignment",
+          "source": "alignment",
+          "kind": "heatmap",
+          "x": "comparison",
+          "y": "item",
+          "color": null,
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "timeline",
+          "title": "Plan lock and deviation timeline",
+          "source": "timeline",
+          "kind": "timeline",
+          "x": "day",
+          "y": "event",
+          "color": "status",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "sections",
+          "title": "Locked content by section",
+          "source": "primary",
+          "kind": "donut",
+          "x": "section",
+          "y": null,
+          "color": null,
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "audit",
+          "title": "Reproducibility audit trail",
+          "source": "audit",
+          "kind": "sankey",
+          "x": "from",
+          "y": "to",
+          "color": "events",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "prereg_radar",
+          "title": "Reproducibility readiness",
+          "source": "quality",
+          "kind": "radar",
+          "x": "dimension",
+          "y": "score",
+          "color": null,
+          "size": null,
+          "description": ""
+        }
+      ],
+      "handoffs": [
+        "Study Protocol Designer",
+        "Statistical Analysis Plan Studio",
+        "Evidence Package Studio"
+      ]
+    }
+  ]
+}

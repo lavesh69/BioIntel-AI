@@ -1,0 +1,39 @@
+{
+  "schema": "biointel.step146.research-lifecycle.catalog.v1",
+  "milestone": 146,
+  "name": "Research Lifecycle Peak",
+  "product_version_preserved": "13.2.0",
+  "research_planning_modules": 24,
+  "existing_modules_extended": 20,
+  "new_modules": [
+    "Research Ethics, Consent & Participant Protection Studio",
+    "Research Data Management & FAIR Planning Studio",
+    "Data Monitoring, Interim Review & Safety Studio",
+    "Publication, Dissemination & Knowledge Translation Studio"
+  ],
+  "specialist_engines": [
+    "ethics_consent_workbench",
+    "fair_data_management_workbench",
+    "interim_monitoring_safety_workbench",
+    "publication_dissemination_workbench"
+  ],
+  "shared_lifecycle_phases": [
+    "Scientific question",
+    "Protocol and design",
+    "Participant protection",
+    "Data management",
+    "Statistical analysis",
+    "Operational feasibility",
+    "Interim monitoring",
+    "Reproducibility",
+    "Dissemination"
+  ],
+  "preserved": [
+    "Step 145 overall application stability hardening",
+    "Step 144 Research Planning specialist engines",
+    "All existing bioinformatics modules and native execution layers",
+    "Existing reviews, versions, exports, handoffs and databases",
+    "Product version 13.2.0"
+  ],
+  "truthfulness_boundary": "The software supports planning, validation and reproducibility. It does not grant ethics approval, certify legal compliance, replace a monitoring committee or guarantee publication acceptance."
+}

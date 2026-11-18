@@ -1,0 +1,16 @@
+{
+  "schema": "biointel.step91.windows-short-path-offline-hotfix.v3",
+  "hotfix_id": "STEP91-WINDOWS-SHORT-PATH-OFFLINE-V3",
+  "status": "applied",
+  "dependency_added": "colorama==0.4.6",
+  "wheel": "colorama-0.4.6-py2.py3-none-any.whl",
+  "wheel_sha256": "4f1d9991f5acc0ca119f9d443620b77f9d6b33703e51011c16baf57afb285fc6",
+  "wheel_count": 102,
+  "install_root": "%LOCALAPPDATA%\\B91",
+  "temporary_root": "%LOCALAPPDATA%\\B91T",
+  "pip_cache_disabled": true,
+  "reason": "Fixes WinError 206 and retains the V2 offline colorama repair.",
+  "applied_at_utc": "2026-07-09T12:32:50.574450+00:00",
+  "distribution_revision": "V4-integrated-four-part-package",
+  "installer": "START_STEP91_AUTO_INSTALL_WINDOWS_FIXED_V4.bat"
+}

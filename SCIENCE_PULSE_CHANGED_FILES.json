@@ -1,0 +1,170 @@
+{
+  "files": [
+    {
+      "bytes": 356,
+      "path": "src/biointel/science_pulse/__init__.py",
+      "sha256": "44e554600869a211c28109bdb9706ce40e0257f85b2c31a0c2ab82021b248386"
+    },
+    {
+      "bytes": 5256,
+      "path": "src/biointel/science_pulse/models.py",
+      "sha256": "ab91cfe7879da3c1fe95bfbfdd2b3bfe68cc953b4b25439031081d34e8a86c0f"
+    },
+    {
+      "bytes": 6279,
+      "path": "src/biointel/science_pulse/security.py",
+      "sha256": "b0ba9e7d45a117800200cf4f555a32d9f0f30cbb18312cdb260c6eca90b869d7"
+    },
+    {
+      "bytes": 6591,
+      "path": "src/biointel/science_pulse/taxonomy.py",
+      "sha256": "088074c8c566706e63729a0d3d4ed248a3a685d611bcc2abfe9283d6dc7e192c"
+    },
+    {
+      "bytes": 28890,
+      "path": "src/biointel/science_pulse/providers.py",
+      "sha256": "c1c07f539e43f71bcd69f93cdacc884cb9e8266e8c165f13e4a8f3bff39534e0"
+    },
+    {
+      "bytes": 42898,
+      "path": "src/biointel/science_pulse/store.py",
+      "sha256": "6606913018a3b534f6873fdb41c13f269af7300049eba3c708df0b03152d9ba2"
+    },
+    {
+      "bytes": 25093,
+      "path": "src/biointel/science_pulse/service.py",
+      "sha256": "e4477468b1aec042b6776c74d3b3d7df48c868a1ccdcdad4e178e9f857cb9739"
+    },
+    {
+      "bytes": 8343,
+      "path": "src/biointel/science_pulse/scheduler.py",
+      "sha256": "cb3762b420cbe7b190bf42ecf227763eceb3ca6a653969cf04136db7c91b649f"
+    },
+    {
+      "bytes": 11059,
+      "path": "src/biointel/science_pulse/api.py",
+      "sha256": "7fc1f8d3af98b47d2011c98f6c6949454cc45c33a8a1cb654be82c336ed12fc4"
+    },
+    {
+      "bytes": 19815,
+      "path": "src/biointel/science_pulse/ui.py",
+      "sha256": "38918eedd632acf09f2a31c34df28b2f7679c793ffa00bd2873c4905f4ac338a"
+    },
+    {
+      "bytes": 107035,
+      "path": "src/biointel/api/main.py",
+      "sha256": "48eeae54f41e6cd53024ed57df8093c3384d19aa2182776ee68bf67a67198e67"
+    },
+    {
+      "bytes": 17177,
+      "path": "src/biointel/education/ui.py",
+      "sha256": "a88c12ee30b42637a67c3500aa6146cffc6879f8c4571eff71fe242ffc813b18"
+    },
+    {
+      "bytes": 7446,
+      "path": "src/biointel/education/science_pulse_service.py",
+      "sha256": "3fe447991a08bbfba2b57fa5688934d1d3f9f156155fa26c5b539593d45cbe14"
+    },
+    {
+      "bytes": 9804,
+      "path": "src/biointel/connect/connect_service.py",
+      "sha256": "5aac95b682b73f9fa026e7651bf21ec66ce4a0c26a27df6f83fb6f3e9d5495cd"
+    },
+    {
+      "bytes": 28097,
+      "path": "src/biointel/jobs/worker.py",
+      "sha256": "df1ce97dd59e07479c62842174830ff11da795606dae5222dab2ddbd3253c0ab"
+    },
+    {
+      "bytes": 170472,
+      "path": "src/biointel/ui/theme.py",
+      "sha256": "75e6fc53f5fc9e88db870a538e69c059f3940b9c41f828d5d5aac51901c67610"
+    },
+    {
+      "bytes": 10689,
+      "path": "config/settings.yaml",
+      "sha256": "e50f978ce04636c7fa853fc177b4179b7fb310c3cbe69176fd37ec22ce582d48"
+    },
+    {
+      "bytes": 3096,
+      "path": "scripts/background_job_worker.py",
+      "sha256": "f18f08015bb43e8093fe6dbfb72fb9273110706725a39cb65f8aeaa185744831"
+    },
+    {
+      "bytes": 31913,
+      "path": "scripts/runtime_supervisor_step206.py",
+      "sha256": "6a044a7a1473b9b472d1c8b6b627aacff49c71bdca4d4af7598de70d628de4df"
+    },
+    {
+      "bytes": 2213,
+      "path": "scripts/run_step41_dr_drill.py",
+      "sha256": "9b7245e131e465bcf81a12fd29619c4726612d5de95984ea2a3116e4f635a561"
+    },
+    {
+      "bytes": 9948,
+      "path": "scripts/seed_step39_evidence_depth.py",
+      "sha256": "273f394bae41a7fec9ad355a52a8646864a14964fa142a903d8260c3e69c3b11"
+    },
+    {
+      "bytes": 2686,
+      "path": "scripts/science_pulse_control.py",
+      "sha256": "f86553fd13f974c2abe1dc330e3849fddb88039e5467fae9c543c9ac98a982b6"
+    },
+    {
+      "bytes": 18578,
+      "path": "scripts/build_science_pulse_reports.py",
+      "sha256": "ac0dbfa0a4ad9af3804cc5cebf7ac2a3a91407efc422cbbe3265a47f4b0477fc"
+    },
+    {
+      "bytes": 16994304,
+      "path": "reports/scientific_evidence.sqlite3",
+      "sha256": "727fa28b6f625727efd14be5bcd935a5be4d41b3ffe9a0c8767a0773c6a2239d"
+    },
+    {
+      "bytes": 98304,
+      "path": "reports/validation_evidence.sqlite3",
+      "sha256": "0085e15d47d966b02a89ee82b83db181519c75b1df6d30f4ec1dea8fa7925bae"
+    },
+    {
+      "bytes": 26565,
+      "path": "tests/test_science_pulse_mega.py",
+      "sha256": "9ff210805f7064fe69d30ada4f9bb0eb058f8a013cafb1707ebc64a82f02eb1f"
+    },
+    {
+      "bytes": 148,
+      "path": "START_SCIENCE_PULSE_WORKER_WINDOWS.bat",
+      "sha256": "2d4e97f6e93165f5bbc08dceae1854b0b982fa25adb9a3c28710ad63a2dda188"
+    },
+    {
+      "bytes": 147,
+      "path": "STOP_SCIENCE_PULSE_WORKER_WINDOWS.bat",
+      "sha256": "d83e8527f58bed294eafe82ab6f37909e9d095a8077c1807d74c3c2a9ef809b8"
+    },
+    {
+      "bytes": 150,
+      "path": "RESTART_SCIENCE_PULSE_WORKER_WINDOWS.bat",
+      "sha256": "3a5fd4087b346a39026a1a22cf7032f7cd1d3c7e43706e6ed9063a7a62c2e2f7"
+    },
+    {
+      "bytes": 149,
+      "path": "SCIENCE_PULSE_WORKER_HEALTH_WINDOWS.bat",
+      "sha256": "cd189d4d26668a4250c02fa347b54b9b97d7ef5e81ee610da8a5ea09b486289d"
+    },
+    {
+      "bytes": 153,
+      "path": "FORCE_SCIENCE_PULSE_SYNC_WINDOWS.bat",
+      "sha256": "bdc32538cd5971c180f75342685e7b87d0df0dbf0bc6ff17f4d9edf2b3afd7da"
+    },
+    {
+      "bytes": 154,
+      "path": "COLLECT_SCIENCE_PULSE_DIAGNOSTICS_WINDOWS.bat",
+      "sha256": "ec3a3fa9cd4ef4dad9f0ae44c595186be455232708a5bba4c5d033b48b7f0f9a"
+    },
+    {
+      "bytes": 149,
+      "path": "REPAIR_SCIENCE_PULSE_SCHEDULER_WINDOWS.bat",
+      "sha256": "7a86ebfad6b6b32e8dfd895b574fa9e41c8ee5a65b2a5611296aaa946c76f25b"
+    }
+  ],
+  "generated_at": "2026-07-30T16:33:17+00:00"
+}

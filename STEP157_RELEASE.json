@@ -1,0 +1,40 @@
+{
+  "schema": "biointel.step157.release.v1",
+  "step": 157,
+  "product_version": "13.2.0",
+  "base_release": "Step 156 Translational Readiness",
+  "release_name": "Final Internal Excellence, Full-Screen Qualification and Portfolio Readiness",
+  "scientific_profiles": 80,
+  "native_workflows": 80,
+  "complete_scientific_contracts": 80,
+  "native_workflow_families": 49,
+  "registered_engine_adapters": 76,
+  "safe_external_execution_plans": 78,
+  "full_input_provenance_hashing": true,
+  "complete_result_bundle": true,
+  "streaming_full_file_profiler": true,
+  "atomic_resume_checkpoints": true,
+  "honest_three_axis_readiness": true,
+  "runtime_sidecars_allowed_in_release": false,
+  "read_only_install_runtime_fallback": true,
+  "analysis_modes": {
+    "interactive": {"row_limit": 250000, "feature_limit": 100, "cell_limit": 20000000},
+    "extended": {"row_limit": 750000, "feature_limit": 256, "cell_limit": 50000000},
+    "full": {"row_limit": 1000000, "feature_limit": 512, "cell_limit": 80000000}
+  },
+  "step157_upgrades": [
+    "Twelve additional protected specialist adapters for sequencing QC, trimming, annotation, protein search, coverage and transcript quantification",
+    "Complete CSV and TSV streaming profiler with full-file SHA-256 and bounded-memory statistics",
+    "Atomic resume checkpoints and schema-drift detection for long-running file profiling",
+    "Three-axis readiness matrix separating internal implementation, specialist runtime and external evidence",
+    "All 80 scientific profiles retain complete internal contracts without fabricating external validation",
+    "Target-machine qualification for paths with spaces, 320-character paths, SQLite WAL/integrity, imports and Streamlit AppTest",
+    "Isolated all-screen AppTest matrix covering app.py and every registered Streamlit page",
+    "Updated Scientific Readiness Command Center with readiness matrix and full-file profiling",
+    "Specialist lifecycle coverage expanded to 76 engine adapters and 78 protected execution plans",
+    "Release validator, deterministic manifest, database integrity report and four-part extraction proof"
+  ],
+  "tests": {"collected": 1342, "passed": 1315, "skipped": 27, "failed": 0},
+  "screen_qualification": {"expected": 229, "passed": 229, "failed": 0, "timeouts": 0},
+  "validation_boundary": "Maximum internally verifiable repository implementation, complete default-load screen qualification, protected execution planning, deterministic packaging and bounded desktop scientific analysis. This is not clinical, GxP, regulatory, licensed-database, physical-instrument, independent-laboratory or prospective wet-lab certification."
+}

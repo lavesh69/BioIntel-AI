@@ -1,0 +1,27 @@
+{
+  "schema": "biointel.step124-premium-visual-system.v1",
+  "release": "13.2.0",
+  "features": {
+    "premium_module_icons": true,
+    "custom_svg_scientific_icons": true,
+    "premium_themes_added": 10,
+    "module_specific_animated_heroes": true,
+    "animated_scientific_background": true,
+    "glassmorphism_workspace_panels": true,
+    "premium_hover_states": true,
+    "visual_workflow_ribbon": true,
+    "interactive_before_after_comparison": true
+  },
+  "preservation": {
+    "existing_themes_preserved": 32,
+    "existing_fonts_preserved": 11,
+    "modules_removed": 0,
+    "scientific_features_removed": 0
+  },
+  "accessibility": {
+    "reduced_motion_supported": true,
+    "forced_colors_supported": true,
+    "keyboard_comparison_slider": true,
+    "svg_icons_have_titles": true
+  }
+}

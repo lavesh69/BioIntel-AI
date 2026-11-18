@@ -1,0 +1,27 @@
+{
+  "schema": "biointel.step114.scientific-depth-optimization.v1",
+  "release": "11.9.0",
+  "eligible_depth_profiles": 64,
+  "external_engine_adapters": 53,
+  "protected_execution_plans": 21,
+  "new_central_page": "pages/168_Scientific_Depth_Optimization_Center.py",
+  "excluded_modules": [
+    "DTI Predictor",
+    "DTI Validation Evidence Center",
+    "Lab Instrument Import Center",
+    "LIMS, ELN & Sample Chain of Custody Hub",
+    "Instrument Integration Hub"
+  ],
+  "exclusions_are_source_hash_locked": true,
+  "upgrade_principles": [
+    "Never claim an unavailable third-party engine is bundled",
+    "Never mark a heuristic as experimental validation",
+    "Preserve source rows and input hashes",
+    "Bound previews and large-data operations",
+    "Expose validation requirements and scientific boundaries",
+    "Use shell-free protected execution plans"
+  ],
+  "global_upload_limit_gb": 1,
+  "interactive_processing_limit_mb": 100,
+  "external_tools_execute_automatically": false
+}

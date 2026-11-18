@@ -1,0 +1,13 @@
+{
+  "schema": "biointel.step122.package-split.v1",
+  "version": "12.2.0",
+  "parts": [
+    "BioIntel-AI-Step122-REAL-PROTEIN-DESIGN-EXECUTION-Part1.zip",
+    "BioIntel-AI-Step122-REAL-PROTEIN-DESIGN-EXECUTION-Part2.zip",
+    "BioIntel-AI-Step122-REAL-PROTEIN-DESIGN-EXECUTION-Part3.zip",
+    "BioIntel-AI-Step122-REAL-PROTEIN-DESIGN-EXECUTION-Part4.zip"
+  ],
+  "extraction_root": "BioIntel-AI",
+  "instructions": "Extract all four ZIP parts into the same destination folder, then run VERIFY_STEP122_WINDOWS.bat.",
+  "release_boundary": "Official/local model weights and experimental validation are not bundled or fabricated."
+}

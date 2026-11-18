@@ -1,0 +1,18 @@
+{
+  "storage_locations": {
+    "engines": "%LOCALAPPDATA%\\BioIntelAI\\ExternalEngines",
+    "models": "%LOCALAPPDATA%\\BioIntelAI\\ModelAssets",
+    "reference_data": "%LOCALAPPDATA%\\BioIntelAI\\ReferenceData"
+  },
+  "provisioning_capabilities": [
+    "resumable_downloads",
+    "checksum_verification",
+    "version_manifests",
+    "licence_acknowledgement",
+    "available_disk_space_checks",
+    "atomic_installation",
+    "environment_variable_overrides"
+  ],
+  "distributable_embedded_weights": false,
+  "distributable_growth_target": "< 2.0%"
+}

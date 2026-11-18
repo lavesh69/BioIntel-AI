@@ -1,0 +1,38 @@
+{
+  "schema": "biointel.step116.bug-audit.v1",
+  "version": "11.6.0",
+  "generated_at_utc": "2026-07-11T05:42:55+00:00",
+  "open_release_blockers": 0,
+  "fixed": [
+    {
+      "issue": "Embedded workspace could be unreachable after a legacy page stopped early",
+      "fix": "Moved the shared workspace launcher directly after theme initialization",
+      "verification": "77/77 affected pages expose the launcher"
+    },
+    {
+      "issue": "Missing PyArrow stopped Streamlit dataframe and editor rendering in partial environments",
+      "fix": "Added bounded escaped HTML table/editor compatibility fallbacks",
+      "verification": "Representative pages and full affected-page sweep passed"
+    },
+    {
+      "issue": "Missing PyArrow stopped native Streamlit bar/line/area/scatter charts",
+      "fix": "Added safe native chart wrappers with bounded data previews",
+      "verification": "ML AutoLab re-test passed with zero runtime error logs"
+    },
+    {
+      "issue": "Eager hidden sections could increase rerun cost",
+      "fix": "Used a single radio-routed active section rather than eager tabs",
+      "verification": "40/40 renderer state paths passed"
+    },
+    {
+      "issue": "Potential duplicate widget keys across embedded pages",
+      "fix": "Namespaced all widget keys by module and call-site prefix",
+      "verification": "77-page AppTest sweep passed"
+    }
+  ],
+  "known_boundaries": [
+    "Optional engines and reference databases remain external dependencies",
+    "Future datasets and Windows/graphics configurations may expose new issues",
+    "Workspace state export is not a scientific validity certificate"
+  ]
+}

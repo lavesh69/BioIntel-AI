@@ -1,0 +1,25 @@
+{
+  "schema": "biointel.step158.release.v1",
+  "step": 158,
+  "product_version": "13.2.0",
+  "base_release": "Step 157 Final Internal Excellence",
+  "release_name": "Release Surface Hardening and Canonical Entry Points",
+  "current_verifier": "VERIFY_LATEST_WINDOWS.bat",
+  "current_installer": "INSTALL_WINDOWS.bat",
+  "current_launcher": "RUN_BOTH_WINDOWS.bat",
+  "release_doctor": "RUN_RELEASE_DOCTOR_WINDOWS.bat",
+  "registered_screens": 229,
+  "scientific_profiles": 80,
+  "native_workflow_families": 49,
+  "registered_engine_adapters": 76,
+  "safe_external_execution_plans": 78,
+  "inherited_step157_tests": {"collected": 1342, "passed": 1315, "skipped": 27, "failed": 0},
+  "step158_upgrades": [
+    "Replaced stale Step 126 root README with an accurate current-release guide",
+    "Added canonical VERIFY_LATEST_WINDOWS and release-doctor entry points",
+    "Added machine-readable current-versus-historical release-surface inventory",
+    "Added current release documentation and explicit scientific readiness boundary",
+    "Added release-surface tests that fail on stale current-facing metadata or runtime residue"
+  ],
+  "validation_boundary": "Internal release-surface clarity, deterministic packaging, software qualification and exploratory scientific execution only. External clinical, regulatory, licensed-data, instrument and wet-lab evidence remain third-party outcomes."
+}

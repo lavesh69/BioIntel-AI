@@ -1,0 +1,19 @@
+{
+  "schema": "biointel.step180.release.v1",
+  "step": 180,
+  "target_modules": 5,
+  "portfolio_modules": 80,
+  "internal_10of10_modules": 80,
+  "final_five_average_before": 3.822,
+  "final_five_average_after": 10.0,
+  "final_five_gain": 6.178,
+  "final_five_improvement_percent": 161.6,
+  "portfolio_average_before": 9.6139,
+  "portfolio_average_after": 10.0,
+  "controlled_release_eligible": 0,
+  "external_evidence_policy": "fail-closed",
+  "classic_windows_flow": [
+    "INSTALL_WINDOWS.bat",
+    "RUN_BOTH_WINDOWS.bat"
+  ]
+}

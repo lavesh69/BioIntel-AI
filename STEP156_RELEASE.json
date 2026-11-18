@@ -1,0 +1,42 @@
+{
+  "schema": "biointel.step156.release.v1",
+  "step": 156,
+  "product_version": "13.2.0",
+  "base_release": "Step 155 Confirmatory Scientific Depth",
+  "release_name": "Translational Evidence, Qualified Toolchains and Read-Only Runtime Hardening",
+  "scientific_profiles": 80,
+  "native_workflows": 80,
+  "complete_scientific_contracts": 80,
+  "native_workflow_families": 49,
+  "registered_engine_adapters": 64,
+  "safe_external_execution_plans": 66,
+  "full_input_provenance_hashing": true,
+  "complete_result_bundle": true,
+  "deterministic_full_input_coverage_sampling": true,
+  "runtime_sidecars_allowed_in_release": false,
+  "read_only_install_runtime_fallback": true,
+  "analysis_modes": {
+    "interactive": {"row_limit": 250000, "feature_limit": 100, "cell_limit": 20000000},
+    "extended": {"row_limit": 750000, "feature_limit": 256, "cell_limit": 50000000},
+    "full": {"row_limit": 1000000, "feature_limit": 512, "cell_limit": 80000000}
+  },
+  "step156_upgrades": [
+    "Antibody sequence-liability and heavy/light-chain pairing evidence",
+    "Vaccine HLA coverage, binding and explicit safety gates",
+    "Pharmacogenomics evidence-completeness, phasing, copy-number and guideline checks",
+    "Structural-variant read support, caller consensus and repeat-threshold evidence",
+    "Gene-therapy vector packaging, CpG, homopolymer, restriction-site and immunity risk",
+    "CAR-T benefit-risk and healthy-tissue evidence gates",
+    "Docking pose consensus and molecular-dynamics convergence audit",
+    "Federated client equity, poisoning, authentication and privacy-budget checks",
+    "Pharmacovigilance duplicate, chronology and temporal-signal audit",
+    "Autonomous-lab dependency, deck, volume and human-approval safety blocking",
+    "LIMS/ELN lineage cycles, duplicate IDs, missing parents and record hashes",
+    "Qualified toolchain evidence with executable version, reference checksum, release, licence and reviewer",
+    "Instrument import raw SHA-256, calibration, method metadata and one-to-one mapping qualification",
+    "Eleven additional protected execution plans covering all registered engine families",
+    "Read-only installed-directory runtime fallback for jobs, API security, tenants, caches, registries and logs"
+  ],
+  "tests": {"collected": 1333, "passed": 1306, "skipped": 27, "failed": 0},
+  "validation_boundary": "Maximum internally verifiable repository implementation, protected execution planning, deterministic packaging and bounded desktop scientific screening. This is not clinical, GxP, regulatory, licensed-database, physical-instrument, independent-laboratory or prospective wet-lab certification."
+}

@@ -1,0 +1,38 @@
+{
+  "schema": "biointel.step119.bug-audit.v1",
+  "version": "11.9.0",
+  "status": "FIXED_AND_VERIFIED",
+  "bugs": [
+    {
+      "id": "UI-MX-CONTENT-001",
+      "severity": "medium",
+      "title": "Collapsed workspace cards use generic repeated copy",
+      "symptom": "Different modules can look complete but expose nearly identical summary text, hiding module-specific workflow, entity and handoff context.",
+      "root_cause": "The shared summary renderer used six hard-coded generic cards instead of deriving content from each module specification.",
+      "fix": "Generate six validated cards from each ModuleExperienceSpec and attach stable diagnostic metadata.",
+      "affected_workspaces": 78
+    },
+    {
+      "id": "UI-MX-OVERFLOW-002",
+      "severity": "low",
+      "title": "Long module metadata can crowd narrow cards",
+      "symptom": "Long entity, workflow or handoff text may force uneven card sizing on narrow windows.",
+      "root_cause": "Cards lacked explicit min-width, height and white-space safeguards.",
+      "fix": "Add min-width:0, full-height alignment, controlled overflow and normal wrapping.",
+      "affected_workspaces": 78
+    }
+  ],
+  "excluded_module_hashes_preserved": 5,
+  "verification": {
+    "workspace_summaries": "78/78 complete",
+    "summary_cards": "468/468 validated",
+    "unique_module_fingerprints": "78/78",
+    "shared_renderer_pages": "77/77 static coverage",
+    "representative_runtime_pages": "3/3 passed",
+    "selected_tests": "65 passed, 0 failed across two completed runs",
+    "python_compilation": "844/844 files",
+    "sqlite_integrity": "36/36 healthy; 108,077 rows checked",
+    "application_self_test": "7/7 passed",
+    "excluded_pages": "5/5 byte-identical"
+  }
+}

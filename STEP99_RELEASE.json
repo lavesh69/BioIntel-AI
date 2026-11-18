@@ -1,0 +1,12 @@
+{
+  "schema": "biointel.release.v1",
+  "version": "9.9.0",
+  "release_name": "Innovation Module Excellence",
+  "base": "Step 97 Windows Python Fixed V2",
+  "module_count_upgraded": 11,
+  "installer": "INSTALL_WINDOWS.bat",
+  "launcher": "RUN_BOTH_WINDOWS.bat",
+  "required_python": "3.11 x64",
+  "offline_wheels": 102,
+  "scientific_boundary": "External models, databases and validation evidence remain explicitly separate from software implementation readiness."
+}

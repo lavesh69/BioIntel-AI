@@ -1,0 +1,36 @@
+{
+  "analysis_modes": {
+    "extended": {
+      "cell_limit": 50000000,
+      "feature_limit": 256,
+      "row_limit": 750000
+    },
+    "full": {
+      "cell_limit": 80000000,
+      "feature_limit": 512,
+      "row_limit": 1000000
+    },
+    "interactive": {
+      "cell_limit": 20000000,
+      "feature_limit": 100,
+      "row_limit": 250000
+    }
+  },
+  "engine_adapters": 64,
+  "protected_execution_plans": 55,
+  "release_policy": {
+    "external_evidence_must_not_be_fabricated": true,
+    "fail_closed": true,
+    "specialist_confirmation_required_for_confirmatory_use": true
+  },
+  "result_policy": {
+    "complete_tables_exported": true,
+    "full_input_hashing": true,
+    "preview_rows": 5000
+  },
+  "sampling": "deterministic-even-coverage",
+  "schema": "biointel.step155.confirmatory-depth.v1",
+  "scientific_profiles": 80,
+  "step": 155,
+  "workflow_families": 49
+}

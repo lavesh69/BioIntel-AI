@@ -1,0 +1,35 @@
+{
+  "brand": "BioIntel AI",
+  "descriptor": "Scientific Intelligence for Life Sciences",
+  "tagline": "Biology, Engineered into Intelligence.",
+  "founder": "Lavesh Dobriyal",
+  "founder_placement": [
+    "About",
+    "Credits",
+    "documentation",
+    "report metadata",
+    "launch material"
+  ],
+  "colors": {
+    "primary": "#22D3EE",
+    "secondary": "#3B82F6",
+    "accent": "#8B5CF6",
+    "background": "#07111F",
+    "surface": "#111C30",
+    "text": "#F8FAFC",
+    "muted": "#9DB6C8"
+  },
+  "logo_rules": {
+    "minimum_clear_space": "25% of the mark width",
+    "minimum_digital_size": "24 px",
+    "animation": "Launch only, maximum 1.5 seconds",
+    "do_not": [
+      "stretch",
+      "rotate",
+      "add glow",
+      "recolour outside the approved palette",
+      "add text inside the icon"
+    ]
+  },
+  "guidelines": "brand/BIOINTEL_BRAND_GUIDELINES.pdf"
+}

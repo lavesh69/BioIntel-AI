@@ -1,0 +1,998 @@
+{
+  "schema_version": 2,
+  "release": "BioIntel-AI-15.6.0-BioIntel-Connect-WINDOWS-FIXED-R3",
+  "generated_at_utc": "2026-07-26T16:26:28.017074Z",
+  "working_root": "C:\\Users\\lavesh dobriyal\\Documents\\Codex\\2026-07-26\\files-mentioned-by-the-user-biointel\\work\\biointel-connect-clean\\source-working",
+  "baseline_root": "C:\\Users\\lavesh dobriyal\\Documents\\Codex\\2026-07-26\\files-mentioned-by-the-user-biointel\\work\\biointel-connect-clean\\source-baseline",
+  "source_policy": "runtime reports and agent work artifacts excluded; workspace cache restored from baseline during packaging",
+  "exclusions": [
+    ".venv",
+    "__pycache__",
+    "*.pyc",
+    "work",
+    "UserData/connect",
+    "AppTest/runtime report databases and logs",
+    "BIOINTEL_CONNECT_CHANGED_FILES.json",
+    "release/SOURCE_MANIFEST_SHA256.json"
+  ],
+  "summary": {
+    "added": 60,
+    "removed": 0,
+    "modified": 36,
+    "total": 96
+  },
+  "files": [
+    {
+      "before": null,
+      "path": "BIOINTEL_CONNECT_ADMIN_GUIDE.md",
+      "change": "added",
+      "after": {
+        "sha256": "0e1fdf87642afaa9f6ca70675beab30e4fc463649eaf1e2768dc0ef9897e68e8",
+        "bytes": 1173
+      }
+    },
+    {
+      "before": null,
+      "path": "BIOINTEL_CONNECT_API_SPEC.md",
+      "change": "added",
+      "after": {
+        "sha256": "ba69f38420df8953c958f0ac483247ae2820273f12b4965512ca100abead1b9e",
+        "bytes": 1421
+      }
+    },
+    {
+      "before": null,
+      "path": "BIOINTEL_CONNECT_ARCHITECTURE.md",
+      "change": "added",
+      "after": {
+        "sha256": "851ef1a0c8d03d4d3688c37965ee71c43d1a4757f7e28a2f69fc42adedbba94d",
+        "bytes": 1677
+      }
+    },
+    {
+      "before": null,
+      "path": "BIOINTEL_CONNECT_BLUEPRINT.md",
+      "change": "added",
+      "after": {
+        "sha256": "0e5fd0075a44fd7d4305569e346f0dcaf222a1c35168957bfbcdd2c16165c642",
+        "bytes": 2152
+      }
+    },
+    {
+      "before": null,
+      "path": "BIOINTEL_CONNECT_BROWSER_MATRIX.md",
+      "change": "added",
+      "after": {
+        "sha256": "1eb875efdbaddfaea32694aa0bb81fcf2ae04a8d155cbe589cd1004915454206",
+        "bytes": 1244
+      }
+    },
+    {
+      "before": null,
+      "path": "BIOINTEL_CONNECT_COMMUNITY_SPEC.md",
+      "change": "added",
+      "after": {
+        "sha256": "819d471105469bea75f478f4c90c42a2f8e9ae655d2cca4dadc4f4b991063aee",
+        "bytes": 1200
+      }
+    },
+    {
+      "before": null,
+      "path": "BIOINTEL_CONNECT_COMPLETENESS_REPORT.md",
+      "change": "added",
+      "after": {
+        "sha256": "368f51ea50a80aed6270d668a182057bd502aca495da421b438e2e5c5786464c",
+        "bytes": 1668
+      }
+    },
+    {
+      "before": null,
+      "path": "BIOINTEL_CONNECT_DATABASE_SCHEMA.md",
+      "change": "added",
+      "after": {
+        "sha256": "1a35ea914df9a38affaf4a8cee89ba4e69df7ef286b3434dd8783178f200c9ff",
+        "bytes": 1680
+      }
+    },
+    {
+      "before": null,
+      "path": "BIOINTEL_CONNECT_MESSAGING_SPEC.md",
+      "change": "added",
+      "after": {
+        "sha256": "50bfe2a3433938fe2977919ee84a841c80ed0c2d9cdb67350aa39162f883c9b1",
+        "bytes": 1150
+      }
+    },
+    {
+      "before": null,
+      "path": "BIOINTEL_CONNECT_MIGRATION_GUIDE.md",
+      "change": "added",
+      "after": {
+        "sha256": "701a867c40f671890cdbeb30ceba330b8ae8ba8b53362855a874a20965f60059",
+        "bytes": 1256
+      }
+    },
+    {
+      "before": null,
+      "path": "BIOINTEL_CONNECT_MODERATION_MODEL.md",
+      "change": "added",
+      "after": {
+        "sha256": "4a16607cac7ad9025d7e489e4b6d69da02422b7a591b0756c843db12f74de998",
+        "bytes": 1064
+      }
+    },
+    {
+      "before": null,
+      "path": "BIOINTEL_CONNECT_PRIVACY_MODEL.md",
+      "change": "added",
+      "after": {
+        "sha256": "206beb301d06d3c241dcda1728b583c8d964757aedad5f55917b7bea6d5077d7",
+        "bytes": 1343
+      }
+    },
+    {
+      "before": null,
+      "path": "BIOINTEL_CONNECT_SOURCE_MANIFEST.json",
+      "change": "added",
+      "after": {
+        "sha256": "dc86c73e1816ad5567a9e801c2c59902975908f0e9f05d864cb7554eb3f8edaf",
+        "bytes": 5061291
+      }
+    },
+    {
+      "before": null,
+      "path": "BIOINTEL_CONNECT_TEST_REPORT.md",
+      "change": "added",
+      "after": {
+        "sha256": "37e3b209913840a095905ea88603959221a3b2f854cb99f06aa638ed049f3b14",
+        "bytes": 2672
+      }
+    },
+    {
+      "before": null,
+      "path": "BIOINTEL_CONNECT_UI_UX_SPEC.md",
+      "change": "added",
+      "after": {
+        "sha256": "cf011dfa694b03add4f4fec05993c195ad03bd9fc6fe5a3cdd05a950cf3607e6",
+        "bytes": 1301
+      }
+    },
+    {
+      "before": null,
+      "path": "BIOINTEL_CONNECT_UPLOAD_SECURITY.md",
+      "change": "added",
+      "after": {
+        "sha256": "27c86bfddb68eaa45b0de6bdb81c8defd93b947dc053144766f30592013a2648",
+        "bytes": 1183
+      }
+    },
+    {
+      "before": null,
+      "path": "BIOINTEL_CONNECT_USER_GUIDE.md",
+      "change": "added",
+      "after": {
+        "sha256": "a211bf4bae9cde304efbc2a6d41c3c6dfb54745a3b236bf01024b01f1289180c",
+        "bytes": 1269
+      }
+    },
+    {
+      "before": null,
+      "path": "CHANGELOG_STEP220_WINDOWS_INSTALL_RUN_FIX.md",
+      "change": "added",
+      "after": {
+        "sha256": "ee5ada93c53f169c9622ec30a78a9215140b7480c40afee21d9ec420d265d157",
+        "bytes": 3957
+      }
+    },
+    {
+      "before": {
+        "sha256": "c2f619f729f84356b6fc9152c772a222373e2afb7ac28ae0fea95df10d830d55",
+        "bytes": 5451
+      },
+      "path": "INSTALL_WINDOWS.bat",
+      "change": "modified",
+      "after": {
+        "sha256": "cc86d63d516e5cc25946249e0cdc899fa3c634327e57a5c2baa5a58d510fe3c4",
+        "bytes": 5477
+      }
+    },
+    {
+      "before": {
+        "sha256": "368c857803a998b8e358cbaf2b76bdb38c5988bd6da78121c133324d87281c4d",
+        "bytes": 617
+      },
+      "path": "RESTART_BIOINTEL_WINDOWS.bat",
+      "change": "modified",
+      "after": {
+        "sha256": "1ed1a3d463f0a19d603e235a40126f5fe94dacb43688d254971c1da3986ef399",
+        "bytes": 1121
+      }
+    },
+    {
+      "before": {
+        "sha256": "410ec72e903b339e1de14852d99a1e43a16368166e9b4f265bacdcac5f8bce6d",
+        "bytes": 3750
+      },
+      "path": "RUN_BOTH_WINDOWS.bat",
+      "change": "modified",
+      "after": {
+        "sha256": "13ad4c8642a3f631f648c413fa4479010805f23579ee3a77d965a0517df99cd8",
+        "bytes": 4341
+      }
+    },
+    {
+      "before": {
+        "sha256": "929d1ac32c60080f76ab78df2b01cff1ca1be145437a5e5fd3ae62bb0be1ed73",
+        "bytes": 662
+      },
+      "path": "STOP_BIOINTEL_WINDOWS.bat",
+      "change": "modified",
+      "after": {
+        "sha256": "57c135f0c5ec0d002f168e5d4917187132a2d65023178a32046ea009f2f1a40b",
+        "bytes": 1166
+      }
+    },
+    {
+      "before": {
+        "sha256": "fce84a3b622dbc4d9c14f418d470333dee3581247caf85f171f20a4316e41ead",
+        "bytes": 49152
+      },
+      "path": "UserData/workspace/step132_visual_intelligence.sqlite",
+      "change": "modified",
+      "after": {
+        "sha256": "4adb4ffec1d8780e70f5323eb6ac1d92263c61e6dc5b30e7d7f8e68b01c0597d",
+        "bytes": 49152
+      }
+    },
+    {
+      "before": {
+        "sha256": "e77f2f041a81172a715ce0674280bacb3b027557f30fa35c8a1649dde659ad9e",
+        "bytes": 645
+      },
+      "path": "docs/step220/INSTALLATION_AND_WINDOWS_GUIDE.md",
+      "change": "modified",
+      "after": {
+        "sha256": "a0d589b368e678a1bcc73143d41ef97b5078397d3ab9da504a110e056d7dedfc",
+        "bytes": 947
+      }
+    },
+    {
+      "before": {
+        "sha256": "2260ad0214476b44f3183d8c9c1f5e9a323340d6408c6327488bd7dfa04f0ae8",
+        "bytes": 5071
+      },
+      "path": "pages/134_Population_Genetics_GWAS_Studio.py",
+      "change": "modified",
+      "after": {
+        "sha256": "37fbebf5b9f85e67f842a25bc2b50116595281bc68c2d6ad5e2c4c76b7861d10",
+        "bytes": 5096
+      }
+    },
+    {
+      "before": {
+        "sha256": "7fdf2f9cbd106c982e8142f4ee862d42e06d743fc216a047d818820649e1f6dc",
+        "bytes": 4127
+      },
+      "path": "pages/140_Cell_Atlas_Mapping_Reference_Annotation_Studio.py",
+      "change": "modified",
+      "after": {
+        "sha256": "7cd7cf601ec40983ed03b703b8cd9107e823b9898d65e9c021caab966b816b57",
+        "bytes": 4152
+      }
+    },
+    {
+      "before": {
+        "sha256": "989afd69292220138bb26c6e14db4f43697e555cc575d7cae1e3cacb08055fed",
+        "bytes": 8195
+      },
+      "path": "pages/17_Local_Data_Manager.py",
+      "change": "modified",
+      "after": {
+        "sha256": "5e38ea5fc8d5764a5394a841e70799ff68d65a119d862b10411e9c874fc2fd9d",
+        "bytes": 8391
+      }
+    },
+    {
+      "before": null,
+      "path": "pages/300_BioIntel_Connect_Home.py",
+      "change": "added",
+      "after": {
+        "sha256": "cf70d20e7ed668a44fb43010c531a9405d2a05633e0153b4407b94fb568cc478",
+        "bytes": 397
+      }
+    },
+    {
+      "before": null,
+      "path": "pages/302_Connect_Create_Post.py",
+      "change": "added",
+      "after": {
+        "sha256": "1270a8d4fcb38dc34c9ca7caa0010a4034490a064ab09ccc02be1e7dc5eebabd",
+        "bytes": 409
+      }
+    },
+    {
+      "before": null,
+      "path": "pages/303_Connect_My_Network.py",
+      "change": "added",
+      "after": {
+        "sha256": "0e49f453002a36b9a267f5853e694d1e7dbf72df8719d0f4b2ed2d3ea25c7d3d",
+        "bytes": 400
+      }
+    },
+    {
+      "before": null,
+      "path": "pages/313_Connect_Notifications.py",
+      "change": "added",
+      "after": {
+        "sha256": "643e5dcffdcdfef1b63c10d70b39a6133af6d5cad4f127378a806cda1c6db848",
+        "bytes": 415
+      }
+    },
+    {
+      "before": null,
+      "path": "pages/315_Connect_Profile.py",
+      "change": "added",
+      "after": {
+        "sha256": "4e6028e03a5f2129eacb793c35732e271c97ff8b0640d25e051a45fc844b8ab9",
+        "bytes": 397
+      }
+    },
+    {
+      "before": null,
+      "path": "pages/316_Connect_Settings.py",
+      "change": "added",
+      "after": {
+        "sha256": "fef73846cbad15da7ff116cfd43d5353eea9b1dac096e8ce7e68920a8aee6815",
+        "bytes": 400
+      }
+    },
+    {
+      "before": null,
+      "path": "pages/317_Connect_Post_Detail.py",
+      "change": "added",
+      "after": {
+        "sha256": "cb6898aba7dd92b9412393c5fd2d4b0314e6fb3d2f30e43acb1dfe1918d9ff40",
+        "bytes": 409
+      }
+    },
+    {
+      "before": null,
+      "path": "pages/318_Connect_Messages.py",
+      "change": "added",
+      "after": {
+        "sha256": "99b6bdd9161c58ed2f7c6a0a602c868466e71a23089dee3e6fbe0916f1f5eacf",
+        "bytes": 402
+      }
+    },
+    {
+      "before": null,
+      "path": "pages/319_Connect_Communities.py",
+      "change": "added",
+      "after": {
+        "sha256": "069749e9b30bcbe2774af02f8cbc2baae4471d3eb6cf62c19505e58e7c6aeabd",
+        "bytes": 424
+      }
+    },
+    {
+      "before": null,
+      "path": "pages/320_Connect_Discover_and_Collaborate.py",
+      "change": "added",
+      "after": {
+        "sha256": "7d464d5a0c1e074e39230360c4eb06c85ed01252165fdee0f69b7fdac7af5a57",
+        "bytes": 452
+      }
+    },
+    {
+      "before": null,
+      "path": "pages/321_Connect_Stories_and_Short_Videos.py",
+      "change": "added",
+      "after": {
+        "sha256": "7b79a79c0264968094fc62de8ca16525d37fdc47b96d29f1cd16b37bf42e28bf",
+        "bytes": 438
+      }
+    },
+    {
+      "before": null,
+      "path": "pages/322_Connect_Live_and_Calls.py",
+      "change": "added",
+      "after": {
+        "sha256": "ef632755559a2c936bc0291b194759a03dce00c5dc1d4a05c286a9025684adf6",
+        "bytes": 418
+      }
+    },
+    {
+      "before": null,
+      "path": "pages/323_Connect_Onboarding_and_Verification.py",
+      "change": "added",
+      "after": {
+        "sha256": "73b826664cc22002c28f753744a7c5d3175292fb3a484846efd9ee8814d79cab",
+        "bytes": 455
+      }
+    },
+    {
+      "before": null,
+      "path": "pages/324_Connect_Admin_and_Operations.py",
+      "change": "added",
+      "after": {
+        "sha256": "d8ad40d65a9a30be6e2d4782a59fd32ec38133f1e62c8e1aeeca714df2d4239d",
+        "bytes": 448
+      }
+    },
+    {
+      "before": null,
+      "path": "pages/325_Connect_Accessibility_and_Notifications.py",
+      "change": "added",
+      "after": {
+        "sha256": "305476a5856ab84ffb3694bbcdddef7040ebeb6e50cc9504c229f78393e366f9",
+        "bytes": 476
+      }
+    },
+    {
+      "before": null,
+      "path": "reports/logs/api.jsonl",
+      "change": "added",
+      "after": {
+        "sha256": "164181f1b0f5e033e3c728d5f3baee2d87a7b201266b7e7155a3cf3c7e74108f",
+        "bytes": 1260
+      }
+    },
+    {
+      "before": {
+        "sha256": "4cb40347c78299ffc97ffce27539f69bf1aec36fff5829bee4c598bc64a04aa0",
+        "bytes": 38317
+      },
+      "path": "scripts/install_windows_step206.py",
+      "change": "modified",
+      "after": {
+        "sha256": "2cd7f06460736f9b572513a39c36bfe32e2b294f6bf955dc9567cbb23c280540",
+        "bytes": 41280
+      }
+    },
+    {
+      "before": {
+        "sha256": "85671d8d36bea6528188b23a9cc0a98a02f71297c4be3ed038edcc3c48f0df4b",
+        "bytes": 13941
+      },
+      "path": "scripts/package_shiro_4part_release.py",
+      "change": "modified",
+      "after": {
+        "sha256": "55e6591b2c0ed5cdb9c6eeeea037a9524dc860ac33546c849f168c024a44cdde",
+        "bytes": 14199
+      }
+    },
+    {
+      "before": {
+        "sha256": "c100e1c4bdb3e4ded23a703f30ec976ff3dcbdf7eed2c4c02ac78fa29002a50a",
+        "bytes": 14428
+      },
+      "path": "scripts/run_biointel_step206.py",
+      "change": "modified",
+      "after": {
+        "sha256": "5a7d6e2fe9f5144f5ee77fc47d41190bf1bf49860ca261f63bd40841f841f323",
+        "bytes": 15136
+      }
+    },
+    {
+      "before": {
+        "sha256": "fb623ff4a2c02f9d3d4bf5bd44e09664407872f962af9e7d299bd3db90d92705",
+        "bytes": 30742
+      },
+      "path": "scripts/runtime_supervisor_step206.py",
+      "change": "modified",
+      "after": {
+        "sha256": "f249c0e1a71d671e3bde09484721adf16a440d65caafbc4dea54fa117f30fe83",
+        "bytes": 30847
+      }
+    },
+    {
+      "before": {
+        "sha256": "36019cf3eb588ad6596b51c936c90708e8ca6d34f5a9f003d5b7c16f335742cb",
+        "bytes": 12403
+      },
+      "path": "scripts/verify_step206_windows_install_run.py",
+      "change": "modified",
+      "after": {
+        "sha256": "5b3c9304e4ba8ef1944c889b0636daa37eb0d8634bc3485a4a5d9fe69362e33e",
+        "bytes": 13912
+      }
+    },
+    {
+      "before": {
+        "sha256": "dd37ec06d2909fc0a1506fe58fd306defc21f129d9cb1179b662f654e5908cf8",
+        "bytes": 103556
+      },
+      "path": "src/biointel/api/main.py",
+      "change": "modified",
+      "after": {
+        "sha256": "ce93c22c0bc1feef10f398948296c1ae357d7f8307add39b3b486c1f3740ab92",
+        "bytes": 103661
+      }
+    },
+    {
+      "before": null,
+      "path": "src/biointel/connect/__init__.py",
+      "change": "added",
+      "after": {
+        "sha256": "0f88f691ce698ab2b8e8c09457a19c7803bef96dac8ac3d1522e984797143e05",
+        "bytes": 281
+      }
+    },
+    {
+      "before": null,
+      "path": "src/biointel/connect/api.py",
+      "change": "added",
+      "after": {
+        "sha256": "3fad96a4d896d620d32a0ef89f3d22f74388d40fe5a9c803af0030e21e77169e",
+        "bytes": 13625
+      }
+    },
+    {
+      "before": null,
+      "path": "src/biointel/connect/collaboration.py",
+      "change": "added",
+      "after": {
+        "sha256": "1767ba8e40e108bb48a4112e1c6011fdbedbe7f50c10868cc1b8e68fe72724fc",
+        "bytes": 16169
+      }
+    },
+    {
+      "before": null,
+      "path": "src/biointel/connect/communities.py",
+      "change": "added",
+      "after": {
+        "sha256": "73834718e25c67bddba3b736e2344539d6ef042cdb1d8765ed0100fc2d652925",
+        "bytes": 11301
+      }
+    },
+    {
+      "before": null,
+      "path": "src/biointel/connect/complete_api.py",
+      "change": "added",
+      "after": {
+        "sha256": "13b754a2384062b977d64087a3882f957f6bcf15fcb05cbb35b3e57ea444a234",
+        "bytes": 25931
+      }
+    },
+    {
+      "before": null,
+      "path": "src/biointel/connect/complete_schema.py",
+      "change": "added",
+      "after": {
+        "sha256": "cf48fd74085fdc860c91df0812d59f4531d0a8fb3ed9edf488a3b2421b604958",
+        "bytes": 30218
+      }
+    },
+    {
+      "before": null,
+      "path": "src/biointel/connect/complete_services.py",
+      "change": "added",
+      "after": {
+        "sha256": "8492d55c61a8bea957d79762a58fc26daec8f4c4b319e0dfb56b3f930fd5d98b",
+        "bytes": 2261
+      }
+    },
+    {
+      "before": null,
+      "path": "src/biointel/connect/complete_ui.py",
+      "change": "added",
+      "after": {
+        "sha256": "3bcfc32575a6cf85a31191c0e296c077f5207bd0dca4dad8cc89bf765e0d066e",
+        "bytes": 22835
+      }
+    },
+    {
+      "before": null,
+      "path": "src/biointel/connect/database.py",
+      "change": "added",
+      "after": {
+        "sha256": "bc39abdfa88dd14b7b8bd860b4af469e7c4eb422e1d904ea60f6e6380297357f",
+        "bytes": 19612
+      }
+    },
+    {
+      "before": null,
+      "path": "src/biointel/connect/discovery.py",
+      "change": "added",
+      "after": {
+        "sha256": "d88b4e6e385de086ef822a86ee2107204f156157bccc3ea49e8382debae9a411",
+        "bytes": 6144
+      }
+    },
+    {
+      "before": null,
+      "path": "src/biointel/connect/governance.py",
+      "change": "added",
+      "after": {
+        "sha256": "d89a62dff10f360ee03a9530f6853c3c3aaa76176dd130d45ba47827d1cff5c7",
+        "bytes": 23841
+      }
+    },
+    {
+      "before": null,
+      "path": "src/biointel/connect/media.py",
+      "change": "added",
+      "after": {
+        "sha256": "0054f548c8029481d0aebb3ce6f135b7bbc75dccade5861ab73eb61609928a9e",
+        "bytes": 16550
+      }
+    },
+    {
+      "before": null,
+      "path": "src/biointel/connect/messaging.py",
+      "change": "added",
+      "after": {
+        "sha256": "60f7fa4b79361e594717ba91fbd6bcdab9d7bc6e5ce4b0a395db383e3b06aae9",
+        "bytes": 28142
+      }
+    },
+    {
+      "before": null,
+      "path": "src/biointel/connect/operations.py",
+      "change": "added",
+      "after": {
+        "sha256": "6c96e7a36ebfa3023477406e341b39f8f48e04de334969fb61e833159bddde3e",
+        "bytes": 17153
+      }
+    },
+    {
+      "before": null,
+      "path": "src/biointel/connect/repositories.py",
+      "change": "added",
+      "after": {
+        "sha256": "71e1e6872a0121c8bc5b5ec43956249623e5baec60a2c5222cd571391b64dfec",
+        "bytes": 13684
+      }
+    },
+    {
+      "before": null,
+      "path": "src/biointel/connect/services.py",
+      "change": "added",
+      "after": {
+        "sha256": "94dcdaff722a14a160b11c2db8863bc56161247b000b2eecf68db88235c77619",
+        "bytes": 30800
+      }
+    },
+    {
+      "before": null,
+      "path": "src/biointel/connect/social_media.py",
+      "change": "added",
+      "after": {
+        "sha256": "bd0901bbfd90a769bae3a8c272096ded99fe1975af37f259ee99c650fda5bbea",
+        "bytes": 20905
+      }
+    },
+    {
+      "before": null,
+      "path": "src/biointel/connect/ui.py",
+      "change": "added",
+      "after": {
+        "sha256": "2113d25a63b8151442db1428571b976dc389e74b458adaacfb8f07865451fb0a",
+        "bytes": 22519
+      }
+    },
+    {
+      "before": {
+        "sha256": "37d4f4465048a304d17a1d86afa1f717f5353b7c8e187f12324ce913f4938150",
+        "bytes": 20359
+      },
+      "path": "src/biointel/data/relationship_integrity.py",
+      "change": "modified",
+      "after": {
+        "sha256": "9d6e52a5ec9e812a96f3c49155b6bb0000e559f439b3f99340a3b3e33b5487ba",
+        "bytes": 20633
+      }
+    },
+    {
+      "before": {
+        "sha256": "fe0cb1258c2c3a8109cb882ca253ab6ab02aef2d8c8c52f22d9c0469490b4051",
+        "bytes": 9619
+      },
+      "path": "src/biointel/demo_assurance_v184/generator.py",
+      "change": "modified",
+      "after": {
+        "sha256": "1df272ffdd601498a1200779856d6d8fdfcf2624240f86b0b818416039cc8616",
+        "bytes": 9675
+      }
+    },
+    {
+      "before": {
+        "sha256": "df5dbd124e0621994e523be589bf937fe050e8391416aa41a398b588ca84c7cf",
+        "bytes": 3409
+      },
+      "path": "src/biointel/demo_assurance_v184/validators.py",
+      "change": "modified",
+      "after": {
+        "sha256": "575455c9b205209fa78480ce2010919e086fc4be21bbc7cd62f4124e13faac49",
+        "bytes": 3462
+      }
+    },
+    {
+      "before": {
+        "sha256": "37f88e46ab44096b0365879b5c5a4e985c4243ded4d2d4aa79f70b984e290bf1",
+        "bytes": 26523
+      },
+      "path": "src/biointel/major_module_standard_v188/engine.py",
+      "change": "modified",
+      "after": {
+        "sha256": "5e0b471ba739b42cf1fed9204c7878e5c2094161838ef5d4ac6224151fba8f53",
+        "bytes": 26580
+      }
+    },
+    {
+      "before": {
+        "sha256": "1ffcd658d4d8db9b6f1ed25b1ec75a7f61d66a402ccd37dc0cca6cdc2d5130f8",
+        "bytes": 10638
+      },
+      "path": "src/biointel/mandatory_completion_v193/engine.py",
+      "change": "modified",
+      "after": {
+        "sha256": "b3ebaadae3b8ad43ba938218ea8b56e2bafea470c198d0526a1560a2cd41958d",
+        "bytes": 10703
+      }
+    },
+    {
+      "before": {
+        "sha256": "63fefec4b736362eb8a2592c2a0d7bc7b72612ff806c1ddc9911188c5be901d0",
+        "bytes": 8831
+      },
+      "path": "src/biointel/operational_assurance_v185/generator.py",
+      "change": "modified",
+      "after": {
+        "sha256": "5c0c6c24664696c26c2fb200940ffac19a28c76228eb5f1155eec03f2ab0eae6",
+        "bytes": 8902
+      }
+    },
+    {
+      "before": {
+        "sha256": "89e90eb015f75cf989b849baced6065777ef28c656a325dd5ead2366d2003a84",
+        "bytes": 2717
+      },
+      "path": "src/biointel/operational_assurance_v185/validators.py",
+      "change": "modified",
+      "after": {
+        "sha256": "fc740762ce2f18e6e355f2562bd42ea6ae5ac6a167e0ff0a83e730c50874d316",
+        "bytes": 2774
+      }
+    },
+    {
+      "before": {
+        "sha256": "8a1c73125d5671a540e17fd3f4a292fbc798fbe17217dce9e69d09ce24102009",
+        "bytes": 10328
+      },
+      "path": "src/biointel/operations/runtime_control.py",
+      "change": "modified",
+      "after": {
+        "sha256": "566258d4143ad2c86288bd3cc8d338d11508e647d4c2ffae39b2ff0ab13d1e71",
+        "bytes": 11853
+      }
+    },
+    {
+      "before": {
+        "sha256": "ab8411b318dcde35153988dba6e19d60d3e2b5a09ed2453f49b98610347ed823",
+        "bytes": 10030
+      },
+      "path": "src/biointel/page_excellence_v187/generator.py",
+      "change": "modified",
+      "after": {
+        "sha256": "3a930e6031a661abe1d27829cd523a4fb71069e4122d78d189054f59d5b8e364",
+        "bytes": 10087
+      }
+    },
+    {
+      "before": {
+        "sha256": "ac42f0353aedff756a335de2d68c6546ce1f7af0a1625a5d7b25c168661d1621",
+        "bytes": 3086
+      },
+      "path": "src/biointel/page_excellence_v187/ui.py",
+      "change": "modified",
+      "after": {
+        "sha256": "4a712ffe4cf6e9e0b6c4e9f5c1d86a8a95e592bd0ea8ede8fb3e2d17ae167ccb",
+        "bytes": 3470
+      }
+    },
+    {
+      "before": {
+        "sha256": "c8d2edc7c97d0c632186e706ffd934243af7dc760fb198047ff0e9365f8560ff",
+        "bytes": 3010
+      },
+      "path": "src/biointel/page_excellence_v187/validators.py",
+      "change": "modified",
+      "after": {
+        "sha256": "6c5c6f37b42575a602a447b065c85562bd7d7041f0db5bcc951eb823e2c9b576",
+        "bytes": 3067
+      }
+    },
+    {
+      "before": {
+        "sha256": "0826c89aeca21dcf38006b392c00a850d1257c404178ef54543bff1107798a1c",
+        "bytes": 8733
+      },
+      "path": "src/biointel/platform_completion_v186/generator.py",
+      "change": "modified",
+      "after": {
+        "sha256": "42784437548cb5258f1c599bcf2e8c52fe4479ab2307138ab42c553c5fb0f5a9",
+        "bytes": 8790
+      }
+    },
+    {
+      "before": {
+        "sha256": "384394dd40405347b5b456597eeb4a5f3417ef53c1c04d4eec68fc08e2fdea63",
+        "bytes": 2664
+      },
+      "path": "src/biointel/platform_completion_v186/validators.py",
+      "change": "modified",
+      "after": {
+        "sha256": "db431619bea26119e52ab02a7b87189b2d40493c1e039a247617f8d31bbe94ed",
+        "bytes": 2721
+      }
+    },
+    {
+      "before": {
+        "sha256": "e8eff6997953fd6499a7dd9aa6df6c612c2f4bc3affb62a5110dd517b0220853",
+        "bytes": 12202
+      },
+      "path": "src/biointel/portfolio_demo_v183/generator.py",
+      "change": "modified",
+      "after": {
+        "sha256": "548fcccc033966b9da286bf6d3c05056be9318ad69ea6842a49e432b9f72af02",
+        "bytes": 12255
+      }
+    },
+    {
+      "before": {
+        "sha256": "e665d4230d215b672fbf579d09f5ef70de7c39b528c8f1446a1706db0e7c6919",
+        "bytes": 3407
+      },
+      "path": "src/biointel/portfolio_demo_v183/ui.py",
+      "change": "modified",
+      "after": {
+        "sha256": "e1990371ecf0eb975da870d6fb2c345249c674b4d036bb044b413fe6feb1d0ed",
+        "bytes": 4068
+      }
+    },
+    {
+      "before": {
+        "sha256": "6ef96ff80fb22b7f1d24250c6af915a2dcecb0c38a4929523367b05f71329859",
+        "bytes": 5242
+      },
+      "path": "src/biointel/portfolio_demo_v183/validators.py",
+      "change": "modified",
+      "after": {
+        "sha256": "3af914b05f95443500b283dd617acbcd5857bf0e02d5bfd4bf6bf05d12c5b45e",
+        "bytes": 5295
+      }
+    },
+    {
+      "before": null,
+      "path": "src/biointel/reports/__init__.py",
+      "change": "added",
+      "after": {
+        "sha256": "1a048e1dbf98994f4406df80823915e607d4bfa6ae490a044b50f94bf587b078",
+        "bytes": 35
+      }
+    },
+    {
+      "before": null,
+      "path": "src/biointel/reports/model_card.py",
+      "change": "added",
+      "after": {
+        "sha256": "6e569440e34d4a4865536650838e2a44887e8bfd06d291e605a23fbe31b32aec",
+        "bytes": 4248
+      }
+    },
+    {
+      "before": null,
+      "path": "src/biointel/reports/pdf_report.py",
+      "change": "added",
+      "after": {
+        "sha256": "2b837ca13e529016ae2c53d9b70312714071edec630889364d24693d8179e9c3",
+        "bytes": 5363
+      }
+    },
+    {
+      "before": null,
+      "path": "src/biointel/reports/release_bundle.py",
+      "change": "added",
+      "after": {
+        "sha256": "7b9b4f49b869f1017994fd5aa12c18ab30a9657479e8b13d257f04d335081cd1",
+        "bytes": 1182
+      }
+    },
+    {
+      "before": null,
+      "path": "src/biointel/reports/workspace_report.py",
+      "change": "added",
+      "after": {
+        "sha256": "a991e1832cfdb11ff37a3f3d127a073761e8e316430130488d464c1672576aaf",
+        "bytes": 9590
+      }
+    },
+    {
+      "before": null,
+      "path": "src/biointel/runtime_paths.py",
+      "change": "added",
+      "after": {
+        "sha256": "b9caabfe9fd99421e1d84129be6615da350ac755bf6ec54d8e4dab00d842d484",
+        "bytes": 596
+      }
+    },
+    {
+      "before": {
+        "sha256": "e5de7f605432ac6434ea4395a2f7a43090e60d09f129725576a1891c3e2a6549",
+        "bytes": 21600
+      },
+      "path": "src/biointel/scientific_execution_v190/generator.py",
+      "change": "modified",
+      "after": {
+        "sha256": "74d45a93e8d510cbd424fc1b845ce42c1514e5714c50863cc1726bcb637c3b94",
+        "bytes": 21650
+      }
+    },
+    {
+      "before": {
+        "sha256": "11efdd5b01ca43f68f7068662b6f02fe3886473afc82c1b0513ebe116ec0be6e",
+        "bytes": 136380
+      },
+      "path": "src/biointel/ui/navigation.py",
+      "change": "modified",
+      "after": {
+        "sha256": "19483e574ac0426368ad75e246a43f65863123ae0452c1ad2feaad622c7553ea",
+        "bytes": 141561
+      }
+    },
+    {
+      "before": {
+        "sha256": "4399daee9801ba0c47ee1945459466afa77e1a7f884e4cd69cd0de63c2abec82",
+        "bytes": 19002
+      },
+      "path": "src/biointel/universal_platform_v189/generator.py",
+      "change": "modified",
+      "after": {
+        "sha256": "1829cf16f211e3ebb680718f0fa6495256b65f5c9ba0959018850bb5ed1b5b19",
+        "bytes": 19049
+      }
+    },
+    {
+      "before": {
+        "sha256": "8db54b5acd5ded8502678a22acbcd0960a21054e9d8e01cd9d04cbf13b54f798",
+        "bytes": 39745
+      },
+      "path": "src/biointel/universal_platform_v189/platform.py",
+      "change": "modified",
+      "after": {
+        "sha256": "654391c786c433385f35c491dacce28eb50e9e5baa8971bf1a420aaf64e0231c",
+        "bytes": 39817
+      }
+    },
+    {
+      "before": null,
+      "path": "tests/connect/test_connect_complete_target.py",
+      "change": "added",
+      "after": {
+        "sha256": "32c741efe6a1afd5392c4a8ebfa0671e615f7bfbec3ade1059e9119638778913",
+        "bytes": 11314
+      }
+    },
+    {
+      "before": null,
+      "path": "tests/connect/test_connect_phase1_phase2.py",
+      "change": "added",
+      "after": {
+        "sha256": "651c122c5d81b617541e4da2a4c13cf4b4083e777c02e46daa0562cd7f9d1bf3",
+        "bytes": 8361
+      }
+    },
+    {
+      "before": {
+        "sha256": "b91706cdb5c503603e08f61b512d5055ffc831dfa207079be725a1ba605e4844",
+        "bytes": 7137
+      },
+      "path": "tests/test_step206_windows_install_run.py",
+      "change": "modified",
+      "after": {
+        "sha256": "3511e44e69cb386a1d83848e3b94d21316f74685e250582092c57d286255e44c",
+        "bytes": 8014
+      }
+    }
+  ]
+}

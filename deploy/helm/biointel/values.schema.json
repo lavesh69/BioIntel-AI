@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["image", "api", "streamlit", "worker", "secrets"],
+  "properties": {
+    "image": {
+      "type": "object",
+      "required": ["repository", "tag"],
+      "properties": {"repository": {"type": "string", "minLength": 1}, "tag": {"type": "string", "minLength": 1}}
+    },
+    "api": {"$ref": "#/$defs/workload"},
+    "streamlit": {"$ref": "#/$defs/workload"},
+    "worker": {"$ref": "#/$defs/workload"},
+    "secrets": {"type": "object"}
+  },
+  "$defs": {
+    "workload": {
+      "type": "object",
+      "required": ["replicas", "resources"],
+      "properties": {"replicas": {"type": "integer", "minimum": 1}, "resources": {"type": "object"}}
+    }
+  }
+}

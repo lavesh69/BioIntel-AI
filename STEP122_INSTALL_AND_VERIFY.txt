@@ -1,0 +1,16 @@
+BioIntel AI Step 122 — Installation and Verification
+
+1. Put all four Step 122 ZIP parts in the same folder.
+2. Extract Part 1, Part 2, Part 3 and Part 4 into the same destination.
+3. Open the merged BioIntel-AI folder.
+4. Run VERIFY_STEP122_WINDOWS.bat.
+5. Run INSTALL_WINDOWS.bat if the Python environment is not installed.
+6. Configure official/local model assets when needed:
+   CONFIGURE_STEP122_PROTEIN_MODELS_WINDOWS.bat backend model_path [expected_sha256]
+7. Run RUN_APP_WINDOWS.bat.
+
+Headless model request templates are in data\templates\step122.
+Use RUN_PROTEIN_DESIGN_PIPELINE_WINDOWS.bat request.json for a dry run.
+Add --execute only after the executable, licence, weights, hardware and input are verified.
+
+Generated designs are research hypotheses and require independent structural review and wet-lab validation.

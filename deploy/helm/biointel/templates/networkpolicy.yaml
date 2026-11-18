@@ -1,0 +1,35 @@
+{{- if .Values.networkPolicy.enabled }}
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: {{ include "biointel.fullname" . }}-default-deny
+spec:
+  podSelector:
+    matchLabels:
+      {{- include "biointel.selectorLabels" . | nindent 6 }}
+  policyTypes: [Ingress, Egress]
+  ingress:
+    - from:
+        - podSelector:
+            matchLabels:
+              {{- include "biointel.selectorLabels" . | nindent 14 }}
+        {{- with .Values.networkPolicy.ingressNamespaceSelector }}
+        - namespaceSelector: {{ toYaml . | nindent 12 }}
+        {{- end }}
+      ports:
+        - {protocol: TCP, port: 8000}
+        - {protocol: TCP, port: 8501}
+  egress:
+    - to:
+        - namespaceSelector: {}
+      ports:
+        - {protocol: UDP, port: 53}
+        - {protocol: TCP, port: 53}
+        - {protocol: TCP, port: 443}
+        - {protocol: TCP, port: 5432}
+        - {protocol: TCP, port: 6379}
+        - {protocol: TCP, port: 9000}
+    {{- range .Values.networkPolicy.allowedEgressCIDRs }}
+    - to: [{ipBlock: {cidr: {{ . | quote }}}}]
+    {{- end }}
+{{- end }}

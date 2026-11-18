@@ -1,0 +1,24 @@
+{
+  "schema": "biointel.step174.validation.v1",
+  "status": "passed",
+  "version": "14.6.0",
+  "checks": {
+    "exactly_nine_phases": true,
+    "all_80_modules_covered": true,
+    "software_automation_10of10": true,
+    "all_phase_automation_available": true,
+    "phase_counts_valid": true,
+    "no_fake_external_completion": true,
+    "external_evidence_fabricated_false": true,
+    "module_assets_complete": true,
+    "registry_integrity": true,
+    "registry_fk_clean": true,
+    "registry_audit_chain_valid": true
+  },
+  "phases": 9,
+  "modules": 80,
+  "assets": 971,
+  "controlled_release_eligible_modules": 0,
+  "average_completed_external_phases": 1.27,
+  "external_evidence_fabricated": false
+}

@@ -1,0 +1,26 @@
+{
+  "schema": "biointel.step131.realtime-interaction.v1",
+  "release": "13.2.0",
+  "module_count": 15,
+  "central_workspace_count": 7,
+  "features": {
+    "browser_side_no_rerun_canvas": true,
+    "deterministic_progressive_lod": true,
+    "selection_undo_redo": true,
+    "synchronized_viewer_state": true,
+    "uncertainty_native_audit": true,
+    "point_level_visual_provenance": true,
+    "threaded_collaborative_review": true,
+    "journal_figure_layout_editor": true,
+    "visual_fingerprints": true,
+    "webgl_scatter": true
+  },
+  "limits": {
+    "reactive_canvas_points": 5000,
+    "selection_history_per_module": 500,
+    "session_undo_depth": 50,
+    "point_provenance_preview_rows": 1,
+    "publication_panel_preview_values": 20
+  },
+  "scientific_boundary": "Research decision support only. External model weights, licensed data, wet-lab confirmation, clinical validation and regulatory approval are not fabricated."
+}

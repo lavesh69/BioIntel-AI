@@ -1,0 +1,117 @@
+/* BioIntel AI Step 107 scientific workbench — final component override layer. */
+.bio-wb-header {
+  display:grid;
+  grid-template-columns:auto minmax(0,1fr) auto;
+  align-items:center;
+  gap:.9rem;
+  margin:.15rem 0 .7rem;
+  padding:.86rem 1rem;
+  border:1px solid color-mix(in srgb,var(--bio-primary) 22%,var(--bio-border));
+  border-radius:15px;
+  background:linear-gradient(120deg,color-mix(in srgb,var(--bio-surface-strong) 88%,transparent),color-mix(in srgb,var(--bio-surface) 72%,transparent));
+  box-shadow:0 12px 30px rgba(2,6,23,.16);
+}
+.bio-wb-icon {
+  display:grid;
+  place-items:center;
+  width:2.65rem;
+  height:2.65rem;
+  border-radius:12px;
+  font-size:1.25rem;
+  background:linear-gradient(135deg,color-mix(in srgb,var(--bio-primary) 25%,transparent),color-mix(in srgb,var(--bio-secondary) 18%,transparent));
+  border:1px solid color-mix(in srgb,var(--bio-primary) 36%,transparent);
+}
+.bio-wb-heading { min-width:0; }
+.bio-wb-category { color:var(--bio-secondary); font-size:.65rem; font-weight:850; letter-spacing:.09em; text-transform:uppercase; }
+.bio-wb-heading h1 { margin:.08rem 0 .14rem !important; font-size:1.28rem !important; line-height:1.15 !important; letter-spacing:-.025em; }
+.bio-wb-heading p { margin:0 !important; max-width:900px; color:var(--bio-muted); font-size:.78rem; line-height:1.42; }
+.bio-wb-chips { display:flex; flex-wrap:wrap; justify-content:flex-end; gap:.3rem; }
+.bio-wb-chip,.bio-wb-format,.bio-wb-format-more {
+  display:inline-flex;
+  align-items:center;
+  min-height:1.55rem;
+  padding:.2rem .48rem;
+  border-radius:999px;
+  border:1px solid var(--bio-border);
+  background:color-mix(in srgb,var(--bio-surface-strong) 80%,transparent);
+  color:var(--bio-text);
+  font-size:.62rem;
+  font-weight:750;
+  white-space:nowrap;
+}
+.bio-wb-formats {
+  display:grid;
+  gap:.38rem;
+  margin:.25rem 0 .55rem;
+  padding:.65rem .75rem;
+  border:1px solid var(--bio-border);
+  border-radius:12px;
+  background:color-mix(in srgb,var(--bio-surface) 78%,transparent);
+}
+.bio-wb-format-group { display:grid; grid-template-columns:9rem minmax(0,1fr); align-items:start; gap:.6rem; }
+.bio-wb-format-group b { padding-top:.18rem; color:var(--bio-muted); font-size:.66rem; }
+.bio-wb-format-group > span { display:flex; flex-wrap:wrap; gap:.25rem; }
+.bio-wb-format { color:var(--bio-secondary); border-color:color-mix(in srgb,var(--bio-secondary) 25%,var(--bio-border)); }
+.bio-wb-format-more { color:var(--bio-muted); }
+
+/* One authoritative uploader style. */
+[data-testid="stFileUploaderDropzone"] {
+  min-height:108px !important;
+  border:1.5px dashed color-mix(in srgb,var(--bio-secondary) 58%,var(--bio-border)) !important;
+  border-radius:13px !important;
+  background:color-mix(in srgb,var(--bio-surface-strong) 92%,var(--bio-bg)) !important;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.04) !important;
+  opacity:1 !important;
+}
+[data-testid="stFileUploaderDropzone"]:hover {
+  border-color:var(--bio-secondary) !important;
+  background:color-mix(in srgb,var(--bio-secondary) 8%,var(--bio-surface-strong)) !important;
+  transform:none !important;
+}
+[data-testid="stFileUploaderDropzone"] button {
+  opacity:1 !important;
+  color:#fff !important;
+  border-color:color-mix(in srgb,var(--bio-primary) 60%,white 8%) !important;
+  background:linear-gradient(110deg,var(--bio-primary),var(--bio-secondary)) !important;
+  box-shadow:0 8px 20px color-mix(in srgb,var(--bio-glow) 58%,transparent) !important;
+}
+[data-testid="stFileUploaderDropzone"] small,
+[data-testid="stFileUploaderDropzone"] span,
+[data-testid="stFileUploaderDropzone"] div { opacity:1; }
+button:disabled,[aria-disabled="true"] { opacity:.68 !important; }
+
+/* Reduce duplicated vertical chrome across all module pages. */
+.bio-hero { padding:1rem 1.05rem !important; margin-bottom:.65rem !important; }
+.bio-hero-title { font-size:1.38rem !important; }
+.bio-hero-subtitle { font-size:.78rem !important; max-width:920px !important; }
+.bio-hero-chips > *:nth-child(n+4) { display:none !important; }
+.bio-boundary { margin:.3rem 0 .65rem !important; padding:.58rem .72rem !important; }
+[data-baseweb="tab-list"] { position:static !important; gap:.2rem !important; padding:.22rem !important; }
+[data-baseweb="tab"] { min-height:2.15rem !important; padding:.38rem .62rem !important; font-size:.69rem !important; }
+[data-testid="stDataFrame"] { max-height:72vh; }
+
+/* Better responsive workbench layout. */
+@media (max-width: 980px) {
+  .bio-wb-header { grid-template-columns:auto minmax(0,1fr); }
+  .bio-wb-chips { grid-column:1 / -1; justify-content:flex-start; }
+  .bio-wb-format-group { grid-template-columns:1fr; gap:.2rem; }
+}
+@media (max-width: 640px) {
+  .bio-wb-header { grid-template-columns:1fr; }
+  .bio-wb-icon { display:none; }
+  .bio-wb-heading h1 { font-size:1.12rem !important; }
+  .bio-wb-chips { display:none; }
+}
+
+/* Source-mode clarity: a disabled uploader is not a useful control. Modern
+   Chromium builds (desktop shell and supported browsers) hide it until the
+   operator selects the upload source. */
+[data-testid="stFileUploader"]:has(button:disabled) {
+  display:none !important;
+}
+[data-testid="stFileUploader"] p,
+[data-testid="stFileUploader"] small {
+  white-space:normal !important;
+  overflow-wrap:anywhere !important;
+  line-height:1.35 !important;
+}

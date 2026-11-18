@@ -1,0 +1,37 @@
+{
+  "schema": "biointel.step170.release-doctor.v1",
+  "status": "passed",
+  "checks": [
+    {
+      "check": "Step 170 software validation",
+      "passed": true,
+      "detail": "{\n  \"schema\": \"biointel.step170.validation.v1\",\n  \"status\": \"passed\",\n  \"checks\": [\n    {\n      \"check\": \"53 unique specialist engines\",\n      \"passed\": true,\n      \"detail\": \"53/53\"\n    },\n    {\n      \"check\": \"Engine manifests\",\n      \"passed\": true,\n      \"detail\": \"data/step170/engine_manifests\"\n    },\n    {\n      \"check\": \"Reference catalog\",\n      \"passed\": true,\n      \"detail\": \"26 production reference groups\"\n    },\n    {\n      \"check\": \"Licence policy coverage\",\n      \"passed\": true,\n      \"detail\": \"17 licence policies\"\n    },\n    {\n      \"check\": \"Provider/manual installs fail closed\",\n      \"passed\": true,\n      \"detail\": \"manual=5\"\n    },\n    {\n      \"check\": \"Every engine has checksum and smoke-test policy\",\n      \"passed\": true,\n      \"detail\": \"all 53\"\n    },\n    {\n      \"check\": \"Every reference has release/hash/licence/schema gates\",\n      \"passed\": true,\n      \"detail\": \"all 26\"\n    },\n    {\n      \"check\": \"WSL/micromamba environment plan\",\n      \"passed\": true,\n      \"detail\": \"step170-linux-64.yml\"\n    },\n    {\n      \"check\": \"Registry integrity\",\n      \"passed\": true,\n      \"detail\": \"{\\\"schema\\\": \\\"biointel.step170.registry-status.v1\\\", \\\"database_integrity\\\": \\\"ok\\\", \\\"foreign_key_violations\\\": 0, \\\"engines_registered\\\": 0, \\\"engines_qualified\\\": 0, \\\"references_registered\\\": 0, \\\"references_qualified\\\": 0, \\\"licences_registered\\\": 17, \\\"licences_accepted\\\": 0}\"\n    },\n    {\n      \"check\": \"Step 170 UI page\",\n      \"passed\": true,\n      \"detail\": \"pages/239_Specialist_Runtime_Reference_Qualification.py\"\n    },\n    {\n      \"check\": \"Windows provisioning launchers\",\n      \"passed\": true,\n      \"detail\": \"4 launchers\"\n    }\n  ],\n  \"software_qualification_complete\": true,\n  \"external_runtime_installation_complete\": false,\n  \"production_reference_downloads_complete\": false,\n  \"licences_not_auto_accepted\": true\n}\n"
+    },
+    {
+      "check": "Step 169 all-module regression validation",
+      "passed": true,
+      "detail": "{\n  \"schema\": \"biointel.step169.validation.v1\",\n  \"status\": \"passed\",\n  \"modules_checked\": 80,\n  \"modules_passed\": 80,\n  \"failures\": [],\n  \"matrix_rows\": 80,\n  \"metadata_flags_cannot_unlock_release\": true,\n  \"external_claims_inferred\": false\n}\n"
+    },
+    {
+      "check": "Version 14.2.0",
+      "passed": true,
+      "detail": "14.2.0"
+    },
+    {
+      "check": "Latest verifier routes Step 170",
+      "passed": true,
+      "detail": "VERIFY_LATEST_WINDOWS.bat"
+    },
+    {
+      "check": "Runtime archives remain lean",
+      "passed": true,
+      "detail": "Specialist runtimes and multi-GB/TB references remain managed outside the 4 application ZIPs"
+    }
+  ],
+  "software_owned_step170_score": 10.0,
+  "engine_recipe_coverage": "53/53",
+  "actual_engines_installed_on_build_host": 0,
+  "actual_production_references_qualified_on_build_host": 0,
+  "external_status": "operator-installation-and-licence-review-required",
+  "fake_installation_or_licence_acceptance_claimed": false
+}

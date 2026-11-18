@@ -1,0 +1,55 @@
+{
+  "schema": "biointel.step211.live-workspace.release-report.v1",
+  "generated_at_utc": "2026-07-18T10:50:43+00:00",
+  "release": {
+    "version": "15.6.0",
+    "step": 206,
+    "feature_step": 211,
+    "package_generation": "V19.5",
+    "part_count": 5
+  },
+  "prepackage_tests": {
+    "current_release_core_passed": 115,
+    "neuro_backend_passed": 117,
+    "bioinformatics_backend_passed": 65,
+    "discovery_lab_backend_passed": 20,
+    "live_workspace_focused_passed": 22,
+    "protected_hash_tests_passed": 2,
+    "protected_hashes_unchanged": 17,
+    "protected_hashes_total": 17,
+    "python_files_compiled": 1434,
+    "python_compile_errors": 0,
+    "runtime_supervisor_self_check": "passed"
+  },
+  "implemented": [
+    "personal_host_join_modes",
+    "named_accounts_pbkdf2_optional_totp",
+    "secure_expiring_invites",
+    "roles_and_module_project_permissions",
+    "heartbeat_presence_and_same_record_viewers",
+    "renewable_locks_revision_conflicts_offline_drafts",
+    "threaded_comments_mentions_reviews",
+    "tasks_evidence_cross_module_links_timeline",
+    "neuro_scientific_annotations",
+    "shared_jobs_notifications_follow_host_sessions",
+    "recoverable_trash_audit_health_retention",
+    "workspace_backup_restore_automatic_snapshots",
+    "websocket_reconnect_resync",
+    "optional_local_lan_https"
+  ],
+  "native_windows_execution_performed": false,
+  "streamlit_apptest_performed": false,
+  "builder_limitations": [
+    "Linux build host",
+    "Python 3.13 builder runtime",
+    "native Windows BAT unavailable",
+    "Streamlit AppTest unavailable"
+  ],
+  "boundaries": [
+    "trusted private LAN or administrator-managed private VPN",
+    "no direct public port forwarding",
+    "no clinical or regulatory claim",
+    "no external identity federation claim",
+    "no full Google Docs merge claim"
+  ]
+}

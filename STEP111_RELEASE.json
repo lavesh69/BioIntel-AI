@@ -1,0 +1,27 @@
+{
+  "schema": "biointel.step111.release.v1",
+  "release": "Step 111",
+  "version": "11.6.0",
+  "name": "Real Engine & Native Format Integration",
+  "generated_at_utc": "2026-07-10T18:21:58.820418+00:00",
+  "native_format_families": 23,
+  "advanced_viewers_native_enabled": 19,
+  "external_engine_adapters": 24,
+  "safe_executable_plans": 12,
+  "interactive_limit_bytes": 104857600,
+  "upload_transport_limit_bytes": 1073741824,
+  "features": [
+    "Native and bounded scientific format decoders",
+    "External scientific engine readiness and shell-free execution plans",
+    "Project-scoped advanced viewer synchronization",
+    "Standardized statistical disclosure and provenance",
+    "Background parsing for files larger than 100 MB",
+    "Safe output checksums, execution logs and resource metadata"
+  ],
+  "scientific_boundaries": [
+    "BAM/CRAM indexed analysis requires SAMtools and matching reference data where applicable",
+    "Proprietary vendor RAW and multi-gigapixel WSI formats require licensed/vendor adapters or OpenSlide support",
+    "Specialist engines and databases are detected but not falsely reported as bundled or validated",
+    "Clinical, diagnostic and regulated interpretation requires independent validation and expert review"
+  ]
+}

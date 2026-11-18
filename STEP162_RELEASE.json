@@ -1,0 +1,23 @@
+{
+  "schema": "biointel.step162.release.v1",
+  "step": 162,
+  "release_name": "Authentic Models and Evidence Hardening",
+  "base_release": "Step 161 All-Module Operational Scientific Upgrade",
+  "product_version": "13.4.0",
+  "scientific_modules": 80,
+  "software_authenticity_10of10_modules": 80,
+  "public_data_benchmark_models_built": 5,
+  "public_data_benchmark_models_verified": 5,
+  "legacy_models_audited": 25,
+  "synthetic_demo_models_quarantined": 23,
+  "provider_source_contracts": 14,
+  "provider_source_descriptors_verified": 14,
+  "provider_groups_with_local_checksummed_assets": 7,
+  "domain_models_external_release_eligible": 0,
+  "current_verifier": "VERIFY_LATEST_WINDOWS.bat",
+  "current_installer": "INSTALL_WINDOWS.bat",
+  "current_launcher": "RUN_BOTH_WINDOWS.bat",
+  "release_doctor": "RUN_STEP162_RELEASE_DOCTOR_WINDOWS.bat",
+  "validation_boundary": "Step 162 verifies public/non-synthetic data snapshots, immutable dataset and artifact bindings, deterministic splits, untouched holdout predictions, uncertainty diagnostics and model cards. It does not convert public benchmarks into task-specific clinical, wet-lab, pharmaceutical or regulatory validation.",
+  "external_claims_not_inferred": true
+}

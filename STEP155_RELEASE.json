@@ -1,0 +1,56 @@
+{
+  "analysis_modes": {
+    "extended": {
+      "cell_limit": 50000000,
+      "feature_limit": 256,
+      "row_limit": 750000
+    },
+    "full": {
+      "cell_limit": 80000000,
+      "feature_limit": 512,
+      "row_limit": 1000000
+    },
+    "interactive": {
+      "cell_limit": 20000000,
+      "feature_limit": 100,
+      "row_limit": 250000
+    }
+  },
+  "base_release": "Step 154 Maximum Internal Scientific Readiness",
+  "complete_result_bundle": true,
+  "complete_scientific_contracts": 80,
+  "deterministic_full_input_coverage_sampling": true,
+  "full_input_provenance_hashing": true,
+  "native_workflow_families": 49,
+  "native_workflows": 80,
+  "product_version": "13.2.0",
+  "registered_engine_adapters": 64,
+  "release_name": "Confirmatory Scientific Depth and Scale Upgrade",
+  "runtime_sidecars_allowed_in_release": false,
+  "safe_external_execution_plans": 55,
+  "schema": "biointel.step155.release.v1",
+  "scientific_profiles": 80,
+  "step": 155,
+  "step155_upgrades": [
+    "Adaptive interactive, extended and full native analysis budgets",
+    "Deterministic even-coverage bounded analysis instead of first-N sampling",
+    "Advanced GWAS association and genomic-inflation screening",
+    "Single-cell QC, highly-variable features, embedding, clustering and donor pseudobulk",
+    "Multivariable Cox proportional-hazards screening",
+    "Patient-level pathology split-leakage detection",
+    "Flow compensation, FMO thresholds and gate hierarchy evidence",
+    "Metabolomics blank correction, internal-standard normalisation and feature clustering",
+    "RDKit canonicalisation, descriptors and Murcko scaffold audit when available",
+    "AMR genotype-phenotype performance metrics",
+    "Federated weighted aggregation, outlier screening and privacy-budget composition",
+    "Trial covariate-balance diagnostics",
+    "Fourteen additional protected specialist execution plans"
+  ],
+  "tests": {
+    "collected": 1316,
+    "failed": 0,
+    "passed": 1289,
+    "skipped": 27
+  },
+  "validation_boundary": "Maximum internally verifiable repository implementation, deterministic packaging and bounded desktop scientific screening. It is not clinical, GxP, regulatory, licensed-database, physical-instrument, independent-laboratory or prospective wet-lab certification."
+}

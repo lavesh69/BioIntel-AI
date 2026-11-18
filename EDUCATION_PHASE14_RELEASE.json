@@ -1,0 +1,27 @@
+{
+  "schema": "biointel.education-phase14.release.v1",
+  "release": "BioIntel-AI-15.6.0-EDUCATION-PHASE14",
+  "version": "15.6.0",
+  "build": "Step220-V20.4-Phase14",
+  "generated_at_utc": "2026-07-29T04:23:17.797934+00:00",
+  "controls": 29,
+  "combined_phase3_to_phase14_controls": 392,
+  "regression_tests": 113,
+  "api_routes": 218,
+  "phase14_api_routes": 19,
+  "features": [
+    "learning_outcomes_and_evidence",
+    "outcome_attainment_and_quality_cycles",
+    "exam_psychometrics",
+    "transparent_learner_support",
+    "academic_calendar_and_ics"
+  ],
+  "external_boundaries": [
+    "formal accreditation",
+    "independent psychometric validation",
+    "live calendar provider sync",
+    "signed Windows certification",
+    "independent security/load/WCAG audit",
+    "institution pilot"
+  ]
+}

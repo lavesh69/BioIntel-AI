@@ -1,0 +1,20 @@
+{
+  "schema": "biointel.step192.verification.v1",
+  "release_version": "15.0.0",
+  "step191_part2_input_status": "corrupt/truncated; rejected",
+  "reconstruction_base": "four valid Step 190 parts plus verified Step 191 publication asset bundle",
+  "repaired_offline_wheel": "scipy-1.17.0-cp311-cp311-win_amd64.whl",
+  "repaired_wheel_sha256": "255c0da161bd7b32a6c898e7891509e8a9289f0b1c6c7d96142ee0d2b114c2ea",
+  "wheelhouse_valid": true,
+  "wheel_count": 102,
+  "focused_regression_passed": true,
+  "focused_regression_tests": 102,
+  "python_compilation_passed": true,
+  "python_files_compiled": 1508,
+  "module_publication_packs": "80/80",
+  "major_module_page_hooks": "79/79 page files covering 80 logical modules",
+  "sqlite_integrity": "50/50 checked databases passed",
+  "full_legacy_test_suite_claimed": false,
+  "full_legacy_test_suite_note": "Build host lacks the packaged Python 3.11/Streamlit runtime; run after Windows installation or in configured CI.",
+  "controlled_scientific_release_eligible": false
+}

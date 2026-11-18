@@ -1,0 +1,724 @@
+{
+  "features": [
+    "native scientific format ingestion",
+    "checksum-bound upload staging",
+    "persistent resumable job queue",
+    "pause resume cancel retry controls",
+    "engine and reference readiness gates",
+    "bounded module-schema conversion",
+    "checksum-bound result manifests",
+    "safe model asset metadata inspection"
+  ],
+  "maximum_background_preview_records": 500000,
+  "maximum_inline_conversion_bytes": 104857600,
+  "maximum_upload_bytes": 1073741824,
+  "module_count": 15,
+  "modules": {
+    "amr_surveillance": {
+      "accepted_extensions": [
+        "fastq",
+        "fq",
+        "fastq.gz",
+        "fq.gz",
+        "fasta",
+        "fa",
+        "fna",
+        "faa",
+        "gff",
+        "gff3",
+        "vcf",
+        "vcf.gz"
+      ],
+      "boundary": "Built-in parsing and QC are available. Specialist external-engine results require the declared local tools and reference assets.",
+      "builtin_stages": [
+        "checksum",
+        "read/assembly QC",
+        "species readiness",
+        "AMR database readiness",
+        "lineage/phylogeny readiness",
+        "surveillance manifest"
+      ],
+      "engine_plan_keys": [
+        "flye_assemble",
+        "mafft_align",
+        "iqtree_build"
+      ],
+      "interactive_bytes": 104857600,
+      "maximum_bytes": 1073741824,
+      "module_key": "amr_surveillance",
+      "optional_engines": [
+        "kraken2",
+        "bracken",
+        "abricate",
+        "blastn",
+        "flye",
+        "minimap2",
+        "mafft",
+        "iqtree"
+      ],
+      "preferred_viewer": "outbreak_map",
+      "primary_outputs": [
+        "amr_input_qc.json",
+        "classification readiness",
+        "lineage readiness",
+        "surveillance manifest"
+      ],
+      "reference_assets": [
+        "Kraken/Bracken database",
+        "AMR gene database release",
+        "Breakpoint standard/version",
+        "MLST/cgMLST schema"
+      ],
+      "title": "AMR read-to-surveillance readiness pipeline"
+    },
+    "autonomous_lab_planner": {
+      "accepted_extensions": [
+        "csv",
+        "tsv",
+        "xlsx",
+        "xls",
+        "json",
+        "jsonl",
+        "yaml",
+        "yml"
+      ],
+      "boundary": "Built-in parsing and QC are available. Specialist external-engine results require the declared local tools and reference assets.",
+      "builtin_stages": [
+        "checksum",
+        "factor/control schema QC",
+        "replicate/power readiness",
+        "plate constraints",
+        "resource schedule validation",
+        "approval manifest"
+      ],
+      "engine_plan_keys": [],
+      "interactive_bytes": 104857600,
+      "maximum_bytes": 1073741824,
+      "module_key": "autonomous_lab_planner",
+      "optional_engines": [],
+      "preferred_viewer": "plate_map",
+      "primary_outputs": [
+        "design_manifest.json",
+        "plate_layout.csv.gz",
+        "resource_schedule.csv.gz"
+      ],
+      "reference_assets": [
+        "Instrument calendar",
+        "Reagent/inventory snapshot",
+        "SOP/protocol version",
+        "Biosafety approval requirements"
+      ],
+      "title": "Experimental design, plate and resource planning pipeline"
+    },
+    "biomedical_foundation_model_hub": {
+      "accepted_extensions": [
+        "onnx",
+        "safetensors",
+        "pt",
+        "pth",
+        "bin",
+        "gguf",
+        "json",
+        "yaml",
+        "yml"
+      ],
+      "boundary": "Binary model assets are never deserialised during inspection. Inference is enabled only through explicitly approved local engines and checksum-bound assets.",
+      "builtin_stages": [
+        "checksum",
+        "asset metadata",
+        "size/memory profile",
+        "licence gate",
+        "runtime compatibility",
+        "security boundary"
+      ],
+      "engine_plan_keys": [],
+      "interactive_bytes": 104857600,
+      "maximum_bytes": 1073741824,
+      "module_key": "biomedical_foundation_model_hub",
+      "optional_engines": [
+        "llama_cpp",
+        "proteinmpnn",
+        "rfdiffusion",
+        "scanpy"
+      ],
+      "preferred_viewer": "static_reporting",
+      "primary_outputs": [
+        "model_asset_manifest.json",
+        "hardware_fit.csv",
+        "licence_readiness.json"
+      ],
+      "reference_assets": [
+        "Model card",
+        "Licence record",
+        "Expected SHA-256",
+        "Tokenizer/config assets",
+        "Benchmark dataset"
+      ],
+      "title": "Model checkpoint and embedding asset lifecycle"
+    },
+    "cell_therapy_cart": {
+      "accepted_extensions": [
+        "fasta",
+        "fa",
+        "faa",
+        "fna",
+        "gb",
+        "gbk",
+        "genbank",
+        "csv",
+        "tsv"
+      ],
+      "boundary": "Built-in parsing and QC are available. Specialist external-engine results require the declared local tools and reference assets.",
+      "builtin_stages": [
+        "checksum",
+        "construct parsing",
+        "domain/CDR readiness",
+        "germline readiness",
+        "antigen evidence gate",
+        "manufacturing manifest"
+      ],
+      "engine_plan_keys": [
+        "anarci_number",
+        "igblast_germline"
+      ],
+      "interactive_bytes": 104857600,
+      "maximum_bytes": 1073741824,
+      "module_key": "cell_therapy_cart",
+      "optional_engines": [
+        "anarci",
+        "igblast",
+        "netmhcpan",
+        "netmhciipan"
+      ],
+      "preferred_viewer": "sequence_track",
+      "primary_outputs": [
+        "car_construct_manifest.json",
+        "domain_annotation.csv.gz",
+        "immune_safety_readiness.json"
+      ],
+      "reference_assets": [
+        "IgBLAST germline database",
+        "Antigen tissue-expression atlas",
+        "MHC model data",
+        "Construct design manifest"
+      ],
+      "title": "CAR-T construct annotation and immune-safety pipeline"
+    },
+    "clinical_biomarker_survival": {
+      "accepted_extensions": [
+        "csv",
+        "tsv",
+        "txt",
+        "xlsx",
+        "xls",
+        "json",
+        "jsonl",
+        "parquet",
+        "feather"
+      ],
+      "boundary": "This pipeline supports research analysis and validation planning. It does not provide diagnosis, treatment advice or regulatory-grade clinical qualification.",
+      "builtin_stages": [
+        "checksum",
+        "patient/time/event schema QC",
+        "unit/date validation",
+        "site/cohort validation",
+        "missingness review",
+        "analysis-design lock"
+      ],
+      "engine_plan_keys": [],
+      "interactive_bytes": 104857600,
+      "maximum_bytes": 1073741824,
+      "module_key": "clinical_biomarker_survival",
+      "optional_engines": [],
+      "preferred_viewer": "multiomics",
+      "primary_outputs": [
+        "clinical_schema_qc.json",
+        "patient_preview.csv.gz",
+        "analysis_design_manifest.json"
+      ],
+      "reference_assets": [
+        "Data dictionary",
+        "Endpoint definition",
+        "Censoring rules",
+        "Cohort/version manifest",
+        "External validation protocol"
+      ],
+      "title": "Clinical biomarker and longitudinal survival ingestion pipeline"
+    },
+    "digital_pathology_foundation": {
+      "accepted_extensions": [
+        "svs",
+        "ndpi",
+        "mrxs",
+        "scn",
+        "tif",
+        "tiff",
+        "ome.tif",
+        "ome.tiff",
+        "png",
+        "jpg",
+        "jpeg"
+      ],
+      "boundary": "Built-in parsing and QC are available. Specialist external-engine results require the declared local tools and reference assets.",
+      "builtin_stages": [
+        "checksum",
+        "slide metadata",
+        "bounded thumbnail/tile QC",
+        "scanner/stain review",
+        "segmentation readiness",
+        "artifact validation"
+      ],
+      "engine_plan_keys": [
+        "cellpose_segment"
+      ],
+      "interactive_bytes": 104857600,
+      "maximum_bytes": 1073741824,
+      "module_key": "digital_pathology_foundation",
+      "optional_engines": [
+        "openslide",
+        "cellpose",
+        "stardist"
+      ],
+      "preferred_viewer": "pathology",
+      "primary_outputs": [
+        "slide_manifest.json",
+        "tile_qc.csv.gz",
+        "segmentation outputs when engine-ready"
+      ],
+      "reference_assets": [
+        "Stain-normalisation profile",
+        "Approved pathology model weights",
+        "Scanner/site metadata"
+      ],
+      "title": "Whole-slide pathology ingestion and segmentation readiness"
+    },
+    "federated_biomedical_ai": {
+      "accepted_extensions": [
+        "csv",
+        "tsv",
+        "json",
+        "jsonl",
+        "parquet",
+        "feather"
+      ],
+      "boundary": "Built-in parsing and QC are available. Specialist external-engine results require the declared local tools and reference assets.",
+      "builtin_stages": [
+        "checksum",
+        "site schema QC",
+        "round manifest QC",
+        "privacy parameter validation",
+        "fairness readiness",
+        "signed-update manifest"
+      ],
+      "engine_plan_keys": [],
+      "interactive_bytes": 104857600,
+      "maximum_bytes": 1073741824,
+      "module_key": "federated_biomedical_ai",
+      "optional_engines": [],
+      "preferred_viewer": "multiomics",
+      "primary_outputs": [
+        "federation_manifest.json",
+        "site_schema_qc.csv.gz",
+        "privacy_accounting.json"
+      ],
+      "reference_assets": [
+        "Site data dictionaries",
+        "Model architecture hash",
+        "Privacy policy",
+        "Signing keys/public certificates"
+      ],
+      "title": "Federated training manifest and privacy-accounting pipeline"
+    },
+    "gene_therapy_vector": {
+      "accepted_extensions": [
+        "gb",
+        "gbk",
+        "genbank",
+        "fasta",
+        "fa",
+        "fna",
+        "vcf",
+        "csv",
+        "tsv"
+      ],
+      "boundary": "Built-in parsing and QC are available. Specialist external-engine results require the declared local tools and reference assets.",
+      "builtin_stages": [
+        "checksum",
+        "construct parsing",
+        "capacity/GC QC",
+        "feature integrity",
+        "off-target readiness",
+        "immunogenicity readiness"
+      ],
+      "engine_plan_keys": [
+        "vep_annotate"
+      ],
+      "interactive_bytes": 104857600,
+      "maximum_bytes": 1073741824,
+      "module_key": "gene_therapy_vector",
+      "optional_engines": [
+        "blastn",
+        "netmhcpan",
+        "netmhciipan",
+        "vep"
+      ],
+      "preferred_viewer": "sequence_track",
+      "primary_outputs": [
+        "construct_manifest.json",
+        "sequence_qc.csv.gz",
+        "safety readiness manifest"
+      ],
+      "reference_assets": [
+        "Vector/serotype reference",
+        "Host genome build",
+        "Population immunity evidence",
+        "Approved epitope model/data"
+      ],
+      "title": "Gene-therapy vector sequence and safety pipeline"
+    },
+    "long_read_epigenome": {
+      "accepted_extensions": [
+        "bam",
+        "cram",
+        "bedmethyl",
+        "bedmethyl.gz",
+        "bed",
+        "bed.gz",
+        "vcf",
+        "vcf.gz",
+        "tsv",
+        "txt"
+      ],
+      "boundary": "Built-in parsing and QC are available. Specialist external-engine results require the declared local tools and reference assets.",
+      "builtin_stages": [
+        "checksum",
+        "alignment/mod-base validation",
+        "coverage QC",
+        "methylation preview",
+        "haplotype readiness",
+        "DMR input validation"
+      ],
+      "engine_plan_keys": [
+        "samtools_index",
+        "samtools_depth",
+        "whatshap_phase",
+        "deeptools_bamcoverage"
+      ],
+      "interactive_bytes": 104857600,
+      "maximum_bytes": 1073741824,
+      "module_key": "long_read_epigenome",
+      "optional_engines": [
+        "samtools",
+        "whatshap",
+        "deeptools",
+        "bcftools",
+        "tabix"
+      ],
+      "preferred_viewer": "genome_browser",
+      "primary_outputs": [
+        "methylation_preview.csv.gz",
+        "coverage_qc.json",
+        "phasing readiness manifest"
+      ],
+      "reference_assets": [
+        "Reference FASTA",
+        "Genome build manifest",
+        "Imprinting catalogue",
+        "Optional phased VCF"
+      ],
+      "title": "Long-read methylation, phasing and DMR pipeline"
+    },
+    "pangenome_population_medicine": {
+      "accepted_extensions": [
+        "gfa",
+        "gfa1",
+        "gfa2",
+        "vg",
+        "xg",
+        "gbz",
+        "vcf",
+        "vcf.gz",
+        "bcf",
+        "fasta",
+        "fa",
+        "fna"
+      ],
+      "boundary": "Built-in parsing and QC are available. Specialist external-engine results require the declared local tools and reference assets.",
+      "builtin_stages": [
+        "checksum",
+        "graph/path QC",
+        "variant schema QC",
+        "population metadata validation",
+        "index readiness",
+        "coordinate-system manifest"
+      ],
+      "engine_plan_keys": [
+        "minigraph_graph",
+        "bcftools_norm",
+        "bcftools_stats"
+      ],
+      "interactive_bytes": 104857600,
+      "maximum_bytes": 1073741824,
+      "module_key": "pangenome_population_medicine",
+      "optional_engines": [
+        "minigraph",
+        "vg",
+        "odgi",
+        "graphaligner",
+        "bcftools",
+        "tabix"
+      ],
+      "preferred_viewer": "pangenome_graph",
+      "primary_outputs": [
+        "graph_qc.json",
+        "path_preview.csv.gz",
+        "population_variant_manifest.json"
+      ],
+      "reference_assets": [
+        "Reference assembly",
+        "Graph release/version",
+        "Population metadata",
+        "Coordinate/liftover manifest"
+      ],
+      "title": "Pangenome graph and population-variant pipeline"
+    },
+    "pharmacovigilance_intelligence": {
+      "accepted_extensions": [
+        "csv",
+        "tsv",
+        "txt",
+        "xlsx",
+        "xls",
+        "json",
+        "jsonl",
+        "xml",
+        "parquet",
+        "feather"
+      ],
+      "boundary": "Built-in parsing and QC are available. Specialist external-engine results require the declared local tools and reference assets.",
+      "builtin_stages": [
+        "checksum",
+        "case schema QC",
+        "duplicate fingerprinting",
+        "drug/event normalisation readiness",
+        "time-to-onset validation",
+        "signal manifest"
+      ],
+      "engine_plan_keys": [],
+      "interactive_bytes": 104857600,
+      "maximum_bytes": 1073741824,
+      "module_key": "pharmacovigilance_intelligence",
+      "optional_engines": [],
+      "preferred_viewer": "multiomics",
+      "primary_outputs": [
+        "case_schema_qc.json",
+        "deduplication_review.csv.gz",
+        "signal_readiness.json"
+      ],
+      "reference_assets": [
+        "MedDRA release",
+        "WHO Drug dictionary/licence",
+        "Case deduplication policy",
+        "Exposure denominator when available"
+      ],
+      "title": "Adverse-event case harmonisation and signal pipeline"
+    },
+    "protein_ligand_codesign": {
+      "accepted_extensions": [
+        "pdb",
+        "cif",
+        "mmcif",
+        "sdf",
+        "mol",
+        "mol2",
+        "pdbqt",
+        "csv",
+        "tsv"
+      ],
+      "boundary": "Built-in parsing and QC are available. Specialist external-engine results require the declared local tools and reference assets.",
+      "builtin_stages": [
+        "checksum",
+        "structure/ligand parse",
+        "chain/residue QC",
+        "ligand property preview",
+        "docking-box readiness",
+        "selectivity panel manifest"
+      ],
+      "engine_plan_keys": [
+        "vina_dock",
+        "gromacs_mdrun"
+      ],
+      "interactive_bytes": 104857600,
+      "maximum_bytes": 1073741824,
+      "module_key": "protein_ligand_codesign",
+      "optional_engines": [
+        "obabel",
+        "vina",
+        "gromacs",
+        "openmm",
+        "proteinmpnn",
+        "rfdiffusion"
+      ],
+      "preferred_viewer": "molecular_3d",
+      "primary_outputs": [
+        "structure_qc.json",
+        "ligand_preview.csv.gz",
+        "docking_readiness.json"
+      ],
+      "reference_assets": [
+        "Prepared receptor",
+        "Prepared ligand",
+        "Search-box definition",
+        "Selectivity-panel structures",
+        "Optional MD force field"
+      ],
+      "title": "Protein\u2013ligand structure preparation and docking readiness"
+    },
+    "single_cell_long_read_isoforms": {
+      "accepted_extensions": [
+        "bam",
+        "cram",
+        "gtf",
+        "gff",
+        "gff3",
+        "h5ad",
+        "mtx",
+        "mtx.gz",
+        "csv",
+        "tsv"
+      ],
+      "boundary": "Built-in parsing and QC are available. Specialist external-engine results require the declared local tools and reference assets.",
+      "builtin_stages": [
+        "checksum",
+        "cell metadata QC",
+        "transcript annotation QC",
+        "barcode/UMI readiness",
+        "isoform evidence preview",
+        "replicate design validation"
+      ],
+      "engine_plan_keys": [],
+      "interactive_bytes": 104857600,
+      "maximum_bytes": 1073741824,
+      "module_key": "single_cell_long_read_isoforms",
+      "optional_engines": [
+        "samtools",
+        "minimap2",
+        "scanpy",
+        "rmats",
+        "majiq",
+        "suppa2"
+      ],
+      "preferred_viewer": "single_cell",
+      "primary_outputs": [
+        "cell_metadata.csv.gz",
+        "isoform_preview.csv.gz",
+        "transcript_qc.json"
+      ],
+      "reference_assets": [
+        "Reference FASTA",
+        "Transcript annotation GTF/GFF",
+        "Barcode whitelist",
+        "Sample/replicate manifest"
+      ],
+      "title": "Single-cell long-read transcript and isoform pipeline"
+    },
+    "spatial_medicine_tme": {
+      "accepted_extensions": [
+        "h5ad",
+        "mtx",
+        "mtx.gz",
+        "h5",
+        "hdf5",
+        "tif",
+        "tiff",
+        "ome.tif",
+        "ome.tiff",
+        "png",
+        "jpg",
+        "jpeg",
+        "csv",
+        "tsv"
+      ],
+      "boundary": "Built-in parsing and QC are available. Specialist external-engine results require the declared local tools and reference assets.",
+      "builtin_stages": [
+        "checksum",
+        "coordinate QC",
+        "image metadata",
+        "cell/spot metadata",
+        "registration readiness",
+        "neighbourhood input validation"
+      ],
+      "engine_plan_keys": [
+        "cellpose_segment"
+      ],
+      "interactive_bytes": 104857600,
+      "maximum_bytes": 1073741824,
+      "module_key": "spatial_medicine_tme",
+      "optional_engines": [
+        "openslide",
+        "cellpose",
+        "stardist",
+        "scanpy"
+      ],
+      "preferred_viewer": "single_cell",
+      "primary_outputs": [
+        "spatial_metadata.csv.gz",
+        "coordinate_qc.json",
+        "registration readiness manifest"
+      ],
+      "reference_assets": [
+        "Platform manifest",
+        "Histology image",
+        "Spatial coordinates",
+        "Feature annotation",
+        "Optional segmentation model"
+      ],
+      "title": "Spatial transcriptomics and histology ingestion pipeline"
+    },
+    "synthetic_cohort_trial": {
+      "accepted_extensions": [
+        "csv",
+        "tsv",
+        "xlsx",
+        "xls",
+        "json",
+        "jsonl",
+        "yaml",
+        "yml",
+        "parquet",
+        "feather"
+      ],
+      "boundary": "Built-in parsing and QC are available. Specialist external-engine results require the declared local tools and reference assets.",
+      "builtin_stages": [
+        "checksum",
+        "arm/site schema QC",
+        "outcome/time validation",
+        "missingness/dropout design",
+        "simulation seed lock",
+        "scenario manifest"
+      ],
+      "engine_plan_keys": [],
+      "interactive_bytes": 104857600,
+      "maximum_bytes": 1073741824,
+      "module_key": "synthetic_cohort_trial",
+      "optional_engines": [],
+      "preferred_viewer": "multiomics",
+      "primary_outputs": [
+        "trial_design_manifest.json",
+        "scenario_input.csv.gz",
+        "operating_characteristics_plan.json"
+      ],
+      "reference_assets": [
+        "Protocol estimand",
+        "Endpoint distribution assumptions",
+        "Recruitment/dropout assumptions",
+        "Random seed policy"
+      ],
+      "title": "Trial-simulation design and scenario ingestion pipeline"
+    }
+  },
+  "product_version_preserved": "13.2.0",
+  "schema": "biointel.step136.native_raw_execution.v1",
+  "scientific_boundary": "Built-in parsing/QC and planning are implementation features. External engines, licensed references, wet-lab/clinical validation and regulatory acceptance are not fabricated.",
+  "step": 136
+}

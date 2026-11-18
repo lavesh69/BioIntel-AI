@@ -1,0 +1,162 @@
+{
+  "generated_at_utc": "2026-07-31T15:25:27.217516+00:00",
+  "total_configured_sources": 14,
+  "active_sources": 14,
+  "failed_sources": 0,
+  "sources": [
+    {
+      "key": "rss_sciencedaily_biology",
+      "name": "ScienceDaily Biology",
+      "type": "rss",
+      "status": "LIVE",
+      "http_status": 200,
+      "last_sync": "2026-07-31T15:25:27.217516+00:00",
+      "items_ingested": 550,
+      "rate_limit_rpm": 60,
+      "license": "Open RSS"
+    },
+    {
+      "key": "rss_nih_nibib_news",
+      "name": "NIH NIBIB Science News",
+      "type": "rss",
+      "status": "LIVE",
+      "http_status": 200,
+      "last_sync": "2026-07-31T15:25:27.217516+00:00",
+      "items_ingested": 250,
+      "rate_limit_rpm": 60,
+      "license": "US Public Domain"
+    },
+    {
+      "key": "rss_nlm_news",
+      "name": "National Library of Medicine News",
+      "type": "rss",
+      "status": "LIVE",
+      "http_status": 200,
+      "last_sync": "2026-07-31T15:25:27.217516+00:00",
+      "items_ingested": 250,
+      "rate_limit_rpm": 60,
+      "license": "US Public Domain"
+    },
+    {
+      "key": "rss_nature_biotech",
+      "name": "Nature Biotechnology",
+      "type": "rss",
+      "status": "LIVE",
+      "http_status": 200,
+      "last_sync": "2026-07-31T15:25:27.217516+00:00",
+      "items_ingested": 270,
+      "rate_limit_rpm": 60,
+      "license": "Publisher Metadata Terms"
+    },
+    {
+      "key": "api_pubmed_ncbi",
+      "name": "PubMed / NCBI E-Utilities",
+      "type": "api",
+      "status": "LIVE",
+      "http_status": 200,
+      "last_sync": "2026-07-31T15:25:27.217516+00:00",
+      "items_ingested": 1039,
+      "rate_limit_rpm": 180,
+      "license": "NCBI Public Domain / Open Metadata"
+    },
+    {
+      "key": "api_europe_pmc",
+      "name": "Europe PMC REST API",
+      "type": "api",
+      "status": "LIVE",
+      "http_status": 200,
+      "last_sync": "2026-07-31T15:25:27.217516+00:00",
+      "items_ingested": 500,
+      "rate_limit_rpm": 120,
+      "license": "CC-BY / Open Access"
+    },
+    {
+      "key": "api_crossref",
+      "name": "Crossref REST API",
+      "type": "api",
+      "status": "LIVE",
+      "http_status": 200,
+      "last_sync": "2026-07-31T15:25:27.217516+00:00",
+      "items_ingested": 300,
+      "rate_limit_rpm": 300,
+      "license": "Open DOI Metadata"
+    },
+    {
+      "key": "api_biorxiv_medrxiv",
+      "name": "bioRxiv & medRxiv API",
+      "type": "api",
+      "status": "LIVE",
+      "http_status": 200,
+      "last_sync": "2026-07-31T15:25:27.217516+00:00",
+      "items_ingested": 270,
+      "rate_limit_rpm": 100,
+      "license": "Preprint Author License"
+    },
+    {
+      "key": "api_clinical_trials",
+      "name": "ClinicalTrials.gov API v2",
+      "type": "api",
+      "status": "LIVE",
+      "http_status": 200,
+      "last_sync": "2026-07-31T15:25:27.217516+00:00",
+      "items_ingested": 250,
+      "rate_limit_rpm": 150,
+      "license": "US Public Data"
+    },
+    {
+      "key": "rss_cdc_news",
+      "name": "CDC Newsroom & Updates",
+      "type": "rss",
+      "status": "LIVE",
+      "http_status": 200,
+      "last_sync": "2026-07-31T15:25:27.217516+00:00",
+      "items_ingested": 150,
+      "rate_limit_rpm": 60,
+      "license": "US Public Domain"
+    },
+    {
+      "key": "rss_fda_news",
+      "name": "FDA Press Announcements",
+      "type": "rss",
+      "status": "LIVE",
+      "http_status": 200,
+      "last_sync": "2026-07-31T15:25:27.217516+00:00",
+      "items_ingested": 120,
+      "rate_limit_rpm": 60,
+      "license": "US Public Domain"
+    },
+    {
+      "key": "rss_who_news",
+      "name": "WHO Disease Outbreak News",
+      "type": "rss",
+      "status": "LIVE",
+      "http_status": 200,
+      "last_sync": "2026-07-31T15:25:27.217516+00:00",
+      "items_ingested": 100,
+      "rate_limit_rpm": 60,
+      "license": "WHO Open Access"
+    },
+    {
+      "key": "rss_ema_news",
+      "name": "EMA Human Medicines Updates",
+      "type": "rss",
+      "status": "LIVE",
+      "http_status": 200,
+      "last_sync": "2026-07-31T15:25:27.217516+00:00",
+      "items_ingested": 90,
+      "rate_limit_rpm": 60,
+      "license": "EU Open Data"
+    },
+    {
+      "key": "rss_mhra_news",
+      "name": "UK MHRA Regulatory Alerts",
+      "type": "rss",
+      "status": "LIVE",
+      "http_status": 200,
+      "last_sync": "2026-07-31T15:25:27.217516+00:00",
+      "items_ingested": 80,
+      "rate_limit_rpm": 60,
+      "license": "UK Open Government License"
+    }
+  ]
+}

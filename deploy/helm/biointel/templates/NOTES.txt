@@ -1,0 +1,11 @@
+BioIntel AI has been installed.
+
+Streamlit service:
+  {{ include "biointel.fullname" . }}-streamlit:{{ .Values.services.streamlit.port }}
+API service:
+  {{ include "biointel.fullname" . }}-api:{{ .Values.services.api.port }}
+
+Validate rollout:
+  kubectl rollout status deployment/{{ include "biointel.fullname" . }}-api
+  kubectl rollout status deployment/{{ include "biointel.fullname" . }}-streamlit
+  kubectl rollout status deployment/{{ include "biointel.fullname" . }}-worker

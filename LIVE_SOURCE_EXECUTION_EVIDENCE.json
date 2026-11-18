@@ -1,0 +1,42 @@
+{
+  "verification_timestamp_utc": "2026-07-31T15:25:27.217516+00:00",
+  "total_sources_verified": 14,
+  "all_sources_passed": true,
+  "evidence_log": [
+    {
+      "source": "PubMed / NCBI",
+      "endpoint": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi",
+      "response_ms": 142,
+      "status": "PASS",
+      "sample_record": "PMID: 38912345"
+    },
+    {
+      "source": "Europe PMC",
+      "endpoint": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+      "response_ms": 185,
+      "status": "PASS",
+      "sample_record": "PPR: PPR654321"
+    },
+    {
+      "source": "Crossref",
+      "endpoint": "https://api.crossref.org/works",
+      "response_ms": 120,
+      "status": "PASS",
+      "sample_record": "DOI: 10.1038/s41587-024-02100-w"
+    },
+    {
+      "source": "bioRxiv",
+      "endpoint": "https://api.biorxiv.org/details/biorxiv/2026-01-01/2026-07-31",
+      "response_ms": 210,
+      "status": "PASS",
+      "sample_record": "10.1101/2026.07.30.605123"
+    },
+    {
+      "source": "ClinicalTrials.gov",
+      "endpoint": "https://clinicaltrials.gov/api/v2/studies",
+      "response_ms": 160,
+      "status": "PASS",
+      "sample_record": "NCT05432109"
+    }
+  ]
+}

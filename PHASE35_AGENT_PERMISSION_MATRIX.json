@@ -1,0 +1,63 @@
+{
+  "schema": "biointel.phase35.agent-permission-matrix.v1",
+  "runtime": "deterministic_local_extension_of_phase24",
+  "external_ai_called": false,
+  "agents": {
+    "literature_discovery": ["evidence_read", "saved_search_write"],
+    "evidence_synthesis": ["evidence_read", "claim_graph_write"],
+    "hypothesis_generation": ["evidence_read", "hypothesis_draft", "claim_graph_write"],
+    "experimental_design": ["hypothesis_read", "experiment_draft"],
+    "bioinformatics_workflow": [
+      "dataset_metadata_read",
+      "tool_registry_read",
+      "compute_plan_draft"
+    ],
+    "statistical_analysis": ["dataset_metadata_read", "analysis_plan_draft"],
+    "systems_biology": [
+      "evidence_read",
+      "claim_graph_write",
+      "digital_twin_plan_draft"
+    ],
+    "biomarker_discovery": [
+      "dataset_metadata_read",
+      "analysis_plan_draft",
+      "claim_graph_write"
+    ],
+    "drug_target_prioritization": ["evidence_read", "claim_graph_write"],
+    "reproducibility": ["compute_result_read", "reproducibility_report_write"],
+    "scientific_reviewer": ["evidence_read", "claim_graph_read", "review_draft"],
+    "research_integrity": ["evidence_read", "claim_graph_read", "integrity_flags_write"]
+  },
+  "project_binding": {
+    "datasets": "bound Phase 34 research project only",
+    "compute_runs": "bound Phase 34 research project and tenant only",
+    "digital_twin_scenarios": "explicit institution policy allowlist only",
+    "scientific_tools": "approved and active Phase 34 tools only"
+  },
+  "always_prohibited": [
+    "unrestricted_shell",
+    "unauthorized_dataset_access",
+    "restricted_data_export_without_approval",
+    "publish_paper",
+    "submit_manuscript",
+    "claim_clinical_validation",
+    "claim_medical_discovery",
+    "diagnose",
+    "recommend_treatment",
+    "approve_ethics",
+    "official_ip_claim",
+    "alter_final_record",
+    "delete_evidence",
+    "modify_permissions",
+    "paid_compute",
+    "external_communication"
+  ],
+  "explicit_second_human_approval": [
+    "task_output_review",
+    "hypothesis_approval_for_testing",
+    "experiment_plan_approval",
+    "compute_execute",
+    "draft_publication_asset",
+    "restricted_export"
+  ]
+}

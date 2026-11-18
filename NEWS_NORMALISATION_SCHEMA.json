@@ -1,0 +1,33 @@
+{
+  "schema_id": "biointel.science_plus.news_item.v2",
+  "required_fields": [
+    "item_id",
+    "tenant_id",
+    "provider_key",
+    "title",
+    "content_type",
+    "published_at",
+    "canonical_url"
+  ],
+  "optional_fields": [
+    "doi",
+    "pmid",
+    "pmcid",
+    "clinical_trial_id",
+    "abstract",
+    "authors",
+    "journal",
+    "publisher",
+    "peer_review_status",
+    "retraction_status",
+    "scientific_topics"
+  ],
+  "trust_labels": [
+    "PEER_REVIEWED",
+    "PREPRINT_NOT_PEER_REVIEWED",
+    "CLINICAL_TRIAL",
+    "REGULATORY_UPDATE",
+    "RETRACTED",
+    "CORRECTED"
+  ]
+}

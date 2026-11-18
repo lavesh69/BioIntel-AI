@@ -1,0 +1,15 @@
+{
+  "schema": "biointel.step192.full-test-suite-status.v1",
+  "build_host": "Linux / Python 3.13",
+  "focused_step176_to_step192": {
+    "passed": true,
+    "tests": 102
+  },
+  "full_legacy_suite": {
+    "passed": false,
+    "executed_to_completion": false,
+    "collection_blocker": "The build host does not have Streamlit and the packaged Windows Python 3.11 runtime installed.",
+    "collection_errors": 30,
+    "interpretation": "Environment limitation on the build host; no full-suite pass is claimed. Run after INSTALL_WINDOWS.bat or in configured Python 3.11 CI."
+  }
+}

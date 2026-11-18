@@ -1,0 +1,29 @@
+{
+  "base_runtime": "BioIntel-AI-Step196-WINDOWS-RELEASE-V16",
+  "neuro_modules": 23,
+  "new_capabilities": [
+    "unit-normalized schemas",
+    "guided workflows",
+    "cross-module consistency",
+    "resource provenance",
+    "persistent projects",
+    "portable project import/export",
+    "JSON/HTML/Markdown reports",
+    "optional specialist adapters",
+    "persistent background queue",
+    "expanded qualification"
+  ],
+  "release_boundaries": {
+    "clinical_use": false,
+    "controlled_release": false,
+    "research_screening": true
+  },
+  "schema": "biointel.release.step198.neuro-cns.v1",
+  "step": 198,
+  "tests": {
+    "failed": 0,
+    "focused_passed": 37
+  },
+  "title": "BioIntel AI Step198 Neuro/CNS Scientific Hardening",
+  "workspaces": 5
+}

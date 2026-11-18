@@ -1,0 +1,71 @@
+{
+  "files": [
+    {
+      "bytes": 5263,
+      "exists": true,
+      "path": "src/biointel/science_pulse/models.py",
+      "sha256": "3f33ad51ff5849ec5b9deef277386bd0ecec1028a20b6a1b2eb21d7b889f323f"
+    },
+    {
+      "bytes": 55438,
+      "exists": true,
+      "path": "src/biointel/science_pulse/store.py",
+      "sha256": "14fbf0976818105afcfd60e527966dd3ed3b05dbc2080a6ff8a8f0cc829a6748"
+    },
+    {
+      "bytes": 34903,
+      "exists": true,
+      "path": "src/biointel/science_pulse/service.py",
+      "sha256": "26fa70e173aa2092b3790ab387d2271449cc1033b6fc32a2499b0eba939f191c"
+    },
+    {
+      "bytes": 14083,
+      "exists": true,
+      "path": "src/biointel/science_pulse/api.py",
+      "sha256": "513d2996852120b36f27b4f57bd6e5edfb2b560fbcbe2f35b1447e775d54bacf"
+    },
+    {
+      "bytes": 24206,
+      "exists": true,
+      "path": "src/biointel/science_pulse/news_ui.py",
+      "sha256": "e7f146374e587ae7c3dc733b02063ca7f67fbf25e133269102ad65bf5fca73ae"
+    },
+    {
+      "bytes": 17944,
+      "exists": true,
+      "path": "src/biointel/science_pulse/ui.py",
+      "sha256": "a587df342c533fd2be1cbbbcd5054767ad0d0b30946a6f95758e27146be5563e"
+    },
+    {
+      "bytes": 17221,
+      "exists": true,
+      "path": "src/biointel/education/ui.py",
+      "sha256": "a6ef632d448027f346f32026d646d40ca4fa69068aeee76ec739d1e2bf1aee3e"
+    },
+    {
+      "bytes": 10690,
+      "exists": true,
+      "path": "tests/test_science_pulse_news_first_ui.py",
+      "sha256": "ae586407b01258ed69e9d7a19918520349bf90137bcc5367471588c978f540e6"
+    },
+    {
+      "bytes": 12194,
+      "exists": true,
+      "path": "scripts/build_science_pulse_news_first_reports.py",
+      "sha256": "a938166a4d0cc63067679c4be15fc35cd8a323f7eb16d6339457fdf1188b41c1"
+    }
+  ],
+  "generated_at_utc": "2026-07-30T18:33:11Z",
+  "reports": [
+    "SCIENCE_PULSE_NEWS_FIRST_UI_REPORT.md",
+    "SCIENCE_PULSE_FINAL_INFORMATION_ARCHITECTURE.md",
+    "SCIENCE_PULSE_NEWS_CATEGORY_MATRIX.json",
+    "SCIENCE_PULSE_NEWS_CARD_SPEC.md",
+    "SCIENCE_PULSE_INTEGRATION_ACTION_MATRIX.json",
+    "SCIENCE_PULSE_NEWS_UI_TEST_REPORT.md",
+    "SCIENCE_PULSE_NEWS_UI_TEST_RESULTS.json",
+    "SCIENCE_PULSE_NEWS_UI_CHANGED_FILES.json",
+    "SCIENCE_PULSE_NEWS_UI_KNOWN_LIMITATIONS.md",
+    "CHANGELOG_SCIENCE_PULSE_NEWS_FIRST_UI.md"
+  ]
+}

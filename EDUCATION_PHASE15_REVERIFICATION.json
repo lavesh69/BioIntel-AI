@@ -1,0 +1,394 @@
+{
+  "schema": "biointel.education-phase15-verification.v1",
+  "generated_at": "2026-07-29T06:41:43.536691+00:00",
+  "passed": true,
+  "passed_controls": 30,
+  "total_controls": 30,
+  "controls": [
+    {
+      "name": "migration_applied",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "name": "durable_event_sequence",
+      "passed": true,
+      "evidence": {
+        "sequence": 1,
+        "id": "event_a2b63ab796954ae4aeaaf255d52f37aa",
+        "institution_id": "inst_ccaca3f5110744f991cf7eb5856b85e4",
+        "channel": "exam",
+        "event_type": "started",
+        "target_type": "",
+        "target_id": "",
+        "created_by": "admin",
+        "created_at": "2026-07-29T06:41:43.036665+00:00",
+        "expires_at": null,
+        "audience": {
+          "roles": [
+            "subject_teacher"
+          ]
+        },
+        "payload": {
+          "exam_id": "exam-1"
+        }
+      }
+    },
+    {
+      "name": "audience_event_visible",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "name": "audience_event_hidden",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "name": "event_tenant_access",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "name": "approved_rag_ingested",
+      "passed": true,
+      "evidence": {
+        "id": "ragingest_d256d9ab6ae84e168e44d4c55ffe80f5",
+        "institution_id": "inst_ccaca3f5110744f991cf7eb5856b85e4",
+        "project_id": "BIO101",
+        "document_id": "ragdoc_6b9c912b6cdc470bb6da5d22a35d34c1",
+        "parser": "txt",
+        "state": "completed",
+        "chunk_count": 1,
+        "character_count": 91,
+        "locator_count": 1,
+        "error_text": "",
+        "created_by": "teacher",
+        "created_at": "2026-07-29T06:41:43.094236+00:00",
+        "completed_at": "2026-07-29T06:41:43.098439+00:00",
+        "extraction": {
+          "chunk_chars": 100,
+          "overlap_chars": 10,
+          "source_sha256": "f57d3e53866d581cad04523fcd2448786bcf0b82e49166b2bd9792ac5039aee0",
+          "suffix": ".txt"
+        }
+      }
+    },
+    {
+      "name": "hybrid_index_ready",
+      "passed": true,
+      "evidence": {
+        "id": "ragindex_0d64eca0bcbd4301b037d8346ae01118",
+        "institution_id": "inst_ccaca3f5110744f991cf7eb5856b85e4",
+        "project_id": "BIO101",
+        "model_name": "biointel-hash-embedding-v1",
+        "dimensions": 128,
+        "chunk_count": 1,
+        "index_sha256": "6131a76da6a406de57ab73cc17092f4a0ac0dbf4ca814698aa1fa9adb4bde7a5",
+        "state": "ready",
+        "created_by": "teacher",
+        "created_at": "2026-07-29T06:41:43.122013+00:00",
+        "updated_at": "2026-07-29T06:41:43.122013+00:00"
+      }
+    },
+    {
+      "name": "hybrid_search_grounded",
+      "passed": true,
+      "evidence": {
+        "id": "hybridsearch_4f9bc8ae47944c1ca88a41257a55ec2f",
+        "project_id": "BIO101",
+        "query": "BRCA1 DNA repair",
+        "result_count": 1,
+        "results": [
+          {
+            "chunk_id": "ragchunk_f3530f190671457e965f029bc53ae3b7",
+            "document_id": "ragdoc_6b9c912b6cdc470bb6da5d22a35d34c1",
+            "document_title": "evidence",
+            "source_name": "evidence.txt",
+            "page_number": null,
+            "section": "",
+            "locator": "line 1",
+            "lexical_score": 1.0,
+            "vector_score": 0.328507,
+            "score": 0.597104,
+            "excerpt": "BRCA1 participates in DNA repair and genome stability. Chloroplasts support photosynthesis.",
+            "citation": "evidence.txt · line 1",
+            "document_sha256": "f57d3e53866d581cad04523fcd2448786bcf0b82e49166b2bd9792ac5039aee0"
+          }
+        ],
+        "evidence_status": "grounded",
+        "retrieval_policy": "Approved permission-filtered evidence; BM25 and deterministic local semantic vectors; results require scientific review."
+      }
+    },
+    {
+      "name": "hybrid_scores_present",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "name": "citation_hash_present",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "name": "model_runtime_configured",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "name": "model_runtime_verified",
+      "passed": true,
+      "evidence": {
+        "id": "modelcheck_eb03296f126e48cea48f1b38b363e345",
+        "runtime_id": "modelrt_c4ad35a532584408b6de8c8a828e0704",
+        "institution_id": "inst_ccaca3f5110744f991cf7eb5856b85e4",
+        "state": "verified",
+        "latency_ms": 0.33,
+        "evidence_json": "{\"http_status\":200,\"local_endpoint\":true,\"response_keys\":[\"models\"]}",
+        "error_text": "",
+        "checked_by": "admin",
+        "checked_at": "2026-07-29T06:41:43.167593+00:00"
+      }
+    },
+    {
+      "name": "model_generation_transport",
+      "passed": true,
+      "evidence": {
+        "runtime_id": "modelrt_c4ad35a532584408b6de8c8a828e0704",
+        "model": "shiro-local",
+        "text": "Verified local answer: Explain DNA repair",
+        "latency_ms": 0.03,
+        "external_processing": false
+      }
+    },
+    {
+      "name": "pulse_provider_completed",
+      "passed": true,
+      "evidence": {
+        "id": "pulserun_1fa61b22919a4a1491e7ff7bde045a7a",
+        "config_id": "pulseprovider_dc0d5933025a4600bb6e71bad3a44561",
+        "institution_id": "inst_ccaca3f5110744f991cf7eb5856b85e4",
+        "state": "completed",
+        "received_count": 1,
+        "inserted_count": 1,
+        "cursor_text": "next",
+        "error_text": "",
+        "created_by": "admin",
+        "created_at": "2026-07-29T06:41:43.206194+00:00",
+        "completed_at": "2026-07-29T06:41:43.219867+00:00",
+        "evidence": {
+          "provider": "crossref",
+          "query": "bioinformatics"
+        }
+      }
+    },
+    {
+      "name": "pulse_provider_inserted",
+      "passed": true,
+      "evidence": {
+        "id": "pulserun_1fa61b22919a4a1491e7ff7bde045a7a",
+        "config_id": "pulseprovider_dc0d5933025a4600bb6e71bad3a44561",
+        "institution_id": "inst_ccaca3f5110744f991cf7eb5856b85e4",
+        "state": "completed",
+        "received_count": 1,
+        "inserted_count": 1,
+        "cursor_text": "next",
+        "error_text": "",
+        "created_by": "admin",
+        "created_at": "2026-07-29T06:41:43.206194+00:00",
+        "completed_at": "2026-07-29T06:41:43.219867+00:00",
+        "evidence": {
+          "provider": "crossref",
+          "query": "bioinformatics"
+        }
+      }
+    },
+    {
+      "name": "pulse_provider_deduplicated",
+      "passed": true,
+      "evidence": {
+        "id": "pulserun_41901b65df4c46f2bbfdba9be0adda89",
+        "config_id": "pulseprovider_dc0d5933025a4600bb6e71bad3a44561",
+        "institution_id": "inst_ccaca3f5110744f991cf7eb5856b85e4",
+        "state": "completed",
+        "received_count": 1,
+        "inserted_count": 0,
+        "cursor_text": "next",
+        "error_text": "",
+        "created_by": "admin",
+        "created_at": "2026-07-29T06:41:43.245227+00:00",
+        "completed_at": "2026-07-29T06:41:43.254287+00:00",
+        "evidence": {
+          "provider": "crossref",
+          "query": "bioinformatics"
+        }
+      }
+    },
+    {
+      "name": "pulse_normalized_record",
+      "passed": true,
+      "evidence": {
+        "id": "pulseext_2004fb59e79546fdb8e85cf3765cc4e8",
+        "institution_id": "inst_ccaca3f5110744f991cf7eb5856b85e4",
+        "provider": "crossref",
+        "external_id": "10.1000/phase15.1",
+        "doi": "10.1000/phase15.1",
+        "pmid": "",
+        "title": "Phase 15 bioinformatics evidence",
+        "abstract_excerpt": "Scientific metadata evidence.",
+        "authors_json": "[\"A Researcher\"]",
+        "source_url": "https://doi.org/10.1000/phase15.1",
+        "published_at": "",
+        "record_type": "journal-article",
+        "metadata_json": "{\"DOI\":\"10.1000/phase15.1\",\"URL\":\"https://doi.org/10.1000/phase15.1\",\"abstract\":\"Scientific metadata evidence.\",\"author\":[{\"family\":\"Researcher\",\"given\":\"A\"}],\"title\":[\"Phase 15 bioinformatics evidence\"],\"type\":\"journal-article\"}",
+        "created_at": "2026-07-29T06:41:43.206194+00:00",
+        "updated_at": "2026-07-29T06:41:43.254144+00:00"
+      }
+    },
+    {
+      "name": "media_asset_registered",
+      "passed": true,
+      "evidence": {
+        "id": "mediaasset_a3e97d1ef8c2483eb0c8fa28564af51a",
+        "institution_id": "inst_ccaca3f5110744f991cf7eb5856b85e4",
+        "lecture_id": "lec_4f58a67dcaba4e91ae4dc1b839004bc9",
+        "source_path": "/tmp/biointel-phase15-6_yszyt5/lecture.mp4",
+        "sha256": "a143c75ce85effc281826f952748f336c109d622658cc912ca53f55f8fd23c64",
+        "size_bytes": 13,
+        "mime_type": "video/mp4",
+        "duration_seconds": 100.0,
+        "width": 0,
+        "height": 0,
+        "video_codec": "",
+        "audio_codec": "",
+        "probe_json": "{}",
+        "processing_state": "registered",
+        "created_by": "teacher",
+        "created_at": "2026-07-29T06:41:43.340590+00:00",
+        "updated_at": "2026-07-29T06:41:43.340590+00:00"
+      }
+    },
+    {
+      "name": "seek_does_not_complete",
+      "passed": true,
+      "evidence": {
+        "event_id": "playback_24f82877ac0a470fb9d24c141386e86a",
+        "lecture_id": "lec_4f58a67dcaba4e91ae4dc1b839004bc9",
+        "user_id": "student",
+        "event_count": 3,
+        "observed_watch_seconds": 0.0,
+        "max_position_seconds": 100.0,
+        "duration_seconds": 100.0,
+        "completion_threshold_seconds": 85.0,
+        "completed": false,
+        "policy": "Completion uses server-observed plausible playback intervals; seek-only progress does not count."
+      }
+    },
+    {
+      "name": "observed_playback_completes",
+      "passed": true,
+      "evidence": {
+        "lecture_id": "lec_4f58a67dcaba4e91ae4dc1b839004bc9",
+        "user_id": "student",
+        "event_count": 7,
+        "observed_watch_seconds": 90.0,
+        "max_position_seconds": 100.0,
+        "duration_seconds": 100.0,
+        "completion_threshold_seconds": 85.0,
+        "completed": true,
+        "policy": "Completion uses server-observed plausible playback intervals; seek-only progress does not count."
+      }
+    },
+    {
+      "name": "playback_policy_visible",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "name": "phase15_posture_100",
+      "passed": true,
+      "evidence": {
+        "institution_id": "inst_ccaca3f5110744f991cf7eb5856b85e4",
+        "migration": "education_phase15_runtime_intelligence_v1",
+        "counts": {
+          "events": 5,
+          "rag_indexes": 1,
+          "verified_model_runtimes": 1,
+          "pulse_records": 1,
+          "media_assets": 1
+        },
+        "local_controls": {
+          "durable_realtime_events": true,
+          "hybrid_bm25_vector_rag": true,
+          "permission_filtered_retrieval": true,
+          "local_and_opt_in_model_runtimes": true,
+          "built_in_science_pulse_connectors": true,
+          "server_governed_media_telemetry": true,
+          "external_runtime_truthfulness": true
+        },
+        "local_control_coverage_percent": 100.0,
+        "qualification_boundaries": [
+          "A configured remote model endpoint is not verified until a live HTTP check succeeds.",
+          "Science provider availability and rate limits depend on public services.",
+          "Media transcoding requires ffmpeg/ffprobe on the deployment machine.",
+          "The durable event stream is SSE-ready; multi-node fan-out requires Redis or another external broker.",
+          "The legacy application database remains SQLite-first until a complete repository cutover is independently rehearsed."
+        ]
+      }
+    },
+    {
+      "name": "phase15_truth_boundaries",
+      "passed": true,
+      "evidence": [
+        "A configured remote model endpoint is not verified until a live HTTP check succeeds.",
+        "Science provider availability and rate limits depend on public services.",
+        "Media transcoding requires ffmpeg/ffprobe on the deployment machine.",
+        "The durable event stream is SSE-ready; multi-node fan-out requires Redis or another external broker.",
+        "The legacy application database remains SQLite-first until a complete repository cutover is independently rehearsed."
+      ]
+    },
+    {
+      "name": "phase15_page",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "name": "phase15_ui",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "name": "phase15_worker",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "name": "phase15_navigation",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "name": "phase15_api_contract",
+      "passed": true,
+      "evidence": [
+        "phase15/events/stream",
+        "phase15/rag-indexes",
+        "phase15/rag-search",
+        "phase15/model-runtimes",
+        "phase15/pulse-providers",
+        "phase15/lectures/{lecture_id}/playback-events",
+        "phase15/posture"
+      ]
+    },
+    {
+      "name": "phase15_sse_transport",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "name": "phase15_modular_architecture",
+      "passed": true,
+      "evidence": null
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+@echo off
+setlocal
+cd /d "%~dp0"
+rem Legacy verifier compatibility: VERIFY_STEP159_WINDOWS.bat VERIFY_STEP170_WINDOWS.bat VERIFY_STEP171_WINDOWS.bat VERIFY_STEP172_WINDOWS.bat VERIFY_STEP173_WINDOWS.bat VERIFY_STEP174_WINDOWS.bat
+call VERIFY_STEP175_WINDOWS.bat
+exit /b %errorlevel%

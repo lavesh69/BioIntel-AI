@@ -1,0 +1,28 @@
+schema: biointel.step40.validation-policy.v1
+minimum_test_rows: 100
+required_dti_splits:
+  - cold_drug
+  - cold_target
+  - cold_drug_and_target
+  - scaffold
+  - protein_sequence_cluster
+  - temporal
+  - independent_external
+  - prospective
+classification_thresholds:
+  roc_auc: 0.75
+  pr_auc: 0.50
+  balanced_accuracy: 0.65
+calibration:
+  maximum_ece: 0.10
+  minimum_interval_coverage: 0.85
+independence:
+  external_provider_must_differ_from_training_provider: true
+  reviewer_organization_must_differ_from_sponsor: true
+  signed_manifest_required: true
+  placeholder_hashes_forbidden: true
+prospective:
+  preregistration_required: true
+  prediction_lock_required: true
+  blinded_codes_required: true
+  minimum_outcome_pairs: 100

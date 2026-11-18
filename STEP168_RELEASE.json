@@ -1,0 +1,14 @@
+{
+  "schema": "biointel.step168.release.v1",
+  "step": 168,
+  "version": "14.0.0",
+  "title": "Remaining Modules and External Evidence Operations 10/10",
+  "focused_modules": 35,
+  "all_modules": 80,
+  "software_owned_10of10": true,
+  "external_evidence_completion_inferred": false,
+  "verification_commands": [
+    "VERIFY_STEP168_WINDOWS.bat",
+    "RUN_STEP168_RELEASE_DOCTOR_WINDOWS.bat"
+  ]
+}

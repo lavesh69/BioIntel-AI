@@ -1,0 +1,524 @@
+{
+  "schema": "biointel.education-phase16-verification.v1",
+  "generated_at": "2026-07-29T06:41:45.600844+00:00",
+  "passed": true,
+  "passed_controls": 30,
+  "total_controls": 30,
+  "controls": [
+    {
+      "name": "migration_applied",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "name": "consumer_registered",
+      "passed": true,
+      "evidence": {
+        "id": "consumer_d12c644f97f549c38727cfd455065753",
+        "institution_id": "inst_9a532e7029544937b86f9fa142133c20",
+        "actor_id": "teacher",
+        "consumer_key": "desktop",
+        "last_sequence": 0,
+        "state": "active",
+        "metadata_json": "{}",
+        "heartbeat_at": "2026-07-29T06:41:45.159560+00:00",
+        "created_at": "2026-07-29T06:41:45.159560+00:00",
+        "updated_at": "2026-07-29T06:41:45.159560+00:00"
+      }
+    },
+    {
+      "name": "consumer_received_event",
+      "passed": true,
+      "evidence": {
+        "events": [
+          {
+            "sequence": 1,
+            "id": "event_ebeaf6d019be40eaa793c57cfcaa152b",
+            "institution_id": "inst_9a532e7029544937b86f9fa142133c20",
+            "channel": "exam",
+            "event_type": "started",
+            "target_type": "",
+            "target_id": "",
+            "created_by": "admin",
+            "created_at": "2026-07-29T06:41:45.170903+00:00",
+            "expires_at": null,
+            "audience": {
+              "roles": [
+                "subject_teacher"
+              ]
+            },
+            "payload": {}
+          }
+        ],
+        "event_count": 1,
+        "next_sequence": 1,
+        "transport": "durable-event-stream",
+        "consumer_id": "consumer_d12c644f97f549c38727cfd455065753",
+        "acknowledged": true
+      }
+    },
+    {
+      "name": "consumer_ack_cursor",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "name": "consumer_heartbeat",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "name": "event_cleanup",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "name": "mmr_search_grounded",
+      "passed": true,
+      "evidence": {
+        "id": "hybridsearch_6c16d5b5a76f4b0abaa872f65c67fef4",
+        "project_id": "BIO101",
+        "query": "BRCA1 DNA repair",
+        "result_count": 1,
+        "evidence_status": "grounded",
+        "retrieval_policy": "Approved permission-filtered evidence; lexical and semantic ranking followed by maximum-marginal-relevance diversity.",
+        "results": [
+          {
+            "chunk_id": "ragchunk_aa391813fdc9471e8ee568fc73b17f1e",
+            "document_id": "ragdoc_26773794602d4e57bc72afdb11bbbc81",
+            "document_title": "evidence",
+            "source_name": "evidence.txt",
+            "page_number": null,
+            "section": "",
+            "locator": "line 1",
+            "lexical_score": 1.0,
+            "vector_score": 0.098476,
+            "score": 0.504162,
+            "excerpt": "BRCA1 participates in DNA repair and genome stability. TP53 controls checkpoints. Chloroplasts perform photosynthesis.",
+            "citation": "evidence.txt \u00b7 line 1",
+            "document_sha256": "0b941b9484234a7363ecbb50e229dc4868684c13a4fe35af225f9d9034aa7d90",
+            "mmr_score": 0.378121,
+            "rank": 1
+          }
+        ],
+        "diversity_weight": 0.25
+      }
+    },
+    {
+      "name": "mmr_rank_and_score",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "name": "rag_eval_case",
+      "passed": true,
+      "evidence": {
+        "id": "ragevalcase_2483685aad8348f58dff70b187d2f4e6",
+        "institution_id": "inst_9a532e7029544937b86f9fa142133c20",
+        "project_id": "BIO101",
+        "query_text": "BRCA1 DNA repair",
+        "expected_document_ids_json": "[\"ragdoc_26773794602d4e57bc72afdb11bbbc81\"]",
+        "expected_chunk_ids_json": "[]",
+        "state": "active",
+        "created_by": "teacher",
+        "created_at": "2026-07-29T06:41:45.341445+00:00",
+        "updated_at": "2026-07-29T06:41:45.341445+00:00"
+      }
+    },
+    {
+      "name": "rag_recall",
+      "passed": true,
+      "evidence": {
+        "id": "rageval_57fd362deb234f99a324a56fec0622ce",
+        "project_id": "BIO101",
+        "top_k": 3,
+        "case_count": 1,
+        "recall_at_k": 1.0,
+        "mean_reciprocal_rank": 1.0,
+        "grounded_rate": 1.0,
+        "details": [
+          {
+            "case_id": "ragevalcase_2483685aad8348f58dff70b187d2f4e6",
+            "query": "BRCA1 DNA repair",
+            "relevant_ranks": [
+              1
+            ],
+            "recall_at_k": 1.0,
+            "reciprocal_rank": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "rag_mrr",
+      "passed": true,
+      "evidence": {
+        "id": "rageval_57fd362deb234f99a324a56fec0622ce",
+        "project_id": "BIO101",
+        "top_k": 3,
+        "case_count": 1,
+        "recall_at_k": 1.0,
+        "mean_reciprocal_rank": 1.0,
+        "grounded_rate": 1.0,
+        "details": [
+          {
+            "case_id": "ragevalcase_2483685aad8348f58dff70b187d2f4e6",
+            "query": "BRCA1 DNA repair",
+            "relevant_ranks": [
+              1
+            ],
+            "recall_at_k": 1.0,
+            "reciprocal_rank": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "pulse_rule",
+      "passed": true,
+      "evidence": {
+        "id": "pulsealert_74a1f08d1c6b4287b18c7f9b557d8a23",
+        "institution_id": "inst_9a532e7029544937b86f9fa142133c20",
+        "name": "CRISPR watch",
+        "query_terms_json": "[\"crispr\"]",
+        "providers_json": "[\"crossref\"]",
+        "record_types_json": "[]",
+        "state": "active",
+        "created_by": "teacher",
+        "created_at": "2026-07-29T06:41:45.418087+00:00",
+        "updated_at": "2026-07-29T06:41:45.418087+00:00"
+      }
+    },
+    {
+      "name": "pulse_alert_match",
+      "passed": true,
+      "evidence": {
+        "rules_evaluated": 1,
+        "records_examined": 1,
+        "new_hits": 1
+      }
+    },
+    {
+      "name": "pulse_alert_visible",
+      "passed": true,
+      "evidence": [
+        {
+          "id": "pulsehit_fee1039d95064270848f2af3fa57f3ae",
+          "state": "unread",
+          "created_at": "2026-07-29T06:41:45.435249+00:00",
+          "read_at": null,
+          "matched_terms_json": "[\"crispr\"]",
+          "rule_name": "CRISPR watch",
+          "provider": "crossref",
+          "title": "CRISPR genome editing",
+          "doi": "10.1/x",
+          "pmid": "",
+          "source_url": "https://example.org",
+          "published_at": "2026-07-29T06:41:45.375802+00:00"
+        }
+      ]
+    },
+    {
+      "name": "pulse_alert_read",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "name": "scientific_dataset",
+      "passed": true,
+      "evidence": {
+        "id": "scidata_20d3898bcff3409d880a391bf3be5316",
+        "institution_id": "inst_9a532e7029544937b86f9fa142133c20",
+        "name": "DNA demo",
+        "source_name": "sequences.fasta",
+        "stored_path": "/tmp/biointel-phase16-3lz873nn/education/scientific-datasets/inst_9a532e7029544937b86f9fa142133c20/scidata_20d3898bcff3409d880a391bf3be5316.fasta",
+        "sha256": "5eae94ad5ffa85abd96dc614ae950d5d67b89637945d026023ddd3328710ed47",
+        "format": "fasta",
+        "record_count": 2,
+        "size_bytes": 50,
+        "state": "ready",
+        "metadata_json": "{\"base_counts\":{\"A\":12,\"C\":7,\"G\":8,\"T\":9},\"gc_percent\":41.667,\"max_length\":18,\"mean_length\":18.0,\"min_length\":18,\"n_percent\":0.0,\"record_count\":2,\"total_bases\":36,\"valid_iupac_percent\":100.0}",
+        "created_by": "teacher",
+        "created_at": "2026-07-29T06:41:45.477321+00:00"
+      }
+    },
+    {
+      "name": "scientific_qc",
+      "passed": true,
+      "evidence": {
+        "id": "scirun_984c58063c654e35ae075c770d46e7a0",
+        "analysis_type": "qc",
+        "dataset_id": "scidata_20d3898bcff3409d880a391bf3be5316",
+        "result": {
+          "record_count": 2,
+          "total_bases": 36,
+          "min_length": 18,
+          "max_length": 18,
+          "mean_length": 18.0,
+          "gc_percent": 41.667,
+          "n_percent": 0.0,
+          "valid_iupac_percent": 100.0,
+          "base_counts": {
+            "A": 12,
+            "C": 7,
+            "G": 8,
+            "T": 9
+          }
+        },
+        "artifact_path": "/tmp/biointel-phase16-3lz873nn/education/scientific-results/inst_9a532e7029544937b86f9fa142133c20/scirun_984c58063c654e35ae075c770d46e7a0.json",
+        "artifact_sha256": "811240ab33dd8c47750a0b2643a0707ed93d22fb21cc2a772f2a5d6971263c8a"
+      }
+    },
+    {
+      "name": "scientific_translation",
+      "passed": true,
+      "evidence": {
+        "id": "scirun_b1d12ab9bdde446aa1034799fd8b9128",
+        "analysis_type": "translate",
+        "dataset_id": "scidata_20d3898bcff3409d880a391bf3be5316",
+        "result": {
+          "record": "seq1",
+          "frame": 1,
+          "protein": "MKFGP*"
+        },
+        "artifact_path": "/tmp/biointel-phase16-3lz873nn/education/scientific-results/inst_9a532e7029544937b86f9fa142133c20/scirun_b1d12ab9bdde446aa1034799fd8b9128.json",
+        "artifact_sha256": "4e405d0e5c8f1685264059d3001971183ae5b7a4d0bfcc8f7a38ad96b14d8ff6"
+      }
+    },
+    {
+      "name": "scientific_kmer",
+      "passed": true,
+      "evidence": {
+        "id": "scirun_d88204864b0142f0996a44bfc59cc2b2",
+        "analysis_type": "kmer",
+        "dataset_id": "scidata_20d3898bcff3409d880a391bf3be5316",
+        "result": {
+          "record": "seq1",
+          "k": 3,
+          "profile": [
+            {
+              "kmer": "ATG",
+              "count": 1,
+              "frequency": 0.0625
+            },
+            {
+              "kmer": "TGA",
+              "count": 1,
+              "frequency": 0.0625
+            },
+            {
+              "kmer": "GAA",
+              "count": 1,
+              "frequency": 0.0625
+            },
+            {
+              "kmer": "AAA",
+              "count": 1,
+              "frequency": 0.0625
+            },
+            {
+              "kmer": "AAT",
+              "count": 1,
+              "frequency": 0.0625
+            },
+            {
+              "kmer": "ATT",
+              "count": 1,
+              "frequency": 0.0625
+            },
+            {
+              "kmer": "TTT",
+              "count": 1,
+              "frequency": 0.0625
+            },
+            {
+              "kmer": "TTG",
+              "count": 1,
+              "frequency": 0.0625
+            },
+            {
+              "kmer": "TGG",
+              "count": 1,
+              "frequency": 0.0625
+            },
+            {
+              "kmer": "GGG",
+              "count": 1,
+              "frequency": 0.0625
+            },
+            {
+              "kmer": "GGC",
+              "count": 1,
+              "frequency": 0.0625
+            },
+            {
+              "kmer": "GCC",
+              "count": 1,
+              "frequency": 0.0625
+            },
+            {
+              "kmer": "CCC",
+              "count": 1,
+              "frequency": 0.0625
+            },
+            {
+              "kmer": "CCT",
+              "count": 1,
+              "frequency": 0.0625
+            },
+            {
+              "kmer": "CTA",
+              "count": 1,
+              "frequency": 0.0625
+            },
+            {
+              "kmer": "TAA",
+              "count": 1,
+              "frequency": 0.0625
+            }
+          ]
+        },
+        "artifact_path": "/tmp/biointel-phase16-3lz873nn/education/scientific-results/inst_9a532e7029544937b86f9fa142133c20/scirun_d88204864b0142f0996a44bfc59cc2b2.json",
+        "artifact_sha256": "f60bc2a1d2c25cbee0d2661c5d4ebda9699af81176727a7ea6775535dfc83b52"
+      }
+    },
+    {
+      "name": "scientific_alignment",
+      "passed": true,
+      "evidence": {
+        "id": "scirun_3928a57f63224defb21305854066fe79",
+        "analysis_type": "alignment",
+        "dataset_id": "scidata_20d3898bcff3409d880a391bf3be5316",
+        "result": {
+          "left_record": "seq1",
+          "right_record": "seq2",
+          "score": 33,
+          "identity_percent": 94.444,
+          "aligned_length": 18,
+          "left": "ATGAAATTTGGGCCCTAA",
+          "right": "ATGAAATTCGGGCCCTAA"
+        },
+        "artifact_path": "/tmp/biointel-phase16-3lz873nn/education/scientific-results/inst_9a532e7029544937b86f9fa142133c20/scirun_3928a57f63224defb21305854066fe79.json",
+        "artifact_sha256": "93945adbf948a7fec9181b77aab03306f1b6163a7bdf497d956090633986b627"
+      }
+    },
+    {
+      "name": "media_job_planned",
+      "passed": true,
+      "evidence": {
+        "id": "mediajob_3357fea97d60416a95d858ca7874b83a",
+        "institution_id": "inst_9a532e7029544937b86f9fa142133c20",
+        "asset_id": "mediaasset_4ae3f8438b5348a3bac887c08c99740a",
+        "profile": "thumbnail",
+        "output_dir": "/tmp/biointel-phase16-3lz873nn/education/processed-media/inst_9a532e7029544937b86f9fa142133c20/lec_e1040a12d2a04bb6b35f01e4e2ada4b6/mediajob_3357fea97d60416a95d858ca7874b83a",
+        "state": "planned",
+        "progress": 0,
+        "command_json": "[\"/usr/bin/ffmpeg\",\"-y\",\"-ss\",\"2\",\"-i\",\"/tmp/biointel-phase16-3lz873nn/lecture.mp4\",\"-frames:v\",\"1\",\"/tmp/biointel-phase16-3lz873nn/education/processed-media/inst_9a532e7029544937b86f9fa142133c20/lec_e1040a12d2a04bb6b35f01e4e2ada4b6/mediajob_3357fea97d60416a95d858ca7874b83a/thumbnail.jpg\"]",
+        "evidence_json": "{\"ffmpeg_available\":true}",
+        "error_text": "",
+        "created_by": "teacher",
+        "created_at": "2026-07-29T06:41:45.559180+00:00",
+        "updated_at": "2026-07-29T06:41:45.559180+00:00"
+      }
+    },
+    {
+      "name": "media_command_evidence",
+      "passed": true,
+      "evidence": "[\"/usr/bin/ffmpeg\",\"-y\",\"-ss\",\"2\",\"-i\",\"/tmp/biointel-phase16-3lz873nn/lecture.mp4\",\"-frames:v\",\"1\",\"/tmp/biointel-phase16-3lz873nn/education/processed-media/inst_9a532e7029544937b86f9fa142133c20/lec_e1040a12d2a04bb6b35f01e4e2ada4b6/mediajob_3357fea97d60416a95d858ca7874b83a/thumbnail.jpg\"]"
+    },
+    {
+      "name": "posture_100",
+      "passed": true,
+      "evidence": {
+        "institution_id": "inst_9a532e7029544937b86f9fa142133c20",
+        "counts": {
+          "event_consumers": 1,
+          "rag_evaluation_cases": 1,
+          "pulse_alert_rules": 1,
+          "scientific_datasets": 1,
+          "media_processing_jobs": 1
+        },
+        "local_control_coverage_percent": 100.0,
+        "implemented": [
+          "durable consumer cursors and presence",
+          "MMR retrieval and measurable RAG evaluation",
+          "Science Pulse saved alerts",
+          "bounded FASTA/FASTQ scientific workbench",
+          "executable FFmpeg media pipeline"
+        ],
+        "qualification_boundaries": [
+          "Multi-node event fan-out still requires a real Redis or broker deployment.",
+          "Scientific analyses are bounded education workbenches and are not clinical diagnostic tools.",
+          "FFmpeg outputs are only verified when FFmpeg is installed and the processing job completes.",
+          "Formal provider, infrastructure, security and accessibility qualification remains external."
+        ]
+      }
+    },
+    {
+      "name": "truth_boundaries",
+      "passed": true,
+      "evidence": {
+        "institution_id": "inst_9a532e7029544937b86f9fa142133c20",
+        "counts": {
+          "event_consumers": 1,
+          "rag_evaluation_cases": 1,
+          "pulse_alert_rules": 1,
+          "scientific_datasets": 1,
+          "media_processing_jobs": 1
+        },
+        "local_control_coverage_percent": 100.0,
+        "implemented": [
+          "durable consumer cursors and presence",
+          "MMR retrieval and measurable RAG evaluation",
+          "Science Pulse saved alerts",
+          "bounded FASTA/FASTQ scientific workbench",
+          "executable FFmpeg media pipeline"
+        ],
+        "qualification_boundaries": [
+          "Multi-node event fan-out still requires a real Redis or broker deployment.",
+          "Scientific analyses are bounded education workbenches and are not clinical diagnostic tools.",
+          "FFmpeg outputs are only verified when FFmpeg is installed and the processing job completes.",
+          "Formal provider, infrastructure, security and accessibility qualification remains external."
+        ]
+      }
+    },
+    {
+      "name": "phase16_page",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "name": "phase16_ui",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "name": "phase16_worker",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "name": "phase16_navigation",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "name": "phase16_api_contract",
+      "passed": true,
+      "evidence": [
+        "phase16/event-consumers",
+        "phase16/rag-search",
+        "phase16/rag-evaluation-cases",
+        "phase16/pulse-alert-rules",
+        "phase16/scientific-datasets",
+        "phase16/media-assets",
+        "phase16/posture"
+      ]
+    },
+    {
+      "name": "phase16_modular_architecture",
+      "passed": true,
+      "evidence": null
+    }
+  ]
+}

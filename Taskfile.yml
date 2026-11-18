@@ -1,0 +1,6 @@
+version: '3'
+tasks:
+  bootstrap: {cmds: ['python scripts/bootstrap.py --dev']}
+  test: {cmds: ['pytest -q']}
+  quality: {cmds: ['PYTHONPATH=src python scripts/engineering_quality_gate.py']}
+  docs: {cmds: ['mkdocs build --strict']}

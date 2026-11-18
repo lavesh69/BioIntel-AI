@@ -1,0 +1,18 @@
+{
+  "schema": "biointel.release.v1",
+  "version": "13.2.0",
+  "step": 125,
+  "name": "Live Analysis Timeline and Scientific Notification Center",
+  "features": [
+    "persistent interactive analysis runs",
+    "inline stage-by-stage live timeline",
+    "background job timeline with pause resume and cancel",
+    "restart recovery for interrupted runs",
+    "persistent severity-aware scientific notifications",
+    "unread state and notification deduplication",
+    "module and job-center deep links",
+    "notification and timeline export"
+  ],
+  "functional_files_removed": 0,
+  "locked_modules_modified": false
+}

@@ -1,0 +1,19 @@
+{
+  "schema": "biointel.step118.bug-audit.v1",
+  "version": "11.8.0",
+  "status": "FIXED_AND_VERIFIED",
+  "bugs": [
+    {
+      "id": "UI-MX-CSS-001",
+      "severity": "high",
+      "title": "Interactive workspace cards lose styling after multipage navigation",
+      "symptom": "Summary labels render as concatenated plain text instead of bordered cards.",
+      "root_cause": "DOM-scoped CSS was incorrectly cached with session-scoped state.",
+      "fix": "Always inject the shared workspace CSS for the active page DOM and enforce resilient card display rules.",
+      "affected_pages": 77,
+      "verification": "77/77 runtime pages passed with stylesheet and summary markers"
+    }
+  ],
+  "regressions_detected": 0,
+  "excluded_module_hashes_preserved": 5
+}

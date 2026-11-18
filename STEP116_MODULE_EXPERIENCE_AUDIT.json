@@ -1,0 +1,55 @@
+{
+  "schema": "biointel.step116.module-experience-audit.v1",
+  "version": "11.6.0",
+  "generated_at_utc": "2026-07-11T05:42:55+00:00",
+  "scope": "Recommendation sections 2 through 9",
+  "module_workspaces": 78,
+  "scientific_groups": {
+    "sequence_genomics": 14,
+    "pathogen_longread": 9,
+    "omics_spatial": 8,
+    "protein_discovery": 12,
+    "analytical_imaging": 7,
+    "wetlab_design": 5,
+    "ai_models": 11,
+    "data_evidence": 12
+  },
+  "affected_pages": 77,
+  "hub_page": "pages/170_Module_Experience_Canvases_2_to_9.py",
+  "interaction_components": [
+    "domain canvas",
+    "workflow stepper",
+    "readiness matrix",
+    "before-after inspector",
+    "decision cards",
+    "entity passport",
+    "decision replay",
+    "cross-module handoff",
+    "scientific notebook",
+    "JSON state export"
+  ],
+  "performance": {
+    "default_collapsed": true,
+    "lazy_section_routing": true,
+    "hidden_network_calls": false,
+    "bounded_offline_canvas": true,
+    "shared_renderer": true
+  },
+  "excluded_source_hashes": {
+    "pages/6_DTI_Predictor.py": "84b3ecec1356b7239a057459210af4cd130c57c08dd9449b7239d1fe5954e0cc",
+    "pages/74_DTI_Validation_Evidence_Center.py": "a700a8a21649b49cf0e3a1521d2afad45039b83b767c2fe730b93fee7d4f7f11",
+    "pages/109_Lab_Instrument_Import_Center.py": "22b5aba5bfea37bb1ef330ed7cca3773467463f883189602d96a0151311c8f70",
+    "pages/126_LIMS_ELN_and_Sample_Chain_of_Custody_Hub.py": "eadaef1a283a5fa11ce6b243aa561508ba9ceba9f6fdcc207f4853ccf7d86905",
+    "pages/157_Instrument_Integration_Hub_2.py": "cf3a5f94756def0007dbff31184ec276d90b03fc6d6e1ca792c87189e5ab7d6d"
+  },
+  "verification": {
+    "regression_tests_passed": 126,
+    "affected_pages_passed": 77,
+    "renderer_states_passed": 40,
+    "python_files_compiled": 699,
+    "page_files_audited": 171,
+    "self_tests_passed": 7,
+    "databases_healthy": 36,
+    "database_rows_checked": 108077
+  }
+}

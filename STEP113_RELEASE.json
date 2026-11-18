@@ -1,0 +1,18 @@
+{
+  "schema": "biointel.step113.release.v1",
+  "release": "Step 113",
+  "version": "11.6.0",
+  "name": "Stability, Reliability & Performance Optimization",
+  "focus": [
+    "Windows-safe worker lifecycle and stale PID handling",
+    "Atomic and resumable reference asset downloads",
+    "Bounded native upload staging and parsing",
+    "Robust bioinformatics edge-case handling",
+    "Study-design state consistency and faster calculations",
+    "SQLite connection hygiene and managed storage safety",
+    "Runtime page import/bootstrap reliability"
+  ],
+  "upload_transport_limit_bytes": 1073741824,
+  "interactive_processing_boundary_bytes": 104857600,
+  "scientific_boundary": "Research planning and analysis support only. Specialist engines, references and independent scientific validation remain required where applicable."
+}

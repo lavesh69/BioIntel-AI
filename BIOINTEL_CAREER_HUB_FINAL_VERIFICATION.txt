@@ -1,0 +1,29 @@
+BioIntel Career, Internship & Scholarship Hub — Pre-Package Verification
+Build date: 2026-08-06
+
+Changed implementation:
+- src/biointel/education/career_hub_ui.py
+- src/biointel/ui/navigation.py
+- pages/355_BioIntel_Career_Internship_Scholarship_Hub.py
+- pages/168_Career_Internship_Scholarship_Hub.py
+- tests/test_career_hub_biointel_theme.py
+
+Checks completed:
+- Changed-file Python compilation: PASS
+- Canonical page applies BioIntel global theme: PASS
+- Compatibility page applies BioIntel global theme: PASS
+- Direct global-sidebar/navigation entry: PASS
+- Career backend and application tracker tests: PASS
+- Preparation checklist migration tests: PASS
+- Pending source-review boundary tests: PASS
+- Deterministic deadline-status tests: PASS
+- Education Universe compatibility tests: PASS
+- Real Education workspace tests: PASS
+- Targeted pytest result: 31 passed, 0 failed
+- Existing P0/P1/P2 scientific integrations preserved: PASS
+- Feature/module source removed: NO
+
+Environment limitation:
+Native Windows UI launch and visual browser inspection were not executed in the
+Linux packaging environment. ZIP integrity, extracted manifest verification and
+final package regression are performed during four-part packaging.

@@ -1,0 +1,384 @@
+app:
+  title: BioIntel AI
+  version: 15.6.0
+  max_sequence_length: 200000
+  max_batch_rows: 200000
+ui:
+  default_palette: Executive
+  default_font: Inter
+  compact: false
+  reduce_motion: false
+  high_contrast: false
+  preference_path: reports/ui_profiles/default/preferences.json
+  recent_page_limit: 8
+  favourite_limit: 20
+  available_palettes:
+    - Cyber 3D Bio-Matrix
+    - Royal 3D Biotech
+    - BioIntel Signature
+    - Executive
+    - Clinical
+    - Regulatory
+    - Aurora
+    - Ocean
+    - Emerald
+    - Rose
+    - Midnight Graphite
+    - Nordic Frost
+    - Solarized Lab
+    - Deep Space
+    - BioMatrix
+    - Royal Amethyst
+    - Ember Forge
+    - Arctic Glass
+    - Sakura Research
+    - Monochrome Pro
+    - Genomic Noir
+    - Helix Quantum
+    - CRISPR Cyan
+    - Proteome Platinum
+    - Cell Atlas
+    - Neural Biotech
+    - Quantum Enzyme
+    - Botanical Circuit
+    - Clinical Sapphire
+    - Molecular Carbon
+    - Spatial Omics
+    - BioLuminescence
+    - Pathway Gold
+    - Cryo-EM Frost
+    - Synthetic Biology
+    - Genomic Aurora
+    - Midnight Laboratory
+    - Clinical White
+    - Molecular Glass
+    - Cyber Biotech
+    - Oceanic Research
+    - Cellular Green
+    - Protein Violet
+    - Minimal Scientific
+    - High-Contrast Research
+    - Lavender Genome
+    - Rose Quartz Laboratory
+    - Emerald Muse
+    - Bronze Anatomy
+    - Obsidian Engineering
+    - Ink & Blueprint
+    - Solar Helix
+    - Black Diamond
+    - Crimson Genome
+    - Electric Lime
+    - Velvet Neon
+    - Copper Eclipse
+  available_fonts:
+    - Inter
+    - Aptos
+    - Segoe UI
+    - Arial
+    - Verdana
+    - Tahoma
+    - Trebuchet MS
+    - Georgia
+    - Times New Roman
+    - Courier New
+    - Century Gothic
+data_packs:
+  version: 15.3.0
+  manifest: data/packs/data_pack_manifest.json
+  foundation_file: data/packs/synthetic_foundation_dti_v2.csv
+  foundation_rows: 1920
+  extended_file: data/packs/synthetic_extended_dti_v2.csv
+  extended_rows: 5760
+  ultra_file: data/packs/synthetic_ultra_dti_v3.csv
+  ultra_rows: 16000
+  double_ultra_file: data/packs/synthetic_double_ultra_dti_v4.csv
+  double_ultra_rows: 32000
+  five_x_ultra_file: data/packs/synthetic_5x_ultra_dti_v5.csv
+  five_x_ultra_rows: 160000
+  batch_sample_5000_file: data/packs/batch_prediction_sample_5000.csv
+  molecule_library_1000_5x: data/libraries/molecule_library_1000_5x.csv
+  protein_library_160: data/libraries/protein_library_160.csv
+  five_x_classification_template: data/templates/five_x_classification_training_template_500.csv
+  five_x_regression_template: data/templates/five_x_regression_training_template_500.csv
+  five_x_prediction_template: data/templates/five_x_prediction_input_template_500.csv
+  batch_sample_2000_file: data/packs/batch_prediction_sample_2000.csv
+  molecule_library_640: data/libraries/molecule_library_640.csv
+  protein_library_50: data/libraries/protein_library_50.csv
+  double_classification_template: data/templates/double_classification_training_template_250.csv
+  double_regression_template: data/templates/double_regression_training_template_250.csv
+  double_prediction_template: data/templates/double_prediction_input_template_250.csv
+  batch_sample_1000_file: data/packs/batch_prediction_sample_1000.csv
+  molecule_library_400: data/libraries/molecule_library_400.csv
+  protein_library_40: data/libraries/protein_library_40.csv
+  classification_template: data/templates/classification_training_template.csv
+  regression_template: data/templates/regression_training_template.csv
+  prediction_template: data/templates/prediction_input_template.csv
+  batch_sample_file: data/packs/batch_prediction_sample_250.csv
+  batch_sample_rows: 250
+  molecule_library: data/libraries/molecule_library_240.csv
+  molecule_count: 240
+  protein_library: data/libraries/protein_library_24.csv
+  protein_count: 24
+  benchmark_summary: data/packs/model_benchmark_summary.json
+  synthetic_only: true
+  purpose: demo_and_stress_testing_only
+  production_eligible: false
+  scientific_release_blocked: true
+  verify_in_diagnostics: true
+pretrained_models:
+  classification_default: packv5_5x_classification_extra_trees.joblib
+  regression_best: packv3_regression_extra_trees_foundation.joblib
+  double_classification_leader: packv4_double_classification_random_forest.joblib
+  double_regression_leader: packv4_double_regression_extra_trees.joblib
+  five_x_classification_leader: packv5_5x_classification_extra_trees.joblib
+  five_x_regression_leader: packv5_5x_regression_extra_trees.joblib
+  trusted_artifact_count: 23
+  rebuild_script: BUILD_DATA_AND_MODELS_WINDOWS.bat
+portfolio:
+  registry_path: reports/projects.sqlite3
+  valid_statuses:
+    - Planning
+    - Active
+    - Validation
+    - Paused
+    - Completed
+    - Archived
+  valid_priorities:
+    - Low
+    - Medium
+    - High
+    - Critical
+governance:
+  milestone_statuses:
+    - Planned
+    - In Progress
+    - Blocked
+    - Completed
+    - Cancelled
+  decision_statuses:
+    - Proposed
+    - Approved
+    - Superseded
+    - Reversed
+  gate_statuses:
+    - Pending
+    - Conditional
+    - Approved
+    - Rejected
+  standard_gates:
+    - Data readiness
+    - Model validation
+    - External validation
+    - Reproducibility
+    - Release approval
+  registry_path: reports/projects.sqlite3
+reproducibility:
+  project_package_version: "1.0"
+  max_package_mb: 500
+  include_model_files_by_default: false
+audit:
+  chain_version: "1.0"
+  path: reports/audit.jsonl
+  verify_in_diagnostics: true
+operations:
+  activity_state_path: reports/activity_state.json
+  overdue_alerts: true
+  due_soon_days: 14
+reports:
+  generated_directory: reports/generated
+  workspace_html: true
+  workspace_json: true
+  include_projects: true
+  include_executive_summary: true
+  include_governance: true
+  include_audit_integrity: true
+training:
+  random_seed: 42
+  test_fraction: 0.20
+  validation_fraction: 0.15
+  conformal_alpha: 0.10
+  bootstrap_iterations: 200
+dti:
+  fingerprint_radius: 2
+  fingerprint_bits: 256
+  use_chirality: true
+batch_prediction:
+  default_chunk_size: 100
+  max_chunk_size: 1000
+  max_rows: 10000
+  checkpoint_directory: reports/batch_jobs
+datasets:
+  registry_path: reports/datasets.sqlite3
+  max_upload_mb: 1024
+models:
+  catalog_path: models/catalog.json
+  lifecycle_states:
+    - candidate
+    - active
+    - archived
+chembl:
+  max_records: 10000
+  timeout_seconds: 20
+  starter_recipes: data/recipes/chembl_starter_targets.csv
+cache:
+  external_ttl_seconds: 86400
+  stale_fallback: true
+workspace:
+  max_files: 5000
+  max_uncompressed_mb: 250
+api:
+  host: 127.0.0.1
+  port: 8000
+  max_request_bytes: 26214400
+  authentication_required: false
+
+coverage:
+  version: 15.3.0
+  manifest: data/coverage/coverage_manifest.json
+  sequence_records: 800
+  comparison_pairs: 180
+  molecules: 1000
+  external_validation_rows: 14000
+  lookup_starters: 20
+  demo_projects: 12
+  demo_milestones: 48
+  demo_decisions: 12
+  demo_gates: 60
+  verify_in_diagnostics: true
+
+optimization:
+  phase: 1
+  file_signature_invalidation: true
+  persistent_integrity_cache: true
+  model_cache_max_entries: 12
+  csv_cache_max_entries: 32
+  json_cache_max_entries: 64
+  large_preview_rows: 100
+  lazy_large_downloads: true
+
+databases:
+  count: 7
+  journal_mode: WAL
+  busy_timeout_ms: 30000
+  foreign_keys: true
+  mmap_size_bytes: 268435456
+  knowledge_path: reports/knowledge.sqlite3
+  analytics_path: reports/analytics.sqlite3
+  assets_path: reports/assets.sqlite3
+  dataset_registry_path: reports/datasets.sqlite3
+  experiment_registry_path: reports/experiments.sqlite3
+  project_registry_path: reports/projects.sqlite3
+  internet_download_registry_path: reports/internet_downloads.sqlite3
+  seed_script: SEED_PROFESSIONAL_DATABASES_WINDOWS.bat
+  verify_in_diagnostics: true
+professional_ui:
+  version: 15.4.0
+  database_cards: true
+  command_bars: true
+  insight_callouts: true
+  responsive_breakpoints: true
+  density_indicators: true
+
+internet:
+  enabled: true
+  outbound_only: true
+  public_https_allowed: true
+  official_hosts_only: false
+  resolve_dns_before_request: true
+  timeout_seconds: 30
+  retries: 2
+  max_download_mb: 250
+  max_pdb_batch_entries: 50
+  download_directory: data/internet_downloads
+  registry_path: reports/internet_downloads.sqlite3
+  block_private_networks: true
+  block_executable_files: true
+  auto_extract_archives: false
+  providers:
+    - RCSB PDB
+    - PubChem
+    - UniProt
+    - ChEMBL
+    - Public HTTPS
+
+chemistry_directory:
+  compound_name_directory: data/chemistry/common_compound_directory_5000.csv
+  compound_name_rows: 5000
+  curated_common_names: 59
+  online_name_provider: PubChem PUG REST
+  registry_names_are_labelled: true
+
+evidence:
+  registry_path: reports/evidence.sqlite3
+  real_data_directory: data/real_evidence
+  require_licence_coverage: 1.0
+  require_review_coverage: 1.0
+  minimum_mean_quality: 0.55
+  strict_dataset_hash_binding: true
+  synthetic_models_demo_only: true
+
+documents:
+  history_path: reports/document_history.sqlite3
+  output_directory: data/document_extractions
+  max_file_mb: 100
+  max_rows_per_table: 50000
+  max_columns: 256
+  allow_macro_workbooks: false
+  allow_embedded_objects: false
+  keep_source_by_default: false
+  default_ocr_mode: auto
+  default_ocr_language: eng
+  ocr_review_confidence: 0.70
+  duplicate_policy: warn
+  full_text_search: true
+  scientific_entity_extraction: rule_based_v1
+  sensitive_data_detection: true
+  soft_delete_days_before_purge: 30
+  failed_run_retention_days: 90
+  supported_extensions:
+    - pdf
+    - xlsx
+    - xls
+    - xlsm
+    - docx
+    - csv
+    - tsv
+    - txt
+    - md
+    - html
+    - json
+    - xml
+    - yaml
+    - pptx
+    - odt
+    - ods
+  export_formats:
+    - xlsx
+    - docx
+    - pdf
+    - json
+    - csv_zip
+    - bundle_zip
+demo_workspace:
+  enabled: true
+  auto_seed_on_database_setup: true
+  clearly_labelled_demo_only: true
+  starter_directory: data/examples/demo_workspace
+  reload_script: scripts/seed_demo_workspace.py
+  scientific_release_eligible: false
+
+bioinformatics:
+  demo_directory: data/bioinformatics_demo
+  maximum_fastq_records: 200000
+  maximum_vcf_variants: 1000000
+  optional_requirements: requirements-bioinformatics.txt
+  external_tools:
+    - blastn
+    - mafft
+    - hmmscan
+    - mmseqs
+    - minimap2
+    - samtools
+    - bcftools
+    - vina
+  scientific_boundary: screening_and_research_support_not_clinical

@@ -1,0 +1,79 @@
+{
+  "schema": "biointel.step117.theme-navigation-audit.v1",
+  "version": "11.7.0",
+  "generated_at_utc": "2026-07-11T06:55:20+00:00",
+  "status": "PASS",
+  "catalogue": {
+    "module_pages": 173,
+    "embedded_workspaces": 78,
+    "linked_workspaces": 78,
+    "total_searchable_items": 251,
+    "unlinked_workspaces": 0,
+    "auto_discovered_pages": 0
+  },
+  "search": {
+    "previous_default_visible_limit": 10,
+    "fixed": true,
+    "global_page_sizes": [
+      12,
+      24,
+      48
+    ],
+    "query_change_resets_pagination": true,
+    "typo_tolerant_ranking": true,
+    "category_filtering": true,
+    "module_pages_and_embedded_workspaces_in_same_index": true,
+    "complete_catalogue_page": "pages/171_Module_Catalogue_Search.py"
+  },
+  "theme_intelligence": {
+    "themes": 32,
+    "appearance_modes": [
+      "Dark",
+      "Light",
+      "System"
+    ],
+    "density_modes": [
+      "Comfortable",
+      "Professional",
+      "Dense"
+    ],
+    "performance_modes": [
+      "Adaptive",
+      "Full quality",
+      "Balanced",
+      "Performance"
+    ],
+    "module_preview_modes": 8,
+    "theme_compare": true,
+    "health_scores": true,
+    "smart_recommendations": true,
+    "safe_custom_builder": true,
+    "favourites_and_recent": true,
+    "project_overrides": true,
+    "module_overrides": true,
+    "schema_version": "2.0",
+    "forced_colours": true,
+    "high_dpi": true,
+    "responsive_breakpoints": [
+      1280,
+      1024,
+      768
+    ],
+    "reduced_motion": true
+  },
+  "verification": {
+    "theme_runtime_combinations": 768,
+    "minimum_body_contrast_ratio": 11.17,
+    "runtime_pages": 173,
+    "python_files_compiled": 839,
+    "selected_tests": 124,
+    "sqlite_databases": 36
+  },
+  "excluded_source_hashes": {
+    "pages/6_DTI_Predictor.py": "84b3ecec1356b7239a057459210af4cd130c57c08dd9449b7239d1fe5954e0cc",
+    "pages/74_DTI_Validation_Evidence_Center.py": "a700a8a21649b49cf0e3a1521d2afad45039b83b767c2fe730b93fee7d4f7f11",
+    "pages/109_Lab_Instrument_Import_Center.py": "22b5aba5bfea37bb1ef330ed7cca3773467463f883189602d96a0151311c8f70",
+    "pages/126_LIMS_ELN_and_Sample_Chain_of_Custody_Hub.py": "eadaef1a283a5fa11ce6b243aa561508ba9ceba9f6fdcc207f4853ccf7d86905",
+    "pages/157_Instrument_Integration_Hub_2.py": "cf3a5f94756def0007dbff31184ec276d90b03fc6d6e1ca792c87189e5ab7d6d"
+  }
+}

@@ -1,0 +1,15 @@
+schema: biointel.performance-thresholds.v1
+load:
+  p95_ms: 750
+  p99_ms: 1500
+  error_rate: 0.01
+  minimum_requests: 500
+stress:
+  p95_ms: 2000
+  error_rate: 0.05
+  recovery_seconds: 120
+soak:
+  duration_minutes: 30
+  p95_ms: 1000
+  error_rate: 0.02
+  memory_growth_percent: 10

@@ -1,0 +1,68 @@
+{
+  "schema": "biointel.step117.bug-audit.v1",
+  "version": "11.7.0",
+  "generated_at_utc": "2026-07-11T06:55:20+00:00",
+  "open_release_blockers": 0,
+  "fixed": [
+    {
+      "issue": "Global finder displayed only the first 10 of 169 registered modules",
+      "cause": "Hard result slicing in the popover",
+      "fix": "Removed hard cap and added paginated 12/24/48-item browsing",
+      "verification": "Global finder and complete catalogue tests passed"
+    },
+    {
+      "issue": "New embedded scientific workspaces were absent from global search",
+      "cause": "Search indexed page definitions only",
+      "fix": "Built a combined catalogue for 173 pages and 78 embedded workspaces",
+      "verification": "251/251 searchable items; 78/78 workspaces linked"
+    },
+    {
+      "issue": "Search pagination could remain on an invalid page after query or filter changes",
+      "cause": "Page state was not tied to search state",
+      "fix": "Added a search signature that resets page position safely",
+      "verification": "Search state regression tests passed"
+    },
+    {
+      "issue": "Future page files could be silently omitted when navigation registration is missed",
+      "cause": "Catalogue depended exclusively on hand-maintained definitions",
+      "fix": "Added page-file discovery and catalogue-integrity diagnostics",
+      "verification": "172/172 page files registered; no missing or duplicate routes"
+    },
+    {
+      "issue": "Pages 134\u2013152 could raise ModuleNotFoundError when launched directly",
+      "cause": "Nineteen NextGen pages lacked local src bootstrap",
+      "fix": "Added path-safe project/src bootstrap before BioIntel imports",
+      "verification": "19/19 repaired pages and 173/173 total runtime surfaces passed"
+    },
+    {
+      "issue": "System Diagnostics displayed a Windows repair error in non-Windows source/test environments",
+      "cause": "Platform-specific remediation was shown unconditionally",
+      "fix": "Use warning with platform-aware guidance outside Windows; retain error on Windows",
+      "verification": "System Diagnostics AppTest passed without captured UI errors"
+    },
+    {
+      "issue": "Touched UI code emitted deprecated use_container_width notices",
+      "cause": "Legacy Streamlit argument remained in new theme/catalogue controls",
+      "fix": "Migrated touched controls to width=\"stretch\"",
+      "verification": "Focused runtime tests completed without deprecation notices from these controls"
+    },
+    {
+      "issue": "Imported old theme presets could omit new runtime fields",
+      "cause": "Preference schema lacked explicit migration for Theme Intelligence 2.0",
+      "fix": "Added schema versioning, normalisation and safe custom-token sanitisation",
+      "verification": "Preference migration and sanitisation tests passed"
+    }
+  ],
+  "known_boundaries": [
+    "Future Streamlit or browser versions can require selector maintenance.",
+    "Optional engines, graphics drivers and reference databases remain machine-specific dependencies.",
+    "Theme health checks do not replace human usability review for every display and assistive technology."
+  ],
+  "excluded_modules_unchanged": [
+    "pages/6_DTI_Predictor.py",
+    "pages/74_DTI_Validation_Evidence_Center.py",
+    "pages/109_Lab_Instrument_Import_Center.py",
+    "pages/126_LIMS_ELN_and_Sample_Chain_of_Custody_Hub.py",
+    "pages/157_Instrument_Integration_Hub_2.py"
+  ]
+}

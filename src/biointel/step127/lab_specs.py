@@ -1,0 +1,131 @@
+from __future__ import annotations
+
+from .models import ModuleSpec, StageSpec
+
+
+def S(key: str, label: str, mode: str, purpose: str, *, tools=(), refs=(), inputs=(), gate="") -> StageSpec:
+    return StageSpec(key, label, mode, purpose, tuple(tools), tuple(refs), tuple(inputs), gate)
+
+
+LAB_SPECS: tuple[ModuleSpec, ...] = (
+    ModuleSpec(
+        "synthetic_biology", "Synthetic Biology & Genetic Circuit Designer", "Lab Analytics", "pages/99_Synthetic_Biology_Circuit_Designer.py",
+        "SBOL-aware circuit design with stochastic simulation, host burden, construct manufacturability and biosafety review.",
+        ("FASTA/GenBank", "SBOL JSON/XML", "CSV parts", "construct map"), ("FASTA", "GenBank", "SBOL", "CSV/TSV"),
+        (
+            S("parts", "Parts and construct identity", "built-in", "Validate promoters, RBS, CDS, terminators, orientation and sequence integrity."),
+            S("simulate", "Deterministic and stochastic simulation", "built-in", "Model logic, dynamics and uncertainty with explicit parameters."),
+            S("burden", "Host burden and crosstalk", "built-in", "Assess resource competition, host context, cryptic elements and failure modes."),
+            S("build", "Assembly and manufacturability plan", "built-in", "Generate plasmid/assembly checks and sequence-level manufacturing warnings."),
+            S("biosafety", "Biosafety and experimental validation", "external-validation", "Require organization-approved biosafety and construct testing.", gate="Biosafety and experimental evidence attached"),
+        ),
+        ("SBOL 3 import/export", "Versioned parts registry", "Stochastic simulation", "Host burden model", "Crosstalk/failure-mode review", "Plasmid assembly plan", "Manufacturability checks", "Biosafety checklist"),
+        ("Parameter uncertainty", "Host-context sensitivity", "Construct identity", "Experimental replication"),
+        ("Invalid construct sequence", "Unspecified host context", "No burden/failure review", "No biosafety or experimental validation"),
+        "Circuit simulations are hypotheses and require host-specific experimental and biosafety validation.",
+        tags=("synthetic biology", "sbol", "circuit", "plasmid"),
+    ),
+    ModuleSpec(
+        "instrument_import", "Lab Instrument Import Center", "Lab Analytics", "pages/109_Lab_Instrument_Import_Center.py",
+        "Vendor-aware, audit-ready instrument import with raw-file preservation, mapping templates and qualification metadata.",
+        ("CSV/TSV", "XLSX", "RDML", "FCS", "instrument exports"), ("CSV/TSV", "XLSX", "RDML", "FCS"),
+        (
+            S("detect", "File and vendor detection", "built-in", "Detect format/vendor signatures without trusting file extensions alone."),
+            S("map", "Schema mapping", "built-in", "Apply versioned mapping templates and prevent duplicate semantic column assignments."),
+            S("metadata", "Instrument and method metadata", "built-in", "Preserve instrument ID, serial, software, firmware, calibration, reagent lot and SOP version."),
+            S("review", "Failed-row and raw-trace review", "built-in", "Keep raw files immutable and route parsing failures to a review queue."),
+            S("qualification", "Instrument qualification", "external-validation", "Require site-specific qualification and approved method governance.", gate="Instrument/method qualification attached"),
+        ),
+        ("Vendor signature detection", "Multi-sheet mapping", "Raw file attachment", "Instrument/software/firmware metadata", "Calibration and lot tracking", "Versioned mapping templates", "Failed-row review", "Audit import manifest"),
+        ("Mapping completeness", "Unit consistency", "Duplicate semantic mapping", "Instrument qualification status"),
+        ("Unknown vendor/schema", "Required metadata missing", "Duplicate mapping", "Unqualified instrument/method"),
+        "Successful parsing does not establish instrument qualification, method suitability or regulated-lab compliance.",
+        locked_source=True, tags=("instrument", "import", "rdml", "fcs", "mapping"),
+    ),
+    ModuleSpec(
+        "primer_crispr_codon", "Primer, CRISPR & Codon Studio", "Lab Analytics", "pages/58_Primer_CRISPR_Codon_Studio.py",
+        "Build-aware primer, guide and codon design with specificity, isoform, population-variant and manufacturability safeguards.",
+        ("FASTA", "GenBank", "GFF/GTF", "VCF", "target CSV"), ("FASTA", "GenBank", "GFF/GTF", "VCF/BCF"),
+        (
+            S("target", "Target and build validation", "built-in", "Validate coordinates, strand, transcript isoform and reference sequence."),
+            S("primer", "Primer design and specificity", "adapter", "Run Primer3 and prepare genome-wide specificity searches.", tools=("primer3_core", "blastn"), refs=("Reference genome/transcriptome",), gate="Amplicon and specificity reviewed"),
+            S("crispr", "Guide design and off-target search", "adapter", "Score guides and run build-aware off-target searches with variant overlays.", tools=("bowtie2", "bcftools"), refs=("Genome index", "Population variants"), gate="Off-target and variant risks reviewed"),
+            S("codon", "Codon and construct optimization", "built-in", "Optimize host codons while checking GC, motifs, splice sites and mRNA-structure risks."),
+            S("confirm", "Experimental validation", "external-validation", "Confirm primer/guide performance and construct expression experimentally.", gate="Wet-lab evidence attached"),
+        ),
+        ("Primer3/BLAST protected plans", "Genome-build and isoform selection", "Amplicon simulation", "Multiplex compatibility", "Base/prime editing modes", "Population-variant overlays", "mRNA/splice motif checks", "Host codon profiles"),
+        ("Specificity thresholds", "Amplicon/guide coverage", "Population variant risk", "Experimental efficiency"),
+        ("Reference build mismatch", "No genome-wide specificity", "High-risk off-target", "No wet-lab validation"),
+        "Designed primers, guides and constructs require experimental specificity, efficiency and safety validation.",
+        tags=("primer", "crispr", "codon", "primer3"),
+    ),
+    ModuleSpec(
+        "wet_lab", "Wet-Lab Biotechnology", "Lab Analytics", "pages/64_Wet_Lab_Biotechnology.py",
+        "Reliable qPCR, ELISA, enzyme kinetics and bioprocess analytics with explicit units, controls, uncertainty and run-level QC.",
+        ("CSV/TSV", "XLSX", "RDML", "plate exports", "bioreactor time series"), ("CSV/TSV", "XLSX", "RDML"),
+        (
+            S("schema", "Assay schema and controls", "built-in", "Validate one-to-one column mapping, roles, units, controls, replicates and batches."),
+            S("qpcr", "qPCR analysis", "built-in", "Handle raw/Cq workflows, role filtering, efficiency, reference genes and biological-replicate inference."),
+            S("elisa", "ELISA calibration and validation", "built-in", "Use model-complexity guards, safe range labels, QC levels and spatial plate checks."),
+            S("kinetics", "Enzyme kinetics", "built-in", "Control initial-rate direction/window, units, mechanism comparison and parameter uncertainty."),
+            S("bioprocess", "Batch/mode-aware bioprocess", "built-in", "Process reactors independently and apply batch/fed-batch/continuous/perfusion equations."),
+            S("approve", "Method and run approval", "external-validation", "Require laboratory-specific method validation and qualified review.", gate="Approved method and run decision attached"),
+        ),
+        ("Duplicate mapping block", "qPCR role/control handling", "MIQE metadata", "ELISA 4PL/5PL complexity guards", "LLOQ/ULOQ safe output", "Initial-rate direction QC", "Per-batch bioprocess", "Units registry", "Run bundle"),
+        ("Biological vs technical replicates", "Accuracy/precision", "Confidence intervals", "Spatial plate effects", "Batch and method versions"),
+        ("Missing controls", "Unsafe calibration extrapolation", "Mixed units", "No method/run approval"),
+        "Research calculations require laboratory-specific method validation, instrument qualification and qualified review for regulated use.",
+        python_packages=("scipy", "statsmodels"), tags=("qpcr", "elisa", "kinetics", "bioprocess"),
+    ),
+    ModuleSpec(
+        "microbiology_metagenomics", "Microbiology & Metagenomics", "Lab Analytics", "pages/65_Microbiology_Metagenomics.py",
+        "Isolate and community screening with species confirmation, typing, AMR/virulence and versioned reference controls.",
+        ("FASTQ", "FASTA", "abundance CSV/TSV", "phenotype table"), ("FASTQ", "FASTA", "CSV/TSV"),
+        (
+            S("qc", "Read/assembly and control QC", "built-in", "Validate controls, coverage, assembly quality, contamination and sample metadata."),
+            S("species", "Species confirmation", "adapter", "Run Kraken2/Mash/FastANI with pinned references.", tools=("kraken2", "mash", "fastANI"), refs=("Taxonomy/genome database",), gate="Species confidence and database release reviewed"),
+            S("typing", "MLST/cgMLST and isolate comparison", "adapter", "Run MLST and prepare cgMLST/SNP handoffs.", tools=("mlst",), refs=("Typing scheme",), gate="Scheme compatibility reviewed"),
+            S("traits", "AMR, virulence and mobile elements", "adapter", "Run AMRFinderPlus/ResFinder and compare phenotype-genotype evidence.", tools=("amrfinder", "run_resfinder.py"), refs=("AMR/virulence database",), gate="Discordance and mutation evidence reviewed"),
+            S("confirm", "Laboratory confirmation", "external-validation", "Confirm organism identity and resistance/virulence findings with qualified laboratory methods.", gate="Confirmatory evidence attached"),
+        ),
+        ("Species confirmation stack", "MLST/cgMLST readiness", "ANI and assembly QC", "AMR/virulence plans", "Plasmid/mobile-element checklist", "Phenotype-genotype concordance", "Versioned references"),
+        ("Negative/mock controls", "Database version", "Coverage/completeness", "Phenotype-genotype concordance"),
+        ("No controls", "Species uncertainty", "Unpinned databases", "No confirmatory laboratory evidence"),
+        "Taxonomic and genomic trait predictions depend on controls, coverage and database versions and require laboratory confirmation.",
+        tags=("microbiology", "mlst", "amr", "kraken"),
+    ),
+    ModuleSpec(
+        "lab_command", "Lab Analytics Command Center", "Lab Analytics", "pages/89_Lab_Analytics_Command_Center.py",
+        "Unified assay lifecycle, sample/plate/run registry, QC blockers, approval and cross-run trend review.",
+        ("assay projects", "sample/plate metadata", "run manifests", "QC results"), ("CSV/TSV", "JSON", "XLSX"),
+        (
+            S("plan", "Method and run planning", "built-in", "Define method version, controls, sample/plate layout, instrument and acceptance criteria."),
+            S("execute", "Active run timeline", "built-in", "Track stages, samples, plates, artifacts, failures and retries across modules."),
+            S("qc", "QC blocker aggregation", "built-in", "Aggregate assay-specific QC without flattening different methods into one score."),
+            S("review", "Review, reanalysis and approval", "built-in", "Manage reviewer decisions, reanalysis reasons and version-linked reports."),
+            S("regulated", "Regulated deployment", "external-validation", "Require organization-specific validation, signatures and SOP governance.", gate="Organization approval and validation attached"),
+        ),
+        ("Assay Run Registry", "Sample/plate registry", "Method versioning", "Instrument status", "QC blocker board", "Cross-run comparison", "Approval queue", "Reanalysis workflow", "Control-chart trends"),
+        ("Method-specific acceptance criteria", "Run-to-run drift", "Reviewer disagreement", "Artifact completeness"),
+        ("No method version", "Missing controls/artifacts", "Unresolved QC blockers", "No qualified approval"),
+        "The command center organizes laboratory evidence but does not itself establish GLP/GMP compliance or method validity.",
+        tags=("lab", "run registry", "qc", "approval"),
+    ),
+    ModuleSpec(
+        "metagenomics_pipeline", "Metagenomics Pipeline", "Lab Analytics", "pages/82_Metagenomics_Pipeline.py",
+        "Checkpointed raw-read metagenomics with host depletion, taxonomy, functional profiling, resistome/virulome and compositional statistics.",
+        ("FASTQ", "FASTQ.GZ", "FASTA", "sample metadata", "abundance tables"), ("FASTQ", "FASTA", "CSV/TSV"),
+        (
+            S("qc", "Read QC and host depletion", "adapter", "Run fastp and Bowtie2 with paired-end synchronization and pinned host index.", tools=("fastp", "bowtie2"), refs=("Host index",), gate="Retention and host-depletion metrics reviewed"),
+            S("taxonomy", "Taxonomic profiling", "adapter", "Run Kraken2/Bracken and optional MetaPhlAn using pinned databases.", tools=("kraken2", "bracken", "metaphlan"), refs=("Taxonomy database",), gate="Database release and controls reviewed"),
+            S("functional", "Functional and AMR/virulence profiling", "adapter", "Run HUMAnN and trait databases with explicit release metadata.", tools=("humann", "amrfinder"), refs=("Functional/AMR database",), gate="Coverage and database suitability reviewed"),
+            S("statistics", "Compositional and longitudinal analysis", "built-in", "Use CLR and specialist adapters with replicate-aware designs and multiple-testing control."),
+            S("report", "STORMS and confirmatory review", "external-validation", "Export reporting checklist and confirm priority findings with suitable methods.", gate="Reporting and confirmatory evidence complete"),
+        ),
+        ("Fastp/Bowtie2/Kraken2/Bracken/MetaPhlAn plans", "Reference downloader/checksums", "Per-sample parallel scheduling", "Checkpoint resume", "Functional/AMR profiling", "ANCOM-BC/ALDEx2/MaAsLin contracts", "Longitudinal models", "STORMS report"),
+        ("Negative/mock controls", "Compositional data boundary", "Database release", "Sample-level replication", "Multiple-testing correction"),
+        ("No controls", "Unpinned databases", "Host depletion missing", "Non-compositional statistics", "No confirmatory review"),
+        "Metagenomic profiles depend strongly on controls, databases, coverage and compositional methods and require confirmatory interpretation.",
+        tags=("metagenomics", "kraken", "bracken", "humann", "storms"),
+    ),
+)

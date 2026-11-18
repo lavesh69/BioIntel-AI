@@ -1,0 +1,7 @@
+area,issue,severity,fix,status
+Windows installation,Installer helper passed --allow-degraded but Step 192 self-test parser rejected the argument,critical,Step 193 self-test accepts the flag and installer/self-test contract is regression-tested,fixed
+Python discovery,First python.exe on PATH could be the wrong version,high,"PowerShell locator searches launcher, registry and common paths and verifies Python 3.11 x64",fixed
+Missing Python,Installation stopped without a guided recovery,high,Installer attempts a safe per-user winget Python 3.11 bootstrap when available,fixed
+Repair flow,Legacy repair scripts validated Step 192 markers and helper,high,Repair and path-safe launchers now validate Step 193 and use the Step 193 helper,fixed
+Module mandatory features,Last-mile governance/recovery/isolation/migration policies were not uniformly measurable,high,24 mandatory controls integrated across all 80 logical modules,fixed
+Controlled release,Demo/internal completion could be confused with external scientific evidence,critical,All module contracts remain fail-closed and explicitly require authentic external evidence,fixed

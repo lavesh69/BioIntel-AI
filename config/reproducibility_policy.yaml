@@ -1,0 +1,22 @@
+schema: biointel.reproducibility/v1
+required:
+  inputs: true
+  code: true
+  artifacts: true
+  parameters: true
+  random_seed: true
+  environment: true
+  checksums: sha256
+  command: true
+  package_versions: true
+  source_revision: true
+verification:
+  deterministic_archive_metadata: true
+  verify_embedded_file_hashes: true
+  fail_on_missing_file: true
+  fail_on_checksum_mismatch: true
+publication_package:
+  fair_metadata: true
+  citation: true
+  license: true
+  limitations: true

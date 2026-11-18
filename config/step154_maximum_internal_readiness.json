@@ -1,0 +1,19 @@
+{
+  "schema": "biointel.step154.maximum-internal-readiness.v1",
+  "release_step": 154,
+  "goals": {
+    "software_regression_failures": 0,
+    "scientific_profiles_with_native_workflow": 80,
+    "minimum_domain_families": 49,
+    "full_input_hashing": true,
+    "complete_result_export": true,
+    "runtime_residue_in_release": 0,
+    "filename_only_reference_matches": 0
+  },
+  "scientific_boundaries": {
+    "specialist_tools_are_optional_external_dependencies": true,
+    "licensed_reference_releases_are_not_fabricated": true,
+    "clinical_or_regulatory_certification_is_not_claimed": true,
+    "wet_lab_validation_is_not_fabricated": true
+  }
+}

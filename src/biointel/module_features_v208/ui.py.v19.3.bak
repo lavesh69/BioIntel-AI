@@ -1,0 +1,384 @@
+from __future__ import annotations
+
+import io
+import json
+from typing import Any
+
+import numpy as np
+import pandas as pd
+import streamlit as st
+from PIL import Image
+
+from biointel.ui.components import metric_cards, scientific_boundary_banner, smart_dataframe, smart_json
+from biointel.ui.theme import section_title
+from biointel.ui.workflow import render_upload_preflight
+
+from .bioinformatics import (
+    BIOINFORMATICS_V208_FEATURES,
+    build_reproducibility_manifest,
+    external_tool_readiness,
+    genomic_cohort_qc,
+    microbiome_contamination_qc,
+    multiomics_batch_qc,
+    single_cell_qc,
+    spatial_omics_qc,
+)
+from .demos import demo_payload
+from .discovery import (
+    DISCOVERY_V208_FEATURES,
+    admet_calibration_and_domain,
+    antibody_developability,
+    assay_design_and_power,
+    docking_validation,
+    lead_optimization_ranking,
+    neoantigen_prioritization,
+    protein_design_qc,
+    standardize_compounds,
+)
+from .ingestion import format_support_table, optional_adapter_status
+from .lab import (
+    LAB_V208_FEATURES,
+    autonomous_experiment_plan,
+    bioprocess_time_series,
+    gene_therapy_vector_qc,
+    high_content_plate_qc,
+    metagenomics_control_qc,
+    microscopy_image_qc,
+    organoid_3d_analysis,
+    primer_crispr_qc,
+    synthetic_construct_qc,
+)
+from .neuro import (
+    NEURO_V208_FEATURES,
+    autonomic_hrv_analysis,
+    connectome_community_analysis,
+    eeg_meg_research_pipeline,
+    epilepsy_diary_analysis,
+    expression_atlas_analysis,
+    movement_disorder_quantification,
+    multimodal_neurodegeneration_progression,
+    neuro_oncology_board,
+    neuro_omics_biomarker_validation,
+    neurocritical_care_trends,
+    neuroimaging_volume_workflow,
+    neuropathology_image_analysis,
+    normalize_neuro_variants,
+    normalize_trial_portfolio,
+    precision_neurology_consensus,
+    simulate_multicompartment_neuro_pk,
+    speech_language_biomarker_analysis,
+    target_evidence_graph,
+)
+from .visuals import figures_for_result
+
+CATEGORY_FEATURES = {
+    "Neuro/CNS": NEURO_V208_FEATURES,
+    "Bioinformatics": BIOINFORMATICS_V208_FEATURES,
+    "Discovery": DISCOVERY_V208_FEATURES,
+    "Lab Analytics": LAB_V208_FEATURES,
+}
+
+_IMAGE_FEATURES = {"advanced_neuroimaging", "neuropathology", "microscopy_qc"}
+_NO_UPLOAD_FEATURES = {"format_readiness", "tool_readiness", "reproducibility", "advanced_neuro_pk", "assay_planning", "experiment_planner", "synthetic_biology", "gene_therapy"}
+
+
+def _uploaded_payload(feature_key: str) -> Any | None:
+    if feature_key in _NO_UPLOAD_FEATURES:
+        return None
+    if feature_key in _IMAGE_FEATURES:
+        uploaded = st.file_uploader(
+            "Optional local image/NumPy file",
+            type=["npy", "png", "jpg", "jpeg", "tif", "tiff"],
+            key=f"v208_upload_{feature_key}",
+        )
+        if uploaded is None:
+            return None
+        profile = render_upload_preflight(
+            uploaded,
+            key=f"v208_preflight_{feature_key}",
+            allowed_extensions=("npy", "png", "jpg", "jpeg", "tif", "tiff"),
+            soft_limit_mb=100,
+            hard_limit_mb=1024,
+            module_key=f"v208_{feature_key}",
+        )
+        if profile is None or profile.requires_staging:
+            st.info("Large input was staged for background inspection. Use the demo for an immediate interactive preview.")
+            return None
+        uploaded.seek(0)
+        if uploaded.name.lower().endswith(".npy"):
+            return np.load(uploaded, allow_pickle=False)
+        return np.asarray(Image.open(uploaded))
+    uploaded = st.file_uploader(
+        "Optional CSV/TSV input",
+        type=["csv", "tsv", "txt"],
+        key=f"v208_upload_{feature_key}",
+        help="Files above the interactive boundary are staged locally rather than loaded into the UI process.",
+    )
+    if uploaded is None:
+        return None
+    profile = render_upload_preflight(
+        uploaded,
+        key=f"v208_preflight_{feature_key}",
+        allowed_extensions=("csv", "tsv", "txt"),
+        soft_limit_mb=100,
+        hard_limit_mb=1024,
+        module_key=f"v208_{feature_key}",
+    )
+    if profile is None or profile.requires_staging:
+        st.info("Large input was staged for background inspection. Use the demo for an immediate interactive preview.")
+        return None
+    uploaded.seek(0)
+    separator = "\t" if uploaded.name.lower().endswith((".tsv", ".txt")) else ","
+    return pd.read_csv(uploaded, sep=separator, low_memory=False)
+
+
+def _run_neuro(feature_key: str, payload: Any) -> dict[str, Any]:
+    if feature_key == "advanced_eeg_meg":
+        if isinstance(payload, dict):
+            return eeg_meg_research_pipeline(payload["data"], sampling_rate=payload["sampling_rate"], time_col=payload.get("time_col"))
+        return eeg_meg_research_pipeline(payload, sampling_rate=float(st.session_state.get("v208_eeg_fs", 128.0)), time_col="time" if "time" in payload.columns else None)
+    if feature_key == "advanced_neuroimaging":
+        if isinstance(payload, dict):
+            return neuroimaging_volume_workflow(payload["volume"], voxel_spacing_mm=payload.get("voxel_spacing_mm"), atlas=payload.get("atlas"))
+        return neuroimaging_volume_workflow(np.asarray(payload))
+    if feature_key == "advanced_neurogenetics":
+        return normalize_neuro_variants(payload, hpo_terms=[term.strip() for term in st.session_state.get("v208_hpo_terms", "seizure, developmental delay").split(",") if term.strip()])
+    if feature_key == "advanced_expression_atlas":
+        return expression_atlas_analysis(payload)
+    if feature_key == "advanced_neuro_omics":
+        return neuro_omics_biomarker_validation(payload, group_col="group")
+    if feature_key == "advanced_precision_neurology":
+        return precision_neurology_consensus(payload)
+    if feature_key == "advanced_neuro_pk":
+        values = payload or {}
+        return simulate_multicompartment_neuro_pk(**values)
+    if feature_key == "advanced_target_evidence":
+        return target_evidence_graph(payload)
+    if feature_key == "advanced_trial_intelligence":
+        return normalize_trial_portfolio(payload)
+    if feature_key == "neuro_oncology":
+        return neuro_oncology_board(payload)
+    if feature_key == "epilepsy_diary":
+        return epilepsy_diary_analysis(payload)
+    if feature_key == "movement_disorders":
+        if isinstance(payload, dict):
+            return movement_disorder_quantification(payload["data"], sampling_rate=payload["sampling_rate"])
+        return movement_disorder_quantification(payload, sampling_rate=float(st.session_state.get("v208_move_fs", 50.0)))
+    if feature_key == "autonomic_hrv":
+        return autonomic_hrv_analysis(payload)
+    if feature_key == "speech_language":
+        return speech_language_biomarker_analysis(payload)
+    if feature_key == "neurodegeneration_progression":
+        return multimodal_neurodegeneration_progression(payload)
+    if feature_key == "neuropathology":
+        return neuropathology_image_analysis(np.asarray(payload))
+    if feature_key == "neurocritical_care":
+        return neurocritical_care_trends(payload)
+    raise KeyError(feature_key)
+
+
+def _run_bioinformatics(feature_key: str, payload: Any) -> dict[str, Any]:
+    if feature_key == "format_readiness":
+        return {"format_support": format_support_table(), "optional_adapters": optional_adapter_status(), "summary": {"formats": len(format_support_table()), "available_optional_adapters": int(optional_adapter_status()["available"].sum())}, "scientific_boundary": "Capability status only; target-machine validation is required."}
+    if feature_key == "genomic_cohort_qc":
+        return genomic_cohort_qc(payload)
+    if feature_key == "single_cell_qc":
+        if isinstance(payload, dict):
+            return single_cell_qc(payload["matrix"], gene_names=payload.get("gene_names"))
+        return single_cell_qc(payload)
+    if feature_key == "spatial_qc":
+        return spatial_omics_qc(payload)
+    if feature_key == "multiomics_qc":
+        return multiomics_batch_qc(payload)
+    if feature_key == "microbiome_controls":
+        if isinstance(payload, dict):
+            return microbiome_contamination_qc(payload["abundance"], payload["metadata"])
+        raise ValueError("Uploaded microbiome input needs a separate abundance matrix and metadata table; use the labelled demo or the native microbiome module.")
+    if feature_key == "tool_readiness":
+        table = external_tool_readiness()
+        return {"tools": table, "summary": {"tools": len(table), "available": int(table["available"].sum())}, "scientific_boundary": "Tool discovery does not qualify scientific correctness."}
+    if feature_key == "reproducibility":
+        return build_reproducibility_manifest(parameters={"feature_center": "Bioinformatics V208"})
+    raise KeyError(feature_key)
+
+
+def _run_discovery(feature_key: str, payload: Any) -> dict[str, Any]:
+    if feature_key == "compound_standardization":
+        return standardize_compounds(payload)
+    if feature_key == "docking_validation":
+        return docking_validation(payload)
+    if feature_key == "admet_calibration":
+        if not isinstance(payload, dict):
+            raise ValueError("ADMET calibration needs separate reference and query datasets; use the labelled demo or specialist module.")
+        return admet_calibration_and_domain(payload["reference"], payload["query"])
+    if feature_key == "lead_optimization":
+        return lead_optimization_ranking(payload, maximize=["potency", "selectivity"], minimize=["clearance", "toxicity"])
+    if feature_key == "protein_design":
+        if not isinstance(payload, dict):
+            raise ValueError("Protein design QC needs a reference sequence and candidates; use the labelled demo or specialist module.")
+        return protein_design_qc(payload["reference"], payload["candidates"], conserved_positions=payload.get("conserved_positions", ()))
+    if feature_key == "antibody_developability":
+        return antibody_developability(payload)
+    if feature_key == "neoantigen":
+        return neoantigen_prioritization(payload)
+    if feature_key == "assay_planning":
+        values = payload or {}
+        return assay_design_and_power(**values)
+    raise KeyError(feature_key)
+
+
+def _run_lab(feature_key: str, payload: Any) -> dict[str, Any]:
+    if feature_key == "microscopy_qc":
+        return microscopy_image_qc(np.asarray(payload))
+    if feature_key == "plate_qc":
+        return high_content_plate_qc(payload)
+    if feature_key == "bioprocess":
+        return bioprocess_time_series(payload)
+    if feature_key == "metagenomics_controls":
+        return metagenomics_control_qc(payload)
+    if feature_key == "synthetic_biology":
+        values = payload or {}
+        return synthetic_construct_qc(**values)
+    if feature_key == "primer_crispr":
+        if not isinstance(payload, dict):
+            raise ValueError("Primer/CRISPR QC needs target and optional genome sequence; use the labelled demo or specialist module.")
+        return primer_crispr_qc(**payload)
+    if feature_key == "organoid":
+        return organoid_3d_analysis(payload)
+    if feature_key == "gene_therapy":
+        values = payload or {}
+        return gene_therapy_vector_qc(**values)
+    if feature_key == "experiment_planner":
+        values = payload or {}
+        return autonomous_experiment_plan(**values)
+    raise KeyError(feature_key)
+
+
+def _run(category: str, feature_key: str, payload: Any) -> dict[str, Any]:
+    if category == "Neuro/CNS":
+        return _run_neuro(feature_key, payload)
+    if category == "Bioinformatics":
+        return _run_bioinformatics(feature_key, payload)
+    if category == "Discovery":
+        return _run_discovery(feature_key, payload)
+    if category == "Lab Analytics":
+        return _run_lab(feature_key, payload)
+    raise KeyError(category)
+
+
+def _render_result(feature_key: str, result: dict[str, Any]) -> None:
+    summary = result.get("summary") or result.get("metrics")
+    if isinstance(summary, dict):
+        cards = []
+        for key, value in list(summary.items())[:4]:
+            if isinstance(value, float):
+                display = f"{value:.4g}"
+            elif isinstance(value, (list, tuple, dict)):
+                display = len(value)
+            else:
+                display = value
+            cards.append((key.replace("_", " ").title(), display, None))
+        if cards:
+            metric_cards(cards)
+    figures = figures_for_result(feature_key, result)
+    tables = [(key, value) for key, value in result.items() if isinstance(value, pd.DataFrame)]
+    tab_names = []
+    if figures:
+        tab_names.append("Scientific visuals")
+    if tables:
+        tab_names.append("Result tables & exports")
+    tab_names.append("Method & boundary")
+    tabs = st.tabs(tab_names)
+    index = 0
+    if figures:
+        with tabs[index]:
+            for name, figure in figures.items():
+                st.plotly_chart(figure, use_container_width=True, key=f"v208_fig_{feature_key}_{name}")
+        index += 1
+    if tables:
+        with tabs[index]:
+            for name, table in tables:
+                st.markdown(f"**{name.replace('_', ' ').title()}**")
+                smart_dataframe(table, key=f"v208_table_{feature_key}_{name}", height=380)
+                st.download_button(
+                    f"Download {name.replace('_', ' ')} CSV",
+                    table.to_csv(index=False).encode("utf-8"),
+                    f"BioIntel-{feature_key}-{name}.csv",
+                    "text/csv",
+                    key=f"v208_download_{feature_key}_{name}",
+                )
+        index += 1
+    with tabs[index]:
+        metadata = {key: value for key, value in result.items() if not isinstance(value, pd.DataFrame)}
+        smart_json(metadata, title="Method metadata", download_name=f"BioIntel-{feature_key}-metadata.json", key=f"v208_meta_{feature_key}")
+        scientific_boundary_banner(
+            source_kind="research_software",
+            release_eligible=False,
+            message=str(result.get("scientific_boundary", "Research-only output.")),
+        )
+
+
+def render_single_feature(category: str, feature_key: str, *, show_title: bool = True) -> None:
+    if category not in CATEGORY_FEATURES:
+        raise KeyError(category)
+    feature_map = {key: (title, description) for key, title, description in CATEGORY_FEATURES[category]}
+    if feature_key not in feature_map:
+        raise KeyError(feature_key)
+    title, description = feature_map[feature_key]
+    if show_title:
+        st.subheader(title)
+    st.info(description)
+    if feature_key == "advanced_eeg_meg":
+        st.number_input("Sampling rate for uploaded table (Hz)", min_value=2.0, value=128.0, key=f"v208_eeg_fs_{feature_key}")
+        st.session_state["v208_eeg_fs"] = st.session_state.get(f"v208_eeg_fs_{feature_key}", 128.0)
+    elif feature_key == "movement_disorders":
+        st.number_input("Sampling rate for uploaded table (Hz)", min_value=2.0, value=50.0, key=f"v208_move_fs_{feature_key}")
+        st.session_state["v208_move_fs"] = st.session_state.get(f"v208_move_fs_{feature_key}", 50.0)
+    elif feature_key == "advanced_neurogenetics":
+        st.text_input("Phenotype/HPO terms", value="seizure, developmental delay", key=f"v208_hpo_terms_{feature_key}")
+        st.session_state["v208_hpo_terms"] = st.session_state.get(f"v208_hpo_terms_{feature_key}", "seizure, developmental delay")
+    uploaded_payload = _uploaded_payload(feature_key)
+    use_demo = uploaded_payload is None
+    if use_demo:
+        st.caption("Using clearly labelled deterministic synthetic/reference demonstration data for the interactive run.")
+    payload = demo_payload(feature_key) if use_demo else uploaded_payload
+    if isinstance(payload, pd.DataFrame):
+        smart_dataframe(payload.head(250), key=f"v208_input_{category}_{feature_key}", height=300)
+    elif isinstance(payload, np.ndarray):
+        st.caption(f"Array shape: {payload.shape} · dtype: {payload.dtype}")
+    elif isinstance(payload, dict):
+        preview = next((value for value in payload.values() if isinstance(value, pd.DataFrame)), None)
+        if preview is not None:
+            smart_dataframe(preview.head(250), key=f"v208_input_{category}_{feature_key}", height=300)
+        else:
+            st.caption("Structured local workflow parameters are ready.")
+    state_key = f"v208_result_{category}_{feature_key}"
+    if st.button("Run local scientific workflow", type="primary", key=f"v208_run_{category}_{feature_key}", use_container_width=True):
+        try:
+            with st.status("Running local workflow…", expanded=False) as status:
+                result = _run(category, feature_key, payload)
+                status.update(label="Workflow completed", state="complete")
+            st.session_state[state_key] = result
+        except Exception as exc:
+            st.error(f"The workflow could not complete: {exc}")
+            st.caption("No online result was claimed. Check the input columns/format or use the labelled demo.")
+    result = st.session_state.get(state_key)
+    if isinstance(result, dict):
+        _render_result(feature_key, result)
+
+
+def render_feature_center(category: str) -> None:
+    if category not in CATEGORY_FEATURES:
+        raise KeyError(category)
+    features = CATEGORY_FEATURES[category]
+    section_title(f"{category} maximum-potential feature center", "◆")
+    st.caption(
+        "Local deterministic workflows, explicit optional adapters, memory-safe upload preflight, calculated visuals, exports and fail-closed scientific boundaries."
+    )
+    labels = {title: key for key, title, _ in features}
+    selected_title = st.selectbox("Feature workflow", list(labels), key=f"v208_feature_select_{category}")
+    render_single_feature(category, labels[selected_title], show_title=False)
+
+
+def render_neuro_v208_portfolio() -> None:
+    render_feature_center("Neuro/CNS")

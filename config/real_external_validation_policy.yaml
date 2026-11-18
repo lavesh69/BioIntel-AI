@@ -1,0 +1,68 @@
+schema: biointel.real-external-validation-policy.v1
+version: 8.4.0
+purpose: >-
+  Control authentic evidence required for external clinical, pharmaceutical,
+  regulatory, patient-use and post-market validation claims.
+
+scoring_boundary:
+  framework_readiness_can_reach_10: true
+  actual_external_validation_is_evidence_driven: true
+  test_fixtures_never_score: true
+  synthetic_datasets_never_score: true
+  self_attestation_never_scores_without_independent_review: true
+  missing_or_tampered_artifacts_score: 0
+
+required_domains:
+  - independent_clinical_evidence
+  - prospective_clinical_study
+  - pharma_laboratory_validation
+  - peer_reviewed_publication
+  - gxp_operating_history
+  - regulatory_inspection
+  - regulatory_authorization
+  - approved_patient_care_use
+  - post_market_clinical_evidence
+
+artifact_controls:
+  require_sha256_integrity: true
+  require_nonempty_external_identifier: true
+  require_independent_source: true
+  require_reviewer_separation: true
+  require_issued_date: true
+  reject_expired_evidence: true
+  accepted_verification_methods:
+    - official_registry
+    - publisher_index
+    - authority_portal
+    - direct_issuer_confirmation
+    - onsite_audit
+    - qualified_third_party
+
+release_blockers:
+  clinical_claim:
+    - any_domain_below_10
+    - validation_program_not_completed
+  pharma_validated_claim:
+    - independent_laboratory_validation_below_10
+    - gxp_operating_history_below_10
+    - unresolved_major_or_critical_quality_event
+  patient_care_claim:
+    - regulatory_authorization_below_10
+    - approved_patient_care_use_below_10
+    - post_market_clinical_evidence_below_10
+
+regulatory_reference_map:
+  - authority: FDA
+    reference: Clinical Decision Support Software guidance and electronic records/signatures controls
+  - authority: EMA/ICH
+    reference: ICH E6(R3) Good Clinical Practice
+  - authority: FDA/IMDRF
+    reference: Good Machine Learning Practice guiding principles
+  - authority: CDSCO
+    reference: Medical Devices Rules, 2017 and applicable medical-device software requirements
+
+claim_language:
+  blocked: Research/demo use only; external clinical and pharmaceutical claims remain blocked.
+  complete: >-
+    Real external validation evidence is complete for the documented intended use;
+    legal, institutional and jurisdiction-specific authorization still governs use.

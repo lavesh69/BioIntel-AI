@@ -1,0 +1,14 @@
+{
+  "schema": "biointel.step131.release.v1",
+  "version": "13.2.0",
+  "base": "Step 130",
+  "title": "Real-Time Scientific Interaction, Collaboration and Stability",
+  "new_central_page": "pages/195_Real_Time_Scientific_Canvas_Collaboration_Center.py",
+  "new_core_modules": [
+    "src/biointel/nextgen/interaction_v131.py",
+    "src/biointel/ui/reactive_scientific_workspace.py"
+  ],
+  "preserves_existing_features": true,
+  "preserves_locked_pages": true,
+  "external_claims_fabricated": false
+}

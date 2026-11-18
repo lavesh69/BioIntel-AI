@@ -1,0 +1,33 @@
+{
+  "schema": "biointel.step116.module-experience.v1",
+  "release": "11.9.0",
+  "step": 116,
+  "scope": "Recommendation sections 2 through 9",
+  "module_workspaces": 78,
+  "scientific_groups": 8,
+  "core_interactions": [
+    "domain canvas",
+    "entity passport",
+    "decision replay",
+    "cross-module handoff",
+    "scientific notebook",
+    "readiness matrix",
+    "before-after inspector",
+    "decision cards",
+    "workspace state export"
+  ],
+  "excluded_pages_unchanged": [
+    "pages/6_DTI_Predictor.py",
+    "pages/74_DTI_Validation_Evidence_Center.py",
+    "pages/126_LIMS_ELN_and_Sample_Chain_of_Custody_Hub.py",
+    "pages/109_Lab_Instrument_Import_Center.py",
+    "pages/157_Instrument_Integration_Hub_2.py"
+  ],
+  "performance": {
+    "default_state": "collapsed",
+    "network_dependency": false,
+    "canvas_type": "bounded deterministic SVG/HTML",
+    "state_persistence": "local Streamlit session",
+    "exports": ["JSON"]
+  }
+}

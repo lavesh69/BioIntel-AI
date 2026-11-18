@@ -1,0 +1,276 @@
+/*
+ * BioIntel AI global responsive application shell.
+ *
+ * This file is loaded after every palette and component stylesheet. Streamlit
+ * owns sidebar placement; these rules only make its flex layout explicit and
+ * release all sidebar width when aria-expanded becomes false.
+ */
+:root {
+  --bio-sidebar-expanded-width: 16.25rem;
+  --bio-sidebar-current-width: 0rem;
+  --bio-page-gutter: clamp(0.85rem, 1.8vw, 2rem);
+  --bio-workspace-max-width: 100%;
+  --bio-app-header-height: 3.75rem;
+  --bio-workspace-top-gutter: calc(
+    var(--bio-app-header-height) + clamp(0.8rem, 1.4vw, 1.25rem)
+  );
+  --bio-layout-transition: 180ms cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+html,
+body,
+[data-testid="stApp"],
+[data-testid="stAppViewContainer"] {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  overflow-x: clip;
+}
+
+[data-testid="stAppViewContainer"] {
+  --bio-sidebar-current-width: 0rem;
+  display: flex;
+}
+
+[data-testid="stAppViewContainer"]:has(> [data-testid="stSidebar"][aria-expanded="true"]) {
+  --bio-sidebar-current-width: var(--bio-sidebar-expanded-width);
+}
+
+[data-testid="stSidebar"] {
+  box-sizing: border-box;
+  transition:
+    width var(--bio-layout-transition),
+    min-width var(--bio-layout-transition),
+    max-width var(--bio-layout-transition),
+    transform var(--bio-layout-transition),
+    border-color var(--bio-layout-transition),
+    box-shadow var(--bio-layout-transition);
+}
+
+[data-testid="stSidebar"][aria-expanded="true"] {
+  width: var(--bio-sidebar-expanded-width) !important;
+  min-width: var(--bio-sidebar-expanded-width) !important;
+  max-width: var(--bio-sidebar-expanded-width) !important;
+  flex: 0 0 var(--bio-sidebar-expanded-width) !important;
+  transform: translateX(0) !important;
+}
+
+[data-testid="stSidebar"][aria-expanded="false"] {
+  width: 0 !important;
+  min-width: 0 !important;
+  max-width: 0 !important;
+  flex: 0 0 0 !important;
+  transform: translateX(-100%) !important;
+  border-right-width: 0 !important;
+  border-right-color: transparent !important;
+  box-shadow: none !important;
+}
+
+[data-testid="stSidebar"][aria-expanded="false"] > div:first-child {
+  visibility: hidden;
+  pointer-events: none;
+}
+
+/* Keep Streamlit's native collapse control keyboard- and pointer-accessible. */
+[data-testid="stSidebar"][aria-expanded="true"]
+  [data-testid="stBaseButton-headerNoPadding"] {
+  visibility: visible !important;
+}
+
+[data-testid="stSidebar"]
+  [data-testid="stBaseButton-headerNoPadding"]
+  [data-testid="stIconMaterial"],
+[data-testid="stExpandSidebarButton"] [data-testid="stIconMaterial"] {
+  font-family: "Material Symbols Rounded" !important;
+  font-size: 1.5rem !important;
+  line-height: 1 !important;
+}
+
+/* Streamlit 1.58 places the header and main section in this flex child. */
+[data-testid="stAppViewContainer"] > div:has(> [data-testid="stMain"]) {
+  position: relative;
+  width: auto !important;
+  max-width: none !important;
+  min-width: 0 !important;
+  flex: 1 1 auto !important;
+  margin: 0 !important;
+  transition: width var(--bio-layout-transition);
+}
+
+[data-testid="stMain"],
+[data-testid="stHeader"] {
+  left: auto !important;
+  right: auto !important;
+  width: 100% !important;
+  max-width: none !important;
+  min-width: 0 !important;
+  margin-left: 0 !important;
+}
+
+[data-testid="stMain"] {
+  position: relative !important;
+  flex: 1 1 auto !important;
+}
+
+[data-testid="stHeader"] {
+  position: absolute;
+}
+
+[data-testid="stMainBlockContainer"],
+.main .block-container {
+  box-sizing: border-box;
+  width: 100% !important;
+  max-width: var(--bio-workspace-max-width) !important;
+  min-width: 0 !important;
+  margin-inline: auto !important;
+  padding-top: var(--bio-workspace-top-gutter) !important;
+  padding-right: var(--bio-page-gutter) !important;
+  padding-bottom: 4rem !important;
+  padding-left: var(--bio-page-gutter) !important;
+}
+
+[data-testid="stMainBlockContainer"] > [data-testid="stVerticalBlock"],
+[data-testid="stHorizontalBlock"],
+[data-testid="stColumn"],
+[data-testid="stTabs"],
+[data-baseweb="tab-panel"] {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0 !important;
+}
+
+[data-testid="stMainBlockContainer"]
+  > [data-testid="stVerticalBlock"]
+  > [data-testid="stElementContainer"]:has(
+    [data-testid="stMarkdownContainer"] > style:only-child
+  ) {
+  display: none !important;
+}
+
+[data-testid="stMainBlockContainer"]
+  > [data-testid="stVerticalBlock"]
+  > [data-testid="stElementContainer"]:has(.bio-skip-link),
+[data-testid="stMainBlockContainer"]
+  > [data-testid="stVerticalBlock"]
+  > [data-testid="stElementContainer"]:has([data-bio-layout-observer]) {
+  position: absolute !important;
+  width: 0 !important;
+  height: 0 !important;
+  overflow: hidden !important;
+}
+
+[data-testid="stPlotlyChart"],
+[data-testid="stVegaLiteChart"],
+[data-testid="stDataFrame"],
+[data-testid="stDataEditor"],
+[data-testid="stTable"],
+[data-testid="stForm"],
+[data-testid="stFileUploader"],
+.bio-shell-bar,
+.bio-page-context,
+.bio-hero,
+.bio-board,
+.bio-db-grid,
+.bio-surface,
+.bio-live-preview {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100% !important;
+  min-width: 0 !important;
+}
+
+[data-testid="stPlotlyChart"] > div,
+[data-testid="stVegaLiteChart"] > div,
+[data-testid="stDataFrame"] > div,
+[data-testid="stDataEditor"] > div,
+canvas {
+  max-width: 100%;
+}
+
+@media (max-width: 1100px) {
+  :root {
+    --bio-sidebar-expanded-width: 15.25rem;
+    --bio-page-gutter: 1.05rem;
+  }
+}
+
+@media (max-width: 760px) {
+  :root {
+    --bio-sidebar-expanded-width: min(86vw, 17rem);
+    --bio-page-gutter: 0.75rem;
+    --bio-workspace-top-gutter: calc(var(--bio-app-header-height) + 0.75rem);
+  }
+
+
+  [data-testid="stAppViewContainer"] > div:has(> [data-testid="stMain"]) {
+    width: 100% !important;
+    min-width: 100% !important;
+  }
+
+  [data-testid="stHorizontalBlock"]:has(.bio-shell-bar),
+  [data-testid="stHorizontalBlock"]:has(.bio-compact-breadcrumb) {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 0.75rem !important;
+    align-items: stretch !important;
+  }
+
+  [data-testid="stHorizontalBlock"]:has(.bio-shell-bar)
+    > [data-testid="stColumn"],
+  [data-testid="stHorizontalBlock"]:has(.bio-compact-breadcrumb)
+    > [data-testid="stColumn"] {
+    width: 100% !important;
+    min-width: 0 !important;
+    flex: none !important;
+  }
+
+  [data-testid="stHorizontalBlock"]:has(.bio-shell-bar)
+    > [data-testid="stColumn"]:has(.bio-shell-bar) {
+    display: none !important;
+  }
+
+  [data-testid="stHorizontalBlock"]:has(.bio-shell-bar)
+    > [data-testid="stColumn"]
+    [data-testid="stHorizontalBlock"] {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 0.55rem !important;
+  }
+
+  [data-testid="stHorizontalBlock"]:has(.bio-compact-breadcrumb)
+    > [data-testid="stColumn"]
+    [data-testid="stHorizontalBlock"] {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 0.55rem !important;
+  }
+
+  [data-testid="stHorizontalBlock"]:has(.bio-shell-bar)
+    [data-testid="stHorizontalBlock"]
+    > [data-testid="stColumn"],
+  [data-testid="stHorizontalBlock"]:has(.bio-compact-breadcrumb)
+    [data-testid="stHorizontalBlock"]
+    > [data-testid="stColumn"] {
+    width: 100% !important;
+    min-width: 0 !important;
+    flex: none !important;
+  }
+
+  [data-testid="stSidebar"][aria-expanded="true"] {
+    position: fixed !important;
+    inset: 0 auto 0 0 !important;
+    z-index: 1000000;
+    height: 100dvh;
+  }
+
+  [data-testid="stMainBlockContainer"],
+  .main .block-container {
+    padding-bottom: 3rem !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --bio-layout-transition: 1ms linear;
+  }
+}

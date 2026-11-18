@@ -1,0 +1,8 @@
+# Optional Step 120 scientific depth stack. The core application remains usable without these.
+-r requirements-bioinformatics.txt
+scvelo>=0.3,<1
+cellrank>=2.0,<3
+cellpose>=3,<5
+stardist>=0.9,<1
+flowio>=1.3,<2
+fcsparser>=0.2,<1

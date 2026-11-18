@@ -1,0 +1,1064 @@
+{
+  "schema": "biointel.step140.qualification.v1",
+  "milestone": "Step 140",
+  "product_version": "13.2.0",
+  "scope": {
+    "specialist_modules": 15,
+    "visual_assignments": 180,
+    "benchmark_profiles": 15,
+    "portable_workflow_plans": 15,
+    "standards_workspace": true,
+    "last_mile_profiles": 15
+  },
+  "completed_tests_in_separate_suites": {
+    "step140_focused": {
+      "passed": 17,
+      "failed": 0
+    },
+    "step139_compatibility": {
+      "passed": 9,
+      "failed": 0
+    },
+    "step138_compatibility": {
+      "passed": 20,
+      "failed": 0
+    },
+    "step137_compatibility": {
+      "passed": 19,
+      "failed": 0
+    },
+    "step130_135_selected_foundation": {
+      "passed": 34,
+      "failed": 0
+    },
+    "step136_selected_visual_brand_runtime": {
+      "passed": 48,
+      "failed": 0
+    },
+    "total_distinct_selected_tests": {
+      "passed": 147,
+      "failed": 0
+    },
+    "combined_long_run_note": "Long combined commands can cross the execution cap; results are reported only from completed separate suites."
+  },
+  "compile": {
+    "python_files": 1023,
+    "passed": 1023,
+    "failed": 0,
+    "failures": []
+  },
+  "navigation": {
+    "page_files": 205,
+    "catalogue_pages": 205,
+    "missing_from_catalogue": [],
+    "missing_on_disk": [],
+    "auto_discovered": [],
+    "duplicate_keys": [],
+    "duplicate_paths": [],
+    "healthy": true
+  },
+  "databases": {
+    "total": 40,
+    "healthy": 40,
+    "rows_inspected": 108493,
+    "foreign_key_violations": 0,
+    "databases": [
+      {
+        "path": "UserData/workspace/live_experience.sqlite3",
+        "size_bytes": 49152,
+        "integrity": "ok",
+        "foreign_keys": 0,
+        "tables": 3,
+        "rows": 0,
+        "healthy": true
+      },
+      {
+        "path": "UserData/workspace/step132_visual_intelligence.sqlite",
+        "size_bytes": 49152,
+        "integrity": "ok",
+        "foreign_keys": 0,
+        "tables": 5,
+        "rows": 0,
+        "healthy": true
+      },
+      {
+        "path": "data/clinical_pharma/clinical_validation.sqlite3",
+        "size_bytes": 188416,
+        "integrity": "ok",
+        "foreign_keys": 0,
+        "tables": 13,
+        "rows": 0,
+        "healthy": true
+      },
+      {
+        "path": "data/discovery_projects.sqlite3",
+        "size_bytes": 102400,
+        "integrity": "ok",
+        "foreign_keys": 0,
+        "tables": 7,
+        "rows": 0,
+        "healthy": true
+      },
+      {
+        "path": "data/lab_analytics.sqlite3",
+        "size_bytes": 36864,
+        "integrity": "ok",
+        "foreign_keys": 0,
+        "tables": 3,
+        "rows": 0,
+        "healthy": true
+      },
+      {
+        "path": "data/reference_assets/reference_assets.sqlite3",
+        "size_bytes": 24576,
+        "integrity": "ok",
+        "foreign_keys": 0,
+        "tables": 2,
+        "rows": 0,
+        "healthy": true
+      },
+      {
+        "path": "reports/analytics.sqlite3",
+        "size_bytes": 6451200,
+        "integrity": "ok",
+        "foreign_keys": 0,
+        "tables": 5,
+        "rows": 17690,
+        "healthy": true
+      },
+      {
+        "path": "reports/api_security.sqlite3",
+        "size_bytes": 557056,
+        "integrity": "ok",
+        "foreign_keys": 0,
+        "tables": 5,
+        "rows": 1611,
+        "healthy": true
+      },
+      {
+        "path": "reports/assets.sqlite3",
+        "size_bytes": 5410816,
+        "integrity": "ok",
+        "foreign_keys": 0,
+        "tables": 11,
+        "rows": 20547,
+        "healthy": true
+      },
+      {
+        "path": "reports/batch_jobs/batch_prediction_sample_250.sqlite3",
+        "size_bytes": 16384,
+        "integrity": "ok",
+        "foreign_keys": 0,
+        "tables": 1,
+        "rows": 0,
+        "healthy": true
+      },
+      {
+        "path": "reports/biotechnology_project_runs.sqlite3",
+        "size_bytes": 28672,
+        "integrity": "ok",
+        "foreign_keys": 0,
+        "tables": 2,
+        "rows": 0,
+        "healthy": true
+      },
+      {
+        "path": "reports/connected_sources.sqlite3",
+        "size_bytes": 45056,
+        "integrity": "ok",
+        "foreign_keys": 0,
+        "tables": 4,
+        "rows": 0,
+        "healthy": true
+      },
+      {
+        "path": "reports/datasets.sqlite3",
+        "size_bytes": 2150400,
+        "integrity": "ok",
+        "foreign_keys": 0,
+        "tables": 13,
+        "rows": 5188,
+        "healthy": true
+      },
+      {
+        "path": "reports/document_history.sqlite3",
+        "size_bytes": 1085440,
+        "integrity": "ok",
+        "foreign_keys": 0,
+        "tables": 14,
+        "rows": 1973,
+        "healthy": true
+      },
+      {
+        "path": "reports/evidence.sqlite3",
+        "size_bytes": 2678784,
+        "integrity": "ok",
+        "foreign_keys": 0,
+        "tables": 10,
+        "rows": 3891,
+        "healthy": true
+      },
+      {
+        "path": "reports/experiments.sqlite3",
+        "size_bytes": 626688,
+        "integrity": "ok",
+        "foreign_keys": 0,
+        "tables": 9,
+        "rows": 783,
+        "healthy": true
+      },
+      {
+        "path": "reports/feature_cache.sqlite3",
+        "size_bytes": 2777088,
+        "integrity": "ok",
+        "foreign_keys": 0,
+        "tables": 2,
+        "rows": 1293,
+        "healthy": true
+      },
+      {
+        "path": "reports/internet_downloads.sqlite3",
+        "size_bytes": 208896,
+        "integrity": "ok",
+        "foreign_keys": 0,
+        "tables": 5,
+        "rows": 105,
+        "healthy": true
+      },
+      {
+        "path": "reports/jobs.sqlite3",
+        "size_bytes": 380928,
+        "integrity": "ok",
+        "foreign_keys": 0,
+        "tables": 6,
+        "rows": 981,
+        "healthy": true
+      },
+      {
+        "path": "reports/knowledge.sqlite3",
+        "size_bytes": 17215488,
+        "integrity": "ok",
+        "foreign_keys": 0,
+        "tables": 10,
+        "rows": 38427,
+        "healthy": true
+      },
+      {
+        "path": "reports/performance.sqlite3",
+        "size_bytes": 16384,
+        "integrity": "ok",
+        "foreign_keys": 0,
+        "tables": 1,
+        "rows": 0,
+        "healthy": true
+      },
+      {
+        "path": "reports/projects.sqlite3",
+        "size_bytes": 524288,
+        "integrity": "ok",
+        "foreign_keys": 0,
+        "tables": 7,
+        "rows": 688,
+        "healthy": true
+      },
+      {
+        "path": "reports/prospective_validation.sqlite3",
+        "size_bytes": 36864,
+        "integrity": "ok",
+        "foreign_keys": 0,
+        "tables": 4,
+        "rows": 0,
+        "healthy": true
+      },
+      {
+        "path": "reports/realworld_evidence.sqlite3",
+        "size_bytes": 65536,
+        "integrity": "ok",
+        "foreign_keys": 0,
+        "tables": 6,
+        "rows": 21,
+        "healthy": true
+      },
+      {
+        "path": "reports/relationships.sqlite3",
+        "size_bytes": 1159168,
+        "integrity": "ok",
+        "foreign_keys": 0,
+        "tables": 4,
+        "rows": 2291,
+        "healthy": true
+      },
+      {
+        "path": "reports/scientific_evidence.sqlite3",
+        "size_bytes": 16773120,
+        "integrity": "ok",
+        "foreign_keys": 0,
+        "tables": 5,
+        "rows": 12903,
+        "healthy": true
+      },
+      {
+        "path": "reports/step103_lims.sqlite3",
+        "size_bytes": 20480,
+        "integrity": "ok",
+        "foreign_keys": 0,
+        "tables": 2,
+        "rows": 0,
+        "healthy": true
+      },
+      {
+        "path": "reports/step127_scientific_runs.sqlite3",
+        "size_bytes": 28672,
+        "integrity": "ok",
+        "foreign_keys": 0,
+        "tables": 2,
+        "rows": 0,
+        "healthy": true
+      },
+      {
+        "path": "reports/step95_quality10_self_test/self_test_registry.sqlite3",
+        "size_bytes": 49152,
+        "integrity": "ok",
+        "foreign_keys": 0,
+        "tables": 4,
+        "rows": 14,
+        "healthy": true
+      },
+      {
+        "path": "reports/tenants.sqlite3",
+        "size_bytes": 53248,
+        "integrity": "ok",
+        "foreign_keys": 0,
+        "tables": 4,
+        "rows": 3,
+        "healthy": true
+      },
+      {
+        "path": "reports/validation_evidence.sqlite3",
+        "size_bytes": 102400,
+        "integrity": "ok",
+        "foreign_keys": 0,
+        "tables": 8,
+        "rows": 12,
+        "healthy": true
+      },
+      {
+        "path": "reports/viewer_sync.sqlite3",
+        "size_bytes": 28672,
+        "integrity": "ok",
+        "foreign_keys": 0,
+        "tables": 2,
+        "rows": 0,
+        "healthy": true
+      },
+      {
+        "path": "reports/workflow_automation.sqlite3",
+        "size_bytes": 49152,
+        "integrity": "ok",
+        "foreign_keys": 0,
+        "tables": 4,
+        "rows": 4,
+        "healthy": true
+      },
+      {
+        "path": "workspace/quality10/workflow_runs.sqlite3",
+        "size_bytes": 49152,
+        "integrity": "ok",
+        "foreign_keys": 0,
+        "tables": 4,
+        "rows": 0,
+        "healthy": true
+      },
+      {
+        "path": "workspace/reference_lifecycle/reference_lifecycle.sqlite3",
+        "size_bytes": 40960,
+        "integrity": "ok",
+        "foreign_keys": 0,
+        "tables": 3,
+        "rows": 0,
+        "healthy": true
+      },
+      {
+        "path": "workspace/step104/jobs.sqlite3",
+        "size_bytes": 90112,
+        "integrity": "ok",
+        "foreign_keys": 0,
+        "tables": 6,
+        "rows": 0,
+        "healthy": true
+      },
+      {
+        "path": "workspace/step104/platform.sqlite3",
+        "size_bytes": 212992,
+        "integrity": "ok",
+        "foreign_keys": 0,
+        "tables": 17,
+        "rows": 0,
+        "healthy": true
+      },
+      {
+        "path": "workspace/step130_scientific_intelligence.sqlite3",
+        "size_bytes": 208896,
+        "integrity": "ok",
+        "foreign_keys": 0,
+        "tables": 13,
+        "rows": 68,
+        "healthy": true
+      },
+      {
+        "path": "workspace/visual_workspace.sqlite3",
+        "size_bytes": 36864,
+        "integrity": "ok",
+        "foreign_keys": 0,
+        "tables": 3,
+        "rows": 0,
+        "healthy": true
+      },
+      {
+        "path": "workspace/workflow_runs/workflow_runs.sqlite3",
+        "size_bytes": 49152,
+        "integrity": "ok",
+        "foreign_keys": 0,
+        "tables": 4,
+        "rows": 0,
+        "healthy": true
+      }
+    ]
+  },
+  "scientific_smoke": {
+    "modules": 15,
+    "passed": 15,
+    "visuals": 180,
+    "details": [
+      {
+        "module_key": "population_gwas_peak",
+        "result_rows": 60,
+        "extras": 14,
+        "visuals": 12,
+        "bundle_members": 73,
+        "last_mile_tables": 1,
+        "passed": true
+      },
+      {
+        "module_key": "epigenomics_peak",
+        "result_rows": 1188,
+        "extras": 13,
+        "visuals": 12,
+        "bundle_members": 72,
+        "last_mile_tables": 1,
+        "passed": true
+      },
+      {
+        "module_key": "pharmacogenomics_peak",
+        "result_rows": 180,
+        "extras": 11,
+        "visuals": 12,
+        "bundle_members": 70,
+        "last_mile_tables": 1,
+        "passed": true
+      },
+      {
+        "module_key": "structural_variant_peak",
+        "result_rows": 120,
+        "extras": 13,
+        "visuals": 12,
+        "bundle_members": 72,
+        "last_mile_tables": 1,
+        "passed": true
+      },
+      {
+        "module_key": "rna_splicing_peak",
+        "result_rows": 224,
+        "extras": 13,
+        "visuals": 12,
+        "bundle_members": 72,
+        "last_mile_tables": 1,
+        "passed": true
+      },
+      {
+        "module_key": "immune_repertoire",
+        "result_rows": 800,
+        "extras": 12,
+        "visuals": 12,
+        "bundle_members": 71,
+        "last_mile_tables": 1,
+        "passed": true
+      },
+      {
+        "module_key": "single_cell_multiome",
+        "result_rows": 120,
+        "extras": 13,
+        "visuals": 12,
+        "bundle_members": 72,
+        "last_mile_tables": 1,
+        "passed": true
+      },
+      {
+        "module_key": "proteogenomics_peak",
+        "result_rows": 120,
+        "extras": 11,
+        "visuals": 12,
+        "bundle_members": 70,
+        "last_mile_tables": 1,
+        "passed": true
+      },
+      {
+        "module_key": "gene_regulatory_network",
+        "result_rows": 60,
+        "extras": 11,
+        "visuals": 12,
+        "bundle_members": 70,
+        "last_mile_tables": 1,
+        "passed": true
+      },
+      {
+        "module_key": "federated_genomic_discovery",
+        "result_rows": 120,
+        "extras": 12,
+        "visuals": 12,
+        "bundle_members": 71,
+        "last_mile_tables": 2,
+        "passed": true
+      },
+      {
+        "module_key": "viral_within_host",
+        "result_rows": 1350,
+        "extras": 12,
+        "visuals": 12,
+        "bundle_members": 71,
+        "last_mile_tables": 1,
+        "passed": true
+      },
+      {
+        "module_key": "genome_annotation",
+        "result_rows": 120,
+        "extras": 12,
+        "visuals": 12,
+        "bundle_members": 71,
+        "last_mile_tables": 1,
+        "passed": true
+      },
+      {
+        "module_key": "circular_dna_instability",
+        "result_rows": 120,
+        "extras": 13,
+        "visuals": 12,
+        "bundle_members": 72,
+        "last_mile_tables": 1,
+        "passed": true
+      },
+      {
+        "module_key": "environmental_edna",
+        "result_rows": 180,
+        "extras": 11,
+        "visuals": 12,
+        "bundle_members": 70,
+        "last_mile_tables": 1,
+        "passed": true
+      },
+      {
+        "module_key": "comparative_regulatory_genomics",
+        "result_rows": 280,
+        "extras": 12,
+        "visuals": 12,
+        "bundle_members": 71,
+        "last_mile_tables": 1,
+        "passed": true
+      }
+    ]
+  },
+  "stress_matrix": {
+    "schema": "biointel.step140.stress-matrix.v1",
+    "generated_at_utc": "2026-07-12T16:09:26.742478+00:00",
+    "modules": [
+      {
+        "module_key": "population_gwas_peak",
+        "cases": [
+          {
+            "case": "empty input",
+            "passed": true
+          },
+          {
+            "case": "single record",
+            "passed": true
+          },
+          {
+            "case": "missing required field",
+            "passed": true
+          },
+          {
+            "case": "duplicate records retained",
+            "passed": true
+          },
+          {
+            "case": "large input planning",
+            "passed": true
+          }
+        ],
+        "passed": true
+      },
+      {
+        "module_key": "epigenomics_peak",
+        "cases": [
+          {
+            "case": "empty input",
+            "passed": true
+          },
+          {
+            "case": "single record",
+            "passed": true
+          },
+          {
+            "case": "missing required field",
+            "passed": true
+          },
+          {
+            "case": "duplicate records retained",
+            "passed": true
+          },
+          {
+            "case": "large input planning",
+            "passed": true
+          }
+        ],
+        "passed": true
+      },
+      {
+        "module_key": "pharmacogenomics_peak",
+        "cases": [
+          {
+            "case": "empty input",
+            "passed": true
+          },
+          {
+            "case": "single record",
+            "passed": true
+          },
+          {
+            "case": "missing required field",
+            "passed": true
+          },
+          {
+            "case": "duplicate records retained",
+            "passed": true
+          },
+          {
+            "case": "large input planning",
+            "passed": true
+          }
+        ],
+        "passed": true
+      },
+      {
+        "module_key": "structural_variant_peak",
+        "cases": [
+          {
+            "case": "empty input",
+            "passed": true
+          },
+          {
+            "case": "single record",
+            "passed": true
+          },
+          {
+            "case": "missing required field",
+            "passed": true
+          },
+          {
+            "case": "duplicate records retained",
+            "passed": true
+          },
+          {
+            "case": "large input planning",
+            "passed": true
+          }
+        ],
+        "passed": true
+      },
+      {
+        "module_key": "rna_splicing_peak",
+        "cases": [
+          {
+            "case": "empty input",
+            "passed": true
+          },
+          {
+            "case": "single record",
+            "passed": true
+          },
+          {
+            "case": "missing required field",
+            "passed": true
+          },
+          {
+            "case": "duplicate records retained",
+            "passed": true
+          },
+          {
+            "case": "large input planning",
+            "passed": true
+          }
+        ],
+        "passed": true
+      },
+      {
+        "module_key": "immune_repertoire",
+        "cases": [
+          {
+            "case": "empty input",
+            "passed": true
+          },
+          {
+            "case": "single record",
+            "passed": true
+          },
+          {
+            "case": "missing required field",
+            "passed": true
+          },
+          {
+            "case": "duplicate records retained",
+            "passed": true
+          },
+          {
+            "case": "large input planning",
+            "passed": true
+          }
+        ],
+        "passed": true
+      },
+      {
+        "module_key": "single_cell_multiome",
+        "cases": [
+          {
+            "case": "empty input",
+            "passed": true
+          },
+          {
+            "case": "single record",
+            "passed": true
+          },
+          {
+            "case": "missing required field",
+            "passed": true
+          },
+          {
+            "case": "duplicate records retained",
+            "passed": true
+          },
+          {
+            "case": "large input planning",
+            "passed": true
+          }
+        ],
+        "passed": true
+      },
+      {
+        "module_key": "proteogenomics_peak",
+        "cases": [
+          {
+            "case": "empty input",
+            "passed": true
+          },
+          {
+            "case": "single record",
+            "passed": true
+          },
+          {
+            "case": "missing required field",
+            "passed": true
+          },
+          {
+            "case": "duplicate records retained",
+            "passed": true
+          },
+          {
+            "case": "large input planning",
+            "passed": true
+          }
+        ],
+        "passed": true
+      },
+      {
+        "module_key": "gene_regulatory_network",
+        "cases": [
+          {
+            "case": "empty input",
+            "passed": true
+          },
+          {
+            "case": "single record",
+            "passed": true
+          },
+          {
+            "case": "missing required field",
+            "passed": true
+          },
+          {
+            "case": "duplicate records retained",
+            "passed": true
+          },
+          {
+            "case": "large input planning",
+            "passed": true
+          }
+        ],
+        "passed": true
+      },
+      {
+        "module_key": "federated_genomic_discovery",
+        "cases": [
+          {
+            "case": "empty input",
+            "passed": true
+          },
+          {
+            "case": "single record",
+            "passed": true
+          },
+          {
+            "case": "missing required field",
+            "passed": true
+          },
+          {
+            "case": "duplicate records retained",
+            "passed": true
+          },
+          {
+            "case": "large input planning",
+            "passed": true
+          }
+        ],
+        "passed": true
+      },
+      {
+        "module_key": "viral_within_host",
+        "cases": [
+          {
+            "case": "empty input",
+            "passed": true
+          },
+          {
+            "case": "single record",
+            "passed": true
+          },
+          {
+            "case": "missing required field",
+            "passed": true
+          },
+          {
+            "case": "duplicate records retained",
+            "passed": true
+          },
+          {
+            "case": "large input planning",
+            "passed": true
+          }
+        ],
+        "passed": true
+      },
+      {
+        "module_key": "genome_annotation",
+        "cases": [
+          {
+            "case": "empty input",
+            "passed": true
+          },
+          {
+            "case": "single record",
+            "passed": true
+          },
+          {
+            "case": "missing required field",
+            "passed": true
+          },
+          {
+            "case": "duplicate records retained",
+            "passed": true
+          },
+          {
+            "case": "large input planning",
+            "passed": true
+          }
+        ],
+        "passed": true
+      },
+      {
+        "module_key": "circular_dna_instability",
+        "cases": [
+          {
+            "case": "empty input",
+            "passed": true
+          },
+          {
+            "case": "single record",
+            "passed": true
+          },
+          {
+            "case": "missing required field",
+            "passed": true
+          },
+          {
+            "case": "duplicate records retained",
+            "passed": true
+          },
+          {
+            "case": "large input planning",
+            "passed": true
+          }
+        ],
+        "passed": true
+      },
+      {
+        "module_key": "environmental_edna",
+        "cases": [
+          {
+            "case": "empty input",
+            "passed": true
+          },
+          {
+            "case": "single record",
+            "passed": true
+          },
+          {
+            "case": "missing required field",
+            "passed": true
+          },
+          {
+            "case": "duplicate records retained",
+            "passed": true
+          },
+          {
+            "case": "large input planning",
+            "passed": true
+          }
+        ],
+        "passed": true
+      },
+      {
+        "module_key": "comparative_regulatory_genomics",
+        "cases": [
+          {
+            "case": "empty input",
+            "passed": true
+          },
+          {
+            "case": "single record",
+            "passed": true
+          },
+          {
+            "case": "missing required field",
+            "passed": true
+          },
+          {
+            "case": "duplicate records retained",
+            "passed": true
+          },
+          {
+            "case": "large input planning",
+            "passed": true
+          }
+        ],
+        "passed": true
+      }
+    ],
+    "regional_streaming": true,
+    "passed": true,
+    "covered_cases": [
+      "empty input",
+      "single record",
+      "missing field",
+      "duplicate records",
+      "large input planning",
+      "indexed regional query"
+    ]
+  },
+  "windows_qualification_harness": {
+    "schema": "biointel.step140.windows-qualification.v1",
+    "generated_at_utc": "2026-07-12T16:10:10.621392+00:00",
+    "host": {
+      "platform": "Linux-4.4.0-x86_64-with-glibc2.41",
+      "python": "3.13.5",
+      "machine": "x86_64"
+    },
+    "checks": [
+      {
+        "name": "Operating system",
+        "passed": false,
+        "detail": "Linux-4.4.0-x86_64-with-glibc2.41",
+        "environment_gated": true
+      },
+      {
+        "name": "Python architecture",
+        "passed": true,
+        "detail": "3.13.5 · 64bit",
+        "environment_gated": false
+      },
+      {
+        "name": "Python version",
+        "passed": true,
+        "detail": "3.13.5",
+        "environment_gated": false
+      },
+      {
+        "name": "Writable UserData",
+        "passed": true,
+        "detail": "/mnt/data/step139_work/UserData",
+        "environment_gated": false
+      },
+      {
+        "name": "Free disk",
+        "passed": true,
+        "detail": "8589934582.52 GB free",
+        "environment_gated": false
+      },
+      {
+        "name": "Spaces/non-English path",
+        "passed": true,
+        "detail": "Unicode workspace write/read passed",
+        "environment_gated": false
+      },
+      {
+        "name": "SQLite WAL/read-write",
+        "passed": true,
+        "detail": "SQLite local write and integrity check passed",
+        "environment_gated": false
+      },
+      {
+        "name": "Step 140 focused tests",
+        "passed": true,
+        "detail": ".................                                                        [100%]\n17 passed in 7.38s",
+        "environment_gated": false
+      },
+      {
+        "name": "Python compilation",
+        "passed": true,
+        "detail": "Passed",
+        "environment_gated": false
+      },
+      {
+        "name": "Display scaling detection",
+        "passed": false,
+        "detail": "Display scaling query requires Windows",
+        "environment_gated": true
+      },
+      {
+        "name": "Minimum RAM profile",
+        "passed": true,
+        "detail": "4.00 GB physical RAM; 8 GB or more is recommended for large workflows",
+        "environment_gated": false
+      }
+    ],
+    "passed": true,
+    "blockers": [],
+    "boundary": "Physical Windows qualification covers this machine only. External scientific tools, licensed databases and every possible hardware configuration require separate qualification."
+  },
+  "environment_boundaries": {
+    "physical_windows_10_11": "Harness included; current build host is Linux, so Windows-only OS/DPI checks are environment-gated.",
+    "live_streamlit_browser_matrix": "Source/UI contracts and selected visual tests passed; physical 100-175% Windows scaling requires running the included Windows qualification on target machines.",
+    "remote_ga4gh_services": "Portable WES/TES/TRS/DRS and htsget manifests are generated locally; no remote endpoint is falsely claimed as contacted.",
+    "external_engines": "Plans, argument safety, container digests and readiness are qualified; absent third-party tools are not reported as executed.",
+    "clinical_or_regulatory": "Research software does not manufacture clinical validation, regulatory approval or independent wet-lab evidence.",
+    "lint": "Ruff executable was unavailable in this build environment; Python compilation and focused regression suites completed."
+  }
+}

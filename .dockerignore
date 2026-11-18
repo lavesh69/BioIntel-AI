@@ -1,0 +1,11 @@
+.venv
+__pycache__
+.pytest_cache
+.ruff_cache
+.git
+*.pyc
+*.pyo
+*.pyd
+reports/*.sqlite3-journal
+backups
+cache/external

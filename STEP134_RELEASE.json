@@ -1,0 +1,18 @@
+{
+  "schema": "biointel.release.v1",
+  "step": 134,
+  "release_name": "Full Module Reliability, Stability and Performance Hardening",
+  "version": "13.2.0",
+  "scope": "all modules",
+  "preserves_existing_features": true,
+  "highlights": [
+    "direct deep-link bootstrap repairs",
+    "managed SQLite connection lifecycle",
+    "metadata-only model catalogue discovery",
+    "run-on-demand model deserialisation",
+    "cached Final Assurance default view",
+    "all-page isolated Streamlit smoke verification",
+    "module functional smoke verification",
+    "clean four-part Windows release"
+  ]
+}

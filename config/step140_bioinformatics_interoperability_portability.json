@@ -1,0 +1,4748 @@
+{
+  "schema": "biointel.step140.bioinformatics-interoperability-portability-peak.v1",
+  "milestone": "Step 140",
+  "product_version_preserved": "13.2.0",
+  "specialist_modules": 15,
+  "visuals_per_module": 12,
+  "total_visual_assignments": 180,
+  "peak_layers": {
+    "ga4gh_compatible_interoperability": [
+      "VRS-style sha512t24u identifiers",
+      "Cat-VRS helper",
+      "VA-Spec descriptor helper",
+      "Phenopacket structural/HPO validation",
+      "refget-style sequence digests",
+      "DRS object manifests",
+      "htsget request manifests"
+    ],
+    "portable_workflows": [
+      "WES run request",
+      "TES task manifests",
+      "TRS descriptor",
+      "DRS input manifests",
+      "CWL/Nextflow metadata import",
+      "container digest locking"
+    ],
+    "scientific_validation": [
+      "15 benchmark profiles",
+      "explicit truth/prediction selection",
+      "subgroup benchmark tables",
+      "benchmark history",
+      "bootstrap uncertainty",
+      "multi-engine consensus"
+    ],
+    "data_access": [
+      "indexed region query",
+      "progressive genomic tiling",
+      "index companion validation",
+      "bounded regional records"
+    ],
+    "lifecycle": [
+      "result states Draft/Reviewed/Locked/Superseded/Retracted",
+      "reference release diff",
+      "stage checkpoints",
+      "resume compatibility",
+      "failure intelligence"
+    ],
+    "execution": [
+      "resource-aware mode selection",
+      "RAM/disk/CPU estimation",
+      "interactive/background/low-memory/HPC profiles"
+    ],
+    "ux": [
+      "scientific inspection drawer",
+      "standards and validation workspace",
+      "portable workflow download",
+      "reference difference viewer"
+    ]
+  },
+  "module_rows": [
+    {
+      "key": "population_gwas_peak",
+      "title": "Population Genetics, GWAS & PRS Studio",
+      "short_title": "GWAS & PRS Studio",
+      "category": "Bioinformatics",
+      "new_module_from_step137": false,
+      "existing_page": "pages/134_Population_Genetics_GWAS_Studio.py",
+      "summary": "Cohort QC, ancestry structure, association screening, regional review and polygenic-risk exploration in one reproducible workflow.",
+      "purpose": "Use genotype, phenotype and covariate data to identify quality problems, population structure and association candidates before specialist mixed-model validation.",
+      "required_columns": [
+        "sample",
+        "variant",
+        "chrom",
+        "position",
+        "genotype",
+        "phenotype"
+      ],
+      "accepted_inputs": [
+        "CSV",
+        "TSV",
+        "VCF",
+        "VCF.GZ",
+        "PLINK-exported table"
+      ],
+      "native_extensions": [
+        "bcf",
+        "bed",
+        "bim",
+        "csv",
+        "fam",
+        "json",
+        "ped",
+        "pgen",
+        "psam",
+        "pvar",
+        "tsv",
+        "txt",
+        "vcf",
+        "xls",
+        "xlsx",
+        "vcf.gz"
+      ],
+      "workflow": [
+        "Import and harmonise",
+        "Sample and variant QC",
+        "Ancestry structure",
+        "Association screening",
+        "LD and regional review",
+        "PRS exploration",
+        "Evidence export"
+      ],
+      "outputs": [
+        "variant QC",
+        "association table",
+        "sample ancestry scores",
+        "PRS scores",
+        "evidence bundle"
+      ],
+      "visuals": [
+        "Manhattan plot",
+        "QQ plot",
+        "Ancestry PCA",
+        "LD heatmap",
+        "Regional association",
+        "PRS distribution",
+        "Subgroup forest",
+        "QC dashboard",
+        "Sample QC landscape",
+        "Variant QC matrix",
+        "Fine-mapping credible set",
+        "PRS calibration"
+      ],
+      "visual_count": 12,
+      "boundary": "Exploratory screening does not replace validated PLINK, SAIGE or REGENIE pipelines, imputation, ancestry-matched validation or clinical interpretation.",
+      "handoffs": [
+        "Variant Workbench",
+        "Pathway Analysis",
+        "Clinical Biomarker Studio"
+      ],
+      "capabilities": [
+        "Sample/variant QC",
+        "Ancestry PCA",
+        "Association screening",
+        "LD proxy",
+        "Regional review",
+        "Fine-mapping proxy",
+        "PRS",
+        "Subgroup performance"
+      ],
+      "qc_checks": [
+        "Sample missingness",
+        "Variant missingness",
+        "Heterozygosity",
+        "Relatedness proxy",
+        "MAF",
+        "Hardy-Weinberg",
+        "Population structure",
+        "Phenotype balance"
+      ],
+      "reference_assets": [
+        "Reference FASTA",
+        "Genome annotation",
+        "Ancestry reference panel",
+        "LD reference panel",
+        "Allele-frequency panel"
+      ],
+      "native_features": [
+        "PLINK/VCF cohort intake",
+        "indexed variant readiness",
+        "ancestry and kinship context",
+        "reference-locked association planning"
+      ],
+      "last_mile_features": [
+        "Fixed-effect meta-analysis when beta/SE/study are supplied",
+        "Gene burden summary",
+        "Ancestry transferability audit",
+        "PRS utility boundary"
+      ],
+      "specialist_confirmations": [
+        "REGENIE/SAIGE/PLINK2",
+        "independent cohort",
+        "ancestry-matched LD panel"
+      ],
+      "benchmark_profile": {
+        "module_key": "population_gwas_peak",
+        "name": "Population Gwas Peak benchmark",
+        "truth_requirements": [
+          "association truth/replication cohort"
+        ],
+        "metrics": [
+          "precision",
+          "recall",
+          "f1",
+          "calibration"
+        ],
+        "stratifications": [
+          "ancestry",
+          "frequency",
+          "chromosome"
+        ],
+        "external_reference": "GIAB-compatible variant truth where applicable",
+        "boundary": "Benchmark results measure the supplied truth pack only and are not a substitute for independent external validation."
+      },
+      "portable_workflow": {
+        "workflow_id": "biointel.population_gwas_peak.peak-v140",
+        "version": "1.0.0",
+        "tasks": [
+          {
+            "task_id": "verify",
+            "name": "Verify input checksum and schema",
+            "command": [
+              "biointel-cli",
+              "verify-input",
+              "--input",
+              "input.dat"
+            ],
+            "inputs": [
+              "input.dat"
+            ],
+            "outputs": [
+              "verified-input.json"
+            ],
+            "cpu_cores": 1,
+            "memory_gb": 1,
+            "disk_gb": 2,
+            "container": null,
+            "dependencies": []
+          },
+          {
+            "task_id": "engine-1",
+            "name": "Run plink2",
+            "command": [
+              "plink2",
+              "--version"
+            ],
+            "inputs": [
+              "input.dat"
+            ],
+            "outputs": [
+              "results/plink2.json"
+            ],
+            "cpu_cores": 2,
+            "memory_gb": 4,
+            "disk_gb": 10,
+            "container": {
+              "image": "ghcr.io/biointel-local/plink2:qualified",
+              "digest": "sha256:eece9fc3a1082100d5e0ac6069ecb15421dd9f13fc42aadae1df7509869863da",
+              "runtime": "docker-or-apptainer",
+              "licence": "External tool licence applies"
+            },
+            "dependencies": [
+              "verify"
+            ]
+          },
+          {
+            "task_id": "engine-2",
+            "name": "Run regenie",
+            "command": [
+              "regenie",
+              "--version"
+            ],
+            "inputs": [
+              "input.dat"
+            ],
+            "outputs": [
+              "results/regenie.json"
+            ],
+            "cpu_cores": 2,
+            "memory_gb": 4,
+            "disk_gb": 10,
+            "container": {
+              "image": "ghcr.io/biointel-local/regenie:qualified",
+              "digest": "sha256:6191ed826e019689516b6e91b3aa39c60c81c8485c3d90827c25f80317aa9722",
+              "runtime": "docker-or-apptainer",
+              "licence": "External tool licence applies"
+            },
+            "dependencies": [
+              "engine-1"
+            ]
+          },
+          {
+            "task_id": "engine-3",
+            "name": "Run saige",
+            "command": [
+              "saige",
+              "--version"
+            ],
+            "inputs": [
+              "input.dat"
+            ],
+            "outputs": [
+              "results/saige.json"
+            ],
+            "cpu_cores": 2,
+            "memory_gb": 4,
+            "disk_gb": 10,
+            "container": {
+              "image": "ghcr.io/biointel-local/saige:qualified",
+              "digest": "sha256:796dd9c3ee3b140269d887d54e179a8b4673923f9f3b673c92d10dcaca61b9e5",
+              "runtime": "docker-or-apptainer",
+              "licence": "External tool licence applies"
+            },
+            "dependencies": [
+              "engine-2"
+            ]
+          },
+          {
+            "task_id": "harmonize",
+            "name": "Normalize and harmonize results",
+            "command": [
+              "biointel-cli",
+              "harmonize",
+              "--module",
+              "population_gwas_peak"
+            ],
+            "inputs": [],
+            "outputs": [
+              "results/harmonized.csv"
+            ],
+            "cpu_cores": 1,
+            "memory_gb": 3,
+            "disk_gb": 5,
+            "container": null,
+            "dependencies": [
+              "engine-3"
+            ]
+          },
+          {
+            "task_id": "export",
+            "name": "Build evidence and publication bundle",
+            "command": [
+              "biointel-cli",
+              "export",
+              "--module",
+              "population_gwas_peak"
+            ],
+            "inputs": [
+              "results/harmonized.csv"
+            ],
+            "outputs": [
+              "results/evidence.zip"
+            ],
+            "cpu_cores": 1,
+            "memory_gb": 2,
+            "disk_gb": 5,
+            "container": null,
+            "dependencies": [
+              "harmonize"
+            ]
+          }
+        ],
+        "execution_profiles": [
+          "local",
+          "offline-windows",
+          "hpc",
+          "wes"
+        ],
+        "workflow_digest": "sha256:0e1152eff417b2e74228fceeedd7b334b29f87f407d686c1dd40b87d9adac2eb"
+      },
+      "optional_tools": [
+        {
+          "name": "PLINK 2",
+          "probe": "plink2",
+          "kind": "binary",
+          "purpose": "genotype QC and association models",
+          "required": false
+        },
+        {
+          "name": "REGENIE",
+          "probe": "regenie",
+          "kind": "binary",
+          "purpose": "large-cohort whole-genome regression",
+          "required": false
+        },
+        {
+          "name": "BCFtools",
+          "probe": "bcftools",
+          "kind": "binary",
+          "purpose": "VCF harmonisation",
+          "required": false
+        }
+      ]
+    },
+    {
+      "key": "epigenomics_peak",
+      "title": "Epigenomics & Chromatin Accessibility Workbench",
+      "short_title": "Epigenomics Workbench",
+      "category": "Bioinformatics",
+      "new_module_from_step137": false,
+      "existing_page": "pages/112_Epigenomics_and_Chromatin_Regulation_Studio.py",
+      "summary": "ATAC-seq, ChIP-seq, CUT&RUN, methylation and regulatory-region analysis with RNA integration and provenance.",
+      "purpose": "Prioritise differential regulatory regions, transcription-factor activity and peak-to-gene links while preserving genome build and assay context.",
+      "required_columns": [
+        "sample",
+        "region",
+        "condition",
+        "signal",
+        "chrom",
+        "start",
+        "end"
+      ],
+      "accepted_inputs": [
+        "CSV",
+        "TSV",
+        "BED",
+        "narrowPeak",
+        "broadPeak"
+      ],
+      "native_extensions": [
+        "bam",
+        "bed",
+        "bedgraph",
+        "bedmethyl",
+        "bigwig",
+        "broadpeak",
+        "bw",
+        "cram",
+        "csv",
+        "gff",
+        "gff3",
+        "gtf",
+        "json",
+        "narrowpeak",
+        "tsv",
+        "txt",
+        "xls",
+        "xlsx",
+        "bed.gz",
+        "bedmethyl.gz",
+        "gff.gz",
+        "gtf.gz"
+      ],
+      "workflow": [
+        "Import regions",
+        "Assay QC",
+        "Consensus regions",
+        "Differential signal",
+        "Motif and TF analysis",
+        "Peak-to-gene links",
+        "Export"
+      ],
+      "outputs": [
+        "differential regions",
+        "motif activity",
+        "peak-to-gene links",
+        "methylation summary",
+        "evidence bundle"
+      ],
+      "visuals": [
+        "Peak heatmap",
+        "Genome track",
+        "Accessibility volcano",
+        "Motif heatmap",
+        "TF network",
+        "Methylation profile",
+        "Peak-gene links",
+        "RNA concordance",
+        "Sample-level assay QC",
+        "Condition balance",
+        "Regulatory-class composition",
+        "Genome-bin signal"
+      ],
+      "visual_count": 12,
+      "boundary": "Screening-level region analysis must be confirmed with replicate-aware specialist pipelines, matched genome builds and orthogonal assays.",
+      "handoffs": [
+        "Transcriptomics",
+        "Gene Regulatory Network",
+        "Comparative Regulatory Genomics"
+      ],
+      "capabilities": [
+        "Consensus regions",
+        "Differential accessibility",
+        "Motif enrichment",
+        "TF activity",
+        "Peak-to-gene links",
+        "Methylation",
+        "RNA concordance",
+        "Genome tracks"
+      ],
+      "qc_checks": [
+        "Replicate balance",
+        "Coordinate validity",
+        "Peak width",
+        "Signal distribution",
+        "TSS/fragment profile availability",
+        "Genome-build consistency",
+        "Batch structure"
+      ],
+      "reference_assets": [
+        "Reference FASTA",
+        "Genome annotation",
+        "Motif library",
+        "Chromatin-state atlas",
+        "Blacklist regions"
+      ],
+      "native_features": [
+        "BAM/CRAM metadata intake",
+        "bedMethyl parsing",
+        "peak and signal-track readiness",
+        "replicate-aware engine planning"
+      ],
+      "last_mile_features": [
+        "Allele-specific accessibility",
+        "contact-supported peak-to-gene links",
+        "replicate concordance",
+        "chromatin-state transitions"
+      ],
+      "specialist_confirmations": [
+        "replicate-aware peak caller",
+        "Hi-C/contact map",
+        "orthogonal regulatory assay"
+      ],
+      "benchmark_profile": {
+        "module_key": "epigenomics_peak",
+        "name": "Epigenomics Peak benchmark",
+        "truth_requirements": [
+          "validated peak/region labels"
+        ],
+        "metrics": [
+          "precision",
+          "recall",
+          "f1",
+          "correlation"
+        ],
+        "stratifications": [
+          "assay",
+          "chromatin_state",
+          "signal_bin"
+        ],
+        "external_reference": "ENCODE-style held-out regions",
+        "boundary": "Benchmark results measure the supplied truth pack only and are not a substitute for independent external validation."
+      },
+      "portable_workflow": {
+        "workflow_id": "biointel.epigenomics_peak.peak-v140",
+        "version": "1.0.0",
+        "tasks": [
+          {
+            "task_id": "verify",
+            "name": "Verify input checksum and schema",
+            "command": [
+              "biointel-cli",
+              "verify-input",
+              "--input",
+              "input.dat"
+            ],
+            "inputs": [
+              "input.dat"
+            ],
+            "outputs": [
+              "verified-input.json"
+            ],
+            "cpu_cores": 1,
+            "memory_gb": 1,
+            "disk_gb": 2,
+            "container": null,
+            "dependencies": []
+          },
+          {
+            "task_id": "engine-1",
+            "name": "Run samtools",
+            "command": [
+              "samtools",
+              "--version"
+            ],
+            "inputs": [
+              "input.dat"
+            ],
+            "outputs": [
+              "results/samtools.json"
+            ],
+            "cpu_cores": 2,
+            "memory_gb": 4,
+            "disk_gb": 10,
+            "container": {
+              "image": "ghcr.io/biointel-local/samtools:qualified",
+              "digest": "sha256:d8e680c8285c56b86c9acdeeefb28a231246d4a7883b4aa9c9725c6652ea0b8a",
+              "runtime": "docker-or-apptainer",
+              "licence": "External tool licence applies"
+            },
+            "dependencies": [
+              "verify"
+            ]
+          },
+          {
+            "task_id": "engine-2",
+            "name": "Run macs2",
+            "command": [
+              "macs2",
+              "--version"
+            ],
+            "inputs": [
+              "input.dat"
+            ],
+            "outputs": [
+              "results/macs2.json"
+            ],
+            "cpu_cores": 2,
+            "memory_gb": 4,
+            "disk_gb": 10,
+            "container": {
+              "image": "ghcr.io/biointel-local/macs2:qualified",
+              "digest": "sha256:a042a2017c58a4f0a8d40a7713311a9ab84d48844b85e9549d7644ba3b2b679b",
+              "runtime": "docker-or-apptainer",
+              "licence": "External tool licence applies"
+            },
+            "dependencies": [
+              "engine-1"
+            ]
+          },
+          {
+            "task_id": "engine-3",
+            "name": "Run deeptools",
+            "command": [
+              "deeptools",
+              "--version"
+            ],
+            "inputs": [
+              "input.dat"
+            ],
+            "outputs": [
+              "results/deeptools.json"
+            ],
+            "cpu_cores": 2,
+            "memory_gb": 4,
+            "disk_gb": 10,
+            "container": {
+              "image": "ghcr.io/biointel-local/deeptools:qualified",
+              "digest": "sha256:b61348a8bc0dcd9b70af1fbbed971c9cb2809c82eee20dbd42db6de619559158",
+              "runtime": "docker-or-apptainer",
+              "licence": "External tool licence applies"
+            },
+            "dependencies": [
+              "engine-2"
+            ]
+          },
+          {
+            "task_id": "harmonize",
+            "name": "Normalize and harmonize results",
+            "command": [
+              "biointel-cli",
+              "harmonize",
+              "--module",
+              "epigenomics_peak"
+            ],
+            "inputs": [],
+            "outputs": [
+              "results/harmonized.csv"
+            ],
+            "cpu_cores": 1,
+            "memory_gb": 3,
+            "disk_gb": 5,
+            "container": null,
+            "dependencies": [
+              "engine-3"
+            ]
+          },
+          {
+            "task_id": "export",
+            "name": "Build evidence and publication bundle",
+            "command": [
+              "biointel-cli",
+              "export",
+              "--module",
+              "epigenomics_peak"
+            ],
+            "inputs": [
+              "results/harmonized.csv"
+            ],
+            "outputs": [
+              "results/evidence.zip"
+            ],
+            "cpu_cores": 1,
+            "memory_gb": 2,
+            "disk_gb": 5,
+            "container": null,
+            "dependencies": [
+              "harmonize"
+            ]
+          }
+        ],
+        "execution_profiles": [
+          "local",
+          "offline-windows",
+          "hpc",
+          "wes"
+        ],
+        "workflow_digest": "sha256:7d69125c9952a2a72041608075e2314de660b04424a33e9c6440a066a2fef4de"
+      },
+      "optional_tools": [
+        {
+          "name": "MACS3",
+          "probe": "macs3",
+          "kind": "binary",
+          "purpose": "peak calling",
+          "required": false
+        },
+        {
+          "name": "deepTools",
+          "probe": "deeptools",
+          "kind": "python",
+          "purpose": "coverage and heatmaps",
+          "required": false
+        },
+        {
+          "name": "BEDTools",
+          "probe": "bedtools",
+          "kind": "binary",
+          "purpose": "genomic interval operations",
+          "required": false
+        }
+      ]
+    },
+    {
+      "key": "pharmacogenomics_peak",
+      "title": "Pharmacogenomics & Clinical Genomics Studio",
+      "short_title": "Pharmacogenomics Studio",
+      "category": "Bioinformatics",
+      "new_module_from_step137": false,
+      "existing_page": "pages/117_Pharmacogenomics_and_Precision_Medicine_Board.py",
+      "summary": "Variant-to-haplotype, phenotype and drug-gene evidence review with explicit confidence and research-use boundaries.",
+      "purpose": "Connect pharmacogene variants, diplotypes and medication evidence without presenting exploratory calls as clinical recommendations.",
+      "required_columns": [
+        "sample",
+        "gene",
+        "variant",
+        "drug",
+        "allele",
+        "evidence_level"
+      ],
+      "accepted_inputs": [
+        "CSV",
+        "TSV",
+        "VCF",
+        "VCF.GZ",
+        "medication list"
+      ],
+      "native_extensions": [
+        "bam",
+        "bcf",
+        "cram",
+        "csv",
+        "fam",
+        "json",
+        "ped",
+        "tsv",
+        "txt",
+        "vcf",
+        "xls",
+        "xlsx",
+        "vcf.gz"
+      ],
+      "workflow": [
+        "Import variants and medications",
+        "Genome-build QC",
+        "Allele and diplotype review",
+        "Phenotype inference",
+        "Drug-gene evidence",
+        "Conflict review",
+        "Report"
+      ],
+      "outputs": [
+        "drug-gene review table",
+        "diplotype evidence",
+        "phenotype summary",
+        "conflict queue",
+        "structured report"
+      ],
+      "visuals": [
+        "Pharmacogene coverage",
+        "Diplotype waterfall",
+        "Drug-gene matrix",
+        "Phenotype distribution",
+        "Population comparison",
+        "Evidence ladder",
+        "Conflict matrix",
+        "Review timeline",
+        "Locus coverage QC",
+        "Diplotype confidence",
+        "Medication impact board",
+        "Reanalysis triggers"
+      ],
+      "visual_count": 12,
+      "boundary": "Research-use output is not a prescribing recommendation. Clinical decisions require validated genotyping, current guidelines and qualified professional review.",
+      "handoffs": [
+        "Variant Workbench",
+        "Clinical Biomarker Studio",
+        "Evidence Review"
+      ],
+      "capabilities": [
+        "Allele review",
+        "Diplotype assembly",
+        "Phenotype inference",
+        "Drug-gene evidence",
+        "Conflict review",
+        "Population context",
+        "Reanalysis alerts"
+      ],
+      "qc_checks": [
+        "Genome build",
+        "Gene coverage",
+        "Allele completeness",
+        "Copy-number availability",
+        "Guideline version",
+        "Medication mapping",
+        "Evidence conflicts"
+      ],
+      "reference_assets": [
+        "Reference FASTA",
+        "Pharmacogene definitions",
+        "Star-allele definitions",
+        "Guideline snapshot",
+        "Population frequency panel"
+      ],
+      "native_features": [
+        "variant and coverage intake",
+        "copy-number readiness",
+        "guideline-version locking",
+        "manual diplotype review"
+      ],
+      "last_mile_features": [
+        "CNV/hybrid allele review",
+        "phasing evidence",
+        "uncallable locus audit",
+        "guideline change impact"
+      ],
+      "specialist_confirmations": [
+        "validated star-allele caller",
+        "orthogonal genotyping",
+        "qualified clinical review"
+      ],
+      "benchmark_profile": {
+        "module_key": "pharmacogenomics_peak",
+        "name": "Pharmacogenomics Peak benchmark",
+        "truth_requirements": [
+          "validated diplotype/phenotype calls"
+        ],
+        "metrics": [
+          "accuracy",
+          "precision",
+          "recall"
+        ],
+        "stratifications": [
+          "gene",
+          "population",
+          "coverage"
+        ],
+        "external_reference": "laboratory-confirmed PGx controls",
+        "boundary": "Benchmark results measure the supplied truth pack only and are not a substitute for independent external validation."
+      },
+      "portable_workflow": {
+        "workflow_id": "biointel.pharmacogenomics_peak.peak-v140",
+        "version": "1.0.0",
+        "tasks": [
+          {
+            "task_id": "verify",
+            "name": "Verify input checksum and schema",
+            "command": [
+              "biointel-cli",
+              "verify-input",
+              "--input",
+              "input.dat"
+            ],
+            "inputs": [
+              "input.dat"
+            ],
+            "outputs": [
+              "verified-input.json"
+            ],
+            "cpu_cores": 1,
+            "memory_gb": 1,
+            "disk_gb": 2,
+            "container": null,
+            "dependencies": []
+          },
+          {
+            "task_id": "engine-1",
+            "name": "Run bcftools",
+            "command": [
+              "bcftools",
+              "--version"
+            ],
+            "inputs": [
+              "input.dat"
+            ],
+            "outputs": [
+              "results/bcftools.json"
+            ],
+            "cpu_cores": 2,
+            "memory_gb": 4,
+            "disk_gb": 10,
+            "container": {
+              "image": "ghcr.io/biointel-local/bcftools:qualified",
+              "digest": "sha256:c0a77462fe7dfe136ea14a6618d1a025275885efb66bbd124a85ca4421ecf0bc",
+              "runtime": "docker-or-apptainer",
+              "licence": "External tool licence applies"
+            },
+            "dependencies": [
+              "verify"
+            ]
+          },
+          {
+            "task_id": "engine-2",
+            "name": "Run whatshap",
+            "command": [
+              "whatshap",
+              "--version"
+            ],
+            "inputs": [
+              "input.dat"
+            ],
+            "outputs": [
+              "results/whatshap.json"
+            ],
+            "cpu_cores": 2,
+            "memory_gb": 4,
+            "disk_gb": 10,
+            "container": {
+              "image": "ghcr.io/biointel-local/whatshap:qualified",
+              "digest": "sha256:852e2a7914e4ccf13e004db216667ad08092363e9840ca1248975abeb4d2363b",
+              "runtime": "docker-or-apptainer",
+              "licence": "External tool licence applies"
+            },
+            "dependencies": [
+              "engine-1"
+            ]
+          },
+          {
+            "task_id": "engine-3",
+            "name": "Run vep",
+            "command": [
+              "vep",
+              "--version"
+            ],
+            "inputs": [
+              "input.dat"
+            ],
+            "outputs": [
+              "results/vep.json"
+            ],
+            "cpu_cores": 2,
+            "memory_gb": 4,
+            "disk_gb": 10,
+            "container": {
+              "image": "ghcr.io/biointel-local/vep:qualified",
+              "digest": "sha256:0db902ce2914d731117d26a380a5c5c1908bca7b517926ae327e2887b93b74bf",
+              "runtime": "docker-or-apptainer",
+              "licence": "External tool licence applies"
+            },
+            "dependencies": [
+              "engine-2"
+            ]
+          },
+          {
+            "task_id": "harmonize",
+            "name": "Normalize and harmonize results",
+            "command": [
+              "biointel-cli",
+              "harmonize",
+              "--module",
+              "pharmacogenomics_peak"
+            ],
+            "inputs": [],
+            "outputs": [
+              "results/harmonized.csv"
+            ],
+            "cpu_cores": 1,
+            "memory_gb": 3,
+            "disk_gb": 5,
+            "container": null,
+            "dependencies": [
+              "engine-3"
+            ]
+          },
+          {
+            "task_id": "export",
+            "name": "Build evidence and publication bundle",
+            "command": [
+              "biointel-cli",
+              "export",
+              "--module",
+              "pharmacogenomics_peak"
+            ],
+            "inputs": [
+              "results/harmonized.csv"
+            ],
+            "outputs": [
+              "results/evidence.zip"
+            ],
+            "cpu_cores": 1,
+            "memory_gb": 2,
+            "disk_gb": 5,
+            "container": null,
+            "dependencies": [
+              "harmonize"
+            ]
+          }
+        ],
+        "execution_profiles": [
+          "local",
+          "offline-windows",
+          "hpc",
+          "wes"
+        ],
+        "workflow_digest": "sha256:08b2beba7a0912aceee7af39cf53f1c140f87287cb4c46e842d1477fe66deb9b"
+      },
+      "optional_tools": [
+        {
+          "name": "Aldy",
+          "probe": "aldy",
+          "kind": "binary",
+          "purpose": "pharmacogene star-allele calling",
+          "required": false
+        },
+        {
+          "name": "Stargazer",
+          "probe": "stargazer",
+          "kind": "binary",
+          "purpose": "pharmacogene haplotypes",
+          "required": false
+        },
+        {
+          "name": "VEP",
+          "probe": "vep",
+          "kind": "binary",
+          "purpose": "variant annotation",
+          "required": false
+        }
+      ]
+    },
+    {
+      "key": "structural_variant_peak",
+      "title": "Structural Variant, Repeat Expansion & Mosaicism Studio",
+      "short_title": "SV & Mosaicism Studio",
+      "category": "Bioinformatics",
+      "new_module_from_step137": false,
+      "existing_page": "pages/135_Structural_Variant_Repeat_Expansion_Lab.py",
+      "summary": "Harmonise deletions, duplications, inversions, translocations, repeat expansions, mobile-element insertions and mosaic candidates.",
+      "purpose": "Combine caller support, size, allele fraction, gene disruption and inheritance evidence into an auditable review queue.",
+      "required_columns": [
+        "sample",
+        "event_id",
+        "chrom",
+        "start",
+        "end",
+        "event_type",
+        "support"
+      ],
+      "accepted_inputs": [
+        "CSV",
+        "TSV",
+        "VCF",
+        "VCF.GZ",
+        "BED",
+        "BEDPE",
+        "CNV segments"
+      ],
+      "native_extensions": [
+        "bam",
+        "bcf",
+        "bed",
+        "bedgraph",
+        "bedpe",
+        "broadpeak",
+        "cram",
+        "csv",
+        "json",
+        "narrowpeak",
+        "tsv",
+        "txt",
+        "vcf",
+        "xls",
+        "xlsx",
+        "bed.gz",
+        "vcf.gz"
+      ],
+      "workflow": [
+        "Import caller outputs",
+        "Coordinate harmonisation",
+        "Evidence QC",
+        "Mosaic and repeat review",
+        "Gene and regulatory impact",
+        "Family segregation",
+        "Export"
+      ],
+      "outputs": [
+        "harmonised event table",
+        "caller concordance",
+        "mosaic candidates",
+        "repeat candidates",
+        "review bundle"
+      ],
+      "visuals": [
+        "Chromosome SV track",
+        "Breakpoint Circos",
+        "CNV profile",
+        "Repeat-size distribution",
+        "Mosaic allele fraction",
+        "Caller concordance",
+        "Segregation view",
+        "Priority waterfall",
+        "Consensus event clusters",
+        "Mosaic candidate review",
+        "Repeat expansion candidates",
+        "Breakpoint hotspot profile"
+      ],
+      "visual_count": 12,
+      "boundary": "Breakpoints and mosaic fractions require raw-read review and orthogonal confirmation; this module does not manufacture clinical classifications.",
+      "handoffs": [
+        "Variant Workbench",
+        "Rare Disease Board",
+        "Cancer Genomics"
+      ],
+      "capabilities": [
+        "SV normalization",
+        "Breakpoint clustering",
+        "Multi-caller consensus",
+        "Repeat review",
+        "Mosaic review",
+        "Gene/regulatory impact",
+        "Segregation"
+      ],
+      "qc_checks": [
+        "Coordinate validity",
+        "Event size",
+        "Read support",
+        "Caller concordance",
+        "Allele fraction",
+        "Copy-number consistency",
+        "Family/sample completeness"
+      ],
+      "reference_assets": [
+        "Reference FASTA",
+        "Repeat catalogue",
+        "Gene annotation",
+        "Population SV catalogue",
+        "Mappability/segdup tracks"
+      ],
+      "native_features": [
+        "raw-read evidence readiness",
+        "multi-caller normalization",
+        "repeat-expansion planning",
+        "orthogonal-validation manifest"
+      ],
+      "last_mile_features": [
+        "BAF/CNV evidence integration",
+        "mosaic confidence",
+        "complex-event grouping",
+        "caller conflict queue"
+      ],
+      "specialist_confirmations": [
+        "raw-read inspection",
+        "long-read/orthogonal confirmation",
+        "validated SV truth set"
+      ],
+      "benchmark_profile": {
+        "module_key": "structural_variant_peak",
+        "name": "Structural Variant Peak benchmark",
+        "truth_requirements": [
+          "truth SV set"
+        ],
+        "metrics": [
+          "precision",
+          "recall",
+          "f1"
+        ],
+        "stratifications": [
+          "event_type",
+          "size_bin",
+          "difficult_region"
+        ],
+        "external_reference": "GIAB SV benchmark compatibility",
+        "boundary": "Benchmark results measure the supplied truth pack only and are not a substitute for independent external validation."
+      },
+      "portable_workflow": {
+        "workflow_id": "biointel.structural_variant_peak.peak-v140",
+        "version": "1.0.0",
+        "tasks": [
+          {
+            "task_id": "verify",
+            "name": "Verify input checksum and schema",
+            "command": [
+              "biointel-cli",
+              "verify-input",
+              "--input",
+              "input.dat"
+            ],
+            "inputs": [
+              "input.dat"
+            ],
+            "outputs": [
+              "verified-input.json"
+            ],
+            "cpu_cores": 1,
+            "memory_gb": 1,
+            "disk_gb": 2,
+            "container": null,
+            "dependencies": []
+          },
+          {
+            "task_id": "engine-1",
+            "name": "Run sniffles",
+            "command": [
+              "sniffles",
+              "--version"
+            ],
+            "inputs": [
+              "input.dat"
+            ],
+            "outputs": [
+              "results/sniffles.json"
+            ],
+            "cpu_cores": 2,
+            "memory_gb": 4,
+            "disk_gb": 10,
+            "container": {
+              "image": "ghcr.io/biointel-local/sniffles:qualified",
+              "digest": "sha256:714019468114fe51e5e771c312d8a3ef922c071890b763d081b6f92f2b3f33ba",
+              "runtime": "docker-or-apptainer",
+              "licence": "External tool licence applies"
+            },
+            "dependencies": [
+              "verify"
+            ]
+          },
+          {
+            "task_id": "engine-2",
+            "name": "Run expansionhunter",
+            "command": [
+              "expansionhunter",
+              "--version"
+            ],
+            "inputs": [
+              "input.dat"
+            ],
+            "outputs": [
+              "results/expansionhunter.json"
+            ],
+            "cpu_cores": 2,
+            "memory_gb": 4,
+            "disk_gb": 10,
+            "container": {
+              "image": "ghcr.io/biointel-local/expansionhunter:qualified",
+              "digest": "sha256:0f1c2341e0f418ffee49c2fc01eb16adf594853dcc4d3934f2591e6af65cf4b9",
+              "runtime": "docker-or-apptainer",
+              "licence": "External tool licence applies"
+            },
+            "dependencies": [
+              "engine-1"
+            ]
+          },
+          {
+            "task_id": "engine-3",
+            "name": "Run samtools",
+            "command": [
+              "samtools",
+              "--version"
+            ],
+            "inputs": [
+              "input.dat"
+            ],
+            "outputs": [
+              "results/samtools.json"
+            ],
+            "cpu_cores": 2,
+            "memory_gb": 4,
+            "disk_gb": 10,
+            "container": {
+              "image": "ghcr.io/biointel-local/samtools:qualified",
+              "digest": "sha256:d8e680c8285c56b86c9acdeeefb28a231246d4a7883b4aa9c9725c6652ea0b8a",
+              "runtime": "docker-or-apptainer",
+              "licence": "External tool licence applies"
+            },
+            "dependencies": [
+              "engine-2"
+            ]
+          },
+          {
+            "task_id": "harmonize",
+            "name": "Normalize and harmonize results",
+            "command": [
+              "biointel-cli",
+              "harmonize",
+              "--module",
+              "structural_variant_peak"
+            ],
+            "inputs": [],
+            "outputs": [
+              "results/harmonized.csv"
+            ],
+            "cpu_cores": 1,
+            "memory_gb": 3,
+            "disk_gb": 5,
+            "container": null,
+            "dependencies": [
+              "engine-3"
+            ]
+          },
+          {
+            "task_id": "export",
+            "name": "Build evidence and publication bundle",
+            "command": [
+              "biointel-cli",
+              "export",
+              "--module",
+              "structural_variant_peak"
+            ],
+            "inputs": [
+              "results/harmonized.csv"
+            ],
+            "outputs": [
+              "results/evidence.zip"
+            ],
+            "cpu_cores": 1,
+            "memory_gb": 2,
+            "disk_gb": 5,
+            "container": null,
+            "dependencies": [
+              "harmonize"
+            ]
+          }
+        ],
+        "execution_profiles": [
+          "local",
+          "offline-windows",
+          "hpc",
+          "wes"
+        ],
+        "workflow_digest": "sha256:bc3242308505caef8e8be2c148f85c7ac6a37c4e1f361d6dce7eadfaa79d82a0"
+      },
+      "optional_tools": [
+        {
+          "name": "SURVIVOR",
+          "probe": "SURVIVOR",
+          "kind": "binary",
+          "purpose": "SV caller merging",
+          "required": false
+        },
+        {
+          "name": "ExpansionHunter",
+          "probe": "ExpansionHunter",
+          "kind": "binary",
+          "purpose": "repeat expansions",
+          "required": false
+        },
+        {
+          "name": "CNVkit",
+          "probe": "cnvkit.py",
+          "kind": "binary",
+          "purpose": "copy-number analysis",
+          "required": false
+        }
+      ]
+    },
+    {
+      "key": "rna_splicing_peak",
+      "title": "RNA Splicing & Isoform Pathology Lab",
+      "short_title": "RNA Splicing Lab",
+      "category": "Bioinformatics",
+      "new_module_from_step137": false,
+      "existing_page": "pages/137_RNA_Isoform_Alternative_Splicing_Studio.py",
+      "summary": "Detect exon usage, intron retention, splice-site shifts, isoform switching and transcript-level pathology signals.",
+      "purpose": "Bridge transcriptomics, long-read evidence and variant interpretation through junction-aware, uncertainty-labelled analysis.",
+      "required_columns": [
+        "sample",
+        "gene",
+        "transcript",
+        "event",
+        "group",
+        "psi",
+        "junction_support"
+      ],
+      "accepted_inputs": [
+        "CSV",
+        "TSV",
+        "GTF",
+        "GFF",
+        "junction table",
+        "long-read transcript table"
+      ],
+      "native_extensions": [
+        "bam",
+        "bed",
+        "bedgraph",
+        "broadpeak",
+        "cram",
+        "csv",
+        "gff",
+        "gff3",
+        "gtf",
+        "json",
+        "narrowpeak",
+        "sam",
+        "tsv",
+        "txt",
+        "xls",
+        "xlsx",
+        "bed.gz",
+        "gff.gz",
+        "gtf.gz"
+      ],
+      "workflow": [
+        "Import transcripts and junctions",
+        "Support QC",
+        "Event classification",
+        "Differential splicing",
+        "Variant linkage",
+        "Disease prioritisation",
+        "Export"
+      ],
+      "outputs": [
+        "splicing event table",
+        "isoform switches",
+        "junction QC",
+        "variant-splice links",
+        "evidence bundle"
+      ],
+      "visuals": [
+        "Sashimi-style view",
+        "Transcript architecture",
+        "Exon-usage heatmap",
+        "PSI distribution",
+        "Isoform switching",
+        "Junction support",
+        "Variant-splice map",
+        "Gene summary",
+        "Group balance and QC",
+        "High-confidence isoform switches",
+        "Aberrant splicing outliers",
+        "NMD-risk proxy"
+      ],
+      "visual_count": 12,
+      "boundary": "Built-in calculations are exploratory and do not replace splice-aware alignment, transcript assembly or validated DEXSeq, DRIMSeq, MAJIQ or long-read workflows.",
+      "handoffs": [
+        "Transcriptomics",
+        "Rare Disease Board",
+        "Long-Read Isoforms"
+      ],
+      "capabilities": [
+        "Event classification",
+        "Differential splicing",
+        "Isoform switching",
+        "Outlier detection",
+        "Variant linkage",
+        "Fusion review",
+        "NMD proxy"
+      ],
+      "qc_checks": [
+        "Junction support",
+        "Group balance",
+        "PSI bounds",
+        "Transcript consistency",
+        "Reference annotation",
+        "Replicate structure"
+      ],
+      "reference_assets": [
+        "Reference FASTA",
+        "Transcript annotation GTF",
+        "Tissue splicing reference",
+        "Protein-domain annotation"
+      ],
+      "native_features": [
+        "alignment/junction readiness",
+        "transcript-version locking",
+        "long-read isoform integration",
+        "read-backed event review"
+      ],
+      "last_mile_features": [
+        "Cryptic exon flagging",
+        "reading-frame consequence",
+        "protein-domain impact",
+        "tissue outlier support"
+      ],
+      "specialist_confirmations": [
+        "splice-aware alignment",
+        "RT-PCR/long-read confirmation",
+        "tissue-matched reference"
+      ],
+      "benchmark_profile": {
+        "module_key": "rna_splicing_peak",
+        "name": "Rna Splicing Peak benchmark",
+        "truth_requirements": [
+          "validated splicing events"
+        ],
+        "metrics": [
+          "precision",
+          "recall",
+          "f1",
+          "correlation"
+        ],
+        "stratifications": [
+          "event_type",
+          "support_bin",
+          "tissue"
+        ],
+        "external_reference": "orthogonal RT-PCR/long-read truth",
+        "boundary": "Benchmark results measure the supplied truth pack only and are not a substitute for independent external validation."
+      },
+      "portable_workflow": {
+        "workflow_id": "biointel.rna_splicing_peak.peak-v140",
+        "version": "1.0.0",
+        "tasks": [
+          {
+            "task_id": "verify",
+            "name": "Verify input checksum and schema",
+            "command": [
+              "biointel-cli",
+              "verify-input",
+              "--input",
+              "input.dat"
+            ],
+            "inputs": [
+              "input.dat"
+            ],
+            "outputs": [
+              "verified-input.json"
+            ],
+            "cpu_cores": 1,
+            "memory_gb": 1,
+            "disk_gb": 2,
+            "container": null,
+            "dependencies": []
+          },
+          {
+            "task_id": "engine-1",
+            "name": "Run samtools",
+            "command": [
+              "samtools",
+              "--version"
+            ],
+            "inputs": [
+              "input.dat"
+            ],
+            "outputs": [
+              "results/samtools.json"
+            ],
+            "cpu_cores": 2,
+            "memory_gb": 4,
+            "disk_gb": 10,
+            "container": {
+              "image": "ghcr.io/biointel-local/samtools:qualified",
+              "digest": "sha256:d8e680c8285c56b86c9acdeeefb28a231246d4a7883b4aa9c9725c6652ea0b8a",
+              "runtime": "docker-or-apptainer",
+              "licence": "External tool licence applies"
+            },
+            "dependencies": [
+              "verify"
+            ]
+          },
+          {
+            "task_id": "engine-2",
+            "name": "Run star",
+            "command": [
+              "star",
+              "--version"
+            ],
+            "inputs": [
+              "input.dat"
+            ],
+            "outputs": [
+              "results/star.json"
+            ],
+            "cpu_cores": 2,
+            "memory_gb": 4,
+            "disk_gb": 10,
+            "container": {
+              "image": "ghcr.io/biointel-local/star:qualified",
+              "digest": "sha256:601a0e670a69f867275f4b7dfe0751a06365005d9c38d4777b638b8e0228dd26",
+              "runtime": "docker-or-apptainer",
+              "licence": "External tool licence applies"
+            },
+            "dependencies": [
+              "engine-1"
+            ]
+          },
+          {
+            "task_id": "engine-3",
+            "name": "Run rmats",
+            "command": [
+              "rmats",
+              "--version"
+            ],
+            "inputs": [
+              "input.dat"
+            ],
+            "outputs": [
+              "results/rmats.json"
+            ],
+            "cpu_cores": 2,
+            "memory_gb": 4,
+            "disk_gb": 10,
+            "container": {
+              "image": "ghcr.io/biointel-local/rmats:qualified",
+              "digest": "sha256:fda9b81cbdcaf1401f006185651bc7b234619a09e9865c1c4f15ed687b95fa7a",
+              "runtime": "docker-or-apptainer",
+              "licence": "External tool licence applies"
+            },
+            "dependencies": [
+              "engine-2"
+            ]
+          },
+          {
+            "task_id": "harmonize",
+            "name": "Normalize and harmonize results",
+            "command": [
+              "biointel-cli",
+              "harmonize",
+              "--module",
+              "rna_splicing_peak"
+            ],
+            "inputs": [],
+            "outputs": [
+              "results/harmonized.csv"
+            ],
+            "cpu_cores": 1,
+            "memory_gb": 3,
+            "disk_gb": 5,
+            "container": null,
+            "dependencies": [
+              "engine-3"
+            ]
+          },
+          {
+            "task_id": "export",
+            "name": "Build evidence and publication bundle",
+            "command": [
+              "biointel-cli",
+              "export",
+              "--module",
+              "rna_splicing_peak"
+            ],
+            "inputs": [
+              "results/harmonized.csv"
+            ],
+            "outputs": [
+              "results/evidence.zip"
+            ],
+            "cpu_cores": 1,
+            "memory_gb": 2,
+            "disk_gb": 5,
+            "container": null,
+            "dependencies": [
+              "harmonize"
+            ]
+          }
+        ],
+        "execution_profiles": [
+          "local",
+          "offline-windows",
+          "hpc",
+          "wes"
+        ],
+        "workflow_digest": "sha256:d60b4813a78a7b994684eaf7466d4209c43c0ad23a60ec75c507d63eb2d915a0"
+      },
+      "optional_tools": [
+        {
+          "name": "STAR",
+          "probe": "STAR",
+          "kind": "binary",
+          "purpose": "splice-aware alignment",
+          "required": false
+        },
+        {
+          "name": "RegTools",
+          "probe": "regtools",
+          "kind": "binary",
+          "purpose": "junction extraction",
+          "required": false
+        },
+        {
+          "name": "MAJIQ",
+          "probe": "majiq",
+          "kind": "binary",
+          "purpose": "local splicing variations",
+          "required": false
+        }
+      ]
+    },
+    {
+      "key": "immune_repertoire",
+      "title": "Immunogenomics & Immune Repertoire Studio",
+      "short_title": "Immune Repertoire Studio",
+      "category": "Bioinformatics",
+      "new_module_from_step137": true,
+      "existing_page": null,
+      "summary": "HLA, TCR and BCR repertoire analytics with clonotype expansion, diversity, V(D)J usage and longitudinal tracking.",
+      "purpose": "Inspect repertoire composition and immune clone dynamics while separating technical sampling effects from biological interpretation.",
+      "required_columns": [
+        "sample",
+        "clonotype",
+        "chain",
+        "v_gene",
+        "j_gene",
+        "cdr3",
+        "count"
+      ],
+      "accepted_inputs": [
+        "CSV",
+        "TSV",
+        "AIRR table",
+        "VDJ summary",
+        "single-cell receptor table"
+      ],
+      "native_extensions": [
+        "airr",
+        "csv",
+        "fa",
+        "faa",
+        "fas",
+        "fasta",
+        "fastq",
+        "fna",
+        "fq",
+        "json",
+        "jsonl",
+        "ndjson",
+        "tsv",
+        "txt",
+        "xls",
+        "xlsx",
+        "fastq.gz",
+        "fq.gz"
+      ],
+      "workflow": [
+        "Import repertoire",
+        "Sequence and count QC",
+        "Clonotype assignment",
+        "Diversity analysis",
+        "Expansion tracking",
+        "Single-cell integration",
+        "Export"
+      ],
+      "outputs": [
+        "clonotype table",
+        "diversity metrics",
+        "V/J usage",
+        "longitudinal clone tracking",
+        "evidence bundle"
+      ],
+      "visuals": [
+        "Clonotype network",
+        "V/J chord-style matrix",
+        "CDR3 length",
+        "Diversity curves",
+        "Expansion treemap",
+        "Clone-cell embedding",
+        "Longitudinal tracking",
+        "QC dashboard",
+        "Chain and depth QC",
+        "Public/shared clonotypes",
+        "Clonality by sample",
+        "Rarefaction profile"
+      ],
+      "visual_count": 12,
+      "boundary": "Repertoire frequencies are sensitive to library preparation, sampling depth and clonotype definition; biological conclusions require matched experimental design.",
+      "handoffs": [
+        "Single-Cell Heterogeneity",
+        "Vaccine Design",
+        "Clinical Biomarker Studio"
+      ],
+      "capabilities": [
+        "Clonotype assignment",
+        "Diversity",
+        "V/J usage",
+        "Expansion",
+        "Public clonotypes",
+        "Longitudinal tracking",
+        "Single-cell integration",
+        "Isotype switching"
+      ],
+      "qc_checks": [
+        "Read/count depth",
+        "Chain validity",
+        "CDR3 completeness",
+        "Sample depth balance",
+        "Clonotype uniqueness",
+        "Longitudinal consistency"
+      ],
+      "reference_assets": [
+        "AIRR schema",
+        "IMGT germline database",
+        "Public clonotype reference",
+        "HLA reference"
+      ],
+      "native_features": [
+        "AIRR/VDJ intake",
+        "paired-chain readiness",
+        "lineage and SHM planning",
+        "sampling-depth normalization"
+      ],
+      "last_mile_features": [
+        "Antigen-specificity evidence",
+        "paired-chain completeness",
+        "clonal lineage readiness",
+        "compartment migration"
+      ],
+      "specialist_confirmations": [
+        "AIRR-compliant processing",
+        "antigen binding evidence",
+        "matched sampling design"
+      ],
+      "benchmark_profile": {
+        "module_key": "immune_repertoire",
+        "name": "Immune Repertoire benchmark",
+        "truth_requirements": [
+          "known clonotypes/controls"
+        ],
+        "metrics": [
+          "accuracy",
+          "diversity_error",
+          "correlation"
+        ],
+        "stratifications": [
+          "chain",
+          "depth",
+          "sample"
+        ],
+        "external_reference": "AIRR community benchmark controls",
+        "boundary": "Benchmark results measure the supplied truth pack only and are not a substitute for independent external validation."
+      },
+      "portable_workflow": {
+        "workflow_id": "biointel.immune_repertoire.peak-v140",
+        "version": "1.0.0",
+        "tasks": [
+          {
+            "task_id": "verify",
+            "name": "Verify input checksum and schema",
+            "command": [
+              "biointel-cli",
+              "verify-input",
+              "--input",
+              "input.dat"
+            ],
+            "inputs": [
+              "input.dat"
+            ],
+            "outputs": [
+              "verified-input.json"
+            ],
+            "cpu_cores": 1,
+            "memory_gb": 1,
+            "disk_gb": 2,
+            "container": null,
+            "dependencies": []
+          },
+          {
+            "task_id": "engine-1",
+            "name": "Run igblast",
+            "command": [
+              "igblast",
+              "--version"
+            ],
+            "inputs": [
+              "input.dat"
+            ],
+            "outputs": [
+              "results/igblast.json"
+            ],
+            "cpu_cores": 2,
+            "memory_gb": 4,
+            "disk_gb": 10,
+            "container": {
+              "image": "ghcr.io/biointel-local/igblast:qualified",
+              "digest": "sha256:c037b3021e92dc5cdb2e7a72e8d1715e218a264f20eb41190ab969bbec90a0a9",
+              "runtime": "docker-or-apptainer",
+              "licence": "External tool licence applies"
+            },
+            "dependencies": [
+              "verify"
+            ]
+          },
+          {
+            "task_id": "engine-2",
+            "name": "Run anarci",
+            "command": [
+              "anarci",
+              "--version"
+            ],
+            "inputs": [
+              "input.dat"
+            ],
+            "outputs": [
+              "results/anarci.json"
+            ],
+            "cpu_cores": 2,
+            "memory_gb": 4,
+            "disk_gb": 10,
+            "container": {
+              "image": "ghcr.io/biointel-local/anarci:qualified",
+              "digest": "sha256:3e8d0e80f1cec90f3e862e2102755d4b02870833d614e07d2b352515067556d3",
+              "runtime": "docker-or-apptainer",
+              "licence": "External tool licence applies"
+            },
+            "dependencies": [
+              "engine-1"
+            ]
+          },
+          {
+            "task_id": "harmonize",
+            "name": "Normalize and harmonize results",
+            "command": [
+              "biointel-cli",
+              "harmonize",
+              "--module",
+              "immune_repertoire"
+            ],
+            "inputs": [],
+            "outputs": [
+              "results/harmonized.csv"
+            ],
+            "cpu_cores": 1,
+            "memory_gb": 3,
+            "disk_gb": 5,
+            "container": null,
+            "dependencies": [
+              "engine-2"
+            ]
+          },
+          {
+            "task_id": "export",
+            "name": "Build evidence and publication bundle",
+            "command": [
+              "biointel-cli",
+              "export",
+              "--module",
+              "immune_repertoire"
+            ],
+            "inputs": [
+              "results/harmonized.csv"
+            ],
+            "outputs": [
+              "results/evidence.zip"
+            ],
+            "cpu_cores": 1,
+            "memory_gb": 2,
+            "disk_gb": 5,
+            "container": null,
+            "dependencies": [
+              "harmonize"
+            ]
+          }
+        ],
+        "execution_profiles": [
+          "local",
+          "offline-windows",
+          "hpc",
+          "wes"
+        ],
+        "workflow_digest": "sha256:6f35b34cafa45fe725354128b005fe7672fa739f529442bd8737de9ab4c592d4"
+      },
+      "optional_tools": [
+        {
+          "name": "MiXCR",
+          "probe": "mixcr",
+          "kind": "binary",
+          "purpose": "TCR/BCR clonotype assembly",
+          "required": false
+        },
+        {
+          "name": "IgBLAST",
+          "probe": "igblastn",
+          "kind": "binary",
+          "purpose": "V(D)J annotation",
+          "required": false
+        },
+        {
+          "name": "Scirpy",
+          "probe": "scirpy",
+          "kind": "python",
+          "purpose": "single-cell immune repertoire analysis",
+          "required": false
+        }
+      ]
+    },
+    {
+      "key": "single_cell_multiome",
+      "title": "Single-Cell Multiome & Regulatory Network Studio",
+      "short_title": "Single-Cell Multiome Studio",
+      "category": "Bioinformatics",
+      "new_module_from_step137": true,
+      "existing_page": null,
+      "summary": "Joint scRNA, scATAC and protein-tag analysis with modality QC, integrated embeddings and regulatory links.",
+      "purpose": "Build a transparent multi-modal cell-state view with marker agreement, batch diagnostics, peak-to-gene links and TF activity.",
+      "required_columns": [
+        "cell",
+        "sample",
+        "cluster",
+        "modality",
+        "feature",
+        "value",
+        "batch"
+      ],
+      "accepted_inputs": [
+        "CSV",
+        "TSV",
+        "H5AD metadata",
+        "MuData export",
+        "feature matrix"
+      ],
+      "native_extensions": [
+        "csv",
+        "h5",
+        "h5ad",
+        "h5mu",
+        "hdf5",
+        "json",
+        "mtx",
+        "mudata",
+        "tsv",
+        "txt",
+        "xls",
+        "xlsx",
+        "mtx.gz"
+      ],
+      "workflow": [
+        "Import modalities",
+        "Modality QC",
+        "Cell and feature filtering",
+        "Joint embedding",
+        "Peak-to-gene links",
+        "Regulatory inference",
+        "Export"
+      ],
+      "outputs": [
+        "cell annotations",
+        "joint embedding",
+        "modality agreement",
+        "regulatory links",
+        "evidence bundle"
+      ],
+      "visuals": [
+        "Joint embedding",
+        "Modality agreement",
+        "RNA-ATAC links",
+        "TF activity heatmap",
+        "Cell trajectory",
+        "Feature browser",
+        "Batch mixing",
+        "Cluster composition",
+        "Cell quality landscape",
+        "Modality depth",
+        "Deep modality agreement",
+        "Multimodal marker ranking"
+      ],
+      "visual_count": 12,
+      "boundary": "Joint embeddings and transferred labels are exploratory. Validate modality integration, cell labels and regulatory links with independent evidence.",
+      "handoffs": [
+        "Single-Cell Heterogeneity",
+        "Cell Atlas Mapping",
+        "Gene Regulatory Network"
+      ],
+      "capabilities": [
+        "Joint embedding",
+        "Modality agreement",
+        "Peak-to-gene links",
+        "TF activity",
+        "Regulons",
+        "Pseudotime",
+        "Differential abundance",
+        "Multimodal markers"
+      ],
+      "qc_checks": [
+        "Cell barcode matching",
+        "Modality depth",
+        "Feature counts",
+        "Mitochondrial fraction",
+        "Doublet proxy",
+        "Batch mixing",
+        "Cluster representation"
+      ],
+      "reference_assets": [
+        "Genome annotation",
+        "Peak set",
+        "Cell-type reference atlas",
+        "Motif library"
+      ],
+      "native_features": [
+        "H5AD/MuData inventory",
+        "backed single-cell preview",
+        "modality-aware QC",
+        "joint-analysis readiness"
+      ],
+      "last_mile_features": [
+        "WNN-style modality weighting proxy",
+        "batch method audit",
+        "marker agreement",
+        "perturbation-aware trajectory readiness"
+      ],
+      "specialist_confirmations": [
+        "qualified multimodal integration",
+        "independent label validation",
+        "held-out atlas"
+      ],
+      "benchmark_profile": {
+        "module_key": "single_cell_multiome",
+        "name": "Single Cell Multiome benchmark",
+        "truth_requirements": [
+          "held-out labels/modalities"
+        ],
+        "metrics": [
+          "accuracy",
+          "ari",
+          "silhouette",
+          "correlation"
+        ],
+        "stratifications": [
+          "cell_type",
+          "batch",
+          "modality"
+        ],
+        "external_reference": "curated multimodal atlas",
+        "boundary": "Benchmark results measure the supplied truth pack only and are not a substitute for independent external validation."
+      },
+      "portable_workflow": {
+        "workflow_id": "biointel.single_cell_multiome.peak-v140",
+        "version": "1.0.0",
+        "tasks": [
+          {
+            "task_id": "verify",
+            "name": "Verify input checksum and schema",
+            "command": [
+              "biointel-cli",
+              "verify-input",
+              "--input",
+              "input.dat"
+            ],
+            "inputs": [
+              "input.dat"
+            ],
+            "outputs": [
+              "verified-input.json"
+            ],
+            "cpu_cores": 1,
+            "memory_gb": 1,
+            "disk_gb": 2,
+            "container": null,
+            "dependencies": []
+          },
+          {
+            "task_id": "engine-1",
+            "name": "Run scanpy",
+            "command": [
+              "scanpy",
+              "--version"
+            ],
+            "inputs": [
+              "input.dat"
+            ],
+            "outputs": [
+              "results/scanpy.json"
+            ],
+            "cpu_cores": 2,
+            "memory_gb": 4,
+            "disk_gb": 10,
+            "container": {
+              "image": "ghcr.io/biointel-local/scanpy:qualified",
+              "digest": "sha256:34db103f8f3448b07ffab627e283a48ffbb103e6ad2fac472a0440af7e904239",
+              "runtime": "docker-or-apptainer",
+              "licence": "External tool licence applies"
+            },
+            "dependencies": [
+              "verify"
+            ]
+          },
+          {
+            "task_id": "engine-2",
+            "name": "Run scvelo",
+            "command": [
+              "scvelo",
+              "--version"
+            ],
+            "inputs": [
+              "input.dat"
+            ],
+            "outputs": [
+              "results/scvelo.json"
+            ],
+            "cpu_cores": 2,
+            "memory_gb": 4,
+            "disk_gb": 10,
+            "container": {
+              "image": "ghcr.io/biointel-local/scvelo:qualified",
+              "digest": "sha256:460fd7e89228f8acbc5d2367ea6e8cb42ebeff79c474ede9c3d48ddd0b067716",
+              "runtime": "docker-or-apptainer",
+              "licence": "External tool licence applies"
+            },
+            "dependencies": [
+              "engine-1"
+            ]
+          },
+          {
+            "task_id": "harmonize",
+            "name": "Normalize and harmonize results",
+            "command": [
+              "biointel-cli",
+              "harmonize",
+              "--module",
+              "single_cell_multiome"
+            ],
+            "inputs": [],
+            "outputs": [
+              "results/harmonized.csv"
+            ],
+            "cpu_cores": 1,
+            "memory_gb": 3,
+            "disk_gb": 5,
+            "container": null,
+            "dependencies": [
+              "engine-2"
+            ]
+          },
+          {
+            "task_id": "export",
+            "name": "Build evidence and publication bundle",
+            "command": [
+              "biointel-cli",
+              "export",
+              "--module",
+              "single_cell_multiome"
+            ],
+            "inputs": [
+              "results/harmonized.csv"
+            ],
+            "outputs": [
+              "results/evidence.zip"
+            ],
+            "cpu_cores": 1,
+            "memory_gb": 2,
+            "disk_gb": 5,
+            "container": null,
+            "dependencies": [
+              "harmonize"
+            ]
+          }
+        ],
+        "execution_profiles": [
+          "local",
+          "offline-windows",
+          "hpc",
+          "wes"
+        ],
+        "workflow_digest": "sha256:a52aee10f51bfb98f4371187d1edeb37701194e8ed743ba4b4bf1cbb458e73d1"
+      },
+      "optional_tools": [
+        {
+          "name": "Scanpy",
+          "probe": "scanpy",
+          "kind": "python",
+          "purpose": "single-cell analysis",
+          "required": false
+        },
+        {
+          "name": "MuData",
+          "probe": "mudata",
+          "kind": "python",
+          "purpose": "multimodal containers",
+          "required": false
+        },
+        {
+          "name": "MuON",
+          "probe": "muon",
+          "kind": "python",
+          "purpose": "multimodal integration",
+          "required": false
+        }
+      ]
+    },
+    {
+      "key": "proteogenomics_peak",
+      "title": "Proteogenomics & Neoantigen Discovery Studio",
+      "short_title": "Proteogenomics Studio",
+      "category": "Bioinformatics",
+      "new_module_from_step137": false,
+      "existing_page": "pages/124_Proteogenomics_and_Neoantigen_Discovery_Studio.py",
+      "summary": "Connect genomic variants, RNA expression, peptide evidence, HLA binding and normal-tissue risk for neoantigen research.",
+      "purpose": "Rank candidate variant peptides using multiple evidence layers and retain every exclusion and uncertainty decision.",
+      "required_columns": [
+        "sample",
+        "variant",
+        "gene",
+        "peptide",
+        "hla",
+        "binding_score",
+        "expression",
+        "ms_support"
+      ],
+      "accepted_inputs": [
+        "CSV",
+        "TSV",
+        "VCF-derived peptide table",
+        "FASTA",
+        "proteomics evidence"
+      ],
+      "native_extensions": [
+        "bcf",
+        "csv",
+        "fa",
+        "faa",
+        "fas",
+        "fasta",
+        "fna",
+        "json",
+        "mgf",
+        "mzml",
+        "tsv",
+        "txt",
+        "vcf",
+        "xls",
+        "xlsx",
+        "mgf.gz",
+        "mzml.gz",
+        "vcf.gz"
+      ],
+      "workflow": [
+        "Import variants and peptides",
+        "Peptide QC",
+        "HLA binding review",
+        "RNA and MS support",
+        "Clonality and safety",
+        "Panel selection",
+        "Export"
+      ],
+      "outputs": [
+        "ranked peptides",
+        "HLA coverage",
+        "evidence matrix",
+        "normal-tissue risk",
+        "vaccine panel"
+      ],
+      "visuals": [
+        "Variant-peptide Sankey",
+        "HLA heatmap",
+        "Peptide coverage",
+        "RNA-MS evidence",
+        "Candidate waterfall",
+        "Normal-tissue risk",
+        "Clonality map",
+        "Panel diversity",
+        "Candidate panel",
+        "Shared neoantigens",
+        "Evidence-tier composition",
+        "Peptide QC"
+      ],
+      "visual_count": 12,
+      "boundary": "Predicted binding and immunogenicity do not establish therapeutic efficacy. Candidates require validated HLA typing, assays and safety review.",
+      "handoffs": [
+        "Cancer Genomics",
+        "Vaccine Design",
+        "Clinical Biomarker Studio"
+      ],
+      "capabilities": [
+        "Variant peptide generation",
+        "HLA ranking",
+        "RNA/MS evidence",
+        "Clonality",
+        "Normal-tissue review",
+        "Shared candidates",
+        "Panel diversity"
+      ],
+      "qc_checks": [
+        "HLA completeness",
+        "Peptide length",
+        "Expression support",
+        "MS support",
+        "Clonality",
+        "Normal-tissue risk",
+        "Variant uniqueness"
+      ],
+      "reference_assets": [
+        "Reference proteome",
+        "Transcript annotation",
+        "HLA allele database",
+        "Normal tissue atlas",
+        "Search-engine parameter set"
+      ],
+      "native_features": [
+        "variant/proteome/MS intake",
+        "spectrum evidence readiness",
+        "HLA model readiness",
+        "candidate adjudication"
+      ],
+      "last_mile_features": [
+        "Spectrum evidence tier",
+        "immunopeptidomics support",
+        "normal-tissue exclusion",
+        "vaccine panel diversity"
+      ],
+      "specialist_confirmations": [
+        "target-decoy/FDR search",
+        "validated HLA typing",
+        "functional immune assay"
+      ],
+      "benchmark_profile": {
+        "module_key": "proteogenomics_peak",
+        "name": "Proteogenomics Peak benchmark",
+        "truth_requirements": [
+          "validated peptide-spectrum matches"
+        ],
+        "metrics": [
+          "precision",
+          "recall",
+          "f1",
+          "calibration"
+        ],
+        "stratifications": [
+          "hla",
+          "expression_bin",
+          "ms_support"
+        ],
+        "external_reference": "immunopeptidomics controls",
+        "boundary": "Benchmark results measure the supplied truth pack only and are not a substitute for independent external validation."
+      },
+      "portable_workflow": {
+        "workflow_id": "biointel.proteogenomics_peak.peak-v140",
+        "version": "1.0.0",
+        "tasks": [
+          {
+            "task_id": "verify",
+            "name": "Verify input checksum and schema",
+            "command": [
+              "biointel-cli",
+              "verify-input",
+              "--input",
+              "input.dat"
+            ],
+            "inputs": [
+              "input.dat"
+            ],
+            "outputs": [
+              "verified-input.json"
+            ],
+            "cpu_cores": 1,
+            "memory_gb": 1,
+            "disk_gb": 2,
+            "container": null,
+            "dependencies": []
+          },
+          {
+            "task_id": "engine-1",
+            "name": "Run bcftools",
+            "command": [
+              "bcftools",
+              "--version"
+            ],
+            "inputs": [
+              "input.dat"
+            ],
+            "outputs": [
+              "results/bcftools.json"
+            ],
+            "cpu_cores": 2,
+            "memory_gb": 4,
+            "disk_gb": 10,
+            "container": {
+              "image": "ghcr.io/biointel-local/bcftools:qualified",
+              "digest": "sha256:c0a77462fe7dfe136ea14a6618d1a025275885efb66bbd124a85ca4421ecf0bc",
+              "runtime": "docker-or-apptainer",
+              "licence": "External tool licence applies"
+            },
+            "dependencies": [
+              "verify"
+            ]
+          },
+          {
+            "task_id": "engine-2",
+            "name": "Run openms",
+            "command": [
+              "openms",
+              "--version"
+            ],
+            "inputs": [
+              "input.dat"
+            ],
+            "outputs": [
+              "results/openms.json"
+            ],
+            "cpu_cores": 2,
+            "memory_gb": 4,
+            "disk_gb": 10,
+            "container": {
+              "image": "ghcr.io/biointel-local/openms:qualified",
+              "digest": "sha256:270950fa7d6a41540534ad4263c16a65ea5bb3d6b2c0cc560c429044f705b68c",
+              "runtime": "docker-or-apptainer",
+              "licence": "External tool licence applies"
+            },
+            "dependencies": [
+              "engine-1"
+            ]
+          },
+          {
+            "task_id": "engine-3",
+            "name": "Run comet",
+            "command": [
+              "comet",
+              "--version"
+            ],
+            "inputs": [
+              "input.dat"
+            ],
+            "outputs": [
+              "results/comet.json"
+            ],
+            "cpu_cores": 2,
+            "memory_gb": 4,
+            "disk_gb": 10,
+            "container": {
+              "image": "ghcr.io/biointel-local/comet:qualified",
+              "digest": "sha256:5503230493af64860b8ea4bd82a30e192338d1e3c5aa94f9a3eed606e9579dce",
+              "runtime": "docker-or-apptainer",
+              "licence": "External tool licence applies"
+            },
+            "dependencies": [
+              "engine-2"
+            ]
+          },
+          {
+            "task_id": "harmonize",
+            "name": "Normalize and harmonize results",
+            "command": [
+              "biointel-cli",
+              "harmonize",
+              "--module",
+              "proteogenomics_peak"
+            ],
+            "inputs": [],
+            "outputs": [
+              "results/harmonized.csv"
+            ],
+            "cpu_cores": 1,
+            "memory_gb": 3,
+            "disk_gb": 5,
+            "container": null,
+            "dependencies": [
+              "engine-3"
+            ]
+          },
+          {
+            "task_id": "export",
+            "name": "Build evidence and publication bundle",
+            "command": [
+              "biointel-cli",
+              "export",
+              "--module",
+              "proteogenomics_peak"
+            ],
+            "inputs": [
+              "results/harmonized.csv"
+            ],
+            "outputs": [
+              "results/evidence.zip"
+            ],
+            "cpu_cores": 1,
+            "memory_gb": 2,
+            "disk_gb": 5,
+            "container": null,
+            "dependencies": [
+              "harmonize"
+            ]
+          }
+        ],
+        "execution_profiles": [
+          "local",
+          "offline-windows",
+          "hpc",
+          "wes"
+        ],
+        "workflow_digest": "sha256:27b76c44d9fb5982c883301717ff7881e6d60a9103663f69d47e76deda9fd6fb"
+      },
+      "optional_tools": [
+        {
+          "name": "VEP",
+          "probe": "vep",
+          "kind": "binary",
+          "purpose": "variant consequences",
+          "required": false
+        },
+        {
+          "name": "NetMHCpan",
+          "probe": "netMHCpan",
+          "kind": "binary",
+          "purpose": "HLA binding predictions",
+          "required": false
+        },
+        {
+          "name": "MSFragger",
+          "probe": "MSFragger",
+          "kind": "binary",
+          "purpose": "proteomics peptide search",
+          "required": false
+        }
+      ]
+    },
+    {
+      "key": "gene_regulatory_network",
+      "title": "Gene Regulatory Network & TF Activity Studio",
+      "short_title": "Regulatory Network Studio",
+      "category": "Bioinformatics",
+      "new_module_from_step137": true,
+      "existing_page": null,
+      "summary": "Infer evidence-weighted TF-target relationships, regulon activity and condition-specific master regulators.",
+      "purpose": "Combine expression, accessibility and motif evidence into reviewable regulatory hypotheses rather than opaque network claims.",
+      "required_columns": [
+        "sample",
+        "condition",
+        "tf",
+        "target",
+        "activity",
+        "evidence",
+        "expression"
+      ],
+      "accepted_inputs": [
+        "CSV",
+        "TSV",
+        "regulon table",
+        "motif activity table",
+        "peak-gene links"
+      ],
+      "native_extensions": [
+        "bed",
+        "bedgraph",
+        "broadpeak",
+        "csv",
+        "gff",
+        "gff3",
+        "gtf",
+        "h5ad",
+        "json",
+        "narrowpeak",
+        "tsv",
+        "txt",
+        "xls",
+        "xlsx",
+        "bed.gz",
+        "gff.gz",
+        "gtf.gz"
+      ],
+      "workflow": [
+        "Import regulatory evidence",
+        "Edge QC",
+        "Regulon scoring",
+        "Condition comparison",
+        "Master-regulator ranking",
+        "Perturbation scenarios",
+        "Export"
+      ],
+      "outputs": [
+        "regulatory edge table",
+        "TF activity",
+        "regulon scores",
+        "master regulators",
+        "evidence bundle"
+      ],
+      "visuals": [
+        "TF network",
+        "Regulon heatmap",
+        "TF volcano",
+        "Target Sankey",
+        "Centrality plot",
+        "Circuit diagram",
+        "Evidence matrix",
+        "Condition comparison",
+        "Master regulator ranking",
+        "Network statistics",
+        "Perturbation simulation",
+        "Edge-confidence distribution"
+      ],
+      "visual_count": 12,
+      "boundary": "Inferred regulatory edges are hypotheses and must be validated with perturbation, binding or orthogonal evidence.",
+      "handoffs": [
+        "Epigenomics",
+        "Transcriptomics",
+        "Causal Biology"
+      ],
+      "capabilities": [
+        "Regulon scoring",
+        "Differential TF activity",
+        "Master regulators",
+        "Network centrality",
+        "Perturbation simulation",
+        "Enhancer-promoter links",
+        "Time-series comparison"
+      ],
+      "qc_checks": [
+        "TF/target completeness",
+        "Replicate balance",
+        "Activity variance",
+        "Motif support",
+        "Edge evidence",
+        "Network density"
+      ],
+      "reference_assets": [
+        "Motif library",
+        "TF-target knowledgebase",
+        "Genome annotation",
+        "Chromatin accessibility tracks"
+      ],
+      "native_features": [
+        "multi-omic evidence intake",
+        "edge-provenance locking",
+        "bootstrap network planning",
+        "perturbation scenario manifest"
+      ],
+      "last_mile_features": [
+        "Condition-specific network rewiring",
+        "edge bootstrap stability",
+        "causal evidence tier",
+        "time-series transition readiness"
+      ],
+      "specialist_confirmations": [
+        "perturbation evidence",
+        "binding/accessibility confirmation",
+        "independent cohort"
+      ],
+      "benchmark_profile": {
+        "module_key": "gene_regulatory_network",
+        "name": "Gene Regulatory Network benchmark",
+        "truth_requirements": [
+          "perturbation-backed edges"
+        ],
+        "metrics": [
+          "precision",
+          "recall",
+          "auprc",
+          "stability"
+        ],
+        "stratifications": [
+          "tf",
+          "cell_type",
+          "evidence_type"
+        ],
+        "external_reference": "held-out perturbation evidence",
+        "boundary": "Benchmark results measure the supplied truth pack only and are not a substitute for independent external validation."
+      },
+      "portable_workflow": {
+        "workflow_id": "biointel.gene_regulatory_network.peak-v140",
+        "version": "1.0.0",
+        "tasks": [
+          {
+            "task_id": "verify",
+            "name": "Verify input checksum and schema",
+            "command": [
+              "biointel-cli",
+              "verify-input",
+              "--input",
+              "input.dat"
+            ],
+            "inputs": [
+              "input.dat"
+            ],
+            "outputs": [
+              "verified-input.json"
+            ],
+            "cpu_cores": 1,
+            "memory_gb": 1,
+            "disk_gb": 2,
+            "container": null,
+            "dependencies": []
+          },
+          {
+            "task_id": "engine-1",
+            "name": "Run scanpy",
+            "command": [
+              "scanpy",
+              "--version"
+            ],
+            "inputs": [
+              "input.dat"
+            ],
+            "outputs": [
+              "results/scanpy.json"
+            ],
+            "cpu_cores": 2,
+            "memory_gb": 4,
+            "disk_gb": 10,
+            "container": {
+              "image": "ghcr.io/biointel-local/scanpy:qualified",
+              "digest": "sha256:34db103f8f3448b07ffab627e283a48ffbb103e6ad2fac472a0440af7e904239",
+              "runtime": "docker-or-apptainer",
+              "licence": "External tool licence applies"
+            },
+            "dependencies": [
+              "verify"
+            ]
+          },
+          {
+            "task_id": "engine-2",
+            "name": "Run deeptools",
+            "command": [
+              "deeptools",
+              "--version"
+            ],
+            "inputs": [
+              "input.dat"
+            ],
+            "outputs": [
+              "results/deeptools.json"
+            ],
+            "cpu_cores": 2,
+            "memory_gb": 4,
+            "disk_gb": 10,
+            "container": {
+              "image": "ghcr.io/biointel-local/deeptools:qualified",
+              "digest": "sha256:b61348a8bc0dcd9b70af1fbbed971c9cb2809c82eee20dbd42db6de619559158",
+              "runtime": "docker-or-apptainer",
+              "licence": "External tool licence applies"
+            },
+            "dependencies": [
+              "engine-1"
+            ]
+          },
+          {
+            "task_id": "engine-3",
+            "name": "Run bedtools",
+            "command": [
+              "bedtools",
+              "--version"
+            ],
+            "inputs": [
+              "input.dat"
+            ],
+            "outputs": [
+              "results/bedtools.json"
+            ],
+            "cpu_cores": 2,
+            "memory_gb": 4,
+            "disk_gb": 10,
+            "container": {
+              "image": "ghcr.io/biointel-local/bedtools:qualified",
+              "digest": "sha256:952290ac3a177a5a544f05789bec73210cc667b1be231059fe24d0cf93250b1f",
+              "runtime": "docker-or-apptainer",
+              "licence": "External tool licence applies"
+            },
+            "dependencies": [
+              "engine-2"
+            ]
+          },
+          {
+            "task_id": "harmonize",
+            "name": "Normalize and harmonize results",
+            "command": [
+              "biointel-cli",
+              "harmonize",
+              "--module",
+              "gene_regulatory_network"
+            ],
+            "inputs": [],
+            "outputs": [
+              "results/harmonized.csv"
+            ],
+            "cpu_cores": 1,
+            "memory_gb": 3,
+            "disk_gb": 5,
+            "container": null,
+            "dependencies": [
+              "engine-3"
+            ]
+          },
+          {
+            "task_id": "export",
+            "name": "Build evidence and publication bundle",
+            "command": [
+              "biointel-cli",
+              "export",
+              "--module",
+              "gene_regulatory_network"
+            ],
+            "inputs": [
+              "results/harmonized.csv"
+            ],
+            "outputs": [
+              "results/evidence.zip"
+            ],
+            "cpu_cores": 1,
+            "memory_gb": 2,
+            "disk_gb": 5,
+            "container": null,
+            "dependencies": [
+              "harmonize"
+            ]
+          }
+        ],
+        "execution_profiles": [
+          "local",
+          "offline-windows",
+          "hpc",
+          "wes"
+        ],
+        "workflow_digest": "sha256:89dfa8eecb59bc479201669280842567fdef914fb62f179fe97122b03240eb49"
+      },
+      "optional_tools": [
+        {
+          "name": "pySCENIC",
+          "probe": "pyscenic",
+          "kind": "binary",
+          "purpose": "regulon inference",
+          "required": false
+        },
+        {
+          "name": "HOMER",
+          "probe": "findMotifsGenome.pl",
+          "kind": "binary",
+          "purpose": "motif enrichment",
+          "required": false
+        },
+        {
+          "name": "BEDTools",
+          "probe": "bedtools",
+          "kind": "binary",
+          "purpose": "peak-to-gene overlaps",
+          "required": false
+        }
+      ]
+    },
+    {
+      "key": "federated_genomic_discovery",
+      "title": "Federated Genomic Discovery & Phenopacket Studio",
+      "short_title": "Federated Genomic Discovery",
+      "category": "Bioinformatics",
+      "new_module_from_step137": true,
+      "existing_page": null,
+      "summary": "Phenopacket, pedigree and Beacon-style cohort discovery with consent-aware source provenance.",
+      "purpose": "Match phenotype and variant evidence across local or federated sources without hiding access restrictions or match uncertainty.",
+      "required_columns": [
+        "case_id",
+        "source",
+        "phenotype",
+        "gene",
+        "variant",
+        "phenotype_similarity",
+        "variant_match",
+        "access_status"
+      ],
+      "accepted_inputs": [
+        "CSV",
+        "TSV",
+        "Phenopacket JSON",
+        "Beacon-style response",
+        "pedigree table"
+      ],
+      "native_extensions": [
+        "csv",
+        "json",
+        "jsonl",
+        "ndjson",
+        "tsv",
+        "txt",
+        "xls",
+        "xlsx",
+        "yaml",
+        "yml",
+        "phenopacket.json"
+      ],
+      "workflow": [
+        "Import cases",
+        "Phenotype validation",
+        "Access and consent review",
+        "Federated query",
+        "Case matching",
+        "Human review",
+        "Export"
+      ],
+      "outputs": [
+        "case matches",
+        "source coverage",
+        "phenotype matrix",
+        "access review",
+        "query provenance"
+      ],
+      "visuals": [
+        "Phenotype-case matrix",
+        "Federated source map",
+        "Variant-match network",
+        "Pedigree view",
+        "Access badges",
+        "Query timeline",
+        "Match waterfall",
+        "Source coverage",
+        "Consent and access matrix",
+        "Federated query plan",
+        "Case-level match summary",
+        "Phenopacket QC"
+      ],
+      "visual_count": 12,
+      "boundary": "Federated discovery does not grant access to restricted records and must respect consent, governance and source-specific interpretation rules.",
+      "handoffs": [
+        "Rare Disease Board",
+        "Variant Workbench",
+        "Evidence Review"
+      ],
+      "capabilities": [
+        "Phenotype similarity",
+        "Genotype-phenotype matching",
+        "Federated source discovery",
+        "Consent review",
+        "Case matching",
+        "Query provenance",
+        "De-identification review"
+      ],
+      "qc_checks": [
+        "Phenopacket validity",
+        "HPO identifiers",
+        "Variant representation",
+        "Consent scope",
+        "Access status",
+        "Source availability",
+        "De-identification"
+      ],
+      "reference_assets": [
+        "HPO release",
+        "GA4GH VRS schema",
+        "Beacon endpoint registry",
+        "Consent/data-use policy"
+      ],
+      "native_features": [
+        "Phenopacket validation",
+        "federated query manifest",
+        "consent-aware review",
+        "source response audit"
+      ],
+      "last_mile_features": [
+        "VRS-compatible identities",
+        "source availability audit",
+        "consent policy matrix",
+        "query retry manifest"
+      ],
+      "specialist_confirmations": [
+        "authenticated source",
+        "source-specific governance",
+        "human case review"
+      ],
+      "benchmark_profile": {
+        "module_key": "federated_genomic_discovery",
+        "name": "Federated Genomic Discovery benchmark",
+        "truth_requirements": [
+          "known case matches"
+        ],
+        "metrics": [
+          "precision",
+          "recall",
+          "ranking"
+        ],
+        "stratifications": [
+          "source",
+          "consent",
+          "phenotype_count"
+        ],
+        "external_reference": "curated synthetic federation test pack",
+        "boundary": "Benchmark results measure the supplied truth pack only and are not a substitute for independent external validation."
+      },
+      "portable_workflow": {
+        "workflow_id": "biointel.federated_genomic_discovery.peak-v140",
+        "version": "1.0.0",
+        "tasks": [
+          {
+            "task_id": "verify",
+            "name": "Verify input checksum and schema",
+            "command": [
+              "biointel-cli",
+              "verify-input",
+              "--input",
+              "input.dat"
+            ],
+            "inputs": [
+              "input.dat"
+            ],
+            "outputs": [
+              "verified-input.json"
+            ],
+            "cpu_cores": 1,
+            "memory_gb": 1,
+            "disk_gb": 2,
+            "container": null,
+            "dependencies": []
+          },
+          {
+            "task_id": "harmonize",
+            "name": "Normalize and harmonize results",
+            "command": [
+              "biointel-cli",
+              "harmonize",
+              "--module",
+              "federated_genomic_discovery"
+            ],
+            "inputs": [],
+            "outputs": [
+              "results/harmonized.csv"
+            ],
+            "cpu_cores": 1,
+            "memory_gb": 3,
+            "disk_gb": 5,
+            "container": null,
+            "dependencies": [
+              "verify"
+            ]
+          },
+          {
+            "task_id": "export",
+            "name": "Build evidence and publication bundle",
+            "command": [
+              "biointel-cli",
+              "export",
+              "--module",
+              "federated_genomic_discovery"
+            ],
+            "inputs": [
+              "results/harmonized.csv"
+            ],
+            "outputs": [
+              "results/evidence.zip"
+            ],
+            "cpu_cores": 1,
+            "memory_gb": 2,
+            "disk_gb": 5,
+            "container": null,
+            "dependencies": [
+              "harmonize"
+            ]
+          }
+        ],
+        "execution_profiles": [
+          "local",
+          "offline-windows",
+          "hpc",
+          "wes"
+        ],
+        "workflow_digest": "sha256:e9bd91f616aef62e7715f9ff1fc84a944e28e2d746543523accde53d73e2a380"
+      },
+      "optional_tools": [
+        {
+          "name": "Phenopackets",
+          "probe": "phenopackets",
+          "kind": "python",
+          "purpose": "machine-readable clinical phenotypes",
+          "required": false
+        },
+        {
+          "name": "GA4GH VRS",
+          "probe": "ga4gh.vrs",
+          "kind": "python",
+          "purpose": "variant representation",
+          "required": false
+        }
+      ]
+    },
+    {
+      "key": "viral_within_host",
+      "title": "Viral Genomics & Within-Host Evolution Studio",
+      "short_title": "Viral Evolution Studio",
+      "category": "Bioinformatics",
+      "new_module_from_step137": false,
+      "existing_page": "pages/146_Virology_Viral_Evolution_Workbench.py",
+      "summary": "Consensus, minor-variant, lineage, recombination, selection and longitudinal within-host evolution analysis.",
+      "purpose": "Separate low-frequency noise from reproducible viral evolution signals and connect sequence changes to time and lineage context.",
+      "required_columns": [
+        "sample",
+        "subject",
+        "time",
+        "chrom",
+        "position",
+        "ref",
+        "alt",
+        "frequency",
+        "lineage"
+      ],
+      "accepted_inputs": [
+        "CSV",
+        "TSV",
+        "VCF",
+        "VCF.GZ",
+        "FASTA-derived variant table"
+      ],
+      "native_extensions": [
+        "bam",
+        "bcf",
+        "cram",
+        "csv",
+        "fa",
+        "faa",
+        "fas",
+        "fasta",
+        "fastq",
+        "fna",
+        "fq",
+        "json",
+        "tsv",
+        "txt",
+        "vcf",
+        "xls",
+        "xlsx",
+        "fastq.gz",
+        "fq.gz",
+        "vcf.gz"
+      ],
+      "workflow": [
+        "Import variants",
+        "Depth and frequency QC",
+        "Consensus and minor variants",
+        "Longitudinal dynamics",
+        "Lineage and recombination",
+        "Selection review",
+        "Export"
+      ],
+      "outputs": [
+        "variant table",
+        "within-host trajectories",
+        "lineage markers",
+        "recombination flags",
+        "surveillance bundle"
+      ],
+      "visuals": [
+        "Frequency trajectories",
+        "Minor-variant spectrum",
+        "Lineage map",
+        "Recombination matrix",
+        "Selection profile",
+        "Subject timeline",
+        "Mutation heatmap",
+        "QC dashboard",
+        "Depth QC",
+        "Primer-dropout profile",
+        "Mixed-infection review",
+        "Transmission summary"
+      ],
+      "visual_count": 12,
+      "boundary": "Low-frequency variants are highly sensitive to sequencing and contamination artefacts; confirm with validated callers, controls and replicate evidence.",
+      "handoffs": [
+        "Pathogen Outbreak",
+        "Comparative Pathogen Genomics",
+        "AMR Surveillance"
+      ],
+      "capabilities": [
+        "Consensus QC",
+        "Minor variants",
+        "Quasispecies proxy",
+        "Lineage assignment",
+        "Recombination",
+        "Selection proxy",
+        "Transmission distance",
+        "Resistance/antigenic review"
+      ],
+      "qc_checks": [
+        "Depth",
+        "Reference consistency",
+        "Mixed infection",
+        "Primer dropout",
+        "Timepoint order",
+        "Contamination",
+        "Lineage database version"
+      ],
+      "reference_assets": [
+        "Viral reference genome",
+        "Primer scheme",
+        "Lineage database",
+        "Resistance catalogue",
+        "Antigenic-site annotation"
+      ],
+      "native_features": [
+        "raw-read/consensus intake",
+        "primer-dropout readiness",
+        "minor-variant manifest",
+        "phylogeny and lineage planning"
+      ],
+      "last_mile_features": [
+        "Amplicon protocol awareness",
+        "mixed-infection confidence",
+        "transmission uncertainty",
+        "resistance evidence tier"
+      ],
+      "specialist_confirmations": [
+        "validated caller",
+        "replicate controls",
+        "epidemiological confirmation"
+      ],
+      "benchmark_profile": {
+        "module_key": "viral_within_host",
+        "name": "Viral Within Host benchmark",
+        "truth_requirements": [
+          "validated variants/lineages"
+        ],
+        "metrics": [
+          "precision",
+          "recall",
+          "f1",
+          "frequency_error"
+        ],
+        "stratifications": [
+          "frequency_bin",
+          "amplicon",
+          "lineage"
+        ],
+        "external_reference": "sequencing control mixtures",
+        "boundary": "Benchmark results measure the supplied truth pack only and are not a substitute for independent external validation."
+      },
+      "portable_workflow": {
+        "workflow_id": "biointel.viral_within_host.peak-v140",
+        "version": "1.0.0",
+        "tasks": [
+          {
+            "task_id": "verify",
+            "name": "Verify input checksum and schema",
+            "command": [
+              "biointel-cli",
+              "verify-input",
+              "--input",
+              "input.dat"
+            ],
+            "inputs": [
+              "input.dat"
+            ],
+            "outputs": [
+              "verified-input.json"
+            ],
+            "cpu_cores": 1,
+            "memory_gb": 1,
+            "disk_gb": 2,
+            "container": null,
+            "dependencies": []
+          },
+          {
+            "task_id": "engine-1",
+            "name": "Run minimap2",
+            "command": [
+              "minimap2",
+              "--version"
+            ],
+            "inputs": [
+              "input.dat"
+            ],
+            "outputs": [
+              "results/minimap2.json"
+            ],
+            "cpu_cores": 2,
+            "memory_gb": 4,
+            "disk_gb": 10,
+            "container": {
+              "image": "ghcr.io/biointel-local/minimap2:qualified",
+              "digest": "sha256:743fa4a5d3d5629db765e6a3526bc40e69324af2cd42b6ea23df25650606a01c",
+              "runtime": "docker-or-apptainer",
+              "licence": "External tool licence applies"
+            },
+            "dependencies": [
+              "verify"
+            ]
+          },
+          {
+            "task_id": "engine-2",
+            "name": "Run samtools",
+            "command": [
+              "samtools",
+              "--version"
+            ],
+            "inputs": [
+              "input.dat"
+            ],
+            "outputs": [
+              "results/samtools.json"
+            ],
+            "cpu_cores": 2,
+            "memory_gb": 4,
+            "disk_gb": 10,
+            "container": {
+              "image": "ghcr.io/biointel-local/samtools:qualified",
+              "digest": "sha256:d8e680c8285c56b86c9acdeeefb28a231246d4a7883b4aa9c9725c6652ea0b8a",
+              "runtime": "docker-or-apptainer",
+              "licence": "External tool licence applies"
+            },
+            "dependencies": [
+              "engine-1"
+            ]
+          },
+          {
+            "task_id": "engine-3",
+            "name": "Run bcftools",
+            "command": [
+              "bcftools",
+              "--version"
+            ],
+            "inputs": [
+              "input.dat"
+            ],
+            "outputs": [
+              "results/bcftools.json"
+            ],
+            "cpu_cores": 2,
+            "memory_gb": 4,
+            "disk_gb": 10,
+            "container": {
+              "image": "ghcr.io/biointel-local/bcftools:qualified",
+              "digest": "sha256:c0a77462fe7dfe136ea14a6618d1a025275885efb66bbd124a85ca4421ecf0bc",
+              "runtime": "docker-or-apptainer",
+              "licence": "External tool licence applies"
+            },
+            "dependencies": [
+              "engine-2"
+            ]
+          },
+          {
+            "task_id": "harmonize",
+            "name": "Normalize and harmonize results",
+            "command": [
+              "biointel-cli",
+              "harmonize",
+              "--module",
+              "viral_within_host"
+            ],
+            "inputs": [],
+            "outputs": [
+              "results/harmonized.csv"
+            ],
+            "cpu_cores": 1,
+            "memory_gb": 3,
+            "disk_gb": 5,
+            "container": null,
+            "dependencies": [
+              "engine-3"
+            ]
+          },
+          {
+            "task_id": "export",
+            "name": "Build evidence and publication bundle",
+            "command": [
+              "biointel-cli",
+              "export",
+              "--module",
+              "viral_within_host"
+            ],
+            "inputs": [
+              "results/harmonized.csv"
+            ],
+            "outputs": [
+              "results/evidence.zip"
+            ],
+            "cpu_cores": 1,
+            "memory_gb": 2,
+            "disk_gb": 5,
+            "container": null,
+            "dependencies": [
+              "harmonize"
+            ]
+          }
+        ],
+        "execution_profiles": [
+          "local",
+          "offline-windows",
+          "hpc",
+          "wes"
+        ],
+        "workflow_digest": "sha256:b746c9bac8bee2b898e9f2fbb5ca1d566bca4294a11dc6c5a929a9f46c065e3b"
+      },
+      "optional_tools": [
+        {
+          "name": "iVar",
+          "probe": "ivar",
+          "kind": "binary",
+          "purpose": "viral consensus and variants",
+          "required": false
+        },
+        {
+          "name": "Nextclade",
+          "probe": "nextclade",
+          "kind": "binary",
+          "purpose": "lineage and QC",
+          "required": false
+        },
+        {
+          "name": "LoFreq",
+          "probe": "lofreq",
+          "kind": "binary",
+          "purpose": "low-frequency variants",
+          "required": false
+        }
+      ]
+    },
+    {
+      "key": "genome_annotation",
+      "title": "Genome Annotation & Comparative Annotation Studio",
+      "short_title": "Genome Annotation Studio",
+      "category": "Bioinformatics",
+      "new_module_from_step137": true,
+      "existing_page": null,
+      "summary": "Validate GFF/GTF gene models, compare annotation versions and integrate orthology, protein-domain and synteny evidence.",
+      "purpose": "Create an auditable annotation review queue that separates model completeness from functional evidence.",
+      "required_columns": [
+        "genome",
+        "feature_id",
+        "chrom",
+        "start",
+        "end",
+        "strand",
+        "feature_type",
+        "evidence"
+      ],
+      "accepted_inputs": [
+        "CSV",
+        "TSV",
+        "GFF",
+        "GFF3",
+        "GTF",
+        "annotation comparison table"
+      ],
+      "native_extensions": [
+        "csv",
+        "fa",
+        "faa",
+        "fas",
+        "fasta",
+        "fna",
+        "gb",
+        "gbk",
+        "genbank",
+        "gff",
+        "gff3",
+        "gtf",
+        "json",
+        "tsv",
+        "txt",
+        "xls",
+        "xlsx",
+        "gff.gz",
+        "gtf.gz"
+      ],
+      "workflow": [
+        "Import annotation",
+        "Syntax and coordinate QC",
+        "Gene-model comparison",
+        "Functional evidence",
+        "Orthology and synteny",
+        "Completeness review",
+        "Export"
+      ],
+      "outputs": [
+        "validated annotation",
+        "version diff",
+        "completeness metrics",
+        "orthology table",
+        "review bundle"
+      ],
+      "visuals": [
+        "Genome feature track",
+        "Annotation diff",
+        "Completeness dashboard",
+        "Orthology matrix",
+        "Synteny blocks",
+        "Evidence distribution",
+        "Feature-length profile",
+        "Review funnel",
+        "Annotation conflict map",
+        "Orphan feature review",
+        "Version consistency",
+        "Feature QC matrix"
+      ],
+      "visual_count": 12,
+      "boundary": "Automated annotation transfer can propagate errors. Curated gene models and experimental evidence remain authoritative.",
+      "handoffs": [
+        "Long-Read Assembly",
+        "Protein Annotation",
+        "Comparative Genomics"
+      ],
+      "capabilities": [
+        "GFF/GTF validation",
+        "Gene-model comparison",
+        "Orthology",
+        "Synteny",
+        "Functional annotation",
+        "Pseudogene review",
+        "Completeness",
+        "Manual curation"
+      ],
+      "qc_checks": [
+        "FASTA/GFF compatibility",
+        "Coordinate validity",
+        "Feature overlap",
+        "Evidence support",
+        "ORF length",
+        "Completeness",
+        "Version consistency"
+      ],
+      "reference_assets": [
+        "Reference assembly",
+        "Protein evidence",
+        "RNA evidence",
+        "BUSCO lineage",
+        "Functional database releases"
+      ],
+      "native_features": [
+        "FASTA/GFF compatibility",
+        "gene-model evidence review",
+        "annotation transfer planning",
+        "curated GFF export readiness"
+      ],
+      "last_mile_features": [
+        "Evidence-weighted model reconciliation",
+        "annotation conflict queue",
+        "transfer confidence",
+        "curator-ready corrected export"
+      ],
+      "specialist_confirmations": [
+        "RNA/protein evidence",
+        "BUSCO/orthology validation",
+        "manual curation"
+      ],
+      "benchmark_profile": {
+        "module_key": "genome_annotation",
+        "name": "Genome Annotation benchmark",
+        "truth_requirements": [
+          "curated annotation"
+        ],
+        "metrics": [
+          "precision",
+          "recall",
+          "f1",
+          "busco"
+        ],
+        "stratifications": [
+          "feature_type",
+          "evidence",
+          "length_bin"
+        ],
+        "external_reference": "curated reference annotation",
+        "boundary": "Benchmark results measure the supplied truth pack only and are not a substitute for independent external validation."
+      },
+      "portable_workflow": {
+        "workflow_id": "biointel.genome_annotation.peak-v140",
+        "version": "1.0.0",
+        "tasks": [
+          {
+            "task_id": "verify",
+            "name": "Verify input checksum and schema",
+            "command": [
+              "biointel-cli",
+              "verify-input",
+              "--input",
+              "input.dat"
+            ],
+            "inputs": [
+              "input.dat"
+            ],
+            "outputs": [
+              "verified-input.json"
+            ],
+            "cpu_cores": 1,
+            "memory_gb": 1,
+            "disk_gb": 2,
+            "container": null,
+            "dependencies": []
+          },
+          {
+            "task_id": "engine-1",
+            "name": "Run busco",
+            "command": [
+              "busco",
+              "--version"
+            ],
+            "inputs": [
+              "input.dat"
+            ],
+            "outputs": [
+              "results/busco.json"
+            ],
+            "cpu_cores": 2,
+            "memory_gb": 4,
+            "disk_gb": 10,
+            "container": {
+              "image": "ghcr.io/biointel-local/busco:qualified",
+              "digest": "sha256:99a59c05f6be023b7a38c78d477a0a79a1eb58c21af8cdf6b0f0ceaf1c445606",
+              "runtime": "docker-or-apptainer",
+              "licence": "External tool licence applies"
+            },
+            "dependencies": [
+              "verify"
+            ]
+          },
+          {
+            "task_id": "engine-2",
+            "name": "Run vep",
+            "command": [
+              "vep",
+              "--version"
+            ],
+            "inputs": [
+              "input.dat"
+            ],
+            "outputs": [
+              "results/vep.json"
+            ],
+            "cpu_cores": 2,
+            "memory_gb": 4,
+            "disk_gb": 10,
+            "container": {
+              "image": "ghcr.io/biointel-local/vep:qualified",
+              "digest": "sha256:0db902ce2914d731117d26a380a5c5c1908bca7b517926ae327e2887b93b74bf",
+              "runtime": "docker-or-apptainer",
+              "licence": "External tool licence applies"
+            },
+            "dependencies": [
+              "engine-1"
+            ]
+          },
+          {
+            "task_id": "harmonize",
+            "name": "Normalize and harmonize results",
+            "command": [
+              "biointel-cli",
+              "harmonize",
+              "--module",
+              "genome_annotation"
+            ],
+            "inputs": [],
+            "outputs": [
+              "results/harmonized.csv"
+            ],
+            "cpu_cores": 1,
+            "memory_gb": 3,
+            "disk_gb": 5,
+            "container": null,
+            "dependencies": [
+              "engine-2"
+            ]
+          },
+          {
+            "task_id": "export",
+            "name": "Build evidence and publication bundle",
+            "command": [
+              "biointel-cli",
+              "export",
+              "--module",
+              "genome_annotation"
+            ],
+            "inputs": [
+              "results/harmonized.csv"
+            ],
+            "outputs": [
+              "results/evidence.zip"
+            ],
+            "cpu_cores": 1,
+            "memory_gb": 2,
+            "disk_gb": 5,
+            "container": null,
+            "dependencies": [
+              "harmonize"
+            ]
+          }
+        ],
+        "execution_profiles": [
+          "local",
+          "offline-windows",
+          "hpc",
+          "wes"
+        ],
+        "workflow_digest": "sha256:c4762ac10ec3a7846be1d70775b379da768d47419ca899a7850b4fdbd4ec027f"
+      },
+      "optional_tools": [
+        {
+          "name": "BRAKER",
+          "probe": "braker.pl",
+          "kind": "binary",
+          "purpose": "eukaryotic gene annotation",
+          "required": false
+        },
+        {
+          "name": "Bakta",
+          "probe": "bakta",
+          "kind": "binary",
+          "purpose": "prokaryotic annotation",
+          "required": false
+        },
+        {
+          "name": "BUSCO",
+          "probe": "busco",
+          "kind": "binary",
+          "purpose": "annotation completeness",
+          "required": false
+        }
+      ]
+    },
+    {
+      "key": "circular_dna_instability",
+      "title": "Circular DNA, Mobile Elements & Genome Instability Studio",
+      "short_title": "Genome Instability Studio",
+      "category": "Bioinformatics",
+      "new_module_from_step137": true,
+      "existing_page": null,
+      "summary": "Review ecDNA, circular DNA, mobile-element insertions, amplification structures and complex rearrangement candidates.",
+      "purpose": "Integrate breakpoint, copy-number and read-support evidence into a transparent genome-instability review workflow.",
+      "required_columns": [
+        "sample",
+        "event_id",
+        "chrom",
+        "start",
+        "end",
+        "event_type",
+        "copy_number",
+        "support"
+      ],
+      "accepted_inputs": [
+        "CSV",
+        "TSV",
+        "BED",
+        "BEDPE",
+        "VCF",
+        "amplicon summary"
+      ],
+      "native_extensions": [
+        "bam",
+        "bcf",
+        "bed",
+        "bedgraph",
+        "bedpe",
+        "broadpeak",
+        "cram",
+        "csv",
+        "json",
+        "narrowpeak",
+        "tsv",
+        "txt",
+        "vcf",
+        "xls",
+        "xlsx",
+        "bed.gz",
+        "vcf.gz"
+      ],
+      "workflow": [
+        "Import instability events",
+        "Breakpoint QC",
+        "Circle and insertion classification",
+        "Copy-number review",
+        "Gene impact",
+        "Recurrence analysis",
+        "Export"
+      ],
+      "outputs": [
+        "instability events",
+        "circle candidates",
+        "mobile-element insertions",
+        "amplification structures",
+        "review bundle"
+      ],
+      "visuals": [
+        "Circular breakpoint map",
+        "Copy-number profile",
+        "Amplification topology",
+        "Mobile-element map",
+        "Recurrence heatmap",
+        "Gene impact",
+        "Event-size distribution",
+        "Priority waterfall",
+        "Consensus topology clusters",
+        "Sample recurrence",
+        "Amplification topology summary",
+        "Breakpoint hotspots"
+      ],
+      "visual_count": 12,
+      "boundary": "Complex rearrangement structures require raw-read, assembly and orthogonal validation; inferred circles are research hypotheses.",
+      "handoffs": [
+        "Structural Variant Studio",
+        "Cancer Genomics",
+        "Long-Read Assembly"
+      ],
+      "capabilities": [
+        "Circular topology",
+        "Breakpoint clusters",
+        "Focal amplification",
+        "Mobile elements",
+        "Integration sites",
+        "Sample recurrence",
+        "Instability score"
+      ],
+      "qc_checks": [
+        "Breakpoint support",
+        "Copy-number context",
+        "Circular topology",
+        "Gene impact",
+        "Sample recurrence",
+        "Long-read support",
+        "Integration-site validity"
+      ],
+      "reference_assets": [
+        "Reference FASTA",
+        "Gene annotation",
+        "Cancer gene census",
+        "Segmental duplications",
+        "Viral integration reference"
+      ],
+      "native_features": [
+        "breakpoint and copy-number intake",
+        "amplicon topology readiness",
+        "ecDNA/BFB evidence review",
+        "cohort recurrence comparison"
+      ],
+      "last_mile_features": [
+        "ecDNA-versus-BFB evidence proxy",
+        "purity-aware confidence",
+        "topology recurrence",
+        "long-read confirmation plan"
+      ],
+      "specialist_confirmations": [
+        "AmpliconArchitect/Circle-Map",
+        "long-read/FISH validation",
+        "tumour purity estimate"
+      ],
+      "benchmark_profile": {
+        "module_key": "circular_dna_instability",
+        "name": "Circular Dna Instability benchmark",
+        "truth_requirements": [
+          "validated amplicon topology"
+        ],
+        "metrics": [
+          "precision",
+          "recall",
+          "topology_accuracy"
+        ],
+        "stratifications": [
+          "event_type",
+          "copy_number",
+          "purity"
+        ],
+        "external_reference": "orthogonal long-read/FISH evidence",
+        "boundary": "Benchmark results measure the supplied truth pack only and are not a substitute for independent external validation."
+      },
+      "portable_workflow": {
+        "workflow_id": "biointel.circular_dna_instability.peak-v140",
+        "version": "1.0.0",
+        "tasks": [
+          {
+            "task_id": "verify",
+            "name": "Verify input checksum and schema",
+            "command": [
+              "biointel-cli",
+              "verify-input",
+              "--input",
+              "input.dat"
+            ],
+            "inputs": [
+              "input.dat"
+            ],
+            "outputs": [
+              "verified-input.json"
+            ],
+            "cpu_cores": 1,
+            "memory_gb": 1,
+            "disk_gb": 2,
+            "container": null,
+            "dependencies": []
+          },
+          {
+            "task_id": "engine-1",
+            "name": "Run samtools",
+            "command": [
+              "samtools",
+              "--version"
+            ],
+            "inputs": [
+              "input.dat"
+            ],
+            "outputs": [
+              "results/samtools.json"
+            ],
+            "cpu_cores": 2,
+            "memory_gb": 4,
+            "disk_gb": 10,
+            "container": {
+              "image": "ghcr.io/biointel-local/samtools:qualified",
+              "digest": "sha256:d8e680c8285c56b86c9acdeeefb28a231246d4a7883b4aa9c9725c6652ea0b8a",
+              "runtime": "docker-or-apptainer",
+              "licence": "External tool licence applies"
+            },
+            "dependencies": [
+              "verify"
+            ]
+          },
+          {
+            "task_id": "engine-2",
+            "name": "Run bcftools",
+            "command": [
+              "bcftools",
+              "--version"
+            ],
+            "inputs": [
+              "input.dat"
+            ],
+            "outputs": [
+              "results/bcftools.json"
+            ],
+            "cpu_cores": 2,
+            "memory_gb": 4,
+            "disk_gb": 10,
+            "container": {
+              "image": "ghcr.io/biointel-local/bcftools:qualified",
+              "digest": "sha256:c0a77462fe7dfe136ea14a6618d1a025275885efb66bbd124a85ca4421ecf0bc",
+              "runtime": "docker-or-apptainer",
+              "licence": "External tool licence applies"
+            },
+            "dependencies": [
+              "engine-1"
+            ]
+          },
+          {
+            "task_id": "engine-3",
+            "name": "Run sniffles",
+            "command": [
+              "sniffles",
+              "--version"
+            ],
+            "inputs": [
+              "input.dat"
+            ],
+            "outputs": [
+              "results/sniffles.json"
+            ],
+            "cpu_cores": 2,
+            "memory_gb": 4,
+            "disk_gb": 10,
+            "container": {
+              "image": "ghcr.io/biointel-local/sniffles:qualified",
+              "digest": "sha256:714019468114fe51e5e771c312d8a3ef922c071890b763d081b6f92f2b3f33ba",
+              "runtime": "docker-or-apptainer",
+              "licence": "External tool licence applies"
+            },
+            "dependencies": [
+              "engine-2"
+            ]
+          },
+          {
+            "task_id": "harmonize",
+            "name": "Normalize and harmonize results",
+            "command": [
+              "biointel-cli",
+              "harmonize",
+              "--module",
+              "circular_dna_instability"
+            ],
+            "inputs": [],
+            "outputs": [
+              "results/harmonized.csv"
+            ],
+            "cpu_cores": 1,
+            "memory_gb": 3,
+            "disk_gb": 5,
+            "container": null,
+            "dependencies": [
+              "engine-3"
+            ]
+          },
+          {
+            "task_id": "export",
+            "name": "Build evidence and publication bundle",
+            "command": [
+              "biointel-cli",
+              "export",
+              "--module",
+              "circular_dna_instability"
+            ],
+            "inputs": [
+              "results/harmonized.csv"
+            ],
+            "outputs": [
+              "results/evidence.zip"
+            ],
+            "cpu_cores": 1,
+            "memory_gb": 2,
+            "disk_gb": 5,
+            "container": null,
+            "dependencies": [
+              "harmonize"
+            ]
+          }
+        ],
+        "execution_profiles": [
+          "local",
+          "offline-windows",
+          "hpc",
+          "wes"
+        ],
+        "workflow_digest": "sha256:8306cd8153a55e624e32c3b55c4c4494db39fcdf8997eccaa53e1fe8adc02be0"
+      },
+      "optional_tools": [
+        {
+          "name": "AmpliconArchitect",
+          "probe": "AmpliconArchitect.py",
+          "kind": "binary",
+          "purpose": "focal amplification reconstruction",
+          "required": false
+        },
+        {
+          "name": "Circle-Map",
+          "probe": "Circle-Map",
+          "kind": "binary",
+          "purpose": "circular DNA detection",
+          "required": false
+        },
+        {
+          "name": "MELT",
+          "probe": "MELT",
+          "kind": "binary",
+          "purpose": "mobile-element insertions",
+          "required": false
+        }
+      ]
+    },
+    {
+      "key": "environmental_edna",
+      "title": "Environmental Genomics & eDNA Surveillance Studio",
+      "short_title": "eDNA Surveillance Studio",
+      "category": "Bioinformatics",
+      "new_module_from_step137": true,
+      "existing_page": null,
+      "summary": "Species detection, occupancy, biodiversity, contamination-control and spatiotemporal eDNA surveillance.",
+      "purpose": "Distinguish biological detections from background contamination and reference-library uncertainty across sites and sampling events.",
+      "required_columns": [
+        "sample",
+        "site",
+        "date",
+        "species",
+        "reads",
+        "control_type",
+        "reference_confidence"
+      ],
+      "accepted_inputs": [
+        "CSV",
+        "TSV",
+        "metabarcoding abundance table",
+        "taxonomy table",
+        "sample metadata"
+      ],
+      "native_extensions": [
+        "csv",
+        "fa",
+        "faa",
+        "fas",
+        "fasta",
+        "fastq",
+        "fna",
+        "fq",
+        "json",
+        "tsv",
+        "txt",
+        "xls",
+        "xlsx",
+        "fastq.gz",
+        "fq.gz"
+      ],
+      "workflow": [
+        "Import detections",
+        "Control and depth QC",
+        "Taxonomy harmonisation",
+        "Occupancy and biodiversity",
+        "Spatial and temporal review",
+        "Alert generation",
+        "Export"
+      ],
+      "outputs": [
+        "species detections",
+        "occupancy summary",
+        "biodiversity metrics",
+        "contamination flags",
+        "surveillance report"
+      ],
+      "visuals": [
+        "Species-site heatmap",
+        "Occupancy map",
+        "Biodiversity curves",
+        "Control contamination",
+        "Temporal trends",
+        "Reference confidence",
+        "Community ordination",
+        "Alert dashboard",
+        "Control QC",
+        "Replicate concordance",
+        "Taxonomic ambiguity",
+        "Surveillance alerts"
+      ],
+      "visual_count": 12,
+      "boundary": "eDNA detection depends on sampling design, assay specificity, reference coverage and environmental persistence; presence does not prove abundance or viability.",
+      "handoffs": [
+        "One Health Center",
+        "Microbiology & Metagenomics",
+        "Pathogen Outbreak"
+      ],
+      "capabilities": [
+        "Contamination filtering",
+        "Species detection",
+        "Occupancy",
+        "Biodiversity",
+        "Rare/invasive alerts",
+        "Temporal/spatial surveillance",
+        "Reference confidence"
+      ],
+      "qc_checks": [
+        "Negative controls",
+        "Positive controls",
+        "Sequencing depth",
+        "Reference confidence",
+        "Taxonomic ambiguity",
+        "Site/date completeness",
+        "Replicate consistency"
+      ],
+      "reference_assets": [
+        "Taxonomic reference library",
+        "Marker-gene database",
+        "Contaminant database",
+        "Site metadata dictionary"
+      ],
+      "native_features": [
+        "raw-read/count-table intake",
+        "field/lab control audit",
+        "reference coverage review",
+        "occupancy-analysis readiness"
+      ],
+      "last_mile_features": [
+        "Occupancy uncertainty",
+        "replicate concordance",
+        "contamination source audit",
+        "environmental covariate readiness"
+      ],
+      "specialist_confirmations": [
+        "mock community",
+        "field/lab controls",
+        "validated occupancy model"
+      ],
+      "benchmark_profile": {
+        "module_key": "environmental_edna",
+        "name": "Environmental Edna benchmark",
+        "truth_requirements": [
+          "known community/control truth"
+        ],
+        "metrics": [
+          "precision",
+          "recall",
+          "f1",
+          "abundance_error"
+        ],
+        "stratifications": [
+          "taxon",
+          "site",
+          "control_type"
+        ],
+        "external_reference": "mock community and field controls",
+        "boundary": "Benchmark results measure the supplied truth pack only and are not a substitute for independent external validation."
+      },
+      "portable_workflow": {
+        "workflow_id": "biointel.environmental_edna.peak-v140",
+        "version": "1.0.0",
+        "tasks": [
+          {
+            "task_id": "verify",
+            "name": "Verify input checksum and schema",
+            "command": [
+              "biointel-cli",
+              "verify-input",
+              "--input",
+              "input.dat"
+            ],
+            "inputs": [
+              "input.dat"
+            ],
+            "outputs": [
+              "verified-input.json"
+            ],
+            "cpu_cores": 1,
+            "memory_gb": 1,
+            "disk_gb": 2,
+            "container": null,
+            "dependencies": []
+          },
+          {
+            "task_id": "engine-1",
+            "name": "Run kraken2",
+            "command": [
+              "kraken2",
+              "--version"
+            ],
+            "inputs": [
+              "input.dat"
+            ],
+            "outputs": [
+              "results/kraken2.json"
+            ],
+            "cpu_cores": 2,
+            "memory_gb": 4,
+            "disk_gb": 10,
+            "container": {
+              "image": "ghcr.io/biointel-local/kraken2:qualified",
+              "digest": "sha256:4e5e90a240e3e32f552364a9a374885a3387a235ca26fb20eeefa8e85fc888e4",
+              "runtime": "docker-or-apptainer",
+              "licence": "External tool licence applies"
+            },
+            "dependencies": [
+              "verify"
+            ]
+          },
+          {
+            "task_id": "engine-2",
+            "name": "Run bracken",
+            "command": [
+              "bracken",
+              "--version"
+            ],
+            "inputs": [
+              "input.dat"
+            ],
+            "outputs": [
+              "results/bracken.json"
+            ],
+            "cpu_cores": 2,
+            "memory_gb": 4,
+            "disk_gb": 10,
+            "container": {
+              "image": "ghcr.io/biointel-local/bracken:qualified",
+              "digest": "sha256:d649dc42e44e3f1db7818740a5168e5156c839340db384f1d24853f990857ca5",
+              "runtime": "docker-or-apptainer",
+              "licence": "External tool licence applies"
+            },
+            "dependencies": [
+              "engine-1"
+            ]
+          },
+          {
+            "task_id": "engine-3",
+            "name": "Run humann",
+            "command": [
+              "humann",
+              "--version"
+            ],
+            "inputs": [
+              "input.dat"
+            ],
+            "outputs": [
+              "results/humann.json"
+            ],
+            "cpu_cores": 2,
+            "memory_gb": 4,
+            "disk_gb": 10,
+            "container": {
+              "image": "ghcr.io/biointel-local/humann:qualified",
+              "digest": "sha256:e97dd723f1439f1b1f18d2b48583171b97c631aab32188534e8407308611d575",
+              "runtime": "docker-or-apptainer",
+              "licence": "External tool licence applies"
+            },
+            "dependencies": [
+              "engine-2"
+            ]
+          },
+          {
+            "task_id": "harmonize",
+            "name": "Normalize and harmonize results",
+            "command": [
+              "biointel-cli",
+              "harmonize",
+              "--module",
+              "environmental_edna"
+            ],
+            "inputs": [],
+            "outputs": [
+              "results/harmonized.csv"
+            ],
+            "cpu_cores": 1,
+            "memory_gb": 3,
+            "disk_gb": 5,
+            "container": null,
+            "dependencies": [
+              "engine-3"
+            ]
+          },
+          {
+            "task_id": "export",
+            "name": "Build evidence and publication bundle",
+            "command": [
+              "biointel-cli",
+              "export",
+              "--module",
+              "environmental_edna"
+            ],
+            "inputs": [
+              "results/harmonized.csv"
+            ],
+            "outputs": [
+              "results/evidence.zip"
+            ],
+            "cpu_cores": 1,
+            "memory_gb": 2,
+            "disk_gb": 5,
+            "container": null,
+            "dependencies": [
+              "harmonize"
+            ]
+          }
+        ],
+        "execution_profiles": [
+          "local",
+          "offline-windows",
+          "hpc",
+          "wes"
+        ],
+        "workflow_digest": "sha256:8166eac35ee65acde816dd102591f99f5d0f3af765a78ce672a84060337d78f0"
+      },
+      "optional_tools": [
+        {
+          "name": "QIIME 2",
+          "probe": "qiime",
+          "kind": "binary",
+          "purpose": "metabarcoding workflows",
+          "required": false
+        },
+        {
+          "name": "DADA2",
+          "probe": "R",
+          "kind": "binary",
+          "purpose": "ASV inference via R environment",
+          "required": false
+        },
+        {
+          "name": "OBITools",
+          "probe": "obi",
+          "kind": "binary",
+          "purpose": "DNA metabarcoding processing",
+          "required": false
+        }
+      ]
+    },
+    {
+      "key": "comparative_regulatory_genomics",
+      "title": "Comparative Regulatory Genomics Studio",
+      "short_title": "Comparative Regulatory Genomics",
+      "category": "Bioinformatics",
+      "new_module_from_step137": true,
+      "existing_page": null,
+      "summary": "Compare conserved non-coding regions, enhancer activity, motif turnover and regulatory synteny across species.",
+      "purpose": "Connect sequence conservation and functional activity without treating conservation alone as proof of regulatory function.",
+      "required_columns": [
+        "species",
+        "region",
+        "ortholog_group",
+        "motif",
+        "conservation",
+        "activity",
+        "chrom",
+        "start",
+        "end"
+      ],
+      "accepted_inputs": [
+        "CSV",
+        "TSV",
+        "BED",
+        "conserved-element table",
+        "orthologous peak table"
+      ],
+      "native_extensions": [
+        "bed",
+        "bedgraph",
+        "bigwig",
+        "broadpeak",
+        "bw",
+        "csv",
+        "fa",
+        "faa",
+        "fas",
+        "fasta",
+        "fna",
+        "gff",
+        "gff3",
+        "gtf",
+        "json",
+        "narrowpeak",
+        "tsv",
+        "txt",
+        "xls",
+        "xlsx",
+        "bed.gz",
+        "gff.gz",
+        "gtf.gz"
+      ],
+      "workflow": [
+        "Import orthologous regions",
+        "Coordinate and orthology QC",
+        "Conservation analysis",
+        "Motif turnover",
+        "Activity comparison",
+        "Regulatory synteny",
+        "Export"
+      ],
+      "outputs": [
+        "conserved regions",
+        "motif turnover",
+        "activity comparison",
+        "synteny blocks",
+        "evidence bundle"
+      ],
+      "visuals": [
+        "Conservation landscape",
+        "Motif turnover heatmap",
+        "Activity comparison",
+        "Regulatory synteny",
+        "Ortholog network",
+        "Constraint distribution",
+        "Species clustering",
+        "Evidence matrix",
+        "Species support",
+        "Regulatory gain/loss",
+        "Tissue matching",
+        "Conservation QC"
+      ],
+      "visual_count": 12,
+      "boundary": "Conservation and motif presence are indirect evidence. Functional claims require species- and tissue-matched experimental validation.",
+      "handoffs": [
+        "Epigenomics",
+        "Comparative Genomics",
+        "Gene Regulatory Network"
+      ],
+      "capabilities": [
+        "Conserved elements",
+        "Enhancer conservation",
+        "Motif turnover",
+        "Regulatory synteny",
+        "TF activity comparison",
+        "Gain/loss",
+        "Comparative networks"
+      ],
+      "qc_checks": [
+        "Species/build consistency",
+        "Lift-over quality",
+        "Ortholog completeness",
+        "Motif mapping",
+        "Activity normalization",
+        "Tissue matching"
+      ],
+      "reference_assets": [
+        "Multi-species assemblies",
+        "Whole-genome alignment",
+        "Orthology map",
+        "Motif library",
+        "Constraint tracks"
+      ],
+      "native_features": [
+        "multi-species region intake",
+        "lift-over readiness",
+        "orthologous peak matching",
+        "regulatory gain/loss review"
+      ],
+      "last_mile_features": [
+        "Regulatory gain/loss classification",
+        "tissue match audit",
+        "phylogenetic support readiness",
+        "ancestral-state summary"
+      ],
+      "specialist_confirmations": [
+        "whole-genome alignment",
+        "species/tissue-matched assays",
+        "phylogenetic model"
+      ],
+      "benchmark_profile": {
+        "module_key": "comparative_regulatory_genomics",
+        "name": "Comparative Regulatory Genomics benchmark",
+        "truth_requirements": [
+          "validated orthologous regulatory regions"
+        ],
+        "metrics": [
+          "precision",
+          "recall",
+          "correlation"
+        ],
+        "stratifications": [
+          "species",
+          "tissue",
+          "constraint_bin"
+        ],
+        "external_reference": "cross-species functional evidence",
+        "boundary": "Benchmark results measure the supplied truth pack only and are not a substitute for independent external validation."
+      },
+      "portable_workflow": {
+        "workflow_id": "biointel.comparative_regulatory_genomics.peak-v140",
+        "version": "1.0.0",
+        "tasks": [
+          {
+            "task_id": "verify",
+            "name": "Verify input checksum and schema",
+            "command": [
+              "biointel-cli",
+              "verify-input",
+              "--input",
+              "input.dat"
+            ],
+            "inputs": [
+              "input.dat"
+            ],
+            "outputs": [
+              "verified-input.json"
+            ],
+            "cpu_cores": 1,
+            "memory_gb": 1,
+            "disk_gb": 2,
+            "container": null,
+            "dependencies": []
+          },
+          {
+            "task_id": "engine-1",
+            "name": "Run bedtools",
+            "command": [
+              "bedtools",
+              "--version"
+            ],
+            "inputs": [
+              "input.dat"
+            ],
+            "outputs": [
+              "results/bedtools.json"
+            ],
+            "cpu_cores": 2,
+            "memory_gb": 4,
+            "disk_gb": 10,
+            "container": {
+              "image": "ghcr.io/biointel-local/bedtools:qualified",
+              "digest": "sha256:952290ac3a177a5a544f05789bec73210cc667b1be231059fe24d0cf93250b1f",
+              "runtime": "docker-or-apptainer",
+              "licence": "External tool licence applies"
+            },
+            "dependencies": [
+              "verify"
+            ]
+          },
+          {
+            "task_id": "engine-2",
+            "name": "Run mafft",
+            "command": [
+              "mafft",
+              "--version"
+            ],
+            "inputs": [
+              "input.dat"
+            ],
+            "outputs": [
+              "results/mafft.json"
+            ],
+            "cpu_cores": 2,
+            "memory_gb": 4,
+            "disk_gb": 10,
+            "container": {
+              "image": "ghcr.io/biointel-local/mafft:qualified",
+              "digest": "sha256:37124cb127f8b642db62cdb80e6848d07ac7257c979f8197919e0e151df72413",
+              "runtime": "docker-or-apptainer",
+              "licence": "External tool licence applies"
+            },
+            "dependencies": [
+              "engine-1"
+            ]
+          },
+          {
+            "task_id": "engine-3",
+            "name": "Run deeptools",
+            "command": [
+              "deeptools",
+              "--version"
+            ],
+            "inputs": [
+              "input.dat"
+            ],
+            "outputs": [
+              "results/deeptools.json"
+            ],
+            "cpu_cores": 2,
+            "memory_gb": 4,
+            "disk_gb": 10,
+            "container": {
+              "image": "ghcr.io/biointel-local/deeptools:qualified",
+              "digest": "sha256:b61348a8bc0dcd9b70af1fbbed971c9cb2809c82eee20dbd42db6de619559158",
+              "runtime": "docker-or-apptainer",
+              "licence": "External tool licence applies"
+            },
+            "dependencies": [
+              "engine-2"
+            ]
+          },
+          {
+            "task_id": "harmonize",
+            "name": "Normalize and harmonize results",
+            "command": [
+              "biointel-cli",
+              "harmonize",
+              "--module",
+              "comparative_regulatory_genomics"
+            ],
+            "inputs": [],
+            "outputs": [
+              "results/harmonized.csv"
+            ],
+            "cpu_cores": 1,
+            "memory_gb": 3,
+            "disk_gb": 5,
+            "container": null,
+            "dependencies": [
+              "engine-3"
+            ]
+          },
+          {
+            "task_id": "export",
+            "name": "Build evidence and publication bundle",
+            "command": [
+              "biointel-cli",
+              "export",
+              "--module",
+              "comparative_regulatory_genomics"
+            ],
+            "inputs": [
+              "results/harmonized.csv"
+            ],
+            "outputs": [
+              "results/evidence.zip"
+            ],
+            "cpu_cores": 1,
+            "memory_gb": 2,
+            "disk_gb": 5,
+            "container": null,
+            "dependencies": [
+              "harmonize"
+            ]
+          }
+        ],
+        "execution_profiles": [
+          "local",
+          "offline-windows",
+          "hpc",
+          "wes"
+        ],
+        "workflow_digest": "sha256:30eb453839ada1c85ff9e8a24fad5093b705afe45ec5397c6495db6b7956b997"
+      },
+      "optional_tools": [
+        {
+          "name": "HAL tools",
+          "probe": "halLiftover",
+          "kind": "binary",
+          "purpose": "comparative genome coordinates",
+          "required": false
+        },
+        {
+          "name": "BEDTools",
+          "probe": "bedtools",
+          "kind": "binary",
+          "purpose": "regulatory interval comparison",
+          "required": false
+        },
+        {
+          "name": "phastCons",
+          "probe": "phastCons",
+          "kind": "binary",
+          "purpose": "evolutionary conservation",
+          "required": false
+        }
+      ]
+    }
+  ]
+}

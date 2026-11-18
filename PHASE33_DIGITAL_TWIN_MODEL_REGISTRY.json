@@ -1,0 +1,42 @@
+{
+  "schema": "biointel.phase33.digital-twin-model-registry.v1",
+  "clinical_grade_supported": false,
+  "models": [
+    {
+      "key": "glucose_regulation_v1",
+      "type": "ordinary_differential_equation",
+      "domain": "glucose regulation and insulin resistance",
+      "default_validation": "Not Validated",
+      "data_class": "synthetic/reference",
+      "executable": true
+    },
+    {
+      "key": "inflammation_response_v1",
+      "type": "ordinary_differential_equation",
+      "domain": "inflammation and immune response concepts",
+      "default_validation": "Not Validated",
+      "data_class": "synthetic/reference",
+      "executable": true
+    },
+    {
+      "key": "tumour_growth_concept_v1",
+      "type": "ordinary_differential_equation",
+      "domain": "tumour growth and immune interaction concepts",
+      "default_validation": "Not Validated",
+      "data_class": "synthetic/reference",
+      "executable": true
+    },
+    {
+      "key": "pharmacokinetic_concept_v1",
+      "type": "ordinary_differential_equation",
+      "domain": "pharmacokinetic concepts",
+      "default_validation": "Not Validated",
+      "data_class": "synthetic/reference",
+      "executable": true
+    }
+  ],
+  "imported_definitions": {
+    "storage_supported": true,
+    "execution_default": "blocked until an approved adapter is implemented and reviewed"
+  }
+}

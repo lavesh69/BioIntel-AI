@@ -1,0 +1,21 @@
+{
+  "schema": "biointel.step181.release.v1",
+  "step": 181,
+  "title": "Real External Scientific Evidence Qualification Workflow",
+  "target_modules": [
+    "phenotypic_screening",
+    "spatial_omics_pathology",
+    "protein_language_design",
+    "protein_ligand_codesign",
+    "strain_microbiome"
+  ],
+  "module_count": 5,
+  "evidence_pack_count": 25,
+  "workflow_rating": 10.0,
+  "qualified_real_evidence_packs": 0,
+  "controlled_release_modules": 0,
+  "focused_tests": "35/35 passed",
+  "full_compilation": "1388/1388 passed",
+  "classic_windows_flow_preserved": true,
+  "release_policy": "fail-closed-no-fabricated-evidence"
+}

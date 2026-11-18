@@ -1,0 +1,27 @@
+{$BIOINTEL_PUBLIC_DOMAIN:localhost} {
+    encode zstd gzip
+
+    @api path /health /ready /metrics /v1/* /legal/* /docs* /openapi.json /redoc*
+    handle @api {
+        reverse_proxy api:8000
+    }
+
+    handle {
+        reverse_proxy streamlit:8501
+    }
+
+    header {
+        Strict-Transport-Security "max-age=31536000; includeSubDomains"
+        X-Content-Type-Options "nosniff"
+        Referrer-Policy "no-referrer"
+        -Server
+    }
+
+    log {
+        output file /data/access.log {
+            roll_size 10mb
+            roll_keep 5
+        }
+        format json
+    }
+}

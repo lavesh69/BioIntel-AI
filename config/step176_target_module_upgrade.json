@@ -1,0 +1,10 @@
+{
+  "schema": "biointel.step176.target-module-upgrade.v1",
+  "app_version": "14.7.0",
+  "target_module_count": 17,
+  "internal_target_rating": 10.0,
+  "external_evidence_policy": "fail-closed",
+  "classic_windows_flow_preserved": ["INSTALL_WINDOWS.bat", "RUN_BOTH_WINDOWS.bat"],
+  "verification_launcher": "VERIFY_STEP176_TARGET_MODULES_WINDOWS.bat",
+  "provisioning_launcher": "PROVISION_STEP176_TARGET_MODULES_WINDOWS.bat"
+}

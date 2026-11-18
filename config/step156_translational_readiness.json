@@ -1,0 +1,31 @@
+{
+  "schema": "biointel.step156.translational-readiness.v1",
+  "step": 156,
+  "scientific_profiles": 80,
+  "workflow_families": 49,
+  "engine_adapters": 64,
+  "protected_execution_plans": 66,
+  "analysis_modes": {
+    "interactive": {"row_limit": 250000, "feature_limit": 100, "cell_limit": 20000000},
+    "extended": {"row_limit": 750000, "feature_limit": 256, "cell_limit": 50000000},
+    "full": {"row_limit": 1000000, "feature_limit": 512, "cell_limit": 80000000}
+  },
+  "qualification_policy": {
+    "executable_detection_is_not_qualification": true,
+    "reference_checksum_required": true,
+    "reference_release_required": true,
+    "licence_evidence_required": true,
+    "qualified_reviewer_required": true,
+    "instrument_calibration_and_method_metadata_required": true,
+    "fail_closed": true
+  },
+  "runtime_policy": {
+    "read_only_install_supported": true,
+    "user_data_fallback": true,
+    "runtime_sidecars_forbidden_in_release": true
+  },
+  "release_policy": {
+    "external_evidence_must_not_be_fabricated": true,
+    "specialist_confirmation_required_for_confirmatory_use": true
+  }
+}

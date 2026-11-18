@@ -1,0 +1,24 @@
+{
+  "schema": "biointel.step189.verification.v1",
+  "status": "passed",
+  "modules": 80,
+  "qualified": 80,
+  "dimensions_passed": 2400,
+  "dimensions_total": 2400,
+  "platform_dimensions_per_module": 30,
+  "table_counts": {
+    "projects": 80,
+    "samples": 269,
+    "assets": 80,
+    "engines": 287,
+    "references_registry": 268,
+    "jobs": 80,
+    "handoffs": 80,
+    "provenance": 240,
+    "reviews": 160,
+    "metrics": 400,
+    "errors": 80
+  },
+  "blockers": {},
+  "controlled_release_eligible": false
+}

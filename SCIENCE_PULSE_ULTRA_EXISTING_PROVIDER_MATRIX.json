@@ -1,0 +1,173 @@
+[
+  {
+    "base_url": "https://eutils.ncbi.nlm.nih.gov",
+    "content_types": [
+      "publication"
+    ],
+    "evidence": "Adapter is fixture-tested; this qualification did not make a real-provider claim.",
+    "key": "pubmed",
+    "kind": "api",
+    "name": "PubMed",
+    "schedule_seconds": 21600,
+    "status": "IMPLEMENTED_REQUIRES_EXTERNAL_VALIDATION"
+  },
+  {
+    "base_url": "https://www.ebi.ac.uk",
+    "content_types": [
+      "publication",
+      "preprint"
+    ],
+    "evidence": "Adapter is fixture-tested; this qualification did not make a real-provider claim.",
+    "key": "europe_pmc",
+    "kind": "api",
+    "name": "Europe PMC",
+    "schedule_seconds": 21600,
+    "status": "IMPLEMENTED_REQUIRES_EXTERNAL_VALIDATION"
+  },
+  {
+    "base_url": "https://api.crossref.org",
+    "content_types": [
+      "publication",
+      "correction",
+      "retraction"
+    ],
+    "evidence": "Adapter is fixture-tested; this qualification did not make a real-provider claim.",
+    "key": "crossref",
+    "kind": "api",
+    "name": "Crossref",
+    "schedule_seconds": 21600,
+    "status": "IMPLEMENTED_REQUIRES_EXTERNAL_VALIDATION"
+  },
+  {
+    "base_url": "https://api.openalex.org",
+    "content_types": [
+      "publication"
+    ],
+    "evidence": "Adapter is fixture-tested; this qualification did not make a real-provider claim.",
+    "key": "openalex",
+    "kind": "api",
+    "name": "OpenAlex",
+    "schedule_seconds": 21600,
+    "status": "IMPLEMENTED_REQUIRES_EXTERNAL_VALIDATION"
+  },
+  {
+    "base_url": "https://api.biorxiv.org",
+    "content_types": [
+      "preprint"
+    ],
+    "evidence": "Adapter is fixture-tested; this qualification did not make a real-provider claim.",
+    "key": "biorxiv",
+    "kind": "api",
+    "name": "bioRxiv",
+    "schedule_seconds": 21600,
+    "status": "IMPLEMENTED_REQUIRES_EXTERNAL_VALIDATION"
+  },
+  {
+    "base_url": "https://api.biorxiv.org",
+    "content_types": [
+      "preprint"
+    ],
+    "evidence": "Adapter is fixture-tested; this qualification did not make a real-provider claim.",
+    "key": "medrxiv",
+    "kind": "api",
+    "name": "medRxiv",
+    "schedule_seconds": 21600,
+    "status": "IMPLEMENTED_REQUIRES_EXTERNAL_VALIDATION"
+  },
+  {
+    "base_url": "https://export.arxiv.org",
+    "content_types": [
+      "preprint"
+    ],
+    "evidence": "Adapter is fixture-tested; this qualification did not make a real-provider claim.",
+    "key": "arxiv",
+    "kind": "api",
+    "name": "arXiv",
+    "schedule_seconds": 21600,
+    "status": "IMPLEMENTED_REQUIRES_EXTERNAL_VALIDATION"
+  },
+  {
+    "base_url": "https://clinicaltrials.gov",
+    "content_types": [
+      "clinical_trial"
+    ],
+    "evidence": "Adapter is fixture-tested; this qualification did not make a real-provider claim.",
+    "key": "clinicaltrials",
+    "kind": "api",
+    "name": "ClinicalTrials.gov",
+    "schedule_seconds": 21600,
+    "status": "IMPLEMENTED_REQUIRES_EXTERNAL_VALIDATION"
+  },
+  {
+    "base_url": "https://api.datacite.org",
+    "content_types": [
+      "dataset"
+    ],
+    "evidence": "Adapter is fixture-tested; this qualification did not make a real-provider claim.",
+    "key": "datacite",
+    "kind": "api",
+    "name": "DataCite",
+    "schedule_seconds": 21600,
+    "status": "IMPLEMENTED_REQUIRES_EXTERNAL_VALIDATION"
+  },
+  {
+    "base_url": "https://api.eventdata.crossref.org",
+    "content_types": [
+      "event"
+    ],
+    "evidence": "Adapter is fixture-tested; this qualification did not make a real-provider claim.",
+    "key": "crossref_event_data",
+    "kind": "api",
+    "name": "Crossref Event Data",
+    "schedule_seconds": 86400,
+    "status": "IMPLEMENTED_REQUIRES_EXTERNAL_VALIDATION"
+  },
+  {
+    "base_url": "https://www.nature.com/nbt.rss",
+    "content_types": [
+      "news"
+    ],
+    "evidence": "Real HTTPS sync persisted 8 LIVE records.",
+    "key": "rss_nature_biotechnology",
+    "kind": "rss",
+    "name": "Nature Biotechnology",
+    "schedule_seconds": 3600,
+    "status": "IMPLEMENTED_AND_VERIFIED"
+  },
+  {
+    "base_url": "https://www.sciencedaily.com/rss/plants_animals/biology.xml",
+    "content_types": [
+      "news"
+    ],
+    "evidence": "Real HTTPS sync persisted 50 LIVE records.",
+    "key": "rss_sciencedaily_biology",
+    "kind": "rss",
+    "name": "ScienceDaily Biology",
+    "schedule_seconds": 10800,
+    "status": "IMPLEMENTED_AND_VERIFIED"
+  },
+  {
+    "base_url": "https://www.nibib.nih.gov/rss",
+    "content_types": [
+      "news"
+    ],
+    "evidence": "Real HTTPS sync persisted 50 LIVE records.",
+    "key": "rss_nibib_news",
+    "kind": "rss",
+    "name": "NIH NIBIB Science News",
+    "schedule_seconds": 3600,
+    "status": "IMPLEMENTED_AND_VERIFIED"
+  },
+  {
+    "base_url": "https://www.nlm.nih.gov/rss/nlmnews.rss",
+    "content_types": [
+      "news"
+    ],
+    "evidence": "Real HTTPS sync persisted 10 LIVE records.",
+    "key": "rss_nlm_news",
+    "kind": "rss",
+    "name": "National Library of Medicine News",
+    "schedule_seconds": 10800,
+    "status": "IMPLEMENTED_AND_VERIFIED"
+  }
+]

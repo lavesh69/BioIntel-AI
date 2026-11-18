@@ -1,0 +1,13 @@
+﻿# Coturn template for private/LAN qualification. Replace every CHANGE_ME value.
+# Never publish this file with a real secret.
+listening-port=3478
+fingerprint
+lt-cred-mech
+realm=CHANGE_ME.biointel.local
+user=CHANGE_ME_USER:CHANGE_ME_PASSWORD
+no-cli
+no-multicast-peers
+stale-nonce=600
+# For public deployment, configure an externally reachable relay address and TLS certificate.
+# cert=C:\BioIntel\certs\turn.crt
+# pkey=C:\BioIntel\certs\turn.key

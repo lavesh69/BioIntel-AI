@@ -1,0 +1,16 @@
+{
+  "schema": "biointel.step202.release.v1",
+  "step": 202,
+  "base_step": 196,
+  "base_version": "15.4.0",
+  "part_count": 5,
+  "label": "Neuro/CNS Production Readiness, Robust Installation and Synthetic Demo",
+  "core_neuro_modules": 23,
+  "production_systems": 10,
+  "total_neuro_capabilities": 60,
+  "python_contract": "CPython 3.11.x x64",
+  "demo_assets": 21,
+  "focused_tests_passed": 90,
+  "native_windows_execution": "pending target-machine verification",
+  "controlled_release_eligible": false
+}

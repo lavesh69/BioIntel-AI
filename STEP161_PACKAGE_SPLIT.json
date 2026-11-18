@@ -1,0 +1,10 @@
+{
+  "schema": "biointel.step161.package-split.v1",
+  "step": 161,
+  "parts": 4,
+  "extract_policy": "Extract all four ZIP files into the same new empty directory. Each archive contains a complementary subset under the BioIntel-AI folder.",
+  "verify_first": "VERIFY_LATEST_WINDOWS.bat",
+  "install_after_verify": "INSTALL_WINDOWS.bat",
+  "launch_after_install": "RUN_BOTH_WINDOWS.bat",
+  "runtime_audit": "INSTALL_STEP161_SCIENTIFIC_RUNTIME_WINDOWS.bat"
+}

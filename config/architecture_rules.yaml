@@ -1,0 +1,17 @@
+schema: biointel.architecture-rules.v1
+layers:
+  - name: domain
+    roots: [biointel.sequence, biointel.chemistry, biointel.dti, biointel.training]
+  - name: application
+    roots: [biointel.jobs, biointel.reports, biointel.quality]
+  - name: interfaces
+    roots: [biointel.api, biointel.ui, biointel.cli]
+forbidden_imports:
+  - from: biointel.sequence
+    cannot_import: [biointel.api, biointel.ui]
+  - from: biointel.chemistry
+    cannot_import: [biointel.api, biointel.ui]
+  - from: biointel.dti
+    cannot_import: [biointel.api, biointel.ui]
+  - from: biointel.training
+    cannot_import: [biointel.api, biointel.ui]

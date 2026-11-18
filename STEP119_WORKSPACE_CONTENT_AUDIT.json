@@ -1,0 +1,2586 @@
+{
+  "schema": "biointel.step119.workspace-content-audit.v1",
+  "version": "11.9.0",
+  "generated_at_utc": "2026-07-11T09:31:52.513792+00:00",
+  "status": "PASS",
+  "workspaces": 78,
+  "summary_cards": 468,
+  "unique_fingerprints": 78,
+  "failed_workspaces": 0,
+  "modules": [
+    {
+      "module_key": "admet",
+      "title": "ADMET Triage & Developability",
+      "card_count": 6,
+      "status": "PASS",
+      "issues": [],
+      "cards": [
+        {
+          "title": "Primary canvas",
+          "value": "Structure, sequence and evidence decision workspace"
+        },
+        {
+          "title": "Focus entity",
+          "value": "Molecule or endpoint"
+        },
+        {
+          "title": "Workflow coverage",
+          "value": "Prepare \u2192 Inspect \u2192 Score \u2192 Compare \u2192 Review \u2192 Handoff"
+        },
+        {
+          "title": "Readiness checks",
+          "value": "5 checks \u00b7 Pass: 2 \u00b7 Review: 3"
+        },
+        {
+          "title": "Handoff targets",
+          "value": "Drug SMILES Analyzer \u00b7 Molecular Docking \u00b7 Report Studio"
+        },
+        {
+          "title": "Evidence boundary",
+          "value": "Research workflow"
+        }
+      ]
+    },
+    {
+      "module_key": "antibody",
+      "title": "Antibody & Biologics Engineering",
+      "card_count": 6,
+      "status": "PASS",
+      "issues": [],
+      "cards": [
+        {
+          "title": "Primary canvas",
+          "value": "Structure, sequence and evidence decision workspace"
+        },
+        {
+          "title": "Focus entity",
+          "value": "Antibody chain, CDR or mutation"
+        },
+        {
+          "title": "Workflow coverage",
+          "value": "Prepare \u2192 Inspect \u2192 Score \u2192 Compare \u2192 Review \u2192 Handoff"
+        },
+        {
+          "title": "Readiness checks",
+          "value": "5 checks \u00b7 Pass: 2 \u00b7 Review: 3"
+        },
+        {
+          "title": "Handoff targets",
+          "value": "Structural Bioinformatics \u00b7 Immunoinformatics \u00b7 Report Studio"
+        },
+        {
+          "title": "Evidence boundary",
+          "value": "Research workflow"
+        }
+      ]
+    },
+    {
+      "module_key": "batch_jobs",
+      "title": "Resumable Batch Jobs",
+      "card_count": 6,
+      "status": "PASS",
+      "issues": [],
+      "cards": [
+        {
+          "title": "Primary canvas",
+          "value": "Lifecycle, evidence and approval workspace"
+        },
+        {
+          "title": "Focus entity",
+          "value": "Job, stage or artifact"
+        },
+        {
+          "title": "Workflow coverage",
+          "value": "Register \u2192 Train \u2192 Validate \u2192 Explain \u2192 Approve \u2192 Monitor"
+        },
+        {
+          "title": "Readiness checks",
+          "value": "5 checks \u00b7 Pass: 1 \u00b7 Pending: 1 \u00b7 Review: 3"
+        },
+        {
+          "title": "Handoff targets",
+          "value": "Model Training \u00b7 Performance Center \u00b7 Project Workspace"
+        },
+        {
+          "title": "Evidence boundary",
+          "value": "Research workflow"
+        }
+      ]
+    },
+    {
+      "module_key": "batch_sequence",
+      "title": "Batch Sequence Analysis",
+      "card_count": 6,
+      "status": "PASS",
+      "issues": [],
+      "cards": [
+        {
+          "title": "Primary canvas",
+          "value": "Coordinate-aware sequence and evidence workspace"
+        },
+        {
+          "title": "Focus entity",
+          "value": "Sequence batch"
+        },
+        {
+          "title": "Workflow coverage",
+          "value": "Input \u2192 Validate \u2192 Map \u2192 Interpret \u2192 Review \u2192 Export"
+        },
+        {
+          "title": "Readiness checks",
+          "value": "5 checks \u00b7 Pass: 2 \u00b7 Review: 3"
+        },
+        {
+          "title": "Handoff targets",
+          "value": "FASTQ QC \u00b7 Sequence Analyzer \u00b7 Data Registry"
+        },
+        {
+          "title": "Evidence boundary",
+          "value": "Research workflow"
+        }
+      ]
+    },
+    {
+      "module_key": "bioimage",
+      "title": "Bioimage & Microscopy AI",
+      "card_count": 6,
+      "status": "PASS",
+      "issues": [],
+      "cards": [
+        {
+          "title": "Primary canvas",
+          "value": "Raw-evidence and object-review workspace"
+        },
+        {
+          "title": "Focus entity",
+          "value": "Image, object or segmentation mask"
+        },
+        {
+          "title": "Workflow coverage",
+          "value": "Import \u2192 Calibrate \u2192 Detect \u2192 Review \u2192 Accept \u2192 Export"
+        },
+        {
+          "title": "Readiness checks",
+          "value": "5 checks \u00b7 Pass: 1 \u00b7 Review: 4"
+        },
+        {
+          "title": "Handoff targets",
+          "value": "High-Content Screening \u00b7 Organoid Analytics \u00b7 Report Studio"
+        },
+        {
+          "title": "Evidence boundary",
+          "value": "Research workflow"
+        }
+      ]
+    },
+    {
+      "module_key": "biomarker_discovery",
+      "title": "Multi-Omics Biomarker Discovery",
+      "card_count": 6,
+      "status": "PASS",
+      "issues": [],
+      "cards": [
+        {
+          "title": "Primary canvas",
+          "value": "Design, selection and biological-state workspace"
+        },
+        {
+          "title": "Focus entity",
+          "value": "Biomarker candidate or cohort"
+        },
+        {
+          "title": "Workflow coverage",
+          "value": "Design \u2192 QC \u2192 Normalize \u2192 Model \u2192 Explore \u2192 Export"
+        },
+        {
+          "title": "Readiness checks",
+          "value": "5 checks \u00b7 Pass: 2 \u00b7 Review: 3"
+        },
+        {
+          "title": "Handoff targets",
+          "value": "Clinical Biomarkers \u00b7 Model Training \u00b7 Evidence Review"
+        },
+        {
+          "title": "Evidence boundary",
+          "value": "Research workflow"
+        }
+      ]
+    },
+    {
+      "module_key": "bioprocess",
+      "title": "Bioprocess & Fermentation",
+      "card_count": 6,
+      "status": "PASS",
+      "issues": [],
+      "cards": [
+        {
+          "title": "Primary canvas",
+          "value": "Protocol, allocation and quality-decision workspace"
+        },
+        {
+          "title": "Focus entity",
+          "value": "Batch, reactor or process phase"
+        },
+        {
+          "title": "Workflow coverage",
+          "value": "Plan \u2192 Assign \u2192 Run \u2192 QC \u2192 Interpret \u2192 Archive"
+        },
+        {
+          "title": "Readiness checks",
+          "value": "5 checks \u00b7 Pass: 2 \u00b7 Review: 3"
+        },
+        {
+          "title": "Handoff targets",
+          "value": "Enzyme Engineering \u00b7 Statistical Power \u00b7 Report Studio"
+        },
+        {
+          "title": "Evidence boundary",
+          "value": "Research workflow"
+        }
+      ]
+    },
+    {
+      "module_key": "cancer_genomics",
+      "title": "Cancer Genomics",
+      "card_count": 6,
+      "status": "PASS",
+      "issues": [],
+      "cards": [
+        {
+          "title": "Primary canvas",
+          "value": "Coordinate-aware sequence and evidence workspace"
+        },
+        {
+          "title": "Focus entity",
+          "value": "Tumour sample, clone or variant"
+        },
+        {
+          "title": "Workflow coverage",
+          "value": "Input \u2192 Validate \u2192 Map \u2192 Interpret \u2192 Review \u2192 Export"
+        },
+        {
+          "title": "Readiness checks",
+          "value": "5 checks \u00b7 Pass: 2 \u00b7 Review: 3"
+        },
+        {
+          "title": "Handoff targets",
+          "value": "Clinical Biomarkers \u00b7 Proteogenomics \u00b7 Variant Workbench"
+        },
+        {
+          "title": "Evidence boundary",
+          "value": "Research workflow"
+        }
+      ]
+    },
+    {
+      "module_key": "causal_biology",
+      "title": "Causal Biology & Perturbation",
+      "card_count": 6,
+      "status": "PASS",
+      "issues": [],
+      "cards": [
+        {
+          "title": "Primary canvas",
+          "value": "Lifecycle, evidence and approval workspace"
+        },
+        {
+          "title": "Focus entity",
+          "value": "Variable, instrument or causal edge"
+        },
+        {
+          "title": "Workflow coverage",
+          "value": "Register \u2192 Train \u2192 Validate \u2192 Explain \u2192 Approve \u2192 Monitor"
+        },
+        {
+          "title": "Readiness checks",
+          "value": "5 checks \u00b7 Pass: 1 \u00b7 Pending: 1 \u00b7 Review: 3"
+        },
+        {
+          "title": "Handoff targets",
+          "value": "Biomarker Discovery \u00b7 Pathway Analysis \u00b7 Study Design"
+        },
+        {
+          "title": "Evidence boundary",
+          "value": "Research workflow"
+        }
+      ]
+    },
+    {
+      "module_key": "cell_atlas",
+      "title": "Cell Atlas Mapping",
+      "card_count": 6,
+      "status": "PASS",
+      "issues": [],
+      "cards": [
+        {
+          "title": "Primary canvas",
+          "value": "Design, selection and biological-state workspace"
+        },
+        {
+          "title": "Focus entity",
+          "value": "Reference cell type or query cell"
+        },
+        {
+          "title": "Workflow coverage",
+          "value": "Design \u2192 QC \u2192 Normalize \u2192 Model \u2192 Explore \u2192 Export"
+        },
+        {
+          "title": "Readiness checks",
+          "value": "5 checks \u00b7 Pass: 2 \u00b7 Review: 3"
+        },
+        {
+          "title": "Handoff targets",
+          "value": "Single-Cell Heterogeneity \u00b7 Trajectory & Communication \u00b7 Data Registry"
+        },
+        {
+          "title": "Evidence boundary",
+          "value": "Research workflow"
+        }
+      ]
+    },
+    {
+      "module_key": "chembl",
+      "title": "ChEMBL Dataset Builder",
+      "card_count": 6,
+      "status": "PASS",
+      "issues": [],
+      "cards": [
+        {
+          "title": "Primary canvas",
+          "value": "Structure, sequence and evidence decision workspace"
+        },
+        {
+          "title": "Focus entity",
+          "value": "Compound, assay or activity record"
+        },
+        {
+          "title": "Workflow coverage",
+          "value": "Prepare \u2192 Inspect \u2192 Score \u2192 Compare \u2192 Review \u2192 Handoff"
+        },
+        {
+          "title": "Readiness checks",
+          "value": "5 checks \u00b7 Pass: 2 \u00b7 Review: 3"
+        },
+        {
+          "title": "Handoff targets",
+          "value": "Drug SMILES Analyzer \u00b7 ADMET \u00b7 Data Registry"
+        },
+        {
+          "title": "Evidence boundary",
+          "value": "Research workflow"
+        }
+      ]
+    },
+    {
+      "module_key": "comparative_pathogen",
+      "title": "Comparative Pathogen Genomics",
+      "card_count": 6,
+      "status": "PASS",
+      "issues": [],
+      "cards": [
+        {
+          "title": "Primary canvas",
+          "value": "Assembly, lineage and outbreak review workspace"
+        },
+        {
+          "title": "Focus entity",
+          "value": "Isolate, genome or ortholog"
+        },
+        {
+          "title": "Workflow coverage",
+          "value": "Samples \u2192 QC \u2192 Assemble/Profile \u2192 Compare \u2192 Review \u2192 Report"
+        },
+        {
+          "title": "Readiness checks",
+          "value": "5 checks \u00b7 Pass: 2 \u00b7 Review: 3"
+        },
+        {
+          "title": "Handoff targets",
+          "value": "Pathogen Outbreak \u00b7 Metagenomics \u00b7 Phylogeny"
+        },
+        {
+          "title": "Evidence boundary",
+          "value": "Research workflow"
+        }
+      ]
+    },
+    {
+      "module_key": "data_coverage",
+      "title": "Data Coverage Center",
+      "card_count": 6,
+      "status": "PASS",
+      "issues": [],
+      "cards": [
+        {
+          "title": "Primary canvas",
+          "value": "Lineage, readiness and governance workspace"
+        },
+        {
+          "title": "Focus entity",
+          "value": "Organism, tissue, modality or coverage gap"
+        },
+        {
+          "title": "Workflow coverage",
+          "value": "Register \u2192 Profile \u2192 Curate \u2192 Verify \u2192 Release \u2192 Archive"
+        },
+        {
+          "title": "Readiness checks",
+          "value": "5 checks \u00b7 Pass: 3 \u00b7 Review: 2"
+        },
+        {
+          "title": "Handoff targets",
+          "value": "Data Curation \u00b7 Provider Integration \u00b7 Project Workspace"
+        },
+        {
+          "title": "Evidence boundary",
+          "value": "Research workflow"
+        }
+      ]
+    },
+    {
+      "module_key": "data_curation",
+      "title": "Scientific Data Curation",
+      "card_count": 6,
+      "status": "PASS",
+      "issues": [],
+      "cards": [
+        {
+          "title": "Primary canvas",
+          "value": "Lineage, readiness and governance workspace"
+        },
+        {
+          "title": "Focus entity",
+          "value": "Record, inclusion decision or curation issue"
+        },
+        {
+          "title": "Workflow coverage",
+          "value": "Register \u2192 Profile \u2192 Curate \u2192 Verify \u2192 Release \u2192 Archive"
+        },
+        {
+          "title": "Readiness checks",
+          "value": "5 checks \u00b7 Pass: 3 \u00b7 Review: 2"
+        },
+        {
+          "title": "Handoff targets",
+          "value": "Dataset Registry \u00b7 Evidence Registry \u00b7 Scientific Data Readiness"
+        },
+        {
+          "title": "Evidence boundary",
+          "value": "Research workflow"
+        }
+      ]
+    },
+    {
+      "module_key": "data_lakehouse",
+      "title": "Data Lakehouse & Sample Search",
+      "card_count": 6,
+      "status": "PASS",
+      "issues": [],
+      "cards": [
+        {
+          "title": "Primary canvas",
+          "value": "Lineage, readiness and governance workspace"
+        },
+        {
+          "title": "Focus entity",
+          "value": "Indexed asset, sample or duplicate cluster"
+        },
+        {
+          "title": "Workflow coverage",
+          "value": "Register \u2192 Profile \u2192 Curate \u2192 Verify \u2192 Release \u2192 Archive"
+        },
+        {
+          "title": "Readiness checks",
+          "value": "5 checks \u00b7 Pass: 3 \u00b7 Review: 2"
+        },
+        {
+          "title": "Handoff targets",
+          "value": "Dataset Registry \u00b7 Project Workspace \u00b7 Data Quality"
+        },
+        {
+          "title": "Evidence boundary",
+          "value": "Research workflow"
+        }
+      ]
+    },
+    {
+      "module_key": "data_model_library",
+      "title": "Data & Model Library",
+      "card_count": 6,
+      "status": "PASS",
+      "issues": [],
+      "cards": [
+        {
+          "title": "Primary canvas",
+          "value": "Lineage, readiness and governance workspace"
+        },
+        {
+          "title": "Focus entity",
+          "value": "Dataset, model or compatibility link"
+        },
+        {
+          "title": "Workflow coverage",
+          "value": "Register \u2192 Profile \u2192 Curate \u2192 Verify \u2192 Release \u2192 Archive"
+        },
+        {
+          "title": "Readiness checks",
+          "value": "5 checks \u00b7 Pass: 3 \u00b7 Review: 2"
+        },
+        {
+          "title": "Handoff targets",
+          "value": "Dataset Registry \u00b7 Model Registry \u00b7 Project Workspace"
+        },
+        {
+          "title": "Evidence boundary",
+          "value": "Research workflow"
+        }
+      ]
+    },
+    {
+      "module_key": "data_quality",
+      "title": "Data Quality & Activity",
+      "card_count": 6,
+      "status": "PASS",
+      "issues": [],
+      "cards": [
+        {
+          "title": "Primary canvas",
+          "value": "Lineage, readiness and governance workspace"
+        },
+        {
+          "title": "Focus entity",
+          "value": "Column, sample or quality issue"
+        },
+        {
+          "title": "Workflow coverage",
+          "value": "Register \u2192 Profile \u2192 Curate \u2192 Verify \u2192 Release \u2192 Archive"
+        },
+        {
+          "title": "Readiness checks",
+          "value": "5 checks \u00b7 Pass: 3 \u00b7 Review: 2"
+        },
+        {
+          "title": "Handoff targets",
+          "value": "Dataset Registry \u00b7 Data Curation \u00b7 Scientific Data Readiness"
+        },
+        {
+          "title": "Evidence boundary",
+          "value": "Research workflow"
+        }
+      ]
+    },
+    {
+      "module_key": "data_readiness",
+      "title": "Scientific Data Readiness",
+      "card_count": 6,
+      "status": "PASS",
+      "issues": [],
+      "cards": [
+        {
+          "title": "Primary canvas",
+          "value": "Lineage, readiness and governance workspace"
+        },
+        {
+          "title": "Focus entity",
+          "value": "Dataset or validation issue"
+        },
+        {
+          "title": "Workflow coverage",
+          "value": "Register \u2192 Profile \u2192 Curate \u2192 Verify \u2192 Release \u2192 Archive"
+        },
+        {
+          "title": "Readiness checks",
+          "value": "5 checks \u00b7 Pass: 3 \u00b7 Review: 2"
+        },
+        {
+          "title": "Handoff targets",
+          "value": "Dataset Registry \u00b7 Evidence Review \u00b7 Release Gate"
+        },
+        {
+          "title": "Evidence boundary",
+          "value": "Research workflow"
+        }
+      ]
+    },
+    {
+      "module_key": "dataset_registry",
+      "title": "Dataset Registry & Lineage",
+      "card_count": 6,
+      "status": "PASS",
+      "issues": [],
+      "cards": [
+        {
+          "title": "Primary canvas",
+          "value": "Lineage, readiness and governance workspace"
+        },
+        {
+          "title": "Focus entity",
+          "value": "Dataset version or physical asset"
+        },
+        {
+          "title": "Workflow coverage",
+          "value": "Register \u2192 Profile \u2192 Curate \u2192 Verify \u2192 Release \u2192 Archive"
+        },
+        {
+          "title": "Readiness checks",
+          "value": "5 checks \u00b7 Pass: 3 \u00b7 Review: 2"
+        },
+        {
+          "title": "Handoff targets",
+          "value": "Data Quality \u00b7 Scientific Data Readiness \u00b7 Project Workspace"
+        },
+        {
+          "title": "Evidence boundary",
+          "value": "Research workflow"
+        }
+      ]
+    },
+    {
+      "module_key": "enzyme_engineering",
+      "title": "Enzyme Engineering & Pathway Design",
+      "card_count": 6,
+      "status": "PASS",
+      "issues": [],
+      "cards": [
+        {
+          "title": "Primary canvas",
+          "value": "Structure, sequence and evidence decision workspace"
+        },
+        {
+          "title": "Focus entity",
+          "value": "Enzyme, active site or pathway reaction"
+        },
+        {
+          "title": "Workflow coverage",
+          "value": "Prepare \u2192 Inspect \u2192 Score \u2192 Compare \u2192 Review \u2192 Handoff"
+        },
+        {
+          "title": "Readiness checks",
+          "value": "5 checks \u00b7 Pass: 2 \u00b7 Review: 3"
+        },
+        {
+          "title": "Handoff targets",
+          "value": "Structural Bioinformatics \u00b7 Synthetic Biology \u00b7 Bioprocess"
+        },
+        {
+          "title": "Evidence boundary",
+          "value": "Research workflow"
+        }
+      ]
+    },
+    {
+      "module_key": "epigenomics",
+      "title": "Epigenomics & Chromatin",
+      "card_count": 6,
+      "status": "PASS",
+      "issues": [],
+      "cards": [
+        {
+          "title": "Primary canvas",
+          "value": "Coordinate-aware sequence and evidence workspace"
+        },
+        {
+          "title": "Focus entity",
+          "value": "Peak, region or regulatory element"
+        },
+        {
+          "title": "Workflow coverage",
+          "value": "Input \u2192 Validate \u2192 Map \u2192 Interpret \u2192 Review \u2192 Export"
+        },
+        {
+          "title": "Readiness checks",
+          "value": "5 checks \u00b7 Pass: 2 \u00b7 Review: 3"
+        },
+        {
+          "title": "Handoff targets",
+          "value": "Transcriptomics \u00b7 Pathway Analysis \u00b7 Genome Browser"
+        },
+        {
+          "title": "Evidence boundary",
+          "value": "Research workflow"
+        }
+      ]
+    },
+    {
+      "module_key": "evidence_citation",
+      "title": "Scientific Evidence & Citation Engine",
+      "card_count": 6,
+      "status": "PASS",
+      "issues": [],
+      "cards": [
+        {
+          "title": "Primary canvas",
+          "value": "Lineage, readiness and governance workspace"
+        },
+        {
+          "title": "Focus entity",
+          "value": "Claim, source or citation link"
+        },
+        {
+          "title": "Workflow coverage",
+          "value": "Register \u2192 Profile \u2192 Curate \u2192 Verify \u2192 Release \u2192 Archive"
+        },
+        {
+          "title": "Readiness checks",
+          "value": "5 checks \u00b7 Pass: 3 \u00b7 Review: 2"
+        },
+        {
+          "title": "Handoff targets",
+          "value": "Real Evidence Studio \u00b7 Knowledge Graph \u00b7 Report Studio"
+        },
+        {
+          "title": "Evidence boundary",
+          "value": "Research workflow"
+        }
+      ]
+    },
+    {
+      "module_key": "explainable_ai",
+      "title": "Explainable AI & Model Assurance",
+      "card_count": 6,
+      "status": "PASS",
+      "issues": [],
+      "cards": [
+        {
+          "title": "Primary canvas",
+          "value": "Lifecycle, evidence and approval workspace"
+        },
+        {
+          "title": "Focus entity",
+          "value": "Prediction, feature or explanation"
+        },
+        {
+          "title": "Workflow coverage",
+          "value": "Register \u2192 Train \u2192 Validate \u2192 Explain \u2192 Approve \u2192 Monitor"
+        },
+        {
+          "title": "Readiness checks",
+          "value": "5 checks \u00b7 Pass: 1 \u00b7 Pending: 1 \u00b7 Review: 3"
+        },
+        {
+          "title": "Handoff targets",
+          "value": "Model Evaluation \u00b7 Clinical Biomarkers \u00b7 Evidence Review"
+        },
+        {
+          "title": "Evidence boundary",
+          "value": "Research workflow"
+        }
+      ]
+    },
+    {
+      "module_key": "external_validation",
+      "title": "External Validation & Drift",
+      "card_count": 6,
+      "status": "PASS",
+      "issues": [],
+      "cards": [
+        {
+          "title": "Primary canvas",
+          "value": "Lifecycle, evidence and approval workspace"
+        },
+        {
+          "title": "Focus entity",
+          "value": "Model, external cohort or drift signal"
+        },
+        {
+          "title": "Workflow coverage",
+          "value": "Register \u2192 Train \u2192 Validate \u2192 Explain \u2192 Approve \u2192 Monitor"
+        },
+        {
+          "title": "Readiness checks",
+          "value": "5 checks \u00b7 Pass: 1 \u00b7 Pending: 1 \u00b7 Review: 3"
+        },
+        {
+          "title": "Handoff targets",
+          "value": "Model Evaluation \u00b7 Model Lifecycle \u00b7 Evidence Review"
+        },
+        {
+          "title": "Evidence boundary",
+          "value": "Research workflow"
+        }
+      ]
+    },
+    {
+      "module_key": "family_genetics",
+      "title": "Rare Variant & Family Genetics",
+      "card_count": 6,
+      "status": "PASS",
+      "issues": [],
+      "cards": [
+        {
+          "title": "Primary canvas",
+          "value": "Coordinate-aware sequence and evidence workspace"
+        },
+        {
+          "title": "Focus entity",
+          "value": "Pedigree member or inherited variant"
+        },
+        {
+          "title": "Workflow coverage",
+          "value": "Input \u2192 Validate \u2192 Map \u2192 Interpret \u2192 Review \u2192 Export"
+        },
+        {
+          "title": "Readiness checks",
+          "value": "5 checks \u00b7 Pass: 2 \u00b7 Review: 3"
+        },
+        {
+          "title": "Handoff targets",
+          "value": "Rare Disease \u00b7 Variant Workbench \u00b7 Report Studio"
+        },
+        {
+          "title": "Evidence boundary",
+          "value": "Research workflow"
+        }
+      ]
+    },
+    {
+      "module_key": "fastq_qc",
+      "title": "FASTQ & Genome QC",
+      "card_count": 6,
+      "status": "PASS",
+      "issues": [],
+      "cards": [
+        {
+          "title": "Primary canvas",
+          "value": "Coordinate-aware sequence and evidence workspace"
+        },
+        {
+          "title": "Focus entity",
+          "value": "Read set"
+        },
+        {
+          "title": "Workflow coverage",
+          "value": "Input \u2192 Validate \u2192 Map \u2192 Interpret \u2192 Review \u2192 Export"
+        },
+        {
+          "title": "Readiness checks",
+          "value": "5 checks \u00b7 Pass: 2 \u00b7 Review: 3"
+        },
+        {
+          "title": "Handoff targets",
+          "value": "Long-Read Assembly \u00b7 Metagenomics \u00b7 Variant Workbench"
+        },
+        {
+          "title": "Evidence boundary",
+          "value": "Research workflow"
+        }
+      ]
+    },
+    {
+      "module_key": "flow_cytometry",
+      "title": "Flow-Cytometry Analysis",
+      "card_count": 6,
+      "status": "PASS",
+      "issues": [],
+      "cards": [
+        {
+          "title": "Primary canvas",
+          "value": "Raw-evidence and object-review workspace"
+        },
+        {
+          "title": "Focus entity",
+          "value": "Event, gate or population"
+        },
+        {
+          "title": "Workflow coverage",
+          "value": "Import \u2192 Calibrate \u2192 Detect \u2192 Review \u2192 Accept \u2192 Export"
+        },
+        {
+          "title": "Readiness checks",
+          "value": "5 checks \u00b7 Pass: 1 \u00b7 Review: 4"
+        },
+        {
+          "title": "Handoff targets",
+          "value": "Wet-Lab Biotechnology \u00b7 Single-Cell Heterogeneity \u00b7 Report Studio"
+        },
+        {
+          "title": "Evidence boundary",
+          "value": "Research workflow"
+        }
+      ]
+    },
+    {
+      "module_key": "genome_editing",
+      "title": "Genome Editing Safety",
+      "card_count": 6,
+      "status": "PASS",
+      "issues": [],
+      "cards": [
+        {
+          "title": "Primary canvas",
+          "value": "Coordinate-aware sequence and evidence workspace"
+        },
+        {
+          "title": "Focus entity",
+          "value": "Guide or off-target locus"
+        },
+        {
+          "title": "Workflow coverage",
+          "value": "Input \u2192 Validate \u2192 Map \u2192 Interpret \u2192 Review \u2192 Export"
+        },
+        {
+          "title": "Readiness checks",
+          "value": "5 checks \u00b7 Pass: 2 \u00b7 Review: 3"
+        },
+        {
+          "title": "Handoff targets",
+          "value": "Primer & CRISPR \u00b7 Variant Workbench \u00b7 Report Studio"
+        },
+        {
+          "title": "Evidence boundary",
+          "value": "Research workflow"
+        }
+      ]
+    },
+    {
+      "module_key": "glycomics",
+      "title": "Glycomics & Glycoproteomics",
+      "card_count": 6,
+      "status": "PASS",
+      "issues": [],
+      "cards": [
+        {
+          "title": "Primary canvas",
+          "value": "Raw-evidence and object-review workspace"
+        },
+        {
+          "title": "Focus entity",
+          "value": "Glycan, glycopeptide or site"
+        },
+        {
+          "title": "Workflow coverage",
+          "value": "Import \u2192 Calibrate \u2192 Detect \u2192 Review \u2192 Accept \u2192 Export"
+        },
+        {
+          "title": "Readiness checks",
+          "value": "5 checks \u00b7 Pass: 1 \u00b7 Review: 4"
+        },
+        {
+          "title": "Handoff targets",
+          "value": "Protein Annotation \u00b7 Omics Integration \u00b7 Evidence Review"
+        },
+        {
+          "title": "Evidence boundary",
+          "value": "Research workflow"
+        }
+      ]
+    },
+    {
+      "module_key": "gwas",
+      "title": "Population Genetics & GWAS",
+      "card_count": 6,
+      "status": "PASS",
+      "issues": [],
+      "cards": [
+        {
+          "title": "Primary canvas",
+          "value": "Coordinate-aware sequence and evidence workspace"
+        },
+        {
+          "title": "Focus entity",
+          "value": "Variant, phenotype or cohort"
+        },
+        {
+          "title": "Workflow coverage",
+          "value": "Input \u2192 Validate \u2192 Map \u2192 Interpret \u2192 Review \u2192 Export"
+        },
+        {
+          "title": "Readiness checks",
+          "value": "5 checks \u00b7 Pass: 2 \u00b7 Review: 3"
+        },
+        {
+          "title": "Handoff targets",
+          "value": "Variant Workbench \u00b7 Clinical Biomarkers \u00b7 Scientific Data Readiness"
+        },
+        {
+          "title": "Evidence boundary",
+          "value": "Research workflow"
+        }
+      ]
+    },
+    {
+      "module_key": "high_content",
+      "title": "Phenotypic & High-Content Screening",
+      "card_count": 6,
+      "status": "PASS",
+      "issues": [],
+      "cards": [
+        {
+          "title": "Primary canvas",
+          "value": "Raw-evidence and object-review workspace"
+        },
+        {
+          "title": "Focus entity",
+          "value": "Well, image object or phenotype"
+        },
+        {
+          "title": "Workflow coverage",
+          "value": "Import \u2192 Calibrate \u2192 Detect \u2192 Review \u2192 Accept \u2192 Export"
+        },
+        {
+          "title": "Readiness checks",
+          "value": "5 checks \u00b7 Pass: 1 \u00b7 Review: 4"
+        },
+        {
+          "title": "Handoff targets",
+          "value": "Bioimage AI \u00b7 ADMET \u00b7 Biomarker Discovery"
+        },
+        {
+          "title": "Evidence boundary",
+          "value": "Research workflow"
+        }
+      ]
+    },
+    {
+      "module_key": "host_pathogen",
+      "title": "Host\u2013Pathogen Interaction",
+      "card_count": 6,
+      "status": "PASS",
+      "issues": [],
+      "cards": [
+        {
+          "title": "Primary canvas",
+          "value": "Structure, sequence and evidence decision workspace"
+        },
+        {
+          "title": "Focus entity",
+          "value": "Host factor, pathogen factor or interaction"
+        },
+        {
+          "title": "Workflow coverage",
+          "value": "Prepare \u2192 Inspect \u2192 Score \u2192 Compare \u2192 Review \u2192 Handoff"
+        },
+        {
+          "title": "Readiness checks",
+          "value": "5 checks \u00b7 Pass: 2 \u00b7 Review: 3"
+        },
+        {
+          "title": "Handoff targets",
+          "value": "Pathogen Outbreak \u00b7 Pathway Analysis \u00b7 Drug SMILES Analyzer"
+        },
+        {
+          "title": "Evidence boundary",
+          "value": "Research workflow"
+        }
+      ]
+    },
+    {
+      "module_key": "immunoinformatics",
+      "title": "Immunoinformatics & Vaccine Design",
+      "card_count": 6,
+      "status": "PASS",
+      "issues": [],
+      "cards": [
+        {
+          "title": "Primary canvas",
+          "value": "Structure, sequence and evidence decision workspace"
+        },
+        {
+          "title": "Focus entity",
+          "value": "Epitope, HLA allele or construct"
+        },
+        {
+          "title": "Workflow coverage",
+          "value": "Prepare \u2192 Inspect \u2192 Score \u2192 Compare \u2192 Review \u2192 Handoff"
+        },
+        {
+          "title": "Readiness checks",
+          "value": "5 checks \u00b7 Pass: 2 \u00b7 Review: 3"
+        },
+        {
+          "title": "Handoff targets",
+          "value": "Protein Annotation \u00b7 Clinical Biomarkers \u00b7 Evidence Review"
+        },
+        {
+          "title": "Evidence boundary",
+          "value": "Research workflow"
+        }
+      ]
+    },
+    {
+      "module_key": "leakage_lab",
+      "title": "Benchmark & Leakage Lab",
+      "card_count": 6,
+      "status": "PASS",
+      "issues": [],
+      "cards": [
+        {
+          "title": "Primary canvas",
+          "value": "Lifecycle, evidence and approval workspace"
+        },
+        {
+          "title": "Focus entity",
+          "value": "Split, overlapping entity or benchmark result"
+        },
+        {
+          "title": "Workflow coverage",
+          "value": "Register \u2192 Train \u2192 Validate \u2192 Explain \u2192 Approve \u2192 Monitor"
+        },
+        {
+          "title": "Readiness checks",
+          "value": "5 checks \u00b7 Pass: 1 \u00b7 Pending: 1 \u00b7 Review: 3"
+        },
+        {
+          "title": "Handoff targets",
+          "value": "Model Evaluation \u00b7 Model Training \u00b7 Release Gate"
+        },
+        {
+          "title": "Evidence boundary",
+          "value": "Research workflow"
+        }
+      ]
+    },
+    {
+      "module_key": "long_read",
+      "title": "Long-Read Assembly & T2T",
+      "card_count": 6,
+      "status": "PASS",
+      "issues": [],
+      "cards": [
+        {
+          "title": "Primary canvas",
+          "value": "Assembly, lineage and outbreak review workspace"
+        },
+        {
+          "title": "Focus entity",
+          "value": "Read set, contig or assembly region"
+        },
+        {
+          "title": "Workflow coverage",
+          "value": "Samples \u2192 QC \u2192 Assemble/Profile \u2192 Compare \u2192 Review \u2192 Report"
+        },
+        {
+          "title": "Readiness checks",
+          "value": "5 checks \u00b7 Pass: 2 \u00b7 Review: 3"
+        },
+        {
+          "title": "Handoff targets",
+          "value": "Pangenome \u00b7 Variant Workbench \u00b7 Assembly Report"
+        },
+        {
+          "title": "Evidence boundary",
+          "value": "Research workflow"
+        }
+      ]
+    },
+    {
+      "module_key": "metabolomics",
+      "title": "Metabolomics & Lipidomics",
+      "card_count": 6,
+      "status": "PASS",
+      "issues": [],
+      "cards": [
+        {
+          "title": "Primary canvas",
+          "value": "Raw-evidence and object-review workspace"
+        },
+        {
+          "title": "Focus entity",
+          "value": "Peak, metabolite or lipid species"
+        },
+        {
+          "title": "Workflow coverage",
+          "value": "Import \u2192 Calibrate \u2192 Detect \u2192 Review \u2192 Accept \u2192 Export"
+        },
+        {
+          "title": "Readiness checks",
+          "value": "5 checks \u00b7 Pass: 1 \u00b7 Review: 4"
+        },
+        {
+          "title": "Handoff targets",
+          "value": "Omics Integration \u00b7 Pathway Analysis \u00b7 Biomarker Discovery"
+        },
+        {
+          "title": "Evidence boundary",
+          "value": "Research workflow"
+        }
+      ]
+    },
+    {
+      "module_key": "metagenomics",
+      "title": "Metagenomics Professional Pipeline",
+      "card_count": 6,
+      "status": "PASS",
+      "issues": [],
+      "cards": [
+        {
+          "title": "Primary canvas",
+          "value": "Assembly, lineage and outbreak review workspace"
+        },
+        {
+          "title": "Focus entity",
+          "value": "Sample, taxon or functional feature"
+        },
+        {
+          "title": "Workflow coverage",
+          "value": "Samples \u2192 QC \u2192 Assemble/Profile \u2192 Compare \u2192 Review \u2192 Report"
+        },
+        {
+          "title": "Readiness checks",
+          "value": "5 checks \u00b7 Pass: 2 \u00b7 Review: 3"
+        },
+        {
+          "title": "Handoff targets",
+          "value": "Microbiology Rapid Screen \u00b7 One Health \u00b7 Report Studio"
+        },
+        {
+          "title": "Evidence boundary",
+          "value": "Research workflow"
+        }
+      ]
+    },
+    {
+      "module_key": "microbiology",
+      "title": "Microbiology & Metagenomics Rapid Screen",
+      "card_count": 6,
+      "status": "PASS",
+      "issues": [],
+      "cards": [
+        {
+          "title": "Primary canvas",
+          "value": "Assembly, lineage and outbreak review workspace"
+        },
+        {
+          "title": "Focus entity",
+          "value": "Sample, organism or AMR hit"
+        },
+        {
+          "title": "Workflow coverage",
+          "value": "Samples \u2192 QC \u2192 Assemble/Profile \u2192 Compare \u2192 Review \u2192 Report"
+        },
+        {
+          "title": "Readiness checks",
+          "value": "5 checks \u00b7 Pass: 2 \u00b7 Review: 3"
+        },
+        {
+          "title": "Handoff targets",
+          "value": "Metagenomics Pipeline \u00b7 One Health \u00b7 Evidence Review"
+        },
+        {
+          "title": "Evidence boundary",
+          "value": "Research workflow"
+        }
+      ]
+    },
+    {
+      "module_key": "ml_autolab",
+      "title": "ML AutoLab",
+      "card_count": 6,
+      "status": "PASS",
+      "issues": [],
+      "cards": [
+        {
+          "title": "Primary canvas",
+          "value": "Lifecycle, evidence and approval workspace"
+        },
+        {
+          "title": "Focus entity",
+          "value": "Automated experiment or candidate model"
+        },
+        {
+          "title": "Workflow coverage",
+          "value": "Register \u2192 Train \u2192 Validate \u2192 Explain \u2192 Approve \u2192 Monitor"
+        },
+        {
+          "title": "Readiness checks",
+          "value": "5 checks \u00b7 Pass: 1 \u00b7 Pending: 1 \u00b7 Review: 3"
+        },
+        {
+          "title": "Handoff targets",
+          "value": "Model Evaluation \u00b7 Experiment Registry \u00b7 Model Lifecycle"
+        },
+        {
+          "title": "Evidence boundary",
+          "value": "Research workflow"
+        }
+      ]
+    },
+    {
+      "module_key": "model_evaluation",
+      "title": "Model Evaluation",
+      "card_count": 6,
+      "status": "PASS",
+      "issues": [],
+      "cards": [
+        {
+          "title": "Primary canvas",
+          "value": "Lifecycle, evidence and approval workspace"
+        },
+        {
+          "title": "Focus entity",
+          "value": "Model, cohort or error case"
+        },
+        {
+          "title": "Workflow coverage",
+          "value": "Register \u2192 Train \u2192 Validate \u2192 Explain \u2192 Approve \u2192 Monitor"
+        },
+        {
+          "title": "Readiness checks",
+          "value": "5 checks \u00b7 Pass: 1 \u00b7 Pending: 1 \u00b7 Review: 3"
+        },
+        {
+          "title": "Handoff targets",
+          "value": "External Validation \u00b7 Explainable AI \u00b7 Model Lifecycle"
+        },
+        {
+          "title": "Evidence boundary",
+          "value": "Research workflow"
+        }
+      ]
+    },
+    {
+      "module_key": "model_lifecycle",
+      "title": "Model Lifecycle",
+      "card_count": 6,
+      "status": "PASS",
+      "issues": [],
+      "cards": [
+        {
+          "title": "Primary canvas",
+          "value": "Lifecycle, evidence and approval workspace"
+        },
+        {
+          "title": "Focus entity",
+          "value": "Model version or approval event"
+        },
+        {
+          "title": "Workflow coverage",
+          "value": "Register \u2192 Train \u2192 Validate \u2192 Explain \u2192 Approve \u2192 Monitor"
+        },
+        {
+          "title": "Readiness checks",
+          "value": "5 checks \u00b7 Pass: 1 \u00b7 Pending: 1 \u00b7 Review: 3"
+        },
+        {
+          "title": "Handoff targets",
+          "value": "Model Registry \u00b7 External Validation \u00b7 Release Gate"
+        },
+        {
+          "title": "Evidence boundary",
+          "value": "Research workflow"
+        }
+      ]
+    },
+    {
+      "module_key": "model_registry",
+      "title": "Model Registry & ML Lifecycle",
+      "card_count": 6,
+      "status": "PASS",
+      "issues": [],
+      "cards": [
+        {
+          "title": "Primary canvas",
+          "value": "Lifecycle, evidence and approval workspace"
+        },
+        {
+          "title": "Focus entity",
+          "value": "Registered model or deployment"
+        },
+        {
+          "title": "Workflow coverage",
+          "value": "Register \u2192 Train \u2192 Validate \u2192 Explain \u2192 Approve \u2192 Monitor"
+        },
+        {
+          "title": "Readiness checks",
+          "value": "5 checks \u00b7 Pass: 1 \u00b7 Pending: 1 \u00b7 Review: 3"
+        },
+        {
+          "title": "Handoff targets",
+          "value": "Model Evaluation \u00b7 Model Lifecycle \u00b7 Release Gate"
+        },
+        {
+          "title": "Evidence boundary",
+          "value": "Research workflow"
+        }
+      ]
+    },
+    {
+      "module_key": "model_training",
+      "title": "Model Training",
+      "card_count": 6,
+      "status": "PASS",
+      "issues": [],
+      "cards": [
+        {
+          "title": "Primary canvas",
+          "value": "Lifecycle, evidence and approval workspace"
+        },
+        {
+          "title": "Focus entity",
+          "value": "Training run or model candidate"
+        },
+        {
+          "title": "Workflow coverage",
+          "value": "Register \u2192 Train \u2192 Validate \u2192 Explain \u2192 Approve \u2192 Monitor"
+        },
+        {
+          "title": "Readiness checks",
+          "value": "5 checks \u00b7 Pass: 1 \u00b7 Pending: 1 \u00b7 Review: 3"
+        },
+        {
+          "title": "Handoff targets",
+          "value": "Model Evaluation \u00b7 Experiment Registry \u00b7 Model Lifecycle"
+        },
+        {
+          "title": "Evidence boundary",
+          "value": "Research workflow"
+        }
+      ]
+    },
+    {
+      "module_key": "molecular_docking",
+      "title": "Molecular Docking & Dynamics",
+      "card_count": 6,
+      "status": "PASS",
+      "issues": [],
+      "cards": [
+        {
+          "title": "Primary canvas",
+          "value": "Structure, sequence and evidence decision workspace"
+        },
+        {
+          "title": "Focus entity",
+          "value": "Pose, ligand or residue contact"
+        },
+        {
+          "title": "Workflow coverage",
+          "value": "Prepare \u2192 Inspect \u2192 Score \u2192 Compare \u2192 Review \u2192 Handoff"
+        },
+        {
+          "title": "Readiness checks",
+          "value": "5 checks \u00b7 Pass: 2 \u00b7 Review: 3"
+        },
+        {
+          "title": "Handoff targets",
+          "value": "Structural Bioinformatics \u00b7 ADMET \u00b7 Report Studio"
+        },
+        {
+          "title": "Evidence boundary",
+          "value": "Research workflow"
+        }
+      ]
+    },
+    {
+      "module_key": "multiomics",
+      "title": "Omics Integration Hub",
+      "card_count": 6,
+      "status": "PASS",
+      "issues": [],
+      "cards": [
+        {
+          "title": "Primary canvas",
+          "value": "Design, selection and biological-state workspace"
+        },
+        {
+          "title": "Focus entity",
+          "value": "Sample or cross-omics feature"
+        },
+        {
+          "title": "Workflow coverage",
+          "value": "Design \u2192 QC \u2192 Normalize \u2192 Model \u2192 Explore \u2192 Export"
+        },
+        {
+          "title": "Readiness checks",
+          "value": "5 checks \u00b7 Pass: 2 \u00b7 Review: 3"
+        },
+        {
+          "title": "Handoff targets",
+          "value": "Biomarker Discovery \u00b7 Pathway Analysis \u00b7 Data Registry"
+        },
+        {
+          "title": "Evidence boundary",
+          "value": "Research workflow"
+        }
+      ]
+    },
+    {
+      "module_key": "one_health",
+      "title": "One Health & Environmental Genomics",
+      "card_count": 6,
+      "status": "PASS",
+      "issues": [],
+      "cards": [
+        {
+          "title": "Primary canvas",
+          "value": "Assembly, lineage and outbreak review workspace"
+        },
+        {
+          "title": "Focus entity",
+          "value": "Human, animal or environmental sample"
+        },
+        {
+          "title": "Workflow coverage",
+          "value": "Samples \u2192 QC \u2192 Assemble/Profile \u2192 Compare \u2192 Review \u2192 Report"
+        },
+        {
+          "title": "Readiness checks",
+          "value": "5 checks \u00b7 Pass: 2 \u00b7 Review: 3"
+        },
+        {
+          "title": "Handoff targets",
+          "value": "Pathogen Outbreak \u00b7 Metagenomics \u00b7 Evidence Review"
+        },
+        {
+          "title": "Evidence boundary",
+          "value": "Research workflow"
+        }
+      ]
+    },
+    {
+      "module_key": "organoid",
+      "title": "Organoid & 3D Cell Analytics",
+      "card_count": 6,
+      "status": "PASS",
+      "issues": [],
+      "cards": [
+        {
+          "title": "Primary canvas",
+          "value": "Raw-evidence and object-review workspace"
+        },
+        {
+          "title": "Focus entity",
+          "value": "Organoid, well or tracked object"
+        },
+        {
+          "title": "Workflow coverage",
+          "value": "Import \u2192 Calibrate \u2192 Detect \u2192 Review \u2192 Accept \u2192 Export"
+        },
+        {
+          "title": "Readiness checks",
+          "value": "5 checks \u00b7 Pass: 1 \u00b7 Review: 4"
+        },
+        {
+          "title": "Handoff targets",
+          "value": "Bioimage AI \u00b7 High-Content Screening \u00b7 Biomarker Discovery"
+        },
+        {
+          "title": "Evidence boundary",
+          "value": "Research workflow"
+        }
+      ]
+    },
+    {
+      "module_key": "pangenome",
+      "title": "Pangenome & Variation Graph",
+      "card_count": 6,
+      "status": "PASS",
+      "issues": [],
+      "cards": [
+        {
+          "title": "Primary canvas",
+          "value": "Assembly, lineage and outbreak review workspace"
+        },
+        {
+          "title": "Focus entity",
+          "value": "Graph node, path or bubble"
+        },
+        {
+          "title": "Workflow coverage",
+          "value": "Samples \u2192 QC \u2192 Assemble/Profile \u2192 Compare \u2192 Review \u2192 Report"
+        },
+        {
+          "title": "Readiness checks",
+          "value": "5 checks \u00b7 Pass: 2 \u00b7 Review: 3"
+        },
+        {
+          "title": "Handoff targets",
+          "value": "Long-Read Assembly \u00b7 Comparative Genomics \u00b7 Genome Browser"
+        },
+        {
+          "title": "Evidence boundary",
+          "value": "Research workflow"
+        }
+      ]
+    },
+    {
+      "module_key": "pathogen_outbreak",
+      "title": "Pathogen Outbreak Genomics",
+      "card_count": 6,
+      "status": "PASS",
+      "issues": [],
+      "cards": [
+        {
+          "title": "Primary canvas",
+          "value": "Assembly, lineage and outbreak review workspace"
+        },
+        {
+          "title": "Focus entity",
+          "value": "Case, isolate or transmission link"
+        },
+        {
+          "title": "Workflow coverage",
+          "value": "Samples \u2192 QC \u2192 Assemble/Profile \u2192 Compare \u2192 Review \u2192 Report"
+        },
+        {
+          "title": "Readiness checks",
+          "value": "5 checks \u00b7 Pass: 2 \u00b7 Review: 3"
+        },
+        {
+          "title": "Handoff targets",
+          "value": "One Health \u00b7 Phylogeny \u00b7 Evidence Review"
+        },
+        {
+          "title": "Evidence boundary",
+          "value": "Research workflow"
+        }
+      ]
+    },
+    {
+      "module_key": "pathway",
+      "title": "Pathway & Network Analysis",
+      "card_count": 6,
+      "status": "PASS",
+      "issues": [],
+      "cards": [
+        {
+          "title": "Primary canvas",
+          "value": "Structure, sequence and evidence decision workspace"
+        },
+        {
+          "title": "Focus entity",
+          "value": "Gene, protein or pathway"
+        },
+        {
+          "title": "Workflow coverage",
+          "value": "Prepare \u2192 Inspect \u2192 Score \u2192 Compare \u2192 Review \u2192 Handoff"
+        },
+        {
+          "title": "Readiness checks",
+          "value": "5 checks \u00b7 Pass: 2 \u00b7 Review: 3"
+        },
+        {
+          "title": "Handoff targets",
+          "value": "Transcriptomics \u00b7 Omics Integration \u00b7 Evidence Review"
+        },
+        {
+          "title": "Evidence boundary",
+          "value": "Research workflow"
+        }
+      ]
+    },
+    {
+      "module_key": "perturbseq",
+      "title": "CRISPR Screen & Perturb-seq",
+      "card_count": 6,
+      "status": "PASS",
+      "issues": [],
+      "cards": [
+        {
+          "title": "Primary canvas",
+          "value": "Design, selection and biological-state workspace"
+        },
+        {
+          "title": "Focus entity",
+          "value": "Guide, perturbation or cell state"
+        },
+        {
+          "title": "Workflow coverage",
+          "value": "Design \u2192 QC \u2192 Normalize \u2192 Model \u2192 Explore \u2192 Export"
+        },
+        {
+          "title": "Readiness checks",
+          "value": "5 checks \u00b7 Pass: 2 \u00b7 Review: 3"
+        },
+        {
+          "title": "Handoff targets",
+          "value": "Single-Cell Heterogeneity \u00b7 Genome Editing Safety \u00b7 Pathway Analysis"
+        },
+        {
+          "title": "Evidence boundary",
+          "value": "Research workflow"
+        }
+      ]
+    },
+    {
+      "module_key": "pharmacogenomics",
+      "title": "Pharmacogenomics & Precision Medicine",
+      "card_count": 6,
+      "status": "PASS",
+      "issues": [],
+      "cards": [
+        {
+          "title": "Primary canvas",
+          "value": "Coordinate-aware sequence and evidence workspace"
+        },
+        {
+          "title": "Focus entity",
+          "value": "Gene, diplotype or medication"
+        },
+        {
+          "title": "Workflow coverage",
+          "value": "Input \u2192 Validate \u2192 Map \u2192 Interpret \u2192 Review \u2192 Export"
+        },
+        {
+          "title": "Readiness checks",
+          "value": "5 checks \u00b7 Pass: 2 \u00b7 Review: 3"
+        },
+        {
+          "title": "Handoff targets",
+          "value": "Variant Workbench \u00b7 Evidence Review \u00b7 Clinical Biomarkers"
+        },
+        {
+          "title": "Evidence boundary",
+          "value": "Research support \u2014 clinical review required"
+        }
+      ]
+    },
+    {
+      "module_key": "ppi_ml",
+      "title": "Protein Interaction ML",
+      "card_count": 6,
+      "status": "PASS",
+      "issues": [],
+      "cards": [
+        {
+          "title": "Primary canvas",
+          "value": "Lifecycle, evidence and approval workspace"
+        },
+        {
+          "title": "Focus entity",
+          "value": "Protein pair or prediction"
+        },
+        {
+          "title": "Workflow coverage",
+          "value": "Register \u2192 Train \u2192 Validate \u2192 Explain \u2192 Approve \u2192 Monitor"
+        },
+        {
+          "title": "Readiness checks",
+          "value": "5 checks \u00b7 Pass: 1 \u00b7 Pending: 1 \u00b7 Review: 3"
+        },
+        {
+          "title": "Handoff targets",
+          "value": "Protein Annotation \u00b7 Pathway Analysis \u00b7 Model Evaluation"
+        },
+        {
+          "title": "Evidence boundary",
+          "value": "Research workflow"
+        }
+      ]
+    },
+    {
+      "module_key": "primer_codon",
+      "title": "Primer, CRISPR & Codon Studio",
+      "card_count": 6,
+      "status": "PASS",
+      "issues": [],
+      "cards": [
+        {
+          "title": "Primary canvas",
+          "value": "Protocol, allocation and quality-decision workspace"
+        },
+        {
+          "title": "Focus entity",
+          "value": "Primer, guide or coding sequence"
+        },
+        {
+          "title": "Workflow coverage",
+          "value": "Plan \u2192 Assign \u2192 Run \u2192 QC \u2192 Interpret \u2192 Archive"
+        },
+        {
+          "title": "Readiness checks",
+          "value": "5 checks \u00b7 Pass: 2 \u00b7 Review: 3"
+        },
+        {
+          "title": "Handoff targets",
+          "value": "Genome Editing Safety \u00b7 Sequence Analyzer \u00b7 Wet-Lab Biotechnology"
+        },
+        {
+          "title": "Evidence boundary",
+          "value": "Research workflow"
+        }
+      ]
+    },
+    {
+      "module_key": "protein_annotation",
+      "title": "Protein Annotation & Proteomics",
+      "card_count": 6,
+      "status": "PASS",
+      "issues": [],
+      "cards": [
+        {
+          "title": "Primary canvas",
+          "value": "Structure, sequence and evidence decision workspace"
+        },
+        {
+          "title": "Focus entity",
+          "value": "Protein, domain or peptide"
+        },
+        {
+          "title": "Workflow coverage",
+          "value": "Prepare \u2192 Inspect \u2192 Score \u2192 Compare \u2192 Review \u2192 Handoff"
+        },
+        {
+          "title": "Readiness checks",
+          "value": "5 checks \u00b7 Pass: 2 \u00b7 Review: 3"
+        },
+        {
+          "title": "Handoff targets",
+          "value": "Structural Bioinformatics \u00b7 Proteogenomics \u00b7 Pathway Analysis"
+        },
+        {
+          "title": "Evidence boundary",
+          "value": "Research workflow"
+        }
+      ]
+    },
+    {
+      "module_key": "protein_design",
+      "title": "AI Protein Design",
+      "card_count": 6,
+      "status": "PASS",
+      "issues": [],
+      "cards": [
+        {
+          "title": "Primary canvas",
+          "value": "Structure, sequence and evidence decision workspace"
+        },
+        {
+          "title": "Focus entity",
+          "value": "Design candidate, mutation or residue"
+        },
+        {
+          "title": "Workflow coverage",
+          "value": "Prepare \u2192 Inspect \u2192 Score \u2192 Compare \u2192 Review \u2192 Handoff"
+        },
+        {
+          "title": "Readiness checks",
+          "value": "5 checks \u00b7 Pass: 2 \u00b7 Review: 3"
+        },
+        {
+          "title": "Handoff targets",
+          "value": "Structural Bioinformatics \u00b7 Antibody Engineering \u00b7 Model Evaluation"
+        },
+        {
+          "title": "Evidence boundary",
+          "value": "Research workflow"
+        }
+      ]
+    },
+    {
+      "module_key": "proteogenomics",
+      "title": "Proteogenomics & Neoantigen Discovery",
+      "card_count": 6,
+      "status": "PASS",
+      "issues": [],
+      "cards": [
+        {
+          "title": "Primary canvas",
+          "value": "Raw-evidence and object-review workspace"
+        },
+        {
+          "title": "Focus entity",
+          "value": "Variant peptide, spectrum match or neoantigen"
+        },
+        {
+          "title": "Workflow coverage",
+          "value": "Import \u2192 Calibrate \u2192 Detect \u2192 Review \u2192 Accept \u2192 Export"
+        },
+        {
+          "title": "Readiness checks",
+          "value": "5 checks \u00b7 Pass: 1 \u00b7 Review: 4"
+        },
+        {
+          "title": "Handoff targets",
+          "value": "Protein Annotation \u00b7 Cancer Genomics \u00b7 Immunoinformatics"
+        },
+        {
+          "title": "Evidence boundary",
+          "value": "Research workflow"
+        }
+      ]
+    },
+    {
+      "module_key": "provider_integration",
+      "title": "Provider Integration Center",
+      "card_count": 6,
+      "status": "PASS",
+      "issues": [],
+      "cards": [
+        {
+          "title": "Primary canvas",
+          "value": "Lineage, readiness and governance workspace"
+        },
+        {
+          "title": "Focus entity",
+          "value": "Provider, sync job or rejected record"
+        },
+        {
+          "title": "Workflow coverage",
+          "value": "Register \u2192 Profile \u2192 Curate \u2192 Verify \u2192 Release \u2192 Archive"
+        },
+        {
+          "title": "Readiness checks",
+          "value": "5 checks \u00b7 Pass: 3 \u00b7 Review: 2"
+        },
+        {
+          "title": "Handoff targets",
+          "value": "Reference Lifecycle \u00b7 Evidence Registry \u00b7 Data Curation"
+        },
+        {
+          "title": "Evidence boundary",
+          "value": "Research workflow"
+        }
+      ]
+    },
+    {
+      "module_key": "rare_disease",
+      "title": "Rare Disease Interpretation",
+      "card_count": 6,
+      "status": "PASS",
+      "issues": [],
+      "cards": [
+        {
+          "title": "Primary canvas",
+          "value": "Coordinate-aware sequence and evidence workspace"
+        },
+        {
+          "title": "Focus entity",
+          "value": "Patient, gene or candidate variant"
+        },
+        {
+          "title": "Workflow coverage",
+          "value": "Input \u2192 Validate \u2192 Map \u2192 Interpret \u2192 Review \u2192 Export"
+        },
+        {
+          "title": "Readiness checks",
+          "value": "5 checks \u00b7 Pass: 2 \u00b7 Review: 3"
+        },
+        {
+          "title": "Handoff targets",
+          "value": "Family Genetics \u00b7 Variant Workbench \u00b7 Evidence Review"
+        },
+        {
+          "title": "Evidence boundary",
+          "value": "Research workflow"
+        }
+      ]
+    },
+    {
+      "module_key": "real_evidence",
+      "title": "Real Evidence Studio",
+      "card_count": 6,
+      "status": "PASS",
+      "issues": [],
+      "cards": [
+        {
+          "title": "Primary canvas",
+          "value": "Lineage, readiness and governance workspace"
+        },
+        {
+          "title": "Focus entity",
+          "value": "Evidence record, source or review"
+        },
+        {
+          "title": "Workflow coverage",
+          "value": "Register \u2192 Profile \u2192 Curate \u2192 Verify \u2192 Release \u2192 Archive"
+        },
+        {
+          "title": "Readiness checks",
+          "value": "5 checks \u00b7 Pass: 3 \u00b7 Review: 2"
+        },
+        {
+          "title": "Handoff targets",
+          "value": "Evidence Review \u00b7 Dataset Registry \u00b7 Report Studio"
+        },
+        {
+          "title": "Evidence boundary",
+          "value": "Research workflow"
+        }
+      ]
+    },
+    {
+      "module_key": "reference_lifecycle",
+      "title": "Reference Database Lifecycle",
+      "card_count": 6,
+      "status": "PASS",
+      "issues": [],
+      "cards": [
+        {
+          "title": "Primary canvas",
+          "value": "Lineage, readiness and governance workspace"
+        },
+        {
+          "title": "Focus entity",
+          "value": "Reference version, download or activation"
+        },
+        {
+          "title": "Workflow coverage",
+          "value": "Register \u2192 Profile \u2192 Curate \u2192 Verify \u2192 Release \u2192 Archive"
+        },
+        {
+          "title": "Readiness checks",
+          "value": "5 checks \u00b7 Pass: 3 \u00b7 Review: 2"
+        },
+        {
+          "title": "Handoff targets",
+          "value": "Reference Manager \u00b7 Provider Integration \u00b7 System Diagnostics"
+        },
+        {
+          "title": "Evidence boundary",
+          "value": "Research workflow"
+        }
+      ]
+    },
+    {
+      "module_key": "reference_manager",
+      "title": "Reference Database Manager",
+      "card_count": 6,
+      "status": "PASS",
+      "issues": [],
+      "cards": [
+        {
+          "title": "Primary canvas",
+          "value": "Lineage, readiness and governance workspace"
+        },
+        {
+          "title": "Focus entity",
+          "value": "Reference asset or version"
+        },
+        {
+          "title": "Workflow coverage",
+          "value": "Register \u2192 Profile \u2192 Curate \u2192 Verify \u2192 Release \u2192 Archive"
+        },
+        {
+          "title": "Readiness checks",
+          "value": "5 checks \u00b7 Pass: 3 \u00b7 Review: 2"
+        },
+        {
+          "title": "Handoff targets",
+          "value": "Reference Lifecycle \u00b7 Provider Integration \u00b7 System Diagnostics"
+        },
+        {
+          "title": "Evidence boundary",
+          "value": "Research workflow"
+        }
+      ]
+    },
+    {
+      "module_key": "rna_splicing",
+      "title": "RNA Isoform & Alternative Splicing",
+      "card_count": 6,
+      "status": "PASS",
+      "issues": [],
+      "cards": [
+        {
+          "title": "Primary canvas",
+          "value": "Coordinate-aware sequence and evidence workspace"
+        },
+        {
+          "title": "Focus entity",
+          "value": "Transcript, exon or junction"
+        },
+        {
+          "title": "Workflow coverage",
+          "value": "Input \u2192 Validate \u2192 Map \u2192 Interpret \u2192 Review \u2192 Export"
+        },
+        {
+          "title": "Readiness checks",
+          "value": "5 checks \u00b7 Pass: 2 \u00b7 Review: 3"
+        },
+        {
+          "title": "Handoff targets",
+          "value": "Transcriptomics \u00b7 Protein Annotation \u00b7 Genome Browser"
+        },
+        {
+          "title": "Evidence boundary",
+          "value": "Research workflow"
+        }
+      ]
+    },
+    {
+      "module_key": "sequence_analyzer",
+      "title": "Sequence Analyzer",
+      "card_count": 6,
+      "status": "PASS",
+      "issues": [],
+      "cards": [
+        {
+          "title": "Primary canvas",
+          "value": "Coordinate-aware sequence and evidence workspace"
+        },
+        {
+          "title": "Focus entity",
+          "value": "Sequence or ORF"
+        },
+        {
+          "title": "Workflow coverage",
+          "value": "Input \u2192 Validate \u2192 Map \u2192 Interpret \u2192 Review \u2192 Export"
+        },
+        {
+          "title": "Readiness checks",
+          "value": "5 checks \u00b7 Pass: 2 \u00b7 Review: 3"
+        },
+        {
+          "title": "Handoff targets",
+          "value": "Sequence Comparison \u00b7 Protein Annotation \u00b7 Primer & CRISPR \u00b7 Report Studio"
+        },
+        {
+          "title": "Evidence boundary",
+          "value": "Research workflow"
+        }
+      ]
+    },
+    {
+      "module_key": "sequence_comparison",
+      "title": "Sequence Comparison",
+      "card_count": 6,
+      "status": "PASS",
+      "issues": [],
+      "cards": [
+        {
+          "title": "Primary canvas",
+          "value": "Coordinate-aware sequence and evidence workspace"
+        },
+        {
+          "title": "Focus entity",
+          "value": "Sequence pair or alignment block"
+        },
+        {
+          "title": "Workflow coverage",
+          "value": "Input \u2192 Validate \u2192 Map \u2192 Interpret \u2192 Review \u2192 Export"
+        },
+        {
+          "title": "Readiness checks",
+          "value": "5 checks \u00b7 Pass: 2 \u00b7 Review: 3"
+        },
+        {
+          "title": "Handoff targets",
+          "value": "Alignment & Phylogeny \u00b7 Variant Workbench \u00b7 Protein Annotation"
+        },
+        {
+          "title": "Evidence boundary",
+          "value": "Research workflow"
+        }
+      ]
+    },
+    {
+      "module_key": "single_cell",
+      "title": "Single-Cell Heterogeneity",
+      "card_count": 6,
+      "status": "PASS",
+      "issues": [],
+      "cards": [
+        {
+          "title": "Primary canvas",
+          "value": "Design, selection and biological-state workspace"
+        },
+        {
+          "title": "Focus entity",
+          "value": "Cell, cluster or marker"
+        },
+        {
+          "title": "Workflow coverage",
+          "value": "Design \u2192 QC \u2192 Normalize \u2192 Model \u2192 Explore \u2192 Export"
+        },
+        {
+          "title": "Readiness checks",
+          "value": "5 checks \u00b7 Pass: 2 \u00b7 Review: 3"
+        },
+        {
+          "title": "Handoff targets",
+          "value": "Cell Atlas \u00b7 Trajectory & Communication \u00b7 Spatial Omics"
+        },
+        {
+          "title": "Evidence boundary",
+          "value": "Research workflow"
+        }
+      ]
+    },
+    {
+      "module_key": "single_cell_trajectory",
+      "title": "Single-Cell Trajectory & Communication",
+      "card_count": 6,
+      "status": "PASS",
+      "issues": [],
+      "cards": [
+        {
+          "title": "Primary canvas",
+          "value": "Design, selection and biological-state workspace"
+        },
+        {
+          "title": "Focus entity",
+          "value": "Cell state, branch or ligand-receptor pair"
+        },
+        {
+          "title": "Workflow coverage",
+          "value": "Design \u2192 QC \u2192 Normalize \u2192 Model \u2192 Explore \u2192 Export"
+        },
+        {
+          "title": "Readiness checks",
+          "value": "5 checks \u00b7 Pass: 2 \u00b7 Review: 3"
+        },
+        {
+          "title": "Handoff targets",
+          "value": "Single-Cell Heterogeneity \u00b7 Cell Atlas \u00b7 Pathway Analysis"
+        },
+        {
+          "title": "Evidence boundary",
+          "value": "Research workflow"
+        }
+      ]
+    },
+    {
+      "module_key": "smiles",
+      "title": "Drug SMILES Analyzer",
+      "card_count": 6,
+      "status": "PASS",
+      "issues": [],
+      "cards": [
+        {
+          "title": "Primary canvas",
+          "value": "Structure, sequence and evidence decision workspace"
+        },
+        {
+          "title": "Focus entity",
+          "value": "Molecule, scaffold or substructure"
+        },
+        {
+          "title": "Workflow coverage",
+          "value": "Prepare \u2192 Inspect \u2192 Score \u2192 Compare \u2192 Review \u2192 Handoff"
+        },
+        {
+          "title": "Readiness checks",
+          "value": "5 checks \u00b7 Pass: 2 \u00b7 Review: 3"
+        },
+        {
+          "title": "Handoff targets",
+          "value": "ChEMBL Builder \u00b7 ADMET \u00b7 Molecular Docking"
+        },
+        {
+          "title": "Evidence boundary",
+          "value": "Research workflow"
+        }
+      ]
+    },
+    {
+      "module_key": "spatial_omics",
+      "title": "Spatial Omics & Digital Pathology",
+      "card_count": 6,
+      "status": "PASS",
+      "issues": [],
+      "cards": [
+        {
+          "title": "Primary canvas",
+          "value": "Design, selection and biological-state workspace"
+        },
+        {
+          "title": "Focus entity",
+          "value": "Tissue region, spot or cell"
+        },
+        {
+          "title": "Workflow coverage",
+          "value": "Design \u2192 QC \u2192 Normalize \u2192 Model \u2192 Explore \u2192 Export"
+        },
+        {
+          "title": "Readiness checks",
+          "value": "5 checks \u00b7 Pass: 2 \u00b7 Review: 3"
+        },
+        {
+          "title": "Handoff targets",
+          "value": "Single-Cell Heterogeneity \u00b7 Clinical Biomarkers \u00b7 Pathology Review"
+        },
+        {
+          "title": "Evidence boundary",
+          "value": "Research workflow"
+        }
+      ]
+    },
+    {
+      "module_key": "strain_microbiome",
+      "title": "Strain-Resolved Microbiome",
+      "card_count": 6,
+      "status": "PASS",
+      "issues": [],
+      "cards": [
+        {
+          "title": "Primary canvas",
+          "value": "Assembly, lineage and outbreak review workspace"
+        },
+        {
+          "title": "Focus entity",
+          "value": "Strain, pathway or resistance determinant"
+        },
+        {
+          "title": "Workflow coverage",
+          "value": "Samples \u2192 QC \u2192 Assemble/Profile \u2192 Compare \u2192 Review \u2192 Report"
+        },
+        {
+          "title": "Readiness checks",
+          "value": "5 checks \u00b7 Pass: 2 \u00b7 Review: 3"
+        },
+        {
+          "title": "Handoff targets",
+          "value": "Metagenomics \u00b7 One Health \u00b7 Data Registry"
+        },
+        {
+          "title": "Evidence boundary",
+          "value": "Research workflow"
+        }
+      ]
+    },
+    {
+      "module_key": "structural_bioinformatics",
+      "title": "Structural Bioinformatics",
+      "card_count": 6,
+      "status": "PASS",
+      "issues": [],
+      "cards": [
+        {
+          "title": "Primary canvas",
+          "value": "Structure, sequence and evidence decision workspace"
+        },
+        {
+          "title": "Focus entity",
+          "value": "Structure, chain or residue"
+        },
+        {
+          "title": "Workflow coverage",
+          "value": "Prepare \u2192 Inspect \u2192 Score \u2192 Compare \u2192 Review \u2192 Handoff"
+        },
+        {
+          "title": "Readiness checks",
+          "value": "5 checks \u00b7 Pass: 2 \u00b7 Review: 3"
+        },
+        {
+          "title": "Handoff targets",
+          "value": "Molecular Docking \u00b7 Protein Design \u00b7 Antibody Engineering"
+        },
+        {
+          "title": "Evidence boundary",
+          "value": "Research workflow"
+        }
+      ]
+    },
+    {
+      "module_key": "structural_variant",
+      "title": "Structural Variant & Repeat Expansion",
+      "card_count": 6,
+      "status": "PASS",
+      "issues": [],
+      "cards": [
+        {
+          "title": "Primary canvas",
+          "value": "Coordinate-aware sequence and evidence workspace"
+        },
+        {
+          "title": "Focus entity",
+          "value": "Breakpoint or repeat locus"
+        },
+        {
+          "title": "Workflow coverage",
+          "value": "Input \u2192 Validate \u2192 Map \u2192 Interpret \u2192 Review \u2192 Export"
+        },
+        {
+          "title": "Readiness checks",
+          "value": "5 checks \u00b7 Pass: 2 \u00b7 Review: 3"
+        },
+        {
+          "title": "Handoff targets",
+          "value": "Variant Workbench \u00b7 Rare Disease \u00b7 Genome Browser"
+        },
+        {
+          "title": "Evidence boundary",
+          "value": "Research workflow"
+        }
+      ]
+    },
+    {
+      "module_key": "study_design",
+      "title": "Statistical Power & Study Design",
+      "card_count": 6,
+      "status": "PASS",
+      "issues": [],
+      "cards": [
+        {
+          "title": "Primary canvas",
+          "value": "Protocol, allocation and quality-decision workspace"
+        },
+        {
+          "title": "Focus entity",
+          "value": "Study scenario, arm or allocation"
+        },
+        {
+          "title": "Workflow coverage",
+          "value": "Plan \u2192 Assign \u2192 Run \u2192 QC \u2192 Interpret \u2192 Archive"
+        },
+        {
+          "title": "Readiness checks",
+          "value": "5 checks \u00b7 Pass: 2 \u00b7 Review: 3"
+        },
+        {
+          "title": "Handoff targets",
+          "value": "Wet-Lab Biotechnology \u00b7 Clinical Biomarkers \u00b7 Project Workspace"
+        },
+        {
+          "title": "Evidence boundary",
+          "value": "Research workflow"
+        }
+      ]
+    },
+    {
+      "module_key": "synthetic_biology",
+      "title": "Synthetic Biology & Genetic Circuit Design",
+      "card_count": 6,
+      "status": "PASS",
+      "issues": [],
+      "cards": [
+        {
+          "title": "Primary canvas",
+          "value": "Protocol, allocation and quality-decision workspace"
+        },
+        {
+          "title": "Focus entity",
+          "value": "Circuit, part or construct"
+        },
+        {
+          "title": "Workflow coverage",
+          "value": "Plan \u2192 Assign \u2192 Run \u2192 QC \u2192 Interpret \u2192 Archive"
+        },
+        {
+          "title": "Readiness checks",
+          "value": "5 checks \u00b7 Pass: 2 \u00b7 Review: 3"
+        },
+        {
+          "title": "Handoff targets",
+          "value": "Enzyme Engineering \u00b7 Primer & Codon Studio \u00b7 Bioprocess"
+        },
+        {
+          "title": "Evidence boundary",
+          "value": "Research workflow"
+        }
+      ]
+    },
+    {
+      "module_key": "transcriptomics",
+      "title": "Transcriptomics Expression Lab",
+      "card_count": 6,
+      "status": "PASS",
+      "issues": [],
+      "cards": [
+        {
+          "title": "Primary canvas",
+          "value": "Design, selection and biological-state workspace"
+        },
+        {
+          "title": "Focus entity",
+          "value": "Sample, gene or contrast"
+        },
+        {
+          "title": "Workflow coverage",
+          "value": "Design \u2192 QC \u2192 Normalize \u2192 Model \u2192 Explore \u2192 Export"
+        },
+        {
+          "title": "Readiness checks",
+          "value": "5 checks \u00b7 Pass: 2 \u00b7 Review: 3"
+        },
+        {
+          "title": "Handoff targets",
+          "value": "RNA Splicing \u00b7 Pathway Analysis \u00b7 Biomarker Discovery"
+        },
+        {
+          "title": "Evidence boundary",
+          "value": "Research workflow"
+        }
+      ]
+    },
+    {
+      "module_key": "variant_workbench",
+      "title": "Variant & Annotation Workbench",
+      "card_count": 6,
+      "status": "PASS",
+      "issues": [],
+      "cards": [
+        {
+          "title": "Primary canvas",
+          "value": "Coordinate-aware sequence and evidence workspace"
+        },
+        {
+          "title": "Focus entity",
+          "value": "Variant or genomic interval"
+        },
+        {
+          "title": "Workflow coverage",
+          "value": "Input \u2192 Validate \u2192 Map \u2192 Interpret \u2192 Review \u2192 Export"
+        },
+        {
+          "title": "Readiness checks",
+          "value": "5 checks \u00b7 Pass: 2 \u00b7 Review: 3"
+        },
+        {
+          "title": "Handoff targets",
+          "value": "Rare Disease \u00b7 Cancer Genomics \u00b7 Pharmacogenomics \u00b7 Genome Browser"
+        },
+        {
+          "title": "Evidence boundary",
+          "value": "Research workflow"
+        }
+      ]
+    },
+    {
+      "module_key": "virology",
+      "title": "Virology & Viral Evolution",
+      "card_count": 6,
+      "status": "PASS",
+      "issues": [],
+      "cards": [
+        {
+          "title": "Primary canvas",
+          "value": "Assembly, lineage and outbreak review workspace"
+        },
+        {
+          "title": "Focus entity",
+          "value": "Viral genome, lineage or mutation"
+        },
+        {
+          "title": "Workflow coverage",
+          "value": "Samples \u2192 QC \u2192 Assemble/Profile \u2192 Compare \u2192 Review \u2192 Report"
+        },
+        {
+          "title": "Readiness checks",
+          "value": "5 checks \u00b7 Pass: 2 \u00b7 Review: 3"
+        },
+        {
+          "title": "Handoff targets",
+          "value": "Pathogen Outbreak \u00b7 Phylogeny \u00b7 Genome Browser"
+        },
+        {
+          "title": "Evidence boundary",
+          "value": "Research workflow"
+        }
+      ]
+    },
+    {
+      "module_key": "wetlab",
+      "title": "Wet-Lab Biotechnology",
+      "card_count": 6,
+      "status": "PASS",
+      "issues": [],
+      "cards": [
+        {
+          "title": "Primary canvas",
+          "value": "Protocol, allocation and quality-decision workspace"
+        },
+        {
+          "title": "Focus entity",
+          "value": "Assay run, plate or sample"
+        },
+        {
+          "title": "Workflow coverage",
+          "value": "Plan \u2192 Assign \u2192 Run \u2192 QC \u2192 Interpret \u2192 Archive"
+        },
+        {
+          "title": "Readiness checks",
+          "value": "5 checks \u00b7 Pass: 2 \u00b7 Review: 3"
+        },
+        {
+          "title": "Handoff targets",
+          "value": "Statistical Power \u00b7 Data Registry \u00b7 Research Report"
+        },
+        {
+          "title": "Evidence boundary",
+          "value": "Research workflow"
+        }
+      ]
+    }
+  ]
+}

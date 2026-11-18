@@ -1,0 +1,40 @@
+{
+  "schema": "biointel.step135-module-scientific-visuals.v1",
+  "step": 135,
+  "product_version": "13.2.0",
+  "scope": "module-only scientific depth, specialist viewers, dirty-input qualification and stability",
+  "modules": 15,
+  "scientific_tables": 39,
+  "specialist_viewers": 49,
+  "limits": {
+    "deep_analysis_rows": 200000,
+    "interactive_plot_rows": 20000,
+    "statistical_groups": 250,
+    "bootstrap_iterations": 120,
+    "network_links": 180
+  },
+  "scientific_features": {
+    "digital_pathology": ["tile uncertainty map", "scanner-domain projection", "slide confidence intervals"],
+    "long_read_epigenome": ["coverage-weighted effects", "bootstrap intervals", "haplotype ribbons"],
+    "single_cell_isoforms": ["pseudobulk usage", "FDR usage tests", "isoform-flow Sankey"],
+    "foundation_models": ["quantisation profiles", "hardware-fit matrix", "efficiency frontier"],
+    "amr": ["Wilson intervals", "concordance matrix", "temporal emergence alerts"],
+    "spatial_medicine": ["neighbourhood enrichment", "layered spatial map", "regional expression"],
+    "gene_therapy": ["construct map", "sequence liability checks", "capacity review"],
+    "cart": ["architecture schematic", "efficacy-safety frontier", "domain matrix"],
+    "federated_ai": ["convergence", "fairness gap", "privacy composition", "topology"],
+    "clinical_biomarker": ["Cox model", "PH diagnostic", "calibration", "risk waterfall"],
+    "protein_ligand": ["true Pareto set", "robust ranking", "diverse shortlist", "3D objectives"],
+    "pangenome_population": ["FST-like screen", "path entropy", "population-path Sankey"],
+    "pharmacovigilance": ["Fisher test", "EBGM-like shrinkage", "IC025", "duplicate review"],
+    "synthetic_trial": ["Monte Carlo power", "null type-I error", "dropout sensitivity"],
+    "lab_planner": ["factorial design", "sample-size screen", "plate layout", "resource Gantt"]
+  },
+  "protected_modules": [
+    "pages/6_DTI_Predictor.py",
+    "pages/74_DTI_Validation_Evidence_Center.py",
+    "pages/109_Lab_Instrument_Import_Center.py",
+    "pages/126_LIMS_ELN_and_Sample_Chain_of_Custody_Hub.py",
+    "pages/157_Instrument_Integration_Hub_2.py"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "schema": "biointel.step134-full-module-reliability.v1",
+  "step": 134,
+  "product_version": "13.2.0",
+  "scope": "all modules: default-load reliability, direct deep-link safety, connection lifecycle, lazy heavyweight resources, upload/schema recovery, runtime performance and packaging integrity",
+  "protected_modules": [
+    "pages/6_DTI_Predictor.py",
+    "pages/74_DTI_Validation_Evidence_Center.py",
+    "pages/109_Lab_Instrument_Import_Center.py",
+    "pages/126_LIMS_ELN_and_Sample_Chain_of_Custody_Hub.py",
+    "pages/157_Instrument_Integration_Hub_2.py"
+  ],
+  "runtime_contracts": {
+    "streamlit_entrypoints": 198,
+    "direct_page_bootstrap": true,
+    "managed_sqlite_connections": true,
+    "lazy_model_deserialisation": true,
+    "explicit_fresh_assurance_audit": true,
+    "safe_error_isolation": true
+  }
+}

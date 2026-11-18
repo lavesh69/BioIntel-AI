@@ -1,0 +1,28 @@
+{
+  "version": "11.9.0",
+  "theme_schema_version": "2.0",
+  "module_catalogue": {
+    "default_view": "All modules",
+    "pagination": [12, 24, 48],
+    "auto_discovery_fallback": true,
+    "embedded_workspace_index": true
+  },
+  "theme_intelligence": {
+    "density_modes": ["Comfortable", "Professional", "Dense"],
+    "performance_modes": ["Adaptive", "Full quality", "Balanced", "Performance"],
+    "safe_custom_tokens": true,
+    "module_overrides": true,
+    "project_overrides": true,
+    "forced_colors_support": true,
+    "high_dpi_breakpoints": true,
+    "theme_health_scores": true,
+    "module_preview_modes": 8
+  },
+  "excluded_modules_unchanged": [
+    "DTI Predictor",
+    "DTI Validation Evidence Center",
+    "Lab Instrument Import Center",
+    "LIMS, ELN & Sample Chain of Custody Hub",
+    "Instrument Connector & Watch-Folder Hub"
+  ]
+}

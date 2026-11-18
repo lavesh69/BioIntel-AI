@@ -1,0 +1,109 @@
+[build-system]
+requires = ["setuptools==80.9.0", "wheel==0.47.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.black]
+line-length = 100
+target-version = ["py311"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I"]
+ignore = ["E501"]
+
+[tool.ruff.lint.per-file-ignores]
+"pages/*.py" = ["E402"]
+"scripts/*.py" = ["E402"]
+
+[project]
+name = "biointel-ai"
+version = "15.6.0"
+description = "Professional biotechnology, bioinformatics and scientific intelligence workspace"
+requires-python = ">=3.11,<3.14"
+readme = "README.md"
+dependencies = [
+  "Pillow==11.3.0",
+  "anndata==0.12.7",
+  "PyYAML==6.0.3",
+  "beautifulsoup4==4.14.3",
+  "biopython==1.86",
+  "fastapi==0.128.2",
+  "faster-whisper==1.2.1",
+  "httpx==0.28.1",
+  "imageio-ffmpeg==0.6.0",
+  "h5py==3.15.1",
+  "joblib==1.5.3",
+  "leidenalg==0.10.2",
+  "lxml==6.1.1",
+  "numpy==2.3.5",
+  "odfpy==1.4.1",
+  "openpyxl==3.1.5",
+  "pandas==2.2.3",
+  "pdfplumber==0.11.9",
+  "plotly==6.5.2",
+  "pypdf==5.9.0",
+  "pypdfium2==4.30.0",
+  "pytesseract==0.3.13",
+  "python-docx==1.2.0",
+  "python-multipart==0.0.29",
+  "python-igraph==0.11.9",
+  "python-pptx==1.0.2",
+  "rdkit==2025.9.4",
+  "reportlab==4.4.9",
+  "scikit-learn==1.8.0",
+  "scipy==1.17.0",
+  "streamlit==1.58.0",
+  "umap-learn==0.5.9.post2",
+  "uvicorn==0.48.0",
+  "mne==1.12.1",
+  "nibabel==5.4.2",
+  "ont-fast5-api==4.1.3",
+  "pydicom==3.0.2",
+  "pymzml==2.6.1",
+  "xlrd==2.0.2",
+]
+
+[tool.pytest.ini_options]
+markers = [
+  "unit: isolated fast unit test",
+  "integration: service or repository integration test",
+  "e2e: end-to-end browser or workflow test",
+  "visual: browser-based screenshot regression test",
+  "scientific: deterministic scientific golden regression",
+  "performance: load, stress, spike or soak qualification",
+]
+addopts = "--strict-markers --strict-config"
+testpaths = ["tests"]
+
+[tool.coverage.run]
+branch = true
+source = ["src/biointel"]
+omit = ["tests/*"]
+
+[tool.coverage.report]
+fail_under = 85
+show_missing = true
+skip_covered = false
+exclude_lines = ["pragma: no cover", "if TYPE_CHECKING:"]
+
+[tool.mypy]
+python_version = "3.11"
+warn_unused_configs = true
+warn_redundant_casts = true
+warn_unused_ignores = true
+no_implicit_optional = true
+check_untyped_defs = true
+
+[tool.bandit]
+exclude_dirs = ["tests", "data", "models"]
+skips = ["B101"]
+
+[project.scripts]
+biointel = "biointel.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["biointel*"]

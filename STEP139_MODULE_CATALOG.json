@@ -1,0 +1,5025 @@
+{
+  "schema": "biointel.step139.module-catalog.v1",
+  "modules": [
+    {
+      "key": "population_gwas_peak",
+      "title": "Population Genetics, GWAS & PRS Studio",
+      "short_title": "GWAS & PRS Studio",
+      "category": "Bioinformatics",
+      "new_module_from_step137": false,
+      "existing_page": "pages/134_Population_Genetics_GWAS_Studio.py",
+      "summary": "Cohort QC, ancestry structure, association screening, regional review and polygenic-risk exploration in one reproducible workflow.",
+      "purpose": "Use genotype, phenotype and covariate data to identify quality problems, population structure and association candidates before specialist mixed-model validation.",
+      "required_columns": [
+        "sample",
+        "variant",
+        "chrom",
+        "position",
+        "genotype",
+        "phenotype"
+      ],
+      "accepted_inputs": [
+        "CSV",
+        "TSV",
+        "VCF",
+        "VCF.GZ",
+        "PLINK-exported table"
+      ],
+      "workflow": [
+        "Import and harmonise",
+        "Sample and variant QC",
+        "Ancestry structure",
+        "Association screening",
+        "LD and regional review",
+        "PRS exploration",
+        "Evidence export"
+      ],
+      "outputs": [
+        "variant QC",
+        "association table",
+        "sample ancestry scores",
+        "PRS scores",
+        "evidence bundle"
+      ],
+      "visuals": [
+        "Manhattan plot",
+        "QQ plot",
+        "Ancestry PCA",
+        "LD heatmap",
+        "Regional association",
+        "PRS distribution",
+        "Subgroup forest",
+        "QC dashboard",
+        "Sample QC landscape",
+        "Variant QC matrix",
+        "Fine-mapping credible set",
+        "PRS calibration"
+      ],
+      "visual_count": 12,
+      "boundary": "Exploratory screening does not replace validated PLINK, SAIGE or REGENIE pipelines, imputation, ancestry-matched validation or clinical interpretation.",
+      "handoffs": [
+        "Variant Workbench",
+        "Pathway Analysis",
+        "Clinical Biomarker Studio"
+      ],
+      "organisms": [
+        "Homo sapiens",
+        "Custom/other"
+      ],
+      "genome_builds": [
+        "GRCh38",
+        "GRCh37",
+        "Custom/other"
+      ],
+      "analysis_profiles": [
+        "Case-control",
+        "Quantitative trait",
+        "PRS exploration",
+        "QC only"
+      ],
+      "parameters": [
+        {
+          "key": "genome_build",
+          "label": "Genome/reference build",
+          "kind": "select",
+          "default": "GRCh38",
+          "help": "Coordinate system used by variants, intervals and annotations.",
+          "options": [
+            "GRCh38",
+            "GRCh37",
+            "T2T-CHM13v2.0",
+            "Custom/other"
+          ],
+          "minimum": null,
+          "maximum": null,
+          "step": null,
+          "advanced": false
+        },
+        {
+          "key": "organism",
+          "label": "Organism",
+          "kind": "select",
+          "default": "Homo sapiens",
+          "help": "Organism context used for annotations and scientific boundaries.",
+          "options": [
+            "Homo sapiens",
+            "Mus musculus",
+            "Rattus norvegicus",
+            "Pathogen/viral",
+            "Environmental/mixed",
+            "Custom/other"
+          ],
+          "minimum": null,
+          "maximum": null,
+          "step": null,
+          "advanced": false
+        },
+        {
+          "key": "missing_policy",
+          "label": "Missing-value policy",
+          "kind": "select",
+          "default": "Retain and flag",
+          "help": "Controls whether incomplete records remain visible for review.",
+          "options": [
+            "Retain and flag",
+            "Exclude incomplete records",
+            "Median/mode imputation for screening"
+          ],
+          "minimum": null,
+          "maximum": null,
+          "step": null,
+          "advanced": false
+        },
+        {
+          "key": "priority_threshold",
+          "label": "Priority review threshold",
+          "kind": "float",
+          "default": 0.7,
+          "help": "Records at or above this score are highlighted for review.",
+          "options": [],
+          "minimum": 0.0,
+          "maximum": 1.0,
+          "step": 0.05,
+          "advanced": false
+        },
+        {
+          "key": "random_seed",
+          "label": "Reproducibility seed",
+          "kind": "int",
+          "default": 42,
+          "help": "Seed used for deterministic sampling and preview calculations.",
+          "options": [],
+          "minimum": 0,
+          "maximum": 2147483647,
+          "step": 1,
+          "advanced": true
+        },
+        {
+          "key": "analysis_profile",
+          "label": "Analysis profile",
+          "kind": "select",
+          "default": "Case-control",
+          "help": "Selects association and interpretation defaults.",
+          "options": [
+            "Case-control",
+            "Quantitative trait",
+            "PRS exploration",
+            "QC only"
+          ],
+          "minimum": null,
+          "maximum": null,
+          "step": null,
+          "advanced": false
+        },
+        {
+          "key": "min_call_rate",
+          "label": "Minimum call rate",
+          "kind": "float",
+          "default": 0.95,
+          "help": "Minimum non-missing genotype fraction.",
+          "options": [],
+          "minimum": 0.5,
+          "maximum": 1.0,
+          "step": 0.01,
+          "advanced": false
+        },
+        {
+          "key": "min_maf",
+          "label": "Minimum minor-allele frequency",
+          "kind": "float",
+          "default": 0.01,
+          "help": "Variants below this frequency are marked for exclusion.",
+          "options": [],
+          "minimum": 0.0,
+          "maximum": 0.5,
+          "step": 0.005,
+          "advanced": false
+        },
+        {
+          "key": "hwe_threshold",
+          "label": "HWE review threshold",
+          "kind": "float",
+          "default": 1e-06,
+          "help": "Hardy-Weinberg p-values below this are flagged.",
+          "options": [],
+          "minimum": 1e-12,
+          "maximum": 0.1,
+          "step": 1e-06,
+          "advanced": true
+        },
+        {
+          "key": "prs_top_n",
+          "label": "PRS variants",
+          "kind": "int",
+          "default": 25,
+          "help": "Number of highest-ranked variants used for exploratory PRS.",
+          "options": [],
+          "minimum": 1,
+          "maximum": 500,
+          "step": 1,
+          "advanced": true
+        }
+      ],
+      "qc_checks": [
+        "Sample missingness",
+        "Variant missingness",
+        "Heterozygosity",
+        "Relatedness proxy",
+        "MAF",
+        "Hardy-Weinberg",
+        "Population structure",
+        "Phenotype balance"
+      ],
+      "capabilities": [
+        "Sample/variant QC",
+        "Ancestry PCA",
+        "Association screening",
+        "LD proxy",
+        "Regional review",
+        "Fine-mapping proxy",
+        "PRS",
+        "Subgroup performance"
+      ],
+      "specialist_engines": [
+        "PLINK 2",
+        "REGENIE",
+        "SAIGE",
+        "BCFtools"
+      ],
+      "reference_assets": [
+        "Reference FASTA",
+        "Genome annotation",
+        "Ancestry reference panel",
+        "LD reference panel",
+        "Allele-frequency panel"
+      ],
+      "review_roles": [
+        "Analyst",
+        "Statistical geneticist",
+        "Clinical reviewer"
+      ],
+      "native_extensions": [
+        "bcf",
+        "bed",
+        "bim",
+        "csv",
+        "fam",
+        "json",
+        "ped",
+        "pgen",
+        "psam",
+        "pvar",
+        "tsv",
+        "txt",
+        "vcf",
+        "xls",
+        "xlsx",
+        "vcf.gz"
+      ],
+      "preferred_viewers": [
+        "genome_browser"
+      ],
+      "native_features": [
+        "PLINK/VCF cohort intake",
+        "indexed variant readiness",
+        "ancestry and kinship context",
+        "reference-locked association planning"
+      ],
+      "comparison_identifiers": [
+        "variant",
+        "sample"
+      ],
+      "automatic_engine_plans": [
+        {
+          "plan_key": "bcftools_stats",
+          "label": "BCFtools variant statistics",
+          "source_parameter": "vcf",
+          "compatible_extensions": [
+            "vcf",
+            "vcf.gz",
+            "bcf"
+          ],
+          "stdout_to_output": false,
+          "extra_parameters": [],
+          "required_reference_labels": []
+        }
+      ],
+      "engine_registry_entries": [
+        {
+          "key": "plink2",
+          "label": "PLINK 2"
+        },
+        {
+          "key": "regenie",
+          "label": "REGENIE"
+        },
+        {
+          "key": "saige",
+          "label": "SAIGE"
+        },
+        {
+          "key": "bcftools",
+          "label": "BCFtools"
+        },
+        {
+          "key": "tabix",
+          "label": "Tabix"
+        }
+      ],
+      "optional_tools": [
+        {
+          "name": "PLINK 2",
+          "probe": "plink2",
+          "kind": "binary",
+          "purpose": "genotype QC and association models",
+          "required": false
+        },
+        {
+          "name": "REGENIE",
+          "probe": "regenie",
+          "kind": "binary",
+          "purpose": "large-cohort whole-genome regression",
+          "required": false
+        },
+        {
+          "name": "BCFtools",
+          "probe": "bcftools",
+          "kind": "binary",
+          "purpose": "VCF harmonisation",
+          "required": false
+        }
+      ]
+    },
+    {
+      "key": "epigenomics_peak",
+      "title": "Epigenomics & Chromatin Accessibility Workbench",
+      "short_title": "Epigenomics Workbench",
+      "category": "Bioinformatics",
+      "new_module_from_step137": false,
+      "existing_page": "pages/112_Epigenomics_and_Chromatin_Regulation_Studio.py",
+      "summary": "ATAC-seq, ChIP-seq, CUT&RUN, methylation and regulatory-region analysis with RNA integration and provenance.",
+      "purpose": "Prioritise differential regulatory regions, transcription-factor activity and peak-to-gene links while preserving genome build and assay context.",
+      "required_columns": [
+        "sample",
+        "region",
+        "condition",
+        "signal",
+        "chrom",
+        "start",
+        "end"
+      ],
+      "accepted_inputs": [
+        "CSV",
+        "TSV",
+        "BED",
+        "narrowPeak",
+        "broadPeak"
+      ],
+      "workflow": [
+        "Import regions",
+        "Assay QC",
+        "Consensus regions",
+        "Differential signal",
+        "Motif and TF analysis",
+        "Peak-to-gene links",
+        "Export"
+      ],
+      "outputs": [
+        "differential regions",
+        "motif activity",
+        "peak-to-gene links",
+        "methylation summary",
+        "evidence bundle"
+      ],
+      "visuals": [
+        "Peak heatmap",
+        "Genome track",
+        "Accessibility volcano",
+        "Motif heatmap",
+        "TF network",
+        "Methylation profile",
+        "Peak-gene links",
+        "RNA concordance",
+        "Sample-level assay QC",
+        "Condition balance",
+        "Regulatory-class composition",
+        "Genome-bin signal"
+      ],
+      "visual_count": 12,
+      "boundary": "Screening-level region analysis must be confirmed with replicate-aware specialist pipelines, matched genome builds and orthogonal assays.",
+      "handoffs": [
+        "Transcriptomics",
+        "Gene Regulatory Network",
+        "Comparative Regulatory Genomics"
+      ],
+      "organisms": [
+        "Homo sapiens",
+        "Mus musculus",
+        "Custom/other"
+      ],
+      "genome_builds": [
+        "GRCh38",
+        "GRCh37",
+        "GRCm39",
+        "Custom/other"
+      ],
+      "analysis_profiles": [
+        "ATAC-seq",
+        "ChIP-seq",
+        "CUT&RUN/CUT&Tag",
+        "DNA methylation"
+      ],
+      "parameters": [
+        {
+          "key": "genome_build",
+          "label": "Genome/reference build",
+          "kind": "select",
+          "default": "GRCh38",
+          "help": "Coordinate system used by variants, intervals and annotations.",
+          "options": [
+            "GRCh38",
+            "GRCh37",
+            "T2T-CHM13v2.0",
+            "Custom/other"
+          ],
+          "minimum": null,
+          "maximum": null,
+          "step": null,
+          "advanced": false
+        },
+        {
+          "key": "organism",
+          "label": "Organism",
+          "kind": "select",
+          "default": "Homo sapiens",
+          "help": "Organism context used for annotations and scientific boundaries.",
+          "options": [
+            "Homo sapiens",
+            "Mus musculus",
+            "Rattus norvegicus",
+            "Pathogen/viral",
+            "Environmental/mixed",
+            "Custom/other"
+          ],
+          "minimum": null,
+          "maximum": null,
+          "step": null,
+          "advanced": false
+        },
+        {
+          "key": "missing_policy",
+          "label": "Missing-value policy",
+          "kind": "select",
+          "default": "Retain and flag",
+          "help": "Controls whether incomplete records remain visible for review.",
+          "options": [
+            "Retain and flag",
+            "Exclude incomplete records",
+            "Median/mode imputation for screening"
+          ],
+          "minimum": null,
+          "maximum": null,
+          "step": null,
+          "advanced": false
+        },
+        {
+          "key": "priority_threshold",
+          "label": "Priority review threshold",
+          "kind": "float",
+          "default": 0.7,
+          "help": "Records at or above this score are highlighted for review.",
+          "options": [],
+          "minimum": 0.0,
+          "maximum": 1.0,
+          "step": 0.05,
+          "advanced": false
+        },
+        {
+          "key": "random_seed",
+          "label": "Reproducibility seed",
+          "kind": "int",
+          "default": 42,
+          "help": "Seed used for deterministic sampling and preview calculations.",
+          "options": [],
+          "minimum": 0,
+          "maximum": 2147483647,
+          "step": 1,
+          "advanced": true
+        },
+        {
+          "key": "analysis_profile",
+          "label": "Assay profile",
+          "kind": "select",
+          "default": "ATAC-seq",
+          "help": "Controls assay-specific guidance.",
+          "options": [
+            "ATAC-seq",
+            "ChIP-seq",
+            "CUT&RUN/CUT&Tag",
+            "DNA methylation"
+          ],
+          "minimum": null,
+          "maximum": null,
+          "step": null,
+          "advanced": false
+        },
+        {
+          "key": "min_signal",
+          "label": "Minimum region signal",
+          "kind": "float",
+          "default": 1.0,
+          "help": "Regions below this signal are flagged.",
+          "options": [],
+          "minimum": 0.0,
+          "maximum": 1000000.0,
+          "step": 0.5,
+          "advanced": false
+        },
+        {
+          "key": "min_replicates",
+          "label": "Minimum replicates per condition",
+          "kind": "int",
+          "default": 2,
+          "help": "Conditions below this count receive a blocker.",
+          "options": [],
+          "minimum": 1,
+          "maximum": 20,
+          "step": 1,
+          "advanced": false
+        },
+        {
+          "key": "promoter_window",
+          "label": "Promoter window (bp)",
+          "kind": "int",
+          "default": 2000,
+          "help": "Distance used for promoter-proximal annotation.",
+          "options": [],
+          "minimum": 100,
+          "maximum": 100000,
+          "step": 100,
+          "advanced": true
+        }
+      ],
+      "qc_checks": [
+        "Replicate balance",
+        "Coordinate validity",
+        "Peak width",
+        "Signal distribution",
+        "TSS/fragment profile availability",
+        "Genome-build consistency",
+        "Batch structure"
+      ],
+      "capabilities": [
+        "Consensus regions",
+        "Differential accessibility",
+        "Motif enrichment",
+        "TF activity",
+        "Peak-to-gene links",
+        "Methylation",
+        "RNA concordance",
+        "Genome tracks"
+      ],
+      "specialist_engines": [
+        "MACS3",
+        "deepTools",
+        "BEDTools",
+        "HOMER"
+      ],
+      "reference_assets": [
+        "Reference FASTA",
+        "Genome annotation",
+        "Motif library",
+        "Chromatin-state atlas",
+        "Blacklist regions"
+      ],
+      "review_roles": [
+        "Analyst",
+        "Epigenomics specialist",
+        "Biological reviewer"
+      ],
+      "native_extensions": [
+        "bam",
+        "bed",
+        "bedgraph",
+        "bedmethyl",
+        "bigwig",
+        "broadpeak",
+        "bw",
+        "cram",
+        "csv",
+        "gff",
+        "gff3",
+        "gtf",
+        "json",
+        "narrowpeak",
+        "tsv",
+        "txt",
+        "xls",
+        "xlsx",
+        "bed.gz",
+        "bedmethyl.gz",
+        "gff.gz",
+        "gtf.gz"
+      ],
+      "preferred_viewers": [
+        "genome_browser"
+      ],
+      "native_features": [
+        "BAM/CRAM metadata intake",
+        "bedMethyl parsing",
+        "peak and signal-track readiness",
+        "replicate-aware engine planning"
+      ],
+      "comparison_identifiers": [
+        "region",
+        "sample"
+      ],
+      "automatic_engine_plans": [
+        {
+          "plan_key": "samtools_index",
+          "label": "Index BAM/CRAM",
+          "source_parameter": "alignment",
+          "compatible_extensions": [
+            "bam",
+            "cram"
+          ],
+          "stdout_to_output": false,
+          "extra_parameters": [],
+          "required_reference_labels": []
+        },
+        {
+          "plan_key": "samtools_depth",
+          "label": "Alignment depth profile",
+          "source_parameter": "alignment",
+          "compatible_extensions": [
+            "bam",
+            "cram"
+          ],
+          "stdout_to_output": false,
+          "extra_parameters": [],
+          "required_reference_labels": []
+        },
+        {
+          "plan_key": "macs2_callpeak",
+          "label": "MACS2 peak calling",
+          "source_parameter": "treatment",
+          "compatible_extensions": [
+            "bam",
+            "bed",
+            "bedpe"
+          ],
+          "stdout_to_output": false,
+          "extra_parameters": [
+            [
+              "name",
+              "biointel_peak_call"
+            ],
+            [
+              "genome_size",
+              "hs"
+            ],
+            [
+              "format",
+              "BAM"
+            ],
+            [
+              "q_value",
+              0.05
+            ]
+          ],
+          "required_reference_labels": []
+        },
+        {
+          "plan_key": "deeptools_bamcoverage",
+          "label": "deepTools coverage track",
+          "source_parameter": "alignment",
+          "compatible_extensions": [
+            "bam",
+            "cram"
+          ],
+          "stdout_to_output": false,
+          "extra_parameters": [
+            [
+              "bin_size",
+              50
+            ],
+            [
+              "normalization",
+              "CPM"
+            ]
+          ],
+          "required_reference_labels": []
+        }
+      ],
+      "engine_registry_entries": [
+        {
+          "key": "samtools",
+          "label": "SAMtools"
+        },
+        {
+          "key": "macs2",
+          "label": "MACS2"
+        },
+        {
+          "key": "deeptools",
+          "label": "deepTools"
+        },
+        {
+          "key": "bedtools",
+          "label": "BEDTools"
+        },
+        {
+          "key": "tabix",
+          "label": "Tabix"
+        }
+      ],
+      "optional_tools": [
+        {
+          "name": "MACS3",
+          "probe": "macs3",
+          "kind": "binary",
+          "purpose": "peak calling",
+          "required": false
+        },
+        {
+          "name": "deepTools",
+          "probe": "deeptools",
+          "kind": "python",
+          "purpose": "coverage and heatmaps",
+          "required": false
+        },
+        {
+          "name": "BEDTools",
+          "probe": "bedtools",
+          "kind": "binary",
+          "purpose": "genomic interval operations",
+          "required": false
+        }
+      ]
+    },
+    {
+      "key": "pharmacogenomics_peak",
+      "title": "Pharmacogenomics & Clinical Genomics Studio",
+      "short_title": "Pharmacogenomics Studio",
+      "category": "Bioinformatics",
+      "new_module_from_step137": false,
+      "existing_page": "pages/117_Pharmacogenomics_and_Precision_Medicine_Board.py",
+      "summary": "Variant-to-haplotype, phenotype and drug-gene evidence review with explicit confidence and research-use boundaries.",
+      "purpose": "Connect pharmacogene variants, diplotypes and medication evidence without presenting exploratory calls as clinical recommendations.",
+      "required_columns": [
+        "sample",
+        "gene",
+        "variant",
+        "drug",
+        "allele",
+        "evidence_level"
+      ],
+      "accepted_inputs": [
+        "CSV",
+        "TSV",
+        "VCF",
+        "VCF.GZ",
+        "medication list"
+      ],
+      "workflow": [
+        "Import variants and medications",
+        "Genome-build QC",
+        "Allele and diplotype review",
+        "Phenotype inference",
+        "Drug-gene evidence",
+        "Conflict review",
+        "Report"
+      ],
+      "outputs": [
+        "drug-gene review table",
+        "diplotype evidence",
+        "phenotype summary",
+        "conflict queue",
+        "structured report"
+      ],
+      "visuals": [
+        "Pharmacogene coverage",
+        "Diplotype waterfall",
+        "Drug-gene matrix",
+        "Phenotype distribution",
+        "Population comparison",
+        "Evidence ladder",
+        "Conflict matrix",
+        "Review timeline",
+        "Locus coverage QC",
+        "Diplotype confidence",
+        "Medication impact board",
+        "Reanalysis triggers"
+      ],
+      "visual_count": 12,
+      "boundary": "Research-use output is not a prescribing recommendation. Clinical decisions require validated genotyping, current guidelines and qualified professional review.",
+      "handoffs": [
+        "Variant Workbench",
+        "Clinical Biomarker Studio",
+        "Evidence Review"
+      ],
+      "organisms": [
+        "Homo sapiens"
+      ],
+      "genome_builds": [
+        "GRCh38",
+        "GRCh37"
+      ],
+      "analysis_profiles": [
+        "Variant review",
+        "Diplotype review",
+        "Medication review"
+      ],
+      "parameters": [
+        {
+          "key": "genome_build",
+          "label": "Genome/reference build",
+          "kind": "select",
+          "default": "GRCh38",
+          "help": "Coordinate system used by variants, intervals and annotations.",
+          "options": [
+            "GRCh38",
+            "GRCh37",
+            "T2T-CHM13v2.0",
+            "Custom/other"
+          ],
+          "minimum": null,
+          "maximum": null,
+          "step": null,
+          "advanced": false
+        },
+        {
+          "key": "organism",
+          "label": "Organism",
+          "kind": "select",
+          "default": "Homo sapiens",
+          "help": "Organism context used for annotations and scientific boundaries.",
+          "options": [
+            "Homo sapiens",
+            "Mus musculus",
+            "Rattus norvegicus",
+            "Pathogen/viral",
+            "Environmental/mixed",
+            "Custom/other"
+          ],
+          "minimum": null,
+          "maximum": null,
+          "step": null,
+          "advanced": false
+        },
+        {
+          "key": "missing_policy",
+          "label": "Missing-value policy",
+          "kind": "select",
+          "default": "Retain and flag",
+          "help": "Controls whether incomplete records remain visible for review.",
+          "options": [
+            "Retain and flag",
+            "Exclude incomplete records",
+            "Median/mode imputation for screening"
+          ],
+          "minimum": null,
+          "maximum": null,
+          "step": null,
+          "advanced": false
+        },
+        {
+          "key": "priority_threshold",
+          "label": "Priority review threshold",
+          "kind": "float",
+          "default": 0.7,
+          "help": "Records at or above this score are highlighted for review.",
+          "options": [],
+          "minimum": 0.0,
+          "maximum": 1.0,
+          "step": 0.05,
+          "advanced": false
+        },
+        {
+          "key": "random_seed",
+          "label": "Reproducibility seed",
+          "kind": "int",
+          "default": 42,
+          "help": "Seed used for deterministic sampling and preview calculations.",
+          "options": [],
+          "minimum": 0,
+          "maximum": 2147483647,
+          "step": 1,
+          "advanced": true
+        },
+        {
+          "key": "analysis_profile",
+          "label": "Workflow profile",
+          "kind": "select",
+          "default": "Diplotype review",
+          "help": "Selects review emphasis.",
+          "options": [
+            "Variant review",
+            "Diplotype review",
+            "Medication review"
+          ],
+          "minimum": null,
+          "maximum": null,
+          "step": null,
+          "advanced": false
+        },
+        {
+          "key": "min_coverage",
+          "label": "Minimum locus coverage",
+          "kind": "float",
+          "default": 20.0,
+          "help": "Coverage below this value is flagged.",
+          "options": [],
+          "minimum": 0.0,
+          "maximum": 1000.0,
+          "step": 1.0,
+          "advanced": false
+        },
+        {
+          "key": "guideline_snapshot",
+          "label": "Guideline snapshot",
+          "kind": "text",
+          "default": "Local versioned snapshot",
+          "help": "Records the evidence/guideline release used.",
+          "options": [],
+          "minimum": null,
+          "maximum": null,
+          "step": null,
+          "advanced": true
+        }
+      ],
+      "qc_checks": [
+        "Genome build",
+        "Gene coverage",
+        "Allele completeness",
+        "Copy-number availability",
+        "Guideline version",
+        "Medication mapping",
+        "Evidence conflicts"
+      ],
+      "capabilities": [
+        "Allele review",
+        "Diplotype assembly",
+        "Phenotype inference",
+        "Drug-gene evidence",
+        "Conflict review",
+        "Population context",
+        "Reanalysis alerts"
+      ],
+      "specialist_engines": [
+        "Aldy",
+        "Stargazer",
+        "VEP"
+      ],
+      "reference_assets": [
+        "Reference FASTA",
+        "Pharmacogene definitions",
+        "Star-allele definitions",
+        "Guideline snapshot",
+        "Population frequency panel"
+      ],
+      "review_roles": [
+        "Analyst",
+        "Pharmacogenomics specialist",
+        "Qualified clinical reviewer"
+      ],
+      "native_extensions": [
+        "bam",
+        "bcf",
+        "cram",
+        "csv",
+        "fam",
+        "json",
+        "ped",
+        "tsv",
+        "txt",
+        "vcf",
+        "xls",
+        "xlsx",
+        "vcf.gz"
+      ],
+      "preferred_viewers": [
+        "genome_browser"
+      ],
+      "native_features": [
+        "variant and coverage intake",
+        "copy-number readiness",
+        "guideline-version locking",
+        "manual diplotype review"
+      ],
+      "comparison_identifiers": [
+        "sample",
+        "gene",
+        "variant"
+      ],
+      "automatic_engine_plans": [
+        {
+          "plan_key": "bcftools_stats",
+          "label": "BCFtools call statistics",
+          "source_parameter": "vcf",
+          "compatible_extensions": [
+            "vcf",
+            "vcf.gz",
+            "bcf"
+          ],
+          "stdout_to_output": false,
+          "extra_parameters": [],
+          "required_reference_labels": []
+        },
+        {
+          "plan_key": "samtools_depth",
+          "label": "Pharmacogene coverage depth",
+          "source_parameter": "alignment",
+          "compatible_extensions": [
+            "bam",
+            "cram"
+          ],
+          "stdout_to_output": false,
+          "extra_parameters": [],
+          "required_reference_labels": []
+        }
+      ],
+      "engine_registry_entries": [
+        {
+          "key": "bcftools",
+          "label": "BCFtools"
+        },
+        {
+          "key": "whatshap",
+          "label": "WhatsHap"
+        },
+        {
+          "key": "vep",
+          "label": "Ensembl VEP"
+        }
+      ],
+      "optional_tools": [
+        {
+          "name": "Aldy",
+          "probe": "aldy",
+          "kind": "binary",
+          "purpose": "pharmacogene star-allele calling",
+          "required": false
+        },
+        {
+          "name": "Stargazer",
+          "probe": "stargazer",
+          "kind": "binary",
+          "purpose": "pharmacogene haplotypes",
+          "required": false
+        },
+        {
+          "name": "VEP",
+          "probe": "vep",
+          "kind": "binary",
+          "purpose": "variant annotation",
+          "required": false
+        }
+      ]
+    },
+    {
+      "key": "structural_variant_peak",
+      "title": "Structural Variant, Repeat Expansion & Mosaicism Studio",
+      "short_title": "SV & Mosaicism Studio",
+      "category": "Bioinformatics",
+      "new_module_from_step137": false,
+      "existing_page": "pages/135_Structural_Variant_Repeat_Expansion_Lab.py",
+      "summary": "Harmonise deletions, duplications, inversions, translocations, repeat expansions, mobile-element insertions and mosaic candidates.",
+      "purpose": "Combine caller support, size, allele fraction, gene disruption and inheritance evidence into an auditable review queue.",
+      "required_columns": [
+        "sample",
+        "event_id",
+        "chrom",
+        "start",
+        "end",
+        "event_type",
+        "support"
+      ],
+      "accepted_inputs": [
+        "CSV",
+        "TSV",
+        "VCF",
+        "VCF.GZ",
+        "BED",
+        "BEDPE",
+        "CNV segments"
+      ],
+      "workflow": [
+        "Import caller outputs",
+        "Coordinate harmonisation",
+        "Evidence QC",
+        "Mosaic and repeat review",
+        "Gene and regulatory impact",
+        "Family segregation",
+        "Export"
+      ],
+      "outputs": [
+        "harmonised event table",
+        "caller concordance",
+        "mosaic candidates",
+        "repeat candidates",
+        "review bundle"
+      ],
+      "visuals": [
+        "Chromosome SV track",
+        "Breakpoint Circos",
+        "CNV profile",
+        "Repeat-size distribution",
+        "Mosaic allele fraction",
+        "Caller concordance",
+        "Segregation view",
+        "Priority waterfall",
+        "Consensus event clusters",
+        "Mosaic candidate review",
+        "Repeat expansion candidates",
+        "Breakpoint hotspot profile"
+      ],
+      "visual_count": 12,
+      "boundary": "Breakpoints and mosaic fractions require raw-read review and orthogonal confirmation; this module does not manufacture clinical classifications.",
+      "handoffs": [
+        "Variant Workbench",
+        "Rare Disease Board",
+        "Cancer Genomics"
+      ],
+      "organisms": [
+        "Homo sapiens",
+        "Mus musculus",
+        "Custom/other"
+      ],
+      "genome_builds": [
+        "GRCh38",
+        "GRCh37",
+        "T2T-CHM13v2.0",
+        "Custom/other"
+      ],
+      "analysis_profiles": [
+        "Structural variants",
+        "Repeat expansions",
+        "Mosaicism",
+        "Multi-caller consensus"
+      ],
+      "parameters": [
+        {
+          "key": "genome_build",
+          "label": "Genome/reference build",
+          "kind": "select",
+          "default": "GRCh38",
+          "help": "Coordinate system used by variants, intervals and annotations.",
+          "options": [
+            "GRCh38",
+            "GRCh37",
+            "T2T-CHM13v2.0",
+            "Custom/other"
+          ],
+          "minimum": null,
+          "maximum": null,
+          "step": null,
+          "advanced": false
+        },
+        {
+          "key": "organism",
+          "label": "Organism",
+          "kind": "select",
+          "default": "Homo sapiens",
+          "help": "Organism context used for annotations and scientific boundaries.",
+          "options": [
+            "Homo sapiens",
+            "Mus musculus",
+            "Rattus norvegicus",
+            "Pathogen/viral",
+            "Environmental/mixed",
+            "Custom/other"
+          ],
+          "minimum": null,
+          "maximum": null,
+          "step": null,
+          "advanced": false
+        },
+        {
+          "key": "missing_policy",
+          "label": "Missing-value policy",
+          "kind": "select",
+          "default": "Retain and flag",
+          "help": "Controls whether incomplete records remain visible for review.",
+          "options": [
+            "Retain and flag",
+            "Exclude incomplete records",
+            "Median/mode imputation for screening"
+          ],
+          "minimum": null,
+          "maximum": null,
+          "step": null,
+          "advanced": false
+        },
+        {
+          "key": "priority_threshold",
+          "label": "Priority review threshold",
+          "kind": "float",
+          "default": 0.7,
+          "help": "Records at or above this score are highlighted for review.",
+          "options": [],
+          "minimum": 0.0,
+          "maximum": 1.0,
+          "step": 0.05,
+          "advanced": false
+        },
+        {
+          "key": "random_seed",
+          "label": "Reproducibility seed",
+          "kind": "int",
+          "default": 42,
+          "help": "Seed used for deterministic sampling and preview calculations.",
+          "options": [],
+          "minimum": 0,
+          "maximum": 2147483647,
+          "step": 1,
+          "advanced": true
+        },
+        {
+          "key": "analysis_profile",
+          "label": "Workflow profile",
+          "kind": "select",
+          "default": "Multi-caller consensus",
+          "help": "Controls event-specific checks.",
+          "options": [
+            "Structural variants",
+            "Repeat expansions",
+            "Mosaicism",
+            "Multi-caller consensus"
+          ],
+          "minimum": null,
+          "maximum": null,
+          "step": null,
+          "advanced": false
+        },
+        {
+          "key": "min_support",
+          "label": "Minimum supporting reads",
+          "kind": "int",
+          "default": 3,
+          "help": "Events below this support are low-confidence.",
+          "options": [],
+          "minimum": 0,
+          "maximum": 10000,
+          "step": 1,
+          "advanced": false
+        },
+        {
+          "key": "mosaic_vaf_max",
+          "label": "Mosaic VAF upper bound",
+          "kind": "float",
+          "default": 0.35,
+          "help": "Allele fractions below this are reviewed as possible mosaic events.",
+          "options": [],
+          "minimum": 0.01,
+          "maximum": 0.5,
+          "step": 0.01,
+          "advanced": false
+        },
+        {
+          "key": "merge_distance",
+          "label": "Breakpoint merge distance (bp)",
+          "kind": "int",
+          "default": 1000,
+          "help": "Events within this distance may form a consensus cluster.",
+          "options": [],
+          "minimum": 0,
+          "maximum": 1000000,
+          "step": 100,
+          "advanced": true
+        }
+      ],
+      "qc_checks": [
+        "Coordinate validity",
+        "Event size",
+        "Read support",
+        "Caller concordance",
+        "Allele fraction",
+        "Copy-number consistency",
+        "Family/sample completeness"
+      ],
+      "capabilities": [
+        "SV normalization",
+        "Breakpoint clustering",
+        "Multi-caller consensus",
+        "Repeat review",
+        "Mosaic review",
+        "Gene/regulatory impact",
+        "Segregation"
+      ],
+      "specialist_engines": [
+        "SURVIVOR",
+        "ExpansionHunter",
+        "CNVkit",
+        "MELT"
+      ],
+      "reference_assets": [
+        "Reference FASTA",
+        "Repeat catalogue",
+        "Gene annotation",
+        "Population SV catalogue",
+        "Mappability/segdup tracks"
+      ],
+      "review_roles": [
+        "Analyst",
+        "Cytogenomics reviewer",
+        "Clinical reviewer"
+      ],
+      "native_extensions": [
+        "bam",
+        "bcf",
+        "bed",
+        "bedgraph",
+        "bedpe",
+        "broadpeak",
+        "cram",
+        "csv",
+        "json",
+        "narrowpeak",
+        "tsv",
+        "txt",
+        "vcf",
+        "xls",
+        "xlsx",
+        "bed.gz",
+        "vcf.gz"
+      ],
+      "preferred_viewers": [
+        "genome_browser"
+      ],
+      "native_features": [
+        "raw-read evidence readiness",
+        "multi-caller normalization",
+        "repeat-expansion planning",
+        "orthogonal-validation manifest"
+      ],
+      "comparison_identifiers": [
+        "event_id",
+        "sample"
+      ],
+      "automatic_engine_plans": [
+        {
+          "plan_key": "bcftools_stats",
+          "label": "BCFtools structural-call statistics",
+          "source_parameter": "vcf",
+          "compatible_extensions": [
+            "vcf",
+            "vcf.gz",
+            "bcf"
+          ],
+          "stdout_to_output": false,
+          "extra_parameters": [],
+          "required_reference_labels": []
+        },
+        {
+          "plan_key": "samtools_depth",
+          "label": "Breakpoint-region depth",
+          "source_parameter": "alignment",
+          "compatible_extensions": [
+            "bam",
+            "cram"
+          ],
+          "stdout_to_output": false,
+          "extra_parameters": [],
+          "required_reference_labels": []
+        },
+        {
+          "plan_key": "sniffles_call",
+          "label": "Sniffles long-read SV calling",
+          "source_parameter": "alignment",
+          "compatible_extensions": [
+            "bam",
+            "cram"
+          ],
+          "stdout_to_output": false,
+          "extra_parameters": [
+            [
+              "minsupport",
+              10
+            ]
+          ],
+          "required_reference_labels": []
+        }
+      ],
+      "engine_registry_entries": [
+        {
+          "key": "sniffles",
+          "label": "Sniffles2"
+        },
+        {
+          "key": "expansionhunter",
+          "label": "ExpansionHunter"
+        },
+        {
+          "key": "samtools",
+          "label": "SAMtools"
+        },
+        {
+          "key": "bcftools",
+          "label": "BCFtools"
+        },
+        {
+          "key": "whatshap",
+          "label": "WhatsHap"
+        }
+      ],
+      "optional_tools": [
+        {
+          "name": "SURVIVOR",
+          "probe": "SURVIVOR",
+          "kind": "binary",
+          "purpose": "SV caller merging",
+          "required": false
+        },
+        {
+          "name": "ExpansionHunter",
+          "probe": "ExpansionHunter",
+          "kind": "binary",
+          "purpose": "repeat expansions",
+          "required": false
+        },
+        {
+          "name": "CNVkit",
+          "probe": "cnvkit.py",
+          "kind": "binary",
+          "purpose": "copy-number analysis",
+          "required": false
+        }
+      ]
+    },
+    {
+      "key": "rna_splicing_peak",
+      "title": "RNA Splicing & Isoform Pathology Lab",
+      "short_title": "RNA Splicing Lab",
+      "category": "Bioinformatics",
+      "new_module_from_step137": false,
+      "existing_page": "pages/137_RNA_Isoform_Alternative_Splicing_Studio.py",
+      "summary": "Detect exon usage, intron retention, splice-site shifts, isoform switching and transcript-level pathology signals.",
+      "purpose": "Bridge transcriptomics, long-read evidence and variant interpretation through junction-aware, uncertainty-labelled analysis.",
+      "required_columns": [
+        "sample",
+        "gene",
+        "transcript",
+        "event",
+        "group",
+        "psi",
+        "junction_support"
+      ],
+      "accepted_inputs": [
+        "CSV",
+        "TSV",
+        "GTF",
+        "GFF",
+        "junction table",
+        "long-read transcript table"
+      ],
+      "workflow": [
+        "Import transcripts and junctions",
+        "Support QC",
+        "Event classification",
+        "Differential splicing",
+        "Variant linkage",
+        "Disease prioritisation",
+        "Export"
+      ],
+      "outputs": [
+        "splicing event table",
+        "isoform switches",
+        "junction QC",
+        "variant-splice links",
+        "evidence bundle"
+      ],
+      "visuals": [
+        "Sashimi-style view",
+        "Transcript architecture",
+        "Exon-usage heatmap",
+        "PSI distribution",
+        "Isoform switching",
+        "Junction support",
+        "Variant-splice map",
+        "Gene summary",
+        "Group balance and QC",
+        "High-confidence isoform switches",
+        "Aberrant splicing outliers",
+        "NMD-risk proxy"
+      ],
+      "visual_count": 12,
+      "boundary": "Built-in calculations are exploratory and do not replace splice-aware alignment, transcript assembly or validated DEXSeq, DRIMSeq, MAJIQ or long-read workflows.",
+      "handoffs": [
+        "Transcriptomics",
+        "Rare Disease Board",
+        "Long-Read Isoforms"
+      ],
+      "organisms": [
+        "Homo sapiens",
+        "Mus musculus",
+        "Custom/other"
+      ],
+      "genome_builds": [
+        "GRCh38",
+        "GRCh37",
+        "GRCm39",
+        "Custom/other"
+      ],
+      "analysis_profiles": [
+        "Differential splicing",
+        "Isoform switching",
+        "Aberrant splicing",
+        "Variant-linked review"
+      ],
+      "parameters": [
+        {
+          "key": "genome_build",
+          "label": "Genome/reference build",
+          "kind": "select",
+          "default": "GRCh38",
+          "help": "Coordinate system used by variants, intervals and annotations.",
+          "options": [
+            "GRCh38",
+            "GRCh37",
+            "T2T-CHM13v2.0",
+            "Custom/other"
+          ],
+          "minimum": null,
+          "maximum": null,
+          "step": null,
+          "advanced": false
+        },
+        {
+          "key": "organism",
+          "label": "Organism",
+          "kind": "select",
+          "default": "Homo sapiens",
+          "help": "Organism context used for annotations and scientific boundaries.",
+          "options": [
+            "Homo sapiens",
+            "Mus musculus",
+            "Rattus norvegicus",
+            "Pathogen/viral",
+            "Environmental/mixed",
+            "Custom/other"
+          ],
+          "minimum": null,
+          "maximum": null,
+          "step": null,
+          "advanced": false
+        },
+        {
+          "key": "missing_policy",
+          "label": "Missing-value policy",
+          "kind": "select",
+          "default": "Retain and flag",
+          "help": "Controls whether incomplete records remain visible for review.",
+          "options": [
+            "Retain and flag",
+            "Exclude incomplete records",
+            "Median/mode imputation for screening"
+          ],
+          "minimum": null,
+          "maximum": null,
+          "step": null,
+          "advanced": false
+        },
+        {
+          "key": "priority_threshold",
+          "label": "Priority review threshold",
+          "kind": "float",
+          "default": 0.7,
+          "help": "Records at or above this score are highlighted for review.",
+          "options": [],
+          "minimum": 0.0,
+          "maximum": 1.0,
+          "step": 0.05,
+          "advanced": false
+        },
+        {
+          "key": "random_seed",
+          "label": "Reproducibility seed",
+          "kind": "int",
+          "default": 42,
+          "help": "Seed used for deterministic sampling and preview calculations.",
+          "options": [],
+          "minimum": 0,
+          "maximum": 2147483647,
+          "step": 1,
+          "advanced": true
+        },
+        {
+          "key": "analysis_profile",
+          "label": "Workflow profile",
+          "kind": "select",
+          "default": "Differential splicing",
+          "help": "Selects event and output emphasis.",
+          "options": [
+            "Differential splicing",
+            "Isoform switching",
+            "Aberrant splicing",
+            "Variant-linked review"
+          ],
+          "minimum": null,
+          "maximum": null,
+          "step": null,
+          "advanced": false
+        },
+        {
+          "key": "min_junction_support",
+          "label": "Minimum junction support",
+          "kind": "int",
+          "default": 10,
+          "help": "Events below this support are flagged.",
+          "options": [],
+          "minimum": 0,
+          "maximum": 1000000,
+          "step": 1,
+          "advanced": false
+        },
+        {
+          "key": "min_delta_psi",
+          "label": "Minimum |ΔPSI|",
+          "kind": "float",
+          "default": 0.1,
+          "help": "Effect-size threshold for review.",
+          "options": [],
+          "minimum": 0.0,
+          "maximum": 1.0,
+          "step": 0.01,
+          "advanced": false
+        },
+        {
+          "key": "min_group_samples",
+          "label": "Minimum samples per group",
+          "kind": "int",
+          "default": 3,
+          "help": "Groups below this count receive a blocker.",
+          "options": [],
+          "minimum": 1,
+          "maximum": 1000,
+          "step": 1,
+          "advanced": false
+        }
+      ],
+      "qc_checks": [
+        "Junction support",
+        "Group balance",
+        "PSI bounds",
+        "Transcript consistency",
+        "Reference annotation",
+        "Replicate structure"
+      ],
+      "capabilities": [
+        "Event classification",
+        "Differential splicing",
+        "Isoform switching",
+        "Outlier detection",
+        "Variant linkage",
+        "Fusion review",
+        "NMD proxy"
+      ],
+      "specialist_engines": [
+        "STAR",
+        "RegTools",
+        "MAJIQ",
+        "DEXSeq"
+      ],
+      "reference_assets": [
+        "Reference FASTA",
+        "Transcript annotation GTF",
+        "Tissue splicing reference",
+        "Protein-domain annotation"
+      ],
+      "review_roles": [
+        "Analyst",
+        "RNA specialist",
+        "Rare-disease reviewer"
+      ],
+      "native_extensions": [
+        "bam",
+        "bed",
+        "bedgraph",
+        "broadpeak",
+        "cram",
+        "csv",
+        "gff",
+        "gff3",
+        "gtf",
+        "json",
+        "narrowpeak",
+        "sam",
+        "tsv",
+        "txt",
+        "xls",
+        "xlsx",
+        "bed.gz",
+        "gff.gz",
+        "gtf.gz"
+      ],
+      "preferred_viewers": [
+        "genome_browser"
+      ],
+      "native_features": [
+        "alignment/junction readiness",
+        "transcript-version locking",
+        "long-read isoform integration",
+        "read-backed event review"
+      ],
+      "comparison_identifiers": [
+        "gene",
+        "transcript",
+        "event"
+      ],
+      "automatic_engine_plans": [
+        {
+          "plan_key": "samtools_index",
+          "label": "Index splice alignment",
+          "source_parameter": "alignment",
+          "compatible_extensions": [
+            "bam",
+            "cram"
+          ],
+          "stdout_to_output": false,
+          "extra_parameters": [],
+          "required_reference_labels": []
+        },
+        {
+          "plan_key": "samtools_depth",
+          "label": "Junction-region coverage",
+          "source_parameter": "alignment",
+          "compatible_extensions": [
+            "bam",
+            "cram"
+          ],
+          "stdout_to_output": false,
+          "extra_parameters": [],
+          "required_reference_labels": []
+        }
+      ],
+      "engine_registry_entries": [
+        {
+          "key": "samtools",
+          "label": "SAMtools"
+        },
+        {
+          "key": "star",
+          "label": "STAR"
+        },
+        {
+          "key": "rmats",
+          "label": "rMATS"
+        },
+        {
+          "key": "majiq",
+          "label": "MAJIQ"
+        },
+        {
+          "key": "suppa2",
+          "label": "SUPPA2"
+        }
+      ],
+      "optional_tools": [
+        {
+          "name": "STAR",
+          "probe": "STAR",
+          "kind": "binary",
+          "purpose": "splice-aware alignment",
+          "required": false
+        },
+        {
+          "name": "RegTools",
+          "probe": "regtools",
+          "kind": "binary",
+          "purpose": "junction extraction",
+          "required": false
+        },
+        {
+          "name": "MAJIQ",
+          "probe": "majiq",
+          "kind": "binary",
+          "purpose": "local splicing variations",
+          "required": false
+        }
+      ]
+    },
+    {
+      "key": "immune_repertoire",
+      "title": "Immunogenomics & Immune Repertoire Studio",
+      "short_title": "Immune Repertoire Studio",
+      "category": "Bioinformatics",
+      "new_module_from_step137": true,
+      "existing_page": null,
+      "summary": "HLA, TCR and BCR repertoire analytics with clonotype expansion, diversity, V(D)J usage and longitudinal tracking.",
+      "purpose": "Inspect repertoire composition and immune clone dynamics while separating technical sampling effects from biological interpretation.",
+      "required_columns": [
+        "sample",
+        "clonotype",
+        "chain",
+        "v_gene",
+        "j_gene",
+        "cdr3",
+        "count"
+      ],
+      "accepted_inputs": [
+        "CSV",
+        "TSV",
+        "AIRR table",
+        "VDJ summary",
+        "single-cell receptor table"
+      ],
+      "workflow": [
+        "Import repertoire",
+        "Sequence and count QC",
+        "Clonotype assignment",
+        "Diversity analysis",
+        "Expansion tracking",
+        "Single-cell integration",
+        "Export"
+      ],
+      "outputs": [
+        "clonotype table",
+        "diversity metrics",
+        "V/J usage",
+        "longitudinal clone tracking",
+        "evidence bundle"
+      ],
+      "visuals": [
+        "Clonotype network",
+        "V/J chord-style matrix",
+        "CDR3 length",
+        "Diversity curves",
+        "Expansion treemap",
+        "Clone-cell embedding",
+        "Longitudinal tracking",
+        "QC dashboard",
+        "Chain and depth QC",
+        "Public/shared clonotypes",
+        "Clonality by sample",
+        "Rarefaction profile"
+      ],
+      "visual_count": 12,
+      "boundary": "Repertoire frequencies are sensitive to library preparation, sampling depth and clonotype definition; biological conclusions require matched experimental design.",
+      "handoffs": [
+        "Single-Cell Heterogeneity",
+        "Vaccine Design",
+        "Clinical Biomarker Studio"
+      ],
+      "organisms": [
+        "Homo sapiens",
+        "Mus musculus",
+        "Custom/other"
+      ],
+      "genome_builds": [
+        "Reference-independent"
+      ],
+      "analysis_profiles": [
+        "TCR",
+        "BCR",
+        "Single-cell VDJ",
+        "Longitudinal repertoire"
+      ],
+      "parameters": [
+        {
+          "key": "genome_build",
+          "label": "Genome/reference build",
+          "kind": "select",
+          "default": "GRCh38",
+          "help": "Coordinate system used by variants, intervals and annotations.",
+          "options": [
+            "GRCh38",
+            "GRCh37",
+            "T2T-CHM13v2.0",
+            "Custom/other"
+          ],
+          "minimum": null,
+          "maximum": null,
+          "step": null,
+          "advanced": false
+        },
+        {
+          "key": "organism",
+          "label": "Organism",
+          "kind": "select",
+          "default": "Homo sapiens",
+          "help": "Organism context used for annotations and scientific boundaries.",
+          "options": [
+            "Homo sapiens",
+            "Mus musculus",
+            "Rattus norvegicus",
+            "Pathogen/viral",
+            "Environmental/mixed",
+            "Custom/other"
+          ],
+          "minimum": null,
+          "maximum": null,
+          "step": null,
+          "advanced": false
+        },
+        {
+          "key": "missing_policy",
+          "label": "Missing-value policy",
+          "kind": "select",
+          "default": "Retain and flag",
+          "help": "Controls whether incomplete records remain visible for review.",
+          "options": [
+            "Retain and flag",
+            "Exclude incomplete records",
+            "Median/mode imputation for screening"
+          ],
+          "minimum": null,
+          "maximum": null,
+          "step": null,
+          "advanced": false
+        },
+        {
+          "key": "priority_threshold",
+          "label": "Priority review threshold",
+          "kind": "float",
+          "default": 0.7,
+          "help": "Records at or above this score are highlighted for review.",
+          "options": [],
+          "minimum": 0.0,
+          "maximum": 1.0,
+          "step": 0.05,
+          "advanced": false
+        },
+        {
+          "key": "random_seed",
+          "label": "Reproducibility seed",
+          "kind": "int",
+          "default": 42,
+          "help": "Seed used for deterministic sampling and preview calculations.",
+          "options": [],
+          "minimum": 0,
+          "maximum": 2147483647,
+          "step": 1,
+          "advanced": true
+        },
+        {
+          "key": "analysis_profile",
+          "label": "Repertoire profile",
+          "kind": "select",
+          "default": "TCR",
+          "help": "Selects receptor-specific guidance.",
+          "options": [
+            "TCR",
+            "BCR",
+            "Single-cell VDJ",
+            "Longitudinal repertoire"
+          ],
+          "minimum": null,
+          "maximum": null,
+          "step": null,
+          "advanced": false
+        },
+        {
+          "key": "min_clone_count",
+          "label": "Minimum clonotype count",
+          "kind": "int",
+          "default": 2,
+          "help": "Clonotypes below this count are flagged as low support.",
+          "options": [],
+          "minimum": 1,
+          "maximum": 100000,
+          "step": 1,
+          "advanced": false
+        },
+        {
+          "key": "public_clone_min_samples",
+          "label": "Shared-clone sample count",
+          "kind": "int",
+          "default": 2,
+          "help": "Minimum samples required for a public/shared clone.",
+          "options": [],
+          "minimum": 2,
+          "maximum": 1000,
+          "step": 1,
+          "advanced": false
+        }
+      ],
+      "qc_checks": [
+        "Read/count depth",
+        "Chain validity",
+        "CDR3 completeness",
+        "Sample depth balance",
+        "Clonotype uniqueness",
+        "Longitudinal consistency"
+      ],
+      "capabilities": [
+        "Clonotype assignment",
+        "Diversity",
+        "V/J usage",
+        "Expansion",
+        "Public clonotypes",
+        "Longitudinal tracking",
+        "Single-cell integration",
+        "Isotype switching"
+      ],
+      "specialist_engines": [
+        "MiXCR",
+        "IgBLAST",
+        "Scirpy"
+      ],
+      "reference_assets": [
+        "AIRR schema",
+        "IMGT germline database",
+        "Public clonotype reference",
+        "HLA reference"
+      ],
+      "review_roles": [
+        "Analyst",
+        "Immunologist",
+        "Clinical reviewer"
+      ],
+      "native_extensions": [
+        "airr",
+        "csv",
+        "fa",
+        "faa",
+        "fas",
+        "fasta",
+        "fastq",
+        "fna",
+        "fq",
+        "json",
+        "jsonl",
+        "ndjson",
+        "tsv",
+        "txt",
+        "xls",
+        "xlsx",
+        "fastq.gz",
+        "fq.gz"
+      ],
+      "preferred_viewers": [
+        "single_cell"
+      ],
+      "native_features": [
+        "AIRR/VDJ intake",
+        "paired-chain readiness",
+        "lineage and SHM planning",
+        "sampling-depth normalization"
+      ],
+      "comparison_identifiers": [
+        "clonotype",
+        "sample"
+      ],
+      "automatic_engine_plans": [
+        {
+          "plan_key": "anarci_number",
+          "label": "ANARCI receptor numbering",
+          "source_parameter": "fasta",
+          "compatible_extensions": [
+            "fa",
+            "fasta",
+            "faa"
+          ],
+          "stdout_to_output": false,
+          "extra_parameters": [
+            [
+              "scheme",
+              "imgt"
+            ]
+          ],
+          "required_reference_labels": []
+        }
+      ],
+      "engine_registry_entries": [
+        {
+          "key": "igblast",
+          "label": "IgBLAST"
+        },
+        {
+          "key": "anarci",
+          "label": "ANARCI"
+        }
+      ],
+      "optional_tools": [
+        {
+          "name": "MiXCR",
+          "probe": "mixcr",
+          "kind": "binary",
+          "purpose": "TCR/BCR clonotype assembly",
+          "required": false
+        },
+        {
+          "name": "IgBLAST",
+          "probe": "igblastn",
+          "kind": "binary",
+          "purpose": "V(D)J annotation",
+          "required": false
+        },
+        {
+          "name": "Scirpy",
+          "probe": "scirpy",
+          "kind": "python",
+          "purpose": "single-cell immune repertoire analysis",
+          "required": false
+        }
+      ]
+    },
+    {
+      "key": "single_cell_multiome",
+      "title": "Single-Cell Multiome & Regulatory Network Studio",
+      "short_title": "Single-Cell Multiome Studio",
+      "category": "Bioinformatics",
+      "new_module_from_step137": true,
+      "existing_page": null,
+      "summary": "Joint scRNA, scATAC and protein-tag analysis with modality QC, integrated embeddings and regulatory links.",
+      "purpose": "Build a transparent multi-modal cell-state view with marker agreement, batch diagnostics, peak-to-gene links and TF activity.",
+      "required_columns": [
+        "cell",
+        "sample",
+        "cluster",
+        "modality",
+        "feature",
+        "value",
+        "batch"
+      ],
+      "accepted_inputs": [
+        "CSV",
+        "TSV",
+        "H5AD metadata",
+        "MuData export",
+        "feature matrix"
+      ],
+      "workflow": [
+        "Import modalities",
+        "Modality QC",
+        "Cell and feature filtering",
+        "Joint embedding",
+        "Peak-to-gene links",
+        "Regulatory inference",
+        "Export"
+      ],
+      "outputs": [
+        "cell annotations",
+        "joint embedding",
+        "modality agreement",
+        "regulatory links",
+        "evidence bundle"
+      ],
+      "visuals": [
+        "Joint embedding",
+        "Modality agreement",
+        "RNA-ATAC links",
+        "TF activity heatmap",
+        "Cell trajectory",
+        "Feature browser",
+        "Batch mixing",
+        "Cluster composition",
+        "Cell quality landscape",
+        "Modality depth",
+        "Deep modality agreement",
+        "Multimodal marker ranking"
+      ],
+      "visual_count": 12,
+      "boundary": "Joint embeddings and transferred labels are exploratory. Validate modality integration, cell labels and regulatory links with independent evidence.",
+      "handoffs": [
+        "Single-Cell Heterogeneity",
+        "Cell Atlas Mapping",
+        "Gene Regulatory Network"
+      ],
+      "organisms": [
+        "Homo sapiens",
+        "Mus musculus",
+        "Custom/other"
+      ],
+      "genome_builds": [
+        "GRCh38",
+        "GRCm39",
+        "Custom/other"
+      ],
+      "analysis_profiles": [
+        "scRNA+scATAC",
+        "CITE-seq",
+        "Multiome QC",
+        "Regulatory inference"
+      ],
+      "parameters": [
+        {
+          "key": "genome_build",
+          "label": "Genome/reference build",
+          "kind": "select",
+          "default": "GRCh38",
+          "help": "Coordinate system used by variants, intervals and annotations.",
+          "options": [
+            "GRCh38",
+            "GRCh37",
+            "T2T-CHM13v2.0",
+            "Custom/other"
+          ],
+          "minimum": null,
+          "maximum": null,
+          "step": null,
+          "advanced": false
+        },
+        {
+          "key": "organism",
+          "label": "Organism",
+          "kind": "select",
+          "default": "Homo sapiens",
+          "help": "Organism context used for annotations and scientific boundaries.",
+          "options": [
+            "Homo sapiens",
+            "Mus musculus",
+            "Rattus norvegicus",
+            "Pathogen/viral",
+            "Environmental/mixed",
+            "Custom/other"
+          ],
+          "minimum": null,
+          "maximum": null,
+          "step": null,
+          "advanced": false
+        },
+        {
+          "key": "missing_policy",
+          "label": "Missing-value policy",
+          "kind": "select",
+          "default": "Retain and flag",
+          "help": "Controls whether incomplete records remain visible for review.",
+          "options": [
+            "Retain and flag",
+            "Exclude incomplete records",
+            "Median/mode imputation for screening"
+          ],
+          "minimum": null,
+          "maximum": null,
+          "step": null,
+          "advanced": false
+        },
+        {
+          "key": "priority_threshold",
+          "label": "Priority review threshold",
+          "kind": "float",
+          "default": 0.7,
+          "help": "Records at or above this score are highlighted for review.",
+          "options": [],
+          "minimum": 0.0,
+          "maximum": 1.0,
+          "step": 0.05,
+          "advanced": false
+        },
+        {
+          "key": "random_seed",
+          "label": "Reproducibility seed",
+          "kind": "int",
+          "default": 42,
+          "help": "Seed used for deterministic sampling and preview calculations.",
+          "options": [],
+          "minimum": 0,
+          "maximum": 2147483647,
+          "step": 1,
+          "advanced": true
+        },
+        {
+          "key": "analysis_profile",
+          "label": "Multiome profile",
+          "kind": "select",
+          "default": "scRNA+scATAC",
+          "help": "Selects modality-specific defaults.",
+          "options": [
+            "scRNA+scATAC",
+            "CITE-seq",
+            "Multiome QC",
+            "Regulatory inference"
+          ],
+          "minimum": null,
+          "maximum": null,
+          "step": null,
+          "advanced": false
+        },
+        {
+          "key": "min_features",
+          "label": "Minimum detected features per cell",
+          "kind": "int",
+          "default": 200,
+          "help": "Cells below this threshold are flagged.",
+          "options": [],
+          "minimum": 0,
+          "maximum": 100000,
+          "step": 50,
+          "advanced": false
+        },
+        {
+          "key": "max_mito_pct",
+          "label": "Maximum mitochondrial %",
+          "kind": "float",
+          "default": 20.0,
+          "help": "Cells above this value are flagged.",
+          "options": [],
+          "minimum": 0.0,
+          "maximum": 100.0,
+          "step": 1.0,
+          "advanced": false
+        },
+        {
+          "key": "min_modality_agreement",
+          "label": "Minimum modality agreement",
+          "kind": "float",
+          "default": 0.3,
+          "help": "Cells/links below this score receive review status.",
+          "options": [],
+          "minimum": 0.0,
+          "maximum": 1.0,
+          "step": 0.05,
+          "advanced": false
+        }
+      ],
+      "qc_checks": [
+        "Cell barcode matching",
+        "Modality depth",
+        "Feature counts",
+        "Mitochondrial fraction",
+        "Doublet proxy",
+        "Batch mixing",
+        "Cluster representation"
+      ],
+      "capabilities": [
+        "Joint embedding",
+        "Modality agreement",
+        "Peak-to-gene links",
+        "TF activity",
+        "Regulons",
+        "Pseudotime",
+        "Differential abundance",
+        "Multimodal markers"
+      ],
+      "specialist_engines": [
+        "Scanpy",
+        "MuData",
+        "MuON",
+        "ArchR/Signac bridge"
+      ],
+      "reference_assets": [
+        "Genome annotation",
+        "Peak set",
+        "Cell-type reference atlas",
+        "Motif library"
+      ],
+      "review_roles": [
+        "Analyst",
+        "Single-cell specialist",
+        "Biological reviewer"
+      ],
+      "native_extensions": [
+        "csv",
+        "h5",
+        "h5ad",
+        "h5mu",
+        "hdf5",
+        "json",
+        "mtx",
+        "mudata",
+        "tsv",
+        "txt",
+        "xls",
+        "xlsx",
+        "mtx.gz"
+      ],
+      "preferred_viewers": [
+        "single_cell"
+      ],
+      "native_features": [
+        "H5AD/MuData inventory",
+        "backed single-cell preview",
+        "modality-aware QC",
+        "joint-analysis readiness"
+      ],
+      "comparison_identifiers": [
+        "cell",
+        "sample"
+      ],
+      "automatic_engine_plans": [],
+      "engine_registry_entries": [
+        {
+          "key": "scanpy",
+          "label": "Scanpy Python"
+        },
+        {
+          "key": "scvelo",
+          "label": "scVelo Python"
+        }
+      ],
+      "optional_tools": [
+        {
+          "name": "Scanpy",
+          "probe": "scanpy",
+          "kind": "python",
+          "purpose": "single-cell analysis",
+          "required": false
+        },
+        {
+          "name": "MuData",
+          "probe": "mudata",
+          "kind": "python",
+          "purpose": "multimodal containers",
+          "required": false
+        },
+        {
+          "name": "MuON",
+          "probe": "muon",
+          "kind": "python",
+          "purpose": "multimodal integration",
+          "required": false
+        }
+      ]
+    },
+    {
+      "key": "proteogenomics_peak",
+      "title": "Proteogenomics & Neoantigen Discovery Studio",
+      "short_title": "Proteogenomics Studio",
+      "category": "Bioinformatics",
+      "new_module_from_step137": false,
+      "existing_page": "pages/124_Proteogenomics_and_Neoantigen_Discovery_Studio.py",
+      "summary": "Connect genomic variants, RNA expression, peptide evidence, HLA binding and normal-tissue risk for neoantigen research.",
+      "purpose": "Rank candidate variant peptides using multiple evidence layers and retain every exclusion and uncertainty decision.",
+      "required_columns": [
+        "sample",
+        "variant",
+        "gene",
+        "peptide",
+        "hla",
+        "binding_score",
+        "expression",
+        "ms_support"
+      ],
+      "accepted_inputs": [
+        "CSV",
+        "TSV",
+        "VCF-derived peptide table",
+        "FASTA",
+        "proteomics evidence"
+      ],
+      "workflow": [
+        "Import variants and peptides",
+        "Peptide QC",
+        "HLA binding review",
+        "RNA and MS support",
+        "Clonality and safety",
+        "Panel selection",
+        "Export"
+      ],
+      "outputs": [
+        "ranked peptides",
+        "HLA coverage",
+        "evidence matrix",
+        "normal-tissue risk",
+        "vaccine panel"
+      ],
+      "visuals": [
+        "Variant-peptide Sankey",
+        "HLA heatmap",
+        "Peptide coverage",
+        "RNA-MS evidence",
+        "Candidate waterfall",
+        "Normal-tissue risk",
+        "Clonality map",
+        "Panel diversity",
+        "Candidate panel",
+        "Shared neoantigens",
+        "Evidence-tier composition",
+        "Peptide QC"
+      ],
+      "visual_count": 12,
+      "boundary": "Predicted binding and immunogenicity do not establish therapeutic efficacy. Candidates require validated HLA typing, assays and safety review.",
+      "handoffs": [
+        "Cancer Genomics",
+        "Vaccine Design",
+        "Clinical Biomarker Studio"
+      ],
+      "organisms": [
+        "Homo sapiens",
+        "Mus musculus",
+        "Custom/other"
+      ],
+      "genome_builds": [
+        "GRCh38",
+        "GRCh37",
+        "Custom/other"
+      ],
+      "analysis_profiles": [
+        "Proteogenomics",
+        "Neoantigen prioritization",
+        "Vaccine panel"
+      ],
+      "parameters": [
+        {
+          "key": "genome_build",
+          "label": "Genome/reference build",
+          "kind": "select",
+          "default": "GRCh38",
+          "help": "Coordinate system used by variants, intervals and annotations.",
+          "options": [
+            "GRCh38",
+            "GRCh37",
+            "T2T-CHM13v2.0",
+            "Custom/other"
+          ],
+          "minimum": null,
+          "maximum": null,
+          "step": null,
+          "advanced": false
+        },
+        {
+          "key": "organism",
+          "label": "Organism",
+          "kind": "select",
+          "default": "Homo sapiens",
+          "help": "Organism context used for annotations and scientific boundaries.",
+          "options": [
+            "Homo sapiens",
+            "Mus musculus",
+            "Rattus norvegicus",
+            "Pathogen/viral",
+            "Environmental/mixed",
+            "Custom/other"
+          ],
+          "minimum": null,
+          "maximum": null,
+          "step": null,
+          "advanced": false
+        },
+        {
+          "key": "missing_policy",
+          "label": "Missing-value policy",
+          "kind": "select",
+          "default": "Retain and flag",
+          "help": "Controls whether incomplete records remain visible for review.",
+          "options": [
+            "Retain and flag",
+            "Exclude incomplete records",
+            "Median/mode imputation for screening"
+          ],
+          "minimum": null,
+          "maximum": null,
+          "step": null,
+          "advanced": false
+        },
+        {
+          "key": "priority_threshold",
+          "label": "Priority review threshold",
+          "kind": "float",
+          "default": 0.7,
+          "help": "Records at or above this score are highlighted for review.",
+          "options": [],
+          "minimum": 0.0,
+          "maximum": 1.0,
+          "step": 0.05,
+          "advanced": false
+        },
+        {
+          "key": "random_seed",
+          "label": "Reproducibility seed",
+          "kind": "int",
+          "default": 42,
+          "help": "Seed used for deterministic sampling and preview calculations.",
+          "options": [],
+          "minimum": 0,
+          "maximum": 2147483647,
+          "step": 1,
+          "advanced": true
+        },
+        {
+          "key": "analysis_profile",
+          "label": "Workflow profile",
+          "kind": "select",
+          "default": "Neoantigen prioritization",
+          "help": "Selects evidence requirements.",
+          "options": [
+            "Proteogenomics",
+            "Neoantigen prioritization",
+            "Vaccine panel"
+          ],
+          "minimum": null,
+          "maximum": null,
+          "step": null,
+          "advanced": false
+        },
+        {
+          "key": "max_normal_tissue_risk",
+          "label": "Maximum normal-tissue risk",
+          "kind": "float",
+          "default": 0.25,
+          "help": "Candidates above this score are blocked from the default panel.",
+          "options": [],
+          "minimum": 0.0,
+          "maximum": 1.0,
+          "step": 0.05,
+          "advanced": false
+        },
+        {
+          "key": "min_expression",
+          "label": "Minimum expression support",
+          "kind": "float",
+          "default": 1.0,
+          "help": "Expression below this value is considered weak support.",
+          "options": [],
+          "minimum": 0.0,
+          "maximum": 1000000.0,
+          "step": 0.5,
+          "advanced": false
+        },
+        {
+          "key": "panel_size",
+          "label": "Candidate panel size",
+          "kind": "int",
+          "default": 20,
+          "help": "Maximum candidates in the generated panel.",
+          "options": [],
+          "minimum": 1,
+          "maximum": 500,
+          "step": 1,
+          "advanced": false
+        }
+      ],
+      "qc_checks": [
+        "HLA completeness",
+        "Peptide length",
+        "Expression support",
+        "MS support",
+        "Clonality",
+        "Normal-tissue risk",
+        "Variant uniqueness"
+      ],
+      "capabilities": [
+        "Variant peptide generation",
+        "HLA ranking",
+        "RNA/MS evidence",
+        "Clonality",
+        "Normal-tissue review",
+        "Shared candidates",
+        "Panel diversity"
+      ],
+      "specialist_engines": [
+        "VEP",
+        "NetMHCpan",
+        "MSFragger"
+      ],
+      "reference_assets": [
+        "Reference proteome",
+        "Transcript annotation",
+        "HLA allele database",
+        "Normal tissue atlas",
+        "Search-engine parameter set"
+      ],
+      "review_roles": [
+        "Analyst",
+        "Immunogenomics specialist",
+        "Translational reviewer"
+      ],
+      "native_extensions": [
+        "bcf",
+        "csv",
+        "fa",
+        "faa",
+        "fas",
+        "fasta",
+        "fna",
+        "json",
+        "mgf",
+        "mzml",
+        "tsv",
+        "txt",
+        "vcf",
+        "xls",
+        "xlsx",
+        "mgf.gz",
+        "mzml.gz",
+        "vcf.gz"
+      ],
+      "preferred_viewers": [
+        "mass_spectrometry"
+      ],
+      "native_features": [
+        "variant/proteome/MS intake",
+        "spectrum evidence readiness",
+        "HLA model readiness",
+        "candidate adjudication"
+      ],
+      "comparison_identifiers": [
+        "variant",
+        "peptide",
+        "sample"
+      ],
+      "automatic_engine_plans": [
+        {
+          "plan_key": "bcftools_stats",
+          "label": "Variant source statistics",
+          "source_parameter": "vcf",
+          "compatible_extensions": [
+            "vcf",
+            "vcf.gz",
+            "bcf"
+          ],
+          "stdout_to_output": false,
+          "extra_parameters": [],
+          "required_reference_labels": []
+        },
+        {
+          "plan_key": "openms_fileinfo",
+          "label": "OpenMS mzML validation",
+          "source_parameter": "mzml",
+          "compatible_extensions": [
+            "mzml",
+            "mzml.gz"
+          ],
+          "stdout_to_output": false,
+          "extra_parameters": [],
+          "required_reference_labels": []
+        }
+      ],
+      "engine_registry_entries": [
+        {
+          "key": "bcftools",
+          "label": "BCFtools"
+        },
+        {
+          "key": "openms",
+          "label": "OpenMS"
+        },
+        {
+          "key": "comet",
+          "label": "Comet"
+        },
+        {
+          "key": "netmhcpan",
+          "label": "NetMHCpan"
+        },
+        {
+          "key": "netmhciipan",
+          "label": "NetMHCIIpan"
+        }
+      ],
+      "optional_tools": [
+        {
+          "name": "VEP",
+          "probe": "vep",
+          "kind": "binary",
+          "purpose": "variant consequences",
+          "required": false
+        },
+        {
+          "name": "NetMHCpan",
+          "probe": "netMHCpan",
+          "kind": "binary",
+          "purpose": "HLA binding predictions",
+          "required": false
+        },
+        {
+          "name": "MSFragger",
+          "probe": "MSFragger",
+          "kind": "binary",
+          "purpose": "proteomics peptide search",
+          "required": false
+        }
+      ]
+    },
+    {
+      "key": "gene_regulatory_network",
+      "title": "Gene Regulatory Network & TF Activity Studio",
+      "short_title": "Regulatory Network Studio",
+      "category": "Bioinformatics",
+      "new_module_from_step137": true,
+      "existing_page": null,
+      "summary": "Infer evidence-weighted TF-target relationships, regulon activity and condition-specific master regulators.",
+      "purpose": "Combine expression, accessibility and motif evidence into reviewable regulatory hypotheses rather than opaque network claims.",
+      "required_columns": [
+        "sample",
+        "condition",
+        "tf",
+        "target",
+        "activity",
+        "evidence",
+        "expression"
+      ],
+      "accepted_inputs": [
+        "CSV",
+        "TSV",
+        "regulon table",
+        "motif activity table",
+        "peak-gene links"
+      ],
+      "workflow": [
+        "Import regulatory evidence",
+        "Edge QC",
+        "Regulon scoring",
+        "Condition comparison",
+        "Master-regulator ranking",
+        "Perturbation scenarios",
+        "Export"
+      ],
+      "outputs": [
+        "regulatory edge table",
+        "TF activity",
+        "regulon scores",
+        "master regulators",
+        "evidence bundle"
+      ],
+      "visuals": [
+        "TF network",
+        "Regulon heatmap",
+        "TF volcano",
+        "Target Sankey",
+        "Centrality plot",
+        "Circuit diagram",
+        "Evidence matrix",
+        "Condition comparison",
+        "Master regulator ranking",
+        "Network statistics",
+        "Perturbation simulation",
+        "Edge-confidence distribution"
+      ],
+      "visual_count": 12,
+      "boundary": "Inferred regulatory edges are hypotheses and must be validated with perturbation, binding or orthogonal evidence.",
+      "handoffs": [
+        "Epigenomics",
+        "Transcriptomics",
+        "Causal Biology"
+      ],
+      "organisms": [
+        "Homo sapiens",
+        "Mus musculus",
+        "Custom/other"
+      ],
+      "genome_builds": [
+        "GRCh38",
+        "GRCm39",
+        "Custom/other"
+      ],
+      "analysis_profiles": [
+        "Bulk RNA",
+        "Single-cell RNA",
+        "RNA+ATAC",
+        "Perturbation"
+      ],
+      "parameters": [
+        {
+          "key": "genome_build",
+          "label": "Genome/reference build",
+          "kind": "select",
+          "default": "GRCh38",
+          "help": "Coordinate system used by variants, intervals and annotations.",
+          "options": [
+            "GRCh38",
+            "GRCh37",
+            "T2T-CHM13v2.0",
+            "Custom/other"
+          ],
+          "minimum": null,
+          "maximum": null,
+          "step": null,
+          "advanced": false
+        },
+        {
+          "key": "organism",
+          "label": "Organism",
+          "kind": "select",
+          "default": "Homo sapiens",
+          "help": "Organism context used for annotations and scientific boundaries.",
+          "options": [
+            "Homo sapiens",
+            "Mus musculus",
+            "Rattus norvegicus",
+            "Pathogen/viral",
+            "Environmental/mixed",
+            "Custom/other"
+          ],
+          "minimum": null,
+          "maximum": null,
+          "step": null,
+          "advanced": false
+        },
+        {
+          "key": "missing_policy",
+          "label": "Missing-value policy",
+          "kind": "select",
+          "default": "Retain and flag",
+          "help": "Controls whether incomplete records remain visible for review.",
+          "options": [
+            "Retain and flag",
+            "Exclude incomplete records",
+            "Median/mode imputation for screening"
+          ],
+          "minimum": null,
+          "maximum": null,
+          "step": null,
+          "advanced": false
+        },
+        {
+          "key": "priority_threshold",
+          "label": "Priority review threshold",
+          "kind": "float",
+          "default": 0.7,
+          "help": "Records at or above this score are highlighted for review.",
+          "options": [],
+          "minimum": 0.0,
+          "maximum": 1.0,
+          "step": 0.05,
+          "advanced": false
+        },
+        {
+          "key": "random_seed",
+          "label": "Reproducibility seed",
+          "kind": "int",
+          "default": 42,
+          "help": "Seed used for deterministic sampling and preview calculations.",
+          "options": [],
+          "minimum": 0,
+          "maximum": 2147483647,
+          "step": 1,
+          "advanced": true
+        },
+        {
+          "key": "analysis_profile",
+          "label": "Regulatory profile",
+          "kind": "select",
+          "default": "RNA+ATAC",
+          "help": "Selects network evidence requirements.",
+          "options": [
+            "Bulk RNA",
+            "Single-cell RNA",
+            "RNA+ATAC",
+            "Perturbation"
+          ],
+          "minimum": null,
+          "maximum": null,
+          "step": null,
+          "advanced": false
+        },
+        {
+          "key": "min_edge_evidence",
+          "label": "Minimum edge evidence",
+          "kind": "float",
+          "default": 0.5,
+          "help": "Edges below this score remain visible but are not high confidence.",
+          "options": [],
+          "minimum": 0.0,
+          "maximum": 1.0,
+          "step": 0.05,
+          "advanced": false
+        },
+        {
+          "key": "max_edges",
+          "label": "Maximum displayed network edges",
+          "kind": "int",
+          "default": 100,
+          "help": "Limits network complexity for interactive rendering.",
+          "options": [],
+          "minimum": 10,
+          "maximum": 1000,
+          "step": 10,
+          "advanced": false
+        }
+      ],
+      "qc_checks": [
+        "TF/target completeness",
+        "Replicate balance",
+        "Activity variance",
+        "Motif support",
+        "Edge evidence",
+        "Network density"
+      ],
+      "capabilities": [
+        "Regulon scoring",
+        "Differential TF activity",
+        "Master regulators",
+        "Network centrality",
+        "Perturbation simulation",
+        "Enhancer-promoter links",
+        "Time-series comparison"
+      ],
+      "specialist_engines": [
+        "pySCENIC",
+        "HOMER",
+        "BEDTools"
+      ],
+      "reference_assets": [
+        "Motif library",
+        "TF-target knowledgebase",
+        "Genome annotation",
+        "Chromatin accessibility tracks"
+      ],
+      "review_roles": [
+        "Analyst",
+        "Regulatory genomics specialist",
+        "Biological reviewer"
+      ],
+      "native_extensions": [
+        "bed",
+        "bedgraph",
+        "broadpeak",
+        "csv",
+        "gff",
+        "gff3",
+        "gtf",
+        "h5ad",
+        "json",
+        "narrowpeak",
+        "tsv",
+        "txt",
+        "xls",
+        "xlsx",
+        "bed.gz",
+        "gff.gz",
+        "gtf.gz"
+      ],
+      "preferred_viewers": [
+        "multiomics"
+      ],
+      "native_features": [
+        "multi-omic evidence intake",
+        "edge-provenance locking",
+        "bootstrap network planning",
+        "perturbation scenario manifest"
+      ],
+      "comparison_identifiers": [
+        "tf",
+        "target",
+        "sample"
+      ],
+      "automatic_engine_plans": [],
+      "engine_registry_entries": [
+        {
+          "key": "scanpy",
+          "label": "Scanpy Python"
+        },
+        {
+          "key": "deeptools",
+          "label": "deepTools"
+        },
+        {
+          "key": "bedtools",
+          "label": "BEDTools"
+        }
+      ],
+      "optional_tools": [
+        {
+          "name": "pySCENIC",
+          "probe": "pyscenic",
+          "kind": "binary",
+          "purpose": "regulon inference",
+          "required": false
+        },
+        {
+          "name": "HOMER",
+          "probe": "findMotifsGenome.pl",
+          "kind": "binary",
+          "purpose": "motif enrichment",
+          "required": false
+        },
+        {
+          "name": "BEDTools",
+          "probe": "bedtools",
+          "kind": "binary",
+          "purpose": "peak-to-gene overlaps",
+          "required": false
+        }
+      ]
+    },
+    {
+      "key": "federated_genomic_discovery",
+      "title": "Federated Genomic Discovery & Phenopacket Studio",
+      "short_title": "Federated Genomic Discovery",
+      "category": "Bioinformatics",
+      "new_module_from_step137": true,
+      "existing_page": null,
+      "summary": "Phenopacket, pedigree and Beacon-style cohort discovery with consent-aware source provenance.",
+      "purpose": "Match phenotype and variant evidence across local or federated sources without hiding access restrictions or match uncertainty.",
+      "required_columns": [
+        "case_id",
+        "source",
+        "phenotype",
+        "gene",
+        "variant",
+        "phenotype_similarity",
+        "variant_match",
+        "access_status"
+      ],
+      "accepted_inputs": [
+        "CSV",
+        "TSV",
+        "Phenopacket JSON",
+        "Beacon-style response",
+        "pedigree table"
+      ],
+      "workflow": [
+        "Import cases",
+        "Phenotype validation",
+        "Access and consent review",
+        "Federated query",
+        "Case matching",
+        "Human review",
+        "Export"
+      ],
+      "outputs": [
+        "case matches",
+        "source coverage",
+        "phenotype matrix",
+        "access review",
+        "query provenance"
+      ],
+      "visuals": [
+        "Phenotype-case matrix",
+        "Federated source map",
+        "Variant-match network",
+        "Pedigree view",
+        "Access badges",
+        "Query timeline",
+        "Match waterfall",
+        "Source coverage",
+        "Consent and access matrix",
+        "Federated query plan",
+        "Case-level match summary",
+        "Phenopacket QC"
+      ],
+      "visual_count": 12,
+      "boundary": "Federated discovery does not grant access to restricted records and must respect consent, governance and source-specific interpretation rules.",
+      "handoffs": [
+        "Rare Disease Board",
+        "Variant Workbench",
+        "Evidence Review"
+      ],
+      "organisms": [
+        "Homo sapiens",
+        "Custom/other"
+      ],
+      "genome_builds": [
+        "GA4GH/VRS",
+        "GRCh38",
+        "GRCh37"
+      ],
+      "analysis_profiles": [
+        "Phenopacket review",
+        "Federated discovery",
+        "Case matching"
+      ],
+      "parameters": [
+        {
+          "key": "genome_build",
+          "label": "Genome/reference build",
+          "kind": "select",
+          "default": "GRCh38",
+          "help": "Coordinate system used by variants, intervals and annotations.",
+          "options": [
+            "GRCh38",
+            "GRCh37",
+            "T2T-CHM13v2.0",
+            "Custom/other"
+          ],
+          "minimum": null,
+          "maximum": null,
+          "step": null,
+          "advanced": false
+        },
+        {
+          "key": "organism",
+          "label": "Organism",
+          "kind": "select",
+          "default": "Homo sapiens",
+          "help": "Organism context used for annotations and scientific boundaries.",
+          "options": [
+            "Homo sapiens",
+            "Mus musculus",
+            "Rattus norvegicus",
+            "Pathogen/viral",
+            "Environmental/mixed",
+            "Custom/other"
+          ],
+          "minimum": null,
+          "maximum": null,
+          "step": null,
+          "advanced": false
+        },
+        {
+          "key": "missing_policy",
+          "label": "Missing-value policy",
+          "kind": "select",
+          "default": "Retain and flag",
+          "help": "Controls whether incomplete records remain visible for review.",
+          "options": [
+            "Retain and flag",
+            "Exclude incomplete records",
+            "Median/mode imputation for screening"
+          ],
+          "minimum": null,
+          "maximum": null,
+          "step": null,
+          "advanced": false
+        },
+        {
+          "key": "priority_threshold",
+          "label": "Priority review threshold",
+          "kind": "float",
+          "default": 0.7,
+          "help": "Records at or above this score are highlighted for review.",
+          "options": [],
+          "minimum": 0.0,
+          "maximum": 1.0,
+          "step": 0.05,
+          "advanced": false
+        },
+        {
+          "key": "random_seed",
+          "label": "Reproducibility seed",
+          "kind": "int",
+          "default": 42,
+          "help": "Seed used for deterministic sampling and preview calculations.",
+          "options": [],
+          "minimum": 0,
+          "maximum": 2147483647,
+          "step": 1,
+          "advanced": true
+        },
+        {
+          "key": "analysis_profile",
+          "label": "Discovery profile",
+          "kind": "select",
+          "default": "Case matching",
+          "help": "Controls query and review emphasis.",
+          "options": [
+            "Phenopacket review",
+            "Federated discovery",
+            "Case matching"
+          ],
+          "minimum": null,
+          "maximum": null,
+          "step": null,
+          "advanced": false
+        },
+        {
+          "key": "min_phenotype_similarity",
+          "label": "Minimum phenotype similarity",
+          "kind": "float",
+          "default": 0.4,
+          "help": "Matches below this score are low priority.",
+          "options": [],
+          "minimum": 0.0,
+          "maximum": 1.0,
+          "step": 0.05,
+          "advanced": false
+        },
+        {
+          "key": "privacy_mode",
+          "label": "Privacy mode",
+          "kind": "select",
+          "default": "Metadata-only",
+          "help": "Controls whether only local metadata or federated requests are planned.",
+          "options": [
+            "Metadata-only",
+            "Local/private",
+            "Federated request plan"
+          ],
+          "minimum": null,
+          "maximum": null,
+          "step": null,
+          "advanced": false
+        }
+      ],
+      "qc_checks": [
+        "Phenopacket validity",
+        "HPO identifiers",
+        "Variant representation",
+        "Consent scope",
+        "Access status",
+        "Source availability",
+        "De-identification"
+      ],
+      "capabilities": [
+        "Phenotype similarity",
+        "Genotype-phenotype matching",
+        "Federated source discovery",
+        "Consent review",
+        "Case matching",
+        "Query provenance",
+        "De-identification review"
+      ],
+      "specialist_engines": [
+        "Phenopackets",
+        "GA4GH VRS",
+        "Beacon v2 client"
+      ],
+      "reference_assets": [
+        "HPO release",
+        "GA4GH VRS schema",
+        "Beacon endpoint registry",
+        "Consent/data-use policy"
+      ],
+      "review_roles": [
+        "Analyst",
+        "Data-access reviewer",
+        "Clinical reviewer"
+      ],
+      "native_extensions": [
+        "csv",
+        "json",
+        "jsonl",
+        "ndjson",
+        "tsv",
+        "txt",
+        "xls",
+        "xlsx",
+        "yaml",
+        "yml",
+        "phenopacket.json"
+      ],
+      "preferred_viewers": [
+        "static_reporting"
+      ],
+      "native_features": [
+        "Phenopacket validation",
+        "federated query manifest",
+        "consent-aware review",
+        "source response audit"
+      ],
+      "comparison_identifiers": [
+        "case_id",
+        "source"
+      ],
+      "automatic_engine_plans": [],
+      "engine_registry_entries": [],
+      "optional_tools": [
+        {
+          "name": "Phenopackets",
+          "probe": "phenopackets",
+          "kind": "python",
+          "purpose": "machine-readable clinical phenotypes",
+          "required": false
+        },
+        {
+          "name": "GA4GH VRS",
+          "probe": "ga4gh.vrs",
+          "kind": "python",
+          "purpose": "variant representation",
+          "required": false
+        }
+      ]
+    },
+    {
+      "key": "viral_within_host",
+      "title": "Viral Genomics & Within-Host Evolution Studio",
+      "short_title": "Viral Evolution Studio",
+      "category": "Bioinformatics",
+      "new_module_from_step137": false,
+      "existing_page": "pages/146_Virology_Viral_Evolution_Workbench.py",
+      "summary": "Consensus, minor-variant, lineage, recombination, selection and longitudinal within-host evolution analysis.",
+      "purpose": "Separate low-frequency noise from reproducible viral evolution signals and connect sequence changes to time and lineage context.",
+      "required_columns": [
+        "sample",
+        "subject",
+        "time",
+        "chrom",
+        "position",
+        "ref",
+        "alt",
+        "frequency",
+        "lineage"
+      ],
+      "accepted_inputs": [
+        "CSV",
+        "TSV",
+        "VCF",
+        "VCF.GZ",
+        "FASTA-derived variant table"
+      ],
+      "workflow": [
+        "Import variants",
+        "Depth and frequency QC",
+        "Consensus and minor variants",
+        "Longitudinal dynamics",
+        "Lineage and recombination",
+        "Selection review",
+        "Export"
+      ],
+      "outputs": [
+        "variant table",
+        "within-host trajectories",
+        "lineage markers",
+        "recombination flags",
+        "surveillance bundle"
+      ],
+      "visuals": [
+        "Frequency trajectories",
+        "Minor-variant spectrum",
+        "Lineage map",
+        "Recombination matrix",
+        "Selection profile",
+        "Subject timeline",
+        "Mutation heatmap",
+        "QC dashboard",
+        "Depth QC",
+        "Primer-dropout profile",
+        "Mixed-infection review",
+        "Transmission summary"
+      ],
+      "visual_count": 12,
+      "boundary": "Low-frequency variants are highly sensitive to sequencing and contamination artefacts; confirm with validated callers, controls and replicate evidence.",
+      "handoffs": [
+        "Pathogen Outbreak",
+        "Comparative Pathogen Genomics",
+        "AMR Surveillance"
+      ],
+      "organisms": [
+        "Pathogen/viral",
+        "Custom/other"
+      ],
+      "genome_builds": [
+        "Virus-specific reference",
+        "Custom/other"
+      ],
+      "analysis_profiles": [
+        "Consensus/lineage",
+        "Within-host variants",
+        "Outbreak linkage",
+        "Resistance/antigenic review"
+      ],
+      "parameters": [
+        {
+          "key": "genome_build",
+          "label": "Genome/reference build",
+          "kind": "select",
+          "default": "GRCh38",
+          "help": "Coordinate system used by variants, intervals and annotations.",
+          "options": [
+            "GRCh38",
+            "GRCh37",
+            "T2T-CHM13v2.0",
+            "Custom/other"
+          ],
+          "minimum": null,
+          "maximum": null,
+          "step": null,
+          "advanced": false
+        },
+        {
+          "key": "organism",
+          "label": "Organism",
+          "kind": "select",
+          "default": "Homo sapiens",
+          "help": "Organism context used for annotations and scientific boundaries.",
+          "options": [
+            "Homo sapiens",
+            "Mus musculus",
+            "Rattus norvegicus",
+            "Pathogen/viral",
+            "Environmental/mixed",
+            "Custom/other"
+          ],
+          "minimum": null,
+          "maximum": null,
+          "step": null,
+          "advanced": false
+        },
+        {
+          "key": "missing_policy",
+          "label": "Missing-value policy",
+          "kind": "select",
+          "default": "Retain and flag",
+          "help": "Controls whether incomplete records remain visible for review.",
+          "options": [
+            "Retain and flag",
+            "Exclude incomplete records",
+            "Median/mode imputation for screening"
+          ],
+          "minimum": null,
+          "maximum": null,
+          "step": null,
+          "advanced": false
+        },
+        {
+          "key": "priority_threshold",
+          "label": "Priority review threshold",
+          "kind": "float",
+          "default": 0.7,
+          "help": "Records at or above this score are highlighted for review.",
+          "options": [],
+          "minimum": 0.0,
+          "maximum": 1.0,
+          "step": 0.05,
+          "advanced": false
+        },
+        {
+          "key": "random_seed",
+          "label": "Reproducibility seed",
+          "kind": "int",
+          "default": 42,
+          "help": "Seed used for deterministic sampling and preview calculations.",
+          "options": [],
+          "minimum": 0,
+          "maximum": 2147483647,
+          "step": 1,
+          "advanced": true
+        },
+        {
+          "key": "analysis_profile",
+          "label": "Viral analysis profile",
+          "kind": "select",
+          "default": "Within-host variants",
+          "help": "Selects frequency and timeline defaults.",
+          "options": [
+            "Consensus/lineage",
+            "Within-host variants",
+            "Outbreak linkage",
+            "Resistance/antigenic review"
+          ],
+          "minimum": null,
+          "maximum": null,
+          "step": null,
+          "advanced": false
+        },
+        {
+          "key": "min_depth",
+          "label": "Minimum depth",
+          "kind": "int",
+          "default": 100,
+          "help": "Sites below this depth are flagged.",
+          "options": [],
+          "minimum": 0,
+          "maximum": 1000000,
+          "step": 10,
+          "advanced": false
+        },
+        {
+          "key": "minor_variant_min",
+          "label": "Minor-variant frequency",
+          "kind": "float",
+          "default": 0.02,
+          "help": "Lower frequency threshold for within-host candidates.",
+          "options": [],
+          "minimum": 0.001,
+          "maximum": 0.5,
+          "step": 0.005,
+          "advanced": false
+        },
+        {
+          "key": "primer_dropout_threshold",
+          "label": "Primer-dropout depth fraction",
+          "kind": "float",
+          "default": 0.2,
+          "help": "Regions below this fraction of median depth are flagged.",
+          "options": [],
+          "minimum": 0.0,
+          "maximum": 1.0,
+          "step": 0.05,
+          "advanced": true
+        }
+      ],
+      "qc_checks": [
+        "Depth",
+        "Reference consistency",
+        "Mixed infection",
+        "Primer dropout",
+        "Timepoint order",
+        "Contamination",
+        "Lineage database version"
+      ],
+      "capabilities": [
+        "Consensus QC",
+        "Minor variants",
+        "Quasispecies proxy",
+        "Lineage assignment",
+        "Recombination",
+        "Selection proxy",
+        "Transmission distance",
+        "Resistance/antigenic review"
+      ],
+      "specialist_engines": [
+        "iVar",
+        "Nextclade",
+        "LoFreq",
+        "MAFFT/IQ-TREE"
+      ],
+      "reference_assets": [
+        "Viral reference genome",
+        "Primer scheme",
+        "Lineage database",
+        "Resistance catalogue",
+        "Antigenic-site annotation"
+      ],
+      "review_roles": [
+        "Analyst",
+        "Virologist",
+        "Outbreak reviewer"
+      ],
+      "native_extensions": [
+        "bam",
+        "bcf",
+        "cram",
+        "csv",
+        "fa",
+        "faa",
+        "fas",
+        "fasta",
+        "fastq",
+        "fna",
+        "fq",
+        "json",
+        "tsv",
+        "txt",
+        "vcf",
+        "xls",
+        "xlsx",
+        "fastq.gz",
+        "fq.gz",
+        "vcf.gz"
+      ],
+      "preferred_viewers": [
+        "genome_browser"
+      ],
+      "native_features": [
+        "raw-read/consensus intake",
+        "primer-dropout readiness",
+        "minor-variant manifest",
+        "phylogeny and lineage planning"
+      ],
+      "comparison_identifiers": [
+        "subject",
+        "position",
+        "time"
+      ],
+      "automatic_engine_plans": [
+        {
+          "plan_key": "bcftools_stats",
+          "label": "Viral VCF statistics",
+          "source_parameter": "vcf",
+          "compatible_extensions": [
+            "vcf",
+            "vcf.gz",
+            "bcf"
+          ],
+          "stdout_to_output": false,
+          "extra_parameters": [],
+          "required_reference_labels": []
+        },
+        {
+          "plan_key": "mafft_align",
+          "label": "MAFFT sequence alignment",
+          "source_parameter": "fasta",
+          "compatible_extensions": [
+            "fa",
+            "fasta",
+            "fna",
+            "faa"
+          ],
+          "stdout_to_output": true,
+          "extra_parameters": [],
+          "required_reference_labels": []
+        },
+        {
+          "plan_key": "samtools_depth",
+          "label": "Viral alignment depth",
+          "source_parameter": "alignment",
+          "compatible_extensions": [
+            "bam",
+            "cram"
+          ],
+          "stdout_to_output": false,
+          "extra_parameters": [],
+          "required_reference_labels": []
+        }
+      ],
+      "engine_registry_entries": [
+        {
+          "key": "minimap2",
+          "label": "minimap2"
+        },
+        {
+          "key": "samtools",
+          "label": "SAMtools"
+        },
+        {
+          "key": "bcftools",
+          "label": "BCFtools"
+        },
+        {
+          "key": "mafft",
+          "label": "MAFFT"
+        },
+        {
+          "key": "iqtree",
+          "label": "IQ-TREE"
+        }
+      ],
+      "optional_tools": [
+        {
+          "name": "iVar",
+          "probe": "ivar",
+          "kind": "binary",
+          "purpose": "viral consensus and variants",
+          "required": false
+        },
+        {
+          "name": "Nextclade",
+          "probe": "nextclade",
+          "kind": "binary",
+          "purpose": "lineage and QC",
+          "required": false
+        },
+        {
+          "name": "LoFreq",
+          "probe": "lofreq",
+          "kind": "binary",
+          "purpose": "low-frequency variants",
+          "required": false
+        }
+      ]
+    },
+    {
+      "key": "genome_annotation",
+      "title": "Genome Annotation & Comparative Annotation Studio",
+      "short_title": "Genome Annotation Studio",
+      "category": "Bioinformatics",
+      "new_module_from_step137": true,
+      "existing_page": null,
+      "summary": "Validate GFF/GTF gene models, compare annotation versions and integrate orthology, protein-domain and synteny evidence.",
+      "purpose": "Create an auditable annotation review queue that separates model completeness from functional evidence.",
+      "required_columns": [
+        "genome",
+        "feature_id",
+        "chrom",
+        "start",
+        "end",
+        "strand",
+        "feature_type",
+        "evidence"
+      ],
+      "accepted_inputs": [
+        "CSV",
+        "TSV",
+        "GFF",
+        "GFF3",
+        "GTF",
+        "annotation comparison table"
+      ],
+      "workflow": [
+        "Import annotation",
+        "Syntax and coordinate QC",
+        "Gene-model comparison",
+        "Functional evidence",
+        "Orthology and synteny",
+        "Completeness review",
+        "Export"
+      ],
+      "outputs": [
+        "validated annotation",
+        "version diff",
+        "completeness metrics",
+        "orthology table",
+        "review bundle"
+      ],
+      "visuals": [
+        "Genome feature track",
+        "Annotation diff",
+        "Completeness dashboard",
+        "Orthology matrix",
+        "Synteny blocks",
+        "Evidence distribution",
+        "Feature-length profile",
+        "Review funnel",
+        "Annotation conflict map",
+        "Orphan feature review",
+        "Version consistency",
+        "Feature QC matrix"
+      ],
+      "visual_count": 12,
+      "boundary": "Automated annotation transfer can propagate errors. Curated gene models and experimental evidence remain authoritative.",
+      "handoffs": [
+        "Long-Read Assembly",
+        "Protein Annotation",
+        "Comparative Genomics"
+      ],
+      "organisms": [
+        "Homo sapiens",
+        "Mus musculus",
+        "Pathogen/viral",
+        "Environmental/mixed",
+        "Custom/other"
+      ],
+      "genome_builds": [
+        "Assembly-specific",
+        "Custom/other"
+      ],
+      "analysis_profiles": [
+        "Eukaryotic annotation",
+        "Prokaryotic annotation",
+        "Annotation comparison",
+        "Transfer/curation"
+      ],
+      "parameters": [
+        {
+          "key": "genome_build",
+          "label": "Genome/reference build",
+          "kind": "select",
+          "default": "GRCh38",
+          "help": "Coordinate system used by variants, intervals and annotations.",
+          "options": [
+            "GRCh38",
+            "GRCh37",
+            "T2T-CHM13v2.0",
+            "Custom/other"
+          ],
+          "minimum": null,
+          "maximum": null,
+          "step": null,
+          "advanced": false
+        },
+        {
+          "key": "organism",
+          "label": "Organism",
+          "kind": "select",
+          "default": "Homo sapiens",
+          "help": "Organism context used for annotations and scientific boundaries.",
+          "options": [
+            "Homo sapiens",
+            "Mus musculus",
+            "Rattus norvegicus",
+            "Pathogen/viral",
+            "Environmental/mixed",
+            "Custom/other"
+          ],
+          "minimum": null,
+          "maximum": null,
+          "step": null,
+          "advanced": false
+        },
+        {
+          "key": "missing_policy",
+          "label": "Missing-value policy",
+          "kind": "select",
+          "default": "Retain and flag",
+          "help": "Controls whether incomplete records remain visible for review.",
+          "options": [
+            "Retain and flag",
+            "Exclude incomplete records",
+            "Median/mode imputation for screening"
+          ],
+          "minimum": null,
+          "maximum": null,
+          "step": null,
+          "advanced": false
+        },
+        {
+          "key": "priority_threshold",
+          "label": "Priority review threshold",
+          "kind": "float",
+          "default": 0.7,
+          "help": "Records at or above this score are highlighted for review.",
+          "options": [],
+          "minimum": 0.0,
+          "maximum": 1.0,
+          "step": 0.05,
+          "advanced": false
+        },
+        {
+          "key": "random_seed",
+          "label": "Reproducibility seed",
+          "kind": "int",
+          "default": 42,
+          "help": "Seed used for deterministic sampling and preview calculations.",
+          "options": [],
+          "minimum": 0,
+          "maximum": 2147483647,
+          "step": 1,
+          "advanced": true
+        },
+        {
+          "key": "analysis_profile",
+          "label": "Annotation profile",
+          "kind": "select",
+          "default": "Annotation comparison",
+          "help": "Selects gene-model and completeness guidance.",
+          "options": [
+            "Eukaryotic annotation",
+            "Prokaryotic annotation",
+            "Annotation comparison",
+            "Transfer/curation"
+          ],
+          "minimum": null,
+          "maximum": null,
+          "step": null,
+          "advanced": false
+        },
+        {
+          "key": "min_feature_length",
+          "label": "Minimum feature length (bp)",
+          "kind": "int",
+          "default": 50,
+          "help": "Shorter features are flagged for review.",
+          "options": [],
+          "minimum": 1,
+          "maximum": 1000000,
+          "step": 10,
+          "advanced": false
+        },
+        {
+          "key": "min_completeness",
+          "label": "Minimum completeness",
+          "kind": "float",
+          "default": 0.7,
+          "help": "Features/annotations below this score are reviewed.",
+          "options": [],
+          "minimum": 0.0,
+          "maximum": 1.0,
+          "step": 0.05,
+          "advanced": false
+        }
+      ],
+      "qc_checks": [
+        "FASTA/GFF compatibility",
+        "Coordinate validity",
+        "Feature overlap",
+        "Evidence support",
+        "ORF length",
+        "Completeness",
+        "Version consistency"
+      ],
+      "capabilities": [
+        "GFF/GTF validation",
+        "Gene-model comparison",
+        "Orthology",
+        "Synteny",
+        "Functional annotation",
+        "Pseudogene review",
+        "Completeness",
+        "Manual curation"
+      ],
+      "specialist_engines": [
+        "BRAKER",
+        "Bakta",
+        "BUSCO",
+        "InterProScan"
+      ],
+      "reference_assets": [
+        "Reference assembly",
+        "Protein evidence",
+        "RNA evidence",
+        "BUSCO lineage",
+        "Functional database releases"
+      ],
+      "review_roles": [
+        "Analyst",
+        "Genome annotator",
+        "Biological curator"
+      ],
+      "native_extensions": [
+        "csv",
+        "fa",
+        "faa",
+        "fas",
+        "fasta",
+        "fna",
+        "gb",
+        "gbk",
+        "genbank",
+        "gff",
+        "gff3",
+        "gtf",
+        "json",
+        "tsv",
+        "txt",
+        "xls",
+        "xlsx",
+        "gff.gz",
+        "gtf.gz"
+      ],
+      "preferred_viewers": [
+        "genome_browser"
+      ],
+      "native_features": [
+        "FASTA/GFF compatibility",
+        "gene-model evidence review",
+        "annotation transfer planning",
+        "curated GFF export readiness"
+      ],
+      "comparison_identifiers": [
+        "feature_id",
+        "genome"
+      ],
+      "automatic_engine_plans": [
+        {
+          "plan_key": "busco_assembly",
+          "label": "BUSCO annotation/assembly completeness",
+          "source_parameter": "assembly",
+          "compatible_extensions": [
+            "fa",
+            "fasta",
+            "fna"
+          ],
+          "stdout_to_output": false,
+          "extra_parameters": [
+            [
+              "lineage",
+              "eukaryota_odb10"
+            ],
+            [
+              "output_name",
+              "biointel_busco"
+            ]
+          ],
+          "required_reference_labels": []
+        }
+      ],
+      "engine_registry_entries": [
+        {
+          "key": "busco",
+          "label": "BUSCO"
+        },
+        {
+          "key": "vep",
+          "label": "Ensembl VEP"
+        }
+      ],
+      "optional_tools": [
+        {
+          "name": "BRAKER",
+          "probe": "braker.pl",
+          "kind": "binary",
+          "purpose": "eukaryotic gene annotation",
+          "required": false
+        },
+        {
+          "name": "Bakta",
+          "probe": "bakta",
+          "kind": "binary",
+          "purpose": "prokaryotic annotation",
+          "required": false
+        },
+        {
+          "name": "BUSCO",
+          "probe": "busco",
+          "kind": "binary",
+          "purpose": "annotation completeness",
+          "required": false
+        }
+      ]
+    },
+    {
+      "key": "circular_dna_instability",
+      "title": "Circular DNA, Mobile Elements & Genome Instability Studio",
+      "short_title": "Genome Instability Studio",
+      "category": "Bioinformatics",
+      "new_module_from_step137": true,
+      "existing_page": null,
+      "summary": "Review ecDNA, circular DNA, mobile-element insertions, amplification structures and complex rearrangement candidates.",
+      "purpose": "Integrate breakpoint, copy-number and read-support evidence into a transparent genome-instability review workflow.",
+      "required_columns": [
+        "sample",
+        "event_id",
+        "chrom",
+        "start",
+        "end",
+        "event_type",
+        "copy_number",
+        "support"
+      ],
+      "accepted_inputs": [
+        "CSV",
+        "TSV",
+        "BED",
+        "BEDPE",
+        "VCF",
+        "amplicon summary"
+      ],
+      "workflow": [
+        "Import instability events",
+        "Breakpoint QC",
+        "Circle and insertion classification",
+        "Copy-number review",
+        "Gene impact",
+        "Recurrence analysis",
+        "Export"
+      ],
+      "outputs": [
+        "instability events",
+        "circle candidates",
+        "mobile-element insertions",
+        "amplification structures",
+        "review bundle"
+      ],
+      "visuals": [
+        "Circular breakpoint map",
+        "Copy-number profile",
+        "Amplification topology",
+        "Mobile-element map",
+        "Recurrence heatmap",
+        "Gene impact",
+        "Event-size distribution",
+        "Priority waterfall",
+        "Consensus topology clusters",
+        "Sample recurrence",
+        "Amplification topology summary",
+        "Breakpoint hotspots"
+      ],
+      "visual_count": 12,
+      "boundary": "Complex rearrangement structures require raw-read, assembly and orthogonal validation; inferred circles are research hypotheses.",
+      "handoffs": [
+        "Structural Variant Studio",
+        "Cancer Genomics",
+        "Long-Read Assembly"
+      ],
+      "organisms": [
+        "Homo sapiens",
+        "Custom/other"
+      ],
+      "genome_builds": [
+        "GRCh38",
+        "GRCh37",
+        "T2T-CHM13v2.0",
+        "Custom/other"
+      ],
+      "analysis_profiles": [
+        "ecDNA",
+        "Mobile elements",
+        "Viral integration",
+        "Genome instability"
+      ],
+      "parameters": [
+        {
+          "key": "genome_build",
+          "label": "Genome/reference build",
+          "kind": "select",
+          "default": "GRCh38",
+          "help": "Coordinate system used by variants, intervals and annotations.",
+          "options": [
+            "GRCh38",
+            "GRCh37",
+            "T2T-CHM13v2.0",
+            "Custom/other"
+          ],
+          "minimum": null,
+          "maximum": null,
+          "step": null,
+          "advanced": false
+        },
+        {
+          "key": "organism",
+          "label": "Organism",
+          "kind": "select",
+          "default": "Homo sapiens",
+          "help": "Organism context used for annotations and scientific boundaries.",
+          "options": [
+            "Homo sapiens",
+            "Mus musculus",
+            "Rattus norvegicus",
+            "Pathogen/viral",
+            "Environmental/mixed",
+            "Custom/other"
+          ],
+          "minimum": null,
+          "maximum": null,
+          "step": null,
+          "advanced": false
+        },
+        {
+          "key": "missing_policy",
+          "label": "Missing-value policy",
+          "kind": "select",
+          "default": "Retain and flag",
+          "help": "Controls whether incomplete records remain visible for review.",
+          "options": [
+            "Retain and flag",
+            "Exclude incomplete records",
+            "Median/mode imputation for screening"
+          ],
+          "minimum": null,
+          "maximum": null,
+          "step": null,
+          "advanced": false
+        },
+        {
+          "key": "priority_threshold",
+          "label": "Priority review threshold",
+          "kind": "float",
+          "default": 0.7,
+          "help": "Records at or above this score are highlighted for review.",
+          "options": [],
+          "minimum": 0.0,
+          "maximum": 1.0,
+          "step": 0.05,
+          "advanced": false
+        },
+        {
+          "key": "random_seed",
+          "label": "Reproducibility seed",
+          "kind": "int",
+          "default": 42,
+          "help": "Seed used for deterministic sampling and preview calculations.",
+          "options": [],
+          "minimum": 0,
+          "maximum": 2147483647,
+          "step": 1,
+          "advanced": true
+        },
+        {
+          "key": "analysis_profile",
+          "label": "Instability profile",
+          "kind": "select",
+          "default": "ecDNA",
+          "help": "Selects event-specific checks.",
+          "options": [
+            "ecDNA",
+            "Mobile elements",
+            "Viral integration",
+            "Genome instability"
+          ],
+          "minimum": null,
+          "maximum": null,
+          "step": null,
+          "advanced": false
+        },
+        {
+          "key": "min_copy_number",
+          "label": "Amplification copy-number threshold",
+          "kind": "float",
+          "default": 4.0,
+          "help": "Events above this threshold receive amplification support.",
+          "options": [],
+          "minimum": 0.0,
+          "maximum": 1000.0,
+          "step": 0.5,
+          "advanced": false
+        },
+        {
+          "key": "min_support",
+          "label": "Minimum breakpoint support",
+          "kind": "int",
+          "default": 3,
+          "help": "Events below this count are flagged.",
+          "options": [],
+          "minimum": 0,
+          "maximum": 10000,
+          "step": 1,
+          "advanced": false
+        }
+      ],
+      "qc_checks": [
+        "Breakpoint support",
+        "Copy-number context",
+        "Circular topology",
+        "Gene impact",
+        "Sample recurrence",
+        "Long-read support",
+        "Integration-site validity"
+      ],
+      "capabilities": [
+        "Circular topology",
+        "Breakpoint clusters",
+        "Focal amplification",
+        "Mobile elements",
+        "Integration sites",
+        "Sample recurrence",
+        "Instability score"
+      ],
+      "specialist_engines": [
+        "AmpliconArchitect",
+        "Circle-Map",
+        "MELT"
+      ],
+      "reference_assets": [
+        "Reference FASTA",
+        "Gene annotation",
+        "Cancer gene census",
+        "Segmental duplications",
+        "Viral integration reference"
+      ],
+      "review_roles": [
+        "Analyst",
+        "Cancer genomics reviewer",
+        "Molecular reviewer"
+      ],
+      "native_extensions": [
+        "bam",
+        "bcf",
+        "bed",
+        "bedgraph",
+        "bedpe",
+        "broadpeak",
+        "cram",
+        "csv",
+        "json",
+        "narrowpeak",
+        "tsv",
+        "txt",
+        "vcf",
+        "xls",
+        "xlsx",
+        "bed.gz",
+        "vcf.gz"
+      ],
+      "preferred_viewers": [
+        "genome_browser"
+      ],
+      "native_features": [
+        "breakpoint and copy-number intake",
+        "amplicon topology readiness",
+        "ecDNA/BFB evidence review",
+        "cohort recurrence comparison"
+      ],
+      "comparison_identifiers": [
+        "event_id",
+        "sample"
+      ],
+      "automatic_engine_plans": [
+        {
+          "plan_key": "bcftools_stats",
+          "label": "Instability-call statistics",
+          "source_parameter": "vcf",
+          "compatible_extensions": [
+            "vcf",
+            "vcf.gz",
+            "bcf"
+          ],
+          "stdout_to_output": false,
+          "extra_parameters": [],
+          "required_reference_labels": []
+        },
+        {
+          "plan_key": "samtools_depth",
+          "label": "Amplicon depth profile",
+          "source_parameter": "alignment",
+          "compatible_extensions": [
+            "bam",
+            "cram"
+          ],
+          "stdout_to_output": false,
+          "extra_parameters": [],
+          "required_reference_labels": []
+        },
+        {
+          "plan_key": "sniffles_call",
+          "label": "Sniffles rearrangement calling",
+          "source_parameter": "alignment",
+          "compatible_extensions": [
+            "bam",
+            "cram"
+          ],
+          "stdout_to_output": false,
+          "extra_parameters": [
+            [
+              "minsupport",
+              10
+            ]
+          ],
+          "required_reference_labels": []
+        }
+      ],
+      "engine_registry_entries": [
+        {
+          "key": "samtools",
+          "label": "SAMtools"
+        },
+        {
+          "key": "bcftools",
+          "label": "BCFtools"
+        },
+        {
+          "key": "sniffles",
+          "label": "Sniffles2"
+        }
+      ],
+      "optional_tools": [
+        {
+          "name": "AmpliconArchitect",
+          "probe": "AmpliconArchitect.py",
+          "kind": "binary",
+          "purpose": "focal amplification reconstruction",
+          "required": false
+        },
+        {
+          "name": "Circle-Map",
+          "probe": "Circle-Map",
+          "kind": "binary",
+          "purpose": "circular DNA detection",
+          "required": false
+        },
+        {
+          "name": "MELT",
+          "probe": "MELT",
+          "kind": "binary",
+          "purpose": "mobile-element insertions",
+          "required": false
+        }
+      ]
+    },
+    {
+      "key": "environmental_edna",
+      "title": "Environmental Genomics & eDNA Surveillance Studio",
+      "short_title": "eDNA Surveillance Studio",
+      "category": "Bioinformatics",
+      "new_module_from_step137": true,
+      "existing_page": null,
+      "summary": "Species detection, occupancy, biodiversity, contamination-control and spatiotemporal eDNA surveillance.",
+      "purpose": "Distinguish biological detections from background contamination and reference-library uncertainty across sites and sampling events.",
+      "required_columns": [
+        "sample",
+        "site",
+        "date",
+        "species",
+        "reads",
+        "control_type",
+        "reference_confidence"
+      ],
+      "accepted_inputs": [
+        "CSV",
+        "TSV",
+        "metabarcoding abundance table",
+        "taxonomy table",
+        "sample metadata"
+      ],
+      "workflow": [
+        "Import detections",
+        "Control and depth QC",
+        "Taxonomy harmonisation",
+        "Occupancy and biodiversity",
+        "Spatial and temporal review",
+        "Alert generation",
+        "Export"
+      ],
+      "outputs": [
+        "species detections",
+        "occupancy summary",
+        "biodiversity metrics",
+        "contamination flags",
+        "surveillance report"
+      ],
+      "visuals": [
+        "Species-site heatmap",
+        "Occupancy map",
+        "Biodiversity curves",
+        "Control contamination",
+        "Temporal trends",
+        "Reference confidence",
+        "Community ordination",
+        "Alert dashboard",
+        "Control QC",
+        "Replicate concordance",
+        "Taxonomic ambiguity",
+        "Surveillance alerts"
+      ],
+      "visual_count": 12,
+      "boundary": "eDNA detection depends on sampling design, assay specificity, reference coverage and environmental persistence; presence does not prove abundance or viability.",
+      "handoffs": [
+        "One Health Center",
+        "Microbiology & Metagenomics",
+        "Pathogen Outbreak"
+      ],
+      "organisms": [
+        "Environmental/mixed",
+        "Custom/other"
+      ],
+      "genome_builds": [
+        "Reference-independent",
+        "Marker-specific"
+      ],
+      "analysis_profiles": [
+        "Metabarcoding",
+        "Species surveillance",
+        "Occupancy",
+        "Biodiversity"
+      ],
+      "parameters": [
+        {
+          "key": "genome_build",
+          "label": "Genome/reference build",
+          "kind": "select",
+          "default": "GRCh38",
+          "help": "Coordinate system used by variants, intervals and annotations.",
+          "options": [
+            "GRCh38",
+            "GRCh37",
+            "T2T-CHM13v2.0",
+            "Custom/other"
+          ],
+          "minimum": null,
+          "maximum": null,
+          "step": null,
+          "advanced": false
+        },
+        {
+          "key": "organism",
+          "label": "Organism",
+          "kind": "select",
+          "default": "Homo sapiens",
+          "help": "Organism context used for annotations and scientific boundaries.",
+          "options": [
+            "Homo sapiens",
+            "Mus musculus",
+            "Rattus norvegicus",
+            "Pathogen/viral",
+            "Environmental/mixed",
+            "Custom/other"
+          ],
+          "minimum": null,
+          "maximum": null,
+          "step": null,
+          "advanced": false
+        },
+        {
+          "key": "missing_policy",
+          "label": "Missing-value policy",
+          "kind": "select",
+          "default": "Retain and flag",
+          "help": "Controls whether incomplete records remain visible for review.",
+          "options": [
+            "Retain and flag",
+            "Exclude incomplete records",
+            "Median/mode imputation for screening"
+          ],
+          "minimum": null,
+          "maximum": null,
+          "step": null,
+          "advanced": false
+        },
+        {
+          "key": "priority_threshold",
+          "label": "Priority review threshold",
+          "kind": "float",
+          "default": 0.7,
+          "help": "Records at or above this score are highlighted for review.",
+          "options": [],
+          "minimum": 0.0,
+          "maximum": 1.0,
+          "step": 0.05,
+          "advanced": false
+        },
+        {
+          "key": "random_seed",
+          "label": "Reproducibility seed",
+          "kind": "int",
+          "default": 42,
+          "help": "Seed used for deterministic sampling and preview calculations.",
+          "options": [],
+          "minimum": 0,
+          "maximum": 2147483647,
+          "step": 1,
+          "advanced": true
+        },
+        {
+          "key": "analysis_profile",
+          "label": "eDNA profile",
+          "kind": "select",
+          "default": "Species surveillance",
+          "help": "Selects control and detection guidance.",
+          "options": [
+            "Metabarcoding",
+            "Species surveillance",
+            "Occupancy",
+            "Biodiversity"
+          ],
+          "minimum": null,
+          "maximum": null,
+          "step": null,
+          "advanced": false
+        },
+        {
+          "key": "min_reads",
+          "label": "Minimum adjusted reads",
+          "kind": "int",
+          "default": 3,
+          "help": "Detections below this count are not considered positive.",
+          "options": [],
+          "minimum": 0,
+          "maximum": 1000000,
+          "step": 1,
+          "advanced": false
+        },
+        {
+          "key": "min_reference_confidence",
+          "label": "Minimum reference confidence",
+          "kind": "float",
+          "default": 0.7,
+          "help": "Taxa below this confidence require review.",
+          "options": [],
+          "minimum": 0.0,
+          "maximum": 1.0,
+          "step": 0.05,
+          "advanced": false
+        },
+        {
+          "key": "negative_control_multiplier",
+          "label": "Negative-control multiplier",
+          "kind": "float",
+          "default": 1.0,
+          "help": "Background subtraction multiplier.",
+          "options": [],
+          "minimum": 0.0,
+          "maximum": 10.0,
+          "step": 0.1,
+          "advanced": true
+        }
+      ],
+      "qc_checks": [
+        "Negative controls",
+        "Positive controls",
+        "Sequencing depth",
+        "Reference confidence",
+        "Taxonomic ambiguity",
+        "Site/date completeness",
+        "Replicate consistency"
+      ],
+      "capabilities": [
+        "Contamination filtering",
+        "Species detection",
+        "Occupancy",
+        "Biodiversity",
+        "Rare/invasive alerts",
+        "Temporal/spatial surveillance",
+        "Reference confidence"
+      ],
+      "specialist_engines": [
+        "QIIME 2",
+        "DADA2",
+        "OBITools"
+      ],
+      "reference_assets": [
+        "Taxonomic reference library",
+        "Marker-gene database",
+        "Contaminant database",
+        "Site metadata dictionary"
+      ],
+      "review_roles": [
+        "Analyst",
+        "Ecologist",
+        "Surveillance reviewer"
+      ],
+      "native_extensions": [
+        "csv",
+        "fa",
+        "faa",
+        "fas",
+        "fasta",
+        "fastq",
+        "fna",
+        "fq",
+        "json",
+        "tsv",
+        "txt",
+        "xls",
+        "xlsx",
+        "fastq.gz",
+        "fq.gz"
+      ],
+      "preferred_viewers": [
+        "multiomics"
+      ],
+      "native_features": [
+        "raw-read/count-table intake",
+        "field/lab control audit",
+        "reference coverage review",
+        "occupancy-analysis readiness"
+      ],
+      "comparison_identifiers": [
+        "sample",
+        "species",
+        "site"
+      ],
+      "automatic_engine_plans": [],
+      "engine_registry_entries": [
+        {
+          "key": "kraken2",
+          "label": "Kraken 2"
+        },
+        {
+          "key": "bracken",
+          "label": "Bracken"
+        },
+        {
+          "key": "humann",
+          "label": "HUMAnN"
+        }
+      ],
+      "optional_tools": [
+        {
+          "name": "QIIME 2",
+          "probe": "qiime",
+          "kind": "binary",
+          "purpose": "metabarcoding workflows",
+          "required": false
+        },
+        {
+          "name": "DADA2",
+          "probe": "R",
+          "kind": "binary",
+          "purpose": "ASV inference via R environment",
+          "required": false
+        },
+        {
+          "name": "OBITools",
+          "probe": "obi",
+          "kind": "binary",
+          "purpose": "DNA metabarcoding processing",
+          "required": false
+        }
+      ]
+    },
+    {
+      "key": "comparative_regulatory_genomics",
+      "title": "Comparative Regulatory Genomics Studio",
+      "short_title": "Comparative Regulatory Genomics",
+      "category": "Bioinformatics",
+      "new_module_from_step137": true,
+      "existing_page": null,
+      "summary": "Compare conserved non-coding regions, enhancer activity, motif turnover and regulatory synteny across species.",
+      "purpose": "Connect sequence conservation and functional activity without treating conservation alone as proof of regulatory function.",
+      "required_columns": [
+        "species",
+        "region",
+        "ortholog_group",
+        "motif",
+        "conservation",
+        "activity",
+        "chrom",
+        "start",
+        "end"
+      ],
+      "accepted_inputs": [
+        "CSV",
+        "TSV",
+        "BED",
+        "conserved-element table",
+        "orthologous peak table"
+      ],
+      "workflow": [
+        "Import orthologous regions",
+        "Coordinate and orthology QC",
+        "Conservation analysis",
+        "Motif turnover",
+        "Activity comparison",
+        "Regulatory synteny",
+        "Export"
+      ],
+      "outputs": [
+        "conserved regions",
+        "motif turnover",
+        "activity comparison",
+        "synteny blocks",
+        "evidence bundle"
+      ],
+      "visuals": [
+        "Conservation landscape",
+        "Motif turnover heatmap",
+        "Activity comparison",
+        "Regulatory synteny",
+        "Ortholog network",
+        "Constraint distribution",
+        "Species clustering",
+        "Evidence matrix",
+        "Species support",
+        "Regulatory gain/loss",
+        "Tissue matching",
+        "Conservation QC"
+      ],
+      "visual_count": 12,
+      "boundary": "Conservation and motif presence are indirect evidence. Functional claims require species- and tissue-matched experimental validation.",
+      "handoffs": [
+        "Epigenomics",
+        "Comparative Genomics",
+        "Gene Regulatory Network"
+      ],
+      "organisms": [
+        "Homo sapiens",
+        "Mus musculus",
+        "Custom/other"
+      ],
+      "genome_builds": [
+        "Species-specific builds",
+        "HAL/VG alignment",
+        "Custom/other"
+      ],
+      "analysis_profiles": [
+        "Conservation",
+        "Motif turnover",
+        "Regulatory synteny",
+        "Cross-species activity"
+      ],
+      "parameters": [
+        {
+          "key": "genome_build",
+          "label": "Genome/reference build",
+          "kind": "select",
+          "default": "GRCh38",
+          "help": "Coordinate system used by variants, intervals and annotations.",
+          "options": [
+            "GRCh38",
+            "GRCh37",
+            "T2T-CHM13v2.0",
+            "Custom/other"
+          ],
+          "minimum": null,
+          "maximum": null,
+          "step": null,
+          "advanced": false
+        },
+        {
+          "key": "organism",
+          "label": "Organism",
+          "kind": "select",
+          "default": "Homo sapiens",
+          "help": "Organism context used for annotations and scientific boundaries.",
+          "options": [
+            "Homo sapiens",
+            "Mus musculus",
+            "Rattus norvegicus",
+            "Pathogen/viral",
+            "Environmental/mixed",
+            "Custom/other"
+          ],
+          "minimum": null,
+          "maximum": null,
+          "step": null,
+          "advanced": false
+        },
+        {
+          "key": "missing_policy",
+          "label": "Missing-value policy",
+          "kind": "select",
+          "default": "Retain and flag",
+          "help": "Controls whether incomplete records remain visible for review.",
+          "options": [
+            "Retain and flag",
+            "Exclude incomplete records",
+            "Median/mode imputation for screening"
+          ],
+          "minimum": null,
+          "maximum": null,
+          "step": null,
+          "advanced": false
+        },
+        {
+          "key": "priority_threshold",
+          "label": "Priority review threshold",
+          "kind": "float",
+          "default": 0.7,
+          "help": "Records at or above this score are highlighted for review.",
+          "options": [],
+          "minimum": 0.0,
+          "maximum": 1.0,
+          "step": 0.05,
+          "advanced": false
+        },
+        {
+          "key": "random_seed",
+          "label": "Reproducibility seed",
+          "kind": "int",
+          "default": 42,
+          "help": "Seed used for deterministic sampling and preview calculations.",
+          "options": [],
+          "minimum": 0,
+          "maximum": 2147483647,
+          "step": 1,
+          "advanced": true
+        },
+        {
+          "key": "analysis_profile",
+          "label": "Comparative profile",
+          "kind": "select",
+          "default": "Cross-species activity",
+          "help": "Selects conservation and activity defaults.",
+          "options": [
+            "Conservation",
+            "Motif turnover",
+            "Regulatory synteny",
+            "Cross-species activity"
+          ],
+          "minimum": null,
+          "maximum": null,
+          "step": null,
+          "advanced": false
+        },
+        {
+          "key": "min_conservation",
+          "label": "Minimum conservation",
+          "kind": "float",
+          "default": 0.5,
+          "help": "Regions below this score are treated as lineage-specific/low conservation.",
+          "options": [],
+          "minimum": 0.0,
+          "maximum": 1.0,
+          "step": 0.05,
+          "advanced": false
+        },
+        {
+          "key": "min_species",
+          "label": "Minimum species support",
+          "kind": "int",
+          "default": 2,
+          "help": "Ortholog groups below this count receive review status.",
+          "options": [],
+          "minimum": 2,
+          "maximum": 100,
+          "step": 1,
+          "advanced": false
+        }
+      ],
+      "qc_checks": [
+        "Species/build consistency",
+        "Lift-over quality",
+        "Ortholog completeness",
+        "Motif mapping",
+        "Activity normalization",
+        "Tissue matching"
+      ],
+      "capabilities": [
+        "Conserved elements",
+        "Enhancer conservation",
+        "Motif turnover",
+        "Regulatory synteny",
+        "TF activity comparison",
+        "Gain/loss",
+        "Comparative networks"
+      ],
+      "specialist_engines": [
+        "HAL tools",
+        "BEDTools",
+        "phastCons"
+      ],
+      "reference_assets": [
+        "Multi-species assemblies",
+        "Whole-genome alignment",
+        "Orthology map",
+        "Motif library",
+        "Constraint tracks"
+      ],
+      "review_roles": [
+        "Analyst",
+        "Evolutionary genomics specialist",
+        "Biological reviewer"
+      ],
+      "native_extensions": [
+        "bed",
+        "bedgraph",
+        "bigwig",
+        "broadpeak",
+        "bw",
+        "csv",
+        "fa",
+        "faa",
+        "fas",
+        "fasta",
+        "fna",
+        "gff",
+        "gff3",
+        "gtf",
+        "json",
+        "narrowpeak",
+        "tsv",
+        "txt",
+        "xls",
+        "xlsx",
+        "bed.gz",
+        "gff.gz",
+        "gtf.gz"
+      ],
+      "preferred_viewers": [
+        "genome_browser"
+      ],
+      "native_features": [
+        "multi-species region intake",
+        "lift-over readiness",
+        "orthologous peak matching",
+        "regulatory gain/loss review"
+      ],
+      "comparison_identifiers": [
+        "species",
+        "region",
+        "ortholog_group"
+      ],
+      "automatic_engine_plans": [],
+      "engine_registry_entries": [
+        {
+          "key": "bedtools",
+          "label": "BEDTools"
+        },
+        {
+          "key": "mafft",
+          "label": "MAFFT"
+        },
+        {
+          "key": "deeptools",
+          "label": "deepTools"
+        }
+      ],
+      "optional_tools": [
+        {
+          "name": "HAL tools",
+          "probe": "halLiftover",
+          "kind": "binary",
+          "purpose": "comparative genome coordinates",
+          "required": false
+        },
+        {
+          "name": "BEDTools",
+          "probe": "bedtools",
+          "kind": "binary",
+          "purpose": "regulatory interval comparison",
+          "required": false
+        },
+        {
+          "name": "phastCons",
+          "probe": "phastCons",
+          "kind": "binary",
+          "purpose": "evolutionary conservation",
+          "required": false
+        }
+      ]
+    }
+  ]
+}

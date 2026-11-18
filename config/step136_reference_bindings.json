@@ -1,0 +1,21 @@
+{
+  "asset_root": "BIOINTEL_REFERENCE_ASSETS_DIR or data/reference_assets",
+  "modules": {
+    "amr_surveillance": {},
+    "autonomous_lab_planner": {},
+    "biomedical_foundation_model_hub": {},
+    "cell_therapy_cart": {},
+    "clinical_biomarker_survival": {},
+    "digital_pathology_foundation": {},
+    "federated_biomedical_ai": {},
+    "gene_therapy_vector": {},
+    "long_read_epigenome": {},
+    "pangenome_population_medicine": {},
+    "pharmacovigilance_intelligence": {},
+    "protein_ligand_codesign": {},
+    "single_cell_long_read_isoforms": {},
+    "spatial_medicine_tme": {},
+    "synthetic_cohort_trial": {}
+  },
+  "schema": "biointel.step136.reference_bindings.v1"
+}

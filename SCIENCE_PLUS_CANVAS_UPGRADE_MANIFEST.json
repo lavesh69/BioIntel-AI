@@ -1,0 +1,80 @@
+{
+  "schema": "biointel.science-plus-canvas-upgrade-manifest.v1",
+  "release": "BioIntel-AI-15.6.0-Phase31-to-35-Windows-Fixed-SciencePlus-Canvas-R2",
+  "generated_at_utc": "2026-07-31T04:17:26+00:00",
+  "base_release": "BioIntel-AI-15.6.0-Phase31-to-35-Windows-Fixed",
+  "summary": {
+    "template_count": 35,
+    "template_categories": 8,
+    "new_primary_navigation": "Canvas Studio",
+    "existing_features_removed": false,
+    "storage": "UserData/science_plus_canvases/<tenant>/<user>",
+    "views": [
+      "Board",
+      "Table",
+      "Graph",
+      "Timeline"
+    ],
+    "exports": [
+      "JSON",
+      "Markdown",
+      "CSV"
+    ]
+  },
+  "changed_files": [
+    {
+      "path": "SCIENCE_PLUS_CANVAS_STUDIO_UPGRADE_REPORT.md",
+      "part": 2,
+      "change": "added",
+      "previous_size_bytes": null,
+      "size_bytes": 2959,
+      "previous_sha256": null,
+      "sha256": "4f73335b06bca4a0f238ccaffa40b276e8423cfb2875c836c571ddf4d920c546"
+    },
+    {
+      "path": "release/BIOINTEL_EDUCATION_UNIVERSE_CHANGELOG.md",
+      "part": 1,
+      "change": "modified",
+      "previous_size_bytes": 3494,
+      "size_bytes": 4515,
+      "previous_sha256": "9da751302d9fcea09680e61703ceca118a65423bfe0cbb3b8fffdc75e712dff1",
+      "sha256": "9f82b0de5ed16b9485c2ef08401cd6c4e2120a132743d766e47654fb695d0a90"
+    },
+    {
+      "path": "src/biointel/science_pulse/canvas_studio.py",
+      "part": 2,
+      "change": "added",
+      "previous_size_bytes": null,
+      "size_bytes": 86436,
+      "previous_sha256": null,
+      "sha256": "68b0f2f89260875d95833591828f2eabd3cafafa9b88cd9abe22725530f3b9b4"
+    },
+    {
+      "path": "src/biointel/science_pulse/ui.py",
+      "part": 3,
+      "change": "modified",
+      "previous_size_bytes": 17944,
+      "size_bytes": 18212,
+      "previous_sha256": "a587df342c533fd2be1cbbbcd5054767ad0d0b30946a6f95758e27146be5563e",
+      "sha256": "21f164c8581c873fdfac4c4d75ca8fe4dc49db725a695625589be2f0b40162af"
+    },
+    {
+      "path": "tests/test_science_plus_canvas_studio.py",
+      "part": 2,
+      "change": "added",
+      "previous_size_bytes": null,
+      "size_bytes": 3956,
+      "previous_sha256": null,
+      "sha256": "c260e592712c940a5c07370bac978d811dd6c319ca05c2331cee7003b7ab0a5b"
+    },
+    {
+      "path": "tests/test_science_pulse_news_first_ui.py",
+      "part": 4,
+      "change": "modified",
+      "previous_size_bytes": 10690,
+      "size_bytes": 10706,
+      "previous_sha256": "ae586407b01258ed69e9d7a19918520349bf90137bcc5367471588c978f540e6",
+      "sha256": "2c1429ddb72e6a2c6c65a4049caaead40963875722219b3bc0a70a99f2bafeb8"
+    }
+  ]
+}

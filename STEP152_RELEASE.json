@@ -1,0 +1,22 @@
+{
+  "base_release": "Step 151 Scientific Readiness and Stability Upgrade",
+  "capability_stages": 480,
+  "complete_scientific_contracts": 80,
+  "native_workflow_families": 19,
+  "native_workflows": 80,
+  "product_version": "13.2.0",
+  "reference_assets": 257,
+  "registered_engines": 185,
+  "release_name": "Native Scientific Core Upgrade",
+  "schema": "biointel.step152.release.v1",
+  "scientific_profiles": 80,
+  "step": 152,
+  "tests": {
+    "collected": 1279,
+    "failed": 0,
+    "passed": 1252,
+    "skipped": 27
+  },
+  "validation_boundary": "Automated software and bounded native exploratory-science verification only; not clinical, GxP, regulatory, physical-instrument, or prospective wet-lab certification.",
+  "validation_gates": 328
+}

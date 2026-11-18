@@ -1,0 +1,42 @@
+{
+  "schema": "biointel.pre-phase23.test-baseline.v1",
+  "generated_at_utc": "2026-07-30T07:31:00Z",
+  "source_release": "BioIntel-AI-15.6.0-EDUCATION-PHASE17-TO-22-MEGA-FIXED-R1",
+  "command": "python -m pytest -q --basetemp <isolated-workspace-path>",
+  "isolation": {
+    "disposable_source_copy": true,
+    "dedicated_user_data_root": true,
+    "paid_api_required": false
+  },
+  "duration_seconds": 1146.96,
+  "passed": 1914,
+  "failed": 278,
+  "skipped": 28,
+  "errors": 3,
+  "warnings": 11,
+  "status": "NOT_GREEN",
+  "observed_failure_groups": [
+    "Historical step-specific exact version, manifest, and package-generation assertions",
+    "Stateful tests that rewrite release/source/data surfaces",
+    "Windows sandbox restrictions affecting process and named-pipe behavior",
+    "Browser/runtime binaries and external engine/provider qualification",
+    "Legacy five-part package expectations versus the verified four-part Phase 17-22 release",
+    "DTI model-training setup errors in the disposable environment",
+    "Older UI/theme and release-scorecard exact assertions"
+  ],
+  "phase17_to_22_focused_baseline": {
+    "education_shiro_connect": {
+      "passed": 206,
+      "failed": 0
+    },
+    "phase11_to_16_verifier_controls": {
+      "passed": 189,
+      "failed": 0
+    },
+    "phase17_to_22_module": {
+      "passed": 8,
+      "failed": 0
+    }
+  },
+  "claim_boundary": "The broad historical suite is retained as a diagnostic baseline. It is not represented as green, and its failing assertions are not deleted or weakened."
+}

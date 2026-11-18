@@ -1,0 +1,39 @@
+{
+  "schema": "biointel.release.step200.neuro-cns.v1",
+  "step": 200,
+  "title": "BioIntel AI Step200 Neuro/CNS Maximum-Potential Hardening",
+  "base_runtime": "BioIntel-AI-Step196-WINDOWS-RELEASE-V16",
+  "neuro_modules": 23,
+  "step199_advanced_laboratories": 9,
+  "step200_max_potential_systems": 9,
+  "advanced_systems_total": 18,
+  "workspaces": 5,
+  "software_improvements": [
+    "structured fail-closed execution envelopes",
+    "deterministic input fingerprints and execution metrics",
+    "payload, schema, memory and large-input guardrails",
+    "isolated error capture with recovery codes",
+    "evidence knowledge graph from explicit results",
+    "benchmark metrics, calibration and subgroup analysis",
+    "robust applicability-domain inspection",
+    "Monte Carlo uncertainty and sensitivity propagation",
+    "resource qualification and module gate tracking",
+    "cross-module contradiction resolution guidance",
+    "resilient batch pipeline orchestration",
+    "failure mode and recovery center",
+    "maximum-potential software/scientific readiness dashboard",
+    "execution reliability embedded in unified reports",
+    "five-part extraction completeness checks for Step200"
+  ],
+  "release_boundaries": {
+    "clinical_use": false,
+    "controlled_release": false,
+    "research_screening": true,
+    "software_hardened": true
+  },
+  "tests": {
+    "focused_passed": 65,
+    "focused_failed": 0,
+    "native_windows_execution": "pending_target_machine_verification"
+  }
+}

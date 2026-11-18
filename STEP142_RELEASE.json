@@ -1,0 +1,29 @@
+{
+  "schema": "biointel.step142.release.v1",
+  "milestone": 142,
+  "name": "Research Planning Connected Operating System",
+  "product_version": "13.2.0",
+  "build_date": "2026-07-12",
+  "catalog": "BioIntel-AI-Step142-RESEARCH-PLANNING-CONNECTED-OS-Module-Catalog.json",
+  "qualification": "BioIntel-AI-Step142-RESEARCH-PLANNING-CONNECTED-OS-Qualification.json",
+  "capabilities": [
+    "Unified Research Digital Thread",
+    "SPIRIT-style protocol readiness profile",
+    "ICH E6(R3)-style quality-by-design readiness profile",
+    "ICH E9(R1)-style estimand and sensitivity profile",
+    "CDISC PRM/CDASH/SDTM/ADaM readiness mappings",
+    "FHIR Questionnaire and eSource mapping export",
+    "Estimand Builder",
+    "Monte Carlo optimistic/base/conservative/stress simulation",
+    "Protocol Amendment Impact Analyzer",
+    "Study Design Consistency Auditor",
+    "Assumption Registry",
+    "Structured comments and change requests",
+    "Independent calculation verification",
+    "Participant burden model",
+    "Probabilistic research budget model",
+    "Site workload simulator",
+    "Research Planning Command Center"
+  ],
+  "truthfulness_boundary": "Planning and standards-readiness support only; no external certification or guaranteed study validity is claimed."
+}

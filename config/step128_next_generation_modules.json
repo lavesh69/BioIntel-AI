@@ -1,0 +1,27 @@
+{
+  "schema": "biointel.step128.next_generation_modules.v1",
+  "release": "13.2.0",
+  "module_count": 15,
+  "capability_model": {
+    "built_in": "deterministic screening, QC, ranking and reproducible export",
+    "adapter_ready": "external specialist tools, model weights and reference databases are detected or documented but not falsely bundled",
+    "external_validation": "clinical, wet-lab, regulatory and independent validation remain outside the software"
+  },
+  "modules": [
+    "digital_pathology_foundation",
+    "long_read_epigenome",
+    "single_cell_long_read_isoforms",
+    "biomedical_foundation_model_hub",
+    "amr_surveillance",
+    "spatial_medicine_tme",
+    "gene_therapy_vector",
+    "cell_therapy_cart",
+    "federated_biomedical_ai",
+    "clinical_biomarker_survival",
+    "protein_ligand_codesign",
+    "pangenome_population_medicine",
+    "pharmacovigilance_intelligence",
+    "synthetic_cohort_trial",
+    "autonomous_lab_planner"
+  ]
+}

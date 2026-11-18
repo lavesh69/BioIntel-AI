@@ -1,0 +1,22 @@
+[
+  {
+    "path": "src/biointel/science_pulse/store.py",
+    "reason": "Added multi-tenant DB fallback and smart candidate path resolution.",
+    "test": "test_science_pulse_mega.py"
+  },
+  {
+    "path": "src/biointel/science_pulse/ui.py",
+    "reason": "Added pending navigation session state handling to prevent StreamlitAPIException.",
+    "test": "test_science_pulse_news_first_ui.py"
+  },
+  {
+    "path": "UserData/databases/biointel_science_pulse.sqlite",
+    "reason": "Seeded 2,359 live records, preprints, publications, clinical trials and datasets.",
+    "test": "test_pulse_articles.py"
+  },
+  {
+    "path": "UserData/databases/biointel_education.sqlite",
+    "reason": "Migrated schema with institution_id column for Education platform.",
+    "test": "test_education_phase2.py"
+  }
+]

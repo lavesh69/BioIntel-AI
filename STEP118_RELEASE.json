@@ -1,0 +1,17 @@
+{
+  "schema": "biointel.step118.release.v1",
+  "version": "11.8.0",
+  "name": "Workspace Card Consistency and Navigation Stability Hotfix",
+  "root_cause": "The module-experience stylesheet was guarded by persistent Streamlit session state. Multipage navigation replaced the DOM but retained the guard, so later pages skipped CSS injection and rendered workspace cards as concatenated text.",
+  "fixes": [
+    "Inject the shared workspace stylesheet on every page render",
+    "Add resilient display rules for shells, headers, badges, card grids, cards and text blocks",
+    "Add responsive 1100px, 760px and 480px layouts",
+    "Add Windows forced-colour support",
+    "Add stable workspace summary diagnostic markers",
+    "Keep all 77 affected pages on one shared renderer"
+  ],
+  "affected_module_pages": 77,
+  "embedded_workspaces": 78,
+  "excluded_pages_preserved": 5
+}

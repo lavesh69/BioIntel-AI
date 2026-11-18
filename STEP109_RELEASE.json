@@ -1,0 +1,25 @@
+{
+  "release": "Step 109",
+  "version": "11.6.0",
+  "name": "Visual Interaction, Accessibility & Comparison",
+  "scope": {
+    "comparison_mode": true,
+    "linked_chart_table_selection": true,
+    "accessibility_presets": 4,
+    "persistent_visual_workspace": true,
+    "persistent_annotations": true,
+    "evidence_badges": true,
+    "statistical_context": true,
+    "visual_report_formats": [
+      "PDF",
+      "DOCX",
+      "PPTX",
+      "HTML",
+      "CSV",
+      "JSON"
+    ],
+    "visual_error_diagnostics": true,
+    "legacy_plotly_safety_adapter": true
+  },
+  "scientific_boundary": "Visual presentation and saved review context do not replace source data, validated analytical methods, independent scientific validation or regulated operating evidence."
+}

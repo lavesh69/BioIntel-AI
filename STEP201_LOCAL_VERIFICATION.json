@@ -1,0 +1,93 @@
+{
+  "schema": "biointel.neuro-cns.step201-verification.v1",
+  "generated_at_utc": "2026-07-16T22:35:00+00:00",
+  "passed": true,
+  "checks": [
+    {
+      "name": "critical Step201 files",
+      "passed": true,
+      "detail": "complete"
+    },
+    {
+      "name": "five Step201 part markers",
+      "passed": true,
+      "detail": "complete"
+    },
+    {
+      "name": "completion feature registry",
+      "passed": true,
+      "detail": {
+        "schema": "biointel.neuro-cns.completion-features.v1",
+        "step": 201,
+        "base_neuro_modules": 23,
+        "step199_laboratories": 9,
+        "step200_control_systems": 9,
+        "step201_completion_systems": 9,
+        "advanced_systems_total": 27,
+        "step201_features": [
+          {
+            "number": 1,
+            "key": "scientific_resource_binding_studio",
+            "title": "Scientific Resource Binding Studio"
+          },
+          {
+            "number": 2,
+            "key": "specialist_engine_qualification_center",
+            "title": "Specialist Engine Qualification Center"
+          },
+          {
+            "number": 3,
+            "key": "privacy_deidentification_guard",
+            "title": "Privacy & De-identification Guard"
+          },
+          {
+            "number": 4,
+            "key": "study_design_power_planner",
+            "title": "Study Design & Power Planner"
+          },
+          {
+            "number": 5,
+            "key": "data_leakage_split_auditor",
+            "title": "Data Leakage & Cohort Split Auditor"
+          },
+          {
+            "number": 6,
+            "key": "dataset_drift_monitor",
+            "title": "Dataset Drift & Monitoring Center"
+          },
+          {
+            "number": 7,
+            "key": "multisite_reproducibility_analyzer",
+            "title": "Multi-Site Reproducibility Analyzer"
+          },
+          {
+            "number": 8,
+            "key": "professional_pdf_scientific_report",
+            "title": "Professional PDF Scientific Report"
+          },
+          {
+            "number": 9,
+            "key": "release_evidence_pack_builder",
+            "title": "Release Evidence Pack Builder"
+          }
+        ],
+        "software_release_status": "completion-hardened",
+        "controlled_scientific_release_eligible": false
+      }
+    },
+    {
+      "name": "Python imports",
+      "passed": true,
+      "detail": {
+        "version": "201.0",
+        "completion_features": 9
+      }
+    },
+    {
+      "name": "focused Neuro test suite",
+      "passed": true,
+      "detail": "........................................................................ [ 92%]\n......                                                                   [100%]\n78 passed in 15.85s\n\n"
+    }
+  ],
+  "native_windows_execution": "requires execution on the target Windows machine"
+}

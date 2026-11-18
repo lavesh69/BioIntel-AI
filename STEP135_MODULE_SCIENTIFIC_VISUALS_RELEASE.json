@@ -1,0 +1,24 @@
+{
+  "schema": "biointel.release.v1",
+  "step": 135,
+  "release_name": "Module Scientific Depth and Specialist Visuals Fix",
+  "version": "13.2.0",
+  "scope": "fifteen next-generation biomedical modules only",
+  "preserves_existing_features": true,
+  "new_central_pages": 0,
+  "highlights": [
+    "39 new module-specific scientific result tables",
+    "49 new specialist scientific viewers",
+    "exploratory Cox survival and proportional-hazards diagnostics",
+    "spatial cell-neighbourhood enrichment",
+    "coverage-weighted methylation bootstrap confidence intervals",
+    "differential long-read isoform usage screening",
+    "AMR resistance uncertainty and temporal emergence alerts",
+    "federated convergence, fairness and privacy accounting",
+    "pharmacovigilance shrinkage signal review",
+    "trial operating-characteristic simulation",
+    "DoE, plate-layout and resource-scheduling support",
+    "dirty-input qualification and safe error isolation"
+  ],
+  "scientific_boundary": "Built-in analyses are transparent research-screening and planning methods. Specialist engines, current licensed references and independent experimental or clinical validation remain required for release claims."
+}

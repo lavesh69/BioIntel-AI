@@ -1,0 +1,35 @@
+{
+  "schema": "biointel.engine-public-identity-audit.v1",
+  "status": "PASS",
+  "counts": {
+    "public_alias_records": 109,
+    "advanced_tool_records": 86,
+    "legal_component_notices": 103,
+    "scientific_integration_profiles": 20,
+    "normal_surface_files_checked": 6
+  },
+  "checks": {
+    "alias_count_at_least_100": true,
+    "unique_public_keys": true,
+    "unique_public_names": true,
+    "all_alias_names_biointel": true,
+    "advanced_tool_count_at_least_80": true,
+    "twenty_scientific_integration_profiles": true,
+    "integration_names_biointel": true,
+    "advanced_labels_biointel": true,
+    "required_legal_notices_present": true,
+    "normal_surfaces_have_no_repository_urls": true,
+    "biointel_engine_status_route_exists": true,
+    "legacy_engine_status_route_removed": true,
+    "biointel_model_qualification_route_exists": true,
+    "legacy_model_qualification_route_removed": true,
+    "biointel_setup_entrypoint_exists": true
+  },
+  "forbidden_url_findings": [],
+  "policy": {
+    "normal_product_surfaces": "BioIntel public identities only",
+    "internal_runtime_identifiers": "Preserved for execution compatibility",
+    "legal_notices": "Required upstream names, sources and licences retained",
+    "technical_logs": "May retain internal component identifiers for diagnostics"
+  }
+}

@@ -1,0 +1,10 @@
+BioIntel AI Step 119 (Version 11.9.0)
+
+1. Keep Part1, Part2, Part3 and Part4 together.
+2. Extract all four ZIP files into the same destination folder. The parts contain non-overlapping files under one BioIntel-AI folder.
+3. Run VERIFY_STEP119_WINDOWS.bat.
+4. Run RUN_APP_WINDOWS.bat or AUTO_INSTALL_AND_RUN_WINDOWS.bat.
+
+Step 119 adds module-specific six-card workspace summaries, stable card diagnostics, overflow protection and completeness validation across all 78 embedded workspaces.
+
+Windows installed runtime target: Python 3.11 x64.

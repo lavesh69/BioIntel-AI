@@ -1,0 +1,11 @@
+schema: biointel.dependency-policy.v1
+update_cadence: monthly
+vulnerability_sla:
+  critical_hours: 24
+  high_days: 7
+  medium_days: 30
+allowed_sources:
+  - https://pypi.org/simple
+require_exact_release_lock: true
+require_dependency_review: true
+require_sbom: true

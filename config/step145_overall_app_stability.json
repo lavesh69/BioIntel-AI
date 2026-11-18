@@ -1,0 +1,132 @@
+{
+  "schema": "biointel.step145.overall-app-stability.catalog.v1",
+  "milestone": 145,
+  "name": "Overall App Stability & Optimization",
+  "product_version_preserved": "13.2.0",
+  "scope": "Entire BioIntel AI application, not only Research Planning",
+  "stability_components": {
+    "guarded_startup": {
+      "features": [
+        "Python/runtime version preflight",
+        "Writable project/UserData/workspace/log checks",
+        "Disk-space hard block and advisory thresholds",
+        "Physical-memory advisory and hard-failure thresholds",
+        "Release VERSION presence check",
+        "Bounded stale temporary-file cleanup",
+        "Protected mode warning and blocking startup stop"
+      ],
+      "files": [
+        "src/biointel/stability_v145/runtime.py",
+        "app.py"
+      ]
+    },
+    "bounded_process_cache": {
+      "features": [
+        "Thread-safe TTL expiration",
+        "Maximum entry count",
+        "Maximum estimated byte size",
+        "Least-recently-used eviction",
+        "Hit/miss/eviction/expiration statistics",
+        "Central cache registry and safe clear operation"
+      ],
+      "files": [
+        "src/biointel/stability_v145/cache.py"
+      ]
+    },
+    "database_stability": {
+      "features": [
+        "Bounded exponential retry for SQLite lock/busy errors",
+        "WAL auto-checkpoint and 64 MB journal-size limit",
+        "Foreign-key enforcement and busy timeout",
+        "Quick integrity and foreign-key checks",
+        "Passive WAL checkpoints and PRAGMA optimize",
+        "Fleet-wide maintenance report"
+      ],
+      "files": [
+        "src/biointel/database/core.py",
+        "src/biointel/stability_v145/database.py"
+      ]
+    },
+    "background_job_recovery": {
+      "features": [
+        "Automatic local_jobs database discovery",
+        "Stale worker-heartbeat detection",
+        "Orphaned running-job recovery to queue",
+        "Queue-level recovery isolation",
+        "Startup preflight recovery integration"
+      ],
+      "files": [
+        "src/biointel/stability_v145/jobs.py",
+        "scripts/step145_runtime_preflight.py"
+      ]
+    },
+    "safe_error_diagnostics": {
+      "features": [
+        "Recursive credential redaction",
+        "Inline token/query-parameter redaction",
+        "Stable recovery references",
+        "Atomic JSON diagnostic writes",
+        "Count and total-size retention limits",
+        "Corrupt diagnostic-file tolerance"
+      ],
+      "files": [
+        "src/biointel/stability_v145/errors.py"
+      ]
+    },
+    "overall_maintenance": {
+      "features": [
+        "Database fleet maintenance",
+        "Orphan job recovery",
+        "Process and file-cache clearing",
+        "Database health-cache invalidation",
+        "Old log and partial-temp pruning",
+        "Error-store rotation",
+        "Garbage collection",
+        "Before/after startup safety snapshots",
+        "Atomic maintenance report"
+      ],
+      "files": [
+        "src/biointel/stability_v145/maintenance.py",
+        "pages/110_Reliability_Optimization_Center.py"
+      ]
+    },
+    "windows_runtime_hardening": {
+      "features": [
+        "Mandatory protected preflight before UI/API/worker launch",
+        "Dynamic 2/4-thread scientific library budget",
+        "UTF-8 process environment",
+        "Tokenizer parallelism suppression",
+        "Actionable preflight report on failure",
+        "Dedicated qualification and smoke launchers"
+      ],
+      "files": [
+        "RUN_BOTH_WINDOWS.bat",
+        "RUN_APP_SMOOTH_WINDOWS.bat",
+        "INSTALL_WINDOWS.bat",
+        "RUN_STEP145_OVERALL_STABILITY_WINDOWS.bat",
+        "RUN_STEP145_STABILITY_SMOKE_WINDOWS.bat"
+      ]
+    }
+  },
+  "guardrails": {
+    "sqlite_lock_attempts": 5,
+    "sqlite_busy_timeout_ms": 30000,
+    "sqlite_wal_autocheckpoint_pages": 1000,
+    "sqlite_journal_size_limit_bytes": 67108864,
+    "startup_cache_ttl_seconds": 30,
+    "startup_cache_max_entries": 16,
+    "startup_cache_max_bytes": 4194304,
+    "minimum_free_disk_bytes": 2147483648,
+    "recommended_free_disk_bytes": 8589934592,
+    "runtime_error_max_files": 200,
+    "runtime_error_max_total_bytes": 52428800,
+    "windows_compute_threads": "2 by default; 4 when 8 or more logical processors are available"
+  },
+  "preserved": [
+    "All Step 144 Research Planning specialist engines",
+    "All Step 137\u2013140 Bioinformatics peak modules",
+    "Existing native formats, uploads, visuals, reviews, exports and handoffs",
+    "Existing databases, model files and offline Windows wheelhouse",
+    "Product version 13.2.0"
+  ]
+}

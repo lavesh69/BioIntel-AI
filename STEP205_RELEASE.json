@@ -1,0 +1,43 @@
+{
+  "schema": "biointel.step205.neuro-scientific-upgrade.release.v1",
+  "step": 205,
+  "version": "15.5.0",
+  "package_generation": "V18.0",
+  "part_count": 4,
+  "platform": "Windows desktop",
+  "python_runtime": "CPython 3.11.9 x64",
+  "supported_workflow": [
+    "INSTALL_WINDOWS.bat",
+    "RUN_BOTH_WINDOWS.bat"
+  ],
+  "archive_root": "BioIntel-AI-15.5.0-Step205-WINDOWS-V18.0",
+  "offline_core": true,
+  "upgrade_scope": "Neuro/CNS scientific workflows, validation, ingestion, error handling and calculated visuals",
+  "priority_order": [
+    "Brain Expression Atlas",
+    "Neuro-Omics Biomarker Discovery",
+    "Neurogenetics & Variant Interpretation",
+    "EEG/MEG Analytics",
+    "Neuroimaging & Connectomics",
+    "Precision Neurology",
+    "BBB/CNS Drug-Likeness and ADME",
+    "Brain Exposure PK and Receptor Occupancy",
+    "Target/Pathway/GPCR/Ion-Channel",
+    "Off-target/Neurotoxicity/Side Effects",
+    "CNS Clinical Trial Intelligence",
+    "Scientific visual integration"
+  ],
+  "protected_modules_unchanged": [
+    "DTI Predictor",
+    "DTI Validation Evidence Center",
+    "LIMS / ELN / Sample Chain of Custody",
+    "Lab Instrument Import Center",
+    "Instrument Integration Hub"
+  ],
+  "optional_services": [
+    "Ollama",
+    "SearXNG",
+    "external scientific providers"
+  ],
+  "scientific_boundary": "Implemented research software and internal automated tests are distinct from external scientific, clinical, regulatory, wet-lab, licensed-database and prospective validation."
+}

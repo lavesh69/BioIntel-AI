@@ -1,0 +1,1503 @@
+{
+  "schema": "biointel.advanced-tools.v3",
+  "release": "2026.07-step120",
+  "tools_home_windows": "%LOCALAPPDATA%\\BioIntelAI\\Tools",
+  "wsl_environment": "biointel-tools",
+  "notes": [
+    "Executable packages are installed into an application-local tools directory and never written into Windows system folders.",
+    "Large reference databases are intentionally managed separately because their releases, licences and storage requirements vary.",
+    "Native Windows packages are preferred when official binaries exist; Linux-first packages use the optional WSL/Bioconda backend.",
+    "Step 96 records executable versions, hashes, commands, stdout, stderr and exit codes for audited specialist-tool runs.",
+    "Step 100 expands audited detection for polishing, phylogenomics, pathogen typing and pooled-CRISPR tools without claiming they are bundled.",
+    "Step 120 adds audited readiness for epigenomics, GWAS, structural variation, splicing, mass spectrometry, antibody and imaging engines; proprietary/licensed engines remain operator-supplied."
+  ],
+  "tools": [
+    {
+      "id": "amrfinderplus",
+      "label": "BioIntel AMR gene and mutation detection Engine",
+      "category": "AMR",
+      "executable": "amrfinder",
+      "aliases": [],
+      "backend": "wsl",
+      "purpose": "Antimicrobial-resistance gene and mutation screening.",
+      "version_args": [
+        "--version"
+      ],
+      "database_required": true,
+      "database_note": "Run amrfinder_update after installation to obtain the current database.",
+      "upstream_label": "NCBI AMRFinderPlus",
+      "public_key": "BI-ENG-002",
+      "public_label": "BioIntel AMR gene and mutation detection Engine"
+    },
+    {
+      "id": "resfinder",
+      "label": "BioIntel Acquired resistance and point-mutation detection Engine",
+      "category": "AMR",
+      "executable": "run_resfinder.py",
+      "aliases": [],
+      "backend": "wsl",
+      "purpose": "Acquired antimicrobial-resistance gene screening.",
+      "version_args": [
+        "--help"
+      ],
+      "database_required": true,
+      "database_note": "ResFinder database release is required.",
+      "upstream_label": "ResFinder",
+      "public_key": "BI-ENG-059",
+      "public_label": "BioIntel Acquired resistance and point-mutation detection Engine"
+    },
+    {
+      "id": "bowtie2",
+      "label": "BioIntel Short-read alignment Engine",
+      "category": "Alignment",
+      "executable": "bowtie2",
+      "aliases": [
+        "bowtie2-build",
+        "bowtie2-inspect"
+      ],
+      "backend": "native-preferred",
+      "purpose": "Short-read alignment and host depletion.",
+      "version_args": [
+        "--version"
+      ],
+      "database_required": true,
+      "database_note": "Build or download an index for the selected reference genome.",
+      "upstream_label": "Bowtie 2",
+      "public_key": "BI-ENG-010",
+      "public_label": "BioIntel Short-read alignment Engine"
+    },
+    {
+      "id": "mafft",
+      "label": "BioIntel Multiple sequence alignment Engine",
+      "category": "Alignment",
+      "executable": "mafft",
+      "aliases": [],
+      "backend": "native-preferred",
+      "purpose": "Multiple sequence alignment.",
+      "version_args": [
+        "--version"
+      ],
+      "database_required": false,
+      "upstream_label": "MAFFT",
+      "public_key": "BI-ENG-037",
+      "public_label": "BioIntel Multiple sequence alignment Engine"
+    },
+    {
+      "id": "minimap2",
+      "label": "BioIntel Long-read mapping & Assembly alignment Engine",
+      "category": "Alignment",
+      "executable": "minimap2",
+      "aliases": [],
+      "backend": "wsl",
+      "purpose": "Long-read and assembly-to-reference alignment.",
+      "version_args": [
+        "--version"
+      ],
+      "database_required": false,
+      "upstream_label": "minimap2",
+      "public_key": "BI-ENG-041",
+      "public_label": "BioIntel Long-read mapping & Assembly alignment Engine"
+    },
+    {
+      "id": "bakta",
+      "label": "BioIntel Standardized bacterial genome annotation Engine",
+      "category": "Annotation",
+      "executable": "bakta",
+      "aliases": [],
+      "backend": "wsl",
+      "purpose": "Standardized bacterial genome annotation.",
+      "version_args": [
+        "--version"
+      ],
+      "database_required": true,
+      "database_note": "A Bakta database release is required and can be large.",
+      "upstream_label": "Bakta",
+      "public_key": "BI-TOOL-001",
+      "public_label": "BioIntel Standardized bacterial genome annotation Engine"
+    },
+    {
+      "id": "prokka",
+      "label": "BioIntel Rapid prokaryotic genome annotation Engine",
+      "category": "Annotation",
+      "executable": "prokka",
+      "aliases": [],
+      "backend": "wsl",
+      "purpose": "Rapid prokaryotic genome annotation.",
+      "version_args": [
+        "--version"
+      ],
+      "database_required": false,
+      "upstream_label": "Prokka",
+      "public_key": "BI-TOOL-002",
+      "public_label": "BioIntel Rapid prokaryotic genome annotation Engine"
+    },
+    {
+      "id": "anarci",
+      "label": "BioIntel Antibody numbering & CDR annotation Engine",
+      "category": "Antibody engineering",
+      "executable": "ANARCI",
+      "aliases": [
+        "anarci"
+      ],
+      "backend": "wsl",
+      "purpose": "Antibody numbering and CDR annotation.",
+      "version_args": [
+        "--version"
+      ],
+      "database_required": false,
+      "upstream_label": "ANARCI",
+      "public_key": "BI-ENG-003",
+      "public_label": "BioIntel Antibody numbering & CDR annotation Engine"
+    },
+    {
+      "id": "igblast",
+      "label": "BioIntel Immunoglobulin germline alignment Engine",
+      "category": "Antibody engineering",
+      "executable": "igblastn",
+      "aliases": [
+        "igblastp"
+      ],
+      "backend": "wsl",
+      "purpose": "Immunoglobulin germline assignment.",
+      "version_args": [
+        "--version"
+      ],
+      "database_required": true,
+      "database_note": "Requires local organism-specific germline databases.",
+      "upstream_label": "IgBLAST",
+      "public_key": "BI-ENG-030",
+      "public_label": "BioIntel Immunoglobulin germline alignment Engine"
+    },
+    {
+      "id": "primer3",
+      "label": "BioIntel Validated primer design engine",
+      "category": "Assay design",
+      "executable": "primer3_core",
+      "aliases": [],
+      "backend": "wsl",
+      "purpose": "Validated primer design engine.",
+      "version_args": [
+        "--about"
+      ],
+      "database_required": false,
+      "upstream_label": "Primer3",
+      "public_key": "BI-TOOL-003",
+      "public_label": "BioIntel Validated primer design engine"
+    },
+    {
+      "id": "busco",
+      "label": "BioIntel Assembly completeness Engine",
+      "category": "Assembly QC",
+      "executable": "busco",
+      "aliases": [],
+      "backend": "wsl",
+      "purpose": "Gene-content completeness assessment against lineage datasets.",
+      "version_args": [
+        "--version"
+      ],
+      "database_required": true,
+      "database_note": "Requires the lineage dataset matching the organism under study.",
+      "upstream_label": "BUSCO",
+      "public_key": "BI-ENG-012",
+      "public_label": "BioIntel Assembly completeness Engine"
+    },
+    {
+      "id": "merqury",
+      "label": "BioIntel K-mer completeness & Consensus quality Engine",
+      "category": "Assembly QC",
+      "executable": "merqury.sh",
+      "aliases": [
+        "meryl"
+      ],
+      "backend": "wsl",
+      "purpose": "Reference-free assembly QV and completeness assessment.",
+      "version_args": [
+        "--help"
+      ],
+      "database_required": false,
+      "upstream_label": "Merqury",
+      "public_key": "BI-ENG-039",
+      "public_label": "BioIntel K-mer completeness & Consensus quality Engine"
+    },
+    {
+      "id": "quast",
+      "label": "BioIntel Assembly quality assessment with contiguity and reference-aware metrics Engine",
+      "category": "Assembly QC",
+      "executable": "quast",
+      "aliases": [
+        "quast.py"
+      ],
+      "backend": "wsl",
+      "purpose": "Assembly quality assessment with contiguity and reference-aware metrics.",
+      "version_args": [
+        "--version"
+      ],
+      "database_required": false,
+      "upstream_label": "QUAST",
+      "public_key": "BI-TOOL-004",
+      "public_label": "BioIntel Assembly quality assessment with contiguity and reference-aware metrics Engine"
+    },
+    {
+      "id": "purge_dups",
+      "label": "BioIntel Haplotig and duplicated-assembly cleanup Engine",
+      "category": "Assembly QC",
+      "executable": "purge_dups",
+      "aliases": [
+        "pbcstat",
+        "calcuts"
+      ],
+      "backend": "wsl",
+      "purpose": "Haplotig and duplicated-assembly cleanup.",
+      "version_args": [
+        "--help"
+      ],
+      "database_required": false,
+      "upstream_label": "purge_dups",
+      "public_key": "BI-TOOL-005",
+      "public_label": "BioIntel Haplotig and duplicated-assembly cleanup Engine"
+    },
+    {
+      "id": "gcpp",
+      "label": "BioIntel PacBio consensus polishing Engine",
+      "category": "Assembly polishing",
+      "executable": "gcpp",
+      "aliases": [],
+      "backend": "wsl",
+      "purpose": "PacBio consensus polishing.",
+      "version_args": [
+        "--version"
+      ],
+      "database_required": false,
+      "upstream_label": "GCpp",
+      "public_key": "BI-TOOL-006",
+      "public_label": "BioIntel PacBio consensus polishing Engine"
+    },
+    {
+      "id": "medaka",
+      "label": "BioIntel Oxford Nanopore neural consensus polishing Engine",
+      "category": "Assembly polishing",
+      "executable": "medaka_consensus",
+      "aliases": [
+        "medaka_variant"
+      ],
+      "backend": "wsl",
+      "purpose": "Oxford Nanopore neural consensus polishing.",
+      "version_args": [
+        "--version"
+      ],
+      "database_required": true,
+      "database_note": "A chemistry-compatible Medaka model is required.",
+      "upstream_label": "Medaka",
+      "public_key": "BI-TOOL-007",
+      "public_label": "BioIntel Oxford Nanopore neural consensus polishing Engine"
+    },
+    {
+      "id": "nextpolish",
+      "label": "BioIntel Hybrid short-read and long-read polishing Engine",
+      "category": "Assembly polishing",
+      "executable": "nextPolish",
+      "aliases": [],
+      "backend": "wsl",
+      "purpose": "Hybrid short-read and long-read polishing.",
+      "version_args": [
+        "--version"
+      ],
+      "database_required": false,
+      "upstream_label": "NextPolish",
+      "public_key": "BI-TOOL-008",
+      "public_label": "BioIntel Hybrid short-read and long-read polishing Engine"
+    },
+    {
+      "id": "racon",
+      "label": "BioIntel Long-read consensus polishing Engine",
+      "category": "Assembly polishing",
+      "executable": "racon",
+      "aliases": [],
+      "backend": "wsl",
+      "purpose": "Long-read consensus polishing.",
+      "version_args": [
+        "--version"
+      ],
+      "database_required": false,
+      "upstream_label": "Racon",
+      "public_key": "BI-TOOL-009",
+      "public_label": "BioIntel Long-read consensus polishing Engine"
+    },
+    {
+      "id": "cellpose",
+      "label": "BioIntel Cell & nucleus segmentation Engine",
+      "category": "Bioimaging",
+      "executable": "cellpose",
+      "aliases": [],
+      "backend": "python-optional",
+      "purpose": "Cell and nucleus segmentation.",
+      "version_args": [
+        "--version"
+      ],
+      "database_required": true,
+      "database_note": "Requires approved model weights; GPU is optional.",
+      "upstream_label": "Cellpose",
+      "public_key": "BI-ENG-014",
+      "public_label": "BioIntel Cell & nucleus segmentation Engine"
+    },
+    {
+      "id": "stardist",
+      "label": "BioIntel Star-convex object segmentation Engine",
+      "category": "Bioimaging",
+      "executable": "python",
+      "aliases": [],
+      "backend": "python-optional",
+      "purpose": "Star-convex nuclei/object segmentation.",
+      "version_args": [
+        "--version"
+      ],
+      "database_required": true,
+      "database_note": "Requires approved model weights; GPU is optional.",
+      "upstream_label": "StarDist",
+      "public_key": "BI-ENG-070",
+      "public_label": "BioIntel Star-convex object segmentation Engine"
+    },
+    {
+      "id": "bagel",
+      "label": "BioIntel Bayesian essentiality analysis for pooled CRISPR screens Engine",
+      "category": "CRISPR",
+      "executable": "BAGEL.py",
+      "aliases": [],
+      "backend": "wsl",
+      "purpose": "Bayesian essentiality analysis for pooled CRISPR screens.",
+      "version_args": [
+        "--help"
+      ],
+      "database_required": true,
+      "database_note": "Reference essential and non-essential gene sets are required.",
+      "upstream_label": "BAGEL",
+      "public_key": "BI-TOOL-010",
+      "public_label": "BioIntel Bayesian essentiality analysis for pooled CRISPR screens Engine"
+    },
+    {
+      "id": "jacks",
+      "label": "BioIntel Guide efficacy-aware pooled CRISPR analysis Engine",
+      "category": "CRISPR",
+      "executable": "jacks",
+      "aliases": [],
+      "backend": "wsl",
+      "purpose": "Guide efficacy-aware pooled CRISPR analysis.",
+      "version_args": [
+        "--help"
+      ],
+      "database_required": false,
+      "upstream_label": "JACKS",
+      "public_key": "BI-TOOL-011",
+      "public_label": "BioIntel Guide efficacy-aware pooled CRISPR analysis Engine"
+    },
+    {
+      "id": "mageck",
+      "label": "BioIntel Replicate-aware pooled CRISPR screen quality control and gene ranking Engine",
+      "category": "CRISPR screens",
+      "executable": "mageck",
+      "aliases": [
+        "mageck-test",
+        "mageck-mle"
+      ],
+      "backend": "wsl",
+      "purpose": "Replicate-aware pooled CRISPR screen quality control and gene ranking.",
+      "version_args": [
+        "--version"
+      ],
+      "database_required": false,
+      "upstream_label": "MAGeCK",
+      "public_key": "BI-TOOL-012",
+      "public_label": "BioIntel Replicate-aware pooled CRISPR screen quality control and gene ranking Engine"
+    },
+    {
+      "id": "obabel",
+      "label": "BioIntel Ligand format conversion & Hydrogen & protonation preparation Engine",
+      "category": "Cheminformatics",
+      "executable": "obabel",
+      "aliases": [],
+      "backend": "wsl",
+      "purpose": "Ligand format conversion and preparation.",
+      "version_args": [
+        "--version"
+      ],
+      "database_required": false,
+      "upstream_label": "Open Babel",
+      "public_key": "BI-ENG-049",
+      "public_label": "BioIntel Ligand format conversion & Hydrogen & protonation preparation Engine"
+    },
+    {
+      "id": "fastani",
+      "label": "BioIntel Whole-genome average nucleotide identity Engine",
+      "category": "Comparative genomics",
+      "executable": "fastANI",
+      "aliases": [],
+      "backend": "wsl",
+      "purpose": "Whole-genome average nucleotide identity.",
+      "version_args": [
+        "--version"
+      ],
+      "database_required": false,
+      "upstream_label": "FastANI",
+      "public_key": "BI-TOOL-013",
+      "public_label": "BioIntel Whole-genome average nucleotide identity Engine"
+    },
+    {
+      "id": "mash",
+      "label": "BioIntel MinHash genome & read distance estimation Engine",
+      "category": "Comparative genomics",
+      "executable": "mash",
+      "aliases": [],
+      "backend": "wsl",
+      "purpose": "MinHash genome/read distance estimation.",
+      "version_args": [
+        "--version"
+      ],
+      "database_required": false,
+      "upstream_label": "Mash",
+      "public_key": "BI-TOOL-014",
+      "public_label": "BioIntel MinHash genome & read distance estimation Engine"
+    },
+    {
+      "id": "panaroo",
+      "label": "BioIntel Bacterial pangenome analysis from annotated assemblies Engine",
+      "category": "Comparative genomics",
+      "executable": "panaroo",
+      "aliases": [],
+      "backend": "wsl",
+      "purpose": "Bacterial pangenome analysis from annotated assemblies.",
+      "version_args": [
+        "--version"
+      ],
+      "database_required": false,
+      "database_note": "Input annotations and quality thresholds must be validated.",
+      "upstream_label": "Panaroo",
+      "public_key": "BI-TOOL-015",
+      "public_label": "BioIntel Bacterial pangenome analysis from annotated assemblies Engine"
+    },
+    {
+      "id": "vina",
+      "label": "BioIntel Molecular docking & Pose scoring Engine",
+      "category": "Docking",
+      "executable": "vina",
+      "aliases": [],
+      "backend": "native-preferred",
+      "purpose": "Molecular docking and virtual screening.",
+      "version_args": [
+        "--version"
+      ],
+      "database_required": false,
+      "upstream_label": "AutoDock Vina",
+      "public_key": "BI-ENG-075",
+      "public_label": "BioIntel Molecular docking & Pose scoring Engine"
+    },
+    {
+      "id": "macs2",
+      "label": "BioIntel ChIP-seq & ATAC-seq peak calling Engine",
+      "category": "Epigenomics",
+      "executable": "macs2",
+      "aliases": [],
+      "backend": "wsl",
+      "purpose": "Control-aware ChIP-seq/ATAC-seq peak calling.",
+      "version_args": [
+        "--version"
+      ],
+      "database_required": false,
+      "upstream_label": "MACS2",
+      "public_key": "BI-ENG-036",
+      "public_label": "BioIntel ChIP-seq & ATAC-seq peak calling Engine"
+    },
+    {
+      "id": "deeptools",
+      "label": "BioIntel bigWig generation & Signal profiles Engine",
+      "category": "Epigenomics",
+      "executable": "bamCoverage",
+      "aliases": [
+        "computeMatrix",
+        "plotProfile"
+      ],
+      "backend": "wsl",
+      "purpose": "Coverage tracks and enrichment profiles.",
+      "version_args": [
+        "--version"
+      ],
+      "database_required": false,
+      "upstream_label": "deepTools",
+      "public_key": "BI-ENG-019",
+      "public_label": "BioIntel bigWig generation & Signal profiles Engine"
+    },
+    {
+      "id": "samtools",
+      "label": "BioIntel BAM & CRAM validation & Indexing Engine",
+      "category": "Genomics",
+      "executable": "samtools",
+      "aliases": [],
+      "backend": "wsl",
+      "purpose": "SAM/BAM/CRAM manipulation and indexing.",
+      "version_args": [
+        "--version"
+      ],
+      "database_required": false,
+      "upstream_label": "samtools",
+      "public_key": "BI-ENG-064",
+      "public_label": "BioIntel BAM & CRAM validation & Indexing Engine"
+    },
+    {
+      "id": "mosdepth",
+      "label": "BioIntel Genome coverage & Region coverage summaries Engine",
+      "category": "Genomics QC",
+      "executable": "mosdepth",
+      "aliases": [],
+      "backend": "wsl",
+      "purpose": "Fast BAM/CRAM coverage summaries.",
+      "version_args": [
+        "--version"
+      ],
+      "database_required": false,
+      "database_note": "Reference build and callable-region policy must be recorded.",
+      "upstream_label": "Mosdepth",
+      "public_key": "BI-ENG-043",
+      "public_label": "BioIntel Genome coverage & Region coverage summaries Engine"
+    },
+    {
+      "id": "netmhciipan",
+      "label": "BioIntel MHC-II binding prediction Engine",
+      "category": "Immunoinformatics",
+      "executable": "netMHCIIpan",
+      "aliases": [],
+      "backend": "operator-supplied",
+      "purpose": "MHC-II binding prediction.",
+      "version_args": [
+        "--version"
+      ],
+      "database_required": true,
+      "database_note": "Licensed academic/commercial installation and data files must be supplied by the operator.",
+      "upstream_label": "NetMHCIIpan",
+      "public_key": "BI-ENG-047",
+      "public_label": "BioIntel MHC-II binding prediction Engine"
+    },
+    {
+      "id": "netmhcpan",
+      "label": "BioIntel MHC-I binding prediction Engine",
+      "category": "Immunoinformatics",
+      "executable": "netMHCpan",
+      "aliases": [],
+      "backend": "operator-supplied",
+      "purpose": "MHC-I binding prediction.",
+      "version_args": [
+        "--version"
+      ],
+      "database_required": true,
+      "database_note": "Licensed academic/commercial installation and data files must be supplied by the operator.",
+      "upstream_label": "NetMHCpan",
+      "public_key": "BI-ENG-048",
+      "public_label": "BioIntel MHC-I binding prediction Engine"
+    },
+    {
+      "id": "dorado",
+      "label": "BioIntel Basecalling & Modified-base calling Engine",
+      "category": "Long-read",
+      "executable": "dorado",
+      "aliases": [],
+      "backend": "native",
+      "purpose": "Oxford Nanopore basecalling and read processing.",
+      "version_args": [
+        "--version"
+      ],
+      "database_required": true,
+      "database_note": "Model files must be downloaded from the official Oxford Nanopore release and checksum-verified.",
+      "upstream_label": "Oxford Nanopore Dorado",
+      "public_key": "BI-ENG-020",
+      "public_label": "BioIntel Basecalling & Modified-base calling Engine"
+    },
+    {
+      "id": "canu",
+      "label": "BioIntel Correction, trimming and assembly of noisy long reads Engine",
+      "category": "Long-read assembly",
+      "executable": "canu",
+      "aliases": [],
+      "backend": "wsl",
+      "purpose": "Correction, trimming and assembly of noisy long reads.",
+      "version_args": [
+        "-version"
+      ],
+      "database_required": false,
+      "upstream_label": "Canu",
+      "public_key": "BI-TOOL-016",
+      "public_label": "BioIntel Correction, trimming and assembly of noisy long reads Engine"
+    },
+    {
+      "id": "flye",
+      "label": "BioIntel Long-read assembly & Metagenome assembly Engine",
+      "category": "Long-read assembly",
+      "executable": "flye",
+      "aliases": [],
+      "backend": "wsl",
+      "purpose": "Long-read de novo assembly for ONT and PacBio reads.",
+      "version_args": [
+        "--version"
+      ],
+      "database_required": false,
+      "upstream_label": "Flye",
+      "public_key": "BI-ENG-024",
+      "public_label": "BioIntel Long-read assembly & Metagenome assembly Engine"
+    },
+    {
+      "id": "hifiasm",
+      "label": "BioIntel HiFi assembly & Phased assembly Engine",
+      "category": "Long-read assembly",
+      "executable": "hifiasm",
+      "aliases": [],
+      "backend": "wsl",
+      "purpose": "Haplotype-resolved PacBio HiFi and ultra-long read assembly.",
+      "version_args": [
+        "--version"
+      ],
+      "database_required": false,
+      "upstream_label": "hifiasm",
+      "public_key": "BI-ENG-027",
+      "public_label": "BioIntel HiFi assembly & Phased assembly Engine"
+    },
+    {
+      "id": "openms",
+      "label": "BioIntel mzML validation & Peak processing Engine",
+      "category": "Mass spectrometry",
+      "executable": "FileInfo",
+      "aliases": [
+        "FeatureFinderMetabo"
+      ],
+      "backend": "wsl",
+      "purpose": "mzML validation and LC-MS feature detection.",
+      "version_args": [
+        "--version"
+      ],
+      "database_required": false,
+      "upstream_label": "OpenMS",
+      "public_key": "BI-ENG-052",
+      "public_label": "BioIntel mzML validation & Peak processing Engine"
+    },
+    {
+      "id": "bracken",
+      "label": "BioIntel Abundance re-estimation Engine",
+      "category": "Metagenomics",
+      "executable": "bracken",
+      "aliases": [
+        "bracken-build"
+      ],
+      "backend": "wsl",
+      "purpose": "Species/genus abundance re-estimation from Kraken reports.",
+      "version_args": [
+        "-v"
+      ],
+      "database_required": true,
+      "database_note": "Requires a Bracken-compatible Kraken database.",
+      "upstream_label": "Bracken",
+      "public_key": "BI-ENG-011",
+      "public_label": "BioIntel Abundance re-estimation Engine"
+    },
+    {
+      "id": "humann",
+      "label": "BioIntel Functional profiling Engine",
+      "category": "Metagenomics",
+      "executable": "humann",
+      "aliases": [],
+      "backend": "wsl",
+      "purpose": "Microbial gene-family and pathway profiling.",
+      "version_args": [
+        "--version"
+      ],
+      "database_required": true,
+      "database_note": "ChocoPhlAn and UniRef databases are managed separately.",
+      "upstream_label": "HUMAnN",
+      "public_key": "BI-ENG-029",
+      "public_label": "BioIntel Functional profiling Engine"
+    },
+    {
+      "id": "kraken2",
+      "label": "BioIntel Taxonomic classification Engine",
+      "category": "Metagenomics",
+      "executable": "kraken2",
+      "aliases": [
+        "kraken2-build",
+        "kraken2-inspect"
+      ],
+      "backend": "wsl",
+      "purpose": "K-mer based taxonomic classification.",
+      "version_args": [
+        "--version"
+      ],
+      "database_required": true,
+      "database_note": "Kraken databases can range from several GB to hundreds of GB and are installed separately.",
+      "upstream_label": "Kraken 2",
+      "public_key": "BI-ENG-034",
+      "public_label": "BioIntel Taxonomic classification Engine"
+    },
+    {
+      "id": "metaphlan",
+      "label": "BioIntel Marker-based taxonomic profiling Engine",
+      "category": "Metagenomics",
+      "executable": "metaphlan",
+      "aliases": [],
+      "backend": "wsl",
+      "purpose": "Marker-based taxonomic profiling.",
+      "version_args": [
+        "--version"
+      ],
+      "database_required": true,
+      "database_note": "The matching MetaPhlAn database release is downloaded separately.",
+      "upstream_label": "MetaPhlAn",
+      "public_key": "BI-TOOL-017",
+      "public_label": "BioIntel Marker-based taxonomic profiling Engine"
+    },
+    {
+      "id": "sourmash",
+      "label": "BioIntel MinHash sketches for genome and metagenome comparison Engine",
+      "category": "Metagenomics",
+      "executable": "sourmash",
+      "aliases": [],
+      "backend": "wsl",
+      "purpose": "MinHash sketches for genome and metagenome comparison.",
+      "version_args": [
+        "--version"
+      ],
+      "database_required": true,
+      "database_note": "Reference signature databases must be versioned and checksum-verified.",
+      "upstream_label": "sourmash",
+      "public_key": "BI-TOOL-018",
+      "public_label": "BioIntel MinHash sketches for genome and metagenome comparison Engine"
+    },
+    {
+      "id": "odgi",
+      "label": "BioIntel Graph sorting & Path statistics Engine",
+      "category": "Pangenome graphs",
+      "executable": "odgi",
+      "aliases": [],
+      "backend": "wsl",
+      "purpose": "Optimize, query, visualize and analyze variation graphs.",
+      "version_args": [
+        "version"
+      ],
+      "database_required": false,
+      "upstream_label": "ODGI",
+      "public_key": "BI-ENG-050",
+      "public_label": "BioIntel Graph sorting & Path statistics Engine"
+    },
+    {
+      "id": "vg",
+      "label": "BioIntel Graph indexing & Graph mapping Engine",
+      "category": "Pangenome graphs",
+      "executable": "vg",
+      "aliases": [],
+      "backend": "wsl",
+      "purpose": "Variation graph construction, indexing, mapping and genotyping.",
+      "version_args": [
+        "version"
+      ],
+      "database_required": true,
+      "database_note": "Reference graph indexes and population resources are project-specific.",
+      "upstream_label": "VG toolkit",
+      "public_key": "BI-ENG-074",
+      "public_label": "BioIntel Graph indexing & Graph mapping Engine"
+    },
+    {
+      "id": "minigraph",
+      "label": "BioIntel Pangenome graph construction & Assembly alignment Engine",
+      "category": "Pangenome graphs",
+      "executable": "minigraph",
+      "aliases": [],
+      "backend": "wsl",
+      "purpose": "Construct sequence-to-graph and pangenome graphs from assemblies.",
+      "version_args": [
+        "--version"
+      ],
+      "database_required": false,
+      "upstream_label": "minigraph",
+      "public_key": "BI-ENG-040",
+      "public_label": "BioIntel Pangenome graph construction & Assembly alignment Engine"
+    },
+    {
+      "id": "mlst",
+      "label": "BioIntel Sequence-type assignment for microbial isolates Engine",
+      "category": "Pathogen typing",
+      "executable": "mlst",
+      "aliases": [],
+      "backend": "wsl",
+      "purpose": "Sequence-type assignment for microbial isolates.",
+      "version_args": [
+        "--version"
+      ],
+      "database_required": true,
+      "database_note": "Scheme definitions are downloaded separately and versioned.",
+      "upstream_label": "MLST",
+      "public_key": "BI-TOOL-019",
+      "public_label": "BioIntel Sequence-type assignment for microbial isolates Engine"
+    },
+    {
+      "id": "gubbins",
+      "label": "BioIntel Recombination-aware bacterial phylogenomics Engine",
+      "category": "Phylogenomics",
+      "executable": "run_gubbins.py",
+      "aliases": [
+        "gubbins"
+      ],
+      "backend": "wsl",
+      "purpose": "Recombination-aware bacterial phylogenomics.",
+      "version_args": [
+        "--version"
+      ],
+      "database_required": false,
+      "upstream_label": "Gubbins",
+      "public_key": "BI-TOOL-020",
+      "public_label": "BioIntel Recombination-aware bacterial phylogenomics Engine"
+    },
+    {
+      "id": "iqtree",
+      "label": "BioIntel Maximum-likelihood phylogeny & Model selection Engine",
+      "category": "Phylogeny",
+      "executable": "iqtree3",
+      "aliases": [
+        "iqtree2",
+        "iqtree"
+      ],
+      "backend": "native-preferred",
+      "purpose": "Maximum-likelihood phylogenetic inference and model selection.",
+      "version_args": [
+        "--version"
+      ],
+      "database_required": false,
+      "upstream_label": "IQ-TREE",
+      "public_key": "BI-ENG-032",
+      "public_label": "BioIntel Maximum-likelihood phylogeny & Model selection Engine"
+    },
+    {
+      "id": "raxml_ng",
+      "label": "BioIntel Maximum-likelihood phylogenetic inference Engine",
+      "category": "Phylogeny",
+      "executable": "raxml-ng",
+      "aliases": [],
+      "backend": "wsl",
+      "purpose": "Maximum-likelihood phylogenetic inference.",
+      "version_args": [
+        "--version"
+      ],
+      "database_required": false,
+      "upstream_label": "RAxML-NG",
+      "public_key": "BI-TOOL-021",
+      "public_label": "BioIntel Maximum-likelihood phylogenetic inference Engine"
+    },
+    {
+      "id": "plink2",
+      "label": "BioIntel Cohort QC & Association tests Engine",
+      "category": "Population genetics",
+      "executable": "plink2",
+      "aliases": [],
+      "backend": "wsl",
+      "purpose": "Cohort QC, PCA and association testing.",
+      "version_args": [
+        "--version"
+      ],
+      "database_required": false,
+      "upstream_label": "PLINK 2",
+      "public_key": "BI-ENG-056",
+      "public_label": "BioIntel Cohort QC & Association tests Engine"
+    },
+    {
+      "id": "regenie",
+      "label": "BioIntel Whole-genome regression & Association testing Engine",
+      "category": "Population genetics",
+      "executable": "regenie",
+      "aliases": [],
+      "backend": "wsl",
+      "purpose": "Whole-genome regression and association testing.",
+      "version_args": [
+        "--version"
+      ],
+      "database_required": false,
+      "upstream_label": "REGENIE",
+      "public_key": "BI-ENG-058",
+      "public_label": "BioIntel Whole-genome regression & Association testing Engine"
+    },
+    {
+      "id": "hmmer",
+      "label": "BioIntel Profile-HMM sequence search Engine",
+      "category": "Profile search",
+      "executable": "hmmscan",
+      "aliases": [
+        "hmmsearch",
+        "hmmbuild",
+        "hmmpress"
+      ],
+      "backend": "wsl",
+      "purpose": "Profile-HMM construction and sequence/domain search.",
+      "version_args": [
+        "-h"
+      ],
+      "database_required": true,
+      "database_note": "Pfam or a project-specific HMM library is required for hmmscan.",
+      "upstream_label": "HMMER",
+      "public_key": "BI-ENG-028",
+      "public_label": "BioIntel Profile-HMM sequence search Engine"
+    },
+    {
+      "id": "deeptmhmm",
+      "label": "BioIntel Transmembrane topology prediction Engine",
+      "category": "Protein annotation",
+      "executable": "deeptmhmm",
+      "aliases": [],
+      "backend": "wsl",
+      "purpose": "Transmembrane topology prediction.",
+      "version_args": [
+        "--version"
+      ],
+      "database_required": true,
+      "database_note": "Official model assets are required.",
+      "upstream_label": "DeepTMHMM",
+      "public_key": "BI-TOOL-022",
+      "public_label": "BioIntel Transmembrane topology prediction Engine"
+    },
+    {
+      "id": "interproscan",
+      "label": "BioIntel Domain annotation & GO & pathway mapping Engine",
+      "category": "Protein annotation",
+      "executable": "interproscan.sh",
+      "aliases": [
+        "interproscan"
+      ],
+      "backend": "wsl",
+      "purpose": "Protein family, domain and functional-site annotation.",
+      "version_args": [
+        "--version"
+      ],
+      "database_required": true,
+      "database_note": "InterPro member-database releases must be pinned and licensed appropriately.",
+      "upstream_label": "InterProScan",
+      "public_key": "BI-ENG-031",
+      "public_label": "BioIntel Domain annotation & GO & pathway mapping Engine"
+    },
+    {
+      "id": "signalp6",
+      "label": "BioIntel Signal peptide prediction with model & version provenance Engine",
+      "category": "Protein annotation",
+      "executable": "signalp6",
+      "aliases": [
+        "signalp"
+      ],
+      "backend": "wsl",
+      "purpose": "Signal peptide prediction with model/version provenance.",
+      "version_args": [
+        "--version"
+      ],
+      "database_required": true,
+      "database_note": "Official model assets and licence terms are required.",
+      "upstream_label": "SignalP 6",
+      "public_key": "BI-TOOL-023",
+      "public_label": "BioIntel Signal peptide prediction with model & version provenance Engine"
+    },
+    {
+      "id": "proteinmpnn",
+      "label": "BioIntel Sequence design from structure Engine",
+      "category": "Protein design",
+      "executable": "proteinmpnn",
+      "aliases": [
+        "protein_mpnn_run.py"
+      ],
+      "backend": "manual-python-env",
+      "purpose": "Structure-conditioned protein sequence design.",
+      "version_args": [
+        "--help"
+      ],
+      "database_required": true,
+      "database_note": "Requires compatible model weights and a validated Python/GPU environment.",
+      "upstream_label": "ProteinMPNN",
+      "public_key": "BI-ENG-057",
+      "public_label": "BioIntel Sequence design from structure Engine"
+    },
+    {
+      "id": "rfdiffusion",
+      "label": "BioIntel Generative backbone design Engine",
+      "category": "Protein design",
+      "executable": "rfdiffusion",
+      "aliases": [
+        "run_inference.py"
+      ],
+      "backend": "manual-python-env",
+      "purpose": "Diffusion-based protein backbone and binder design.",
+      "version_args": [
+        "--help"
+      ],
+      "database_required": true,
+      "database_note": "Requires licensed/official model weights and a supported GPU environment.",
+      "upstream_label": "RFdiffusion",
+      "public_key": "BI-ENG-060",
+      "public_label": "BioIntel Generative backbone design Engine"
+    },
+    {
+      "id": "rosetta",
+      "label": "BioIntel Protocol-driven protein modelling and design Engine",
+      "category": "Protein design",
+      "executable": "rosetta_scripts",
+      "aliases": [
+        "rosetta_scripts.default.linuxgccrelease"
+      ],
+      "backend": "manual-licensed",
+      "purpose": "Protocol-driven protein modelling and design.",
+      "version_args": [
+        "-help"
+      ],
+      "database_required": true,
+      "database_note": "Requires a licensed Rosetta installation and matching database.",
+      "upstream_label": "Rosetta Scripts",
+      "public_key": "BI-TOOL-024",
+      "public_label": "BioIntel Protocol-driven protein modelling and design Engine"
+    },
+    {
+      "id": "foldx",
+      "label": "BioIntel Structure-based mutation stability and interaction-energy calculations Engine",
+      "category": "Protein stability",
+      "executable": "foldx",
+      "aliases": [],
+      "backend": "manual-licensed",
+      "purpose": "Structure-based mutation stability and interaction-energy calculations.",
+      "version_args": [
+        "--help"
+      ],
+      "database_required": false,
+      "database_note": "FoldX licensing and executable distribution are managed by the publisher.",
+      "upstream_label": "FoldX",
+      "public_key": "BI-TOOL-025",
+      "public_label": "BioIntel Structure-based mutation stability and interaction-energy calculations Engine"
+    },
+    {
+      "id": "colabfold",
+      "label": "BioIntel Structure prediction & MSA-assisted confidence estimation Engine",
+      "category": "Protein structure",
+      "executable": "colabfold_batch",
+      "aliases": [],
+      "backend": "manual-python-env",
+      "purpose": "Local AlphaFold/ColabFold structure prediction and confidence reporting.",
+      "version_args": [
+        "--help"
+      ],
+      "database_required": true,
+      "database_note": "Requires model parameters and may require local sequence databases or remote MSA services.",
+      "upstream_label": "ColabFold batch",
+      "public_key": "BI-ENG-016",
+      "public_label": "BioIntel Structure prediction & MSA-assisted confidence estimation Engine"
+    },
+    {
+      "id": "comet",
+      "label": "BioIntel Peptide-spectrum matching Engine",
+      "category": "Proteomics",
+      "executable": "comet",
+      "aliases": [],
+      "backend": "wsl",
+      "purpose": "Peptide-spectrum matching against a FASTA database.",
+      "version_args": [
+        "--version"
+      ],
+      "database_required": true,
+      "database_note": "Requires a reviewed parameter file and target-decoy FASTA database.",
+      "upstream_label": "Comet",
+      "public_key": "BI-ENG-017",
+      "public_label": "BioIntel Peptide-spectrum matching Engine"
+    },
+    {
+      "id": "msgfplus",
+      "label": "BioIntel Peptide-spectrum matching Engine 2",
+      "category": "Proteomics",
+      "executable": "MSGFPlus",
+      "aliases": [],
+      "backend": "wsl",
+      "purpose": "Peptide-spectrum matching and score generation.",
+      "version_args": [
+        "--version"
+      ],
+      "database_required": true,
+      "database_note": "Requires Java, a target-decoy FASTA and reviewed search settings.",
+      "upstream_label": "MS-GF+",
+      "public_key": "BI-ENG-045",
+      "public_label": "BioIntel Peptide-spectrum matching Engine 2"
+    },
+    {
+      "id": "majiq",
+      "label": "BioIntel Local splicing variation Engine",
+      "category": "RNA splicing",
+      "executable": "majiq",
+      "aliases": [],
+      "backend": "wsl",
+      "purpose": "Local splicing variation analysis.",
+      "version_args": [
+        "--version"
+      ],
+      "database_required": true,
+      "database_note": "Requires a matching genome annotation and indexed alignments.",
+      "upstream_label": "MAJIQ",
+      "public_key": "BI-ENG-038",
+      "public_label": "BioIntel Local splicing variation Engine"
+    },
+    {
+      "id": "suppa2",
+      "label": "BioIntel Alternative-splicing event quantification Engine",
+      "category": "RNA splicing",
+      "executable": "suppa.py",
+      "aliases": [
+        "suppa2"
+      ],
+      "backend": "wsl",
+      "purpose": "Transcript-event generation and PSI analysis.",
+      "version_args": [
+        "--version"
+      ],
+      "database_required": true,
+      "database_note": "Requires a pinned transcript annotation.",
+      "upstream_label": "SUPPA2",
+      "public_key": "BI-ENG-071",
+      "public_label": "BioIntel Alternative-splicing event quantification Engine"
+    },
+    {
+      "id": "rmats",
+      "label": "BioIntel Replicate-aware alternative splicing Engine",
+      "category": "RNA splicing",
+      "executable": "rmats.py",
+      "aliases": [
+        "rmats"
+      ],
+      "backend": "wsl",
+      "purpose": "Replicate-aware alternative-splicing analysis.",
+      "version_args": [
+        "--version"
+      ],
+      "database_required": true,
+      "database_note": "Requires a matching genome annotation GTF.",
+      "upstream_label": "rMATS",
+      "public_key": "BI-ENG-061",
+      "public_label": "BioIntel Replicate-aware alternative splicing Engine"
+    },
+    {
+      "id": "cutadapt",
+      "label": "BioIntel Adapter trimming & Linked-adapter handling Engine",
+      "category": "Read QC",
+      "executable": "cutadapt",
+      "aliases": [],
+      "backend": "wsl",
+      "purpose": "Adapter trimming for sequencing reads.",
+      "version_args": [
+        "--version"
+      ],
+      "database_required": false,
+      "database_note": "Adapter sequences and trimming policy must be recorded.",
+      "upstream_label": "Cutadapt",
+      "public_key": "BI-ENG-018",
+      "public_label": "BioIntel Adapter trimming & Linked-adapter handling Engine"
+    },
+    {
+      "id": "fastqc",
+      "label": "BioIntel Read-quality reports & Adapter & duplication diagnostics Engine",
+      "category": "Read QC",
+      "executable": "fastqc",
+      "aliases": [],
+      "backend": "native-preferred",
+      "purpose": "Per-sample sequencing quality reports.",
+      "version_args": [
+        "--version"
+      ],
+      "database_required": false,
+      "upstream_label": "FastQC",
+      "public_key": "BI-ENG-023",
+      "public_label": "BioIntel Read-quality reports & Adapter & duplication diagnostics Engine"
+    },
+    {
+      "id": "multiqc",
+      "label": "BioIntel Cross-sample QC aggregation & Run-level quality reporting Engine",
+      "category": "Read QC",
+      "executable": "multiqc",
+      "aliases": [],
+      "backend": "wsl",
+      "purpose": "Aggregate QC reports across samples and tools.",
+      "version_args": [
+        "--version"
+      ],
+      "database_required": false,
+      "upstream_label": "MultiQC",
+      "public_key": "BI-ENG-046",
+      "public_label": "BioIntel Cross-sample QC aggregation & Run-level quality reporting Engine"
+    },
+    {
+      "id": "fastp",
+      "label": "BioIntel Read trimming & Adapter detection Engine",
+      "category": "Read QC",
+      "executable": "fastp",
+      "aliases": [],
+      "backend": "wsl",
+      "purpose": "FASTQ adapter trimming, filtering and QC.",
+      "version_args": [
+        "--version"
+      ],
+      "database_required": false,
+      "upstream_label": "fastp",
+      "public_key": "BI-ENG-022",
+      "public_label": "BioIntel Read trimming & Adapter detection Engine"
+    },
+    {
+      "id": "expansionhunter",
+      "label": "BioIntel Repeat-expansion genotyping Engine",
+      "category": "Repeat expansion",
+      "executable": "ExpansionHunter",
+      "aliases": [
+        "expansionhunter"
+      ],
+      "backend": "wsl",
+      "purpose": "Targeted repeat-expansion genotyping.",
+      "version_args": [
+        "--version"
+      ],
+      "database_required": true,
+      "database_note": "Requires a reference FASTA and versioned repeat catalogue.",
+      "upstream_label": "ExpansionHunter",
+      "public_key": "BI-ENG-021",
+      "public_label": "BioIntel Repeat-expansion genotyping Engine"
+    },
+    {
+      "id": "diamond",
+      "label": "BioIntel High-speed protein similarity search Engine",
+      "category": "Sequence search",
+      "executable": "diamond",
+      "aliases": [],
+      "backend": "wsl",
+      "purpose": "High-speed protein similarity search.",
+      "version_args": [
+        "version"
+      ],
+      "database_required": true,
+      "database_note": "Requires a DIAMOND-formatted protein database.",
+      "upstream_label": "DIAMOND",
+      "public_key": "BI-TOOL-026",
+      "public_label": "BioIntel High-speed protein similarity search Engine"
+    },
+    {
+      "id": "mmseqs2",
+      "label": "BioIntel High-scale sequence search and clustering Engine",
+      "category": "Sequence search",
+      "executable": "mmseqs",
+      "aliases": [],
+      "backend": "wsl",
+      "purpose": "High-scale sequence search and clustering.",
+      "version_args": [
+        "version"
+      ],
+      "database_required": false,
+      "upstream_label": "MMseqs2",
+      "public_key": "BI-TOOL-027",
+      "public_label": "BioIntel High-scale sequence search and clustering Engine"
+    },
+    {
+      "id": "blastn",
+      "label": "BioIntel Nucleotide similarity search Engine",
+      "category": "Sequence search",
+      "executable": "blastn",
+      "aliases": [
+        "blastp",
+        "blastx",
+        "tblastn",
+        "tblastx",
+        "makeblastdb",
+        "blastdbcmd"
+      ],
+      "backend": "native-preferred",
+      "purpose": "Local nucleotide/protein similarity search and database creation.",
+      "version_args": [
+        "-version"
+      ],
+      "database_required": true,
+      "database_note": "Use makeblastdb for private FASTA or install a selected NCBI BLAST database.",
+      "upstream_label": "NCBI BLAST+",
+      "public_key": "BI-ENG-007",
+      "public_label": "BioIntel Nucleotide similarity search Engine"
+    },
+    {
+      "id": "seqkit",
+      "label": "BioIntel High-performance FASTA & FASTQ manipulation and validation Engine",
+      "category": "Sequence utilities",
+      "executable": "seqkit",
+      "aliases": [],
+      "backend": "wsl",
+      "purpose": "High-performance FASTA/FASTQ manipulation and validation.",
+      "version_args": [
+        "version"
+      ],
+      "database_required": false,
+      "upstream_label": "SeqKit",
+      "public_key": "BI-TOOL-028",
+      "public_label": "BioIntel High-performance FASTA & FASTQ manipulation and validation Engine"
+    },
+    {
+      "id": "foldseek",
+      "label": "BioIntel Fast protein structure similarity search and clustering Engine",
+      "category": "Structural bioinformatics",
+      "executable": "foldseek",
+      "aliases": [],
+      "backend": "wsl",
+      "purpose": "Fast protein structure similarity search and clustering.",
+      "version_args": [
+        "version"
+      ],
+      "database_required": true,
+      "database_note": "Requires a local or downloaded structure database.",
+      "upstream_label": "Foldseek",
+      "public_key": "BI-TOOL-029",
+      "public_label": "BioIntel Fast protein structure similarity search and clustering Engine"
+    },
+    {
+      "id": "sniffles",
+      "label": "BioIntel Long-read SV calling & Population SV merging Engine",
+      "category": "Structural variation",
+      "executable": "sniffles",
+      "aliases": [
+        "sniffles2"
+      ],
+      "backend": "wsl",
+      "purpose": "Long-read structural-variant calling.",
+      "version_args": [
+        "--version"
+      ],
+      "database_required": false,
+      "upstream_label": "Sniffles2",
+      "public_key": "BI-ENG-067",
+      "public_label": "BioIntel Long-read SV calling & Population SV merging Engine"
+    },
+    {
+      "id": "whatshap",
+      "label": "BioIntel Read-backed phasing & Pedigree phasing Engine",
+      "category": "Variant phasing",
+      "executable": "whatshap",
+      "aliases": [],
+      "backend": "wsl",
+      "purpose": "Read-backed and pedigree phasing.",
+      "version_args": [
+        "--version"
+      ],
+      "database_required": true,
+      "database_note": "Requires a matching reference FASTA for read-backed phasing.",
+      "upstream_label": "WhatsHap",
+      "public_key": "BI-ENG-076",
+      "public_label": "BioIntel Read-backed phasing & Pedigree phasing Engine"
+    },
+    {
+      "id": "vep",
+      "label": "BioIntel Variant consequence annotation & Transcript consequences Engine",
+      "category": "Variants",
+      "executable": "vep",
+      "aliases": [],
+      "backend": "wsl",
+      "purpose": "Variant consequence annotation.",
+      "version_args": [
+        "--help"
+      ],
+      "database_required": true,
+      "database_note": "Offline cache and reference FASTA must match the selected assembly/release.",
+      "upstream_label": "Ensembl VEP",
+      "public_key": "BI-ENG-073",
+      "public_label": "BioIntel Variant consequence annotation & Transcript consequences Engine"
+    },
+    {
+      "id": "snpeff",
+      "label": "BioIntel Variant consequence annotation Engine",
+      "category": "Variants",
+      "executable": "snpEff",
+      "aliases": [
+        "snpSift"
+      ],
+      "backend": "native-preferred",
+      "purpose": "Variant effect annotation and filtering.",
+      "version_args": [
+        "-version"
+      ],
+      "database_required": true,
+      "database_note": "Install only the organism/assembly database needed for the study.",
+      "upstream_label": "SnpEff",
+      "public_key": "BI-ENG-068",
+      "public_label": "BioIntel Variant consequence annotation Engine"
+    },
+    {
+      "id": "bcftools",
+      "label": "BioIntel VCF normalization & Filtering Engine",
+      "category": "Variants",
+      "executable": "bcftools",
+      "aliases": [],
+      "backend": "wsl",
+      "purpose": "Variant calling, filtering, normalization and querying.",
+      "version_args": [
+        "--version"
+      ],
+      "database_required": false,
+      "upstream_label": "bcftools",
+      "public_key": "BI-ENG-004",
+      "public_label": "BioIntel VCF normalization & Filtering Engine"
+    },
+    {
+      "id": "nextclade",
+      "label": "BioIntel Viral sequence QC, clade assignment and mutation reporting Engine",
+      "category": "Virology",
+      "executable": "nextclade",
+      "aliases": [],
+      "backend": "native",
+      "purpose": "Viral sequence QC, clade assignment and mutation reporting.",
+      "version_args": [
+        "--version"
+      ],
+      "database_required": true,
+      "database_note": "Dataset release and pathogen compatibility must be pinned.",
+      "upstream_label": "Nextclade",
+      "public_key": "BI-TOOL-030",
+      "public_label": "BioIntel Viral sequence QC, clade assignment and mutation reporting Engine"
+    },
+    {
+      "id": "pangolin",
+      "label": "BioIntel SARS-CoV-2 lineage assignment with model & database provenance Engine",
+      "category": "Virology",
+      "executable": "pangolin",
+      "aliases": [],
+      "backend": "wsl",
+      "purpose": "SARS-CoV-2 lineage assignment with model/database provenance.",
+      "version_args": [
+        "--version"
+      ],
+      "database_required": true,
+      "database_note": "Pango designation and model releases must be pinned.",
+      "upstream_label": "Pangolin",
+      "public_key": "BI-TOOL-031",
+      "public_label": "BioIntel SARS-CoV-2 lineage assignment with model & database provenance Engine"
+    },
+    {
+      "id": "nextflow",
+      "label": "BioIntel Reproducible container-aware scientific workflow execution Engine",
+      "category": "Workflow orchestration",
+      "executable": "nextflow",
+      "aliases": [],
+      "backend": "wsl",
+      "purpose": "Reproducible container-aware scientific workflow execution.",
+      "version_args": [
+        "-version"
+      ],
+      "database_required": false,
+      "upstream_label": "Nextflow",
+      "public_key": "BI-TOOL-032",
+      "public_label": "BioIntel Reproducible container-aware scientific workflow execution Engine"
+    },
+    {
+      "id": "snakemake",
+      "label": "BioIntel Rule-based reproducible workflow execution Engine",
+      "category": "Workflow orchestration",
+      "executable": "snakemake",
+      "aliases": [],
+      "backend": "wsl",
+      "purpose": "Rule-based reproducible workflow execution.",
+      "version_args": [
+        "--version"
+      ],
+      "database_required": false,
+      "upstream_label": "Snakemake",
+      "public_key": "BI-TOOL-033",
+      "public_label": "BioIntel Rule-based reproducible workflow execution Engine"
+    }
+  ]
+}

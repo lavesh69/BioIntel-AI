@@ -1,0 +1,15 @@
+schema_version: "1.0"
+release: "13.2.0"
+worker:
+  persistent: true
+  independent_of_streamlit: true
+  stale_heartbeat_seconds: 60
+  default_poll_seconds: 1
+controls:
+  pause_resume: true
+  cooperative_cancellation: true
+  checkpointing: true
+  dependency_gating: true
+  retry_limit: 10
+  artifact_hashing: true
+  crash_recovery: true

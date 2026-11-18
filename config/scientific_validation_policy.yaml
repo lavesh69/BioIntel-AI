@@ -1,0 +1,31 @@
+version: 1
+required_evaluations:
+  - random_holdout
+  - cold_drug
+  - cold_target
+  - cold_both
+  - scaffold
+  - protein_cluster
+  - temporal
+  - external_source
+statistics:
+  bootstrap_iterations: 2000
+  confidence_level: 0.95
+  permutation_tests: 1000
+  multiple_testing_correction: benjamini_hochberg
+classification_minimums:
+  roc_auc: 0.75
+  pr_auc: 0.50
+  balanced_accuracy: 0.65
+  expected_calibration_error_max: 0.10
+  interval_coverage_min: 0.85
+regression_minimums:
+  r2: 0.20
+  pearson: 0.40
+  spearman: 0.40
+release:
+  beat_baseline_required: true
+  confidence_interval_required: true
+  no_entity_leakage_required: true
+  independent_external_dataset_required: true
+  prospective_validation_required_for_10_of_10: true

@@ -1,0 +1,14 @@
+{
+  "schema": "biointel.step178.19-module-assurance.v1",
+  "app_version": "14.8.0",
+  "target_module_count": 19,
+  "internal_target_rating": 10.0,
+  "external_evidence_policy": "fail-closed",
+  "classic_windows_flow_preserved": [
+    "INSTALL_WINDOWS.bat",
+    "RUN_BOTH_WINDOWS.bat"
+  ],
+  "verification_launcher": "VERIFY_STEP178_TARGET_MODULES_WINDOWS.bat",
+  "provisioning_launcher": "PROVISION_STEP178_TARGET_MODULES_WINDOWS.bat",
+  "qualification_center": "pages/248_Step178_19_Module_Assurance_Center.py"
+}

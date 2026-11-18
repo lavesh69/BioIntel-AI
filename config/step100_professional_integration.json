@@ -1,0 +1,39 @@
+{
+  "schema": "biointel.step100.professional-integration.v1",
+  "version": "10.0.0",
+  "release_date": "2026-07-10",
+  "scope": [
+    "Pangenome & Variation Graph Studio",
+    "Long-Read Genome Assembly & T2T Studio",
+    "AI Protein Design & Mutation Engineering Lab",
+    "CRISPR Screen & Perturb-seq Analytics",
+    "Pathogen Outbreak Genomics Command Center",
+    "Synthetic Biology & Genetic Circuit Designer",
+    "Rare Disease Genome Interpretation Board",
+    "Biomedical Knowledge Graph & Evidence Copilot",
+    "Multi-Omics Biomarker Discovery Studio",
+    "Visual Workflow Builder & Pipeline Marketplace",
+    "Innovation Modules Hub"
+  ],
+  "principles": {
+    "no_fabricated_external_tools": true,
+    "no_fabricated_databases": true,
+    "no_fabricated_clinical_or_wetlab_validation": true,
+    "hash_bound_exports": true,
+    "explicit_scientific_boundaries": true,
+    "dependency_detection_only": true
+  },
+  "added_capabilities": [
+    "Graph connected-components, path genotype screening, gene presence and release diffs",
+    "Assembly contamination outliers, polishing-iteration comparison and storage guards",
+    "Protein runtime/GPU readiness, structure-confidence QC, mutation libraries and active-learning queues",
+    "Guide-sequence QC, library planning, Perturb-seq pseudobulk and paired-guide plans",
+    "Outbreak temporal-signal, geospatial and case-definition audits",
+    "ODE and Gillespie circuit simulation, sensitivity, assembly plans and SBOL3-like export",
+    "Phenotype matching, inheritance models, ACMG point assistance and variant normalization audits",
+    "Knowledge-graph contradiction audit, multi-hop paths, RDF export and claim highlighting",
+    "Batch correction, multi-view latent factors, similarity-network fusion and log-rank screening",
+    "Container audits, resource schedules, scatter expansion, cache keys and workflow test matrices",
+    "Cross-module dependency matrix, hardware profile, optimization scorecard and next-step recommendations"
+  ]
+}

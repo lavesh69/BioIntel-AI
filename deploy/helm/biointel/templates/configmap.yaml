@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ include "biointel.fullname" . }}-config
+  labels:
+    {{- include "biointel.labels" . | nindent 4 }}
+data:
+  BIOINTEL_ENV: {{ .Values.config.environment | quote }}
+  BIOINTEL_TRUSTED_HOSTS: {{ .Values.config.trustedHosts | quote }}
+  BIOINTEL_OFFICIAL_HOSTS_ONLY: {{ .Values.config.officialHostsOnly | quote }}
+  BIOINTEL_API_RATE_LIMIT: {{ .Values.config.apiRateLimit | quote }}
+  BIOINTEL_PRELOAD_MODELS: {{ .Values.config.preloadModels | quote }}
+  BIOINTEL_PRELOAD_MODEL_LIMIT: {{ .Values.config.preloadModelLimit | quote }}
+  BIOINTEL_DEFAULT_TENANT: {{ .Values.config.defaultTenant | quote }}

@@ -1,0 +1,117 @@
+{
+  "actions": [
+    {
+      "action_key": "ask_shiro",
+      "approval_required": true,
+      "backend_action": "ask_for_evidence_summary",
+      "destination": "shiro",
+      "label": "Ask Shiro AI",
+      "persistence": "sp_integrations"
+    },
+    {
+      "action_key": "add_classroom",
+      "approval_required": true,
+      "backend_action": "add_reading_material",
+      "destination": "classroom",
+      "label": "Add to Classroom",
+      "persistence": "sp_integrations"
+    },
+    {
+      "action_key": "classroom_discussion",
+      "approval_required": true,
+      "backend_action": "create_discussion_draft",
+      "destination": "classroom",
+      "label": "Create Classroom Discussion Draft",
+      "persistence": "sp_integrations"
+    },
+    {
+      "action_key": "classroom_assignment",
+      "approval_required": true,
+      "backend_action": "create_assignment_draft",
+      "destination": "classroom",
+      "label": "Create Assignment Draft",
+      "persistence": "sp_integrations"
+    },
+    {
+      "action_key": "academy_lecture",
+      "approval_required": true,
+      "backend_action": "create_lecture_draft",
+      "destination": "academy",
+      "label": "Create Academy Lecture Draft",
+      "persistence": "sp_integrations"
+    },
+    {
+      "action_key": "studio_asset",
+      "approval_required": true,
+      "backend_action": "create_visual_asset_draft",
+      "destination": "studio",
+      "label": "Send to BioIntel Studio",
+      "persistence": "sp_integrations"
+    },
+    {
+      "action_key": "connect_share",
+      "approval_required": true,
+      "backend_action": "share_source_link",
+      "destination": "connect",
+      "label": "Share through BioIntel Connect",
+      "persistence": "sp_integrations"
+    },
+    {
+      "action_key": "research_project",
+      "approval_required": true,
+      "backend_action": "add_to_research_project",
+      "destination": "research",
+      "label": "Add to Research Project",
+      "persistence": "sp_integrations"
+    },
+    {
+      "action_key": "evidence_collection",
+      "approval_required": true,
+      "backend_action": "add_to_evidence_collection",
+      "destination": "research",
+      "label": "Add to Evidence Collection",
+      "persistence": "sp_integrations"
+    },
+    {
+      "action_key": "research_copilot",
+      "approval_required": true,
+      "backend_action": "add_to_research_copilot",
+      "destination": "research",
+      "label": "Add to Research Copilot",
+      "persistence": "sp_integrations"
+    },
+    {
+      "action_key": "classification_review",
+      "approval_required": true,
+      "backend_action": "report_incorrect_classification",
+      "destination": "research",
+      "label": "Report Incorrect Classification",
+      "persistence": "sp_integrations"
+    },
+    {
+      "action_key": "create_topic_alert",
+      "backend": "create_item_alert",
+      "label": "Create Topic Alert",
+      "persistence": "sp_alert_rules"
+    },
+    {
+      "action_key": "follow_source",
+      "backend": "follow_item(kind=source)",
+      "label": "Follow Source",
+      "persistence": "sp_user_preferences"
+    },
+    {
+      "action_key": "follow_topic",
+      "backend": "follow_item(kind=topic)",
+      "label": "Follow Topic",
+      "persistence": "sp_user_preferences"
+    },
+    {
+      "action_key": "export_citation",
+      "backend": "client download from persisted metadata",
+      "label": "Export Citation or Source",
+      "persistence": "not applicable"
+    }
+  ],
+  "generated_at_utc": "2026-07-30T18:33:11Z"
+}

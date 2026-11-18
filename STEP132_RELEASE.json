@@ -1,0 +1,16 @@
+{
+  "schema": "biointel.step132.release.v1",
+  "version": "13.2.0",
+  "base": "Step 131",
+  "title": "Multi-Scale Scientific Visual Intelligence, Optimization and Stability",
+  "new_central_page": "pages/196_Multi_Scale_Scientific_Visual_Intelligence_Studio.py",
+  "new_core_modules": [
+    "src/biointel/nextgen/visual_intelligence_v132.py",
+    "src/biointel/ui/visual_intelligence_v132.py"
+  ],
+  "visual_concepts": 30,
+  "integrated_modules": 15,
+  "preserves_existing_features": true,
+  "preserves_locked_pages": true,
+  "external_claims_fabricated": false
+}

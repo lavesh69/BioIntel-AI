@@ -1,0 +1,21 @@
+{
+  "controlled_scientific_release_eligible": false,
+  "database_files_checked": 50,
+  "external_blockers": [
+    "public_archive_doi",
+    "public_repository_url",
+    "journal_compatible_licence_decision",
+    "independent_external_benchmarks",
+    "real wet-lab/clinical/instrument evidence where applicable"
+  ],
+  "generated_at_utc": "2026-07-15T08:10:47.759242+00:00",
+  "major_module_hooks": 79,
+  "modules": 80,
+  "page_files": 261,
+  "publication_modules_passed": 80,
+  "release_audit_passed": true,
+  "release_step": 192,
+  "release_version": "15.0.0",
+  "schema": "biointel.step192.summary.v1",
+  "wheelhouse_valid": true
+}

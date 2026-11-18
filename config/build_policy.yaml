@@ -1,0 +1,8 @@
+schema: biointel.build-policy.v1
+deterministic: true
+source_date_epoch: 1577836800
+python_version: "3.11"
+archive_timestamp: "2020-01-01T00:00:00Z"
+require_sbom: true
+require_provenance: true
+require_checksums: true

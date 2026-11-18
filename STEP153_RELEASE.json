@@ -1,0 +1,24 @@
+{
+  "base_release": "Step 152 Native Scientific Core Upgrade",
+  "capability_stages": 480,
+  "complete_scientific_contracts": 80,
+  "native_workflow_families": 36,
+  "native_workflows": 80,
+  "product_version": "13.2.0",
+  "reference_assets": 257,
+  "registered_engines": 185,
+  "release_name": "Domain-Specific Scientific Core Upgrade",
+  "schema": "biointel.step153.release.v1",
+  "scientific_profiles": 80,
+  "specialist_toolchains_bundled": 0,
+  "specialist_toolchains_referenced": 50,
+  "step": 153,
+  "tests": {
+    "collected": 1290,
+    "failed": 0,
+    "passed": 1263,
+    "skipped": 27
+  },
+  "validation_boundary": "Automated software, bounded local exploratory workflows, and packaged integrity verification only; not clinical, GxP, regulatory, physical-instrument, licensed-database, or prospective wet-lab certification.",
+  "validation_gates": 328
+}

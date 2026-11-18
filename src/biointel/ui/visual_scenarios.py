@@ -1,0 +1,25 @@
+from __future__ import annotations
+
+SEMANTIC_VISUAL_SCENARIOS: tuple[tuple[str, str, dict[str, int]], ...] = (
+    ("home-desktop", "app.py", {"width": 1440, "height": 1000}),
+    ("quality-desktop", "pages/71_Platform_Quality_Center.py", {"width": 1440, "height": 1000}),
+    ("studio-desktop", "pages/70_BioIntel_Studio.py", {"width": 1440, "height": 1000}),
+    ("compliance-desktop", "pages/72_Compliance_Research_Readiness.py", {"width": 1440, "height": 1000}),
+    ("scientific-evidence-desktop", "pages/73_Scientific_Evidence_Excellence.py", {"width": 1440, "height": 1000}),
+    ("realworld-operations-desktop", "pages/75_Real_World_Operations_Evidence.py", {"width": 1440, "height": 1000}),
+    ("final-assurance-desktop", "pages/76_Final_Assurance_Center.py", {"width": 1440, "height": 1000}),
+    ("model-training-desktop", "pages/5_Model_Training.py", {"width": 1440, "height": 1000}),
+    ("dti-predictor-desktop", "pages/6_DTI_Predictor.py", {"width": 1440, "height": 1000}),
+    ("data-quality-desktop", "pages/8_Data_Quality_Activity.py", {"width": 1440, "height": 1000}),
+    ("experiment-registry-desktop", "pages/11_Experiment_Registry.py", {"width": 1440, "height": 1000}),
+    ("visual-workspace-desktop", "pages/164_Visual_Interaction_Accessibility_Workspace.py", {"width": 1440, "height": 1000}),
+    ("advanced-viewers-desktop", "pages/165_Advanced_Scientific_Viewers.py", {"width": 1440, "height": 1000}),
+    ("scientific-intelligence-hub-desktop", "pages/194_Scientific_Intelligence_Hub.py", {"width": 1440, "height": 1000}),
+    ("cross-module-evidence-desktop", "pages/190_Cross_Module_Evidence_Board.py", {"width": 1440, "height": 1000}),
+    ("scenario-sensitivity-desktop", "pages/191_Scientific_Scenario_Sensitivity_Lab.py", {"width": 1440, "height": 1000}),
+    ("validation-cohort-manager-desktop", "pages/192_Validation_Cohort_Manager.py", {"width": 1440, "height": 1000}),
+    ("visual-review-center-desktop", "pages/193_Visual_Review_Approval_Center.py", {"width": 1440, "height": 1000}),
+    ("non-chart-visuals-desktop", "pages/169_Non_Chart_Scientific_Visuals.py", {"width": 1440, "height": 1000}),
+    ("clinical-visual-desktop", "pages/90_Clinical_Pharma_Validation_Center.py", {"width": 1440, "height": 1000}),
+    ("home-mobile", "app.py", {"width": 390, "height": 844}),
+)

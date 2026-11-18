@@ -1,0 +1,14 @@
+schema_version: "1.0"
+release: "13.2.0"
+requirements:
+  https_only_by_default: true
+  licence_acknowledgement_required: true
+  provider_sha256_required_for_release_grade: true
+  atomic_activation: true
+  rollback_snapshot_before_update: true
+  index_command_shell_interpolation: false
+  compatibility_record_required: true
+storage:
+  default_quota_gb: 500
+  snapshots_per_asset: 2
+  retain_previous_release: true

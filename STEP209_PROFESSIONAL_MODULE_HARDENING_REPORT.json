@@ -1,0 +1,45 @@
+{
+  "schema": "biointel.step209.professional-module-hardening-report.v1",
+  "generated_at_utc": "2026-07-18T06:25:09+00:00",
+  "release": {
+    "version": "15.6.0",
+    "step": 206,
+    "package_generation": "V19.4",
+    "part_count": 5
+  },
+  "coverage": {
+    "target_pages": 81,
+    "neuro_modules": 41,
+    "advanced_workflows": 42,
+    "advanced_neuro_workflows": 17
+  },
+  "tests": {
+    "combined_regression_passed": 230,
+    "neuro_backend_passed": 117,
+    "step209_focused_passed": 9,
+    "windows_contract_passed": 24,
+    "windows_contract_total": 24,
+    "release_gate_passed": 11,
+    "release_gate_total": 11
+  },
+  "integrity": {
+    "protected_hashes_unchanged": 17,
+    "protected_hashes_total": 17,
+    "tracked_source_hashes": 23980,
+    "bad_source_hashes": 0,
+    "packaged_source_files": 25367,
+    "missing_files": 0,
+    "extra_files": 0,
+    "duplicate_files": 0,
+    "crc_errors": 0,
+    "unsafe_paths": 0
+  },
+  "native_windows_execution_performed": false,
+  "streamlit_apptest_performed": false,
+  "builder_limitations": [
+    "Linux build host",
+    "Python 3.13 builder runtime",
+    "Streamlit unavailable in builder environment"
+  ],
+  "scientific_boundary": "Internal software implementation and automated tests only; no claim of clinical, regulatory, wet-lab or external scientific validation."
+}

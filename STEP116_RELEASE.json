@@ -1,0 +1,17 @@
+{
+  "release": "Step 116",
+  "version": "11.6.0",
+  "name": "Interactive Module Experience Expansion · Sections 2–9",
+  "module_workspaces": 78,
+  "scientific_groups": 8,
+  "new_hub_page": "pages/170_Module_Experience_Canvases_2_to_9.py",
+  "excluded_modules_preserved": [
+    "DTI Predictor",
+    "DTI Validation Evidence Center",
+    "LIMS, ELN & Sample Chain of Custody",
+    "Lab Instrument Import Center",
+    "Instrument Integration Hub"
+  ],
+  "performance_model": "Collapsed-by-default, deterministic offline canvases, shared CSS and shared renderers.",
+  "boundary": "The interaction layer improves review, handoff and reproducibility; it does not certify scientific validity or replace specialist engines."
+}

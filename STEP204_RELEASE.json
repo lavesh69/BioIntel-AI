@@ -1,0 +1,21 @@
+{
+  "schema": "biointel.step204.windows-install-run-fix.release.v1",
+  "step": 204,
+  "version": "15.4.0",
+  "package_generation": "V17.1",
+  "part_count": 4,
+  "platform": "Windows desktop",
+  "python_runtime": "CPython 3.11.9 x64",
+  "supported_workflow": [
+    "INSTALL_WINDOWS.bat",
+    "RUN_BOTH_WINDOWS.bat"
+  ],
+  "archive_root": "BioIntel-AI-15.4.0-Step204-WINDOWS-V17.1",
+  "offline_core": true,
+  "optional_services": [
+    "Ollama",
+    "SearXNG",
+    "external scientific providers"
+  ],
+  "scientific_boundary": "Software implementation and internal automated checks are distinct from external scientific, clinical, regulatory, wet-lab, licensed-database, and prospective validation."
+}

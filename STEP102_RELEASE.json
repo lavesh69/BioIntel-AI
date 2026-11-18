@@ -1,0 +1,26 @@
+{
+  "schema": "biointel.step102.release.v1",
+  "version": "11.9.0",
+  "base": "10.1.0",
+  "release_name": "Scientific Expansion",
+  "new_module_count": 21,
+  "page_range": "112-132",
+  "hub_page": 133,
+  "capabilities": [
+    "deterministic_demo_data",
+    "csv_tsv_json_import",
+    "strict_schema_validation",
+    "module_specific_analysis",
+    "interactive_visualization",
+    "csv_result_export",
+    "json_evidence_manifest",
+    "scientific_boundary_guidance"
+  ],
+  "qualification": {
+    "python_compilation": "passed",
+    "demo_analysis_matrix": "21/21 passed",
+    "streamlit_page_apptest": "22/22 passed",
+    "navigation_registration": "passed"
+  },
+  "scientific_boundary": "Exploratory research software only. External scientific, clinical, manufacturing, regulatory and privacy evidence remains required."
+}

@@ -1,0 +1,332 @@
+/* Step 65 desktop UX layer. Mobile behavior, palette catalogue and font catalogue are intentionally unchanged. */
+@media (min-width: 761px) {
+  .bio-compact-breadcrumb{display:flex;align-items:center;gap:.48rem;min-height:2rem;padding:.38rem .1rem;color:var(--bio-muted);font-size:.78rem;font-weight:720;letter-spacing:.01em}
+  .bio-compact-breadcrumb strong{color:var(--bio-text);font-weight:830}
+  .bio-workspace-context{display:flex;gap:.45rem;flex-wrap:wrap;margin:.15rem 0 .35rem}
+  .bio-workspace-context span{padding:.28rem .52rem;border:1px solid var(--bio-border);border-radius:999px;background:color-mix(in srgb,var(--bio-surface) 86%,transparent);font-size:.74rem;color:var(--bio-muted)}
+  .bio-workspace-context b{color:var(--bio-text)}
+  .bio-page-context{display:none!important}
+  .bio-shell-title{font-size:.96rem!important}
+  .bio-shell-kicker{font-size:.72rem!important}
+  [data-testid="stSidebar"] .stMarkdown p,[data-testid="stSidebar"] label,[data-testid="stSidebar"] button{font-size:.78rem!important}
+  .bio-nav-section,.bio-category-copy,.bio-brand-subtitle,.bio-edition-pill{font-size:.72rem!important}
+  [data-testid="stSidebar"] a{min-height:2.45rem}
+  [data-testid="stButton"] button,[data-testid="stDownloadButton"] button{min-height:2.55rem}
+  .bio-result-label,.bio-shell-search-note,.bio-settings-note{font-size:.76rem!important}
+  [data-testid="stDataFrame"]{overflow:hidden}
+  [data-testid="stAlert"]{line-height:1.45}
+}
+
+
+/* Step 82.1 branding + smooth scientific shell. */
+.bio-top-brand-v83{display:grid;grid-template-columns:auto minmax(220px,1fr) auto;align-items:center;gap:1rem;margin:0 0 .72rem;padding:.58rem .78rem;border:1px solid color-mix(in srgb,var(--bio-primary) 24%,var(--bio-border));border-radius:12px;background:linear-gradient(100deg,color-mix(in srgb,var(--bio-primary) 8%,var(--bio-surface-strong)),color-mix(in srgb,var(--bio-surface-strong) 97%,transparent));box-shadow:0 8px 22px rgba(2,6,23,.14);contain:layout paint}
+.bio-top-brand-main{display:flex;align-items:center;gap:.58rem;min-width:190px}.bio-top-brand-mark{display:grid;place-items:center;width:34px;height:34px;border-radius:9px;background:linear-gradient(135deg,var(--bio-primary),var(--bio-secondary));box-shadow:0 6px 16px var(--bio-glow)}
+.bio-top-brand-main strong{display:block;color:var(--bio-text);font-size:.9rem;line-height:1.05}.bio-top-brand-main small{display:block;color:var(--bio-muted);font-size:.62rem;margin-top:.12rem;letter-spacing:.035em}
+.bio-top-brand-motto{text-align:center;color:var(--bio-secondary);font-size:.72rem;font-weight:760;letter-spacing:.045em}.bio-top-brand-founder{text-align:right;color:var(--bio-muted);font-size:.67rem}.bio-top-brand-founder strong{color:var(--bio-text)}
+.bio-brand-founder-mini{color:var(--bio-muted);font-size:.58rem;line-height:1.3;margin-top:.2rem}
+/* Smooth rendering: avoid repaint-heavy fixed canvases and isolate large cards. */
+.stApp,[data-testid="stAppViewContainer"]{background-attachment:scroll!important}
+.bio-card,.bio-kpi,.bio-db-card,[data-testid="stMetric"],[data-testid="stPlotlyChart"],[data-testid="stDataFrame"]{contain:layout paint}
+.js-plotly-plot,.plot-container{will-change:auto!important}
+@media(max-width:900px){.bio-top-brand-v83{grid-template-columns:1fr auto}.bio-top-brand-motto{display:none}.bio-top-brand-founder{font-size:.6rem}}
+@media(max-width:760px){.bio-top-brand-v83{grid-template-columns:1fr;margin-bottom:.5rem}.bio-top-brand-founder{display:none}}
+
+/* Step 91 unified BioIntel brand system. Brand typography, mark and trust language
+   remain stable across all visual themes while palette variables still adapt. */
+.bio-brand-system-v91,
+.bio-brand-system-v91 *{font-family:Inter,"Segoe UI",Arial,sans-serif!important}
+.bio-brand-system-v91 .bio-brand-svg{display:block;width:100%;height:100%}
+.bio-top-brand-v83.bio-brand-system-v91{grid-template-columns:minmax(220px,auto) minmax(220px,1fr) minmax(250px,auto);min-height:66px;padding:.7rem .86rem;border-radius:16px;border-color:color-mix(in srgb,var(--bio-primary) 34%,var(--bio-border));background:linear-gradient(112deg,color-mix(in srgb,var(--bio-primary) 10%,var(--bio-surface-strong)),color-mix(in srgb,var(--bio-surface-strong) 94%,transparent) 48%,color-mix(in srgb,var(--bio-secondary) 7%,var(--bio-surface-strong)));box-shadow:0 12px 30px rgba(2,6,23,.17),inset 0 1px 0 color-mix(in srgb,var(--bio-text) 7%,transparent)}
+.bio-top-brand-v83 .bio-top-brand-mark{width:42px;height:42px;padding:0;background:transparent;box-shadow:none;border-radius:13px;overflow:visible;flex:0 0 42px}
+.bio-brand-wordmark strong{font-size:1.03rem!important;letter-spacing:-.018em;line-height:1.05;color:var(--bio-text)}
+.bio-brand-wordmark small{font-size:.66rem!important;letter-spacing:.075em;text-transform:uppercase;color:var(--bio-muted);font-weight:720}
+.bio-top-brand-center{display:grid;place-items:center;gap:.14rem;min-width:0;text-align:center}
+.bio-top-brand-v83 .bio-top-brand-motto{font-size:.77rem;font-weight:820;letter-spacing:.055em;color:var(--bio-secondary)}
+.bio-top-brand-trust{font-size:.61rem;color:var(--bio-muted);letter-spacing:.08em;text-transform:uppercase;font-weight:680}
+.bio-top-brand-v83 .bio-top-brand-founder{display:grid;justify-items:end;gap:.14rem;line-height:1.25;text-align:right}
+.bio-top-brand-v83 .bio-top-brand-founder>span{font-size:.62rem;text-transform:uppercase;letter-spacing:.07em;color:var(--bio-muted);font-weight:730}
+.bio-top-brand-v83 .bio-top-brand-founder small{font-size:.66rem;color:var(--bio-muted)}
+.bio-top-brand-v83 .bio-top-brand-founder strong{color:var(--bio-text)}
+[data-testid="stSidebar"] .bio-brand-system-v91.bio-brand{display:grid;grid-template-columns:52px minmax(0,1fr);gap:.68rem;align-items:start;padding:.72rem .58rem .78rem;border-bottom:1px solid color-mix(in srgb,var(--bio-primary) 28%,var(--bio-border))}
+[data-testid="stSidebar"] .bio-brand-system-v91 .bio-brand-mark{width:48px;height:48px;padding:0;border-radius:15px;background:transparent;box-shadow:none}
+.bio-brand-system-v91 .bio-brand-copy{min-width:0}
+.bio-brand-system-v91 .bio-brand-title{font-size:1rem!important;letter-spacing:-.02em;line-height:1.05;font-weight:900;color:var(--bio-text)}
+.bio-brand-system-v91 .bio-brand-subtitle{font-size:.61rem!important;margin-top:.14rem;letter-spacing:.06em;text-transform:uppercase;font-weight:740;color:var(--bio-muted)}
+.bio-brand-system-v91 .bio-brand-tagline-mini{font-size:.61rem;margin-top:.35rem;line-height:1.35;color:var(--bio-secondary);font-weight:700}
+.bio-brand-system-v91 .bio-edition-pill{display:inline-flex;margin-top:.4rem;padding:.22rem .42rem;border-radius:999px;border:1px solid color-mix(in srgb,var(--bio-primary) 32%,var(--bio-border));background:color-mix(in srgb,var(--bio-primary) 10%,transparent);font-size:.56rem!important;color:var(--bio-text);font-weight:760;letter-spacing:.025em}
+.bio-brand-system-v91 .bio-brand-founder-mini{font-size:.54rem;line-height:1.35;margin-top:.28rem;color:var(--bio-muted)}
+
+/* Branded model identity and evidence tier cards. */
+.bio-model-identity{display:grid;grid-template-columns:minmax(210px,1.5fr) repeat(4,minmax(112px,.7fr));gap:.65rem;margin:.45rem 0 .75rem}
+.bio-model-card{min-width:0;padding:.82rem .9rem;border:1px solid color-mix(in srgb,var(--bio-primary) 22%,var(--bio-border));border-radius:16px;background:linear-gradient(145deg,color-mix(in srgb,var(--bio-primary) 7%,var(--bio-surface)),var(--bio-surface));box-shadow:inset 0 1px 0 color-mix(in srgb,var(--bio-text) 5%,transparent)}
+.bio-model-card--primary{border-color:color-mix(in srgb,var(--bio-primary) 42%,var(--bio-border));background:linear-gradient(140deg,color-mix(in srgb,var(--bio-primary) 14%,var(--bio-surface)),color-mix(in srgb,var(--bio-secondary) 6%,var(--bio-surface)))}
+.bio-model-card-label{display:block;margin-bottom:.34rem;color:var(--bio-muted);font-size:.62rem;font-weight:760;text-transform:uppercase;letter-spacing:.075em}
+.bio-model-card-value{display:block;color:var(--bio-text);font-size:.93rem;font-weight:850;line-height:1.25;overflow-wrap:anywhere}
+.bio-model-card--primary .bio-model-card-value{font-size:1rem}
+.bio-model-card-detail{display:block;margin-top:.26rem;color:var(--bio-muted);font-size:.65rem;line-height:1.35;overflow-wrap:anywhere}
+.bio-evidence-tier{display:flex;align-items:flex-start;gap:.62rem;padding:.72rem .8rem;margin:.45rem 0 .68rem;border:1px solid var(--bio-border);border-radius:14px;background:color-mix(in srgb,var(--bio-surface) 92%,transparent)}
+.bio-evidence-tier-mark{display:grid;place-items:center;flex:0 0 36px;width:36px;height:36px;border-radius:11px;font-weight:900;background:color-mix(in srgb,var(--bio-primary) 14%,var(--bio-surface));color:var(--bio-secondary);border:1px solid color-mix(in srgb,var(--bio-primary) 36%,var(--bio-border))}
+.bio-evidence-tier strong{display:block;color:var(--bio-text);font-size:.86rem}.bio-evidence-tier span{display:block;margin-top:.16rem;color:var(--bio-muted);font-size:.72rem;line-height:1.45}
+.bio-action-readiness{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.5rem;margin:.5rem 0 .68rem}
+.bio-action-readiness span{display:flex;align-items:center;gap:.4rem;padding:.54rem .64rem;border:1px solid var(--bio-border);border-radius:12px;background:color-mix(in srgb,var(--bio-surface) 92%,transparent);font-size:.71rem;color:var(--bio-muted)}
+.bio-action-readiness b{color:var(--bio-text)}
+.bio-action-readiness .bio-ready{border-color:color-mix(in srgb,#22c55e 38%,var(--bio-border))}.bio-action-readiness .bio-blocked{border-color:color-mix(in srgb,#f59e0b 45%,var(--bio-border))}
+
+/* Prevent metric/value truncation across the whole product. */
+[data-testid="stMetric"]{min-width:0!important}
+[data-testid="stMetricLabel"] p,[data-testid="stMetricValue"]{white-space:normal!important;overflow:visible!important;text-overflow:clip!important;overflow-wrap:anywhere!important;line-height:1.15!important}
+[data-testid="stMetricValue"]{font-size:clamp(1rem,2vw,1.72rem)!important}
+
+@media(max-width:1100px){
+  .bio-top-brand-v83.bio-brand-system-v91{grid-template-columns:minmax(210px,1fr) auto}.bio-top-brand-center{display:none}
+  .bio-model-identity{grid-template-columns:repeat(3,minmax(0,1fr))}.bio-model-card--primary{grid-column:span 2}
+}
+@media(max-width:760px){
+  .bio-top-brand-v83.bio-brand-system-v91{grid-template-columns:1fr;min-height:auto;padding:.58rem .68rem}.bio-top-brand-v83 .bio-top-brand-founder{display:none}
+  .bio-model-identity{grid-template-columns:repeat(2,minmax(0,1fr))}.bio-model-card--primary{grid-column:1/-1}
+  .bio-action-readiness{grid-template-columns:1fr}
+}
+@media(max-width:460px){.bio-model-identity{grid-template-columns:1fr}.bio-model-card--primary{grid-column:auto}}
+
+
+/* Step 136.1 UI overflow and scientific-content visibility repair. */
+.bio-readiness-inline{
+  display:flex;align-items:stretch;gap:.48rem;flex-wrap:wrap;
+  margin:.35rem 0 .72rem;padding:.48rem;
+  border:1px solid color-mix(in srgb,var(--bio-primary) 20%,var(--bio-border));
+  border-radius:13px;background:color-mix(in srgb,var(--bio-surface) 93%,transparent)
+}
+.bio-readiness-inline>span{
+  display:flex;align-items:baseline;justify-content:space-between;gap:.7rem;
+  flex:1 1 150px;min-width:0;padding:.42rem .55rem;border-radius:9px;
+  background:color-mix(in srgb,var(--bio-surface-strong) 86%,transparent)
+}
+.bio-readiness-inline small{color:var(--bio-muted);font-size:.7rem;line-height:1.2;white-space:nowrap}
+.bio-readiness-inline b{color:var(--bio-text);font-size:.92rem;line-height:1.2;white-space:nowrap}
+
+/* Keep shell popover labels horizontal instead of one character per line. */
+[data-testid="stPopover"]>button{min-width:0!important;max-width:100%!important;padding-left:.48rem!important;padding-right:.48rem!important}
+[data-testid="stPopover"]>button p,
+[data-testid="stPopover"]>button span{
+  white-space:nowrap!important;word-break:normal!important;overflow-wrap:normal!important;
+  overflow:hidden!important;text-overflow:ellipsis!important;line-height:1.15!important
+}
+
+/* Streamlit heading anchors must remain icon-sized even if embedded visual CSS leaks. */
+[data-testid="stMarkdownContainer"] h1 svg,
+[data-testid="stMarkdownContainer"] h2 svg,
+[data-testid="stMarkdownContainer"] h3 svg,
+[data-testid="stMarkdownContainer"] h4 svg,
+[data-testid="stMarkdownContainer"] h5 svg,
+[data-testid="stMarkdownContainer"] h6 svg{
+  width:1em!important;height:1em!important;min-width:1em!important;min-height:1em!important;
+  max-width:1em!important;max-height:1em!important;display:inline-block!important;
+  transform:none!important;animation:none!important
+}
+[data-testid="stMetric"] svg{
+  width:1em!important;height:1em!important;min-width:1em!important;min-height:1em!important;
+  max-width:1em!important;max-height:1em!important;transform:none!important;animation:none!important
+}
+
+@media (max-width:1180px) and (min-width:761px){
+  [data-testid="stPopover"]>button{font-size:.69rem!important;padding-left:.34rem!important;padding-right:.34rem!important}
+  .bio-shell-title{font-size:.84rem!important}
+  .bio-shell-kicker{font-size:.64rem!important}
+}
+
+
+/* Step 136.2 visual-data visibility and shell stability hardening. */
+[data-testid="stPopover"]>button svg,
+[data-testid="stExpander"] summary svg,
+[data-testid="stFileUploader"] svg,
+[data-testid="stButton"] button svg,
+[data-testid="stDownloadButton"] button svg{
+  width:1.05em!important;height:1.05em!important;
+  min-width:1.05em!important;min-height:1.05em!important;
+  max-width:1.05em!important;max-height:1.05em!important;
+  flex:0 0 1.05em!important;transform:none!important;animation:none!important
+}
+[data-testid="stPopover"]>button,
+[data-testid="stButton"]>button,
+[data-testid="stDownloadButton"]>button{
+  min-width:0!important;overflow:hidden!important
+}
+[data-testid="stHorizontalBlock"]>[data-testid="stColumn"]{
+  min-width:0!important
+}
+.bio-shell-bar,.bio-shell-premium,.bio-shell-title,.bio-shell-kicker{
+  min-width:0!important;max-width:100%!important
+}
+.bio-shell-title,.bio-shell-kicker{
+  overflow:hidden!important;text-overflow:ellipsis!important;white-space:nowrap!important
+}
+/* Prevent old metric placeholders/help glyphs from becoming full-card visuals. */
+[data-testid="stMetric"] [data-testid="stTooltipIcon"]{
+  width:1.05rem!important;height:1.05rem!important;min-width:1.05rem!important;
+  max-width:1.05rem!important;overflow:hidden!important
+}
+/* Data and charts remain visible even when a parent column is narrow. */
+[data-testid="stDataFrame"],
+[data-testid="stPlotlyChart"],
+[data-testid="stVegaLiteChart"]{
+  width:100%!important;max-width:100%!important;min-width:0!important;overflow:hidden
+}
+@media (max-width:1366px) and (min-width:761px){
+  [data-testid="stPopover"]>button{font-size:.67rem!important;padding-inline:.28rem!important}
+  [data-testid="stPopover"]>button svg{width:.95em!important;height:.95em!important;min-width:.95em!important;min-height:.95em!important}
+}
+
+/* Step 136.3 — BioIntel peak brand system.
+   Flagship identity is stable across themes; scientific content remains the focus. */
+:root{
+  --biointel-cyan:#22D3EE;
+  --biointel-blue:#3B82F6;
+  --biointel-navy:#07111F;
+  --biointel-surface:#111C30;
+  --biointel-violet:#8B5CF6;
+  --biointel-success:#22C55E;
+  --biointel-warning:#F59E0B;
+  --biointel-critical:#EF4444;
+  --biointel-uncertainty:#94A3B8;
+  --biointel-radius-card:16px;
+  --biointel-motion-fast:180ms;
+  --biointel-motion-normal:260ms;
+}
+
+.bio-brand-system-v136,
+.bio-brand-system-v136 *{font-family:Inter,"Segoe UI",Arial,sans-serif!important}
+.bio-brand-system-v136 .bio-brand-svg{display:block;width:100%;height:100%;filter:none!important;animation:none!important}
+.bio-top-brand-v83.bio-brand-system-v136{
+  display:grid;grid-template-columns:minmax(250px,auto) minmax(280px,1fr) minmax(220px,auto);
+  min-height:64px;align-items:center;gap:1rem;margin:0 0 .7rem;padding:.68rem .82rem;
+  border:1px solid color-mix(in srgb,var(--biointel-cyan) 30%,var(--bio-border));border-radius:16px;
+  background:linear-gradient(108deg,color-mix(in srgb,var(--biointel-cyan) 7%,var(--bio-surface-strong)),var(--bio-surface-strong) 52%,color-mix(in srgb,var(--biointel-blue) 6%,var(--bio-surface-strong)));
+  box-shadow:0 12px 30px rgba(2,6,23,.16),inset 0 1px 0 rgba(255,255,255,.045);
+  contain:layout paint;
+}
+.bio-brand-system-v136 .bio-top-brand-main{display:flex;align-items:center;gap:.66rem;min-width:0}
+.bio-brand-system-v136 .bio-top-brand-mark{display:grid;place-items:center;width:42px;height:42px;flex:0 0 42px;background:transparent!important;box-shadow:none!important;overflow:visible}
+.bio-brand-system-v136 .bio-brand-wordmark{min-width:0}
+.bio-brand-system-v136 .bio-brand-wordmark strong{display:block;font-size:1.05rem!important;line-height:1.04;letter-spacing:-.025em;color:var(--bio-text);font-weight:900}
+.bio-brand-system-v136 .bio-brand-wordmark small{display:block;margin-top:.15rem;font-size:.62rem!important;line-height:1.25;letter-spacing:.065em;text-transform:uppercase;color:var(--bio-muted);font-weight:720;white-space:normal}
+.bio-brand-system-v136 .bio-top-brand-center{display:grid;place-items:center;gap:.14rem;text-align:center;min-width:0}
+.bio-brand-system-v136 .bio-top-brand-motto{font-size:.79rem!important;line-height:1.25;font-weight:850;letter-spacing:.035em;color:var(--biointel-cyan)}
+.bio-brand-system-v136 .bio-top-brand-trust{font-size:.59rem;line-height:1.25;color:var(--bio-muted);letter-spacing:.09em;text-transform:uppercase;font-weight:700}
+.bio-brand-system-v136 .bio-top-brand-meta{display:grid;justify-items:end;gap:.18rem;text-align:right;line-height:1.2}
+.bio-brand-system-v136 .bio-top-brand-meta>span{font-size:.59rem;text-transform:uppercase;letter-spacing:.075em;color:var(--bio-muted);font-weight:760}
+.bio-brand-system-v136 .bio-top-brand-meta small{display:flex;align-items:center;gap:.36rem;font-size:.63rem;color:var(--bio-text);font-weight:700}
+.bio-brand-system-v136 .bio-top-brand-meta i{display:block;width:7px;height:7px;border-radius:999px;background:var(--biointel-success);box-shadow:0 0 0 3px color-mix(in srgb,var(--biointel-success) 14%,transparent)}
+
+[data-testid="stSidebar"] .bio-brand-system-v136.bio-brand{display:grid;grid-template-columns:52px minmax(0,1fr);gap:.7rem;align-items:start;padding:.72rem .58rem .8rem;border-bottom:1px solid color-mix(in srgb,var(--biointel-cyan) 24%,var(--bio-border))}
+[data-testid="stSidebar"] .bio-brand-system-v136 .bio-brand-mark{width:48px;height:48px;background:transparent!important;box-shadow:none!important}
+.bio-brand-system-v136 .bio-brand-copy{min-width:0}
+.bio-brand-system-v136 .bio-brand-title{font-size:1.02rem!important;letter-spacing:-.025em;line-height:1.05;font-weight:900;color:var(--bio-text)}
+.bio-brand-system-v136 .bio-brand-subtitle{margin-top:.14rem;font-size:.59rem!important;line-height:1.32;letter-spacing:.055em;text-transform:uppercase;font-weight:740;color:var(--bio-muted)}
+.bio-brand-system-v136 .bio-brand-tagline-mini{margin-top:.38rem;font-size:.62rem;line-height:1.35;color:var(--biointel-cyan);font-weight:790}
+.bio-brand-system-v136 .bio-edition-pill{display:inline-flex;margin-top:.42rem;padding:.22rem .43rem;border:1px solid color-mix(in srgb,var(--biointel-blue) 32%,var(--bio-border));border-radius:999px;background:color-mix(in srgb,var(--biointel-blue) 8%,transparent);font-size:.55rem!important;color:var(--bio-text);font-weight:760;letter-spacing:.025em}
+
+/* Trust is a branded UI primitive, not a marketing claim. */
+.bio-brand-trust-strip{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:1px;margin:.35rem 0 .82rem;padding:1px;overflow:hidden;border:1px solid color-mix(in srgb,var(--biointel-cyan) 24%,var(--bio-border));border-radius:14px;background:var(--bio-border)}
+.bio-brand-trust-strip>span{display:grid;gap:.2rem;min-width:0;padding:.6rem .68rem;background:color-mix(in srgb,var(--bio-surface-strong) 96%,var(--biointel-navy))}
+.bio-brand-trust-strip small{font-size:.57rem;line-height:1.2;letter-spacing:.075em;text-transform:uppercase;color:var(--bio-muted);font-weight:760}
+.bio-brand-trust-strip b{font-size:.72rem;line-height:1.32;color:var(--bio-text);font-weight:820;overflow-wrap:anywhere}
+
+/* Signature components: restrained cyan edge, evidence badge and provenance surface. */
+.bio-card,.bio-kpi,.bio-db-card,.bio-chart-card,.bio-scientific-card,[data-testid="stMetric"]{
+  border-radius:var(--biointel-radius-card)!important;
+}
+.bio-card::before,.bio-db-card::before,.bio-chart-card::before{height:1px!important;background:linear-gradient(90deg,transparent,var(--biointel-cyan),var(--biointel-blue),transparent)!important;opacity:.54!important}
+.bio-evidence-tier,.bio-boundary-banner,.bio-scientific-boundary{border-left:3px solid var(--biointel-violet)!important}
+[data-testid="stDataFrame"],[data-testid="stTable"],[data-testid="stPlotlyChart"]{background:var(--bio-surface-strong)!important;border-radius:14px!important}
+[data-testid="stPlotlyChart"]{overflow:hidden!important}
+
+/* Scientific content always wins over decorative background. */
+[data-testid="stAppViewContainer"]::before{
+  opacity:.16!important;
+  background-size:96px 96px,180px 180px,220px 220px,auto!important;
+  animation:none!important;
+  transform:none!important;
+}
+[data-testid="stAppViewContainer"]::after{opacity:.22!important;animation:none!important;transform:none!important}
+[data-testid="stDataFrame"]::before,[data-testid="stPlotlyChart"]::before,[data-testid="stTable"]::before{display:none!important}
+
+/* Premium motion: short, purposeful and never continuous. */
+.bio-card,.bio-kpi,.bio-db-card,[data-testid="stButton"] button,[data-testid="stDownloadButton"] button,[data-testid="stPageLink"] a{
+  transition:transform var(--biointel-motion-fast) ease,border-color var(--biointel-motion-fast) ease,background-color var(--biointel-motion-fast) ease,box-shadow var(--biointel-motion-fast) ease!important;
+}
+.bio-card:hover,.bio-db-card:hover{transform:translateY(-2px)!important}
+.bio-hero-scene .pv-orbit,.bio-hero-scene .pv-drift,.bio-hero-scene .pv-pulse{animation:none!important;transform:none!important}
+.bio-live-stage.running .bio-live-stage-dot{animation-duration:2.4s!important}
+
+/* Render navigation symbols as a single professional monochrome system. */
+[data-testid="stSidebar"] [data-testid="stPageLink"] span:first-child,
+[data-testid="stSidebar"] [data-testid="stPageLink"] p:first-child,
+[data-testid="stSidebar"] button span:first-child{
+  font-family:"Segoe UI Symbol","Arial Unicode MS",sans-serif!important;
+  font-variant-emoji:text!important;
+}
+
+.bio-onboarding-brand{display:grid;grid-template-columns:84px minmax(0,1fr);gap:1rem;align-items:center;margin:.5rem 0 1rem;padding:1.15rem 1.25rem;border:1px solid color-mix(in srgb,var(--biointel-cyan) 34%,var(--bio-border));border-radius:20px;background:linear-gradient(120deg,color-mix(in srgb,var(--biointel-cyan) 8%,var(--bio-surface-strong)),var(--bio-surface-strong) 55%,color-mix(in srgb,var(--biointel-violet) 7%,var(--bio-surface-strong)));box-shadow:0 20px 60px rgba(2,6,23,.2)}
+.bio-onboarding-mark{width:68px;height:68px}
+.bio-onboarding-brand h1{margin:.08rem 0 .2rem!important;font-size:clamp(1.55rem,3vw,2.35rem)!important;letter-spacing:-.045em!important}
+.bio-onboarding-kicker{font-size:.64rem;line-height:1.3;letter-spacing:.1em;text-transform:uppercase;color:var(--bio-muted);font-weight:780}
+.bio-onboarding-tagline{margin:.15rem 0 .35rem!important;color:var(--biointel-cyan)!important;font-weight:850!important}
+.bio-onboarding-brand p:last-child{margin:0!important;max-width:760px;color:var(--bio-muted)!important}
+
+.bio-about-brand{display:grid;gap:.55rem;padding:.2rem .1rem}
+.bio-about-lockup{display:flex;align-items:center;gap:.55rem}.bio-about-lockup svg{width:36px;height:36px}.bio-about-lockup strong{display:block;color:var(--bio-text);font-size:.84rem}.bio-about-lockup span{display:block;margin-top:.1rem;color:var(--biointel-cyan);font-size:.61rem;font-weight:720}
+.bio-about-brand p{margin:0;color:var(--bio-muted);font-size:.68rem;line-height:1.45}.bio-about-brand p strong{color:var(--bio-text)}.bio-about-brand small{color:var(--bio-muted);font-size:.58rem}
+
+@media(max-width:1100px){
+  .bio-top-brand-v83.bio-brand-system-v136{grid-template-columns:minmax(240px,1fr) auto}.bio-brand-system-v136 .bio-top-brand-center{display:none}
+  .bio-brand-trust-strip{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+@media(max-width:760px){
+  .bio-top-brand-v83.bio-brand-system-v136{grid-template-columns:1fr;min-height:auto;padding:.58rem .68rem}.bio-brand-system-v136 .bio-top-brand-meta{display:none}
+  .bio-brand-trust-strip{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .bio-onboarding-brand{grid-template-columns:1fr}.bio-onboarding-mark{width:56px;height:56px}
+}
+@media(max-width:480px){.bio-brand-trust-strip{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+}
+
+/* Home-only founder credit: prominent enough to be visible without crowding the global shell. */
+.bio-home-founder-credit{display:inline-flex;align-items:center;gap:.42rem;margin:.18rem 0 .68rem;padding:.4rem .68rem;border:1px solid color-mix(in srgb,var(--bio-primary) 30%,transparent);border-radius:999px;background:color-mix(in srgb,var(--bio-surface) 88%,transparent);box-shadow:0 8px 22px rgba(2,8,23,.16);font-size:.72rem;line-height:1;color:var(--bio-muted)}
+.bio-home-founder-credit span{font-weight:650;letter-spacing:.025em}
+.bio-home-founder-credit strong{color:var(--bio-text);font-weight:850}
+@media(max-width:760px){.bio-home-founder-credit{display:flex;width:max-content;max-width:100%;font-size:.67rem;flex-wrap:wrap;line-height:1.25}}
+
+/* Branded vector icons inside the global module finder. Native emoji icons are intentionally removed. */
+.bio-finder-result-icon{display:grid;place-items:center;width:40px;height:40px;margin:.08rem auto;border:1px solid color-mix(in srgb,var(--bio-primary) 36%,transparent);border-radius:12px;background:linear-gradient(145deg,color-mix(in srgb,var(--bio-primary) 19%,var(--bio-surface)),color-mix(in srgb,var(--bio-secondary) 14%,var(--bio-surface)));box-shadow:0 8px 22px rgba(2,8,23,.2);color:var(--bio-text)}
+.bio-finder-result-svg{display:block;width:22px;height:22px;max-width:22px!important;max-height:22px!important}
+@media(max-width:760px){.bio-finder-result-icon{width:36px;height:36px;border-radius:11px}.bio-finder-result-svg{width:20px;height:20px;max-width:20px!important;max-height:20px!important}}
+
+/* Step 136 Peak Phase 2 — compact branded icons and one-row shell actions. */
+.bio-section-label{display:flex!important;align-items:center!important;gap:.45rem!important}
+.bio-section-label .bio-section-svg{width:18px!important;height:18px!important;min-width:18px!important;max-width:18px!important;max-height:18px!important;display:block!important}
+.bio-empty-icon,.bio-insight-icon,.bio-db-icon,.bio-wb-icon{display:grid!important;place-items:center!important;overflow:hidden!important}
+.bio-empty-svg{width:32px!important;height:32px!important;max-width:32px!important;max-height:32px!important}
+.bio-insight-svg,.bio-db-svg{width:24px!important;height:24px!important;max-width:24px!important;max-height:24px!important}
+.bio-wb-header-svg{width:34px!important;height:34px!important;max-width:34px!important;max-height:34px!important}
+.bio-db-icon,.bio-wb-icon{font-size:0!important}
+
+/* Prevent action labels and status controls from collapsing into vertical text. */
+[data-testid="stPopover"]>button,[data-testid="stButton"]>button,[data-testid="stDownloadButton"]>button,[data-testid="stPageLink"] a{
+  white-space:nowrap!important;word-break:normal!important;overflow-wrap:normal!important;text-overflow:ellipsis!important
+}
+.bio-shell-bar [data-testid="stHorizontalBlock"]{align-items:center!important}
+.bio-shell-bar [data-testid="stColumn"]{min-width:0!important}
+.bio-shell-bar [data-testid="stPopover"]>button{min-height:42px!important}
+
+/* Home hierarchy: founder and CTAs remain visible while the hero stays compact. */
+.bio-home-founder-credit{margin-bottom:.45rem!important}
+.bio-premium-hero{padding:clamp(1.2rem,2.4vw,2rem)!important;margin-bottom:.85rem!important}
+.bio-premium-hero .bio-hero-title{max-width:880px!important}
+
+/* Peak scientific workflow tables are compact and readable. */
+[data-testid="stDataFrame"]{contain:layout paint!important}
+@media(max-width:1366px) and (min-width:761px){
+  .bio-shell-bar [data-testid="stPopover"]>button{font-size:.64rem!important;padding-inline:.22rem!important}
+  .bio-premium-hero{padding:1.15rem!important}
+}

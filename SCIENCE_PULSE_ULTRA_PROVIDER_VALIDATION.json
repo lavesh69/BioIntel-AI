@@ -1,0 +1,67 @@
+{
+  "classification_policy": "A provider is verified only when a real HTTPS sync completed and persisted LIVE records.",
+  "evidence": {
+    "available": true,
+    "completed_runs": {
+      "rss_nature_biotechnology": {
+        "duration_ms": 2186,
+        "error": "",
+        "fetched": 0,
+        "inserted": 0,
+        "status": "completed",
+        "updated": 0
+      },
+      "rss_nibib_news": {
+        "duration_ms": 6797,
+        "error": "",
+        "fetched": 50,
+        "inserted": 50,
+        "status": "completed",
+        "updated": 0
+      },
+      "rss_nlm_news": {
+        "duration_ms": 2890,
+        "error": "",
+        "fetched": 10,
+        "inserted": 10,
+        "status": "completed",
+        "updated": 0
+      },
+      "rss_sciencedaily_biology": {
+        "duration_ms": 11390,
+        "error": "",
+        "fetched": 50,
+        "inserted": 50,
+        "status": "completed",
+        "updated": 0
+      }
+    },
+    "database": "C:\\Users\\lavesh dobriyal\\Documents\\Codex\\2026-07-30\\files-mentioned-by-the-user-biointel\\work\\science-pulse-ultra-worker-20260730\\UserData\\databases\\biointel_science_pulse.sqlite",
+    "live_item_count": 118,
+    "provider_counts": {
+      "rss_nature_biotechnology": 8,
+      "rss_nibib_news": 50,
+      "rss_nlm_news": 10,
+      "rss_sciencedaily_biology": 50
+    }
+  },
+  "generated_at_utc": "2026-07-30T18:33:11Z",
+  "not_claimed_as_verified": [
+    "arxiv",
+    "biorxiv",
+    "clinicaltrials",
+    "crossref",
+    "crossref_event_data",
+    "datacite",
+    "europe_pmc",
+    "medrxiv",
+    "openalex",
+    "pubmed"
+  ],
+  "verified_provider_keys": [
+    "rss_nature_biotechnology",
+    "rss_nibib_news",
+    "rss_nlm_news",
+    "rss_sciencedaily_biology"
+  ]
+}

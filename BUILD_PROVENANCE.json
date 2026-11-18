@@ -1,0 +1,30 @@
+{
+  "schema": "biointel.build-provenance.v217",
+  "product": "BioIntel AI",
+  "version": "15.6.0",
+  "release_step": 217,
+  "release": "Step217 Production Enablement Controls",
+  "package_generation": "V20.0",
+  "physical_release": "Step206 V19.6 five-part Windows package",
+  "generated_at_utc": "2026-07-22T00:00:00+00:00",
+  "scope": {
+    "qualified_engine_pipeline_contract": true,
+    "model_candidate_policy": true,
+    "professional_information_architecture": true,
+    "signed_plugin_and_update_verification": true,
+    "enterprise_backend_adapters": true,
+    "oidc_token_verification": true,
+    "clinical_interoperability_connectors": true,
+    "qualification_gated_vector_rag": true,
+    "step206_installer_contract_preserved": true,
+    "step216_readiness_layer_retained": true
+  },
+  "verification": {
+    "priority_native_workflows": 9,
+    "step217_unit_tests": 8,
+    "software_control_gate": "passed",
+    "production_evidence_gate": "blocked_pending_external_evidence",
+    "streamlit_production_enablement_center": true
+  },
+  "boundary": "Step217 installs executable software controls and fail-closed adapters. Engine binaries, model weights, licences, credentials, publisher certificates, independent cohorts, wet-lab confirmation, clinical validation and regulatory approval remain external evidence."
+}

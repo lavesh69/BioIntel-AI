@@ -1,0 +1,22 @@
+{
+  "base_release": "Step 150 Windows Path Self-Healing",
+  "capability_stages": 480,
+  "complete_scientific_contracts": 80,
+  "navigation_entries_including_home": 229,
+  "page_files": 228,
+  "product_version": "13.2.0",
+  "reference_assets": 257,
+  "registered_engines": 105,
+  "release_name": "Scientific Readiness and Stability Upgrade",
+  "schema": "biointel.step151.release.v1",
+  "scientific_profiles": 80,
+  "step": 151,
+  "tests": {
+    "duration_seconds": 329.57,
+    "failed": 0,
+    "passed": 1240,
+    "skipped": 27
+  },
+  "validation_boundary": "Automated software/scientific-readiness verification only; not clinical, GxP, regulatory, or prospective wet-lab certification.",
+  "validation_gates": 328
+}

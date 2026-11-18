@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BioIntel AI — Biology, Engineered into Intelligence.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <script src="https://3Dmol.org/build/3Dmol-min.js"></script>
+  <style>
+    :root {
+      --bg-base: #070b14;
+      --bg-surface: #0d1424;
+      --bg-elevated: #121c31;
+      --border: rgba(148, 163, 184, 0.16);
+      --border-accent: rgba(56, 189, 248, 0.35);
+      --text-primary: #f1f5f9;
+      --text-secondary: #94a3b8;
+      --text-muted: #64748b;
+      --accent-blue: #38bdf8;
+      --accent-violet: #a78bfa;
+      --accent-emerald: #34d399;
+      --accent-amber: #fbbf24;
+      --accent-rose: #fb7185;
+      --radius: 12px;
+      --radius-sm: 8px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      background: radial-gradient(circle at 15% 0%, rgba(56, 189, 248, 0.08), transparent 40%),
+                  radial-gradient(circle at 85% 10%, rgba(167, 139, 250, 0.07), transparent 35%),
+                  var(--bg-base);
+      color: var(--text-primary);
+      min-height: 100vh;
+      line-height: 1.5;
+    }
+
+    .app-shell {
+      display: grid;
+      grid-template-columns: 270px 1fr;
+      min-height: 100vh;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      background: rgba(10, 16, 29, 0.94);
+      border-right: 1px solid var(--border);
+      padding: 20px 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      overflow-y: auto;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .brand-mark {
+      width: 38px;
+      height: 38px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, #0ea5e9, #6366f1);
+      display: grid;
+      place-items: center;
+      font-weight: 700;
+      font-size: 16px;
+      color: #fff;
+      flex-shrink: 0;
+    }
+
+    .brand-title { font-size: 15px; font-weight: 700; letter-spacing: -0.01em; }
+    .brand-sub { font-size: 11px; color: var(--text-secondary); }
+
+    .nav-label {
+      font-size: 10px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-muted);
+      padding: 0 8px;
+    }
+
+    .nav-list { display: flex; flex-direction: column; gap: 4px; }
+    .nav-btn {
+      width: 100%;
+      background: transparent;
+      border: 1px solid transparent;
+      color: var(--text-secondary);
+      padding: 9px 11px;
+      border-radius: var(--radius-sm);
+      text-align: left;
+      font-size: 13px;
+      font-weight: 500;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      transition: all 0.15s ease;
+    }
+    .nav-btn:hover { background: rgba(56, 189, 248, 0.07); color: var(--text-primary); }
+    .nav-btn.active {
+      background: rgba(56, 189, 248, 0.12);
+      border-color: var(--border-accent);
+      color: var(--accent-blue);
+    }
+
+    /* Compact Weather Pill in Sidebar */
+    .wx-card {
+      background: var(--bg-elevated);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .wx-header { display: flex; justify-content: space-between; align-items: center; font-size: 11px; color: var(--text-secondary); font-weight: 600; }
+    .wx-search { display: flex; gap: 6px; }
+    .wx-search input, .wx-select {
+      width: 100%;
+      background: var(--bg-base);
+      border: 1px solid var(--border);
+      color: var(--text-primary);
+      border-radius: 6px;
+      padding: 6px 8px;
+      font-size: 12px;
+      outline: none;
+    }
+    .wx-search button {
+      background: rgba(56, 189, 248, 0.16);
+      border: 1px solid var(--border-accent);
+      color: var(--accent-blue);
+      border-radius: 6px;
+      padding: 0 9px;
+      cursor: pointer;
+      font-size: 12px;
+      font-weight: 600;
+    }
+    .wx-metrics { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; text-align: center; }
+    .wx-metric { background: rgba(7, 11, 20, 0.65); border-radius: 6px; padding: 6px 4px; }
+    .wx-metric .v { font-size: 13px; font-weight: 700; color: var(--text-primary); }
+    .wx-metric .k { font-size: 10px; color: var(--text-muted); }
+
+    .sidebar-footer {
+      margin-top: auto;
+      padding-top: 12px;
+      border-top: 1px solid var(--border);
+      font-size: 11px;
+      color: var(--text-muted);
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .sidebar-footer a { color: var(--accent-blue); text-decoration: none; font-weight: 500; }
+    .sidebar-footer a:hover { text-decoration: underline; }
+
+    /* Main Content */
+    .main {
+      padding: 28px 32px;
+      max-width: 1240px;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, rgba(13, 20, 36, 0.96), rgba(18, 28, 49, 0.92));
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px 28px;
+      margin-bottom: 22px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    .eyebrow {
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--accent-blue);
+      margin-bottom: 6px;
+    }
+    .hero h1 { font-size: 24px; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 6px; }
+    .hero p { font-size: 13.5px; color: var(--text-secondary); max-width: 680px; }
+
+    .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+    .chip {
+      font-size: 11.5px;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: rgba(56, 189, 248, 0.08);
+      border: 1px solid var(--border);
+      color: var(--text-secondary);
+    }
+    .chip.ok { border-color: rgba(52, 211, 153, 0.35); color: var(--accent-emerald); background: rgba(52, 211, 153, 0.08); }
+
+    .ruo-banner {
+      font-size: 11.5px;
+      color: var(--text-secondary);
+      background: rgba(251, 191, 36, 0.07);
+      border: 1px solid rgba(251, 191, 36, 0.25);
+      border-radius: var(--radius-sm);
+      padding: 9px 14px;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .panel { display: none; }
+    .panel.active { display: block; }
+
+    .card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 20px;
+      margin-bottom: 18px;
+    }
+    .card h2 { font-size: 16px; font-weight: 600; margin-bottom: 4px; }
+    .card .desc { font-size: 12.5px; color: var(--text-secondary); margin-bottom: 14px; }
+
+    .row { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+    input[type="text"], textarea, select {
+      background: var(--bg-base);
+      border: 1px solid var(--border);
+      color: var(--text-primary);
+      border-radius: var(--radius-sm);
+      padding: 10px 12px;
+      font-size: 13px;
+      font-family: inherit;
+      outline: none;
+    }
+    input[type="text"]:focus, textarea:focus, select:focus { border-color: var(--accent-blue); }
+    textarea { width: 100%; font-family: 'JetBrains Mono', monospace; font-size: 12.5px; resize: vertical; }
+
+    .btn {
+      background: linear-gradient(135deg, #0284c7, #2563eb);
+      color: #fff;
+      border: none;
+      border-radius: var(--radius-sm);
+      padding: 10px 16px;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: opacity 0.15s;
+    }
+    .btn:hover { opacity: 0.92; }
+    .btn.secondary {
+      background: var(--bg-elevated);
+      border: 1px solid var(--border);
+      color: var(--text-primary);
+    }
+    .btn.secondary:hover { border-color: var(--border-accent); color: var(--accent-blue); }
+
+    .kpi-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 12px;
+      margin: 14px 0;
+    }
+    .kpi {
+      background: var(--bg-elevated);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 12px 14px;
+    }
+    .kpi .label { font-size: 11px; color: var(--text-secondary); }
+    .kpi .val { font-size: 20px; font-weight: 700; color: var(--accent-blue); margin-top: 2px; }
+
+    .mono-box {
+      background: var(--bg-base);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 10px 12px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px;
+      color: #cbd5e1;
+      word-break: break-all;
+      margin-top: 6px;
+    }
+
+    .result-list { display: flex; flex-direction: column; gap: 10px; margin-top: 14px; }
+    .result-item {
+      background: var(--bg-elevated);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 13px 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 12px;
+    }
+    .source-tag {
+      display: inline-block;
+      font-size: 10.5px;
+      font-weight: 600;
+      padding: 2px 8px;
+      border-radius: 4px;
+      background: rgba(167, 139, 250, 0.14);
+      color: var(--accent-violet);
+      margin-right: 6px;
+    }
+    .status-tag {
+      display: inline-block;
+      font-size: 10.5px;
+      font-weight: 600;
+      padding: 2px 8px;
+      border-radius: 4px;
+      background: rgba(52, 211, 153, 0.14);
+      color: var(--accent-emerald);
+    }
+    .result-title { font-size: 14px; font-weight: 600; color: var(--text-primary); margin-top: 4px; }
+    .result-meta { font-size: 12px; color: var(--text-secondary); margin-top: 3px; }
+    .result-actions { display: flex; gap: 6px; flex-shrink: 0; }
+    .result-actions a, .result-actions button {
+      font-size: 12px;
+      padding: 6px 10px;
+      border-radius: 6px;
+      text-decoration: none;
+      border: 1px solid var(--border-accent);
+      background: rgba(56, 189, 248, 0.1);
+      color: var(--accent-blue);
+      cursor: pointer;
+      font-weight: 500;
+    }
+
+    #mol-canvas {
+      width: 100%;
+      height: 460px;
+      position: relative;
+      background: #050811;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      overflow: hidden;
+      margin-top: 12px;
+    }
+
+    .status-msg { font-size: 12.5px; color: var(--text-secondary); margin-top: 10px; }
+    .status-msg.err { color: var(--accent-rose); }
+
+    @media (max-width: 860px) {
+      .app-shell { grid-template-columns: 1fr; }
+      .sidebar { height: auto; position: static; }
+      .main { padding: 18px 16px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-mark">BI</div>
+        <div>
+          <div class="brand-title">BioIntel AI</div>
+          <div class="brand-sub">v15.8.0 · Signature Dark</div>
+        </div>
+      </div>
+
+      <div class="nav-label">Scientific Modules</div>
+      <div class="nav-list">
+        <button class="nav-btn active" onclick="switchTab('sequence', this)">🧬 Sequence Analyzer</button>
+        <button class="nav-btn" onclick="switchTab('search', this)">🔎 Multi-DB Live Search</button>
+        <button class="nav-btn" onclick="switchTab('viewer3d', this)">🧪 3D Structure Canvas</button>
+        <button class="nav-btn" onclick="switchTab('trials', this)">🏥 Clinical Trials Matcher</button>
+        <button class="nav-btn" onclick="switchTab('platform', this)">🖥️ Full Desktop Platform</button>
+      </div>
+
+      <div class="nav-label">Live Environment (India)</div>
+      <div class="wx-card">
+        <div class="wx-header">
+          <span id="wx-place">New Delhi, India</span>
+          <span style="color: var(--accent-emerald);">LIVE</span>
+        </div>
+        <select class="wx-select" id="wx-preset" onchange="loadWeather(this.value)">
+          <option value="New Delhi">Delhi NCR (New Delhi)</option>
+          <option value="Dehradun">Uttarakhand (Dehradun)</option>
+          <option value="Mumbai">Maharashtra (Mumbai)</option>
+          <option value="Bengaluru">Karnataka (Bengaluru)</option>
+          <option value="Hyderabad">Telangana (Hyderabad)</option>
+          <option value="Chennai">Tamil Nadu (Chennai)</option>
+          <option value="Kolkata">West Bengal (Kolkata)</option>
+          <option value="Pune">Maharashtra (Pune)</option>
+          <option value="Jaipur">Rajasthan (Jaipur)</option>
+          <option value="Lucknow">Uttar Pradesh (Lucknow)</option>
+          <option value="Patna">Bihar (Patna)</option>
+          <option value="Chandigarh">Chandigarh / Punjab</option>
+          <option value="Shimla">Himachal Pradesh (Shimla)</option>
+          <option value="Ahmedabad">Gujarat (Ahmedabad)</option>
+          <option value="Bhopal">Madhya Pradesh (Bhopal)</option>
+          <option value="Kochi">Kerala (Kochi)</option>
+          <option value="Guwahati">Assam (Guwahati)</option>
+          <option value="Bhubaneswar">Odisha (Bhubaneswar)</option>
+          <option value="Srinagar">Jammu & Kashmir (Srinagar)</option>
+          <option value="Gangtok">Sikkim (Gangtok)</option>
+        </select>
+        <div class="wx-search">
+          <input type="text" id="wx-input" placeholder="Search any Indian city..." onkeydown="if(event.key==='Enter') loadWeather(this.value)" />
+          <button onclick="loadWeather(document.getElementById('wx-input').value)">Go</button>
+        </div>
+        <div class="wx-metrics">
+          <div class="wx-metric"><div class="v" id="wx-temp">--°C</div><div class="k">Temp</div></div>
+          <div class="wx-metric"><div class="v" id="wx-hum">--%</div><div class="k">Humidity</div></div>
+          <div class="wx-metric"><div class="v" id="wx-wind">--</div><div class="k">km/h</div></div>
+        </div>
+      </div>
+
+      <div class="sidebar-footer">
+        <div><strong>Founder:</strong> Lavesh Dobriyal</div>
+        <div>Source: <a href="https://github.com/lavesh69/BioIntel-AI" target="_blank" rel="noopener">github.com/lavesh69/BioIntel-AI</a></div>
+        <div>API Status: <span id="api-status" style="color: var(--accent-emerald);">Checking...</span></div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <section class="hero">
+        <div>
+          <div class="eyebrow">BioIntel AI · Cloud Web Portal</div>
+          <h1>Biology, Engineered into Intelligence.</h1>
+          <p>Enterprise bioinformatics workspace connecting real-time deterministic sequence analytics, 3D macromolecular WebGL visualization, parallel scientific registries (UniProtKB, RCSB PDB, PubChem, Europe PMC), and live ClinicalTrials.gov v2 discovery.</p>
+          <div class="chips">
+            <span class="chip ok">Verified Live APIs</span>
+            <span class="chip">UniProtKB · RCSB PDB · PubChem · Europe PMC</span>
+            <span class="chip">3Dmol WebGL</span>
+            <span class="chip">ClinicalTrials.gov v2</span>
+          </div>
+        </div>
+      </section>
+
+      <div class="ruo-banner">
+        <span><strong>Research Use Only:</strong> Outputs distinguish deterministic bioinformatics calculations from external live database records. Not for clinical diagnosis.</span>
+        <span>BioIntel AI v15.8.0</span>
+      </div>
+
+      <!-- TAB 1: SEQUENCE ANALYZER -->
+      <section id="tab-sequence" class="panel active">
+        <div class="card">
+          <h2>🧬 DNA / RNA / Protein Sequence Analyzer</h2>
+          <p class="desc">Paste raw or FASTA sequence for deterministic GC/AT content, melting temperature (Tm), molecular weight, reverse complement, RNA transcription, and reading frame translation.</p>
+          <textarea id="seq-input" rows="5" placeholder=">TP53_sample_fragment&#10;ATGGAGGAGCCGCAGTCAGATCCTAGCGTCGAGCCCCCTCTGAGTCAGGAAACATTTTCAGACCTATGGAAACTACTTCCTGAAAACAACGTTCTGTCCCCCTTGCCGTCCCAAGCAATGGATGATTTGATGCTGTCCCCGGACGATATTGAACAATGGTTCACTGAAGACCCAGGTCCAGATGAAGCTCCCAGAATGCCAGAGGCTGCTCCCCCCGTGGCCCCTGCACCAGCAGCTCCTACACCGGCGGCCCCTGCACCAGCCCCCTCCTGGCCCCTGTCATCTTCTGTCCCTTCCCAGAAAACCTACCAGGGCAGCTACGGTTTCCGTCTGGGCTTCTTGCATTCTGGGACAGCCAAGTCTGTGACTTGCACGTACTCCCCTGCCCTCAACAAGATGTTTTGCCAACTGGCCAAGACCTGCCCTGTGCAGCTGTGGGTTGATTCCACACCCCCGCCCGGCACCCGCGTCCGCGCCATGGCCATCTACAAGCAGTCACAGCACATGACGGAGGTTGTGAGGCGCTGCCCCCACCATGAGCGCTGCTCAGATAGCGATGGTCTGGCCCCTCCTCAGCATCTTATCCGAGTGGAAGGAAATTTGCGTGTGGAGTATTTGGATGACAGAAACACTTTTCGACATAGTGTGGTGGTGCCCTATGAGCCGCCTGAGGTTGGCTCTGACTGTACCACCATCCACTACAACTACATGTGTAACAGTTCCTGCATGGGCGGCATGAACCGGAGGCCCATCCTCACCATCATCACACTGGAAGACTCCAGTGGTAATCTACTGGGACGGAACAGCTTTGAGGTGCGTGTTTGTGCCTGTCCTGGGAGAGACCGGCGCACAGAGGAAGAGAATCTCCGCAAGAAAGGGGAGCCTCACCACGAGCTG"></textarea>
+          <div class="row" style="margin-top: 10px;">
+            <button class="btn" onclick="runSequenceAnalysis()">Analyze Sequence</button>
+            <button class="btn secondary" onclick="loadSampleSeq('dna')">Load TP53 DNA Example</button>
+            <button class="btn secondary" onclick="loadSampleSeq('protein')">Load Insulin Protein Example</button>
+          </div>
+          <div id="seq-status" class="status-msg"></div>
+          <div id="seq-output"></div>
+        </div>
+      </section>
+
+      <!-- TAB 2: MULTI-DATABASE LIVE SEARCH -->
+      <section id="tab-search" class="panel">
+        <div class="card">
+          <h2>🔎 Parallel Multi-Database Scientific Search</h2>
+          <p class="desc">Queries UniProtKB, RCSB PDB, Europe PMC, and PubChem concurrently in parallel worker threads.</p>
+          <div class="row">
+            <input type="text" id="search-input" style="flex:1; min-width: 240px;" value="TP53" placeholder="Enter gene, protein, drug, or pathway (e.g. TP53, BRCA1, aspirin, EGFR)..." onkeydown="if(event.key==='Enter') runScienceSearch()" />
+            <button class="btn" onclick="runScienceSearch()">Search All Databases</button>
+          </div>
+          <div id="search-status" class="status-msg"></div>
+          <div id="search-results" class="result-list"></div>
+        </div>
+      </section>
+
+      <!-- TAB 3: 3D STRUCTURE VIEWER -->
+      <section id="tab-viewer3d" class="panel">
+        <div class="card">
+          <h2>🧪 Interactive 3D Molecular Structure Canvas (RCSB PDB Live)</h2>
+          <p class="desc">Fetch any real 3D experimental structure directly from RCSB PDB and inspect interactively with WebGL.</p>
+          <div class="row">
+            <input type="text" id="pdb-id" value="1TUP" style="width: 140px; text-transform: uppercase;" placeholder="PDB ID (1TUP)" />
+            <select id="pdb-style" onchange="applyPdbStyle()">
+              <option value="cartoon">Cartoon (Spectrum)</option>
+              <option value="stick">Stick</option>
+              <option value="sphere">Sphere / Spacefill</option>
+              <option value="line">Wireframe</option>
+            </select>
+            <button class="btn" onclick="loadPdbStructure()">Load PDB Structure</button>
+            <button class="btn secondary" onclick="quickPdb('1TUP')">1TUP (p53-DNA)</button>
+            <button class="btn secondary" onclick="quickPdb('4HHB')">4HHB (Hemoglobin)</button>
+            <button class="btn secondary" onclick="quickPdb('6VXX')">6VXX (Spike)</button>
+            <button class="btn secondary" onclick="toggleSpin()">Toggle Spin</button>
+          </div>
+          <div id="pdb-status" class="status-msg">Ready. Click "Load PDB Structure" to render live RCSB coordinates.</div>
+          <div id="mol-canvas"></div>
+        </div>
+      </section>
+
+      <!-- TAB 4: CLINICAL TRIALS MATCHER -->
+      <section id="tab-trials" class="panel">
+        <div class="card">
+          <h2>🏥 Live Clinical Trials Matcher (ClinicalTrials.gov API v2)</h2>
+          <p class="desc">Query live clinical studies, trial phases, recruiting status, and lead sponsors directly from ClinicalTrials.gov.</p>
+          <div class="row">
+            <input type="text" id="trials-input" style="flex:1; min-width: 240px;" value="glioblastoma" placeholder="Enter condition, biomarker, or drug (e.g. glioblastoma, EGFR, Alzheimer)..." onkeydown="if(event.key==='Enter') runTrialsSearch()" />
+            <button class="btn" onclick="runTrialsSearch()">Search Live Trials</button>
+          </div>
+          <div id="trials-status" class="status-msg"></div>
+          <div id="trials-results" class="result-list"></div>
+        </div>
+      </section>
+
+      <!-- TAB 5: FULL DESKTOP / STREAMLIT PLATFORM -->
+      <section id="tab-platform" class="panel">
+        <div class="card">
+          <h2>🖥️ BioIntel AI Full 273-Module Local-First Desktop Suite</h2>
+          <p class="desc">The complete local-first Windows Streamlit & FastAPI platform (22 scientific engines, Lab PDF RAG Studio, AnnData single-cell omics, RDKit docking, offline SQLite knowledge graph) lives in the GitHub repository.</p>
+          <div class="kpi-grid">
+            <div class="kpi"><div class="label">Scientific Modules</div><div class="val">273</div></div>
+            <div class="kpi"><div class="label">Registered Engines</div><div class="val">22</div></div>
+            <div class="kpi"><div class="label">Connected Providers</div><div class="val">17</div></div>
+            <div class="kpi"><div class="label">Release Version</div><div class="val">v15.8.0</div></div>
+          </div>
+          <div class="row" style="margin-top: 14px;">
+            <a class="btn" style="text-decoration:none;" href="https://github.com/lavesh69/BioIntel-AI" target="_blank" rel="noopener">Open GitHub Repository</a>
+            <a class="btn secondary" style="text-decoration:none;" href="https://share.streamlit.io/deploy?repository=lavesh69/BioIntel-AI&branch=main&mainModule=app.py" target="_blank" rel="noopener">Deploy Full Streamlit App (Free)</a>
+          </div>
+          <div class="mono-box" style="margin-top: 14px;">
+            git clone https://github.com/lavesh69/BioIntel-AI.git &amp;&amp; cd BioIntel-AI &amp;&amp; pip install -r requirements.txt &amp;&amp; streamlit run app.py
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    let molViewer = null;
+    let isSpinning = false;
+
+    function switchTab(id, btn) {
+      document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'));
+      document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+      document.getElementById('tab-' + id).classList.add('active');
+      if (btn) btn.classList.add('active');
+      if (id === 'viewer3d' && !molViewer) loadPdbStructure();
+    }
+
+    function loadSampleSeq(kind) {
+      const box = document.getElementById('seq-input');
+      if (kind === 'dna') {
+        box.value = ">TP53_CDS_Fragment\nATGGAGGAGCCGCAGTCAGATCCTAGCGTCGAGCCCCCTCTGAGTCAGGAAACATTTTCAGACCTATGGAAACTACTTCCTGAAAACAACGTTCTGTCCCCCTTGCCGTCCCAAGCAATGGATGATTTGATGCTGTCCCCGGACGATATTGAACAATGGTTCACTGAAGACCCAGGTCCAGATGAAGCTCCCAGAATGCCAGAGGCTGCTCCCCCCGTGGCCCCTGCACCAGCAGCTCCTACACCGGCGGCCCCTGCACCAGCCCCCTCCTGGCCCCTGTCATCTTCTGTCCCTTCCCAGAAAACCTACCAGGGCAGCTACGGTTTCCGTCTGGGCTTCTTGCATTCTGGGACAGCCAAGTCTGTGACTTGCACGTACTCCCCTGCCCTCAACAAGATGTTTTGCCAACTGGCCAAGACCTGCCCTGTGCAGCTGTGGGTTGATTCCACACCCCCGCCCGGCACCCGCGTCCGCGCCATGGCCATCTACAAGCAGTCACAGCACATGACGGAGGTTGTGAGGCGCTGCCCCCACCATGAGCGCTGCTCAGATAGCGATGGTCTGGCCCCTCCTCAGCATCTTATCCGAGTGGAAGGAAATTTGCGTGTGGAGTATTTGGATGACAGAAACACTTTTCGACATAGTGTGGTGGTGCCCTATGAGCCGCCTGAGGTTGGCTCTGACTGTACCACCATCCACTACAACTACATGTGTAACAGTTCCTGCATGGGCGGCATGAACCGGAGGCCCATCCTCACCATCATCACACTGGAAGACTCCAGTGGTAATCTACTGGGACGGAACAGCTTTGAGGTGCGTGTTTGTGCCTGTCCTGGGAGAGACCGGCGCACAGAGGAAGAGAATCTCCGCAAGAAAGGGGAGCCTCACCACGAGCTG";
+      } else {
+        box.value = ">Human_Insulin_Precursor\nMALWMRLLPLLALLALWGPDPAAAFVNQHLCGSHLVEALYLVCGERGFFYTPKTRREAEDLQVGQVELGGGPGAGSLQPLALEGSLQKRGIVEQCCTSICSLYQLENYCN";
+      }
+      runSequenceAnalysis();
+    }
+
+    async function runSequenceAnalysis() {
+      const seq = document.getElementById('seq-input').value.trim();
+      const status = document.getElementById('seq-status');
+      const out = document.getElementById('seq-output');
+      if (!seq) { status.textContent = "Please paste a sequence first."; status.className = "status-msg err"; return; }
+      status.textContent = "Computing sequence metrics...";
+      status.className = "status-msg";
+      try {
+        const res = await fetch('/api/science?action=sequence', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ sequence: seq })
+        });
+        const data = await res.json();
+        if (data.error) { status.textContent = data.error; status.className = "status-msg err"; out.innerHTML = ""; return; }
+        status.textContent = `Completed (${data.provenance})`;
+        if (data.type === 'Protein') {
+          out.innerHTML = `
+            <div class="kpi-grid">
+              <div class="kpi"><div class="label">Type</div><div class="val">${data.type}</div></div>
+              <div class="kpi"><div class="label">Length</div><div class="val">${data.length} aa</div></div>
+              <div class="kpi"><div class="label">Mol. Weight</div><div class="val">${data.molecular_weight_kda} kDa</div></div>
+              <div class="kpi"><div class="label">Hydrophobic</div><div class="val">${data.hydrophobic_percent}%</div></div>
+              <div class="kpi"><div class="label">Approx. Net Charge</div><div class="val">${data.net_charge_approx >= 0 ? '+' : ''}${data.net_charge_approx}</div></div>
+            </div>
+            <div class="status-msg"><strong>Amino Acid Composition:</strong></div>
+            <div class="mono-box">${Object.entries(data.composition).sort().map(([k,v])=>`${k}:${v}`).join('  ')}</div>
+          `;
+        } else {
+          out.innerHTML = `
+            <div class="kpi-grid">
+              <div class="kpi"><div class="label">Type</div><div class="val">${data.type}</div></div>
+              <div class="kpi"><div class="label">Length</div><div class="val">${data.length} nt</div></div>
+              <div class="kpi"><div class="label">GC Content</div><div class="val">${data.gc_percent}%</div></div>
+              <div class="kpi"><div class="label">Melting Temp (Tm)</div><div class="val">${data.melting_temp_c} °C</div></div>
+              <div class="kpi"><div class="label">Mol. Weight</div><div class="val">${(data.molecular_weight_da/1000).toFixed(2)} kDa</div></div>
+            </div>
+            <div class="status-msg"><strong>Reverse Complement (5'→3'):</strong></div>
+            <div class="mono-box">${data.reverse_complement}${data.truncated ? '...' : ''}</div>
+            <div class="status-msg"><strong>Protein Translation (Frame +1):</strong></div>
+            <div class="mono-box">${data.protein_translation}${data.truncated ? '...' : ''}</div>
+          `;
+        }
+      } catch (e) {
+        status.textContent = "Analysis request failed: " + e.message;
+        status.className = "status-msg err";
+      }
+    }
+
+    async function runScienceSearch() {
+      const q = document.getElementById('search-input').value.trim();
+      const status = document.getElementById('search-status');
+      const list = document.getElementById('search-results');
+      if (!q) return;
+      status.textContent = `Querying UniProtKB, RCSB PDB, Europe PMC, and PubChem in parallel for "${q}"...`;
+      status.className = "status-msg";
+      list.innerHTML = "";
+      try {
+        const res = await fetch('/api/science?action=search&q=' + encodeURIComponent(q));
+        const data = await res.json();
+        if (data.error) { status.textContent = data.error; status.className = "status-msg err"; return; }
+        const pStatus = Object.entries(data.provider_status || {}).map(([k,v]) => `${k}: ${v}`).join(' · ');
+        status.textContent = `Found ${data.total} live records — ${pStatus}`;
+        if (!data.results.length) {
+          list.innerHTML = '<div class="status-msg">No matching records returned. Try another gene, protein, or compound name.</div>';
+          return;
+        }
+        list.innerHTML = data.results.map(item => `
+          <div class="result-item">
+            <div>
+              <div><span class="source-tag">${item.source}</span><span style="font-size:12px;color:var(--text-muted);">${item.id}</span></div>
+              <div class="result-title">${escapeHtml(item.title)}</div>
+              <div class="result-meta">${escapeHtml(item.meta)}</div>
+            </div>
+            <div class="result-actions">
+              ${item.pdb_id ? `<button onclick="openPdbFromSearch('${item.pdb_id}')">Load in 3D</button>` : ''}
+              <a href="${item.url}" target="_blank" rel="noopener">Open</a>
+            </div>
+          </div>
+        `).join('');
+      } catch (e) {
+        status.textContent = "Search error: " + e.message;
+        status.className = "status-msg err";
+      }
+    }
+
+    function openPdbFromSearch(pdbId) {
+      document.getElementById('pdb-id').value = pdbId;
+      const viewerBtn = document.querySelectorAll('.nav-btn')[2];
+      switchTab('viewer3d', viewerBtn);
+      loadPdbStructure();
+    }
+
+    function quickPdb(pdbId) {
+      document.getElementById('pdb-id').value = pdbId;
+      loadPdbStructure();
+    }
+
+    function loadPdbStructure() {
+      const pdbId = (document.getElementById('pdb-id').value || '1TUP').trim().toUpperCase();
+      const status = document.getElementById('pdb-status');
+      const container = document.getElementById('mol-canvas');
+      if (!/^[A-Z0-9]{4}$/.test(pdbId)) {
+        status.textContent = "Enter a valid 4-character PDB ID (e.g. 1TUP, 4HHB, 6VXX).";
+        status.className = "status-msg err";
+        return;
+      }
+      status.textContent = `Fetching live 3D coordinates for PDB:${pdbId} from RCSB...`;
+      status.className = "status-msg";
+      container.innerHTML = "";
+      molViewer = $3Dmol.createViewer(container, { backgroundColor: '#050811' });
+      $3Dmol.download('pdb:' + pdbId, molViewer, {}, function() {
+        applyPdbStyle();
+        molViewer.zoomTo();
+        molViewer.render();
+        status.textContent = `Loaded live RCSB PDB:${pdbId} — Drag to rotate, scroll to zoom.`;
+      });
+    }
+
+    function applyPdbStyle() {
+      if (!molViewer) return;
+      const mode = document.getElementById('pdb-style').value;
+      molViewer.setStyle({}, {});
+      if (mode === 'cartoon') molViewer.setStyle({}, { cartoon: { color: 'spectrum' } });
+      else if (mode === 'stick') molViewer.setStyle({}, { stick: { colorscheme: 'Jmol' } });
+      else if (mode === 'sphere') molViewer.setStyle({}, { sphere: { scale: 0.35 } });
+      else molViewer.setStyle({}, { line: {} });
+      molViewer.render();
+    }
+
+    function toggleSpin() {
+      if (!molViewer) return;
+      isSpinning = !isSpinning;
+      molViewer.spin(isSpinning ? 'y' : false);
+    }
+
+    async function runTrialsSearch() {
+      const q = document.getElementById('trials-input').value.trim();
+      const status = document.getElementById('trials-status');
+      const list = document.getElementById('trials-results');
+      if (!q) return;
+      status.textContent = `Querying ClinicalTrials.gov API v2 for "${q}"...`;
+      status.className = "status-msg";
+      list.innerHTML = "";
+      try {
+        const res = await fetch('/api/science?action=trials&q=' + encodeURIComponent(q));
+        const data = await res.json();
+        if (data.error) { status.textContent = data.error; status.className = "status-msg err"; return; }
+        status.textContent = `Loaded ${data.count} studies from ${data.source}`;
+        list.innerHTML = data.trials.map(t => `
+          <div class="result-item">
+            <div>
+              <div><span class="source-tag">${t.nct_id}</span><span class="status-tag">${t.status}</span> <span style="font-size:11.5px;color:var(--text-muted);">${t.phases}</span></div>
+              <div class="result-title">${escapeHtml(t.title)}</div>
+              <div class="result-meta">Conditions: ${escapeHtml(t.conditions || 'N/A')} · Sponsor: ${escapeHtml(t.sponsor)}</div>
+            </div>
+            <div class="result-actions">
+              <a href="${t.url}" target="_blank" rel="noopener">Study</a>
+            </div>
+          </div>
+        `).join('');
+      } catch (e) {
+        status.textContent = "ClinicalTrials error: " + e.message;
+        status.className = "status-msg err";
+      }
+    }
+
+    async function loadWeather(city) {
+      if (!city || !city.trim()) return;
+      document.getElementById('wx-place').textContent = 'Loading...';
+      try {
+        const res = await fetch('/api/science?action=weather&city=' + encodeURIComponent(city.trim()));
+        const d = await res.json();
+        if (d.error) { document.getElementById('wx-place').textContent = 'Not found'; return; }
+        document.getElementById('wx-place').textContent = d.state ? `${d.city}, ${d.state}` : `${d.city}, ${d.country}`;
+        document.getElementById('wx-temp').textContent = d.temperature_c != null ? `${d.temperature_c}°C` : '--';
+        document.getElementById('wx-hum').textContent = d.humidity_pct != null ? `${d.humidity_pct}%` : '--';
+        document.getElementById('wx-wind').textContent = d.wind_kmh != null ? `${d.wind_kmh}` : '--';
+      } catch (e) {
+        document.getElementById('wx-place').textContent = 'Offline';
+      }
+    }
+
+    function escapeHtml(s) {
+      return String(s || '').replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+    }
+
+    // Boot checks
+    fetch('/api/science?action=health')
+      .then(r => r.json())
+      .then(d => { document.getElementById('api-status').textContent = d.status === 'ok' ? 'Online (v' + d.version + ')' : 'Degraded'; })
+      .catch(() => { document.getElementById('api-status').textContent = 'Offline'; });
+    loadWeather('New Delhi');
+    loadSampleSeq('dna');
+  </script>
+</body>
+</html>

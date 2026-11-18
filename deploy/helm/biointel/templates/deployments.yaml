@@ -1,0 +1,103 @@
+{{- $root := . -}}
+{{- range $component := list "api" "streamlit" "worker" }}
+{{- $cfg := index $root.Values $component }}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "biointel.fullname" $root }}-{{ $component }}
+  labels:
+    {{- include "biointel.labels" $root | nindent 4 }}
+    app.kubernetes.io/component: {{ $component }}
+spec:
+  replicas: {{ $cfg.replicas }}
+  revisionHistoryLimit: 3
+  strategy:
+    type: RollingUpdate
+    rollingUpdate: {maxUnavailable: 0, maxSurge: 1}
+  selector:
+    matchLabels:
+      {{- include "biointel.selectorLabels" $root | nindent 6 }}
+      app.kubernetes.io/component: {{ $component }}
+  template:
+    metadata:
+      labels:
+        {{- include "biointel.selectorLabels" $root | nindent 8 }}
+        app.kubernetes.io/component: {{ $component }}
+        {{- with $root.Values.global.podLabels }}{{ toYaml . | nindent 8 }}{{- end }}
+      annotations:
+        checksum/config: {{ include (print $root.Template.BasePath "/configmap.yaml") $root | sha256sum }}
+        checksum/secrets: {{ include (print $root.Template.BasePath "/secret.yaml") $root | sha256sum }}
+        {{- with $root.Values.global.podAnnotations }}{{ toYaml . | nindent 8 }}{{- end }}
+    spec:
+      serviceAccountName: {{ include "biointel.serviceAccountName" $root }}
+      automountServiceAccountToken: false
+      securityContext:
+        {{- toYaml $root.Values.securityContext | nindent 8 }}
+      terminationGracePeriodSeconds: {{ if eq $component "worker" }}60{{ else }}30{{ end }}
+      containers:
+        - name: {{ $component }}
+          image: "{{ $root.Values.image.repository }}:{{ $root.Values.image.tag }}"
+          imagePullPolicy: {{ $root.Values.image.pullPolicy }}
+          securityContext:
+            {{- toYaml $root.Values.containerSecurityContext | nindent 12 }}
+          {{- if eq $component "api" }}
+          command: ["uvicorn"]
+          args: ["biointel.api.main:app", "--app-dir", "src", "--host", "0.0.0.0", "--port", "8000", "--workers", "2", "--proxy-headers"]
+          ports: [{name: http, containerPort: 8000, protocol: TCP}]
+          startupProbe: {httpGet: {path: /live, port: http}, failureThreshold: 30, periodSeconds: 5}
+          readinessProbe: {httpGet: {path: /ready, port: http}, initialDelaySeconds: 5, periodSeconds: 10, timeoutSeconds: 3}
+          livenessProbe: {httpGet: {path: /live, port: http}, initialDelaySeconds: 20, periodSeconds: 20, timeoutSeconds: 3}
+          {{- else if eq $component "streamlit" }}
+          command: ["streamlit"]
+          args: ["run", "app.py", "--server.address=0.0.0.0", "--server.port=8501", "--server.headless=true"]
+          ports: [{name: http, containerPort: 8501, protocol: TCP}]
+          startupProbe: {httpGet: {path: /_stcore/health, port: http}, failureThreshold: 30, periodSeconds: 5}
+          readinessProbe: {httpGet: {path: /_stcore/health, port: http}, initialDelaySeconds: 5, periodSeconds: 10}
+          livenessProbe: {httpGet: {path: /_stcore/health, port: http}, initialDelaySeconds: 20, periodSeconds: 20}
+          {{- else }}
+          command: ["python"]
+          args: ["scripts/run_local_worker.py", "--worker-id", "$(POD_NAME)", "--poll-seconds", "5"]
+          env:
+            - name: POD_NAME
+              valueFrom: {fieldRef: {fieldPath: metadata.name}}
+          {{- end }}
+          envFrom:
+            - configMapRef: {name: {{ include "biointel.fullname" $root }}-config}
+            - secretRef: {name: {{ include "biointel.fullname" $root }}-secrets}
+          resources:
+            {{- toYaml $cfg.resources | nindent 12 }}
+          volumeMounts:
+            - {name: models, mountPath: /app/models, readOnly: true}
+            - {name: data, mountPath: /app/data}
+            - {name: reports, mountPath: /app/reports}
+            - {name: tmp, mountPath: /tmp}
+      volumes:
+        - name: models
+          persistentVolumeClaim: {claimName: {{ include "biointel.claimName" (list $root "models") }}}
+        - name: data
+          persistentVolumeClaim: {claimName: {{ include "biointel.claimName" (list $root "data") }}}
+        - name: reports
+          persistentVolumeClaim: {claimName: {{ include "biointel.claimName" (list $root "reports") }}}
+        - name: tmp
+          emptyDir: {sizeLimit: 512Mi}
+      {{- with $root.Values.nodeSelector }}
+      nodeSelector: {{ toYaml . | nindent 8 }}
+      {{- end }}
+      {{- with $root.Values.affinity }}
+      affinity: {{ toYaml . | nindent 8 }}
+      {{- end }}
+      {{- with $root.Values.tolerations }}
+      tolerations: {{ toYaml . | nindent 8 }}
+      {{- end }}
+      {{- if and (eq $component "api") $root.Values.api.topologySpread }}
+      topologySpreadConstraints:
+        - maxSkew: 1
+          topologyKey: topology.kubernetes.io/zone
+          whenUnsatisfiable: ScheduleAnyway
+          labelSelector:
+            matchLabels:
+              {{- include "biointel.selectorLabels" $root | nindent 14 }}
+              app.kubernetes.io/component: api
+      {{- end }}
+{{- end }}

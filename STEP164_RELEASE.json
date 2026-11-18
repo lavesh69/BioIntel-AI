@@ -1,0 +1,17 @@
+{
+  "schema": "biointel.step164.release.v1",
+  "step": 164,
+  "release_name": "Operational Readiness and Qualification",
+  "base_release": "Step 163 All-Module Authentic Software Excellence",
+  "product_version": "13.6.0",
+  "scientific_modules": 80,
+  "software_owned_operational_10of10": 80,
+  "dynamic_module_release_gates": 80,
+  "specialist_engine_provisioning_manifests": 53,
+  "production_reference_intake_validators": 80,
+  "task_specific_model_intake_validators": 80,
+  "external_evidence_intake_validators": 80,
+  "external_release_eligible_modules": 0,
+  "validation_boundary": "All software-owned provisioning, qualification, evidence-intake and fail-closed decision controls are implemented. Third-party installations, licences, production reference releases, independent studies, wet-lab evidence and expert approvals are verified only after real artifacts are supplied.",
+  "external_claims_not_inferred": true
+}

@@ -1,0 +1,13 @@
+schema_version: "1.0"
+release: "13.2.0"
+interactive_limits:
+  default_preview_mb: 100
+  global_upload_mb: 1024
+  background_required_above_mb: 100
+principles:
+  raw_file_hash_required: true
+  native_format_detection_required: true
+  specialist_engine_boundary_required: true
+  reference_version_required_for_release_grade: true
+  biological_replicate_awareness_required: true
+  bounded_preview_disclosure_required: true

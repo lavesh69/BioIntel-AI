@@ -1,0 +1,125 @@
+{
+  "schema": "biointel.education.phase23-30.release-manifest.v1",
+  "release": "BioIntel-AI-15.6.0-EDUCATION-PHASE23-TO-30-ENTERPRISE-R1",
+  "version": "15.6.0",
+  "archive_root": "BioIntel-Step220",
+  "part_count": 4,
+  "migration": "education_phase23_to_30_enterprise_platform_v1",
+  "generated_at_utc": "2026-07-30T08:40:34Z",
+  "source_baseline": [
+    {
+      "path": "C:\\Users\\lavesh dobriyal\\Documents\\Codex\\2026-07-30\\files-mentioned-by-the-user-biointel\\outputs\\BioIntel-AI-15.6.0-EDUCATION-PHASE17-TO-22-MEGA-FIXED-R1-Part1.zip",
+      "name": "BioIntel-AI-15.6.0-EDUCATION-PHASE17-TO-22-MEGA-FIXED-R1-Part1.zip",
+      "size_bytes": 73433243,
+      "sha256": "323b089c6540a374f8aba262d5b3ad473e1ed924a75903a0d21c8d63d605518c"
+    },
+    {
+      "path": "C:\\Users\\lavesh dobriyal\\Documents\\Codex\\2026-07-30\\files-mentioned-by-the-user-biointel\\outputs\\BioIntel-AI-15.6.0-EDUCATION-PHASE17-TO-22-MEGA-FIXED-R1-Part2.zip",
+      "name": "BioIntel-AI-15.6.0-EDUCATION-PHASE17-TO-22-MEGA-FIXED-R1-Part2.zip",
+      "size_bytes": 41865761,
+      "sha256": "6be363026cd618255610cf23935ab293098c4a5b9a92988920bda9a208f2a550"
+    },
+    {
+      "path": "C:\\Users\\lavesh dobriyal\\Documents\\Codex\\2026-07-30\\files-mentioned-by-the-user-biointel\\outputs\\BioIntel-AI-15.6.0-EDUCATION-PHASE17-TO-22-MEGA-FIXED-R1-Part3.zip",
+      "name": "BioIntel-AI-15.6.0-EDUCATION-PHASE17-TO-22-MEGA-FIXED-R1-Part3.zip",
+      "size_bytes": 135667273,
+      "sha256": "9706bfa77c4355b00da7c7b9fd4ea72c13e93560172229b80261d20238619131"
+    },
+    {
+      "path": "C:\\Users\\lavesh dobriyal\\Documents\\Codex\\2026-07-30\\files-mentioned-by-the-user-biointel\\outputs\\BioIntel-AI-15.6.0-EDUCATION-PHASE17-TO-22-MEGA-FIXED-R1-Part4.zip",
+      "name": "BioIntel-AI-15.6.0-EDUCATION-PHASE17-TO-22-MEGA-FIXED-R1-Part4.zip",
+      "size_bytes": 332893292,
+      "sha256": "12634f64b49382af7317eb5048494031afa88c8272a1085f8078975776566464"
+    }
+  ],
+  "database": {
+    "phase23_30_tables": 57,
+    "phase23_30_indexes": 20
+  },
+  "catalogs": {
+    "agents": 8,
+    "agent_tools": 10,
+    "virtual_labs": 23,
+    "skills": 12
+  },
+  "api": {
+    "new_paths": 37,
+    "application_paths_at_qualification": 704
+  },
+  "tests": {
+    "schema": "biointel.education.phase23-30.test-results.v1",
+    "generated_at_utc": "2026-07-30T08:40:34Z",
+    "focused_phase23_30": {
+      "passed": 18,
+      "failed": 0,
+      "skipped": 0,
+      "duration_seconds": 12.78
+    },
+    "education_shiro_connect_regression": {
+      "passed": 224,
+      "failed": 0,
+      "skipped": 0,
+      "duration_seconds": 117.74
+    },
+    "streamlit_apptest": {
+      "pages": 2,
+      "empty_state_passed": 2,
+      "authenticated_passed": 2,
+      "exceptions": 0
+    },
+    "diagnostic_unicode_path": {
+      "passed": 1,
+      "failed": 0
+    },
+    "worker_once": {
+      "passed": 1,
+      "failed": 0
+    },
+    "dependency_lock": {
+      "passed": 1,
+      "packages": 34
+    },
+    "offline_wheelhouse": {
+      "passed": 1,
+      "wheels": 122,
+      "hash_mismatches": 0
+    },
+    "local_load_probe": {
+      "profile": 500,
+      "operations": 800,
+      "concurrency": 32,
+      "errors": 0,
+      "operation_metrics": "measured",
+      "virtual_users": "simulated",
+      "production_capacity": "not_verified"
+    },
+    "pre_phase23_broad_baseline": {
+      "passed": 1914,
+      "failed": 278,
+      "skipped": 28,
+      "errors": 3,
+      "warnings": 11,
+      "duration_seconds": 1146.96,
+      "status": "NOT_GREEN"
+    },
+    "post_phase23_broad_diagnostic": {
+      "passed": 1931,
+      "failed": 279,
+      "skipped": 28,
+      "errors": 3,
+      "warnings": 11,
+      "duration_seconds": 761.17,
+      "status": "NOT_GREEN",
+      "phase23_30_failures_in_summary": 0,
+      "delta_from_pre_baseline": {
+        "passed": 17,
+        "failed": 1,
+        "skipped": 0,
+        "errors": 0
+      }
+    }
+  },
+  "changed_files_manifest": "PHASE23_TO_30_CHANGED_FILES.json",
+  "package_artifact_hashes": "See EDUCATION_PHASE23_TO_30_PACKAGE_REPORT.json and SHA256SUMS_EDUCATION_PHASE23_TO_30.txt beside the ZIPs.",
+  "claim_boundary": "Local SQLite desktop is verified. Live integrations, production capacity, institution acceptance, accreditation, formal security and WCAG certification require external validation."
+}

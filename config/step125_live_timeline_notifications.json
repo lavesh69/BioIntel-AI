@@ -1,0 +1,16 @@
+{
+  "schema": "biointel.step125.live-experience.v1",
+  "release": "13.2.0",
+  "features": {
+    "persistent_live_analysis_timeline": true,
+    "inline_stage_updates": true,
+    "background_job_controls": ["pause", "resume", "cancel"],
+    "restart_recovery": true,
+    "persistent_notifications": true,
+    "notification_deduplication": true,
+    "unread_state": true,
+    "severity_filters": true,
+    "deep_links": true,
+    "notification_export": true
+  }
+}

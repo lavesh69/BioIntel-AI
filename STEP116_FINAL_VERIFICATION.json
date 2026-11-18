@@ -1,0 +1,41 @@
+{
+  "schema": "biointel.step116.final-verification.v1",
+  "version": "11.6.0",
+  "generated_at_utc": "2026-07-11T05:43:53+00:00",
+  "status": "PASS",
+  "scope": {
+    "module_workspaces": 78,
+    "scientific_groups": 8,
+    "affected_pages": 77,
+    "central_hub": 1,
+    "excluded_modules_locked": 5
+  },
+  "verification": {
+    "selected_regression_tests_passed": 126,
+    "selected_regression_tests_failed": 0,
+    "affected_pages_passed": 77,
+    "affected_pages_failed": 0,
+    "renderer_states_passed": 40,
+    "renderer_states_failed": 0,
+    "python_files_compiled": 699,
+    "python_compile_errors": 0,
+    "page_files_static_audited": 171,
+    "application_self_tests_passed": 7,
+    "application_self_tests_failed": 0,
+    "sqlite_databases_healthy": 36,
+    "sqlite_database_count": 36,
+    "sqlite_rows_checked": 108077,
+    "excluded_source_hashes_preserved": 5,
+    "runtime_error_logs_after_final_sweep": 0
+  },
+  "bug_repairs": [
+    "Early page-stop workspace reachability",
+    "PyArrow dataframe/editor fallback",
+    "PyArrow native chart fallback",
+    "Lazy section routing",
+    "Namespaced widget state"
+  ],
+  "project_files": 3673,
+  "manifest_entries": 3672,
+  "boundary": "Tested implementation paths passed. Future datasets, optional engines and machine configurations can still expose new issues."
+}

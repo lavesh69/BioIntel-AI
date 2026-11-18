@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0",
+  "release": "BioIntel AI 10.1.0",
+  "scope": "Persistent background execution, Windows UI regression, UI performance, reference database lifecycle, and unified scientific reporting",
+  "background_jobs": {
+    "persistent_queue": true,
+    "worker_subprocess": true,
+    "pause_resume_cancel_retry": true,
+    "checkpoints": true,
+    "heartbeats": true,
+    "orphan_recovery": true,
+    "resource_requests": ["cpu", "memory", "gpu", "disk"],
+    "artifact_links": true
+  },
+  "ui_regression": {
+    "all_page_static_audit": true,
+    "streamlit_apptest": true,
+    "json_csv_html_artifacts": true,
+    "windows_launcher": "RUN_FULL_WINDOWS_UI_REGRESSION.bat",
+    "physical_windows_execution_required_for_final_machine_certification": true
+  },
+  "performance": {
+    "persistent_profiler": true,
+    "bounded_file_preview": true,
+    "cached_inventory": true,
+    "memory_release": true,
+    "source_performance_audit": true,
+    "heavy_work_behind_user_actions": true
+  },
+  "reference_lifecycle": {
+    "release_registry": true,
+    "checksum_verification": true,
+    "snapshots": true,
+    "rollback": true,
+    "compatibility_checks": true,
+    "safe_command_vector_indexing": true,
+    "storage_quota_and_cleanup": true
+  },
+  "unified_report": {
+    "formats": ["HTML", "JSON", "PDF", "DOCX", "XLSX", "CSV", "ZIP"],
+    "sha256_manifest": true,
+    "workspace_jobs_references_provenance_limitations": true,
+    "background_generation": true
+  },
+  "evidence_boundary": "Implementation controls do not manufacture external clinical, wet-lab, regulatory, publication, customer, or long-term operating evidence."
+}

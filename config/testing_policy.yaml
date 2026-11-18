@@ -1,0 +1,7 @@
+schema: biointel.testing-policy.v1
+coverage_target: 85
+branch_coverage: true
+mutation_score_target: 70
+required_suites: [unit, integration, scientific-regression, e2e, visual, performance]
+flaky_test_retries_allowed: 0
+quarantine_requires_owner: true

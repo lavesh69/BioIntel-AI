@@ -1,0 +1,27 @@
+{
+  "schema": "biointel.step118.final-verification.v1",
+  "version": "11.8.0",
+  "status": "PASS",
+  "scope": "Interactive Scientific Workspace card consistency and navigation stability",
+  "root_cause_confirmed": true,
+  "root_cause": "A session-persistent CSS injection guard survived Streamlit page navigation after the previous page DOM and style element were removed.",
+  "fixes": {
+    "stylesheet_reinjected_per_page_dom": true,
+    "resilient_grid_and_card_display_rules": true,
+    "responsive_breakpoints": [1100, 760, 480],
+    "windows_forced_colours": true,
+    "shared_renderer_pages": 77
+  },
+  "verification": {
+    "workspace_runtime_pages": {"passed": 77, "failed": 0},
+    "selected_regression_tests": {"passed": 140, "failed": 0},
+    "focused_step118_checks": {"passed": 8, "failed": 0},
+    "python_compilation": {"passed": 841, "failed": 0},
+    "application_self_test": {"passed": 7, "failed": 0, "build_runtime_mode": "Python 3.11-3.13 x64", "installed_windows_runtime": "Python 3.11 x64"},
+    "sqlite_integrity": {"healthy": 36, "total": 36, "rows_checked": 108077},
+    "excluded_source_hashes": {"preserved": 5, "total": 5},
+    "runtime_exceptions": 0,
+    "streamlit_error_elements": 0
+  },
+  "limitations": "Future Streamlit, browser, driver or third-party theme changes can expose new compatibility issues; the tested current build paths passed."
+}

@@ -1,0 +1,16 @@
+{
+  "schema": "biointel.step180.final-five-scientific-assurance.v1",
+  "app_version": "15.0.0-step180",
+  "target_module_count": 5,
+  "portfolio_module_count": 80,
+  "portfolio_internal_10of10_count": 80,
+  "internal_target_rating": 10.0,
+  "external_evidence_policy": "fail-closed",
+  "classic_windows_flow_preserved": [
+    "INSTALL_WINDOWS.bat",
+    "RUN_BOTH_WINDOWS.bat"
+  ],
+  "verification_launcher": "VERIFY_STEP180_TARGET_MODULES_WINDOWS.bat",
+  "provisioning_launcher": "PROVISION_STEP180_TARGET_MODULES_WINDOWS.bat",
+  "qualification_center": "pages/250_Step180_Final_Five_Scientific_Qualification_Center.py"
+}

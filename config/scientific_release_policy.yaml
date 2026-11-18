@@ -1,0 +1,15 @@
+version: 1
+hard_blockers:
+  - synthetic_training_data
+  - missing_source_release
+  - missing_licence
+  - missing_checksum
+  - unresolved_assay_conflicts
+  - entity_leakage
+  - below_baseline_performance
+  - missing_external_validation
+  - missing_calibration
+  - missing_uncertainty
+  - missing_independent_review
+  - missing_prospective_validation_for_full_qualification
+statuses: [reference_only, evidence_pending, externally_validated, prospectively_validated, release_eligible]

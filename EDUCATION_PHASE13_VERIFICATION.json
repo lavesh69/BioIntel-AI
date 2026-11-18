@@ -1,0 +1,766 @@
+{
+  "schema": "biointel.education-phase13-verification.v1",
+  "generated_at": "2026-07-28T20:31:29.624649+00:00",
+  "passed": true,
+  "passed_controls": 27,
+  "total_controls": 27,
+  "controls": [
+    {
+      "name": "phase13_schema",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "rag_registration",
+      "passed": true,
+      "detail": {
+        "id": "ragdoc_e8e74455e02a41af8b83d221911c2342",
+        "institution_id": "inst_66d52cdfb7c4479a82418be50d968cb7",
+        "project_id": "course-bio",
+        "title": "evidence",
+        "source_path": "/tmp/biointel-phase13-verify-r60qo27g/evidence.md",
+        "source_name": "evidence.md",
+        "mime_type": "text/markdown",
+        "sha256": "39109f91883f93d23c995c2302b97ef5f0e7d33dea9ef3a44424179f999a7e50",
+        "size_bytes": 167,
+        "version": 1,
+        "state": "registered",
+        "created_by": "teacher",
+        "created_at": "2026-07-28T20:31:29.169239+00:00",
+        "updated_at": "2026-07-28T20:31:29.169239+00:00",
+        "permissions": {
+          "roles": [
+            "subject_teacher",
+            "university_student"
+          ]
+        },
+        "safety": {
+          "prompt_injection_patterns": [],
+          "sample_bytes_scanned": 167
+        }
+      }
+    },
+    {
+      "name": "rag_human_approval_required",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "rag_multi_format_ingestion",
+      "passed": true,
+      "detail": {
+        "id": "ragingest_9f7c3618527146da87cf3c0ee201f691",
+        "institution_id": "inst_66d52cdfb7c4479a82418be50d968cb7",
+        "project_id": "course-bio",
+        "document_id": "ragdoc_e8e74455e02a41af8b83d221911c2342",
+        "parser": "md",
+        "state": "completed",
+        "chunk_count": 4,
+        "character_count": 163,
+        "locator_count": 4,
+        "error_text": "",
+        "created_by": "teacher",
+        "created_at": "2026-07-28T20:31:29.201363+00:00",
+        "completed_at": "2026-07-28T20:31:29.206954+00:00",
+        "extraction": {
+          "chunk_chars": 350,
+          "overlap_chars": 30,
+          "source_sha256": "39109f91883f93d23c995c2302b97ef5f0e7d33dea9ef3a44424179f999a7e50",
+          "suffix": ".md"
+        }
+      }
+    },
+    {
+      "name": "rag_permission_filtered_search",
+      "passed": true,
+      "detail": {
+        "project_id": "course-bio",
+        "query": "What preserves genetic information?",
+        "result_count": 2,
+        "results": [
+          {
+            "chunk_id": "ragchunk_af9802a4115f489db98b8e6b7a4b2ed2",
+            "document_id": "ragdoc_e8e74455e02a41af8b83d221911c2342",
+            "document_title": "evidence",
+            "source_name": "evidence.md",
+            "page_number": null,
+            "section": "",
+            "locator": "line 3",
+            "score": 5.343407,
+            "matched_terms": [
+              "genetic",
+              "information",
+              "preserves"
+            ],
+            "excerpt": "Replication preserves genetic information before cell division.",
+            "citation": "evidence.md · line 3",
+            "document_sha256": "39109f91883f93d23c995c2302b97ef5f0e7d33dea9ef3a44424179f999a7e50"
+          },
+          {
+            "chunk_id": "ragchunk_5f89d0e6e52b4b57906f749d20be39fc",
+            "document_id": "ragdoc_e8e74455e02a41af8b83d221911c2342",
+            "document_title": "evidence",
+            "source_name": "evidence.md",
+            "page_number": null,
+            "section": "",
+            "locator": "line 2",
+            "score": 1.510826,
+            "matched_terms": [
+              "information"
+            ],
+            "excerpt": "DNA stores hereditary information.",
+            "citation": "evidence.md · line 2",
+            "document_sha256": "39109f91883f93d23c995c2302b97ef5f0e7d33dea9ef3a44424179f999a7e50"
+          }
+        ],
+        "evidence_status": "grounded",
+        "retrieval_policy": "Approved, permission-filtered local evidence only; lexical ranking does not assert scientific truth."
+      }
+    },
+    {
+      "name": "rag_exact_locator",
+      "passed": true,
+      "detail": {
+        "chunk_id": "ragchunk_af9802a4115f489db98b8e6b7a4b2ed2",
+        "document_id": "ragdoc_e8e74455e02a41af8b83d221911c2342",
+        "document_title": "evidence",
+        "source_name": "evidence.md",
+        "page_number": null,
+        "section": "",
+        "locator": "line 3",
+        "score": 5.343407,
+        "matched_terms": [
+          "genetic",
+          "information",
+          "preserves"
+        ],
+        "excerpt": "Replication preserves genetic information before cell division.",
+        "citation": "evidence.md · line 3",
+        "document_sha256": "39109f91883f93d23c995c2302b97ef5f0e7d33dea9ef3a44424179f999a7e50"
+      }
+    },
+    {
+      "name": "rag_context_bundle",
+      "passed": true,
+      "detail": {
+        "query": "DNA inheritance",
+        "project_id": "course-bio",
+        "evidence": [
+          {
+            "chunk_id": "ragchunk_5f89d0e6e52b4b57906f749d20be39fc",
+            "document_id": "ragdoc_e8e74455e02a41af8b83d221911c2342",
+            "document_title": "evidence",
+            "source_name": "evidence.md",
+            "page_number": null,
+            "section": "",
+            "locator": "line 2",
+            "score": 1.916291,
+            "matched_terms": [
+              "dna"
+            ],
+            "excerpt": "DNA stores hereditary information.",
+            "citation": "evidence.md · line 2",
+            "document_sha256": "39109f91883f93d23c995c2302b97ef5f0e7d33dea9ef3a44424179f999a7e50",
+            "content": "DNA stores hereditary information."
+          },
+          {
+            "chunk_id": "ragchunk_c3799e51196746e6b9226cfcdbb3002a",
+            "document_id": "ragdoc_e8e74455e02a41af8b83d221911c2342",
+            "document_title": "evidence",
+            "source_name": "evidence.md",
+            "page_number": null,
+            "section": "",
+            "locator": "line 1",
+            "score": 1.916291,
+            "matched_terms": [
+              "inheritance"
+            ],
+            "excerpt": "# Molecular inheritance",
+            "citation": "evidence.md · line 1",
+            "document_sha256": "39109f91883f93d23c995c2302b97ef5f0e7d33dea9ef3a44424179f999a7e50",
+            "content": "# Molecular inheritance"
+          }
+        ],
+        "citations": [
+          {
+            "chunk_id": "ragchunk_5f89d0e6e52b4b57906f749d20be39fc",
+            "document_id": "ragdoc_e8e74455e02a41af8b83d221911c2342",
+            "citation": "evidence.md · line 2",
+            "document_sha256": "39109f91883f93d23c995c2302b97ef5f0e7d33dea9ef3a44424179f999a7e50"
+          },
+          {
+            "chunk_id": "ragchunk_c3799e51196746e6b9226cfcdbb3002a",
+            "document_id": "ragdoc_e8e74455e02a41af8b83d221911c2342",
+            "citation": "evidence.md · line 1",
+            "document_sha256": "39109f91883f93d23c995c2302b97ef5f0e7d33dea9ef3a44424179f999a7e50"
+          }
+        ],
+        "character_count": 57,
+        "safe_to_answer": true
+      }
+    },
+    {
+      "name": "rag_role_permission_enforced",
+      "passed": true,
+      "detail": {
+        "project_id": "course-bio",
+        "query": "DNA",
+        "result_count": 0,
+        "results": [],
+        "evidence_status": "no_approved_evidence",
+        "retrieval_policy": "Approved, permission-filtered local evidence only; lexical ranking does not assert scientific truth."
+      }
+    },
+    {
+      "name": "rag_prompt_injection_quarantine_preserved",
+      "passed": true,
+      "detail": {
+        "id": "ragdoc_56dfa2f930a9495391dbb6bc04c3c28e",
+        "institution_id": "inst_66d52cdfb7c4479a82418be50d968cb7",
+        "project_id": "course-bio",
+        "title": "unsafe",
+        "source_path": "/tmp/biointel-phase13-verify-r60qo27g/unsafe.txt",
+        "source_name": "unsafe.txt",
+        "mime_type": "text/plain",
+        "sha256": "345d91d865ac28c5d4b7e4dd6b3dac61bb5965378ef0332091288c49bed9b5e4",
+        "size_bytes": 62,
+        "version": 1,
+        "state": "quarantined",
+        "created_by": "teacher",
+        "created_at": "2026-07-28T20:31:29.284269+00:00",
+        "updated_at": "2026-07-28T20:31:29.284269+00:00",
+        "permissions": {
+          "roles": [
+            "subject_teacher",
+            "university_student"
+          ]
+        },
+        "safety": {
+          "prompt_injection_patterns": [
+            "ignore\\s+(all|any|the)\\s+(previous|prior)\\s+instructions",
+            "system\\s+prompt"
+          ],
+          "sample_bytes_scanned": 62
+        }
+      }
+    },
+    {
+      "name": "timetable_preview",
+      "passed": true,
+      "detail": {
+        "id": "ttgen_37278c3865544129a0ace7c147522e46",
+        "institution_id": "inst_66d52cdfb7c4479a82418be50d968cb7",
+        "academic_year": "",
+        "term": "",
+        "term_start": "2026-07-29",
+        "weeks": 3,
+        "state": "preview_ready",
+        "created_by": "admin",
+        "created_at": "2026-07-28T20:31:29.302865+00:00",
+        "committed_at": null,
+        "request": {
+          "day_end": "17:00",
+          "day_start": "09:00",
+          "requirements": [
+            {
+              "duration_minutes": 60,
+              "preferred_weekdays": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "priority": 90,
+              "requirement_index": 1,
+              "room_candidates": [
+                "LAB-1",
+                "ROOM-2"
+              ],
+              "sessions_per_week": 2,
+              "student_group": "BIO-A",
+              "subject_code": "BIO-P13",
+              "subject_id": "subj_4dcc524d84e1420ebb8d8f92c3557176",
+              "teacher_id": "teacher"
+            }
+          ],
+          "slot_minutes": 60,
+          "weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        "plan": [
+          {
+            "duration_minutes": 60,
+            "first_end": "2026-07-29T10:00:00+00:00",
+            "first_start": "2026-07-29T09:00:00+00:00",
+            "preferred_weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "priority": 90,
+            "requirement_index": 1,
+            "room": "LAB-1",
+            "room_candidates": [
+              "LAB-1",
+              "ROOM-2"
+            ],
+            "session_index": 1,
+            "sessions_per_week": 2,
+            "student_group": "BIO-A",
+            "subject_code": "BIO-P13",
+            "subject_id": "subj_4dcc524d84e1420ebb8d8f92c3557176",
+            "teacher_id": "teacher"
+          },
+          {
+            "duration_minutes": 60,
+            "first_end": "2026-07-30T10:00:00+00:00",
+            "first_start": "2026-07-30T09:00:00+00:00",
+            "preferred_weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "priority": 90,
+            "requirement_index": 1,
+            "room": "LAB-1",
+            "room_candidates": [
+              "LAB-1",
+              "ROOM-2"
+            ],
+            "session_index": 2,
+            "sessions_per_week": 2,
+            "student_group": "BIO-A",
+            "subject_code": "BIO-P13",
+            "subject_id": "subj_4dcc524d84e1420ebb8d8f92c3557176",
+            "teacher_id": "teacher"
+          }
+        ],
+        "unscheduled": [],
+        "committed_series": [],
+        "planned_sessions_per_week": 2
+      }
+    },
+    {
+      "name": "timetable_atomic_commit",
+      "passed": true,
+      "detail": {
+        "run": {
+          "id": "ttgen_e390cc0f49104c17a62393f33687e035",
+          "institution_id": "inst_66d52cdfb7c4479a82418be50d968cb7",
+          "academic_year": "",
+          "term": "",
+          "term_start": "2026-07-29",
+          "weeks": 3,
+          "state": "committed",
+          "created_by": "admin",
+          "created_at": "2026-07-28T20:31:29.321072+00:00",
+          "committed_at": "2026-07-28T20:31:29.333859+00:00",
+          "request": {
+            "day_end": "17:00",
+            "day_start": "09:00",
+            "requirements": [
+              {
+                "duration_minutes": 60,
+                "preferred_weekdays": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ],
+                "priority": 90,
+                "requirement_index": 1,
+                "room_candidates": [
+                  "LAB-1",
+                  "ROOM-2"
+                ],
+                "sessions_per_week": 2,
+                "student_group": "BIO-A",
+                "subject_code": "BIO-P13",
+                "subject_id": "subj_4dcc524d84e1420ebb8d8f92c3557176",
+                "teacher_id": "teacher"
+              }
+            ],
+            "slot_minutes": 60,
+            "weekdays": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          "plan": [
+            {
+              "duration_minutes": 60,
+              "first_end": "2026-07-29T10:00:00+00:00",
+              "first_start": "2026-07-29T09:00:00+00:00",
+              "preferred_weekdays": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "priority": 90,
+              "requirement_index": 1,
+              "room": "LAB-1",
+              "room_candidates": [
+                "LAB-1",
+                "ROOM-2"
+              ],
+              "session_index": 1,
+              "sessions_per_week": 2,
+              "student_group": "BIO-A",
+              "subject_code": "BIO-P13",
+              "subject_id": "subj_4dcc524d84e1420ebb8d8f92c3557176",
+              "teacher_id": "teacher"
+            },
+            {
+              "duration_minutes": 60,
+              "first_end": "2026-07-30T10:00:00+00:00",
+              "first_start": "2026-07-30T09:00:00+00:00",
+              "preferred_weekdays": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "priority": 90,
+              "requirement_index": 1,
+              "room": "LAB-1",
+              "room_candidates": [
+                "LAB-1",
+                "ROOM-2"
+              ],
+              "session_index": 2,
+              "sessions_per_week": 2,
+              "student_group": "BIO-A",
+              "subject_code": "BIO-P13",
+              "subject_id": "subj_4dcc524d84e1420ebb8d8f92c3557176",
+              "teacher_id": "teacher"
+            }
+          ],
+          "unscheduled": [],
+          "committed_series": [
+            "ttseries_ed50252e400f4b9788c12d4190d6fe19",
+            "ttseries_97d28665e8534adfa196b12ee8cf8d05"
+          ],
+          "planned_sessions_per_week": 2
+        },
+        "entries": 6
+      }
+    },
+    {
+      "name": "timetable_incomplete_commit_blocked",
+      "passed": true,
+      "detail": {
+        "before": 6,
+        "after": 6
+      }
+    },
+    {
+      "name": "notification_digest_policy",
+      "passed": true,
+      "detail": {
+        "recipient_id": "student",
+        "event_type": "assignment_due",
+        "channel": "in_app",
+        "decision": "daily_digest",
+        "enabled": true,
+        "requested_at": "2026-07-28T23:30:00+00:00",
+        "available_at": "2026-07-29T08:00:00+00:00",
+        "preference": {
+          "id": "notify_pref_d0b01b742ffe4da29f136132769767e6",
+          "institution_id": "inst_66d52cdfb7c4479a82418be50d968cb7",
+          "user_id": "student",
+          "event_type": "assignment_due",
+          "channel": "in_app",
+          "enabled": 1,
+          "digest_mode": "daily",
+          "quiet_start": "22:00",
+          "quiet_end": "07:00",
+          "created_at": "2026-07-28T20:31:29.356217+00:00",
+          "updated_at": "2026-07-28T20:31:29.356217+00:00"
+        }
+      }
+    },
+    {
+      "name": "notification_idempotency",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "notification_suppression",
+      "passed": true,
+      "detail": {
+        "state": "suppressed",
+        "policy_event_id": "npolicy_2579a70440944227964114b50771f462",
+        "plan": {
+          "recipient_id": "student",
+          "event_type": "marketing",
+          "channel": "in_app",
+          "decision": "suppressed",
+          "enabled": false,
+          "requested_at": "2026-07-28T20:31:29.422593+00:00",
+          "available_at": "2026-07-28T20:31:29.422593+00:00",
+          "preference": {
+            "id": "notify_pref_d101640a731b414da77d172d1fe0004b",
+            "institution_id": "inst_66d52cdfb7c4479a82418be50d968cb7",
+            "user_id": "student",
+            "event_type": "marketing",
+            "channel": "in_app",
+            "enabled": 0,
+            "digest_mode": "instant",
+            "quiet_start": "",
+            "quiet_end": "",
+            "created_at": "2026-07-28T20:31:29.407331+00:00",
+            "updated_at": "2026-07-28T20:31:29.407331+00:00"
+          }
+        }
+      }
+    },
+    {
+      "name": "notification_dead_letter_requeue",
+      "passed": true,
+      "detail": {
+        "requeued": 1,
+        "ids": [
+          "nout_8832e643e26c48edab2b9cd62d1309b7"
+        ]
+      }
+    },
+    {
+      "name": "retention_preview",
+      "passed": true,
+      "detail": {
+        "id": "lifecycle_928ca89e58c24ac8b9e9856ffc8b059a",
+        "institution_id": "inst_66d52cdfb7c4479a82418be50d968cb7",
+        "data_class": "notifications",
+        "action": "archive",
+        "cutoff_at": "2026-07-27T20:31:29.478103+00:00",
+        "dry_run": 1,
+        "candidate_count": 1,
+        "affected_count": 0,
+        "archive_path": "",
+        "archive_sha256": "",
+        "state": "completed",
+        "detail_json": "{\"confirmation_required\":\"EXECUTE notifications 1\",\"legal_hold\":false}",
+        "created_by": "admin",
+        "created_at": "2026-07-28T20:31:29.480270+00:00"
+      }
+    },
+    {
+      "name": "retention_verified_archive",
+      "passed": true,
+      "detail": {
+        "id": "lifecycle_7dbecd10946a4b8489e65b1d6f243e03",
+        "institution_id": "inst_66d52cdfb7c4479a82418be50d968cb7",
+        "data_class": "notifications",
+        "action": "archive",
+        "cutoff_at": "2026-07-27T20:31:29.494956+00:00",
+        "dry_run": 0,
+        "candidate_count": 1,
+        "affected_count": 1,
+        "archive_path": "/tmp/biointel-phase13-verify-r60qo27g/education/retention_archives/inst_66d52cdfb7c4479a82418be50d968cb7/notifications-20260728T203129Z.jsonl",
+        "archive_sha256": "8601b872db2731f96ea01f8bf81edf6ee6ddf475f295dbce2c8abc470ffcccb4",
+        "state": "completed",
+        "detail_json": "{\"confirmation_required\":\"EXECUTE notifications 1\",\"legal_hold\":false}",
+        "created_by": "admin",
+        "created_at": "2026-07-28T20:31:29.497084+00:00"
+      }
+    },
+    {
+      "name": "retention_legal_hold",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "support_bundle_redacted",
+      "passed": true,
+      "detail": {
+        "id": "support_74525a158455402d843f870e1d21c292",
+        "output_path": "/tmp/biointel-phase13-verify-r60qo27g/education/support_bundles/inst_66d52cdfb7c4479a82418be50d968cb7/biointel-support-20260728T203129Z.zip",
+        "sha256": "b7b7cc09b6c9c15b0e101962487015484709fcccbc9af131508d9e0f975106ee",
+        "size_bytes": 1742,
+        "manifest": {
+          "schema": "biointel.support-bundle.v1",
+          "institution_id": "inst_66d52cdfb7c4479a82418be50d968cb7",
+          "generated_at": "2026-07-28T20:31:29.562915+00:00",
+          "files": [
+            {
+              "name": "health.json",
+              "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+              "size_bytes": 2
+            },
+            {
+              "name": "incidents.json",
+              "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+              "size_bytes": 2
+            },
+            {
+              "name": "qualifications.json",
+              "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+              "size_bytes": 2
+            },
+            {
+              "name": "security-summary.json",
+              "sha256": "9dc70dd5e69894e0dcc7c167edeac0c3c15c01682b3d32433c2dd4fc255815b8",
+              "size_bytes": 442
+            },
+            {
+              "name": "migrations.json",
+              "sha256": "5b971329e24236d2bd640029eeba48271eb358847e4da945847f7a10e89949eb",
+              "size_bytes": 1000
+            },
+            {
+              "name": "runtime.json",
+              "sha256": "f7304877f42ba0cb9da44b4d15b4e58168be75d897cf0825fda3773425f67ed3",
+              "size_bytes": 150
+            }
+          ]
+        },
+        "contains_personal_content": false
+      }
+    },
+    {
+      "name": "support_bundle_verified",
+      "passed": true,
+      "detail": {
+        "id": "support_74525a158455402d843f870e1d21c292",
+        "valid": true,
+        "errors": [],
+        "expected_sha256": "b7b7cc09b6c9c15b0e101962487015484709fcccbc9af131508d9e0f975106ee",
+        "actual_sha256": "b7b7cc09b6c9c15b0e101962487015484709fcccbc9af131508d9e0f975106ee"
+      }
+    },
+    {
+      "name": "phase13_honest_posture",
+      "passed": true,
+      "detail": {
+        "institution_id": "inst_66d52cdfb7c4479a82418be50d968cb7",
+        "migration": "education_phase13_local_autonomy_v1",
+        "counts": {
+          "approved_rag_documents": 1,
+          "rag_chunks": 4,
+          "timetable_runs": 2,
+          "failed_notifications": 0,
+          "verified_backups": 0,
+          "open_incidents": 0
+        },
+        "local_controls": {
+          "mfa_and_secure_sessions": true,
+          "oidc_pkce_rs256_adapter": true,
+          "postgresql_transactional_migration_adapter": true,
+          "s3_minio_upload_adapter": true,
+          "encrypted_full_backup": true,
+          "multi_format_rag_ingestion": true,
+          "permission_filtered_citation_retrieval": true,
+          "automatic_timetable_solver": true,
+          "notification_policy_and_digest": true,
+          "retention_archive_and_execution": true,
+          "redacted_support_bundle": true
+        },
+        "local_control_coverage_percent": 100.0,
+        "external_posture": {
+          "institution_id": "inst_66d52cdfb7c4479a82418be50d968cb7",
+          "local_code_completion_score": 48,
+          "governed_exams": 0,
+          "originality_fingerprints": 0,
+          "approved_rag_documents": 1,
+          "ai_model_profiles": 0,
+          "delivery_providers": 0,
+          "database_migration_exports": 0,
+          "external_dependencies": {
+            "dependencies": {
+              "postgresql": {
+                "module": "psycopg",
+                "available": false
+              },
+              "s3": {
+                "module": "boto3",
+                "available": true
+              },
+              "redis": {
+                "module": "redis",
+                "available": false
+              },
+              "celery": {
+                "module": "celery",
+                "available": false
+              },
+              "cryptography": {
+                "module": "cryptography",
+                "available": true
+              }
+            },
+            "database_profiles": {
+              "institution_id": "inst_66d52cdfb7c4479a82418be50d968cb7",
+              "profiles": [],
+              "postgresql_configuration_ready": false,
+              "postgresql_network_verified": false,
+              "production_database_verified": false
+            },
+            "storage_profiles": [],
+            "integrations": [],
+            "qualification_rule": "Configured is not equivalent to live verified. External credentials, network access and provider-side tests are required."
+          },
+          "external_qualification_still_required": [
+            "Signed Windows MSI/EXE and SmartScreen reputation",
+            "Live identity-provider credentials and provider-side approval",
+            "Live PostgreSQL/S3/MinIO migration and failover drills",
+            "Independent penetration, load and WCAG audits",
+            "Real institution pilot and legal/compliance approval"
+          ]
+        },
+        "truthfulness": "Local/code-level controls are implemented. Third-party credentials, code-signing reputation and independent audits remain externally qualified evidence, never synthetic success."
+      }
+    },
+    {
+      "name": "phase13_page",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "phase13_ui",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "phase13_worker",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "phase13_navigation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "phase13_api_contract",
+      "passed": true,
+      "detail": [
+        "phase13/rag-documents/{document_id}/ingest",
+        "phase13/rag-search",
+        "phase13/rag-context",
+        "phase13/timetable-plans",
+        "phase13/notifications",
+        "phase13/notification-digests",
+        "phase13/retention/{data_class}",
+        "phase13/support-bundles",
+        "phase13/posture"
+      ]
+    }
+  ]
+}

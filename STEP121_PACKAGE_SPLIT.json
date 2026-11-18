@@ -1,0 +1,13 @@
+{
+  "schema": "biointel.step121.package-split.v1",
+  "version": "12.1.0",
+  "parts": [
+    "BioIntel-AI-Step121-SELECTED-MODULE-SCIENTIFIC-DEPTH-Part1.zip",
+    "BioIntel-AI-Step121-SELECTED-MODULE-SCIENTIFIC-DEPTH-Part2.zip",
+    "BioIntel-AI-Step121-SELECTED-MODULE-SCIENTIFIC-DEPTH-Part3.zip",
+    "BioIntel-AI-Step121-SELECTED-MODULE-SCIENTIFIC-DEPTH-Part4.zip"
+  ],
+  "extraction_root": "BioIntel-AI",
+  "instructions": "Extract all four ZIP parts into the same destination folder, then run VERIFY_STEP121_WINDOWS.bat.",
+  "generated_at_utc": "2026-07-11T11:55:17+00:00"
+}

@@ -1,0 +1,13 @@
+{
+  "schema": "biointel.education-science-academy.windows-four-part.v1",
+  "product_version": "15.6.0",
+  "release_step": 220,
+  "physical_archive_count": 4,
+  "archive_root": "BioIntel-Step220",
+  "python_runtime": "CPython 3.11.9 x64",
+  "legacy_step220_marker_count": 5,
+  "install_entrypoint": "INSTALL_WINDOWS.bat",
+  "run_both_entrypoint": "RUN_BOTH_WINDOWS.bat",
+  "external_sources_default": "configuration-required",
+  "calls_turn_sfu_recording_transcription": "configuration-required"
+}

@@ -1,0 +1,53 @@
+{
+  "schema": "biointel.step173.test-results.v1",
+  "status": "passed",
+  "version": "14.5.0",
+  "groups": [
+    {
+      "group": "Step159-163 compatibility",
+      "passed": 29,
+      "failed": 0
+    },
+    {
+      "group": "Step164 compatibility",
+      "passed": 5,
+      "failed": 0
+    },
+    {
+      "group": "Step165 compatibility",
+      "passed": 4,
+      "failed": 0
+    },
+    {
+      "group": "Step166 compatibility",
+      "passed": 5,
+      "failed": 0,
+      "warnings": 2
+    },
+    {
+      "group": "Step167 compatibility",
+      "passed": 6,
+      "failed": 0
+    },
+    {
+      "group": "Step168 compatibility",
+      "passed": 5,
+      "failed": 0
+    },
+    {
+      "group": "Step169 future-compatible regression",
+      "passed": 4,
+      "failed": 0
+    },
+    {
+      "group": "Step170-173 focused qualification",
+      "passed": 23,
+      "failed": 0
+    }
+  ],
+  "selected_tests_passed": 81,
+  "selected_tests_failed": 0,
+  "full_native_modules_passed": 80,
+  "full_native_modules_failed": 0,
+  "incomplete_monolithic_runs_claimed_as_passed": false
+}

@@ -1,0 +1,94 @@
+{
+  "schema": "biointel.education.official-sources.v1",
+  "reviewed_at": "2026-08-01",
+  "sources": [
+    {
+      "key": "udise_plus",
+      "name": "UDISE+",
+      "authority": "Ministry of Education, Government of India",
+      "scope": "Schools and public school statistics",
+      "official_url": "https://dashboard.udiseplus.gov.in/",
+      "adapter": "authorised_file_import",
+      "enabled_by_default": false,
+      "verification_policy": "source_asserted_pending_review",
+      "limitations": "Use public downloads or authorised exports only; never bypass login, CAPTCHA, or data-sharing controls."
+    },
+    {
+      "key": "cbse_saras",
+      "name": "CBSE SARAS school directory",
+      "authority": "Central Board of Secondary Education",
+      "scope": "CBSE affiliation directory",
+      "official_url": "https://saras.cbse.gov.in/saras/AffiliatedList/ListOfSchdirReportNew",
+      "adapter": "authorised_file_import",
+      "enabled_by_default": false,
+      "verification_policy": "source_asserted_pending_review",
+      "limitations": "Affiliation status is time-sensitive; retain retrieval date and source status."
+    },
+    {
+      "key": "cisce_locator",
+      "name": "CISCE school locator",
+      "authority": "Council for the Indian School Certificate Examinations",
+      "scope": "CISCE affiliated schools",
+      "official_url": "https://locate.cisce.org/result",
+      "adapter": "authorised_file_import",
+      "enabled_by_default": false,
+      "verification_policy": "source_asserted_pending_review",
+      "limitations": "Import only through a lawful public download or institution-authorised file; no automated circumvention."
+    },
+    {
+      "key": "kvs_directory",
+      "name": "Directory of Kendriya Vidyalayas",
+      "authority": "Kendriya Vidyalaya Sangathan, Ministry of Education",
+      "scope": "Kendriya Vidyalaya directory",
+      "official_url": "https://kvsangathan.nic.in/en/directory-of-kvs/",
+      "adapter": "authorised_file_import",
+      "enabled_by_default": false,
+      "verification_policy": "source_asserted_pending_review",
+      "limitations": "Directory counts and school details change; record dataset year and retrieval timestamp."
+    },
+    {
+      "key": "aishe_directory",
+      "name": "AISHE higher education institution directory",
+      "authority": "Department of Higher Education, Ministry of Education",
+      "scope": "Universities, colleges, and standalone higher education institutions",
+      "official_url": "https://dashboard.aishe.gov.in/",
+      "adapter": "authorised_file_import",
+      "enabled_by_default": false,
+      "verification_policy": "source_asserted_pending_review",
+      "limitations": "Survey year matters; do not imply current recognition from historical AISHE presence alone."
+    },
+    {
+      "key": "ugc_directory",
+      "name": "UGC institution directory",
+      "authority": "University Grants Commission",
+      "scope": "Recognised universities, colleges, and regulatory status",
+      "official_url": "https://www.ugc.gov.in/universitydetails/",
+      "adapter": "authorised_file_import",
+      "enabled_by_default": false,
+      "verification_policy": "source_asserted_pending_review",
+      "limitations": "Recognition and violation lists are time-sensitive and must retain retrieval date."
+    },
+    {
+      "key": "aicte_approved",
+      "name": "AICTE approved institutes",
+      "authority": "All India Council for Technical Education",
+      "scope": "Approved technical institutions and programmes",
+      "official_url": "https://facilities.aicte-india.org/dashboard/pages/angulardashboard.php#!/approved",
+      "adapter": "authorised_file_import",
+      "enabled_by_default": false,
+      "verification_policy": "source_asserted_pending_review",
+      "limitations": "Approval is academic-year and programme specific; import the official year with every record."
+    },
+    {
+      "key": "nirf_rankings",
+      "name": "National Institutional Ranking Framework",
+      "authority": "Ministry of Education, Government of India",
+      "scope": "Participating and ranked institutions",
+      "official_url": "https://www.nirfindia.org/Rankings/2025/OverallRanking.html",
+      "adapter": "authorised_file_import",
+      "enabled_by_default": false,
+      "verification_policy": "source_asserted_pending_review",
+      "limitations": "NIRF participation or rank is not a recognition decision; keep ranking year and category."
+    }
+  ]
+}

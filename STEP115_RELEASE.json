@@ -1,0 +1,17 @@
+{
+  "release": "Step 115",
+  "version": "11.6.0",
+  "name": "Advanced Non-Chart Scientific Visuals & Module Decision Workspaces",
+  "advanced_non_chart_visuals": 15,
+  "module_specific_workspaces": 13,
+  "affected_pages_runtime_tested": 56,
+  "excluded_modules_preserved": [
+    "DTI Predictor",
+    "DTI Validation Evidence Center",
+    "LIMS, ELN & Sample Chain of Custody",
+    "Lab Instrument Import Center",
+    "Instrument Integration Hub"
+  ],
+  "performance_model": "Lazy rendering; heavy image/canvas generation occurs only after explicit user activation.",
+  "boundary": "Visual review support does not replace specialist scientific engines, validated clinical interpretation, reference databases or regulated procedures."
+}

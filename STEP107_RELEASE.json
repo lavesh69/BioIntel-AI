@@ -1,0 +1,21 @@
+{
+  "release": "Step 107",
+  "version": "10.7.0",
+  "name": "Scientific Visual Excellence & Performance Optimization",
+  "supersedes": "10.6.0 Scientific Workbench UI",
+  "scientific_modules_with_visual_suites": 35,
+  "visuals_per_scientific_module": 5,
+  "module_specific_visual_definitions": 175,
+  "legacy_pages_visually_upgraded": 13,
+  "platform_visual_explorers": 7,
+  "render_strategy": "One selected interactive visual rendered at a time to reduce rerun cost and memory pressure.",
+  "export_support": [
+    "SVG modebar export",
+    "underlying CSV",
+    "filtered result export",
+    "complete analysis bundle"
+  ],
+  "upload_limit_mb": 1024,
+  "interactive_threshold_mb": 100,
+  "release_boundary": "Visuals are exploratory scientific aids; clinical, diagnostic and regulated interpretations require validated methods, current databases and independent review."
+}

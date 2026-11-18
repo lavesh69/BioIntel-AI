@@ -1,0 +1,59 @@
+BioIntel AI 15.6.0 - Step206 Engine Platform Integration (V19.6)
+================================================================================
+
+CLEAN INSTALL OR SAME-VERSION REPAIR
+1. Create one NEW empty folder. Paths containing spaces are supported.
+2. Put all five matching V19.6 ZIP files in that folder.
+3. Extract all four ZIPs into the same destination and allow the common
+   BioIntel-AI-15.6.0-Step206-WINDOWS-V19.6 folder to merge.
+4. Open the merged folder.
+5. Run INSTALL_WINDOWS.bat.
+6. After installation succeeds, run RUN_BOTH_WINDOWS.bat.
+
+Do not mix V19.6 parts with V19.5 or older ZIP parts. Do not launch internal Python
+scripts manually. The required user workflow remains only the two BAT files above.
+
+PYTHON AND OFFLINE CORE
+- Required: 64-bit CPython 3.11.x exactly.
+- INSTALL_WINDOWS.bat detects it without depending only on PATH.
+- The core scientific Python environment and supported format-adapter wheels are
+  installed from the bundled SHA-256-verified offline wheelhouse.
+- The app remains usable when optional external engines are absent.
+
+ENGINE CONTROL CENTER
+- The Engine Control Center registers 76 specialist engines and 12 advanced adapters.
+- Installed, available, blocked, unqualified and qualified-ready states are distinct.
+- No external engine is labelled qualified until exact artifact/licence hashes and
+  positive plus negative target-machine smoke evidence pass.
+- WSL2, GPU, provider-authorized assets, reference databases and model weights are
+  shown with explicit requirements and blockers.
+- Integrity-checked engine packs can be inspected, installed, repaired and removed.
+- INSTALL_ALL_ENGINES_WINDOWS.bat is an optional operator-approved network route; it
+  is not required for the offline core and never bypasses restricted licences/assets.
+
+BIOINTEL LIVE WORKSPACE
+- Personal Local Mode and trusted-LAN collaboration from V19.5 are retained.
+- Presence uses safe aliases/metadata rather than raw scientific uploads.
+- Record locks, revisions, roles, comments, reviews, annotations, audit and backup
+  continue to work independently of optional external engines.
+
+AUTOMATIC CHECKS
+- Exact four-part Step206 extraction markers
+- Critical source and release identity
+- SHA-256 source manifest and Windows wheelhouse manifest
+- Folder write access, free disk and path safety
+- Scientific imports, Engine Control Center bootstrap and startup verification
+- Managed Desktop/Start Menu launcher refresh
+- Native Windows UI, API, worker, SQLite and Streamlit readiness before activation
+
+OPTIONAL SERVICES
+Ollama, SearXNG, external websites, external scientific executables, WSL2 engines,
+PostgreSQL, Redis, object storage, OIDC and observability are optional. Their absence
+must not block Personal Local Mode or the built-in offline scientific workflows.
+
+SCIENTIFIC BOUNDARY
+This package integrates software management and deterministic provisioning routes. It
+does not claim that all 76 third-party executables, licensed databases, large model
+weights or GPU workloads were run on this Linux builder. Target qualification occurs
+only on the actual Windows/WSL2 machine. Research software is not clinical certification,
+regulatory approval, wet-lab validation or independent scientific validation.

@@ -1,0 +1,11 @@
+version: 1
+data_sources: [chembl, bindingdb, pubchem_bioassay]
+feature_requirements:
+  molecular: [canonical_smiles, scaffold_id, molecular_hash]
+  protein: [uniprot_accession, sequence_hash, protein_cluster]
+  assay: [activity_type, standard_value, standard_units, relation, assay_id, organism]
+benchmark_splits: [cold_drug, cold_target, cold_both, scaffold, protein_cluster, temporal, external_source]
+negative_sampling:
+  explicit_inactives_preferred: true
+  random_unknowns_are_not_negatives: true
+  decoy_policy_documented: true

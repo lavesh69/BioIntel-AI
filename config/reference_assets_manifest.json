@@ -1,0 +1,138 @@
+{
+  "schema": "biointel.reference-assets.catalog.v1",
+  "release": "13.2.0",
+  "policy": {
+    "checksum_required_for_release": true,
+    "licence_acceptance_required": true,
+    "automatic_extraction_requires_safe_archive": true,
+    "large_assets_outside_application": true
+  },
+  "templates": [
+    {
+      "id": "ncbi-blast-db",
+      "provider": "NCBI",
+      "purpose": "BLAST reference database",
+      "auto_url": false,
+      "notes": "Choose the required named database and record the exact release."
+    },
+    {
+      "id": "kraken2-db",
+      "provider": "Kraken2 ecosystem",
+      "purpose": "Taxonomic classification database",
+      "auto_url": false,
+      "notes": "Database selection changes sensitivity, specificity and disk use."
+    },
+    {
+      "id": "busco-lineage",
+      "provider": "BUSCO/OrthoDB",
+      "purpose": "Assembly completeness lineage",
+      "auto_url": false,
+      "notes": "Select the lineage matching the organism."
+    },
+    {
+      "id": "ensembl-vep-cache",
+      "provider": "Ensembl",
+      "purpose": "Variant Effect Predictor cache",
+      "auto_url": false,
+      "notes": "Genome assembly and Ensembl release must match the VCF."
+    },
+    {
+      "id": "amrfinder-db",
+      "provider": "NCBI",
+      "purpose": "AMRFinderPlus reference database",
+      "auto_url": false,
+      "notes": "Use amrfinder_update and retain database version evidence."
+    },
+    {
+      "id": "clinvar-vcf",
+      "provider": "NCBI ClinVar",
+      "purpose": "Rare-disease variant assertions",
+      "auto_url": false,
+      "notes": "Record assembly, release date and review-status fields; do not treat conflicting assertions as resolved."
+    },
+    {
+      "id": "gnomad-sites",
+      "provider": "gnomAD",
+      "purpose": "Population allele-frequency reference",
+      "auto_url": false,
+      "notes": "Select the matching genome build and retain release metadata."
+    },
+    {
+      "id": "hpo-ontology",
+      "provider": "Human Phenotype Ontology",
+      "purpose": "Phenotype normalization and semantic matching",
+      "auto_url": false,
+      "notes": "Retain ontology release and disease-annotation release separately."
+    },
+    {
+      "id": "panelapp-panels",
+      "provider": "PanelApp",
+      "purpose": "Curated rare-disease gene panels",
+      "auto_url": false,
+      "notes": "Record panel version, confidence tier and jurisdiction."
+    },
+    {
+      "id": "mane-transcripts",
+      "provider": "NCBI/Ensembl MANE",
+      "purpose": "Transcript prioritization",
+      "auto_url": false,
+      "notes": "Match reference assembly and transcript release."
+    },
+    {
+      "id": "proteinmpnn-weights",
+      "provider": "ProteinMPNN project",
+      "purpose": "Protein sequence-design model weights",
+      "auto_url": false,
+      "notes": "Record commit, weight hash, licence and runtime compatibility."
+    },
+    {
+      "id": "rfdiffusion-weights",
+      "provider": "RFdiffusion project",
+      "purpose": "Protein backbone-design model weights",
+      "auto_url": false,
+      "notes": "GPU runtime, model checkpoint, licence and hash are required."
+    },
+    {
+      "id": "colabfold-databases",
+      "provider": "ColabFold/AlphaFold ecosystem",
+      "purpose": "Protein structure-prediction sequence databases",
+      "auto_url": false,
+      "notes": "Large asset; manage outside the application and record database dates."
+    },
+    {
+      "id": "vg-graph-index",
+      "provider": "User-built",
+      "purpose": "GBZ/GCSA/XG graph indexes",
+      "auto_url": false,
+      "notes": "Bind index hashes to source graph, reference path and tool version."
+    },
+    {
+      "id": "resfinder-db",
+      "provider": "CGE ResFinder",
+      "purpose": "Antimicrobial-resistance screening",
+      "auto_url": false,
+      "notes": "Record database commit and organism-specific configuration."
+    },
+    {
+      "id": "card-db",
+      "provider": "CARD",
+      "purpose": "AMR ontology and reference sequences",
+      "auto_url": false,
+      "notes": "Check licence and release terms before local deployment."
+    },
+    {
+      "id": "vfdb-db",
+      "provider": "VFDB",
+      "purpose": "Virulence-factor screening",
+      "auto_url": false,
+      "notes": "Record release date and matching thresholds."
+    },
+    {
+      "id": "sbol-parts-library",
+      "provider": "User-curated/SynBioHub",
+      "purpose": "Validated synthetic-biology parts and chassis parameters",
+      "auto_url": false,
+      "notes": "Retain source, measurement context and evidence level for each part."
+    }
+  ]
+}

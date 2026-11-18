@@ -1,0 +1,3596 @@
+{
+  "domains": {
+    "Bioinformatics": 17,
+    "Discovery": 9,
+    "Lab Analytics": 7
+  },
+  "module_count": 33,
+  "modules": [
+    {
+      "accepted_formats": [
+        "FASTA",
+        "FA",
+        "FNA",
+        "FFN",
+        "FAA",
+        "GB/GBK",
+        "GFF/GTF"
+      ],
+      "domain": "Bioinformatics",
+      "evidence_boundary": "Sequence-derived features are computational evidence and do not establish biological function without curated or experimental confirmation.",
+      "features_added": [
+        "Streaming FASTA parser",
+        "Circular sequence mode",
+        "Six-frame ORF map",
+        "GFF/GTF feature import",
+        "Ambiguous-base error positions",
+        "Batch annotation export"
+      ],
+      "key": "sequence_analyzer",
+      "locked_source": false,
+      "native_formats": [
+        "FASTA",
+        "GenBank",
+        "GFF/GTF"
+      ],
+      "page_path": "pages/1_Sequence_Analyzer.py",
+      "python_packages": [],
+      "release_blockers": [
+        "Invalid molecule alphabet",
+        "Mixed coordinate systems",
+        "Unpinned annotation database",
+        "Functional claim lacks independent evidence"
+      ],
+      "stages": [
+        {
+          "key": "parse",
+          "label": "Streaming sequence parsing",
+          "mode": "built-in",
+          "purpose": "Parse large sequence records without loading the whole file into memory.",
+          "references": [],
+          "required_inputs": [
+            "Sequence file"
+          ],
+          "tools": [],
+          "validation_gate": "All records and identifiers validate"
+        },
+        {
+          "key": "type",
+          "label": "Molecule-type validation",
+          "mode": "built-in",
+          "purpose": "Detect DNA, RNA or protein and report ambiguous symbols with exact positions.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": "Ambiguous-symbol policy reviewed"
+        },
+        {
+          "key": "features",
+          "label": "ORF, motif and feature mapping",
+          "mode": "built-in",
+          "purpose": "Map six-frame ORFs, motifs, CDS/GFF features and circular wrap-around hits.",
+          "references": [
+            "Optional feature annotation"
+          ],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": "Coordinate system and strand reviewed"
+        },
+        {
+          "key": "annotation",
+          "label": "External annotation",
+          "mode": "adapter",
+          "purpose": "Run similarity or domain annotation with pinned databases.",
+          "references": [
+            "BLAST/HMM database"
+          ],
+          "required_inputs": [],
+          "tools": [
+            "blastn",
+            "hmmscan"
+          ],
+          "validation_gate": "Database version and hit thresholds recorded"
+        },
+        {
+          "key": "confirm",
+          "label": "Biological confirmation",
+          "mode": "external-validation",
+          "purpose": "Confirm functional claims with curated evidence or experiment.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": "Independent evidence attached"
+        }
+      ],
+      "statistical_requirements": [
+        "Record-level quality rules",
+        "Coordinate and strand consistency",
+        "Multiple-testing control for motif scans",
+        "Database-release provenance"
+      ],
+      "summary": "Streaming DNA/RNA/protein inspection with circular-sequence, ORF, motif and annotation-aware quality controls.",
+      "tags": [
+        "sequence",
+        "fasta",
+        "orf",
+        "motif",
+        "circular"
+      ],
+      "title": "Sequence Analyzer"
+    },
+    {
+      "accepted_formats": [
+        "FASTA",
+        "FA",
+        "ALN",
+        "CLUSTAL",
+        "MSA"
+      ],
+      "domain": "Bioinformatics",
+      "evidence_boundary": "Similarity and alignment do not by themselves establish orthology, homology direction or conserved function.",
+      "features_added": [
+        "MAFFT protected plan",
+        "Codon-aware comparison contract",
+        "Dot-plot-ready coordinate export",
+        "Alignment confidence summary",
+        "Chunked long-sequence mode",
+        "Substitution-matrix profiles"
+      ],
+      "key": "sequence_comparison",
+      "locked_source": false,
+      "native_formats": [
+        "FASTA",
+        "ALN",
+        "CLUSTAL"
+      ],
+      "page_path": "pages/2_Sequence_Comparison.py",
+      "python_packages": [],
+      "release_blockers": [
+        "Mixed molecule types",
+        "No alignment provenance",
+        "Very low aligned coverage",
+        "Evolutionary conclusion without support"
+      ],
+      "stages": [
+        {
+          "key": "validate",
+          "label": "Input and alphabet validation",
+          "mode": "built-in",
+          "purpose": "Validate sequence type, lengths, duplicate identifiers and gap conventions.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": ""
+        },
+        {
+          "key": "pairwise",
+          "label": "Pairwise alignment",
+          "mode": "built-in",
+          "purpose": "Run bounded global/local alignment with identity, mismatch and gap statistics.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": ""
+        },
+        {
+          "key": "msa",
+          "label": "Multiple sequence alignment",
+          "mode": "adapter",
+          "purpose": "Execute MAFFT with safe presets and captured version/log evidence.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [
+            "mafft"
+          ],
+          "validation_gate": "Alignment log and sequence count reviewed"
+        },
+        {
+          "key": "synteny",
+          "label": "Large-sequence and synteny comparison",
+          "mode": "adapter",
+          "purpose": "Use minimap2 for long sequences and preserve mapping quality.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [
+            "minimap2"
+          ],
+          "validation_gate": "Mapping quality and coverage thresholds reviewed"
+        },
+        {
+          "key": "interpret",
+          "label": "Evolutionary interpretation",
+          "mode": "external-validation",
+          "purpose": "Confirm orthology, recombination and functional implications with appropriate analyses.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": "Independent evolutionary evidence attached"
+        }
+      ],
+      "statistical_requirements": [
+        "Alignment method prespecified",
+        "Gap penalty provenance",
+        "Sequence redundancy review",
+        "Bootstrap or confidence support where relevant"
+      ],
+      "summary": "Pairwise, multiple, codon-aware and large-sequence comparison with explicit alignment provenance.",
+      "tags": [
+        "alignment",
+        "mafft",
+        "synteny",
+        "dot plot"
+      ],
+      "title": "Sequence Comparison"
+    },
+    {
+      "accepted_formats": [
+        "FASTA",
+        "GFA",
+        "GFF",
+        "GTF",
+        "VCF"
+      ],
+      "domain": "Bioinformatics",
+      "evidence_boundary": "Graph paths and bubbles are hypotheses until assembly quality, path recovery and independent variant validation are demonstrated.",
+      "features_added": [
+        "Minigraph/VG protected plans",
+        "ODGI index plan",
+        "Sample-path extraction",
+        "Bubble classification",
+        "Core/accessory support",
+        "Graph-version comparison",
+        "Incremental sample manifest"
+      ],
+      "key": "pangenome",
+      "locked_source": false,
+      "native_formats": [
+        "GFA",
+        "FASTA",
+        "GFF/GTF",
+        "VCF/BCF"
+      ],
+      "page_path": "pages/94_Pangenome_Variation_Graph_Studio.py",
+      "python_packages": [],
+      "release_blockers": [
+        "Unvalidated assemblies",
+        "Missing reference path",
+        "Graph index failure",
+        "No held-out validation"
+      ],
+      "stages": [
+        {
+          "key": "assembly_qc",
+          "label": "Assembly-set QC",
+          "mode": "built-in",
+          "purpose": "Validate assembly identities, lengths, contamination metadata and reference-path choice.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": ""
+        },
+        {
+          "key": "graph",
+          "label": "Graph construction",
+          "mode": "adapter",
+          "purpose": "Build a pangenome graph with Minigraph or VG using bounded threads and immutable inputs.",
+          "references": [
+            "Reference path"
+          ],
+          "required_inputs": [],
+          "tools": [
+            "minigraph",
+            "vg"
+          ],
+          "validation_gate": "Graph build log and reference path retained"
+        },
+        {
+          "key": "index",
+          "label": "Graph indexing and normalization",
+          "mode": "adapter",
+          "purpose": "Index and normalize graph components for path and region queries.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [
+            "odgi",
+            "vg"
+          ],
+          "validation_gate": "Index checks and path recovery pass"
+        },
+        {
+          "key": "variants",
+          "label": "Graph bubble and variant analysis",
+          "mode": "built-in",
+          "purpose": "Classify bubbles, core/accessory content and sample support from graph summaries.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": ""
+        },
+        {
+          "key": "benchmark",
+          "label": "Independent graph benchmark",
+          "mode": "external-validation",
+          "purpose": "Validate graph paths and variants against held-out assemblies or truth sets.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": "Benchmark acceptance criteria met"
+        }
+      ],
+      "statistical_requirements": [
+        "Assembly quality thresholds",
+        "Reference-path declaration",
+        "Path recovery rate",
+        "Held-out graph benchmark"
+      ],
+      "summary": "Graph construction, indexing, sample-path comparison and graph-variant planning with bounded external execution.",
+      "tags": [
+        "pangenome",
+        "gfa",
+        "minigraph",
+        "vg",
+        "odgi"
+      ],
+      "title": "Pangenome & Variation Graph Studio"
+    },
+    {
+      "accepted_formats": [
+        "FASTQ",
+        "FASTQ.GZ",
+        "FASTA",
+        "GFA",
+        "PAF",
+        "BAM/CRAM"
+      ],
+      "domain": "Bioinformatics",
+      "evidence_boundary": "An assembly is not T2T merely because it is highly contiguous; structural correctness, completeness and orthogonal validation remain required.",
+      "features_added": [
+        "Flye/hifiasm/Canu plans",
+        "Racon/Medaka polishing chain",
+        "Haplotig-purge plan",
+        "BUSCO/QUAST/Merqury gates",
+        "Checkpoint resume",
+        "Disk/RAM estimate",
+        "Telomere/centromere checklist"
+      ],
+      "key": "long_read",
+      "locked_source": false,
+      "native_formats": [
+        "FASTQ",
+        "FASTA",
+        "GFA",
+        "PAF",
+        "BAM/CRAM"
+      ],
+      "page_path": "pages/95_Long_Read_Assembly_T2T_Studio.py",
+      "python_packages": [],
+      "release_blockers": [
+        "Insufficient coverage",
+        "No polishing evidence",
+        "No completeness/contamination results",
+        "T2T claim lacks orthogonal support"
+      ],
+      "stages": [
+        {
+          "key": "read_qc",
+          "label": "Platform-aware read QC",
+          "mode": "built-in",
+          "purpose": "Inspect read length, quality, yield and estimated coverage using bounded streaming.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": ""
+        },
+        {
+          "key": "assemble",
+          "label": "Primary assembly",
+          "mode": "adapter",
+          "purpose": "Run Flye, hifiasm or Canu with platform-aware presets and checkpoint manifests.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [
+            "flye",
+            "hifiasm",
+            "canu"
+          ],
+          "validation_gate": "Assembler logs and resource use retained"
+        },
+        {
+          "key": "polish",
+          "label": "Polishing and haplotig review",
+          "mode": "adapter",
+          "purpose": "Run minimap2/Racon/Medaka and optional purge_dups while preserving each iteration.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [
+            "minimap2",
+            "racon",
+            "medaka_consensus",
+            "purge_dups"
+          ],
+          "validation_gate": "Polishing improvement and haplotig decisions reviewed"
+        },
+        {
+          "key": "quality",
+          "label": "Completeness and consensus QC",
+          "mode": "adapter",
+          "purpose": "Run QUAST, BUSCO and Merqury with pinned lineage/k-mer assets.",
+          "references": [
+            "BUSCO lineage",
+            "K-mer database"
+          ],
+          "required_inputs": [],
+          "tools": [
+            "quast",
+            "busco",
+            "merqury.sh"
+          ],
+          "validation_gate": "Completeness, QV and contamination gates pass"
+        },
+        {
+          "key": "t2t",
+          "label": "T2T confirmation",
+          "mode": "external-validation",
+          "purpose": "Review telomeres, centromeres, repeats and structural correctness with orthogonal evidence.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": "T2T acceptance package approved"
+        }
+      ],
+      "statistical_requirements": [
+        "Coverage and read-quality thresholds",
+        "Iteration-wise QV improvement",
+        "Contamination review",
+        "Structural misassembly evidence"
+      ],
+      "summary": "Checkpointed long-read assembly orchestration from read QC through polishing, phasing and T2T release checks.",
+      "tags": [
+        "long read",
+        "flye",
+        "hifiasm",
+        "busco",
+        "merqury"
+      ],
+      "title": "Long-Read Assembly & T2T Studio"
+    },
+    {
+      "accepted_formats": [
+        "CSV",
+        "TSV",
+        "MTX",
+        "H5AD",
+        "10X H5"
+      ],
+      "domain": "Bioinformatics",
+      "evidence_boundary": "Screen hits and Perturb-seq states are prioritization evidence, not confirmed gene function without orthogonal validation.",
+      "features_added": [
+        "MAGeCK/BAGEL protected plans",
+        "Guide efficiency QC",
+        "Control-gene diagnostics",
+        "Copy-number covariate contract",
+        "Guide-to-cell uncertainty",
+        "Multi-guide interaction matrix",
+        "Perturbation pathway handoff"
+      ],
+      "key": "crispr_screen",
+      "locked_source": false,
+      "native_formats": [
+        "CSV/TSV",
+        "MTX",
+        "H5AD",
+        "10X matrices"
+      ],
+      "page_path": "pages/97_CRISPR_Screen_PerturbSeq_Analytics.py",
+      "python_packages": [],
+      "release_blockers": [
+        "No controls",
+        "Insufficient guide coverage",
+        "No biological replication",
+        "Hit lacks orthogonal validation"
+      ],
+      "stages": [
+        {
+          "key": "guide_qc",
+          "label": "Guide/library QC",
+          "mode": "built-in",
+          "purpose": "Validate guide coverage, zero inflation, replicate balance and control-guide behavior.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": ""
+        },
+        {
+          "key": "screen",
+          "label": "Screen inference",
+          "mode": "adapter",
+          "purpose": "Run MAGeCK or BAGEL with explicit design and control sets.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [
+            "mageck",
+            "BAGEL.py"
+          ],
+          "validation_gate": "Replicate and control diagnostics pass"
+        },
+        {
+          "key": "bias",
+          "label": "Copy-number and batch adjustment",
+          "mode": "built-in",
+          "purpose": "Apply transparent covariate design and flag unsupported corrections.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": ""
+        },
+        {
+          "key": "perturbseq",
+          "label": "Perturb-seq assignment and state analysis",
+          "mode": "built-in",
+          "purpose": "Audit guide-to-cell assignment, multiplets and replicate-aware differential states.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": "Assignment uncertainty and biological replication reviewed"
+        },
+        {
+          "key": "validate",
+          "label": "Functional validation",
+          "mode": "external-validation",
+          "purpose": "Confirm hits with orthogonal perturbations or assays.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": "Independent hit confirmation attached"
+        }
+      ],
+      "statistical_requirements": [
+        "Biological replicate is the inference unit",
+        "FDR correction",
+        "Control-guide behavior",
+        "Copy-number and batch sensitivity"
+      ],
+      "summary": "Guide-count QC, replicate-aware screen models, copy-number correction and Perturb-seq assignment safeguards.",
+      "tags": [
+        "crispr",
+        "mageck",
+        "perturb-seq",
+        "screen"
+      ],
+      "title": "CRISPR Screen & Perturb-seq Analytics"
+    },
+    {
+      "accepted_formats": [
+        "FASTQ",
+        "FASTA",
+        "VCF",
+        "CSV/TSV metadata",
+        "Newick"
+      ],
+      "domain": "Bioinformatics",
+      "evidence_boundary": "Genomic proximity alone does not prove direct transmission; epidemiological context and qualified review are mandatory.",
+      "features_added": [
+        "Reference-aware SNP plan",
+        "MLST/cgMLST readiness",
+        "Gubbins recombination plan",
+        "IQ-TREE support",
+        "AMR/virulence overlay",
+        "Transmission uncertainty",
+        "Public-health export manifest"
+      ],
+      "key": "pathogen_outbreak",
+      "locked_source": false,
+      "native_formats": [
+        "FASTQ",
+        "FASTA",
+        "VCF/BCF",
+        "Newick"
+      ],
+      "page_path": "pages/98_Pathogen_Outbreak_Command_Center.py",
+      "python_packages": [],
+      "release_blockers": [
+        "Species/reference mismatch",
+        "Recombination not assessed",
+        "Low support tree",
+        "Direct-transmission claim without epidemiology"
+      ],
+      "stages": [
+        {
+          "key": "identity",
+          "label": "Sample identity and contamination QC",
+          "mode": "built-in",
+          "purpose": "Validate identifiers, metadata, coverage and contamination indicators.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": ""
+        },
+        {
+          "key": "typing",
+          "label": "Taxonomy and typing",
+          "mode": "adapter",
+          "purpose": "Run Kraken2/Mash/MLST with pinned databases.",
+          "references": [
+            "Taxonomy database",
+            "MLST schemes"
+          ],
+          "required_inputs": [],
+          "tools": [
+            "kraken2",
+            "mash",
+            "mlst"
+          ],
+          "validation_gate": "Species and scheme compatibility reviewed"
+        },
+        {
+          "key": "phylogeny",
+          "label": "Alignment, recombination and tree",
+          "mode": "adapter",
+          "purpose": "Run MAFFT/Gubbins/IQ-TREE with preserved logs and model settings.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [
+            "mafft",
+            "run_gubbins.py",
+            "iqtree3"
+          ],
+          "validation_gate": "Recombination mask and support values reviewed"
+        },
+        {
+          "key": "amr",
+          "label": "AMR and virulence overlay",
+          "mode": "adapter",
+          "purpose": "Run AMRFinderPlus/ResFinder and retain database versions.",
+          "references": [
+            "AMR/virulence database"
+          ],
+          "required_inputs": [],
+          "tools": [
+            "amrfinder",
+            "run_resfinder.py"
+          ],
+          "validation_gate": "Phenotype-genotype discordance reviewed"
+        },
+        {
+          "key": "public_health",
+          "label": "Public-health interpretation",
+          "mode": "external-validation",
+          "purpose": "Combine genomic, temporal and epidemiological evidence without asserting direct transmission from genetics alone.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": "Qualified review completed"
+        }
+      ],
+      "statistical_requirements": [
+        "Sampling bias",
+        "Cluster-threshold provenance",
+        "Bootstrap/support values",
+        "Epidemiological concordance"
+      ],
+      "summary": "Reference-aware consensus, typing, recombination masking and uncertainty-aware outbreak review.",
+      "tags": [
+        "outbreak",
+        "pathogen",
+        "gubbins",
+        "iqtree",
+        "amr"
+      ],
+      "title": "Pathogen Outbreak Genomics Command Center"
+    },
+    {
+      "accepted_formats": [
+        "VCF/BCF",
+        "PED",
+        "HPO/phenotype CSV",
+        "CNV/SV TSV"
+      ],
+      "domain": "Bioinformatics",
+      "evidence_boundary": "This workspace supports research interpretation and cannot independently issue a diagnosis or treatment recommendation.",
+      "features_added": [
+        "Build-aware normalization",
+        "ClinVar/gnomAD release contract",
+        "HPO similarity",
+        "Trio/pedigree segregation",
+        "Compound-heterozygous phasing",
+        "CNV/SV/repeat-expansion handoff",
+        "Reanalysis scheduler"
+      ],
+      "key": "rare_disease",
+      "locked_source": false,
+      "native_formats": [
+        "VCF/BCF",
+        "PED",
+        "BED",
+        "TSV"
+      ],
+      "page_path": "pages/100_Rare_Disease_Genome_Interpretation.py",
+      "python_packages": [],
+      "release_blockers": [
+        "Build/reference mismatch",
+        "Pedigree inconsistency",
+        "Unpinned clinical databases",
+        "No independent confirmation"
+      ],
+      "stages": [
+        {
+          "key": "normalize",
+          "label": "Variant normalization and build audit",
+          "mode": "adapter",
+          "purpose": "Normalize variants and verify reference build.",
+          "references": [
+            "Reference FASTA"
+          ],
+          "required_inputs": [],
+          "tools": [
+            "bcftools"
+          ],
+          "validation_gate": "Reference alleles and build validate"
+        },
+        {
+          "key": "annotate",
+          "label": "Clinical annotation",
+          "mode": "adapter",
+          "purpose": "Annotate with VEP/SnpEff and pinned ClinVar/gnomAD assets.",
+          "references": [
+            "ClinVar",
+            "gnomAD",
+            "Gene-disease source"
+          ],
+          "required_inputs": [],
+          "tools": [
+            "vep",
+            "snpEff"
+          ],
+          "validation_gate": "Database releases recorded"
+        },
+        {
+          "key": "inheritance",
+          "label": "Family and inheritance analysis",
+          "mode": "built-in",
+          "purpose": "Evaluate de-novo, recessive, compound-heterozygous, X-linked and mitochondrial models.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": ""
+        },
+        {
+          "key": "special",
+          "label": "CNV/SV, mosaic and repeat-expansion review",
+          "mode": "adapter",
+          "purpose": "Use caller-specific evidence and specialist tools where configured.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [
+            "whatshap",
+            "ExpansionHunter"
+          ],
+          "validation_gate": "Evidence type and uncertainty documented"
+        },
+        {
+          "key": "diagnostic",
+          "label": "Diagnostic review",
+          "mode": "external-validation",
+          "purpose": "Apply organization-approved ACMG/AMP review and independent confirmation.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": "Qualified diagnostic sign-off"
+        }
+      ],
+      "statistical_requirements": [
+        "Pedigree identity checks",
+        "Mendelian error rate",
+        "Population-frequency evidence",
+        "Evidence conflict review"
+      ],
+      "summary": "Pedigree-aware rare-variant prioritization with HPO, inheritance, CNV/SV and evidence-version controls.",
+      "tags": [
+        "rare disease",
+        "pedigree",
+        "hpo",
+        "acmg",
+        "vep"
+      ],
+      "title": "Rare Disease Genome Interpretation Board"
+    },
+    {
+      "accepted_formats": [
+        "FASTA",
+        "FASTQ",
+        "CSV/TSV sequences"
+      ],
+      "domain": "Bioinformatics",
+      "evidence_boundary": "Automated batch annotations require record-level QC and review before downstream biological interpretation.",
+      "features_added": [
+        "Per-record failure isolation",
+        "Duplicate sequence detection",
+        "Bounded parallel workers",
+        "Checkpoint resume",
+        "Failed-record export",
+        "Batch-to-batch comparison"
+      ],
+      "key": "batch_sequence",
+      "locked_source": false,
+      "native_formats": [
+        "FASTA",
+        "FASTQ",
+        "CSV/TSV"
+      ],
+      "page_path": "pages/16_Batch_Sequence_Analysis.py",
+      "python_packages": [],
+      "release_blockers": [
+        "High invalid-record rate",
+        "Unbounded parallelism",
+        "No database provenance",
+        "Unreviewed low-confidence annotations"
+      ],
+      "stages": [
+        {
+          "key": "preflight",
+          "label": "Batch preflight",
+          "mode": "built-in",
+          "purpose": "Validate record count, alphabet, identifiers, duplicates and resource estimate.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": ""
+        },
+        {
+          "key": "process",
+          "label": "Record-isolated processing",
+          "mode": "built-in",
+          "purpose": "Process each sequence independently so malformed records do not abort the batch.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": ""
+        },
+        {
+          "key": "annotate",
+          "label": "Optional batch annotation",
+          "mode": "adapter",
+          "purpose": "Run SeqKit/BLAST/MMseqs2 with bounded parallelism.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [
+            "seqkit",
+            "blastn",
+            "mmseqs"
+          ],
+          "validation_gate": "Database and worker count recorded"
+        },
+        {
+          "key": "resume",
+          "label": "Checkpoint and resume",
+          "mode": "built-in",
+          "purpose": "Persist completed/failed record IDs and retry only unresolved items.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": ""
+        },
+        {
+          "key": "review",
+          "label": "Batch review",
+          "mode": "external-validation",
+          "purpose": "Review low-confidence annotations and biological conclusions.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": "Manual review complete"
+        }
+      ],
+      "statistical_requirements": [
+        "Per-record QC",
+        "Failure-rate threshold",
+        "Duplicate policy",
+        "Annotation confidence"
+      ],
+      "summary": "Failure-isolated, resumable and parallel sequence analysis with duplicate detection and per-record provenance.",
+      "tags": [
+        "batch",
+        "fasta",
+        "parallel",
+        "resume"
+      ],
+      "title": "Batch Sequence Analysis"
+    },
+    {
+      "accepted_formats": [
+        "FASTQ",
+        "FASTQ.GZ",
+        "BAM/CRAM"
+      ],
+      "domain": "Bioinformatics",
+      "evidence_boundary": "QC metrics describe technical quality and do not guarantee biological representativeness or downstream validity.",
+      "features_added": [
+        "Disk-backed 1 GB processing",
+        "Paired-end synchronization",
+        "Adapter auto-detection",
+        "Fastp/FastQC/MultiQC plans",
+        "Host contamination plan",
+        "Lane aggregation",
+        "Before/after report"
+      ],
+      "key": "fastq_qc",
+      "locked_source": false,
+      "native_formats": [
+        "FASTQ",
+        "BAM/CRAM"
+      ],
+      "page_path": "pages/56_FASTQ_Genomics_QC.py",
+      "python_packages": [],
+      "release_blockers": [
+        "Pair desynchronization",
+        "Severe adapter/quality failure",
+        "No contamination reference",
+        "Sample suitability not reviewed"
+      ],
+      "stages": [
+        {
+          "key": "stream",
+          "label": "Streaming read QC",
+          "mode": "built-in",
+          "purpose": "Compute bounded read, base-quality, GC and length summaries without loading the full file.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": ""
+        },
+        {
+          "key": "trim",
+          "label": "Adapter and quality trimming",
+          "mode": "adapter",
+          "purpose": "Run fastp with paired-end synchronization and immutable reports.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [
+            "fastp"
+          ],
+          "validation_gate": "Before/after retention and pairing reviewed"
+        },
+        {
+          "key": "qc",
+          "label": "FastQC/MultiQC aggregation",
+          "mode": "adapter",
+          "purpose": "Run FastQC and MultiQC across lanes and samples.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [
+            "fastqc",
+            "multiqc"
+          ],
+          "validation_gate": "All warning/fail modules reviewed"
+        },
+        {
+          "key": "contam",
+          "label": "Host/contaminant screening",
+          "mode": "adapter",
+          "purpose": "Screen reads against pinned host/contaminant references.",
+          "references": [
+            "Host/contaminant index"
+          ],
+          "required_inputs": [],
+          "tools": [
+            "bowtie2",
+            "kraken2"
+          ],
+          "validation_gate": "Reference release and retained-read fraction reviewed"
+        },
+        {
+          "key": "release",
+          "label": "QC release decision",
+          "mode": "external-validation",
+          "purpose": "Approve sample-specific QC thresholds and downstream suitability.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": "Qualified QC decision recorded"
+        }
+      ],
+      "statistical_requirements": [
+        "Prespecified quality thresholds",
+        "Read-pair retention",
+        "Lane/sample balance",
+        "Contamination threshold"
+      ],
+      "summary": "Disk-backed paired-end QC, trimming, contamination screening and before/after evidence bundles.",
+      "tags": [
+        "fastq",
+        "fastp",
+        "fastqc",
+        "multiqc",
+        "contamination"
+      ],
+      "title": "FASTQ & Genome QC"
+    },
+    {
+      "accepted_formats": [
+        "VCF",
+        "VCF.GZ",
+        "BCF",
+        "GFF/GTF",
+        "BED"
+      ],
+      "domain": "Bioinformatics",
+      "evidence_boundary": "Variant annotation is evidence aggregation, not autonomous pathogenicity or clinical classification.",
+      "features_added": [
+        "BCF/tabix support",
+        "Reference-build audit",
+        "Left normalization/decomposition",
+        "VEP/SnpEff protected plans",
+        "Multi-sample genotype matrix",
+        "Annotation cache",
+        "Variant review history"
+      ],
+      "key": "variant_annotation",
+      "locked_source": false,
+      "native_formats": [
+        "VCF/BCF",
+        "GFF/GTF",
+        "BED"
+      ],
+      "page_path": "pages/57_Variant_Annotation_Workbench.py",
+      "python_packages": [],
+      "release_blockers": [
+        "Reference mismatch",
+        "Missing sample metadata",
+        "Unpinned annotation sources",
+        "High-stakes finding lacks confirmation"
+      ],
+      "stages": [
+        {
+          "key": "validate",
+          "label": "VCF/BCF validation",
+          "mode": "adapter",
+          "purpose": "Check headers, sample identities, reference alleles and index availability.",
+          "references": [
+            "Reference FASTA"
+          ],
+          "required_inputs": [],
+          "tools": [
+            "bcftools"
+          ],
+          "validation_gate": "Header/build/reference checks pass"
+        },
+        {
+          "key": "normalize",
+          "label": "Normalization and decomposition",
+          "mode": "adapter",
+          "purpose": "Left-normalize and split multiallelic records while retaining original IDs.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [
+            "bcftools"
+          ],
+          "validation_gate": "Normalized record counts reconciled"
+        },
+        {
+          "key": "annotate",
+          "label": "Functional and population annotation",
+          "mode": "adapter",
+          "purpose": "Run VEP/SnpEff with pinned cache and clinical/population sources.",
+          "references": [
+            "VEP/SnpEff cache",
+            "ClinVar/gnomAD/COSMIC"
+          ],
+          "required_inputs": [],
+          "tools": [
+            "vep",
+            "snpEff"
+          ],
+          "validation_gate": "Cache release and plugins recorded"
+        },
+        {
+          "key": "review",
+          "label": "Sample and evidence review",
+          "mode": "built-in",
+          "purpose": "Filter samples/intervals and preserve reviewer decisions and evidence conflicts.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": ""
+        },
+        {
+          "key": "confirm",
+          "label": "Clinical/experimental confirmation",
+          "mode": "external-validation",
+          "purpose": "Confirm high-stakes variants using qualified methods.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": "Independent confirmation attached"
+        }
+      ],
+      "statistical_requirements": [
+        "Call-quality thresholds",
+        "Population-frequency context",
+        "Sample identity",
+        "Multiple-testing/selection boundary"
+      ],
+      "summary": "Build-aware multi-sample VCF/BCF normalization, annotation, filtering and review history.",
+      "tags": [
+        "variant",
+        "vcf",
+        "bcf",
+        "vep",
+        "snpeff"
+      ],
+      "title": "Variant & Annotation Workbench"
+    },
+    {
+      "accepted_formats": [
+        "CSV/TSV counts",
+        "MTX",
+        "H5AD",
+        "sample metadata"
+      ],
+      "domain": "Bioinformatics",
+      "evidence_boundary": "Differential expression is design-dependent and requires biological replication, appropriate models and independent validation.",
+      "features_added": [
+        "Editable design matrix",
+        "Contrast builder",
+        "Count/TPM boundary checks",
+        "Low-count filters",
+        "Effect-size and FDR table",
+        "Batch/covariate diagnostics",
+        "Methods manifest"
+      ],
+      "key": "transcriptomics",
+      "locked_source": false,
+      "native_formats": [
+        "CSV/TSV",
+        "MTX",
+        "H5AD"
+      ],
+      "page_path": "pages/59_Transcriptomics_Expression_Lab.py",
+      "python_packages": [
+        "statsmodels"
+      ],
+      "release_blockers": [
+        "No biological replication",
+        "Confounded design",
+        "Mixed count/TPM semantics",
+        "No independent validation"
+      ],
+      "stages": [
+        {
+          "key": "design",
+          "label": "Sample design and metadata audit",
+          "mode": "built-in",
+          "purpose": "Validate groups, reference level, batches, covariates and biological replication.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": ""
+        },
+        {
+          "key": "filter",
+          "label": "Count/abundance preprocessing",
+          "mode": "built-in",
+          "purpose": "Separate count from normalized abundance workflows and apply transparent low-expression filters.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": ""
+        },
+        {
+          "key": "de",
+          "label": "Replicate-aware differential analysis",
+          "mode": "built-in",
+          "purpose": "Fit appropriate count or linear models when dependencies are available.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": "Design matrix rank and dispersion diagnostics pass"
+        },
+        {
+          "key": "enrich",
+          "label": "Gene-set and pathway analysis",
+          "mode": "built-in",
+          "purpose": "Run ranked or over-representation analysis with versioned gene sets.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": ""
+        },
+        {
+          "key": "validate",
+          "label": "Independent validation",
+          "mode": "external-validation",
+          "purpose": "Confirm key genes/pathways in held-out data or orthogonal assays.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": "Independent cohort/assay attached"
+        }
+      ],
+      "statistical_requirements": [
+        "Biological replicate inference",
+        "Design-matrix rank",
+        "FDR correction",
+        "Effect sizes and confidence intervals"
+      ],
+      "summary": "Editable sample design, replicate-aware contrasts, count/TPM safeguards and reproducible differential-expression plans.",
+      "tags": [
+        "rna-seq",
+        "differential expression",
+        "design matrix"
+      ],
+      "title": "Transcriptomics Expression Lab"
+    },
+    {
+      "accepted_formats": [
+        "FASTA",
+        "mzML/mzXML",
+        "MGF",
+        "CSV/TSV peptide tables"
+      ],
+      "domain": "Bioinformatics",
+      "evidence_boundary": "Sequence annotations and peptide identifications require database/version provenance, FDR control and orthogonal confirmation for high-stakes claims.",
+      "features_added": [
+        "HMMER protected plan",
+        "Comet/MS-GF+ search plans",
+        "Target-decoy contract",
+        "PSM/peptide/protein FDR",
+        "Protein inference",
+        "PTM localization",
+        "LFQ/TMT schema checks"
+      ],
+      "key": "protein_annotation_proteomics",
+      "locked_source": false,
+      "native_formats": [
+        "FASTA",
+        "mzML/mzXML",
+        "MGF"
+      ],
+      "page_path": "pages/60_Protein_Annotation_Proteomics.py",
+      "python_packages": [],
+      "release_blockers": [
+        "No decoy strategy",
+        "Uncontrolled FDR",
+        "Protein inference unresolved",
+        "PTM lacks localization evidence"
+      ],
+      "stages": [
+        {
+          "key": "sequence",
+          "label": "Protein sequence annotation",
+          "mode": "built-in",
+          "purpose": "Validate sequences and summarize composition, motifs and liabilities.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": ""
+        },
+        {
+          "key": "domains",
+          "label": "Domain/topology annotation",
+          "mode": "adapter",
+          "purpose": "Run HMMER or configured specialist predictors with pinned databases.",
+          "references": [
+            "Pfam/InterPro HMM database"
+          ],
+          "required_inputs": [],
+          "tools": [
+            "hmmscan"
+          ],
+          "validation_gate": "Domain database release recorded"
+        },
+        {
+          "key": "search",
+          "label": "Spectrum database search",
+          "mode": "adapter",
+          "purpose": "Run Comet or MS-GF+ against a target-decoy FASTA.",
+          "references": [
+            "Target-decoy protein FASTA"
+          ],
+          "required_inputs": [],
+          "tools": [
+            "comet",
+            "MSGFPlus"
+          ],
+          "validation_gate": "Search parameters and decoy strategy pass"
+        },
+        {
+          "key": "fdr",
+          "label": "PSM/peptide/protein FDR and inference",
+          "mode": "built-in",
+          "purpose": "Audit q-values, protein groups, modification localization and quantification.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": ""
+        },
+        {
+          "key": "confirm",
+          "label": "Orthogonal protein confirmation",
+          "mode": "external-validation",
+          "purpose": "Confirm priority proteins/PTMs with independent assays or standards.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": "Independent evidence attached"
+        }
+      ],
+      "statistical_requirements": [
+        "Target-decoy FDR",
+        "Protein-group ambiguity",
+        "Missingness/normalization",
+        "Replicate-aware differential analysis"
+      ],
+      "summary": "Protein feature annotation plus target-decoy mass-spectrometry search, protein inference and quantification readiness.",
+      "tags": [
+        "proteomics",
+        "comet",
+        "msgf",
+        "fdr",
+        "protein"
+      ],
+      "title": "Protein Annotation & Proteomics"
+    },
+    {
+      "accepted_formats": [
+        "CSV/TSV matrices",
+        "H5AD",
+        "MTX",
+        "sample metadata"
+      ],
+      "domain": "Bioinformatics",
+      "evidence_boundary": "Integrated factors and biomarker panels are exploratory until independently validated with locked preprocessing and analysis plans.",
+      "features_added": [
+        "Sample mapping audit",
+        "Feature identifier harmonization",
+        "Missing-modality policy",
+        "Latent-factor interface",
+        "Similarity network fusion contract",
+        "Bootstrap stability",
+        "External-validation handoff"
+      ],
+      "key": "omics_integration",
+      "locked_source": false,
+      "native_formats": [
+        "CSV/TSV",
+        "H5AD",
+        "MTX"
+      ],
+      "page_path": "pages/66_Omics_Integration_Hub.py",
+      "python_packages": [
+        "networkx",
+        "sklearn"
+      ],
+      "release_blockers": [
+        "Sample mismatch",
+        "Confounded batches",
+        "Cross-fold leakage",
+        "No external validation"
+      ],
+      "stages": [
+        {
+          "key": "mapping",
+          "label": "Sample and feature mapping",
+          "mode": "built-in",
+          "purpose": "Audit sample overlap, identifiers, units, missing modalities and batch structure.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": ""
+        },
+        {
+          "key": "normalize",
+          "label": "Per-omics normalization",
+          "mode": "built-in",
+          "purpose": "Apply modality-appropriate transforms without leaking across validation folds.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": ""
+        },
+        {
+          "key": "integrate",
+          "label": "Multi-view integration",
+          "mode": "built-in",
+          "purpose": "Run transparent latent-factor, correlation or similarity-network methods when dependencies are available.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": ""
+        },
+        {
+          "key": "stability",
+          "label": "Bootstrap stability and leakage audit",
+          "mode": "built-in",
+          "purpose": "Measure factor/feature stability and isolate validation data.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": ""
+        },
+        {
+          "key": "validate",
+          "label": "External biomarker validation",
+          "mode": "external-validation",
+          "purpose": "Validate integrated signatures in an independent cohort.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": "Independent cohort and locked panel attached"
+        }
+      ],
+      "statistical_requirements": [
+        "Sample-level independence",
+        "Batch/covariate control",
+        "Nested validation",
+        "Panel stability"
+      ],
+      "summary": "Sample-matched, missing-modality-aware multi-omics integration with identifier harmonization and stability testing.",
+      "tags": [
+        "multi-omics",
+        "integration",
+        "mofa",
+        "snf"
+      ],
+      "title": "Omics Integration Hub"
+    },
+    {
+      "accepted_formats": [
+        "FASTA",
+        "ALN",
+        "PHYLIP",
+        "NEXUS",
+        "Newick"
+      ],
+      "domain": "Bioinformatics",
+      "evidence_boundary": "Tree topology depends on alignment, model, sampling and recombination assumptions and must not be overinterpreted.",
+      "features_added": [
+        "MAFFT/IQ-TREE/RAxML plans",
+        "Substitution-model provenance",
+        "Bootstrap/support summary",
+        "Outgroup/midpoint rooting",
+        "Recombination sensitivity",
+        "Nexus/PhyloXML export"
+      ],
+      "key": "alignment_phylogeny",
+      "locked_source": false,
+      "native_formats": [
+        "FASTA",
+        "PHYLIP",
+        "NEXUS",
+        "Newick"
+      ],
+      "page_path": "pages/68_Alignment_Phylogeny.py",
+      "python_packages": [],
+      "release_blockers": [
+        "Poor alignment",
+        "Low branch support",
+        "Unassessed recombination",
+        "Unsupported evolutionary claim"
+      ],
+      "stages": [
+        {
+          "key": "msa",
+          "label": "Multiple alignment",
+          "mode": "adapter",
+          "purpose": "Run MAFFT with immutable input and command evidence.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [
+            "mafft"
+          ],
+          "validation_gate": "Alignment quality reviewed"
+        },
+        {
+          "key": "model",
+          "label": "Model selection and tree inference",
+          "mode": "adapter",
+          "purpose": "Run IQ-TREE or RAxML-NG with support values.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [
+            "iqtree3",
+            "raxml-ng"
+          ],
+          "validation_gate": "Selected model and support recorded"
+        },
+        {
+          "key": "recomb",
+          "label": "Recombination assessment",
+          "mode": "adapter",
+          "purpose": "Mask recombinant regions where biologically relevant.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [
+            "run_gubbins.py"
+          ],
+          "validation_gate": "Masked/unmasked sensitivity reviewed"
+        },
+        {
+          "key": "annotate",
+          "label": "Rooting and metadata annotation",
+          "mode": "built-in",
+          "purpose": "Apply outgroup/midpoint rooting and attach sample metadata.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": ""
+        },
+        {
+          "key": "interpret",
+          "label": "Evolutionary interpretation",
+          "mode": "external-validation",
+          "purpose": "Avoid unsupported directionality, clock or transmission claims.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": "Qualified interpretation review"
+        }
+      ],
+      "statistical_requirements": [
+        "Alignment masking policy",
+        "Support thresholds",
+        "Clock/recombination assumptions",
+        "Sampling bias"
+      ],
+      "summary": "Model-aware alignment and phylogeny with support values, rooting, recombination checks and metadata overlays.",
+      "tags": [
+        "phylogeny",
+        "iqtree",
+        "raxml",
+        "mafft"
+      ],
+      "title": "Alignment & Phylogeny"
+    },
+    {
+      "accepted_formats": [
+        "FASTA",
+        "GFF/GTF",
+        "GenBank",
+        "VCF",
+        "CSV metadata"
+      ],
+      "domain": "Bioinformatics",
+      "evidence_boundary": "Genomic trait predictions require database provenance and phenotypic or epidemiological confirmation.",
+      "features_added": [
+        "Mash/FastANI species confirmation",
+        "QUAST quality gate",
+        "Bakta/Prokka plans",
+        "Core/accessory comparison",
+        "AMR/virulence overlay",
+        "Mobile-element checklist",
+        "Evidence-graded report"
+      ],
+      "key": "comparative_pathogen",
+      "locked_source": false,
+      "native_formats": [
+        "FASTA",
+        "GFF/GTF",
+        "GenBank",
+        "VCF"
+      ],
+      "page_path": "pages/79_Comparative_Pathogen_Genomics.py",
+      "python_packages": [],
+      "release_blockers": [
+        "Species mismatch",
+        "Poor assembly quality",
+        "Unpinned trait databases",
+        "Trait claim lacks phenotype evidence"
+      ],
+      "stages": [
+        {
+          "key": "qc",
+          "label": "Assembly and species QC",
+          "mode": "adapter",
+          "purpose": "Run QUAST, Mash and FastANI to confirm assembly quality and species context.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [
+            "quast",
+            "mash",
+            "fastANI"
+          ],
+          "validation_gate": "Species and assembly thresholds pass"
+        },
+        {
+          "key": "annotate",
+          "label": "Genome annotation",
+          "mode": "adapter",
+          "purpose": "Run Prokka/Bakta with captured database/version provenance.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [
+            "prokka",
+            "bakta"
+          ],
+          "validation_gate": "Annotation completeness reviewed"
+        },
+        {
+          "key": "pangenome",
+          "label": "Core/accessory and orthology analysis",
+          "mode": "adapter",
+          "purpose": "Prepare normalized annotations for pangenome/orthology workflows.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [
+            "mafft"
+          ],
+          "validation_gate": "Ortholog thresholds recorded"
+        },
+        {
+          "key": "traits",
+          "label": "AMR, virulence and mobile elements",
+          "mode": "adapter",
+          "purpose": "Run AMRFinderPlus/ResFinder and preserve reference releases.",
+          "references": [
+            "AMR/virulence database"
+          ],
+          "required_inputs": [],
+          "tools": [
+            "amrfinder",
+            "run_resfinder.py"
+          ],
+          "validation_gate": "Trait evidence and discordance reviewed"
+        },
+        {
+          "key": "confirm",
+          "label": "Phenotypic/epidemiological confirmation",
+          "mode": "external-validation",
+          "purpose": "Confirm priority genomic traits with laboratory or epidemiological evidence.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": "Independent evidence attached"
+        }
+      ],
+      "statistical_requirements": [
+        "Species confirmation",
+        "Assembly completeness/contamination",
+        "Ortholog threshold sensitivity",
+        "Phenotype-genotype concordance"
+      ],
+      "summary": "Species confirmation, ANI, pangenome, orthology, AMR/virulence and mobile-element comparison.",
+      "tags": [
+        "comparative genomics",
+        "fastani",
+        "mash",
+        "amr"
+      ],
+      "title": "Comparative Pathogen Genomics"
+    },
+    {
+      "accepted_formats": [
+        "H5AD",
+        "Zarr",
+        "MTX",
+        "10X H5",
+        "CSV metadata"
+      ],
+      "domain": "Bioinformatics",
+      "evidence_boundary": "Cells are not independent biological replicates; biological conclusions require sample-level inference and independent validation.",
+      "features_added": [
+        "H5AD/Zarr backed mode",
+        "Doublet and ambient-RNA contracts",
+        "Harmony/scVI readiness",
+        "Reference atlas mapping",
+        "Replicate-aware differential abundance",
+        "Trajectory/communication handoff",
+        "Large sparse matrix guard"
+      ],
+      "key": "single_cell",
+      "locked_source": false,
+      "native_formats": [
+        "H5AD",
+        "Zarr",
+        "MTX",
+        "10X matrices"
+      ],
+      "page_path": "pages/80_Single_Cell_Heterogeneity.py",
+      "python_packages": [
+        "anndata",
+        "scanpy"
+      ],
+      "release_blockers": [
+        "No sample replication",
+        "Severe batch confounding",
+        "Unsupported cell labels",
+        "Cell-level pseudoreplication"
+      ],
+      "stages": [
+        {
+          "key": "load",
+          "label": "Backed sparse loading",
+          "mode": "built-in",
+          "purpose": "Load large matrices in backed/chunked mode and validate cell/gene metadata.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": ""
+        },
+        {
+          "key": "qc",
+          "label": "Cell and sample QC",
+          "mode": "built-in",
+          "purpose": "Audit library size, detected genes, mitochondrial fraction, doublets and ambient RNA.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": ""
+        },
+        {
+          "key": "integrate",
+          "label": "Batch integration and reference mapping",
+          "mode": "built-in",
+          "purpose": "Use configured Scanpy/Harmony/scVI/atlas workflows with explicit uncertainty.",
+          "references": [
+            "Reference atlas"
+          ],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": "Batch mixing and label confidence reviewed"
+        },
+        {
+          "key": "states",
+          "label": "Clustering, markers and trajectories",
+          "mode": "built-in",
+          "purpose": "Separate exploratory cell-level views from replicate-aware sample inference.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": ""
+        },
+        {
+          "key": "validate",
+          "label": "Biological validation",
+          "mode": "external-validation",
+          "purpose": "Confirm cell states and interactions in independent samples or assays.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": "Independent validation attached"
+        }
+      ],
+      "statistical_requirements": [
+        "Sample\u2014not cell\u2014is the replicate",
+        "Batch integration diagnostics",
+        "Cell-type confidence",
+        "FDR and effect sizes"
+      ],
+      "summary": "Backed single-cell processing with doublet/ambient-RNA checks, reference mapping and replicate-aware inference.",
+      "tags": [
+        "single cell",
+        "h5ad",
+        "scanpy",
+        "scvi"
+      ],
+      "title": "Single-Cell Heterogeneity"
+    },
+    {
+      "accepted_formats": [
+        "VCF/BCF",
+        "MAF",
+        "CNV segments",
+        "SV/fusion TSV",
+        "RNA expression"
+      ],
+      "domain": "Bioinformatics",
+      "evidence_boundary": "Cancer-genomics findings are research evidence and cannot autonomously determine diagnosis, prognosis or treatment.",
+      "features_added": [
+        "Tumour-normal identity audit",
+        "Callable-territory TMB contract",
+        "CNV/SV/fusion integration",
+        "Mutational signatures",
+        "Purity/ploidy assumptions",
+        "Subclone/longitudinal comparison",
+        "Evidence-versioned MTB report"
+      ],
+      "key": "cancer_genomics",
+      "locked_source": false,
+      "native_formats": [
+        "VCF/BCF",
+        "MAF",
+        "BED",
+        "BAM/CRAM"
+      ],
+      "page_path": "pages/81_Cancer_Genomics.py",
+      "python_packages": [],
+      "release_blockers": [
+        "Pairing/build mismatch",
+        "Missing callable territory",
+        "No purity/ploidy context",
+        "Clinical claim lacks qualified review"
+      ],
+      "stages": [
+        {
+          "key": "pair",
+          "label": "Tumour-normal identity and QC",
+          "mode": "built-in",
+          "purpose": "Validate sample pairing, contamination, callable territory and genome build.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": ""
+        },
+        {
+          "key": "annotate",
+          "label": "Somatic annotation",
+          "mode": "adapter",
+          "purpose": "Normalize and annotate somatic variants using bcftools/VEP and pinned cancer sources.",
+          "references": [
+            "Reference FASTA",
+            "Cancer gene/evidence release"
+          ],
+          "required_inputs": [],
+          "tools": [
+            "bcftools",
+            "vep"
+          ],
+          "validation_gate": "Annotation and callable-territory provenance pass"
+        },
+        {
+          "key": "genome",
+          "label": "CNV, SV, fusions and signatures",
+          "mode": "built-in",
+          "purpose": "Integrate copy number, structural events, signatures and expression evidence with explicit uncertainty.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": ""
+        },
+        {
+          "key": "clonal",
+          "label": "Purity, clonality and longitudinal review",
+          "mode": "built-in",
+          "purpose": "Represent purity/ploidy assumptions and compare serial samples without overclaiming evolution.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": ""
+        },
+        {
+          "key": "board",
+          "label": "Molecular tumour-board review",
+          "mode": "external-validation",
+          "purpose": "Require qualified clinical interpretation and confirmatory evidence.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": "Qualified board review completed"
+        }
+      ],
+      "statistical_requirements": [
+        "Callable territory",
+        "Purity/ploidy sensitivity",
+        "Multiple-testing control",
+        "Therapy-evidence versioning"
+      ],
+      "summary": "Tumour-normal, CNV/SV, signatures, clonality and longitudinal cancer-genomics evidence workflow.",
+      "tags": [
+        "cancer",
+        "somatic",
+        "cnv",
+        "signatures",
+        "tmb"
+      ],
+      "title": "Cancer Genomics"
+    },
+    {
+      "accepted_formats": [
+        "SMILES",
+        "SDF",
+        "MOL/MOL2",
+        "CSV/TSV compound table"
+      ],
+      "domain": "Discovery",
+      "evidence_boundary": "A standardized representation is a computational working form and may not match the experimentally active microspecies.",
+      "features_added": [
+        "pH-context state enumeration",
+        "Stereochemistry audit",
+        "3D conformer bundle",
+        "Murcko scaffold decomposition",
+        "Matched molecular pairs",
+        "Analog-series clustering",
+        "Substructure query",
+        "InChIKey provenance"
+      ],
+      "key": "drug_smiles",
+      "locked_source": false,
+      "native_formats": [
+        "SMILES",
+        "SDF",
+        "MOL/MOL2"
+      ],
+      "page_path": "pages/3_Drug_SMILES_Analyzer.py",
+      "python_packages": [
+        "rdkit"
+      ],
+      "release_blockers": [
+        "Invalid or ambiguous structure",
+        "Disconnected metal/mixture unresolved",
+        "Stereochemistry unspecified",
+        "Identity not independently confirmed"
+      ],
+      "stages": [
+        {
+          "key": "parse",
+          "label": "Structure parsing and sanitization",
+          "mode": "built-in",
+          "purpose": "Validate molecules, stereochemistry, valence, fragments and unsupported elements.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": ""
+        },
+        {
+          "key": "standardize",
+          "label": "Parent and charge standardization",
+          "mode": "built-in",
+          "purpose": "Preserve original structure while recording salt removal, charge and tautomer transformations.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": ""
+        },
+        {
+          "key": "states",
+          "label": "pH and tautomer states",
+          "mode": "built-in",
+          "purpose": "Enumerate bounded protonation/tautomer candidates and clearly mark heuristic boundaries.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": ""
+        },
+        {
+          "key": "conformers",
+          "label": "3D conformer generation",
+          "mode": "built-in",
+          "purpose": "Generate bounded conformers and energy summaries where RDKit support is available.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": ""
+        },
+        {
+          "key": "confirm",
+          "label": "Chemical identity confirmation",
+          "mode": "external-validation",
+          "purpose": "Confirm identity, stereochemistry and assay-relevant state against authoritative records or standards.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": "Independent chemical identity evidence attached"
+        }
+      ],
+      "statistical_requirements": [
+        "Duplicate handling by standardized identity",
+        "State/stereochemistry uncertainty",
+        "Applicability boundaries",
+        "Transformation log completeness"
+      ],
+      "summary": "Structure standardization, protonation/tautomer awareness, 3D conformers and analog-series analysis with full transformation provenance.",
+      "tags": [
+        "smiles",
+        "standardization",
+        "conformer",
+        "scaffold"
+      ],
+      "title": "Drug SMILES Analyzer"
+    },
+    {
+      "accepted_formats": [
+        "SMILES table",
+        "protein FASTA",
+        "compound-target pairs",
+        "feature matrix"
+      ],
+      "domain": "Discovery",
+      "evidence_boundary": "Feature completeness does not establish predictive validity; cold-split evaluation and external validation remain required.",
+      "features_added": [
+        "Fingerprint family registry",
+        "Graph/3D feature contract",
+        "Protein embedding adapter",
+        "Pocket descriptor schema",
+        "Leakage-safe fit/transform",
+        "Feature cache reuse metrics",
+        "Model compatibility manifest"
+      ],
+      "key": "dti_features",
+      "locked_source": false,
+      "native_formats": [
+        "CSV/TSV",
+        "FASTA",
+        "NPZ/Parquet"
+      ],
+      "page_path": "pages/4_DTI_Feature_Builder.py",
+      "python_packages": [
+        "rdkit",
+        "sklearn"
+      ],
+      "release_blockers": [
+        "Entity leakage",
+        "Feature schema mismatch",
+        "Missing preprocessing artifact",
+        "Unvalidated embedding model"
+      ],
+      "stages": [
+        {
+          "key": "identity",
+          "label": "Entity identity and split audit",
+          "mode": "built-in",
+          "purpose": "Normalize compound/protein identities before fitting any feature transform.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": ""
+        },
+        {
+          "key": "molecule",
+          "label": "Molecular features",
+          "mode": "built-in",
+          "purpose": "Generate multiple fingerprints, descriptors and graph-ready features with schema versioning.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": ""
+        },
+        {
+          "key": "protein",
+          "label": "Protein features",
+          "mode": "built-in",
+          "purpose": "Generate composition, motif and optional language-model embeddings with model/version metadata.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": ""
+        },
+        {
+          "key": "compat",
+          "label": "Train/inference compatibility",
+          "mode": "built-in",
+          "purpose": "Verify dimensions, preprocessing hashes, missing features and model contract.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": ""
+        },
+        {
+          "key": "validate",
+          "label": "Feature utility validation",
+          "mode": "external-validation",
+          "purpose": "Evaluate feature stability and value on held-out cold splits.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": "Held-out feature utility documented"
+        }
+      ],
+      "statistical_requirements": [
+        "Fit transforms only on training data",
+        "Entity-disjoint split audit",
+        "Missing-feature policy",
+        "Schema/version lock"
+      ],
+      "summary": "Versioned molecule/protein feature schemas with leakage-safe fitting, compatibility checks and reusable feature caches.",
+      "tags": [
+        "dti",
+        "features",
+        "fingerprint",
+        "embedding"
+      ],
+      "title": "DTI Feature Builder"
+    },
+    {
+      "accepted_formats": [
+        "compound-target pairs",
+        "feature matrix",
+        "model package",
+        "external benchmark"
+      ],
+      "domain": "Discovery",
+      "evidence_boundary": "Predictions are research hypotheses and cannot replace experimental binding or functional validation.",
+      "features_added": [
+        "Cold-split validation matrix",
+        "Calibration contract",
+        "Conformal uncertainty interface",
+        "Applicability-domain report",
+        "Baseline comparison",
+        "Prediction-lock manifest",
+        "Wet-lab outcome import"
+      ],
+      "key": "dti_predictor",
+      "locked_source": true,
+      "native_formats": [
+        "CSV/TSV",
+        "NPZ",
+        "BIOIPPI/BioIntel model package"
+      ],
+      "page_path": "pages/6_DTI_Predictor.py",
+      "python_packages": [],
+      "release_blockers": [
+        "Synthetic-only training",
+        "No cold/external validation",
+        "Poor calibration",
+        "No prospective confirmation"
+      ],
+      "stages": [
+        {
+          "key": "lineage",
+          "label": "Model and dataset lineage",
+          "mode": "built-in",
+          "purpose": "Verify model, feature, dataset and split hashes before inference.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": ""
+        },
+        {
+          "key": "predict",
+          "label": "Bounded inference",
+          "mode": "built-in",
+          "purpose": "Run trusted packaged models with schema, range and missing-feature checks.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": ""
+        },
+        {
+          "key": "uncertainty",
+          "label": "Calibration and applicability",
+          "mode": "built-in",
+          "purpose": "Report calibration, conformal or distance-based uncertainty where validated.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": ""
+        },
+        {
+          "key": "external",
+          "label": "Cold and external validation",
+          "mode": "built-in",
+          "purpose": "Evaluate cold-drug, cold-target, cold-both, scaffold and protein-family splits.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": ""
+        },
+        {
+          "key": "prospective",
+          "label": "Prospective/wet-lab validation",
+          "mode": "external-validation",
+          "purpose": "Lock predictions before outcomes and import blinded experimental results.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": "Independent prospective evidence attached"
+        }
+      ],
+      "statistical_requirements": [
+        "Entity-disjoint splits",
+        "Calibration error",
+        "Uncertainty coverage",
+        "External benchmark",
+        "Leakage audit"
+      ],
+      "summary": "Cold-split, calibrated and uncertainty-aware DTI prediction with prospective locking and explicit evidence boundaries.",
+      "tags": [
+        "dti",
+        "prediction",
+        "cold split",
+        "calibration"
+      ],
+      "title": "DTI Predictor"
+    },
+    {
+      "accepted_formats": [
+        "PDB/mmCIF",
+        "FASTA",
+        "mutation CSV",
+        "design request JSON"
+      ],
+      "domain": "Discovery",
+      "evidence_boundary": "Generated proteins are hypotheses and must be experimentally tested for expression, structure, binding, function and safety.",
+      "features_added": [
+        "Model asset manager",
+        "Interface-specific design",
+        "Fixed/mutable residue maps",
+        "Negative and multi-state design",
+        "Rosetta/FoldX consensus",
+        "Solubility/aggregation checks",
+        "Novelty/IP review",
+        "Active-learning outcome import"
+      ],
+      "key": "ai_protein_design",
+      "locked_source": false,
+      "native_formats": [
+        "PDB/mmCIF",
+        "FASTA",
+        "JSON"
+      ],
+      "page_path": "pages/96_AI_Protein_Design_Lab.py",
+      "python_packages": [],
+      "release_blockers": [
+        "Missing/unverified model assets",
+        "Low structural confidence",
+        "Consensus failure",
+        "No experimental validation"
+      ],
+      "stages": [
+        {
+          "key": "prepare",
+          "label": "Structure and constraint preparation",
+          "mode": "built-in",
+          "purpose": "Validate chains, residue maps, fixed/mutable positions and interface constraints.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": ""
+        },
+        {
+          "key": "generate",
+          "label": "Backbone/sequence generation",
+          "mode": "adapter",
+          "purpose": "Run RFdiffusion and ProteinMPNN with verified assets and deterministic seeds.",
+          "references": [
+            "Model weights"
+          ],
+          "required_inputs": [],
+          "tools": [
+            "rfdiffusion",
+            "proteinmpnn"
+          ],
+          "validation_gate": "Asset hashes and generation manifest pass"
+        },
+        {
+          "key": "fold",
+          "label": "Structure validation",
+          "mode": "adapter",
+          "purpose": "Run ColabFold and parse confidence, PAE and structural consistency.",
+          "references": [
+            "Model/database assets"
+          ],
+          "required_inputs": [],
+          "tools": [
+            "colabfold_batch"
+          ],
+          "validation_gate": "Confidence and failure modes reviewed"
+        },
+        {
+          "key": "score",
+          "label": "Energy and developability scoring",
+          "mode": "adapter",
+          "purpose": "Run FoldX/Rosetta and combine stability, interface and liability evidence.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [
+            "foldx",
+            "rosetta_scripts"
+          ],
+          "validation_gate": "Consensus and disagreement reviewed"
+        },
+        {
+          "key": "experiment",
+          "label": "Experimental design loop",
+          "mode": "external-validation",
+          "purpose": "Import expression, stability, binding and function results for prospective learning.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": "Experimental outcomes attached"
+        }
+      ],
+      "statistical_requirements": [
+        "Deterministic seed",
+        "Candidate diversity",
+        "Model confidence",
+        "Consensus across methods",
+        "Prospective assay confirmation"
+      ],
+      "summary": "Checksum-bound ProteinMPNN/RFdiffusion/ColabFold/Rosetta/FoldX execution with multi-objective design and experimental feedback readiness.",
+      "tags": [
+        "protein design",
+        "proteinmpnn",
+        "rfdiffusion",
+        "colabfold"
+      ],
+      "title": "AI Protein Design & Mutation Engineering"
+    },
+    {
+      "accepted_formats": [
+        "ChEMBL API/SQLite",
+        "CSV/TSV activities",
+        "SDF compounds"
+      ],
+      "domain": "Discovery",
+      "evidence_boundary": "A curated activity table is not automatically a representative or unbiased benchmark for predictive modelling.",
+      "features_added": [
+        "Release manager",
+        "Incremental sync",
+        "Unit/operator normalization",
+        "Target-confidence filters",
+        "Duplicate/conflict review",
+        "Compound/target leakage audit",
+        "Licence and dataset card"
+      ],
+      "key": "chembl_builder",
+      "locked_source": false,
+      "native_formats": [
+        "CSV/TSV",
+        "SQLite",
+        "SDF"
+      ],
+      "page_path": "pages/13_ChEMBL_Dataset_Builder.py",
+      "python_packages": [],
+      "release_blockers": [
+        "Unpinned release",
+        "Mixed units/operators unresolved",
+        "Target mapping uncertainty",
+        "Dataset not validated for intended use"
+      ],
+      "stages": [
+        {
+          "key": "release",
+          "label": "Release and licence selection",
+          "mode": "built-in",
+          "purpose": "Pin ChEMBL release, provider endpoint, licence and retrieval timestamp.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": ""
+        },
+        {
+          "key": "ingest",
+          "label": "Incremental activity ingestion",
+          "mode": "built-in",
+          "purpose": "Download/cache bounded records with checksums and retry-safe pagination.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": ""
+        },
+        {
+          "key": "normalize",
+          "label": "Assay and activity normalization",
+          "mode": "built-in",
+          "purpose": "Normalize relation operators, units and pActivity while preserving raw values.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": ""
+        },
+        {
+          "key": "curate",
+          "label": "Duplicate/conflict and target-confidence review",
+          "mode": "built-in",
+          "purpose": "Resolve repeated measurements without silently averaging conflicts.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": ""
+        },
+        {
+          "key": "validate",
+          "label": "Dataset validation",
+          "mode": "external-validation",
+          "purpose": "Review representativeness, leakage and assay comparability for the intended model.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": "Dataset card approved"
+        }
+      ],
+      "statistical_requirements": [
+        "Assay comparability",
+        "Duplicate measurement policy",
+        "Scaffold/target leakage",
+        "Missingness and censoring"
+      ],
+      "summary": "Release-pinned ChEMBL ingestion with unit normalization, target confidence, conflict review and leakage-safe dataset cards.",
+      "tags": [
+        "chembl",
+        "activity",
+        "dataset",
+        "curation"
+      ],
+      "title": "ChEMBL Dataset Builder"
+    },
+    {
+      "accepted_formats": [
+        "PDB",
+        "mmCIF",
+        "SDF/MOL2",
+        "PAE JSON",
+        "trajectory summary"
+      ],
+      "domain": "Discovery",
+      "evidence_boundary": "Predicted pockets, contacts and energetic scores remain hypotheses until validated by experiment or qualified structural evidence.",
+      "features_added": [
+        "mmCIF-first parser",
+        "Biological assembly audit",
+        "Missing atom/residue report",
+        "Geometry/confidence QC",
+        "Pocket/contact map",
+        "Structure superposition",
+        "Mutation neighborhood",
+        "MD handoff manifest"
+      ],
+      "key": "structural_bioinformatics",
+      "locked_source": false,
+      "native_formats": [
+        "PDB/mmCIF",
+        "SDF/MOL2",
+        "JSON"
+      ],
+      "page_path": "pages/61_Structural_Bioinformatics.py",
+      "python_packages": [],
+      "release_blockers": [
+        "Wrong biological assembly",
+        "Severe missing geometry",
+        "Unreviewed protonation",
+        "No experimental support"
+      ],
+      "stages": [
+        {
+          "key": "parse",
+          "label": "Structure and assembly validation",
+          "mode": "built-in",
+          "purpose": "Validate models, chains, alt locations, missing atoms/residues and biological assembly metadata.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": ""
+        },
+        {
+          "key": "quality",
+          "label": "Geometry and confidence QC",
+          "mode": "built-in",
+          "purpose": "Report clashes, Ramachandran-like checks, B-factors/pLDDT and PAE where available.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": ""
+        },
+        {
+          "key": "prepare",
+          "label": "Protonation and minimization",
+          "mode": "adapter",
+          "purpose": "Prepare structures with recorded protonation and minimization settings.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [
+            "obabel"
+          ],
+          "validation_gate": "Preparation transformations reviewed"
+        },
+        {
+          "key": "pockets",
+          "label": "Pocket/contact and superposition analysis",
+          "mode": "built-in",
+          "purpose": "Identify candidate pockets, contacts and mutation neighborhoods with coordinate provenance.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": ""
+        },
+        {
+          "key": "dynamics",
+          "label": "Dynamics/experimental confirmation",
+          "mode": "external-validation",
+          "purpose": "Use validated simulation or experimental structure/function evidence for high-stakes claims.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": "Independent evidence attached"
+        }
+      ],
+      "statistical_requirements": [
+        "Structure resolution/confidence",
+        "Assembly choice",
+        "Preparation provenance",
+        "Pocket validation"
+      ],
+      "summary": "mmCIF-first structure preparation, quality validation, pocket/contact analysis and dynamics handoff.",
+      "tags": [
+        "structure",
+        "pdb",
+        "mmcif",
+        "pocket"
+      ],
+      "title": "Structural Bioinformatics"
+    },
+    {
+      "accepted_formats": [
+        "SMILES",
+        "SDF",
+        "CSV compound table",
+        "experimental ADMET results"
+      ],
+      "domain": "Discovery",
+      "evidence_boundary": "Rule-based or model-based ADMET outputs are screening evidence and must not be interpreted as clinical or toxicological conclusions.",
+      "features_added": [
+        "Endpoint plugin contract",
+        "Per-endpoint applicability domain",
+        "Calibration/conformal interface",
+        "Batch Pareto ranking",
+        "Metabolite alerts",
+        "CYP/transporter matrix",
+        "Experimental result import",
+        "Model card export"
+      ],
+      "key": "admet",
+      "locked_source": false,
+      "native_formats": [
+        "SMILES",
+        "SDF",
+        "CSV/TSV"
+      ],
+      "page_path": "pages/62_ADMET_Drug_Discovery.py",
+      "python_packages": [
+        "rdkit"
+      ],
+      "release_blockers": [
+        "Unqualified endpoint model",
+        "Outside applicability domain",
+        "Missing assay context",
+        "No experimental confirmation"
+      ],
+      "stages": [
+        {
+          "key": "standardize",
+          "label": "Chemical state preparation",
+          "mode": "built-in",
+          "purpose": "Standardize structures and record assay pH, tautomer and stereochemical uncertainty.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": ""
+        },
+        {
+          "key": "rules",
+          "label": "Transparent medicinal-chemistry triage",
+          "mode": "built-in",
+          "purpose": "Apply explainable property/rule alerts without converting heuristics into probabilities.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": ""
+        },
+        {
+          "key": "models",
+          "label": "Qualified endpoint models",
+          "mode": "adapter",
+          "purpose": "Load only endpoint-specific models with model cards, calibration and external validation.",
+          "references": [
+            "Qualified endpoint model package"
+          ],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": "Model card and applicability domain pass"
+        },
+        {
+          "key": "compare",
+          "label": "Batch and metabolite/interaction review",
+          "mode": "built-in",
+          "purpose": "Compare candidates and represent transporter/CYP/metabolite evidence without unsupported endpoints.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": ""
+        },
+        {
+          "key": "experiment",
+          "label": "Experimental ADMET confirmation",
+          "mode": "external-validation",
+          "purpose": "Import assay results and reconcile prediction disagreement.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": "Qualified assay evidence attached"
+        }
+      ],
+      "statistical_requirements": [
+        "Endpoint-specific validation",
+        "Applicability coverage",
+        "Calibration",
+        "Assay context",
+        "Uncertainty"
+      ],
+      "summary": "Endpoint-qualified ADMET plugin contracts with applicability, calibration and experimental-result import.",
+      "tags": [
+        "admet",
+        "developability",
+        "endpoint",
+        "applicability"
+      ],
+      "title": "ADMET Triage & Developability"
+    },
+    {
+      "accepted_formats": [
+        "gene/protein list",
+        "ranked statistics",
+        "edge table",
+        "expression matrix"
+      ],
+      "domain": "Discovery",
+      "evidence_boundary": "Enrichment and network proximity are associative summaries and do not establish causal mechanism.",
+      "features_added": [
+        "GO/Reactome/KEGG version manager",
+        "Background universe selector",
+        "GSEA contract",
+        "Topology-aware scores",
+        "Signed/directed networks",
+        "Community detection",
+        "Evidence-linked edges",
+        "Cytoscape/GraphML export"
+      ],
+      "key": "pathway_network",
+      "locked_source": false,
+      "native_formats": [
+        "CSV/TSV",
+        "GMT",
+        "GraphML"
+      ],
+      "page_path": "pages/63_Pathway_Network_Analysis.py",
+      "python_packages": [
+        "networkx"
+      ],
+      "release_blockers": [
+        "No background universe",
+        "High mapping loss",
+        "Uncorrected multiplicity",
+        "Causal claim from association"
+      ],
+      "stages": [
+        {
+          "key": "ids",
+          "label": "Identifier and organism harmonization",
+          "mode": "built-in",
+          "purpose": "Normalize identifiers and explicitly select organism and database release.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": ""
+        },
+        {
+          "key": "ora",
+          "label": "Over-representation analysis",
+          "mode": "built-in",
+          "purpose": "Use a user-defined background universe and multiple-testing correction.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": ""
+        },
+        {
+          "key": "gsea",
+          "label": "Ranked enrichment",
+          "mode": "built-in",
+          "purpose": "Run transparent ranked enrichment with permutation strategy and effect direction.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": ""
+        },
+        {
+          "key": "network",
+          "label": "Signed/directed network analysis",
+          "mode": "built-in",
+          "purpose": "Support evidence-linked edges, communities and propagation with source provenance.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": ""
+        },
+        {
+          "key": "interpret",
+          "label": "Biological interpretation",
+          "mode": "external-validation",
+          "purpose": "Avoid causal claims from pathway/network association alone.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": "Independent biological review"
+        }
+      ],
+      "statistical_requirements": [
+        "Background universe",
+        "Identifier mapping loss",
+        "FDR correction",
+        "Directionality and evidence source"
+      ],
+      "summary": "Versioned enrichment, signed networks, background-universe control and evidence-linked pathway interpretation.",
+      "tags": [
+        "pathway",
+        "gsea",
+        "network",
+        "reactome"
+      ],
+      "title": "Pathway & Network Analysis"
+    },
+    {
+      "accepted_formats": [
+        "project metadata",
+        "compound series",
+        "assay results",
+        "evidence packages"
+      ],
+      "domain": "Discovery",
+      "evidence_boundary": "The command center organizes evidence and decisions; it does not replace experimental, legal, toxicological or regulatory review.",
+      "features_added": [
+        "Target product profile",
+        "Compound-series manager",
+        "Assay-result ingestion",
+        "Decision log",
+        "Candidate lineage",
+        "IP/FTO checklist",
+        "Cost/timeline estimate",
+        "Attrition reasons",
+        "Portfolio comparison"
+      ],
+      "key": "discovery_command",
+      "locked_source": false,
+      "native_formats": [
+        "CSV/TSV",
+        "JSON",
+        "SDF"
+      ],
+      "page_path": "pages/88_Discovery_Command_Center.py",
+      "python_packages": [],
+      "release_blockers": [
+        "No target/product profile",
+        "Untraceable candidate identity",
+        "Missing assay provenance",
+        "Go/no-go decision lacks evidence"
+      ],
+      "stages": [
+        {
+          "key": "target",
+          "label": "Target and product profile",
+          "mode": "built-in",
+          "purpose": "Define target rationale, target product profile, evidence gaps and decision criteria.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": ""
+        },
+        {
+          "key": "series",
+          "label": "Compound series and lineage",
+          "mode": "built-in",
+          "purpose": "Track standardized structures, series, analogs, assays and provenance.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": ""
+        },
+        {
+          "key": "rank",
+          "label": "Multi-objective candidate ranking",
+          "mode": "built-in",
+          "purpose": "Balance potency, selectivity, ADMET, structure and evidence without hiding trade-offs.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": ""
+        },
+        {
+          "key": "gate",
+          "label": "Stage-gate and decision log",
+          "mode": "built-in",
+          "purpose": "Capture go/no-go decisions, reviewers, reasons, costs and next experiments.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": ""
+        },
+        {
+          "key": "validate",
+          "label": "Experimental and governance validation",
+          "mode": "external-validation",
+          "purpose": "Require real assays, IP/FTO and qualified review before progression.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": "Stage-gate evidence approved"
+        }
+      ],
+      "statistical_requirements": [
+        "Prespecified gate criteria",
+        "Assay quality",
+        "Decision conflict review",
+        "Candidate lineage completeness"
+      ],
+      "summary": "Stage-gated target-to-lead portfolio with candidate lineage, assay evidence, decisions and attrition rationale.",
+      "tags": [
+        "discovery",
+        "portfolio",
+        "stage gate",
+        "candidate"
+      ],
+      "title": "Discovery Command Center"
+    },
+    {
+      "accepted_formats": [
+        "FASTA/GenBank",
+        "SBOL JSON/XML",
+        "CSV parts",
+        "construct map"
+      ],
+      "domain": "Lab Analytics",
+      "evidence_boundary": "Circuit simulations are hypotheses and require host-specific experimental and biosafety validation.",
+      "features_added": [
+        "SBOL 3 import/export",
+        "Versioned parts registry",
+        "Stochastic simulation",
+        "Host burden model",
+        "Crosstalk/failure-mode review",
+        "Plasmid assembly plan",
+        "Manufacturability checks",
+        "Biosafety checklist"
+      ],
+      "key": "synthetic_biology",
+      "locked_source": false,
+      "native_formats": [
+        "FASTA",
+        "GenBank",
+        "SBOL",
+        "CSV/TSV"
+      ],
+      "page_path": "pages/99_Synthetic_Biology_Circuit_Designer.py",
+      "python_packages": [],
+      "release_blockers": [
+        "Invalid construct sequence",
+        "Unspecified host context",
+        "No burden/failure review",
+        "No biosafety or experimental validation"
+      ],
+      "stages": [
+        {
+          "key": "parts",
+          "label": "Parts and construct identity",
+          "mode": "built-in",
+          "purpose": "Validate promoters, RBS, CDS, terminators, orientation and sequence integrity.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": ""
+        },
+        {
+          "key": "simulate",
+          "label": "Deterministic and stochastic simulation",
+          "mode": "built-in",
+          "purpose": "Model logic, dynamics and uncertainty with explicit parameters.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": ""
+        },
+        {
+          "key": "burden",
+          "label": "Host burden and crosstalk",
+          "mode": "built-in",
+          "purpose": "Assess resource competition, host context, cryptic elements and failure modes.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": ""
+        },
+        {
+          "key": "build",
+          "label": "Assembly and manufacturability plan",
+          "mode": "built-in",
+          "purpose": "Generate plasmid/assembly checks and sequence-level manufacturing warnings.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": ""
+        },
+        {
+          "key": "biosafety",
+          "label": "Biosafety and experimental validation",
+          "mode": "external-validation",
+          "purpose": "Require organization-approved biosafety and construct testing.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": "Biosafety and experimental evidence attached"
+        }
+      ],
+      "statistical_requirements": [
+        "Parameter uncertainty",
+        "Host-context sensitivity",
+        "Construct identity",
+        "Experimental replication"
+      ],
+      "summary": "SBOL-aware circuit design with stochastic simulation, host burden, construct manufacturability and biosafety review.",
+      "tags": [
+        "synthetic biology",
+        "sbol",
+        "circuit",
+        "plasmid"
+      ],
+      "title": "Synthetic Biology & Genetic Circuit Designer"
+    },
+    {
+      "accepted_formats": [
+        "CSV/TSV",
+        "XLSX",
+        "RDML",
+        "FCS",
+        "instrument exports"
+      ],
+      "domain": "Lab Analytics",
+      "evidence_boundary": "Successful parsing does not establish instrument qualification, method suitability or regulated-lab compliance.",
+      "features_added": [
+        "Vendor signature detection",
+        "Multi-sheet mapping",
+        "Raw file attachment",
+        "Instrument/software/firmware metadata",
+        "Calibration and lot tracking",
+        "Versioned mapping templates",
+        "Failed-row review",
+        "Audit import manifest"
+      ],
+      "key": "instrument_import",
+      "locked_source": true,
+      "native_formats": [
+        "CSV/TSV",
+        "XLSX",
+        "RDML",
+        "FCS"
+      ],
+      "page_path": "pages/109_Lab_Instrument_Import_Center.py",
+      "python_packages": [],
+      "release_blockers": [
+        "Unknown vendor/schema",
+        "Required metadata missing",
+        "Duplicate mapping",
+        "Unqualified instrument/method"
+      ],
+      "stages": [
+        {
+          "key": "detect",
+          "label": "File and vendor detection",
+          "mode": "built-in",
+          "purpose": "Detect format/vendor signatures without trusting file extensions alone.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": ""
+        },
+        {
+          "key": "map",
+          "label": "Schema mapping",
+          "mode": "built-in",
+          "purpose": "Apply versioned mapping templates and prevent duplicate semantic column assignments.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": ""
+        },
+        {
+          "key": "metadata",
+          "label": "Instrument and method metadata",
+          "mode": "built-in",
+          "purpose": "Preserve instrument ID, serial, software, firmware, calibration, reagent lot and SOP version.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": ""
+        },
+        {
+          "key": "review",
+          "label": "Failed-row and raw-trace review",
+          "mode": "built-in",
+          "purpose": "Keep raw files immutable and route parsing failures to a review queue.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": ""
+        },
+        {
+          "key": "qualification",
+          "label": "Instrument qualification",
+          "mode": "external-validation",
+          "purpose": "Require site-specific qualification and approved method governance.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": "Instrument/method qualification attached"
+        }
+      ],
+      "statistical_requirements": [
+        "Mapping completeness",
+        "Unit consistency",
+        "Duplicate semantic mapping",
+        "Instrument qualification status"
+      ],
+      "summary": "Vendor-aware, audit-ready instrument import with raw-file preservation, mapping templates and qualification metadata.",
+      "tags": [
+        "instrument",
+        "import",
+        "rdml",
+        "fcs",
+        "mapping"
+      ],
+      "title": "Lab Instrument Import Center"
+    },
+    {
+      "accepted_formats": [
+        "FASTA",
+        "GenBank",
+        "GFF/GTF",
+        "VCF",
+        "target CSV"
+      ],
+      "domain": "Lab Analytics",
+      "evidence_boundary": "Designed primers, guides and constructs require experimental specificity, efficiency and safety validation.",
+      "features_added": [
+        "Primer3/BLAST protected plans",
+        "Genome-build and isoform selection",
+        "Amplicon simulation",
+        "Multiplex compatibility",
+        "Base/prime editing modes",
+        "Population-variant overlays",
+        "mRNA/splice motif checks",
+        "Host codon profiles"
+      ],
+      "key": "primer_crispr_codon",
+      "locked_source": false,
+      "native_formats": [
+        "FASTA",
+        "GenBank",
+        "GFF/GTF",
+        "VCF/BCF"
+      ],
+      "page_path": "pages/58_Primer_CRISPR_Codon_Studio.py",
+      "python_packages": [],
+      "release_blockers": [
+        "Reference build mismatch",
+        "No genome-wide specificity",
+        "High-risk off-target",
+        "No wet-lab validation"
+      ],
+      "stages": [
+        {
+          "key": "target",
+          "label": "Target and build validation",
+          "mode": "built-in",
+          "purpose": "Validate coordinates, strand, transcript isoform and reference sequence.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": ""
+        },
+        {
+          "key": "primer",
+          "label": "Primer design and specificity",
+          "mode": "adapter",
+          "purpose": "Run Primer3 and prepare genome-wide specificity searches.",
+          "references": [
+            "Reference genome/transcriptome"
+          ],
+          "required_inputs": [],
+          "tools": [
+            "primer3_core",
+            "blastn"
+          ],
+          "validation_gate": "Amplicon and specificity reviewed"
+        },
+        {
+          "key": "crispr",
+          "label": "Guide design and off-target search",
+          "mode": "adapter",
+          "purpose": "Score guides and run build-aware off-target searches with variant overlays.",
+          "references": [
+            "Genome index",
+            "Population variants"
+          ],
+          "required_inputs": [],
+          "tools": [
+            "bowtie2",
+            "bcftools"
+          ],
+          "validation_gate": "Off-target and variant risks reviewed"
+        },
+        {
+          "key": "codon",
+          "label": "Codon and construct optimization",
+          "mode": "built-in",
+          "purpose": "Optimize host codons while checking GC, motifs, splice sites and mRNA-structure risks.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": ""
+        },
+        {
+          "key": "confirm",
+          "label": "Experimental validation",
+          "mode": "external-validation",
+          "purpose": "Confirm primer/guide performance and construct expression experimentally.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": "Wet-lab evidence attached"
+        }
+      ],
+      "statistical_requirements": [
+        "Specificity thresholds",
+        "Amplicon/guide coverage",
+        "Population variant risk",
+        "Experimental efficiency"
+      ],
+      "summary": "Build-aware primer, guide and codon design with specificity, isoform, population-variant and manufacturability safeguards.",
+      "tags": [
+        "primer",
+        "crispr",
+        "codon",
+        "primer3"
+      ],
+      "title": "Primer, CRISPR & Codon Studio"
+    },
+    {
+      "accepted_formats": [
+        "CSV/TSV",
+        "XLSX",
+        "RDML",
+        "plate exports",
+        "bioreactor time series"
+      ],
+      "domain": "Lab Analytics",
+      "evidence_boundary": "Research calculations require laboratory-specific method validation, instrument qualification and qualified review for regulated use.",
+      "features_added": [
+        "Duplicate mapping block",
+        "qPCR role/control handling",
+        "MIQE metadata",
+        "ELISA 4PL/5PL complexity guards",
+        "LLOQ/ULOQ safe output",
+        "Initial-rate direction QC",
+        "Per-batch bioprocess",
+        "Units registry",
+        "Run bundle"
+      ],
+      "key": "wet_lab",
+      "locked_source": false,
+      "native_formats": [
+        "CSV/TSV",
+        "XLSX",
+        "RDML"
+      ],
+      "page_path": "pages/64_Wet_Lab_Biotechnology.py",
+      "python_packages": [
+        "scipy",
+        "statsmodels"
+      ],
+      "release_blockers": [
+        "Missing controls",
+        "Unsafe calibration extrapolation",
+        "Mixed units",
+        "No method/run approval"
+      ],
+      "stages": [
+        {
+          "key": "schema",
+          "label": "Assay schema and controls",
+          "mode": "built-in",
+          "purpose": "Validate one-to-one column mapping, roles, units, controls, replicates and batches.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": ""
+        },
+        {
+          "key": "qpcr",
+          "label": "qPCR analysis",
+          "mode": "built-in",
+          "purpose": "Handle raw/Cq workflows, role filtering, efficiency, reference genes and biological-replicate inference.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": ""
+        },
+        {
+          "key": "elisa",
+          "label": "ELISA calibration and validation",
+          "mode": "built-in",
+          "purpose": "Use model-complexity guards, safe range labels, QC levels and spatial plate checks.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": ""
+        },
+        {
+          "key": "kinetics",
+          "label": "Enzyme kinetics",
+          "mode": "built-in",
+          "purpose": "Control initial-rate direction/window, units, mechanism comparison and parameter uncertainty.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": ""
+        },
+        {
+          "key": "bioprocess",
+          "label": "Batch/mode-aware bioprocess",
+          "mode": "built-in",
+          "purpose": "Process reactors independently and apply batch/fed-batch/continuous/perfusion equations.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": ""
+        },
+        {
+          "key": "approve",
+          "label": "Method and run approval",
+          "mode": "external-validation",
+          "purpose": "Require laboratory-specific method validation and qualified review.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": "Approved method and run decision attached"
+        }
+      ],
+      "statistical_requirements": [
+        "Biological vs technical replicates",
+        "Accuracy/precision",
+        "Confidence intervals",
+        "Spatial plate effects",
+        "Batch and method versions"
+      ],
+      "summary": "Reliable qPCR, ELISA, enzyme kinetics and bioprocess analytics with explicit units, controls, uncertainty and run-level QC.",
+      "tags": [
+        "qpcr",
+        "elisa",
+        "kinetics",
+        "bioprocess"
+      ],
+      "title": "Wet-Lab Biotechnology"
+    },
+    {
+      "accepted_formats": [
+        "FASTQ",
+        "FASTA",
+        "abundance CSV/TSV",
+        "phenotype table"
+      ],
+      "domain": "Lab Analytics",
+      "evidence_boundary": "Taxonomic and genomic trait predictions depend on controls, coverage and database versions and require laboratory confirmation.",
+      "features_added": [
+        "Species confirmation stack",
+        "MLST/cgMLST readiness",
+        "ANI and assembly QC",
+        "AMR/virulence plans",
+        "Plasmid/mobile-element checklist",
+        "Phenotype-genotype concordance",
+        "Versioned references"
+      ],
+      "key": "microbiology_metagenomics",
+      "locked_source": false,
+      "native_formats": [
+        "FASTQ",
+        "FASTA",
+        "CSV/TSV"
+      ],
+      "page_path": "pages/65_Microbiology_Metagenomics.py",
+      "python_packages": [],
+      "release_blockers": [
+        "No controls",
+        "Species uncertainty",
+        "Unpinned databases",
+        "No confirmatory laboratory evidence"
+      ],
+      "stages": [
+        {
+          "key": "qc",
+          "label": "Read/assembly and control QC",
+          "mode": "built-in",
+          "purpose": "Validate controls, coverage, assembly quality, contamination and sample metadata.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": ""
+        },
+        {
+          "key": "species",
+          "label": "Species confirmation",
+          "mode": "adapter",
+          "purpose": "Run Kraken2/Mash/FastANI with pinned references.",
+          "references": [
+            "Taxonomy/genome database"
+          ],
+          "required_inputs": [],
+          "tools": [
+            "kraken2",
+            "mash",
+            "fastANI"
+          ],
+          "validation_gate": "Species confidence and database release reviewed"
+        },
+        {
+          "key": "typing",
+          "label": "MLST/cgMLST and isolate comparison",
+          "mode": "adapter",
+          "purpose": "Run MLST and prepare cgMLST/SNP handoffs.",
+          "references": [
+            "Typing scheme"
+          ],
+          "required_inputs": [],
+          "tools": [
+            "mlst"
+          ],
+          "validation_gate": "Scheme compatibility reviewed"
+        },
+        {
+          "key": "traits",
+          "label": "AMR, virulence and mobile elements",
+          "mode": "adapter",
+          "purpose": "Run AMRFinderPlus/ResFinder and compare phenotype-genotype evidence.",
+          "references": [
+            "AMR/virulence database"
+          ],
+          "required_inputs": [],
+          "tools": [
+            "amrfinder",
+            "run_resfinder.py"
+          ],
+          "validation_gate": "Discordance and mutation evidence reviewed"
+        },
+        {
+          "key": "confirm",
+          "label": "Laboratory confirmation",
+          "mode": "external-validation",
+          "purpose": "Confirm organism identity and resistance/virulence findings with qualified laboratory methods.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": "Confirmatory evidence attached"
+        }
+      ],
+      "statistical_requirements": [
+        "Negative/mock controls",
+        "Database version",
+        "Coverage/completeness",
+        "Phenotype-genotype concordance"
+      ],
+      "summary": "Isolate and community screening with species confirmation, typing, AMR/virulence and versioned reference controls.",
+      "tags": [
+        "microbiology",
+        "mlst",
+        "amr",
+        "kraken"
+      ],
+      "title": "Microbiology & Metagenomics"
+    },
+    {
+      "accepted_formats": [
+        "assay projects",
+        "sample/plate metadata",
+        "run manifests",
+        "QC results"
+      ],
+      "domain": "Lab Analytics",
+      "evidence_boundary": "The command center organizes laboratory evidence but does not itself establish GLP/GMP compliance or method validity.",
+      "features_added": [
+        "Assay Run Registry",
+        "Sample/plate registry",
+        "Method versioning",
+        "Instrument status",
+        "QC blocker board",
+        "Cross-run comparison",
+        "Approval queue",
+        "Reanalysis workflow",
+        "Control-chart trends"
+      ],
+      "key": "lab_command",
+      "locked_source": false,
+      "native_formats": [
+        "CSV/TSV",
+        "JSON",
+        "XLSX"
+      ],
+      "page_path": "pages/89_Lab_Analytics_Command_Center.py",
+      "python_packages": [],
+      "release_blockers": [
+        "No method version",
+        "Missing controls/artifacts",
+        "Unresolved QC blockers",
+        "No qualified approval"
+      ],
+      "stages": [
+        {
+          "key": "plan",
+          "label": "Method and run planning",
+          "mode": "built-in",
+          "purpose": "Define method version, controls, sample/plate layout, instrument and acceptance criteria.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": ""
+        },
+        {
+          "key": "execute",
+          "label": "Active run timeline",
+          "mode": "built-in",
+          "purpose": "Track stages, samples, plates, artifacts, failures and retries across modules.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": ""
+        },
+        {
+          "key": "qc",
+          "label": "QC blocker aggregation",
+          "mode": "built-in",
+          "purpose": "Aggregate assay-specific QC without flattening different methods into one score.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": ""
+        },
+        {
+          "key": "review",
+          "label": "Review, reanalysis and approval",
+          "mode": "built-in",
+          "purpose": "Manage reviewer decisions, reanalysis reasons and version-linked reports.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": ""
+        },
+        {
+          "key": "regulated",
+          "label": "Regulated deployment",
+          "mode": "external-validation",
+          "purpose": "Require organization-specific validation, signatures and SOP governance.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": "Organization approval and validation attached"
+        }
+      ],
+      "statistical_requirements": [
+        "Method-specific acceptance criteria",
+        "Run-to-run drift",
+        "Reviewer disagreement",
+        "Artifact completeness"
+      ],
+      "summary": "Unified assay lifecycle, sample/plate/run registry, QC blockers, approval and cross-run trend review.",
+      "tags": [
+        "lab",
+        "run registry",
+        "qc",
+        "approval"
+      ],
+      "title": "Lab Analytics Command Center"
+    },
+    {
+      "accepted_formats": [
+        "FASTQ",
+        "FASTQ.GZ",
+        "FASTA",
+        "sample metadata",
+        "abundance tables"
+      ],
+      "domain": "Lab Analytics",
+      "evidence_boundary": "Metagenomic profiles depend strongly on controls, databases, coverage and compositional methods and require confirmatory interpretation.",
+      "features_added": [
+        "Fastp/Bowtie2/Kraken2/Bracken/MetaPhlAn plans",
+        "Reference downloader/checksums",
+        "Per-sample parallel scheduling",
+        "Checkpoint resume",
+        "Functional/AMR profiling",
+        "ANCOM-BC/ALDEx2/MaAsLin contracts",
+        "Longitudinal models",
+        "STORMS report"
+      ],
+      "key": "metagenomics_pipeline",
+      "locked_source": false,
+      "native_formats": [
+        "FASTQ",
+        "FASTA",
+        "CSV/TSV"
+      ],
+      "page_path": "pages/82_Metagenomics_Pipeline.py",
+      "python_packages": [],
+      "release_blockers": [
+        "No controls",
+        "Unpinned databases",
+        "Host depletion missing",
+        "Non-compositional statistics",
+        "No confirmatory review"
+      ],
+      "stages": [
+        {
+          "key": "qc",
+          "label": "Read QC and host depletion",
+          "mode": "adapter",
+          "purpose": "Run fastp and Bowtie2 with paired-end synchronization and pinned host index.",
+          "references": [
+            "Host index"
+          ],
+          "required_inputs": [],
+          "tools": [
+            "fastp",
+            "bowtie2"
+          ],
+          "validation_gate": "Retention and host-depletion metrics reviewed"
+        },
+        {
+          "key": "taxonomy",
+          "label": "Taxonomic profiling",
+          "mode": "adapter",
+          "purpose": "Run Kraken2/Bracken and optional MetaPhlAn using pinned databases.",
+          "references": [
+            "Taxonomy database"
+          ],
+          "required_inputs": [],
+          "tools": [
+            "kraken2",
+            "bracken",
+            "metaphlan"
+          ],
+          "validation_gate": "Database release and controls reviewed"
+        },
+        {
+          "key": "functional",
+          "label": "Functional and AMR/virulence profiling",
+          "mode": "adapter",
+          "purpose": "Run HUMAnN and trait databases with explicit release metadata.",
+          "references": [
+            "Functional/AMR database"
+          ],
+          "required_inputs": [],
+          "tools": [
+            "humann",
+            "amrfinder"
+          ],
+          "validation_gate": "Coverage and database suitability reviewed"
+        },
+        {
+          "key": "statistics",
+          "label": "Compositional and longitudinal analysis",
+          "mode": "built-in",
+          "purpose": "Use CLR and specialist adapters with replicate-aware designs and multiple-testing control.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": ""
+        },
+        {
+          "key": "report",
+          "label": "STORMS and confirmatory review",
+          "mode": "external-validation",
+          "purpose": "Export reporting checklist and confirm priority findings with suitable methods.",
+          "references": [],
+          "required_inputs": [],
+          "tools": [],
+          "validation_gate": "Reporting and confirmatory evidence complete"
+        }
+      ],
+      "statistical_requirements": [
+        "Negative/mock controls",
+        "Compositional data boundary",
+        "Database release",
+        "Sample-level replication",
+        "Multiple-testing correction"
+      ],
+      "summary": "Checkpointed raw-read metagenomics with host depletion, taxonomy, functional profiling, resistome/virulome and compositional statistics.",
+      "tags": [
+        "metagenomics",
+        "kraken",
+        "bracken",
+        "humann",
+        "storms"
+      ],
+      "title": "Metagenomics Pipeline"
+    }
+  ],
+  "principles": [
+    "Execution tier must reflect installed tools and references rather than visual completeness.",
+    "External-validation stages are never auto-passed by software.",
+    "Every protected plan is an argument vector; shell interpolation is prohibited.",
+    "Statistical modules must report effect sizes, uncertainty and multiplicity control.",
+    "Native scientific formats use bounded, disk-backed or adapter-aware processing."
+  ],
+  "release": "13.2.0",
+  "schema": "biointel.step127.scientific-depth.v1"
+}

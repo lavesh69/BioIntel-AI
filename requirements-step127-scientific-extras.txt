@@ -1,0 +1,6 @@
+# Optional scientific depth stack for Step 127.
+# Install only from the verified wheelhouse or trusted official sources.
+-r requirements-bioinformatics.txt
+-r requirements-step120-scientific-extras.txt
+pyarrow>=18,<20
+pyteomics>=4.7,<5

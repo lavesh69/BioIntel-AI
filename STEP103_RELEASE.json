@@ -1,0 +1,30 @@
+{
+  "schema": "biointel.step103.release.v1",
+  "version": "10.3.0",
+  "base": "10.2.0",
+  "release_name": "Advanced Scientific Depth",
+  "upgraded_module_count": 21,
+  "page_range": "112-132",
+  "hub_page": 133,
+  "capabilities": [
+    "scientific_file_import",
+    "fasta_vcf_bed_h5ad_mtx_image_structure_mzml_support",
+    "replicate_aware_statistics",
+    "multiple_testing_fdr",
+    "effect_sizes_and_quality_control",
+    "survival_roc_calibration_privacy_metrics",
+    "spatial_autocorrelation_and_trajectory_trends",
+    "optional_specialist_tool_detection",
+    "multi_table_csv_exports",
+    "json_evidence_manifest_v2"
+  ],
+  "qualification": {
+    "python_compilation": "passed",
+    "advanced_demo_analysis_matrix": "21/21 passed",
+    "scientific_import_matrix": "8/8 passed",
+    "streamlit_page_apptest": "22/22 passed",
+    "targeted_regression_tests": "27/27 passed",
+    "package_integrity": "internal SHA-256 manifest regenerated and verified"
+  },
+  "scientific_boundary": "Exploratory research software. Specialist external tools, reference databases, clinical governance, experimental validation and regulated qualification remain required where applicable."
+}

@@ -1,0 +1,12 @@
+version: 1
+requirements:
+  preregistration_before_outcomes: true
+  immutable_model_hash: true
+  immutable_dataset_hash: true
+  locked_predictions: true
+  blinded_sample_codes: true
+  independent_laboratory_for_10_of_10: true
+  predefined_primary_endpoint: true
+  predefined_success_criterion: true
+  all_failures_reported: true
+  independent_review_required: true

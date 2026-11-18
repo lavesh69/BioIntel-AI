@@ -1,0 +1,17 @@
+{{- range $component := list "api" "streamlit" "worker" }}
+{{- $cfg := index $.Values $component }}
+{{- if $cfg.pdb.enabled }}
+---
+apiVersion: policy/v1
+kind: PodDisruptionBudget
+metadata:
+  name: {{ include "biointel.fullname" $ }}-{{ $component }}
+spec:
+  minAvailable: {{ $cfg.pdb.minAvailable }}
+  unhealthyPodEvictionPolicy: {{ $.Values.podDisruptionBudget.unhealthyPodEvictionPolicy }}
+  selector:
+    matchLabels:
+      {{- include "biointel.selectorLabels" $ | nindent 6 }}
+      app.kubernetes.io/component: {{ $component }}
+{{- end }}
+{{- end }}

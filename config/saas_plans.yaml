@@ -1,0 +1,35 @@
+schema: biointel.saas-plans/v1
+plans:
+  starter:
+    entitlements:
+      core_research: true
+      regulated_workflows: false
+      private_model_registry: false
+    quotas:
+      api_calls: 10000
+      storage_gb: 10
+      training_jobs: 10
+  professional:
+    entitlements:
+      core_research: true
+      regulated_workflows: false
+      private_model_registry: true
+    quotas:
+      api_calls: 100000
+      storage_gb: 250
+      training_jobs: 250
+  enterprise:
+    entitlements:
+      core_research: true
+      regulated_workflows: true
+      private_model_registry: true
+      sso: true
+      audit_export: true
+    quotas:
+      api_calls: null
+      storage_gb: null
+      training_jobs: null
+commercial_boundary:
+  payment_processor: external
+  taxation: external_legal_and_finance_review
+  contracts: external_legal_review

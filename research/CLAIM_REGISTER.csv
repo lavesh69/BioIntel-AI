@@ -1,0 +1,7 @@
+claim,status,evidence,allowed_wording
+80-module internal execution,verified,STEP191_INTERNAL_BENCHMARK_RESULTS.csv,All 80 deterministic internal workflows executed successfully
+repeatability,verified,per-module SHA-256 outputs,Three repeat runs produced matching output hashes
+clinical validation,blocked,no independent clinical evidence,Do not claim
+wet-lab validation,blocked,no wet-lab evidence,Do not claim
+regulatory approval,blocked,no regulatory approval,Do not claim
+superiority to established tools,blocked,no external comparator study,Do not claim

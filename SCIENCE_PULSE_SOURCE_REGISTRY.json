@@ -1,0 +1,197 @@
+[
+  {
+    "approved_by_default": true,
+    "base_url": "https://eutils.ncbi.nlm.nih.gov",
+    "content_types": [
+      "publication"
+    ],
+    "enabled_by_default": true,
+    "high_priority": false,
+    "implementation_status": "IMPLEMENTED_REQUIRES_EXTERNAL_VALIDATION",
+    "key": "pubmed",
+    "kind": "api",
+    "license_note": "Metadata subject to NLM terms",
+    "name": "PubMed",
+    "ownership": "U.S. NLM",
+    "schedule_seconds": 21600
+  },
+  {
+    "approved_by_default": true,
+    "base_url": "https://www.ebi.ac.uk",
+    "content_types": [
+      "publication",
+      "preprint"
+    ],
+    "enabled_by_default": true,
+    "high_priority": false,
+    "implementation_status": "IMPLEMENTED_REQUIRES_EXTERNAL_VALIDATION",
+    "key": "europe_pmc",
+    "kind": "api",
+    "license_note": "",
+    "name": "Europe PMC",
+    "ownership": "EMBL-EBI",
+    "schedule_seconds": 21600
+  },
+  {
+    "approved_by_default": true,
+    "base_url": "https://api.crossref.org",
+    "content_types": [
+      "publication",
+      "correction",
+      "retraction"
+    ],
+    "enabled_by_default": true,
+    "high_priority": false,
+    "implementation_status": "IMPLEMENTED_REQUIRES_EXTERNAL_VALIDATION",
+    "key": "crossref",
+    "kind": "api",
+    "license_note": "Metadata API",
+    "name": "Crossref",
+    "ownership": "Crossref",
+    "schedule_seconds": 21600
+  },
+  {
+    "approved_by_default": true,
+    "base_url": "https://api.openalex.org",
+    "content_types": [
+      "publication"
+    ],
+    "enabled_by_default": true,
+    "high_priority": false,
+    "implementation_status": "IMPLEMENTED_REQUIRES_EXTERNAL_VALIDATION",
+    "key": "openalex",
+    "kind": "api",
+    "license_note": "",
+    "name": "OpenAlex",
+    "ownership": "OurResearch",
+    "schedule_seconds": 21600
+  },
+  {
+    "approved_by_default": true,
+    "base_url": "https://api.biorxiv.org",
+    "content_types": [
+      "preprint"
+    ],
+    "enabled_by_default": true,
+    "high_priority": false,
+    "implementation_status": "IMPLEMENTED_REQUIRES_EXTERNAL_VALIDATION",
+    "key": "biorxiv",
+    "kind": "api",
+    "license_note": "",
+    "name": "bioRxiv",
+    "ownership": "Cold Spring Harbor Laboratory",
+    "schedule_seconds": 21600
+  },
+  {
+    "approved_by_default": true,
+    "base_url": "https://api.biorxiv.org",
+    "content_types": [
+      "preprint"
+    ],
+    "enabled_by_default": true,
+    "high_priority": false,
+    "implementation_status": "IMPLEMENTED_REQUIRES_EXTERNAL_VALIDATION",
+    "key": "medrxiv",
+    "kind": "api",
+    "license_note": "",
+    "name": "medRxiv",
+    "ownership": "Cold Spring Harbor Laboratory",
+    "schedule_seconds": 21600
+  },
+  {
+    "approved_by_default": true,
+    "base_url": "https://export.arxiv.org",
+    "content_types": [
+      "preprint"
+    ],
+    "enabled_by_default": true,
+    "high_priority": false,
+    "implementation_status": "IMPLEMENTED_REQUIRES_EXTERNAL_VALIDATION",
+    "key": "arxiv",
+    "kind": "api",
+    "license_note": "",
+    "name": "arXiv",
+    "ownership": "Cornell University",
+    "schedule_seconds": 21600
+  },
+  {
+    "approved_by_default": true,
+    "base_url": "https://clinicaltrials.gov",
+    "content_types": [
+      "clinical_trial"
+    ],
+    "enabled_by_default": true,
+    "high_priority": false,
+    "implementation_status": "IMPLEMENTED_REQUIRES_EXTERNAL_VALIDATION",
+    "key": "clinicaltrials",
+    "kind": "api",
+    "license_note": "",
+    "name": "ClinicalTrials.gov",
+    "ownership": "U.S. NLM",
+    "schedule_seconds": 21600
+  },
+  {
+    "approved_by_default": true,
+    "base_url": "https://api.datacite.org",
+    "content_types": [
+      "dataset"
+    ],
+    "enabled_by_default": true,
+    "high_priority": false,
+    "implementation_status": "IMPLEMENTED_REQUIRES_EXTERNAL_VALIDATION",
+    "key": "datacite",
+    "kind": "api",
+    "license_note": "",
+    "name": "DataCite",
+    "ownership": "DataCite",
+    "schedule_seconds": 21600
+  },
+  {
+    "approved_by_default": true,
+    "base_url": "https://api.eventdata.crossref.org",
+    "content_types": [
+      "event"
+    ],
+    "enabled_by_default": true,
+    "high_priority": false,
+    "implementation_status": "IMPLEMENTED_REQUIRES_EXTERNAL_VALIDATION",
+    "key": "crossref_event_data",
+    "kind": "api",
+    "license_note": "",
+    "name": "Crossref Event Data",
+    "ownership": "Crossref",
+    "schedule_seconds": 86400
+  },
+  {
+    "approved_by_default": true,
+    "base_url": "https://www.nature.com/nbt.rss",
+    "content_types": [
+      "news"
+    ],
+    "enabled_by_default": true,
+    "high_priority": true,
+    "implementation_status": "IMPLEMENTED_REQUIRES_EXTERNAL_VALIDATION",
+    "key": "rss_nature_biotechnology",
+    "kind": "rss",
+    "license_note": "",
+    "name": "Nature Biotechnology",
+    "ownership": "Springer Nature",
+    "schedule_seconds": 3600
+  },
+  {
+    "approved_by_default": true,
+    "base_url": "https://www.sciencedaily.com/rss/plants_animals/biology.xml",
+    "content_types": [
+      "news"
+    ],
+    "enabled_by_default": true,
+    "high_priority": false,
+    "implementation_status": "IMPLEMENTED_REQUIRES_EXTERNAL_VALIDATION",
+    "key": "rss_sciencedaily_biology",
+    "kind": "rss",
+    "license_note": "",
+    "name": "ScienceDaily Biology",
+    "ownership": "ScienceDaily",
+    "schedule_seconds": 10800
+  }
+]

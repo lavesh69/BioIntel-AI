@@ -1,0 +1,78 @@
+schema: biointel.step41.realworld-evidence-policy.v1
+policy_name: Real-world deployment, customer, publication and regulatory evidence
+scoring:
+  implementation_readiness: repository controls, tests, templates, APIs and qualification automation
+  external_evidence: only completed, checksum-valid, independently attested records
+  external_attestation: required
+  demo_template_rehearsal_simulation: never_release_eligible
+areas:
+  pharma_rnd_deployment:
+    minimum_days: 90
+    required_artifacts: [deployment_dossier, scientific_outcome_report]
+  clinical_deployment:
+    minimum_days: 90
+    ethics_approval: required
+    required_artifacts: [clinical_protocol, ethics_decision]
+  publication_grade_dti:
+    doi: required
+    required_artifacts: [manuscript, dataset, source_code, reproducibility_bundle]
+  peer_reviewed_validation:
+    independent_reviews: 2
+    doi: required
+  regulatory_approval:
+    required_artifacts: [regulatory_decision_letter]
+    required_metadata: [regulatory_authority, approval_id, intended_use]
+  gxp_operating_history:
+    minimum_days: 180
+    training_compliance: 0.95
+    audit_trail_completeness: 0.99
+    capa_closure_rate: 0.90
+  regulatory_inspection:
+    open_critical_findings: 0
+    required_artifacts: [inspection_report]
+  production_sla_history:
+    minimum_days: 90
+    availability_percent: 99.9
+    maximum_error_rate_percent: 1.0
+    maximum_p95_latency_ms: 1000
+  multitenant_production:
+    minimum_days: 90
+    external_tenants: 3
+    isolation_tests: 1000
+    confirmed_isolation_breaches: 0
+  kubernetes_production:
+    minimum_days: 90
+    availability_zones: 2
+    successful_upgrades: 1
+  cloud_scale:
+    total_requests: 1000000
+    autoscale_events: 10
+    regions: 2
+  sustained_high_load:
+    minimum_hours: 24
+    total_requests: 1000000
+    maximum_error_rate_percent: 1.0
+    maximum_p95_latency_ms: 1000
+  disaster_recovery_drill:
+    maximum_rto_minutes: 240
+    maximum_rpo_minutes: 60
+    restore_checksum_match: 1
+  high_availability:
+    minimum_days: 90
+    availability_percent: 99.95
+    successful_failovers: 1
+    availability_zones: 2
+  commercial_saas_history:
+    minimum_days: 180
+    paying_customers: 3
+    completed_billing_cycles: 3
+    support_sla_percent: 95
+  enterprise_customer_validation:
+    minimum_days: 30
+    signed_customer_acceptance: required
+  pharma_customer_validation:
+    minimum_days: 30
+    customer_sector: pharmaceutical
+    scientific_decisions_supported: 1
+  overall_platform_maturity:
+    rule: all preceding areas require at least one qualifying record

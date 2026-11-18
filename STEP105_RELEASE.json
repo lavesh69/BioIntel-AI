@@ -1,0 +1,36 @@
+{
+  "schema": "biointel.step105.release.v1",
+  "version": "10.5.0",
+  "step": 105,
+  "release_name": "Reliability, Runtime and Module Error Optimization",
+  "scope": "Cross-release hardening for Step 102-104 modules and shared platform services",
+  "verified_new_module_pages": 52,
+  "static_page_audit": 165,
+  "high_risk_upload_pages": 8,
+  "major_repairs": [
+    "Removed duplicate theme initialization that generated Streamlit session-state runtime errors.",
+    "Added shared theme bootstrap to all Step 102-104 expansion pages.",
+    "Fixed nested JSON duplicate profiling and headerless Reactome pathway parsing.",
+    "Preserved generic laboratory CSV and Excel schemas while retaining vendor-aware normalization.",
+    "Added idempotent analytics warehouse and dataset readiness backfill with real bundled-file profiling.",
+    "Reduced repeated diagnostics and report scans through single-pass quick diagnostics.",
+    "Normalized navigation categories, reduced featured-page clutter and repaired typo-aware search ranking.",
+    "Added upload size, extension and empty-file preflight to eight high-risk pages.",
+    "Synchronized desktop, mobile, store, Helm, Terraform, runtime and policy release versions.",
+    "Replaced lexicographic plugin-version comparison with semantic numeric comparison.",
+    "Added Windows wheelhouse preflight and raised configured upload capacity to 2 GB."
+  ],
+  "verification": {
+    "new_module_runtime": "52/52 pages passed with zero captured exceptions and zero new runtime error logs",
+    "upload_module_runtime": "8/8 high-risk upload pages passed",
+    "static_ui_audit": "165/165 pages passed with zero warnings",
+    "scientific_and_platform_regression": "release and targeted regression suites passed",
+    "analytics_warehouse": "15000 run events, 1800 daily metrics, 90 quality snapshots, 720 system samples, 80 alerts",
+    "dataset_readiness": "66/66 registered datasets have readiness records, schema and QC coverage"
+  },
+  "boundaries": [
+    "External specialist engines are detected or integrated explicitly; proxy analyses are not represented as genuine external-tool output.",
+    "Clinical, diagnostic, regulatory and patient-care use still requires independent validation and qualified review.",
+    "The complete 165-page runtime sweep is resource-intensive; all 165 pages passed static validation, while new and high-risk pages received isolated runtime validation."
+  ]
+}

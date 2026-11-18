@@ -1,0 +1,25 @@
+version: 1
+targets:
+  official_providers: 9
+  unique_provider_snapshots: 25
+  experimental_records: 10000
+  unique_molecules: 2000
+  unique_targets: 500
+  organisms: 12
+  assay_types: 8
+  tissues: 25
+  cell_lines: 25
+  publications: 500
+  clinical_trials: 1000
+  structures: 500
+  release_eligible_records: 5000
+organism_minimums:
+  Homo sapiens: 1000
+  Mus musculus: 250
+  Rattus norvegicus: 250
+  Danio rerio: 100
+  Saccharomyces cerevisiae: 100
+  Escherichia coli: 100
+  Arabidopsis thaliana: 100
+  Plasmodium falciparum: 100
+  Severe acute respiratory syndrome coronavirus 2: 100

@@ -1,0 +1,23 @@
+{
+  "schema": "biointel.model-candidate-policy.v217",
+  "automatic_qualification": false,
+  "required_controls": [
+    "model_card.json",
+    "dataset_manifest.json",
+    "metrics.json",
+    "FILE_MANIFEST_SHA256.json",
+    "artifact SHA-256",
+    "licence and redistribution decision",
+    "task-matched independent external validation",
+    "temporal, scaffold or protein-cluster generalisation",
+    "calibration and subgroup analysis",
+    "applicability domain and limitations"
+  ],
+  "prohibited_release_states": [
+    "synthetic-demo",
+    "unknown-licence",
+    "missing-artifact-hash",
+    "self-reported-only",
+    "wrong-domain-benchmark"
+  ]
+}

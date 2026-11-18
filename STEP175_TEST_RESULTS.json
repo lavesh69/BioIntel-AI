@@ -1,0 +1,41 @@
+{
+  "schema": "biointel.step175.test-results.v1",
+  "status": "passed",
+  "version": "14.7.0",
+  "completed_suites": [
+    {
+      "suite": "step170_runtime_reference",
+      "passed": 8,
+      "failed": 0
+    },
+    {
+      "suite": "step171_authentic_models",
+      "passed": 5,
+      "failed": 0
+    },
+    {
+      "suite": "step172_external_confirmation",
+      "passed": 5,
+      "failed": 0
+    },
+    {
+      "suite": "step173_final_readiness",
+      "passed": 5,
+      "failed": 0
+    },
+    {
+      "suite": "step174_phase_execution",
+      "passed": 6,
+      "failed": 0
+    },
+    {
+      "suite": "step175_target_environment",
+      "passed": 6,
+      "failed": 0
+    }
+  ],
+  "completed_tests_passed": 35,
+  "completed_tests_failed": 0,
+  "incomplete_long_running_attempts_not_claimed": true,
+  "notes": "A grouped historical command crossed the execution cap; only individually completed suites are counted."
+}

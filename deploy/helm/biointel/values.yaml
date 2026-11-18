@@ -1,0 +1,160 @@
+global:
+  imagePullSecrets: []
+  podAnnotations: {}
+  podLabels: {}
+
+image:
+  repository: biointel-ai
+  tag: "15.6.0"
+  pullPolicy: IfNotPresent
+
+serviceAccount:
+  create: true
+  automount: false
+  annotations: {}
+  name: ""
+
+securityContext:
+  runAsNonRoot: true
+  runAsUser: 10001
+  runAsGroup: 10001
+  fsGroup: 10001
+  seccompProfile:
+    type: RuntimeDefault
+
+containerSecurityContext:
+  allowPrivilegeEscalation: false
+  readOnlyRootFilesystem: true
+  capabilities:
+    drop: ["ALL"]
+
+config:
+  environment: production
+  trustedHosts: "biointel-api,biointel-streamlit,localhost,127.0.0.1"
+  officialHostsOnly: "1"
+  apiRateLimit: "120"
+  preloadModels: "1"
+  preloadModelLimit: "6"
+  defaultTenant: "default"
+
+secrets:
+  create: true
+  databaseUrl: ""
+  redisUrl: ""
+  objectStorageEndpoint: ""
+  objectStorageAccessKey: ""
+  objectStorageSecretKey: ""
+  apiClientsJson: ""
+
+persistence:
+  models:
+    enabled: true
+    existingClaim: ""
+    size: 10Gi
+    storageClass: ""
+    accessModes: ["ReadOnlyMany"]
+  data:
+    enabled: true
+    existingClaim: ""
+    size: 20Gi
+    storageClass: ""
+    accessModes: ["ReadWriteMany"]
+  reports:
+    enabled: true
+    existingClaim: ""
+    size: 20Gi
+    storageClass: ""
+    accessModes: ["ReadWriteMany"]
+
+api:
+  replicas: 2
+  port: 8000
+  resources:
+    requests: {cpu: 500m, memory: 1Gi}
+    limits: {cpu: "2", memory: 4Gi}
+  autoscaling:
+    enabled: true
+    minReplicas: 2
+    maxReplicas: 10
+    targetCPUUtilizationPercentage: 70
+    targetMemoryUtilizationPercentage: 75
+  pdb:
+    enabled: true
+    minAvailable: 1
+  topologySpread: true
+
+streamlit:
+  replicas: 2
+  port: 8501
+  resources:
+    requests: {cpu: 300m, memory: 768Mi}
+    limits: {cpu: "2", memory: 3Gi}
+  autoscaling:
+    enabled: true
+    minReplicas: 2
+    maxReplicas: 8
+    targetCPUUtilizationPercentage: 70
+    targetMemoryUtilizationPercentage: 75
+  pdb:
+    enabled: true
+    minAvailable: 1
+
+worker:
+  replicas: 2
+  autoscaling:
+    enabled: true
+    minReplicas: 2
+    maxReplicas: 30
+    targetCPUUtilizationPercentage: 70
+    targetMemoryUtilizationPercentage: 80
+  resources:
+    requests: {cpu: 500m, memory: 1Gi}
+    limits: {cpu: "4", memory: 8Gi}
+  pdb:
+    enabled: true
+    minAvailable: 1
+
+services:
+  api:
+    type: ClusterIP
+    port: 8000
+  streamlit:
+    type: ClusterIP
+    port: 8501
+
+ingress:
+  enabled: false
+  className: nginx
+  annotations: {}
+  hosts:
+    - host: biointel.example.com
+      paths:
+        - path: /
+          pathType: Prefix
+          service: streamlit
+        - path: /api
+          pathType: Prefix
+          service: api
+  tls: []
+
+networkPolicy:
+  enabled: true
+  ingressNamespaceSelector: {}
+  allowedEgressCIDRs: []
+
+podDisruptionBudget:
+  unhealthyPodEvictionPolicy: AlwaysAllow
+
+migrationJob:
+  enabled: true
+  backoffLimit: 3
+
+monitoring:
+  serviceMonitor:
+    enabled: false
+    interval: 30s
+    labels: {}
+
+nodeSelector: {}
+tolerations: []
+affinity: {}

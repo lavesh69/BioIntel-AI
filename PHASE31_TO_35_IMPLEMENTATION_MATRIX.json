@@ -1,0 +1,81 @@
+{
+  "schema": "biointel.phase31-to-35.implementation-matrix.v1",
+  "generated_at_utc": "2026-07-30T17:30:00Z",
+  "classifications": [
+    {
+      "capability": "Phase 31 canonical source, backup and truth audit",
+      "status": "IMPLEMENTED_AND_VERIFIED",
+      "evidence": "Four archive hashes, source baseline, audit reports and two full-suite runs"
+    },
+    {
+      "capability": "Phase 31 complete historical regression",
+      "status": "PARTIALLY_IMPLEMENTED",
+      "evidence": "1,943 passed; 273 historical failures and 28 skips remain"
+    },
+    {
+      "capability": "Phase 32 secure local multi-device synchronization",
+      "status": "IMPLEMENTED_AND_VERIFIED",
+      "evidence": "7 phase tests, cross-phase conflict/merge/checksum/revocation workflow and security tests"
+    },
+    {
+      "capability": "Phase 32 live geographically distributed synchronization",
+      "status": "IMPLEMENTED_REQUIRES_EXTERNAL_VALIDATION",
+      "evidence": "HTTP adapter/configuration exists; no production TLS sync service or remote devices were available"
+    },
+    {
+      "capability": "Phase 33 Biomedical Digital Twin learning and simulation",
+      "status": "IMPLEMENTED_AND_VERIFIED",
+      "evidence": "8 phase tests plus cross-phase review/mastery/portfolio workflow"
+    },
+    {
+      "capability": "Phase 33 external biological or clinical validity",
+      "status": "IMPLEMENTED_REQUIRES_EXTERNAL_VALIDATION",
+      "evidence": "No independent wet-lab, clinical, or institutional validation was performed"
+    },
+    {
+      "capability": "Phase 34 local governed Research Compute",
+      "status": "IMPLEMENTED_AND_VERIFIED",
+      "evidence": "10 phase tests plus cross-phase review/report/bundle workflow"
+    },
+    {
+      "capability": "Phase 34 cloud, Slurm, Kubernetes or HPC execution",
+      "status": "IMPLEMENTED_REQUIRES_EXTERNAL_VALIDATION",
+      "evidence": "Remote adapters are encrypted configuration records and disabled by default; no infrastructure was available"
+    },
+    {
+      "capability": "Phase 35 evidence-bounded scientific agents and discovery",
+      "status": "IMPLEMENTED_AND_VERIFIED",
+      "evidence": "10 phase tests, 15/15 evaluation metrics, cross-phase workflow and unsafe-action refusal tests"
+    },
+    {
+      "capability": "Phase 35 live literature, patentability or autonomous discovery claims",
+      "status": "PARTIALLY_IMPLEMENTED",
+      "evidence": "Local deterministic evidence search only; no exhaustive external corpus or autonomous action is claimed"
+    },
+    {
+      "capability": "Tenant isolation, approvals and focused security controls",
+      "status": "IMPLEMENTED_AND_VERIFIED",
+      "evidence": "5 focused security tests passed"
+    },
+    {
+      "capability": "Independent penetration test and regulated security certification",
+      "status": "BLOCKED_WITH_EXACT_REASON",
+      "evidence": "No external assessor, production network, identity provider or regulated target environment was available"
+    },
+    {
+      "capability": "Protected Windows production package and silent launcher",
+      "status": "IMPLEMENTED_AND_VERIFIED",
+      "evidence": "1,505 modules protected; installed AppTest and native launch/stop lifecycle passed"
+    },
+    {
+      "capability": "Authenticode-signed installer",
+      "status": "BLOCKED_WITH_EXACT_REASON",
+      "evidence": "No code-signing certificate or signing authority was available"
+    },
+    {
+      "capability": "Owner/developer readable source release",
+      "status": "IMPLEMENTED_AND_VERIFIED",
+      "evidence": "Split ZIP builder includes source, tests, reports, docs, build scripts and offline assets"
+    }
+  ]
+}

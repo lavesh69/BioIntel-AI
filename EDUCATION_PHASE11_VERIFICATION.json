@@ -1,0 +1,374 @@
+{
+  "schema": "biointel.education-phase11-verification.v1",
+  "generated_at": "2026-07-28T19:14:48.525795+00:00",
+  "passed": true,
+  "passed_controls": 37,
+  "total_controls": 37,
+  "controls": [
+    {
+      "name": "phase11_schema",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "totp_rfc_vector",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mfa_secret_encrypted_at_rest",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mfa_recovery_codes_issued",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mfa_challenge_required",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mfa_session_created",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "single_use_recovery_code",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "recovery_replay_blocked",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mfa_posture",
+      "passed": true,
+      "detail": {
+        "accounts": [
+          {
+            "user_id": "admin",
+            "display_name": "Admin",
+            "email": "admin@verify.edu",
+            "state": "active",
+            "mfa_enabled": 1,
+            "verified_at": "2026-07-28T19:14:46.711352+00:00",
+            "recovery_codes": 9
+          }
+        ],
+        "total": 1,
+        "enabled": 1,
+        "coverage_percent": 100.0
+      }
+    },
+    {
+      "name": "security_chain",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "rate_limit",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "question_bank",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "question_version_one",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "question_self_approval_blocked",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "question_independent_publish",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "question_blueprint",
+      "passed": true,
+      "detail": {
+        "subject_id": "subj_fca856312bbb459886b7f8d0b59d395e",
+        "requested_marks": 2.0,
+        "selected_marks": 2.0,
+        "complete": true,
+        "questions": [
+          {
+            "id": "question_9e8bba504bb54dbbb2fadd7866a304dd",
+            "title": "DNA",
+            "marks": 2.0,
+            "bloom_level": "understand",
+            "difficulty": "medium",
+            "outcome_code": "CO1"
+          }
+        ],
+        "remaining_bloom_marks": {
+          "understand": 0.0
+        },
+        "remaining_difficulty_marks": {
+          "medium": 0.0
+        }
+      }
+    },
+    {
+      "name": "question_item_analysis",
+      "passed": true,
+      "detail": {
+        "question_id": "question_9e8bba504bb54dbbb2fadd7866a304dd",
+        "attempts": 1,
+        "difficulty_index": 1.0,
+        "average_marks": 2.0,
+        "average_seconds": 12.0,
+        "distractors": {
+          "Inheritance": 1
+        },
+        "human_review_required": true
+      }
+    },
+    {
+      "name": "weighted_grade_scheme",
+      "passed": true,
+      "detail": {
+        "id": "gcalc_02a42a6f2602407aa68e172751880ff8",
+        "scheme_id": "gscheme_c8004bbc791c4c46b9a4ae2544bf818d",
+        "student_id": "student",
+        "percentage": 79.0,
+        "grade_label": "B",
+        "grade_points": 3.0,
+        "evidence": {
+          "Assignments": {
+            "scores": [
+              90.0,
+              80.0
+            ],
+            "kept": [
+              80.0,
+              90.0
+            ],
+            "category_percent": 85.0,
+            "weight_percent": 40.0,
+            "contribution": 34.0
+          },
+          "Examination": {
+            "scores": [
+              75.0
+            ],
+            "kept": [
+              75.0
+            ],
+            "category_percent": 75.0,
+            "weight_percent": 60.0,
+            "contribution": 45.0
+          }
+        }
+      }
+    },
+    {
+      "name": "transcript_cgpa",
+      "passed": true,
+      "detail": {
+        "institution_id": "inst_2e1bd875a74e406fb5b7bce64db5b75c",
+        "student_id": "student",
+        "entries": [
+          {
+            "id": "transcript_5ae76fcd1df2466096c686907f3eb62a",
+            "institution_id": "inst_2e1bd875a74e406fb5b7bce64db5b75c",
+            "student_id": "student",
+            "academic_year": "2026-27",
+            "term": "Semester 1",
+            "subject_code": "BIO-VERIFY",
+            "subject_name": "Verification Biology",
+            "credits": 4.0,
+            "marks_percent": 79.0,
+            "grade_label": "B",
+            "grade_points": 3.0,
+            "state": "final",
+            "source_ref": "",
+            "created_by": "admin",
+            "created_at": "2026-07-28T19:14:47.729687+00:00",
+            "updated_at": "2026-07-28T19:14:47.729687+00:00"
+          }
+        ],
+        "total_credits": 4.0,
+        "cgpa": 3.0
+      }
+    },
+    {
+      "name": "signed_credential",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "credential_revocation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "notification_template",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "notification_idempotency",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "notification_claim",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "notification_delivery",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "report_sha256",
+      "passed": true,
+      "detail": {
+        "id": "report_d882ae1a392c4f628cc99cb984a1309a",
+        "institution_id": "inst_2e1bd875a74e406fb5b7bce64db5b75c",
+        "report_type": "attendance",
+        "requested_by": "admin",
+        "parameters_json": "{}",
+        "state": "completed",
+        "output_path": "/tmp/biointel-phase11-verify-k962vcd8/education/reports/inst_2e1bd875a74e406fb5b7bce64db5b75c/report_d882ae1a392c4f628cc99cb984a1309a.csv",
+        "output_format": "csv",
+        "sha256": "726b8c5bbaef4dc15b5a1fc930cc056c99aa64aa13336f0e865db5f9c9916ba9",
+        "row_count": 1,
+        "created_at": "2026-07-28T19:14:47.854859+00:00",
+        "completed_at": "2026-07-28T19:14:47.854859+00:00"
+      }
+    },
+    {
+      "name": "encrypted_full_backup",
+      "passed": true,
+      "detail": {
+        "id": "fullbackup_2e354aa4fb394d93a35f232010042775",
+        "institution_id": "inst_2e1bd875a74e406fb5b7bce64db5b75c",
+        "label": "verification",
+        "archive_path": "/tmp/biointel-phase11-verify-k962vcd8/education/full-backups/inst_2e1bd875a74e406fb5b7bce64db5b75c/20260728T191447Z-verification.biointel-backup",
+        "sha256": "6574201becdf6a4de7bdfc0bf2e981a425911a497f8adb63487876f647450f67",
+        "size_bytes": 35559,
+        "state": "verified",
+        "encrypted": 1,
+        "manifest_json": "{\"algorithm\":\"AES-256-GCM\",\"backup_id\":\"fullbackup_2e354aa4fb394d93a35f232010042775\",\"created_at\":\"2026-07-28T19:14:47.894548+00:00\",\"encrypted\":true,\"file_count\":3,\"files\":[{\"path\":\"database/education.sqlite3\",\"sha256\":\"8e2048de5d7df803de964a8016b1a0c1b280c033930af334adba3a27795230c4\",\"size_bytes\":1531904},{\"path\":\"media/materials/evidence.txt\",\"sha256\":\"6209b76bc86aba9dfd16f1d61699b83e4e531f89f9570e7986af630b134793d6\",\"size_bytes\":16},{\"path\":\"reports/report_d882ae1a392c4f628cc99cb984a1309a.csv\",\"sha256\":\"726b8c5bbaef4dc15b5a1fc930cc056c99aa64aa13336f0e865db5f9c9916ba9\",\"size_bytes\":134}],\"institution_id\":\"inst_2e1bd875a74e406fb5b7bce64db5b75c\",\"schema\":\"biointel.education-full-backup.v1\"}",
+        "created_by": "admin",
+        "created_at": "2026-07-28T19:14:47.895175+00:00",
+        "verified_at": "2026-07-28T19:14:47.924046+00:00",
+        "integrity_valid": true,
+        "file_count": 3,
+        "failure": "",
+        "live_data_replaced": false
+      }
+    },
+    {
+      "name": "restore_rehearsal",
+      "passed": true,
+      "detail": {
+        "backup_id": "fullbackup_2e354aa4fb394d93a35f232010042775",
+        "rehearsal_path": "/tmp/biointel-phase11-verify-k962vcd8/education/full-backups/inst_2e1bd875a74e406fb5b7bce64db5b75c/restore-rehearsal-fullbackup_2e354aa4fb394d93a35f232010042775",
+        "integrity": "ok",
+        "institution_count": 1,
+        "live_data_replaced": false
+      }
+    },
+    {
+      "name": "health_snapshot",
+      "passed": true,
+      "detail": {
+        "id": "health_bdfdbaf16a694ba9af7397f9e02dc2ac",
+        "institution_id": "inst_2e1bd875a74e406fb5b7bce64db5b75c",
+        "database_ok": 1,
+        "storage_ok": 1,
+        "queue_pending": 0,
+        "queue_failed": 0,
+        "backup_age_hours": null,
+        "detail_json": "{\"database_path\":\"/tmp/biointel-phase11-verify-k962vcd8/education.sqlite3\",\"disk_free_bytes\":24070406144,\"storage_root\":\"/tmp/biointel-phase11-verify-k962vcd8/education\"}",
+        "created_at": "2026-07-28T19:14:47.982451+00:00"
+      }
+    },
+    {
+      "name": "incident_lifecycle",
+      "passed": true,
+      "detail": {
+        "id": "incident_d8a9524549694632bb102205137ca111",
+        "institution_id": "inst_2e1bd875a74e406fb5b7bce64db5b75c",
+        "title": "Qualification incident",
+        "severity": "medium",
+        "status": "resolved",
+        "summary": "Exercise",
+        "owner_id": "",
+        "opened_by": "admin",
+        "opened_at": "2026-07-28T19:14:47.991567+00:00",
+        "updated_at": "2026-07-28T19:14:48.013428+00:00",
+        "resolved_at": "2026-07-28T19:14:48.013428+00:00",
+        "events": [
+          {
+            "id": "ievent_2fd41f8c5aad4e7dae5de566538afa4e",
+            "incident_id": "incident_d8a9524549694632bb102205137ca111",
+            "actor_id": "admin",
+            "event_type": "opened",
+            "detail": "Exercise",
+            "created_at": "2026-07-28T19:14:47.991567+00:00"
+          },
+          {
+            "id": "ievent_cebe86a5baed4bb1bdcd9b134d3245da",
+            "incident_id": "incident_d8a9524549694632bb102205137ca111",
+            "actor_id": "admin",
+            "event_type": "resolved",
+            "detail": "Recovered",
+            "created_at": "2026-07-28T19:14:48.013428+00:00"
+          }
+        ]
+      }
+    },
+    {
+      "name": "retention_policy",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "privacy_request",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "external_honesty_boundary",
+      "passed": true,
+      "detail": "Configured is not equivalent to live verified. External credentials, network access and provider-side tests are required."
+    },
+    {
+      "name": "phase11_api_routes",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "phase11_page",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "phase11_worker",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "phase11_navigation",
+      "passed": true,
+      "detail": null
+    }
+  ]
+}

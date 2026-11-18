@@ -1,0 +1,32 @@
+{
+  "schema": "biointel.release.step199.neuro-cns.v1",
+  "step": 199,
+  "title": "BioIntel AI Step199 Neuro/CNS Nine Advanced Additions",
+  "base_runtime": "BioIntel-AI-Step196-WINDOWS-RELEASE-V16",
+  "neuro_modules": 23,
+  "advanced_additions": 9,
+  "workspaces": 5,
+  "new_capabilities": [
+    "compound optimization and Pareto ranking",
+    "exposure-aware CNS safety margins",
+    "aggregation mutation engineering",
+    "experimental model selection",
+    "dose-to-brain-to-effect simulation",
+    "rare neurological disease board",
+    "multivariate multi-omics disease signatures",
+    "synchronized neurophysiology review",
+    "3D brain digital twin visualization",
+    "23-module recommendation matrix",
+    "advanced background queue execution",
+    "advanced cross-module consistency checks"
+  ],
+  "release_boundaries": {
+    "clinical_use": false,
+    "controlled_release": false,
+    "research_screening": true
+  },
+  "tests": {
+    "focused_passed": 48,
+    "failed": 0
+  }
+}

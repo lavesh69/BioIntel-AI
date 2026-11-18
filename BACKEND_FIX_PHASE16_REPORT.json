@@ -1,0 +1,23 @@
+{
+  "schema": "biointel.phase16.backend-fix.v1",
+  "version": "15.6.0",
+  "release": "Step220 V20.5 Phase16",
+  "android_untouched": true,
+  "bom_files_cleaned": 101,
+  "major_fixes": [
+    "canonical UserData runtime storage",
+    "deterministic database migration and bootstrap",
+    "ready endpoint aligned with bootstrap and warehouses",
+    "CORS DELETE/PUT/PATCH and LAN origin support",
+    "per-launch desktop API token",
+    "query-string redaction and response-byte telemetry",
+    "memory-first rate limiting",
+    "verified TLS probes",
+    "Step220 four-part V20.5 contract",
+    "Python 3.11.x x64 compatibility",
+    "Electron worker + API + UI unified runtime",
+    "UTF-8 BOM cleanup",
+    "legacy model quarantine",
+    "protected DTI baseline reconciliation"
+  ]
+}

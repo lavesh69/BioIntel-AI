@@ -1,0 +1,21 @@
+schema: biointel.fair-implementation-profile/v1
+findable:
+  - globally_unique_persistent_identifier
+  - rich_metadata
+  - identifier_in_metadata
+  - indexed_metadata
+accessible:
+  - standards_based_protocol
+  - documented_authentication_authorization
+  - metadata_persistence
+interoperable:
+  - json_ld_or_rdf_representation
+  - resolvable_domain_vocabularies
+  - qualified_references
+reusable:
+  - explicit_license
+  - detailed_provenance
+  - community_standards
+  - versioned_distributions
+minimum_release_score: 10.0
+machine_actionable: true

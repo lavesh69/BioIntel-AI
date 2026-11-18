@@ -1,0 +1,34 @@
+{
+  "schema": "biointel.step91.release-manifest.v1",
+  "version": "9.1.0",
+  "release_name": "BioIntel AI Step 91 Unified Brand System",
+  "release_channel": "windows-offline-uncompressed-split-source",
+  "generated_at_utc": "2026-07-09T11:11:18+00:00",
+  "brand": {
+    "name": "BioIntel AI",
+    "descriptor": "Scientific Intelligence for Life Sciences",
+    "tagline": "Biology, Engineered into Intelligence.",
+    "founder": "Lavesh Dobriyal",
+    "implementation_score": 10.0,
+    "controls_passed": 12,
+    "controls_total": 12
+  },
+  "qualification": {
+    "selected_tests_passed": 101,
+    "selected_tests_failed": 0,
+    "ruff": "passed",
+    "compileall": "passed",
+    "offline_wheelhouse_valid": true,
+    "offline_wheel_count": 102,
+    "windows_short_path_install": true
+  },
+  "scientific_boundary": "Branding and evidence-tier presentation do not alter the underlying scientific validation status of installed models. Independent clinical/pharmaceutical validation remains evidence-dependent.",
+  "windows_install_hotfix": {
+    "id": "STEP91-WINDOWS-SHORT-PATH-OFFLINE-V3",
+    "status": "applied",
+    "dependency": "colorama==0.4.6",
+    "install_root": "%LOCALAPPDATA%\\B91",
+    "temporary_root": "%LOCALAPPDATA%\\B91T",
+    "reason": "Prevents Windows path-length Error 206 during pip installation."
+  }
+}

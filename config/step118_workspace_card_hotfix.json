@@ -1,0 +1,17 @@
+{
+  "schema": "biointel.step118.workspace-card-hotfix.v1",
+  "version": "11.8.0",
+  "affected_module_pages": 77,
+  "embedded_workspaces": 78,
+  "default_state": "collapsed",
+  "stylesheet_policy": "inject once per renderer call and page DOM",
+  "responsive_breakpoints_px": [1100, 760, 480],
+  "forced_colours_supported": true,
+  "excluded_modules_locked": [
+    "DTI Predictor",
+    "DTI Validation Evidence Center",
+    "LIMS, ELN & Sample Chain of Custody Hub",
+    "Lab Instrument Import Center",
+    "Instrument Integration Hub"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "timestamp_utc": "2026-07-25T15:19:12+00:00",
+  "platform": "BioIntel AI 15.6.0 (Windows Desktop)",
+  "modules_audited": 276,
+  "subsystems": {
+    "workflow_dag_engine": "src/biointel/workflow/dag_engine.py",
+    "module_sdk": "src/biointel/sdk/module_sdk.py",
+    "dataset_registry": "src/biointel/sdk/module_sdk.py",
+    "enterprise_rbac": "src/biointel/security/enterprise_rbac.py",
+    "hpc_orchestrator": "src/biointel/hpc/hpc_orchestrator.py"
+  }
+}

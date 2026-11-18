@@ -1,0 +1,10 @@
+schema: biointel.scientific-regression.v1
+absolute_tolerance: 1.0e-8
+relative_tolerance: 1.0e-6
+sequence:
+  gc_percent_tolerance: 1.0e-8
+chemistry:
+  molecular_weight_tolerance: 0.05
+dti:
+  probability_tolerance: 1.0e-6
+policy: Golden regression protects deterministic software outputs and does not establish biological validity.

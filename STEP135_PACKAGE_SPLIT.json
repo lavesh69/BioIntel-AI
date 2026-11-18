@@ -1,0 +1,13 @@
+{
+  "schema": "biointel.step135.package-split.v1",
+  "version": "13.2.0",
+  "parts": [
+    "BioIntel-AI-Step135-MODULE-SCIENTIFIC-VISUALS-Part1.zip",
+    "BioIntel-AI-Step135-MODULE-SCIENTIFIC-VISUALS-Part2.zip",
+    "BioIntel-AI-Step135-MODULE-SCIENTIFIC-VISUALS-Part3.zip",
+    "BioIntel-AI-Step135-MODULE-SCIENTIFIC-VISUALS-Part4.zip"
+  ],
+  "extraction_root": "BioIntel-AI",
+  "instructions": "Extract all four ZIP parts into the same destination folder, then run VERIFY_STEP135_MODULES_WINDOWS.bat, INSTALL_WINDOWS.bat and RUN_APP_SMOOTH_WINDOWS.bat.",
+  "release_boundary": "Module calculations and viewers are research-screening tools. Specialist executables, licensed references, physical instruments and independent clinical or wet-lab validation are not fabricated or bundled."
+}

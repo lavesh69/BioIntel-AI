@@ -1,0 +1,137 @@
+[
+  {
+    "adapter": "IMPLEMENTED",
+    "content_types": [
+      "publication"
+    ],
+    "default_schedule_seconds": 21600,
+    "key": "pubmed",
+    "network_validation": "REQUIRES_EXTERNAL_VALIDATION",
+    "provider": "PubMed",
+    "secure_transport": "HTTPS + DNS/SSRF/size/MIME checks"
+  },
+  {
+    "adapter": "IMPLEMENTED",
+    "content_types": [
+      "publication",
+      "preprint"
+    ],
+    "default_schedule_seconds": 21600,
+    "key": "europe_pmc",
+    "network_validation": "REQUIRES_EXTERNAL_VALIDATION",
+    "provider": "Europe PMC",
+    "secure_transport": "HTTPS + DNS/SSRF/size/MIME checks"
+  },
+  {
+    "adapter": "IMPLEMENTED",
+    "content_types": [
+      "publication",
+      "correction",
+      "retraction"
+    ],
+    "default_schedule_seconds": 21600,
+    "key": "crossref",
+    "network_validation": "REQUIRES_EXTERNAL_VALIDATION",
+    "provider": "Crossref",
+    "secure_transport": "HTTPS + DNS/SSRF/size/MIME checks"
+  },
+  {
+    "adapter": "IMPLEMENTED",
+    "content_types": [
+      "publication"
+    ],
+    "default_schedule_seconds": 21600,
+    "key": "openalex",
+    "network_validation": "REQUIRES_EXTERNAL_VALIDATION",
+    "provider": "OpenAlex",
+    "secure_transport": "HTTPS + DNS/SSRF/size/MIME checks"
+  },
+  {
+    "adapter": "IMPLEMENTED",
+    "content_types": [
+      "preprint"
+    ],
+    "default_schedule_seconds": 21600,
+    "key": "biorxiv",
+    "network_validation": "REQUIRES_EXTERNAL_VALIDATION",
+    "provider": "bioRxiv",
+    "secure_transport": "HTTPS + DNS/SSRF/size/MIME checks"
+  },
+  {
+    "adapter": "IMPLEMENTED",
+    "content_types": [
+      "preprint"
+    ],
+    "default_schedule_seconds": 21600,
+    "key": "medrxiv",
+    "network_validation": "REQUIRES_EXTERNAL_VALIDATION",
+    "provider": "medRxiv",
+    "secure_transport": "HTTPS + DNS/SSRF/size/MIME checks"
+  },
+  {
+    "adapter": "IMPLEMENTED",
+    "content_types": [
+      "preprint"
+    ],
+    "default_schedule_seconds": 21600,
+    "key": "arxiv",
+    "network_validation": "REQUIRES_EXTERNAL_VALIDATION",
+    "provider": "arXiv",
+    "secure_transport": "HTTPS + DNS/SSRF/size/MIME checks"
+  },
+  {
+    "adapter": "IMPLEMENTED",
+    "content_types": [
+      "clinical_trial"
+    ],
+    "default_schedule_seconds": 21600,
+    "key": "clinicaltrials",
+    "network_validation": "REQUIRES_EXTERNAL_VALIDATION",
+    "provider": "ClinicalTrials.gov",
+    "secure_transport": "HTTPS + DNS/SSRF/size/MIME checks"
+  },
+  {
+    "adapter": "IMPLEMENTED",
+    "content_types": [
+      "dataset"
+    ],
+    "default_schedule_seconds": 21600,
+    "key": "datacite",
+    "network_validation": "REQUIRES_EXTERNAL_VALIDATION",
+    "provider": "DataCite",
+    "secure_transport": "HTTPS + DNS/SSRF/size/MIME checks"
+  },
+  {
+    "adapter": "IMPLEMENTED",
+    "content_types": [
+      "event"
+    ],
+    "default_schedule_seconds": 86400,
+    "key": "crossref_event_data",
+    "network_validation": "REQUIRES_EXTERNAL_VALIDATION",
+    "provider": "Crossref Event Data",
+    "secure_transport": "HTTPS + DNS/SSRF/size/MIME checks"
+  },
+  {
+    "adapter": "IMPLEMENTED",
+    "content_types": [
+      "news"
+    ],
+    "default_schedule_seconds": 3600,
+    "key": "rss_nature_biotechnology",
+    "network_validation": "REQUIRES_EXTERNAL_VALIDATION",
+    "provider": "Nature Biotechnology",
+    "secure_transport": "HTTPS + DNS/SSRF/size/MIME checks"
+  },
+  {
+    "adapter": "IMPLEMENTED",
+    "content_types": [
+      "news"
+    ],
+    "default_schedule_seconds": 10800,
+    "key": "rss_sciencedaily_biology",
+    "network_validation": "REQUIRES_EXTERNAL_VALIDATION",
+    "provider": "ScienceDaily Biology",
+    "secure_transport": "HTTPS + DNS/SSRF/size/MIME checks"
+  }
+]

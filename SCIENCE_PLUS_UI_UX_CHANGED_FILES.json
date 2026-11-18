@@ -1,0 +1,36 @@
+{
+  "release": "BioIntel AI 15.6.0 Science Plus UI/UX R7",
+  "scope": "Remaining Science Plus interface completion and polish",
+  "preserves_existing_features": true,
+  "changed_files": [
+    {
+      "path": "src/biointel/science_pulse/ui.py",
+      "changes": "Theme-token product surface, grouped navigation, contextual command deck, compact section status, responsive and accessibility polish"
+    },
+    {
+      "path": "src/biointel/science_pulse/news_ui.py",
+      "changes": "Compact live status, structured news cards, expandable advanced filters, active-filter summary and safe background refresh messaging"
+    },
+    {
+      "path": "src/biointel/science_pulse/canvas_studio.py",
+      "changes": "Active canvas context, readiness indicators, quick actions, compact navigation and state-safe view selectors"
+    },
+    {
+      "path": "tests/test_science_plus_theme_integration.py",
+      "changes": "Eight focused static regression tests for theme, navigation, news, canvas, state safety and preserved contracts"
+    },
+    {
+      "path": "SCIENCE_PLUS_UI_UX_THEME_UPGRADE_REPORT.md",
+      "changes": "R7 implementation and validation report"
+    },
+    {
+      "path": "SCIENCE_PLUS_UI_UX_CHANGED_FILES.json",
+      "changes": "R7 changed-file manifest"
+    }
+  ],
+  "validation": {
+    "python_compile": "passed",
+    "focused_ui_tests": "8 passed",
+    "interactive_streamlit_boot": "not executed in Linux build container due incomplete Windows-target runtime dependencies"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "schema": "biointel.education-phase6.windows-four-part.v1",
+  "product_version": "15.6.0",
+  "release_step": 220,
+  "archive_root": "BioIntel-Step220",
+  "physical_archive_count": 4,
+  "education_and_shiro_tests_passed": 88,
+  "phase2_controls_passed": 12,
+  "phase3_controls_passed": 15,
+  "phase4_controls_passed": 20,
+  "phase5_controls_passed": 29,
+  "phase6_controls_passed": 34,
+  "total_controls_passed": 110,
+  "education_api_routes": 105,
+  "phase6_api_routes": 25,
+  "install_entrypoint": "INSTALL_WINDOWS.bat",
+  "run_entrypoint": "RUN_BOTH_WINDOWS.bat",
+  "worker_entrypoint": "RUN_EDUCATION_PHASE6_WORKER_WINDOWS.bat",
+  "verification_entrypoint": "VERIFY_EDUCATION_PHASE6_WINDOWS.bat",
+  "qualification": "code and local evidence qualified; external infrastructure qualification remains required"
+}

@@ -1,0 +1,16 @@
+version: 1
+policy_name: BioIntel AI strict scientific credibility policy
+principles:
+  - implementation readiness and real evidence must be scored separately
+  - synthetic, demonstration, placeholder, and reference-only records cannot satisfy real-evidence gates
+  - external and prospective studies require real SHA-256 dataset and model identifiers
+  - prospective studies require preregistration, prediction locking, blinding, chronological integrity, and independent review
+  - wet-lab and multi-site claims require signed independent site evidence
+  - release claims are capped by the weakest required evidence tier
+claim_tiers:
+  reference_only: educational or workflow demonstration
+  reproducible_benchmark: real public data with reproducible code and checksums
+  independent_external_analytical: distinct provider or site with independent review
+  prospective_blinded_analytical: preregistered and prediction-locked outcomes
+  independent_wet_lab: independent laboratory replication
+  multisite_wet_lab: independent replication at multiple sites

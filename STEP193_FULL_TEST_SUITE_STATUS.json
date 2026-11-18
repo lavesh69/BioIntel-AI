@@ -1,0 +1,9 @@
+{
+  "schema": "biointel.step193.full-test-suite-status.v1",
+  "focused_release_tests_passed": 110,
+  "focused_release_tests_failed": 0,
+  "full_historical_ui_suite_claimed_passed": false,
+  "reason": "The build host is Linux and does not contain the packaged Windows Python 3.11/Streamlit runtime. Full UI/runtime validation is run by the post-install Step 193 self-test on Windows.",
+  "compile_validation": "1519/1519 Python files passed",
+  "wheelhouse_validation": "102/102 Windows wheels passed CRC and SHA-256 verification"
+}

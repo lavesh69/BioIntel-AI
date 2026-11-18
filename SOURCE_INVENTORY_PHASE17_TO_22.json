@@ -1,0 +1,1583 @@
+{
+  "schema": "biointel-phase17-22-source-inventory-1.0",
+  "generated_at": "2026-07-30T06:23:56.512622+00:00",
+  "canonical_root": "BioIntel-Step220",
+  "archives": [
+    {
+      "part": 1,
+      "name": "BioIntel-AI-15.6.0-EDUCATION-PHASE16-MEGA-FIXED-R2.1-INSTALL-HOTFIX-Part1.zip",
+      "files": 3375,
+      "uncompressed_bytes": 284680061,
+      "testzip_error": null
+    },
+    {
+      "part": 2,
+      "name": "BioIntel-AI-15.6.0-EDUCATION-PHASE16-MEGA-FIXED-R2.1-INSTALL-HOTFIX-Part2.zip",
+      "files": 3375,
+      "uncompressed_bytes": 124264748,
+      "testzip_error": null
+    },
+    {
+      "part": 3,
+      "name": "BioIntel-AI-15.6.0-EDUCATION-PHASE16-MEGA-FIXED-R2.1-INSTALL-HOTFIX-Part3.zip",
+      "files": 3375,
+      "uncompressed_bytes": 108492417,
+      "testzip_error": null
+    },
+    {
+      "part": 4,
+      "name": "BioIntel-AI-15.6.0-EDUCATION-PHASE16-MEGA-FIXED-R2.1-INSTALL-HOTFIX-Part4.zip",
+      "files": 3372,
+      "uncompressed_bytes": 399689946,
+      "testzip_error": null
+    }
+  ],
+  "source_safety": {
+    "archive_file_count": 13497,
+    "current_file_count_excluding_transient": 13530,
+    "unchanged_from_canonical": 13454,
+    "changed_from_canonical": [
+      ".env.example",
+      "INSTALL_WINDOWS.bat",
+      "STEP220_RELEASE.json",
+      "pages/140_BioIntel_Connect.py",
+      "pages/150_BioIntel_Education_Home.py",
+      "pages/151_BioIntel_Classroom.py",
+      "pages/152_BioIntel_Science_Pulse.py",
+      "pages/70_BioIntel_Studio.py",
+      "pyproject.toml",
+      "requirements-windows-cp311-offline.lock",
+      "requirements-windows-cp311-offline.lock.sha256",
+      "requirements.lock",
+      "requirements.lock.sha256",
+      "requirements.txt",
+      "src/biointel/connect/advanced_ui.py",
+      "src/biointel/connect/complete_ui.py",
+      "src/biointel/education/__init__.py",
+      "src/biointel/education/api.py",
+      "src/biointel/education/examination_ui.py",
+      "src/biointel/education/experience.py",
+      "src/biointel/education/home_ui.py",
+      "src/biointel/education/institution_ui.py",
+      "src/biointel/education/intelligence_ui.py",
+      "src/biointel/education/phase11_ui.py",
+      "src/biointel/education/phase12_ui.py",
+      "src/biointel/education/phase13_ui.py",
+      "src/biointel/education/phase14_ui.py",
+      "src/biointel/education/phase15_runtime/providers.py",
+      "src/biointel/education/phase15_runtime/service.py",
+      "src/biointel/education/phase15_ui.py",
+      "src/biointel/education/phase16_runtime/service.py",
+      "src/biointel/education/phase16_ui.py",
+      "src/biointel/education/phase7_ui.py",
+      "src/biointel/education/platform.py",
+      "src/biointel/education/visual_command_ui.py",
+      "tests/test_education_ecosystem.py",
+      "tests/test_education_ecosystems.py",
+      "tests/test_education_integrity_v2.py",
+      "tests/test_education_phase15_edges.py",
+      "tests/test_education_phase15_providers.py",
+      "tests/test_education_phase16.py",
+      "wheelhouse/windows-cp311-x64/MANIFEST_SHA256.txt",
+      "wheelhouse/windows-cp311-x64/WHEELHOUSE_METADATA.json"
+    ],
+    "new_since_canonical": [
+      ".release_parts/education_phase17_22_part1.ok",
+      ".release_parts/education_phase17_22_part2.ok",
+      ".release_parts/education_phase17_22_part3.ok",
+      ".release_parts/education_phase17_22_part4.ok",
+      "CHANGELOG_EDUCATION_PHASE17_TO_22.md",
+      "DIAGNOSE_EDUCATION_PHASE17_TO_22_WINDOWS.bat",
+      "EDUCATION_API_SPEC.md",
+      "EDUCATION_BACKUP_RESTORE_GUIDE.md",
+      "EDUCATION_DATABASE_SCHEMA.md",
+      "EDUCATION_KNOWN_LIMITATIONS.md",
+      "EDUCATION_MIGRATION_AND_ROLLBACK_GUIDE.md",
+      "EDUCATION_OS_ARCHITECTURE.md",
+      "EDUCATION_SECURITY_AND_PRIVACY_REPORT.md",
+      "EDUCATION_TEST_REPORT.md",
+      "EDUCATION_WINDOWS_QUALIFICATION.md",
+      "EXTRACT_INSTALL_RUN_EDUCATION_PHASE17_TO_22_4PART_WINDOWS.bat",
+      "INSTALL_EDUCATION_PHASE17_TO_22_WINDOWS.bat",
+      "PHASE17_TO_PHASE22_IMPLEMENTATION_REPORT.md",
+      "RUN_EDUCATION_PHASE17_TO_22_WORKER_WINDOWS.bat",
+      "SOURCE_INVENTORY_PHASE17_TO_22.json",
+      "SOURCE_INVENTORY_PHASE17_TO_22.md",
+      "scripts/diagnose_education_phase17_22.py",
+      "scripts/package_education_phase17_22_4part_release.py",
+      "scripts/run_education_phase17_22_worker.py",
+      "scripts/update_phase17_22_wheelhouse.py",
+      "src/biointel/education/phase17_22/__init__.py",
+      "src/biointel/education/phase17_22/api.py",
+      "src/biointel/education/phase17_22/schema.py",
+      "src/biointel/education/phase17_22/service.py",
+      "src/biointel/education/phase17_22/ui.py",
+      "src/biointel/media_tools.py",
+      "tests/test_education_phase17_22.py",
+      "wheelhouse/windows-cp311-x64/imageio_ffmpeg-0.6.0-py3-none-win_amd64.whl"
+    ],
+    "missing_from_canonical": []
+  },
+  "categories": {
+    "pages": 354,
+    "src_biointel_files": 1124,
+    "api_files": 12,
+    "database_files": 274,
+    "tests": 311,
+    "windows_batch_scripts": 332,
+    "dependency_manifests": [
+      "data/step172/module_packages/amr_surveillance/requirements.json",
+      "data/step172/module_packages/antibody_biologics/requirements.json",
+      "data/step172/module_packages/autonomous_lab_planner/requirements.json",
+      "data/step172/module_packages/background_job_engine/requirements.json",
+      "data/step172/module_packages/background_jobs_core/requirements.json",
+      "data/step172/module_packages/benchmark_validation_v2/requirements.json",
+      "data/step172/module_packages/bioimage_microscopy/requirements.json",
+      "data/step172/module_packages/biomedical_foundation_model_hub/requirements.json",
+      "data/step172/module_packages/bioprocess_fermentation/requirements.json",
+      "data/step172/module_packages/cancer_genomics_core/requirements.json",
+      "data/step172/module_packages/causal_perturbation/requirements.json",
+      "data/step172/module_packages/cell_atlas_mapping/requirements.json",
+      "data/step172/module_packages/cell_therapy_cart/requirements.json",
+      "data/step172/module_packages/clinical_biomarker_survival/requirements.json",
+      "data/step172/module_packages/clinical_pharma_core/requirements.json",
+      "data/step172/module_packages/clinical_trial_biomarker/requirements.json",
+      "data/step172/module_packages/collaboration_review_v2/requirements.json",
+      "data/step172/module_packages/cross_module_workspace/requirements.json",
+      "data/step172/module_packages/data_lakehouse_v2/requirements.json",
+      "data/step172/module_packages/digital_pathology_foundation/requirements.json",
+      "data/step172/module_packages/docking_dynamics/requirements.json",
+      "data/step172/module_packages/document_intelligence_core/requirements.json",
+      "data/step172/module_packages/enzyme_pathway_design/requirements.json",
+      "data/step172/module_packages/epigenomics_chromatin/requirements.json",
+      "data/step172/module_packages/epitranscriptomics/requirements.json",
+      "data/step172/module_packages/evidence_citation_engine/requirements.json",
+      "data/step172/module_packages/explainable_ai_assurance/requirements.json",
+      "data/step172/module_packages/federated_biomedical_ai/requirements.json",
+      "data/step172/module_packages/flow_cytometry/requirements.json",
+      "data/step172/module_packages/gene_therapy_vector/requirements.json",
+      "data/step172/module_packages/genome_editing_safety/requirements.json",
+      "data/step172/module_packages/glycomics_glycoproteomics/requirements.json",
+      "data/step172/module_packages/host_pathogen_interaction/requirements.json",
+      "data/step172/module_packages/immunoinformatics_vaccine/requirements.json",
+      "data/step172/module_packages/knowledge_graph_core/requirements.json",
+      "data/step172/module_packages/long_read_core/requirements.json",
+      "data/step172/module_packages/long_read_epigenome/requirements.json",
+      "data/step172/module_packages/longitudinal_multiomics/requirements.json",
+      "data/step172/module_packages/metabolomics_lipidomics/requirements.json",
+      "data/step172/module_packages/metagenomics_core/requirements.json",
+      "data/step172/module_packages/model_registry_v2/requirements.json",
+      "data/step172/module_packages/multiomics_biomarker_core/requirements.json",
+      "data/step172/module_packages/multiomics_harmonization/requirements.json",
+      "data/step172/module_packages/offline_copilot_core/requirements.json",
+      "data/step172/module_packages/offline_scientific_copilot_v2/requirements.json",
+      "data/step172/module_packages/one_health_environmental/requirements.json",
+      "data/step172/module_packages/organoid_3d/requirements.json",
+      "data/step172/module_packages/pangenome_core/requirements.json",
+      "data/step172/module_packages/pangenome_population_medicine/requirements.json",
+      "data/step172/module_packages/pathogen_outbreak_core/requirements.json",
+      "data/step172/module_packages/pharmacogenomics/requirements.json",
+      "data/step172/module_packages/pharmacovigilance_intelligence/requirements.json",
+      "data/step172/module_packages/phenotypic_screening/requirements.json",
+      "data/step172/module_packages/plugin_marketplace_core/requirements.json",
+      "data/step172/module_packages/plugin_marketplace_v2/requirements.json",
+      "data/step172/module_packages/population_gwas/requirements.json",
+      "data/step172/module_packages/protein_language_design/requirements.json",
+      "data/step172/module_packages/protein_ligand_codesign/requirements.json",
+      "data/step172/module_packages/proteogenomics_neoantigen/requirements.json",
+      "data/step172/module_packages/provenance_ledger_v2/requirements.json",
+      "data/step172/module_packages/rare_variant_family/requirements.json",
+      "data/step172/module_packages/reference_lifecycle_v2/requirements.json",
+      "data/step172/module_packages/rna_isoform_splicing/requirements.json",
+      "data/step172/module_packages/single_cell_core/requirements.json",
+      "data/step172/module_packages/single_cell_long_read_isoforms/requirements.json",
+      "data/step172/module_packages/single_cell_trajectory/requirements.json",
+      "data/step172/module_packages/spatial_medicine_tme/requirements.json",
+      "data/step172/module_packages/spatial_omics_pathology/requirements.json",
+      "data/step172/module_packages/store_readiness_core/requirements.json",
+      "data/step172/module_packages/strain_microbiome/requirements.json",
+      "data/step172/module_packages/structural_bioinformatics_core/requirements.json",
+      "data/step172/module_packages/structural_variant_repeat/requirements.json",
+      "data/step172/module_packages/synthetic_biology_core/requirements.json",
+      "data/step172/module_packages/synthetic_cohort_trial/requirements.json",
+      "data/step172/module_packages/synthetic_data_privacy/requirements.json",
+      "data/step172/module_packages/unified_report_builder/requirements.json",
+      "data/step172/module_packages/universal_file_inspector/requirements.json",
+      "data/step172/module_packages/virology_evolution/requirements.json",
+      "data/step172/module_packages/workflow_builder_core/requirements.json",
+      "data/step172/module_packages/workflow_builder_v2/requirements.json",
+      "pyproject.toml",
+      "requirements-advanced.txt",
+      "requirements-bioinformatics.txt",
+      "requirements-ci.txt",
+      "requirements-deep-learning.txt",
+      "requirements-dev-lock-step192.txt",
+      "requirements-dev.txt",
+      "requirements-lock-step192.txt",
+      "requirements-lock-step192.txt.sha256",
+      "requirements-production.txt",
+      "requirements-step120-scientific-extras.txt",
+      "requirements-step127-scientific-extras.txt",
+      "requirements-windows-cp311-offline.lock",
+      "requirements-windows-cp311-offline.lock.sha256",
+      "requirements.lock",
+      "requirements.lock.sha256",
+      "requirements.txt"
+    ],
+    "extension_counts": {
+      ".json": 7094,
+      ".py": 2255,
+      ".md": 1211,
+      ".csv": 755,
+      ".bat": 332,
+      ".zip": 286,
+      ".txt": 163,
+      ".png": 147,
+      ".pdf": 142,
+      ".docx": 140,
+      ".xlsx": 140,
+      ".whl": 122,
+      ".yml": 78,
+      ".ok": 67,
+      ".fasta": 65,
+      ".html": 64,
+      ".yaml": 55,
+      ".joblib": 37,
+      ".sqlite3": 33,
+      ".xml": 33,
+      ".js": 33,
+      ".tsv": 28,
+      "<none>": 25,
+      ".cif": 25,
+      ".map": 24,
+      ".ps1": 17,
+      ".svg": 16,
+      ".pdb": 14,
+      ".sh": 13,
+      ".sha256": 11,
+      ".css": 10,
+      ".sqlite": 8,
+      ".gradle": 8,
+      ".fastq": 6,
+      ".vcf": 4,
+      ".gmt": 4,
+      ".example": 3,
+      ".ico": 3,
+      ".tf": 3,
+      ".ts": 3,
+      ".java": 3,
+      ".swift": 3,
+      ".jsonl": 3,
+      ".exe": 3,
+      ".cff": 2,
+      ".toml": 2,
+      ".lock": 2,
+      ".env": 2,
+      ".gff3": 2,
+      ".nwk": 2,
+      ".cjs": 2,
+      ".properties": 2,
+      ".plist": 2,
+      ".storyboard": 2,
+      ".bak": 2,
+      ".production": 1,
+      ".gfa": 1,
+      ".newick": 1,
+      ".faa": 1,
+      ".npy": 1,
+      ".tpl": 1,
+      ".spec": 1,
+      ".pro": 1,
+      ".jar": 1,
+      ".xcconfig": 1,
+      ".xcprivacy": 1,
+      ".pbxproj": 1,
+      ".podspec": 1,
+      ".db": 1,
+      ".bib": 1,
+      ".sqlite3-journal": 1,
+      ".typed": 1,
+      ".pyi": 1,
+      ".scss": 1
+    }
+  },
+  "duplicate_page_candidates": {
+    "biointel_education_home.py": [
+      "pages/150_BioIntel_Education_Home.py",
+      "pages/339_BioIntel_Education_Home.py"
+    ],
+    "biointel_classroom.py": [
+      "pages/151_BioIntel_Classroom.py",
+      "pages/340_BioIntel_Classroom.py"
+    ],
+    "biointel_science_pulse.py": [
+      "pages/152_BioIntel_Science_Pulse.py",
+      "pages/341_BioIntel_Science_Pulse.py"
+    ]
+  },
+  "static_findings": {
+    "todo_fixme": {
+      "occurrences": 8,
+      "files": [
+        {
+          "path": "SOURCE_INVENTORY_PHASE17_TO_22.md",
+          "occurrences": 2
+        },
+        {
+          "path": "src/biointel/connect/advanced_ui.py",
+          "occurrences": 1
+        },
+        {
+          "path": "src/biointel/connect/planning.py",
+          "occurrences": 2
+        },
+        {
+          "path": "tools/test-runtime/coverage/parser.py",
+          "occurrences": 1
+        },
+        {
+          "path": "tools/test-runtime/coverage/sysmon.py",
+          "occurrences": 2
+        }
+      ]
+    },
+    "not_implemented": {
+      "occurrences": 2,
+      "files": [
+        {
+          "path": "tools/test-runtime/coverage/misc.py",
+          "occurrences": 2
+        }
+      ]
+    },
+    "pass_statements": {
+      "occurrences": 267,
+      "files": [
+        {
+          "path": "pages/102_Multi_Omics_Biomarker_Discovery.py",
+          "occurrences": 1
+        },
+        {
+          "path": "pages/105_Scientific_Execution_Quality_Center.py",
+          "occurrences": 1
+        },
+        {
+          "path": "pages/122_Clinical_Trial_Biomarker_and_Patient_Stratification_Studio.py",
+          "occurrences": 1
+        },
+        {
+          "path": "pages/125_Bioprocess_and_Fermentation_Optimization_Studio.py",
+          "occurrences": 1
+        },
+        {
+          "path": "pages/127_Causal_Biology_and_Perturbation_Modelling.py",
+          "occurrences": 1
+        },
+        {
+          "path": "pages/128_Explainable_AI_and_Model_Assurance_Center.py",
+          "occurrences": 1
+        },
+        {
+          "path": "pages/132_Synthetic_Data_and_Privacy_Engineering_Lab.py",
+          "occurrences": 1
+        },
+        {
+          "path": "pages/136_Longitudinal_Multi_Omics_Time_Series_Studio.py",
+          "occurrences": 1
+        },
+        {
+          "path": "pages/138_RNA_Modification_Epitranscriptomics_Lab.py",
+          "occurrences": 1
+        },
+        {
+          "path": "pages/145_Host_Pathogen_Interaction_Studio.py",
+          "occurrences": 1
+        },
+        {
+          "path": "pages/156_Model_Registry_ML_Lifecycle_Center_2.py",
+          "occurrences": 1
+        },
+        {
+          "path": "pages/179_Gene_Therapy_Vector_Engineering_Safety_Studio.py",
+          "occurrences": 1
+        },
+        {
+          "path": "pages/181_Federated_Biomedical_AI_Privacy_Lab.py",
+          "occurrences": 1
+        },
+        {
+          "path": "pages/182_Clinical_Biomarker_Survival_Patient_Stratification.py",
+          "occurrences": 1
+        },
+        {
+          "path": "pages/185_Pharmacovigilance_Adverse_Event_Intelligence.py",
+          "occurrences": 1
+        },
+        {
+          "path": "pages/186_Synthetic_Cohort_Trial_Simulation_Lab.py",
+          "occurrences": 1
+        },
+        {
+          "path": "pages/187_Autonomous_Laboratory_Experiment_Planner.py",
+          "occurrences": 1
+        },
+        {
+          "path": "pages/39_Knowledge_Warehouse.py",
+          "occurrences": 1
+        },
+        {
+          "path": "pages/41_Research_Assets.py",
+          "occurrences": 1
+        },
+        {
+          "path": "pages/64_Wet_Lab_Biotechnology.py",
+          "occurrences": 1
+        },
+        {
+          "path": "pages/88_Discovery_Command_Center.py",
+          "occurrences": 1
+        },
+        {
+          "path": "pages/90_Clinical_Pharma_Validation_Center.py",
+          "occurrences": 1
+        },
+        {
+          "path": "pages/99_Synthetic_Biology_Circuit_Designer.py",
+          "occurrences": 1
+        },
+        {
+          "path": "scripts/background_job_worker.py",
+          "occurrences": 1
+        },
+        {
+          "path": "scripts/diagnose_windows_step206.py",
+          "occurrences": 1
+        },
+        {
+          "path": "scripts/fix_and_repackage_heavily_upgraded.py",
+          "occurrences": 2
+        },
+        {
+          "path": "scripts/install_windows_step206.py",
+          "occurrences": 6
+        },
+        {
+          "path": "scripts/package_5part_release.py",
+          "occurrences": 1
+        },
+        {
+          "path": "scripts/package_education_phase13_4part_release.py",
+          "occurrences": 1
+        },
+        {
+          "path": "scripts/package_education_phase14_4part_release.py",
+          "occurrences": 1
+        },
+        {
+          "path": "scripts/package_education_phase15_4part_release.py",
+          "occurrences": 1
+        },
+        {
+          "path": "scripts/package_education_phase16_4part_release.py",
+          "occurrences": 1
+        },
+        {
+          "path": "scripts/package_education_phase17_22_4part_release.py",
+          "occurrences": 1
+        },
+        {
+          "path": "scripts/package_education_phase3_4part_release.py",
+          "occurrences": 1
+        },
+        {
+          "path": "scripts/package_education_phase4_4part_release.py",
+          "occurrences": 1
+        },
+        {
+          "path": "scripts/package_education_phase5_4part_release.py",
+          "occurrences": 1
+        },
+        {
+          "path": "scripts/package_education_phase6_4part_release.py",
+          "occurrences": 1
+        },
+        {
+          "path": "scripts/package_education_phase7_4part_release.py",
+          "occurrences": 1
+        },
+        {
+          "path": "scripts/package_education_phase8_4part_release.py",
+          "occurrences": 1
+        },
+        {
+          "path": "scripts/package_education_science_academy_4part_release.py",
+          "occurrences": 1
+        },
+        {
+          "path": "scripts/package_education_universe_4part_release.py",
+          "occurrences": 1
+        },
+        {
+          "path": "scripts/package_heavily_upgraded.py",
+          "occurrences": 2
+        },
+        {
+          "path": "scripts/package_shiro_4part_release.py",
+          "occurrences": 1
+        },
+        {
+          "path": "scripts/qualify_step137_bioinformatics_peak.py",
+          "occurrences": 1
+        },
+        {
+          "path": "scripts/runtime_supervisor_step206.py",
+          "occurrences": 7
+        },
+        {
+          "path": "scripts/run_biointel_step206.py",
+          "occurrences": 4
+        },
+        {
+          "path": "scripts/run_biointel_step97.py",
+          "occurrences": 3
+        },
+        {
+          "path": "scripts/run_education_phase11_worker.py",
+          "occurrences": 2
+        },
+        {
+          "path": "scripts/run_education_phase12_worker.py",
+          "occurrences": 2
+        },
+        {
+          "path": "scripts/run_education_phase13_worker.py",
+          "occurrences": 2
+        },
+        {
+          "path": "scripts/run_education_phase14_worker.py",
+          "occurrences": 2
+        },
+        {
+          "path": "scripts/run_education_phase15_worker.py",
+          "occurrences": 2
+        },
+        {
+          "path": "scripts/run_education_phase16_worker.py",
+          "occurrences": 2
+        },
+        {
+          "path": "scripts/run_education_phase17_22_worker.py",
+          "occurrences": 2
+        },
+        {
+          "path": "scripts/run_education_phase6_worker.py",
+          "occurrences": 3
+        },
+        {
+          "path": "scripts/setup_free_web_ai_windows.py",
+          "occurrences": 3
+        },
+        {
+          "path": "scripts/setup_scientific_runtime_windows.py",
+          "occurrences": 1
+        },
+        {
+          "path": "scripts/step140_windows_qualification.py",
+          "occurrences": 1
+        },
+        {
+          "path": "scripts/step155_validate_installation.py",
+          "occurrences": 1
+        },
+        {
+          "path": "scripts/step156_validate_installation.py",
+          "occurrences": 1
+        },
+        {
+          "path": "scripts/step157_app_test_matrix.py",
+          "occurrences": 1
+        },
+        {
+          "path": "scripts/step157_validate_installation.py",
+          "occurrences": 1
+        },
+        {
+          "path": "scripts/step173_static_qualification.py",
+          "occurrences": 1
+        },
+        {
+          "path": "scripts/step175_package.py",
+          "occurrences": 1
+        },
+        {
+          "path": "scripts/step206_package.py",
+          "occurrences": 1
+        },
+        {
+          "path": "scripts/step206_package_professional.py",
+          "occurrences": 1
+        },
+        {
+          "path": "scripts/step206_release_gate.py",
+          "occurrences": 1
+        },
+        {
+          "path": "scripts/verify_step127.py",
+          "occurrences": 1
+        },
+        {
+          "path": "scripts/verify_step128.py",
+          "occurrences": 1
+        },
+        {
+          "path": "scripts/verify_step133_module_only.py",
+          "occurrences": 1
+        },
+        {
+          "path": "scripts/verify_step134.py",
+          "occurrences": 1
+        },
+        {
+          "path": "scripts/verify_step135.py",
+          "occurrences": 1
+        },
+        {
+          "path": "scripts/verify_step204_windows_install_run.py",
+          "occurrences": 1
+        },
+        {
+          "path": "scripts/verify_step205_windows_install_run.py",
+          "occurrences": 1
+        },
+        {
+          "path": "scripts/verify_step206_windows_install_run.py",
+          "occurrences": 1
+        },
+        {
+          "path": "scripts/verify_step62_lab_analytics.py",
+          "occurrences": 2
+        },
+        {
+          "path": "scripts/verify_step63_discovery.py",
+          "occurrences": 2
+        },
+        {
+          "path": "scripts/verify_step64_final.py",
+          "occurrences": 1
+        },
+        {
+          "path": "src/biointel/media_tools.py",
+          "occurrences": 1
+        },
+        {
+          "path": "src/biointel/api/middleware.py",
+          "occurrences": 1
+        },
+        {
+          "path": "src/biointel/assets/research_assets.py",
+          "occurrences": 3
+        },
+        {
+          "path": "src/biointel/assurance/cache.py",
+          "occurrences": 1
+        },
+        {
+          "path": "src/biointel/authenticity_v162/benchmark_suite.py",
+          "occurrences": 1
+        },
+        {
+          "path": "src/biointel/bioinformatics_peak_v138/renderer.py",
+          "occurrences": 1
+        },
+        {
+          "path": "src/biointel/biotech/lab_reporting.py",
+          "occurrences": 1
+        },
+        {
+          "path": "src/biointel/connect/media.py",
+          "occurrences": 1
+        },
+        {
+          "path": "src/biointel/connected/fhir_pacs.py",
+          "occurrences": 1
+        },
+        {
+          "path": "src/biointel/connected/free_web_ai.py",
+          "occurrences": 1
+        },
+        {
+          "path": "src/biointel/data/curation.py",
+          "occurrences": 1
+        },
+        {
+          "path": "src/biointel/data/evidence_registry.py",
+          "occurrences": 1
+        },
+        {
+          "path": "src/biointel/data/neuro_data_fabric.py",
+          "occurrences": 2
+        },
+        {
+          "path": "src/biointel/database/core.py",
+          "occurrences": 1
+        },
+        {
+          "path": "src/biointel/databases/licensed_databases.py",
+          "occurrences": 1
+        },
+        {
+          "path": "src/biointel/discovery_platform/ingestion.py",
+          "occurrences": 1
+        },
+        {
+          "path": "src/biointel/discovery_platform/security.py",
+          "occurrences": 3
+        },
+        {
+          "path": "src/biointel/documents/extractor.py",
+          "occurrences": 4
+        },
+        {
+          "path": "src/biointel/documents/history.py",
+          "occurrences": 4
+        },
+        {
+          "path": "src/biointel/documents/security.py",
+          "occurrences": 1
+        },
+        {
+          "path": "src/biointel/dti/predictor.py",
+          "occurrences": 1
+        },
+        {
+          "path": "src/biointel/education/adapters.py",
+          "occurrences": 1
+        }
+      ]
+    },
+    "fake_success_language": {
+      "occurrences": 1,
+      "files": [
+        {
+          "path": "SOURCE_INVENTORY_PHASE17_TO_22.md",
+          "occurrences": 1
+        }
+      ]
+    },
+    "streamlit_buttons": {
+      "occurrences": 859,
+      "files": [
+        {
+          "path": "pages/0_Quick_Start.py",
+          "occurrences": 1
+        },
+        {
+          "path": "pages/100_Rare_Disease_Genome_Interpretation.py",
+          "occurrences": 1
+        },
+        {
+          "path": "pages/102_Multi_Omics_Biomarker_Discovery.py",
+          "occurrences": 2
+        },
+        {
+          "path": "pages/103_Visual_Workflow_Builder.py",
+          "occurrences": 1
+        },
+        {
+          "path": "pages/105_Scientific_Execution_Quality_Center.py",
+          "occurrences": 1
+        },
+        {
+          "path": "pages/106_Reference_Database_Manager.py",
+          "occurrences": 7
+        },
+        {
+          "path": "pages/107_Installation_Data_Recovery_Center.py",
+          "occurrences": 2
+        },
+        {
+          "path": "pages/10_External_Databases.py",
+          "occurrences": 4
+        },
+        {
+          "path": "pages/110_Reliability_Optimization_Center.py",
+          "occurrences": 2
+        },
+        {
+          "path": "pages/111_Windows_UI_Regression_Performance_Center.py",
+          "occurrences": 2
+        },
+        {
+          "path": "pages/11_Experiment_Registry.py",
+          "occurrences": 1
+        },
+        {
+          "path": "pages/121_Biostatistics_Power_and_Experimental_Design_Studio.py",
+          "occurrences": 5
+        },
+        {
+          "path": "pages/134_Population_Genetics_GWAS_Studio.py",
+          "occurrences": 1
+        },
+        {
+          "path": "pages/13_ChEMBL_Dataset_Builder.py",
+          "occurrences": 1
+        },
+        {
+          "path": "pages/140_Cell_Atlas_Mapping_Reference_Annotation_Studio.py",
+          "occurrences": 1
+        },
+        {
+          "path": "pages/141_Shiro_AI_Studio.py",
+          "occurrences": 1
+        },
+        {
+          "path": "pages/14_External_Validation_Drift.py",
+          "occurrences": 1
+        },
+        {
+          "path": "pages/153_BioIntel_Academy_Lecture_Studio.py",
+          "occurrences": 3
+        },
+        {
+          "path": "pages/153_Reference_Database_Lifecycle_Manager_2.py",
+          "occurrences": 4
+        },
+        {
+          "path": "pages/154_BioIntel_Examination_Command.py",
+          "occurrences": 2
+        },
+        {
+          "path": "pages/160_Adaptive_Learning_Engine.py",
+          "occurrences": 2
+        },
+        {
+          "path": "pages/161_Virtual_Science_Lab.py",
+          "occurrences": 2
+        },
+        {
+          "path": "pages/162_Bioinformatics_Learning_Sandbox.py",
+          "occurrences": 2
+        },
+        {
+          "path": "pages/163_Shiro_AI_Tutor.py",
+          "occurrences": 2
+        },
+        {
+          "path": "pages/164_Learning_Analytics.py",
+          "occurrences": 2
+        },
+        {
+          "path": "pages/164_Visual_Interaction_Accessibility_Workspace.py",
+          "occurrences": 1
+        },
+        {
+          "path": "pages/165_Digital_Scientific_Library.py",
+          "occurrences": 2
+        },
+        {
+          "path": "pages/166_Real_Engine_Native_Format_Integration.py",
+          "occurrences": 6
+        },
+        {
+          "path": "pages/166_Student_Research_Innovation_Hub.py",
+          "occurrences": 2
+        },
+        {
+          "path": "pages/167_Competition_Hackathon_Center.py",
+          "occurrences": 2
+        },
+        {
+          "path": "pages/168_Career_Internship_Scholarship_Hub.py",
+          "occurrences": 2
+        },
+        {
+          "path": "pages/169_Academic_Portfolio_Credentials.py",
+          "occurrences": 2
+        },
+        {
+          "path": "pages/16_Batch_Sequence_Analysis.py",
+          "occurrences": 1
+        },
+        {
+          "path": "pages/170_Practical_Laboratory_Management.py",
+          "occurrences": 2
+        },
+        {
+          "path": "pages/171_Module_Catalogue_Search.py",
+          "occurrences": 1
+        },
+        {
+          "path": "pages/171_Question_Bank_Assessment_Intelligence.py",
+          "occurrences": 2
+        },
+        {
+          "path": "pages/172_Multilingual_Lecture_Intelligence.py",
+          "occurrences": 2
+        },
+        {
+          "path": "pages/173_Academic_ERP.py",
+          "occurrences": 2
+        },
+        {
+          "path": "pages/174_Gamified_Learning.py",
+          "occurrences": 2
+        },
+        {
+          "path": "pages/175_Teaching_Quality_Support.py",
+          "occurrences": 2
+        },
+        {
+          "path": "pages/176_Offline_Learning.py",
+          "occurrences": 2
+        },
+        {
+          "path": "pages/177_Open_Science.py",
+          "occurrences": 2
+        },
+        {
+          "path": "pages/178_Collaboration_Network.py",
+          "occurrences": 2
+        },
+        {
+          "path": "pages/179_Safety_Moderation.py",
+          "occurrences": 2
+        },
+        {
+          "path": "pages/17_Local_Data_Manager.py",
+          "occurrences": 7
+        },
+        {
+          "path": "pages/18_Workspace_Backup_Restore.py",
+          "occurrences": 2
+        },
+        {
+          "path": "pages/19_System_Diagnostics.py",
+          "occurrences": 2
+        },
+        {
+          "path": "pages/20_Workflow_Dashboard.py",
+          "occurrences": 1
+        },
+        {
+          "path": "pages/21_Dataset_Registry_Lineage.py",
+          "occurrences": 2
+        },
+        {
+          "path": "pages/227_Scientific_Readiness_Command_Center.py",
+          "occurrences": 1
+        },
+        {
+          "path": "pages/22_Model_Lifecycle.py",
+          "occurrences": 1
+        },
+        {
+          "path": "pages/233_Operational_Readiness_10of10_Center.py",
+          "occurrences": 1
+        },
+        {
+          "path": "pages/23_Batch_Prediction_Jobs.py",
+          "occurrences": 1
+        },
+        {
+          "path": "pages/243_Phase_1_to_9_Real_World_Qualification_Execution.py",
+          "occurrences": 1
+        },
+        {
+          "path": "pages/24_Appearance_Studio.py",
+          "occurrences": 6
+        },
+        {
+          "path": "pages/268_Engine_Control_Center.py",
+          "occurrences": 2
+        },
+        {
+          "path": "pages/26_Research_Report_Studio.py",
+          "occurrences": 1
+        },
+        {
+          "path": "pages/270_Discovery_Lab_Platform.py",
+          "occurrences": 13
+        },
+        {
+          "path": "pages/272_Lab_PDF_and_Notebook_RAG_Studio.py",
+          "occurrences": 2
+        },
+        {
+          "path": "pages/273_Live_Clinical_Trials_and_Patient_Matcher.py",
+          "occurrences": 2
+        },
+        {
+          "path": "pages/278_Spike_Sorting_Center.py",
+          "occurrences": 1
+        },
+        {
+          "path": "pages/279_iEEG_ECoG_SEEG_Studio.py",
+          "occurrences": 1
+        },
+        {
+          "path": "pages/280_Realtime_Acquisition_ClosedLoop_Hub.py",
+          "occurrences": 2
+        },
+        {
+          "path": "pages/281_Neuromodulation_SimNIBS_Studio.py",
+          "occurrences": 1
+        },
+        {
+          "path": "pages/28_Project_Portfolio.py",
+          "occurrences": 4
+        },
+        {
+          "path": "pages/29_Activity_Risk_Center.py",
+          "occurrences": 2
+        },
+        {
+          "path": "pages/2_Sequence_Comparison.py",
+          "occurrences": 1
+        },
+        {
+          "path": "pages/30_Governance_Hub.py",
+          "occurrences": 5
+        },
+        {
+          "path": "pages/31_Evidence_Package_Studio.py",
+          "occurrences": 1
+        },
+        {
+          "path": "pages/33_Data_Model_Library.py",
+          "occurrences": 1
+        },
+        {
+          "path": "pages/36_Data_Coverage_Center.py",
+          "occurrences": 1
+        },
+        {
+          "path": "pages/38_Data_Intelligence_Hub.py",
+          "occurrences": 3
+        },
+        {
+          "path": "pages/3_Drug_SMILES_Analyzer.py",
+          "occurrences": 1
+        },
+        {
+          "path": "pages/41_Research_Assets.py",
+          "occurrences": 1
+        },
+        {
+          "path": "pages/42_Internet_Research_Hub.py",
+          "occurrences": 6
+        },
+        {
+          "path": "pages/43_Scientific_Data_Curation.py",
+          "occurrences": 1
+        },
+        {
+          "path": "pages/44_Performance_Job_Center.py",
+          "occurrences": 1
+        },
+        {
+          "path": "pages/45_Scientific_Release_Gate.py",
+          "occurrences": 1
+        },
+        {
+          "path": "pages/46_Real_Evidence_Studio.py",
+          "occurrences": 2
+        },
+        {
+          "path": "pages/47_Benchmark_Leakage_Lab.py",
+          "occurrences": 1
+        },
+        {
+          "path": "pages/48_Evidence_Review_Queue.py",
+          "occurrences": 1
+        },
+        {
+          "path": "pages/49_Document_Intelligence_Center.py",
+          "occurrences": 1
+        },
+        {
+          "path": "pages/4_DTI_Feature_Builder.py",
+          "occurrences": 1
+        },
+        {
+          "path": "pages/50_Document_Extraction_History.py",
+          "occurrences": 4
+        },
+        {
+          "path": "pages/51_OCR_Layout_Review.py",
+          "occurrences": 1
+        },
+        {
+          "path": "pages/52_Batch_Document_Processor.py",
+          "occurrences": 2
+        },
+        {
+          "path": "pages/53_Document_Knowledge_Search.py",
+          "occurrences": 2
+        },
+        {
+          "path": "pages/54_Document_Evidence_Bridge.py",
+          "occurrences": 2
+        },
+        {
+          "path": "pages/55_Demo_Data_Hub.py",
+          "occurrences": 1
+        },
+        {
+          "path": "pages/56_FASTQ_Genomics_QC.py",
+          "occurrences": 3
+        },
+        {
+          "path": "pages/57_Variant_Annotation_Workbench.py",
+          "occurrences": 4
+        },
+        {
+          "path": "pages/58_Primer_CRISPR_Codon_Studio.py",
+          "occurrences": 3
+        },
+        {
+          "path": "pages/59_Transcriptomics_Expression_Lab.py",
+          "occurrences": 1
+        },
+        {
+          "path": "pages/5_Model_Training.py",
+          "occurrences": 2
+        },
+        {
+          "path": "pages/60_Protein_Annotation_Proteomics.py",
+          "occurrences": 2
+        },
+        {
+          "path": "pages/61_Structural_Bioinformatics.py",
+          "occurrences": 1
+        },
+        {
+          "path": "pages/62_ADMET_Drug_Discovery.py",
+          "occurrences": 2
+        },
+        {
+          "path": "pages/63_Pathway_Network_Analysis.py",
+          "occurrences": 1
+        },
+        {
+          "path": "pages/64_Wet_Lab_Biotechnology.py",
+          "occurrences": 9
+        },
+        {
+          "path": "pages/65_Microbiology_Metagenomics.py",
+          "occurrences": 1
+        }
+      ]
+    },
+    "streamlit_session_state": {
+      "occurrences": 1275,
+      "files": [
+        {
+          "path": "SOURCE_INVENTORY_PHASE17_TO_22.md",
+          "occurrences": 1
+        },
+        {
+          "path": "STEP118_WORKSPACE_CARD_CONSISTENCY_REPORT.md",
+          "occurrences": 1
+        },
+        {
+          "path": "STEP124_CANVAS_RENDERING_HOTFIX_REPORT.md",
+          "occurrences": 1
+        },
+        {
+          "path": "STEP68_RUNTIME_REPAIR_AND_STRUCTURE_VISUALIZATION_REPORT.md",
+          "occurrences": 1
+        },
+        {
+          "path": "pages/102_Multi_Omics_Biomarker_Discovery.py",
+          "occurrences": 6
+        },
+        {
+          "path": "pages/103_Visual_Workflow_Builder.py",
+          "occurrences": 11
+        },
+        {
+          "path": "pages/106_Reference_Database_Manager.py",
+          "occurrences": 3
+        },
+        {
+          "path": "pages/10_External_Databases.py",
+          "occurrences": 5
+        },
+        {
+          "path": "pages/110_Reliability_Optimization_Center.py",
+          "occurrences": 2
+        },
+        {
+          "path": "pages/111_Windows_UI_Regression_Performance_Center.py",
+          "occurrences": 2
+        },
+        {
+          "path": "pages/121_Biostatistics_Power_and_Experimental_Design_Studio.py",
+          "occurrences": 33
+        },
+        {
+          "path": "pages/13_ChEMBL_Dataset_Builder.py",
+          "occurrences": 2
+        },
+        {
+          "path": "pages/14_External_Validation_Drift.py",
+          "occurrences": 4
+        },
+        {
+          "path": "pages/153_Reference_Database_Lifecycle_Manager_2.py",
+          "occurrences": 3
+        },
+        {
+          "path": "pages/15_Audit_Release.py",
+          "occurrences": 8
+        },
+        {
+          "path": "pages/166_Real_Engine_Native_Format_Integration.py",
+          "occurrences": 13
+        },
+        {
+          "path": "pages/16_Batch_Sequence_Analysis.py",
+          "occurrences": 3
+        },
+        {
+          "path": "pages/171_Module_Catalogue_Search.py",
+          "occurrences": 3
+        },
+        {
+          "path": "pages/186_Synthetic_Cohort_Trial_Simulation_Lab.py",
+          "occurrences": 1
+        },
+        {
+          "path": "pages/18_Workspace_Backup_Restore.py",
+          "occurrences": 3
+        },
+        {
+          "path": "pages/19_System_Diagnostics.py",
+          "occurrences": 15
+        },
+        {
+          "path": "pages/1_Sequence_Analyzer.py",
+          "occurrences": 1
+        },
+        {
+          "path": "pages/20_Workflow_Dashboard.py",
+          "occurrences": 3
+        },
+        {
+          "path": "pages/221_Research_Planning_Command_Center.py",
+          "occurrences": 3
+        },
+        {
+          "path": "pages/222_Research_Budget_Participant_Burden_Studio.py",
+          "occurrences": 12
+        },
+        {
+          "path": "pages/227_Scientific_Readiness_Command_Center.py",
+          "occurrences": 4
+        },
+        {
+          "path": "pages/23_Batch_Prediction_Jobs.py",
+          "occurrences": 4
+        },
+        {
+          "path": "pages/24_Appearance_Studio.py",
+          "occurrences": 47
+        },
+        {
+          "path": "pages/25_Command_Center.py",
+          "occurrences": 1
+        },
+        {
+          "path": "pages/26_Research_Report_Studio.py",
+          "occurrences": 4
+        },
+        {
+          "path": "pages/270_Discovery_Lab_Platform.py",
+          "occurrences": 16
+        },
+        {
+          "path": "pages/272_Lab_PDF_and_Notebook_RAG_Studio.py",
+          "occurrences": 2
+        },
+        {
+          "path": "pages/273_Live_Clinical_Trials_and_Patient_Matcher.py",
+          "occurrences": 9
+        },
+        {
+          "path": "pages/280_Realtime_Acquisition_ClosedLoop_Hub.py",
+          "occurrences": 3
+        },
+        {
+          "path": "pages/31_Evidence_Package_Studio.py",
+          "occurrences": 3
+        },
+        {
+          "path": "pages/3_Drug_SMILES_Analyzer.py",
+          "occurrences": 21
+        },
+        {
+          "path": "pages/42_Internet_Research_Hub.py",
+          "occurrences": 11
+        },
+        {
+          "path": "pages/43_Scientific_Data_Curation.py",
+          "occurrences": 8
+        },
+        {
+          "path": "pages/45_Scientific_Release_Gate.py",
+          "occurrences": 2
+        },
+        {
+          "path": "pages/46_Real_Evidence_Studio.py",
+          "occurrences": 3
+        },
+        {
+          "path": "pages/47_Benchmark_Leakage_Lab.py",
+          "occurrences": 2
+        },
+        {
+          "path": "pages/49_Document_Intelligence_Center.py",
+          "occurrences": 3
+        },
+        {
+          "path": "pages/4_DTI_Feature_Builder.py",
+          "occurrences": 2
+        },
+        {
+          "path": "pages/52_Batch_Document_Processor.py",
+          "occurrences": 3
+        },
+        {
+          "path": "pages/53_Document_Knowledge_Search.py",
+          "occurrences": 4
+        },
+        {
+          "path": "pages/56_FASTQ_Genomics_QC.py",
+          "occurrences": 7
+        },
+        {
+          "path": "pages/57_Variant_Annotation_Workbench.py",
+          "occurrences": 20
+        },
+        {
+          "path": "pages/58_Primer_CRISPR_Codon_Studio.py",
+          "occurrences": 5
+        },
+        {
+          "path": "pages/5_Model_Training.py",
+          "occurrences": 13
+        },
+        {
+          "path": "pages/62_ADMET_Drug_Discovery.py",
+          "occurrences": 11
+        },
+        {
+          "path": "pages/6_DTI_Predictor.py",
+          "occurrences": 1
+        },
+        {
+          "path": "pages/78_Protein_Interaction_ML.py",
+          "occurrences": 2
+        },
+        {
+          "path": "pages/79_Comparative_Pathogen_Genomics.py",
+          "occurrences": 2
+        },
+        {
+          "path": "pages/80_Single_Cell_Heterogeneity.py",
+          "occurrences": 2
+        },
+        {
+          "path": "pages/81_Cancer_Genomics.py",
+          "occurrences": 2
+        },
+        {
+          "path": "pages/82_Metagenomics_Pipeline.py",
+          "occurrences": 4
+        },
+        {
+          "path": "pages/83_BioIntel_Copilot.py",
+          "occurrences": 13
+        },
+        {
+          "path": "pages/84_Connected_Data_Explorer.py",
+          "occurrences": 4
+        },
+        {
+          "path": "pages/85_Provider_Integration_Center.py",
+          "occurrences": 6
+        },
+        {
+          "path": "pages/88_Discovery_Command_Center.py",
+          "occurrences": 21
+        },
+        {
+          "path": "pages/96_AI_Protein_Design_Lab.py",
+          "occurrences": 1
+        },
+        {
+          "path": "src/biointel/bioinformatics_peak_v137/renderer.py",
+          "occurrences": 9
+        },
+        {
+          "path": "src/biointel/bioinformatics_peak_v138/renderer.py",
+          "occurrences": 39
+        },
+        {
+          "path": "src/biointel/connect/advanced_ui.py",
+          "occurrences": 34
+        },
+        {
+          "path": "src/biointel/connect/complete_ui.py",
+          "occurrences": 9
+        },
+        {
+          "path": "src/biointel/contextual_research_v196/ui.py",
+          "occurrences": 6
+        },
+        {
+          "path": "src/biointel/education/academy_ui.py",
+          "occurrences": 9
+        },
+        {
+          "path": "src/biointel/education/classroom_ui.py",
+          "occurrences": 2
+        },
+        {
+          "path": "src/biointel/education/examination_ui.py",
+          "occurrences": 7
+        },
+        {
+          "path": "src/biointel/education/experience.py",
+          "occurrences": 17
+        },
+        {
+          "path": "src/biointel/education/institution_ui.py",
+          "occurrences": 4
+        },
+        {
+          "path": "src/biointel/education/intelligence_ui.py",
+          "occurrences": 4
+        },
+        {
+          "path": "src/biointel/education/phase11_ui.py",
+          "occurrences": 6
+        },
+        {
+          "path": "src/biointel/education/phase12_ui.py",
+          "occurrences": 6
+        },
+        {
+          "path": "src/biointel/education/phase13_ui.py",
+          "occurrences": 9
+        },
+        {
+          "path": "src/biointel/education/phase14_ui.py",
+          "occurrences": 4
+        },
+        {
+          "path": "src/biointel/education/phase15_ui.py",
+          "occurrences": 2
+        },
+        {
+          "path": "src/biointel/education/phase16_ui.py",
+          "occurrences": 5
+        },
+        {
+          "path": "src/biointel/education/phase2_ui.py",
+          "occurrences": 13
+        },
+        {
+          "path": "src/biointel/education/phase7_ui.py",
+          "occurrences": 29
+        },
+        {
+          "path": "src/biointel/education/pulse_ui.py",
+          "occurrences": 6
+        },
+        {
+          "path": "src/biointel/education/ui.py",
+          "occurrences": 38
+        },
+        {
+          "path": "src/biointel/education/universe_ui.py",
+          "occurrences": 22
+        },
+        {
+          "path": "src/biointel/education/visual_command_ui.py",
+          "occurrences": 9
+        },
+        {
+          "path": "src/biointel/education/components/themes.py",
+          "occurrences": 1
+        },
+        {
+          "path": "src/biointel/education/phase17_22/ui.py",
+          "occurrences": 2
+        },
+        {
+          "path": "src/biointel/innovation/excellence_ui.py",
+          "occurrences": 4
+        },
+        {
+          "path": "src/biointel/live_workspace_v210/advanced_ui.py",
+          "occurrences": 4
+        },
+        {
+          "path": "src/biointel/live_workspace_v210/ui.py",
+          "occurrences": 37
+        },
+        {
+          "path": "src/biointel/module_features_v208/ui.py",
+          "occurrences": 12
+        },
+        {
+          "path": "src/biointel/module_runtime_v207/portfolio_ui.py",
+          "occurrences": 3
+        },
+        {
+          "path": "src/biointel/module_runtime_v207/ui.py",
+          "occurrences": 5
+        },
+        {
+          "path": "src/biointel/neuro_cns/ui.py",
+          "occurrences": 24
+        },
+        {
+          "path": "src/biointel/neuro_cns/ui_v207.py",
+          "occurrences": 3
+        },
+        {
+          "path": "src/biointel/nextgen/native_execution_v136.py",
+          "occurrences": 1
+        },
+        {
+          "path": "src/biointel/nextgen/renderer.py",
+          "occurrences": 4
+        },
+        {
+          "path": "src/biointel/peak_potential/ui.py",
+          "occurrences": 32
+        },
+        {
+          "path": "src/biointel/proof_gates_v10/ui.py",
+          "occurrences": 4
+        },
+        {
+          "path": "src/biointel/research_planning/advanced_renderer.py",
+          "occurrences": 8
+        },
+        {
+          "path": "src/biointel/research_planning/feature_density_renderer.py",
+          "occurrences": 2
+        }
+      ]
+    }
+  },
+  "notes": [
+    "Button and session-state counts are static review candidates, not proof of broken behavior.",
+    "Compatibility page duplicates are retained as wrappers when a newer canonical page exists.",
+    "Transient virtual environments, caches, and bytecode are excluded from comparison."
+  ]
+}

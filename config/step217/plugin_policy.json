@@ -1,0 +1,16 @@
+{
+  "schema": "biointel.plugin-policy.v217",
+  "signature_algorithm": "Ed25519",
+  "trust_store": "config/trust/publishers",
+  "manifest": "plugin.json",
+  "detached_signature": "SIGNATURE.ed25519",
+  "default_state": "installed-disabled",
+  "runtime": {
+    "isolated_environment": true,
+    "network_default": "deny",
+    "filesystem_default": "deny",
+    "secrets_default": "deny",
+    "process_spawn_default": "deny"
+  },
+  "release_rule": "Unsigned, untrusted, hash-mismatched or over-privileged plugins fail closed."
+}

@@ -1,0 +1,99 @@
+{
+  "schema": "biointel.step204.protected-module-hashes.v1",
+  "source": "canonical uploaded Step203 five-part package",
+  "status": "unchanged",
+  "protected_areas": [
+    "DTI Predictor",
+    "DTI Validation Evidence Center",
+    "LIMS / ELN / Sample Chain of Custody",
+    "Lab Instrument Import Center",
+    "Instrument Integration Hub"
+  ],
+  "entries": [
+    {
+      "path": "pages/6_DTI_Predictor.py",
+      "size_bytes": 22203,
+      "sha256": "8cf9bd3808f960fd94cf8139f5c2958e409771f310f8de8ec2f0c47d79c0abfc"
+    },
+    {
+      "path": "pages/74_DTI_Validation_Evidence_Center.py",
+      "size_bytes": 6655,
+      "sha256": "83413a0e72a15c823b92ee5b184805634973cd1870150c51488b5530ebcd6138"
+    },
+    {
+      "path": "pages/126_LIMS_ELN_and_Sample_Chain_of_Custody_Hub.py",
+      "size_bytes": 1775,
+      "sha256": "a9414d90f056a2b008cf470c339ee178d52053722021285baf054080c08d9a96"
+    },
+    {
+      "path": "pages/109_Lab_Instrument_Import_Center.py",
+      "size_bytes": 4241,
+      "sha256": "3fc56e1544915062196c36511986f0e04242c08cdb0cc6ce5d7c1fe59ebc49be"
+    },
+    {
+      "path": "pages/157_Instrument_Integration_Hub_2.py",
+      "size_bytes": 1047,
+      "sha256": "1b4a5f9473e028571ce8464ee8beed3663be5dc8d8a0162a87bd85fae380e23c"
+    },
+    {
+      "path": "src/biointel/dti/__init__.py",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/biointel/dti/activity.py",
+      "size_bytes": 1450,
+      "sha256": "dde210d6b039bb7a33e020d95211f4763cfe94f6646525ded3287565728534ab"
+    },
+    {
+      "path": "src/biointel/dti/batch_pipeline.py",
+      "size_bytes": 10315,
+      "sha256": "03efed2b2d05d24d8363a2ff9d1a5ba2a13c1f60b738e5e9dccd5f5c3794320a"
+    },
+    {
+      "path": "src/biointel/dti/checkpoints.py",
+      "size_bytes": 9064,
+      "sha256": "c9c0a154a291ca6aa12d51159f569ac60f0b8aa164499ddc6e2d8dfa642323f5"
+    },
+    {
+      "path": "src/biointel/dti/dataset_validation.py",
+      "size_bytes": 8288,
+      "sha256": "ed7c2445663b1652b5f0e1f9bbcc9055652359a2ff51771709bf4b43b384cd0f"
+    },
+    {
+      "path": "src/biointel/dti/drug_features.py",
+      "size_bytes": 1699,
+      "sha256": "34db774e6a59d1920a8fd8c733aa20a8493e9db9e2ac2241b95241573a8d3dd5"
+    },
+    {
+      "path": "src/biointel/dti/feature_cache.py",
+      "size_bytes": 11352,
+      "sha256": "d1294f23960d857535021df608f206aae52ad95ff6834fa0376f2afad994fb49"
+    },
+    {
+      "path": "src/biointel/dti/feature_combiner.py",
+      "size_bytes": 2388,
+      "sha256": "2d1e37d688701b896e16ca6029cbe119c40069101e982f3490117f1d41f50014"
+    },
+    {
+      "path": "src/biointel/dti/inference_matrix.py",
+      "size_bytes": 9477,
+      "sha256": "ae9b0d270fdba9e1471e2beb8f5c978253789e3865e0b31e0fdc8f289e601879"
+    },
+    {
+      "path": "src/biointel/dti/predictor.py",
+      "size_bytes": 17448,
+      "sha256": "fb4740b0743ad02ef5f90be6cfaf8558c7fae4f4828162d9954fc74dc36164d6"
+    },
+    {
+      "path": "src/biointel/dti/protein_features.py",
+      "size_bytes": 3150,
+      "sha256": "71ca312e9bcbd6ae22947fd5f927cafd0527cb37714d165aae70d26a1a9e01e6"
+    },
+    {
+      "path": "src/biointel/dti/validation_suite.py",
+      "size_bytes": 6473,
+      "sha256": "b78b1cdb82cbfe7ca558ab3ccf1c30013e29afc77177daabc851e2380dfd4e65"
+    }
+  ]
+}

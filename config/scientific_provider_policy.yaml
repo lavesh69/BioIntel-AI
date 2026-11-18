@@ -1,0 +1,51 @@
+version: 1
+network:
+  https_only: true
+  retries: 3
+  timeout_seconds: 45
+  checksum_required: true
+  etag_capture: true
+  last_modified_capture: true
+providers:
+  chembl:
+    official_host: www.ebi.ac.uk
+    api: https://www.ebi.ac.uk/chembl/api/data
+    resources: [activity, assay, molecule, target, organism, tissue, cell_line, drug_indication]
+    licence_review_required: true
+  uniprot:
+    official_host: rest.uniprot.org
+    api: https://rest.uniprot.org
+    resources: [uniprotkb, taxonomy, proteomes]
+    licence_review_required: true
+  pubchem:
+    official_host: pubchem.ncbi.nlm.nih.gov
+    api: https://pubchem.ncbi.nlm.nih.gov/rest/pug
+    resources: [compound, bioassay]
+  rcsb:
+    official_host: data.rcsb.org
+    api: https://data.rcsb.org/rest/v1
+    resources: [entry, polymer_entity, nonpolymer_entity]
+  clinicaltrials:
+    official_host: clinicaltrials.gov
+    api: https://clinicaltrials.gov/api/v2
+    resources: [studies, version]
+  clinvar:
+    official_host: eutils.ncbi.nlm.nih.gov
+    resources: [clinvar]
+  geo:
+    official_host: eutils.ncbi.nlm.nih.gov
+    resources: [gds]
+  bindingdb:
+    official_host: www.bindingdb.org
+    resources: [binding_affinity]
+  uci:
+    official_host: archive.ics.uci.edu
+    api: https://archive.ics.uci.edu/dataset/17/breast-cancer-wisconsin-diagnostic
+    resources: [health_and_medicine_reference_dataset]
+    licence: CC BY 4.0
+release_rules:
+  provider_authenticity_is_not_release_approval: true
+  curator_review_required: true
+  source_release_required: true
+  source_url_required: true
+  checksum_required: true

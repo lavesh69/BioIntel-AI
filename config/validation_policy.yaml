@@ -1,0 +1,36 @@
+version: 1.0
+policy: strict_scientific_dti_release
+minimum_test_rows: 100
+minimum_external_sites: 2
+minimum_prospective_batches: 2
+required_splits:
+  - cold_drug
+  - cold_target
+  - cold_drug_and_target
+  - scaffold
+  - protein_sequence_cluster
+  - temporal
+  - independent_external
+  - prospective
+classification:
+  roc_auc: 0.70
+  roc_auc_lower_95: 0.65
+  balanced_accuracy: 0.65
+  expected_calibration_error_max: 0.10
+  conformal_coverage_min: 0.85
+regression:
+  r2: 0.0
+  r2_lower_95: 0.0
+  pearson: 0.30
+  conformal_coverage_min: 0.85
+leakage:
+  exact_pair_overlap_max: 0
+  cold_drug_overlap_max: 0
+  cold_target_overlap_max: 0
+  scaffold_overlap_max: 0
+  sequence_cluster_overlap_max: 0
+evidence:
+  immutable_dataset_hash_required: true
+  independent_reviewer_required: true
+  signed_manifest_required: true
+  prospective_freeze_required: true

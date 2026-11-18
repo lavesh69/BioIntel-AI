@@ -1,0 +1,35 @@
+brand:
+  name: BioIntel AI
+  descriptor: Scientific Intelligence for Life Sciences
+  tagline: Biology, Engineered into Intelligence.
+  trust_line: Traceable science. Defensible decisions.
+  founder: Lavesh Dobriyal
+  founder_prefix: Created and developed by
+  edition: Professional Research Platform
+  master_brand_only: true
+  module_title_pattern: "{module} · BioIntel AI"
+colors:
+  primary: "#22D3EE"
+  secondary: "#3B82F6"
+  accent: "#8B5CF6"
+  background: "#07111F"
+  surface: "#111C30"
+  text: "#F8FAFC"
+  muted: "#9DB6C8"
+model_tiers:
+  A: Independent validation
+  B: External evidence
+  C: Public-data research
+  D: Demonstration
+claims:
+  approved:
+    - Demonstration model
+    - Research use only
+    - Public-data validated
+    - Independent validation pending
+    - Release eligible
+    - Clinical use not authorised
+  evidence_required:
+    - clinically validated
+    - pharma validated
+    - regulator approved

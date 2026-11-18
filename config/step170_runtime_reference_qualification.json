@@ -1,0 +1,12 @@
+{
+  "schema": "biointel.step170.runtime-reference-qualification.v1",
+  "step": 170,
+  "version": "14.2.0",
+  "specialist_engines": 53,
+  "runtime_strategy": "WSL2 Linux isolated scientific runtime managed with micromamba/conda, provider installations and protected manual workspaces",
+  "reference_strategy": "Release-pinned managed downloads with local SHA-256, provider checksum where available, licence policy, schema validation and scientific review",
+  "automatic_licence_acceptance": false,
+  "large_assets_embedded_in_app_archives": false,
+  "release_policy": "fail-closed until the actual runtime and reference are qualified",
+  "scientific_boundary": "Software provisioning and qualification workflows can be 10/10. Provider licences, huge database downloads, hardware-specific execution and external scientific validation require operator actions and cannot be fabricated."
+}

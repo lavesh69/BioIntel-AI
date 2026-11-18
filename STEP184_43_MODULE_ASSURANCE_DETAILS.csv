@@ -1,0 +1,431 @@
+module_key,module_title,dimension,passed,score,evidence
+amr_surveillance,AMR Genomic Surveillance & Resistance Intelligence,deterministic_execution,True,1.0,golden_output.csv
+amr_surveillance,AMR Genomic Surveillance & Resistance Intelligence,golden_output_contract,True,1.0,golden_contract.json
+amr_surveillance,AMR Genomic Surveillance & Resistance Intelligence,negative_and_security_cases,True,1.0,negative_security_results.csv
+amr_surveillance,AMR Genomic Surveillance & Resistance Intelligence,boundary_and_stress_execution,True,1.0,performance_benchmark.csv
+amr_surveillance,AMR Genomic Surveillance & Resistance Intelligence,performance_benchmark,True,1.0,performance_benchmark.csv
+amr_surveillance,AMR Genomic Surveillance & Resistance Intelligence,repeatability_hash_match,True,1.0,repeatability.json
+amr_surveillance,AMR Genomic Surveillance & Resistance Intelligence,offline_fallback,True,1.0,offline_fallback.json
+amr_surveillance,AMR Genomic Surveillance & Resistance Intelligence,provenance_manifest,True,1.0,assurance_manifest.json
+amr_surveillance,AMR Genomic Surveillance & Resistance Intelligence,reproducible_report_export,True,1.0,reproducible_demo_report.md
+amr_surveillance,AMR Genomic Surveillance & Resistance Intelligence,module_page_integration,True,1.0,pages/177_AMR_Genomic_Surveillance_Resistance_Intelligence.py
+antibody_biologics,Antibody & Biologics Engineering,deterministic_execution,True,1.0,golden_output.csv
+antibody_biologics,Antibody & Biologics Engineering,golden_output_contract,True,1.0,golden_contract.json
+antibody_biologics,Antibody & Biologics Engineering,negative_and_security_cases,True,1.0,negative_security_results.csv
+antibody_biologics,Antibody & Biologics Engineering,boundary_and_stress_execution,True,1.0,performance_benchmark.csv
+antibody_biologics,Antibody & Biologics Engineering,performance_benchmark,True,1.0,performance_benchmark.csv
+antibody_biologics,Antibody & Biologics Engineering,repeatability_hash_match,True,1.0,repeatability.json
+antibody_biologics,Antibody & Biologics Engineering,offline_fallback,True,1.0,offline_fallback.json
+antibody_biologics,Antibody & Biologics Engineering,provenance_manifest,True,1.0,assurance_manifest.json
+antibody_biologics,Antibody & Biologics Engineering,reproducible_report_export,True,1.0,reproducible_demo_report.md
+antibody_biologics,Antibody & Biologics Engineering,module_page_integration,True,1.0,pages/115_Antibody_and_Biologics_Engineering_Studio.py
+cancer_genomics_core,Cancer Genomics,deterministic_execution,True,1.0,golden_output.csv
+cancer_genomics_core,Cancer Genomics,golden_output_contract,True,1.0,golden_contract.json
+cancer_genomics_core,Cancer Genomics,negative_and_security_cases,True,1.0,negative_security_results.csv
+cancer_genomics_core,Cancer Genomics,boundary_and_stress_execution,True,1.0,performance_benchmark.csv
+cancer_genomics_core,Cancer Genomics,performance_benchmark,True,1.0,performance_benchmark.csv
+cancer_genomics_core,Cancer Genomics,repeatability_hash_match,True,1.0,repeatability.json
+cancer_genomics_core,Cancer Genomics,offline_fallback,True,1.0,offline_fallback.json
+cancer_genomics_core,Cancer Genomics,provenance_manifest,True,1.0,assurance_manifest.json
+cancer_genomics_core,Cancer Genomics,reproducible_report_export,True,1.0,reproducible_demo_report.md
+cancer_genomics_core,Cancer Genomics,module_page_integration,True,1.0,pages/81_Cancer_Genomics.py
+cell_therapy_cart,Cell Therapy & CAR-T Engineering,deterministic_execution,True,1.0,golden_output.csv
+cell_therapy_cart,Cell Therapy & CAR-T Engineering,golden_output_contract,True,1.0,golden_contract.json
+cell_therapy_cart,Cell Therapy & CAR-T Engineering,negative_and_security_cases,True,1.0,negative_security_results.csv
+cell_therapy_cart,Cell Therapy & CAR-T Engineering,boundary_and_stress_execution,True,1.0,performance_benchmark.csv
+cell_therapy_cart,Cell Therapy & CAR-T Engineering,performance_benchmark,True,1.0,performance_benchmark.csv
+cell_therapy_cart,Cell Therapy & CAR-T Engineering,repeatability_hash_match,True,1.0,repeatability.json
+cell_therapy_cart,Cell Therapy & CAR-T Engineering,offline_fallback,True,1.0,offline_fallback.json
+cell_therapy_cart,Cell Therapy & CAR-T Engineering,provenance_manifest,True,1.0,assurance_manifest.json
+cell_therapy_cart,Cell Therapy & CAR-T Engineering,reproducible_report_export,True,1.0,reproducible_demo_report.md
+cell_therapy_cart,Cell Therapy & CAR-T Engineering,module_page_integration,True,1.0,pages/180_Cell_Therapy_CART_Immune_Engineering_Studio.py
+docking_dynamics,Molecular Docking & Dynamics,deterministic_execution,True,1.0,golden_output.csv
+docking_dynamics,Molecular Docking & Dynamics,golden_output_contract,True,1.0,golden_contract.json
+docking_dynamics,Molecular Docking & Dynamics,negative_and_security_cases,True,1.0,negative_security_results.csv
+docking_dynamics,Molecular Docking & Dynamics,boundary_and_stress_execution,True,1.0,performance_benchmark.csv
+docking_dynamics,Molecular Docking & Dynamics,performance_benchmark,True,1.0,performance_benchmark.csv
+docking_dynamics,Molecular Docking & Dynamics,repeatability_hash_match,True,1.0,repeatability.json
+docking_dynamics,Molecular Docking & Dynamics,offline_fallback,True,1.0,offline_fallback.json
+docking_dynamics,Molecular Docking & Dynamics,provenance_manifest,True,1.0,assurance_manifest.json
+docking_dynamics,Molecular Docking & Dynamics,reproducible_report_export,True,1.0,reproducible_demo_report.md
+docking_dynamics,Molecular Docking & Dynamics,module_page_integration,True,1.0,pages/116_Molecular_Docking_and_Dynamics_Lab.py
+enzyme_pathway_design,Enzyme & Metabolic Pathway Design,deterministic_execution,True,1.0,golden_output.csv
+enzyme_pathway_design,Enzyme & Metabolic Pathway Design,golden_output_contract,True,1.0,golden_contract.json
+enzyme_pathway_design,Enzyme & Metabolic Pathway Design,negative_and_security_cases,True,1.0,negative_security_results.csv
+enzyme_pathway_design,Enzyme & Metabolic Pathway Design,boundary_and_stress_execution,True,1.0,performance_benchmark.csv
+enzyme_pathway_design,Enzyme & Metabolic Pathway Design,performance_benchmark,True,1.0,performance_benchmark.csv
+enzyme_pathway_design,Enzyme & Metabolic Pathway Design,repeatability_hash_match,True,1.0,repeatability.json
+enzyme_pathway_design,Enzyme & Metabolic Pathway Design,offline_fallback,True,1.0,offline_fallback.json
+enzyme_pathway_design,Enzyme & Metabolic Pathway Design,provenance_manifest,True,1.0,assurance_manifest.json
+enzyme_pathway_design,Enzyme & Metabolic Pathway Design,reproducible_report_export,True,1.0,reproducible_demo_report.md
+enzyme_pathway_design,Enzyme & Metabolic Pathway Design,module_page_integration,True,1.0,pages/144_Enzyme_Engineering_Metabolic_Pathway_Design_Studio.py
+rare_variant_family,Rare Variant & Family Genetics,deterministic_execution,True,1.0,golden_output.csv
+rare_variant_family,Rare Variant & Family Genetics,golden_output_contract,True,1.0,golden_contract.json
+rare_variant_family,Rare Variant & Family Genetics,negative_and_security_cases,True,1.0,negative_security_results.csv
+rare_variant_family,Rare Variant & Family Genetics,boundary_and_stress_execution,True,1.0,performance_benchmark.csv
+rare_variant_family,Rare Variant & Family Genetics,performance_benchmark,True,1.0,performance_benchmark.csv
+rare_variant_family,Rare Variant & Family Genetics,repeatability_hash_match,True,1.0,repeatability.json
+rare_variant_family,Rare Variant & Family Genetics,offline_fallback,True,1.0,offline_fallback.json
+rare_variant_family,Rare Variant & Family Genetics,provenance_manifest,True,1.0,assurance_manifest.json
+rare_variant_family,Rare Variant & Family Genetics,reproducible_report_export,True,1.0,reproducible_demo_report.md
+rare_variant_family,Rare Variant & Family Genetics,module_page_integration,True,1.0,pages/147_Rare_Variant_Burden_Family_Genetics_Lab.py
+population_gwas,"Population Genetics, GWAS & PRS",deterministic_execution,True,1.0,golden_output.csv
+population_gwas,"Population Genetics, GWAS & PRS",golden_output_contract,True,1.0,golden_contract.json
+population_gwas,"Population Genetics, GWAS & PRS",negative_and_security_cases,True,1.0,negative_security_results.csv
+population_gwas,"Population Genetics, GWAS & PRS",boundary_and_stress_execution,True,1.0,performance_benchmark.csv
+population_gwas,"Population Genetics, GWAS & PRS",performance_benchmark,True,1.0,performance_benchmark.csv
+population_gwas,"Population Genetics, GWAS & PRS",repeatability_hash_match,True,1.0,repeatability.json
+population_gwas,"Population Genetics, GWAS & PRS",offline_fallback,True,1.0,offline_fallback.json
+population_gwas,"Population Genetics, GWAS & PRS",provenance_manifest,True,1.0,assurance_manifest.json
+population_gwas,"Population Genetics, GWAS & PRS",reproducible_report_export,True,1.0,reproducible_demo_report.md
+population_gwas,"Population Genetics, GWAS & PRS",module_page_integration,True,1.0,pages/134_Population_Genetics_GWAS_Studio.py
+genome_editing_safety,Genome Editing & Off-Target Safety,deterministic_execution,True,1.0,golden_output.csv
+genome_editing_safety,Genome Editing & Off-Target Safety,golden_output_contract,True,1.0,golden_contract.json
+genome_editing_safety,Genome Editing & Off-Target Safety,negative_and_security_cases,True,1.0,negative_security_results.csv
+genome_editing_safety,Genome Editing & Off-Target Safety,boundary_and_stress_execution,True,1.0,performance_benchmark.csv
+genome_editing_safety,Genome Editing & Off-Target Safety,performance_benchmark,True,1.0,performance_benchmark.csv
+genome_editing_safety,Genome Editing & Off-Target Safety,repeatability_hash_match,True,1.0,repeatability.json
+genome_editing_safety,Genome Editing & Off-Target Safety,offline_fallback,True,1.0,offline_fallback.json
+genome_editing_safety,Genome Editing & Off-Target Safety,provenance_manifest,True,1.0,assurance_manifest.json
+genome_editing_safety,Genome Editing & Off-Target Safety,reproducible_report_export,True,1.0,reproducible_demo_report.md
+genome_editing_safety,Genome Editing & Off-Target Safety,module_page_integration,True,1.0,pages/123_Genome_Editing_Safety_and_Off_Target_Validation_Lab.py
+immunoinformatics_vaccine,Immunoinformatics & Vaccine Design,deterministic_execution,True,1.0,golden_output.csv
+immunoinformatics_vaccine,Immunoinformatics & Vaccine Design,golden_output_contract,True,1.0,golden_contract.json
+immunoinformatics_vaccine,Immunoinformatics & Vaccine Design,negative_and_security_cases,True,1.0,negative_security_results.csv
+immunoinformatics_vaccine,Immunoinformatics & Vaccine Design,boundary_and_stress_execution,True,1.0,performance_benchmark.csv
+immunoinformatics_vaccine,Immunoinformatics & Vaccine Design,performance_benchmark,True,1.0,performance_benchmark.csv
+immunoinformatics_vaccine,Immunoinformatics & Vaccine Design,repeatability_hash_match,True,1.0,repeatability.json
+immunoinformatics_vaccine,Immunoinformatics & Vaccine Design,offline_fallback,True,1.0,offline_fallback.json
+immunoinformatics_vaccine,Immunoinformatics & Vaccine Design,provenance_manifest,True,1.0,assurance_manifest.json
+immunoinformatics_vaccine,Immunoinformatics & Vaccine Design,reproducible_report_export,True,1.0,reproducible_demo_report.md
+immunoinformatics_vaccine,Immunoinformatics & Vaccine Design,module_page_integration,True,1.0,pages/114_Immunoinformatics_and_Vaccine_Design_Lab.py
+long_read_core,Long-Read Assembly & T2T,deterministic_execution,True,1.0,golden_output.csv
+long_read_core,Long-Read Assembly & T2T,golden_output_contract,True,1.0,golden_contract.json
+long_read_core,Long-Read Assembly & T2T,negative_and_security_cases,True,1.0,negative_security_results.csv
+long_read_core,Long-Read Assembly & T2T,boundary_and_stress_execution,True,1.0,performance_benchmark.csv
+long_read_core,Long-Read Assembly & T2T,performance_benchmark,True,1.0,performance_benchmark.csv
+long_read_core,Long-Read Assembly & T2T,repeatability_hash_match,True,1.0,repeatability.json
+long_read_core,Long-Read Assembly & T2T,offline_fallback,True,1.0,offline_fallback.json
+long_read_core,Long-Read Assembly & T2T,provenance_manifest,True,1.0,assurance_manifest.json
+long_read_core,Long-Read Assembly & T2T,reproducible_report_export,True,1.0,reproducible_demo_report.md
+long_read_core,Long-Read Assembly & T2T,module_page_integration,True,1.0,pages/95_Long_Read_Assembly_T2T_Studio.py
+long_read_epigenome,Long-Read Epigenome,deterministic_execution,True,1.0,golden_output.csv
+long_read_epigenome,Long-Read Epigenome,golden_output_contract,True,1.0,golden_contract.json
+long_read_epigenome,Long-Read Epigenome,negative_and_security_cases,True,1.0,negative_security_results.csv
+long_read_epigenome,Long-Read Epigenome,boundary_and_stress_execution,True,1.0,performance_benchmark.csv
+long_read_epigenome,Long-Read Epigenome,performance_benchmark,True,1.0,performance_benchmark.csv
+long_read_epigenome,Long-Read Epigenome,repeatability_hash_match,True,1.0,repeatability.json
+long_read_epigenome,Long-Read Epigenome,offline_fallback,True,1.0,offline_fallback.json
+long_read_epigenome,Long-Read Epigenome,provenance_manifest,True,1.0,assurance_manifest.json
+long_read_epigenome,Long-Read Epigenome,reproducible_report_export,True,1.0,reproducible_demo_report.md
+long_read_epigenome,Long-Read Epigenome,module_page_integration,True,1.0,pages/174_Long_Read_Epigenome_Methylation_Imprinting_Studio.py
+metagenomics_core,Metagenomics Pipeline,deterministic_execution,True,1.0,golden_output.csv
+metagenomics_core,Metagenomics Pipeline,golden_output_contract,True,1.0,golden_contract.json
+metagenomics_core,Metagenomics Pipeline,negative_and_security_cases,True,1.0,negative_security_results.csv
+metagenomics_core,Metagenomics Pipeline,boundary_and_stress_execution,True,1.0,performance_benchmark.csv
+metagenomics_core,Metagenomics Pipeline,performance_benchmark,True,1.0,performance_benchmark.csv
+metagenomics_core,Metagenomics Pipeline,repeatability_hash_match,True,1.0,repeatability.json
+metagenomics_core,Metagenomics Pipeline,offline_fallback,True,1.0,offline_fallback.json
+metagenomics_core,Metagenomics Pipeline,provenance_manifest,True,1.0,assurance_manifest.json
+metagenomics_core,Metagenomics Pipeline,reproducible_report_export,True,1.0,reproducible_demo_report.md
+metagenomics_core,Metagenomics Pipeline,module_page_integration,True,1.0,pages/82_Metagenomics_Pipeline.py
+one_health_environmental,One Health & Environmental Genomics,deterministic_execution,True,1.0,golden_output.csv
+one_health_environmental,One Health & Environmental Genomics,golden_output_contract,True,1.0,golden_contract.json
+one_health_environmental,One Health & Environmental Genomics,negative_and_security_cases,True,1.0,negative_security_results.csv
+one_health_environmental,One Health & Environmental Genomics,boundary_and_stress_execution,True,1.0,performance_benchmark.csv
+one_health_environmental,One Health & Environmental Genomics,performance_benchmark,True,1.0,performance_benchmark.csv
+one_health_environmental,One Health & Environmental Genomics,repeatability_hash_match,True,1.0,repeatability.json
+one_health_environmental,One Health & Environmental Genomics,offline_fallback,True,1.0,offline_fallback.json
+one_health_environmental,One Health & Environmental Genomics,provenance_manifest,True,1.0,assurance_manifest.json
+one_health_environmental,One Health & Environmental Genomics,reproducible_report_export,True,1.0,reproducible_demo_report.md
+one_health_environmental,One Health & Environmental Genomics,module_page_integration,True,1.0,pages/131_One_Health_and_Environmental_Genomics_Center.py
+pharmacogenomics,Pharmacogenomics,deterministic_execution,True,1.0,golden_output.csv
+pharmacogenomics,Pharmacogenomics,golden_output_contract,True,1.0,golden_contract.json
+pharmacogenomics,Pharmacogenomics,negative_and_security_cases,True,1.0,negative_security_results.csv
+pharmacogenomics,Pharmacogenomics,boundary_and_stress_execution,True,1.0,performance_benchmark.csv
+pharmacogenomics,Pharmacogenomics,performance_benchmark,True,1.0,performance_benchmark.csv
+pharmacogenomics,Pharmacogenomics,repeatability_hash_match,True,1.0,repeatability.json
+pharmacogenomics,Pharmacogenomics,offline_fallback,True,1.0,offline_fallback.json
+pharmacogenomics,Pharmacogenomics,provenance_manifest,True,1.0,assurance_manifest.json
+pharmacogenomics,Pharmacogenomics,reproducible_report_export,True,1.0,reproducible_demo_report.md
+pharmacogenomics,Pharmacogenomics,module_page_integration,True,1.0,pages/117_Pharmacogenomics_and_Precision_Medicine_Board.py
+proteogenomics_neoantigen,Proteogenomics & Neoantigen Discovery,deterministic_execution,True,1.0,golden_output.csv
+proteogenomics_neoantigen,Proteogenomics & Neoantigen Discovery,golden_output_contract,True,1.0,golden_contract.json
+proteogenomics_neoantigen,Proteogenomics & Neoantigen Discovery,negative_and_security_cases,True,1.0,negative_security_results.csv
+proteogenomics_neoantigen,Proteogenomics & Neoantigen Discovery,boundary_and_stress_execution,True,1.0,performance_benchmark.csv
+proteogenomics_neoantigen,Proteogenomics & Neoantigen Discovery,performance_benchmark,True,1.0,performance_benchmark.csv
+proteogenomics_neoantigen,Proteogenomics & Neoantigen Discovery,repeatability_hash_match,True,1.0,repeatability.json
+proteogenomics_neoantigen,Proteogenomics & Neoantigen Discovery,offline_fallback,True,1.0,offline_fallback.json
+proteogenomics_neoantigen,Proteogenomics & Neoantigen Discovery,provenance_manifest,True,1.0,assurance_manifest.json
+proteogenomics_neoantigen,Proteogenomics & Neoantigen Discovery,reproducible_report_export,True,1.0,reproducible_demo_report.md
+proteogenomics_neoantigen,Proteogenomics & Neoantigen Discovery,module_page_integration,True,1.0,pages/124_Proteogenomics_and_Neoantigen_Discovery_Studio.py
+structural_variant_repeat,Structural Variant & Repeat Expansion,deterministic_execution,True,1.0,golden_output.csv
+structural_variant_repeat,Structural Variant & Repeat Expansion,golden_output_contract,True,1.0,golden_contract.json
+structural_variant_repeat,Structural Variant & Repeat Expansion,negative_and_security_cases,True,1.0,negative_security_results.csv
+structural_variant_repeat,Structural Variant & Repeat Expansion,boundary_and_stress_execution,True,1.0,performance_benchmark.csv
+structural_variant_repeat,Structural Variant & Repeat Expansion,performance_benchmark,True,1.0,performance_benchmark.csv
+structural_variant_repeat,Structural Variant & Repeat Expansion,repeatability_hash_match,True,1.0,repeatability.json
+structural_variant_repeat,Structural Variant & Repeat Expansion,offline_fallback,True,1.0,offline_fallback.json
+structural_variant_repeat,Structural Variant & Repeat Expansion,provenance_manifest,True,1.0,assurance_manifest.json
+structural_variant_repeat,Structural Variant & Repeat Expansion,reproducible_report_export,True,1.0,reproducible_demo_report.md
+structural_variant_repeat,Structural Variant & Repeat Expansion,module_page_integration,True,1.0,pages/135_Structural_Variant_Repeat_Expansion_Lab.py
+biomedical_foundation_model_hub,Biomedical Foundation Model Hub,deterministic_execution,True,1.0,golden_output.csv
+biomedical_foundation_model_hub,Biomedical Foundation Model Hub,golden_output_contract,True,1.0,golden_contract.json
+biomedical_foundation_model_hub,Biomedical Foundation Model Hub,negative_and_security_cases,True,1.0,negative_security_results.csv
+biomedical_foundation_model_hub,Biomedical Foundation Model Hub,boundary_and_stress_execution,True,1.0,performance_benchmark.csv
+biomedical_foundation_model_hub,Biomedical Foundation Model Hub,performance_benchmark,True,1.0,performance_benchmark.csv
+biomedical_foundation_model_hub,Biomedical Foundation Model Hub,repeatability_hash_match,True,1.0,repeatability.json
+biomedical_foundation_model_hub,Biomedical Foundation Model Hub,offline_fallback,True,1.0,offline_fallback.json
+biomedical_foundation_model_hub,Biomedical Foundation Model Hub,provenance_manifest,True,1.0,assurance_manifest.json
+biomedical_foundation_model_hub,Biomedical Foundation Model Hub,reproducible_report_export,True,1.0,reproducible_demo_report.md
+biomedical_foundation_model_hub,Biomedical Foundation Model Hub,module_page_integration,True,1.0,pages/176_Biomedical_Foundation_Model_Embedding_Hub.py
+bioimage_microscopy,Bioimage & Microscopy AI,deterministic_execution,True,1.0,golden_output.csv
+bioimage_microscopy,Bioimage & Microscopy AI,golden_output_contract,True,1.0,golden_contract.json
+bioimage_microscopy,Bioimage & Microscopy AI,negative_and_security_cases,True,1.0,negative_security_results.csv
+bioimage_microscopy,Bioimage & Microscopy AI,boundary_and_stress_execution,True,1.0,performance_benchmark.csv
+bioimage_microscopy,Bioimage & Microscopy AI,performance_benchmark,True,1.0,performance_benchmark.csv
+bioimage_microscopy,Bioimage & Microscopy AI,repeatability_hash_match,True,1.0,repeatability.json
+bioimage_microscopy,Bioimage & Microscopy AI,offline_fallback,True,1.0,offline_fallback.json
+bioimage_microscopy,Bioimage & Microscopy AI,provenance_manifest,True,1.0,assurance_manifest.json
+bioimage_microscopy,Bioimage & Microscopy AI,reproducible_report_export,True,1.0,reproducible_demo_report.md
+bioimage_microscopy,Bioimage & Microscopy AI,module_page_integration,True,1.0,pages/120_Bioimage_and_Microscopy_AI_Lab.py
+cell_atlas_mapping,Cell Atlas Mapping,deterministic_execution,True,1.0,golden_output.csv
+cell_atlas_mapping,Cell Atlas Mapping,golden_output_contract,True,1.0,golden_contract.json
+cell_atlas_mapping,Cell Atlas Mapping,negative_and_security_cases,True,1.0,negative_security_results.csv
+cell_atlas_mapping,Cell Atlas Mapping,boundary_and_stress_execution,True,1.0,performance_benchmark.csv
+cell_atlas_mapping,Cell Atlas Mapping,performance_benchmark,True,1.0,performance_benchmark.csv
+cell_atlas_mapping,Cell Atlas Mapping,repeatability_hash_match,True,1.0,repeatability.json
+cell_atlas_mapping,Cell Atlas Mapping,offline_fallback,True,1.0,offline_fallback.json
+cell_atlas_mapping,Cell Atlas Mapping,provenance_manifest,True,1.0,assurance_manifest.json
+cell_atlas_mapping,Cell Atlas Mapping,reproducible_report_export,True,1.0,reproducible_demo_report.md
+cell_atlas_mapping,Cell Atlas Mapping,module_page_integration,True,1.0,pages/140_Cell_Atlas_Mapping_Reference_Annotation_Studio.py
+epigenomics_chromatin,Epigenomics & Chromatin Regulation,deterministic_execution,True,1.0,golden_output.csv
+epigenomics_chromatin,Epigenomics & Chromatin Regulation,golden_output_contract,True,1.0,golden_contract.json
+epigenomics_chromatin,Epigenomics & Chromatin Regulation,negative_and_security_cases,True,1.0,negative_security_results.csv
+epigenomics_chromatin,Epigenomics & Chromatin Regulation,boundary_and_stress_execution,True,1.0,performance_benchmark.csv
+epigenomics_chromatin,Epigenomics & Chromatin Regulation,performance_benchmark,True,1.0,performance_benchmark.csv
+epigenomics_chromatin,Epigenomics & Chromatin Regulation,repeatability_hash_match,True,1.0,repeatability.json
+epigenomics_chromatin,Epigenomics & Chromatin Regulation,offline_fallback,True,1.0,offline_fallback.json
+epigenomics_chromatin,Epigenomics & Chromatin Regulation,provenance_manifest,True,1.0,assurance_manifest.json
+epigenomics_chromatin,Epigenomics & Chromatin Regulation,reproducible_report_export,True,1.0,reproducible_demo_report.md
+epigenomics_chromatin,Epigenomics & Chromatin Regulation,module_page_integration,True,1.0,pages/112_Epigenomics_and_Chromatin_Regulation_Studio.py
+glycomics_glycoproteomics,Glycomics & Glycoproteomics,deterministic_execution,True,1.0,golden_output.csv
+glycomics_glycoproteomics,Glycomics & Glycoproteomics,golden_output_contract,True,1.0,golden_contract.json
+glycomics_glycoproteomics,Glycomics & Glycoproteomics,negative_and_security_cases,True,1.0,negative_security_results.csv
+glycomics_glycoproteomics,Glycomics & Glycoproteomics,boundary_and_stress_execution,True,1.0,performance_benchmark.csv
+glycomics_glycoproteomics,Glycomics & Glycoproteomics,performance_benchmark,True,1.0,performance_benchmark.csv
+glycomics_glycoproteomics,Glycomics & Glycoproteomics,repeatability_hash_match,True,1.0,repeatability.json
+glycomics_glycoproteomics,Glycomics & Glycoproteomics,offline_fallback,True,1.0,offline_fallback.json
+glycomics_glycoproteomics,Glycomics & Glycoproteomics,provenance_manifest,True,1.0,assurance_manifest.json
+glycomics_glycoproteomics,Glycomics & Glycoproteomics,reproducible_report_export,True,1.0,reproducible_demo_report.md
+glycomics_glycoproteomics,Glycomics & Glycoproteomics,module_page_integration,True,1.0,pages/130_Glycomics_and_Glycoproteomics_Workbench.py
+metabolomics_lipidomics,Metabolomics & Lipidomics,deterministic_execution,True,1.0,golden_output.csv
+metabolomics_lipidomics,Metabolomics & Lipidomics,golden_output_contract,True,1.0,golden_contract.json
+metabolomics_lipidomics,Metabolomics & Lipidomics,negative_and_security_cases,True,1.0,negative_security_results.csv
+metabolomics_lipidomics,Metabolomics & Lipidomics,boundary_and_stress_execution,True,1.0,performance_benchmark.csv
+metabolomics_lipidomics,Metabolomics & Lipidomics,performance_benchmark,True,1.0,performance_benchmark.csv
+metabolomics_lipidomics,Metabolomics & Lipidomics,repeatability_hash_match,True,1.0,repeatability.json
+metabolomics_lipidomics,Metabolomics & Lipidomics,offline_fallback,True,1.0,offline_fallback.json
+metabolomics_lipidomics,Metabolomics & Lipidomics,provenance_manifest,True,1.0,assurance_manifest.json
+metabolomics_lipidomics,Metabolomics & Lipidomics,reproducible_report_export,True,1.0,reproducible_demo_report.md
+metabolomics_lipidomics,Metabolomics & Lipidomics,module_page_integration,True,1.0,pages/113_Metabolomics_and_Lipidomics_Workbench.py
+multiomics_harmonization,Multi-Omics Harmonization,deterministic_execution,True,1.0,golden_output.csv
+multiomics_harmonization,Multi-Omics Harmonization,golden_output_contract,True,1.0,golden_contract.json
+multiomics_harmonization,Multi-Omics Harmonization,negative_and_security_cases,True,1.0,negative_security_results.csv
+multiomics_harmonization,Multi-Omics Harmonization,boundary_and_stress_execution,True,1.0,performance_benchmark.csv
+multiomics_harmonization,Multi-Omics Harmonization,performance_benchmark,True,1.0,performance_benchmark.csv
+multiomics_harmonization,Multi-Omics Harmonization,repeatability_hash_match,True,1.0,repeatability.json
+multiomics_harmonization,Multi-Omics Harmonization,offline_fallback,True,1.0,offline_fallback.json
+multiomics_harmonization,Multi-Omics Harmonization,provenance_manifest,True,1.0,assurance_manifest.json
+multiomics_harmonization,Multi-Omics Harmonization,reproducible_report_export,True,1.0,reproducible_demo_report.md
+multiomics_harmonization,Multi-Omics Harmonization,module_page_integration,True,1.0,pages/129_Multi_Omics_Harmonization_and_Batch_Correction_Studio.py
+organoid_3d,Organoid & 3D Cell Analytics,deterministic_execution,True,1.0,golden_output.csv
+organoid_3d,Organoid & 3D Cell Analytics,golden_output_contract,True,1.0,golden_contract.json
+organoid_3d,Organoid & 3D Cell Analytics,negative_and_security_cases,True,1.0,negative_security_results.csv
+organoid_3d,Organoid & 3D Cell Analytics,boundary_and_stress_execution,True,1.0,performance_benchmark.csv
+organoid_3d,Organoid & 3D Cell Analytics,performance_benchmark,True,1.0,performance_benchmark.csv
+organoid_3d,Organoid & 3D Cell Analytics,repeatability_hash_match,True,1.0,repeatability.json
+organoid_3d,Organoid & 3D Cell Analytics,offline_fallback,True,1.0,offline_fallback.json
+organoid_3d,Organoid & 3D Cell Analytics,provenance_manifest,True,1.0,assurance_manifest.json
+organoid_3d,Organoid & 3D Cell Analytics,reproducible_report_export,True,1.0,reproducible_demo_report.md
+organoid_3d,Organoid & 3D Cell Analytics,module_page_integration,True,1.0,pages/142_Organoid_3D_Cell_Model_Analytics.py
+pathogen_outbreak_core,Pathogen Outbreak Genomics,deterministic_execution,True,1.0,golden_output.csv
+pathogen_outbreak_core,Pathogen Outbreak Genomics,golden_output_contract,True,1.0,golden_contract.json
+pathogen_outbreak_core,Pathogen Outbreak Genomics,negative_and_security_cases,True,1.0,negative_security_results.csv
+pathogen_outbreak_core,Pathogen Outbreak Genomics,boundary_and_stress_execution,True,1.0,performance_benchmark.csv
+pathogen_outbreak_core,Pathogen Outbreak Genomics,performance_benchmark,True,1.0,performance_benchmark.csv
+pathogen_outbreak_core,Pathogen Outbreak Genomics,repeatability_hash_match,True,1.0,repeatability.json
+pathogen_outbreak_core,Pathogen Outbreak Genomics,offline_fallback,True,1.0,offline_fallback.json
+pathogen_outbreak_core,Pathogen Outbreak Genomics,provenance_manifest,True,1.0,assurance_manifest.json
+pathogen_outbreak_core,Pathogen Outbreak Genomics,reproducible_report_export,True,1.0,reproducible_demo_report.md
+pathogen_outbreak_core,Pathogen Outbreak Genomics,module_page_integration,True,1.0,pages/98_Pathogen_Outbreak_Command_Center.py
+pangenome_core,Pangenome & Variation Graph,deterministic_execution,True,1.0,golden_output.csv
+pangenome_core,Pangenome & Variation Graph,golden_output_contract,True,1.0,golden_contract.json
+pangenome_core,Pangenome & Variation Graph,negative_and_security_cases,True,1.0,negative_security_results.csv
+pangenome_core,Pangenome & Variation Graph,boundary_and_stress_execution,True,1.0,performance_benchmark.csv
+pangenome_core,Pangenome & Variation Graph,performance_benchmark,True,1.0,performance_benchmark.csv
+pangenome_core,Pangenome & Variation Graph,repeatability_hash_match,True,1.0,repeatability.json
+pangenome_core,Pangenome & Variation Graph,offline_fallback,True,1.0,offline_fallback.json
+pangenome_core,Pangenome & Variation Graph,provenance_manifest,True,1.0,assurance_manifest.json
+pangenome_core,Pangenome & Variation Graph,reproducible_report_export,True,1.0,reproducible_demo_report.md
+pangenome_core,Pangenome & Variation Graph,module_page_integration,True,1.0,pages/94_Pangenome_Variation_Graph_Studio.py
+pangenome_population_medicine,Pangenome Population Medicine,deterministic_execution,True,1.0,golden_output.csv
+pangenome_population_medicine,Pangenome Population Medicine,golden_output_contract,True,1.0,golden_contract.json
+pangenome_population_medicine,Pangenome Population Medicine,negative_and_security_cases,True,1.0,negative_security_results.csv
+pangenome_population_medicine,Pangenome Population Medicine,boundary_and_stress_execution,True,1.0,performance_benchmark.csv
+pangenome_population_medicine,Pangenome Population Medicine,performance_benchmark,True,1.0,performance_benchmark.csv
+pangenome_population_medicine,Pangenome Population Medicine,repeatability_hash_match,True,1.0,repeatability.json
+pangenome_population_medicine,Pangenome Population Medicine,offline_fallback,True,1.0,offline_fallback.json
+pangenome_population_medicine,Pangenome Population Medicine,provenance_manifest,True,1.0,assurance_manifest.json
+pangenome_population_medicine,Pangenome Population Medicine,reproducible_report_export,True,1.0,reproducible_demo_report.md
+pangenome_population_medicine,Pangenome Population Medicine,module_page_integration,True,1.0,pages/184_Pangenome_Population_Medicine_Studio.py
+rna_isoform_splicing,RNA Isoform & Alternative Splicing,deterministic_execution,True,1.0,golden_output.csv
+rna_isoform_splicing,RNA Isoform & Alternative Splicing,golden_output_contract,True,1.0,golden_contract.json
+rna_isoform_splicing,RNA Isoform & Alternative Splicing,negative_and_security_cases,True,1.0,negative_security_results.csv
+rna_isoform_splicing,RNA Isoform & Alternative Splicing,boundary_and_stress_execution,True,1.0,performance_benchmark.csv
+rna_isoform_splicing,RNA Isoform & Alternative Splicing,performance_benchmark,True,1.0,performance_benchmark.csv
+rna_isoform_splicing,RNA Isoform & Alternative Splicing,repeatability_hash_match,True,1.0,repeatability.json
+rna_isoform_splicing,RNA Isoform & Alternative Splicing,offline_fallback,True,1.0,offline_fallback.json
+rna_isoform_splicing,RNA Isoform & Alternative Splicing,provenance_manifest,True,1.0,assurance_manifest.json
+rna_isoform_splicing,RNA Isoform & Alternative Splicing,reproducible_report_export,True,1.0,reproducible_demo_report.md
+rna_isoform_splicing,RNA Isoform & Alternative Splicing,module_page_integration,True,1.0,pages/137_RNA_Isoform_Alternative_Splicing_Studio.py
+single_cell_core,Single-Cell Analysis,deterministic_execution,True,1.0,golden_output.csv
+single_cell_core,Single-Cell Analysis,golden_output_contract,True,1.0,golden_contract.json
+single_cell_core,Single-Cell Analysis,negative_and_security_cases,True,1.0,negative_security_results.csv
+single_cell_core,Single-Cell Analysis,boundary_and_stress_execution,True,1.0,performance_benchmark.csv
+single_cell_core,Single-Cell Analysis,performance_benchmark,True,1.0,performance_benchmark.csv
+single_cell_core,Single-Cell Analysis,repeatability_hash_match,True,1.0,repeatability.json
+single_cell_core,Single-Cell Analysis,offline_fallback,True,1.0,offline_fallback.json
+single_cell_core,Single-Cell Analysis,provenance_manifest,True,1.0,assurance_manifest.json
+single_cell_core,Single-Cell Analysis,reproducible_report_export,True,1.0,reproducible_demo_report.md
+single_cell_core,Single-Cell Analysis,module_page_integration,True,1.0,pages/80_Single_Cell_Heterogeneity.py
+single_cell_long_read_isoforms,Single-Cell Long-Read Isoforms,deterministic_execution,True,1.0,golden_output.csv
+single_cell_long_read_isoforms,Single-Cell Long-Read Isoforms,golden_output_contract,True,1.0,golden_contract.json
+single_cell_long_read_isoforms,Single-Cell Long-Read Isoforms,negative_and_security_cases,True,1.0,negative_security_results.csv
+single_cell_long_read_isoforms,Single-Cell Long-Read Isoforms,boundary_and_stress_execution,True,1.0,performance_benchmark.csv
+single_cell_long_read_isoforms,Single-Cell Long-Read Isoforms,performance_benchmark,True,1.0,performance_benchmark.csv
+single_cell_long_read_isoforms,Single-Cell Long-Read Isoforms,repeatability_hash_match,True,1.0,repeatability.json
+single_cell_long_read_isoforms,Single-Cell Long-Read Isoforms,offline_fallback,True,1.0,offline_fallback.json
+single_cell_long_read_isoforms,Single-Cell Long-Read Isoforms,provenance_manifest,True,1.0,assurance_manifest.json
+single_cell_long_read_isoforms,Single-Cell Long-Read Isoforms,reproducible_report_export,True,1.0,reproducible_demo_report.md
+single_cell_long_read_isoforms,Single-Cell Long-Read Isoforms,module_page_integration,True,1.0,pages/175_Single_Cell_Long_Read_Transcript_Isoform_Studio.py
+single_cell_trajectory,Single-Cell Trajectory & Communication,deterministic_execution,True,1.0,golden_output.csv
+single_cell_trajectory,Single-Cell Trajectory & Communication,golden_output_contract,True,1.0,golden_contract.json
+single_cell_trajectory,Single-Cell Trajectory & Communication,negative_and_security_cases,True,1.0,negative_security_results.csv
+single_cell_trajectory,Single-Cell Trajectory & Communication,boundary_and_stress_execution,True,1.0,performance_benchmark.csv
+single_cell_trajectory,Single-Cell Trajectory & Communication,performance_benchmark,True,1.0,performance_benchmark.csv
+single_cell_trajectory,Single-Cell Trajectory & Communication,repeatability_hash_match,True,1.0,repeatability.json
+single_cell_trajectory,Single-Cell Trajectory & Communication,offline_fallback,True,1.0,offline_fallback.json
+single_cell_trajectory,Single-Cell Trajectory & Communication,provenance_manifest,True,1.0,assurance_manifest.json
+single_cell_trajectory,Single-Cell Trajectory & Communication,reproducible_report_export,True,1.0,reproducible_demo_report.md
+single_cell_trajectory,Single-Cell Trajectory & Communication,module_page_integration,True,1.0,pages/119_Single_Cell_Trajectory_and_Communication_Lab.py
+spatial_medicine_tme,Spatial Medicine & Tumour Microenvironment,deterministic_execution,True,1.0,golden_output.csv
+spatial_medicine_tme,Spatial Medicine & Tumour Microenvironment,golden_output_contract,True,1.0,golden_contract.json
+spatial_medicine_tme,Spatial Medicine & Tumour Microenvironment,negative_and_security_cases,True,1.0,negative_security_results.csv
+spatial_medicine_tme,Spatial Medicine & Tumour Microenvironment,boundary_and_stress_execution,True,1.0,performance_benchmark.csv
+spatial_medicine_tme,Spatial Medicine & Tumour Microenvironment,performance_benchmark,True,1.0,performance_benchmark.csv
+spatial_medicine_tme,Spatial Medicine & Tumour Microenvironment,repeatability_hash_match,True,1.0,repeatability.json
+spatial_medicine_tme,Spatial Medicine & Tumour Microenvironment,offline_fallback,True,1.0,offline_fallback.json
+spatial_medicine_tme,Spatial Medicine & Tumour Microenvironment,provenance_manifest,True,1.0,assurance_manifest.json
+spatial_medicine_tme,Spatial Medicine & Tumour Microenvironment,reproducible_report_export,True,1.0,reproducible_demo_report.md
+spatial_medicine_tme,Spatial Medicine & Tumour Microenvironment,module_page_integration,True,1.0,pages/178_Spatial_Medicine_Tumour_Microenvironment_Atlas.py
+structural_bioinformatics_core,Structural Bioinformatics,deterministic_execution,True,1.0,golden_output.csv
+structural_bioinformatics_core,Structural Bioinformatics,golden_output_contract,True,1.0,golden_contract.json
+structural_bioinformatics_core,Structural Bioinformatics,negative_and_security_cases,True,1.0,negative_security_results.csv
+structural_bioinformatics_core,Structural Bioinformatics,boundary_and_stress_execution,True,1.0,performance_benchmark.csv
+structural_bioinformatics_core,Structural Bioinformatics,performance_benchmark,True,1.0,performance_benchmark.csv
+structural_bioinformatics_core,Structural Bioinformatics,repeatability_hash_match,True,1.0,repeatability.json
+structural_bioinformatics_core,Structural Bioinformatics,offline_fallback,True,1.0,offline_fallback.json
+structural_bioinformatics_core,Structural Bioinformatics,provenance_manifest,True,1.0,assurance_manifest.json
+structural_bioinformatics_core,Structural Bioinformatics,reproducible_report_export,True,1.0,reproducible_demo_report.md
+structural_bioinformatics_core,Structural Bioinformatics,module_page_integration,True,1.0,pages/61_Structural_Bioinformatics.py
+virology_evolution,Virology & Viral Evolution,deterministic_execution,True,1.0,golden_output.csv
+virology_evolution,Virology & Viral Evolution,golden_output_contract,True,1.0,golden_contract.json
+virology_evolution,Virology & Viral Evolution,negative_and_security_cases,True,1.0,negative_security_results.csv
+virology_evolution,Virology & Viral Evolution,boundary_and_stress_execution,True,1.0,performance_benchmark.csv
+virology_evolution,Virology & Viral Evolution,performance_benchmark,True,1.0,performance_benchmark.csv
+virology_evolution,Virology & Viral Evolution,repeatability_hash_match,True,1.0,repeatability.json
+virology_evolution,Virology & Viral Evolution,offline_fallback,True,1.0,offline_fallback.json
+virology_evolution,Virology & Viral Evolution,provenance_manifest,True,1.0,assurance_manifest.json
+virology_evolution,Virology & Viral Evolution,reproducible_report_export,True,1.0,reproducible_demo_report.md
+virology_evolution,Virology & Viral Evolution,module_page_integration,True,1.0,pages/146_Virology_Viral_Evolution_Workbench.py
+offline_copilot_core,Offline Scientific Copilot Core,deterministic_execution,True,1.0,golden_output.csv
+offline_copilot_core,Offline Scientific Copilot Core,golden_output_contract,True,1.0,golden_contract.json
+offline_copilot_core,Offline Scientific Copilot Core,negative_and_security_cases,True,1.0,negative_security_results.csv
+offline_copilot_core,Offline Scientific Copilot Core,boundary_and_stress_execution,True,1.0,performance_benchmark.csv
+offline_copilot_core,Offline Scientific Copilot Core,performance_benchmark,True,1.0,performance_benchmark.csv
+offline_copilot_core,Offline Scientific Copilot Core,repeatability_hash_match,True,1.0,repeatability.json
+offline_copilot_core,Offline Scientific Copilot Core,offline_fallback,True,1.0,offline_fallback.json
+offline_copilot_core,Offline Scientific Copilot Core,provenance_manifest,True,1.0,assurance_manifest.json
+offline_copilot_core,Offline Scientific Copilot Core,reproducible_report_export,True,1.0,reproducible_demo_report.md
+offline_copilot_core,Offline Scientific Copilot Core,module_page_integration,True,1.0,pages/83_BioIntel_Copilot.py
+offline_scientific_copilot_v2,Offline Scientific Copilot V2,deterministic_execution,True,1.0,golden_output.csv
+offline_scientific_copilot_v2,Offline Scientific Copilot V2,golden_output_contract,True,1.0,golden_contract.json
+offline_scientific_copilot_v2,Offline Scientific Copilot V2,negative_and_security_cases,True,1.0,negative_security_results.csv
+offline_scientific_copilot_v2,Offline Scientific Copilot V2,boundary_and_stress_execution,True,1.0,performance_benchmark.csv
+offline_scientific_copilot_v2,Offline Scientific Copilot V2,performance_benchmark,True,1.0,performance_benchmark.csv
+offline_scientific_copilot_v2,Offline Scientific Copilot V2,repeatability_hash_match,True,1.0,repeatability.json
+offline_scientific_copilot_v2,Offline Scientific Copilot V2,offline_fallback,True,1.0,offline_fallback.json
+offline_scientific_copilot_v2,Offline Scientific Copilot V2,provenance_manifest,True,1.0,assurance_manifest.json
+offline_scientific_copilot_v2,Offline Scientific Copilot V2,reproducible_report_export,True,1.0,reproducible_demo_report.md
+offline_scientific_copilot_v2,Offline Scientific Copilot V2,module_page_integration,True,1.0,pages/159_Offline_AI_Scientific_Copilot_2.py
+digital_pathology_foundation,Digital Pathology Foundation Model,deterministic_execution,True,1.0,golden_output.csv
+digital_pathology_foundation,Digital Pathology Foundation Model,golden_output_contract,True,1.0,golden_contract.json
+digital_pathology_foundation,Digital Pathology Foundation Model,negative_and_security_cases,True,1.0,negative_security_results.csv
+digital_pathology_foundation,Digital Pathology Foundation Model,boundary_and_stress_execution,True,1.0,performance_benchmark.csv
+digital_pathology_foundation,Digital Pathology Foundation Model,performance_benchmark,True,1.0,performance_benchmark.csv
+digital_pathology_foundation,Digital Pathology Foundation Model,repeatability_hash_match,True,1.0,repeatability.json
+digital_pathology_foundation,Digital Pathology Foundation Model,offline_fallback,True,1.0,offline_fallback.json
+digital_pathology_foundation,Digital Pathology Foundation Model,provenance_manifest,True,1.0,assurance_manifest.json
+digital_pathology_foundation,Digital Pathology Foundation Model,reproducible_report_export,True,1.0,reproducible_demo_report.md
+digital_pathology_foundation,Digital Pathology Foundation Model,module_page_integration,True,1.0,pages/173_Digital_Pathology_Histology_Foundation_Model_Studio.py
+phenotypic_screening,Phenotypic Screening & High-Content Analysis,deterministic_execution,True,1.0,golden_output.csv
+phenotypic_screening,Phenotypic Screening & High-Content Analysis,golden_output_contract,True,1.0,golden_contract.json
+phenotypic_screening,Phenotypic Screening & High-Content Analysis,negative_and_security_cases,True,1.0,negative_security_results.csv
+phenotypic_screening,Phenotypic Screening & High-Content Analysis,boundary_and_stress_execution,True,1.0,performance_benchmark.csv
+phenotypic_screening,Phenotypic Screening & High-Content Analysis,performance_benchmark,True,1.0,performance_benchmark.csv
+phenotypic_screening,Phenotypic Screening & High-Content Analysis,repeatability_hash_match,True,1.0,repeatability.json
+phenotypic_screening,Phenotypic Screening & High-Content Analysis,offline_fallback,True,1.0,offline_fallback.json
+phenotypic_screening,Phenotypic Screening & High-Content Analysis,provenance_manifest,True,1.0,assurance_manifest.json
+phenotypic_screening,Phenotypic Screening & High-Content Analysis,reproducible_report_export,True,1.0,reproducible_demo_report.md
+phenotypic_screening,Phenotypic Screening & High-Content Analysis,module_page_integration,True,1.0,pages/141_Phenotypic_Screening_High_Content_Analysis_Lab.py
+spatial_omics_pathology,Spatial Omics & Digital Pathology,deterministic_execution,True,1.0,golden_output.csv
+spatial_omics_pathology,Spatial Omics & Digital Pathology,golden_output_contract,True,1.0,golden_contract.json
+spatial_omics_pathology,Spatial Omics & Digital Pathology,negative_and_security_cases,True,1.0,negative_security_results.csv
+spatial_omics_pathology,Spatial Omics & Digital Pathology,boundary_and_stress_execution,True,1.0,performance_benchmark.csv
+spatial_omics_pathology,Spatial Omics & Digital Pathology,performance_benchmark,True,1.0,performance_benchmark.csv
+spatial_omics_pathology,Spatial Omics & Digital Pathology,repeatability_hash_match,True,1.0,repeatability.json
+spatial_omics_pathology,Spatial Omics & Digital Pathology,offline_fallback,True,1.0,offline_fallback.json
+spatial_omics_pathology,Spatial Omics & Digital Pathology,provenance_manifest,True,1.0,assurance_manifest.json
+spatial_omics_pathology,Spatial Omics & Digital Pathology,reproducible_report_export,True,1.0,reproducible_demo_report.md
+spatial_omics_pathology,Spatial Omics & Digital Pathology,module_page_integration,True,1.0,pages/118_Spatial_Omics_and_Digital_Pathology_Studio.py
+protein_language_design,Protein Language Model & Generative Design,deterministic_execution,True,1.0,golden_output.csv
+protein_language_design,Protein Language Model & Generative Design,golden_output_contract,True,1.0,golden_contract.json
+protein_language_design,Protein Language Model & Generative Design,negative_and_security_cases,True,1.0,negative_security_results.csv
+protein_language_design,Protein Language Model & Generative Design,boundary_and_stress_execution,True,1.0,performance_benchmark.csv
+protein_language_design,Protein Language Model & Generative Design,performance_benchmark,True,1.0,performance_benchmark.csv
+protein_language_design,Protein Language Model & Generative Design,repeatability_hash_match,True,1.0,repeatability.json
+protein_language_design,Protein Language Model & Generative Design,offline_fallback,True,1.0,offline_fallback.json
+protein_language_design,Protein Language Model & Generative Design,provenance_manifest,True,1.0,assurance_manifest.json
+protein_language_design,Protein Language Model & Generative Design,reproducible_report_export,True,1.0,reproducible_demo_report.md
+protein_language_design,Protein Language Model & Generative Design,module_page_integration,True,1.0,pages/143_Protein_Language_Model_Generative_Design_Lab.py
+protein_ligand_codesign,Protein–Ligand Co-Design,deterministic_execution,True,1.0,golden_output.csv
+protein_ligand_codesign,Protein–Ligand Co-Design,golden_output_contract,True,1.0,golden_contract.json
+protein_ligand_codesign,Protein–Ligand Co-Design,negative_and_security_cases,True,1.0,negative_security_results.csv
+protein_ligand_codesign,Protein–Ligand Co-Design,boundary_and_stress_execution,True,1.0,performance_benchmark.csv
+protein_ligand_codesign,Protein–Ligand Co-Design,performance_benchmark,True,1.0,performance_benchmark.csv
+protein_ligand_codesign,Protein–Ligand Co-Design,repeatability_hash_match,True,1.0,repeatability.json
+protein_ligand_codesign,Protein–Ligand Co-Design,offline_fallback,True,1.0,offline_fallback.json
+protein_ligand_codesign,Protein–Ligand Co-Design,provenance_manifest,True,1.0,assurance_manifest.json
+protein_ligand_codesign,Protein–Ligand Co-Design,reproducible_report_export,True,1.0,reproducible_demo_report.md
+protein_ligand_codesign,Protein–Ligand Co-Design,module_page_integration,True,1.0,pages/183_Protein_Ligand_CoDesign_Studio.py
+strain_microbiome,Strain-Resolved Microbiome,deterministic_execution,True,1.0,golden_output.csv
+strain_microbiome,Strain-Resolved Microbiome,golden_output_contract,True,1.0,golden_contract.json
+strain_microbiome,Strain-Resolved Microbiome,negative_and_security_cases,True,1.0,negative_security_results.csv
+strain_microbiome,Strain-Resolved Microbiome,boundary_and_stress_execution,True,1.0,performance_benchmark.csv
+strain_microbiome,Strain-Resolved Microbiome,performance_benchmark,True,1.0,performance_benchmark.csv
+strain_microbiome,Strain-Resolved Microbiome,repeatability_hash_match,True,1.0,repeatability.json
+strain_microbiome,Strain-Resolved Microbiome,offline_fallback,True,1.0,offline_fallback.json
+strain_microbiome,Strain-Resolved Microbiome,provenance_manifest,True,1.0,assurance_manifest.json
+strain_microbiome,Strain-Resolved Microbiome,reproducible_report_export,True,1.0,reproducible_demo_report.md
+strain_microbiome,Strain-Resolved Microbiome,module_page_integration,True,1.0,pages/139_Strain_Resolved_Microbiome_Functional_Profiling_Studio.py

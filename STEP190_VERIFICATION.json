@@ -1,0 +1,18 @@
+{
+  "schema": "biointel.step190.verification.v1",
+  "status": "passed",
+  "modules": 80,
+  "qualified": 80,
+  "dimensions_per_module": 40,
+  "dimensions_passed": 3200,
+  "dimensions_total": 3200,
+  "database_counts": {
+    "module_runs": 80,
+    "engine_matrix": 367,
+    "benchmark_metrics": 640,
+    "standard_artifacts": 305
+  },
+  "database_integrity": "ok",
+  "blockers": {},
+  "controlled_release_eligible": false
+}

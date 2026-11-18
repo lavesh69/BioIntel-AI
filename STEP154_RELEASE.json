@@ -1,0 +1,35 @@
+{
+  "schema": "biointel.step154.release.v1",
+  "step": 154,
+  "release_name": "Maximum Internal Scientific Readiness Upgrade",
+  "base_release": "Step 153 Domain-Specific Scientific Core Upgrade",
+  "product_version": "13.2.0",
+  "scientific_profiles": 80,
+  "complete_scientific_contracts": 80,
+  "native_workflows": 80,
+  "native_workflow_families": 49,
+  "external_specialist_toolchains_referenced": 50,
+  "registered_engine_adapters": 61,
+  "safe_external_execution_plans": 41,
+  "full_input_provenance_hashing": true,
+  "complete_result_bundle": true,
+  "filename_only_reference_detection": false,
+  "runtime_sidecars_allowed_in_release": false,
+  "tests": {
+    "collected": 1302,
+    "passed": 1275,
+    "skipped": 27,
+    "failed": 0
+  },
+  "p0_fixes": [
+    "Fail-closed scientific boolean parsing",
+    "Full-frame provenance hashing beyond the former 10000-row boundary",
+    "Ranked numeric feature selection without first-column bias",
+    "Non-truncated downloadable result bundles",
+    "Registry/sidecar-only reference detection with checksum and licence gates",
+    "SQLite runtime sidecar and bytecode release hygiene",
+    "Managed SQLite connection policy compliance",
+    "Dedicated operational and governance workflow families"
+  ],
+  "validation_boundary": "Maximum internally verifiable repository implementation, bounded local exploratory workflows, deterministic packaging and automated regression only. This is not clinical, GxP, regulatory, physical-instrument, licensed-database, independent-laboratory or prospective wet-lab certification."
+}

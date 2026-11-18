@@ -1,0 +1,18 @@
+{
+  "schema": "biointel.step181.external-scientific-evidence.v1",
+  "app_version": "15.1.0-step181",
+  "target_module_count": 5,
+  "evidence_pack_count": 25,
+  "weakness_remediation_workflow_rating": 10.0,
+  "real_evidence_policy": "operator-supplied-authentic-permissioned-reviewed",
+  "release_policy": "fail-closed",
+  "classic_windows_flow_preserved": [
+    "INSTALL_WINDOWS.bat",
+    "RUN_BOTH_WINDOWS.bat"
+  ],
+  "workspace_launcher": "BUILD_STEP181_EXTERNAL_EVIDENCE_WORKSPACES_WINDOWS.bat",
+  "verification_launcher": "VERIFY_STEP181_EXTERNAL_EVIDENCE_WINDOWS.bat",
+  "bundle_import_launcher": "IMPORT_STEP181_EVIDENCE_BUNDLE_WINDOWS.bat",
+  "file_registration_launcher": "REGISTER_STEP181_EVIDENCE_FILE_WINDOWS.bat",
+  "qualification_center": "pages/251_Step181_External_Scientific_Evidence_Center.py"
+}

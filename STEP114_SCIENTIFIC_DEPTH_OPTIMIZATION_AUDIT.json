@@ -1,0 +1,39 @@
+{
+  "schema": "biointel.step114.scientific-depth-audit.v1",
+  "version": "11.4.0",
+  "generated_at_utc": "2026-07-10T21:18:26.804760+00:00",
+  "scope": {
+    "eligible_depth_profiles": 64,
+    "external_engine_adapters": 53,
+    "protected_execution_plans": 21,
+    "central_page": "pages/168_Scientific_Depth_Optimization_Center.py",
+    "excluded_source_hashes": {
+      "pages/6_DTI_Predictor.py": "84b3ecec1356b7239a057459210af4cd130c57c08dd9449b7239d1fe5954e0cc",
+      "pages/74_DTI_Validation_Evidence_Center.py": "a700a8a21649b49cf0e3a1521d2afad45039b83b767c2fe730b93fee7d4f7f11",
+      "pages/109_Lab_Instrument_Import_Center.py": "22b5aba5bfea37bb1ef330ed7cca3773467463f883189602d96a0151311c8f70",
+      "pages/126_LIMS_ELN_and_Sample_Chain_of_Custody_Hub.py": "eadaef1a283a5fa11ce6b243aa561508ba9ceba9f6fdcc207f4853ccf7d86905",
+      "pages/157_Instrument_Integration_Hub_2.py": "cf3a5f94756def0007dbff31184ec276d90b03fc6d6e1ca792c87189e5ab7d6d"
+    }
+  },
+  "exclusions_verified": true,
+  "verification": {
+    "selected_regression_tests_passed": 114,
+    "step114_tests_passed": 10,
+    "python_files_compiled": 825,
+    "compile_errors": 0,
+    "static_pages_checked": 170,
+    "static_pages_passed": 170,
+    "static_warnings": 0,
+    "runtime_pages_tested": 20,
+    "runtime_pages_passed": 20,
+    "runtime_exceptions": 0,
+    "self_test_passed": 7,
+    "self_test_failed": 0,
+    "databases_checked": 36,
+    "databases_healthy": 36,
+    "database_rows": 108077,
+    "release_verifier_passed": 9,
+    "release_verifier_failed": 0
+  },
+  "scientific_boundary": "Readiness and QC do not replace third-party tools, licensed databases, wet-lab evidence, clinical review or regulatory validation."
+}

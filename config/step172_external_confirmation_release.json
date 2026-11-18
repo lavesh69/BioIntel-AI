@@ -1,0 +1,24 @@
+{
+  "schema": "biointel.step172.external-confirmation-release-policy.v1",
+  "version": "14.4.0",
+  "modules": 80,
+  "software_framework_score": 10.0,
+  "required_axes": [
+    "locked prospective protocol and acceptance thresholds",
+    "wet-lab confirmation when scientifically applicable",
+    "blinded prospective confirmation when applicable",
+    "independent orthogonal confirmation when applicable",
+    "independent site qualification",
+    "instrument IQ/OQ/PQ and calibration when applicable",
+    "physical Windows/GPU/instrument/recovery qualification",
+    "cryptographically verified independent expert sign-off",
+    "qualified operating history",
+    "formal release committee decision",
+    "Step 170 runtime/reference qualification",
+    "Step 171 authentic task-model benchmark where applicable"
+  ],
+  "completion_inferred": false,
+  "fake_external_results_prohibited": true,
+  "self_attestation_alone_never_sufficient": true,
+  "electronic_signature_claim": "Detached OpenSSL SHA-256 signature verification is supported; organization-specific regulatory compliance is not claimed automatically."
+}

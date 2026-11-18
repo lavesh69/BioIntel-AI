@@ -1,0 +1,16 @@
+BIOINTEL AI STEP 89 - WINDOWS FIXED INSTALLATION
+================================================
+
+Recommended one-click method
+----------------------------
+1. Download these three files into the same folder:
+   - BioIntel-AI-Step89-Windows-Fixed-Part1-Uncompressed.zip
+   - BioIntel-AI-Step89-Windows-Fixed-Part2-Uncompressed.zip
+   - START_STEP89_AUTO_INSTALL_WINDOWS.bat
+2. Double-click START_STEP89_AUTO_INSTALL_WINDOWS.bat.
+3. The script extracts both parts into one clean BioIntel-AI folder, verifies all
+   critical files, installs dependencies, and offers to start the app.
+
+Do not manually run INSTALL_WINDOWS.bat from only one extracted ZIP part.
+Part 1 contains the application/core/data. Part 2 contains models, reports, and
+visual verification assets. Both are required for the qualified build.

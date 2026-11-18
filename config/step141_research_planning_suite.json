@@ -1,0 +1,41 @@
+{
+  "schema": "biointel.step141.research-planning-suite.v1",
+  "milestone": "Step 141",
+  "product_version_preserved": "13.2.0",
+  "category_modules_before": 2,
+  "category_modules_after": 18,
+  "new_modules": [
+    "study_protocol_designer",
+    "sample_size_power_studio",
+    "clinical_trial_design_studio",
+    "experimental_design_doe",
+    "randomization_blinding_allocation",
+    "cohort_eligibility_builder",
+    "endpoint_outcome_strategy",
+    "biomarker_study_planning",
+    "sampling_biospecimen_planning",
+    "data_collection_crf_designer",
+    "statistical_analysis_plan",
+    "research_feasibility_recruitment",
+    "research_timeline_dependencies",
+    "research_risk_mitigation",
+    "evidence_gap_literature_planning",
+    "preregistration_reproducibility"
+  ],
+  "common_capabilities": [
+    "Guided and Expert modes",
+    "CSV/TSV/JSON/Excel input",
+    "schema mapping and duplicate-column protection",
+    "run-on-demand analysis",
+    "eight specialist visuals per module",
+    "scientific interpretation and limitations",
+    "persistent review decisions",
+    "Draft/Reviewed/Locked/Superseded/Retracted versions",
+    "cross-module handoff",
+    "SHA-256 reproducibility ZIP"
+  ],
+  "interactive_upload_limit_mb": 100,
+  "analysis_row_limit": 250000,
+  "visual_row_limit": 5000,
+  "scientific_boundary": "Research planning only; external ethics, regulatory, statistical, clinical and organisational review remains required."
+}

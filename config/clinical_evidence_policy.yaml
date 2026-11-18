@@ -1,0 +1,10 @@
+version: 1
+source: ClinicalTrials.gov API v2
+required_fields: [nct_id, study_type, overall_status, conditions, interventions, sponsor, last_update]
+quality:
+  preserve_record_history: true
+  capture_api_data_timestamp: true
+  arm_level_outcomes_required_for_efficacy_analysis: true
+  adverse_event_denominators_required_for_safety_analysis: true
+  no_patient_level_data: true
+  clinical_records_are_context_not_model_truth: true

@@ -1,0 +1,3 @@
+﻿# Education, Science Pulse and Academy Developer Guide
+
+The bounded context is `src/biointel/education`: `database.py` owns idempotent SQLite migration `education_science_academy_v1`; `platform.py` owns authorization and workflows; `adapters.py` owns bounded Crossref/RSS access; `api.py` exposes `/api/v1/education`; and `ui.py` renders the three Streamlit workspaces. Data defaults to `%LOCALAPPDATA%\BioIntelAI\UserData\education`. Run `PYTHONPATH=src py -3.11 -m unittest tests.test_education_ecosystems -v`. The API platform is lazy-created, so importing routes does not mutate a home directory.

@@ -1,0 +1,38 @@
+{
+  "schema": "biointel.step114.bug-audit.v1",
+  "version": "11.4.0",
+  "generated_at_utc": "2026-07-10T21:18:26.804760+00:00",
+  "fixed": [
+    {
+      "area": "Windows launchers",
+      "issue": "Visible Step 104 branding could cause release/version confusion.",
+      "resolution": "All current installer, launcher and UI-regression titles now identify Step 114."
+    },
+    {
+      "area": "Installer state",
+      "issue": "Install log, marker and self-test filenames still used old step identifiers.",
+      "resolution": "Renamed current install-state artifacts to Step 114 identifiers."
+    },
+    {
+      "area": "Current report UI",
+      "issue": "Generic report/reference/model paths exposed stale Step 104 wording.",
+      "resolution": "Replaced with product-facing neutral wording."
+    },
+    {
+      "area": "External engine execution",
+      "issue": "New specialist workflows needed protected path validation.",
+      "resolution": "Nine new plans use shell-free argv execution and reject paths outside the protected work directory."
+    },
+    {
+      "area": "Excluded-module safety",
+      "issue": "Shared upgrades could accidentally alter explicitly excluded modules.",
+      "resolution": "Profiles omit excluded keys and five page sources are SHA-256 locked to Step 113."
+    },
+    {
+      "area": "Large feature expansion",
+      "issue": "Duplicated per-page readiness logic would increase rerun cost and maintenance risk.",
+      "resolution": "A shared cached scientific-depth layer and one central readiness page are used."
+    }
+  ],
+  "not_claimed": "No guarantee is made for unavailable external tools, arbitrary future datasets, physical Windows configurations or third-party scientific validity."
+}

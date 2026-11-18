@@ -1,0 +1,22 @@
+{
+  "schema": "biointel.step119.release.v1",
+  "release": "Step 119",
+  "version": "11.9.0",
+  "name": "Workspace Content Completeness and Card Diagnostics",
+  "scope": {
+    "embedded_scientific_workspaces": 78,
+    "summary_cards_per_workspace": 6,
+    "validated_summary_cards": 468,
+    "affected_shared_renderer_pages": 77,
+    "excluded_modules_source_locked": 5
+  },
+  "features": [
+    "Module-specific six-card collapsed summaries for every embedded workspace",
+    "Stable per-card diagnostic IDs and surface markers",
+    "Automated summary completeness validation",
+    "Workflow, readiness, handoff, entity and evidence details visible before expansion",
+    "Overflow, wrapping and narrow-card resilience improvements",
+    "Accessible card group labels without changing scientific engines"
+  ],
+  "scientific_boundary": "The workspace summaries expose configured workflow metadata; they do not create experimental evidence or certify scientific validity."
+}

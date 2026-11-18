@@ -1,0 +1,32 @@
+{
+  "schema": "biointel.step130.scientific-intelligence.v1",
+  "release": "13.2.0",
+  "modules": 15,
+  "shared_capabilities": [
+    "linked scientific selection",
+    "persistent multi-run comparison",
+    "scenario and threshold sensitivity simulation",
+    "candidate review decisions",
+    "cross-module evidence board",
+    "auditable module handoffs",
+    "scientific story mode",
+    "SVG/PDF/DOCX/PPTX figure packages",
+    "automated visual quality inspection",
+    "validation cohort manifests"
+  ],
+  "central_workspaces": [
+    "Scientific Visual Workspace Studio",
+    "Cross-Module Evidence Board",
+    "Scientific Scenario & Sensitivity Lab",
+    "Validation Cohort Manager",
+    "Visual Review & Approval Center",
+    "Scientific Intelligence Hub"
+  ],
+  "safety": {
+    "scenario_max_rows": 50000,
+    "run_preview_rows": 200,
+    "evidence_items_per_run": 50,
+    "publication_preview_rows": 500,
+    "external_validation_claimed": false
+  }
+}

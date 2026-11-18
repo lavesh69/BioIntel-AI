@@ -1,0 +1,64 @@
+{
+  "schema": "biointel.step149.qualification.v1",
+  "generated_at_utc": "2026-07-13T04:43:52.066304+00:00",
+  "release": "Step 149 \u2014 Windows Startup Path Safety & Stability Repair",
+  "base_release": "Step 148 \u2014 Creative Premium Themes",
+  "product_version": "13.2.0",
+  "root_cause": {
+    "introduced_step": 145,
+    "inherited_steps": [
+      146,
+      147,
+      148
+    ],
+    "affected_file": "RUN_BOTH_WINDOWS.bat",
+    "dangerous_argument": "--root \"%~dp0\"",
+    "observed_failure": "WinError 123 while creating BioIntel-AI\"\\reports"
+  },
+  "fixes": [
+    "Relative --root argument after PUSHD",
+    "Normalized BIOINTEL_PROJECT_ROOT from current directory",
+    "Python-side unmatched quote repair",
+    "Path-like environment variable normalization",
+    "Fallback preflight report locations",
+    "Unhandled preflight exception containment",
+    "Static BAT/CMD/PowerShell path safety audit",
+    "Standalone path-safe launcher for Step 145\u2013148"
+  ],
+  "tests": {
+    "step136": 48,
+    "step137_138": 39,
+    "step139_140": 26,
+    "step141_149": 78,
+    "total_selected_passed": 191,
+    "failures": 0
+  },
+  "python_syntax": {
+    "files_checked": 1096,
+    "failures": 0,
+    "passed": true
+  },
+  "launcher_audit": {
+    "launchers_scanned": 160,
+    "dangerous_findings": 0,
+    "passed": true
+  },
+  "historical_zip_audit": {
+    "zip_parts_scanned": 80,
+    "confirmed_findings": 4,
+    "affected_steps": [
+      145,
+      146,
+      147,
+      148
+    ]
+  },
+  "databases": {
+    "count": 40,
+    "healthy": 40,
+    "rows": 108493,
+    "foreign_key_violations": 0
+  },
+  "physical_windows_execution": false,
+  "passed": true
+}

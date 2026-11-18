@@ -1,0 +1,13 @@
+version: 1
+supported_activity_types: [Ki, Kd, IC50, EC50, AC50, GI50, XC50]
+canonical_units: [M, mM, uM, µM, nM, pM]
+supported_relations: ['=', '<', '>', '<=', '>=']
+required_fields: [provider_record_id, source_url, molecule_id, target_id, organism, assay_type, value, unit]
+quality:
+  minimum_target_confidence: 7
+  duplicate_conflict_log10_tolerance: 1.0
+  plausible_p_activity_range: [0, 14]
+  preserve_censored_values: true
+  aggregate_only_after_conflict_review: true
+  require_assay_context: true
+  require_publication_or_dataset_reference: true

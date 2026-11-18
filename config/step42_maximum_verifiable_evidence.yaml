@@ -1,0 +1,42 @@
+schema: biointel.step42.maximum-verifiable-evidence-policy.v1
+version: 4.2.0
+score_layers:
+  implementation:
+    maximum: 10
+    meaning: Executable controls, schemas, APIs, UI, tests and hard gates exist.
+  verifiable:
+    maximum: area_specific
+    meaning: Measured checksum-bound qualification generated in a controlled environment.
+  authentic_external:
+    maximum: 10
+    meaning: Independent customer, regulator, journal, laboratory or genuine production evidence.
+anti_fabrication:
+  blocked_classes: [demo, template, rehearsal_as_production, simulation_as_customer, self_certified_external]
+  require_sha256: true
+  require_boundary_statement: true
+  preserve_external_score_separation: true
+area_caps_without_external_evidence:
+  pharma_rnd_deployment: 6.5
+  clinical_deployment: 5.5
+  publication_grade_dti: 8.0
+  peer_reviewed_validation: 4.0
+  regulatory_approval: 3.0
+  gxp_operating_history: 7.0
+  regulatory_inspection: 4.5
+  production_sla_history: 7.5
+  multitenant_production: 8.0
+  kubernetes_production: 7.5
+  cloud_scale: 6.5
+  sustained_high_load: 7.5
+  disaster_recovery_drill: 9.0
+  high_availability: 7.0
+  commercial_saas_history: 5.5
+  enterprise_customer_validation: 4.0
+  pharma_customer_validation: 4.0
+  overall_platform_maturity: 7.0
+external_qualification_requirements:
+  regulatory: Authority decision or inspection artifact with verifiable identity and signature.
+  customer: Independent customer acceptance tied to measurable criteria.
+  publication: DOI or persistent archive plus journal/reviewer decision where claimed.
+  production: Time-bounded telemetry from the claimed operating environment.
+  laboratory: Independent laboratory/site identity, preregistration, locked predictions and outcome artifacts.

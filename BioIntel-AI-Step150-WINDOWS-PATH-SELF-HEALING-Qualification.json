@@ -1,0 +1,42 @@
+{
+  "schema": "biointel.step150.qualification.v1",
+  "release": "Step 150",
+  "product_version": "13.2.0",
+  "historical_archives_scanned": 84,
+  "affected_steps": [
+    145,
+    146,
+    147,
+    148
+  ],
+  "step136_to_144_status": "not affected by the quoted standalone root argument defect",
+  "step149_archive_status": "corrected, with mixed-extraction risk remaining",
+  "controls": {
+    "relative_root_argument": true,
+    "python_path_sanitization": true,
+    "environment_path_sanitization": true,
+    "four_part_sentinels": true,
+    "critical_file_sha256": true,
+    "stale_launcher_rejection": true,
+    "self_healing_hotfix": true,
+    "clean_extractor": true
+  },
+  "tests": {
+    "focused_step145_to_150": 44,
+    "path_specific_step149_to_150": 10,
+    "failures": 0
+  },
+  "python_compilation": {
+    "files": 1098,
+    "failures": 0
+  },
+  "databases": {
+    "healthy": 40,
+    "total": 40,
+    "rows": 108493,
+    "foreign_key_violations": 0
+  },
+  "limitations": [
+    "Physical Windows 10/11 execution was not available in the Linux build environment."
+  ]
+}

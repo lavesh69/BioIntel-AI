@@ -1,0 +1,52 @@
+{
+  "schema": "biointel.step121.selected_module_upgrades.v1",
+  "release": "13.2.0",
+  "step": 121,
+  "selected_priority_range": "2-8",
+  "modules": [
+    {
+      "key": "rare_variant_family",
+      "title": "Rare Variant & Family Genetics",
+      "built_in": ["pedigree structure QC", "Mendelian consistency", "de-novo candidate filtering", "compound-heterozygous candidates", "IBS0/concordance relationship flags", "transparent segregation LOD proxy"],
+      "external_boundary": ["read-backed phasing", "clinical classification", "orthogonal diagnostic confirmation"]
+    },
+    {
+      "key": "explainable_ai_assurance",
+      "title": "Explainable AI & Model Assurance",
+      "built_in": ["held-out metrics", "calibration", "subgroup audit", "robust OOD scores", "bootstrap explanation stability", "local linear counterfactual candidates"],
+      "external_boundary": ["causal interpretation", "independent cohort qualification", "production safety validation"]
+    },
+    {
+      "key": "microbiology_metagenomics",
+      "title": "Microbiology & Metagenomics Rapid Screen",
+      "built_in": ["assembly QC", "candidate taxonomy k-mer screen", "MLST profile matching", "AMR/VF catalogue screen", "contamination heuristics", "phenotype-genotype concordance"],
+      "external_boundary": ["validated taxonomic classifier", "clinical AST", "laboratory confirmation"]
+    },
+    {
+      "key": "ml_autolab",
+      "title": "ML AutoLab",
+      "built_in": ["leakage-safe preprocessing", "bounded deterministic candidate search", "cross-validation", "locked holdout", "permutation importance", "joblib artifact and model card"],
+      "external_boundary": ["exhaustive AutoML", "external validation", "production serving qualification"]
+    },
+    {
+      "key": "evidence_citation_engine",
+      "title": "Scientific Evidence & Citation Engine",
+      "built_in": ["DOI/PMID normalization", "deduplication", "claim-source graph", "conflict/retraction metadata queue", "BibTeX export", "RIS export"],
+      "external_boundary": ["authoritative provider verification", "editorial exact-claim review"]
+    },
+    {
+      "key": "organoid_3d",
+      "title": "Organoid & 3D Cell Analytics",
+      "built_in": ["3D connected-component measurements", "centroid tracking", "median-polish plate normalization", "Z-prime", "four-parameter dose response", "morphology PCA"],
+      "external_boundary": ["validated segmentation model", "ground-truth masks", "biological replication"]
+    },
+    {
+      "key": "real_evidence_studio",
+      "title": "Real Evidence Studio",
+      "built_in": ["cross-domain evidence schema", "source/version/licence controls", "multi-reviewer adjudication", "conflict queue", "cross-domain evidence graph"],
+      "external_boundary": ["independent scientific validation", "domain-specific release qualification"]
+    }
+  ],
+  "locked_modules_modified": false,
+  "claims_policy": "Capabilities are reported as built-in, adapter-ready or externally validated. Missing external engines, provider verification and independent evidence are never presented as completed."
+}

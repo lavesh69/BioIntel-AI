@@ -1,0 +1,23 @@
+schema: biointel.quality-target-10.v1
+version: 8.4.0
+principle: dual_score
+requested_targets:
+  code_maintainability:
+    target: 10.0
+    minimum_controls: 10
+  accessibility:
+    target: 10.0
+    minimum_controls: 10
+  frontend_performance:
+    target: 10.0
+    minimum_controls: 10
+  ml_model_quality:
+    target: 10.0
+    minimum_controls: 10
+  model_validation:
+    target: 10.0
+    minimum_controls: 10
+scientific_boundary:
+  implementation_readiness: may_reach_10
+  authentic_external_evidence: evidence_gated
+  synthetic_models: never_count_as_independent_validation

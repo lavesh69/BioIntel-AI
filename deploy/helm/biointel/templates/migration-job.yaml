@@ -1,0 +1,42 @@
+{{- if .Values.migrationJob.enabled }}
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: {{ include "biointel.fullname" . }}-migrate-{{ .Release.Revision }}
+  labels:
+    {{- include "biointel.labels" . | nindent 4 }}
+  annotations:
+    "helm.sh/hook": pre-install,pre-upgrade
+    "helm.sh/hook-delete-policy": before-hook-creation,hook-succeeded
+spec:
+  backoffLimit: {{ .Values.migrationJob.backoffLimit }}
+  template:
+    metadata:
+      labels:
+        {{- include "biointel.selectorLabels" . | nindent 8 }}
+        app.kubernetes.io/component: migration
+    spec:
+      restartPolicy: OnFailure
+      serviceAccountName: {{ include "biointel.serviceAccountName" . }}
+      automountServiceAccountToken: false
+      securityContext:
+        {{- toYaml .Values.securityContext | nindent 8 }}
+      containers:
+        - name: migrate
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          command: ["python", "scripts/optimize_databases.py"]
+          securityContext:
+            {{- toYaml .Values.containerSecurityContext | nindent 12 }}
+          envFrom:
+            - configMapRef: {name: {{ include "biointel.fullname" . }}-config}
+            - secretRef: {name: {{ include "biointel.fullname" . }}-secrets}
+          volumeMounts:
+            - {name: reports, mountPath: /app/reports}
+            - {name: tmp, mountPath: /tmp}
+      volumes:
+        - name: reports
+          persistentVolumeClaim: {claimName: {{ include "biointel.claimName" (list . "reports") }}}
+        - name: tmp
+          emptyDir: {sizeLimit: 256Mi}
+{{- end }}

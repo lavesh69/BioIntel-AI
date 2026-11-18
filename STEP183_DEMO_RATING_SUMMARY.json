@@ -1,0 +1,56 @@
+{
+  "schema": "biointel.step183.demo-rating-summary.v1",
+  "modules": 80,
+  "demo_ready": 80,
+  "native_analysis_executed": 29,
+  "module_specific_fixture": 51,
+  "baseline_practical_average": 6.0085,
+  "demo_operational_average": 8.0227,
+  "average_improvement_points": 2.0142,
+  "average_improvement_percent": 33.5,
+  "internal_software_average": 10.0,
+  "real_external_rating_changed_modules": 0,
+  "controlled_release_eligible_modules": 0,
+  "groups": [
+    {
+      "source_step": 176,
+      "modules": 17,
+      "baseline_average": 5.0,
+      "demo_average": 7.25,
+      "average_gain": 2.25,
+      "demo_ready": 17
+    },
+    {
+      "source_step": 177,
+      "modules": 21,
+      "baseline_average": 5.68,
+      "demo_average": 7.68,
+      "average_gain": 1.99,
+      "demo_ready": 21
+    },
+    {
+      "source_step": 178,
+      "modules": 19,
+      "baseline_average": 6.43,
+      "demo_average": 8.43,
+      "average_gain": 2.0,
+      "demo_ready": 19
+    },
+    {
+      "source_step": 179,
+      "modules": 18,
+      "baseline_average": 7.5,
+      "demo_average": 9.0,
+      "average_gain": 1.5,
+      "demo_ready": 18
+    },
+    {
+      "source_step": 180,
+      "modules": 5,
+      "baseline_average": 3.82,
+      "demo_average": 7.02,
+      "average_gain": 3.2,
+      "demo_ready": 5
+    }
+  ]
+}

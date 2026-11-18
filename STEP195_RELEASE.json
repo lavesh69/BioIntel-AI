@@ -1,0 +1,16 @@
+{
+  "schema": "biointel.step195.release.v1",
+  "step": 195,
+  "version": "15.2.0",
+  "status": "verified-internal",
+  "title": "Free Web AI and Official Scientific Provider Integration",
+  "features": [
+    "Ollama local AI with loopback-only security",
+    "SearXNG private endpoint or automatic healthy public-instance discovery",
+    "11 official scientific provider connectors",
+    "free web-grounded Copilot mode with source-separated citations",
+    "automatic Windows Ollama setup and lightweight model pull",
+    "two-step INSTALL_WINDOWS.bat then RUN_BOTH_WINDOWS.bat workflow"
+  ],
+  "external_boundary": "Public SearXNG instances may rate-limit or become unavailable. Sensitive or repeatable work should use a private SearXNG instance. Scientific records remain research-use evidence and are not clinical validation."
+}

@@ -1,0 +1,22 @@
+{
+  "schema": "biointel.step193.release.v1",
+  "step": 193,
+  "version": "15.1.0",
+  "title": "Mandatory Module Completion and Windows Installation Repair",
+  "modules": 80,
+  "mandatory_checks_per_module": 24,
+  "mandatory_checks_total": 1920,
+  "installation_method": [
+    "INSTALL_WINDOWS.bat",
+    "RUN_BOTH_WINDOWS.bat"
+  ],
+  "installer_fixes": [
+    "self-test --allow-degraded argument compatibility",
+    "robust Python 3.11 x64 discovery",
+    "optional winget Python bootstrap",
+    "current part markers and deep-hash validation",
+    "automatic clean repair",
+    "support bundle launcher"
+  ],
+  "controlled_scientific_release": "pending authentic external evidence"
+}

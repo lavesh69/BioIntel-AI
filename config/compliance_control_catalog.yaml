@@ -1,0 +1,31 @@
+schema: biointel.compliance-controls/v1
+frameworks:
+  - FDA 21 CFR Part 11 readiness
+  - EU GxP computerized-system and data-integrity readiness
+controls:
+  REG-001: intended_use_and_scope
+  REG-002: quality_risk_management
+  REG-003: requirements_traceability
+  REG-004: validated_release
+  REG-005: change_control
+  REG-006: deviation_and_capa
+  REG-007: retention_and_legal_hold
+  REG-008: access_privacy_security
+  GXP-001: alcoa_plus_records
+  GXP-002: tamper_evident_audit_trail
+  GXP-003: bound_electronic_signatures
+  GXP-004: controlled_sops
+  GXP-005: role_based_training
+  GXP-006: backup_restore_continuity
+  GXP-007: supplier_qualification
+  GXP-008: periodic_system_review
+release_policy:
+  require_independent_quality_approval: true
+  require_intended_use: true
+  require_traceability_matrix: true
+  require_validation_summary: true
+  require_open_deviation_review: true
+  require_audit_chain_verification: true
+certification_boundary: >-
+  Controls support validation readiness only. A regulated organization must validate the deployed
+  system for its intended use and operate approved procedures, training, quality oversight and review.

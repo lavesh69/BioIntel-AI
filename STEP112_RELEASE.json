@@ -1,0 +1,18 @@
+{
+  "schema": "biointel.step112.release.v1",
+  "release": "Step 112",
+  "version": "11.2.0",
+  "name": "Scientific Planning, Bioinformatics Depth & Reference Lifecycle",
+  "study_design_families": 11,
+  "bioinformatics_upgrade_contexts": 9,
+  "reference_catalog_profiles": 14,
+  "embedded_bioinformatics_pages": 9,
+  "runtime_pages_verified": 12,
+  "selected_regression_tests_passed": 98,
+  "self_test_passed": 7,
+  "scientific_boundaries": [
+    "Planning calculations require protocol-specific statistical review for confirmatory use.",
+    "Reference data licences and release compatibility remain the user's responsibility.",
+    "Built-in bioinformatics analyses do not replace specialist engines or independent validation."
+  ]
+}

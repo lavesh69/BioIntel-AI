@@ -1,0 +1,78 @@
+{
+  "schema": "biointel.native-workflows.v217",
+  "claim_boundary": "A workflow definition is not qualification. Execution remains blocked until the exact engine binary passes target-machine qualification.",
+  "workflows": [
+    {
+      "workflow_id": "variant_annotation_vep",
+      "engine": "vep",
+      "domain": "Bioinformatics",
+      "inputs": ["vcf", "reference_cache"],
+      "outputs": {"annotated_vcf": "results/annotated.vcf"},
+      "stages": ["raw_input", "quality_control", "native_engine_execution", "native_result_parsing", "provenance", "report"]
+    },
+    {
+      "workflow_id": "population_gwas_plink2",
+      "engine": "plink2",
+      "domain": "Bioinformatics",
+      "inputs": ["genotypes", "phenotypes", "covariates"],
+      "outputs": {"association": "results/plink2.glm"},
+      "stages": ["raw_input", "quality_control", "native_engine_execution", "native_result_parsing", "provenance", "report"]
+    },
+    {
+      "workflow_id": "population_gwas_saige",
+      "engine": "saige",
+      "domain": "Bioinformatics",
+      "inputs": ["genotypes", "phenotypes", "covariates", "grm"],
+      "outputs": {"association": "results/saige.tsv"},
+      "stages": ["raw_input", "quality_control", "native_engine_execution", "native_result_parsing", "provenance", "report"]
+    },
+    {
+      "workflow_id": "metagenomics_taxonomy_kraken2",
+      "engine": "kraken2",
+      "domain": "Lab Analytics",
+      "inputs": ["reads", "qualified_database"],
+      "outputs": {"classification": "results/kraken2.tsv", "report": "results/kraken2.report"},
+      "stages": ["raw_input", "quality_control", "native_engine_execution", "native_result_parsing", "provenance", "report"]
+    },
+    {
+      "workflow_id": "metagenomics_function_humann",
+      "engine": "humann",
+      "domain": "Lab Analytics",
+      "inputs": ["reads", "nucleotide_database", "protein_database"],
+      "outputs": {"genefamilies": "results/genefamilies.tsv", "pathways": "results/pathabundance.tsv"},
+      "stages": ["raw_input", "quality_control", "native_engine_execution", "native_result_parsing", "provenance", "report"]
+    },
+    {
+      "workflow_id": "molecular_docking_vina",
+      "engine": "vina",
+      "domain": "Discovery",
+      "inputs": ["receptor", "ligand", "configuration"],
+      "outputs": {"poses": "results/poses.pdbqt", "scores": "results/scores.txt"},
+      "stages": ["raw_input", "quality_control", "native_engine_execution", "native_result_parsing", "provenance", "report"]
+    },
+    {
+      "workflow_id": "molecular_dynamics_gromacs",
+      "engine": "gromacs",
+      "domain": "Discovery",
+      "inputs": ["topology", "coordinates", "parameters"],
+      "outputs": {"trajectory": "results/trajectory.xtc", "energy": "results/energy.edr"},
+      "stages": ["raw_input", "quality_control", "native_engine_execution", "native_result_parsing", "provenance", "report"]
+    },
+    {
+      "workflow_id": "microscopy_segmentation_cellpose",
+      "engine": "cellpose",
+      "domain": "Lab Analytics",
+      "inputs": ["images", "qualified_model"],
+      "outputs": {"masks": "results/masks.zip", "measurements": "results/measurements.csv"},
+      "stages": ["raw_input", "quality_control", "native_engine_execution", "native_result_parsing", "provenance", "report"]
+    },
+    {
+      "workflow_id": "digital_pathology_openslide",
+      "engine": "openslide",
+      "domain": "Clinical Research",
+      "inputs": ["whole_slide_image"],
+      "outputs": {"metadata": "results/slide_metadata.json", "tiles": "results/tiles.zip"},
+      "stages": ["raw_input", "quality_control", "native_engine_execution", "native_result_parsing", "provenance", "report"]
+    }
+  ]
+}

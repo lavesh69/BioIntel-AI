@@ -1,0 +1,30 @@
+{
+  "release": "15.6.0-Step219.0-WINDOWS-V20.2",
+  "upgrade": "Synthetic / Demo Data Mode",
+  "generator_version": "Step219.0",
+  "recommendation_rule_catalog_version": "Step218.1",
+  "module_count": 18,
+  "bundled_fixture_count": 36,
+  "fixture_variants_per_module": ["baseline", "failure"],
+  "ui_entry_point": "pages/168_Synthetic_Demo_Data_Workspace.py",
+  "cli_entry_point": "python -m biointel.synthetic",
+  "api_endpoint": "POST /api/v1/synthetic-datasets",
+  "data_origin": "synthetic",
+  "allowed_use": ["demonstration", "testing", "training"],
+  "prohibited_use": [
+    "scientific conclusion",
+    "clinical decision",
+    "diagnosis",
+    "treatment",
+    "regulatory submission",
+    "publication claim"
+  ],
+  "verification": {
+    "step219_checks_passed": 13,
+    "step218_regressions_passed": 9,
+    "desktop_browser_flow": "passed",
+    "mobile_browser_flow": "passed",
+    "browser_application_errors": 0,
+    "database_integrity": "passed"
+  }
+}

@@ -1,0 +1,492 @@
+{
+  "schema": "biointel.education.phase23-30.changed-files.v1",
+  "generated_at_utc": "2026-07-30T08:40:34Z",
+  "baseline_inventory": "PRE_PHASE23_SOURCE_INVENTORY.json",
+  "baseline_file_count": 12975,
+  "changed_file_count": 78,
+  "states": {
+    "new": 68,
+    "changed": 10,
+    "deleted": 0
+  },
+  "files": [
+    {
+      "path": ".env.example",
+      "size_bytes": 4507,
+      "sha256": "b7fd88b0f9b189bddf89ea074d81efa52c26bf7d50f4dbd6ee07430dfe8b8012",
+      "state": "changed",
+      "previous_sha256": "f87a0c96c0a75cd85670b84dcc44a125a66d2047136a4e6bf60c60ea4ed9e10a"
+    },
+    {
+      "path": ".release_parts/education_phase23_30_part1.ok",
+      "size_bytes": 18,
+      "sha256": "f9007ab3a639dd37cf8beda19ed8f1158227761e7bf4f37ef8c31872de295119",
+      "state": "new"
+    },
+    {
+      "path": ".release_parts/education_phase23_30_part2.ok",
+      "size_bytes": 18,
+      "sha256": "4a6306b3ef2cc9294d50eaaa27cb85e1c108d3385927df7b86d448d963710abf",
+      "state": "new"
+    },
+    {
+      "path": ".release_parts/education_phase23_30_part3.ok",
+      "size_bytes": 18,
+      "sha256": "91dcf15d9f6202127032c833c80f7bc8aef849a48f82cb3a49151dbe7806ae58",
+      "state": "new"
+    },
+    {
+      "path": ".release_parts/education_phase23_30_part4.ok",
+      "size_bytes": 18,
+      "sha256": "358e64397edb0a842e79b09518195d7d657baa4a7110ece1974da91bc58f2ed5",
+      "state": "new"
+    },
+    {
+      "path": "BACKUP_EDUCATION_PHASE23_TO_30_WINDOWS.bat",
+      "size_bytes": 909,
+      "sha256": "5c72fe678634f1e822f877da8e8c4e39e510f8c58fea70aa69fc1581c6f6748a",
+      "state": "new"
+    },
+    {
+      "path": "CHANGELOG_PHASE23_TO_30.md",
+      "size_bytes": 1491,
+      "sha256": "88a3c3ddf8bf54ad848512ad0f499248331953b302929adfdc08e2df0caca924",
+      "state": "new"
+    },
+    {
+      "path": "DIAGNOSE_EDUCATION_PHASE23_TO_30_WINDOWS.bat",
+      "size_bytes": 885,
+      "sha256": "b896bdfbde720fc7bbe27c7426f736c15f7d2c47c9ca08f73253e7f4f07a08b9",
+      "state": "new"
+    },
+    {
+      "path": "docs/PHASE23_TO_30_ADMINISTRATOR_HANDBOOK.md",
+      "size_bytes": 694,
+      "sha256": "4a04ee40afad1fc8e2238867c36de62ed7af60136739949447478371e91b0bf1",
+      "state": "new"
+    },
+    {
+      "path": "docs/PHASE23_TO_30_API_GUIDE.md",
+      "size_bytes": 749,
+      "sha256": "f955e642f17f5901ba5680a32b7e89eee3a58c33e6a6282a07a293a36f50d5dd",
+      "state": "new"
+    },
+    {
+      "path": "docs/PHASE23_TO_30_INSTITUTION_DEPLOYMENT.md",
+      "size_bytes": 706,
+      "sha256": "525ae62751a8d3e519ba587079bf49fb9cf0d02252e0d0ad1f6fd975b022749d",
+      "state": "new"
+    },
+    {
+      "path": "docs/PHASE23_TO_30_LOCAL_DESKTOP.md",
+      "size_bytes": 627,
+      "sha256": "f6d4824c1522a7355bd8659f0dda9eea04113a8dde4a5e6312cd3a3b682362d8",
+      "state": "new"
+    },
+    {
+      "path": "docs/PHASE23_TO_30_MCP_GUIDE.md",
+      "size_bytes": 576,
+      "sha256": "d32539a6a5c908ffee47d9a93747ce3f44b47a919d84530ff3865f4beaf8cd7a",
+      "state": "new"
+    },
+    {
+      "path": "docs/PHASE23_TO_30_PLUGIN_DEVELOPER_GUIDE.md",
+      "size_bytes": 674,
+      "sha256": "4d0267dfb3c5eac08bd31bb77001361d6685d8767de8d9ae8e51332b02c1e558",
+      "state": "new"
+    },
+    {
+      "path": "docs/PHASE23_TO_30_SECURITY_GUIDE.md",
+      "size_bytes": 689,
+      "sha256": "1d0469b9d4662217d756b8a37b1f4a4fe267d5801de7177554c463c3afc2dfd0",
+      "state": "new"
+    },
+    {
+      "path": "docs/PHASE23_TO_30_SHIRO_AGENT_HANDBOOK.md",
+      "size_bytes": 513,
+      "sha256": "527c685da4480f7f47b9d80d2631040eeb0510bd49b5d123d3667249340ef348",
+      "state": "new"
+    },
+    {
+      "path": "docs/PHASE23_TO_30_STUDENT_HANDBOOK.md",
+      "size_bytes": 503,
+      "sha256": "cf886caca4b8ca304618f1ddb9f820220ddb51f9b1e9e0cceaed449a524f6309",
+      "state": "new"
+    },
+    {
+      "path": "docs/PHASE23_TO_30_TEACHER_HANDBOOK.md",
+      "size_bytes": 529,
+      "sha256": "7316d0923eb33e4eb0d16ab7da38f1cc623f50f0ed8061096d216598f791cb75",
+      "state": "new"
+    },
+    {
+      "path": "docs/PHASE23_TO_30_VIRTUAL_LAB_HANDBOOK.md",
+      "size_bytes": 568,
+      "sha256": "e383bfa6ff150dbe5b2a47b0142915de9fa214d36274d016daf77a76c48a63b8",
+      "state": "new"
+    },
+    {
+      "path": "EXTRACT_INSTALL_RUN_EDUCATION_PHASE23_TO_30_4PART_WINDOWS.bat",
+      "size_bytes": 1858,
+      "sha256": "4335372f2534c00554d5f71838048432ff122eeb76574dfb920baf9aee18442f",
+      "state": "new"
+    },
+    {
+      "path": "INSTALL_EDUCATION_PHASE23_TO_30_WINDOWS.bat",
+      "size_bytes": 697,
+      "sha256": "ecceb1a3d35869e35b11a2164d2073766c9dff6dc2adf53a7ceccd96a3690577",
+      "state": "new"
+    },
+    {
+      "path": "INSTALL_WINDOWS.bat",
+      "size_bytes": 10119,
+      "sha256": "9e7eef0e657708aa04401adcf5fc17f7d500c1a1745a8dea391e25c0c6a0a9e1",
+      "state": "changed",
+      "previous_sha256": "f5c480e38d5da8f81988a39a5e0422e22457474b1c5ff8032fc5235d8e01e3be"
+    },
+    {
+      "path": "LOAD_TEST_EDUCATION_PHASE23_TO_30_WINDOWS.bat",
+      "size_bytes": 949,
+      "sha256": "8f7028350816c37569f1818f355d020feee5d5f09c34cf0f8c78bb825f858f9d",
+      "state": "new"
+    },
+    {
+      "path": "pages/346_BioIntel_Education_Enterprise.py",
+      "size_bytes": 464,
+      "sha256": "968e9c67d87d814ab8fa8b96b88160a8c5c2d53cf9e457d9f48845afa0e1f1d9",
+      "state": "new"
+    },
+    {
+      "path": "pages/347_BioIntel_Virtual_Science_Lab.py",
+      "size_bytes": 488,
+      "sha256": "ac59bdc03fff2b941a70a75f288fed7d462f09412b433e6bd82ed5ce11ed6c3b",
+      "state": "new"
+    },
+    {
+      "path": "PHASE23_REAL_INSTITUTION_PILOT_REPORT.md",
+      "size_bytes": 1813,
+      "sha256": "8dcde0cae2c056eabc9d38b048c72b40711885d2eafa9cfb08619cee437cd031",
+      "state": "new"
+    },
+    {
+      "path": "PHASE23_TO_30_API_SPEC.md",
+      "size_bytes": 1987,
+      "sha256": "e48d77b236766430983a630d31178eea988d2cd301ae4338e84ed3e0296170a8",
+      "state": "new"
+    },
+    {
+      "path": "PHASE23_TO_30_BACKUP_RESTORE_GUIDE.md",
+      "size_bytes": 1108,
+      "sha256": "0253007f869ad8fb3ce119744075a04ea32614446bc13f89595e1b79f56bc546",
+      "state": "new"
+    },
+    {
+      "path": "PHASE23_TO_30_DATABASE_SCHEMA.md",
+      "size_bytes": 2399,
+      "sha256": "a7edd23af65cc0710cd8b2bb392052736d22cbcdfa3a9a8596e1ecb077a901b5",
+      "state": "new"
+    },
+    {
+      "path": "PHASE23_TO_30_IMPLEMENTATION_MATRIX.md",
+      "size_bytes": 2600,
+      "sha256": "981a39e737ad5c70315c7116ebabb67b3ddb1c601aa823ac3c0e0c080c7d4e05",
+      "state": "new"
+    },
+    {
+      "path": "PHASE23_TO_30_KNOWN_LIMITATIONS.md",
+      "size_bytes": 1344,
+      "sha256": "78a6f4952ded86c2c03dab120fccee0165764845d08538b82b9bd850fef278ed",
+      "state": "new"
+    },
+    {
+      "path": "PHASE23_TO_30_MIGRATION_GUIDE.md",
+      "size_bytes": 1251,
+      "sha256": "8cb683d2513965398c72cd4c7186915405ebafdc0d76102a97806081cf7c8ce6",
+      "state": "new"
+    },
+    {
+      "path": "PHASE23_TO_30_ROLLBACK_GUIDE.md",
+      "size_bytes": 913,
+      "sha256": "2965bdd53de36d78644987f04ce5c36e5ac39a78d88f0e8b31f685e6c177e096",
+      "state": "new"
+    },
+    {
+      "path": "PHASE23_TO_30_SECURITY_REPORT.md",
+      "size_bytes": 1748,
+      "sha256": "bcf46f6acb792bcec2011160e517998d4f51abf2113d62752b0a7c4ecd1a9f8d",
+      "state": "new"
+    },
+    {
+      "path": "PHASE23_TO_30_TEST_REPORT.md",
+      "size_bytes": 2100,
+      "sha256": "d46781b04acbf0fb03416f94377393c39c33b69d65dd2c7ce342fac9463821fa",
+      "state": "new"
+    },
+    {
+      "path": "PHASE23_TO_30_WINDOWS_QUALIFICATION.md",
+      "size_bytes": 1182,
+      "sha256": "d7db80c4ff742533e22df69c68a542a0607d75fad2775788a2267c705003beb1",
+      "state": "new"
+    },
+    {
+      "path": "PHASE24_SHIRO_AGENT_ECOSYSTEM_REPORT.md",
+      "size_bytes": 1351,
+      "sha256": "6f76c6498d6c6462be70882eee0db715b05999bc8c0d4c380b028f07694c2b4e",
+      "state": "new"
+    },
+    {
+      "path": "PHASE25_VIRTUAL_LAB_REPORT.md",
+      "size_bytes": 1190,
+      "sha256": "15b4cbca77bb68cc4d2a881299cda4327640fee49e9ef7d724bd9516f40006e4",
+      "state": "new"
+    },
+    {
+      "path": "PHASE26_ADAPTIVE_LEARNING_REPORT.md",
+      "size_bytes": 1065,
+      "sha256": "d3989358f5112f56d65e05dcd58a182b39f1f018ffab6a9236eea76869a1694d",
+      "state": "new"
+    },
+    {
+      "path": "PHASE27_RESEARCH_TO_EDUCATION_REPORT.md",
+      "size_bytes": 1192,
+      "sha256": "ec997499fe1048cef1ea4b81f75b3ba07c7838423327e2820c41d4345f994dee",
+      "state": "new"
+    },
+    {
+      "path": "PHASE28_PORTFOLIO_CREDENTIALS_CAREERS_REPORT.md",
+      "size_bytes": 977,
+      "sha256": "f82f1ff89649b63729d5bdd377ecc6a0e966ece82043420ce9fa249067a594c2",
+      "state": "new"
+    },
+    {
+      "path": "PHASE29_INTEGRATION_API_PLUGIN_MCP_REPORT.md",
+      "size_bytes": 1464,
+      "sha256": "2f1f2e2ffcb4a84ca3df95c8a2ef487dfe721509b6cae41a46656c9f20affe31",
+      "state": "new"
+    },
+    {
+      "path": "PHASE30_ENTERPRISE_RELEASE_REPORT.md",
+      "size_bytes": 1363,
+      "sha256": "0fa9e4db7ab5b7057197485fcf16f57271d91fdc62377f730cd0ea3b6ee9814f",
+      "state": "new"
+    },
+    {
+      "path": "PRE_PHASE23_BLOCKERS.md",
+      "size_bytes": 1601,
+      "sha256": "c07b8f19a7c9db409efb4cfffbe7700d30d7cb066c429c384196d0e984df5a92",
+      "state": "new"
+    },
+    {
+      "path": "PRE_PHASE23_SOURCE_INVENTORY.json",
+      "size_bytes": 2713857,
+      "sha256": "11145a8648873a92727fd86a68534ff363c533ffa22d9929052d6904f6cf8c61",
+      "state": "new"
+    },
+    {
+      "path": "PRE_PHASE23_TEST_BASELINE.json",
+      "size_bytes": 1549,
+      "sha256": "fa50ff6d0086de1cf6131daf10661d5dd5e98f2a51cd4668534f30351282c173",
+      "state": "new"
+    },
+    {
+      "path": "PRE_PHASE23_VALIDATION_REPORT.md",
+      "size_bytes": 2168,
+      "sha256": "2e910257c12a5221f7d2878d0192dabe33628ed7757fbb0086410c7df6aea972",
+      "state": "new"
+    },
+    {
+      "path": "requirements.lock",
+      "size_bytes": 719,
+      "sha256": "ded29da4d217cd2941889dc29890088e041af7cea26eb3d8c99eab2dfcd83bae",
+      "state": "changed",
+      "previous_sha256": "4dd189d666ec5468e95461d4cf748a4154a451a764baddaf53f6b9ae30070136"
+    },
+    {
+      "path": "requirements.lock.sha256",
+      "size_bytes": 84,
+      "sha256": "42d43abaa95927f7173e7dfc99159a2ad6be4c296d65a53303c27c714eec9e2c",
+      "state": "changed",
+      "previous_sha256": "36b6a28aa00e34bc2dcf0423617c375e60ed79c4457e8cb5c925d43e97aab542"
+    },
+    {
+      "path": "requirements.txt",
+      "size_bytes": 795,
+      "sha256": "603c652c1aae7d087046e31df365cd1f1c123aa37ed6fcfb45d099ab2d9087c5",
+      "state": "changed",
+      "previous_sha256": "217876114cb80bb5f7332a79af3631dab021e8ee8f469ec09340e67a600f5e1b"
+    },
+    {
+      "path": "RESTORE_EDUCATION_PHASE23_TO_30_WINDOWS.bat",
+      "size_bytes": 578,
+      "sha256": "acc936e35ca697dd5107018e2945ec260f7fd6ab29f05eed06bf59900ae51deb",
+      "state": "new"
+    },
+    {
+      "path": "RUN_BIOINTEL_MCP_WINDOWS.bat",
+      "size_bytes": 1002,
+      "sha256": "e1d2fcdfc93dc0270413a24cc886ad18d208c2aaee509e0796b06c50d74309fe",
+      "state": "new"
+    },
+    {
+      "path": "RUN_EDUCATION_PHASE23_TO_30_WORKER_WINDOWS.bat",
+      "size_bytes": 1032,
+      "sha256": "cbef34b7bbcbf078683afb4060e601ab0256beac4da78ff6f8b0ea082a1aabd5",
+      "state": "new"
+    },
+    {
+      "path": "scripts/diagnose_education_phase23_30.py",
+      "size_bytes": 6466,
+      "sha256": "18df9acb8ffcbc7e64d3e1f31b4e95fae3d6efe77654e71b33e1e510b42437a6",
+      "state": "new"
+    },
+    {
+      "path": "scripts/load_test_education_phase23_30.py",
+      "size_bytes": 6764,
+      "sha256": "17f83bf29e7ba700b85d068ba9af2a2e3715d962f73237f71862da344cceb565",
+      "state": "new"
+    },
+    {
+      "path": "scripts/package_education_phase23_30_4part_release.py",
+      "size_bytes": 22611,
+      "sha256": "dadccdfe46662ecac31ae5725be6791ff8e9e48c63ba68c57e844329cb8dbd6f",
+      "state": "new"
+    },
+    {
+      "path": "scripts/phase23_30_backup_restore.py",
+      "size_bytes": 8445,
+      "sha256": "c469fbd5d287173a5f5f5b9b2b206f0095bd0fe2f0b7ce34369847291d025f8e",
+      "state": "new"
+    },
+    {
+      "path": "scripts/run_education_phase23_30_worker.py",
+      "size_bytes": 7719,
+      "sha256": "9b7a539adda2a8f3a5e7ffd3854c158539191a21ec4d3f81e6d38b1b27756b15",
+      "state": "new"
+    },
+    {
+      "path": "src/biointel/api/main.py",
+      "size_bytes": 104107,
+      "sha256": "4e06ded6de6bf4b3ae7a71cae17ea08905ee283a5ab7227c105332a7436e3bde",
+      "state": "changed",
+      "previous_sha256": "547a8c08fa69db4475d2a90afe6249af85258d352a7f04168b0c0b22c7052ca3"
+    },
+    {
+      "path": "src/biointel/education/__init__.py",
+      "size_bytes": 1058,
+      "sha256": "1acebb5817b32bbb7650d44e2dbb06dfefff768076b60baaa0fd0950f0ba1c09",
+      "state": "changed",
+      "previous_sha256": "64725ef6512192a45e01fbbfe16d84fe4080ee4fe05921e9303beb905bb025b0"
+    },
+    {
+      "path": "src/biointel/education/api.py",
+      "size_bytes": 110848,
+      "sha256": "7f0f0c2b0bf50087be8a993b38be0a08c2bcb3d99a3ac6b687b4d150f35bfffe",
+      "state": "changed",
+      "previous_sha256": "6164e9eb10eafbae9f0e59937dd0878bc0bba8c981acdfaf86d04a1b0f392079"
+    },
+    {
+      "path": "src/biointel/education/phase23_30/__init__.py",
+      "size_bytes": 141,
+      "sha256": "5b83b9cbc311009312738c3496d4da8480d66c302eac0b9dc40818cea51e3187",
+      "state": "new"
+    },
+    {
+      "path": "src/biointel/education/phase23_30/agents.py",
+      "size_bytes": 27032,
+      "sha256": "4a5a25c07451ddd9a0217636da54fe3a9856530e85206ba8b9254d81af8cf3e8",
+      "state": "new"
+    },
+    {
+      "path": "src/biointel/education/phase23_30/api.py",
+      "size_bytes": 19494,
+      "sha256": "d1e290f65713f823204e1c7e84de99c7117cc0a532a2186c1bcc14cbceaa35dd",
+      "state": "new"
+    },
+    {
+      "path": "src/biointel/education/phase23_30/base.py",
+      "size_bytes": 10598,
+      "sha256": "4879e401b920848c573299cffaf72e2d030d37604e8c388e7554ea291e943b1c",
+      "state": "new"
+    },
+    {
+      "path": "src/biointel/education/phase23_30/integration.py",
+      "size_bytes": 47629,
+      "sha256": "b6c405afcc7e15c4c32c37e5a3197869a2fc60327930c642372df5c6627895c5",
+      "state": "new"
+    },
+    {
+      "path": "src/biointel/education/phase23_30/labs.py",
+      "size_bytes": 30592,
+      "sha256": "d6004a469aca937b364ca549b08c1cceac2ce5fb07f4c727e247608ea5a5f7a0",
+      "state": "new"
+    },
+    {
+      "path": "src/biointel/education/phase23_30/mastery.py",
+      "size_bytes": 27004,
+      "sha256": "4f847dfb3dfb12427d2357872ed77aca48eac7b4a3f1b195acec1b2fa7d87cf0",
+      "state": "new"
+    },
+    {
+      "path": "src/biointel/education/phase23_30/mcp_server.py",
+      "size_bytes": 7736,
+      "sha256": "e0bd6a869c7d3b6cf75622f5382717c0b28b5cea071b8b5194fab5304406217e",
+      "state": "new"
+    },
+    {
+      "path": "src/biointel/education/phase23_30/pilot.py",
+      "size_bytes": 45775,
+      "sha256": "58d3d84bea3032be71c1faeacd092b38531fedc1faf804b4326021c16d1517ce",
+      "state": "new"
+    },
+    {
+      "path": "src/biointel/education/phase23_30/portfolio.py",
+      "size_bytes": 27036,
+      "sha256": "2bac2774abaf9233f92f4e3ac7f5fae255126e72ae36e9d6fbd718448de0331f",
+      "state": "new"
+    },
+    {
+      "path": "src/biointel/education/phase23_30/research.py",
+      "size_bytes": 20732,
+      "sha256": "bbd57c6cd496fae859b229dfb1ae3e9abc7b1f140d8dc5b985a2484474ef0a3c",
+      "state": "new"
+    },
+    {
+      "path": "src/biointel/education/phase23_30/schema.py",
+      "size_bytes": 34627,
+      "sha256": "c8b1483616ad54a22eb0920a152c43de63ba7f98732bc3923f440db0595ab1d8",
+      "state": "new"
+    },
+    {
+      "path": "src/biointel/education/phase23_30/service.py",
+      "size_bytes": 15026,
+      "sha256": "ecc1a610b9eeb713448f5277a49e2f4fedb736052d037c699330772e3c0106e8",
+      "state": "new"
+    },
+    {
+      "path": "src/biointel/education/phase23_30/ui.py",
+      "size_bytes": 24868,
+      "sha256": "6c7363e4bcd77bf0fdfdcc70df81da50481d518b2f0e26cf2865cbb77dc7aaf0",
+      "state": "new"
+    },
+    {
+      "path": "src/biointel/education/ui.py",
+      "size_bytes": 17138,
+      "sha256": "d22516d1ff78c532a9af93d7ac49ea385aeab46c804e94fc288a9629ff46a251",
+      "state": "changed",
+      "previous_sha256": "2739a86183f664e4326b814bb9037e4f11a25170be7f0d56ea89639ac0c9c503"
+    },
+    {
+      "path": "STEP220_RELEASE.json",
+      "size_bytes": 3851,
+      "sha256": "2bcaea59d3583d198767cc4e54c1a5a75d757fe7734efa4be96b01ae839189bc",
+      "state": "changed",
+      "previous_sha256": "2bd458023780f6c471941370d845ca299c5e15e35a19333b9230fbe84a20ac77"
+    },
+    {
+      "path": "tests/test_education_phase23_30.py",
+      "size_bytes": 25656,
+      "sha256": "4cdcfa9b6b985015b00beb70cc6c745c1bf49c37abc551cff23e19b953add7f3",
+      "state": "new"
+    }
+  ]
+}

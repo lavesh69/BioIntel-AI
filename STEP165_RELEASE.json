@@ -1,0 +1,12 @@
+{
+  "schema": "biointel.step165.release.v1",
+  "step": 165,
+  "release_name": "Priority Three-Module Scientific Excellence",
+  "base_release": "Step 164 Operational Readiness",
+  "product_version": "13.7.0",
+  "priority_modules": 3,
+  "software_owned_10of10": 3,
+  "modules": ["amr_surveillance", "protein_ligand_codesign", "long_read_epigenome"],
+  "confirmatory_external_release_eligible": 0,
+  "external_claims_not_inferred": true
+}

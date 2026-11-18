@@ -1,0 +1,25 @@
+{
+  "author": "Lavesh Dobriyal",
+  "benchmark_modules": "80/80",
+  "date": "2026-07-15",
+  "external_blockers": [
+    "public_archive_doi",
+    "public_repository_url",
+    "author_approved_final_manuscript",
+    "independent_external_benchmark",
+    "journal_compatible_licence"
+  ],
+  "honesty_boundary": "Synthetic internal reproducibility benchmarks are not clinical, wet-lab or independent external validation.",
+  "installation_method": [
+    "INSTALL_WINDOWS.bat",
+    "RUN_BOTH_WINDOWS.bat"
+  ],
+  "internal_publication_controls": "2000/2000",
+  "internal_publication_rating": 10.0,
+  "journal_submission_status": "pending external steps",
+  "modules": 80,
+  "release_name": "Publication, Reproducibility & Research Release Readiness",
+  "security_static_audit_passed": true,
+  "step": 191,
+  "version": "14.9.0"
+}

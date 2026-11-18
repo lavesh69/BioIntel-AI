@@ -1,0 +1,29 @@
+# syntax=docker/dockerfile:1.7
+ARG PYTHON_IMAGE=python:3.11.9-slim-bookworm
+FROM ${PYTHON_IMAGE} AS builder
+ARG BUILD_VERSION=15.6.0
+ARG SOURCE_DATE_EPOCH=1577836800
+ENV PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1 PIP_NO_CACHE_DIR=1 VIRTUAL_ENV=/opt/venv SOURCE_DATE_EPOCH=${SOURCE_DATE_EPOCH}
+RUN apt-get update && apt-get install -y --no-install-recommends build-essential=12.9 && rm -rf /var/lib/apt/lists/*
+RUN python -m venv "$VIRTUAL_ENV"
+ENV PATH="$VIRTUAL_ENV/bin:$PATH"
+WORKDIR /build
+COPY requirements.lock requirements-production.txt ./
+RUN python -m pip install --upgrade pip==25.1.1 setuptools==80.9.0 wheel==0.45.1 && python -m pip install --no-cache-dir -r requirements-production.txt
+
+FROM ${PYTHON_IMAGE} AS runtime
+ARG BUILD_VERSION=15.6.0
+ARG VCS_REF=unknown
+ARG SOURCE_DATE_EPOCH=1577836800
+LABEL org.opencontainers.image.title="BioIntel AI"       org.opencontainers.image.description="Scientific intelligence and biotechnology platform"       org.opencontainers.image.version=$BUILD_VERSION       org.opencontainers.image.revision=$VCS_REF       org.opencontainers.image.created=$SOURCE_DATE_EPOCH       org.opencontainers.image.licenses="Proprietary"
+ENV PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1 PIP_NO_CACHE_DIR=1 VIRTUAL_ENV=/opt/venv PATH="/opt/venv/bin:$PATH" PYTHONPATH=/app/src HOME=/home/biointel
+RUN groupadd --system --gid 10001 biointel && useradd --system --uid 10001 --gid biointel --create-home biointel
+COPY --from=builder /opt/venv /opt/venv
+WORKDIR /app
+COPY --chown=biointel:biointel . .
+RUN mkdir -p /app/reports /app/data /app/cache /tmp/biointel && chown -R biointel:biointel /app /tmp/biointel
+USER 10001:10001
+EXPOSE 8000 8501
+HEALTHCHECK --interval=30s --timeout=5s --start-period=30s --retries=3 CMD python -c "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/ready',timeout=3)" || exit 1
+# Runtime is designed for read-only root filesystems; writable state is mounted at /app/data, /app/reports, /app/cache and /tmp.
+CMD ["uvicorn","biointel.api.main:app","--app-dir","src","--host","0.0.0.0","--port","8000","--workers","2","--proxy-headers","--forwarded-allow-ips=127.0.0.1"]

@@ -1,0 +1,13 @@
+{
+  "extraction_root": "BioIntel-AI",
+  "instructions": "Extract all four ZIP parts into the same destination folder, then run VERIFY_STEP136_WINDOWS.bat, INSTALL_WINDOWS.bat, optionally START_BACKGROUND_WORKER_WINDOWS.bat, and RUN_APP_SMOOTH_WINDOWS.bat.",
+  "parts": [
+    "BioIntel-AI-Step136-NATIVE-RAW-DATA-REAL-ENGINE-STABILITY-Part1.zip",
+    "BioIntel-AI-Step136-NATIVE-RAW-DATA-REAL-ENGINE-STABILITY-Part2.zip",
+    "BioIntel-AI-Step136-NATIVE-RAW-DATA-REAL-ENGINE-STABILITY-Part3.zip",
+    "BioIntel-AI-Step136-NATIVE-RAW-DATA-REAL-ENGINE-STABILITY-Part4.zip"
+  ],
+  "release_boundary": "Native parsing, checksum-bound staging, background execution and readiness checks are implemented. External executables, licensed references and independent scientific validation are not fabricated or bundled.",
+  "schema": "biointel.step136.package-split.v1",
+  "version": "13.2.0"
+}

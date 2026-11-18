@@ -1,0 +1,60 @@
+{
+  "capabilities": [
+    {
+      "capability": "canonical normalized SQLite database",
+      "status": "IMPLEMENTED_AND_VERIFIED"
+    },
+    {
+      "capability": "publication and preprint adapters",
+      "status": "IMPLEMENTED_REQUIRES_EXTERNAL_VALIDATION"
+    },
+    {
+      "capability": "managed RSS/Atom news",
+      "status": "IMPLEMENTED_REQUIRES_EXTERNAL_VALIDATION"
+    },
+    {
+      "capability": "persistent hidden scheduler",
+      "status": "IMPLEMENTED_AND_VERIFIED"
+    },
+    {
+      "capability": "classification fallback",
+      "note": "deterministic rules, not represented as validated AI",
+      "status": "IMPLEMENTED_AND_VERIFIED"
+    },
+    {
+      "capability": "DOI/PMID/title deduplication and source clustering",
+      "status": "IMPLEMENTED_AND_VERIFIED"
+    },
+    {
+      "capability": "in-app delivery",
+      "status": "IMPLEMENTED_AND_VERIFIED"
+    },
+    {
+      "capability": "Connect delivery",
+      "status": "IMPLEMENTED_AND_VERIFIED"
+    },
+    {
+      "capability": "Education Home delivery",
+      "status": "CONFIGURATION_REQUIRED"
+    },
+    {
+      "capability": "desktop/email/institution delivery",
+      "status": "CONFIGURATION_REQUIRED"
+    },
+    {
+      "capability": "Shiro/Classroom/Academy/Studio/Research drafts",
+      "status": "IMPLEMENTED_AND_VERIFIED"
+    },
+    {
+      "capability": "PostgreSQL deployment",
+      "note": "SQLite is canonical for this local-first Windows release.",
+      "status": "NOT_IMPLEMENTED"
+    },
+    {
+      "capability": "external live provider validation",
+      "note": "Deterministic qualification intentionally did not depend on unrestricted internet.",
+      "status": "BLOCKED_WITH_EXACT_REASON"
+    }
+  ],
+  "generated_at": "2026-07-30T16:33:17+00:00"
+}

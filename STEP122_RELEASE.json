@@ -1,0 +1,26 @@
+{
+  "schema": "biointel.step122.release.v1",
+  "step": 122,
+  "version": "12.2.0",
+  "name": "Real Protein Design Execution",
+  "upgraded_module": "AI Protein Design & Mutation Engineering Lab",
+  "protected_backends": [
+    "ProteinMPNN",
+    "RFdiffusion",
+    "ColabFold",
+    "FoldX",
+    "RosettaScripts"
+  ],
+  "controls": [
+    "immutable input staging",
+    "input and output SHA-256 evidence",
+    "model asset integrity and licence registry",
+    "bounded backend-specific parameters",
+    "CPU, memory, disk and CUDA preflight",
+    "persistent checkpoints and resume",
+    "audited argument-vector subprocess execution",
+    "candidate and confidence output parsing",
+    "scientific and clinical release blocking"
+  ],
+  "external_boundary": "Official/local model weights, licences, compatible hardware and experimental validation remain project responsibilities."
+}

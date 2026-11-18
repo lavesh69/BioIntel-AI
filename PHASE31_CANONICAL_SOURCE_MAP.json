@@ -1,0 +1,1520 @@
+{
+  "schema": "biointel.phase31.canonical-source-map.v1",
+  "generated_at_utc": "2026-07-30T09:42:30.694031+00:00",
+  "canonical_root": "C:\\Users\\lavesh dobriyal\\Documents\\Codex\\2026-07-30\\files-mentioned-by-the-user-biointel\\work\\phase23_30_source\\BioIntel-Step220",
+  "authority_rule": "Only this canonical root may receive Phase 31-35 source changes. Other roots are immutable backups, runtime environments, or disposable test evidence.",
+  "project_roots": [
+    {
+      "path": "C:\\Users\\lavesh dobriyal\\Documents\\Codex\\2026-07-30\\files-mentioned-by-the-user-biointel\\work\\assembled\\BioIntel-Step220",
+      "purpose": "legacy_runtime_and_python_environment",
+      "canonical": false,
+      "version": "15.6.0",
+      "build_number": "Step220-V20.5-Phase16-R2.1-Install-Hotfix",
+      "writable_authority": false
+    },
+    {
+      "path": "C:\\Users\\lavesh dobriyal\\Documents\\Codex\\2026-07-30\\files-mentioned-by-the-user-biointel\\work\\final_extract_smoke_localappdata\\BioIntelAI\\InstallSource\\Education-Phase23-30-26887-30142\\BioIntel-Step220",
+      "purpose": "disposable_test_or_extraction_evidence",
+      "canonical": false,
+      "version": "15.6.0",
+      "build_number": "Step220-V20.5-Phase23-30-Enterprise-R1",
+      "writable_authority": false
+    },
+    {
+      "path": "C:\\Users\\lavesh dobriyal\\Documents\\Codex\\2026-07-30\\files-mentioned-by-the-user-biointel\\work\\phase17_22_changes_backup_final",
+      "purpose": "unknown_copy",
+      "canonical": false,
+      "version": "15.6.0",
+      "build_number": "Step220-V20.5-Phase16-R2.1-Install-Hotfix",
+      "writable_authority": false
+    },
+    {
+      "path": "C:\\Users\\lavesh dobriyal\\Documents\\Codex\\2026-07-30\\files-mentioned-by-the-user-biointel\\work\\phase23_30_source\\BioIntel-Step220",
+      "purpose": "canonical_development_source",
+      "canonical": true,
+      "version": "15.6.0",
+      "build_number": "Step220-V20.5-Phase23-30-Enterprise-R1",
+      "writable_authority": true
+    },
+    {
+      "path": "C:\\Users\\lavesh dobriyal\\Documents\\Codex\\2026-07-30\\files-mentioned-by-the-user-biointel\\work\\phase31_baseline_test_tree\\BioIntel-Step220",
+      "purpose": "disposable_test_or_extraction_evidence",
+      "canonical": false,
+      "version": "15.6.0",
+      "build_number": "Step220-V20.5-Phase23-30-Enterprise-R1",
+      "writable_authority": false
+    },
+    {
+      "path": "C:\\Users\\lavesh dobriyal\\Documents\\Codex\\2026-07-30\\files-mentioned-by-the-user-biointel\\work\\postphase23_test_tree_r1\\BioIntel-Step220",
+      "purpose": "disposable_test_or_extraction_evidence",
+      "canonical": false,
+      "version": "15.6.0",
+      "build_number": "Step220-V20.5-Phase23-30-Enterprise-R1",
+      "writable_authority": false
+    },
+    {
+      "path": "C:\\Users\\lavesh dobriyal\\Documents\\Codex\\2026-07-30\\files-mentioned-by-the-user-biointel\\work\\prephase23_test_tree\\BioIntel-Step220",
+      "purpose": "disposable_test_or_extraction_evidence",
+      "canonical": false,
+      "version": "15.6.0",
+      "build_number": "Step220-V20.5-Phase16-R2.1-Install-Hotfix",
+      "writable_authority": false
+    }
+  ],
+  "project_root_count": 7,
+  "python_file_count": 1914,
+  "streamlit_page_count": 356,
+  "duplicate_inventory": {
+    "exact_duplicate_groups": [
+      {
+        "sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+        "paths": [
+          "src/biointel/shiro/api/__init__.py",
+          "src/biointel/shiro/citations/__init__.py",
+          "src/biointel/shiro/core/__init__.py",
+          "src/biointel/shiro/generation/__init__.py",
+          "src/biointel/shiro/ingestion/__init__.py",
+          "src/biointel/shiro/integrations/__init__.py",
+          "src/biointel/shiro/retrieval/__init__.py",
+          "src/biointel/shiro/storage/__init__.py",
+          "src/biointel/shiro/ui/__init__.py"
+        ]
+      },
+      {
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "paths": [
+          "src/biointel/chemistry/__init__.py",
+          "src/biointel/dti/__init__.py",
+          "src/biointel/training/__init__.py"
+        ]
+      },
+      {
+        "sha256": "ec1ccaac1f1ca5ba1fbda316609e7e7e07e976999081363bbf11cfa2a4b81a09",
+        "paths": [
+          "src/biointel/bioinformatics_peak_v137/tools.py",
+          "src/biointel/bioinformatics_peak_v138/tools.py"
+        ]
+      },
+      {
+        "sha256": "ee714e18211530795d4ab53e3740e41fed1bf2237c54eedc787c8bda79210df2",
+        "paths": [
+          "scripts/run_biointel_step196.py",
+          "scripts/run_biointel_step196_runtime.py"
+        ]
+      }
+    ],
+    "same_filename_groups": [
+      {
+        "filename": "__init__.py",
+        "paths": [
+          "scripts/__init__.py",
+          "src/biointel/__init__.py",
+          "src/biointel/api/__init__.py",
+          "src/biointel/assets/__init__.py",
+          "src/biointel/assurance/__init__.py",
+          "src/biointel/authenticity_v162/__init__.py",
+          "src/biointel/automation/__init__.py",
+          "src/biointel/bioinformatics/__init__.py",
+          "src/biointel/bioinformatics_peak_v137/__init__.py",
+          "src/biointel/bioinformatics_peak_v138/__init__.py",
+          "src/biointel/biotech/__init__.py",
+          "src/biointel/chemistry/__init__.py",
+          "src/biointel/clinical/__init__.py",
+          "src/biointel/compliance/__init__.py",
+          "src/biointel/connect/__init__.py",
+          "src/biointel/connected/__init__.py",
+          "src/biointel/contextual_research_v196/__init__.py",
+          "src/biointel/data/__init__.py",
+          "src/biointel/database/__init__.py",
+          "src/biointel/demo_assurance_v184/__init__.py",
+          "src/biointel/demo_coverage_v209/__init__.py",
+          "src/biointel/discovery/__init__.py",
+          "src/biointel/discovery_platform/__init__.py",
+          "src/biointel/documents/__init__.py",
+          "src/biointel/dti/__init__.py",
+          "src/biointel/education/__init__.py",
+          "src/biointel/education/components/__init__.py",
+          "src/biointel/education/demo/__init__.py",
+          "src/biointel/education/phase15_runtime/__init__.py",
+          "src/biointel/education/phase16_runtime/__init__.py",
+          "src/biointel/education/phase17_22/__init__.py",
+          "src/biointel/education/phase23_30/__init__.py",
+          "src/biointel/engine_audit_v196/__init__.py",
+          "src/biointel/engine_platform_v196/__init__.py",
+          "src/biointel/engineering/__init__.py",
+          "src/biointel/enterprise/__init__.py",
+          "src/biointel/environment_v175/__init__.py",
+          "src/biointel/excellence_v163/__init__.py",
+          "src/biointel/expansion/__init__.py",
+          "src/biointel/external_demo_v182/__init__.py",
+          "src/biointel/external_readiness_v181/__init__.py",
+          "src/biointel/external_v172/__init__.py",
+          "src/biointel/fair/__init__.py",
+          "src/biointel/final_v169/__init__.py",
+          "src/biointel/final_v173/__init__.py",
+          "src/biointel/genomics/__init__.py",
+          "src/biointel/governance/__init__.py",
+          "src/biointel/innovation/__init__.py",
+          "src/biointel/innovation/professional/__init__.py",
+          "src/biointel/integrations/__init__.py",
+          "src/biointel/intelligence/__init__.py",
+          "src/biointel/internet/__init__.py",
+          "src/biointel/io/__init__.py",
+          "src/biointel/jobs/__init__.py",
+          "src/biointel/live_workspace_v210/__init__.py",
+          "src/biointel/major_module_standard_v188/__init__.py",
+          "src/biointel/mandatory_completion_v193/__init__.py",
+          "src/biointel/maturity/__init__.py",
+          "src/biointel/microbiology/__init__.py",
+          "src/biointel/model_qualification/__init__.py",
+          "src/biointel/models_v171/__init__.py",
+          "src/biointel/module_features_v208/__init__.py",
+          "src/biointel/module_runtime_v207/__init__.py",
+          "src/biointel/multitenancy/__init__.py",
+          "src/biointel/native/__init__.py",
+          "src/biointel/neuro_cns/__init__.py",
+          "src/biointel/nextgen/__init__.py",
+          "src/biointel/observability/__init__.py",
+          "src/biointel/omics/__init__.py",
+          "src/biointel/operational_assurance_v185/__init__.py",
+          "src/biointel/operational_v164/__init__.py",
+          "src/biointel/operations/__init__.py",
+          "src/biointel/page_excellence_v187/__init__.py",
+          "src/biointel/peak_potential/__init__.py",
+          "src/biointel/platform_completion_v186/__init__.py",
+          "src/biointel/portfolio/__init__.py",
+          "src/biointel/portfolio_demo_v183/__init__.py",
+          "src/biointel/priority_v165/__init__.py",
+          "src/biointel/priority_v166/__init__.py",
+          "src/biointel/priority_v167/__init__.py",
+          "src/biointel/priority_v168/__init__.py",
+          "src/biointel/privacy/__init__.py",
+          "src/biointel/production/__init__.py",
+          "src/biointel/projects/__init__.py",
+          "src/biointel/proof_gates_v10/__init__.py",
+          "src/biointel/proteomics/__init__.py",
+          "src/biointel/quality/__init__.py",
+          "src/biointel/quality10/__init__.py",
+          "src/biointel/quality_v160/__init__.py",
+          "src/biointel/readiness_v161/__init__.py",
+          "src/biointel/realworld/__init__.py",
+          "src/biointel/realworld_v174/__init__.py",
+          "src/biointel/reference_assets/__init__.py",
+          "src/biointel/reference_lifecycle/__init__.py",
+          "src/biointel/release/__init__.py",
+          "src/biointel/release_integrity_v192/__init__.py",
+          "src/biointel/reports/__init__.py",
+          "src/biointel/reproducibility/__init__.py",
+          "src/biointel/research/__init__.py",
+          "src/biointel/research_planning/__init__.py",
+          "src/biointel/runtime_v170/__init__.py",
+          "src/biointel/scientific/__init__.py",
+          "src/biointel/scientific_depth/__init__.py",
+          "src/biointel/scientific_execution_v190/__init__.py",
+          "src/biointel/scientific_resources_v209/__init__.py",
+          "src/biointel/security/__init__.py",
+          "src/biointel/sequence/__init__.py",
+          "src/biointel/shiro/__init__.py",
+          "src/biointel/shiro/api/__init__.py",
+          "src/biointel/shiro/citations/__init__.py",
+          "src/biointel/shiro/core/__init__.py",
+          "src/biointel/shiro/generation/__init__.py",
+          "src/biointel/shiro/generation/providers/__init__.py",
+          "src/biointel/shiro/ingestion/__init__.py",
+          "src/biointel/shiro/integrations/__init__.py",
+          "src/biointel/shiro/retrieval/__init__.py",
+          "src/biointel/shiro/storage/__init__.py",
+          "src/biointel/shiro/ui/__init__.py",
+          "src/biointel/stability_v145/__init__.py",
+          "src/biointel/stability_v159/__init__.py",
+          "src/biointel/statistics/__init__.py",
+          "src/biointel/step101/__init__.py",
+          "src/biointel/step121/__init__.py",
+          "src/biointel/step122/__init__.py",
+          "src/biointel/step123/__init__.py",
+          "src/biointel/step127/__init__.py",
+          "src/biointel/structural/__init__.py",
+          "src/biointel/study_design/__init__.py",
+          "src/biointel/synthetic/__init__.py",
+          "src/biointel/systems/__init__.py",
+          "src/biointel/target_modules_v176/__init__.py",
+          "src/biointel/target_modules_v177/__init__.py",
+          "src/biointel/target_modules_v178/__init__.py",
+          "src/biointel/target_modules_v179/__init__.py",
+          "src/biointel/target_modules_v180/__init__.py",
+          "src/biointel/tools/__init__.py",
+          "src/biointel/training/__init__.py",
+          "src/biointel/transcriptomics/__init__.py",
+          "src/biointel/ui/__init__.py",
+          "src/biointel/ui/dragon_universe/__init__.py",
+          "src/biointel/universal_platform_v189/__init__.py",
+          "src/biointel/utils/__init__.py",
+          "src/biointel/validation/__init__.py"
+        ]
+      },
+      {
+        "filename": "catalog.py",
+        "paths": [
+          "src/biointel/bioinformatics_peak_v137/catalog.py",
+          "src/biointel/bioinformatics_peak_v138/catalog.py",
+          "src/biointel/contextual_research_v196/catalog.py",
+          "src/biointel/demo_assurance_v184/catalog.py",
+          "src/biointel/engine_audit_v196/catalog.py",
+          "src/biointel/engine_platform_v196/catalog.py",
+          "src/biointel/environment_v175/catalog.py",
+          "src/biointel/expansion/catalog.py",
+          "src/biointel/external_readiness_v181/catalog.py",
+          "src/biointel/external_v172/catalog.py",
+          "src/biointel/final_v173/catalog.py",
+          "src/biointel/major_module_standard_v188/catalog.py",
+          "src/biointel/mandatory_completion_v193/catalog.py",
+          "src/biointel/models_v171/catalog.py",
+          "src/biointel/neuro_cns/catalog.py",
+          "src/biointel/nextgen/catalog.py",
+          "src/biointel/operational_assurance_v185/catalog.py",
+          "src/biointel/operational_v164/catalog.py",
+          "src/biointel/page_excellence_v187/catalog.py",
+          "src/biointel/peak_potential/catalog.py",
+          "src/biointel/platform_completion_v186/catalog.py",
+          "src/biointel/portfolio_demo_v183/catalog.py",
+          "src/biointel/projects/catalog.py",
+          "src/biointel/proof_gates_v10/catalog.py",
+          "src/biointel/readiness_v161/catalog.py",
+          "src/biointel/realworld_v174/catalog.py",
+          "src/biointel/research_planning/catalog.py",
+          "src/biointel/runtime_v170/catalog.py",
+          "src/biointel/scientific_execution_v190/catalog.py",
+          "src/biointel/scientific_resources_v209/catalog.py",
+          "src/biointel/target_modules_v176/catalog.py",
+          "src/biointel/target_modules_v177/catalog.py",
+          "src/biointel/target_modules_v178/catalog.py",
+          "src/biointel/target_modules_v179/catalog.py",
+          "src/biointel/target_modules_v180/catalog.py",
+          "src/biointel/universal_platform_v189/catalog.py"
+        ]
+      },
+      {
+        "filename": "ui.py",
+        "paths": [
+          "src/biointel/connect/ui.py",
+          "src/biointel/contextual_research_v196/ui.py",
+          "src/biointel/demo_assurance_v184/ui.py",
+          "src/biointel/demo_coverage_v209/ui.py",
+          "src/biointel/education/phase17_22/ui.py",
+          "src/biointel/education/phase23_30/ui.py",
+          "src/biointel/education/ui.py",
+          "src/biointel/engine_platform_v196/ui.py",
+          "src/biointel/external_demo_v182/ui.py",
+          "src/biointel/external_readiness_v181/ui.py",
+          "src/biointel/live_workspace_v210/ui.py",
+          "src/biointel/major_module_standard_v188/ui.py",
+          "src/biointel/mandatory_completion_v193/ui.py",
+          "src/biointel/module_features_v208/ui.py",
+          "src/biointel/module_runtime_v207/ui.py",
+          "src/biointel/neuro_cns/ui.py",
+          "src/biointel/operational_assurance_v185/ui.py",
+          "src/biointel/page_excellence_v187/ui.py",
+          "src/biointel/peak_potential/ui.py",
+          "src/biointel/platform_completion_v186/ui.py",
+          "src/biointel/portfolio_demo_v183/ui.py",
+          "src/biointel/proof_gates_v10/ui.py",
+          "src/biointel/release_integrity_v192/ui.py",
+          "src/biointel/scientific_execution_v190/ui.py",
+          "src/biointel/scientific_resources_v209/ui.py",
+          "src/biointel/step127/ui.py",
+          "src/biointel/synthetic/ui.py",
+          "src/biointel/target_modules_v176/ui.py",
+          "src/biointel/target_modules_v177/ui.py",
+          "src/biointel/target_modules_v178/ui.py",
+          "src/biointel/target_modules_v179/ui.py",
+          "src/biointel/target_modules_v180/ui.py",
+          "src/biointel/universal_platform_v189/ui.py"
+        ]
+      },
+      {
+        "filename": "qualification.py",
+        "paths": [
+          "src/biointel/demo_assurance_v184/qualification.py",
+          "src/biointel/engine_platform_v196/qualification.py",
+          "src/biointel/environment_v175/qualification.py",
+          "src/biointel/external_demo_v182/qualification.py",
+          "src/biointel/external_readiness_v181/qualification.py",
+          "src/biointel/final_v169/qualification.py",
+          "src/biointel/major_module_standard_v188/qualification.py",
+          "src/biointel/mandatory_completion_v193/qualification.py",
+          "src/biointel/models_v171/qualification.py",
+          "src/biointel/native/qualification.py",
+          "src/biointel/operational_assurance_v185/qualification.py",
+          "src/biointel/operational_v164/qualification.py",
+          "src/biointel/page_excellence_v187/qualification.py",
+          "src/biointel/platform_completion_v186/qualification.py",
+          "src/biointel/portfolio_demo_v183/qualification.py",
+          "src/biointel/priority_v165/qualification.py",
+          "src/biointel/priority_v166/qualification.py",
+          "src/biointel/priority_v167/qualification.py",
+          "src/biointel/priority_v168/qualification.py",
+          "src/biointel/runtime_v170/qualification.py",
+          "src/biointel/scientific_execution_v190/qualification.py",
+          "src/biointel/target_modules_v176/qualification.py",
+          "src/biointel/target_modules_v177/qualification.py",
+          "src/biointel/target_modules_v178/qualification.py",
+          "src/biointel/target_modules_v179/qualification.py",
+          "src/biointel/target_modules_v180/qualification.py",
+          "src/biointel/universal_platform_v189/qualification.py"
+        ]
+      },
+      {
+        "filename": "service.py",
+        "paths": [
+          "src/biointel/contextual_research_v196/service.py",
+          "src/biointel/discovery_platform/service.py",
+          "src/biointel/documents/service.py",
+          "src/biointel/education/phase15_runtime/service.py",
+          "src/biointel/education/phase16_runtime/service.py",
+          "src/biointel/education/phase17_22/service.py",
+          "src/biointel/education/phase23_30/service.py",
+          "src/biointel/scientific_resources_v209/service.py",
+          "src/biointel/shiro/generation/service.py",
+          "src/biointel/shiro/ingestion/service.py",
+          "src/biointel/shiro/retrieval/service.py",
+          "src/biointel/synthetic/service.py"
+        ]
+      },
+      {
+        "filename": "assurance.py",
+        "paths": [
+          "src/biointel/environment_v175/assurance.py",
+          "src/biointel/external_v172/assurance.py",
+          "src/biointel/final_v169/assurance.py",
+          "src/biointel/final_v173/assurance.py",
+          "src/biointel/models_v171/assurance.py",
+          "src/biointel/priority_v165/assurance.py",
+          "src/biointel/priority_v166/assurance.py",
+          "src/biointel/priority_v167/assurance.py",
+          "src/biointel/priority_v168/assurance.py",
+          "src/biointel/quality_v160/assurance.py",
+          "src/biointel/realworld_v174/assurance.py"
+        ]
+      },
+      {
+        "filename": "assets.py",
+        "paths": [
+          "src/biointel/environment_v175/assets.py",
+          "src/biointel/external_v172/assets.py",
+          "src/biointel/final_v169/assets.py",
+          "src/biointel/final_v173/assets.py",
+          "src/biointel/operational_v164/assets.py",
+          "src/biointel/priority_v165/assets.py",
+          "src/biointel/priority_v166/assets.py",
+          "src/biointel/priority_v167/assets.py",
+          "src/biointel/priority_v168/assets.py",
+          "src/biointel/realworld_v174/assets.py"
+        ]
+      },
+      {
+        "filename": "engine.py",
+        "paths": [
+          "src/biointel/demo_assurance_v184/engine.py",
+          "src/biointel/major_module_standard_v188/engine.py",
+          "src/biointel/mandatory_completion_v193/engine.py",
+          "src/biointel/neuro_cns/engine.py",
+          "src/biointel/operational_assurance_v185/engine.py",
+          "src/biointel/page_excellence_v187/engine.py",
+          "src/biointel/platform_completion_v186/engine.py",
+          "src/biointel/step127/engine.py",
+          "src/biointel/study_design/engine.py"
+        ]
+      },
+      {
+        "filename": "generator.py",
+        "paths": [
+          "src/biointel/demo_assurance_v184/generator.py",
+          "src/biointel/external_demo_v182/generator.py",
+          "src/biointel/major_module_standard_v188/generator.py",
+          "src/biointel/operational_assurance_v185/generator.py",
+          "src/biointel/page_excellence_v187/generator.py",
+          "src/biointel/platform_completion_v186/generator.py",
+          "src/biointel/portfolio_demo_v183/generator.py",
+          "src/biointel/scientific_execution_v190/generator.py",
+          "src/biointel/universal_platform_v189/generator.py"
+        ]
+      },
+      {
+        "filename": "validators.py",
+        "paths": [
+          "src/biointel/demo_assurance_v184/validators.py",
+          "src/biointel/external_demo_v182/validators.py",
+          "src/biointel/external_readiness_v181/validators.py",
+          "src/biointel/major_module_standard_v188/validators.py",
+          "src/biointel/operational_assurance_v185/validators.py",
+          "src/biointel/page_excellence_v187/validators.py",
+          "src/biointel/platform_completion_v186/validators.py",
+          "src/biointel/portfolio_demo_v183/validators.py",
+          "src/biointel/sequence/validators.py"
+        ]
+      },
+      {
+        "filename": "registry.py",
+        "paths": [
+          "src/biointel/clinical/registry.py",
+          "src/biointel/connected/registry.py",
+          "src/biointel/discovery/registry.py",
+          "src/biointel/external_v172/registry.py",
+          "src/biointel/final_v169/registry.py",
+          "src/biointel/proof_gates_v10/registry.py",
+          "src/biointel/quality10/registry.py",
+          "src/biointel/synthetic/registry.py"
+        ]
+      },
+      {
+        "filename": "api.py",
+        "paths": [
+          "src/biointel/connect/api.py",
+          "src/biointel/discovery_platform/api.py",
+          "src/biointel/education/api.py",
+          "src/biointel/education/phase17_22/api.py",
+          "src/biointel/education/phase23_30/api.py",
+          "src/biointel/engine_platform_v196/api.py",
+          "src/biointel/live_workspace_v210/api.py"
+        ]
+      },
+      {
+        "filename": "runtime.py",
+        "paths": [
+          "src/biointel/stability_v145/runtime.py",
+          "src/biointel/target_modules_v176/runtime.py",
+          "src/biointel/target_modules_v177/runtime.py",
+          "src/biointel/target_modules_v178/runtime.py",
+          "src/biointel/target_modules_v179/runtime.py",
+          "src/biointel/target_modules_v180/runtime.py",
+          "src/biointel/tools/runtime.py"
+        ]
+      },
+      {
+        "filename": "advanced.py",
+        "paths": [
+          "src/biointel/live_workspace_v210/advanced.py",
+          "src/biointel/neuro_cns/advanced.py",
+          "src/biointel/proteomics/advanced.py",
+          "src/biointel/sequence/advanced.py",
+          "src/biointel/structural/advanced.py",
+          "src/biointel/transcriptomics/advanced.py"
+        ]
+      },
+      {
+        "filename": "models.py",
+        "paths": [
+          "src/biointel/connected/models.py",
+          "src/biointel/discovery_platform/models.py",
+          "src/biointel/documents/models.py",
+          "src/biointel/quality10/models.py",
+          "src/biointel/shiro/models.py",
+          "src/biointel/step127/models.py"
+        ]
+      },
+      {
+        "filename": "renderer.py",
+        "paths": [
+          "src/biointel/bioinformatics_peak_v137/renderer.py",
+          "src/biointel/bioinformatics_peak_v138/renderer.py",
+          "src/biointel/expansion/renderer.py",
+          "src/biointel/nextgen/renderer.py",
+          "src/biointel/research_planning/renderer.py",
+          "src/biointel/scientific_depth/renderer.py"
+        ]
+      },
+      {
+        "filename": "core.py",
+        "paths": [
+          "src/biointel/database/core.py",
+          "src/biointel/demo_coverage_v209/core.py",
+          "src/biointel/live_workspace_v210/core.py",
+          "src/biointel/module_runtime_v207/core.py",
+          "src/biointel/synthetic/core.py"
+        ]
+      },
+      {
+        "filename": "readiness.py",
+        "paths": [
+          "src/biointel/clinical/readiness.py",
+          "src/biointel/data/readiness.py",
+          "src/biointel/engineering/readiness.py",
+          "src/biointel/production/readiness.py",
+          "src/biointel/research/readiness.py"
+        ]
+      },
+      {
+        "filename": "schema.py",
+        "paths": [
+          "src/biointel/clinical/schema.py",
+          "src/biointel/education/phase15_runtime/schema.py",
+          "src/biointel/education/phase16_runtime/schema.py",
+          "src/biointel/education/phase17_22/schema.py",
+          "src/biointel/education/phase23_30/schema.py"
+        ]
+      },
+      {
+        "filename": "scientific.py",
+        "paths": [
+          "src/biointel/bioinformatics_peak_v137/scientific.py",
+          "src/biointel/bioinformatics_peak_v138/scientific.py",
+          "src/biointel/education/phase16_runtime/scientific.py",
+          "src/biointel/nextgen/scientific.py",
+          "src/biointel/research_planning/scientific.py"
+        ]
+      },
+      {
+        "filename": "visuals.py",
+        "paths": [
+          "src/biointel/bioinformatics_peak_v137/visuals.py",
+          "src/biointel/bioinformatics_peak_v138/visuals.py",
+          "src/biointel/module_features_v208/visuals.py",
+          "src/biointel/neuro_cns/visuals.py",
+          "src/biointel/research_planning/visuals.py"
+        ]
+      },
+      {
+        "filename": "workflow.py",
+        "paths": [
+          "src/biointel/discovery/workflow.py",
+          "src/biointel/discovery_platform/workflow.py",
+          "src/biointel/innovation/professional/workflow.py",
+          "src/biointel/peak_potential/workflow.py",
+          "src/biointel/ui/workflow.py"
+        ]
+      },
+      {
+        "filename": "database.py",
+        "paths": [
+          "src/biointel/connect/database.py",
+          "src/biointel/education/database.py",
+          "src/biointel/priority_v168/database.py",
+          "src/biointel/stability_v145/database.py"
+        ]
+      },
+      {
+        "filename": "portfolio.py",
+        "paths": [
+          "src/biointel/education/phase23_30/portfolio.py",
+          "src/biointel/module_runtime_v207/portfolio.py",
+          "src/biointel/projects/portfolio.py",
+          "src/biointel/scientific_depth/portfolio.py"
+        ]
+      },
+      {
+        "filename": "provenance.py",
+        "paths": [
+          "src/biointel/discovery_platform/provenance.py",
+          "src/biointel/neuro_cns/provenance.py",
+          "src/biointel/provenance.py",
+          "src/biointel/quality10/provenance.py"
+        ]
+      },
+      {
+        "filename": "assessment.py",
+        "paths": [
+          "src/biointel/authenticity_v162/assessment.py",
+          "src/biointel/readiness_v161/assessment.py",
+          "src/biointel/scientific_depth/assessment.py"
+        ]
+      },
+      {
+        "filename": "cache.py",
+        "paths": [
+          "src/biointel/assurance/cache.py",
+          "src/biointel/integrations/cache.py",
+          "src/biointel/stability_v145/cache.py"
+        ]
+      },
+      {
+        "filename": "cli.py",
+        "paths": [
+          "src/biointel/cli.py",
+          "src/biointel/discovery_platform/cli.py",
+          "src/biointel/synthetic/cli.py"
+        ]
+      },
+      {
+        "filename": "config.py",
+        "paths": [
+          "src/biointel/connected/config.py",
+          "src/biointel/production/config.py",
+          "src/biointel/shiro/config.py"
+        ]
+      },
+      {
+        "filename": "contracts.py",
+        "paths": [
+          "src/biointel/bioinformatics_peak_v138/contracts.py",
+          "src/biointel/excellence_v163/contracts.py",
+          "src/biointel/quality_v160/contracts.py"
+        ]
+      },
+      {
+        "filename": "diagnostics.py",
+        "paths": [
+          "src/biointel/connected/diagnostics.py",
+          "src/biointel/stability_v159/diagnostics.py",
+          "src/biointel/utils/diagnostics.py"
+        ]
+      },
+      {
+        "filename": "evidence.py",
+        "paths": [
+          "src/biointel/realworld/evidence.py",
+          "src/biointel/shiro/integrations/evidence.py",
+          "src/biointel/step121/evidence.py"
+        ]
+      },
+      {
+        "filename": "execution.py",
+        "paths": [
+          "src/biointel/discovery_platform/execution.py",
+          "src/biointel/module_features_v208/execution.py",
+          "src/biointel/scientific_execution_v190/execution.py"
+        ]
+      },
+      {
+        "filename": "ingestion.py",
+        "paths": [
+          "src/biointel/discovery_platform/ingestion.py",
+          "src/biointel/module_features_v208/ingestion.py",
+          "src/biointel/neuro_cns/ingestion.py"
+        ]
+      },
+      {
+        "filename": "io.py",
+        "paths": [
+          "src/biointel/bioinformatics_peak_v137/io.py",
+          "src/biointel/bioinformatics_peak_v138/io.py",
+          "src/biointel/research_planning/io.py"
+        ]
+      },
+      {
+        "filename": "jobs.py",
+        "paths": [
+          "src/biointel/neuro_cns/jobs.py",
+          "src/biointel/shiro/core/jobs.py",
+          "src/biointel/stability_v145/jobs.py"
+        ]
+      },
+      {
+        "filename": "manager.py",
+        "paths": [
+          "src/biointel/engine_platform_v196/manager.py",
+          "src/biointel/reference_assets/manager.py",
+          "src/biointel/reference_lifecycle/manager.py"
+        ]
+      },
+      {
+        "filename": "module_assurance.py",
+        "paths": [
+          "src/biointel/authenticity_v162/module_assurance.py",
+          "src/biointel/excellence_v163/module_assurance.py",
+          "src/biointel/operational_v164/module_assurance.py"
+        ]
+      },
+      {
+        "filename": "orchestrator.py",
+        "paths": [
+          "src/biointel/final_v173/orchestrator.py",
+          "src/biointel/realworld_v174/orchestrator.py",
+          "src/biointel/shiro/core/orchestrator.py"
+        ]
+      },
+      {
+        "filename": "performance.py",
+        "paths": [
+          "src/biointel/observability/performance.py",
+          "src/biointel/step101/performance.py",
+          "src/biointel/ui/performance.py"
+        ]
+      },
+      {
+        "filename": "reports.py",
+        "paths": [
+          "src/biointel/discovery_platform/reports.py",
+          "src/biointel/shiro/integrations/reports.py",
+          "src/biointel/step101/reports.py"
+        ]
+      },
+      {
+        "filename": "schemas.py",
+        "paths": [
+          "src/biointel/api/schemas.py",
+          "src/biointel/neuro_cns/schemas.py",
+          "src/biointel/shiro/api/schemas.py"
+        ]
+      },
+      {
+        "filename": "services.py",
+        "paths": [
+          "src/biointel/connect/services.py",
+          "src/biointel/engine_platform_v196/services.py",
+          "src/biointel/nextgen/services.py"
+        ]
+      },
+      {
+        "filename": "tools.py",
+        "paths": [
+          "src/biointel/bioinformatics_peak_v137/tools.py",
+          "src/biointel/bioinformatics_peak_v138/tools.py",
+          "src/biointel/connected/tools.py"
+        ]
+      },
+      {
+        "filename": "__main__.py",
+        "paths": [
+          "src/biointel/__main__.py",
+          "src/biointel/synthetic/__main__.py"
+        ]
+      },
+      {
+        "filename": "advanced_ui.py",
+        "paths": [
+          "src/biointel/connect/advanced_ui.py",
+          "src/biointel/live_workspace_v210/advanced_ui.py"
+        ]
+      },
+      {
+        "filename": "background.py",
+        "paths": [
+          "src/biointel/bioinformatics_peak_v138/background.py",
+          "src/biointel/step101/background.py"
+        ]
+      },
+      {
+        "filename": "base.py",
+        "paths": [
+          "src/biointel/education/phase23_30/base.py",
+          "src/biointel/shiro/generation/providers/base.py"
+        ]
+      },
+      {
+        "filename": "benchmark_suite.py",
+        "paths": [
+          "src/biointel/authenticity_v162/benchmark_suite.py",
+          "src/biointel/training/benchmark_suite.py"
+        ]
+      },
+      {
+        "filename": "bootstrap.py",
+        "paths": [
+          "scripts/bootstrap.py",
+          "src/biointel/database/bootstrap.py"
+        ]
+      },
+      {
+        "filename": "bundle.py",
+        "paths": [
+          "src/biointel/peak_potential/bundle.py",
+          "src/biointel/reproducibility/bundle.py"
+        ]
+      },
+      {
+        "filename": "checks.py",
+        "paths": [
+          "src/biointel/target_modules_v179/checks.py",
+          "src/biointel/target_modules_v180/checks.py"
+        ]
+      },
+      {
+        "filename": "collaboration.py",
+        "paths": [
+          "src/biointel/connect/collaboration.py",
+          "src/biointel/research_planning/collaboration.py"
+        ]
+      },
+      {
+        "filename": "consistency.py",
+        "paths": [
+          "src/biointel/neuro_cns/consistency.py",
+          "src/biointel/research_planning/consistency.py"
+        ]
+      },
+      {
+        "filename": "constants.py",
+        "paths": [
+          "src/biointel/discovery_platform/constants.py",
+          "src/biointel/utils/constants.py"
+        ]
+      },
+      {
+        "filename": "demos.py",
+        "paths": [
+          "src/biointel/module_features_v208/demos.py",
+          "src/biointel/neuro_cns/demos.py"
+        ]
+      },
+      {
+        "filename": "design.py",
+        "paths": [
+          "src/biointel/genomics/design.py",
+          "src/biointel/innovation/professional/design.py"
+        ]
+      },
+      {
+        "filename": "discovery.py",
+        "paths": [
+          "src/biointel/connect/discovery.py",
+          "src/biointel/module_features_v208/discovery.py"
+        ]
+      },
+      {
+        "filename": "downloader.py",
+        "paths": [
+          "src/biointel/internet/downloader.py",
+          "src/biointel/runtime_v170/downloader.py"
+        ]
+      },
+      {
+        "filename": "engines.py",
+        "paths": [
+          "src/biointel/innovation/engines.py",
+          "src/biointel/native/engines.py"
+        ]
+      },
+      {
+        "filename": "exceptions.py",
+        "paths": [
+          "src/biointel/shiro/exceptions.py",
+          "src/biointel/utils/exceptions.py"
+        ]
+      },
+      {
+        "filename": "generators.py",
+        "paths": [
+          "src/biointel/education/demo/generators.py",
+          "src/biointel/synthetic/generators.py"
+        ]
+      },
+      {
+        "filename": "integration.py",
+        "paths": [
+          "src/biointel/education/phase23_30/integration.py",
+          "src/biointel/omics/integration.py"
+        ]
+      },
+      {
+        "filename": "intelligence.py",
+        "paths": [
+          "src/biointel/documents/intelligence.py",
+          "src/biointel/nextgen/intelligence.py"
+        ]
+      },
+      {
+        "filename": "interoperability.py",
+        "paths": [
+          "src/biointel/bioinformatics_peak_v138/interoperability.py",
+          "src/biointel/research_planning/interoperability.py"
+        ]
+      },
+      {
+        "filename": "knowledge.py",
+        "paths": [
+          "src/biointel/documents/knowledge.py",
+          "src/biointel/innovation/professional/knowledge.py"
+        ]
+      },
+      {
+        "filename": "metrics.py",
+        "paths": [
+          "src/biointel/external_readiness_v181/metrics.py",
+          "src/biointel/observability/metrics.py"
+        ]
+      },
+      {
+        "filename": "middleware.py",
+        "paths": [
+          "src/biointel/api/middleware.py",
+          "src/biointel/multitenancy/middleware.py"
+        ]
+      },
+      {
+        "filename": "native_assurance.py",
+        "paths": [
+          "src/biointel/quality_v160/native_assurance.py",
+          "src/biointel/readiness_v161/native_assurance.py"
+        ]
+      },
+      {
+        "filename": "navigation.py",
+        "paths": [
+          "src/biointel/education/components/navigation.py",
+          "src/biointel/ui/navigation.py"
+        ]
+      },
+      {
+        "filename": "operations.py",
+        "paths": [
+          "src/biointel/connect/operations.py",
+          "src/biointel/discovery_platform/operations.py"
+        ]
+      },
+      {
+        "filename": "panels.py",
+        "paths": [
+          "src/biointel/step121/panels.py",
+          "src/biointel/step122/panels.py"
+        ]
+      },
+      {
+        "filename": "paths.py",
+        "paths": [
+          "src/biointel/education/paths.py",
+          "src/biointel/engine_platform_v196/paths.py"
+        ]
+      },
+      {
+        "filename": "platform.py",
+        "paths": [
+          "src/biointel/education/platform.py",
+          "src/biointel/universal_platform_v189/platform.py"
+        ]
+      },
+      {
+        "filename": "production.py",
+        "paths": [
+          "src/biointel/engine_platform_v196/production.py",
+          "src/biointel/neuro_cns/production.py"
+        ]
+      },
+      {
+        "filename": "projects.py",
+        "paths": [
+          "src/biointel/neuro_cns/projects.py",
+          "src/biointel/shiro/integrations/projects.py"
+        ]
+      },
+      {
+        "filename": "providers.py",
+        "paths": [
+          "src/biointel/connected/providers.py",
+          "src/biointel/education/phase15_runtime/providers.py"
+        ]
+      },
+      {
+        "filename": "quality.py",
+        "paths": [
+          "src/biointel/clinical/quality.py",
+          "src/biointel/peak_potential/quality.py"
+        ]
+      },
+      {
+        "filename": "recommendations.py",
+        "paths": [
+          "src/biointel/bioinformatics/recommendations.py",
+          "src/biointel/neuro_cns/recommendations.py"
+        ]
+      },
+      {
+        "filename": "reporting.py",
+        "paths": [
+          "src/biointel/neuro_cns/reporting.py",
+          "src/biointel/projects/reporting.py"
+        ]
+      },
+      {
+        "filename": "repositories.py",
+        "paths": [
+          "src/biointel/connect/repositories.py",
+          "src/biointel/shiro/storage/repositories.py"
+        ]
+      },
+      {
+        "filename": "research.py",
+        "paths": [
+          "src/biointel/discovery_platform/research.py",
+          "src/biointel/education/phase23_30/research.py"
+        ]
+      },
+      {
+        "filename": "review_store.py",
+        "paths": [
+          "src/biointel/bioinformatics_peak_v138/review_store.py",
+          "src/biointel/research_planning/review_store.py"
+        ]
+      },
+      {
+        "filename": "safety.py",
+        "paths": [
+          "src/biointel/neuro_cns/safety.py",
+          "src/biointel/shiro/core/safety.py"
+        ]
+      },
+      {
+        "filename": "security.py",
+        "paths": [
+          "src/biointel/discovery_platform/security.py",
+          "src/biointel/documents/security.py"
+        ]
+      },
+      {
+        "filename": "storage.py",
+        "paths": [
+          "src/biointel/discovery_platform/storage.py",
+          "src/biointel/multitenancy/storage.py"
+        ]
+      },
+      {
+        "filename": "uncertainty.py",
+        "paths": [
+          "src/biointel/bioinformatics_peak_v138/uncertainty.py",
+          "src/biointel/training/uncertainty.py"
+        ]
+      },
+      {
+        "filename": "visual_intelligence_v132.py",
+        "paths": [
+          "src/biointel/nextgen/visual_intelligence_v132.py",
+          "src/biointel/ui/visual_intelligence_v132.py"
+        ]
+      },
+      {
+        "filename": "workflows.py",
+        "paths": [
+          "src/biointel/education/components/workflows.py",
+          "src/biointel/neuro_cns/workflows.py"
+        ]
+      },
+      {
+        "filename": "workspace.py",
+        "paths": [
+          "src/biointel/discovery_platform/workspace.py",
+          "src/biointel/external_readiness_v181/workspace.py"
+        ]
+      }
+    ],
+    "exact_duplicate_group_count": 4,
+    "same_filename_group_count": 90
+  },
+  "path_audit": {
+    "case_conflict_count": 0,
+    "case_conflicts": [],
+    "windows_invalid_count": 0,
+    "windows_invalid_paths": [],
+    "long_path_count": 441,
+    "long_paths": [
+      {
+        "path": "data/step178/target_modules/multiomics_biomarker_discovery/governance_manifest_templates/multiomics_biomarker_discovery-validation-and-acceptance-plan.json",
+        "absolute_length": 284
+      },
+      {
+        "path": "data/step178/target_modules/multiomics_biomarker_discovery/governance_manifest_templates/multiomics_biomarker_discovery-monitoring-and-rollback-plan.json",
+        "absolute_length": 282
+      },
+      {
+        "path": "data/step178/target_modules/causal_inference_perturbation/governance_manifest_templates/causal_inference_perturbation-validation-and-acceptance-plan.json",
+        "absolute_length": 282
+      },
+      {
+        "path": "data/step178/target_modules/autonomous_laboratory_planner/governance_manifest_templates/autonomous_laboratory_planner-validation-and-acceptance-plan.json",
+        "absolute_length": 282
+      },
+      {
+        "path": "data/step178/target_modules/multiomics_biomarker_discovery/governance_manifest_templates/multiomics_biomarker_discovery-intended-use-and-risk-file.json",
+        "absolute_length": 280
+      },
+      {
+        "path": "data/step178/target_modules/causal_inference_perturbation/governance_manifest_templates/causal_inference_perturbation-monitoring-and-rollback-plan.json",
+        "absolute_length": 280
+      },
+      {
+        "path": "data/step178/target_modules/autonomous_laboratory_planner/governance_manifest_templates/autonomous_laboratory_planner-monitoring-and-rollback-plan.json",
+        "absolute_length": 280
+      },
+      {
+        "path": "data/step177/target_modules/biomedical_foundation_model_hub/cohort_manifest_templates/biomedical_foundation_model_hub-independent-external-cohort.json",
+        "absolute_length": 279
+      },
+      {
+        "path": "data/step178/target_modules/model_registry_ml_lifecycle/governance_manifest_templates/model_registry_ml_lifecycle-validation-and-acceptance-plan.json",
+        "absolute_length": 278
+      },
+      {
+        "path": "data/step178/target_modules/clinical_biomarker_survival/governance_manifest_templates/clinical_biomarker_survival-validation-and-acceptance-plan.json",
+        "absolute_length": 278
+      },
+      {
+        "path": "data/step178/target_modules/causal_inference_perturbation/governance_manifest_templates/causal_inference_perturbation-intended-use-and-risk-file.json",
+        "absolute_length": 278
+      },
+      {
+        "path": "data/step178/target_modules/autonomous_laboratory_planner/governance_manifest_templates/autonomous_laboratory_planner-intended-use-and-risk-file.json",
+        "absolute_length": 278
+      },
+      {
+        "path": "data/step180/target_modules/spatial_omics_pathology/governance_manifest_templates/spatial-omics-pathology-monitoring-rollback-and-incident-plan.json",
+        "absolute_length": 277
+      },
+      {
+        "path": "data/step180/target_modules/protein_ligand_codesign/governance_manifest_templates/protein-ligand-codesign-monitoring-rollback-and-incident-plan.json",
+        "absolute_length": 277
+      },
+      {
+        "path": "data/step180/target_modules/protein_language_design/governance_manifest_templates/protein-language-design-monitoring-rollback-and-incident-plan.json",
+        "absolute_length": 277
+      },
+      {
+        "path": "data/step179/target_modules/universal_file_inspector/governance_manifest_templates/universal-scientific-file-inspector-monitoring-rollback-plan.json",
+        "absolute_length": 277
+      },
+      {
+        "path": "data/step177/target_modules/structural_bioinformatics_core/cohort_manifest_templates/structural_bioinformatics_core-independent-external-cohort.json",
+        "absolute_length": 277
+      },
+      {
+        "path": "data/step177/target_modules/single_cell_long_read_isoforms/cohort_manifest_templates/single_cell_long_read_isoforms-independent-external-cohort.json",
+        "absolute_length": 277
+      },
+      {
+        "path": "data/step179/target_modules/reference_lifecycle_v2/governance_manifest_templates/reference-database-lifecycle-manager-monitoring-rollback-plan.json",
+        "absolute_length": 276
+      },
+      {
+        "path": "data/step179/target_modules/collaboration_review_v2/governance_manifest_templates/collaboration-and-scientific-review-monitoring-rollback-plan.json",
+        "absolute_length": 276
+      },
+      {
+        "path": "data/step178/target_modules/model_registry_ml_lifecycle/governance_manifest_templates/model_registry_ml_lifecycle-monitoring-and-rollback-plan.json",
+        "absolute_length": 276
+      },
+      {
+        "path": "data/step178/target_modules/clinical_pharma_validation/governance_manifest_templates/clinical_pharma_validation-validation-and-acceptance-plan.json",
+        "absolute_length": 276
+      },
+      {
+        "path": "data/step178/target_modules/clinical_biomarker_survival/governance_manifest_templates/clinical_biomarker_survival-monitoring-and-rollback-plan.json",
+        "absolute_length": 276
+      },
+      {
+        "path": "data/step179/target_modules/provenance_ledger_v2/governance_manifest_templates/provenance-and-reproducibility-ledger-monitoring-rollback-plan.json",
+        "absolute_length": 275
+      },
+      {
+        "path": "data/step177/target_modules/pangenome_population_medicine/cohort_manifest_templates/pangenome_population_medicine-independent-external-cohort.json",
+        "absolute_length": 275
+      },
+      {
+        "path": "data/step177/target_modules/offline_scientific_copilot_v2/cohort_manifest_templates/offline_scientific_copilot_v2-independent-external-cohort.json",
+        "absolute_length": 275
+      },
+      {
+        "path": "data/step178/target_modules/synthetic_biology_circuit/governance_manifest_templates/synthetic_biology_circuit-validation-and-acceptance-plan.json",
+        "absolute_length": 274
+      },
+      {
+        "path": "data/step178/target_modules/model_registry_ml_lifecycle/governance_manifest_templates/model_registry_ml_lifecycle-intended-use-and-risk-file.json",
+        "absolute_length": 274
+      },
+      {
+        "path": "data/step178/target_modules/host_pathogen_interaction/governance_manifest_templates/host_pathogen_interaction-validation-and-acceptance-plan.json",
+        "absolute_length": 274
+      },
+      {
+        "path": "data/step178/target_modules/clinical_pharma_validation/governance_manifest_templates/clinical_pharma_validation-monitoring-and-rollback-plan.json",
+        "absolute_length": 274
+      },
+      {
+        "path": "data/step178/target_modules/clinical_biomarker_survival/governance_manifest_templates/clinical_biomarker_survival-intended-use-and-risk-file.json",
+        "absolute_length": 274
+      },
+      {
+        "path": "data/step179/target_modules/unified_report_builder/governance_manifest_templates/unified-scientific-report-builder-monitoring-rollback-plan.json",
+        "absolute_length": 273
+      },
+      {
+        "path": "data/step177/target_modules/digital_pathology_foundation/cohort_manifest_templates/digital_pathology_foundation-independent-external-cohort.json",
+        "absolute_length": 273
+      },
+      {
+        "path": "data/step178/target_modules/synthetic_biology_circuit/governance_manifest_templates/synthetic_biology_circuit-monitoring-and-rollback-plan.json",
+        "absolute_length": 272
+      },
+      {
+        "path": "data/step178/target_modules/host_pathogen_interaction/governance_manifest_templates/host_pathogen_interaction-monitoring-and-rollback-plan.json",
+        "absolute_length": 272
+      },
+      {
+        "path": "data/step178/target_modules/explainable_ai_assurance/governance_manifest_templates/explainable_ai_assurance-validation-and-acceptance-plan.json",
+        "absolute_length": 272
+      },
+      {
+        "path": "data/step178/target_modules/clinical_trial_biomarker/governance_manifest_templates/clinical_trial_biomarker-validation-and-acceptance-plan.json",
+        "absolute_length": 272
+      },
+      {
+        "path": "data/step178/target_modules/clinical_pharma_validation/governance_manifest_templates/clinical_pharma_validation-intended-use-and-risk-file.json",
+        "absolute_length": 272
+      },
+      {
+        "path": "data/step180/target_modules/phenotypic_screening/governance_manifest_templates/phenotypic-screening-monitoring-rollback-and-incident-plan.json",
+        "absolute_length": 271
+      },
+      {
+        "path": "data/step180/target_modules/spatial_omics_pathology/governance_manifest_templates/spatial-omics-pathology-acceptance-and-validation-plan.json",
+        "absolute_length": 270
+      },
+      {
+        "path": "data/step180/target_modules/protein_ligand_codesign/governance_manifest_templates/protein-ligand-codesign-acceptance-and-validation-plan.json",
+        "absolute_length": 270
+      },
+      {
+        "path": "data/step180/target_modules/protein_language_design/governance_manifest_templates/protein-language-design-acceptance-and-validation-plan.json",
+        "absolute_length": 270
+      },
+      {
+        "path": "data/step179/target_modules/evidence_citation_engine/governance_manifest_templates/evidence-and-citation-engine-monitoring-rollback-plan.json",
+        "absolute_length": 270
+      },
+      {
+        "path": "data/step179/target_modules/cross_module_workspace/governance_manifest_templates/cross-module-project-workspace-monitoring-rollback-plan.json",
+        "absolute_length": 270
+      },
+      {
+        "path": "data/step178/target_modules/synthetic_biology_circuit/governance_manifest_templates/synthetic_biology_circuit-intended-use-and-risk-file.json",
+        "absolute_length": 270
+      },
+      {
+        "path": "data/step178/target_modules/longitudinal_multiomics/governance_manifest_templates/longitudinal_multiomics-validation-and-acceptance-plan.json",
+        "absolute_length": 270
+      },
+      {
+        "path": "data/step178/target_modules/host_pathogen_interaction/governance_manifest_templates/host_pathogen_interaction-intended-use-and-risk-file.json",
+        "absolute_length": 270
+      },
+      {
+        "path": "data/step178/target_modules/federated_biomedical_ai/governance_manifest_templates/federated_biomedical_ai-validation-and-acceptance-plan.json",
+        "absolute_length": 270
+      },
+      {
+        "path": "data/step178/target_modules/explainable_ai_assurance/governance_manifest_templates/explainable_ai_assurance-monitoring-and-rollback-plan.json",
+        "absolute_length": 270
+      },
+      {
+        "path": "data/step178/target_modules/clinical_trial_biomarker/governance_manifest_templates/clinical_trial_biomarker-monitoring-and-rollback-plan.json",
+        "absolute_length": 270
+      },
+      {
+        "path": "data/step178/target_modules/bioprocess_fermentation/governance_manifest_templates/bioprocess_fermentation-validation-and-acceptance-plan.json",
+        "absolute_length": 270
+      },
+      {
+        "path": "data/step177/target_modules/biomedical_foundation_model_hub/cohort_manifest_templates/biomedical_foundation_model_hub-development-cohort.json",
+        "absolute_length": 270
+      },
+      {
+        "path": "data/step179/target_modules/store_readiness_core/governance_manifest_templates/windows-store-product-readiness-monitoring-rollback-plan.json",
+        "absolute_length": 269
+      },
+      {
+        "path": "data/step179/target_modules/universal_file_inspector/governance_manifest_templates/universal-scientific-file-inspector-acceptance-plan.json",
+        "absolute_length": 268
+      },
+      {
+        "path": "data/step179/target_modules/benchmark_validation_v2/governance_manifest_templates/benchmark-validation-center-monitoring-rollback-plan.json",
+        "absolute_length": 268
+      },
+      {
+        "path": "data/step178/target_modules/synthetic_data_privacy/governance_manifest_templates/synthetic_data_privacy-validation-and-acceptance-plan.json",
+        "absolute_length": 268
+      },
+      {
+        "path": "data/step178/target_modules/synthetic_cohort_trial/governance_manifest_templates/synthetic_cohort_trial-validation-and-acceptance-plan.json",
+        "absolute_length": 268
+      },
+      {
+        "path": "data/step178/target_modules/longitudinal_multiomics/governance_manifest_templates/longitudinal_multiomics-monitoring-and-rollback-plan.json",
+        "absolute_length": 268
+      },
+      {
+        "path": "data/step178/target_modules/federated_biomedical_ai/governance_manifest_templates/federated_biomedical_ai-monitoring-and-rollback-plan.json",
+        "absolute_length": 268
+      },
+      {
+        "path": "data/step178/target_modules/explainable_ai_assurance/governance_manifest_templates/explainable_ai_assurance-intended-use-and-risk-file.json",
+        "absolute_length": 268
+      },
+      {
+        "path": "data/step178/target_modules/clinical_trial_biomarker/governance_manifest_templates/clinical_trial_biomarker-intended-use-and-risk-file.json",
+        "absolute_length": 268
+      },
+      {
+        "path": "data/step178/target_modules/bioprocess_fermentation/governance_manifest_templates/bioprocess_fermentation-monitoring-and-rollback-plan.json",
+        "absolute_length": 268
+      },
+      {
+        "path": "data/step177/target_modules/structural_bioinformatics_core/cohort_manifest_templates/structural_bioinformatics_core-development-cohort.json",
+        "absolute_length": 268
+      },
+      {
+        "path": "data/step177/target_modules/single_cell_long_read_isoforms/cohort_manifest_templates/single_cell_long_read_isoforms-development-cohort.json",
+        "absolute_length": 268
+      },
+      {
+        "path": "data/step179/target_modules/workflow_builder_core/governance_manifest_templates/visual-workflow-builder-core-monitoring-rollback-plan.json",
+        "absolute_length": 267
+      },
+      {
+        "path": "data/step179/target_modules/reference_lifecycle_v2/governance_manifest_templates/reference-database-lifecycle-manager-acceptance-plan.json",
+        "absolute_length": 267
+      },
+      {
+        "path": "data/step179/target_modules/data_lakehouse_v2/governance_manifest_templates/data-lakehouse-and-sample-search-monitoring-rollback-plan.json",
+        "absolute_length": 267
+      },
+      {
+        "path": "data/step179/target_modules/collaboration_review_v2/governance_manifest_templates/collaboration-and-scientific-review-acceptance-plan.json",
+        "absolute_length": 267
+      },
+      {
+        "path": "data/step178/target_modules/synthetic_cohort_trial/cohort_manifest_templates/independent-aggregate-or-patient-level-validation-cohort.json",
+        "absolute_length": 267
+      },
+      {
+        "path": "data/step177/target_modules/glycomics_glycoproteomics/cohort_manifest_templates/glycomics_glycoproteomics-independent-external-cohort.json",
+        "absolute_length": 267
+      },
+      {
+        "path": "data/step180/target_modules/strain_microbiome/fixture_manifest_templates/functional-profile-and-differential-reproducibility-fixture.json",
+        "absolute_length": 266
+      },
+      {
+        "path": "data/step179/target_modules/universal_file_inspector/governance_manifest_templates/universal-scientific-file-inspector-risk-register.json",
+        "absolute_length": 266
+      },
+      {
+        "path": "data/step179/target_modules/provenance_ledger_v2/governance_manifest_templates/provenance-and-reproducibility-ledger-acceptance-plan.json",
+        "absolute_length": 266
+      },
+      {
+        "path": "data/step178/target_modules/synthetic_data_privacy/governance_manifest_templates/synthetic_data_privacy-monitoring-and-rollback-plan.json",
+        "absolute_length": 266
+      },
+      {
+        "path": "data/step178/target_modules/synthetic_cohort_trial/governance_manifest_templates/synthetic_cohort_trial-monitoring-and-rollback-plan.json",
+        "absolute_length": 266
+      },
+      {
+        "path": "data/step178/target_modules/longitudinal_multiomics/governance_manifest_templates/longitudinal_multiomics-intended-use-and-risk-file.json",
+        "absolute_length": 266
+      },
+      {
+        "path": "data/step178/target_modules/federated_biomedical_ai/governance_manifest_templates/federated_biomedical_ai-intended-use-and-risk-file.json",
+        "absolute_length": 266
+      },
+      {
+        "path": "data/step178/target_modules/bioprocess_fermentation/governance_manifest_templates/bioprocess_fermentation-intended-use-and-risk-file.json",
+        "absolute_length": 266
+      },
+      {
+        "path": "data/step177/target_modules/pangenome_population_medicine/cohort_manifest_templates/pangenome_population_medicine-development-cohort.json",
+        "absolute_length": 266
+      },
+      {
+        "path": "data/step177/target_modules/offline_scientific_copilot_v2/cohort_manifest_templates/offline_scientific_copilot_v2-development-cohort.json",
+        "absolute_length": 266
+      },
+      {
+        "path": "data/step180/target_modules/strain_microbiome/governance_manifest_templates/strain-microbiome-monitoring-rollback-and-incident-plan.json",
+        "absolute_length": 265
+      },
+      {
+        "path": "data/step180/target_modules/protein_ligand_codesign/fixture_manifest_templates/ensemble-consensus-and-experimental-evidence-fixture.json",
+        "absolute_length": 265
+      },
+      {
+        "path": "data/step180/target_modules/protein_ligand_codesign/reference_manifest_templates/ligand-protonation-tautomer-stereochemistry-policy.json",
+        "absolute_length": 265
+      },
+      {
+        "path": "data/step179/target_modules/reference_lifecycle_v2/governance_manifest_templates/reference-database-lifecycle-manager-risk-register.json",
+        "absolute_length": 265
+      },
+      {
+        "path": "data/step179/target_modules/document_intelligence_core/governance_manifest_templates/document-intelligence-monitoring-rollback-plan.json",
+        "absolute_length": 265
+      },
+      {
+        "path": "data/step179/target_modules/collaboration_review_v2/governance_manifest_templates/collaboration-and-scientific-review-risk-register.json",
+        "absolute_length": 265
+      },
+      {
+        "path": "data/step178/target_modules/autonomous_laboratory_planner/cohort_manifest_templates/independent-simulated-or-shadow-mode-evaluation.json",
+        "absolute_length": 265
+      },
+      {
+        "path": "data/step177/target_modules/multiomics_harmonization/cohort_manifest_templates/multiomics_harmonization-independent-external-cohort.json",
+        "absolute_length": 265
+      },
+      {
+        "path": "data/step180/target_modules/protein_ligand_codesign/cohort_manifest_templates/experimental-binding-and-functional-confirmation-set.json",
+        "absolute_length": 264
+      },
+      {
+        "path": "data/step180/target_modules/protein_language_design/reference_manifest_templates/structure-confidence-and-design-acceptance-policy.json",
+        "absolute_length": 264
+      },
+      {
+        "path": "data/step180/target_modules/phenotypic_screening/governance_manifest_templates/phenotypic-screening-acceptance-and-validation-plan.json",
+        "absolute_length": 264
+      },
+      {
+        "path": "data/step179/target_modules/unified_report_builder/governance_manifest_templates/unified-scientific-report-builder-acceptance-plan.json",
+        "absolute_length": 264
+      },
+      {
+        "path": "data/step179/target_modules/provenance_ledger_v2/governance_manifest_templates/provenance-and-reproducibility-ledger-risk-register.json",
+        "absolute_length": 264
+      },
+      {
+        "path": "data/step179/target_modules/plugin_marketplace_core/governance_manifest_templates/plugin-marketplace-core-monitoring-rollback-plan.json",
+        "absolute_length": 264
+      },
+      {
+        "path": "data/step179/target_modules/knowledge_graph_core/governance_manifest_templates/biomedical-knowledge-graph-monitoring-rollback-plan.json",
+        "absolute_length": 264
+      },
+      {
+        "path": "data/step178/target_modules/synthetic_data_privacy/governance_manifest_templates/synthetic_data_privacy-intended-use-and-risk-file.json",
+        "absolute_length": 264
+      },
+      {
+        "path": "data/step178/target_modules/synthetic_cohort_trial/governance_manifest_templates/synthetic_cohort_trial-intended-use-and-risk-file.json",
+        "absolute_length": 264
+      },
+      {
+        "path": "data/step177/target_modules/digital_pathology_foundation/cohort_manifest_templates/digital_pathology_foundation-development-cohort.json",
+        "absolute_length": 264
+      },
+      {
+        "path": "data/step179/target_modules/workflow_builder_v2/governance_manifest_templates/visual-workflow-builder-v2-monitoring-rollback-plan.json",
+        "absolute_length": 263
+      },
+      {
+        "path": "data/step177/target_modules/metabolomics_lipidomics/cohort_manifest_templates/metabolomics_lipidomics-independent-external-cohort.json",
+        "absolute_length": 263
+      }
+    ]
+  },
+  "dependency_manifests": [
+    "requirements-advanced.txt",
+    "requirements-bioinformatics.txt",
+    "requirements-ci.txt",
+    "requirements-deep-learning.txt",
+    "requirements-dev-lock-step192.txt",
+    "requirements-dev.txt",
+    "requirements-lock-step192.txt",
+    "requirements-lock-step192.txt.sha256",
+    "requirements-production.txt",
+    "requirements-step120-scientific-extras.txt",
+    "requirements-step127-scientific-extras.txt",
+    "requirements-windows-cp311-offline.lock",
+    "requirements-windows-cp311-offline.lock.sha256",
+    "requirements.lock",
+    "requirements.lock.sha256",
+    "requirements.txt",
+    "pyproject.toml",
+    "requirements.lock.sha256"
+  ]
+}

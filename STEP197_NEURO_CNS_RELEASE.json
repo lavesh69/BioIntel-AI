@@ -1,0 +1,26 @@
+{
+  "schema": "biointel.step197.neuro-cns-release.v1",
+  "feature_step": 197,
+  "base_runtime_step": 196,
+  "base_runtime_version": "15.4.0",
+  "package_revision": "V16-5PART-NEURO23",
+  "title": "Unified Neuro/CNS Intelligence Studio — 23 Engine Edition",
+  "status": "software-functional-research-boundary",
+  "user_facing_page": "pages/263_Neuro_CNS_Intelligence_Studio.py",
+  "backend_package": "src/biointel/neuro_cns",
+  "module_count": 23,
+  "workspace_count": 5,
+  "tests": {
+    "focused_tests": 8,
+    "status": "passed",
+    "streamlit_page_boot": "passed",
+    "catalogue_integrity": "passed"
+  },
+  "installer_contract": {
+    "workflow": ["INSTALL_WINDOWS.bat", "RUN_BOTH_WINDOWS.bat"],
+    "part_count": 5,
+    "base_step_preserved": true,
+    "reason": "Preserve the already verified Step 196/V16 Windows runtime, wheelhouse and recovery contract while adding the Step 197 Neuro/CNS feature surface."
+  },
+  "scientific_boundary": "Research screening and workflow software only. No clinical diagnosis, treatment recommendation, medical-device claim, regulatory clearance or automatic controlled release."
+}

@@ -1,0 +1,19 @@
+schema_version: "1.0"
+release: "13.2.0"
+budgets:
+  initial_page_shell_ms: 2000
+  normal_interaction_ms: 300
+  table_preview_ms: 1500
+  startup_readiness_seconds: 120
+limits:
+  default_preview_rows: 10000
+  default_preview_columns: 250
+  cache_entries_data: 128
+  cache_entries_resource: 32
+  background_job_required_over_seconds: 5
+controls:
+  use_forms_for_expensive_inputs: true
+  defer_heavy_work_until_submit: true
+  use_background_worker_for_long_tasks: true
+  record_failure_artifacts: true
+  clear_unused_memory_after_large_runs: true

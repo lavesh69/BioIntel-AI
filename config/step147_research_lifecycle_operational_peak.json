@@ -1,0 +1,73 @@
+{
+  "schema": "biointel.step147.research-lifecycle-operational-peak.catalog.v1",
+  "milestone": 147,
+  "name": "Research Lifecycle Operational Peak",
+  "product_version_preserved": "13.2.0",
+  "research_planning_modules": 24,
+  "modules_upgraded": 4,
+  "upgraded_modules": [
+    "Research Ethics, Consent & Participant Protection Studio",
+    "Research Data Management & FAIR Planning Studio",
+    "Data Monitoring, Interim Review & Safety Studio",
+    "Publication, Dissemination & Knowledge Translation Studio"
+  ],
+  "operational_domains": {
+    "ethics_and_consent": [
+      "Consent version registry",
+      "Participant consent matrix",
+      "Re-consent schedule",
+      "Ethics submission package readiness",
+      "Committee query tracking",
+      "Privacy data-flow mapping",
+      "Withdrawal impact analysis",
+      "Participant-material readability"
+    ],
+    "fair_data_management": [
+      "Technical file integrity",
+      "Metadata schema completeness",
+      "Repository deposit readiness",
+      "Storage growth forecasting",
+      "Access governance",
+      "Licence compatibility",
+      "Retention and destruction",
+      "Restore-test monitoring"
+    ],
+    "interim_monitoring_and_safety": [
+      "Exposure-adjusted incidence",
+      "Time-to-first-event planning",
+      "Recurrent event burden",
+      "Organ-system coding",
+      "Safety reporting deadlines",
+      "Site signal detection",
+      "Laboratory shift review",
+      "Interim efficacy and futility boundaries",
+      "Conditional power",
+      "Benefit-risk planning"
+    ],
+    "publication_and_dissemination": [
+      "Manuscript section workflow",
+      "Claim-evidence traceability",
+      "Reporting guideline checklist",
+      "Authorship and conflicts",
+      "Journal selection",
+      "Figure and table inventory",
+      "Peer review response workflow",
+      "Version lineage",
+      "Protocol-to-publication deviation audit",
+      "Audience-channel dissemination mapping"
+    ]
+  },
+  "operational_result_tables": 57,
+  "specialist_visual_targets": 51,
+  "domain_specific_export_documents": 4,
+  "cross_module_impact_rules": true,
+  "backwards_compatible_with_step146_templates": true,
+  "preserved": [
+    "Step 145 overall application stability hardening",
+    "Step 146 complete research lifecycle navigation",
+    "All 24 Research Planning modules",
+    "Reviews, immutable versions, digital-thread handoffs and reproducibility exports",
+    "Product version 13.2.0"
+  ],
+  "truthfulness_boundary": "Internal implementation and automated qualification can be hardened to a high level, but ethics approval, legal compliance, medical decisions, regulatory acceptance, journal acceptance and real-world operating history require external qualified organisations and cannot be manufactured by software."
+}

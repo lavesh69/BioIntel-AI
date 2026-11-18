@@ -1,0 +1,16 @@
+{
+  "schema": "biointel.education-phase2.windows-four-part.v2",
+  "product_version": "15.6.0",
+  "release_step": 220,
+  "physical_archive_count": 4,
+  "archive_root": "BioIntel-Step220",
+  "python_runtime": "CPython 3.11.9 x64",
+  "integrity_migration": "education_science_academy_v2_integrity",
+  "targeted_tests_passed": 28,
+  "install_entrypoint": "INSTALL_WINDOWS.bat",
+  "run_both_entrypoint": "RUN_BOTH_WINDOWS.bat",
+  "verification_entrypoint": "VERIFY_EDUCATION_PHASE2_WINDOWS.bat",
+  "release_verification_mode": "direct-crc-and-per-file-sha256",
+  "external_sources_default": "configuration-required",
+  "calls_turn_sfu_recording_transcription": "configuration-required"
+}

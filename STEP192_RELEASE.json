@@ -1,0 +1,23 @@
+{
+  "schema": "biointel.step192.release.v1",
+  "step": 192,
+  "version": "15.0.0",
+  "date": "2026-07-15",
+  "author": "Lavesh Dobriyal",
+  "release_name": "Release Integrity, Publication Integration & Offline Install Repair",
+  "installation_method": [
+    "INSTALL_WINDOWS.bat",
+    "RUN_BOTH_WINDOWS.bat"
+  ],
+  "major_modules": 80,
+  "major_module_page_files": 79,
+  "controlled_scientific_release_eligible": false,
+  "external_blockers": [
+    "public_archive_doi",
+    "public_repository_url",
+    "journal_compatible_licence_decision",
+    "independent_external_benchmarks",
+    "real wet-lab/clinical/instrument evidence where applicable"
+  ],
+  "honesty_boundary": "Internal, synthetic and deterministic tests verify software behavior only and do not manufacture external scientific validity."
+}

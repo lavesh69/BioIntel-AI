@@ -1,0 +1,9 @@
+{
+  "schema": "biointel.step194.release.v2",
+  "step": 194,
+  "version": "15.1.0",
+  "status": "verified-internal",
+  "historical_release_manifests_are_non_blocking": true,
+  "current_release_detection": "VERSION + pyproject + complete Step 194 part markers",
+  "fix": "proper stale historical release metadata handling"
+}

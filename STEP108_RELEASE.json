@@ -1,0 +1,18 @@
+{
+  "release": "Step 108",
+  "version": "11.6.0",
+  "name": "Decision Visual Intelligence",
+  "scope": {
+    "phase_1_modules": 8,
+    "phase_2_modules": 6,
+    "modules_upgraded": 14,
+    "visuals_per_module": 5,
+    "decision_visual_views": 70
+  },
+  "performance": {
+    "render_policy": "lazy-selected",
+    "cached_sql_ttl_seconds": 60,
+    "maximum_simultaneous_visuals_per_module": 1
+  },
+  "scientific_boundary": "Visuals summarize registered evidence and analysis outputs; they do not manufacture clinical validity, regulatory approval or independent evidence."
+}

@@ -1,0 +1,53 @@
+schema: biointel.clinical-pharma-validation-policy.v1
+default_claim_profile: research_demo
+claim_profiles:
+  research_demo:
+    minimum_independent_sites: 0
+    minimum_outcome_batches: 0
+    permitted_claim: research/demo use only
+  pharma_r_and_d:
+    minimum_independent_sites: 2
+    minimum_outcome_batches: 2
+    minimum_training_records: 2
+    required_evidence:
+      - assay_validation
+      - independent_external_validation
+      - prospective_validation
+      - quality_assurance
+      - data_integrity
+      - model_validation
+      - supplier_qualification
+  clinical_decision_support:
+    minimum_independent_sites: 3
+    minimum_outcome_batches: 3
+    minimum_training_records: 3
+    required_evidence:
+      - ethics_regulatory
+      - clinical_evaluation
+      - assay_validation
+      - independent_external_validation
+      - prospective_validation
+      - quality_assurance
+      - data_integrity
+      - model_validation
+      - privacy_security
+      - human_factors
+      - post_market_surveillance
+      - supplier_qualification
+release_blockers:
+  - unapproved protocol
+  - incomplete intended-use boundary
+  - missing independent-site qualification
+  - model or data not checksum-frozen
+  - outcomes available before prediction lock
+  - missing adjudication or blinding evidence
+  - failed or unreviewed primary endpoint
+  - missing per-site analysis
+  - open major or critical quality event
+  - incomplete training
+  - broken audit chain
+  - missing independent approval signature
+claim_boundary:
+  framework_score: software-control completeness only
+  external_evidence_score: authentic independent evidence completeness
+  clinical_or_pharma_validation: never inferred from bundled templates or demo data

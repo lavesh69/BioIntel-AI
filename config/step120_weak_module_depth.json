@@ -1,0 +1,23 @@
+{
+  "schema": "biointel.step120.weak-module-depth.v1",
+  "version": "12.0.0",
+  "capability_modules": 17,
+  "pipeline_stages": 102,
+  "execution_tiers": {
+    "A": "All automatic stages executable; external validation remains separate",
+    "B": "Built-in analysis available with one or more specialist adapters pending",
+    "C": "Required input schema/data blocks scientific execution"
+  },
+  "never_auto_pass": [
+    "Independent replication",
+    "Wet-lab confirmation",
+    "Pathology/manual review",
+    "Clinical review",
+    "Authentic-standard confirmation",
+    "Experimental immunogenicity",
+    "Ground-truth segmentation validation"
+  ],
+  "optional_python_requirements": "requirements-step120-scientific-extras.txt",
+  "tool_manifest": "config/advanced_tools_manifest.json",
+  "verification": "VERIFY_STEP120_WINDOWS.bat"
+}

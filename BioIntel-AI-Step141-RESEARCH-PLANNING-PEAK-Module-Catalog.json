@@ -1,0 +1,2297 @@
+{
+  "schema": "biointel.step141.research-planning-catalog.v1",
+  "milestone": "Step 141",
+  "product_version_preserved": "13.2.0",
+  "category": "Research Planning",
+  "existing_modules_preserved": [
+    "Biostatistics, Power & Experimental Design Studio",
+    "Synthetic Cohort & Trial Simulation Lab"
+  ],
+  "new_modules": [
+    {
+      "key": "study_protocol_designer",
+      "page_number": 205,
+      "title": "Study Protocol Designer",
+      "summary": "Build a complete, reviewable research protocol from objectives through visits, endpoints, deviations and amendments.",
+      "required_columns": [
+        "section",
+        "owner",
+        "status",
+        "completeness",
+        "risk",
+        "due_day"
+      ],
+      "accepted_inputs": [
+        "CSV/TSV protocol section table",
+        "Excel protocol tracker",
+        "BioIntel starter template"
+      ],
+      "outputs": [
+        "protocol completeness report",
+        "participant journey",
+        "visit schedule",
+        "risk register",
+        "versioned protocol manifest"
+      ],
+      "workflow": [
+        "Define the research question and objectives",
+        "Specify population, endpoints and procedures",
+        "Assign owners and review completeness",
+        "Lock and export the protocol package"
+      ],
+      "features": [
+        "Research question builder",
+        "Primary and secondary objectives",
+        "Inclusion and exclusion criteria",
+        "Endpoint definitions",
+        "Visit and sampling schedule",
+        "Control and blinding plan",
+        "Deviation handling",
+        "Amendment history",
+        "Protocol completeness scoring",
+        "DOCX/PDF-ready structured manifest"
+      ],
+      "visuals": [
+        {
+          "key": "protocol_completion",
+          "title": "Protocol completeness by section",
+          "source": "primary",
+          "kind": "bar",
+          "x": "section",
+          "y": "completeness",
+          "color": "status",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "protocol_risk",
+          "title": "Section risk and readiness",
+          "source": "primary",
+          "kind": "scatter",
+          "x": "completeness",
+          "y": "risk",
+          "color": "status",
+          "size": "due_day",
+          "description": ""
+        },
+        {
+          "key": "protocol_timeline",
+          "title": "Protocol development timeline",
+          "source": "timeline",
+          "kind": "timeline",
+          "x": "start_day",
+          "y": "end_day",
+          "color": "owner",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "protocol_status",
+          "title": "Review status distribution",
+          "source": "primary",
+          "kind": "donut",
+          "x": "status",
+          "y": null,
+          "color": null,
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "protocol_heatmap",
+          "title": "Section \u00d7 requirement readiness",
+          "source": "matrix",
+          "kind": "heatmap",
+          "x": "requirement",
+          "y": "section",
+          "color": null,
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "protocol_owner",
+          "title": "Owner workload",
+          "source": "primary",
+          "kind": "bar",
+          "x": "owner",
+          "y": "due_day",
+          "color": "status",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "protocol_funnel",
+          "title": "Protocol readiness funnel",
+          "source": "funnel",
+          "kind": "funnel",
+          "x": "stage",
+          "y": "records",
+          "color": null,
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "protocol_radar",
+          "title": "Protocol quality dimensions",
+          "source": "quality",
+          "kind": "radar",
+          "x": "dimension",
+          "y": "score",
+          "color": null,
+          "size": null,
+          "description": ""
+        }
+      ],
+      "handoffs": [
+        "Biostatistics, Power & Experimental Design Studio",
+        "Statistical Analysis Plan Studio",
+        "Pre-Registration & Reproducibility Studio"
+      ],
+      "boundary": "The generated protocol is a planning aid and requires discipline-specific, ethical, legal and statistical review before use in a real study."
+    },
+    {
+      "key": "sample_size_power_studio",
+      "page_number": 206,
+      "title": "Sample Size & Statistical Power Studio",
+      "summary": "Calculate transparent sample-size scenarios across continuous, binary, survival, repeated-measures and clustered designs.",
+      "required_columns": [
+        "scenario",
+        "design",
+        "effect_size",
+        "alpha",
+        "power",
+        "dropout",
+        "allocation_ratio"
+      ],
+      "accepted_inputs": [
+        "CSV/TSV scenario table",
+        "Excel design assumptions",
+        "BioIntel starter template"
+      ],
+      "outputs": [
+        "sample-size table",
+        "power curves",
+        "sensitivity grid",
+        "assumption warnings",
+        "reproducible calculation manifest"
+      ],
+      "workflow": [
+        "Choose outcome and design family",
+        "Enter justified assumptions",
+        "Compare sensitivity and simulation",
+        "Export the locked sample-size rationale"
+      ],
+      "features": [
+        "Continuous, binary, count and survival outcomes",
+        "Superiority, non-inferiority and equivalence",
+        "Paired and unpaired designs",
+        "Cluster and repeated-measures designs",
+        "Dropout inflation",
+        "Multiplicity adjustment",
+        "Precision-based sample size",
+        "Simulation-based power",
+        "Scenario comparison",
+        "Assumption provenance"
+      ],
+      "visuals": [
+        {
+          "key": "power_curve",
+          "title": "Power curve across sample sizes",
+          "source": "sensitivity",
+          "kind": "line",
+          "x": "total_sample_size",
+          "y": "achieved_power",
+          "color": "scenario",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "sample_size",
+          "title": "Required recruitment by scenario",
+          "source": "primary",
+          "kind": "bar",
+          "x": "scenario",
+          "y": "total_sample_size",
+          "color": "design",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "effect_heatmap",
+          "title": "Effect size \u00d7 power sensitivity",
+          "source": "grid",
+          "kind": "heatmap",
+          "x": "target_power",
+          "y": "effect_size",
+          "color": null,
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "dropout",
+          "title": "Dropout impact on recruitment",
+          "source": "dropout",
+          "kind": "line",
+          "x": "dropout",
+          "y": "total_sample_size",
+          "color": "scenario",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "allocation",
+          "title": "Allocation ratio sensitivity",
+          "source": "allocation",
+          "kind": "line",
+          "x": "allocation_ratio",
+          "y": "total_sample_size",
+          "color": "scenario",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "precision",
+          "title": "Precision versus sample size",
+          "source": "precision",
+          "kind": "line",
+          "x": "sample_size",
+          "y": "ci_half_width",
+          "color": "scenario",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "scenario_parallel",
+          "title": "Assumption trade-off landscape",
+          "source": "primary",
+          "kind": "parallel",
+          "x": null,
+          "y": null,
+          "color": "design",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "assumption_radar",
+          "title": "Scenario assumption quality",
+          "source": "quality",
+          "kind": "radar",
+          "x": "dimension",
+          "y": "score",
+          "color": null,
+          "size": null,
+          "description": ""
+        }
+      ],
+      "handoffs": [
+        "Study Protocol Designer",
+        "Clinical Trial Design Studio",
+        "Statistical Analysis Plan Studio"
+      ],
+      "boundary": "Planning calculations depend on assumptions. Confirmatory or regulated studies require a qualified statistician and protocol-specific methods."
+    },
+    {
+      "key": "clinical_trial_design_studio",
+      "page_number": 207,
+      "title": "Clinical Trial Design Studio",
+      "summary": "Design phase-aware clinical trials with arms, cohorts, interim decisions, endpoints, recruitment and safety monitoring.",
+      "required_columns": [
+        "cohort",
+        "arm",
+        "participants",
+        "start_day",
+        "end_day",
+        "response_rate",
+        "dropout_rate"
+      ],
+      "accepted_inputs": [
+        "CSV/TSV cohort plan",
+        "Excel trial schema",
+        "BioIntel starter template"
+      ],
+      "outputs": [
+        "trial schema",
+        "cohort flow",
+        "recruitment forecast",
+        "interim decision plan",
+        "site and milestone summary"
+      ],
+      "workflow": [
+        "Select phase and trial architecture",
+        "Define arms, cohorts and endpoints",
+        "Model recruitment, dropout and interim rules",
+        "Export the trial design package"
+      ],
+      "features": [
+        "Phase I\u2013IV templates",
+        "Parallel, crossover and factorial design",
+        "Dose escalation",
+        "Adaptive design",
+        "Randomisation and stratification",
+        "Interim analysis",
+        "Stopping boundaries",
+        "Endpoint hierarchy",
+        "Safety monitoring",
+        "Site and country planning",
+        "Recruitment assumptions",
+        "Trial milestones"
+      ],
+      "visuals": [
+        {
+          "key": "trial_schema",
+          "title": "Trial arm and cohort schema",
+          "source": "primary",
+          "kind": "sunburst",
+          "x": "arm",
+          "y": "cohort",
+          "color": "participants",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "recruitment",
+          "title": "Recruitment forecast",
+          "source": "recruitment",
+          "kind": "line",
+          "x": "month",
+          "y": "cumulative_enrolled",
+          "color": "arm",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "cohort_flow",
+          "title": "Participant flow",
+          "source": "funnel",
+          "kind": "funnel",
+          "x": "stage",
+          "y": "participants",
+          "color": null,
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "dose_ladder",
+          "title": "Dose-escalation ladder",
+          "source": "primary",
+          "kind": "bar",
+          "x": "cohort",
+          "y": "participants",
+          "color": "arm",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "interim",
+          "title": "Interim decision boundaries",
+          "source": "interim",
+          "kind": "line",
+          "x": "information_fraction",
+          "y": "boundary",
+          "color": "decision",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "dropout",
+          "title": "Expected dropout by arm",
+          "source": "primary",
+          "kind": "bar",
+          "x": "arm",
+          "y": "dropout_rate",
+          "color": "cohort",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "timeline",
+          "title": "Trial milestone timeline",
+          "source": "timeline",
+          "kind": "timeline",
+          "x": "start_day",
+          "y": "end_day",
+          "color": "arm",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "trial_radar",
+          "title": "Trial design readiness",
+          "source": "quality",
+          "kind": "radar",
+          "x": "dimension",
+          "y": "score",
+          "color": null,
+          "size": null,
+          "description": ""
+        }
+      ],
+      "handoffs": [
+        "Sample Size & Statistical Power Studio",
+        "Randomization, Blinding & Allocation Studio",
+        "Synthetic Cohort & Trial Simulation Lab"
+      ],
+      "boundary": "This module supports research planning only. Trial design requires ethics, regulatory, clinical, statistical and operational review."
+    },
+    {
+      "key": "experimental_design_doe",
+      "page_number": 208,
+      "title": "Experimental Design & DoE Workbench",
+      "summary": "Create and analyse factorial, response-surface, screening and optimal experimental designs for laboratory and process studies.",
+      "required_columns": [
+        "run",
+        "factor_a",
+        "factor_b",
+        "factor_c",
+        "response"
+      ],
+      "accepted_inputs": [
+        "CSV/TSV design matrix",
+        "Excel DoE run sheet",
+        "BioIntel starter template"
+      ],
+      "outputs": [
+        "design matrix",
+        "effect estimates",
+        "interaction table",
+        "response surface",
+        "optimisation candidates"
+      ],
+      "workflow": [
+        "Define factors and levels",
+        "Generate or import the design",
+        "Fit effects and inspect diagnostics",
+        "Export the randomised run sheet and analysis manifest"
+      ],
+      "features": [
+        "Full and fractional factorial designs",
+        "Response-surface methodology",
+        "Central composite design",
+        "Box\u2013Behnken design",
+        "Screening designs",
+        "Blocking and randomisation",
+        "Replicate allocation",
+        "Confounding analysis",
+        "Design efficiency",
+        "Optimal design",
+        "Interaction estimation",
+        "Response optimisation"
+      ],
+      "visuals": [
+        {
+          "key": "design_matrix",
+          "title": "Design matrix",
+          "source": "primary",
+          "kind": "heatmap",
+          "x": "factor",
+          "y": "run",
+          "color": null,
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "effects",
+          "title": "Standardised factor effects",
+          "source": "effects",
+          "kind": "bar",
+          "x": "term",
+          "y": "effect",
+          "color": "sign",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "pareto",
+          "title": "Pareto chart of effects",
+          "source": "effects",
+          "kind": "bar",
+          "x": "term",
+          "y": "abs_effect",
+          "color": "sign",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "interaction",
+          "title": "Factor interaction map",
+          "source": "interaction",
+          "kind": "heatmap",
+          "x": "factor_2",
+          "y": "factor_1",
+          "color": null,
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "surface",
+          "title": "Response surface",
+          "source": "surface",
+          "kind": "contour",
+          "x": "factor_a",
+          "y": "factor_b",
+          "color": null,
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "predicted",
+          "title": "Observed versus predicted response",
+          "source": "predictions",
+          "kind": "scatter",
+          "x": "predicted",
+          "y": "observed",
+          "color": "run",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "residuals",
+          "title": "Residual diagnostics",
+          "source": "predictions",
+          "kind": "scatter",
+          "x": "predicted",
+          "y": "residual",
+          "color": "run",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "design_radar",
+          "title": "Design quality dimensions",
+          "source": "quality",
+          "kind": "radar",
+          "x": "dimension",
+          "y": "score",
+          "color": null,
+          "size": null,
+          "description": ""
+        }
+      ],
+      "handoffs": [
+        "Biostatistics, Power & Experimental Design Studio",
+        "Sampling & Biospecimen Planning Studio",
+        "Research Timeline, Milestones & Dependencies Studio"
+      ],
+      "boundary": "DoE outputs are exploratory unless factor ranges, measurement systems, model assumptions and confirmatory runs are prospectively justified."
+    },
+    {
+      "key": "randomization_blinding_allocation",
+      "page_number": 209,
+      "title": "Randomization, Blinding & Allocation Studio",
+      "summary": "Generate reproducible allocation schedules with strata, variable blocks, concealment and balance diagnostics.",
+      "required_columns": [
+        "participant_id",
+        "stratum",
+        "site",
+        "arm",
+        "sequence"
+      ],
+      "accepted_inputs": [
+        "CSV/TSV participant list",
+        "Excel eligibility list",
+        "BioIntel starter template"
+      ],
+      "outputs": [
+        "allocation schedule",
+        "concealment manifest",
+        "balance diagnostics",
+        "unblinding file",
+        "audit report"
+      ],
+      "workflow": [
+        "Import eligible participants",
+        "Select allocation and blinding rules",
+        "Generate and audit the schedule",
+        "Lock concealed and operational exports separately"
+      ],
+      "features": [
+        "Simple randomisation",
+        "Variable block randomisation",
+        "Stratified randomisation",
+        "Cluster allocation",
+        "Unequal ratios",
+        "Concealed allocation",
+        "Secure seed generation",
+        "Emergency unblinding",
+        "Re-randomisation controls",
+        "Treatment-code generation",
+        "Balance audit",
+        "Immutable manifest"
+      ],
+      "visuals": [
+        {
+          "key": "arm_balance",
+          "title": "Allocation balance by arm",
+          "source": "primary",
+          "kind": "bar",
+          "x": "arm",
+          "y": "participants",
+          "color": "site",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "strata",
+          "title": "Stratum \u00d7 arm balance",
+          "source": "matrix",
+          "kind": "heatmap",
+          "x": "arm",
+          "y": "stratum",
+          "color": null,
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "sites",
+          "title": "Site \u00d7 arm balance",
+          "source": "site_matrix",
+          "kind": "heatmap",
+          "x": "arm",
+          "y": "site",
+          "color": null,
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "sequence",
+          "title": "Allocation sequence",
+          "source": "sequence",
+          "kind": "scatter",
+          "x": "sequence",
+          "y": "arm",
+          "color": "stratum",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "blocks",
+          "title": "Block-size distribution",
+          "source": "blocks",
+          "kind": "bar",
+          "x": "block_size",
+          "y": "blocks",
+          "color": "site",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "imbalance",
+          "title": "Cumulative allocation imbalance",
+          "source": "imbalance",
+          "kind": "line",
+          "x": "sequence",
+          "y": "imbalance",
+          "color": "stratum",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "concealment",
+          "title": "Blinding and concealment status",
+          "source": "quality",
+          "kind": "bar",
+          "x": "dimension",
+          "y": "score",
+          "color": null,
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "allocation_radar",
+          "title": "Allocation quality dimensions",
+          "source": "quality",
+          "kind": "radar",
+          "x": "dimension",
+          "y": "score",
+          "color": null,
+          "size": null,
+          "description": ""
+        }
+      ],
+      "handoffs": [
+        "Clinical Trial Design Studio",
+        "Cohort Definition & Eligibility Builder",
+        "Pre-Registration & Reproducibility Studio"
+      ],
+      "boundary": "Production randomisation requires independent control, secure seed and code handling, documented concealment and approved emergency-unblinding procedures."
+    },
+    {
+      "key": "cohort_eligibility_builder",
+      "page_number": 210,
+      "title": "Cohort Definition & Eligibility Builder",
+      "summary": "Define reproducible eligibility rules, estimate feasible cohorts and explain every inclusion or exclusion decision.",
+      "required_columns": [
+        "participant_id",
+        "age",
+        "sex",
+        "biomarker",
+        "diagnosis",
+        "eligible",
+        "exclusion_reason"
+      ],
+      "accepted_inputs": [
+        "CSV/TSV candidate cohort",
+        "Excel screening log",
+        "BioIntel starter template"
+      ],
+      "outputs": [
+        "eligible cohort",
+        "screen-failure reasons",
+        "rule impact table",
+        "overlap analysis",
+        "versioned cohort definition"
+      ],
+      "workflow": [
+        "Import candidate participants",
+        "Define and order eligibility rules",
+        "Inspect exclusions and missingness",
+        "Lock and export the cohort definition"
+      ],
+      "features": [
+        "Inclusion and exclusion rule builder",
+        "Demographic criteria",
+        "Disease and phenotype definitions",
+        "Laboratory thresholds",
+        "Medication criteria",
+        "Genomic biomarkers",
+        "Time-window rules",
+        "Missing-data policy",
+        "Cohort overlap detection",
+        "Feasibility estimate",
+        "Rule version history",
+        "Record-level explanation"
+      ],
+      "visuals": [
+        {
+          "key": "cohort_funnel",
+          "title": "Eligibility funnel",
+          "source": "funnel",
+          "kind": "funnel",
+          "x": "stage",
+          "y": "participants",
+          "color": null,
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "exclusions",
+          "title": "Exclusion reasons",
+          "source": "exclusions",
+          "kind": "bar",
+          "x": "exclusion_reason",
+          "y": "participants",
+          "color": null,
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "age",
+          "title": "Age distribution by eligibility",
+          "source": "primary",
+          "kind": "histogram",
+          "x": "age",
+          "y": null,
+          "color": "eligible",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "biomarker",
+          "title": "Biomarker distribution",
+          "source": "primary",
+          "kind": "box",
+          "x": "eligible",
+          "y": "biomarker",
+          "color": "diagnosis",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "rule_impact",
+          "title": "Rule impact",
+          "source": "rules",
+          "kind": "waterfall",
+          "x": "rule",
+          "y": "removed",
+          "color": null,
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "missingness",
+          "title": "Eligibility data missingness",
+          "source": "missingness",
+          "kind": "heatmap",
+          "x": "field",
+          "y": "group",
+          "color": null,
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "overlap",
+          "title": "Eligibility overlap",
+          "source": "overlap",
+          "kind": "upset",
+          "x": "rule",
+          "y": "participants",
+          "color": null,
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "cohort_radar",
+          "title": "Cohort definition quality",
+          "source": "quality",
+          "kind": "radar",
+          "x": "dimension",
+          "y": "score",
+          "color": null,
+          "size": null,
+          "description": ""
+        }
+      ],
+      "handoffs": [
+        "Clinical Trial Design Studio",
+        "Research Feasibility & Recruitment Planner",
+        "Synthetic Cohort & Trial Simulation Lab"
+      ],
+      "boundary": "Eligibility estimates depend on the quality and representativeness of the source cohort and do not replace clinical adjudication."
+    },
+    {
+      "key": "endpoint_outcome_strategy",
+      "page_number": 211,
+      "title": "Endpoint & Outcome Strategy Studio",
+      "summary": "Prioritise primary, secondary and exploratory endpoints with burden, validity, missingness and multiplicity controls.",
+      "required_columns": [
+        "endpoint",
+        "type",
+        "priority",
+        "measurement_burden",
+        "sensitivity",
+        "specificity",
+        "missingness_risk"
+      ],
+      "accepted_inputs": [
+        "CSV/TSV endpoint inventory",
+        "Excel outcome strategy",
+        "BioIntel starter template"
+      ],
+      "outputs": [
+        "endpoint hierarchy",
+        "measurement schedule",
+        "burden analysis",
+        "multiplicity plan",
+        "adjudication workflow"
+      ],
+      "workflow": [
+        "List candidate outcomes",
+        "Score validity, burden and missingness",
+        "Define hierarchy and multiplicity",
+        "Export the locked endpoint strategy"
+      ],
+      "features": [
+        "Primary, secondary and exploratory endpoints",
+        "Composite endpoints",
+        "Surrogate endpoint review",
+        "Measurement frequency",
+        "Endpoint hierarchy",
+        "Minimal clinically important difference",
+        "Responder definitions",
+        "Competing risks",
+        "Missing endpoint strategy",
+        "Multiplicity control",
+        "Endpoint adjudication",
+        "Estimand alignment"
+      ],
+      "visuals": [
+        {
+          "key": "endpoint_priority",
+          "title": "Endpoint priority ranking",
+          "source": "primary",
+          "kind": "bar",
+          "x": "endpoint",
+          "y": "priority_score",
+          "color": "type",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "burden_validity",
+          "title": "Measurement burden versus validity",
+          "source": "primary",
+          "kind": "scatter",
+          "x": "measurement_burden",
+          "y": "validity_score",
+          "color": "type",
+          "size": "priority_score",
+          "description": ""
+        },
+        {
+          "key": "hierarchy",
+          "title": "Endpoint hierarchy",
+          "source": "hierarchy",
+          "kind": "sunburst",
+          "x": "type",
+          "y": "endpoint",
+          "color": "priority_score",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "missingness",
+          "title": "Missingness risk",
+          "source": "primary",
+          "kind": "bar",
+          "x": "endpoint",
+          "y": "missingness_risk",
+          "color": "type",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "correlation",
+          "title": "Endpoint correlation plan",
+          "source": "matrix",
+          "kind": "heatmap",
+          "x": "endpoint_2",
+          "y": "endpoint_1",
+          "color": null,
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "timeline",
+          "title": "Outcome measurement schedule",
+          "source": "timeline",
+          "kind": "timeline",
+          "x": "start_day",
+          "y": "end_day",
+          "color": "endpoint",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "decision",
+          "title": "Endpoint decision matrix",
+          "source": "decision",
+          "kind": "heatmap",
+          "x": "criterion",
+          "y": "endpoint",
+          "color": null,
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "endpoint_radar",
+          "title": "Endpoint strategy readiness",
+          "source": "quality",
+          "kind": "radar",
+          "x": "dimension",
+          "y": "score",
+          "color": null,
+          "size": null,
+          "description": ""
+        }
+      ],
+      "handoffs": [
+        "Study Protocol Designer",
+        "Biomarker Study Planning Studio",
+        "Statistical Analysis Plan Studio"
+      ],
+      "boundary": "Endpoint selection must be justified by clinical or scientific relevance, measurement validity and a prespecified analysis strategy."
+    },
+    {
+      "key": "biomarker_study_planning",
+      "page_number": 212,
+      "title": "Biomarker Study Planning Studio",
+      "summary": "Plan diagnostic, prognostic and predictive biomarker studies from discovery through independent validation.",
+      "required_columns": [
+        "biomarker",
+        "stage",
+        "evidence",
+        "assay_readiness",
+        "validation_status",
+        "effect_size"
+      ],
+      "accepted_inputs": [
+        "CSV/TSV biomarker inventory",
+        "Excel evidence tracker",
+        "BioIntel starter template"
+      ],
+      "outputs": [
+        "biomarker development funnel",
+        "evidence maturity",
+        "cohort split plan",
+        "cut-off sensitivity",
+        "validation roadmap"
+      ],
+      "workflow": [
+        "Define intended biomarker use",
+        "Review evidence and assay readiness",
+        "Plan discovery and validation cohorts",
+        "Lock the analysis and validation roadmap"
+      ],
+      "features": [
+        "Diagnostic, prognostic and predictive modes",
+        "Discovery and validation cohorts",
+        "Cut-off strategy",
+        "Pre-analytical variables",
+        "Assay requirements",
+        "Batch-effect planning",
+        "Internal and external validation",
+        "Calibration planning",
+        "Subgroup analysis",
+        "Assay qualification",
+        "Locked analysis plan",
+        "Evidence maturity"
+      ],
+      "visuals": [
+        {
+          "key": "development_funnel",
+          "title": "Biomarker development funnel",
+          "source": "funnel",
+          "kind": "funnel",
+          "x": "stage",
+          "y": "biomarkers",
+          "color": null,
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "maturity",
+          "title": "Evidence maturity by biomarker",
+          "source": "primary",
+          "kind": "bar",
+          "x": "biomarker",
+          "y": "maturity_score",
+          "color": "stage",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "assay_evidence",
+          "title": "Assay readiness versus evidence",
+          "source": "primary",
+          "kind": "scatter",
+          "x": "assay_readiness",
+          "y": "evidence",
+          "color": "validation_status",
+          "size": "effect_size",
+          "description": ""
+        },
+        {
+          "key": "cohort_split",
+          "title": "Discovery and validation cohort split",
+          "source": "cohort",
+          "kind": "donut",
+          "x": "cohort",
+          "y": null,
+          "color": null,
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "cutoff",
+          "title": "Cut-off sensitivity",
+          "source": "cutoff",
+          "kind": "line",
+          "x": "threshold",
+          "y": "performance",
+          "color": "metric",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "validation",
+          "title": "Validation status matrix",
+          "source": "matrix",
+          "kind": "heatmap",
+          "x": "validation_stage",
+          "y": "biomarker",
+          "color": null,
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "timeline",
+          "title": "Biomarker validation roadmap",
+          "source": "timeline",
+          "kind": "timeline",
+          "x": "start_day",
+          "y": "end_day",
+          "color": "stage",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "biomarker_radar",
+          "title": "Biomarker plan readiness",
+          "source": "quality",
+          "kind": "radar",
+          "x": "dimension",
+          "y": "score",
+          "color": null,
+          "size": null,
+          "description": ""
+        }
+      ],
+      "handoffs": [
+        "Endpoint & Outcome Strategy Studio",
+        "Clinical Trial Biomarker & Patient Stratification Studio",
+        "Statistical Analysis Plan Studio"
+      ],
+      "boundary": "A planning score does not establish biomarker validity. Independent analytical and clinical validation remain required."
+    },
+    {
+      "key": "sampling_biospecimen_planning",
+      "page_number": 213,
+      "title": "Sampling & Biospecimen Planning Studio",
+      "summary": "Plan collection, aliquoting, storage, shipping and retention for biospecimen-intensive studies.",
+      "required_columns": [
+        "sample_type",
+        "visit",
+        "participants",
+        "volume_ml",
+        "aliquots",
+        "storage_temp",
+        "failure_rate"
+      ],
+      "accepted_inputs": [
+        "CSV/TSV sampling plan",
+        "Excel biospecimen schedule",
+        "BioIntel starter template"
+      ],
+      "outputs": [
+        "sampling calendar",
+        "volume and aliquot forecast",
+        "storage capacity plan",
+        "shipping plan",
+        "failure contingency"
+      ],
+      "workflow": [
+        "Define specimen types and visits",
+        "Estimate volume and aliquots",
+        "Assign storage and shipping conditions",
+        "Export the biospecimen operations package"
+      ],
+      "features": [
+        "Sample type selection",
+        "Collection time points",
+        "Aliquot planning",
+        "Storage conditions",
+        "Freeze\u2013thaw limits",
+        "Shipping plan",
+        "Sample-volume estimation",
+        "Batch and plate allocation",
+        "Chain of custody",
+        "Retention schedule",
+        "Biobank capacity",
+        "Failure contingency"
+      ],
+      "visuals": [
+        {
+          "key": "sampling_calendar",
+          "title": "Sampling calendar",
+          "source": "timeline",
+          "kind": "timeline",
+          "x": "start_day",
+          "y": "end_day",
+          "color": "sample_type",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "volume",
+          "title": "Total volume by specimen",
+          "source": "primary",
+          "kind": "bar",
+          "x": "sample_type",
+          "y": "total_volume_ml",
+          "color": "visit",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "aliquots",
+          "title": "Aliquot demand",
+          "source": "primary",
+          "kind": "bar",
+          "x": "sample_type",
+          "y": "total_aliquots",
+          "color": "storage_temp",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "storage",
+          "title": "Storage capacity by temperature",
+          "source": "storage",
+          "kind": "treemap",
+          "x": "storage_temp",
+          "y": "sample_type",
+          "color": "total_aliquots",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "failure",
+          "title": "Expected sample loss",
+          "source": "primary",
+          "kind": "bar",
+          "x": "sample_type",
+          "y": "expected_failures",
+          "color": "visit",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "journey",
+          "title": "Biospecimen journey",
+          "source": "journey",
+          "kind": "sankey",
+          "x": "from",
+          "y": "to",
+          "color": "samples",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "plate",
+          "title": "Plate and batch allocation",
+          "source": "matrix",
+          "kind": "heatmap",
+          "x": "batch",
+          "y": "sample_type",
+          "color": null,
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "biospecimen_radar",
+          "title": "Biospecimen plan readiness",
+          "source": "quality",
+          "kind": "radar",
+          "x": "dimension",
+          "y": "score",
+          "color": null,
+          "size": null,
+          "description": ""
+        }
+      ],
+      "handoffs": [
+        "Data Collection & CRF Designer",
+        "Lab Instrument Import Center",
+        "Research Timeline, Milestones & Dependencies Studio"
+      ],
+      "boundary": "Volume and storage calculations must be checked against assay-specific requirements, local SOPs, biosafety and biobank constraints."
+    },
+    {
+      "key": "data_collection_crf_designer",
+      "page_number": 214,
+      "title": "Data Collection & CRF Designer",
+      "summary": "Design structured case-report forms, data dictionaries and validation rules across visits and study domains.",
+      "required_columns": [
+        "variable",
+        "domain",
+        "data_type",
+        "required",
+        "visit",
+        "validation_rule",
+        "completeness"
+      ],
+      "accepted_inputs": [
+        "CSV/TSV variable dictionary",
+        "Excel CRF specification",
+        "BioIntel starter template"
+      ],
+      "outputs": [
+        "CRF schema",
+        "variable dictionary",
+        "validation-rule map",
+        "visit matrix",
+        "data-quality readiness report"
+      ],
+      "workflow": [
+        "Define domains and visits",
+        "Create variables and controlled values",
+        "Add validation and conditional rules",
+        "Export the database-ready CRF package"
+      ],
+      "features": [
+        "Case report form builder",
+        "Variable dictionary",
+        "Data types and units",
+        "Required fields",
+        "Validation rules",
+        "Controlled vocabularies",
+        "Repeat visits",
+        "Conditional fields",
+        "Query rules",
+        "Missing-data reasons",
+        "Import/export schema",
+        "Database-ready package"
+      ],
+      "visuals": [
+        {
+          "key": "domain_variables",
+          "title": "Variables by study domain",
+          "source": "primary",
+          "kind": "bar",
+          "x": "domain",
+          "y": "variables",
+          "color": "visit",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "visit_matrix",
+          "title": "Visit \u00d7 domain data collection",
+          "source": "matrix",
+          "kind": "heatmap",
+          "x": "domain",
+          "y": "visit",
+          "color": null,
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "completeness",
+          "title": "Variable specification completeness",
+          "source": "primary",
+          "kind": "bar",
+          "x": "variable",
+          "y": "completeness",
+          "color": "domain",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "types",
+          "title": "Data type distribution",
+          "source": "primary",
+          "kind": "donut",
+          "x": "data_type",
+          "y": null,
+          "color": null,
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "required",
+          "title": "Required versus optional fields",
+          "source": "required",
+          "kind": "bar",
+          "x": "domain",
+          "y": "required_fields",
+          "color": "visit",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "validation",
+          "title": "Validation rule coverage",
+          "source": "validation",
+          "kind": "bar",
+          "x": "domain",
+          "y": "rule_coverage",
+          "color": "visit",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "dependencies",
+          "title": "Conditional field dependencies",
+          "source": "dependencies",
+          "kind": "sankey",
+          "x": "from",
+          "y": "to",
+          "color": "rules",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "crf_radar",
+          "title": "CRF readiness",
+          "source": "quality",
+          "kind": "radar",
+          "x": "dimension",
+          "y": "score",
+          "color": null,
+          "size": null,
+          "description": ""
+        }
+      ],
+      "handoffs": [
+        "Sampling & Biospecimen Planning Studio",
+        "Statistical Analysis Plan Studio",
+        "Dataset Registry & Lineage"
+      ],
+      "boundary": "A CRF specification requires privacy, security, data-management, clinical and regulatory review before deployment."
+    },
+    {
+      "key": "statistical_analysis_plan",
+      "page_number": 215,
+      "title": "Statistical Analysis Plan Studio",
+      "summary": "Build a versioned statistical analysis plan linking populations, endpoints, models, covariates, multiplicity and sensitivity analyses.",
+      "required_columns": [
+        "analysis",
+        "endpoint",
+        "population",
+        "model",
+        "covariates",
+        "multiplicity",
+        "status"
+      ],
+      "accepted_inputs": [
+        "CSV/TSV analysis inventory",
+        "Excel SAP matrix",
+        "BioIntel starter template"
+      ],
+      "outputs": [
+        "analysis matrix",
+        "endpoint-to-model map",
+        "sensitivity plan",
+        "TFL shells",
+        "locked SAP manifest"
+      ],
+      "workflow": [
+        "Define analysis populations",
+        "Map endpoints to models and estimands",
+        "Specify sensitivity and multiplicity",
+        "Review, lock and export the SAP"
+      ],
+      "features": [
+        "Analysis populations",
+        "Primary and secondary models",
+        "Covariate definition",
+        "Transformation rules",
+        "Missing-data methods",
+        "Multiple-testing correction",
+        "Subgroup analyses",
+        "Sensitivity analyses",
+        "Interim analysis",
+        "Model assumptions",
+        "Table/figure/listing shells",
+        "Version locking"
+      ],
+      "visuals": [
+        {
+          "key": "analysis_status",
+          "title": "Analysis plan status",
+          "source": "primary",
+          "kind": "bar",
+          "x": "analysis",
+          "y": "readiness_score",
+          "color": "status",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "endpoint_model",
+          "title": "Endpoint-to-model matrix",
+          "source": "matrix",
+          "kind": "heatmap",
+          "x": "model",
+          "y": "endpoint",
+          "color": null,
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "population",
+          "title": "Analyses by population",
+          "source": "primary",
+          "kind": "bar",
+          "x": "population",
+          "y": "analyses",
+          "color": "status",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "multiplicity",
+          "title": "Multiplicity strategy",
+          "source": "multiplicity",
+          "kind": "sunburst",
+          "x": "multiplicity",
+          "y": "endpoint",
+          "color": "analyses",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "sensitivity",
+          "title": "Sensitivity analysis coverage",
+          "source": "sensitivity",
+          "kind": "bar",
+          "x": "endpoint",
+          "y": "sensitivity_count",
+          "color": "status",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "assumptions",
+          "title": "Model assumption coverage",
+          "source": "assumptions",
+          "kind": "heatmap",
+          "x": "assumption",
+          "y": "analysis",
+          "color": null,
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "timeline",
+          "title": "SAP review and lock timeline",
+          "source": "timeline",
+          "kind": "timeline",
+          "x": "start_day",
+          "y": "end_day",
+          "color": "status",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "sap_radar",
+          "title": "SAP completeness",
+          "source": "quality",
+          "kind": "radar",
+          "x": "dimension",
+          "y": "score",
+          "color": null,
+          "size": null,
+          "description": ""
+        }
+      ],
+      "handoffs": [
+        "Study Protocol Designer",
+        "Endpoint & Outcome Strategy Studio",
+        "Pre-Registration & Reproducibility Studio"
+      ],
+      "boundary": "The SAP must be reviewed and approved before unblinded outcome analysis and must reflect protocol, estimand and regulatory requirements."
+    },
+    {
+      "key": "research_feasibility_recruitment",
+      "page_number": 216,
+      "title": "Research Feasibility & Recruitment Planner",
+      "summary": "Forecast enrolment, screen failures, site activation, dropout, cost and study-completion probability.",
+      "required_columns": [
+        "site",
+        "eligible_pool",
+        "screen_rate",
+        "monthly_recruitment",
+        "startup_months",
+        "dropout_rate",
+        "cost_per_subject"
+      ],
+      "accepted_inputs": [
+        "CSV/TSV site feasibility table",
+        "Excel recruitment assumptions",
+        "BioIntel starter template"
+      ],
+      "outputs": [
+        "recruitment forecast",
+        "site ranking",
+        "completion probability",
+        "screening funnel",
+        "cost and rescue scenarios"
+      ],
+      "workflow": [
+        "Import site assumptions",
+        "Set target and uncertainty",
+        "Simulate recruitment and dropout",
+        "Select sites and export the feasibility package"
+      ],
+      "features": [
+        "Eligible population estimation",
+        "Site recruitment rates",
+        "Screen-failure rate",
+        "Dropout assumptions",
+        "Recruitment scenarios",
+        "Competing-study effects",
+        "Seasonality",
+        "Site activation delays",
+        "Rescue strategies",
+        "Timeline estimation",
+        "Cost estimation",
+        "Completion probability"
+      ],
+      "visuals": [
+        {
+          "key": "recruitment",
+          "title": "Cumulative recruitment forecast",
+          "source": "forecast",
+          "kind": "line",
+          "x": "month",
+          "y": "cumulative_enrolled",
+          "color": "scenario",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "site_rank",
+          "title": "Site feasibility ranking",
+          "source": "primary",
+          "kind": "bar",
+          "x": "site",
+          "y": "feasibility_score",
+          "color": "risk_band",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "funnel",
+          "title": "Screening and enrolment funnel",
+          "source": "funnel",
+          "kind": "funnel",
+          "x": "stage",
+          "y": "participants",
+          "color": null,
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "completion",
+          "title": "Study completion probability",
+          "source": "simulation",
+          "kind": "line",
+          "x": "month",
+          "y": "completion_probability",
+          "color": "scenario",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "cost",
+          "title": "Cost versus enrolment",
+          "source": "primary",
+          "kind": "scatter",
+          "x": "projected_enrolment",
+          "y": "projected_cost",
+          "color": "risk_band",
+          "size": "eligible_pool",
+          "description": ""
+        },
+        {
+          "key": "startup",
+          "title": "Site activation delays",
+          "source": "primary",
+          "kind": "bar",
+          "x": "site",
+          "y": "startup_months",
+          "color": "risk_band",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "fan",
+          "title": "Recruitment uncertainty fan",
+          "source": "fan",
+          "kind": "area",
+          "x": "month",
+          "y": "median_enrolled",
+          "color": "scenario",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "feasibility_radar",
+          "title": "Feasibility dimensions",
+          "source": "quality",
+          "kind": "radar",
+          "x": "dimension",
+          "y": "score",
+          "color": null,
+          "size": null,
+          "description": ""
+        }
+      ],
+      "handoffs": [
+        "Cohort Definition & Eligibility Builder",
+        "Clinical Trial Design Studio",
+        "Research Timeline, Milestones & Dependencies Studio"
+      ],
+      "boundary": "Recruitment forecasts are scenario-based estimates and must be updated with real site data, competing studies and operational constraints."
+    },
+    {
+      "key": "research_timeline_dependencies",
+      "page_number": 217,
+      "title": "Research Timeline, Milestones & Dependencies Studio",
+      "summary": "Plan tasks, dependencies, critical paths, resources and risk-adjusted timelines across a research programme.",
+      "required_columns": [
+        "task",
+        "phase",
+        "duration_days",
+        "predecessor",
+        "owner",
+        "progress",
+        "risk"
+      ],
+      "accepted_inputs": [
+        "CSV/TSV task plan",
+        "Excel project schedule",
+        "BioIntel starter template"
+      ],
+      "outputs": [
+        "Gantt schedule",
+        "critical path",
+        "milestone map",
+        "resource load",
+        "delay sensitivity"
+      ],
+      "workflow": [
+        "Import tasks and dependencies",
+        "Validate the dependency graph",
+        "Calculate schedule and critical path",
+        "Export the baseline and risk-adjusted roadmap"
+      ],
+      "features": [
+        "Study phases",
+        "Milestones",
+        "Task dependencies",
+        "Critical path",
+        "Resource assignment",
+        "Approval dependencies",
+        "Sample/data availability",
+        "Risk-adjusted timeline",
+        "Delay simulation",
+        "Baseline versions",
+        "Planned-vs-actual",
+        "Resource conflicts"
+      ],
+      "visuals": [
+        {
+          "key": "gantt",
+          "title": "Research programme Gantt",
+          "source": "timeline",
+          "kind": "timeline",
+          "x": "start_day",
+          "y": "end_day",
+          "color": "phase",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "critical",
+          "title": "Critical path tasks",
+          "source": "primary",
+          "kind": "bar",
+          "x": "task",
+          "y": "duration_days",
+          "color": "critical",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "dependencies",
+          "title": "Task dependency network",
+          "source": "dependencies",
+          "kind": "sankey",
+          "x": "from",
+          "y": "to",
+          "color": "duration_days",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "progress",
+          "title": "Planned versus actual progress",
+          "source": "primary",
+          "kind": "bar",
+          "x": "task",
+          "y": "progress",
+          "color": "phase",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "resource",
+          "title": "Owner workload",
+          "source": "resource",
+          "kind": "bar",
+          "x": "owner",
+          "y": "workload_days",
+          "color": "phase",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "risk",
+          "title": "Delay risk heatmap",
+          "source": "risk_matrix",
+          "kind": "heatmap",
+          "x": "phase",
+          "y": "owner",
+          "color": null,
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "milestones",
+          "title": "Milestone timeline",
+          "source": "milestones",
+          "kind": "scatter",
+          "x": "day",
+          "y": "milestone",
+          "color": "status",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "timeline_radar",
+          "title": "Schedule readiness",
+          "source": "quality",
+          "kind": "radar",
+          "x": "dimension",
+          "y": "score",
+          "color": null,
+          "size": null,
+          "description": ""
+        }
+      ],
+      "handoffs": [
+        "Study Protocol Designer",
+        "Research Risk & Mitigation Planner",
+        "Project Portfolio"
+      ],
+      "boundary": "Schedule estimates depend on accurate dependencies, resource availability and external approvals. They are not contractual commitments."
+    },
+    {
+      "key": "research_risk_mitigation",
+      "page_number": 218,
+      "title": "Research Risk & Mitigation Planner",
+      "summary": "Identify, score, mitigate and monitor scientific, statistical, assay, data and operational research risks.",
+      "required_columns": [
+        "risk",
+        "category",
+        "probability",
+        "impact",
+        "mitigation_status",
+        "owner"
+      ],
+      "accepted_inputs": [
+        "CSV/TSV risk register",
+        "Excel risk tracker",
+        "BioIntel starter template"
+      ],
+      "outputs": [
+        "risk matrix",
+        "mitigation board",
+        "residual risk",
+        "trigger plan",
+        "risk trend"
+      ],
+      "workflow": [
+        "Import or create risks",
+        "Score probability and impact",
+        "Assign mitigations, owners and triggers",
+        "Monitor residual risk and export the register"
+      ],
+      "features": [
+        "Scientific risks",
+        "Recruitment risks",
+        "Assay risks",
+        "Data-quality risks",
+        "Operational risks",
+        "Statistical risks",
+        "Probability and impact",
+        "Mitigation ownership",
+        "Trigger thresholds",
+        "Contingency actions",
+        "Residual risk",
+        "Review history"
+      ],
+      "visuals": [
+        {
+          "key": "risk_matrix",
+          "title": "Probability \u00d7 impact risk matrix",
+          "source": "primary",
+          "kind": "scatter",
+          "x": "probability",
+          "y": "impact",
+          "color": "category",
+          "size": "risk_score",
+          "description": ""
+        },
+        {
+          "key": "priority",
+          "title": "Top research risks",
+          "source": "primary",
+          "kind": "bar",
+          "x": "risk",
+          "y": "risk_score",
+          "color": "category",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "residual",
+          "title": "Residual risk after mitigation",
+          "source": "primary",
+          "kind": "bar",
+          "x": "risk",
+          "y": "residual_score",
+          "color": "mitigation_status",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "category",
+          "title": "Risk exposure by category",
+          "source": "category",
+          "kind": "bar",
+          "x": "category",
+          "y": "total_risk",
+          "color": "mitigation_status",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "mitigation",
+          "title": "Mitigation status",
+          "source": "primary",
+          "kind": "donut",
+          "x": "mitigation_status",
+          "y": null,
+          "color": null,
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "owner",
+          "title": "Risk ownership",
+          "source": "owner",
+          "kind": "bar",
+          "x": "owner",
+          "y": "open_risks",
+          "color": "category",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "bowtie",
+          "title": "Risk-to-control pathways",
+          "source": "controls",
+          "kind": "sankey",
+          "x": "from",
+          "y": "to",
+          "color": "weight",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "risk_radar",
+          "title": "Risk management readiness",
+          "source": "quality",
+          "kind": "radar",
+          "x": "dimension",
+          "y": "score",
+          "color": null,
+          "size": null,
+          "description": ""
+        }
+      ],
+      "handoffs": [
+        "Research Timeline, Milestones & Dependencies Studio",
+        "Study Protocol Designer",
+        "Activity & Risk Center"
+      ],
+      "boundary": "Risk scoring supports prioritisation but does not replace domain expert judgement, safety management or organisational governance."
+    },
+    {
+      "key": "evidence_gap_literature_planning",
+      "page_number": 219,
+      "title": "Evidence Gap & Literature Planning Studio",
+      "summary": "Map existing evidence, contradictions and unanswered questions to justify and prioritise new research.",
+      "required_columns": [
+        "question",
+        "population",
+        "intervention",
+        "comparator",
+        "outcome",
+        "evidence_count",
+        "quality",
+        "contradiction"
+      ],
+      "accepted_inputs": [
+        "CSV/TSV evidence inventory",
+        "Excel literature map",
+        "BioIntel starter template"
+      ],
+      "outputs": [
+        "evidence-gap matrix",
+        "evidence pyramid",
+        "contradiction map",
+        "priority ranking",
+        "search strategy manifest"
+      ],
+      "workflow": [
+        "Define PICO/PECO questions",
+        "Inventory and grade evidence",
+        "Identify contradictions and gaps",
+        "Prioritise research and export the search plan"
+      ],
+      "features": [
+        "Research question decomposition",
+        "PICO/PECO framework",
+        "Evidence inventory",
+        "Contradictory findings",
+        "Evidence quality",
+        "Missing populations",
+        "Missing endpoints",
+        "Knowledge-gap ranking",
+        "Search strategy",
+        "Study justification",
+        "Citation-backed rationale",
+        "Research priority scoring"
+      ],
+      "visuals": [
+        {
+          "key": "gap_priority",
+          "title": "Research gap priority",
+          "source": "primary",
+          "kind": "bar",
+          "x": "question",
+          "y": "priority_score",
+          "color": "quality",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "evidence_pyramid",
+          "title": "Evidence quality pyramid",
+          "source": "quality_counts",
+          "kind": "funnel",
+          "x": "quality",
+          "y": "records",
+          "color": null,
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "gap_matrix",
+          "title": "Population \u00d7 outcome evidence gaps",
+          "source": "matrix",
+          "kind": "heatmap",
+          "x": "outcome",
+          "y": "population",
+          "color": null,
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "contradiction",
+          "title": "Contradiction versus evidence volume",
+          "source": "primary",
+          "kind": "scatter",
+          "x": "evidence_count",
+          "y": "contradiction",
+          "color": "quality",
+          "size": "priority_score",
+          "description": ""
+        },
+        {
+          "key": "pico",
+          "title": "PICO/PECO evidence map",
+          "source": "pico",
+          "kind": "sankey",
+          "x": "from",
+          "y": "to",
+          "color": "evidence_count",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "coverage",
+          "title": "Evidence coverage by domain",
+          "source": "coverage",
+          "kind": "bar",
+          "x": "domain",
+          "y": "coverage_score",
+          "color": "quality",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "timeline",
+          "title": "Evidence publication timeline",
+          "source": "timeline",
+          "kind": "line",
+          "x": "year",
+          "y": "records",
+          "color": "quality",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "evidence_radar",
+          "title": "Evidence planning readiness",
+          "source": "quality",
+          "kind": "radar",
+          "x": "dimension",
+          "y": "score",
+          "color": null,
+          "size": null,
+          "description": ""
+        }
+      ],
+      "handoffs": [
+        "Study Protocol Designer",
+        "Internet Research Hub",
+        "Pre-Registration & Reproducibility Studio"
+      ],
+      "boundary": "Evidence maps depend on the completeness and quality of the imported literature inventory and do not constitute a systematic review by themselves."
+    },
+    {
+      "key": "preregistration_reproducibility",
+      "page_number": 220,
+      "title": "Pre-Registration & Reproducibility Studio",
+      "summary": "Lock hypotheses, outcomes, exclusions, sample-size rationale and analysis decisions before observing study outcomes.",
+      "required_columns": [
+        "item",
+        "section",
+        "locked",
+        "status",
+        "planned_value",
+        "executed_value",
+        "deviation_reason"
+      ],
+      "accepted_inputs": [
+        "CSV/TSV preregistration checklist",
+        "Excel analysis lock",
+        "BioIntel starter template"
+      ],
+      "outputs": [
+        "locked plan manifest",
+        "protocol checksum",
+        "deviation log",
+        "planned-vs-executed comparison",
+        "registry-ready package"
+      ],
+      "workflow": [
+        "Define hypotheses and confirmatory decisions",
+        "Lock the protocol and analysis plan",
+        "Record justified deviations",
+        "Export the reproducibility package"
+      ],
+      "features": [
+        "Hypothesis locking",
+        "Primary endpoint locking",
+        "Sample-size justification",
+        "Exclusion rules",
+        "Analysis-plan locking",
+        "Random seed capture",
+        "Protocol checksum",
+        "Deviation tracking",
+        "Registry-ready export",
+        "Registered-report checklist",
+        "Reproducibility manifest",
+        "Planned-vs-executed comparison"
+      ],
+      "visuals": [
+        {
+          "key": "lock_status",
+          "title": "Preregistration lock status",
+          "source": "primary",
+          "kind": "bar",
+          "x": "section",
+          "y": "locked_items",
+          "color": "status",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "completeness",
+          "title": "Preregistration completeness",
+          "source": "primary",
+          "kind": "bar",
+          "x": "item",
+          "y": "completeness",
+          "color": "section",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "deviations",
+          "title": "Deviation severity",
+          "source": "deviations",
+          "kind": "bar",
+          "x": "item",
+          "y": "severity",
+          "color": "section",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "planned_executed",
+          "title": "Planned versus executed alignment",
+          "source": "alignment",
+          "kind": "heatmap",
+          "x": "comparison",
+          "y": "item",
+          "color": null,
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "timeline",
+          "title": "Plan lock and deviation timeline",
+          "source": "timeline",
+          "kind": "timeline",
+          "x": "day",
+          "y": "event",
+          "color": "status",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "sections",
+          "title": "Locked content by section",
+          "source": "primary",
+          "kind": "donut",
+          "x": "section",
+          "y": null,
+          "color": null,
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "audit",
+          "title": "Reproducibility audit trail",
+          "source": "audit",
+          "kind": "sankey",
+          "x": "from",
+          "y": "to",
+          "color": "events",
+          "size": null,
+          "description": ""
+        },
+        {
+          "key": "prereg_radar",
+          "title": "Reproducibility readiness",
+          "source": "quality",
+          "kind": "radar",
+          "x": "dimension",
+          "y": "score",
+          "color": null,
+          "size": null,
+          "description": ""
+        }
+      ],
+      "handoffs": [
+        "Study Protocol Designer",
+        "Statistical Analysis Plan Studio",
+        "Evidence Package Studio"
+      ],
+      "boundary": "A preregistration package improves transparency but does not guarantee methodological quality, ethical approval or successful replication."
+    }
+  ],
+  "counts": {
+    "new_modules": 16,
+    "research_planning_modules_total": 18,
+    "feature_assignments": 188,
+    "visual_assignments": 128,
+    "starter_templates": 16
+  }
+}

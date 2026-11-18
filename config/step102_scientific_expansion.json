@@ -1,0 +1,12 @@
+{
+  "schema": "biointel.step102.scientific-expansion.v1",
+  "release": "10.2.0",
+  "module_count": 21,
+  "hub_key": "scientific_expansion_hub",
+  "page_range": [112, 132],
+  "accepted_table_formats": ["csv", "tsv", "txt", "json"],
+  "default_threshold": 0.7,
+  "default_highlight_count": 30,
+  "evidence_exports": ["csv", "json"],
+  "requires_independent_validation": true
+}

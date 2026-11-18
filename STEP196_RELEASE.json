@@ -1,0 +1,164 @@
+{
+  "schema": "biointel.step196.release.v1",
+  "step": 196,
+  "version": "15.5.0",
+  "status": "verified-internal",
+  "title": "Functional P0/P1 Execution Upgrade, Permanent Runtime Handover, Aesthetic UI Polish and Five-Part Windows Delivery",
+  "features": [
+    "80 of 80 logical major modules receive contextual Online Research and AI panels",
+    "module-specific official scientific provider selection and entity-aware queries",
+    "free Ollama plus SearXNG evidence-grounded answers inside each module",
+    "direct official database results without requiring Ollama",
+    "official website deep links with query handoff",
+    "downloadable answers, citations and provider evidence",
+    "two-step INSTALL_WINDOWS.bat then RUN_BOTH_WINDOWS.bat workflow",
+    "five-part Windows package with cross-part source completeness verification",
+    "managed current-release Desktop shortcut and application-data folder",
+    "dynamic current-release installer contract validation without obsolete Step 193 marker dependency",
+    "pre-install contract self-test before virtual-environment changes",
+    "Step 193 mandatory baseline compatibility with current Step 196 version",
+    "OS-owned installer lock prevents false already-running failures after crashes",
+    "atomic installer locking blocks only a genuinely live concurrent installer",
+    "current-release runtime entrypoints, friendly startup diagnostics and cross-release launch protection",
+    "session-preserving Back and Forward navigation plus complete curated module catalogue metadata",
+    "brand SVG module icons in global discovery surfaces and a branded Windows Desktop shortcut icon",
+    "1 GB per-file scientific upload boundary with local streamed staging above the 100 MB interactive threshold",
+    "operational scientific canvases in place of debugger-style JSON walls across lifecycle, qualification, native-viewer and recovery surfaces",
+    "integrated post-install scientific runtime preparation for the 25 weakest practical-readiness modules",
+    "background acquisition of seven small public reference releases with resume-safe optional-service handling",
+    "installed-versus-qualified engine and reference states in the specialist readiness center",
+    "V13 responsive visual cards that prevent narrow five-to-eight-column metric strips on upgraded screens",
+    "V13 polished Quick Start launch cards with clearer workflow grouping and resilient page navigation",
+    "V13 premium hero, boundary, status-card and tabbed layouts on formerly raw production and interoperability command centers",
+    "V13 readable operational data tables on selected assurance, qualification and release screens",
+    "V14 full P0/P1 priority portfolio: 25 P0 technical and 37 P1 scientific modules",
+    "V14 module-specific four-gate remediation workbench embedded in all 62 priority module pages",
+    "V14 local SHA-256 evidence staging, draft gate manifests and tamper-evident audit-chain verification",
+    "V14 P0/P1 portfolio centres inside final qualification and real-world execution command centres",
+    "V14 blocks demo, template, simulation, synthetic and rehearsal artifacts from satisfying a proof gate",
+    "V14 preserves manual review, rating promotion and controlled-release authority as non-automated decisions",
+    "V15 verified automatic cross-release runtime handover prevents stale older UI/API/worker state from blocking launch",
+    "V15 command-line ownership verification prevents stale or reused PIDs from terminating unrelated Windows processes",
+    "V15 runtime reconciliation removes only local runtime records and never changes project data, reports, workspaces, exports or databases",
+    "V16 canonical execution identities prevent seven historical P0/P1 page keys from splitting runtime and evidence work",
+    "V16 routes all 62 P0/P1 modules to their installed native, scientific, specialist or dedicated local workflow",
+    "V16 adds checksum-bound authorised input staging, durable functional workspaces and saved execution preflights",
+    "V16 keeps input, runtime preflight, benchmark, independent confirmation and controlled release as distinct non-automated states"
+  ],
+  "external_boundary": "Public SearXNG instances can rate-limit or become unavailable. Official provider APIs can change or temporarily fail. Sensitive data must not be submitted to public web services; use a private SearXNG instance for confidential work. V16 does not fabricate patient cohorts, licensed database rights, wet-lab outcomes, independent-site validation, ethics approvals, expert authority or regulatory clearance. A local package check, SHA-256 record, execution preflight, draft manifest or displayed visual state is not a scientific or organizational approval.",
+  "package_revision": "V16-5PART",
+  "installer_contract_fix": {
+    "issue": "Step 193 mandatory self-test used obsolete step193_part markers during Step 196 post-install validation",
+    "resolution": "Active release marker/helper detection is dynamic; version baseline compatibility is checked against current VERSION; pre-install contract test added",
+    "verified_current_step": 205,
+    "verified_current_version": "15.5.0"
+  },
+  "installer_lock_fix": {
+    "issue": "PID/age-based JSON lock could falsely block after crashes or Windows PID reuse.",
+    "resolution": "OS-owned non-blocking file lock. Windows automatically releases it when the owning process exits; a leftover file is non-blocking.",
+    "lock_schema": "biointel.step196.install-lock.v3",
+    "manual_lock_deletion_required": false
+  },
+  "part_count": 5,
+  "installer_lock": "os-owned-file-lock",
+  "optional_online_setup": "background-non-blocking",
+  "dependency_order_fix": {
+    "issue": "Pre-install contract imported the scientific module graph before pandas and other wheels were installed.",
+    "resolution": "New standard-library-only pre-install contract; scientific imports and module qualification run only with .venv Python after offline bootstrap.",
+    "preinstall_script": "scripts/step196_preinstall_contract.py"
+  },
+  "online_setup_fix": {
+    "issue": "Ollama and model download ran while the core installer lock was held, causing second-launch already-running messages and long apparent hangs.",
+    "resolution": "Core installation completes and releases its lock first; optional Ollama/model provisioning continues in a separate background worker and cannot fail core installation.",
+    "background_log": "%LOCALAPPDATA%\\BioIntelAI\\UserData\\runtime_logs\\step196-free-web-ai-background.log"
+  },
+  "scientific_runtime_setup": {
+    "issue": "The prior specialist-runtime launchers were separate from the required two-step Windows workflow, and installed state was not clearly distinguished from scientific qualification.",
+    "resolution": "INSTALL_WINDOWS.bat starts a non-blocking local readiness worker after verified core setup. It plans the 25 weakest modules, attempts small public reference acquisition, and uses the existing resumable WSL2/micromamba workflow for public engines when Windows, storage and WSL2 are available.",
+    "background_log": "%LOCALAPPDATA%\\BioIntelAI\\UserData\\runtime_logs\\step196-scientific-runtime-background.log",
+    "never_auto_completed": "provider-authorized/licence-controlled tools, very-large reference databases, model/cohort qualification, wet-lab evidence, external confirmation, governance and controlled release"
+  },
+  "ui_polish_upgrade": {
+    "scope": "Quick Start, Step 189/190/193 command centers, and selected high-traffic assurance, qualification, catalogue and release pages",
+    "delivery": [
+      "Responsive metric boards that adapt to narrow desktop and laptop windows",
+      "Consistent hero, scientific-boundary, tab and readable-data-table hierarchy",
+      "Grouped Quick Start action cards with resilient internal navigation",
+      "No scientific, readiness, qualification or release state is changed by visual presentation"
+    ],
+    "visual_state_is_not_evidence": true
+  },
+  "p0_p1_upgrade": {
+    "scope": {
+      "p0_technical_modules": 25,
+      "p1_scientific_modules": 37,
+      "priority_modules": 62,
+      "proof_gates_per_module": 4
+    },
+    "proof_gates": [
+      "qualified_runtime_data",
+      "real_benchmark",
+      "independent_confirmation",
+      "governance_release"
+    ],
+    "delivery": [
+      "Module-specific remediation requirements and P0/P1 execution ordering",
+      "Local streamed SHA-256 evidence staging with a 1 GB per-file boundary",
+      "Draft evidence manifests and tamper-evident local audit events",
+      "Portfolio queue, local workspace checklists and four-gate verification views",
+      "Embedded evidence workbenches on all 62 named priority module pages"
+    ],
+    "safety": [
+      "Demo, template, simulation, synthetic and rehearsal artifacts are explicitly non-qualifying",
+      "A complete local four-gate row is only a candidate for responsible manual review",
+      "Rating promotion and controlled release are not automated",
+      "User-staged evidence remains outside the immutable package payload"
+    ],
+    "automatic_controlled_release": false
+  },
+  "p0_p1_functional_execution_upgrade": {
+    "scope": {
+      "priority_modules": 62,
+      "native_pipeline_routes": 15,
+      "scientific_workbench_routes": 16,
+      "specialist_workbench_routes": 19,
+      "dedicated_workflow_routes": 12,
+      "canonical_execution_aliases": 7
+    },
+    "delivery": [
+      "One canonical execution key per priority module while preserving the original page/evidence key",
+      "Authorised local execution-input staging with streamed SHA-256 and a 1 GiB boundary",
+      "Disk-space preflight headroom before local execution input staging",
+      "Non-destructive functional workspaces with execution contracts, input, reference, working, result, review and export folders",
+      "Saved execution preflight records in the same tamper-evident audit chain as proof-gate evidence",
+      "Portfolio execution inventory and per-module execution-contract download"
+    ],
+    "safety": [
+      "Local input staging has no proof-gate, rating or release effect",
+      "Native optional-engine checks report unavailable dependencies as blockers instead of claiming readiness",
+      "No proprietary model weights, licensed databases, clinical cohorts or wet-lab results are bundled or fabricated",
+      "Existing user evidence and workspace files are preserved when functional workspaces are prepared"
+    ],
+    "automatic_controlled_release": false
+  },
+  "runtime_handover_fix": {
+    "issue": "A shared local runtime record could treat a live older extracted release as a hard launch error for the current release.",
+    "resolution": "The launcher verifies each recorded UI, API or worker PID by command line and recorded extraction root, safely hands off confirmed old BioIntel processes, discards stale or reused-PID records without terminating unrelated processes, then launches the current release.",
+    "preserves": [
+      "project data",
+      "reports",
+      "workspaces",
+      "exports",
+      "projects",
+      "databases"
+    ],
+    "automatic_handover_only_for_verified_biointel_processes": true,
+    "unverified_pid_termination": false,
+    "runtime_audit": "%LOCALAPPDATA%\\BioIntelAI\\UserData\\runtime_logs\\biointel-runtime-reconciliation-latest.json"
+  },
+  "user_flow": [
+    "Extract all five matching ZIP parts into the same empty folder",
+    "INSTALL_WINDOWS.bat",
+    "RUN_BOTH_WINDOWS.bat"
+  ]
+}

@@ -1,0 +1,12 @@
+secrets:
+  databaseUrl: postgresql://biointel:test@postgres:5432/biointel
+  redisUrl: redis://:test@redis:6379/0
+  objectStorageEndpoint: http://minio:9000
+  objectStorageAccessKey: test
+  objectStorageSecretKey: test-secret
+  apiClientsJson: '{"clients":[{"client_id":"ci","key":"ci-key","role":"admin","tenant_ids":["default"]}]}'
+persistence:
+  models: {enabled: true, existingClaim: biointel-models}
+  data: {enabled: true, existingClaim: biointel-data}
+  reports: {enabled: true, existingClaim: biointel-reports}
+ingress: {enabled: false}

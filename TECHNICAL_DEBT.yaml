@@ -1,0 +1,60 @@
+schema: biointel.technical-debt.v1
+policy: Every open item requires an owner, severity, rationale, due date and retirement plan.
+items:
+  - id: TD-001
+    title: Decompose legacy API route module
+    owner: platform-architecture
+    severity: medium
+    status: accepted
+    due_date: 2027-03-31
+    rationale: Compatibility retained while new routers are migrated incrementally.
+    retirement_plan: Move each domain to an APIRouter with contract tests.
+  - id: TD-002
+    title: Replace remaining local SQLite repositories in distributed production mode
+    owner: data-platform
+    severity: high
+    status: accepted
+    due_date: 2026-12-31
+    rationale: Local-first mode remains supported; production adapters are gated separately.
+    retirement_plan: Complete repository adapter migration and dual-write qualification.
+  - id: TD-003
+    title: Decompose legacy command-line module
+    owner: developer-experience
+    severity: medium
+    status: accepted
+    due_date: 2027-06-30
+    rationale: Compatibility commands are stable but exceed the preferred module-size budget.
+    retirement_plan: Split commands into domain-specific command modules with unchanged CLI contracts.
+  - id: TD-004
+    title: Decompose large asset, data-pack and document repositories
+    owner: platform-architecture
+    severity: medium
+    status: accepted
+    due_date: 2027-06-30
+    rationale: Stable legacy repositories are registered as temporary quality-budget exclusions.
+    retirement_plan: Introduce repository interfaces and migrate one bounded context per release.
+  - id: TD-005
+    title: Decompose knowledge warehouse service
+    owner: knowledge-platform
+    severity: medium
+    status: accepted
+    due_date: 2027-09-30
+    rationale: Search, indexing and graph operations currently share one compatibility module.
+    retirement_plan: Separate ingestion, query, graph and indexing services with contract tests.
+
+  - id: TD-006
+    title: Extract premium aesthetic CSS into generated style assets
+    owner: frontend-platform
+    severity: low
+    status: accepted
+    due_date: 2027-06-30
+    rationale: The module is primarily a versioned CSS contract and is temporarily excluded from the Python line budget while visual baselines protect behavior.
+    retirement_plan: Move static CSS templates into typed asset modules without changing theme output or visual baselines.
+  - id: TD-007
+    title: Split experience theme catalogue into bounded theme packs
+    owner: frontend-platform
+    severity: low
+    status: accepted
+    due_date: 2027-06-30
+    rationale: The catalogue intentionally co-locates complete theme definitions; it is registered as managed legacy debt rather than silently bypassing the gate.
+    retirement_plan: Generate the catalogue from separate validated theme-pack modules and retain snapshot compatibility.

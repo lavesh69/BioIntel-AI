@@ -1,0 +1,15 @@
+-r requirements.lock
+alembic==1.16.5
+boto3==1.40.40
+celery==5.5.3
+cryptography==45.0.7
+opentelemetry-api==1.37.0
+opentelemetry-instrumentation-fastapi==0.58b0
+opentelemetry-sdk==1.37.0
+prometheus-client==0.23.1
+psycopg[binary,pool]==3.2.10
+python-jose[cryptography]==3.5.0
+redis==6.5.0
+
+# Credential-free, offline Education lecture transcription runtime.
+faster-whisper==1.2.1

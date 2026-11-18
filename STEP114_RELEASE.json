@@ -1,0 +1,17 @@
+{
+  "schema": "biointel.step114.release.v1",
+  "product": "BioIntel AI",
+  "version": "11.9.0",
+  "release_name": "Scientific Depth & Optimization",
+  "excluded_module_upgrades": [
+    "DTI Predictor",
+    "DTI Validation Evidence Center",
+    "Lab Instrument Import Center",
+    "LIMS, ELN & Sample Chain of Custody Hub",
+    "Instrument Integration Hub"
+  ],
+  "eligible_depth_profiles": 64,
+  "engine_adapters": 53,
+  "protected_execution_plans": 21,
+  "scientific_claim_policy": "External engines, reference databases, wet-lab evidence, clinical evidence and regulatory outcomes are never fabricated or silently marked complete."
+}

@@ -1,0 +1,354 @@
+{
+  "step": 133,
+  "build": "module-only-scientific-depth-upgrade",
+  "product_version_preserved": "13.2.0",
+  "scope": "Only the 15 Step 128 next-generation biomedical modules",
+  "module_count": 15,
+  "new_central_pages": 0,
+  "navigation_categories_added": 0,
+  "themes_changed": false,
+  "fonts_changed": false,
+  "module_profiles": {
+    "digital_pathology_foundation": {
+      "title": "Pathology cohort and scanner-quality upgrade",
+      "feature_groups": [
+        "Slide-level tissue/tumour composition",
+        "Scanner/site drift",
+        "Tile uncertainty",
+        "Pathologist review queue"
+      ],
+      "visual_groups": [
+        "Slide QC matrix",
+        "Tumour-versus-tissue scatter",
+        "Scanner drift map",
+        "Tile uncertainty distribution"
+      ],
+      "quality_gates": [
+        "Minimum tissue coverage",
+        "Embedding/OOD review",
+        "Scanner/site balance",
+        "Slide-level sample size"
+      ],
+      "external_engine_boundary": "OpenSlide + validated pathology foundation model/MIL pipeline"
+    },
+    "long_read_epigenome": {
+      "title": "Coverage-weighted methylation and imprinting upgrade",
+      "feature_groups": [
+        "Coverage-weighted methylation",
+        "Allelic imbalance",
+        "Condition effect",
+        "FDR-controlled DMR review"
+      ],
+      "visual_groups": [
+        "DMR volcano",
+        "Haplotype ribbon table",
+        "Coverage-effect map",
+        "Region-condition heatmap"
+      ],
+      "quality_gates": [
+        "Minimum coverage",
+        "Replicate count",
+        "Effect-size threshold",
+        "FDR threshold"
+      ],
+      "external_engine_boundary": "Dorado/Remora/Modkit plus validated DMR and phasing workflow"
+    },
+    "single_cell_long_read_isoforms": {
+      "title": "Isoform usage and transcript-support upgrade",
+      "feature_groups": [
+        "Isoform entropy",
+        "Cluster-specific usage",
+        "Full-length support",
+        "Switch-candidate ranking"
+      ],
+      "visual_groups": [
+        "Isoform usage heatmap",
+        "Transcript support scatter",
+        "Cluster entropy",
+        "Switch-candidate table"
+      ],
+      "quality_gates": [
+        "Cell support",
+        "UMI depth",
+        "Full-length fraction",
+        "Junction support"
+      ],
+      "external_engine_boundary": "Long-read alignment/assembly plus SQANTI-like transcript classification"
+    },
+    "biomedical_foundation_model_hub": {
+      "title": "Model operations and hardware-fit upgrade",
+      "feature_groups": [
+        "Hardware fit",
+        "Licence risk",
+        "Efficiency frontier",
+        "Operational readiness"
+      ],
+      "visual_groups": [
+        "Accuracy-resource frontier",
+        "Task-modality coverage",
+        "Licence matrix",
+        "Local readiness chart"
+      ],
+      "quality_gates": [
+        "Asset checksum",
+        "Licence compatibility",
+        "RAM/VRAM fit",
+        "Benchmark provenance"
+      ],
+      "external_engine_boundary": "Local model registry, secure downloader, quantisation and benchmark runner"
+    },
+    "amr_surveillance": {
+      "title": "AMR concordance and surveillance upgrade",
+      "feature_groups": [
+        "Phenotype-genotype concordance",
+        "Lineage/location trends",
+        "Emerging signal detection",
+        "Conflict review"
+      ],
+      "visual_groups": [
+        "Gene-isolate matrix",
+        "Concordance heatmap",
+        "Temporal resistance trend",
+        "Location-lineage summary"
+      ],
+      "quality_gates": [
+        "Species confirmation",
+        "Breakpoint version",
+        "Database release",
+        "Minimum isolate count"
+      ],
+      "external_engine_boundary": "AMRFinderPlus/ResFinder/CARD with MLST/cgMLST and breakpoint standards"
+    },
+    "spatial_medicine_tme": {
+      "title": "Tumour microenvironment neighbourhood upgrade",
+      "feature_groups": [
+        "Compartment composition",
+        "Immune exclusion",
+        "Region contrast",
+        "Spatial neighbourhood enrichment"
+      ],
+      "visual_groups": [
+        "Spatial point map",
+        "Region-cell heatmap",
+        "Immune exclusion profile",
+        "Patient-region comparison"
+      ],
+      "quality_gates": [
+        "Coordinate completeness",
+        "Cell-type coverage",
+        "Patient replication",
+        "Region size"
+      ],
+      "external_engine_boundary": "Native spatial platform loader, segmentation, deconvolution and neighbourhood modelling"
+    },
+    "gene_therapy_vector": {
+      "title": "Vector construct safety and manufacturability upgrade",
+      "feature_groups": [
+        "Packaging margin",
+        "Sequence composition",
+        "Safety liabilities",
+        "Construct comparison"
+      ],
+      "visual_groups": [
+        "Capacity gauge",
+        "Construct risk matrix",
+        "Sequence composition",
+        "Vector comparison"
+      ],
+      "quality_gates": [
+        "Vector-specific cargo limit",
+        "ITR/LTR integrity",
+        "GC/extreme motif review",
+        "Evidence completeness"
+      ],
+      "external_engine_boundary": "Validated vector-design, immunogenicity and integration-risk workflows"
+    },
+    "cell_therapy_cart": {
+      "title": "CAR construct efficacy-safety upgrade",
+      "feature_groups": [
+        "Antigen risk",
+        "Exhaustion/persistence",
+        "Domain comparison",
+        "Manufacturability"
+      ],
+      "visual_groups": [
+        "Efficacy-safety frontier",
+        "Antigen risk matrix",
+        "Domain comparison",
+        "Construct ranking"
+      ],
+      "quality_gates": [
+        "Healthy-tissue expression",
+        "scFv evidence",
+        "Safety switch",
+        "Manufacturing evidence"
+      ],
+      "external_engine_boundary": "IgBLAST/ANARCI plus antigen atlas and experimental CAR validation"
+    },
+    "federated_biomedical_ai": {
+      "title": "Federated robustness and privacy upgrade",
+      "feature_groups": [
+        "Site heterogeneity",
+        "Round stability",
+        "Privacy-utility",
+        "Outlier site review"
+      ],
+      "visual_groups": [
+        "Round trajectory",
+        "Site drift heatmap",
+        "Privacy-utility frontier",
+        "Global-local gap"
+      ],
+      "quality_gates": [
+        "Minimum sites",
+        "Client participation",
+        "Privacy budget",
+        "Subgroup fairness"
+      ],
+      "external_engine_boundary": "Federated runtime with secure aggregation, DP accountant and attack testing"
+    },
+    "clinical_biomarker_survival": {
+      "title": "Survival and biomarker validation upgrade",
+      "feature_groups": [
+        "Kaplan-Meier",
+        "Log-rank screening",
+        "Hazard-rate ratio",
+        "Cut-off stability"
+      ],
+      "visual_groups": [
+        "KM curve",
+        "Risk table",
+        "Site heterogeneity",
+        "Biomarker response profile"
+      ],
+      "quality_gates": [
+        "Event count",
+        "Proportional-hazards review",
+        "External cohort",
+        "Missing-data strategy"
+      ],
+      "external_engine_boundary": "Validated Cox/competing-risk modelling with nested and external validation"
+    },
+    "protein_ligand_codesign": {
+      "title": "Multi-objective co-design upgrade",
+      "feature_groups": [
+        "Pareto dominance",
+        "Selectivity penalty",
+        "Variant-ligand consistency",
+        "Candidate diversity"
+      ],
+      "visual_groups": [
+        "Pareto frontier",
+        "Variant-ligand heatmap",
+        "Score-component radar",
+        "Selectivity-risk plot"
+      ],
+      "quality_gates": [
+        "Structure quality",
+        "Pose validity",
+        "Selectivity panel",
+        "Experimental binding evidence"
+      ],
+      "external_engine_boundary": "Docking/rescoring, structure validation, MD/free-energy and wet-lab feedback"
+    },
+    "pangenome_population_medicine": {
+      "title": "Population specificity and reference-bias upgrade",
+      "feature_groups": [
+        "Population differentiation",
+        "Reference-bias audit",
+        "Path diversity",
+        "Clinical-weight review"
+      ],
+      "visual_groups": [
+        "Population-variant heatmap",
+        "Differentiation profile",
+        "Bias distribution",
+        "Path coverage"
+      ],
+      "quality_gates": [
+        "Population sample size",
+        "Graph release",
+        "Coordinate system",
+        "Ancestry context"
+      ],
+      "external_engine_boundary": "VG/ODGI/minigraph graph services with validated population frequency resources"
+    },
+    "pharmacovigilance_intelligence": {
+      "title": "Signal detection and case-series upgrade",
+      "feature_groups": [
+        "ROR/PRR/IC",
+        "Empirical-Bayes shrinkage",
+        "Time-to-onset",
+        "Seriousness review"
+      ],
+      "visual_groups": [
+        "Signal volcano",
+        "Drug-event matrix",
+        "Time-to-onset profile",
+        "Outcome severity chart"
+      ],
+      "quality_gates": [
+        "Duplicate cases",
+        "Drug/event coding",
+        "Exposure denominator",
+        "Temporal stability"
+      ],
+      "external_engine_boundary": "MedDRA/WHODrug normalisation with validated signal-management workflow"
+    },
+    "synthetic_cohort_trial": {
+      "title": "Trial operating-characteristics upgrade",
+      "feature_groups": [
+        "Monte Carlo risk difference",
+        "Covariate balance",
+        "Event-time simulation",
+        "Site heterogeneity"
+      ],
+      "visual_groups": [
+        "Simulation distribution",
+        "Love plot",
+        "KM comparison",
+        "Site forest-style view"
+      ],
+      "quality_gates": [
+        "Scenario seed",
+        "Treatment estimand",
+        "Dropout model",
+        "Type-I error/power"
+      ],
+      "external_engine_boundary": "Prespecified simulation protocol and validated statistical trial engine"
+    },
+    "autonomous_lab_planner": {
+      "title": "Design-of-experiments and resource upgrade",
+      "feature_groups": [
+        "Factor-level coverage",
+        "Control coverage",
+        "Replication adequacy",
+        "Resource schedule"
+      ],
+      "visual_groups": [
+        "Design matrix",
+        "Cost waterfall",
+        "Schedule timeline",
+        "Risk register"
+      ],
+      "quality_gates": [
+        "Power/sample size",
+        "Randomisation",
+        "Blinding",
+        "Human approval"
+      ],
+      "external_engine_boundary": "Validated DoE/statistical design engine with inventory, scheduling and ELN/LIMS integration"
+    }
+  },
+  "locked_page_sha256": {
+    "pages/6_DTI_Predictor.py": "84b3ecec1356b7239a057459210af4cd130c57c08dd9449b7239d1fe5954e0cc",
+    "pages/74_DTI_Validation_Evidence_Center.py": "a700a8a21649b49cf0e3a1521d2afad45039b83b767c2fe730b93fee7d4f7f11",
+    "pages/126_LIMS_ELN_and_Sample_Chain_of_Custody_Hub.py": "eadaef1a283a5fa11ce6b243aa561508ba9ceba9f6fdcc207f4853ccf7d86905",
+    "pages/109_Lab_Instrument_Import_Center.py": "22b5aba5bfea37bb1ef330ed7cca3773467463f883189602d96a0151311c8f70",
+    "pages/157_Instrument_Integration_Hub_2.py": "cf3a5f94756def0007dbff31184ec276d90b03fc6d6e1ca792c87189e5ab7d6d"
+  },
+  "limits": {
+    "module_rows": 250000,
+    "visual_rows": 10000
+  }
+}

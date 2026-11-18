@@ -1,0 +1,73 @@
+{
+  "schema": "biointel.education.phase23-30.test-results.v1",
+  "generated_at_utc": "2026-07-30T08:40:34Z",
+  "focused_phase23_30": {
+    "passed": 18,
+    "failed": 0,
+    "skipped": 0,
+    "duration_seconds": 12.78
+  },
+  "education_shiro_connect_regression": {
+    "passed": 224,
+    "failed": 0,
+    "skipped": 0,
+    "duration_seconds": 117.74
+  },
+  "streamlit_apptest": {
+    "pages": 2,
+    "empty_state_passed": 2,
+    "authenticated_passed": 2,
+    "exceptions": 0
+  },
+  "diagnostic_unicode_path": {
+    "passed": 1,
+    "failed": 0
+  },
+  "worker_once": {
+    "passed": 1,
+    "failed": 0
+  },
+  "dependency_lock": {
+    "passed": 1,
+    "packages": 34
+  },
+  "offline_wheelhouse": {
+    "passed": 1,
+    "wheels": 122,
+    "hash_mismatches": 0
+  },
+  "local_load_probe": {
+    "profile": 500,
+    "operations": 800,
+    "concurrency": 32,
+    "errors": 0,
+    "operation_metrics": "measured",
+    "virtual_users": "simulated",
+    "production_capacity": "not_verified"
+  },
+  "pre_phase23_broad_baseline": {
+    "passed": 1914,
+    "failed": 278,
+    "skipped": 28,
+    "errors": 3,
+    "warnings": 11,
+    "duration_seconds": 1146.96,
+    "status": "NOT_GREEN"
+  },
+  "post_phase23_broad_diagnostic": {
+    "passed": 1931,
+    "failed": 279,
+    "skipped": 28,
+    "errors": 3,
+    "warnings": 11,
+    "duration_seconds": 761.17,
+    "status": "NOT_GREEN",
+    "phase23_30_failures_in_summary": 0,
+    "delta_from_pre_baseline": {
+      "passed": 17,
+      "failed": 1,
+      "skipped": 0,
+      "errors": 0
+    }
+  }
+}

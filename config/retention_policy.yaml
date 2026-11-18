@@ -1,0 +1,28 @@
+schema: biointel.retention/v1
+legal_hold:
+  supported: true
+  overrides_disposition: true
+  requires_quality_approval: true
+record_classes:
+  audit_events:
+    retention_years: 10
+    disposition: controlled_delete
+  electronic_signatures:
+    retention_years: 10
+    disposition: preserve_with_signed_record
+  validation_records:
+    retention_years: 10
+    disposition: controlled_archive
+  model_release_packages:
+    retention_years: 10
+    disposition: controlled_archive
+  research_data:
+    retention_years: 7
+    disposition: policy_and_contract_dependent
+  security_logs:
+    retention_days: 400
+    disposition: controlled_delete
+metadata_persistence:
+  preserve_tombstone: true
+  preserve_identifier: true
+  preserve_provenance: true

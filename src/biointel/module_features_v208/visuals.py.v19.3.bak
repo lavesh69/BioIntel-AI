@@ -1,0 +1,191 @@
+from __future__ import annotations
+
+from typing import Any
+
+import pandas as pd
+import plotly.express as px
+import plotly.graph_objects as go
+
+
+def _first_numeric(frame: pd.DataFrame, excluded: set[str] | None = None) -> str | None:
+    excluded = excluded or set()
+    for column in frame.select_dtypes(include="number").columns:
+        if str(column) not in excluded:
+            return str(column)
+    return None
+
+
+def figures_for_result(feature_key: str, result: dict[str, Any]) -> dict[str, go.Figure]:
+    figures: dict[str, go.Figure] = {}
+    if feature_key == "advanced_eeg_meg":
+        bands = result.get("band_power")
+        if isinstance(bands, pd.DataFrame) and not bands.empty:
+            figures["relative_band_power"] = px.bar(bands, x="band", y="relative_power", color="channel", barmode="group", title="Relative frequency-band power")
+        epochs = result.get("epoch_summary")
+        if isinstance(epochs, pd.DataFrame) and not epochs.empty:
+            figures["epoch_artifacts"] = px.line(epochs, x="start_seconds", y="artifact_fraction", title="Candidate artifact fraction by epoch")
+    elif feature_key == "advanced_neuroimaging":
+        slices = result.get("slice_summary")
+        if isinstance(slices, pd.DataFrame) and not slices.empty:
+            figures["slice_qc"] = px.line(slices, x="slice_index", y="mean_intensity", color="axis", title="Slice intensity profile")
+        components = result.get("components")
+        if isinstance(components, pd.DataFrame) and not components.empty:
+            figures["component_volume"] = px.bar(components.head(30), x="component", y="volume_mm3", title="Threshold component volumes")
+    elif feature_key == "advanced_neurogenetics":
+        frame = result.get("variants")
+        if isinstance(frame, pd.DataFrame) and not frame.empty:
+            figures["variant_priority"] = px.bar(frame.head(30), x="variant_key", y="research_priority_score", color="research_tier", title="Research variant priority")
+    elif feature_key == "advanced_expression_atlas":
+        frame = result.get("expression_profile")
+        if isinstance(frame, pd.DataFrame) and not frame.empty:
+            figures["expression_context"] = px.bar(frame.head(60), x="region", y="expression", color="cell_type", facet_col="gene", title="Brain-region and cell-type expression")
+    elif feature_key == "advanced_neuro_omics":
+        frame = result.get("feature_ranking")
+        if isinstance(frame, pd.DataFrame) and not frame.empty:
+            figures["biomarker_ranking"] = px.scatter(frame, x="cohens_d", y="univariate_auc", size="priority", hover_name="feature", title="Biomarker effect and discrimination")
+        calibration = result.get("calibration")
+        if isinstance(calibration, pd.DataFrame) and not calibration.empty:
+            figure = px.line(calibration, x="mean_probability", y="observed_fraction", markers=True, title="Cross-validated calibration")
+            figure.add_trace(go.Scatter(x=[0, 1], y=[0, 1], mode="lines", name="ideal"))
+            figures["calibration"] = figure
+    elif feature_key == "advanced_precision_neurology":
+        frame = result.get("assignments")
+        if isinstance(frame, pd.DataFrame) and {"pc1", "pc2", "cluster"}.issubset(frame.columns):
+            figures["consensus_clusters"] = px.scatter(frame, x="pc1", y="pc2", color=frame["cluster"].astype(str), hover_name="subject_id", title="Consensus stratification")
+        evaluation = result.get("cluster_evaluation")
+        if isinstance(evaluation, pd.DataFrame) and not evaluation.empty:
+            figures["cluster_stability"] = px.line(evaluation.sort_values("clusters"), x="clusters", y=["mean_silhouette", "mean_pairwise_ari", "selection_score"], markers=True, title="Cluster stability")
+    elif feature_key == "advanced_neuro_pk":
+        frame = result.get("curve")
+        if isinstance(frame, pd.DataFrame) and not frame.empty:
+            figures["concentrations"] = px.line(frame, x="time_hours", y=["plasma_concentration_mg_l", "brain_concentration_mg_l"], title="Plasma and brain exposure")
+            figures["occupancy"] = px.line(frame, x="time_hours", y=["kinetic_occupancy", "equilibrium_occupancy"], title="Time-dependent target occupancy")
+    elif feature_key == "advanced_target_evidence":
+        edges = result.get("edges")
+        if isinstance(edges, pd.DataFrame) and not edges.empty:
+            figures["evidence_edges"] = px.bar(edges, x="source", y="evidence_score", color="target", title="Target–disease evidence")
+    elif feature_key == "advanced_trial_intelligence":
+        frame = result.get("landscape")
+        if isinstance(frame, pd.DataFrame) and not frame.empty:
+            figures["trial_landscape"] = px.bar(frame, x="phase_normalized", y="trials", color="status_normalized", title="CNS trial landscape")
+    elif feature_key == "epilepsy_diary":
+        frame = result.get("daily_timeline")
+        if isinstance(frame, pd.DataFrame) and not frame.empty:
+            figures["event_timeline"] = px.line(frame, x="date", y=["event_count", "rolling_7d_events"], title="Daily events and 7-day total")
+    elif feature_key == "movement_disorders":
+        frame = result.get("candidate_steps")
+        if isinstance(frame, pd.DataFrame) and not frame.empty:
+            figures["candidate_steps"] = px.scatter(frame, x="time_seconds", y="magnitude", title="Candidate movement peaks")
+    elif feature_key == "neurodegeneration_progression":
+        frame = result.get("subject_progression")
+        if isinstance(frame, pd.DataFrame) and not frame.empty:
+            figures["progression_burden"] = px.bar(frame.head(30), x="subject_id", y="multimodal_change_burden", title="Multimodal change burden")
+    elif feature_key == "neurocritical_care":
+        frame = result.get("timeline")
+        if isinstance(frame, pd.DataFrame) and not frame.empty:
+            numeric = [column for column in frame.select_dtypes(include="number").columns][:6]
+            if numeric:
+                figures["trend_timeline"] = px.line(frame, x="timestamp", y=numeric, title="Neurocritical research trends")
+    elif feature_key == "genomic_cohort_qc":
+        frame = result.get("sample_qc")
+        if isinstance(frame, pd.DataFrame) and not frame.empty:
+            figures["sample_flags"] = px.histogram(frame, x="review_flag_count", title="Sample review flags")
+    elif feature_key == "single_cell_qc":
+        frame = result.get("cell_qc")
+        if isinstance(frame, pd.DataFrame) and not frame.empty:
+            figures["single_cell_qc"] = px.scatter(frame, x="library_size", y="detected_genes", color="low_quality_candidate", size="mitochondrial_fraction", title="Single-cell QC")
+    elif feature_key == "spatial_qc":
+        frame = result.get("local_spatial_qc")
+        if isinstance(frame, pd.DataFrame) and not frame.empty:
+            figures["spatial_map"] = px.scatter(frame, x="x", y="y", color="value", size=frame["local_difference"].abs(), title="Spatial value and local difference")
+    elif feature_key == "multiomics_qc":
+        frame = result.get("pca_coordinates")
+        if isinstance(frame, pd.DataFrame) and {"PC1", "PC2"}.issubset(frame.columns):
+            color = "batch" if "batch" in frame else "group" if "group" in frame else None
+            figures["multiomics_pca"] = px.scatter(frame, x="PC1", y="PC2", color=color, title="Multi-omics PCA")
+    elif feature_key in {"microbiome_controls", "metagenomics_controls"}:
+        frame = result.get("feature_qc")
+        if isinstance(frame, pd.DataFrame) and not frame.empty:
+            x = "control_prevalence" if "control_prevalence" in frame else _first_numeric(frame)
+            y = "sample_prevalence" if "sample_prevalence" in frame else _first_numeric(frame, {x} if x else set())
+            if x and y:
+                figures["control_prevalence"] = px.scatter(frame, x=x, y=y, color="contamination_candidate", hover_name="feature" if "feature" in frame else None, title="Control prevalence review")
+    elif feature_key == "compound_standardization":
+        frame = result.get("compounds")
+        if isinstance(frame, pd.DataFrame) and not frame.empty and {"molecular_weight", "logp"}.issubset(frame.columns):
+            figures["chemical_space"] = px.scatter(frame[frame["valid"].fillna(False)], x="molecular_weight", y="logp", size="tpsa", color="lipinski_alert_count", hover_name="compound_id", title="Standardized chemical space")
+    elif feature_key == "docking_validation":
+        frame = result.get("pose_review")
+        if isinstance(frame, pd.DataFrame) and not frame.empty:
+            x = "rmsd" if "rmsd" in frame else "consensus_pose_score"
+            figures["pose_review"] = px.scatter(frame, x=x, y="docking_score" if "docking_score" in frame else "score", color="ligand_id" if "ligand_id" in frame else None, size="interaction_support", title="Docking pose review")
+    elif feature_key == "admet_calibration":
+        frame = result.get("calibration")
+        if isinstance(frame, pd.DataFrame) and not frame.empty:
+            figure = px.scatter(frame, x="predicted", y="measured", title="ADMET measured versus predicted")
+            numeric = frame[["predicted", "measured"]].apply(pd.to_numeric, errors="coerce").dropna()
+            if len(numeric) >= 2 and numeric["predicted"].nunique() > 1:
+                import numpy as np
+
+                slope, intercept = np.polyfit(numeric["predicted"].to_numpy(), numeric["measured"].to_numpy(), 1)
+                x_line = np.linspace(float(numeric["predicted"].min()), float(numeric["predicted"].max()), 100)
+                figure.add_trace(go.Scatter(x=x_line, y=slope * x_line + intercept, mode="lines", name="least-squares fit"))
+            figures["calibration"] = figure
+        domain = result.get("query_applicability_domain")
+        if isinstance(domain, pd.DataFrame) and not domain.empty:
+            figures["domain"] = px.bar(domain, x="compound_id", y="mahalanobis_distance", color="inside_applicability_domain", title="Applicability-domain distance")
+    elif feature_key == "lead_optimization":
+        frame = result.get("ranking")
+        if isinstance(frame, pd.DataFrame) and not frame.empty:
+            numeric = [column for column in frame.select_dtypes(include="number").columns if column not in {"internal_rank"}]
+            if len(numeric) >= 2:
+                figures["pareto"] = px.scatter(frame, x=numeric[0], y=numeric[1], color="pareto_front", size="internal_progression_score", hover_name="compound_id" if "compound_id" in frame else None, title="Multi-objective candidate space")
+    elif feature_key == "protein_design":
+        frame = result.get("candidate_qc")
+        if isinstance(frame, pd.DataFrame) and not frame.empty:
+            figures["design_qc"] = px.scatter(frame, x="sequence_identity", y="design_review_score", size="mutation_count", color="conserved_position_violations", hover_name="candidate_id", title="Protein design review")
+    elif feature_key == "antibody_developability":
+        frame = result.get("developability")
+        if isinstance(frame, pd.DataFrame) and not frame.empty:
+            figures["antibody_liabilities"] = px.bar(frame[frame["valid"].fillna(False)], x="antibody_id", y="liability_count", title="Antibody sequence liabilities")
+    elif feature_key == "neoantigen":
+        frame = result.get("ranking")
+        if isinstance(frame, pd.DataFrame) and not frame.empty:
+            figures["neoantigen_ranking"] = px.scatter(frame, x="binding_affinity_nm", y="research_priority_score", color="normal_tissue_filter_flag", hover_name="peptide", title="Neoantigen research ranking", log_x=True)
+    elif feature_key == "microscopy_qc":
+        frame = result.get("channel_qc")
+        if isinstance(frame, pd.DataFrame) and not frame.empty:
+            figures["channel_qc"] = px.bar(frame, x="channel", y=["focus_laplacian_variance", "saturation_fraction", "background_median"], barmode="group", title="Microscopy channel QC")
+    elif feature_key == "plate_qc":
+        frame = result.get("well_qc")
+        if isinstance(frame, pd.DataFrame) and not frame.empty:
+            figures["plate_map"] = px.scatter(frame, x="column", y="row", color="measurement", symbol="control_type", facet_col="plate", title="Plate measurement map")
+    elif feature_key == "bioprocess":
+        frame = result.get("time_series")
+        if isinstance(frame, pd.DataFrame) and not frame.empty:
+            y = [column for column in ("biomass", "product", "substrate") if column in frame]
+            figures["bioprocess_timeline"] = px.line(frame, x="time_hours", y=y, title="Bioprocess trajectory")
+    elif feature_key == "organoid":
+        frame = result.get("measurements")
+        if isinstance(frame, pd.DataFrame) and not frame.empty and "time" in frame:
+            figures["organoid_growth"] = px.line(frame, x="time", y="volume", color="organoid_id", title="Organoid volume trajectories")
+    elif feature_key == "gene_therapy":
+        frame = result.get("vector_qc")
+        if isinstance(frame, pd.DataFrame) and not frame.empty:
+            figures["vector_capacity"] = px.bar(frame, x="vector_type", y=["length", "capacity"], barmode="group", title="Vector cargo capacity")
+    elif feature_key == "experiment_planner":
+        frame = result.get("run_plan")
+        if isinstance(frame, pd.DataFrame) and not frame.empty:
+            figures["run_order"] = px.scatter(frame, x="run_order", y="block", color="group", symbol="record_type", title="Randomized experiment run order")
+    if not figures:
+        for key, value in result.items():
+            if not isinstance(value, pd.DataFrame) or value.empty:
+                continue
+            numeric = [str(column) for column in value.select_dtypes(include="number").columns]
+            categorical = [str(column) for column in value.columns if str(column) not in numeric]
+            if numeric:
+                preview = value.head(50).copy()
+                x = categorical[0] if categorical else preview.index
+                figures[key] = px.bar(preview, x=x, y=numeric[0], title=key.replace("_", " ").title())
+                break
+    return figures

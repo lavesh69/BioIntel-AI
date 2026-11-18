@@ -1,0 +1,38 @@
+{
+  "release": "Step 110",
+  "version": "11.6.0",
+  "name": "Advanced Scientific Viewers",
+  "scope": {
+    "advanced_viewers": 19,
+    "specialized_view_options": 57,
+    "embedded_module_pages": 40,
+    "comparison_mode": true,
+    "accessibility_presets": 4,
+    "linked_selection": true,
+    "saved_views_and_annotations": true,
+    "offline_report_bundle": true,
+    "global_upload_limit_gb": 1
+  },
+  "viewers": [
+    "Interactive Genome Browser",
+    "3D Molecular Structure Viewer",
+    "Whole-Slide Pathology & Spatial Overlay",
+    "Microscopy Segmentation Overlay Editor",
+    "Flow-Cytometry Gating Canvas",
+    "Mass-Spectrometry & Chromatogram Viewer",
+    "Interactive Phylogenetic Tree",
+    "Interactive Plate Map & QC Overlay",
+    "Pedigree & Variant Segregation Viewer",
+    "Geographic Outbreak Map with Timeline",
+    "Pangenome Variation-Graph Explorer",
+    "Single-Cell Embedding Explorer",
+    "Sequence & Protein Feature Track",
+    "Multi-Omics Relationship Explorer",
+    "Live Bioprocess & Instrument Dashboard",
+    "Workflow DAG Execution Monitor",
+    "Freezer, Rack & Sample Map",
+    "Offline Static Visual Report Renderer",
+    "Visual Regression & State Coverage"
+  ],
+  "scientific_boundary": "The built-in viewers are local exploratory and evidence-review tools. They do not replace validated clinical, diagnostic, regulatory, vendor-certified or specialist scientific interpretation."
+}

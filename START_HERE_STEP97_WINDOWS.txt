@@ -1,0 +1,8 @@
+BIOINTEL AI STEP 97 - WINDOWS FIXED
+
+1. Extract all four ZIP parts into the SAME destination.
+2. Open the final BioIntel-AI folder.
+3. Double-click INSTALL_WINDOWS.bat.
+4. After INSTALLATION COMPLETE, double-click RUN_BOTH_WINDOWS.bat.
+
+The fixed launchers do not pass absolute application-folder paths through fragile CMD quoting. They derive the application root internally, support spaces and = signs in folder names, wait for both UI and API readiness, and open the browser only after the server is ready.

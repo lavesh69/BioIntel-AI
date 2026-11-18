@@ -1,0 +1,320 @@
+{
+  "schema": "biointel.education-phase14-verification.v1",
+  "generated_at": "2026-07-29T04:19:37.291718+00:00",
+  "passed": true,
+  "passed_controls": 29,
+  "total_controls": 29,
+  "controls": [
+    {
+      "name": "phase14_schema",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "outcome_levels",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "outcome_relationship",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "outcome_tenant_isolation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "assessment_mapping",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "evidence_pending_review",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_evidence_review",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "bounded_attainment",
+      "passed": true,
+      "detail": {
+        "id": "attain_5ed1df2237fe45ee82928aa8a44fff3d",
+        "institution_id": "inst_3718320f562f4a6ca62da0c9eb69e35e",
+        "subject_id": "subj_e09c5f2c885c4d92a3b8fe9babf98fc0",
+        "outcome_id": "outcome_10dd0eafd2f84f1aacad812bf855ca2b",
+        "period_start": null,
+        "period_end": null,
+        "student_count": 3,
+        "evidence_count": 1,
+        "attainment_percent": 70.0,
+        "target_percent": 65.0,
+        "state": "completed",
+        "detail_json": "{\"human_review_required\":true,\"method\":\"weighted mean of approved mapped assessment results\",\"no_accreditation_claim\":true,\"outcome\":{\"code\":\"CO1\",\"id\":\"outcome_10dd0eafd2f84f1aacad812bf855ca2b\",\"title\":\"Explain molecular inheritance\"},\"sources\":[{\"label\":\"assignment\",\"mapping\":{\"assessment_id\":\"asg_914a26e88c3046d9bb70197152f8c03e\",\"assessment_type\":\"assignment\",\"created_at\":\"2026-07-29T04:19:36.481827+00:00\",\"created_by\":\"teacher\",\"id\":\"amap_77dd6b8a2ac6406ba45f14319ec0a8d8\",\"institution_id\":\"inst_3718320f562f4a6ca62da0c9eb69e35e\",\"outcome_id\":\"outcome_10dd0eafd2f84f1aacad812bf855ca2b\",\"rationale\":\"\",\"updated_at\":\"2026-07-29T04:19:36.481827+00:00\",\"weight\":1.0},\"percent\":70.0,\"sample_count\":3,\"weight\":1.0}]}",
+        "created_by": "teacher",
+        "created_at": "2026-07-29T04:19:36.525853+00:00",
+        "detail": {
+          "outcome": {
+            "id": "outcome_10dd0eafd2f84f1aacad812bf855ca2b",
+            "code": "CO1",
+            "title": "Explain molecular inheritance"
+          },
+          "sources": [
+            {
+              "mapping": {
+                "id": "amap_77dd6b8a2ac6406ba45f14319ec0a8d8",
+                "institution_id": "inst_3718320f562f4a6ca62da0c9eb69e35e",
+                "outcome_id": "outcome_10dd0eafd2f84f1aacad812bf855ca2b",
+                "assessment_type": "assignment",
+                "assessment_id": "asg_914a26e88c3046d9bb70197152f8c03e",
+                "weight": 1.0,
+                "rationale": "",
+                "created_by": "teacher",
+                "created_at": "2026-07-29T04:19:36.481827+00:00",
+                "updated_at": "2026-07-29T04:19:36.481827+00:00"
+              },
+              "label": "assignment",
+              "sample_count": 3,
+              "percent": 70.0,
+              "weight": 1.0
+            }
+          ],
+          "method": "weighted mean of approved mapped assessment results",
+          "human_review_required": true,
+          "no_accreditation_claim": true
+        },
+        "target_met": true
+      }
+    },
+    {
+      "name": "evidence_matrix",
+      "passed": true,
+      "detail": {
+        "outcomes": 1,
+        "mapped": 1,
+        "with_approved_evidence": 1,
+        "target_met": 1
+      }
+    },
+    {
+      "name": "no_accreditation_claim",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "quality_improvement_evidence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "psychometric_sessions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "psychometric_question_metrics",
+      "passed": true,
+      "detail": [
+        {
+          "id": "qstat_26cd7b7257ab49d284b0cc9f40093841",
+          "run_id": "psych_ca2967c6b850441582dee448068a7b9b",
+          "institution_id": "inst_3718320f562f4a6ca62da0c9eb69e35e",
+          "exam_id": "exam_7d1c9297358547f08079150ddc627f9b",
+          "question_id": "exq_dafc28b76e604b4b84b673f793c30ce3",
+          "response_count": 5,
+          "omitted_count": 0,
+          "difficulty_index": 0.6,
+          "discrimination_index": 58.33333333333333,
+          "point_biserial": 0.7637626158259733,
+          "mean_item_score": 0.6,
+          "created_at": "2026-07-29T04:19:37.153255+00:00",
+          "prompt": "DNA base?",
+          "question_type": "single_choice",
+          "marks": 1.0,
+          "difficulty": "medium",
+          "bloom_level": "understand",
+          "distractors": {
+            "\"A\"": 3,
+            "\"B\"": 2
+          },
+          "flags": []
+        },
+        {
+          "id": "qstat_9f25b683583343eb9e049e878f4a22da",
+          "run_id": "psych_ca2967c6b850441582dee448068a7b9b",
+          "institution_id": "inst_3718320f562f4a6ca62da0c9eb69e35e",
+          "exam_id": "exam_7d1c9297358547f08079150ddc627f9b",
+          "question_id": "exq_b3906bb6043648578e37b9de85a6fb9d",
+          "response_count": 5,
+          "omitted_count": 0,
+          "difficulty_index": 0.6,
+          "discrimination_index": 58.33333333333333,
+          "point_biserial": 0.7637626158259733,
+          "mean_item_score": 0.6,
+          "created_at": "2026-07-29T04:19:37.153255+00:00",
+          "prompt": "DNA carries heredity",
+          "question_type": "true_false",
+          "marks": 1.0,
+          "difficulty": "medium",
+          "bloom_level": "understand",
+          "distractors": {
+            "\"False\"": 2,
+            "\"True\"": 3
+          },
+          "flags": []
+        }
+      ]
+    },
+    {
+      "name": "psychometric_human_review",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "psychometric_persistence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "support_transparency",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "support_sensitive_attributes_excluded",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "human_intervention_plan",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "intervention_lifecycle",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "calendar_event",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "calendar_audience_enforcement",
+      "passed": true,
+      "detail": {
+        "institution_id": "inst_3718320f562f4a6ca62da0c9eb69e35e",
+        "start_at": "2026-08-01T00:00:00+00:00",
+        "end_at": "2026-09-01T00:00:00+00:00",
+        "events": [
+          {
+            "id": "event_66eb553a0fdd4c7dbb9dd7e0e1416a60",
+            "institution_id": "inst_3718320f562f4a6ca62da0c9eb69e35e",
+            "title": "Bioinformatics seminar",
+            "event_type": "seminar",
+            "starts_at": "2026-08-10T10:00:00+00:00",
+            "ends_at": "2026-08-10T11:00:00+00:00",
+            "state": "scheduled",
+            "created_at": "2026-07-29T04:19:37.239297+00:00",
+            "updated_at": "2026-07-29T04:19:37.239297+00:00",
+            "description": "",
+            "location": "Auditorium",
+            "owner_id": "teacher",
+            "all_day": 0,
+            "source": "biointel",
+            "audience": {
+              "roles": [
+                "university_student"
+              ]
+            },
+            "calendar_kind": "academic_event"
+          }
+        ],
+        "event_count": 1
+      }
+    },
+    {
+      "name": "ics_export",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "ics_sha256",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "phase14_honest_posture",
+      "passed": true,
+      "detail": {
+        "institution_id": "inst_3718320f562f4a6ca62da0c9eb69e35e",
+        "counts": {
+          "outcomes": 2,
+          "approved_evidence": 1,
+          "attainment_runs": 1,
+          "psychometric_runs": 1,
+          "success_snapshots": 1,
+          "open_interventions": 0,
+          "calendar_exports": 1
+        },
+        "controls": {
+          "outcome_mapping": true,
+          "evidence_review": true,
+          "attainment_calculation": true,
+          "quality_cycles": true,
+          "psychometrics": true,
+          "transparent_support_rules": true,
+          "human_intervention_review": true,
+          "portable_ics_calendar": true
+        },
+        "local_control_coverage_percent": 100.0,
+        "qualification_boundaries": [
+          "Outcome evidence organization does not itself confer accreditation.",
+          "Psychometrics require adequate samples and expert interpretation.",
+          "Student-support snapshots are transparent support signals, not diagnoses or automatic penalties.",
+          "External calendar synchronization still requires provider credentials."
+        ]
+      }
+    },
+    {
+      "name": "phase14_page",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "phase14_ui",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "phase14_worker",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "phase14_navigation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "phase14_api_contract",
+      "passed": true,
+      "detail": [
+        "phase14/outcomes",
+        "phase14/evidence-matrix",
+        "phase14/quality-cycles",
+        "phase14/exams/{exam_id}/psychometrics",
+        "phase14/success-snapshots",
+        "phase14/calendar-events",
+        "phase14/calendar-export",
+        "phase14/posture"
+      ]
+    }
+  ]
+}

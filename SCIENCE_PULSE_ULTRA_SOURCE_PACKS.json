@@ -1,0 +1,73 @@
+[
+  {
+    "key": "official_live_news",
+    "members": [
+      "rss_nature_biotechnology",
+      "rss_nibib_news",
+      "rss_nlm_news",
+      "rss_sciencedaily_biology"
+    ],
+    "note": "All members are independently managed and scheduled, but a first-class pack persistence/API layer was not added in this focused live-news increment.",
+    "status": "PARTIALLY_IMPLEMENTED"
+  },
+  {
+    "key": "publication_and_citation",
+    "members": [],
+    "note": "No working adapter was added; no placeholder source is exposed as live.",
+    "status": "NOT_IMPLEMENTED"
+  },
+  {
+    "key": "datasets_and_repositories",
+    "members": [],
+    "note": "No working adapter was added; no placeholder source is exposed as live.",
+    "status": "NOT_IMPLEMENTED"
+  },
+  {
+    "key": "protocols_and_methods",
+    "members": [],
+    "note": "No working adapter was added; no placeholder source is exposed as live.",
+    "status": "NOT_IMPLEMENTED"
+  },
+  {
+    "key": "biological_database_updates",
+    "members": [],
+    "note": "No working adapter was added; no placeholder source is exposed as live.",
+    "status": "NOT_IMPLEMENTED"
+  },
+  {
+    "key": "clinical_trials",
+    "members": [],
+    "note": "No working adapter was added; no placeholder source is exposed as live.",
+    "status": "NOT_IMPLEMENTED"
+  },
+  {
+    "key": "regulatory_updates",
+    "members": [],
+    "note": "No working adapter was added; no placeholder source is exposed as live.",
+    "status": "NOT_IMPLEMENTED"
+  },
+  {
+    "key": "grants_and_funding",
+    "members": [],
+    "note": "No working adapter was added; no placeholder source is exposed as live.",
+    "status": "NOT_IMPLEMENTED"
+  },
+  {
+    "key": "patents_and_ip",
+    "members": [],
+    "note": "No working adapter was added; no placeholder source is exposed as live.",
+    "status": "NOT_IMPLEMENTED"
+  },
+  {
+    "key": "conferences_and_events",
+    "members": [],
+    "note": "No working adapter was added; no placeholder source is exposed as live.",
+    "status": "NOT_IMPLEMENTED"
+  },
+  {
+    "key": "software_and_workflows",
+    "members": [],
+    "note": "No working adapter was added; no placeholder source is exposed as live.",
+    "status": "NOT_IMPLEMENTED"
+  }
+]

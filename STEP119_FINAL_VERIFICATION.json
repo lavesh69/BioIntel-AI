@@ -1,0 +1,53 @@
+{
+  "schema": "biointel.step119.final-verification.v1",
+  "version": "11.9.0",
+  "status": "PASS_WITH_RUNTIME_SCOPE_NOTE",
+  "scope": "Workspace content completeness, card diagnostics, overflow resilience and release packaging",
+  "verification": {
+    "workspace_content": {
+      "passed": 78,
+      "failed": 0,
+      "summary_cards": 468,
+      "unique_fingerprints": 78
+    },
+    "shared_renderer_static_pages": {
+      "passed": 77,
+      "failed": 0
+    },
+    "representative_runtime_pages": {
+      "passed": 3,
+      "failed": 0
+    },
+    "selected_tests": {
+      "passed": 65,
+      "failed": 0
+    },
+    "python_compilation": {
+      "passed": 844,
+      "failed": 0
+    },
+    "application_self_test": {
+      "passed": 7,
+      "failed": 0,
+      "build_runtime": "Python 3.13.5 x64",
+      "installed_windows_runtime_target": "Python 3.11 x64"
+    },
+    "sqlite_integrity": {
+      "healthy": 36,
+      "total": 36,
+      "rows_checked": 108077
+    },
+    "catalogue_theme_regression": {
+      "passed": true,
+      "module_pages": 173,
+      "embedded_workspaces": 78,
+      "searchable_items": 251
+    },
+    "excluded_source_hashes": {
+      "preserved": 5,
+      "total": 5
+    }
+  },
+  "runtime_scope_note": "A full 77-page AppTest sweep was attempted in the build container but exceeded the command execution window. Static shared-renderer coverage is 77/77, and three representative runtime pages from sequence, batch and imaging groups passed. Step 118 had already qualified all 77 pages before this shared-renderer-only content update.",
+  "scientific_boundary": "The update improves presentation and metadata completeness; it does not certify scientific validity, clinical suitability or regulatory compliance."
+}

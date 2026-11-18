@@ -1,0 +1,88 @@
+{
+  "schema": "biointel.step220.windows.release.v1",
+  "step": 220,
+  "version": "15.6.0",
+  "release_label": "15.6.0-Step220.0-WINDOWS-V20.5",
+  "package_generation": "V20.5",
+  "build_number": "Step220-V20.5-SciencePlus-UIUX-R8-InstallRunFixed",
+  "part_count": 4,
+  "platform": "Windows desktop",
+  "python_runtime": "CPython 3.11.x x64",
+  "archive_root": "BioIntel-Step220",
+  "managed_install_root": "%LOCALAPPDATA%\\BioIntelAI\\App\\Releases\\15.6.0-Step220",
+  "offline_core": true,
+  "supported_workflow": [
+    "EXTRACT_INSTALL_RUN_EDUCATION_PHASE23_TO_30_4PART_WINDOWS.bat",
+    "INSTALL_EDUCATION_PHASE23_TO_30_WINDOWS.bat",
+    "RUN_EDUCATION_PHASE23_TO_30_WORKER_WINDOWS.bat",
+    "RUN_BIOINTEL_MCP_WINDOWS.bat",
+    "EXTRACT_INSTALL_RUN_EDUCATION_PHASE17_TO_22_4PART_WINDOWS.bat",
+    "INSTALL_EDUCATION_PHASE17_TO_22_WINDOWS.bat",
+    "EXTRACT_AND_INSTALL_STEP220_WINDOWS.bat",
+    "INSTALL_WINDOWS.bat",
+    "RUN_BOTH_WINDOWS.bat"
+  ],
+  "upgrade_scope": "Education and Research Phases 23-30: controlled institution pilots, approval-governed Shiro agents, Virtual Science Laboratory, explainable mastery, evidence-preserving research transformation, private portfolios and revocable credentials, scoped public API/webhooks/plugins/MCP, local-first jobs/storage/recovery and enterprise deployment profiles, with all earlier capabilities retained.",
+  "windows_path_strategy": {
+    "short_archive_root": "BioIntel-Step220",
+    "short_extraction_root": "%LOCALAPPDATA%\\BioIntelAI\\InstallSource",
+    "managed_runtime_root": "%LOCALAPPDATA%\\BioIntelAI\\App\\Releases\\15.6.0-Step220",
+    "explorer_path_too_long_mitigation": true
+  },
+  "phase15": {
+    "release": "BioIntel-AI-15.6.0-EDUCATION-PHASE15",
+    "durable_realtime_events": true,
+    "hybrid_semantic_rag": true,
+    "governed_model_runtime": true,
+    "science_provider_connectors": true,
+    "server_governed_media_telemetry": true,
+    "external_qualification_honesty": true
+  },
+  "phase16": {
+    "release": "BioIntel-AI-15.6.0-EDUCATION-PHASE16-MEGA-FIXED-R2.1-INSTALL-HOTFIX",
+    "durable_event_consumers": true,
+    "mmr_rag_and_evaluation": true,
+    "science_pulse_saved_alerts": true,
+    "fasta_fastq_workbench": true,
+    "ffmpeg_media_pipeline": true,
+    "external_qualification_honesty": true
+  },
+  "education_phase17_to_22": {
+    "release": "BioIntel-AI-15.6.0-EDUCATION-PHASE17-TO-22-MEGA-FIXED-R1",
+    "migration": "education_phase17_to_22_unified_os_v1",
+    "sqlite_local_default": true,
+    "tenant_and_resource_rbac": true,
+    "persistent_learning_workflow": true,
+    "course_scoped_shiro": true,
+    "connect_durable_outbox": true,
+    "science_pulse_deduplication": true,
+    "explainable_human_reviewed_interventions": true,
+    "studio_version_review_publish_export": true,
+    "windows_unicode_path_qualification": true,
+    "public_turn_and_live_external_providers_require_external_verification": true
+  },
+  "education_phase23_to_30": {
+    "release": "BioIntel-AI-15.6.0-EDUCATION-PHASE23-TO-30-ENTERPRISE-R1",
+    "migration": "education_phase23_to_30_enterprise_platform_v1",
+    "controlled_pilot_and_transactional_import": true,
+    "approval_governed_agent_runtime": true,
+    "virtual_science_lab": true,
+    "explainable_rule_based_mastery": true,
+    "research_to_education_provenance": true,
+    "portfolio_and_revocable_credentials": true,
+    "scoped_public_api_webhooks_plugins_mcp": true,
+    "local_desktop_profile_verified": true,
+    "institution_cluster_profiles_require_external_validation": true,
+    "formal_security_accessibility_and_pilot_acceptance_not_claimed": true
+  },
+  "hotfix": {
+    "id": "R8-science-plus-install-run-manifest",
+    "purpose": "Regenerate the active Step220 source SHA-256 manifests after the Science Plus UI/UX upgrade, so INSTALL_WINDOWS.bat deep-integrity verification and RUN_BOTH_WINDOWS.bat managed-release repair/start flow accept the updated package.",
+    "root_cause": "Science Plus UI files changed after packaging while their source-manifest size and SHA-256 rows remained stale.",
+    "fixed_entrypoints": [
+      "INSTALL_WINDOWS.bat",
+      "RUN_BOTH_WINDOWS.bat"
+    ],
+    "android_mobile_modified": false
+  }
+}

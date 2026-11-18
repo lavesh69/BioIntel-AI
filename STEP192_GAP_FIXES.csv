@@ -1,0 +1,11 @@
+area,before_step192,after_step192,status
+Step 191 Part 2 archive,Corrupted/truncated,Atomic ZIP build and CRC verified,Fixed
+Offline SciPy wheel,Corrupt and hash mismatched,Healthy manifest-matching wheel restored,Fixed
+Version metadata,Mixed 14.7/14.8/14.9 values,Unified 15.0.0 across active metadata,Fixed
+Classic launcher validation,Legacy Step 175 marker contract,Current Step 192 four-part contract,Fixed
+Publication module integration,Assets existed but no page hooks,79 page files covering 80 modules integrated,Fixed
+Publication verifier,Claimed verifier missing,Validator self-test and support bundle added,Fixed
+Package integrity reporting,Could be written before final archive stability,Written only after all final ZIPs pass verification,Fixed
+Dependency locking,Publication release had no current exact lock,Step 192 exact runtime and development locks added,Fixed
+Full legacy UI test,Not run on build host,Explicitly marked pending Python 3.11/Streamlit target environment,External environment action
+Controlled scientific release,Pending,Still fail-closed pending authentic external evidence,Correctly pending

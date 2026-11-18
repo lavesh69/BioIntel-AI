@@ -1,0 +1,91 @@
+{
+  "schema": "biointel.step215.v196.engine-platform-integration.release.v1",
+  "generated_at_utc": "2026-07-18T14:55:09+00:00",
+  "release": {
+    "product": "BioIntel AI",
+    "version": "15.6.0",
+    "step": 206,
+    "package_generation": "V19.6",
+    "parts": 5,
+    "archive_root": "BioIntel-AI-15.6.0-Step206-WINDOWS-V19.6"
+  },
+  "base": "V19.5 BioIntel Live Workspace final",
+  "integration": {
+    "registered_engines": 76,
+    "advanced_format_adapters": 12,
+    "engine_pack_groups": 5,
+    "production_service_interfaces": 6,
+    "windows_cp311_offline_wheels": 121,
+    "wsl2_acquisition_recipes": null,
+    "acquisition_bundle_files": 140,
+    "target_machine_qualified_external_engines": 0,
+    "fail_closed": true
+  },
+  "tests": {
+    "engine_audit_and_platform": {
+      "passed": 35,
+      "failed": 0
+    },
+    "release_and_protected_contract": {
+      "passed": 22,
+      "failed": 0
+    },
+    "live_workspace": {
+      "passed": 22,
+      "failed": 0
+    },
+    "step207_step208_modules": {
+      "passed": 71,
+      "failed": 0
+    },
+    "neuro_backend": {
+      "passed": 110,
+      "failed": 0
+    },
+    "bioinformatics_backend": {
+      "passed": 70,
+      "failed": 0
+    },
+    "discovery_lab_backend": {
+      "passed": 20,
+      "failed": 0
+    },
+    "focused_total": {
+      "passed": 350,
+      "failed": 0
+    }
+  },
+  "compile": {
+    "schema": "biointel.step215.python-compile.v1",
+    "checked": 1710,
+    "errors": [],
+    "passed": true
+  },
+  "wheelhouse": {
+    "valid": true,
+    "wheel_count": 121,
+    "metadata_wheel_count": 121,
+    "lock_rows": 121,
+    "total_size_bytes": 294159493,
+    "missing_required": [],
+    "malformed_manifest": [],
+    "missing_wheels": [],
+    "unexpected_wheels": [],
+    "hash_mismatches": [],
+    "corrupt_wheels": [],
+    "unhashed_lock_rows": []
+  },
+  "engine_platform_validation_passed": true,
+  "protected_modules": {
+    "checked": 17,
+    "bad": [],
+    "unchanged": true
+  },
+  "native_execution": {
+    "windows_bat": false,
+    "wsl2": false,
+    "gpu": false,
+    "streamlit_apptest": false
+  },
+  "claim_boundary": "The merged five-part release contains the V19.6 Engine Platform software, Windows offline adapter wheelhouse and deterministic acquisition/qualification routes. It does not claim that all 76 third-party executables, restricted databases, model weights or GPU workflows were executed on this Linux builder. External engines remain unqualified until exact artifact/licence hashes and target-machine positive/negative smoke evidence pass."
+}

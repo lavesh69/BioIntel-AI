@@ -1,0 +1,21 @@
+{
+  "schema": "biointel.step103.advanced-scientific-depth.v1",
+  "release": "10.3.0",
+  "module_count": 21,
+  "hub_key": "scientific_expansion_hub",
+  "page_range": [112, 132],
+  "accepted_table_formats": ["csv", "tsv", "txt", "json", "xlsx", "xls"],
+  "accepted_scientific_formats": [
+    "fasta", "fa", "fna", "faa", "fas", "vcf", "bed", "narrowPeak", "broadPeak",
+    "h5ad", "mtx", "tif", "tiff", "png", "jpg", "jpeg", "bmp",
+    "pdb", "cif", "mmcif", "sdf", "mol", "mol2", "mzML", "mzXML"
+  ],
+  "statistics": [
+    "Welch t-test", "Benjamini-Hochberg FDR", "Cohen d", "ROC/AUC", "Kaplan-Meier",
+    "calibration error", "Moran I", "linear trend", "IVW meta-analysis", "KS utility test"
+  ],
+  "privacy_metrics": ["k-anonymity", "l-diversity", "t-closeness", "distribution utility", "correlation preservation"],
+  "evidence_exports": ["primary csv", "grouped csv", "advanced auxiliary csv", "json manifest v2"],
+  "optional_external_tools_are_never_silently_executed": true,
+  "requires_independent_validation": true
+}
