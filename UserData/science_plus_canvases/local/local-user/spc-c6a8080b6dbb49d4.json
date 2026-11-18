@@ -1,0 +1,108 @@
+{
+  "schema_version": "science_plus_canvas_v1",
+  "canvas_id": "spc-c6a8080b6dbb49d4",
+  "template_key": "research-question",
+  "title": "Research Question Builder",
+  "description": "Turn a broad topic into a bounded, answerable and evidence-ready scientific question.",
+  "objective": "",
+  "status": "Draft",
+  "canvas_type": "board",
+  "columns": [
+    "Context",
+    "Question",
+    "Variables",
+    "Boundaries",
+    "Decision"
+  ],
+  "workflow": [
+    "Frame",
+    "Bound",
+    "Validate",
+    "Search",
+    "Decide"
+  ],
+  "tags": [
+    "question",
+    "scope",
+    "PICOT"
+  ],
+  "cards": [
+    {
+      "card_id": "card-b2d5f508a8b3",
+      "column": "Context",
+      "title": "Problem landscape",
+      "guidance": "Describe the scientific problem, population and why it matters.",
+      "notes": "",
+      "status": "Prompt",
+      "owner": "",
+      "due_date": "",
+      "tags": [],
+      "evidence_ids": [],
+      "order": 1,
+      "created_at": "2026-07-31T15:57:56+00:00",
+      "updated_at": "2026-07-31T15:57:56+00:00"
+    },
+    {
+      "card_id": "card-f39a6a7ba61f",
+      "column": "Question",
+      "title": "Primary question",
+      "guidance": "Write one precise question that can be answered with available evidence or data.",
+      "notes": "",
+      "status": "Prompt",
+      "owner": "",
+      "due_date": "",
+      "tags": [],
+      "evidence_ids": [],
+      "order": 2,
+      "created_at": "2026-07-31T15:57:56+00:00",
+      "updated_at": "2026-07-31T15:57:56+00:00"
+    },
+    {
+      "card_id": "card-e5f2d2630529",
+      "column": "Variables",
+      "title": "Inputs and outcomes",
+      "guidance": "Define exposures, interventions, comparators, outcomes and covariates.",
+      "notes": "",
+      "status": "Prompt",
+      "owner": "",
+      "due_date": "",
+      "tags": [],
+      "evidence_ids": [],
+      "order": 3,
+      "created_at": "2026-07-31T15:57:56+00:00",
+      "updated_at": "2026-07-31T15:57:56+00:00"
+    },
+    {
+      "card_id": "card-f03bf626dcb6",
+      "column": "Boundaries",
+      "title": "Scope and exclusions",
+      "guidance": "Record organisms, tissues, dates, geographies, modalities and exclusion rules.",
+      "notes": "",
+      "status": "Prompt",
+      "owner": "",
+      "due_date": "",
+      "tags": [],
+      "evidence_ids": [],
+      "order": 4,
+      "created_at": "2026-07-31T15:57:56+00:00",
+      "updated_at": "2026-07-31T15:57:56+00:00"
+    },
+    {
+      "card_id": "card-61853bae61eb",
+      "column": "Decision",
+      "title": "Success criterion",
+      "guidance": "State what result would change the next scientific or operational decision.",
+      "notes": "",
+      "status": "Prompt",
+      "owner": "",
+      "due_date": "",
+      "tags": [],
+      "evidence_ids": [],
+      "order": 5,
+      "created_at": "2026-07-31T15:57:56+00:00",
+      "updated_at": "2026-07-31T15:57:56+00:00"
+    }
+  ],
+  "created_at": "2026-07-31T15:57:56+00:00",
+  "updated_at": "2026-07-31T15:57:56+00:00"
+}
