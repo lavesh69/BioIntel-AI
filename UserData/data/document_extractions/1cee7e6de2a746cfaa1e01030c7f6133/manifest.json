@@ -1,0 +1,121 @@
+{
+  "duplicate_of_run_id": null,
+  "engine_version": "2.7.0",
+  "outputs": [
+    {
+      "created_at_utc": "2026-07-29T10:41:04.186528+00:00",
+      "filename": "04_infection_brief_extracted.json",
+      "format": "json",
+      "integrity_status": "unknown",
+      "output_id": "312338be1ed046e7993c08f63ea0753b",
+      "path": "/mnt/data/biointel_r2_work/BioIntel-Step220/UserData/data/document_extractions/1cee7e6de2a746cfaa1e01030c7f6133/04_infection_brief_extracted.json",
+      "run_id": "1cee7e6de2a746cfaa1e01030c7f6133",
+      "sha256": "358b0a2edb695be4bd85eeae7f5e3854a543f400a4588045dac6ca3d5c0f6a03",
+      "size_bytes": 4358,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-29T10:41:04.190951+00:00",
+      "filename": "04_infection_brief_extracted.xlsx",
+      "format": "xlsx",
+      "integrity_status": "unknown",
+      "output_id": "a30b913373a94be88985d2cc35e30c87",
+      "path": "/mnt/data/biointel_r2_work/BioIntel-Step220/UserData/data/document_extractions/1cee7e6de2a746cfaa1e01030c7f6133/04_infection_brief_extracted.xlsx",
+      "run_id": "1cee7e6de2a746cfaa1e01030c7f6133",
+      "sha256": "ad0b0f2d1e866bfd6e8e28e3536a5f914081a419914e8d41723add3e9c62884b",
+      "size_bytes": 8914,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-29T10:41:04.194420+00:00",
+      "filename": "04_infection_brief_extracted.docx",
+      "format": "docx",
+      "integrity_status": "unknown",
+      "output_id": "625744bacc344478a8bc985fffc7fb4b",
+      "path": "/mnt/data/biointel_r2_work/BioIntel-Step220/UserData/data/document_extractions/1cee7e6de2a746cfaa1e01030c7f6133/04_infection_brief_extracted.docx",
+      "run_id": "1cee7e6de2a746cfaa1e01030c7f6133",
+      "sha256": "7360e9b10ff4c9647284c0dc482f5c91845069b55b3187bc2fc21988765f805d",
+      "size_bytes": 37867,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-29T10:41:04.198209+00:00",
+      "filename": "04_infection_brief_extracted.pdf",
+      "format": "pdf",
+      "integrity_status": "unknown",
+      "output_id": "75a879498abe44e6bb3849bf730d13c6",
+      "path": "/mnt/data/biointel_r2_work/BioIntel-Step220/UserData/data/document_extractions/1cee7e6de2a746cfaa1e01030c7f6133/04_infection_brief_extracted.pdf",
+      "run_id": "1cee7e6de2a746cfaa1e01030c7f6133",
+      "sha256": "c00a55428f594bca5d0fee2c16f4d7ae4740ca52a3904f760219ae494bb4b94a",
+      "size_bytes": 3804,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-29T10:41:04.201353+00:00",
+      "filename": "04_infection_brief_csv_tables.zip",
+      "format": "csv_zip",
+      "integrity_status": "unknown",
+      "output_id": "1052f08502dc4ecaa73af76817d5ccb3",
+      "path": "/mnt/data/biointel_r2_work/BioIntel-Step220/UserData/data/document_extractions/1cee7e6de2a746cfaa1e01030c7f6133/04_infection_brief_csv_tables.zip",
+      "run_id": "1cee7e6de2a746cfaa1e01030c7f6133",
+      "sha256": "cd9284a95c42ca5249d81671518a125f3bb608e87a01f47886c50da2a5a00506",
+      "size_bytes": 2874,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-29T10:41:04.204680+00:00",
+      "filename": "04_infection_brief_complete_export.zip",
+      "format": "bundle_zip",
+      "integrity_status": "unknown",
+      "output_id": "a00bf2ae429e48e89f445864011ab503",
+      "path": "/mnt/data/biointel_r2_work/BioIntel-Step220/UserData/data/document_extractions/1cee7e6de2a746cfaa1e01030c7f6133/04_infection_brief_complete_export.zip",
+      "run_id": "1cee7e6de2a746cfaa1e01030c7f6133",
+      "sha256": "766690df4cbc6d68facbecb48014b6623483c52809fcfdfe2b3cdd6b9628973a",
+      "size_bytes": 50305,
+      "verified_at_utc": null
+    }
+  ],
+  "run_id": "1cee7e6de2a746cfaa1e01030c7f6133",
+  "source": {
+    "character_count": 628,
+    "entity_count": 5,
+    "file_type": "md",
+    "image_count": 0,
+    "mime_type": "text/markdown",
+    "page_count": 0,
+    "paragraph_count": 0,
+    "region_count": 0,
+    "row_count": 0,
+    "sheet_count": 0,
+    "source_name": "04_infection_brief.md",
+    "source_sha256": "4ca5a9c43cef86706a15c0dfe0552603f83cd93fa03a55c77eae2973c3431190",
+    "source_size_bytes": 628,
+    "table_count": 0,
+    "warning_count": 0
+  },
+  "structured_fields": {
+    "activity_measurements": [],
+    "document_type": "research_document",
+    "entity_counts": {
+      "assay_endpoint": 1,
+      "disease": 1,
+      "gene_or_protein": 1,
+      "mutation": 1,
+      "organism": 1
+    },
+    "has_limitations": true,
+    "has_methods": true,
+    "has_results": false,
+    "publication_identifiers": [],
+    "sample_sizes": [],
+    "sections": {
+      "abstract": "BioIntel demonstration record 4. The compound ciprofloxacin was discussed with target gyrA in the context of bacterial infection. The example mutation is S83L. A demonstration MIC measurement of 317 nM is shown for Escherichia coli. Synthetic reference labels: SYN-PAPER-0004 and SYN-DOI-NOT-REAL-0004. This content exists only to populate document search, extraction, entity recognition, history, comparison and evidence-bridge screens.",
+      "limitations": "Demonstration/reference content only; not experimental or clinical evidence.",
+      "methods": "Synthetic reference table; MIC endpoint.",
+      "unclassified": "# Infection Demonstration Brief"
+    },
+    "sensitive_findings": [],
+    "title": "04_infection_brief.md"
+  },
+  "warnings": []
+}

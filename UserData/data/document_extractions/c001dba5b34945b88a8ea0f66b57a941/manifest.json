@@ -1,0 +1,121 @@
+{
+  "duplicate_of_run_id": null,
+  "engine_version": "2.7.0",
+  "outputs": [
+    {
+      "created_at_utc": "2026-07-29T10:41:04.605411+00:00",
+      "filename": "05_metabolism_brief_extracted.json",
+      "format": "json",
+      "integrity_status": "unknown",
+      "output_id": "9fd0f9acfc1a4457a13b24f0ca0a8b19",
+      "path": "/mnt/data/biointel_r2_work/BioIntel-Step220/UserData/data/document_extractions/c001dba5b34945b88a8ea0f66b57a941/05_metabolism_brief_extracted.json",
+      "run_id": "c001dba5b34945b88a8ea0f66b57a941",
+      "sha256": "2be76c81c9e315d9ca7600af5338a7d733f09dc482e7f5fe4548412c785a345c",
+      "size_bytes": 4560,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-29T10:41:04.610126+00:00",
+      "filename": "05_metabolism_brief_extracted.xlsx",
+      "format": "xlsx",
+      "integrity_status": "unknown",
+      "output_id": "a0ed360eebbc4aa581569bf9050f88e2",
+      "path": "/mnt/data/biointel_r2_work/BioIntel-Step220/UserData/data/document_extractions/c001dba5b34945b88a8ea0f66b57a941/05_metabolism_brief_extracted.xlsx",
+      "run_id": "c001dba5b34945b88a8ea0f66b57a941",
+      "sha256": "23394159b07707c2af36b46be75bbf7cabbdd0c748a994eb76f8186236e9e85c",
+      "size_bytes": 8957,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-29T10:41:04.613340+00:00",
+      "filename": "05_metabolism_brief_extracted.docx",
+      "format": "docx",
+      "integrity_status": "unknown",
+      "output_id": "c3f2affd1a134d8c80e1e27e48f4a0f5",
+      "path": "/mnt/data/biointel_r2_work/BioIntel-Step220/UserData/data/document_extractions/c001dba5b34945b88a8ea0f66b57a941/05_metabolism_brief_extracted.docx",
+      "run_id": "c001dba5b34945b88a8ea0f66b57a941",
+      "sha256": "7312ca1834ecf21d58ebfab1f637b6731c396f75392106ae1c31f4104dd9f07e",
+      "size_bytes": 37893,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-29T10:41:04.617465+00:00",
+      "filename": "05_metabolism_brief_extracted.pdf",
+      "format": "pdf",
+      "integrity_status": "unknown",
+      "output_id": "245d414bc13242df9545b75fe786dff4",
+      "path": "/mnt/data/biointel_r2_work/BioIntel-Step220/UserData/data/document_extractions/c001dba5b34945b88a8ea0f66b57a941/05_metabolism_brief_extracted.pdf",
+      "run_id": "c001dba5b34945b88a8ea0f66b57a941",
+      "sha256": "bd7e767e3e6f2d5b07cd4ad64dfe628f724ab968029e0f6a688a77c1ca069a1a",
+      "size_bytes": 3869,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-29T10:41:04.620857+00:00",
+      "filename": "05_metabolism_brief_csv_tables.zip",
+      "format": "csv_zip",
+      "integrity_status": "unknown",
+      "output_id": "e935d14cdc204597b20c768de35aa347",
+      "path": "/mnt/data/biointel_r2_work/BioIntel-Step220/UserData/data/document_extractions/c001dba5b34945b88a8ea0f66b57a941/05_metabolism_brief_csv_tables.zip",
+      "run_id": "c001dba5b34945b88a8ea0f66b57a941",
+      "sha256": "f9596f4fd07477b2357d3f23fe92a2f0b53c98300d5aeaaf09f91ddccad8a33e",
+      "size_bytes": 2918,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-29T10:41:04.624430+00:00",
+      "filename": "05_metabolism_brief_complete_export.zip",
+      "format": "bundle_zip",
+      "integrity_status": "unknown",
+      "output_id": "38adf0af324d4385b3b6b91c002de7db",
+      "path": "/mnt/data/biointel_r2_work/BioIntel-Step220/UserData/data/document_extractions/c001dba5b34945b88a8ea0f66b57a941/05_metabolism_brief_complete_export.zip",
+      "run_id": "c001dba5b34945b88a8ea0f66b57a941",
+      "sha256": "4709b045998e6b6d9f8bb090f541e852ea1c920bca667c74715f5e4bd38180ce",
+      "size_bytes": 50516,
+      "verified_at_utc": null
+    }
+  ],
+  "run_id": "c001dba5b34945b88a8ea0f66b57a941",
+  "source": {
+    "character_count": 624,
+    "entity_count": 6,
+    "file_type": "md",
+    "image_count": 0,
+    "mime_type": "text/markdown",
+    "page_count": 0,
+    "paragraph_count": 0,
+    "region_count": 0,
+    "row_count": 0,
+    "sheet_count": 0,
+    "source_name": "05_metabolism_brief.md",
+    "source_sha256": "4382e16f363cdf411a1f8d7b0948efa1d4ad6fc6421251f0a2353fb034025d62",
+    "source_size_bytes": 624,
+    "table_count": 0,
+    "warning_count": 0
+  },
+  "structured_fields": {
+    "activity_measurements": [],
+    "document_type": "research_document",
+    "entity_counts": {
+      "assay_endpoint": 1,
+      "disease": 1,
+      "gene_or_protein": 2,
+      "mutation": 1,
+      "organism": 1
+    },
+    "has_limitations": true,
+    "has_methods": true,
+    "has_results": false,
+    "publication_identifiers": [],
+    "sample_sizes": [],
+    "sections": {
+      "abstract": "BioIntel demonstration record 5. The compound rosiglitazone was discussed with target PPARG in the context of type 2 diabetes. The example mutation is P12A. A demonstration EC50 measurement of 390 nM is shown for Homo sapiens. Synthetic reference labels: SYN-PAPER-0005 and SYN-DOI-NOT-REAL-0005. This content exists only to populate document search, extraction, entity recognition, history, comparison and evidence-bridge screens.",
+      "limitations": "Demonstration/reference content only; not experimental or clinical evidence.",
+      "methods": "Synthetic reference table; EC50 endpoint.",
+      "unclassified": "# Metabolism Demonstration Brief"
+    },
+    "sensitive_findings": [],
+    "title": "05_metabolism_brief.md"
+  },
+  "warnings": []
+}

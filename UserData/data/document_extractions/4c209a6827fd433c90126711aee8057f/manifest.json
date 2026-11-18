@@ -1,0 +1,118 @@
+{
+  "duplicate_of_run_id": null,
+  "engine_version": "2.7.0",
+  "outputs": [
+    {
+      "created_at_utc": "2026-07-29T10:41:04.282651+00:00",
+      "filename": "04_infection_metadata_extracted.json",
+      "format": "json",
+      "integrity_status": "unknown",
+      "output_id": "5033091788a04709b1c4d885c6f94c5a",
+      "path": "/mnt/data/biointel_r2_work/BioIntel-Step220/UserData/data/document_extractions/4c209a6827fd433c90126711aee8057f/04_infection_metadata_extracted.json",
+      "run_id": "4c209a6827fd433c90126711aee8057f",
+      "sha256": "1b73ee65907420ef30cdf0a0e200f16c5aa641bce6ddb89aecd12febb3138ae5",
+      "size_bytes": 5512,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-29T10:41:04.287001+00:00",
+      "filename": "04_infection_metadata_extracted.xlsx",
+      "format": "xlsx",
+      "integrity_status": "unknown",
+      "output_id": "1e238d5268ef451fa2addcc1875b9c2a",
+      "path": "/mnt/data/biointel_r2_work/BioIntel-Step220/UserData/data/document_extractions/4c209a6827fd433c90126711aee8057f/04_infection_metadata_extracted.xlsx",
+      "run_id": "4c209a6827fd433c90126711aee8057f",
+      "sha256": "a51a703b982e408832eaa32af50fa7cb4ff1c99b6840e0294bd55285d44466d9",
+      "size_bytes": 9823,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-29T10:41:04.290894+00:00",
+      "filename": "04_infection_metadata_extracted.docx",
+      "format": "docx",
+      "integrity_status": "unknown",
+      "output_id": "26389ab5418e43eab4c6827d3f9bdb47",
+      "path": "/mnt/data/biointel_r2_work/BioIntel-Step220/UserData/data/document_extractions/4c209a6827fd433c90126711aee8057f/04_infection_metadata_extracted.docx",
+      "run_id": "4c209a6827fd433c90126711aee8057f",
+      "sha256": "5181e48d8200cb1ceea00c3513f3234da008de5c4aad328d96a982fe5df0dcfe",
+      "size_bytes": 38075,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-29T10:41:04.294757+00:00",
+      "filename": "04_infection_metadata_extracted.pdf",
+      "format": "pdf",
+      "integrity_status": "unknown",
+      "output_id": "d63efdaf0b59447d8e3cf347ffe73347",
+      "path": "/mnt/data/biointel_r2_work/BioIntel-Step220/UserData/data/document_extractions/4c209a6827fd433c90126711aee8057f/04_infection_metadata_extracted.pdf",
+      "run_id": "4c209a6827fd433c90126711aee8057f",
+      "sha256": "ce1a94383a18df69bca5357ca674ae3e0286595b49f09a6b2db79eb1c9add9c1",
+      "size_bytes": 4919,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-29T10:41:04.299313+00:00",
+      "filename": "04_infection_metadata_csv_tables.zip",
+      "format": "csv_zip",
+      "integrity_status": "unknown",
+      "output_id": "bb8437992e2a4a2daaf65be5f585346f",
+      "path": "/mnt/data/biointel_r2_work/BioIntel-Step220/UserData/data/document_extractions/4c209a6827fd433c90126711aee8057f/04_infection_metadata_csv_tables.zip",
+      "run_id": "4c209a6827fd433c90126711aee8057f",
+      "sha256": "f10fed2807c064d251b4cc57ed49260bbae9b391eb493a59366f5e2fee1726be",
+      "size_bytes": 3285,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-29T10:41:04.302895+00:00",
+      "filename": "04_infection_metadata_complete_export.zip",
+      "format": "bundle_zip",
+      "integrity_status": "unknown",
+      "output_id": "a66bc21d81b64fe4aa7dd1d922453355",
+      "path": "/mnt/data/biointel_r2_work/BioIntel-Step220/UserData/data/document_extractions/4c209a6827fd433c90126711aee8057f/04_infection_metadata_complete_export.zip",
+      "run_id": "4c209a6827fd433c90126711aee8057f",
+      "sha256": "27f9c1b3156f4e1927fbd4b9f048ef890aa038b9e2b462b8d99d64df170d3ecf",
+      "size_bytes": 52475,
+      "verified_at_utc": null
+    }
+  ],
+  "run_id": "4c209a6827fd433c90126711aee8057f",
+  "source": {
+    "character_count": 499,
+    "entity_count": 5,
+    "file_type": "json",
+    "image_count": 0,
+    "mime_type": "application/json",
+    "page_count": 0,
+    "paragraph_count": 0,
+    "region_count": 0,
+    "row_count": 15,
+    "sheet_count": 0,
+    "source_name": "04_infection_metadata.json",
+    "source_sha256": "67a168f59eff669977ee5f424a841ac298c21c08e1441b530f5fb3983c26303c",
+    "source_size_bytes": 499,
+    "table_count": 1,
+    "warning_count": 0
+  },
+  "structured_fields": {
+    "activity_measurements": [],
+    "document_type": "research_document",
+    "entity_counts": {
+      "assay_endpoint": 1,
+      "disease": 1,
+      "gene_or_protein": 1,
+      "mutation": 1,
+      "organism": 1
+    },
+    "has_limitations": false,
+    "has_methods": false,
+    "has_results": false,
+    "publication_identifiers": [],
+    "sample_sizes": [],
+    "sections": {
+      "unclassified": "{\n\"activity_value_nm\": 317,\n\"assay\": \"MIC\",\n\"disease\": \"bacterial infection\",\n\"document_id\": \"DEMO-CORPUS-04\",\n\"doi\": \"\",\n\"drug\": \"ciprofloxacin\",\n\"gene\": \"gyrA\",\n\"mutation\": \"S83L\",\n\"notice\": \"Demonstration/reference content only; not experimental or clinical evidence.\",\n\"organism\": \"Escherichia coli\",\n\"pmid\": \"\",\n\"scientific_release_eligible\": false,\n\"synthetic_doi_label\": \"SYN-DOI-NOT-REAL-0004\",\n\"synthetic_reference_id\": \"SYN-PAPER-0004\",\n\"topic\": \"infection\"\n}"
+    },
+    "sensitive_findings": [],
+    "title": "04_infection_metadata.json"
+  },
+  "warnings": []
+}

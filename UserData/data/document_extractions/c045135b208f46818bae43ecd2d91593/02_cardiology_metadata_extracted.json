@@ -1,0 +1,176 @@
+{
+  "character_count": 493,
+  "entities": [
+    {
+      "confidence": 0.97,
+      "end": 44,
+      "entity_type": "assay_endpoint",
+      "metadata": {},
+      "normalized": "Ki",
+      "source": "document",
+      "start": 42,
+      "text": "Ki"
+    },
+    {
+      "confidence": 0.86,
+      "end": 170,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "KCNH2",
+      "source": "document",
+      "start": 165,
+      "text": "KCNH2"
+    },
+    {
+      "confidence": 0.92,
+      "end": 193,
+      "entity_type": "mutation",
+      "metadata": {},
+      "normalized": "T618I",
+      "source": "document",
+      "start": 188,
+      "text": "T618I"
+    },
+    {
+      "confidence": 0.9,
+      "end": 315,
+      "entity_type": "organism",
+      "metadata": {},
+      "normalized": "Homo sapiens",
+      "source": "document",
+      "start": 303,
+      "text": "Homo sapiens"
+    }
+  ],
+  "entity_count": 4,
+  "file_type": "json",
+  "image_count": 0,
+  "metadata": {
+    "encoding": "utf-8-sig",
+    "root_type": "dict",
+    "scientific_entity_extraction": "rule_based_v1",
+    "sensitive_finding_count": 0,
+    "sensitive_redaction_applied": false
+  },
+  "mime_type": "application/json",
+  "page_count": 0,
+  "paragraph_count": 0,
+  "region_count": 0,
+  "regions": [],
+  "row_count": 15,
+  "sections": [
+    {
+      "confidence": 1.0,
+      "metadata": {},
+      "name": "Document",
+      "source": "document",
+      "text": "{\n  \"activity_value_nm\": 171,\n  \"assay\": \"Ki\",\n  \"disease\": \"cardiac arrhythmia\",\n  \"document_id\": \"DEMO-CORPUS-02\",\n  \"doi\": \"\",\n  \"drug\": \"dofetilide\",\n  \"gene\": \"KCNH2\",\n  \"mutation\": \"T618I\",\n  \"notice\": \"Demonstration/reference content only; not experimental or clinical evidence.\",\n  \"organism\": \"Homo sapiens\",\n  \"pmid\": \"\",\n  \"scientific_release_eligible\": false,\n  \"synthetic_doi_label\": \"SYN-DOI-NOT-REAL-0002\",\n  \"synthetic_reference_id\": \"SYN-PAPER-0002\",\n  \"topic\": \"cardiology\"\n}"
+    }
+  ],
+  "sheet_count": 0,
+  "source_name": "02_cardiology_metadata.json",
+  "source_sha256": "9fc17e555fbaed679b4768a868e0cde407d2f751852be750056f039500bf165e",
+  "source_size_bytes": 493,
+  "structured_fields": {
+    "activity_measurements": [],
+    "document_type": "research_document",
+    "entity_counts": {
+      "assay_endpoint": 1,
+      "gene_or_protein": 1,
+      "mutation": 1,
+      "organism": 1
+    },
+    "has_limitations": false,
+    "has_methods": false,
+    "has_results": false,
+    "publication_identifiers": [],
+    "sample_sizes": [],
+    "sections": {
+      "unclassified": "{\n\"activity_value_nm\": 171,\n\"assay\": \"Ki\",\n\"disease\": \"cardiac arrhythmia\",\n\"document_id\": \"DEMO-CORPUS-02\",\n\"doi\": \"\",\n\"drug\": \"dofetilide\",\n\"gene\": \"KCNH2\",\n\"mutation\": \"T618I\",\n\"notice\": \"Demonstration/reference content only; not experimental or clinical evidence.\",\n\"organism\": \"Homo sapiens\",\n\"pmid\": \"\",\n\"scientific_release_eligible\": false,\n\"synthetic_doi_label\": \"SYN-DOI-NOT-REAL-0002\",\n\"synthetic_reference_id\": \"SYN-PAPER-0002\",\n\"topic\": \"cardiology\"\n}"
+    },
+    "sensitive_findings": [],
+    "title": "02_cardiology_metadata.json"
+  },
+  "table_count": 1,
+  "tables": [
+    {
+      "column_count": 2,
+      "columns": [
+        "Path",
+        "Value"
+      ],
+      "confidence": 1.0,
+      "metadata": {
+        "encoding": "utf-8-sig"
+      },
+      "name": "Structured Data",
+      "row_count": 15,
+      "rows": [
+        [
+          "activity_value_nm",
+          171
+        ],
+        [
+          "assay",
+          "Ki"
+        ],
+        [
+          "disease",
+          "cardiac arrhythmia"
+        ],
+        [
+          "document_id",
+          "DEMO-CORPUS-02"
+        ],
+        [
+          "doi",
+          ""
+        ],
+        [
+          "drug",
+          "dofetilide"
+        ],
+        [
+          "gene",
+          "KCNH2"
+        ],
+        [
+          "mutation",
+          "T618I"
+        ],
+        [
+          "notice",
+          "Demonstration/reference content only; not experimental or clinical evidence."
+        ],
+        [
+          "organism",
+          "Homo sapiens"
+        ],
+        [
+          "pmid",
+          ""
+        ],
+        [
+          "scientific_release_eligible",
+          false
+        ],
+        [
+          "synthetic_doi_label",
+          "SYN-DOI-NOT-REAL-0002"
+        ],
+        [
+          "synthetic_reference_id",
+          "SYN-PAPER-0002"
+        ],
+        [
+          "topic",
+          "cardiology"
+        ]
+      ],
+      "source": "document"
+    }
+  ],
+  "text": "{\n  \"activity_value_nm\": 171,\n  \"assay\": \"Ki\",\n  \"disease\": \"cardiac arrhythmia\",\n  \"document_id\": \"DEMO-CORPUS-02\",\n  \"doi\": \"\",\n  \"drug\": \"dofetilide\",\n  \"gene\": \"KCNH2\",\n  \"mutation\": \"T618I\",\n  \"notice\": \"Demonstration/reference content only; not experimental or clinical evidence.\",\n  \"organism\": \"Homo sapiens\",\n  \"pmid\": \"\",\n  \"scientific_release_eligible\": false,\n  \"synthetic_doi_label\": \"SYN-DOI-NOT-REAL-0002\",\n  \"synthetic_reference_id\": \"SYN-PAPER-0002\",\n  \"topic\": \"cardiology\"\n}",
+  "warning_count": 0,
+  "warnings": []
+}

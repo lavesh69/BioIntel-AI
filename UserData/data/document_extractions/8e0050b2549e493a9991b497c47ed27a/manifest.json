@@ -1,0 +1,119 @@
+{
+  "duplicate_of_run_id": null,
+  "engine_version": "2.7.0",
+  "outputs": [
+    {
+      "created_at_utc": "2026-07-29T10:41:03.090402+00:00",
+      "filename": "01_oncology_page_extracted.json",
+      "format": "json",
+      "integrity_status": "unknown",
+      "output_id": "cdece297abbe41788abaa15b5a735b93",
+      "path": "/mnt/data/biointel_r2_work/BioIntel-Step220/UserData/data/document_extractions/8e0050b2549e493a9991b497c47ed27a/01_oncology_page_extracted.json",
+      "run_id": "8e0050b2549e493a9991b497c47ed27a",
+      "sha256": "e974a5cd1d344f9867c61ee74e320eb283574fc2101285ec8808721c5bf9e0eb",
+      "size_bytes": 5221,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-29T10:41:03.094870+00:00",
+      "filename": "01_oncology_page_extracted.xlsx",
+      "format": "xlsx",
+      "integrity_status": "unknown",
+      "output_id": "5687c65db8b846d4979805243d081405",
+      "path": "/mnt/data/biointel_r2_work/BioIntel-Step220/UserData/data/document_extractions/8e0050b2549e493a9991b497c47ed27a/01_oncology_page_extracted.xlsx",
+      "run_id": "8e0050b2549e493a9991b497c47ed27a",
+      "sha256": "b47b90255edfe168563945ad67923c7b1bf6e81f87a6c590c054bc5d14d71b24",
+      "size_bytes": 9732,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-29T10:41:03.098455+00:00",
+      "filename": "01_oncology_page_extracted.docx",
+      "format": "docx",
+      "integrity_status": "unknown",
+      "output_id": "d9e12b6d5f414c9f85b2231eecfd31bc",
+      "path": "/mnt/data/biointel_r2_work/BioIntel-Step220/UserData/data/document_extractions/8e0050b2549e493a9991b497c47ed27a/01_oncology_page_extracted.docx",
+      "run_id": "8e0050b2549e493a9991b497c47ed27a",
+      "sha256": "4f31ae45fbe623abc4f37fe744bea7b6d56f537265cdd5d214eac84d97f7b0e5",
+      "size_bytes": 38018,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-29T10:41:03.101652+00:00",
+      "filename": "01_oncology_page_extracted.pdf",
+      "format": "pdf",
+      "integrity_status": "unknown",
+      "output_id": "4f87dd348fc44eb29f8304312350dae4",
+      "path": "/mnt/data/biointel_r2_work/BioIntel-Step220/UserData/data/document_extractions/8e0050b2549e493a9991b497c47ed27a/01_oncology_page_extracted.pdf",
+      "run_id": "8e0050b2549e493a9991b497c47ed27a",
+      "sha256": "1085c939aa332dc440ee81b141e64d51b331776ea8b17fff2279fd59e91c5f2c",
+      "size_bytes": 4650,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-29T10:41:03.104627+00:00",
+      "filename": "01_oncology_page_csv_tables.zip",
+      "format": "csv_zip",
+      "integrity_status": "unknown",
+      "output_id": "f88d451b2a9a413ca7466d63ada53e3b",
+      "path": "/mnt/data/biointel_r2_work/BioIntel-Step220/UserData/data/document_extractions/8e0050b2549e493a9991b497c47ed27a/01_oncology_page_csv_tables.zip",
+      "run_id": "8e0050b2549e493a9991b497c47ed27a",
+      "sha256": "730b03cb472c9ed851cb262143063a7d126c7f9e9df6959ead29add476eb91ed",
+      "size_bytes": 3257,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-29T10:41:03.107693+00:00",
+      "filename": "01_oncology_page_complete_export.zip",
+      "format": "bundle_zip",
+      "integrity_status": "unknown",
+      "output_id": "795d4e27cadc47a59312df8cea40328f",
+      "path": "/mnt/data/biointel_r2_work/BioIntel-Step220/UserData/data/document_extractions/8e0050b2549e493a9991b497c47ed27a/01_oncology_page_complete_export.zip",
+      "run_id": "8e0050b2549e493a9991b497c47ed27a",
+      "sha256": "ede492fb5bf303c5e7acbf1ba2bd21e7dc46141db95f120ca3995525de134b80",
+      "size_bytes": 52047,
+      "verified_at_utc": null
+    }
+  ],
+  "run_id": "8e0050b2549e493a9991b497c47ed27a",
+  "source": {
+    "character_count": 614,
+    "entity_count": 7,
+    "file_type": "html",
+    "image_count": 0,
+    "mime_type": "text/html",
+    "page_count": 0,
+    "paragraph_count": 0,
+    "region_count": 0,
+    "row_count": 1,
+    "sheet_count": 0,
+    "source_name": "01_oncology_page.html",
+    "source_sha256": "7a227e6d408257cd26e77ee9e1556f5f75a8ea8e6925ece2c4ba40d6d9c63850",
+    "source_size_bytes": 817,
+    "table_count": 1,
+    "warning_count": 0
+  },
+  "structured_fields": {
+    "activity_measurements": [],
+    "document_type": "research_document",
+    "entity_counts": {
+      "assay_endpoint": 1,
+      "disease": 1,
+      "drug_or_compound": 1,
+      "gene_or_protein": 2,
+      "mutation": 1,
+      "organism": 1
+    },
+    "has_limitations": false,
+    "has_methods": false,
+    "has_results": false,
+    "publication_identifiers": [],
+    "sample_sizes": [],
+    "sections": {
+      "unclassified": "BioIntel Demo\nOncology reference page\nBioIntel demonstration record 1. The compound gefitinib was discussed with target EGFR in the context of non-small-cell lung cancer. The example mutation is L858R. A demonstration IC50 measurement of 98 nM is shown for Homo sapiens. Synthetic reference labels: SYN-PAPER-0001 and SYN-DOI-NOT-REAL-0001. This content exists only to populate document search, extraction, entity recognition, history, comparison and evidence-bridge screens.\nCompound\nTarget\nAssay\nValue nM\ngefitinib\nEGFR\nIC50\n98\nNotice:\nDemonstration/reference content only; not experimental or clinical evidence."
+    },
+    "sensitive_findings": [],
+    "title": "BioIntel Demo"
+  },
+  "warnings": []
+}

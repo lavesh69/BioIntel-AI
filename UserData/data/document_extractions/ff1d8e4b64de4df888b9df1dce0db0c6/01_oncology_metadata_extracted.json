@@ -1,0 +1,208 @@
+{
+  "character_count": 498,
+  "entities": [
+    {
+      "confidence": 0.97,
+      "end": 45,
+      "entity_type": "assay_endpoint",
+      "metadata": {},
+      "normalized": "IC50",
+      "source": "document",
+      "start": 41,
+      "text": "IC50"
+    },
+    {
+      "confidence": 0.86,
+      "end": 45,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "IC50",
+      "source": "document",
+      "start": 41,
+      "text": "IC50"
+    },
+    {
+      "confidence": 0.72,
+      "end": 88,
+      "entity_type": "disease",
+      "metadata": {},
+      "normalized": "cancer",
+      "source": "document",
+      "start": 82,
+      "text": "cancer"
+    },
+    {
+      "confidence": 0.72,
+      "end": 159,
+      "entity_type": "drug_or_compound",
+      "metadata": {},
+      "normalized": "gefitinib",
+      "source": "document",
+      "start": 150,
+      "text": "gefitinib"
+    },
+    {
+      "confidence": 0.86,
+      "end": 177,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "EGFR",
+      "source": "document",
+      "start": 173,
+      "text": "EGFR"
+    },
+    {
+      "confidence": 0.92,
+      "end": 200,
+      "entity_type": "mutation",
+      "metadata": {},
+      "normalized": "L858R",
+      "source": "document",
+      "start": 195,
+      "text": "L858R"
+    },
+    {
+      "confidence": 0.9,
+      "end": 322,
+      "entity_type": "organism",
+      "metadata": {},
+      "normalized": "Homo sapiens",
+      "source": "document",
+      "start": 310,
+      "text": "Homo sapiens"
+    }
+  ],
+  "entity_count": 7,
+  "file_type": "json",
+  "image_count": 0,
+  "metadata": {
+    "encoding": "utf-8-sig",
+    "root_type": "dict",
+    "scientific_entity_extraction": "rule_based_v1",
+    "sensitive_finding_count": 0,
+    "sensitive_redaction_applied": false
+  },
+  "mime_type": "application/json",
+  "page_count": 0,
+  "paragraph_count": 0,
+  "region_count": 0,
+  "regions": [],
+  "row_count": 15,
+  "sections": [
+    {
+      "confidence": 1.0,
+      "metadata": {},
+      "name": "Document",
+      "source": "document",
+      "text": "{\n  \"activity_value_nm\": 98,\n  \"assay\": \"IC50\",\n  \"disease\": \"non-small-cell lung cancer\",\n  \"document_id\": \"DEMO-CORPUS-01\",\n  \"doi\": \"\",\n  \"drug\": \"gefitinib\",\n  \"gene\": \"EGFR\",\n  \"mutation\": \"L858R\",\n  \"notice\": \"Demonstration/reference content only; not experimental or clinical evidence.\",\n  \"organism\": \"Homo sapiens\",\n  \"pmid\": \"\",\n  \"scientific_release_eligible\": false,\n  \"synthetic_doi_label\": \"SYN-DOI-NOT-REAL-0001\",\n  \"synthetic_reference_id\": \"SYN-PAPER-0001\",\n  \"topic\": \"oncology\"\n}"
+    }
+  ],
+  "sheet_count": 0,
+  "source_name": "01_oncology_metadata.json",
+  "source_sha256": "be5b1dfb60413a41edb5ae3516bd6b894bd0fa362940da4ef1b86a85591fd39d",
+  "source_size_bytes": 498,
+  "structured_fields": {
+    "activity_measurements": [],
+    "document_type": "research_document",
+    "entity_counts": {
+      "assay_endpoint": 1,
+      "disease": 1,
+      "drug_or_compound": 1,
+      "gene_or_protein": 2,
+      "mutation": 1,
+      "organism": 1
+    },
+    "has_limitations": false,
+    "has_methods": false,
+    "has_results": false,
+    "publication_identifiers": [],
+    "sample_sizes": [],
+    "sections": {
+      "unclassified": "{\n\"activity_value_nm\": 98,\n\"assay\": \"IC50\",\n\"disease\": \"non-small-cell lung cancer\",\n\"document_id\": \"DEMO-CORPUS-01\",\n\"doi\": \"\",\n\"drug\": \"gefitinib\",\n\"gene\": \"EGFR\",\n\"mutation\": \"L858R\",\n\"notice\": \"Demonstration/reference content only; not experimental or clinical evidence.\",\n\"organism\": \"Homo sapiens\",\n\"pmid\": \"\",\n\"scientific_release_eligible\": false,\n\"synthetic_doi_label\": \"SYN-DOI-NOT-REAL-0001\",\n\"synthetic_reference_id\": \"SYN-PAPER-0001\",\n\"topic\": \"oncology\"\n}"
+    },
+    "sensitive_findings": [],
+    "title": "01_oncology_metadata.json"
+  },
+  "table_count": 1,
+  "tables": [
+    {
+      "column_count": 2,
+      "columns": [
+        "Path",
+        "Value"
+      ],
+      "confidence": 1.0,
+      "metadata": {
+        "encoding": "utf-8-sig"
+      },
+      "name": "Structured Data",
+      "row_count": 15,
+      "rows": [
+        [
+          "activity_value_nm",
+          98
+        ],
+        [
+          "assay",
+          "IC50"
+        ],
+        [
+          "disease",
+          "non-small-cell lung cancer"
+        ],
+        [
+          "document_id",
+          "DEMO-CORPUS-01"
+        ],
+        [
+          "doi",
+          ""
+        ],
+        [
+          "drug",
+          "gefitinib"
+        ],
+        [
+          "gene",
+          "EGFR"
+        ],
+        [
+          "mutation",
+          "L858R"
+        ],
+        [
+          "notice",
+          "Demonstration/reference content only; not experimental or clinical evidence."
+        ],
+        [
+          "organism",
+          "Homo sapiens"
+        ],
+        [
+          "pmid",
+          ""
+        ],
+        [
+          "scientific_release_eligible",
+          false
+        ],
+        [
+          "synthetic_doi_label",
+          "SYN-DOI-NOT-REAL-0001"
+        ],
+        [
+          "synthetic_reference_id",
+          "SYN-PAPER-0001"
+        ],
+        [
+          "topic",
+          "oncology"
+        ]
+      ],
+      "source": "document"
+    }
+  ],
+  "text": "{\n  \"activity_value_nm\": 98,\n  \"assay\": \"IC50\",\n  \"disease\": \"non-small-cell lung cancer\",\n  \"document_id\": \"DEMO-CORPUS-01\",\n  \"doi\": \"\",\n  \"drug\": \"gefitinib\",\n  \"gene\": \"EGFR\",\n  \"mutation\": \"L858R\",\n  \"notice\": \"Demonstration/reference content only; not experimental or clinical evidence.\",\n  \"organism\": \"Homo sapiens\",\n  \"pmid\": \"\",\n  \"scientific_release_eligible\": false,\n  \"synthetic_doi_label\": \"SYN-DOI-NOT-REAL-0001\",\n  \"synthetic_reference_id\": \"SYN-PAPER-0001\",\n  \"topic\": \"oncology\"\n}",
+  "warning_count": 0,
+  "warnings": []
+}

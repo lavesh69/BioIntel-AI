@@ -1,0 +1,129 @@
+{
+  "character_count": 221,
+  "entities": [
+    {
+      "confidence": 0.86,
+      "end": 4,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "DEMO",
+      "source": "document",
+      "start": 0,
+      "text": "DEMO"
+    },
+    {
+      "confidence": 0.86,
+      "end": 29,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "PPARG",
+      "source": "document",
+      "start": 24,
+      "text": "PPARG"
+    },
+    {
+      "confidence": 0.72,
+      "end": 78,
+      "entity_type": "disease",
+      "metadata": {},
+      "normalized": "diabetes",
+      "source": "document",
+      "start": 70,
+      "text": "diabetes"
+    },
+    {
+      "confidence": 0.92,
+      "end": 93,
+      "entity_type": "mutation",
+      "metadata": {},
+      "normalized": "P12A",
+      "source": "document",
+      "start": 89,
+      "text": "P12A"
+    },
+    {
+      "confidence": 0.97,
+      "end": 105,
+      "entity_type": "assay_endpoint",
+      "metadata": {},
+      "normalized": "EC50",
+      "source": "document",
+      "start": 101,
+      "text": "EC50"
+    },
+    {
+      "confidence": 0.86,
+      "end": 105,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "EC50",
+      "source": "document",
+      "start": 101,
+      "text": "EC50"
+    },
+    {
+      "confidence": 0.9,
+      "end": 128,
+      "entity_type": "organism",
+      "metadata": {},
+      "normalized": "Homo sapiens",
+      "source": "document",
+      "start": 116,
+      "text": "Homo sapiens"
+    }
+  ],
+  "entity_count": 7,
+  "file_type": "txt",
+  "image_count": 0,
+  "metadata": {
+    "encoding": "utf-8-sig",
+    "scientific_entity_extraction": "rule_based_v1",
+    "sensitive_finding_count": 0,
+    "sensitive_redaction_applied": false
+  },
+  "mime_type": "text/plain",
+  "page_count": 0,
+  "paragraph_count": 0,
+  "region_count": 0,
+  "regions": [],
+  "row_count": 0,
+  "sections": [
+    {
+      "confidence": 1.0,
+      "metadata": {},
+      "name": "Document",
+      "source": "document",
+      "text": "DEMO PROTOCOL 5\nTarget: PPARG\nCompound: rosiglitazone\nDisease: type 2 diabetes\nMutation: P12A\nAssay: EC50\nOrganism: Homo sapiens\nResult: 390 nM\nDemonstration/reference content only; not experimental or clinical evidence.\n"
+    }
+  ],
+  "sheet_count": 0,
+  "source_name": "05_metabolism_protocol.txt",
+  "source_sha256": "103db2767b3e87239ecef0965c57190d1cdc557e0b7479c76c5aa03d4ce83af9",
+  "source_size_bytes": 221,
+  "structured_fields": {
+    "activity_measurements": [],
+    "document_type": "research_document",
+    "entity_counts": {
+      "assay_endpoint": 1,
+      "disease": 1,
+      "gene_or_protein": 3,
+      "mutation": 1,
+      "organism": 1
+    },
+    "has_limitations": false,
+    "has_methods": false,
+    "has_results": false,
+    "publication_identifiers": [],
+    "sample_sizes": [],
+    "sections": {
+      "unclassified": "DEMO PROTOCOL 5\nTarget: PPARG\nCompound: rosiglitazone\nDisease: type 2 diabetes\nMutation: P12A\nAssay: EC50\nOrganism: Homo sapiens\nResult: 390 nM\nDemonstration/reference content only; not experimental or clinical evidence."
+    },
+    "sensitive_findings": [],
+    "title": "05_metabolism_protocol.txt"
+  },
+  "table_count": 0,
+  "tables": [],
+  "text": "DEMO PROTOCOL 5\nTarget: PPARG\nCompound: rosiglitazone\nDisease: type 2 diabetes\nMutation: P12A\nAssay: EC50\nOrganism: Homo sapiens\nResult: 390 nM\nDemonstration/reference content only; not experimental or clinical evidence.\n",
+  "warning_count": 0,
+  "warnings": []
+}

@@ -1,0 +1,119 @@
+{
+  "duplicate_of_run_id": null,
+  "engine_version": "2.7.0",
+  "outputs": [
+    {
+      "created_at_utc": "2026-07-29T10:41:06.335615+00:00",
+      "filename": "08_kinase_table_extracted.json",
+      "format": "json",
+      "integrity_status": "unknown",
+      "output_id": "e7ab416eb33f4a0c9f3fb823c7077d37",
+      "path": "/mnt/data/biointel_r2_work/BioIntel-Step220/UserData/data/document_extractions/4bdacefd63b44bf09c22c71f8cd1230e/08_kinase_table_extracted.json",
+      "run_id": "4bdacefd63b44bf09c22c71f8cd1230e",
+      "sha256": "e7aa81a9832d89a809c3bfa38e961d3163f7ac393eeed44988277697c5f48ead",
+      "size_bytes": 4554,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-29T10:41:06.340526+00:00",
+      "filename": "08_kinase_table_extracted.xlsx",
+      "format": "xlsx",
+      "integrity_status": "unknown",
+      "output_id": "d76678dfebab416988670cd7ae1153a0",
+      "path": "/mnt/data/biointel_r2_work/BioIntel-Step220/UserData/data/document_extractions/4bdacefd63b44bf09c22c71f8cd1230e/08_kinase_table_extracted.xlsx",
+      "run_id": "4bdacefd63b44bf09c22c71f8cd1230e",
+      "sha256": "46fea86cf0414ba027ca7642edfce8443b34f6c7d441f32c30ceaf7f7d2262d6",
+      "size_bytes": 9496,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-29T10:41:06.343869+00:00",
+      "filename": "08_kinase_table_extracted.docx",
+      "format": "docx",
+      "integrity_status": "unknown",
+      "output_id": "5a9eacea4aec49f889055caceeef4012",
+      "path": "/mnt/data/biointel_r2_work/BioIntel-Step220/UserData/data/document_extractions/4bdacefd63b44bf09c22c71f8cd1230e/08_kinase_table_extracted.docx",
+      "run_id": "4bdacefd63b44bf09c22c71f8cd1230e",
+      "sha256": "785617b5c06fc5066d31f8ae6c3aabad9318d3b06193f4bf97135bcc219070b3",
+      "size_bytes": 37840,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-29T10:41:06.347008+00:00",
+      "filename": "08_kinase_table_extracted.pdf",
+      "format": "pdf",
+      "integrity_status": "unknown",
+      "output_id": "466d683f2b0948119cf1392129c7a804",
+      "path": "/mnt/data/biointel_r2_work/BioIntel-Step220/UserData/data/document_extractions/4bdacefd63b44bf09c22c71f8cd1230e/08_kinase_table_extracted.pdf",
+      "run_id": "4bdacefd63b44bf09c22c71f8cd1230e",
+      "sha256": "394757631cdbbaf02b3f4d4e6762b908846e0f56537967c8f39702a3c365515e",
+      "size_bytes": 4645,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-29T10:41:06.350408+00:00",
+      "filename": "08_kinase_table_csv_tables.zip",
+      "format": "csv_zip",
+      "integrity_status": "unknown",
+      "output_id": "1fcb53cfe8dd4d6298cb11e082ae455a",
+      "path": "/mnt/data/biointel_r2_work/BioIntel-Step220/UserData/data/document_extractions/4bdacefd63b44bf09c22c71f8cd1230e/08_kinase_table_csv_tables.zip",
+      "run_id": "4bdacefd63b44bf09c22c71f8cd1230e",
+      "sha256": "1d5d764cb8f19786f4c3e38628b8f029dc2293833716265bec76aa4f08c27f0d",
+      "size_bytes": 2736,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-29T10:41:06.353680+00:00",
+      "filename": "08_kinase_table_complete_export.zip",
+      "format": "bundle_zip",
+      "integrity_status": "unknown",
+      "output_id": "2d7b731f60004a8ca1876b663bed5cbc",
+      "path": "/mnt/data/biointel_r2_work/BioIntel-Step220/UserData/data/document_extractions/4bdacefd63b44bf09c22c71f8cd1230e/08_kinase_table_complete_export.zip",
+      "run_id": "4bdacefd63b44bf09c22c71f8cd1230e",
+      "sha256": "71052722d1f43af0cf5c4f9f22d5d1e4eeaa506998ccb149d918b5d8a921567a",
+      "size_bytes": 50917,
+      "verified_at_utc": null
+    }
+  ],
+  "run_id": "4bdacefd63b44bf09c22c71f8cd1230e",
+  "source": {
+    "character_count": 243,
+    "entity_count": 7,
+    "file_type": "csv",
+    "image_count": 0,
+    "mime_type": "text/csv",
+    "page_count": 0,
+    "paragraph_count": 0,
+    "region_count": 0,
+    "row_count": 2,
+    "sheet_count": 0,
+    "source_name": "08_kinase_table.csv",
+    "source_sha256": "73dbd82867656aeb84977ec7862de316a5aa87b243e21011c8ff8319dd28ab12",
+    "source_size_bytes": 243,
+    "table_count": 1,
+    "warning_count": 0
+  },
+  "structured_fields": {
+    "activity_measurements": [],
+    "document_type": "research_document",
+    "entity_counts": {
+      "assay_endpoint": 1,
+      "disease": 1,
+      "drug_or_compound": 1,
+      "gene_or_protein": 2,
+      "mutation": 1,
+      "organism": 1
+    },
+    "has_limitations": false,
+    "has_methods": false,
+    "has_results": false,
+    "publication_identifiers": [],
+    "sample_sizes": [],
+    "sections": {
+      "unclassified": "record_id,compound,target,disease,mutation,assay,value_nm,organism,status\nDEMO-CORPUS-08,vemurafenib,BRAF,melanoma,V600E,IC50,609,Homo sapiens,demo_only\nDEMO-CORPUS-08-B,vemurafenib analogue,BRAF,melanoma,V600E,IC50,719,Homo sapiens,demo_only"
+    },
+    "sensitive_findings": [],
+    "title": "08_kinase_table.csv"
+  },
+  "warnings": []
+}

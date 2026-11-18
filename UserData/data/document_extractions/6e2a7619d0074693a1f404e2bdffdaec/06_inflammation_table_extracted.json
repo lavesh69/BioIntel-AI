@@ -1,0 +1,178 @@
+{
+  "character_count": 263,
+  "entities": [
+    {
+      "confidence": 0.72,
+      "end": 190,
+      "entity_type": "drug_or_compound",
+      "metadata": {},
+      "normalized": "infliximab",
+      "source": "document",
+      "start": 180,
+      "text": "infliximab"
+    },
+    {
+      "confidence": 0.86,
+      "end": 203,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "TNF",
+      "source": "document",
+      "start": 200,
+      "text": "TNF"
+    },
+    {
+      "confidence": 0.72,
+      "end": 224,
+      "entity_type": "disease",
+      "metadata": {},
+      "normalized": "arthritis",
+      "source": "document",
+      "start": 215,
+      "text": "arthritis"
+    },
+    {
+      "confidence": 0.92,
+      "end": 230,
+      "entity_type": "mutation",
+      "metadata": {},
+      "normalized": "G308A",
+      "source": "document",
+      "start": 225,
+      "text": "G308A"
+    },
+    {
+      "confidence": 0.97,
+      "end": 235,
+      "entity_type": "assay_endpoint",
+      "metadata": {},
+      "normalized": "EC50",
+      "source": "document",
+      "start": 231,
+      "text": "EC50"
+    },
+    {
+      "confidence": 0.86,
+      "end": 235,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "EC50",
+      "source": "document",
+      "start": 231,
+      "text": "EC50"
+    },
+    {
+      "confidence": 0.9,
+      "end": 252,
+      "entity_type": "organism",
+      "metadata": {},
+      "normalized": "Homo sapiens",
+      "source": "document",
+      "start": 240,
+      "text": "Homo sapiens"
+    }
+  ],
+  "entity_count": 7,
+  "file_type": "csv",
+  "image_count": 0,
+  "metadata": {
+    "delimiter": ",",
+    "encoding": "utf-8-sig",
+    "scientific_entity_extraction": "rule_based_v1",
+    "sensitive_finding_count": 0,
+    "sensitive_redaction_applied": false
+  },
+  "mime_type": "text/csv",
+  "page_count": 0,
+  "paragraph_count": 0,
+  "region_count": 0,
+  "regions": [],
+  "row_count": 2,
+  "sections": [
+    {
+      "confidence": 1.0,
+      "metadata": {},
+      "name": "Document",
+      "source": "document",
+      "text": "record_id,compound,target,disease,mutation,assay,value_nm,organism,status\nDEMO-CORPUS-06,infliximab,TNF,rheumatoid arthritis,G308A,EC50,463,Homo sapiens,demo_only\nDEMO-CORPUS-06-B,infliximab analogue,TNF,rheumatoid arthritis,G308A,EC50,573,Homo sapiens,demo_only\n"
+    }
+  ],
+  "sheet_count": 0,
+  "source_name": "06_inflammation_table.csv",
+  "source_sha256": "185c28ecb35a81026d4ab32f296bb6717379a475495afa55515a0dcadec7147d",
+  "source_size_bytes": 263,
+  "structured_fields": {
+    "activity_measurements": [],
+    "document_type": "research_document",
+    "entity_counts": {
+      "assay_endpoint": 1,
+      "disease": 1,
+      "drug_or_compound": 1,
+      "gene_or_protein": 2,
+      "mutation": 1,
+      "organism": 1
+    },
+    "has_limitations": false,
+    "has_methods": false,
+    "has_results": false,
+    "publication_identifiers": [],
+    "sample_sizes": [],
+    "sections": {
+      "unclassified": "record_id,compound,target,disease,mutation,assay,value_nm,organism,status\nDEMO-CORPUS-06,infliximab,TNF,rheumatoid arthritis,G308A,EC50,463,Homo sapiens,demo_only\nDEMO-CORPUS-06-B,infliximab analogue,TNF,rheumatoid arthritis,G308A,EC50,573,Homo sapiens,demo_only"
+    },
+    "sensitive_findings": [],
+    "title": "06_inflammation_table.csv"
+  },
+  "table_count": 1,
+  "tables": [
+    {
+      "column_count": 9,
+      "columns": [
+        "record_id",
+        "compound",
+        "target",
+        "disease",
+        "mutation",
+        "assay",
+        "value_nm",
+        "organism",
+        "status"
+      ],
+      "confidence": 1.0,
+      "metadata": {
+        "delimiter": ",",
+        "encoding": "utf-8-sig"
+      },
+      "name": "Delimited Data",
+      "row_count": 2,
+      "rows": [
+        [
+          "DEMO-CORPUS-06",
+          "infliximab",
+          "TNF",
+          "rheumatoid arthritis",
+          "G308A",
+          "EC50",
+          "463",
+          "Homo sapiens",
+          "demo_only"
+        ],
+        [
+          "DEMO-CORPUS-06-B",
+          "infliximab analogue",
+          "TNF",
+          "rheumatoid arthritis",
+          "G308A",
+          "EC50",
+          "573",
+          "Homo sapiens",
+          "demo_only"
+        ]
+      ],
+      "source": "document"
+    }
+  ],
+  "text": "record_id,compound,target,disease,mutation,assay,value_nm,organism,status\nDEMO-CORPUS-06,infliximab,TNF,rheumatoid arthritis,G308A,EC50,463,Homo sapiens,demo_only\nDEMO-CORPUS-06-B,infliximab analogue,TNF,rheumatoid arthritis,G308A,EC50,573,Homo sapiens,demo_only\n",
+  "warning_count": 0,
+  "warnings": []
+}

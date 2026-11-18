@@ -1,0 +1,119 @@
+{
+  "duplicate_of_run_id": null,
+  "engine_version": "2.7.0",
+  "outputs": [
+    {
+      "created_at_utc": "2026-07-29T10:41:03.167261+00:00",
+      "filename": "01_oncology_protocol_extracted.json",
+      "format": "json",
+      "integrity_status": "unknown",
+      "output_id": "80dd36ba17224903a2a38dd19a87ca39",
+      "path": "/mnt/data/biointel_r2_work/BioIntel-Step220/UserData/data/document_extractions/a95dfc4a81f541a0b4c9cd7c18441c68/01_oncology_protocol_extracted.json",
+      "run_id": "a95dfc4a81f541a0b4c9cd7c18441c68",
+      "sha256": "256431bd784339b7f1f2733169c532818cb36bb2d8e3fcee6f334fcacda72b52",
+      "size_bytes": 3811,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-29T10:41:03.176164+00:00",
+      "filename": "01_oncology_protocol_extracted.xlsx",
+      "format": "xlsx",
+      "integrity_status": "unknown",
+      "output_id": "05a4ec047593406bb2437989123e5622",
+      "path": "/mnt/data/biointel_r2_work/BioIntel-Step220/UserData/data/document_extractions/a95dfc4a81f541a0b4c9cd7c18441c68/01_oncology_protocol_extracted.xlsx",
+      "run_id": "a95dfc4a81f541a0b4c9cd7c18441c68",
+      "sha256": "4df55d866bb5844235f29285b9d667331121d78e5106971e23dcacd7c4153765",
+      "size_bytes": 8665,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-29T10:41:03.179891+00:00",
+      "filename": "01_oncology_protocol_extracted.docx",
+      "format": "docx",
+      "integrity_status": "unknown",
+      "output_id": "68e76d9068754b539204a00ce36f73c6",
+      "path": "/mnt/data/biointel_r2_work/BioIntel-Step220/UserData/data/document_extractions/a95dfc4a81f541a0b4c9cd7c18441c68/01_oncology_protocol_extracted.docx",
+      "run_id": "a95dfc4a81f541a0b4c9cd7c18441c68",
+      "sha256": "18f212190371e85c373dfa528d922c4d124677e9e3589b37e79948e0f25c5787",
+      "size_bytes": 37747,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-29T10:41:03.183718+00:00",
+      "filename": "01_oncology_protocol_extracted.pdf",
+      "format": "pdf",
+      "integrity_status": "unknown",
+      "output_id": "99cf4b56a4ab459589db909bfe514b9d",
+      "path": "/mnt/data/biointel_r2_work/BioIntel-Step220/UserData/data/document_extractions/a95dfc4a81f541a0b4c9cd7c18441c68/01_oncology_protocol_extracted.pdf",
+      "run_id": "a95dfc4a81f541a0b4c9cd7c18441c68",
+      "sha256": "cd8932a3c0fea2cc645df2b19a4b112dc6f12226ab5f5d53ceade7a2771ae844",
+      "size_bytes": 3902,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-29T10:41:03.187160+00:00",
+      "filename": "01_oncology_protocol_csv_tables.zip",
+      "format": "csv_zip",
+      "integrity_status": "unknown",
+      "output_id": "207db6d30ab741e18a69fc822698b586",
+      "path": "/mnt/data/biointel_r2_work/BioIntel-Step220/UserData/data/document_extractions/a95dfc4a81f541a0b4c9cd7c18441c68/01_oncology_protocol_csv_tables.zip",
+      "run_id": "a95dfc4a81f541a0b4c9cd7c18441c68",
+      "sha256": "0788bf50fdde30bbc70164d661cc2110993a9d49db5ffc46b6cb3fb9bca5ed61",
+      "size_bytes": 2404,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-29T10:41:03.196163+00:00",
+      "filename": "01_oncology_protocol_complete_export.zip",
+      "format": "bundle_zip",
+      "integrity_status": "unknown",
+      "output_id": "0d577ca06b184f8f85fcd0dbffad41df",
+      "path": "/mnt/data/biointel_r2_work/BioIntel-Step220/UserData/data/document_extractions/a95dfc4a81f541a0b4c9cd7c18441c68/01_oncology_protocol_complete_export.zip",
+      "run_id": "a95dfc4a81f541a0b4c9cd7c18441c68",
+      "sha256": "8d502d58708021eb0507bf0ac63062e9b753200e6b52e6d2519cc2732bfb5bea",
+      "size_bytes": 49397,
+      "verified_at_utc": null
+    }
+  ],
+  "run_id": "a95dfc4a81f541a0b4c9cd7c18441c68",
+  "source": {
+    "character_count": 227,
+    "entity_count": 8,
+    "file_type": "txt",
+    "image_count": 0,
+    "mime_type": "text/plain",
+    "page_count": 0,
+    "paragraph_count": 0,
+    "region_count": 0,
+    "row_count": 0,
+    "sheet_count": 0,
+    "source_name": "01_oncology_protocol.txt",
+    "source_sha256": "46493fc303c467263f69357dc18622f1d9e1c381e42414d676500301f8acb615",
+    "source_size_bytes": 227,
+    "table_count": 0,
+    "warning_count": 0
+  },
+  "structured_fields": {
+    "activity_measurements": [],
+    "document_type": "research_document",
+    "entity_counts": {
+      "assay_endpoint": 1,
+      "disease": 1,
+      "drug_or_compound": 1,
+      "gene_or_protein": 3,
+      "mutation": 1,
+      "organism": 1
+    },
+    "has_limitations": false,
+    "has_methods": false,
+    "has_results": false,
+    "publication_identifiers": [],
+    "sample_sizes": [],
+    "sections": {
+      "unclassified": "DEMO PROTOCOL 1\nTarget: EGFR\nCompound: gefitinib\nDisease: non-small-cell lung cancer\nMutation: L858R\nAssay: IC50\nOrganism: Homo sapiens\nResult: 98 nM\nDemonstration/reference content only; not experimental or clinical evidence."
+    },
+    "sensitive_findings": [],
+    "title": "01_oncology_protocol.txt"
+  },
+  "warnings": []
+}

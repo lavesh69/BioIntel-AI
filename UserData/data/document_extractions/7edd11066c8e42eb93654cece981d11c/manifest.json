@@ -1,0 +1,118 @@
+{
+  "duplicate_of_run_id": null,
+  "engine_version": "2.7.0",
+  "outputs": [
+    {
+      "created_at_utc": "2026-07-29T10:41:04.691180+00:00",
+      "filename": "05_metabolism_metadata_extracted.json",
+      "format": "json",
+      "integrity_status": "unknown",
+      "output_id": "2f069ca6ce4f4a5fa02a476a4eef89a0",
+      "path": "/mnt/data/biointel_r2_work/BioIntel-Step220/UserData/data/document_extractions/7edd11066c8e42eb93654cece981d11c/05_metabolism_metadata_extracted.json",
+      "run_id": "7edd11066c8e42eb93654cece981d11c",
+      "sha256": "7cb588858857787479e98b154171021aa53abffaf725c862dd63201390bf6ef1",
+      "size_bytes": 5704,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-29T10:41:04.695239+00:00",
+      "filename": "05_metabolism_metadata_extracted.xlsx",
+      "format": "xlsx",
+      "integrity_status": "unknown",
+      "output_id": "c1721c08ec91433c9d2d0e6a01792698",
+      "path": "/mnt/data/biointel_r2_work/BioIntel-Step220/UserData/data/document_extractions/7edd11066c8e42eb93654cece981d11c/05_metabolism_metadata_extracted.xlsx",
+      "run_id": "7edd11066c8e42eb93654cece981d11c",
+      "sha256": "6e36c78055ccf22788015b9c69dfef9d08c9f40709c7ec458a41ea4a51b84ce0",
+      "size_bytes": 9869,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-29T10:41:04.698353+00:00",
+      "filename": "05_metabolism_metadata_extracted.docx",
+      "format": "docx",
+      "integrity_status": "unknown",
+      "output_id": "032e6b9f386e4ea4bdf12213817c4596",
+      "path": "/mnt/data/biointel_r2_work/BioIntel-Step220/UserData/data/document_extractions/7edd11066c8e42eb93654cece981d11c/05_metabolism_metadata_extracted.docx",
+      "run_id": "7edd11066c8e42eb93654cece981d11c",
+      "sha256": "978c8741db509fc132f5b715dd308760c9e24e2091c8bfd00067265ab7024497",
+      "size_bytes": 38098,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-29T10:41:04.701834+00:00",
+      "filename": "05_metabolism_metadata_extracted.pdf",
+      "format": "pdf",
+      "integrity_status": "unknown",
+      "output_id": "a2537dd9cb0a41bc91c3c5e03ddefe59",
+      "path": "/mnt/data/biointel_r2_work/BioIntel-Step220/UserData/data/document_extractions/7edd11066c8e42eb93654cece981d11c/05_metabolism_metadata_extracted.pdf",
+      "run_id": "7edd11066c8e42eb93654cece981d11c",
+      "sha256": "24b5817862042dc7bb5124b390b7ef1099ba116ace9d0fdc3b57cbbd932a9de2",
+      "size_bytes": 4982,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-29T10:41:04.705083+00:00",
+      "filename": "05_metabolism_metadata_csv_tables.zip",
+      "format": "csv_zip",
+      "integrity_status": "unknown",
+      "output_id": "80a41961ad4d4bbeb1e8dc04ee58eacb",
+      "path": "/mnt/data/biointel_r2_work/BioIntel-Step220/UserData/data/document_extractions/7edd11066c8e42eb93654cece981d11c/05_metabolism_metadata_csv_tables.zip",
+      "run_id": "7edd11066c8e42eb93654cece981d11c",
+      "sha256": "5134014edfbd3631f7bf762e59d06ab888e341b80c3252c65d51af7d1d9a72df",
+      "size_bytes": 3325,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-29T10:41:04.708290+00:00",
+      "filename": "05_metabolism_metadata_complete_export.zip",
+      "format": "bundle_zip",
+      "integrity_status": "unknown",
+      "output_id": "9ec633425cd442e1bbdbf5516d101ae4",
+      "path": "/mnt/data/biointel_r2_work/BioIntel-Step220/UserData/data/document_extractions/7edd11066c8e42eb93654cece981d11c/05_metabolism_metadata_complete_export.zip",
+      "run_id": "7edd11066c8e42eb93654cece981d11c",
+      "sha256": "e9eef869ad271640dc9b4023e7e754c84835853c2474c7a88616064f46923b9d",
+      "size_bytes": 52670,
+      "verified_at_utc": null
+    }
+  ],
+  "run_id": "7edd11066c8e42eb93654cece981d11c",
+  "source": {
+    "character_count": 494,
+    "entity_count": 6,
+    "file_type": "json",
+    "image_count": 0,
+    "mime_type": "application/json",
+    "page_count": 0,
+    "paragraph_count": 0,
+    "region_count": 0,
+    "row_count": 15,
+    "sheet_count": 0,
+    "source_name": "05_metabolism_metadata.json",
+    "source_sha256": "95cf2ba1c07273d64f0815c53e0e1d08c7cbcca498e5030625fba42222224ecd",
+    "source_size_bytes": 494,
+    "table_count": 1,
+    "warning_count": 0
+  },
+  "structured_fields": {
+    "activity_measurements": [],
+    "document_type": "research_document",
+    "entity_counts": {
+      "assay_endpoint": 1,
+      "disease": 1,
+      "gene_or_protein": 2,
+      "mutation": 1,
+      "organism": 1
+    },
+    "has_limitations": false,
+    "has_methods": false,
+    "has_results": false,
+    "publication_identifiers": [],
+    "sample_sizes": [],
+    "sections": {
+      "unclassified": "{\n\"activity_value_nm\": 390,\n\"assay\": \"EC50\",\n\"disease\": \"type 2 diabetes\",\n\"document_id\": \"DEMO-CORPUS-05\",\n\"doi\": \"\",\n\"drug\": \"rosiglitazone\",\n\"gene\": \"PPARG\",\n\"mutation\": \"P12A\",\n\"notice\": \"Demonstration/reference content only; not experimental or clinical evidence.\",\n\"organism\": \"Homo sapiens\",\n\"pmid\": \"\",\n\"scientific_release_eligible\": false,\n\"synthetic_doi_label\": \"SYN-DOI-NOT-REAL-0005\",\n\"synthetic_reference_id\": \"SYN-PAPER-0005\",\n\"topic\": \"metabolism\"\n}"
+    },
+    "sensitive_findings": [],
+    "title": "05_metabolism_metadata.json"
+  },
+  "warnings": []
+}

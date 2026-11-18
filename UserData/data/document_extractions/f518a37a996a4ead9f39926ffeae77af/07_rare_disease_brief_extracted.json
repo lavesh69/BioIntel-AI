@@ -1,0 +1,122 @@
+{
+  "character_count": 622,
+  "entities": [
+    {
+      "confidence": 0.86,
+      "end": 133,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "CFTR",
+      "source": "document",
+      "start": 129,
+      "text": "CFTR"
+    },
+    {
+      "confidence": 0.72,
+      "end": 167,
+      "entity_type": "disease",
+      "metadata": {},
+      "normalized": "fibrosis",
+      "source": "document",
+      "start": 159,
+      "text": "fibrosis"
+    },
+    {
+      "confidence": 0.92,
+      "end": 198,
+      "entity_type": "mutation",
+      "metadata": {},
+      "normalized": "G551D",
+      "source": "document",
+      "start": 193,
+      "text": "G551D"
+    },
+    {
+      "confidence": 0.97,
+      "end": 518,
+      "entity_type": "assay_endpoint",
+      "metadata": {},
+      "normalized": "EC50",
+      "source": "document",
+      "start": 514,
+      "text": "EC50"
+    },
+    {
+      "confidence": 0.86,
+      "end": 518,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "EC50",
+      "source": "document",
+      "start": 514,
+      "text": "EC50"
+    },
+    {
+      "confidence": 0.9,
+      "end": 268,
+      "entity_type": "organism",
+      "metadata": {},
+      "normalized": "Homo sapiens",
+      "source": "document",
+      "start": 256,
+      "text": "Homo sapiens"
+    }
+  ],
+  "entity_count": 6,
+  "file_type": "md",
+  "image_count": 0,
+  "metadata": {
+    "encoding": "utf-8-sig",
+    "scientific_entity_extraction": "rule_based_v1",
+    "sensitive_finding_count": 0,
+    "sensitive_redaction_applied": false
+  },
+  "mime_type": "text/markdown",
+  "page_count": 0,
+  "paragraph_count": 0,
+  "region_count": 0,
+  "regions": [],
+  "row_count": 0,
+  "sections": [
+    {
+      "confidence": 1.0,
+      "metadata": {},
+      "name": "Document",
+      "source": "document",
+      "text": "# Rare Disease Demonstration Brief\n\n## Summary\nBioIntel demonstration record 7. The compound ivacaftor was discussed with target CFTR in the context of cystic fibrosis. The example mutation is G551D. A demonstration EC50 measurement of 536 nM is shown for Homo sapiens. Synthetic reference labels: SYN-PAPER-0007 and SYN-DOI-NOT-REAL-0007. This content exists only to populate document search, extraction, entity recognition, history, comparison and evidence-bridge screens.\n\n## Methods\nSynthetic reference table; EC50 endpoint.\n\n## Limitations\nDemonstration/reference content only; not experimental or clinical evidence.\n"
+    }
+  ],
+  "sheet_count": 0,
+  "source_name": "07_rare_disease_brief.md",
+  "source_sha256": "9ed67981b039d24dd15f2470ed4002904a0cda85b86b7a636bebe29f4109efca",
+  "source_size_bytes": 622,
+  "structured_fields": {
+    "activity_measurements": [],
+    "document_type": "research_document",
+    "entity_counts": {
+      "assay_endpoint": 1,
+      "disease": 1,
+      "gene_or_protein": 2,
+      "mutation": 1,
+      "organism": 1
+    },
+    "has_limitations": true,
+    "has_methods": true,
+    "has_results": false,
+    "publication_identifiers": [],
+    "sample_sizes": [],
+    "sections": {
+      "abstract": "BioIntel demonstration record 7. The compound ivacaftor was discussed with target CFTR in the context of cystic fibrosis. The example mutation is G551D. A demonstration EC50 measurement of 536 nM is shown for Homo sapiens. Synthetic reference labels: SYN-PAPER-0007 and SYN-DOI-NOT-REAL-0007. This content exists only to populate document search, extraction, entity recognition, history, comparison and evidence-bridge screens.",
+      "limitations": "Demonstration/reference content only; not experimental or clinical evidence.",
+      "methods": "Synthetic reference table; EC50 endpoint.",
+      "unclassified": "# Rare Disease Demonstration Brief"
+    },
+    "sensitive_findings": [],
+    "title": "07_rare_disease_brief.md"
+  },
+  "table_count": 0,
+  "tables": [],
+  "text": "# Rare Disease Demonstration Brief\n\n## Summary\nBioIntel demonstration record 7. The compound ivacaftor was discussed with target CFTR in the context of cystic fibrosis. The example mutation is G551D. A demonstration EC50 measurement of 536 nM is shown for Homo sapiens. Synthetic reference labels: SYN-PAPER-0007 and SYN-DOI-NOT-REAL-0007. This content exists only to populate document search, extraction, entity recognition, history, comparison and evidence-bridge screens.\n\n## Methods\nSynthetic reference table; EC50 endpoint.\n\n## Limitations\nDemonstration/reference content only; not experimental or clinical evidence.\n",
+  "warning_count": 0,
+  "warnings": []
+}

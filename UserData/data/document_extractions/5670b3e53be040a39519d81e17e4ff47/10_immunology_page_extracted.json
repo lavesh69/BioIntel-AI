@@ -1,0 +1,145 @@
+{
+  "character_count": 616,
+  "entities": [
+    {
+      "confidence": 0.72,
+      "end": 517,
+      "entity_type": "drug_or_compound",
+      "metadata": {},
+      "normalized": "upadacitinib",
+      "source": "document",
+      "start": 505,
+      "text": "upadacitinib"
+    },
+    {
+      "confidence": 0.86,
+      "end": 522,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "JAK1",
+      "source": "document",
+      "start": 518,
+      "text": "JAK1"
+    },
+    {
+      "confidence": 0.92,
+      "end": 197,
+      "entity_type": "mutation",
+      "metadata": {},
+      "normalized": "V658F",
+      "source": "document",
+      "start": 192,
+      "text": "V658F"
+    },
+    {
+      "confidence": 0.97,
+      "end": 527,
+      "entity_type": "assay_endpoint",
+      "metadata": {},
+      "normalized": "IC50",
+      "source": "document",
+      "start": 523,
+      "text": "IC50"
+    },
+    {
+      "confidence": 0.86,
+      "end": 527,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "IC50",
+      "source": "document",
+      "start": 523,
+      "text": "IC50"
+    },
+    {
+      "confidence": 0.9,
+      "end": 267,
+      "entity_type": "organism",
+      "metadata": {},
+      "normalized": "Homo sapiens",
+      "source": "document",
+      "start": 255,
+      "text": "Homo sapiens"
+    }
+  ],
+  "entity_count": 6,
+  "file_type": "html",
+  "image_count": 0,
+  "metadata": {
+    "encoding": "utf-8-sig",
+    "image_count": 0,
+    "link_count": 0,
+    "scientific_entity_extraction": "rule_based_v1",
+    "sensitive_finding_count": 0,
+    "sensitive_redaction_applied": false,
+    "title": "BioIntel Demo"
+  },
+  "mime_type": "text/html",
+  "page_count": 0,
+  "paragraph_count": 0,
+  "region_count": 0,
+  "regions": [],
+  "row_count": 1,
+  "sections": [
+    {
+      "confidence": 1.0,
+      "metadata": {},
+      "name": "Document",
+      "source": "document",
+      "text": "BioIntel Demo\nImmunology reference page\nBioIntel demonstration record 10. The compound upadacitinib was discussed with target JAK1 in the context of atopic dermatitis. The example mutation is V658F. A demonstration IC50 measurement of 755 nM is shown for Homo sapiens. Synthetic reference labels: SYN-PAPER-0010 and SYN-DOI-NOT-REAL-0010. This content exists only to populate document search, extraction, entity recognition, history, comparison and evidence-bridge screens.\nCompound\nTarget\nAssay\nValue nM\nupadacitinib\nJAK1\nIC50\n755\nNotice:\nDemonstration/reference content only; not experimental or clinical evidence."
+    }
+  ],
+  "sheet_count": 0,
+  "source_name": "10_immunology_page.html",
+  "source_sha256": "b6cf2acc5297f88419d6b74f41f98c07034f222c8421247749760258ab4317b6",
+  "source_size_bytes": 819,
+  "structured_fields": {
+    "activity_measurements": [],
+    "document_type": "research_document",
+    "entity_counts": {
+      "assay_endpoint": 1,
+      "drug_or_compound": 1,
+      "gene_or_protein": 2,
+      "mutation": 1,
+      "organism": 1
+    },
+    "has_limitations": false,
+    "has_methods": false,
+    "has_results": false,
+    "publication_identifiers": [],
+    "sample_sizes": [],
+    "sections": {
+      "unclassified": "BioIntel Demo\nImmunology reference page\nBioIntel demonstration record 10. The compound upadacitinib was discussed with target JAK1 in the context of atopic dermatitis. The example mutation is V658F. A demonstration IC50 measurement of 755 nM is shown for Homo sapiens. Synthetic reference labels: SYN-PAPER-0010 and SYN-DOI-NOT-REAL-0010. This content exists only to populate document search, extraction, entity recognition, history, comparison and evidence-bridge screens.\nCompound\nTarget\nAssay\nValue nM\nupadacitinib\nJAK1\nIC50\n755\nNotice:\nDemonstration/reference content only; not experimental or clinical evidence."
+    },
+    "sensitive_findings": [],
+    "title": "BioIntel Demo"
+  },
+  "table_count": 1,
+  "tables": [
+    {
+      "column_count": 4,
+      "columns": [
+        "Compound",
+        "Target",
+        "Assay",
+        "Value nM"
+      ],
+      "confidence": 1.0,
+      "metadata": {},
+      "name": "HTML Table 1",
+      "row_count": 1,
+      "rows": [
+        [
+          "upadacitinib",
+          "JAK1",
+          "IC50",
+          755
+        ]
+      ],
+      "source": "table:1"
+    }
+  ],
+  "text": "BioIntel Demo\nImmunology reference page\nBioIntel demonstration record 10. The compound upadacitinib was discussed with target JAK1 in the context of atopic dermatitis. The example mutation is V658F. A demonstration IC50 measurement of 755 nM is shown for Homo sapiens. Synthetic reference labels: SYN-PAPER-0010 and SYN-DOI-NOT-REAL-0010. This content exists only to populate document search, extraction, entity recognition, history, comparison and evidence-bridge screens.\nCompound\nTarget\nAssay\nValue nM\nupadacitinib\nJAK1\nIC50\n755\nNotice:\nDemonstration/reference content only; not experimental or clinical evidence.",
+  "warning_count": 0,
+  "warnings": []
+}

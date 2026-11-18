@@ -1,0 +1,117 @@
+{
+  "duplicate_of_run_id": null,
+  "engine_version": "2.7.0",
+  "outputs": [
+    {
+      "created_at_utc": "2026-07-29T10:41:03.523897+00:00",
+      "filename": "02_cardiology_page_extracted.json",
+      "format": "json",
+      "integrity_status": "unknown",
+      "output_id": "2d34f112223b4389a4138c2f941ee69f",
+      "path": "/mnt/data/biointel_r2_work/BioIntel-Step220/UserData/data/document_extractions/a5f114afeea24c88a2e099353920e942/02_cardiology_page_extracted.json",
+      "run_id": "a5f114afeea24c88a2e099353920e942",
+      "sha256": "7407a9ba108b13392e3504e7170b2023c075e21c4cb4d9af02608172bed0acd8",
+      "size_bytes": 4506,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-29T10:41:03.528900+00:00",
+      "filename": "02_cardiology_page_extracted.xlsx",
+      "format": "xlsx",
+      "integrity_status": "unknown",
+      "output_id": "b0cb67e4f19945e085d654ea80b8900b",
+      "path": "/mnt/data/biointel_r2_work/BioIntel-Step220/UserData/data/document_extractions/a5f114afeea24c88a2e099353920e942/02_cardiology_page_extracted.xlsx",
+      "run_id": "a5f114afeea24c88a2e099353920e942",
+      "sha256": "92899d6272b8b5379ee0384619e12b088c9d303bf457ef37d49f24153cd7519a",
+      "size_bytes": 9589,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-29T10:41:03.532247+00:00",
+      "filename": "02_cardiology_page_extracted.docx",
+      "format": "docx",
+      "integrity_status": "unknown",
+      "output_id": "a0410effbf0f4a229a7e064419aed25c",
+      "path": "/mnt/data/biointel_r2_work/BioIntel-Step220/UserData/data/document_extractions/a5f114afeea24c88a2e099353920e942/02_cardiology_page_extracted.docx",
+      "run_id": "a5f114afeea24c88a2e099353920e942",
+      "sha256": "b0395bd6772d75cb899ce91638c08c482212b1f5c08ec3f3f2cfcaf565bd8b03",
+      "size_bytes": 37947,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-29T10:41:03.535709+00:00",
+      "filename": "02_cardiology_page_extracted.pdf",
+      "format": "pdf",
+      "integrity_status": "unknown",
+      "output_id": "bb36980e844b44189f3900c35662c681",
+      "path": "/mnt/data/biointel_r2_work/BioIntel-Step220/UserData/data/document_extractions/a5f114afeea24c88a2e099353920e942/02_cardiology_page_extracted.pdf",
+      "run_id": "a5f114afeea24c88a2e099353920e942",
+      "sha256": "89c667e278dfb3634f406777d7729562c7568e8838d3c8f0ffb4b84ee3a13988",
+      "size_bytes": 4538,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-29T10:41:03.538890+00:00",
+      "filename": "02_cardiology_page_csv_tables.zip",
+      "format": "csv_zip",
+      "integrity_status": "unknown",
+      "output_id": "1d2b2c2d34594688b26d24a4031cac35",
+      "path": "/mnt/data/biointel_r2_work/BioIntel-Step220/UserData/data/document_extractions/a5f114afeea24c88a2e099353920e942/02_cardiology_page_csv_tables.zip",
+      "run_id": "a5f114afeea24c88a2e099353920e942",
+      "sha256": "72159dcdfe8f60c2248b548cc383254c10f3694cbae9dcd8d44c0e97e5d6808b",
+      "size_bytes": 3097,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-29T10:41:03.542126+00:00",
+      "filename": "02_cardiology_page_complete_export.zip",
+      "format": "bundle_zip",
+      "integrity_status": "unknown",
+      "output_id": "7e8a141b48594c669dcd7f8f96d25965",
+      "path": "/mnt/data/biointel_r2_work/BioIntel-Step220/UserData/data/document_extractions/a5f114afeea24c88a2e099353920e942/02_cardiology_page_complete_export.zip",
+      "run_id": "a5f114afeea24c88a2e099353920e942",
+      "sha256": "ce702258c31a8e64ba8c2171e3f43a05602988dd13057a8ec265d963e4aa75d2",
+      "size_bytes": 51517,
+      "verified_at_utc": null
+    }
+  ],
+  "run_id": "a5f114afeea24c88a2e099353920e942",
+  "source": {
+    "character_count": 610,
+    "entity_count": 4,
+    "file_type": "html",
+    "image_count": 0,
+    "mime_type": "text/html",
+    "page_count": 0,
+    "paragraph_count": 0,
+    "region_count": 0,
+    "row_count": 1,
+    "sheet_count": 0,
+    "source_name": "02_cardiology_page.html",
+    "source_sha256": "78abe529576d1fe978892d6ed645b7e85892192ad5a69d91dd1e102e6eeca4e3",
+    "source_size_bytes": 813,
+    "table_count": 1,
+    "warning_count": 0
+  },
+  "structured_fields": {
+    "activity_measurements": [],
+    "document_type": "research_document",
+    "entity_counts": {
+      "assay_endpoint": 1,
+      "gene_or_protein": 1,
+      "mutation": 1,
+      "organism": 1
+    },
+    "has_limitations": false,
+    "has_methods": false,
+    "has_results": false,
+    "publication_identifiers": [],
+    "sample_sizes": [],
+    "sections": {
+      "unclassified": "BioIntel Demo\nCardiology reference page\nBioIntel demonstration record 2. The compound dofetilide was discussed with target KCNH2 in the context of cardiac arrhythmia. The example mutation is T618I. A demonstration Ki measurement of 171 nM is shown for Homo sapiens. Synthetic reference labels: SYN-PAPER-0002 and SYN-DOI-NOT-REAL-0002. This content exists only to populate document search, extraction, entity recognition, history, comparison and evidence-bridge screens.\nCompound\nTarget\nAssay\nValue nM\ndofetilide\nKCNH2\nKi\n171\nNotice:\nDemonstration/reference content only; not experimental or clinical evidence."
+    },
+    "sensitive_findings": [],
+    "title": "BioIntel Demo"
+  },
+  "warnings": []
+}

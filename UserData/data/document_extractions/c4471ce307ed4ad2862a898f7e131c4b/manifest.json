@@ -1,0 +1,118 @@
+{
+  "duplicate_of_run_id": null,
+  "engine_version": "2.7.0",
+  "outputs": [
+    {
+      "created_at_utc": "2026-07-29T10:41:05.733185+00:00",
+      "filename": "07_rare_disease_page_extracted.json",
+      "format": "json",
+      "integrity_status": "unknown",
+      "output_id": "92592531a655460e9e665143d68f3f28",
+      "path": "/mnt/data/biointel_r2_work/BioIntel-Step220/UserData/data/document_extractions/c4471ce307ed4ad2862a898f7e131c4b/07_rare_disease_page_extracted.json",
+      "run_id": "c4471ce307ed4ad2862a898f7e131c4b",
+      "sha256": "2b2fc38ab65f246981139ad3cf65514f1cf1e5af7575a9f24c8ab3217461d570",
+      "size_bytes": 4959,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-29T10:41:05.737448+00:00",
+      "filename": "07_rare_disease_page_extracted.xlsx",
+      "format": "xlsx",
+      "integrity_status": "unknown",
+      "output_id": "78db63d113e041acb1cbb45d0700dd32",
+      "path": "/mnt/data/biointel_r2_work/BioIntel-Step220/UserData/data/document_extractions/c4471ce307ed4ad2862a898f7e131c4b/07_rare_disease_page_extracted.xlsx",
+      "run_id": "c4471ce307ed4ad2862a898f7e131c4b",
+      "sha256": "32a08205e8d507896bf88c2f3fb9ef589c365cc01132debb7f78eb4edc02c024",
+      "size_bytes": 9677,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-29T10:41:05.740963+00:00",
+      "filename": "07_rare_disease_page_extracted.docx",
+      "format": "docx",
+      "integrity_status": "unknown",
+      "output_id": "0a2e63f15b78486ba21e3e6951f1d466",
+      "path": "/mnt/data/biointel_r2_work/BioIntel-Step220/UserData/data/document_extractions/c4471ce307ed4ad2862a898f7e131c4b/07_rare_disease_page_extracted.docx",
+      "run_id": "c4471ce307ed4ad2862a898f7e131c4b",
+      "sha256": "17c79d90bfef21892852653a19b6309910bf0eea98c2c21eb502256ccde18e74",
+      "size_bytes": 37997,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-29T10:41:05.744552+00:00",
+      "filename": "07_rare_disease_page_extracted.pdf",
+      "format": "pdf",
+      "integrity_status": "unknown",
+      "output_id": "35da1980a31c4a26bf92db5c941e3b95",
+      "path": "/mnt/data/biointel_r2_work/BioIntel-Step220/UserData/data/document_extractions/c4471ce307ed4ad2862a898f7e131c4b/07_rare_disease_page_extracted.pdf",
+      "run_id": "c4471ce307ed4ad2862a898f7e131c4b",
+      "sha256": "87f590fe9316082217b96315c409830e5856cb3e29a55422d4ed458cded488b2",
+      "size_bytes": 4608,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-29T10:41:05.748345+00:00",
+      "filename": "07_rare_disease_page_csv_tables.zip",
+      "format": "csv_zip",
+      "integrity_status": "unknown",
+      "output_id": "41b9df45e8f04848a844fd5b10b003f6",
+      "path": "/mnt/data/biointel_r2_work/BioIntel-Step220/UserData/data/document_extractions/c4471ce307ed4ad2862a898f7e131c4b/07_rare_disease_page_csv_tables.zip",
+      "run_id": "c4471ce307ed4ad2862a898f7e131c4b",
+      "sha256": "b09c0d1acad73239bd1fa10cf01b1f231808c17d50fdb9ba77783bb238706208",
+      "size_bytes": 3189,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-29T10:41:05.758261+00:00",
+      "filename": "07_rare_disease_page_complete_export.zip",
+      "format": "bundle_zip",
+      "integrity_status": "unknown",
+      "output_id": "4af097fc7c6a4e58935ff70791de0802",
+      "path": "/mnt/data/biointel_r2_work/BioIntel-Step220/UserData/data/document_extractions/c4471ce307ed4ad2862a898f7e131c4b/07_rare_disease_page_complete_export.zip",
+      "run_id": "c4471ce307ed4ad2862a898f7e131c4b",
+      "sha256": "f7967c85671b4ec61e67ff21d606f793ed44a9d13dd18e11f22d027407c37148",
+      "size_bytes": 51873,
+      "verified_at_utc": null
+    }
+  ],
+  "run_id": "c4471ce307ed4ad2862a898f7e131c4b",
+  "source": {
+    "character_count": 609,
+    "entity_count": 6,
+    "file_type": "html",
+    "image_count": 0,
+    "mime_type": "text/html",
+    "page_count": 0,
+    "paragraph_count": 0,
+    "region_count": 0,
+    "row_count": 1,
+    "sheet_count": 0,
+    "source_name": "07_rare_disease_page.html",
+    "source_sha256": "fc1798085afa5c873bef16f1a7f25ca0f850220909a304436c349365d828bbef",
+    "source_size_bytes": 812,
+    "table_count": 1,
+    "warning_count": 0
+  },
+  "structured_fields": {
+    "activity_measurements": [],
+    "document_type": "research_document",
+    "entity_counts": {
+      "assay_endpoint": 1,
+      "disease": 1,
+      "gene_or_protein": 2,
+      "mutation": 1,
+      "organism": 1
+    },
+    "has_limitations": false,
+    "has_methods": false,
+    "has_results": false,
+    "publication_identifiers": [],
+    "sample_sizes": [],
+    "sections": {
+      "unclassified": "BioIntel Demo\nRare_Disease reference page\nBioIntel demonstration record 7. The compound ivacaftor was discussed with target CFTR in the context of cystic fibrosis. The example mutation is G551D. A demonstration EC50 measurement of 536 nM is shown for Homo sapiens. Synthetic reference labels: SYN-PAPER-0007 and SYN-DOI-NOT-REAL-0007. This content exists only to populate document search, extraction, entity recognition, history, comparison and evidence-bridge screens.\nCompound\nTarget\nAssay\nValue nM\nivacaftor\nCFTR\nEC50\n536\nNotice:\nDemonstration/reference content only; not experimental or clinical evidence."
+    },
+    "sensitive_findings": [],
+    "title": "BioIntel Demo"
+  },
+  "warnings": []
+}

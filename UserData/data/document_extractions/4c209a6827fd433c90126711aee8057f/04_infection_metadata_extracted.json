@@ -1,0 +1,187 @@
+{
+  "character_count": 499,
+  "entities": [
+    {
+      "confidence": 0.97,
+      "end": 45,
+      "entity_type": "assay_endpoint",
+      "metadata": {},
+      "normalized": "MIC",
+      "source": "document",
+      "start": 42,
+      "text": "MIC"
+    },
+    {
+      "confidence": 0.86,
+      "end": 45,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "MIC",
+      "source": "document",
+      "start": 42,
+      "text": "MIC"
+    },
+    {
+      "confidence": 0.72,
+      "end": 496,
+      "entity_type": "disease",
+      "metadata": {},
+      "normalized": "infection",
+      "source": "document",
+      "start": 487,
+      "text": "infection"
+    },
+    {
+      "confidence": 0.92,
+      "end": 196,
+      "entity_type": "mutation",
+      "metadata": {},
+      "normalized": "S83L",
+      "source": "document",
+      "start": 192,
+      "text": "S83L"
+    },
+    {
+      "confidence": 0.9,
+      "end": 322,
+      "entity_type": "organism",
+      "metadata": {},
+      "normalized": "Escherichia coli",
+      "source": "document",
+      "start": 306,
+      "text": "Escherichia coli"
+    }
+  ],
+  "entity_count": 5,
+  "file_type": "json",
+  "image_count": 0,
+  "metadata": {
+    "encoding": "utf-8-sig",
+    "root_type": "dict",
+    "scientific_entity_extraction": "rule_based_v1",
+    "sensitive_finding_count": 0,
+    "sensitive_redaction_applied": false
+  },
+  "mime_type": "application/json",
+  "page_count": 0,
+  "paragraph_count": 0,
+  "region_count": 0,
+  "regions": [],
+  "row_count": 15,
+  "sections": [
+    {
+      "confidence": 1.0,
+      "metadata": {},
+      "name": "Document",
+      "source": "document",
+      "text": "{\n  \"activity_value_nm\": 317,\n  \"assay\": \"MIC\",\n  \"disease\": \"bacterial infection\",\n  \"document_id\": \"DEMO-CORPUS-04\",\n  \"doi\": \"\",\n  \"drug\": \"ciprofloxacin\",\n  \"gene\": \"gyrA\",\n  \"mutation\": \"S83L\",\n  \"notice\": \"Demonstration/reference content only; not experimental or clinical evidence.\",\n  \"organism\": \"Escherichia coli\",\n  \"pmid\": \"\",\n  \"scientific_release_eligible\": false,\n  \"synthetic_doi_label\": \"SYN-DOI-NOT-REAL-0004\",\n  \"synthetic_reference_id\": \"SYN-PAPER-0004\",\n  \"topic\": \"infection\"\n}"
+    }
+  ],
+  "sheet_count": 0,
+  "source_name": "04_infection_metadata.json",
+  "source_sha256": "67a168f59eff669977ee5f424a841ac298c21c08e1441b530f5fb3983c26303c",
+  "source_size_bytes": 499,
+  "structured_fields": {
+    "activity_measurements": [],
+    "document_type": "research_document",
+    "entity_counts": {
+      "assay_endpoint": 1,
+      "disease": 1,
+      "gene_or_protein": 1,
+      "mutation": 1,
+      "organism": 1
+    },
+    "has_limitations": false,
+    "has_methods": false,
+    "has_results": false,
+    "publication_identifiers": [],
+    "sample_sizes": [],
+    "sections": {
+      "unclassified": "{\n\"activity_value_nm\": 317,\n\"assay\": \"MIC\",\n\"disease\": \"bacterial infection\",\n\"document_id\": \"DEMO-CORPUS-04\",\n\"doi\": \"\",\n\"drug\": \"ciprofloxacin\",\n\"gene\": \"gyrA\",\n\"mutation\": \"S83L\",\n\"notice\": \"Demonstration/reference content only; not experimental or clinical evidence.\",\n\"organism\": \"Escherichia coli\",\n\"pmid\": \"\",\n\"scientific_release_eligible\": false,\n\"synthetic_doi_label\": \"SYN-DOI-NOT-REAL-0004\",\n\"synthetic_reference_id\": \"SYN-PAPER-0004\",\n\"topic\": \"infection\"\n}"
+    },
+    "sensitive_findings": [],
+    "title": "04_infection_metadata.json"
+  },
+  "table_count": 1,
+  "tables": [
+    {
+      "column_count": 2,
+      "columns": [
+        "Path",
+        "Value"
+      ],
+      "confidence": 1.0,
+      "metadata": {
+        "encoding": "utf-8-sig"
+      },
+      "name": "Structured Data",
+      "row_count": 15,
+      "rows": [
+        [
+          "activity_value_nm",
+          317
+        ],
+        [
+          "assay",
+          "MIC"
+        ],
+        [
+          "disease",
+          "bacterial infection"
+        ],
+        [
+          "document_id",
+          "DEMO-CORPUS-04"
+        ],
+        [
+          "doi",
+          ""
+        ],
+        [
+          "drug",
+          "ciprofloxacin"
+        ],
+        [
+          "gene",
+          "gyrA"
+        ],
+        [
+          "mutation",
+          "S83L"
+        ],
+        [
+          "notice",
+          "Demonstration/reference content only; not experimental or clinical evidence."
+        ],
+        [
+          "organism",
+          "Escherichia coli"
+        ],
+        [
+          "pmid",
+          ""
+        ],
+        [
+          "scientific_release_eligible",
+          false
+        ],
+        [
+          "synthetic_doi_label",
+          "SYN-DOI-NOT-REAL-0004"
+        ],
+        [
+          "synthetic_reference_id",
+          "SYN-PAPER-0004"
+        ],
+        [
+          "topic",
+          "infection"
+        ]
+      ],
+      "source": "document"
+    }
+  ],
+  "text": "{\n  \"activity_value_nm\": 317,\n  \"assay\": \"MIC\",\n  \"disease\": \"bacterial infection\",\n  \"document_id\": \"DEMO-CORPUS-04\",\n  \"doi\": \"\",\n  \"drug\": \"ciprofloxacin\",\n  \"gene\": \"gyrA\",\n  \"mutation\": \"S83L\",\n  \"notice\": \"Demonstration/reference content only; not experimental or clinical evidence.\",\n  \"organism\": \"Escherichia coli\",\n  \"pmid\": \"\",\n  \"scientific_release_eligible\": false,\n  \"synthetic_doi_label\": \"SYN-DOI-NOT-REAL-0004\",\n  \"synthetic_reference_id\": \"SYN-PAPER-0004\",\n  \"topic\": \"infection\"\n}",
+  "warning_count": 0,
+  "warnings": []
+}

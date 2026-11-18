@@ -1,0 +1,118 @@
+{
+  "duplicate_of_run_id": null,
+  "engine_version": "2.7.0",
+  "outputs": [
+    {
+      "created_at_utc": "2026-07-29T10:41:07.165864+00:00",
+      "filename": "10_immunology_table_extracted.json",
+      "format": "json",
+      "integrity_status": "unknown",
+      "output_id": "d1fcf33806574072a27bc2bae7289469",
+      "path": "/mnt/data/biointel_r2_work/BioIntel-Step220/UserData/data/document_extractions/06d90e8e3a83414b8d2a52b3a4f9f760/10_immunology_table_extracted.json",
+      "run_id": "06d90e8e3a83414b8d2a52b3a4f9f760",
+      "sha256": "19a3fbc865d1b39f8080b62d5646c445e72f7a2067333bbaf7181d761127e68a",
+      "size_bytes": 4408,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-29T10:41:07.170183+00:00",
+      "filename": "10_immunology_table_extracted.xlsx",
+      "format": "xlsx",
+      "integrity_status": "unknown",
+      "output_id": "c25f095c636a4895afaf061f9d7ffb40",
+      "path": "/mnt/data/biointel_r2_work/BioIntel-Step220/UserData/data/document_extractions/06d90e8e3a83414b8d2a52b3a4f9f760/10_immunology_table_extracted.xlsx",
+      "run_id": "06d90e8e3a83414b8d2a52b3a4f9f760",
+      "sha256": "3e81eab5219272772007710d838d2102a5ddb12c4fec0e7d2c408eeb8cec62fc",
+      "size_bytes": 9492,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-29T10:41:07.174400+00:00",
+      "filename": "10_immunology_table_extracted.docx",
+      "format": "docx",
+      "integrity_status": "unknown",
+      "output_id": "7947e75acfe14b7ba02de7589b187ffc",
+      "path": "/mnt/data/biointel_r2_work/BioIntel-Step220/UserData/data/document_extractions/06d90e8e3a83414b8d2a52b3a4f9f760/10_immunology_table_extracted.docx",
+      "run_id": "06d90e8e3a83414b8d2a52b3a4f9f760",
+      "sha256": "a293eabbf297f2d8f814caa8cc9e91edf4de6f542968cfedb51bd42b6386723c",
+      "size_bytes": 37835,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-29T10:41:07.177683+00:00",
+      "filename": "10_immunology_table_extracted.pdf",
+      "format": "pdf",
+      "integrity_status": "unknown",
+      "output_id": "f714b681adb8448fad031613b4184493",
+      "path": "/mnt/data/biointel_r2_work/BioIntel-Step220/UserData/data/document_extractions/06d90e8e3a83414b8d2a52b3a4f9f760/10_immunology_table_extracted.pdf",
+      "run_id": "06d90e8e3a83414b8d2a52b3a4f9f760",
+      "sha256": "bf26e38e7c119f762e30325521f0eea36cf093ffe75021a9977c570ed3d7c72e",
+      "size_bytes": 4643,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-29T10:41:07.180743+00:00",
+      "filename": "10_immunology_table_csv_tables.zip",
+      "format": "csv_zip",
+      "integrity_status": "unknown",
+      "output_id": "a7e27546d6fd4164b2c68aa1270231ac",
+      "path": "/mnt/data/biointel_r2_work/BioIntel-Step220/UserData/data/document_extractions/06d90e8e3a83414b8d2a52b3a4f9f760/10_immunology_table_csv_tables.zip",
+      "run_id": "06d90e8e3a83414b8d2a52b3a4f9f760",
+      "sha256": "4a18e0b578b3a29623bcc87324d50f6dcb9936b0ba1cfae4a3432c46bf411045",
+      "size_bytes": 2727,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-29T10:41:07.184118+00:00",
+      "filename": "10_immunology_table_complete_export.zip",
+      "format": "bundle_zip",
+      "integrity_status": "unknown",
+      "output_id": "45f80ea907fa4f9aadf74d7a0602b4eb",
+      "path": "/mnt/data/biointel_r2_work/BioIntel-Step220/UserData/data/document_extractions/06d90e8e3a83414b8d2a52b3a4f9f760/10_immunology_table_complete_export.zip",
+      "run_id": "06d90e8e3a83414b8d2a52b3a4f9f760",
+      "sha256": "8a2f4c31fd3ddedae411c19e6f73af6a0b72c9131bb536032c9350ee7a0c7d8d",
+      "size_bytes": 50921,
+      "verified_at_utc": null
+    }
+  ],
+  "run_id": "06d90e8e3a83414b8d2a52b3a4f9f760",
+  "source": {
+    "character_count": 263,
+    "entity_count": 6,
+    "file_type": "csv",
+    "image_count": 0,
+    "mime_type": "text/csv",
+    "page_count": 0,
+    "paragraph_count": 0,
+    "region_count": 0,
+    "row_count": 2,
+    "sheet_count": 0,
+    "source_name": "10_immunology_table.csv",
+    "source_sha256": "cb9495d0c60fedc5901d3c38455c0d9dc24b06f9ca2abf6ad9163fde98e18624",
+    "source_size_bytes": 263,
+    "table_count": 1,
+    "warning_count": 0
+  },
+  "structured_fields": {
+    "activity_measurements": [],
+    "document_type": "research_document",
+    "entity_counts": {
+      "assay_endpoint": 1,
+      "drug_or_compound": 1,
+      "gene_or_protein": 2,
+      "mutation": 1,
+      "organism": 1
+    },
+    "has_limitations": false,
+    "has_methods": false,
+    "has_results": false,
+    "publication_identifiers": [],
+    "sample_sizes": [],
+    "sections": {
+      "unclassified": "record_id,compound,target,disease,mutation,assay,value_nm,organism,status\nDEMO-CORPUS-10,upadacitinib,JAK1,atopic dermatitis,V658F,IC50,755,Homo sapiens,demo_only\nDEMO-CORPUS-10-B,upadacitinib analogue,JAK1,atopic dermatitis,V658F,IC50,865,Homo sapiens,demo_only"
+    },
+    "sensitive_findings": [],
+    "title": "10_immunology_table.csv"
+  },
+  "warnings": []
+}

@@ -1,0 +1,118 @@
+{
+  "duplicate_of_run_id": null,
+  "engine_version": "2.7.0",
+  "outputs": [
+    {
+      "created_at_utc": "2026-07-29T10:41:04.030378+00:00",
+      "filename": "03_neurology_protocol_extracted.json",
+      "format": "json",
+      "integrity_status": "unknown",
+      "output_id": "a558b95b0f9949c2b904f188e28e62fa",
+      "path": "/mnt/data/biointel_r2_work/BioIntel-Step220/UserData/data/document_extractions/c0834412c8ef4e87bfc7fe97b0b0ba8f/03_neurology_protocol_extracted.json",
+      "run_id": "c0834412c8ef4e87bfc7fe97b0b0ba8f",
+      "sha256": "9ba56fccdb574524ed8a763d2380fd7b0a862741c00eae602cf9f6b3814905e2",
+      "size_bytes": 3538,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-29T10:41:04.034312+00:00",
+      "filename": "03_neurology_protocol_extracted.xlsx",
+      "format": "xlsx",
+      "integrity_status": "unknown",
+      "output_id": "02c8d0ae750145cf9524e4357d4a5595",
+      "path": "/mnt/data/biointel_r2_work/BioIntel-Step220/UserData/data/document_extractions/c0834412c8ef4e87bfc7fe97b0b0ba8f/03_neurology_protocol_extracted.xlsx",
+      "run_id": "c0834412c8ef4e87bfc7fe97b0b0ba8f",
+      "sha256": "2ee4399246d790a8bd42f3869bde23ac059a9d2dc5c47832318a2aab80781f9a",
+      "size_bytes": 8604,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-29T10:41:04.037606+00:00",
+      "filename": "03_neurology_protocol_extracted.docx",
+      "format": "docx",
+      "integrity_status": "unknown",
+      "output_id": "8440bf647cd949209464ee06c240a07d",
+      "path": "/mnt/data/biointel_r2_work/BioIntel-Step220/UserData/data/document_extractions/c0834412c8ef4e87bfc7fe97b0b0ba8f/03_neurology_protocol_extracted.docx",
+      "run_id": "c0834412c8ef4e87bfc7fe97b0b0ba8f",
+      "sha256": "bade1493d4e92a4c7d3b58bc3ef3cedefcf5cd38c8144635c42cf1ca22da1f27",
+      "size_bytes": 37716,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-29T10:41:04.040830+00:00",
+      "filename": "03_neurology_protocol_extracted.pdf",
+      "format": "pdf",
+      "integrity_status": "unknown",
+      "output_id": "2aa3993bd6dc43c09d30e6a80c1cb3c1",
+      "path": "/mnt/data/biointel_r2_work/BioIntel-Step220/UserData/data/document_extractions/c0834412c8ef4e87bfc7fe97b0b0ba8f/03_neurology_protocol_extracted.pdf",
+      "run_id": "c0834412c8ef4e87bfc7fe97b0b0ba8f",
+      "sha256": "a957fe5ed5395499c61d3af4d299516f5ad384955ef4bd5edc8c56a944972dbd",
+      "size_bytes": 3591,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-29T10:41:04.044159+00:00",
+      "filename": "03_neurology_protocol_csv_tables.zip",
+      "format": "csv_zip",
+      "integrity_status": "unknown",
+      "output_id": "a9bafe849d6b45a2bd9341dc30b233ca",
+      "path": "/mnt/data/biointel_r2_work/BioIntel-Step220/UserData/data/document_extractions/c0834412c8ef4e87bfc7fe97b0b0ba8f/03_neurology_protocol_csv_tables.zip",
+      "run_id": "c0834412c8ef4e87bfc7fe97b0b0ba8f",
+      "sha256": "da710efa75b32e1b9b8f624be66f97e85771e18061870730a8e7e68a835ebd0a",
+      "size_bytes": 2329,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-29T10:41:04.048182+00:00",
+      "filename": "03_neurology_protocol_complete_export.zip",
+      "format": "bundle_zip",
+      "integrity_status": "unknown",
+      "output_id": "9ca35d424a8d48849731a23bfaabb45c",
+      "path": "/mnt/data/biointel_r2_work/BioIntel-Step220/UserData/data/document_extractions/c0834412c8ef4e87bfc7fe97b0b0ba8f/03_neurology_protocol_complete_export.zip",
+      "run_id": "c0834412c8ef4e87bfc7fe97b0b0ba8f",
+      "sha256": "832faf1e9714f22336232c1cd3f391db2bd5339724d70755254b20ca4efc3db8",
+      "size_bytes": 48952,
+      "verified_at_utc": null
+    }
+  ],
+  "run_id": "c0834412c8ef4e87bfc7fe97b0b0ba8f",
+  "source": {
+    "character_count": 219,
+    "entity_count": 7,
+    "file_type": "txt",
+    "image_count": 0,
+    "mime_type": "text/plain",
+    "page_count": 0,
+    "paragraph_count": 0,
+    "region_count": 0,
+    "row_count": 0,
+    "sheet_count": 0,
+    "source_name": "03_neurology_protocol.txt",
+    "source_sha256": "8656240018d60cb41eee577580a78ac1324c94f0435c7ac4dbb7000b678808b4",
+    "source_size_bytes": 219,
+    "table_count": 0,
+    "warning_count": 0
+  },
+  "structured_fields": {
+    "activity_measurements": [],
+    "document_type": "research_document",
+    "entity_counts": {
+      "assay_endpoint": 1,
+      "disease": 1,
+      "gene_or_protein": 3,
+      "mutation": 1,
+      "organism": 1
+    },
+    "has_limitations": false,
+    "has_methods": false,
+    "has_results": false,
+    "publication_identifiers": [],
+    "sample_sizes": [],
+    "sections": {
+      "unclassified": "DEMO PROTOCOL 3\nTarget: ACHE\nCompound: donepezil\nDisease: Alzheimer disease\nMutation: Y337A\nAssay: IC50\nOrganism: Homo sapiens\nResult: 244 nM\nDemonstration/reference content only; not experimental or clinical evidence."
+    },
+    "sensitive_findings": [],
+    "title": "03_neurology_protocol.txt"
+  },
+  "warnings": []
+}

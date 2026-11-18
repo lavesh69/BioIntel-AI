@@ -1,0 +1,197 @@
+{
+  "character_count": 495,
+  "entities": [
+    {
+      "confidence": 0.97,
+      "end": 46,
+      "entity_type": "assay_endpoint",
+      "metadata": {},
+      "normalized": "IC50",
+      "source": "document",
+      "start": 42,
+      "text": "IC50"
+    },
+    {
+      "confidence": 0.86,
+      "end": 46,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "IC50",
+      "source": "document",
+      "start": 42,
+      "text": "IC50"
+    },
+    {
+      "confidence": 0.72,
+      "end": 154,
+      "entity_type": "drug_or_compound",
+      "metadata": {},
+      "normalized": "upadacitinib",
+      "source": "document",
+      "start": 142,
+      "text": "upadacitinib"
+    },
+    {
+      "confidence": 0.86,
+      "end": 172,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "JAK1",
+      "source": "document",
+      "start": 168,
+      "text": "JAK1"
+    },
+    {
+      "confidence": 0.92,
+      "end": 195,
+      "entity_type": "mutation",
+      "metadata": {},
+      "normalized": "V658F",
+      "source": "document",
+      "start": 190,
+      "text": "V658F"
+    },
+    {
+      "confidence": 0.9,
+      "end": 317,
+      "entity_type": "organism",
+      "metadata": {},
+      "normalized": "Homo sapiens",
+      "source": "document",
+      "start": 305,
+      "text": "Homo sapiens"
+    }
+  ],
+  "entity_count": 6,
+  "file_type": "json",
+  "image_count": 0,
+  "metadata": {
+    "encoding": "utf-8-sig",
+    "root_type": "dict",
+    "scientific_entity_extraction": "rule_based_v1",
+    "sensitive_finding_count": 0,
+    "sensitive_redaction_applied": false
+  },
+  "mime_type": "application/json",
+  "page_count": 0,
+  "paragraph_count": 0,
+  "region_count": 0,
+  "regions": [],
+  "row_count": 15,
+  "sections": [
+    {
+      "confidence": 1.0,
+      "metadata": {},
+      "name": "Document",
+      "source": "document",
+      "text": "{\n  \"activity_value_nm\": 755,\n  \"assay\": \"IC50\",\n  \"disease\": \"atopic dermatitis\",\n  \"document_id\": \"DEMO-CORPUS-10\",\n  \"doi\": \"\",\n  \"drug\": \"upadacitinib\",\n  \"gene\": \"JAK1\",\n  \"mutation\": \"V658F\",\n  \"notice\": \"Demonstration/reference content only; not experimental or clinical evidence.\",\n  \"organism\": \"Homo sapiens\",\n  \"pmid\": \"\",\n  \"scientific_release_eligible\": false,\n  \"synthetic_doi_label\": \"SYN-DOI-NOT-REAL-0010\",\n  \"synthetic_reference_id\": \"SYN-PAPER-0010\",\n  \"topic\": \"immunology\"\n}"
+    }
+  ],
+  "sheet_count": 0,
+  "source_name": "10_immunology_metadata.json",
+  "source_sha256": "4afcb6e3a1d5ebe7d15fdf45cb8179b701e63f607389b63ba35f366e8bffa854",
+  "source_size_bytes": 495,
+  "structured_fields": {
+    "activity_measurements": [],
+    "document_type": "research_document",
+    "entity_counts": {
+      "assay_endpoint": 1,
+      "drug_or_compound": 1,
+      "gene_or_protein": 2,
+      "mutation": 1,
+      "organism": 1
+    },
+    "has_limitations": false,
+    "has_methods": false,
+    "has_results": false,
+    "publication_identifiers": [],
+    "sample_sizes": [],
+    "sections": {
+      "unclassified": "{\n\"activity_value_nm\": 755,\n\"assay\": \"IC50\",\n\"disease\": \"atopic dermatitis\",\n\"document_id\": \"DEMO-CORPUS-10\",\n\"doi\": \"\",\n\"drug\": \"upadacitinib\",\n\"gene\": \"JAK1\",\n\"mutation\": \"V658F\",\n\"notice\": \"Demonstration/reference content only; not experimental or clinical evidence.\",\n\"organism\": \"Homo sapiens\",\n\"pmid\": \"\",\n\"scientific_release_eligible\": false,\n\"synthetic_doi_label\": \"SYN-DOI-NOT-REAL-0010\",\n\"synthetic_reference_id\": \"SYN-PAPER-0010\",\n\"topic\": \"immunology\"\n}"
+    },
+    "sensitive_findings": [],
+    "title": "10_immunology_metadata.json"
+  },
+  "table_count": 1,
+  "tables": [
+    {
+      "column_count": 2,
+      "columns": [
+        "Path",
+        "Value"
+      ],
+      "confidence": 1.0,
+      "metadata": {
+        "encoding": "utf-8-sig"
+      },
+      "name": "Structured Data",
+      "row_count": 15,
+      "rows": [
+        [
+          "activity_value_nm",
+          755
+        ],
+        [
+          "assay",
+          "IC50"
+        ],
+        [
+          "disease",
+          "atopic dermatitis"
+        ],
+        [
+          "document_id",
+          "DEMO-CORPUS-10"
+        ],
+        [
+          "doi",
+          ""
+        ],
+        [
+          "drug",
+          "upadacitinib"
+        ],
+        [
+          "gene",
+          "JAK1"
+        ],
+        [
+          "mutation",
+          "V658F"
+        ],
+        [
+          "notice",
+          "Demonstration/reference content only; not experimental or clinical evidence."
+        ],
+        [
+          "organism",
+          "Homo sapiens"
+        ],
+        [
+          "pmid",
+          ""
+        ],
+        [
+          "scientific_release_eligible",
+          false
+        ],
+        [
+          "synthetic_doi_label",
+          "SYN-DOI-NOT-REAL-0010"
+        ],
+        [
+          "synthetic_reference_id",
+          "SYN-PAPER-0010"
+        ],
+        [
+          "topic",
+          "immunology"
+        ]
+      ],
+      "source": "document"
+    }
+  ],
+  "text": "{\n  \"activity_value_nm\": 755,\n  \"assay\": \"IC50\",\n  \"disease\": \"atopic dermatitis\",\n  \"document_id\": \"DEMO-CORPUS-10\",\n  \"doi\": \"\",\n  \"drug\": \"upadacitinib\",\n  \"gene\": \"JAK1\",\n  \"mutation\": \"V658F\",\n  \"notice\": \"Demonstration/reference content only; not experimental or clinical evidence.\",\n  \"organism\": \"Homo sapiens\",\n  \"pmid\": \"\",\n  \"scientific_release_eligible\": false,\n  \"synthetic_doi_label\": \"SYN-DOI-NOT-REAL-0010\",\n  \"synthetic_reference_id\": \"SYN-PAPER-0010\",\n  \"topic\": \"immunology\"\n}",
+  "warning_count": 0,
+  "warnings": []
+}

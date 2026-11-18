@@ -1,0 +1,121 @@
+{
+  "duplicate_of_run_id": null,
+  "engine_version": "2.7.0",
+  "outputs": [
+    {
+      "created_at_utc": "2026-07-29T10:41:06.832435+00:00",
+      "filename": "10_immunology_brief_extracted.json",
+      "format": "json",
+      "integrity_status": "unknown",
+      "output_id": "f58cd17d746842619af257891f5d6ad5",
+      "path": "/mnt/data/biointel_r2_work/BioIntel-Step220/UserData/data/document_extractions/6c752f7fc7314601aaf160a003fedc7f/10_immunology_brief_extracted.json",
+      "run_id": "6c752f7fc7314601aaf160a003fedc7f",
+      "sha256": "ea8ce6c78efd51958082484135bf7d573d9a9996c3b27f39353bbb38707d3970",
+      "size_bytes": 4591,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-29T10:41:06.836429+00:00",
+      "filename": "10_immunology_brief_extracted.xlsx",
+      "format": "xlsx",
+      "integrity_status": "unknown",
+      "output_id": "80724dee1f9649c898236c811740deb6",
+      "path": "/mnt/data/biointel_r2_work/BioIntel-Step220/UserData/data/document_extractions/6c752f7fc7314601aaf160a003fedc7f/10_immunology_brief_extracted.xlsx",
+      "run_id": "6c752f7fc7314601aaf160a003fedc7f",
+      "sha256": "b48989a8c782439f6d6b423e74e6d57a90fe0d5155270e1b601d7d49692cc267",
+      "size_bytes": 8976,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-29T10:41:06.839736+00:00",
+      "filename": "10_immunology_brief_extracted.docx",
+      "format": "docx",
+      "integrity_status": "unknown",
+      "output_id": "352b17db83824566ac63ba47cb399403",
+      "path": "/mnt/data/biointel_r2_work/BioIntel-Step220/UserData/data/document_extractions/6c752f7fc7314601aaf160a003fedc7f/10_immunology_brief_extracted.docx",
+      "run_id": "6c752f7fc7314601aaf160a003fedc7f",
+      "sha256": "962c2e2663de9c0d917881791ebe575e3bc02638973d3da31525dc7b2fd7332c",
+      "size_bytes": 37898,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-29T10:41:06.843068+00:00",
+      "filename": "10_immunology_brief_extracted.pdf",
+      "format": "pdf",
+      "integrity_status": "unknown",
+      "output_id": "85f0f3af7a4b4ea6940b9dd664e49359",
+      "path": "/mnt/data/biointel_r2_work/BioIntel-Step220/UserData/data/document_extractions/6c752f7fc7314601aaf160a003fedc7f/10_immunology_brief_extracted.pdf",
+      "run_id": "6c752f7fc7314601aaf160a003fedc7f",
+      "sha256": "472932dc5f74449651f5e903a4fc0b820ecea182e4d7d7256997e582095b49c5",
+      "size_bytes": 3901,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-29T10:41:06.846207+00:00",
+      "filename": "10_immunology_brief_csv_tables.zip",
+      "format": "csv_zip",
+      "integrity_status": "unknown",
+      "output_id": "ad3d321b9aa34899b0589429dcd4568d",
+      "path": "/mnt/data/biointel_r2_work/BioIntel-Step220/UserData/data/document_extractions/6c752f7fc7314601aaf160a003fedc7f/10_immunology_brief_csv_tables.zip",
+      "run_id": "6c752f7fc7314601aaf160a003fedc7f",
+      "sha256": "ba33702c8f020a36ba68c372e7e61a9b73b29af00b546b4359fed304b588d4e5",
+      "size_bytes": 2939,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-29T10:41:06.849601+00:00",
+      "filename": "10_immunology_brief_complete_export.zip",
+      "format": "bundle_zip",
+      "integrity_status": "unknown",
+      "output_id": "b51e43c4371b4504b392aa3a3d54e056",
+      "path": "/mnt/data/biointel_r2_work/BioIntel-Step220/UserData/data/document_extractions/6c752f7fc7314601aaf160a003fedc7f/10_immunology_brief_complete_export.zip",
+      "run_id": "6c752f7fc7314601aaf160a003fedc7f",
+      "sha256": "8fc5a62dbece6c6f97990cdb76dcffaafdbc357d63b590c288703ccd85ac859e",
+      "size_bytes": 50589,
+      "verified_at_utc": null
+    }
+  ],
+  "run_id": "6c752f7fc7314601aaf160a003fedc7f",
+  "source": {
+    "character_count": 626,
+    "entity_count": 6,
+    "file_type": "md",
+    "image_count": 0,
+    "mime_type": "text/markdown",
+    "page_count": 0,
+    "paragraph_count": 0,
+    "region_count": 0,
+    "row_count": 0,
+    "sheet_count": 0,
+    "source_name": "10_immunology_brief.md",
+    "source_sha256": "b8d1c444cce5c6136daf93a3d08811e107584de7411d65e92e21a734efcd5145",
+    "source_size_bytes": 626,
+    "table_count": 0,
+    "warning_count": 0
+  },
+  "structured_fields": {
+    "activity_measurements": [],
+    "document_type": "research_document",
+    "entity_counts": {
+      "assay_endpoint": 1,
+      "drug_or_compound": 1,
+      "gene_or_protein": 2,
+      "mutation": 1,
+      "organism": 1
+    },
+    "has_limitations": true,
+    "has_methods": true,
+    "has_results": false,
+    "publication_identifiers": [],
+    "sample_sizes": [],
+    "sections": {
+      "abstract": "BioIntel demonstration record 10. The compound upadacitinib was discussed with target JAK1 in the context of atopic dermatitis. The example mutation is V658F. A demonstration IC50 measurement of 755 nM is shown for Homo sapiens. Synthetic reference labels: SYN-PAPER-0010 and SYN-DOI-NOT-REAL-0010. This content exists only to populate document search, extraction, entity recognition, history, comparison and evidence-bridge screens.",
+      "limitations": "Demonstration/reference content only; not experimental or clinical evidence.",
+      "methods": "Synthetic reference table; IC50 endpoint.",
+      "unclassified": "# Immunology Demonstration Brief"
+    },
+    "sensitive_findings": [],
+    "title": "10_immunology_brief.md"
+  },
+  "warnings": []
+}

@@ -1,0 +1,117 @@
+{
+  "duplicate_of_run_id": null,
+  "engine_version": "2.7.0",
+  "outputs": [
+    {
+      "created_at_utc": "2026-07-29T10:41:03.439000+00:00",
+      "filename": "02_cardiology_metadata_extracted.json",
+      "format": "json",
+      "integrity_status": "unknown",
+      "output_id": "5f3a9d795a0f4bd38464c209a5c6fd1e",
+      "path": "/mnt/data/biointel_r2_work/BioIntel-Step220/UserData/data/document_extractions/c045135b208f46818bae43ecd2d91593/02_cardiology_metadata_extracted.json",
+      "run_id": "c045135b208f46818bae43ecd2d91593",
+      "sha256": "22d8441c066911ddc63caddc01cc35f3446ba51e14e3580107c475efb16ca238",
+      "size_bytes": 5250,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-29T10:41:03.445231+00:00",
+      "filename": "02_cardiology_metadata_extracted.xlsx",
+      "format": "xlsx",
+      "integrity_status": "unknown",
+      "output_id": "22257dc1f391444cbcb8938a07feb9fb",
+      "path": "/mnt/data/biointel_r2_work/BioIntel-Step220/UserData/data/document_extractions/c045135b208f46818bae43ecd2d91593/02_cardiology_metadata_extracted.xlsx",
+      "run_id": "c045135b208f46818bae43ecd2d91593",
+      "sha256": "18c9b27ca3d30cb1cdb5a0a846114d423fe4049b7715e729b12738a4503c96d9",
+      "size_bytes": 9797,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-29T10:41:03.448833+00:00",
+      "filename": "02_cardiology_metadata_extracted.docx",
+      "format": "docx",
+      "integrity_status": "unknown",
+      "output_id": "2d45b224dff1408c9254bc74ac5376be",
+      "path": "/mnt/data/biointel_r2_work/BioIntel-Step220/UserData/data/document_extractions/c045135b208f46818bae43ecd2d91593/02_cardiology_metadata_extracted.docx",
+      "run_id": "c045135b208f46818bae43ecd2d91593",
+      "sha256": "c72e0426a70aa42faf6475ec3e0d349aec1c01d556fd2b4d428f5ac87a6b9ef2",
+      "size_bytes": 38071,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-29T10:41:03.452276+00:00",
+      "filename": "02_cardiology_metadata_extracted.pdf",
+      "format": "pdf",
+      "integrity_status": "unknown",
+      "output_id": "846ac6fe1889440384eecac10e968915",
+      "path": "/mnt/data/biointel_r2_work/BioIntel-Step220/UserData/data/document_extractions/c045135b208f46818bae43ecd2d91593/02_cardiology_metadata_extracted.pdf",
+      "run_id": "c045135b208f46818bae43ecd2d91593",
+      "sha256": "d5677fb0c0e3e4e75ea41874e77ed0511c8fd3d0721a49d6d2630c677e42786d",
+      "size_bytes": 4931,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-29T10:41:03.455777+00:00",
+      "filename": "02_cardiology_metadata_csv_tables.zip",
+      "format": "csv_zip",
+      "integrity_status": "unknown",
+      "output_id": "c80c543aba0b416bad6e4225099db50b",
+      "path": "/mnt/data/biointel_r2_work/BioIntel-Step220/UserData/data/document_extractions/c045135b208f46818bae43ecd2d91593/02_cardiology_metadata_csv_tables.zip",
+      "run_id": "c045135b208f46818bae43ecd2d91593",
+      "sha256": "a5361a747160df20002fec387a044925dadbef541e8140a31a54e5ddc51718f0",
+      "size_bytes": 3266,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-29T10:41:03.459189+00:00",
+      "filename": "02_cardiology_metadata_complete_export.zip",
+      "format": "bundle_zip",
+      "integrity_status": "unknown",
+      "output_id": "bf26025a3b594ee1ab81687fef0e24b4",
+      "path": "/mnt/data/biointel_r2_work/BioIntel-Step220/UserData/data/document_extractions/c045135b208f46818bae43ecd2d91593/02_cardiology_metadata_complete_export.zip",
+      "run_id": "c045135b208f46818bae43ecd2d91593",
+      "sha256": "87887618a73f8b3e7d83641152c3874485cab898afb1fff19ee47b260537b331",
+      "size_bytes": 52438,
+      "verified_at_utc": null
+    }
+  ],
+  "run_id": "c045135b208f46818bae43ecd2d91593",
+  "source": {
+    "character_count": 493,
+    "entity_count": 4,
+    "file_type": "json",
+    "image_count": 0,
+    "mime_type": "application/json",
+    "page_count": 0,
+    "paragraph_count": 0,
+    "region_count": 0,
+    "row_count": 15,
+    "sheet_count": 0,
+    "source_name": "02_cardiology_metadata.json",
+    "source_sha256": "9fc17e555fbaed679b4768a868e0cde407d2f751852be750056f039500bf165e",
+    "source_size_bytes": 493,
+    "table_count": 1,
+    "warning_count": 0
+  },
+  "structured_fields": {
+    "activity_measurements": [],
+    "document_type": "research_document",
+    "entity_counts": {
+      "assay_endpoint": 1,
+      "gene_or_protein": 1,
+      "mutation": 1,
+      "organism": 1
+    },
+    "has_limitations": false,
+    "has_methods": false,
+    "has_results": false,
+    "publication_identifiers": [],
+    "sample_sizes": [],
+    "sections": {
+      "unclassified": "{\n\"activity_value_nm\": 171,\n\"assay\": \"Ki\",\n\"disease\": \"cardiac arrhythmia\",\n\"document_id\": \"DEMO-CORPUS-02\",\n\"doi\": \"\",\n\"drug\": \"dofetilide\",\n\"gene\": \"KCNH2\",\n\"mutation\": \"T618I\",\n\"notice\": \"Demonstration/reference content only; not experimental or clinical evidence.\",\n\"organism\": \"Homo sapiens\",\n\"pmid\": \"\",\n\"scientific_release_eligible\": false,\n\"synthetic_doi_label\": \"SYN-DOI-NOT-REAL-0002\",\n\"synthetic_reference_id\": \"SYN-PAPER-0002\",\n\"topic\": \"cardiology\"\n}"
+    },
+    "sensitive_findings": [],
+    "title": "02_cardiology_metadata.json"
+  },
+  "warnings": []
+}

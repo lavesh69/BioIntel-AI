@@ -1,0 +1,108 @@
+{
+  "character_count": 219,
+  "entities": [
+    {
+      "confidence": 0.86,
+      "end": 4,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "DEMO",
+      "source": "document",
+      "start": 0,
+      "text": "DEMO"
+    },
+    {
+      "confidence": 0.72,
+      "end": 49,
+      "entity_type": "drug_or_compound",
+      "metadata": {},
+      "normalized": "sofosbuvir",
+      "source": "document",
+      "start": 39,
+      "text": "sofosbuvir"
+    },
+    {
+      "confidence": 0.92,
+      "end": 86,
+      "entity_type": "mutation",
+      "metadata": {},
+      "normalized": "S282T",
+      "source": "document",
+      "start": 81,
+      "text": "S282T"
+    },
+    {
+      "confidence": 0.97,
+      "end": 98,
+      "entity_type": "assay_endpoint",
+      "metadata": {},
+      "normalized": "IC50",
+      "source": "document",
+      "start": 94,
+      "text": "IC50"
+    },
+    {
+      "confidence": 0.86,
+      "end": 98,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "IC50",
+      "source": "document",
+      "start": 94,
+      "text": "IC50"
+    }
+  ],
+  "entity_count": 5,
+  "file_type": "txt",
+  "image_count": 0,
+  "metadata": {
+    "encoding": "utf-8-sig",
+    "scientific_entity_extraction": "rule_based_v1",
+    "sensitive_finding_count": 0,
+    "sensitive_redaction_applied": false
+  },
+  "mime_type": "text/plain",
+  "page_count": 0,
+  "paragraph_count": 0,
+  "region_count": 0,
+  "regions": [],
+  "row_count": 0,
+  "sections": [
+    {
+      "confidence": 1.0,
+      "metadata": {},
+      "name": "Document",
+      "source": "document",
+      "text": "DEMO PROTOCOL 9\nTarget: NS5B\nCompound: sofosbuvir\nDisease: hepatitis C\nMutation: S282T\nAssay: IC50\nOrganism: Hepatitis C virus\nResult: 682 nM\nDemonstration/reference content only; not experimental or clinical evidence.\n"
+    }
+  ],
+  "sheet_count": 0,
+  "source_name": "09_antiviral_protocol.txt",
+  "source_sha256": "1e25e8c038295b961337c1be61606120aed6e2213fb6c1c4a5ddda84c4e02080",
+  "source_size_bytes": 219,
+  "structured_fields": {
+    "activity_measurements": [],
+    "document_type": "research_document",
+    "entity_counts": {
+      "assay_endpoint": 1,
+      "drug_or_compound": 1,
+      "gene_or_protein": 2,
+      "mutation": 1
+    },
+    "has_limitations": false,
+    "has_methods": false,
+    "has_results": false,
+    "publication_identifiers": [],
+    "sample_sizes": [],
+    "sections": {
+      "unclassified": "DEMO PROTOCOL 9\nTarget: NS5B\nCompound: sofosbuvir\nDisease: hepatitis C\nMutation: S282T\nAssay: IC50\nOrganism: Hepatitis C virus\nResult: 682 nM\nDemonstration/reference content only; not experimental or clinical evidence."
+    },
+    "sensitive_findings": [],
+    "title": "09_antiviral_protocol.txt"
+  },
+  "table_count": 0,
+  "tables": [],
+  "text": "DEMO PROTOCOL 9\nTarget: NS5B\nCompound: sofosbuvir\nDisease: hepatitis C\nMutation: S282T\nAssay: IC50\nOrganism: Hepatitis C virus\nResult: 682 nM\nDemonstration/reference content only; not experimental or clinical evidence.\n",
+  "warning_count": 0,
+  "warnings": []
+}

@@ -1,0 +1,124 @@
+{
+  "character_count": 609,
+  "entities": [
+    {
+      "confidence": 0.72,
+      "end": 510,
+      "entity_type": "drug_or_compound",
+      "metadata": {},
+      "normalized": "sofosbuvir",
+      "source": "document",
+      "start": 500,
+      "text": "sofosbuvir"
+    },
+    {
+      "confidence": 0.92,
+      "end": 187,
+      "entity_type": "mutation",
+      "metadata": {},
+      "normalized": "S282T",
+      "source": "document",
+      "start": 182,
+      "text": "S282T"
+    },
+    {
+      "confidence": 0.97,
+      "end": 520,
+      "entity_type": "assay_endpoint",
+      "metadata": {},
+      "normalized": "IC50",
+      "source": "document",
+      "start": 516,
+      "text": "IC50"
+    },
+    {
+      "confidence": 0.86,
+      "end": 520,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "IC50",
+      "source": "document",
+      "start": 516,
+      "text": "IC50"
+    }
+  ],
+  "entity_count": 4,
+  "file_type": "html",
+  "image_count": 0,
+  "metadata": {
+    "encoding": "utf-8-sig",
+    "image_count": 0,
+    "link_count": 0,
+    "scientific_entity_extraction": "rule_based_v1",
+    "sensitive_finding_count": 0,
+    "sensitive_redaction_applied": false,
+    "title": "BioIntel Demo"
+  },
+  "mime_type": "text/html",
+  "page_count": 0,
+  "paragraph_count": 0,
+  "region_count": 0,
+  "regions": [],
+  "row_count": 1,
+  "sections": [
+    {
+      "confidence": 1.0,
+      "metadata": {},
+      "name": "Document",
+      "source": "document",
+      "text": "BioIntel Demo\nAntiviral reference page\nBioIntel demonstration record 9. The compound sofosbuvir was discussed with target NS5B in the context of hepatitis C. The example mutation is S282T. A demonstration IC50 measurement of 682 nM is shown for Hepatitis C virus. Synthetic reference labels: SYN-PAPER-0009 and SYN-DOI-NOT-REAL-0009. This content exists only to populate document search, extraction, entity recognition, history, comparison and evidence-bridge screens.\nCompound\nTarget\nAssay\nValue nM\nsofosbuvir\nNS5B\nIC50\n682\nNotice:\nDemonstration/reference content only; not experimental or clinical evidence."
+    }
+  ],
+  "sheet_count": 0,
+  "source_name": "09_antiviral_page.html",
+  "source_sha256": "755e902cbdcd80ed0d4d4a92a5aacfc79e2bf445e4b20477e6b8cd08e2ea9c9f",
+  "source_size_bytes": 812,
+  "structured_fields": {
+    "activity_measurements": [],
+    "document_type": "research_document",
+    "entity_counts": {
+      "assay_endpoint": 1,
+      "drug_or_compound": 1,
+      "gene_or_protein": 1,
+      "mutation": 1
+    },
+    "has_limitations": false,
+    "has_methods": false,
+    "has_results": false,
+    "publication_identifiers": [],
+    "sample_sizes": [],
+    "sections": {
+      "unclassified": "BioIntel Demo\nAntiviral reference page\nBioIntel demonstration record 9. The compound sofosbuvir was discussed with target NS5B in the context of hepatitis C. The example mutation is S282T. A demonstration IC50 measurement of 682 nM is shown for Hepatitis C virus. Synthetic reference labels: SYN-PAPER-0009 and SYN-DOI-NOT-REAL-0009. This content exists only to populate document search, extraction, entity recognition, history, comparison and evidence-bridge screens.\nCompound\nTarget\nAssay\nValue nM\nsofosbuvir\nNS5B\nIC50\n682\nNotice:\nDemonstration/reference content only; not experimental or clinical evidence."
+    },
+    "sensitive_findings": [],
+    "title": "BioIntel Demo"
+  },
+  "table_count": 1,
+  "tables": [
+    {
+      "column_count": 4,
+      "columns": [
+        "Compound",
+        "Target",
+        "Assay",
+        "Value nM"
+      ],
+      "confidence": 1.0,
+      "metadata": {},
+      "name": "HTML Table 1",
+      "row_count": 1,
+      "rows": [
+        [
+          "sofosbuvir",
+          "NS5B",
+          "IC50",
+          682
+        ]
+      ],
+      "source": "table:1"
+    }
+  ],
+  "text": "BioIntel Demo\nAntiviral reference page\nBioIntel demonstration record 9. The compound sofosbuvir was discussed with target NS5B in the context of hepatitis C. The example mutation is S282T. A demonstration IC50 measurement of 682 nM is shown for Hepatitis C virus. Synthetic reference labels: SYN-PAPER-0009 and SYN-DOI-NOT-REAL-0009. This content exists only to populate document search, extraction, entity recognition, history, comparison and evidence-bridge screens.\nCompound\nTarget\nAssay\nValue nM\nsofosbuvir\nNS5B\nIC50\n682\nNotice:\nDemonstration/reference content only; not experimental or clinical evidence.",
+  "warning_count": 0,
+  "warnings": []
+}

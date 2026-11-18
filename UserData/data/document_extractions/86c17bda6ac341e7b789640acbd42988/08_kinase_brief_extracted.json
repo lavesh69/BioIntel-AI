@@ -1,0 +1,133 @@
+{
+  "character_count": 611,
+  "entities": [
+    {
+      "confidence": 0.72,
+      "end": 98,
+      "entity_type": "drug_or_compound",
+      "metadata": {},
+      "normalized": "vemurafenib",
+      "source": "document",
+      "start": 87,
+      "text": "vemurafenib"
+    },
+    {
+      "confidence": 0.86,
+      "end": 129,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "BRAF",
+      "source": "document",
+      "start": 125,
+      "text": "BRAF"
+    },
+    {
+      "confidence": 0.72,
+      "end": 156,
+      "entity_type": "disease",
+      "metadata": {},
+      "normalized": "melanoma",
+      "source": "document",
+      "start": 148,
+      "text": "melanoma"
+    },
+    {
+      "confidence": 0.92,
+      "end": 187,
+      "entity_type": "mutation",
+      "metadata": {},
+      "normalized": "V600E",
+      "source": "document",
+      "start": 182,
+      "text": "V600E"
+    },
+    {
+      "confidence": 0.97,
+      "end": 507,
+      "entity_type": "assay_endpoint",
+      "metadata": {},
+      "normalized": "IC50",
+      "source": "document",
+      "start": 503,
+      "text": "IC50"
+    },
+    {
+      "confidence": 0.86,
+      "end": 507,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "IC50",
+      "source": "document",
+      "start": 503,
+      "text": "IC50"
+    },
+    {
+      "confidence": 0.9,
+      "end": 257,
+      "entity_type": "organism",
+      "metadata": {},
+      "normalized": "Homo sapiens",
+      "source": "document",
+      "start": 245,
+      "text": "Homo sapiens"
+    }
+  ],
+  "entity_count": 7,
+  "file_type": "md",
+  "image_count": 0,
+  "metadata": {
+    "encoding": "utf-8-sig",
+    "scientific_entity_extraction": "rule_based_v1",
+    "sensitive_finding_count": 0,
+    "sensitive_redaction_applied": false
+  },
+  "mime_type": "text/markdown",
+  "page_count": 0,
+  "paragraph_count": 0,
+  "region_count": 0,
+  "regions": [],
+  "row_count": 0,
+  "sections": [
+    {
+      "confidence": 1.0,
+      "metadata": {},
+      "name": "Document",
+      "source": "document",
+      "text": "# Kinase Demonstration Brief\n\n## Summary\nBioIntel demonstration record 8. The compound vemurafenib was discussed with target BRAF in the context of melanoma. The example mutation is V600E. A demonstration IC50 measurement of 609 nM is shown for Homo sapiens. Synthetic reference labels: SYN-PAPER-0008 and SYN-DOI-NOT-REAL-0008. This content exists only to populate document search, extraction, entity recognition, history, comparison and evidence-bridge screens.\n\n## Methods\nSynthetic reference table; IC50 endpoint.\n\n## Limitations\nDemonstration/reference content only; not experimental or clinical evidence.\n"
+    }
+  ],
+  "sheet_count": 0,
+  "source_name": "08_kinase_brief.md",
+  "source_sha256": "fe6f4b6acc83b2eb93d55bbe61e72d9bf2ca3d32d712b5a914e533d5456ea1f5",
+  "source_size_bytes": 611,
+  "structured_fields": {
+    "activity_measurements": [],
+    "document_type": "research_document",
+    "entity_counts": {
+      "assay_endpoint": 1,
+      "disease": 1,
+      "drug_or_compound": 1,
+      "gene_or_protein": 2,
+      "mutation": 1,
+      "organism": 1
+    },
+    "has_limitations": true,
+    "has_methods": true,
+    "has_results": false,
+    "publication_identifiers": [],
+    "sample_sizes": [],
+    "sections": {
+      "abstract": "BioIntel demonstration record 8. The compound vemurafenib was discussed with target BRAF in the context of melanoma. The example mutation is V600E. A demonstration IC50 measurement of 609 nM is shown for Homo sapiens. Synthetic reference labels: SYN-PAPER-0008 and SYN-DOI-NOT-REAL-0008. This content exists only to populate document search, extraction, entity recognition, history, comparison and evidence-bridge screens.",
+      "limitations": "Demonstration/reference content only; not experimental or clinical evidence.",
+      "methods": "Synthetic reference table; IC50 endpoint.",
+      "unclassified": "# Kinase Demonstration Brief"
+    },
+    "sensitive_findings": [],
+    "title": "08_kinase_brief.md"
+  },
+  "table_count": 0,
+  "tables": [],
+  "text": "# Kinase Demonstration Brief\n\n## Summary\nBioIntel demonstration record 8. The compound vemurafenib was discussed with target BRAF in the context of melanoma. The example mutation is V600E. A demonstration IC50 measurement of 609 nM is shown for Homo sapiens. Synthetic reference labels: SYN-PAPER-0008 and SYN-DOI-NOT-REAL-0008. This content exists only to populate document search, extraction, entity recognition, history, comparison and evidence-bridge screens.\n\n## Methods\nSynthetic reference table; IC50 endpoint.\n\n## Limitations\nDemonstration/reference content only; not experimental or clinical evidence.\n",
+  "warning_count": 0,
+  "warnings": []
+}

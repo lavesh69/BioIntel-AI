@@ -1,0 +1,122 @@
+{
+  "duplicate_of_run_id": null,
+  "engine_version": "2.7.0",
+  "outputs": [
+    {
+      "created_at_utc": "2026-07-29T10:41:05.020934+00:00",
+      "filename": "06_inflammation_brief_extracted.json",
+      "format": "json",
+      "integrity_status": "unknown",
+      "output_id": "f491251624be434ea5b7cfc26a35db86",
+      "path": "/mnt/data/biointel_r2_work/BioIntel-Step220/UserData/data/document_extractions/4bc1bea53ce648ea88a3ef3448c06465/06_inflammation_brief_extracted.json",
+      "run_id": "4bc1bea53ce648ea88a3ef3448c06465",
+      "sha256": "1874bcd541493e8eeb0f5d2d23090e5c22d3bf0e03f5de9155522cd64043ae17",
+      "size_bytes": 4830,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-29T10:41:05.024857+00:00",
+      "filename": "06_inflammation_brief_extracted.xlsx",
+      "format": "xlsx",
+      "integrity_status": "unknown",
+      "output_id": "70e7a9b3a87c400a91e7464726e9609f",
+      "path": "/mnt/data/biointel_r2_work/BioIntel-Step220/UserData/data/document_extractions/4bc1bea53ce648ea88a3ef3448c06465/06_inflammation_brief_extracted.xlsx",
+      "run_id": "4bc1bea53ce648ea88a3ef3448c06465",
+      "sha256": "54430bb40c369643c1b93d590e64b4a90fd28d5193b3dfbc6d789063f4e5687b",
+      "size_bytes": 9011,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-29T10:41:05.028047+00:00",
+      "filename": "06_inflammation_brief_extracted.docx",
+      "format": "docx",
+      "integrity_status": "unknown",
+      "output_id": "f0c0003b7cc14ee9b488d1bc42177803",
+      "path": "/mnt/data/biointel_r2_work/BioIntel-Step220/UserData/data/document_extractions/4bc1bea53ce648ea88a3ef3448c06465/06_inflammation_brief_extracted.docx",
+      "run_id": "4bc1bea53ce648ea88a3ef3448c06465",
+      "sha256": "c6a71047d05cdf5977b8c5a69e3d6c87a3bb66f10ce936584e45f60704973f9d",
+      "size_bytes": 37920,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-29T10:41:05.031933+00:00",
+      "filename": "06_inflammation_brief_extracted.pdf",
+      "format": "pdf",
+      "integrity_status": "unknown",
+      "output_id": "6857d6599a9f4c8aaa58a57fd786ce8a",
+      "path": "/mnt/data/biointel_r2_work/BioIntel-Step220/UserData/data/document_extractions/4bc1bea53ce648ea88a3ef3448c06465/06_inflammation_brief_extracted.pdf",
+      "run_id": "4bc1bea53ce648ea88a3ef3448c06465",
+      "sha256": "a5521d6b4962c2b41bd8097e2414584a35bc0d0f0bed3e51b8d2f7c1d72eb87a",
+      "size_bytes": 3920,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-29T10:41:05.036281+00:00",
+      "filename": "06_inflammation_brief_csv_tables.zip",
+      "format": "csv_zip",
+      "integrity_status": "unknown",
+      "output_id": "533e95f74a4b436ba0ca7fc791a7fc77",
+      "path": "/mnt/data/biointel_r2_work/BioIntel-Step220/UserData/data/document_extractions/4bc1bea53ce648ea88a3ef3448c06465/06_inflammation_brief_csv_tables.zip",
+      "run_id": "4bc1bea53ce648ea88a3ef3448c06465",
+      "sha256": "7d3a725cb883af4d3fcbe5724eef364f08a1acaac3afd76fc40d69d322c263ca",
+      "size_bytes": 2985,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-29T10:41:05.039641+00:00",
+      "filename": "06_inflammation_brief_complete_export.zip",
+      "format": "bundle_zip",
+      "integrity_status": "unknown",
+      "output_id": "f31d6988ef1f47e29d6474a27c6ccbb8",
+      "path": "/mnt/data/biointel_r2_work/BioIntel-Step220/UserData/data/document_extractions/4bc1bea53ce648ea88a3ef3448c06465/06_inflammation_brief_complete_export.zip",
+      "run_id": "4bc1bea53ce648ea88a3ef3448c06465",
+      "sha256": "84841aff181245477da821d727479256813d5fed9ed708655d4909a4c3658ca1",
+      "size_bytes": 50763,
+      "verified_at_utc": null
+    }
+  ],
+  "run_id": "4bc1bea53ce648ea88a3ef3448c06465",
+  "source": {
+    "character_count": 627,
+    "entity_count": 7,
+    "file_type": "md",
+    "image_count": 0,
+    "mime_type": "text/markdown",
+    "page_count": 0,
+    "paragraph_count": 0,
+    "region_count": 0,
+    "row_count": 0,
+    "sheet_count": 0,
+    "source_name": "06_inflammation_brief.md",
+    "source_sha256": "230d03d537a946b115d43b313df453361828b7ccd9f280a97492dc6393536fdb",
+    "source_size_bytes": 627,
+    "table_count": 0,
+    "warning_count": 0
+  },
+  "structured_fields": {
+    "activity_measurements": [],
+    "document_type": "research_document",
+    "entity_counts": {
+      "assay_endpoint": 1,
+      "disease": 1,
+      "drug_or_compound": 1,
+      "gene_or_protein": 2,
+      "mutation": 1,
+      "organism": 1
+    },
+    "has_limitations": true,
+    "has_methods": true,
+    "has_results": false,
+    "publication_identifiers": [],
+    "sample_sizes": [],
+    "sections": {
+      "abstract": "BioIntel demonstration record 6. The compound infliximab was discussed with target TNF in the context of rheumatoid arthritis. The example mutation is G308A. A demonstration EC50 measurement of 463 nM is shown for Homo sapiens. Synthetic reference labels: SYN-PAPER-0006 and SYN-DOI-NOT-REAL-0006. This content exists only to populate document search, extraction, entity recognition, history, comparison and evidence-bridge screens.",
+      "limitations": "Demonstration/reference content only; not experimental or clinical evidence.",
+      "methods": "Synthetic reference table; EC50 endpoint.",
+      "unclassified": "# Inflammation Demonstration Brief"
+    },
+    "sensitive_findings": [],
+    "title": "06_inflammation_brief.md"
+  },
+  "warnings": []
+}

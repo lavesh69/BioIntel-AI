@@ -1,0 +1,122 @@
+{
+  "character_count": 621,
+  "entities": [
+    {
+      "confidence": 0.86,
+      "end": 130,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "ACHE",
+      "source": "document",
+      "start": 126,
+      "text": "ACHE"
+    },
+    {
+      "confidence": 0.72,
+      "end": 158,
+      "entity_type": "disease",
+      "metadata": {},
+      "normalized": "alzheimer",
+      "source": "document",
+      "start": 149,
+      "text": "Alzheimer"
+    },
+    {
+      "confidence": 0.92,
+      "end": 197,
+      "entity_type": "mutation",
+      "metadata": {},
+      "normalized": "Y337A",
+      "source": "document",
+      "start": 192,
+      "text": "Y337A"
+    },
+    {
+      "confidence": 0.97,
+      "end": 517,
+      "entity_type": "assay_endpoint",
+      "metadata": {},
+      "normalized": "IC50",
+      "source": "document",
+      "start": 513,
+      "text": "IC50"
+    },
+    {
+      "confidence": 0.86,
+      "end": 517,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "IC50",
+      "source": "document",
+      "start": 513,
+      "text": "IC50"
+    },
+    {
+      "confidence": 0.9,
+      "end": 267,
+      "entity_type": "organism",
+      "metadata": {},
+      "normalized": "Homo sapiens",
+      "source": "document",
+      "start": 255,
+      "text": "Homo sapiens"
+    }
+  ],
+  "entity_count": 6,
+  "file_type": "md",
+  "image_count": 0,
+  "metadata": {
+    "encoding": "utf-8-sig",
+    "scientific_entity_extraction": "rule_based_v1",
+    "sensitive_finding_count": 0,
+    "sensitive_redaction_applied": false
+  },
+  "mime_type": "text/markdown",
+  "page_count": 0,
+  "paragraph_count": 0,
+  "region_count": 0,
+  "regions": [],
+  "row_count": 0,
+  "sections": [
+    {
+      "confidence": 1.0,
+      "metadata": {},
+      "name": "Document",
+      "source": "document",
+      "text": "# Neurology Demonstration Brief\n\n## Summary\nBioIntel demonstration record 3. The compound donepezil was discussed with target ACHE in the context of Alzheimer disease. The example mutation is Y337A. A demonstration IC50 measurement of 244 nM is shown for Homo sapiens. Synthetic reference labels: SYN-PAPER-0003 and SYN-DOI-NOT-REAL-0003. This content exists only to populate document search, extraction, entity recognition, history, comparison and evidence-bridge screens.\n\n## Methods\nSynthetic reference table; IC50 endpoint.\n\n## Limitations\nDemonstration/reference content only; not experimental or clinical evidence.\n"
+    }
+  ],
+  "sheet_count": 0,
+  "source_name": "03_neurology_brief.md",
+  "source_sha256": "86e001488cef3222cb229a5bb9ed4edbaf1574c5d9f0d37713fafec675227bee",
+  "source_size_bytes": 621,
+  "structured_fields": {
+    "activity_measurements": [],
+    "document_type": "research_document",
+    "entity_counts": {
+      "assay_endpoint": 1,
+      "disease": 1,
+      "gene_or_protein": 2,
+      "mutation": 1,
+      "organism": 1
+    },
+    "has_limitations": true,
+    "has_methods": true,
+    "has_results": false,
+    "publication_identifiers": [],
+    "sample_sizes": [],
+    "sections": {
+      "abstract": "BioIntel demonstration record 3. The compound donepezil was discussed with target ACHE in the context of Alzheimer disease. The example mutation is Y337A. A demonstration IC50 measurement of 244 nM is shown for Homo sapiens. Synthetic reference labels: SYN-PAPER-0003 and SYN-DOI-NOT-REAL-0003. This content exists only to populate document search, extraction, entity recognition, history, comparison and evidence-bridge screens.",
+      "limitations": "Demonstration/reference content only; not experimental or clinical evidence.",
+      "methods": "Synthetic reference table; IC50 endpoint.",
+      "unclassified": "# Neurology Demonstration Brief"
+    },
+    "sensitive_findings": [],
+    "title": "03_neurology_brief.md"
+  },
+  "table_count": 0,
+  "tables": [],
+  "text": "# Neurology Demonstration Brief\n\n## Summary\nBioIntel demonstration record 3. The compound donepezil was discussed with target ACHE in the context of Alzheimer disease. The example mutation is Y337A. A demonstration IC50 measurement of 244 nM is shown for Homo sapiens. Synthetic reference labels: SYN-PAPER-0003 and SYN-DOI-NOT-REAL-0003. This content exists only to populate document search, extraction, entity recognition, history, comparison and evidence-bridge screens.\n\n## Methods\nSynthetic reference table; IC50 endpoint.\n\n## Limitations\nDemonstration/reference content only; not experimental or clinical evidence.\n",
+  "warning_count": 0,
+  "warnings": []
+}

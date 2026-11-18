@@ -1,0 +1,118 @@
+{
+  "duplicate_of_run_id": null,
+  "engine_version": "2.7.0",
+  "outputs": [
+    {
+      "created_at_utc": "2026-07-29T10:41:05.900449+00:00",
+      "filename": "07_rare_disease_table_extracted.json",
+      "format": "json",
+      "integrity_status": "unknown",
+      "output_id": "a2cdb77a9857450dbced1a05dc8fa2a8",
+      "path": "/mnt/data/biointel_r2_work/BioIntel-Step220/UserData/data/document_extractions/163c20613d7b47998e5584db2cb56af3/07_rare_disease_table_extracted.json",
+      "run_id": "163c20613d7b47998e5584db2cb56af3",
+      "sha256": "dee08733880b1f91a14285dffb928a71c83b726abd8de8ea0b68799d62827a49",
+      "size_bytes": 4346,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-29T10:41:05.905090+00:00",
+      "filename": "07_rare_disease_table_extracted.xlsx",
+      "format": "xlsx",
+      "integrity_status": "unknown",
+      "output_id": "b32317897d5f4c549f60363c64c0b56f",
+      "path": "/mnt/data/biointel_r2_work/BioIntel-Step220/UserData/data/document_extractions/163c20613d7b47998e5584db2cb56af3/07_rare_disease_table_extracted.xlsx",
+      "run_id": "163c20613d7b47998e5584db2cb56af3",
+      "sha256": "c9f9396093abd0344a49801b9db88993e132afb9ad7d084d35f1fcf448ade9ab",
+      "size_bytes": 9466,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-29T10:41:05.909532+00:00",
+      "filename": "07_rare_disease_table_extracted.docx",
+      "format": "docx",
+      "integrity_status": "unknown",
+      "output_id": "37c14268990a46a085c7731970294c9c",
+      "path": "/mnt/data/biointel_r2_work/BioIntel-Step220/UserData/data/document_extractions/163c20613d7b47998e5584db2cb56af3/07_rare_disease_table_extracted.docx",
+      "run_id": "163c20613d7b47998e5584db2cb56af3",
+      "sha256": "18dafe5ab4f83fc1770aa8ad280478939b153d7fc71bd0420a76ba55d687aff6",
+      "size_bytes": 37826,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-29T10:41:05.913290+00:00",
+      "filename": "07_rare_disease_table_extracted.pdf",
+      "format": "pdf",
+      "integrity_status": "unknown",
+      "output_id": "e671c220546c44ebb5f36d73e77edb8c",
+      "path": "/mnt/data/biointel_r2_work/BioIntel-Step220/UserData/data/document_extractions/163c20613d7b47998e5584db2cb56af3/07_rare_disease_table_extracted.pdf",
+      "run_id": "163c20613d7b47998e5584db2cb56af3",
+      "sha256": "034334f9491f19a5a65160430d41a370a512a3b6d543b3beed23a1dffc79dc06",
+      "size_bytes": 4609,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-29T10:41:05.917219+00:00",
+      "filename": "07_rare_disease_table_csv_tables.zip",
+      "format": "csv_zip",
+      "integrity_status": "unknown",
+      "output_id": "281d7c0aab3140c9ac7b3f2e09a6dd4b",
+      "path": "/mnt/data/biointel_r2_work/BioIntel-Step220/UserData/data/document_extractions/163c20613d7b47998e5584db2cb56af3/07_rare_disease_table_csv_tables.zip",
+      "run_id": "163c20613d7b47998e5584db2cb56af3",
+      "sha256": "60ab83abf4aab1ca61404e340f1eb44c6b9a32af0ff2be4b12c223b8f8269705",
+      "size_bytes": 2692,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-29T10:41:05.922844+00:00",
+      "filename": "07_rare_disease_table_complete_export.zip",
+      "format": "bundle_zip",
+      "integrity_status": "unknown",
+      "output_id": "1c88fc00af0e4afea9f40c99a85f1fa5",
+      "path": "/mnt/data/biointel_r2_work/BioIntel-Step220/UserData/data/document_extractions/163c20613d7b47998e5584db2cb56af3/07_rare_disease_table_complete_export.zip",
+      "run_id": "163c20613d7b47998e5584db2cb56af3",
+      "sha256": "886b49f1fe8c795f9b8e2d9c9f176643c575796a0bc083aaa7f1e0533a7485b0",
+      "size_bytes": 50807,
+      "verified_at_utc": null
+    }
+  ],
+  "run_id": "163c20613d7b47998e5584db2cb56af3",
+  "source": {
+    "character_count": 253,
+    "entity_count": 6,
+    "file_type": "csv",
+    "image_count": 0,
+    "mime_type": "text/csv",
+    "page_count": 0,
+    "paragraph_count": 0,
+    "region_count": 0,
+    "row_count": 2,
+    "sheet_count": 0,
+    "source_name": "07_rare_disease_table.csv",
+    "source_sha256": "ced52ccdb29f0e52e564c7109daa0e38cb2b8e456c1681b258d2e2f4ac434ce7",
+    "source_size_bytes": 253,
+    "table_count": 1,
+    "warning_count": 0
+  },
+  "structured_fields": {
+    "activity_measurements": [],
+    "document_type": "research_document",
+    "entity_counts": {
+      "assay_endpoint": 1,
+      "disease": 1,
+      "gene_or_protein": 2,
+      "mutation": 1,
+      "organism": 1
+    },
+    "has_limitations": false,
+    "has_methods": false,
+    "has_results": false,
+    "publication_identifiers": [],
+    "sample_sizes": [],
+    "sections": {
+      "unclassified": "record_id,compound,target,disease,mutation,assay,value_nm,organism,status\nDEMO-CORPUS-07,ivacaftor,CFTR,cystic fibrosis,G551D,EC50,536,Homo sapiens,demo_only\nDEMO-CORPUS-07-B,ivacaftor analogue,CFTR,cystic fibrosis,G551D,EC50,646,Homo sapiens,demo_only"
+    },
+    "sensitive_findings": [],
+    "title": "07_rare_disease_table.csv"
+  },
+  "warnings": []
+}

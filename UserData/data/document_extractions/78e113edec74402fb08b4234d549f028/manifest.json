@@ -1,0 +1,121 @@
+{
+  "duplicate_of_run_id": null,
+  "engine_version": "2.7.0",
+  "outputs": [
+    {
+      "created_at_utc": "2026-07-29T10:41:03.776563+00:00",
+      "filename": "03_neurology_brief_extracted.json",
+      "format": "json",
+      "integrity_status": "unknown",
+      "output_id": "9fabe4037e5343b7837caadde06264fc",
+      "path": "/mnt/data/biointel_r2_work/BioIntel-Step220/UserData/data/document_extractions/78e113edec74402fb08b4234d549f028/03_neurology_brief_extracted.json",
+      "run_id": "78e113edec74402fb08b4234d549f028",
+      "sha256": "e58a28a723a5a88b9ee59b37d4ed2f2649cd0fc79ace6943fa3c13431d7d0cbb",
+      "size_bytes": 4551,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-29T10:41:03.780776+00:00",
+      "filename": "03_neurology_brief_extracted.xlsx",
+      "format": "xlsx",
+      "integrity_status": "unknown",
+      "output_id": "b98d6ebf23624edd92af0102016671df",
+      "path": "/mnt/data/biointel_r2_work/BioIntel-Step220/UserData/data/document_extractions/78e113edec74402fb08b4234d549f028/03_neurology_brief_extracted.xlsx",
+      "run_id": "78e113edec74402fb08b4234d549f028",
+      "sha256": "a3e270a791ce00f3dca77b04e701b0c583e7b09ca849c8fa842f0b22364e0e25",
+      "size_bytes": 8957,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-29T10:41:03.784457+00:00",
+      "filename": "03_neurology_brief_extracted.docx",
+      "format": "docx",
+      "integrity_status": "unknown",
+      "output_id": "15b23d897ffb4dc680dcf722d8b0b042",
+      "path": "/mnt/data/biointel_r2_work/BioIntel-Step220/UserData/data/document_extractions/78e113edec74402fb08b4234d549f028/03_neurology_brief_extracted.docx",
+      "run_id": "78e113edec74402fb08b4234d549f028",
+      "sha256": "3dd0c3516d64dce55f84c9c1b94c9245e490bf19e9d746410a8abcaa1a546ad4",
+      "size_bytes": 37896,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-29T10:41:03.796927+00:00",
+      "filename": "03_neurology_brief_extracted.pdf",
+      "format": "pdf",
+      "integrity_status": "unknown",
+      "output_id": "f21321ad68384c4dbe9c47d07432805a",
+      "path": "/mnt/data/biointel_r2_work/BioIntel-Step220/UserData/data/document_extractions/78e113edec74402fb08b4234d549f028/03_neurology_brief_extracted.pdf",
+      "run_id": "78e113edec74402fb08b4234d549f028",
+      "sha256": "98335c1dc2152169e2241403ac3338abb12ca7cc64e6073d088b91e74625a34b",
+      "size_bytes": 3889,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-29T10:41:03.800725+00:00",
+      "filename": "03_neurology_brief_csv_tables.zip",
+      "format": "csv_zip",
+      "integrity_status": "unknown",
+      "output_id": "62e97611600a4c74afed30dc7608a808",
+      "path": "/mnt/data/biointel_r2_work/BioIntel-Step220/UserData/data/document_extractions/78e113edec74402fb08b4234d549f028/03_neurology_brief_csv_tables.zip",
+      "run_id": "78e113edec74402fb08b4234d549f028",
+      "sha256": "9b7c3c97caf89fede347a0fce835127aff23c2f638548d962d1fc5f465bd88f1",
+      "size_bytes": 2915,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-29T10:41:03.804417+00:00",
+      "filename": "03_neurology_brief_complete_export.zip",
+      "format": "bundle_zip",
+      "integrity_status": "unknown",
+      "output_id": "0e3a50a1b39d463c912cafb7b7765bf3",
+      "path": "/mnt/data/biointel_r2_work/BioIntel-Step220/UserData/data/document_extractions/78e113edec74402fb08b4234d549f028/03_neurology_brief_complete_export.zip",
+      "run_id": "78e113edec74402fb08b4234d549f028",
+      "sha256": "7941e1dd5370e6652306f8dda79e7e28bc1788be71fd45ce9f3e3f905e3c3e02",
+      "size_bytes": 50522,
+      "verified_at_utc": null
+    }
+  ],
+  "run_id": "78e113edec74402fb08b4234d549f028",
+  "source": {
+    "character_count": 621,
+    "entity_count": 6,
+    "file_type": "md",
+    "image_count": 0,
+    "mime_type": "text/markdown",
+    "page_count": 0,
+    "paragraph_count": 0,
+    "region_count": 0,
+    "row_count": 0,
+    "sheet_count": 0,
+    "source_name": "03_neurology_brief.md",
+    "source_sha256": "86e001488cef3222cb229a5bb9ed4edbaf1574c5d9f0d37713fafec675227bee",
+    "source_size_bytes": 621,
+    "table_count": 0,
+    "warning_count": 0
+  },
+  "structured_fields": {
+    "activity_measurements": [],
+    "document_type": "research_document",
+    "entity_counts": {
+      "assay_endpoint": 1,
+      "disease": 1,
+      "gene_or_protein": 2,
+      "mutation": 1,
+      "organism": 1
+    },
+    "has_limitations": true,
+    "has_methods": true,
+    "has_results": false,
+    "publication_identifiers": [],
+    "sample_sizes": [],
+    "sections": {
+      "abstract": "BioIntel demonstration record 3. The compound donepezil was discussed with target ACHE in the context of Alzheimer disease. The example mutation is Y337A. A demonstration IC50 measurement of 244 nM is shown for Homo sapiens. Synthetic reference labels: SYN-PAPER-0003 and SYN-DOI-NOT-REAL-0003. This content exists only to populate document search, extraction, entity recognition, history, comparison and evidence-bridge screens.",
+      "limitations": "Demonstration/reference content only; not experimental or clinical evidence.",
+      "methods": "Synthetic reference table; IC50 endpoint.",
+      "unclassified": "# Neurology Demonstration Brief"
+    },
+    "sensitive_findings": [],
+    "title": "03_neurology_brief.md"
+  },
+  "warnings": []
+}

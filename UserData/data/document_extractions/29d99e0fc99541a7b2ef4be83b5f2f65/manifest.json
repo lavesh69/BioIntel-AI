@@ -1,0 +1,117 @@
+{
+  "duplicate_of_run_id": null,
+  "engine_version": "2.7.0",
+  "outputs": [
+    {
+      "created_at_utc": "2026-07-29T10:41:06.502141+00:00",
+      "filename": "09_antiviral_metadata_extracted.json",
+      "format": "json",
+      "integrity_status": "unknown",
+      "output_id": "c9ca50ec0e7e41e7a9e216480ddb28b0",
+      "path": "/mnt/data/biointel_r2_work/BioIntel-Step220/UserData/data/document_extractions/29d99e0fc99541a7b2ef4be83b5f2f65/09_antiviral_metadata_extracted.json",
+      "run_id": "29d99e0fc99541a7b2ef4be83b5f2f65",
+      "sha256": "18e90389483ccd122689fe1af2163a7a4eca7d6b55a41e07b197405dd0b74fb1",
+      "size_bytes": 5253,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-29T10:41:06.506253+00:00",
+      "filename": "09_antiviral_metadata_extracted.xlsx",
+      "format": "xlsx",
+      "integrity_status": "unknown",
+      "output_id": "c80677ade2bf49c2a34640583e3d11c8",
+      "path": "/mnt/data/biointel_r2_work/BioIntel-Step220/UserData/data/document_extractions/29d99e0fc99541a7b2ef4be83b5f2f65/09_antiviral_metadata_extracted.xlsx",
+      "run_id": "29d99e0fc99541a7b2ef4be83b5f2f65",
+      "sha256": "44a78187b30ae71a42b645c720e68ac09b42c0a988a3e8f4df1856a8421f4b3d",
+      "size_bytes": 9791,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-29T10:41:06.509901+00:00",
+      "filename": "09_antiviral_metadata_extracted.docx",
+      "format": "docx",
+      "integrity_status": "unknown",
+      "output_id": "7dbbb1fac6614a709e4a9b16b5d38b13",
+      "path": "/mnt/data/biointel_r2_work/BioIntel-Step220/UserData/data/document_extractions/29d99e0fc99541a7b2ef4be83b5f2f65/09_antiviral_metadata_extracted.docx",
+      "run_id": "29d99e0fc99541a7b2ef4be83b5f2f65",
+      "sha256": "74b962bbc41bbe951a45d68904b08deb72eff3e1b67fab284e19408a83c476f5",
+      "size_bytes": 38065,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-29T10:41:06.513057+00:00",
+      "filename": "09_antiviral_metadata_extracted.pdf",
+      "format": "pdf",
+      "integrity_status": "unknown",
+      "output_id": "23eb28f9229a47f29a2522cc6575bb2a",
+      "path": "/mnt/data/biointel_r2_work/BioIntel-Step220/UserData/data/document_extractions/29d99e0fc99541a7b2ef4be83b5f2f65/09_antiviral_metadata_extracted.pdf",
+      "run_id": "29d99e0fc99541a7b2ef4be83b5f2f65",
+      "sha256": "9ef174aa89d02b3b437b8cac9e75814b6555496b2f5dc4c6fecc333cdea6e7af",
+      "size_bytes": 4918,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-29T10:41:06.516525+00:00",
+      "filename": "09_antiviral_metadata_csv_tables.zip",
+      "format": "csv_zip",
+      "integrity_status": "unknown",
+      "output_id": "352f8fab088240d296a78407e5a83589",
+      "path": "/mnt/data/biointel_r2_work/BioIntel-Step220/UserData/data/document_extractions/29d99e0fc99541a7b2ef4be83b5f2f65/09_antiviral_metadata_csv_tables.zip",
+      "run_id": "29d99e0fc99541a7b2ef4be83b5f2f65",
+      "sha256": "54e94fecb16e0730ef10be8fec638c733a9b3a83b8a5411b0cf7ffe82dfb9614",
+      "size_bytes": 3247,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-29T10:41:06.519918+00:00",
+      "filename": "09_antiviral_metadata_complete_export.zip",
+      "format": "bundle_zip",
+      "integrity_status": "unknown",
+      "output_id": "37d6fd8b6e12482ea417fc33fe5762f9",
+      "path": "/mnt/data/biointel_r2_work/BioIntel-Step220/UserData/data/document_extractions/29d99e0fc99541a7b2ef4be83b5f2f65/09_antiviral_metadata_complete_export.zip",
+      "run_id": "29d99e0fc99541a7b2ef4be83b5f2f65",
+      "sha256": "e0ffbfc97bbab0d7c57fac06b7c2fafdd32a7f0b293b8f40bfdfe53eda9f2203",
+      "size_bytes": 52379,
+      "verified_at_utc": null
+    }
+  ],
+  "run_id": "29d99e0fc99541a7b2ef4be83b5f2f65",
+  "source": {
+    "character_count": 491,
+    "entity_count": 4,
+    "file_type": "json",
+    "image_count": 0,
+    "mime_type": "application/json",
+    "page_count": 0,
+    "paragraph_count": 0,
+    "region_count": 0,
+    "row_count": 15,
+    "sheet_count": 0,
+    "source_name": "09_antiviral_metadata.json",
+    "source_sha256": "1eb1b6b298f56c5890be1c831a4a03d5d3611be429e3058f1c5048e09736a80c",
+    "source_size_bytes": 491,
+    "table_count": 1,
+    "warning_count": 0
+  },
+  "structured_fields": {
+    "activity_measurements": [],
+    "document_type": "research_document",
+    "entity_counts": {
+      "assay_endpoint": 1,
+      "drug_or_compound": 1,
+      "gene_or_protein": 1,
+      "mutation": 1
+    },
+    "has_limitations": false,
+    "has_methods": false,
+    "has_results": false,
+    "publication_identifiers": [],
+    "sample_sizes": [],
+    "sections": {
+      "unclassified": "{\n\"activity_value_nm\": 682,\n\"assay\": \"IC50\",\n\"disease\": \"hepatitis C\",\n\"document_id\": \"DEMO-CORPUS-09\",\n\"doi\": \"\",\n\"drug\": \"sofosbuvir\",\n\"gene\": \"NS5B\",\n\"mutation\": \"S282T\",\n\"notice\": \"Demonstration/reference content only; not experimental or clinical evidence.\",\n\"organism\": \"Hepatitis C virus\",\n\"pmid\": \"\",\n\"scientific_release_eligible\": false,\n\"synthetic_doi_label\": \"SYN-DOI-NOT-REAL-0009\",\n\"synthetic_reference_id\": \"SYN-PAPER-0009\",\n\"topic\": \"antiviral\"\n}"
+    },
+    "sensitive_findings": [],
+    "title": "09_antiviral_metadata.json"
+  },
+  "warnings": []
+}
