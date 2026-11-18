@@ -1,0 +1,103 @@
+{
+  "component_counts": {
+    "button": 3,
+    "caption": 6,
+    "checkbox": 0,
+    "dataframe": 0,
+    "error": 0,
+    "expander": 2,
+    "info": 3,
+    "markdown": 29,
+    "metric": 5,
+    "multiselect": 0,
+    "radio": 0,
+    "selectbox": 6,
+    "slider": 1,
+    "success": 1,
+    "table": 0,
+    "tabs": 4,
+    "text_area": 0,
+    "text_input": 1,
+    "warning": 1
+  },
+  "content_sha256": "f548580c9536493c858e954e726ce1636fa69200b8834ccb8ca062b7cce0688f",
+  "scenario": "visual-workspace-desktop",
+  "schema": "biointel.semantic-visual.v1",
+  "source": "pages/164_Visual_Interaction_Accessibility_Workspace.py",
+  "viewport": {
+    "height": 1000,
+    "width": 1440
+  },
+  "visible_sections": {
+    "caption": [
+      "Refine the search to narrow the full catalogue.",
+      "Cached local database and index health snapshot.",
+      "No new notifications.",
+      "Workflow keywords: visual workspace, saved views, annotations, accessibility, comparison, diagnostics",
+      "Generate deterministic SVG/HTML/JSON/data bundles and readiness checks for PDF, DOCX and presentation reporting.",
+      "Track page/theme/state baselines, semantic fingerprints, changed regions and review status."
+    ],
+    "expander": [
+      "Evidence boundary and responsible-use note",
+      "▦ Browse a domain"
+    ],
+    "info": [
+      "No saved views yet. Use **Save, annotate and report** below any scientific visual.",
+      "Save at least two visual views before using the comparison workspace.",
+      "No persistent annotations have been saved."
+    ],
+    "markdown": [
+      "Skip to workspace content",
+      "BioIntel AI Scientific Intelligence for Life Sciences Biology, Engineered into Intelligence. Evidence-aware research software Professional Research Edition · v11.9.0 Created and developed by Lavesh Dobriyal",
+      "◎ Intelligence Visual Interaction & Accessibility Workspace",
+      "Search by task, scientific domain, file type or workflow. Typo-tolerant matching is enabled.",
+      "171 matching modules · showing 10",
+      "#### System status",
+      "#### Notifications",
+      "#### Interface",
+      "Use a restrained theme for daily work or open Appearance Studio for advanced accessibility controls.",
+      "BioIntel AI › Intelligence › Visual Interaction & Accessibility Workspace",
+      "#### Move within Intelligence",
+      "#### About this module",
+      "Compare saved scientific views, manage persistent annotations and inspect visual diagnostics.",
+      "📊 Scientific Intelligence Visual Interaction & Accessibility Workspace Review saved scientific views, compare visual configurations, manage persistent annotations, inspect visual diagnostics and export an auditable local visual-workspace record. Saved views Annotations Accessibility",
+      "#### 📄 Advanced viewer",
+      "#### 🧪 Advanced viewer",
+      "BioIntel AI Scientific Intelligence for Life Sciences Biology, Engineered into Intelligence. Professional Research Edition · v11.9.0 Created and developed by Lavesh Dobriyal",
+      "Workspace",
+      "Task lanes",
+      "Knowledge, analytics and research assets",
+      "Workspace healthy 26/26 databases online"
+    ],
+    "metric": [
+      "Databases online: 26/26",
+      "Saved views: 0",
+      "Annotations: 0",
+      "Visual diagnostics: 0",
+      "Evidence-labelled: 0"
+    ],
+    "selectbox": [
+      "All",
+      "Dark",
+      "Executive",
+      "Inter",
+      "Balanced",
+      "Intelligence"
+    ],
+    "slider": [
+      "1.0"
+    ],
+    "success": [
+      "No visual rendering diagnostics have been recorded."
+    ],
+    "tabs": [
+      "Saved views",
+      "Compare",
+      "Annotations",
+      "Diagnostics"
+    ],
+    "warning": [
+      "Saved visual configurations preserve presentation and review context. They do not replace the underlying analysis output, source data or independent scientific validation."
+    ]
+  }
+}

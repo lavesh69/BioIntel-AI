@@ -1,0 +1,85 @@
+{
+  "component_counts": {
+    "button": 5,
+    "caption": 6,
+    "checkbox": 0,
+    "dataframe": 0,
+    "error": 0,
+    "expander": 1,
+    "info": 0,
+    "markdown": 27,
+    "metric": 1,
+    "multiselect": 0,
+    "radio": 1,
+    "selectbox": 9,
+    "slider": 1,
+    "success": 0,
+    "table": 0,
+    "tabs": 0,
+    "text_area": 0,
+    "text_input": 1,
+    "warning": 0
+  },
+  "content_sha256": "a8110dcb41b946880f0d0857022b766b8af98833b65fc77b0b416e5832695bdc",
+  "scenario": "home-desktop",
+  "schema": "biointel.semantic-visual.v1",
+  "source": "app.py",
+  "viewport": {
+    "height": 1000,
+    "width": 1440
+  },
+  "visible_sections": {
+    "caption": [
+      "Refine the search to narrow the full catalogue.",
+      "Cached local database and index health snapshot.",
+      "No new notifications.",
+      "This is the first module in this domain.",
+      "Workflow keywords: home, overview, start",
+      "Set the workspace role and guidance level. These preferences stay local and can be changed later in Appearance Studio."
+    ],
+    "expander": [
+      "▦ Browse a domain"
+    ],
+    "markdown": [
+      "Skip to workspace content",
+      "BioIntel AI Scientific Intelligence for Life Sciences Biology, Engineered into Intelligence. Evidence-aware research software Professional Research Edition · v11.9.0 Created and developed by Lavesh Dobriyal",
+      "⌂ Start Home",
+      "Search by task, scientific domain, file type or workflow. Typo-tolerant matching is enabled.",
+      "171 matching modules · showing 10",
+      "#### System status",
+      "#### Notifications",
+      "#### Interface",
+      "Use a restrained theme for daily work or open Appearance Studio for advanced accessibility controls.",
+      "BioIntel AI › Start › Home",
+      "#### Move within Start",
+      "#### About this module",
+      "Premium overview of the local BioIntel research workspace.",
+      "## Welcome to BioIntel AI",
+      "BioIntel AI Scientific Intelligence for Life Sciences Biology, Engineered into Intelligence. Professional Research Edition · v11.9.0 Created and developed by Lavesh Dobriyal",
+      "Workspace",
+      "Task lanes",
+      "Launch, plan and review the workspace",
+      "Workspace healthy 26/26 databases online"
+    ],
+    "metric": [
+      "Databases online: 26/26"
+    ],
+    "radio": [
+      "Guided"
+    ],
+    "selectbox": [
+      "All",
+      "Dark",
+      "Executive",
+      "Inter",
+      "Balanced",
+      "Researcher",
+      "Intermediate",
+      "Analyse biological data",
+      "Start"
+    ],
+    "slider": [
+      "1.0"
+    ]
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "component_counts": {
+    "button": 3,
+    "caption": 6,
+    "checkbox": 0,
+    "dataframe": 0,
+    "error": 1,
+    "expander": 3,
+    "info": 0,
+    "markdown": 29,
+    "metric": 5,
+    "multiselect": 0,
+    "radio": 0,
+    "selectbox": 6,
+    "slider": 1,
+    "success": 0,
+    "table": 0,
+    "tabs": 0,
+    "text_area": 0,
+    "text_input": 2,
+    "warning": 1
+  },
+  "content_sha256": "ad81b0bbae9cb4c3b0b5d1d834bac1f35003413142d21ddbe4f9b6b94bd1b0c0",
+  "scenario": "advanced-viewers-desktop",
+  "schema": "biointel.semantic-visual.v1",
+  "source": "pages/165_Advanced_Scientific_Viewers.py",
+  "viewport": {
+    "height": 1000,
+    "width": 1440
+  },
+  "visible_sections": {
+    "caption": [
+      "Refine the search to narrow the full catalogue.",
+      "Cached local database and index health snapshot.",
+      "No new notifications.",
+      "Workflow keywords: advanced viewer, genome browser, 3d structure, microscopy, flow cytometry, mass spectrometry, phylogeny, plate map",
+      "Nineteen optimized viewers cover raw scientific evidence, spatial/image/structure exploration, laboratory layouts and platform visual quality.",
+      "No project data was deleted. Review the selected input and parameters, then retry or export the diagnostic report from System Diagnostics."
+    ],
+    "error": [
+      "The workflow stopped safely · ERR-20260711045810-756942"
+    ],
+    "expander": [
+      "Evidence boundary and responsible-use note",
+      "Recovery details",
+      "▦ Browse a domain"
+    ],
+    "markdown": [
+      "Skip to workspace content",
+      "BioIntel AI Scientific Intelligence for Life Sciences Biology, Engineered into Intelligence. Evidence-aware research software Professional Research Edition · v11.9.0 Created and developed by Lavesh Dobriyal",
+      "◎ Intelligence Advanced Scientific Viewers",
+      "Search by task, scientific domain, file type or workflow. Typo-tolerant matching is enabled.",
+      "171 matching modules · showing 10",
+      "#### System status",
+      "#### Notifications",
+      "#### Interface",
+      "Use a restrained theme for daily work or open Appearance Studio for advanced accessibility controls.",
+      "BioIntel AI › Intelligence › Advanced Scientific Viewers",
+      "#### Move within Intelligence",
+      "#### About this module",
+      "Open genome, structure, image, flow, spectrum, tree, plate, pedigree and operational scientific viewers.",
+      "🔭 Scientific Intelligence Advanced Scientific Viewers Inspect genomic tracks, molecular structures, tissue and microscopy overlays, flow gates, spectra, trees, plate maps, pedigrees, outbreak geography, pangenome graphs, single-cell embeddings and operational scientific canvases in one optimized local workspace. Genome 3D structure Microscopy",
+      "### Advanced scientific viewer catalogue",
+      "- Retry with the bundled example to separate an input issue from an environment issue. - Reset transient analysis results in **System Diagnostics** if the page retained an old upload or widget value. - Run `REPAIR_BIOINTEL_WINDOWS.bat` when dependencies or the local runtime are damaged.",
+      "BioIntel AI Scientific Intelligence for Life Sciences Biology, Engineered into Intelligence. Professional Research Edition · v11.9.0 Created and developed by Lavesh Dobriyal",
+      "Workspace",
+      "Task lanes",
+      "Knowledge, analytics and research assets",
+      "Workspace healthy 26/26 databases online"
+    ],
+    "metric": [
+      "Databases online: 26/26",
+      "Advanced viewers: 19",
+      "Scientific domains: 15",
+      "Rendering mode: Lazy",
+      "Offline operation: Supported"
+    ],
+    "selectbox": [
+      "All",
+      "Dark",
+      "Executive",
+      "Inter",
+      "Balanced",
+      "Intelligence"
+    ],
+    "slider": [
+      "1.0"
+    ],
+    "warning": [
+      "Built-in viewers support local exploration and evidence review. Clinical, diagnostic, regulated or vendor-certified interpretation still requires validated methods, current reference data and specialist review."
+    ]
+  }
+}

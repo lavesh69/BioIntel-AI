@@ -1,0 +1,215 @@
+{
+  "scenarios": {
+    "advanced-viewers-desktop": {
+      "content_sha256": "ad81b0bbae9cb4c3b0b5d1d834bac1f35003413142d21ddbe4f9b6b94bd1b0c0",
+      "json_sha256": "1a59a7df2d9431a3e0d46e9ca1abf06a047b5a9072f6794b074529d0275ea464",
+      "png_sha256": "960166b72e2b05b1e4dbd7079240dd077b6f8726a3ab1309e77759839dcb8571",
+      "source": "pages/165_Advanced_Scientific_Viewers.py",
+      "viewport": {
+        "height": 1000,
+        "width": 1440
+      }
+    },
+    "clinical-visual-desktop": {
+      "content_sha256": "c72b850c57f5f20ea7f1ee8ea2335709efce2108ee9fc9fa49b2a306c9613fd2",
+      "json_sha256": "4b955602a3cea1cd663da412c1992c5b8d4ff36118b8e8328fa72d46e9659a92",
+      "png_sha256": "6bb97ab0b1a8e137cb117c26c8f86ac5714bcd3dc1880a42a2f914c87e3f2432",
+      "source": "pages/90_Clinical_Pharma_Validation_Center.py",
+      "viewport": {
+        "height": 1000,
+        "width": 1440
+      }
+    },
+    "compliance-desktop": {
+      "content_sha256": "d90a5141f86c3a0065b6f8ec0bbdc797b92be7c90a7d4c002fe22ef81344b264",
+      "json_sha256": "43ae1986e861202fcf6e9d84f396e5cd6e2e2b25d6b366e9ae6bff2b02cc6f15",
+      "png_sha256": "df20973bc961cbc512e15017b7f3ceeecd66feee7dcfd790b8ddbaa3da31a137",
+      "source": "pages/72_Compliance_Research_Readiness.py",
+      "viewport": {
+        "height": 1000,
+        "width": 1440
+      }
+    },
+    "cross-module-evidence-desktop": {
+      "content_sha256": "75c4d5a543cefab48c83e60fd1301ad3d00e17392880d919f7a8b06c30b42bf0",
+      "json_sha256": "b122ce0132cc68a00f58f2eff7db5d5f60c8748a05b01a88e77cf76d3bb8cf7d",
+      "png_sha256": "d46c8b4f50e0cef63c17d827e6834d1291f7fd9ec608495055a43cc21ac7f1e8",
+      "source": "pages/190_Cross_Module_Evidence_Board.py",
+      "viewport": {
+        "height": 1000,
+        "width": 1440
+      }
+    },
+    "data-quality-desktop": {
+      "content_sha256": "c723c62095c7451f43b877e9a6c866b7c095fab5c67137c672c19465349c0a96",
+      "json_sha256": "66872c62f59984f04669b605d0cee9f223254db6ef1fad1cc0970f316e2b7a0d",
+      "png_sha256": "6010c880470e1b23bcc07ffcbb9937a3cdb21483c08c6c2e442594971348bb96",
+      "source": "pages/8_Data_Quality_Activity.py",
+      "viewport": {
+        "height": 1000,
+        "width": 1440
+      }
+    },
+    "dti-predictor-desktop": {
+      "content_sha256": "050a40c1ad851b1bb5d8924b122bddcae70877c87329738cad483a6342446ac6",
+      "json_sha256": "6cfcb3c9fd42c1134092b88483bee62fcc961ad2d1e7126a0cba1106a3bf5aa4",
+      "png_sha256": "752c045885185d2148f4f97ad0837150320f47cc0248d46566db789c967d3b22",
+      "source": "pages/6_DTI_Predictor.py",
+      "viewport": {
+        "height": 1000,
+        "width": 1440
+      }
+    },
+    "experiment-registry-desktop": {
+      "content_sha256": "c38ae431de026345ce560a9746748565b8daf3c8d65a30e2a470fc16a9e6394f",
+      "json_sha256": "4bb39417a05d763c155fbbcf11dbe60abd2b1529e131bb6002ab7d1e025345ad",
+      "png_sha256": "f805e65c61903a77c60a6433ff8a8207f24b73513d768a57954dc7ea9c871606",
+      "source": "pages/11_Experiment_Registry.py",
+      "viewport": {
+        "height": 1000,
+        "width": 1440
+      }
+    },
+    "final-assurance-desktop": {
+      "content_sha256": "211b52e3f05ba83e619e19d2b82f77898b6d8b21f88848ea86e3bf6924014bc9",
+      "json_sha256": "e28ff2522530edd272fa0aaa0fc74825178000fe8cd7a07d2c557223f46cf599",
+      "png_sha256": "ce5ac0e3fbc6b32d02c501fa57126aceed242d3d1ad34c1b33d55aa4d27815cc",
+      "source": "pages/76_Final_Assurance_Center.py",
+      "viewport": {
+        "height": 1000,
+        "width": 1440
+      }
+    },
+    "home-desktop": {
+      "content_sha256": "a8110dcb41b946880f0d0857022b766b8af98833b65fc77b0b416e5832695bdc",
+      "json_sha256": "4c3e792368dd2c85ec99e7288a8fe3a3394becc4c9bb6bcb9943fcb5601f7b29",
+      "png_sha256": "506d254ded6fe52e8b0f3b4361ae6482df33bfe19d022a966ba544354c9b2535",
+      "source": "app.py",
+      "viewport": {
+        "height": 1000,
+        "width": 1440
+      }
+    },
+    "home-mobile": {
+      "content_sha256": "ad0dcb226bfd6ef68a84052877aaa7da33e707c28d08af79087c7619e4459b85",
+      "json_sha256": "1e8cbe6856ed0e8f02cd8973a6ec96f2725cee597f383ab63ab47ecb4abdb909",
+      "png_sha256": "56639486ba237867c5b2d5ae05f24fcd67763e3a776bf8dae1b9915631e7a6fe",
+      "source": "app.py",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      }
+    },
+    "model-training-desktop": {
+      "content_sha256": "c7cd9a7c52e7639d2e01ebcaaa8041a30e795092552f7471c4ba29ac603bbda7",
+      "json_sha256": "f08dc3f9735f3e1730eb944a9bc2123c2d467487e71e5df16f39e79ece6b93ac",
+      "png_sha256": "87072a0daf8d9794907137afa75d6fecc7ca80379113fed598b3a7412520fad9",
+      "source": "pages/5_Model_Training.py",
+      "viewport": {
+        "height": 1000,
+        "width": 1440
+      }
+    },
+    "non-chart-visuals-desktop": {
+      "content_sha256": "8fc412633de8732167856ca813633378a504f266c7795486e61e7f26ed2ba10e",
+      "json_sha256": "4e8046180e450311ba1cb30b677188233949891b1d6ab84a70f354da48003d03",
+      "png_sha256": "2ee582944fc1df775d2592aac8de1a6658c1d4896884521fff43881c9f9c9cde",
+      "source": "pages/169_Non_Chart_Scientific_Visuals.py",
+      "viewport": {
+        "height": 1000,
+        "width": 1440
+      }
+    },
+    "quality-desktop": {
+      "content_sha256": "8117b5390e467653a2a02d3de00d419b4410d884e8063a48e4dae80b5b67a8fc",
+      "json_sha256": "2ae0544c96611db05a553083dff399127d94e72ba8bd2f3402b00f55a37dfedd",
+      "png_sha256": "4191efc607581ecbed45e6f9b54a9553cb79c0005f8619a3c1bef0e850923bab",
+      "source": "pages/71_Platform_Quality_Center.py",
+      "viewport": {
+        "height": 1000,
+        "width": 1440
+      }
+    },
+    "realworld-operations-desktop": {
+      "content_sha256": "9c6613649a7577ad56fa7ea09fc63a7a662dd0df920ec37905e4ba535233fcb5",
+      "json_sha256": "4cfd8dabde0fcaacf3b2943c6b8dfd121839b5999006a5c1e7ebcf85f6597b65",
+      "png_sha256": "7de7aa172bb667ceb94870b367dc11f627783ac0b62915b3e976c7b8c86b7884",
+      "source": "pages/75_Real_World_Operations_Evidence.py",
+      "viewport": {
+        "height": 1000,
+        "width": 1440
+      }
+    },
+    "scenario-sensitivity-desktop": {
+      "content_sha256": "b69244b6c3efe7a2b580cdf4f6123126412c8145c01762a21c017ec533e0d683",
+      "json_sha256": "734070f6abf37e1b2fe3b1115774fd18db487eafd4f2a5df462e613c156f45d8",
+      "png_sha256": "61cf72ed48b4a82c9fb291622b6dc3f29192052da4e2e6dc5fe77b0c35365149",
+      "source": "pages/191_Scientific_Scenario_Sensitivity_Lab.py",
+      "viewport": {
+        "height": 1000,
+        "width": 1440
+      }
+    },
+    "scientific-evidence-desktop": {
+      "content_sha256": "31c391c6f387539bddbdc48cc31d012399b2cbff1e89ef46bcef47c6d2985698",
+      "json_sha256": "5a5c063935b2050eddb7be781b6dd64b3c68913acf9456d60d9e0a2115ebc529",
+      "png_sha256": "1c2280faadcd99b6c8a174586949525579e0d4ad5107e1badc7ef8809c401d20",
+      "source": "pages/73_Scientific_Evidence_Excellence.py",
+      "viewport": {
+        "height": 1000,
+        "width": 1440
+      }
+    },
+    "scientific-intelligence-hub-desktop": {
+      "content_sha256": "7e37816f0f2a69981c929b51d6722c53b6e7bda4c6d37d1b86e8dd1fae066a63",
+      "json_sha256": "f1367ae26386c628a5826490744862f983ca4aacda61f7284bad0ca6641fe770",
+      "png_sha256": "49642c9a0d25fc58e125d5045f3f1a4a4fe0c6184a61fc8d5953f7d6fd0be12f",
+      "source": "pages/194_Scientific_Intelligence_Hub.py",
+      "viewport": {
+        "height": 1000,
+        "width": 1440
+      }
+    },
+    "studio-desktop": {
+      "content_sha256": "5531541626a9fa47070569c7514c87e0a50f0bf060b73f44e21b78aeea7e0a02",
+      "json_sha256": "9b521d849ba14457e62e29bc44972425192f199b87cebd3cb8021a2fb52f81b8",
+      "png_sha256": "2f402f50589e6130665bc8efcdfad456e613592cd2ccaf42e93099177a233bf7",
+      "source": "pages/70_BioIntel_Studio.py",
+      "viewport": {
+        "height": 1000,
+        "width": 1440
+      }
+    },
+    "validation-cohort-manager-desktop": {
+      "content_sha256": "84542294ade84cf060ec23575dc8af54dfece091b0f6a997f22b9a3b4b35ec7d",
+      "json_sha256": "4e82b00ae365e02b530e2dd3c729db09633d8905916f42eedc2217496a82a9af",
+      "png_sha256": "41356dde28b8757f5854d392f974cdce74e50f9a1409258690b0f41c1c725c8c",
+      "source": "pages/192_Validation_Cohort_Manager.py",
+      "viewport": {
+        "height": 1000,
+        "width": 1440
+      }
+    },
+    "visual-review-center-desktop": {
+      "content_sha256": "c2d9a3a83b2caa3a809ff5839b547b0aea42ad545a729e04a104105ba311c924",
+      "json_sha256": "041ab5624b94d46025430a2431a24f5e813b1f68bc9a99717953ae5a81326a96",
+      "png_sha256": "4e198db5ebe45982063696f69f724640749e509039b1cb6969dbb98754122192",
+      "source": "pages/193_Visual_Review_Approval_Center.py",
+      "viewport": {
+        "height": 1000,
+        "width": 1440
+      }
+    },
+    "visual-workspace-desktop": {
+      "content_sha256": "f548580c9536493c858e954e726ce1636fa69200b8834ccb8ca062b7cce0688f",
+      "json_sha256": "daa613ef94b4c5949dc71eded8a0dffcdeffaa3ec7deb751b10a5e52b7b5085f",
+      "png_sha256": "6ff340c0d8f4510ff3d853d7104614cc88139c311cbe5da8b4014eac2a4d2c5d",
+      "source": "pages/164_Visual_Interaction_Accessibility_Workspace.py",
+      "viewport": {
+        "height": 1000,
+        "width": 1440
+      }
+    }
+  },
+  "schema": "biointel.semantic-visual-manifest.v1"
+}

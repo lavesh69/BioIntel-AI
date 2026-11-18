@@ -1,0 +1,115 @@
+{
+  "component_counts": {
+    "button": 3,
+    "caption": 18,
+    "checkbox": 1,
+    "dataframe": 0,
+    "error": 1,
+    "expander": 6,
+    "info": 1,
+    "markdown": 42,
+    "metric": 1,
+    "multiselect": 0,
+    "radio": 0,
+    "selectbox": 11,
+    "slider": 1,
+    "success": 0,
+    "table": 0,
+    "tabs": 0,
+    "text_area": 0,
+    "text_input": 1,
+    "warning": 1
+  },
+  "content_sha256": "050a40c1ad851b1bb5d8924b122bddcae70877c87329738cad483a6342446ac6",
+  "scenario": "dti-predictor-desktop",
+  "schema": "biointel.semantic-visual.v1",
+  "source": "pages/6_DTI_Predictor.py",
+  "viewport": {
+    "height": 1000,
+    "width": 1440
+  },
+  "visible_sections": {
+    "caption": [
+      "Refine the search to narrow the full catalogue.",
+      "Cached local database and index health snapshot.",
+      "No new notifications.",
+      "Workflow keywords: predict, interaction, probability, pactivity, dti, drug, target, drug target interaction",
+      "No project data was deleted. Review the selected input and parameters, then retry or export the diagnostic report from System Diagnostics.",
+      "STRUCTURE & BIOLOGICS",
+      "COMPOUNDS & DEVELOPABILITY",
+      "TARGETS & EVIDENCE",
+      "Batch drug–target pairs for local model inference.",
+      "Official public/reference files bundled locally with provider, release, licence and SHA-256 provenance.",
+      "Release: live API snapshot 2026-07-05 · Licence: ChEMBL terms"
+    ],
+    "error": [
+      "The workflow stopped safely · ERR-20260711045738-525603"
+    ],
+    "expander": [
+      "Why scientific release is blocked",
+      "Model metadata and held-out metrics",
+      "Recovery details",
+      "▦ Browse a domain",
+      "📦 Local Data Starter Kit",
+      "🧪 Verified Real Public Data"
+    ],
+    "info": [
+      "Starter-kit examples are synthetic and work offline. Keep required headers unchanged, replace demo rows with your data, then upload the completed file in this module."
+    ],
+    "markdown": [
+      "Skip to workspace content",
+      "BioIntel AI Scientific Intelligence for Life Sciences Biology, Engineered into Intelligence. Evidence-aware research software Professional Research Edition · v11.9.0 Created and developed by Lavesh Dobriyal",
+      "◈ Discovery DTI Predictor",
+      "Search by task, scientific domain, file type or workflow. Typo-tolerant matching is enabled.",
+      "171 matching modules · showing 10",
+      "#### System status",
+      "#### Notifications",
+      "#### Interface",
+      "Use a restrained theme for daily work or open Appearance Studio for advanced accessibility controls.",
+      "BioIntel AI › Discovery › DTI Predictor",
+      "#### Move within Discovery",
+      "#### About this module",
+      "Run schema-checked prediction with uncertainty and applicability.",
+      "✦ BioIntel AI · DTI Prediction Studio From molecule and protein to an interpretable prediction. Use a registered local model with exact feature-schema checks, conformal uncertainty and applicability warnings. Registered models Quality gates Uncertainty Applicability",
+      "● Tier D · Demonstration",
+      "◈ Selected model",
+      "BioIntel model BioIntel DTI ExtraTrees · v5.0.0-full-data · Tier D Artifact: packv5_5x_classification_extra_trees.joblib Task Classification Registered feature schema Validation split Drug Group Leakage gate: Not passed Evidence tier Tier D Demonstration Quality gate 50/100 Exploratory only D Synthetic benchmark only Permitted use: software demonstration and exploratory research only. Clinical, safety or therapeutic decisions are not authorized.",
+      "- Training data is marked synthetic/demo.",
+      "- A leakage-resistant cold, scaffold, sequence-cluster or temporal split is required.",
+      "- Independent external validation is missing.",
+      "**Structured result**",
+      "- Retry with the bundled example to separate an input issue from an environment issue. - Reset transient analysis results in **System Diagnostics** if the page retained an old upload or widget value. - Run `REPAIR_BIOINTEL_WINDOWS.bat` when dependencies or the local runtime are damaged.",
+      "BioIntel AI Scientific Intelligence for Life Sciences Biology, Engineered into Intelligence. Professional Research Edition · v11.9.0 Created and developed by Lavesh Dobriyal",
+      "Workspace",
+      "Task lanes",
+      "Target-to-hit workflows, chemistry, DTI, structures, pathways and ADMET",
+      "**Accepted:** CSV",
+      "- **Blank template:** `blank_dti_dataset.csv` · 0.1 KB",
+      "- **Filled example:** `filled_dti_example.csv` · 0.4 KB",
+      "- **Expected output:** `expected_dti_output.csv` · 0.1 KB",
+      "- **Format guide:** `FORMAT_GUIDE.md` · 0.8 KB",
+      "- **Kit manifest:** `manifest.json` · 0.6 KB",
+      "**Scope:** `real_public_reference_requires_curation`",
+      "Workspace healthy 26/26 databases online"
+    ],
+    "metric": [
+      "Databases online: 26/26"
+    ],
+    "selectbox": [
+      "All",
+      "Dark",
+      "Executive",
+      "Inter",
+      "Balanced",
+      "/mnt/data/step115_work/BioIntel-AI/models/packv5_5x_classification_extra_trees.joblib",
+      "Discovery",
+      "All focus areas"
+    ],
+    "slider": [
+      "1.0"
+    ],
+    "warning": [
+      "Real public/reference data improve authenticity and reproducibility, but do not by themselves constitute clinical validation, regulatory approval or independent wet-lab confirmation."
+    ]
+  }
+}

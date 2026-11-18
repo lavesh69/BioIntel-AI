@@ -1,0 +1,97 @@
+{
+  "component_counts": {
+    "button": 3,
+    "caption": 5,
+    "checkbox": 0,
+    "dataframe": 0,
+    "error": 1,
+    "expander": 2,
+    "info": 0,
+    "markdown": 31,
+    "metric": 5,
+    "multiselect": 0,
+    "radio": 0,
+    "selectbox": 6,
+    "slider": 1,
+    "success": 0,
+    "table": 0,
+    "tabs": 5,
+    "text_area": 0,
+    "text_input": 1,
+    "warning": 0
+  },
+  "content_sha256": "d90a5141f86c3a0065b6f8ec0bbdc797b92be7c90a7d4c002fe22ef81344b264",
+  "scenario": "compliance-desktop",
+  "schema": "biointel.semantic-visual.v1",
+  "source": "pages/72_Compliance_Research_Readiness.py",
+  "viewport": {
+    "height": 1000,
+    "width": 1440
+  },
+  "visible_sections": {
+    "caption": [
+      "Refine the search to narrow the full catalogue.",
+      "Cached local database and index health snapshot.",
+      "No new notifications.",
+      "Workflow keywords: regulatory, gxp, fair, reproducibility, academic, pharma, saas, enterprise",
+      "No project data was deleted. Review the selected input and parameters, then retry or export the diagnostic report from System Diagnostics."
+    ],
+    "error": [
+      "The workflow stopped safely · ERR-20260711045636-418481"
+    ],
+    "expander": [
+      "Recovery details",
+      "▦ Browse a domain"
+    ],
+    "markdown": [
+      "Skip to workspace content",
+      "BioIntel AI Scientific Intelligence for Life Sciences Biology, Engineered into Intelligence. Evidence-aware research software Professional Research Edition · v11.9.0 Created and developed by Lavesh Dobriyal",
+      "◇ Governance Compliance & Research Readiness",
+      "Search by task, scientific domain, file type or workflow. Typo-tolerant matching is enabled.",
+      "171 matching modules · showing 10",
+      "#### System status",
+      "#### Notifications",
+      "#### Interface",
+      "Use a restrained theme for daily work or open Appearance Studio for advanced accessibility controls.",
+      "BioIntel AI › Governance › Compliance & Research Readiness",
+      "#### Move within Governance",
+      "#### About this module",
+      "Evaluate regulatory/GxP controls, FAIR metadata, reproducibility, academic packages and pharmaceutical R&D evidence.",
+      "✦ 10/10 implementation frameworks · evidence and certification remain independent Compliance & Research Readiness Operational controls for regulatory/GxP readiness, FAIR data, reproducibility, enterprise SaaS, academic publication and pharmaceutical R&D. Implementation 10.0/10 Evidence diagnostic 4.4/10 17 maturity areas Dual-score protection",
+      "● All requested implementation frameworks complete",
+      "Demonstration / reference data A 10/10 implementation score means tested software controls, policies, CI and documentation exist. It is not FDA approval, GxP certification, clinical validity, peer-review acceptance or proof that bundled synthetic models are scientifically valid.",
+      "🏁 Requested 10/10 implementation areas",
+      "- Retry with the bundled example to separate an input issue from an environment issue. - Reset transient analysis results in **System Diagnostics** if the page retained an old upload or widget value. - Run `REPAIR_BIOINTEL_WINDOWS.bat` when dependencies or the local runtime are damaged.",
+      "BioIntel AI Scientific Intelligence for Life Sciences Biology, Engineered into Intelligence. Professional Research Edition · v11.9.0 Created and developed by Lavesh Dobriyal",
+      "Workspace",
+      "Task lanes",
+      "Validation, release, audit and scientific controls",
+      "Workspace healthy 26/26 databases online"
+    ],
+    "metric": [
+      "Databases online: 26/26",
+      "Implementation: 10.0/10",
+      "Evidence diagnostic: 4.4/10",
+      "Complete frameworks: 17",
+      "Evidence-blocked: 9"
+    ],
+    "selectbox": [
+      "All",
+      "Dark",
+      "Executive",
+      "Inter",
+      "Balanced",
+      "Governance"
+    ],
+    "slider": [
+      "1.0"
+    ],
+    "tabs": [
+      "Maturity matrix",
+      "FAIR evaluator",
+      "Academic package",
+      "Pharma R&D package",
+      "Control catalog"
+    ]
+  }
+}

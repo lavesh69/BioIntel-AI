@@ -1,0 +1,108 @@
+{
+  "component_counts": {
+    "button": 3,
+    "caption": 19,
+    "checkbox": 0,
+    "dataframe": 0,
+    "error": 1,
+    "expander": 4,
+    "info": 1,
+    "markdown": 36,
+    "metric": 1,
+    "multiselect": 0,
+    "radio": 0,
+    "selectbox": 11,
+    "slider": 1,
+    "success": 0,
+    "table": 0,
+    "tabs": 0,
+    "text_area": 0,
+    "text_input": 1,
+    "warning": 1
+  },
+  "content_sha256": "c7cd9a7c52e7639d2e01ebcaaa8041a30e795092552f7471c4ba29ac603bbda7",
+  "scenario": "model-training-desktop",
+  "schema": "biointel.semantic-visual.v1",
+  "source": "pages/5_Model_Training.py",
+  "viewport": {
+    "height": 1000,
+    "width": 1440
+  },
+  "visible_sections": {
+    "caption": [
+      "Refine the search to narrow the full catalogue.",
+      "Cached local database and index health snapshot.",
+      "No new notifications.",
+      "This is the first module in this domain.",
+      "Workflow keywords: train, classification, regression, model",
+      "No project data was deleted. Review the selected input and parameters, then retry or export the diagnostic report from System Diagnostics.",
+      "TRAINING & PREDICTION",
+      "EVALUATION & VALIDATION",
+      "MODEL GOVERNANCE",
+      "Labelled DTI data for classification or regression training.",
+      "Official public/reference files bundled locally with provider, release, licence and SHA-256 provenance.",
+      "Release: dataset 17 · Licence: CC BY 4.0"
+    ],
+    "error": [
+      "The workflow stopped safely · ERR-20260711045733-138992"
+    ],
+    "expander": [
+      "Recovery details",
+      "▦ Browse a domain",
+      "📦 Local Data Starter Kit",
+      "🧪 Verified Real Public Data"
+    ],
+    "info": [
+      "Starter-kit examples are synthetic and work offline. Keep required headers unchanged, replace demo rows with your data, then upload the completed file in this module."
+    ],
+    "markdown": [
+      "Skip to workspace content",
+      "BioIntel AI Scientific Intelligence for Life Sciences Biology, Engineered into Intelligence. Evidence-aware research software Professional Research Edition · v11.9.0 Created and developed by Lavesh Dobriyal",
+      "◆ AI Lab Model Training",
+      "Search by task, scientific domain, file type or workflow. Typo-tolerant matching is enabled.",
+      "171 matching modules · showing 10",
+      "#### System status",
+      "#### Notifications",
+      "#### Interface",
+      "Use a restrained theme for daily work or open Appearance Studio for advanced accessibility controls.",
+      "BioIntel AI › AI Lab › Model Training",
+      "#### Move within AI Lab",
+      "#### About this module",
+      "Train classification or regression models with clean evaluation.",
+      "✦ DTI model studio Train models with clean splits and visible evidence. Audit the dataset, isolate train/validation/test partitions, calibrate uncertainty and save a reproducible model artifact. Leakage-aware Conformal uncertainty Model cards",
+      "⚙️ Training configuration",
+      "- Retry with the bundled example to separate an input issue from an environment issue. - Reset transient analysis results in **System Diagnostics** if the page retained an old upload or widget value. - Run `REPAIR_BIOINTEL_WINDOWS.bat` when dependencies or the local runtime are damaged.",
+      "BioIntel AI Scientific Intelligence for Life Sciences Biology, Engineered into Intelligence. Professional Research Edition · v11.9.0 Created and developed by Lavesh Dobriyal",
+      "Workspace",
+      "Task lanes",
+      "Training, prediction, evaluation and model lifecycle",
+      "**Accepted:** CSV",
+      "- **Blank template:** `blank_dti_dataset.csv` · 0.1 KB",
+      "- **Filled example:** `filled_dti_example.csv` · 0.4 KB",
+      "- **Expected output:** `expected_dti_output.csv` · 0.1 KB",
+      "- **Format guide:** `FORMAT_GUIDE.md` · 0.8 KB",
+      "- **Kit manifest:** `manifest.json` · 0.6 KB",
+      "**Scope:** `real_public_benchmark`",
+      "Workspace healthy 26/26 databases online"
+    ],
+    "metric": [
+      "Databases online: 26/26"
+    ],
+    "selectbox": [
+      "All",
+      "Dark",
+      "Executive",
+      "Inter",
+      "Balanced",
+      "Extended pack — 5,760 rows",
+      "AI Lab",
+      "All focus areas"
+    ],
+    "slider": [
+      "1.0"
+    ],
+    "warning": [
+      "Real public/reference data improve authenticity and reproducibility, but do not by themselves constitute clinical validation, regulatory approval or independent wet-lab confirmation."
+    ]
+  }
+}

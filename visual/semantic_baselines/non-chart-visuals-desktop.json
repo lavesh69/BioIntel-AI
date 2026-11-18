@@ -1,0 +1,101 @@
+{
+  "component_counts": {
+    "button": 3,
+    "caption": 7,
+    "checkbox": 0,
+    "dataframe": 0,
+    "error": 0,
+    "expander": 3,
+    "info": 0,
+    "markdown": 32,
+    "metric": 5,
+    "multiselect": 1,
+    "radio": 0,
+    "selectbox": 8,
+    "slider": 1,
+    "success": 0,
+    "table": 0,
+    "tabs": 0,
+    "text_area": 1,
+    "text_input": 3,
+    "warning": 1
+  },
+  "content_sha256": "8fc412633de8732167856ca813633378a504f266c7795486e61e7f26ed2ba10e",
+  "scenario": "non-chart-visuals-desktop",
+  "schema": "biointel.semantic-visual.v1",
+  "source": "pages/169_Non_Chart_Scientific_Visuals.py",
+  "viewport": {
+    "height": 1000,
+    "width": 1440
+  },
+  "visible_sections": {
+    "caption": [
+      "Refine the search to narrow the full catalogue.",
+      "Cached local database and index health snapshot.",
+      "No new notifications.",
+      "This is the last module in this domain.",
+      "Workflow keywords: non-chart visuals, genome track, plate map, pedigree, microscopy overlay, gating canvas, workflow board",
+      "Fifteen optimized canvases, editors, tracks, maps, boards and relationship workspaces. Heavy views render only after selection.",
+      "Inspect gene models, variants, peaks, coverage, splice junctions and selected intervals without reducing them to summary charts."
+    ],
+    "expander": [
+      "Evidence boundary and responsible-use note",
+      "Review note and export visual state",
+      "▦ Browse a domain"
+    ],
+    "markdown": [
+      "Skip to workspace content",
+      "BioIntel AI Scientific Intelligence for Life Sciences Biology, Engineered into Intelligence. Evidence-aware research software Professional Research Edition · v11.9.0 Created and developed by Lavesh Dobriyal",
+      "◎ Intelligence Non-Chart Scientific Visuals",
+      "Search by task, scientific domain, file type or workflow. Typo-tolerant matching is enabled.",
+      "171 matching modules · showing 10",
+      "#### System status",
+      "#### Notifications",
+      "#### Interface",
+      "Use a restrained theme for daily work or open Appearance Studio for advanced accessibility controls.",
+      "BioIntel AI › Intelligence › Non-Chart Scientific Visuals",
+      "#### Move within Intelligence",
+      "#### About this module",
+      "Inspect scientific evidence using tracks, maps, editors, plate layouts, pedigrees, process boards and readiness matrices.",
+      "🧭 Scientific Intelligence Non-Chart Scientific Visuals Inspect, select, annotate and review scientific evidence using canvases, tracks, maps, editors, plate layouts, pedigrees, process boards and readiness matrices rather than conventional charts alone. Genome tracks Image overlays Plate maps",
+      "### Advanced non-chart scientific visual catalogue",
+      "Interactive Genome Track Canvas Variant Workbench, GWAS, Epigenomics Molecular Structure Scene Structural Bioinformatics, Docking, Antibody Engineering Microscopy Mask Overlay Editor Bioimage & Microscopy, Organoid Analytics, High-Content Screening Whole-Slide Pathology Canvas Spatial Omics, Digital Pathology, Cancer Genomics Flow-Cytometry Gating Canvas Flow Cytometry, Immunology, Cell Phenotyping Interactive Plate Map Editor qPCR, ELISA, Wet-Lab Biotechnology Spectrum & Chromatogram Evidence I",
+      "#### 🧬 Interactive Genome Track Canvas",
+      "chr7:55,086,000-55,116,000 Coordinate-aware local track canvas · selected: EGFR exon 18 Gene model EGFR exon 18 exon 19 exon 20 exon 21 Variants V1 V2 V3 V4 Coverage 42× 71× 55× 63× Selected evidence EGFR exon 18 Reference build GRCh38 Tracks visible 3 Export BED/VCF interval bundle",
+      "BioIntel AI Scientific Intelligence for Life Sciences Biology, Engineered into Intelligence. Professional Research Edition · v11.9.0 Created and developed by Lavesh Dobriyal",
+      "Workspace",
+      "Task lanes",
+      "Knowledge, analytics and research assets",
+      "Workspace healthy 26/26 databases online"
+    ],
+    "metric": [
+      "Databases online: 26/26",
+      "Scientific canvases: 15",
+      "Module-specific boards: 13",
+      "Conventional charts: Not required",
+      "Offline-safe: Yes"
+    ],
+    "multiselect": [
+      "['Gene model', 'Variants', 'Coverage']"
+    ],
+    "selectbox": [
+      "All",
+      "Dark",
+      "Executive",
+      "Inter",
+      "Balanced",
+      "genome_track",
+      "EGFR exon 18",
+      "Intelligence"
+    ],
+    "slider": [
+      "1.0"
+    ],
+    "text_input": [
+      "chr7:55,086,000-55,116,000"
+    ],
+    "warning": [
+      "These workspaces improve inspection and decision support. They do not replace validated specialist software, current reference data, independent scientific review or regulated operating procedures."
+    ]
+  }
+}

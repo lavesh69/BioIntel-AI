@@ -1,0 +1,118 @@
+{
+  "component_counts": {
+    "button": 4,
+    "caption": 21,
+    "checkbox": 0,
+    "dataframe": 0,
+    "error": 1,
+    "expander": 5,
+    "info": 1,
+    "markdown": 32,
+    "metric": 1,
+    "multiselect": 0,
+    "radio": 1,
+    "selectbox": 10,
+    "slider": 1,
+    "success": 0,
+    "table": 0,
+    "tabs": 0,
+    "text_area": 2,
+    "text_input": 8,
+    "warning": 0
+  },
+  "content_sha256": "c72b850c57f5f20ea7f1ee8ea2335709efce2108ee9fc9fa49b2a306c9613fd2",
+  "scenario": "clinical-visual-desktop",
+  "schema": "biointel.semantic-visual.v1",
+  "source": "pages/90_Clinical_Pharma_Validation_Center.py",
+  "viewport": {
+    "height": 1000,
+    "width": 1440
+  },
+  "visible_sections": {
+    "caption": [
+      "Refine the search to narrow the full catalogue.",
+      "Cached local database and index health snapshot.",
+      "No new notifications.",
+      "Workflow keywords: clinical validation, pharma validation, gxp, prospective study, protocol, capa, validation dossier, part 11",
+      "Five module-specific decision views are available. Single mode renders one chart; comparison mode is capped at two charts to keep database-backed pages responsive.",
+      "No clinical evidence records have been registered yet.",
+      "No project data was deleted. Review the selected input and parameters, then retry or export the diagnostic report from System Diagnostics.",
+      "PROJECTS & DEPLOYMENT",
+      "RELIABILITY & RECOVERY",
+      "EXECUTION & AUTOMATION"
+    ],
+    "error": [
+      "The workflow stopped safely · ERR-20260711045818-382436"
+    ],
+    "expander": [
+      "Create a controlled validation program",
+      "Decision visual workspace",
+      "Statistical context and provenance",
+      "Recovery details",
+      "▦ Browse a domain"
+    ],
+    "info": [
+      "Clinical evidence pyramid contains 1 displayed record(s) across 2 field(s). The most frequent status is No data (1 record(s))."
+    ],
+    "markdown": [
+      "Skip to workspace content",
+      "BioIntel AI Scientific Intelligence for Life Sciences Biology, Engineered into Intelligence. Evidence-aware research software Professional Research Edition · v11.9.0 Created and developed by Lavesh Dobriyal",
+      "⚡ Operations Clinical & Pharma Validation",
+      "Search by task, scientific domain, file type or workflow. Typo-tolerant matching is enabled.",
+      "171 matching modules · showing 10",
+      "#### System status",
+      "#### Notifications",
+      "#### Interface",
+      "Use a restrained theme for daily work or open Appearance Studio for advanced accessibility controls.",
+      "BioIntel AI › Operations › Clinical & Pharma Validation",
+      "#### Move within Operations",
+      "#### About this module",
+      "Run intended-use, site, protocol, immutable model-freeze, prospective validation, evidence-review, CAPA and dossier release workflows.",
+      "✦ Validation execution system · strict claim blocking · authentic evidence required Clinical & Pharmaceutical Validation Center Execute a controlled validation program from intended-use definition through independent sites, immutable model freeze, prospective prediction locking, evidence review, CAPA and checksum-bound dossier release. 0 validation program(s) Tamper-evident audit chain Prospective prediction lock Signed evidence dossier",
+      "Demonstration / reference data The software framework is validation-ready, but BioIntel AI is not automatically clinically or pharmaceutically validated. Validated-use claims remain blocked until authentic independent, prospective, quality-reviewed evidence satisfies every gate.",
+      "### Clinical evidence pyramid",
+      "Source status not declared",
+      "`No-data safe state`",
+      "- Retry with the bundled example to separate an input issue from an environment issue. - Reset transient analysis results in **System Diagnostics** if the page retained an old upload or widget value. - Run `REPAIR_BIOINTEL_WINDOWS.bat` when dependencies or the local runtime are damaged.",
+      "BioIntel AI Scientific Intelligence for Life Sciences Biology, Engineered into Intelligence. Professional Research Edition · v11.9.0 Created and developed by Lavesh Dobriyal",
+      "Workspace",
+      "Task lanes",
+      "Jobs, APIs, diagnostics and platform operation",
+      "Workspace healthy 26/26 databases online"
+    ],
+    "metric": [
+      "Databases online: 26/26"
+    ],
+    "radio": [
+      "Single visual"
+    ],
+    "selectbox": [
+      "All",
+      "Dark",
+      "Executive",
+      "Inter",
+      "Balanced",
+      "research_demo",
+      "Clinical evidence pyramid",
+      "Standard",
+      "Operations",
+      "All focus areas"
+    ],
+    "slider": [
+      "1.0"
+    ],
+    "text_area": [
+      "Research prioritization and pharmaceutical R&D decision support under qualified human review.",
+      "Autonomous diagnosis Autonomous treatment selection Unsupported clinical release"
+    ],
+    "text_input": [
+      "BioIntel prospective validation program",
+      "Preclinical evidence prioritization",
+      "Define assay/sample population",
+      "India, United States, European Union",
+      "gxp_relevant_r_and_d",
+      "program-owner",
+      "quality-owner"
+    ]
+  }
+}

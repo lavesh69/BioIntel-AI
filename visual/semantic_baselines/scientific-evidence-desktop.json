@@ -1,0 +1,98 @@
+{
+  "component_counts": {
+    "button": 3,
+    "caption": 5,
+    "checkbox": 0,
+    "dataframe": 0,
+    "error": 1,
+    "expander": 2,
+    "info": 0,
+    "markdown": 30,
+    "metric": 7,
+    "multiselect": 0,
+    "radio": 0,
+    "selectbox": 6,
+    "slider": 1,
+    "success": 0,
+    "table": 0,
+    "tabs": 5,
+    "text_area": 0,
+    "text_input": 1,
+    "warning": 0
+  },
+  "content_sha256": "31c391c6f387539bddbdc48cc31d012399b2cbff1e89ef46bcef47c6d2985698",
+  "scenario": "scientific-evidence-desktop",
+  "schema": "biointel.semantic-visual.v1",
+  "source": "pages/73_Scientific_Evidence_Excellence.py",
+  "viewport": {
+    "height": 1000,
+    "width": 1440
+  },
+  "visible_sections": {
+    "caption": [
+      "Refine the search to narrow the full catalogue.",
+      "Cached local database and index health snapshot.",
+      "No new notifications.",
+      "Workflow keywords: scientific evidence, chembl, uniprot, clinical trials, assay, dti, prospective, external validation",
+      "No project data was deleted. Review the selected input and parameters, then retry or export the diagnostic report from System Diagnostics."
+    ],
+    "error": [
+      "The workflow stopped safely · ERR-20260711045639-946448"
+    ],
+    "expander": [
+      "Recovery details",
+      "▦ Browse a domain"
+    ],
+    "markdown": [
+      "Skip to workspace content",
+      "BioIntel AI Scientific Intelligence for Life Sciences Biology, Engineered into Intelligence. Evidence-aware research software Professional Research Edition · v11.9.0 Created and developed by Lavesh Dobriyal",
+      "◇ Governance Scientific Evidence Excellence",
+      "Search by task, scientific domain, file type or workflow. Typo-tolerant matching is enabled.",
+      "171 matching modules · showing 10",
+      "#### System status",
+      "#### Notifications",
+      "#### Interface",
+      "Use a restrained theme for daily work or open Appearance Studio for advanced accessibility controls.",
+      "BioIntel AI › Governance › Scientific Evidence Excellence",
+      "#### Move within Governance",
+      "#### About this module",
+      "Manage official provider evidence, assay quality, biological and clinical coverage, external validation and prospective studies.",
+      "✦ Scientific evidence, independent validation and wet-lab readiness Scientific Evidence Excellence Provider-authenticated evidence, assay quality, biological and clinical coverage, DTI benchmarking, external validation and blinded prospective studies. Implementation 10.0/10 Current evidence 10.0/10 13 official providers 12814 immutable seed records",
+      "● Scientific implementation framework complete",
+      "Demonstration / reference data 10/10 implementation readiness means the system can acquire, hash, normalize, review and validate real evidence. It does not mean the bundled seed catalog is a complete clinical or wet-lab validation corpus.",
+      "- Retry with the bundled example to separate an input issue from an environment issue. - Reset transient analysis results in **System Diagnostics** if the page retained an old upload or widget value. - Run `REPAIR_BIOINTEL_WINDOWS.bat` when dependencies or the local runtime are damaged.",
+      "BioIntel AI Scientific Intelligence for Life Sciences Biology, Engineered into Intelligence. Professional Research Edition · v11.9.0 Created and developed by Lavesh Dobriyal",
+      "Workspace",
+      "Task lanes",
+      "Validation, release, audit and scientific controls",
+      "Workspace healthy 26/26 databases online"
+    ],
+    "metric": [
+      "Databases online: 26/26",
+      "Official providers: 13",
+      "Snapshots: 25",
+      "Evidence records: 12814",
+      "Organisms: 15",
+      "Assay types: 14",
+      "Independent studies: 10"
+    ],
+    "selectbox": [
+      "All",
+      "Dark",
+      "Executive",
+      "Inter",
+      "Balanced",
+      "Governance"
+    ],
+    "slider": [
+      "1.0"
+    ],
+    "tabs": [
+      "Scientific matrix",
+      "Evidence lake",
+      "Validation protocols",
+      "Credibility audit",
+      "Qualification boundary"
+    ]
+  }
+}

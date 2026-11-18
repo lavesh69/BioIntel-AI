@@ -1,0 +1,97 @@
+{
+  "component_counts": {
+    "button": 3,
+    "caption": 5,
+    "checkbox": 0,
+    "dataframe": 0,
+    "error": 1,
+    "expander": 2,
+    "info": 0,
+    "markdown": 30,
+    "metric": 7,
+    "multiselect": 0,
+    "radio": 0,
+    "selectbox": 6,
+    "slider": 1,
+    "success": 0,
+    "table": 0,
+    "tabs": 4,
+    "text_area": 0,
+    "text_input": 1,
+    "warning": 0
+  },
+  "content_sha256": "9c6613649a7577ad56fa7ea09fc63a7a662dd0df920ec37905e4ba535233fcb5",
+  "scenario": "realworld-operations-desktop",
+  "schema": "biointel.semantic-visual.v1",
+  "source": "pages/75_Real_World_Operations_Evidence.py",
+  "viewport": {
+    "height": 1000,
+    "width": 1440
+  },
+  "visible_sections": {
+    "caption": [
+      "Refine the search to narrow the full catalogue.",
+      "Cached local database and index health snapshot.",
+      "No new notifications.",
+      "Workflow keywords: production, sla, customer, pharma, clinical, regulatory, gxp, kubernetes",
+      "No project data was deleted. Review the selected input and parameters, then retry or export the diagnostic report from System Diagnostics."
+    ],
+    "error": [
+      "The workflow stopped safely · ERR-20260711045643-242140"
+    ],
+    "expander": [
+      "Recovery details",
+      "▦ Browse a domain"
+    ],
+    "markdown": [
+      "Skip to workspace content",
+      "BioIntel AI Scientific Intelligence for Life Sciences Biology, Engineered into Intelligence. Evidence-aware research software Professional Research Edition · v11.9.0 Created and developed by Lavesh Dobriyal",
+      "◇ Governance Maximum Verifiable Evidence",
+      "Search by task, scientific domain, file type or workflow. Typo-tolerant matching is enabled.",
+      "171 matching modules · showing 10",
+      "#### System status",
+      "#### Notifications",
+      "#### Interface",
+      "Use a restrained theme for daily work or open Appearance Studio for advanced accessibility controls.",
+      "BioIntel AI › Governance › Maximum Verifiable Evidence",
+      "#### Move within Governance",
+      "#### About this module",
+      "Compare implementation, measured qualification and authentic external evidence for operations, customers, publication, regulatory, cloud, HA and DR.",
+      "✦ Maximum non-fabricated operational evidence Maximum Verifiable Operations Evidence Separate what the repository implements, what has been measured and checksum-verified, and what still requires genuine customers, regulators, journals or production operating history. Implementation 10.0/10 Verifiable 6.2/10 Authentic external 0.0/10 16/16 artifacts verified",
+      "● Checksum-bound measured evidence verified",
+      "info Three evidence levels Implementation readiness can reach 10/10 through code and controls. Verifiable evidence comes from measured load, restore, isolation, failover, deployment and reproducibility qualification. Authentic external evidence requires independent customers, regulators, journals, laboratories or real production history.",
+      "- Retry with the bundled example to separate an input issue from an environment issue. - Reset transient analysis results in **System Diagnostics** if the page retained an old upload or widget value. - Run `REPAIR_BIOINTEL_WINDOWS.bat` when dependencies or the local runtime are damaged.",
+      "BioIntel AI Scientific Intelligence for Life Sciences Biology, Engineered into Intelligence. Professional Research Edition · v11.9.0 Created and developed by Lavesh Dobriyal",
+      "Workspace",
+      "Task lanes",
+      "Validation, release, audit and scientific controls",
+      "Workspace healthy 26/26 databases online"
+    ],
+    "metric": [
+      "Databases online: 26/26",
+      "Implementation: 10.0/10",
+      "Verifiable evidence: 6.2/10",
+      "External evidence: 0.0/10",
+      "Strong areas: 8",
+      "Evidence artifacts: 16",
+      "Integrity failures: 0"
+    ],
+    "selectbox": [
+      "All",
+      "Dark",
+      "Executive",
+      "Inter",
+      "Balanced",
+      "Governance"
+    ],
+    "slider": [
+      "1.0"
+    ],
+    "tabs": [
+      "Three-score matrix",
+      "Measured qualification",
+      "Artifact integrity",
+      "External proof still required"
+    ]
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "component_counts": {
+    "button": 3,
+    "caption": 20,
+    "checkbox": 0,
+    "dataframe": 0,
+    "error": 1,
+    "expander": 2,
+    "info": 0,
+    "markdown": 28,
+    "metric": 6,
+    "multiselect": 0,
+    "radio": 0,
+    "selectbox": 7,
+    "slider": 1,
+    "success": 0,
+    "table": 0,
+    "tabs": 0,
+    "text_area": 0,
+    "text_input": 1,
+    "warning": 0
+  },
+  "content_sha256": "c38ae431de026345ce560a9746748565b8daf3c8d65a30e2a470fc16a9e6394f",
+  "scenario": "experiment-registry-desktop",
+  "schema": "biointel.semantic-visual.v1",
+  "source": "pages/11_Experiment_Registry.py",
+  "viewport": {
+    "height": 1000,
+    "width": 1440
+  },
+  "visible_sections": {
+    "caption": [
+      "Refine the search to narrow the full catalogue.",
+      "Cached local database and index health snapshot.",
+      "No new notifications.",
+      "Workflow keywords: experiment, registry, history",
+      "Local reproducibility history. Raw sequences and complete datasets are not stored in the registry.",
+      "No project data was deleted. Review the selected input and parameters, then retry or export the diagnostic report from System Diagnostics.",
+      "PROJECTS & DEPLOYMENT",
+      "RELIABILITY & RECOVERY",
+      "EXECUTION & AUTOMATION"
+    ],
+    "error": [
+      "The workflow stopped safely · ERR-20260711045744-765963"
+    ],
+    "expander": [
+      "Recovery details",
+      "▦ Browse a domain"
+    ],
+    "markdown": [
+      "Skip to workspace content",
+      "BioIntel AI Scientific Intelligence for Life Sciences Biology, Engineered into Intelligence. Evidence-aware research software Professional Research Edition · v11.9.0 Created and developed by Lavesh Dobriyal",
+      "⚡ Operations Experiment Registry",
+      "Search by task, scientific domain, file type or workflow. Typo-tolerant matching is enabled.",
+      "171 matching modules · showing 10",
+      "#### System status",
+      "#### Notifications",
+      "#### Interface",
+      "Use a restrained theme for daily work or open Appearance Studio for advanced accessibility controls.",
+      "BioIntel AI › Operations › Experiment Registry",
+      "#### Move within Operations",
+      "#### About this module",
+      "Inspect locally registered training experiments.",
+      "✦ BioIntel AI · Scientific Intelligence for Life Sciences 🗂️ Experiment Registry Guided scientific analysis with validated inputs, clear status, professional results and export-ready outputs.",
+      "- Retry with the bundled example to separate an input issue from an environment issue. - Reset transient analysis results in **System Diagnostics** if the page retained an old upload or widget value. - Run `REPAIR_BIOINTEL_WINDOWS.bat` when dependencies or the local runtime are damaged.",
+      "BioIntel AI Scientific Intelligence for Life Sciences Biology, Engineered into Intelligence. Professional Research Edition · v11.9.0 Created and developed by Lavesh Dobriyal",
+      "Workspace",
+      "Task lanes",
+      "Jobs, APIs, diagnostics and platform operation",
+      "Workspace healthy 26/26 databases online"
+    ],
+    "metric": [
+      "Databases online: 26/26",
+      "Experiments: 23",
+      "Synthetic/demo: 23",
+      "Verified bindings: 46",
+      "Available artifacts: 69",
+      "Blocked requirements: 69"
+    ],
+    "selectbox": [
+      "All",
+      "Dark",
+      "Executive",
+      "Inter",
+      "Balanced",
+      "Operations",
+      "All focus areas"
+    ],
+    "slider": [
+      "1.0"
+    ]
+  }
+}

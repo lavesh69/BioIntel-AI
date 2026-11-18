@@ -1,0 +1,104 @@
+{
+  "component_counts": {
+    "button": 3,
+    "caption": 12,
+    "checkbox": 0,
+    "dataframe": 0,
+    "error": 1,
+    "expander": 3,
+    "info": 0,
+    "markdown": 34,
+    "metric": 12,
+    "multiselect": 0,
+    "radio": 0,
+    "selectbox": 6,
+    "slider": 1,
+    "success": 0,
+    "table": 0,
+    "tabs": 0,
+    "text_area": 0,
+    "text_input": 1,
+    "warning": 0
+  },
+  "content_sha256": "8117b5390e467653a2a02d3de00d419b4410d884e8063a48e4dae80b5b67a8fc",
+  "scenario": "quality-desktop",
+  "schema": "biointel.semantic-visual.v1",
+  "source": "pages/71_Platform_Quality_Center.py",
+  "viewport": {
+    "height": 1000,
+    "width": 1440
+  },
+  "visible_sections": {
+    "caption": [
+      "Refine the search to narrow the full catalogue.",
+      "Cached local database and index health snapshot.",
+      "No new notifications.",
+      "Workflow keywords: quality, scorecard, audit, security, production, validation, roadmap",
+      "9 verified controls",
+      "10 verified controls",
+      "8 verified controls",
+      "No project data was deleted. Review the selected input and parameters, then retry or export the diagnostic report from System Diagnostics."
+    ],
+    "error": [
+      "The workflow stopped safely · ERR-20260711045627-596000"
+    ],
+    "expander": [
+      "Review user-experience controls",
+      "Recovery details",
+      "▦ Browse a domain"
+    ],
+    "markdown": [
+      "Skip to workspace content",
+      "BioIntel AI Scientific Intelligence for Life Sciences Biology, Engineered into Intelligence. Evidence-aware research software Professional Research Edition · v11.9.0 Created and developed by Lavesh Dobriyal",
+      "⌂ Start Platform Quality Center",
+      "Search by task, scientific domain, file type or workflow. Typo-tolerant matching is enabled.",
+      "171 matching modules · showing 10",
+      "#### System status",
+      "#### Notifications",
+      "#### Interface",
+      "Use a restrained theme for daily work or open Appearance Studio for advanced accessibility controls.",
+      "BioIntel AI › Start › Platform Quality Center",
+      "#### Move within Start",
+      "#### About this module",
+      "Measure scientific, model, engineering, security, deployment and UX quality with evidence-based blockers.",
+      "✦ Engineering excellence, compliance, FAIR, reproducibility, ML and deployment maturity · measurable, not cosmetic Platform Quality Center Evidence-based diagnostics for scientific data, model validation, engineering, user experience, security and production deployment. Overall diagnostic 9.4/10 Target 8.5/10 79 measured dimensions External-data blockers identified",
+      "● Platform quality target reached",
+      "Demonstration / reference data This scorecard measures observable implementation and registry evidence. It does not turn synthetic data into real science, and it is not a regulatory or publication certification.",
+      "📊 Quality overview",
+      "✅ Requested 10/10 upgrades",
+      "info Scientific truth remains protected Repository implementation readiness and authentic external scientific evidence are scored separately. A 10/10 control score never converts synthetic benchmarks into independent scientific validation.",
+      "🧭 User experience 10/10 upgrade",
+      "- Retry with the bundled example to separate an input issue from an environment issue. - Reset transient analysis results in **System Diagnostics** if the page retained an old upload or widget value. - Run `REPAIR_BIOINTEL_WINDOWS.bat` when dependencies or the local runtime are damaged.",
+      "BioIntel AI Scientific Intelligence for Life Sciences Biology, Engineered into Intelligence. Professional Research Edition · v11.9.0 Created and developed by Lavesh Dobriyal",
+      "Workspace",
+      "Task lanes",
+      "Launch, plan and review the workspace",
+      "Workspace healthy 26/26 databases online"
+    ],
+    "metric": [
+      "Databases online: 26/26",
+      "Overall: 9.4/10",
+      "Groups: 14",
+      "Critical blockers: 3",
+      "External-data blockers: 4",
+      "Code Maintainability: 9.0/10",
+      "Accessibility: 10.0/10",
+      "Frontend Performance: 8.0/10",
+      "ML Model Quality: 10.0/10",
+      "Model Validation Evidence: 10.0/10",
+      "UI Consistency and Interaction Quality: 8.0/10",
+      "Navigation and Workflow Discoverability: 10.0/10"
+    ],
+    "selectbox": [
+      "All",
+      "Dark",
+      "Executive",
+      "Inter",
+      "Balanced",
+      "Start"
+    ],
+    "slider": [
+      "1.0"
+    ]
+  }
+}
