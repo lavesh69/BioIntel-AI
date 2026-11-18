@@ -1,0 +1,118 @@
+{
+  "duplicate_of_run_id": null,
+  "engine_version": "2.7.0",
+  "outputs": [
+    {
+      "created_at_utc": "2026-07-04T16:48:32.518526+00:00",
+      "filename": "05_metabolism_protocol_extracted.json",
+      "format": "json",
+      "integrity_status": "unknown",
+      "output_id": "4909ee876c7b4f05b5a78f3f8e595208",
+      "path": "data/document_extractions/24f915a4d4e5464f92281df2a0917090/05_metabolism_protocol_extracted.json",
+      "run_id": "24f915a4d4e5464f92281df2a0917090",
+      "sha256": "a357e0e4453404d368c48674a289e4092d2d6b00276e94d991925473529bd3d5",
+      "size_bytes": 3546,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:48:32.522031+00:00",
+      "filename": "05_metabolism_protocol_extracted.xlsx",
+      "format": "xlsx",
+      "integrity_status": "unknown",
+      "output_id": "a75ca0ffed8f4c5994281e947d3d6cf3",
+      "path": "data/document_extractions/24f915a4d4e5464f92281df2a0917090/05_metabolism_protocol_extracted.xlsx",
+      "run_id": "24f915a4d4e5464f92281df2a0917090",
+      "sha256": "7c6fe8e169bca77895de8ae292a50562e01350aae8a3a02a66340548f39f280e",
+      "size_bytes": 8605,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:48:32.524184+00:00",
+      "filename": "05_metabolism_protocol_extracted.docx",
+      "format": "docx",
+      "integrity_status": "unknown",
+      "output_id": "93939244c00a48d89062cbfdff4143e1",
+      "path": "data/document_extractions/24f915a4d4e5464f92281df2a0917090/05_metabolism_protocol_extracted.docx",
+      "run_id": "24f915a4d4e5464f92281df2a0917090",
+      "sha256": "36abd3547b57f53dc6dd7f54022e0e9f2a00c13038cce9407da4679a1a66f798",
+      "size_bytes": 37714,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:48:32.526447+00:00",
+      "filename": "05_metabolism_protocol_extracted.pdf",
+      "format": "pdf",
+      "integrity_status": "unknown",
+      "output_id": "c1fee89c14104165b7bf6fc9e2d239e6",
+      "path": "data/document_extractions/24f915a4d4e5464f92281df2a0917090/05_metabolism_protocol_extracted.pdf",
+      "run_id": "24f915a4d4e5464f92281df2a0917090",
+      "sha256": "156d9c350cf29516215d0f0a91b20b5c28af0c1eb83e08a565bb922cae3e930c",
+      "size_bytes": 3579,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:48:32.528526+00:00",
+      "filename": "05_metabolism_protocol_csv_tables.zip",
+      "format": "csv_zip",
+      "integrity_status": "unknown",
+      "output_id": "a655a3c4b21a4b2680e94de747db3616",
+      "path": "data/document_extractions/24f915a4d4e5464f92281df2a0917090/05_metabolism_protocol_csv_tables.zip",
+      "run_id": "24f915a4d4e5464f92281df2a0917090",
+      "sha256": "ab8909cd20f3937bc454dfca3c9a551191d4cfc7d75eb7af37be4df90bc17542",
+      "size_bytes": 2326,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:48:32.530688+00:00",
+      "filename": "05_metabolism_protocol_complete_export.zip",
+      "format": "bundle_zip",
+      "integrity_status": "unknown",
+      "output_id": "3c7857aafe834025b7bb7514a406f39d",
+      "path": "data/document_extractions/24f915a4d4e5464f92281df2a0917090/05_metabolism_protocol_complete_export.zip",
+      "run_id": "24f915a4d4e5464f92281df2a0917090",
+      "sha256": "69924fa1d6bd989fa42b5da920f17be4fffae7d9a0358b7409f4d468bcfdf708",
+      "size_bytes": 48935,
+      "verified_at_utc": null
+    }
+  ],
+  "run_id": "24f915a4d4e5464f92281df2a0917090",
+  "source": {
+    "character_count": 221,
+    "entity_count": 7,
+    "file_type": "txt",
+    "image_count": 0,
+    "mime_type": "text/plain",
+    "page_count": 0,
+    "paragraph_count": 0,
+    "region_count": 0,
+    "row_count": 0,
+    "sheet_count": 0,
+    "source_name": "05_metabolism_protocol.txt",
+    "source_sha256": "103db2767b3e87239ecef0965c57190d1cdc557e0b7479c76c5aa03d4ce83af9",
+    "source_size_bytes": 221,
+    "table_count": 0,
+    "warning_count": 0
+  },
+  "structured_fields": {
+    "activity_measurements": [],
+    "document_type": "research_document",
+    "entity_counts": {
+      "assay_endpoint": 1,
+      "disease": 1,
+      "gene_or_protein": 3,
+      "mutation": 1,
+      "organism": 1
+    },
+    "has_limitations": false,
+    "has_methods": false,
+    "has_results": false,
+    "publication_identifiers": [],
+    "sample_sizes": [],
+    "sections": {
+      "unclassified": "DEMO PROTOCOL 5\nTarget: PPARG\nCompound: rosiglitazone\nDisease: type 2 diabetes\nMutation: P12A\nAssay: EC50\nOrganism: Homo sapiens\nResult: 390 nM\nDemonstration/reference content only; not experimental or clinical evidence."
+    },
+    "sensitive_findings": [],
+    "title": "05_metabolism_protocol.txt"
+  },
+  "warnings": []
+}

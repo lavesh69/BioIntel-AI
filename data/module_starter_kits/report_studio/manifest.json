@@ -1,0 +1,35 @@
+{
+  "module_key": "report_studio",
+  "title": "Research Report Studio",
+  "description": "Structured report metadata and findings.",
+  "accepted_formats": "CSV or JSON",
+  "offline": true,
+  "synthetic_example": true,
+  "files": [
+    {
+      "name": "blank_report_findings.csv",
+      "role": "blank",
+      "size_bytes": 54
+    },
+    {
+      "name": "filled_report_findings.csv",
+      "role": "example",
+      "size_bytes": 162
+    },
+    {
+      "name": "report_metadata.json",
+      "role": "example",
+      "size_bytes": 120
+    },
+    {
+      "name": "expected_report_bundle_manifest.json",
+      "role": "output",
+      "size_bytes": 126
+    },
+    {
+      "name": "FORMAT_GUIDE.md",
+      "role": "guide",
+      "size_bytes": 816
+    }
+  ]
+}

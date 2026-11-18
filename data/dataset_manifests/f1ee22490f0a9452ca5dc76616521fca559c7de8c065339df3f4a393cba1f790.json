@@ -1,0 +1,35 @@
+{
+  "activity_type": null,
+  "column_names": [
+    "drug_id",
+    "canonical_smiles",
+    "scaffold_family",
+    "molecular_weight",
+    "logp",
+    "tpsa",
+    "h_bond_donors",
+    "h_bond_acceptors",
+    "rotatable_bonds",
+    "ring_count",
+    "fraction_csp3",
+    "source"
+  ],
+  "dataset_name": "BioIntel Coverage Molecule Library",
+  "dataset_sha256": "f1ee22490f0a9452ca5dc76616521fca559c7de8c065339df3f4a393cba1f790",
+  "dataset_version": "1.0",
+  "demo_only": false,
+  "generated_by": "BioIntel Step 31 registry completion",
+  "metadata": {
+    "coverage_pack_version": "1.0",
+    "filename": "molecule_analysis_library_1000.csv"
+  },
+  "parent_sha256": null,
+  "primary_file": "data/coverage/molecule_analysis_library_1000.csv",
+  "primary_file_exists": true,
+  "row_count": 1000,
+  "schema": "biointel.dataset-manifest.v3.1",
+  "scientific_release_eligible": false,
+  "source_description": "BioIntel deterministic complete-coverage pack",
+  "synthetic": false,
+  "task_type": "unlabelled"
+}

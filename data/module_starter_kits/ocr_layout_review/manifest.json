@@ -1,0 +1,30 @@
+{
+  "module_key": "ocr_layout_review",
+  "title": "OCR & Layout Review",
+  "description": "OCR correction queue template.",
+  "accepted_formats": "CSV",
+  "offline": true,
+  "synthetic_example": true,
+  "files": [
+    {
+      "name": "blank_ocr_corrections.csv",
+      "role": "blank",
+      "size_bytes": 60
+    },
+    {
+      "name": "filled_ocr_corrections.csv",
+      "role": "example",
+      "size_bytes": 93
+    },
+    {
+      "name": "expected_ocr_review.csv",
+      "role": "output",
+      "size_bytes": 54
+    },
+    {
+      "name": "FORMAT_GUIDE.md",
+      "role": "guide",
+      "size_bytes": 798
+    }
+  ]
+}

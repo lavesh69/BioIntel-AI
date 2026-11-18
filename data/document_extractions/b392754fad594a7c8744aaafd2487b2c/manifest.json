@@ -1,0 +1,120 @@
+{
+  "duplicate_of_run_id": null,
+  "engine_version": "2.7.0",
+  "outputs": [
+    {
+      "created_at_utc": "2026-07-04T16:34:20.213063+00:00",
+      "filename": "BioIntel_Reference_Research_Report_extracted.json",
+      "format": "json",
+      "integrity_status": "unknown",
+      "output_id": "6f9d3749d9fb4123a8f374e9613ca1da",
+      "path": "data/document_extractions/b392754fad594a7c8744aaafd2487b2c/BioIntel_Reference_Research_Report_extracted.json",
+      "run_id": "b392754fad594a7c8744aaafd2487b2c",
+      "sha256": "2602898381c3b0dcc563924ccb8743571ed241c229be58e52e7995995d63a478",
+      "size_bytes": 103603,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:34:20.216585+00:00",
+      "filename": "BioIntel_Reference_Research_Report_extracted.xlsx",
+      "format": "xlsx",
+      "integrity_status": "unknown",
+      "output_id": "047e5ce385cd4a6399a6eb711c23eea4",
+      "path": "data/document_extractions/b392754fad594a7c8744aaafd2487b2c/BioIntel_Reference_Research_Report_extracted.xlsx",
+      "run_id": "b392754fad594a7c8744aaafd2487b2c",
+      "sha256": "73b9ddae3ae2b8d015cb5c63311ac3c25f91539a9aa830658db4bae88c6f38cc",
+      "size_bytes": 29992,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:34:20.219576+00:00",
+      "filename": "BioIntel_Reference_Research_Report_extracted.docx",
+      "format": "docx",
+      "integrity_status": "unknown",
+      "output_id": "1d67063a3dfc40c6aa2175ae6720b268",
+      "path": "data/document_extractions/b392754fad594a7c8744aaafd2487b2c/BioIntel_Reference_Research_Report_extracted.docx",
+      "run_id": "b392754fad594a7c8744aaafd2487b2c",
+      "sha256": "4abadf08d5deabc49c93aaa83350b9e708b9cd0597d7151cf351e63d9a6baaeb",
+      "size_bytes": 38985,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:34:20.222119+00:00",
+      "filename": "BioIntel_Reference_Research_Report_extracted.pdf",
+      "format": "pdf",
+      "integrity_status": "unknown",
+      "output_id": "c043559d78f84ae0814c66e6f81f1f7e",
+      "path": "data/document_extractions/b392754fad594a7c8744aaafd2487b2c/BioIntel_Reference_Research_Report_extracted.pdf",
+      "run_id": "b392754fad594a7c8744aaafd2487b2c",
+      "sha256": "501649b23f556338cbd363a4895cc2d838699a63c9719e23091343187ed9ec85",
+      "size_bytes": 8736,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:34:20.224416+00:00",
+      "filename": "BioIntel_Reference_Research_Report_csv_tables.zip",
+      "format": "csv_zip",
+      "integrity_status": "unknown",
+      "output_id": "5c86c74f15a14b45b9bfd3fd62da50d8",
+      "path": "data/document_extractions/b392754fad594a7c8744aaafd2487b2c/BioIntel_Reference_Research_Report_csv_tables.zip",
+      "run_id": "b392754fad594a7c8744aaafd2487b2c",
+      "sha256": "5724053370bdb603bda056cd13fe1bd9e8f4b75bc1c8dae90bd5d4cc6f51e0f8",
+      "size_bytes": 29728,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:34:20.226826+00:00",
+      "filename": "BioIntel_Reference_Research_Report_complete_export.zip",
+      "format": "bundle_zip",
+      "integrity_status": "unknown",
+      "output_id": "c3642e0cffdc45e8a47618f982e60ec3",
+      "path": "data/document_extractions/b392754fad594a7c8744aaafd2487b2c/BioIntel_Reference_Research_Report_complete_export.zip",
+      "run_id": "b392754fad594a7c8744aaafd2487b2c",
+      "sha256": "8dd63c07d4f870e795339e31ce36768e892e11d2673decea83545d024ea15922",
+      "size_bytes": 115572,
+      "verified_at_utc": null
+    }
+  ],
+  "run_id": "b392754fad594a7c8744aaafd2487b2c",
+  "source": {
+    "character_count": 1628,
+    "entity_count": 23,
+    "file_type": "pdf",
+    "image_count": 0,
+    "mime_type": "application/pdf",
+    "page_count": 3,
+    "paragraph_count": 0,
+    "region_count": 218,
+    "row_count": 15,
+    "sheet_count": 0,
+    "source_name": "BioIntel_Reference_Research_Report.pdf",
+    "source_sha256": "1695727eaa1776affdc94d045015a2f04ba28f1a59e92bfb5afe518cb8fc9dbe",
+    "source_size_bytes": 5088,
+    "table_count": 3,
+    "warning_count": 0
+  },
+  "structured_fields": {
+    "activity_measurements": [],
+    "document_type": "research_document",
+    "entity_counts": {
+      "assay_endpoint": 6,
+      "gene_or_protein": 16,
+      "organism": 1
+    },
+    "has_limitations": true,
+    "has_methods": true,
+    "has_results": true,
+    "publication_identifiers": [],
+    "sample_sizes": [],
+    "sections": {
+      "abstract": "This reference report demonstrates PDF extraction, table recovery, scientific entity recognition, document search\nand evidence bridging. It discusses PTGS2, ADORA2A, SIRT1 and PIK3CA with illustrative IC50, Ki and EC50\nmeasurements.",
+      "limitations": "The dataset is synthetic/reference-only. No wet-lab validation, clinical interpretation or scientific release is\npermitted.\nReference Entities\nType Examples\nGenes / proteins PTGS2, ADORA2A, SIRT1, PIK3CA, VKORC1\nCompounds Aspirin, caffeine, adenosine, warfarin, quercetin\nAssays IC50, Ki, EC50\nOrganism Homo sapiens\nDisease terms Inflammation, cardiovascular disease, metabolic disease\nDocument ID: DEMO-PDF-001 | Version 1.0 | BioIntel demonstration data",
+      "methods": "Ten reference compounds were assessed in a simulated biochemical screening workflow. Values are illustrative\nand are included only to populate the BioIntel AI demonstration workspace.\nCompound Target Endpoint Value (nM) Review\nAspirin reference PTGS2 IC50 125 Reviewed\nCaffeine reference ADORA2A Ki 820 Reviewed\nAdenosine reference ADORA2A Ki 32 Reviewed\nWarfarin reference VKORC1 IC50 18 Reviewed\nQuercetin reference PIK3CA IC50 950 Reviewed",
+      "results": "The smallest illustrative value was 18 nM for VKORC1. The ADORA2A examples demonstrate multiple\ncompounds and support cross-document target comparison. These results must not be used for clinical or\nlaboratory conclusions.\nActivity Summary\nMetric Value\nReference compounds 10\nTargets 7\nReviewed records 6\nPending records 4\nMedian activity 790 nM",
+      "unclassified": "BioIntel AI Reference Research Report\nDemonstration content only - not experimental evidence"
+    },
+    "sensitive_findings": [],
+    "title": "BioIntel_Reference_Research_Report.pdf"
+  },
+  "warnings": []
+}

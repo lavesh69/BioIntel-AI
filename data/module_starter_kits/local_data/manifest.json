@@ -1,0 +1,30 @@
+{
+  "module_key": "local_data",
+  "title": "Local Data Manager",
+  "description": "Portable local data-import manifest.",
+  "accepted_formats": "CSV",
+  "offline": true,
+  "synthetic_example": true,
+  "files": [
+    {
+      "name": "blank_local_asset_manifest.csv",
+      "role": "blank",
+      "size_bytes": 53
+    },
+    {
+      "name": "filled_local_asset_manifest.csv",
+      "role": "example",
+      "size_bytes": 123
+    },
+    {
+      "name": "expected_import_summary.json",
+      "role": "output",
+      "size_bytes": 55
+    },
+    {
+      "name": "FORMAT_GUIDE.md",
+      "role": "guide",
+      "size_bytes": 785
+    }
+  ]
+}

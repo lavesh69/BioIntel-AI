@@ -1,0 +1,65 @@
+{
+  "clinical_use": false,
+  "dataset": "UCI Wisconsin Diagnostic Breast Cancer",
+  "dataset_sha256": "111000dc8b565e16d91880afd585fed4a2715955ace30c43addf1795459470ea",
+  "feature_columns": [
+    "mean radius",
+    "mean texture",
+    "mean perimeter",
+    "mean area",
+    "mean smoothness",
+    "mean compactness",
+    "mean concavity",
+    "mean concave points",
+    "mean symmetry",
+    "mean fractal dimension",
+    "radius error",
+    "texture error",
+    "perimeter error",
+    "area error",
+    "smoothness error",
+    "compactness error",
+    "concavity error",
+    "concave points error",
+    "symmetry error",
+    "fractal dimension error",
+    "worst radius",
+    "worst texture",
+    "worst perimeter",
+    "worst area",
+    "worst smoothness",
+    "worst compactness",
+    "worst concavity",
+    "worst concave points",
+    "worst symmetry",
+    "worst fractal dimension"
+  ],
+  "holdout_rows": 126,
+  "limitations": [
+    "Retrospective public dataset",
+    "No prospective BioIntel-specific clinical study",
+    "No regulatory authorization"
+  ],
+  "metrics": {
+    "confusion_matrix": [
+      [
+        46,
+        1
+      ],
+      [
+        1,
+        78
+      ]
+    ],
+    "holdout_balanced_accuracy": 0.983032588203609,
+    "holdout_roc_auc": 0.9994613520064638
+  },
+  "model_sha256": "b4af976093124edfbe4b2b559f21a4dee873a3cf07ef2384996d3a0c46bf4386",
+  "schema": "biointel.public-benchmark.v1",
+  "scope": "Reproducible public-data software benchmark; not a clinical diagnostic validation.",
+  "split": {
+    "method": "stratified untouched holdout",
+    "random_state": 8600
+  },
+  "train_rows": 443
+}

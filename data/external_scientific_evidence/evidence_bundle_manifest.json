@@ -1,0 +1,86 @@
+{
+  "artifacts": [
+    {
+      "path": "data/real_scientific_pack/cancer/uci_wdbc_real.csv",
+      "sha256": "111000dc8b565e16d91880afd585fed4a2715955ace30c43addf1795459470ea",
+      "size_bytes": 131720
+    },
+    {
+      "path": "data/real_scientific_pack/catalog.json",
+      "sha256": "1892b11a1b137194dc410f90e9f5dfc4a9ef8e627e72bb15d799d13b6263a3c1",
+      "size_bytes": 22766
+    },
+    {
+      "path": "data/real_scientific_pack/manifests/verified_public_reference_catalog.csv",
+      "sha256": "f0f8c2f39aeb8864048a519437b977824380264835a6f1393b2114e5036c5af8",
+      "size_bytes": 8052
+    },
+    {
+      "path": "models/public_wdbc_reproducible_benchmark.joblib",
+      "sha256": "b4af976093124edfbe4b2b559f21a4dee873a3cf07ef2384996d3a0c46bf4386",
+      "size_bytes": 3073
+    },
+    {
+      "path": "data/external_scientific_evidence/uci_wdbc_untouched_holdout.csv",
+      "sha256": "909771f9b240e3942a5a8a6580c2bbe1cc9e2105ec2476baa910025bf595bb10",
+      "size_bytes": 29467
+    },
+    {
+      "path": "data/external_scientific_evidence/uci_wdbc_holdout_predictions.csv",
+      "sha256": "2e3621dc0157a954154f208ca2643008952ecc92500498382b249e2fd63fdbd2",
+      "size_bytes": 4335
+    },
+    {
+      "path": "data/external_scientific_evidence/uci_wdbc_benchmark_report.json",
+      "sha256": "7cd9adff14c779574e1c9e44d7ffc1571eed1344032daea8a68c03236891327c",
+      "size_bytes": 1626
+    },
+    {
+      "path": "data/external_scientific_evidence/PUBLIC_BENCHMARK_MODEL_CARD.md",
+      "sha256": "dbdaf33e963bab819dbf32939068c1a6339ac63245e6115fb405b648760f889c",
+      "size_bytes": 306
+    },
+    {
+      "path": "data/external_scientific_evidence/README.md",
+      "sha256": "6b1cdaf15c01943236e39a566e1dfff82b09beee42b51843b654faa5e3385117",
+      "size_bytes": 233
+    },
+    {
+      "path": "data/real_scientific_pack/uniprot/O03042_ARABIDOPSIS_RBCL.fasta",
+      "sha256": "9d5a51bb305a3f7c45625a69524dfd0622f8baf1c8738af3b69cd4c217902bf4",
+      "size_bytes": 604
+    },
+    {
+      "path": "data/real_scientific_pack/rcsb/4HHB_hemoglobin.cif",
+      "sha256": "6c977e3c48fcae60ef116dffff90ce2ae2dbc987f39c3f930d325361a1916812",
+      "size_bytes": 764822
+    },
+    {
+      "path": "data/real_scientific_pack/reactome/ReactomePathways.txt",
+      "sha256": "f6d7a2bf89b5bcfe0250a0bc7f51bff94641447911712b8ff129f5b55e52df3a",
+      "size_bytes": 1592393
+    },
+    {
+      "path": "data/real_scientific_pack/chembl/chembl_verified_activities.json",
+      "sha256": "fd4145d3f2d10050091c9d868382163de2571a60b3237445318638e62783d286",
+      "size_bytes": 4731
+    },
+    {
+      "path": "data/real_scientific_pack/clinvar/clinvar_official_variant_reference.tsv",
+      "sha256": "cd13263f6ce13b10a9173eafceb39123047bc7fd4854ff20fdf6abd6e0d4acd4",
+      "size_bytes": 351
+    },
+    {
+      "path": "data/real_scientific_pack/clinvar/clinicaltrials_verified_reference.json",
+      "sha256": "e40fe409173a53638f09b7946c5f2b93759ac44c077e9e3a5b32a5d2fd79a6a0",
+      "size_bytes": 956
+    },
+    {
+      "path": "data/real_scientific_pack/ncbi/organism_coverage_reference.csv",
+      "sha256": "6319c2ea7b73a484a64b0df13f538da17b01c363b662d15cb1cccda12182f8e8",
+      "size_bytes": 509
+    }
+  ],
+  "claim_boundary": "Public reference evidence does not establish BioIntel clinical efficacy, regulatory authorization or prospective validation.",
+  "schema": "biointel.public-evidence-bundle.v1"
+}

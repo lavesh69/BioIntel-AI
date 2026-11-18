@@ -1,0 +1,40 @@
+{
+  "module_key": "microbiology_metagenomics",
+  "title": "Microbiology & Metagenomics",
+  "description": "Taxon abundance and matching sample metadata.",
+  "accepted_formats": "CSV or TSV",
+  "offline": true,
+  "synthetic_example": true,
+  "files": [
+    {
+      "name": "blank_taxon_abundance.csv",
+      "role": "blank",
+      "size_bytes": 37
+    },
+    {
+      "name": "filled_taxon_abundance.csv",
+      "role": "example",
+      "size_bytes": 89
+    },
+    {
+      "name": "blank_microbiome_metadata.csv",
+      "role": "blank",
+      "size_bytes": 28
+    },
+    {
+      "name": "filled_microbiome_metadata.csv",
+      "role": "example",
+      "size_bytes": 85
+    },
+    {
+      "name": "expected_diversity.csv",
+      "role": "output",
+      "size_bytes": 73
+    },
+    {
+      "name": "FORMAT_GUIDE.md",
+      "role": "guide",
+      "size_bytes": 823
+    }
+  ]
+}

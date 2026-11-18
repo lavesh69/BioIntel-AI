@@ -1,0 +1,11 @@
+control,required,acceptance_rule
+Issuer independence,yes,Source organization is independent of BioIntel/model sponsor
+Stable identifier,yes,Trial ID DOI PubMed inspection reference authorization number or issuer record ID
+Original artifact,yes,Non-empty controlled file retained without alteration
+SHA-256 integrity,yes,Stored file matches registered digest and size
+Reviewer separation,yes,Verifier differs from submitter
+Issue date,yes,Valid ISO date not in the future
+Expiry/revocation,yes,Artifact is active and not expired or revoked
+Intended-use match,yes,Evidence evaluates the exact documented intended use
+Test fixture exclusion,yes,Demo synthetic or software test fixtures never score
+Domain metadata,yes,All domain-specific fields and success conditions are complete

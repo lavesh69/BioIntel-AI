@@ -1,0 +1,33 @@
+{
+  "activity_type": "SYNTHETIC_AFFINITY_SCORE",
+  "column_names": [
+    "drug_id",
+    "canonical_smiles",
+    "target_id",
+    "protein_sequence",
+    "activity_type",
+    "source",
+    "data_pack_version",
+    "p_activity"
+  ],
+  "dataset_name": "BioIntel Synthetic Foundation DTI",
+  "dataset_sha256": "b00d40346271b73e72bbbdd35d81954d5550dc9ed3623ab47b0feed7de3f541b",
+  "dataset_version": "2.0-regression",
+  "demo_only": false,
+  "generated_by": "BioIntel Step 31 registry completion",
+  "metadata": {
+    "compounds": 120,
+    "data_pack": "foundation",
+    "source_rows": 1920,
+    "targets": 16
+  },
+  "parent_sha256": "c88194930d0733ee8a78eeded43a5ec0731f5a2fe51d38251ae7c707af8fa7fd",
+  "primary_file": "data/packs/synthetic_foundation_dti_v2.csv",
+  "primary_file_exists": true,
+  "row_count": 1920,
+  "schema": "biointel.dataset-manifest.v3.1",
+  "scientific_release_eligible": false,
+  "source_description": "Deterministic synthetic benchmark generated locally by BioIntel AI",
+  "synthetic": true,
+  "task_type": "regression"
+}

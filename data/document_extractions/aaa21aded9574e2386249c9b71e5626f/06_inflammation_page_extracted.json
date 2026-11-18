@@ -1,0 +1,156 @@
+{
+  "character_count": 614,
+  "entities": [
+    {
+      "confidence": 0.72,
+      "end": 516,
+      "entity_type": "drug_or_compound",
+      "metadata": {},
+      "normalized": "infliximab",
+      "source": "document",
+      "start": 506,
+      "text": "infliximab"
+    },
+    {
+      "confidence": 0.86,
+      "end": 520,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "TNF",
+      "source": "document",
+      "start": 517,
+      "text": "TNF"
+    },
+    {
+      "confidence": 0.72,
+      "end": 167,
+      "entity_type": "disease",
+      "metadata": {},
+      "normalized": "arthritis",
+      "source": "document",
+      "start": 158,
+      "text": "arthritis"
+    },
+    {
+      "confidence": 0.92,
+      "end": 198,
+      "entity_type": "mutation",
+      "metadata": {},
+      "normalized": "G308A",
+      "source": "document",
+      "start": 193,
+      "text": "G308A"
+    },
+    {
+      "confidence": 0.97,
+      "end": 525,
+      "entity_type": "assay_endpoint",
+      "metadata": {},
+      "normalized": "EC50",
+      "source": "document",
+      "start": 521,
+      "text": "EC50"
+    },
+    {
+      "confidence": 0.86,
+      "end": 525,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "EC50",
+      "source": "document",
+      "start": 521,
+      "text": "EC50"
+    },
+    {
+      "confidence": 0.9,
+      "end": 268,
+      "entity_type": "organism",
+      "metadata": {},
+      "normalized": "Homo sapiens",
+      "source": "document",
+      "start": 256,
+      "text": "Homo sapiens"
+    }
+  ],
+  "entity_count": 7,
+  "file_type": "html",
+  "image_count": 0,
+  "metadata": {
+    "encoding": "utf-8-sig",
+    "image_count": 0,
+    "link_count": 0,
+    "scientific_entity_extraction": "rule_based_v1",
+    "sensitive_finding_count": 0,
+    "sensitive_redaction_applied": false,
+    "title": "BioIntel Demo"
+  },
+  "mime_type": "text/html",
+  "page_count": 0,
+  "paragraph_count": 0,
+  "region_count": 0,
+  "regions": [],
+  "row_count": 1,
+  "sections": [
+    {
+      "confidence": 1.0,
+      "metadata": {},
+      "name": "Document",
+      "source": "document",
+      "text": "BioIntel Demo\nInflammation reference page\nBioIntel demonstration record 6. The compound infliximab was discussed with target TNF in the context of rheumatoid arthritis. The example mutation is G308A. A demonstration EC50 measurement of 463 nM is shown for Homo sapiens. Synthetic reference labels: SYN-PAPER-0006 and SYN-DOI-NOT-REAL-0006. This content exists only to populate document search, extraction, entity recognition, history, comparison and evidence-bridge screens.\nCompound\nTarget\nAssay\nValue nM\ninfliximab\nTNF\nEC50\n463\nNotice:\nDemonstration/reference content only; not experimental or clinical evidence."
+    }
+  ],
+  "sheet_count": 0,
+  "source_name": "06_inflammation_page.html",
+  "source_sha256": "aec811d48e5708ed5041a12d7ac928d0c4f5714b8661a95a695849f8ef675c01",
+  "source_size_bytes": 817,
+  "structured_fields": {
+    "activity_measurements": [],
+    "document_type": "research_document",
+    "entity_counts": {
+      "assay_endpoint": 1,
+      "disease": 1,
+      "drug_or_compound": 1,
+      "gene_or_protein": 2,
+      "mutation": 1,
+      "organism": 1
+    },
+    "has_limitations": false,
+    "has_methods": false,
+    "has_results": false,
+    "publication_identifiers": [],
+    "sample_sizes": [],
+    "sections": {
+      "unclassified": "BioIntel Demo\nInflammation reference page\nBioIntel demonstration record 6. The compound infliximab was discussed with target TNF in the context of rheumatoid arthritis. The example mutation is G308A. A demonstration EC50 measurement of 463 nM is shown for Homo sapiens. Synthetic reference labels: SYN-PAPER-0006 and SYN-DOI-NOT-REAL-0006. This content exists only to populate document search, extraction, entity recognition, history, comparison and evidence-bridge screens.\nCompound\nTarget\nAssay\nValue nM\ninfliximab\nTNF\nEC50\n463\nNotice:\nDemonstration/reference content only; not experimental or clinical evidence."
+    },
+    "sensitive_findings": [],
+    "title": "BioIntel Demo"
+  },
+  "table_count": 1,
+  "tables": [
+    {
+      "column_count": 4,
+      "columns": [
+        "Compound",
+        "Target",
+        "Assay",
+        "Value nM"
+      ],
+      "confidence": 1.0,
+      "metadata": {},
+      "name": "HTML Table 1",
+      "row_count": 1,
+      "rows": [
+        [
+          "infliximab",
+          "TNF",
+          "EC50",
+          463
+        ]
+      ],
+      "source": "table:1"
+    }
+  ],
+  "text": "BioIntel Demo\nInflammation reference page\nBioIntel demonstration record 6. The compound infliximab was discussed with target TNF in the context of rheumatoid arthritis. The example mutation is G308A. A demonstration EC50 measurement of 463 nM is shown for Homo sapiens. Synthetic reference labels: SYN-PAPER-0006 and SYN-DOI-NOT-REAL-0006. This content exists only to populate document search, extraction, entity recognition, history, comparison and evidence-bridge screens.\nCompound\nTarget\nAssay\nValue nM\ninfliximab\nTNF\nEC50\n463\nNotice:\nDemonstration/reference content only; not experimental or clinical evidence.",
+  "warning_count": 0,
+  "warnings": []
+}

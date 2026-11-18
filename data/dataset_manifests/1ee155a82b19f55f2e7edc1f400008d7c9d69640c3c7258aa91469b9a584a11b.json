@@ -1,0 +1,31 @@
+{
+  "activity_type": null,
+  "column_names": [
+    "taxon",
+    "clade",
+    "aligned_length"
+  ],
+  "dataset_name": "Step30 phylogenetic alignment panel",
+  "dataset_sha256": "1ee155a82b19f55f2e7edc1f400008d7c9d69640c3c7258aa91469b9a584a11b",
+  "dataset_version": "2.0",
+  "demo_only": true,
+  "generated_by": "BioIntel Step 31 registry completion",
+  "metadata": {
+    "demo_only": true,
+    "domain": "phylogeny",
+    "reference_scale": true,
+    "scientific_release_eligible": false,
+    "source_file": "data/bioinformatics_demo/demo_alignment.fasta",
+    "step": 30,
+    "synthetic": true
+  },
+  "parent_sha256": null,
+  "primary_file": "data/bioinformatics_demo/demo_alignment.fasta",
+  "primary_file_exists": true,
+  "row_count": 50,
+  "schema": "biointel.dataset-manifest.v3.1",
+  "scientific_release_eligible": false,
+  "source_description": "BioIntel Step 30 scaled scientific reference dataset",
+  "synthetic": true,
+  "task_type": "unlabelled"
+}

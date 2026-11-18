@@ -1,0 +1,30 @@
+{
+  "module_key": "connected_data_explorer",
+  "title": "Connected Data Explorer",
+  "description": "Provider/entity query manifest for repeatable exploration.",
+  "accepted_formats": "CSV or JSON",
+  "offline": true,
+  "synthetic_example": true,
+  "files": [
+    {
+      "name": "blank_connected_queries.csv",
+      "role": "blank",
+      "size_bytes": 49
+    },
+    {
+      "name": "filled_connected_queries.csv",
+      "role": "example",
+      "size_bytes": 153
+    },
+    {
+      "name": "expected_connected_results.csv",
+      "role": "output",
+      "size_bytes": 57
+    },
+    {
+      "name": "FORMAT_GUIDE.md",
+      "role": "guide",
+      "size_bytes": 801
+    }
+  ]
+}

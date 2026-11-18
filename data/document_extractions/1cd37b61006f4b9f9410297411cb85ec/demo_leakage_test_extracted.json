@@ -1,0 +1,377 @@
+{
+  "character_count": 2669,
+  "entities": [
+    {
+      "confidence": 0.86,
+      "end": 2274,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "FC1",
+      "source": "document",
+      "start": 2271,
+      "text": "FC1"
+    },
+    {
+      "confidence": 0.86,
+      "end": 2280,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "CC",
+      "source": "document",
+      "start": 2278,
+      "text": "CC"
+    }
+  ],
+  "entity_count": 2,
+  "file_type": "csv",
+  "image_count": 0,
+  "metadata": {
+    "delimiter": ",",
+    "encoding": "utf-8-sig",
+    "scientific_entity_extraction": "rule_based_v1",
+    "sensitive_finding_count": 0,
+    "sensitive_redaction_applied": false
+  },
+  "mime_type": "text/csv",
+  "page_count": 0,
+  "paragraph_count": 0,
+  "region_count": 0,
+  "regions": [],
+  "row_count": 40,
+  "sections": [
+    {
+      "confidence": 1.0,
+      "metadata": {},
+      "name": "Document",
+      "source": "document",
+      "text": "canonical_smiles,protein_sequence,label,split,record_id\r\nc1ccccc1,MYWVTSRQPNMLKIHGFEDCAYWVTSRQPNMLKIHG,1,test,TEST-001\r\nOc1ccccc1,MWVTSRQPNMLKIHGFEDCAYWVTSRQPNMLKIHGF,0,test,TEST-002\r\nNc1ccccc1,MVTSRQPNMLKIHGFEDCAYWVTSRQPNMLKIHGFE,1,test,TEST-003\r\nCc1ccccc1,MTSRQPNMLKIHGFEDCAYWVTSRQPNMLKIHGFED,0,test,TEST-004\r\nFC1=CC=CC=C1,MSRQPNMLKIHGFEDCAYWVTSRQPNMLKIHGFEDC,1,test,TEST-005\r\nClc1ccccc1,MRQPNMLKIHGFEDCAYWVTSRQPNMLKIHGFEDCA,0,test,TEST-006\r\nn1ccccc1,MQPNMLKIHGFEDCAYWVTSRQPNMLKIHGFEDCAY,1,test,TEST-007\r\nO=C(O)c1ccccc1,MPNMLKIHGFEDCAYWVTSRQPNMLKIHGFEDCAYW,0,test,TEST-008\r\nCOc1ccccc1,MNMLKIHGFEDCAYWVTSRQPNMLKIHGFEDCAYWV,1,test,TEST-009\r\nc1ccc2ccccc2c1,MMLKIHGFEDCAYWVTSRQPNMLKIHGFEDCAYWVT,0,test,TEST-010\r\nc1ccccc1,MLKIHGFEDCAYWVTSRQPNMLKIHGFEDCAYWVTS,1,test,TEST-011\r\nOc1ccccc1,MKIHGFEDCAYWVTSRQPNMLKIHGFEDCAYWVTSR,0,test,TEST-012\r\nNc1ccccc1,MIHGFEDCAYWVTSRQPNMLKIHGFEDCAYWVTSRQ,1,test,TEST-013\r\nCc1ccccc1,MHGFEDCAYWVTSRQPNMLKIHGFEDCAYWVTSRQP,0,test,TEST-014\r\nFC1=CC=CC=C1,MGFEDCAYWVTSRQPNMLKIHGFEDCAYWVTSRQPN,1,test,TEST-015\r\nClc1ccccc1,MFEDCAYWVTSRQPNMLKIHGFEDCAYWVTSRQPNM,0,test,TEST-016\r\nn1ccccc1,MEDCAYWVTSRQPNMLKIHGFEDCAYWVTSRQPNML,1,test,TEST-017\r\nO=C(O)c1ccccc1,MDCAYWVTSRQPNMLKIHGFEDCAYWVTSRQPNMLK,0,test,TEST-018\r\nCOc1ccccc1,MCAYWVTSRQPNMLKIHGFEDCAYWVTSRQPNMLKI,1,test,TEST-019\r\nc1ccc2ccccc2c1,MAYWVTSRQPNMLKIHGFEDCAYWVTSRQPNMLKIH,0,test,TEST-020\r\nc1ccccc1,MYWVTSRQPNMLKIHGFEDCAYWVTSRQPNMLKIHG,1,test,TEST-021\r\nOc1ccccc1,MWVTSRQPNMLKIHGFEDCAYWVTSRQPNMLKIHGF,0,test,TEST-022\r\nNc1ccccc1,MVTSRQPNMLKIHGFEDCAYWVTSRQPNMLKIHGFE,1,test,TEST-023\r\nCc1ccccc1,MTSRQPNMLKIHGFEDCAYWVTSRQPNMLKIHGFED,0,test,TEST-024\r\nFC1=CC=CC=C1,MSRQPNMLKIHGFEDCAYWVTSRQPNMLKIHGFEDC,1,test,TEST-025\r\nClc1ccccc1,MRQPNMLKIHGFEDCAYWVTSRQPNMLKIHGFEDCA,0,test,TEST-026\r\nn1ccccc1,MQPNMLKIHGFEDCAYWVTSRQPNMLKIHGFEDCAY,1,test,TEST-027\r\nO=C(O)c1ccccc1,MPNMLKIHGFEDCAYWVTSRQPNMLKIHGFEDCAYW,0,test,TEST-028\r\nCOc1ccccc1,MNMLKIHGFEDCAYWVTSRQPNMLKIHGFEDCAYWV,1,test,TEST-029\r\nc1ccc2ccccc2c1,MMLKIHGFEDCAYWVTSRQPNMLKIHGFEDCAYWVT,0,test,TEST-030\r\nc1ccccc1,MLKIHGFEDCAYWVTSRQPNMLKIHGFEDCAYWVTS,1,test,TEST-031\r\nOc1ccccc1,MKIHGFEDCAYWVTSRQPNMLKIHGFEDCAYWVTSR,0,test,TEST-032\r\nNc1ccccc1,MIHGFEDCAYWVTSRQPNMLKIHGFEDCAYWVTSRQ,1,test,TEST-033\r\nCc1ccccc1,MHGFEDCAYWVTSRQPNMLKIHGFEDCAYWVTSRQP,0,test,TEST-034\r\nFC1=CC=CC=C1,MGFEDCAYWVTSRQPNMLKIHGFEDCAYWVTSRQPN,1,test,TEST-035\r\nClc1ccccc1,MFEDCAYWVTSRQPNMLKIHGFEDCAYWVTSRQPNM,0,test,TEST-036\r\nn1ccccc1,MEDCAYWVTSRQPNMLKIHGFEDCAYWVTSRQPNML,1,test,TEST-037\r\nO=C(O)c1ccccc1,MDCAYWVTSRQPNMLKIHGFEDCAYWVTSRQPNMLK,0,test,TEST-038\r\nCOc1ccccc1,MCAYWVTSRQPNMLKIHGFEDCAYWVTSRQPNMLKI,1,test,TEST-039\r\nc1ccc2ccccc2c1,MAYWVTSRQPNMLKIHGFEDCAYWVTSRQPNMLKIH,0,test,TEST-040\r\n"
+    }
+  ],
+  "sheet_count": 0,
+  "source_name": "demo_leakage_test.csv",
+  "source_sha256": "a7e808333ef726b0acbb48091cb57b9eca296819c3edf9c630d63af8bd1f83e6",
+  "source_size_bytes": 2669,
+  "structured_fields": {
+    "activity_measurements": [],
+    "document_type": "research_document",
+    "entity_counts": {
+      "gene_or_protein": 2
+    },
+    "has_limitations": false,
+    "has_methods": false,
+    "has_results": false,
+    "publication_identifiers": [],
+    "sample_sizes": [],
+    "sections": {
+      "unclassified": "canonical_smiles,protein_sequence,label,split,record_id\nc1ccccc1,MYWVTSRQPNMLKIHGFEDCAYWVTSRQPNMLKIHG,1,test,TEST-001\nOc1ccccc1,MWVTSRQPNMLKIHGFEDCAYWVTSRQPNMLKIHGF,0,test,TEST-002\nNc1ccccc1,MVTSRQPNMLKIHGFEDCAYWVTSRQPNMLKIHGFE,1,test,TEST-003\nCc1ccccc1,MTSRQPNMLKIHGFEDCAYWVTSRQPNMLKIHGFED,0,test,TEST-004\nFC1=CC=CC=C1,MSRQPNMLKIHGFEDCAYWVTSRQPNMLKIHGFEDC,1,test,TEST-005\nClc1ccccc1,MRQPNMLKIHGFEDCAYWVTSRQPNMLKIHGFEDCA,0,test,TEST-006\nn1ccccc1,MQPNMLKIHGFEDCAYWVTSRQPNMLKIHGFEDCAY,1,test,TEST-007\nO=C(O)c1ccccc1,MPNMLKIHGFEDCAYWVTSRQPNMLKIHGFEDCAYW,0,test,TEST-008\nCOc1ccccc1,MNMLKIHGFEDCAYWVTSRQPNMLKIHGFEDCAYWV,1,test,TEST-009\nc1ccc2ccccc2c1,MMLKIHGFEDCAYWVTSRQPNMLKIHGFEDCAYWVT,0,test,TEST-010\nc1ccccc1,MLKIHGFEDCAYWVTSRQPNMLKIHGFEDCAYWVTS,1,test,TEST-011\nOc1ccccc1,MKIHGFEDCAYWVTSRQPNMLKIHGFEDCAYWVTSR,0,test,TEST-012\nNc1ccccc1,MIHGFEDCAYWVTSRQPNMLKIHGFEDCAYWVTSRQ,1,test,TEST-013\nCc1ccccc1,MHGFEDCAYWVTSRQPNMLKIHGFEDCAYWVTSRQP,0,test,TEST-014\nFC1=CC=CC=C1,MGFEDCAYWVTSRQPNMLKIHGFEDCAYWVTSRQPN,1,test,TEST-015\nClc1ccccc1,MFEDCAYWVTSRQPNMLKIHGFEDCAYWVTSRQPNM,0,test,TEST-016\nn1ccccc1,MEDCAYWVTSRQPNMLKIHGFEDCAYWVTSRQPNML,1,test,TEST-017\nO=C(O)c1ccccc1,MDCAYWVTSRQPNMLKIHGFEDCAYWVTSRQPNMLK,0,test,TEST-018\nCOc1ccccc1,MCAYWVTSRQPNMLKIHGFEDCAYWVTSRQPNMLKI,1,test,TEST-019\nc1ccc2ccccc2c1,MAYWVTSRQPNMLKIHGFEDCAYWVTSRQPNMLKIH,0,test,TEST-020\nc1ccccc1,MYWVTSRQPNMLKIHGFEDCAYWVTSRQPNMLKIHG,1,test,TEST-021\nOc1ccccc1,MWVTSRQPNMLKIHGFEDCAYWVTSRQPNMLKIHGF,0,test,TEST-022\nNc1ccccc1,MVTSRQPNMLKIHGFEDCAYWVTSRQPNMLKIHGFE,1,test,TEST-023\nCc1ccccc1,MTSRQPNMLKIHGFEDCAYWVTSRQPNMLKIHGFED,0,test,TEST-024\nFC1=CC=CC=C1,MSRQPNMLKIHGFEDCAYWVTSRQPNMLKIHGFEDC,1,test,TEST-025\nClc1ccccc1,MRQPNMLKIHGFEDCAYWVTSRQPNMLKIHGFEDCA,0,test,TEST-026\nn1ccccc1,MQPNMLKIHGFEDCAYWVTSRQPNMLKIHGFEDCAY,1,test,TEST-027\nO=C(O)c1ccccc1,MPNMLKIHGFEDCAYWVTSRQPNMLKIHGFEDCAYW,0,test,TEST-028\nCOc1ccccc1,MNMLKIHGFEDCAYWVTSRQPNMLKIHGFEDCAYWV,1,test,TEST-029\nc1ccc2ccccc2c1,MMLKIHGFEDCAYWVTSRQPNMLKIHGFEDCAYWVT,0,test,TEST-030\nc1ccccc1,MLKIHGFEDCAYWVTSRQPNMLKIHGFEDCAYWVTS,1,test,TEST-031\nOc1ccccc1,MKIHGFEDCAYWVTSRQPNMLKIHGFEDCAYWVTSR,0,test,TEST-032\nNc1ccccc1,MIHGFEDCAYWVTSRQPNMLKIHGFEDCAYWVTSRQ,1,test,TEST-033\nCc1ccccc1,MHGFEDCAYWVTSRQPNMLKIHGFEDCAYWVTSRQP,0,test,TEST-034\nFC1=CC=CC=C1,MGFEDCAYWVTSRQPNMLKIHGFEDCAYWVTSRQPN,1,test,TEST-035\nClc1ccccc1,MFEDCAYWVTSRQPNMLKIHGFEDCAYWVTSRQPNM,0,test,TEST-036\nn1ccccc1,MEDCAYWVTSRQPNMLKIHGFEDCAYWVTSRQPNML,1,test,TEST-037\nO=C(O)c1ccccc1,MDCAYWVTSRQPNMLKIHGFEDCAYWVTSRQPNMLK,0,test,TEST-038\nCOc1ccccc1,MCAYWVTSRQPNMLKIHGFEDCAYWVTSRQPNMLKI,1,test,TEST-039\nc1ccc2ccccc2c1,MAYWVTSRQPNMLKIHGFEDCAYWVTSRQPNMLKIH,0,test,TEST-040"
+    },
+    "sensitive_findings": [],
+    "title": "demo_leakage_test.csv"
+  },
+  "table_count": 1,
+  "tables": [
+    {
+      "column_count": 5,
+      "columns": [
+        "canonical_smiles",
+        "protein_sequence",
+        "label",
+        "split",
+        "record_id"
+      ],
+      "confidence": 1.0,
+      "metadata": {
+        "delimiter": ",",
+        "encoding": "utf-8-sig"
+      },
+      "name": "Delimited Data",
+      "row_count": 40,
+      "rows": [
+        [
+          "c1ccccc1",
+          "MYWVTSRQPNMLKIHGFEDCAYWVTSRQPNMLKIHG",
+          "1",
+          "test",
+          "TEST-001"
+        ],
+        [
+          "Oc1ccccc1",
+          "MWVTSRQPNMLKIHGFEDCAYWVTSRQPNMLKIHGF",
+          "0",
+          "test",
+          "TEST-002"
+        ],
+        [
+          "Nc1ccccc1",
+          "MVTSRQPNMLKIHGFEDCAYWVTSRQPNMLKIHGFE",
+          "1",
+          "test",
+          "TEST-003"
+        ],
+        [
+          "Cc1ccccc1",
+          "MTSRQPNMLKIHGFEDCAYWVTSRQPNMLKIHGFED",
+          "0",
+          "test",
+          "TEST-004"
+        ],
+        [
+          "FC1=CC=CC=C1",
+          "MSRQPNMLKIHGFEDCAYWVTSRQPNMLKIHGFEDC",
+          "1",
+          "test",
+          "TEST-005"
+        ],
+        [
+          "Clc1ccccc1",
+          "MRQPNMLKIHGFEDCAYWVTSRQPNMLKIHGFEDCA",
+          "0",
+          "test",
+          "TEST-006"
+        ],
+        [
+          "n1ccccc1",
+          "MQPNMLKIHGFEDCAYWVTSRQPNMLKIHGFEDCAY",
+          "1",
+          "test",
+          "TEST-007"
+        ],
+        [
+          "O=C(O)c1ccccc1",
+          "MPNMLKIHGFEDCAYWVTSRQPNMLKIHGFEDCAYW",
+          "0",
+          "test",
+          "TEST-008"
+        ],
+        [
+          "COc1ccccc1",
+          "MNMLKIHGFEDCAYWVTSRQPNMLKIHGFEDCAYWV",
+          "1",
+          "test",
+          "TEST-009"
+        ],
+        [
+          "c1ccc2ccccc2c1",
+          "MMLKIHGFEDCAYWVTSRQPNMLKIHGFEDCAYWVT",
+          "0",
+          "test",
+          "TEST-010"
+        ],
+        [
+          "c1ccccc1",
+          "MLKIHGFEDCAYWVTSRQPNMLKIHGFEDCAYWVTS",
+          "1",
+          "test",
+          "TEST-011"
+        ],
+        [
+          "Oc1ccccc1",
+          "MKIHGFEDCAYWVTSRQPNMLKIHGFEDCAYWVTSR",
+          "0",
+          "test",
+          "TEST-012"
+        ],
+        [
+          "Nc1ccccc1",
+          "MIHGFEDCAYWVTSRQPNMLKIHGFEDCAYWVTSRQ",
+          "1",
+          "test",
+          "TEST-013"
+        ],
+        [
+          "Cc1ccccc1",
+          "MHGFEDCAYWVTSRQPNMLKIHGFEDCAYWVTSRQP",
+          "0",
+          "test",
+          "TEST-014"
+        ],
+        [
+          "FC1=CC=CC=C1",
+          "MGFEDCAYWVTSRQPNMLKIHGFEDCAYWVTSRQPN",
+          "1",
+          "test",
+          "TEST-015"
+        ],
+        [
+          "Clc1ccccc1",
+          "MFEDCAYWVTSRQPNMLKIHGFEDCAYWVTSRQPNM",
+          "0",
+          "test",
+          "TEST-016"
+        ],
+        [
+          "n1ccccc1",
+          "MEDCAYWVTSRQPNMLKIHGFEDCAYWVTSRQPNML",
+          "1",
+          "test",
+          "TEST-017"
+        ],
+        [
+          "O=C(O)c1ccccc1",
+          "MDCAYWVTSRQPNMLKIHGFEDCAYWVTSRQPNMLK",
+          "0",
+          "test",
+          "TEST-018"
+        ],
+        [
+          "COc1ccccc1",
+          "MCAYWVTSRQPNMLKIHGFEDCAYWVTSRQPNMLKI",
+          "1",
+          "test",
+          "TEST-019"
+        ],
+        [
+          "c1ccc2ccccc2c1",
+          "MAYWVTSRQPNMLKIHGFEDCAYWVTSRQPNMLKIH",
+          "0",
+          "test",
+          "TEST-020"
+        ],
+        [
+          "c1ccccc1",
+          "MYWVTSRQPNMLKIHGFEDCAYWVTSRQPNMLKIHG",
+          "1",
+          "test",
+          "TEST-021"
+        ],
+        [
+          "Oc1ccccc1",
+          "MWVTSRQPNMLKIHGFEDCAYWVTSRQPNMLKIHGF",
+          "0",
+          "test",
+          "TEST-022"
+        ],
+        [
+          "Nc1ccccc1",
+          "MVTSRQPNMLKIHGFEDCAYWVTSRQPNMLKIHGFE",
+          "1",
+          "test",
+          "TEST-023"
+        ],
+        [
+          "Cc1ccccc1",
+          "MTSRQPNMLKIHGFEDCAYWVTSRQPNMLKIHGFED",
+          "0",
+          "test",
+          "TEST-024"
+        ],
+        [
+          "FC1=CC=CC=C1",
+          "MSRQPNMLKIHGFEDCAYWVTSRQPNMLKIHGFEDC",
+          "1",
+          "test",
+          "TEST-025"
+        ],
+        [
+          "Clc1ccccc1",
+          "MRQPNMLKIHGFEDCAYWVTSRQPNMLKIHGFEDCA",
+          "0",
+          "test",
+          "TEST-026"
+        ],
+        [
+          "n1ccccc1",
+          "MQPNMLKIHGFEDCAYWVTSRQPNMLKIHGFEDCAY",
+          "1",
+          "test",
+          "TEST-027"
+        ],
+        [
+          "O=C(O)c1ccccc1",
+          "MPNMLKIHGFEDCAYWVTSRQPNMLKIHGFEDCAYW",
+          "0",
+          "test",
+          "TEST-028"
+        ],
+        [
+          "COc1ccccc1",
+          "MNMLKIHGFEDCAYWVTSRQPNMLKIHGFEDCAYWV",
+          "1",
+          "test",
+          "TEST-029"
+        ],
+        [
+          "c1ccc2ccccc2c1",
+          "MMLKIHGFEDCAYWVTSRQPNMLKIHGFEDCAYWVT",
+          "0",
+          "test",
+          "TEST-030"
+        ],
+        [
+          "c1ccccc1",
+          "MLKIHGFEDCAYWVTSRQPNMLKIHGFEDCAYWVTS",
+          "1",
+          "test",
+          "TEST-031"
+        ],
+        [
+          "Oc1ccccc1",
+          "MKIHGFEDCAYWVTSRQPNMLKIHGFEDCAYWVTSR",
+          "0",
+          "test",
+          "TEST-032"
+        ],
+        [
+          "Nc1ccccc1",
+          "MIHGFEDCAYWVTSRQPNMLKIHGFEDCAYWVTSRQ",
+          "1",
+          "test",
+          "TEST-033"
+        ],
+        [
+          "Cc1ccccc1",
+          "MHGFEDCAYWVTSRQPNMLKIHGFEDCAYWVTSRQP",
+          "0",
+          "test",
+          "TEST-034"
+        ],
+        [
+          "FC1=CC=CC=C1",
+          "MGFEDCAYWVTSRQPNMLKIHGFEDCAYWVTSRQPN",
+          "1",
+          "test",
+          "TEST-035"
+        ],
+        [
+          "Clc1ccccc1",
+          "MFEDCAYWVTSRQPNMLKIHGFEDCAYWVTSRQPNM",
+          "0",
+          "test",
+          "TEST-036"
+        ],
+        [
+          "n1ccccc1",
+          "MEDCAYWVTSRQPNMLKIHGFEDCAYWVTSRQPNML",
+          "1",
+          "test",
+          "TEST-037"
+        ],
+        [
+          "O=C(O)c1ccccc1",
+          "MDCAYWVTSRQPNMLKIHGFEDCAYWVTSRQPNMLK",
+          "0",
+          "test",
+          "TEST-038"
+        ],
+        [
+          "COc1ccccc1",
+          "MCAYWVTSRQPNMLKIHGFEDCAYWVTSRQPNMLKI",
+          "1",
+          "test",
+          "TEST-039"
+        ],
+        [
+          "c1ccc2ccccc2c1",
+          "MAYWVTSRQPNMLKIHGFEDCAYWVTSRQPNMLKIH",
+          "0",
+          "test",
+          "TEST-040"
+        ]
+      ],
+      "source": "document"
+    }
+  ],
+  "text": "canonical_smiles,protein_sequence,label,split,record_id\r\nc1ccccc1,MYWVTSRQPNMLKIHGFEDCAYWVTSRQPNMLKIHG,1,test,TEST-001\r\nOc1ccccc1,MWVTSRQPNMLKIHGFEDCAYWVTSRQPNMLKIHGF,0,test,TEST-002\r\nNc1ccccc1,MVTSRQPNMLKIHGFEDCAYWVTSRQPNMLKIHGFE,1,test,TEST-003\r\nCc1ccccc1,MTSRQPNMLKIHGFEDCAYWVTSRQPNMLKIHGFED,0,test,TEST-004\r\nFC1=CC=CC=C1,MSRQPNMLKIHGFEDCAYWVTSRQPNMLKIHGFEDC,1,test,TEST-005\r\nClc1ccccc1,MRQPNMLKIHGFEDCAYWVTSRQPNMLKIHGFEDCA,0,test,TEST-006\r\nn1ccccc1,MQPNMLKIHGFEDCAYWVTSRQPNMLKIHGFEDCAY,1,test,TEST-007\r\nO=C(O)c1ccccc1,MPNMLKIHGFEDCAYWVTSRQPNMLKIHGFEDCAYW,0,test,TEST-008\r\nCOc1ccccc1,MNMLKIHGFEDCAYWVTSRQPNMLKIHGFEDCAYWV,1,test,TEST-009\r\nc1ccc2ccccc2c1,MMLKIHGFEDCAYWVTSRQPNMLKIHGFEDCAYWVT,0,test,TEST-010\r\nc1ccccc1,MLKIHGFEDCAYWVTSRQPNMLKIHGFEDCAYWVTS,1,test,TEST-011\r\nOc1ccccc1,MKIHGFEDCAYWVTSRQPNMLKIHGFEDCAYWVTSR,0,test,TEST-012\r\nNc1ccccc1,MIHGFEDCAYWVTSRQPNMLKIHGFEDCAYWVTSRQ,1,test,TEST-013\r\nCc1ccccc1,MHGFEDCAYWVTSRQPNMLKIHGFEDCAYWVTSRQP,0,test,TEST-014\r\nFC1=CC=CC=C1,MGFEDCAYWVTSRQPNMLKIHGFEDCAYWVTSRQPN,1,test,TEST-015\r\nClc1ccccc1,MFEDCAYWVTSRQPNMLKIHGFEDCAYWVTSRQPNM,0,test,TEST-016\r\nn1ccccc1,MEDCAYWVTSRQPNMLKIHGFEDCAYWVTSRQPNML,1,test,TEST-017\r\nO=C(O)c1ccccc1,MDCAYWVTSRQPNMLKIHGFEDCAYWVTSRQPNMLK,0,test,TEST-018\r\nCOc1ccccc1,MCAYWVTSRQPNMLKIHGFEDCAYWVTSRQPNMLKI,1,test,TEST-019\r\nc1ccc2ccccc2c1,MAYWVTSRQPNMLKIHGFEDCAYWVTSRQPNMLKIH,0,test,TEST-020\r\nc1ccccc1,MYWVTSRQPNMLKIHGFEDCAYWVTSRQPNMLKIHG,1,test,TEST-021\r\nOc1ccccc1,MWVTSRQPNMLKIHGFEDCAYWVTSRQPNMLKIHGF,0,test,TEST-022\r\nNc1ccccc1,MVTSRQPNMLKIHGFEDCAYWVTSRQPNMLKIHGFE,1,test,TEST-023\r\nCc1ccccc1,MTSRQPNMLKIHGFEDCAYWVTSRQPNMLKIHGFED,0,test,TEST-024\r\nFC1=CC=CC=C1,MSRQPNMLKIHGFEDCAYWVTSRQPNMLKIHGFEDC,1,test,TEST-025\r\nClc1ccccc1,MRQPNMLKIHGFEDCAYWVTSRQPNMLKIHGFEDCA,0,test,TEST-026\r\nn1ccccc1,MQPNMLKIHGFEDCAYWVTSRQPNMLKIHGFEDCAY,1,test,TEST-027\r\nO=C(O)c1ccccc1,MPNMLKIHGFEDCAYWVTSRQPNMLKIHGFEDCAYW,0,test,TEST-028\r\nCOc1ccccc1,MNMLKIHGFEDCAYWVTSRQPNMLKIHGFEDCAYWV,1,test,TEST-029\r\nc1ccc2ccccc2c1,MMLKIHGFEDCAYWVTSRQPNMLKIHGFEDCAYWVT,0,test,TEST-030\r\nc1ccccc1,MLKIHGFEDCAYWVTSRQPNMLKIHGFEDCAYWVTS,1,test,TEST-031\r\nOc1ccccc1,MKIHGFEDCAYWVTSRQPNMLKIHGFEDCAYWVTSR,0,test,TEST-032\r\nNc1ccccc1,MIHGFEDCAYWVTSRQPNMLKIHGFEDCAYWVTSRQ,1,test,TEST-033\r\nCc1ccccc1,MHGFEDCAYWVTSRQPNMLKIHGFEDCAYWVTSRQP,0,test,TEST-034\r\nFC1=CC=CC=C1,MGFEDCAYWVTSRQPNMLKIHGFEDCAYWVTSRQPN,1,test,TEST-035\r\nClc1ccccc1,MFEDCAYWVTSRQPNMLKIHGFEDCAYWVTSRQPNM,0,test,TEST-036\r\nn1ccccc1,MEDCAYWVTSRQPNMLKIHGFEDCAYWVTSRQPNML,1,test,TEST-037\r\nO=C(O)c1ccccc1,MDCAYWVTSRQPNMLKIHGFEDCAYWVTSRQPNMLK,0,test,TEST-038\r\nCOc1ccccc1,MCAYWVTSRQPNMLKIHGFEDCAYWVTSRQPNMLKI,1,test,TEST-039\r\nc1ccc2ccccc2c1,MAYWVTSRQPNMLKIHGFEDCAYWVTSRQPNMLKIH,0,test,TEST-040\r\n",
+  "warning_count": 0,
+  "warnings": []
+}

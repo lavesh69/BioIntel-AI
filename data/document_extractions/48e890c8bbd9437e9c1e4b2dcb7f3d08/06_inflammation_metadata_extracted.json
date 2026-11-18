@@ -1,0 +1,208 @@
+{
+  "character_count": 513,
+  "entities": [
+    {
+      "confidence": 0.97,
+      "end": 48,
+      "entity_type": "assay_endpoint",
+      "metadata": {},
+      "normalized": "EC50",
+      "source": "document",
+      "start": 44,
+      "text": "EC50"
+    },
+    {
+      "confidence": 0.86,
+      "end": 48,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "EC50",
+      "source": "document",
+      "start": 44,
+      "text": "EC50"
+    },
+    {
+      "confidence": 0.72,
+      "end": 86,
+      "entity_type": "disease",
+      "metadata": {},
+      "normalized": "arthritis",
+      "source": "document",
+      "start": 77,
+      "text": "arthritis"
+    },
+    {
+      "confidence": 0.72,
+      "end": 161,
+      "entity_type": "drug_or_compound",
+      "metadata": {},
+      "normalized": "infliximab",
+      "source": "document",
+      "start": 151,
+      "text": "infliximab"
+    },
+    {
+      "confidence": 0.86,
+      "end": 179,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "TNF",
+      "source": "document",
+      "start": 176,
+      "text": "TNF"
+    },
+    {
+      "confidence": 0.92,
+      "end": 203,
+      "entity_type": "mutation",
+      "metadata": {},
+      "normalized": "G308A",
+      "source": "document",
+      "start": 198,
+      "text": "G308A"
+    },
+    {
+      "confidence": 0.9,
+      "end": 327,
+      "entity_type": "organism",
+      "metadata": {},
+      "normalized": "Homo sapiens",
+      "source": "document",
+      "start": 315,
+      "text": "Homo sapiens"
+    }
+  ],
+  "entity_count": 7,
+  "file_type": "json",
+  "image_count": 0,
+  "metadata": {
+    "encoding": "utf-8-sig",
+    "root_type": "dict",
+    "scientific_entity_extraction": "rule_based_v1",
+    "sensitive_finding_count": 0,
+    "sensitive_redaction_applied": false
+  },
+  "mime_type": "application/json",
+  "page_count": 0,
+  "paragraph_count": 0,
+  "region_count": 0,
+  "regions": [],
+  "row_count": 15,
+  "sections": [
+    {
+      "confidence": 1.0,
+      "metadata": {},
+      "name": "Document",
+      "source": "document",
+      "text": "{\r\n  \"activity_value_nm\": 463,\r\n  \"assay\": \"EC50\",\r\n  \"disease\": \"rheumatoid arthritis\",\r\n  \"document_id\": \"DEMO-CORPUS-06\",\r\n  \"doi\": \"\",\r\n  \"drug\": \"infliximab\",\r\n  \"gene\": \"TNF\",\r\n  \"mutation\": \"G308A\",\r\n  \"notice\": \"Demonstration/reference content only; not experimental or clinical evidence.\",\r\n  \"organism\": \"Homo sapiens\",\r\n  \"pmid\": \"\",\r\n  \"scientific_release_eligible\": false,\r\n  \"synthetic_doi_label\": \"SYN-DOI-NOT-REAL-0006\",\r\n  \"synthetic_reference_id\": \"SYN-PAPER-0006\",\r\n  \"topic\": \"inflammation\"\r\n}"
+    }
+  ],
+  "sheet_count": 0,
+  "source_name": "06_inflammation_metadata.json",
+  "source_sha256": "e8c3d7c73b277a7e09772d81ac90e8f7fdcf44390c1da38350c9050841c0406a",
+  "source_size_bytes": 513,
+  "structured_fields": {
+    "activity_measurements": [],
+    "document_type": "research_document",
+    "entity_counts": {
+      "assay_endpoint": 1,
+      "disease": 1,
+      "drug_or_compound": 1,
+      "gene_or_protein": 2,
+      "mutation": 1,
+      "organism": 1
+    },
+    "has_limitations": false,
+    "has_methods": false,
+    "has_results": false,
+    "publication_identifiers": [],
+    "sample_sizes": [],
+    "sections": {
+      "unclassified": "{\n\"activity_value_nm\": 463,\n\"assay\": \"EC50\",\n\"disease\": \"rheumatoid arthritis\",\n\"document_id\": \"DEMO-CORPUS-06\",\n\"doi\": \"\",\n\"drug\": \"infliximab\",\n\"gene\": \"TNF\",\n\"mutation\": \"G308A\",\n\"notice\": \"Demonstration/reference content only; not experimental or clinical evidence.\",\n\"organism\": \"Homo sapiens\",\n\"pmid\": \"\",\n\"scientific_release_eligible\": false,\n\"synthetic_doi_label\": \"SYN-DOI-NOT-REAL-0006\",\n\"synthetic_reference_id\": \"SYN-PAPER-0006\",\n\"topic\": \"inflammation\"\n}"
+    },
+    "sensitive_findings": [],
+    "title": "06_inflammation_metadata.json"
+  },
+  "table_count": 1,
+  "tables": [
+    {
+      "column_count": 2,
+      "columns": [
+        "Path",
+        "Value"
+      ],
+      "confidence": 1.0,
+      "metadata": {
+        "encoding": "utf-8-sig"
+      },
+      "name": "Structured Data",
+      "row_count": 15,
+      "rows": [
+        [
+          "activity_value_nm",
+          463
+        ],
+        [
+          "assay",
+          "EC50"
+        ],
+        [
+          "disease",
+          "rheumatoid arthritis"
+        ],
+        [
+          "document_id",
+          "DEMO-CORPUS-06"
+        ],
+        [
+          "doi",
+          ""
+        ],
+        [
+          "drug",
+          "infliximab"
+        ],
+        [
+          "gene",
+          "TNF"
+        ],
+        [
+          "mutation",
+          "G308A"
+        ],
+        [
+          "notice",
+          "Demonstration/reference content only; not experimental or clinical evidence."
+        ],
+        [
+          "organism",
+          "Homo sapiens"
+        ],
+        [
+          "pmid",
+          ""
+        ],
+        [
+          "scientific_release_eligible",
+          false
+        ],
+        [
+          "synthetic_doi_label",
+          "SYN-DOI-NOT-REAL-0006"
+        ],
+        [
+          "synthetic_reference_id",
+          "SYN-PAPER-0006"
+        ],
+        [
+          "topic",
+          "inflammation"
+        ]
+      ],
+      "source": "document"
+    }
+  ],
+  "text": "{\r\n  \"activity_value_nm\": 463,\r\n  \"assay\": \"EC50\",\r\n  \"disease\": \"rheumatoid arthritis\",\r\n  \"document_id\": \"DEMO-CORPUS-06\",\r\n  \"doi\": \"\",\r\n  \"drug\": \"infliximab\",\r\n  \"gene\": \"TNF\",\r\n  \"mutation\": \"G308A\",\r\n  \"notice\": \"Demonstration/reference content only; not experimental or clinical evidence.\",\r\n  \"organism\": \"Homo sapiens\",\r\n  \"pmid\": \"\",\r\n  \"scientific_release_eligible\": false,\r\n  \"synthetic_doi_label\": \"SYN-DOI-NOT-REAL-0006\",\r\n  \"synthetic_reference_id\": \"SYN-PAPER-0006\",\r\n  \"topic\": \"inflammation\"\r\n}",
+  "warning_count": 0,
+  "warnings": []
+}

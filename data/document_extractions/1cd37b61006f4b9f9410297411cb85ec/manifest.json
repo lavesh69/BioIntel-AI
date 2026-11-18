@@ -1,0 +1,114 @@
+{
+  "duplicate_of_run_id": null,
+  "engine_version": "2.7.0",
+  "outputs": [
+    {
+      "created_at_utc": "2026-07-04T16:49:40.824118+00:00",
+      "filename": "demo_leakage_test_extracted.json",
+      "format": "json",
+      "integrity_status": "unknown",
+      "output_id": "54377bc5ed6347ddbbb697e07281ab93",
+      "path": "data/document_extractions/1cd37b61006f4b9f9410297411cb85ec/demo_leakage_test_extracted.json",
+      "run_id": "1cd37b61006f4b9f9410297411cb85ec",
+      "sha256": "d246125981e21f3724fa63a37ebd8f1f282b0a19d177cff705a83d95f2819124",
+      "size_bytes": 16245,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:49:40.828031+00:00",
+      "filename": "demo_leakage_test_extracted.xlsx",
+      "format": "xlsx",
+      "integrity_status": "unknown",
+      "output_id": "033d74eebfed49c7831dc36216e12632",
+      "path": "data/document_extractions/1cd37b61006f4b9f9410297411cb85ec/demo_leakage_test_extracted.xlsx",
+      "run_id": "1cd37b61006f4b9f9410297411cb85ec",
+      "sha256": "84dd9ace92a60a3971aa5e082177f984f30c79a14e938e10f036139ab35bbe4e",
+      "size_bytes": 10609,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:49:40.830526+00:00",
+      "filename": "demo_leakage_test_extracted.docx",
+      "format": "docx",
+      "integrity_status": "unknown",
+      "output_id": "ac188c38cb27495a871c982358e1f9d4",
+      "path": "data/document_extractions/1cd37b61006f4b9f9410297411cb85ec/demo_leakage_test_extracted.docx",
+      "run_id": "1cd37b61006f4b9f9410297411cb85ec",
+      "sha256": "f640e6944c1ef2c8ae85b568971c090e5b961b5d7a5260712bbc3b937072f258",
+      "size_bytes": 38529,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:49:40.833084+00:00",
+      "filename": "demo_leakage_test_extracted.pdf",
+      "format": "pdf",
+      "integrity_status": "unknown",
+      "output_id": "3829c0aef2ab436bbffca432bceb7aea",
+      "path": "data/document_extractions/1cd37b61006f4b9f9410297411cb85ec/demo_leakage_test_extracted.pdf",
+      "run_id": "1cd37b61006f4b9f9410297411cb85ec",
+      "sha256": "497bb4952af079e5631f2dcf1bdabad11fe1df38bdc671f3e87c9914153baa51",
+      "size_bytes": 6953,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:49:40.835579+00:00",
+      "filename": "demo_leakage_test_csv_tables.zip",
+      "format": "csv_zip",
+      "integrity_status": "unknown",
+      "output_id": "e775f17168c34b7091db9bcbe9156b89",
+      "path": "data/document_extractions/1cd37b61006f4b9f9410297411cb85ec/demo_leakage_test_csv_tables.zip",
+      "run_id": "1cd37b61006f4b9f9410297411cb85ec",
+      "sha256": "56feae853b03859eb288c01b7d81f9106ac1738ffcc8f0e33042cd466abaeb24",
+      "size_bytes": 3697,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:49:40.838057+00:00",
+      "filename": "demo_leakage_test_complete_export.zip",
+      "format": "bundle_zip",
+      "integrity_status": "unknown",
+      "output_id": "f703c3af3638426d9bfefe5eb30fa82d",
+      "path": "data/document_extractions/1cd37b61006f4b9f9410297411cb85ec/demo_leakage_test_complete_export.zip",
+      "run_id": "1cd37b61006f4b9f9410297411cb85ec",
+      "sha256": "be0d17354e2c7428a03470c71aad158a6f01516526acbe1a27b883588da78de3",
+      "size_bytes": 55544,
+      "verified_at_utc": null
+    }
+  ],
+  "run_id": "1cd37b61006f4b9f9410297411cb85ec",
+  "source": {
+    "character_count": 2669,
+    "entity_count": 2,
+    "file_type": "csv",
+    "image_count": 0,
+    "mime_type": "text/csv",
+    "page_count": 0,
+    "paragraph_count": 0,
+    "region_count": 0,
+    "row_count": 40,
+    "sheet_count": 0,
+    "source_name": "demo_leakage_test.csv",
+    "source_sha256": "a7e808333ef726b0acbb48091cb57b9eca296819c3edf9c630d63af8bd1f83e6",
+    "source_size_bytes": 2669,
+    "table_count": 1,
+    "warning_count": 0
+  },
+  "structured_fields": {
+    "activity_measurements": [],
+    "document_type": "research_document",
+    "entity_counts": {
+      "gene_or_protein": 2
+    },
+    "has_limitations": false,
+    "has_methods": false,
+    "has_results": false,
+    "publication_identifiers": [],
+    "sample_sizes": [],
+    "sections": {
+      "unclassified": "canonical_smiles,protein_sequence,label,split,record_id\nc1ccccc1,MYWVTSRQPNMLKIHGFEDCAYWVTSRQPNMLKIHG,1,test,TEST-001\nOc1ccccc1,MWVTSRQPNMLKIHGFEDCAYWVTSRQPNMLKIHGF,0,test,TEST-002\nNc1ccccc1,MVTSRQPNMLKIHGFEDCAYWVTSRQPNMLKIHGFE,1,test,TEST-003\nCc1ccccc1,MTSRQPNMLKIHGFEDCAYWVTSRQPNMLKIHGFED,0,test,TEST-004\nFC1=CC=CC=C1,MSRQPNMLKIHGFEDCAYWVTSRQPNMLKIHGFEDC,1,test,TEST-005\nClc1ccccc1,MRQPNMLKIHGFEDCAYWVTSRQPNMLKIHGFEDCA,0,test,TEST-006\nn1ccccc1,MQPNMLKIHGFEDCAYWVTSRQPNMLKIHGFEDCAY,1,test,TEST-007\nO=C(O)c1ccccc1,MPNMLKIHGFEDCAYWVTSRQPNMLKIHGFEDCAYW,0,test,TEST-008\nCOc1ccccc1,MNMLKIHGFEDCAYWVTSRQPNMLKIHGFEDCAYWV,1,test,TEST-009\nc1ccc2ccccc2c1,MMLKIHGFEDCAYWVTSRQPNMLKIHGFEDCAYWVT,0,test,TEST-010\nc1ccccc1,MLKIHGFEDCAYWVTSRQPNMLKIHGFEDCAYWVTS,1,test,TEST-011\nOc1ccccc1,MKIHGFEDCAYWVTSRQPNMLKIHGFEDCAYWVTSR,0,test,TEST-012\nNc1ccccc1,MIHGFEDCAYWVTSRQPNMLKIHGFEDCAYWVTSRQ,1,test,TEST-013\nCc1ccccc1,MHGFEDCAYWVTSRQPNMLKIHGFEDCAYWVTSRQP,0,test,TEST-014\nFC1=CC=CC=C1,MGFEDCAYWVTSRQPNMLKIHGFEDCAYWVTSRQPN,1,test,TEST-015\nClc1ccccc1,MFEDCAYWVTSRQPNMLKIHGFEDCAYWVTSRQPNM,0,test,TEST-016\nn1ccccc1,MEDCAYWVTSRQPNMLKIHGFEDCAYWVTSRQPNML,1,test,TEST-017\nO=C(O)c1ccccc1,MDCAYWVTSRQPNMLKIHGFEDCAYWVTSRQPNMLK,0,test,TEST-018\nCOc1ccccc1,MCAYWVTSRQPNMLKIHGFEDCAYWVTSRQPNMLKI,1,test,TEST-019\nc1ccc2ccccc2c1,MAYWVTSRQPNMLKIHGFEDCAYWVTSRQPNMLKIH,0,test,TEST-020\nc1ccccc1,MYWVTSRQPNMLKIHGFEDCAYWVTSRQPNMLKIHG,1,test,TEST-021\nOc1ccccc1,MWVTSRQPNMLKIHGFEDCAYWVTSRQPNMLKIHGF,0,test,TEST-022\nNc1ccccc1,MVTSRQPNMLKIHGFEDCAYWVTSRQPNMLKIHGFE,1,test,TEST-023\nCc1ccccc1,MTSRQPNMLKIHGFEDCAYWVTSRQPNMLKIHGFED,0,test,TEST-024\nFC1=CC=CC=C1,MSRQPNMLKIHGFEDCAYWVTSRQPNMLKIHGFEDC,1,test,TEST-025\nClc1ccccc1,MRQPNMLKIHGFEDCAYWVTSRQPNMLKIHGFEDCA,0,test,TEST-026\nn1ccccc1,MQPNMLKIHGFEDCAYWVTSRQPNMLKIHGFEDCAY,1,test,TEST-027\nO=C(O)c1ccccc1,MPNMLKIHGFEDCAYWVTSRQPNMLKIHGFEDCAYW,0,test,TEST-028\nCOc1ccccc1,MNMLKIHGFEDCAYWVTSRQPNMLKIHGFEDCAYWV,1,test,TEST-029\nc1ccc2ccccc2c1,MMLKIHGFEDCAYWVTSRQPNMLKIHGFEDCAYWVT,0,test,TEST-030\nc1ccccc1,MLKIHGFEDCAYWVTSRQPNMLKIHGFEDCAYWVTS,1,test,TEST-031\nOc1ccccc1,MKIHGFEDCAYWVTSRQPNMLKIHGFEDCAYWVTSR,0,test,TEST-032\nNc1ccccc1,MIHGFEDCAYWVTSRQPNMLKIHGFEDCAYWVTSRQ,1,test,TEST-033\nCc1ccccc1,MHGFEDCAYWVTSRQPNMLKIHGFEDCAYWVTSRQP,0,test,TEST-034\nFC1=CC=CC=C1,MGFEDCAYWVTSRQPNMLKIHGFEDCAYWVTSRQPN,1,test,TEST-035\nClc1ccccc1,MFEDCAYWVTSRQPNMLKIHGFEDCAYWVTSRQPNM,0,test,TEST-036\nn1ccccc1,MEDCAYWVTSRQPNMLKIHGFEDCAYWVTSRQPNML,1,test,TEST-037\nO=C(O)c1ccccc1,MDCAYWVTSRQPNMLKIHGFEDCAYWVTSRQPNMLK,0,test,TEST-038\nCOc1ccccc1,MCAYWVTSRQPNMLKIHGFEDCAYWVTSRQPNMLKI,1,test,TEST-039\nc1ccc2ccccc2c1,MAYWVTSRQPNMLKIHGFEDCAYWVTSRQPNMLKIH,0,test,TEST-040"
+    },
+    "sensitive_findings": [],
+    "title": "demo_leakage_test.csv"
+  },
+  "warnings": []
+}

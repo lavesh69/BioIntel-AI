@@ -1,0 +1,119 @@
+{
+  "character_count": 236,
+  "entities": [
+    {
+      "confidence": 0.86,
+      "end": 4,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "DEMO",
+      "source": "document",
+      "start": 0,
+      "text": "DEMO"
+    },
+    {
+      "confidence": 0.72,
+      "end": 84,
+      "entity_type": "disease",
+      "metadata": {},
+      "normalized": "infection",
+      "source": "document",
+      "start": 75,
+      "text": "infection"
+    },
+    {
+      "confidence": 0.92,
+      "end": 100,
+      "entity_type": "mutation",
+      "metadata": {},
+      "normalized": "S83L",
+      "source": "document",
+      "start": 96,
+      "text": "S83L"
+    },
+    {
+      "confidence": 0.97,
+      "end": 112,
+      "entity_type": "assay_endpoint",
+      "metadata": {},
+      "normalized": "MIC",
+      "source": "document",
+      "start": 109,
+      "text": "MIC"
+    },
+    {
+      "confidence": 0.86,
+      "end": 112,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "MIC",
+      "source": "document",
+      "start": 109,
+      "text": "MIC"
+    },
+    {
+      "confidence": 0.9,
+      "end": 140,
+      "entity_type": "organism",
+      "metadata": {},
+      "normalized": "Escherichia coli",
+      "source": "document",
+      "start": 124,
+      "text": "Escherichia coli"
+    }
+  ],
+  "entity_count": 6,
+  "file_type": "txt",
+  "image_count": 0,
+  "metadata": {
+    "encoding": "utf-8-sig",
+    "scientific_entity_extraction": "rule_based_v1",
+    "sensitive_finding_count": 0,
+    "sensitive_redaction_applied": false
+  },
+  "mime_type": "text/plain",
+  "page_count": 0,
+  "paragraph_count": 0,
+  "region_count": 0,
+  "regions": [],
+  "row_count": 0,
+  "sections": [
+    {
+      "confidence": 1.0,
+      "metadata": {},
+      "name": "Document",
+      "source": "document",
+      "text": "DEMO PROTOCOL 4\r\nTarget: gyrA\r\nCompound: ciprofloxacin\r\nDisease: bacterial infection\r\nMutation: S83L\r\nAssay: MIC\r\nOrganism: Escherichia coli\r\nResult: 317 nM\r\nDemonstration/reference content only; not experimental or clinical evidence.\r\n"
+    }
+  ],
+  "sheet_count": 0,
+  "source_name": "04_infection_protocol.txt",
+  "source_sha256": "30b670aaf84fb02286f8a516d33109582b3d946b8bf0c40967d61f12c0a6956a",
+  "source_size_bytes": 236,
+  "structured_fields": {
+    "activity_measurements": [],
+    "document_type": "research_document",
+    "entity_counts": {
+      "assay_endpoint": 1,
+      "disease": 1,
+      "gene_or_protein": 2,
+      "mutation": 1,
+      "organism": 1
+    },
+    "has_limitations": false,
+    "has_methods": false,
+    "has_results": false,
+    "publication_identifiers": [],
+    "sample_sizes": [],
+    "sections": {
+      "unclassified": "DEMO PROTOCOL 4\nTarget: gyrA\nCompound: ciprofloxacin\nDisease: bacterial infection\nMutation: S83L\nAssay: MIC\nOrganism: Escherichia coli\nResult: 317 nM\nDemonstration/reference content only; not experimental or clinical evidence."
+    },
+    "sensitive_findings": [],
+    "title": "04_infection_protocol.txt"
+  },
+  "table_count": 0,
+  "tables": [],
+  "text": "DEMO PROTOCOL 4\r\nTarget: gyrA\r\nCompound: ciprofloxacin\r\nDisease: bacterial infection\r\nMutation: S83L\r\nAssay: MIC\r\nOrganism: Escherichia coli\r\nResult: 317 nM\r\nDemonstration/reference content only; not experimental or clinical evidence.\r\n",
+  "warning_count": 0,
+  "warnings": []
+}

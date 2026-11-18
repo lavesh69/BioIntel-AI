@@ -1,0 +1,208 @@
+{
+  "character_count": 514,
+  "entities": [
+    {
+      "confidence": 0.97,
+      "end": 47,
+      "entity_type": "assay_endpoint",
+      "metadata": {},
+      "normalized": "IC50",
+      "source": "document",
+      "start": 43,
+      "text": "IC50"
+    },
+    {
+      "confidence": 0.86,
+      "end": 47,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "IC50",
+      "source": "document",
+      "start": 43,
+      "text": "IC50"
+    },
+    {
+      "confidence": 0.72,
+      "end": 91,
+      "entity_type": "disease",
+      "metadata": {},
+      "normalized": "cancer",
+      "source": "document",
+      "start": 85,
+      "text": "cancer"
+    },
+    {
+      "confidence": 0.72,
+      "end": 165,
+      "entity_type": "drug_or_compound",
+      "metadata": {},
+      "normalized": "gefitinib",
+      "source": "document",
+      "start": 156,
+      "text": "gefitinib"
+    },
+    {
+      "confidence": 0.86,
+      "end": 184,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "EGFR",
+      "source": "document",
+      "start": 180,
+      "text": "EGFR"
+    },
+    {
+      "confidence": 0.92,
+      "end": 208,
+      "entity_type": "mutation",
+      "metadata": {},
+      "normalized": "L858R",
+      "source": "document",
+      "start": 203,
+      "text": "L858R"
+    },
+    {
+      "confidence": 0.9,
+      "end": 332,
+      "entity_type": "organism",
+      "metadata": {},
+      "normalized": "Homo sapiens",
+      "source": "document",
+      "start": 320,
+      "text": "Homo sapiens"
+    }
+  ],
+  "entity_count": 7,
+  "file_type": "json",
+  "image_count": 0,
+  "metadata": {
+    "encoding": "utf-8-sig",
+    "root_type": "dict",
+    "scientific_entity_extraction": "rule_based_v1",
+    "sensitive_finding_count": 0,
+    "sensitive_redaction_applied": false
+  },
+  "mime_type": "application/json",
+  "page_count": 0,
+  "paragraph_count": 0,
+  "region_count": 0,
+  "regions": [],
+  "row_count": 15,
+  "sections": [
+    {
+      "confidence": 1.0,
+      "metadata": {},
+      "name": "Document",
+      "source": "document",
+      "text": "{\r\n  \"activity_value_nm\": 98,\r\n  \"assay\": \"IC50\",\r\n  \"disease\": \"non-small-cell lung cancer\",\r\n  \"document_id\": \"DEMO-CORPUS-01\",\r\n  \"doi\": \"\",\r\n  \"drug\": \"gefitinib\",\r\n  \"gene\": \"EGFR\",\r\n  \"mutation\": \"L858R\",\r\n  \"notice\": \"Demonstration/reference content only; not experimental or clinical evidence.\",\r\n  \"organism\": \"Homo sapiens\",\r\n  \"pmid\": \"\",\r\n  \"scientific_release_eligible\": false,\r\n  \"synthetic_doi_label\": \"SYN-DOI-NOT-REAL-0001\",\r\n  \"synthetic_reference_id\": \"SYN-PAPER-0001\",\r\n  \"topic\": \"oncology\"\r\n}"
+    }
+  ],
+  "sheet_count": 0,
+  "source_name": "01_oncology_metadata.json",
+  "source_sha256": "44bd6e7f506182cd22ea4c3f9aed1484d89aedc804550fda7ebae4d9e159385c",
+  "source_size_bytes": 514,
+  "structured_fields": {
+    "activity_measurements": [],
+    "document_type": "research_document",
+    "entity_counts": {
+      "assay_endpoint": 1,
+      "disease": 1,
+      "drug_or_compound": 1,
+      "gene_or_protein": 2,
+      "mutation": 1,
+      "organism": 1
+    },
+    "has_limitations": false,
+    "has_methods": false,
+    "has_results": false,
+    "publication_identifiers": [],
+    "sample_sizes": [],
+    "sections": {
+      "unclassified": "{\n\"activity_value_nm\": 98,\n\"assay\": \"IC50\",\n\"disease\": \"non-small-cell lung cancer\",\n\"document_id\": \"DEMO-CORPUS-01\",\n\"doi\": \"\",\n\"drug\": \"gefitinib\",\n\"gene\": \"EGFR\",\n\"mutation\": \"L858R\",\n\"notice\": \"Demonstration/reference content only; not experimental or clinical evidence.\",\n\"organism\": \"Homo sapiens\",\n\"pmid\": \"\",\n\"scientific_release_eligible\": false,\n\"synthetic_doi_label\": \"SYN-DOI-NOT-REAL-0001\",\n\"synthetic_reference_id\": \"SYN-PAPER-0001\",\n\"topic\": \"oncology\"\n}"
+    },
+    "sensitive_findings": [],
+    "title": "01_oncology_metadata.json"
+  },
+  "table_count": 1,
+  "tables": [
+    {
+      "column_count": 2,
+      "columns": [
+        "Path",
+        "Value"
+      ],
+      "confidence": 1.0,
+      "metadata": {
+        "encoding": "utf-8-sig"
+      },
+      "name": "Structured Data",
+      "row_count": 15,
+      "rows": [
+        [
+          "activity_value_nm",
+          98
+        ],
+        [
+          "assay",
+          "IC50"
+        ],
+        [
+          "disease",
+          "non-small-cell lung cancer"
+        ],
+        [
+          "document_id",
+          "DEMO-CORPUS-01"
+        ],
+        [
+          "doi",
+          ""
+        ],
+        [
+          "drug",
+          "gefitinib"
+        ],
+        [
+          "gene",
+          "EGFR"
+        ],
+        [
+          "mutation",
+          "L858R"
+        ],
+        [
+          "notice",
+          "Demonstration/reference content only; not experimental or clinical evidence."
+        ],
+        [
+          "organism",
+          "Homo sapiens"
+        ],
+        [
+          "pmid",
+          ""
+        ],
+        [
+          "scientific_release_eligible",
+          false
+        ],
+        [
+          "synthetic_doi_label",
+          "SYN-DOI-NOT-REAL-0001"
+        ],
+        [
+          "synthetic_reference_id",
+          "SYN-PAPER-0001"
+        ],
+        [
+          "topic",
+          "oncology"
+        ]
+      ],
+      "source": "document"
+    }
+  ],
+  "text": "{\r\n  \"activity_value_nm\": 98,\r\n  \"assay\": \"IC50\",\r\n  \"disease\": \"non-small-cell lung cancer\",\r\n  \"document_id\": \"DEMO-CORPUS-01\",\r\n  \"doi\": \"\",\r\n  \"drug\": \"gefitinib\",\r\n  \"gene\": \"EGFR\",\r\n  \"mutation\": \"L858R\",\r\n  \"notice\": \"Demonstration/reference content only; not experimental or clinical evidence.\",\r\n  \"organism\": \"Homo sapiens\",\r\n  \"pmid\": \"\",\r\n  \"scientific_release_eligible\": false,\r\n  \"synthetic_doi_label\": \"SYN-DOI-NOT-REAL-0001\",\r\n  \"synthetic_reference_id\": \"SYN-PAPER-0001\",\r\n  \"topic\": \"oncology\"\r\n}",
+  "warning_count": 0,
+  "warnings": []
+}

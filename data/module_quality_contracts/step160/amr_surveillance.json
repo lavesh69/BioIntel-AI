@@ -1,0 +1,95 @@
+{
+  "schema": "biointel.step160.module-quality-contract.v1",
+  "release_step": 160,
+  "module_key": "amr_surveillance",
+  "title": "AMR surveillance depth",
+  "native_family": "amr-analysis",
+  "dimensions": [
+    {
+      "key": "input_contract",
+      "label": "Input contract",
+      "description": "Declared formats, expected schema and fail-closed input validation.",
+      "weight": 1.0
+    },
+    {
+      "key": "data_integrity",
+      "label": "Data integrity",
+      "description": "Full-input hashing, duplicate/missing/infinite-value checks and bounded previews.",
+      "weight": 1.0
+    },
+    {
+      "key": "deterministic_execution",
+      "label": "Deterministic execution",
+      "description": "Seeded local analysis with reproducible parameters and stable ordering.",
+      "weight": 1.0
+    },
+    {
+      "key": "resource_safety",
+      "label": "Resource safety",
+      "description": "Memory-aware admission, row/feature budgets and safe-mode downgrade before allocation.",
+      "weight": 1.0
+    },
+    {
+      "key": "failure_isolation",
+      "label": "Failure isolation",
+      "description": "Crash-loop circuit breaking, redacted diagnostics and page-preserving fail-closed behavior.",
+      "weight": 1.0
+    },
+    {
+      "key": "provenance",
+      "label": "Provenance",
+      "description": "Module, workflow, input, parameter, environment and runtime provenance in every result manifest.",
+      "weight": 1.0
+    },
+    {
+      "key": "result_integrity",
+      "label": "Result integrity",
+      "description": "Complete non-truncated table bundle with per-table checksums and preview completeness flags.",
+      "weight": 1.0
+    },
+    {
+      "key": "specialist_adapter",
+      "label": "Specialist adapter",
+      "description": "Protected execution plans and honest detection for every declared third-party engine.",
+      "weight": 1.0
+    },
+    {
+      "key": "evidence_gate",
+      "label": "Evidence gate",
+      "description": "Explicit validation requirements and a scientific boundary that blocks unsupported claims.",
+      "weight": 1.0
+    },
+    {
+      "key": "usability_export",
+      "label": "Usability and export",
+      "description": "Runnable demo/template plus machine-readable JSON and ZIP/CSV export surfaces.",
+      "weight": 1.0
+    }
+  ],
+  "validation_gates": [
+    "Species confirmation",
+    "Genotype-phenotype concordance",
+    "Contamination",
+    "Epidemiological review",
+    "Input quality checks reviewed",
+    "Replication and controls documented",
+    "Results and assumptions reviewed",
+    "Engine versions, parameters and logs retained",
+    "Exact rerun package generated",
+    "Independent evidence attached and adjudicated"
+  ],
+  "optimization_controls": [
+    "Per-isolate jobs",
+    "Database pinning",
+    "Incremental surveillance"
+  ],
+  "native_formats": [
+    "FASTQ/FASTA through pipeline",
+    "VCF",
+    "CSV/TSV isolate table"
+  ],
+  "boundary": "Genomic resistance predictions do not replace susceptibility testing or public-health interpretation.",
+  "maximum_internal_score": 10.0,
+  "score_scope": "Software-owned module quality only; specialist installation and external scientific evidence are separate axes.",
+  "external_claims_not_inferred": true
+}

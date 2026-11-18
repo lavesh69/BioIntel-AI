@@ -1,0 +1,167 @@
+{
+  "character_count": 257,
+  "entities": [
+    {
+      "confidence": 0.86,
+      "end": 200,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "ACHE",
+      "source": "document",
+      "start": 196,
+      "text": "ACHE"
+    },
+    {
+      "confidence": 0.72,
+      "end": 210,
+      "entity_type": "disease",
+      "metadata": {},
+      "normalized": "alzheimer",
+      "source": "document",
+      "start": 201,
+      "text": "Alzheimer"
+    },
+    {
+      "confidence": 0.92,
+      "end": 224,
+      "entity_type": "mutation",
+      "metadata": {},
+      "normalized": "Y337A",
+      "source": "document",
+      "start": 219,
+      "text": "Y337A"
+    },
+    {
+      "confidence": 0.97,
+      "end": 229,
+      "entity_type": "assay_endpoint",
+      "metadata": {},
+      "normalized": "IC50",
+      "source": "document",
+      "start": 225,
+      "text": "IC50"
+    },
+    {
+      "confidence": 0.86,
+      "end": 229,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "IC50",
+      "source": "document",
+      "start": 225,
+      "text": "IC50"
+    },
+    {
+      "confidence": 0.9,
+      "end": 246,
+      "entity_type": "organism",
+      "metadata": {},
+      "normalized": "Homo sapiens",
+      "source": "document",
+      "start": 234,
+      "text": "Homo sapiens"
+    }
+  ],
+  "entity_count": 6,
+  "file_type": "csv",
+  "image_count": 0,
+  "metadata": {
+    "delimiter": ",",
+    "encoding": "utf-8-sig",
+    "scientific_entity_extraction": "rule_based_v1",
+    "sensitive_finding_count": 0,
+    "sensitive_redaction_applied": false
+  },
+  "mime_type": "text/csv",
+  "page_count": 0,
+  "paragraph_count": 0,
+  "region_count": 0,
+  "regions": [],
+  "row_count": 2,
+  "sections": [
+    {
+      "confidence": 1.0,
+      "metadata": {},
+      "name": "Document",
+      "source": "document",
+      "text": "record_id,compound,target,disease,mutation,assay,value_nm,organism,status\nDEMO-CORPUS-03,donepezil,ACHE,Alzheimer disease,Y337A,IC50,244,Homo sapiens,demo_only\nDEMO-CORPUS-03-B,donepezil analogue,ACHE,Alzheimer disease,Y337A,IC50,354,Homo sapiens,demo_only\n"
+    }
+  ],
+  "sheet_count": 0,
+  "source_name": "03_neurology_table.csv",
+  "source_sha256": "848aed8b0dea2dd80eaeefc35cb918a33023791e938f09f4b88845b8d892e533",
+  "source_size_bytes": 257,
+  "structured_fields": {
+    "activity_measurements": [],
+    "document_type": "research_document",
+    "entity_counts": {
+      "assay_endpoint": 1,
+      "disease": 1,
+      "gene_or_protein": 2,
+      "mutation": 1,
+      "organism": 1
+    },
+    "has_limitations": false,
+    "has_methods": false,
+    "has_results": false,
+    "publication_identifiers": [],
+    "sample_sizes": [],
+    "sections": {
+      "unclassified": "record_id,compound,target,disease,mutation,assay,value_nm,organism,status\nDEMO-CORPUS-03,donepezil,ACHE,Alzheimer disease,Y337A,IC50,244,Homo sapiens,demo_only\nDEMO-CORPUS-03-B,donepezil analogue,ACHE,Alzheimer disease,Y337A,IC50,354,Homo sapiens,demo_only"
+    },
+    "sensitive_findings": [],
+    "title": "03_neurology_table.csv"
+  },
+  "table_count": 1,
+  "tables": [
+    {
+      "column_count": 9,
+      "columns": [
+        "record_id",
+        "compound",
+        "target",
+        "disease",
+        "mutation",
+        "assay",
+        "value_nm",
+        "organism",
+        "status"
+      ],
+      "confidence": 1.0,
+      "metadata": {
+        "delimiter": ",",
+        "encoding": "utf-8-sig"
+      },
+      "name": "Delimited Data",
+      "row_count": 2,
+      "rows": [
+        [
+          "DEMO-CORPUS-03",
+          "donepezil",
+          "ACHE",
+          "Alzheimer disease",
+          "Y337A",
+          "IC50",
+          "244",
+          "Homo sapiens",
+          "demo_only"
+        ],
+        [
+          "DEMO-CORPUS-03-B",
+          "donepezil analogue",
+          "ACHE",
+          "Alzheimer disease",
+          "Y337A",
+          "IC50",
+          "354",
+          "Homo sapiens",
+          "demo_only"
+        ]
+      ],
+      "source": "document"
+    }
+  ],
+  "text": "record_id,compound,target,disease,mutation,assay,value_nm,organism,status\nDEMO-CORPUS-03,donepezil,ACHE,Alzheimer disease,Y337A,IC50,244,Homo sapiens,demo_only\nDEMO-CORPUS-03-B,donepezil analogue,ACHE,Alzheimer disease,Y337A,IC50,354,Homo sapiens,demo_only\n",
+  "warning_count": 0,
+  "warnings": []
+}

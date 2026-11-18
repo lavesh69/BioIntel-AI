@@ -1,0 +1,176 @@
+{
+  "character_count": 507,
+  "entities": [
+    {
+      "confidence": 0.97,
+      "end": 48,
+      "entity_type": "assay_endpoint",
+      "metadata": {},
+      "normalized": "IC50",
+      "source": "document",
+      "start": 44,
+      "text": "IC50"
+    },
+    {
+      "confidence": 0.86,
+      "end": 48,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "IC50",
+      "source": "document",
+      "start": 44,
+      "text": "IC50"
+    },
+    {
+      "confidence": 0.72,
+      "end": 152,
+      "entity_type": "drug_or_compound",
+      "metadata": {},
+      "normalized": "sofosbuvir",
+      "source": "document",
+      "start": 142,
+      "text": "sofosbuvir"
+    },
+    {
+      "confidence": 0.92,
+      "end": 195,
+      "entity_type": "mutation",
+      "metadata": {},
+      "normalized": "S282T",
+      "source": "document",
+      "start": 190,
+      "text": "S282T"
+    }
+  ],
+  "entity_count": 4,
+  "file_type": "json",
+  "image_count": 0,
+  "metadata": {
+    "encoding": "utf-8-sig",
+    "root_type": "dict",
+    "scientific_entity_extraction": "rule_based_v1",
+    "sensitive_finding_count": 0,
+    "sensitive_redaction_applied": false
+  },
+  "mime_type": "application/json",
+  "page_count": 0,
+  "paragraph_count": 0,
+  "region_count": 0,
+  "regions": [],
+  "row_count": 15,
+  "sections": [
+    {
+      "confidence": 1.0,
+      "metadata": {},
+      "name": "Document",
+      "source": "document",
+      "text": "{\r\n  \"activity_value_nm\": 682,\r\n  \"assay\": \"IC50\",\r\n  \"disease\": \"hepatitis C\",\r\n  \"document_id\": \"DEMO-CORPUS-09\",\r\n  \"doi\": \"\",\r\n  \"drug\": \"sofosbuvir\",\r\n  \"gene\": \"NS5B\",\r\n  \"mutation\": \"S282T\",\r\n  \"notice\": \"Demonstration/reference content only; not experimental or clinical evidence.\",\r\n  \"organism\": \"Hepatitis C virus\",\r\n  \"pmid\": \"\",\r\n  \"scientific_release_eligible\": false,\r\n  \"synthetic_doi_label\": \"SYN-DOI-NOT-REAL-0009\",\r\n  \"synthetic_reference_id\": \"SYN-PAPER-0009\",\r\n  \"topic\": \"antiviral\"\r\n}"
+    }
+  ],
+  "sheet_count": 0,
+  "source_name": "09_antiviral_metadata.json",
+  "source_sha256": "abba85c08b5febea9d6c072235d1180fc403ef44d011da43b5de261073f9f043",
+  "source_size_bytes": 507,
+  "structured_fields": {
+    "activity_measurements": [],
+    "document_type": "research_document",
+    "entity_counts": {
+      "assay_endpoint": 1,
+      "drug_or_compound": 1,
+      "gene_or_protein": 1,
+      "mutation": 1
+    },
+    "has_limitations": false,
+    "has_methods": false,
+    "has_results": false,
+    "publication_identifiers": [],
+    "sample_sizes": [],
+    "sections": {
+      "unclassified": "{\n\"activity_value_nm\": 682,\n\"assay\": \"IC50\",\n\"disease\": \"hepatitis C\",\n\"document_id\": \"DEMO-CORPUS-09\",\n\"doi\": \"\",\n\"drug\": \"sofosbuvir\",\n\"gene\": \"NS5B\",\n\"mutation\": \"S282T\",\n\"notice\": \"Demonstration/reference content only; not experimental or clinical evidence.\",\n\"organism\": \"Hepatitis C virus\",\n\"pmid\": \"\",\n\"scientific_release_eligible\": false,\n\"synthetic_doi_label\": \"SYN-DOI-NOT-REAL-0009\",\n\"synthetic_reference_id\": \"SYN-PAPER-0009\",\n\"topic\": \"antiviral\"\n}"
+    },
+    "sensitive_findings": [],
+    "title": "09_antiviral_metadata.json"
+  },
+  "table_count": 1,
+  "tables": [
+    {
+      "column_count": 2,
+      "columns": [
+        "Path",
+        "Value"
+      ],
+      "confidence": 1.0,
+      "metadata": {
+        "encoding": "utf-8-sig"
+      },
+      "name": "Structured Data",
+      "row_count": 15,
+      "rows": [
+        [
+          "activity_value_nm",
+          682
+        ],
+        [
+          "assay",
+          "IC50"
+        ],
+        [
+          "disease",
+          "hepatitis C"
+        ],
+        [
+          "document_id",
+          "DEMO-CORPUS-09"
+        ],
+        [
+          "doi",
+          ""
+        ],
+        [
+          "drug",
+          "sofosbuvir"
+        ],
+        [
+          "gene",
+          "NS5B"
+        ],
+        [
+          "mutation",
+          "S282T"
+        ],
+        [
+          "notice",
+          "Demonstration/reference content only; not experimental or clinical evidence."
+        ],
+        [
+          "organism",
+          "Hepatitis C virus"
+        ],
+        [
+          "pmid",
+          ""
+        ],
+        [
+          "scientific_release_eligible",
+          false
+        ],
+        [
+          "synthetic_doi_label",
+          "SYN-DOI-NOT-REAL-0009"
+        ],
+        [
+          "synthetic_reference_id",
+          "SYN-PAPER-0009"
+        ],
+        [
+          "topic",
+          "antiviral"
+        ]
+      ],
+      "source": "document"
+    }
+  ],
+  "text": "{\r\n  \"activity_value_nm\": 682,\r\n  \"assay\": \"IC50\",\r\n  \"disease\": \"hepatitis C\",\r\n  \"document_id\": \"DEMO-CORPUS-09\",\r\n  \"doi\": \"\",\r\n  \"drug\": \"sofosbuvir\",\r\n  \"gene\": \"NS5B\",\r\n  \"mutation\": \"S282T\",\r\n  \"notice\": \"Demonstration/reference content only; not experimental or clinical evidence.\",\r\n  \"organism\": \"Hepatitis C virus\",\r\n  \"pmid\": \"\",\r\n  \"scientific_release_eligible\": false,\r\n  \"synthetic_doi_label\": \"SYN-DOI-NOT-REAL-0009\",\r\n  \"synthetic_reference_id\": \"SYN-PAPER-0009\",\r\n  \"topic\": \"antiviral\"\r\n}",
+  "warning_count": 0,
+  "warnings": []
+}

@@ -1,0 +1,117 @@
+{
+  "duplicate_of_run_id": null,
+  "engine_version": "2.7.0",
+  "outputs": [
+    {
+      "created_at_utc": "2026-07-04T16:48:31.241788+00:00",
+      "filename": "02_cardiology_protocol_extracted.json",
+      "format": "json",
+      "integrity_status": "unknown",
+      "output_id": "b29b2bcba381442fbd2f4d67911a152b",
+      "path": "data/document_extractions/b3ca9106e8a8408d867cf506d78152ab/02_cardiology_protocol_extracted.json",
+      "run_id": "b3ca9106e8a8408d867cf506d78152ab",
+      "sha256": "4d0719c5bb8c1655c5a1965ff5fdba7a508a03a96e8727a0175c5b087b696964",
+      "size_bytes": 3091,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:48:31.245077+00:00",
+      "filename": "02_cardiology_protocol_extracted.xlsx",
+      "format": "xlsx",
+      "integrity_status": "unknown",
+      "output_id": "7ad53606a4794ebeba52e68035ae74c7",
+      "path": "data/document_extractions/b3ca9106e8a8408d867cf506d78152ab/02_cardiology_protocol_extracted.xlsx",
+      "run_id": "b3ca9106e8a8408d867cf506d78152ab",
+      "sha256": "3a74af3b07f5cb99482ea6b71e3137941439ec184bbfcc5070069fcb002f5ebf",
+      "size_bytes": 8530,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:48:31.247380+00:00",
+      "filename": "02_cardiology_protocol_extracted.docx",
+      "format": "docx",
+      "integrity_status": "unknown",
+      "output_id": "b1693854e90c427c86b35898ab9b2568",
+      "path": "data/document_extractions/b3ca9106e8a8408d867cf506d78152ab/02_cardiology_protocol_extracted.docx",
+      "run_id": "b3ca9106e8a8408d867cf506d78152ab",
+      "sha256": "85d666f91fd29cef411e4fca596d171218e415610d1585c6fc509bbaf18d7aa5",
+      "size_bytes": 37686,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:48:31.249722+00:00",
+      "filename": "02_cardiology_protocol_extracted.pdf",
+      "format": "pdf",
+      "integrity_status": "unknown",
+      "output_id": "c0640289b2bb49f59335dd29f0eb5e83",
+      "path": "data/document_extractions/b3ca9106e8a8408d867cf506d78152ab/02_cardiology_protocol_extracted.pdf",
+      "run_id": "b3ca9106e8a8408d867cf506d78152ab",
+      "sha256": "cab7d413b710d2cc67d00534e40a38f7a403290740ff81ea714e2e85a6c36435",
+      "size_bytes": 3489,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:48:31.251690+00:00",
+      "filename": "02_cardiology_protocol_csv_tables.zip",
+      "format": "csv_zip",
+      "integrity_status": "unknown",
+      "output_id": "fbd693c35a3b4391921ced04defa1b3b",
+      "path": "data/document_extractions/b3ca9106e8a8408d867cf506d78152ab/02_cardiology_protocol_csv_tables.zip",
+      "run_id": "b3ca9106e8a8408d867cf506d78152ab",
+      "sha256": "669b704fb3d4ae10d5352784954a029ff7675dee1c44fd075db78327176c8147",
+      "size_bytes": 2252,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:48:31.254017+00:00",
+      "filename": "02_cardiology_protocol_complete_export.zip",
+      "format": "bundle_zip",
+      "integrity_status": "unknown",
+      "output_id": "36bde15eea5c4e0c9fc993841c69b917",
+      "path": "data/document_extractions/b3ca9106e8a8408d867cf506d78152ab/02_cardiology_protocol_complete_export.zip",
+      "run_id": "b3ca9106e8a8408d867cf506d78152ab",
+      "sha256": "947abf8ab1a39313c0dbd16ef96348fa1f44e28b63b2c7b45ecc4901b81585f0",
+      "size_bytes": 48651,
+      "verified_at_utc": null
+    }
+  ],
+  "run_id": "b3ca9106e8a8408d867cf506d78152ab",
+  "source": {
+    "character_count": 220,
+    "entity_count": 5,
+    "file_type": "txt",
+    "image_count": 0,
+    "mime_type": "text/plain",
+    "page_count": 0,
+    "paragraph_count": 0,
+    "region_count": 0,
+    "row_count": 0,
+    "sheet_count": 0,
+    "source_name": "02_cardiology_protocol.txt",
+    "source_sha256": "594073c82b1a67d4c411c0bd7e1a54d4b60ab2734cb1fa05a3fa583b4394b4b2",
+    "source_size_bytes": 220,
+    "table_count": 0,
+    "warning_count": 0
+  },
+  "structured_fields": {
+    "activity_measurements": [],
+    "document_type": "research_document",
+    "entity_counts": {
+      "assay_endpoint": 1,
+      "gene_or_protein": 2,
+      "mutation": 1,
+      "organism": 1
+    },
+    "has_limitations": false,
+    "has_methods": false,
+    "has_results": false,
+    "publication_identifiers": [],
+    "sample_sizes": [],
+    "sections": {
+      "unclassified": "DEMO PROTOCOL 2\nTarget: KCNH2\nCompound: dofetilide\nDisease: cardiac arrhythmia\nMutation: T618I\nAssay: Ki\nOrganism: Homo sapiens\nResult: 171 nM\nDemonstration/reference content only; not experimental or clinical evidence."
+    },
+    "sensitive_findings": [],
+    "title": "02_cardiology_protocol.txt"
+  },
+  "warnings": []
+}

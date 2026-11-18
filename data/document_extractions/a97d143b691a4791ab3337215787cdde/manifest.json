@@ -1,0 +1,119 @@
+{
+  "duplicate_of_run_id": null,
+  "engine_version": "2.7.0",
+  "outputs": [
+    {
+      "created_at_utc": "2026-07-04T16:48:33.742859+00:00",
+      "filename": "08_kinase_protocol_extracted.json",
+      "format": "json",
+      "integrity_status": "unknown",
+      "output_id": "f9cb66a167614781a40dd809c6eb1628",
+      "path": "data/document_extractions/a97d143b691a4791ab3337215787cdde/08_kinase_protocol_extracted.json",
+      "run_id": "a97d143b691a4791ab3337215787cdde",
+      "sha256": "1f4bedcbb790b472bdef0450c7b74019f34099791265caac189eba613d12cf20",
+      "size_bytes": 3765,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:48:33.746328+00:00",
+      "filename": "08_kinase_protocol_extracted.xlsx",
+      "format": "xlsx",
+      "integrity_status": "unknown",
+      "output_id": "b7ed29ac02bb4c32a4e8d8117a3d7786",
+      "path": "data/document_extractions/a97d143b691a4791ab3337215787cdde/08_kinase_protocol_extracted.xlsx",
+      "run_id": "a97d143b691a4791ab3337215787cdde",
+      "sha256": "33a12352705fb1e4c7a2d9dbafb5f79df5a5122becc644586cd2e174280c77b0",
+      "size_bytes": 8644,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:48:33.748660+00:00",
+      "filename": "08_kinase_protocol_extracted.docx",
+      "format": "docx",
+      "integrity_status": "unknown",
+      "output_id": "beedfe763e6f487ba8e504284d87c209",
+      "path": "data/document_extractions/a97d143b691a4791ab3337215787cdde/08_kinase_protocol_extracted.docx",
+      "run_id": "a97d143b691a4791ab3337215787cdde",
+      "sha256": "0e116cb5970c34589a44e86fb53d570691f92268ecf7d2a6d0f5c3e2bd250b96",
+      "size_bytes": 37731,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:48:33.750808+00:00",
+      "filename": "08_kinase_protocol_extracted.pdf",
+      "format": "pdf",
+      "integrity_status": "unknown",
+      "output_id": "87e55e07a85340c0abe8da82ec588c06",
+      "path": "data/document_extractions/a97d143b691a4791ab3337215787cdde/08_kinase_protocol_extracted.pdf",
+      "run_id": "a97d143b691a4791ab3337215787cdde",
+      "sha256": "021baa0ae5f88ca2b96f66ce7dd139955f340e803a51d15f221b7d4fa9d36631",
+      "size_bytes": 3894,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:48:33.752759+00:00",
+      "filename": "08_kinase_protocol_csv_tables.zip",
+      "format": "csv_zip",
+      "integrity_status": "unknown",
+      "output_id": "903421beface489b96ca3a03b7a6fa43",
+      "path": "data/document_extractions/a97d143b691a4791ab3337215787cdde/08_kinase_protocol_csv_tables.zip",
+      "run_id": "a97d143b691a4791ab3337215787cdde",
+      "sha256": "6e9fbbc7f53a0863a222313394609e3c67f9ecdd55bed697f4078aab262e5cfa",
+      "size_bytes": 2381,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:48:33.754962+00:00",
+      "filename": "08_kinase_protocol_complete_export.zip",
+      "format": "bundle_zip",
+      "integrity_status": "unknown",
+      "output_id": "98c717752026440ea80a4350d6b838b1",
+      "path": "data/document_extractions/a97d143b691a4791ab3337215787cdde/08_kinase_protocol_complete_export.zip",
+      "run_id": "a97d143b691a4791ab3337215787cdde",
+      "sha256": "7b7e0acd97f89905c1b1b7edac166d3b3eae89d78db32136cd35edcd52a86da8",
+      "size_bytes": 49296,
+      "verified_at_utc": null
+    }
+  ],
+  "run_id": "a97d143b691a4791ab3337215787cdde",
+  "source": {
+    "character_count": 212,
+    "entity_count": 8,
+    "file_type": "txt",
+    "image_count": 0,
+    "mime_type": "text/plain",
+    "page_count": 0,
+    "paragraph_count": 0,
+    "region_count": 0,
+    "row_count": 0,
+    "sheet_count": 0,
+    "source_name": "08_kinase_protocol.txt",
+    "source_sha256": "6035844e14d818b335dea788902c4808c2fea96b5e65f20ed4a1c8f6f93a8d73",
+    "source_size_bytes": 212,
+    "table_count": 0,
+    "warning_count": 0
+  },
+  "structured_fields": {
+    "activity_measurements": [],
+    "document_type": "research_document",
+    "entity_counts": {
+      "assay_endpoint": 1,
+      "disease": 1,
+      "drug_or_compound": 1,
+      "gene_or_protein": 3,
+      "mutation": 1,
+      "organism": 1
+    },
+    "has_limitations": false,
+    "has_methods": false,
+    "has_results": false,
+    "publication_identifiers": [],
+    "sample_sizes": [],
+    "sections": {
+      "unclassified": "DEMO PROTOCOL 8\nTarget: BRAF\nCompound: vemurafenib\nDisease: melanoma\nMutation: V600E\nAssay: IC50\nOrganism: Homo sapiens\nResult: 609 nM\nDemonstration/reference content only; not experimental or clinical evidence."
+    },
+    "sensitive_findings": [],
+    "title": "08_kinase_protocol.txt"
+  },
+  "warnings": []
+}

@@ -1,0 +1,1885 @@
+{
+  "version": "1.0",
+  "root": "data/module_starter_kits",
+  "kit_count": 47,
+  "kits": {
+    "admet_discovery": {
+      "title": "ADMET Triage & Developability",
+      "description": "Batch compound library for rule-based developability triage.",
+      "accepted_formats": "CSV",
+      "directory": "admet_discovery",
+      "zip": "admet_discovery_starter_kit.zip",
+      "files": [
+        {
+          "name": "blank_admet_compounds.csv",
+          "role": "blank",
+          "size_bytes": 34
+        },
+        {
+          "name": "filled_admet_compounds.csv",
+          "role": "example",
+          "size_bytes": 178
+        },
+        {
+          "name": "expected_admet_triage.csv",
+          "role": "output",
+          "size_bytes": 131
+        },
+        {
+          "name": "FORMAT_GUIDE.md",
+          "role": "guide",
+          "size_bytes": 782
+        },
+        {
+          "name": "manifest.json",
+          "role": "manifest",
+          "size_bytes": 661
+        }
+      ]
+    },
+    "alignment_phylogeny": {
+      "title": "Alignment & Phylogeny",
+      "description": "Homologous FASTA sequences and expected tree text.",
+      "accepted_formats": "FASTA, FA, ALN or Newick",
+      "directory": "alignment_phylogeny",
+      "zip": "alignment_phylogeny_starter_kit.zip",
+      "files": [
+        {
+          "name": "blank_homologs.fasta",
+          "role": "blank",
+          "size_bytes": 46
+        },
+        {
+          "name": "filled_homologs.fasta",
+          "role": "example",
+          "size_bytes": 258
+        },
+        {
+          "name": "expected_tree.newick",
+          "role": "output",
+          "size_bytes": 55
+        },
+        {
+          "name": "expected_distance_matrix.csv",
+          "role": "output",
+          "size_bytes": 112
+        },
+        {
+          "name": "FORMAT_GUIDE.md",
+          "role": "guide",
+          "size_bytes": 815
+        },
+        {
+          "name": "manifest.json",
+          "role": "manifest",
+          "size_bytes": 759
+        }
+      ]
+    },
+    "appearance": {
+      "title": "Appearance Studio",
+      "description": "Portable local UI preference profile.",
+      "accepted_formats": "JSON",
+      "directory": "appearance",
+      "zip": "appearance_starter_kit.zip",
+      "files": [
+        {
+          "name": "blank_ui_preferences.json",
+          "role": "blank",
+          "size_bytes": 132
+        },
+        {
+          "name": "filled_ui_preferences_example.json",
+          "role": "example",
+          "size_bytes": 259
+        },
+        {
+          "name": "expected_import_receipt.json",
+          "role": "output",
+          "size_bytes": 67
+        },
+        {
+          "name": "FORMAT_GUIDE.md",
+          "role": "guide",
+          "size_bytes": 808
+        },
+        {
+          "name": "manifest.json",
+          "role": "manifest",
+          "size_bytes": 633
+        }
+      ]
+    },
+    "batch_document_processor": {
+      "title": "Batch Document Processor",
+      "description": "Multiple safe local document examples plus a processing manifest.",
+      "accepted_formats": "CSV, TXT, MD, HTML or JSON",
+      "directory": "batch_document_processor",
+      "zip": "batch_document_processor_starter_kit.zip",
+      "files": [
+        {
+          "name": "document_01.md",
+          "role": "example",
+          "size_bytes": 66
+        },
+        {
+          "name": "document_02.txt",
+          "role": "example",
+          "size_bytes": 50
+        },
+        {
+          "name": "document_03.csv",
+          "role": "example",
+          "size_bytes": 43
+        },
+        {
+          "name": "blank_batch_manifest.csv",
+          "role": "blank",
+          "size_bytes": 35
+        },
+        {
+          "name": "filled_batch_manifest.csv",
+          "role": "example",
+          "size_bytes": 128
+        },
+        {
+          "name": "expected_batch_status.csv",
+          "role": "output",
+          "size_bytes": 92
+        },
+        {
+          "name": "FORMAT_GUIDE.md",
+          "role": "guide",
+          "size_bytes": 826
+        },
+        {
+          "name": "manifest.json",
+          "role": "manifest",
+          "size_bytes": 971
+        }
+      ]
+    },
+    "batch_jobs": {
+      "title": "Resumable Batch Jobs",
+      "description": "Batch prediction records with stable identifiers.",
+      "accepted_formats": "CSV",
+      "directory": "batch_jobs",
+      "zip": "batch_jobs_starter_kit.zip",
+      "files": [
+        {
+          "name": "blank_batch_job.csv",
+          "role": "blank",
+          "size_bytes": 64
+        },
+        {
+          "name": "filled_batch_job.csv",
+          "role": "example",
+          "size_bytes": 251
+        },
+        {
+          "name": "expected_batch_job_results.csv",
+          "role": "output",
+          "size_bytes": 74
+        },
+        {
+          "name": "FORMAT_GUIDE.md",
+          "role": "guide",
+          "size_bytes": 773
+        },
+        {
+          "name": "manifest.json",
+          "role": "manifest",
+          "size_bytes": 628
+        }
+      ]
+    },
+    "batch_sequence": {
+      "title": "Batch Sequence Analysis",
+      "description": "Multi-record FASTA for batch metrics and clustering.",
+      "accepted_formats": "FASTA, FA, FNA, FAA or TXT",
+      "directory": "batch_sequence",
+      "zip": "batch_sequence_starter_kit.zip",
+      "files": [
+        {
+          "name": "blank_batch_sequences.fasta",
+          "role": "blank",
+          "size_bytes": 52
+        },
+        {
+          "name": "filled_batch_sequences.fasta",
+          "role": "example",
+          "size_bytes": 242
+        },
+        {
+          "name": "expected_batch_summary.csv",
+          "role": "output",
+          "size_bytes": 122
+        },
+        {
+          "name": "FORMAT_GUIDE.md",
+          "role": "guide",
+          "size_bytes": 833
+        },
+        {
+          "name": "manifest.json",
+          "role": "manifest",
+          "size_bytes": 674
+        }
+      ]
+    },
+    "benchmark_leakage_lab": {
+      "title": "Benchmark & Leakage Lab",
+      "description": "Separate train and independent benchmark tables.",
+      "accepted_formats": "CSV",
+      "directory": "benchmark_leakage_lab",
+      "zip": "benchmark_leakage_lab_starter_kit.zip",
+      "files": [
+        {
+          "name": "blank_training.csv",
+          "role": "blank",
+          "size_bytes": 75
+        },
+        {
+          "name": "blank_independent_test.csv",
+          "role": "blank",
+          "size_bytes": 75
+        },
+        {
+          "name": "filled_training_example.csv",
+          "role": "example",
+          "size_bytes": 280
+        },
+        {
+          "name": "filled_independent_test_example.csv",
+          "role": "example",
+          "size_bytes": 174
+        },
+        {
+          "name": "expected_leakage_audit.csv",
+          "role": "output",
+          "size_bytes": 81
+        },
+        {
+          "name": "FORMAT_GUIDE.md",
+          "role": "guide",
+          "size_bytes": 807
+        },
+        {
+          "name": "manifest.json",
+          "role": "manifest",
+          "size_bytes": 861
+        }
+      ]
+    },
+    "cancer_genomics": {
+      "title": "Cancer Genomics",
+      "description": "Somatic variants plus optional metadata, CNV, SV and callable territory.",
+      "accepted_formats": "CSV, TSV or MAF",
+      "directory": "cancer_genomics",
+      "zip": "cancer_genomics_starter_kit.zip",
+      "files": [
+        {
+          "name": "blank_somatic_variants.csv",
+          "role": "blank",
+          "size_bytes": 85
+        },
+        {
+          "name": "filled_somatic_variants.csv",
+          "role": "example",
+          "size_bytes": 153
+        },
+        {
+          "name": "blank_cancer_metadata.csv",
+          "role": "blank",
+          "size_bytes": 42
+        },
+        {
+          "name": "filled_cancer_metadata.csv",
+          "role": "example",
+          "size_bytes": 73
+        },
+        {
+          "name": "blank_cnv_segments.csv",
+          "role": "blank",
+          "size_bytes": 52
+        },
+        {
+          "name": "filled_cnv_segments.csv",
+          "role": "example",
+          "size_bytes": 87
+        },
+        {
+          "name": "blank_sv_fusions.csv",
+          "role": "blank",
+          "size_bytes": 41
+        },
+        {
+          "name": "filled_sv_fusions.csv",
+          "role": "example",
+          "size_bytes": 69
+        },
+        {
+          "name": "blank_callable_territory.csv",
+          "role": "blank",
+          "size_bytes": 27
+        },
+        {
+          "name": "expected_cancer_summary.csv",
+          "role": "output",
+          "size_bytes": 82
+        },
+        {
+          "name": "FORMAT_GUIDE.md",
+          "role": "guide",
+          "size_bytes": 814
+        },
+        {
+          "name": "manifest.json",
+          "role": "manifest",
+          "size_bytes": 1384
+        }
+      ]
+    },
+    "chembl_builder": {
+      "title": "ChEMBL Dataset Builder",
+      "description": "Target and activity filters for reproducible dataset building.",
+      "accepted_formats": "CSV",
+      "directory": "chembl_builder",
+      "zip": "chembl_builder_starter_kit.zip",
+      "files": [
+        {
+          "name": "blank_chembl_targets.csv",
+          "role": "blank",
+          "size_bytes": 58
+        },
+        {
+          "name": "filled_chembl_targets.csv",
+          "role": "example",
+          "size_bytes": 134
+        },
+        {
+          "name": "expected_chembl_dataset.csv",
+          "role": "output",
+          "size_bytes": 178
+        },
+        {
+          "name": "FORMAT_GUIDE.md",
+          "role": "guide",
+          "size_bytes": 810
+        },
+        {
+          "name": "manifest.json",
+          "role": "manifest",
+          "size_bytes": 655
+        }
+      ]
+    },
+    "comparative_pathogen_genomics": {
+      "title": "Comparative Pathogen Genomics",
+      "description": "Query and reference genome FASTA panels.",
+      "accepted_formats": "FASTA, FA or FNA",
+      "directory": "comparative_pathogen_genomics",
+      "zip": "comparative_pathogen_genomics_starter_kit.zip",
+      "files": [
+        {
+          "name": "blank_query_genome.fasta",
+          "role": "blank",
+          "size_bytes": 35
+        },
+        {
+          "name": "filled_query_genome.fasta",
+          "role": "example",
+          "size_bytes": 312
+        },
+        {
+          "name": "blank_reference_panel.fasta",
+          "role": "blank",
+          "size_bytes": 37
+        },
+        {
+          "name": "filled_reference_panel.fasta",
+          "role": "example",
+          "size_bytes": 620
+        },
+        {
+          "name": "expected_assignment.csv",
+          "role": "output",
+          "size_bytes": 124
+        },
+        {
+          "name": "FORMAT_GUIDE.md",
+          "role": "guide",
+          "size_bytes": 826
+        },
+        {
+          "name": "manifest.json",
+          "role": "manifest",
+          "size_bytes": 876
+        }
+      ]
+    },
+    "connected_data_explorer": {
+      "title": "Connected Data Explorer",
+      "description": "Provider/entity query manifest for repeatable exploration.",
+      "accepted_formats": "CSV or JSON",
+      "directory": "connected_data_explorer",
+      "zip": "connected_data_explorer_starter_kit.zip",
+      "files": [
+        {
+          "name": "blank_connected_queries.csv",
+          "role": "blank",
+          "size_bytes": 49
+        },
+        {
+          "name": "filled_connected_queries.csv",
+          "role": "example",
+          "size_bytes": 153
+        },
+        {
+          "name": "expected_connected_results.csv",
+          "role": "output",
+          "size_bytes": 57
+        },
+        {
+          "name": "FORMAT_GUIDE.md",
+          "role": "guide",
+          "size_bytes": 801
+        },
+        {
+          "name": "manifest.json",
+          "role": "manifest",
+          "size_bytes": 677
+        }
+      ]
+    },
+    "data_quality": {
+      "title": "Data Quality & Activity",
+      "description": "DTI activity records for validation and duplicate checks.",
+      "accepted_formats": "CSV",
+      "directory": "data_quality",
+      "zip": "data_quality_starter_kit.zip",
+      "files": [
+        {
+          "name": "blank_dti_dataset.csv",
+          "role": "blank",
+          "size_bytes": 75
+        },
+        {
+          "name": "filled_dti_example.csv",
+          "role": "example",
+          "size_bytes": 379
+        },
+        {
+          "name": "expected_dti_output.csv",
+          "role": "output",
+          "size_bytes": 142
+        },
+        {
+          "name": "FORMAT_GUIDE.md",
+          "role": "guide",
+          "size_bytes": 870
+        },
+        {
+          "name": "manifest.json",
+          "role": "manifest",
+          "size_bytes": 639
+        }
+      ]
+    },
+    "dataset_registry": {
+      "title": "Dataset Registry & Lineage",
+      "description": "Dataset registration metadata and provenance.",
+      "accepted_formats": "CSV",
+      "directory": "dataset_registry",
+      "zip": "dataset_registry_starter_kit.zip",
+      "files": [
+        {
+          "name": "blank_dataset_registry.csv",
+          "role": "blank",
+          "size_bytes": 73
+        },
+        {
+          "name": "filled_dataset_registry.csv",
+          "role": "example",
+          "size_bytes": 165
+        },
+        {
+          "name": "expected_registry_receipt.json",
+          "role": "output",
+          "size_bytes": 132
+        },
+        {
+          "name": "FORMAT_GUIDE.md",
+          "role": "guide",
+          "size_bytes": 814
+        },
+        {
+          "name": "manifest.json",
+          "role": "manifest",
+          "size_bytes": 651
+        }
+      ]
+    },
+    "discovery_command_center": {
+      "title": "Discovery Command Center",
+      "description": "Target-evidence scoring input.",
+      "accepted_formats": "CSV",
+      "directory": "discovery_command_center",
+      "zip": "discovery_command_center_starter_kit.zip",
+      "files": [
+        {
+          "name": "blank_target_evidence.csv",
+          "role": "blank",
+          "size_bytes": 77
+        },
+        {
+          "name": "filled_target_evidence.csv",
+          "role": "example",
+          "size_bytes": 246
+        },
+        {
+          "name": "expected_target_priority.csv",
+          "role": "output",
+          "size_bytes": 86
+        },
+        {
+          "name": "FORMAT_GUIDE.md",
+          "role": "guide",
+          "size_bytes": 806
+        },
+        {
+          "name": "manifest.json",
+          "role": "manifest",
+          "size_bytes": 637
+        }
+      ]
+    },
+    "document_evidence_bridge": {
+      "title": "Document Evidence Bridge",
+      "description": "Document-to-evidence link mapping.",
+      "accepted_formats": "CSV",
+      "directory": "document_evidence_bridge",
+      "zip": "document_evidence_bridge_starter_kit.zip",
+      "files": [
+        {
+          "name": "blank_document_evidence_links.csv",
+          "role": "blank",
+          "size_bytes": 60
+        },
+        {
+          "name": "filled_document_evidence_links.csv",
+          "role": "example",
+          "size_bytes": 103
+        },
+        {
+          "name": "expected_bridge_summary.csv",
+          "role": "output",
+          "size_bytes": 62
+        },
+        {
+          "name": "FORMAT_GUIDE.md",
+          "role": "guide",
+          "size_bytes": 806
+        },
+        {
+          "name": "manifest.json",
+          "role": "manifest",
+          "size_bytes": 656
+        }
+      ]
+    },
+    "document_intelligence": {
+      "title": "Document Intelligence Center",
+      "description": "Small local documents covering supported text and table formats.",
+      "accepted_formats": "PDF, DOCX, XLSX, CSV, TSV, TXT, MD, HTML, JSON, XML or YAML",
+      "directory": "document_intelligence",
+      "zip": "document_intelligence_starter_kit.zip",
+      "files": [
+        {
+          "name": "blank_document_notes.md",
+          "role": "blank",
+          "size_bytes": 68
+        },
+        {
+          "name": "filled_document_example.md",
+          "role": "example",
+          "size_bytes": 121
+        },
+        {
+          "name": "filled_table_example.csv",
+          "role": "example",
+          "size_bytes": 57
+        },
+        {
+          "name": "filled_metadata_example.json",
+          "role": "example",
+          "size_bytes": 96
+        },
+        {
+          "name": "expected_extraction.json",
+          "role": "output",
+          "size_bytes": 210
+        },
+        {
+          "name": "FORMAT_GUIDE.md",
+          "role": "guide",
+          "size_bytes": 863
+        },
+        {
+          "name": "manifest.json",
+          "role": "manifest",
+          "size_bytes": 933
+        }
+      ]
+    },
+    "drug_analyzer": {
+      "title": "Drug SMILES Analyzer",
+      "description": "Compound identifiers and SMILES for descriptor and similarity analysis.",
+      "accepted_formats": "CSV",
+      "directory": "drug_analyzer",
+      "zip": "drug_analyzer_starter_kit.zip",
+      "files": [
+        {
+          "name": "blank_compounds.csv",
+          "role": "blank",
+          "size_bytes": 25
+        },
+        {
+          "name": "filled_compounds_example.csv",
+          "role": "example",
+          "size_bytes": 157
+        },
+        {
+          "name": "expected_descriptor_output.csv",
+          "role": "output",
+          "size_bytes": 177
+        },
+        {
+          "name": "FORMAT_GUIDE.md",
+          "role": "guide",
+          "size_bytes": 774
+        },
+        {
+          "name": "manifest.json",
+          "role": "manifest",
+          "size_bytes": 662
+        }
+      ]
+    },
+    "dti_features": {
+      "title": "DTI Feature Builder",
+      "description": "Drug\u2013target pair data for feature generation.",
+      "accepted_formats": "CSV",
+      "directory": "dti_features",
+      "zip": "dti_features_starter_kit.zip",
+      "files": [
+        {
+          "name": "blank_dti_dataset.csv",
+          "role": "blank",
+          "size_bytes": 75
+        },
+        {
+          "name": "filled_dti_example.csv",
+          "role": "example",
+          "size_bytes": 379
+        },
+        {
+          "name": "expected_dti_output.csv",
+          "role": "output",
+          "size_bytes": 142
+        },
+        {
+          "name": "FORMAT_GUIDE.md",
+          "role": "guide",
+          "size_bytes": 866
+        },
+        {
+          "name": "manifest.json",
+          "role": "manifest",
+          "size_bytes": 628
+        }
+      ]
+    },
+    "dti_predictor": {
+      "title": "DTI Predictor",
+      "description": "Batch drug\u2013target pairs for local model inference.",
+      "accepted_formats": "CSV",
+      "directory": "dti_predictor",
+      "zip": "dti_predictor_starter_kit.zip",
+      "files": [
+        {
+          "name": "blank_dti_dataset.csv",
+          "role": "blank",
+          "size_bytes": 75
+        },
+        {
+          "name": "filled_dti_example.csv",
+          "role": "example",
+          "size_bytes": 379
+        },
+        {
+          "name": "expected_dti_output.csv",
+          "role": "output",
+          "size_bytes": 142
+        },
+        {
+          "name": "FORMAT_GUIDE.md",
+          "role": "guide",
+          "size_bytes": 860
+        },
+        {
+          "name": "manifest.json",
+          "role": "manifest",
+          "size_bytes": 628
+        }
+      ]
+    },
+    "evidence_studio": {
+      "title": "Evidence Package Studio",
+      "description": "Evidence-package manifest and a minimal package layout.",
+      "accepted_formats": "ZIP or JSON",
+      "directory": "evidence_studio",
+      "zip": "evidence_studio_starter_kit.zip",
+      "files": [
+        {
+          "name": "blank_evidence_manifest.json",
+          "role": "blank",
+          "size_bytes": 100
+        },
+        {
+          "name": "filled_evidence_manifest.json",
+          "role": "example",
+          "size_bytes": 301
+        },
+        {
+          "name": "expected_verification_receipt.json",
+          "role": "output",
+          "size_bytes": 95
+        },
+        {
+          "name": "FORMAT_GUIDE.md",
+          "role": "guide",
+          "size_bytes": 819
+        },
+        {
+          "name": "manifest.json",
+          "role": "manifest",
+          "size_bytes": 673
+        }
+      ]
+    },
+    "external_databases": {
+      "title": "Scientific Database Lookup",
+      "description": "Offline query list for provider lookup sessions.",
+      "accepted_formats": "CSV",
+      "directory": "external_databases",
+      "zip": "external_databases_starter_kit.zip",
+      "files": [
+        {
+          "name": "blank_provider_queries.csv",
+          "role": "blank",
+          "size_bytes": 42
+        },
+        {
+          "name": "filled_provider_queries.csv",
+          "role": "example",
+          "size_bytes": 140
+        },
+        {
+          "name": "expected_lookup_log.csv",
+          "role": "output",
+          "size_bytes": 89
+        },
+        {
+          "name": "FORMAT_GUIDE.md",
+          "role": "guide",
+          "size_bytes": 803
+        },
+        {
+          "name": "manifest.json",
+          "role": "manifest",
+          "size_bytes": 648
+        }
+      ]
+    },
+    "external_validation": {
+      "title": "External Validation & Drift",
+      "description": "Independent labelled records for external validation and drift review.",
+      "accepted_formats": "CSV",
+      "directory": "external_validation",
+      "zip": "external_validation_starter_kit.zip",
+      "files": [
+        {
+          "name": "blank_external_validation.csv",
+          "role": "blank",
+          "size_bytes": 75
+        },
+        {
+          "name": "filled_external_validation.csv",
+          "role": "example",
+          "size_bytes": 379
+        },
+        {
+          "name": "expected_validation_summary.csv",
+          "role": "output",
+          "size_bytes": 103
+        },
+        {
+          "name": "FORMAT_GUIDE.md",
+          "role": "guide",
+          "size_bytes": 802
+        },
+        {
+          "name": "manifest.json",
+          "role": "manifest",
+          "size_bytes": 687
+        }
+      ]
+    },
+    "fastq_genomics_qc": {
+      "title": "FASTQ & Genome QC",
+      "description": "Small single-end, paired-end and assembly examples.",
+      "accepted_formats": "FASTQ, FASTQ.GZ and FASTA",
+      "directory": "fastq_genomics_qc",
+      "zip": "fastq_genomics_qc_starter_kit.zip",
+      "files": [
+        {
+          "name": "blank_reads.fastq",
+          "role": "blank",
+          "size_bytes": 30
+        },
+        {
+          "name": "filled_reads_R1.fastq",
+          "role": "example",
+          "size_bytes": 106
+        },
+        {
+          "name": "filled_reads_R2.fastq",
+          "role": "example",
+          "size_bytes": 106
+        },
+        {
+          "name": "filled_assembly.fasta",
+          "role": "example",
+          "size_bytes": 161
+        },
+        {
+          "name": "expected_fastq_qc.csv",
+          "role": "output",
+          "size_bytes": 98
+        },
+        {
+          "name": "FORMAT_GUIDE.md",
+          "role": "guide",
+          "size_bytes": 874
+        },
+        {
+          "name": "manifest.json",
+          "role": "manifest",
+          "size_bytes": 848
+        }
+      ]
+    },
+    "local_data": {
+      "title": "Local Data Manager",
+      "description": "Portable local data-import manifest.",
+      "accepted_formats": "CSV",
+      "directory": "local_data",
+      "zip": "local_data_starter_kit.zip",
+      "files": [
+        {
+          "name": "blank_local_asset_manifest.csv",
+          "role": "blank",
+          "size_bytes": 53
+        },
+        {
+          "name": "filled_local_asset_manifest.csv",
+          "role": "example",
+          "size_bytes": 123
+        },
+        {
+          "name": "expected_import_summary.json",
+          "role": "output",
+          "size_bytes": 55
+        },
+        {
+          "name": "FORMAT_GUIDE.md",
+          "role": "guide",
+          "size_bytes": 785
+        },
+        {
+          "name": "manifest.json",
+          "role": "manifest",
+          "size_bytes": 633
+        }
+      ]
+    },
+    "metagenomics_pipeline": {
+      "title": "Metagenomics Pipeline",
+      "description": "Abundance, metadata, function profile and Newick tree bundle.",
+      "accepted_formats": "CSV, TSV, NWK or Newick",
+      "directory": "metagenomics_pipeline",
+      "zip": "metagenomics_pipeline_starter_kit.zip",
+      "files": [
+        {
+          "name": "blank_taxon_abundance.csv",
+          "role": "blank",
+          "size_bytes": 19
+        },
+        {
+          "name": "filled_taxon_abundance.csv",
+          "role": "example",
+          "size_bytes": 72
+        },
+        {
+          "name": "blank_sample_metadata.csv",
+          "role": "blank",
+          "size_bytes": 43
+        },
+        {
+          "name": "filled_sample_metadata.csv",
+          "role": "example",
+          "size_bytes": 121
+        },
+        {
+          "name": "blank_functional_profile.csv",
+          "role": "blank",
+          "size_bytes": 29
+        },
+        {
+          "name": "filled_functional_profile.csv",
+          "role": "example",
+          "size_bytes": 84
+        },
+        {
+          "name": "filled_phylogenetic_tree.nwk",
+          "role": "example",
+          "size_bytes": 45
+        },
+        {
+          "name": "expected_metagenomics_results.csv",
+          "role": "output",
+          "size_bytes": 100
+        },
+        {
+          "name": "FORMAT_GUIDE.md",
+          "role": "guide",
+          "size_bytes": 873
+        },
+        {
+          "name": "manifest.json",
+          "role": "manifest",
+          "size_bytes": 1215
+        }
+      ]
+    },
+    "microbiology_metagenomics": {
+      "title": "Microbiology & Metagenomics",
+      "description": "Taxon abundance and matching sample metadata.",
+      "accepted_formats": "CSV or TSV",
+      "directory": "microbiology_metagenomics",
+      "zip": "microbiology_metagenomics_starter_kit.zip",
+      "files": [
+        {
+          "name": "blank_taxon_abundance.csv",
+          "role": "blank",
+          "size_bytes": 37
+        },
+        {
+          "name": "filled_taxon_abundance.csv",
+          "role": "example",
+          "size_bytes": 89
+        },
+        {
+          "name": "blank_microbiome_metadata.csv",
+          "role": "blank",
+          "size_bytes": 28
+        },
+        {
+          "name": "filled_microbiome_metadata.csv",
+          "role": "example",
+          "size_bytes": 85
+        },
+        {
+          "name": "expected_diversity.csv",
+          "role": "output",
+          "size_bytes": 73
+        },
+        {
+          "name": "FORMAT_GUIDE.md",
+          "role": "guide",
+          "size_bytes": 823
+        },
+        {
+          "name": "manifest.json",
+          "role": "manifest",
+          "size_bytes": 871
+        }
+      ]
+    },
+    "model_evaluation": {
+      "title": "Model Evaluation",
+      "description": "Held-out labels and prediction probabilities for evaluation.",
+      "accepted_formats": "CSV",
+      "directory": "model_evaluation",
+      "zip": "model_evaluation_starter_kit.zip",
+      "files": [
+        {
+          "name": "blank_model_evaluation.csv",
+          "role": "blank",
+          "size_bytes": 32
+        },
+        {
+          "name": "filled_model_evaluation.csv",
+          "role": "example",
+          "size_bytes": 104
+        },
+        {
+          "name": "expected_metrics.csv",
+          "role": "output",
+          "size_bytes": 70
+        },
+        {
+          "name": "FORMAT_GUIDE.md",
+          "role": "guide",
+          "size_bytes": 783
+        },
+        {
+          "name": "manifest.json",
+          "role": "manifest",
+          "size_bytes": 645
+        }
+      ]
+    },
+    "model_training": {
+      "title": "Model Training",
+      "description": "Labelled DTI data for classification or regression training.",
+      "accepted_formats": "CSV",
+      "directory": "model_training",
+      "zip": "model_training_starter_kit.zip",
+      "files": [
+        {
+          "name": "blank_dti_dataset.csv",
+          "role": "blank",
+          "size_bytes": 75
+        },
+        {
+          "name": "filled_dti_example.csv",
+          "role": "example",
+          "size_bytes": 379
+        },
+        {
+          "name": "expected_dti_output.csv",
+          "role": "output",
+          "size_bytes": 142
+        },
+        {
+          "name": "FORMAT_GUIDE.md",
+          "role": "guide",
+          "size_bytes": 861
+        },
+        {
+          "name": "manifest.json",
+          "role": "manifest",
+          "size_bytes": 635
+        }
+      ]
+    },
+    "ocr_layout_review": {
+      "title": "OCR & Layout Review",
+      "description": "OCR correction queue template.",
+      "accepted_formats": "CSV",
+      "directory": "ocr_layout_review",
+      "zip": "ocr_layout_review_starter_kit.zip",
+      "files": [
+        {
+          "name": "blank_ocr_corrections.csv",
+          "role": "blank",
+          "size_bytes": 60
+        },
+        {
+          "name": "filled_ocr_corrections.csv",
+          "role": "example",
+          "size_bytes": 93
+        },
+        {
+          "name": "expected_ocr_review.csv",
+          "role": "output",
+          "size_bytes": 54
+        },
+        {
+          "name": "FORMAT_GUIDE.md",
+          "role": "guide",
+          "size_bytes": 798
+        },
+        {
+          "name": "manifest.json",
+          "role": "manifest",
+          "size_bytes": 619
+        }
+      ]
+    },
+    "omics_integration": {
+      "title": "Omics Integration Hub",
+      "description": "Matched transcriptomics, proteomics and optional metabolomics matrices.",
+      "accepted_formats": "CSV or TSV",
+      "directory": "omics_integration",
+      "zip": "omics_integration_starter_kit.zip",
+      "files": [
+        {
+          "name": "blank_transcriptomics.csv",
+          "role": "blank",
+          "size_bytes": 24
+        },
+        {
+          "name": "filled_transcriptomics.csv",
+          "role": "example",
+          "size_bytes": 60
+        },
+        {
+          "name": "blank_proteomics.csv",
+          "role": "blank",
+          "size_bytes": 24
+        },
+        {
+          "name": "filled_proteomics.csv",
+          "role": "example",
+          "size_bytes": 63
+        },
+        {
+          "name": "filled_metabolomics.csv",
+          "role": "example",
+          "size_bytes": 66
+        },
+        {
+          "name": "expected_integration.csv",
+          "role": "output",
+          "size_bytes": 79
+        },
+        {
+          "name": "FORMAT_GUIDE.md",
+          "role": "guide",
+          "size_bytes": 823
+        },
+        {
+          "name": "manifest.json",
+          "role": "manifest",
+          "size_bytes": 969
+        }
+      ]
+    },
+    "pathway_network": {
+      "title": "Pathway & Network Analysis",
+      "description": "Ranked gene list and optional GMT pathway collection.",
+      "accepted_formats": "CSV, TSV, GMT or TXT",
+      "directory": "pathway_network",
+      "zip": "pathway_network_starter_kit.zip",
+      "files": [
+        {
+          "name": "blank_ranked_genes.csv",
+          "role": "blank",
+          "size_bytes": 20
+        },
+        {
+          "name": "filled_ranked_genes.csv",
+          "role": "example",
+          "size_bytes": 84
+        },
+        {
+          "name": "blank_pathways.gmt",
+          "role": "blank",
+          "size_bytes": 37
+        },
+        {
+          "name": "filled_pathways.gmt",
+          "role": "example",
+          "size_bytes": 93
+        },
+        {
+          "name": "expected_pathway_results.csv",
+          "role": "output",
+          "size_bytes": 113
+        },
+        {
+          "name": "FORMAT_GUIDE.md",
+          "role": "guide",
+          "size_bytes": 856
+        },
+        {
+          "name": "manifest.json",
+          "role": "manifest",
+          "size_bytes": 857
+        }
+      ]
+    },
+    "ppi_interaction_ml": {
+      "title": "Protein Interaction ML",
+      "description": "Labelled and candidate protein-pair tables.",
+      "accepted_formats": "CSV",
+      "directory": "ppi_interaction_ml",
+      "zip": "ppi_interaction_ml_starter_kit.zip",
+      "files": [
+        {
+          "name": "blank_ppi_training.csv",
+          "role": "blank",
+          "size_bytes": 49
+        },
+        {
+          "name": "filled_ppi_training.csv",
+          "role": "example",
+          "size_bytes": 262
+        },
+        {
+          "name": "blank_ppi_candidates.csv",
+          "role": "blank",
+          "size_bytes": 43
+        },
+        {
+          "name": "filled_ppi_candidates.csv",
+          "role": "example",
+          "size_bytes": 131
+        },
+        {
+          "name": "expected_ppi_predictions.csv",
+          "role": "output",
+          "size_bytes": 82
+        },
+        {
+          "name": "FORMAT_GUIDE.md",
+          "role": "guide",
+          "size_bytes": 837
+        },
+        {
+          "name": "manifest.json",
+          "role": "manifest",
+          "size_bytes": 842
+        }
+      ]
+    },
+    "primer_crispr_codon": {
+      "title": "Primer, CRISPR & Codon Studio",
+      "description": "Target sequence plus optional design-region table.",
+      "accepted_formats": "FASTA or CSV",
+      "directory": "primer_crispr_codon",
+      "zip": "primer_crispr_codon_starter_kit.zip",
+      "files": [
+        {
+          "name": "blank_target.fasta",
+          "role": "blank",
+          "size_bytes": 36
+        },
+        {
+          "name": "filled_target.fasta",
+          "role": "example",
+          "size_bytes": 236
+        },
+        {
+          "name": "blank_design_regions.csv",
+          "role": "blank",
+          "size_bytes": 51
+        },
+        {
+          "name": "filled_design_regions.csv",
+          "role": "example",
+          "size_bytes": 104
+        },
+        {
+          "name": "expected_design_candidates.csv",
+          "role": "output",
+          "size_bytes": 114
+        },
+        {
+          "name": "FORMAT_GUIDE.md",
+          "role": "guide",
+          "size_bytes": 843
+        },
+        {
+          "name": "manifest.json",
+          "role": "manifest",
+          "size_bytes": 861
+        }
+      ]
+    },
+    "project_portfolio": {
+      "title": "Project Portfolio",
+      "description": "Controlled project bundle for offline project import.",
+      "accepted_formats": "JSON",
+      "directory": "project_portfolio",
+      "zip": "project_portfolio_starter_kit.zip",
+      "files": [
+        {
+          "name": "blank_project_bundle.json",
+          "role": "blank",
+          "size_bytes": 122
+        },
+        {
+          "name": "filled_project_bundle.json",
+          "role": "example",
+          "size_bytes": 307
+        },
+        {
+          "name": "expected_project_import.json",
+          "role": "output",
+          "size_bytes": 81
+        },
+        {
+          "name": "FORMAT_GUIDE.md",
+          "role": "guide",
+          "size_bytes": 791
+        },
+        {
+          "name": "manifest.json",
+          "role": "manifest",
+          "size_bytes": 648
+        }
+      ]
+    },
+    "protein_annotation": {
+      "title": "Protein Annotation & Proteomics",
+      "description": "Protein FASTA plus long-format intensity data.",
+      "accepted_formats": "FASTA, FAA, CSV or TSV",
+      "directory": "protein_annotation",
+      "zip": "protein_annotation_starter_kit.zip",
+      "files": [
+        {
+          "name": "blank_proteins.fasta",
+          "role": "blank",
+          "size_bytes": 37
+        },
+        {
+          "name": "filled_proteins.fasta",
+          "role": "example",
+          "size_bytes": 155
+        },
+        {
+          "name": "blank_protein_intensity.csv",
+          "role": "blank",
+          "size_bytes": 38
+        },
+        {
+          "name": "filled_protein_intensity.csv",
+          "role": "example",
+          "size_bytes": 138
+        },
+        {
+          "name": "expected_protein_summary.csv",
+          "role": "output",
+          "size_bytes": 81
+        },
+        {
+          "name": "FORMAT_GUIDE.md",
+          "role": "guide",
+          "size_bytes": 853
+        },
+        {
+          "name": "manifest.json",
+          "role": "manifest",
+          "size_bytes": 875
+        }
+      ]
+    },
+    "provider_integration_center": {
+      "title": "Provider Integration Center",
+      "description": "Safe provider configuration without secrets.",
+      "accepted_formats": "JSON",
+      "directory": "provider_integration_center",
+      "zip": "provider_integration_center_starter_kit.zip",
+      "files": [
+        {
+          "name": "blank_provider_profile.json",
+          "role": "blank",
+          "size_bytes": 166
+        },
+        {
+          "name": "filled_provider_profile_example.json",
+          "role": "example",
+          "size_bytes": 269
+        },
+        {
+          "name": "expected_connection_test.json",
+          "role": "output",
+          "size_bytes": 89
+        },
+        {
+          "name": "FORMAT_GUIDE.md",
+          "role": "guide",
+          "size_bytes": 849
+        },
+        {
+          "name": "manifest.json",
+          "role": "manifest",
+          "size_bytes": 672
+        }
+      ]
+    },
+    "real_evidence_studio": {
+      "title": "Real Evidence Studio",
+      "description": "Evidence rows with source, assay context and review state.",
+      "accepted_formats": "CSV, TSV or TXT",
+      "directory": "real_evidence_studio",
+      "zip": "real_evidence_studio_starter_kit.zip",
+      "files": [
+        {
+          "name": "blank_evidence_records.csv",
+          "role": "blank",
+          "size_bytes": 84
+        },
+        {
+          "name": "filled_evidence_records.csv",
+          "role": "example",
+          "size_bytes": 187
+        },
+        {
+          "name": "expected_review_queue.csv",
+          "role": "output",
+          "size_bytes": 96
+        },
+        {
+          "name": "FORMAT_GUIDE.md",
+          "role": "guide",
+          "size_bytes": 812
+        },
+        {
+          "name": "manifest.json",
+          "role": "manifest",
+          "size_bytes": 668
+        }
+      ]
+    },
+    "report_studio": {
+      "title": "Research Report Studio",
+      "description": "Structured report metadata and findings.",
+      "accepted_formats": "CSV or JSON",
+      "directory": "report_studio",
+      "zip": "report_studio_starter_kit.zip",
+      "files": [
+        {
+          "name": "blank_report_findings.csv",
+          "role": "blank",
+          "size_bytes": 54
+        },
+        {
+          "name": "filled_report_findings.csv",
+          "role": "example",
+          "size_bytes": 162
+        },
+        {
+          "name": "report_metadata.json",
+          "role": "example",
+          "size_bytes": 120
+        },
+        {
+          "name": "expected_report_bundle_manifest.json",
+          "role": "output",
+          "size_bytes": 126
+        },
+        {
+          "name": "FORMAT_GUIDE.md",
+          "role": "guide",
+          "size_bytes": 816
+        },
+        {
+          "name": "manifest.json",
+          "role": "manifest",
+          "size_bytes": 751
+        }
+      ]
+    },
+    "scientific_curation": {
+      "title": "Scientific Data Curation",
+      "description": "Activity records with provenance and units.",
+      "accepted_formats": "CSV or TSV",
+      "directory": "scientific_curation",
+      "zip": "scientific_curation_starter_kit.zip",
+      "files": [
+        {
+          "name": "blank_activity_curation.csv",
+          "role": "blank",
+          "size_bytes": 108
+        },
+        {
+          "name": "filled_activity_curation.csv",
+          "role": "example",
+          "size_bytes": 171
+        },
+        {
+          "name": "expected_curated_activity.csv",
+          "role": "output",
+          "size_bytes": 90
+        },
+        {
+          "name": "FORMAT_GUIDE.md",
+          "role": "guide",
+          "size_bytes": 851
+        },
+        {
+          "name": "manifest.json",
+          "role": "manifest",
+          "size_bytes": 658
+        }
+      ]
+    },
+    "scientific_release_gate": {
+      "title": "Scientific Release Gate",
+      "description": "Release evidence JSONs for validation, leakage and provenance gates.",
+      "accepted_formats": "JSON",
+      "directory": "scientific_release_gate",
+      "zip": "scientific_release_gate_starter_kit.zip",
+      "files": [
+        {
+          "name": "blank_external_validation.json",
+          "role": "blank",
+          "size_bytes": 78
+        },
+        {
+          "name": "blank_split_audit.json",
+          "role": "blank",
+          "size_bytes": 118
+        },
+        {
+          "name": "blank_evidence_manifest.json",
+          "role": "blank",
+          "size_bytes": 73
+        },
+        {
+          "name": "filled_release_evidence_example.json",
+          "role": "example",
+          "size_bytes": 136
+        },
+        {
+          "name": "expected_release_decision.json",
+          "role": "output",
+          "size_bytes": 126
+        },
+        {
+          "name": "FORMAT_GUIDE.md",
+          "role": "guide",
+          "size_bytes": 805
+        },
+        {
+          "name": "manifest.json",
+          "role": "manifest",
+          "size_bytes": 897
+        }
+      ]
+    },
+    "sequence_analyzer": {
+      "title": "Sequence Analyzer",
+      "description": "DNA, RNA and protein sequence templates for direct analysis.",
+      "accepted_formats": "FASTA, FA, FNA, FAA or TXT",
+      "directory": "sequence_analyzer",
+      "zip": "sequence_analyzer_starter_kit.zip",
+      "files": [
+        {
+          "name": "blank_sequence.fasta",
+          "role": "blank",
+          "size_bytes": 25
+        },
+        {
+          "name": "filled_dna_example.fasta",
+          "role": "example",
+          "size_bytes": 103
+        },
+        {
+          "name": "filled_protein_example.faa",
+          "role": "example",
+          "size_bytes": 87
+        },
+        {
+          "name": "expected_sequence_summary.csv",
+          "role": "output",
+          "size_bytes": 112
+        },
+        {
+          "name": "FORMAT_GUIDE.md",
+          "role": "guide",
+          "size_bytes": 849
+        },
+        {
+          "name": "manifest.json",
+          "role": "manifest",
+          "size_bytes": 776
+        }
+      ]
+    },
+    "sequence_comparison": {
+      "title": "Sequence Comparison",
+      "description": "A ready two-sequence comparison pair.",
+      "accepted_formats": "FASTA, FA or TXT",
+      "directory": "sequence_comparison",
+      "zip": "sequence_comparison_starter_kit.zip",
+      "files": [
+        {
+          "name": "blank_pair.fasta",
+          "role": "blank",
+          "size_bytes": 56
+        },
+        {
+          "name": "filled_pair_example.fasta",
+          "role": "example",
+          "size_bytes": 186
+        },
+        {
+          "name": "expected_comparison_summary.csv",
+          "role": "output",
+          "size_bytes": 124
+        },
+        {
+          "name": "FORMAT_GUIDE.md",
+          "role": "guide",
+          "size_bytes": 803
+        },
+        {
+          "name": "manifest.json",
+          "role": "manifest",
+          "size_bytes": 641
+        }
+      ]
+    },
+    "single_cell_heterogeneity": {
+      "title": "Single-Cell Heterogeneity",
+      "description": "Genes-by-cells matrix and cell metadata.",
+      "accepted_formats": "CSV, TSV, 10x ZIP or H5AD",
+      "directory": "single_cell_heterogeneity",
+      "zip": "single_cell_heterogeneity_starter_kit.zip",
+      "files": [
+        {
+          "name": "blank_single_cell_counts.csv",
+          "role": "blank",
+          "size_bytes": 33
+        },
+        {
+          "name": "filled_single_cell_counts.csv",
+          "role": "example",
+          "size_bytes": 89
+        },
+        {
+          "name": "blank_cell_metadata.csv",
+          "role": "blank",
+          "size_bytes": 35
+        },
+        {
+          "name": "filled_cell_metadata.csv",
+          "role": "example",
+          "size_bytes": 135
+        },
+        {
+          "name": "expected_cell_clusters.csv",
+          "role": "output",
+          "size_bytes": 97
+        },
+        {
+          "name": "FORMAT_GUIDE.md",
+          "role": "guide",
+          "size_bytes": 856
+        },
+        {
+          "name": "manifest.json",
+          "role": "manifest",
+          "size_bytes": 878
+        }
+      ]
+    },
+    "structural_bioinformatics": {
+      "title": "Structural Bioinformatics",
+      "description": "Small valid PDB example and residue-selection table.",
+      "accepted_formats": "PDB, CIF or mmCIF",
+      "directory": "structural_bioinformatics",
+      "zip": "structural_bioinformatics_starter_kit.zip",
+      "files": [
+        {
+          "name": "blank_structure_notes.csv",
+          "role": "blank",
+          "size_bytes": 52
+        },
+        {
+          "name": "filled_structure.pdb",
+          "role": "example",
+          "size_bytes": 349
+        },
+        {
+          "name": "filled_structure_notes.csv",
+          "role": "example",
+          "size_bytes": 84
+        },
+        {
+          "name": "expected_structure_summary.csv",
+          "role": "output",
+          "size_bytes": 78
+        },
+        {
+          "name": "FORMAT_GUIDE.md",
+          "role": "guide",
+          "size_bytes": 821
+        },
+        {
+          "name": "manifest.json",
+          "role": "manifest",
+          "size_bytes": 776
+        }
+      ]
+    },
+    "transcriptomics_expression": {
+      "title": "Transcriptomics Expression Lab",
+      "description": "Gene-count matrix and editable sample metadata.",
+      "accepted_formats": "CSV or TSV",
+      "directory": "transcriptomics_expression",
+      "zip": "transcriptomics_expression_starter_kit.zip",
+      "files": [
+        {
+          "name": "blank_gene_counts.csv",
+          "role": "blank",
+          "size_bytes": 49
+        },
+        {
+          "name": "filled_gene_counts.csv",
+          "role": "example",
+          "size_bytes": 104
+        },
+        {
+          "name": "blank_sample_metadata.csv",
+          "role": "blank",
+          "size_bytes": 30
+        },
+        {
+          "name": "filled_sample_metadata.csv",
+          "role": "example",
+          "size_bytes": 142
+        },
+        {
+          "name": "expected_differential_expression.csv",
+          "role": "output",
+          "size_bytes": 93
+        },
+        {
+          "name": "FORMAT_GUIDE.md",
+          "role": "guide",
+          "size_bytes": 864
+        },
+        {
+          "name": "manifest.json",
+          "role": "manifest",
+          "size_bytes": 877
+        }
+      ]
+    },
+    "variant_annotation": {
+      "title": "Variant & Annotation Workbench",
+      "description": "Matching VCF, reference FASTA and GFF3 examples.",
+      "accepted_formats": "VCF, VCF.GZ, FASTA, GFF3 or GTF",
+      "directory": "variant_annotation",
+      "zip": "variant_annotation_starter_kit.zip",
+      "files": [
+        {
+          "name": "blank_variants.vcf",
+          "role": "blank",
+          "size_bytes": 60
+        },
+        {
+          "name": "filled_variants.vcf",
+          "role": "example",
+          "size_bytes": 127
+        },
+        {
+          "name": "filled_reference.fasta",
+          "role": "example",
+          "size_bytes": 158
+        },
+        {
+          "name": "filled_annotations.gff3",
+          "role": "example",
+          "size_bytes": 123
+        },
+        {
+          "name": "expected_variant_annotations.csv",
+          "role": "output",
+          "size_bytes": 89
+        },
+        {
+          "name": "FORMAT_GUIDE.md",
+          "role": "guide",
+          "size_bytes": 857
+        },
+        {
+          "name": "manifest.json",
+          "role": "manifest",
+          "size_bytes": 878
+        }
+      ]
+    },
+    "wetlab_biotechnology": {
+      "title": "Wet-Lab Biotechnology",
+      "description": "qPCR, ELISA, enzyme-kinetics and bioprocess local templates.",
+      "accepted_formats": "CSV, TSV or Excel-compatible CSV",
+      "directory": "wetlab_biotechnology",
+      "zip": "wetlab_biotechnology_starter_kit.zip",
+      "files": [
+        {
+          "name": "blank_qpcr.csv",
+          "role": "blank",
+          "size_bytes": 42
+        },
+        {
+          "name": "filled_qpcr.csv",
+          "role": "example",
+          "size_bytes": 159
+        },
+        {
+          "name": "blank_qpcr_long.csv",
+          "role": "blank",
+          "size_bytes": 34
+        },
+        {
+          "name": "filled_qpcr_long.csv",
+          "role": "example",
+          "size_bytes": 194
+        },
+        {
+          "name": "blank_elisa.csv",
+          "role": "blank",
+          "size_bytes": 60
+        },
+        {
+          "name": "filled_elisa.csv",
+          "role": "example",
+          "size_bytes": 205
+        },
+        {
+          "name": "blank_enzyme_kinetics.csv",
+          "role": "blank",
+          "size_bytes": 77
+        },
+        {
+          "name": "filled_enzyme_kinetics.csv",
+          "role": "example",
+          "size_bytes": 158
+        },
+        {
+          "name": "blank_bioprocess.csv",
+          "role": "blank",
+          "size_bytes": 61
+        },
+        {
+          "name": "filled_bioprocess.csv",
+          "role": "example",
+          "size_bytes": 161
+        },
+        {
+          "name": "expected_assay_summary.csv",
+          "role": "output",
+          "size_bytes": 135
+        },
+        {
+          "name": "FORMAT_GUIDE.md",
+          "role": "guide",
+          "size_bytes": 862
+        },
+        {
+          "name": "manifest.json",
+          "role": "manifest",
+          "size_bytes": 1456
+        }
+      ]
+    }
+  }
+}

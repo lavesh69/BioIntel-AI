@@ -1,0 +1,30 @@
+{
+  "module_key": "drug_analyzer",
+  "title": "Drug SMILES Analyzer",
+  "description": "Compound identifiers and SMILES for descriptor and similarity analysis.",
+  "accepted_formats": "CSV",
+  "offline": true,
+  "synthetic_example": true,
+  "files": [
+    {
+      "name": "blank_compounds.csv",
+      "role": "blank",
+      "size_bytes": 25
+    },
+    {
+      "name": "filled_compounds_example.csv",
+      "role": "example",
+      "size_bytes": 157
+    },
+    {
+      "name": "expected_descriptor_output.csv",
+      "role": "output",
+      "size_bytes": 177
+    },
+    {
+      "name": "FORMAT_GUIDE.md",
+      "role": "guide",
+      "size_bytes": 774
+    }
+  ]
+}

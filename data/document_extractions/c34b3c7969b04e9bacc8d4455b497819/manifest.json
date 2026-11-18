@@ -1,0 +1,126 @@
+{
+  "duplicate_of_run_id": null,
+  "engine_version": "2.7.0",
+  "outputs": [
+    {
+      "created_at_utc": "2026-07-04T16:34:19.529535+00:00",
+      "filename": "BioIntel_Demo_Assay_Workbook_extracted.json",
+      "format": "json",
+      "integrity_status": "unknown",
+      "output_id": "16835f55cef9418d88d22acac3b98574",
+      "path": "data/document_extractions/c34b3c7969b04e9bacc8d4455b497819/BioIntel_Demo_Assay_Workbook_extracted.json",
+      "run_id": "c34b3c7969b04e9bacc8d4455b497819",
+      "sha256": "7abe778280965119c88ecc1e5f513aff0ad8fcd293d9ec91d7ef4cf2e94d26b3",
+      "size_bytes": 66376,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:34:19.533749+00:00",
+      "filename": "BioIntel_Demo_Assay_Workbook_extracted.xlsx",
+      "format": "xlsx",
+      "integrity_status": "unknown",
+      "output_id": "8c6868fdf6904fd8b0a3c5c43d846460",
+      "path": "data/document_extractions/c34b3c7969b04e9bacc8d4455b497819/BioIntel_Demo_Assay_Workbook_extracted.xlsx",
+      "run_id": "c34b3c7969b04e9bacc8d4455b497819",
+      "sha256": "cf894b419a89330158983cd2c9a3bdada93cffc4c01610ba5f719d1522756e2a",
+      "size_bytes": 21098,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:34:19.536158+00:00",
+      "filename": "BioIntel_Demo_Assay_Workbook_extracted.docx",
+      "format": "docx",
+      "integrity_status": "unknown",
+      "output_id": "1fca2dd1230443a986f46da446a7dade",
+      "path": "data/document_extractions/c34b3c7969b04e9bacc8d4455b497819/BioIntel_Demo_Assay_Workbook_extracted.docx",
+      "run_id": "c34b3c7969b04e9bacc8d4455b497819",
+      "sha256": "fe19701e2ec237618b2f372ab950fb68f837aff4e06e727d6992bd9234a971b3",
+      "size_bytes": 39673,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:34:19.539006+00:00",
+      "filename": "BioIntel_Demo_Assay_Workbook_extracted.pdf",
+      "format": "pdf",
+      "integrity_status": "unknown",
+      "output_id": "e2f3a3f39d3647399ff817f3579903c0",
+      "path": "data/document_extractions/c34b3c7969b04e9bacc8d4455b497819/BioIntel_Demo_Assay_Workbook_extracted.pdf",
+      "run_id": "c34b3c7969b04e9bacc8d4455b497819",
+      "sha256": "a85b17c94c536f53a27a0fe8b759d357ed9c4ce33ed150d3f03902f3d6f7a50a",
+      "size_bytes": 10916,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:34:19.541340+00:00",
+      "filename": "BioIntel_Demo_Assay_Workbook_csv_tables.zip",
+      "format": "csv_zip",
+      "integrity_status": "unknown",
+      "output_id": "4c0a60d75dce47e4aa3b5921991a1117",
+      "path": "data/document_extractions/c34b3c7969b04e9bacc8d4455b497819/BioIntel_Demo_Assay_Workbook_csv_tables.zip",
+      "run_id": "c34b3c7969b04e9bacc8d4455b497819",
+      "sha256": "ffc0f04b36b74c5844c2d5273809b84a816d669ce77926a22c58d77da4a73e23",
+      "size_bytes": 16044,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:34:19.543946+00:00",
+      "filename": "BioIntel_Demo_Assay_Workbook_complete_export.zip",
+      "format": "bundle_zip",
+      "integrity_status": "unknown",
+      "output_id": "3d0a33bc6db94653a7bfffdbc9bb13e0",
+      "path": "data/document_extractions/c34b3c7969b04e9bacc8d4455b497819/BioIntel_Demo_Assay_Workbook_complete_export.zip",
+      "run_id": "c34b3c7969b04e9bacc8d4455b497819",
+      "sha256": "a8fb22929c6d267f8e8d1552f7fe86d9fb20c15681c2a7c2a2c9b60388406ba1",
+      "size_bytes": 88034,
+      "verified_at_utc": null
+    }
+  ],
+  "run_id": "c34b3c7969b04e9bacc8d4455b497819",
+  "source": {
+    "character_count": 1492,
+    "entity_count": 27,
+    "file_type": "xlsx",
+    "image_count": 0,
+    "mime_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "page_count": 0,
+    "paragraph_count": 0,
+    "region_count": 119,
+    "row_count": 28,
+    "sheet_count": 3,
+    "source_name": "BioIntel_Demo_Assay_Workbook.xlsx",
+    "source_sha256": "499a1705806d5d4a0ca36e933067dbcfb14255c40ae6f601a7e8da0df7442409",
+    "source_size_bytes": 9092,
+    "table_count": 4,
+    "warning_count": 2
+  },
+  "structured_fields": {
+    "activity_measurements": [],
+    "document_type": "research_document",
+    "entity_counts": {
+      "assay_endpoint": 3,
+      "gene_or_protein": 19,
+      "mutation": 5
+    },
+    "has_limitations": false,
+    "has_methods": false,
+    "has_results": false,
+    "publication_identifiers": [],
+    "sample_sizes": [],
+    "sections": {
+      "unclassified": "[Screening Results]\nCMP-001 | Aspirin reference | CC(=O)OC1=CC=CC=C1C(=O)O | PTGS2 | IC50 | 125 | 3 | Reviewed\nCMP-002 | Caffeine reference | CN1C=NC2=C1C(=O)N(C(=O)N2C)C | ADORA2A | Ki | 820 | 3 | Reviewed\nCMP-003 | Ibuprofen reference | CC(C)CC1=CC=C(C=C1)C(C)C(=O)O | PTGS2 | IC50 | 410 | 2 | Pending\nCMP-004 | Acetaminophen reference | CC(=O)NC1=CC=C(C=C1)O | PTGS1 | IC50 | 760 | 3 | Reviewed\nCMP-005 | Nicotinamide reference | NC(=O)C1=CN=CC=C1 | SIRT1 | EC50 | 2450 | 2 | Pending\nCMP-006 | Adenosine reference | NC1=NC=NC2=C1N=CN2C3OC(CO)C(O)C3O | ADORA2A | Ki | 32 | 4 | Reviewed\nCMP-007 | Warfarin reference | CC(C(=O)CC1=CC=CC=C1)C2=C(O)C=CC=C2O | VKORC1 | IC50 | 18 | 3 | Reviewed\nCMP-008 | Metformin reference | CN(C)C(=N)N=C(N)N | PRKAA1 | EC50 | 15000 | 3 | Pending\nCMP-009 | Quercetin reference | OC1=CC(O)=C(C=C1)C2=COC3=CC(O)=CC(O)=C3C2=O | PIK3CA | IC50 | 950 | 2 | Reviewed\nCMP-010 | Resveratrol reference | OC1=CC=C(C=C1)C=CC2=CC(O)=CC(O)=C2 | SIRT1 | EC50 | 5200 | 3 | Pending\n[Dashboard]\nMetric | Value |  |  |  |\nTotal compounds | 10 |  |  |  |\nReviewed | 6 |  |  |  |\nPending | 4 |  |  |  |\nMedian activity (nM) | 790 |  |  |  |\n[Metadata]\nWorkspace | BioIntel AI\nDataset type | Demonstration/reference only\nScientific release eligible | No\nGenerated on | 2026-07-04T00:00:00\nPurpose | Populate Step 28 document and evidence demos\nLicence | BioIntel demonstration data\nOwner | Local user\nReview note | Illustrative values; not experimental evidence\nVersion | 1.0"
+    },
+    "sensitive_findings": [
+      {
+        "end": 1296,
+        "start": 1286,
+        "text": "2026-07-04",
+        "type": "phone"
+      }
+    ],
+    "title": "BioIntel_Demo_Assay_Workbook.xlsx"
+  },
+  "warnings": [
+    "Workbook contains 4 formula cell(s); formulas and cached values were preserved separately.",
+    "Detected 1 possible sensitive value(s); review before sharing exports."
+  ]
+}

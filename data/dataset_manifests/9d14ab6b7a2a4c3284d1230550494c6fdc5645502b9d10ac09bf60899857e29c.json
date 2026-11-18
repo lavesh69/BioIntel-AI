@@ -1,0 +1,27 @@
+{
+  "activity_type": null,
+  "column_names": [
+    "database",
+    "query_type",
+    "query_value",
+    "description"
+  ],
+  "dataset_name": "BioIntel External Lookup Starters",
+  "dataset_sha256": "9d14ab6b7a2a4c3284d1230550494c6fdc5645502b9d10ac09bf60899857e29c",
+  "dataset_version": "1.0",
+  "demo_only": false,
+  "generated_by": "BioIntel Step 31 registry completion",
+  "metadata": {
+    "coverage_pack_version": "1.0",
+    "filename": "external_lookup_starters_20.csv"
+  },
+  "parent_sha256": null,
+  "primary_file": "data/coverage/external_lookup_starters_20.csv",
+  "primary_file_exists": true,
+  "row_count": 20,
+  "schema": "biointel.dataset-manifest.v3.1",
+  "scientific_release_eligible": false,
+  "source_description": "BioIntel deterministic complete-coverage pack",
+  "synthetic": false,
+  "task_type": "unlabelled"
+}

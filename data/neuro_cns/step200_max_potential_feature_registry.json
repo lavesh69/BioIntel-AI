@@ -1,0 +1,21 @@
+{
+  "schema": "biointel.neuro-cns.max-potential-features.v1",
+  "step": 200,
+  "base_neuro_modules": 23,
+  "step199_laboratories": 9,
+  "step200_control_systems": 9,
+  "advanced_systems_total": 18,
+  "step200_features": [
+    {"number": 1, "key": "evidence_knowledge_graph", "title": "Neuro Evidence Knowledge Graph"},
+    {"number": 2, "key": "benchmark_validation_center", "title": "Benchmark Validation Center"},
+    {"number": 3, "key": "applicability_domain_inspector", "title": "Applicability Domain Inspector"},
+    {"number": 4, "key": "uncertainty_sensitivity_lab", "title": "Uncertainty & Sensitivity Lab"},
+    {"number": 5, "key": "resource_qualification_manager", "title": "Scientific Resource Qualification Manager"},
+    {"number": 6, "key": "contradiction_resolution_board", "title": "Cross-Module Contradiction Resolver"},
+    {"number": 7, "key": "batch_pipeline_orchestrator", "title": "Resilient Batch Pipeline Orchestrator"},
+    {"number": 8, "key": "failure_recovery_center", "title": "Failure Mode & Recovery Center"},
+    {"number": 9, "key": "maximum_potential_release_dashboard", "title": "Maximum-Potential Release Dashboard"}
+  ],
+  "software_release_status": "hardened",
+  "controlled_scientific_release_eligible": false
+}

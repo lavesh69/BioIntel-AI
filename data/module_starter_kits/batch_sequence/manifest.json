@@ -1,0 +1,30 @@
+{
+  "module_key": "batch_sequence",
+  "title": "Batch Sequence Analysis",
+  "description": "Multi-record FASTA for batch metrics and clustering.",
+  "accepted_formats": "FASTA, FA, FNA, FAA or TXT",
+  "offline": true,
+  "synthetic_example": true,
+  "files": [
+    {
+      "name": "blank_batch_sequences.fasta",
+      "role": "blank",
+      "size_bytes": 52
+    },
+    {
+      "name": "filled_batch_sequences.fasta",
+      "role": "example",
+      "size_bytes": 242
+    },
+    {
+      "name": "expected_batch_summary.csv",
+      "role": "output",
+      "size_bytes": 122
+    },
+    {
+      "name": "FORMAT_GUIDE.md",
+      "role": "guide",
+      "size_bytes": 833
+    }
+  ]
+}

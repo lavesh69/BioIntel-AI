@@ -1,0 +1,30 @@
+{
+  "module_key": "appearance",
+  "title": "Appearance Studio",
+  "description": "Portable local UI preference profile.",
+  "accepted_formats": "JSON",
+  "offline": true,
+  "synthetic_example": true,
+  "files": [
+    {
+      "name": "blank_ui_preferences.json",
+      "role": "blank",
+      "size_bytes": 132
+    },
+    {
+      "name": "filled_ui_preferences_example.json",
+      "role": "example",
+      "size_bytes": 259
+    },
+    {
+      "name": "expected_import_receipt.json",
+      "role": "output",
+      "size_bytes": 67
+    },
+    {
+      "name": "FORMAT_GUIDE.md",
+      "role": "guide",
+      "size_bytes": 808
+    }
+  ]
+}

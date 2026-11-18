@@ -1,0 +1,30 @@
+{
+  "module_key": "batch_jobs",
+  "title": "Resumable Batch Jobs",
+  "description": "Batch prediction records with stable identifiers.",
+  "accepted_formats": "CSV",
+  "offline": true,
+  "synthetic_example": true,
+  "files": [
+    {
+      "name": "blank_batch_job.csv",
+      "role": "blank",
+      "size_bytes": 64
+    },
+    {
+      "name": "filled_batch_job.csv",
+      "role": "example",
+      "size_bytes": 251
+    },
+    {
+      "name": "expected_batch_job_results.csv",
+      "role": "output",
+      "size_bytes": 74
+    },
+    {
+      "name": "FORMAT_GUIDE.md",
+      "role": "guide",
+      "size_bytes": 773
+    }
+  ]
+}

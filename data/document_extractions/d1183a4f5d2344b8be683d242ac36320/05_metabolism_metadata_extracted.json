@@ -1,0 +1,197 @@
+{
+  "character_count": 510,
+  "entities": [
+    {
+      "confidence": 0.97,
+      "end": 48,
+      "entity_type": "assay_endpoint",
+      "metadata": {},
+      "normalized": "EC50",
+      "source": "document",
+      "start": 44,
+      "text": "EC50"
+    },
+    {
+      "confidence": 0.86,
+      "end": 48,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "EC50",
+      "source": "document",
+      "start": 44,
+      "text": "EC50"
+    },
+    {
+      "confidence": 0.72,
+      "end": 81,
+      "entity_type": "disease",
+      "metadata": {},
+      "normalized": "diabetes",
+      "source": "document",
+      "start": 73,
+      "text": "diabetes"
+    },
+    {
+      "confidence": 0.86,
+      "end": 179,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "PPARG",
+      "source": "document",
+      "start": 174,
+      "text": "PPARG"
+    },
+    {
+      "confidence": 0.92,
+      "end": 202,
+      "entity_type": "mutation",
+      "metadata": {},
+      "normalized": "P12A",
+      "source": "document",
+      "start": 198,
+      "text": "P12A"
+    },
+    {
+      "confidence": 0.9,
+      "end": 326,
+      "entity_type": "organism",
+      "metadata": {},
+      "normalized": "Homo sapiens",
+      "source": "document",
+      "start": 314,
+      "text": "Homo sapiens"
+    }
+  ],
+  "entity_count": 6,
+  "file_type": "json",
+  "image_count": 0,
+  "metadata": {
+    "encoding": "utf-8-sig",
+    "root_type": "dict",
+    "scientific_entity_extraction": "rule_based_v1",
+    "sensitive_finding_count": 0,
+    "sensitive_redaction_applied": false
+  },
+  "mime_type": "application/json",
+  "page_count": 0,
+  "paragraph_count": 0,
+  "region_count": 0,
+  "regions": [],
+  "row_count": 15,
+  "sections": [
+    {
+      "confidence": 1.0,
+      "metadata": {},
+      "name": "Document",
+      "source": "document",
+      "text": "{\r\n  \"activity_value_nm\": 390,\r\n  \"assay\": \"EC50\",\r\n  \"disease\": \"type 2 diabetes\",\r\n  \"document_id\": \"DEMO-CORPUS-05\",\r\n  \"doi\": \"\",\r\n  \"drug\": \"rosiglitazone\",\r\n  \"gene\": \"PPARG\",\r\n  \"mutation\": \"P12A\",\r\n  \"notice\": \"Demonstration/reference content only; not experimental or clinical evidence.\",\r\n  \"organism\": \"Homo sapiens\",\r\n  \"pmid\": \"\",\r\n  \"scientific_release_eligible\": false,\r\n  \"synthetic_doi_label\": \"SYN-DOI-NOT-REAL-0005\",\r\n  \"synthetic_reference_id\": \"SYN-PAPER-0005\",\r\n  \"topic\": \"metabolism\"\r\n}"
+    }
+  ],
+  "sheet_count": 0,
+  "source_name": "05_metabolism_metadata.json",
+  "source_sha256": "0da91bcbf4d4cff5ea34fa7a41aaf668cce7ad5473dfff77200b2300ffe24e76",
+  "source_size_bytes": 510,
+  "structured_fields": {
+    "activity_measurements": [],
+    "document_type": "research_document",
+    "entity_counts": {
+      "assay_endpoint": 1,
+      "disease": 1,
+      "gene_or_protein": 2,
+      "mutation": 1,
+      "organism": 1
+    },
+    "has_limitations": false,
+    "has_methods": false,
+    "has_results": false,
+    "publication_identifiers": [],
+    "sample_sizes": [],
+    "sections": {
+      "unclassified": "{\n\"activity_value_nm\": 390,\n\"assay\": \"EC50\",\n\"disease\": \"type 2 diabetes\",\n\"document_id\": \"DEMO-CORPUS-05\",\n\"doi\": \"\",\n\"drug\": \"rosiglitazone\",\n\"gene\": \"PPARG\",\n\"mutation\": \"P12A\",\n\"notice\": \"Demonstration/reference content only; not experimental or clinical evidence.\",\n\"organism\": \"Homo sapiens\",\n\"pmid\": \"\",\n\"scientific_release_eligible\": false,\n\"synthetic_doi_label\": \"SYN-DOI-NOT-REAL-0005\",\n\"synthetic_reference_id\": \"SYN-PAPER-0005\",\n\"topic\": \"metabolism\"\n}"
+    },
+    "sensitive_findings": [],
+    "title": "05_metabolism_metadata.json"
+  },
+  "table_count": 1,
+  "tables": [
+    {
+      "column_count": 2,
+      "columns": [
+        "Path",
+        "Value"
+      ],
+      "confidence": 1.0,
+      "metadata": {
+        "encoding": "utf-8-sig"
+      },
+      "name": "Structured Data",
+      "row_count": 15,
+      "rows": [
+        [
+          "activity_value_nm",
+          390
+        ],
+        [
+          "assay",
+          "EC50"
+        ],
+        [
+          "disease",
+          "type 2 diabetes"
+        ],
+        [
+          "document_id",
+          "DEMO-CORPUS-05"
+        ],
+        [
+          "doi",
+          ""
+        ],
+        [
+          "drug",
+          "rosiglitazone"
+        ],
+        [
+          "gene",
+          "PPARG"
+        ],
+        [
+          "mutation",
+          "P12A"
+        ],
+        [
+          "notice",
+          "Demonstration/reference content only; not experimental or clinical evidence."
+        ],
+        [
+          "organism",
+          "Homo sapiens"
+        ],
+        [
+          "pmid",
+          ""
+        ],
+        [
+          "scientific_release_eligible",
+          false
+        ],
+        [
+          "synthetic_doi_label",
+          "SYN-DOI-NOT-REAL-0005"
+        ],
+        [
+          "synthetic_reference_id",
+          "SYN-PAPER-0005"
+        ],
+        [
+          "topic",
+          "metabolism"
+        ]
+      ],
+      "source": "document"
+    }
+  ],
+  "text": "{\r\n  \"activity_value_nm\": 390,\r\n  \"assay\": \"EC50\",\r\n  \"disease\": \"type 2 diabetes\",\r\n  \"document_id\": \"DEMO-CORPUS-05\",\r\n  \"doi\": \"\",\r\n  \"drug\": \"rosiglitazone\",\r\n  \"gene\": \"PPARG\",\r\n  \"mutation\": \"P12A\",\r\n  \"notice\": \"Demonstration/reference content only; not experimental or clinical evidence.\",\r\n  \"organism\": \"Homo sapiens\",\r\n  \"pmid\": \"\",\r\n  \"scientific_release_eligible\": false,\r\n  \"synthetic_doi_label\": \"SYN-DOI-NOT-REAL-0005\",\r\n  \"synthetic_reference_id\": \"SYN-PAPER-0005\",\r\n  \"topic\": \"metabolism\"\r\n}",
+  "warning_count": 0,
+  "warnings": []
+}

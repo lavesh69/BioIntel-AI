@@ -1,0 +1,30 @@
+{
+  "module_key": "model_evaluation",
+  "title": "Model Evaluation",
+  "description": "Held-out labels and prediction probabilities for evaluation.",
+  "accepted_formats": "CSV",
+  "offline": true,
+  "synthetic_example": true,
+  "files": [
+    {
+      "name": "blank_model_evaluation.csv",
+      "role": "blank",
+      "size_bytes": 32
+    },
+    {
+      "name": "filled_model_evaluation.csv",
+      "role": "example",
+      "size_bytes": 104
+    },
+    {
+      "name": "expected_metrics.csv",
+      "role": "output",
+      "size_bytes": 70
+    },
+    {
+      "name": "FORMAT_GUIDE.md",
+      "role": "guide",
+      "size_bytes": 783
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "module_key": "wetlab_biotechnology",
+  "title": "Wet-Lab Biotechnology",
+  "description": "qPCR, ELISA, enzyme-kinetics and bioprocess local templates.",
+  "accepted_formats": "CSV, TSV or Excel-compatible CSV",
+  "offline": true,
+  "synthetic_example": true,
+  "files": [
+    {
+      "name": "blank_qpcr.csv",
+      "role": "blank",
+      "size_bytes": 42
+    },
+    {
+      "name": "filled_qpcr.csv",
+      "role": "example",
+      "size_bytes": 159
+    },
+    {
+      "name": "blank_qpcr_long.csv",
+      "role": "blank",
+      "size_bytes": 34
+    },
+    {
+      "name": "filled_qpcr_long.csv",
+      "role": "example",
+      "size_bytes": 194
+    },
+    {
+      "name": "blank_elisa.csv",
+      "role": "blank",
+      "size_bytes": 60
+    },
+    {
+      "name": "filled_elisa.csv",
+      "role": "example",
+      "size_bytes": 205
+    },
+    {
+      "name": "blank_enzyme_kinetics.csv",
+      "role": "blank",
+      "size_bytes": 77
+    },
+    {
+      "name": "filled_enzyme_kinetics.csv",
+      "role": "example",
+      "size_bytes": 158
+    },
+    {
+      "name": "blank_bioprocess.csv",
+      "role": "blank",
+      "size_bytes": 61
+    },
+    {
+      "name": "filled_bioprocess.csv",
+      "role": "example",
+      "size_bytes": 161
+    },
+    {
+      "name": "expected_assay_summary.csv",
+      "role": "output",
+      "size_bytes": 135
+    },
+    {
+      "name": "FORMAT_GUIDE.md",
+      "role": "guide",
+      "size_bytes": 862
+    }
+  ]
+}

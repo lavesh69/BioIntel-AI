@@ -1,0 +1,114 @@
+{
+  "duplicate_of_run_id": null,
+  "engine_version": "2.7.0",
+  "outputs": [
+    {
+      "created_at_utc": "2026-07-04T16:49:40.627362+00:00",
+      "filename": "DEMO_DATA_CATALOG_extracted.json",
+      "format": "json",
+      "integrity_status": "unknown",
+      "output_id": "43ea02949db44c6392998ad448186769",
+      "path": "data/document_extractions/478e6e735a634ba99eb806092e714715/DEMO_DATA_CATALOG_extracted.json",
+      "run_id": "478e6e735a634ba99eb806092e714715",
+      "sha256": "92506398b5ceb824dd6244b35108704b3c2d62e9daf8cd375df9a37b012cc51f",
+      "size_bytes": 20970,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:49:40.631270+00:00",
+      "filename": "DEMO_DATA_CATALOG_extracted.xlsx",
+      "format": "xlsx",
+      "integrity_status": "unknown",
+      "output_id": "da8bd64509114eadbee89979fec8eba7",
+      "path": "data/document_extractions/478e6e735a634ba99eb806092e714715/DEMO_DATA_CATALOG_extracted.xlsx",
+      "run_id": "478e6e735a634ba99eb806092e714715",
+      "sha256": "f92e155bbcc2e48bc31af12efb543f1a33486719347989ee43c54fc0df72406e",
+      "size_bytes": 11756,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:49:40.633440+00:00",
+      "filename": "DEMO_DATA_CATALOG_extracted.docx",
+      "format": "docx",
+      "integrity_status": "unknown",
+      "output_id": "6b598cce72194937a3a09a052327768d",
+      "path": "data/document_extractions/478e6e735a634ba99eb806092e714715/DEMO_DATA_CATALOG_extracted.docx",
+      "run_id": "478e6e735a634ba99eb806092e714715",
+      "sha256": "dbeb3247b586a55a01ea73705ae36847846781b6fb66fa0ba898ab33b382eb81",
+      "size_bytes": 39112,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:49:40.636039+00:00",
+      "filename": "DEMO_DATA_CATALOG_extracted.pdf",
+      "format": "pdf",
+      "integrity_status": "unknown",
+      "output_id": "3967cab0fec24d22a968567418deb329",
+      "path": "data/document_extractions/478e6e735a634ba99eb806092e714715/DEMO_DATA_CATALOG_extracted.pdf",
+      "run_id": "478e6e735a634ba99eb806092e714715",
+      "sha256": "d29186c61af1230d60eeaef00f0c027963c94b45241010d84bcf5e2d45343c9a",
+      "size_bytes": 9357,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:49:40.638628+00:00",
+      "filename": "DEMO_DATA_CATALOG_csv_tables.zip",
+      "format": "csv_zip",
+      "integrity_status": "unknown",
+      "output_id": "e1d070bc97794fcc9078b748229c095f",
+      "path": "data/document_extractions/478e6e735a634ba99eb806092e714715/DEMO_DATA_CATALOG_csv_tables.zip",
+      "run_id": "478e6e735a634ba99eb806092e714715",
+      "sha256": "9a7ff8c323ad875b1727932fb39f786a5b87990ef0f45373c7c45196045f9094",
+      "size_bytes": 5179,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:49:40.643202+00:00",
+      "filename": "DEMO_DATA_CATALOG_complete_export.zip",
+      "format": "bundle_zip",
+      "integrity_status": "unknown",
+      "output_id": "a4a269fb0540483c9eb8773d65b481f6",
+      "path": "data/document_extractions/478e6e735a634ba99eb806092e714715/DEMO_DATA_CATALOG_complete_export.zip",
+      "run_id": "478e6e735a634ba99eb806092e714715",
+      "sha256": "f5c1d63890cea78248163f87977601323ba3e815cbc0dfb72810e6b16d5334ad",
+      "size_bytes": 61042,
+      "verified_at_utc": null
+    }
+  ],
+  "run_id": "478e6e735a634ba99eb806092e714715",
+  "source": {
+    "character_count": 3380,
+    "entity_count": 5,
+    "file_type": "csv",
+    "image_count": 0,
+    "mime_type": "text/csv",
+    "page_count": 0,
+    "paragraph_count": 0,
+    "region_count": 0,
+    "row_count": 62,
+    "sheet_count": 0,
+    "source_name": "DEMO_DATA_CATALOG.csv",
+    "source_sha256": "4bbdb471466c608b032145f38a01d70b02464abf1ec538b9f790be81e6deef3c",
+    "source_size_bytes": 3380,
+    "table_count": 1,
+    "warning_count": 0
+  },
+  "structured_fields": {
+    "activity_measurements": [],
+    "document_type": "research_document",
+    "entity_counts": {
+      "disease": 5
+    },
+    "has_limitations": false,
+    "has_methods": false,
+    "has_results": false,
+    "publication_identifiers": [],
+    "sample_sizes": [],
+    "sections": {
+      "unclassified": "file,format,size_bytes,demo_only\nBioIntel_Assay_Metadata.json,json,517,True\nBioIntel_Assay_Review_Notes.docx,docx,37515,True\nBioIntel_Demo_Activity_Data.csv,csv,17840,True\nBioIntel_Demo_Assay_Workbook.xlsx,xlsx,9092,True\nBioIntel_Demo_Assay_Workbook_preview.png,png,44644,True\nBioIntel_Literature_Notes.md,md,446,True\nBioIntel_Project_Protocol.txt,txt,256,True\nBioIntel_Reference_Page.html,html,543,True\nBioIntel_Reference_Research_Report.pdf,pdf,5088,True\ndemo_evidence_manifest.json,json,415,True\ndemo_leakage_test.csv,csv,2669,True\ndemo_leakage_train.csv,csv,3705,True\ngenerated_corpus/01_oncology_brief.md,md,633,True\ngenerated_corpus/01_oncology_metadata.json,json,438,True\ngenerated_corpus/01_oncology_page.html,html,822,True\ngenerated_corpus/01_oncology_protocol.txt,txt,227,True\ngenerated_corpus/01_oncology_table.csv,csv,274,True\ngenerated_corpus/02_cardiology_brief.md,md,626,True\ngenerated_corpus/02_cardiology_metadata.json,json,433,True\ngenerated_corpus/02_cardiology_page.html,html,818,True\ngenerated_corpus/02_cardiology_protocol.txt,txt,220,True\ngenerated_corpus/02_cardiology_table.csv,csv,259,True\ngenerated_corpus/03_neurology_brief.md,md,626,True\ngenerated_corpus/03_neurology_metadata.json,json,431,True\ngenerated_corpus/03_neurology_page.html,html,816,True\ngenerated_corpus/03_neurology_protocol.txt,txt,219,True\ngenerated_corpus/03_neurology_table.csv,csv,257,True\ngenerated_corpus/04_infection_brief.md,md,633,True\ngenerated_corpus/04_infection_metadata.json,json,439,True\ngenerated_corpus/04_infection_page.html,html,827,True\ngenerated_corpus/04_infection_protocol.txt,txt,227,True\ngenerated_corpus/04_infection_table.csv,csv,273,True\ngenerated_corpus/05_metabolism_brief.md,md,629,True\ngenerated_corpus/05_metabolism_metadata.json,json,434,True\ngenerated_corpus/05_metabolism_page.html,html,824,True\ngenerated_corpus/05_metabolism_protocol.txt,txt,221,True\ngenerated_corpus/05_metabolism_table.csv,csv,261,True\ngenerated_corpus/06_inflammation_brief.md,md,632,True\ngenerated_corpus/06_inflammation_metadata.json,json,437,True\ngenerated_corpus/06_inflammation_page.html,html,822,True\ngenerated_corpus/06_inflammation_protocol.txt,txt,222,True\ngenerated_corpus/06_inflammation_table.csv,csv,263,True\ngenerated_corpus/07_rare_disease_brief.md,md,627,True\ngenerated_corpus/07_rare_disease_metadata.json,json,432,True\ngenerated_corpus/07_rare_disease_page.html,html,817,True\ngenerated_corpus/07_rare_disease_protocol.txt,txt,217,True\ngenerated_corpus/07_rare_disease_table.csv,csv,253,True\ngenerated_corpus/08_kinase_brief.md,md,616,True\ngenerated_corpus/08_kinase_metadata.json,json,421,True\ngenerated_corpus/08_kinase_page.html,html,808,True\ngenerated_corpus/08_kinase_protocol.txt,txt,212,True\ngenerated_corpus/08_kinase_table.csv,csv,243,True\ngenerated_corpus/09_antiviral_brief.md,md,626,True\ngenerated_corpus/09_antiviral_metadata.json,json,431,True\ngenerated_corpus/09_antiviral_page.html,html,817,True\ngenerated_corpus/09_antiviral_protocol.txt,txt,219,True\ngenerated_corpus/09_antiviral_table.csv,csv,257,True\ngenerated_corpus/10_immunology_brief.md,md,632,True\ngenerated_corpus/10_immunology_metadata.json,json,436,True\ngenerated_corpus/10_immunology_page.html,html,825,True\ngenerated_corpus/10_immunology_protocol.txt,txt,223,True\ngenerated_corpus/10_immunology_table.csv,csv,263,True"
+    },
+    "sensitive_findings": [],
+    "title": "DEMO_DATA_CATALOG.csv"
+  },
+  "warnings": []
+}

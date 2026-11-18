@@ -1,0 +1,9 @@
+{
+  "provider_name": "Example Provider",
+  "base_url": "https://example.invalid/api",
+  "enabled": false,
+  "timeout_seconds": 30,
+  "rate_limit_per_minute": 30,
+  "licence_note": "Replace with official provider terms",
+  "api_key_env_var": "BIOINTEL_EXAMPLE_API_KEY"
+}

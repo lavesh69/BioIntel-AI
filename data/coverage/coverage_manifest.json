@@ -1,0 +1,94 @@
+{
+  "assets": [
+    {
+      "description": "300 DNA, 200 RNA and 300 protein records.",
+      "filename": "data/coverage/sequence_library_800.csv",
+      "key": "sequence_library",
+      "rows": 800,
+      "section": "Sequence Analyzer / Batch Sequence",
+      "sha256": "878058b60a882d547ac0ce432cc427ff31e76b74355070a50cd30a12590560f2",
+      "title": "Sequence Library"
+    },
+    {
+      "description": "Combined 800-record FASTA file.",
+      "filename": "data/coverage/sequence_library_800.fasta",
+      "key": "sequence_fasta",
+      "rows": 800,
+      "section": "Batch Sequence",
+      "sha256": "a08a6c13a624e28a135b26568fbd094eda12955538a6b3beb48df77c572962e0",
+      "title": "Sequence FASTA Pack"
+    },
+    {
+      "description": "DNA, RNA and protein mutation pairs.",
+      "filename": "data/coverage/sequence_comparison_pairs_180.csv",
+      "key": "comparison_pairs",
+      "rows": 180,
+      "section": "Sequence Comparison",
+      "sha256": "fe470e1b6c9a6e9762a9564c2449a491f84110dfc8d6f038e381a199ef85511a",
+      "title": "Sequence Comparison Pairs"
+    },
+    {
+      "description": "1,000 RDKit-valid molecular structures.",
+      "filename": "data/coverage/molecule_analysis_library_1000.csv",
+      "key": "molecule_library",
+      "rows": 1000,
+      "section": "SMILES Analyzer",
+      "sha256": "517d34f97ea050883baaa68d118db12da5b87877d83ef1d49d1f7676b6bb6bad",
+      "title": "Molecule Analysis Library"
+    },
+    {
+      "description": "5,000 labelled independent-style pairs.",
+      "filename": "data/coverage/external_validation_classification_5000.csv",
+      "key": "external_classification",
+      "rows": 5000,
+      "section": "External Validation",
+      "sha256": "11ecd4c56836ac136428490877d903896884202c5ae84724faf24cf02dedf0da",
+      "title": "External Classification Validation"
+    },
+    {
+      "description": "5,000 p_activity validation pairs.",
+      "filename": "data/coverage/external_validation_regression_5000.csv",
+      "key": "external_regression",
+      "rows": 5000,
+      "section": "External Validation",
+      "sha256": "e6115be346982568d8541e949fd3026da648e1c6f43ccfb51d9a2276bd12439e",
+      "title": "External Regression Validation"
+    },
+    {
+      "description": "2,000 shifted-distribution labelled pairs.",
+      "filename": "data/coverage/drift_validation_classification_2000.csv",
+      "key": "drift_classification",
+      "rows": 2000,
+      "section": "External Validation",
+      "sha256": "6476051f96f015bfd46e0f16c67fc231d0b5e979e49012af6cafe707582994e4",
+      "title": "Classification Drift Sample"
+    },
+    {
+      "description": "2,000 shifted-distribution activity pairs.",
+      "filename": "data/coverage/drift_validation_regression_2000.csv",
+      "key": "drift_regression",
+      "rows": 2000,
+      "section": "External Validation",
+      "sha256": "9a89a7d3a9cbfc98b7fbccc6da4006873471969216d077602061682f3960e040",
+      "title": "Regression Drift Sample"
+    },
+    {
+      "description": "Ready UniProt and ChEMBL identifiers.",
+      "filename": "data/coverage/external_lookup_starters_20.csv",
+      "key": "lookup_catalog",
+      "rows": 20,
+      "section": "External Databases",
+      "sha256": "9d14ab6b7a2a4c3284d1230550494c6fdc5645502b9d10ac09bf60899857e29c",
+      "title": "External Lookup Starters"
+    }
+  ],
+  "coverage_pack_version": "1.0",
+  "totals": {
+    "comparison_pairs": 180,
+    "external_validation_rows": 14000,
+    "lookup_starters": 20,
+    "molecules": 1000,
+    "sequence_records": 800
+  },
+  "warning": "Coverage assets are deterministic demonstration data. They are not biological or clinical evidence."
+}

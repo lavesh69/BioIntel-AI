@@ -1,0 +1,5 @@
+##fileformat=VCFv4.2
+##reference=GRCh38
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+2	166848200	demo_scn1a	C	T	99	PASS	GENE=SCN1A;CONSEQUENCE=missense_variant;CLINVAR=likely_pathogenic;AF=0.000001
+17	44039700	demo_mapt	G	A	80	PASS	GENE=MAPT;CONSEQUENCE=missense_variant;CLINVAR=uncertain_significance;AF=0.0002

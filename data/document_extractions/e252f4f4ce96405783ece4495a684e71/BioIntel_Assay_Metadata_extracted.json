@@ -1,0 +1,213 @@
+{
+  "character_count": 517,
+  "entities": [
+    {
+      "confidence": 0.86,
+      "end": 141,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "PTGS2",
+      "source": "document",
+      "start": 136,
+      "text": "PTGS2"
+    },
+    {
+      "confidence": 0.86,
+      "end": 169,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "SIRT1",
+      "source": "document",
+      "start": 164,
+      "text": "SIRT1"
+    },
+    {
+      "confidence": 0.86,
+      "end": 183,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "PIK3CA",
+      "source": "document",
+      "start": 177,
+      "text": "PIK3CA"
+    },
+    {
+      "confidence": 0.9,
+      "end": 217,
+      "entity_type": "organism",
+      "metadata": {},
+      "normalized": "Homo sapiens",
+      "source": "document",
+      "start": 205,
+      "text": "Homo sapiens"
+    },
+    {
+      "confidence": 0.97,
+      "end": 308,
+      "entity_type": "assay_endpoint",
+      "metadata": {},
+      "normalized": "IC50",
+      "source": "document",
+      "start": 304,
+      "text": "IC50"
+    },
+    {
+      "confidence": 0.86,
+      "end": 308,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "IC50",
+      "source": "document",
+      "start": 304,
+      "text": "IC50"
+    },
+    {
+      "confidence": 0.97,
+      "end": 425,
+      "entity_type": "assay_endpoint",
+      "metadata": {},
+      "normalized": "Ki",
+      "source": "document",
+      "start": 423,
+      "text": "Ki"
+    }
+  ],
+  "entity_count": 7,
+  "file_type": "json",
+  "image_count": 0,
+  "metadata": {
+    "encoding": "utf-8-sig",
+    "root_type": "dict",
+    "scientific_entity_extraction": "rule_based_v1",
+    "sensitive_finding_count": 0,
+    "sensitive_redaction_applied": false
+  },
+  "mime_type": "application/json",
+  "page_count": 0,
+  "paragraph_count": 0,
+  "region_count": 0,
+  "regions": [],
+  "row_count": 17,
+  "sections": [
+    {
+      "confidence": 1.0,
+      "metadata": {},
+      "name": "Document",
+      "source": "document",
+      "text": "{\n  \"document_id\": \"DEMO-JSON-001\",\n  \"title\": \"BioIntel assay metadata\",\n  \"classification\": \"demonstration-only\",\n  \"targets\": [\n    \"PTGS2\",\n    \"ADORA2A\",\n    \"SIRT1\",\n    \"PIK3CA\"\n  ],\n  \"organism\": \"Homo sapiens\",\n  \"measurements\": [\n    {\n      \"compound\": \"Aspirin reference\",\n      \"endpoint\": \"IC50\",\n      \"value\": 125,\n      \"unit\": \"nM\"\n    },\n    {\n      \"compound\": \"Adenosine reference\",\n      \"endpoint\": \"Ki\",\n      \"value\": 32,\n      \"unit\": \"nM\"\n    }\n  ],\n  \"scientific_release_eligible\": false\n}"
+    }
+  ],
+  "sheet_count": 0,
+  "source_name": "BioIntel_Assay_Metadata.json",
+  "source_sha256": "01242d49e2be6150948589b9c9a7dde53545162bb7d1ec93302a1ca268b1d7bc",
+  "source_size_bytes": 517,
+  "structured_fields": {
+    "activity_measurements": [],
+    "document_type": "research_document",
+    "entity_counts": {
+      "assay_endpoint": 2,
+      "gene_or_protein": 4,
+      "organism": 1
+    },
+    "has_limitations": false,
+    "has_methods": false,
+    "has_results": false,
+    "publication_identifiers": [],
+    "sample_sizes": [],
+    "sections": {
+      "unclassified": "{\n\"document_id\": \"DEMO-JSON-001\",\n\"title\": \"BioIntel assay metadata\",\n\"classification\": \"demonstration-only\",\n\"targets\": [\n\"PTGS2\",\n\"ADORA2A\",\n\"SIRT1\",\n\"PIK3CA\"\n],\n\"organism\": \"Homo sapiens\",\n\"measurements\": [\n{\n\"compound\": \"Aspirin reference\",\n\"endpoint\": \"IC50\",\n\"value\": 125,\n\"unit\": \"nM\"\n},\n{\n\"compound\": \"Adenosine reference\",\n\"endpoint\": \"Ki\",\n\"value\": 32,\n\"unit\": \"nM\"\n}\n],\n\"scientific_release_eligible\": false\n}"
+    },
+    "sensitive_findings": [],
+    "title": "BioIntel_Assay_Metadata.json"
+  },
+  "table_count": 1,
+  "tables": [
+    {
+      "column_count": 2,
+      "columns": [
+        "Path",
+        "Value"
+      ],
+      "confidence": 1.0,
+      "metadata": {
+        "encoding": "utf-8-sig"
+      },
+      "name": "Structured Data",
+      "row_count": 17,
+      "rows": [
+        [
+          "document_id",
+          "DEMO-JSON-001"
+        ],
+        [
+          "title",
+          "BioIntel assay metadata"
+        ],
+        [
+          "classification",
+          "demonstration-only"
+        ],
+        [
+          "targets[0]",
+          "PTGS2"
+        ],
+        [
+          "targets[1]",
+          "ADORA2A"
+        ],
+        [
+          "targets[2]",
+          "SIRT1"
+        ],
+        [
+          "targets[3]",
+          "PIK3CA"
+        ],
+        [
+          "organism",
+          "Homo sapiens"
+        ],
+        [
+          "measurements[0].compound",
+          "Aspirin reference"
+        ],
+        [
+          "measurements[0].endpoint",
+          "IC50"
+        ],
+        [
+          "measurements[0].value",
+          125
+        ],
+        [
+          "measurements[0].unit",
+          "nM"
+        ],
+        [
+          "measurements[1].compound",
+          "Adenosine reference"
+        ],
+        [
+          "measurements[1].endpoint",
+          "Ki"
+        ],
+        [
+          "measurements[1].value",
+          32
+        ],
+        [
+          "measurements[1].unit",
+          "nM"
+        ],
+        [
+          "scientific_release_eligible",
+          false
+        ]
+      ],
+      "source": "document"
+    }
+  ],
+  "text": "{\n  \"document_id\": \"DEMO-JSON-001\",\n  \"title\": \"BioIntel assay metadata\",\n  \"classification\": \"demonstration-only\",\n  \"targets\": [\n    \"PTGS2\",\n    \"ADORA2A\",\n    \"SIRT1\",\n    \"PIK3CA\"\n  ],\n  \"organism\": \"Homo sapiens\",\n  \"measurements\": [\n    {\n      \"compound\": \"Aspirin reference\",\n      \"endpoint\": \"IC50\",\n      \"value\": 125,\n      \"unit\": \"nM\"\n    },\n    {\n      \"compound\": \"Adenosine reference\",\n      \"endpoint\": \"Ki\",\n      \"value\": 32,\n      \"unit\": \"nM\"\n    }\n  ],\n  \"scientific_release_eligible\": false\n}",
+  "warning_count": 0,
+  "warnings": []
+}

@@ -1,0 +1,32 @@
+{
+  "activity_type": null,
+  "column_names": [
+    "pair_id",
+    "sequence_type",
+    "query_id",
+    "query_sequence",
+    "target_id",
+    "target_sequence",
+    "mutation_rate",
+    "recommended_mode",
+    "source"
+  ],
+  "dataset_name": "BioIntel Coverage Alignment Pairs",
+  "dataset_sha256": "8ab721b0f6b220f048139bf7b9860534969d26073f408d873b89f4c466c599f5",
+  "dataset_version": "1.0",
+  "demo_only": false,
+  "generated_by": "BioIntel Step 31 registry completion",
+  "metadata": {
+    "coverage_pack_version": "1.0",
+    "filename": "sequence_comparison_pairs_180.csv"
+  },
+  "parent_sha256": null,
+  "primary_file": "data/coverage/sequence_comparison_pairs_180.csv",
+  "primary_file_exists": true,
+  "row_count": 180,
+  "schema": "biointel.dataset-manifest.v3.1",
+  "scientific_release_eligible": false,
+  "source_description": "BioIntel deterministic complete-coverage pack",
+  "synthetic": false,
+  "task_type": "unlabelled"
+}

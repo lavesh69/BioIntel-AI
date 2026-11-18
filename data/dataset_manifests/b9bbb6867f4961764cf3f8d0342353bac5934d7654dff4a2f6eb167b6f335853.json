@@ -1,0 +1,33 @@
+{
+  "activity_type": null,
+  "column_names": [
+    "type",
+    "name",
+    "concentration",
+    "absorbance",
+    "replicate"
+  ],
+  "dataset_name": "Step30 ELISA plate study",
+  "dataset_sha256": "b9bbb6867f4961764cf3f8d0342353bac5934d7654dff4a2f6eb167b6f335853",
+  "dataset_version": "2.0",
+  "demo_only": true,
+  "generated_by": "BioIntel Step 31 registry completion",
+  "metadata": {
+    "demo_only": true,
+    "domain": "biotechnology",
+    "reference_scale": true,
+    "scientific_release_eligible": false,
+    "source_file": "data/bioinformatics_demo/demo_elisa.csv",
+    "step": 30,
+    "synthetic": true
+  },
+  "parent_sha256": null,
+  "primary_file": "data/bioinformatics_demo/demo_elisa.csv",
+  "primary_file_exists": true,
+  "row_count": 96,
+  "schema": "biointel.dataset-manifest.v3.1",
+  "scientific_release_eligible": false,
+  "source_description": "BioIntel Step 30 scaled scientific reference dataset",
+  "synthetic": true,
+  "task_type": "unlabelled"
+}

@@ -1,0 +1,65 @@
+{
+  "module_key": "cancer_genomics",
+  "title": "Cancer Genomics",
+  "description": "Somatic variants plus optional metadata, CNV, SV and callable territory.",
+  "accepted_formats": "CSV, TSV or MAF",
+  "offline": true,
+  "synthetic_example": true,
+  "files": [
+    {
+      "name": "blank_somatic_variants.csv",
+      "role": "blank",
+      "size_bytes": 85
+    },
+    {
+      "name": "filled_somatic_variants.csv",
+      "role": "example",
+      "size_bytes": 153
+    },
+    {
+      "name": "blank_cancer_metadata.csv",
+      "role": "blank",
+      "size_bytes": 42
+    },
+    {
+      "name": "filled_cancer_metadata.csv",
+      "role": "example",
+      "size_bytes": 73
+    },
+    {
+      "name": "blank_cnv_segments.csv",
+      "role": "blank",
+      "size_bytes": 52
+    },
+    {
+      "name": "filled_cnv_segments.csv",
+      "role": "example",
+      "size_bytes": 87
+    },
+    {
+      "name": "blank_sv_fusions.csv",
+      "role": "blank",
+      "size_bytes": 41
+    },
+    {
+      "name": "filled_sv_fusions.csv",
+      "role": "example",
+      "size_bytes": 69
+    },
+    {
+      "name": "blank_callable_territory.csv",
+      "role": "blank",
+      "size_bytes": 27
+    },
+    {
+      "name": "expected_cancer_summary.csv",
+      "role": "output",
+      "size_bytes": 82
+    },
+    {
+      "name": "FORMAT_GUIDE.md",
+      "role": "guide",
+      "size_bytes": 814
+    }
+  ]
+}

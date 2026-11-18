@@ -1,0 +1,30 @@
+{
+  "module_key": "sequence_comparison",
+  "title": "Sequence Comparison",
+  "description": "A ready two-sequence comparison pair.",
+  "accepted_formats": "FASTA, FA or TXT",
+  "offline": true,
+  "synthetic_example": true,
+  "files": [
+    {
+      "name": "blank_pair.fasta",
+      "role": "blank",
+      "size_bytes": 56
+    },
+    {
+      "name": "filled_pair_example.fasta",
+      "role": "example",
+      "size_bytes": 186
+    },
+    {
+      "name": "expected_comparison_summary.csv",
+      "role": "output",
+      "size_bytes": 124
+    },
+    {
+      "name": "FORMAT_GUIDE.md",
+      "role": "guide",
+      "size_bytes": 803
+    }
+  ]
+}

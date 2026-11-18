@@ -1,0 +1,30 @@
+{
+  "module_key": "admet_discovery",
+  "title": "ADMET Triage & Developability",
+  "description": "Batch compound library for rule-based developability triage.",
+  "accepted_formats": "CSV",
+  "offline": true,
+  "synthetic_example": true,
+  "files": [
+    {
+      "name": "blank_admet_compounds.csv",
+      "role": "blank",
+      "size_bytes": 34
+    },
+    {
+      "name": "filled_admet_compounds.csv",
+      "role": "example",
+      "size_bytes": 178
+    },
+    {
+      "name": "expected_admet_triage.csv",
+      "role": "output",
+      "size_bytes": 131
+    },
+    {
+      "name": "FORMAT_GUIDE.md",
+      "role": "guide",
+      "size_bytes": 782
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "duplicate_of_run_id": null,
+  "engine_version": "2.7.0",
+  "outputs": [
+    {
+      "created_at_utc": "2026-07-04T16:48:32.188508+00:00",
+      "filename": "04_infection_table_extracted.json",
+      "format": "json",
+      "integrity_status": "unknown",
+      "output_id": "586fbff258744dc39a188b3496a244d8",
+      "path": "data/document_extractions/0141a72fdbb74e96a2a29f2f028bda5c/04_infection_table_extracted.json",
+      "run_id": "0141a72fdbb74e96a2a29f2f028bda5c",
+      "sha256": "61eabfea0b66272b33a0a76b92d2b01cd5b61619919b091784b14ae3faeb15c3",
+      "size_bytes": 4208,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:48:32.192614+00:00",
+      "filename": "04_infection_table_extracted.xlsx",
+      "format": "xlsx",
+      "integrity_status": "unknown",
+      "output_id": "d81b8225c5674585915ebefba1990482",
+      "path": "data/document_extractions/0141a72fdbb74e96a2a29f2f028bda5c/04_infection_table_extracted.xlsx",
+      "run_id": "0141a72fdbb74e96a2a29f2f028bda5c",
+      "sha256": "5371ff4d7b50382c54aca33e1c7e264c9329a50c234fed345c5dc3772d1cedff",
+      "size_bytes": 9439,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:48:32.194956+00:00",
+      "filename": "04_infection_table_extracted.docx",
+      "format": "docx",
+      "integrity_status": "unknown",
+      "output_id": "40f013a7a9134b769906c70b43c6054f",
+      "path": "data/document_extractions/0141a72fdbb74e96a2a29f2f028bda5c/04_infection_table_extracted.docx",
+      "run_id": "0141a72fdbb74e96a2a29f2f028bda5c",
+      "sha256": "d9c92b15e95936fe3dc5ea5c559abb4acf362994aececeb0e04e661392b6cd13",
+      "size_bytes": 37795,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:48:32.197678+00:00",
+      "filename": "04_infection_table_extracted.pdf",
+      "format": "pdf",
+      "integrity_status": "unknown",
+      "output_id": "8c69950c86544034b050e9456deeaf17",
+      "path": "data/document_extractions/0141a72fdbb74e96a2a29f2f028bda5c/04_infection_table_extracted.pdf",
+      "run_id": "0141a72fdbb74e96a2a29f2f028bda5c",
+      "sha256": "8fdf02e00b82d122319d1190973fb5fdfe21b53c52918a0944c6b25b5944a161",
+      "size_bytes": 4557,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:48:32.199852+00:00",
+      "filename": "04_infection_table_csv_tables.zip",
+      "format": "csv_zip",
+      "integrity_status": "unknown",
+      "output_id": "e5372c3dead04b6b9c63a00862f40c52",
+      "path": "data/document_extractions/0141a72fdbb74e96a2a29f2f028bda5c/04_infection_table_csv_tables.zip",
+      "run_id": "0141a72fdbb74e96a2a29f2f028bda5c",
+      "sha256": "44f2d98c20f46170743d23bd8a13ec270358c72c1ed857a1c037c6d6dc2ed03c",
+      "size_bytes": 2666,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:48:32.202462+00:00",
+      "filename": "04_infection_table_complete_export.zip",
+      "format": "bundle_zip",
+      "integrity_status": "unknown",
+      "output_id": "421b765c391442b8bfb32f20b5397b1a",
+      "path": "data/document_extractions/0141a72fdbb74e96a2a29f2f028bda5c/04_infection_table_complete_export.zip",
+      "run_id": "0141a72fdbb74e96a2a29f2f028bda5c",
+      "sha256": "8fca2d4cb7a46f2252aaf1e1637682b336b1c96ba39eb3ae3d1ee74b4793b7ff",
+      "size_bytes": 50623,
+      "verified_at_utc": null
+    }
+  ],
+  "run_id": "0141a72fdbb74e96a2a29f2f028bda5c",
+  "source": {
+    "character_count": 273,
+    "entity_count": 5,
+    "file_type": "csv",
+    "image_count": 0,
+    "mime_type": "text/csv",
+    "page_count": 0,
+    "paragraph_count": 0,
+    "region_count": 0,
+    "row_count": 2,
+    "sheet_count": 0,
+    "source_name": "04_infection_table.csv",
+    "source_sha256": "410d35245c6cecb49fb0b8fe91b8f5d53b00f8765873e41c5dc59efca8ad5cc3",
+    "source_size_bytes": 273,
+    "table_count": 1,
+    "warning_count": 0
+  },
+  "structured_fields": {
+    "activity_measurements": [],
+    "document_type": "research_document",
+    "entity_counts": {
+      "assay_endpoint": 1,
+      "disease": 1,
+      "gene_or_protein": 1,
+      "mutation": 1,
+      "organism": 1
+    },
+    "has_limitations": false,
+    "has_methods": false,
+    "has_results": false,
+    "publication_identifiers": [],
+    "sample_sizes": [],
+    "sections": {
+      "unclassified": "record_id,compound,target,disease,mutation,assay,value_nm,organism,status\nDEMO-CORPUS-04,ciprofloxacin,gyrA,bacterial infection,S83L,MIC,317,Escherichia coli,demo_only\nDEMO-CORPUS-04-B,ciprofloxacin analogue,gyrA,bacterial infection,S83L,MIC,427,Escherichia coli,demo_only"
+    },
+    "sensitive_findings": [],
+    "title": "04_infection_table.csv"
+  },
+  "warnings": []
+}

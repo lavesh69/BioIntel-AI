@@ -1,0 +1,40 @@
+{
+  "module_key": "single_cell_heterogeneity",
+  "title": "Single-Cell Heterogeneity",
+  "description": "Genes-by-cells matrix and cell metadata.",
+  "accepted_formats": "CSV, TSV, 10x ZIP or H5AD",
+  "offline": true,
+  "synthetic_example": true,
+  "files": [
+    {
+      "name": "blank_single_cell_counts.csv",
+      "role": "blank",
+      "size_bytes": 33
+    },
+    {
+      "name": "filled_single_cell_counts.csv",
+      "role": "example",
+      "size_bytes": 89
+    },
+    {
+      "name": "blank_cell_metadata.csv",
+      "role": "blank",
+      "size_bytes": 35
+    },
+    {
+      "name": "filled_cell_metadata.csv",
+      "role": "example",
+      "size_bytes": 135
+    },
+    {
+      "name": "expected_cell_clusters.csv",
+      "role": "output",
+      "size_bytes": 97
+    },
+    {
+      "name": "FORMAT_GUIDE.md",
+      "role": "guide",
+      "size_bytes": 856
+    }
+  ]
+}

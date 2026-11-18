@@ -1,0 +1,30 @@
+{
+  "module_key": "dti_features",
+  "title": "DTI Feature Builder",
+  "description": "Drug\u2013target pair data for feature generation.",
+  "accepted_formats": "CSV",
+  "offline": true,
+  "synthetic_example": true,
+  "files": [
+    {
+      "name": "blank_dti_dataset.csv",
+      "role": "blank",
+      "size_bytes": 75
+    },
+    {
+      "name": "filled_dti_example.csv",
+      "role": "example",
+      "size_bytes": 379
+    },
+    {
+      "name": "expected_dti_output.csv",
+      "role": "output",
+      "size_bytes": 142
+    },
+    {
+      "name": "FORMAT_GUIDE.md",
+      "role": "guide",
+      "size_bytes": 866
+    }
+  ]
+}

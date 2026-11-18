@@ -1,0 +1,17 @@
+{
+  "schema": "biointel.neuro-cns.side-effect-map.v1",
+  "version": "2026.07-demo-reference",
+  "source_boundary": "Transparent demonstration association map; replace with approved labelled evidence before scientific release.",
+  "associations": {
+    "DRD2": {"sedation": 0.55, "motor_impairment": 0.85, "cognitive_impairment": 0.35},
+    "HTR2A": {"hallucination": 0.75, "sleep_disturbance": 0.35, "cognitive_impairment": 0.30},
+    "CHRNA7": {"cognitive_impairment": 0.45, "autonomic_effects": 0.35},
+    "SCN1A": {"seizure_risk": 0.90, "motor_impairment": 0.45},
+    "CACNA1C": {"dizziness": 0.60, "motor_impairment": 0.35},
+    "KCNQ2": {"seizure_risk": 0.80, "sedation": 0.25},
+    "GABBR1": {"sedation": 0.90, "motor_impairment": 0.65, "cognitive_impairment": 0.55},
+    "SLC6A4": {"serotonergic_burden": 0.85, "sleep_disturbance": 0.45},
+    "SLC6A3": {"motor_impairment": 0.40, "sleep_disturbance": 0.45},
+    "GRM5": {"cognitive_impairment": 0.45, "seizure_risk": 0.35}
+  }
+}

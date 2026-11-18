@@ -1,0 +1,40 @@
+{
+  "module_key": "pathway_network",
+  "title": "Pathway & Network Analysis",
+  "description": "Ranked gene list and optional GMT pathway collection.",
+  "accepted_formats": "CSV, TSV, GMT or TXT",
+  "offline": true,
+  "synthetic_example": true,
+  "files": [
+    {
+      "name": "blank_ranked_genes.csv",
+      "role": "blank",
+      "size_bytes": 20
+    },
+    {
+      "name": "filled_ranked_genes.csv",
+      "role": "example",
+      "size_bytes": 84
+    },
+    {
+      "name": "blank_pathways.gmt",
+      "role": "blank",
+      "size_bytes": 37
+    },
+    {
+      "name": "filled_pathways.gmt",
+      "role": "example",
+      "size_bytes": 93
+    },
+    {
+      "name": "expected_pathway_results.csv",
+      "role": "output",
+      "size_bytes": 113
+    },
+    {
+      "name": "FORMAT_GUIDE.md",
+      "role": "guide",
+      "size_bytes": 856
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "duplicate_of_run_id": null,
+  "engine_version": "2.7.0",
+  "outputs": [
+    {
+      "created_at_utc": "2026-07-04T16:34:19.369850+00:00",
+      "filename": "BioIntel_Assay_Review_Notes_extracted.json",
+      "format": "json",
+      "integrity_status": "unknown",
+      "output_id": "5972efef8acb475a9e51e007e70b2ee5",
+      "path": "data/document_extractions/62014e4368584e7f97712747578e79dc/BioIntel_Assay_Review_Notes_extracted.json",
+      "run_id": "62014e4368584e7f97712747578e79dc",
+      "sha256": "1ed1b010f95ce452951d624ae177cb1ac2c8ab67dbd16aabfbadea55629b5f17",
+      "size_bytes": 13578,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:34:19.378860+00:00",
+      "filename": "BioIntel_Assay_Review_Notes_extracted.xlsx",
+      "format": "xlsx",
+      "integrity_status": "unknown",
+      "output_id": "c4430267a08540dbafa5d08cda9d8946",
+      "path": "data/document_extractions/62014e4368584e7f97712747578e79dc/BioIntel_Assay_Review_Notes_extracted.xlsx",
+      "run_id": "62014e4368584e7f97712747578e79dc",
+      "sha256": "291b0d46c4e32db7d70ad7c13c93f226cd513b8726c4cdef92c799fcb2c38ac9",
+      "size_bytes": 11696,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:34:19.383355+00:00",
+      "filename": "BioIntel_Assay_Review_Notes_extracted.docx",
+      "format": "docx",
+      "integrity_status": "unknown",
+      "output_id": "f1ebbea36b38416bb31c617ea168c30c",
+      "path": "data/document_extractions/62014e4368584e7f97712747578e79dc/BioIntel_Assay_Review_Notes_extracted.docx",
+      "run_id": "62014e4368584e7f97712747578e79dc",
+      "sha256": "0bb15c0d4342974516cb3f2a758e14fa7b02da89274e5bde5f96b0c48145b6cd",
+      "size_bytes": 38406,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:34:19.386124+00:00",
+      "filename": "BioIntel_Assay_Review_Notes_extracted.pdf",
+      "format": "pdf",
+      "integrity_status": "unknown",
+      "output_id": "e89f453305784debabd54abb3d5ab87e",
+      "path": "data/document_extractions/62014e4368584e7f97712747578e79dc/BioIntel_Assay_Review_Notes_extracted.pdf",
+      "run_id": "62014e4368584e7f97712747578e79dc",
+      "sha256": "66804cb7d9f1125eb9ec8feb104d51190104c3c3b29c4df628aeb98eb614121f",
+      "size_bytes": 5841,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:34:19.388724+00:00",
+      "filename": "BioIntel_Assay_Review_Notes_csv_tables.zip",
+      "format": "csv_zip",
+      "integrity_status": "unknown",
+      "output_id": "ebd669d108274b1fb45cf1601d80ff62",
+      "path": "data/document_extractions/62014e4368584e7f97712747578e79dc/BioIntel_Assay_Review_Notes_csv_tables.zip",
+      "run_id": "62014e4368584e7f97712747578e79dc",
+      "sha256": "e95923324dd05a667e67f3c1232ced6a72999fbb285ce322007fb1565e462eb5",
+      "size_bytes": 5753,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:34:19.391455+00:00",
+      "filename": "BioIntel_Assay_Review_Notes_complete_export.zip",
+      "format": "bundle_zip",
+      "integrity_status": "unknown",
+      "output_id": "b2c8cf09cd1b41d682e0bf1018fe14bc",
+      "path": "data/document_extractions/62014e4368584e7f97712747578e79dc/BioIntel_Assay_Review_Notes_complete_export.zip",
+      "run_id": "62014e4368584e7f97712747578e79dc",
+      "sha256": "274a94457b7b4fececfcf7d712d403d0b7c5047860605d8c7761c7514f31fb2d",
+      "size_bytes": 59140,
+      "verified_at_utc": null
+    }
+  ],
+  "run_id": "62014e4368584e7f97712747578e79dc",
+  "source": {
+    "character_count": 940,
+    "entity_count": 11,
+    "file_type": "docx",
+    "image_count": 0,
+    "mime_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+    "page_count": 0,
+    "paragraph_count": 12,
+    "region_count": 12,
+    "row_count": 5,
+    "sheet_count": 0,
+    "source_name": "BioIntel_Assay_Review_Notes.docx",
+    "source_sha256": "2c116c2a01d579b08fd5ed8ae136949557bd3997fbed5663000cd3d463045053",
+    "source_size_bytes": 37515,
+    "table_count": 1,
+    "warning_count": 0
+  },
+  "structured_fields": {
+    "activity_measurements": [],
+    "document_type": "research_document",
+    "entity_counts": {
+      "assay_endpoint": 3,
+      "gene_or_protein": 7,
+      "organism": 1
+    },
+    "has_limitations": false,
+    "has_methods": false,
+    "has_results": false,
+    "publication_identifiers": [],
+    "sample_sizes": [],
+    "sections": {
+      "conclusion": "The document is intentionally populated with biomedical entities, numeric measurements and a structured table so Step 27 features are visible immediately.",
+      "unclassified": "BioIntel AI - Assay Review Notes\nDemonstration/reference content only. Not experimental evidence.\nObjective\nDemonstrate DOCX extraction, heading recognition, paragraph indexing, table extraction and scientific entity detection.\nStudy Overview\nThe reference workflow includes PTGS2, ADORA2A, SIRT1 and PIK3CA. Example endpoints include IC50, Ki and EC50. All values are illustrative.\nQuality Review\nRecords marked Reviewed have complete compound, target, endpoint and replicate metadata. Pending records require human confirmation before any evidence bridge action.\nReviewer Notes\n1. Do not treat the demonstration values as validated measurements.\n2. Use the history screen to inspect extraction outputs.\n3. Use the Evidence Bridge only for learning the workflow."
+    },
+    "sensitive_findings": [],
+    "title": "BioIntel_Assay_Review_Notes.docx"
+  },
+  "warnings": []
+}

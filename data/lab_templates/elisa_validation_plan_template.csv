@@ -1,0 +1,11 @@
+validation_characteristic,planned_levels,replicates,runs,acceptance_criterion,status,notes
+Calibration range,8,2,3,LLOQ-ULOQ defined and model diagnostics acceptable,Planned,
+Accuracy,Low;Mid;High,3,3,Laboratory-defined bias limit,Planned,
+Within-run precision,Low;Mid;High,5,1,Laboratory-defined CV limit,Planned,
+Between-run precision,Low;Mid;High,2,6,Laboratory-defined CV limit,Planned,
+Selectivity,Matrix lots,1,6,Laboratory-defined interference limit,Planned,
+Dilution integrity,High sample,5,1,Recovery and CV limits,Planned,
+Carryover,ULOQ then blank,3,1,Laboratory-defined blank response,Planned,
+Stability,Freeze-thaw;bench-top;processed,3,3,Laboratory-defined bias/CV limits,Planned,
+Lot comparison,Old and new reagent lots,3,1,Bridging acceptance criteria,Planned,
+Incurred sample reanalysis,Study samples,1,1,Protocol-defined agreement,Planned,

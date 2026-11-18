@@ -1,0 +1,6 @@
+record_id,compound,canonical_smiles,target,protein_sequence,activity_type,standard_value,standard_units,standard_relation,review_status
+DEMO-001,Aspirin reference,CC(=O)OC1=CC=CC=C1C(=O)O,PTGS2,MALLLARLALVGAAVA,IC50,125,nM,=,accepted
+DEMO-002,Caffeine reference,CN1C=NC2=C1C(=O)N(C(=O)N2C)C,ADORA2A,MPIMGSSVYITVELAIAVLAILGNVLVCWAV,Ki,820,nM,=,accepted
+DEMO-003,Adenosine reference,NC1=NC=NC2=C1N=CN2C3OC(CO)C(O)C3O,ADORA2A,MPIMGSSVYITVELAIAVLAILGNVLVCWAV,Ki,32,nM,=,accepted
+DEMO-004,Quercetin reference,OC1=CC(O)=C(C=C1)C2=COC3=CC(O)=CC(O)=C3C2=O,PIK3CA,MALNIRKILKYGKRGK,IC50,950,nM,=,pending
+DEMO-005,Resveratrol reference,OC1=CC=C(C=C1)C=CC2=CC(O)=CC(O)=C2,SIRT1,MADEHGLKSV,EC50,5200,nM,=,pending

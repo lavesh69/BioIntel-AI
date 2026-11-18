@@ -1,0 +1,30 @@
+{
+  "module_key": "real_evidence_studio",
+  "title": "Real Evidence Studio",
+  "description": "Evidence rows with source, assay context and review state.",
+  "accepted_formats": "CSV, TSV or TXT",
+  "offline": true,
+  "synthetic_example": true,
+  "files": [
+    {
+      "name": "blank_evidence_records.csv",
+      "role": "blank",
+      "size_bytes": 84
+    },
+    {
+      "name": "filled_evidence_records.csv",
+      "role": "example",
+      "size_bytes": 187
+    },
+    {
+      "name": "expected_review_queue.csv",
+      "role": "output",
+      "size_bytes": 96
+    },
+    {
+      "name": "FORMAT_GUIDE.md",
+      "role": "guide",
+      "size_bytes": 812
+    }
+  ]
+}

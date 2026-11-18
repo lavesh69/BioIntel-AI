@@ -1,0 +1,40 @@
+{
+  "module_key": "primer_crispr_codon",
+  "title": "Primer, CRISPR & Codon Studio",
+  "description": "Target sequence plus optional design-region table.",
+  "accepted_formats": "FASTA or CSV",
+  "offline": true,
+  "synthetic_example": true,
+  "files": [
+    {
+      "name": "blank_target.fasta",
+      "role": "blank",
+      "size_bytes": 36
+    },
+    {
+      "name": "filled_target.fasta",
+      "role": "example",
+      "size_bytes": 236
+    },
+    {
+      "name": "blank_design_regions.csv",
+      "role": "blank",
+      "size_bytes": 51
+    },
+    {
+      "name": "filled_design_regions.csv",
+      "role": "example",
+      "size_bytes": 104
+    },
+    {
+      "name": "expected_design_candidates.csv",
+      "role": "output",
+      "size_bytes": 114
+    },
+    {
+      "name": "FORMAT_GUIDE.md",
+      "role": "guide",
+      "size_bytes": 843
+    }
+  ]
+}

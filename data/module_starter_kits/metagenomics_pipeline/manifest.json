@@ -1,0 +1,55 @@
+{
+  "module_key": "metagenomics_pipeline",
+  "title": "Metagenomics Pipeline",
+  "description": "Abundance, metadata, function profile and Newick tree bundle.",
+  "accepted_formats": "CSV, TSV, NWK or Newick",
+  "offline": true,
+  "synthetic_example": true,
+  "files": [
+    {
+      "name": "blank_taxon_abundance.csv",
+      "role": "blank",
+      "size_bytes": 19
+    },
+    {
+      "name": "filled_taxon_abundance.csv",
+      "role": "example",
+      "size_bytes": 72
+    },
+    {
+      "name": "blank_sample_metadata.csv",
+      "role": "blank",
+      "size_bytes": 43
+    },
+    {
+      "name": "filled_sample_metadata.csv",
+      "role": "example",
+      "size_bytes": 121
+    },
+    {
+      "name": "blank_functional_profile.csv",
+      "role": "blank",
+      "size_bytes": 29
+    },
+    {
+      "name": "filled_functional_profile.csv",
+      "role": "example",
+      "size_bytes": 84
+    },
+    {
+      "name": "filled_phylogenetic_tree.nwk",
+      "role": "example",
+      "size_bytes": 45
+    },
+    {
+      "name": "expected_metagenomics_results.csv",
+      "role": "output",
+      "size_bytes": 100
+    },
+    {
+      "name": "FORMAT_GUIDE.md",
+      "role": "guide",
+      "size_bytes": 873
+    }
+  ]
+}

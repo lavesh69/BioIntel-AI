@@ -1,0 +1,114 @@
+{
+  "duplicate_of_run_id": null,
+  "engine_version": "2.7.0",
+  "outputs": [
+    {
+      "created_at_utc": "2026-07-04T16:49:40.962678+00:00",
+      "filename": "demo_leakage_train_extracted.json",
+      "format": "json",
+      "integrity_status": "unknown",
+      "output_id": "646a47f7d2044ae38b8979147bb698df",
+      "path": "data/document_extractions/78c66de10e7a4c1abef34d4a058d3c74/demo_leakage_train_extracted.json",
+      "run_id": "78c66de10e7a4c1abef34d4a058d3c74",
+      "sha256": "efea55542acc7f64dcc02a1b2e833652fa8263e5077721856979361246dea1f4",
+      "size_bytes": 23889,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:49:40.967149+00:00",
+      "filename": "demo_leakage_train_extracted.xlsx",
+      "format": "xlsx",
+      "integrity_status": "unknown",
+      "output_id": "9394c89751da4bd0810d0d2e238b857c",
+      "path": "data/document_extractions/78c66de10e7a4c1abef34d4a058d3c74/demo_leakage_train_extracted.xlsx",
+      "run_id": "78c66de10e7a4c1abef34d4a058d3c74",
+      "sha256": "77dfdc5d0807fcd27060cfbf40139157f747863bcac69a5a892de706e8603e2b",
+      "size_bytes": 11374,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:49:40.982390+00:00",
+      "filename": "demo_leakage_train_extracted.docx",
+      "format": "docx",
+      "integrity_status": "unknown",
+      "output_id": "03e3cc87fc5e4343bd73d0b116a5e7d6",
+      "path": "data/document_extractions/78c66de10e7a4c1abef34d4a058d3c74/demo_leakage_train_extracted.docx",
+      "run_id": "78c66de10e7a4c1abef34d4a058d3c74",
+      "sha256": "4efb1198c3c22c70326b3fb87980492830b8ac6b6fbdfcbf836ab90f8163f4f8",
+      "size_bytes": 38886,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:49:40.985894+00:00",
+      "filename": "demo_leakage_train_extracted.pdf",
+      "format": "pdf",
+      "integrity_status": "unknown",
+      "output_id": "57e93f2c713b4c1e9fe29836e5bbc538",
+      "path": "data/document_extractions/78c66de10e7a4c1abef34d4a058d3c74/demo_leakage_train_extracted.pdf",
+      "run_id": "78c66de10e7a4c1abef34d4a058d3c74",
+      "sha256": "1019b8875a05eed25abd767f4edc1c0285ce698ba188616d350bb40b3be8a706",
+      "size_bytes": 9689,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:49:40.988225+00:00",
+      "filename": "demo_leakage_train_csv_tables.zip",
+      "format": "csv_zip",
+      "integrity_status": "unknown",
+      "output_id": "7b00c43ead8042d1b07836e5a7b9713e",
+      "path": "data/document_extractions/78c66de10e7a4c1abef34d4a058d3c74/demo_leakage_train_csv_tables.zip",
+      "run_id": "78c66de10e7a4c1abef34d4a058d3c74",
+      "sha256": "3a9459423349f1452998c425ddfa796c5e687126c57ff00bc69439f8a34a4b0e",
+      "size_bytes": 4146,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:49:40.990712+00:00",
+      "filename": "demo_leakage_train_complete_export.zip",
+      "format": "bundle_zip",
+      "integrity_status": "unknown",
+      "output_id": "3ccc4b2e81d941c2bb30f68d86f0d77f",
+      "path": "data/document_extractions/78c66de10e7a4c1abef34d4a058d3c74/demo_leakage_train_complete_export.zip",
+      "run_id": "78c66de10e7a4c1abef34d4a058d3c74",
+      "sha256": "ac94d0412f233c66935d0ec29570c9d9501bc83b27d45154b74b8cc44eb266ec",
+      "size_bytes": 58380,
+      "verified_at_utc": null
+    }
+  ],
+  "run_id": "78c66de10e7a4c1abef34d4a058d3c74",
+  "source": {
+    "character_count": 3705,
+    "entity_count": 10,
+    "file_type": "csv",
+    "image_count": 0,
+    "mime_type": "text/csv",
+    "page_count": 0,
+    "paragraph_count": 0,
+    "region_count": 0,
+    "row_count": 60,
+    "sheet_count": 0,
+    "source_name": "demo_leakage_train.csv",
+    "source_sha256": "5a1eb208e4dbbb641d30b7216d1ac4a44746ce37ec4fa6129dcff4258f91294a",
+    "source_size_bytes": 3705,
+    "table_count": 1,
+    "warning_count": 0
+  },
+  "structured_fields": {
+    "activity_measurements": [],
+    "document_type": "research_document",
+    "entity_counts": {
+      "gene_or_protein": 10
+    },
+    "has_limitations": false,
+    "has_methods": false,
+    "has_results": false,
+    "publication_identifiers": [],
+    "sample_sizes": [],
+    "sections": {
+      "unclassified": "canonical_smiles,protein_sequence,label,split,record_id\nCCO,MACDEFGHIKLMNPQRSTVWYACDEFGHIKLMNPQR,0,train,TRAIN-001\nCCN,MCDEFGHIKLMNPQRSTVWYACDEFGHIKLMNPQRS,1,train,TRAIN-002\nCCC,MDEFGHIKLMNPQRSTVWYACDEFGHIKLMNPQRST,0,train,TRAIN-003\nCCCC,MEFGHIKLMNPQRSTVWYACDEFGHIKLMNPQRSTV,1,train,TRAIN-004\nCCCO,MFGHIKLMNPQRSTVWYACDEFGHIKLMNPQRSTVW,0,train,TRAIN-005\nCCCN,MGHIKLMNPQRSTVWYACDEFGHIKLMNPQRSTVWY,1,train,TRAIN-006\nCC(=O)O,MHIKLMNPQRSTVWYACDEFGHIKLMNPQRSTVWYA,0,train,TRAIN-007\nCCOC,MIKLMNPQRSTVWYACDEFGHIKLMNPQRSTVWYAC,1,train,TRAIN-008\nCCS,MKLMNPQRSTVWYACDEFGHIKLMNPQRSTVWYACD,0,train,TRAIN-009\nCNC,MLMNPQRSTVWYACDEFGHIKLMNPQRSTVWYACDE,1,train,TRAIN-010\nCCO,MMNPQRSTVWYACDEFGHIKLMNPQRSTVWYACDEF,0,train,TRAIN-011\nCCN,MNPQRSTVWYACDEFGHIKLMNPQRSTVWYACDEFG,1,train,TRAIN-012\nCCC,MPQRSTVWYACDEFGHIKLMNPQRSTVWYACDEFGH,0,train,TRAIN-013\nCCCC,MQRSTVWYACDEFGHIKLMNPQRSTVWYACDEFGHI,1,train,TRAIN-014\nCCCO,MRSTVWYACDEFGHIKLMNPQRSTVWYACDEFGHIK,0,train,TRAIN-015\nCCCN,MSTVWYACDEFGHIKLMNPQRSTVWYACDEFGHIKL,1,train,TRAIN-016\nCC(=O)O,MTVWYACDEFGHIKLMNPQRSTVWYACDEFGHIKLM,0,train,TRAIN-017\nCCOC,MVWYACDEFGHIKLMNPQRSTVWYACDEFGHIKLMN,1,train,TRAIN-018\nCCS,MWYACDEFGHIKLMNPQRSTVWYACDEFGHIKLMNP,0,train,TRAIN-019\nCNC,MYACDEFGHIKLMNPQRSTVWYACDEFGHIKLMNPQ,1,train,TRAIN-020\nCCO,MACDEFGHIKLMNPQRSTVWYACDEFGHIKLMNPQR,0,train,TRAIN-021\nCCN,MCDEFGHIKLMNPQRSTVWYACDEFGHIKLMNPQRS,1,train,TRAIN-022\nCCC,MDEFGHIKLMNPQRSTVWYACDEFGHIKLMNPQRST,0,train,TRAIN-023\nCCCC,MEFGHIKLMNPQRSTVWYACDEFGHIKLMNPQRSTV,1,train,TRAIN-024\nCCCO,MFGHIKLMNPQRSTVWYACDEFGHIKLMNPQRSTVW,0,train,TRAIN-025\nCCCN,MGHIKLMNPQRSTVWYACDEFGHIKLMNPQRSTVWY,1,train,TRAIN-026\nCC(=O)O,MHIKLMNPQRSTVWYACDEFGHIKLMNPQRSTVWYA,0,train,TRAIN-027\nCCOC,MIKLMNPQRSTVWYACDEFGHIKLMNPQRSTVWYAC,1,train,TRAIN-028\nCCS,MKLMNPQRSTVWYACDEFGHIKLMNPQRSTVWYACD,0,train,TRAIN-029\nCNC,MLMNPQRSTVWYACDEFGHIKLMNPQRSTVWYACDE,1,train,TRAIN-030\nCCO,MMNPQRSTVWYACDEFGHIKLMNPQRSTVWYACDEF,0,train,TRAIN-031\nCCN,MNPQRSTVWYACDEFGHIKLMNPQRSTVWYACDEFG,1,train,TRAIN-032\nCCC,MPQRSTVWYACDEFGHIKLMNPQRSTVWYACDEFGH,0,train,TRAIN-033\nCCCC,MQRSTVWYACDEFGHIKLMNPQRSTVWYACDEFGHI,1,train,TRAIN-034\nCCCO,MRSTVWYACDEFGHIKLMNPQRSTVWYACDEFGHIK,0,train,TRAIN-035\nCCCN,MSTVWYACDEFGHIKLMNPQRSTVWYACDEFGHIKL,1,train,TRAIN-036\nCC(=O)O,MTVWYACDEFGHIKLMNPQRSTVWYACDEFGHIKLM,0,train,TRAIN-037\nCCOC,MVWYACDEFGHIKLMNPQRSTVWYACDEFGHIKLMN,1,train,TRAIN-038\nCCS,MWYACDEFGHIKLMNPQRSTVWYACDEFGHIKLMNP,0,train,TRAIN-039\nCNC,MYACDEFGHIKLMNPQRSTVWYACDEFGHIKLMNPQ,1,train,TRAIN-040\nCCO,MACDEFGHIKLMNPQRSTVWYACDEFGHIKLMNPQR,0,train,TRAIN-041\nCCN,MCDEFGHIKLMNPQRSTVWYACDEFGHIKLMNPQRS,1,train,TRAIN-042\nCCC,MDEFGHIKLMNPQRSTVWYACDEFGHIKLMNPQRST,0,train,TRAIN-043\nCCCC,MEFGHIKLMNPQRSTVWYACDEFGHIKLMNPQRSTV,1,train,TRAIN-044\nCCCO,MFGHIKLMNPQRSTVWYACDEFGHIKLMNPQRSTVW,0,train,TRAIN-045\nCCCN,MGHIKLMNPQRSTVWYACDEFGHIKLMNPQRSTVWY,1,train,TRAIN-046\nCC(=O)O,MHIKLMNPQRSTVWYACDEFGHIKLMNPQRSTVWYA,0,train,TRAIN-047\nCCOC,MIKLMNPQRSTVWYACDEFGHIKLMNPQRSTVWYAC,1,train,TRAIN-048\nCCS,MKLMNPQRSTVWYACDEFGHIKLMNPQRSTVWYACD,0,train,TRAIN-049\nCNC,MLMNPQRSTVWYACDEFGHIKLMNPQRSTVWYACDE,1,train,TRAIN-050\nCCO,MMNPQRSTVWYACDEFGHIKLMNPQRSTVWYACDEF,0,train,TRAIN-051\nCCN,MNPQRSTVWYACDEFGHIKLMNPQRSTVWYACDEFG,1,train,TRAIN-052\nCCC,MPQRSTVWYACDEFGHIKLMNPQRSTVWYACDEFGH,0,train,TRAIN-053\nCCCC,MQRSTVWYACDEFGHIKLMNPQRSTVWYACDEFGHI,1,train,TRAIN-054\nCCCO,MRSTVWYACDEFGHIKLMNPQRSTVWYACDEFGHIK,0,train,TRAIN-055\nCCCN,MSTVWYACDEFGHIKLMNPQRSTVWYACDEFGHIKL,1,train,TRAIN-056\nCC(=O)O,MTVWYACDEFGHIKLMNPQRSTVWYACDEFGHIKLM,0,train,TRAIN-057\nCCOC,MVWYACDEFGHIKLMNPQRSTVWYACDEFGHIKLMN,1,train,TRAIN-058\nCCS,MWYACDEFGHIKLMNPQRSTVWYACDEFGHIKLMNP,0,train,TRAIN-059\nCNC,MYACDEFGHIKLMNPQRSTVWYACDEFGHIKLMNPQ,1,train,TRAIN-060"
+    },
+    "sensitive_findings": [],
+    "title": "demo_leakage_train.csv"
+  },
+  "warnings": []
+}

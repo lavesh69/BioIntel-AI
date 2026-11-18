@@ -1,0 +1,114 @@
+{
+  "duplicate_of_run_id": null,
+  "engine_version": "2.7.0",
+  "outputs": [
+    {
+      "created_at_utc": "2026-07-04T16:48:30.340407+00:00",
+      "filename": "demo_leakage_test_extracted.json",
+      "format": "json",
+      "integrity_status": "unknown",
+      "output_id": "902b305a6d9d49e7a4b6a269d39b7e16",
+      "path": "data/document_extractions/a0eea39924c54c62aabad43b165e081d/demo_leakage_test_extracted.json",
+      "run_id": "a0eea39924c54c62aabad43b165e081d",
+      "sha256": "cd859025bbf27ad37571fe381b3d17133a1cc370023f2af85edbe49e9f56a792",
+      "size_bytes": 3679,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:48:30.343715+00:00",
+      "filename": "demo_leakage_test_extracted.xlsx",
+      "format": "xlsx",
+      "integrity_status": "unknown",
+      "output_id": "e34224a169b545fc97b2a69360cd8d67",
+      "path": "data/document_extractions/a0eea39924c54c62aabad43b165e081d/demo_leakage_test_extracted.xlsx",
+      "run_id": "a0eea39924c54c62aabad43b165e081d",
+      "sha256": "f0f6b04cf57f0fd8c18e8d89702743b8159f272ee4e3c305eb29593534cbe945",
+      "size_bytes": 9179,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:48:30.346213+00:00",
+      "filename": "demo_leakage_test_extracted.docx",
+      "format": "docx",
+      "integrity_status": "unknown",
+      "output_id": "0f188ef037a44eeea362228414e68c43",
+      "path": "data/document_extractions/a0eea39924c54c62aabad43b165e081d/demo_leakage_test_extracted.docx",
+      "run_id": "a0eea39924c54c62aabad43b165e081d",
+      "sha256": "f7676033fd589330e74fc7f4c78ddac998f30185c83bb34c7695dde125ece12e",
+      "size_bytes": 37719,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:48:30.348435+00:00",
+      "filename": "demo_leakage_test_extracted.pdf",
+      "format": "pdf",
+      "integrity_status": "unknown",
+      "output_id": "0c410f260cec4a79b85e657545c44b34",
+      "path": "data/document_extractions/a0eea39924c54c62aabad43b165e081d/demo_leakage_test_extracted.pdf",
+      "run_id": "a0eea39924c54c62aabad43b165e081d",
+      "sha256": "bb07a7074d16f70984ad40c81357b91dc0d32a79c36dd5f660f133d6692babcc",
+      "size_bytes": 4291,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:48:30.350527+00:00",
+      "filename": "demo_leakage_test_csv_tables.zip",
+      "format": "csv_zip",
+      "integrity_status": "unknown",
+      "output_id": "7c790ba45e294ea5a8522a32ed378281",
+      "path": "data/document_extractions/a0eea39924c54c62aabad43b165e081d/demo_leakage_test_csv_tables.zip",
+      "run_id": "a0eea39924c54c62aabad43b165e081d",
+      "sha256": "e1d8d20836cffb03b46cea16429e9ac1e32ea2f33ba074de7afe288c5a4bdd13",
+      "size_bytes": 2376,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:48:30.352824+00:00",
+      "filename": "demo_leakage_test_complete_export.zip",
+      "format": "bundle_zip",
+      "integrity_status": "unknown",
+      "output_id": "fd004970cfab459d8e3fb9e79e946223",
+      "path": "data/document_extractions/a0eea39924c54c62aabad43b165e081d/demo_leakage_test_complete_export.zip",
+      "run_id": "a0eea39924c54c62aabad43b165e081d",
+      "sha256": "d89955efd13792665a044c4d70ce0246358780b8d19339d27c4e9e99e4aa088f",
+      "size_bytes": 49641,
+      "verified_at_utc": null
+    }
+  ],
+  "run_id": "a0eea39924c54c62aabad43b165e081d",
+  "source": {
+    "character_count": 269,
+    "entity_count": 3,
+    "file_type": "csv",
+    "image_count": 0,
+    "mime_type": "text/csv",
+    "page_count": 0,
+    "paragraph_count": 0,
+    "region_count": 0,
+    "row_count": 6,
+    "sheet_count": 0,
+    "source_name": "demo_leakage_test.csv",
+    "source_sha256": "f993a7374f2f1ae452d58b00201e961e0f0f36ff4429b59e308e3a0db4564fd1",
+    "source_size_bytes": 269,
+    "table_count": 1,
+    "warning_count": 0
+  },
+  "structured_fields": {
+    "activity_measurements": [],
+    "document_type": "research_document",
+    "entity_counts": {
+      "gene_or_protein": 3
+    },
+    "has_limitations": false,
+    "has_methods": false,
+    "has_results": false,
+    "publication_identifiers": [],
+    "sample_sizes": [],
+    "sections": {
+      "unclassified": "sample_id,canonical_smiles,protein_sequence\nTE-001,c1ccccc1,MMMMMNNNNNPPPPPQQQQQ\nTE-002,C1CCCCC1,MMMMMNNNNNPPPPPQQQQQ\nTE-003,O=C=O,VVVVVLLLLLIIIIIKKKKK\nTE-004,N#N,VVVVVLLLLLIIIIIKKKKK\nTE-005,C1=CC=CN=C1,SSSSSTTTTTYYYYYWWWWW\nTE-006,C1=CC=CO1,SSSSSTTTTTYYYYYWWWWW"
+    },
+    "sensitive_findings": [],
+    "title": "demo_leakage_test.csv"
+  },
+  "warnings": []
+}

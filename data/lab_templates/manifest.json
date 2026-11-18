@@ -1,0 +1,102 @@
+{
+  "external_boundary": "Templates are canonical research schemas and reporting aids, not instrument, laboratory or regulatory certification.",
+  "files": [
+    {
+      "bytes": 625,
+      "path": "README.md",
+      "sha256": "dee1907a6386558e40854450b6308b50b42c4bcbc02c6eaf9bc8c3c0ccfa22e8"
+    },
+    {
+      "bytes": 261,
+      "path": "bioprocess_timeseries_template.csv",
+      "sha256": "de54f1b63163f20048a7a48e9c03fc1662d25fb867fbbbed2d4ad973d01722aa"
+    },
+    {
+      "bytes": 278,
+      "path": "bioprocess_units_template.csv",
+      "sha256": "d4c01a22701046b658b5d8c0059474eeeb0e15a51b818a5f29195357f39c6156"
+    },
+    {
+      "bytes": 249,
+      "path": "elisa_plate_template.csv",
+      "sha256": "5536bac5c50282447811ec9b35ca4920543c740aadcba1e7300b0c88b2aaebb9"
+    },
+    {
+      "bytes": 858,
+      "path": "elisa_validation_plan_template.csv",
+      "sha256": "9aa850d1943eed3677eff85502341d038a349b95e0f2cca65fe7c9c126330318"
+    },
+    {
+      "bytes": 178,
+      "path": "enzyme_kinetics_template.csv",
+      "sha256": "b771e9aeb628fb0baf871ff71a3023e311297e6f1c9760c33bf03e07916ad8a0"
+    },
+    {
+      "bytes": 132,
+      "path": "enzyme_progress_curve_template.csv",
+      "sha256": "f676e9e162a36fd09ed0bc9c4f8ff2ece250c46ef13b8f1070ea0922b52c6223"
+    },
+    {
+      "bytes": 57,
+      "path": "experimental_randomization_template.csv",
+      "sha256": "e6ab6d037953b165e44a00f7b756006a8f2360ba630929c5765442d3994e7dde"
+    },
+    {
+      "bytes": 216,
+      "path": "instrument_run_metadata_template.csv",
+      "sha256": "5b6f49ed10b5d51e63a9f7c40195c9ae1a7213f37ed920ec23492b113bae03a6"
+    },
+    {
+      "bytes": 170,
+      "path": "lab_run_review_template.csv",
+      "sha256": "b5bb72ff305d8762c12cae88d0a2ec89f49fa571857ce24a74c76ea14dfaac7c"
+    },
+    {
+      "bytes": 102,
+      "path": "metagenomics_functional_profile_template.csv",
+      "sha256": "b9477ddd4c6ab6d7d5654a5b733072fa1eea645551302e472f75eae7d627f902"
+    },
+    {
+      "bytes": 162,
+      "path": "metagenomics_metadata_template.csv",
+      "sha256": "72b371d70d4a48e9aa6d7e382014e4b8b0cc20bfad335a03f312dfbbfdee1cfd"
+    },
+    {
+      "bytes": 774,
+      "path": "miqe_metadata_checklist.csv",
+      "sha256": "adf57d8372b548c8b6588df1c1e86a771768461280955b9e1d644eaaa4e600f8"
+    },
+    {
+      "bytes": 69,
+      "path": "phylogenetic_tree_template.nwk",
+      "sha256": "81eb449f60eb9fe918eabab73239dc45fbdecfa2ed87385e0f82b97c5f64fd98"
+    },
+    {
+      "bytes": 150,
+      "path": "qpcr_long_multireference_template.csv",
+      "sha256": "31a015311c954889898f9648eae3cacc2f62418621c08cf981410a91e3040b03"
+    },
+    {
+      "bytes": 94,
+      "path": "qpcr_melt_curve_template.csv",
+      "sha256": "2a85da10be78fa564af6622de02546959d2e736b9f731b71d0eea48f2486aeea"
+    },
+    {
+      "bytes": 76,
+      "path": "qpcr_standard_curve_template.csv",
+      "sha256": "0594d0a2a392eb9e90cc85f97260efed4981bbe1fbec2019f2be7b22b8b84306"
+    },
+    {
+      "bytes": 116,
+      "path": "qpcr_wide_template.csv",
+      "sha256": "622d2ff788dc7d1ab2b4c2969e83d808bc09abd8c40db2f25d8e1d1740827aff"
+    },
+    {
+      "bytes": 730,
+      "path": "storms_reporting_checklist.csv",
+      "sha256": "633c40419b3e18272aa5aa41ee1d2636a9f590e15ca5033511a749a88709b543"
+    }
+  ],
+  "pack_id": "biointel-step62-lab-analytics-excellence",
+  "schema": "biointel.lab-templates.v2"
+}

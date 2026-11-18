@@ -1,0 +1,116 @@
+{
+  "duplicate_of_run_id": null,
+  "engine_version": "2.7.0",
+  "outputs": [
+    {
+      "created_at_utc": "2026-07-04T16:34:19.877735+00:00",
+      "filename": "BioIntel_Assay_Metadata_extracted.json",
+      "format": "json",
+      "integrity_status": "unknown",
+      "output_id": "d394a0bbeb4f4132b194c3eb7c91aaf4",
+      "path": "data/document_extractions/e252f4f4ce96405783ece4495a684e71/BioIntel_Assay_Metadata_extracted.json",
+      "run_id": "e252f4f4ce96405783ece4495a684e71",
+      "sha256": "f0819138534974ea9743337df3cfbd339bd3d4ea6f3fc299a1c9b28f9384e710",
+      "size_bytes": 6108,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:34:19.884302+00:00",
+      "filename": "BioIntel_Assay_Metadata_extracted.xlsx",
+      "format": "xlsx",
+      "integrity_status": "unknown",
+      "output_id": "c53224987fcb4ceb96f4620a3aac6d15",
+      "path": "data/document_extractions/e252f4f4ce96405783ece4495a684e71/BioIntel_Assay_Metadata_extracted.xlsx",
+      "run_id": "e252f4f4ce96405783ece4495a684e71",
+      "sha256": "bbd459851e3c7e8b42341a96050f754401b76cf728972e26486e44f1e49adca0",
+      "size_bytes": 9781,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:34:19.887723+00:00",
+      "filename": "BioIntel_Assay_Metadata_extracted.docx",
+      "format": "docx",
+      "integrity_status": "unknown",
+      "output_id": "c05d8142d7934765b9710529468fd8b6",
+      "path": "data/document_extractions/e252f4f4ce96405783ece4495a684e71/BioIntel_Assay_Metadata_extracted.docx",
+      "run_id": "e252f4f4ce96405783ece4495a684e71",
+      "sha256": "7b673ee229722b8aa70dc007cdd9c0d24282cede69867c7ddb94f1cf13c6152a",
+      "size_bytes": 38076,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:34:19.890236+00:00",
+      "filename": "BioIntel_Assay_Metadata_extracted.pdf",
+      "format": "pdf",
+      "integrity_status": "unknown",
+      "output_id": "d3ed0e805b6144ecb0495858d38ba57a",
+      "path": "data/document_extractions/e252f4f4ce96405783ece4495a684e71/BioIntel_Assay_Metadata_extracted.pdf",
+      "run_id": "e252f4f4ce96405783ece4495a684e71",
+      "sha256": "d1e155c49be3200e5b0d7aafe42beaf22e1a4037bf3141cb836fba73f13dba05",
+      "size_bytes": 4930,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:34:19.892543+00:00",
+      "filename": "BioIntel_Assay_Metadata_csv_tables.zip",
+      "format": "csv_zip",
+      "integrity_status": "unknown",
+      "output_id": "14114b4663c24bea89be483e8ba17dce",
+      "path": "data/document_extractions/e252f4f4ce96405783ece4495a684e71/BioIntel_Assay_Metadata_csv_tables.zip",
+      "run_id": "e252f4f4ce96405783ece4495a684e71",
+      "sha256": "872c3fac8e1b32bc99e52e40af775e60fdfbd7976039477f1c67c538f41b11b5",
+      "size_bytes": 3229,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:34:19.894785+00:00",
+      "filename": "BioIntel_Assay_Metadata_complete_export.zip",
+      "format": "bundle_zip",
+      "integrity_status": "unknown",
+      "output_id": "7b725e3c34404d6b9a2eb1c8eeda5df4",
+      "path": "data/document_extractions/e252f4f4ce96405783ece4495a684e71/BioIntel_Assay_Metadata_complete_export.zip",
+      "run_id": "e252f4f4ce96405783ece4495a684e71",
+      "sha256": "1cdfc0f302dd99e65351def92c398860bf3764885bdef73a18428b6894d60582",
+      "size_bytes": 52451,
+      "verified_at_utc": null
+    }
+  ],
+  "run_id": "e252f4f4ce96405783ece4495a684e71",
+  "source": {
+    "character_count": 517,
+    "entity_count": 7,
+    "file_type": "json",
+    "image_count": 0,
+    "mime_type": "application/json",
+    "page_count": 0,
+    "paragraph_count": 0,
+    "region_count": 0,
+    "row_count": 17,
+    "sheet_count": 0,
+    "source_name": "BioIntel_Assay_Metadata.json",
+    "source_sha256": "01242d49e2be6150948589b9c9a7dde53545162bb7d1ec93302a1ca268b1d7bc",
+    "source_size_bytes": 517,
+    "table_count": 1,
+    "warning_count": 0
+  },
+  "structured_fields": {
+    "activity_measurements": [],
+    "document_type": "research_document",
+    "entity_counts": {
+      "assay_endpoint": 2,
+      "gene_or_protein": 4,
+      "organism": 1
+    },
+    "has_limitations": false,
+    "has_methods": false,
+    "has_results": false,
+    "publication_identifiers": [],
+    "sample_sizes": [],
+    "sections": {
+      "unclassified": "{\n\"document_id\": \"DEMO-JSON-001\",\n\"title\": \"BioIntel assay metadata\",\n\"classification\": \"demonstration-only\",\n\"targets\": [\n\"PTGS2\",\n\"ADORA2A\",\n\"SIRT1\",\n\"PIK3CA\"\n],\n\"organism\": \"Homo sapiens\",\n\"measurements\": [\n{\n\"compound\": \"Aspirin reference\",\n\"endpoint\": \"IC50\",\n\"value\": 125,\n\"unit\": \"nM\"\n},\n{\n\"compound\": \"Adenosine reference\",\n\"endpoint\": \"Ki\",\n\"value\": 32,\n\"unit\": \"nM\"\n}\n],\n\"scientific_release_eligible\": false\n}"
+    },
+    "sensitive_findings": [],
+    "title": "BioIntel_Assay_Metadata.json"
+  },
+  "warnings": []
+}

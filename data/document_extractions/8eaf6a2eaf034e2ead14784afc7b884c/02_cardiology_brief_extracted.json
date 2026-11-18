@@ -1,0 +1,101 @@
+{
+  "character_count": 631,
+  "entities": [
+    {
+      "confidence": 0.86,
+      "end": 136,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "KCNH2",
+      "source": "document",
+      "start": 131,
+      "text": "KCNH2"
+    },
+    {
+      "confidence": 0.92,
+      "end": 204,
+      "entity_type": "mutation",
+      "metadata": {},
+      "normalized": "T618I",
+      "source": "document",
+      "start": 199,
+      "text": "T618I"
+    },
+    {
+      "confidence": 0.97,
+      "end": 523,
+      "entity_type": "assay_endpoint",
+      "metadata": {},
+      "normalized": "Ki",
+      "source": "document",
+      "start": 521,
+      "text": "Ki"
+    },
+    {
+      "confidence": 0.9,
+      "end": 272,
+      "entity_type": "organism",
+      "metadata": {},
+      "normalized": "Homo sapiens",
+      "source": "document",
+      "start": 260,
+      "text": "Homo sapiens"
+    }
+  ],
+  "entity_count": 4,
+  "file_type": "md",
+  "image_count": 0,
+  "metadata": {
+    "encoding": "utf-8-sig",
+    "scientific_entity_extraction": "rule_based_v1",
+    "sensitive_finding_count": 0,
+    "sensitive_redaction_applied": false
+  },
+  "mime_type": "text/markdown",
+  "page_count": 0,
+  "paragraph_count": 0,
+  "region_count": 0,
+  "regions": [],
+  "row_count": 0,
+  "sections": [
+    {
+      "confidence": 1.0,
+      "metadata": {},
+      "name": "Document",
+      "source": "document",
+      "text": "# Cardiology Demonstration Brief\r\n\r\n## Summary\r\nBioIntel demonstration record 2. The compound dofetilide was discussed with target KCNH2 in the context of cardiac arrhythmia. The example mutation is T618I. A demonstration Ki measurement of 171 nM is shown for Homo sapiens. Synthetic reference labels: SYN-PAPER-0002 and SYN-DOI-NOT-REAL-0002. This content exists only to populate document search, extraction, entity recognition, history, comparison and evidence-bridge screens.\r\n\r\n## Methods\r\nSynthetic reference table; Ki endpoint.\r\n\r\n## Limitations\r\nDemonstration/reference content only; not experimental or clinical evidence.\r\n"
+    }
+  ],
+  "sheet_count": 0,
+  "source_name": "02_cardiology_brief.md",
+  "source_sha256": "349d4a3587e3e0e86643fe85c44de9e40b2daf15cb941be0552961a44786b25d",
+  "source_size_bytes": 631,
+  "structured_fields": {
+    "activity_measurements": [],
+    "document_type": "research_document",
+    "entity_counts": {
+      "assay_endpoint": 1,
+      "gene_or_protein": 1,
+      "mutation": 1,
+      "organism": 1
+    },
+    "has_limitations": true,
+    "has_methods": true,
+    "has_results": false,
+    "publication_identifiers": [],
+    "sample_sizes": [],
+    "sections": {
+      "abstract": "BioIntel demonstration record 2. The compound dofetilide was discussed with target KCNH2 in the context of cardiac arrhythmia. The example mutation is T618I. A demonstration Ki measurement of 171 nM is shown for Homo sapiens. Synthetic reference labels: SYN-PAPER-0002 and SYN-DOI-NOT-REAL-0002. This content exists only to populate document search, extraction, entity recognition, history, comparison and evidence-bridge screens.",
+      "limitations": "Demonstration/reference content only; not experimental or clinical evidence.",
+      "methods": "Synthetic reference table; Ki endpoint.",
+      "unclassified": "# Cardiology Demonstration Brief"
+    },
+    "sensitive_findings": [],
+    "title": "02_cardiology_brief.md"
+  },
+  "table_count": 0,
+  "tables": [],
+  "text": "# Cardiology Demonstration Brief\r\n\r\n## Summary\r\nBioIntel demonstration record 2. The compound dofetilide was discussed with target KCNH2 in the context of cardiac arrhythmia. The example mutation is T618I. A demonstration Ki measurement of 171 nM is shown for Homo sapiens. Synthetic reference labels: SYN-PAPER-0002 and SYN-DOI-NOT-REAL-0002. This content exists only to populate document search, extraction, entity recognition, history, comparison and evidence-bridge screens.\r\n\r\n## Methods\r\nSynthetic reference table; Ki endpoint.\r\n\r\n## Limitations\r\nDemonstration/reference content only; not experimental or clinical evidence.\r\n",
+  "warning_count": 0,
+  "warnings": []
+}

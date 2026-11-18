@@ -1,0 +1,178 @@
+{
+  "duplicate_of_run_id": null,
+  "engine_version": "2.7.0",
+  "outputs": [
+    {
+      "created_at_utc": "2026-07-04T16:34:19.714474+00:00",
+      "filename": "BioIntel_Literature_Notes_extracted.json",
+      "format": "json",
+      "integrity_status": "unknown",
+      "output_id": "9411dd7490224d3c9621a43312183f4a",
+      "path": "data/document_extractions/3eb244efb8d74065b731ee84f5fb00d0/BioIntel_Literature_Notes_extracted.json",
+      "run_id": "3eb244efb8d74065b731ee84f5fb00d0",
+      "sha256": "7e3991b2ad405301a304d54ea20a3c2769197b2c15c20c92597e547897f33af5",
+      "size_bytes": 6619,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:34:19.717933+00:00",
+      "filename": "BioIntel_Literature_Notes_extracted.xlsx",
+      "format": "xlsx",
+      "integrity_status": "unknown",
+      "output_id": "c97716eada064721817d6c5272c9942d",
+      "path": "data/document_extractions/3eb244efb8d74065b731ee84f5fb00d0/BioIntel_Literature_Notes_extracted.xlsx",
+      "run_id": "3eb244efb8d74065b731ee84f5fb00d0",
+      "sha256": "8d6ebb5fc45be3cfacad87e1af7d9f91bedb5271e8889b7641adad3e790fc47b",
+      "size_bytes": 9069,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:34:19.720258+00:00",
+      "filename": "BioIntel_Literature_Notes_extracted.docx",
+      "format": "docx",
+      "integrity_status": "unknown",
+      "output_id": "c7b8651d7e034fb3b013df4349b2a34f",
+      "path": "data/document_extractions/3eb244efb8d74065b731ee84f5fb00d0/BioIntel_Literature_Notes_extracted.docx",
+      "run_id": "3eb244efb8d74065b731ee84f5fb00d0",
+      "sha256": "76cb492ad9994b250fda67c0b89e288bcfa5a401f95b08428ac072bdd39ea645",
+      "size_bytes": 38052,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:34:19.722789+00:00",
+      "filename": "BioIntel_Literature_Notes_extracted.pdf",
+      "format": "pdf",
+      "integrity_status": "unknown",
+      "output_id": "12bf20aa29a747aea5885012a15d5922",
+      "path": "data/document_extractions/3eb244efb8d74065b731ee84f5fb00d0/BioIntel_Literature_Notes_extracted.pdf",
+      "run_id": "3eb244efb8d74065b731ee84f5fb00d0",
+      "sha256": "784341ed0de3b97e9cd6b4c179e1c084bdf1dadfdf3622803baedeec0945f68c",
+      "size_bytes": 4113,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:34:19.725164+00:00",
+      "filename": "BioIntel_Literature_Notes_csv_tables.zip",
+      "format": "csv_zip",
+      "integrity_status": "unknown",
+      "output_id": "f22416546562406b8f679aec9d56ee40",
+      "path": "data/document_extractions/3eb244efb8d74065b731ee84f5fb00d0/BioIntel_Literature_Notes_csv_tables.zip",
+      "run_id": "3eb244efb8d74065b731ee84f5fb00d0",
+      "sha256": "5a4d4e4b4c771c696ff6b025e45888693b15e423dde4058a1ea27882f17b9e9a",
+      "size_bytes": 3044,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:34:19.727327+00:00",
+      "filename": "BioIntel_Literature_Notes_complete_export.zip",
+      "format": "bundle_zip",
+      "integrity_status": "unknown",
+      "output_id": "ad573f3d97cc4845b70d6450bd4a5122",
+      "path": "data/document_extractions/3eb244efb8d74065b731ee84f5fb00d0/BioIntel_Literature_Notes_complete_export.zip",
+      "run_id": "3eb244efb8d74065b731ee84f5fb00d0",
+      "sha256": "89d98dd7f4efc629c99d6f466181e224a2985c4fe4e858f1eeb9b923f3b9646a",
+      "size_bytes": 51280,
+      "verified_at_utc": null
+    }
+  ],
+  "run_id": "3eb244efb8d74065b731ee84f5fb00d0",
+  "source": {
+    "character_count": 446,
+    "entity_count": 9,
+    "file_type": "md",
+    "image_count": 0,
+    "mime_type": "text/markdown",
+    "page_count": 0,
+    "paragraph_count": 0,
+    "region_count": 0,
+    "row_count": 0,
+    "sheet_count": 0,
+    "source_name": "BioIntel_Literature_Notes.md",
+    "source_sha256": "1fcafeeeb0069cba66c84751e55d36f596107999fcdaf0de52da2723c5d3d142",
+    "source_size_bytes": 446,
+    "table_count": 0,
+    "warning_count": 0
+  },
+  "structured_fields": {
+    "activity_measurements": [
+      {
+        "confidence": 0.96,
+        "end": 248,
+        "entity_type": "activity_measurement",
+        "metadata": {
+          "endpoint": "IC50",
+          "relation": "=",
+          "unit": "nM",
+          "value": 125.0
+        },
+        "normalized": "IC50 = 125 nM",
+        "source": "document",
+        "start": 237,
+        "text": "IC50 125 nM"
+      },
+      {
+        "confidence": 0.96,
+        "end": 288,
+        "entity_type": "activity_measurement",
+        "metadata": {
+          "endpoint": "KI",
+          "relation": "=",
+          "unit": "nM",
+          "value": 820.0
+        },
+        "normalized": "KI = 820 nM",
+        "source": "document",
+        "start": 279,
+        "text": "Ki 820 nM"
+      },
+      {
+        "confidence": 0.96,
+        "end": 328,
+        "entity_type": "activity_measurement",
+        "metadata": {
+          "endpoint": "KI",
+          "relation": "=",
+          "unit": "nM",
+          "value": 32.0
+        },
+        "normalized": "KI = 32 nM",
+        "source": "document",
+        "start": 320,
+        "text": "Ki 32 nM"
+      },
+      {
+        "confidence": 0.96,
+        "end": 370,
+        "entity_type": "activity_measurement",
+        "metadata": {
+          "endpoint": "IC50",
+          "relation": "=",
+          "unit": "nM",
+          "value": 950.0
+        },
+        "normalized": "IC50 = 950 nM",
+        "source": "document",
+        "start": 359,
+        "text": "IC50 950 nM"
+      }
+    ],
+    "document_type": "research_document",
+    "entity_counts": {
+      "activity_measurement": 4,
+      "assay_endpoint": 2,
+      "gene_or_protein": 3
+    },
+    "has_limitations": false,
+    "has_methods": false,
+    "has_results": false,
+    "publication_identifiers": [],
+    "sample_sizes": [],
+    "sections": {
+      "introduction": "PTGS2 is associated with inflammatory pathways. ADORA2A is a G protein-coupled receptor and is often discussed with caffeine and adenosine.\n## Demonstration findings\n- Aspirin reference: PTGS2 IC50 125 nM\n- Caffeine reference: ADORA2A Ki 820 nM\n- Adenosine reference: ADORA2A Ki 32 nM\n- Quercetin reference: PIK3CA IC50 950 nM\n## Warning\nThese are illustrative values for software demonstration only.",
+      "unclassified": "# BioIntel Literature Notes"
+    },
+    "sensitive_findings": [],
+    "title": "BioIntel_Literature_Notes.md"
+  },
+  "warnings": []
+}

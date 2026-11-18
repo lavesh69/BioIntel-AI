@@ -1,0 +1,30 @@
+{
+  "module_key": "evidence_studio",
+  "title": "Evidence Package Studio",
+  "description": "Evidence-package manifest and a minimal package layout.",
+  "accepted_formats": "ZIP or JSON",
+  "offline": true,
+  "synthetic_example": true,
+  "files": [
+    {
+      "name": "blank_evidence_manifest.json",
+      "role": "blank",
+      "size_bytes": 100
+    },
+    {
+      "name": "filled_evidence_manifest.json",
+      "role": "example",
+      "size_bytes": 301
+    },
+    {
+      "name": "expected_verification_receipt.json",
+      "role": "output",
+      "size_bytes": 95
+    },
+    {
+      "name": "FORMAT_GUIDE.md",
+      "role": "guide",
+      "size_bytes": 819
+    }
+  ]
+}

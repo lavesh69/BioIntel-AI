@@ -1,0 +1,129 @@
+{
+  "character_count": 228,
+  "entities": [
+    {
+      "confidence": 0.86,
+      "end": 4,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "DEMO",
+      "source": "document",
+      "start": 0,
+      "text": "DEMO"
+    },
+    {
+      "confidence": 0.86,
+      "end": 29,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "ACHE",
+      "source": "document",
+      "start": 25,
+      "text": "ACHE"
+    },
+    {
+      "confidence": 0.72,
+      "end": 70,
+      "entity_type": "disease",
+      "metadata": {},
+      "normalized": "alzheimer",
+      "source": "document",
+      "start": 61,
+      "text": "Alzheimer"
+    },
+    {
+      "confidence": 0.92,
+      "end": 95,
+      "entity_type": "mutation",
+      "metadata": {},
+      "normalized": "Y337A",
+      "source": "document",
+      "start": 90,
+      "text": "Y337A"
+    },
+    {
+      "confidence": 0.97,
+      "end": 108,
+      "entity_type": "assay_endpoint",
+      "metadata": {},
+      "normalized": "IC50",
+      "source": "document",
+      "start": 104,
+      "text": "IC50"
+    },
+    {
+      "confidence": 0.86,
+      "end": 108,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "IC50",
+      "source": "document",
+      "start": 104,
+      "text": "IC50"
+    },
+    {
+      "confidence": 0.9,
+      "end": 132,
+      "entity_type": "organism",
+      "metadata": {},
+      "normalized": "Homo sapiens",
+      "source": "document",
+      "start": 120,
+      "text": "Homo sapiens"
+    }
+  ],
+  "entity_count": 7,
+  "file_type": "txt",
+  "image_count": 0,
+  "metadata": {
+    "encoding": "utf-8-sig",
+    "scientific_entity_extraction": "rule_based_v1",
+    "sensitive_finding_count": 0,
+    "sensitive_redaction_applied": false
+  },
+  "mime_type": "text/plain",
+  "page_count": 0,
+  "paragraph_count": 0,
+  "region_count": 0,
+  "regions": [],
+  "row_count": 0,
+  "sections": [
+    {
+      "confidence": 1.0,
+      "metadata": {},
+      "name": "Document",
+      "source": "document",
+      "text": "DEMO PROTOCOL 3\r\nTarget: ACHE\r\nCompound: donepezil\r\nDisease: Alzheimer disease\r\nMutation: Y337A\r\nAssay: IC50\r\nOrganism: Homo sapiens\r\nResult: 244 nM\r\nDemonstration/reference content only; not experimental or clinical evidence.\r\n"
+    }
+  ],
+  "sheet_count": 0,
+  "source_name": "03_neurology_protocol.txt",
+  "source_sha256": "799ee225bf326df1713abd174d0e5835c80b213789ad5c5058935a24e081fab8",
+  "source_size_bytes": 228,
+  "structured_fields": {
+    "activity_measurements": [],
+    "document_type": "research_document",
+    "entity_counts": {
+      "assay_endpoint": 1,
+      "disease": 1,
+      "gene_or_protein": 3,
+      "mutation": 1,
+      "organism": 1
+    },
+    "has_limitations": false,
+    "has_methods": false,
+    "has_results": false,
+    "publication_identifiers": [],
+    "sample_sizes": [],
+    "sections": {
+      "unclassified": "DEMO PROTOCOL 3\nTarget: ACHE\nCompound: donepezil\nDisease: Alzheimer disease\nMutation: Y337A\nAssay: IC50\nOrganism: Homo sapiens\nResult: 244 nM\nDemonstration/reference content only; not experimental or clinical evidence."
+    },
+    "sensitive_findings": [],
+    "title": "03_neurology_protocol.txt"
+  },
+  "table_count": 0,
+  "tables": [],
+  "text": "DEMO PROTOCOL 3\r\nTarget: ACHE\r\nCompound: donepezil\r\nDisease: Alzheimer disease\r\nMutation: Y337A\r\nAssay: IC50\r\nOrganism: Homo sapiens\r\nResult: 244 nM\r\nDemonstration/reference content only; not experimental or clinical evidence.\r\n",
+  "warning_count": 0,
+  "warnings": []
+}

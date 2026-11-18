@@ -1,0 +1,30 @@
+{
+  "module_key": "dataset_registry",
+  "title": "Dataset Registry & Lineage",
+  "description": "Dataset registration metadata and provenance.",
+  "accepted_formats": "CSV",
+  "offline": true,
+  "synthetic_example": true,
+  "files": [
+    {
+      "name": "blank_dataset_registry.csv",
+      "role": "blank",
+      "size_bytes": 73
+    },
+    {
+      "name": "filled_dataset_registry.csv",
+      "role": "example",
+      "size_bytes": 165
+    },
+    {
+      "name": "expected_registry_receipt.json",
+      "role": "output",
+      "size_bytes": 132
+    },
+    {
+      "name": "FORMAT_GUIDE.md",
+      "role": "guide",
+      "size_bytes": 814
+    }
+  ]
+}

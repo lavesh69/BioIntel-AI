@@ -1,0 +1,157 @@
+{
+  "character_count": 256,
+  "entities": [
+    {
+      "confidence": 0.9,
+      "end": 114,
+      "entity_type": "organism",
+      "metadata": {},
+      "normalized": "Homo sapiens",
+      "source": "document",
+      "start": 102,
+      "text": "Homo sapiens"
+    },
+    {
+      "confidence": 0.86,
+      "end": 129,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "PTGS2",
+      "source": "document",
+      "start": 124,
+      "text": "PTGS2"
+    },
+    {
+      "confidence": 0.86,
+      "end": 145,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "SIRT1",
+      "source": "document",
+      "start": 140,
+      "text": "SIRT1"
+    },
+    {
+      "confidence": 0.86,
+      "end": 153,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "PIK3CA",
+      "source": "document",
+      "start": 147,
+      "text": "PIK3CA"
+    },
+    {
+      "confidence": 0.86,
+      "end": 161,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "VKORC1",
+      "source": "document",
+      "start": 155,
+      "text": "VKORC1"
+    },
+    {
+      "confidence": 0.97,
+      "end": 177,
+      "entity_type": "assay_endpoint",
+      "metadata": {},
+      "normalized": "IC50",
+      "source": "document",
+      "start": 173,
+      "text": "IC50"
+    },
+    {
+      "confidence": 0.86,
+      "end": 177,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "IC50",
+      "source": "document",
+      "start": 173,
+      "text": "IC50"
+    },
+    {
+      "confidence": 0.97,
+      "end": 181,
+      "entity_type": "assay_endpoint",
+      "metadata": {},
+      "normalized": "Ki",
+      "source": "document",
+      "start": 179,
+      "text": "Ki"
+    },
+    {
+      "confidence": 0.97,
+      "end": 187,
+      "entity_type": "assay_endpoint",
+      "metadata": {},
+      "normalized": "EC50",
+      "source": "document",
+      "start": 183,
+      "text": "EC50"
+    },
+    {
+      "confidence": 0.86,
+      "end": 187,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "EC50",
+      "source": "document",
+      "start": 183,
+      "text": "EC50"
+    }
+  ],
+  "entity_count": 10,
+  "file_type": "txt",
+  "image_count": 0,
+  "metadata": {
+    "encoding": "utf-8-sig",
+    "scientific_entity_extraction": "rule_based_v1",
+    "sensitive_finding_count": 0,
+    "sensitive_redaction_applied": false
+  },
+  "mime_type": "text/plain",
+  "page_count": 0,
+  "paragraph_count": 0,
+  "region_count": 0,
+  "regions": [],
+  "row_count": 0,
+  "sections": [
+    {
+      "confidence": 1.0,
+      "metadata": {},
+      "name": "Document",
+      "source": "document",
+      "text": "BIOINTEL DEMONSTRATION PROTOCOL\n\nObjective: Populate document history and knowledge search.\nOrganism: Homo sapiens\nTargets: PTGS2, ADORA2A, SIRT1, PIK3CA, VKORC1\nEndpoints: IC50, Ki, EC50\nReview rule: Demo records must remain labelled as non-experimental.\n"
+    }
+  ],
+  "sheet_count": 0,
+  "source_name": "BioIntel_Project_Protocol.txt",
+  "source_sha256": "cadc124e9735fd439b816354295f6f56e96611c65477566643dd0e4a6634993d",
+  "source_size_bytes": 256,
+  "structured_fields": {
+    "activity_measurements": [],
+    "document_type": "research_document",
+    "entity_counts": {
+      "assay_endpoint": 3,
+      "gene_or_protein": 6,
+      "organism": 1
+    },
+    "has_limitations": false,
+    "has_methods": false,
+    "has_results": false,
+    "publication_identifiers": [],
+    "sample_sizes": [],
+    "sections": {
+      "unclassified": "BIOINTEL DEMONSTRATION PROTOCOL\nObjective: Populate document history and knowledge search.\nOrganism: Homo sapiens\nTargets: PTGS2, ADORA2A, SIRT1, PIK3CA, VKORC1\nEndpoints: IC50, Ki, EC50\nReview rule: Demo records must remain labelled as non-experimental."
+    },
+    "sensitive_findings": [],
+    "title": "BioIntel_Project_Protocol.txt"
+  },
+  "table_count": 0,
+  "tables": [],
+  "text": "BIOINTEL DEMONSTRATION PROTOCOL\n\nObjective: Populate document history and knowledge search.\nOrganism: Homo sapiens\nTargets: PTGS2, ADORA2A, SIRT1, PIK3CA, VKORC1\nEndpoints: IC50, Ki, EC50\nReview rule: Demo records must remain labelled as non-experimental.\n",
+  "warning_count": 0,
+  "warnings": []
+}

@@ -1,0 +1,217 @@
+{
+  "character_count": 263,
+  "entities": [
+    {
+      "confidence": 0.86,
+      "end": 35,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "AI",
+      "source": "document",
+      "start": 33,
+      "text": "AI"
+    },
+    {
+      "confidence": 0.86,
+      "end": 132,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "PTGS2",
+      "source": "document",
+      "start": 127,
+      "text": "PTGS2"
+    },
+    {
+      "confidence": 0.86,
+      "end": 146,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "SIRT1",
+      "source": "document",
+      "start": 141,
+      "text": "SIRT1"
+    },
+    {
+      "confidence": 0.86,
+      "end": 153,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "PIK3CA",
+      "source": "document",
+      "start": 147,
+      "text": "PIK3CA"
+    },
+    {
+      "confidence": 0.96,
+      "end": 207,
+      "entity_type": "activity_measurement",
+      "metadata": {
+        "endpoint": "IC50",
+        "relation": "=",
+        "unit": "nM",
+        "value": 125.0
+      },
+      "normalized": "IC50 = 125 nM",
+      "source": "document",
+      "start": 196,
+      "text": "IC50\n125 nM"
+    },
+    {
+      "confidence": 0.97,
+      "end": 200,
+      "entity_type": "assay_endpoint",
+      "metadata": {},
+      "normalized": "IC50",
+      "source": "document",
+      "start": 196,
+      "text": "IC50"
+    },
+    {
+      "confidence": 0.86,
+      "end": 200,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "IC50",
+      "source": "document",
+      "start": 196,
+      "text": "IC50"
+    },
+    {
+      "confidence": 0.96,
+      "end": 236,
+      "entity_type": "activity_measurement",
+      "metadata": {
+        "endpoint": "KI",
+        "relation": "=",
+        "unit": "nM",
+        "value": 32.0
+      },
+      "normalized": "KI = 32 nM",
+      "source": "document",
+      "start": 228,
+      "text": "Ki\n32 nM"
+    },
+    {
+      "confidence": 0.97,
+      "end": 230,
+      "entity_type": "assay_endpoint",
+      "metadata": {},
+      "normalized": "Ki",
+      "source": "document",
+      "start": 228,
+      "text": "Ki"
+    }
+  ],
+  "entity_count": 9,
+  "file_type": "html",
+  "image_count": 0,
+  "metadata": {
+    "encoding": "utf-8-sig",
+    "image_count": 0,
+    "link_count": 0,
+    "scientific_entity_extraction": "rule_based_v1",
+    "sensitive_finding_count": 0,
+    "sensitive_redaction_applied": false,
+    "title": "BioIntel Reference Page"
+  },
+  "mime_type": "text/html",
+  "page_count": 0,
+  "paragraph_count": 0,
+  "region_count": 0,
+  "regions": [],
+  "row_count": 2,
+  "sections": [
+    {
+      "confidence": 1.0,
+      "metadata": {},
+      "name": "Document",
+      "source": "document",
+      "text": "BioIntel Reference Page\nBioIntel AI Reference Page\nDemonstration content for document extraction and full-text search.\nTargets\nPTGS2\nADORA2A\nSIRT1\nPIK3CA\nCompound\nEndpoint\nValue\nAspirin reference\nIC50\n125 nM\nAdenosine reference\nKi\n32 nM\nNot experimental evidence."
+    }
+  ],
+  "sheet_count": 0,
+  "source_name": "BioIntel_Reference_Page.html",
+  "source_sha256": "2efe3e587d35a529e5c79f483ca554a4854271d56f0020a5b759a94830db003f",
+  "source_size_bytes": 543,
+  "structured_fields": {
+    "activity_measurements": [
+      {
+        "confidence": 0.96,
+        "end": 207,
+        "entity_type": "activity_measurement",
+        "metadata": {
+          "endpoint": "IC50",
+          "relation": "=",
+          "unit": "nM",
+          "value": 125.0
+        },
+        "normalized": "IC50 = 125 nM",
+        "source": "document",
+        "start": 196,
+        "text": "IC50\n125 nM"
+      },
+      {
+        "confidence": 0.96,
+        "end": 236,
+        "entity_type": "activity_measurement",
+        "metadata": {
+          "endpoint": "KI",
+          "relation": "=",
+          "unit": "nM",
+          "value": 32.0
+        },
+        "normalized": "KI = 32 nM",
+        "source": "document",
+        "start": 228,
+        "text": "Ki\n32 nM"
+      }
+    ],
+    "document_type": "research_document",
+    "entity_counts": {
+      "activity_measurement": 2,
+      "assay_endpoint": 2,
+      "gene_or_protein": 5
+    },
+    "has_limitations": false,
+    "has_methods": false,
+    "has_results": false,
+    "publication_identifiers": [],
+    "sample_sizes": [],
+    "sections": {
+      "unclassified": "BioIntel Reference Page\nBioIntel AI Reference Page\nDemonstration content for document extraction and full-text search.\nTargets\nPTGS2\nADORA2A\nSIRT1\nPIK3CA\nCompound\nEndpoint\nValue\nAspirin reference\nIC50\n125 nM\nAdenosine reference\nKi\n32 nM\nNot experimental evidence."
+    },
+    "sensitive_findings": [],
+    "title": "BioIntel Reference Page"
+  },
+  "table_count": 1,
+  "tables": [
+    {
+      "column_count": 3,
+      "columns": [
+        "Compound",
+        "Endpoint",
+        "Value"
+      ],
+      "confidence": 1.0,
+      "metadata": {},
+      "name": "HTML Table 1",
+      "row_count": 2,
+      "rows": [
+        [
+          "Aspirin reference",
+          "IC50",
+          "125 nM"
+        ],
+        [
+          "Adenosine reference",
+          "Ki",
+          "32 nM"
+        ]
+      ],
+      "source": "table:1"
+    }
+  ],
+  "text": "BioIntel Reference Page\nBioIntel AI Reference Page\nDemonstration content for document extraction and full-text search.\nTargets\nPTGS2\nADORA2A\nSIRT1\nPIK3CA\nCompound\nEndpoint\nValue\nAspirin reference\nIC50\n125 nM\nAdenosine reference\nKi\n32 nM\nNot experimental evidence.",
+  "warning_count": 0,
+  "warnings": []
+}

@@ -1,0 +1,10 @@
+{
+  "schema": "biointel.workflow.v1",
+  "name": "Example",
+  "blocks": [
+    "Upload FASTQ",
+    "Read QC",
+    "Quality gate",
+    "Generate report"
+  ]
+}

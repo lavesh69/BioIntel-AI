@@ -1,0 +1,4 @@
+##fileformat=VCFv4.2
+##contig=<ID=chrDemo,length=156>
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+chrDemo	10	var1	T	C	60	PASS	DP=42

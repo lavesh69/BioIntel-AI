@@ -1,0 +1,40 @@
+{
+  "module_key": "ppi_interaction_ml",
+  "title": "Protein Interaction ML",
+  "description": "Labelled and candidate protein-pair tables.",
+  "accepted_formats": "CSV",
+  "offline": true,
+  "synthetic_example": true,
+  "files": [
+    {
+      "name": "blank_ppi_training.csv",
+      "role": "blank",
+      "size_bytes": 49
+    },
+    {
+      "name": "filled_ppi_training.csv",
+      "role": "example",
+      "size_bytes": 262
+    },
+    {
+      "name": "blank_ppi_candidates.csv",
+      "role": "blank",
+      "size_bytes": 43
+    },
+    {
+      "name": "filled_ppi_candidates.csv",
+      "role": "example",
+      "size_bytes": 131
+    },
+    {
+      "name": "expected_ppi_predictions.csv",
+      "role": "output",
+      "size_bytes": 82
+    },
+    {
+      "name": "FORMAT_GUIDE.md",
+      "role": "guide",
+      "size_bytes": 837
+    }
+  ]
+}

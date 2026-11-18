@@ -1,0 +1,40 @@
+{
+  "module_key": "transcriptomics_expression",
+  "title": "Transcriptomics Expression Lab",
+  "description": "Gene-count matrix and editable sample metadata.",
+  "accepted_formats": "CSV or TSV",
+  "offline": true,
+  "synthetic_example": true,
+  "files": [
+    {
+      "name": "blank_gene_counts.csv",
+      "role": "blank",
+      "size_bytes": 49
+    },
+    {
+      "name": "filled_gene_counts.csv",
+      "role": "example",
+      "size_bytes": 104
+    },
+    {
+      "name": "blank_sample_metadata.csv",
+      "role": "blank",
+      "size_bytes": 30
+    },
+    {
+      "name": "filled_sample_metadata.csv",
+      "role": "example",
+      "size_bytes": 142
+    },
+    {
+      "name": "expected_differential_expression.csv",
+      "role": "output",
+      "size_bytes": 93
+    },
+    {
+      "name": "FORMAT_GUIDE.md",
+      "role": "guide",
+      "size_bytes": 864
+    }
+  ]
+}

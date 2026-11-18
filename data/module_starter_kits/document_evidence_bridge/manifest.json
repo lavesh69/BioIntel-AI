@@ -1,0 +1,30 @@
+{
+  "module_key": "document_evidence_bridge",
+  "title": "Document Evidence Bridge",
+  "description": "Document-to-evidence link mapping.",
+  "accepted_formats": "CSV",
+  "offline": true,
+  "synthetic_example": true,
+  "files": [
+    {
+      "name": "blank_document_evidence_links.csv",
+      "role": "blank",
+      "size_bytes": 60
+    },
+    {
+      "name": "filled_document_evidence_links.csv",
+      "role": "example",
+      "size_bytes": 103
+    },
+    {
+      "name": "expected_bridge_summary.csv",
+      "role": "output",
+      "size_bytes": 62
+    },
+    {
+      "name": "FORMAT_GUIDE.md",
+      "role": "guide",
+      "size_bytes": 806
+    }
+  ]
+}

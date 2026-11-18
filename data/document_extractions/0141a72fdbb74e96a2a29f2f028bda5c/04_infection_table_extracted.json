@@ -1,0 +1,157 @@
+{
+  "character_count": 273,
+  "entities": [
+    {
+      "confidence": 0.72,
+      "end": 232,
+      "entity_type": "disease",
+      "metadata": {},
+      "normalized": "infection",
+      "source": "document",
+      "start": 223,
+      "text": "infection"
+    },
+    {
+      "confidence": 0.92,
+      "end": 237,
+      "entity_type": "mutation",
+      "metadata": {},
+      "normalized": "S83L",
+      "source": "document",
+      "start": 233,
+      "text": "S83L"
+    },
+    {
+      "confidence": 0.97,
+      "end": 241,
+      "entity_type": "assay_endpoint",
+      "metadata": {},
+      "normalized": "MIC",
+      "source": "document",
+      "start": 238,
+      "text": "MIC"
+    },
+    {
+      "confidence": 0.86,
+      "end": 241,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "MIC",
+      "source": "document",
+      "start": 238,
+      "text": "MIC"
+    },
+    {
+      "confidence": 0.9,
+      "end": 262,
+      "entity_type": "organism",
+      "metadata": {},
+      "normalized": "Escherichia coli",
+      "source": "document",
+      "start": 246,
+      "text": "Escherichia coli"
+    }
+  ],
+  "entity_count": 5,
+  "file_type": "csv",
+  "image_count": 0,
+  "metadata": {
+    "delimiter": ",",
+    "encoding": "utf-8-sig",
+    "scientific_entity_extraction": "rule_based_v1",
+    "sensitive_finding_count": 0,
+    "sensitive_redaction_applied": false
+  },
+  "mime_type": "text/csv",
+  "page_count": 0,
+  "paragraph_count": 0,
+  "region_count": 0,
+  "regions": [],
+  "row_count": 2,
+  "sections": [
+    {
+      "confidence": 1.0,
+      "metadata": {},
+      "name": "Document",
+      "source": "document",
+      "text": "record_id,compound,target,disease,mutation,assay,value_nm,organism,status\nDEMO-CORPUS-04,ciprofloxacin,gyrA,bacterial infection,S83L,MIC,317,Escherichia coli,demo_only\nDEMO-CORPUS-04-B,ciprofloxacin analogue,gyrA,bacterial infection,S83L,MIC,427,Escherichia coli,demo_only\n"
+    }
+  ],
+  "sheet_count": 0,
+  "source_name": "04_infection_table.csv",
+  "source_sha256": "410d35245c6cecb49fb0b8fe91b8f5d53b00f8765873e41c5dc59efca8ad5cc3",
+  "source_size_bytes": 273,
+  "structured_fields": {
+    "activity_measurements": [],
+    "document_type": "research_document",
+    "entity_counts": {
+      "assay_endpoint": 1,
+      "disease": 1,
+      "gene_or_protein": 1,
+      "mutation": 1,
+      "organism": 1
+    },
+    "has_limitations": false,
+    "has_methods": false,
+    "has_results": false,
+    "publication_identifiers": [],
+    "sample_sizes": [],
+    "sections": {
+      "unclassified": "record_id,compound,target,disease,mutation,assay,value_nm,organism,status\nDEMO-CORPUS-04,ciprofloxacin,gyrA,bacterial infection,S83L,MIC,317,Escherichia coli,demo_only\nDEMO-CORPUS-04-B,ciprofloxacin analogue,gyrA,bacterial infection,S83L,MIC,427,Escherichia coli,demo_only"
+    },
+    "sensitive_findings": [],
+    "title": "04_infection_table.csv"
+  },
+  "table_count": 1,
+  "tables": [
+    {
+      "column_count": 9,
+      "columns": [
+        "record_id",
+        "compound",
+        "target",
+        "disease",
+        "mutation",
+        "assay",
+        "value_nm",
+        "organism",
+        "status"
+      ],
+      "confidence": 1.0,
+      "metadata": {
+        "delimiter": ",",
+        "encoding": "utf-8-sig"
+      },
+      "name": "Delimited Data",
+      "row_count": 2,
+      "rows": [
+        [
+          "DEMO-CORPUS-04",
+          "ciprofloxacin",
+          "gyrA",
+          "bacterial infection",
+          "S83L",
+          "MIC",
+          "317",
+          "Escherichia coli",
+          "demo_only"
+        ],
+        [
+          "DEMO-CORPUS-04-B",
+          "ciprofloxacin analogue",
+          "gyrA",
+          "bacterial infection",
+          "S83L",
+          "MIC",
+          "427",
+          "Escherichia coli",
+          "demo_only"
+        ]
+      ],
+      "source": "document"
+    }
+  ],
+  "text": "record_id,compound,target,disease,mutation,assay,value_nm,organism,status\nDEMO-CORPUS-04,ciprofloxacin,gyrA,bacterial infection,S83L,MIC,317,Escherichia coli,demo_only\nDEMO-CORPUS-04-B,ciprofloxacin analogue,gyrA,bacterial infection,S83L,MIC,427,Escherichia coli,demo_only\n",
+  "warning_count": 0,
+  "warnings": []
+}

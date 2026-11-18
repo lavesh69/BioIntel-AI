@@ -1,0 +1,29 @@
+{
+  "activity_type": null,
+  "column_names": [
+    "record_id",
+    "sequence_type",
+    "family",
+    "sequence",
+    "length",
+    "source"
+  ],
+  "dataset_name": "BioIntel Coverage Sequence Library",
+  "dataset_sha256": "878058b60a882d547ac0ce432cc427ff31e76b74355070a50cd30a12590560f2",
+  "dataset_version": "1.0",
+  "demo_only": false,
+  "generated_by": "BioIntel Step 31 registry completion",
+  "metadata": {
+    "coverage_pack_version": "1.0",
+    "filename": "sequence_library_800.csv"
+  },
+  "parent_sha256": null,
+  "primary_file": "data/coverage/sequence_library_800.csv",
+  "primary_file_exists": true,
+  "row_count": 800,
+  "schema": "biointel.dataset-manifest.v3.1",
+  "scientific_release_eligible": false,
+  "source_description": "BioIntel deterministic complete-coverage pack",
+  "synthetic": false,
+  "task_type": "unlabelled"
+}

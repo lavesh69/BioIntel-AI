@@ -1,0 +1,28 @@
+{
+  "activity_type": null,
+  "column_names": [
+    "drug_id",
+    "canonical_smiles",
+    "target_id",
+    "protein_sequence",
+    "p_activity"
+  ],
+  "dataset_name": "BioIntel Drift Validation Regression",
+  "dataset_sha256": "935cfb4d801db9f184068c60491a15c76a9493d66f235c54bb10d3e9a250082c",
+  "dataset_version": "1.0",
+  "demo_only": false,
+  "generated_by": "BioIntel Step 31 registry completion",
+  "metadata": {
+    "coverage_pack_version": "1.0",
+    "filename": "drift_validation_regression_2000.csv"
+  },
+  "parent_sha256": null,
+  "primary_file": "data/coverage/drift_validation_regression_2000.csv",
+  "primary_file_exists": true,
+  "row_count": 2000,
+  "schema": "biointel.dataset-manifest.v3.1",
+  "scientific_release_eligible": false,
+  "source_description": "BioIntel deterministic complete-coverage pack",
+  "synthetic": false,
+  "task_type": "regression"
+}

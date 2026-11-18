@@ -1,0 +1,40 @@
+{
+  "module_key": "document_intelligence",
+  "title": "Document Intelligence Center",
+  "description": "Small local documents covering supported text and table formats.",
+  "accepted_formats": "PDF, DOCX, XLSX, CSV, TSV, TXT, MD, HTML, JSON, XML or YAML",
+  "offline": true,
+  "synthetic_example": true,
+  "files": [
+    {
+      "name": "blank_document_notes.md",
+      "role": "blank",
+      "size_bytes": 68
+    },
+    {
+      "name": "filled_document_example.md",
+      "role": "example",
+      "size_bytes": 121
+    },
+    {
+      "name": "filled_table_example.csv",
+      "role": "example",
+      "size_bytes": 57
+    },
+    {
+      "name": "filled_metadata_example.json",
+      "role": "example",
+      "size_bytes": 96
+    },
+    {
+      "name": "expected_extraction.json",
+      "role": "output",
+      "size_bytes": 210
+    },
+    {
+      "name": "FORMAT_GUIDE.md",
+      "role": "guide",
+      "size_bytes": 863
+    }
+  ]
+}

@@ -1,0 +1,140 @@
+{
+  "character_count": 221,
+  "entities": [
+    {
+      "confidence": 0.86,
+      "end": 4,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "DEMO",
+      "source": "document",
+      "start": 0,
+      "text": "DEMO"
+    },
+    {
+      "confidence": 0.86,
+      "end": 29,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "BRAF",
+      "source": "document",
+      "start": 25,
+      "text": "BRAF"
+    },
+    {
+      "confidence": 0.72,
+      "end": 52,
+      "entity_type": "drug_or_compound",
+      "metadata": {},
+      "normalized": "vemurafenib",
+      "source": "document",
+      "start": 41,
+      "text": "vemurafenib"
+    },
+    {
+      "confidence": 0.72,
+      "end": 71,
+      "entity_type": "disease",
+      "metadata": {},
+      "normalized": "melanoma",
+      "source": "document",
+      "start": 63,
+      "text": "melanoma"
+    },
+    {
+      "confidence": 0.92,
+      "end": 88,
+      "entity_type": "mutation",
+      "metadata": {},
+      "normalized": "V600E",
+      "source": "document",
+      "start": 83,
+      "text": "V600E"
+    },
+    {
+      "confidence": 0.97,
+      "end": 101,
+      "entity_type": "assay_endpoint",
+      "metadata": {},
+      "normalized": "IC50",
+      "source": "document",
+      "start": 97,
+      "text": "IC50"
+    },
+    {
+      "confidence": 0.86,
+      "end": 101,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "IC50",
+      "source": "document",
+      "start": 97,
+      "text": "IC50"
+    },
+    {
+      "confidence": 0.9,
+      "end": 125,
+      "entity_type": "organism",
+      "metadata": {},
+      "normalized": "Homo sapiens",
+      "source": "document",
+      "start": 113,
+      "text": "Homo sapiens"
+    }
+  ],
+  "entity_count": 8,
+  "file_type": "txt",
+  "image_count": 0,
+  "metadata": {
+    "encoding": "utf-8-sig",
+    "scientific_entity_extraction": "rule_based_v1",
+    "sensitive_finding_count": 0,
+    "sensitive_redaction_applied": false
+  },
+  "mime_type": "text/plain",
+  "page_count": 0,
+  "paragraph_count": 0,
+  "region_count": 0,
+  "regions": [],
+  "row_count": 0,
+  "sections": [
+    {
+      "confidence": 1.0,
+      "metadata": {},
+      "name": "Document",
+      "source": "document",
+      "text": "DEMO PROTOCOL 8\r\nTarget: BRAF\r\nCompound: vemurafenib\r\nDisease: melanoma\r\nMutation: V600E\r\nAssay: IC50\r\nOrganism: Homo sapiens\r\nResult: 609 nM\r\nDemonstration/reference content only; not experimental or clinical evidence.\r\n"
+    }
+  ],
+  "sheet_count": 0,
+  "source_name": "08_kinase_protocol.txt",
+  "source_sha256": "bfccf6e5fe4ff9c4860f1192d34f0a764823bf1d370803e1df0f9a2610346750",
+  "source_size_bytes": 221,
+  "structured_fields": {
+    "activity_measurements": [],
+    "document_type": "research_document",
+    "entity_counts": {
+      "assay_endpoint": 1,
+      "disease": 1,
+      "drug_or_compound": 1,
+      "gene_or_protein": 3,
+      "mutation": 1,
+      "organism": 1
+    },
+    "has_limitations": false,
+    "has_methods": false,
+    "has_results": false,
+    "publication_identifiers": [],
+    "sample_sizes": [],
+    "sections": {
+      "unclassified": "DEMO PROTOCOL 8\nTarget: BRAF\nCompound: vemurafenib\nDisease: melanoma\nMutation: V600E\nAssay: IC50\nOrganism: Homo sapiens\nResult: 609 nM\nDemonstration/reference content only; not experimental or clinical evidence."
+    },
+    "sensitive_findings": [],
+    "title": "08_kinase_protocol.txt"
+  },
+  "table_count": 0,
+  "tables": [],
+  "text": "DEMO PROTOCOL 8\r\nTarget: BRAF\r\nCompound: vemurafenib\r\nDisease: melanoma\r\nMutation: V600E\r\nAssay: IC50\r\nOrganism: Homo sapiens\r\nResult: 609 nM\r\nDemonstration/reference content only; not experimental or clinical evidence.\r\n",
+  "warning_count": 0,
+  "warnings": []
+}

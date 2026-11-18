@@ -1,0 +1,118 @@
+{
+  "duplicate_of_run_id": null,
+  "engine_version": "2.7.0",
+  "outputs": [
+    {
+      "created_at_utc": "2026-07-04T16:48:32.102570+00:00",
+      "filename": "04_infection_protocol_extracted.json",
+      "format": "json",
+      "integrity_status": "unknown",
+      "output_id": "4206f2c4fdab411f99a3d94923f5a07a",
+      "path": "data/document_extractions/be1102731df449788bb71faaad4963d9/04_infection_protocol_extracted.json",
+      "run_id": "be1102731df449788bb71faaad4963d9",
+      "sha256": "611cc1f1c37128619576078a3372bf711f5920bd346ec65dcf00868aeafdc2b1",
+      "size_bytes": 3352,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:48:32.107711+00:00",
+      "filename": "04_infection_protocol_extracted.xlsx",
+      "format": "xlsx",
+      "integrity_status": "unknown",
+      "output_id": "ffc7d878cb4449228fecd8eecc6ce4a5",
+      "path": "data/document_extractions/be1102731df449788bb71faaad4963d9/04_infection_protocol_extracted.xlsx",
+      "run_id": "be1102731df449788bb71faaad4963d9",
+      "sha256": "6aac67d762f55f2e91f2cd2b18a1eb997c6a9e8b075ebc909ab521426b3dd28c",
+      "size_bytes": 8570,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:48:32.110453+00:00",
+      "filename": "04_infection_protocol_extracted.docx",
+      "format": "docx",
+      "integrity_status": "unknown",
+      "output_id": "5c387dd30a7044aa9c03e872c8636631",
+      "path": "data/document_extractions/be1102731df449788bb71faaad4963d9/04_infection_protocol_extracted.docx",
+      "run_id": "be1102731df449788bb71faaad4963d9",
+      "sha256": "e66a750664c3125376273685d8bb53fec8a7a3f18973a23154255844413fe2d4",
+      "size_bytes": 37695,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:48:32.112715+00:00",
+      "filename": "04_infection_protocol_extracted.pdf",
+      "format": "pdf",
+      "integrity_status": "unknown",
+      "output_id": "fc166bfe0e4f4f3c8017fd9cb3d32037",
+      "path": "data/document_extractions/be1102731df449788bb71faaad4963d9/04_infection_protocol_extracted.pdf",
+      "run_id": "be1102731df449788bb71faaad4963d9",
+      "sha256": "e92898751698e12c9f02511192e4e7b3b39e7b053ccb37bf53ba46553295f7b4",
+      "size_bytes": 3555,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:48:32.115088+00:00",
+      "filename": "04_infection_protocol_csv_tables.zip",
+      "format": "csv_zip",
+      "integrity_status": "unknown",
+      "output_id": "aa6e92d7500545429f1d633a1e8cc34b",
+      "path": "data/document_extractions/be1102731df449788bb71faaad4963d9/04_infection_protocol_csv_tables.zip",
+      "run_id": "be1102731df449788bb71faaad4963d9",
+      "sha256": "d7bf4db0e5b07db5298ddec35f2959acecf8f8f2cdb85379042a3bf81ea0e89d",
+      "size_bytes": 2302,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:48:32.117272+00:00",
+      "filename": "04_infection_protocol_complete_export.zip",
+      "format": "bundle_zip",
+      "integrity_status": "unknown",
+      "output_id": "dc9a9db325d145ffb884a47ea425a4c9",
+      "path": "data/document_extractions/be1102731df449788bb71faaad4963d9/04_infection_protocol_complete_export.zip",
+      "run_id": "be1102731df449788bb71faaad4963d9",
+      "sha256": "677d81372c9ef31aa4b8fc9ac6c5c07d9fae67f1eaad3bf7cf42443d37e05aaf",
+      "size_bytes": 48808,
+      "verified_at_utc": null
+    }
+  ],
+  "run_id": "be1102731df449788bb71faaad4963d9",
+  "source": {
+    "character_count": 227,
+    "entity_count": 6,
+    "file_type": "txt",
+    "image_count": 0,
+    "mime_type": "text/plain",
+    "page_count": 0,
+    "paragraph_count": 0,
+    "region_count": 0,
+    "row_count": 0,
+    "sheet_count": 0,
+    "source_name": "04_infection_protocol.txt",
+    "source_sha256": "a86a56b697f8b1a8bd8b7ba9473381e48515cf5e9de87cd5e9253dd4000e93f1",
+    "source_size_bytes": 227,
+    "table_count": 0,
+    "warning_count": 0
+  },
+  "structured_fields": {
+    "activity_measurements": [],
+    "document_type": "research_document",
+    "entity_counts": {
+      "assay_endpoint": 1,
+      "disease": 1,
+      "gene_or_protein": 2,
+      "mutation": 1,
+      "organism": 1
+    },
+    "has_limitations": false,
+    "has_methods": false,
+    "has_results": false,
+    "publication_identifiers": [],
+    "sample_sizes": [],
+    "sections": {
+      "unclassified": "DEMO PROTOCOL 4\nTarget: gyrA\nCompound: ciprofloxacin\nDisease: bacterial infection\nMutation: S83L\nAssay: MIC\nOrganism: Escherichia coli\nResult: 317 nM\nDemonstration/reference content only; not experimental or clinical evidence."
+    },
+    "sensitive_findings": [],
+    "title": "04_infection_protocol.txt"
+  },
+  "warnings": []
+}

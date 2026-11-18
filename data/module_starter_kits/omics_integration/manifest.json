@@ -1,0 +1,45 @@
+{
+  "module_key": "omics_integration",
+  "title": "Omics Integration Hub",
+  "description": "Matched transcriptomics, proteomics and optional metabolomics matrices.",
+  "accepted_formats": "CSV or TSV",
+  "offline": true,
+  "synthetic_example": true,
+  "files": [
+    {
+      "name": "blank_transcriptomics.csv",
+      "role": "blank",
+      "size_bytes": 24
+    },
+    {
+      "name": "filled_transcriptomics.csv",
+      "role": "example",
+      "size_bytes": 60
+    },
+    {
+      "name": "blank_proteomics.csv",
+      "role": "blank",
+      "size_bytes": 24
+    },
+    {
+      "name": "filled_proteomics.csv",
+      "role": "example",
+      "size_bytes": 63
+    },
+    {
+      "name": "filled_metabolomics.csv",
+      "role": "example",
+      "size_bytes": 66
+    },
+    {
+      "name": "expected_integration.csv",
+      "role": "output",
+      "size_bytes": 79
+    },
+    {
+      "name": "FORMAT_GUIDE.md",
+      "role": "guide",
+      "size_bytes": 823
+    }
+  ]
+}

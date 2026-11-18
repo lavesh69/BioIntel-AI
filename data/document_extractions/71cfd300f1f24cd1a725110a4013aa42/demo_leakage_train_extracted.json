@@ -1,0 +1,165 @@
+{
+  "character_count": 257,
+  "entities": [
+    {
+      "confidence": 0.86,
+      "end": 55,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "CCO",
+      "source": "document",
+      "start": 52,
+      "text": "CCO"
+    },
+    {
+      "confidence": 0.86,
+      "end": 92,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "CCN",
+      "source": "document",
+      "start": 89,
+      "text": "CCN"
+    },
+    {
+      "confidence": 0.86,
+      "end": 128,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "CC",
+      "source": "document",
+      "start": 126,
+      "text": "CC"
+    },
+    {
+      "confidence": 0.86,
+      "end": 166,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "CCC",
+      "source": "document",
+      "start": 163,
+      "text": "CCC"
+    },
+    {
+      "confidence": 0.86,
+      "end": 200,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "CCCO",
+      "source": "document",
+      "start": 196,
+      "text": "CCCO"
+    },
+    {
+      "confidence": 0.86,
+      "end": 234,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "CCCN",
+      "source": "document",
+      "start": 230,
+      "text": "CCCN"
+    }
+  ],
+  "entity_count": 6,
+  "file_type": "csv",
+  "image_count": 0,
+  "metadata": {
+    "delimiter": ",",
+    "encoding": "utf-8-sig",
+    "scientific_entity_extraction": "rule_based_v1",
+    "sensitive_finding_count": 0,
+    "sensitive_redaction_applied": false
+  },
+  "mime_type": "text/csv",
+  "page_count": 0,
+  "paragraph_count": 0,
+  "region_count": 0,
+  "regions": [],
+  "row_count": 6,
+  "sections": [
+    {
+      "confidence": 1.0,
+      "metadata": {},
+      "name": "Document",
+      "source": "document",
+      "text": "sample_id,canonical_smiles,protein_sequence\r\nTR-001,CCO,MKTIIALSYIFCLVFADYKDDDDK\r\nTR-002,CCN,MKTIIALSYIFCLVFADYKDDDDK\r\nTR-003,CC(=O)O,GAVLIPFYWSTCMNQDEKRH\r\nTR-004,CCC,GAVLIPFYWSTCMNQDEKRH\r\nTR-005,CCCO,AAAAACCCCCGGGGGTTTTT\r\nTR-006,CCCN,AAAAACCCCCGGGGGTTTTT\r\n"
+    }
+  ],
+  "sheet_count": 0,
+  "source_name": "demo_leakage_train.csv",
+  "source_sha256": "e7d926d5f992e4b6aa4efab9b752b10b9fa1ffc6932e1cd570acc479e7f0dfb3",
+  "source_size_bytes": 257,
+  "structured_fields": {
+    "activity_measurements": [],
+    "document_type": "research_document",
+    "entity_counts": {
+      "gene_or_protein": 6
+    },
+    "has_limitations": false,
+    "has_methods": false,
+    "has_results": false,
+    "publication_identifiers": [],
+    "sample_sizes": [],
+    "sections": {
+      "unclassified": "sample_id,canonical_smiles,protein_sequence\nTR-001,CCO,MKTIIALSYIFCLVFADYKDDDDK\nTR-002,CCN,MKTIIALSYIFCLVFADYKDDDDK\nTR-003,CC(=O)O,GAVLIPFYWSTCMNQDEKRH\nTR-004,CCC,GAVLIPFYWSTCMNQDEKRH\nTR-005,CCCO,AAAAACCCCCGGGGGTTTTT\nTR-006,CCCN,AAAAACCCCCGGGGGTTTTT"
+    },
+    "sensitive_findings": [],
+    "title": "demo_leakage_train.csv"
+  },
+  "table_count": 1,
+  "tables": [
+    {
+      "column_count": 3,
+      "columns": [
+        "sample_id",
+        "canonical_smiles",
+        "protein_sequence"
+      ],
+      "confidence": 1.0,
+      "metadata": {
+        "delimiter": ",",
+        "encoding": "utf-8-sig"
+      },
+      "name": "Delimited Data",
+      "row_count": 6,
+      "rows": [
+        [
+          "TR-001",
+          "CCO",
+          "MKTIIALSYIFCLVFADYKDDDDK"
+        ],
+        [
+          "TR-002",
+          "CCN",
+          "MKTIIALSYIFCLVFADYKDDDDK"
+        ],
+        [
+          "TR-003",
+          "CC(=O)O",
+          "GAVLIPFYWSTCMNQDEKRH"
+        ],
+        [
+          "TR-004",
+          "CCC",
+          "GAVLIPFYWSTCMNQDEKRH"
+        ],
+        [
+          "TR-005",
+          "CCCO",
+          "AAAAACCCCCGGGGGTTTTT"
+        ],
+        [
+          "TR-006",
+          "CCCN",
+          "AAAAACCCCCGGGGGTTTTT"
+        ]
+      ],
+      "source": "document"
+    }
+  ],
+  "text": "sample_id,canonical_smiles,protein_sequence\r\nTR-001,CCO,MKTIIALSYIFCLVFADYKDDDDK\r\nTR-002,CCN,MKTIIALSYIFCLVFADYKDDDDK\r\nTR-003,CC(=O)O,GAVLIPFYWSTCMNQDEKRH\r\nTR-004,CCC,GAVLIPFYWSTCMNQDEKRH\r\nTR-005,CCCO,AAAAACCCCCGGGGGTTTTT\r\nTR-006,CCCN,AAAAACCCCCGGGGGTTTTT\r\n",
+  "warning_count": 0,
+  "warnings": []
+}

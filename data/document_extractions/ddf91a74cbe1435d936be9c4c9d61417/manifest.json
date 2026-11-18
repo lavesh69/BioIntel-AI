@@ -1,0 +1,119 @@
+{
+  "duplicate_of_run_id": null,
+  "engine_version": "2.7.0",
+  "outputs": [
+    {
+      "created_at_utc": "2026-07-04T16:48:32.927108+00:00",
+      "filename": "06_inflammation_protocol_extracted.json",
+      "format": "json",
+      "integrity_status": "unknown",
+      "output_id": "b197e88047504d298490ba0a3bbe171c",
+      "path": "data/document_extractions/ddf91a74cbe1435d936be9c4c9d61417/06_inflammation_protocol_extracted.json",
+      "run_id": "ddf91a74cbe1435d936be9c4c9d61417",
+      "sha256": "6bf16638355b81fab76a93195277b060c2402f6aa20956ba5cfd05f8aab1de7a",
+      "size_bytes": 3809,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:48:32.930882+00:00",
+      "filename": "06_inflammation_protocol_extracted.xlsx",
+      "format": "xlsx",
+      "integrity_status": "unknown",
+      "output_id": "1d7b4aedbbda4e818d7eb0362b7877fc",
+      "path": "data/document_extractions/ddf91a74cbe1435d936be9c4c9d61417/06_inflammation_protocol_extracted.xlsx",
+      "run_id": "ddf91a74cbe1435d936be9c4c9d61417",
+      "sha256": "bcf0e5416fc8abb36d569a629f6b71f052b098cc3b97ccaa9e7900f49b52db80",
+      "size_bytes": 8666,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:48:32.933332+00:00",
+      "filename": "06_inflammation_protocol_extracted.docx",
+      "format": "docx",
+      "integrity_status": "unknown",
+      "output_id": "4df3b2bce15c4d3e945100a087e2aa3d",
+      "path": "data/document_extractions/ddf91a74cbe1435d936be9c4c9d61417/06_inflammation_protocol_extracted.docx",
+      "run_id": "ddf91a74cbe1435d936be9c4c9d61417",
+      "sha256": "d6372542c22058e2470efeef059c81db3bdce06e2941a3bbd57a1b81b533bc1c",
+      "size_bytes": 37745,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:48:32.936064+00:00",
+      "filename": "06_inflammation_protocol_extracted.pdf",
+      "format": "pdf",
+      "integrity_status": "unknown",
+      "output_id": "66b7e6f879f645b99d70262aca221757",
+      "path": "data/document_extractions/ddf91a74cbe1435d936be9c4c9d61417/06_inflammation_protocol_extracted.pdf",
+      "run_id": "ddf91a74cbe1435d936be9c4c9d61417",
+      "sha256": "a2a201442595cab3942e7aa3efc5ba80d3c81b1ea960ed06657197d0a81a47d4",
+      "size_bytes": 3905,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:48:32.938847+00:00",
+      "filename": "06_inflammation_protocol_csv_tables.zip",
+      "format": "csv_zip",
+      "integrity_status": "unknown",
+      "output_id": "1fc69a03cf504e39bd59f820453a106a",
+      "path": "data/document_extractions/ddf91a74cbe1435d936be9c4c9d61417/06_inflammation_protocol_csv_tables.zip",
+      "run_id": "ddf91a74cbe1435d936be9c4c9d61417",
+      "sha256": "3e9acb8761d16de538dac4dba9a9ae8b355ee36570a1ec193863551a1ead9d07",
+      "size_bytes": 2395,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:48:32.941068+00:00",
+      "filename": "06_inflammation_protocol_complete_export.zip",
+      "format": "bundle_zip",
+      "integrity_status": "unknown",
+      "output_id": "2a37c609af8b4155ac5e8116b9591700",
+      "path": "data/document_extractions/ddf91a74cbe1435d936be9c4c9d61417/06_inflammation_protocol_complete_export.zip",
+      "run_id": "ddf91a74cbe1435d936be9c4c9d61417",
+      "sha256": "20e8d172dbf22c538203645eb26e9681dbd3bd8fe6810393bb550283e9f13bf2",
+      "size_bytes": 49434,
+      "verified_at_utc": null
+    }
+  ],
+  "run_id": "ddf91a74cbe1435d936be9c4c9d61417",
+  "source": {
+    "character_count": 222,
+    "entity_count": 8,
+    "file_type": "txt",
+    "image_count": 0,
+    "mime_type": "text/plain",
+    "page_count": 0,
+    "paragraph_count": 0,
+    "region_count": 0,
+    "row_count": 0,
+    "sheet_count": 0,
+    "source_name": "06_inflammation_protocol.txt",
+    "source_sha256": "739525eff2d399016f4e4f64243f95e131cbc7b49160be6cc5cc1cea6c66a79a",
+    "source_size_bytes": 222,
+    "table_count": 0,
+    "warning_count": 0
+  },
+  "structured_fields": {
+    "activity_measurements": [],
+    "document_type": "research_document",
+    "entity_counts": {
+      "assay_endpoint": 1,
+      "disease": 1,
+      "drug_or_compound": 1,
+      "gene_or_protein": 3,
+      "mutation": 1,
+      "organism": 1
+    },
+    "has_limitations": false,
+    "has_methods": false,
+    "has_results": false,
+    "publication_identifiers": [],
+    "sample_sizes": [],
+    "sections": {
+      "unclassified": "DEMO PROTOCOL 6\nTarget: TNF\nCompound: infliximab\nDisease: rheumatoid arthritis\nMutation: G308A\nAssay: EC50\nOrganism: Homo sapiens\nResult: 463 nM\nDemonstration/reference content only; not experimental or clinical evidence."
+    },
+    "sensitive_findings": [],
+    "title": "06_inflammation_protocol.txt"
+  },
+  "warnings": []
+}

@@ -1,0 +1,40 @@
+{
+  "module_key": "fastq_genomics_qc",
+  "title": "FASTQ & Genome QC",
+  "description": "Small single-end, paired-end and assembly examples.",
+  "accepted_formats": "FASTQ, FASTQ.GZ and FASTA",
+  "offline": true,
+  "synthetic_example": true,
+  "files": [
+    {
+      "name": "blank_reads.fastq",
+      "role": "blank",
+      "size_bytes": 30
+    },
+    {
+      "name": "filled_reads_R1.fastq",
+      "role": "example",
+      "size_bytes": 106
+    },
+    {
+      "name": "filled_reads_R2.fastq",
+      "role": "example",
+      "size_bytes": 106
+    },
+    {
+      "name": "filled_assembly.fasta",
+      "role": "example",
+      "size_bytes": 161
+    },
+    {
+      "name": "expected_fastq_qc.csv",
+      "role": "output",
+      "size_bytes": 98
+    },
+    {
+      "name": "FORMAT_GUIDE.md",
+      "role": "guide",
+      "size_bytes": 874
+    }
+  ]
+}

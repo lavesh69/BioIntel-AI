@@ -1,0 +1,38 @@
+{
+  "activity_type": null,
+  "column_names": [
+    "seqid",
+    "source",
+    "type",
+    "start",
+    "end",
+    "length",
+    "score",
+    "strand",
+    "phase",
+    "attributes"
+  ],
+  "dataset_name": "Step30 genome annotation",
+  "dataset_sha256": "41c879b6a222e2aa35ebf9a2a5d10b99aff479836f85fa7e7ff9d0e383f8a3f7",
+  "dataset_version": "2.0",
+  "demo_only": true,
+  "generated_by": "BioIntel Step 31 registry completion",
+  "metadata": {
+    "demo_only": true,
+    "domain": "genomics",
+    "reference_scale": true,
+    "scientific_release_eligible": false,
+    "source_file": "data/bioinformatics_demo/demo_annotations.gff3",
+    "step": 30,
+    "synthetic": true
+  },
+  "parent_sha256": null,
+  "primary_file": "data/bioinformatics_demo/demo_annotations.gff3",
+  "primary_file_exists": true,
+  "row_count": 16000,
+  "schema": "biointel.dataset-manifest.v3.1",
+  "scientific_release_eligible": false,
+  "source_description": "BioIntel Step 30 scaled scientific reference dataset",
+  "synthetic": true,
+  "task_type": "unlabelled"
+}

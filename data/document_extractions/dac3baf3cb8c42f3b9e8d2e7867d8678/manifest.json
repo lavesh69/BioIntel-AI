@@ -1,0 +1,117 @@
+{
+  "duplicate_of_run_id": null,
+  "engine_version": "2.7.0",
+  "outputs": [
+    {
+      "created_at_utc": "2026-07-04T16:48:34.155109+00:00",
+      "filename": "09_antiviral_protocol_extracted.json",
+      "format": "json",
+      "integrity_status": "unknown",
+      "output_id": "6c25d265b93445dda135b7ba1609fa6e",
+      "path": "data/document_extractions/dac3baf3cb8c42f3b9e8d2e7867d8678/09_antiviral_protocol_extracted.json",
+      "run_id": "dac3baf3cb8c42f3b9e8d2e7867d8678",
+      "sha256": "55b318c1f3a9c4082281793f6dfff5de7b7dfe6997b35fa2c61d44bd669133e7",
+      "size_bytes": 3097,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:48:34.158352+00:00",
+      "filename": "09_antiviral_protocol_extracted.xlsx",
+      "format": "xlsx",
+      "integrity_status": "unknown",
+      "output_id": "9179966c8f3b449fad258e7711b826c3",
+      "path": "data/document_extractions/dac3baf3cb8c42f3b9e8d2e7867d8678/09_antiviral_protocol_extracted.xlsx",
+      "run_id": "dac3baf3cb8c42f3b9e8d2e7867d8678",
+      "sha256": "7e71080ff254a0ca2e55d8f5dc56dbe51a76dc98ecf218ee86575dac3e984120",
+      "size_bytes": 8531,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:48:34.160500+00:00",
+      "filename": "09_antiviral_protocol_extracted.docx",
+      "format": "docx",
+      "integrity_status": "unknown",
+      "output_id": "f54c0ec73ac24825af0374de4a764197",
+      "path": "data/document_extractions/dac3baf3cb8c42f3b9e8d2e7867d8678/09_antiviral_protocol_extracted.docx",
+      "run_id": "dac3baf3cb8c42f3b9e8d2e7867d8678",
+      "sha256": "ca410466cbbfbcc443512d3ae54eeb87b2783cae5b8ac71c8bff8007eabdc645",
+      "size_bytes": 37685,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:48:34.163036+00:00",
+      "filename": "09_antiviral_protocol_extracted.pdf",
+      "format": "pdf",
+      "integrity_status": "unknown",
+      "output_id": "b68d3f57b11140d3a140509d29c03717",
+      "path": "data/document_extractions/dac3baf3cb8c42f3b9e8d2e7867d8678/09_antiviral_protocol_extracted.pdf",
+      "run_id": "dac3baf3cb8c42f3b9e8d2e7867d8678",
+      "sha256": "0adc24c2ac9eda45e4e44db0ee69c4ded1d26a79f2e090da07c54bc0d02bf593",
+      "size_bytes": 3475,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:48:34.165084+00:00",
+      "filename": "09_antiviral_protocol_csv_tables.zip",
+      "format": "csv_zip",
+      "integrity_status": "unknown",
+      "output_id": "b4ba58a77d5d4a8d82ef65525d1d07c0",
+      "path": "data/document_extractions/dac3baf3cb8c42f3b9e8d2e7867d8678/09_antiviral_protocol_csv_tables.zip",
+      "run_id": "dac3baf3cb8c42f3b9e8d2e7867d8678",
+      "sha256": "e4da4d8b442a386e4c78327d3d6b7f277f485476cd3f10f8c17fb9f684a6e3e4",
+      "size_bytes": 2249,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:48:34.167340+00:00",
+      "filename": "09_antiviral_protocol_complete_export.zip",
+      "format": "bundle_zip",
+      "integrity_status": "unknown",
+      "output_id": "ffce5ea18ef94db9a4a87eb1b4d4cd78",
+      "path": "data/document_extractions/dac3baf3cb8c42f3b9e8d2e7867d8678/09_antiviral_protocol_complete_export.zip",
+      "run_id": "dac3baf3cb8c42f3b9e8d2e7867d8678",
+      "sha256": "28b64c3af9396d184c468d3fcdd71195e8d3446abeae4812729fb351c0fb4fb7",
+      "size_bytes": 48617,
+      "verified_at_utc": null
+    }
+  ],
+  "run_id": "dac3baf3cb8c42f3b9e8d2e7867d8678",
+  "source": {
+    "character_count": 219,
+    "entity_count": 5,
+    "file_type": "txt",
+    "image_count": 0,
+    "mime_type": "text/plain",
+    "page_count": 0,
+    "paragraph_count": 0,
+    "region_count": 0,
+    "row_count": 0,
+    "sheet_count": 0,
+    "source_name": "09_antiviral_protocol.txt",
+    "source_sha256": "1e25e8c038295b961337c1be61606120aed6e2213fb6c1c4a5ddda84c4e02080",
+    "source_size_bytes": 219,
+    "table_count": 0,
+    "warning_count": 0
+  },
+  "structured_fields": {
+    "activity_measurements": [],
+    "document_type": "research_document",
+    "entity_counts": {
+      "assay_endpoint": 1,
+      "drug_or_compound": 1,
+      "gene_or_protein": 2,
+      "mutation": 1
+    },
+    "has_limitations": false,
+    "has_methods": false,
+    "has_results": false,
+    "publication_identifiers": [],
+    "sample_sizes": [],
+    "sections": {
+      "unclassified": "DEMO PROTOCOL 9\nTarget: NS5B\nCompound: sofosbuvir\nDisease: hepatitis C\nMutation: S282T\nAssay: IC50\nOrganism: Hepatitis C virus\nResult: 682 nM\nDemonstration/reference content only; not experimental or clinical evidence."
+    },
+    "sensitive_findings": [],
+    "title": "09_antiviral_protocol.txt"
+  },
+  "warnings": []
+}

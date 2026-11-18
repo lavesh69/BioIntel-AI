@@ -1,0 +1,135 @@
+{
+  "character_count": 269,
+  "entities": [
+    {
+      "confidence": 0.86,
+      "end": 242,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "CC",
+      "source": "document",
+      "start": 240,
+      "text": "CC"
+    },
+    {
+      "confidence": 0.86,
+      "end": 204,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "CN",
+      "source": "document",
+      "start": 202,
+      "text": "CN"
+    },
+    {
+      "confidence": 0.86,
+      "end": 246,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "CO1",
+      "source": "document",
+      "start": 243,
+      "text": "CO1"
+    }
+  ],
+  "entity_count": 3,
+  "file_type": "csv",
+  "image_count": 0,
+  "metadata": {
+    "delimiter": ",",
+    "encoding": "utf-8-sig",
+    "scientific_entity_extraction": "rule_based_v1",
+    "sensitive_finding_count": 0,
+    "sensitive_redaction_applied": false
+  },
+  "mime_type": "text/csv",
+  "page_count": 0,
+  "paragraph_count": 0,
+  "region_count": 0,
+  "regions": [],
+  "row_count": 6,
+  "sections": [
+    {
+      "confidence": 1.0,
+      "metadata": {},
+      "name": "Document",
+      "source": "document",
+      "text": "sample_id,canonical_smiles,protein_sequence\r\nTE-001,c1ccccc1,MMMMMNNNNNPPPPPQQQQQ\r\nTE-002,C1CCCCC1,MMMMMNNNNNPPPPPQQQQQ\r\nTE-003,O=C=O,VVVVVLLLLLIIIIIKKKKK\r\nTE-004,N#N,VVVVVLLLLLIIIIIKKKKK\r\nTE-005,C1=CC=CN=C1,SSSSSTTTTTYYYYYWWWWW\r\nTE-006,C1=CC=CO1,SSSSSTTTTTYYYYYWWWWW\r\n"
+    }
+  ],
+  "sheet_count": 0,
+  "source_name": "demo_leakage_test.csv",
+  "source_sha256": "f993a7374f2f1ae452d58b00201e961e0f0f36ff4429b59e308e3a0db4564fd1",
+  "source_size_bytes": 269,
+  "structured_fields": {
+    "activity_measurements": [],
+    "document_type": "research_document",
+    "entity_counts": {
+      "gene_or_protein": 3
+    },
+    "has_limitations": false,
+    "has_methods": false,
+    "has_results": false,
+    "publication_identifiers": [],
+    "sample_sizes": [],
+    "sections": {
+      "unclassified": "sample_id,canonical_smiles,protein_sequence\nTE-001,c1ccccc1,MMMMMNNNNNPPPPPQQQQQ\nTE-002,C1CCCCC1,MMMMMNNNNNPPPPPQQQQQ\nTE-003,O=C=O,VVVVVLLLLLIIIIIKKKKK\nTE-004,N#N,VVVVVLLLLLIIIIIKKKKK\nTE-005,C1=CC=CN=C1,SSSSSTTTTTYYYYYWWWWW\nTE-006,C1=CC=CO1,SSSSSTTTTTYYYYYWWWWW"
+    },
+    "sensitive_findings": [],
+    "title": "demo_leakage_test.csv"
+  },
+  "table_count": 1,
+  "tables": [
+    {
+      "column_count": 3,
+      "columns": [
+        "sample_id",
+        "canonical_smiles",
+        "protein_sequence"
+      ],
+      "confidence": 1.0,
+      "metadata": {
+        "delimiter": ",",
+        "encoding": "utf-8-sig"
+      },
+      "name": "Delimited Data",
+      "row_count": 6,
+      "rows": [
+        [
+          "TE-001",
+          "c1ccccc1",
+          "MMMMMNNNNNPPPPPQQQQQ"
+        ],
+        [
+          "TE-002",
+          "C1CCCCC1",
+          "MMMMMNNNNNPPPPPQQQQQ"
+        ],
+        [
+          "TE-003",
+          "O=C=O",
+          "VVVVVLLLLLIIIIIKKKKK"
+        ],
+        [
+          "TE-004",
+          "N#N",
+          "VVVVVLLLLLIIIIIKKKKK"
+        ],
+        [
+          "TE-005",
+          "C1=CC=CN=C1",
+          "SSSSSTTTTTYYYYYWWWWW"
+        ],
+        [
+          "TE-006",
+          "C1=CC=CO1",
+          "SSSSSTTTTTYYYYYWWWWW"
+        ]
+      ],
+      "source": "document"
+    }
+  ],
+  "text": "sample_id,canonical_smiles,protein_sequence\r\nTE-001,c1ccccc1,MMMMMNNNNNPPPPPQQQQQ\r\nTE-002,C1CCCCC1,MMMMMNNNNNPPPPPQQQQQ\r\nTE-003,O=C=O,VVVVVLLLLLIIIIIKKKKK\r\nTE-004,N#N,VVVVVLLLLLIIIIIKKKKK\r\nTE-005,C1=CC=CN=C1,SSSSSTTTTTYYYYYWWWWW\r\nTE-006,C1=CC=CO1,SSSSSTTTTTYYYYYWWWWW\r\n",
+  "warning_count": 0,
+  "warnings": []
+}

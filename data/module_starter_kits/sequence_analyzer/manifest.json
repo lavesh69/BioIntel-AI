@@ -1,0 +1,35 @@
+{
+  "module_key": "sequence_analyzer",
+  "title": "Sequence Analyzer",
+  "description": "DNA, RNA and protein sequence templates for direct analysis.",
+  "accepted_formats": "FASTA, FA, FNA, FAA or TXT",
+  "offline": true,
+  "synthetic_example": true,
+  "files": [
+    {
+      "name": "blank_sequence.fasta",
+      "role": "blank",
+      "size_bytes": 25
+    },
+    {
+      "name": "filled_dna_example.fasta",
+      "role": "example",
+      "size_bytes": 103
+    },
+    {
+      "name": "filled_protein_example.faa",
+      "role": "example",
+      "size_bytes": 87
+    },
+    {
+      "name": "expected_sequence_summary.csv",
+      "role": "output",
+      "size_bytes": 112
+    },
+    {
+      "name": "FORMAT_GUIDE.md",
+      "role": "guide",
+      "size_bytes": 849
+    }
+  ]
+}

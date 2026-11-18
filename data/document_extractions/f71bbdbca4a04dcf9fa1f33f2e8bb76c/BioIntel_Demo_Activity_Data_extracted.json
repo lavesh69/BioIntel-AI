@@ -1,0 +1,344 @@
+{
+  "character_count": 706,
+  "entities": [
+    {
+      "confidence": 0.86,
+      "end": 658,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "CC",
+      "source": "document",
+      "start": 656,
+      "text": "CC"
+    },
+    {
+      "confidence": 0.86,
+      "end": 633,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "OC1",
+      "source": "document",
+      "start": 630,
+      "text": "OC1"
+    },
+    {
+      "confidence": 0.92,
+      "end": 276,
+      "entity_type": "mutation",
+      "metadata": {},
+      "normalized": "C1C",
+      "source": "document",
+      "start": 273,
+      "text": "C1C"
+    },
+    {
+      "confidence": 0.86,
+      "end": 194,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "PTGS2",
+      "source": "document",
+      "start": 189,
+      "text": "PTGS2"
+    },
+    {
+      "confidence": 0.97,
+      "end": 580,
+      "entity_type": "assay_endpoint",
+      "metadata": {},
+      "normalized": "IC50",
+      "source": "document",
+      "start": 576,
+      "text": "IC50"
+    },
+    {
+      "confidence": 0.86,
+      "end": 580,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "IC50",
+      "source": "document",
+      "start": 576,
+      "text": "IC50"
+    },
+    {
+      "confidence": 0.86,
+      "end": 394,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "NC2",
+      "source": "document",
+      "start": 391,
+      "text": "NC2"
+    },
+    {
+      "confidence": 0.92,
+      "end": 290,
+      "entity_type": "mutation",
+      "metadata": {},
+      "normalized": "N2C",
+      "source": "document",
+      "start": 287,
+      "text": "N2C"
+    },
+    {
+      "confidence": 0.97,
+      "end": 460,
+      "entity_type": "assay_endpoint",
+      "metadata": {},
+      "normalized": "Ki",
+      "source": "document",
+      "start": 458,
+      "text": "Ki"
+    },
+    {
+      "confidence": 0.86,
+      "end": 387,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "NC1",
+      "source": "document",
+      "start": 384,
+      "text": "NC1"
+    },
+    {
+      "confidence": 0.86,
+      "end": 390,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "NC",
+      "source": "document",
+      "start": 388,
+      "text": "NC"
+    },
+    {
+      "confidence": 0.92,
+      "end": 398,
+      "entity_type": "mutation",
+      "metadata": {},
+      "normalized": "C1N",
+      "source": "document",
+      "start": 395,
+      "text": "C1N"
+    },
+    {
+      "confidence": 0.86,
+      "end": 409,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "CO",
+      "source": "document",
+      "start": 407,
+      "text": "CO"
+    },
+    {
+      "confidence": 0.92,
+      "end": 417,
+      "entity_type": "mutation",
+      "metadata": {},
+      "normalized": "C3O",
+      "source": "document",
+      "start": 414,
+      "text": "C3O"
+    },
+    {
+      "confidence": 0.86,
+      "end": 532,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "COC3",
+      "source": "document",
+      "start": 528,
+      "text": "COC3"
+    },
+    {
+      "confidence": 0.86,
+      "end": 558,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "PIK3CA",
+      "source": "document",
+      "start": 552,
+      "text": "PIK3CA"
+    },
+    {
+      "confidence": 0.86,
+      "end": 649,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "CC2",
+      "source": "document",
+      "start": 646,
+      "text": "CC2"
+    },
+    {
+      "confidence": 0.86,
+      "end": 670,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "SIRT1",
+      "source": "document",
+      "start": 665,
+      "text": "SIRT1"
+    },
+    {
+      "confidence": 0.97,
+      "end": 686,
+      "entity_type": "assay_endpoint",
+      "metadata": {},
+      "normalized": "EC50",
+      "source": "document",
+      "start": 682,
+      "text": "EC50"
+    },
+    {
+      "confidence": 0.86,
+      "end": 686,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "EC50",
+      "source": "document",
+      "start": 682,
+      "text": "EC50"
+    }
+  ],
+  "entity_count": 20,
+  "file_type": "csv",
+  "image_count": 0,
+  "metadata": {
+    "delimiter": ",",
+    "encoding": "utf-8-sig",
+    "scientific_entity_extraction": "rule_based_v1",
+    "sensitive_finding_count": 0,
+    "sensitive_redaction_applied": false
+  },
+  "mime_type": "text/csv",
+  "page_count": 0,
+  "paragraph_count": 0,
+  "region_count": 0,
+  "regions": [],
+  "row_count": 5,
+  "sections": [
+    {
+      "confidence": 1.0,
+      "metadata": {},
+      "name": "Document",
+      "source": "document",
+      "text": "record_id,compound,canonical_smiles,target,protein_sequence,activity_type,standard_value,standard_units,standard_relation,review_status\r\nDEMO-001,Aspirin reference,CC(=O)OC1=CC=CC=C1C(=O)O,PTGS2,MALLLARLALVGAAVA,IC50,125,nM,=,accepted\r\nDEMO-002,Caffeine reference,CN1C=NC2=C1C(=O)N(C(=O)N2C)C,ADORA2A,MPIMGSSVYITVELAIAVLAILGNVLVCWAV,Ki,820,nM,=,accepted\r\nDEMO-003,Adenosine reference,NC1=NC=NC2=C1N=CN2C3OC(CO)C(O)C3O,ADORA2A,MPIMGSSVYITVELAIAVLAILGNVLVCWAV,Ki,32,nM,=,accepted\r\nDEMO-004,Quercetin reference,OC1=CC(O)=C(C=C1)C2=COC3=CC(O)=CC(O)=C3C2=O,PIK3CA,MALNIRKILKYGKRGK,IC50,950,nM,=,pending\r\nDEMO-005,Resveratrol reference,OC1=CC=C(C=C1)C=CC2=CC(O)=CC(O)=C2,SIRT1,MADEHGLKSV,EC50,5200,nM,=,pending\r\n"
+    }
+  ],
+  "sheet_count": 0,
+  "source_name": "BioIntel_Demo_Activity_Data.csv",
+  "source_sha256": "7c97aa72bd319bb7fe0873b97e65ba1bb13c85030000e841f4203cc9d80934c0",
+  "source_size_bytes": 706,
+  "structured_fields": {
+    "activity_measurements": [],
+    "document_type": "research_document",
+    "entity_counts": {
+      "assay_endpoint": 3,
+      "gene_or_protein": 13,
+      "mutation": 4
+    },
+    "has_limitations": false,
+    "has_methods": false,
+    "has_results": false,
+    "publication_identifiers": [],
+    "sample_sizes": [],
+    "sections": {
+      "unclassified": "record_id,compound,canonical_smiles,target,protein_sequence,activity_type,standard_value,standard_units,standard_relation,review_status\nDEMO-001,Aspirin reference,CC(=O)OC1=CC=CC=C1C(=O)O,PTGS2,MALLLARLALVGAAVA,IC50,125,nM,=,accepted\nDEMO-002,Caffeine reference,CN1C=NC2=C1C(=O)N(C(=O)N2C)C,ADORA2A,MPIMGSSVYITVELAIAVLAILGNVLVCWAV,Ki,820,nM,=,accepted\nDEMO-003,Adenosine reference,NC1=NC=NC2=C1N=CN2C3OC(CO)C(O)C3O,ADORA2A,MPIMGSSVYITVELAIAVLAILGNVLVCWAV,Ki,32,nM,=,accepted\nDEMO-004,Quercetin reference,OC1=CC(O)=C(C=C1)C2=COC3=CC(O)=CC(O)=C3C2=O,PIK3CA,MALNIRKILKYGKRGK,IC50,950,nM,=,pending\nDEMO-005,Resveratrol reference,OC1=CC=C(C=C1)C=CC2=CC(O)=CC(O)=C2,SIRT1,MADEHGLKSV,EC50,5200,nM,=,pending"
+    },
+    "sensitive_findings": [],
+    "title": "BioIntel_Demo_Activity_Data.csv"
+  },
+  "table_count": 1,
+  "tables": [
+    {
+      "column_count": 10,
+      "columns": [
+        "record_id",
+        "compound",
+        "canonical_smiles",
+        "target",
+        "protein_sequence",
+        "activity_type",
+        "standard_value",
+        "standard_units",
+        "standard_relation",
+        "review_status"
+      ],
+      "confidence": 1.0,
+      "metadata": {
+        "delimiter": ",",
+        "encoding": "utf-8-sig"
+      },
+      "name": "Delimited Data",
+      "row_count": 5,
+      "rows": [
+        [
+          "DEMO-001",
+          "Aspirin reference",
+          "CC(=O)OC1=CC=CC=C1C(=O)O",
+          "PTGS2",
+          "MALLLARLALVGAAVA",
+          "IC50",
+          "125",
+          "nM",
+          "=",
+          "accepted"
+        ],
+        [
+          "DEMO-002",
+          "Caffeine reference",
+          "CN1C=NC2=C1C(=O)N(C(=O)N2C)C",
+          "ADORA2A",
+          "MPIMGSSVYITVELAIAVLAILGNVLVCWAV",
+          "Ki",
+          "820",
+          "nM",
+          "=",
+          "accepted"
+        ],
+        [
+          "DEMO-003",
+          "Adenosine reference",
+          "NC1=NC=NC2=C1N=CN2C3OC(CO)C(O)C3O",
+          "ADORA2A",
+          "MPIMGSSVYITVELAIAVLAILGNVLVCWAV",
+          "Ki",
+          "32",
+          "nM",
+          "=",
+          "accepted"
+        ],
+        [
+          "DEMO-004",
+          "Quercetin reference",
+          "OC1=CC(O)=C(C=C1)C2=COC3=CC(O)=CC(O)=C3C2=O",
+          "PIK3CA",
+          "MALNIRKILKYGKRGK",
+          "IC50",
+          "950",
+          "nM",
+          "=",
+          "pending"
+        ],
+        [
+          "DEMO-005",
+          "Resveratrol reference",
+          "OC1=CC=C(C=C1)C=CC2=CC(O)=CC(O)=C2",
+          "SIRT1",
+          "MADEHGLKSV",
+          "EC50",
+          "5200",
+          "nM",
+          "=",
+          "pending"
+        ]
+      ],
+      "source": "document"
+    }
+  ],
+  "text": "record_id,compound,canonical_smiles,target,protein_sequence,activity_type,standard_value,standard_units,standard_relation,review_status\r\nDEMO-001,Aspirin reference,CC(=O)OC1=CC=CC=C1C(=O)O,PTGS2,MALLLARLALVGAAVA,IC50,125,nM,=,accepted\r\nDEMO-002,Caffeine reference,CN1C=NC2=C1C(=O)N(C(=O)N2C)C,ADORA2A,MPIMGSSVYITVELAIAVLAILGNVLVCWAV,Ki,820,nM,=,accepted\r\nDEMO-003,Adenosine reference,NC1=NC=NC2=C1N=CN2C3OC(CO)C(O)C3O,ADORA2A,MPIMGSSVYITVELAIAVLAILGNVLVCWAV,Ki,32,nM,=,accepted\r\nDEMO-004,Quercetin reference,OC1=CC(O)=C(C=C1)C2=COC3=CC(O)=CC(O)=C3C2=O,PIK3CA,MALNIRKILKYGKRGK,IC50,950,nM,=,pending\r\nDEMO-005,Resveratrol reference,OC1=CC=C(C=C1)C=CC2=CC(O)=CC(O)=C2,SIRT1,MADEHGLKSV,EC50,5200,nM,=,pending\r\n",
+  "warning_count": 0,
+  "warnings": []
+}

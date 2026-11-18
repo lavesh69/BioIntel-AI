@@ -1,0 +1,1 @@
+BioIntel Neuro/CNS Step202 synthetic demonstration pack. All records are illustrative, contain no real patient data, and are not approved scientific evidence. Use RUN_STEP202_NEURO_DEMO_WINDOWS.bat after installation to generate a 23-module demonstration report.

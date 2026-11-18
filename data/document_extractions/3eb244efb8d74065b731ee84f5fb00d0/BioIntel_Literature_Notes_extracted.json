@@ -1,0 +1,229 @@
+{
+  "character_count": 446,
+  "entities": [
+    {
+      "confidence": 0.86,
+      "end": 236,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "PTGS2",
+      "source": "document",
+      "start": 231,
+      "text": "PTGS2"
+    },
+    {
+      "confidence": 0.96,
+      "end": 248,
+      "entity_type": "activity_measurement",
+      "metadata": {
+        "endpoint": "IC50",
+        "relation": "=",
+        "unit": "nM",
+        "value": 125.0
+      },
+      "normalized": "IC50 = 125 nM",
+      "source": "document",
+      "start": 237,
+      "text": "IC50 125 nM"
+    },
+    {
+      "confidence": 0.97,
+      "end": 363,
+      "entity_type": "assay_endpoint",
+      "metadata": {},
+      "normalized": "IC50",
+      "source": "document",
+      "start": 359,
+      "text": "IC50"
+    },
+    {
+      "confidence": 0.86,
+      "end": 363,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "IC50",
+      "source": "document",
+      "start": 359,
+      "text": "IC50"
+    },
+    {
+      "confidence": 0.96,
+      "end": 288,
+      "entity_type": "activity_measurement",
+      "metadata": {
+        "endpoint": "KI",
+        "relation": "=",
+        "unit": "nM",
+        "value": 820.0
+      },
+      "normalized": "KI = 820 nM",
+      "source": "document",
+      "start": 279,
+      "text": "Ki 820 nM"
+    },
+    {
+      "confidence": 0.97,
+      "end": 322,
+      "entity_type": "assay_endpoint",
+      "metadata": {},
+      "normalized": "Ki",
+      "source": "document",
+      "start": 320,
+      "text": "Ki"
+    },
+    {
+      "confidence": 0.96,
+      "end": 328,
+      "entity_type": "activity_measurement",
+      "metadata": {
+        "endpoint": "KI",
+        "relation": "=",
+        "unit": "nM",
+        "value": 32.0
+      },
+      "normalized": "KI = 32 nM",
+      "source": "document",
+      "start": 320,
+      "text": "Ki 32 nM"
+    },
+    {
+      "confidence": 0.86,
+      "end": 358,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "PIK3CA",
+      "source": "document",
+      "start": 352,
+      "text": "PIK3CA"
+    },
+    {
+      "confidence": 0.96,
+      "end": 370,
+      "entity_type": "activity_measurement",
+      "metadata": {
+        "endpoint": "IC50",
+        "relation": "=",
+        "unit": "nM",
+        "value": 950.0
+      },
+      "normalized": "IC50 = 950 nM",
+      "source": "document",
+      "start": 359,
+      "text": "IC50 950 nM"
+    }
+  ],
+  "entity_count": 9,
+  "file_type": "md",
+  "image_count": 0,
+  "metadata": {
+    "encoding": "utf-8-sig",
+    "scientific_entity_extraction": "rule_based_v1",
+    "sensitive_finding_count": 0,
+    "sensitive_redaction_applied": false
+  },
+  "mime_type": "text/markdown",
+  "page_count": 0,
+  "paragraph_count": 0,
+  "region_count": 0,
+  "regions": [],
+  "row_count": 0,
+  "sections": [
+    {
+      "confidence": 1.0,
+      "metadata": {},
+      "name": "Document",
+      "source": "document",
+      "text": "# BioIntel Literature Notes\n\n## Background\nPTGS2 is associated with inflammatory pathways. ADORA2A is a G protein-coupled receptor and is often discussed with caffeine and adenosine.\n\n## Demonstration findings\n- Aspirin reference: PTGS2 IC50 125 nM\n- Caffeine reference: ADORA2A Ki 820 nM\n- Adenosine reference: ADORA2A Ki 32 nM\n- Quercetin reference: PIK3CA IC50 950 nM\n\n## Warning\nThese are illustrative values for software demonstration only.\n"
+    }
+  ],
+  "sheet_count": 0,
+  "source_name": "BioIntel_Literature_Notes.md",
+  "source_sha256": "1fcafeeeb0069cba66c84751e55d36f596107999fcdaf0de52da2723c5d3d142",
+  "source_size_bytes": 446,
+  "structured_fields": {
+    "activity_measurements": [
+      {
+        "confidence": 0.96,
+        "end": 248,
+        "entity_type": "activity_measurement",
+        "metadata": {
+          "endpoint": "IC50",
+          "relation": "=",
+          "unit": "nM",
+          "value": 125.0
+        },
+        "normalized": "IC50 = 125 nM",
+        "source": "document",
+        "start": 237,
+        "text": "IC50 125 nM"
+      },
+      {
+        "confidence": 0.96,
+        "end": 288,
+        "entity_type": "activity_measurement",
+        "metadata": {
+          "endpoint": "KI",
+          "relation": "=",
+          "unit": "nM",
+          "value": 820.0
+        },
+        "normalized": "KI = 820 nM",
+        "source": "document",
+        "start": 279,
+        "text": "Ki 820 nM"
+      },
+      {
+        "confidence": 0.96,
+        "end": 328,
+        "entity_type": "activity_measurement",
+        "metadata": {
+          "endpoint": "KI",
+          "relation": "=",
+          "unit": "nM",
+          "value": 32.0
+        },
+        "normalized": "KI = 32 nM",
+        "source": "document",
+        "start": 320,
+        "text": "Ki 32 nM"
+      },
+      {
+        "confidence": 0.96,
+        "end": 370,
+        "entity_type": "activity_measurement",
+        "metadata": {
+          "endpoint": "IC50",
+          "relation": "=",
+          "unit": "nM",
+          "value": 950.0
+        },
+        "normalized": "IC50 = 950 nM",
+        "source": "document",
+        "start": 359,
+        "text": "IC50 950 nM"
+      }
+    ],
+    "document_type": "research_document",
+    "entity_counts": {
+      "activity_measurement": 4,
+      "assay_endpoint": 2,
+      "gene_or_protein": 3
+    },
+    "has_limitations": false,
+    "has_methods": false,
+    "has_results": false,
+    "publication_identifiers": [],
+    "sample_sizes": [],
+    "sections": {
+      "introduction": "PTGS2 is associated with inflammatory pathways. ADORA2A is a G protein-coupled receptor and is often discussed with caffeine and adenosine.\n## Demonstration findings\n- Aspirin reference: PTGS2 IC50 125 nM\n- Caffeine reference: ADORA2A Ki 820 nM\n- Adenosine reference: ADORA2A Ki 32 nM\n- Quercetin reference: PIK3CA IC50 950 nM\n## Warning\nThese are illustrative values for software demonstration only.",
+      "unclassified": "# BioIntel Literature Notes"
+    },
+    "sensitive_findings": [],
+    "title": "BioIntel_Literature_Notes.md"
+  },
+  "table_count": 0,
+  "tables": [],
+  "text": "# BioIntel Literature Notes\n\n## Background\nPTGS2 is associated with inflammatory pathways. ADORA2A is a G protein-coupled receptor and is often discussed with caffeine and adenosine.\n\n## Demonstration findings\n- Aspirin reference: PTGS2 IC50 125 nM\n- Caffeine reference: ADORA2A Ki 820 nM\n- Adenosine reference: ADORA2A Ki 32 nM\n- Quercetin reference: PIK3CA IC50 950 nM\n\n## Warning\nThese are illustrative values for software demonstration only.\n",
+  "warning_count": 0,
+  "warnings": []
+}

@@ -1,0 +1,6 @@
+role,responsibility,independence_requirement,required_record
+Sponsor,Define intended use and provide frozen model package,Cannot adjudicate external outcomes,Approved protocol and model freeze manifest
+Independent site,Enroll/collect eligible samples and protect ground truth,Cannot alter model or locked predictions,Site qualification and source-data records
+Outcome adjudicator,Determine reference outcome using predefined rules,Blinded to model prediction where feasible,Adjudication log
+Independent statistician,Execute locked statistical analysis plan,Not the model developer,Signed statistical report
+Quality reviewer,Review deviations CAPA integrity and completeness,Different from evidence submitter,Independent review record

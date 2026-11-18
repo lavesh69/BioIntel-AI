@@ -1,0 +1,40 @@
+{
+  "module_key": "benchmark_leakage_lab",
+  "title": "Benchmark & Leakage Lab",
+  "description": "Separate train and independent benchmark tables.",
+  "accepted_formats": "CSV",
+  "offline": true,
+  "synthetic_example": true,
+  "files": [
+    {
+      "name": "blank_training.csv",
+      "role": "blank",
+      "size_bytes": 75
+    },
+    {
+      "name": "blank_independent_test.csv",
+      "role": "blank",
+      "size_bytes": 75
+    },
+    {
+      "name": "filled_training_example.csv",
+      "role": "example",
+      "size_bytes": 280
+    },
+    {
+      "name": "filled_independent_test_example.csv",
+      "role": "example",
+      "size_bytes": 174
+    },
+    {
+      "name": "expected_leakage_audit.csv",
+      "role": "output",
+      "size_bytes": 81
+    },
+    {
+      "name": "FORMAT_GUIDE.md",
+      "role": "guide",
+      "size_bytes": 807
+    }
+  ]
+}

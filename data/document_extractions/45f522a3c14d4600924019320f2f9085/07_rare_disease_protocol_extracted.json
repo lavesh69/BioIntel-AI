@@ -1,0 +1,129 @@
+{
+  "character_count": 226,
+  "entities": [
+    {
+      "confidence": 0.86,
+      "end": 4,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "DEMO",
+      "source": "document",
+      "start": 0,
+      "text": "DEMO"
+    },
+    {
+      "confidence": 0.86,
+      "end": 29,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "CFTR",
+      "source": "document",
+      "start": 25,
+      "text": "CFTR"
+    },
+    {
+      "confidence": 0.72,
+      "end": 76,
+      "entity_type": "disease",
+      "metadata": {},
+      "normalized": "fibrosis",
+      "source": "document",
+      "start": 68,
+      "text": "fibrosis"
+    },
+    {
+      "confidence": 0.92,
+      "end": 93,
+      "entity_type": "mutation",
+      "metadata": {},
+      "normalized": "G551D",
+      "source": "document",
+      "start": 88,
+      "text": "G551D"
+    },
+    {
+      "confidence": 0.97,
+      "end": 106,
+      "entity_type": "assay_endpoint",
+      "metadata": {},
+      "normalized": "EC50",
+      "source": "document",
+      "start": 102,
+      "text": "EC50"
+    },
+    {
+      "confidence": 0.86,
+      "end": 106,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "EC50",
+      "source": "document",
+      "start": 102,
+      "text": "EC50"
+    },
+    {
+      "confidence": 0.9,
+      "end": 130,
+      "entity_type": "organism",
+      "metadata": {},
+      "normalized": "Homo sapiens",
+      "source": "document",
+      "start": 118,
+      "text": "Homo sapiens"
+    }
+  ],
+  "entity_count": 7,
+  "file_type": "txt",
+  "image_count": 0,
+  "metadata": {
+    "encoding": "utf-8-sig",
+    "scientific_entity_extraction": "rule_based_v1",
+    "sensitive_finding_count": 0,
+    "sensitive_redaction_applied": false
+  },
+  "mime_type": "text/plain",
+  "page_count": 0,
+  "paragraph_count": 0,
+  "region_count": 0,
+  "regions": [],
+  "row_count": 0,
+  "sections": [
+    {
+      "confidence": 1.0,
+      "metadata": {},
+      "name": "Document",
+      "source": "document",
+      "text": "DEMO PROTOCOL 7\r\nTarget: CFTR\r\nCompound: ivacaftor\r\nDisease: cystic fibrosis\r\nMutation: G551D\r\nAssay: EC50\r\nOrganism: Homo sapiens\r\nResult: 536 nM\r\nDemonstration/reference content only; not experimental or clinical evidence.\r\n"
+    }
+  ],
+  "sheet_count": 0,
+  "source_name": "07_rare_disease_protocol.txt",
+  "source_sha256": "0f94c5e5ca58fb570a7a177fca89f59697fb0e4f82729b1164987b5c8a3cfb58",
+  "source_size_bytes": 226,
+  "structured_fields": {
+    "activity_measurements": [],
+    "document_type": "research_document",
+    "entity_counts": {
+      "assay_endpoint": 1,
+      "disease": 1,
+      "gene_or_protein": 3,
+      "mutation": 1,
+      "organism": 1
+    },
+    "has_limitations": false,
+    "has_methods": false,
+    "has_results": false,
+    "publication_identifiers": [],
+    "sample_sizes": [],
+    "sections": {
+      "unclassified": "DEMO PROTOCOL 7\nTarget: CFTR\nCompound: ivacaftor\nDisease: cystic fibrosis\nMutation: G551D\nAssay: EC50\nOrganism: Homo sapiens\nResult: 536 nM\nDemonstration/reference content only; not experimental or clinical evidence."
+    },
+    "sensitive_findings": [],
+    "title": "07_rare_disease_protocol.txt"
+  },
+  "table_count": 0,
+  "tables": [],
+  "text": "DEMO PROTOCOL 7\r\nTarget: CFTR\r\nCompound: ivacaftor\r\nDisease: cystic fibrosis\r\nMutation: G551D\r\nAssay: EC50\r\nOrganism: Homo sapiens\r\nResult: 536 nM\r\nDemonstration/reference content only; not experimental or clinical evidence.\r\n",
+  "warning_count": 0,
+  "warnings": []
+}

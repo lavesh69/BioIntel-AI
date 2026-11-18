@@ -1,0 +1,116 @@
+{
+  "duplicate_of_run_id": null,
+  "engine_version": "2.7.0",
+  "outputs": [
+    {
+      "created_at_utc": "2026-07-04T16:34:19.789988+00:00",
+      "filename": "BioIntel_Project_Protocol_extracted.json",
+      "format": "json",
+      "integrity_status": "unknown",
+      "output_id": "d3f2b9705e6f4fc59ad587a7596d96c7",
+      "path": "data/document_extractions/50eac9e3bcbb4349b0567139eadcc06f/BioIntel_Project_Protocol_extracted.json",
+      "run_id": "50eac9e3bcbb4349b0567139eadcc06f",
+      "sha256": "7a72e7cbd699cfd2fbcf1889f2cb0ac507472d1bfaace1ea460c228818838d33",
+      "size_bytes": 4278,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:34:19.793760+00:00",
+      "filename": "BioIntel_Project_Protocol_extracted.xlsx",
+      "format": "xlsx",
+      "integrity_status": "unknown",
+      "output_id": "5215e2b161e84b48a7ad7a02326df78f",
+      "path": "data/document_extractions/50eac9e3bcbb4349b0567139eadcc06f/BioIntel_Project_Protocol_extracted.xlsx",
+      "run_id": "50eac9e3bcbb4349b0567139eadcc06f",
+      "sha256": "e260f7371666bdc2898af7b32851dff777973cae64ca89ba28637484d534f67d",
+      "size_bytes": 8708,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:34:19.796608+00:00",
+      "filename": "BioIntel_Project_Protocol_extracted.docx",
+      "format": "docx",
+      "integrity_status": "unknown",
+      "output_id": "4f99afb016db4c6db8f98dc60f4f19e3",
+      "path": "data/document_extractions/50eac9e3bcbb4349b0567139eadcc06f/BioIntel_Project_Protocol_extracted.docx",
+      "run_id": "50eac9e3bcbb4349b0567139eadcc06f",
+      "sha256": "6d0521b8b81b3dcc1ba2cf19847243e22c54f49db10511a56dca82158f2e3008",
+      "size_bytes": 37734,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:34:19.798924+00:00",
+      "filename": "BioIntel_Project_Protocol_extracted.pdf",
+      "format": "pdf",
+      "integrity_status": "unknown",
+      "output_id": "1bea3ca1755642ffb190e883b4cdad41",
+      "path": "data/document_extractions/50eac9e3bcbb4349b0567139eadcc06f/BioIntel_Project_Protocol_extracted.pdf",
+      "run_id": "50eac9e3bcbb4349b0567139eadcc06f",
+      "sha256": "cb6ab1804081268eae258c205c9c18450c6216db4d84542c0dfee1bebe51bae2",
+      "size_bytes": 4008,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:34:19.801320+00:00",
+      "filename": "BioIntel_Project_Protocol_csv_tables.zip",
+      "format": "csv_zip",
+      "integrity_status": "unknown",
+      "output_id": "0500a1c02ab44a148492c375b508fa08",
+      "path": "data/document_extractions/50eac9e3bcbb4349b0567139eadcc06f/BioIntel_Project_Protocol_csv_tables.zip",
+      "run_id": "50eac9e3bcbb4349b0567139eadcc06f",
+      "sha256": "339027d732a3ce5c20ef9b5b9c86e82496603cc8a594367858bc6e167389f21a",
+      "size_bytes": 2456,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:34:19.805162+00:00",
+      "filename": "BioIntel_Project_Protocol_complete_export.zip",
+      "format": "bundle_zip",
+      "integrity_status": "unknown",
+      "output_id": "affc4292f2d7499c8866475b7a74e901",
+      "path": "data/document_extractions/50eac9e3bcbb4349b0567139eadcc06f/BioIntel_Project_Protocol_complete_export.zip",
+      "run_id": "50eac9e3bcbb4349b0567139eadcc06f",
+      "sha256": "e78548232b39ae9ce15cff1152d84234ec328f19a57c2af48a638d7904b24a49",
+      "size_bytes": 49651,
+      "verified_at_utc": null
+    }
+  ],
+  "run_id": "50eac9e3bcbb4349b0567139eadcc06f",
+  "source": {
+    "character_count": 256,
+    "entity_count": 10,
+    "file_type": "txt",
+    "image_count": 0,
+    "mime_type": "text/plain",
+    "page_count": 0,
+    "paragraph_count": 0,
+    "region_count": 0,
+    "row_count": 0,
+    "sheet_count": 0,
+    "source_name": "BioIntel_Project_Protocol.txt",
+    "source_sha256": "cadc124e9735fd439b816354295f6f56e96611c65477566643dd0e4a6634993d",
+    "source_size_bytes": 256,
+    "table_count": 0,
+    "warning_count": 0
+  },
+  "structured_fields": {
+    "activity_measurements": [],
+    "document_type": "research_document",
+    "entity_counts": {
+      "assay_endpoint": 3,
+      "gene_or_protein": 6,
+      "organism": 1
+    },
+    "has_limitations": false,
+    "has_methods": false,
+    "has_results": false,
+    "publication_identifiers": [],
+    "sample_sizes": [],
+    "sections": {
+      "unclassified": "BIOINTEL DEMONSTRATION PROTOCOL\nObjective: Populate document history and knowledge search.\nOrganism: Homo sapiens\nTargets: PTGS2, ADORA2A, SIRT1, PIK3CA, VKORC1\nEndpoints: IC50, Ki, EC50\nReview rule: Demo records must remain labelled as non-experimental."
+    },
+    "sensitive_findings": [],
+    "title": "BioIntel_Project_Protocol.txt"
+  },
+  "warnings": []
+}

@@ -1,0 +1,35 @@
+{
+  "activity_type": null,
+  "column_names": [
+    "sample",
+    "condition",
+    "biological_replicate",
+    "technical_replicate",
+    "target_ct",
+    "reference_ct",
+    "amplification_efficiency"
+  ],
+  "dataset_name": "Step30 qPCR 96-well study",
+  "dataset_sha256": "b04b66653e79b660adbe614e2489e2de4351d928aeb1ce32d321a8b6c20865df",
+  "dataset_version": "2.0",
+  "demo_only": true,
+  "generated_by": "BioIntel Step 31 registry completion",
+  "metadata": {
+    "demo_only": true,
+    "domain": "biotechnology",
+    "reference_scale": true,
+    "scientific_release_eligible": false,
+    "source_file": "data/bioinformatics_demo/demo_qpcr.csv",
+    "step": 30,
+    "synthetic": true
+  },
+  "parent_sha256": null,
+  "primary_file": "data/bioinformatics_demo/demo_qpcr.csv",
+  "primary_file_exists": true,
+  "row_count": 96,
+  "schema": "biointel.dataset-manifest.v3.1",
+  "scientific_release_eligible": false,
+  "source_description": "BioIntel Step 30 scaled scientific reference dataset",
+  "synthetic": true,
+  "task_type": "unlabelled"
+}

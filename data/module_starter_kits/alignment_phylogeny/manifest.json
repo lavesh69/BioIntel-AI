@@ -1,0 +1,35 @@
+{
+  "module_key": "alignment_phylogeny",
+  "title": "Alignment & Phylogeny",
+  "description": "Homologous FASTA sequences and expected tree text.",
+  "accepted_formats": "FASTA, FA, ALN or Newick",
+  "offline": true,
+  "synthetic_example": true,
+  "files": [
+    {
+      "name": "blank_homologs.fasta",
+      "role": "blank",
+      "size_bytes": 46
+    },
+    {
+      "name": "filled_homologs.fasta",
+      "role": "example",
+      "size_bytes": 258
+    },
+    {
+      "name": "expected_tree.newick",
+      "role": "output",
+      "size_bytes": 55
+    },
+    {
+      "name": "expected_distance_matrix.csv",
+      "role": "output",
+      "size_bytes": 112
+    },
+    {
+      "name": "FORMAT_GUIDE.md",
+      "role": "guide",
+      "size_bytes": 815
+    }
+  ]
+}

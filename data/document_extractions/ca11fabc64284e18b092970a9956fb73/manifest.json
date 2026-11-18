@@ -1,0 +1,119 @@
+{
+  "duplicate_of_run_id": null,
+  "engine_version": "2.7.0",
+  "outputs": [
+    {
+      "created_at_utc": "2026-07-04T16:48:30.908560+00:00",
+      "filename": "01_oncology_table_extracted.json",
+      "format": "json",
+      "integrity_status": "unknown",
+      "output_id": "3aa7a46d7f26435396f36b3d2bd0bd33",
+      "path": "data/document_extractions/ca11fabc64284e18b092970a9956fb73/01_oncology_table_extracted.json",
+      "run_id": "ca11fabc64284e18b092970a9956fb73",
+      "sha256": "b49271bbc1f4ec5c3ce284863ed41dedae98c46f575f3fb217a8fb21b8e29eae",
+      "size_bytes": 4674,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:48:30.912194+00:00",
+      "filename": "01_oncology_table_extracted.xlsx",
+      "format": "xlsx",
+      "integrity_status": "unknown",
+      "output_id": "4403c3bd9d634cec8f2689e16848118f",
+      "path": "data/document_extractions/ca11fabc64284e18b092970a9956fb73/01_oncology_table_extracted.xlsx",
+      "run_id": "ca11fabc64284e18b092970a9956fb73",
+      "sha256": "02a25a40baaf8daa6493c6505640c022033ee09bb0cac0944e5c10069316d41e",
+      "size_bytes": 9539,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:48:30.914655+00:00",
+      "filename": "01_oncology_table_extracted.docx",
+      "format": "docx",
+      "integrity_status": "unknown",
+      "output_id": "839fae6cb98048a696ffdbc929157017",
+      "path": "data/document_extractions/ca11fabc64284e18b092970a9956fb73/01_oncology_table_extracted.docx",
+      "run_id": "ca11fabc64284e18b092970a9956fb73",
+      "sha256": "bfc795166a566e439eff32e54782c7c3de0e82b787b96f14a88dc1d6c32853ba",
+      "size_bytes": 37851,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:48:30.917154+00:00",
+      "filename": "01_oncology_table_extracted.pdf",
+      "format": "pdf",
+      "integrity_status": "unknown",
+      "output_id": "ac2439267ad5410f9e63984ba3c3a1cf",
+      "path": "data/document_extractions/ca11fabc64284e18b092970a9956fb73/01_oncology_table_extracted.pdf",
+      "run_id": "ca11fabc64284e18b092970a9956fb73",
+      "sha256": "8029db6703865c029775b55b3272560dad415983e8ce7fa4a0d4c1d86d0574fa",
+      "size_bytes": 4671,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:48:30.919275+00:00",
+      "filename": "01_oncology_table_csv_tables.zip",
+      "format": "csv_zip",
+      "integrity_status": "unknown",
+      "output_id": "cc8dae37d1984167b4c95371f16df519",
+      "path": "data/document_extractions/ca11fabc64284e18b092970a9956fb73/01_oncology_table_csv_tables.zip",
+      "run_id": "ca11fabc64284e18b092970a9956fb73",
+      "sha256": "805d58472ff48566622b18b77dc7a0ea9a990e0ea4760f7c08e0993c03982be5",
+      "size_bytes": 2790,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:48:30.921666+00:00",
+      "filename": "01_oncology_table_complete_export.zip",
+      "format": "bundle_zip",
+      "integrity_status": "unknown",
+      "output_id": "477c531b58014f329f7eb4ee2dc8a7ca",
+      "path": "data/document_extractions/ca11fabc64284e18b092970a9956fb73/01_oncology_table_complete_export.zip",
+      "run_id": "ca11fabc64284e18b092970a9956fb73",
+      "sha256": "78dacaca3b601b2556be37a02c20d73260a93ba3f0d1bf7b0cc5688e196e3f19",
+      "size_bytes": 51075,
+      "verified_at_utc": null
+    }
+  ],
+  "run_id": "ca11fabc64284e18b092970a9956fb73",
+  "source": {
+    "character_count": 274,
+    "entity_count": 7,
+    "file_type": "csv",
+    "image_count": 0,
+    "mime_type": "text/csv",
+    "page_count": 0,
+    "paragraph_count": 0,
+    "region_count": 0,
+    "row_count": 2,
+    "sheet_count": 0,
+    "source_name": "01_oncology_table.csv",
+    "source_sha256": "e39273a715511bacafe26963cf265d99cd894e4d67c6c70b9297684dc6c98154",
+    "source_size_bytes": 274,
+    "table_count": 1,
+    "warning_count": 0
+  },
+  "structured_fields": {
+    "activity_measurements": [],
+    "document_type": "research_document",
+    "entity_counts": {
+      "assay_endpoint": 1,
+      "disease": 1,
+      "drug_or_compound": 1,
+      "gene_or_protein": 2,
+      "mutation": 1,
+      "organism": 1
+    },
+    "has_limitations": false,
+    "has_methods": false,
+    "has_results": false,
+    "publication_identifiers": [],
+    "sample_sizes": [],
+    "sections": {
+      "unclassified": "record_id,compound,target,disease,mutation,assay,value_nm,organism,status\nDEMO-CORPUS-01,gefitinib,EGFR,non-small-cell lung cancer,L858R,IC50,98,Homo sapiens,demo_only\nDEMO-CORPUS-01-B,gefitinib analogue,EGFR,non-small-cell lung cancer,L858R,IC50,208,Homo sapiens,demo_only"
+    },
+    "sensitive_findings": [],
+    "title": "01_oncology_table.csv"
+  },
+  "warnings": []
+}

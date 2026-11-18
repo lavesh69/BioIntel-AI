@@ -1,0 +1,119 @@
+{
+  "duplicate_of_run_id": null,
+  "engine_version": "2.7.0",
+  "outputs": [
+    {
+      "created_at_utc": "2026-07-04T16:48:33.014901+00:00",
+      "filename": "06_inflammation_table_extracted.json",
+      "format": "json",
+      "integrity_status": "unknown",
+      "output_id": "c3ba277632264dcc8ea6139df65b0201",
+      "path": "data/document_extractions/e8d1a09c8b17476fac1c2dbc73d6ff81/06_inflammation_table_extracted.json",
+      "run_id": "e8d1a09c8b17476fac1c2dbc73d6ff81",
+      "sha256": "db4514357742f429d340ee37a75d7c5187e2bd0d80b52c0c1a2f6ccc3eae9e75",
+      "size_bytes": 4644,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:48:33.017995+00:00",
+      "filename": "06_inflammation_table_extracted.xlsx",
+      "format": "xlsx",
+      "integrity_status": "unknown",
+      "output_id": "8b140d11d2744fc6ad776891cef3de76",
+      "path": "data/document_extractions/e8d1a09c8b17476fac1c2dbc73d6ff81/06_inflammation_table_extracted.xlsx",
+      "run_id": "e8d1a09c8b17476fac1c2dbc73d6ff81",
+      "sha256": "c44b47eb72d52f939f5b1b1337c50cd0447a2ca9954393685a0c67139f4b4084",
+      "size_bytes": 9532,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:48:33.020111+00:00",
+      "filename": "06_inflammation_table_extracted.docx",
+      "format": "docx",
+      "integrity_status": "unknown",
+      "output_id": "82c6112a348d45f5ab54692182e07f5f",
+      "path": "data/document_extractions/e8d1a09c8b17476fac1c2dbc73d6ff81/06_inflammation_table_extracted.docx",
+      "run_id": "e8d1a09c8b17476fac1c2dbc73d6ff81",
+      "sha256": "f8ba301c16cefa3359fec2dad6274d57d906c6447964f09d8ae1e0ba1967d547",
+      "size_bytes": 37856,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:48:33.022435+00:00",
+      "filename": "06_inflammation_table_extracted.pdf",
+      "format": "pdf",
+      "integrity_status": "unknown",
+      "output_id": "6e5de6c81aeb45e092ffd91a05b5cf9a",
+      "path": "data/document_extractions/e8d1a09c8b17476fac1c2dbc73d6ff81/06_inflammation_table_extracted.pdf",
+      "run_id": "e8d1a09c8b17476fac1c2dbc73d6ff81",
+      "sha256": "d3bf499b7d98100e76a6405336ff9449a70b8bb2153731c41411a5e0922c3625",
+      "size_bytes": 4668,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:48:33.024561+00:00",
+      "filename": "06_inflammation_table_csv_tables.zip",
+      "format": "csv_zip",
+      "integrity_status": "unknown",
+      "output_id": "92c6672bd8234ed7a890cf564ab8ef47",
+      "path": "data/document_extractions/e8d1a09c8b17476fac1c2dbc73d6ff81/06_inflammation_table_csv_tables.zip",
+      "run_id": "e8d1a09c8b17476fac1c2dbc73d6ff81",
+      "sha256": "3cb2a3cf72f1e68ea713b04bbd9fcb2fbd939debf67969b6aa76dbd59cb290e7",
+      "size_bytes": 2776,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:48:33.026631+00:00",
+      "filename": "06_inflammation_table_complete_export.zip",
+      "format": "bundle_zip",
+      "integrity_status": "unknown",
+      "output_id": "a6cb81c4898f41ccbe020f6c11792512",
+      "path": "data/document_extractions/e8d1a09c8b17476fac1c2dbc73d6ff81/06_inflammation_table_complete_export.zip",
+      "run_id": "e8d1a09c8b17476fac1c2dbc73d6ff81",
+      "sha256": "cbe9757fed068e3d52e08bf2bee8cc0ebb2613ce6c8f4cbd7babac72ec617824",
+      "size_bytes": 51103,
+      "verified_at_utc": null
+    }
+  ],
+  "run_id": "e8d1a09c8b17476fac1c2dbc73d6ff81",
+  "source": {
+    "character_count": 263,
+    "entity_count": 7,
+    "file_type": "csv",
+    "image_count": 0,
+    "mime_type": "text/csv",
+    "page_count": 0,
+    "paragraph_count": 0,
+    "region_count": 0,
+    "row_count": 2,
+    "sheet_count": 0,
+    "source_name": "06_inflammation_table.csv",
+    "source_sha256": "185c28ecb35a81026d4ab32f296bb6717379a475495afa55515a0dcadec7147d",
+    "source_size_bytes": 263,
+    "table_count": 1,
+    "warning_count": 0
+  },
+  "structured_fields": {
+    "activity_measurements": [],
+    "document_type": "research_document",
+    "entity_counts": {
+      "assay_endpoint": 1,
+      "disease": 1,
+      "drug_or_compound": 1,
+      "gene_or_protein": 2,
+      "mutation": 1,
+      "organism": 1
+    },
+    "has_limitations": false,
+    "has_methods": false,
+    "has_results": false,
+    "publication_identifiers": [],
+    "sample_sizes": [],
+    "sections": {
+      "unclassified": "record_id,compound,target,disease,mutation,assay,value_nm,organism,status\nDEMO-CORPUS-06,infliximab,TNF,rheumatoid arthritis,G308A,EC50,463,Homo sapiens,demo_only\nDEMO-CORPUS-06-B,infliximab analogue,TNF,rheumatoid arthritis,G308A,EC50,573,Homo sapiens,demo_only"
+    },
+    "sensitive_findings": [],
+    "title": "06_inflammation_table.csv"
+  },
+  "warnings": []
+}

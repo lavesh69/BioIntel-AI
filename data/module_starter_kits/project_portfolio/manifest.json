@@ -1,0 +1,30 @@
+{
+  "module_key": "project_portfolio",
+  "title": "Project Portfolio",
+  "description": "Controlled project bundle for offline project import.",
+  "accepted_formats": "JSON",
+  "offline": true,
+  "synthetic_example": true,
+  "files": [
+    {
+      "name": "blank_project_bundle.json",
+      "role": "blank",
+      "size_bytes": 122
+    },
+    {
+      "name": "filled_project_bundle.json",
+      "role": "example",
+      "size_bytes": 307
+    },
+    {
+      "name": "expected_project_import.json",
+      "role": "output",
+      "size_bytes": 81
+    },
+    {
+      "name": "FORMAT_GUIDE.md",
+      "role": "guide",
+      "size_bytes": 791
+    }
+  ]
+}

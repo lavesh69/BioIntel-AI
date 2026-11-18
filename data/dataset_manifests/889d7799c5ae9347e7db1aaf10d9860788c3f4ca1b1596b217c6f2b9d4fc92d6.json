@@ -1,0 +1,32 @@
+{
+  "activity_type": null,
+  "column_names": [
+    "inhibitor_condition",
+    "substrate_mM",
+    "velocity",
+    "replicate"
+  ],
+  "dataset_name": "Step30 enzyme kinetics replicates",
+  "dataset_sha256": "889d7799c5ae9347e7db1aaf10d9860788c3f4ca1b1596b217c6f2b9d4fc92d6",
+  "dataset_version": "2.0",
+  "demo_only": true,
+  "generated_by": "BioIntel Step 31 registry completion",
+  "metadata": {
+    "demo_only": true,
+    "domain": "biotechnology",
+    "reference_scale": true,
+    "scientific_release_eligible": false,
+    "source_file": "data/bioinformatics_demo/demo_enzyme_kinetics.csv",
+    "step": 30,
+    "synthetic": true
+  },
+  "parent_sha256": null,
+  "primary_file": "data/bioinformatics_demo/demo_enzyme_kinetics.csv",
+  "primary_file_exists": true,
+  "row_count": 72,
+  "schema": "biointel.dataset-manifest.v3.1",
+  "scientific_release_eligible": false,
+  "source_description": "BioIntel Step 30 scaled scientific reference dataset",
+  "synthetic": true,
+  "task_type": "unlabelled"
+}

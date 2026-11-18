@@ -1,0 +1,140 @@
+{
+  "character_count": 236,
+  "entities": [
+    {
+      "confidence": 0.86,
+      "end": 4,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "DEMO",
+      "source": "document",
+      "start": 0,
+      "text": "DEMO"
+    },
+    {
+      "confidence": 0.86,
+      "end": 29,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "EGFR",
+      "source": "document",
+      "start": 25,
+      "text": "EGFR"
+    },
+    {
+      "confidence": 0.72,
+      "end": 50,
+      "entity_type": "drug_or_compound",
+      "metadata": {},
+      "normalized": "gefitinib",
+      "source": "document",
+      "start": 41,
+      "text": "gefitinib"
+    },
+    {
+      "confidence": 0.72,
+      "end": 87,
+      "entity_type": "disease",
+      "metadata": {},
+      "normalized": "cancer",
+      "source": "document",
+      "start": 81,
+      "text": "cancer"
+    },
+    {
+      "confidence": 0.92,
+      "end": 104,
+      "entity_type": "mutation",
+      "metadata": {},
+      "normalized": "L858R",
+      "source": "document",
+      "start": 99,
+      "text": "L858R"
+    },
+    {
+      "confidence": 0.97,
+      "end": 117,
+      "entity_type": "assay_endpoint",
+      "metadata": {},
+      "normalized": "IC50",
+      "source": "document",
+      "start": 113,
+      "text": "IC50"
+    },
+    {
+      "confidence": 0.86,
+      "end": 117,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "IC50",
+      "source": "document",
+      "start": 113,
+      "text": "IC50"
+    },
+    {
+      "confidence": 0.9,
+      "end": 141,
+      "entity_type": "organism",
+      "metadata": {},
+      "normalized": "Homo sapiens",
+      "source": "document",
+      "start": 129,
+      "text": "Homo sapiens"
+    }
+  ],
+  "entity_count": 8,
+  "file_type": "txt",
+  "image_count": 0,
+  "metadata": {
+    "encoding": "utf-8-sig",
+    "scientific_entity_extraction": "rule_based_v1",
+    "sensitive_finding_count": 0,
+    "sensitive_redaction_applied": false
+  },
+  "mime_type": "text/plain",
+  "page_count": 0,
+  "paragraph_count": 0,
+  "region_count": 0,
+  "regions": [],
+  "row_count": 0,
+  "sections": [
+    {
+      "confidence": 1.0,
+      "metadata": {},
+      "name": "Document",
+      "source": "document",
+      "text": "DEMO PROTOCOL 1\r\nTarget: EGFR\r\nCompound: gefitinib\r\nDisease: non-small-cell lung cancer\r\nMutation: L858R\r\nAssay: IC50\r\nOrganism: Homo sapiens\r\nResult: 98 nM\r\nDemonstration/reference content only; not experimental or clinical evidence.\r\n"
+    }
+  ],
+  "sheet_count": 0,
+  "source_name": "01_oncology_protocol.txt",
+  "source_sha256": "f1cde23ab48a295373341ea24a41de93437084af51072a5a3e42d221af46def0",
+  "source_size_bytes": 236,
+  "structured_fields": {
+    "activity_measurements": [],
+    "document_type": "research_document",
+    "entity_counts": {
+      "assay_endpoint": 1,
+      "disease": 1,
+      "drug_or_compound": 1,
+      "gene_or_protein": 3,
+      "mutation": 1,
+      "organism": 1
+    },
+    "has_limitations": false,
+    "has_methods": false,
+    "has_results": false,
+    "publication_identifiers": [],
+    "sample_sizes": [],
+    "sections": {
+      "unclassified": "DEMO PROTOCOL 1\nTarget: EGFR\nCompound: gefitinib\nDisease: non-small-cell lung cancer\nMutation: L858R\nAssay: IC50\nOrganism: Homo sapiens\nResult: 98 nM\nDemonstration/reference content only; not experimental or clinical evidence."
+    },
+    "sensitive_findings": [],
+    "title": "01_oncology_protocol.txt"
+  },
+  "table_count": 0,
+  "tables": [],
+  "text": "DEMO PROTOCOL 1\r\nTarget: EGFR\r\nCompound: gefitinib\r\nDisease: non-small-cell lung cancer\r\nMutation: L858R\r\nAssay: IC50\r\nOrganism: Homo sapiens\r\nResult: 98 nM\r\nDemonstration/reference content only; not experimental or clinical evidence.\r\n",
+  "warning_count": 0,
+  "warnings": []
+}

@@ -1,0 +1,127 @@
+{
+  "duplicate_of_run_id": null,
+  "engine_version": "2.7.0",
+  "outputs": [
+    {
+      "created_at_utc": "2026-07-04T16:48:30.255327+00:00",
+      "filename": "demo_evidence_manifest_extracted.json",
+      "format": "json",
+      "integrity_status": "unknown",
+      "output_id": "ea1151027a964a00b3d9ccb0e1dfa1a2",
+      "path": "data/document_extractions/e0a9570fd9f74e9ba9c73f02ca57224c/demo_evidence_manifest_extracted.json",
+      "run_id": "e0a9570fd9f74e9ba9c73f02ca57224c",
+      "sha256": "b307901fc2088353c828ec4e948d8f5ab1e80db822d7ca8ae56fdeac8d3a76d0",
+      "size_bytes": 8354,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:48:30.258964+00:00",
+      "filename": "demo_evidence_manifest_extracted.xlsx",
+      "format": "xlsx",
+      "integrity_status": "unknown",
+      "output_id": "59856553a2654abc8fa2b2f6dd89aa7a",
+      "path": "data/document_extractions/e0a9570fd9f74e9ba9c73f02ca57224c/demo_evidence_manifest_extracted.xlsx",
+      "run_id": "e0a9570fd9f74e9ba9c73f02ca57224c",
+      "sha256": "9c5ac672c2822b35ac1179715765d3360d71fcc1404f21dfa8479cdbea3ba879",
+      "size_bytes": 10416,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:48:30.261746+00:00",
+      "filename": "demo_evidence_manifest_extracted.docx",
+      "format": "docx",
+      "integrity_status": "unknown",
+      "output_id": "ad755abb198b4b258a1db9e142fdf2e0",
+      "path": "data/document_extractions/e0a9570fd9f74e9ba9c73f02ca57224c/demo_evidence_manifest_extracted.docx",
+      "run_id": "e0a9570fd9f74e9ba9c73f02ca57224c",
+      "sha256": "0dc783fff12973f55eb714b7a2746d916e4a64b931a9b218954a759cc99466d1",
+      "size_bytes": 38507,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:48:30.264332+00:00",
+      "filename": "demo_evidence_manifest_extracted.pdf",
+      "format": "pdf",
+      "integrity_status": "unknown",
+      "output_id": "a4d8d6586c7844f2a53210140aea838d",
+      "path": "data/document_extractions/e0a9570fd9f74e9ba9c73f02ca57224c/demo_evidence_manifest_extracted.pdf",
+      "run_id": "e0a9570fd9f74e9ba9c73f02ca57224c",
+      "sha256": "cdd494105fd50fe21a43a6f4f2ba82e9cd8f976aa012a041e73231bc366be533",
+      "size_bytes": 6079,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:48:30.266624+00:00",
+      "filename": "demo_evidence_manifest_csv_tables.zip",
+      "format": "csv_zip",
+      "integrity_status": "unknown",
+      "output_id": "6eda6a58e4594f779a08083f7761d70f",
+      "path": "data/document_extractions/e0a9570fd9f74e9ba9c73f02ca57224c/demo_evidence_manifest_csv_tables.zip",
+      "run_id": "e0a9570fd9f74e9ba9c73f02ca57224c",
+      "sha256": "33f18a0693a95765a8221dfe7bd430da486249a622b68614bb56635679e2b921",
+      "size_bytes": 4075,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:48:30.269122+00:00",
+      "filename": "demo_evidence_manifest_complete_export.zip",
+      "format": "bundle_zip",
+      "integrity_status": "unknown",
+      "output_id": "e0d05eea161845d3820cf3ba76f7d3a2",
+      "path": "data/document_extractions/e0a9570fd9f74e9ba9c73f02ca57224c/demo_evidence_manifest_complete_export.zip",
+      "run_id": "e0a9570fd9f74e9ba9c73f02ca57224c",
+      "sha256": "ff06e4b936db6a1d4c436370b657c9b835af0234788f5bf7ea5c93382d8c6554",
+      "size_bytes": 55303,
+      "verified_at_utc": null
+    }
+  ],
+  "run_id": "e0a9570fd9f74e9ba9c73f02ca57224c",
+  "source": {
+    "character_count": 1206,
+    "entity_count": 0,
+    "file_type": "json",
+    "image_count": 0,
+    "mime_type": "application/json",
+    "page_count": 0,
+    "paragraph_count": 0,
+    "region_count": 0,
+    "row_count": 32,
+    "sheet_count": 0,
+    "source_name": "demo_evidence_manifest.json",
+    "source_sha256": "b2d0104d7bf549ff12dfe358a37f914ce2f3f50ebd1891ce43d4ec5a8d00da37",
+    "source_size_bytes": 1206,
+    "table_count": 1,
+    "warning_count": 1
+  },
+  "structured_fields": {
+    "activity_measurements": [],
+    "document_type": "research_document",
+    "entity_counts": {},
+    "has_limitations": false,
+    "has_methods": false,
+    "has_results": false,
+    "publication_identifiers": [],
+    "sample_sizes": [],
+    "sections": {
+      "unclassified": "{\n\"dataset_sha256\": \"e8a9279d41554fbabf9d34385e2bb6abf01fe18fe4ebdf5fa9a0c3e40cdfbb1d\",\n\"dataset_name\": \"BioIntel Preloaded Demonstration Evidence\",\n\"demo_only\": true,\n\"readiness\": {\n\"dataset_sha256\": \"e8a9279d41554fbabf9d34385e2bb6abf01fe18fe4ebdf5fa9a0c3e40cdfbb1d\",\n\"rows_total\": 60,\n\"licensed_rows\": 60,\n\"publication_rows\": 60,\n\"accepted_rows\": 36,\n\"rejected_rows\": 6,\n\"source_count\": 4,\n\"mean_quality\": 0.7483,\n\"license_coverage\": 1.0,\n\"publication_coverage\": 1.0,\n\"review_coverage\": 0.6,\n\"release_ready\": false\n},\n\"registry\": {\n\"database\": {\n\"name\": \"Evidence Registry\",\n\"path\": \"reports/evidence.sqlite3\",\n\"exists\": true,\n\"size_bytes\": 126976,\n\"integrity\": \"ok\",\n\"journal_mode\": \"wal\",\n\"table_count\": 6,\n\"index_count\": 6,\n\"row_count\": 135,\n\"last_modified_utc\": \"2026-07-04T16:34:46.447005+00:00\"\n},\n\"counts\": {\n\"evidence_licenses\": 5,\n\"evidence_sources\": 4,\n\"evidence_publications\": 20,\n\"evidence_import_runs\": 4,\n\"dataset_evidence_links\": 60,\n\"evidence_reviews\": 42\n},\n\"generated_at_utc\": \"2026-07-04T16:34:46+00:00\"\n}\n}"
+    },
+    "sensitive_findings": [
+      {
+        "end": 903,
+        "start": 893,
+        "text": "2026-07-04",
+        "type": "phone"
+      },
+      {
+        "end": 1184,
+        "start": 1174,
+        "text": "2026-07-04",
+        "type": "phone"
+      }
+    ],
+    "title": "demo_evidence_manifest.json"
+  },
+  "warnings": [
+    "Detected 2 possible sensitive value(s); review before sharing exports."
+  ]
+}

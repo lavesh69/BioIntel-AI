@@ -1,0 +1,119 @@
+{
+  "duplicate_of_run_id": null,
+  "engine_version": "2.7.0",
+  "outputs": [
+    {
+      "created_at_utc": "2026-07-04T16:48:33.830172+00:00",
+      "filename": "08_kinase_table_extracted.json",
+      "format": "json",
+      "integrity_status": "unknown",
+      "output_id": "8f2c46bca04443588961acddd46d4dfc",
+      "path": "data/document_extractions/676ee216a6484af781f9e4de38a500f0/08_kinase_table_extracted.json",
+      "run_id": "676ee216a6484af781f9e4de38a500f0",
+      "sha256": "e7aa81a9832d89a809c3bfa38e961d3163f7ac393eeed44988277697c5f48ead",
+      "size_bytes": 4554,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:48:33.833700+00:00",
+      "filename": "08_kinase_table_extracted.xlsx",
+      "format": "xlsx",
+      "integrity_status": "unknown",
+      "output_id": "68b327ee6d834c7eb5370826e283746c",
+      "path": "data/document_extractions/676ee216a6484af781f9e4de38a500f0/08_kinase_table_extracted.xlsx",
+      "run_id": "676ee216a6484af781f9e4de38a500f0",
+      "sha256": "ccca5253bf0d6815d84df8e7708d0f0530bf8cc5c57ddb610ce5b63b3253c3ca",
+      "size_bytes": 9496,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:48:33.835722+00:00",
+      "filename": "08_kinase_table_extracted.docx",
+      "format": "docx",
+      "integrity_status": "unknown",
+      "output_id": "0faa86cc8e394fb18496f4062f85228a",
+      "path": "data/document_extractions/676ee216a6484af781f9e4de38a500f0/08_kinase_table_extracted.docx",
+      "run_id": "676ee216a6484af781f9e4de38a500f0",
+      "sha256": "eb8adc34763784a931ca1fe883a58c7214ab90f2f75fd4a2f1f4336a008ec962",
+      "size_bytes": 37840,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:48:33.837866+00:00",
+      "filename": "08_kinase_table_extracted.pdf",
+      "format": "pdf",
+      "integrity_status": "unknown",
+      "output_id": "bc3a57d95fb946da9f9dcb2f27c0dc67",
+      "path": "data/document_extractions/676ee216a6484af781f9e4de38a500f0/08_kinase_table_extracted.pdf",
+      "run_id": "676ee216a6484af781f9e4de38a500f0",
+      "sha256": "449a160f7cdf23f0e8d358fb8d1657508b5f44714d1b7430cef3b1b6d878f0b8",
+      "size_bytes": 4645,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:48:33.839934+00:00",
+      "filename": "08_kinase_table_csv_tables.zip",
+      "format": "csv_zip",
+      "integrity_status": "unknown",
+      "output_id": "539ae198cd36496a8ca6c93acea732f9",
+      "path": "data/document_extractions/676ee216a6484af781f9e4de38a500f0/08_kinase_table_csv_tables.zip",
+      "run_id": "676ee216a6484af781f9e4de38a500f0",
+      "sha256": "88da3024151d7fbf9a68e807b8098b01e6d2eb0c07cc25c0b5a1140ea586714a",
+      "size_bytes": 2736,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:48:33.842064+00:00",
+      "filename": "08_kinase_table_complete_export.zip",
+      "format": "bundle_zip",
+      "integrity_status": "unknown",
+      "output_id": "9fe62a19515e4f0ca41b2517e14cd998",
+      "path": "data/document_extractions/676ee216a6484af781f9e4de38a500f0/08_kinase_table_complete_export.zip",
+      "run_id": "676ee216a6484af781f9e4de38a500f0",
+      "sha256": "f1b18ca0f53dd4d8d4a1bbcc70a383bf6dd1429117018a2e7bb0c4a42e0b4e83",
+      "size_bytes": 50924,
+      "verified_at_utc": null
+    }
+  ],
+  "run_id": "676ee216a6484af781f9e4de38a500f0",
+  "source": {
+    "character_count": 243,
+    "entity_count": 7,
+    "file_type": "csv",
+    "image_count": 0,
+    "mime_type": "text/csv",
+    "page_count": 0,
+    "paragraph_count": 0,
+    "region_count": 0,
+    "row_count": 2,
+    "sheet_count": 0,
+    "source_name": "08_kinase_table.csv",
+    "source_sha256": "73dbd82867656aeb84977ec7862de316a5aa87b243e21011c8ff8319dd28ab12",
+    "source_size_bytes": 243,
+    "table_count": 1,
+    "warning_count": 0
+  },
+  "structured_fields": {
+    "activity_measurements": [],
+    "document_type": "research_document",
+    "entity_counts": {
+      "assay_endpoint": 1,
+      "disease": 1,
+      "drug_or_compound": 1,
+      "gene_or_protein": 2,
+      "mutation": 1,
+      "organism": 1
+    },
+    "has_limitations": false,
+    "has_methods": false,
+    "has_results": false,
+    "publication_identifiers": [],
+    "sample_sizes": [],
+    "sections": {
+      "unclassified": "record_id,compound,target,disease,mutation,assay,value_nm,organism,status\nDEMO-CORPUS-08,vemurafenib,BRAF,melanoma,V600E,IC50,609,Homo sapiens,demo_only\nDEMO-CORPUS-08-B,vemurafenib analogue,BRAF,melanoma,V600E,IC50,719,Homo sapiens,demo_only"
+    },
+    "sensitive_findings": [],
+    "title": "08_kinase_table.csv"
+  },
+  "warnings": []
+}

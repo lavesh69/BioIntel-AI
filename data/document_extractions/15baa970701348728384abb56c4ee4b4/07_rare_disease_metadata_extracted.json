@@ -1,0 +1,197 @@
+{
+  "character_count": 508,
+  "entities": [
+    {
+      "confidence": 0.97,
+      "end": 48,
+      "entity_type": "assay_endpoint",
+      "metadata": {},
+      "normalized": "EC50",
+      "source": "document",
+      "start": 44,
+      "text": "EC50"
+    },
+    {
+      "confidence": 0.86,
+      "end": 48,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "EC50",
+      "source": "document",
+      "start": 44,
+      "text": "EC50"
+    },
+    {
+      "confidence": 0.72,
+      "end": 81,
+      "entity_type": "disease",
+      "metadata": {},
+      "normalized": "fibrosis",
+      "source": "document",
+      "start": 73,
+      "text": "fibrosis"
+    },
+    {
+      "confidence": 0.86,
+      "end": 174,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "CFTR",
+      "source": "document",
+      "start": 170,
+      "text": "CFTR"
+    },
+    {
+      "confidence": 0.92,
+      "end": 198,
+      "entity_type": "mutation",
+      "metadata": {},
+      "normalized": "G551D",
+      "source": "document",
+      "start": 193,
+      "text": "G551D"
+    },
+    {
+      "confidence": 0.9,
+      "end": 322,
+      "entity_type": "organism",
+      "metadata": {},
+      "normalized": "Homo sapiens",
+      "source": "document",
+      "start": 310,
+      "text": "Homo sapiens"
+    }
+  ],
+  "entity_count": 6,
+  "file_type": "json",
+  "image_count": 0,
+  "metadata": {
+    "encoding": "utf-8-sig",
+    "root_type": "dict",
+    "scientific_entity_extraction": "rule_based_v1",
+    "sensitive_finding_count": 0,
+    "sensitive_redaction_applied": false
+  },
+  "mime_type": "application/json",
+  "page_count": 0,
+  "paragraph_count": 0,
+  "region_count": 0,
+  "regions": [],
+  "row_count": 15,
+  "sections": [
+    {
+      "confidence": 1.0,
+      "metadata": {},
+      "name": "Document",
+      "source": "document",
+      "text": "{\r\n  \"activity_value_nm\": 536,\r\n  \"assay\": \"EC50\",\r\n  \"disease\": \"cystic fibrosis\",\r\n  \"document_id\": \"DEMO-CORPUS-07\",\r\n  \"doi\": \"\",\r\n  \"drug\": \"ivacaftor\",\r\n  \"gene\": \"CFTR\",\r\n  \"mutation\": \"G551D\",\r\n  \"notice\": \"Demonstration/reference content only; not experimental or clinical evidence.\",\r\n  \"organism\": \"Homo sapiens\",\r\n  \"pmid\": \"\",\r\n  \"scientific_release_eligible\": false,\r\n  \"synthetic_doi_label\": \"SYN-DOI-NOT-REAL-0007\",\r\n  \"synthetic_reference_id\": \"SYN-PAPER-0007\",\r\n  \"topic\": \"rare_disease\"\r\n}"
+    }
+  ],
+  "sheet_count": 0,
+  "source_name": "07_rare_disease_metadata.json",
+  "source_sha256": "5ffb61da8b538143c9296ecafcc514524d1a7ac6b61c8dbca414c33c96a9b303",
+  "source_size_bytes": 508,
+  "structured_fields": {
+    "activity_measurements": [],
+    "document_type": "research_document",
+    "entity_counts": {
+      "assay_endpoint": 1,
+      "disease": 1,
+      "gene_or_protein": 2,
+      "mutation": 1,
+      "organism": 1
+    },
+    "has_limitations": false,
+    "has_methods": false,
+    "has_results": false,
+    "publication_identifiers": [],
+    "sample_sizes": [],
+    "sections": {
+      "unclassified": "{\n\"activity_value_nm\": 536,\n\"assay\": \"EC50\",\n\"disease\": \"cystic fibrosis\",\n\"document_id\": \"DEMO-CORPUS-07\",\n\"doi\": \"\",\n\"drug\": \"ivacaftor\",\n\"gene\": \"CFTR\",\n\"mutation\": \"G551D\",\n\"notice\": \"Demonstration/reference content only; not experimental or clinical evidence.\",\n\"organism\": \"Homo sapiens\",\n\"pmid\": \"\",\n\"scientific_release_eligible\": false,\n\"synthetic_doi_label\": \"SYN-DOI-NOT-REAL-0007\",\n\"synthetic_reference_id\": \"SYN-PAPER-0007\",\n\"topic\": \"rare_disease\"\n}"
+    },
+    "sensitive_findings": [],
+    "title": "07_rare_disease_metadata.json"
+  },
+  "table_count": 1,
+  "tables": [
+    {
+      "column_count": 2,
+      "columns": [
+        "Path",
+        "Value"
+      ],
+      "confidence": 1.0,
+      "metadata": {
+        "encoding": "utf-8-sig"
+      },
+      "name": "Structured Data",
+      "row_count": 15,
+      "rows": [
+        [
+          "activity_value_nm",
+          536
+        ],
+        [
+          "assay",
+          "EC50"
+        ],
+        [
+          "disease",
+          "cystic fibrosis"
+        ],
+        [
+          "document_id",
+          "DEMO-CORPUS-07"
+        ],
+        [
+          "doi",
+          ""
+        ],
+        [
+          "drug",
+          "ivacaftor"
+        ],
+        [
+          "gene",
+          "CFTR"
+        ],
+        [
+          "mutation",
+          "G551D"
+        ],
+        [
+          "notice",
+          "Demonstration/reference content only; not experimental or clinical evidence."
+        ],
+        [
+          "organism",
+          "Homo sapiens"
+        ],
+        [
+          "pmid",
+          ""
+        ],
+        [
+          "scientific_release_eligible",
+          false
+        ],
+        [
+          "synthetic_doi_label",
+          "SYN-DOI-NOT-REAL-0007"
+        ],
+        [
+          "synthetic_reference_id",
+          "SYN-PAPER-0007"
+        ],
+        [
+          "topic",
+          "rare_disease"
+        ]
+      ],
+      "source": "document"
+    }
+  ],
+  "text": "{\r\n  \"activity_value_nm\": 536,\r\n  \"assay\": \"EC50\",\r\n  \"disease\": \"cystic fibrosis\",\r\n  \"document_id\": \"DEMO-CORPUS-07\",\r\n  \"doi\": \"\",\r\n  \"drug\": \"ivacaftor\",\r\n  \"gene\": \"CFTR\",\r\n  \"mutation\": \"G551D\",\r\n  \"notice\": \"Demonstration/reference content only; not experimental or clinical evidence.\",\r\n  \"organism\": \"Homo sapiens\",\r\n  \"pmid\": \"\",\r\n  \"scientific_release_eligible\": false,\r\n  \"synthetic_doi_label\": \"SYN-DOI-NOT-REAL-0007\",\r\n  \"synthetic_reference_id\": \"SYN-PAPER-0007\",\r\n  \"topic\": \"rare_disease\"\r\n}",
+  "warning_count": 0,
+  "warnings": []
+}

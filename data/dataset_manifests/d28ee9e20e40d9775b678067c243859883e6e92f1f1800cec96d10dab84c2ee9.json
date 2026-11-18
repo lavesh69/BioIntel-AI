@@ -1,0 +1,33 @@
+{
+  "activity_type": null,
+  "column_names": [
+    "gene",
+    "chromosome",
+    "biotype",
+    "pathway",
+    "description"
+  ],
+  "dataset_name": "Step30 gene annotation table",
+  "dataset_sha256": "d28ee9e20e40d9775b678067c243859883e6e92f1f1800cec96d10dab84c2ee9",
+  "dataset_version": "2.0",
+  "demo_only": true,
+  "generated_by": "BioIntel Step 31 registry completion",
+  "metadata": {
+    "demo_only": true,
+    "domain": "genomics",
+    "reference_scale": true,
+    "scientific_release_eligible": false,
+    "source_file": "data/bioinformatics_demo/demo_gene_annotation.csv",
+    "step": 30,
+    "synthetic": true
+  },
+  "parent_sha256": null,
+  "primary_file": "data/bioinformatics_demo/demo_gene_annotation.csv",
+  "primary_file_exists": true,
+  "row_count": 5000,
+  "schema": "biointel.dataset-manifest.v3.1",
+  "scientific_release_eligible": false,
+  "source_description": "BioIntel Step 30 scaled scientific reference dataset",
+  "synthetic": true,
+  "task_type": "unlabelled"
+}

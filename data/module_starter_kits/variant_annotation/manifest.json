@@ -1,0 +1,40 @@
+{
+  "module_key": "variant_annotation",
+  "title": "Variant & Annotation Workbench",
+  "description": "Matching VCF, reference FASTA and GFF3 examples.",
+  "accepted_formats": "VCF, VCF.GZ, FASTA, GFF3 or GTF",
+  "offline": true,
+  "synthetic_example": true,
+  "files": [
+    {
+      "name": "blank_variants.vcf",
+      "role": "blank",
+      "size_bytes": 60
+    },
+    {
+      "name": "filled_variants.vcf",
+      "role": "example",
+      "size_bytes": 127
+    },
+    {
+      "name": "filled_reference.fasta",
+      "role": "example",
+      "size_bytes": 158
+    },
+    {
+      "name": "filled_annotations.gff3",
+      "role": "example",
+      "size_bytes": 123
+    },
+    {
+      "name": "expected_variant_annotations.csv",
+      "role": "output",
+      "size_bytes": 89
+    },
+    {
+      "name": "FORMAT_GUIDE.md",
+      "role": "guide",
+      "size_bytes": 857
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "character_count": 415,
+  "entities": [],
+  "entity_count": 0,
+  "file_type": "json",
+  "image_count": 0,
+  "metadata": {
+    "encoding": "utf-8-sig",
+    "root_type": "dict",
+    "scientific_entity_extraction": "rule_based_v1",
+    "sensitive_finding_count": 0,
+    "sensitive_redaction_applied": false
+  },
+  "mime_type": "application/json",
+  "page_count": 0,
+  "paragraph_count": 0,
+  "region_count": 0,
+  "regions": [],
+  "row_count": 9,
+  "sections": [
+    {
+      "confidence": 1.0,
+      "metadata": {},
+      "name": "Document",
+      "source": "document",
+      "text": "{\n  \"demo_only\": true,\n  \"scientific_release_eligible\": false,\n  \"dataset_sha256\": \"d041ebfc9735351ad693af27fbeba15951bf4c2b00d968749e7f8d80a6404407\",\n  \"counts\": {\n    \"evidence_sources\": 4,\n    \"evidence_publications\": 100,\n    \"dataset_evidence_links\": 660,\n    \"evidence_reviews\": 462,\n    \"evidence_import_runs\": 4\n  },\n  \"notice\": \"Preloaded demonstration/reference records only; not experimental evidence.\"\n}"
+    }
+  ],
+  "sheet_count": 0,
+  "source_name": "demo_evidence_manifest.json",
+  "source_sha256": "e689faf3fec710dd6c372519a4a5affdb0379a8c045e54eb6909c6289e94a4f7",
+  "source_size_bytes": 415,
+  "structured_fields": {
+    "activity_measurements": [],
+    "document_type": "research_document",
+    "entity_counts": {},
+    "has_limitations": false,
+    "has_methods": false,
+    "has_results": false,
+    "publication_identifiers": [],
+    "sample_sizes": [],
+    "sections": {
+      "unclassified": "{\n\"demo_only\": true,\n\"scientific_release_eligible\": false,\n\"dataset_sha256\": \"d041ebfc9735351ad693af27fbeba15951bf4c2b00d968749e7f8d80a6404407\",\n\"counts\": {\n\"evidence_sources\": 4,\n\"evidence_publications\": 100,\n\"dataset_evidence_links\": 660,\n\"evidence_reviews\": 462,\n\"evidence_import_runs\": 4\n},\n\"notice\": \"Preloaded demonstration/reference records only; not experimental evidence.\"\n}"
+    },
+    "sensitive_findings": [],
+    "title": "demo_evidence_manifest.json"
+  },
+  "table_count": 1,
+  "tables": [
+    {
+      "column_count": 2,
+      "columns": [
+        "Path",
+        "Value"
+      ],
+      "confidence": 1.0,
+      "metadata": {
+        "encoding": "utf-8-sig"
+      },
+      "name": "Structured Data",
+      "row_count": 9,
+      "rows": [
+        [
+          "demo_only",
+          true
+        ],
+        [
+          "scientific_release_eligible",
+          false
+        ],
+        [
+          "dataset_sha256",
+          "d041ebfc9735351ad693af27fbeba15951bf4c2b00d968749e7f8d80a6404407"
+        ],
+        [
+          "counts.evidence_sources",
+          4
+        ],
+        [
+          "counts.evidence_publications",
+          100
+        ],
+        [
+          "counts.dataset_evidence_links",
+          660
+        ],
+        [
+          "counts.evidence_reviews",
+          462
+        ],
+        [
+          "counts.evidence_import_runs",
+          4
+        ],
+        [
+          "notice",
+          "Preloaded demonstration/reference records only; not experimental evidence."
+        ]
+      ],
+      "source": "document"
+    }
+  ],
+  "text": "{\n  \"demo_only\": true,\n  \"scientific_release_eligible\": false,\n  \"dataset_sha256\": \"d041ebfc9735351ad693af27fbeba15951bf4c2b00d968749e7f8d80a6404407\",\n  \"counts\": {\n    \"evidence_sources\": 4,\n    \"evidence_publications\": 100,\n    \"dataset_evidence_links\": 660,\n    \"evidence_reviews\": 462,\n    \"evidence_import_runs\": 4\n  },\n  \"notice\": \"Preloaded demonstration/reference records only; not experimental evidence.\"\n}",
+  "warning_count": 0,
+  "warnings": []
+}

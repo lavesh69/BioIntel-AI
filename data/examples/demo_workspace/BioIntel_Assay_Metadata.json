@@ -1,0 +1,27 @@
+{
+  "document_id": "DEMO-JSON-001",
+  "title": "BioIntel assay metadata",
+  "classification": "demonstration-only",
+  "targets": [
+    "PTGS2",
+    "ADORA2A",
+    "SIRT1",
+    "PIK3CA"
+  ],
+  "organism": "Homo sapiens",
+  "measurements": [
+    {
+      "compound": "Aspirin reference",
+      "endpoint": "IC50",
+      "value": 125,
+      "unit": "nM"
+    },
+    {
+      "compound": "Adenosine reference",
+      "endpoint": "Ki",
+      "value": 32,
+      "unit": "nM"
+    }
+  ],
+  "scientific_release_eligible": false
+}

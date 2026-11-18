@@ -1,0 +1,118 @@
+{
+  "duplicate_of_run_id": null,
+  "engine_version": "2.7.0",
+  "outputs": [
+    {
+      "created_at_utc": "2026-07-04T16:48:32.602124+00:00",
+      "filename": "05_metabolism_table_extracted.json",
+      "format": "json",
+      "integrity_status": "unknown",
+      "output_id": "aec84347048a49eba43df2347285ea28",
+      "path": "data/document_extractions/07ce708ce4a14e289ad1607591530ae3/05_metabolism_table_extracted.json",
+      "run_id": "07ce708ce4a14e289ad1607591530ae3",
+      "sha256": "0088d6d3e4ea053f87ab0e90a24e775b2e2db49d7922200140b5a09c2d596086",
+      "size_bytes": 4374,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:48:32.605247+00:00",
+      "filename": "05_metabolism_table_extracted.xlsx",
+      "format": "xlsx",
+      "integrity_status": "unknown",
+      "output_id": "e2fd7b9a656e47c9a3392e41f6d07a2a",
+      "path": "data/document_extractions/07ce708ce4a14e289ad1607591530ae3/05_metabolism_table_extracted.xlsx",
+      "run_id": "07ce708ce4a14e289ad1607591530ae3",
+      "sha256": "cd0efc3f9b5abb7bf35c51f943cdf40d5f8d81b687bbf51733850e253159125b",
+      "size_bytes": 9467,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:48:32.607583+00:00",
+      "filename": "05_metabolism_table_extracted.docx",
+      "format": "docx",
+      "integrity_status": "unknown",
+      "output_id": "cd74f0517dbb47bebb7703f7f9f3bb10",
+      "path": "data/document_extractions/07ce708ce4a14e289ad1607591530ae3/05_metabolism_table_extracted.docx",
+      "run_id": "07ce708ce4a14e289ad1607591530ae3",
+      "sha256": "b9fb948248cdf60e75c58032ce73598eb5b7ce94c4f3aad98b0814d657c50c6b",
+      "size_bytes": 37827,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:48:32.609806+00:00",
+      "filename": "05_metabolism_table_extracted.pdf",
+      "format": "pdf",
+      "integrity_status": "unknown",
+      "output_id": "0b8bd743df77404cadf2b268382e4d98",
+      "path": "data/document_extractions/07ce708ce4a14e289ad1607591530ae3/05_metabolism_table_extracted.pdf",
+      "run_id": "07ce708ce4a14e289ad1607591530ae3",
+      "sha256": "3571c68ca9a77c60654fee116cece808343eee4e5de8d58af8f2d18b42253515",
+      "size_bytes": 4615,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:48:32.611805+00:00",
+      "filename": "05_metabolism_table_csv_tables.zip",
+      "format": "csv_zip",
+      "integrity_status": "unknown",
+      "output_id": "535b295e2f0148f3b536d94c4d18a0a8",
+      "path": "data/document_extractions/07ce708ce4a14e289ad1607591530ae3/05_metabolism_table_csv_tables.zip",
+      "run_id": "07ce708ce4a14e289ad1607591530ae3",
+      "sha256": "fd7dda0ed0b5b60043036e76ba7377e453451d23030f4c5274f10abd298e115e",
+      "size_bytes": 2702,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:48:32.613920+00:00",
+      "filename": "05_metabolism_table_complete_export.zip",
+      "format": "bundle_zip",
+      "integrity_status": "unknown",
+      "output_id": "355b4841e8b3427b8387c2ed2747c621",
+      "path": "data/document_extractions/07ce708ce4a14e289ad1607591530ae3/05_metabolism_table_complete_export.zip",
+      "run_id": "07ce708ce4a14e289ad1607591530ae3",
+      "sha256": "edf98bc4f822d991c1db219792c74b63995567acd6b0d367127dfeaa72fbf43e",
+      "size_bytes": 50821,
+      "verified_at_utc": null
+    }
+  ],
+  "run_id": "07ce708ce4a14e289ad1607591530ae3",
+  "source": {
+    "character_count": 261,
+    "entity_count": 6,
+    "file_type": "csv",
+    "image_count": 0,
+    "mime_type": "text/csv",
+    "page_count": 0,
+    "paragraph_count": 0,
+    "region_count": 0,
+    "row_count": 2,
+    "sheet_count": 0,
+    "source_name": "05_metabolism_table.csv",
+    "source_sha256": "16b1a5823c2f3547b5673368e61aafd3a5f779086ce9aad62f2e23dfd9bad409",
+    "source_size_bytes": 261,
+    "table_count": 1,
+    "warning_count": 0
+  },
+  "structured_fields": {
+    "activity_measurements": [],
+    "document_type": "research_document",
+    "entity_counts": {
+      "assay_endpoint": 1,
+      "disease": 1,
+      "gene_or_protein": 2,
+      "mutation": 1,
+      "organism": 1
+    },
+    "has_limitations": false,
+    "has_methods": false,
+    "has_results": false,
+    "publication_identifiers": [],
+    "sample_sizes": [],
+    "sections": {
+      "unclassified": "record_id,compound,target,disease,mutation,assay,value_nm,organism,status\nDEMO-CORPUS-05,rosiglitazone,PPARG,type 2 diabetes,P12A,EC50,390,Homo sapiens,demo_only\nDEMO-CORPUS-05-B,rosiglitazone analogue,PPARG,type 2 diabetes,P12A,EC50,500,Homo sapiens,demo_only"
+    },
+    "sensitive_findings": [],
+    "title": "05_metabolism_table.csv"
+  },
+  "warnings": []
+}

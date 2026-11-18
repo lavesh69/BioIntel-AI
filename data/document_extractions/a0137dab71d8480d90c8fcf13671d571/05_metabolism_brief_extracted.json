@@ -1,0 +1,122 @@
+{
+  "character_count": 634,
+  "entities": [
+    {
+      "confidence": 0.86,
+      "end": 139,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "PPARG",
+      "source": "document",
+      "start": 134,
+      "text": "PPARG"
+    },
+    {
+      "confidence": 0.72,
+      "end": 173,
+      "entity_type": "disease",
+      "metadata": {},
+      "normalized": "diabetes",
+      "source": "document",
+      "start": 165,
+      "text": "diabetes"
+    },
+    {
+      "confidence": 0.92,
+      "end": 203,
+      "entity_type": "mutation",
+      "metadata": {},
+      "normalized": "P12A",
+      "source": "document",
+      "start": 199,
+      "text": "P12A"
+    },
+    {
+      "confidence": 0.97,
+      "end": 526,
+      "entity_type": "assay_endpoint",
+      "metadata": {},
+      "normalized": "EC50",
+      "source": "document",
+      "start": 522,
+      "text": "EC50"
+    },
+    {
+      "confidence": 0.86,
+      "end": 526,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "EC50",
+      "source": "document",
+      "start": 522,
+      "text": "EC50"
+    },
+    {
+      "confidence": 0.9,
+      "end": 273,
+      "entity_type": "organism",
+      "metadata": {},
+      "normalized": "Homo sapiens",
+      "source": "document",
+      "start": 261,
+      "text": "Homo sapiens"
+    }
+  ],
+  "entity_count": 6,
+  "file_type": "md",
+  "image_count": 0,
+  "metadata": {
+    "encoding": "utf-8-sig",
+    "scientific_entity_extraction": "rule_based_v1",
+    "sensitive_finding_count": 0,
+    "sensitive_redaction_applied": false
+  },
+  "mime_type": "text/markdown",
+  "page_count": 0,
+  "paragraph_count": 0,
+  "region_count": 0,
+  "regions": [],
+  "row_count": 0,
+  "sections": [
+    {
+      "confidence": 1.0,
+      "metadata": {},
+      "name": "Document",
+      "source": "document",
+      "text": "# Metabolism Demonstration Brief\r\n\r\n## Summary\r\nBioIntel demonstration record 5. The compound rosiglitazone was discussed with target PPARG in the context of type 2 diabetes. The example mutation is P12A. A demonstration EC50 measurement of 390 nM is shown for Homo sapiens. Synthetic reference labels: SYN-PAPER-0005 and SYN-DOI-NOT-REAL-0005. This content exists only to populate document search, extraction, entity recognition, history, comparison and evidence-bridge screens.\r\n\r\n## Methods\r\nSynthetic reference table; EC50 endpoint.\r\n\r\n## Limitations\r\nDemonstration/reference content only; not experimental or clinical evidence.\r\n"
+    }
+  ],
+  "sheet_count": 0,
+  "source_name": "05_metabolism_brief.md",
+  "source_sha256": "d5faab8ee938c5ce33adcec048efa525c74cee6eadab6c80cf2efc8db2889fd8",
+  "source_size_bytes": 634,
+  "structured_fields": {
+    "activity_measurements": [],
+    "document_type": "research_document",
+    "entity_counts": {
+      "assay_endpoint": 1,
+      "disease": 1,
+      "gene_or_protein": 2,
+      "mutation": 1,
+      "organism": 1
+    },
+    "has_limitations": true,
+    "has_methods": true,
+    "has_results": false,
+    "publication_identifiers": [],
+    "sample_sizes": [],
+    "sections": {
+      "abstract": "BioIntel demonstration record 5. The compound rosiglitazone was discussed with target PPARG in the context of type 2 diabetes. The example mutation is P12A. A demonstration EC50 measurement of 390 nM is shown for Homo sapiens. Synthetic reference labels: SYN-PAPER-0005 and SYN-DOI-NOT-REAL-0005. This content exists only to populate document search, extraction, entity recognition, history, comparison and evidence-bridge screens.",
+      "limitations": "Demonstration/reference content only; not experimental or clinical evidence.",
+      "methods": "Synthetic reference table; EC50 endpoint.",
+      "unclassified": "# Metabolism Demonstration Brief"
+    },
+    "sensitive_findings": [],
+    "title": "05_metabolism_brief.md"
+  },
+  "table_count": 0,
+  "tables": [],
+  "text": "# Metabolism Demonstration Brief\r\n\r\n## Summary\r\nBioIntel demonstration record 5. The compound rosiglitazone was discussed with target PPARG in the context of type 2 diabetes. The example mutation is P12A. A demonstration EC50 measurement of 390 nM is shown for Homo sapiens. Synthetic reference labels: SYN-PAPER-0005 and SYN-DOI-NOT-REAL-0005. This content exists only to populate document search, extraction, entity recognition, history, comparison and evidence-bridge screens.\r\n\r\n## Methods\r\nSynthetic reference table; EC50 endpoint.\r\n\r\n## Limitations\r\nDemonstration/reference content only; not experimental or clinical evidence.\r\n",
+  "warning_count": 0,
+  "warnings": []
+}

@@ -1,0 +1,30 @@
+{
+  "module_key": "external_validation",
+  "title": "External Validation & Drift",
+  "description": "Independent labelled records for external validation and drift review.",
+  "accepted_formats": "CSV",
+  "offline": true,
+  "synthetic_example": true,
+  "files": [
+    {
+      "name": "blank_external_validation.csv",
+      "role": "blank",
+      "size_bytes": 75
+    },
+    {
+      "name": "filled_external_validation.csv",
+      "role": "example",
+      "size_bytes": 379
+    },
+    {
+      "name": "expected_validation_summary.csv",
+      "role": "output",
+      "size_bytes": 103
+    },
+    {
+      "name": "FORMAT_GUIDE.md",
+      "role": "guide",
+      "size_bytes": 802
+    }
+  ]
+}

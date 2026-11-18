@@ -1,0 +1,30 @@
+{
+  "module_key": "provider_integration_center",
+  "title": "Provider Integration Center",
+  "description": "Safe provider configuration without secrets.",
+  "accepted_formats": "JSON",
+  "offline": true,
+  "synthetic_example": true,
+  "files": [
+    {
+      "name": "blank_provider_profile.json",
+      "role": "blank",
+      "size_bytes": 166
+    },
+    {
+      "name": "filled_provider_profile_example.json",
+      "role": "example",
+      "size_bytes": 269
+    },
+    {
+      "name": "expected_connection_test.json",
+      "role": "output",
+      "size_bytes": 89
+    },
+    {
+      "name": "FORMAT_GUIDE.md",
+      "role": "guide",
+      "size_bytes": 849
+    }
+  ]
+}

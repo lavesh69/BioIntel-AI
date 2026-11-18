@@ -1,0 +1,466 @@
+[
+  {
+    "id": "inst_iisc_bangalore",
+    "name": "Indian Institute of Science (IISc), Bangalore",
+    "type": "Institute of National Importance",
+    "state": "Karnataka",
+    "city": "Bangalore",
+    "website": "https://iisc.ac.in"
+  },
+  {
+    "id": "inst_iit_delhi",
+    "name": "Indian Institute of Technology (IIT), Delhi",
+    "type": "Institute of National Importance",
+    "state": "Delhi",
+    "city": "New Delhi",
+    "website": "https://iitd.ac.in"
+  },
+  {
+    "id": "inst_iit_bombay",
+    "name": "Indian Institute of Technology (IIT), Bombay",
+    "type": "Institute of National Importance",
+    "state": "Maharashtra",
+    "city": "Mumbai",
+    "website": "https://iitb.ac.in"
+  },
+  {
+    "id": "inst_iit_kharagpur",
+    "name": "Indian Institute of Technology (IIT), Kharagpur",
+    "type": "Institute of National Importance",
+    "state": "West Bengal",
+    "city": "Kharagpur",
+    "website": "https://iitkgp.ac.in"
+  },
+  {
+    "id": "inst_iit_madras",
+    "name": "Indian Institute of Technology (IIT), Madras",
+    "type": "Institute of National Importance",
+    "state": "Tamil Nadu",
+    "city": "Chennai",
+    "website": "https://iitm.ac.in"
+  },
+  {
+    "id": "inst_iit_kanpur",
+    "name": "Indian Institute of Technology (IIT), Kanpur",
+    "type": "Institute of National Importance",
+    "state": "Uttar Pradesh",
+    "city": "Kanpur",
+    "website": "https://iitk.ac.in"
+  },
+  {
+    "id": "inst_iit_roorkee",
+    "name": "Indian Institute of Technology (IIT), Roorkee",
+    "type": "Institute of National Importance",
+    "state": "Uttarakhand",
+    "city": "Roorkee",
+    "website": "https://iitr.ac.in"
+  },
+  {
+    "id": "inst_iit_guwahati",
+    "name": "Indian Institute of Technology (IIT), Guwahati",
+    "type": "Institute of National Importance",
+    "state": "Assam",
+    "city": "Guwahati",
+    "website": "https://iitg.ac.in"
+  },
+  {
+    "id": "inst_aiims_delhi",
+    "name": "All India Institute of Medical Sciences (AIIMS), New Delhi",
+    "type": "Institute of National Importance",
+    "state": "Delhi",
+    "city": "New Delhi",
+    "website": "https://aiims.edu"
+  },
+  {
+    "id": "inst_iiser_pune",
+    "name": "Indian Institute of Science Education and Research (IISER), Pune",
+    "type": "Institute of National Importance",
+    "state": "Maharashtra",
+    "city": "Pune",
+    "website": "https://iiserpune.ac.in"
+  },
+  {
+    "id": "inst_iiser_kolkata",
+    "name": "Indian Institute of Science Education and Research (IISER), Kolkata",
+    "type": "Institute of National Importance",
+    "state": "West Bengal",
+    "city": "Kolkata",
+    "website": "https://iiserkol.ac.in"
+  },
+  {
+    "id": "inst_iiser_mohali",
+    "name": "Indian Institute of Science Education and Research (IISER), Mohali",
+    "type": "Institute of National Importance",
+    "state": "Punjab",
+    "city": "Mohali",
+    "website": "https://iisermohali.ac.in"
+  },
+  {
+    "id": "inst_du",
+    "name": "University of Delhi (DU)",
+    "type": "Central University",
+    "state": "Delhi",
+    "city": "New Delhi",
+    "website": "https://du.ac.in"
+  },
+  {
+    "id": "inst_bhu",
+    "name": "Banaras Hindu University (BHU)",
+    "type": "Central University",
+    "state": "Uttar Pradesh",
+    "city": "Varanasi",
+    "website": "https://bhu.ac.in"
+  },
+  {
+    "id": "inst_jnu",
+    "name": "Jawaharlal Nehru University (JNU)",
+    "type": "Central University",
+    "state": "Delhi",
+    "city": "New Delhi",
+    "website": "https://jnu.ac.in"
+  },
+  {
+    "id": "inst_uoh",
+    "name": "University of Hyderabad (UoH)",
+    "type": "Central University",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "website": "https://uoh.ac.in"
+  },
+  {
+    "id": "inst_amu",
+    "name": "Aligarh Muslim University (AMU)",
+    "type": "Central University",
+    "state": "Uttar Pradesh",
+    "city": "Aligarh",
+    "website": "https://amu.ac.in"
+  },
+  {
+    "id": "inst_jmi",
+    "name": "Jamia Millia Islamia (JMI)",
+    "type": "Central University",
+    "state": "Delhi",
+    "city": "New Delhi",
+    "website": "https://jmi.ac.in"
+  },
+  {
+    "id": "inst_visva_bharati",
+    "name": "Visva-Bharati University",
+    "type": "Central University",
+    "state": "West Bengal",
+    "city": "Santiniketan",
+    "website": "https://visvabharati.ac.in"
+  },
+  {
+    "id": "inst_tezpur",
+    "name": "Tezpur University",
+    "type": "Central University",
+    "state": "Assam",
+    "city": "Tezpur",
+    "website": "https://tezu.ernet.in"
+  },
+  {
+    "id": "inst_pune_univ",
+    "name": "Savitribai Phule Pune University",
+    "type": "State University",
+    "state": "Maharashtra",
+    "city": "Pune",
+    "website": "https://unipune.ac.in"
+  },
+  {
+    "id": "inst_mumbai_univ",
+    "name": "University of Mumbai",
+    "type": "State University",
+    "state": "Maharashtra",
+    "city": "Mumbai",
+    "website": "https://mu.ac.in"
+  },
+  {
+    "id": "inst_anna_univ",
+    "name": "Anna University",
+    "type": "State University",
+    "state": "Tamil Nadu",
+    "city": "Chennai",
+    "website": "https://annauniv.edu"
+  },
+  {
+    "id": "inst_calcutta_univ",
+    "name": "University of Calcutta",
+    "type": "State University",
+    "state": "West Bengal",
+    "city": "Kolkata",
+    "website": "https://caluniv.ac.in"
+  },
+  {
+    "id": "inst_panjab_univ",
+    "name": "Panjab University",
+    "type": "State University",
+    "state": "Punjab",
+    "city": "Chandigarh",
+    "website": "https://puchd.ac.in"
+  },
+  {
+    "id": "inst_vit_vellore",
+    "name": "Vellore Institute of Technology (VIT)",
+    "type": "Deemed University",
+    "state": "Tamil Nadu",
+    "city": "Vellore",
+    "website": "https://vit.ac.in"
+  },
+  {
+    "id": "inst_manipal",
+    "name": "Manipal Academy of Higher Education (MAHE)",
+    "type": "Deemed University",
+    "state": "Karnataka",
+    "city": "Manipal",
+    "website": "https://manipal.edu"
+  },
+  {
+    "id": "inst_bits_pilani",
+    "name": "Birla Institute of Technology and Science (BITS), Pilani",
+    "type": "Deemed University",
+    "state": "Rajasthan",
+    "city": "Pilani",
+    "website": "https://bits-pilani.ac.in"
+  },
+  {
+    "id": "inst_ncbs",
+    "name": "National Centre for Biological Sciences (NCBS-TIFR)",
+    "type": "Research Autonomous Institute",
+    "state": "Karnataka",
+    "city": "Bangalore",
+    "website": "https://ncbs.res.in"
+  },
+  {
+    "id": "inst_ccmb",
+    "name": "CSIR - Centre for Cellular and Molecular Biology (CCMB)",
+    "type": "CSIR National Laboratory",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "website": "https://ccmb.res.in"
+  },
+  {
+    "id": "inst_igib",
+    "name": "CSIR - Institute of Genomics and Integrative Biology (IGIB)",
+    "type": "CSIR National Laboratory",
+    "state": "Delhi",
+    "city": "New Delhi",
+    "website": "https://igib.res.in"
+  },
+  {
+    "id": "inst_cdri",
+    "name": "CSIR - Central Drug Research Institute (CDRI)",
+    "type": "CSIR National Laboratory",
+    "state": "Uttar Pradesh",
+    "city": "Lucknow",
+    "website": "https://cdri.res.in"
+  },
+  {
+    "id": "inst_nibmg",
+    "name": "National Institute of Biomedical Genomics (NIBMG)",
+    "type": "DBT Autonomous Institute",
+    "state": "West Bengal",
+    "city": "Kalyani",
+    "website": "https://nibmg.ac.in"
+  },
+  {
+    "id": "inst_nipgr",
+    "name": "National Institute of Plant Genome Research (NIPGR)",
+    "type": "DBT Autonomous Institute",
+    "state": "Delhi",
+    "city": "New Delhi",
+    "website": "https://nipgr.ac.in"
+  },
+  {
+    "id": "inst_thsti",
+    "name": "Translational Health Science and Technology Institute (THSTI)",
+    "type": "DBT Autonomous Institute",
+    "state": "Haryana",
+    "city": "Faridabad",
+    "website": "https://thsti.res.in"
+  },
+  {
+    "id": "inst_state_univ_1",
+    "name": "Andhra University / Sri Venkateswara University",
+    "type": "State / Public University",
+    "state": "Andhra Pradesh",
+    "city": "Andhra Pradesh Region",
+    "website": "https://ugc.ac.in"
+  },
+  {
+    "id": "inst_state_univ_2",
+    "name": "Rajiv Gandhi University, Itanagar",
+    "type": "State / Public University",
+    "state": "Arunachal Pradesh",
+    "city": "Arunachal Pradesh Region",
+    "website": "https://ugc.ac.in"
+  },
+  {
+    "id": "inst_state_univ_3",
+    "name": "Gauhati University / Assam University",
+    "type": "State / Public University",
+    "state": "Assam",
+    "city": "Assam Region",
+    "website": "https://ugc.ac.in"
+  },
+  {
+    "id": "inst_state_univ_4",
+    "name": "Patna University / Central University of South Bihar",
+    "type": "State / Public University",
+    "state": "Bihar",
+    "city": "Bihar Region",
+    "website": "https://ugc.ac.in"
+  },
+  {
+    "id": "inst_state_univ_5",
+    "name": "Pt. Ravishankar Shukla University, Raipur",
+    "type": "State / Public University",
+    "state": "Chhattisgarh",
+    "city": "Chhattisgarh Region",
+    "website": "https://ugc.ac.in"
+  },
+  {
+    "id": "inst_state_univ_6",
+    "name": "Goa University, Taleigao Plateau",
+    "type": "State / Public University",
+    "state": "Goa",
+    "city": "Goa Region",
+    "website": "https://ugc.ac.in"
+  },
+  {
+    "id": "inst_state_univ_7",
+    "name": "Gujarat University / Maharaja Sayajirao University of Baroda",
+    "type": "State / Public University",
+    "state": "Gujarat",
+    "city": "Gujarat Region",
+    "website": "https://ugc.ac.in"
+  },
+  {
+    "id": "inst_state_univ_8",
+    "name": "Kurukshetra University / Maharshi Dayanand University",
+    "type": "State / Public University",
+    "state": "Haryana",
+    "city": "Haryana Region",
+    "website": "https://ugc.ac.in"
+  },
+  {
+    "id": "inst_state_univ_9",
+    "name": "Himachal Pradesh University, Shimla",
+    "type": "State / Public University",
+    "state": "Himachal Pradesh",
+    "city": "Himachal Pradesh Region",
+    "website": "https://ugc.ac.in"
+  },
+  {
+    "id": "inst_state_univ_10",
+    "name": "Ranchi University / Central University of Jharkhand",
+    "type": "State / Public University",
+    "state": "Jharkhand",
+    "city": "Jharkhand Region",
+    "website": "https://ugc.ac.in"
+  },
+  {
+    "id": "inst_state_univ_11",
+    "name": "Bangalore University / Mysore University",
+    "type": "State / Public University",
+    "state": "Karnataka",
+    "city": "Karnataka Region",
+    "website": "https://ugc.ac.in"
+  },
+  {
+    "id": "inst_state_univ_12",
+    "name": "University of Kerala / Mahatma Gandhi University, Kottayam",
+    "type": "State / Public University",
+    "state": "Kerala",
+    "city": "Kerala Region",
+    "website": "https://ugc.ac.in"
+  },
+  {
+    "id": "inst_state_univ_13",
+    "name": "Dr. Harisingh Gour University, Sagar / DAVV Indore",
+    "type": "State / Public University",
+    "state": "Madhya Pradesh",
+    "city": "Madhya Pradesh Region",
+    "website": "https://ugc.ac.in"
+  },
+  {
+    "id": "inst_state_univ_14",
+    "name": "Utkal University / Sambalpur University",
+    "type": "State / Public University",
+    "state": "Odisha",
+    "city": "Odisha Region",
+    "website": "https://ugc.ac.in"
+  },
+  {
+    "id": "inst_state_univ_15",
+    "name": "Guru Nanak Dev University, Amritsar",
+    "type": "State / Public University",
+    "state": "Punjab",
+    "city": "Punjab Region",
+    "website": "https://ugc.ac.in"
+  },
+  {
+    "id": "inst_state_univ_16",
+    "name": "University of Rajasthan, Jaipur",
+    "type": "State / Public University",
+    "state": "Rajasthan",
+    "city": "Rajasthan Region",
+    "website": "https://ugc.ac.in"
+  },
+  {
+    "id": "inst_state_univ_17",
+    "name": "Sikkim University, Gangtok",
+    "type": "State / Public University",
+    "state": "Sikkim",
+    "city": "Sikkim Region",
+    "website": "https://ugc.ac.in"
+  },
+  {
+    "id": "inst_state_univ_18",
+    "name": "University of Madras / Bharathidasan University",
+    "type": "State / Public University",
+    "state": "Tamil Nadu",
+    "city": "Tamil Nadu Region",
+    "website": "https://ugc.ac.in"
+  },
+  {
+    "id": "inst_state_univ_19",
+    "name": "Osmania University, Hyderabad",
+    "type": "State / Public University",
+    "state": "Telangana",
+    "city": "Telangana Region",
+    "website": "https://ugc.ac.in"
+  },
+  {
+    "id": "inst_state_univ_20",
+    "name": "Tripura University, Agartala",
+    "type": "State / Public University",
+    "state": "Tripura",
+    "city": "Tripura Region",
+    "website": "https://ugc.ac.in"
+  },
+  {
+    "id": "inst_state_univ_21",
+    "name": "University of Lucknow / Chhatrapati Shahu Ji Maharaj University",
+    "type": "State / Public University",
+    "state": "Uttar Pradesh",
+    "city": "Uttar Pradesh Region",
+    "website": "https://ugc.ac.in"
+  },
+  {
+    "id": "inst_state_univ_22",
+    "name": "HNB Garhwal University, Srinagar",
+    "type": "State / Public University",
+    "state": "Uttarakhand",
+    "city": "Uttarakhand Region",
+    "website": "https://ugc.ac.in"
+  },
+  {
+    "id": "inst_state_univ_23",
+    "name": "Jadavpur University, Kolkata",
+    "type": "State / Public University",
+    "state": "West Bengal",
+    "city": "West Bengal Region",
+    "website": "https://ugc.ac.in"
+  }
+]

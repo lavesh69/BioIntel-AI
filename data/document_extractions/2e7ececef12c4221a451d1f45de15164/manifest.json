@@ -1,0 +1,119 @@
+{
+  "duplicate_of_run_id": null,
+  "engine_version": "2.7.0",
+  "outputs": [
+    {
+      "created_at_utc": "2026-07-04T16:48:30.827480+00:00",
+      "filename": "01_oncology_protocol_extracted.json",
+      "format": "json",
+      "integrity_status": "unknown",
+      "output_id": "63e7a9cfb3014a6b958d7b686ac1eac3",
+      "path": "data/document_extractions/2e7ececef12c4221a451d1f45de15164/01_oncology_protocol_extracted.json",
+      "run_id": "2e7ececef12c4221a451d1f45de15164",
+      "sha256": "256431bd784339b7f1f2733169c532818cb36bb2d8e3fcee6f334fcacda72b52",
+      "size_bytes": 3811,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:48:30.830787+00:00",
+      "filename": "01_oncology_protocol_extracted.xlsx",
+      "format": "xlsx",
+      "integrity_status": "unknown",
+      "output_id": "3f447eb2e35346eaae7055ca5aee08f4",
+      "path": "data/document_extractions/2e7ececef12c4221a451d1f45de15164/01_oncology_protocol_extracted.xlsx",
+      "run_id": "2e7ececef12c4221a451d1f45de15164",
+      "sha256": "7978dcd2455595795ad13444800fc768a02eab7eaa69d6cf32c33a0f90df674e",
+      "size_bytes": 8665,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:48:30.833055+00:00",
+      "filename": "01_oncology_protocol_extracted.docx",
+      "format": "docx",
+      "integrity_status": "unknown",
+      "output_id": "ea1da1fc6162498f9fd5d4f1aa6e7c4e",
+      "path": "data/document_extractions/2e7ececef12c4221a451d1f45de15164/01_oncology_protocol_extracted.docx",
+      "run_id": "2e7ececef12c4221a451d1f45de15164",
+      "sha256": "79d681490601cae29a5a382dec4c6ce5dbc5f2ea9259727ae7929bfd548913b8",
+      "size_bytes": 37747,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:48:30.835396+00:00",
+      "filename": "01_oncology_protocol_extracted.pdf",
+      "format": "pdf",
+      "integrity_status": "unknown",
+      "output_id": "ff3e5db412b84c37ada5b344ac34a75b",
+      "path": "data/document_extractions/2e7ececef12c4221a451d1f45de15164/01_oncology_protocol_extracted.pdf",
+      "run_id": "2e7ececef12c4221a451d1f45de15164",
+      "sha256": "f19845bc821d16a1300dafe1c07e6c4882b4a3c0d2eb51ee71b3e7865b44855c",
+      "size_bytes": 3902,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:48:30.838218+00:00",
+      "filename": "01_oncology_protocol_csv_tables.zip",
+      "format": "csv_zip",
+      "integrity_status": "unknown",
+      "output_id": "b38c6e8aedb74588975c4911b6213ebc",
+      "path": "data/document_extractions/2e7ececef12c4221a451d1f45de15164/01_oncology_protocol_csv_tables.zip",
+      "run_id": "2e7ececef12c4221a451d1f45de15164",
+      "sha256": "fe2c03d8171d77495112697030ac19fb9934de248a878b91afab9af28c5d9967",
+      "size_bytes": 2404,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:48:30.839960+00:00",
+      "filename": "01_oncology_protocol_complete_export.zip",
+      "format": "bundle_zip",
+      "integrity_status": "unknown",
+      "output_id": "4a61a31f415045fd841eb414debe66e9",
+      "path": "data/document_extractions/2e7ececef12c4221a451d1f45de15164/01_oncology_protocol_complete_export.zip",
+      "run_id": "2e7ececef12c4221a451d1f45de15164",
+      "sha256": "a5cc744c30090d8115fe7b0f9ccc665580f44ee414e1783f02323242870fd364",
+      "size_bytes": 49396,
+      "verified_at_utc": null
+    }
+  ],
+  "run_id": "2e7ececef12c4221a451d1f45de15164",
+  "source": {
+    "character_count": 227,
+    "entity_count": 8,
+    "file_type": "txt",
+    "image_count": 0,
+    "mime_type": "text/plain",
+    "page_count": 0,
+    "paragraph_count": 0,
+    "region_count": 0,
+    "row_count": 0,
+    "sheet_count": 0,
+    "source_name": "01_oncology_protocol.txt",
+    "source_sha256": "46493fc303c467263f69357dc18622f1d9e1c381e42414d676500301f8acb615",
+    "source_size_bytes": 227,
+    "table_count": 0,
+    "warning_count": 0
+  },
+  "structured_fields": {
+    "activity_measurements": [],
+    "document_type": "research_document",
+    "entity_counts": {
+      "assay_endpoint": 1,
+      "disease": 1,
+      "drug_or_compound": 1,
+      "gene_or_protein": 3,
+      "mutation": 1,
+      "organism": 1
+    },
+    "has_limitations": false,
+    "has_methods": false,
+    "has_results": false,
+    "publication_identifiers": [],
+    "sample_sizes": [],
+    "sections": {
+      "unclassified": "DEMO PROTOCOL 1\nTarget: EGFR\nCompound: gefitinib\nDisease: non-small-cell lung cancer\nMutation: L858R\nAssay: IC50\nOrganism: Homo sapiens\nResult: 98 nM\nDemonstration/reference content only; not experimental or clinical evidence."
+    },
+    "sensitive_findings": [],
+    "title": "01_oncology_protocol.txt"
+  },
+  "warnings": []
+}

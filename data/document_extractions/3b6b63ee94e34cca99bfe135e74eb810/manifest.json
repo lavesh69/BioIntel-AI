@@ -1,0 +1,117 @@
+{
+  "duplicate_of_run_id": null,
+  "engine_version": "2.7.0",
+  "outputs": [
+    {
+      "created_at_utc": "2026-07-04T16:48:34.235651+00:00",
+      "filename": "09_antiviral_table_extracted.json",
+      "format": "json",
+      "integrity_status": "unknown",
+      "output_id": "62d48651aca14cafaaedb49e213ff136",
+      "path": "data/document_extractions/3b6b63ee94e34cca99bfe135e74eb810/09_antiviral_table_extracted.json",
+      "run_id": "3b6b63ee94e34cca99bfe135e74eb810",
+      "sha256": "9a8ef34139f9c64ee3b8d33b7cf9e4005e341315de86c8e17a07a60c81a20b00",
+      "size_bytes": 3917,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:48:34.239069+00:00",
+      "filename": "09_antiviral_table_extracted.xlsx",
+      "format": "xlsx",
+      "integrity_status": "unknown",
+      "output_id": "28e8ebdf6c2f4b33a53fd8f6ccf24249",
+      "path": "data/document_extractions/3b6b63ee94e34cca99bfe135e74eb810/09_antiviral_table_extracted.xlsx",
+      "run_id": "3b6b63ee94e34cca99bfe135e74eb810",
+      "sha256": "0aac7d6e7bf987765608650315a73e6837e7cfe9e9d4b10829a8a20022f8c9f7",
+      "size_bytes": 9388,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:48:34.241374+00:00",
+      "filename": "09_antiviral_table_extracted.docx",
+      "format": "docx",
+      "integrity_status": "unknown",
+      "output_id": "e1497f0e37bc4ef9a49b098974ea3326",
+      "path": "data/document_extractions/3b6b63ee94e34cca99bfe135e74eb810/09_antiviral_table_extracted.docx",
+      "run_id": "3b6b63ee94e34cca99bfe135e74eb810",
+      "sha256": "0a1805b2956a7d75b1dc0c13f9e8137c9bbc03043b5c73aaa6b4a5b5138e1b2b",
+      "size_bytes": 37780,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:48:34.243245+00:00",
+      "filename": "09_antiviral_table_extracted.pdf",
+      "format": "pdf",
+      "integrity_status": "unknown",
+      "output_id": "0b8c0360b06942f3b7179f06484787d6",
+      "path": "data/document_extractions/3b6b63ee94e34cca99bfe135e74eb810/09_antiviral_table_extracted.pdf",
+      "run_id": "3b6b63ee94e34cca99bfe135e74eb810",
+      "sha256": "d747ae4d5e9bc461cbd74d44fd40d7ea4edb93c53deff39e2fce0afbf9f77db5",
+      "size_bytes": 4576,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:48:34.244845+00:00",
+      "filename": "09_antiviral_table_csv_tables.zip",
+      "format": "csv_zip",
+      "integrity_status": "unknown",
+      "output_id": "f6a53c69a0864bad9b0a3828da618a5a",
+      "path": "data/document_extractions/3b6b63ee94e34cca99bfe135e74eb810/09_antiviral_table_csv_tables.zip",
+      "run_id": "3b6b63ee94e34cca99bfe135e74eb810",
+      "sha256": "e9dd8c78833b7f81d3c8ac811d53101dda78d96946d030db0e637105ee053999",
+      "size_bytes": 2604,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:48:34.246616+00:00",
+      "filename": "09_antiviral_table_complete_export.zip",
+      "format": "bundle_zip",
+      "integrity_status": "unknown",
+      "output_id": "bc79583b2eab4904871554a8317b1662",
+      "path": "data/document_extractions/3b6b63ee94e34cca99bfe135e74eb810/09_antiviral_table_complete_export.zip",
+      "run_id": "3b6b63ee94e34cca99bfe135e74eb810",
+      "sha256": "3c10b8c2ca9017517df81738ae725e697a4f066ca7b145f763184640cd0f4cbd",
+      "size_bytes": 50496,
+      "verified_at_utc": null
+    }
+  ],
+  "run_id": "3b6b63ee94e34cca99bfe135e74eb810",
+  "source": {
+    "character_count": 257,
+    "entity_count": 4,
+    "file_type": "csv",
+    "image_count": 0,
+    "mime_type": "text/csv",
+    "page_count": 0,
+    "paragraph_count": 0,
+    "region_count": 0,
+    "row_count": 2,
+    "sheet_count": 0,
+    "source_name": "09_antiviral_table.csv",
+    "source_sha256": "3ce829470f8cd3b580cc365eaa99ee306b3a35849252f7c7eb95520f77973f03",
+    "source_size_bytes": 257,
+    "table_count": 1,
+    "warning_count": 0
+  },
+  "structured_fields": {
+    "activity_measurements": [],
+    "document_type": "research_document",
+    "entity_counts": {
+      "assay_endpoint": 1,
+      "drug_or_compound": 1,
+      "gene_or_protein": 1,
+      "mutation": 1
+    },
+    "has_limitations": false,
+    "has_methods": false,
+    "has_results": false,
+    "publication_identifiers": [],
+    "sample_sizes": [],
+    "sections": {
+      "unclassified": "record_id,compound,target,disease,mutation,assay,value_nm,organism,status\nDEMO-CORPUS-09,sofosbuvir,NS5B,hepatitis C,S282T,IC50,682,Hepatitis C virus,demo_only\nDEMO-CORPUS-09-B,sofosbuvir analogue,NS5B,hepatitis C,S282T,IC50,792,Hepatitis C virus,demo_only"
+    },
+    "sensitive_findings": [],
+    "title": "09_antiviral_table.csv"
+  },
+  "warnings": []
+}

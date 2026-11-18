@@ -1,0 +1,35 @@
+{
+  "module_key": "structural_bioinformatics",
+  "title": "Structural Bioinformatics",
+  "description": "Small valid PDB example and residue-selection table.",
+  "accepted_formats": "PDB, CIF or mmCIF",
+  "offline": true,
+  "synthetic_example": true,
+  "files": [
+    {
+      "name": "blank_structure_notes.csv",
+      "role": "blank",
+      "size_bytes": 52
+    },
+    {
+      "name": "filled_structure.pdb",
+      "role": "example",
+      "size_bytes": 349
+    },
+    {
+      "name": "filled_structure_notes.csv",
+      "role": "example",
+      "size_bytes": 84
+    },
+    {
+      "name": "expected_structure_summary.csv",
+      "role": "output",
+      "size_bytes": 78
+    },
+    {
+      "name": "FORMAT_GUIDE.md",
+      "role": "guide",
+      "size_bytes": 821
+    }
+  ]
+}

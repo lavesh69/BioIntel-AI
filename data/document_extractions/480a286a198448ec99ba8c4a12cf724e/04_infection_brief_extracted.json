@@ -1,0 +1,112 @@
+{
+  "character_count": 638,
+  "entities": [
+    {
+      "confidence": 0.72,
+      "end": 175,
+      "entity_type": "disease",
+      "metadata": {},
+      "normalized": "infection",
+      "source": "document",
+      "start": 166,
+      "text": "infection"
+    },
+    {
+      "confidence": 0.92,
+      "end": 205,
+      "entity_type": "mutation",
+      "metadata": {},
+      "normalized": "S83L",
+      "source": "document",
+      "start": 201,
+      "text": "S83L"
+    },
+    {
+      "confidence": 0.97,
+      "end": 530,
+      "entity_type": "assay_endpoint",
+      "metadata": {},
+      "normalized": "MIC",
+      "source": "document",
+      "start": 527,
+      "text": "MIC"
+    },
+    {
+      "confidence": 0.86,
+      "end": 530,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "MIC",
+      "source": "document",
+      "start": 527,
+      "text": "MIC"
+    },
+    {
+      "confidence": 0.9,
+      "end": 278,
+      "entity_type": "organism",
+      "metadata": {},
+      "normalized": "Escherichia coli",
+      "source": "document",
+      "start": 262,
+      "text": "Escherichia coli"
+    }
+  ],
+  "entity_count": 5,
+  "file_type": "md",
+  "image_count": 0,
+  "metadata": {
+    "encoding": "utf-8-sig",
+    "scientific_entity_extraction": "rule_based_v1",
+    "sensitive_finding_count": 0,
+    "sensitive_redaction_applied": false
+  },
+  "mime_type": "text/markdown",
+  "page_count": 0,
+  "paragraph_count": 0,
+  "region_count": 0,
+  "regions": [],
+  "row_count": 0,
+  "sections": [
+    {
+      "confidence": 1.0,
+      "metadata": {},
+      "name": "Document",
+      "source": "document",
+      "text": "# Infection Demonstration Brief\r\n\r\n## Summary\r\nBioIntel demonstration record 4. The compound ciprofloxacin was discussed with target gyrA in the context of bacterial infection. The example mutation is S83L. A demonstration MIC measurement of 317 nM is shown for Escherichia coli. Synthetic reference labels: SYN-PAPER-0004 and SYN-DOI-NOT-REAL-0004. This content exists only to populate document search, extraction, entity recognition, history, comparison and evidence-bridge screens.\r\n\r\n## Methods\r\nSynthetic reference table; MIC endpoint.\r\n\r\n## Limitations\r\nDemonstration/reference content only; not experimental or clinical evidence.\r\n"
+    }
+  ],
+  "sheet_count": 0,
+  "source_name": "04_infection_brief.md",
+  "source_sha256": "74f2be71e8a71508cb2fbe7761370e2593ee6496721ca45e8475e07c92e00906",
+  "source_size_bytes": 638,
+  "structured_fields": {
+    "activity_measurements": [],
+    "document_type": "research_document",
+    "entity_counts": {
+      "assay_endpoint": 1,
+      "disease": 1,
+      "gene_or_protein": 1,
+      "mutation": 1,
+      "organism": 1
+    },
+    "has_limitations": true,
+    "has_methods": true,
+    "has_results": false,
+    "publication_identifiers": [],
+    "sample_sizes": [],
+    "sections": {
+      "abstract": "BioIntel demonstration record 4. The compound ciprofloxacin was discussed with target gyrA in the context of bacterial infection. The example mutation is S83L. A demonstration MIC measurement of 317 nM is shown for Escherichia coli. Synthetic reference labels: SYN-PAPER-0004 and SYN-DOI-NOT-REAL-0004. This content exists only to populate document search, extraction, entity recognition, history, comparison and evidence-bridge screens.",
+      "limitations": "Demonstration/reference content only; not experimental or clinical evidence.",
+      "methods": "Synthetic reference table; MIC endpoint.",
+      "unclassified": "# Infection Demonstration Brief"
+    },
+    "sensitive_findings": [],
+    "title": "04_infection_brief.md"
+  },
+  "table_count": 0,
+  "tables": [],
+  "text": "# Infection Demonstration Brief\r\n\r\n## Summary\r\nBioIntel demonstration record 4. The compound ciprofloxacin was discussed with target gyrA in the context of bacterial infection. The example mutation is S83L. A demonstration MIC measurement of 317 nM is shown for Escherichia coli. Synthetic reference labels: SYN-PAPER-0004 and SYN-DOI-NOT-REAL-0004. This content exists only to populate document search, extraction, entity recognition, history, comparison and evidence-bridge screens.\r\n\r\n## Methods\r\nSynthetic reference table; MIC endpoint.\r\n\r\n## Limitations\r\nDemonstration/reference content only; not experimental or clinical evidence.\r\n",
+  "warning_count": 0,
+  "warnings": []
+}

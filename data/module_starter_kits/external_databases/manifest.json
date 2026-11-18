@@ -1,0 +1,30 @@
+{
+  "module_key": "external_databases",
+  "title": "Scientific Database Lookup",
+  "description": "Offline query list for provider lookup sessions.",
+  "accepted_formats": "CSV",
+  "offline": true,
+  "synthetic_example": true,
+  "files": [
+    {
+      "name": "blank_provider_queries.csv",
+      "role": "blank",
+      "size_bytes": 42
+    },
+    {
+      "name": "filled_provider_queries.csv",
+      "role": "example",
+      "size_bytes": 140
+    },
+    {
+      "name": "expected_lookup_log.csv",
+      "role": "output",
+      "size_bytes": 89
+    },
+    {
+      "name": "FORMAT_GUIDE.md",
+      "role": "guide",
+      "size_bytes": 803
+    }
+  ]
+}

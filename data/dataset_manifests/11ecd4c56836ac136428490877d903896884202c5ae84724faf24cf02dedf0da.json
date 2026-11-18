@@ -1,0 +1,28 @@
+{
+  "activity_type": null,
+  "column_names": [
+    "drug_id",
+    "canonical_smiles",
+    "target_id",
+    "protein_sequence",
+    "label"
+  ],
+  "dataset_name": "BioIntel External Validation Classification",
+  "dataset_sha256": "11ecd4c56836ac136428490877d903896884202c5ae84724faf24cf02dedf0da",
+  "dataset_version": "1.0",
+  "demo_only": false,
+  "generated_by": "BioIntel Step 31 registry completion",
+  "metadata": {
+    "coverage_pack_version": "1.0",
+    "filename": "external_validation_classification_5000.csv"
+  },
+  "parent_sha256": null,
+  "primary_file": "data/coverage/external_validation_classification_5000.csv",
+  "primary_file_exists": true,
+  "row_count": 5000,
+  "schema": "biointel.dataset-manifest.v3.1",
+  "scientific_release_eligible": false,
+  "source_description": "BioIntel deterministic complete-coverage pack",
+  "synthetic": false,
+  "task_type": "classification"
+}

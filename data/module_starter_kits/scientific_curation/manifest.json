@@ -1,0 +1,30 @@
+{
+  "module_key": "scientific_curation",
+  "title": "Scientific Data Curation",
+  "description": "Activity records with provenance and units.",
+  "accepted_formats": "CSV or TSV",
+  "offline": true,
+  "synthetic_example": true,
+  "files": [
+    {
+      "name": "blank_activity_curation.csv",
+      "role": "blank",
+      "size_bytes": 108
+    },
+    {
+      "name": "filled_activity_curation.csv",
+      "role": "example",
+      "size_bytes": 171
+    },
+    {
+      "name": "expected_curated_activity.csv",
+      "role": "output",
+      "size_bytes": 90
+    },
+    {
+      "name": "FORMAT_GUIDE.md",
+      "role": "guide",
+      "size_bytes": 851
+    }
+  ]
+}

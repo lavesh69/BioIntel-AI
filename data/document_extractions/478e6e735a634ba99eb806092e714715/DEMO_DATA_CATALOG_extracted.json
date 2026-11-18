@@ -1,0 +1,498 @@
+{
+  "character_count": 3380,
+  "entities": [
+    {
+      "confidence": 0.72,
+      "end": 1451,
+      "entity_type": "disease",
+      "metadata": {},
+      "normalized": "04_infection_brief",
+      "source": "document",
+      "start": 1433,
+      "text": "04_infection_brief"
+    },
+    {
+      "confidence": 0.72,
+      "end": 1506,
+      "entity_type": "disease",
+      "metadata": {},
+      "normalized": "04_infection_metadata",
+      "source": "document",
+      "start": 1485,
+      "text": "04_infection_metadata"
+    },
+    {
+      "confidence": 0.72,
+      "end": 1561,
+      "entity_type": "disease",
+      "metadata": {},
+      "normalized": "04_infection_page",
+      "source": "document",
+      "start": 1544,
+      "text": "04_infection_page"
+    },
+    {
+      "confidence": 0.72,
+      "end": 1620,
+      "entity_type": "disease",
+      "metadata": {},
+      "normalized": "04_infection_protocol",
+      "source": "document",
+      "start": 1599,
+      "text": "04_infection_protocol"
+    },
+    {
+      "confidence": 0.72,
+      "end": 1674,
+      "entity_type": "disease",
+      "metadata": {},
+      "normalized": "04_infection_table",
+      "source": "document",
+      "start": 1656,
+      "text": "04_infection_table"
+    }
+  ],
+  "entity_count": 5,
+  "file_type": "csv",
+  "image_count": 0,
+  "metadata": {
+    "delimiter": ",",
+    "encoding": "utf-8-sig",
+    "scientific_entity_extraction": "rule_based_v1",
+    "sensitive_finding_count": 0,
+    "sensitive_redaction_applied": false
+  },
+  "mime_type": "text/csv",
+  "page_count": 0,
+  "paragraph_count": 0,
+  "region_count": 0,
+  "regions": [],
+  "row_count": 62,
+  "sections": [
+    {
+      "confidence": 1.0,
+      "metadata": {},
+      "name": "Document",
+      "source": "document",
+      "text": "file,format,size_bytes,demo_only\r\nBioIntel_Assay_Metadata.json,json,517,True\r\nBioIntel_Assay_Review_Notes.docx,docx,37515,True\r\nBioIntel_Demo_Activity_Data.csv,csv,17840,True\r\nBioIntel_Demo_Assay_Workbook.xlsx,xlsx,9092,True\r\nBioIntel_Demo_Assay_Workbook_preview.png,png,44644,True\r\nBioIntel_Literature_Notes.md,md,446,True\r\nBioIntel_Project_Protocol.txt,txt,256,True\r\nBioIntel_Reference_Page.html,html,543,True\r\nBioIntel_Reference_Research_Report.pdf,pdf,5088,True\r\ndemo_evidence_manifest.json,json,415,True\r\ndemo_leakage_test.csv,csv,2669,True\r\ndemo_leakage_train.csv,csv,3705,True\r\ngenerated_corpus/01_oncology_brief.md,md,633,True\r\ngenerated_corpus/01_oncology_metadata.json,json,438,True\r\ngenerated_corpus/01_oncology_page.html,html,822,True\r\ngenerated_corpus/01_oncology_protocol.txt,txt,227,True\r\ngenerated_corpus/01_oncology_table.csv,csv,274,True\r\ngenerated_corpus/02_cardiology_brief.md,md,626,True\r\ngenerated_corpus/02_cardiology_metadata.json,json,433,True\r\ngenerated_corpus/02_cardiology_page.html,html,818,True\r\ngenerated_corpus/02_cardiology_protocol.txt,txt,220,True\r\ngenerated_corpus/02_cardiology_table.csv,csv,259,True\r\ngenerated_corpus/03_neurology_brief.md,md,626,True\r\ngenerated_corpus/03_neurology_metadata.json,json,431,True\r\ngenerated_corpus/03_neurology_page.html,html,816,True\r\ngenerated_corpus/03_neurology_protocol.txt,txt,219,True\r\ngenerated_corpus/03_neurology_table.csv,csv,257,True\r\ngenerated_corpus/04_infection_brief.md,md,633,True\r\ngenerated_corpus/04_infection_metadata.json,json,439,True\r\ngenerated_corpus/04_infection_page.html,html,827,True\r\ngenerated_corpus/04_infection_protocol.txt,txt,227,True\r\ngenerated_corpus/04_infection_table.csv,csv,273,True\r\ngenerated_corpus/05_metabolism_brief.md,md,629,True\r\ngenerated_corpus/05_metabolism_metadata.json,json,434,True\r\ngenerated_corpus/05_metabolism_page.html,html,824,True\r\ngenerated_corpus/05_metabolism_protocol.txt,txt,221,True\r\ngenerated_corpus/05_metabolism_table.csv,csv,261,True\r\ngenerated_corpus/06_inflammation_brief.md,md,632,True\r\ngenerated_corpus/06_inflammation_metadata.json,json,437,True\r\ngenerated_corpus/06_inflammation_page.html,html,822,True\r\ngenerated_corpus/06_inflammation_protocol.txt,txt,222,True\r\ngenerated_corpus/06_inflammation_table.csv,csv,263,True\r\ngenerated_corpus/07_rare_disease_brief.md,md,627,True\r\ngenerated_corpus/07_rare_disease_metadata.json,json,432,True\r\ngenerated_corpus/07_rare_disease_page.html,html,817,True\r\ngenerated_corpus/07_rare_disease_protocol.txt,txt,217,True\r\ngenerated_corpus/07_rare_disease_table.csv,csv,253,True\r\ngenerated_corpus/08_kinase_brief.md,md,616,True\r\ngenerated_corpus/08_kinase_metadata.json,json,421,True\r\ngenerated_corpus/08_kinase_page.html,html,808,True\r\ngenerated_corpus/08_kinase_protocol.txt,txt,212,True\r\ngenerated_corpus/08_kinase_table.csv,csv,243,True\r\ngenerated_corpus/09_antiviral_brief.md,md,626,True\r\ngenerated_corpus/09_antiviral_metadata.json,json,431,True\r\ngenerated_corpus/09_antiviral_page.html,html,817,True\r\ngenerated_corpus/09_antiviral_protocol.txt,txt,219,True\r\ngenerated_corpus/09_antiviral_table.csv,csv,257,True\r\ngenerated_corpus/10_immunology_brief.md,md,632,True\r\ngenerated_corpus/10_immunology_metadata.json,json,436,True\r\ngenerated_corpus/10_immunology_page.html,html,825,True\r\ngenerated_corpus/10_immunology_protocol.txt,txt,223,True\r\ngenerated_corpus/10_immunology_table.csv,csv,263,True\r\n"
+    }
+  ],
+  "sheet_count": 0,
+  "source_name": "DEMO_DATA_CATALOG.csv",
+  "source_sha256": "4bbdb471466c608b032145f38a01d70b02464abf1ec538b9f790be81e6deef3c",
+  "source_size_bytes": 3380,
+  "structured_fields": {
+    "activity_measurements": [],
+    "document_type": "research_document",
+    "entity_counts": {
+      "disease": 5
+    },
+    "has_limitations": false,
+    "has_methods": false,
+    "has_results": false,
+    "publication_identifiers": [],
+    "sample_sizes": [],
+    "sections": {
+      "unclassified": "file,format,size_bytes,demo_only\nBioIntel_Assay_Metadata.json,json,517,True\nBioIntel_Assay_Review_Notes.docx,docx,37515,True\nBioIntel_Demo_Activity_Data.csv,csv,17840,True\nBioIntel_Demo_Assay_Workbook.xlsx,xlsx,9092,True\nBioIntel_Demo_Assay_Workbook_preview.png,png,44644,True\nBioIntel_Literature_Notes.md,md,446,True\nBioIntel_Project_Protocol.txt,txt,256,True\nBioIntel_Reference_Page.html,html,543,True\nBioIntel_Reference_Research_Report.pdf,pdf,5088,True\ndemo_evidence_manifest.json,json,415,True\ndemo_leakage_test.csv,csv,2669,True\ndemo_leakage_train.csv,csv,3705,True\ngenerated_corpus/01_oncology_brief.md,md,633,True\ngenerated_corpus/01_oncology_metadata.json,json,438,True\ngenerated_corpus/01_oncology_page.html,html,822,True\ngenerated_corpus/01_oncology_protocol.txt,txt,227,True\ngenerated_corpus/01_oncology_table.csv,csv,274,True\ngenerated_corpus/02_cardiology_brief.md,md,626,True\ngenerated_corpus/02_cardiology_metadata.json,json,433,True\ngenerated_corpus/02_cardiology_page.html,html,818,True\ngenerated_corpus/02_cardiology_protocol.txt,txt,220,True\ngenerated_corpus/02_cardiology_table.csv,csv,259,True\ngenerated_corpus/03_neurology_brief.md,md,626,True\ngenerated_corpus/03_neurology_metadata.json,json,431,True\ngenerated_corpus/03_neurology_page.html,html,816,True\ngenerated_corpus/03_neurology_protocol.txt,txt,219,True\ngenerated_corpus/03_neurology_table.csv,csv,257,True\ngenerated_corpus/04_infection_brief.md,md,633,True\ngenerated_corpus/04_infection_metadata.json,json,439,True\ngenerated_corpus/04_infection_page.html,html,827,True\ngenerated_corpus/04_infection_protocol.txt,txt,227,True\ngenerated_corpus/04_infection_table.csv,csv,273,True\ngenerated_corpus/05_metabolism_brief.md,md,629,True\ngenerated_corpus/05_metabolism_metadata.json,json,434,True\ngenerated_corpus/05_metabolism_page.html,html,824,True\ngenerated_corpus/05_metabolism_protocol.txt,txt,221,True\ngenerated_corpus/05_metabolism_table.csv,csv,261,True\ngenerated_corpus/06_inflammation_brief.md,md,632,True\ngenerated_corpus/06_inflammation_metadata.json,json,437,True\ngenerated_corpus/06_inflammation_page.html,html,822,True\ngenerated_corpus/06_inflammation_protocol.txt,txt,222,True\ngenerated_corpus/06_inflammation_table.csv,csv,263,True\ngenerated_corpus/07_rare_disease_brief.md,md,627,True\ngenerated_corpus/07_rare_disease_metadata.json,json,432,True\ngenerated_corpus/07_rare_disease_page.html,html,817,True\ngenerated_corpus/07_rare_disease_protocol.txt,txt,217,True\ngenerated_corpus/07_rare_disease_table.csv,csv,253,True\ngenerated_corpus/08_kinase_brief.md,md,616,True\ngenerated_corpus/08_kinase_metadata.json,json,421,True\ngenerated_corpus/08_kinase_page.html,html,808,True\ngenerated_corpus/08_kinase_protocol.txt,txt,212,True\ngenerated_corpus/08_kinase_table.csv,csv,243,True\ngenerated_corpus/09_antiviral_brief.md,md,626,True\ngenerated_corpus/09_antiviral_metadata.json,json,431,True\ngenerated_corpus/09_antiviral_page.html,html,817,True\ngenerated_corpus/09_antiviral_protocol.txt,txt,219,True\ngenerated_corpus/09_antiviral_table.csv,csv,257,True\ngenerated_corpus/10_immunology_brief.md,md,632,True\ngenerated_corpus/10_immunology_metadata.json,json,436,True\ngenerated_corpus/10_immunology_page.html,html,825,True\ngenerated_corpus/10_immunology_protocol.txt,txt,223,True\ngenerated_corpus/10_immunology_table.csv,csv,263,True"
+    },
+    "sensitive_findings": [],
+    "title": "DEMO_DATA_CATALOG.csv"
+  },
+  "table_count": 1,
+  "tables": [
+    {
+      "column_count": 4,
+      "columns": [
+        "file",
+        "format",
+        "size_bytes",
+        "demo_only"
+      ],
+      "confidence": 1.0,
+      "metadata": {
+        "delimiter": ",",
+        "encoding": "utf-8-sig"
+      },
+      "name": "Delimited Data",
+      "row_count": 62,
+      "rows": [
+        [
+          "BioIntel_Assay_Metadata.json",
+          "json",
+          "517",
+          "True"
+        ],
+        [
+          "BioIntel_Assay_Review_Notes.docx",
+          "docx",
+          "37515",
+          "True"
+        ],
+        [
+          "BioIntel_Demo_Activity_Data.csv",
+          "csv",
+          "17840",
+          "True"
+        ],
+        [
+          "BioIntel_Demo_Assay_Workbook.xlsx",
+          "xlsx",
+          "9092",
+          "True"
+        ],
+        [
+          "BioIntel_Demo_Assay_Workbook_preview.png",
+          "png",
+          "44644",
+          "True"
+        ],
+        [
+          "BioIntel_Literature_Notes.md",
+          "md",
+          "446",
+          "True"
+        ],
+        [
+          "BioIntel_Project_Protocol.txt",
+          "txt",
+          "256",
+          "True"
+        ],
+        [
+          "BioIntel_Reference_Page.html",
+          "html",
+          "543",
+          "True"
+        ],
+        [
+          "BioIntel_Reference_Research_Report.pdf",
+          "pdf",
+          "5088",
+          "True"
+        ],
+        [
+          "demo_evidence_manifest.json",
+          "json",
+          "415",
+          "True"
+        ],
+        [
+          "demo_leakage_test.csv",
+          "csv",
+          "2669",
+          "True"
+        ],
+        [
+          "demo_leakage_train.csv",
+          "csv",
+          "3705",
+          "True"
+        ],
+        [
+          "generated_corpus/01_oncology_brief.md",
+          "md",
+          "633",
+          "True"
+        ],
+        [
+          "generated_corpus/01_oncology_metadata.json",
+          "json",
+          "438",
+          "True"
+        ],
+        [
+          "generated_corpus/01_oncology_page.html",
+          "html",
+          "822",
+          "True"
+        ],
+        [
+          "generated_corpus/01_oncology_protocol.txt",
+          "txt",
+          "227",
+          "True"
+        ],
+        [
+          "generated_corpus/01_oncology_table.csv",
+          "csv",
+          "274",
+          "True"
+        ],
+        [
+          "generated_corpus/02_cardiology_brief.md",
+          "md",
+          "626",
+          "True"
+        ],
+        [
+          "generated_corpus/02_cardiology_metadata.json",
+          "json",
+          "433",
+          "True"
+        ],
+        [
+          "generated_corpus/02_cardiology_page.html",
+          "html",
+          "818",
+          "True"
+        ],
+        [
+          "generated_corpus/02_cardiology_protocol.txt",
+          "txt",
+          "220",
+          "True"
+        ],
+        [
+          "generated_corpus/02_cardiology_table.csv",
+          "csv",
+          "259",
+          "True"
+        ],
+        [
+          "generated_corpus/03_neurology_brief.md",
+          "md",
+          "626",
+          "True"
+        ],
+        [
+          "generated_corpus/03_neurology_metadata.json",
+          "json",
+          "431",
+          "True"
+        ],
+        [
+          "generated_corpus/03_neurology_page.html",
+          "html",
+          "816",
+          "True"
+        ],
+        [
+          "generated_corpus/03_neurology_protocol.txt",
+          "txt",
+          "219",
+          "True"
+        ],
+        [
+          "generated_corpus/03_neurology_table.csv",
+          "csv",
+          "257",
+          "True"
+        ],
+        [
+          "generated_corpus/04_infection_brief.md",
+          "md",
+          "633",
+          "True"
+        ],
+        [
+          "generated_corpus/04_infection_metadata.json",
+          "json",
+          "439",
+          "True"
+        ],
+        [
+          "generated_corpus/04_infection_page.html",
+          "html",
+          "827",
+          "True"
+        ],
+        [
+          "generated_corpus/04_infection_protocol.txt",
+          "txt",
+          "227",
+          "True"
+        ],
+        [
+          "generated_corpus/04_infection_table.csv",
+          "csv",
+          "273",
+          "True"
+        ],
+        [
+          "generated_corpus/05_metabolism_brief.md",
+          "md",
+          "629",
+          "True"
+        ],
+        [
+          "generated_corpus/05_metabolism_metadata.json",
+          "json",
+          "434",
+          "True"
+        ],
+        [
+          "generated_corpus/05_metabolism_page.html",
+          "html",
+          "824",
+          "True"
+        ],
+        [
+          "generated_corpus/05_metabolism_protocol.txt",
+          "txt",
+          "221",
+          "True"
+        ],
+        [
+          "generated_corpus/05_metabolism_table.csv",
+          "csv",
+          "261",
+          "True"
+        ],
+        [
+          "generated_corpus/06_inflammation_brief.md",
+          "md",
+          "632",
+          "True"
+        ],
+        [
+          "generated_corpus/06_inflammation_metadata.json",
+          "json",
+          "437",
+          "True"
+        ],
+        [
+          "generated_corpus/06_inflammation_page.html",
+          "html",
+          "822",
+          "True"
+        ],
+        [
+          "generated_corpus/06_inflammation_protocol.txt",
+          "txt",
+          "222",
+          "True"
+        ],
+        [
+          "generated_corpus/06_inflammation_table.csv",
+          "csv",
+          "263",
+          "True"
+        ],
+        [
+          "generated_corpus/07_rare_disease_brief.md",
+          "md",
+          "627",
+          "True"
+        ],
+        [
+          "generated_corpus/07_rare_disease_metadata.json",
+          "json",
+          "432",
+          "True"
+        ],
+        [
+          "generated_corpus/07_rare_disease_page.html",
+          "html",
+          "817",
+          "True"
+        ],
+        [
+          "generated_corpus/07_rare_disease_protocol.txt",
+          "txt",
+          "217",
+          "True"
+        ],
+        [
+          "generated_corpus/07_rare_disease_table.csv",
+          "csv",
+          "253",
+          "True"
+        ],
+        [
+          "generated_corpus/08_kinase_brief.md",
+          "md",
+          "616",
+          "True"
+        ],
+        [
+          "generated_corpus/08_kinase_metadata.json",
+          "json",
+          "421",
+          "True"
+        ],
+        [
+          "generated_corpus/08_kinase_page.html",
+          "html",
+          "808",
+          "True"
+        ],
+        [
+          "generated_corpus/08_kinase_protocol.txt",
+          "txt",
+          "212",
+          "True"
+        ],
+        [
+          "generated_corpus/08_kinase_table.csv",
+          "csv",
+          "243",
+          "True"
+        ],
+        [
+          "generated_corpus/09_antiviral_brief.md",
+          "md",
+          "626",
+          "True"
+        ],
+        [
+          "generated_corpus/09_antiviral_metadata.json",
+          "json",
+          "431",
+          "True"
+        ],
+        [
+          "generated_corpus/09_antiviral_page.html",
+          "html",
+          "817",
+          "True"
+        ],
+        [
+          "generated_corpus/09_antiviral_protocol.txt",
+          "txt",
+          "219",
+          "True"
+        ],
+        [
+          "generated_corpus/09_antiviral_table.csv",
+          "csv",
+          "257",
+          "True"
+        ],
+        [
+          "generated_corpus/10_immunology_brief.md",
+          "md",
+          "632",
+          "True"
+        ],
+        [
+          "generated_corpus/10_immunology_metadata.json",
+          "json",
+          "436",
+          "True"
+        ],
+        [
+          "generated_corpus/10_immunology_page.html",
+          "html",
+          "825",
+          "True"
+        ],
+        [
+          "generated_corpus/10_immunology_protocol.txt",
+          "txt",
+          "223",
+          "True"
+        ],
+        [
+          "generated_corpus/10_immunology_table.csv",
+          "csv",
+          "263",
+          "True"
+        ]
+      ],
+      "source": "document"
+    }
+  ],
+  "text": "file,format,size_bytes,demo_only\r\nBioIntel_Assay_Metadata.json,json,517,True\r\nBioIntel_Assay_Review_Notes.docx,docx,37515,True\r\nBioIntel_Demo_Activity_Data.csv,csv,17840,True\r\nBioIntel_Demo_Assay_Workbook.xlsx,xlsx,9092,True\r\nBioIntel_Demo_Assay_Workbook_preview.png,png,44644,True\r\nBioIntel_Literature_Notes.md,md,446,True\r\nBioIntel_Project_Protocol.txt,txt,256,True\r\nBioIntel_Reference_Page.html,html,543,True\r\nBioIntel_Reference_Research_Report.pdf,pdf,5088,True\r\ndemo_evidence_manifest.json,json,415,True\r\ndemo_leakage_test.csv,csv,2669,True\r\ndemo_leakage_train.csv,csv,3705,True\r\ngenerated_corpus/01_oncology_brief.md,md,633,True\r\ngenerated_corpus/01_oncology_metadata.json,json,438,True\r\ngenerated_corpus/01_oncology_page.html,html,822,True\r\ngenerated_corpus/01_oncology_protocol.txt,txt,227,True\r\ngenerated_corpus/01_oncology_table.csv,csv,274,True\r\ngenerated_corpus/02_cardiology_brief.md,md,626,True\r\ngenerated_corpus/02_cardiology_metadata.json,json,433,True\r\ngenerated_corpus/02_cardiology_page.html,html,818,True\r\ngenerated_corpus/02_cardiology_protocol.txt,txt,220,True\r\ngenerated_corpus/02_cardiology_table.csv,csv,259,True\r\ngenerated_corpus/03_neurology_brief.md,md,626,True\r\ngenerated_corpus/03_neurology_metadata.json,json,431,True\r\ngenerated_corpus/03_neurology_page.html,html,816,True\r\ngenerated_corpus/03_neurology_protocol.txt,txt,219,True\r\ngenerated_corpus/03_neurology_table.csv,csv,257,True\r\ngenerated_corpus/04_infection_brief.md,md,633,True\r\ngenerated_corpus/04_infection_metadata.json,json,439,True\r\ngenerated_corpus/04_infection_page.html,html,827,True\r\ngenerated_corpus/04_infection_protocol.txt,txt,227,True\r\ngenerated_corpus/04_infection_table.csv,csv,273,True\r\ngenerated_corpus/05_metabolism_brief.md,md,629,True\r\ngenerated_corpus/05_metabolism_metadata.json,json,434,True\r\ngenerated_corpus/05_metabolism_page.html,html,824,True\r\ngenerated_corpus/05_metabolism_protocol.txt,txt,221,True\r\ngenerated_corpus/05_metabolism_table.csv,csv,261,True\r\ngenerated_corpus/06_inflammation_brief.md,md,632,True\r\ngenerated_corpus/06_inflammation_metadata.json,json,437,True\r\ngenerated_corpus/06_inflammation_page.html,html,822,True\r\ngenerated_corpus/06_inflammation_protocol.txt,txt,222,True\r\ngenerated_corpus/06_inflammation_table.csv,csv,263,True\r\ngenerated_corpus/07_rare_disease_brief.md,md,627,True\r\ngenerated_corpus/07_rare_disease_metadata.json,json,432,True\r\ngenerated_corpus/07_rare_disease_page.html,html,817,True\r\ngenerated_corpus/07_rare_disease_protocol.txt,txt,217,True\r\ngenerated_corpus/07_rare_disease_table.csv,csv,253,True\r\ngenerated_corpus/08_kinase_brief.md,md,616,True\r\ngenerated_corpus/08_kinase_metadata.json,json,421,True\r\ngenerated_corpus/08_kinase_page.html,html,808,True\r\ngenerated_corpus/08_kinase_protocol.txt,txt,212,True\r\ngenerated_corpus/08_kinase_table.csv,csv,243,True\r\ngenerated_corpus/09_antiviral_brief.md,md,626,True\r\ngenerated_corpus/09_antiviral_metadata.json,json,431,True\r\ngenerated_corpus/09_antiviral_page.html,html,817,True\r\ngenerated_corpus/09_antiviral_protocol.txt,txt,219,True\r\ngenerated_corpus/09_antiviral_table.csv,csv,257,True\r\ngenerated_corpus/10_immunology_brief.md,md,632,True\r\ngenerated_corpus/10_immunology_metadata.json,json,436,True\r\ngenerated_corpus/10_immunology_page.html,html,825,True\r\ngenerated_corpus/10_immunology_protocol.txt,txt,223,True\r\ngenerated_corpus/10_immunology_table.csv,csv,263,True\r\n",
+  "warning_count": 0,
+  "warnings": []
+}

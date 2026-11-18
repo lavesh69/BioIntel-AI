@@ -1,0 +1,147 @@
+{
+  "duplicate_of_run_id": null,
+  "engine_version": "2.7.0",
+  "outputs": [
+    {
+      "created_at_utc": "2026-07-04T16:34:20.036799+00:00",
+      "filename": "BioIntel_Reference_Page_extracted.json",
+      "format": "json",
+      "integrity_status": "unknown",
+      "output_id": "3bffc1b31dc843ae8b87c324a1f5453b",
+      "path": "data/document_extractions/3b0afd9f7f0c4cddad7ce0df2df794d9/BioIntel_Reference_Page_extracted.json",
+      "run_id": "3b0afd9f7f0c4cddad7ce0df2df794d9",
+      "sha256": "dcc3513726f946dbdd9dd3d3b1bbff06c20ad7b44f77c12dab716dc9a2336f3f",
+      "size_bytes": 5623,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:34:20.040708+00:00",
+      "filename": "BioIntel_Reference_Page_extracted.xlsx",
+      "format": "xlsx",
+      "integrity_status": "unknown",
+      "output_id": "72df6a6cae7046399c8a0068ade01c0a",
+      "path": "data/document_extractions/3b0afd9f7f0c4cddad7ce0df2df794d9/BioIntel_Reference_Page_extracted.xlsx",
+      "run_id": "3b0afd9f7f0c4cddad7ce0df2df794d9",
+      "sha256": "a9d0c6b0fc0472807ccbfced7cb87c3936f83e4d60de7f88950c96504b7c8bd8",
+      "size_bytes": 9543,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:34:20.043153+00:00",
+      "filename": "BioIntel_Reference_Page_extracted.docx",
+      "format": "docx",
+      "integrity_status": "unknown",
+      "output_id": "2c3ba4a4e4694693a351e1ca71e3ebf1",
+      "path": "data/document_extractions/3b0afd9f7f0c4cddad7ce0df2df794d9/BioIntel_Reference_Page_extracted.docx",
+      "run_id": "3b0afd9f7f0c4cddad7ce0df2df794d9",
+      "sha256": "7e665292fd51d226d451dd119d0180ee6b6eb7a9ae9c0d3db38fc135b8df1677",
+      "size_bytes": 38028,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:34:20.045874+00:00",
+      "filename": "BioIntel_Reference_Page_extracted.pdf",
+      "format": "pdf",
+      "integrity_status": "unknown",
+      "output_id": "e92451fedebf41dcb7a7c78e8404fa08",
+      "path": "data/document_extractions/3b0afd9f7f0c4cddad7ce0df2df794d9/BioIntel_Reference_Page_extracted.pdf",
+      "run_id": "3b0afd9f7f0c4cddad7ce0df2df794d9",
+      "sha256": "d8a67aea2fdb3461582e292195da1f03ec9c2448bfd90dbc7b74b14f53827bd3",
+      "size_bytes": 4785,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:34:20.048300+00:00",
+      "filename": "BioIntel_Reference_Page_csv_tables.zip",
+      "format": "csv_zip",
+      "integrity_status": "unknown",
+      "output_id": "9a531675616f4da39fec8898789fd856",
+      "path": "data/document_extractions/3b0afd9f7f0c4cddad7ce0df2df794d9/BioIntel_Reference_Page_csv_tables.zip",
+      "run_id": "3b0afd9f7f0c4cddad7ce0df2df794d9",
+      "sha256": "38ba423c8f9fbe50024e26a50146d47029a90aac3ea766099264d4075c616c5f",
+      "size_bytes": 2945,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:34:20.050827+00:00",
+      "filename": "BioIntel_Reference_Page_complete_export.zip",
+      "format": "bundle_zip",
+      "integrity_status": "unknown",
+      "output_id": "16ae694598b84f4790d3e8f09aaec979",
+      "path": "data/document_extractions/3b0afd9f7f0c4cddad7ce0df2df794d9/BioIntel_Reference_Page_complete_export.zip",
+      "run_id": "3b0afd9f7f0c4cddad7ce0df2df794d9",
+      "sha256": "105b86f49443547d96b438e1c195a5a6eca93b1f1be078e2a2e31dab0a95737f",
+      "size_bytes": 51648,
+      "verified_at_utc": null
+    }
+  ],
+  "run_id": "3b0afd9f7f0c4cddad7ce0df2df794d9",
+  "source": {
+    "character_count": 263,
+    "entity_count": 9,
+    "file_type": "html",
+    "image_count": 0,
+    "mime_type": "text/html",
+    "page_count": 0,
+    "paragraph_count": 0,
+    "region_count": 0,
+    "row_count": 2,
+    "sheet_count": 0,
+    "source_name": "BioIntel_Reference_Page.html",
+    "source_sha256": "2efe3e587d35a529e5c79f483ca554a4854271d56f0020a5b759a94830db003f",
+    "source_size_bytes": 543,
+    "table_count": 1,
+    "warning_count": 0
+  },
+  "structured_fields": {
+    "activity_measurements": [
+      {
+        "confidence": 0.96,
+        "end": 207,
+        "entity_type": "activity_measurement",
+        "metadata": {
+          "endpoint": "IC50",
+          "relation": "=",
+          "unit": "nM",
+          "value": 125.0
+        },
+        "normalized": "IC50 = 125 nM",
+        "source": "document",
+        "start": 196,
+        "text": "IC50\n125 nM"
+      },
+      {
+        "confidence": 0.96,
+        "end": 236,
+        "entity_type": "activity_measurement",
+        "metadata": {
+          "endpoint": "KI",
+          "relation": "=",
+          "unit": "nM",
+          "value": 32.0
+        },
+        "normalized": "KI = 32 nM",
+        "source": "document",
+        "start": 228,
+        "text": "Ki\n32 nM"
+      }
+    ],
+    "document_type": "research_document",
+    "entity_counts": {
+      "activity_measurement": 2,
+      "assay_endpoint": 2,
+      "gene_or_protein": 5
+    },
+    "has_limitations": false,
+    "has_methods": false,
+    "has_results": false,
+    "publication_identifiers": [],
+    "sample_sizes": [],
+    "sections": {
+      "unclassified": "BioIntel Reference Page\nBioIntel AI Reference Page\nDemonstration content for document extraction and full-text search.\nTargets\nPTGS2\nADORA2A\nSIRT1\nPIK3CA\nCompound\nEndpoint\nValue\nAspirin reference\nIC50\n125 nM\nAdenosine reference\nKi\n32 nM\nNot experimental evidence."
+    },
+    "sensitive_findings": [],
+    "title": "BioIntel Reference Page"
+  },
+  "warnings": []
+}

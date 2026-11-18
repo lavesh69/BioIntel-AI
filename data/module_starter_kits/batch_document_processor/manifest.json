@@ -1,0 +1,45 @@
+{
+  "module_key": "batch_document_processor",
+  "title": "Batch Document Processor",
+  "description": "Multiple safe local document examples plus a processing manifest.",
+  "accepted_formats": "CSV, TXT, MD, HTML or JSON",
+  "offline": true,
+  "synthetic_example": true,
+  "files": [
+    {
+      "name": "document_01.md",
+      "role": "example",
+      "size_bytes": 66
+    },
+    {
+      "name": "document_02.txt",
+      "role": "example",
+      "size_bytes": 50
+    },
+    {
+      "name": "document_03.csv",
+      "role": "example",
+      "size_bytes": 43
+    },
+    {
+      "name": "blank_batch_manifest.csv",
+      "role": "blank",
+      "size_bytes": 35
+    },
+    {
+      "name": "filled_batch_manifest.csv",
+      "role": "example",
+      "size_bytes": 128
+    },
+    {
+      "name": "expected_batch_status.csv",
+      "role": "output",
+      "size_bytes": 92
+    },
+    {
+      "name": "FORMAT_GUIDE.md",
+      "role": "guide",
+      "size_bytes": 826
+    }
+  ]
+}

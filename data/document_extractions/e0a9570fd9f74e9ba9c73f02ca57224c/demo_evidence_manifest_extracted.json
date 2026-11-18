@@ -1,0 +1,213 @@
+{
+  "character_count": 1206,
+  "entities": [],
+  "entity_count": 0,
+  "file_type": "json",
+  "image_count": 0,
+  "metadata": {
+    "encoding": "utf-8-sig",
+    "root_type": "dict",
+    "scientific_entity_extraction": "rule_based_v1",
+    "sensitive_finding_count": 2,
+    "sensitive_redaction_applied": false
+  },
+  "mime_type": "application/json",
+  "page_count": 0,
+  "paragraph_count": 0,
+  "region_count": 0,
+  "regions": [],
+  "row_count": 32,
+  "sections": [
+    {
+      "confidence": 1.0,
+      "metadata": {},
+      "name": "Document",
+      "source": "document",
+      "text": "{\n  \"dataset_sha256\": \"e8a9279d41554fbabf9d34385e2bb6abf01fe18fe4ebdf5fa9a0c3e40cdfbb1d\",\n  \"dataset_name\": \"BioIntel Preloaded Demonstration Evidence\",\n  \"demo_only\": true,\n  \"readiness\": {\n    \"dataset_sha256\": \"e8a9279d41554fbabf9d34385e2bb6abf01fe18fe4ebdf5fa9a0c3e40cdfbb1d\",\n    \"rows_total\": 60,\n    \"licensed_rows\": 60,\n    \"publication_rows\": 60,\n    \"accepted_rows\": 36,\n    \"rejected_rows\": 6,\n    \"source_count\": 4,\n    \"mean_quality\": 0.7483,\n    \"license_coverage\": 1.0,\n    \"publication_coverage\": 1.0,\n    \"review_coverage\": 0.6,\n    \"release_ready\": false\n  },\n  \"registry\": {\n    \"database\": {\n      \"name\": \"Evidence Registry\",\n      \"path\": \"reports/evidence.sqlite3\",\n      \"exists\": true,\n      \"size_bytes\": 126976,\n      \"integrity\": \"ok\",\n      \"journal_mode\": \"wal\",\n      \"table_count\": 6,\n      \"index_count\": 6,\n      \"row_count\": 135,\n      \"last_modified_utc\": \"2026-07-04T16:34:46.447005+00:00\"\n    },\n    \"counts\": {\n      \"evidence_licenses\": 5,\n      \"evidence_sources\": 4,\n      \"evidence_publications\": 20,\n      \"evidence_import_runs\": 4,\n      \"dataset_evidence_links\": 60,\n      \"evidence_reviews\": 42\n    },\n    \"generated_at_utc\": \"2026-07-04T16:34:46+00:00\"\n  }\n}"
+    }
+  ],
+  "sheet_count": 0,
+  "source_name": "demo_evidence_manifest.json",
+  "source_sha256": "b2d0104d7bf549ff12dfe358a37f914ce2f3f50ebd1891ce43d4ec5a8d00da37",
+  "source_size_bytes": 1206,
+  "structured_fields": {
+    "activity_measurements": [],
+    "document_type": "research_document",
+    "entity_counts": {},
+    "has_limitations": false,
+    "has_methods": false,
+    "has_results": false,
+    "publication_identifiers": [],
+    "sample_sizes": [],
+    "sections": {
+      "unclassified": "{\n\"dataset_sha256\": \"e8a9279d41554fbabf9d34385e2bb6abf01fe18fe4ebdf5fa9a0c3e40cdfbb1d\",\n\"dataset_name\": \"BioIntel Preloaded Demonstration Evidence\",\n\"demo_only\": true,\n\"readiness\": {\n\"dataset_sha256\": \"e8a9279d41554fbabf9d34385e2bb6abf01fe18fe4ebdf5fa9a0c3e40cdfbb1d\",\n\"rows_total\": 60,\n\"licensed_rows\": 60,\n\"publication_rows\": 60,\n\"accepted_rows\": 36,\n\"rejected_rows\": 6,\n\"source_count\": 4,\n\"mean_quality\": 0.7483,\n\"license_coverage\": 1.0,\n\"publication_coverage\": 1.0,\n\"review_coverage\": 0.6,\n\"release_ready\": false\n},\n\"registry\": {\n\"database\": {\n\"name\": \"Evidence Registry\",\n\"path\": \"reports/evidence.sqlite3\",\n\"exists\": true,\n\"size_bytes\": 126976,\n\"integrity\": \"ok\",\n\"journal_mode\": \"wal\",\n\"table_count\": 6,\n\"index_count\": 6,\n\"row_count\": 135,\n\"last_modified_utc\": \"2026-07-04T16:34:46.447005+00:00\"\n},\n\"counts\": {\n\"evidence_licenses\": 5,\n\"evidence_sources\": 4,\n\"evidence_publications\": 20,\n\"evidence_import_runs\": 4,\n\"dataset_evidence_links\": 60,\n\"evidence_reviews\": 42\n},\n\"generated_at_utc\": \"2026-07-04T16:34:46+00:00\"\n}\n}"
+    },
+    "sensitive_findings": [
+      {
+        "end": 903,
+        "start": 893,
+        "text": "2026-07-04",
+        "type": "phone"
+      },
+      {
+        "end": 1184,
+        "start": 1174,
+        "text": "2026-07-04",
+        "type": "phone"
+      }
+    ],
+    "title": "demo_evidence_manifest.json"
+  },
+  "table_count": 1,
+  "tables": [
+    {
+      "column_count": 2,
+      "columns": [
+        "Path",
+        "Value"
+      ],
+      "confidence": 1.0,
+      "metadata": {
+        "encoding": "utf-8-sig"
+      },
+      "name": "Structured Data",
+      "row_count": 32,
+      "rows": [
+        [
+          "dataset_sha256",
+          "e8a9279d41554fbabf9d34385e2bb6abf01fe18fe4ebdf5fa9a0c3e40cdfbb1d"
+        ],
+        [
+          "dataset_name",
+          "BioIntel Preloaded Demonstration Evidence"
+        ],
+        [
+          "demo_only",
+          true
+        ],
+        [
+          "readiness.dataset_sha256",
+          "e8a9279d41554fbabf9d34385e2bb6abf01fe18fe4ebdf5fa9a0c3e40cdfbb1d"
+        ],
+        [
+          "readiness.rows_total",
+          60
+        ],
+        [
+          "readiness.licensed_rows",
+          60
+        ],
+        [
+          "readiness.publication_rows",
+          60
+        ],
+        [
+          "readiness.accepted_rows",
+          36
+        ],
+        [
+          "readiness.rejected_rows",
+          6
+        ],
+        [
+          "readiness.source_count",
+          4
+        ],
+        [
+          "readiness.mean_quality",
+          0.7483
+        ],
+        [
+          "readiness.license_coverage",
+          1.0
+        ],
+        [
+          "readiness.publication_coverage",
+          1.0
+        ],
+        [
+          "readiness.review_coverage",
+          0.6
+        ],
+        [
+          "readiness.release_ready",
+          false
+        ],
+        [
+          "registry.database.name",
+          "Evidence Registry"
+        ],
+        [
+          "registry.database.path",
+          "reports/evidence.sqlite3"
+        ],
+        [
+          "registry.database.exists",
+          true
+        ],
+        [
+          "registry.database.size_bytes",
+          126976
+        ],
+        [
+          "registry.database.integrity",
+          "ok"
+        ],
+        [
+          "registry.database.journal_mode",
+          "wal"
+        ],
+        [
+          "registry.database.table_count",
+          6
+        ],
+        [
+          "registry.database.index_count",
+          6
+        ],
+        [
+          "registry.database.row_count",
+          135
+        ],
+        [
+          "registry.database.last_modified_utc",
+          "2026-07-04T16:34:46.447005+00:00"
+        ],
+        [
+          "registry.counts.evidence_licenses",
+          5
+        ],
+        [
+          "registry.counts.evidence_sources",
+          4
+        ],
+        [
+          "registry.counts.evidence_publications",
+          20
+        ],
+        [
+          "registry.counts.evidence_import_runs",
+          4
+        ],
+        [
+          "registry.counts.dataset_evidence_links",
+          60
+        ],
+        [
+          "registry.counts.evidence_reviews",
+          42
+        ],
+        [
+          "registry.generated_at_utc",
+          "2026-07-04T16:34:46+00:00"
+        ]
+      ],
+      "source": "document"
+    }
+  ],
+  "text": "{\n  \"dataset_sha256\": \"e8a9279d41554fbabf9d34385e2bb6abf01fe18fe4ebdf5fa9a0c3e40cdfbb1d\",\n  \"dataset_name\": \"BioIntel Preloaded Demonstration Evidence\",\n  \"demo_only\": true,\n  \"readiness\": {\n    \"dataset_sha256\": \"e8a9279d41554fbabf9d34385e2bb6abf01fe18fe4ebdf5fa9a0c3e40cdfbb1d\",\n    \"rows_total\": 60,\n    \"licensed_rows\": 60,\n    \"publication_rows\": 60,\n    \"accepted_rows\": 36,\n    \"rejected_rows\": 6,\n    \"source_count\": 4,\n    \"mean_quality\": 0.7483,\n    \"license_coverage\": 1.0,\n    \"publication_coverage\": 1.0,\n    \"review_coverage\": 0.6,\n    \"release_ready\": false\n  },\n  \"registry\": {\n    \"database\": {\n      \"name\": \"Evidence Registry\",\n      \"path\": \"reports/evidence.sqlite3\",\n      \"exists\": true,\n      \"size_bytes\": 126976,\n      \"integrity\": \"ok\",\n      \"journal_mode\": \"wal\",\n      \"table_count\": 6,\n      \"index_count\": 6,\n      \"row_count\": 135,\n      \"last_modified_utc\": \"2026-07-04T16:34:46.447005+00:00\"\n    },\n    \"counts\": {\n      \"evidence_licenses\": 5,\n      \"evidence_sources\": 4,\n      \"evidence_publications\": 20,\n      \"evidence_import_runs\": 4,\n      \"dataset_evidence_links\": 60,\n      \"evidence_reviews\": 42\n    },\n    \"generated_at_utc\": \"2026-07-04T16:34:46+00:00\"\n  }\n}",
+  "warning_count": 1,
+  "warnings": [
+    "Detected 2 possible sensitive value(s); review before sharing exports."
+  ]
+}

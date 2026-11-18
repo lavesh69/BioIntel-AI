@@ -1,0 +1,197 @@
+{
+  "character_count": 507,
+  "entities": [
+    {
+      "confidence": 0.97,
+      "end": 48,
+      "entity_type": "assay_endpoint",
+      "metadata": {},
+      "normalized": "IC50",
+      "source": "document",
+      "start": 44,
+      "text": "IC50"
+    },
+    {
+      "confidence": 0.86,
+      "end": 48,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "IC50",
+      "source": "document",
+      "start": 44,
+      "text": "IC50"
+    },
+    {
+      "confidence": 0.72,
+      "end": 75,
+      "entity_type": "disease",
+      "metadata": {},
+      "normalized": "alzheimer",
+      "source": "document",
+      "start": 66,
+      "text": "Alzheimer"
+    },
+    {
+      "confidence": 0.86,
+      "end": 176,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "ACHE",
+      "source": "document",
+      "start": 172,
+      "text": "ACHE"
+    },
+    {
+      "confidence": 0.92,
+      "end": 200,
+      "entity_type": "mutation",
+      "metadata": {},
+      "normalized": "Y337A",
+      "source": "document",
+      "start": 195,
+      "text": "Y337A"
+    },
+    {
+      "confidence": 0.9,
+      "end": 324,
+      "entity_type": "organism",
+      "metadata": {},
+      "normalized": "Homo sapiens",
+      "source": "document",
+      "start": 312,
+      "text": "Homo sapiens"
+    }
+  ],
+  "entity_count": 6,
+  "file_type": "json",
+  "image_count": 0,
+  "metadata": {
+    "encoding": "utf-8-sig",
+    "root_type": "dict",
+    "scientific_entity_extraction": "rule_based_v1",
+    "sensitive_finding_count": 0,
+    "sensitive_redaction_applied": false
+  },
+  "mime_type": "application/json",
+  "page_count": 0,
+  "paragraph_count": 0,
+  "region_count": 0,
+  "regions": [],
+  "row_count": 15,
+  "sections": [
+    {
+      "confidence": 1.0,
+      "metadata": {},
+      "name": "Document",
+      "source": "document",
+      "text": "{\r\n  \"activity_value_nm\": 244,\r\n  \"assay\": \"IC50\",\r\n  \"disease\": \"Alzheimer disease\",\r\n  \"document_id\": \"DEMO-CORPUS-03\",\r\n  \"doi\": \"\",\r\n  \"drug\": \"donepezil\",\r\n  \"gene\": \"ACHE\",\r\n  \"mutation\": \"Y337A\",\r\n  \"notice\": \"Demonstration/reference content only; not experimental or clinical evidence.\",\r\n  \"organism\": \"Homo sapiens\",\r\n  \"pmid\": \"\",\r\n  \"scientific_release_eligible\": false,\r\n  \"synthetic_doi_label\": \"SYN-DOI-NOT-REAL-0003\",\r\n  \"synthetic_reference_id\": \"SYN-PAPER-0003\",\r\n  \"topic\": \"neurology\"\r\n}"
+    }
+  ],
+  "sheet_count": 0,
+  "source_name": "03_neurology_metadata.json",
+  "source_sha256": "bfae06690edd42bac25e686a4076a2dd8d321c2e1fee0c891e5fdf21ddedeebb",
+  "source_size_bytes": 507,
+  "structured_fields": {
+    "activity_measurements": [],
+    "document_type": "research_document",
+    "entity_counts": {
+      "assay_endpoint": 1,
+      "disease": 1,
+      "gene_or_protein": 2,
+      "mutation": 1,
+      "organism": 1
+    },
+    "has_limitations": false,
+    "has_methods": false,
+    "has_results": false,
+    "publication_identifiers": [],
+    "sample_sizes": [],
+    "sections": {
+      "unclassified": "{\n\"activity_value_nm\": 244,\n\"assay\": \"IC50\",\n\"disease\": \"Alzheimer disease\",\n\"document_id\": \"DEMO-CORPUS-03\",\n\"doi\": \"\",\n\"drug\": \"donepezil\",\n\"gene\": \"ACHE\",\n\"mutation\": \"Y337A\",\n\"notice\": \"Demonstration/reference content only; not experimental or clinical evidence.\",\n\"organism\": \"Homo sapiens\",\n\"pmid\": \"\",\n\"scientific_release_eligible\": false,\n\"synthetic_doi_label\": \"SYN-DOI-NOT-REAL-0003\",\n\"synthetic_reference_id\": \"SYN-PAPER-0003\",\n\"topic\": \"neurology\"\n}"
+    },
+    "sensitive_findings": [],
+    "title": "03_neurology_metadata.json"
+  },
+  "table_count": 1,
+  "tables": [
+    {
+      "column_count": 2,
+      "columns": [
+        "Path",
+        "Value"
+      ],
+      "confidence": 1.0,
+      "metadata": {
+        "encoding": "utf-8-sig"
+      },
+      "name": "Structured Data",
+      "row_count": 15,
+      "rows": [
+        [
+          "activity_value_nm",
+          244
+        ],
+        [
+          "assay",
+          "IC50"
+        ],
+        [
+          "disease",
+          "Alzheimer disease"
+        ],
+        [
+          "document_id",
+          "DEMO-CORPUS-03"
+        ],
+        [
+          "doi",
+          ""
+        ],
+        [
+          "drug",
+          "donepezil"
+        ],
+        [
+          "gene",
+          "ACHE"
+        ],
+        [
+          "mutation",
+          "Y337A"
+        ],
+        [
+          "notice",
+          "Demonstration/reference content only; not experimental or clinical evidence."
+        ],
+        [
+          "organism",
+          "Homo sapiens"
+        ],
+        [
+          "pmid",
+          ""
+        ],
+        [
+          "scientific_release_eligible",
+          false
+        ],
+        [
+          "synthetic_doi_label",
+          "SYN-DOI-NOT-REAL-0003"
+        ],
+        [
+          "synthetic_reference_id",
+          "SYN-PAPER-0003"
+        ],
+        [
+          "topic",
+          "neurology"
+        ]
+      ],
+      "source": "document"
+    }
+  ],
+  "text": "{\r\n  \"activity_value_nm\": 244,\r\n  \"assay\": \"IC50\",\r\n  \"disease\": \"Alzheimer disease\",\r\n  \"document_id\": \"DEMO-CORPUS-03\",\r\n  \"doi\": \"\",\r\n  \"drug\": \"donepezil\",\r\n  \"gene\": \"ACHE\",\r\n  \"mutation\": \"Y337A\",\r\n  \"notice\": \"Demonstration/reference content only; not experimental or clinical evidence.\",\r\n  \"organism\": \"Homo sapiens\",\r\n  \"pmid\": \"\",\r\n  \"scientific_release_eligible\": false,\r\n  \"synthetic_doi_label\": \"SYN-DOI-NOT-REAL-0003\",\r\n  \"synthetic_reference_id\": \"SYN-PAPER-0003\",\r\n  \"topic\": \"neurology\"\r\n}",
+  "warning_count": 0,
+  "warnings": []
+}

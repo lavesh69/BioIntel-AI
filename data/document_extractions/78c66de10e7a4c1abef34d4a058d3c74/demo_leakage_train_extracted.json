@@ -1,0 +1,597 @@
+{
+  "character_count": 3705,
+  "entities": [
+    {
+      "confidence": 0.86,
+      "end": 3100,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "CCO",
+      "source": "document",
+      "start": 3097,
+      "text": "CCO"
+    },
+    {
+      "confidence": 0.86,
+      "end": 3160,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "CCN",
+      "source": "document",
+      "start": 3157,
+      "text": "CCN"
+    },
+    {
+      "confidence": 0.86,
+      "end": 3220,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "CCC",
+      "source": "document",
+      "start": 3217,
+      "text": "CCC"
+    },
+    {
+      "confidence": 0.86,
+      "end": 3281,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "CCCC",
+      "source": "document",
+      "start": 3277,
+      "text": "CCCC"
+    },
+    {
+      "confidence": 0.86,
+      "end": 3342,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "CCCO",
+      "source": "document",
+      "start": 3338,
+      "text": "CCCO"
+    },
+    {
+      "confidence": 0.86,
+      "end": 3403,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "CCCN",
+      "source": "document",
+      "start": 3399,
+      "text": "CCCN"
+    },
+    {
+      "confidence": 0.86,
+      "end": 3462,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "CC",
+      "source": "document",
+      "start": 3460,
+      "text": "CC"
+    },
+    {
+      "confidence": 0.86,
+      "end": 3528,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "CCOC",
+      "source": "document",
+      "start": 3524,
+      "text": "CCOC"
+    },
+    {
+      "confidence": 0.86,
+      "end": 3588,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "CCS",
+      "source": "document",
+      "start": 3585,
+      "text": "CCS"
+    },
+    {
+      "confidence": 0.86,
+      "end": 3648,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "CNC",
+      "source": "document",
+      "start": 3645,
+      "text": "CNC"
+    }
+  ],
+  "entity_count": 10,
+  "file_type": "csv",
+  "image_count": 0,
+  "metadata": {
+    "delimiter": ",",
+    "encoding": "utf-8-sig",
+    "scientific_entity_extraction": "rule_based_v1",
+    "sensitive_finding_count": 0,
+    "sensitive_redaction_applied": false
+  },
+  "mime_type": "text/csv",
+  "page_count": 0,
+  "paragraph_count": 0,
+  "region_count": 0,
+  "regions": [],
+  "row_count": 60,
+  "sections": [
+    {
+      "confidence": 1.0,
+      "metadata": {},
+      "name": "Document",
+      "source": "document",
+      "text": "canonical_smiles,protein_sequence,label,split,record_id\r\nCCO,MACDEFGHIKLMNPQRSTVWYACDEFGHIKLMNPQR,0,train,TRAIN-001\r\nCCN,MCDEFGHIKLMNPQRSTVWYACDEFGHIKLMNPQRS,1,train,TRAIN-002\r\nCCC,MDEFGHIKLMNPQRSTVWYACDEFGHIKLMNPQRST,0,train,TRAIN-003\r\nCCCC,MEFGHIKLMNPQRSTVWYACDEFGHIKLMNPQRSTV,1,train,TRAIN-004\r\nCCCO,MFGHIKLMNPQRSTVWYACDEFGHIKLMNPQRSTVW,0,train,TRAIN-005\r\nCCCN,MGHIKLMNPQRSTVWYACDEFGHIKLMNPQRSTVWY,1,train,TRAIN-006\r\nCC(=O)O,MHIKLMNPQRSTVWYACDEFGHIKLMNPQRSTVWYA,0,train,TRAIN-007\r\nCCOC,MIKLMNPQRSTVWYACDEFGHIKLMNPQRSTVWYAC,1,train,TRAIN-008\r\nCCS,MKLMNPQRSTVWYACDEFGHIKLMNPQRSTVWYACD,0,train,TRAIN-009\r\nCNC,MLMNPQRSTVWYACDEFGHIKLMNPQRSTVWYACDE,1,train,TRAIN-010\r\nCCO,MMNPQRSTVWYACDEFGHIKLMNPQRSTVWYACDEF,0,train,TRAIN-011\r\nCCN,MNPQRSTVWYACDEFGHIKLMNPQRSTVWYACDEFG,1,train,TRAIN-012\r\nCCC,MPQRSTVWYACDEFGHIKLMNPQRSTVWYACDEFGH,0,train,TRAIN-013\r\nCCCC,MQRSTVWYACDEFGHIKLMNPQRSTVWYACDEFGHI,1,train,TRAIN-014\r\nCCCO,MRSTVWYACDEFGHIKLMNPQRSTVWYACDEFGHIK,0,train,TRAIN-015\r\nCCCN,MSTVWYACDEFGHIKLMNPQRSTVWYACDEFGHIKL,1,train,TRAIN-016\r\nCC(=O)O,MTVWYACDEFGHIKLMNPQRSTVWYACDEFGHIKLM,0,train,TRAIN-017\r\nCCOC,MVWYACDEFGHIKLMNPQRSTVWYACDEFGHIKLMN,1,train,TRAIN-018\r\nCCS,MWYACDEFGHIKLMNPQRSTVWYACDEFGHIKLMNP,0,train,TRAIN-019\r\nCNC,MYACDEFGHIKLMNPQRSTVWYACDEFGHIKLMNPQ,1,train,TRAIN-020\r\nCCO,MACDEFGHIKLMNPQRSTVWYACDEFGHIKLMNPQR,0,train,TRAIN-021\r\nCCN,MCDEFGHIKLMNPQRSTVWYACDEFGHIKLMNPQRS,1,train,TRAIN-022\r\nCCC,MDEFGHIKLMNPQRSTVWYACDEFGHIKLMNPQRST,0,train,TRAIN-023\r\nCCCC,MEFGHIKLMNPQRSTVWYACDEFGHIKLMNPQRSTV,1,train,TRAIN-024\r\nCCCO,MFGHIKLMNPQRSTVWYACDEFGHIKLMNPQRSTVW,0,train,TRAIN-025\r\nCCCN,MGHIKLMNPQRSTVWYACDEFGHIKLMNPQRSTVWY,1,train,TRAIN-026\r\nCC(=O)O,MHIKLMNPQRSTVWYACDEFGHIKLMNPQRSTVWYA,0,train,TRAIN-027\r\nCCOC,MIKLMNPQRSTVWYACDEFGHIKLMNPQRSTVWYAC,1,train,TRAIN-028\r\nCCS,MKLMNPQRSTVWYACDEFGHIKLMNPQRSTVWYACD,0,train,TRAIN-029\r\nCNC,MLMNPQRSTVWYACDEFGHIKLMNPQRSTVWYACDE,1,train,TRAIN-030\r\nCCO,MMNPQRSTVWYACDEFGHIKLMNPQRSTVWYACDEF,0,train,TRAIN-031\r\nCCN,MNPQRSTVWYACDEFGHIKLMNPQRSTVWYACDEFG,1,train,TRAIN-032\r\nCCC,MPQRSTVWYACDEFGHIKLMNPQRSTVWYACDEFGH,0,train,TRAIN-033\r\nCCCC,MQRSTVWYACDEFGHIKLMNPQRSTVWYACDEFGHI,1,train,TRAIN-034\r\nCCCO,MRSTVWYACDEFGHIKLMNPQRSTVWYACDEFGHIK,0,train,TRAIN-035\r\nCCCN,MSTVWYACDEFGHIKLMNPQRSTVWYACDEFGHIKL,1,train,TRAIN-036\r\nCC(=O)O,MTVWYACDEFGHIKLMNPQRSTVWYACDEFGHIKLM,0,train,TRAIN-037\r\nCCOC,MVWYACDEFGHIKLMNPQRSTVWYACDEFGHIKLMN,1,train,TRAIN-038\r\nCCS,MWYACDEFGHIKLMNPQRSTVWYACDEFGHIKLMNP,0,train,TRAIN-039\r\nCNC,MYACDEFGHIKLMNPQRSTVWYACDEFGHIKLMNPQ,1,train,TRAIN-040\r\nCCO,MACDEFGHIKLMNPQRSTVWYACDEFGHIKLMNPQR,0,train,TRAIN-041\r\nCCN,MCDEFGHIKLMNPQRSTVWYACDEFGHIKLMNPQRS,1,train,TRAIN-042\r\nCCC,MDEFGHIKLMNPQRSTVWYACDEFGHIKLMNPQRST,0,train,TRAIN-043\r\nCCCC,MEFGHIKLMNPQRSTVWYACDEFGHIKLMNPQRSTV,1,train,TRAIN-044\r\nCCCO,MFGHIKLMNPQRSTVWYACDEFGHIKLMNPQRSTVW,0,train,TRAIN-045\r\nCCCN,MGHIKLMNPQRSTVWYACDEFGHIKLMNPQRSTVWY,1,train,TRAIN-046\r\nCC(=O)O,MHIKLMNPQRSTVWYACDEFGHIKLMNPQRSTVWYA,0,train,TRAIN-047\r\nCCOC,MIKLMNPQRSTVWYACDEFGHIKLMNPQRSTVWYAC,1,train,TRAIN-048\r\nCCS,MKLMNPQRSTVWYACDEFGHIKLMNPQRSTVWYACD,0,train,TRAIN-049\r\nCNC,MLMNPQRSTVWYACDEFGHIKLMNPQRSTVWYACDE,1,train,TRAIN-050\r\nCCO,MMNPQRSTVWYACDEFGHIKLMNPQRSTVWYACDEF,0,train,TRAIN-051\r\nCCN,MNPQRSTVWYACDEFGHIKLMNPQRSTVWYACDEFG,1,train,TRAIN-052\r\nCCC,MPQRSTVWYACDEFGHIKLMNPQRSTVWYACDEFGH,0,train,TRAIN-053\r\nCCCC,MQRSTVWYACDEFGHIKLMNPQRSTVWYACDEFGHI,1,train,TRAIN-054\r\nCCCO,MRSTVWYACDEFGHIKLMNPQRSTVWYACDEFGHIK,0,train,TRAIN-055\r\nCCCN,MSTVWYACDEFGHIKLMNPQRSTVWYACDEFGHIKL,1,train,TRAIN-056\r\nCC(=O)O,MTVWYACDEFGHIKLMNPQRSTVWYACDEFGHIKLM,0,train,TRAIN-057\r\nCCOC,MVWYACDEFGHIKLMNPQRSTVWYACDEFGHIKLMN,1,train,TRAIN-058\r\nCCS,MWYACDEFGHIKLMNPQRSTVWYACDEFGHIKLMNP,0,train,TRAIN-059\r\nCNC,MYACDEFGHIKLMNPQRSTVWYACDEFGHIKLMNPQ,1,train,TRAIN-060\r\n"
+    }
+  ],
+  "sheet_count": 0,
+  "source_name": "demo_leakage_train.csv",
+  "source_sha256": "5a1eb208e4dbbb641d30b7216d1ac4a44746ce37ec4fa6129dcff4258f91294a",
+  "source_size_bytes": 3705,
+  "structured_fields": {
+    "activity_measurements": [],
+    "document_type": "research_document",
+    "entity_counts": {
+      "gene_or_protein": 10
+    },
+    "has_limitations": false,
+    "has_methods": false,
+    "has_results": false,
+    "publication_identifiers": [],
+    "sample_sizes": [],
+    "sections": {
+      "unclassified": "canonical_smiles,protein_sequence,label,split,record_id\nCCO,MACDEFGHIKLMNPQRSTVWYACDEFGHIKLMNPQR,0,train,TRAIN-001\nCCN,MCDEFGHIKLMNPQRSTVWYACDEFGHIKLMNPQRS,1,train,TRAIN-002\nCCC,MDEFGHIKLMNPQRSTVWYACDEFGHIKLMNPQRST,0,train,TRAIN-003\nCCCC,MEFGHIKLMNPQRSTVWYACDEFGHIKLMNPQRSTV,1,train,TRAIN-004\nCCCO,MFGHIKLMNPQRSTVWYACDEFGHIKLMNPQRSTVW,0,train,TRAIN-005\nCCCN,MGHIKLMNPQRSTVWYACDEFGHIKLMNPQRSTVWY,1,train,TRAIN-006\nCC(=O)O,MHIKLMNPQRSTVWYACDEFGHIKLMNPQRSTVWYA,0,train,TRAIN-007\nCCOC,MIKLMNPQRSTVWYACDEFGHIKLMNPQRSTVWYAC,1,train,TRAIN-008\nCCS,MKLMNPQRSTVWYACDEFGHIKLMNPQRSTVWYACD,0,train,TRAIN-009\nCNC,MLMNPQRSTVWYACDEFGHIKLMNPQRSTVWYACDE,1,train,TRAIN-010\nCCO,MMNPQRSTVWYACDEFGHIKLMNPQRSTVWYACDEF,0,train,TRAIN-011\nCCN,MNPQRSTVWYACDEFGHIKLMNPQRSTVWYACDEFG,1,train,TRAIN-012\nCCC,MPQRSTVWYACDEFGHIKLMNPQRSTVWYACDEFGH,0,train,TRAIN-013\nCCCC,MQRSTVWYACDEFGHIKLMNPQRSTVWYACDEFGHI,1,train,TRAIN-014\nCCCO,MRSTVWYACDEFGHIKLMNPQRSTVWYACDEFGHIK,0,train,TRAIN-015\nCCCN,MSTVWYACDEFGHIKLMNPQRSTVWYACDEFGHIKL,1,train,TRAIN-016\nCC(=O)O,MTVWYACDEFGHIKLMNPQRSTVWYACDEFGHIKLM,0,train,TRAIN-017\nCCOC,MVWYACDEFGHIKLMNPQRSTVWYACDEFGHIKLMN,1,train,TRAIN-018\nCCS,MWYACDEFGHIKLMNPQRSTVWYACDEFGHIKLMNP,0,train,TRAIN-019\nCNC,MYACDEFGHIKLMNPQRSTVWYACDEFGHIKLMNPQ,1,train,TRAIN-020\nCCO,MACDEFGHIKLMNPQRSTVWYACDEFGHIKLMNPQR,0,train,TRAIN-021\nCCN,MCDEFGHIKLMNPQRSTVWYACDEFGHIKLMNPQRS,1,train,TRAIN-022\nCCC,MDEFGHIKLMNPQRSTVWYACDEFGHIKLMNPQRST,0,train,TRAIN-023\nCCCC,MEFGHIKLMNPQRSTVWYACDEFGHIKLMNPQRSTV,1,train,TRAIN-024\nCCCO,MFGHIKLMNPQRSTVWYACDEFGHIKLMNPQRSTVW,0,train,TRAIN-025\nCCCN,MGHIKLMNPQRSTVWYACDEFGHIKLMNPQRSTVWY,1,train,TRAIN-026\nCC(=O)O,MHIKLMNPQRSTVWYACDEFGHIKLMNPQRSTVWYA,0,train,TRAIN-027\nCCOC,MIKLMNPQRSTVWYACDEFGHIKLMNPQRSTVWYAC,1,train,TRAIN-028\nCCS,MKLMNPQRSTVWYACDEFGHIKLMNPQRSTVWYACD,0,train,TRAIN-029\nCNC,MLMNPQRSTVWYACDEFGHIKLMNPQRSTVWYACDE,1,train,TRAIN-030\nCCO,MMNPQRSTVWYACDEFGHIKLMNPQRSTVWYACDEF,0,train,TRAIN-031\nCCN,MNPQRSTVWYACDEFGHIKLMNPQRSTVWYACDEFG,1,train,TRAIN-032\nCCC,MPQRSTVWYACDEFGHIKLMNPQRSTVWYACDEFGH,0,train,TRAIN-033\nCCCC,MQRSTVWYACDEFGHIKLMNPQRSTVWYACDEFGHI,1,train,TRAIN-034\nCCCO,MRSTVWYACDEFGHIKLMNPQRSTVWYACDEFGHIK,0,train,TRAIN-035\nCCCN,MSTVWYACDEFGHIKLMNPQRSTVWYACDEFGHIKL,1,train,TRAIN-036\nCC(=O)O,MTVWYACDEFGHIKLMNPQRSTVWYACDEFGHIKLM,0,train,TRAIN-037\nCCOC,MVWYACDEFGHIKLMNPQRSTVWYACDEFGHIKLMN,1,train,TRAIN-038\nCCS,MWYACDEFGHIKLMNPQRSTVWYACDEFGHIKLMNP,0,train,TRAIN-039\nCNC,MYACDEFGHIKLMNPQRSTVWYACDEFGHIKLMNPQ,1,train,TRAIN-040\nCCO,MACDEFGHIKLMNPQRSTVWYACDEFGHIKLMNPQR,0,train,TRAIN-041\nCCN,MCDEFGHIKLMNPQRSTVWYACDEFGHIKLMNPQRS,1,train,TRAIN-042\nCCC,MDEFGHIKLMNPQRSTVWYACDEFGHIKLMNPQRST,0,train,TRAIN-043\nCCCC,MEFGHIKLMNPQRSTVWYACDEFGHIKLMNPQRSTV,1,train,TRAIN-044\nCCCO,MFGHIKLMNPQRSTVWYACDEFGHIKLMNPQRSTVW,0,train,TRAIN-045\nCCCN,MGHIKLMNPQRSTVWYACDEFGHIKLMNPQRSTVWY,1,train,TRAIN-046\nCC(=O)O,MHIKLMNPQRSTVWYACDEFGHIKLMNPQRSTVWYA,0,train,TRAIN-047\nCCOC,MIKLMNPQRSTVWYACDEFGHIKLMNPQRSTVWYAC,1,train,TRAIN-048\nCCS,MKLMNPQRSTVWYACDEFGHIKLMNPQRSTVWYACD,0,train,TRAIN-049\nCNC,MLMNPQRSTVWYACDEFGHIKLMNPQRSTVWYACDE,1,train,TRAIN-050\nCCO,MMNPQRSTVWYACDEFGHIKLMNPQRSTVWYACDEF,0,train,TRAIN-051\nCCN,MNPQRSTVWYACDEFGHIKLMNPQRSTVWYACDEFG,1,train,TRAIN-052\nCCC,MPQRSTVWYACDEFGHIKLMNPQRSTVWYACDEFGH,0,train,TRAIN-053\nCCCC,MQRSTVWYACDEFGHIKLMNPQRSTVWYACDEFGHI,1,train,TRAIN-054\nCCCO,MRSTVWYACDEFGHIKLMNPQRSTVWYACDEFGHIK,0,train,TRAIN-055\nCCCN,MSTVWYACDEFGHIKLMNPQRSTVWYACDEFGHIKL,1,train,TRAIN-056\nCC(=O)O,MTVWYACDEFGHIKLMNPQRSTVWYACDEFGHIKLM,0,train,TRAIN-057\nCCOC,MVWYACDEFGHIKLMNPQRSTVWYACDEFGHIKLMN,1,train,TRAIN-058\nCCS,MWYACDEFGHIKLMNPQRSTVWYACDEFGHIKLMNP,0,train,TRAIN-059\nCNC,MYACDEFGHIKLMNPQRSTVWYACDEFGHIKLMNPQ,1,train,TRAIN-060"
+    },
+    "sensitive_findings": [],
+    "title": "demo_leakage_train.csv"
+  },
+  "table_count": 1,
+  "tables": [
+    {
+      "column_count": 5,
+      "columns": [
+        "canonical_smiles",
+        "protein_sequence",
+        "label",
+        "split",
+        "record_id"
+      ],
+      "confidence": 1.0,
+      "metadata": {
+        "delimiter": ",",
+        "encoding": "utf-8-sig"
+      },
+      "name": "Delimited Data",
+      "row_count": 60,
+      "rows": [
+        [
+          "CCO",
+          "MACDEFGHIKLMNPQRSTVWYACDEFGHIKLMNPQR",
+          "0",
+          "train",
+          "TRAIN-001"
+        ],
+        [
+          "CCN",
+          "MCDEFGHIKLMNPQRSTVWYACDEFGHIKLMNPQRS",
+          "1",
+          "train",
+          "TRAIN-002"
+        ],
+        [
+          "CCC",
+          "MDEFGHIKLMNPQRSTVWYACDEFGHIKLMNPQRST",
+          "0",
+          "train",
+          "TRAIN-003"
+        ],
+        [
+          "CCCC",
+          "MEFGHIKLMNPQRSTVWYACDEFGHIKLMNPQRSTV",
+          "1",
+          "train",
+          "TRAIN-004"
+        ],
+        [
+          "CCCO",
+          "MFGHIKLMNPQRSTVWYACDEFGHIKLMNPQRSTVW",
+          "0",
+          "train",
+          "TRAIN-005"
+        ],
+        [
+          "CCCN",
+          "MGHIKLMNPQRSTVWYACDEFGHIKLMNPQRSTVWY",
+          "1",
+          "train",
+          "TRAIN-006"
+        ],
+        [
+          "CC(=O)O",
+          "MHIKLMNPQRSTVWYACDEFGHIKLMNPQRSTVWYA",
+          "0",
+          "train",
+          "TRAIN-007"
+        ],
+        [
+          "CCOC",
+          "MIKLMNPQRSTVWYACDEFGHIKLMNPQRSTVWYAC",
+          "1",
+          "train",
+          "TRAIN-008"
+        ],
+        [
+          "CCS",
+          "MKLMNPQRSTVWYACDEFGHIKLMNPQRSTVWYACD",
+          "0",
+          "train",
+          "TRAIN-009"
+        ],
+        [
+          "CNC",
+          "MLMNPQRSTVWYACDEFGHIKLMNPQRSTVWYACDE",
+          "1",
+          "train",
+          "TRAIN-010"
+        ],
+        [
+          "CCO",
+          "MMNPQRSTVWYACDEFGHIKLMNPQRSTVWYACDEF",
+          "0",
+          "train",
+          "TRAIN-011"
+        ],
+        [
+          "CCN",
+          "MNPQRSTVWYACDEFGHIKLMNPQRSTVWYACDEFG",
+          "1",
+          "train",
+          "TRAIN-012"
+        ],
+        [
+          "CCC",
+          "MPQRSTVWYACDEFGHIKLMNPQRSTVWYACDEFGH",
+          "0",
+          "train",
+          "TRAIN-013"
+        ],
+        [
+          "CCCC",
+          "MQRSTVWYACDEFGHIKLMNPQRSTVWYACDEFGHI",
+          "1",
+          "train",
+          "TRAIN-014"
+        ],
+        [
+          "CCCO",
+          "MRSTVWYACDEFGHIKLMNPQRSTVWYACDEFGHIK",
+          "0",
+          "train",
+          "TRAIN-015"
+        ],
+        [
+          "CCCN",
+          "MSTVWYACDEFGHIKLMNPQRSTVWYACDEFGHIKL",
+          "1",
+          "train",
+          "TRAIN-016"
+        ],
+        [
+          "CC(=O)O",
+          "MTVWYACDEFGHIKLMNPQRSTVWYACDEFGHIKLM",
+          "0",
+          "train",
+          "TRAIN-017"
+        ],
+        [
+          "CCOC",
+          "MVWYACDEFGHIKLMNPQRSTVWYACDEFGHIKLMN",
+          "1",
+          "train",
+          "TRAIN-018"
+        ],
+        [
+          "CCS",
+          "MWYACDEFGHIKLMNPQRSTVWYACDEFGHIKLMNP",
+          "0",
+          "train",
+          "TRAIN-019"
+        ],
+        [
+          "CNC",
+          "MYACDEFGHIKLMNPQRSTVWYACDEFGHIKLMNPQ",
+          "1",
+          "train",
+          "TRAIN-020"
+        ],
+        [
+          "CCO",
+          "MACDEFGHIKLMNPQRSTVWYACDEFGHIKLMNPQR",
+          "0",
+          "train",
+          "TRAIN-021"
+        ],
+        [
+          "CCN",
+          "MCDEFGHIKLMNPQRSTVWYACDEFGHIKLMNPQRS",
+          "1",
+          "train",
+          "TRAIN-022"
+        ],
+        [
+          "CCC",
+          "MDEFGHIKLMNPQRSTVWYACDEFGHIKLMNPQRST",
+          "0",
+          "train",
+          "TRAIN-023"
+        ],
+        [
+          "CCCC",
+          "MEFGHIKLMNPQRSTVWYACDEFGHIKLMNPQRSTV",
+          "1",
+          "train",
+          "TRAIN-024"
+        ],
+        [
+          "CCCO",
+          "MFGHIKLMNPQRSTVWYACDEFGHIKLMNPQRSTVW",
+          "0",
+          "train",
+          "TRAIN-025"
+        ],
+        [
+          "CCCN",
+          "MGHIKLMNPQRSTVWYACDEFGHIKLMNPQRSTVWY",
+          "1",
+          "train",
+          "TRAIN-026"
+        ],
+        [
+          "CC(=O)O",
+          "MHIKLMNPQRSTVWYACDEFGHIKLMNPQRSTVWYA",
+          "0",
+          "train",
+          "TRAIN-027"
+        ],
+        [
+          "CCOC",
+          "MIKLMNPQRSTVWYACDEFGHIKLMNPQRSTVWYAC",
+          "1",
+          "train",
+          "TRAIN-028"
+        ],
+        [
+          "CCS",
+          "MKLMNPQRSTVWYACDEFGHIKLMNPQRSTVWYACD",
+          "0",
+          "train",
+          "TRAIN-029"
+        ],
+        [
+          "CNC",
+          "MLMNPQRSTVWYACDEFGHIKLMNPQRSTVWYACDE",
+          "1",
+          "train",
+          "TRAIN-030"
+        ],
+        [
+          "CCO",
+          "MMNPQRSTVWYACDEFGHIKLMNPQRSTVWYACDEF",
+          "0",
+          "train",
+          "TRAIN-031"
+        ],
+        [
+          "CCN",
+          "MNPQRSTVWYACDEFGHIKLMNPQRSTVWYACDEFG",
+          "1",
+          "train",
+          "TRAIN-032"
+        ],
+        [
+          "CCC",
+          "MPQRSTVWYACDEFGHIKLMNPQRSTVWYACDEFGH",
+          "0",
+          "train",
+          "TRAIN-033"
+        ],
+        [
+          "CCCC",
+          "MQRSTVWYACDEFGHIKLMNPQRSTVWYACDEFGHI",
+          "1",
+          "train",
+          "TRAIN-034"
+        ],
+        [
+          "CCCO",
+          "MRSTVWYACDEFGHIKLMNPQRSTVWYACDEFGHIK",
+          "0",
+          "train",
+          "TRAIN-035"
+        ],
+        [
+          "CCCN",
+          "MSTVWYACDEFGHIKLMNPQRSTVWYACDEFGHIKL",
+          "1",
+          "train",
+          "TRAIN-036"
+        ],
+        [
+          "CC(=O)O",
+          "MTVWYACDEFGHIKLMNPQRSTVWYACDEFGHIKLM",
+          "0",
+          "train",
+          "TRAIN-037"
+        ],
+        [
+          "CCOC",
+          "MVWYACDEFGHIKLMNPQRSTVWYACDEFGHIKLMN",
+          "1",
+          "train",
+          "TRAIN-038"
+        ],
+        [
+          "CCS",
+          "MWYACDEFGHIKLMNPQRSTVWYACDEFGHIKLMNP",
+          "0",
+          "train",
+          "TRAIN-039"
+        ],
+        [
+          "CNC",
+          "MYACDEFGHIKLMNPQRSTVWYACDEFGHIKLMNPQ",
+          "1",
+          "train",
+          "TRAIN-040"
+        ],
+        [
+          "CCO",
+          "MACDEFGHIKLMNPQRSTVWYACDEFGHIKLMNPQR",
+          "0",
+          "train",
+          "TRAIN-041"
+        ],
+        [
+          "CCN",
+          "MCDEFGHIKLMNPQRSTVWYACDEFGHIKLMNPQRS",
+          "1",
+          "train",
+          "TRAIN-042"
+        ],
+        [
+          "CCC",
+          "MDEFGHIKLMNPQRSTVWYACDEFGHIKLMNPQRST",
+          "0",
+          "train",
+          "TRAIN-043"
+        ],
+        [
+          "CCCC",
+          "MEFGHIKLMNPQRSTVWYACDEFGHIKLMNPQRSTV",
+          "1",
+          "train",
+          "TRAIN-044"
+        ],
+        [
+          "CCCO",
+          "MFGHIKLMNPQRSTVWYACDEFGHIKLMNPQRSTVW",
+          "0",
+          "train",
+          "TRAIN-045"
+        ],
+        [
+          "CCCN",
+          "MGHIKLMNPQRSTVWYACDEFGHIKLMNPQRSTVWY",
+          "1",
+          "train",
+          "TRAIN-046"
+        ],
+        [
+          "CC(=O)O",
+          "MHIKLMNPQRSTVWYACDEFGHIKLMNPQRSTVWYA",
+          "0",
+          "train",
+          "TRAIN-047"
+        ],
+        [
+          "CCOC",
+          "MIKLMNPQRSTVWYACDEFGHIKLMNPQRSTVWYAC",
+          "1",
+          "train",
+          "TRAIN-048"
+        ],
+        [
+          "CCS",
+          "MKLMNPQRSTVWYACDEFGHIKLMNPQRSTVWYACD",
+          "0",
+          "train",
+          "TRAIN-049"
+        ],
+        [
+          "CNC",
+          "MLMNPQRSTVWYACDEFGHIKLMNPQRSTVWYACDE",
+          "1",
+          "train",
+          "TRAIN-050"
+        ],
+        [
+          "CCO",
+          "MMNPQRSTVWYACDEFGHIKLMNPQRSTVWYACDEF",
+          "0",
+          "train",
+          "TRAIN-051"
+        ],
+        [
+          "CCN",
+          "MNPQRSTVWYACDEFGHIKLMNPQRSTVWYACDEFG",
+          "1",
+          "train",
+          "TRAIN-052"
+        ],
+        [
+          "CCC",
+          "MPQRSTVWYACDEFGHIKLMNPQRSTVWYACDEFGH",
+          "0",
+          "train",
+          "TRAIN-053"
+        ],
+        [
+          "CCCC",
+          "MQRSTVWYACDEFGHIKLMNPQRSTVWYACDEFGHI",
+          "1",
+          "train",
+          "TRAIN-054"
+        ],
+        [
+          "CCCO",
+          "MRSTVWYACDEFGHIKLMNPQRSTVWYACDEFGHIK",
+          "0",
+          "train",
+          "TRAIN-055"
+        ],
+        [
+          "CCCN",
+          "MSTVWYACDEFGHIKLMNPQRSTVWYACDEFGHIKL",
+          "1",
+          "train",
+          "TRAIN-056"
+        ],
+        [
+          "CC(=O)O",
+          "MTVWYACDEFGHIKLMNPQRSTVWYACDEFGHIKLM",
+          "0",
+          "train",
+          "TRAIN-057"
+        ],
+        [
+          "CCOC",
+          "MVWYACDEFGHIKLMNPQRSTVWYACDEFGHIKLMN",
+          "1",
+          "train",
+          "TRAIN-058"
+        ],
+        [
+          "CCS",
+          "MWYACDEFGHIKLMNPQRSTVWYACDEFGHIKLMNP",
+          "0",
+          "train",
+          "TRAIN-059"
+        ],
+        [
+          "CNC",
+          "MYACDEFGHIKLMNPQRSTVWYACDEFGHIKLMNPQ",
+          "1",
+          "train",
+          "TRAIN-060"
+        ]
+      ],
+      "source": "document"
+    }
+  ],
+  "text": "canonical_smiles,protein_sequence,label,split,record_id\r\nCCO,MACDEFGHIKLMNPQRSTVWYACDEFGHIKLMNPQR,0,train,TRAIN-001\r\nCCN,MCDEFGHIKLMNPQRSTVWYACDEFGHIKLMNPQRS,1,train,TRAIN-002\r\nCCC,MDEFGHIKLMNPQRSTVWYACDEFGHIKLMNPQRST,0,train,TRAIN-003\r\nCCCC,MEFGHIKLMNPQRSTVWYACDEFGHIKLMNPQRSTV,1,train,TRAIN-004\r\nCCCO,MFGHIKLMNPQRSTVWYACDEFGHIKLMNPQRSTVW,0,train,TRAIN-005\r\nCCCN,MGHIKLMNPQRSTVWYACDEFGHIKLMNPQRSTVWY,1,train,TRAIN-006\r\nCC(=O)O,MHIKLMNPQRSTVWYACDEFGHIKLMNPQRSTVWYA,0,train,TRAIN-007\r\nCCOC,MIKLMNPQRSTVWYACDEFGHIKLMNPQRSTVWYAC,1,train,TRAIN-008\r\nCCS,MKLMNPQRSTVWYACDEFGHIKLMNPQRSTVWYACD,0,train,TRAIN-009\r\nCNC,MLMNPQRSTVWYACDEFGHIKLMNPQRSTVWYACDE,1,train,TRAIN-010\r\nCCO,MMNPQRSTVWYACDEFGHIKLMNPQRSTVWYACDEF,0,train,TRAIN-011\r\nCCN,MNPQRSTVWYACDEFGHIKLMNPQRSTVWYACDEFG,1,train,TRAIN-012\r\nCCC,MPQRSTVWYACDEFGHIKLMNPQRSTVWYACDEFGH,0,train,TRAIN-013\r\nCCCC,MQRSTVWYACDEFGHIKLMNPQRSTVWYACDEFGHI,1,train,TRAIN-014\r\nCCCO,MRSTVWYACDEFGHIKLMNPQRSTVWYACDEFGHIK,0,train,TRAIN-015\r\nCCCN,MSTVWYACDEFGHIKLMNPQRSTVWYACDEFGHIKL,1,train,TRAIN-016\r\nCC(=O)O,MTVWYACDEFGHIKLMNPQRSTVWYACDEFGHIKLM,0,train,TRAIN-017\r\nCCOC,MVWYACDEFGHIKLMNPQRSTVWYACDEFGHIKLMN,1,train,TRAIN-018\r\nCCS,MWYACDEFGHIKLMNPQRSTVWYACDEFGHIKLMNP,0,train,TRAIN-019\r\nCNC,MYACDEFGHIKLMNPQRSTVWYACDEFGHIKLMNPQ,1,train,TRAIN-020\r\nCCO,MACDEFGHIKLMNPQRSTVWYACDEFGHIKLMNPQR,0,train,TRAIN-021\r\nCCN,MCDEFGHIKLMNPQRSTVWYACDEFGHIKLMNPQRS,1,train,TRAIN-022\r\nCCC,MDEFGHIKLMNPQRSTVWYACDEFGHIKLMNPQRST,0,train,TRAIN-023\r\nCCCC,MEFGHIKLMNPQRSTVWYACDEFGHIKLMNPQRSTV,1,train,TRAIN-024\r\nCCCO,MFGHIKLMNPQRSTVWYACDEFGHIKLMNPQRSTVW,0,train,TRAIN-025\r\nCCCN,MGHIKLMNPQRSTVWYACDEFGHIKLMNPQRSTVWY,1,train,TRAIN-026\r\nCC(=O)O,MHIKLMNPQRSTVWYACDEFGHIKLMNPQRSTVWYA,0,train,TRAIN-027\r\nCCOC,MIKLMNPQRSTVWYACDEFGHIKLMNPQRSTVWYAC,1,train,TRAIN-028\r\nCCS,MKLMNPQRSTVWYACDEFGHIKLMNPQRSTVWYACD,0,train,TRAIN-029\r\nCNC,MLMNPQRSTVWYACDEFGHIKLMNPQRSTVWYACDE,1,train,TRAIN-030\r\nCCO,MMNPQRSTVWYACDEFGHIKLMNPQRSTVWYACDEF,0,train,TRAIN-031\r\nCCN,MNPQRSTVWYACDEFGHIKLMNPQRSTVWYACDEFG,1,train,TRAIN-032\r\nCCC,MPQRSTVWYACDEFGHIKLMNPQRSTVWYACDEFGH,0,train,TRAIN-033\r\nCCCC,MQRSTVWYACDEFGHIKLMNPQRSTVWYACDEFGHI,1,train,TRAIN-034\r\nCCCO,MRSTVWYACDEFGHIKLMNPQRSTVWYACDEFGHIK,0,train,TRAIN-035\r\nCCCN,MSTVWYACDEFGHIKLMNPQRSTVWYACDEFGHIKL,1,train,TRAIN-036\r\nCC(=O)O,MTVWYACDEFGHIKLMNPQRSTVWYACDEFGHIKLM,0,train,TRAIN-037\r\nCCOC,MVWYACDEFGHIKLMNPQRSTVWYACDEFGHIKLMN,1,train,TRAIN-038\r\nCCS,MWYACDEFGHIKLMNPQRSTVWYACDEFGHIKLMNP,0,train,TRAIN-039\r\nCNC,MYACDEFGHIKLMNPQRSTVWYACDEFGHIKLMNPQ,1,train,TRAIN-040\r\nCCO,MACDEFGHIKLMNPQRSTVWYACDEFGHIKLMNPQR,0,train,TRAIN-041\r\nCCN,MCDEFGHIKLMNPQRSTVWYACDEFGHIKLMNPQRS,1,train,TRAIN-042\r\nCCC,MDEFGHIKLMNPQRSTVWYACDEFGHIKLMNPQRST,0,train,TRAIN-043\r\nCCCC,MEFGHIKLMNPQRSTVWYACDEFGHIKLMNPQRSTV,1,train,TRAIN-044\r\nCCCO,MFGHIKLMNPQRSTVWYACDEFGHIKLMNPQRSTVW,0,train,TRAIN-045\r\nCCCN,MGHIKLMNPQRSTVWYACDEFGHIKLMNPQRSTVWY,1,train,TRAIN-046\r\nCC(=O)O,MHIKLMNPQRSTVWYACDEFGHIKLMNPQRSTVWYA,0,train,TRAIN-047\r\nCCOC,MIKLMNPQRSTVWYACDEFGHIKLMNPQRSTVWYAC,1,train,TRAIN-048\r\nCCS,MKLMNPQRSTVWYACDEFGHIKLMNPQRSTVWYACD,0,train,TRAIN-049\r\nCNC,MLMNPQRSTVWYACDEFGHIKLMNPQRSTVWYACDE,1,train,TRAIN-050\r\nCCO,MMNPQRSTVWYACDEFGHIKLMNPQRSTVWYACDEF,0,train,TRAIN-051\r\nCCN,MNPQRSTVWYACDEFGHIKLMNPQRSTVWYACDEFG,1,train,TRAIN-052\r\nCCC,MPQRSTVWYACDEFGHIKLMNPQRSTVWYACDEFGH,0,train,TRAIN-053\r\nCCCC,MQRSTVWYACDEFGHIKLMNPQRSTVWYACDEFGHI,1,train,TRAIN-054\r\nCCCO,MRSTVWYACDEFGHIKLMNPQRSTVWYACDEFGHIK,0,train,TRAIN-055\r\nCCCN,MSTVWYACDEFGHIKLMNPQRSTVWYACDEFGHIKL,1,train,TRAIN-056\r\nCC(=O)O,MTVWYACDEFGHIKLMNPQRSTVWYACDEFGHIKLM,0,train,TRAIN-057\r\nCCOC,MVWYACDEFGHIKLMNPQRSTVWYACDEFGHIKLMN,1,train,TRAIN-058\r\nCCS,MWYACDEFGHIKLMNPQRSTVWYACDEFGHIKLMNP,0,train,TRAIN-059\r\nCNC,MYACDEFGHIKLMNPQRSTVWYACDEFGHIKLMNPQ,1,train,TRAIN-060\r\n",
+  "warning_count": 0,
+  "warnings": []
+}

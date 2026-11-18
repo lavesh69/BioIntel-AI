@@ -1,0 +1,118 @@
+{
+  "duplicate_of_run_id": null,
+  "engine_version": "2.7.0",
+  "outputs": [
+    {
+      "created_at_utc": "2026-07-04T16:48:33.328356+00:00",
+      "filename": "07_rare_disease_protocol_extracted.json",
+      "format": "json",
+      "integrity_status": "unknown",
+      "output_id": "a68a06d905b74f44bea488c0642f32e7",
+      "path": "data/document_extractions/9ab5ae1070044c329050173aec590882/07_rare_disease_protocol_extracted.json",
+      "run_id": "9ab5ae1070044c329050173aec590882",
+      "sha256": "b91360dc73a660de0b08ce0e437d13ba24c16e89c4677c3b0a30e4d554b9169c",
+      "size_bytes": 3536,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:48:33.332057+00:00",
+      "filename": "07_rare_disease_protocol_extracted.xlsx",
+      "format": "xlsx",
+      "integrity_status": "unknown",
+      "output_id": "1d7d185064da4bff8bd697aa1e8855bd",
+      "path": "data/document_extractions/9ab5ae1070044c329050173aec590882/07_rare_disease_protocol_extracted.xlsx",
+      "run_id": "9ab5ae1070044c329050173aec590882",
+      "sha256": "b1c7cf82a1766d709e4d93b597fcb6357d32549b98813307081b4738519703c9",
+      "size_bytes": 8605,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:48:33.334484+00:00",
+      "filename": "07_rare_disease_protocol_extracted.docx",
+      "format": "docx",
+      "integrity_status": "unknown",
+      "output_id": "41cac1a822114db1983448f52fc439db",
+      "path": "data/document_extractions/9ab5ae1070044c329050173aec590882/07_rare_disease_protocol_extracted.docx",
+      "run_id": "9ab5ae1070044c329050173aec590882",
+      "sha256": "bb7e04d46ec21730719cd6304e6c99d6f3824b9c80806b93c5629464941d9c94",
+      "size_bytes": 37714,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:48:33.336522+00:00",
+      "filename": "07_rare_disease_protocol_extracted.pdf",
+      "format": "pdf",
+      "integrity_status": "unknown",
+      "output_id": "78013b0270cc4943b34bb37b7d8b5540",
+      "path": "data/document_extractions/9ab5ae1070044c329050173aec590882/07_rare_disease_protocol_extracted.pdf",
+      "run_id": "9ab5ae1070044c329050173aec590882",
+      "sha256": "b882b26210d082f44ea20547e0ba63f96171df629dff39d20cfe69dd50c4fbce",
+      "size_bytes": 3580,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:48:33.338546+00:00",
+      "filename": "07_rare_disease_protocol_csv_tables.zip",
+      "format": "csv_zip",
+      "integrity_status": "unknown",
+      "output_id": "28ffae88a0094e08a0ea78506fbdbd89",
+      "path": "data/document_extractions/9ab5ae1070044c329050173aec590882/07_rare_disease_protocol_csv_tables.zip",
+      "run_id": "9ab5ae1070044c329050173aec590882",
+      "sha256": "71ae7ce959e264d834df3eaeec4a8717066d4eba93f95d1460e7a07f9e1f8a21",
+      "size_bytes": 2321,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:48:33.340537+00:00",
+      "filename": "07_rare_disease_protocol_complete_export.zip",
+      "format": "bundle_zip",
+      "integrity_status": "unknown",
+      "output_id": "81bcff9f856c4f27a0d1b9a5862d4067",
+      "path": "data/document_extractions/9ab5ae1070044c329050173aec590882/07_rare_disease_protocol_complete_export.zip",
+      "run_id": "9ab5ae1070044c329050173aec590882",
+      "sha256": "e2364b831bf52635d5172149ac0700d9dd8f050a75085773ee964c4c410866bb",
+      "size_bytes": 48955,
+      "verified_at_utc": null
+    }
+  ],
+  "run_id": "9ab5ae1070044c329050173aec590882",
+  "source": {
+    "character_count": 217,
+    "entity_count": 7,
+    "file_type": "txt",
+    "image_count": 0,
+    "mime_type": "text/plain",
+    "page_count": 0,
+    "paragraph_count": 0,
+    "region_count": 0,
+    "row_count": 0,
+    "sheet_count": 0,
+    "source_name": "07_rare_disease_protocol.txt",
+    "source_sha256": "0a1990593238bd971e1959d052e33c9067ab865aee68bb262135f209ed4a5e1d",
+    "source_size_bytes": 217,
+    "table_count": 0,
+    "warning_count": 0
+  },
+  "structured_fields": {
+    "activity_measurements": [],
+    "document_type": "research_document",
+    "entity_counts": {
+      "assay_endpoint": 1,
+      "disease": 1,
+      "gene_or_protein": 3,
+      "mutation": 1,
+      "organism": 1
+    },
+    "has_limitations": false,
+    "has_methods": false,
+    "has_results": false,
+    "publication_identifiers": [],
+    "sample_sizes": [],
+    "sections": {
+      "unclassified": "DEMO PROTOCOL 7\nTarget: CFTR\nCompound: ivacaftor\nDisease: cystic fibrosis\nMutation: G551D\nAssay: EC50\nOrganism: Homo sapiens\nResult: 536 nM\nDemonstration/reference content only; not experimental or clinical evidence."
+    },
+    "sensitive_findings": [],
+    "title": "07_rare_disease_protocol.txt"
+  },
+  "warnings": []
+}

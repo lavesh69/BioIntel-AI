@@ -1,0 +1,4193 @@
+{
+  "character_count": 1628,
+  "entities": [
+    {
+      "confidence": 0.86,
+      "end": 501,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "AI",
+      "source": "page:1",
+      "start": 499,
+      "text": "AI"
+    },
+    {
+      "confidence": 0.86,
+      "end": 140,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "PDF",
+      "source": "page:1",
+      "start": 137,
+      "text": "PDF"
+    },
+    {
+      "confidence": 0.86,
+      "end": 593,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "PTGS2",
+      "source": "page:1",
+      "start": 588,
+      "text": "PTGS2"
+    },
+    {
+      "confidence": 0.86,
+      "end": 273,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "SIRT1",
+      "source": "page:1",
+      "start": 268,
+      "text": "SIRT1"
+    },
+    {
+      "confidence": 0.86,
+      "end": 767,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "PIK3CA",
+      "source": "page:1",
+      "start": 761,
+      "text": "PIK3CA"
+    },
+    {
+      "confidence": 0.97,
+      "end": 772,
+      "entity_type": "assay_endpoint",
+      "metadata": {},
+      "normalized": "IC50",
+      "source": "page:1",
+      "start": 768,
+      "text": "IC50"
+    },
+    {
+      "confidence": 0.86,
+      "end": 772,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "IC50",
+      "source": "page:1",
+      "start": 768,
+      "text": "IC50"
+    },
+    {
+      "confidence": 0.97,
+      "end": 685,
+      "entity_type": "assay_endpoint",
+      "metadata": {},
+      "normalized": "Ki",
+      "source": "page:1",
+      "start": 683,
+      "text": "Ki"
+    },
+    {
+      "confidence": 0.97,
+      "end": 320,
+      "entity_type": "assay_endpoint",
+      "metadata": {},
+      "normalized": "EC50",
+      "source": "page:1",
+      "start": 316,
+      "text": "EC50"
+    },
+    {
+      "confidence": 0.86,
+      "end": 320,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "EC50",
+      "source": "page:1",
+      "start": 316,
+      "text": "EC50"
+    },
+    {
+      "confidence": 0.86,
+      "end": 723,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "VKORC1",
+      "source": "page:1",
+      "start": 717,
+      "text": "VKORC1"
+    },
+    {
+      "confidence": 0.86,
+      "end": 79,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "VKORC1",
+      "source": "page:2",
+      "start": 73,
+      "text": "VKORC1"
+    },
+    {
+      "confidence": 0.86,
+      "end": 55,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "PTGS2",
+      "source": "page:3",
+      "start": 50,
+      "text": "PTGS2"
+    },
+    {
+      "confidence": 0.86,
+      "end": 71,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "SIRT1",
+      "source": "page:3",
+      "start": 66,
+      "text": "SIRT1"
+    },
+    {
+      "confidence": 0.86,
+      "end": 79,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "PIK3CA",
+      "source": "page:3",
+      "start": 73,
+      "text": "PIK3CA"
+    },
+    {
+      "confidence": 0.86,
+      "end": 87,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "VKORC1",
+      "source": "page:3",
+      "start": 81,
+      "text": "VKORC1"
+    },
+    {
+      "confidence": 0.97,
+      "end": 159,
+      "entity_type": "assay_endpoint",
+      "metadata": {},
+      "normalized": "IC50",
+      "source": "page:3",
+      "start": 155,
+      "text": "IC50"
+    },
+    {
+      "confidence": 0.86,
+      "end": 159,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "IC50",
+      "source": "page:3",
+      "start": 155,
+      "text": "IC50"
+    },
+    {
+      "confidence": 0.97,
+      "end": 163,
+      "entity_type": "assay_endpoint",
+      "metadata": {},
+      "normalized": "Ki",
+      "source": "page:3",
+      "start": 161,
+      "text": "Ki"
+    },
+    {
+      "confidence": 0.97,
+      "end": 169,
+      "entity_type": "assay_endpoint",
+      "metadata": {},
+      "normalized": "EC50",
+      "source": "page:3",
+      "start": 165,
+      "text": "EC50"
+    },
+    {
+      "confidence": 0.86,
+      "end": 169,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "EC50",
+      "source": "page:3",
+      "start": 165,
+      "text": "EC50"
+    },
+    {
+      "confidence": 0.9,
+      "end": 191,
+      "entity_type": "organism",
+      "metadata": {},
+      "normalized": "Homo sapiens",
+      "source": "page:3",
+      "start": 179,
+      "text": "Homo sapiens"
+    },
+    {
+      "confidence": 0.86,
+      "end": 273,
+      "entity_type": "gene_or_protein",
+      "metadata": {},
+      "normalized": "ID",
+      "source": "page:3",
+      "start": 271,
+      "text": "ID"
+    }
+  ],
+  "entity_count": 23,
+  "file_type": "pdf",
+  "image_count": 0,
+  "metadata": {
+    "Author": "(anonymous)",
+    "CreationDate": "D:20260704163340+00'00'",
+    "Creator": "(unspecified)",
+    "Keywords": "",
+    "ModDate": "D:20260704163340+00'00'",
+    "Producer": "ReportLab PDF Library - (opensource)",
+    "Subject": "(unspecified)",
+    "Title": "(anonymous)",
+    "Trapped": "/False",
+    "encrypted": false,
+    "layout_provenance": "normalized page bounding boxes",
+    "non_empty_text_pages": 3,
+    "ocr_mode": "off",
+    "ocr_pages": [],
+    "page_dimensions": [
+      {
+        "height": 841.8898,
+        "page": 1,
+        "width": 595.2756
+      },
+      {
+        "height": 841.8898,
+        "page": 2,
+        "width": 595.2756
+      },
+      {
+        "height": 841.8898,
+        "page": 3,
+        "width": 595.2756
+      }
+    ],
+    "scientific_entity_extraction": "rule_based_v1",
+    "sensitive_finding_count": 0,
+    "sensitive_redaction_applied": false
+  },
+  "mime_type": "application/pdf",
+  "page_count": 3,
+  "paragraph_count": 0,
+  "region_count": 218,
+  "regions": [
+    {
+      "bbox": [
+        0.22274690916274745,
+        0.06144034528034429,
+        0.33363000264079357,
+        0.08282081574096752
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "560014d48a44451998a5cb4f4657ff65",
+      "source": "page:1",
+      "text": "BioIntel"
+    },
+    {
+      "bbox": [
+        0.3420361929835524,
+        0.06144034528034429,
+        0.3722742877416779,
+        0.08282081574096752
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "f51f92b2071f42eeadf588421dd6a90a",
+      "source": "page:1",
+      "text": "AI"
+    },
+    {
+      "bbox": [
+        0.38068047808443684,
+        0.06144034528034429,
+        0.5268816662399735,
+        0.08282081574096752
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "6e06fd4fbbd04af99842a8d232ecf756",
+      "source": "page:1",
+      "text": "Reference"
+    },
+    {
+      "bbox": [
+        0.5352878565827325,
+        0.06144034528034429,
+        0.6714197591838134,
+        0.08282081574096752
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "3b826143108a45a1a5fcf280db7df113",
+      "source": "page:1",
+      "text": "Research"
+    },
+    {
+      "bbox": [
+        0.6798259495265723,
+        0.06144034528034429,
+        0.7772530908372526,
+        0.08282081574096752
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "3e14a2cb541e4b33b928ef0c3c1184bd",
+      "source": "page:1",
+      "text": "Report"
+    },
+    {
+      "bbox": [
+        0.08063491935500128,
+        0.10084217673144398,
+        0.24658158338759392,
+        0.11747143153415093
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "fed4e23f4ccb44ab8629aac8e1d85aa3",
+      "source": "page:1",
+      "text": "Demonstration"
+    },
+    {
+      "bbox": [
+        0.2531197314319619,
+        0.10084217673144398,
+        0.3380451004543106,
+        0.11747143153415093
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "f702f771bf7747dbb5a534d1437c0fa7",
+      "source": "page:1",
+      "text": "content"
+    },
+    {
+      "bbox": [
+        0.3445832484986786,
+        0.10084217673144398,
+        0.39293732180522767,
+        0.11747143153415093
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "55c1da5aab7943d4adc755b750e2304c",
+      "source": "page:1",
+      "text": "only"
+    },
+    {
+      "bbox": [
+        0.3994754698495957,
+        0.10084217673144398,
+        0.4073071363919502,
+        0.11747143153415093
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "70e106b64a854a5c8afadc4c18aa7f04",
+      "source": "page:1",
+      "text": "-"
+    },
+    {
+      "bbox": [
+        0.4138452844363182,
+        0.10084217673144398,
+        0.4504165801521178,
+        0.11747143153415093
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "eede0da743df4ae3a4a5985e4b32ec15",
+      "source": "page:1",
+      "text": "not"
+    },
+    {
+      "bbox": [
+        0.45695472819648575,
+        0.10084217673144398,
+        0.6020404666342781,
+        0.11747143153415093
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "5f2ea73ea90f44a38128e10957923318",
+      "source": "page:1",
+      "text": "experimental"
+    },
+    {
+      "bbox": [
+        0.6085786146786462,
+        0.10084217673144398,
+        0.7092378723401392,
+        0.11747143153415093
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "ef6834fb4df447e7b5c7af0cb05165c8",
+      "source": "page:1",
+      "text": "evidence"
+    },
+    {
+      "bbox": [
+        0.08063491935500128,
+        0.14458661929387906,
+        0.2032806316939582,
+        0.1659670897545023
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "d527a9c2f9e1491583ed245d940fc9cb",
+      "source": "page:1",
+      "text": "Abstract"
+    },
+    {
+      "bbox": [
+        0.08063491935500128,
+        0.1758781256169157,
+        0.11236811990950073,
+        0.1877561647617064
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "d3302ca3810d4667ba4814e551063293",
+      "source": "page:1",
+      "text": "This"
+    },
+    {
+      "bbox": [
+        0.11703822565547789,
+        0.1758781256169157,
+        0.18799695468787903,
+        0.1877561647617064
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "f1d18fb55c18415bb921fcd35ebef22d",
+      "source": "page:1",
+      "text": "reference"
+    },
+    {
+      "bbox": [
+        0.19266706043385617,
+        0.1758781256169157,
+        0.23654589571620274,
+        0.1877561647617064
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "7b90daf531f24818acaccc5314a3793b",
+      "source": "page:1",
+      "text": "report"
+    },
+    {
+      "bbox": [
+        0.2412160014621799,
+        0.1758781256169157,
+        0.34298398926480445,
+        0.1877561647617064
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "dfc4eedf8b9b4368934499eac8f97915",
+      "source": "page:1",
+      "text": "demonstrates"
+    },
+    {
+      "bbox": [
+        0.3476540950107816,
+        0.1758781256169157,
+        0.3812519780753655,
+        0.1877561647617064
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "c3fceff985fb4f82a8be8d0bb0bad9bc",
+      "source": "page:1",
+      "text": "PDF"
+    },
+    {
+      "bbox": [
+        0.38592208382134263,
+        0.1758781256169157,
+        0.46341560110980523,
+        0.1877561647617064
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "29f4a18098a745e5be7aa387a3b98d5a",
+      "source": "page:1",
+      "text": "extraction,"
+    },
+    {
+      "bbox": [
+        0.46808570685578255,
+        0.1758781256169157,
+        0.5045058120977914,
+        0.1877561647617064
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "1b9e98811db04483a06439c6012bde25",
+      "source": "page:1",
+      "text": "table"
+    },
+    {
+      "bbox": [
+        0.5091759178437686,
+        0.1758781256169157,
+        0.578253165424553,
+        0.1877561647617064
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "e7a19f25b285418a82f6a518a32435b9",
+      "source": "page:1",
+      "text": "recovery,"
+    },
+    {
+      "bbox": [
+        0.58292327117053,
+        0.1758781256169157,
+        0.6473304130053373,
+        0.1877561647617064
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "a3013768fa48473bb9603cb5ba0bdec2",
+      "source": "page:1",
+      "text": "scientific"
+    },
+    {
+      "bbox": [
+        0.6520005187513145,
+        0.1758781256169157,
+        0.6921499890134921,
+        0.1877561647617064
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "5d9757d775ee4a9388a0520c9d5dcc44",
+      "source": "page:1",
+      "text": "entity"
+    },
+    {
+      "bbox": [
+        0.6968200947594693,
+        0.1758781256169157,
+        0.7836538235398862,
+        0.1877561647617064
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "ff73b932bf1d4118913b6668bbca6c18",
+      "source": "page:1",
+      "text": "recognition,"
+    },
+    {
+      "bbox": [
+        0.7883239292858634,
+        0.1758781256169157,
+        0.8620880815541573,
+        0.1877561647617064
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "42078f5503be4904abf92414d290c251",
+      "source": "page:1",
+      "text": "document"
+    },
+    {
+      "bbox": [
+        0.8667581873001342,
+        0.1758781256169157,
+        0.9171718108385423,
+        0.1877561647617064
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "bfa9f9011c7a4eb7aa6031642b54b4fe",
+      "source": "page:1",
+      "text": "search"
+    },
+    {
+      "bbox": [
+        0.08063491935500128,
+        0.19013177259066452,
+        0.10865555383086423,
+        0.2020098117354552
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "06ab23d8208d46b783dcfbb7ce26a0ed",
+      "source": "page:1",
+      "text": "and"
+    },
+    {
+      "bbox": [
+        0.11332565957684139,
+        0.19013177259066452,
+        0.18055502358907372,
+        0.2020098117354552
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "4390d30753ca4aadbd52268ee6f87acb",
+      "source": "page:1",
+      "text": "evidence"
+    },
+    {
+      "bbox": [
+        0.18522512933505086,
+        0.19013177259066452,
+        0.24964907011139043,
+        0.2020098117354552
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "8dec517154144c81b86b0cffef274f93",
+      "source": "page:1",
+      "text": "bridging."
+    },
+    {
+      "bbox": [
+        0.2543191758573676,
+        0.19013177259066452,
+        0.26365938734932187,
+        0.2020098117354552
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "1c4441424a8046be9b71088bc27de5d7",
+      "source": "page:1",
+      "text": "It"
+    },
+    {
+      "bbox": [
+        0.2683294930952991,
+        0.19013177259066452,
+        0.34207684642206065,
+        0.2020098117354552
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "d080b2f8441440f8be4fca381c6faaf3",
+      "source": "page:1",
+      "text": "discusses"
+    },
+    {
+      "bbox": [
+        0.3467469521680378,
+        0.19013177259066452,
+        0.40650078719840016,
+        0.2020098117354552
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "3ace361904494da1ababa5966d3cb445",
+      "source": "page:1",
+      "text": "PTGS2,"
+    },
+    {
+      "bbox": [
+        0.4111708929443773,
+        0.19013177259066452,
+        0.4961231402731775,
+        0.2020098117354552
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "020a864221414ef4bb53dc48eeebcaf3",
+      "source": "page:1",
+      "text": "ADORA2A,"
+    },
+    {
+      "bbox": [
+        0.5007932460191548,
+        0.19013177259066452,
+        0.5484014463216701,
+        0.2020098117354552
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "0276ac894c90475297a4cc69c9e4cb2b",
+      "source": "page:1",
+      "text": "SIRT1"
+    },
+    {
+      "bbox": [
+        0.5530715520676472,
+        0.19013177259066452,
+        0.5810921865435101,
+        0.2020098117354552
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "93e85a30fa3f42f18bd56a0c9b5e272e",
+      "source": "page:1",
+      "text": "and"
+    },
+    {
+      "bbox": [
+        0.5857622922894873,
+        0.19013177259066452,
+        0.6455161273198498,
+        0.2020098117354552
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "7a13a603a0f54256ada5392d068cb491",
+      "source": "page:1",
+      "text": "PIK3CA"
+    },
+    {
+      "bbox": [
+        0.6501862330658269,
+        0.19013177259066452,
+        0.6800547511102419,
+        0.2020098117354552
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "2d5d6c90cd784aa5acf4050dccc8fbc7",
+      "source": "page:1",
+      "text": "with"
+    },
+    {
+      "bbox": [
+        0.6847248568562191,
+        0.19013177259066452,
+        0.7593961519672568,
+        0.2020098117354552
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "0c267a5579194bc4894b96eda697d94c",
+      "source": "page:1",
+      "text": "illustrative"
+    },
+    {
+      "bbox": [
+        0.7640662577132339,
+        0.19013177259066452,
+        0.8042157279754116,
+        0.2020098117354552
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "bc99bbf618444a8985abad873d1d8fca",
+      "source": "page:1",
+      "text": "IC50,"
+    },
+    {
+      "bbox": [
+        0.8088858337213887,
+        0.19013177259066452,
+        0.8238200927435962,
+        0.2020098117354552
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "9ca3a3e5dd8e4f7187c26c1841c5da49",
+      "source": "page:1",
+      "text": "Ki"
+    },
+    {
+      "bbox": [
+        0.8284901984895734,
+        0.19013177259066452,
+        0.8565108329654364,
+        0.2020098117354552
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "373b3f783d7142619035b542cfc4df78",
+      "source": "page:1",
+      "text": "and"
+    },
+    {
+      "bbox": [
+        0.8611809387114133,
+        0.19013177259066452,
+        0.9031950914836755,
+        0.2020098117354552
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "b1c6b7efb08a4129b44dcfc82b763913",
+      "source": "page:1",
+      "text": "EC50"
+    },
+    {
+      "bbox": [
+        0.08063491935500128,
+        0.20438541956441336,
+        0.196396425454025,
+        0.21626345870920402
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "7379cb393e9b4479a531fe2f106462c4",
+      "source": "page:1",
+      "text": "measurements."
+    },
+    {
+      "bbox": [
+        0.08063491935500128,
+        0.23248410896533014,
+        0.2049437269056551,
+        0.25386457942595336
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "f1c6efa131504aff8aba27e74545bc5d",
+      "source": "page:1",
+      "text": "Methods"
+    },
+    {
+      "bbox": [
+        0.08063491935500128,
+        0.2637756152883668,
+        0.10957949561514028,
+        0.2756536544331574
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "020359c77c4a419e8a3e1fa2ebf2d325",
+      "source": "page:1",
+      "text": "Ten"
+    },
+    {
+      "bbox": [
+        0.11424960136111743,
+        0.2637756152883668,
+        0.18520833039351858,
+        0.2756536544331574
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "f31842ed7ed646d2b678b904f304cefd",
+      "source": "page:1",
+      "text": "reference"
+    },
+    {
+      "bbox": [
+        0.18987843613949573,
+        0.2637756152883668,
+        0.27671216491991274,
+        0.2756536544331574
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "5eae57cd09144d19b32e86613c673e7b",
+      "source": "page:1",
+      "text": "compounds"
+    },
+    {
+      "bbox": [
+        0.2813822706658899,
+        0.2637756152883668,
+        0.31778557696636656,
+        0.2756536544331574
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "73859e7dd526440c98fec6ff99998674",
+      "source": "page:1",
+      "text": "were"
+    },
+    {
+      "bbox": [
+        0.3224556827123437,
+        0.2637756152883668,
+        0.39341441174474484,
+        0.2756536544331574
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "0e46b54cb84b4702a2d063eac48f194a",
+      "source": "page:1",
+      "text": "assessed"
+    },
+    {
+      "bbox": [
+        0.398084517490722,
+        0.2637756152883668,
+        0.41115409400284514,
+        0.2756536544331574
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "a5d140a67cee4466bfd08c59a52576bf",
+      "source": "page:1",
+      "text": "in"
+    },
+    {
+      "bbox": [
+        0.4158241997488223,
+        0.2637756152883668,
+        0.4251644112407766,
+        0.2756536544331574
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "13405e15c8044ee8b2d5fe6d3e508e30",
+      "source": "page:1",
+      "text": "a"
+    },
+    {
+      "bbox": [
+        0.4298345169867538,
+        0.2637756152883668,
+        0.501717187803431,
+        0.2756536544331574
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "cde92dd2299745b0bbe3f9dbb9d5bb20",
+      "source": "page:1",
+      "text": "simulated"
+    },
+    {
+      "bbox": [
+        0.506387293549408,
+        0.2637756152883668,
+        0.5950689058983774,
+        0.2756536544331574
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "05bb4b8626184b88ab75b1a9a85a65a0",
+      "source": "page:1",
+      "text": "biochemical"
+    },
+    {
+      "bbox": [
+        0.5997390116443544,
+        0.2637756152883668,
+        0.67256242318684,
+        0.2756536544331574
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "6d9f853a967b443dbc061d0d800cf7e9",
+      "source": "page:1",
+      "text": "screening"
+    },
+    {
+      "bbox": [
+        0.6772325289328172,
+        0.2637756152883668,
+        0.7472337182978777,
+        0.2756536544331574
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "1489ca7c2284493296133981cf5159d5",
+      "source": "page:1",
+      "text": "workflow."
+    },
+    {
+      "bbox": [
+        0.7519038240438547,
+        0.2637756152883668,
+        0.8032581883080713,
+        0.2756536544331574
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "f28d6b32dd3e4e2eb7bdfa9afdd25f1b",
+      "source": "page:1",
+      "text": "Values"
+    },
+    {
+      "bbox": [
+        0.8079282940540483,
+        0.2637756152883668,
+        0.8322027645682102,
+        0.2756536544331574
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "29f92c8315084e3b9e23f96fa2908099",
+      "source": "page:1",
+      "text": "are"
+    },
+    {
+      "bbox": [
+        0.8368728703141873,
+        0.2637756152883668,
+        0.911544165425225,
+        0.2756536544331574
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "5b277a4911c2461cb13d3a35661e8cd3",
+      "source": "page:1",
+      "text": "illustrative"
+    },
+    {
+      "bbox": [
+        0.08063491935500128,
+        0.2780292622621156,
+        0.10865555383086423,
+        0.2899073014069063
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "b44ecc339184436192d2075b2937e90f",
+      "source": "page:1",
+      "text": "and"
+    },
+    {
+      "bbox": [
+        0.11332565957684139,
+        0.2780292622621156,
+        0.13760013009100322,
+        0.2899073014069063
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "e9fffcdad232408c8f2a4d275c01ca00",
+      "source": "page:1",
+      "text": "are"
+    },
+    {
+      "bbox": [
+        0.14227023583698037,
+        0.2780292622621156,
+        0.20482949410323553,
+        0.2899073014069063
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "8c89e094e28747e0bf2ae888dab4158f",
+      "source": "page:1",
+      "text": "included"
+    },
+    {
+      "bbox": [
+        0.2094995998492127,
+        0.2780292622621156,
+        0.2403088586194361,
+        0.2899073014069063
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "5267d4834b8c44ed814d4da87fb19a1f",
+      "source": "page:1",
+      "text": "only"
+    },
+    {
+      "bbox": [
+        0.24497896436541328,
+        0.2780292622621156,
+        0.2589892816033447,
+        0.2899073014069063
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "df7b7f03afb348df90181080f57f139a",
+      "source": "page:1",
+      "text": "to"
+    },
+    {
+      "bbox": [
+        0.26365938734932187,
+        0.2780292622621156,
+        0.32810012706719377,
+        0.2899073014069063
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "81c95eef54804437abfbc1971c555148",
+      "source": "page:1",
+      "text": "populate"
+    },
+    {
+      "bbox": [
+        0.3327702328131709,
+        0.2780292622621156,
+        0.3561207615430567,
+        0.2899073014069063
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "8768854f67a84fcfa576b31c627c4551",
+      "source": "page:1",
+      "text": "the"
+    },
+    {
+      "bbox": [
+        0.36079086728903387,
+        0.2780292622621156,
+        0.4168153372992275,
+        0.2899073014069063
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "2c14a39f8fa4444aab5c6b5570e6a891",
+      "source": "page:1",
+      "text": "BioIntel"
+    },
+    {
+      "bbox": [
+        0.42148544304520463,
+        0.2780292622621156,
+        0.4373604427932205,
+        0.2899073014069063
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "7633a2f244c2481b8e7763d5f5157db2",
+      "source": "page:1",
+      "text": "AI"
+    },
+    {
+      "bbox": [
+        0.4420305485391976,
+        0.2780292622621156,
+        0.5484686420877994,
+        0.2899073014069063
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "422a7d0d0f524a63ac5acf179cfbb437",
+      "source": "page:1",
+      "text": "demonstration"
+    },
+    {
+      "bbox": [
+        0.5531387478337765,
+        0.2780292622621156,
+        0.6380909951625768,
+        0.2899073014069063
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "397a1536f2c14c93b6b4f673dc9711c4",
+      "source": "page:1",
+      "text": "workspace."
+    },
+    {
+      "bbox": [
+        0.1699007988904635,
+        0.3098540925427534,
+        0.24968401190977754,
+        0.320544327773065
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "0c5066b2d75b49db9610a955d8f3f478",
+      "source": "page:1",
+      "text": "Compound"
+    },
+    {
+      "bbox": [
+        0.37148809727796667,
+        0.3098540925427534,
+        0.4176919060683824,
+        0.320544327773065
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "f554a0f0964b42d1b5e908374cbc6e0a",
+      "source": "page:1",
+      "text": "Target"
+    },
+    {
+      "bbox": [
+        0.48908068800401017,
+        0.3098540925427534,
+        0.554591520297489,
+        0.320544327773065
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "15c770c7334042eeba41463ade469690",
+      "source": "page:1",
+      "text": "Endpoint"
+    },
+    {
+      "bbox": [
+        0.5982738079639077,
+        0.3098540925427534,
+        0.6386114263712471,
+        0.320544327773065
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "3818bed900524c0ea9c116700a2fe022",
+      "source": "page:1",
+      "text": "Value"
+    },
+    {
+      "bbox": [
+        0.6428145215426265,
+        0.3098540925427534,
+        0.6747157115124489,
+        0.320544327773065
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "365c0a2359fb4dd28526528e234594ae",
+      "source": "page:1",
+      "text": "(nM)"
+    },
+    {
+      "bbox": [
+        0.7242658694560972,
+        0.3098540925427534,
+        0.7763661067243474,
+        0.320544327773065
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "1a9d14360f11430cbdc8e9d3ca4c8d49",
+      "source": "page:1",
+      "text": "Review"
+    },
+    {
+      "bbox": [
+        0.1699007988904635,
+        0.3312345630033766,
+        0.21610460768087922,
+        0.34192479823368827
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "408da1bf40d74e2dbb0b111abd5af74d",
+      "source": "page:1",
+      "text": "Aspirin"
+    },
+    {
+      "bbox": [
+        0.22030770285225867,
+        0.3312345630033766,
+        0.28417055898141963,
+        0.34192479823368827
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "1c234c9821af4ff0818c9a422ac7c902",
+      "source": "page:1",
+      "text": "reference"
+    },
+    {
+      "bbox": [
+        0.37148809727796667,
+        0.3312345630033766,
+        0.4210634536339134,
+        0.34192479823368827
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "b66cf9df6e984fd991c2c12e2dc2b11b",
+      "source": "page:1",
+      "text": "PTGS2"
+    },
+    {
+      "bbox": [
+        0.5176321690322936,
+        0.3312345630033766,
+        0.5495635970968742,
+        0.34192479823368827
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "7e726e7e51d5427385aa02fda5a4911f",
+      "source": "page:1",
+      "text": "IC50"
+    },
+    {
+      "bbox": [
+        0.638581188276489,
+        0.3312345630033766,
+        0.6637997593047656,
+        0.34192479823368827
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "da9a3d2f78094dca800515aec990e6a2",
+      "source": "page:1",
+      "text": "125"
+    },
+    {
+      "bbox": [
+        0.7439962262857741,
+        0.3312345630033766,
+        0.8103688442798594,
+        0.34192479823368827
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "e7c9b02f38b04fd6824ef7e34c4ef825",
+      "source": "page:1",
+      "text": "Reviewed"
+    },
+    {
+      "bbox": [
+        0.1699007988904635,
+        0.35261503346399986,
+        0.22620413133009312,
+        0.3633052686943115
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "04fcbfdba55f413dbe620c7b9d886787",
+      "source": "page:1",
+      "text": "Caffeine"
+    },
+    {
+      "bbox": [
+        0.23040722650147258,
+        0.35261503346399986,
+        0.2942700826306336,
+        0.3633052686943115
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "9759d5d35299467194f95561bc7cc2e2",
+      "source": "page:1",
+      "text": "reference"
+    },
+    {
+      "bbox": [
+        0.37148809727796667,
+        0.35261503346399986,
+        0.4437420247025075,
+        0.3633052686943115
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "c0068a3110154d0082c0e0cb1c89aae8",
+      "source": "page:1",
+      "text": "ADORA2A"
+    },
+    {
+      "bbox": [
+        0.5268774665045904,
+        0.35261503346399986,
+        0.5403182996245771,
+        0.3633052686943115
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "e5b81ab68eda43d393e294d5beb86965",
+      "source": "page:1",
+      "text": "Ki"
+    },
+    {
+      "bbox": [
+        0.638581188276489,
+        0.35261503346399986,
+        0.6637997593047656,
+        0.3633052686943115
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "c21fe215c20745a8a3e9ae3d134ff466",
+      "source": "page:1",
+      "text": "820"
+    },
+    {
+      "bbox": [
+        0.7439962262857741,
+        0.35261503346399986,
+        0.8103688442798594,
+        0.3633052686943115
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "0d8d33d349ea4ee7b9d5d42dcf68dcfb",
+      "source": "page:1",
+      "text": "Reviewed"
+    },
+    {
+      "bbox": [
+        0.1699007988904635,
+        0.3739955039246231,
+        0.2413382977565349,
+        0.3846857391549347
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "c055a5e1be1145acba502d8b92fed035",
+      "source": "page:1",
+      "text": "Adenosine"
+    },
+    {
+      "bbox": [
+        0.2455413929279144,
+        0.3739955039246231,
+        0.30940424905707536,
+        0.3846857391549347
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "9e7e8ef474bb48808c136f93e942c480",
+      "source": "page:1",
+      "text": "reference"
+    },
+    {
+      "bbox": [
+        0.37148809727796667,
+        0.3739955039246231,
+        0.4437420247025075,
+        0.3846857391549347
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "cb0df71413f84463b81d1b60566b05c2",
+      "source": "page:1",
+      "text": "ADORA2A"
+    },
+    {
+      "bbox": [
+        0.5268774665045904,
+        0.3739955039246231,
+        0.5403182996245771,
+        0.3846857391549347
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "602f7567253745daaab1c0dc1ddbff2f",
+      "source": "page:1",
+      "text": "Ki"
+    },
+    {
+      "bbox": [
+        0.6427842834478684,
+        0.3739955039246231,
+        0.6595966641333862,
+        0.3846857391549347
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "249dc54b630c495f8f59393f4835aa90",
+      "source": "page:1",
+      "text": "32"
+    },
+    {
+      "bbox": [
+        0.7439962262857741,
+        0.3739955039246231,
+        0.8103688442798594,
+        0.3846857391549347
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "c4bead4e331345aba9dc5922a6742f52",
+      "source": "page:1",
+      "text": "Reviewed"
+    },
+    {
+      "bbox": [
+        0.1699007988904635,
+        0.3953759743852462,
+        0.22702055988856248,
+        0.4060662096155578
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "b7993f9879f34ed4b33486ecbddc5d71",
+      "source": "page:1",
+      "text": "Warfarin"
+    },
+    {
+      "bbox": [
+        0.23122365505994194,
+        0.3953759743852462,
+        0.29508651118910295,
+        0.4060662096155578
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "559c6626c1d94275840060284093b3f6",
+      "source": "page:1",
+      "text": "reference"
+    },
+    {
+      "bbox": [
+        0.37148809727796667,
+        0.3953759743852462,
+        0.43365762010067266,
+        0.4060662096155578
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "275126461eea4e41b161b016dae2e19b",
+      "source": "page:1",
+      "text": "VKORC1"
+    },
+    {
+      "bbox": [
+        0.5176321690322936,
+        0.3953759743852462,
+        0.5495635970968742,
+        0.4060662096155578
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "0942035127b74ba19a5b92b2645c9bcf",
+      "source": "page:1",
+      "text": "IC50"
+    },
+    {
+      "bbox": [
+        0.6427842834478684,
+        0.3953759743852462,
+        0.6595966641333862,
+        0.4060662096155578
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "172551020c85474e867de1d2ad0dd8fd",
+      "source": "page:1",
+      "text": "18"
+    },
+    {
+      "bbox": [
+        0.7439962262857741,
+        0.3953759743852462,
+        0.8103688442798594,
+        0.4060662096155578
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "9b4b51882f694fe180631a7f54f724ee",
+      "source": "page:1",
+      "text": "Reviewed"
+    },
+    {
+      "bbox": [
+        0.1699007988904635,
+        0.41675644484586943,
+        0.23544186927870045,
+        0.42744668007618103
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "2707e3070fce48578d9f60bba264876b",
+      "source": "page:1",
+      "text": "Quercetin"
+    },
+    {
+      "bbox": [
+        0.2396449644500799,
+        0.41675644484586943,
+        0.3035078205792409,
+        0.42744668007618103
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "aae9ca7bceb24d1db50f36891b196c3e",
+      "source": "page:1",
+      "text": "reference"
+    },
+    {
+      "bbox": [
+        0.37148809727796667,
+        0.41675644484586943,
+        0.42526654880529285,
+        0.42744668007618103
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "03468c4151614a798f4b192db117a327",
+      "source": "page:1",
+      "text": "PIK3CA"
+    },
+    {
+      "bbox": [
+        0.5176321690322936,
+        0.41675644484586943,
+        0.5495635970968742,
+        0.42744668007618103
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "1fbdb9140a4f4c7685464010c770f5ea",
+      "source": "page:1",
+      "text": "IC50"
+    },
+    {
+      "bbox": [
+        0.638581188276489,
+        0.41675644484586943,
+        0.6637997593047656,
+        0.42744668007618103
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "8d0c236211a14cf79d3ac2d3c5fde17e",
+      "source": "page:1",
+      "text": "950"
+    },
+    {
+      "bbox": [
+        0.7439962262857741,
+        0.41675644484586943,
+        0.8103688442798594,
+        0.42744668007618103
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 1,
+      "region_id": "beb4ee22823449caa22671614493cee9",
+      "source": "page:1",
+      "text": "Reviewed"
+    },
+    {
+      "bbox": [
+        0.15982143397108833,
+        0.30407780210664165,
+        0.8401785660289115,
+        0.43236062487038096
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_table",
+      "metadata": {
+        "table_name": "PDF Page 1 Table 1"
+      },
+      "page_number": 1,
+      "region_id": "d6948cc9dc3a47eb81eb5050ca076260",
+      "source": "page:1",
+      "text": "PDF Page 1 Table 1"
+    },
+    {
+      "bbox": [
+        0.08063491935500128,
+        0.06144034528034429,
+        0.18985491762135048,
+        0.08282081574096752
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 2,
+      "region_id": "9c49481c1f9746b7a1250b319dba27f0",
+      "source": "page:2",
+      "text": "Results"
+    },
+    {
+      "bbox": [
+        0.19826110796410937,
+        0.06144034528034429,
+        0.2520244404440565,
+        0.08282081574096752
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 2,
+      "region_id": "1836927d933f49de8282d040644ce091",
+      "source": "page:2",
+      "text": "and"
+    },
+    {
+      "bbox": [
+        0.2604306307868154,
+        0.06144034528034429,
+        0.45531515150293417,
+        0.08282081574096752
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 2,
+      "region_id": "8027bad247ea411a85ff34d6921e3f4c",
+      "source": "page:2",
+      "text": "Interpretation"
+    },
+    {
+      "bbox": [
+        0.08063491935500128,
+        0.09273185160338092,
+        0.10957949561514028,
+        0.1046098907481716
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 2,
+      "region_id": "06421fe011f84cb6a165c749cd07aed8",
+      "source": "page:2",
+      "text": "The"
+    },
+    {
+      "bbox": [
+        0.11424960136111743,
+        0.09273185160338092,
+        0.17585131996003195,
+        0.1046098907481716
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 2,
+      "region_id": "4fb9706d132046ee8e0bb2cbac43e669",
+      "source": "page:2",
+      "text": "smallest"
+    },
+    {
+      "bbox": [
+        0.18052142570600913,
+        0.09273185160338092,
+        0.2551927208170468,
+        0.1046098907481716
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 2,
+      "region_id": "e9d78a3878ba4410a6ccebcbc69c1c1c",
+      "source": "page:2",
+      "text": "illustrative"
+    },
+    {
+      "bbox": [
+        0.2598628265630239,
+        0.09273185160338092,
+        0.30001229682520164,
+        0.1046098907481716
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 2,
+      "region_id": "9e94f042835644e1b2b66e4b12e36b88",
+      "source": "page:2",
+      "text": "value"
+    },
+    {
+      "bbox": [
+        0.3046824025711788,
+        0.09273185160338092,
+        0.3345509206155938,
+        0.1046098907481716
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 2,
+      "region_id": "4bba53ed43ae45beb2995f69e39758d2",
+      "source": "page:2",
+      "text": "was"
+    },
+    {
+      "bbox": [
+        0.339221026361571,
+        0.09273185160338092,
+        0.3579014493454796,
+        0.1046098907481716
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 2,
+      "region_id": "250bc52083a94cc1aa2eaebd43b161db",
+      "source": "page:2",
+      "text": "18"
+    },
+    {
+      "bbox": [
+        0.3625715550914568,
+        0.09273185160338092,
+        0.3859052848798103,
+        0.1046098907481716
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 2,
+      "region_id": "5db0d415e9e04318bee9ea4939da0b02",
+      "source": "page:2",
+      "text": "nM"
+    },
+    {
+      "bbox": [
+        0.39057539062578744,
+        0.09273185160338092,
+        0.41017975539397217,
+        0.1046098907481716
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 2,
+      "region_id": "76af6e05922a446db8abd9df0214627d",
+      "source": "page:2",
+      "text": "for"
+    },
+    {
+      "bbox": [
+        0.4148498611399493,
+        0.09273185160338092,
+        0.4885972144667109,
+        0.1046098907481716
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 2,
+      "region_id": "4feeef1d92484ff6a22f36cfe24fc635",
+      "source": "page:2",
+      "text": "VKORC1."
+    },
+    {
+      "bbox": [
+        0.493267320212688,
+        0.09273185160338092,
+        0.5222118964728271,
+        0.1046098907481716
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 2,
+      "region_id": "ba1f880cca6545da9532a67906b4dfdf",
+      "source": "page:2",
+      "text": "The"
+    },
+    {
+      "bbox": [
+        0.5268820022188041,
+        0.09273185160338092,
+        0.6071641438016274,
+        0.1046098907481716
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 2,
+      "region_id": "f08dee0456914bf181347fa38d89553c",
+      "source": "page:2",
+      "text": "ADORA2A"
+    },
+    {
+      "bbox": [
+        0.6118342495476045,
+        0.09273185160338092,
+        0.6837169203642817,
+        0.1046098907481716
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 2,
+      "region_id": "fd9ac1d462c046679da957ee7c50bb30",
+      "source": "page:2",
+      "text": "examples"
+    },
+    {
+      "bbox": [
+        0.6883870261102588,
+        0.09273185160338092,
+        0.7817555431467372,
+        0.1046098907481716
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 2,
+      "region_id": "cc68b380927d493fbaa20dff461a8a39",
+      "source": "page:2",
+      "text": "demonstrate"
+    },
+    {
+      "bbox": [
+        0.7864256488927144,
+        0.09273185160338092,
+        0.8442980024714601,
+        0.1046098907481716
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 2,
+      "region_id": "45bcef57ed0b49a5b6d713366460d2cf",
+      "source": "page:2",
+      "text": "multiple"
+    },
+    {
+      "bbox": [
+        0.08063491935500128,
+        0.10698549857712975,
+        0.16746864813541829,
+        0.11886353772192043
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 2,
+      "region_id": "7c3969bf7a4d4421a3630cae1229ff6f",
+      "source": "page:2",
+      "text": "compounds"
+    },
+    {
+      "bbox": [
+        0.17213875388139543,
+        0.10698549857712975,
+        0.2001593883572584,
+        0.11886353772192043
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 2,
+      "region_id": "aa7e29d48814408d94b3c03f180a09df",
+      "source": "page:2",
+      "text": "and"
+    },
+    {
+      "bbox": [
+        0.20482949410323556,
+        0.10698549857712975,
+        0.26085396411342915,
+        0.11886353772192043
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 2,
+      "region_id": "7b0e7e566eb5420f85e3ff8acfdadec5",
+      "source": "page:2",
+      "text": "support"
+    },
+    {
+      "bbox": [
+        0.26552406985940635,
+        0.10698549857712975,
+        0.38501494097859895,
+        0.11886353772192043
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 2,
+      "region_id": "6affd8e399364616a894a746ebe54bee",
+      "source": "page:2",
+      "text": "cross-document"
+    },
+    {
+      "bbox": [
+        0.3896850467245761,
+        0.10698549857712975,
+        0.43263994022264657,
+        0.11886353772192043
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 2,
+      "region_id": "95ccae58ca7745d7ad8499a55bab3fb5",
+      "source": "page:2",
+      "text": "target"
+    },
+    {
+      "bbox": [
+        0.4373100459686238,
+        0.10698549857712975,
+        0.5287970815534856,
+        0.11886353772192043
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 2,
+      "region_id": "1b99eb5a97ba41648ae5cb2ad51ab507",
+      "source": "page:2",
+      "text": "comparison."
+    },
+    {
+      "bbox": [
+        0.5334671872994627,
+        0.10698549857712975,
+        0.580151445817702,
+        0.11886353772192043
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 2,
+      "region_id": "c22aa79c11f0467b80a06abf75eea9ab",
+      "source": "page:2",
+      "text": "These"
+    },
+    {
+      "bbox": [
+        0.5848215515636791,
+        0.10698549857712975,
+        0.6342944343762789,
+        0.11886353772192043
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 2,
+      "region_id": "a72c8264d370401aa4a631cdd8371d56",
+      "source": "page:2",
+      "text": "results"
+    },
+    {
+      "bbox": [
+        0.6389645401222559,
+        0.10698549857712975,
+        0.6753678464227325,
+        0.11886353772192043
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 2,
+      "region_id": "13366a9b13e447e49de3576c1c3a143a",
+      "source": "page:2",
+      "text": "must"
+    },
+    {
+      "bbox": [
+        0.6800379521687095,
+        0.10698549857712975,
+        0.7033884808985954,
+        0.11886353772192043
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 2,
+      "region_id": "bf09bb2364724718a5d86def8c1cd1c6",
+      "source": "page:2",
+      "text": "not"
+    },
+    {
+      "bbox": [
+        0.7080585866445724,
+        0.10698549857712975,
+        0.7267390096284811,
+        0.11886353772192043
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 2,
+      "region_id": "c752022b2c0344a794fec6003457a308",
+      "source": "page:2",
+      "text": "be"
+    },
+    {
+      "bbox": [
+        0.7314091153744582,
+        0.10698549857712975,
+        0.7678292206164671,
+        0.11886353772192043
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 2,
+      "region_id": "e63114a8fe7849698a12256e6566cac0",
+      "source": "page:2",
+      "text": "used"
+    },
+    {
+      "bbox": [
+        0.7724993263624442,
+        0.10698549857712975,
+        0.7921036911306288,
+        0.11886353772192043
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 2,
+      "region_id": "1545286232ec434181281a8ccd97c32c",
+      "source": "page:2",
+      "text": "for"
+    },
+    {
+      "bbox": [
+        0.796773796876606,
+        0.10698549857712975,
+        0.847170621473482,
+        0.11886353772192043
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 2,
+      "region_id": "8a6a7670ec174423a940eeb6dec22f43",
+      "source": "page:2",
+      "text": "clinical"
+    },
+    {
+      "bbox": [
+        0.851840727219459,
+        0.10698549857712975,
+        0.8667749862416667,
+        0.11886353772192043
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 2,
+      "region_id": "27acf66ca7d24414b8345f510be5b4d6",
+      "source": "page:2",
+      "text": "or"
+    },
+    {
+      "bbox": [
+        0.08063491935500128,
+        0.12123914555087857,
+        0.1553230134075712,
+        0.13311718469566924
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 2,
+      "region_id": "6fb88195a5d7427ab3b9f3983a3f4ae1",
+      "source": "page:2",
+      "text": "laboratory"
+    },
+    {
+      "bbox": [
+        0.15999311915354839,
+        0.12123914555087857,
+        0.2524208954642186,
+        0.13311718469566924
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 2,
+      "region_id": "dceef1261c4643d18f321c82d7a4fca0",
+      "source": "page:2",
+      "text": "conclusions."
+    },
+    {
+      "bbox": [
+        0.08063491935500128,
+        0.16498358811331368,
+        0.16558380689549512,
+        0.18161284291602062
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 2,
+      "region_id": "af5ce38bd6414102b0fba3228981739b",
+      "source": "page:2",
+      "text": "Activity"
+    },
+    {
+      "bbox": [
+        0.17212195493986315,
+        0.16498358811331368,
+        0.2792958421275792,
+        0.18161284291602062
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 2,
+      "region_id": "7412a27cf7f1452e8e041209c3742e35",
+      "source": "page:2",
+      "text": "Summary"
+    },
+    {
+      "bbox": [
+        0.2580952419349961,
+        0.19607079216305986,
+        0.30756812474759593,
+        0.20794883130785055
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 2,
+      "region_id": "f7dbe7bc717a40dfb92c708515318130",
+      "source": "page:2",
+      "text": "Metric"
+    },
+    {
+      "bbox": [
+        0.5604761895162509,
+        0.19607079216305986,
+        0.6052957655244058,
+        0.20794883130785055
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 2,
+      "region_id": "13ccb2c64df14d17b937cc81d91a4a47",
+      "source": "page:2",
+      "text": "Value"
+    },
+    {
+      "bbox": [
+        0.2580952419349961,
+        0.2174512626236831,
+        0.3355887592234589,
+        0.2293293017684738
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 2,
+      "region_id": "7aaa3daada644c2fbb28f74422a12ff0",
+      "source": "page:2",
+      "text": "Reference"
+    },
+    {
+      "bbox": [
+        0.34025886496943597,
+        0.2174512626236831,
+        0.42709259374985303,
+        0.2293293017684738
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 2,
+      "region_id": "38d53ece2d294a8991c175eef3eae13b",
+      "source": "page:2",
+      "text": "compounds"
+    },
+    {
+      "bbox": [
+        0.5604761895162509,
+        0.2174512626236831,
+        0.5791566125001595,
+        0.2293293017684738
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 2,
+      "region_id": "3cc61455d0d648d3b3ae9c65ed9ec585",
+      "source": "page:2",
+      "text": "10"
+    },
+    {
+      "bbox": [
+        0.2580952419349961,
+        0.23883173308430633,
+        0.3150436537294658,
+        0.250709772229097
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 2,
+      "region_id": "501e25e2f5a142089d0957cf8a64b43a",
+      "source": "page:2",
+      "text": "Targets"
+    },
+    {
+      "bbox": [
+        0.5604761895162509,
+        0.23883173308430633,
+        0.5698164010082052,
+        0.250709772229097
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 2,
+      "region_id": "08df8546966a45ae907fca54097c2b07",
+      "source": "page:2",
+      "text": "7"
+    },
+    {
+      "bbox": [
+        0.2580952419349961,
+        0.2602122035449296,
+        0.33184259526175774,
+        0.27209024268972026
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 2,
+      "region_id": "177feb9f54b44904b42a9f3f5b6e98f0",
+      "source": "page:2",
+      "text": "Reviewed"
+    },
+    {
+      "bbox": [
+        0.3365127010077349,
+        0.2602122035449296,
+        0.3925203720763962,
+        0.27209024268972026
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 2,
+      "region_id": "470dc376f3ac4b9ea477e54e2235b41e",
+      "source": "page:2",
+      "text": "records"
+    },
+    {
+      "bbox": [
+        0.5604761895162509,
+        0.2602122035449296,
+        0.5698164010082052,
+        0.27209024268972026
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 2,
+      "region_id": "f6f26f9437dc4d6a9b279af82eeaa5f8",
+      "source": "page:2",
+      "text": "6"
+    },
+    {
+      "bbox": [
+        0.2580952419349961,
+        0.28159267400555277,
+        0.31973055841697523,
+        0.29347071315034345
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 2,
+      "region_id": "1fc79594236d4945a05c4dc6422e70c3",
+      "source": "page:2",
+      "text": "Pending"
+    },
+    {
+      "bbox": [
+        0.3244006641629524,
+        0.28159267400555277,
+        0.3804083352316137,
+        0.29347071315034345
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 2,
+      "region_id": "03631be211f2496f8007f58d984a8796",
+      "source": "page:2",
+      "text": "records"
+    },
+    {
+      "bbox": [
+        0.5604761895162509,
+        0.28159267400555277,
+        0.5698164010082052,
+        0.29347071315034345
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 2,
+      "region_id": "7cc0637553e74131b777691f72d6b79b",
+      "source": "page:2",
+      "text": "4"
+    },
+    {
+      "bbox": [
+        0.2580952419349961,
+        0.302973144466176,
+        0.3131789712193814,
+        0.3148511836109667
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 2,
+      "region_id": "12f6a36f7a384193846671757a9e119c",
+      "source": "page:2",
+      "text": "Median"
+    },
+    {
+      "bbox": [
+        0.3178490769653586,
+        0.302973144466176,
+        0.3691866422880427,
+        0.3148511836109667
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 2,
+      "region_id": "92e306f40fc44f16a48154f03691d1fa",
+      "source": "page:2",
+      "text": "activity"
+    },
+    {
+      "bbox": [
+        0.5604761895162509,
+        0.302973144466176,
+        0.5884968239921138,
+        0.3148511836109667
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 2,
+      "region_id": "f423a7495e7a44e9a4b37b0cf0b6adbe",
+      "source": "page:2",
+      "text": "790"
+    },
+    {
+      "bbox": [
+        0.5931669297380909,
+        0.302973144466176,
+        0.6165006595264444,
+        0.3148511836109667
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 2,
+      "region_id": "70ce569e4c854d2892b2a832fc1f9731",
+      "source": "page:2",
+      "text": "nM"
+    },
+    {
+      "bbox": [
+        0.08063491935500128,
+        0.33701085343948817,
+        0.24192491679484263,
+        0.35839132390011136
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 2,
+      "region_id": "3b833d1192084784a90696b898a96029",
+      "source": "page:2",
+      "text": "Limitations"
+    },
+    {
+      "bbox": [
+        0.08063491935500128,
+        0.3683023597625249,
+        0.10957949561514028,
+        0.3801803989073156
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 2,
+      "region_id": "84b92278fd6d4b6989f7e3d26bcc9182",
+      "source": "page:2",
+      "text": "The"
+    },
+    {
+      "bbox": [
+        0.11424960136111743,
+        0.3683023597625249,
+        0.16935012958703496,
+        0.3801803989073156
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 2,
+      "region_id": "00c282c38f93446b93a622c7e19991e0",
+      "source": "page:2",
+      "text": "dataset"
+    },
+    {
+      "bbox": [
+        0.17402023533301214,
+        0.3683023597625249,
+        0.1861490711193269,
+        0.3801803989073156
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 2,
+      "region_id": "f5ff3a484fd847eab0da1870512a8b9d",
+      "source": "page:2",
+      "text": "is"
+    },
+    {
+      "bbox": [
+        0.19081917686530406,
+        0.3683023597625249,
+        0.3738100469765601,
+        0.3801803989073156
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 2,
+      "region_id": "0b4d08c88acf46ad81c56956149d0aa7",
+      "source": "page:2",
+      "text": "synthetic/reference-only."
+    },
+    {
+      "bbox": [
+        0.37848015272253727,
+        0.3683023597625249,
+        0.39994920000080636,
+        0.3801803989073156
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 2,
+      "region_id": "6c007aa73dd54d228d2336c2f83607e1",
+      "source": "page:2",
+      "text": "No"
+    },
+    {
+      "bbox": [
+        0.40461930574678356,
+        0.3683023597625249,
+        0.45876229430536053,
+        0.3801803989073156
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 2,
+      "region_id": "933c3c8218af49319bd8666eb806bec1",
+      "source": "page:2",
+      "text": "wet-lab"
+    },
+    {
+      "bbox": [
+        0.4634324000513376,
+        0.3683023597625249,
+        0.5390612348297159,
+        0.3801803989073156
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 2,
+      "region_id": "b3e8936a2f984e028c7009cd866c7de4",
+      "source": "page:2",
+      "text": "validation,"
+    },
+    {
+      "bbox": [
+        0.543731340575693,
+        0.3683023597625249,
+        0.594128165172569,
+        0.3801803989073156
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 2,
+      "region_id": "696e8b65fd6743afb0c096f5073bbb5f",
+      "source": "page:2",
+      "text": "clinical"
+    },
+    {
+      "bbox": [
+        0.5987982709185461,
+        0.3683023597625249,
+        0.6968368937010018,
+        0.3801803989073156
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 2,
+      "region_id": "676bc499fb954802a9d20df77d9b8f43",
+      "source": "page:2",
+      "text": "interpretation"
+    },
+    {
+      "bbox": [
+        0.7015069994469788,
+        0.3683023597625249,
+        0.7164412584691864,
+        0.3801803989073156
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 2,
+      "region_id": "dc3a3a4ebbc3436aaf00ad9770908987",
+      "source": "page:2",
+      "text": "or"
+    },
+    {
+      "bbox": [
+        0.7211113642151634,
+        0.3683023597625249,
+        0.7855185060499708,
+        0.3801803989073156
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 2,
+      "region_id": "7b467b6286ff4900ab439e9d468bb00e",
+      "source": "page:2",
+      "text": "scientific"
+    },
+    {
+      "bbox": [
+        0.7901886117959479,
+        0.3683023597625249,
+        0.8452723410803331,
+        0.3801803989073156
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 2,
+      "region_id": "799f34c2d973479eb5a02db9bae87c65",
+      "source": "page:2",
+      "text": "release"
+    },
+    {
+      "bbox": [
+        0.8499424468263103,
+        0.3683023597625249,
+        0.8620712826126252,
+        0.3801803989073156
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 2,
+      "region_id": "80dbcf882e6d4058a352d8798e3cad88",
+      "source": "page:2",
+      "text": "is"
+    },
+    {
+      "bbox": [
+        0.08063491935500128,
+        0.3825560067362736,
+        0.1553230134075712,
+        0.3944340458810643
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 2,
+      "region_id": "7baed40358c645f18ebc6fa5a46068fe",
+      "source": "page:2",
+      "text": "permitted."
+    },
+    {
+      "bbox": [
+        0.24801587701562097,
+        0.19004862631665093,
+        0.7519841229843789,
+        0.3183314490803903
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_table",
+      "metadata": {
+        "table_name": "PDF Page 2 Table 1"
+      },
+      "page_number": 2,
+      "region_id": "5b927b7c7b444bf7923c6722136a401f",
+      "source": "page:2",
+      "text": "PDF Page 2 Table 1"
+    },
+    {
+      "bbox": [
+        0.08063491935500128,
+        0.06144034528034429,
+        0.22683610751053795,
+        0.08282081574096752
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 3,
+      "region_id": "744afdde38644deb830e6dffff4c1f46",
+      "source": "page:3",
+      "text": "Reference"
+    },
+    {
+      "bbox": [
+        0.2352422978532968,
+        0.06144034528034429,
+        0.3444622961196461,
+        0.08282081574096752
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 3,
+      "region_id": "3fb6f99d287d46b8b69550843ef36de8",
+      "source": "page:3",
+      "text": "Entities"
+    },
+    {
+      "bbox": [
+        0.1405026512089526,
+        0.09629526334681814,
+        0.17971138074532197,
+        0.10817330249160881
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 3,
+      "region_id": "e6292daad97140778d70f32f908ace52",
+      "source": "page:3",
+      "text": "Type"
+    },
+    {
+      "bbox": [
+        0.3252910080641639,
+        0.09629526334681814,
+        0.4037252660784349,
+        0.10817330249160881
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 3,
+      "region_id": "2fb4fdb3e5c04cb08e7ecfecb62130d4",
+      "source": "page:3",
+      "text": "Examples"
+    },
+    {
+      "bbox": [
+        0.1405026512089526,
+        0.11767573380744135,
+        0.18999233296308465,
+        0.12955377295223205
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 3,
+      "region_id": "5ca652a9ce5f4da0aa446115d00efff6",
+      "source": "page:3",
+      "text": "Genes"
+    },
+    {
+      "bbox": [
+        0.1946624387090618,
+        0.11767573380744135,
+        0.19933254445503898,
+        0.12955377295223205
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 3,
+      "region_id": "a86206e174d84fe18e3f71f61530c825",
+      "source": "page:3",
+      "text": "/"
+    },
+    {
+      "bbox": [
+        0.20400265020101613,
+        0.11767573380744135,
+        0.2637564852313785,
+        0.12955377295223205
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 3,
+      "region_id": "56cc0ea45f804856a9cc43ca2ebb6bba",
+      "source": "page:3",
+      "text": "proteins"
+    },
+    {
+      "bbox": [
+        0.3252910080641639,
+        0.11767573380744135,
+        0.38504484309452625,
+        0.12955377295223205
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 3,
+      "region_id": "fac62bb3a25841959c03d983bc8681cf",
+      "source": "page:3",
+      "text": "PTGS2,"
+    },
+    {
+      "bbox": [
+        0.3897149488405034,
+        0.11767573380744135,
+        0.4746671961693037,
+        0.12955377295223205
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 3,
+      "region_id": "07d444df2bf343a29249742f44c3015f",
+      "source": "page:3",
+      "text": "ADORA2A,"
+    },
+    {
+      "bbox": [
+        0.4793373019152809,
+        0.11767573380744135,
+        0.5316156079637734,
+        0.12955377295223205
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 3,
+      "region_id": "84fb422a446f43afaf545268cc9296ed",
+      "source": "page:3",
+      "text": "SIRT1,"
+    },
+    {
+      "bbox": [
+        0.5362857137097505,
+        0.11767573380744135,
+        0.60070965448609,
+        0.12955377295223205
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 3,
+      "region_id": "5e2dea63b0364b578a361548e1dab8d5",
+      "source": "page:3",
+      "text": "PIK3CA,"
+    },
+    {
+      "bbox": [
+        0.6053797602320672,
+        0.11767573380744135,
+        0.6744570078128516,
+        0.12955377295223205
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 3,
+      "region_id": "e05796a41a5c44f1bcadfddc7651aeaf",
+      "source": "page:3",
+      "text": "VKORC1"
+    },
+    {
+      "bbox": [
+        0.1405026512089526,
+        0.1390562042680646,
+        0.23106574500953841,
+        0.15093424341285527
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 3,
+      "region_id": "dc8def4440b14153872871eba03dda75",
+      "source": "page:3",
+      "text": "Compounds"
+    },
+    {
+      "bbox": [
+        0.3252910080641639,
+        0.1390562042680646,
+        0.38129867913282517,
+        0.15093424341285527
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 3,
+      "region_id": "80d13bb430eb489c8676cd7789421fb7",
+      "source": "page:3",
+      "text": "Aspirin,"
+    },
+    {
+      "bbox": [
+        0.3859687848788023,
+        0.1390562042680646,
+        0.4494687838708658,
+        0.15093424341285527
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 3,
+      "region_id": "85e546011bc649d49f4cb0002ff691b7",
+      "source": "page:3",
+      "text": "caffeine,"
+    },
+    {
+      "bbox": [
+        0.454138889616843,
+        0.1390562042680646,
+        0.5363193115928151,
+        0.15093424341285527
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 3,
+      "region_id": "f416fc11fe214f0b802ad4288aa9048b",
+      "source": "page:3",
+      "text": "adenosine,"
+    },
+    {
+      "bbox": [
+        0.5409894173387924,
+        0.1390562042680646,
+        0.6053965591735996,
+        0.15093424341285527
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 3,
+      "region_id": "4de1ab2c68f441108c97416ae09b44f4",
+      "source": "page:3",
+      "text": "warfarin,"
+    },
+    {
+      "bbox": [
+        0.6100666649195768,
+        0.1390562042680646,
+        0.6791607114418936,
+        0.15093424341285527
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 3,
+      "region_id": "b5a85ba53fa646d1bff86ef7ee03240c",
+      "source": "page:3",
+      "text": "quercetin"
+    },
+    {
+      "bbox": [
+        0.1405026512089526,
+        0.16043667472868783,
+        0.19464563976752952,
+        0.1723147138734785
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 3,
+      "region_id": "c5c8def59fbe48339d2b41a9a3e43c0e",
+      "source": "page:3",
+      "text": "Assays"
+    },
+    {
+      "bbox": [
+        0.3252910080641639,
+        0.16043667472868783,
+        0.3654404783263416,
+        0.1723147138734785
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 3,
+      "region_id": "ca2ef68806e54e5daa037af3a2cdb3d1",
+      "source": "page:3",
+      "text": "IC50,"
+    },
+    {
+      "bbox": [
+        0.3701105840723187,
+        0.16043667472868783,
+        0.3897149488405034,
+        0.1723147138734785
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 3,
+      "region_id": "481b553a76a648e0804712e1aa9b3595",
+      "source": "page:3",
+      "text": "Ki,"
+    },
+    {
+      "bbox": [
+        0.39438505458648054,
+        0.16043667472868783,
+        0.4363992073587427,
+        0.1723147138734785
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 3,
+      "region_id": "63d5aa78dea147359a66e2be42c68ca1",
+      "source": "page:3",
+      "text": "EC50"
+    },
+    {
+      "bbox": [
+        0.1405026512089526,
+        0.18181714518931105,
+        0.21330926380990584,
+        0.19369518433410174
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 3,
+      "region_id": "2f20134264d64991a7e9e338d3719795",
+      "source": "page:3",
+      "text": "Organism"
+    },
+    {
+      "bbox": [
+        0.3252910080641639,
+        0.18181714518931105,
+        0.37009378513078645,
+        0.19369518433410174
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 3,
+      "region_id": "41bafa1e4c454f44988747d3810d0bf9",
+      "source": "page:3",
+      "text": "Homo"
+    },
+    {
+      "bbox": [
+        0.37476389087676365,
+        0.18181714518931105,
+        0.4326530433970416,
+        0.19369518433410174
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 3,
+      "region_id": "11fafd2302ca4355b343b39a9f45b50c",
+      "source": "page:3",
+      "text": "sapiens"
+    },
+    {
+      "bbox": [
+        0.1405026512089526,
+        0.20319761564993427,
+        0.20118042802359107,
+        0.21507565479472496
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 3,
+      "region_id": "de0f4db2502541acbe29684e5eb12557",
+      "source": "page:3",
+      "text": "Disease"
+    },
+    {
+      "bbox": [
+        0.20585053376956824,
+        0.20319761564993427,
+        0.24784788760029808,
+        0.21507565479472496
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 3,
+      "region_id": "0cf8e74d61bf4db98dd39e22fa27a044",
+      "source": "page:3",
+      "text": "terms"
+    },
+    {
+      "bbox": [
+        0.3252910080641639,
+        0.20319761564993427,
+        0.42611825514098006,
+        0.21507565479472496
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 3,
+      "region_id": "ae484939c9be4b559c4fec336280af06",
+      "source": "page:3",
+      "text": "Inflammation,"
+    },
+    {
+      "bbox": [
+        0.43078836088695727,
+        0.20319761564993427,
+        0.539074338004111,
+        0.21507565479472496
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 3,
+      "region_id": "337bc6b83ea64ac896c3c3074cc5ef86",
+      "source": "page:3",
+      "text": "cardiovascular"
+    },
+    {
+      "bbox": [
+        0.5437444437500882,
+        0.20319761564993427,
+        0.6063037020163433,
+        0.21507565479472496
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 3,
+      "region_id": "db2f31587d0449b987ca4b4ac73d2cd0",
+      "source": "page:3",
+      "text": "disease,"
+    },
+    {
+      "bbox": [
+        0.6109738077623205,
+        0.20319761564993427,
+        0.6828564785789977,
+        0.21507565479472496
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 3,
+      "region_id": "87c814607b9c4590b02b1f1c7cb97d43",
+      "source": "page:3",
+      "text": "metabolic"
+    },
+    {
+      "bbox": [
+        0.6875265843249749,
+        0.20319761564993427,
+        0.7454157368452529,
+        0.21507565479472496
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 3,
+      "region_id": "cc70ab734cb14e5d98fe3253b89377b6",
+      "source": "page:3",
+      "text": "disease"
+    },
+    {
+      "bbox": [
+        0.08063491935500128,
+        0.24952196831461795,
+        0.1571876959176556,
+        0.2614000074594086
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 3,
+      "region_id": "0e4bfc849bd2423d8f6a63128c37b73c",
+      "source": "page:3",
+      "text": "Document"
+    },
+    {
+      "bbox": [
+        0.16185780166363278,
+        0.24952196831461795,
+        0.18332684894190188,
+        0.2614000074594086
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 3,
+      "region_id": "6c99b056b35e4e8ead6f2c21d9901190",
+      "source": "page:3",
+      "text": "ID:"
+    },
+    {
+      "bbox": [
+        0.18799695468787903,
+        0.24952196831461795,
+        0.311200391885708,
+        0.2614000074594086
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 3,
+      "region_id": "a658549477f848c58395e3e02c3b6ff8",
+      "source": "page:3",
+      "text": "DEMO-PDF-001"
+    },
+    {
+      "bbox": [
+        0.3158704976316852,
+        0.24952196831461795,
+        0.3202382224300811,
+        0.2614000074594086
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 3,
+      "region_id": "f63654d307f64cf7926b71b2a0d356ca",
+      "source": "page:3",
+      "text": "|"
+    },
+    {
+      "bbox": [
+        0.32490832817605825,
+        0.24952196831461795,
+        0.3818567399705279,
+        0.2614000074594086
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 3,
+      "region_id": "3fdb1f7c2e684e22aa42c847977b3425",
+      "source": "page:3",
+      "text": "Version"
+    },
+    {
+      "bbox": [
+        0.3865268457165051,
+        0.24952196831461795,
+        0.4098773744463909,
+        0.2614000074594086
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 3,
+      "region_id": "8293ce30574048d3af8124798061c01d",
+      "source": "page:3",
+      "text": "1.0"
+    },
+    {
+      "bbox": [
+        0.41454748019236803,
+        0.24952196831461795,
+        0.4189152049907639,
+        0.2614000074594086
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 3,
+      "region_id": "b2cefd2d3cd2487d8140851f7afe7774",
+      "source": "page:3",
+      "text": "|"
+    },
+    {
+      "bbox": [
+        0.42358531073674105,
+        0.24952196831461795,
+        0.47960978074693467,
+        0.2614000074594086
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 3,
+      "region_id": "51d3ba78524e4a4797bdbf4138343869",
+      "source": "page:3",
+      "text": "BioIntel"
+    },
+    {
+      "bbox": [
+        0.48427988649291176,
+        0.24952196831461795,
+        0.5907179800415134,
+        0.2614000074594086
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 3,
+      "region_id": "788c17d9e79a4fa6bd2b0152ffb1f687",
+      "source": "page:3",
+      "text": "demonstration"
+    },
+    {
+      "bbox": [
+        0.5953880857874906,
+        0.24952196831461795,
+        0.6280788260093306,
+        0.2614000074594086
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_word",
+      "metadata": {
+        "coordinate_space": "normalized_page"
+      },
+      "page_number": 3,
+      "region_id": "f268422a0b244761a8dc6f56acff2150",
+      "source": "page:3",
+      "text": "data"
+    },
+    {
+      "bbox": [
+        0.13042328628957744,
+        0.0902730975004092,
+        0.8695767137104224,
+        0.21855592026414858
+      ],
+      "confidence": 1.0,
+      "kind": "pdf_table",
+      "metadata": {
+        "table_name": "PDF Page 3 Table 1"
+      },
+      "page_number": 3,
+      "region_id": "bb74d7ad4e864dd59b9f2826b78a8cab",
+      "source": "page:3",
+      "text": "PDF Page 3 Table 1"
+    }
+  ],
+  "row_count": 15,
+  "sections": [
+    {
+      "confidence": 1.0,
+      "metadata": {
+        "extraction_method": "layout_text"
+      },
+      "name": "Page 1",
+      "source": "page:1",
+      "text": "BioIntel AI Reference Research Report\nDemonstration content only - not experimental evidence\nAbstract\nThis reference report demonstrates PDF extraction, table recovery, scientific entity recognition, document search\nand evidence bridging. It discusses PTGS2, ADORA2A, SIRT1 and PIK3CA with illustrative IC50, Ki and EC50\nmeasurements.\nMethods\nTen reference compounds were assessed in a simulated biochemical screening workflow. Values are illustrative\nand are included only to populate the BioIntel AI demonstration workspace.\nCompound Target Endpoint Value (nM) Review\nAspirin reference PTGS2 IC50 125 Reviewed\nCaffeine reference ADORA2A Ki 820 Reviewed\nAdenosine reference ADORA2A Ki 32 Reviewed\nWarfarin reference VKORC1 IC50 18 Reviewed\nQuercetin reference PIK3CA IC50 950 Reviewed"
+    },
+    {
+      "confidence": 1.0,
+      "metadata": {
+        "extraction_method": "layout_text"
+      },
+      "name": "Page 2",
+      "source": "page:2",
+      "text": "Results and Interpretation\nThe smallest illustrative value was 18 nM for VKORC1. The ADORA2A examples demonstrate multiple\ncompounds and support cross-document target comparison. These results must not be used for clinical or\nlaboratory conclusions.\nActivity Summary\nMetric Value\nReference compounds 10\nTargets 7\nReviewed records 6\nPending records 4\nMedian activity 790 nM\nLimitations\nThe dataset is synthetic/reference-only. No wet-lab validation, clinical interpretation or scientific release is\npermitted."
+    },
+    {
+      "confidence": 1.0,
+      "metadata": {
+        "extraction_method": "layout_text"
+      },
+      "name": "Page 3",
+      "source": "page:3",
+      "text": "Reference Entities\nType Examples\nGenes / proteins PTGS2, ADORA2A, SIRT1, PIK3CA, VKORC1\nCompounds Aspirin, caffeine, adenosine, warfarin, quercetin\nAssays IC50, Ki, EC50\nOrganism Homo sapiens\nDisease terms Inflammation, cardiovascular disease, metabolic disease\nDocument ID: DEMO-PDF-001 | Version 1.0 | BioIntel demonstration data"
+    }
+  ],
+  "sheet_count": 0,
+  "source_name": "BioIntel_Reference_Research_Report.pdf",
+  "source_sha256": "1695727eaa1776affdc94d045015a2f04ba28f1a59e92bfb5afe518cb8fc9dbe",
+  "source_size_bytes": 5088,
+  "structured_fields": {
+    "activity_measurements": [],
+    "document_type": "research_document",
+    "entity_counts": {
+      "assay_endpoint": 6,
+      "gene_or_protein": 16,
+      "organism": 1
+    },
+    "has_limitations": true,
+    "has_methods": true,
+    "has_results": true,
+    "publication_identifiers": [],
+    "sample_sizes": [],
+    "sections": {
+      "abstract": "This reference report demonstrates PDF extraction, table recovery, scientific entity recognition, document search\nand evidence bridging. It discusses PTGS2, ADORA2A, SIRT1 and PIK3CA with illustrative IC50, Ki and EC50\nmeasurements.",
+      "limitations": "The dataset is synthetic/reference-only. No wet-lab validation, clinical interpretation or scientific release is\npermitted.\nReference Entities\nType Examples\nGenes / proteins PTGS2, ADORA2A, SIRT1, PIK3CA, VKORC1\nCompounds Aspirin, caffeine, adenosine, warfarin, quercetin\nAssays IC50, Ki, EC50\nOrganism Homo sapiens\nDisease terms Inflammation, cardiovascular disease, metabolic disease\nDocument ID: DEMO-PDF-001 | Version 1.0 | BioIntel demonstration data",
+      "methods": "Ten reference compounds were assessed in a simulated biochemical screening workflow. Values are illustrative\nand are included only to populate the BioIntel AI demonstration workspace.\nCompound Target Endpoint Value (nM) Review\nAspirin reference PTGS2 IC50 125 Reviewed\nCaffeine reference ADORA2A Ki 820 Reviewed\nAdenosine reference ADORA2A Ki 32 Reviewed\nWarfarin reference VKORC1 IC50 18 Reviewed\nQuercetin reference PIK3CA IC50 950 Reviewed",
+      "results": "The smallest illustrative value was 18 nM for VKORC1. The ADORA2A examples demonstrate multiple\ncompounds and support cross-document target comparison. These results must not be used for clinical or\nlaboratory conclusions.\nActivity Summary\nMetric Value\nReference compounds 10\nTargets 7\nReviewed records 6\nPending records 4\nMedian activity 790 nM",
+      "unclassified": "BioIntel AI Reference Research Report\nDemonstration content only - not experimental evidence"
+    },
+    "sensitive_findings": [],
+    "title": "BioIntel_Reference_Research_Report.pdf"
+  },
+  "table_count": 3,
+  "tables": [
+    {
+      "column_count": 5,
+      "columns": [
+        "Compound",
+        "Target",
+        "Endpoint",
+        "Value (nM)",
+        "Review"
+      ],
+      "confidence": 1.0,
+      "metadata": {
+        "bbox": [
+          0.15982143397108833,
+          0.30407780210664165,
+          0.8401785660289115,
+          0.43236062487038096
+        ],
+        "coordinate_space": "normalized_page"
+      },
+      "name": "PDF Page 1 Table 1",
+      "row_count": 5,
+      "rows": [
+        [
+          "Aspirin reference",
+          "PTGS2",
+          "IC50",
+          "125",
+          "Reviewed"
+        ],
+        [
+          "Caffeine reference",
+          "ADORA2A",
+          "Ki",
+          "820",
+          "Reviewed"
+        ],
+        [
+          "Adenosine reference",
+          "ADORA2A",
+          "Ki",
+          "32",
+          "Reviewed"
+        ],
+        [
+          "Warfarin reference",
+          "VKORC1",
+          "IC50",
+          "18",
+          "Reviewed"
+        ],
+        [
+          "Quercetin reference",
+          "PIK3CA",
+          "IC50",
+          "950",
+          "Reviewed"
+        ]
+      ],
+      "source": "page:1"
+    },
+    {
+      "column_count": 2,
+      "columns": [
+        "Metric",
+        "Value"
+      ],
+      "confidence": 1.0,
+      "metadata": {
+        "bbox": [
+          0.24801587701562097,
+          0.19004862631665093,
+          0.7519841229843789,
+          0.3183314490803903
+        ],
+        "coordinate_space": "normalized_page"
+      },
+      "name": "PDF Page 2 Table 1",
+      "row_count": 5,
+      "rows": [
+        [
+          "Reference compounds",
+          "10"
+        ],
+        [
+          "Targets",
+          "7"
+        ],
+        [
+          "Reviewed records",
+          "6"
+        ],
+        [
+          "Pending records",
+          "4"
+        ],
+        [
+          "Median activity",
+          "790 nM"
+        ]
+      ],
+      "source": "page:2"
+    },
+    {
+      "column_count": 2,
+      "columns": [
+        "Type",
+        "Examples"
+      ],
+      "confidence": 1.0,
+      "metadata": {
+        "bbox": [
+          0.13042328628957744,
+          0.0902730975004092,
+          0.8695767137104224,
+          0.21855592026414858
+        ],
+        "coordinate_space": "normalized_page"
+      },
+      "name": "PDF Page 3 Table 1",
+      "row_count": 5,
+      "rows": [
+        [
+          "Genes / proteins",
+          "PTGS2, ADORA2A, SIRT1, PIK3CA, VKORC1"
+        ],
+        [
+          "Compounds",
+          "Aspirin, caffeine, adenosine, warfarin, quercetin"
+        ],
+        [
+          "Assays",
+          "IC50, Ki, EC50"
+        ],
+        [
+          "Organism",
+          "Homo sapiens"
+        ],
+        [
+          "Disease terms",
+          "Inflammation, cardiovascular disease, metabolic disease"
+        ]
+      ],
+      "source": "page:3"
+    }
+  ],
+  "text": "BioIntel AI Reference Research Report\nDemonstration content only - not experimental evidence\nAbstract\nThis reference report demonstrates PDF extraction, table recovery, scientific entity recognition, document search\nand evidence bridging. It discusses PTGS2, ADORA2A, SIRT1 and PIK3CA with illustrative IC50, Ki and EC50\nmeasurements.\nMethods\nTen reference compounds were assessed in a simulated biochemical screening workflow. Values are illustrative\nand are included only to populate the BioIntel AI demonstration workspace.\nCompound Target Endpoint Value (nM) Review\nAspirin reference PTGS2 IC50 125 Reviewed\nCaffeine reference ADORA2A Ki 820 Reviewed\nAdenosine reference ADORA2A Ki 32 Reviewed\nWarfarin reference VKORC1 IC50 18 Reviewed\nQuercetin reference PIK3CA IC50 950 Reviewed\n\nResults and Interpretation\nThe smallest illustrative value was 18 nM for VKORC1. The ADORA2A examples demonstrate multiple\ncompounds and support cross-document target comparison. These results must not be used for clinical or\nlaboratory conclusions.\nActivity Summary\nMetric Value\nReference compounds 10\nTargets 7\nReviewed records 6\nPending records 4\nMedian activity 790 nM\nLimitations\nThe dataset is synthetic/reference-only. No wet-lab validation, clinical interpretation or scientific release is\npermitted.\n\nReference Entities\nType Examples\nGenes / proteins PTGS2, ADORA2A, SIRT1, PIK3CA, VKORC1\nCompounds Aspirin, caffeine, adenosine, warfarin, quercetin\nAssays IC50, Ki, EC50\nOrganism Homo sapiens\nDisease terms Inflammation, cardiovascular disease, metabolic disease\nDocument ID: DEMO-PDF-001 | Version 1.0 | BioIntel demonstration data",
+  "warning_count": 0,
+  "warnings": []
+}

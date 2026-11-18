@@ -1,0 +1,112 @@
+{
+  "duplicate_of_run_id": null,
+  "engine_version": "2.7.0",
+  "outputs": [
+    {
+      "created_at_utc": "2026-07-04T16:49:40.717982+00:00",
+      "filename": "demo_evidence_manifest_extracted.json",
+      "format": "json",
+      "integrity_status": "unknown",
+      "output_id": "706b78b523204729aafcf69d2c221162",
+      "path": "data/document_extractions/b0c71539c87f4b13baa2077cde1fa21a/demo_evidence_manifest_extracted.json",
+      "run_id": "b0c71539c87f4b13baa2077cde1fa21a",
+      "sha256": "9f45d9fc3afca6cd2ace3fe54a12f092852d3cd0985dffdd33a39bda0db2d456",
+      "size_bytes": 3640,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:49:40.722035+00:00",
+      "filename": "demo_evidence_manifest_extracted.xlsx",
+      "format": "xlsx",
+      "integrity_status": "unknown",
+      "output_id": "aad708a621ea49a18e8a2b1a151516a2",
+      "path": "data/document_extractions/b0c71539c87f4b13baa2077cde1fa21a/demo_evidence_manifest_extracted.xlsx",
+      "run_id": "b0c71539c87f4b13baa2077cde1fa21a",
+      "sha256": "e1ae83381d03c6775e3147083cec029f5e6305bb35719e2660d62ec0c376965f",
+      "size_bytes": 9350,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:49:40.725138+00:00",
+      "filename": "demo_evidence_manifest_extracted.docx",
+      "format": "docx",
+      "integrity_status": "unknown",
+      "output_id": "d321018d59d04348b5738644e21c316e",
+      "path": "data/document_extractions/b0c71539c87f4b13baa2077cde1fa21a/demo_evidence_manifest_extracted.docx",
+      "run_id": "b0c71539c87f4b13baa2077cde1fa21a",
+      "sha256": "64084b65a026c889282860b98e8d9b94db47945be7c8deb6fd0cec4d9cc185a8",
+      "size_bytes": 37729,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:49:40.727714+00:00",
+      "filename": "demo_evidence_manifest_extracted.pdf",
+      "format": "pdf",
+      "integrity_status": "unknown",
+      "output_id": "6ab9999bdf884d0d92a17a2929b53447",
+      "path": "data/document_extractions/b0c71539c87f4b13baa2077cde1fa21a/demo_evidence_manifest_extracted.pdf",
+      "run_id": "b0c71539c87f4b13baa2077cde1fa21a",
+      "sha256": "81ceed629e2c56cb8a7b0fcc8e2c39f67dec54fe4143c9ba1ed95e345bcfdcc4",
+      "size_bytes": 4255,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:49:40.730064+00:00",
+      "filename": "demo_evidence_manifest_csv_tables.zip",
+      "format": "csv_zip",
+      "integrity_status": "unknown",
+      "output_id": "510982e8d43f4349987cbf6654f24a9d",
+      "path": "data/document_extractions/b0c71539c87f4b13baa2077cde1fa21a/demo_evidence_manifest_csv_tables.zip",
+      "run_id": "b0c71539c87f4b13baa2077cde1fa21a",
+      "sha256": "acecb8d2c9596877236fef4b5d9c52a15bee6c099b0f3c8682f2b62a4e98ffab",
+      "size_bytes": 2686,
+      "verified_at_utc": null
+    },
+    {
+      "created_at_utc": "2026-07-04T16:49:40.732197+00:00",
+      "filename": "demo_evidence_manifest_complete_export.zip",
+      "format": "bundle_zip",
+      "integrity_status": "unknown",
+      "output_id": "6f2ce59b23774ed8b5ad0b04e187bf40",
+      "path": "data/document_extractions/b0c71539c87f4b13baa2077cde1fa21a/demo_evidence_manifest_complete_export.zip",
+      "run_id": "b0c71539c87f4b13baa2077cde1fa21a",
+      "sha256": "920614bce94da6e363e3026d049a51bec13d93e2a38c6f5ef532aa66a86dd5c6",
+      "size_bytes": 50174,
+      "verified_at_utc": null
+    }
+  ],
+  "run_id": "b0c71539c87f4b13baa2077cde1fa21a",
+  "source": {
+    "character_count": 415,
+    "entity_count": 0,
+    "file_type": "json",
+    "image_count": 0,
+    "mime_type": "application/json",
+    "page_count": 0,
+    "paragraph_count": 0,
+    "region_count": 0,
+    "row_count": 9,
+    "sheet_count": 0,
+    "source_name": "demo_evidence_manifest.json",
+    "source_sha256": "e689faf3fec710dd6c372519a4a5affdb0379a8c045e54eb6909c6289e94a4f7",
+    "source_size_bytes": 415,
+    "table_count": 1,
+    "warning_count": 0
+  },
+  "structured_fields": {
+    "activity_measurements": [],
+    "document_type": "research_document",
+    "entity_counts": {},
+    "has_limitations": false,
+    "has_methods": false,
+    "has_results": false,
+    "publication_identifiers": [],
+    "sample_sizes": [],
+    "sections": {
+      "unclassified": "{\n\"demo_only\": true,\n\"scientific_release_eligible\": false,\n\"dataset_sha256\": \"d041ebfc9735351ad693af27fbeba15951bf4c2b00d968749e7f8d80a6404407\",\n\"counts\": {\n\"evidence_sources\": 4,\n\"evidence_publications\": 100,\n\"dataset_evidence_links\": 660,\n\"evidence_reviews\": 462,\n\"evidence_import_runs\": 4\n},\n\"notice\": \"Preloaded demonstration/reference records only; not experimental evidence.\"\n}"
+    },
+    "sensitive_findings": [],
+    "title": "demo_evidence_manifest.json"
+  },
+  "warnings": []
+}

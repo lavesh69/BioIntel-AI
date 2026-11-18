@@ -1,0 +1,30 @@
+{
+  "module_key": "chembl_builder",
+  "title": "ChEMBL Dataset Builder",
+  "description": "Target and activity filters for reproducible dataset building.",
+  "accepted_formats": "CSV",
+  "offline": true,
+  "synthetic_example": true,
+  "files": [
+    {
+      "name": "blank_chembl_targets.csv",
+      "role": "blank",
+      "size_bytes": 58
+    },
+    {
+      "name": "filled_chembl_targets.csv",
+      "role": "example",
+      "size_bytes": 134
+    },
+    {
+      "name": "expected_chembl_dataset.csv",
+      "role": "output",
+      "size_bytes": 178
+    },
+    {
+      "name": "FORMAT_GUIDE.md",
+      "role": "guide",
+      "size_bytes": 810
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "module_key": "protein_annotation",
+  "title": "Protein Annotation & Proteomics",
+  "description": "Protein FASTA plus long-format intensity data.",
+  "accepted_formats": "FASTA, FAA, CSV or TSV",
+  "offline": true,
+  "synthetic_example": true,
+  "files": [
+    {
+      "name": "blank_proteins.fasta",
+      "role": "blank",
+      "size_bytes": 37
+    },
+    {
+      "name": "filled_proteins.fasta",
+      "role": "example",
+      "size_bytes": 155
+    },
+    {
+      "name": "blank_protein_intensity.csv",
+      "role": "blank",
+      "size_bytes": 38
+    },
+    {
+      "name": "filled_protein_intensity.csv",
+      "role": "example",
+      "size_bytes": 138
+    },
+    {
+      "name": "expected_protein_summary.csv",
+      "role": "output",
+      "size_bytes": 81
+    },
+    {
+      "name": "FORMAT_GUIDE.md",
+      "role": "guide",
+      "size_bytes": 853
+    }
+  ]
+}

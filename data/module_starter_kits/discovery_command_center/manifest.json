@@ -1,0 +1,30 @@
+{
+  "module_key": "discovery_command_center",
+  "title": "Discovery Command Center",
+  "description": "Target-evidence scoring input.",
+  "accepted_formats": "CSV",
+  "offline": true,
+  "synthetic_example": true,
+  "files": [
+    {
+      "name": "blank_target_evidence.csv",
+      "role": "blank",
+      "size_bytes": 77
+    },
+    {
+      "name": "filled_target_evidence.csv",
+      "role": "example",
+      "size_bytes": 246
+    },
+    {
+      "name": "expected_target_priority.csv",
+      "role": "output",
+      "size_bytes": 86
+    },
+    {
+      "name": "FORMAT_GUIDE.md",
+      "role": "guide",
+      "size_bytes": 806
+    }
+  ]
+}

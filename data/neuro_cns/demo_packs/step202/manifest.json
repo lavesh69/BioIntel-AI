@@ -1,0 +1,135 @@
+{
+  "schema": "biointel.neuro-cns.step202.demo-pack.v1",
+  "step": 202,
+  "synthetic_demo_only": true,
+  "contains_real_patient_data": false,
+  "controlled_release_eligible": false,
+  "files": [
+    {
+      "path": "README.txt",
+      "size_bytes": 263,
+      "sha256": "42832937b68c989ce6f39495109e79c32c0363fa9ea725381418ab373bf0962c",
+      "purpose": "Demo pack boundary and usage"
+    },
+    {
+      "path": "benchmark_predictions.csv",
+      "size_bytes": 5187,
+      "sha256": "340476d7fd1d80b0c7b6466a33e3072dce2dabae2c91ea0ded86391f0b19993f",
+      "purpose": "Benchmark Validation Center"
+    },
+    {
+      "path": "benchmark_registry_template.csv",
+      "size_bytes": 167,
+      "sha256": "1b88146af96da32bea309a6254e477c15b9b17f5804e477fb0af997f3acf3f8e",
+      "purpose": "External benchmark qualification template"
+    },
+    {
+      "path": "binding_profile.csv",
+      "size_bytes": 66,
+      "sha256": "eda7b5df51e221cdec7beb1170e2e9846406597cc9a0a320e9edd80fdd353128",
+      "purpose": "Modules 8, 10, 16"
+    },
+    {
+      "path": "brain_volume.npy",
+      "size_bytes": 110720,
+      "sha256": "2ad76326a8a6dc343fc9109c5f340f1fc59ad84538e5ce64fbd3d2d1eb0ffc74",
+      "purpose": "Module 21 imaging and 3D digital twin"
+    },
+    {
+      "path": "clinical_trials.csv",
+      "size_bytes": 418,
+      "sha256": "4a13ac9a1cf47c09298c93f438e8ad340cb320dcd294343a2a2e3067d38fe834",
+      "purpose": "Module 22"
+    },
+    {
+      "path": "compounds.csv",
+      "size_bytes": 236,
+      "sha256": "c06a668e87bd092d2893774ac4e1d016da1cce77bae824c75a8ab8a2996c7d13",
+      "purpose": "Modules 1, 7, 12, 14"
+    },
+    {
+      "path": "drift_current.csv",
+      "size_bytes": 3174,
+      "sha256": "4bd5c2c6220df9a29a7cc31d2aeaab75e04f7d428d371856169c625646f9e9af",
+      "purpose": "Drift current"
+    },
+    {
+      "path": "drift_reference.csv",
+      "size_bytes": 3234,
+      "sha256": "5efbdce013b919396f71634c53398c83e2ef67ae0e39b0d1bd148c5bb5fcc46a",
+      "purpose": "Drift reference"
+    },
+    {
+      "path": "eeg_signals.csv",
+      "size_bytes": 141177,
+      "sha256": "04425e869f8b76a3ee85f30ab1727e449bef6c8cf1b8e4fdab4b21e26604aaf4",
+      "purpose": "Module 20"
+    },
+    {
+      "path": "multisite_reproducibility.csv",
+      "size_bytes": 96,
+      "sha256": "06f7bc19148d774110ddf225c5d5813ed66f3fd0e82ad3d62e839ca1da6af2e3",
+      "purpose": "Multi-site reproducibility"
+    },
+    {
+      "path": "omics_biomarkers.csv",
+      "size_bytes": 5147,
+      "sha256": "563920652e35888b52eb55c48243d743b03367fc6d051e9cc906bd3b49524ac4",
+      "purpose": "Module 19"
+    },
+    {
+      "path": "precision_cohort.csv",
+      "size_bytes": 4619,
+      "sha256": "04be39a6faf1e2e1b018266e9c0dc9843847b778318c57e74a95871d69698536",
+      "purpose": "Module 23"
+    },
+    {
+      "path": "privacy_leakage_demo.csv",
+      "size_bytes": 232,
+      "sha256": "7c9a51b0ddba2bfe9b9758bf09bdaffd52e263072ac6256fa334a56ca10f8449",
+      "purpose": "Privacy and leakage audit"
+    },
+    {
+      "path": "protein_sequences.fasta",
+      "size_bytes": 532,
+      "sha256": "1702ce8219c957892477102110f3ba752c70166e4286195d4f0cd42955f20972",
+      "purpose": "Modules 4, 5, 9"
+    },
+    {
+      "path": "resource_binding_template.csv",
+      "size_bytes": 266,
+      "sha256": "5e1477e123beefc982be6a15ec442073a7262d67e044d9f1aa6290f9353222a4",
+      "purpose": "Scientific resource binding template"
+    },
+    {
+      "path": "review_template.csv",
+      "size_bytes": 155,
+      "sha256": "d6f8dddcf1dbd988da4f26b371dbbb19acc2fa9e74f0bc150c9077e04b24d1d2",
+      "purpose": "Scientific review/sign-off template"
+    },
+    {
+      "path": "roi_timeseries.csv",
+      "size_bytes": 14842,
+      "sha256": "d5968e0223caa6ef171de22037fc35125c1db42417439029f944fe06319cac10",
+      "purpose": "Module 21 connectivity"
+    },
+    {
+      "path": "target_queries.csv",
+      "size_bytes": 88,
+      "sha256": "4d0e3093793e851be01f1d2c5d64c1ab7c53fdebe2bdb546420bdbffae276769",
+      "purpose": "Modules 2, 3, 6, 11, 13, 18"
+    },
+    {
+      "path": "variants.csv",
+      "size_bytes": 342,
+      "sha256": "2fbbbe2e7e6bce322bb47496e10a749db138311b1e96533837a4f83b4f3977b4",
+      "purpose": "Module 17"
+    },
+    {
+      "path": "variants.vcf",
+      "size_bytes": 306,
+      "sha256": "80431ff574c45a012df5258bbb9bb10e314d1bcf1247ef29fd582973d4bde9a7",
+      "purpose": "Module 17 VCF upload"
+    }
+  ]
+}
